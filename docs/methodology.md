@@ -50,7 +50,7 @@ For a GitHub repository, `enrich` reads the first of `LICENSE`, `LICENSE.md`, `L
 
 Provider-specific API parsing checks the actual host and URL path. Harvard Dataverse records retain the dataset-version license declaration, first publication date, version release time, and file count separately. A package-file count is not a trajectory or sample count; the API does not imply a Hugging Face download path or access policy.
 
-`mentions` edges record references found in a primary README/card. They do not establish training, evaluation, derivation, partnership, or endorsement. Stronger relations are explicit editorial assertions with evidence.
+`mentions` edges record references found in a primary README/card. They do not establish training, evaluation, derivation, partnership, or endorsement. Stronger relations are explicit editorial assertions with evidence. `discover` adds each arXiv paper that a curated record mentions to `candidates.jsonl` under the `curated-references` source, with the citing record and its reviewed snapshot as provenance, so `harvest` verifies its bibliographic metadata. The paper then stays metadata-only until its own relevance review.
 
 When a paper documents an implementation that is not cited back by the repository, an editorial `reviewed_relations` entry may cite the paper's retained evidence receipt. Its evidence URL must exist in the resource's evidence list. This does not imply that current code reproduces the paper's results.
 

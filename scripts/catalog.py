@@ -42,6 +42,7 @@ STATUSES = {"curated", "metadata_verified"}
 # The one topic vocabulary: key -> English and Chinese labels and a one-line definition.
 TOPICS = json.loads((DATA / "topics.json").read_text(encoding="utf-8"))
 SHRINK_FLOOR = 0.5  # A successful source response below this share of its retained candidates is held for review.
+REFERENCE_SOURCE = "curated-references"  # Discovery provenance for arXiv papers that curated records cite in data/references.jsonl.
 # MIN_RETRY_DELAY matches the 3.1 s spacing kept between arXiv requests (at most one per 3 s).
 RETRY_STATUSES, MAX_ATTEMPTS, MAX_RETRY_AFTER, MIN_RETRY_DELAY = {429, 500, 502, 503, 504}, 3, 60, 3.1
 
@@ -299,6 +300,26 @@ def reconcile_candidates(rows):
     return result
 
 
+def reference_candidates(rows):
+    """Add arXiv papers cited by curated records to the discovery population: harvest verifies their metadata, never their relevance."""
+    curated = {r["id"] for r in read_jsonl(DATA / "catalog.jsonl") if r["review_status"] == "curated"}
+    refs = sorted((e for e in read_jsonl(DATA / "references.jsonl") if e["relation"] == "mentions" and e["source_id"] in curated
+                   and e["target_id"].startswith("arxiv:")), key=lambda e: (e["target_id"], e["source_id"]))
+    first = {}
+    for e in refs:
+        first[e["target_id"]] = min(first.get(e["target_id"], e["retrieved_at"]), e["retrieved_at"])
+    # Like a source refresh, the current references replace the old ones; an uncited paper stays a historical candidate.
+    for row in rows.values():
+        row["discovered_in"] = [o for o in row["discovered_in"] if o["source_id"] != REFERENCE_SOURCE]
+    for e in refs:
+        rid = e["target_id"]
+        row = rows.setdefault(rid, {"id": rid, "url": "https://arxiv.org/abs/" + rid.split(":", 1)[1], "provider": "arxiv",
+            "first_discovered_at": first[rid], "discovered_in": []})
+        row["discovered_in"].append(discovery_occurrence(REFERENCE_SOURCE, {"url": e["source_url"], "sha256": e["source_sha256"],
+            "retrieved_at": e["retrieved_at"]}, section=f"Cited by {e['source_id']}; relevance awaits review"))
+    print(f"{REFERENCE_SOURCE}: {len(refs)} citations of {len(first)} arXiv identifiers", flush=True)
+
+
 def discover(args):
     sources = read_json(DATA / "sources.json", [])
     existing = reconcile_candidates(read_jsonl(DATA / "candidates.jsonl"))
@@ -361,6 +382,7 @@ def discover(args):
         manifest['state'] = 'success'
         manifests[source["id"]] = manifest
         print(f"{source['id']}: {len(seen)} unique identifiers", flush=True)
+    reference_candidates(existing)
     for row in existing.values():
         row["discovered_in"].sort(key=lambda x: (x["source_id"], x["line"]))
     write_jsonl(DATA / "candidates.jsonl", existing.values())

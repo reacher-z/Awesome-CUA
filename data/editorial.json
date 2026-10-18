@@ -14189,7 +14189,78 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "21afbc4086441dee131fe4b84986870f9b280413dd2a38df6e99406f1fc45586",
-    "reviewed_at": "2026-10-16T10:48:36Z"
+    "reviewed_at": "2026-10-16T10:48:36Z",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "large multimodal models as visual foundation agents",
+          "embodied, GUI and visual-design environments"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "visual inputs from each environment"
+        ],
+        "actions": [],
+        "evaluation": "The README leaderboard reports task success rate on the test split of each environment. Proprietary models are prompted only; open models are evaluated after multitask fine-tuning on the VAB training set. OmniGibson, Minecraft and CSS run through the AgentBench-derived controller, while VAB-WebArena-Lite has its own setup and evaluation scripts.",
+        "counts": [
+          {
+            "value": 5,
+            "unit": "environments",
+            "qualifier": "exact",
+            "population": "VAB-OmniGibson, VAB-Minecraft, VAB-Mobile, VAB-WebArena-Lite and VAB-CSS, as the README lists them",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/THUDM/VisualAgentBench/HEAD/README.md"
+          },
+          {
+            "value": 165,
+            "unit": "VAB-WebArena-Lite tasks",
+            "qualifier": "exact",
+            "population": "VAB-WebArena-Lite test tasks in VAB-WebArena-Lite/new/test_webarena_lite.raw.json at commit 9055fc2",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/new/test_webarena_lite.raw.json"
+          }
+        ],
+        "notes": "The README offers testing and training splits for each environment, but their sizes appear only in an image (assets/statistics.png) and are not transcribed. Its setup list marks VAB-Mobile as ongoing, and the training trajectories are hosted on ModelScope. VAB-WebArena-Lite's own README describes it as a 165-task subset of the 812-task WebArena, checked by hand for correctness and feasibility; the task file has 165 distinct task IDs, and replace.sh copies it into a pinned VisualWebArena checkout. No environment was run for this profile.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/THUDM/VisualAgentBench/HEAD/README.md",
+          "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/new/test_webarena_lite.raw.json",
+          "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/README.md",
+          "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/replace.sh"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/new/test_webarena_lite.raw.json",
+        "sha256": "5e901fc1d7155bc03764d734fa9a492f8d6d1029656b986a3a4e7c71609c7238",
+        "retrieved_at": "2026-10-18T16:05:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/README.md",
+        "sha256": "77bbbafab2bec61236da04e1d493764a8314091736d3b65cf1836c1763a7a3fc",
+        "retrieved_at": "2026-10-18T16:05:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/THUDM/VisualAgentBench/9055fc299c366ef34700d1710215fb60a0d8c35e/VAB-WebArena-Lite/replace.sh",
+        "sha256": "dba2d61e284c5d3207c6c3420469537ef508591c11e876f44cfb6c8280abd899",
+        "retrieved_at": "2026-10-18T16:05:49Z"
+      }
+    ]
   },
   {
     "url": "https://github.com/xbmxb/CoCo-Agent",

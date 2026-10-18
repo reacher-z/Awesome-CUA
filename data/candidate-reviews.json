@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:unicomai/unichat-llama3-chinese",
+    "url": "https://github.com/UnicomAI/Unichat-llama3-Chinese",
+    "decision": "out_of_scope",
+    "reason": "Unichat-llama3-Chinese releases Chinese instruction-tuned Llama 3 and 3.1 chat models (8B, a 28K-context 8B and 70B) with question-answering examples. It has no GUI, browser, mobile or tool-use agent component, so it is a general language model outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T15:32:51Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/UnicomAI/Unichat-llama3-Chinese/HEAD/README.md",
+      "sha256": "01d58c83f0a2617abfda1c15cd2f58558be3510e59db332496026fe5586e8a8b",
+      "retrieved_at": "2026-10-18T12:23:52Z"
+    }
   }
 ]

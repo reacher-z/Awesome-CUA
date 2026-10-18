@@ -14270,7 +14270,72 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "63349e7557bd99240d4628de3994a53b69e54e3bd809895be11e9879bfba40cb",
-    "reviewed_at": "2026-10-16T10:48:36Z"
+    "reviewed_at": "2026-10-16T10:48:36Z",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/gydpku/PPTC/git/trees/277f56ffc548ce51024d5cc7c0607aeb49b584b8?recursive=1",
+        "sha256": "54937c7a2dd4948750eaed27ffcc413eac4e36d4d8c1eaba96df5c28a58d8994",
+        "retrieved_at": "2026-10-18T15:51:42Z"
+      }
+    ],
+    "details": {
+      "repository_revision": "277f56ffc548ce51024d5cc7c0607aeb49b584b8",
+      "benchmark_protocol": {
+        "focus": [
+          "multi-turn PowerPoint task completion",
+          "slide creation",
+          "PPT template editing"
+        ],
+        "setting": "offline",
+        "observations": [
+          "current instruction",
+          "dialogue history",
+          "PPT file content",
+          "reference API file"
+        ],
+        "actions": [
+          "PowerPoint API call sequence"
+        ],
+        "evaluation": "An API executor runs the generated sequence, and the PPTX-Match system compares the resulting prediction file with the label file: object position relations, and attribute contents against the corresponding label attributes. The README reports turn-based accuracy (completed turns over all turns) and session-based accuracy (completed sessions over all sessions), with average API and token cost.",
+        "counts": [
+          {
+            "value": 279,
+            "unit": "multi-turn sessions",
+            "qualifier": "exact",
+            "population": "session files in PPT_test_input at commit 277f56ff",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/gydpku/PPTC/git/trees/277f56ffc548ce51024d5cc7c0607aeb49b584b8?recursive=1"
+          },
+          {
+            "value": 229,
+            "unit": "multi-turn sessions",
+            "qualifier": "exact",
+            "population": "Create_new_slides session files at commit 277f56ff",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/gydpku/PPTC/git/trees/277f56ffc548ce51024d5cc7c0607aeb49b584b8?recursive=1"
+          },
+          {
+            "value": 50,
+            "unit": "multi-turn sessions",
+            "qualifier": "exact",
+            "population": "Edit_PPT_template session files at commit 277f56ff",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/gydpku/PPTC/git/trees/277f56ffc548ce51024d5cc7c0607aeb49b584b8?recursive=1"
+          }
+        ],
+        "notes": "Session totals match the 279 sessions in the paper abstract; turns per session were not counted. Label PPT files are not in the repository: the README generates them locally by executing the feasible API sequences. The executor and evaluator were read from the README, not run.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/gydpku/PPTC/HEAD/README.md",
+          "https://api.github.com/repos/gydpku/PPTC/git/trees/277f56ffc548ce51024d5cc7c0607aeb49b584b8?recursive=1"
+        ]
+      }
+    }
   },
   {
     "url": "https://github.com/ljang0/iOSWorld",

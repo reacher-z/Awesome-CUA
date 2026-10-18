@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
 
 ## Benchmarks
 
@@ -18,6 +18,7 @@
 | [Mobile-Bench-v2 released data](https://huggingface.co/datasets/xwk123/MobileBench-v2) | android | [2505.11891](https://arxiv.org/abs/2505.11891) (2025) | — | — | Offline mobile-agent task data spanning common tasks and released noisy, contaminated and ambiguous-instruction subsets. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
+| [WAInjectBench](https://github.com/Norrrrrrr-lyn/WAInjectBench) | web | [2510.01354](https://arxiv.org/abs/2510.01354) (2025) | [6 attack types](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) · [8 malicious attack subsets](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) · [4 benign categories](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) | — | Labeled benign and malicious text and webpage-image sets for testing prompt-injection detectors aimed at web agents, with runners for text and image detectors that report detection and false-alarm rates. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) |
 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | desktop, windows | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | [141 tasks](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [11 Windows applications](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [20 task IDs](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_custom.json) | code MIT | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) |
 | [WorldGUI](https://github.com/showlab/WorldGUI) | desktop | [2502.08047](https://arxiv.org/abs/2502.08047) (2025) | — | — | 611 desktop GUI tasks that agents must complete from varied starting points, shipped with instructional videos and project files, plus the self-reflective WorldGUI-Agent baseline. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/WorldGUI/HEAD/README.md) |
 

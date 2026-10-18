@@ -63143,5 +63143,130 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WAInjectBench",
+    "kind": "benchmark",
+    "url": "https://github.com/Norrrrrrr-lyn/WAInjectBench",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Labeled benign and malicious text and webpage-image sets for testing prompt-injection detectors aimed at web agents, with runners for text and image detectors that report detection and false-alarm rates.",
+    "verify_terms": [
+      "WAInjectBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2510.01354"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "prompt-injection detection for web agents"
+        ],
+        "setting": "offline",
+        "observations": [
+          "text segments in JSONL files",
+          "webpage screenshots and embedded images"
+        ],
+        "actions": [
+          "binary benign or malicious detection"
+        ],
+        "evaluation": "main_text.py and main_image.py run one detector over each benign or malicious subset; each malicious file reports a true-positive rate and each benign file a false-positive rate. The README lists six text and six image detectors, including ensembles.",
+        "counts": [
+          {
+            "value": 6,
+            "unit": "attack types",
+            "qualifier": "exact",
+            "population": "WAInjectBench, text and image modalities",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+          },
+          {
+            "value": 8,
+            "unit": "malicious attack subsets",
+            "qualifier": "exact",
+            "population": "data/text/malicious",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+          },
+          {
+            "value": 4,
+            "unit": "benign categories",
+            "qualifier": "exact",
+            "population": "data/text/benign",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+          },
+          {
+            "value": 7,
+            "unit": "malicious attack subsets",
+            "qualifier": "exact",
+            "population": "data/image/malicious",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+          },
+          {
+            "value": 2,
+            "unit": "benign categories",
+            "qualifier": "exact",
+            "population": "data/image/benign",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+          }
+        ],
+        "notes": "Malicious subsets are variants of the six attack types, for example EIA with and without explicit instructions, so their number exceeds six. No sample count is recorded here. Some detectors need external repositories, OpenAI API keys or a separately downloaded fine-tuned LLaVA model.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md",
+          "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/main_text.py",
+          "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/main_image.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/main_text.py",
+        "sha256": "fd8d9f71681727e59d8cb4b1eecbc13ff6d33d9db551f3f40ca153b0fab720d4",
+        "retrieved_at": "2026-10-18T11:42:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/main_image.py",
+        "sha256": "3157580c38dd0d4035f7d9623a8f0328c9a6304336472dac205c1dbbbc97c70e",
+        "retrieved_at": "2026-10-18T11:42:56Z"
+      }
+    ],
+    "notes": "The arXiv abstract of the WAInjectBench paper links this repository. The repository ships the data under data/, detector code, training scripts for embedding classifiers and LLaVA fine-tuning, and trained embedding-classifier files under model/. The repository has no LICENSE file and GitHub reports no license, so code and data licenses are unknown; the attack data derives from third-party attack sets whose terms are not established here.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "de16483df2836a5b59152fc732560913d99a54fd75db2eba73673fcbcf1e463c",
+    "reviewed_at": "2026-10-18T11:43:03Z"
   }
 ]

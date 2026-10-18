@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -20,6 +20,7 @@
 | [PopupAttack](https://github.com/SALT-NLP/PopupAttack) | web | — | — | — | Resources for evaluating GUI agents under malicious popup instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md) |
 | [SafeArena](https://github.com/McGill-NLP/safearena) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/safearena-leaderboard) | web | [2503.04957](https://arxiv.org/abs/2503.04957) (2025) | [250 tasks](https://arxiv.org/abs/2503.04957) | — | Web-agent benchmark pairing benign and harmful tasks to study deliberate misuse risks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/McGill-NLP/safearena/HEAD/README.md) |
 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | web | [2410.06703](https://arxiv.org/abs/2410.06703) (2024) | — | — | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/segev-shlomov/ST-WebAgentBench/HEAD/README.md) |
+| [WAInjectBench](https://github.com/Norrrrrrr-lyn/WAInjectBench) | web | [2510.01354](https://arxiv.org/abs/2510.01354) (2025) | [6 attack types](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) · [8 malicious attack subsets](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) · [4 benign categories](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) | — | Labeled benign and malicious text and webpage-image sets for testing prompt-injection detectors aimed at web agents, with runners for text and image detectors that report detection and false-alarm rates. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md) |
 | [WebGuard](https://github.com/OSU-NLP-Group/WebGuard) | web | [2507.14293](https://arxiv.org/abs/2507.14293) (2025) | — | code MIT | Codebase, annotation toolkit, and action-level risk dataset for training and evaluating guardrail models that flag unsafe browser-agent actions before execution. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/WebGuard/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
 

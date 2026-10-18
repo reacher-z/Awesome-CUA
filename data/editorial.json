@@ -63143,5 +63143,91 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenBrowser",
+    "kind": "framework",
+    "url": "https://github.com/billy-enrizky/openbrowser-ai",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Python browser-automation framework whose CodeAgent shows a model indexed DOM state and an optional screenshot, then runs the Python it writes against Chrome DevTools Protocol helpers in a persistent namespace.",
+    "scope": "core",
+    "aliases": [
+      "openbrowser-ai"
+    ],
+    "verify_terms": [
+      "OpenBrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/billy-enrizky/openbrowser-ai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Published on PyPI as openbrowser-ai. The CodeAgent (src/openbrowser/code_use/service.py) sends a compact serialized DOM state with element indices and, unless vision is turned off, a JPEG screenshot; the model replies with Python that the executor runs in a persistent namespace. The MCP server exposes a single execute_code tool over the same namespace, and a CLI daemon keeps a browser session alive between commands. The repository also holds a hosted-platform backend and frontend, and infra/training with SFT, online GRPO and diffusion-language-model RL code for FormFactory form filling; the README links the two related papers on ResearchGate, not arXiv. Token and latency comparisons with other browser tools are publisher-reported and were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source and PyPI package; hosted cloud version is waitlisted",
+      "repository_revision": "48ec5d9dccad00001a5c7d644b863bf1277bb1e0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/billy-enrizky/openbrowser-ai/48ec5d9dccad00001a5c7d644b863bf1277bb1e0/src/openbrowser/code_use/service.py",
+        "sha256": "0a3890c37aac37f7bc7fcc3430a3de830978436d5f67911a95f7ac2c923f6a5e",
+        "retrieved_at": "2026-10-18T15:32:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/billy-enrizky/openbrowser-ai/48ec5d9dccad00001a5c7d644b863bf1277bb1e0/src/openbrowser/mcp/server.py",
+        "sha256": "04724480ffd6c9d1b29c1f7b193ce35e80c0b82934d72d5f2924e73b61033f91",
+        "retrieved_at": "2026-10-18T15:32:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/billy-enrizky/openbrowser-ai/48ec5d9dccad00001a5c7d644b863bf1277bb1e0/infra/training/finetuning/online_grpo_trainer.py",
+        "sha256": "6cb5223bd2403f9dd343206fef7b77edc74c803ec0b265f03570ee11bef84510",
+        "retrieved_at": "2026-10-18T15:32:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/billy-enrizky/openbrowser-ai/48ec5d9dccad00001a5c7d644b863bf1277bb1e0/LICENSE",
+        "sha256": "4341c316d2ba2ec1e37f184e8ac1251def4368da78262633f1197174cd671aab",
+        "retrieved_at": "2026-10-18T15:32:56Z"
+      }
+    ],
+    "reviewed_sha256": "5932f9377209714b55d969410f301422a8083cd702af79974e70e000f0e5d73b",
+    "reviewed_at": "2026-10-18T15:33:21Z"
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:modelscope/ms-swift",
+    "url": "https://github.com/modelscope/ms-swift",
+    "decision": "out_of_scope",
+    "reason": "ms-swift is ModelScope's general framework for fine-tuning, aligning and deploying several hundred language and multimodal models with methods such as SFT, DPO and GRPO. Its README describes no GUI, browser or device interaction; GUI-agent projects mention it only as their training toolkit.",
+    "reviewed_at": "2026-10-18T11:50:42Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/modelscope/ms-swift/HEAD/README.md",
+      "sha256": "66ceebf6a1479b23035825f32330185ff87b0b8c3a55d1299dc8d27ce597e4a8",
+      "retrieved_at": "2026-10-18T11:39:37Z"
+    }
   }
 ]

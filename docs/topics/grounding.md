@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -78,6 +78,7 @@
 | [GUI-G1](https://github.com/Yuqi-Zhou/GUI-G1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | code Apache-2.0 | GUI-grounding training code that modifies reasoning templates, reward functions, and the GRPO objective, with a linked model release. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/GUI-G1/HEAD/README.md) |
 | [GUI-G1 3B v1](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | weights mit | A Qwen2.5-VL-3B checkpoint released for R1-style visual grounding experiments, predicting interface target locations from screenshots and instructions. | [✓ 2026‑10‑17](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1/raw/main/README.md) |
 | [GUI-G2](https://github.com/ZJU-REAL/GUI-G2) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | — | GUI grounding models at 3B and 7B trained with Gaussian rewards for click proximity to element centers and region coverage, with variance scaled to element size. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/GUI-G2/HEAD/README.md) |
+| [GUI-G2 3B](https://huggingface.co/inclusionAI/GUI-G2-3B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | The 3B GUI-G2 grounding checkpoint: Qwen2.5-VL-3B-Instruct fine-tuned with Gaussian point and coverage rewards to locate interface elements in screenshots from text instructions. | [✓ 2026‑10‑18](https://huggingface.co/inclusionAI/GUI-G2-3B/raw/413256770087058c21662c05c13fa8c199a08fb4/README.md) |
 | [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [GUI-R1](https://github.com/ritzz-ai/GUI-R1) | cross-platform | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | code Apache-2.0 | GUI action-model training and evaluation code with verifiable rewards, plus linked reinforcement-learning data and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ritzz-ai/GUI-R1/HEAD/README.md) |

@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Mind2Web data](https://huggingface.co/datasets/osunlp/Mind2Web) | web | [2306.06070](https://arxiv.org/abs/2306.06070) (2023) | [> 2,000 tasks](https://huggingface.co/datasets/osunlp/Mind2Web/raw/17ece8eb89862368edc0cc806acee6fca5163474/README.md) · [137 websites](https://huggingface.co/datasets/osunlp/Mind2Web/raw/17ece8eb89862368edc0cc806acee6fca5163474/README.md) · [31 domains](https://huggingface.co/datasets/osunlp/Mind2Web/raw/17ece8eb89862368edc0cc806acee6fca5163474/README.md) · [1,009 task instances](https://huggingface.co/datasets/osunlp/Mind2Web/raw/17ece8eb89862368edc0cc806acee6fca5163474/README.md) | data cc-by-4.0 | Hub release of Mind2Web's crowdsourced web-task demonstrations: train-split JSON with raw and cleaned HTML, candidate elements and CLICK/TYPE/SELECT steps, plus a password-protected archive of the three test splits. | [✓ 2026‑10‑18](https://huggingface.co/datasets/osunlp/Mind2Web/raw/17ece8eb89862368edc0cc806acee6fca5163474/README.md) |
 | [ShowUI-π training data](https://huggingface.co/datasets/showlab/ShowUI-pi-data) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | — | Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md) |
 | [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
 

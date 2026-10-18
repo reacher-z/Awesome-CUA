@@ -63143,5 +63143,119 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MemGUI-Agent",
+    "kind": "framework",
+    "url": "https://github.com/kwai/MemGUI-Agent",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "long-horizon",
+      "imitation-learning",
+      "evaluation"
+    ],
+    "summary": "Released tooling for MemGUI-Agent's context-as-action mobile agent: MemGUI-3K download, screenshot restoration and SFT conversion, an ms-swift LoRA template for MemGUI-8B-SFT, and offline step-level evaluation.",
+    "scope": "core",
+    "verify_terms": [
+      "MemGUI-Agent"
+    ],
+    "documented_by": [
+      "2606.19926"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kwai/MemGUI-Agent/HEAD/README.md"
+    ],
+    "notes": "Code release for arXiv 2606.19926. The tree at commit 3947261 holds utilities for the MemGUI-3K Hugging Face dataset (download, restoration of split screenshot archives, conversion to step-level SFT JSONL, Hub packaging), an ms-swift LoRA SFT script that trains MemGUI-8B-SFT from Qwen3-VL-8B-Instruct, and an offline evaluator that scores model responses against gold MemGUI-3K test steps (action match, memory-action triggers, folding, response format) without running Android. It has no online device-control loop; the README points to the separate MemGUI-Bench and MobileWorld repositories for end-to-end rollouts. The MemGUI-3K dataset and the MemGUI-8B-SFT checkpoint are Hugging Face releases without catalog records, so the dataset's trajectory and step counts are not attributed to this record. LICENSE holds only the short Apache-2.0 notice and the README states that code is Apache-2.0; GitHub's license API reports NOASSERTION. Code was read, not run.",
+    "details": {
+      "availability": "Data utilities, SFT training template and offline evaluation source; dataset and checkpoint on Hugging Face; no online rollout code",
+      "repository_revision": "39472615c01192b28173b74fc2a22d92956ede14"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/kwai/MemGUI-Agent",
+        "sha256": "2e5ad70dddb60f18a11ef090bb0b7990b2d390a23a9c84a8c3943ac95e246712",
+        "retrieved_at": "2026-10-18T15:39:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/kwai/MemGUI-Agent/git/trees/39472615c01192b28173b74fc2a22d92956ede14?recursive=1",
+        "sha256": "488286aca867da8c56c6ade7f44b88550c40dbabd7c6305977f233a427dac872",
+        "retrieved_at": "2026-10-18T15:39:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/39472615c01192b28173b74fc2a22d92956ede14/data/memgui3k/README.md",
+        "sha256": "35179b7243e70c38c4a6736b2588c7d64a7ed85fb22c68fec1b2612583109b9f",
+        "retrieved_at": "2026-10-18T15:39:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/39472615c01192b28173b74fc2a22d92956ede14/evaluation/memgui3k_offline_eval/README.md",
+        "sha256": "4c92c584b6885a3bde8ee89d04ccf48287e7f6119889f75cde0c034c90bd8217",
+        "retrieved_at": "2026-10-18T15:39:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/39472615c01192b28173b74fc2a22d92956ede14/training/ms_swift/train_memgui_8b_sft.sh",
+        "sha256": "5e4c36f627e3419b9a6e9d680e2636071f6edb128c9bc01a6eb15b7050c50899",
+        "retrieved_at": "2026-10-18T15:39:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/39472615c01192b28173b74fc2a22d92956ede14/LICENSE",
+        "sha256": "d4e344274155be1d0a192c8ae2940169abb0bd8546d045b96b45810593860636",
+        "retrieved_at": "2026-10-18T15:39:45Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3f7545f466407ed5336f47d18b12e8354ec352ff83dcf973b1545f81d9a629ac",
+    "reviewed_at": "2026-10-18T15:40:18Z"
   }
 ]

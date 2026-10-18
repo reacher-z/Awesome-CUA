@@ -63143,5 +63143,145 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:suitedaces/computer-agent",
+    "name": "Taskhomie",
+    "kind": "agent",
+    "url": "https://github.com/suitedaces/computer-agent",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Tauri desktop app in which Claude operates the user's Mac through screenshots, mouse, keyboard and bash, or works in the background by driving Chrome over DevTools with accessibility-tree element IDs.",
+    "scope": "core",
+    "aliases": [
+      "computer-agent"
+    ],
+    "verify_terms": [
+      "Taskhomie"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/suitedaces/computer-agent/HEAD/README.md"
+    ],
+    "notes": "The repository is named computer-agent and its README titles the app Taskhomie. Computer-use mode sends Anthropic's computer_20250124 and bash_20250124 tools; screenshots are downscaled JPEG captures (xcap, or CoreGraphics on macOS), clicks go through enigo, and on macOS typing and key presses use AppleScript and CoreGraphics events. Background mode connects to or launches Chrome with remote debugging and acts on element IDs taken from the full accessibility tree, with an optional page screenshot. The code has non-macOS input fallbacks, but the release workflow builds only a universal macOS app and the Chrome profile paths are macOS paths, so other operating systems are not listed. It acts on the user's own machine without isolation and needs an Anthropic API key. The root LICENSE is headed Apache License 2.0 but adds custom terms for derivative works, so no standard code license is recorded.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_url": "https://github.com/suitedaces/computer-agent",
+      "repository_revision": "92795e717b5bd254d1894d46d180eb29b690525b"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/suitedaces/computer-agent",
+        "sha256": "2dd9438c3504186b3c1f5b22bac03620c35a2af9105d8c2b695ce94eb03da04e",
+        "retrieved_at": "2026-10-18T12:19:05Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/suitedaces/computer-agent/git/trees/main?recursive=1",
+        "sha256": "0180588aaae64b508bd4ffff5460c646a068063f8fbf35c930cfabe07acb133e",
+        "retrieved_at": "2026-10-18T12:19:06Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/src-tauri/src/api.rs",
+        "sha256": "b5a6bf02559847b21c006190f9a3e30da068abf9dff25c92bc082b8f9fbe828a",
+        "retrieved_at": "2026-10-18T12:19:07Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/src-tauri/src/computer.rs",
+        "sha256": "bbaf19f353a93e52ebf8bd6426498d968c22bb94014f4a770d5c855fa05b2a62",
+        "retrieved_at": "2026-10-18T12:19:07Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/src-tauri/src/browser.rs",
+        "sha256": "19f5143ce8fe545c6e426e16ddb03db48ac4030101d9c9cad893866ecfc061b8",
+        "retrieved_at": "2026-10-18T12:19:07Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/.github/workflows/release.yml",
+        "sha256": "f7cae903969d0776685118b8b1b5ab2dae39ff734d30a2ea39762cd6ff02890e",
+        "retrieved_at": "2026-10-18T12:19:07Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/LICENSE",
+        "sha256": "3c9783c2554205a3c7bf756ded7a1e48b99aea4cbc383beec9b3b2c061ee21a2",
+        "retrieved_at": "2026-10-18T12:19:06Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ]
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:57f17b7d0c18b2d7c8bf",
+        "evidence_url": "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/src-tauri/src/api.rs"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The root LICENSE is headed Apache License 2.0 and the README links it as such, but the file adds custom provisions that treat derivative works as works for hire and grant the original rights holder a license to them. This altered text is not the standard Apache-2.0 license, so the code license stays unresolved.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/suitedaces/computer-agent/92795e717b5bd254d1894d46d180eb29b690525b/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "917264d1bd00e5fbb7547ffe5df89f7de1180363659cc536fce463e1aca62c38",
+    "reviewed_at": "2026-10-18T12:20:45Z"
   }
 ]

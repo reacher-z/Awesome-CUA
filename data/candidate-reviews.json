@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:kortix-ai/suna",
+    "url": "https://github.com/kortix-ai/suna",
+    "decision": "out_of_scope",
+    "reason": "The kortix-ai/suna repository now presents Kortix, a self-hostable agent platform whose README describes coding agents in per-session Linux sandboxes, Slack and Teams bots, scheduled automations and API connectors. It describes no GUI, browser or device control, so computer interaction is not material to the resource.",
+    "reviewed_at": "2026-10-18T11:48:25Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/kortix-ai/suna/HEAD/README.md",
+      "sha256": "85bbbdc0de4b58537caec5497c04280d74ec2427f1c87360f7fe0f959f256fa4",
+      "retrieved_at": "2026-10-18T11:32:29Z"
+    }
   }
 ]

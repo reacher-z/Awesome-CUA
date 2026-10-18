@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:6a943fb3667791b6cdb4",
+    "name": "GUI-Owl 1.5 32B Instruct",
+    "kind": "model",
+    "url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "planning",
+      "tool-integration",
+      "memory"
+    ],
+    "summary": "Instruct variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Owl-1.5-32B-Instruct"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/raw/6154cc22f19e7375994707986c1bd459e29621ac/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.repository_url"
+    ],
+    "notes": "The card lists 2B, 4B, 8B and 32B instruct and 8B and 32B thinking variants; the 32B thinking checkpoint is a separate repository. The Hub manifest lists 14 Safetensors shards and an index, and the API reports a Qwen3VLForConditionalGeneration config with 33,357,390,064 BF16 parameters. The card defers usage to a cookbook outside this repository and shows vLLM serving. Benchmark scores in the card are publisher-reported and were not reproduced. MIT is the card's weight declaration and is not extended to Qwen3-VL or training data.",
+    "details": {
+      "hub_id": "mPLUG/GUI-Owl-1.5-32B-Instruct",
+      "hub_revision": "6154cc22f19e7375994707986c1bd459e29621ac",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/tree/6154cc22f19e7375994707986c1bd459e29621ac",
+      "repository_url": "https://github.com/X-PLUG/MobileAgent",
+      "artifact_type": "model-checkpoint",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "32B",
+      "listed_weight_files": [
+        "model-00001-of-00014.safetensors",
+        "model-00002-of-00014.safetensors",
+        "model-00003-of-00014.safetensors",
+        "model-00004-of-00014.safetensors",
+        "model-00005-of-00014.safetensors",
+        "model-00006-of-00014.safetensors",
+        "model-00007-of-00014.safetensors",
+        "model-00008-of-00014.safetensors",
+        "model-00009-of-00014.safetensors",
+        "model-00010-of-00014.safetensors",
+        "model-00011-of-00014.safetensors",
+        "model-00012-of-00014.safetensors",
+        "model-00013-of-00014.safetensors",
+        "model-00014-of-00014.safetensors"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/mPLUG/GUI-Owl-1.5-32B-Instruct",
+        "sha256": "b5fe375afd055e9139544f53bd58f72568fdab2fb0c4d70bea1d247ec4f8c4bc",
+        "retrieved_at": "2026-10-18T12:14:45Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files"
+        ]
+      }
+    ],
+    "documented_by": [
+      "2602.16855"
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/raw/6154cc22f19e7375994707986c1bd459e29621ac/README.md",
+          "retrieved_at": "2026-10-18T12:14:46Z",
+          "basis": "Publisher model-card declaration for this checkpoint; base-model and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for this checkpoint; base-model and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/raw/6154cc22f19e7375994707986c1bd459e29621ac/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "8520a786d7a9d411e45466c2b7e7786d062ec03f2778acecc4a45991a803d8d8",
+    "reviewed_at": "2026-10-18T12:15:12Z"
   }
 ]

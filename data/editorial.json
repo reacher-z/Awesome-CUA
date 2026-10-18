@@ -2027,6 +2027,102 @@
     "reviewed_at": "2026-10-16T10:50:15Z",
     "documented_by": [
       "2406.10227"
+    ],
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "visual-centric GUI tasks sourced from instructional videos",
+          "hierarchical planning and atomic action execution"
+        ],
+        "setting": "offline",
+        "observations": [
+          "start and end visual states as images or videos",
+          "screenshots"
+        ],
+        "actions": [
+          "subtask plans",
+          "action narration sequences",
+          "click, drag, type and scroll actions with screen positions"
+        ],
+        "evaluation": "The publisher evaluates three levels: high-level planning from visual start and end states, middle-level planning of action narrations, and atomic action execution. The repository TODO still lists the evaluation code and metric implementation as not uploaded, so no scorer was inspected.",
+        "counts": [
+          {
+            "value": 82,
+            "unit": "high-level planning task folders",
+            "qualifier": "exact",
+            "population": "high_plan/ in the VideoGUI/VideoGUI-High-Plan Hub dataset at revision 53ef16f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/VideoGUI/VideoGUI-High-Plan/tree/53ef16f2d26009c2234270c80f74ab9597c1108f/high_plan",
+            "reference_url": "https://huggingface.co/datasets/VideoGUI/VideoGUI-High-Plan/tree/53ef16f2d26009c2234270c80f74ab9597c1108f/high_plan"
+          },
+          {
+            "value": 462,
+            "unit": "middle-level planning rows",
+            "qualifier": "exact",
+            "population": "mid_plan split in the VideoGUI/VideoGUI-Mid-Plan card metadata at revision 6852d8c",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/VideoGUI/VideoGUI-Mid-Plan/raw/6852d8c9f2b9c586d7ff7cce2611080140f1a30c/README.md"
+          },
+          {
+            "value": 2572,
+            "unit": "action execution rows",
+            "qualifier": "exact",
+            "population": "action split in the VideoGUI/VideoGUI-Action card metadata at revision 0a81107",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/VideoGUI/VideoGUI-Action/raw/0a8110739acf4c766d4d55c9672cb38d1d9bfcbd/README.md"
+          }
+        ],
+        "notes": "The three Hub datasets hold the high-level planning, middle-level planning and action-execution parts; the full metadata and human recordings are on Google Drive and were not downloaded. Each high_plan folder holds a metadata.parquet with its visual start and/or end state. Folder names are task IDs such as PS_46. Rows of different levels are separate units and are not summed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/showlab/videogui/HEAD/README.md",
+          "https://huggingface.co/api/datasets/VideoGUI/VideoGUI-High-Plan/tree/53ef16f2d26009c2234270c80f74ab9597c1108f/high_plan",
+          "https://huggingface.co/datasets/VideoGUI/VideoGUI-High-Plan/raw/53ef16f2d26009c2234270c80f74ab9597c1108f/README.md",
+          "https://huggingface.co/datasets/VideoGUI/VideoGUI-Mid-Plan/raw/6852d8c9f2b9c586d7ff7cce2611080140f1a30c/README.md",
+          "https://huggingface.co/datasets/VideoGUI/VideoGUI-Action/raw/0a8110739acf4c766d4d55c9672cb38d1d9bfcbd/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/api/datasets/VideoGUI/VideoGUI-High-Plan/tree/53ef16f2d26009c2234270c80f74ab9597c1108f/high_plan",
+        "sha256": "f6ae6b0d919a5a3717f72f806179668433d8b7c53942b0266c2241a50cfc5b99",
+        "retrieved_at": "2026-10-18T15:46:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/VideoGUI/VideoGUI-High-Plan/raw/53ef16f2d26009c2234270c80f74ab9597c1108f/README.md",
+        "sha256": "a514a591367916610c935f020dc9f51984d07745c50104c0014b7b12055392cb",
+        "retrieved_at": "2026-10-18T15:46:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/VideoGUI/VideoGUI-Mid-Plan/raw/6852d8c9f2b9c586d7ff7cce2611080140f1a30c/README.md",
+        "sha256": "6e29f5c2df0acf6e26118f29f41fca71be2ec3793876620a58516f15dca8611b",
+        "retrieved_at": "2026-10-18T15:46:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/VideoGUI/VideoGUI-Action/raw/0a8110739acf4c766d4d55c9672cb38d1d9bfcbd/README.md",
+        "sha256": "22689ce830f6c30344a5d27d5ce231160a02a794a2e44776d7547732c5edb4a6",
+        "retrieved_at": "2026-10-18T15:46:26Z"
+      }
     ]
   },
   {

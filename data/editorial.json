@@ -63143,5 +63143,225 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:77afb3a9b045a157167c",
+    "name": "WebLINX 1.1 (WebLINX-BrowserGym)",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "action-prediction"
+    ],
+    "summary": "WebLINX 1.1, a reprocessed release of WebLINX's conversational web-navigation demonstrations packaged as single-step BrowserGym tasks that score one predicted browser action against the recorded turn.",
+    "scope": "core",
+    "verify_terms": [
+      "weblinx-browsergym"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2402.05930"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:mcgill-nlp/weblinx",
+        "evidence_url": "https://raw.githubusercontent.com/McGill-NLP/weblinx/9a7e814ffaac36d36ae5291dc3407c530055e16f/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:servicenow/browsergym",
+        "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data"
+    ],
+    "notes": "The card and the WebLINX README describe WebLINX 1.1 as derived from WebLINX for BrowserGym and AgentLab: some demonstrations were removed and tab actions were added to the evaluated steps, so results should be reported as WebLINX-1.1, WebLINX-BrowserGym or WebLINX-BG, not compared with WebLINX 1.0. Each demonstration folder holds accessibility trees, DOM snapshots, element properties and boxes, page HTML and screenshots, with per-demonstration ZIP archives alongside. The task loader and scorer live in the separate McGill-NLP/weblinx-browsergym extension repository, which declares no license. CC-BY-NC-SA-4.0 is the card's data declaration, with added terms of use.",
+    "details": {
+      "hub_id": "McGill-NLP/weblinx-browsergym",
+      "hub_revision": "9db39ad436c452c92feaaaa0c7e70a0330289827",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/tree/9db39ad436c452c92feaaaa0c7e70a0330289827",
+      "repository_url": "https://github.com/McGill-NLP/weblinx-browsergym",
+      "benchmark_protocol": {
+        "focus": [
+          "conversational web navigation",
+          "next-action prediction from recorded demonstration states"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screenshot",
+          "DOM snapshot",
+          "accessibility tree",
+          "extra element properties",
+          "open tab URLs and titles",
+          "chat history and goal"
+        ],
+        "actions": [
+          "click",
+          "hover",
+          "fill",
+          "goto",
+          "scroll",
+          "new_tab",
+          "tab_close",
+          "tab_focus",
+          "send_msg_to_user"
+        ],
+        "evaluation": "Each task replays one recorded turn and ends after one step. The extension's get_reward compares the predicted action with the reference turn: IoU for click and hover, chrF times IoU for text input, URL F-score for page loads, chrF for messages, a distance score for scrolls, intent match for opening or closing tabs and exact target match for tab switches; unsupported intents score 0.",
+        "counts": [
+          {
+            "value": 62966,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "all splits, task metadata at revision 9db39ad4",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 2325,
+            "unit": "demonstrations",
+            "qualifier": "exact",
+            "population": "all splits, distinct demo_name values at revision 9db39ad4",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 26410,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "train split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 2526,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "valid split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 2650,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "test_iid split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 6802,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "test_cat split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 8704,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "test_geo split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 10407,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "test_vis split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          },
+          {
+            "value": 5467,
+            "unit": "single-step tasks",
+            "qualifier": "exact",
+            "population": "test_web split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv"
+          }
+        ],
+        "notes": "A task is one demonstration turn named weblinx.<demo>.<step>. Tasks and demonstrations are different units; split task counts add up to the all-splits total. Counts were computed with a script from browsergym/task_metadata/weblinx_all.csv. The Hub API file list stops at 100,000 entries, so files were not counted. No agent was run.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv",
+          "https://raw.githubusercontent.com/McGill-NLP/weblinx-browsergym/297e5de4e773b8756b0d4c044f23d5075950dc3d/weblinx_browsergym/__init__.py",
+          "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ],
+        "url": "https://huggingface.co/api/datasets/McGill-NLP/weblinx-browsergym",
+        "sha256": "9a1bc777aadeb117d66a4bc240401471cbbc21b968140f7ab85cf2ec79c7d164",
+        "retrieved_at": "2026-10-18T12:21:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym/raw/9db39ad436c452c92feaaaa0c7e70a0330289827/browsergym/task_metadata/weblinx_all.csv",
+        "sha256": "d50c9bd8d67675316c50ff0cebf81c8273d1e4b1b815337c16757b0bb370b481",
+        "retrieved_at": "2026-10-18T12:21:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "details.repository_url",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/McGill-NLP/weblinx-browsergym/297e5de4e773b8756b0d4c044f23d5075950dc3d/weblinx_browsergym/__init__.py",
+        "sha256": "9f16aa5ee665b9d1b6eb36bd2b1c4303d53c1f0e7cb6b6b664fce03d389c7ab0",
+        "retrieved_at": "2026-10-18T12:21:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes",
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/McGill-NLP/weblinx/9a7e814ffaac36d36ae5291dc3407c530055e16f/README.md",
+        "sha256": "15c3f1656afd861894b180bca7d9214b4cf78a6ad9cd0601c80f5d67d2839528",
+        "retrieved_at": "2026-10-18T12:21:41Z"
+      }
+    ],
+    "reviewed_sha256": "15791d57bbcc8d4c5c88a8a3f5316ed72bc1e2ace939b1fb8dd6039b9a7b0d8b",
+    "reviewed_at": "2026-10-18T12:22:35Z"
   }
 ]

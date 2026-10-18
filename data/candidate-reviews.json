@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:embodied-agent-eval/embodied-agent-eval",
+    "url": "https://github.com/embodied-agent-eval/embodied-agent-eval",
+    "decision": "out_of_scope",
+    "reason": "Embodied Agent Interface benchmarks LLM decision-making for household robots in the BEHAVIOR and VirtualHome simulators, not computer, browser or mobile interfaces.",
+    "reviewed_at": "2026-10-18T11:22:43Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/embodied-agent-interface/embodied-agent-interface/main/README.md",
+      "sha256": "8b4d58dc20ace87a10106b827ab857c91b2289e3db46b15c61f5682c22e377bc",
+      "retrieved_at": "2026-10-18T11:19:24Z"
+    }
   }
 ]

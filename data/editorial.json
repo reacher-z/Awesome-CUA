@@ -63143,5 +63143,130 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:sunzey/seagent",
+    "name": "SEAgent",
+    "kind": "framework",
+    "url": "https://github.com/SunzeY/SEAgent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "data-generation",
+      "reward-models"
+    ],
+    "summary": "Training code for SEAgent: a UI-TARS actor explores OSWorld software, a world-state model judges its screenshot trajectories, a curriculum generator writes harder tasks, and SFT and GRPO update the actor.",
+    "scope": "core",
+    "verify_terms": [
+      "SEAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2508.04700"
+    ],
+    "notes": "Official implementation of the SEAgent paper. The repository bundles a modified OSWorld copy with run, task-buffer, judging and SFT-data scripts, an R1-V-based GRPO trainer initialised from UI-TARS-7B-DPO, and AgentRewardBench judge replacements for evaluating the world-state model. The judging script sends sequential screenshot keyframes to the world-state model; the task generator is a Qwen2.5-72B endpoint that rewrites a per-software task list from earlier results. The README links two Hugging Face checkpoints, SEAgent-1.0-7B and the 7B World State Model, which were not inspected for this record. The bundled OSWorld and R1-V directories carry their own LICENSE files.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "repository_url": "https://github.com/SunzeY/SEAgent",
+      "repository_revision": "c8887f157352494953b3317047929cf81465defa",
+      "availability": "R1-V-based SFT and GRPO training, curriculum task generation, trajectory judging and OSWorld inference scripts are released; the README lists OpenRLHF-based training code as not yet released."
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/SunzeY/SEAgent",
+        "sha256": "17e14a8210fc6c5269969876ba3bd76c8052da7cfe540bd78a740982eaa0442e",
+        "retrieved_at": "2026-10-18T12:22:56Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/SunzeY/SEAgent/git/trees/main?recursive=1",
+        "sha256": "2b8fb0f69ca1dd1e5f8318b7d664cb4842d349a47d3bf01bb3f196e36514c8df",
+        "retrieved_at": "2026-10-18T12:22:57Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "notes",
+          "licenses.code"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SunzeY/SEAgent/c8887f157352494953b3317047929cf81465defa/README.md",
+        "sha256": "c053804f8aefbdf1754a55e664ecb61d2ef33a6993b9c942da8192f2fe3c6657",
+        "retrieved_at": "2026-10-18T12:22:58Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.availability",
+          "licenses.code"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SunzeY/SEAgent/c8887f157352494953b3317047929cf81465defa/OSWorld/judge_full_process.py",
+        "sha256": "8eefaad0b56d0bf099aa5123fe6badeb30d7b0dd8005eb8512d1c09d7c1ebf64",
+        "retrieved_at": "2026-10-18T12:22:58Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SunzeY/SEAgent/c8887f157352494953b3317047929cf81465defa/OSWorld/task_buffer/task_buffer_update_from_qwen.py",
+        "sha256": "5244ced2a4dca0c31fb29274caf9a5d81e6c947234cb6b36aadad2fcf4333b93",
+        "retrieved_at": "2026-10-18T12:22:58Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SunzeY/SEAgent/c8887f157352494953b3317047929cf81465defa/src/r1-v/run_grpo_gui_8_7b.sh",
+        "sha256": "f62a3a92b99a4ffd145f6df317c485f22db6d7dec3c2937fde5e29e34c4eb2b7",
+        "retrieved_at": "2026-10-18T12:22:58Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The repository has no root license file. Its README shows an Apache-2.0 code badge and a CC BY-NC 4.0 data badge, but its notice says the data and code are licensed for research use only and names Attribution-NonCommercial 4.0 International. The bundled OSWorld and R1-V licenses cover only those directories. The project code license stays unresolved.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/SunzeY/SEAgent/c8887f157352494953b3317047929cf81465defa/README.md",
+          "https://api.github.com/repos/SunzeY/SEAgent/git/trees/main?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c053804f8aefbdf1754a55e664ecb61d2ef33a6993b9c942da8192f2fe3c6657",
+    "reviewed_at": "2026-10-18T12:23:40Z"
   }
 ]

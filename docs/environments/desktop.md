@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -125,6 +125,7 @@
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | Training code for SEAgent: a UI-TARS actor explores OSWorld software, a world-state model judges its screenshot trajectories, a curriculum generator writes harder tasks, and SFT and GRPO update the actor. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
 | [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 | [Surfkit](https://github.com/agentsea/surfkit) | desktop | — | code MIT | Python toolkit and CLI for building, publishing and running multimodal agents that operate devices such as Ubuntu desktops, locally or on Kubernetes, with task trackers and an agent hub. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/surfkit/HEAD/README.md) |
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |

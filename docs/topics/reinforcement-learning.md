@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -69,6 +69,7 @@ All entries in this section: web.
 | [MobileRL](https://github.com/THUDM/MobileRL) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | code MIT | Online agentic RL framework for mobile GUI agents built around the difficulty-adaptive ADAGRPO algorithm, with Dockerized AndroidWorld and AndroidLab evaluation and a MobileRL-9B checkpoint. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/MobileRL/HEAD/README.md) |
 | [Proposer-Agent-Evaluator (PAE)](https://github.com/amazon-science/PAE) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | — | A browser-agent training system that proposes tasks, collects visual interaction trajectories, and uses automated evaluation to drive policy improvement. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/amazon-science/PAE/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | Training code for SEAgent: a UI-TARS actor explores OSWorld software, a world-state model judges its screenshot trajectories, a curriculum generator writes harder tasks, and SFT and GRPO update the actor. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 | [WebAgent-R1](https://github.com/weizhepei/WebAgent-R1) | web | [2505.16421](https://arxiv.org/abs/2505.16421) (2025) | code Apache-2.0 | Environment setup, multi-turn reinforcement-learning and evaluation tooling for browser agents interacting with WebArena. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/weizhepei/WebAgent-R1/HEAD/WebAgent-R1/README.md) |
 | [WebRL](https://github.com/THUDM/WebRL) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | Training pipeline that evolves web tasks from prior attempts and uses an outcome reward model to refine browser policies. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/THUDM/WebRL/HEAD/README.md) |

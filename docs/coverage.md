@@ -2,10 +2,10 @@
 
 Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from committed source receipts.
 
-- 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
+- 3,176 resource records: 1,615 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,239 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -20,7 +20,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [benchmark](benchmarks.md) | 42 | 20 | 5 | 3 | 5 | 19 | 1 | · | 14 | 3 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 25 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 7 |
-| [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
+| [framework](frameworks.md) | 37 | 23 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 441 | 204 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
@@ -42,7 +42,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-17 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-17 |
 | [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | OK · 2026-10-17 |
-| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-10-17 |
+| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 70 | 64 | 0 | 2 | 22 | OK · 2026-10-17 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 27 | OK · 2026-10-17 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-10-17 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 28 | OK · 2026-10-17 |

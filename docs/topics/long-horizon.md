@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-99 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+100 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (2)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
 
 ## Benchmarks
 
@@ -18,11 +18,10 @@
 
 ## Datasets
 
-All entries in this section: desktop, web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| [OSWorld 2.0 trajectories](https://huggingface.co/datasets/xlangai/osworld2.0-trajectory) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | [21 ZIP result archives](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0) · [7 model run folders](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0/website_demo) · [108 task folders](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0/website_demo/MiniMax-M3/tasks) | — | XLang's gated release of OSWorld 2.0 agent runs: 21 ZIP result archives named by model and run settings, plus per-task trajectory JSONL, step screenshots, results and logs for seven model runs. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory) |
 
 ## Models
 

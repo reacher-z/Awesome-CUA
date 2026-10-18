@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**75 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
+**76 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (19)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -90,6 +90,7 @@ All entries in this section: web.
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+| [VGA: Vision GUI Assistant](https://github.com/Linziyang1999/Vision-GUI-assistant) | android | [2406.14056](https://arxiv.org/abs/2406.14056) (2024) | code Apache-2.0 | Code and data release for VGA: GPT-generated question-answer conversations about Rico Android screens in LLaVA format, the prompts that produced them, and two-stage LLaVA-1.6 fine-tuning scripts. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/README.md) |
 
 [↑ Back to top](#framework-catalog)
 

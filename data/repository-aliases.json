@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:linziyang1999/vga-visual-gui-assistant",
+    "target_id": "github:linziyang1999/vision-gui-assistant",
+    "repository_id": 815485879,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:28:33Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/Linziyang1999/VGA-visual-GUI-assistant",
+        "resolved_url": "https://api.github.com/repositories/815485879",
+        "repository_id": 815485879,
+        "full_name": "Linziyang1999/Vision-GUI-assistant",
+        "html_url": "https://github.com/Linziyang1999/Vision-GUI-assistant",
+        "retrieved_at": "2026-10-18T11:28:32Z",
+        "sha256": "5bac2232dae3c5ac92eaedee675e42c732dd7c6845a6d71ebdd80617404ddb06"
+      },
+      {
+        "url": "https://api.github.com/repos/Linziyang1999/Vision-GUI-assistant",
+        "resolved_url": "https://api.github.com/repos/Linziyang1999/Vision-GUI-assistant",
+        "repository_id": 815485879,
+        "full_name": "Linziyang1999/Vision-GUI-assistant",
+        "html_url": "https://github.com/Linziyang1999/Vision-GUI-assistant",
+        "retrieved_at": "2026-10-18T11:28:33Z",
+        "sha256": "5bac2232dae3c5ac92eaedee675e42c732dd7c6845a6d71ebdd80617404ddb06"
+      }
+    ]
   }
 ]

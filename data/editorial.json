@@ -63143,5 +63143,91 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:linziyang1999/vision-gui-assistant",
+    "name": "VGA: Vision GUI Assistant",
+    "kind": "framework",
+    "url": "https://github.com/Linziyang1999/Vision-GUI-assistant",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "data-generation",
+      "grounding"
+    ],
+    "summary": "Code and data release for VGA: GPT-generated question-answer conversations about Rico Android screens in LLaVA format, the prompts that produced them, and two-stage LLaVA-1.6 fine-tuning scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "VGA: Vision GUI Assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "documented_by": [
+      "2406.14056"
+    ],
+    "notes": "Formerly Linziyang1999/VGA-visual-GUI-assistant; both names resolve to GitHub repository 815485879. The repository holds conversation and instruction JSON files, GPT prompt templates over Rico component annotations, a replacement LLaVA train.py, foundation and advanced fine-tuning scripts for llava-v1.6-mistral-7b, and a small benchmark folder with 44 question-answer pairs over 22 Rico screenshots. Rico images must be downloaded separately. No trained checkpoint is linked. Root LICENSE is Apache-2.0 for the code; it is not applied to the bundled generated data or Rico screenshots, and the separate Hub copy of the data (zylate/Vision_GUI_Assistant) is not covered by this record.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/dataset%20generate/gpt_prompt.py",
+        "sha256": "ba410556c12b79b8e43143cfd7a645335904aed4aba6fac5b18e3f7ceaa979a9",
+        "retrieved_at": "2026-10-18T11:28:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/benchmark/question_VGA_answer.json",
+        "sha256": "12b4267cd093fa5304a7fa5af471a52c7b8d427a2d99ae571eac2fc6ec7399d4",
+        "retrieved_at": "2026-10-18T11:28:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T11:28:31Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:28:31Z",
+          "basis": "Reviewed repository license declaration for code; bundled generated conversations, Rico screenshots and LLaVA dependencies are separate."
+        },
+        "reason": "Reviewed repository license declaration for code; bundled generated conversations, Rico screenshots and LLaVA dependencies are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "90f65410bf548ea8f1798b6c9ff662c5e6f73ac8442e457d9b91f49d57fd954b",
+    "reviewed_at": "2026-10-18T11:28:52Z"
   }
 ]

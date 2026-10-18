@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -25,11 +25,10 @@
 
 ## Agents
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [CUGA](https://github.com/cuga-project/cuga-agent) | web | — | code Apache-2.0 | Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md) |
+| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
 
 ## Frameworks
 

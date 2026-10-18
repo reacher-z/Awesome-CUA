@@ -63143,5 +63143,102 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:cuga-project/cuga-agent",
+    "name": "CUGA",
+    "kind": "agent",
+    "url": "https://github.com/cuga-project/cuga-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "industry",
+      "safety-security"
+    ],
+    "summary": "Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards.",
+    "scope": "core",
+    "verify_terms": [
+      "CUGA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The README calls it a Configurable Generalist Agent built with IBM; IBM's papers expand the name as Computer Using Generalist Agent. The default task mode is API-only; web and hybrid modes run the browser agent (planner, action agent with click, type, select, go-back and scroll tools, and page understanding) through a browser extension. NOTICE lists files derived from BrowserGym. The README cites arXiv 2510.23856 for its WebArena result; that paper is not in the catalog, and the curated arxiv:2503.01861 describes the CUGA system without naming this repository, so no relation is recorded. Benchmark figures are the publisher's and were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source and Python package; GitHub releases carry no binary assets",
+      "package_version": "0.4.2",
+      "repository_revision": "93a630a68d937177a919a07343e2b4b9c7477e1f"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/93a630a68d937177a919a07343e2b4b9c7477e1f/docs/readme/configuration-guide.md",
+        "sha256": "98fe4108be085b3aa64f244ccb8109ed3ab8ea2a3cb2aeb2eb79a5795fd32dc9",
+        "retrieved_at": "2026-10-18T11:57:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/93a630a68d937177a919a07343e2b4b9c7477e1f/src/cuga/backend/cuga_graph/nodes/browser/action_agent/tools/tools.py",
+        "sha256": "362051a85e89650795b2139f2afd51cef3fc35276a396d432e5c71907d6b3e57",
+        "retrieved_at": "2026-10-18T11:57:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.package_version",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/93a630a68d937177a919a07343e2b4b9c7477e1f/pyproject.toml",
+        "sha256": "bb303fc63aa234c38499a361b168cae86fa22eb04e62274b3060ff6c9bed4110",
+        "retrieved_at": "2026-10-18T11:57:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/93a630a68d937177a919a07343e2b4b9c7477e1f/LICENSE",
+        "sha256": "09f347a8e18bf1ad831cd85ecbf25eee7ced31b41f63955705e3ed163c3042e1",
+        "retrieved_at": "2026-10-18T11:57:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cuga-project/cuga-agent/93a630a68d937177a919a07343e2b4b9c7477e1f/NOTICE",
+        "sha256": "fee8ea66937d26e22b8b6f6f106f6157751098cc7c88e5b3ad85f32fd6abcaed",
+        "retrieved_at": "2026-10-18T11:57:50Z"
+      }
+    ],
+    "reviewed_sha256": "bd4782c554fbf7433dee4ce43f72eec57dcf5e40099416f9e564f7e580508b0d",
+    "reviewed_at": "2026-10-18T11:58:28Z"
   }
 ]

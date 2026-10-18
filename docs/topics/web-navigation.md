@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (10)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -72,6 +72,7 @@ All entries in this section: web.
 | [Agent E](https://github.com/EmergenceAI/Agent-E) | [2407.13032](https://arxiv.org/abs/2407.13032) (2024) | code MIT | Browser automation agent on the AG2 framework that pairs a planner agent with a browser navigation agent to fill forms, search shops and work through sites, also callable over a local HTTP API. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/EmergenceAI/Agent-E/HEAD/README.md) |
 | [AutoWebGLM](https://github.com/THUDM/AutoWebGLM) | — | code Apache-2.0 | Web navigation agent built on ChatGLM3-6B that simplifies HTML for the model, is trained on hybrid human and AI data with RL and rejection sampling, and comes with the bilingual AutoWebBench. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AutoWebGLM/HEAD/README.md) |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
+| [CUGA](https://github.com/cuga-project/cuga-agent) | — | code Apache-2.0 | Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
 | [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) | [2310.10634](https://arxiv.org/abs/2310.10634) (2023) | code Apache-2.0 | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md) |

@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-27 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+28 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (11)](#papers)
+**Contents:** [Agents (1)](#agents) · [Publishers (16)](#publishers) · [Papers (11)](#papers)
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [CUGA](https://github.com/cuga-project/cuga-agent) | — | code Apache-2.0 | Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md) |
 
 ## Publishers
 

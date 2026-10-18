@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (5)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -14,6 +14,7 @@
 | [GUI-CIDER causal knowledge data](https://huggingface.co/datasets/wuuuuuz/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | — | A published JSONL corpus of synthesized planning and causal knowledge for GUI-agent mid-training, linked directly from the official GUI-CIDER project. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIMid training data](https://huggingface.co/datasets/hkust-nlp/GUIMid) | web, android | [2504.10127](https://arxiv.org/abs/2504.10127) (2025) | — | data mit | A released GUI-agent mid-training mixture and supporting domain datasets, together with a post-training trajectory file and image archives for web and mobile interaction. | [✓ 2026‑10‑17](https://huggingface.co/datasets/hkust-nlp/GUIMid/raw/main/README.md) |
 | [Plan-and-Act training data](https://huggingface.co/datasets/xTRam1/plan-and-act-data) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | — | data mit | Planner and action-executor training examples for WebArena-Lite and WebVoyager, with model-specific processed files and raw trajectory annotations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xTRam1/plan-and-act-data/raw/main/README.md) |
+| [WebChain (original release)](https://huggingface.co/datasets/webagentlab/webchain-legacy) | web | [2603.05295](https://arxiv.org/abs/2603.05295) (2026) | [31,725 trajectories](https://huggingface.co/datasets/webagentlab/webchain-legacy/raw/bd5699076abec17010963ca6a7c66ea7c5fa01ff/README.md) · [317,993 interaction steps](https://huggingface.co/datasets/webagentlab/webchain-legacy/raw/bd5699076abec17010963ca6a7c66ea7c5fa01ff/README.md) · [428 web domains](https://huggingface.co/datasets/webagentlab/webchain-legacy/raw/bd5699076abec17010963ca6a7c66ea7c5fa01ff/README.md) · [13 Parquet files](https://huggingface.co/api/datasets/webagentlab/webchain-legacy) | data cc-by-4.0 | Original WebChain release of human-annotated trajectories on live websites, with raw JSON records, viewport and partial full-page screenshots, and Parquet files for high-level planning and low-level grounding steps. | [✓ 2026‑10‑18](https://huggingface.co/datasets/webagentlab/webchain-legacy/raw/bd5699076abec17010963ca6a7c66ea7c5fa01ff/README.md) |
 
 ## Models
 

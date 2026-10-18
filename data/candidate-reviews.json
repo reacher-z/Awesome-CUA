@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:modelscope/swift",
+    "url": "https://github.com/modelscope/swift",
+    "decision": "out_of_scope",
+    "reason": "github.com/modelscope/swift is the former name of modelscope/ms-swift: the GitHub API returns the same repository ID, 673412924, for both names. The repository is a general language-model fine-tuning framework with no GUI, browser or device interaction, so the former name shares the current repository's out-of-scope status.",
+    "reviewed_at": "2026-10-18T11:50:55Z",
+    "evidence": {
+      "url": "https://api.github.com/repos/modelscope/swift",
+      "sha256": "c4bd5aeb55d0269cbc4d8bb33479b80e0c18a7497b7f662f2cd3f554b6ee6127",
+      "retrieved_at": "2026-10-18T11:39:49Z"
+    }
   }
 ]

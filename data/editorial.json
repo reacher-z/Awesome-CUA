@@ -63143,5 +63143,127 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FastAgent (HKUDS)",
+    "kind": "framework",
+    "url": "https://github.com/HKUDS/FastAgent",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "planning",
+      "memory"
+    ],
+    "summary": "Multi-agent framework combining web research with desktop use: a grounding agent routes steps to shell, MCP, web or a GUI backend that runs a Claude computer-use model's pyautogui actions through a bundled local server.",
+    "scope": "core",
+    "verify_terms": [
+      "FastAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HKUDS/FastAgent/HEAD/README.md"
+    ],
+    "notes": "Python framework from HKUDS, released as source on the main branch. A host agent decomposes tasks on an event-driven kanban board, a grounding agent selects tools by embedding retrieval across shell, GUI, MCP and web backends, and an evaluation agent checks selected steps. The GUI backend takes a screenshot from the local server, sends it to Claude Sonnet 4.5 with Anthropic's computer_20250124 tool, and posts the returned pyautogui command to the server's /execute endpoint (fastagent/grounding/backends/gui/tool.py, anthropic_client.py, transport/connector.py). The bundled Flask local server (fastagent/local_server) has macOS, Linux and Windows adapters and endpoints for screenshots, accessibility trees, Python and Bash execution, files and windows. Without the local server only MCP and web research are available. The README lists multi-tier memory, context compression, command filtering, optional E2B sandboxing and trajectory and video recording. The framework was not run.",
+    "details": {
+      "availability": "Source only; no packaged release",
+      "repository_revision": "c7c819c77482102a4557a5cde793a5e255d1d034"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://github.com/HKUDS/FastAgent/tree/c7c819c77482102a4557a5cde793a5e255d1d034",
+        "sha256": "b7c8b105893b3c2648d66d523cc6ee92b6378898c94eda0a0ad08b7123cbd2d2",
+        "retrieved_at": "2026-10-18T16:06:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/FastAgent/c7c819c77482102a4557a5cde793a5e255d1d034/fastagent/grounding/backends/gui/tool.py",
+        "sha256": "f2fdd2e632b0eb1483b39276495c567fbce383717f067a438a0891412030f048",
+        "retrieved_at": "2026-10-18T16:06:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/FastAgent/c7c819c77482102a4557a5cde793a5e255d1d034/fastagent/grounding/backends/gui/anthropic_client.py",
+        "sha256": "bfc55393bb0d74a16c9821778c4cee2dc80b8d62b0052f3070e8bd7c4cfea8a4",
+        "retrieved_at": "2026-10-18T16:06:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/FastAgent/c7c819c77482102a4557a5cde793a5e255d1d034/fastagent/grounding/backends/gui/transport/connector.py",
+        "sha256": "442e92f65818c82e006aea5ae18dbdf2e592823043c97a95d82d58fd4b95a9f5",
+        "retrieved_at": "2026-10-18T16:06:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/FastAgent/c7c819c77482102a4557a5cde793a5e255d1d034/fastagent/local_server/main.py",
+        "sha256": "cd2da5ecc670e774936d36d0b1f495aae17e5f9c577e7282fa37b8845424db3b",
+        "retrieved_at": "2026-10-18T16:06:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/FastAgent/c7c819c77482102a4557a5cde793a5e255d1d034/fastagent/local_server/README.md",
+        "sha256": "2f46514327c65c577a654d2e80cc113a5e11609faf016e0a77b078b612560996",
+        "retrieved_at": "2026-10-18T16:06:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/FastAgent/c7c819c77482102a4557a5cde793a5e255d1d034/LICENSE",
+        "sha256": "68c9fc511bb10d1488522aa139d1e91289b76ab998fc8ca815e93a85c4ea4850",
+        "retrieved_at": "2026-10-18T16:06:53Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "96163a38633fee55ae8be06184aa609019f02ece941485a96785be90e844efab",
+    "reviewed_at": "2026-10-18T16:07:23Z"
   }
 ]

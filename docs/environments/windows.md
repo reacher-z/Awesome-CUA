@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-63 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+64 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
 
 ## Benchmarks
 
@@ -47,12 +47,11 @@
 
 ## Frameworks
 
-All entries in this section: desktop, windows, linux.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
-| [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [FastAgent (HKUDS)](https://github.com/HKUDS/FastAgent) | desktop, macos, linux, windows | — | code MIT | Multi-agent framework combining web research with desktop use: a grounding agent routes steps to shell, MCP, web or a GUI backend that runs a Claude computer-use model's pyautogui actions through a bundled local server. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/HKUDS/FastAgent/HEAD/README.md) |
+| [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
+| [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 
 ## Tools
 

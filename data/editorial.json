@@ -22669,13 +22669,90 @@
         "url": "https://huggingface.co/api/datasets/mllmTeam/DroidCall",
         "sha256": "c7804987d56b03314a4c48e3ddf2e5819fc0d9c83cc65ba54a981a2f4a584dd9",
         "retrieved_at": "2026-10-17T02:02:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2412.00402v1",
+        "sha256": "403ccae0776b688cc0536586fecd63aa5c6ee723ee956794fa9287aadd3a7c33",
+        "retrieved_at": "2026-10-18T16:16:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/42563ae614280d2891d57f1e7057c4bc50dd27bd/DroidCall_test.jsonl",
+        "sha256": "d7e40ce794c98984befb872d2d71ee28511938c0baef881b14098575cda151f2",
+        "retrieved_at": "2026-10-18T16:16:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/42563ae614280d2891d57f1e7057c4bc50dd27bd/annotated_api.jsonl",
+        "sha256": "29c4791f7a496e587af74b1a1398864bd6c6de9db767cb97606525d62ec05951",
+        "retrieved_at": "2026-10-18T16:16:05Z"
       }
     ],
     "details": {
       "hub_id": "mllmTeam/DroidCall",
       "gated": false,
       "disabled": false,
-      "download_url": "https://huggingface.co/datasets/mllmTeam/DroidCall/tree/main"
+      "download_url": "https://huggingface.co/datasets/mllmTeam/DroidCall/tree/main",
+      "dataset_profile": {
+        "supervision": [
+          "instruction-to-function-call pairs for Android intent invocation"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "formats": [
+          "JSONL"
+        ],
+        "splits": [
+          "train",
+          "test"
+        ],
+        "counts": [
+          {
+            "value": 10000,
+            "unit": "samples",
+            "qualifier": "approximately",
+            "population": "DroidCall training data as stated in arXiv 2412.00402v1 (abstract and Section 3.2.3)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2412.00402v1"
+          },
+          {
+            "value": 200,
+            "unit": "samples",
+            "qualifier": "exact",
+            "population": "test split, DroidCall_test.jsonl rows at revision 42563ae",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/42563ae614280d2891d57f1e7057c4bc50dd27bd/DroidCall_test.jsonl"
+          },
+          {
+            "value": 24,
+            "unit": "annotated functions",
+            "qualifier": "exact",
+            "population": "annotated_api.jsonl rows at revision 42563ae",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/42563ae614280d2891d57f1e7057c4bc50dd27bd/annotated_api.jsonl"
+          }
+        ],
+        "notes": "The paper states a 10,000-entry train split and a 200-entry test split. At revision 42563ae, DroidCall_train.jsonl and the chat-format DroidCall_code_short.jsonl each stream 10,071 lines, so the training figure is kept as the paper's approximate statement.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2412.00402v1",
+          "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/42563ae614280d2891d57f1e7057c4bc50dd27bd/DroidCall_test.jsonl",
+          "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/42563ae614280d2891d57f1e7057c4bc50dd27bd/annotated_api.jsonl"
+        ]
+      }
     }
   },
   {

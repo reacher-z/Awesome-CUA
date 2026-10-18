@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:ysymyth/awesome-language-agents",
+    "url": "https://github.com/ysymyth/awesome-language-agents",
+    "decision": "out_of_scope",
+    "reason": "A reading list of 80 language-agent papers, each labeled with the Cognitive Architectures for Language Agents (CoALA) action-space categories, released alongside that general framework paper. It covers reasoning, robotics and memory as much as web environments, is not one of the catalog's discovery sources, and releases no software, data or survey of its own, so it does not fit a resource kind.",
+    "reviewed_at": "2026-10-18T15:33:19Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/ysymyth/awesome-language-agents/HEAD/README.md",
+      "sha256": "1614a9313c630819381f7616797282a2a91214f9548f718097a6c002ac26ee89",
+      "retrieved_at": "2026-10-18T12:28:05Z"
+    }
   }
 ]

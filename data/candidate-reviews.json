@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:plasmate-labs/plasmate-benchmarks",
+    "url": "https://github.com/plasmate-labs/plasmate-benchmarks",
+    "decision": "out_of_scope",
+    "reason": "Plasmate Benchmarks is the vendor's script set that compares Plasmate's Semantic Object Model output with raw HTML and Chrome's DOM dump on 51 public URLs by token count, price-multiplied cost, time and memory. It runs no agent and measures no task outcome, so it is supporting documentation for the Plasmate engine rather than a computer-use benchmark.",
+    "reviewed_at": "2026-10-18T12:20:10Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/plasmate-labs/plasmate-benchmarks/HEAD/README.md",
+      "sha256": "a1413e9e2e49d49849bcbfdc6676973fe41c0021d86f90449621d2ba5b4762c6",
+      "retrieved_at": "2026-10-18T11:57:28Z"
+    }
   }
 ]

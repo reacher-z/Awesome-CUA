@@ -63143,5 +63143,176 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2406.13352",
+    "name": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2406.13352",
+    "summary": "Introduces AgentDojo, an extensible environment of tool-calling tasks over untrusted data that measures prompt-injection attacks, defenses and utility, with 97 tasks and 629 security test cases.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "tool-integration"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "AgentDojo: A Dynamic Environment"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2406.13352&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract (version 3). Agents act through tool calls on simulated email, banking and travel services rather than through screenshots or page DOMs, so the paper is adjacent to GUI-agent safety. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "82f712f54aa9b3b42146ddc85ad8a0f6b765507bfdde986cab3344f50a88bf4b",
+    "reviewed_at": "2026-10-18T11:07:25Z"
+  },
+  {
+    "name": "AgentDojo",
+    "kind": "benchmark",
+    "url": "https://github.com/ethz-spylab/agentdojo",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "tool-integration"
+    ],
+    "summary": "Python benchmark package for prompt-injection security of tool-calling agents, with workspace, banking, travel and Slack suites, pluggable attacks and defenses, and a script that scores utility and attack success.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "AgentDojo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ethz-spylab/agentdojo/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2406.13352"
+    ],
+    "notes": "Agents interact with simulated applications through function calls, not graphical interfaces; it is included as an adjacent security benchmark for comparison with GUI and browser-agent safety work. The inspected v1 suite directory lists banking, slack, travel and workspace; later suite versions (v1_1 to v1_2_2) exist alongside it, so record the suite version with any score. The README warns that the package API may still change. Publisher results on the documentation site were not reproduced. MIT applies to the repository code.",
+    "details": {
+      "availability": "Published source; README documents a pip package",
+      "repository_url": "https://github.com/ethz-spylab/agentdojo",
+      "leaderboard_url": "https://agentdojo.spylab.ai/results/",
+      "benchmark_protocol": {
+        "focus": [
+          "prompt-injection robustness",
+          "task utility under attack"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "tool-call results from simulated applications"
+        ],
+        "actions": [
+          "function calls to suite tools"
+        ],
+        "evaluation": "Each user task is checked for utility, and each injection task is checked for whether the attacker goal was executed; the benchmark script combines suites, attacks and defenses.",
+        "counts": [
+          {
+            "value": 97,
+            "unit": "user tasks",
+            "qualifier": "exact",
+            "population": "suites reported in the paper (version 3 abstract)",
+            "basis": "reported",
+            "evidence_url": "https://export.arxiv.org/api/query?id_list=2406.13352&max_results=1"
+          },
+          {
+            "value": 629,
+            "unit": "security test cases",
+            "qualifier": "exact",
+            "population": "suites reported in the paper (version 3 abstract)",
+            "basis": "reported",
+            "evidence_url": "https://export.arxiv.org/api/query?id_list=2406.13352&max_results=1"
+          },
+          {
+            "value": 4,
+            "unit": "task suites",
+            "qualifier": "exact",
+            "population": "src/agentdojo/default_suites/v1 directory listing",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/ethz-spylab/agentdojo/contents/src/agentdojo/default_suites/v1"
+          }
+        ],
+        "notes": "Paper counts describe the reported benchmark; later suite versions in the repository may change tasks. Keep the suite version, attack, defense and model with a result.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ethz-spylab/agentdojo/HEAD/README.md",
+          "https://export.arxiv.org/api/query?id_list=2406.13352&max_results=1",
+          "https://api.github.com/repos/ethz-spylab/agentdojo/contents/src/agentdojo/default_suites/v1"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/ethz-spylab/agentdojo",
+        "sha256": "9ad83f42b22642a9dc444edcb45f07a8b296b36b459c951183d3d8a4f3e47f2d",
+        "retrieved_at": "2026-10-18T11:06:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/ethz-spylab/agentdojo/contents/src/agentdojo/default_suites/v1",
+        "sha256": "3f222c17164d5efd16c1c3b93088c5f51c0eb7d3f034581be3bbe7a4b3b2750d",
+        "retrieved_at": "2026-10-18T11:06:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://export.arxiv.org/api/query?id_list=2406.13352&max_results=1",
+        "sha256": "82f712f54aa9b3b42146ddc85ad8a0f6b765507bfdde986cab3344f50a88bf4b",
+        "retrieved_at": "2026-10-18T11:06:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/HEAD/LICENSE",
+        "sha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e",
+        "retrieved_at": "2026-10-18T11:06:32Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details",
+      "details.benchmark_protocol",
+      "details.leaderboard_url"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d8c6460ecce9bbf59ed300fbc74b4440188f74cd147a7611836270be49e7660e",
+    "reviewed_at": "2026-10-18T11:07:25Z"
   }
 ]

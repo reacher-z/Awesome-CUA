@@ -13,6 +13,7 @@ LEADERBOARDS = {
     "github:web-arena-x/webarena": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/edit?usp=sharing",
     "github:google-research/android_world": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0#gid=0",
     "github:likaixin2000/screenspot-pro-gui-grounding": "https://gui-agent.github.io/grounding-leaderboard",
+    "github:ethz-spylab/agentdojo": "https://agentdojo.spylab.ai/results/",
     "github:imeanai/webcanvas": "https://github.com/iMeanAI/WebCanvas/blob/main/Mind2web-live_Leaderboard.md",
     "github:jetastra/macagentbench": "https://jetastra.github.io/MacAgentBench/",
     "github:mcgill-nlp/agent-reward-bench": "https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard",

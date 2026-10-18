@@ -63143,5 +63143,79 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-Actor 2B Qwen2-VL",
+    "kind": "model",
+    "url": "https://huggingface.co/microsoft/GUI-Actor-2B-Qwen2-VL",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding"
+    ],
+    "summary": "GUI-Actor grounding checkpoint built on Qwen2-VL-2B-Instruct with an attention-based action head that proposes ranked click points for an instruction on a screenshot, without emitting coordinates as text.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Actor-2B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/microsoft/GUI-Actor-2B-Qwen2-VL/raw/8f87b366d004425a9823502553e2097c71116ece/README.md"
+    ],
+    "family_url": "https://github.com/microsoft/GUI-Actor",
+    "documented_by": [
+      "2506.03143"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:66096ad4057a3d3726f5",
+        "evidence_url": "https://huggingface.co/microsoft/GUI-Actor-2B-Qwen2-VL/raw/8f87b366d004425a9823502553e2097c71116ece/README.md"
+      }
+    ],
+    "notes": "Hub API at revision 8f87b366 lists one BF16 safetensors file (about 2.23B parameters); the config names Qwen2VLForConditionalGenerationWithPointer, a class loaded from the GUI-Actor code rather than stock Transformers. The repository is not gated. The card says it was fine-tuned for GUI grounding on the cckevinn/GUI-Actor-Data dataset and reports 36.7 on ScreenSpot-Pro, 86.5 on ScreenSpot and 88.6 on ScreenSpot-v2 for this size; these are publisher measurements and were not reproduced. The card declares MIT for the checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "microsoft/GUI-Actor-2B-Qwen2-VL",
+      "hub_revision": "8f87b366d004425a9823502553e2097c71116ece",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/microsoft/GUI-Actor-2B-Qwen2-VL/tree/main",
+      "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+      "architecture": "Qwen2VLForConditionalGenerationWithPointer",
+      "parameter_label": "2B",
+      "listed_weight_files": [
+        "model.safetensors"
+      ],
+      "repository_url": "https://github.com/microsoft/GUI-Actor"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/microsoft/GUI-Actor-2B-Qwen2-VL/revision/8f87b366d004425a9823502553e2097c71116ece",
+        "sha256": "1e94e0139ceb46ef70eef0c9b72f22ad623c2d99de41d42522606c0a2847a622",
+        "retrieved_at": "2026-10-18T12:04:10Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8f872a9016aec48a245d0ac187f22a16f56fd8fc0d7f690b219d3ce0c5ab4413",
+    "reviewed_at": "2026-10-18T12:04:11Z"
   }
 ]

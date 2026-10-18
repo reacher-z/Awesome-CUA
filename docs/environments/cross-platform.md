@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (48)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -58,6 +58,7 @@
 | [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use) | cross-platform | — | — | Gemini capability for generating interface actions from screenshots. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [GroundGUI-8B](https://huggingface.co/PrentisAI/GroundGUI-8B) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | weights apache-2.0 | Screenshot grounding checkpoint that emits a single click in a normalized coordinate space. | [✓ 2026‑10‑17](https://huggingface.co/PrentisAI/GroundGUI-8B/raw/main/README.md) |
 | [GUI-Actor](https://github.com/microsoft/GUI-Actor) | cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | code MIT | GUI grounding model with attention-based action localization. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/GUI-Actor/HEAD/README.md) |
+| [GUI-Actor 2B Qwen2-VL](https://huggingface.co/microsoft/GUI-Actor-2B-Qwen2-VL) | cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | weights mit | GUI-Actor grounding checkpoint built on Qwen2-VL-2B-Instruct with an attention-based action head that proposes ranked click points for an instruction on a screenshot, without emitting coordinates as text. | [✓ 2026‑10‑18](https://huggingface.co/microsoft/GUI-Actor-2B-Qwen2-VL/raw/8f87b366d004425a9823502553e2097c71116ece/README.md) |
 | [GUI-Actor 7B Qwen2-VL](https://huggingface.co/microsoft/GUI-Actor-7B-Qwen2-VL) | cross-platform | — | weights mit | GUI-Actor checkpoint fine-tuned from Qwen2-VL-7B-Instruct, with about 8.4B BF16 parameters, whose config names a pointer variant of the Qwen2-VL class rather than the stock one, under MIT. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/GUI-Actor-7B-Qwen2-VL) |
 | [GUI-G1](https://github.com/Yuqi-Zhou/GUI-G1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | code Apache-2.0 | GUI-grounding training code that modifies reasoning templates, reward functions, and the GRPO objective, with a linked model release. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/GUI-G1/HEAD/README.md) |
 | [GUI-G1 3B v1](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | weights mit | A Qwen2.5-VL-3B checkpoint released for R1-style visual grounding experiments, predicting interface target locations from screenshots and instructions. | [✓ 2026‑10‑17](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1/raw/main/README.md) |

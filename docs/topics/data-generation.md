@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (3)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -71,6 +71,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [OpenCUA](https://github.com/xlang-ai/OpenCUA) | desktop | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT | Open computer-use research stack including models and training resources. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OpenCUA/HEAD/README.md) |
+| [Pix2Act](https://github.com/google-deepmind/pix2act) | web | [2306.00245](https://arxiv.org/abs/2306.00245) (2023) | code Apache-2.0 | JAX/T5X code and fine-tuned checkpoints for Pix2Act, a Pix2Struct-based policy that maps rendered screenshots to mouse and keyboard actions, with MiniWoB++ tree-search data generation and WebShop evaluation. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/google-deepmind/pix2act/HEAD/README.md) |
 | [ScaleCUA](https://github.com/OpenGVLab/ScaleCUA) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | code Apache-2.0 | Computer-use model family trained with cross-platform interaction data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/ScaleCUA/HEAD/README.md) |
 
 ## Agents

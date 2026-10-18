@@ -63143,5 +63143,70 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:google-deepmind/pix2act",
+    "name": "Pix2Act",
+    "kind": "model",
+    "url": "https://github.com/google-deepmind/pix2act",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "web-navigation",
+      "imitation-learning",
+      "data-generation"
+    ],
+    "summary": "JAX/T5X code and fine-tuned checkpoints for Pix2Act, a Pix2Struct-based policy that maps rendered screenshots to mouse and keyboard actions, with MiniWoB++ tree-search data generation and WebShop evaluation.",
+    "scope": "core",
+    "verify_terms": [
+      "Pix2Act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-deepmind/pix2act/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2306.00245"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The README links the NeurIPS 2023 paper and lists policy checkpoints for MiniWoB++ (trained from tree-search episodes) and WebShop (behavioral cloning), plus a MiniWoB++ critic, all on Google Cloud Storage; they were not downloaded or access-tested. Evaluation needs a patched miniwob-plusplus 0.1, ChromeDriver and a WebShop server. Root LICENSE is the Apache-2.0 text for code; checkpoint terms are not stated, and the cursor graphics come from Ubuntu's Yaru icons under CC BY-SA 4.0.",
+    "details": {
+      "repository_url": "https://github.com/google-deepmind/pix2act"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/google-deepmind/pix2act",
+        "sha256": "7f3293ac1e3770780f82f4f9caacc20fbac9dffbb26265d1f6feeb70549e4249",
+        "retrieved_at": "2026-10-18T11:25:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/google-deepmind/pix2act/HEAD/LICENSE",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "retrieved_at": "2026-10-18T11:25:36Z"
+      }
+    ],
+    "reviewed_sha256": "185efdd91156af0b895735000c8636b8ad74c0d86ce86f624476e81ce0c27d12",
+    "reviewed_at": "2026-10-18T11:25:56Z"
   }
 ]

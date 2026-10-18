@@ -4366,7 +4366,209 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "2c67c8b181e7196f3ca1e88888ffc5d6b32afca686a0e5c4353ad3f5af51ff9e",
-    "reviewed_at": "2026-10-16T06:36:02Z"
+    "reviewed_at": "2026-10-16T06:36:02Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.dataset_profile"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2507.21071",
+        "evidence_url": "https://arxiv.org/html/2507.21071v2"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://www.kaggle.com/api/v1/datasets/view/qinglongyang/fingertip-20k",
+          "retrieved_at": "2026-10-18T15:44:48Z",
+          "basis": "The Kaggle data release that the README and paper link, owned by the paper's first author, declares Attribution 4.0 International (CC BY 4.0) in its dataset metadata. It covers the episode data; the GitHub code has no declared license."
+        },
+        "reason": "The Kaggle data release that the README and paper link, owned by the paper's first author, declares Attribution 4.0 International (CC BY 4.0) in its dataset metadata. It covers the episode data; the GitHub code has no declared license.",
+        "evidence_urls": [
+          "https://www.kaggle.com/api/v1/datasets/view/qinglongyang/fingertip-20k"
+        ]
+      }
+    },
+    "details": {
+      "repository_revision": "e73a4dac3bd13ea32b7836525ff074a69cb047ea",
+      "dataset_profile": {
+        "supervision": [
+          "human demonstrations",
+          "user intent descriptions",
+          "user context and profiles"
+        ],
+        "modalities": [
+          "screenshots",
+          "accessibility trees",
+          "actions",
+          "intent descriptions",
+          "time, scenario and app context"
+        ],
+        "formats": [
+          "JPG screenshots",
+          "XML accessibility trees",
+          "JSONL actions",
+          "JSON survey results",
+          "CSV indexes"
+        ],
+        "splits": [
+          "train",
+          "proactive suggestion test",
+          "personalized execution test"
+        ],
+        "counts": [
+          {
+            "value": 20000,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "total.csv episode index (distinct user and timestamp pairs) at commit e73a4da",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/total.csv"
+          },
+          {
+            "value": 16000,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "train_set.csv",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/train_set.csv"
+          },
+          {
+            "value": 1000,
+            "unit": "test rows",
+            "qualifier": "exact",
+            "population": "test_suggestion.csv, proactive suggestion track (996 distinct user and timestamp pairs)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/test_suggestion.csv"
+          },
+          {
+            "value": 200,
+            "unit": "test rows",
+            "qualifier": "exact",
+            "population": "test_execution.csv, personalized execution track",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/test_execution.csv"
+          },
+          {
+            "value": 83,
+            "unit": "user profiles",
+            "qualifier": "exact",
+            "population": "user_profile.csv",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/user_profile.csv"
+          },
+          {
+            "value": 500,
+            "unit": "Android apps",
+            "qualifier": "more-than",
+            "population": "apps covered by the demonstrations, as the README states",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/HEAD/README.md"
+          },
+          {
+            "value": 21437,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "episodes collected from 95 users over 506 apps, as the paper (v2) reports",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2507.21071v2"
+          }
+        ],
+        "notes": "Rows were counted with Python's csv reader. Episode folders with screenshots, XML trees, action.jsonl and survey_result.json are hosted on Kaggle and were not downloaded. total.csv lists 20,000 episodes from 83 users, fewer than the 21,437 episodes from 95 users the paper reports, and the paper's 4,411-episode validation split has no index file in the repository. The two test sets partly overlap.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/HEAD/README.md",
+          "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/total.csv",
+          "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/train_set.csv",
+          "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/test_suggestion.csv",
+          "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/test_execution.csv",
+          "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/user_profile.csv",
+          "https://arxiv.org/html/2507.21071v2"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/total.csv",
+        "sha256": "8fd0dc2150087fa949bdbbc2d1ca1848ec7dd7b9de6d841757ef25bc8495bd7d",
+        "retrieved_at": "2026-10-18T15:44:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/train_set.csv",
+        "sha256": "f010dd756804bc43d45f6081ddc8cc198f6d24cdaa995f366d3c9881fbd3d008",
+        "retrieved_at": "2026-10-18T15:44:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/test_suggestion.csv",
+        "sha256": "b9abeee646b0b7233de785ff30d5b50a32e8b2b4b3fda61a893a96e9e096e2a7",
+        "retrieved_at": "2026-10-18T15:44:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/test_execution.csv",
+        "sha256": "2843536bef2e1d92ecfeb1179a2cb60fd0d65edaafe8a935ca9e1a4bc827c964",
+        "retrieved_at": "2026-10-18T15:44:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/tsinghua-fib-lab/FingerTip-20K/e73a4dac3bd13ea32b7836525ff074a69cb047ea/user_profile.csv",
+        "sha256": "a04ca1cc97d635e5e97872d4c84bbfffa311b868fd234fed992d377294c793f5",
+        "retrieved_at": "2026-10-18T15:44:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2507.21071v2",
+        "sha256": "ac924fdf4aa2f7eed0a39add0e025e5acd70cf0fa84c3671040b3dff34ccd4ac",
+        "retrieved_at": "2026-10-18T15:44:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://www.kaggle.com/api/v1/datasets/view/qinglongyang/fingertip-20k",
+        "sha256": "c629c7edb21b11d6415d35bc635fbd6d94a5422084e3d47bbc537aeb97cd22c9",
+        "retrieved_at": "2026-10-18T15:44:48Z"
+      }
+    ]
   },
   {
     "name": "UI-Ins",

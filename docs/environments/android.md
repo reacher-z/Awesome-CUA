@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (21)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -138,6 +138,7 @@
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |
 | [MobileRL](https://github.com/THUDM/MobileRL) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | code MIT | Online agentic RL framework for mobile GUI agents built around the difficulty-adaptive ADAGRPO algorithm, with Dockerized AndroidWorld and AndroidLab evaluation and a MobileRL-9B checkpoint. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/MobileRL/HEAD/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [MobileVLM (Xiaomi)](https://github.com/XiaoMi/mobilevlm) | android | [2409.14818](https://arxiv.org/abs/2409.14818) (2024) | code Apache-2.0 · data CC-BY-NC-SA-4.0 | Training and data-collection code for Xiaomi's MobileVLM, which further trains Qwen-VL-Chat on Mobile3M app graphs: an Appium random-walk crawler, multi-task data builders, staged fine-tuning scripts and test scripts. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/XiaoMi/mobilevlm/HEAD/README.md) |
 | [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | code Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |

@@ -63143,5 +63143,96 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:browser-act/skills",
+    "name": "BrowserAct Skills (browser-act CLI)",
+    "kind": "tool",
+    "url": "https://github.com/browser-act/skills",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Agent skill and documentation for the browser-act CLI, which lets coding agents drive local Chrome or stealth browser sessions by indexed state, click and input commands, with remote human takeover.",
+    "scope": "core",
+    "verify_terms": [
+      "BrowserAct"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-act/skills/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "publisher_id": "organization:browseract",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The repository holds the browser-act skill stub, Skill Forge, docs and a solutions catalog of site-specific extraction skills (101 SKILL.md files under solutions/ in the inspected tree); the CLI itself installs from PyPI as browser-act-cli and its source is not in this repository. Stealth browsers, stealth-extract and CAPTCHA solving need a BrowserAct API key, and managed proxies are paid. MIT covers this repository only; the CLI package and the hosted service keep their own terms. Distinct from the hosted BrowserAct product record.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/browser-act/skills",
+        "sha256": "62458c266aefdfd0bbaa7d8e3a4b4f8cf3b088e97ee4213ecfca5ff0314a5ba9",
+        "retrieved_at": "2026-10-18T10:55:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status"
+        ],
+        "url": "https://api.github.com/repos/browser-act/skills/git/trees/main?recursive=1",
+        "sha256": "f9c61f64880d7f9b9c735069119fab88da4c552dd645d00708232bbb5a89e871",
+        "retrieved_at": "2026-10-18T10:55:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-act/skills/HEAD/docs/installation.md",
+        "sha256": "f6f0e06f52efd7384ce8481e69560269ab9cd7ba233fda4a3a1631142c66931a",
+        "retrieved_at": "2026-10-18T10:55:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-act/skills/HEAD/browser-act/SKILL.md",
+        "sha256": "b0a3a22320d22610bb2b0dac085514c57c8f3dbfc1249b717af6ecd714913372",
+        "retrieved_at": "2026-10-18T10:55:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-act/skills/HEAD/LICENSE",
+        "sha256": "ea8eaae0fd525d840d432430af5133224cb363703cc0e3b265988d34c7601906",
+        "retrieved_at": "2026-10-18T10:55:26Z"
+      }
+    ],
+    "reviewed_sha256": "ae6be48ad2cb120069beb7fa36c5f8f06cbe1428ab74b17251611948fa5ea9f2",
+    "reviewed_at": "2026-10-18T10:55:43Z"
   }
 ]

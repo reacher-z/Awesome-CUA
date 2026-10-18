@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (48)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -79,6 +79,7 @@
 | [POINTS-GUI-G 8B](https://huggingface.co/tencent/POINTS-GUI-G) | web, desktop, cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | weights other | A specialized interface-grounding checkpoint that returns normalized point coordinates for a requested element in a screenshot. | [✓ 2026‑10‑17](https://huggingface.co/tencent/POINTS-GUI-G/raw/main/README.md) |
 | [ScaleCUA](https://github.com/OpenGVLab/ScaleCUA) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | code Apache-2.0 | Computer-use model family trained with cross-platform interaction data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/ScaleCUA/HEAD/README.md) |
 | [SeeClick](https://github.com/njucckevin/SeeClick) | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | code Apache-2.0 | GUI grounding model trained to locate visual interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/njucckevin/SeeClick/HEAD/readme.md) |
+| [Seed1.5-VL](https://github.com/ByteDance-Seed/Seed1.5-VL) | desktop, cross-platform | [2505.07062](https://arxiv.org/abs/2505.07062) (2025) | code Apache-2.0 | ByteDance Seed vision-language foundation model served by API, whose repository provides cookbooks including GUI-agent prompts for computer and mobile use with click, drag, hotkey, typing and scroll actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ByteDance-Seed/Seed1.5-VL/HEAD/README.md) |
 | [Seg2Click Qwen2.5-VL 3B](https://huggingface.co/jcwang0602/Seg2Click-Qwen2.5-VL-3B) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | weights other | Seg2Click checkpoint based on Qwen2.5-VL-3B with a custom action-mask decoder. | [✓ 2026‑10‑17](https://huggingface.co/jcwang0602/Seg2Click-Qwen2.5-VL-3B/raw/main/README.md) |
 | [Seg2Click Qwen3.5 0.8B](https://huggingface.co/jcwang0602/Seg2Click-Qwen3.5-0.8B) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | weights apache-2.0 | Compact Seg2Click checkpoint with a merged Qwen3.5 backbone and an action-mask decoder. | [✓ 2026‑10‑17](https://huggingface.co/jcwang0602/Seg2Click-Qwen3.5-0.8B/raw/main/README.md) |
 | [Seg2Click Qwen3.5 2B](https://huggingface.co/jcwang0602/Seg2Click-Qwen3.5-2B) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | weights apache-2.0 | Seg2Click checkpoint using a 2B Qwen3.5 backbone to predict a mask and select an interface click. | [✓ 2026‑10‑17](https://huggingface.co/jcwang0602/Seg2Click-Qwen3.5-2B/raw/main/README.md) |

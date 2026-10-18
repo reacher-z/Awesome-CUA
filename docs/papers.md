@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,104; 523 ⭐) · [2025](#2025) (700; 368 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,104; 523 ⭐) · [2025](#2025) (701; 369 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -1636,6 +1636,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2025-05-15 | [Characterizing Unintended Consequences in Human-GUI Agent Collaboration for Web Browsing](https://arxiv.org/abs/2505.09875) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [safety-security](topics/safety-security.md) |
 | 2025-05-15 | [AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges](https://arxiv.org/abs/2505.10468) | metadata |  |
 | 2025-05-12 | [Web-Bench: A LLM Code Benchmark Based on Web Standards and Frameworks](https://arxiv.org/abs/2505.07473) | metadata |  |
+| 2025-05-11 | [Seed1.5-VL Technical Report](https://arxiv.org/abs/2505.07062) | ⭐ reviewed | [evaluation](topics/evaluation.md), [grounding](topics/grounding.md) |
 | 2025-05-11 | [CMD: Controllable Multiview Diffusion for 3D Editing and Progressive Generation](https://arxiv.org/abs/2505.07003) | metadata |  |
 | 2025-05-10 | [Text-to-CadQuery: A New Paradigm for CAD Generation with Scalable Large Model Capabilities](https://arxiv.org/abs/2505.06507) | metadata |  |
 | 2025-05-09 | [AgentVigil: Generic Black-Box Red-teaming for Indirect Prompt Injection against LLM Agents](https://arxiv.org/abs/2505.05849) | metadata |  |

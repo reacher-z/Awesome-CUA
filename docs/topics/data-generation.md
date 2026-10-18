@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -92,6 +92,7 @@ All entries in this section: android.
 | [GroundGUI training and evaluation code](https://github.com/PrentisAI/GroundGUI) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | code Apache-2.0 | Code for screenshot grounding through supervised training, teacher-guided distillation, reinforcement learning, and benchmark evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md) |
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUI-ReWalk](https://github.com/bytedance/GUI-ReWalk) | desktop, linux | [2509.15738](https://arxiv.org/abs/2509.15738) (2025) | code Apache-2.0 | A desktop trajectory-generation framework that moves from stochastic GUI exploration to inferred goals and multi-stage task completion, with retrospective reasoning annotations. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/bytedance/GUI-ReWalk/HEAD/README.md) |
+| [MobileForge](https://github.com/kwai/MobileForge) | android | [2606.19930](https://arxiv.org/abs/2606.19930) (2026) | code Apache-2.0 | Released pipeline for annotation-free Android GUI agent adaptation: app exploration and task generation, hint-guided rollouts with critic feedback, step-level GRPO training and an AndroidWorld evaluation fork. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/kwai/MobileForge/HEAD/README.md) |
 | [NNetNav](https://github.com/MurtyShikhar/NNetnav) | web | [2410.02907](https://arxiv.org/abs/2410.02907) (2024) | code Apache-2.0 | Collects and labels browser-exploration trajectories for agent training, with code for data processing, fine-tuning, and web evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md) |
 | [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
 | [Plan-and-Act](https://github.com/SqueezeAILab/plan-and-act) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | code MIT | A web-agent framework that separates high-level planning from action execution, with replanning and synthetic planner-data generation components. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/SqueezeAILab/plan-and-act/HEAD/README.md) |

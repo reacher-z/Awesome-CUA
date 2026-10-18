@@ -63143,5 +63143,149 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MobileForge",
+    "kind": "framework",
+    "url": "https://github.com/kwai/MobileForge",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "reinforcement-learning",
+      "data-generation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Released pipeline for annotation-free Android GUI agent adaptation: app exploration and task generation, hint-guided rollouts with critic feedback, step-level GRPO training and an AndroidWorld evaluation fork.",
+    "verify_terms": [
+      "MobileForge"
+    ],
+    "documented_by": [
+      "2606.19930"
+    ],
+    "notes": "Code for the MobileForge paper. explore/ runs depth-first exploration of target Android apps, saving screenshots, UI elements and actions, and generates MobileGym-Curriculum tasks with AndroidWorld few-shot examples. rollout/ runs multi-attempt hint-guided rollouts on AndroidWorld emulators or physical devices (Android SDK and ADB required), scores attempts with MobileGym-Critic outcome labels, step feedback and corrective hints, and converts sessions to step-level GRPO JSON. training/ is a trimmed veRL-style trainer with an adaptive GUI action reward and a Qwen3-VL-8B entry script. evaluation/androidworld holds an AndroidWorld fork; MobileWorld runs use the upstream MobileWorld project. The publisher lists six checkpoints (ForgeQwen3-8B and ForgeOwl-8B, each trained on 900, 400 or 200 tasks) and Hub datasets for training data, exploration trajectories of 20 apps, 3,249 generated tasks and benchmark archives; these Hub artifacts have no catalog records. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kwai/MobileForge/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public exploration, rollout, data-processing, training and AndroidWorld evaluation code; checkpoints and datasets are hosted separately on the Hugging Face Hub.",
+      "repository_revision": "a4168aa2709a6a2350811591054d3579884dd357",
+      "repository_tree_sha": "a9890effa205c535bc219812a23f0923d974a470",
+      "license_components_note": "The root LICENSE is Apache-2.0. explore/LICENSE and rollout/LICENSE are MIT texts with third-party copyright lines (xieincz, 2025; SPA-Bench, 2024), and training/LICENSE is Apache-2.0."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/kwai/MobileForge/git/commits/a4168aa2709a6a2350811591054d3579884dd357",
+        "sha256": "da908debc715e6ce81397c3c7339a662498d2f50dfe1418583cc6ef9aa6ec267",
+        "retrieved_at": "2026-10-18T15:56:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_tree_sha",
+          "details.license_components_note"
+        ],
+        "url": "https://api.github.com/repos/kwai/MobileForge/git/trees/a9890effa205c535bc219812a23f0923d974a470?recursive=1",
+        "sha256": "66823f1811b6787264739b2e8a0828c40e32a520aabd86a998df31407850b607",
+        "retrieved_at": "2026-10-18T15:56:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/docs/pipeline.md",
+        "sha256": "1582171fcab05cb97eacda7f30ce2d9cbc6bed76d7b108ca91b7c9e03f59cd7a",
+        "retrieved_at": "2026-10-18T15:56:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/docs/data_release.md",
+        "sha256": "1fc7b3c98d48dd7c71fcb0d57b32b5a2a12d7b828172eaccfc5d8b070cdb5561",
+        "retrieved_at": "2026-10-18T15:56:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/rollout/README.md",
+        "sha256": "55f170d11266162e38f7e53dc9f2fc911d9e4781fe33a5f300ac55d17ab8a084",
+        "retrieved_at": "2026-10-18T15:56:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/training/README.md",
+        "sha256": "58187fe25d8398ef2ae31de02debd4bc3b932ff1925db86a87f5de65b016aed1",
+        "retrieved_at": "2026-10-18T15:56:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/explore/LICENSE",
+        "sha256": "63d450c65076fc302d9aa07ad0c58766bb6a85d35302dcf0a56658a9629a18e4",
+        "retrieved_at": "2026-10-18T15:56:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/rollout/LICENSE",
+        "sha256": "6962bfc8ee16c6e985e4fb680b8fe46d5b34d30f7cb8a1e61fd4c55c93120ddf",
+        "retrieved_at": "2026-10-18T15:56:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/a4168aa2709a6a2350811591054d3579884dd357/training/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T15:56:27Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
+    "reviewed_at": "2026-10-18T15:57:29Z"
   }
 ]

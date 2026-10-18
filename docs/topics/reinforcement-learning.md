@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -66,6 +66,7 @@ All entries in this section: web.
 | [GroundGUI training and evaluation code](https://github.com/PrentisAI/GroundGUI) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | code Apache-2.0 | Code for screenshot grounding through supervised training, teacher-guided distillation, reinforcement learning, and benchmark evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [HUD](https://github.com/hud-evals/hud-python) | web, desktop | — | code MIT | SDK for RL environments and evals spanning coding, browser, computer-use and robotics agents, whose environments expose SSH, MCP, CDP or VNC capabilities behind a minimal start-and-grade protocol. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hud-evals/hud-python/HEAD/README.md) |
+| [MobileForge](https://github.com/kwai/MobileForge) | android | [2606.19930](https://arxiv.org/abs/2606.19930) (2026) | code Apache-2.0 | Released pipeline for annotation-free Android GUI agent adaptation: app exploration and task generation, hint-guided rollouts with critic feedback, step-level GRPO training and an AndroidWorld evaluation fork. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/kwai/MobileForge/HEAD/README.md) |
 | [MobileRL](https://github.com/THUDM/MobileRL) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | code MIT | Online agentic RL framework for mobile GUI agents built around the difficulty-adaptive ADAGRPO algorithm, with Dockerized AndroidWorld and AndroidLab evaluation and a MobileRL-9B checkpoint. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/MobileRL/HEAD/README.md) |
 | [Proposer-Agent-Evaluator (PAE)](https://github.com/amazon-science/PAE) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | — | A browser-agent training system that proposes tasks, collects visual interaction trajectories, and uses automated evaluation to drive policy improvement. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/amazon-science/PAE/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |

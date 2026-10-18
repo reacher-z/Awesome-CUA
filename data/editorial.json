@@ -63143,5 +63143,162 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "EnvDistraction",
+    "kind": "benchmark",
+    "url": "https://github.com/xbmxb/EnvDistraction",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "safety-security",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Code for the EnvDistraction study, which renders web pages carrying unrelated pop-ups, search results, recommendations or chat messages and scores whether multimodal agents act on the user goal or the distractor.",
+    "verify_terms": [
+      "EnvDistraction"
+    ],
+    "documented_by": [
+      "2408.02544"
+    ],
+    "notes": "Research code for arXiv 2408.02544. annotation.py has GPT-4o write goals and distracting content into seed pages (a phone-shop site with pop-up boxes, Google-style search results, Amazon-review product recommendations and Discord chat) and captures screenshots with Selenium and Chrome; attack_both.py builds the environment-injection variant. call_agents_0711cot.py and call_agents_api.py query API and open models (OpenAI and GLM-4V APIs, Qwen-VL, Gemini, Claude 3.5 Sonnet, CogAgent, SeeClick, Fuyu, LLaVA, MiniCPM and others) on each screenshot, optionally with the action space listed, chain-of-thought or coordinate grounding, and score predictions against gold and distractor labels by token F1, entailment or bounding boxes. The simulated dataset is shared only as a Google Drive file named in data/data.md and was not downloaded, so no sample count is recorded. The web_data seed pages and the baichuan helper imported by the scripts are not in the tree, and several paths point to the authors' machines. There is no LICENSE file and the GitHub API reports no license, so code and data licenses are unknown. Not a fork, not archived; last commit October 2024. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xbmxb/EnvDistraction/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public research scripts for data construction, model querying and scoring; the simulated dataset is a Google Drive file, and seed pages plus one imported helper module are missing from the repository.",
+      "repository_revision": "4e936f08601dfa68440929ce3814f8435622250e",
+      "repository_tree_sha": "a850fba1f92ca8d3cd8ac16a83340d590cdaa54b",
+      "benchmark_protocol": {
+        "focus": [
+          "faithfulness of multimodal GUI agents to the user goal",
+          "environmental distractions and environment injection on web pages"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screenshot",
+          "action-space listing in the prompt (optional)"
+        ],
+        "actions": [
+          "textual action prediction",
+          "click coordinates (grounding mode)"
+        ],
+        "evaluation": "Each sample carries gold and distractor action labels. call_agents_0711cot.py scores a prediction by token F1 against both label sets (f1_compare, f1_match_distractor, f1_available), by token entailment, by result index for search pages, or, in grounding mode, by whether predicted coordinates fall in gold or distractor boxes.",
+        "counts": [],
+        "notes": "Single-step prediction on pre-rendered screenshots; no live environment is driven. The dataset was not downloaded, so no task or sample count is recorded. Preserve the scenario target, prompt flags (action space, chain-of-thought, grounding) and metric when comparing runs.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/call_agents_0711cot.py",
+          "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/targets.py",
+          "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/data/data.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xbmxb/EnvDistraction/git/commits/4e936f08601dfa68440929ce3814f8435622250e",
+        "sha256": "f887ba00216a9d11b15f5c67a13d23407a0c9b7ff12930cf28d892fa9f8f2f5d",
+        "retrieved_at": "2026-10-18T12:32:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xbmxb/EnvDistraction/git/trees/a850fba1f92ca8d3cd8ac16a83340d590cdaa54b?recursive=1",
+        "sha256": "3d9580c781e556ea9569cb4a9a59f6f1d80540f9166da79371ebc2588a41c68f",
+        "retrieved_at": "2026-10-18T12:32:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/annotation.py",
+        "sha256": "e82f277f20538ad75c58444a644b2511fc5425ba5fc768dc6ac708ba6e0f1091",
+        "retrieved_at": "2026-10-18T12:32:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/targets.py",
+        "sha256": "4007a8a20adc893e6a09577becc08ab76050a1e5a37097b28f018407e8456168",
+        "retrieved_at": "2026-10-18T12:32:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/call_agents_0711cot.py",
+        "sha256": "686e274cd0b82bd7ef16879e956092daa295813e634eb4bd4394c41d1af73f2b",
+        "retrieved_at": "2026-10-18T12:32:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/call_agents_api.py",
+        "sha256": "e7f1e89a6c1ffe4d7f599f7d217de6c0d1756117579918765bc8f4d94cd1124c",
+        "retrieved_at": "2026-10-18T12:33:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/attack_both.py",
+        "sha256": "cce1f7498406ce39b9fc2f7b52262702575f024909197f3283cda0feb121818b",
+        "retrieved_at": "2026-10-18T12:33:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xbmxb/EnvDistraction/4e936f08601dfa68440929ce3814f8435622250e/data/data.md",
+        "sha256": "8396483bdcec4bdd5de1876c263f40c046b99794f6482c9405ded8d56fbbc311",
+        "retrieved_at": "2026-10-18T12:32:33Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fe5af0a4e28c3a635fc1213c8ebd535ade5f9dfba45986d65f16940c28ce36d8",
+    "reviewed_at": "2026-10-18T12:33:46Z"
   }
 ]

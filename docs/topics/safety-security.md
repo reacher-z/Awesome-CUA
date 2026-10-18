@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -14,6 +14,7 @@
 | [AgentDAM](https://github.com/facebookresearch/ai-agent-privacy) | web | [2503.09780](https://arxiv.org/abs/2503.09780) (2025) | — | — | Web-agent benchmark for measuring unnecessary use of sensitive personal information during end-to-end task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md) |
 | [BrowserART](https://github.com/scaleapi/browser-art) | web | [2410.13886](https://arxiv.org/abs/2410.13886) (2024) | — | — | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/README.md) |
 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | web | [2409.11295](https://arxiv.org/abs/2409.11295) (2024) | — | code MIT | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md) |
+| [EnvDistraction](https://github.com/xbmxb/EnvDistraction) | web | [2408.02544](https://arxiv.org/abs/2408.02544) (2024) | — | — | Code for the EnvDistraction study, which renders web pages carrying unrelated pop-ups, search results, recommendations or chat messages and scores whether multimodal agents act on the user goal or the distractor. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xbmxb/EnvDistraction/HEAD/README.md) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
 | [MobileSafetyBench](https://github.com/jylee425/mobilesafetybench) | android | — | — | code Apache-2.0 | Android emulator testbed that scores mobile device-control agents on both safety and helpfulness, using ADB and Appium for observations, actions and success checks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md) |
 | [OS-Harm](https://github.com/tml-epfl/os-harm) | desktop | [2506.14866](https://arxiv.org/abs/2506.14866) (2025) | [150 tasks as reported by the paper/README](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) · [50 task IDs](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/evaluation_examples/test_misuse.json) | code Apache-2.0 | Benchmark for safety of computer-use agents across misuse, prompt injection, and unintended model behavior. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) |

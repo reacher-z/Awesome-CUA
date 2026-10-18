@@ -63143,5 +63143,105 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Online-Mind2Web task data",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/osunlp/Online-Mind2Web",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Gated Hub release of the Online-Mind2Web task set: one JSON test split of tasks on live websites, 300 tasks on 136 sites per the project README, which the publishers revise when sites change.",
+    "scope": "core",
+    "verify_terms": [
+      "osunlp/Online-Mind2Web"
+    ],
+    "documented_by": [
+      "2504.01382"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:osu-nlp-group/online-mind2web",
+        "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/Online-Mind2Web/HEAD/README.md"
+      }
+    ],
+    "notes": "The Hub API at revision eacad896 reports gated 'auto' (access is approved automatically after a logged-in request) and one data file, Online_Mind2Web.json, configured as the test split. The card and the task file sit behind that gate and were not read for this record; the description and counts come from the project README, which links this dataset as its data. The Hub card metadata declares CC BY 4.0, matching the README's dataset license; the repository code is MIT and is not applied to the data. The publishers replace invalid tasks over time (36 on 2025-11-03), so a result needs the dataset revision.",
+    "details": {
+      "hub_revision": "eacad896a84dc5b65e29b0b06e4699ab0544d701",
+      "repository_url": "https://github.com/OSU-NLP-Group/Online-Mind2Web",
+      "dataset_profile": {
+        "supervision": [
+          "task definitions for live-web evaluation"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "formats": [
+          "JSON"
+        ],
+        "splits": [
+          "test"
+        ],
+        "counts": [
+          {
+            "value": 300,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "Online-Mind2Web task set as documented in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/Online-Mind2Web/HEAD/README.md"
+          },
+          {
+            "value": 136,
+            "unit": "websites",
+            "qualifier": "exact",
+            "population": "Online-Mind2Web task set as documented in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/Online-Mind2Web/HEAD/README.md"
+          }
+        ],
+        "notes": "Counts are the README's description of the task set, not a count of the gated file, which was not downloaded. The README says replacements aim to keep the same websites and a similar reference length, but the task population still changes between revisions.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/OSU-NLP-Group/Online-Mind2Web/HEAD/README.md",
+          "https://huggingface.co/api/datasets/osunlp/Online-Mind2Web"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope",
+      "relations",
+      "identity",
+      "release_status",
+      "details",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "relations",
+          "notes",
+          "details.dataset_profile",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/Online-Mind2Web/HEAD/README.md",
+        "sha256": "49d7cc317fd2ba0df65abf65a0357d1fa2384e59019a96d4e24b784888599eaa",
+        "retrieved_at": "2026-10-18T11:39:36Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a72ff426815ef4dcabcefd4a315b2c683b81107bee905a05f2d41ecfcdda0a23",
+    "reviewed_at": "2026-10-18T11:40:00Z"
   }
 ]

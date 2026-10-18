@@ -6139,7 +6139,96 @@
     "reviewed_at": "2026-10-16T06:38:26Z",
     "documented_by": [
       "2506.01391"
-    ]
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/openbmb/CAGUI/raw/f451ec02da2a470060f547b2bf6a2cadd40851b4/README.md",
+        "sha256": "2a95093ff01771c7ff6c0fdb13b89159a84c6b9cbb68f78022b7007b7f2447bf",
+        "retrieved_at": "2026-10-18T16:12:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2506.01391v2",
+        "sha256": "9b506ff88f7011df2dfd8350aa745087f57e82bc41ff7b4454611bc01321176a",
+        "retrieved_at": "2026-10-18T16:12:44Z"
+      }
+    ],
+    "details": {
+      "dataset_profile": {
+        "supervision": [
+          "GUI grounding",
+          "multi-step Android agent actions"
+        ],
+        "modalities": [
+          "screenshots",
+          "Chinese instructions",
+          "UI element boxes",
+          "actions"
+        ],
+        "formats": [
+          "JSONL",
+          "JSON episode files",
+          "JPEG screenshots"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 600,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "CAGUI_agent benchmark, arXiv 2506.01391v2 Appendix C.2",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.01391v2"
+          },
+          {
+            "value": 4516,
+            "unit": "single-step images",
+            "qualifier": "exact",
+            "population": "CAGUI_agent benchmark, arXiv 2506.01391v2 Appendix C.2",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.01391v2"
+          },
+          {
+            "value": 1500,
+            "unit": "grounding samples",
+            "qualifier": "exact",
+            "population": "Fun2Point grounding sub-task, arXiv 2506.01391v2 Appendix C.1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.01391v2"
+          },
+          {
+            "value": 1500,
+            "unit": "grounding samples",
+            "qualifier": "exact",
+            "population": "Text2Point grounding sub-task, arXiv 2506.01391v2 Appendix C.1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.01391v2"
+          },
+          {
+            "value": 1500,
+            "unit": "grounding samples",
+            "qualifier": "exact",
+            "population": "Bbox2Text grounding sub-task, arXiv 2506.01391v2 Appendix C.1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.01391v2"
+          }
+        ],
+        "notes": "Counts are the paper's statements for the benchmark tracks. The card stores the agent track as one JSON file per episode with step screenshots, and packs the grounding sub-tasks into cap.jsonl (function and text to point) and ocr.jsonl (bbox to text). The release is evaluation data, not a training split.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/openbmb/CAGUI/raw/f451ec02da2a470060f547b2bf6a2cadd40851b4/README.md",
+          "https://arxiv.org/html/2506.01391v2"
+        ]
+      }
+    }
   },
   {
     "name": "WebUI",

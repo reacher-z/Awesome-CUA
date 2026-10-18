@@ -2489,7 +2489,106 @@
       "VeriWeb"
     ],
     "reviewed_sha256": "e9a0866c8d9fa1759dedebd5ea3a4176009e51eb669f5877540524e53ac1077d",
-    "reviewed_at": "2026-10-16T06:35:59Z"
+    "reviewed_at": "2026-10-16T06:35:59Z",
+    "documented_by": [
+      "2508.04026"
+    ],
+    "details": {
+      "repository_revision": "3b0c38f233fa7021af7a63a0d15297035a60084a",
+      "benchmark_protocol": {
+        "focus": [
+          "long-chain web information seeking",
+          "subtask-level verifiability"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "task instruction",
+          "live web pages"
+        ],
+        "actions": [
+          "web browsing by the evaluated agent",
+          "JSON-formatted answers"
+        ],
+        "evaluation": "evaluate.py asks an LLM judge (default model o3 through an OpenAI-compatible endpoint) to score each prediction against the expected JSON answer with a fixed scorer prompt. Tasks come in global, only-subtask-1 and with-subtask-1-result variants.",
+        "counts": [
+          {
+            "value": 302,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "VeriWeb benchmark as stated in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/VeriGUI-Team/VeriGUI/HEAD/README.md"
+          },
+          {
+            "value": 5,
+            "unit": "domains",
+            "qualifier": "exact",
+            "population": "VeriWeb benchmark as stated in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/VeriGUI-Team/VeriGUI/HEAD/README.md"
+          },
+          {
+            "value": 1296,
+            "unit": "annotated subtasks",
+            "qualifier": "exact",
+            "population": "data/original-20260121.json at commit 3b0c38f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/data/original-20260121.json"
+          }
+        ],
+        "notes": "Counted with a script from the 2026-01-21 data release: original-20260121.json has 302 tasks with 1 to 16 subtasks each, and data-20260121.json has 302 items, all of type global, with distinct names. The README's 2026-01-21 update lists task IDs whose data were fixed, so later data releases can differ. The repository was renamed from VeriGUI to VeriWeb; desktop scenarios are announced as a separate benchmark.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/VeriGUI-Team/VeriGUI/HEAD/README.md",
+          "https://api.github.com/repos/VeriGUI-Team/VeriWeb/git/trees/3b0c38f233fa7021af7a63a0d15297035a60084a?recursive=1",
+          "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/data/original-20260121.json",
+          "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/data/data-20260121.json",
+          "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/evaluate.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/VeriGUI-Team/VeriWeb/git/trees/3b0c38f233fa7021af7a63a0d15297035a60084a?recursive=1",
+        "sha256": "62fc4c73d1805475cab68dcc753fad324dc5834a2c1a7b3ec1fe80e1001cab6a",
+        "retrieved_at": "2026-10-18T15:51:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/data/original-20260121.json",
+        "sha256": "1ad9fef3322c8943bccc2b8fcf6b78cda256d43674d164777959fa93cf12c0f3",
+        "retrieved_at": "2026-10-18T15:51:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/data/data-20260121.json",
+        "sha256": "1c990e232f5fd8607b8a0f8e002174f8a0ad2f9048b36fbec34de13264437794",
+        "retrieved_at": "2026-10-18T15:51:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/VeriGUI-Team/VeriWeb/3b0c38f233fa7021af7a63a0d15297035a60084a/evaluate.py",
+        "sha256": "51cf42607428a3d613ee4827f1d19c807f71f27a86ad0772a8167300f4c2f436",
+        "retrieved_at": "2026-10-18T15:51:57Z"
+      }
+    ]
   },
   {
     "name": "WindowsWorld",
@@ -63143,5 +63242,39 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "VeriWeb: Verifiable Long-Chain Web Benchmark for Agentic Information-Seeking",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.04026",
+    "summary": "Web information-seeking benchmark of 302 human-annotated tasks in five domains, each split into interdependent subtasks with fixed, verifiable answers so agents are scored per subtask as well as on the outcome.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "long-horizon"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "VeriWeb: Verifiable Long-Chain Web"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2508.04026"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experiments, reported performance and artifact availability have not been independently reproduced.",
+    "reviewed_sha256": "01560e1d9f0ac95d8c99d155ff46f9a74ffe0576a323d700911a3242046f1921",
+    "reviewed_at": "2026-10-18T15:52:50Z"
   }
 ]

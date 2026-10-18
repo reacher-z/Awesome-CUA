@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Browser Agent (uiuing)](https://github.com/uiuing/browser-agent) | — | code MIT | Chrome side-panel agent whose page engine reads a whole-page semantic DOM snapshot, re-grounds targets by element fingerprints, dispatches DOM events and checks post-conditions before reporting success. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/uiuing/browser-agent/HEAD/README.md) |
 
 ## Frameworks
 

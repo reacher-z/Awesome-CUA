@@ -63143,5 +63143,115 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Browser Agent (uiuing)",
+    "kind": "agent",
+    "url": "https://github.com/uiuing/browser-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "state-tracking",
+      "workflow"
+    ],
+    "summary": "Chrome side-panel agent whose page engine reads a whole-page semantic DOM snapshot, re-grounds targets by element fingerprints, dispatches DOM events and checks post-conditions before reporting success.",
+    "scope": "core",
+    "verify_terms": [
+      "Browser Agent",
+      "page_act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/uiuing/browser-agent/HEAD/README.md"
+    ],
+    "notes": "Chrome Manifest V3 extension by uiuing, first released as v0.0.1 (Chrome zip in GitHub releases). The model acts on pages only through the page_act tool, which hands a goal to an engine that builds a semantic snapshot of DOM nodes with roles, accessible names, values, occlusion, open shadow roots and same-origin iframes (packages/extension/src/engine/page/perception.ts), resolves targets by fingerprint against a fresh snapshot and fires click, input, change and key events in the page (engine/page/execute.ts). The page_screenshot tool only shows a capture to the user; its description says the model does not see the pixels (tools/page.ts). A chrome.debugger channel is used for file uploads and falls back to DOM synthesis. Tools carry read, act or dangerous risk tiers with site allow/block lists and confirmation; verified runs can be saved as skills and replayed over batch rows. Model ports cover OpenAI-compatible, OpenAI Responses and Anthropic APIs. The docs/benchmark.md comparison is publisher-run on the project's own fixtures against its own replica of a viewport-only baseline. The agent was not run.",
+    "details": {
+      "availability": "Source and a packaged Chrome extension zip in GitHub releases",
+      "repository_revision": "a8517e2c5cd5be9d77e66f90180e25490c67d9ba",
+      "release_tag": "v0.0.1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/uiuing/browser-agent",
+        "sha256": "2a90a9a2a2874d612b7f6699ca2cabdda0748a7d9e272427b5235fc788aa22e0",
+        "retrieved_at": "2026-10-18T15:56:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/uiuing/browser-agent/git/trees/a8517e2c5cd5be9d77e66f90180e25490c67d9ba?recursive=1",
+        "sha256": "db5ed13baf5a90c4171402b7524f3a58339c07bc5d5f182f9e0f51460dbfafaa",
+        "retrieved_at": "2026-10-18T15:56:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/uiuing/browser-agent/a8517e2c5cd5be9d77e66f90180e25490c67d9ba/packages/extension/src/engine/page/perception.ts",
+        "sha256": "80e0a8b613c8e5cba19a271b9c894d255be1e2de1abdd1b93fc4f8ad18feeec3",
+        "retrieved_at": "2026-10-18T15:56:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/uiuing/browser-agent/a8517e2c5cd5be9d77e66f90180e25490c67d9ba/packages/extension/src/engine/page/execute.ts",
+        "sha256": "48d24585c85d1c2b4a69be99e9fd6522ed4a80e6a0b896523c4a42474a9fcc40",
+        "retrieved_at": "2026-10-18T15:56:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/uiuing/browser-agent/a8517e2c5cd5be9d77e66f90180e25490c67d9ba/packages/extension/src/tools/page.ts",
+        "sha256": "c2ba6828effa3842819ccd1172b27b3b6fe30864815e92f8a974c2987a922297",
+        "retrieved_at": "2026-10-18T15:56:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/uiuing/browser-agent/a8517e2c5cd5be9d77e66f90180e25490c67d9ba/LICENSE",
+        "sha256": "20b3cdfa2aa7d5f0167686808c60687040f42a89d62b248de1e26ad2d1470fe0",
+        "retrieved_at": "2026-10-18T15:56:04Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2e46eff7ae7f8eb2e67eb1c6977815bb695b7f87437069bfdd59f3db4b062f9a",
+    "reviewed_at": "2026-10-18T15:57:01Z"
   }
 ]

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesomecua.github.io/schemas/url-alias.schema.json",
+  "title": "Recorded catalog URL normalization aliases",
+  "description": "Deterministic leading-www migrations, not HTTP identity or content-review evidence.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["alias_id", "target_id", "url", "policy"],
+    "additionalProperties": false,
+    "properties": {
+      "alias_id": {"type": "string", "pattern": "^url:[0-9a-f]{20}$"},
+      "target_id": {"type": "string", "pattern": "^url:[0-9a-f]{20}$"},
+      "url": {"type": "string", "format": "uri", "pattern": "^https://www\\."},
+      "policy": {"const": "leading-www-v1"}
+    }
+  }
+}

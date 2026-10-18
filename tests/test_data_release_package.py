@@ -97,6 +97,7 @@ def make_release_fixture(root, *, with_scripts=False):
     sources=[{'id':'source-a','name':'Fixture source','homepage':'https://example.org/catalog'}]
     write_json('downloads/sources.json',sources)
     write_json('downloads/repository-aliases.json',[])
+    write_json('downloads/url-aliases.json',[])
     excluded=archive[-1]
     decision={'id':excluded['id'],'name':excluded['name'],'url':excluded['url'],'decision':'out_of_scope',
               'basis':'primary_abstract_review','reason':'Fixture paper studies a different domain.',
@@ -114,7 +115,7 @@ def make_release_fixture(root, *, with_scripts=False):
     (site/'downloads/arxiv-archive.jsonl').write_text(''.join(json.dumps(row)+'\n' for row in archive))
     (site/'downloads/publications.jsonl').write_text(''.join(json.dumps(item)+'\n' for item in observations))
     (root/'schemas').mkdir(exist_ok=True)
-    for name in ['resource','scope-decision','publication-observation','download-manifest','repository-alias']:
+    for name in ['resource','scope-decision','publication-observation','download-manifest','repository-alias','url-alias']:
         shutil.copy2(ROOT/'schemas'/(name+'.schema.json'),site/'schemas')
         shutil.copy2(ROOT/'schemas'/(name+'.schema.json'),root/'schemas')
     build_download_manifest(site,rows,raw)

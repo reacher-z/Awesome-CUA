@@ -11,13 +11,14 @@ import tempfile
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from build import validate_records, write_sqlite
-from catalog import TOPICS
+from catalog import TOPICS, canonical
 from search_pages import build_search_pages, resource_path
 from export_rag import build_exports
 from export_citations import build_citation_exports
 from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
+from url_identity import attach_url_aliases, url_aliases
 
 
 def version_script_imports(destination):
@@ -64,9 +65,13 @@ def write_site(destination):
     coverage=json.loads((ROOT/'data/coverage.json').read_text(encoding='utf-8'))
     alias_file=ROOT/'data/repository-aliases.json'
     repository_declarations=json.loads(alias_file.read_text(encoding='utf-8')) if alias_file.exists() else []
+    url_file=ROOT/'data/url-aliases.json'
+    url_declarations=json.loads(url_file.read_text(encoding='utf-8')) if url_file.exists() else []
     errors=validate_records(rows)
     if attach_repository_aliases(rows,repository_declarations)!=rows:
         errors.append('Catalog repository aliases differ from their reviewed source declarations; rebuild catalog first.')
+    if attach_url_aliases(rows,url_declarations,canonical)!=rows:
+        errors.append('Catalog URL aliases differ from their normalization declarations; rebuild catalog first.')
     if errors:raise ValueError('\n'.join(errors[:10]))
     if len(rows)!=coverage['total_records']:raise ValueError('Catalog/coverage count mismatch; rebuild catalog first.')
     for path in (ROOT/'web').iterdir():
@@ -75,7 +80,7 @@ def write_site(destination):
     (destination/'data').mkdir(exist_ok=True)
     (destination/'downloads').mkdir(exist_ok=True)
     (destination/'schemas').mkdir(exist_ok=True)
-    for contract in ('resource.schema.json','scope-decision.schema.json','publication-observation.schema.json','download-manifest.schema.json','repository-alias.schema.json'):
+    for contract in ('resource.schema.json','scope-decision.schema.json','publication-observation.schema.json','download-manifest.schema.json','repository-alias.schema.json','url-alias.schema.json'):
         shutil.copy2(ROOT/'schemas'/contract,destination/'schemas'/contract)
     # index.json carries only fields the catalog list reads; the detail dialog fetches each record's own record.json.
     keys=['id','name','kind','url','aliases','environments','topics','summary','review_status','authors']
@@ -101,6 +106,7 @@ def write_site(destination):
     shutil.copy2(ROOT/'data/papers.jsonl',destination/'downloads/arxiv-archive.jsonl')
     (destination/'downloads/publications.jsonl').write_bytes((ROOT/'data/publications.jsonl').read_bytes() if (ROOT/'data/publications.jsonl').exists() else b'')
     (destination/'downloads/repository-aliases.json').write_text(json.dumps(repository_declarations,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (destination/'downloads/url-aliases.json').write_text(json.dumps(url_declarations,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     write_sqlite(rows,destination/'downloads'/'catalog.sqlite')
     build_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
     build_citation_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
@@ -109,7 +115,7 @@ def write_site(destination):
         if (ROOT/'data'/name).exists():shutil.copy2(ROOT/'data'/name,destination/'downloads'/name)
     shutil.copy2(ROOT/'LICENSE',destination/'LICENSE')
     (destination/'.nojekyll').write_text('',encoding='utf-8')
-    manifest=build_search_pages(destination,rows,coverage,ROOT)
+    manifest=build_search_pages(destination,rows,coverage,ROOT,url_migrations=url_aliases(url_declarations,canonical,rows))
     reconcile_generated_pages(destination,manifest)
     return manifest,len(rows)
 

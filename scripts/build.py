@@ -16,6 +16,7 @@ from specifications import PREFIXES, PROFILE_KEYS, validate_profiles
 from scope_review import resolve_exclusions, scope_report
 from arxiv_metadata import validate_snapshot
 from repository_identity import repository_aliases, attach_repository_aliases, unrecorded_hub_renames
+from url_identity import url_aliases, attach_url_aliases, www_duplicate_errors, candidate_identity_errors
 from lookup import REVIEWED_RELATION_TYPES
 from publication_metadata import (alias_owner_errors, attach_publications, duplicate_publication_errors, publication_aliases,
     publication_links, publication_search_text, record_date_text, record_year, validate_publication)
@@ -24,9 +25,12 @@ from publication_metadata import (alias_owner_errors, attach_publications, dupli
 def source_aliases(rows=None):
     aliases = publication_aliases(read_jsonl(DATA/'publications.jsonl'), publication_identity)
     repositories = repository_aliases(read_json(DATA/'repository-aliases.json', []), rows)
-    if any(key in aliases and aliases[key] != value for key, value in repositories.items()):
-        raise ValueError('Source identity aliases have conflicting owners')
-    return {**aliases, **repositories}
+    urls = url_aliases(read_json(DATA/'url-aliases.json', []), canonical, rows)
+    for additions in (repositories, urls):
+        if any(key in aliases and aliases[key] != value for key, value in additions.items()):
+            raise ValueError('Source identity aliases have conflicting owners')
+        aliases.update(additions)
+    return aliases
 
 
 def apply_license_reviews(editorial, primary, licenses, details):
@@ -61,13 +65,19 @@ def source_records(with_scope=False):
     observations=read_jsonl(DATA/'publications.jsonl')
     records = attach_publications({r['id']: r for r in archived}, observations, publication_identity)
     aliases=publication_aliases(observations,publication_identity)
-    evidence = {r["id"]: r for r in read_jsonl(DATA / "primary-evidence.jsonl")}
-    enrichment = {r["id"]: r for r in read_jsonl(DATA / "enrichment.jsonl")}
+    evidence_rows = read_jsonl(DATA / "primary-evidence.jsonl")
+    enrichment_rows = read_jsonl(DATA / "enrichment.jsonl")
+    for label, entries in (("primary evidence", evidence_rows), ("enrichment", enrichment_rows)):
+        if len({r["id"] for r in entries}) != len(entries):
+            raise ValueError("Duplicate " + label + " identifier; resolve inputs before building")
+    evidence = {r["id"]: r for r in evidence_rows}
+    enrichment = {r["id"]: r for r in enrichment_rows}
     pending = []
     for row in records.values():
         bibliography = {key: copy.deepcopy(value) for key,value in row.get('details', {}).items()
                         if key in {'arxiv_snapshot','publication'}}
         row.update(scope="relevance_pending", details=bibliography)
+    editorial_ids = set()
     for editorial in read_json(DATA / "editorial.json", []):
         if 'publication' in editorial.get('details', {}):
             raise ValueError('Publisher bibliographic facts belong in publications.jsonl, separately from editorial relevance approval')
@@ -75,6 +85,9 @@ def source_records(with_scope=False):
         if not parsed:
             raise ValueError(f"Invalid editorial URL: {editorial['url']}")
         rid = editorial.get("id", parsed[0])
+        if rid in editorial_ids:
+            raise ValueError("Duplicate editorial identity after URL normalization: " + rid)
+        editorial_ids.add(rid)
         if aliases.get(parsed[0],rid)!=rid:
             raise ValueError('Editorial URL belongs to canonical publication resource '+aliases[parsed[0]]+'; do not create '+rid)
         if editorial.get('kind') in {'paper','survey'} and (rid not in records or parsed[0]!=rid):
@@ -130,6 +143,7 @@ def source_records(with_scope=False):
     pending += [{'id':row['id'],'name':records[row['id']]['name'],'url':row['url'],'reason':row['status_reason'],'cause':'scope_revalidation'} for row in decisions if row['status']=='revalidation_pending']
     rows = sorted((row for rid,row in records.items() if rid not in excluded), key=lambda r:r['id'])
     rows = attach_repository_aliases(rows, read_json(DATA/'repository-aliases.json', []))
+    rows = attach_url_aliases(rows, read_json(DATA/'url-aliases.json', []), canonical)
     return (rows,pending,decisions) if with_scope else (rows,pending)
 
 
@@ -184,7 +198,7 @@ def title_author_collisions(rows):
 
 
 def validate_records(rows):
-    errors, seen, alias_owners = [], set(), {}
+    errors, seen, alias_owners = www_duplicate_errors(rows, "Catalog"), set(), {}
     required = set(FIELD_TYPES)
     ids = {r.get("id") for r in rows if isinstance(r.get("id"), str)}
     for r in rows:
@@ -884,6 +898,7 @@ def write_sqlite(rows, path):
 def build(args):
     rows, pending, scope_decisions = source_records(with_scope=True)
     errors = validate_records(rows)
+    errors.extend(candidate_identity_errors(read_jsonl(DATA/'candidates.jsonl'), canonical))
     errors.extend(alias_owner_errors(rows,publication_aliases(read_jsonl(DATA/'publications.jsonl'),publication_identity),publication_identity))
     if errors:
         raise ValueError("\n".join(errors[:30]))
@@ -957,6 +972,7 @@ def validate(args):
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
     errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", []))
+    errors.extend(candidate_identity_errors(read_jsonl(DATA/'candidates.jsonl'), canonical))
     for entry in read_json(DATA / "editorial.json", []):
         if unknown := [str(topic) for topic in entry.get("topics", []) if not isinstance(topic, str) or topic not in TOPICS]:
             errors.append(f"Editorial {entry.get('id') or entry.get('url')}: unknown topics {', '.join(unknown)}")
@@ -964,6 +980,20 @@ def validate(args):
     validator = jsonschema.Draft202012Validator(resource_contract, format_checker=formats)
     for row in rows:
         errors.extend(f"{row['id']}: {error.message}" for error in validator.iter_errors(row))
+    url_declarations = read_json(DATA/'url-aliases.json', [])
+    url_validator = jsonschema.Draft202012Validator(read_json(ROOT/'schemas/url-alias.schema.json'), format_checker=formats)
+    url_errors = ['URL aliases: ' + error.message for error in url_validator.iter_errors(url_declarations)]
+    errors.extend(url_errors)
+    if not url_errors:
+        try:
+            migrations = url_aliases(url_declarations, canonical, rows)
+            if attach_url_aliases(rows, url_declarations, canonical) != rows:
+                errors.append('Catalog is missing recorded former URL IDs; rebuild the catalog')
+            for candidate in read_jsonl(DATA/'candidates.jsonl'):
+                if candidate['id'] in migrations:
+                    errors.append('Candidate retains a migrated URL ID: ' + candidate['id'])
+        except (ValueError, KeyError, TypeError) as error:
+            errors.append('URL aliases: ' + str(error))
     repository_declarations=read_json(DATA/'repository-aliases.json', [])
     repository_validator=jsonschema.Draft202012Validator(read_json(ROOT/'schemas/repository-alias.schema.json'),format_checker=formats)
     repository_errors=['Repository aliases: '+error.message for error in repository_validator.iter_errors(repository_declarations)]

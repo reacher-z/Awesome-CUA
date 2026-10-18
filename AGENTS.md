@@ -50,9 +50,19 @@ python3 scripts/catalog.py get github:mnotgod96/appagent --json
 python3 scripts/catalog.py search "https://github.com/mnotgod96/AppAgent" --json
 ```
 
-Use the returned `id` for citations and upserts; a former name is not another resource. [Repository identity observations](https://awesomecua.github.io/downloads/repository-aliases.json) retain paired official API receipts and the same GitHub or Hugging Face repository ID. They describe the recorded snapshot, not release completeness or licensing. Aliases and their scoped evidence also travel with the catalog and RAG documents. Raw discovery occurrences and mention edges retain their original identifiers.
+Use the returned `id` for citations and upserts; a former name is not another resource. [Repository identity observations](https://awesomecua.github.io/downloads/repository-aliases.json) retain paired official API receipts and the same GitHub or Hugging Face repository ID. They describe the recorded snapshot, not release completeness or licensing. Aliases and their scoped evidence also travel with the catalog and RAG documents. These repository mappings leave raw discovery identifiers unchanged.
 
 Each resource page also serves its exact active record at `record.json`, for example <https://awesomecua.github.io/resources/arxiv-2404-07972/record.json>. A scope-excluded page returns an explicit `status: excluded` JSON decision instead. These are static files; inspect the JSON status/review fields rather than treating HTTP 200 as approval.
+
+Generic `url:` identities fold leading `www.` host prefixes under
+`leading-www-v1`. The [URL policy crosswalk](https://awesomecua.github.io/downloads/url-aliases.json)
+records former IDs separately from repository observations; it proves a
+normalization rule, not equal HTTP content or renewed source review. For an
+active target, `get`/`search` resolve the old ID, and its old resource HTML,
+`index.md` and `record.json` lead to the same canonical record. An unindexed
+target stays unindexed. Use the returned canonical ID for upserts; aliases
+travel in catalog/RAG records, with the crosswalk and schema in the download
+manifest. Retained primary URLs and receipts can still contain `www.`.
 
 ## Export paper citations
 

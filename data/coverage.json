@@ -10,10 +10,10 @@
   "excluded_records": 122,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
-  "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
-  "non_resource_candidates": 80,
-  "alias_candidates": 9,
+  "discovery_identifiers": 4047,
+  "unindexed_candidates": 901,
+  "non_resource_candidates": 79,
+  "alias_candidates": 7,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -23,7 +23,7 @@
       "cause": "unresolved_evidence"
     },
     {
-      "id": "url:df3dc96d9e27b824f6ea",
+      "id": "url:932ab3ba304c8564bb9f",
       "name": "Comet",
       "url": "https://www.perplexity.ai/comet",
       "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; www.perplexity.ai answers HTTP 403 to the catalog's identified client for /comet and for its blog and help-center paths, and comet.perplexity.ai and perplexity.ai/comet redirect to /comet. No first-party page could be read, so the summary is unchecked; approval needs a first-party source the catalog client can fetch.",
@@ -421,12 +421,12 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 24,
-      "indexed_resources": 24,
+      "indexed": 26,
+      "indexed_resources": 26,
       "resolved_aliases": 1,
-      "curated": 24,
+      "curated": 26,
       "excluded": 0,
-      "set_aside": 4,
+      "set_aside": 2,
       "unindexed": 85
     },
     {
@@ -600,14 +600,14 @@
         "request_attempted": true,
         "state": "success"
       },
-      "discovered": 63,
+      "discovered": 62,
       "indexed": 11,
       "indexed_resources": 11,
       "resolved_aliases": 0,
       "curated": 8,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 50
+      "unindexed": 49
     },
     {
       "id": "yearly-gui",

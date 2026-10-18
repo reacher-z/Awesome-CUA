@@ -1,0 +1,566 @@
+[
+  {
+    "alias_id": "url:040e17448d9d190b3c14",
+    "target_id": "url:76f63116388131eaa435",
+    "url": "https://www.dassi.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:053ebfe0afac66c86222",
+    "target_id": "url:31821bcc2757e5fbaede",
+    "url": "https://www.hyperbrowser.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:06905f20169f8e73a53b",
+    "target_id": "url:fb5b8f141a40bf63b75b",
+    "url": "https://www.lavague.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:07f92766e53439739eab",
+    "target_id": "url:6acfe7d0344baf179859",
+    "url": "https://www.accio.com/work",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:09f0bcc910663e4fceab",
+    "target_id": "url:d5855a41ea9a9962c07e",
+    "url": "https://www.amazon.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:0a10708d9e6381630590",
+    "target_id": "url:8a8a446d99c57a071488",
+    "url": "https://www.star-history.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:0a89d3a0f5cfca713697",
+    "target_id": "url:6c3e4a0fe7e1bc2ac1b6",
+    "url": "https://www.star-history.com?repos=ZJU-REAL%2FAwesome-GUI-Agents&type=date&legend=top-left",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:0b134b082a7bd507fc6a",
+    "target_id": "url:7eadd6ec85dd56eb7b92",
+    "url": "https://www.interactionmining.org/archive/rico",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:0bdd6b5ebf2e1f248828",
+    "target_id": "url:eedd169c72c16a70935a",
+    "url": "https://www.simular.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:108b77e28d55eb662bf5",
+    "target_id": "url:7c0b19ab90a21dabc0db",
+    "url": "https://www.cekura.io",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:12379f1e44023d4b6276",
+    "target_id": "url:986669c00fc05ec435aa",
+    "url": "https://www.runcopycat.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:131b753cf9153681d6d5",
+    "target_id": "url:d83f611461b742718564",
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1ga3uqn/mindblowing_experience_with_claude_computer_use",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:13260eb47a0f17622546",
+    "target_id": "url:9720f1f223c06e88a6ed",
+    "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-convergence-ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:15ed5fd3cd950d837f98",
+    "target_id": "url:b6bd06590c0172ef6d1b",
+    "url": "https://www.skyvern.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:1a20a291c766bd4e6861",
+    "target_id": "url:0e5fca7d65c02f77f71f",
+    "url": "https://www.adept.ai/blog/adept-fuyu-heavy",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:1aa4168c796c15476b97",
+    "target_id": "url:28d0d09f3e27d7eadf25",
+    "url": "https://www.strawberrybrowser.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:1dc99ca9417a321e74bb",
+    "target_id": "url:477bc480c4818ab330ba",
+    "url": "https://www.oppo.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:1e6b8682e0f1ddc3d36f",
+    "target_id": "url:e4a5ccd9af4ed2a6e095",
+    "url": "https://www.browserless.io",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:20e3e42bfd3d9fd4fcf7",
+    "target_id": "url:b560bcb1f7f0d6e47ff0",
+    "url": "https://www.uipath.com/newsroom/uipath-screenagent-osworld-benchmark-top-ranking",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:255e1ea24461c1f205eb",
+    "target_id": "url:5e55d4f1893879308d55",
+    "url": "https://www.webfuse.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:2b0ca1fa8cf774ff077f",
+    "target_id": "url:58de15ce8872bab5b4a4",
+    "url": "https://www.hcompany.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:2f013e0eba34e335a4bd",
+    "target_id": "url:86ea4dfa494ff45b9a8d",
+    "url": "https://www.anthropic.com/solutions/agents",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:307838fec5f74218b032",
+    "target_id": "url:14e2ee35b878b77c721d",
+    "url": "https://www.browse.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:30c47e06f966999086db",
+    "target_id": "url:29634ecd8da089730352",
+    "url": "https://www.supernalintelligence.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:32678374bb8b6ab567a5",
+    "target_id": "url:540042b721b36bda0e4c",
+    "url": "https://www.ijcai.org/proceedings/2024/711",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:35d930d47d7536582061",
+    "target_id": "url:a67477f838ce371b12e6",
+    "url": "https://www.imean.ai/web-canvas",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:40eb109bf0616eee2783",
+    "target_id": "url:b2048de8f967b378489b",
+    "url": "https://www.proxyagent.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:423fc440548161c79b31",
+    "target_id": "url:5cdce51ec068887b7fec",
+    "url": "https://www.kaggle.com/datasets/datasnaek/lightshot",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:4403f570f495a7f8cd51",
+    "target_id": "url:14f7373a79104cebc50f",
+    "url": "https://www.datacamp.com/blog/what-is-anthropic-computer-use",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:47d573658579130846f5",
+    "target_id": "url:9d062c8de9cad646c716",
+    "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176591818.87526814",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:4f3ce151a13cba635e74",
+    "target_id": "url:72e3ecbe5941798673c2",
+    "url": "https://www.rtrvr.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:4f4e7c972e678f1d8c48",
+    "target_id": "url:723cfeb5134c6b6eed04",
+    "url": "https://www.trykura.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:4f944d82c58ab13c4cec",
+    "target_id": "url:2e98a8198834b7e7b1c9",
+    "url": "https://www.bilibili.com/video/BV1mt3C6AEJm",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:4fb79484523ad41529f4",
+    "target_id": "url:0bd18d33f520231d2658",
+    "url": "https://www.dobrowser.io",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:51289d2105ef35fd0265",
+    "target_id": "url:2b69a69a0cd62b18f2ac",
+    "url": "https://www.beam.cloud",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:52ae1e712fd005951d46",
+    "target_id": "url:63bda1fefc6ffa23bb48",
+    "url": "https://www.webmarkerjs.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:56306e00428bbf30f6a8",
+    "target_id": "url:0210d8713fd41ca1448f",
+    "url": "https://www.stagehand.dev",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:5ee32309be4981d585ba",
+    "target_id": "url:a83bdbf027d2bf134125",
+    "url": "https://www.interconnects.ai/p/claudes-agency",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:5f93a5192b1aa2f9b7cd",
+    "target_id": "url:ef244017b1460269fc68",
+    "url": "https://www.browser-use.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:65a9a9211f0dd2b7264a",
+    "target_id": "url:bdb1635daef9c6bb0c47",
+    "url": "https://www.komos.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:6884b7a1aa1bf507dae7",
+    "target_id": "url:ae6b0415ba5c9a173e04",
+    "url": "https://www.gumloop.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:6917c59ee128421233b6",
+    "target_id": "url:9716f8445293629f2767",
+    "url": "https://www.hyperwriteai.com/personal-assistant",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:69d6afe38a9a128ba9f7",
+    "target_id": "url:c371e17918bcf69a914c",
+    "url": "https://www.askui.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:7966d456db7ba244b22e",
+    "target_id": "url:e95919a5add2af1b18a3",
+    "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:79e0b911afaf4313fa6c",
+    "target_id": "url:fa6e73c96d3bdae607c7",
+    "url": "https://www.automationanywhere.com/products/process-discovery",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:7ab3e51a49c632058e97",
+    "target_id": "url:efaf2b2bbefe85372106",
+    "url": "https://www.microsoft.com/en-us/research/publication/interactive-agent-foundation-model",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:7ae2670859e3796e8607",
+    "target_id": "url:dabdceabe25936f9093f",
+    "url": "https://www.browseract.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:7b42d3b33e52548ffb4b",
+    "target_id": "url:fa7dceaf5b0cef98bc34",
+    "url": "https://www.microsoft.com/en-us/research/articles/fara1-5-computer-use-agent",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:7f239c7e9036287a8693",
+    "target_id": "url:37d5b4a909cce5b5315b",
+    "url": "https://www.anthropic.com/news/claude-computer-use",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:80cd3881f36740a4d414",
+    "target_id": "url:e5aab74adc82727f03fd",
+    "url": "https://www.isca-archive.org/interspeech_2025/pawlowski25_interspeech.html",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:856f7cac650f4f7684b8",
+    "target_id": "url:eba45db0f5bfa2d648e8",
+    "url": "https://www.servicenow.com/products/now-platform-ai.html",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:8896d44370711136fd54",
+    "target_id": "url:e693f5b491225a2c537a",
+    "url": "https://www.agentql.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:89412e155b7b77076e53",
+    "target_id": "url:6154bb6bc056fbbeafef",
+    "url": "https://www.usenix.org/conference/atc25/presentation/tian",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:8bda04024d8c6012d6a2",
+    "target_id": "url:3a29f3c0c233a2770d76",
+    "url": "https://www.interactionmining.org/rico.html",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:93572a66369b92e553fc",
+    "target_id": "url:4f65e46ac71d8073cba5",
+    "url": "https://www.expand.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9480f580f8bf9d3ba65d",
+    "target_id": "url:44cb1c68d5b7bb3c032c",
+    "url": "https://www.aliyun.com/product/cloud-phone",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9557231fc88dcaca3c37",
+    "target_id": "url:8fd85c2b903070e0a760",
+    "url": "https://www.selenium.dev",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:978d1dcd70fde8661b9e",
+    "target_id": "url:b3ffe248cc4292a5e7f0",
+    "url": "https://www.browserbase.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9b37d491bc442bb265e6",
+    "target_id": "url:4ed231da8c3d08c3155f",
+    "url": "https://www.nexa4ai.com/octo-planner",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9b88bfec4a46afeb42f3",
+    "target_id": "url:11a1e593bf4114454430",
+    "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9ba7916761d0902f34be",
+    "target_id": "url:ff412586076a9921319b",
+    "url": "https://www.tbench.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9be4b67be4ba0baeda0a",
+    "target_id": "url:c2730296f33fadce14b8",
+    "url": "https://www.multion.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9e4ef9c155b6d9f3c6cd",
+    "target_id": "url:4c80deb152ef31cb3ba4",
+    "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:9f90189258f9cd5ea7ed",
+    "target_id": "url:171599cff2a54276c490",
+    "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:a06f5cb81d3c41338bb6",
+    "target_id": "url:7d46748dfff5812babdf",
+    "url": "https://www.firecrawl.dev",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:a1b1afc286ca1a8f0344",
+    "target_id": "url:55a74408d88a1a73bd1a",
+    "url": "https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:a9dae6f22b637892e4c0",
+    "target_id": "url:d4db10644e17e7bbd599",
+    "url": "https://www.mdpi.com/1999-5903/17/4/180",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:aaf62a374517dcb7151d",
+    "target_id": "url:9284e12a872b1a37821c",
+    "url": "https://www.sentienceapi.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ab48e5c07b077687cf24",
+    "target_id": "url:40bb7a9ecf476e39b229",
+    "url": "https://www.icml-computeruseagents.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ae4200dcdcd26e1df413",
+    "target_id": "url:5c6966c3a3ea3edbbb56",
+    "url": "https://www.nexa4ai.com/octopus-v3",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:af7a159440da3648399d",
+    "target_id": "url:3a1ac1f9c5c945f1b8cc",
+    "url": "https://www.kaggle.com/datasets/onurgunes1993/rico-dataset",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:b0676300ea65342ee07f",
+    "target_id": "url:fd8e40731ee1fad3917b",
+    "url": "https://www.nature.com/articles/s41467-026-69010-1",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:b56578c7f9a211a792f2",
+    "target_id": "url:f0c2b998561039822612",
+    "url": "https://www.diabrowser.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:c33c1aba83d17c53a6f6",
+    "target_id": "url:7511d55ce7612b621ff1",
+    "url": "https://www.rabbit.tech/rabbit-r1",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:c6f3c36e4603808ae9a6",
+    "target_id": "url:2e6fad8f7c976768a249",
+    "url": "https://www.cloudcruise.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:c7a01df1b0c354e0a650",
+    "target_id": "url:206531b9829a18d96a7e",
+    "url": "https://www.kaggle.com/datasets/vinothpandian/uisketch/data",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ccc69641ceab4252f9d5",
+    "target_id": "url:116e12603ee02db2ddab",
+    "url": "https://www.swebench.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:cd94fa2213ce15b213b9",
+    "target_id": "url:11840b7711fc456f86f4",
+    "url": "https://www.apple.com/apple-intelligence",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ce318faf98d8a518c31d",
+    "target_id": "url:58999f1e7f9a6de0a218",
+    "url": "https://www.socialcrawl.dev",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:cf4cb76515477302fc84",
+    "target_id": "url:6905d482ed83d1782558",
+    "url": "https://www.openinterpreter.com",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:d785ac06ca5229f9e753",
+    "target_id": "url:8d9b0de944b131d10902",
+    "url": "https://www.context.dev",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:d92596cfe618e5322ec2",
+    "target_id": "url:54da694fa419c4d24b5e",
+    "url": "https://www.tinyfish.ai",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:dc8621e65a7c436e0e5e",
+    "target_id": "url:7250b72266d918d9bca4",
+    "url": "https://www.google.com/flights",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:df3dc96d9e27b824f6ea",
+    "target_id": "url:932ab3ba304c8564bb9f",
+    "url": "https://www.perplexity.ai/comet",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:e93fab6deae2e8764bfc",
+    "target_id": "url:580c3c3e64e0a68ef6e5",
+    "url": "https://www.google.com/search?q=LICENSE",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:eafac31fef5dbe00d5b1",
+    "target_id": "url:68e97f131ee8df43190c",
+    "url": "https://www.gatesnotes.com/AI-agents",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ebcdad9e6d6ac2266c5a",
+    "target_id": "url:84d5798c77f7f40bfc7e",
+    "url": "https://www.nlp.stanford.edu",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ec7aa5e001e51ba44fb6",
+    "target_id": "url:bae772004c503d916d17",
+    "url": "https://www.multion.ai/blog/introducing-agent-q-research-breakthrough-for-the-next-generation-of-ai-agents-with-planning-and-self-healing-capabilities",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ed599761bbe23dfce405",
+    "target_id": "url:0d5c08f708a6ac26ec2c",
+    "url": "https://www.adept.ai/blog/fuyu-8b",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ef7a45799a4503144a4d",
+    "target_id": "url:b92aa45f85ac7b39accd",
+    "url": "https://www.preprints.org/manuscript/202408.2137/v1",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:f3fa4bc0e5def4830999",
+    "target_id": "url:0e9c5cefe63d044800bf",
+    "url": "https://www.anthropic.com/news/developing-computer-use",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:f57f52871fee387df384",
+    "target_id": "url:0a69e9304845c8cf6368",
+    "url": "https://www.ijcai.org/proceedings/2024/339",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:f885d17601171253d25e",
+    "target_id": "url:43e1da6add8ba31e3485",
+    "url": "https://www.adept.ai/blog/act-1",
+    "policy": "leading-www-v1"
+  },
+  {
+    "alias_id": "url:ffca8c33695986806a57",
+    "target_id": "url:c6542085d39a2c86167e",
+    "url": "https://www.preprints.org/manuscript/202408.2137",
+    "policy": "leading-www-v1"
+  }
+]

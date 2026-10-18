@@ -126,3 +126,41 @@ Push the tag with git, not through the GitHub release form: the form publishes i
 Asset names are the same in every release, so a pinned download is `https://github.com/reacher-z/Awesome-CUA/releases/download/<tag>/awesomecua-data.zip`. The bundle is data-only: its own instructions describe the included paths; repository CLI commands require a source clone at the recorded commit. The site downloads continue to follow newer publications, so compare catalog fingerprints before mixing them with a release.
 
 If a run failed before creating a release, re-run it, or dispatch the workflow on the tag with `gh workflow run release.yml --ref <tag>`; a tag pushed with another workflow's `GITHUB_TOKEN` starts no run and needs this dispatch. Once a release has been published, preserve its tag and assets for existing citations. Use a new version for changed data. Dispatched on a branch, the workflow builds the same files into a `release-assets` artifact without publishing, which previews a release.
+
+## One-time leading-www URL migration
+
+`migrate_www_urls.py` applies the reviewed `leading-www-v1` snapshot migration
+offline. It records `data/url-aliases.json`, remaps supported identity and
+semantic-reference fields, and merges duplicate candidates with their discovery
+provenance. It retains editorial primary URLs, receipts, approval digests,
+explicit asset/organization IDs and pending review states. It does not fetch,
+verify or approve resources.
+
+```bash
+# Read-only plan: review the affected inputs before applying it.
+.venv/bin/python scripts/migrate_www_urls.py
+.venv/bin/python scripts/migrate_www_urls.py --write
+.venv/bin/python scripts/catalog.py build
+.venv/bin/python scripts/catalog.py validate
+.venv/bin/python scripts/catalog.py build --check
+.venv/bin/python -m unittest discover -s tests -v
+node --test tests/web.test.mjs
+.venv/bin/python scripts/build_site.py
+```
+
+This is a one-time, reviewed exception to regenerating command outputs through
+their normal ingestion commands, not a general recursive ID rewrite. If an
+affected identity appears in retained exclusions, publication observations,
+metadata-update proposals or repository observations, the tool stops for an
+explicitly reviewed migration of that input. Do not bypass that check or replace
+receipt URLs, free-form aliases, fingerprints or discovery-source IDs. A write
+checks that its planned inputs have not changed before replacing files. Review
+the resulting source and generated diffs together and run the normal required
+suites.
+
+Active old-ID aliases must return the same canonical CLI and resource-page
+record, including `index.md` and `record.json`; an unindexed target must stay
+unindexed. Regenerate the site and download manifest so the URL crosswalk,
+schema, catalog and RAG fingerprints agree, and include them when packaging a
+versioned data release. Do not hand-edit generated exports or treat the policy
+crosswalk as new HTTP or content-review evidence.

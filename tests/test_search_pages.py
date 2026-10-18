@@ -52,7 +52,7 @@ class SearchPagesTests(unittest.TestCase):
     def test_every_page_has_matching_canonical_robots_and_visible_heading(self):
         for item in self.manifest['pages']:
             text=(self.dest/item['path'].lstrip('/')/'index.html').read_text();p=PageParser(text)
-            self.assertEqual(p.canonical,[SITE+item['path']],item['path'])
+            self.assertEqual(p.canonical,[SITE+item.get('alias_of',item['path'])],item['path'])
             self.assertEqual(p.heading_count,1,item['path'])
             self.assertEqual('noindex' in p.robots[0],not item['indexable'],item['path'])
             for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
@@ -65,6 +65,34 @@ class SearchPagesTests(unittest.TestCase):
         self.assertFalse(root.findall('s:url/s:lastmod',ns))
         for row in self.rows:self.assertEqual(SITE+resource_path(row) in urls,eligible(row))
         self.assertEqual((self.dest/'sitemap.txt').read_text().splitlines(),urls)
+
+    def test_former_www_pages_resolve_same_record_without_duplicate_resources(self):
+        declarations=json.loads((ROOT/'data/url-aliases.json').read_text())
+        records={row['id']:row for row in self.rows}
+        pages={item['path']:item for item in self.manifest['pages']}
+        sitemap=(self.dest/'sitemap.txt').read_text().splitlines()
+        active=[entry for entry in declarations if entry['target_id'] in records]
+        self.assertTrue(active)
+        self.assertEqual(self.manifest['url_alias_pages'],len(active))
+        for entry in declarations:
+            old=resource_path({'id':entry['alias_id']})
+            if entry['target_id'] not in records:
+                self.assertNotIn(old,pages)
+                continue
+            record=records[entry['target_id']]
+            current=resource_path(record)
+            self.assertEqual(pages[old]['alias_of'],current)
+            self.assertFalse(pages[old]['indexable'])
+            target=self.dest/old.lstrip('/')
+            markup=(target/'index.html').read_text()
+            self.assertIn('http-equiv="refresh" content="0; url='+current+'"',markup)
+            self.assertEqual(PageParser(markup).canonical,[SITE+current])
+            self.assertEqual(json.loads((target/'record.json').read_text()),record)
+            self.assertEqual((target/'record.json').read_bytes(),
+                             (self.dest/current.lstrip('/')/'record.json').read_bytes())
+            self.assertIn(SITE+current,(target/'index.md').read_text())
+            self.assertNotIn(SITE+old,sitemap)
+            self.assertIn(entry['alias_id'],record['aliases'])
     def test_static_pages_link_to_real_local_destinations(self):
         for item in self.manifest['pages']:
             p=PageParser((self.dest/item['path'].lstrip('/')/'index.html').read_text())

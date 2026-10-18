@@ -63143,5 +63143,118 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2408.07199",
+    "name": "Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2408.07199",
+    "summary": "Trains web agents by pairing guided Monte Carlo Tree Search and self-critique with off-policy DPO on their own successful and failed trajectories, evaluated in WebShop and on real booking tasks with Llama-3 70B.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "web-navigation",
+      "self-reflection"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Agent Q: Advanced Reasoning and Learning"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2408.07199&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete original arXiv abstract. Experimental results have not been independently reproduced. The catalog's linked code record, github:sentient-engineering/agent-q, is a reimplementation that names this paper; the abstract itself links no code.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "312d866aa3ec191166a5ee0f06f213c9ca74c7c8910eb8376e5c1f95bcb13878",
+    "reviewed_at": "2026-10-18T12:04:34Z"
+  },
+  {
+    "name": "agentq",
+    "kind": "agent",
+    "url": "https://github.com/sentient-engineering/agent-q",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "self-reflection"
+    ],
+    "scope": "core",
+    "summary": "Open-source web agent that drives a local Chrome through Playwright with planner-navigator, actor-critic and MCTS modes; the MCTS mode writes DPO preference pairs, following the Agent Q paper.",
+    "verify_terms": [
+      "agentq"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sentient-engineering/agent-q/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2408.07199"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/sentient-engineering/agent-q/git/trees/6050777f833f43c36421398cb2f524ea9709c839?recursive=1",
+        "sha256": "87c57ff2f0e8c10f4f50026728efee8a93ee18a7c6ac1a10d761f6ef60bfc4c2",
+        "retrieved_at": "2026-10-18T12:04:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sentient-engineering/agent-q/6050777f833f43c36421398cb2f524ea9709c839/agentq/core/mcts/browser_mcts.py",
+        "sha256": "24c63ed6daf70ea4a63e2cb5533f5d9389aac488f2c0a0ca3a681fb928cc8abe",
+        "retrieved_at": "2026-10-18T12:04:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sentient-engineering/agent-q/6050777f833f43c36421398cb2f524ea9709c839/agentq/core/agent/base.py",
+        "sha256": "0d2f5efb5a3a07199ce885edb9c0fc69224dbcc6fa4d16387cf958a0f9eb3c7b",
+        "retrieved_at": "2026-10-18T12:04:03Z"
+      }
+    ],
+    "details": {
+      "availability": "Public agent, MCTS search and evaluation-runner source; no DPO fine-tuning script or trained checkpoint is released.",
+      "repository_revision": "6050777f833f43c36421398cb2f524ea9709c839"
+    },
+    "notes": "Published by the Sentient Engineering GitHub organization. The README calls the repository an open-source implementation of arXiv:2408.07199 and does not present it as the paper authors' release. The tree at commit 6050777 holds planner, navigator, actor, critic, vision and captcha agents, Playwright skills over a Chrome session opened with remote debugging, an MCTS core whose browser search ranks actions with the critic and emits DPO pairs, and a runner over sampled WebVoyager tasks. Agents default to gpt-4o-2024-08-06 through an OpenAI client wrapped by Langfuse tracing. The README's fourth mode lists DPO fine-tuning, but no training script or checkpoint is in the tree. The last push was 2024-09-26.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0525d6660dc51198b2e490b5d3ae57f5c2cf6af4c6f74fff44dc597861393f6a",
+    "reviewed_at": "2026-10-18T12:04:34Z"
   }
 ]

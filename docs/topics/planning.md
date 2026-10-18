@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (28)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -28,6 +28,7 @@
 | [Fara](https://github.com/microsoft/fara) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025), [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | code MIT | Microsoft browser-use agent models that act from screenshots by predicting click coordinates without accessibility trees; Fara1.5 comes in 4B, 9B and 27B, succeeding Fara-7B. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/fara/HEAD/README.md) |
 | [Fara 7B](https://huggingface.co/microsoft/Fara-7b) | web | — | weights mit | Microsoft's Fara checkpoint, a Qwen2.5-VL-architecture image-text-to-text model with about 8.3B BF16 parameters, English, MIT-licensed and linked to arXiv paper 2511.19663. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/Fara-7b) |
 | [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use) | cross-platform | — | — | Gemini capability for generating interface actions from screenshots. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
+| [GUI-Owl 32B](https://huggingface.co/mPLUG/GUI-Owl-32B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights MIT | The 32B GUI-Owl checkpoint from the Mobile-Agent-v3 project, fine-tuned from Qwen2.5-VL-32B-Instruct for GUI grounding and actions, and usable as specialized agents in the Mobile-Agent-v3 framework. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-32B/raw/d22450d9b50c1b8cb33cf86423851152957bac64/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [Holo Model Family](https://hcompany.ai/research/models) | cross-platform | — | — | H computer-use model family and its release-specific access options. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
 | [Holo1 7B](https://huggingface.co/Hcompany/Holo1-7B) | web | [2506.02865](https://arxiv.org/abs/2506.02865) (2025) | weights apache-2.0 | A Qwen2.5-VL-based action model released for the Surfer-H web-agent system, supporting policy, interface-localization and validation roles. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo1-7B/raw/main/README.md) |

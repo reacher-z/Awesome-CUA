@@ -63143,5 +63143,43 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AutoManual",
+    "kind": "agent",
+    "url": "https://github.com/minghchen/automanual",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "planning"
+    ],
+    "summary": "Code for AutoManual, where planner and builder agents learn rules by interacting with ALFWorld, MiniWoB++ and WebArena Reddit tasks and a formulator agent compiles the rules into a manual for later runs.",
+    "scope": "core",
+    "verify_terms": [
+      "AutoManual"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/minghchen/automanual/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2405.16247"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Official code for arXiv:2405.16247. The tree has separate automanual_alfworld, automanual_miniwob and automanual_webarena directories with build, formulate and test scripts plus manuals already built with GPT-4 preview; ALFWorld is a text household environment, so only the two browser benchmarks set the web environment. A modified ALFWorld copy and a MiniWoB++ computergym copy are bundled, and WebArena runs need the author's revised WebArena repository. Agents call the OpenAI API. Test traces are linked on Google Drive and were not downloaded. No root license was found; the bundled ALFWorld folder keeps its own LICENSE, so the project code license is unknown.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f894e8f069ab02250a20ded4d9df8dacd6cd66c7a31dd750f69d317f9b7600a0",
+    "reviewed_at": "2026-10-18T11:39:25Z"
   }
 ]

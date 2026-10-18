@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -184,9 +184,18 @@
       "cause": "reviewer_hold"
     }
   ],
-  "uncurated_linked_papers": [],
+  "uncurated_linked_papers": [
+    {
+      "id": "arxiv:2405.16247",
+      "name": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "url": "https://arxiv.org/abs/2405.16247",
+      "linked_from": [
+        "github:minghchen/automanual"
+      ]
+    }
+  ],
   "by_kind": {
-    "agent": 43,
+    "agent": 44,
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
@@ -207,7 +216,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -219,7 +228,7 @@
       "linux": 1,
       "macos": 2,
       "unspecified": 1,
-      "web": 11,
+      "web": 12,
       "windows": 5
     },
     "benchmark": {
@@ -547,13 +556,13 @@
         "state": "success"
       },
       "discovered": 588,
-      "indexed": 503,
-      "indexed_resources": 503,
+      "indexed": 504,
+      "indexed_resources": 504,
       "resolved_aliases": 5,
-      "curated": 459,
+      "curated": 460,
       "excluded": 1,
       "set_aside": 9,
-      "unindexed": 75
+      "unindexed": 74
     },
     {
       "id": "tianyuan-cua",

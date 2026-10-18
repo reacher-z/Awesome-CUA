@@ -6158,17 +6158,36 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "70928db908760c1561bfc8e0cd7d925e0103ffddef4676fbaa7c1756a804b99a",
     "reviewed_at": "2026-10-16T06:38:26Z",
-    "notes": "The card links the WebUI project's ACM publication (DOI 10.1145/3544548.3581158) and website, not an arXiv record or a catalogued repository, so no paper or family relation is recorded.",
+    "notes": "The card links the WebUI project's ACM CHI 2023 publication (DOI 10.1145/3544548.3581158) and the project website, whose Paper link is arXiv 2301.13280. The card says this Hub release was filtered with a list of explicit words and holds fewer samples than the paper's experiments; it states no sample count, so the paper's 400,000-page crawl size is not applied here.",
     "additional_evidence": [
       {
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
-          "notes"
+          "notes",
+          "relations"
         ],
         "url": "https://huggingface.co/datasets/biglab/webui-all/raw/main/README.md",
         "sha256": "93bd04914735f748d687b71597970a79d95ae8636e7ed75d267ebd6954d11a8f",
         "retrieved_at": "2026-10-17T16:10:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/uimodeling/uimodeling.github.io/5d6a7db0e213632c56c1ac95997e81617fc156a2/index.html",
+        "sha256": "26b7e6fe6d6ee43337475318f87f7998e9a5ba69dab497fa8cd1f42933270057",
+        "retrieved_at": "2026-10-18T15:36:49Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2301.13280",
+        "evidence_url": "https://raw.githubusercontent.com/uimodeling/uimodeling.github.io/5d6a7db0e213632c56c1ac95997e81617fc156a2/index.html"
       }
     ]
   },

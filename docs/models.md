@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**99 resources:** [Web (15)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -16,6 +16,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [BU-30B-A3B-Preview](https://huggingface.co/browser-use/bu-30b-a3b-preview) | — | weights Modified MIT License (Browser Use, revenue-restricted) | Browser Use's open-weight browser-agent model, fine-tuned from Qwen3-VL-30B-A3B-Instruct (30B total, 3B active parameters) to serve as the LLM of the browser-use library through BU Cloud or vLLM. | [✓ 2026‑10‑18](https://huggingface.co/browser-use/bu-30b-a3b-preview/raw/28f795cd9ec73aedf2970a8914bbbf0d18accd82/README.md) |
 | [Dreamer-7B](https://huggingface.co/osunlp/Dreamer-7B) | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | WebDreamer model checkpoint that predicts the consequences of web actions from screenshots and textual descriptions. | [✓ 2026‑10‑16](https://huggingface.co/osunlp/Dreamer-7B/raw/main/README.md) |
 | [Fara](https://github.com/microsoft/fara) | [2511.19663](https://arxiv.org/abs/2511.19663) (2025), [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | code MIT | Microsoft browser-use agent models that act from screenshots by predicting click coordinates without accessibility trees; Fara1.5 comes in 4B, 9B and 27B, succeeding Fara-7B. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/fara/HEAD/README.md) |
 | [Fara 7B](https://huggingface.co/microsoft/Fara-7b) | — | weights mit | Microsoft's Fara checkpoint, a Qwen2.5-VL-architecture image-text-to-text model with about 8.3B BF16 parameters, English, MIT-licensed and linked to arXiv paper 2511.19663. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/Fara-7b) |

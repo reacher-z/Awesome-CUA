@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (12)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -51,6 +51,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [BU-30B-A3B-Preview](https://huggingface.co/browser-use/bu-30b-a3b-preview) | — | weights Modified MIT License (Browser Use, revenue-restricted) | Browser Use's open-weight browser-agent model, fine-tuned from Qwen3-VL-30B-A3B-Instruct (30B total, 3B active parameters) to serve as the LLM of the browser-use library through BU Cloud or vLLM. | [✓ 2026‑10‑18](https://huggingface.co/browser-use/bu-30b-a3b-preview/raw/28f795cd9ec73aedf2970a8914bbbf0d18accd82/README.md) |
 | [Fara](https://github.com/microsoft/fara) | [2511.19663](https://arxiv.org/abs/2511.19663) (2025), [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | code MIT | Microsoft browser-use agent models that act from screenshots by predicting click coordinates without accessibility trees; Fara1.5 comes in 4B, 9B and 27B, succeeding Fara-7B. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/fara/HEAD/README.md) |
 | [Fara 7B](https://huggingface.co/microsoft/Fara-7b) | — | weights mit | Microsoft's Fara checkpoint, a Qwen2.5-VL-architecture image-text-to-text model with about 8.3B BF16 parameters, English, MIT-licensed and linked to arXiv paper 2511.19663. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/Fara-7b) |
 | [Go-Browse WebArena Qwen 7B](https://huggingface.co/apurvaga/go-browse-wa-qwen-7B) | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | — | A Qwen-2.5-7B-Instruct checkpoint fine-tuned on Go-Browse WebArena trajectories for website task execution. | [✓ 2026‑10‑17](https://huggingface.co/apurvaga/go-browse-wa-qwen-7B/raw/main/README.md) |

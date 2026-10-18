@@ -63143,5 +63143,94 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "BU-30B-A3B-Preview",
+    "kind": "model",
+    "url": "https://huggingface.co/browser-use/bu-30b-a3b-preview",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation"
+    ],
+    "summary": "Browser Use's open-weight browser-agent model, fine-tuned from Qwen3-VL-30B-A3B-Instruct (30B total, 3B active parameters) to serve as the LLM of the browser-use library through BU Cloud or vLLM.",
+    "scope": "core",
+    "verify_terms": [
+      "BU-30B-A3B-Preview"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/browser-use/bu-30b-a3b-preview/raw/28f795cd9ec73aedf2970a8914bbbf0d18accd82/README.md"
+    ],
+    "publisher_id": "organization:browser-use",
+    "notes": "A preview release. The Hub API at revision 28f795cd lists 13 BF16 safetensors shards (31,070,754,032 parameters) in the Qwen3VLMoeForConditionalGeneration architecture; the repository is not gated. The card gives a 65,536-token context and quickstarts for BU Cloud (API key) and a local vLLM server, but no benchmark results, training data or training method, so its capability claims were not checked. The card metadata declares no license. The repository's LICENSE is a modified MIT text that withholds all rights from anyone whose company or employer has global consolidated annual revenue above US$1 million (measured for the preceding month), and points them to a commercial license or the hosted service instead.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "browser-use/bu-30b-a3b-preview",
+      "hub_revision": "28f795cd9ec73aedf2970a8914bbbf0d18accd82",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/browser-use/bu-30b-a3b-preview/tree/main",
+      "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "architecture": "Qwen3VLMoeForConditionalGeneration",
+      "parameter_label": "30B total, 3B active",
+      "repository_url": "https://github.com/browser-use/browser-use"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.base_model",
+      "details.parameter_label",
+      "details.repository_url"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/browser-use/bu-30b-a3b-preview",
+        "sha256": "48085eded704d2a53bc4439b3a904d5c4146bd3b29903fcaf55f34d0b24d0a9b",
+        "retrieved_at": "2026-10-18T11:36:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.weights",
+          "notes"
+        ],
+        "url": "https://huggingface.co/browser-use/bu-30b-a3b-preview/raw/28f795cd9ec73aedf2970a8914bbbf0d18accd82/LICENSE",
+        "sha256": "26272dfb472cc79cdc667dd962b8876b8087297ee7cc9737291b428eb3bfc32e",
+        "retrieved_at": "2026-10-18T11:36:30Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Modified MIT License (Browser Use, revenue-restricted)",
+          "url": "https://huggingface.co/browser-use/bu-30b-a3b-preview/raw/28f795cd9ec73aedf2970a8914bbbf0d18accd82/LICENSE",
+          "retrieved_at": "2026-10-18T11:36:30Z",
+          "basis": "LICENSE file in the model repository: an MIT-style grant for the weights with an added clause that removes all rights above a US$1 million revenue threshold; not the standard MIT license."
+        },
+        "reason": "The card metadata has no license field. The repository LICENSE is a custom modified MIT text with a revenue restriction, so it is recorded verbatim by name rather than as SPDX MIT.",
+        "evidence_urls": [
+          "https://huggingface.co/browser-use/bu-30b-a3b-preview/raw/28f795cd9ec73aedf2970a8914bbbf0d18accd82/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a500e70f875f4204c7711df18b46a7e9171c2ac7e3f7569dd0826cf11f4d2587",
+    "reviewed_at": "2026-10-18T11:36:57Z"
   }
 ]

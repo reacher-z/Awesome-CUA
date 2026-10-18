@@ -63143,5 +63143,116 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Bananalyzer",
+    "kind": "benchmark",
+    "url": "https://github.com/reworkd/bananalyzer",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Playwright evaluation suite in which web agents extract structured JSON from saved detail, listing and paginated pages, scored field by field against expected outputs through a generated pytest run.",
+    "scope": "core",
+    "verify_terms": [
+      "Banana-lyzer",
+      "Bananalyzer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/reworkd/bananalyzer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "notes": "Reworkd describes it as a work in progress; the last release tag is v.0.7.3 (2024-01) and the latest commit d1b1ae52 is from 2024-10. Most pages are replayed from MHTML, HAR or HTML snapshots stored in the repository; two training examples use the hosted source, which loads the live site URL. Planned click, navigation, multi-step and sign-in examples are unchecked roadmap items. MIT is recorded for repository code only; the snapshotted third-party pages carry no stated license. No paper is cited (CITATION.cff names the software). Nothing was installed or run.",
+    "details": {
+      "repository_revision": "d1b1ae52db3fd9e0e3792493f34ccf5b467933c6",
+      "benchmark_protocol": {
+        "focus": [
+          "structured data extraction from web pages",
+          "collecting detail-page links from listing pages",
+          "pagination"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "Playwright browser context over locally served page snapshots, or the live URL for the two hosted-source training examples"
+        ],
+        "actions": [
+          "Playwright operations implemented by the user's AgentRunner"
+        ],
+        "evaluation": "Each example carries a json_match eval; the CLI builds a pytest suite that compares the agent's returned JSON with the expected output field by field, and listing examples currently check only that all detail-page URLs were captured. --test switches from the training examples to the test examples.",
+        "counts": [
+          {
+            "value": 282,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "training set, static/examples.json (117 detail, 134 listing_detail, 31 listing)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/examples.json"
+          },
+          {
+            "value": 18,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "test set, static/test_examples.json (10 detail, 8 listing_detail)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/test_examples.json"
+          }
+        ],
+        "notes": "Counts were taken with a script at commit d1b1ae52; example IDs are unique and the two sets do not overlap. Every example uses json_match. Most examples (222 of 282 in the training set) are categorized as government, healthcare or software pages, and 16 are synthetic HTML pages. Preserve the commit, split and any id, intent, category or tag filters when comparing runs.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/reworkd/bananalyzer/HEAD/README.md",
+          "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/examples.json",
+          "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/test_examples.json",
+          "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/bananalyzer/__main__.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/examples.json",
+        "sha256": "4da2214bfd2cc6bdb78df9bba0700b8feb7009aebcc5e40704ae2032db2fc011",
+        "retrieved_at": "2026-10-18T11:58:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/test_examples.json",
+        "sha256": "954952ee0260e8f2113179dcf319c757dab4454f203957369f18434ef064e5c4",
+        "retrieved_at": "2026-10-18T11:58:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/bananalyzer/__main__.py",
+        "sha256": "ad79c1e4da108dde2bf0a00e31f98333ab2598f3775a668f2f47e8678030f024",
+        "retrieved_at": "2026-10-18T11:58:44Z"
+      }
+    ],
+    "reviewed_sha256": "c7f5574143b871394c3f3ad38635eb6c2e00f37bd435dbb524c2ba68d8696245",
+    "reviewed_at": "2026-10-18T11:59:22Z"
   }
 ]

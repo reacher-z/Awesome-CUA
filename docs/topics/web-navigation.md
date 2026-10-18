@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (18)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@ All entries in this section: web.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | data Custom AgentRewardBench Terms of Use | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md) |
+| [Bananalyzer](https://github.com/reworkd/bananalyzer) | — | [282 examples](https://raw.githubusercontent.com/reworkd/bananalyzer/d1b1ae52db3fd9e0e3792493f34ccf5b467933c6/static/examples.json) | code MIT | Playwright evaluation suite in which web agents extract structured JSON from saved detail, listing and paginated pages, scored field by field against expected outputs through a generated pytest run. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/reworkd/bananalyzer/HEAD/README.md) |
 | [BrowserART](https://github.com/scaleapi/browser-art) | [2410.13886](https://arxiv.org/abs/2410.13886) (2024) | — | — | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/README.md) |
 | [CUAVerifierBench](https://huggingface.co/datasets/microsoft/CUAVerifierBench) | [2604.06240](https://arxiv.org/abs/2604.06240) (2026) | [106 trajectories](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) · [215 annotation rows](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) | data mit | Human-annotated browser-agent trajectories for comparing automated task-success and process-quality verifiers against reviewer judgments. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) |
 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | [2409.11295](https://arxiv.org/abs/2409.11295) (2024) | — | code MIT | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md) |

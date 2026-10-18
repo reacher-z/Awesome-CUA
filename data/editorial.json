@@ -3854,6 +3854,38 @@
       "details.screen_count",
       "details.modalities",
       "details.dataset_profile"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2108.03353",
+        "evidence_url": "https://raw.githubusercontent.com/google-research/google-research/5b09c22d73a9d35eb6c5d2a99b95677a45053466/screen2words/README.md"
+      }
+    ],
+    "notes": "The README refers to the splits used by the paper without naming it. The paper's code page in google-research names the UIST 2021 Screen2Words paper and points to this repository for its 112,085 summaries, and the paper (arXiv v1) links that code page.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research/google-research/5b09c22d73a9d35eb6c5d2a99b95677a45053466/screen2words/README.md",
+        "sha256": "cbd69deae0b472cf51b82be5aa006746448aec030f63c2b9a620b1797e2a7042",
+        "retrieved_at": "2026-10-18T16:20:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2108.03353v1",
+        "sha256": "ed54472f6d973671766eeb23d94b69cc5ce0bc831e72454877c1ae70acc762d2",
+        "retrieved_at": "2026-10-18T16:20:18Z"
+      }
     ]
   },
   {

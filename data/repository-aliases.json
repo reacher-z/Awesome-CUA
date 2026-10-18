@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:sej2020/llm-honeypots",
+    "target_id": "github:sej2020/manipulating-web-agents",
+    "repository_id": 926090033,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T12:02:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/sej2020/LLM-Honeypots",
+        "resolved_url": "https://api.github.com/repositories/926090033",
+        "repository_id": 926090033,
+        "full_name": "sej2020/Manipulating-Web-Agents",
+        "html_url": "https://github.com/sej2020/Manipulating-Web-Agents",
+        "retrieved_at": "2026-10-18T12:01:59Z",
+        "sha256": "705d1e406804fcee9942536480bc568b5ff4e3691829b68a851db46c4f805b81"
+      },
+      {
+        "url": "https://api.github.com/repos/sej2020/Manipulating-Web-Agents",
+        "resolved_url": "https://api.github.com/repos/sej2020/Manipulating-Web-Agents",
+        "repository_id": 926090033,
+        "full_name": "sej2020/Manipulating-Web-Agents",
+        "html_url": "https://github.com/sej2020/Manipulating-Web-Agents",
+        "retrieved_at": "2026-10-18T12:02:00Z",
+        "sha256": "705d1e406804fcee9942536480bc568b5ff4e3691829b68a851db46c4f805b81"
+      }
+    ]
   }
 ]

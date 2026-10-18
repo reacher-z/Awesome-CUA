@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Manipulating-Web-Agents",
+    "kind": "framework",
+    "url": "https://github.com/sej2020/Manipulating-Web-Agents",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Indirect prompt-injection attack code that optimizes GCG triggers hidden in a page's accessibility tree to make a BrowserGym web agent on Llama or Mistral models click or fill fields the attacker chooses.",
+    "verify_terms": [
+      "Manipulating Autonomous LLM-based Web Agents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sej2020/Manipulating-Web-Agents/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2507.14799",
+        "evidence_url": "https://arxiv.org/abs/2507.14799"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:servicenow/browsergym",
+        "evidence_url": "https://raw.githubusercontent.com/sej2020/Manipulating-Web-Agents/HEAD/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/abs/2507.14799",
+        "sha256": "92bdf620d2e9257ad5199695be5119bd82a150bb0dced91f4e9100dcecaf3423",
+        "retrieved_at": "2026-10-18T12:00:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/sej2020/Manipulating-Web-Agents/git/trees/f3a011b7d1bfc1bc76d7d85be025583a97270ca1?recursive=1",
+        "sha256": "0a6205e7acf3bf77a580b397b7342e76edb3410d25e241fe1bf1ea0cd38c1b92",
+        "retrieved_at": "2026-10-18T12:00:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sej2020/Manipulating-Web-Agents/f3a011b7d1bfc1bc76d7d85be025583a97270ca1/src/attack/model/huggingface.py",
+        "sha256": "b4be9db6c20927f0193ee27188385548bfd7c2a0a56cb94d38c89ec6a0762fac",
+        "retrieved_at": "2026-10-18T12:00:52Z"
+      }
+    ],
+    "details": {
+      "availability": "Public attack, trigger-optimization and dataset-building source; the demo website and trigger JSON files the README names are git-ignored and not in the repository.",
+      "repository_revision": "f3a011b7d1bfc1bc76d7d85be025583a97270ca1"
+    },
+    "notes": "The README does not cite a paper, but the abstract on the arXiv page of arXiv:2507.14799 names this repository as the system software, released under MIT, with a demo website at lethaiq.github.io/attack-web-llm-agent. The tree at commit f3a011b holds a BrowserGym demo runner, narrow and universal trigger search over a modified nanoGCG, and scripts that build website and goal datasets through Google Programmable Search and the OpenAI batch API. Supported attacked models are Mistral-7B-Instruct-v0.3, Mistral-Small-24B, Llama-2-7B-chat and Llama-3.1-8B-Instruct. The data/ and triggers/ folders are git-ignored, so the demo assets are not released here. The MIT license covers code only.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cc68d5746156c7a9ace384a91a1ab3fecf77ce778bfa06a60ee939bc2d1da221",
+    "reviewed_at": "2026-10-18T12:01:17Z"
   }
 ]

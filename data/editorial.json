@@ -35153,7 +35153,7 @@
     "verify_terms": [
       "UI-Genie"
     ],
-    "notes": "Public JSONL annotations and screenshots are present. MIT is declared in the dataset card. The release name, model-card links and annotation filename use different size labels; this review does not infer a reliable trajectory count from them.",
+    "notes": "Public JSONL annotations and screenshots are present. MIT is declared in the dataset card. The release name, the paper's text and its Table 1 use different size labels; the profile records the table's trajectory count.",
     "evidence_urls": [
       "https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/raw/main/README.md"
     ],
@@ -35166,7 +35166,16 @@
       "disabled": false,
       "download_url": "https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/tree/main",
       "dataset_profile": {
-        "counts": [],
+        "counts": [
+          {
+            "value": 2208,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "UI-Genie-Agent-16k, trajectory column of Table 1 in arXiv 2505.21496v1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2505.21496v1"
+          }
+        ],
         "supervision": [
           "GUI action trajectories"
         ],
@@ -35180,10 +35189,11 @@
           "PNG"
         ],
         "splits": [],
-        "notes": "Public JSONL annotations and screenshots are present. MIT is declared in the dataset card. The release name, model-card links and annotation filename use different size labels; this review does not infer a reliable trajectory count from them.",
+        "notes": "Public JSONL annotations and screenshots are present. MIT is declared in the dataset card. Table 1 of the paper lists UI-Genie-Agent-16k with size 16k, an average of 7.1 steps and 2,208 trajectories, while its training section calls the release 16K trajectories. The table's trajectory column is recorded; the 16k size label is not. A local count of ui_genie_agent_16k.jsonl at Hub revision 13cf4f3 agrees: 16,698 single-screenshot step rows from 2,208 screenshot folders. That file exceeds the receipt size budget, so the count stays reported. AMEX_Agent_34K.jsonl in the same repository is not part of these counts.",
         "evidence_urls": [
           "https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/raw/main/README.md",
-          "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md"
+          "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md",
+          "https://arxiv.org/html/2505.21496v1"
         ]
       }
     },
@@ -35216,6 +35226,16 @@
         "url": "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md",
         "sha256": "e08569bd9d8a6ff44537d4fe69243ddfeb8a41ae5c9f87ef84af50a67c64c726",
         "retrieved_at": "2026-10-17T03:59:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2505.21496v1",
+        "sha256": "62b6b74b4a05edb3772486839553b1aa87d655a734bdab8be5e698b6db34a33d",
+        "retrieved_at": "2026-10-18T16:16:37Z"
       }
     ],
     "scope": "core",

@@ -63143,5 +63143,151 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ClosePaw",
+    "kind": "agent",
+    "url": "https://github.com/imoonkey/closepaw",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "human-in-the-loop",
+      "memory"
+    ],
+    "summary": "On-device Android agent app that reads the accessibility tree, with optional screenshots, acts through accessibility node actions or gesture taps, and can run on a Shizuku virtual display in the background.",
+    "scope": "core",
+    "verify_terms": [
+      "ClosePaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/imoonkey/closepaw/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:google-research/android_world",
+        "evidence_url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/eval/README.md"
+      }
+    ],
+    "notes": "Kotlin app for Android 12 or later with an on-device ReAct loop, subagent delegation, todo and scratchpad tools, markdown memory files and per-app skills. Perception defaults to the accessibility tree; screenshot-only and hybrid modes are options (perception/PerceptionConfig.kt). Clicks try an accessibility ACTION_CLICK on the resolved node and fall back to a dispatched gesture tap (tool/action/ClickExecutor.kt, platform/NodeActionPerformer.kt, platform/AccessibilityGestureInjector.kt). Optional power tools use Shizuku for a background virtual display, Termux for a Linux shell, and Chrome DevTools Protocol scripting of Chrome. A bundled tier list blocks banking, payment, crypto-wallet, password-manager and authenticator packages (assets/security/app_tiers.json), and other apps need per-app approval. Models are reached through OpenAI-compatible endpoints or a ChatGPT/Codex sign-in. The eval/ harness drives AndroidWorld task setup and scoring and launches the app over ADB. The agent was not run.",
+    "details": {
+      "availability": "Source and a signed APK attached to GitHub release v0.1.0",
+      "repository_revision": "75dae2653f5a6b25d5df51ee7008b0f830de1536",
+      "release_tag": "v0.1.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://github.com/imoonkey/closepaw/tree/75dae2653f5a6b25d5df51ee7008b0f830de1536",
+        "sha256": "dfa7fd89fdf6d9aacef0c4dbad370cb1118b00ee6ee07747c402e34513e989c3",
+        "retrieved_at": "2026-10-18T16:01:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/app/src/main/kotlin/ai/closepaw/perception/PerceptionConfig.kt",
+        "sha256": "26459b14b5b300f356844e84872ed9a82766c20e564deda6d3efbfc8aad70ca0",
+        "retrieved_at": "2026-10-18T16:01:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/app/src/main/kotlin/ai/closepaw/tool/action/ClickExecutor.kt",
+        "sha256": "d924fa0ddde2861ca8c5e46d1d426e14c67af5f1c0c0183f3054c2849045b67e",
+        "retrieved_at": "2026-10-18T16:01:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/app/src/main/kotlin/ai/closepaw/platform/NodeActionPerformer.kt",
+        "sha256": "95af03f4bdf3f19995a72426e4f4efb1de148b053118984d3c867fe8a57aa924",
+        "retrieved_at": "2026-10-18T16:01:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/app/src/main/kotlin/ai/closepaw/platform/AccessibilityGestureInjector.kt",
+        "sha256": "12bdfa64d0cf3760e81ba1a2a1d760d7e2d413931233b1bb44b223deb9fb959c",
+        "retrieved_at": "2026-10-18T16:01:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/app/src/main/assets/security/app_tiers.json",
+        "sha256": "b6cbb1be45965c2974cf0e62552a19328aab13ade48a7e3423d186d1e311397c",
+        "retrieved_at": "2026-10-18T16:01:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/eval/README.md",
+        "sha256": "cc68103c4aaeb05920fec8535e630af659e65351c0f1adeda5a609ae6be13179",
+        "retrieved_at": "2026-10-18T16:01:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/imoonkey/closepaw/75dae2653f5a6b25d5df51ee7008b0f830de1536/LICENSE",
+        "sha256": "34caf3ddbf7945ee22c3fde1d5783762110f54cb42edf2cca0b8b8cf2a4dd746",
+        "retrieved_at": "2026-10-18T16:01:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.availability",
+          "details.release_tag"
+        ],
+        "url": "https://github.com/imoonkey/closepaw/releases/expanded_assets/v0.1.0",
+        "sha256": "cc5356ed6ff45de157a7441af39a2439e37bbe55478e4140b97444e2e39ad381",
+        "retrieved_at": "2026-10-18T16:01:42Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "41a533cff3abaee6addc153398a8db33ebe6e6e2b7fec9092243c9730df53e55",
+    "reviewed_at": "2026-10-18T16:02:15Z"
   }
 ]

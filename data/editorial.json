@@ -6033,10 +6033,15 @@
     ],
     "reviewed_licenses": {
       "data": {
-        "value": null,
-        "reason": "The retained first-party API has Apache-2.0 card metadata but its publisher description explicitly assigns Apache to source code and CC-BY-NC-SA-4.0 to the dataset. A single permissive dataset declaration is unresolved.",
+        "value": {
+          "declared": "CC-BY-NC-SA-4.0",
+          "url": "https://huggingface.co/datasets/xwk123/Mobile3M/raw/3df26694ff9186604eb44a8e633894d3ece67ed9/README.md",
+          "retrieved_at": "2026-10-17T14:10:01Z",
+          "basis": "Dataset-card prose declaration for the dataset; the card assigns Apache-2.0 to source code."
+        },
+        "reason": "The card's prose states twice that the dataset is licensed under CC BY-NC-SA 4.0 and the source code under Apache 2.0; the official MobileVLM README says the same. The card's YAML header (license: apache-2.0) names only the license the prose assigns to code, so it is not taken as the data license.",
         "evidence_urls": [
-          "https://huggingface.co/api/datasets/xwk123/Mobile3M"
+          "https://huggingface.co/datasets/xwk123/Mobile3M/raw/3df26694ff9186604eb44a8e633894d3ece67ed9/README.md"
         ]
       }
     },
@@ -6064,12 +6069,31 @@
         "splits": [
           "partial training release"
         ],
-        "counts": [],
-        "notes": "Official README calls this a partial training release and says app data will be uploaded gradually. Its training-JSON and test-data links point to separate Hub repositories; those artifacts are not counted as files or splits of xwk123/Mobile3M. Public revision 3df26694 lists app-graph archives; their names do not establish a three-million-example downloadable inventory. Precise inner record/modalities schema is not inspected. The card YAML says Apache-2.0 while its prose and official README assign CC-BY-NC-SA-4.0 to data and Apache to code; the existing data-license value remains unknown with the conflict documented.",
+        "counts": [
+          {
+            "value": 3000000,
+            "unit": "UI pages",
+            "qualifier": "approximately",
+            "population": "complete Mobile3M corpus described in the MobileVLM abstract; the Hub release is partial",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/abs/2409.14818v2"
+          },
+          {
+            "value": 11,
+            "unit": "apps with released graph archives",
+            "qualifier": "exact",
+            "population": "Hub file listing at revision 3df26694",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xwk123/Mobile3M/tree/3df26694ff9186604eb44a8e633894d3ece67ed9"
+          }
+        ],
+        "notes": "Official README calls this a partial training release and says app data will be uploaded gradually. Its training-JSON and test-data links point to separate Hub repositories; those artifacts are not counted as files or splits of xwk123/Mobile3M. The abstract's 3 million UI pages describe the whole corpus; revision 3df26694 holds graph archive files for 11 apps, mostly 7z and some split into numbered parts, and their inner records were not counted. Precise inner record/modalities schema is not inspected. The card's YAML header says Apache-2.0 while its prose and the official README assign CC-BY-NC-SA-4.0 to data and Apache-2.0 to code; the data license follows the scoped prose declaration.",
         "evidence_urls": [
           "https://huggingface.co/datasets/xwk123/Mobile3M/raw/3df26694ff9186604eb44a8e633894d3ece67ed9/README.md",
           "https://huggingface.co/api/datasets/xwk123/Mobile3M",
-          "https://raw.githubusercontent.com/XiaoMi/mobilevlm/HEAD/README.md"
+          "https://raw.githubusercontent.com/XiaoMi/mobilevlm/HEAD/README.md",
+          "https://huggingface.co/api/datasets/xwk123/Mobile3M/tree/3df26694ff9186604eb44a8e633894d3ece67ed9",
+          "https://arxiv.org/abs/2409.14818v2"
         ]
       }
     },
@@ -6082,7 +6106,8 @@
         "method": "editorial_primary_review",
         "supports": [
           "details.dataset_profile",
-          "relations"
+          "relations",
+          "licenses.data"
         ]
       },
       {
@@ -6094,6 +6119,26 @@
         "supports": [
           "details.dataset_profile"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/xwk123/Mobile3M/tree/3df26694ff9186604eb44a8e633894d3ece67ed9",
+        "sha256": "9bc0b72ec2390efe3298617a41061d07793f4dea3e39418c396a095cb49cd274",
+        "retrieved_at": "2026-10-18T15:40:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/abs/2409.14818v2",
+        "sha256": "9ea830f6ca183b5e7ecb20f45a1bbf83426b36427cd53b6137367d156297c8fc",
+        "retrieved_at": "2026-10-18T15:40:48Z"
       }
     ]
   },

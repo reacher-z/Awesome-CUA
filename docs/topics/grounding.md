@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (12)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -148,6 +148,7 @@
 | [Midscene.js](https://github.com/web-infra-dev/midscene) | cross-platform | — | code MIT | Visual automation toolkit for web, mobile, and desktop interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-infra-dev/midscene/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
 | [Seg2Click](https://github.com/jcwang0602/Seg2Click) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | code MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/jcwang0602/Seg2Click/HEAD/README.md) |
+| [Smol2Operator](https://github.com/huggingface/smol2operator) | web, desktop, android | — | — | Hugging Face recipe that converts Aguvis GUI data into one normalized action space and fine-tunes SmolVLM2-2.2B in two phases, first for screenshot grounding and then for agentic GUI action code. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/huggingface/smol2operator/HEAD/README.md) |
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |
 | [WebVLN research implementation](https://github.com/WebVLN/WebVLN) | web | [2312.15820](https://arxiv.org/abs/2312.15820) (2023) | — | Training and evaluation code for question-guided website navigation that combines visual observations with web-specific HTML information. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WebVLN/WebVLN/HEAD/README.md) |

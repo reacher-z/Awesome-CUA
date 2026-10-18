@@ -63143,5 +63143,88 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Smol2Operator",
+    "kind": "framework",
+    "url": "https://github.com/huggingface/smol2operator",
+    "environments": [
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning",
+      "data-generation",
+      "action-prediction"
+    ],
+    "summary": "Hugging Face recipe that converts Aguvis GUI data into one normalized action space and fine-tunes SmolVLM2-2.2B in two phases, first for screenshot grounding and then for agentic GUI action code.",
+    "scope": "core",
+    "verify_terms": [
+      "Smol2Operator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huggingface/smol2operator/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:06dd5ac7917c45d48509",
+        "evidence_url": "https://raw.githubusercontent.com/huggingface/smol2operator/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "url:b5e2127e07f692d516b9",
+        "evidence_url": "https://raw.githubusercontent.com/huggingface/smol2operator/HEAD/README.md"
+      }
+    ],
+    "notes": "The README is the project write-up. The inspected tree contains recipe.ipynb, action-conversion and Aguvis preprocessing code, a function parser, an action-space converter, a collator and evaluation prompts. The README names derived datasets (smolagents/aguvis-stage-1 and smolagents/aguvis-stage-2), the SmolVLM2-2.2B-Instruct-Agentic-GUI checkpoint and a demo Space; those Hub assets are not separate records here, and their licenses were not reviewed. The uses relations record that the recipe transforms the xlangai Aguvis stage 1 and stage 2 releases. ScreenSpot-v2 results are publisher-reported. The repository has no license file, so code permissions are unknown.",
+    "details": {
+      "availability": "Published source and training notebook",
+      "repository_url": "https://github.com/huggingface/smol2operator",
+      "repository_tree_sha": "b38695ccf2988b2947b2e0ce5ca1eb0d4a5758ec"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/huggingface/smol2operator",
+        "sha256": "f9e05da9ff37a969dcf83993af2141e8ef0738ad0c89340660f20f806907a149",
+        "retrieved_at": "2026-10-18T11:11:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/huggingface/smol2operator/git/trees/main?recursive=1",
+        "sha256": "537f734934d9dbc7eea363326a81558c0fda99d8b292d70219b124b2e5fb8ac9",
+        "retrieved_at": "2026-10-18T11:11:36Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d0190080edc5e44afad1a655c2e575c6071afdbab181a75c546e7210d17c4f44",
+    "reviewed_at": "2026-10-18T11:12:16Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -98,6 +98,7 @@ All entries in this section: android.
 | [Proposer-Agent-Evaluator (PAE)](https://github.com/amazon-science/PAE) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | — | A browser-agent training system that proposes tasks, collects visual interaction trajectories, and uses automated evaluation to drive policy improvement. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/amazon-science/PAE/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
 | [SkillWeaver](https://github.com/OSU-NLP-Group/SkillWeaver) | web | [2504.07079](https://arxiv.org/abs/2504.07079) (2025) | code MIT | A web-agent framework that explores sites, synthesizes reusable interaction APIs and builds a skill library for later tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/SkillWeaver/HEAD/README.md) |
+| [Smol2Operator](https://github.com/huggingface/smol2operator) | web, desktop, android | — | — | Hugging Face recipe that converts Aguvis GUI data into one normalized action space and fine-tunes SmolVLM2-2.2B in two phases, first for screenshot grounding and then for agentic GUI action code. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/huggingface/smol2operator/HEAD/README.md) |
 | [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |
 | [TreeCUA](https://github.com/UITron-hub/TreeCUA) | desktop | [2602.09662](https://arxiv.org/abs/2602.09662) (2026) | code Apache-2.0 | Framework for generating GUI trajectories through tree-structured exploration and verification. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/UITron-hub/TreeCUA/HEAD/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (38)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -160,6 +160,7 @@
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
 | [SkillWeaver](https://github.com/OSU-NLP-Group/SkillWeaver) | web | [2504.07079](https://arxiv.org/abs/2504.07079) (2025) | code MIT | A web-agent framework that explores sites, synthesizes reusable interaction APIs and builds a skill library for later tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/SkillWeaver/HEAD/README.md) |
 | [Skyvern](https://github.com/Skyvern-AI/skyvern) | web | — | — | Browser workflow automation that relies on vision LLMs and a swarm of agents instead of fixed XPath selectors, offered as a Playwright-compatible SDK and a no-code workflow builder. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Skyvern-AI/skyvern/HEAD/README.md) |
+| [Smol2Operator](https://github.com/huggingface/smol2operator) | web, desktop, android | — | — | Hugging Face recipe that converts Aguvis GUI data into one normalized action space and fine-tunes SmolVLM2-2.2B in two phases, first for screenshot grounding and then for agentic GUI action code. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/huggingface/smol2operator/HEAD/README.md) |
 | [Stagehand](https://github.com/browserbase/stagehand) | web | — | code MIT | Browser automation framework combining code and natural-language actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browserbase/stagehand/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |

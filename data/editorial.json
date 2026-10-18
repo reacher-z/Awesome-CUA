@@ -63143,5 +63143,78 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:98e5813bceb30104d6c4",
+    "name": "Holo1.5 7B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo1.5-7B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "H Company's Qwen2.5-VL-7B-based Holo1.5 checkpoint for locating interface elements and answering questions about screens across web, desktop and mobile, trained with supervised fine-tuning then GRPO.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo1.5"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo1.5-7B/raw/a1019821ea078820dc284e90214a397faceab2bf/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "notes": "Hub API at revision a1019821 lists four BF16 safetensors shards (about 8.29B parameters) in the Qwen2_5_VLForConditionalGeneration architecture; the repository is not gated. The card names Qwen/Qwen2.5-VL-7B-Instruct as the base and describes proprietary training data mixed from open-source, synthetic and human-annotated samples, so no training dataset is linked. It declares Apache-2.0 for this 7B size only: the same card says the 3B size inherits Qwen's license and the 72B size is research-only. Localization and screen-QA scores in the card are publisher-reported and are not recorded. Mobile is named without an operating system.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "Hcompany/Holo1.5-7B",
+      "hub_revision": "a1019821ea078820dc284e90214a397faceab2bf",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo1.5-7B/tree/a1019821ea078820dc284e90214a397faceab2bf",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ]
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo1.5-7B/revision/a1019821ea078820dc284e90214a397faceab2bf",
+        "sha256": "fae52db874701c3cb5f4894d8eb5db5859414f2d6709f9ec4add35f182a975db",
+        "retrieved_at": "2026-10-18T16:06:05Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2490cdabf0cf570660b75888f164d8041b46e1878ddaeb92cd9864b40bda7922",
+    "reviewed_at": "2026-10-18T16:06:25Z"
   }
 ]

@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:cursortouch/windows-use",
+    "target_id": "github:jeomon/windows-use",
+    "repository_id": 1177532603,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T10:58:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/CursorTouch/Windows-Use",
+        "resolved_url": "https://api.github.com/repositories/1177532603",
+        "repository_id": 1177532603,
+        "full_name": "Jeomon/Windows-Use",
+        "html_url": "https://github.com/Jeomon/Windows-Use",
+        "retrieved_at": "2026-10-18T10:55:30Z",
+        "sha256": "4b307d4b41b2c8051082e30df56b6a2e4b4cb2bb877dccead1fa7ae9659a5498"
+      },
+      {
+        "url": "https://api.github.com/repos/Jeomon/Windows-Use",
+        "resolved_url": "https://api.github.com/repos/Jeomon/Windows-Use",
+        "repository_id": 1177532603,
+        "full_name": "Jeomon/Windows-Use",
+        "html_url": "https://github.com/Jeomon/Windows-Use",
+        "retrieved_at": "2026-10-18T10:56:15Z",
+        "sha256": "4b307d4b41b2c8051082e30df56b6a2e4b4cb2bb877dccead1fa7ae9659a5498"
+      }
+    ]
   }
 ]

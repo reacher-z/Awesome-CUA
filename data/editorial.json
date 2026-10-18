@@ -63143,5 +63143,80 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Windows-Use",
+    "kind": "agent",
+    "url": "https://github.com/Jeomon/Windows-Use",
+    "environments": [
+      "windows",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "A Python agent that drives Windows applications through the UI Automation tree, optionally with screenshots, choosing clicks, typing, scrolling, shortcuts, window actions and PowerShell commands with an LLM.",
+    "scope": "core",
+    "verify_terms": [
+      "Windows-Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jeomon/Windows-Use/HEAD/README.md"
+    ],
+    "notes": "github.com/CursorTouch/Windows-Use now redirects to Jeomon/Windows-Use; the GitHub API resolves both names to repository 1177532603, created 2026-03-10, and the former name is recorded as a repository alias. The inspected tree contains the windows_use package (agent loop, UI Automation bindings, tools, model providers, CLI) and unit tests. The README documents pip installation, warns that the agent has no sandbox or isolation layer and states that anonymized telemetry is on unless disabled. Model providers need separate credentials; task success was not independently tested. MIT applies to the repository code only.",
+    "details": {
+      "availability": "Published source; README documents a pip package",
+      "repository_url": "https://github.com/Jeomon/Windows-Use",
+      "repository_tree_sha": "582a5669e9251372beb63baf39dac453693ff0d8"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/Jeomon/Windows-Use",
+        "sha256": "4b307d4b41b2c8051082e30df56b6a2e4b4cb2bb877dccead1fa7ae9659a5498",
+        "retrieved_at": "2026-10-18T10:56:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/Jeomon/Windows-Use/git/trees/main?recursive=1",
+        "sha256": "d8dcf7563d01d137cc35b64004e6b5998c49d74ba7ec7728052031d9149a32d6",
+        "retrieved_at": "2026-10-18T10:56:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Jeomon/Windows-Use/HEAD/LICENSE",
+        "sha256": "2431a101a7e272edda61f91306f5cf48dc06beb4645a644cee4e3608642a469c",
+        "retrieved_at": "2026-10-18T10:56:22Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a3af434401cc7165ad5270bf3b71ad47b0b204aa77275274b07c49f6d693eadc",
+    "reviewed_at": "2026-10-18T10:57:16Z"
   }
 ]

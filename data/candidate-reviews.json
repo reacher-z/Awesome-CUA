@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:opengvlab/opencua",
+    "url": "https://github.com/OpenGVLab/OpenCUA",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the ScaleCUA README labels it \"Model Demo\", but the repository page and the GitHub API both return 404 with no rename redirect, no OpenGVLab repository other than ScaleCUA has a similar name, and the Wayback Machine has no capture (CDX query empty)."
   }
 ]

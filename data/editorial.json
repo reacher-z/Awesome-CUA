@@ -63143,5 +63143,158 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-Net-Mini",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Bofeee5675/GUI-Net-Mini",
+    "aliases": [
+      "TongUI-143K"
+    ],
+    "environments": [
+      "android",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "data-generation",
+      "grounding",
+      "imitation-learning"
+    ],
+    "summary": "TongUI training mixture: about 143K samples from WikiHow, Baidu Experience and GUI videos plus reprocessed AITW, AMEX, GUIAct, Mind2Web, MiniWoB and ShowUI data, as grounding and navigation JSON with screenshots.",
+    "scope": "core",
+    "verify_terms": [
+      "TongUI-143K"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/Bofeee5675/GUI-Net-Mini/raw/7c1ed0cd8fea76d5eba868114d2d6374d4370a12/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2504.12679"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The card is titled TongUI-143K. The TongUI training docs list this repository beside GUI-Net-1M as 143k TongUI-collected samples plus about 240k from previous work, used for scaling experiments, and their default 3B configuration, which they say reproduces the paper's results, names 13 datasets whose dataset_info.json files are exactly this repository's 13 annotation files. A streaming script over those files counts 143,856 records in the three TongUI-collected files (WikiHow, Baidu Experience, GUI video) and 379,517 in the ten files reprocessed from AITW, AMEX, GUIAct, Mind2Web, MiniWoB and ShowUI; the card's 237K 'Other' figure matches the 237,564 records in eight of those ten, leaving out the AMEX element and ShowUI web grounding files (141,953 records). Records are LLaMA-Factory conversations: coordinate-prediction grounding turns, or navigation steps with a thought and a JSON action in a smartphone, computer or website action space depending on the file. Screenshots come as 24 split ZIP parts (about 254 GB in the manifest) that were not downloaded. Apache-2.0 is the card's declaration; the reprocessed datasets and the tutorial and video content keep their own terms.",
+    "details": {
+      "hub_id": "Bofeee5675/GUI-Net-Mini",
+      "hub_revision": "7c1ed0cd8fea76d5eba868114d2d6374d4370a12",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/Bofeee5675/GUI-Net-Mini/tree/7c1ed0cd8fea76d5eba868114d2d6374d4370a12",
+      "dataset_profile": {
+        "supervision": [
+          "GUI grounding coordinates",
+          "GUI navigation steps with thoughts and actions"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "reasoning traces",
+          "actions"
+        ],
+        "formats": [
+          "LLaMA-Factory JSON conversations",
+          "multipart ZIP image archive"
+        ],
+        "splits": [
+          "training collection"
+        ],
+        "counts": [
+          {
+            "value": 143000,
+            "unit": "training samples",
+            "qualifier": "approximately",
+            "population": "TongUI-collected part, card table",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Bofeee5675/GUI-Net-Mini/raw/7c1ed0cd8fea76d5eba868114d2d6374d4370a12/README.md"
+          },
+          {
+            "value": 237000,
+            "unit": "training samples",
+            "qualifier": "approximately",
+            "population": "data from other sources, card table",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Bofeee5675/GUI-Net-Mini/raw/7c1ed0cd8fea76d5eba868114d2d6374d4370a12/README.md"
+          },
+          {
+            "value": 13,
+            "unit": "JSON annotation files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 7c1ed0cd",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/Bofeee5675/GUI-Net-Mini/revision/7c1ed0cd8fea76d5eba868114d2d6374d4370a12"
+          },
+          {
+            "value": 24,
+            "unit": "split ZIP image archive parts",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 7c1ed0cd",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/Bofeee5675/GUI-Net-Mini/revision/7c1ed0cd8fea76d5eba868114d2d6374d4370a12"
+          }
+        ],
+        "notes": "The card states numbers without a unit; the training docs call them training data. Record counts computed by streaming the 13 annotation files are in the record notes; the card's two figures and the file counts are different populations and units and are not summed. No validation or test split is published.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Bofeee5675/GUI-Net-Mini/raw/7c1ed0cd8fea76d5eba868114d2d6374d4370a12/README.md",
+          "https://huggingface.co/api/datasets/Bofeee5675/GUI-Net-Mini/revision/7c1ed0cd8fea76d5eba868114d2d6374d4370a12",
+          "https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/82631b583180cdc870b4774d2495dd94f1558c46/docs/train.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/Bofeee5675/GUI-Net-Mini/revision/7c1ed0cd8fea76d5eba868114d2d6374d4370a12",
+        "sha256": "c9a580a8e25cc011273aa2f7ea10a6045f10787897c51eed50dd172ea1c3cad7",
+        "retrieved_at": "2026-10-18T15:46:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/82631b583180cdc870b4774d2495dd94f1558c46/docs/train.md",
+        "sha256": "b51acb70c95d079ccbe1de0a685ad7c8a4b3b5bed11e6162e6f7c2f60d78805e",
+        "retrieved_at": "2026-10-18T15:46:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/82631b583180cdc870b4774d2495dd94f1558c46/data/dataset_info.json",
+        "sha256": "1287032d17f24bf89313569bd210811675a78d0b2fce73824502d23b16f06ad4",
+        "retrieved_at": "2026-10-18T15:46:29Z"
+      }
+    ],
+    "reviewed_sha256": "5559391b26a6541363ea50de16b1c91b3958c18b2668020ccd5daff3b33e5626",
+    "reviewed_at": "2026-10-18T15:46:44Z"
   }
 ]

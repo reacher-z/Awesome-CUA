@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.00642",
+    "summary": "GUI-SD applies on-policy self-distillation to GUI grounding: the teacher sees the screenshot with a target box and Gaussian soft mask, and token weights favor significant coordinate digits and confident teacher outputs.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Learn where to Click from Yourself"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.00642v3"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version official arXiv abstract page; its title, ordered author list, visible version and normalized abstract SHA match the retained v3 snapshot. Experimental results have not been independently reproduced.",
+    "reviewed_sha256": "2258be810ca4938f1f053e8e05a918a2cbf8d69bcf794eb6b2e9d797362919d0",
+    "reviewed_at": "2026-10-18T15:37:21Z"
+  },
+  {
+    "name": "GUI-SD",
+    "kind": "framework",
+    "url": "https://github.com/zhangyan-ucas/GUI-SD-code",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning"
+    ],
+    "scope": "core",
+    "summary": "Training and evaluation code for GUI-SD, built on ms-swift, which distills a Qwen3-VL grounding model from its own predictions given a hinted view of the screenshot, weighting coordinate digits in the loss.",
+    "verify_terms": [
+      "GUI-SD"
+    ],
+    "documented_by": [
+      "2605.00642"
+    ],
+    "notes": "The repository is a copy of ms-swift, with its Apache-2.0 LICENSE at the root, plus an on-policy self-distillation trainer, grounding rewards and GUI-SD train and test scripts. train.sh starts a vLLM rollout server and uses Qwen3-VL-8B-Instruct as both student and teacher. The teacher's screenshot gets a visual hint (a zoom-in crop by default, or a Gaussian mask or a drawn green box), and the loss can weight digits by position and teacher confidence. Training data are on Hugging Face as yankie123/GUI-SD-data; the JSONL files for the six evaluation benchmarks are not in the repository, and no checkpoints are linked. The README also announces the GUI-SD v2 paper, arXiv 2609.27307; this record links only the paper it names as the repository's own.",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "repository_revision": "76c0031daadd59de639f411fe8feeef69b7a44eb",
+      "availability": "Public training and evaluation code; training data are a separate Hugging Face dataset, and no checkpoints are linked."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/zhangyan-ucas/GUI-SD-code/git/trees/76c0031daadd59de639f411fe8feeef69b7a44eb?recursive=1",
+        "sha256": "c396add7ccc3b5adba9462b6c412f664324b6e671419eba814942471ac53506c",
+        "retrieved_at": "2026-10-18T15:36:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/zhangyan-ucas/GUI-SD-code/76c0031daadd59de639f411fe8feeef69b7a44eb/swift/rlhf_trainers/opsd_trainer.py",
+        "sha256": "f4ba059ae51814b5b4e165bc7c60b5e5e5fd6d39c00c603d86577466f40fc43c",
+        "retrieved_at": "2026-10-18T15:36:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/zhangyan-ucas/GUI-SD-code/76c0031daadd59de639f411fe8feeef69b7a44eb/GUI-SD_scripts/train.sh",
+        "sha256": "af2ed8d3ee5ca9f36b1d2aaf9110ee2ba43c86070deed01ad62950c97a109d87",
+        "retrieved_at": "2026-10-18T15:36:54Z"
+      }
+    ],
+    "reviewed_sha256": "3f84842607d69200e8604ff7ad8e3992e58e608ae2b7d943faf96f95fcda44ff",
+    "reviewed_at": "2026-10-18T15:37:21Z"
   }
 ]

@@ -63143,5 +63143,65 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:nat/natbot",
+    "name": "natbot",
+    "kind": "agent",
+    "url": "https://github.com/nat/natbot",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "summary": "Single-file Python script from 2022 in which GPT-3 proposes scroll, click and type commands from a simplified DOM text view of a Playwright Chromium page; the user approves or overrides each command.",
+    "scope": "core",
+    "verify_terms": [
+      "natbot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nat/natbot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "scope"
+    ],
+    "notes": "The repository holds only natbot.py, a short README (a one-line tagline, a demo link and a list of improvement ideas) and an MIT LICENSE (copyright 2022 Nat Friedman). The script starts on Google, builds the page view from a Chrome DevTools DOMSnapshot, and calls the legacy openai.Completion interface with the hard-coded text-davinci-002 model. It was not run, and no evaluation results are published.",
+    "details": {
+      "availability": "Published source; no packaged release",
+      "repository_url": "https://github.com/nat/natbot"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/nat/natbot/HEAD/natbot.py",
+        "sha256": "f188dbd0dec307ae914e4e139e6f4cf7bf21aaf33526a2a857cc215638d60820",
+        "retrieved_at": "2026-10-18T11:45:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/nat/natbot/HEAD/LICENSE",
+        "sha256": "c1bfa7b7b3d378aba35fdd8a2d1fb8cab3bf3bfcd5e3080e8a6e4cf004c47cfd",
+        "retrieved_at": "2026-10-18T11:45:15Z"
+      }
+    ],
+    "reviewed_sha256": "524f0c736146c9ef391da6e135f8491ab9f5508bb362cdac060853c75f05ce38",
+    "reviewed_at": "2026-10-18T11:45:34Z"
   }
 ]

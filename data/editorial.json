@@ -3754,12 +3754,56 @@
           "screen images"
         ],
         "splits": [],
-        "counts": [],
-        "notes": "The raw collection mixes action, language, exploration, and unusable/other traces. These groups have different annotation coverage; not every raw trace is a valid task demonstration.",
+        "counts": [
+          {
+            "value": 4700,
+            "unit": "demonstrations",
+            "qualifier": "approximately",
+            "population": "MoTIF demonstrations as reported in the paper (v3), 10% reserved for testing",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2202.02312v3"
+          },
+          {
+            "value": 6100,
+            "unit": "natural-language tasks",
+            "qualifier": "more-than",
+            "population": "collected task commands, as reported in the paper (v3)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2202.02312v3"
+          },
+          {
+            "value": 125,
+            "unit": "Android apps",
+            "qualifier": "exact",
+            "population": "apps selected for MoTIF across 15 categories, as reported in the paper (v3)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2202.02312v3"
+          },
+          {
+            "value": 2723,
+            "unit": "trace IDs",
+            "qualifier": "exact",
+            "population": "train list of task_automation/seq2act/motif_data_generation/eccv_motif_app_seen_task_unseen_all.json at commit 89d755a",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/aburns4/MoTIF/89d755a0e50d8be0ba0a502fae0505b28e43d528/task_automation/seq2act/motif_data_generation/eccv_motif_app_seen_task_unseen_all.json"
+          },
+          {
+            "value": 333,
+            "unit": "trace IDs",
+            "qualifier": "exact",
+            "population": "test list of the same split file",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/aburns4/MoTIF/89d755a0e50d8be0ba0a502fae0505b28e43d528/task_automation/seq2act/motif_data_generation/eccv_motif_app_seen_task_unseen_all.json"
+          }
+        ],
+        "notes": "The raw collection mixes action, language, exploration, and unusable/other traces. These groups have different annotation coverage; not every raw trace is a valid task demonstration. Trace IDs were counted in one of the four ECCV task-automation split files; its train and test lists do not overlap.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/aburns4/MoTIF/HEAD/README.md"
+          "https://raw.githubusercontent.com/aburns4/MoTIF/HEAD/README.md",
+          "https://arxiv.org/html/2202.02312v3",
+          "https://raw.githubusercontent.com/aburns4/MoTIF/89d755a0e50d8be0ba0a502fae0505b28e43d528/task_automation/seq2act/motif_data_generation/eccv_motif_app_seen_task_unseen_all.json"
         ]
-      }
+      },
+      "repository_revision": "89d755a0e50d8be0ba0a502fae0505b28e43d528"
     },
     "primary_supports": [
       "name",
@@ -3773,6 +3817,29 @@
     ],
     "documented_by": [
       "2202.02312"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2202.02312v3",
+        "sha256": "5d4123515dcc11b780815621238ffc39aa7b92c3bf85d0628599bcc7b1aa53e0",
+        "retrieved_at": "2026-10-18T15:48:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/aburns4/MoTIF/89d755a0e50d8be0ba0a502fae0505b28e43d528/task_automation/seq2act/motif_data_generation/eccv_motif_app_seen_task_unseen_all.json",
+        "sha256": "05d600c7ebe357ae28a8c0b3f20b4e28c66c8804e0c556b1fae1280047efb59a",
+        "retrieved_at": "2026-10-18T15:48:51Z"
+      }
     ]
   },
   {

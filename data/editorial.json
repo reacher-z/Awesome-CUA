@@ -63143,5 +63143,100 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "fastbrowse",
+    "kind": "agent",
+    "url": "https://github.com/agent-labs-dev/fastbrowse",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "safety-security"
+    ],
+    "scope": "core",
+    "summary": "Browser agent in which TypeSafe's Jev picks each action from controls indexed on the page over CDP, an LLM plans and reads, and code gates inputs, secrets and irreversible steps; answers cite page quotes.",
+    "verify_terms": [
+      "fastbrowse"
+    ],
+    "notes": "Python package fastbrowse 0.5.23 by Agent Labs (Python 3.13+), with a CLI, an MCP server (fastbrowse-mcp) and a JavaScript SDK. The browser layer speaks CDP through cdp-use; snapshot.js, ported from jev-ultrafast, indexes each frame's controls, viewport text and a freshness fingerprint, including open shadow roots. Per the design document, Jev chooses the operation and target among indexed controls (with relevance pruning on dense pages), an LLM proposes start addresses, plans checkable requirements, reads page text, writes non-secret field text and composes the answer, and code enforces freshness and hit-tests before input, no automatic retry of mutations, authorization for submit, pay, delete or send, secret redaction and budgets; a run counts as complete only when every requirement is evidenced. Browsers are Browser Use Cloud by default, local Chrome, or an existing CDP endpoint including Electron windows. Jev is reached through TypeSafe, OpenRouter or the Vercel AI Gateway. Benchmark comparisons in the README are the publisher's. Root LICENSE is MIT, with a NOTICE file. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "availability": "Public Python source published on PyPI and the AUR; runs need an OpenRouter or Vercel AI Gateway key (or a TypeSafe key) and a Browser Use Cloud key unless local Chrome or a CDP endpoint is used.",
+      "repository_revision": "d35f75f43e4e2ed42edb4edec72843435af73a0b",
+      "package_version": "0.5.23"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/d35f75f43e4e2ed42edb4edec72843435af73a0b/docs/design.md",
+        "sha256": "c567f1b6383438c4e237d2810938a1a51379fd2209e2490d1f563dc83f07d260",
+        "retrieved_at": "2026-10-18T15:54:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/d35f75f43e4e2ed42edb4edec72843435af73a0b/src/fastbrowse/browser/snapshot.js",
+        "sha256": "51064fe8dc008253ed7b3da4347c682f960e47773446c4529f0bbd7260172112",
+        "retrieved_at": "2026-10-18T15:54:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/d35f75f43e4e2ed42edb4edec72843435af73a0b/src/fastbrowse/browser/session.py",
+        "sha256": "473d342ad4c934085f80bd0c321a8d0389c0238d8c745d426153b69f1f5744ef",
+        "retrieved_at": "2026-10-18T15:54:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.package_version",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/d35f75f43e4e2ed42edb4edec72843435af73a0b/pyproject.toml",
+        "sha256": "cb459a7e2d93520feab457cec9604f0c4e045a06c59c6001c13fdb568a940f93",
+        "retrieved_at": "2026-10-18T15:54:24Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:ef244017b1460269fc68",
+        "evidence_url": "https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/HEAD/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b6bb5c906892f8908080daaa288fb288d720cfa5fc9c59c67d0e556328233a40",
+    "reviewed_at": "2026-10-18T15:54:54Z"
   }
 ]

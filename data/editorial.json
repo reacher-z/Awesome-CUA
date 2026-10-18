@@ -63143,5 +63143,99 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:7afa17db925828d9a035",
+    "name": "OS-Genesis 7B AW",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Genesis-7B-AW",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "The AndroidWorld-oriented Qwen2-VL checkpoint trained on mobile trajectories generated through OS-Genesis reverse task synthesis, predicting the next thought and action from an instruction, history and screen.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis-7B-AW"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Genesis-7B-AW/raw/069001de84358b6a83a3f34638e37df485f49bd0/README.md"
+    ],
+    "documented_by": [
+      "2412.19723"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:d3ec5122a2b52fd5ae4b",
+        "evidence_url": "https://huggingface.co/OS-Copilot/OS-Genesis-7B-AW/raw/069001de84358b6a83a3f34638e37df485f49bd0/README.md"
+      }
+    ],
+    "notes": "Hub API at revision 069001de lists four BF16 safetensors shards (about 8.29B parameters) in the Qwen2VLForConditionalGeneration architecture; the repository is not gated. The card declares Apache-2.0 and Qwen/Qwen2-VL-7B-Instruct as the base, and names the AW training file of the OS-Genesis mobile data as its training data. The OS-Genesis README lists this checkpoint under AndroidWorld, and the card points to its AndroidWorld evaluation code, but the card's family-table caption says AndroidControl. The card's example loads its processor from OS-Atlas-Base-7B. AndroidControl and WebArena variants are separate releases, and no result is transferred to this checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "OS-Copilot/OS-Genesis-7B-AW",
+      "hub_revision": "069001de84358b6a83a3f34638e37df485f49bd0",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Genesis-7B-AW/tree/069001de84358b6a83a3f34638e37df485f49bd0",
+      "architecture": "Qwen2VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "base_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "repository_url": "https://github.com/OS-Copilot/OS-Genesis"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-7B-AW/revision/069001de84358b6a83a3f34638e37df485f49bd0",
+        "sha256": "f118fbcc0b4622cb7eaf9134f5bb578e74ced0d07be442e8b73307296ed7dc64",
+        "retrieved_at": "2026-10-18T15:56:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md",
+        "sha256": "430e495ab250395d666854bd18b0fc29b819cd784cd7730215ef65e461834d0d",
+        "retrieved_at": "2026-10-18T15:56:45Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d21cdbfe878c8e990e8baffca226b9c433ec69839273f8d22bc5c7692337e770",
+    "reviewed_at": "2026-10-18T15:57:05Z"
   }
 ]

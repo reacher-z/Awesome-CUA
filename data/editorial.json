@@ -63143,5 +63143,74 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenClaw",
+    "kind": "agent",
+    "url": "https://github.com/openclaw/openclaw",
+    "environments": [
+      "web",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Self-hosted personal assistant reached through chat apps, whose agent can drive a dedicated Chromium-based browser profile and, through a computer tool, take screenshots and act on macOS, Windows and Linux desktops.",
+    "scope": "adjacent",
+    "aliases": [
+      "Clawdbot",
+      "Moltbot"
+    ],
+    "verify_terms": [
+      "OpenClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openclaw/openclaw/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openclaw/openclaw/1507c89eaa51d713a97b4135d72afb976856a485/docs/nodes/computer-use.md",
+        "sha256": "6b4e0bb85a64681ca1682e2d0fc1237224b3f4a33c5294e89807588f88cbab4a",
+        "retrieved_at": "2026-10-18T11:46:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/openclaw/openclaw/1507c89eaa51d713a97b4135d72afb976856a485/docs/tools/browser.md",
+        "sha256": "b71df046a1de3bf20bd284809f221a94df5d066702b69b3fc0bb4f8dd19c68c6",
+        "retrieved_at": "2026-10-18T11:46:49Z"
+      }
+    ],
+    "notes": "Marked adjacent: the README presents a general assistant reached through Discord, iMessage, Slack, Telegram, WhatsApp and other channels, and GUI control comes from optional tools. The in-repository docs, read at commit 1507c89, describe a computer tool fulfilled on macOS by the app's Peekaboo or CUA provider once Accessibility and Screen Recording are granted, and on Windows and glibc Linux by the bundled cua-computer plugin, which must be enabled explicitly for Gateway control; and a browser tool with click, type, drag, snapshot and screenshot actions in a dedicated browser profile or an attached Chrome session. The computer-use doc names no iOS or Android fulfiller, so mobile environments are not set. The GitHub API resolves clawdbot/clawdbot and moltbot/moltbot to the same repository ID, 1103012935, which is the basis for the aliases. The project changes quickly, so documented capabilities can differ between releases.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d82fbca82ec05d132e0dbbb2c98763fcea56a0f0ce818768b1a9a94776a06411",
+    "reviewed_at": "2026-10-18T11:47:33Z"
   }
 ]

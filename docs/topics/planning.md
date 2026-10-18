@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (16)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -82,6 +82,7 @@
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | web | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [OWL (Optimized Workforce Learning)](https://github.com/camel-ai/owl) | web | — | code Apache-2.0 | Multi-agent task-automation framework on CAMEL in which role-playing agents combine Playwright browser actions with search, code execution, document, multimodal and MCP tools, with GAIA evaluation branches. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/camel-ai/owl/HEAD/README.md) |
 | [Plan-and-Act](https://github.com/SqueezeAILab/plan-and-act) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | code MIT | A web-agent framework that separates high-level planning from action execution, with replanning and synthetic planner-data generation components. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/SqueezeAILab/plan-and-act/HEAD/README.md) |
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |

@@ -63143,5 +63143,95 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:camel-ai/owl",
+    "name": "OWL (Optimized Workforce Learning)",
+    "kind": "framework",
+    "url": "https://github.com/camel-ai/owl",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "Multi-agent task-automation framework on CAMEL in which role-playing agents combine Playwright browser actions with search, code execution, document, multimodal and MCP tools, with GAIA evaluation branches.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Optimized Workforce Learning"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/camel-ai/owl/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8b63fdda8103147b5ce20e29a04dbc8c36d1f9c7d24599209b2b584c5f0d4df1",
+    "reviewed_at": "2026-10-18T10:57:46Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.code"
+    ],
+    "notes": "Adjacent: browser interaction is one toolkit among search, code and document tools in a general assistant evaluated on GAIA. The repository holds example runners, a web UI and GAIA utilities; the browser and other toolkits come from the camel-ai package. The README links the OWL paper (arXiv:2505.23885, not yet in the catalog) and a Hugging Face collection of training data and checkpoints, which are separate resources with their own terms. Reported GAIA scores were not reproduced.",
+    "details": {
+      "repository_url": "https://github.com/camel-ai/owl",
+      "repository_tree_sha": "fd06a8bf34998ad008160238b5521d97619bd4d4"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/camel-ai/owl",
+        "sha256": "2e9786ef6c2dcea1eb6d8c1b90ee8d4e5bb0f44a3c9a3ac4076d4c2f09a27d26",
+        "retrieved_at": "2026-10-18T10:57:17Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/camel-ai/owl/git/trees/main?recursive=1",
+        "sha256": "fc61a393697e17130ea5eaa7c92c95e5098088acc8c129b5c8d74b45499054a9",
+        "retrieved_at": "2026-10-18T10:57:17Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/camel-ai/owl/HEAD/licenses/LICENSE",
+        "sha256": "38a099ad0083c1a5ad5c837fdab03d152a84be0a50462791a0787b124e8dd7a0",
+        "retrieved_at": "2026-10-18T10:57:18Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/camel-ai/owl/HEAD/licenses/LICENSE",
+          "retrieved_at": "2026-10-18T10:57:18Z",
+          "basis": "The README states the source code is licensed under Apache 2.0, and licenses/LICENSE is the CAMEL-AI Apache 2.0 notice applied to source files; it does not cover the separate Hugging Face data or checkpoints."
+        },
+        "reason": "GitHub reports no license because there is no root LICENSE file, but the repository explicitly declares Apache 2.0 for its source code. Data and weights released in the linked Hub collection are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/camel-ai/owl/HEAD/licenses/LICENSE",
+          "https://raw.githubusercontent.com/camel-ai/owl/HEAD/README.md"
+        ]
+      }
+    }
   }
 ]

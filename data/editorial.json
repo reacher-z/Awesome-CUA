@@ -6231,7 +6231,12 @@
       {
         "type": "component_of",
         "target_id": "github:osu-nlp-group/uground",
-        "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/HEAD/README.md"
+        "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/8974f95b0685f139a6257f82d6b13895db3356cf/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2410.05243",
+        "evidence_url": "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/8974f95b0685f139a6257f82d6b13895db3356cf/README.md"
       }
     ],
     "details": {
@@ -6247,11 +6252,45 @@
           "Parquet shards"
         ],
         "splits": [],
-        "counts": [],
-        "notes": "Public API revision 33325877 lists Parquet assets but gated=auto; the pinned raw card returned HTTP 401 and no access was requested. Official README identifies this as V1 training data; the API excerpt also announces a Web-Hybrid bounding-box variant with coordinates normalized to [0,999]. That does not establish every shard schema or a release-wide point/bbox count. No train/test partition, example total, or unrestricted downloadability is claimed. Preserve the recorded CC-BY-NC-SA-4.0 data declaration separately from model/code terms.",
+        "counts": [
+          {
+            "value": 9000000,
+            "unit": "GUI elements",
+            "qualifier": "approximately",
+            "population": "Web-Hybrid subset as tabulated in the UGround paper (Table 1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2410.05243v3"
+          },
+          {
+            "value": 773000,
+            "unit": "screenshots",
+            "qualifier": "approximately",
+            "population": "Web-Hybrid subset as tabulated in the UGround paper (Table 1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2410.05243v3"
+          },
+          {
+            "value": 408000,
+            "unit": "GUI elements",
+            "qualifier": "approximately",
+            "population": "Web-Direct subset as tabulated in the UGround paper (Table 1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2410.05243v3"
+          },
+          {
+            "value": 408000,
+            "unit": "screenshots",
+            "qualifier": "approximately",
+            "population": "Web-Direct subset as tabulated in the UGround paper (Table 1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2410.05243v3"
+          }
+        ],
+        "notes": "Public API revision 33325877 lists Parquet assets but gated=auto; the pinned raw card returned HTTP 401 and no access was requested. Official README identifies this as V1 training data; the API excerpt also announces a Web-Hybrid bounding-box variant with coordinates normalized to [0,999]. Counts are the paper's Table 1 figures for its Web-Hybrid and Web-Direct subsets, whose sizes match the Hub folder names (web_hybrid_773k, web_direct_150k and web_direct_258k); the gated shards were not opened, so the release's own row totals are not counted. The paper's 10M-element total also includes third-party datasets (GUIAct, AndroidControl, Widget Caption, UIBert and AITZ) that this repository's folders do not hold. No train/test partition or unrestricted downloadability is claimed. Preserve the recorded CC-BY-NC-SA-4.0 data declaration separately from model/code terms.",
         "evidence_urls": [
           "https://huggingface.co/api/datasets/osunlp/UGround-V1-Data",
-          "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/HEAD/README.md"
+          "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/8974f95b0685f139a6257f82d6b13895db3356cf/README.md",
+          "https://arxiv.org/html/2410.05243v3"
         ]
       }
     },
@@ -6267,15 +6306,25 @@
     ],
     "additional_evidence": [
       {
-        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/HEAD/README.md",
-        "retrieved_at": "2026-10-16T06:36:00Z",
-        "sha256": "72ca3f23114c3a08fefb724573acf10c9f0a1b3d4a50d811c98356264ecf6ffc",
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
           "details.dataset_profile",
           "relations"
-        ]
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/UGround/8974f95b0685f139a6257f82d6b13895db3356cf/README.md",
+        "sha256": "72ca3f23114c3a08fefb724573acf10c9f0a1b3d4a50d811c98356264ecf6ffc",
+        "retrieved_at": "2026-10-18T15:45:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2410.05243v3",
+        "sha256": "a4f72d3eb0a6d696f6f6b7b26e44e179e7129305967a9f9c9dec29fbab685ba6",
+        "retrieved_at": "2026-10-18T15:45:29Z"
       }
     ]
   },

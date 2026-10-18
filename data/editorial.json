@@ -63143,5 +63143,88 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:hkuds/phonecli",
+    "name": "PhoneCLI",
+    "kind": "framework",
+    "url": "https://github.com/HKUDS/PhoneCLI",
+    "environments": [
+      "ios",
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "efficiency",
+      "workflow"
+    ],
+    "summary": "Mobile-agent harness that crawls an app into a YAML map of screens, replays compiled navigation commands through WebDriverAgent on iOS or ADB on Android, and falls back to a VLM for unseen screens.",
+    "scope": "core",
+    "verify_terms": [
+      "PhoneCLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HKUDS/PhoneCLI/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2609.35671",
+      "2510.22009"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Formerly published as HKUDS/OpenPhone; that address now resolves to this repository. phonecli/ is the iOS harness (WebDriverAgent) with prebuilt app maps, and phonecli_android/ runs the AndroidLab suite with compiled maps and a pure-VLM baseline. The repository also holds OpenPhone-3B training and synthetic-data pipelines and vLLM serving scripts; the weights and dataset are published separately on Hugging Face and are not covered here. Its evaluation replaces AndroidLab's rule-based checks with an LLM judge. The LICENSE names AndroidLab's author as a copyright holder. Reported success rates were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source; no GitHub releases; OpenPhone-3B weights and dataset are separate Hugging Face repositories",
+      "repository_revision": "5adabd19fb56a4849f018f1d516d44d2ce39f3d7"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/PhoneCLI/5adabd19fb56a4849f018f1d516d44d2ce39f3d7/phonecli/README.md",
+        "sha256": "921f8d53f52ce87cfc18f26391f4265cfe6ffc57cba8ecbd57702d7eb5a50737",
+        "retrieved_at": "2026-10-18T11:55:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/PhoneCLI/5adabd19fb56a4849f018f1d516d44d2ce39f3d7/phonecli_android/README.md",
+        "sha256": "e6e30de3c3011fff356386bcfda3dd17c4de65d959a5ed5c3d30223e11e2fdcc",
+        "retrieved_at": "2026-10-18T11:55:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/HKUDS/PhoneCLI/5adabd19fb56a4849f018f1d516d44d2ce39f3d7/LICENSE",
+        "sha256": "b8874bd1ffe72567d69a3f9fd5c8490694e2904cc3e7a9b07673bd58730be278",
+        "retrieved_at": "2026-10-18T11:55:51Z"
+      }
+    ],
+    "reviewed_sha256": "58366c59652c9f03af0b31b094672b10992a82cd0cc63cd2e5884a41f3d8be3c",
+    "reviewed_at": "2026-10-18T11:56:35Z"
   }
 ]

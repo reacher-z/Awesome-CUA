@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:hkuds/openphone",
+    "target_id": "github:hkuds/phonecli",
+    "repository_id": 1079332068,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:57:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/HKUDS/OpenPhone",
+        "resolved_url": "https://api.github.com/repositories/1079332068",
+        "repository_id": 1079332068,
+        "full_name": "HKUDS/PhoneCLI",
+        "html_url": "https://github.com/HKUDS/PhoneCLI",
+        "retrieved_at": "2026-10-18T11:55:36Z",
+        "sha256": "7a27d023f3576d7c12cdbe428f920469539fde6419cfcbe52a0cb1e9ba8e89a7"
+      },
+      {
+        "url": "https://api.github.com/repos/HKUDS/PhoneCLI",
+        "resolved_url": "https://api.github.com/repos/HKUDS/PhoneCLI",
+        "repository_id": 1079332068,
+        "full_name": "HKUDS/PhoneCLI",
+        "html_url": "https://github.com/HKUDS/PhoneCLI",
+        "retrieved_at": "2026-10-18T11:55:37Z",
+        "sha256": "7a27d023f3576d7c12cdbe428f920469539fde6419cfcbe52a0cb1e9ba8e89a7"
+      }
+    ]
   }
 ]

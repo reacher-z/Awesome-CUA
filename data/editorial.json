@@ -63143,5 +63143,270 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2604.09574",
+    "name": "Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.09574",
+    "summary": "Treats mobile GUI agent humanization as a detector-versus-agent game, shows that raw agent touch kinematics are easy to detect, and scores noise and history-matching methods on detection accuracy and task success.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Turing Test on Screen"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2604.09574"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the complete arXiv abstract and the v1 HTML. Human and agent touch data come from 21 apps in five clusters and four human sub-populations; agents include UI-TARS, Mobile-Agent-E, AgentCPM and AutoGLM, all run on one Android phone. The study targets touch MotionEvents and leaves sensor-stream humanization to future work. Detection and utility results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.09574v1",
+        "sha256": "21c0f429eede313b7e3d302750bb5d77515af84b21c303c5fc5cc39138eb18c3",
+        "retrieved_at": "2026-10-18T15:51:35Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the arXiv API abstract and the v1 HTML sections 2-4, Appendix data tables and Appendix E.",
+    "reviewed_sha256": "ef26bfeb00580f93b89b8a63f2dbc44a4344ddad329c1727795b646e2045ad37",
+    "reviewed_at": "2026-10-18T15:52:39Z"
+  },
+  {
+    "id": "url:3e1a864c46c8ed5735d4",
+    "name": "Agent Humanization Benchmark (AHB) recordings",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Touch-gesture and motion-sensor recordings of people and mobile GUI agents doing the same Chinese-language Android app tasks, with task lists and metadata for training detectors that tell agents from humans.",
+    "scope": "core",
+    "verify_terms": [
+      "Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2604.09574",
+        "evidence_url": "https://arxiv.org/html/2604.09574v1"
+      }
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "scope",
+      "relations",
+      "licenses.data",
+      "details.hub_id",
+      "details.hub_revision",
+      "details.gated",
+      "details.disabled",
+      "details.download_url",
+      "details.dataset_profile"
+    ],
+    "notes": "The Hub repository has no dataset card or license file; the arXiv paper and its code repository link it as the released data. The paper reports that all sessions ran on one Xiaomi Mi Max 2 phone with MIUI 11.0.2.0. Recording archives were not downloaded, so per-archive contents are not verified. Event totals are the paper's figures, not recounts.",
+    "details": {
+      "hub_id": "lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark",
+      "hub_revision": "379fd3ef8b7103757f160ea80ac80998165404fe",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/tree/379fd3ef8b7103757f160ea80ac80998165404fe",
+      "repository_url": "https://github.com/Gebro13/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark",
+      "dataset_profile": {
+        "supervision": [
+          "source labels for human users and named agent configurations",
+          "task success scoring in the metadata workbook"
+        ],
+        "modalities": [
+          "touch input events",
+          "motion-sensor readings",
+          "task instructions"
+        ],
+        "formats": [
+          "ZIP archives",
+          "plain-text gesture logs",
+          "CSV",
+          "XLSX",
+          "Python pickle"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 116,
+            "unit": "task descriptions",
+            "qualifier": "exact",
+            "population": "metadata/tasks.csv at Hub revision 379fd3ef",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv"
+          },
+          {
+            "value": 20,
+            "unit": "distinct app names",
+            "qualifier": "exact",
+            "population": "metadata/tasks.csv at Hub revision 379fd3ef",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv"
+          },
+          {
+            "value": 21,
+            "unit": "applications",
+            "qualifier": "exact",
+            "population": "dataset described in the paper, grouped into five clusters",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2604.09574v1"
+          },
+          {
+            "value": 72,
+            "unit": "gesture-recording log files",
+            "qualifier": "exact",
+            "population": "three agent folders under gesture_recordings/ at Hub revision 379fd3ef",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe"
+          },
+          {
+            "value": 7,
+            "unit": "gesture-recording ZIP archives",
+            "qualifier": "exact",
+            "population": "gesture_recordings/ at Hub revision 379fd3ef",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe"
+          },
+          {
+            "value": 8,
+            "unit": "sensor-recording ZIP archives",
+            "qualifier": "exact",
+            "population": "sensor_recordings/ at Hub revision 379fd3ef",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe"
+          },
+          {
+            "value": 37768698,
+            "unit": "motion and sensor events",
+            "qualifier": "exact",
+            "population": "four human sub-populations (paper Table 4)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2604.09574v1"
+          },
+          {
+            "value": 243090929,
+            "unit": "motion and sensor events",
+            "qualifier": "exact",
+            "population": "five raw agent configurations (paper Table 4)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2604.09574v1"
+          },
+          {
+            "value": 280320486,
+            "unit": "motion and sensor events",
+            "qualifier": "exact",
+            "population": "humanized agents without fake actions (paper Table 5)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2604.09574v1"
+          },
+          {
+            "value": 154704094,
+            "unit": "motion and sensor events",
+            "qualifier": "exact",
+            "population": "humanized agents with fake actions (paper Table 5)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2604.09574v1"
+          }
+        ],
+        "notes": "Computed counts come from a script over the pinned Hub file list and tasks.csv. tasks.csv names 20 apps while the paper reports 21. The task texts are in Chinese. The code repository says the metadata workbook holds agent, task, timestamp and success-scoring fields; it was not opened. Event counts are per sensor or touch event, not per task, and the four totals are separate populations, not to be summed.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe",
+          "https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv",
+          "https://arxiv.org/html/2604.09574v1",
+          "https://raw.githubusercontent.com/Gebro13/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/8924fa3e687af6f264d3b91a2d2f48faf8adfd8c/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "relations",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv",
+        "sha256": "5b906fbc0df5f8677516c1a2c1e47c7c3a191df320574c5c3a100e99616a5f24",
+        "retrieved_at": "2026-10-18T15:51:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "relations",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2604.09574v1",
+        "sha256": "21c0f429eede313b7e3d302750bb5d77515af84b21c303c5fc5cc39138eb18c3",
+        "retrieved_at": "2026-10-18T15:51:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/Gebro13/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/8924fa3e687af6f264d3b91a2d2f48faf8adfd8c/README.md",
+        "sha256": "20ddeb13fedd6e07ff06104b65a2bd09ff7422b28064d7442196301c5172b062",
+        "retrieved_at": "2026-10-18T15:51:36Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "The Hub repository has no dataset card, license metadata or license file at this revision, and the linked code repository declares no license, so no data grant is established.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned Hub revision API file list, metadata/tasks.csv, the arXiv v1 HTML (dataset collection section, Tables 4-5, Appendix E) and the pinned code-repository README. Archives and the XLSX workbook were not downloaded.",
+    "reviewed_sha256": "76ac24bccdf4d78e87f86f20ceadf0b3cf25e2d008b017c340908d520743ed3b",
+    "reviewed_at": "2026-10-18T15:52:39Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (178)](#papers)
 
 ## Benchmarks
 
@@ -22,6 +22,14 @@
 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | web | [2410.06703](https://arxiv.org/abs/2410.06703) (2024) | — | — | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/segev-shlomov/ST-WebAgentBench/HEAD/README.md) |
 | [WebGuard](https://github.com/OSU-NLP-Group/WebGuard) | web | [2507.14293](https://arxiv.org/abs/2507.14293) (2025) | — | code MIT | Codebase, annotation toolkit, and action-level risk dataset for training and evaluating guardrail models that flag unsafe browser-agent actions before execution. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/WebGuard/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
+
+## Datasets
+
+All entries in this section: android.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Humanization Benchmark (AHB) recordings](https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark) | [2604.09574](https://arxiv.org/abs/2604.09574) (2026) | [116 task descriptions](https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv) · [20 distinct app names](https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv) · [21 applications](https://arxiv.org/html/2604.09574v1) · [72 gesture-recording log files](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) · [7 gesture-recording ZIP archives](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) · [8 sensor-recording ZIP archives](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) · [37,768,698 motion and sensor events](https://arxiv.org/html/2604.09574v1) | — | Touch-gesture and motion-sensor recordings of people and mobile GUI agents doing the same Chinese-language Android app tasks, with task lists and metadata for training detectors that tell agents from humans. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) |
 
 ## Agents
 
@@ -148,6 +156,7 @@ All entries in this section: web.
 | 2026‑03‑16 | [Visual Confused Deputy: Exploiting and Defending Perception Failures in Computer-Using Agents](https://arxiv.org/abs/2603.14707) | unspecified | Formalizes a visual confused-deputy failure in which a computer agent acts on a misperceived UI object. A separate guardrail checks both the visual target and the agent's action reasoning against deployment-specific knowledge before permitting execution. |
 | 2026‑03‑04 | [Dual-Modality Multi-Stage Adversarial Safety Training: Robustifying Multimodal Web Agents Against Cross-Modal Attacks](https://arxiv.org/abs/2603.04364) | web | Studies webpage injections that affect both screenshots and accessibility trees, then trains web agents through teacher imitation, supervised adversarial examples, and adversarial reinforcement learning. The evaluation tests defenses on MiniWoB++ and held-out tasks. |
 | 2026‑02‑28 | [Atomicity for Agents: Exposing, Exploiting, and Mitigating TOCTOU Vulnerabilities in Browser-Use Agents](https://arxiv.org/abs/2603.00476) | web | Identifies time-of-check to time-of-use (TOCTOU) race vulnerabilities when web pages mutate between agent planning and action execution. |
+| 2026‑02‑24 | [Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization](https://arxiv.org/abs/2604.09574) | android | Treats mobile GUI agent humanization as a detector-versus-agent game, shows that raw agent touch kinematics are easy to detect, and scores noise and history-matching methods on detection accuracy and task success. |
 | 2026‑02‑13 | [SPILLage: Agentic Oversharing on the Web](https://arxiv.org/abs/2602.13516) | web | Formalizes and measures natural agentic oversharing when browser agents handle private user emails and calendars across live websites. |
 | 2026‑02‑09 | [Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for Scalable and Diverse GUI-Agent Defense](https://arxiv.org/abs/2602.09012) | web | Next-Gen CAPTCHAs introduces generated interactive challenges intended to distinguish human users from GUI agents. The benchmark targets perception, memory, decisions and actions, with backend-supported challenge types designed for scalable instance generation. |
 | 2026‑02‑09 | [When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents](https://arxiv.org/abs/2602.08995) | desktop, web | MisActBench provides action-level labels for task alignment, while DeAction checks proposed computer-use actions and requests revisions through structured feedback. The paper separately evaluates offline detection and interactive operation in OSWorld and RedTeamCUA. |

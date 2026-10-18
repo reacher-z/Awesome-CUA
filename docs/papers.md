@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,104; 523 ⭐) · [2025](#2025) (700; 368 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,104; 524 ⭐) · [2025](#2025) (700; 368 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -911,7 +911,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-02-25 | [ProactiveMobile: A Comprehensive Benchmark for Boosting Proactive Intelligence on Mobile Devices](https://arxiv.org/abs/2602.21858) | metadata |  |
 | 2026-02-25 | [GUI-Libra: Training Native GUI Agents to Reason and Act with Action-aware Supervision and Partially Verifiable RL](https://arxiv.org/abs/2602.22190) | metadata |  |
 | 2026-02-25 | [Avenir-UX: Automated UX Evaluation via Simulated Human Web Interaction with GUI Grounding](https://arxiv.org/abs/2604.09581) | ⭐ reviewed | [automation](topics/automation.md), [evaluation](topics/evaluation.md), [grounding](topics/grounding.md), [ui-design](topics/ui-design.md) |
-| 2026-02-24 | [Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization](https://arxiv.org/abs/2604.09574) | metadata |  |
+| 2026-02-24 | [Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization](https://arxiv.org/abs/2604.09574) | ⭐ reviewed | [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md), [safety-security](topics/safety-security.md) |
 | 2026-02-24 | [ActionEngine: From Reactive to Programmatic Web Agents via State Machine Memory](https://arxiv.org/abs/2602.20502) | ⭐ reviewed | [efficiency](topics/efficiency.md), [memory](topics/memory.md), [planning](topics/planning.md), [web-navigation](topics/web-navigation.md) |
 | 2026-02-23 | [ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?](https://arxiv.org/abs/2602.19594) | metadata |  |
 | 2026-02-23 | [ApET: Approximation-Error Guided Token Compression for Efficient VLMs](https://arxiv.org/abs/2602.19870) | metadata |  |

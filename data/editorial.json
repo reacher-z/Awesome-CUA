@@ -63143,5 +63143,169 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Multimodal-Mind2Web",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "evaluation"
+    ],
+    "summary": "Mind2Web action steps aligned with the matching webpage screenshot, plus raw and cleaned HTML, candidate elements and the target operation, in a train split and test splits held out by task, website and domain.",
+    "scope": "core",
+    "verify_terms": [
+      "Multimodal-Mind2Web"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope",
+      "details.hub_revision"
+    ],
+    "notes": "Each row is one action step with the page state before the action; tasks are distinct annotation IDs. The card says the three test splits were human-verified for element visibility and rendering, while the train split may contain badly rendered screenshots. Its test task counts (177, 142 and 694) are lower than the 252, 177 and 912 task instances that the Mind2Web README lists for the cross-task, cross-website and cross-domain test sets. The card points to the SeeAct repository and paper and declares OpenRAIL, recorded as stated; terms for the underlying website content were not assessed.",
+    "details": {
+      "hub_revision": "1b4c6a8cf9f77b7a5e0d641959935c80c4a05889",
+      "repository_url": "https://github.com/OSU-NLP-Group/SeeAct",
+      "dataset_profile": {
+        "supervision": [
+          "target operation per step (CLICK, TYPE or SELECT with value)",
+          "positive and negative candidate elements"
+        ],
+        "modalities": [
+          "webpage screenshots",
+          "raw and cleaned HTML",
+          "task descriptions",
+          "action histories"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "train",
+          "test_task",
+          "test_website",
+          "test_domain"
+        ],
+        "counts": [
+          {
+            "value": 7775,
+            "unit": "action steps",
+            "qualifier": "exact",
+            "population": "train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 1009,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 1339,
+            "unit": "action steps",
+            "qualifier": "exact",
+            "population": "test_task split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 177,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "test_task split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 1019,
+            "unit": "action steps",
+            "qualifier": "exact",
+            "population": "test_website split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 142,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "test_website split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 4060,
+            "unit": "action steps",
+            "qualifier": "exact",
+            "population": "test_domain split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          },
+          {
+            "value": 694,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "test_domain split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+          }
+        ],
+        "notes": "Action steps and tasks are different units; the split sizes are the card's figures, and a column read of the Parquet files at this revision gave the same step and task counts.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "relations",
+          "details.repository_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md",
+        "sha256": "8bb1e02777556f3f679c4610be9e5572b3cb218a89b98d6f75a4fc1b82fa06dd",
+        "retrieved_at": "2026-10-18T16:02:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web/33bd95caeee7bba22dd08ecc935845e15c5e5dc7/README.md",
+        "sha256": "157dbd840264ea29f958c0b7383d63783845c573b3e19a1f39b773be22e0b32d",
+        "retrieved_at": "2026-10-18T16:02:15Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "github:osu-nlp-group/mind2web",
+        "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2401.01614",
+        "evidence_url": "https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web/raw/1b4c6a8cf9f77b7a5e0d641959935c80c4a05889/README.md"
+      }
+    ],
+    "read_basis": "Read the pinned dataset card and Hub API record (file manifest and card metadata), queried the dataset-viewer split sizes, and read the annotation_id and website columns of every Parquet file at this revision to recount steps and tasks. No screenshots were inspected.",
+    "reviewed_sha256": "261ab42b94fc347c2581445f61ed158ffdfd201f192c51ded49fe9fe1b298503",
+    "reviewed_at": "2026-10-18T16:02:52Z"
   }
 ]

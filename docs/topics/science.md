@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-18 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+19 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (15)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Infrastructure (1)](#infrastructure) · [Papers (15)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,14 @@ All entries in this section: desktop, linux.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |
+
+## Models
+
+All entries in this section: desktop.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ScaleCUA (THUDM) Qwen3-VL-8B ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3-VL-8B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for ScienceBoard scientific-software tasks after an SFT start point and served through an OpenAI-compatible endpoint. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard/raw/13947f05bff0742e09784310b6c68ae39bff67e5/README.md) |
 
 ## Infrastructure
 

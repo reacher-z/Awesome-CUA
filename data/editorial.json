@@ -63143,5 +63143,216 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OSWorld-MCP",
+    "kind": "benchmark",
+    "url": "https://github.com/X-PLUG/OSWorld-MCP",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "cross-app"
+    ],
+    "summary": "OSWorld extension that adds an MCP tool server for apps such as LibreOffice, VS Code, Chrome and VLC, so agents can mix GUI actions with tool calls, scored on accuracy, tool invocation rate and steps.",
+    "scope": "core",
+    "verify_terms": [
+      "OSWorld-MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.leaderboard_url",
+      "details.benchmark_protocol"
+    ],
+    "documented_by": [
+      "2510.24563"
+    ],
+    "notes": "The repository is applied on top of a separate OSWorld checkout and Docker environment rather than run on its own. Its MCP client connects to a FastMCP server inside the VM, and the patched desktop_env.py adds an mcp action space next to pyautogui actions. Agent code for Agent-S2.5 and GUI-Owl is included. The README leaderboard is publisher-reported and was not reproduced. No license file was found; neither code nor task-data licensing is inferred from OSWorld.",
+    "details": {
+      "availability": "Public MCP server, tool definitions, task lists and patched OSWorld runners; requires the OSWorld repository and its VM images.",
+      "repository_url": "https://github.com/X-PLUG/OSWorld-MCP",
+      "repository_revision": "f5d6aacadf01ea90b7c7af193b8120bf9028358b",
+      "repository_tree_sha": "e916512d1f45937b143e85806cd78453a52d8764",
+      "leaderboard_url": "https://osworld-mcp.github.io",
+      "benchmark_protocol": {
+        "focus": [
+          "MCP tool invocation",
+          "GUI operation",
+          "deciding when to call a tool"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots by default; accessibility-tree and set-of-marks options inherited from OSWorld"
+        ],
+        "actions": [
+          "pyautogui GUI actions",
+          "MCP tool calls"
+        ],
+        "evaluation": "OSWorld's execution-based task checkers give task accuracy; the README also reports tool invocation rate and average completion steps at 15 and 50 step budgets.",
+        "counts": [
+          {
+            "value": 361,
+            "unit": "task IDs",
+            "qualifier": "exact",
+            "population": "evaluation_examples/test_all.json at the inspected commit",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/test_all.json"
+          },
+          {
+            "value": 250,
+            "unit": "tool-beneficial task IDs",
+            "qualifier": "exact",
+            "population": "evaluation_examples/has_tool.json at the inspected commit",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/has_tool.json"
+          },
+          {
+            "value": 158,
+            "unit": "validated MCP tools",
+            "qualifier": "exact",
+            "population": "publisher feature overview, including 25 distractor tools",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/HEAD/README.md"
+          },
+          {
+            "value": 158,
+            "unit": "tool names",
+            "qualifier": "exact",
+            "population": "evaluation_examples/tool_list.txt at the inspected commit",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/tool_list.txt"
+          }
+        ],
+        "notes": "Task IDs refer to OSWorld task definitions grouped by application in test_all.json; they are not trajectories. Tool counts and task counts are different units.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/HEAD/README.md",
+          "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/test_all.json",
+          "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/has_tool.json",
+          "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/tool_list.txt",
+          "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/osworld/desktop_env/desktop_env.py",
+          "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/osworld/run_multienv_e2e.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/X-PLUG/OSWorld-MCP",
+        "sha256": "e8bb9c1909f857a1e6dd7b752d9460b42ca8a1421c8f43fe4a7e36d3eec929d5",
+        "retrieved_at": "2026-10-18T15:43:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/X-PLUG/OSWorld-MCP/git/trees/f5d6aacadf01ea90b7c7af193b8120bf9028358b?recursive=1",
+        "sha256": "6cb1fcdae7f89563735c9e6edeffb90e866573d6d2455fd4ce69a083375b3c5b",
+        "retrieved_at": "2026-10-18T15:43:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/X-PLUG/OSWorld-MCP/git/commits/f5d6aacadf01ea90b7c7af193b8120bf9028358b",
+        "sha256": "d882dfa151e593edcf6010f594cb074256204e305bde449d718658264e73f336",
+        "retrieved_at": "2026-10-18T15:43:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/test_all.json",
+        "sha256": "7c6c3399d49629ae0042636d7c0a3e5fec95526e5d3fc932f9a884096a2c0af9",
+        "retrieved_at": "2026-10-18T15:43:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/has_tool.json",
+        "sha256": "f4900145de672d550095a660f446896f67a7a40b87e1940edb93f1c7326c1d12",
+        "retrieved_at": "2026-10-18T15:43:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/evaluation_examples/tool_list.txt",
+        "sha256": "cbe87116560579fca80d1d13fa3dd728de60319d0decc89ac55de5e7a4b5b9a3",
+        "retrieved_at": "2026-10-18T15:43:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/osworld/desktop_env/desktop_env.py",
+        "sha256": "cb348614237475eebe1cd9de2528a017246f1c091fd72f15da16030c8334c0d7",
+        "retrieved_at": "2026-10-18T15:43:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/f5d6aacadf01ea90b7c7af193b8120bf9028358b/osworld/run_multienv_e2e.py",
+        "sha256": "37916ab3a57c8aeb72df6573dfa053d04b2428a71dfd58b123876d808d36488a",
+        "retrieved_at": "2026-10-18T15:43:25Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/HEAD/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The inspected tree has no license file and GitHub reports no license; OSWorld's license is not transferred to these additions.",
+        "evidence_urls": [
+          "https://api.github.com/repos/X-PLUG/OSWorld-MCP/git/trees/f5d6aacadf01ea90b7c7af193b8120bf9028358b?recursive=1"
+        ]
+      }
+    },
+    "reviewed_sha256": "6fd51bd79a5603e9513f84e69f98b8ca733cef762a8a2391bb287ae3698399ec",
+    "reviewed_at": "2026-10-18T15:44:13Z"
   }
 ]

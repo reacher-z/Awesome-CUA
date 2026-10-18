@@ -26,6 +26,7 @@ LEADERBOARDS = {
     "github:thudm/android-lab": "https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw/edit?gid=0#gid=0",
     "github:tongyi-mai/mobileworld": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",
     "github:unipat-ai/saas-bench": "https://unipat.ai/benchmarks/SaaS-Bench",
+    "github:x-plug/osworld-mcp": "https://osworld-mcp.github.io",
     "url:d9d8e68f19ef0956d189": "https://recreation-bench.cc/#leaderboard",
 }
 

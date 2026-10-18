@@ -16531,12 +16531,48 @@
           "train",
           "test"
         ],
-        "counts": [],
-        "notes": "Raw and Parquet folders are alternative views of the same data. Each sample describes a dragging task over multiple timesteps; action vectors encode button state and coordinates.",
+        "counts": [
+          {
+            "value": 2500,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "train split, total_episodes in train/parquet/meta/info.json at revision 03765b0",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/train/parquet/meta/info.json"
+          },
+          {
+            "value": 505,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "test split, total_episodes in test/parquet/meta/info.json",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/test/parquet/meta/info.json"
+          },
+          {
+            "value": 50799,
+            "unit": "frames",
+            "qualifier": "exact",
+            "population": "train split, total_frames in train/parquet/meta/info.json",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/train/parquet/meta/info.json"
+          },
+          {
+            "value": 10289,
+            "unit": "frames",
+            "qualifier": "exact",
+            "population": "test split, total_frames in test/parquet/meta/info.json",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/test/parquet/meta/info.json"
+          }
+        ],
+        "notes": "Raw and Parquet folders are alternative views of the same data. Each sample describes a dragging task over multiple timesteps; action vectors encode button state and coordinates. Counts are the LeRobot v3.0 metadata totals of each split; the raw folders hold the same episodes.",
         "evidence_urls": [
-          "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/main/README.md"
+          "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/main/README.md",
+          "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/train/parquet/meta/info.json",
+          "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/test/parquet/meta/info.json"
         ]
-      }
+      },
+      "hub_revision": "03765b0bff5da02a4a28ea66c0506583ba7a1dc6"
     },
     "notes": "Raw and Parquet folders are alternative views of the same data and should not be counted as independent samples. The inspected card did not state a license.",
     "evidence_urls": [
@@ -16550,6 +16586,11 @@
         "type": "component_of",
         "target_id": "github:showlab/showui-pi",
         "evidence_url": "https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2512.24965",
+        "evidence_url": "https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md"
       }
     ],
     "additional_evidence": [
@@ -16562,6 +16603,27 @@
         "url": "https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md",
         "sha256": "88df552ccbe80efd7020905d77d526f4f9efe2d09a11fed2714b083988f9dcef",
         "retrieved_at": "2026-10-16T11:09:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.hub_revision",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/train/parquet/meta/info.json",
+        "sha256": "4ee1c2c13e944ba9fad6126b6678ee8f77b486824e89ac50c1b7119f286a332f",
+        "retrieved_at": "2026-10-18T15:47:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/h-siyuan/ScreenDrag/raw/03765b0bff5da02a4a28ea66c0506583ba7a1dc6/test/parquet/meta/info.json",
+        "sha256": "e8415fdab10830c78f381fbf69f2dba6a28d5144661fe262e1846285fa9752e7",
+        "retrieved_at": "2026-10-18T15:47:46Z"
       }
     ],
     "primary_supports": [

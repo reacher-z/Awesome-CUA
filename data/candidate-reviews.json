@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:jasonzliang/caesar-agent",
+    "url": "https://github.com/jasonzliang/caesar-agent",
+    "decision": "out_of_scope",
+    "reason": "Caesar is a deep-research agent that explores web search results and pages into a knowledge graph and writes adversarially refined reports. Its README states it has no browser or mobile access, so it does not interact with interfaces; its paper arxiv:2604.20855 is not in the catalog.",
+    "reviewed_at": "2026-10-18T11:31:40Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/jasonzliang/caesar-agent/HEAD/README.md",
+      "sha256": "0592f078992fb601a9f88c08bd58353148c0a19451faf8c0ec0c8150b6f79116",
+      "retrieved_at": "2026-10-18T11:22:25Z"
+    }
   }
 ]

@@ -63143,5 +63143,169 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:a7e3c6c6b37793c3151c",
+    "name": "MolmoPoint-GUISyn",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "android",
+      "ios",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "Ai2's synthetic GUI grounding set of about 36K code-rendered desktop, mobile and web screenshots, each with dense element boxes, names and five natural-language intents per element for training pointing models.",
+    "scope": "core",
+    "verify_terms": [
+      "MolmoPoint-GUISyn"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.repository_url",
+      "details.dataset_profile"
+    ],
+    "notes": "Screenshots are rendered with headless Chromium from HTML that Claude Sonnet 4.6 wrote, so the Windows, macOS, Linux, iOS and Android labels describe simulated interfaces, not captures of real systems; the card says this content is subject to Anthropic's terms. Each example keeps its source HTML and generation metadata. The Hub repository also holds the MolmoPoint paper PDF; the generation pipeline and the companion pointing model are released separately.",
+    "details": {
+      "hub_id": "allenai/MolmoPoint-GUISyn",
+      "hub_revision": "24bb3e990bb1e48796d80ade9dbc858dda695e75",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/tree/24bb3e990bb1e48796d80ade9dbc858dda695e75",
+      "repository_url": "https://github.com/allenai/MolmoPoint-GUISyn",
+      "dataset_profile": {
+        "supervision": [
+          "synthetic GUI element annotations",
+          "element names",
+          "natural-language interaction intents"
+        ],
+        "modalities": [
+          "screenshots",
+          "HTML source",
+          "bounding boxes",
+          "instructions"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "desktop train",
+          "desktop validation",
+          "mobile train",
+          "mobile validation",
+          "web train",
+          "web validation"
+        ],
+        "counts": [
+          {
+            "value": 36000,
+            "unit": "screenshots",
+            "qualifier": "approximately",
+            "population": "all three subsets as described in the card prose",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+          },
+          {
+            "value": 16232,
+            "unit": "screenshot examples",
+            "qualifier": "exact",
+            "population": "desktop train split in the card metadata",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+          },
+          {
+            "value": 256,
+            "unit": "screenshot examples",
+            "qualifier": "exact",
+            "population": "desktop validation split in the card metadata",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+          },
+          {
+            "value": 9830,
+            "unit": "screenshot examples",
+            "qualifier": "exact",
+            "population": "web train split in the card metadata",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+          },
+          {
+            "value": 256,
+            "unit": "screenshot examples",
+            "qualifier": "exact",
+            "population": "web validation split in the card metadata",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+          },
+          {
+            "value": 10500,
+            "unit": "screenshot examples",
+            "qualifier": "approximately",
+            "population": "mobile subset as described in the card prose",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+          }
+        ],
+        "notes": "The card metadata gives split sizes for the desktop and web configurations only; the mobile configuration's sizes appear only as the prose figure of 10.5K. The prose figures for desktop (16.6K) and web (10.2K) differ slightly from the metadata split totals (16,488 and 10,086). Each element carries a name, five intents and center/size coordinates; the card reports an average of 54 annotated elements per image. Annotations are LLM-generated and were not human-verified by this review.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md",
+          "https://huggingface.co/api/datasets/allenai/MolmoPoint-GUISyn"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/datasets/allenai/MolmoPoint-GUISyn",
+        "sha256": "df47b9fad1bfd4ec67013263cd4bfe1be0a32e3f303f2e13be068ac81bdc4101",
+        "retrieved_at": "2026-10-18T12:03:37Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ]
+      }
+    ],
+    "documented_by": [
+      "2603.28069"
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "Conflicting declarations in the same card: the metadata header declares Apache-2.0, while the License section declares ODC-BY and adds that Claude-generated screenshots are subject to Anthropic's terms. The GitHub code license does not resolve the data terms.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "74fe1e395b4121dec7ea222d2ee42d1b538f4d7445a2a59158d96d9208af01dd",
+    "reviewed_at": "2026-10-18T12:03:55Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-30 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
 
 ## Benchmarks
 
@@ -19,6 +19,7 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [GUI-R1 data bundle](https://huggingface.co/datasets/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | — | data mit | Training and evaluation Parquet bundles accompanying GUI-R1, including GUI grounding and mobile/web action-prediction data. | [✓ 2026‑10‑17](https://huggingface.co/datasets/ritzzai/GUI-R1/raw/main/README.md) |
+| [MolmoPoint-GUISyn](https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn) | cross-platform, desktop, windows, macos, linux, android, ios, web | [2603.28069](https://arxiv.org/abs/2603.28069) (2026) | [≈ 36,000 screenshots](https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md) · [16,232 screenshot examples](https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md) | — | Ai2's synthetic GUI grounding set of about 36K code-rendered desktop, mobile and web screenshots, each with dense element boxes, names and five natural-language intents per element for training pointing models. | [✓ 2026‑10‑18](https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/raw/24bb3e990bb1e48796d80ade9dbc858dda695e75/README.md) |
 | [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | data mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. | [✓ 2026‑10‑16](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) |
 
 ## Models

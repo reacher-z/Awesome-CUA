@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:onuratakan/gpt-computer-assistant",
+    "url": "https://github.com/onuratakan/gpt-computer-assistant",
+    "decision": "out_of_scope",
+    "reason": "This address now resolves to Upsonic/Upsonic, the renamed repository, which is a general Python framework for building autonomous and tool-calling agents with MCP tools and OCR. Neither its README nor its source tree contains screen observation, input control or browser automation, so the repository no longer holds a computer-use assistant and is a generic LLM-agent framework.",
+    "reviewed_at": "2026-10-18T11:51:55Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/Upsonic/Upsonic/HEAD/README.md",
+      "sha256": "2bfb92e6063c8dd59d7463c284f2dc5b74bec342e2a164d66548bd846763a143",
+      "retrieved_at": "2026-10-18T11:46:51Z"
+    }
   }
 ]

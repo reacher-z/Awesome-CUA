@@ -63143,5 +63143,82 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Open Record/Replay",
+    "kind": "tool",
+    "url": "https://github.com/humblebanana/open-record-replay",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "workflow"
+    ],
+    "scope": "core",
+    "summary": "macOS demonstration recorder for computer-use agents: a CGEvent tap logs clicks, drags and keystrokes with Accessibility-tree context into events.jsonl, then a CLI validates and packages it for agent skill creation.",
+    "verify_terms": [
+      "Open Record/Replay"
+    ],
+    "aliases": [
+      "orr"
+    ],
+    "notes": "Alpha Node.js CLI (orr, package open-record-replay 0.1.0, macOS only) with a Swift helper. The helper listens through a CGEvent tap for left and right mouse down, up and drag and key-down events, and attaches the active window's macOS Accessibility tree (full tree or diff) and press targets to actions; it also logs window changes and selections. It needs Accessibility and Input Monitoring permissions, and the core path takes no screenshots. CLI commands cover permissions, recording, session inspection, recording-quality validation, a regex redaction preview and skill-input packaging; despite the name, no replay or playback command ships, and the final skill is created by the host agent following skills/open-record-replay/SKILL.md. Two example recordings (sending a file in Feishu and playing a YouTube video) are included as fixtures. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/humblebanana/open-record-replay/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Node.js and Swift source for macOS; requires Accessibility and Input Monitoring permissions.",
+      "repository_revision": "8eff3fa6217810a809b4f1e32ff5273416d36d63"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/humblebanana/open-record-replay/git/commits/8eff3fa6217810a809b4f1e32ff5273416d36d63",
+        "sha256": "322bb3ad3dfaee8fa44e521d8711d039b8c8f0a44ee19ad51bbcba681ebe258d",
+        "retrieved_at": "2026-10-18T15:41:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/humblebanana/open-record-replay/8eff3fa6217810a809b4f1e32ff5273416d36d63/packages/platform-macos/Sources/ORRPlatformMacOS/main.swift",
+        "sha256": "a830c998dc9b0ccda4c1b5291b393c0ed72585f551fa675fd6e9ccdbc78ad5d8",
+        "retrieved_at": "2026-10-18T15:41:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/humblebanana/open-record-replay/8eff3fa6217810a809b4f1e32ff5273416d36d63/packages/cli/src/index.mjs",
+        "sha256": "216eda696ca9d084f627bb82ed1a74ef8f2383eff135268f764d8bccd5414d9e",
+        "retrieved_at": "2026-10-18T15:41:11Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "88d80ecdcbf84bb26b824c124b61bc7dfc9c4ce8b2cdb8f9076eb12735f721fe",
+    "reviewed_at": "2026-10-18T15:41:33Z"
   }
 ]

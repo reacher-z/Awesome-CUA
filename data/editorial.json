@@ -15025,7 +15025,94 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "7567287ceee0ad2d3d5605abb44ac50463c1008f9b6309393695763cf2ce89bb",
-    "reviewed_at": "2026-10-16T10:48:36Z"
+    "reviewed_at": "2026-10-16T10:48:36Z",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "screen reading at a user-indicated point",
+          "describing the indicated region together with its layout context"
+        ],
+        "setting": "offline",
+        "observations": [
+          "GUI screenshot from a mobile, web or operating-system interface",
+          "input point coordinate"
+        ],
+        "actions": [
+          "free-text description of the indicated region and its position relative to other regions"
+        ],
+        "evaluation": "Each test row carries a human-annotated local-region box for the point, a second human-annotated reference point and region with its relative location, and a GPT-4 caption that humans checked and corrected. The candidate-ID field supports the paper's cycle-consistency evaluation. The repository README still lists evaluation scripts as a to-do, so no scorer was inspected.",
+        "counts": [
+          {
+            "value": 1500,
+            "unit": "point-and-read samples",
+            "qualifier": "exact",
+            "population": "test/metadata.jsonl in the yfan1997/ScreenPR Hub dataset at revision 53d27dc",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl"
+          },
+          {
+            "value": 500,
+            "unit": "point-and-read samples",
+            "qualifier": "exact",
+            "population": "mobile rows of that file",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl"
+          },
+          {
+            "value": 500,
+            "unit": "point-and-read samples",
+            "qualifier": "exact",
+            "population": "web rows of that file",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl"
+          },
+          {
+            "value": 500,
+            "unit": "point-and-read samples",
+            "qualifier": "exact",
+            "population": "os rows of that file",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl"
+          },
+          {
+            "value": 650,
+            "unit": "screenshots",
+            "qualifier": "exact",
+            "population": "distinct file_name values in that file",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl"
+          }
+        ],
+        "notes": "The repository README links the yfan1997/ScreenPR Hub dataset as its data page; counts come from that dataset's test/metadata.jsonl. The repository's data/README.md names a different Hub copy of the benchmark, which was not counted. The Tree-of-Lens agent code and its region-detection submodule are in the same repository but are not part of the counts.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/eric-ai-lab/Screen-Point-and-Read/HEAD/README.md",
+          "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl",
+          "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/test/metadata.jsonl",
+        "sha256": "e27f12fc68386c4683dc620c22ded3550df47c49271fe0d211298019165df43e",
+        "retrieved_at": "2026-10-18T16:03:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/yfan1997/ScreenPR/raw/53d27dc567f1e6d77b4aeb502078cc75144f5ea1/README.md",
+        "sha256": "5cbbc2a34e088998c70a8b21dbab55dec5185270561d34c3a0143d6c1dd1de13",
+        "retrieved_at": "2026-10-18T16:03:45Z"
+      }
+    ]
   },
   {
     "url": "https://github.com/X-LANCE/META-GUI-baseline",

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
 
 ## Benchmarks
 
@@ -23,6 +23,14 @@ All entries in this section: desktop.
 | [ShowUI 2B](https://huggingface.co/showlab/ShowUI-2B) | cross-platform | — | weights mit | ShowUI vision-language-action checkpoint fine-tuned from Qwen2-VL-2B-Instruct, published as a single PyTorch weight file under the MIT license and tagged for GUI agents and computer use. | [✓ 2026‑10‑16](https://huggingface.co/api/models/showlab/ShowUI-2B) |
 | [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |
 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Jev for Chrome](https://github.com/chy4pro/jev-for-chrome) | — | code MIT | Chrome extension agent that sends an indexed table of visible page controls to the TypeSafe Jev decision model, asks a small text model only for typed strings, and acts through Chrome's debugger input. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/chy4pro/jev-for-chrome/HEAD/docs/store-listing.md) |
 
 ## Frameworks
 

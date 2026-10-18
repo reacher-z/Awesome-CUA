@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (12)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -123,6 +123,7 @@
 | [Agent E](https://github.com/EmergenceAI/Agent-E) | web | [2407.13032](https://arxiv.org/abs/2407.13032) (2024) | code MIT | Browser automation agent on the AG2 framework that pairs a planner agent with a browser navigation agent to fill forms, search shops and work through sites, also callable over a local HTTP API. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/EmergenceAI/Agent-E/HEAD/README.md) |
 | [AutoWebGLM](https://github.com/THUDM/AutoWebGLM) | web | — | code Apache-2.0 | Web navigation agent built on ChatGLM3-6B that simplifies HTML for the model, is trained on hybrid human and AI data with RL and rejection sampling, and comes with the bilingual AutoWebBench. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AutoWebGLM/HEAD/README.md) |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | web | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
+| [Jev for Chrome](https://github.com/chy4pro/jev-for-chrome) | web | — | code MIT | Chrome extension agent that sends an indexed table of visible page controls to the TypeSafe Jev decision model, asks a small text model only for typed strings, and acts through Chrome's debugger input. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/chy4pro/jev-for-chrome/HEAD/docs/store-listing.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |

@@ -63143,5 +63143,139 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "PSAI computer-use dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/anaisleila/computer-use-data-psai",
+    "aliases": [
+      "Computer Use Dataset - Paradigm Shift AI"
+    ],
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "data-generation",
+      "recording",
+      "video"
+    ],
+    "summary": "Human computer-use recordings for 3,167 browser and desktop tasks, each with a screen video, input events and reasoning steps, plus screenshots or DOM snapshots for part of the tasks.",
+    "scope": "core",
+    "verify_terms": [
+      "Computer Use Dataset - PSAI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/anaisleila/computer-use-data-psai/raw/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4/README.md"
+    ],
+    "notes": "Released by Paradigm Shift AI. The card reports 2,220 browser and 947 computer tasks over 294 websites and 173 applications, labels most tasks cross-platform with a few Windows or macOS tasks, and says human vendors performed the tasks under signed release agreements but that recordings may contain personal information. Hub API at revision 0e1b7c63: not gated, 16 parquet shards, 3,167 MP4 videos and 1,766 DOM-snapshot zips; there is no LICENSE file in the repository. The card metadata declares MIT for the data.",
+    "details": {
+      "hub_id": "anaisleila/computer-use-data-psai",
+      "hub_revision": "0e1b7c63072833ba58b89dcfcc0cbac45107b0f4",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/anaisleila/computer-use-data-psai/tree/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4",
+      "dataset_profile": {
+        "supervision": [
+          "human computer-use demonstrations",
+          "reasoning steps"
+        ],
+        "modalities": [
+          "screen videos",
+          "screenshots",
+          "DOM snapshots",
+          "keyboard and mouse events",
+          "task metadata"
+        ],
+        "formats": [
+          "Parquet",
+          "MP4",
+          "zip archives",
+          "JSON strings"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 3167,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "unique completed tasks in the train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/anaisleila/computer-use-data-psai/raw/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4/README.md"
+          },
+          {
+            "value": 3267,
+            "unit": "rows",
+            "qualifier": "exact",
+            "population": "train split rows, including 100 duplicate rows",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/anaisleila/computer-use-data-psai/raw/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4/README.md"
+          },
+          {
+            "value": 14740,
+            "unit": "screenshots",
+            "qualifier": "exact",
+            "population": "images embedded in the parquet files, covering 1,349 tasks",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/anaisleila/computer-use-data-psai/raw/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4/README.md"
+          },
+          {
+            "value": 3167,
+            "unit": "video files",
+            "qualifier": "exact",
+            "population": "videos/*.mp4 at revision 0e1b7c63",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/anaisleila/computer-use-data-psai/revision/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4"
+          },
+          {
+            "value": 1766,
+            "unit": "DOM snapshot archives",
+            "qualifier": "exact",
+            "population": "dom_snaps/*.zip at revision 0e1b7c63",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/anaisleila/computer-use-data-psai/revision/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4"
+          }
+        ],
+        "notes": "Rows carry task name, category (browser or computer task), sub-categories, application or website, difficulty, OS label, login requirement, completion time, screenshots, video and DOM file paths, event JSON, reasoning steps and system metadata. Tasks share template IDs across vendors. Deduplicate on unique_data_id. Parquet rows were not recounted.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/anaisleila/computer-use-data-psai/raw/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4/README.md",
+          "https://huggingface.co/api/datasets/anaisleila/computer-use-data-psai/revision/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "aliases",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/anaisleila/computer-use-data-psai/revision/0e1b7c63072833ba58b89dcfcc0cbac45107b0f4",
+        "sha256": "4b2708de50c2368246883bc0d62919cef0c6843c2172c5ec708d168a0670eaf7",
+        "retrieved_at": "2026-10-18T12:12:10Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "599cec3395df4562f867d0262183df8fc0bd6c2c3e871d518298772e4498c94e",
+    "reviewed_at": "2026-10-18T12:12:28Z"
   }
 ]

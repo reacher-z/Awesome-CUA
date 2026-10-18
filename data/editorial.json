@@ -1434,17 +1434,70 @@
           "finish"
         ],
         "evaluation": "The released evaluator compares trajectories with reference actions using longest-common-subsequence-based task reward and completion. Its reversed redundancy metric is the reference/predicted action-length ratio (with 1e-6 denominator smoothing), multiplied by the LLM success flag. LLM success judgments and instruction-constraint checks are separate metrics. Full reference-dependent evaluation coverage cannot be assumed because complete annotated action sequences are not released.",
-        "counts": [],
-        "notes": "README states that task instructions are released but annotated action sequences, apart from the calendar example, will come later. Environment setup targets Android API 33 with uiautomator2 and manual Google-account setup. Public task YAML and evaluator code exist, but benchmark execution and full reference coverage were not verified. No task total is derived from app YAML file counts. Code and data licenses remain unknown.",
+        "counts": [
+          {
+            "value": 164,
+            "unit": "single-app tasks",
+            "qualifier": "exact",
+            "population": "paper Table 2 (v1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2402.06596v1"
+          },
+          {
+            "value": 22,
+            "unit": "cross-app tasks",
+            "qualifier": "exact",
+            "population": "paper Table 2 (v1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2402.06596v1"
+          },
+          {
+            "value": 35,
+            "unit": "constrained tasks",
+            "qualifier": "exact",
+            "population": "paper Table 2 (v1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2402.06596v1"
+          },
+          {
+            "value": 13,
+            "unit": "apps",
+            "qualifier": "exact",
+            "population": "sources of the single-app tasks, paper Appendix C (v1)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2402.06596v1"
+          },
+          {
+            "value": 22,
+            "unit": "cross-app tasks",
+            "qualifier": "exact",
+            "population": "instruction entries in tasks/cross-app.yaml at commit c06a141 (21 distinct instruction strings)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/c06a141557ef310a9f3a3aeef9e7535ba0747087/tasks/cross-app.yaml"
+          },
+          {
+            "value": 35,
+            "unit": "constrained tasks",
+            "qualifier": "exact",
+            "population": "instruction entries in tasks/constrain.yaml at commit c06a141 (34 distinct instruction strings)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/c06a141557ef310a9f3a3aeef9e7535ba0747087/tasks/constrain.yaml"
+          }
+        ],
+        "notes": "README states that task instructions are released but annotated action sequences, apart from the calendar example, will come later. Environment setup targets Android API 33 with uiautomator2 and manual Google-account setup. Public task YAML and evaluator code exist, but benchmark execution and full reference coverage were not verified. Task counts are the paper's Table 2; the released cross-app and constrained YAML files match it, but no single-app total is derived from the per-app YAML files, which also include slack.yaml for an app outside the paper's 13. Code and data licenses remain unknown.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/README.md",
           "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/android_env2/README.md",
           "https://api.github.com/repos/AndroidArenaAgent/AndroidArena/git/trees/main?recursive=1",
           "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/android_env2/observation.py",
           "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/android_env2/actions.py",
-          "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/run_evaluator.py"
+          "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/run_evaluator.py",
+          "https://arxiv.org/html/2402.06596v1",
+          "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/c06a141557ef310a9f3a3aeef9e7535ba0747087/tasks/cross-app.yaml",
+          "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/c06a141557ef310a9f3a3aeef9e7535ba0747087/tasks/constrain.yaml"
         ]
-      }
+      },
+      "repository_revision": "c06a141557ef310a9f3a3aeef9e7535ba0747087"
     },
     "primary_supports": [
       "name",
@@ -1506,6 +1559,37 @@
         "supports": [
           "details.benchmark_protocol"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2402.06596v1",
+        "sha256": "dfd0a45f5adf95f1f3eafc382083e967d400c7b32743f0fbf63a3936665b0362",
+        "retrieved_at": "2026-10-18T15:51:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/c06a141557ef310a9f3a3aeef9e7535ba0747087/tasks/cross-app.yaml",
+        "sha256": "320d4ec670c905ea5f823f5f92076f268ca2c8013c43f4cc99fc511dd4e2b516",
+        "retrieved_at": "2026-10-18T15:51:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/c06a141557ef310a9f3a3aeef9e7535ba0747087/tasks/constrain.yaml",
+        "sha256": "596bc8ac7a7477b451e66985e3f1615cc1cd2ed3c14dc384756166b9f7cdca82",
+        "retrieved_at": "2026-10-18T15:51:22Z"
       }
     ]
   },

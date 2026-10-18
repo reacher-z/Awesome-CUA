@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.04010",
+    "summary": "HarmonyGuard pairs a policy agent that extracts and updates structured security rules from external documents with a utility agent that checks each web-agent reasoning step for both safety and task alignment.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "HarmonyGuard: Toward Safety and Utility"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2508.04010v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version official arXiv abstract page; its title, ordered author list, visible version and normalized abstract SHA match the retained snapshot. Experimental results have not been independently reproduced.",
+    "reviewed_sha256": "cb81c63c9d62b17d07891c27fa3be48155f1a209120b5bf206cddae33121fe11",
+    "reviewed_at": "2026-10-18T15:33:00Z"
+  },
+  {
+    "name": "HarmonyGuard",
+    "kind": "framework",
+    "url": "https://github.com/YurunChen/HarmonyGuard",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Research code that guards web agents: a policy agent turns PDF or webpage policies into structured rules, and a utility agent screens each proposed step for risk and goal drift, then requests a revised action.",
+    "verify_terms": [
+      "HarmonyGuard"
+    ],
+    "documented_by": [
+      "2508.04010"
+    ],
+    "notes": "In the included ST-WebAgentBench loop, a BrowserGym agent reads the flattened accessibility tree and acts on element IDs; the utility agent judges its stated reasoning against the policy set and, for a risky or off-task step, re-prompts the agent and can update the violated policies. The benchmark/ST-WebAgentBench folder is a copy of that benchmark with its own LICENSE file. benchmark/wasp is a submodule pointer without a .gitmodules entry, so the WASP integration code is not in the repository. The README states MIT, but the repository has no license file, so the code license stays unknown. The README lists OpenAI GPT, Anthropic Claude and Alibaba Qwen models as back ends.",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "repository_revision": "d4f15ee5023eef20788da5aa369bc9326b12b1d4",
+      "availability": "Public research code with an ST-WebAgentBench integration; the WASP integration is an unresolved submodule pointer."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/YurunChen/HarmonyGuard/git/trees/d4f15ee5023eef20788da5aa369bc9326b12b1d4?recursive=1",
+        "sha256": "3ff14e7096a96e5cde69319712965597fe0dec574f71732e75fa8591b6b47059",
+        "retrieved_at": "2026-10-18T15:32:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YurunChen/HarmonyGuard/d4f15ee5023eef20788da5aa369bc9326b12b1d4/benchmark/ST-WebAgentBench/st_bench.py",
+        "sha256": "ca858ea147f2c159b4b4b8102b1ce778ae89b63a9ee62129118ed485b7406a07",
+        "retrieved_at": "2026-10-18T15:32:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YurunChen/HarmonyGuard/d4f15ee5023eef20788da5aa369bc9326b12b1d4/harmony_agents/utility_agent.py",
+        "sha256": "4c0b5eea530517c4314b867e5706469ed285294ce75c55c53b7d8a81524eac64",
+        "retrieved_at": "2026-10-18T15:32:20Z"
+      }
+    ],
+    "reviewed_sha256": "728f7cc0c49e5cb92608accdd1759247ac42cd527661c003c07ddf9df4883b0b",
+    "reviewed_at": "2026-10-18T15:33:01Z"
   }
 ]

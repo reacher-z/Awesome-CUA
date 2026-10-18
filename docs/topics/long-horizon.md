@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-99 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+100 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [BrowseComp](https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py) | web | — | [1,266 questions](https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv) | code MIT | OpenAI's 1,266-question benchmark for browsing agents, whose short, verifiable answers require persistent search and navigation across many websites and are graded by a model judge. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/openai/simple-evals/HEAD/browsecomp_eval.py) |
 | [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
 | [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) | web | — | — | code MIT | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md) |
 | [MMInA](https://github.com/shulin16/MMInA) | web | [2404.09992](https://arxiv.org/abs/2404.09992) (2024) | — | — | Multimodal web tasks in a WebArena-based environment that chain from 1 to 10 hops across sites such as a shopping store and Wikipedia, testing long-chain reasoning. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md) |

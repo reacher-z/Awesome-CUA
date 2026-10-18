@@ -63143,5 +63143,119 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "component:openai/simple-evals/browsecomp",
+    "name": "BrowseComp",
+    "kind": "benchmark",
+    "url": "https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "long-horizon"
+    ],
+    "summary": "OpenAI's 1,266-question benchmark for browsing agents, whose short, verifiable answers require persistent search and navigation across many websites and are graded by a model judge.",
+    "scope": "core",
+    "verify_terms": [
+      "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openai/simple-evals/HEAD/browsecomp_eval.py"
+    ],
+    "publisher_id": "organization:openai",
+    "notes": "This record covers the BrowseComp reference implementation and question set that OpenAI publishes in simple-evals. The launch page (https://openai.com/index/browsecomp/) answered HTTP 403 to the catalog's client and was not used as evidence. The paper (arXiv 2504.12516) is not in the retained archive and no curated receipt cites its arXiv ID, so it is not linked yet. The simple-evals README says the repository is no longer updated for new models but continues to host the BrowseComp reference implementation. The README lists BrowseComp next to an MIT License link, but this record does not treat that as a declaration for the question data, so the data license stays unknown. The derivative BrowseComp-Plus (fixed-corpus retrieval rather than live browsing) is a separate resource and is not covered here.",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "open-web information seeking",
+          "persistent multi-site search"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [],
+        "evaluation": "A grader model extracts the final answer from the response and judges it correct or incorrect against the decrypted reference answer; accuracy is the share judged correct. The reference implementation sends each question to any sampler and does not prescribe browsing tools or an action space.",
+        "counts": [
+          {
+            "value": 1266,
+            "unit": "questions",
+            "qualifier": "exact",
+            "population": "browse_comp_test_set.csv",
+            "basis": "computed",
+            "evidence_url": "https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv"
+          }
+        ],
+        "notes": "The count is the number of data rows in the released CSV, whose problem and answer fields are XOR-encrypted with a per-row canary and carry a problem_topic label. Results depend on the agent's browsing tools, the grader model and the number of repeats; record these with a score.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/openai/simple-evals/HEAD/browsecomp_eval.py",
+          "https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv"
+        ]
+      },
+      "repository_url": "https://github.com/openai/simple-evals"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv",
+        "sha256": "7b24471cd5b3eb2a46830a14802b5c029ea62f488ff75a0f88af7923d1454abf",
+        "retrieved_at": "2026-10-18T11:08:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "release_status"
+        ],
+        "url": "https://raw.githubusercontent.com/openai/simple-evals/HEAD/README.md",
+        "sha256": "d9647c4a0e34cd9b2b528ff6986141734aac6f5f2f18a068eeadb2af0b29786f",
+        "retrieved_at": "2026-10-18T11:08:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/openai/simple-evals/HEAD/LICENSE",
+        "sha256": "d831db55645e47ca8e491c5a0e37f1ee744d7b10bf5aa8d50146c795ac0176c0",
+        "retrieved_at": "2026-10-18T11:08:35Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/openai/simple-evals/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:08:35Z",
+          "basis": "Repository LICENSE for the simple-evals code, including the BrowseComp reference implementation; not a declaration for the question data."
+        },
+        "reason": "The simple-evals LICENSE is the standard MIT text and covers the evaluation code; the question CSV is hosted separately and has no data-license declaration in the inspected sources.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/openai/simple-evals/HEAD/LICENSE"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.benchmark_protocol",
+      "details.repository_url"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0bfb33cfdf5fa0e0d7da48068cc86c5a22acc755979be4a2b46f8a821cc44b74",
+    "reviewed_at": "2026-10-18T11:09:40Z"
   }
 ]

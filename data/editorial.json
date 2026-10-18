@@ -63143,5 +63143,116 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ChimeraX-SessionStates",
+    "kind": "infrastructure",
+    "url": "https://github.com/ShiinaHiiragi/chimerax-states",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "science",
+      "evaluation",
+      "state-tracking"
+    ],
+    "scope": "adjacent",
+    "summary": "ChimeraX bundle from ScienceBoard that adds a states command writing the traversed session state to raw and flattened JSON, so the benchmark's verifiers can check molecular-visualization tasks.",
+    "verify_terms": [
+      "ChimeraX-SessionStates"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:os-copilot/scienceboard",
+        "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/21b5eb0f1d00898f7de9e84c3d33a87c2f2b3c3e/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "scope",
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/21b5eb0f1d00898f7de9e84c3d33a87c2f2b3c3e/README.md",
+        "sha256": "4c3fe93aa740dbf4a279a246ddd836f2590a2a36f39b820abe166e38cb484577",
+        "retrieved_at": "2026-10-18T12:10:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.release_tag",
+          "details.artifact_type",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ShiinaHiiragi/chimerax-states/git/trees/fcae50622838a219d0c49d7765f7f5d5e4fe2968?recursive=1",
+        "sha256": "4abd4a4ad2ab01fc20a9273e23c4c0360f97fc6aa3afe50762125f63b7d872b4",
+        "retrieved_at": "2026-10-18T12:10:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.release_tag"
+        ],
+        "url": "https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/fcae50622838a219d0c49d7765f7f5d5e4fe2968/bundle_info.xml",
+        "sha256": "eb1cfe965714ef81572a8b0ceb795615d1ccd81afeb9cf70a14aebf418c7bbc3",
+        "retrieved_at": "2026-10-18T12:10:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/fcae50622838a219d0c49d7765f7f5d5e4fe2968/src/cmds.py",
+        "sha256": "8ec54222b44f770a0ba669822ef0a0b3d520fd3ea8b414026eb8253d6ca18e80",
+        "retrieved_at": "2026-10-18T12:10:17Z"
+      }
+    ],
+    "details": {
+      "artifact_type": "ChimeraX bundle",
+      "availability": "Public bundle source with version tags 0.2 to 0.5; it is installed into a ChimeraX application with the devel install command.",
+      "repository_revision": "fcae50622838a219d0c49d7765f7f5d5e4fe2968",
+      "release_tag": "0.5"
+    },
+    "notes": "The ScienceBoard README lists this repository among its modified applications as \"a plugin for ChimeraX\" and asks new applications to expose their inner state the same way. bundle_info.xml (version 0.5) describes it as revealing ChimeraX inner states, mainly for the SciBench project. Besides states, the bundle adds destroy, which hides the command-line tool, and clear, which empties the home panel's file history. Tag 0.5 points to the inspected commit, and the README's install example still uses 0.2.",
+    "editorial_reviewed": true,
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No license file is in the inspected tree and GitHub reports no license.",
+        "evidence_urls": [
+          "https://api.github.com/repos/ShiinaHiiragi/chimerax-states/git/trees/fcae50622838a219d0c49d7765f7f5d5e4fe2968?recursive=1"
+        ]
+      }
+    },
+    "reviewed_sha256": "7460ca067303f30cbb13e4c29e40808e3fac8bf446094aaae5d45c796fbf023e",
+    "reviewed_at": "2026-10-18T12:10:55Z"
   }
 ]

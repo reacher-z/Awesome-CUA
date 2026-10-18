@@ -63143,5 +63143,142 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:8697c910c05d48152916",
+    "name": "AndroidDaily end-to-end tasks",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation"
+    ],
+    "summary": "Step-GUI's AndroidDaily task sheet: 235 Chinese-language end-to-end tasks in everyday Android apps, each labeled by scenario, app, information-processing type, complexity, ambiguity, personalization and difficulty.",
+    "scope": "core",
+    "verify_terms": [
+      "AndroidDaily"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.repository_url",
+      "details.benchmark_protocol"
+    ],
+    "notes": "The Hub release is one CSV, Android Daily.csv, with 235 task rows; the card's 3,146-action static set is not in this repository. Instructions are in Chinese although the card metadata lists English. The sheet has no reference answers, checker or trajectories; the card runs tasks through the separate GELab-Zero runtime on a USB-connected Android device. arxiv:2605.27761, a later AndroidDaily benchmark paper with overlapping authors, is not cited by this card and is not linked.",
+    "details": {
+      "hub_id": "stepfun-ai/AndroidDaily",
+      "hub_revision": "1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/tree/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0",
+      "repository_url": "https://github.com/stepfun-ai/gelab-zero",
+      "benchmark_protocol": {
+        "focus": [
+          "everyday end-to-end tasks in Android apps"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "task instructions",
+          "scenario and app metadata"
+        ],
+        "actions": [],
+        "evaluation": "The task sheet defines tasks and difficulty labels only. It contains no reference answers, success checker or scoring script, so no metric is established by this release; execution uses the separately released GELab-Zero runtime on a real Android device.",
+        "counts": [
+          {
+            "value": 235,
+            "unit": "end-to-end tasks",
+            "qualifier": "exact",
+            "population": "rows of Android Daily.csv at Hub revision 1458a5db",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/Android%20Daily.csv"
+          },
+          {
+            "value": 235,
+            "unit": "end-to-end tasks",
+            "qualifier": "exact",
+            "population": "AndroidDaily end-to-end set as described in the dataset card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/README.md"
+          },
+          {
+            "value": 3146,
+            "unit": "static actions",
+            "qualifier": "exact",
+            "population": "AndroidDaily static set described in the dataset card; not included in this Hub repository",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/README.md"
+          }
+        ],
+        "notes": "Columns give the instruction, scenario, app name, information-processing type, task complexity, ambiguity, personalization, overall difficulty, a task tag and a pre-setup flag. Computed from the CSV: 5 scenarios, 72 distinct app-name values, and 85 easy, 91 medium and 59 hard tasks. Static actions and end-to-end tasks are different units and are not summed.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/README.md",
+          "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/Android%20Daily.csv",
+          "https://huggingface.co/api/datasets/stepfun-ai/AndroidDaily"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/datasets/stepfun-ai/AndroidDaily",
+        "sha256": "3e88616b76aec15dfdc051185c95c708f1c97002e89c8a49e6950ced57dea5f7",
+        "retrieved_at": "2026-10-18T11:56:39Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/Android%20Daily.csv",
+        "sha256": "3e14b25bf7bf610be3e479cb5d8434c202758b15247746802eb55e5dbca926b4",
+        "retrieved_at": "2026-10-18T11:56:39Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ]
+      }
+    ],
+    "paper_ids": [
+      "2512.15431"
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/README.md",
+          "retrieved_at": "2026-10-18T11:56:38Z",
+          "basis": "Publisher dataset-card declaration for the task sheet; it grants no rights in the third-party apps that the tasks name."
+        },
+        "reason": "Publisher dataset-card declaration for the task sheet; it grants no rights in the third-party apps that the tasks name.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/stepfun-ai/AndroidDaily/raw/1458a5dba59823d83b3f80a3a8e8a66c5c7d0ed0/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "bf1d209d3b53bd1a4262e52e386bae18b9573ca5f3e435abeaa3331053e8a1e0",
+    "reviewed_at": "2026-10-18T11:57:32Z"
   }
 ]

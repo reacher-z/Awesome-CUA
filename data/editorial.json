@@ -63143,5 +63143,105 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:0c400260635b7e4ab7c0",
+    "name": "GUI-Actor 3B Qwen2.5-VL",
+    "kind": "model",
+    "url": "https://huggingface.co/microsoft/GUI-Actor-3B-Qwen2.5-VL",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding"
+    ],
+    "summary": "GUI-Actor grounding checkpoint fine-tuned from Qwen2.5-VL-3B-Instruct with an attention-based action head, with about 3.8B BF16 parameters and a config naming a pointer variant of the Qwen2.5-VL class, under MIT.",
+    "scope": "core",
+    "verify_terms": [
+      "microsoft/GUI-Actor-3B-Qwen2.5-VL"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/microsoft/GUI-Actor-3B-Qwen2.5-VL/raw/5fb97348752cb3d50be9709f47d9ae6c99725949/README.md"
+    ],
+    "editorial_reviewed": true,
+    "family_url": "https://github.com/microsoft/GUI-Actor",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model"
+    ],
+    "notes": "The card's heading says GUI-Actor-7B with a Qwen2.5-VL-7B backbone, but its metadata, text and usage code name Qwen2.5-VL-3B-Instruct and this repository; the API reports 3,787,653,120 BF16 parameters and the Qwen2_5_VLForConditionalGenerationWithPointer class, which loads through the gui_actor package. The Hub manifest lists two Safetensors shards, an index and trainer_state.json. ScreenSpot results in the card are publisher-reported and were not reproduced. MIT is the card's weight declaration; Qwen2.5-VL and training-data terms are separate.",
+    "details": {
+      "hub_id": "microsoft/GUI-Actor-3B-Qwen2.5-VL",
+      "hub_revision": "5fb97348752cb3d50be9709f47d9ae6c99725949",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/microsoft/GUI-Actor-3B-Qwen2.5-VL/tree/5fb97348752cb3d50be9709f47d9ae6c99725949",
+      "repository_url": "https://github.com/microsoft/GUI-Actor",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGenerationWithPointer",
+      "parameter_label": "3B",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/microsoft/GUI-Actor-3B-Qwen2.5-VL",
+        "sha256": "f2a9b098a0b5f104c1692949849ee4f92f333b74c3cd51c51ed03847386f3464",
+        "retrieved_at": "2026-10-18T12:01:43Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "summary",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.base_model",
+          "details.architecture",
+          "details.listed_weight_files"
+        ]
+      }
+    ],
+    "documented_by": [
+      "2506.03143"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:66096ad4057a3d3726f5",
+        "evidence_url": "https://huggingface.co/microsoft/GUI-Actor-3B-Qwen2.5-VL/raw/5fb97348752cb3d50be9709f47d9ae6c99725949/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/microsoft/GUI-Actor-3B-Qwen2.5-VL/raw/5fb97348752cb3d50be9709f47d9ae6c99725949/README.md",
+          "retrieved_at": "2026-10-18T12:01:43Z",
+          "basis": "Publisher model-card declaration for this checkpoint; base-model and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for this checkpoint; base-model and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/microsoft/GUI-Actor-3B-Qwen2.5-VL/raw/5fb97348752cb3d50be9709f47d9ae6c99725949/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "44bd4da4738b849135cd0ec03f8c6ffe6d1bac113b649178b9cbcb3ba295f7c4",
+    "reviewed_at": "2026-10-18T12:02:04Z"
   }
 ]

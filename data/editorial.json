@@ -63143,5 +63143,208 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-Xplore",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/9211sun/GUI-Xplore",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "video",
+      "mobile-navigation",
+      "screen-understanding",
+      "data-generation"
+    ],
+    "summary": "Per-app Android exploration videos with screenshot and action sequences, view hierarchies and question-answer pairs for five tasks, from app overview and page analysis to action recall and sequence verification.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Xplore"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+    ],
+    "notes": "The paper's arXiv HTML links github.com/921112343/GUI-Xplore, whose README names this Hub dataset as the release; the card itself does not cite the paper. View-hierarchy files use Android uiautomator classes and Android package names, and the paper describes collection with DroidBot and crowd workers on cloud mobile devices. The card's summary line gives 32,569 QA pairs while its split table totals 35,316. The repository README lists the Xplore-Agent model, checkpoints and evaluation scripts as not yet released. Data license is CC-BY-4.0 per card metadata; it does not settle rights in third-party app content.",
+    "details": {
+      "hub_id": "9211sun/GUI-Xplore",
+      "hub_revision": "ebac33a0fb368e005af499b5594db4278f49d3da",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/tree/ebac33a0fb368e005af499b5594db4278f49d3da",
+      "repository_url": "https://github.com/921112343/GUI-Xplore",
+      "dataset_profile": {
+        "supervision": [
+          "exploration recordings",
+          "question-answer annotations",
+          "action sequences"
+        ],
+        "modalities": [
+          "exploration videos",
+          "screenshots",
+          "view hierarchies",
+          "actions",
+          "question-answer pairs"
+        ],
+        "formats": [
+          "MP4",
+          "PNG",
+          "JPEG",
+          "XML",
+          "JSON",
+          "CSV"
+        ],
+        "splits": [
+          "auto",
+          "manual_train",
+          "manual_test"
+        ],
+        "counts": [
+          {
+            "value": 312,
+            "unit": "apps",
+            "qualifier": "exact",
+            "population": "all splits (207 auto, 85 manual_train, 20 manual_test)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 34367,
+            "unit": "screenshots",
+            "qualifier": "exact",
+            "population": "all splits",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 41293,
+            "unit": "actions",
+            "qualifier": "exact",
+            "population": "all splits",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 15934,
+            "unit": "question-answer samples",
+            "qualifier": "exact",
+            "population": "auto split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 16744,
+            "unit": "question-answer samples",
+            "qualifier": "exact",
+            "population": "manual_train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 2638,
+            "unit": "question-answer samples",
+            "qualifier": "exact",
+            "population": "manual_test split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 115,
+            "unit": "hours of exploration video",
+            "qualifier": "more-than",
+            "population": "all apps",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md"
+          },
+          {
+            "value": 312,
+            "unit": "MP4 exploration videos",
+            "qualifier": "exact",
+            "population": "files at Hub revision ebac33a0 (207 auto, 85 manual_train, 20 manual_test)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/9211sun/GUI-Xplore/revision/ebac33a0fb368e005af499b5594db4278f49d3da"
+          }
+        ],
+        "notes": "Reported counts come from the card's split table. A script over the 15 QA JSON files at revision ebac33a0 counted 15,934 auto, 16,744 manual_train and 2,634 manual_test entries (35,312 in total), so the card's manual_test figure is four higher than the released files. Apps, screenshots, actions, QA samples and video hours are different units and are not summed.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/README.md",
+          "https://huggingface.co/api/datasets/9211sun/GUI-Xplore/revision/ebac33a0fb368e005af499b5594db4278f49d3da"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "environments"
+        ],
+        "url": "https://huggingface.co/api/datasets/9211sun/GUI-Xplore/revision/ebac33a0fb368e005af499b5594db4278f49d3da",
+        "sha256": "e2346ed137224f040c012a47d46f613facf449ec418a9ecbfecf97c0254d2fa3",
+        "retrieved_at": "2026-10-18T12:28:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.repository_url",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/921112343/GUI-Xplore/3e87e22264a587a3b4ff093a0b7e35d76d1cc554/README.md",
+        "sha256": "596648200fb473192bbab00f7b7e01680ec169c67d6a7ebf7978f299f1f4983d",
+        "retrieved_at": "2026-10-18T12:28:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2503.17709v1",
+        "sha256": "b7d8ea43f0db8c7b2432cee39e8bfb262c9c4bfd8a7290c0b50427d8eb1ac3fd",
+        "retrieved_at": "2026-10-18T12:29:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/9211sun/GUI-Xplore/raw/ebac33a0fb368e005af499b5594db4278f49d3da/manual_test/data/vh/com_android_documentsui/vh_1724467408.9856646.xml",
+        "sha256": "03b665dfc0b49e1721676ce9ffc63532c3b1589304fe6f63ac59f690ab61f76e",
+        "retrieved_at": "2026-10-18T12:28:52Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2503.17709",
+        "evidence_url": "https://arxiv.org/html/2503.17709v1"
+      }
+    ],
+    "reviewed_sha256": "3a143538ccdd7ed4ec28974153b43cf44ab2f16dee46e7f74c6fb64e7ac458da",
+    "reviewed_at": "2026-10-18T12:30:16Z"
   }
 ]

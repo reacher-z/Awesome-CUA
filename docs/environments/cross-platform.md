@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (48)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -70,6 +70,7 @@
 | [InfiGUI-G1](https://github.com/InfiXAI/InfiGUI-G1) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | code Apache-2.0 | InfiGUI-G1 3B and 7B grounding models trained with Adaptive Exploration Policy Optimization, which samples several candidate answers per pass under an adaptive exploration reward. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/InfiXAI/InfiGUI-G1/HEAD/README.md) |
 | [InfiGUI-G1 7B](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | weights apache-2.0 | A GUI-grounding checkpoint trained with adaptive exploration rewards and multiple candidate answers to improve instruction-to-element alignment. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B/raw/main/README.md) |
 | [InfiGUI-R1](https://github.com/Reallm-Labs/InfiGUI-R1) | cross-platform | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | code Apache-2.0 | 3B GUI agent trained in two stages: distilling spatial reasoning from teacher models, then reinforcement learning that rewards accurate sub-goals and trains error recovery. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Reallm-Labs/InfiGUI-R1/HEAD/README.md) |
+| [KV-Ground 8B (BaseGuiOwl1.5 0315)](https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315) | desktop, cross-platform | — | weights cc-by-nc-sa-4.0 | GUI-grounding checkpoint post-trained from GUI-Owl-1.5-8B-Instruct with SFT and GRPO on cleaned and synthesized high-resolution data, aimed at locating elements in large screenshots. | [✓ 2026‑10‑18](https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315/raw/main/README.md) |
 | [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas) | cross-platform | [2410.23218](https://arxiv.org/abs/2410.23218) (2024) | code Apache-2.0 | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Atlas/HEAD/README.md) |
 | [OS-Atlas Base 4B](https://huggingface.co/OS-Copilot/OS-Atlas-Base-4B) | cross-platform | — | weights apache-2.0 | OS-Atlas base checkpoint with about 4.1B parameters, fine-tuned from InternVL2-4B and loaded in Transformers through custom InternVL chat model code. | [✓ 2026‑10‑16](https://huggingface.co/api/models/OS-Copilot/OS-Atlas-Base-4B) |
 | [OS-Atlas Base 7B](https://huggingface.co/OS-Copilot/OS-Atlas-Base-7B) | cross-platform | — | weights apache-2.0 | OS-Atlas base checkpoint fine-tuned from Qwen2-VL-7B-Instruct, using the standard Qwen2-VL architecture in Transformers with about 8.3B BF16 parameters. | [✓ 2026‑10‑16](https://huggingface.co/api/models/OS-Copilot/OS-Atlas-Base-7B) |

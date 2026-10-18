@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (24)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -43,6 +43,7 @@ All entries in this section: web.
 | [InfiGUI-G1 7B](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | weights apache-2.0 | A GUI-grounding checkpoint trained with adaptive exploration rewards and multiple candidate answers to improve instruction-to-element alignment. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B/raw/main/README.md) |
 | [InfiGUI-R1](https://github.com/Reallm-Labs/InfiGUI-R1) | cross-platform | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | code Apache-2.0 | 3B GUI agent trained in two stages: distilling spatial reasoning from teacher models, then reinforcement learning that rewards accurate sub-goals and trains error recovery. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Reallm-Labs/InfiGUI-R1/HEAD/README.md) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
+| [KV-Ground 8B (BaseGuiOwl1.5 0315)](https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315) | desktop, cross-platform | — | weights cc-by-nc-sa-4.0 | GUI-grounding checkpoint post-trained from GUI-Owl-1.5-8B-Instruct with SFT and GRPO on cleaned and synthesized high-resolution data, aimed at locating elements in large screenshots. | [✓ 2026‑10‑18](https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315/raw/main/README.md) |
 | [MobileRL 9B checkpoint](https://huggingface.co/xuyifan/MobileRL-9B) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | weights apache-2.0 | A GLM-4.1V-based mobile action checkpoint released by the MobileRL project for Android interaction. | [✓ 2026‑10‑17](https://huggingface.co/api/models/xuyifan/MobileRL-9B) |
 | [PAE LLaVA 7B](https://huggingface.co/yifeizhou/pae-llava-7b) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | weights cc-by-nc-4.0 | A released LLaVA checkpoint for visual browser interaction from the PAE autonomous task-proposal and policy-learning system. | [✓ 2026‑10‑17](https://huggingface.co/yifeizhou/pae-llava-7b/raw/main/README.md) |
 | [UI-AGILE](https://github.com/KDEGroup/UI-AGILE) | cross-platform | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | code MIT | GUI agent trained by RL with a continuous reward, a simple-thinking reward and cropping-based resampling on about 9k samples, plus a plug-in decomposed grounding-and-selection inference method. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/KDEGroup/UI-AGILE/HEAD/README.md) |

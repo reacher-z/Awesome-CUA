@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -90,6 +90,7 @@
 | [InfiGUI-G1](https://github.com/InfiXAI/InfiGUI-G1) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | code Apache-2.0 | InfiGUI-G1 3B and 7B grounding models trained with Adaptive Exploration Policy Optimization, which samples several candidate answers per pass under an adaptive exploration reward. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/InfiXAI/InfiGUI-G1/HEAD/README.md) |
 | [InfiGUI-G1 7B](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | weights apache-2.0 | A GUI-grounding checkpoint trained with adaptive exploration rewards and multiple candidate answers to improve instruction-to-element alignment. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B/raw/main/README.md) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
+| [KV-Ground 8B (BaseGuiOwl1.5 0315)](https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315) | desktop, cross-platform | — | weights cc-by-nc-sa-4.0 | GUI-grounding checkpoint post-trained from GUI-Owl-1.5-8B-Instruct with SFT and GRPO on cleaned and synthesized high-resolution data, aimed at locating elements in large screenshots. | [✓ 2026‑10‑18](https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315/raw/main/README.md) |
 | [Magma](https://github.com/microsoft/Magma) | web | — | code MIT | Microsoft foundation model for multimodal agents, pretrained with Set-of-Mark and Trace-of-Mark objectives on UI, robotics and video data and fine-tunable for web and mobile UI navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/Magma/HEAD/README.md) |
 | [MAI-UI 8B](https://huggingface.co/Tongyi-MAI/MAI-UI-8B) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | weights apache-2.0 | A released MAI-UI checkpoint combining mobile GUI actions, agent-user interaction and tool-use-oriented navigation. | [✓ 2026‑10‑17](https://huggingface.co/Tongyi-MAI/MAI-UI-8B/raw/main/README.md) |
 | [OmniParser v2 model bundle](https://huggingface.co/microsoft/OmniParser-v2.0) | unspecified | — | weights Mixed by component: icon_detect = AGPL-3.0; icon_detect_v3 = MIT; icon_caption = MIT | A screen-parsing weight bundle containing icon-region detectors and an icon captioner for converting screenshots into agent-readable interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |

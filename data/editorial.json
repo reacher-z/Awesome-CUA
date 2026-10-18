@@ -63143,5 +63143,112 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OSWorld-Verified trajectories",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_verified_trajs",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation"
+    ],
+    "summary": "Archived OSWorld-Verified evaluation runs of many computer-use agents and step budgets on Ubuntu, each archive holding screenshots, actions, model reasoning and per-task results for analysis.",
+    "scope": "core",
+    "verify_terms": [
+      "OSWorld-Verified Model Trajectories"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/xlangai/ubuntu_osworld_verified_trajs/raw/5473c39e42a538a187a9b2c2b499db59d560fd8c/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/OS-World/OS-World.github.io/62f8466dbe8b4d67c104b5ead3f8271da01aa09d/index.html"
+      }
+    ],
+    "notes": "The OSWorld project page says all verified trajectories are published in this dataset. Hub API at revision 5473c39e: not gated, 100 run archives (99 zip, one tar.gz) plus a README and root all_result.json and args.json files that belong to a single run. Archive names identify the agent or model and often the step budget. The card's totals (15+ model variants, 1000+ episodes, last updated August 2025) predate later uploads, and it calls training on these runs not recommended. Archives were not downloaded. The card declares MIT for the data; outputs of third-party models keep their own terms.",
+    "details": {
+      "hub_id": "xlangai/ubuntu_osworld_verified_trajs",
+      "hub_revision": "5473c39e42a538a187a9b2c2b499db59d560fd8c",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_verified_trajs/tree/5473c39e42a538a187a9b2c2b499db59d560fd8c",
+      "dataset_profile": {
+        "supervision": [
+          "agent evaluation trajectories"
+        ],
+        "modalities": [
+          "screenshots",
+          "actions",
+          "model reasoning",
+          "task results"
+        ],
+        "formats": [
+          "zip archives",
+          "tar.gz archive",
+          "JSON"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 100,
+            "unit": "run archives",
+            "qualifier": "exact",
+            "population": "zip and tar.gz files at revision 5473c39e",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_verified_trajs/revision/5473c39e42a538a187a9b2c2b499db59d560fd8c"
+          }
+        ],
+        "notes": "A run archive is one agent configuration evaluated on OSWorld-Verified, not one task or episode. Step budgets in archive names range over 15, 50, 100 and more steps, and several agents have one archive per budget. Episode and task counts inside archives were not recounted.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/xlangai/ubuntu_osworld_verified_trajs/raw/5473c39e42a538a187a9b2c2b499db59d560fd8c/README.md",
+          "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_verified_trajs/revision/5473c39e42a538a187a9b2c2b499db59d560fd8c"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_verified_trajs/revision/5473c39e42a538a187a9b2c2b499db59d560fd8c",
+        "sha256": "eec08ba92c8032dd5b978c2a488a27d9193c82be741790da7541fe5c19b96928",
+        "retrieved_at": "2026-10-18T12:10:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-World/OS-World.github.io/62f8466dbe8b4d67c104b5ead3f8271da01aa09d/index.html",
+        "sha256": "bf37e00ce23e8c5472d485a6eb3b291ffa2de220b44040402516e41cbc48c516",
+        "retrieved_at": "2026-10-18T12:10:52Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3e115bb35b01a9be2c797effd4cac3e9ee2ff10036c0c7df648126db0a5a11fc",
+    "reviewed_at": "2026-10-18T12:11:08Z"
   }
 ]

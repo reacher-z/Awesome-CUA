@@ -1,16 +1,16 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
-  "bibliographic_records": 2715,
-  "arxiv_active_records": 2702,
+  "total_records": 3177,
+  "curated_records": 1616,
+  "bibliographic_records": 2716,
+  "arxiv_active_records": 2703,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
-  "arxiv_archive_records": 2838,
+  "arxiv_archive_records": 2839,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
-  "discovery_identifiers": 4239,
+  "discovery_identifiers": 4240,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
@@ -192,22 +192,22 @@
     "dataset": 86,
     "framework": 75,
     "infrastructure": 14,
-    "model": 98,
-    "paper": 2697,
+    "model": 99,
+    "paper": 2698,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 300,
-    "cross-platform": 197,
-    "desktop": 322,
+    "android": 301,
+    "cross-platform": 198,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
-    "unspecified": 377,
-    "web": 621,
+    "unspecified": 378,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -269,14 +269,14 @@
       "windows": 1
     },
     "model": {
-      "android": 24,
-      "cross-platform": 47,
-      "desktop": 24,
+      "android": 25,
+      "cross-platform": 48,
+      "desktop": 25,
       "ios": 4,
       "linux": 6,
       "macos": 4,
       "unspecified": 2,
-      "web": 28,
+      "web": 29,
       "windows": 5
     },
     "paper": {
@@ -287,7 +287,7 @@
       "ios": 8,
       "linux": 18,
       "macos": 14,
-      "unspecified": 341,
+      "unspecified": 342,
       "web": 441,
       "windows": 37
     },
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0

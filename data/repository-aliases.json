@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:thudm/glm-4.1v-thinking",
+    "target_id": "github:zai-org/glm-v",
+    "repository_id": 1010055053,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:11:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/THUDM/GLM-4.1V-Thinking",
+        "resolved_url": "https://api.github.com/repositories/1010055053",
+        "repository_id": 1010055053,
+        "full_name": "zai-org/GLM-V",
+        "html_url": "https://github.com/zai-org/GLM-V",
+        "retrieved_at": "2026-10-18T11:09:53Z",
+        "sha256": "3caa5a1c6a030d8a7b358b8f475df74c1339ffea330ab761f4a72e0d0f8bd380"
+      },
+      {
+        "url": "https://api.github.com/repos/zai-org/GLM-V",
+        "resolved_url": "https://api.github.com/repos/zai-org/GLM-V",
+        "repository_id": 1010055053,
+        "full_name": "zai-org/GLM-V",
+        "html_url": "https://github.com/zai-org/GLM-V",
+        "retrieved_at": "2026-10-18T11:09:45Z",
+        "sha256": "3caa5a1c6a030d8a7b358b8f475df74c1339ffea330ab761f4a72e0d0f8bd380"
+      }
+    ]
   }
 ]

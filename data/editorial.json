@@ -63143,5 +63143,128 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GLM-V",
+    "kind": "model",
+    "url": "https://github.com/zai-org/GLM-V",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "reward-models"
+    ],
+    "summary": "Z.ai repository for the open-weight GLM-4.1V-Thinking, GLM-4.5V and GLM-4.6V vision-language models, with GUI-agent prompt examples for mobile, PC and web plus a released VLM reward system.",
+    "scope": "adjacent",
+    "aliases": [
+      "GLM-4.5V",
+      "GLM-4.6V",
+      "GLM-4.1V-Thinking"
+    ],
+    "verify_terms": [
+      "GLM-4.5V"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zai-org/GLM-V/HEAD/README.md"
+    ],
+    "notes": "General-purpose vision-language model family; the README lists GUI agent operation (screen reading, icon recognition, desktop operation assistance) as one GLM-4.5V capability, so the record is adjacent. The inspected tree has examples/gui-agent prompt and output-handling code for GLM-4.1V and GLM-4.5V, and glmv_reward scripts named for AndroidWorld, OSWorld and WebVoyager. Checkpoints are hosted separately on Hugging Face and ModelScope and are not counted here. The README states (2026-09-02) that the repository will no longer be maintained and points to GLM-5 for newer models. github.com/THUDM/GLM-4.1V-Thinking resolves to the same repository 1010055053 and is recorded as a repository alias. The LICENSE file is Apache-2.0 text for repository code; checkpoint weights terms were not reviewed and stay unknown. Reported GUI benchmark scores were not reproduced.",
+    "details": {
+      "availability": "Published source and examples; checkpoints hosted on Hugging Face and ModelScope; repository marked no longer maintained",
+      "repository_url": "https://github.com/zai-org/GLM-V",
+      "repository_tree_sha": "933a49c79979de86cb09bf558d9beb1f10e35b76"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/zai-org/GLM-V",
+        "sha256": "3caa5a1c6a030d8a7b358b8f475df74c1339ffea330ab761f4a72e0d0f8bd380",
+        "retrieved_at": "2026-10-18T11:09:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "environments",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/zai-org/GLM-V/git/trees/main?recursive=1",
+        "sha256": "b37cec03ba134f0230c7711182f9f1920387f162506e59b64a90c0ed4b714c70",
+        "retrieved_at": "2026-10-18T11:09:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/zai-org/GLM-V/HEAD/LICENSE",
+        "sha256": "086c6e7f5082b4640dfb03a892f32504f24afd247c702c38a3aae8c3474c54f0",
+        "retrieved_at": "2026-10-18T11:09:52Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details",
+      "aliases"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f518aecf28e2a4166b537a8db59797a67fd5e0d8b3d698751898d40b8aa3ad7d",
+    "reviewed_at": "2026-10-18T11:10:25Z",
+    "documented_by": [
+      "2507.01006"
+    ]
+  },
+  {
+    "id": "arxiv:2507.01006",
+    "name": "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2507.01006",
+    "summary": "Reports the GLM-4.1V-Thinking, GLM-4.5V and GLM-4.6V vision-language models, trained with curriculum-sampled reinforcement learning and evaluated on 42 benchmarks that include grounding and GUI-agent tasks.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "grounding"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "GLM-4.5V and GLM-4.1V-Thinking"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2507.01006&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract, which lists GUI-based agents among several evaluated capabilities of a general-purpose model family. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d60dbdd11d02ed57c90fc20444015a139a9e3382d2f718c0a1600b8fef4e81bf",
+    "reviewed_at": "2026-10-18T11:11:08Z"
   }
 ]

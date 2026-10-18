@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T15:50:51Z",
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -191,7 +191,7 @@
     "company": 16,
     "dataset": 86,
     "framework": 75,
-    "infrastructure": 14,
+    "infrastructure": 15,
     "model": 98,
     "paper": 2697,
     "product": 20,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -265,7 +265,7 @@
       "ios": 1,
       "linux": 4,
       "macos": 2,
-      "web": 5,
+      "web": 6,
       "windows": 1
     },
     "model": {
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0

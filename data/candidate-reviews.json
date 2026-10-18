@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:camel-ai/agent",
+    "url": "https://github.com/camel-ai/agent",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API both return 404 with no rename redirect. The listing labels it OWL, whose repository camel-ai/owl is a separate candidate."
   }
 ]

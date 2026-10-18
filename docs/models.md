@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**99 resources:** [Web (15)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -26,6 +26,7 @@ All entries in this section: web.
 | [PAE LLaVA 7B](https://huggingface.co/yifeizhou/pae-llava-7b) | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | weights cc-by-nc-4.0 | A released LLaVA checkpoint for visual browser interaction from the PAE autonomous task-proposal and policy-learning system. | [✓ 2026‑10‑17](https://huggingface.co/yifeizhou/pae-llava-7b/raw/main/README.md) |
 | [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. | [✓ 2026‑10‑17](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md) |
 | [UIX-Qwen2](https://huggingface.co/neulab/UIX-Qwen2) | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | A MultiUI-trained visual-language checkpoint for text-rich webpage understanding and interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/neulab/UIX-Qwen2/raw/main/README.md) |
+| [UIX-Qwen2-Mind2Web](https://huggingface.co/neulab/UIX-Qwen2-Mind2Web) | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | UIX-Qwen2 further fine-tuned on the Mind2Web training set; the MultiUI paper evaluates it on predicting the next web action from a screenshot, the task and previous actions. | [✓ 2026‑10‑18](https://huggingface.co/neulab/UIX-Qwen2-Mind2Web/raw/cf1654a2df366e87c4ec80009bb958395afe3c35/README.md) |
 | [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
 | [WebRL Llama 3.1 8B](https://huggingface.co/zai-org/webrl-llama-3.1-8b) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | weights other | A WebRL browser-policy checkpoint for performing actions in the five website environments of WebArena. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/webrl-llama-3.1-8b/raw/main/README.md) |
 | [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |

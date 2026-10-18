@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (12)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -58,6 +58,7 @@ All entries in this section: web.
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [PAE LLaVA 7B](https://huggingface.co/yifeizhou/pae-llava-7b) | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | weights cc-by-nc-4.0 | A released LLaVA checkpoint for visual browser interaction from the PAE autonomous task-proposal and policy-learning system. | [✓ 2026‑10‑17](https://huggingface.co/yifeizhou/pae-llava-7b/raw/main/README.md) |
 | [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. | [✓ 2026‑10‑17](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md) |
+| [UIX-Qwen2-Mind2Web](https://huggingface.co/neulab/UIX-Qwen2-Mind2Web) | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | UIX-Qwen2 further fine-tuned on the Mind2Web training set; the MultiUI paper evaluates it on predicting the next web action from a screenshot, the task and previous actions. | [✓ 2026‑10‑18](https://huggingface.co/neulab/UIX-Qwen2-Mind2Web/raw/cf1654a2df366e87c4ec80009bb958395afe3c35/README.md) |
 | [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
 | [WebRL Llama 3.1 8B](https://huggingface.co/zai-org/webrl-llama-3.1-8b) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | weights other | A WebRL browser-policy checkpoint for performing actions in the five website environments of WebArena. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/webrl-llama-3.1-8b/raw/main/README.md) |
 | [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |

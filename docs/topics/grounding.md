@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -127,6 +127,7 @@
 | [UI-Venus](https://github.com/inclusionAI/UI-Venus) | cross-platform | [2508.10833](https://arxiv.org/abs/2508.10833) (2025), [2602.09082](https://arxiv.org/abs/2602.09082) (2026), [2609.00028](https://arxiv.org/abs/2609.00028) (2026) | — | GUI agent model family; UI-Venus-2, at 9B and 27B, acts on mobile, web and desktop in one end-to-end agent, trained with keypoint-based multi-judge task verification. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/inclusionAI/UI-Venus/HEAD/README.md) |
 | [UI-Venus 2 9B](https://huggingface.co/inclusionAI/UI-Venus-2-9b) | cross-platform | — | — | UI-Venus 2 GUI-agent checkpoint fine-tuned from Qwen3.5-9B, with about 9.4B BF16 parameters in the Qwen3.5 multimodal architecture, loaded through Transformers for image-text-to-text. | [✓ 2026‑10‑16](https://huggingface.co/api/models/inclusionAI/UI-Venus-2-9b) |
 | [UIX-Qwen2](https://huggingface.co/neulab/UIX-Qwen2) | web | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | A MultiUI-trained visual-language checkpoint for text-rich webpage understanding and interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/neulab/UIX-Qwen2/raw/main/README.md) |
+| [UIX-Qwen2-Mind2Web](https://huggingface.co/neulab/UIX-Qwen2-Mind2Web) | web | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | UIX-Qwen2 further fine-tuned on the Mind2Web training set; the MultiUI paper evaluates it on predicting the next web action from a screenshot, the task and previous actions. | [✓ 2026‑10‑18](https://huggingface.co/neulab/UIX-Qwen2-Mind2Web/raw/cf1654a2df366e87c4ec80009bb958395afe3c35/README.md) |
 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
 
 ## Agents

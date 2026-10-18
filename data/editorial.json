@@ -6544,8 +6544,78 @@
     "reviewed_at": "2026-10-16T06:50:49Z",
     "notes": "Dataset card declares multiple upstream licenses; do not treat the package as having one blanket permissive license.",
     "details": {
-      "leaderboard_url": "https://recreation-bench.cc/#leaderboard"
-    }
+      "leaderboard_url": "https://recreation-bench.cc/#leaderboard",
+      "hub_revision": "284341f8fc3d6680dd57ca5414fed92a0fe33b95",
+      "benchmark_protocol": {
+        "focus": [
+          "recreating a running reference application from interactive exploration",
+          "Ubuntu, macOS, Windows, Android and web tasks"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "high-level recreation request",
+          "interactive access to the running reference application"
+        ],
+        "actions": [
+          "GUI interaction",
+          "coding tools"
+        ],
+        "evaluation": "Prog runs reference-grounded programmatic checks of the recreated application's behavior through each platform's accessibility or browser interface; VLM has a vision-language-model judge check it visually. Scores are macro-averaged within each platform and weighted equally across the five platforms; Average is the unweighted mean of Prog and VLM.",
+        "counts": [
+          {
+            "value": 250,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "all five platforms in the card's Benchmark Statistics table at revision 284341f",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Qwen/RecreationBench/raw/284341f8fc3d6680dd57ca5414fed92a0fe33b95/README.md"
+          },
+          {
+            "value": 5,
+            "unit": "platforms",
+            "qualifier": "exact",
+            "population": "Ubuntu, macOS, Windows, Android and Web, 50 tasks each",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Qwen/RecreationBench/raw/284341f8fc3d6680dd57ca5414fed92a0fe33b95/README.md"
+          }
+        ],
+        "notes": "The agent cannot see the reference source code or the evaluation tests. Task bundles hold descriptors, reference preparation assets, tests, fixtures and, where available, frozen visual assertions; visual-annotation coverage varies by task. The execution framework lives in the linked GitHub repository. No task was run.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Qwen/RecreationBench/raw/284341f8fc3d6680dd57ca5414fed92a0fe33b95/README.md"
+        ]
+      }
+    },
+    "documented_by": [
+      "2609.22000"
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "multiple-upstream-licenses",
+          "url": "https://huggingface.co/datasets/Qwen/RecreationBench/raw/284341f8fc3d6680dd57ca5414fed92a0fe33b95/README.md",
+          "retrieved_at": "2026-10-18T15:46:24Z",
+          "basis": "The dataset card metadata declares license: other with license_name: multiple-upstream-licenses. Its License section says upstream applications and bundled assets keep their own terms, and web task notices separately cover benchmark-authored code (MIT), dataset content (CC BY 4.0) and third-party assets; no single license covers the package."
+        },
+        "reason": "The dataset card metadata declares license: other with license_name: multiple-upstream-licenses. Its License section says upstream applications and bundled assets keep their own terms, and web task notices separately cover benchmark-authored code (MIT), dataset content (CC BY 4.0) and third-party assets; no single license covers the package.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Qwen/RecreationBench/raw/284341f8fc3d6680dd57ca5414fed92a0fe33b95/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.hub_revision",
+          "details.benchmark_protocol",
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/Qwen/RecreationBench/raw/284341f8fc3d6680dd57ca5414fed92a0fe33b95/README.md",
+        "sha256": "79deaa899d085ece77a127d53b12ddb9edea8a796943f35b75e9acec67bcb976",
+        "retrieved_at": "2026-10-18T15:46:24Z"
+      }
+    ]
   },
   {
     "name": "ScreenSpot",

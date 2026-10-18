@@ -63143,5 +63143,134 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenBUA",
+    "kind": "agent",
+    "url": "https://github.com/AliSharjeell/OpenBUA",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "automation"
+    ],
+    "summary": "Chrome side-panel agent that works in the user's signed-in browser, reading DOM control inventories and tab screenshots, then clicking, typing and filling forms through injected synthetic events.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenBUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/HEAD/README.md"
+    ],
+    "notes": "Chrome Manifest V3 extension (manifest version 1.9.1) whose agent loop is built on the pi-agent-core and pi-ai packages. Its tools (src/agent/tools.ts) read a paginated inventory of interactive DOM controls including open shadow roots, inspect forms, click elements or screenshot-pixel coordinates (used for canvas editors such as Google Docs), type, scroll, switch and open tabs, upload files, post to social sites and send webmail; capture_tab_screenshot returns the visible-tab image to the model. Actions run as scripts injected with chrome.scripting that dispatch synthetic pointer and mouse events (src/agent/browser-bridge.ts); the manifest requests no debugger permission. Before showing its human CAPTCHA gate, the bridge makes up to two automatic rounds in which a vision model is asked to click inside detected challenge regions (src/agent/captcha-auto.ts). It acts in the user's logged-in sessions and keeps a memory store with optional parallel worker windows. The README ends with 'MIT', but the inspected tree has no license file. The agent was not run.",
+    "details": {
+      "availability": "Source and packaged extension zips attached to GitHub release v1.9.1",
+      "repository_revision": "bc2c9b490291647a00946267e470efe3bf0cfd89",
+      "release_tag": "v1.9.1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "licenses.code"
+        ],
+        "url": "https://github.com/AliSharjeell/OpenBUA/tree/bc2c9b490291647a00946267e470efe3bf0cfd89",
+        "sha256": "f7f895990ed10183836b94f6524e31395ec240eac96f72e3e3dfbfba7a810e5e",
+        "retrieved_at": "2026-10-18T15:59:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/bc2c9b490291647a00946267e470efe3bf0cfd89/src/agent/tools.ts",
+        "sha256": "0391525a73502329678b684d4578670e0d2f58f5cfe3f861cb7ace0218a7b8bf",
+        "retrieved_at": "2026-10-18T15:58:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/bc2c9b490291647a00946267e470efe3bf0cfd89/src/agent/browser-bridge.ts",
+        "sha256": "afeb6e6a596c37830507d17bc072d84227b7270424e862bef8ccb6aced1cc990",
+        "retrieved_at": "2026-10-18T15:58:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/bc2c9b490291647a00946267e470efe3bf0cfd89/src/agent/captcha-auto.ts",
+        "sha256": "d58f3f48e7e856f53403c548c8109bd0b5db5533db21a3ab53d140afed6646b3",
+        "retrieved_at": "2026-10-18T15:59:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/bc2c9b490291647a00946267e470efe3bf0cfd89/manifest.json",
+        "sha256": "253c1a71f7ea8500636ed0ef2481efe1b7ee4f6af714e83f5300761c9ac488d4",
+        "retrieved_at": "2026-10-18T15:59:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/bc2c9b490291647a00946267e470efe3bf0cfd89/package.json",
+        "sha256": "14fdc27f27df8a8a2764be5783881263ae96ddf21838ac1811c3cb2d71dd2b60",
+        "retrieved_at": "2026-10-18T15:59:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.availability",
+          "details.release_tag"
+        ],
+        "url": "https://github.com/AliSharjeell/OpenBUA/releases/expanded_assets/v1.9.1",
+        "sha256": "b396bf7a21795c24abeaed411e6836dabada657e2059e5469c69100c524da792",
+        "retrieved_at": "2026-10-18T15:59:30Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details",
+      "licenses.code"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README's closing License section says MIT, but the inspected tree at the reviewed commit has no license file, so no source-license grant is recorded.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/AliSharjeell/OpenBUA/HEAD/README.md",
+          "https://github.com/AliSharjeell/OpenBUA/tree/bc2c9b490291647a00946267e470efe3bf0cfd89"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c1d5cabceb9a7f2f937c1f1962fc03ae51313e46ac80be197d8ba2db8b292be3",
+    "reviewed_at": "2026-10-18T16:00:10Z"
   }
 ]

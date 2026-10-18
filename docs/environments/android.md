@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -84,6 +84,7 @@
 | [Ferret-UI](https://github.com/apple/ml-ferret) | android, ios | [2404.05719](https://arxiv.org/abs/2404.05719) (2024) | — | Screen understanding research within the Ferret model family. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/main/ferretui/README.md) |
 | [GELab Zero](https://github.com/stepfun-ai/gelab-zero) | android | — | code MIT | Open mobile GUI agent stack pairing a 4B model that runs on consumer hardware with local multi-device infrastructure, an MCP server, and AndroidDaily benchmark tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stepfun-ai/gelab-zero/HEAD/README.md) |
 | [GELab Zero 4B Preview](https://huggingface.co/stepfun-ai/GELab-Zero-4B-preview) | android | — | weights apache-2.0 | Preview GELab-Zero phone-use agent checkpoint fine-tuned from Qwen3-VL-4B-Instruct, with about 4.4B BF16 parameters, tagged for Android in English and Chinese, under Apache-2.0. | [✓ 2026‑10‑16](https://huggingface.co/api/models/stepfun-ai/GELab-Zero-4B-preview) |
+| [GUI-Owl 1.5 8B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct/raw/06d5faecff74840bab2be2425e9c42667a5d04fc/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |

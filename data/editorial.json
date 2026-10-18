@@ -33630,11 +33630,52 @@
         "url": "https://api.github.com/repos/WukLab/osworld-human/git/trees/main?recursive=1",
         "sha256": "c7b958d7a075adf5d282be08b68ad2b090568da342d4cb4b501ae808e54d0053",
         "retrieved_at": "2026-10-17T03:59:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/WukLab/osworld-human/git/trees/deff1a7cd8940f6040a895593097fc3c5511f36b?recursive=1",
+        "sha256": "c7b958d7a075adf5d282be08b68ad2b090568da342d4cb4b501ae808e54d0053",
+        "retrieved_at": "2026-10-18T15:56:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/WukLab/osworld-human/deff1a7cd8940f6040a895593097fc3c5511f36b/score.py",
+        "sha256": "e0641e0498003640bd4e3aa27d500b761a4b11885d0100a072259a15dc02d907",
+        "retrieved_at": "2026-10-18T15:56:42Z"
       }
     ],
     "details": {
+      "repository_revision": "deff1a7cd8940f6040a895593097fc3c5511f36b",
       "benchmark_protocol": {
-        "counts": [],
+        "counts": [
+          {
+            "value": 369,
+            "unit": "per-task human reference files",
+            "qualifier": "exact",
+            "population": "<application>/<task UUID>.json files in the repository tree at commit deff1a7",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/WukLab/osworld-human/git/trees/deff1a7cd8940f6040a895593097fc3c5511f36b?recursive=1",
+            "reference_url": "https://github.com/WukLab/osworld-human/tree/deff1a7cd8940f6040a895593097fc3c5511f36b"
+          },
+          {
+            "value": 10,
+            "unit": "application folders",
+            "qualifier": "exact",
+            "population": "top-level folders holding reference files at commit deff1a7",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/WukLab/osworld-human/git/trees/deff1a7cd8940f6040a895593097fc3c5511f36b?recursive=1",
+            "reference_url": "https://github.com/WukLab/osworld-human/tree/deff1a7cd8940f6040a895593097fc3c5511f36b"
+          }
+        ],
         "focus": [
           "action efficiency relative to humans"
         ],
@@ -33647,9 +33688,11 @@
           "efficiency scores"
         ],
         "evaluation": "The scorer consumes OSWorld results and a specified maximum step budget; the README distinguishes single-action and grouped-action WES+ and WES-.",
-        "notes": "Reference solutions are published for evaluation and expressly discouraged for training. No task count is inferred from file count.",
+        "notes": "Reference solutions are published for evaluation and expressly discouraged for training. The 369 reference files at commit deff1a7 are named by OSWorld task UUID across 10 application folders; score.py reads the human-ground-truth single-action and grouped-action entries of each.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md"
+          "https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md",
+          "https://api.github.com/repos/WukLab/osworld-human/git/trees/deff1a7cd8940f6040a895593097fc3c5511f36b?recursive=1",
+          "https://raw.githubusercontent.com/WukLab/osworld-human/deff1a7cd8940f6040a895593097fc3c5511f36b/score.py"
         ]
       }
     },

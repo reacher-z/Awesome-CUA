@@ -12,7 +12,7 @@ All entries in this section: desktop.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [OSWorld-Human](https://github.com/WukLab/osworld-human) | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+| [OSWorld-Human](https://github.com/WukLab/osworld-human) | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | [369 per-task human reference files](https://github.com/WukLab/osworld-human/tree/deff1a7cd8940f6040a895593097fc3c5511f36b) · [10 application folders](https://github.com/WukLab/osworld-human/tree/deff1a7cd8940f6040a895593097fc3c5511f36b) | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
 
 ## Models
 

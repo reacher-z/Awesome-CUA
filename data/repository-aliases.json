@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:yeahhe365/webadb-autoglm",
+    "target_id": "github:yeahhe365/webdroid-agent",
+    "repository_id": 1244747615,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T15:44:11Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/yeahhe365/webadb-autoglm",
+        "resolved_url": "https://api.github.com/repositories/1244747615",
+        "repository_id": 1244747615,
+        "full_name": "yeahhe365/WebDroid-Agent",
+        "html_url": "https://github.com/yeahhe365/WebDroid-Agent",
+        "retrieved_at": "2026-10-18T15:43:24Z",
+        "sha256": "9fd700009d98c4d7e5713d6a37f0b52bc2cd0b6edf3373c49f3578e30027c1dd"
+      },
+      {
+        "url": "https://api.github.com/repos/yeahhe365/WebDroid-Agent",
+        "resolved_url": "https://api.github.com/repos/yeahhe365/WebDroid-Agent",
+        "repository_id": 1244747615,
+        "full_name": "yeahhe365/WebDroid-Agent",
+        "html_url": "https://github.com/yeahhe365/WebDroid-Agent",
+        "retrieved_at": "2026-10-18T15:43:23Z",
+        "sha256": "9fd700009d98c4d7e5713d6a37f0b52bc2cd0b6edf3373c49f3578e30027c1dd"
+      }
+    ]
   }
 ]

@@ -63143,5 +63143,104 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "qz-browser-agent",
+    "kind": "agent",
+    "url": "https://github.com/alibaba/qz-browser-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Chrome extension agent that reads page DOM and accessibility trees, acts on indexed elements or screenshot coordinates across tabs, and accepts delegated tasks through a bundled CLI and MCP bridge.",
+    "scope": "core",
+    "aliases": [
+      "qz",
+      "轻舟"
+    ],
+    "verify_terms": [
+      "qz-browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alibaba/qz-browser-agent/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Published under the alibaba GitHub organization as a Manifest V3 Chrome extension (Chrome Web Store, and a v0.1.2 extension ZIP as the latest GitHub release at review time). Page tools read the DOM (read_dom, find_elements) and act on indexed element targets (act_on_element); get_ax_tree takes a compact accessibility-tree snapshot through the Chrome debugger; the screenshot tool captures the tab through Chrome DevTools Protocol with a captureVisibleTab fallback, and act_on_screen clicks, drags, scrolls or types at screenshot coordinates. services/mcp-bridge is the npm package qz-browser-agent, a local CLI and MCP service that passes tasks to the paired extension. Models come from providers the user configures; none is bundled. docs/benchmarks.md measures side-panel rendering, not task success. Code was read, not run.",
+    "details": {
+      "availability": "Public extension source, Chrome Web Store listing, release ZIP and npm CLI/MCP package; no bundled model",
+      "repository_revision": "d95c96b6370cc7936d2d8fdd82fbf58f7a11c466"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/alibaba/qz-browser-agent/d95c96b6370cc7936d2d8fdd82fbf58f7a11c466/src/capabilities/page/tools.ts",
+        "sha256": "0bd08320ed7ca7c052c02d6b43c5de869e4dacee9a2edf5d49d1892118613de7",
+        "retrieved_at": "2026-10-18T16:01:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/alibaba/qz-browser-agent/d95c96b6370cc7936d2d8fdd82fbf58f7a11c466/src/capabilities/accessibility/tools.ts",
+        "sha256": "0468956371539aeb37bc6a2410df68ef1326d1d8d09b6da410fff8e3dcba36fb",
+        "retrieved_at": "2026-10-18T16:01:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/alibaba/qz-browser-agent/d95c96b6370cc7936d2d8fdd82fbf58f7a11c466/src/capabilities/media/tools.ts",
+        "sha256": "0a6ddeabc83ee849e33ca7adf55587f9ad1e697e345fe890919f4ebe6bc98fc2",
+        "retrieved_at": "2026-10-18T16:01:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/alibaba/qz-browser-agent/d95c96b6370cc7936d2d8fdd82fbf58f7a11c466/services/mcp-bridge/README.md",
+        "sha256": "f86e8c793187c2b8ac1122846f9277cba984c0897455c2ff3c05ffa478754032",
+        "retrieved_at": "2026-10-18T16:01:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/alibaba/qz-browser-agent/d95c96b6370cc7936d2d8fdd82fbf58f7a11c466/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-18T16:01:38Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "241b2fb92489b1a51f47c6fe981193f41875c90cc41bd7ff952c965c13d80f58",
+    "reviewed_at": "2026-10-18T16:02:27Z"
   }
 ]

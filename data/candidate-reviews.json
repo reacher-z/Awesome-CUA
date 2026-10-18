@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:shenzhi-wang/llama3-chinese-chat",
+    "url": "https://github.com/Shenzhi-Wang/Llama3-Chinese-Chat",
+    "decision": "out_of_scope",
+    "reason": "Llama3-Chinese-Chat documents Llama3-8B-Chinese-Chat, a general Chinese-English chat model fine-tuned from Meta-Llama-3-8B-Instruct with ORPO, plus its GGUF and Ollama builds; the repository holds only this README. It has no GUI, browser or device interaction and does not target computer-use tasks.",
+    "reviewed_at": "2026-10-18T12:20:33Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/Shenzhi-Wang/Llama3-Chinese-Chat/HEAD/README.md",
+      "sha256": "f10300a4e91f1fc155da4afcc68f0121e3ed4999bea4d2b5b76e110cf1181954",
+      "retrieved_at": "2026-10-18T12:07:38Z"
+    }
   }
 ]

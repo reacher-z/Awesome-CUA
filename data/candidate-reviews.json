@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:deepneuralmachine/seq2act-tensorflow",
+    "url": "https://github.com/deepneuralmachine/seq2act-tensorflow",
+    "decision": "alias",
+    "target_id": "component:google-research/seq2act",
+    "reason": "Unofficial copy of the google-research seq2act directory, committed once on 2020-07-13 as \"Seperate repo from google research\": same file layout, an identical requirements.txt and the README from before the datasets were released."
   }
 ]

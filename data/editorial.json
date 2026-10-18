@@ -63143,5 +63143,45 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "component:google-research/seq2act",
+    "name": "Seq2act code (google-research)",
+    "kind": "framework",
+    "url": "https://github.com/google-research/google-research/tree/master/seq2act",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-research/google-research/master/seq2act/README.md"
+    ],
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "data-generation",
+      "mobile-navigation"
+    ],
+    "summary": "TensorFlow code for mapping natural-language instructions to Android UI action sequences, with phrase-tuple extraction and grounding models and pipelines for AndroidHowTo, RicoSCA and PixelHelp.",
+    "scope": "core",
+    "verify_terms": [
+      "Seq2act"
+    ],
+    "documented_by": [
+      "2005.03776"
+    ],
+    "notes": "Scoped to the seq2act directory of the google-research monorepo. The README says AndroidHowTo and PixelHelp were re-created from public sources and give slightly different results than the paper; the data are generated or downloaded separately, and a pre-trained end-to-end grounding checkpoint is linked from Cloud Storage. The monorepo's Apache-2.0 LICENSE is recorded for code only and does not establish terms for the datasets or the checkpoint. github.com/deepneuralmachine/seq2act-tensorflow is an unofficial 2020 copy of this directory.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9972cfb5234025fa8a62d402dcd3479deec21fbb87cce428d5c235bda4bb6dd8",
+    "reviewed_at": "2026-10-18T10:58:37Z"
   }
 ]

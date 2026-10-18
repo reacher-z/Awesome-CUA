@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -95,6 +95,7 @@
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
 | [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | code Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/HEAD/README.md) |
+| [Seq2act code (google-research)](https://github.com/google-research/google-research/tree/master/seq2act) | android | [2005.03776](https://arxiv.org/abs/2005.03776) (2020) | code Apache-2.0 | TensorFlow code for mapping natural-language instructions to Android UI action sequences, with phrase-tuple extraction and grounding models and pipelines for AndroidHowTo, RicoSCA and PixelHelp. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/google-research/google-research/master/seq2act/README.md) |
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |
 | [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |

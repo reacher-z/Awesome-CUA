@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-162 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+163 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (9)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
 
 ## Benchmarks
 
@@ -26,6 +26,7 @@ All entries in this section: ios.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Agent S](https://github.com/simular-ai/Agent-S) | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/simular-ai/Agent-S/HEAD/README.md) |
+| [AgenticX-GUIAgent](https://github.com/DemonDamon/AgenticX-GUIAgent) | android | — | code MIT | Android automation system built on the AgenticX framework, in which manager, executor, action-reflector and notetaker agents operate a device over ADB and share a knowledge pool across tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md) |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TencentQQGYLab/AppAgent/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |
 | [Cradle](https://github.com/BAAI-Agents/Cradle) | desktop | [2403.03186](https://arxiv.org/abs/2403.03186) (2024) | code MIT | Framework in which foundation models control games and software from screenshots alone, acting through keyboard and mouse, shown on RDR2, Stardew Valley, Cities: Skylines and Dealer's Life 2. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/BAAI-Agents/Cradle/HEAD/README.md) |

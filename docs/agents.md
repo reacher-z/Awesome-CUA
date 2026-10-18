@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**43 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
+**44 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (16)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -55,6 +55,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgenticX-GUIAgent](https://github.com/DemonDamon/AgenticX-GUIAgent) | android | — | code MIT | Android automation system built on the AgenticX framework, in which manager, executor, action-reflector and notetaker agents operate a device over ADB and share a knowledge pool across tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md) |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TencentQQGYLab/AppAgent/HEAD/README.md) |
 | [AppAgent Pro](https://github.com/LaoKuiZe/AppAgent-Pro) | android | [2508.18689](https://arxiv.org/abs/2508.18689) (2025) | code MIT | Proactive Android agent built on AppAgent that uses GPT-4o to decide whether YouTube or Amazon content would help, operates those apps over ADB, and merges what it finds into its answer. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/LaoKuiZe/AppAgent-Pro/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |

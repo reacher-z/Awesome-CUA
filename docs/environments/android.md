@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (17)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -103,6 +103,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgenticX-GUIAgent](https://github.com/DemonDamon/AgenticX-GUIAgent) | android | — | code MIT | Android automation system built on the AgenticX framework, in which manager, executor, action-reflector and notetaker agents operate a device over ADB and share a knowledge pool across tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md) |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TencentQQGYLab/AppAgent/HEAD/README.md) |
 | [AppAgent Pro](https://github.com/LaoKuiZe/AppAgent-Pro) | android | [2508.18689](https://arxiv.org/abs/2508.18689) (2025) | code MIT | Proactive Android agent built on AppAgent that uses GPT-4o to decide whether YouTube or Amazon content would help, operates those apps over ADB, and merges what it finds into its answer. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/LaoKuiZe/AppAgent-Pro/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |

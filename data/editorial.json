@@ -63143,5 +63143,79 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:demondamon/agenticx-guiagent",
+    "name": "AgenticX-GUIAgent",
+    "kind": "agent",
+    "url": "https://github.com/DemonDamon/AgenticX-GUIAgent",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "self-reflection",
+      "memory"
+    ],
+    "summary": "Android automation system built on the AgenticX framework, in which manager, executor, action-reflector and notetaker agents operate a device over ADB and share a knowledge pool across tasks.",
+    "scope": "core",
+    "verify_terms": [
+      "AgenticX-GUIAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Needs a separately installed AgenticX framework and an ADB-connected Android 8.0+ device; the default configuration calls Qwen-VL through Alibaba Bailian. The tree contains RL learning and evaluation modules, but the README reports no trained policy, benchmark results or paper. MIT is declared for the code; model APIs keep their own terms.",
+    "details": {
+      "repository_url": "https://github.com/DemonDamon/AgenticX-GUIAgent",
+      "repository_tree_sha": "4bfcce366cb8511b02285c893db8fae24382aede"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/DemonDamon/AgenticX-GUIAgent",
+        "sha256": "570d6bf1f9ba4a5c275d35f1e24a5828b1105bfe722089851f763b36acd8f7f9",
+        "retrieved_at": "2026-10-18T10:58:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/DemonDamon/AgenticX-GUIAgent/git/trees/main?recursive=1",
+        "sha256": "06a997084a1fd6766a03d31ade41eee8b9954b2c549d2848b9249aacc44fbb3e",
+        "retrieved_at": "2026-10-18T10:58:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/LICENSE",
+        "sha256": "5e04f7215fd7a95abffaeb97f7231a689c8d2fe415b486522891dc16bdc0d289",
+        "retrieved_at": "2026-10-18T10:58:57Z"
+      }
+    ],
+    "reviewed_sha256": "027873ff32c2049872b919ec34426b02a706e9e3636410fcfbb59d6191b3f2ef",
+    "reviewed_at": "2026-10-18T10:59:16Z"
   }
 ]

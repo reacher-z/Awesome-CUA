@@ -63143,5 +63143,102 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WebSentinel detection demo",
+    "kind": "tool",
+    "url": "https://github.com/wxl-lxw/WebSentinel",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Demo of WebSentinel's context check: GPT-4o judges pre-extracted pop-up, email and message HTML segments from 144 injected webpage samples against the page context and reports how many it misses.",
+    "scope": "core",
+    "verify_terms": [
+      "WebSentinel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wxl-lxw/WebSentinel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "documented_by": [
+      "2602.03792"
+    ],
+    "notes": "The repository holds only README, a figure, demo/detection.py and demo/VPI_data.json; the README's section on running WebSentinel says TBD. The script formats one analyzer prompt per sample (114 pop-up, 20 email and 10 message segments, counted with a script), calls the OpenAI Responses API with gpt-4o, and prints the share labelled clean as the false-negative rate. Segment extraction from raw pages is not included, and no clean pages are in the demo data. No license file was found; neither a code nor a data license is inferred.",
+    "details": {
+      "availability": "Demo script and 144 sample records only; the full WebSentinel pipeline is not released in the inspected tree.",
+      "repository_revision": "2576819df5d1ca90005ca231ac7ce9a555b4c143"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/wxl-lxw/WebSentinel",
+        "sha256": "bc8ab177d88e62d54e90e8138a488044b473ddb9460fdbbf11d48e2f99708fce",
+        "retrieved_at": "2026-10-18T15:39:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/wxl-lxw/WebSentinel/git/trees/2576819df5d1ca90005ca231ac7ce9a555b4c143?recursive=1",
+        "sha256": "3a3e1d98bcb2402cb159f53ba89ee4d0416c7f59386f0382178beae8309088b6",
+        "retrieved_at": "2026-10-18T15:39:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wxl-lxw/WebSentinel/2576819df5d1ca90005ca231ac7ce9a555b4c143/demo/detection.py",
+        "sha256": "1265598a3bd94ede6ac255856904fa72d51d5e4968e2d55cf2fe4bd691d75ce2",
+        "retrieved_at": "2026-10-18T15:39:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wxl-lxw/WebSentinel/2576819df5d1ca90005ca231ac7ce9a555b4c143/demo/VPI_data.json",
+        "sha256": "b1268e0fb59f98e0b402ead8ec243370923c43a2af6e36343eddc9e98124adbf",
+        "retrieved_at": "2026-10-18T15:39:03Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The inspected tree has no license file and GitHub reports no license.",
+        "evidence_urls": [
+          "https://api.github.com/repos/wxl-lxw/WebSentinel/git/trees/2576819df5d1ca90005ca231ac7ce9a555b4c143?recursive=1"
+        ]
+      }
+    },
+    "reviewed_sha256": "d3ebab871167be3344f3e8fff3bbff10e0b8f60a1953a1896c8ea86566ed6a41",
+    "reviewed_at": "2026-10-18T15:39:32Z"
   }
 ]

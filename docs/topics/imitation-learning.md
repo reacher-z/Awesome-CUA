@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-74 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+75 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (44)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (44)](#papers)
 
 ## Benchmarks
 
-All entries in this section: android.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [FedMABench](https://github.com/wwh0411/FedMABench) | [2503.05143](https://arxiv.org/abs/2503.05143) (2025) | [6 dataset families](https://huggingface.co/datasets/wwh0411/FedMABench/raw/main/README.md) · [3 heterogeneity types](https://raw.githubusercontent.com/wwh0411/FedMABench/HEAD/README.md) · [8 federated learning algorithms](https://raw.githubusercontent.com/wwh0411/FedMABench/HEAD/README.md) | — | A federated mobile-agent training and evaluation suite that varies user-data heterogeneity and application distribution, with released partition annotations and inference/scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/wwh0411/FedMABench/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [FedGUI](https://github.com/wwh0411/FedGUI) | android, web, desktop, windows, macos | [2604.14956](https://arxiv.org/abs/2604.14956) (2026) | [5,813 step examples](https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/datasets/FedGUI-OS/OS_IID.json) · [3 clients](https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/datasets/FedGUI-OS/OS_IID.json) · [9 curated datasets](https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md) · [17 discrete action types](https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md) · [7 federated learning algorithms](https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md) | — | Federated GUI-agent benchmark code that partitions step-level mobile, web and desktop demonstrations across federated clients by platform, device, OS or source, and trains and scores VLMs with LoRA on ms-swift. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md) |
+| [FedMABench](https://github.com/wwh0411/FedMABench) | android | [2503.05143](https://arxiv.org/abs/2503.05143) (2025) | [6 dataset families](https://huggingface.co/datasets/wwh0411/FedMABench/raw/main/README.md) · [3 heterogeneity types](https://raw.githubusercontent.com/wwh0411/FedMABench/HEAD/README.md) · [8 federated learning algorithms](https://raw.githubusercontent.com/wwh0411/FedMABench/HEAD/README.md) | — | A federated mobile-agent training and evaluation suite that varies user-data heterogeneity and application distribution, with released partition annotations and inference/scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/wwh0411/FedMABench/HEAD/README.md) |
 
 ## Datasets
 

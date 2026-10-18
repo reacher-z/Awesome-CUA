@@ -63143,5 +63143,212 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FedGUI",
+    "kind": "benchmark",
+    "url": "https://github.com/wwh0411/FedGUI",
+    "environments": [
+      "android",
+      "web",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "evaluation",
+      "imitation-learning",
+      "robustness",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "Federated GUI-agent benchmark code that partitions step-level mobile, web and desktop demonstrations across federated clients by platform, device, OS or source, and trains and scores VLMs with LoRA on ms-swift.",
+    "scope": "core",
+    "verify_terms": [
+      "FedGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.benchmark_protocol"
+    ],
+    "notes": "The repository releases partition files, preprocessing scripts and an integrated ms-swift copy, but no screenshots: image paths point to the original AndroidControl, AitW, GUI Odyssey, Mind2Web, GUIAct-Web, OmniAct and AgentSynth releases. Each of the seven FedGUI-Full files holds the same 33,341 step examples assigned to 9 clients in different ways (counted with a script; the files exceed the receipt size budget). The evaluation script reads datasets/testset/, which is absent from the inspected tree. The README still gives an anonymous review link as the clone address. No root license file was found; no code or data license is inferred from ms-swift or the source datasets.",
+    "details": {
+      "availability": "Public partition annotations, preprocessing, training and evaluation scripts; screenshots and the evaluation test sets are not in the repository.",
+      "repository_url": "https://github.com/wwh0411/FedGUI",
+      "repository_revision": "47b11998a35a698f7e19c22440a0bb4526962538",
+      "repository_tree_sha": "0589aaca4cca8f31d70ac3cf6f8320e1cbb947ab",
+      "benchmark_protocol": {
+        "focus": [
+          "federated GUI-agent training",
+          "cross-platform, cross-device, cross-OS and cross-source heterogeneity"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screenshots from the source datasets",
+          "task instruction",
+          "action history"
+        ],
+        "actions": [
+          "unified discrete actions such as CLICK, TYPE, SCROLL, HOTKEY and NAVIGATE_HOME, with point coordinates"
+        ],
+        "evaluation": "The README reports three step-level metrics: action-type accuracy, grounding accuracy within 14% of the screen diagonal, and success rate requiring the right type and parameters, with text matched by a similarity score above 0.5.",
+        "counts": [
+          {
+            "value": 5813,
+            "unit": "step examples",
+            "qualifier": "exact",
+            "population": "FedGUI-OS partition file OS_IID.json at the inspected commit",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/datasets/FedGUI-OS/OS_IID.json"
+          },
+          {
+            "value": 3,
+            "unit": "clients",
+            "qualifier": "exact",
+            "population": "FedGUI-OS partition file OS_IID.json at the inspected commit",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/datasets/FedGUI-OS/OS_IID.json"
+          },
+          {
+            "value": 9,
+            "unit": "curated datasets",
+            "qualifier": "exact",
+            "population": "publisher data preparation overview",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md"
+          },
+          {
+            "value": 17,
+            "unit": "discrete action types",
+            "qualifier": "exact",
+            "population": "publisher unified action space",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md"
+          },
+          {
+            "value": 7,
+            "unit": "federated learning algorithms",
+            "qualifier": "exact",
+            "population": "publisher feature overview",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md"
+          }
+        ],
+        "notes": "Step examples, clients, datasets and action types are different units and are not summed. The README also states coverage of more than 900 mobile apps, more than 40 desktop applications and more than 200 websites; these were not recounted.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md",
+          "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/datasets/FedGUI-OS/OS_IID.json",
+          "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/scripts/evaluation/eval_fed.sh",
+          "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/scripts/evaluation/test.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/wwh0411/FedGUI",
+        "sha256": "cd6366add970fc32ef9306649cba1ee10c27a86e7d2e37e6d472ac6e4291da18",
+        "retrieved_at": "2026-10-18T15:36:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/wwh0411/FedGUI/git/trees/47b11998a35a698f7e19c22440a0bb4526962538?recursive=1",
+        "sha256": "35a4792db72da229c1984fd882a31e00f090408f81fb1dd16702b81244876de4",
+        "retrieved_at": "2026-10-18T15:36:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/wwh0411/FedGUI/git/commits/47b11998a35a698f7e19c22440a0bb4526962538",
+        "sha256": "0c8208764bf03d1ff3bbcf3e750357329265cd0350953eca9eef75579dd8bfc5",
+        "retrieved_at": "2026-10-18T15:36:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/datasets/FedGUI-OS/OS_IID.json",
+        "sha256": "626e6b6ba996656901e715369758ab86287e886b1b760c4d631247381dd2bc47",
+        "retrieved_at": "2026-10-18T15:36:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/scripts/evaluation/eval_fed.sh",
+        "sha256": "348362423251c005e9685cd103208ef291db9b83bb2034d128b133bfcbe94d25",
+        "retrieved_at": "2026-10-18T15:36:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/wwh0411/FedGUI/47b11998a35a698f7e19c22440a0bb4526962538/scripts/evaluation/test.py",
+        "sha256": "f51b98b1377d6e3aa537abd719ad5b2919dcdeb050241e2c8b84af76b88ceb28",
+        "retrieved_at": "2026-10-18T15:36:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://export.arxiv.org/api/query?id_list=2604.14956",
+        "sha256": "7a4dd01a80737f56ac46dfd1fc848f9e04325d58d6d3b83c74dcfaf6d8da3c82",
+        "retrieved_at": "2026-10-18T15:36:36Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2604.14956",
+        "evidence_url": "https://export.arxiv.org/api/query?id_list=2604.14956"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The inspected tree has no root license file and GitHub reports no license; the integrated ms-swift copy does not establish terms for the FedGUI code.",
+        "evidence_urls": [
+          "https://api.github.com/repos/wwh0411/FedGUI/git/trees/47b11998a35a698f7e19c22440a0bb4526962538?recursive=1"
+        ]
+      }
+    },
+    "reviewed_sha256": "b13a574dcd13d552530a10ed1db1b7c65082e77b0ebb1ad87341d6aa0e011d9a",
+    "reviewed_at": "2026-10-18T15:37:20Z"
   }
 ]

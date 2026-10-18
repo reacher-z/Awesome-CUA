@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:adam-bjtu/autocoa",
+    "url": "https://github.com/ADaM-BJTU/AutoCoA",
+    "decision": "out_of_scope",
+    "reason": "AutoCoA trains a reasoning model to call a text web-search tool for open-domain question answering; it never observes or operates a web page, desktop or mobile interface.",
+    "reviewed_at": "2026-10-18T11:20:16Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/ADaM-BJTU/AutoCoA/main/README.md",
+      "sha256": "4eece09725b477ea7bdebf597043f90c9d88814a66792a771e62e95d9fd1694a",
+      "retrieved_at": "2026-10-18T11:19:17Z"
+    }
   }
 ]

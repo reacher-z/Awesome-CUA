@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,614 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,615 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -12,7 +12,7 @@
 | [Web navigation](topics/web-navigation.md) | 292 | 17 | 8 | 11 | 45 | 211 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) · 2026-10-14 |
 | [Planning](topics/planning.md) | 272 | · | 4 | 27 | 32 | 209 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Mobile navigation](topics/mobile-navigation.md) | 261 | 14 | 13 | 15 | 29 | 190 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
-| [Reinforcement learning](topics/reinforcement-learning.md) | 231 | 2 | 5 | 23 | 20 | 181 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) · 2026-10-15 |
+| [Reinforcement learning](topics/reinforcement-learning.md) | 232 | 2 | 5 | 24 | 20 | 181 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) · 2026-10-15 |
 | [Screen understanding](topics/screen-understanding.md) | 207 | 5 | 19 | 10 | 11 | 162 | [STP-GUI: Spatially-Aware Token Pruning for Efficient Web-GUI Agents](https://arxiv.org/abs/2610.20390) · 2026-10-14 |
 | [Safety & security](topics/safety-security.md) | 203 | 12 | · | · | 7 | 184 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Robustness](topics/robustness.md) | 183 | 10 | 1 | · | 2 | 170 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
@@ -27,7 +27,7 @@
 | [Reward models](topics/reward-models.md) | 56 | 4 | 3 | 4 | 3 | 42 | [From Trajectories to Grounded Preferences: Process Preference Synthesis via Interaction Element Graphs for Web PRMs](https://arxiv.org/abs/2609.32351) · 2026-09-26 |
 | [Sandboxes](topics/sandbox.md) | 55 | 3 | · | · | 14 | 38 | [MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments](https://arxiv.org/abs/2610.20939) · 2026-10-14 |
 | [Cross-app](topics/cross-app.md) | 54 | 13 | 2 | · | 4 | 35 | [AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks](https://arxiv.org/abs/2610.11050) · 2026-10-08 |
-| [Action prediction](topics/action-prediction.md) | 48 | · | 2 | 17 | 3 | 26 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
+| [Action prediction](topics/action-prediction.md) | 49 | · | 2 | 18 | 3 | 26 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
 | [State tracking](topics/state-tracking.md) | 48 | · | · | · | 3 | 45 | [LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles](https://arxiv.org/abs/2609.34769) · 2026-09-28 |
 | [Interaction history](topics/interaction-history.md) | 47 | · | · | 1 | · | 46 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
 | [World models](topics/world-models.md) | 42 | · | 3 | 2 | 2 | 35 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) · 2026-10-09 |
@@ -38,6 +38,6 @@
 | [Industry](topics/industry.md) | 27 | · | · | · | 16 | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
 | [Recording](topics/recording.md) | 23 | · | 1 | · | 7 | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
 | [UI design](topics/ui-design.md) | 21 | · | 1 | · | · | 20 | [A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents](https://arxiv.org/abs/2609.19843) · 2026-09-17 |
+| [Scientific workflows](topics/science.md) | 19 | 1 | 1 | 1 | 1 | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
 | [Survey](topics/survey.md) | 19 | · | · | · | · | 19 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) · 2026-09-02 |
-| [Scientific workflows](topics/science.md) | 18 | 1 | 1 | · | 1 | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
 | [Historical](topics/history.md) | 4 | · | · | · | 4 | · | — |

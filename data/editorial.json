@@ -63143,5 +63143,131 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Oya Browser",
+    "kind": "infrastructure",
+    "url": "https://github.com/OyadotAI/oya-browser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "human-in-the-loop",
+      "workflow"
+    ],
+    "scope": "core",
+    "summary": "Browser control plane that drives Oya's Electron desktop and cloud browsers or third-party CDP providers through one REST, MCP and SDK interface, with a built-in LLM agent, human takeover and replayable playbooks.",
+    "verify_terms": [
+      "Oya Browser"
+    ],
+    "notes": "Community edition; the README says the enterprise and HIPAA-ready edition is kept in a separate private repository. ARCHITECTURE.md lists the parts: a server (REST API, browser WebSockets, MCP, CDP gateway, control plane), a Next.js console, the Electron browser that also serves as the cloud-browser image, the @oya-ai/browser SDK and the @oya-ai/cli. Oya browsers dial the server and run as personas (fingerprint, cookie jar and proxy), while Browserbase, Steel, Anchor and Browser Use browsers are driven over CDP; Playwright and Puppeteer access through the CDP gateway is described as partial. The server's agent loop gives an OpenAI-compatible chat model a text page analysis with an element index and, unless the task holds secrets, the latest screenshot, then runs tools such as click, edit_text, press_key, select_option and navigate. Hosted Oya Cloud is a separate service. The inspected main commit is the v1.0.198 release (2026-10-17). GitHub reports license NOASSERTION. Not a fork, not archived. Nothing was run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OyadotAI/oya-browser/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public source for the server, console, Electron browser, SDK and CLI, with self-hosting installers and deployment templates; the SDK and CLI are also published on npm.",
+      "repository_revision": "2cd753cc8fa74931a2a5165925bc22ac30f705b9",
+      "release_tag": "v1.0.198"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/OyadotAI/oya-browser/git/commits/2cd753cc8fa74931a2a5165925bc22ac30f705b9",
+        "sha256": "296bce5e6fcc571cddbfda19d39464b43775968da4e0f4e1e034de9b3cfd1a3b",
+        "retrieved_at": "2026-10-18T12:24:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/OyadotAI/oya-browser/git/tags/5ddd97d198d291799b9415b3d551ab3fc76ec53e",
+        "sha256": "6882429a234d02558357d5c2d5aa9e8b4f5b983b733291fd53440998527b4e0f",
+        "retrieved_at": "2026-10-18T12:24:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OyadotAI/oya-browser/2cd753cc8fa74931a2a5165925bc22ac30f705b9/ARCHITECTURE.md",
+        "sha256": "66bfbb87f2416929dae69069ff957780cbfc55c626af97350ce5c0a826dbd680",
+        "retrieved_at": "2026-10-18T12:24:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OyadotAI/oya-browser/2cd753cc8fa74931a2a5165925bc22ac30f705b9/LICENSE.md",
+        "sha256": "d7de217b830ec9d733eaf072981bef6660cdc43716d35da77d6b39304ce1e8ff",
+        "retrieved_at": "2026-10-18T12:24:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OyadotAI/oya-browser/2cd753cc8fa74931a2a5165925bc22ac30f705b9/server/src/modules/agent/loop.ts",
+        "sha256": "e02200c3b55ccb675313de906e9c52d2c8a1e68c6b3c88df35659e0109f8f647",
+        "retrieved_at": "2026-10-18T12:24:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OyadotAI/oya-browser/2cd753cc8fa74931a2a5165925bc22ac30f705b9/server/src/modules/agent/screenshot.ts",
+        "sha256": "2c9e17278a814d07b4b23878a4fc9398732ff7e1bf61001241fc6009253dc270",
+        "retrieved_at": "2026-10-18T12:24:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OyadotAI/oya-browser/2cd753cc8fa74931a2a5165925bc22ac30f705b9/server/src/modules/agent/element-index.ts",
+        "sha256": "51c65853c451d7ba4b78680698221fbacb0e3775067fb916c5ec940d19dd030a",
+        "retrieved_at": "2026-10-18T12:24:24Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "LICENSE.md is composite: packages/sdk and packages/cli are MIT, while everything else is under the custom Sustainable Use License 1.0 (internal, personal or non-commercial use; a commercial license beyond five concurrent self-hosted cloud browsers; a mandatory daily usage report). No single standard identifier applies to the repository.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/OyadotAI/oya-browser/2cd753cc8fa74931a2a5165925bc22ac30f705b9/LICENSE.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4602c4164157a38d9f62ebc67a99ffea77c5ce8880e4510d71f021cfdffaad8b",
+    "reviewed_at": "2026-10-18T12:25:07Z"
   }
 ]

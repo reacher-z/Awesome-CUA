@@ -63143,5 +63143,147 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "InSTA 150k Tasks (v3)",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "About 150k web navigation tasks from the InSTA project, each giving a website domain, an instruction, suggested steps and success criteria, with train and test splits drawn from different websites.",
+    "scope": "core",
+    "verify_terms": [
+      "InSTA"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.dataset_profile",
+      "licenses.data"
+    ],
+    "notes": "The card cites arXiv 2502.06776 (InSTA: Towards Internet-Scale Training For Agents) and points to an LLM judge in the separate data-for-agents/insta code repository, which is not part of this record. Rows are text task specifications, not agent trajectories or screenshots. The card declares MIT for the dataset.",
+    "details": {
+      "hub_id": "data-for-agents/insta-150k-v3",
+      "release_revision": "5a689ac657a24b0e55b1c0a0d690acfadd443c38",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/tree/5a689ac657a24b0e55b1c0a0d690acfadd443c38",
+      "dataset_profile": {
+        "supervision": [
+          "task instructions",
+          "suggested step lists",
+          "success criteria"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "train",
+          "test"
+        ],
+        "counts": [
+          {
+            "value": 150000,
+            "unit": "tasks",
+            "qualifier": "approximately",
+            "population": "complete v3 release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md"
+          },
+          {
+            "value": 143508,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md"
+          },
+          {
+            "value": 2933,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "test split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md"
+          },
+          {
+            "value": 2933,
+            "unit": "distinct website domains",
+            "qualifier": "exact",
+            "population": "test split",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/resolve/5a689ac657a24b0e55b1c0a0d690acfadd443c38/data/test-00000-of-00001.parquet"
+          }
+        ],
+        "notes": "Split sizes are the card's dataset_info num_examples. The distinct-domain count was computed from the inspected test Parquet file; the train file was not downloaded.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md",
+          "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/resolve/5a689ac657a24b0e55b1c0a0d690acfadd443c38/data/test-00000-of-00001.parquet"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.release_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ],
+        "url": "https://huggingface.co/api/datasets/data-for-agents/insta-150k-v3",
+        "sha256": "480f7e251f32652812aafd5ffcb638a14c9612cec73bbb33c245f9685a542808",
+        "retrieved_at": "2026-10-18T16:03:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/resolve/5a689ac657a24b0e55b1c0a0d690acfadd443c38/data/test-00000-of-00001.parquet",
+        "sha256": "3ae8bb40fd3da6991c15e5d34579b0a631f9ad520ad70a09358ef99770cb239d",
+        "retrieved_at": "2026-10-18T16:04:11Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md",
+          "retrieved_at": "2026-10-18T16:03:36Z",
+          "basis": "Publisher dataset-card declaration for the v3 task release; the InSTA code repository and the websites named in tasks are not covered by this evidence."
+        },
+        "reason": "Publisher dataset-card declaration for the v3 task release; the InSTA code repository and the websites named in tasks are not covered by this evidence.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/data-for-agents/insta-150k-v3/raw/5a689ac657a24b0e55b1c0a0d690acfadd443c38/README.md"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned dataset card and Hub API manifest, and loaded the 2,933-row test Parquet file to inspect fields and count website domains. The train file was not downloaded.",
+    "reviewed_sha256": "0a005ebed3bc549e700fb3d6a8db64a99fe28acce7c46ceb4c66cbe37c009d23",
+    "reviewed_at": "2026-10-18T16:04:38Z"
   }
 ]

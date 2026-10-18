@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:cnsdqd-dyb/villageragent",
+    "url": "https://github.com/cnsdqd-dyb/VillagerAgent",
+    "decision": "out_of_scope",
+    "reason": "VillagerAgent is a multi-agent framework that plays Minecraft through the Mineflayer bot API rather than through a computer, browser or mobile interface.",
+    "reviewed_at": "2026-10-18T11:22:10Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/cnsdqd-dyb/VillagerAgent-Minecraft-multiagent-framework/main/README.md",
+      "sha256": "83327928927e3c3fbe7cef4095c38611e0e88cf790f02f63553282c393d7f7d3",
+      "retrieved_at": "2026-10-18T11:19:22Z"
+    }
   }
 ]

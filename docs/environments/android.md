@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -95,6 +95,7 @@
 | [ScaleCUA 7B](https://huggingface.co/OpenGVLab/ScaleCUA-7B) | web, desktop, android, linux | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | weights apache-2.0 | A Qwen2.5-VL-based computer-use checkpoint with direct grounding and agent action modes across desktop, mobile and web interfaces. | [✓ 2026‑10‑17](https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md) |
 | [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) | web, desktop, android, ios | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | — | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. | [✓ 2026‑10‑17](https://huggingface.co/api/models/cckevinn/SeeClick) |
 | [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |
+| [UI-Genie Agent 3B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | A Qwen2.5-VL-3B mobile GUI action model fine-tuned on AndroidControl, AMEX, AndroidLab and UI-Genie synthetic trajectories to predict app launches, taps, swipes, typing and system-button presses. | [✓ 2026‑10‑18](https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B/raw/c309a7e87d3f10b2a21e6510eb5d5995e9bda168/README.md) |
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |

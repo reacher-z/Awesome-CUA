@@ -63143,5 +63143,115 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:43d811a5957d8effb7ed",
+    "name": "UI-Genie Agent 3B",
+    "kind": "model",
+    "url": "https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning",
+      "action-prediction"
+    ],
+    "summary": "A Qwen2.5-VL-3B mobile GUI action model fine-tuned on AndroidControl, AMEX, AndroidLab and UI-Genie synthetic trajectories to predict app launches, taps, swipes, typing and system-button presses.",
+    "scope": "core",
+    "verify_terms": [
+      "UI-Genie-Agent-3B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B/raw/c309a7e87d3f10b2a21e6510eb5d5995e9bda168/README.md"
+    ],
+    "documented_by": [
+      "2505.21496"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.artifact_type",
+      "details.training_data_note"
+    ],
+    "notes": "The manifest lists two Safetensors shards. Unlike the 7B card, this card declares no license and the Hub repository has no license file, so the weights license stays unknown; the GitHub README's MIT statement is not applied to the weights. The card's action table accepts coordinate or Set-of-Mark targets. AndroidControl and AndroidLab scores are publisher claims and were not reproduced; no weights were loaded.",
+    "details": {
+      "hub_id": "HanXiao1999/UI-Genie-Agent-3B",
+      "hub_revision": "c309a7e87d3f10b2a21e6510eb5d5995e9bda168",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B/tree/c309a7e87d3f10b2a21e6510eb5d5995e9bda168",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "3B",
+      "repository_url": "https://github.com/Euphoria16/UI-Genie",
+      "training_data_note": "The card lists AndroidControl (15.3K trajectories), AMEX (2.9K), AndroidLab (726) and 2.2K UI-Genie synthetic trajectories; it labels the synthetic set UI-Genie-Agent-16k but links and tags UI-Genie-Agent-5k, so no exact training-set relationship is asserted."
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/HanXiao1999/UI-Genie-Agent-3B",
+        "sha256": "550364016847496bb210e625d6cc867939065a1b8b5543a9f53ef784e74f9cff",
+        "retrieved_at": "2026-10-18T15:58:45Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes",
+          "licenses.weights"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B/raw/c309a7e87d3f10b2a21e6510eb5d5995e9bda168/config.json",
+        "sha256": "71f575aa0582eddbdbb5e231685c8f6868e9acaefa333ea448eb0e9389f3a900",
+        "retrieved_at": "2026-10-18T15:58:45Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Euphoria16/UI-Genie/f00ad4e85a98f3975f50071213a91ced3474b32c/README.md",
+        "sha256": "e08569bd9d8a6ff44537d4fe69243ddfeb8a41ae5c9f87ef84af50a67c64c726",
+        "retrieved_at": "2026-10-18T15:58:46Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_url",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": null,
+        "reason": "The model card declares no license in its metadata or text and the Hub file list has no license file, so no weights grant is established; the GitHub README's MIT statement concerns the project repository, not these weights.",
+        "evidence_urls": [
+          "https://huggingface.co/HanXiao1999/UI-Genie-Agent-3B/raw/c309a7e87d3f10b2a21e6510eb5d5995e9bda168/README.md",
+          "https://huggingface.co/api/models/HanXiao1999/UI-Genie-Agent-3B"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card and config.json, the Hub API record (file manifest, cardData) and the pinned UI-Genie GitHub README. No weights were downloaded or run.",
+    "reviewed_sha256": "6883ee5efc983d8f50f700e0ac2e22f62e8e5b489044299868a672bb6d1a334b",
+    "reviewed_at": "2026-10-18T15:59:22Z"
   }
 ]

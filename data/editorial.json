@@ -63143,5 +63143,35 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AdInject",
+    "kind": "framework",
+    "url": "https://github.com/NicerWang/AdInject",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Attack code that serves context-tailored ads into agent environments through an ad server, with run scripts for VisualWebArena via BrowserGym and Chrome tasks in OSWorld, plus defense and intent-probing scripts.",
+    "verify_terms": [
+      "AdInject"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NicerWang/AdInject/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2505.21499"
+    ],
+    "notes": "The README calls this the official implementation of the AdInject paper, and the arXiv abstract links this repository. The tree holds an ad server, a VisualWebArena attack directory with a 72-task file, batch scripts, defense and intent-speculation code, and an OSWorld directory with browser and web task JSON files; both integrations require patching upstream BrowserGym or OSWorld code and supplying model API keys. OSWorld runs use its Docker Ubuntu desktop, so only the browser-task subset is covered. The repository has no LICENSE file and GitHub reports no license, so the code license is unknown.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d558ffbedf48d19c228022c0ce4cdc85320a02bdf5a2bfce927a88b0326e0ae4",
+    "reviewed_at": "2026-10-18T11:41:01Z"
   }
 ]

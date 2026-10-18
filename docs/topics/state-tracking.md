@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+
+## Agents
+
+All entries in this section: desktop, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Clickyy](https://github.com/jayamitkatariya/clickyyy) | — | code MIT | macOS menu-bar app summoned by shaking the cursor that answers questions about a screenshot or, in agent mode, clicks, types, drags and scrolls with approval gates for risky steps. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/jayamitkatariya/clickyyy/HEAD/README.md) |
 
 ## Frameworks
 

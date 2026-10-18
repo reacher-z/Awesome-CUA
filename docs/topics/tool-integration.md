@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+133 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (6)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
 
 ## Benchmarks
 
@@ -45,6 +45,7 @@
 | [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) | web | [2310.10634](https://arxiv.org/abs/2310.10634) (2023) | code Apache-2.0 | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md) |
 | [OS-Copilot](https://github.com/OS-Copilot/OS-Copilot) | desktop | [2402.07456](https://arxiv.org/abs/2402.07456) (2024) | code MIT | Open-source library for generalist agents acting on an operating system's web, terminals, files and third-party apps, with the FRIDAY assistant, which takes custom tools and self-learns Excel tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Copilot/HEAD/README.md) |
 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | desktop, windows, linux | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | — | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
+| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | web | [2405.15793](https://arxiv.org/abs/2405.15793) (2024) | code MIT | Research agent that lets a language model fix GitHub issues and other tasks through a configurable shell and file-editing interface; a multimodal mode adds Playwright browser tools for screenshots and coordinate clicks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/SWE-agent/SWE-agent/HEAD/README.md) |
 
 ## Frameworks
 
@@ -179,6 +180,7 @@ All entries in this section: unspecified.
 | 2024‑07‑04 | [MobileExperts: A Dynamic Tool-Enabled Agent Team in Mobile Devices](https://arxiv.org/abs/2407.03913) | unspecified | Introduces MobileExperts, which assembles mobile-agent teams, lets agents explore and formulate tools, and coordinates them through two levels of planning. A benchmark organizes tasks by hierarchical intelligence levels. |
 | 2024‑07‑01 | [Mobile-Bench: An Evaluation Benchmark for LLM-based Mobile Agents](https://arxiv.org/abs/2407.00993) | unspecified | Evaluates mobile agents using combined UI and API actions, tasks with varying app scope, and checkpoints for intermediate progress. |
 | 2024‑06‑13 | [GuardAgent: Safeguard LLM Agents by a Guard Agent via Knowledge-Enabled Reasoning](https://arxiv.org/abs/2406.09187) | web | Introduces GuardAgent, which translates safety requests into executable guardrail code using plans and retrieved demonstrations. Mind2Web-SC supplies a web-agent safety-policy evaluation alongside a separate healthcare access-control benchmark. |
+| 2024‑05‑06 | [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) | unspecified | Introduces SWE-agent and argues that language-model agents need interfaces built for them; its agent-computer interface for navigating, editing and testing code improves results on SWE-bench and HumanEvalFix. |
 | 2024‑02‑12 | [OS-Copilot: Towards Generalist Computer Agents with Self-Improvement](https://arxiv.org/abs/2402.07456) | desktop, web | Provides an operating-system agent framework connecting applications, files, terminals, and web tools, with accumulated skills for subsequent tasks. |
 | 2023‑11‑21 | [GAIA: a benchmark for General AI Assistants](https://arxiv.org/abs/2311.12983) | web | Introduces questions that test assistant reasoning, multimodal understanding, browsing, and tool use beyond screen-action execution alone. |
 | 2023‑11‑03 | [PPTC Benchmark: Evaluating Large Language Models for PowerPoint Task Completion](https://arxiv.org/abs/2311.01767) | unspecified | Evaluates multi-turn PowerPoint creation and editing, scoring the resulting presentation files rather than requiring a fixed API sequence. |

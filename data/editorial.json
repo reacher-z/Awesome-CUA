@@ -63143,5 +63143,109 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:swe-agent/swe-agent",
+    "name": "SWE-agent",
+    "kind": "agent",
+    "url": "https://github.com/SWE-agent/SWE-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Research agent that lets a language model fix GitHub issues and other tasks through a configurable shell and file-editing interface; a multimodal mode adds Playwright browser tools for screenshots and coordinate clicks.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "SWE-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SWE-agent/SWE-agent/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2405.15793"
+    ],
+    "notes": "Formerly princeton-nlp/SWE-agent. It is mainly a software-engineering agent that acts through commands in a sandboxed repository. GUI interaction is limited to the optional web_browser bundle of 17 tools (open_site, screenshot_site, click_mouse, type_text, scroll_on_page and others), which the documentation enables with image tools for SWE-bench Multimodal runs. The README says most development has moved to mini-swe-agent and recommends it instead; the EnIGMA cybersecurity mode still needs v0.7. The root LICENSE is MIT.",
+    "details": {
+      "repository_revision": "3ea751c087f32b16e039a2233dd6eefecef325d5"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/SWE-agent/SWE-agent/3ea751c087f32b16e039a2233dd6eefecef325d5/tools/web_browser/config.yaml",
+        "sha256": "918a8815bb020b0480a7d129bb0be5519bd4c1e9d99d88ee79f66285b4fa5249",
+        "retrieved_at": "2026-10-18T12:01:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/SWE-agent/SWE-agent/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/usage/multimodal.md",
+        "sha256": "0bd86a9a4c53d4145c882937cf8cc28e548146d9b526827feb98bd4c42c9e5e9",
+        "retrieved_at": "2026-10-18T12:01:48Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f",
+    "reviewed_at": "2026-10-18T12:02:57Z"
+  },
+  {
+    "id": "arxiv:2405.15793",
+    "name": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2405.15793",
+    "summary": "Introduces SWE-agent and argues that language-model agents need interfaces built for them; its agent-computer interface for navigating, editing and testing code improves results on SWE-bench and HumanEvalFix.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "ui-design",
+      "tool-integration"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "SWE-agent: Agent-Computer Interfaces"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2403.03186%2C2403.03788%2C2403.07718%2C2403.10170%2C2403.11905%2C2403.16971%2C2403.17918%2C2403.20271%2C2404.01549%2C2404.01744%2C2404.02475%2C2404.03648%2C2404.05427%2C2404.05719%2C2404.05955%2C2404.06474%2C2404.07972%2C2404.08755%2C2404.08860%2C2404.08948%2C2404.09992%2C2404.10887%2C2404.11459%2C2404.16006%2C2404.16048%2C2404.16054%2C2404.16660%2C2404.18074%2C2404.19296%2C2405.00516%2C2405.11120%2C2405.12842%2C2405.14573%2C2405.14751%2C2405.15793%2C2405.16247%2C2405.20309%2C2406.01014%2C2406.01623%2C2406.03679%2C2406.06947%2C2406.07822%2C2406.08184%2C2406.08340%2C2406.08451%2C2406.10227%2C2406.10819%2C2406.11317%2C2406.11896%2C2406.12373&max_results=50"
+    ],
+    "notes": "Reviewed against the complete retained arXiv abstract. The agent-computer interface it studies is a command, file-viewing and editing interface for software engineering, and no graphical environment is evaluated; it is kept adjacent because it examines how interface design affects language-model agents that operate computers, and because it documents the SWE-agent repository. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ffd02be6ef40e2164f3039bd2466e8b692a55ed7013326a0d3fdcc9d3cdffd37",
+    "reviewed_at": "2026-10-18T12:02:57Z"
   }
 ]

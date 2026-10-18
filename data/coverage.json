@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "total_records": 3176,
+  "curated_records": 1616,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -9,9 +9,9 @@
   "arxiv_archive_records": 2838,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1561,
+  "metadata_only_records": 1560,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 903,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -186,7 +186,7 @@
   ],
   "uncurated_linked_papers": [],
   "by_kind": {
-    "agent": 43,
+    "agent": 44,
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
@@ -206,8 +206,8 @@
     "ios": 21,
     "linux": 49,
     "macos": 30,
-    "unspecified": 377,
-    "web": 621,
+    "unspecified": 378,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -219,7 +219,7 @@
       "linux": 1,
       "macos": 2,
       "unspecified": 1,
-      "web": 11,
+      "web": 12,
       "windows": 5
     },
     "benchmark": {
@@ -287,7 +287,7 @@
       "ios": 8,
       "linux": 18,
       "macos": 14,
-      "unspecified": 341,
+      "unspecified": 342,
       "web": 441,
       "windows": 37
     },
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -373,13 +373,13 @@
         "state": "success"
       },
       "discovered": 218,
-      "indexed": 166,
-      "indexed_resources": 166,
+      "indexed": 167,
+      "indexed_resources": 167,
       "resolved_aliases": 1,
-      "curated": 163,
+      "curated": 165,
       "excluded": 0,
       "set_aside": 14,
-      "unindexed": 38
+      "unindexed": 37
     },
     {
       "id": "os-agent-survey",
@@ -605,13 +605,13 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 48,
-      "indexed_resources": 48,
-      "resolved_aliases": 0,
-      "curated": 32,
+      "indexed": 49,
+      "indexed_resources": 49,
+      "resolved_aliases": 1,
+      "curated": 34,
       "excluded": 0,
       "set_aside": 3,
-      "unindexed": 27
+      "unindexed": 26
     },
     {
       "id": "supernal-gui",
@@ -721,13 +721,13 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 93,
+      "indexed_resources": 93,
       "resolved_aliases": 1,
-      "curated": 83,
+      "curated": 85,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 45
+      "unindexed": 44
     },
     {
       "id": "jin-gui-hub",

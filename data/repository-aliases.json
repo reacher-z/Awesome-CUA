@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:princeton-nlp/swe-agent",
+    "target_id": "github:swe-agent/swe-agent",
+    "repository_id": 780737106,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T12:02:57Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/princeton-nlp/SWE-agent",
+        "resolved_url": "https://api.github.com/repositories/780737106",
+        "repository_id": 780737106,
+        "full_name": "SWE-agent/SWE-agent",
+        "html_url": "https://github.com/SWE-agent/SWE-agent",
+        "retrieved_at": "2026-10-18T12:01:55Z",
+        "sha256": "1b6299ea4ce1f256bce9872ef2d4467ab5ad3730eeebe3cde62fb5ad58862d2b"
+      },
+      {
+        "url": "https://api.github.com/repos/SWE-agent/SWE-agent",
+        "resolved_url": "https://api.github.com/repos/SWE-agent/SWE-agent",
+        "repository_id": 780737106,
+        "full_name": "SWE-agent/SWE-agent",
+        "html_url": "https://github.com/SWE-agent/SWE-agent",
+        "retrieved_at": "2026-10-18T12:01:56Z",
+        "sha256": "1b6299ea4ce1f256bce9872ef2d4467ab5ad3730eeebe3cde62fb5ad58862d2b"
+      }
+    ]
   }
 ]

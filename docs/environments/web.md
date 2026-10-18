@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (29)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -101,6 +101,7 @@
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [Magma](https://github.com/microsoft/Magma) | web | — | code MIT | Microsoft foundation model for multimodal agents, pretrained with Set-of-Mark and Trace-of-Mark objectives on UI, robotics and video data and fine-tunable for web and mobile UI navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/Magma/HEAD/README.md) |
 | [OpenAI CUA](https://openai.com/index/computer-using-agent/) | web, desktop | — | — | Computer-using model introduced with the Operator research preview. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
+| [OpenJev](https://github.com/alanhuangyoo/OpenJev) | web | — | code Apache-2.0 · weights apache-2.0 | Decision models at 1.7B, 4B and 8B that answer typed questions with calibrated probabilities in one pass; trained on browser-agent steps and general decision data, they pick a web agent's next operation and element. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/alanhuangyoo/OpenJev/HEAD/README.md) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |
 | [PAE LLaVA 7B](https://huggingface.co/yifeizhou/pae-llava-7b) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | weights cc-by-nc-4.0 | A released LLaVA checkpoint for visual browser interaction from the PAE autonomous task-proposal and policy-learning system. | [✓ 2026‑10‑17](https://huggingface.co/yifeizhou/pae-llava-7b/raw/main/README.md) |

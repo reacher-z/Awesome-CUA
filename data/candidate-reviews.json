@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:masamasa59/ai-agent-papers",
+    "url": "https://github.com/masamasa59/ai-agent-papers",
+    "decision": "out_of_scope",
+    "reason": "AI Agents Papers is a general reading list of LLM-agent papers filed by capability, architecture, operations and application, with computer-use, web and mobile agents as three of many application pages. It releases no software, data or survey of its own and is not one of the catalog discovery sources, so it does not fit a resource kind.",
+    "reviewed_at": "2026-10-18T11:49:10Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/masamasa59/ai-agent-papers/HEAD/README.md",
+      "sha256": "afba990b27d6261a16cef2ea8a7acacc24bae6b32f6252c267fee9c225ed3202",
+      "retrieved_at": "2026-10-18T11:34:07Z"
+    }
   }
 ]

@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
+**21 resources:** [Web (10)](#web) · [Desktop (2)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -35,6 +35,7 @@ All entries in this section: desktop, macos, linux, windows.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [open-computer-use](https://github.com/iFurySt/open-computer-use) | — | code MIT | Computer-use MCP server and CLI for macOS, Linux and Windows exposing nine shared tools, such as get_app_state, click and set_value, with macOS apps read through accessibility APIs. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/iFurySt/open-computer-use/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 
 [↑ Back to top](#tool-catalog)

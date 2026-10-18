@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:jiutian-vl/gui-explorer",
+    "target_id": "github:ilearn-lab/acl25-gui-explorer",
+    "repository_id": 986202248,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:24:09Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/JiuTian-VL/GUI-explorer",
+        "resolved_url": "https://api.github.com/repositories/986202248",
+        "repository_id": 986202248,
+        "full_name": "iLearn-Lab/ACL25-GUI-explorer",
+        "html_url": "https://github.com/iLearn-Lab/ACL25-GUI-explorer",
+        "retrieved_at": "2026-10-18T11:24:02Z",
+        "sha256": "af64b78e2b61200a3fb1fdbfd927c60dd2a1b40cfc9da2dd05703f9d2642c26b"
+      },
+      {
+        "url": "https://api.github.com/repos/iLearn-Lab/ACL25-GUI-explorer",
+        "resolved_url": "https://api.github.com/repos/iLearn-Lab/ACL25-GUI-explorer",
+        "repository_id": 986202248,
+        "full_name": "iLearn-Lab/ACL25-GUI-explorer",
+        "html_url": "https://github.com/iLearn-Lab/ACL25-GUI-explorer",
+        "retrieved_at": "2026-10-18T11:24:03Z",
+        "sha256": "af64b78e2b61200a3fb1fdbfd927c60dd2a1b40cfc9da2dd05703f9d2642c26b"
+      }
+    ]
   }
 ]

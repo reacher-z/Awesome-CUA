@@ -63143,5 +63143,107 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OSWorld 2.0 task classes",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/xlangai/osworld_v2_tasks",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon"
+    ],
+    "summary": "Gated Hub release of the OSWorld 2.0 benchmark's Python task classes, which hold task setup and evaluator logic kept out of the public code to limit leakage and are pinned per benchmark release.",
+    "scope": "core",
+    "aliases": [
+      "OSWorld V2 Task Classes"
+    ],
+    "verify_terms": [
+      "xlangai/osworld_v2_tasks"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2606.29537",
+        "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/README.md"
+      }
+    ],
+    "notes": "The Hub API at revision 0a1aadad reports gated 'auto' (access is approved automatically after a logged-in request) and 147 files: 108 task_*.py classes, 34 task implementation notes, a task-hash manifest and the card. The card and files sit behind that gate and were not read; the description comes from the OSWorld-V2 README, which links this dataset as its data and downloads it into evaluation_examples/task_class. The README pins task, asset and website snapshots per benchmark release (osworld-v2.1 recommended, plus osworld-v2-2026.08.08 and osworld-v2-2026.06.24), so the main-branch file count is not a release's task count. Task assets are in the separate gated xlangai/osworld_v2_assets_gated dataset and anonymous runtime assets in xlangai/osworld_v2_assets; neither is covered here. The code repository github.com/xlang-ai/OSWorld-V2 is not an active record, so no component relation is recorded. The card metadata declares Apache-2.0.",
+    "details": {
+      "hub_revision": "0a1aadad95aa79b00b3783e717d865089ab06e26",
+      "repository_url": "https://github.com/xlang-ai/OSWorld-V2",
+      "dataset_profile": {
+        "supervision": [
+          "task setup and evaluator code"
+        ],
+        "modalities": [
+          "Python task classes",
+          "implementation notes"
+        ],
+        "formats": [
+          "Python",
+          "Markdown",
+          "JSON manifest"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 108,
+            "unit": "task class files",
+            "qualifier": "exact",
+            "population": "task_*.py on the main branch at revision 0a1aadad",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks"
+          },
+          {
+            "value": 34,
+            "unit": "implementation note files",
+            "qualifier": "exact",
+            "population": "implementation_notes/task_*.md on the main branch at revision 0a1aadad",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks"
+          }
+        ],
+        "notes": "Counts are files in the public main-branch manifest. Benchmark releases are pinned to their own tags, which were not inspected because the files are gated, so these are not release task counts.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope",
+      "identity",
+      "release_status",
+      "details",
+      "notes",
+      "aliases"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "relations",
+          "notes",
+          "details.dataset_profile",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/README.md",
+        "sha256": "0d1d3e91e8786720a167b8bc26a41bd27832eefae652ab1c166193073e99b2b4",
+        "retrieved_at": "2026-10-18T11:47:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b9ef429ad3f9ef51702093db5bc1cb4e53d6ed5624cd2003162c4fedb3855c87",
+    "reviewed_at": "2026-10-18T11:48:10Z"
   }
 ]

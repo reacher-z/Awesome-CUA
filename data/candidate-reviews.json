@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:openautocoder/agentless",
+    "url": "https://github.com/OpenAutoCoder/Agentless",
+    "decision": "out_of_scope",
+    "reason": "Agentless resolves software issues with a fixed three-phase pipeline: hierarchical fault localization in the repository, sampled candidate patches and test-based patch validation, evaluated on SWE-bench. It works only on source code and tests, with no graphical, browser or mobile interface, so it is a software-engineering method rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T11:52:17Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/HEAD/README.md",
+      "sha256": "06ead5fa5d0aafa7100cce5a8e7dbe66e38d50952c82d56c392852972d1f5a70",
+      "retrieved_at": "2026-10-18T11:47:27Z"
+    }
   }
 ]

@@ -63143,5 +63143,95 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenGUI",
+    "kind": "framework",
+    "url": "https://github.com/Core-Mate/OpenGUI",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "self-reflection"
+    ],
+    "summary": "Android phone-use agent framework with a self-hostable planner and executor backend, an AccessibilityService client, and plugins for WorkBuddy and DeepSeek Harness that operate real apps from screenshots and task text.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Core-Mate/OpenGUI/HEAD/README.md"
+    ],
+    "notes": "Source-available under BUSL-1.1, which GitHub reports as NOASSERTION: production, commercial and hosted use need a Core-Mate license until the version's change to Apache-2.0 on 2030-04-29. The WorkBuddy plugin runs on macOS with host-side ADB and scrcpy and signs in through Core-Mate's account service; the DSH plugin also drives a managed browser. The full stack needs Android 11 or later, local PostgreSQL and Redis, and a vision model with tool calling. The README itself says long tasks and device compatibility need more real-world verification; reliability was not tested here.",
+    "details": {
+      "availability": "Source-available backend, Android client and host plugins; plugin installers and release packages on GitHub",
+      "repository_revision": "8a681b45f170eb2566c3d254e7ee0089ba9f43a5"
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "BUSL-1.1",
+          "url": "https://raw.githubusercontent.com/Core-Mate/OpenGUI/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:42:04Z",
+          "basis": "Business Source License 1.1 from licensor Core-Mate with no Additional Use Grant; non-production use only until the Change Date 2030-04-29, after which the Change License is Apache-2.0."
+        },
+        "reason": "GitHub reports NOASSERTION, but the LICENSE file is the BUSL-1.1 text with stated parameters and the README restates them; this is source-available, not an open-source license, until the change date.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Core-Mate/OpenGUI/HEAD/LICENSE",
+          "https://raw.githubusercontent.com/Core-Mate/OpenGUI/HEAD/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/Core-Mate/OpenGUI",
+        "sha256": "c92ebeb79fed49b75e28cc2cf87733514692869e773804c598c113f722d4962a",
+        "retrieved_at": "2026-10-18T11:40:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/Core-Mate/OpenGUI/git/trees/main?recursive=1",
+        "sha256": "6e9cd440044867f9b3a5af468ccdb27b211143540cc67024f8f57654bdaddff8",
+        "retrieved_at": "2026-10-18T11:42:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Core-Mate/OpenGUI/HEAD/LICENSE",
+        "sha256": "3add24e9703c18f329e115c453dae6b2f9526d58917df59c714d0ab6cbb50cb1",
+        "retrieved_at": "2026-10-18T11:42:04Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details",
+      "licenses.code"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "97df05f2896171f8075819f2f35ff4179f43ef83abcc26e3df0122eb42779471",
+    "reviewed_at": "2026-10-18T11:42:34Z"
   }
 ]

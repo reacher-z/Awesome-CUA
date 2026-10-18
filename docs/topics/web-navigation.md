@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (24)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -94,6 +94,7 @@ All entries in this section: web.
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [NNetNav](https://github.com/MurtyShikhar/NNetnav) | [2410.02907](https://arxiv.org/abs/2410.02907) (2024) | code Apache-2.0 | Collects and labels browser-exploration trajectories for agent training, with code for data processing, fine-tuning, and web evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md) |
 | [Notte](https://github.com/nottelabs/notte) | — | — | Web agent framework and cloud SDKs for managed Chrome sessions, adding a CLI, an MCP server for coding agents, serverless browser functions and an API that builds automations from English tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nottelabs/notte/HEAD/README.md) |
+| [OpenWebAgent](https://github.com/THUDM/OpenWebAgent) | — | — | Web-agent toolkit pairing a Chrome extension with a Python server that simplifies page HTML, plans the next action from the user's goal and history with a configurable LLM, and runs it in the browser. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/THUDM/OpenWebAgent/HEAD/readme.md) |
 | [Plan-and-Act](https://github.com/SqueezeAILab/plan-and-act) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | code MIT | A web-agent framework that separates high-level planning from action execution, with replanning and synthetic planner-data generation components. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/SqueezeAILab/plan-and-act/HEAD/README.md) |
 | [Proposer-Agent-Evaluator (PAE)](https://github.com/amazon-science/PAE) | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | — | A browser-agent training system that proposes tasks, collects visual interaction trajectories, and uses automated evaluation to drive policy improvement. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/amazon-science/PAE/HEAD/README.md) |
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |

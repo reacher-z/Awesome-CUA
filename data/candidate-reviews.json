@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:boxworld18/openwebagent",
+    "url": "https://github.com/boxworld18/OpenWebAgent",
+    "decision": "alias",
+    "target_id": "github:thudm/openwebagent",
+    "reason": "First author's earlier personal upload of the OpenWebAgent toolkit (separate repository and history, last pushed June 2024), with the same README title and ACL 2024 demo citation; THUDM/OpenWebAgent is the later official release."
   }
 ]

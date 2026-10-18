@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (56)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -22,6 +22,7 @@
 | [AutoDroid V2 training data](https://huggingface.co/datasets/BlitherBoom/AutoDroid-V2-Dataset) | android | — | — | data mit | Conversation-formatted supervision released for fine-tuning AutoDroid V2, with the project documenting a ShareGPT-style JSON configuration. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/BlitherBoom/AutoDroid-V2-Dataset) |
 | [CAGUI](https://huggingface.co/datasets/openbmb/CAGUI) | android | [2506.01391](https://arxiv.org/abs/2506.01391) (2025) | — | data cc-by-nc-4.0 | Chinese Android GUI benchmark released with AgentCPM-GUI, with a grounding track for widgets and OCR text and an agent track for multi-step tasks in Chinese apps. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/openbmb/CAGUI) |
 | [CMGUI](https://huggingface.co/datasets/alibabagroup/CMGUI) | android | [2603.08533](https://arxiv.org/abs/2603.08533) (2026) | — | data cc-by-4.0 | 18k trajectories with 98k steps from more than 50 Chinese mobile apps in domains such as e-commerce and social media, for building GUI agents on Chinese apps. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/alibabagroup/CMGUI) |
+| [Computer Use Trajectories (markov-ai)](https://huggingface.co/datasets/markov-ai/computer-use) | desktop | — | [160 trajectories](https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md) · [1,378 steps](https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md) · [10 application domains](https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md) · [313 MP4 recording files](https://huggingface.co/api/datasets/markov-ai/computer-use) | data apache-2.0 | 160 successful OSWorld trajectories (1,378 steps) by a Gemini 3 Flash Preview agent with accessibility-tree grounding, with per-step screenshots, accessibility trees, pyautogui actions, responses and run logs. | [✓ 2026‑10‑18](https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md) |
 | [CUA-Gym](https://huggingface.co/datasets/xlangai/CUA-Gym) | desktop | [2605.25624](https://arxiv.org/abs/2605.25624) (2026) | — | data cc-by-4.0 | Computer-use environment and task resources for agent research. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/xlangai/CUA-Gym) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
 | [DroidCall data](https://huggingface.co/datasets/mllmTeam/DroidCall) | android | [2412.00402](https://arxiv.org/abs/2412.00402) (2024) | — | data apache-2.0 | Instruction-to-function-call examples for learning Android intent invocation, with training, testing and API-annotation files for mobile task execution. | [✓ 2026‑10‑17](https://huggingface.co/datasets/mllmTeam/DroidCall/raw/main/README.md) |

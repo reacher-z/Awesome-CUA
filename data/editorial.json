@@ -63143,5 +63143,133 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Computer Use Trajectories (markov-ai)",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/markov-ai/computer-use",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "data-generation"
+    ],
+    "summary": "160 successful OSWorld trajectories (1,378 steps) by a Gemini 3 Flash Preview agent with accessibility-tree grounding, with per-step screenshots, accessibility trees, pyautogui actions, responses and run logs.",
+    "scope": "core",
+    "aliases": [
+      "markov-ai/computer-use"
+    ],
+    "verify_terms": [
+      "Computer Use Trajectories"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md"
+      }
+    ],
+    "notes": "The Hub API at revision de58c88b reports an ungated repository with 16 Parquet shards for the train split and 313 MP4 files under recordings/<domain>/. The card's 160 rows match its per-domain table, but the recording folders hold 313 files with a different domain mix, so some recordings may not belong to a published row; this was not checked. Every row has score 1.0 because only fully successful runs were kept, so the set is not a success-rate sample. The card credits a 'ComputerRL' evaluation framework at github.com/anthropics/ComputerRL, which the GitHub API did not resolve on 2026-10-18. The card declares Apache-2.0 for the dataset.",
+    "details": {
+      "hub_id": "markov-ai/computer-use",
+      "hub_revision": "de58c88b4b33dd03fa4d5d0f490748f576bd37b3",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/markov-ai/computer-use/tree/main",
+      "dataset_profile": {
+        "supervision": [
+          "successful agent trajectories"
+        ],
+        "modalities": [
+          "screenshots",
+          "accessibility trees",
+          "task instructions",
+          "pyautogui actions",
+          "model responses",
+          "execution logs",
+          "screen recordings"
+        ],
+        "formats": [
+          "Parquet",
+          "MP4"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 160,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "train split (one row per task trajectory)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md"
+          },
+          {
+            "value": 1378,
+            "unit": "steps",
+            "qualifier": "exact",
+            "population": "all 160 trajectories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md"
+          },
+          {
+            "value": 10,
+            "unit": "application domains",
+            "qualifier": "exact",
+            "population": "train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md"
+          },
+          {
+            "value": 313,
+            "unit": "MP4 recording files",
+            "qualifier": "exact",
+            "population": "recordings/ at revision de58c88b",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/markov-ai/computer-use"
+          }
+        ],
+        "notes": "Rows are agent runs filtered to score 1.0, not human demonstrations. Step and row counts are the card's figures; the Parquet files were not downloaded. Recording files were counted from the Hub manifest and do not equal the row count.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/markov-ai/computer-use/raw/de58c88b4b33dd03fa4d5d0f490748f576bd37b3/README.md",
+          "https://huggingface.co/api/datasets/markov-ai/computer-use"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "aliases",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/markov-ai/computer-use",
+        "sha256": "73c4ea92c82983d3bc5ac6b8565f199c33f52f4206e5203502d0bf817b5b02cd",
+        "retrieved_at": "2026-10-18T11:44:36Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f0880c1d4db8005c9ca02218cf61781f347d4a11aa311aecf5b90119845f4381",
+    "reviewed_at": "2026-10-18T11:45:00Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-38 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (28)](#papers)
+**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (29)](#papers)
 
 ## Models
 
@@ -56,6 +56,7 @@ All entries in this section: web.
 | 2025‑11‑25 | ["Are We Done Yet?": A Vision-Based Judge for Autonomous Task Completion of Computer Use Agents](https://arxiv.org/abs/2511.20067) | desktop, macos | This study tests vision-language models as task-completion judges using screenshots and instructions from 42 built-in macOS applications. It evaluates judgment accuracy on human-labeled tasks and separately studies how judge feedback affects agent task success. |
 | 2025‑11‑12 | [History-Aware Reasoning for GUI Agents](https://arxiv.org/abs/2511.09127) | unspecified | HAR-GUI combines episodic reasoning and short-term memory to use earlier interactions when selecting GUI actions. Its training constructs reflective scenarios and correction guidance and applies a hybrid reinforcement-learning reward to the 3B policy. |
 | 2025‑09‑29 | [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140) | web | Distills generalizable reasoning strategies from both successful and failed agent trajectories into a persistent memory bank for test-time retrieval. |
+| 2025‑09‑22 | [Mano Technical Report](https://arxiv.org/abs/2509.17336) | web, desktop | Presents Mano, a GUI agent trained on simulated-environment data through supervised fine-tuning, offline RL and online RL, with a verification module for error recovery, evaluated on Mind2Web and OSWorld. |
 | 2025‑07‑21 | [MobileUse: A GUI Agent with Hierarchical Reflection for Autonomous Mobile Operation](https://arxiv.org/abs/2507.16853) | android | MobileUse reflects on errors at action and task timescales, invoking reflection when needed and using proactive exploration to learn unfamiliar apps. It evaluates this mobile execution framework on AndroidWorld and AndroidLab and describes a toolkit for physical-device operation. |
 | 2025‑05‑28 | [UI-Evol: Automatic Knowledge Evolving for Computer Use Agents](https://arxiv.org/abs/2505.21964) | desktop | Introduces UI-Evol, which extracts action sequences from agent interactions and critiques external guidance against those traces. Evaluation on OSWorld examines how revised operational knowledge affects execution and behavioral consistency. |
 | 2025‑05‑26 | [WebCoT: Enhancing Web Agent Reasoning by Reconstructing Chain-of-Thought in Reflection, Branching, and Rollback](https://arxiv.org/abs/2505.20013) | web | WebCoT turns reflection, look-ahead, branching and rollback procedures into chain-of-thought training rationales. Fine-tuning on these reconstructed trajectories is evaluated for web-agent self-improvement and transfer across navigation tasks. |

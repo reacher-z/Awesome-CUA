@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-30 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (5)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
 
 ## Benchmarks
 
@@ -27,6 +27,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
+| [Mano-P](https://github.com/Mininglamp-AI/Mano-P) | desktop, macos, windows, linux, web | [2509.17336](https://arxiv.org/abs/2509.17336) (2025) | code Apache-2.0 | Documentation hub for Mininglamp's Mano-CUA GUI-VLA models, which run locally on Apple Silicon via MLX or through a cloud endpoint, with links to the mano-cua CLI, an agent skill and the Cider quantization SDK. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Mininglamp-AI/Mano-P/HEAD/README.md) |
 | [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 

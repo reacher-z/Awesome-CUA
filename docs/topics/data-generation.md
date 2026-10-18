@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -263,6 +263,7 @@ All entries in this section: android.
 | 2025‑09‑29 | [Scaling Synthetic Task Generation for Agents via Exploration](https://arxiv.org/abs/2509.25047) | android, linux, desktop, cross-platform | AutoPlay explores application states and functions to generate tasks, then uses a model executor and verifier to construct demonstrations. It produces 20,000 tasks across 20 Android apps and 10,000 tasks across 13 Ubuntu apps for supervised and reinforcement learning of UI agents. |
 | 2025‑09‑28 | [Efficient Multi-turn RL for GUI Agents via Decoupled Training and Adaptive Data Curation](https://arxiv.org/abs/2509.23866) | desktop | DART separates GUI reinforcement learning into asynchronous environment, rollout, data-management, and training services. It curates experience by task difficulty, successful trajectories, and step uncertainty while correcting rollout-policy mismatch, with evaluation on OSWorld. |
 | 2025‑09‑26 | [RISK: A Framework for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2509.21982) | web | RISK combines browser-interaction training data, a benchmark, and reinforcement fine-tuning for e-commerce risk-management workflows. Its trajectories and rewards distinguish individual actions from multi-step stateful tasks involving deeply embedded web content. |
+| 2025‑09‑22 | [Mano Technical Report](https://arxiv.org/abs/2509.17336) | web, desktop | Presents Mano, a GUI agent trained on simulated-environment data through supervised fine-tuning, offline RL and online RL, with a verification module for error recovery, evaluated on Mind2Web and OSWorld. |
 | 2025‑09‑22 | [Orcust: Stepwise-Feedback Reinforcement Learning for GUI Agent](https://arxiv.org/abs/2509.17917) | unspecified | Orcust combines principle-constrained reward modeling with GUI trajectory collection in instrumented virtual machines. Environment-checkable and model-derived principles guide stepwise feedback for grounding, basic operations, and complete task execution. |
 | 2025‑09‑22 | [UIPro: Unleashing Superior Interaction Capability For GUI Agents](https://arxiv.org/abs/2509.17328) | cross-platform | UIPro pretrains GUI understanding on 20.6 million tasks and then harmonizes interaction datasets through a unified action space. Continued fine-tuning uses the merged multi-platform data to train action prediction for generalist GUI operation. |
 | 2025‑09‑19 | [BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent](https://arxiv.org/abs/2509.15566) | unspecified | BTL-UI separates GUI interaction into screen-region attention, planning and executable-command generation. It adds an automated annotation pipeline and rule-based process/outcome rewards for training, with evaluation on both static understanding and dynamic interaction. |

@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T15:41:06Z",
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -190,7 +190,7 @@
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
-    "framework": 75,
+    "framework": 76,
     "infrastructure": 14,
     "model": 98,
     "paper": 2697,
@@ -206,7 +206,7 @@
     "ios": 21,
     "linux": 49,
     "macos": 30,
-    "unspecified": 377,
+    "unspecified": 378,
     "web": 621,
     "windows": 63
   },
@@ -255,7 +255,7 @@
       "ios": 1,
       "linux": 6,
       "macos": 1,
-      "unspecified": 2,
+      "unspecified": 3,
       "web": 37,
       "windows": 2
     },

@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -518,13 +518,13 @@
         "state": "success"
       },
       "discovered": 170,
-      "indexed": 116,
-      "indexed_resources": 115,
-      "resolved_aliases": 3,
-      "curated": 109,
+      "indexed": 117,
+      "indexed_resources": 116,
+      "resolved_aliases": 4,
+      "curated": 110,
       "excluded": 1,
       "set_aside": 9,
-      "unindexed": 44
+      "unindexed": 43
     },
     {
       "id": "delunn-multimodal",

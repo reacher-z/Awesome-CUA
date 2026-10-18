@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:fanbinlu/steve",
+    "target_id": "github:fanbinlu/steve-r1",
+    "repository_id": 939398232,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:01:01Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/FanbinLu/STEVE",
+        "resolved_url": "https://api.github.com/repositories/939398232",
+        "repository_id": 939398232,
+        "full_name": "FanbinLu/STEVE-R1",
+        "html_url": "https://github.com/FanbinLu/STEVE-R1",
+        "retrieved_at": "2026-10-18T11:01:00Z",
+        "sha256": "5ca5623956f5faf677aa2a887e7bbc70a5a5c59831562f8edf8ae5c5d528ef06"
+      },
+      {
+        "url": "https://api.github.com/repos/FanbinLu/STEVE-R1",
+        "resolved_url": "https://api.github.com/repos/FanbinLu/STEVE-R1",
+        "repository_id": 939398232,
+        "full_name": "FanbinLu/STEVE-R1",
+        "html_url": "https://github.com/FanbinLu/STEVE-R1",
+        "retrieved_at": "2026-10-18T11:01:01Z",
+        "sha256": "5ca5623956f5faf677aa2a887e7bbc70a5a5c59831562f8edf8ae5c5d528ef06"
+      }
+    ]
   }
 ]

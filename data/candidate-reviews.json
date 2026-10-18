@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "decision": "out_of_scope",
+    "reason": "Hugging Face Transformers is a general model-definition library for training and inference across text, vision, audio and multimodal models. It has no GUI, browser or device interaction of its own and was found only in the Seg2Click README's acknowledgements.",
+    "reviewed_at": "2026-10-18T11:30:41Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/HEAD/README.md",
+      "sha256": "2a177841823df1ce1ad7ec068f07809eeb39d8db336ecab0fec259ddaf488ecb",
+      "retrieved_at": "2026-10-18T11:22:23Z"
+    }
   }
 ]

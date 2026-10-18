@@ -63143,5 +63143,71 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:bb1440d051c68455a72e",
+    "name": "Pix2Struct base (pretrained)",
+    "kind": "model",
+    "url": "https://huggingface.co/google/pix2struct-base",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding"
+    ],
+    "summary": "Pretrained base-size Pix2Struct checkpoint in Transformers format, learned by parsing masked web page screenshots into simplified HTML and released only as a starting point for fine-tuning.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Pix2Struct - Pretrained weights"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/google/pix2struct-base/raw/4605659ec5d82c985955ebdea8210f32fe54a682/README.md"
+    ],
+    "documented_by": [
+      "2210.03347"
+    ],
+    "notes": "Adjacent: a general visual-language pretraining checkpoint, not an agent or a UI-specific fine-tune. The card calls it the pretrained version of Pix2Struct for fine-tuning only, quotes the paper abstract, shows the T5X-to-Transformers conversion script, and says the weights were contributed by the Pix2Struct authors and added to Hugging Face by Younes Belkada. Hub API at revision 4605659e lists model.safetensors and pytorch_model.bin in the Pix2StructForConditionalGeneration architecture, with 282,285,696 F32 parameters reported for the safetensors file; the repository is not gated. The card gives no scores and does not link the Pix2Struct code repository, so no family relation is recorded. The card declares Apache-2.0 for the checkpoint; no pretraining data is part of this release.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "google/pix2struct-base",
+      "hub_revision": "4605659ec5d82c985955ebdea8210f32fe54a682",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/google/pix2struct-base/tree/4605659ec5d82c985955ebdea8210f32fe54a682",
+      "architecture": "Pix2StructForConditionalGeneration",
+      "listed_weight_files": [
+        "model.safetensors",
+        "pytorch_model.bin"
+      ]
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/google/pix2struct-base/revision/4605659ec5d82c985955ebdea8210f32fe54a682",
+        "sha256": "bb1962674cf165e80a32f358c4bc2b79714eaa0eb0b79145174e4dbf17d2bad2",
+        "retrieved_at": "2026-10-18T16:07:04Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4250a18c9308f7bb6a1734dc60537e2711e8589b46fe807bfa57b212cbb2a25e",
+    "reviewed_at": "2026-10-18T16:07:29Z"
   }
 ]

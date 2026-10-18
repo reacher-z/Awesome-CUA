@@ -63143,5 +63143,90 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:ishan0102/vimgpt",
+    "name": "vimGPT",
+    "kind": "agent",
+    "url": "https://github.com/ishan0102/vimGPT",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding"
+    ],
+    "summary": "Playwright Chromium loop that shows an OpenAI vision model a screenshot overlaid with Vimium link hints and runs its navigate, type or hint-key click choice.",
+    "scope": "core",
+    "verify_terms": [
+      "vimGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ishan0102/vimGPT/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The README frames the experiment around GPT-4V; the current vision.py sends the screenshot to gpt-4o and expects JSON with navigate, type, click or done keys. Vimium is fetched by setup.sh and loaded as an unpacked extension; optional voice input uses Whisper through whisper_mic. There are no releases, evaluation results or paper; VisualWebArena (arXiv 2401.13649) is cited only as outside coverage. The MIT LICENSE covers this repository's code, not Vimium or model-provider terms. Code was read, not run.",
+    "details": {
+      "availability": "Public source; no releases",
+      "repository_url": "https://github.com/ishan0102/vimGPT",
+      "repository_tree_sha": "cf443aa287793ebeab3443268ccbc447690dc2c2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/ishan0102/vimGPT",
+        "sha256": "aeb011e2ccf6d459a1e677d5da5613d25919d72b240ee702b167f142d783ff9c",
+        "retrieved_at": "2026-10-18T11:23:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/ishan0102/vimGPT/git/trees/main?recursive=1",
+        "sha256": "c79ac4f8d4a9466b37e199a28b5e815474d5561383f00af39c60b6e86975c8f8",
+        "retrieved_at": "2026-10-18T11:23:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ishan0102/vimGPT/HEAD/vimbot.py",
+        "sha256": "0a91b0d67ac4a0ccd381bff48a32a0932e0eab130ce4e8f345af0d83f5652f9e",
+        "retrieved_at": "2026-10-18T11:23:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ishan0102/vimGPT/HEAD/vision.py",
+        "sha256": "5ccc1a083789ca6b85e5b260a8e8e3548d0cccc8c9594bdb959914e814702d83",
+        "retrieved_at": "2026-10-18T11:23:24Z"
+      }
+    ],
+    "reviewed_sha256": "af64b0985a09b05ea15c4b80302e6c087995f29345e19fce158e392ef963daa5",
+    "reviewed_at": "2026-10-18T11:23:52Z"
   }
 ]

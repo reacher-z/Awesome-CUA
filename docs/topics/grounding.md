@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (3)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -135,6 +135,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | web | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/SeeAct/HEAD/README.md) |
 | [Self Operating Computer](https://github.com/OthersideAI/self-operating-computer) | desktop | — | code MIT | Framework, released in November 2023, in which a multimodal model views the screen and picks mouse and keyboard actions toward a goal, with backends such as GPT-4o, Claude 3, Gemini and LLaVA. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OthersideAI/self-operating-computer/HEAD/README.md) |
+| [vimGPT](https://github.com/ishan0102/vimGPT) | web | — | code MIT | Playwright Chromium loop that shows an OpenAI vision model a screenshot overlaid with Vimium link hints and runs its navigate, type or hint-key click choice. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ishan0102/vimGPT/HEAD/README.md) |
 
 ## Frameworks
 

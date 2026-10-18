@@ -63143,5 +63143,119 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:liuxiaojieoutofworld/mobilerag_arxiv",
+    "name": "MobileRAG",
+    "kind": "agent",
+    "url": "https://github.com/liuxiaojieOutOfWorld/MobileRAG_arxiv",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "self-reflection",
+      "tool-integration"
+    ],
+    "summary": "ADB-driven Android agent with a plan-act-reflect loop over OCR and icon-detected screens, retrieving from an installed-app index, a memory of past successful runs and Google search.",
+    "scope": "core",
+    "verify_terms": [
+      "MobileRAG"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/liuxiaojieOutOfWorld/MobileRAG_arxiv/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.code"
+    ],
+    "notes": "The arXiv abstract of 2509.03891 links this repository. The README documents ADB control (tap, swipe, type, back, home), FAISS indexes for LocalRAG and MemRAG, Google Custom Search for InterRAG and optional Qwen-VL icon captions through DashScope or a local model; an OpenAI-compatible chat endpoint and API keys are required. The MobileRAG-Eval benchmark named in the paper is not in the repository tree. The README restricts use to research and education, no LICENSE file is present and the GitHub API reports no license, so the code license stays unknown.",
+    "details": {
+      "repository_url": "https://github.com/liuxiaojieOutOfWorld/MobileRAG_arxiv",
+      "repository_tree_sha": "493b108e9e032c0044c48154589b9f0220bf4d0a"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/liuxiaojieOutOfWorld/MobileRAG_arxiv",
+        "sha256": "26570c69e800587ed91b1065e21fe98d9e01580c67233831bd6c160493013da6",
+        "retrieved_at": "2026-10-18T11:30:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/liuxiaojieOutOfWorld/MobileRAG_arxiv/git/trees/main?recursive=1",
+        "sha256": "79161b8be45563a9e00af35b1942e797ac632aa74a778fa6622941be8067af7c",
+        "retrieved_at": "2026-10-18T11:30:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://export.arxiv.org/api/query?id_list=2509.03891",
+        "sha256": "bf30d7ee73106f99c5342eec60476ff4ae421eca1715c991671b5aebdf96dc8e",
+        "retrieved_at": "2026-10-18T11:30:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/liuxiaojieOutOfWorld/MobileRAG_arxiv/HEAD/RAGS/rag.py",
+        "sha256": "bf32049ed909a4ed6c0e6a294044d7de0f913b5297794d096a872f29882edf88",
+        "retrieved_at": "2026-10-18T11:30:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/liuxiaojieOutOfWorld/MobileRAG_arxiv/HEAD/MobileAgent/controller.py",
+        "sha256": "e318e9642d03948e92aab838c3531a06e271ab361d775575e2e0bb1f97c95378",
+        "retrieved_at": "2026-10-18T11:30:24Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2509.03891",
+        "evidence_url": "https://export.arxiv.org/api/query?id_list=2509.03891"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No LICENSE file is present and the GitHub API reports no license; the README's research-and-education-only statement is not an identified license.",
+        "evidence_urls": [
+          "https://api.github.com/repos/liuxiaojieOutOfWorld/MobileRAG_arxiv"
+        ]
+      }
+    },
+    "reviewed_sha256": "cbdf9e9069fa7549e97d2aa66c489378749fc00c4de4c08e76fc05d3fd7723a8",
+    "reviewed_at": "2026-10-18T11:30:51Z"
   }
 ]

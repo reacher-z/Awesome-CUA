@@ -63143,5 +63143,104 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:browser-use/browser-harness",
+    "name": "Browser Harness",
+    "kind": "tool",
+    "url": "https://github.com/browser-use/browser-harness",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Python CDP harness, CLI skill and MCP server that let coding agents such as Claude Code, Codex or Cursor drive the user's running Chrome, with click, type, tab, upload and screenshot helpers agents can extend.",
+    "scope": "core",
+    "verify_terms": [
+      "Browser Harness",
+      "browser-harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/browser-harness/HEAD/README.md"
+    ],
+    "publisher_id": "organization:browser-use",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "notes": "The README names Browser Use as the company behind the repository. Setup connects to a Chrome that has remote debugging enabled and the agent writes missing helpers into agent-workspace/agent_helpers.py. The MCP server exposes the same helpers, including recording start and stop. The package sends opt-out PostHog telemetry. The README's BU Bench V2.1 comparison with other browser tools was run by the publisher on 100 tasks with one agent and was not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source and PyPI package; GitHub releases carry no binary assets",
+      "package_version": "0.1.13",
+      "repository_revision": "c6a941287424f32e2d20c7b7b892c8493f46808d"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/browser-harness/c6a941287424f32e2d20c7b7b892c8493f46808d/src/browser_harness/helpers.py",
+        "sha256": "5ea8560a01b74281833923720ffd23ca8e4f6b873c2419c821f7695a04091cf3",
+        "retrieved_at": "2026-10-18T11:35:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/browser-harness/c6a941287424f32e2d20c7b7b892c8493f46808d/docs/MCP.md",
+        "sha256": "6da3e885554c7e0ee9ebaa2463f6a00db2a33dfbb816f9104133ccd83f1b1d74",
+        "retrieved_at": "2026-10-18T11:35:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/browser-harness/c6a941287424f32e2d20c7b7b892c8493f46808d/src/browser_harness/telemetry.py",
+        "sha256": "8d48b95afe4b149c2be115e0df18dd9f62496148a194277702d74829455cfa94",
+        "retrieved_at": "2026-10-18T11:35:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.package_version",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/browser-harness/c6a941287424f32e2d20c7b7b892c8493f46808d/pyproject.toml",
+        "sha256": "c861880e2629ce6355ff645f5977aecad0ccc8950a211d6fe7ba13420a396f98",
+        "retrieved_at": "2026-10-18T11:35:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/browser-harness/c6a941287424f32e2d20c7b7b892c8493f46808d/LICENSE",
+        "sha256": "5afa3d97bf1e6f998d587fa101e3fe0d0c416840b7fe77bcd6ae97690a334631",
+        "retrieved_at": "2026-10-18T11:35:29Z"
+      }
+    ],
+    "reviewed_sha256": "69309c3dfeec03b6499374e36fda7d2d15e3a9c276b5a5f00574f0cb29a47156",
+    "reviewed_at": "2026-10-18T11:36:12Z"
   }
 ]

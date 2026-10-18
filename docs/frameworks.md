@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**75 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
+**76 resources:** [Web (28)](#web) · [Desktop (15)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -64,6 +64,7 @@ All entries in this section: web.
 | [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 | [Surfkit](https://github.com/agentsea/surfkit) | desktop | — | code MIT | Python toolkit and CLI for building, publishing and running multimodal agents that operate devices such as Ubuntu desktops, locally or on Kubernetes, with task trackers and an agent hub. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/surfkit/HEAD/README.md) |
 | [TreeCUA](https://github.com/UITron-hub/TreeCUA) | desktop | [2602.09662](https://arxiv.org/abs/2602.09662) (2026) | code Apache-2.0 | Framework for generating GUI trajectories through tree-structured exploration and verification. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/UITron-hub/TreeCUA/HEAD/README.md) |
+| [WeaveBench evaluation harness](https://github.com/weavebench/WeaveBench) | desktop, linux | [2606.09426](https://arxiv.org/abs/2606.09426) (2026) | code MIT | Harness for WeaveBench that runs Claude Code, Codex CLI, Hermes and OpenClaw agents in an OSWorld-derived Ubuntu VM and scores trajectories and deliverables with an agent judge that zeroes fabricated evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/weavebench/WeaveBench/HEAD/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
 
 [↑ Back to top](#framework-catalog)

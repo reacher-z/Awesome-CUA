@@ -63143,5 +63143,128 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WeaveBench evaluation harness",
+    "kind": "framework",
+    "url": "https://github.com/weavebench/WeaveBench",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "long-horizon"
+    ],
+    "summary": "Harness for WeaveBench that runs Claude Code, Codex CLI, Hermes and OpenClaw agents in an OSWorld-derived Ubuntu VM and scores trajectories and deliverables with an agent judge that zeroes fabricated evidence.",
+    "scope": "core",
+    "verify_terms": [
+      "WeaveBench"
+    ],
+    "documented_by": [
+      "2606.09426"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/weavebench/WeaveBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.availability"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:6a212bc12f82c824f6b9",
+        "evidence_url": "https://raw.githubusercontent.com/weavebench/WeaveBench/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/NOTICE"
+      }
+    ],
+    "notes": "The benchmark's 114 task specifications, runtime bundles, judge template and 28.46 GB Ubuntu qcow2 image are downloaded from the Hugging Face WeaveBench dataset (weavebench/scripts/download_dataset.py and download_vm.py), which has its own benchmark record; this tree holds the code. Per NOTICE, weavebench/desktop_env is derived from OSWorld's desktop_env with its evaluators and cloud providers removed, plus a headless docker_lite provider. weavebench/agents adapts Claude Code, Codex CLI, Hermes and OpenClaw (routed through OpenRouter by default), assets/ holds their patches and a computer-use MCP server, and weavebench/eval runs tasks and the trajectory-aware agent judge. experiments/ adds OSWorld hybrid GUI+CLI studies, and _run_tmp/ holds committed run artifacts such as judge score files. Leaderboard figures are publisher-reported and were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public harness source; tasks and VM image on Hugging Face",
+      "repository_revision": "acf203ae24386aa9bcc0da950c533c8c796dc38e"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/NOTICE",
+        "sha256": "9121ca727b8e0e33c6dbfe2bd5aa47b54c70acad9e3e2f89d9683f4698b58f6f",
+        "retrieved_at": "2026-10-18T15:42:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/weavebench/scripts/download_dataset.py",
+        "sha256": "1e25f5a6cfd5babbe6a25a1a0deabd7363469fc392967e21292b6b03751ad87c",
+        "retrieved_at": "2026-10-18T15:42:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/weavebench/eval/agent_judge/judge_runner.py",
+        "sha256": "0c176d5ef3413de88e62698397513af203b1108ea0752b6491536c682d37d8f4",
+        "retrieved_at": "2026-10-18T15:42:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/weavebench/agents/__init__.py",
+        "sha256": "f99f4c3ed6a9b1e15dd0c1e6ce9c1d745134480c524fb311528d9b3c344180c9",
+        "retrieved_at": "2026-10-18T15:42:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/weavebench/scripts/download_vm.py",
+        "sha256": "5b9ab40838a08830438e7571f26f0da31538566400de5e7632bf0b0ec24eb326",
+        "retrieved_at": "2026-10-18T15:42:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/weavebench/WeaveBench/acf203ae24386aa9bcc0da950c533c8c796dc38e/LICENSE",
+        "sha256": "20b73d53cd7d689f0e7e3a8be21c8a36981b7ae87300be35b128a630db3b66be",
+        "retrieved_at": "2026-10-18T15:42:46Z"
+      }
+    ],
+    "reviewed_sha256": "7e39c52cf5ec07d4499d2d55dbcf18989e13a2adbee36149cde6e3a95a964de1",
+    "reviewed_at": "2026-10-18T15:43:10Z"
   }
 ]

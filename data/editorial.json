@@ -63143,5 +63143,110 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GroundCUA",
+    "kind": "framework",
+    "url": "https://github.com/ServiceNow/GroundCUA",
+    "environments": [
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning",
+      "data-generation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Code for GroundCUA and GroundNext: an inference helper package, a grounding evaluation harness for five benchmarks, SFT and RLOO recipes, and a VideoCUA pipeline that turns demonstration videos into CoT trajectories.",
+    "verify_terms": [
+      "GroundCUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ServiceNow/GroundCUA/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2511.07332"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ServiceNow/GroundCUA/git/trees/94cba61693d6258c7100f7016a299b84b1bb7732?recursive=1",
+        "sha256": "b063a72213405e281091d29708097640b783bae2f8d486412fa087b2800b839e",
+        "retrieved_at": "2026-10-18T12:06:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/training/README.md",
+        "sha256": "a7a0a783eb0a03782df022c991926bd527b7c23bdf9a840cf9410b93152f35ac",
+        "retrieved_at": "2026-10-18T12:06:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/VideoCUA/README.md",
+        "sha256": "274ca125266c7bababc0f39b172adac6410d0f0e86f54a9a7811cacde2a36c26",
+        "retrieved_at": "2026-10-18T12:06:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/pyproject.toml",
+        "sha256": "9f2fa5ebcb0eb56f1a8bfe7e5db3ddf8147cf032ac4d347d34ce37c5d7458688",
+        "retrieved_at": "2026-10-18T12:06:12Z"
+      }
+    ],
+    "details": {
+      "availability": "Public inference package, evaluation, training-recipe and VideoCUA synthesis source; the dataset and GroundNext checkpoints are separate Hugging Face releases, and the training READMEs still mark detailed documentation as coming soon.",
+      "repository_revision": "94cba61693d6258c7100f7016a299b84b1bb7732"
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The repository has no LICENSE file and GitHub reports no license; pyproject.toml declares Apache-2.0 only as metadata of the pip package, which does not establish a grant for the whole repository.",
+        "evidence_urls": [
+          "https://api.github.com/repos/ServiceNow/GroundCUA/git/trees/94cba61693d6258c7100f7016a299b84b1bb7732?recursive=1",
+          "https://raw.githubusercontent.com/ServiceNow/GroundCUA/94cba61693d6258c7100f7016a299b84b1bb7732/pyproject.toml"
+        ]
+      }
+    },
+    "notes": "The README links arXiv:2511.07332, the ServiceNow/GroundCUA Hub dataset and the GroundNext-7B-V0 model. The tree at commit 94cba61 holds the pip-installable groundcua helper package; an eval harness, which the README says builds on InfiGUI-G1, for ScreenSpot-Pro, ScreenSpot-v2, MMBench-GUI, OSWorld-G and UI-Vision; LLaMA-Factory SFT configs and verl RLOO recipes for 3B and 7B models, with both frameworks as git submodules; documentation of the instruction-tuning files in the Hub dataset; and a VideoCUA pipeline that turns the Hub VideoCUA videos and action logs into OpenCUA-style traces with LLM-written observation, thought and reflection steps. The Hub dataset and checkpoints were not reviewed here.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ea25e5db95415f19bcf42f37547912eed185b72441a4fa57a0c981a7f50d732a",
+    "reviewed_at": "2026-10-18T12:06:38Z"
   }
 ]

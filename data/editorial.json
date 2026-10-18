@@ -63143,5 +63143,111 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Enikk",
+    "kind": "agent",
+    "url": "https://github.com/gtt116/enikk",
+    "environments": [
+      "windows",
+      "desktop"
+    ],
+    "topics": [
+      "screen-understanding",
+      "memory",
+      "automation"
+    ],
+    "scope": "core",
+    "summary": "Windows desktop agent on the Hermes Agent framework that parses a captured window with a YOLO icon detector and OCR into normalized UI elements, then clicks, types, scrolls and drags, with app skills and a web dashboard.",
+    "verify_terms": [
+      "Enikk"
+    ],
+    "notes": "The controller's analyze tool captures a window, runs a bundled YOLO icon detector and RapidOCR, and returns merged elements with [0,1000] boxes plus paths to the screenshot and a box-overlay copy; read_image passes a saved image to vision models, and text-only models work from the element list. Actions are clicks at normalized coordinates, key presses, hotkeys, typing, scrolling, swipes and mouse moves, alongside PowerShell, file and cron tools. Hermes Agent (pinned 0.18.2 as a dependency, not vendored) supplies the loop, memory, todo and skill tools. Built-in skills cover two games, NIKKE and Wuthering Waves; other apps need user-written skills. Releases are Windows executables; the README credits the detector weights to OmniParser under CC-BY-4.0, but weights/icon_detect/LICENSE holds the AGPL-3.0 text. The README limits use to learning and research. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gtt116/enikk/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public source and Windows release builds; the detector and OCR weights are stored in the repository through Git LFS, and model calls need a user-supplied API.",
+      "repository_revision": "cd17ad7c2c15b8bb5526c5df0530736386899acb"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/gtt116/enikk/cd17ad7c2c15b8bb5526c5df0530736386899acb/enikk/controller.py",
+        "sha256": "6d987bb5eedce13351102e52e03a774195aa76696c50f9d800453fb6ee16476c",
+        "retrieved_at": "2026-10-18T16:07:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gtt116/enikk/cd17ad7c2c15b8bb5526c5df0530736386899acb/enikk/ui_parser.py",
+        "sha256": "beccbda87d0932df7a26d0f27474c02ea0d27019f42590d32d527a1efa8ddace",
+        "retrieved_at": "2026-10-18T16:07:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/gtt116/enikk/cd17ad7c2c15b8bb5526c5df0530736386899acb/enikk/prompts.py",
+        "sha256": "3d2ac040f5428e0285c002b4ccf79fbbe6c8a38238f12a0e6d143a8af2fee6c3",
+        "retrieved_at": "2026-10-18T16:07:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gtt116/enikk/cd17ad7c2c15b8bb5526c5df0530736386899acb/pyproject.toml",
+        "sha256": "cb3f8e3de0b19ba4625e0ca052d677aa7ae2e805558a692710d9c32ca37aed3c",
+        "retrieved_at": "2026-10-18T16:07:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gtt116/enikk/cd17ad7c2c15b8bb5526c5df0530736386899acb/weights/icon_detect/LICENSE",
+        "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+        "retrieved_at": "2026-10-18T16:07:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gtt116/enikk/cd17ad7c2c15b8bb5526c5df0530736386899acb/enikk/skills/nikke/SKILL.md",
+        "sha256": "3aad586b960303c89db6cb1f3f505f54e500e57d2321ee9046f905cae9b950e2",
+        "retrieved_at": "2026-10-18T16:07:17Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "37560d69f98b3b4ea0fa49651446378dccd2905b5e9fc4524151cb8998328d7e",
+    "reviewed_at": "2026-10-18T16:07:48Z"
   }
 ]

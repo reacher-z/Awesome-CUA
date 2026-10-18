@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (24)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -101,6 +101,7 @@ All entries in this section: web.
 | [Stagehand](https://github.com/browserbase/stagehand) | — | code MIT | Browser automation framework combining code and natural-language actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browserbase/stagehand/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
+| [Web-Agents-Unsupervised](https://github.com/MultifacetedNLP/Web-Agents-Unsupervised) | [2404.10887](https://arxiv.org/abs/2404.10887) (2024) | code MIT | Training and evaluation code for a Flan-T5 WebShop shopping agent trained with PPO, plus supervised training on demonstration trajectories, a DRRN baseline and a bundled copy of the WebShop site. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MultifacetedNLP/Web-Agents-Unsupervised/HEAD/README.md) |
 | [WebAgent-R1](https://github.com/weizhepei/WebAgent-R1) | [2505.16421](https://arxiv.org/abs/2505.16421) (2025) | code Apache-2.0 | Environment setup, multi-turn reinforcement-learning and evaluation tooling for browser agents interacting with WebArena. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/weizhepei/WebAgent-R1/HEAD/WebAgent-R1/README.md) |
 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |

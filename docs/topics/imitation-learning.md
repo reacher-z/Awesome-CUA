@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-74 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+75 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (44)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (10)](#frameworks) · [Papers (44)](#papers)
 
 ## Benchmarks
 
@@ -63,6 +63,7 @@ All entries in this section: unspecified.
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |
+| [Web-Agents-Unsupervised](https://github.com/MultifacetedNLP/Web-Agents-Unsupervised) | web | [2404.10887](https://arxiv.org/abs/2404.10887) (2024) | code MIT | Training and evaluation code for a Flan-T5 WebShop shopping agent trained with PPO, plus supervised training on demonstration trajectories, a DRRN baseline and a bundled copy of the WebShop site. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MultifacetedNLP/Web-Agents-Unsupervised/HEAD/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 
 ## Papers

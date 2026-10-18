@@ -63143,5 +63143,106 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "V-Droid",
+    "kind": "agent",
+    "url": "https://github.com/V-Droid-Agent/V-Droid",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "reward-models",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Code for the V-Droid Android agent, which lists candidate actions from the accessibility tree and scores each with a LoRA verifier on Llama 3.1 8B in AndroidWorld, plus pairwise verifier training scripts.",
+    "verify_terms": [
+      "V-Droid"
+    ],
+    "documented_by": [
+      "2503.15937"
+    ],
+    "notes": "The agent turns the AndroidWorld accessibility tree into an HTML-like screen description, extracts candidate actions from it and scores them in batches with the verifier; an API model (gpt-4o in main.sh) completes text-entry actions and writes the step summaries kept as working memory. The verifier is a LoRA adapter published as V-Droid/V-Droid-8B-0323 on Hugging Face over unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit. The repository bundles a modified copy of the android_world package (Apache-2.0 file headers from the android_world authors); run_suite.py says the AndroidLab and MobileAgentBench suites used in the paper are not yet released. The README's success rates are publisher-reported and were not reproduced. There is no LICENSE file and the GitHub API reports no license, so the code license is unknown; the model card's apache-2.0 tag is not applied to the code. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Python source with AndroidWorld evaluation and verifier training scripts; the verifier LoRA weights are downloaded separately from Hugging Face and an external LLM API is needed for action completion and summaries.",
+      "repository_revision": "8d549027634abe65a5721fe6bc3b5e84475db2f6",
+      "repository_tree_sha": "3baf4290dddc6bf947293654b46c39b36a5952f1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/V-Droid-Agent/V-Droid/git/commits/8d549027634abe65a5721fe6bc3b5e84475db2f6",
+        "sha256": "9c5fbc10e3aeb1b964aecd05e1c41dd3afbee670f0696156767065aa9f0a5564",
+        "retrieved_at": "2026-10-18T12:26:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/V-Droid-Agent/V-Droid/git/trees/3baf4290dddc6bf947293654b46c39b36a5952f1?recursive=1",
+        "sha256": "812b3d87565495698378702246420409e68db3c4b393d74c3b6571fdc909064e",
+        "retrieved_at": "2026-10-18T12:26:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/8d549027634abe65a5721fe6bc3b5e84475db2f6/android_world/agents/vdroid.py",
+        "sha256": "8a50a7d5ceb6a14e1d1034cfb089d400c89fd4de20d86466df2f7cd505da7379",
+        "retrieved_at": "2026-10-18T12:26:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/8d549027634abe65a5721fe6bc3b5e84475db2f6/run_suite.py",
+        "sha256": "adf121abe830d64545540b2fec2812f0a372044d9a7251c7ba00333ae8ba1c28",
+        "retrieved_at": "2026-10-18T12:26:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/8d549027634abe65a5721fe6bc3b5e84475db2f6/main.sh",
+        "sha256": "fd188e36ecc2de7288e4bed0e34e57de55be0684c0c03df4c250b91dabdb13b1",
+        "retrieved_at": "2026-10-18T12:26:58Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e405fdbb0018c557b5e9d974bff53acba26b3695dccbab8839a8dde2dc306ff4",
+    "reviewed_at": "2026-10-18T12:27:07Z"
   }
 ]

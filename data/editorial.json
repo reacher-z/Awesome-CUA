@@ -63143,5 +63143,210 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "LearnGUI",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/lgy0404/LearnGUI",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "imitation-learning"
+    ],
+    "summary": "Mobile GUI benchmark for learning from demonstrations: 2,252 offline tasks and 101 online tasks with human step-by-step trajectories, each query paired with one to three similar support demonstrations.",
+    "scope": "core",
+    "verify_terms": [
+      "LearnGUI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol",
+      "licenses.data"
+    ],
+    "documented_by": [
+      "2504.13805"
+    ],
+    "notes": "The Hub repository holds data only: multi-part offline screenshot archives, element and instruction annotations, k-shot pairings in task_split.json (the card's tree spells it task_spilit.json), and 101 online task folders with screenshots, UI XML files, operation logs and one screen recording each. Offline-Train (2,001 tasks) doubles as a training split. The card names no mobile operating system. Inference and evaluation code is in the separately cataloged LearnAct repository (github:lgy0404/learnact). The card declares Apache-2.0 for the dataset.",
+    "details": {
+      "hub_id": "lgy0404/LearnGUI",
+      "release_revision": "972aec743f23076855964e867bd93d7aacbac72e",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/tree/972aec743f23076855964e867bd93d7aacbac72e",
+      "benchmark_protocol": {
+        "focus": [
+          "demonstration-conditioned mobile GUI task execution",
+          "k-shot (k = 1, 2, 3) support demonstrations with instruction, UI and action similarity scores"
+        ],
+        "setting": "mixed",
+        "observations": [
+          "step screenshots",
+          "high-level and low-level instructions",
+          "UI element annotations",
+          "support demonstrations"
+        ],
+        "actions": [
+          "mobile GUI actions such as CLICK[x,y] and SWIPE[direction]"
+        ],
+        "evaluation": "The card describes offline evaluation against ground-truth step actions and online evaluation on 101 interactive tasks; no evaluator ships in this dataset repository, and none was run.",
+        "counts": [
+          {
+            "value": 2353,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "LearnGUI offline and online tasks combined",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 2252,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "LearnGUI-Offline",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 101,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "LearnGUI-Online",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 2001,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "Offline-Train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 251,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "Offline-Test split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 26184,
+            "unit": "step actions",
+            "qualifier": "exact",
+            "population": "Offline-Train split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 3469,
+            "unit": "step actions",
+            "qualifier": "exact",
+            "population": "Offline-Test split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 1423,
+            "unit": "step actions",
+            "qualifier": "exact",
+            "population": "Online-Test split",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 73,
+            "unit": "applications",
+            "qualifier": "exact",
+            "population": "LearnGUI offline and online tasks combined",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+          },
+          {
+            "value": 101,
+            "unit": "task instruction files",
+            "qualifier": "exact",
+            "population": "online/low_level_instructions at the inspected revision",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lgy0404/LearnGUI"
+          },
+          {
+            "value": 101,
+            "unit": "screen recordings",
+            "qualifier": "exact",
+            "population": "online/raw_data at the inspected revision",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lgy0404/LearnGUI"
+          }
+        ],
+        "notes": "Task, step-action, application and file counts are different units and are not summed. Each k-shot table row reuses the same split tasks with a different number of support demonstrations, so the 1-, 2- and 3-shot rows are not additional tasks.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md",
+          "https://huggingface.co/api/datasets/lgy0404/LearnGUI",
+          "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/online/low_level_instructions/AudioRecorderRecordAudio.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.release_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/api/datasets/lgy0404/LearnGUI",
+        "sha256": "19300276c328762286e677eed624bc169c189cafa48571244e791008bf576c50",
+        "retrieved_at": "2026-10-18T16:00:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/online/low_level_instructions/AudioRecorderRecordAudio.json",
+        "sha256": "d5b3c31b62e08bce07270e0f99d0c8608b68f64848251329e725384825b68b5d",
+        "retrieved_at": "2026-10-18T16:00:11Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md",
+          "retrieved_at": "2026-10-18T16:00:11Z",
+          "basis": "Publisher dataset-card declaration for the LearnGUI release; the LearnAct code repository and app content shown in screenshots are not covered by this evidence."
+        },
+        "reason": "Publisher dataset-card declaration for the LearnGUI release; the LearnAct code repository and app content shown in screenshots are not covered by this evidence.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/lgy0404/LearnGUI/raw/972aec743f23076855964e867bd93d7aacbac72e/README.md"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned dataset card, the Hub API file manifest (counted online files by script) and one online task instruction file; also counted query episodes in offline/task_split.json (2,001 train, 251 test), which matches the card. No archives were extracted.",
+    "reviewed_sha256": "a7c0fae7a067f7b4704170c73589dae43e4df541a80c5f00d0a98f79bb1e7e7c",
+    "reviewed_at": "2026-10-18T16:00:39Z"
   }
 ]

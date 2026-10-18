@@ -2,15 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AgentBench](https://github.com/THUDM/AgentBench) · [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vRR3Wl7wsCgHpwUw1_eUXW_fptAPLL3FkhnW_rua0O1Ji_GIVrpTjY5LaKAhwO-WeARjnY_KNw0SYNJ/pubhtml) | cross-platform, web | [2308.03688](https://arxiv.org/abs/2308.03688) (2023) | — | code Apache-2.0 | Agent evaluation suite with containerized tasks and a function-calling interface, including operating-system and shopping environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AgentBench/HEAD/README.md) |
+| [AgentStudio](https://github.com/ltzheng/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [205 online task definitions](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md) | code AGPL-3.0 | Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md) |
 | [AppWorld](https://github.com/StonyBrookNLP/appworld) · [leaderboard](https://appworld.dev/appworld/leaderboard) | unspecified | [2407.18901](https://arxiv.org/abs/2407.18901) (2024) | [750 tasks](https://arxiv.org/abs/2407.18901) · [9 applications](https://arxiv.org/abs/2407.18901) | code Apache-2.0 | Simulated applications, user data, and state-based task checks for evaluating agents that interact through APIs and code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stonybrooknlp/appworld/HEAD/README.md) |
 | [MCPWorld](https://github.com/SAAgent/MCPWorld) | cross-platform | [2506.07672](https://arxiv.org/abs/2506.07672) (2025) | — | code MIT | Evaluation environment combining computer interaction with tool access. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SAAgent/MCPWorld/HEAD/README.md) |
 | [MobileGym++ / MobileGym++ Bench](https://github.com/OpenMobile2/MobileGym-plusplus) | web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | [215 task definitions](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/bench_env/benchmark/official.json) · [63 simulated clients](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md) | code Apache-2.0 | Browser-rendered mobile simulation with resettable app state and a shared task suite for GUI-only and GUI-plus-tool agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md) |

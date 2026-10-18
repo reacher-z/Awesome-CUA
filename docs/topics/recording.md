@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-23 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+24 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
+
+## Benchmarks
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/ltzheng/agent-studio) | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [205 online task definitions](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md) | code AGPL-3.0 | Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md) |
 
 ## Datasets
 

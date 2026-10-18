@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-55 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+56 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/ltzheng/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [205 online task definitions](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md) | code AGPL-3.0 | Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md) |
 | [AppSim-Bench](https://github.com/Acrab-Agentic-Labs/AppSim) | android | [2609.07712](https://arxiv.org/abs/2609.07712) (2026) | [557 tasks](https://arxiv.org/abs/2609.07712) · [17 applications](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) | — | Simulated mobile applications and evaluation tooling for reproducible GUI-agent tasks with controlled application state. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) |
 | [MobileGym](https://github.com/Purewhiter/mobilegym) | web | [2605.26114](https://arxiv.org/abs/2605.26114) (2026) | [416 task templates](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [28 simulated apps](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [160 task identifiers](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/bench_env/splits/train.txt) | code Apache-2.0 · data CC-BY-NC-4.0 | A browser-hosted mobile-app simulator with programmable state, parameterized tasks and deterministic state-checking judges for parallel GUI-agent evaluation and online reinforcement learning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |

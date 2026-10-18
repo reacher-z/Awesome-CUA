@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-49 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/ltzheng/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [205 online task definitions](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md) | code AGPL-3.0 | Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md) |
 | [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
 | [RiOSWorld](https://github.com/yjyddq/RiOSWorld) | desktop, linux | [2506.00618](https://arxiv.org/abs/2506.00618) (2025) | — | — | Measures risky behavior of multimodal computer-use agents in an Ubuntu virtual machine, with risk scenarios such as phishing emails and released evaluation trajectories. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/yjyddq/RiOSWorld/HEAD/README.md) |

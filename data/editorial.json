@@ -63143,5 +63143,194 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:ltzheng/agent-studio",
+    "name": "AgentStudio",
+    "kind": "benchmark",
+    "url": "https://github.com/ltzheng/agent-studio",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "tool-integration",
+      "grounding",
+      "recording"
+    ],
+    "summary": "Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations.",
+    "scope": "core",
+    "verify_terms": [
+      "AgentStudio"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "documented_by": [
+      "2403.17918"
+    ],
+    "notes": "Task configurations are in the repository, but their input files (benchmark_task_files.tar.gz) are on Google Drive, and the GroundUI, IDM and success-detection data are fetched from the project page or Hugging Face; those datasets are not separate records here. Google Workspace tasks need the user's own OAuth credentials, and the README warns that agents can take non-reversible actions. The GitHub API and root LICENSE give AGPL-3.0 for the code; task files, datasets and third-party applications are not covered by that declaration.",
+    "details": {
+      "repository_url": "https://github.com/ltzheng/agent-studio",
+      "repository_tree_sha": "39959e230fecd6651e5700936432861ca7ef7016",
+      "benchmark_protocol": {
+        "focus": [
+          "single-API, single-GUI and compositional computer tasks",
+          "GUI grounding, inverse dynamics from video, and success detection"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots",
+          "code execution results"
+        ],
+        "actions": [
+          "Python code in a Jupyter runtime with keyboard and mouse objects",
+          "shell commands",
+          "application and Google API calls"
+        ],
+        "evaluation": "Each task JSON names evaluator functions and reference answers, such as file matches or Google Workspace state checks, plus reset and cleanup procedures; a human-evaluation mode validates tasks.",
+        "counts": [
+          {
+            "value": 205,
+            "unit": "online task definitions",
+            "qualifier": "exact",
+            "population": "eval_online_benchmarks/tasks",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md"
+          },
+          {
+            "value": 95,
+            "unit": "online task definitions",
+            "qualifier": "exact",
+            "population": "eval_online_benchmarks/tasks/single_gui",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1"
+          },
+          {
+            "value": 50,
+            "unit": "online task definitions",
+            "qualifier": "exact",
+            "population": "eval_online_benchmarks/tasks/single_api",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1"
+          },
+          {
+            "value": 60,
+            "unit": "online task definitions",
+            "qualifier": "exact",
+            "population": "eval_online_benchmarks/tasks/compositional",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1"
+          }
+        ],
+        "notes": "Computed counts are task JSON files per folder in the inspected tree; they sum to the reported 205. Single-GUI tasks cover VS Code, GIMP, OS and Google Docs, Sheets and Slides; single-API tasks cover OS, Gmail, Google Calendar and Google Docs. Record the task folder, model, step limit and whether --remote Docker mode was used with any score.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md",
+          "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1",
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/agent_studio/agent/direct_agent.py",
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_agent_desiderata/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ltzheng/agent-studio",
+        "sha256": "59d52b8d04bdff7ecc5b9824d4b33d115d6275e86907c10646c584d72b03b0e1",
+        "retrieved_at": "2026-10-18T11:50:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/ltzheng/agent-studio/git/trees/main?recursive=1",
+        "sha256": "230ca1800ba7949f754b93935643009970eca0aa0b708b473b7857b4c2f9adba",
+        "retrieved_at": "2026-10-18T11:50:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md",
+        "sha256": "c608fc0c42ae92f66e9ef91c1b9d8c461143bb9865d0d852ac96cab0b607ef41",
+        "retrieved_at": "2026-10-18T11:50:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_agent_desiderata/README.md",
+        "sha256": "1f2b513c700b31a1bacd023a54c6d4cadac9e02092e526d42c32103cb476c359",
+        "retrieved_at": "2026-10-18T11:50:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/agent_studio/agent/direct_agent.py",
+        "sha256": "508ab4171c56e8b9a7523185adfbc768b73e8c3366af71cb0c70598380705501",
+        "retrieved_at": "2026-10-18T11:50:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/LICENSE",
+        "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+        "retrieved_at": "2026-10-18T11:50:07Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "AGPL-3.0",
+          "url": "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:50:07Z",
+          "basis": "Reviewed repository license declaration for code; task input files, GroundUI and trajectory datasets, Docker images and third-party applications are separate. The inspected text does not establish -only versus -or-later for the project."
+        },
+        "reason": "Reviewed repository license declaration for code; task input files, GroundUI and trajectory datasets, Docker images and third-party applications are separate. The inspected text does not establish -only versus -or-later for the project.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "996f153a3a281dd5167bdea1d32bc12027386a42114dd23e78bfa23daaeb6cf8",
+    "reviewed_at": "2026-10-18T11:50:41Z"
   }
 ]

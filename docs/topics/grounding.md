@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/ltzheng/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [205 online task definitions](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md) | code AGPL-3.0 | Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md) |
 | [MMBench-GUI](https://github.com/open-compass/MMBench-GUI) | cross-platform | [2507.19478](https://arxiv.org/abs/2507.19478) (2025) | [> 8,000 tasks](https://raw.githubusercontent.com/open-compass/MMBench-GUI/HEAD/README.md) | — | Four-level GUI-agent benchmark across six platforms, from content understanding and element grounding to task automation and collaboration, scored with an efficiency-quality area metric. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/open-compass/MMBench-GUI/HEAD/README.md) |
 | [OSWorld-G](https://github.com/xlang-ai/OSWorld-G) | desktop | [2505.13227](https://arxiv.org/abs/2505.13227) (2025) | — | code Apache-2.0 | Computer-use grounding benchmark with original and refined instructions, released with the Jedi synthetic data pipeline, a 4-million-example Jedi dataset and Jedi-3B and Jedi-7B models. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/README.md) |
 | [Precision CUA Bench](https://github.com/microsoft/precision-cua-bench) | cross-platform | [2604.13019](https://arxiv.org/abs/2604.13019) (2026) | — | code MIT | Evaluation resources for pixel-precise cursor grounding in code editors. | [✓ 2026‑10‑16](https://github.com/microsoft/precision-cua-bench) |

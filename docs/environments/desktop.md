@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AgentStudio](https://github.com/ltzheng/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | [205 online task definitions](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/eval_online_benchmarks/README.md) | code AGPL-3.0 | Dockerized Ubuntu environment where agents act by running Python with keyboard, mouse and API access, with 205 auto-evaluated online tasks, annotation and recording tools, and grounding and success-detection evaluations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ltzheng/agent-studio/HEAD/README.md) |
 | [CRAB](https://github.com/camel-ai/crab) | desktop, android | [2407.01511](https://arxiv.org/abs/2407.01511) (2024) | [120 tasks](https://arxiv.org/abs/2407.01511) | — | Cross-environment benchmark framework for multimodal agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/camel-ai/crab/HEAD/README.md) |
 | [MacAgentBench](https://github.com/JetAstra/MacAgentBench) · [leaderboard](https://jetastra.github.io/MacAgentBench/) | desktop, macos | [2606.22557](https://arxiv.org/abs/2606.22557) (2026) | [676 tasks](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) · [25 applications](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) | code MIT | 676 macOS tasks across 25 applications, each run in its own Docker container and scored by deterministic rule-based checks with multiple checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) |
 | [OmniAct](https://huggingface.co/datasets/Writer/omniact) | desktop, web | [2402.17553](https://arxiv.org/abs/2402.17553) (2024) | [6,788 task examples](https://huggingface.co/datasets/Writer/omniact/raw/5e4bcb26745afc8d58ba9519ea9c9fb832386d26/README.md) | data mit | Dataset and benchmark for generating computer interaction programs. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Writer/omniact) |

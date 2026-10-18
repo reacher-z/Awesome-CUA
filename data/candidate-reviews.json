@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:kaushikb11/awesome-llm-agents",
+    "url": "https://github.com/kaushikb11/awesome-llm-agents",
+    "decision": "out_of_scope",
+    "reason": "The repository is a generated link list of general LLM-agent frameworks, CLI harnesses and tooling (109 table rows across 12 sections), not a GUI-agent collection or one of the catalog's discovery sources. It releases no software, data or survey of its own, so it does not fit a resource kind.",
+    "reviewed_at": "2026-10-18T11:32:18Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/kaushikb11/awesome-llm-agents/HEAD/README.md",
+      "sha256": "dda329f847f2e6958f7ce732fe32393b1cb54a028ba142207c9da2c8e4d48580",
+      "retrieved_at": "2026-10-18T11:26:12Z"
+    }
   }
 ]

@@ -6118,6 +6118,114 @@
     "reviewed_at": "2026-10-16T06:38:26Z",
     "documented_by": [
       "2511.04307"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations"
+    ],
+    "details": {
+      "hub_revision": "1c46362efaae836c601004e77b98a1aba89a530f",
+      "dataset_profile": {
+        "supervision": [
+          "automatically executed and validated task trajectories",
+          "GUI grounding, screen parsing and action prediction targets derived from the trajectories"
+        ],
+        "modalities": [
+          "screenshots",
+          "accessibility metadata",
+          "agent reasoning",
+          "GUI and API actions"
+        ],
+        "formats": [
+          "JSONL raw trajectories",
+          "JSON task-specific SFT files"
+        ],
+        "splits": [
+          "train (GUI-360°-Train)",
+          "test (GUI-360°-Bench)",
+          "fail (failed trajectories)"
+        ],
+        "counts": [
+          {
+            "value": 13750,
+            "unit": "successful trajectories",
+            "qualifier": "exact",
+            "population": "GUI-360°-Train",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          },
+          {
+            "value": 3439,
+            "unit": "successful trajectories",
+            "qualifier": "exact",
+            "population": "GUI-360°-Bench",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          },
+          {
+            "value": 105368,
+            "unit": "steps",
+            "qualifier": "exact",
+            "population": "GUI-360°-Train successful trajectories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          },
+          {
+            "value": 26284,
+            "unit": "steps",
+            "qualifier": "exact",
+            "population": "GUI-360°-Bench successful trajectories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          },
+          {
+            "value": 210736,
+            "unit": "images",
+            "qualifier": "exact",
+            "population": "GUI-360°-Train successful trajectories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          },
+          {
+            "value": 52568,
+            "unit": "images",
+            "qualifier": "exact",
+            "population": "GUI-360°-Bench successful trajectories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          },
+          {
+            "value": 1200000,
+            "unit": "executed action steps",
+            "qualifier": "more-than",
+            "population": "whole collection, per the card's feature list (1.2M+)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+          }
+        ],
+        "notes": "Counts are from the dataset card at Hub revision 1c46362. Its statistics table covers successful trajectories only; the fail directory holds failed trajectories that the table does not count. It also lists 79,487 train and 19,780 bench steps usable for grounding tasks. The card does not break down the 1.2M+ executed action steps. Word, Excel and PowerPoint make up 41.0%, 31.6% and 27.4% of the data. processed_data is preprocessed for Qwen-2.5-VL-7B. The Hub size band is not used as a count, and no file was downloaded.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/vyokky/GUI-360/raw/1c46362efaae836c601004e77b98a1aba89a530f/README.md",
+        "sha256": "3b22cf7994bdf4216742c91348e6e8beb21cee59611496f1e1647108e33dcfb1",
+        "retrieved_at": "2026-10-18T16:01:55Z"
+      }
     ]
   },
   {

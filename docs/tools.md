@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
+**21 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (4)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -56,6 +56,7 @@ All entries in this section: desktop, macos, linux, windows.
 | --- | --- | --- | --- | --- | --- |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [OmniParser](https://github.com/microsoft/OmniParser) | cross-platform | [2408.00203](https://arxiv.org/abs/2408.00203) (2024) | — | Screenshot parser that detects interactable regions and captions icons so vision-language models can ground actions, released as V1.5 and V2 weights alongside OmniTool for driving a Windows 11 VM. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
+| [UIED](https://github.com/MulongXie/UIED) | cross-platform, web, desktop | [2008.05132](https://arxiv.org/abs/2008.05132) (2020) | code Apache-2.0 | GUI element detector that finds non-text components in app, web or design screenshots with classical image processing, merges them with Google OCR text boxes and exports elements as JSON; a CNN classifier is optional. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MulongXie/UIED/HEAD/README.md) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
 
 [↑ Back to top](#tool-catalog)

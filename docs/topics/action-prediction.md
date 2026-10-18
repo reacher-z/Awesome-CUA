@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
@@ -34,6 +34,14 @@
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
+
+## Agents
+
+All entries in this section: desktop, macos, windows, linux, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | — | code MIT | Computer-use loop that reads the screen with OCR and accessibility labels, has the hosted TypeSafe classifier choose each next action with a confidence, and calls a writer model only for free text. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/awlevin/typesafe-computer-use/HEAD/README.md) |
 
 ## Frameworks
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-49 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (2)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -41,11 +41,10 @@
 
 ## Agents
 
-All entries in this section: desktop, windows, linux.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | — | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | desktop, windows, linux | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | — | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
+| [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | desktop, macos, windows, linux, web | — | code MIT | Computer-use loop that reads the screen with OCR and accessibility labels, has the hosted TypeSafe classifier choose each next action with a confidence, and calls a writer model only for free text. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/awlevin/typesafe-computer-use/HEAD/README.md) |
 
 ## Frameworks
 

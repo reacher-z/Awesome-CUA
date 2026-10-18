@@ -63143,5 +63143,132 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:awlevin/typesafe-computer-use",
+    "name": "typesafe-computer-use",
+    "kind": "agent",
+    "url": "https://github.com/awlevin/typesafe-computer-use",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "screen-understanding"
+    ],
+    "summary": "Computer-use loop that reads the screen with OCR and accessibility labels, has the hosted TypeSafe classifier choose each next action with a confidence, and calls a writer model only for free text.",
+    "scope": "core",
+    "aliases": [
+      "jev"
+    ],
+    "verify_terms": [
+      "typesafe-computer-use",
+      "TypeSafe"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Also called jev. The main loop drives macOS through Vision OCR, the accessibility tree and synthetic input; the Windows adapter (UI Automation, SendInput, Windows OCR) is documented as experimental and untested on Windows. An opt-in browser backend reads the DOM over the Chrome DevTools Protocol, and the Linux sandbox runs only that backend. Linux desktop control is through the OSWorld JevAgent adapter inside OSWorld's Ubuntu VM. Every decision calls the hosted TypeSafe API, so a TypeSafe key is required; an Anthropic or OpenAI-compatible writer is optional. Per-step cost and latency comparisons and the OSWorld run logs are the author's and were not reproduced. The README marks the project beta. Code was read, not run.",
+    "details": {
+      "availability": "Public source; the v0.2.0 GitHub release carries no binary assets; the hosted TypeSafe decision API is required",
+      "package_version": "0.2.0",
+      "repository_revision": "44ca11f0935b021b73020825da054b5c92cc1288"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/typesafe_computer_use/decide.py",
+        "sha256": "82aaf2f6633f15b257ae2e1ea9ca91d8888de198a64d8d9ef21fcbe7ba962f00",
+        "retrieved_at": "2026-10-18T11:52:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/typesafe_computer_use/actions.py",
+        "sha256": "72f149792289be8c44a37f2a223f166a659ba5be58eed87f232f6d22214733bd",
+        "retrieved_at": "2026-10-18T11:52:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/typesafe_computer_use/osworld/agent.py",
+        "sha256": "9b0d1eb4ad8dba208cc27b51305699974debe6afad0995b9fa80a968bfc3dcbd",
+        "retrieved_at": "2026-10-18T11:52:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/docs/windows.md",
+        "sha256": "677eec08e6231720aee971a6c78927c24a2a9efa52db12fb5a124136d3864041",
+        "retrieved_at": "2026-10-18T11:52:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/docs/browser-backend.md",
+        "sha256": "b27b4c4315c441dd59e1c8538ae7cf78d807f0f3335255542ba7fddb7ab038b3",
+        "retrieved_at": "2026-10-18T11:52:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.package_version",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/pyproject.toml",
+        "sha256": "cd0bb7adb46f77e0889b166e7ecc2490e5cf200396a7b7b446a446b14745b920",
+        "retrieved_at": "2026-10-18T11:52:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/awlevin/typesafe-computer-use/44ca11f0935b021b73020825da054b5c92cc1288/LICENSE",
+        "sha256": "fb99135e22841bb564b275b5c0755ce1e5418faff2c806f25d4a11696214c87c",
+        "retrieved_at": "2026-10-18T11:52:41Z"
+      }
+    ],
+    "reviewed_sha256": "f4944e284c939e52d336d4299ed8c6bf19dac7757f632c27d01279eeee21d718",
+    "reviewed_at": "2026-10-18T11:53:13Z"
   }
 ]

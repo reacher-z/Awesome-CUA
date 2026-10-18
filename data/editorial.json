@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2407.16741",
+    "name": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2407.16741",
+    "summary": "Introduces OpenHands (formerly OpenDevin), a sandboxed platform for agents that write code, run shell commands and browse the web, and evaluates them on 15 benchmarks spanning software engineering and WebArena.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "OpenHands: An Open Platform"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2407.16741&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract (version 3). Web browsing is one of three interaction modes alongside code and the command line, and WebArena is among the evaluated benchmarks; the platform centres on software-development agents, so the scope is adjacent. The repository is not curated here, and no claim is made that its current code reproduces the paper's browsing agent or results.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e387e5f27be46acc0a92e66b77c83450d15a29ab15fd9eb5a8816e07eea6fd12",
+    "reviewed_at": "2026-10-18T11:09:01Z"
   }
 ]

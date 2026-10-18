@@ -27397,13 +27397,77 @@
         "url": "https://huggingface.co/api/datasets/KDEGroup/UI-AGILE-Data",
         "sha256": "7782422de88830a497d9eb530bd2f0fb6283904cbb25dafcf2ff4d03358a377a",
         "retrieved_at": "2026-10-17T02:43:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/6b4f69d9d3f947eb857301b6b01b2dba8e295b2c/training_data/train.json",
+        "sha256": "4d1f08d720e1f32476b00e17d0b07edd5a46017d60ec5e43fdbefbf4857dbb10",
+        "retrieved_at": "2026-10-18T15:43:21Z"
       }
     ],
     "details": {
       "hub_id": "KDEGroup/UI-AGILE-Data",
       "gated": false,
       "disabled": false,
-      "download_url": "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/tree/main"
+      "download_url": "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/tree/main",
+      "hub_revision": "6b4f69d9d3f947eb857301b6b01b2dba8e295b2c",
+      "dataset_profile": {
+        "supervision": [
+          "GUI grounding targets with bounding boxes",
+          "mobile action labels"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "bounding boxes",
+          "actions"
+        ],
+        "formats": [
+          "JSON annotations",
+          "ZIP image archive",
+          "Parquet evaluation files"
+        ],
+        "splits": [
+          "training",
+          "evaluation"
+        ],
+        "counts": [
+          {
+            "value": 9169,
+            "unit": "training samples",
+            "qualifier": "exact",
+            "population": "training_data/train.json at Hub revision 6b4f69d9",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/6b4f69d9d3f947eb857301b6b01b2dba8e295b2c/training_data/train.json"
+          },
+          {
+            "value": 9105,
+            "unit": "referenced screenshots",
+            "qualifier": "exact",
+            "population": "training_data/train.json at Hub revision 6b4f69d9 (distinct img_filename values)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/6b4f69d9d3f947eb857301b6b01b2dba8e295b2c/training_data/train.json"
+          },
+          {
+            "value": 7708,
+            "unit": "evaluation samples",
+            "qualifier": "exact",
+            "population": "AndroidControl evaluation files as described by the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/main/README.md"
+          }
+        ],
+        "notes": "Training counts come from training_data/train.json; the image ZIP was not unpacked. Of the 9,169 samples, 5,746 carry a gt_bbox target, 3,388 a bbox, and 35 neither (open_app, navigate_back, scroll or input_text steps). The 7,708 AndroidControl figure is the card's statement; the high- and low-level Parquet files were not recounted, and the ScreenSpot-v2 and ScreenSpot-Pro conversions are not counted here.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/main/README.md",
+          "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/6b4f69d9d3f947eb857301b6b01b2dba8e295b2c/training_data/train.json"
+        ]
+      }
     }
   },
   {

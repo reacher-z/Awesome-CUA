@@ -63143,5 +63143,147 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Gelato OS-World agent trajectories",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "observability"
+    ],
+    "summary": "Gelato-30B-A3B and GTA1-32B OS-World agent runs, three trials each in the same GPT-5-planned GTA1.5-based harness, with per-task trajectories, initial and step screenshots, and automated results.",
+    "scope": "core",
+    "verify_terms": [
+      "gelato-osworld-agent-trajectories"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.dataset_profile",
+      "details.repository_url"
+    ],
+    "notes": "The dataset card holds only license metadata; the description and scope come from the official Gelato README, which says this repository provides all of the agent's OS-World trajectories from runs on a fixed OS-World snapshot with GPT-5 as planner and a 50-step limit. The file list also holds the GTA1-32B baseline runs from the same harness, which the README compares but does not name as part of this release. The README reports 58.71 ± 0.66% automated and 61.85 ± 0.79% human-corrected success for Gelato-30B-A3B, against 56.97 ± 1.47% and 59.47 ± 1.27% for GTA1-32B; these were not reproduced. The GitHub repository has no license file; MIT is the dataset card's declaration. Files were not downloaded.",
+    "details": {
+      "hub_id": "mlfoundations/gelato-osworld-agent-trajectories",
+      "hub_revision": "b9495a8eca361b16d564e62cc0041ed3aecef618",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories/tree/b9495a8eca361b16d564e62cc0041ed3aecef618",
+      "repository_url": "https://github.com/mlfoundations/Gelato",
+      "dataset_profile": {
+        "supervision": [
+          "agent-generated trajectories",
+          "automated task results"
+        ],
+        "modalities": [
+          "screenshots",
+          "action trajectories",
+          "task results"
+        ],
+        "formats": [
+          "JSONL",
+          "PNG",
+          "plain text"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 2166,
+            "unit": "task trajectory directories with traj.jsonl",
+            "qualifier": "exact",
+            "population": "six run directories at Hub revision b9495a8e",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618"
+          },
+          {
+            "value": 6,
+            "unit": "run directories",
+            "qualifier": "exact",
+            "population": "gelato-30b/run_1-3 and gta1-32b_baseline/run_1-3 at Hub revision b9495a8e",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618"
+          },
+          {
+            "value": 361,
+            "unit": "distinct OS-World tasks",
+            "qualifier": "exact",
+            "population": "each run directory at Hub revision b9495a8e (the same task set in all six)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618"
+          },
+          {
+            "value": 34598,
+            "unit": "PNG screenshots",
+            "qualifier": "exact",
+            "population": "six run directories at Hub revision b9495a8e",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618"
+          }
+        ],
+        "notes": "Counts come from a script over the pinned Hub file list. Every task directory holds traj.jsonl, result.txt, an initial screenshot and step screenshots; the 361 tasks span 10 OS-World domain folders. Results are the automated evaluation; the README's human re-check of 20 tasks lives in the GitHub repository, not here. Directories, tasks and screenshots are different units and are not summed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md",
+          "https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618",
+        "sha256": "218daeb50d48f98a41b69b9eae6ef3bb7676b6a1da223574cbf3348490878c6f",
+        "retrieved_at": "2026-10-18T15:36:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories/raw/b9495a8eca361b16d564e62cc0041ed3aecef618/README.md",
+        "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17",
+        "retrieved_at": "2026-10-18T15:36:09Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories/raw/b9495a8eca361b16d564e62cc0041ed3aecef618/README.md",
+          "retrieved_at": "2026-10-18T15:36:09Z",
+          "basis": "Dataset-card metadata declaration (license: mit) for this release; the card has no other text, and the declaration does not establish rights to the applications or content shown in the screenshots."
+        },
+        "reason": "Dataset-card metadata declaration (license: mit) for this release; the card has no other text, and the declaration does not establish rights to the applications or content shown in the screenshots.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories/raw/b9495a8eca361b16d564e62cc0041ed3aecef618/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "437eb06553ed6d63d871d18842906b26b6148db5b0a5489064736ef6f5f0cfcf",
+    "reviewed_at": "2026-10-18T15:37:27Z"
   }
 ]

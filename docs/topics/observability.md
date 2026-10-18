@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-36 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+37 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+
+## Datasets
+
+All entries in this section: desktop.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Gelato OS-World agent trajectories](https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories) | — | [2,166 task trajectory directories with traj.jsonl](https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618) · [6 run directories](https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618) · [361 distinct OS-World tasks](https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618) · [34,598 PNG screenshots](https://huggingface.co/api/datasets/mlfoundations/gelato-osworld-agent-trajectories/revision/b9495a8eca361b16d564e62cc0041ed3aecef618) | data MIT | Gelato-30B-A3B and GTA1-32B OS-World agent runs, three trials each in the same GPT-5-planned GTA1.5-based harness, with per-task trajectories, initial and step screenshots, and automated results. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md) |
 
 ## Agents
 

@@ -63143,5 +63143,158 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:56f08987cc19b82dc607",
+    "name": "WebChain v2",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/webagentlab/webchain",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "web-navigation",
+      "grounding",
+      "planning",
+      "imitation-learning"
+    ],
+    "summary": "Cleaned v2 release of WebChain's human web trajectories, packaged as trajectory-level and Seed-style sliding-window SFT Parquet with aligned screenshots, plus action metadata and a 150-trace evaluation subset.",
+    "scope": "core",
+    "verify_terms": [
+      "WebChain v2"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2603.05295"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The card calls this the cleaned, training-ready release and points to the publisher's separate original release (Hub repository webagentlab/webchain-legacy) for raw JSON records, split screenshot archives and the earlier high- and low-level formulations. Its counts (31,675 trajectories, 317,682 steps) are after cleaning; the paper's 31,725 trajectories and 317,993 steps describe the corpus before it. Annotators executed tasks on live websites; tasks were synthesized from site schemas and reasoning text was added in post-processing. CC-BY-4.0 is the card's data declaration and does not establish rights to the captured websites' content. Files were not downloaded.",
+    "details": {
+      "hub_id": "webagentlab/webchain",
+      "hub_revision": "59ab57fea3d6270c260b6603418afb93dee8c1ce",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/webagentlab/webchain/tree/59ab57fea3d6270c260b6603418afb93dee8c1ce",
+      "dataset_profile": {
+        "supervision": [
+          "human-executed web task trajectories",
+          "click coordinates, bounding boxes and CSS selectors",
+          "action types and text arguments",
+          "reasoning text added in post-processing"
+        ],
+        "modalities": [
+          "viewport screenshots",
+          "task queries",
+          "reasoning text",
+          "actions",
+          "DOM and accessibility-tree references in trace metadata"
+        ],
+        "formats": [
+          "Parquet (Trace SFT and Seed/Demo SFT)",
+          "Parquet and CSV metadata tables",
+          "SHA-256 manifests"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 31675,
+            "unit": "cleaned trajectories",
+            "qualifier": "exact",
+            "population": "WebChain v2 release as stated on its card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md"
+          },
+          {
+            "value": 317682,
+            "unit": "interaction steps",
+            "qualifier": "exact",
+            "population": "WebChain v2 release as stated on its card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md"
+          },
+          {
+            "value": 39332,
+            "unit": "Seed/Demo sliding-window rows",
+            "qualifier": "exact",
+            "population": "WebChain v2 release as stated on its card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md"
+          },
+          {
+            "value": 263995,
+            "unit": "SFT image/action turns",
+            "qualifier": "exact",
+            "population": "WebChain v2 release as stated on its card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md"
+          },
+          {
+            "value": 150,
+            "unit": "evaluation traces",
+            "qualifier": "exact",
+            "population": "test_suite_150 subset as stated on the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md"
+          },
+          {
+            "value": 48,
+            "unit": "data parts per format",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 59ab57fe, data/trace_sft and data/seed_sft",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/webagentlab/webchain/revision/59ab57fea3d6270c260b6603418afb93dee8c1ce"
+          },
+          {
+            "value": 71,
+            "unit": "SFT Parquet shards per format",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 59ab57fe, data/trace_sft and data/seed_sft",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/webagentlab/webchain/revision/59ab57fea3d6270c260b6603418afb93dee8c1ce"
+          }
+        ],
+        "notes": "Trajectories, steps, windows, turns, parts and shards are different units and are not summed. Trace SFT has one row per cleaned trajectory; Seed/Demo SFT re-cuts the same trajectories into bounded windows, so the two formats are not additional data. The 150-trace subset is a stratified sample for loader checks and compact offline evaluation; the card does not say it is held out from the parts. The part and shard counts from the manifest match the card. Row counts were not recomputed.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/webagentlab/webchain/raw/59ab57fea3d6270c260b6603418afb93dee8c1ce/README.md",
+          "https://huggingface.co/api/datasets/webagentlab/webchain/revision/59ab57fea3d6270c260b6603418afb93dee8c1ce"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/webagentlab/webchain/revision/59ab57fea3d6270c260b6603418afb93dee8c1ce",
+        "sha256": "b2845f4365632a07cf5296879f18b516603a08a7b7700558db543962475a7bfa",
+        "retrieved_at": "2026-10-18T15:33:18Z"
+      }
+    ],
+    "reviewed_sha256": "ac41dbb10c924efbad8cc93340a34a73cb9218f1930ef6d8dced582050cbd68c",
+    "reviewed_at": "2026-10-18T15:33:55Z"
   }
 ]

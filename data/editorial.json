@@ -63143,5 +63143,161 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "BU Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/browser-use/benchmark",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Browser Use's live-web benchmark: 200 encrypted V2.1 tasks scored by an LLM findings judge against weighted rubrics with partial credit, plus the legacy V1 set, Stealth Bench and framework adapters.",
+    "verify_terms": [
+      "BU Bench"
+    ],
+    "aliases": [
+      "Browser Use benchmark",
+      "BU Bench V2.1"
+    ],
+    "notes": "Repository of Browser Use, the company behind the Browser Use framework. Tasks and rubrics ship encrypted to keep them out of crawls and training data, and the README asks users not to publish decrypted tasks. The default run_eval.py uses BrowserCode 0.1.20 (installed separately from bcode.sh) with openai/gpt-6-luna as executor, a Browser Use Cloud browser per task (or local Chrome), and gpt-5.6-luna as findings judge; the judge sees the saved trajectory, deliverables and up to 50 sampled screenshots and reports met, violated or not_assessable per rubric item, while code turns weights summing to 100 into the score and gives 0 when the judge suspects reward hacking or the agent repeats the rubric's canary token. Release v2.1.1 adds the 2026-09-25 Reuters playback revision; task 185 is not comparable with earlier scores, and rubric_revision.json marks 13 of its 18 listed changes as pending saved-trace review. Historical charts use an earlier 60-task set. The legacy BU Bench V1 (100 tasks drawn equally from a custom set, WebBench, Mind2Web 2, GAIA and BrowseComp) and Stealth Bench V1 (80 tasks; its plots use 71) keep a binary judge. No license file or license declaration covers the code or tasks; third-party task sources keep their own terms. Tasks run on live websites, so results drift with the sites.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/benchmark/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "availability": "Public runner, judge and encrypted task files; the default executor is a separately installed BrowserCode binary and runs need OpenAI and, for cloud browsers, Browser Use API keys.",
+      "repository_revision": "1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74",
+      "repository_tree_sha": "e20f7b9454d088a3a7d6e42cee262b948596ff51",
+      "release_tag": "v2.1.1",
+      "benchmark_protocol": {
+        "focus": [
+          "browser-agent task completion on live websites",
+          "rubric-based partial credit",
+          "browser stealth against anti-bot protections (Stealth Bench V1)"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "executor-defined; the default BrowserCode executor receives only the task instruction and its own browser tools"
+        ],
+        "actions": [
+          "executor-defined browser tool calls",
+          "file deliverables"
+        ],
+        "evaluation": "V2.1: an LLM findings judge (default gpt-5.6-luna, xhigh reasoning) reads the saved trajectory, deliverables and screenshots and reports one finding per rubric item; code computes met weight over total weight (weights sum to 100) and gives 0 when the judge suspects reward hacking or the agent output contains the rubric's canary token. V1 and Stealth Bench V1 use a legacy binary judge.",
+        "counts": [
+          {
+            "value": 200,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "BU Bench V2.1 (BU_Bench_V2.enc, release v2.1.1)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md"
+          },
+          {
+            "value": 100,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "BU Bench V1 (BU_Bench_V1.enc)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md"
+          },
+          {
+            "value": 80,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "Stealth Bench V1 (Stealth_Bench_V1.enc)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md"
+          }
+        ],
+        "notes": "Record the release tag, commit, encrypted-file checksum, executor version and model, browser provider and judge model with any score. Task 185 changed in the 2026-09-25 revision. Historical 60-task results are not comparable with the 200-task set. Live sites, CAPTCHAs and bot checks affect outcomes.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md",
+          "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/findings_judge.py",
+          "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/rubric_revision.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/browser-use/benchmark/git/commits/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74",
+        "sha256": "ffa186268cd17ae7f288167fd789a53fed0d60814f583ac441d2385de2e60694",
+        "retrieved_at": "2026-10-18T15:33:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol",
+          "details.release_tag",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md",
+        "sha256": "d8fb2b8854e1d02f0b45550e89bfd705389dee866addbc5a2168bf3f4f55cc00",
+        "retrieved_at": "2026-10-18T15:33:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/findings_judge.py",
+        "sha256": "168593f3f64b99baaabc187ad3c82ddc62967ab9ed6095206890bbce99fd4b0b",
+        "retrieved_at": "2026-10-18T15:33:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.release_tag",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/rubric_revision.json",
+        "sha256": "53698bed3a17d9eea23dfcc29042213679289f3aeeba93000facf1d4e40f85d8",
+        "retrieved_at": "2026-10-18T15:33:45Z"
+      }
+    ],
+    "publisher_id": "organization:browser-use",
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:ef244017b1460269fc68",
+        "evidence_url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:browser-use/browser-use",
+        "evidence_url": "https://raw.githubusercontent.com/browser-use/benchmark/1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d8fb2b8854e1d02f0b45550e89bfd705389dee866addbc5a2168bf3f4f55cc00",
+    "reviewed_at": "2026-10-18T15:34:29Z"
   }
 ]

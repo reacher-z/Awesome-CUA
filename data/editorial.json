@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "PawWork",
+    "kind": "agent",
+    "url": "https://github.com/Player-YN/BrowserKitten",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Unpacked Chrome MV3 side-panel agent that acts on the user's logged-in pages, runs sandboxed guest JavaScript through a browser API, and builds sheet, document and site artifacts with a bring-your-own model key.",
+    "scope": "core",
+    "aliases": [
+      "BrowserKitten",
+      "爪爪"
+    ],
+    "verify_terms": [
+      "PawWork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Player-YN/BrowserKitten/HEAD/README.md"
+    ],
+    "notes": "The README is titled 爪爪 · PawWork, and GitHub redirects the former repository name Player-YN/PawWork_ZhuaZhua to this repository. It is not on the Chrome Web Store and needs Chrome 135 or later and an OpenAI-compatible API key. AGENTS.md describes an offscreen AI SDK ToolLoopAgent with page actions, a QuickJS sandbox for guest code and Univer-based sheet and document previews. The extension was not loaded or tested.",
+    "details": {
+      "availability": "Published source loaded as an unpacked extension or from a release zip",
+      "repository_revision": "1951ed05128b4cb3512cb67859f6fea331b7c23b"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/Player-YN/BrowserKitten",
+        "sha256": "0451555305143d584d99ced1988855a1930d4583dbe566121406d9cbae96675d",
+        "retrieved_at": "2026-10-18T11:36:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/Player-YN/BrowserKitten/git/trees/main?recursive=1",
+        "sha256": "9c3ba58b4ee519dfbd94b4c0e66da841a699184bf6d28f100c1966932edc0679",
+        "retrieved_at": "2026-10-18T11:36:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Player-YN/BrowserKitten/HEAD/AGENTS.md",
+        "sha256": "5779fb3aa26ff0165c5c1f26ae1044a4823bb79e065af0b06190fa316b51dbd4",
+        "retrieved_at": "2026-10-18T11:38:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Player-YN/BrowserKitten/HEAD/LICENSE",
+        "sha256": "13271334bca7a3746b33d6cd797f86679711cc62b2896d63b3342c2c763300bd",
+        "retrieved_at": "2026-10-18T11:38:58Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8448b6e4ce82b841b7bbb39dba0f5c5bb5b2317cbc5266566b01968b613cab6d",
+    "reviewed_at": "2026-10-18T11:39:22Z"
   }
 ]

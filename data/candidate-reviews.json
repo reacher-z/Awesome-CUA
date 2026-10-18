@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:kyegomez/screenai",
+    "url": "https://github.com/kyegomez/ScreenAI",
+    "decision": "out_of_scope",
+    "reason": "This is an unofficial third-party PyTorch sketch of the ScreenAI architecture: one module run on random tensors in the README example, with no checkpoint, data, training or evaluation code, and a README TODO noting that the encoder and decoder layer lists are unimplemented. It provides no screen-understanding capability of its own. The ScreenAI paper is already curated as arxiv:2402.04615, and an alias would misstate an unaffiliated reimplementation as the paper's resource.",
+    "reviewed_at": "2026-10-18T11:48:36Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/kyegomez/ScreenAI/HEAD/README.md",
+      "sha256": "afac82b86bec5fa86ebf2e3381d238672cf163a4c49be90320dd500b14e636fa",
+      "retrieved_at": "2026-10-18T11:32:45Z"
+    }
   }
 ]

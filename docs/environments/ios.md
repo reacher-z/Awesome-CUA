@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-21 source-reviewed resources tagged `ios`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+22 source-reviewed resources tagged `ios`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (8)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (8)](#papers)
 
 ## Benchmarks
 
@@ -48,12 +48,11 @@ All entries in this section: android, ios.
 
 ## Tools
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobile Harness](https://github.com/droidrun/mobile-harness) | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
-| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Interceptor](https://github.com/Hacker-Valley-Media/Interceptor) | web, desktop, macos, windows, linux, ios | — | code Elastic-2.0 | CLI and MCP server that lets agents operate the user's signed-in Chrome, Brave or Safari, native apps via accessibility on macOS, Windows and Linux, and a physical iPhone through an XCUITest runner. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/README.md) |
+| [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
+| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
 
 ## Infrastructure
 

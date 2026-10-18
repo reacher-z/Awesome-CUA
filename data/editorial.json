@@ -63143,5 +63143,99 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Interceptor",
+    "kind": "tool",
+    "url": "https://github.com/Hacker-Valley-Media/Interceptor",
+    "environments": [
+      "web",
+      "desktop",
+      "macos",
+      "windows",
+      "linux",
+      "ios"
+    ],
+    "topics": [
+      "tool-integration",
+      "recording",
+      "workflow"
+    ],
+    "summary": "CLI and MCP server that lets agents operate the user's signed-in Chrome, Brave or Safari, native apps via accessibility on macOS, Windows and Linux, and a physical iPhone through an XCUITest runner.",
+    "scope": "core",
+    "verify_terms": [
+      "Interceptor"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/README.md"
+    ],
+    "notes": "Source-available under the Elastic License 2.0 with separate commercial terms; GitHub reports NOASSERTION. Browser work goes through Interceptor's own extension rather than a separately launched automated browser, and can also read page traffic and rich-editor scenes. macOS release packages target Apple silicon and the native bridge needs macOS 15+; Windows 11 24H2+ and Linux Full packages add native app control. iPhone automation needs a paired iPhone in Developer Mode, a Mac and Xcode with a developer team. Browser and Mac sessions can be recorded and exported as replay plans. No model API key is required; the calling agent supplies the model. Code was read, not run.",
+    "details": {
+      "availability": "Public source and installers for macOS (Apple silicon), Windows and Linux, plus a Chrome Web Store extension",
+      "package_version": "2.1.3"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/package.json",
+        "sha256": "7a23b4094988d23f799f53322de113577bffe3f950f2395aa68f5d01eecc7b32",
+        "retrieved_at": "2026-10-18T12:01:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/LICENSE",
+        "sha256": "e70a75b8857ef54c9b8e895dc9d7883296f0180dd95911ec6737ccdda059ed4e",
+        "retrieved_at": "2026-10-18T12:01:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/COMMERCIAL.md",
+        "sha256": "3680d7b1c255796a5b48a1abf909cae754693ed73b6b8eac8c3040dcdc605c3a",
+        "retrieved_at": "2026-10-18T12:01:23Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Elastic-2.0",
+          "url": "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T12:01:23Z",
+          "basis": "Elastic License 2.0 from Hacker Valley Media, LLC: internal use, modification and redistribution are allowed, but offering Interceptor as a hosted or managed service needs a commercial license (COMMERCIAL.md)."
+        },
+        "reason": "GitHub reports NOASSERTION, but the LICENSE file is the Elastic License 2.0 text with a Hacker Valley Media copyright line and package.json declares Elastic-2.0; this is source-available, not an open-source license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/LICENSE",
+          "https://raw.githubusercontent.com/Hacker-Valley-Media/Interceptor/HEAD/COMMERCIAL.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c20e45ece8cdcc72c0f6dc723520ebd760cb113456b908b3e63a0bc0406dc550",
+    "reviewed_at": "2026-10-18T12:01:47Z"
   }
 ]

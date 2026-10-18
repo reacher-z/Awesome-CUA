@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Terminator",
+    "kind": "tool",
+    "url": "https://github.com/mediar-ai/terminator",
+    "environments": [
+      "windows",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "recording"
+    ],
+    "summary": "Windows automation SDK in Rust with Node.js and Python bindings that drives desktop apps and Chrome through the accessibility tree, plus an MCP server for AI assistants and an OS-event workflow recorder.",
+    "scope": "core",
+    "verify_terms": [
+      "terminator-mcp-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mediar-ai/terminator/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "README states Windows-only support; macOS and Linux are listed as unavailable, and the Python binding is marked partial. Browser control on Windows goes through a Chrome extension. The tree holds crates for the core library, CLI, MCP agent, computer-use and workflow recorder, plus Node.js and Python packages. Mediar's hosted workflow builder and IDE are separate commercial products not covered here; the README's speed and success-rate claims are not benchmarked in this repository. The LICENSE file is MIT text whose copyright line names GitHub Inc.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4beabfce04ca3ff8d3016651b55ee776eec232bb31ebb30acd5bfa80b44acc02",
+    "reviewed_at": "2026-10-18T11:37:11Z"
   }
 ]

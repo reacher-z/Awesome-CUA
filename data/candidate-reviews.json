@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:ivy-interactive/ivy-tendril",
+    "url": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "decision": "out_of_scope",
+    "reason": "Ivy Tendril is a desktop workspace that runs coding agents such as Claude Code and Codex in parallel git worktrees with plan annotation, review and tunnelling features. It is a generic coding-agent tool with no GUI, browser or mobile action space, which the methodology does not count as a computer-use resource.",
+    "reviewed_at": "2026-10-18T11:31:16Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/Ivy-Interactive/Ivy-Tendril/HEAD/README.md",
+      "sha256": "09fd8e0f28c44982585ad0ebdc8508c193a5ff85c3212582d83fea7e7b882a5f",
+      "retrieved_at": "2026-10-18T11:22:24Z"
+    }
   }
 ]

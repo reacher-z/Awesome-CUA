@@ -63143,5 +63143,69 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:plasmate-labs/plasmate",
+    "name": "Plasmate",
+    "kind": "tool",
+    "url": "https://github.com/plasmate-labs/plasmate",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Rust browser engine for agents that runs page JavaScript in V8 and compiles HTML into a Semantic Object Model with stable element IDs, served through MCP tools, its native AWP protocol and a partial CDP layer.",
+    "scope": "core",
+    "verify_terms": [
+      "Plasmate"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/plasmate-labs/plasmate/HEAD/README.md"
+    ],
+    "notes": "Created in March 2026. Stateful MCP sessions open and navigate pages and click, type, select, scroll or toggle by SOM element ID; screenshots are a fallback that no vision model interprets. The npm and PyPI packages named plasmate are client SDKs, not the engine. The README rests CDP compatibility on one Puppeteer fixture and presents its output-size figures (median byte ratios of 9.98x and 9.32x over a 98-URL v0.5.1 snapshot) as observations, not token, cost or task-success claims. The reviewed commit's Cargo.toml declares version 0.6.0 under Apache-2.0.",
+    "details": {
+      "repository_revision": "2d8e999b1d81e1ed812358c3a90a09fcaca5c2a1"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/plasmate-labs/plasmate/2d8e999b1d81e1ed812358c3a90a09fcaca5c2a1/src/mcp/server.rs",
+        "sha256": "cd9196d736fb63c5262358d5e616f6d7ac19b81577906202b1ed7bb4604bb5cf",
+        "retrieved_at": "2026-10-18T11:55:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/plasmate-labs/plasmate/2d8e999b1d81e1ed812358c3a90a09fcaca5c2a1/Cargo.toml",
+        "sha256": "6a47e711891695681a9ae4aa7204f754fd44a16faa640057a3d791fedccef601",
+        "retrieved_at": "2026-10-18T11:55:53Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "eca6b1fa1028fc979d1a86f925876db175f004e8c8580dd6dbae6229a4ac423c",
+    "reviewed_at": "2026-10-18T11:56:17Z"
   }
 ]

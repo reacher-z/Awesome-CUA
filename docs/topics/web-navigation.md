@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (24)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -106,6 +106,7 @@ All entries in this section: web.
 | [WebLlama](https://github.com/McGill-NLP/webllama) | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 | [WebRL](https://github.com/THUDM/WebRL) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | Training pipeline that evolves web tasks from prior attempts and uses an outcome reward model to refine browser policies. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/THUDM/WebRL/HEAD/README.md) |
 | [WebVLN research implementation](https://github.com/WebVLN/WebVLN) | [2312.15820](https://arxiv.org/abs/2312.15820) (2023) | — | Training and evaluation code for question-guided website navigation that combines visual observations with web-specific HTML information. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WebVLN/WebVLN/HEAD/README.md) |
+| [Workflow Use](https://github.com/browser-use/workflow-use) | — | — | Turns a recorded browser session or a Browser Use agent run into a parameterized workflow file that replays deterministically with Playwright, falling back to an LLM agent when a step fails. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/browser-use/workflow-use/HEAD/README.md) |
 | [Workflow-Guided Exploration research code](https://github.com/stanfordnlp/wge) | [1802.08802](https://arxiv.org/abs/1802.08802) (2018) | code Apache-2.0 | Research code that learns browser-control policies by constraining exploration with workflows induced from demonstrations, with a Selenium-based MiniWoB environment and experiment harness. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/stanfordnlp/wge/HEAD/README.md) |
 | [WorkForceAgent-R1](https://github.com/night-chen/WorkForceAgent-R1) | [2505.22942](https://arxiv.org/abs/2505.22942) (2025) | — | Web-task reward functions, WorkArena data processing and GRPO training configurations for reasoning-oriented language agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/night-chen/WorkForceAgent-R1/HEAD/README.md) |
 

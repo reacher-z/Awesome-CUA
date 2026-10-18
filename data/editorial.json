@@ -63143,5 +63143,83 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Workflow Use",
+    "kind": "framework",
+    "url": "https://github.com/browser-use/workflow-use",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "recording",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Turns a recorded browser session or a Browser Use agent run into a parameterized workflow file that replays deterministically with Playwright, falling back to an LLM agent when a step fails.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Workflow Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/workflow-use/HEAD/README.md"
+    ],
+    "publisher_id": "organization:browser-use",
+    "notes": "Scope is adjacent because the main path records and replays deterministic browser workflows (described as RPA 2.0); agent involvement is limited to generating a workflow from one Browser Use run and to fallback or self-healing steps, which the README marks as early and still being improved. The tree contains a Chrome recording extension, a Python workflow package (recorder, builder, healing, MCP, storage), a FastAPI backend and a web UI. The README advises against production use. The LICENSE file is the GNU AGPL v3 text with the Free Software Foundation copyright line replaced by a Browser Use Inc. notice. GitHub reports AGPL-3.0, but the catalog's verbatim-header rule leaves the code license unrecorded.",
+    "details": {
+      "availability": "Published source; early development",
+      "repository_url": "https://github.com/browser-use/workflow-use",
+      "repository_tree_sha": "5d2d19fe8835cc86f1bf3e04302a5000d590f249"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/browser-use/workflow-use",
+        "sha256": "dbc5758062bbadb6b2583e63c95d43bd4c544c8898bf1019d960b1435a5e0057",
+        "retrieved_at": "2026-10-18T11:13:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/browser-use/workflow-use/git/trees/main?recursive=1",
+        "sha256": "11a372bee17b5888e7a8378c373fc2bc42aa50dd968317b2643c8a0cbc550641",
+        "retrieved_at": "2026-10-18T11:13:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/workflow-use/HEAD/LICENSE",
+        "sha256": "d0244248ae3e9cc081ff0d0010aaae97fc89d2a4bce58fd93a137ab26c268989",
+        "retrieved_at": "2026-10-18T11:13:58Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d87cca0c2041e2d10c4643dc04d21fc142dddd6c3bea7b208e57fed4474363d2",
+    "reviewed_at": "2026-10-18T11:14:29Z"
   }
 ]

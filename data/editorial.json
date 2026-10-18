@@ -63143,5 +63143,69 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:google-research/pix2struct",
+    "name": "Pix2Struct",
+    "kind": "model",
+    "url": "https://github.com/google-research/pix2struct",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "JAX/T5X code and pretrained Base and Large checkpoints for Pix2Struct screenshot-parsing pretraining, with fine-tuned checkpoints for nine tasks, including Widget Captioning, Screen2Words and RefExp on RICO UI screens.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Pix2Struct"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-research/pix2struct/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2210.03347"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Adjacent: a general visual-language model, not an agent. Three of its nine fine-tuning tasks use RICO mobile UI screens; the others cover image captioning and chart, document, infographic, OCR and diagram question answering. The pretraining data is not released, and the README says it can be rebuilt from C4 URLs. Pretrained and fine-tuned checkpoints are on Google Cloud Storage; they were not downloaded or access-tested, and their terms are not stated. Root LICENSE is the Apache-2.0 text for code.",
+    "details": {
+      "availability": "Public source with pretrained and fine-tuned checkpoints on Google Cloud Storage; pretraining data not released.",
+      "repository_url": "https://github.com/google-research/pix2struct"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/google-research/pix2struct",
+        "sha256": "1d0f7d1db9bd4f153e441e0419578a70602f60397d6ace24dae86d94b754aaba",
+        "retrieved_at": "2026-10-18T11:31:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research/pix2struct/HEAD/LICENSE",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "retrieved_at": "2026-10-18T11:31:12Z"
+      }
+    ],
+    "reviewed_sha256": "ca99e7ffd4a4286e1eec2651d5733e0d9630e2e1f042caa93c22ce0eec465fa5",
+    "reviewed_at": "2026-10-18T11:32:15Z"
   }
 ]

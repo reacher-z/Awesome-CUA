@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:93c98e3b5aea945e0877",
+    "name": "OS-Genesis 7B WA",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Genesis-7B-WA",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "The WebArena-oriented Qwen2-VL-7B checkpoint trained on web trajectories generated through OS-Genesis reverse task synthesis, predicting the next thought and action from an instruction, history and page.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis-7B-WA"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Genesis-7B-WA/raw/710c529da0975103edf7e2ad50c0f93fde690a84/README.md"
+    ],
+    "documented_by": [
+      "2412.19723"
+    ],
+    "notes": "Hub API at revision 710c529d lists four BF16 safetensors shards (about 8.29B parameters) in the Qwen2VLForConditionalGeneration architecture; the repository is not gated. The card declares Apache-2.0 and Qwen/Qwen2-VL-7B-Instruct as the base, calls it a web action model, names the OS-Genesis web training file as its training data and points to WebArena evaluation code, although its family-table caption says AndroidControl. The OS-Genesis README lists it under Web. The card's example prompt combines a screenshot, an accessibility tree, the instruction and the action history, and loads its processor from OS-Atlas-Base-7B. AndroidWorld and AndroidControl variants are separate releases, and no result is transferred to this checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "OS-Copilot/OS-Genesis-7B-WA",
+      "hub_revision": "710c529da0975103edf7e2ad50c0f93fde690a84",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Genesis-7B-WA/tree/710c529da0975103edf7e2ad50c0f93fde690a84",
+      "architecture": "Qwen2VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "base_model": "Qwen/Qwen2-VL-7B-Instruct",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "repository_url": "https://github.com/OS-Copilot/OS-Genesis"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-7B-WA/revision/710c529da0975103edf7e2ad50c0f93fde690a84",
+        "sha256": "4d5370a7b91db042c71ed36c0178c2a556684813e34b85b3c04e7bc190830d68",
+        "retrieved_at": "2026-10-18T16:04:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md",
+        "sha256": "430e495ab250395d666854bd18b0fc29b819cd784cd7730215ef65e461834d0d",
+        "retrieved_at": "2026-10-18T16:04:24Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6c35603768028607de9b32109cfe56455dc23612dd012a6f50393a380a7163a5",
+    "reviewed_at": "2026-10-18T16:04:52Z"
   }
 ]

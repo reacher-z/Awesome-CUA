@@ -63143,5 +63143,94 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:aburns4/textualforesight",
+    "name": "Textual Foresight",
+    "kind": "model",
+    "url": "https://github.com/aburns4/textualforesight",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "world-models",
+      "data-generation"
+    ],
+    "summary": "LAVIS-based code for pretraining a BLIP-2 variant to describe the app screen that follows an action, with OpenApp caption data, checkpoints and finetuning scripts for captioning, grounding and tappability.",
+    "scope": "core",
+    "verify_terms": [
+      "Textual Foresight"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1ce27542d1e6e9c883279b659758bdf534a446b97e2207bdea069a09999606a3",
+    "reviewed_at": "2026-10-18T10:50:19Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The repository carries a copy of Salesforce LAVIS (lavis/), though GitHub does not list it as a fork; its root LICENSE.txt is the BSD-3-Clause text with a Salesforce copyright, recorded here for code only. The OpenApp annotations, raw pretraining images and pretrained checkpoints are linked through Google Drive and were not downloaded or access-tested; the inspected README states no data or weights license. OpenApp is rebuilt from MoTIF, Android-in-the-Wild and Longitudinal app data, which keep their own terms.",
+    "details": {
+      "repository_url": "https://github.com/aburns4/textualforesight"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/aburns4/textualforesight",
+        "sha256": "fb8c96ea10f9127e442c390a67fab233c88a29291de0bee4889df33c29a687be",
+        "retrieved_at": "2026-10-18T10:49:43Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/aburns4/textualforesight/git/trees/main?recursive=1",
+        "sha256": "0386309e5e39e930a209152a13aa22c3c1c568d67ff7b4db20ac9f4e3701f406",
+        "retrieved_at": "2026-10-18T10:49:44Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/LICENSE.txt",
+        "sha256": "5aca00bff81e12a65992c7f2ecfece6ba7a923193c7a1d33a1b60f657e8cf11a",
+        "retrieved_at": "2026-10-18T10:49:45Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ]
+      }
+    ],
+    "documented_by": [
+      "2406.07822"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "BSD-3-Clause",
+          "url": "https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/LICENSE.txt",
+          "retrieved_at": "2026-10-18T10:49:45Z",
+          "basis": "Root LICENSE.txt is the BSD-3-Clause text inherited from Salesforce LAVIS; it is a code declaration and does not cover OpenApp data, the source app datasets or the Drive checkpoints."
+        },
+        "reason": "Root LICENSE.txt is the BSD-3-Clause text inherited from Salesforce LAVIS; it is a code declaration and does not cover OpenApp data, the source app datasets or the Drive checkpoints.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/LICENSE.txt"
+        ]
+      }
+    }
   }
 ]

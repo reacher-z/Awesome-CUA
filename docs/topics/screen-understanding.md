@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (11)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -52,6 +52,7 @@
 | [OmniParser v2 model bundle](https://huggingface.co/microsoft/OmniParser-v2.0) | unspecified | — | weights Mixed by component: icon_detect = AGPL-3.0; icon_detect_v3 = MIT; icon_caption = MIT | A screen-parsing weight bundle containing icon-region detectors and an icon captioner for converting screenshots into agent-readable interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
 | [POINTS-GUI-G 8B](https://huggingface.co/tencent/POINTS-GUI-G) | web, desktop, cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | weights other | A specialized interface-grounding checkpoint that returns normalized point coordinates for a requested element in a screenshot. | [✓ 2026‑10‑17](https://huggingface.co/tencent/POINTS-GUI-G/raw/main/README.md) |
 | [SpiritSight-Agent 8B base](https://huggingface.co/SenseLLM/SpiritSight-Agent-8B) | cross-platform | [2503.03196](https://arxiv.org/abs/2503.03196) (2025) | weights apache-2.0 | An InternVL2-based visual GUI checkpoint distributed for grounding and interface navigation, with the publisher recommending task-specific fine-tuning of the base release. | [✓ 2026‑10‑17](https://huggingface.co/SenseLLM/SpiritSight-Agent-8B/raw/main/README.md) |
+| [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | LAVIS-based code for pretraining a BLIP-2 variant to describe the app screen that follows an action, with OpenApp caption data, checkpoints and finetuning scripts for captioning, grounding and tappability. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |
 | [UIX-Qwen2](https://huggingface.co/neulab/UIX-Qwen2) | web | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | A MultiUI-trained visual-language checkpoint for text-rich webpage understanding and interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/neulab/UIX-Qwen2/raw/main/README.md) |
 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
 

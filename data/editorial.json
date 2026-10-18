@@ -63143,5 +63143,123 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Surfer-H-CLI",
+    "kind": "agent",
+    "url": "https://github.com/hcompai/surfer-h-cli",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "scope": "core",
+    "summary": "Deprecated runner for H Company's Surfer-H web agent: a policy model reads recent Chrome screenshots, a Holo localizer returns click coordinates, Selenium acts, and an optional validator checks the answer.",
+    "verify_terms": [
+      "Surfer-H-CLI"
+    ],
+    "aliases": [
+      "Open Surfer-H"
+    ],
+    "notes": "Archived on GitHub, and the README marks it deprecated in favour of H Company's hosted Models API and Agent API and the hai-agents clients. The loop keeps the last three screenshots by default for the navigation step, which chooses click_element, write_element, scroll, go_back, refresh, wait, restart or answer; click and write targets are named elements that a localizer model (Holo1 or the structured Holo1.5 path) turns into viewport coordinates for Selenium ActionChains. Models are reached through OpenAI-compatible endpoints: H Company's hosted API, a local vLLM server, or a SageMaker deployment; one script uses GPT-4.1 as validator. A FastAPI agent_server.py and a Next.js frontend stream runs to a browser UI. Root LICENSE is the BSD 3-Clause text with an H Company copyright and does not cover the Holo weights. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hcompai/surfer-h-cli/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "availability": "Archived public Python source with run scripts and a web frontend; needs an H Company API key or a self-served Holo model.",
+      "repository_revision": "b054d8ebc98c70736741290a63ee77e37edf5e3e",
+      "repository_tree_sha": "86be8d2221e7463a7ffb1180dfdcd2fd0994a001"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/hcompai/surfer-h-cli/git/commits/b054d8ebc98c70736741290a63ee77e37edf5e3e",
+        "sha256": "732adaffdf829b9a028d514ee03440e48f6349d7c32dfa129f3dd3711127d835",
+        "retrieved_at": "2026-10-18T12:32:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hcompai/surfer-h-cli/b054d8ebc98c70736741290a63ee77e37edf5e3e/src/surfer_h_cli/surferh.py",
+        "sha256": "e986d55278404e3e54e4dad81eee0c17928b9006f094bbc11720c5e3150741be",
+        "retrieved_at": "2026-10-18T12:32:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hcompai/surfer-h-cli/b054d8ebc98c70736741290a63ee77e37edf5e3e/src/surfer_h_cli/simple_browser.py",
+        "sha256": "2adb4e214cbd9c21f7a30cdc279eebe2f9d6888103408dfe74d85a950213d08c",
+        "retrieved_at": "2026-10-18T12:32:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hcompai/surfer-h-cli/b054d8ebc98c70736741290a63ee77e37edf5e3e/src/surfer_h_cli/skills/localization.py",
+        "sha256": "60619d897fa497a2732b43690aa6b65588dad52be895fb296c0b127ef4a9c059",
+        "retrieved_at": "2026-10-18T12:32:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/hcompai/surfer-h-cli/b054d8ebc98c70736741290a63ee77e37edf5e3e/LICENSE",
+        "sha256": "176b3dc7bced16601e6b413fd3c58247dfdb072d910db41df453e38526a1f3ea",
+        "retrieved_at": "2026-10-18T12:32:50Z"
+      }
+    ],
+    "documented_by": [
+      "2506.02865"
+    ],
+    "publisher_id": "organization:h",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "BSD-3-Clause",
+          "url": "https://raw.githubusercontent.com/hcompai/surfer-h-cli/b054d8ebc98c70736741290a63ee77e37edf5e3e/LICENSE",
+          "retrieved_at": "2026-10-18T12:32:50Z",
+          "basis": "Root LICENSE reproduces the BSD 3-Clause terms under a 2025 H Company copyright; it covers the repository code, not Holo model weights or third-party services."
+        },
+        "reason": "Root LICENSE reproduces the BSD 3-Clause terms under a 2025 H Company copyright; it covers the repository code, not Holo model weights or third-party services.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/hcompai/surfer-h-cli/b054d8ebc98c70736741290a63ee77e37edf5e3e/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1f330f8304b99c38d4abd476b25506b42b153702e6a45f831fd7ee08462e117f",
+    "reviewed_at": "2026-10-18T12:33:42Z"
   }
 ]

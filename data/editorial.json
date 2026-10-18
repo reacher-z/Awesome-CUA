@@ -1628,7 +1628,121 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "e1d75e8a196f19af6050c53694383f069561244c810ca259c5f8075ee91f72b1",
-    "reviewed_at": "2026-10-16T06:35:58Z"
+    "reviewed_at": "2026-10-16T06:35:58Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2406.08184",
+        "evidence_url": "https://arxiv.org/html/2406.08184v1"
+      }
+    ],
+    "details": {
+      "repository_revision": "eec6048967b52e43246b47730e2f41df71a88e6b",
+      "benchmark_protocol": {
+        "focus": [
+          "Android app task completion",
+          "automatic success detection without action-sequence matching"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "agent-defined device state"
+        ],
+        "actions": [
+          "agent-defined Android interactions"
+        ],
+        "evaluation": "Each task is a Python class whose check_finish reads the current view hierarchy through AndroidViewClient and can also use click or window-change events posted to a local HTTP server. The orchestrator checks after every agent action and moves on when a task succeeds or exceeds its max_steps budget.",
+        "counts": [
+          {
+            "value": 100,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "default task list in src/mobile_agent_benchmark/configs/default.json at commit eec6048",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/configs/default.json"
+          },
+          {
+            "value": 10,
+            "unit": "apps",
+            "qualifier": "exact",
+            "population": "distinct app prefixes of the task names in configs/default.json, ten tasks each",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/configs/default.json"
+          }
+        ],
+        "notes": "Counted unique task names in the packaged default configuration; task name prefixes give ten tasks for each of ten apps, matching the paper's 100 tasks across 10 open-source apps. The paper describes an Android accessibility-service app that forwards app events, but the inspected tree has no source or APK for it, and the app APKs are installed separately. No device run was performed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/HEAD/README.md",
+          "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/configs/default.json",
+          "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/task_orchestrator.py",
+          "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/server.py",
+          "https://arxiv.org/html/2406.08184v1"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/configs/default.json",
+        "sha256": "d9ced55cb5083b1f4ca81f155675d65bfc8cd66b2a3e3e719163b0796751d8e3",
+        "retrieved_at": "2026-10-18T15:40:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/task_orchestrator.py",
+        "sha256": "2a9f6dde078f516795eec27c8eb2da6af0501bef3074b5d37354719e3a3097a5",
+        "retrieved_at": "2026-10-18T15:40:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/MobileAgentBench/mobile-agent-bench/eec6048967b52e43246b47730e2f41df71a88e6b/src/mobile_agent_benchmark/server.py",
+        "sha256": "11f5069af55b2d5e78fb1dc040797b487136f0a825952eab99b8b7a0a3725c41",
+        "retrieved_at": "2026-10-18T15:40:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2406.08184v1",
+        "sha256": "ce6805872c8a668e5db7fc11150ff48b97abaad92cbb8787aa62924e0c97f11b",
+        "retrieved_at": "2026-10-18T15:40:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://mobileagentbench.github.io/",
+        "sha256": "b51504ece9934bc8f587c82534d2d95e0101c76008c975a584101c185dfe4db9",
+        "retrieved_at": "2026-10-18T15:40:56Z"
+      }
+    ]
   },
   {
     "name": "MobileWorldBench",

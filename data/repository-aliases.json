@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:composiohq/open-chatgpt-atlas",
+    "target_id": "github:composio-community/open-chatgpt-atlas",
+    "repository_id": 1080954405,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T12:20:15Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/ComposioHQ/open-chatgpt-atlas",
+        "resolved_url": "https://api.github.com/repositories/1080954405",
+        "repository_id": 1080954405,
+        "full_name": "composio-community/open-chatgpt-atlas",
+        "html_url": "https://github.com/composio-community/open-chatgpt-atlas",
+        "retrieved_at": "2026-10-18T12:20:14Z",
+        "sha256": "038bb8e2d9c9be78e5ef27b6b520c97eee966862fa001e88d062242645dde255"
+      },
+      {
+        "url": "https://api.github.com/repos/composio-community/open-chatgpt-atlas",
+        "resolved_url": "https://api.github.com/repos/composio-community/open-chatgpt-atlas",
+        "repository_id": 1080954405,
+        "full_name": "composio-community/open-chatgpt-atlas",
+        "html_url": "https://github.com/composio-community/open-chatgpt-atlas",
+        "retrieved_at": "2026-10-18T12:20:15Z",
+        "sha256": "038bb8e2d9c9be78e5ef27b6b520c97eee966862fa001e88d062242645dde255"
+      }
+    ]
   }
 ]

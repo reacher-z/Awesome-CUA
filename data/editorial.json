@@ -63143,5 +63143,117 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Open ChatGPT Atlas",
+    "kind": "agent",
+    "url": "https://github.com/composio-community/open-chatgpt-atlas",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Chrome side-panel extension and Electron browser in which Gemini 2.5 Computer Use reads tab screenshots and returns clicks, typing, scrolling and navigation, with an optional Composio tool-router mode.",
+    "verify_terms": [
+      "Open ChatGPT Atlas"
+    ],
+    "notes": "The repository moved from ComposioHQ/open-chatgpt-atlas to composio-community (same GitHub repository ID 1080954405); the README star badge still links the former name. In Browser Tools mode the extension captures the visible tab (chrome.tabs.captureVisibleTab), sends it to gemini-2.5-computer-use-preview-10-2025 and executes the returned actions by dispatching synthetic DOM mouse and keyboard events at the given coordinates from its content script; the Electron app captures its view with webContents.capturePage and injects equivalent JavaScript. Model calls go directly from the client with a user-supplied Google API key; the Composio key for Tool Router mode is optional. There is no LICENSE file and GitHub reports no license, so the code license is unknown. No GitHub releases; the extension manifest is version 1.0.0. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public TypeScript source for an unpacked Chrome extension and an Electron app; no packaged release. Requires a Google Gemini API key.",
+      "repository_revision": "15a4261954a13322bc8af54ce1434d9b6f3d189d",
+      "repository_tree_sha": "ae558dbf4d193cdbdb19747322c61bce1ab88651"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/composio-community/open-chatgpt-atlas/git/commits/15a4261954a13322bc8af54ce1434d9b6f3d189d",
+        "sha256": "eee36a8262eb0959155c6e5f85aec5b70e07bc846fa41da967a376067f961494",
+        "retrieved_at": "2026-10-18T12:20:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/15a4261954a13322bc8af54ce1434d9b6f3d189d/sidepanel.tsx",
+        "sha256": "c1551a484ee4f460bf8e2422d67d8faa15bc469e488450e5cc2485ffaf703ac3",
+        "retrieved_at": "2026-10-18T12:20:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/15a4261954a13322bc8af54ce1434d9b6f3d189d/background.ts",
+        "sha256": "846c28313d8aac2f674d3df0d6857f1e24f31dc3d801cddb89a44b9053fd90d1",
+        "retrieved_at": "2026-10-18T12:20:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/15a4261954a13322bc8af54ce1434d9b6f3d189d/content.ts",
+        "sha256": "02790a0381841b265c056c276b932774a20ed6f55b82aa0d67716f2237477016",
+        "retrieved_at": "2026-10-18T12:20:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/15a4261954a13322bc8af54ce1434d9b6f3d189d/manifest.json",
+        "sha256": "e9649e6d8e990bf533f33ea02e9c8d1ffc22ef42368f336016ce5590738fa5d9",
+        "retrieved_at": "2026-10-18T12:20:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/15a4261954a13322bc8af54ce1434d9b6f3d189d/electron-browser/src/main/computer-use-service.ts",
+        "sha256": "f50e4d28c598cad5dc1c3629ab22d22da79043019e3181c182f3abadd529b770",
+        "retrieved_at": "2026-10-18T12:20:12Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:879d4e3e75e83582bde6",
+        "evidence_url": "https://raw.githubusercontent.com/composio-community/open-chatgpt-atlas/15a4261954a13322bc8af54ce1434d9b6f3d189d/sidepanel.tsx"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9e824c64f7b35b51d4c7d1760a1aa2b988f7c5b9c8cbf3316f58ad3ee889fcbe",
+    "reviewed_at": "2026-10-18T12:20:47Z"
   }
 ]

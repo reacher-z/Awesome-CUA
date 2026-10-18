@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:accomplish-ai/openwork",
+    "url": "https://github.com/accomplish-ai/openwork",
+    "decision": "not_a_resource",
+    "reason": "Redirects to accomplish-ai/coworker, whose single commit (2026-08-13) leaves only a README stating that the project is no longer supported; no code, releases or documentation remain at this address."
   }
 ]

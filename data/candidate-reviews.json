@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:huggingface/peft",
+    "url": "https://github.com/huggingface/peft",
+    "decision": "out_of_scope",
+    "reason": "PEFT is Hugging Face's general library for parameter-efficient fine-tuning methods such as LoRA, applicable to any transformer or diffusion model. It surfaced only through Seg2Click's acknowledgements and has no computer-use functionality of its own.",
+    "reviewed_at": "2026-10-18T11:49:33Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/huggingface/peft/HEAD/README.md",
+      "sha256": "65958fdf047de668cb2abd1c34dace3082d46680b98ae781b8bd2db38486e13e",
+      "retrieved_at": "2026-10-18T11:24:51Z"
+    }
   }
 ]

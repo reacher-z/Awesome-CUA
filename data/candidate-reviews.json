@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:modalminds/mm-eureka",
+    "url": "https://github.com/ModalMinds/MM-EUREKA",
+    "decision": "out_of_scope",
+    "reason": "MM-EUREKA releases rule-based reinforcement learning code, the MMK12 dataset and Qwen-based checkpoints for multimodal mathematical and scientific reasoning. Its README describes no GUI, web or mobile agent task, so it falls outside the computer-use scope although a phone-agent list files it under reinforcement learning methods.",
+    "reviewed_at": "2026-10-18T11:50:30Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/ModalMinds/MM-EUREKA/HEAD/README.md",
+      "sha256": "db5b32aa61f24b12f77b672b151d087390750f983d62eaf9b6b1bff33cae0b23",
+      "retrieved_at": "2026-10-18T11:39:37Z"
+    }
   }
 ]

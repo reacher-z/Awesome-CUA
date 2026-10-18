@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-4 source-reviewed resources tagged `history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+5 source-reviewed resources tagged `history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+
+## Agents
+
+All entries in this section: macos, desktop.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [macOS-use](https://github.com/browser-use/macOS-use) | — | code MIT | An archived Browser Use project that lets an LLM operate macOS apps by reading their accessibility trees and pressing, typing into and opening elements through the macOS Accessibility API. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/browser-use/macOS-use/HEAD/README.md) |
 
 ## Frameworks
 

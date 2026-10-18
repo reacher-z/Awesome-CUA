@@ -63143,5 +63143,89 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "macOS-use",
+    "kind": "agent",
+    "url": "https://github.com/browser-use/macOS-use",
+    "environments": [
+      "macos",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "history"
+    ],
+    "summary": "An archived Browser Use project that lets an LLM operate macOS apps by reading their accessibility trees and pressing, typing into and opening elements through the macOS Accessibility API.",
+    "scope": "core",
+    "verify_terms": [
+      "macOS-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/macOS-use/HEAD/README.md"
+    ],
+    "publisher_id": "organization:browser-use",
+    "aliases": [
+      "mlx-use"
+    ],
+    "notes": "The GitHub API reports the repository as archived; the last push was on 5 March 2025. The tree contains the mlx_use package (agent loop, controller, macOS accessibility tree, element actions), examples and a Gradio demo. The README documents the pip package name mlx-use and OpenAI, Anthropic or Gemini API keys. It warns that the agent may use stored credentials, will not stop at CAPTCHAs and should not run unsupervised. Local MLX inference and iPhone support were roadmap items, not released features. MIT applies to the repository code only.",
+    "details": {
+      "availability": "Archived published source",
+      "repository_url": "https://github.com/browser-use/macOS-use",
+      "repository_tree_sha": "7bb5003f4a60a24cda9cf55daf63e5b14d15ee3b"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "topics",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/browser-use/macOS-use",
+        "sha256": "b1282b218af0753ab3d41d7656bd9f2804c0b076675060a00c006215d878d74d",
+        "retrieved_at": "2026-10-18T11:12:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/browser-use/macOS-use/git/trees/main?recursive=1",
+        "sha256": "08d17429b07b1938e8f5efba563fc1c18c2ef4846b3868a6589eb5409aee00db",
+        "retrieved_at": "2026-10-18T11:12:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/macOS-use/HEAD/LICENSE",
+        "sha256": "135c57671b0ee957669b05a0ca00cc06f645496d351e2e732832c6e276da9a5e",
+        "retrieved_at": "2026-10-18T11:12:33Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9a3940337e2db7ce8082be4fab95304d555b67940d536ed7bf5df91a42794203",
+    "reviewed_at": "2026-10-18T11:12:59Z"
   }
 ]

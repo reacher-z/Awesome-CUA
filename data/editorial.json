@@ -63143,5 +63143,99 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:174e10a319d62c338879",
+    "name": "GroundNext-7B-V0",
+    "kind": "model",
+    "url": "https://huggingface.co/ServiceNow/GroundNext-7B-V0",
+    "environments": [
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning"
+    ],
+    "summary": "GroundNext GUI-grounding checkpoint fine-tuned from Qwen2.5-VL-7B-Instruct with SFT then RLOO on GroundCUA desktop data; it maps a screenshot and instruction to a computer_use click call.",
+    "scope": "core",
+    "verify_terms": [
+      "GroundNext-7B-V0"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/ServiceNow/GroundNext-7B-V0/raw/1c8864c5e64d04897b5d577711fccfc8782b65c0/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2511.07332"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.repository_url",
+      "details.base_model",
+      "details.parameter_label",
+      "details.training_data_note"
+    ],
+    "notes": "The card's model is trained on desktop data only and reports publisher-run results on desktop grounding benchmarks and on mobile and web benchmarks (MMBench-GUI, ScreenSpot-v2); the scores were not reproduced. Its limitations say the model currently supports mouse clicks only, while the repository's groundcua.py system prompt declares a full computer_use tool schema with keyboard, scroll and drag actions. A 3B GroundNext model appears in the card's OSWorld table, but ServiceNow has not published a 3B checkpoint on the Hub. The Hub manifest lists four Safetensors shards and an index, and the API reports a Qwen2_5_VLForConditionalGeneration config with 8,292,166,656 BF16 parameters (the card states 7.0B). Apache-2.0 is the card's weight declaration and is not extended to the base model or training data. Weights were not downloaded or run.",
+    "details": {
+      "hub_id": "ServiceNow/GroundNext-7B-V0",
+      "hub_revision": "1c8864c5e64d04897b5d577711fccfc8782b65c0",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/ServiceNow/GroundNext-7B-V0/tree/1c8864c5e64d04897b5d577711fccfc8782b65c0",
+      "repository_url": "https://github.com/ServiceNow/GroundCUA",
+      "artifact_type": "model-checkpoint",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "parameter_label": "7B",
+      "training_data_note": "The card states supervised fine-tuning on 700K human-annotated desktop examples from the GroundCUA dataset, followed by RLOO reinforcement learning with GUI-grounding rewards.",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/ServiceNow/GroundNext-7B-V0?expand%5B%5D=sha&expand%5B%5D=gated&expand%5B%5D=disabled&expand%5B%5D=cardData&expand%5B%5D=config&expand%5B%5D=safetensors&expand%5B%5D=siblings&expand%5B%5D=lastModified",
+        "sha256": "a43aea947bea033c19fd4a02f7a9881a728bd264745680f4efe99556fdfa7ee1",
+        "retrieved_at": "2026-10-18T15:37:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/ServiceNow/GroundNext-7B-V0/raw/1c8864c5e64d04897b5d577711fccfc8782b65c0/groundcua.py",
+        "sha256": "8a6fbdd818e027f730677a63c03f7a0e02e7f548b48618a38cef8e7202006cca",
+        "retrieved_at": "2026-10-18T15:37:30Z"
+      }
+    ],
+    "reviewed_sha256": "c655e19cc92de2b5794f629b885c1b6cc235457e75c71d7f60c78ca434a6fe4f",
+    "reviewed_at": "2026-10-18T15:38:00Z"
   }
 ]

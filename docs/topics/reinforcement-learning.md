@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (24)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -35,6 +35,7 @@ All entries in this section: web.
 | [EvoCUA](https://github.com/meituan/EvoCUA) | desktop | [2601.15876](https://arxiv.org/abs/2601.15876) (2026) | code Apache-2.0 | Computer-use model and training resources from the EvoCUA project. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/meituan/EvoCUA/HEAD/README.md) |
 | [EvoCUA 32B 20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) | desktop | — | weights apache-2.0 | Larger EvoCUA computer-use agent checkpoint (20260105 release) with about 33B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-32B-20260105) |
 | [EvoCUA 8B 20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) | desktop | — | weights apache-2.0 | EvoCUA computer-use agent checkpoint (20260105 release) with about 8.8B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-8B-20260105) |
+| [GroundNext-7B-V0](https://huggingface.co/ServiceNow/GroundNext-7B-V0) | desktop, cross-platform | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | weights apache-2.0 | GroundNext GUI-grounding checkpoint fine-tuned from Qwen2.5-VL-7B-Instruct with SFT then RLOO on GroundCUA desktop data; it maps a screenshot and instruction to a computer_use click call. | [✓ 2026‑10‑18](https://huggingface.co/ServiceNow/GroundNext-7B-V0/raw/1c8864c5e64d04897b5d577711fccfc8782b65c0/README.md) |
 | [GUI-G1](https://github.com/Yuqi-Zhou/GUI-G1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | code Apache-2.0 | GUI-grounding training code that modifies reasoning templates, reward functions, and the GRPO objective, with a linked model release. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/GUI-G1/HEAD/README.md) |
 | [GUI-G1 3B v1](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | weights mit | A Qwen2.5-VL-3B checkpoint released for R1-style visual grounding experiments, predicting interface target locations from screenshots and instructions. | [✓ 2026‑10‑17](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1/raw/main/README.md) |
 | [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |

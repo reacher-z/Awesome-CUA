@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (48)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -57,6 +57,7 @@
 | [DiMo-GUI](https://github.com/vivo/DiMo-GUI) | cross-platform | [2507.00008](https://arxiv.org/abs/2507.00008) (2025) | code Apache-2.0 | GUI grounding research using modality-aware visual reasoning and test-time scaling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md) |
 | [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use) | cross-platform | — | — | Gemini capability for generating interface actions from screenshots. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [GroundGUI-8B](https://huggingface.co/PrentisAI/GroundGUI-8B) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | weights apache-2.0 | Screenshot grounding checkpoint that emits a single click in a normalized coordinate space. | [✓ 2026‑10‑17](https://huggingface.co/PrentisAI/GroundGUI-8B/raw/main/README.md) |
+| [GroundNext-7B-V0](https://huggingface.co/ServiceNow/GroundNext-7B-V0) | desktop, cross-platform | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | weights apache-2.0 | GroundNext GUI-grounding checkpoint fine-tuned from Qwen2.5-VL-7B-Instruct with SFT then RLOO on GroundCUA desktop data; it maps a screenshot and instruction to a computer_use click call. | [✓ 2026‑10‑18](https://huggingface.co/ServiceNow/GroundNext-7B-V0/raw/1c8864c5e64d04897b5d577711fccfc8782b65c0/README.md) |
 | [GUI-Actor](https://github.com/microsoft/GUI-Actor) | cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | code MIT | GUI grounding model with attention-based action localization. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/GUI-Actor/HEAD/README.md) |
 | [GUI-Actor 7B Qwen2-VL](https://huggingface.co/microsoft/GUI-Actor-7B-Qwen2-VL) | cross-platform | — | weights mit | GUI-Actor checkpoint fine-tuned from Qwen2-VL-7B-Instruct, with about 8.4B BF16 parameters, whose config names a pointer variant of the Qwen2-VL class rather than the stock one, under MIT. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/GUI-Actor-7B-Qwen2-VL) |
 | [GUI-G1](https://github.com/Yuqi-Zhou/GUI-G1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | code Apache-2.0 | GUI-grounding training code that modifies reasoning templates, reward functions, and the GRPO objective, with a linked model release. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/GUI-G1/HEAD/README.md) |

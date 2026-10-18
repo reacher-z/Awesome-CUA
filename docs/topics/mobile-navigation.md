@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -90,6 +90,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [CHOP](https://github.com/Yuqi-Zhou/CHOP) | android, harmonyos | [2503.03743](https://arxiv.org/abs/2503.03743) (2025) | code MIT | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md) |
+| [ClickClickClick](https://github.com/instavm/clickclickclick) | android, desktop, macos | — | code MIT | Planner-finder-executor framework in which an LLM plans steps and a vision model locates screen targets, acting on Android over adb or on macOS via pyautogui and AppleScript; CLI, Gradio, Python and REST entry points. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/README.md) |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |

@@ -63143,5 +63143,93 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ClickClickClick",
+    "kind": "framework",
+    "url": "https://github.com/instavm/clickclickclick",
+    "environments": [
+      "android",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "mobile-navigation"
+    ],
+    "summary": "Planner-finder-executor framework in which an LLM plans steps and a vision model locates screen targets, acting on Android over adb or on macOS via pyautogui and AppleScript; CLI, Gradio, Python and REST entry points.",
+    "scope": "core",
+    "verify_terms": [
+      "ClickClickClick"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/README.md"
+    ],
+    "notes": "The README calls the code highly experimental. Planners and finders are documented for OpenAI, Gemini and Ollama models; the tree also has Anthropic modules and an MLX finder. README-raspberry.md runs the framework on a Raspberry Pi Zero 2W to control a phone. Model recommendations in the README are the publisher's and were not reproduced. The MIT LICENSE names Checksum Labs, Inc. (2024) as copyright holder; the repository is published under instavm. Code was read, not run.",
+    "details": {
+      "availability": "Public source only; installed from requirements.txt or a locally built package"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/clickclickclick/executor/osx.py",
+        "sha256": "5889e60067ed0a89dac137698d84fd94f0c1457b69a807ebea31f0fcabe5699d",
+        "retrieved_at": "2026-10-18T11:53:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/README-raspberry.md",
+        "sha256": "dd04ef5fbc243cdcb667d9a694cc33b58ed007329bec071777350330a884a04d",
+        "retrieved_at": "2026-10-18T11:53:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/LICENSE",
+        "sha256": "a79fd36681effa8566bdae339348218a1214669ee0a18e45514097892ba44b45",
+        "retrieved_at": "2026-10-18T11:53:13Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "497894b16146fcb46160c911b8797e77a173f826544f1ada2639358b376a981b",
+    "reviewed_at": "2026-10-18T11:53:38Z",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:53:13Z",
+          "basis": "The LICENSE file is the verbatim MIT permission text without the 'MIT License' title line, and the README states the project is MIT-licensed; this covers code only, not model weights or external services."
+        },
+        "reason": "The LICENSE file is the verbatim MIT permission text without the 'MIT License' title line, and the README states the project is MIT-licensed; this covers code only, not model weights or external services.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/LICENSE"
+        ]
+      }
+    }
   }
 ]

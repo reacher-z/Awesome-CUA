@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -111,6 +111,7 @@
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
+| [ClickClickClick](https://github.com/instavm/clickclickclick) | android, desktop, macos | — | code MIT | Planner-finder-executor framework in which an LLM plans steps and a vision model locates screen targets, acting on Android over adb or on macOS via pyautogui and AppleScript; CLI, Gradio, Python and REST entry points. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/README.md) |
 | [Computer Use OOTB](https://github.com/showlab/computer_use_ootb) | desktop | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | code Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/computer_use_ootb/HEAD/README.md) |
 | [ComputerRL](https://github.com/THUDM/ComputerRL) | desktop | [2508.14040](https://arxiv.org/abs/2508.14040) (2025) | code Apache-2.0 | Reinforcement-learning infrastructure for computer-use agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/ComputerRL/HEAD/README.md) |
 | [Cua](https://github.com/trycua/cua) | desktop | — | code MIT | Monorepo behind Cua Spaces, which gives agents full macOS or Linux desktops, plus Cua Driver for operating native apps, Lume for Apple Silicon VMs, Cua Bench and the CUA-S1 decision models. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/cua/HEAD/README.md) |

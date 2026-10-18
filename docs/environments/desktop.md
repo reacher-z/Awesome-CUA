@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -66,6 +66,7 @@
 | [EvoCUA 8B 20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) | desktop | — | weights apache-2.0 | EvoCUA computer-use agent checkpoint (20260105 release) with about 8.8B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-8B-20260105) |
 | [GroundGUI-8B](https://huggingface.co/PrentisAI/GroundGUI-8B) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | weights apache-2.0 | Screenshot grounding checkpoint that emits a single click in a normalized coordinate space. | [✓ 2026‑10‑17](https://huggingface.co/PrentisAI/GroundGUI-8B/raw/main/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
+| [GUI-Owl 7B Desktop-RL](https://huggingface.co/mPLUG/GUI-Owl-7B-Desktop-RL) | desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | GUI-Owl 7B variant from Mobile-Agent-v3 that is RL-tuned for desktop use on OSWorld, released as a research checkpoint for validating environment-RL improvements rather than for production. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-7B-Desktop-RL/raw/87ba5f0335cf5ecfeebbda7e2c1222e66cd49e45/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |
 | [Holo3 35B-A3B](https://huggingface.co/Hcompany/Holo3-35B-A3B) | web, desktop, cross-platform | — | weights apache-2.0 | A sparse Qwen3.5-based GUI-action checkpoint released for navigation and computer-use workflows. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo3-35B-A3B/raw/main/README.md) |

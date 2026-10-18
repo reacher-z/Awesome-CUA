@@ -63143,5 +63143,109 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:b01a78c76299196e3df1",
+    "name": "GUI-Owl 7B Desktop-RL",
+    "kind": "model",
+    "url": "https://huggingface.co/mPLUG/GUI-Owl-7B-Desktop-RL",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction"
+    ],
+    "summary": "GUI-Owl 7B variant from Mobile-Agent-v3 that is RL-tuned for desktop use on OSWorld, released as a research checkpoint for validating environment-RL improvements rather than for production.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Owl"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/mPLUG/GUI-Owl-7B-Desktop-RL/raw/87ba5f0335cf5ecfeebbda7e2c1222e66cd49e45/README.md"
+    ],
+    "documented_by": [
+      "2508.15144"
+    ],
+    "notes": "The card calls this a variant of GUI-Owl that is RL-tuned for desktop environments and deployable the same way as GUI-Owl 7B, and says it is mainly meant for validating environment-RL improvements, with no guarantee for production use. The X-PLUG/MobileAgent README links it, in its 2025-09-16 news entry, as the OSWorld RL-tuned GUI-Owl checkpoint released alongside the OSWorld code. Hub metadata names Qwen/Qwen2.5-VL-7B-Instruct as base_model. The Hub API lists seven safetensors shards totalling 8,296,592,640 F32 parameters, and config.json, stored through Git LFS, declares Qwen2_5_VLForConditionalGeneration. The card reports no score for this checkpoint. MIT is the card's weight declaration and is not extended to Qwen2.5-VL or training data.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "mPLUG/GUI-Owl-7B-Desktop-RL",
+      "hub_revision": "87ba5f0335cf5ecfeebbda7e2c1222e66cd49e45",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/mPLUG/GUI-Owl-7B-Desktop-RL/tree/87ba5f0335cf5ecfeebbda7e2c1222e66cd49e45",
+      "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "listed_weight_files": [
+        "model-00001-of-00007.safetensors",
+        "model-00002-of-00007.safetensors",
+        "model-00003-of-00007.safetensors",
+        "model-00004-of-00007.safetensors",
+        "model-00005-of-00007.safetensors",
+        "model-00006-of-00007.safetensors",
+        "model-00007-of-00007.safetensors"
+      ],
+      "repository_url": "https://github.com/X-PLUG/MobileAgent"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.base_model",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/mPLUG/GUI-Owl-7B-Desktop-RL/revision/87ba5f0335cf5ecfeebbda7e2c1222e66cd49e45",
+        "sha256": "ba81245c83a3fa94d4adc7bbba8faf06755ba6579410048a34ec4ee6396c5c2b",
+        "retrieved_at": "2026-10-18T15:59:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture",
+          "notes"
+        ],
+        "url": "https://huggingface.co/mPLUG/GUI-Owl-7B-Desktop-RL/resolve/87ba5f0335cf5ecfeebbda7e2c1222e66cd49e45/config.json",
+        "sha256": "48286d8ef6956f70158ccf6345d837f07b1445b814054ef71b84f2d172a39c4b",
+        "retrieved_at": "2026-10-18T15:59:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/MobileAgent/11cea575561fb7800b5fb6b6cafa56f7a91de11f/README.md",
+        "sha256": "ca402ffd3b05f72a6d72f47de52c962f92e410749a77939044f3301d4330af16",
+        "retrieved_at": "2026-10-18T15:59:24Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f68fd27d748f7851d5719f639a082e7ffc50365f960233f7e9f50ffeeb5ed360",
+    "reviewed_at": "2026-10-18T16:00:24Z"
   }
 ]

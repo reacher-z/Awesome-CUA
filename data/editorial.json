@@ -63143,5 +63143,104 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:354c5b46fd423f9b1b85",
+    "name": "Holo4 27B FP8",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo4-27B-FP8",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "FP8 block-quantized release of the Holo4-27B computer-use model; an external harness sends it screenshots and tool results and executes the clicks, typing, code and tool calls it requests.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo4-27B-FP8"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo4-27B-FP8/raw/18dcb4d5aeb558d505633af7bc5609d7ab046e81/README.md"
+    ],
+    "family_url": "https://hcompany.ai/research/models",
+    "publisher_id": "organization:h",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.artifact_type",
+      "details.parameter_label"
+    ],
+    "notes": "Hub metadata marks this repository as a quantized derivative of Hcompany/Holo4-27B. Its config.json declares Qwen3_5ForConditionalGeneration with FP8 block quantization of linear layers, while the card names Qwen3.8-27B as the base; the manifest lists 18 Safetensors shards. The card declares CC BY-NC 4.0 for these weights and also ships the base model's Apache-2.0 license. OSWorld and other scores on the card are publisher claims for Holo4-27B and were not reproduced; no weights were loaded.",
+    "details": {
+      "hub_id": "Hcompany/Holo4-27B-FP8",
+      "hub_revision": "18dcb4d5aeb558d505633af7bc5609d7ab046e81",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo4-27B-FP8/tree/18dcb4d5aeb558d505633af7bc5609d7ab046e81",
+      "artifact_type": "model-checkpoint",
+      "architecture": "Qwen3_5ForConditionalGeneration",
+      "parameter_label": "27B"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/Hcompany/Holo4-27B-FP8",
+        "sha256": "e19d56b53a3e7d316f1a9fb76c55cfb29228a0284798fbadde5391cd0f24d73a",
+        "retrieved_at": "2026-10-18T15:44:49Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Hcompany/Holo4-27B-FP8/raw/18dcb4d5aeb558d505633af7bc5609d7ab046e81/config.json",
+        "sha256": "06bb68e88c7f4eaed33710b6639ea3a4dfa4a24d413be16121fd8d7551e4e761",
+        "retrieved_at": "2026-10-18T15:44:50Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://huggingface.co/Hcompany/Holo4-27B-FP8/raw/18dcb4d5aeb558d505633af7bc5609d7ab046e81/README.md",
+          "retrieved_at": "2026-10-18T15:44:49Z",
+          "basis": "Publisher model-card declaration for these quantized weights; the bundled Apache-2.0 text covers the Qwen base model, and code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for these quantized weights; the bundled Apache-2.0 text covers the Qwen base model, and code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holo4-27B-FP8/raw/18dcb4d5aeb558d505633af7bc5609d7ab046e81/README.md"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json and Hub API record (file manifest, cardData base_model and base_model_relation). No weights were downloaded or run.",
+    "reviewed_sha256": "f474e4100f3e00498129e6cc35fafd5cbe3487e8e557a701650550a6199b4d54",
+    "reviewed_at": "2026-10-18T15:45:31Z"
   }
 ]

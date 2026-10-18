@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:agiresearch/a-mem",
+    "url": "https://github.com/agiresearch/A-mem",
+    "decision": "out_of_scope",
+    "reason": "A-MEM is a general memory library for LLM agents that stores and links notes in a vector database; it has no GUI, browser or mobile interaction.",
+    "reviewed_at": "2026-10-18T11:21:09Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/agiresearch/A-mem/main/README.md",
+      "sha256": "6f7185bb241d8ed5f7c0b8c4716b4f5e5cf1e9a3c630c3a1a92e54c3f5fb88b0",
+      "retrieved_at": "2026-10-18T11:19:19Z"
+    }
   }
 ]

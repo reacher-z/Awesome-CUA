@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Models (1)](#models) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -22,6 +22,14 @@
 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | web | [2410.06703](https://arxiv.org/abs/2410.06703) (2024) | — | — | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/segev-shlomov/ST-WebAgentBench/HEAD/README.md) |
 | [WebGuard](https://github.com/OSU-NLP-Group/WebGuard) | web | [2507.14293](https://arxiv.org/abs/2507.14293) (2025) | — | code MIT | Codebase, annotation toolkit, and action-level risk dataset for training and evaluating guardrail models that flag unsafe browser-agent actions before execution. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/WebGuard/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
+
+## Models
+
+All entries in this section: web, android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Gemini 2.5 Computer Use](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) | — | — | Preview Google DeepMind model built on Gemini 2.5 Pro and post-trained for UI control, returning browser and mobile actions from screenshots and recent action history through the Gemini API computer_use tool. | [✓ 2026‑10‑18](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) |
 
 ## Agents
 

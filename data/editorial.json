@@ -63143,5 +63143,67 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Gemini 2.5 Computer Use",
+    "kind": "model",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "safety-security"
+    ],
+    "summary": "Preview Google DeepMind model built on Gemini 2.5 Pro and post-trained for UI control, returning browser and mobile actions from screenshots and recent action history through the Gemini API computer_use tool.",
+    "scope": "core",
+    "verify_terms": [
+      "Gemini 2.5 Computer Use"
+    ],
+    "aliases": [
+      "Gemini 2.5 Computer Use model"
+    ],
+    "publisher_id": "organization:google",
+    "notes": "Launch post and model card dated 7 October 2025. The model card says the model is based on Gemini 2.5 Pro (06-2025) with post-training for UI control, is primarily optimized for web browsers, shows promise on mobile UI control and is not yet optimized for OS-level control; its stated knowledge cutoff is January 2025. Benchmark figures on Online-Mind2Web, WebVoyager and AndroidWorld mix self-reported, Browserbase-run and Google-run evaluations and were not reproduced. The post states that versions of the model power Project Mariner and the Firebase Testing Agent. This record covers the dated preview release; the Gemini API computer-use capability is recorded separately. Current availability, pricing and deprecation status were not checked.",
+    "details": {
+      "availability": "not independently tested"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details",
+          "notes",
+          "environments"
+        ],
+        "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-2-5-Computer-Use-Model-Card.pdf",
+        "sha256": "b3f56bc303fcffdc7eb76903843f273565a8eb3a686686cd55195fa2816cc39d",
+        "retrieved_at": "2026-10-18T11:07:02Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "url:879d4e3e75e83582bde6",
+        "evidence_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f9481fadf315ecb8e33b7140c3d8d0f917d5b85578bd151c58ccb337617f5694",
+    "reviewed_at": "2026-10-18T11:07:39Z"
   }
 ]

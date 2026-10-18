@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**99 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (59)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -82,6 +82,7 @@ All entries in this section: web.
 | [CogAgent](https://github.com/THUDM/CogAgent) | cross-platform | [2312.08914](https://arxiv.org/abs/2312.08914) (2023) | code Apache-2.0 | Visual language model for GUI understanding and interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/CogAgent/HEAD/README.md) |
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
 | [DiMo-GUI](https://github.com/vivo/DiMo-GUI) | cross-platform | [2507.00008](https://arxiv.org/abs/2507.00008) (2025) | code Apache-2.0 | GUI grounding research using modality-aware visual reasoning and test-time scaling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md) |
+| [Gemini 2.5 Computer Use](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) | web, android | — | — | Preview Google DeepMind model built on Gemini 2.5 Pro and post-trained for UI control, returning browser and mobile actions from screenshots and recent action history through the Gemini API computer_use tool. | [✓ 2026‑10‑18](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) |
 | [Gemini Computer Use](https://ai.google.dev/gemini-api/docs/computer-use) | cross-platform | — | — | Gemini capability for generating interface actions from screenshots. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [GroundGUI-8B](https://huggingface.co/PrentisAI/GroundGUI-8B) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | weights apache-2.0 | Screenshot grounding checkpoint that emits a single click in a normalized coordinate space. | [✓ 2026‑10‑17](https://huggingface.co/PrentisAI/GroundGUI-8B/raw/main/README.md) |
 | [GUI-Actor](https://github.com/microsoft/GUI-Actor) | cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | code MIT | GUI grounding model with attention-based action localization. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/GUI-Actor/HEAD/README.md) |

@@ -63143,5 +63143,138 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "DeskMind",
+    "kind": "agent",
+    "url": "https://github.com/deskmind-ai/deskmind",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Mac app of an on-device macOS computer-use agent: a 0.8B MLX planner scores each step as a multiple-choice decision, escalates unsure ones to a 4B model or the user, and a bundled helper acts on apps.",
+    "scope": "core",
+    "verify_terms": [
+      "DeskMind"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deskmind-ai/deskmind/HEAD/README.md"
+    ],
+    "notes": "This repository holds the SwiftUI app, its permission-holding helper (DeskMind Hands.app), the Brain and Hands request protocol with JSON Schemas, and release CI. The executor (deskmind_hands, acting through accessibility or vision), the planner server (Brain), the visual grounder (Eyes) and the benchmark (Bench) are separate Apache-2.0 repositories of the same publisher; app/runtime.sh archives them at the commits pinned in app/deps.lock and bundles them, with the third-party Peekaboo CLI, into the signed app (release v0.4.3). Model files are downloaded from Hugging Face at pinned revisions with SHA-256 checks, and inference runs locally. Runs are limited to apps the user confirms and an attached folder, and the agent asks for approval before actions that send, delete or cannot be undone. README results (39 of 39 runs on 13 Bench tasks, JevBench and ScreenSpot-Pro scores) are publisher-reported on one Mac. Brand assets are excluded from both licences. The app was not run.",
+    "details": {
+      "availability": "App source and protocol spec; signed macOS app in GitHub releases; executor, planner, grounder and benchmark in separate repositories; models on Hugging Face",
+      "repository_revision": "bf3365633d7a7162f7459e703bf81f1b338b43ee",
+      "release_tag": "v0.4.3"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/deskmind-ai/deskmind",
+        "sha256": "8f4bce8fd4336badcbe01d84368ae470e3e6f16f854545bdceaee9d5063ba765",
+        "retrieved_at": "2026-10-18T15:48:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/deskmind-ai/deskmind/git/trees/bf3365633d7a7162f7459e703bf81f1b338b43ee?recursive=1",
+        "sha256": "e783e5410a02e5209585aeff991f6bb7e6fd2d524fb230844a21533a2c8b1154",
+        "retrieved_at": "2026-10-18T15:48:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/docs/architecture.md",
+        "sha256": "bed84a5e7b333b8ddeaa1ddf217135d5c7c38eaa6f3e47132ff4d615c4f8d66b",
+        "retrieved_at": "2026-10-18T15:48:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/app/runtime.sh",
+        "sha256": "4242e79b1fbb7be3e60636af6062477018920ef99da3a0c095df09769f11540a",
+        "retrieved_at": "2026-10-18T15:48:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/app/deps.lock",
+        "sha256": "a2ea5c70a44718a82144d36375a61b8bbed9b5e5b35da89aa516f0f1ceeda368",
+        "retrieved_at": "2026-10-18T15:48:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/LICENSE",
+        "sha256": "1ff13e6d4ef6873561edb424365c17c311cbe0807f4afa5d7dda46ab6c5c659d",
+        "retrieved_at": "2026-10-18T15:48:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.document"
+        ],
+        "url": "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/LICENSE-docs",
+        "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+        "retrieved_at": "2026-10-18T15:48:39Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/LICENSE-docs",
+          "retrieved_at": "2026-10-18T15:48:39Z",
+          "basis": "README licence section assigns text and documentation to CC BY 4.0 (LICENSE-docs); code under app/ is Apache-2.0; brand assets are covered by neither."
+        },
+        "reason": "The README separates code (Apache-2.0, LICENSE) from text and documentation (CC BY 4.0, LICENSE-docs), and LICENSE-docs holds the CC BY 4.0 legal code.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/deskmind-ai/deskmind/bf3365633d7a7162f7459e703bf81f1b338b43ee/LICENSE-docs"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d54adb312f01132ceced24bea22be3670a4bc4645c8b59ceb99982cbdf74c941",
+    "reviewed_at": "2026-10-18T15:49:13Z"
   }
 ]

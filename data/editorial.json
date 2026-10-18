@@ -63143,5 +63143,141 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WebArena-Verified",
+    "kind": "benchmark",
+    "url": "https://github.com/ServiceNow/webarena-verified",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "An audited re-release of WebArena's 812 web tasks with corrected reference answers and deterministic evaluators that score structured agent responses and captured network traces, plus a 258-task hard subset.",
+    "scope": "core",
+    "verify_terms": [
+      "WebArena-Verified"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "github:web-arena-x/webarena",
+        "evidence_url": "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/README.md"
+      }
+    ],
+    "notes": "The README describes this as the verified release of WebArena and keeps the original task file (assets/dataset/test.raw.json) for reference; scores on it are not interchangeable with original WebArena results. The cited paper is a NeurIPS 2025 Scaling Environments for Agents workshop paper on OpenReview (94tlGxmqkN) with no arXiv identifier, so no paper record is linked. The task file is also published as the Hugging Face dataset AmineHA/WebArena-Verified, which was not reviewed here; Apache-2.0 is the repository code license and is not applied to the task data or to the self-hosted site images. Docker images and a PyPI package are documented but were not run.",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "web task completion",
+          "information retrieval from self-hosted websites"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [
+          "browser interactions on self-hosted WebArena sites"
+        ],
+        "evaluation": "Deterministic evaluators compare a structured agent response (task type, status, retrieved data) with the reference; 488 of the 812 tasks also check network events from a captured HAR trace, with 663 network-event checks in all. LLM-as-a-judge and substring matching were removed, and runs can be scored offline from saved responses and traces.",
+        "counts": [
+          {
+            "value": 812,
+            "unit": "task definitions",
+            "qualifier": "exact",
+            "population": "assets/dataset/webarena-verified.json",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/webarena-verified.json"
+          },
+          {
+            "value": 258,
+            "unit": "task IDs",
+            "qualifier": "exact",
+            "population": "WebArena-Verified Hard subset (assets/dataset/subsets/webarena-verified-hard.json)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/subsets/webarena-verified-hard.json"
+          }
+        ],
+        "notes": "Counts are unique task_id values in the inspected manifests. Tasks span the shopping, shopping_admin, gitlab, reddit, map and wikipedia sites, including cross-site tasks; each task carries a revision number. The observation format and agent harness are not prescribed. Record the task-file revision, subset and environment images with a score.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/README.md",
+          "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/webarena-verified.json",
+          "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/subsets/webarena-verified-hard.json"
+        ]
+      },
+      "repository_url": "https://github.com/ServiceNow/webarena-verified",
+      "repository_tree_sha": "6473f72db5dcefc97b5725b59e734504edc28a21"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/ServiceNow/webarena-verified",
+        "sha256": "564d8926e929185697d0471e5554b84743cf1eae4776045ab46f72b2cab49c31",
+        "retrieved_at": "2026-10-18T11:06:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/ServiceNow/webarena-verified/git/trees/main?recursive=1",
+        "sha256": "7fefd38b6a2cacdc12e0d659e37bed409a3784da269b0c18558e74ab71ae1e06",
+        "retrieved_at": "2026-10-18T11:06:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/webarena-verified.json",
+        "sha256": "d65275660814663375028e9017e1f929e3c38321041b125795e2713b52243d30",
+        "retrieved_at": "2026-10-18T11:06:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/subsets/webarena-verified-hard.json",
+        "sha256": "3b0a4df231bb5a0c642215e521c3fa97701a384f52a734dc2db8f617ad0591a7",
+        "retrieved_at": "2026-10-18T11:06:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T11:06:06Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.benchmark_protocol"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8f343078ba55263182f86ec54497958a1174d90cb8ce7573cedcc29f5c8e6b50",
+    "reviewed_at": "2026-10-18T11:07:02Z"
   }
 ]

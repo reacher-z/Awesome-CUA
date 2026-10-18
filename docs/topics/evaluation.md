@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (87)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
 
 ## Benchmarks
 
@@ -80,6 +80,7 @@
 | [VisualWebBench](https://github.com/VisualWebBench/VisualWebBench) | web | [2404.05955](https://arxiv.org/abs/2404.05955) (2024) | — | — | Evaluation of multimodal models on visual web understanding tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/HEAD/README.md) |
 | [WeaveBench](https://huggingface.co/datasets/wanlilll/WeaveBench) | desktop, linux | — | — | data mit | Computer-use benchmark mixing graphical interaction and code execution. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/wanlilll/WeaveBench) |
 | [WebArena](https://github.com/web-arena-x/webarena) · [leaderboard](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/edit?usp=sharing) | web | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | [812 task examples](https://raw.githubusercontent.com/web-arena-x/webarena/HEAD/README.md) | code Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-arena-x/webarena/HEAD/README.md) |
+| [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) | web | — | [812 task definitions](https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/webarena-verified.json) · [258 task IDs](https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/assets/dataset/subsets/webarena-verified-hard.json) | code Apache-2.0 | An audited re-release of WebArena's 812 web tasks with corrected reference answers and deterministic evaluators that score structured agent responses and captured network traces, plus a 258-task hard subset. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ServiceNow/webarena-verified/HEAD/README.md) |
 | [WebCanvas](https://github.com/iMeanAI/WebCanvas) · [leaderboard](https://github.com/iMeanAI/WebCanvas/blob/main/Mind2web-live_Leaderboard.md) | web | [2406.12373](https://arxiv.org/abs/2406.12373) (2024) | — | code MIT | Framework and evaluation resources for real-world web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/iMeanAI/WebCanvas/HEAD/README.md) |
 | [WebClick](https://huggingface.co/datasets/Hcompany/WebClick) | web | [2506.02865](https://arxiv.org/abs/2506.02865) (2025) | [1,639 examples](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) | — | A web-interface localization benchmark with screenshot instructions and target boxes, including agent browsing, human browsing and calendar cases. | [✓ 2026‑10‑17](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) |
 | [WebGames](https://github.com/convergence-ai/webgames) | web | — | — | code Apache-2.0 | 150 client-side web challenges in five capability domains, built to be easy for humans but hard for browsing agents, each revealing a password when solved. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/convergence-ai/webgames/HEAD/README.md) |

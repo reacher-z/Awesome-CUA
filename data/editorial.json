@@ -63143,5 +63143,164 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:86b3c2ee65911daf84a8",
+    "name": "FedMABench data partitions",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/wwh0411/FedMABench",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning"
+    ],
+    "summary": "Six families of JSONL partitions of AndroidControl and AitW mobile-agent episodes for FedMABench federated training under app, category and step/episode heterogeneity; screenshots must be rebuilt from the sources.",
+    "scope": "core",
+    "verify_terms": [
+      "FedMABench"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/wwh0411/FedMABench/raw/4596a0608a24dddc3f6ba96fb326e915d9632f0b/README.md"
+    ],
+    "documented_by": [
+      "2503.05143"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:wwh0411/fedmabench",
+        "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedMABench/417d8b0006830f423c7d07c213fc57277d75d966/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "component:google-research/android_control",
+        "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedMABench/417d8b0006830f423c7d07c213fc57277d75d966/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "component:google-research/android_in_the_wild",
+        "evidence_url": "https://raw.githubusercontent.com/wwh0411/FedMABench/417d8b0006830f423c7d07c213fc57277d75d966/README.md"
+      }
+    ],
+    "notes": "The Hub manifest at revision 4596a060 holds 41 JSONL partition files in six folders (Basic-AC 15, Category-Level 7, App-Level 5, Basic-AitW 5, Step-Episode 5, ScaleApp 4), plus split JSON files, an overview PDF and .DS_Store files; three folder names end with a trailing space. Inspected records are episode-level, with an instruction, step sub-instructions, original and converted actions, and image paths on the authors' machine. The FedMABench README says unpacked screenshots are not distributed and gives scripts to rebuild them from AndroidControl and AitW. Neither the card nor the Hub metadata declares a license, so the data license stays unknown. Partitions overlap, so their records are not summed.",
+    "details": {
+      "hub_id": "wwh0411/FedMABench",
+      "hub_revision": "4596a0608a24dddc3f6ba96fb326e915d9632f0b",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/wwh0411/FedMABench/tree/4596a0608a24dddc3f6ba96fb326e915d9632f0b",
+      "repository_url": "https://github.com/wwh0411/FedMABench",
+      "dataset_profile": {
+        "supervision": [
+          "episode instructions",
+          "step sub-instructions",
+          "action sequences"
+        ],
+        "modalities": [
+          "text instructions",
+          "actions",
+          "screenshot paths (images not included)"
+        ],
+        "formats": [
+          "JSONL",
+          "JSON"
+        ],
+        "splits": [
+          "federated training partitions",
+          "validation sets"
+        ],
+        "counts": [
+          {
+            "value": 6,
+            "unit": "dataset families",
+            "qualifier": "exact",
+            "population": "FedMABench data release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/wwh0411/FedMABench/raw/4596a0608a24dddc3f6ba96fb326e915d9632f0b/README.md"
+          },
+          {
+            "value": 30,
+            "unit": "subsets",
+            "qualifier": "more-than",
+            "population": "FedMABench data release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/wwh0411/FedMABench/raw/4596a0608a24dddc3f6ba96fb326e915d9632f0b/README.md"
+          },
+          {
+            "value": 800,
+            "unit": "apps",
+            "qualifier": "more-than",
+            "population": "apps across five categories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/wwh0411/FedMABench/raw/4596a0608a24dddc3f6ba96fb326e915d9632f0b/README.md"
+          },
+          {
+            "value": 41,
+            "unit": "JSONL partition files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 4596a060",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/wwh0411/FedMABench/revision/4596a0608a24dddc3f6ba96fb326e915d9632f0b"
+          }
+        ],
+        "notes": "A partition file is not a task, episode or client count. Screenshots are external dependencies that users rebuild from AndroidControl and AitW.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/wwh0411/FedMABench/raw/4596a0608a24dddc3f6ba96fb326e915d9632f0b/README.md",
+          "https://huggingface.co/api/datasets/wwh0411/FedMABench/revision/4596a0608a24dddc3f6ba96fb326e915d9632f0b",
+          "https://raw.githubusercontent.com/wwh0411/FedMABench/417d8b0006830f423c7d07c213fc57277d75d966/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/wwh0411/FedMABench/revision/4596a0608a24dddc3f6ba96fb326e915d9632f0b",
+        "sha256": "e3511f0f47d9a40da0ead5ce2eb49f590c010ed6199be0fe052a852e0fc83edf",
+        "retrieved_at": "2026-10-18T16:05:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "environments",
+          "notes",
+          "details.repository_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/wwh0411/FedMABench/417d8b0006830f423c7d07c213fc57277d75d966/README.md",
+        "sha256": "b49e2b419918078ef9c68f3c9becc6c13d8fe530c165a36bdd61e370746eeea8",
+        "retrieved_at": "2026-10-18T16:05:47Z"
+      }
+    ],
+    "read_basis": "Read the pinned dataset card, the Hub API record and file manifest at the same revision, the FedMABench README at commit 417d8b00, and the first record of two small partition files (App-Level Val, Basic-AitW Single) to identify the record unit.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2874269995d8c9f5dabe266433ecf724bf54c27af599d899f3f0090b8ee37cdc",
+    "reviewed_at": "2026-10-18T16:06:25Z"
   }
 ]

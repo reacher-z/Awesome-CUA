@@ -63143,5 +63143,100 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Cetus",
+    "kind": "agent",
+    "url": "https://github.com/drewnekota/cetus",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "human-in-the-loop"
+    ],
+    "scope": "adjacent",
+    "summary": "macOS client for running and reviewing coding-agent runtimes; its built-in runtime bundles a computer-use helper that acts on the frontmost app's numbered Accessibility elements, plus Chrome control.",
+    "verify_terms": [
+      "Cetus"
+    ],
+    "notes": "Adjacent: Cetus is mainly a review board and launcher for Claude Code, Codex, DeepSeek Harness, OpenCode, Grok Build, Kimi CLI and its own runtime (a bundled pi agent), with scheduled runs, per-run git worktrees and on-device screen-history OCR and meeting transcription. GUI control lives in two opt-in plugins of the built-in runtime. The computer-use plugin tunnels requests through the Rust host to a long-lived Swift helper (src-tauri/cua/cetus-cua-helper.swift) that dumps the frontmost or named app's Accessibility tree as numbered elements; computer_act presses or sets values by index and falls back to synthetic CGEvent clicks and keystrokes, asking for confirmation before the first consequential action and before destructive or sensitive ones, and computer_verify re-observes. The browser-use plugin attaches the external chrome-devtools-mcp to Chrome on port 9222. Apple Silicon only, macOS 13+ (Tauri build) or 15+ (Swift beta). Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/drewnekota/cetus/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Rust/TypeScript/Swift source and signed macOS DMG releases; external runtimes need their own CLIs and logins.",
+      "repository_revision": "2f1ab95d1bc2ecd6d05ae99dd88ec61ec5860a5a",
+      "repository_tree_sha": "7e17d8522c2ad707f02a9fe01d78e5211dca8572"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/drewnekota/cetus/git/commits/2f1ab95d1bc2ecd6d05ae99dd88ec61ec5860a5a",
+        "sha256": "5cf2cad9d813c36a226c107819cb2d0019587c1fdf6b9c41b9eea9b263d24957",
+        "retrieved_at": "2026-10-18T15:39:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/drewnekota/cetus/2f1ab95d1bc2ecd6d05ae99dd88ec61ec5860a5a/src-tauri/cetus-plugins/computer-use/extensions/computer-use.ts",
+        "sha256": "e6ac7ed162414474532d4b92da142ccba86d375e2f5f18a6485fd35135d2710d",
+        "retrieved_at": "2026-10-18T15:39:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/drewnekota/cetus/2f1ab95d1bc2ecd6d05ae99dd88ec61ec5860a5a/src-tauri/cua/cetus-cua-helper.swift",
+        "sha256": "e2ede2d1ff0374d06c30f990513160e24d2f7fe7938bb7c854874d9b24acc50e",
+        "retrieved_at": "2026-10-18T15:39:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/drewnekota/cetus/2f1ab95d1bc2ecd6d05ae99dd88ec61ec5860a5a/src-tauri/cetus-plugins/browser-use/.mcp.json",
+        "sha256": "bbe459ac55792664ecb1b6cf1d73b1be283126b3d8a957b990ac31b9aab8f594",
+        "retrieved_at": "2026-10-18T15:39:27Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:chromedevtools/chrome-devtools-mcp",
+        "evidence_url": "https://raw.githubusercontent.com/drewnekota/cetus/2f1ab95d1bc2ecd6d05ae99dd88ec61ec5860a5a/src-tauri/cetus-plugins/browser-use/.mcp.json"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "57a7e8522eefee5eeb0ee71ce50242aad6ff4910b0d04e18dd14c3cb7216337b",
+    "reviewed_at": "2026-10-18T15:39:55Z"
   }
 ]

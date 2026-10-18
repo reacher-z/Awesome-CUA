@@ -63143,5 +63143,136 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUIrilla-Task",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/macpaw-research/GUIrilla-Task",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "data-generation"
+    ],
+    "summary": "macOS screenshots paired with generated instructions and a ground-truth click or type action on a labelled element, collected by the GUIrilla accessibility-API crawler in app-disjoint train and test splits.",
+    "scope": "core",
+    "verify_terms": [
+      "GUIrilla-Task"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/macpaw-research/GUIrilla-Task/raw/ec4853a26f96e1c8adcc31670054f58a67a87297/README.md"
+    ],
+    "documented_by": [
+      "2510.16051"
+    ],
+    "notes": "Each record holds the full screenshot, a cropped app-window image, the window's accessibility JSON, the element data (bounding box for clicks, insertion location and text for typing) and task/element categories. The card says GPT-4 agents drafted the tasks during crawling, so instructions are model-generated rather than human-written. The data license is CC-BY-NC-4.0 per card metadata and the bundled LICENSE; the separate MacPaw/GUIrilla code repository's MIT license is not transferred to the data. Sample rows were not downloaded.",
+    "details": {
+      "hub_id": "macpaw-research/GUIrilla-Task",
+      "hub_revision": "ec4853a26f96e1c8adcc31670054f58a67a87297",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/macpaw-research/GUIrilla-Task/tree/ec4853a26f96e1c8adcc31670054f58a67a87297",
+      "repository_url": "https://github.com/MacPaw/GUIrilla",
+      "dataset_profile": {
+        "supervision": [
+          "generated task instructions",
+          "ground-truth click and type actions",
+          "element bounding boxes"
+        ],
+        "modalities": [
+          "screenshots",
+          "cropped window images",
+          "accessibility trees",
+          "instructions",
+          "actions"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "train",
+          "test"
+        ],
+        "counts": [
+          {
+            "value": 25606,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "train split at Hub revision ec4853a2",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/macpaw-research/GUIrilla-Task/raw/ec4853a26f96e1c8adcc31670054f58a67a87297/README.md"
+          },
+          {
+            "value": 1565,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "test split at Hub revision ec4853a2",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/macpaw-research/GUIrilla-Task/raw/ec4853a26f96e1c8adcc31670054f58a67a87297/README.md"
+          },
+          {
+            "value": 101,
+            "unit": "Parquet shards",
+            "qualifier": "exact",
+            "population": "data/ files at Hub revision ec4853a2 (96 train, 5 test)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/macpaw-research/GUIrilla-Task/revision/ec4853a26f96e1c8adcc31670054f58a67a87297"
+          }
+        ],
+        "notes": "The card states the splits are application-level disjoint. Example counts come from the card's dataset_info and split table; shard counts were computed from the pinned Hub file list. An example is one screenshot-instruction-action triple, not a multi-step trajectory.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/macpaw-research/GUIrilla-Task/raw/ec4853a26f96e1c8adcc31670054f58a67a87297/README.md",
+          "https://huggingface.co/api/datasets/macpaw-research/GUIrilla-Task/revision/ec4853a26f96e1c8adcc31670054f58a67a87297"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/macpaw-research/GUIrilla-Task/revision/ec4853a26f96e1c8adcc31670054f58a67a87297",
+        "sha256": "bccbc1dd9fd5aae317583d464c9119090984aea910cb8dd6be3cc077d6bbb037",
+        "retrieved_at": "2026-10-18T12:26:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_url",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/MacPaw/GUIrilla/15896d8c3158b7c4bbfaafc57582f1a28ff50074/README.md",
+        "sha256": "9ffc792287271564b8dc841fa9b86f2cfc7d9f1e2b30c0d90aae059329f59273",
+        "retrieved_at": "2026-10-18T12:26:24Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2ae8320c30f7d22085f290137e47dd2a735bf69e1a2c524bf1e340d9bd5ea658",
+    "reviewed_at": "2026-10-18T12:27:13Z"
   }
 ]

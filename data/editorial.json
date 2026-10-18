@@ -63143,5 +63143,83 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:agents-io/pokeclaw",
+    "name": "PokeClaw",
+    "kind": "agent",
+    "url": "https://github.com/agents-io/PokeClaw",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "Android app that runs a phone-control agent on the device, reading the UI tree through an Accessibility service and tapping, swiping and typing with on-device Gemma 4 or an optional cloud model.",
+    "scope": "core",
+    "aliases": [
+      "PocketClaw"
+    ],
+    "verify_terms": [
+      "PokeClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agents-io/PokeClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.release_tag",
+      "details.availability"
+    ],
+    "notes": "Also called PocketClaw. The task loop runs inside the installed APK rather than on a host over ADB. Local mode runs Gemma 4 through LiteRT-LM after a model download of about 2.6 GB; Cloud mode calls a hosted model. The tool registry also has notification, clipboard, call, file and knowledge-base tools, plus a separate D-pad tool set for Android TV devices. The README's pass rates (for example 18 of 20 cloud tasks on a Pixel 8 Pro) are the author's own trials and were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source and APK builds attached to GitHub releases",
+      "release_tag": "v0.7.1",
+      "repository_revision": "936eca3ef7881e37908b5f183bf948ccaf1615e4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/agents-io/PokeClaw/936eca3ef7881e37908b5f183bf948ccaf1615e4/app/src/main/java/io/agents/pokeclaw/tool/ToolRegistry.kt",
+        "sha256": "d38651fb47b4a9b8b83200b60ee8160d13728477b48a04a4881b31b74ddf501c",
+        "retrieved_at": "2026-10-18T11:54:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/agents-io/PokeClaw/936eca3ef7881e37908b5f183bf948ccaf1615e4/app/src/main/java/io/agents/pokeclaw/service/ClawAccessibilityService.java",
+        "sha256": "3c7d43e9fa6ed01b04ebf90fc25ddb2191a4db9f5501e52dd020bf00b8ec6b1d",
+        "retrieved_at": "2026-10-18T11:54:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/agents-io/PokeClaw/936eca3ef7881e37908b5f183bf948ccaf1615e4/LICENSE",
+        "sha256": "4387763272c00e188bf8a111b9f99babfa7bf877ed56e774ed6a02a4856512ac",
+        "retrieved_at": "2026-10-18T11:54:11Z"
+      }
+    ],
+    "reviewed_sha256": "2aa506fd4870c06d311d6c1f4f00eaa5367705ee903491e034b5cdd2842408fc",
+    "reviewed_at": "2026-10-18T11:54:51Z"
   }
 ]

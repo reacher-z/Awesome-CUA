@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**43 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
+**44 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (16)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -69,6 +69,7 @@ All entries in this section: web.
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
 | [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | android, ios | — | code Apache-2.0 | Phone agent model and framework with device interaction tooling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/zai-org/Open-AutoGLM/HEAD/README.md) |
 | [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| [PokeClaw](https://github.com/agents-io/PokeClaw) | android | — | code Apache-2.0 | Android app that runs a phone-control agent on the device, reading the UI tree through an Accessibility service and tapping, swiping and typing with on-device Gemma 4 or an optional cloud model. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/agents-io/PokeClaw/HEAD/README.md) |
 | [VisionTasker](https://github.com/AkimotoAyako/VisionTasker) | android | [2312.11190](https://arxiv.org/abs/2312.11190) (2023) | code GPL-3.0 | An Android automation implementation that translates screenshot-based UI understanding into language descriptions for step-by-step LLM planning and action execution. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/readme.md) |
 
 [↑ Back to top](#agent-catalog)

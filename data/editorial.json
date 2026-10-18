@@ -33861,6 +33861,17 @@
         "url": "https://huggingface.co/api/datasets/showlab/ShowUI-pi-data",
         "sha256": "86fadf9a32185f018f6a8e49d52b39ee5c99c177075510361202dc25a214191f",
         "retrieved_at": "2026-10-17T04:01:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/07d69cf3ed8ff9d4779af3c1a08959bbfc50009b/meta/info.json",
+        "sha256": "a18d257b8cb5291d8618c1a2091ca398f9f93167375d3f3ff08d369f5ed2c873",
+        "retrieved_at": "2026-10-18T15:41:43Z"
       }
     ],
     "details": {
@@ -33869,7 +33880,32 @@
       "disabled": false,
       "download_url": "https://huggingface.co/datasets/showlab/ShowUI-pi-data/tree/main",
       "dataset_profile": {
-        "counts": [],
+        "counts": [
+          {
+            "value": 20000,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "train split in the LeRobot meta/info.json at Hub revision 07d69cf3",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/07d69cf3ed8ff9d4779af3c1a08959bbfc50009b/meta/info.json"
+          },
+          {
+            "value": 404937,
+            "unit": "frames",
+            "qualifier": "exact",
+            "population": "train split in the LeRobot meta/info.json at Hub revision 07d69cf3",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/07d69cf3ed8ff9d4779af3c1a08959bbfc50009b/meta/info.json"
+          },
+          {
+            "value": 11678,
+            "unit": "distinct task instructions",
+            "qualifier": "exact",
+            "population": "train split in the LeRobot meta/info.json at Hub revision 07d69cf3",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/07d69cf3ed8ff9d4779af3c1a08959bbfc50009b/meta/info.json"
+          }
+        ],
         "supervision": [
           "drag trajectories",
           "click episodes"
@@ -33883,12 +33919,16 @@
           "Parquet",
           "LeRobot metadata"
         ],
-        "splits": [],
-        "notes": "No sample or episode count is inferred from the size tag or package manifest. Main-branch files were inspected; the card’s v3.0 usage example was not executed.",
+        "splits": [
+          "train"
+        ],
+        "notes": "Counts are the totals declared in the LeRobot meta/info.json (codebase_version v3.0, one train split covering episodes 0 to 19,999); the 20 Parquet data chunks were not recounted. A frame is one 10 fps time step with a 1024x576 screen image and a button-and-cursor action, not a distinct screenshot. The card's v3.0 usage example was not executed, and the Hub size band is not used as a count.",
         "evidence_urls": [
-          "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md"
+          "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md",
+          "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/07d69cf3ed8ff9d4779af3c1a08959bbfc50009b/meta/info.json"
         ]
-      }
+      },
+      "hub_revision": "07d69cf3ed8ff9d4779af3c1a08959bbfc50009b"
     },
     "scope": "core",
     "primary_supports": [

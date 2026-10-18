@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,14 @@ All entries in this section: desktop.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [OSWorld-Human](https://github.com/WukLab/osworld-human) | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+
+## Datasets
+
+All entries in this section: desktop.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [CUA Speedrun results](https://huggingface.co/datasets/anonymousmypcbench/cua-speedrun-trajectories) | — | [97 ZIP run archives](https://huggingface.co/api/datasets/anonymousmypcbench/cua-speedrun-trajectories/revision/447ff4cd77230ee06ee5b0e864873c43ceb0138c) · [14 per-evaluation cost evidence JSON files](https://huggingface.co/api/datasets/anonymousmypcbench/cua-speedrun-trajectories/revision/447ff4cd77230ee06ee5b0e864873c43ceb0138c) · [295 OSWorld tasks](https://huggingface.co/datasets/anonymousmypcbench/cua-speedrun-trajectories/raw/447ff4cd77230ee06ee5b0e864873c43ceb0138c/README.md) | — | Trajectory archives and per-task results from CUA Speedrun evaluations of computer-use models on OSWorld subsets, CUA-World and MyPCBench, with verifier scores, measured task times and recorded or estimated costs. | [✓ 2026‑10‑18](https://huggingface.co/datasets/anonymousmypcbench/cua-speedrun-trajectories/raw/447ff4cd77230ee06ee5b0e864873c43ceb0138c/README.md) |
 
 ## Models
 

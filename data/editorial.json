@@ -63143,5 +63143,40 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Webcmd",
+    "kind": "tool",
+    "url": "https://github.com/agentrhq/webcmd",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Browser-control CLI and agent skill that drives named, logged-in browser sessions and keeps per-site sitemaps of pages, actions and APIs as local memory for later runs.",
+    "scope": "core",
+    "verify_terms": [
+      "Webcmd"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agentrhq/webcmd/HEAD/README.md"
+    ],
+    "notes": "Distributed as the @agentrhq/webcmd npm package (Node.js 20.6+) and installed as a single skill for coding-agent harnesses. The README's BU Bench V1 comparison is publisher-reported with its own controller and judge; no comparative claim is adopted here. The hosted Webcmd Cloud is described as in development and may seed first-visit memory. Apache-2.0 is declared for the code only.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bba884c931c0d38c878e8613e14bb52cb41787d53f9cdcfd15b716a4ad3c10b9",
+    "reviewed_at": "2026-10-18T10:51:40Z"
   }
 ]

@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:77c708f5cff2d4c95e90",
+    "name": "ScaleCUA (THUDM) GLM-4.6V-Flash OSWorld",
+    "kind": "model",
+    "url": "https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-osworld",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction"
+    ],
+    "summary": "GLM-4.6V-Flash computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for OSWorld desktop tasks after an SFT start point and served through an OpenAI-compatible endpoint.",
+    "scope": "core",
+    "verify_terms": [
+      "ScaleCUA-glm4.6v-osworld"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-osworld/raw/f877281fc6f326fd43271163ea21b028db8eaa22/README.md"
+    ],
+    "documented_by": [
+      "2607.11185"
+    ],
+    "family_url": "https://github.com/THUDM/SCALE-CUA",
+    "notes": "Hub API at revision f877281f lists five BF16 safetensors shards (about 10.29B parameters) in the Glm4vForConditionalGeneration architecture; the repository is not gated. The card calls this the online-RL (RLVR) checkpoint and names extreme1228/ScaleCUA-glm4.6v-osworld-sft as its start point, which is also its Hub base_model. The card and the THUDM/SCALE-CUA README report 66.5% on OSWorld; this is a publisher figure and was not reproduced. The card YAML declares license 'other' and its prose says the weights are released for research and inherit the license of GLM-4.6V-Flash; that license is not resolved here. The card gives no parameter size label. This project is distinct from OpenGVLab/ScaleCUA.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "extreme1228/ScaleCUA-glm4.6v-osworld",
+      "hub_revision": "f877281fc6f326fd43271163ea21b028db8eaa22",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-osworld/tree/f877281fc6f326fd43271163ea21b028db8eaa22",
+      "architecture": "Glm4vForConditionalGeneration",
+      "base_model": "extreme1228/ScaleCUA-glm4.6v-osworld-sft",
+      "listed_weight_files": [
+        "model-00001-of-00005.safetensors",
+        "model-00002-of-00005.safetensors",
+        "model-00003-of-00005.safetensors",
+        "model-00004-of-00005.safetensors",
+        "model-00005-of-00005.safetensors"
+      ],
+      "repository_url": "https://github.com/THUDM/SCALE-CUA"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/extreme1228/ScaleCUA-glm4.6v-osworld/revision/f877281fc6f326fd43271163ea21b028db8eaa22",
+        "sha256": "c06e2f6cb5ce247bf67db276869d4409225968201d0c4565b2ceeef7c19b66a3",
+        "retrieved_at": "2026-10-18T15:54:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "relations",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/THUDM/SCALE-CUA/3929e2fe364623153f2caa94ead71dc1aea50fb0/README.md",
+        "sha256": "d4a68b00acc4becf2a25688520595babea9b694b56541e709f066413b5b80aea",
+        "retrieved_at": "2026-10-18T15:54:54Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "782c7a503f05c95537f8a2d4a75ca4fc7f078ec5a76dbbcb58aee98cf5a70b0f",
+    "reviewed_at": "2026-10-18T15:55:22Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (38)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -150,6 +150,7 @@
 | [HyperAgent](https://github.com/hyperbrowserai/HyperAgent) | web | — | — | Library adding natural-language commands to Playwright: accessibility-tree single actions, multi-step tasks that can use screenshots, an MCP client and action caching for replay without LLM calls. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/HEAD/README.md) |
 | [LaVague](https://github.com/lavague-ai/LaVague) | web | — | code Apache-2.0 | Open-source web agent framework where a World Model turns an objective and the current page into instructions and an Action Engine compiles them into Selenium or Playwright code to run. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/lavague-ai/LaVague/HEAD/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | web | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
+| [Magnitude](https://github.com/magnitudedev/browser-agent) | web | — | code Apache-2.0 | A TypeScript browser-agent framework in which a visually grounded model returns pixel coordinates for mouse and keyboard actions, with act and extract calls, a visual test runner and an MCP server. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/magnitudedev/browser-agent/HEAD/README.md) |
 | [NNetNav](https://github.com/MurtyShikhar/NNetnav) | web | [2410.02907](https://arxiv.org/abs/2410.02907) (2024) | code Apache-2.0 | Collects and labels browser-exploration trajectories for agent training, with code for data processing, fine-tuning, and web evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md) |
 | [Notte](https://github.com/nottelabs/notte) | web | — | — | Web agent framework and cloud SDKs for managed Chrome sessions, adding a CLI, an MCP server for coding agents, serverless browser functions and an API that builds automations from English tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nottelabs/notte/HEAD/README.md) |
 | [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | code Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/HEAD/README.md) |

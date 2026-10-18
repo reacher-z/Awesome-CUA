@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (12)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -144,6 +144,7 @@
 | [GroundGUI training and evaluation code](https://github.com/PrentisAI/GroundGUI) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | code Apache-2.0 | Code for screenshot grounding through supervised training, teacher-guided distillation, reinforcement learning, and benchmark evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
+| [Magnitude](https://github.com/magnitudedev/browser-agent) | web | — | code Apache-2.0 | A TypeScript browser-agent framework in which a visually grounded model returns pixel coordinates for mouse and keyboard actions, with act and extract calls, a visual test runner and an MCP server. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/magnitudedev/browser-agent/HEAD/README.md) |
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |
 | [Midscene.js](https://github.com/web-infra-dev/midscene) | cross-platform | — | code MIT | Visual automation toolkit for web, mobile, and desktop interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-infra-dev/midscene/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |

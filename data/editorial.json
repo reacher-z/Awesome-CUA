@@ -63143,5 +63143,82 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Magnitude",
+    "kind": "framework",
+    "url": "https://github.com/magnitudedev/browser-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "automation"
+    ],
+    "summary": "A TypeScript browser-agent framework in which a visually grounded model returns pixel coordinates for mouse and keyboard actions, with act and extract calls, a visual test runner and an MCP server.",
+    "scope": "core",
+    "verify_terms": [
+      "Magnitude"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/magnitudedev/browser-agent/HEAD/README.md"
+    ],
+    "notes": "This is GitHub repository 952018616 (magnitudedev/browser-agent, created 2025-03-20). The name magnitudedev/magnitude now belongs to a separate inference-engine repository (1267145484), so it is not recorded as an alias. The inspected tree contains magnitude-core, magnitude-test, magnitude-extract, magnitude-mcp and create-magnitude-app packages plus basic and WebVoyager evaluation folders. The README requires a separately configured visually grounded model; its WebVoyager score is a publisher claim that was not reproduced. Apache-2.0 applies to repository code only.",
+    "details": {
+      "availability": "Published source; README documents npm packages",
+      "repository_url": "https://github.com/magnitudedev/browser-agent",
+      "repository_tree_sha": "f1b587c4173d8242bdb551991de54e70c4d2faf3",
+      "documentation_url": "https://docs.magnitude.run"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/magnitudedev/browser-agent",
+        "sha256": "b3cb4c14eb423ac7aa5ec8d22629dd91e7ec143a4fc2a79dc97188913a99ff0e",
+        "retrieved_at": "2026-10-18T11:09:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/magnitudedev/browser-agent/git/trees/main?recursive=1",
+        "sha256": "d454a5c1b71b7e42b99cdc24ca0391c36daa1190de20b13a1b142a916d1f406c",
+        "retrieved_at": "2026-10-18T11:09:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/magnitudedev/browser-agent/HEAD/LICENSE",
+        "sha256": "896c9297b2721f6475a8d86595f889f4ef01fc919a1ac307bdd0eb17f6f1878f",
+        "retrieved_at": "2026-10-18T11:09:55Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "86af0f6a35bce3482163827386f9cbd75650f3ba5ed95e39181e164fc1e205c7",
+    "reviewed_at": "2026-10-18T11:10:25Z"
   }
 ]

@@ -63143,5 +63143,78 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:eigent-ai/eigent",
+    "name": "Eigent",
+    "kind": "agent",
+    "url": "https://github.com/eigent-ai/eigent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Electron desktop app for a CAMEL-based multi-agent workforce whose browser agent drives a CDP-connected browser to visit, click, type, scroll and upload, beside developer, document and multimodal agents.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Eigent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/eigent-ai/eigent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent: browser operation is one worker role in a general productivity workforce built on CAMEL. The browser agent uses CAMEL's hybrid browser toolkit against a pool of CDP browsers, with terminal, note and screenshot toolkits beside it. Local deployment can use vLLM, Ollama or LM Studio, while the quick start connects to Eigent cloud services and needs an account. Code was read, not run, and installers were not downloaded.",
+    "details": {
+      "availability": "Public source with packaged desktop releases; the quick-start mode depends on Eigent cloud services",
+      "repository_revision": "8f90b99125e790fb4ccebb472dac7e6a6d1972a9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/eigent-ai/eigent/8f90b99125e790fb4ccebb472dac7e6a6d1972a9/backend/app/agent/factory/browser.py",
+        "sha256": "71f212a58f6c59e8dd6d46878b89e87081679774ec6e8cfc732112ad8b83c6e0",
+        "retrieved_at": "2026-10-18T11:41:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/eigent-ai/eigent/8f90b99125e790fb4ccebb472dac7e6a6d1972a9/backend/app/agent/README.md",
+        "sha256": "5a7892e8b5538a273ee76aabf4004372d1f221331e47e168d9604dbbd0e58eca",
+        "retrieved_at": "2026-10-18T11:41:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/eigent-ai/eigent/8f90b99125e790fb4ccebb472dac7e6a6d1972a9/LICENSE",
+        "sha256": "dc1400b738a63d9abe7dc1de5c29135b35afb6340fcb9c917547c588d22cc400",
+        "retrieved_at": "2026-10-18T11:41:42Z"
+      }
+    ],
+    "reviewed_sha256": "8b02c03a2de2cf317c3588c985dd6d276d80029304c1e4462f3eb8c933d37d64",
+    "reviewed_at": "2026-10-18T11:42:06Z"
   }
 ]

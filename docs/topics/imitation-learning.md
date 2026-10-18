@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-74 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+75 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (44)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (15)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (44)](#papers)
 
 ## Benchmarks
 
@@ -31,6 +31,7 @@ All entries in this section: android.
 | [ShowUI-π training data](https://huggingface.co/datasets/showlab/ShowUI-pi-data) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | — | Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md) |
 | [UI-Genie trajectory data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Synthetic mobile GUI trajectory supervision and screenshots released with the UI-Genie agent-training pipeline. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/raw/main/README.md) |
 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | [> 41,000 video recordings](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) | data CC0 1.0 | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. | [✓ 2026‑10‑17](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) |
+| [WebArena-Infinity browser agent trajectories](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories) | web | — | [2,329 trajectories](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [1,124 distinct tasks (environment and task_id pairs)](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [13 web-application environments](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [25,503 agent steps (sum of the manifest steps field)](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [2,195 trajectory folders with history.json](https://huggingface.co/api/datasets/webarena-x/webarena-infinity-trajectories/revision/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe) | data mit | Passing runs of three browser agents on 13 WebArena-Infinity web apps generated from product documentation, with per-step reasoning, actions, screenshots and programmatic verifier results. | [✓ 2026‑10‑18](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/raw/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/README.md) |
 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | — | data MIT | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. | [✓ 2026‑10‑18](https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md) |
 
 ## Models

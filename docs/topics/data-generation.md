@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (56)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -64,6 +64,7 @@
 | [UI-Ins](https://github.com/alibaba/UI-Ins) | cross-platform | [2510.20286](https://arxiv.org/abs/2510.20286) (2025) | — | — | Treats grounding instructions as multiple reasoning perspectives, releasing a data pipeline, training code and UI-Ins-7B and 32B models trained by SFT on synthesized instructions, then RL. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alibaba/UI-Ins/HEAD/README.md) |
 | [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
 | [UI-S1 released training examples](https://huggingface.co/datasets/mPLUG/UI_S1_dataset) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | [1,000 training examples](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/UI-S1/README.md) | data apache-2.0 | A public example subset of the UI-S1 mobile training data, packaged as JSONL annotations and Parquet images. | [✓ 2026‑10‑17](https://huggingface.co/datasets/mPLUG/UI_S1_dataset/raw/main/README.md) |
+| [WebArena-Infinity browser agent trajectories](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories) | web | — | [2,329 trajectories](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [1,124 distinct tasks (environment and task_id pairs)](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [13 web-application environments](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [25,503 agent steps (sum of the manifest steps field)](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/resolve/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/data/manifest.json) · [2,195 trajectory folders with history.json](https://huggingface.co/api/datasets/webarena-x/webarena-infinity-trajectories/revision/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe) | data mit | Passing runs of three browser agents on 13 WebArena-Infinity web apps generated from product documentation, with per-step reasoning, actions, screenshots and programmatic verifier results. | [✓ 2026‑10‑18](https://huggingface.co/datasets/webarena-x/webarena-infinity-trajectories/raw/73cf7f57a6ff61c95722a23bffdd9c1de4069bfe/README.md) |
 | [WebPRM checklist-generation data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) | web | — | [3,630 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation/raw/main/README.md) | — | Web-task context, starting observations and action history paired with structured checklists and subgoal analyses for checklist generation. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) |
 
 ## Models

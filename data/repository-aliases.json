@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:iliyazelenko/os-ai-computer-use",
+    "target_id": "github:777genius/os-ai-computer-use",
+    "repository_id": 1056802660,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T15:37:46Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/iliyaZelenko/os-ai-computer-use",
+        "resolved_url": "https://api.github.com/repositories/1056802660",
+        "repository_id": 1056802660,
+        "full_name": "777genius/os-ai-computer-use",
+        "html_url": "https://github.com/777genius/os-ai-computer-use",
+        "retrieved_at": "2026-10-18T15:37:45Z",
+        "sha256": "95b963db22daa46036d65c4bda413c3f1e839660d4f93d09049dc2882ba7e653"
+      },
+      {
+        "url": "https://api.github.com/repos/777genius/os-ai-computer-use",
+        "resolved_url": "https://api.github.com/repos/777genius/os-ai-computer-use",
+        "repository_id": 1056802660,
+        "full_name": "777genius/os-ai-computer-use",
+        "html_url": "https://github.com/777genius/os-ai-computer-use",
+        "retrieved_at": "2026-10-18T15:37:46Z",
+        "sha256": "95b963db22daa46036d65c4bda413c3f1e839660d4f93d09049dc2882ba7e653"
+      }
+    ]
   }
 ]

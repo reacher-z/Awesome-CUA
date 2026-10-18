@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OS AI Computer Use",
+    "kind": "agent",
+    "url": "https://github.com/777genius/os-ai-computer-use",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "cross-app"
+    ],
+    "summary": "Local desktop agent that sends plain screenshots to OpenAI's or Anthropic's computer-use tool and performs the returned clicks, drags, scrolls and keystrokes through PyAutoGUI-based drivers on macOS, Windows and Linux.",
+    "scope": "core",
+    "verify_terms": [
+      "OS AI Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/777genius/os-ai-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Provider adapters call the OpenAI Responses API with its computer tool (batched actions) or Anthropic's computer-use tool (single actions with zoom); packages/core/src/os_ai_core/tools/computer.py captures the screen and executes actions through per-OS driver ports. macOS uses PyAutoGUI with a Quartz event path for Enter and an AppKit overlay; Windows and Linux (X11 or XWayland) use PyAutoGUI. A Flutter client (macOS, Windows, Linux, web) talks to a local backend; the CLI runs tasks directly. The README headline of 75.0% on OSWorld is a model-provider figure, not a measurement of this repository, and was not reproduced. The repository was formerly iliyaZelenko/os-ai-computer-use (same GitHub repository ID). Code was read, not run.",
+    "details": {
+      "availability": "Public source and desktop app builds attached to GitHub releases",
+      "repository_revision": "0356f418d61d7cace737eaa48f3d3a014e4ea249"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/777genius/os-ai-computer-use/0356f418d61d7cace737eaa48f3d3a014e4ea249/packages/core/src/os_ai_core/tools/computer.py",
+        "sha256": "6da904ac0b6c1fe6b1b51d4bd87fc73f8d2a61516f38b1d908672a7c5581f267",
+        "retrieved_at": "2026-10-18T15:37:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/777genius/os-ai-computer-use/0356f418d61d7cace737eaa48f3d3a014e4ea249/packages/llm_openai/src/os_ai_llm_openai/adapters_openai.py",
+        "sha256": "cc18ce96fa9d01148d93e6efd99b3f24011f37a93e8ff3f8265494d874946630",
+        "retrieved_at": "2026-10-18T15:37:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/777genius/os-ai-computer-use/0356f418d61d7cace737eaa48f3d3a014e4ea249/packages/llm_anthropic/src/os_ai_llm_anthropic/adapters_anthropic.py",
+        "sha256": "5979aafe65529b9abdc1f2a61b6f5c8f4d5ad0cacadca28d3823cf9070a9ee6b",
+        "retrieved_at": "2026-10-18T15:37:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/777genius/os-ai-computer-use/0356f418d61d7cace737eaa48f3d3a014e4ea249/packages/os/src/os_ai_os/defaults.py",
+        "sha256": "645c009659bc53740cf1c7e4076c161b8dd8956d2abf5b43678880a53d0433a0",
+        "retrieved_at": "2026-10-18T15:37:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/777genius/os-ai-computer-use/0356f418d61d7cace737eaa48f3d3a014e4ea249/packages/os-macos/src/os_ai_os_macos/drivers.py",
+        "sha256": "6573d50e6d79153bb7c944d9ba87a74e6e0dcf8dc16c04d4e39366b365a119e7",
+        "retrieved_at": "2026-10-18T15:37:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/777genius/os-ai-computer-use/0356f418d61d7cace737eaa48f3d3a014e4ea249/LICENSE",
+        "sha256": "4297658ee10a19e840fe1c2411541d4c1654df6e47767a82af2a1b209fcac749",
+        "retrieved_at": "2026-10-18T15:37:58Z"
+      }
+    ],
+    "reviewed_sha256": "c2536b1182e7ee2e0e25a6676457a599be9d16e7ccdab47e08f7780dab56f6fe",
+    "reviewed_at": "2026-10-18T15:38:31Z"
   }
 ]

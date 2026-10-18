@@ -63143,5 +63143,158 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-World data",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/ONE-Lab/GUI-World",
+    "environments": [
+      "cross-platform",
+      "android",
+      "ios",
+      "web"
+    ],
+    "topics": [
+      "video",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Hub release of GUI-World: GUI screen-recording videos from six scenarios (Android, iOS, website, software, multi-app and XR) with train and benchmark annotation JSONL for GUI-oriented video question answering.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-World"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md"
+    ],
+    "component_of": "https://github.com/Dongping-Chen/GUI-World",
+    "documented_by": [
+      "2406.10819"
+    ],
+    "notes": "This is the Hub data release; the repository record github:dongping-chen/gui-world covers the evaluation and GUI-Vid code and case studies, and its README calls this dataset the canonical train and test release. The Hub API at revision 7901fa3f reports an ungated repository with 12 annotation JSONL files (benchmark and train for each scenario) and 12,379 MP4 or MOV video files in per-scenario folders. The card has no license metadata field; its License section states CC BY 4.0. The GUI-Vid checkpoint is a separate Hub model and is not covered here.",
+    "details": {
+      "hub_id": "ONE-Lab/GUI-World",
+      "hub_revision": "7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/ONE-Lab/GUI-World/tree/main",
+      "repository_url": "https://github.com/Dongping-Chen/GUI-World",
+      "dataset_profile": {
+        "supervision": [
+          "GUI-oriented question-answer annotations"
+        ],
+        "modalities": [
+          "screen-recording videos",
+          "text annotations"
+        ],
+        "formats": [
+          "MP4 and MOV video files",
+          "JSONL annotations"
+        ],
+        "splits": [
+          "train",
+          "benchmark"
+        ],
+        "counts": [
+          {
+            "value": 12379,
+            "unit": "video files",
+            "qualifier": "exact",
+            "population": "MP4 and MOV files in the Hub manifest at revision 7901fa3f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/ONE-Lab/GUI-World"
+          },
+          {
+            "value": 12,
+            "unit": "annotation files",
+            "qualifier": "exact",
+            "population": "JSONL files under Annotation/benchmark and Annotation/train at revision 7901fa3f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/ONE-Lab/GUI-World"
+          },
+          {
+            "value": 6,
+            "unit": "GUI scenario categories",
+            "qualifier": "exact",
+            "population": "dataset taxonomy",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md"
+          },
+          {
+            "value": 8,
+            "unit": "question types",
+            "qualifier": "exact",
+            "population": "dataset taxonomy",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md"
+          }
+        ],
+        "notes": "Video files were counted from the Hub file manifest, not by opening them, and are not question or annotation counts. The annotation files were not downloaded, so the number of questions per split is not recorded.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md",
+          "https://huggingface.co/api/datasets/ONE-Lab/GUI-World",
+          "https://raw.githubusercontent.com/Dongping-Chen/GUI-World/master/Readme.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/ONE-Lab/GUI-World",
+        "sha256": "dfb9a575c567a2fe97640cd1f1f73c8fa6ba970c392f335791f1ed857f504a89",
+        "retrieved_at": "2026-10-18T11:41:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "relations",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/Dongping-Chen/GUI-World/master/Readme.md",
+        "sha256": "905bf69ce80c866377841474cefe08f85ec4ef552cdd9ffeb2fb1531e07370b6",
+        "retrieved_at": "2026-10-18T11:41:24Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md",
+          "retrieved_at": "2026-10-18T11:41:24Z",
+          "basis": "License section of the dataset card (prose with a link to the CC BY 4.0 deed); the card has no license metadata field."
+        },
+        "reason": "The card states that the work is licensed under CC BY 4.0. Because the declaration is prose rather than card metadata, enrich does not extract it, so it is recorded here.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d2dd5886bce90f6eaee880719c79a6ede6ec0eaa08da32d7610bde656b8dc9ed",
+    "reviewed_at": "2026-10-18T11:41:50Z"
   }
 ]

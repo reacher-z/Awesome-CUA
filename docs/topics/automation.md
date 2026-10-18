@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
 
 ## Models
 
@@ -40,6 +40,7 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [agent-browser](https://github.com/vercel-labs/agent-browser) | web | — | code Apache-2.0 | A browser-automation command-line interface that exposes browser state and interaction commands for AI agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/vercel-labs/agent-browser/HEAD/README.md) |
+| [AI Browser MCP Server (AI-XiaoDao)](https://github.com/AI-XiaoDao/ai-browser-mcp) | web | — | code MIT | Windows MCP server embedding a CEF browser: agents read an indexed snapshot of interactive elements, act by index or selector, fill forms, send input and call CDP, alongside scraping and fingerprint-spoofing tools. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/HEAD/README.md) |
 | [AUITestAgent](https://github.com/bz-lab/AUITestAgent) | unspecified | [2407.09018](https://arxiv.org/abs/2407.09018) (2024) | — | Generates mobile GUI interactions from natural-language test requirements and checks application behavior against those requirements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bz-lab/AUITestAgent/HEAD/README.md) |
 | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | web | — | code Apache-2.0 | MCP tools for browser control and inspection through Chrome DevTools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/HEAD/README.md) |
 | [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |

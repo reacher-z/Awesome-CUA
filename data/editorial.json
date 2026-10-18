@@ -63143,5 +63143,123 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AI Browser MCP Server (AI-XiaoDao)",
+    "kind": "tool",
+    "url": "https://github.com/AI-XiaoDao/ai-browser-mcp",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Windows MCP server embedding a CEF browser: agents read an indexed snapshot of interactive elements, act by index or selector, fill forms, send input and call CDP, alongside scraping and fingerprint-spoofing tools.",
+    "scope": "core",
+    "verify_terms": [
+      "AI浏览器 MCP",
+      "ai-browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/HEAD/README.md"
+    ],
+    "notes": "Upstream name: AI浏览器 MCP Server. A Windows (x64 and win32) program built on the FBrowser CEF kernel that serves MCP JSON-RPC over HTTP and WebSocket on 127.0.0.1:9222, with a Node stdio bridge for Cursor, Claude Code and other clients (CEFbro/AI-Fbowser-Mcp/mcp_bridge.js). The README states 334 tools in groups for navigation, DOM, forms, mouse and keyboard, screenshots, CDP, network capture and interception, cookies and proxies, JSON workflows, JavaScript reverse engineering and breakpoint debugging, and more than 45 fingerprint and anti-detection tools. browser_snapshot injects a script that lists visible interactive elements and tags each with a data-mcp-id index that element_action then targets (src/MCP_Server_Core.wsv). Source is written in the Volcano (火山) Chinese visual programming language (16 .wsv files in src), with generated C++ and prebuilt zips in release v3.2.0. The fingerprint-spoofing and reverse-engineering tools serve evasion and site analysis rather than interface operation. The tool was not run.",
+    "details": {
+      "availability": "Source in Volcano language and generated C++; prebuilt Windows x64 and win32 zips attached to GitHub release v3.2.0",
+      "repository_revision": "16e9a580a00671a35ba2b07d1d2a594aff63d2da",
+      "release_tag": "v3.2.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://github.com/AI-XiaoDao/ai-browser-mcp/tree/16e9a580a00671a35ba2b07d1d2a594aff63d2da",
+        "sha256": "3cbb1813ab0ffa06f0a01fb5e453170e9314094118a68c76ac43a4060f083312",
+        "retrieved_at": "2026-10-18T16:12:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://github.com/AI-XiaoDao/ai-browser-mcp/tree/16e9a580a00671a35ba2b07d1d2a594aff63d2da/CEFbro/AI-Fbowser-Mcp/src",
+        "sha256": "d06a7e23b91f574d38db15df94f571f7ff6dd7ec583015c8ad9a566804a4a94f",
+        "retrieved_at": "2026-10-18T16:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/16e9a580a00671a35ba2b07d1d2a594aff63d2da/CEFbro/AI-Fbowser-Mcp/src/MCP_Server.wsv",
+        "sha256": "f26cc73f293ba643b537dab3f6c60cb3fc8bdaea60d2227e3f0c5b402d22195f",
+        "retrieved_at": "2026-10-18T16:12:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/16e9a580a00671a35ba2b07d1d2a594aff63d2da/CEFbro/AI-Fbowser-Mcp/src/MCP_Server_Core.wsv",
+        "sha256": "87e2ecc8acd4899102e8570aa8adf2ec69e63235a885f583216a32b3eb720bea",
+        "retrieved_at": "2026-10-18T16:12:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/16e9a580a00671a35ba2b07d1d2a594aff63d2da/CEFbro/AI-Fbowser-Mcp/mcp_bridge.js",
+        "sha256": "8cb0b72355f8efd4f353eeae230b91d801d26819a5f4ed8f8f5a7de6dcf5a5c3",
+        "retrieved_at": "2026-10-18T16:13:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/AI-XiaoDao/ai-browser-mcp/16e9a580a00671a35ba2b07d1d2a594aff63d2da/LICENSE",
+        "sha256": "8c7ee9a7ec8561ed41e97a466048412f5ad424cd403864f274aa30e41fc4f57c",
+        "retrieved_at": "2026-10-18T16:13:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.availability",
+          "details.release_tag"
+        ],
+        "url": "https://github.com/AI-XiaoDao/ai-browser-mcp/releases/expanded_assets/v3.2.0",
+        "sha256": "bef772a6b2271e08fbae93c37e0feee7ef618425396c98518ecf5d0e62bb2e94",
+        "retrieved_at": "2026-10-18T16:13:03Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3ad478816e3f387c6c8e72f2900f67dcbdf6b512de2d27b9eda97505e71dac3d",
+    "reviewed_at": "2026-10-18T16:13:36Z"
   }
 ]

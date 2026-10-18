@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-99 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+100 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (2)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
 
 ## Benchmarks
 
@@ -18,11 +18,10 @@
 
 ## Datasets
 
-All entries in this section: desktop, web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| [Mind2Web 2 task data and judge scripts](https://huggingface.co/datasets/osunlp/Mind2Web-2) | web | — | [130 per-task evaluation scripts](https://huggingface.co/datasets/osunlp/Mind2Web-2/tree/54f5b2546c30b86812d9564f4800c0c6f77deb45/evaluation_scripts/2025_10_23) | data cc-by-4.0 | Auto-gated Hub release of Mind2Web 2: dev and test task CSVs for long-horizon agentic web search, plus 130 per-task Python evaluation scripts that act as its judge agents. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/osunlp/Mind2Web-2/revision/54f5b2546c30b86812d9564f4800c0c6f77deb45) |
 
 ## Models
 

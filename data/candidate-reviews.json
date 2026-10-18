@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:ranpox/openreview-visualization",
+    "url": "https://github.com/ranpox/openreview-visualization",
+    "decision": "out_of_scope",
+    "reason": "OpenReview Visualization downloads ICLR 2024 and 2025 submission and review data through the OpenReview API, parses it into CSV tables and publishes embedding maps, a rating table and keyword charts. It is a conference-analytics utility with no agent, GUI, browser or mobile interaction, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-18T12:19:36Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/ranpox/openreview-visualization/HEAD/README.md",
+      "sha256": "4b8ad7ee9cbc1410224a578d353ea9772262be996e69e70737338fc2e242e76b",
+      "retrieved_at": "2026-10-18T11:50:06Z"
+    }
   }
 ]

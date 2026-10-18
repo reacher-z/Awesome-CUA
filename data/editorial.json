@@ -6662,13 +6662,42 @@
           "click coordinates"
         ],
         "evaluation": "The inspected Jedi evaluation adapter reads the v2 mobile/desktop/web annotation files, scores a point against the target box, and reports overall, platform, and text/icon accuracy. This is a named compatible evaluator implementation; the OS-Atlas dataset card itself supplies no evaluator specification.",
-        "counts": [],
-        "notes": "The public Hub revision 5efbb1f1 contains three platform JSON annotation files and an image ZIP; its card only declares Apache-2.0. No sample total or equivalence to the original ScreenSpot test count is asserted. Keep v2 separate from v1 and retain evaluator/version and coordinate conversion when comparing results. Files were listed, not downloaded as data.",
+        "counts": [
+          {
+            "value": 334,
+            "unit": "instruction–target examples",
+            "qualifier": "exact",
+            "population": "screenspot_desktop_v2.json at Hub revision 5efbb1f1",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_desktop_v2.json"
+          },
+          {
+            "value": 501,
+            "unit": "instruction–target examples",
+            "qualifier": "exact",
+            "population": "screenspot_mobile_v2.json at Hub revision 5efbb1f1",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_mobile_v2.json"
+          },
+          {
+            "value": 437,
+            "unit": "instruction–target examples",
+            "qualifier": "exact",
+            "population": "screenspot_web_v2.json at Hub revision 5efbb1f1",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_web_v2.json"
+          }
+        ],
+        "notes": "The public Hub revision 5efbb1f1 contains three platform JSON annotation files and an image ZIP; its card only declares Apache-2.0. Counted by script, the annotation files hold 334 desktop, 501 mobile and 437 web examples, 1,272 in all, each tagged text or icon; the image ZIP was not opened. The OS-Atlas paper says the revision kept ScreenSpot's question total and gives 334 desktop, 502 mobile and 436 web questions, so one example differs between the paper and the released mobile and web files. Keep v2 separate from v1 and retain evaluator/version and coordinate conversion when comparing results.",
         "evidence_urls": [
           "https://huggingface.co/api/datasets/OS-Copilot/ScreenSpot-v2",
           "https://osatlas.github.io/",
           "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/evaluation/qwen25_vllm_screenspot_v2_jedi.py",
-          "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/evaluation/eval.py"
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/evaluation/eval.py",
+          "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_desktop_v2.json",
+          "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_mobile_v2.json",
+          "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_web_v2.json",
+          "https://arxiv.org/html/2410.23218v1"
         ]
       }
     },
@@ -6712,6 +6741,54 @@
         "supports": [
           "details.benchmark_protocol"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_desktop_v2.json",
+        "sha256": "96f494e0b28eead9187c67794b02bde63350b9cb753acc5fc0384fa77c7182a4",
+        "retrieved_at": "2026-10-18T15:43:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_mobile_v2.json",
+        "sha256": "fdd1595b64179e31407eed5929fa12e80adc6ba2ee372a3802d36da379ea1825",
+        "retrieved_at": "2026-10-18T15:43:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2/raw/5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c/screenspot_web_v2.json",
+        "sha256": "3e89e245d69f56a8e8f430917dc02f95b6fc36f8c8f2836c2cafe4dad10e823d",
+        "retrieved_at": "2026-10-18T15:43:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2410.23218v1",
+        "sha256": "b54c7b19d8b934fa6d4f46c29bd5595201953be74bf52cfbeeb0378c1010666d",
+        "retrieved_at": "2026-10-18T15:43:47Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2410.23218",
+        "evidence_url": "https://arxiv.org/html/2410.23218v1"
       }
     ]
   },

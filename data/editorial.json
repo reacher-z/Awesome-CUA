@@ -63143,5 +63143,226 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Mobile-Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/XiaoMi/MobileBench",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "cross-app",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Code and task files for Mobile-Bench, which runs LLM agents on Android apps through Appium with HTML-rendered UI trees plus ADB API calls and scores single-app and multi-app tasks by checkpoints met during the run.",
+    "verify_terms": [
+      "Mobile-Bench"
+    ],
+    "documented_by": [
+      "2407.00993"
+    ],
+    "notes": "Official release for arXiv 2407.00993 (ACL 2024 long paper). agent_for_ui/main_for_ui.py reads the Appium page source, converts the XML tree to an HTML element list, asks an OpenAI model (default gpt-4-turbo-2024-04-09) for a UI action or an ADB command from agent_for_api/api_list.json, and scores each task by matching its package, activity, text and API checkpoints against the action history. The task files hold 332 single-app single-step, 1005 single-app multi-step and 493 multi-app multi-step entries, counted with a script; the paper abstract reports 832 data entries, and the difference was not reconciled. Setup requires Ubuntu 18.04, Appium 1.18.3 and the MIUI emulator or a Xiaomi phone with logged-in apps and seeded contacts, messages and photos. main_for_ui.py imports a chatgpt module that is not in the tree. The LICENSE notice states Apache 2.0 for code and CC BY-NC-SA 4.0 for the dataset; GitHub reports NOASSERTION. Not a fork, not archived; last commit December 2024. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/XiaoMi/MobileBench/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public agent and evaluation scripts with task JSON files; apps, the MIUI emulator or a Xiaomi device, Appium and an OpenAI API key are supplied by the user, and one imported helper module is missing.",
+      "repository_revision": "4360ca869bfdd9470b97e1c5a75943c0fd5b9a19",
+      "repository_tree_sha": "0622249362669eeeb77092e75cc34483816bd5c8",
+      "benchmark_protocol": {
+        "focus": [
+          "LLM agents completing Chinese-language tasks in Android apps",
+          "single-app and multi-app tasks combining UI actions and ADB API calls"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "Appium UI hierarchy rendered as HTML element list"
+        ],
+        "actions": [
+          "click",
+          "long press",
+          "zoom",
+          "pinch",
+          "input text",
+          "scroll/swipe",
+          "ADB shell commands from the API list, including key events"
+        ],
+        "evaluation": "main_for_ui.py checks each task's check_point fields (activity, resource-id, text, package, api; a leading '&' requires all listed items, '|' any) against the successful action history, and accumulates package coverage and the fraction of checkpoints passed per task.",
+        "counts": [
+          {
+            "value": 332,
+            "unit": "task entries",
+            "qualifier": "exact",
+            "population": "data/s_app_s_step.json (single app, single step)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/s_app_s_step.json"
+          },
+          {
+            "value": 1005,
+            "unit": "task entries",
+            "qualifier": "exact",
+            "population": "data/s_app_m_step.json (single app, multiple steps)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/s_app_m_step.json"
+          },
+          {
+            "value": 493,
+            "unit": "task entries",
+            "qualifier": "exact",
+            "population": "data/m_app_m_step.json (multiple apps, multiple steps)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/m_app_m_step.json"
+          },
+          {
+            "value": 112,
+            "unit": "ADB API entries",
+            "qualifier": "exact",
+            "population": "agent_for_api/api_list.json across 32 app and system groups",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/agent_for_api/api_list.json"
+          }
+        ],
+        "notes": "Entries in s_app_m_step.json can carry several query phrasings. Results depend on app versions and the data stored on the device, as the README warns; preserve the task file, model, app versions and device state when comparing runs.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/agent_for_ui/main_for_ui.py",
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/s_app_s_step.json",
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/s_app_m_step.json",
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/m_app_m_step.json",
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/agent_for_api/api_list.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/XiaoMi/MobileBench/git/commits/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19",
+        "sha256": "3894e73aed4d2efe7a910020c1a9dc6ed42cba57061ed081189a4f95bb6f3737",
+        "retrieved_at": "2026-10-18T15:36:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/XiaoMi/MobileBench/git/trees/0622249362669eeeb77092e75cc34483816bd5c8?recursive=1",
+        "sha256": "3fc19effcc6735f06a05c7e76cc355d9d2d5b6ca6aad190a38c6c17804b78299",
+        "retrieved_at": "2026-10-18T15:36:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/LICENSE",
+        "sha256": "d642832150981d993726e3284767cba4ed15cf27d6689a9d19ee05688e132ee0",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/agent_for_ui/main_for_ui.py",
+        "sha256": "53a8967a4e1e947f9e18f96c005f67a6d81969af42d84b505b825d425173f7db",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/s_app_s_step.json",
+        "sha256": "d4f569b7b9a9051213589bf06662d210b2c31e805c9492de99435c658f918665",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/s_app_m_step.json",
+        "sha256": "8d453b62505e111a9a64fd4f02eae55f0bccb510f3a51d55a728f5de7873399f",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/data/m_app_m_step.json",
+        "sha256": "5578f6fc48f2d1a3cf295dd9f28d372536a51218130d3148b0008bba05ed8290",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/agent_for_api/api_list.json",
+        "sha256": "c8de1419d8c1240cb0c83df7f642564f51abd7323a531edd16e7009a2721fb7a",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/LICENSE",
+          "retrieved_at": "2026-10-18T15:36:51Z",
+          "basis": "The LICENSE notice states that the code is licensed under the Apache License, Version 2.0; it is a short notice rather than the license text, and GitHub reports NOASSERTION."
+        },
+        "reason": "The LICENSE notice explicitly licenses the project code under Apache 2.0; the separate dataset terms are not transferred to the code.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/LICENSE"
+        ]
+      },
+      "data": {
+        "value": {
+          "declared": "CC-BY-NC-SA-4.0",
+          "url": "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/LICENSE",
+          "retrieved_at": "2026-10-18T15:36:51Z",
+          "basis": "The LICENSE notice states that the included dataset is licensed under CC BY-NC-SA 4.0 and copyrighted by Xiaomi Corporation; commercial use requires contacting the holder."
+        },
+        "reason": "The LICENSE notice and the README name CC BY-NC-SA 4.0 for the included dataset, separately from the code license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/XiaoMi/MobileBench/4360ca869bfdd9470b97e1c5a75943c0fd5b9a19/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f3aca4ac8ae8e72329d14c42f204b919a46fc7b3e5071852da1b9b7c4e7b403c",
+    "reviewed_at": "2026-10-18T15:37:56Z"
   }
 ]

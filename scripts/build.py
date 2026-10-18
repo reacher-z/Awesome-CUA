@@ -563,6 +563,7 @@ def topic_pages(rows):
         cell = lambda n: f"{n:,}" if n else "·"
         index.append(f"| [{topic_label(topic)}](topics/{topic}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(len(papers))} | {newest} |")
         lines = [f"# {topic_label(topic)}", "", f"[Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)", "",
+            *([md(TOPICS[topic]["definition"]), ""] if topic in TOPICS else []),
             f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
             "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower()})" for kind, label in TOPIC_KINDS if kinds[kind]), ""]
         for kind, label in TOPIC_KINDS:
@@ -761,7 +762,7 @@ README_TEXT = {
         "labels": {"topics": "Research by topic", "bibliography": "Full bibliography", "survey": "Surveys", "dataset": "Datasets", "benchmark": "Benchmarks",
             "model": "Models and checkpoint releases", "agent": "Agents", "framework": "Frameworks", "infrastructure": "Infrastructure", "tool": "Tools",
             "product": "Products", "company": "Publishers and brands"},
-        "by_platform": "By platform:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records",
+        "by_platform": "By platform:", "by_topic": "By topic:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records",
         "kinds": {"benchmark": "Benchmarks", "model": "Models", "dataset": "Datasets", "framework": "Frameworks", "agent": "Agents"},
         "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {},
@@ -773,7 +774,7 @@ README_TEXT = {
         "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "dataset": "数据集", "benchmark": "基准",
             "model": "模型与权重版本", "agent": "智能体", "framework": "框架", "infrastructure": "基础设施", "tool": "工具",
             "product": "产品", "company": "发布方与品牌"},
-        "by_platform": "按平台：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录",
+        "by_platform": "按平台：", "by_topic": "按主题：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录",
         "kinds": {"benchmark": "基准", "model": "模型", "dataset": "数据集", "framework": "框架", "agent": "智能体"},
         "all": "全部 {n} 项 →", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
         "recent_header": "| 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |",
@@ -841,6 +842,10 @@ def explore(rows, report, lang="en"):
     lines += [f"| {' · '.join(link(*item) for item in left)} | {' · '.join(link(*item) for item in right)} |" for left, right in EXPLORE]
     platforms = collections.Counter(e for r in rows if r["review_status"] == "curated" for e in set(r["environments"]))
     lines += ["", f"**{text['by_platform']}** " + " · ".join(f"[{label}](docs/environments/{env}.md) **{platforms[env]:,}**" for env, label in PLATFORMS if platforms[env])]
+    topics = collections.Counter(t for r in rows if r["review_status"] == "curated" for t in set(r.get("topics", [])))
+    if topics:
+        lines += ["", f"**{text['by_topic']}** " + " · ".join(f"[{TOPICS.get(t, {}).get(lang, topic_label(t))}](docs/topics/{t}.md) **{topics[t]:,}**" for t in sorted(topics, key=lambda t: (-topics[t], t))[:12])
+            + f" · [{text['all'].format(n=len(topics))}](docs/topics.md)"]
     return "\n" + "\n".join(lines) + "\n"
 
 

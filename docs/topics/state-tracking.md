@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Estimating and monitoring interface or task state, including whether an action took effect.
+
 48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)

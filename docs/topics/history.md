@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Archived, legacy, or discontinued resources kept for historical context.
+
 4 source-reviewed resources tagged `history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)

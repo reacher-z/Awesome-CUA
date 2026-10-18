@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Companies, commercial deployments, and enterprise or industrial application domains.
+
 27 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Publishers (16)](#publishers) · [Papers (11)](#papers)

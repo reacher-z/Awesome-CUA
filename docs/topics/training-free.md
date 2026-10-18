@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Improving agents through prompting or inference-time methods without training.
+
 30 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)

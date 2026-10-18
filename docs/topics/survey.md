@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Literature surveys and overviews of the field.
+
 19 source-reviewed resources tagged `survey`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Surveys (18)](#surveys) · [Papers (1)](#papers)

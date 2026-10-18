@@ -2,6 +2,8 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
+Using earlier screens, actions, or trajectories as context for the next decision.
+
 47 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
 **Contents:** [Models (1)](#models) · [Papers (46)](#papers)

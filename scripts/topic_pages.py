@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 from urllib.parse import urlencode
 
+from catalog import TOPICS as VOCABULARY
 from export_citations import encode_citations
 from paper_library import PAGE_SIZE, PLATFORMS, TOPICS
 from publication_metadata import record_date_text
@@ -35,6 +36,10 @@ def esc(value):
 
 def topic_name(topic, language='en'):
     return TOPICS.get(topic, (topic.replace('-', ' ').capitalize(),) * 2)[language == 'zh']
+
+
+def topic_definition(topic):
+    return VOCABULARY.get(topic, {}).get('definition', '')
 
 
 def topic_path(topic=None, language='en', number=1):
@@ -190,7 +195,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
     export = '/downloads/topics/' + topic + '/'
     body = ['<section class="topic-directory topic-detail"><div class="topic-back"><a href="', topic_path(language=language), '">← ',
             tr('All topics', '全部主题'), '</a><a href="', topic_path(topic, 'en' if zh else 'zh', number), '">', 'English' if zh else '中文', '</a></div>',
-            '<h1>', esc(name), '</h1><p class="topic-intro">', tr('Source-reviewed research and assets tagged with ', '已审阅并标注「') + esc(name) + tr('.', '」的研究与资产。'), '</p>',
+            '<h1>', esc(name), '</h1><p class="topic-intro">', *(['<span lang="en">', esc(topic_definition(topic)), '</span> '] if topic_definition(topic) else []), tr('Source-reviewed research and assets tagged with ', '已审阅并标注「') + esc(name) + tr('.', '」的研究与资产。'), '</p>',
             '<div class="topic-overview"><span><strong>', f'{counts["total"]:,}', '</strong> ', tr('reviewed resources', '条已审阅资源'), '</span><a href="', query, '">',
             tr('Search this topic', '检索此主题'), ' ↗</a><a href="', export, 'records.jsonl" download>JSONL ↓</a>']
     if counts['papers']:
@@ -251,7 +256,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
 
 
 def topic_markdown(topic, rows, resource_path, *, language='en', site_url='https://awesomecua.github.io'):
-    lines = ['# ' + topic_name(topic, language), '',
+    lines = ['# ' + topic_name(topic, language), '', *([topic_definition(topic), ''] if topic_definition(topic) else []),
              'Reviewed topic membership; resources can appear in multiple topics. Shared membership is not a dependency claim.', '',
              f'Full source records: {site_url}/downloads/topics/{topic}/records.jsonl', '']
     for _, labels, selected in ordered_groups(rows):

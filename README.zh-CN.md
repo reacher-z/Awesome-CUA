@@ -91,6 +91,8 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
 **按平台：** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+
+**按主题：** [评测](docs/topics/evaluation.md) **682** · [GUI 定位](docs/topics/grounding.md) **372** · [数据生成](docs/topics/data-generation.md) **338** · [网页导航](docs/topics/web-navigation.md) **292** · [规划](docs/topics/planning.md) **272** · [手机操作](docs/topics/mobile-navigation.md) **261** · [强化学习](docs/topics/reinforcement-learning.md) **231** · [界面理解](docs/topics/screen-understanding.md) **207** · [安全与防护](docs/topics/safety-security.md) **203** · [鲁棒性](docs/topics/robustness.md) **183** · [记忆](docs/topics/memory.md) **162** · [效率](docs/topics/efficiency.md) **150** · [全部 35 项 →](docs/topics.md)
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。

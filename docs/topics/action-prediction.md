@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (18)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
@@ -29,6 +29,7 @@
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
 | [PC-Agent-E checkpoint](https://huggingface.co/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | weights MIT | Computer-use checkpoint fine-tuned on PC-Agent-E trajectories; the model-card prose identifies Qwen2.5-VL-72B-Instruct as its starting model. | [✓ 2026‑10‑18](https://huggingface.co/henryhe0123/PC-Agent-E/raw/568ab45861d5dab041e158d47211c6f53ba343f2/README.md) |
+| [Qwen-GUI checkpoint](https://huggingface.co/RhapsodyAI/qwen_vl_guidance) | web, android | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | weights Apache-2.0 | Qwen-VL checkpoint released with GUICourse and tuned on its GUIAct and GUIChat data; the card's demo draws the box and point coordinates it returns, on a 0–1000 grid, onto the input screenshot. | [✓ 2026‑10‑18](https://huggingface.co/api/models/RhapsodyAI/qwen_vl_guidance) |
 | [ScaleCUA 7B](https://huggingface.co/OpenGVLab/ScaleCUA-7B) | web, desktop, android, linux | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | weights apache-2.0 | A Qwen2.5-VL-based computer-use checkpoint with direct grounding and agent action modes across desktop, mobile and web interfaces. | [✓ 2026‑10‑17](https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md) |
 | [ShowUI-π checkpoint](https://huggingface.co/showlab/ShowUI-pi) | unspecified | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | A compact visual-action checkpoint that predicts continuous GUI drag trajectories from a screenshot and a natural-language instruction. | [✓ 2026‑10‑17](https://huggingface.co/showlab/ShowUI-pi/raw/main/README.md) |
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |

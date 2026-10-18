@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -103,6 +103,7 @@
 | [Phi-Ground checkpoint](https://huggingface.co/microsoft/Phi-Ground) | cross-platform | — | weights mit | Microsoft Phi-Ground GUI grounding checkpoint fine-tuned from Phi-3.5-vision-instruct, shipped as two PyTorch weight shards with custom Phi-3-V configuration and processing code under MIT. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/Phi-Ground) |
 | [POINTS-GUI](https://github.com/Tencent/POINTS-GUI) | cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | — | POINTS-GUI-G-8B GUI grounding model, trained from a POINTS-1.5 base without native grounding through a data pipeline that unifies coordinates, filters noise and adds hard cases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Tencent/POINTS-GUI/HEAD/README.md) |
 | [POINTS-GUI-G 8B](https://huggingface.co/tencent/POINTS-GUI-G) | web, desktop, cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | weights other | A specialized interface-grounding checkpoint that returns normalized point coordinates for a requested element in a screenshot. | [✓ 2026‑10‑17](https://huggingface.co/tencent/POINTS-GUI-G/raw/main/README.md) |
+| [Qwen-GUI checkpoint](https://huggingface.co/RhapsodyAI/qwen_vl_guidance) | web, android | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | weights Apache-2.0 | Qwen-VL checkpoint released with GUICourse and tuned on its GUIAct and GUIChat data; the card's demo draws the box and point coordinates it returns, on a 0–1000 grid, onto the input screenshot. | [✓ 2026‑10‑18](https://huggingface.co/api/models/RhapsodyAI/qwen_vl_guidance) |
 | [ScaleCUA 7B](https://huggingface.co/OpenGVLab/ScaleCUA-7B) | web, desktop, android, linux | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | weights apache-2.0 | A Qwen2.5-VL-based computer-use checkpoint with direct grounding and agent action modes across desktop, mobile and web interfaces. | [✓ 2026‑10‑17](https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md) |
 | [SeeClick](https://github.com/njucckevin/SeeClick) | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | code Apache-2.0 | GUI grounding model trained to locate visual interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/njucckevin/SeeClick/HEAD/readme.md) |
 | [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) | web, desktop, android, ios | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | — | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. | [✓ 2026‑10‑17](https://huggingface.co/api/models/cckevinn/SeeClick) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-23 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+24 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (3)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
 
 ## Datasets
 
@@ -18,6 +18,7 @@ All entries in this section: desktop.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [ClawMobile](https://github.com/ClawMobile/ClawMobile) | android | — | code MIT | On-phone Android agent runtime built on OpenClaw: a mobile-ui plugin reads UI XML and screenshots over ADB, taps, swipes and types, records touch demonstrations, and turns them into reusable app skills. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ClawMobile/ClawMobile/HEAD/README.md) |
 | [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
 

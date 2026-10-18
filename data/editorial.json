@@ -63143,5 +63143,115 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ClawMobile",
+    "kind": "agent",
+    "url": "https://github.com/ClawMobile/ClawMobile",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "recording",
+      "memory"
+    ],
+    "scope": "core",
+    "summary": "On-phone Android agent runtime built on OpenClaw: a mobile-ui plugin reads UI XML and screenshots over ADB, taps, swipes and types, records touch demonstrations, and turns them into reusable app skills.",
+    "verify_terms": [
+      "ClawMobile"
+    ],
+    "notes": "The repository holds the Termux installer for the OpenClaw shell runtime, workspace seeds, a runtime protocol document and the openclaw-plugin-mobile-ui TypeScript plugin. Its ADB backend dumps the UI hierarchy with uiautomator, captures screencap PNGs, reads the foreground app and sends taps, swipes, text, key events and app launches; an OCR backend reads screenshot regions. The recorder samples getevent touch input with screenshots and UI state, and trace-induction code generalizes recordings into versioned skills with fast paths, repair and feedback; the status document says generated skills work best on the same device, app version and starting state. ADB control needs developer options and an authorized device. The Android and iOS companion apps ship as binaries; the inspected tree has no Kotlin, Java or Gradle files, so the app-local runtime is not open here, and the iOS app has no cross-app control. The README cites a EuroMLSys '26 workshop paper (doi 10.1145/3805621.3807655). An older DroidRun/MobileRun backend is archived. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ClawMobile/ClawMobile/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public installer and OpenClaw plugin source; the Android and iOS apps are binary releases, and ADB control needs an authorized device.",
+      "repository_revision": "e15557122d95afbe3f91e2cd3300068760826f95",
+      "repository_tree_sha": "9405c691fbe22508e2d44e613697b32ec68ca9a3"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/ClawMobile/ClawMobile/git/commits/e15557122d95afbe3f91e2cd3300068760826f95",
+        "sha256": "d49691aa4612e0a501f09f27d150db77b268b68ca10501b1ccf493b963942525",
+        "retrieved_at": "2026-10-18T15:48:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/ClawMobile/ClawMobile/git/trees/9405c691fbe22508e2d44e613697b32ec68ca9a3?recursive=1",
+        "sha256": "85b5a13fbbe48d0570dccbe3f99d8b82a63689a352390bba45351ba75eb3303e",
+        "retrieved_at": "2026-10-18T15:49:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ClawMobile/ClawMobile/e15557122d95afbe3f91e2cd3300068760826f95/openclaw-plugin-mobile-ui/src/backends/adb.ts",
+        "sha256": "dca166e38120c4810b0f58f3789409ce2a62f256fc4f3d90e0124b191967925b",
+        "retrieved_at": "2026-10-18T15:48:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/ClawMobile/ClawMobile/e15557122d95afbe3f91e2cd3300068760826f95/openclaw-plugin-mobile-ui/src/recording/recorder.ts",
+        "sha256": "0a5619b93dc596227fd02551f9a308f1e664397d643267a5c48852a3f4f6f207",
+        "retrieved_at": "2026-10-18T15:48:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/ClawMobile/ClawMobile/e15557122d95afbe3f91e2cd3300068760826f95/openclaw-plugin-mobile-ui/src/trace_induction/generalize.ts",
+        "sha256": "a83e97464f9159ab9ed722738694cd0c8842215421704b795a40d0e909955200",
+        "retrieved_at": "2026-10-18T15:48:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/ClawMobile/ClawMobile/e15557122d95afbe3f91e2cd3300068760826f95/docs/status-and-limitations.md",
+        "sha256": "5984a0c2d60af7e96918c3c0c12dc314de6cd1a8d5466dcbb137bd81ae9ad756",
+        "retrieved_at": "2026-10-18T15:48:04Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a5925aadabf53719e05958d52add3cd39a3d40decda10ab6d31cefb44a1200d3",
+    "reviewed_at": "2026-10-18T15:48:30Z"
   }
 ]

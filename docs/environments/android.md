@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (17)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -109,6 +109,7 @@
 | [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/cooelf/Auto-GUI/HEAD/README.md) |
 | [AutoDroid](https://github.com/MobileLLM/AutoDroid) | android | [2308.15272](https://arxiv.org/abs/2308.15272) (2023) | — | LLM-powered Android task automation built on DroidBot, released with DroidTask, a dataset of per-app screenshots, view hierarchies, exploration records and ground-truth task files. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MobileLLM/AutoDroid/HEAD/README.md) |
 | [AutoDroid V2](https://github.com/MobileLLM/AutoDroid-V2) | android | [2412.18116](https://arxiv.org/abs/2412.18116) (2024) | — | An Android automation implementation that builds app documentation from exploration traces and evaluates language-model-generated execution code in emulator workflows. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MobileLLM/AutoDroid-V2/HEAD/README_minimal.md) |
+| [ClawMobile](https://github.com/ClawMobile/ClawMobile) | android | — | code MIT | On-phone Android agent runtime built on OpenClaw: a mobile-ui plugin reads UI XML and screenshots over ADB, taps, swipes and types, records touch demonstrations, and turns them into reusable app skills. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ClawMobile/ClawMobile/HEAD/README.md) |
 | [CoCo-Agent](https://github.com/xbmxb/CoCo-Agent) | android | [2402.11941](https://arxiv.org/abs/2402.11941) (2024) | — | Research implementation combining screen and layout perception with conditional action prediction for smartphone automation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xbmxb/CoCo-Agent/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile Use](https://github.com/MadeAgents/mobile-use) | android | [2507.16853](https://arxiv.org/abs/2507.16853) (2025) | code MIT | Android GUI agent that operates real phones through ADB with hierarchical reflection and a multi-agent framework, run from a web interface or Python and evaluated on AndroidWorld and AndroidLab. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MadeAgents/mobile-use/HEAD/README.md) |

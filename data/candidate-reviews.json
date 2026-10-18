@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:showlab/awesome-mllm-hallucination",
+    "url": "https://github.com/showlab/Awesome-MLLM-Hallucination",
+    "decision": "out_of_scope",
+    "reason": "Awesome MLLM Hallucination is a paper list on hallucination in multimodal large language models, organised into surveys, evaluation and analysis, and mitigation. It is not about agents that operate interfaces, and the showlab-gui list links it only as the source of its README template.",
+    "reviewed_at": "2026-10-18T12:20:49Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/showlab/Awesome-MLLM-Hallucination/HEAD/README.md",
+      "sha256": "1013f99314cdc92d4b587efd97072a523ee0c84a2f0fd8e3098a029758d12e8f",
+      "retrieved_at": "2026-10-18T12:09:54Z"
+    }
   }
 ]

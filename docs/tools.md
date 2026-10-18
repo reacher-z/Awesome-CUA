@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
+**21 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -67,6 +67,7 @@ All entries in this section: unspecified.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [AUITestAgent](https://github.com/bz-lab/AUITestAgent) | [2407.09018](https://arxiv.org/abs/2407.09018) (2024) | — | Generates mobile GUI interactions from natural-language test requirements and checks application behavior against those requirements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bz-lab/AUITestAgent/HEAD/README.md) |
+| [MVP (Multi-View Prediction)](https://github.com/ZJUSCL/MVP) | [2512.08529](https://arxiv.org/abs/2512.08529) (2025) | — | Training-free inference code that crops several screenshot views where a grounding model's attention concentrates, predicts a click point in each, and keeps the center of the densest group of predictions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZJUSCL/MVP/HEAD/README.md) |
 | [Set of Mark](https://github.com/microsoft/SoM) | [2310.11441](https://arxiv.org/abs/2310.11441) (2023) | code MIT | Visual-prompting toolbox that labels image regions for multimodal reference and grounding, including GUI applications. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/SoM/HEAD/README.md) |
 
 [↑ Back to top](#tool-catalog)

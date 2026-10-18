@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
 
 ## Benchmarks
 
@@ -35,6 +35,14 @@ All entries in this section: cross-platform.
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: unspecified.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [MVP (Multi-View Prediction)](https://github.com/ZJUSCL/MVP) | [2512.08529](https://arxiv.org/abs/2512.08529) (2025) | — | Training-free inference code that crops several screenshot views where a grounding model's attention concentrates, predicts a click point in each, and keeps the center of the densest group of predictions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZJUSCL/MVP/HEAD/README.md) |
 
 ## Surveys
 

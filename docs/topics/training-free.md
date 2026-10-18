@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-30 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)
+**Contents:** [Agents (1)](#agents) · [Tools (2)](#tools) · [Papers (28)](#papers)
 
 ## Agents
 
@@ -16,11 +16,10 @@ All entries in this section: web.
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [MVP (Multi-View Prediction)](https://github.com/ZJUSCL/MVP) | unspecified | [2512.08529](https://arxiv.org/abs/2512.08529) (2025) | — | Training-free inference code that crops several screenshot views where a grounding model's attention concentrates, predicts a click point in each, and keeps the center of the densest group of predictions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZJUSCL/MVP/HEAD/README.md) |
+| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | web | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
 
 ## Papers
 

@@ -63143,5 +63143,91 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Phi Browser",
+    "kind": "infrastructure",
+    "url": "https://github.com/phibrowser/phibrowser-mac",
+    "environments": [
+      "web",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "safety-security"
+    ],
+    "summary": "Native macOS client of a Chromium browser whose agent Spaces let the built-in assistant or external agents drive windows over a consent-gated DevTools Protocol socket while the user watches and can take control.",
+    "scope": "core",
+    "verify_terms": [
+      "Phi Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/phibrowser/phibrowser-mac/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "This is the open macOS client (Swift, AppKit and SwiftUI). Building it requires the prebuilt Phi Framework, the publisher's own Chromium build, whose source is not published and which the Apache-2.0 license does not cover; the built-in assistant's models, prompts and pipelines are server-side and not in this repository, and a self-built copy does not reach Phi Cloud. Sources/ChromiumBridge/AgentCDP/AgentCDPListener.swift owns a Unix-domain socket through which agent tools reach the browser's DevTools endpoint after per-agent user consent. tools/phi-browser-skill (SKILL.md, scripts/lib/cdp.mjs) is an Agent Skill that drives agent Spaces: hidden windows on a chosen profile that the user can watch, take over and hand back, or off-screen shadow windows. Privacy and local-model statements are publisher claims. Code was read, not run.",
+    "details": {
+      "availability": "Client source; Chromium engine only as a proprietary prebuilt framework; signed builds from the publisher site",
+      "repository_revision": "7ace23508bb9e2dceea393cd223628b14514681f"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/phibrowser/phibrowser-mac/7ace23508bb9e2dceea393cd223628b14514681f/Sources/ChromiumBridge/AgentCDP/AgentCDPListener.swift",
+        "sha256": "4baeb23b56aa42d138b56775be3ee54d6ae9488e00901111035dfe6b620812d1",
+        "retrieved_at": "2026-10-18T15:44:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/phibrowser/phibrowser-mac/7ace23508bb9e2dceea393cd223628b14514681f/tools/phi-browser-skill/SKILL.md",
+        "sha256": "b25192207cca26069c8dda437c49ec31bad26ddfd3c8e44c76eccb71410f707d",
+        "retrieved_at": "2026-10-18T15:44:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/phibrowser/phibrowser-mac/7ace23508bb9e2dceea393cd223628b14514681f/tools/phi-browser-skill/scripts/lib/cdp.mjs",
+        "sha256": "1ea23ce373bdcca229f6aaf7c652ee8945aad2d07f77c3aa2fcb45d439b8090d",
+        "retrieved_at": "2026-10-18T15:44:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/phibrowser/phibrowser-mac/7ace23508bb9e2dceea393cd223628b14514681f/LICENSE",
+        "sha256": "7c1eb6bf2936ea78c389fd1fa17e116364853a1577df105bc4db6fd929b849c3",
+        "retrieved_at": "2026-10-18T15:44:23Z"
+      }
+    ],
+    "reviewed_sha256": "e3220badbc2d7391a6eb799f8014f44d76156f2fb7f0bba581f74f0c8ff99128",
+    "reviewed_at": "2026-10-18T15:44:44Z"
   }
 ]

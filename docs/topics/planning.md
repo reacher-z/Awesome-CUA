@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (18)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -61,6 +61,7 @@
 | [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
+| [OpenBrowser (OpenBrowserAI)](https://github.com/OpenBrowserAI/openbrowser) | web | — | code MIT | Chromium patch set with a built-in assistant extension whose browser agent sees indexed page elements and a screenshot with numbered boxes, then clicks, types, scrolls and switches tabs by index. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/HEAD/README.md) |
 | [OS-Copilot](https://github.com/OS-Copilot/OS-Copilot) | desktop | [2402.07456](https://arxiv.org/abs/2402.07456) (2024) | code MIT | Open-source library for generalist agents acting on an operating system's web, terminals, files and third-party apps, with the FRIDAY assistant, which takes custom tools and self-learns Excel tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Copilot/HEAD/README.md) |
 | [PC-Agent](https://github.com/GAIR-NLP/PC-Agent) | desktop | [2412.17589](https://arxiv.org/abs/2412.17589) (2024) | code MIT | Human-cognition-transfer framework for PC agents: PC Tracker logs human computer use, cognition completion turns logs into cognitive trajectories, and a planner works with a grounding agent. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent/HEAD/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |

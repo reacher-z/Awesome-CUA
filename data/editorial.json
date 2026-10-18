@@ -63143,5 +63143,101 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenBrowser (OpenBrowserAI)",
+    "kind": "agent",
+    "url": "https://github.com/OpenBrowserAI/openbrowser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Chromium patch set with a built-in assistant extension whose browser agent sees indexed page elements and a screenshot with numbered boxes, then clicks, types, scrolls and switches tabs by index.",
+    "verify_terms": [
+      "OpenBrowser"
+    ],
+    "notes": "Three parts: chromium/ holds a patch list, branding assets and scripts that rebrand a separately checked-out Chromium source tree and load the assistant as a built-in component extension in a side panel (no prebuilt browser is released); chromium-extension/ is that assistant (sidebar chat, options, background agent); packages/core is the TypeScript agent library with planning, replanning, a chat agent, MCP clients, memory compression and web search. Its browser agent injects a DOM-tree script that indexes clickable elements as pseudo-HTML and, in the default normal mode with draw marking, sends a viewport capture with the indexed boxes drawn on it; tools navigate, click, type, scroll, hover, select options, extract page content and switch tabs, and the extension executes them through chrome.tabs, chrome.scripting and chrome.debugger. Models are configured with the user's own API keys. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public source for the Chromium patches, the assistant extension and the agent library; building the browser requires a Chromium checkout and depot_tools, and no releases are published.",
+      "repository_revision": "b04fcf631fe67ddf7ab6d54f6388635d16f468f9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/b04fcf631fe67ddf7ab6d54f6388635d16f468f9/packages/core/src/agent/browser/browser-labels.ts",
+        "sha256": "e617f612ba914a7033110b812298c889a2f0e9441503cbb2881622526cedaf73",
+        "retrieved_at": "2026-10-18T16:11:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/b04fcf631fe67ddf7ab6d54f6388635d16f468f9/packages/core/src/config/index.ts",
+        "sha256": "93268dc2f00d1223ab181ccd9f4d3f479c4690a0d083aa6298b19967140222b9",
+        "retrieved_at": "2026-10-18T16:11:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/b04fcf631fe67ddf7ab6d54f6388635d16f468f9/packages/extension/src/browser.ts",
+        "sha256": "a632380626b5a5bbbe46137a8772a994310180523b178fda54ef9ca4c2376bb0",
+        "retrieved_at": "2026-10-18T16:11:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/b04fcf631fe67ddf7ab6d54f6388635d16f468f9/chromium/config/patches.list",
+        "sha256": "cf876dcee3a2974b2c488439985652acca81eff9b4f84491dc9ad06e6ba79286",
+        "retrieved_at": "2026-10-18T16:11:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/OpenBrowserAI/openbrowser/b04fcf631fe67ddf7ab6d54f6388635d16f468f9/chromium/contributing.md",
+        "sha256": "9f5b2df5342eda87546dcf3f17e2b8598683fce34dee038a7a8c3bb8ca5f944e",
+        "retrieved_at": "2026-10-18T16:11:20Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1ff317f1fcd1e1855cb24d82a8454879655205961df92bbeb90e82d54b2f2743",
+    "reviewed_at": "2026-10-18T16:11:50Z"
   }
 ]

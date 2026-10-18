@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5242932ba5e525aa5806",
+    "url": "https://huggingface.co/collections/OpenGVLab/scalecua-68c912cf56f7ff4c8e034003",
+    "decision": "alias",
+    "target_id": "github:opengvlab/scalecua",
+    "reason": "Hugging Face release collection for the indexed OpenGVLab ScaleCUA project, grouping its paper, model checkpoints and datasets."
   }
 ]

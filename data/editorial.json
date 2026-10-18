@@ -63143,5 +63143,151 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:78adf6919bdbce42bc24",
+    "name": "VideoCUA",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/ServiceNow/VideoCUA",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "video",
+      "recording",
+      "imitation-learning",
+      "action-prediction",
+      "data-generation"
+    ],
+    "summary": "Expert desktop computer-use demonstrations from CUA-Suite: 30 fps screen recordings with millisecond-timestamped mouse and keyboard action logs for about 10K tasks in 87 applications.",
+    "scope": "core",
+    "verify_terms": [
+      "VideoCUA"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/ServiceNow/VideoCUA/raw/6ecc530df848f916bf0d195c66823ef8363abb93/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2603.24440"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.repository_url",
+      "details.dataset_profile"
+    ],
+    "notes": "At revision 6ecc530d raw_data/ holds one ZIP archive per application, 87 in total and about 26.1 GB. The card describes each archive as task folders with an action_log.json (instruction, platform and timestamped actions) and a 1920x1080 MP4 recording with its metadata; each action carries a groundcua_id that the card says identifies the matching annotated GroundCUA screenshot. Frame extraction into trajectories and LLM-written chain-of-thought steps come from a pipeline in the GroundCUA GitHub repository, so this release holds raw recordings and logs, not reasoning annotations. The card names no operating system. Its license section links a LICENSE file that the repository does not contain; MIT is the card's metadata declaration and does not establish rights to the recorded applications' content. Task, hour and frame figures are publisher-reported; the archives were not downloaded.",
+    "details": {
+      "hub_id": "ServiceNow/VideoCUA",
+      "hub_revision": "6ecc530df848f916bf0d195c66823ef8363abb93",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/ServiceNow/VideoCUA/tree/6ecc530df848f916bf0d195c66823ef8363abb93",
+      "repository_url": "https://github.com/ServiceNow/GroundCUA/tree/main/VideoCUA",
+      "dataset_profile": {
+        "supervision": [
+          "human expert task demonstrations",
+          "timestamped mouse and keyboard actions",
+          "task instructions"
+        ],
+        "modalities": [
+          "screen recordings",
+          "action logs",
+          "instructions"
+        ],
+        "formats": [
+          "ZIP archives of MP4 video and JSON"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 10000,
+            "unit": "tasks",
+            "qualifier": "approximately",
+            "population": "VideoCUA corpus as stated on the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/ServiceNow/VideoCUA/raw/6ecc530df848f916bf0d195c66823ef8363abb93/README.md"
+          },
+          {
+            "value": 55,
+            "unit": "hours of 30 fps screen recording",
+            "qualifier": "approximately",
+            "population": "VideoCUA corpus as stated on the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/ServiceNow/VideoCUA/raw/6ecc530df848f916bf0d195c66823ef8363abb93/README.md"
+          },
+          {
+            "value": 6000000,
+            "unit": "video frames",
+            "qualifier": "approximately",
+            "population": "VideoCUA corpus as stated on the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/ServiceNow/VideoCUA/raw/6ecc530df848f916bf0d195c66823ef8363abb93/README.md"
+          },
+          {
+            "value": 87,
+            "unit": "per-application ZIP archives",
+            "qualifier": "exact",
+            "population": "raw_data/ at revision 6ecc530d",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/ServiceNow/VideoCUA/tree/6ecc530df848f916bf0d195c66823ef8363abb93/raw_data"
+          }
+        ],
+        "notes": "Tasks, hours, frames and archives are different units and are not summed. The archive count is computed from the Hub tree listing; the card also reports 87 applications. No train/test split is declared.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/ServiceNow/VideoCUA/raw/6ecc530df848f916bf0d195c66823ef8363abb93/README.md",
+          "https://huggingface.co/api/datasets/ServiceNow/VideoCUA/tree/6ecc530df848f916bf0d195c66823ef8363abb93/raw_data"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ],
+        "url": "https://huggingface.co/api/datasets/ServiceNow/VideoCUA?expand%5B%5D=sha&expand%5B%5D=gated&expand%5B%5D=disabled&expand%5B%5D=cardData&expand%5B%5D=lastModified",
+        "sha256": "75b4545d65bfb6a101a4624859802a4384e74eba85aacbf6d3f4e395d22ae3d3",
+        "retrieved_at": "2026-10-18T15:36:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/ServiceNow/VideoCUA/tree/6ecc530df848f916bf0d195c66823ef8363abb93/raw_data",
+        "sha256": "fdc432015122390eb89b397ab7031b429ace6d56599ae37ef27a809abb05f254",
+        "retrieved_at": "2026-10-18T15:36:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/ServiceNow/VideoCUA/tree/6ecc530df848f916bf0d195c66823ef8363abb93",
+        "sha256": "32ffe76e0b63cd91c5b8f44af39630fc390e725061974acc55514d9b1232e87f",
+        "retrieved_at": "2026-10-18T15:36:03Z"
+      }
+    ],
+    "reviewed_sha256": "41b871f55b233cc8424ff55fa4294a66fd2f88fe1dbce9dea924fd651ae1b778",
+    "reviewed_at": "2026-10-18T15:36:28Z"
   }
 ]

@@ -980,6 +980,31 @@ def build(args):
     print(f"Built {len(rows)} records ({report['curated_records']} curated), {len(edges)} reference edges, {len(merged)} review items, and SQLite/JSON exports.")
 
 
+# ID-keyed inputs that catalog.py and scan.py write with write_jsonl. A hand-appended
+# row out of that order makes the next `verify` or `enrich` reshuffle the whole file.
+CANONICAL_JSONL = {
+    "primary-evidence.jsonl": "catalog.py verify --id <id>",
+    "enrichment.jsonl": "catalog.py enrich --id <id>",
+    "candidates.jsonl": "catalog.py discover",
+    "papers.jsonl": "catalog.py harvest",
+    "metadata-updates.jsonl": "catalog.py harvest",
+}
+
+
+def noncanonical_jsonl_errors(data=None):
+    errors = []
+    for name, command in CANONICAL_JSONL.items():
+        path = (data or DATA) / name
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        rows = read_jsonl(path)
+        expected = "".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in sorted(rows, key=lambda r: r["id"]))
+        if text != expected:
+            errors.append(f"data/{name} is not in canonical order (rows sorted by id, keys sorted); rewrite it with write_jsonl, as {command} does")
+    return errors
+
+
 def validate(args):
     rows = read_jsonl(DATA / "catalog.jsonl")
     if not rows:
@@ -991,7 +1016,7 @@ def validate(args):
     # Without the format extras, jsonschema silently skips date-time and uri constraints.
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
-    errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", []))
+    errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", [])) + noncanonical_jsonl_errors()
     for entry in read_json(DATA / "editorial.json", []):
         if unknown := [str(topic) for topic in entry.get("topics", []) if not isinstance(topic, str) or topic not in TOPICS]:
             errors.append(f"Editorial {entry.get('id') or entry.get('url')}: unknown topics {', '.join(unknown)}")

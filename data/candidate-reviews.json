@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:roocode/roocode",
+    "url": "https://github.com/RooCode/RooCode",
+    "decision": "not_a_resource",
+    "reason": "Dead link: page and API return 404 with no rename redirect; the RooCode account is an unrelated user with no public repositories, and the only Wayback capture (CDX, 2025-11-17) is a 404. Roo Code is published at RooCodeInc/Roo-Code, not at this address."
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:microsoft/lmops",
+    "url": "https://github.com/microsoft/LMOps",
+    "decision": "out_of_scope",
+    "reason": "LMOps is Microsoft's monorepo of general LLM research code on prompting, in-context learning, distillation and alignment, with no GUI, web or device agent component. Its only discovery link is a mislabeled VisualWebBench entry that points to the MiniLLM distillation folder; VisualWebBench itself is already indexed as github:visualwebbench/visualwebbench.",
+    "reviewed_at": "2026-10-18T11:49:57Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/microsoft/LMOps/HEAD/README.md",
+      "sha256": "b54d313cb4c57b5e0ba799735bbaa1219e361f464e8e2e9f2914449a8687b44e",
+      "retrieved_at": "2026-10-18T11:38:34Z"
+    }
   }
 ]

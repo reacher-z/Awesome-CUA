@@ -63143,5 +63143,272 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MobileBench-OL",
+    "kind": "benchmark",
+    "url": "https://github.com/xiaomi-research/mobilebench-ol",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "robustness",
+      "long-horizon"
+    ],
+    "scope": "core",
+    "summary": "Online benchmark for mobile GUI agents on real Android phones with Chinese apps: uiautomator2 runners for six agents, base, long-tail, long-horizon and GUI-reasoning task CSVs, and XPath checks on recorded UI dumps.",
+    "verify_terms": [
+      "MobileBench-OL"
+    ],
+    "documented_by": [
+      "2601.20335"
+    ],
+    "notes": "Official code and task release for arXiv 2601.20335. run.py collects trajectories on a physical device over ADB and uiautomator2 for UI-TARS-1.5, GPT-4o, M3A, T3A, Qwen2.5-VL and Mobile-Agent-v2, then scores them offline against each task's key_nodes XPath rules; agent_m3a_t3a.py builds a set-of-marks screenshot from the XML element list for M3A and passes the element list as text for T3A. The noise-robust subset expects per-noise CSV files (repeat, unexecuted, delay, popup) that are not in the repository, and the apps themselves are installed separately. The paper abstract reports 1080 tasks from 80 Chinese apps across five subsets; the shipped CSVs hold 310 base tasks over 12 apps, 340 long-tail tasks over 68 apps, 60 long-horizon tasks and 60 GUI-reasoning tasks whose identifiers are all base tasks, counted with a script. The README declares CC BY-NC-SA 4.0 for the dataset and Apache 2.0 for source code; the bundled Mobile-Agent-v2 copy keeps its own MIT LICENSE. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public framework code and task CSVs; apps, a physical Android device and model endpoints are supplied by the user, and the per-noise task files for the noise-robust subset are not in the repository.",
+      "repository_revision": "edee34000767847085612c6ff8b806539233ca0d",
+      "repository_tree_sha": "0d4f1de7fa2a9c481d7c782c9f7636b846ffed34",
+      "benchmark_protocol": {
+        "focus": [
+          "mobile GUI task execution in Chinese apps",
+          "long-tail apps, long-horizon tasks, GUI reasoning and noise robustness"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshot",
+          "uiautomator2 XML hierarchy (agent-dependent)",
+          "set-of-marks screenshot (M3A)",
+          "text element list (T3A)"
+        ],
+        "actions": [
+          "click",
+          "double tap",
+          "long press",
+          "type",
+          "enter",
+          "swipe/scroll/drag",
+          "home",
+          "back",
+          "open app",
+          "wait"
+        ],
+        "evaluation": "Trajectories are recorded with per-step XML hierarchy dumps and actions; evaluator_xpath.py walks the steps and checks each task's key_nodes XPath rules (optionally with the action point), and run.py prints the overall pass rate. Reset CSVs add reset steps for repeated runs.",
+        "counts": [
+          {
+            "value": 310,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "base subset (data/MobileBench-OL - top12.csv rows)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20top12.csv"
+          },
+          {
+            "value": 12,
+            "unit": "apps",
+            "qualifier": "exact",
+            "population": "distinct app packages in the base subset",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20top12.csv"
+          },
+          {
+            "value": 340,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "long-tail subset (data/longtail.csv rows)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/longtail.csv"
+          },
+          {
+            "value": 68,
+            "unit": "apps",
+            "qualifier": "exact",
+            "population": "distinct app packages in the long-tail subset",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/longtail.csv"
+          },
+          {
+            "value": 60,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "long-horizon subset (data/MobileBench-OL - Long-Horizon.csv rows)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20Long-Horizon.csv"
+          },
+          {
+            "value": 60,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "GUI-reasoning subset (data/MobileBench-OL - Explo_already.csv rows; identifiers shared with the base subset)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20Explo_already.csv"
+          }
+        ],
+        "notes": "Counts are rows in the shipped CSVs. The paper's 1080-task total is not obtained by summing them: run.py builds the noise-robust subset from the base task file plus per-noise CSVs that are not shipped, and the GUI-reasoning rows reuse base identifiers. Runs depend on the device, installed app versions and live content; preserve the subset, agent configuration, max_steps and reset setting when comparing results.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/README.md",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/run.py",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/mobilebench/eval/evaluator_xpath.py",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/mobilebench/utils/agent_m3a_t3a.py",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/mobilebench/utils/adb_executor.py",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20top12.csv",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/longtail.csv",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20Long-Horizon.csv",
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20Explo_already.csv"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xiaomi-research/mobilebench-ol/git/commits/edee34000767847085612c6ff8b806539233ca0d",
+        "sha256": "655766cdb26d0c7828f09a529092385c9f6ef55039bb87f88a88fa8a71b7536b",
+        "retrieved_at": "2026-10-18T15:33:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xiaomi-research/mobilebench-ol/git/trees/0d4f1de7fa2a9c481d7c782c9f7636b846ffed34?recursive=1",
+        "sha256": "a2a740e73b23c5b29075e50f256304815dc8d3dbc4804a3d95f87808b1927225",
+        "retrieved_at": "2026-10-18T15:33:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "licenses.data",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/README.md",
+        "sha256": "bace67b98a6e04a94324246a76f3268e751868a4608ecdd2a5c75ad67115fff3",
+        "retrieved_at": "2026-10-18T15:33:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/run.py",
+        "sha256": "d77c656f03fe6c31d000b9156b394f1da1876b861a94bc39b56b0d2ce7451cd9",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20top12.csv",
+        "sha256": "9371164d819b7b091e1c7238713b7751dbd6db598ebd19564746107688788303",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/longtail.csv",
+        "sha256": "76f8bad4d59f01f978fd493b566f1f8c2fa621470f017d41932bb61bd8a51f14",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20Long-Horizon.csv",
+        "sha256": "67af84c86f12febc54ecc771a9d94e68cb8688e19b1f3b87bb2f96d55d5dcc6b",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/data/MobileBench-OL%20-%20Explo_already.csv",
+        "sha256": "d9bd978b91c56d647d477b58c063b6f9306a0d39c18418b00c159f1a41c5e535",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/mobilebench/eval/evaluator_xpath.py",
+        "sha256": "9038d72f35c91cc8deb2c40cc70a4d9e21afe32631f1760409c18dbc1ab16f40",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/mobilebench/utils/agent_m3a_t3a.py",
+        "sha256": "27a99936d881180d97ecd0806cd4eba3d0cdea855911282130ad1d84bfee4dc8",
+        "retrieved_at": "2026-10-18T15:33:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/mobilebench/utils/adb_executor.py",
+        "sha256": "52ba303e6156845ad245af4445f1ee272d0edc5532e86053c685d1c34c7d0f11",
+        "retrieved_at": "2026-10-18T15:34:34Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-NC-SA-4.0",
+          "url": "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/README.md",
+          "retrieved_at": "2026-10-18T15:33:31Z",
+          "basis": "The README's License section names CC BY-NC-SA 4.0 for the dataset, separately from Apache 2.0 for source code; third-party app content captured in runs is not covered by this declaration."
+        },
+        "reason": "The README's License section names CC BY-NC-SA 4.0 for the dataset, separately from Apache 2.0 for source code; third-party app content captured in runs is not covered by this declaration.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/xiaomi-research/mobilebench-ol/edee34000767847085612c6ff8b806539233ca0d/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bace67b98a6e04a94324246a76f3268e751868a4608ecdd2a5c75ad67115fff3",
+    "reviewed_at": "2026-10-18T15:34:44Z"
   }
 ]

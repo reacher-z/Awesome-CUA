@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
 
 ## Benchmarks
 
@@ -14,6 +14,7 @@
 | [B-MoCA](https://github.com/jylee425/b-moca) | android | — | [131 task-definition files](https://api.github.com/repos/jylee425/b-moca/git/trees/release/ver.3?recursive=1) · [35 environment configuration rows](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/asset/environments/config/environments_train.csv) | code Apache-2.0 | Mobile control benchmark with varied interface configurations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/readme.md) |
 | [GUI-Robust](https://github.com/chessbean1/GUI-Robust) | cross-platform | [2506.14477](https://arxiv.org/abs/2506.14477) (2025) | — | — | Evaluation scripts and linked data for comparing GUI action predictions and task execution under ordinary and anomalous interface conditions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/chessbean1/GUI-Robust/HEAD/README.md) |
 | [GUIHalluBench](https://github.com/ant-research/GUIHalluBench) | cross-platform | — | [1,000 page-annotation entries](https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md) | — | Measures hallucination in UI-element parsing by matching the boxes and descriptions a model lists for 1,000 English and 1,000 Chinese screenshots against human annotations. | [✓ 2026‑10‑16](https://github.com/ant-research/GUIHalluBench) |
+| [MalURLBench](https://github.com/JiangYingEr/MalURLBench) | web | [2601.18113](https://arxiv.org/abs/2601.18113) (2026) | [61,845 attack instances](https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1) · [10 scenarios](https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md) · [7 attack categories](https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md) · [12 LLMs](https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1) | code GPL-3.0 | Benchmark code and attack URL lists that test whether LLMs behind web agents accept disguised malicious links recommended in ten service scenarios, with a QLoRA URL filter as a defense. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
 | [Mobile-Bench-v2 released data](https://huggingface.co/datasets/xwk123/MobileBench-v2) | android | [2505.11891](https://arxiv.org/abs/2505.11891) (2025) | — | — | Offline mobile-agent task data spanning common tasks and released noisy, contaminated and ambiguous-instruction subsets. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |

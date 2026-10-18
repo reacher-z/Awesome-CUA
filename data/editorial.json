@@ -63143,5 +63143,148 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:jiangyinger/malurlbench",
+    "name": "MalURLBench",
+    "kind": "benchmark",
+    "url": "https://github.com/JiangYingEr/MalURLBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Benchmark code and attack URL lists that test whether LLMs behind web agents accept disguised malicious links recommended in ten service scenarios, with a QLoRA URL filter as a defense.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "MalURLBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2601.18113"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Adjacent: the benchmark targets the URL-acceptance step of web agents and does not load or operate web pages. The shipped per-scenario MetaGPT scripts embed each URL in a recommendation message, ask a model for a No/Medium/High risk label ten times, and tally the labels. Examples hold attack URL lists under per-model folders and Attack Templates hold the URL-disguise patterns. The URLGuard LoRA adapter is published separately on Hugging Face and is not part of this record. GPL-3.0 is the repository code license; no separate data license is declared for the URL lists.",
+    "details": {
+      "repository_url": "https://github.com/JiangYingEr/MalURLBench",
+      "repository_tree_sha": "8b1d18f6b893eb92cf0840b868bc3c64afdb2f05",
+      "benchmark_protocol": {
+        "focus": [
+          "malicious URL acceptance by LLM-based web agents",
+          "URL disguise attacks"
+        ],
+        "setting": "offline",
+        "observations": [
+          "recommendation message containing a candidate URL"
+        ],
+        "actions": [
+          "risk label: No, Medium or High risk"
+        ],
+        "evaluation": "Each shipped scenario script queries the model ten times per URL with the same message and counts No, Medium and High risk labels per URL and overall. The paper reports attack success across 12 LLMs; the repository does not ship a single scoring script for the full instance set.",
+        "counts": [
+          {
+            "value": 61845,
+            "unit": "attack instances",
+            "qualifier": "exact",
+            "population": "benchmark reported in the paper abstract",
+            "basis": "reported",
+            "evidence_url": "https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1"
+          },
+          {
+            "value": 10,
+            "unit": "scenarios",
+            "qualifier": "exact",
+            "population": "real-world service scenarios named in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md"
+          },
+          {
+            "value": 7,
+            "unit": "attack categories",
+            "qualifier": "exact",
+            "population": "malicious website categories named in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md"
+          },
+          {
+            "value": 12,
+            "unit": "LLMs",
+            "qualifier": "exact",
+            "population": "models evaluated in the paper",
+            "basis": "reported",
+            "evidence_url": "https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1"
+          }
+        ],
+        "notes": "Keep the model, scenario, URL list and trial count with any result. The paper's instance total and the shipped example lists are not reconciled here.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/README.md",
+          "https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/Code_Summary/Job%20Search.py",
+          "https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/JiangYingEr/MalURLBench",
+        "sha256": "da136d8b4adde7f47a00a3c3b4d045ec549f162edca64b06108c03b8d52619ae",
+        "retrieved_at": "2026-10-18T11:27:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/JiangYingEr/MalURLBench/git/trees/main?recursive=1",
+        "sha256": "ac6adbf15402c06fe1a0780e9b094c812811752cd83fd97f1b29d11132aa5358",
+        "retrieved_at": "2026-10-18T11:27:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/JiangYingEr/MalURLBench/HEAD/Code_Summary/Job%20Search.py",
+        "sha256": "02295d4d823f370dbd22fe2b645d691e4aa59abc7d96bad7cd31c61e791a3a17",
+        "retrieved_at": "2026-10-18T11:27:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://export.arxiv.org/api/query?id_list=2601.18113&max_results=1",
+        "sha256": "3c60c1d702c1f92c6a45e47feec4bc0cf2d97e7c510b8aae28caeb70bc95710a",
+        "retrieved_at": "2026-10-18T11:27:16Z"
+      }
+    ],
+    "reviewed_sha256": "d7bfd8e332f3f623d4131f20751debdbdf35361d1275526051fc43679bef1b5b",
+    "reviewed_at": "2026-10-18T11:27:44Z"
   }
 ]

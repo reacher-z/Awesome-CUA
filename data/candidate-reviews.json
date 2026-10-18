@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:joaomdmoura/crewai",
+    "url": "https://github.com/joaomdmoura/crewAI",
+    "decision": "out_of_scope",
+    "reason": "CrewAI, now at crewAIInc/crewAI (GitHub repository ID 710601088), is a general Python framework for orchestrating role-based LLM agents (Crews) and event-driven workflows (Flows). Its README describes no GUI, browser or device interaction, and the methodology does not treat generic LLM frameworks as computer-use resources.",
+    "reviewed_at": "2026-10-18T11:32:05Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/crewAIInc/crewAI/HEAD/README.md",
+      "sha256": "b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013",
+      "retrieved_at": "2026-10-18T11:26:11Z"
+    }
   }
 ]

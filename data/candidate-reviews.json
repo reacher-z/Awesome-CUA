@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:tjunlp-lab/ctooleval",
+    "url": "https://github.com/tjunlp-lab/CToolEval",
+    "decision": "not_a_resource",
+    "reason": "Dead link: on 2026-10-18 the GitHub page and API both returned 404 with no rename redirect, none of the owner's 42 public repositories is CToolEval, a repository search returns nothing, and every Wayback capture since 2024-08-14 is a 404 page."
   }
 ]

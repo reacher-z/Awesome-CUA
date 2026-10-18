@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-21 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+22 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Papers (20)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Papers (20)](#papers)
 
 ## Datasets
 
-All entries in this section: unspecified.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [UEyes](https://github.com/YueJiang-nj/UEyes-CHI2023) | web, desktop, cross-platform | — | [1,980 UI screenshots](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) · [62 eye-tracking participants](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) · [4 UI types](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) | data CC-BY-4.0 | Eye-tracking data from 62 participants viewing 1,980 webpage, desktop, mobile and poster screenshots, with fixation maps, scanpaths and code for UI saliency and scanpath models. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) |
+| [UICrit](https://github.com/google-research-datasets/uicrit) | unspecified | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
 
 ## Papers
 

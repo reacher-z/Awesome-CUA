@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (16)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -42,6 +42,7 @@
 | [OS-Genesis](https://github.com/OS-Copilot/OS-Genesis) | cross-platform | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | — | — | Interaction-driven pipeline that synthesizes mobile and web GUI agent trajectories without human supervision or predefined tasks, via reverse task synthesis and a trajectory reward model. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/HEAD/README.md) |
 | [RoTS](https://github.com/AlibabaResearch/RoTS) | cross-platform | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
 | [ScaleCUA Data](https://huggingface.co/datasets/OpenGVLab/ScaleCUA-Data) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | [6 platform categories](https://huggingface.co/datasets/OpenGVLab/ScaleCUA-Data/raw/main/README.md) | — | Cross-platform training data released with ScaleCUA, with grounding and navigation annotations for Ubuntu, Windows, macOS, Android, iPhone and web screenshots. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/OpenGVLab/ScaleCUA-Data) |
+| [UEyes](https://github.com/YueJiang-nj/UEyes-CHI2023) | web, desktop, cross-platform | — | [1,980 UI screenshots](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) · [62 eye-tracking participants](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) · [4 UI types](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) | data CC-BY-4.0 | Eye-tracking data from 62 participants viewing 1,980 webpage, desktop, mobile and poster screenshots, with fixation maps, scanpaths and code for UI saliency and scanpath models. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) |
 | [UGround V1 Data](https://huggingface.co/datasets/osunlp/UGround-V1-Data) | cross-platform | — | — | data cc-by-nc-sa-4.0 | Gated web grounding training data for UGround in Web-Hybrid and Web-Direct subsets, with a bounding-box version whose coordinates are normalized to 0-999. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/osunlp/UGround-V1-Data) |
 | [UI-Ins](https://github.com/alibaba/UI-Ins) | cross-platform | [2510.20286](https://arxiv.org/abs/2510.20286) (2025) | — | — | Treats grounding instructions as multiple reasoning perspectives, releasing a data pipeline, training code and UI-Ins-7B and 32B models trained by SFT on synthesized instructions, then RL. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alibaba/UI-Ins/HEAD/README.md) |
 

@@ -63143,5 +63143,136 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "UEyes",
+    "kind": "dataset",
+    "url": "https://github.com/YueJiang-nj/UEyes-CHI2023",
+    "scope": "adjacent",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design"
+    ],
+    "summary": "Eye-tracking data from 62 participants viewing 1,980 webpage, desktop, mobile and poster screenshots, with fixation maps, scanpaths and code for UI saliency and scanpath models.",
+    "verify_terms": [
+      "UEyes"
+    ],
+    "notes": "The repository holds data processing, evaluation and analysis scripts plus the UMSI++ saliency model and the DeepGaze++ and PathGAN++ scanpath models; the screenshots, eye-tracker logs, saliency maps and scanpaths are one Zenodo archive (DOI 10.5281/zenodo.8010312), which was not downloaded. Zenodo declares CC-BY-4.0 for that archive; the repository has no license file, so the code license stays unknown. The README cites the CHI 2023 ACM DOI rather than an arXiv ID, so no paper relation is asserted. The data record human visual attention on interfaces rather than agent interaction, hence adjacent scope. Mobile screenshots are not tied to a named operating system.",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.dataset_profile"
+    ],
+    "details": {
+      "availability": "Public code repository; the dataset is a single public Zenodo archive.",
+      "repository_revision": "7bc064175310284c74e64e0c3c2ef264bfbe66e2",
+      "download_url": "https://zenodo.org/records/8010312",
+      "dataset_profile": {
+        "supervision": [
+          "eye-tracking fixations",
+          "multi-duration saliency maps",
+          "scanpaths"
+        ],
+        "modalities": [
+          "UI screenshots",
+          "eye-tracker logs",
+          "fixation maps and heatmaps",
+          "scanpath images"
+        ],
+        "formats": [
+          "CSV",
+          "PNG"
+        ],
+        "splits": [
+          "train",
+          "test"
+        ],
+        "counts": [
+          {
+            "value": 1980,
+            "unit": "UI screenshots",
+            "qualifier": "exact",
+            "population": "UEyes Zenodo release",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md"
+          },
+          {
+            "value": 62,
+            "unit": "eye-tracking participants",
+            "qualifier": "exact",
+            "population": "UEyes Zenodo release",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md"
+          },
+          {
+            "value": 4,
+            "unit": "UI types",
+            "qualifier": "exact",
+            "population": "webpage, desktop UI, mobile UI and poster",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md"
+          }
+        ],
+        "notes": "Counts are publisher-reported. Saliency maps and scanpaths come in 1-, 3- and 7-second viewing durations; info.csv assigns each screenshot its UI type, experiment block and train or test split. The archive itself was not downloaded or counted.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/YueJiang-nj/UEyes-CHI2023/git/trees/7bc064175310284c74e64e0c3c2ef264bfbe66e2?recursive=1",
+        "sha256": "03306f6f3963f571530f5479a1ad46d7e91c702145d37c0de573d3076e24e65d",
+        "retrieved_at": "2026-10-18T12:30:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data",
+          "notes",
+          "details.download_url",
+          "details.availability"
+        ],
+        "url": "https://zenodo.org/records/8010312/export/datacite-json",
+        "sha256": "a5366e0b9343bb9301ace5e897edeab504e89429868b22db783c419d15c72823",
+        "retrieved_at": "2026-10-18T12:30:58Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://zenodo.org/records/8010312/export/datacite-json",
+          "retrieved_at": "2026-10-18T12:30:58Z",
+          "basis": "The Zenodo record that hosts the dataset archive declares CC-BY-4.0; this does not assign a license to the repository code."
+        },
+        "reason": "The Zenodo record that hosts the dataset archive declares CC-BY-4.0; this does not assign a license to the repository code.",
+        "evidence_urls": [
+          "https://zenodo.org/records/8010312/export/datacite-json"
+        ]
+      }
+    },
+    "reviewed_sha256": "f4320fa807c89af7fc4a7181a0f90053b09156fd2e5d57e0ce5e206233a07c6a",
+    "reviewed_at": "2026-10-18T12:31:55Z"
   }
 ]

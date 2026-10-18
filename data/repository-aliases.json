@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:opentiny/next-sdk",
+    "target_id": "github:opentiny/webmcp-sdk",
+    "repository_id": 1019899083,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T15:52:25Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/opentiny/next-sdk",
+        "resolved_url": "https://api.github.com/repositories/1019899083",
+        "repository_id": 1019899083,
+        "full_name": "opentiny/webmcp-sdk",
+        "html_url": "https://github.com/opentiny/webmcp-sdk",
+        "retrieved_at": "2026-10-18T15:52:24Z",
+        "sha256": "f0664b4094e42b1701baba1ef800b22547a8204a7d24c73a85605c236364158a"
+      },
+      {
+        "url": "https://api.github.com/repos/opentiny/webmcp-sdk",
+        "resolved_url": "https://api.github.com/repos/opentiny/webmcp-sdk",
+        "repository_id": 1019899083,
+        "full_name": "opentiny/webmcp-sdk",
+        "html_url": "https://github.com/opentiny/webmcp-sdk",
+        "retrieved_at": "2026-10-18T15:52:25Z",
+        "sha256": "f0664b4094e42b1701baba1ef800b22547a8204a7d24c73a85605c236364158a"
+      }
+    ]
   }
 ]

@@ -63143,5 +63143,94 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenTiny NEXT-SDKs",
+    "kind": "framework",
+    "url": "https://github.com/opentiny/webmcp-sdk",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "scope": "core",
+    "summary": "OpenTiny toolkit that makes web apps operable by agents via WebMCP: a polyfill for page-registered tools, a page agent tool that reads the ARIA tree and clicks or fills, and a CDP CLI that injects it into any page.",
+    "verify_terms": [
+      "OpenTiny NEXT-SDKs"
+    ],
+    "aliases": [
+      "@opentiny/next-sdk",
+      "webmcp-cli"
+    ],
+    "notes": "pnpm monorepo on the dev branch, formerly named opentiny/next-sdk (the README still clones that name). @opentiny/next-sdk injects a document.modelContext polyfill (forced over Chromium's experimental native WebMCP by default), bridges tool calls across routes and iframes, and ships MCP client and server transports plus a WebAgent client; the public agent endpoint in the README is a test server, and the WebAgent service lives in the separate opentiny/web-agent repository. registerPageAgentTool adds page-agent-tool, whose browserState action returns the page's ARIA accessibility tree as YAML (full or diff) and whose other actions click, fill, select, hover, scroll, use the clipboard or run JavaScript. @opentiny/webmcp-cli (0.1.0) uses puppeteer-core to start or attach to Chrome on port 9222 over CDP and injects the polyfill and page-agent-tool into tabs; the webmcp-cli skill holds agent instructions and site sub-skills such as Excalidraw drawing and Baidu search. Other packages are the Vue next-remoter chat UI and Doc AI example apps for Vue, React and Angular. Root LICENSE is MIT. Not a fork, not archived. Code and docs were read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/opentiny/webmcp-sdk/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public TypeScript monorepo with npm packages; remote agent control needs a self-hosted WebAgent service or OpenTiny's test endpoint.",
+      "repository_revision": "15bf99d30b318bbb8d2346539350a9e76391ccd6",
+      "repository_tree_sha": "3c0e473d2a311ce8d6f03ab476519d83d1029f6c"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/opentiny/webmcp-sdk/git/commits/15bf99d30b318bbb8d2346539350a9e76391ccd6",
+        "sha256": "3d0e6b5588972eec48d48ec812a5978e4deb0fa63ed5c1157eca84bfa0f30bc4",
+        "retrieved_at": "2026-10-18T15:52:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/opentiny/webmcp-sdk/15bf99d30b318bbb8d2346539350a9e76391ccd6/docs/webmcp-sdk/page-agent-tool.md",
+        "sha256": "35935174fdce4b61ce222bc4627b05ca1176f10989ec8b766666a2077b31e61b",
+        "retrieved_at": "2026-10-18T15:52:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/opentiny/webmcp-sdk/15bf99d30b318bbb8d2346539350a9e76391ccd6/packages/webmcp-cli/README.md",
+        "sha256": "6b6c2b13ac8075aa8d8bb63d724e2c726e27de8fa7231cb4c06ca9850f142caa",
+        "retrieved_at": "2026-10-18T15:52:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/opentiny/webmcp-sdk/15bf99d30b318bbb8d2346539350a9e76391ccd6/packages/webmcp-cli/package.json",
+        "sha256": "d0cfa7012f04d9221862c410c4816f68cba1ffae05212e366dec0b4c663fef0d",
+        "retrieved_at": "2026-10-18T15:52:17Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b7eae3acfece7cd68366a293e35cbf286c8696e5d644cc38207062f7967e1486",
+    "reviewed_at": "2026-10-18T15:52:59Z"
   }
 ]

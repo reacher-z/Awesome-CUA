@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (9)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -56,6 +56,7 @@
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
 | [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | code Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/HEAD/README.md) |
+| [OpenTiny NEXT-SDKs](https://github.com/opentiny/webmcp-sdk) | web | — | code MIT | OpenTiny toolkit that makes web apps operable by agents via WebMCP: a polyfill for page-registered tools, a page agent tool that reads the ARIA tree and clicks or fills, and a CDP CLI that injects it into any page. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/opentiny/webmcp-sdk/HEAD/README.md) |
 | [SkillWeaver](https://github.com/OSU-NLP-Group/SkillWeaver) | web | [2504.07079](https://arxiv.org/abs/2504.07079) (2025) | code MIT | A web-agent framework that explores sites, synthesizes reusable interaction APIs and builds a skill library for later tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/SkillWeaver/HEAD/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 

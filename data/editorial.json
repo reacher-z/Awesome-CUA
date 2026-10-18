@@ -63143,5 +63143,115 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2511.06251",
+    "name": "WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.06251",
+    "summary": "WebVIA turns UI designs into interactive web code: an exploration agent clicks through a page to capture its UI states, a UI2Code model writes HTML/CSS/JavaScript, and a validator checks the interactions.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "data-generation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "WebVIA: A Web-based Vision-Language"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2510.10587%2C2510.10909%2C2510.11144%2C2510.12798%2C2510.14388%2C2510.14513%2C2510.14969%2C2510.16156%2C2510.17017%2C2510.17800%2C2510.19207%2C2510.19247%2C2510.19386%2C2510.19864%2C2510.20333%2C2510.21652%2C2510.22443%2C2510.22936%2C2510.23730%2C2510.23883%2C2510.24702%2C2510.25726%2C2510.26328%2C2510.27135%2C2510.27410%2C2511.00153%2C2511.02650%2C2511.02687%2C2511.03690%2C2511.04220%2C2511.05797%2C2511.06251%2C2511.08319%2C2511.08487%2C2511.10110%2C2511.13725%2C2511.14210%2C2511.14945%2C2511.15705%2C2511.16842%2C2511.17649%2C2511.17775%2C2511.19496%2C2511.19516%2C2511.20636%2C2511.21990%2C2511.22074%2C2512.04302%2C2512.04529%2C2512.06726&max_results=50"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the complete retained official abstract. Experimental findings and release availability have not been independently reproduced or verified.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c5dc89d533e2ae889209c796176d245f5250b88608900be06757d8451d7209b7",
+    "reviewed_at": "2026-10-18T12:16:41Z"
+  },
+  {
+    "name": "WebVIA-Agent",
+    "kind": "model",
+    "url": "https://huggingface.co/zai-org/WebVIA-Agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "ui-design"
+    ],
+    "summary": "GLM-4.1V-9B-based web exploration agent from WebVIA that reads a page screenshot and DOM tree and picks click, type or select actions to reach each interactive UI state for UI-to-code work.",
+    "scope": "core",
+    "verify_terms": [
+      "WebVIA-Agent"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/zai-org/WebVIA-Agent/raw/d6ee0ce156bc194a4f9ddcd1c4827544321c9db2/README.md"
+    ],
+    "documented_by": [
+      "2511.06251"
+    ],
+    "notes": "In the linked code repository, the agent launcher sends the page's DOM tree with element IDs and a screenshot to a configurable OpenAI-compatible endpoint and parses click[id], enter[id][text] and select[id][text] actions from the reply, so this checkpoint is served separately. Hub API at revision d6ee0ce1 lists four BF16 safetensors shards (about 10.29B parameters) in the Glm4vForConditionalGeneration architecture; the repository is not gated. GitHub reports no license for the code repository. The card declares MIT for the checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "zai-org/WebVIA-Agent",
+      "hub_revision": "d6ee0ce156bc194a4f9ddcd1c4827544321c9db2",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/zai-org/WebVIA-Agent/tree/main",
+      "base_model": "zai-org/GLM-4.1V-9B-Base",
+      "architecture": "Glm4vForConditionalGeneration",
+      "repository_url": "https://github.com/zheny2751-dotcom/WebVIA"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/zai-org/WebVIA-Agent/revision/d6ee0ce156bc194a4f9ddcd1c4827544321c9db2",
+        "sha256": "5d7f0dce7579dc1d4c6fe3a82568cec7187c8ef5ee70e27e1b8482ba574f246a",
+        "retrieved_at": "2026-10-18T12:16:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/zheny2751-dotcom/WebVIA/1b228001e8b24f0cab8d9e00a9f6e7ae521d6c67/code/agent/start_agent.py",
+        "sha256": "79b219bd4a415a6bac297acf2aefb786d0789e8daad386c6ed6cf831be0a77a1",
+        "retrieved_at": "2026-10-18T12:16:12Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1b2a79a5d45c3e3524b624e04dc3dce1a4d53d8bcd76da3151ba5a92ea9fba49",
+    "reviewed_at": "2026-10-18T12:16:41Z"
   }
 ]

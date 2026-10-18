@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**99 resources:** [Web (15)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -30,6 +30,7 @@ All entries in this section: web.
 | [WebRL Llama 3.1 8B](https://huggingface.co/zai-org/webrl-llama-3.1-8b) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | weights other | A WebRL browser-policy checkpoint for performing actions in the five website environments of WebArena. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/webrl-llama-3.1-8b/raw/main/README.md) |
 | [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |
 | [WebShepherd 3B](https://huggingface.co/LangAGI-Lab/WebShepherd_3B) | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | — | A public text-based process-reward checkpoint from the Web-Shepherd collection for scoring web-agent decisions against task checklists. | [✓ 2026‑10‑17](https://huggingface.co/api/models/LangAGI-Lab/WebShepherd_3B) |
+| [WebVIA-Agent](https://huggingface.co/zai-org/WebVIA-Agent) | [2511.06251](https://arxiv.org/abs/2511.06251) (2025) | weights mit | GLM-4.1V-9B-based web exploration agent from WebVIA that reads a page screenshot and DOM tree and picks click, type or select actions to reach each interactive UI state for UI-to-code work. | [✓ 2026‑10‑18](https://huggingface.co/zai-org/WebVIA-Agent/raw/d6ee0ce156bc194a4f9ddcd1c4827544321c9db2/README.md) |
 
 [↑ Back to top](#model-catalog)
 

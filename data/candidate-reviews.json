@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:3f5d20b7ad7179221e3a",
+    "url": "https://huggingface.co/collections/harbingeva/evocua-687c664a9bb7b48f2272ff8a",
+    "decision": "not_a_resource",
+    "reason": "Dead Hugging Face collection link that a community list attaches to EvoCUA: the page and collections API return 404, the harbingeva account does not exist, the official EvoCUA repository does not link it, and the Wayback Machine has no capture."
   }
 ]

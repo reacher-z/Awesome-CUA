@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T15:56:38Z",
+  "total_records": 3180,
+  "curated_records": 1619,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -184,22 +184,35 @@
       "cause": "reviewer_hold"
     }
   ],
-  "uncurated_linked_papers": [],
+  "uncurated_linked_papers": [
+    {
+      "id": "arxiv:2602.22190",
+      "name": "GUI-Libra: Training Native GUI Agents to Reason and Act with Action-aware Supervision and Partially Verifiable RL",
+      "url": "https://arxiv.org/abs/2602.22190",
+      "linked_from": [
+        "github:gui-libra/gui-libra",
+        "url:6694391b0cf50389d2e9",
+        "url:9082bb5effe5d1a1cada",
+        "url:ae8e3fa5a67a608804f8",
+        "url:f52794224f9541fd9eb3"
+      ]
+    }
+  ],
   "by_kind": {
     "agent": 43,
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
-    "framework": 75,
+    "framework": 76,
     "infrastructure": 14,
-    "model": 98,
+    "model": 102,
     "paper": 2697,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 300,
+    "android": 305,
     "cross-platform": 197,
     "desktop": 322,
     "harmonyos": 3,
@@ -207,7 +220,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 626,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -248,7 +261,7 @@
       "windows": 4
     },
     "framework": {
-      "android": 20,
+      "android": 21,
       "cross-platform": 7,
       "desktop": 22,
       "harmonyos": 1,
@@ -256,7 +269,7 @@
       "linux": 6,
       "macos": 1,
       "unspecified": 2,
-      "web": 37,
+      "web": 38,
       "windows": 2
     },
     "infrastructure": {
@@ -269,14 +282,14 @@
       "windows": 1
     },
     "model": {
-      "android": 24,
+      "android": 28,
       "cross-platform": 47,
       "desktop": 24,
       "ios": 4,
       "linux": 6,
       "macos": 4,
       "unspecified": 2,
-      "web": 28,
+      "web": 32,
       "windows": 5
     },
     "paper": {
@@ -319,7 +332,7 @@
   "license_declarations_by_scope": {
     "code": 182,
     "data": 61,
-    "weights": 56,
+    "weights": 60,
     "document": 0
   },
   "sources": [

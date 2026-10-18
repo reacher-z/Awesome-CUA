@@ -63143,5 +63143,568 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-Libra 3B",
+    "kind": "model",
+    "url": "https://huggingface.co/GUI-Libra/GUI-Libra-3B",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "web-navigation",
+      "mobile-navigation",
+      "reinforcement-learning"
+    ],
+    "summary": "GUI-Libra checkpoint fine-tuned from Qwen2.5-VL-3B-Instruct (about 4.07B BF16 parameters) that turns a screenshot, task and action history into a <think> reasoning block and a JSON action with point_2d coordinates.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Libra/GUI-Libra-3B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/GUI-Libra/GUI-Libra-3B/raw/98ec8af3939dbfa87e9e39082c7edbb1c1e7ee1f/README.md"
+    ],
+    "family_url": "https://github.com/GUI-Libra/GUI-Libra",
+    "documented_by": [
+      "2602.22190"
+    ],
+    "notes": "The Hub manifest at revision 98ec8af3 lists 2 Safetensors shards with an index plus configuration and tokenizer files; weights were not downloaded and no benchmark result was reproduced. The card's usage section serves the checkpoint through vLLM as an OpenAI-compatible endpoint and prompts it with a GUI action list (Click, Select, Write, KeyboardPress, Scroll). Its vllm serve command names GUI-Libra-4B rather than GUI-Libra-3B, while its Python example names GUI-Libra-3B. The paper link and the web and Android evaluation targets come from the official GitHub README, which the card links. Apache-2.0 is the card's weight declaration; the code repository's license and the training data's terms are separate.",
+    "details": {
+      "hub_id": "GUI-Libra/GUI-Libra-3B",
+      "hub_revision": "98ec8af3939dbfa87e9e39082c7edbb1c1e7ee1f",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/GUI-Libra/GUI-Libra-3B/tree/98ec8af3939dbfa87e9e39082c7edbb1c1e7ee1f",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "3B",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ],
+      "artifact_inspection": "Public Hub file manifest and model card only; weights were not downloaded.",
+      "training_data_note": "The card metadata lists the publisher's GUI-Libra-81K SFT and RL datasets as training data.",
+      "repository_url": "https://github.com/GUI-Libra/GUI-Libra"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.training_data_note",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files",
+          "details.artifact_inspection",
+          "summary",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/GUI-Libra/GUI-Libra-3B/revision/98ec8af3939dbfa87e9e39082c7edbb1c1e7ee1f",
+        "sha256": "2cae2eed1c4d3c6551b737d48d7cfaad1c87413292530753c0ea80a8a1877755",
+        "retrieved_at": "2026-10-18T15:55:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "topics",
+          "relations",
+          "summary",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/README.md",
+        "sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
+        "retrieved_at": "2026-10-18T15:55:29Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/GUI-Libra/GUI-Libra-3B/raw/98ec8af3939dbfa87e9e39082c7edbb1c1e7ee1f/README.md",
+          "retrieved_at": "2026-10-18T15:55:30Z",
+          "basis": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate."
+        },
+        "reason": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/GUI-Libra/GUI-Libra-3B/raw/98ec8af3939dbfa87e9e39082c7edbb1c1e7ee1f/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e678c8bb953de37182a69d60aa8c8fd7c9dd273fcd9cee457e8d2447b4b9feab",
+    "reviewed_at": "2026-10-18T15:57:12Z"
+  },
+  {
+    "name": "GUI-Libra 4B",
+    "kind": "model",
+    "url": "https://huggingface.co/GUI-Libra/GUI-Libra-4B",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "web-navigation",
+      "mobile-navigation",
+      "reinforcement-learning"
+    ],
+    "summary": "GUI-Libra checkpoint fine-tuned from Qwen3-VL-4B-Instruct (about 4.83B BF16 parameters) that turns a screenshot, task and action history into a <thinking> reasoning block and a JSON action with point_2d coordinates.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Libra/GUI-Libra-4B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/GUI-Libra/GUI-Libra-4B/raw/35fc6d34d1ffce801baefb0b693c5be13c4399eb/README.md"
+    ],
+    "family_url": "https://github.com/GUI-Libra/GUI-Libra",
+    "documented_by": [
+      "2602.22190"
+    ],
+    "notes": "The Hub manifest at revision 35fc6d34 lists 2 Safetensors shards with an index plus configuration and tokenizer files; weights were not downloaded and no benchmark result was reproduced. The card's usage section serves the checkpoint through vLLM as an OpenAI-compatible endpoint and prompts it with a GUI action list (Click, Select, Write, KeyboardPress, Scroll). The paper link and the web and Android evaluation targets come from the official GitHub README, which the card links. Apache-2.0 is the card's weight declaration; the code repository's license and the training data's terms are separate.",
+    "details": {
+      "hub_id": "GUI-Libra/GUI-Libra-4B",
+      "hub_revision": "35fc6d34d1ffce801baefb0b693c5be13c4399eb",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/GUI-Libra/GUI-Libra-4B/tree/35fc6d34d1ffce801baefb0b693c5be13c4399eb",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "4B",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ],
+      "artifact_inspection": "Public Hub file manifest and model card only; weights were not downloaded.",
+      "training_data_note": "The card metadata lists the publisher's GUI-Libra-81K SFT and RL datasets as training data.",
+      "repository_url": "https://github.com/GUI-Libra/GUI-Libra"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.training_data_note",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files",
+          "details.artifact_inspection",
+          "summary",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/GUI-Libra/GUI-Libra-4B/revision/35fc6d34d1ffce801baefb0b693c5be13c4399eb",
+        "sha256": "0a1b2bbd4ddab8a2b23af66e43053ffca379d14d29168de8e7510f5df0495dda",
+        "retrieved_at": "2026-10-18T15:55:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "topics",
+          "relations",
+          "summary",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/README.md",
+        "sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
+        "retrieved_at": "2026-10-18T15:55:29Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/GUI-Libra/GUI-Libra-4B/raw/35fc6d34d1ffce801baefb0b693c5be13c4399eb/README.md",
+          "retrieved_at": "2026-10-18T15:55:30Z",
+          "basis": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate."
+        },
+        "reason": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/GUI-Libra/GUI-Libra-4B/raw/35fc6d34d1ffce801baefb0b693c5be13c4399eb/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f79b3b1b6b75a04fd41d8475bf76f1ad3bafa21a4bf85519f87709b7788d3308",
+    "reviewed_at": "2026-10-18T15:57:12Z"
+  },
+  {
+    "name": "GUI-Libra 7B",
+    "kind": "model",
+    "url": "https://huggingface.co/GUI-Libra/GUI-Libra-7B",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "web-navigation",
+      "mobile-navigation",
+      "reinforcement-learning"
+    ],
+    "summary": "GUI-Libra checkpoint fine-tuned from Qwen2.5-VL-7B-Instruct (about 8.29B BF16 parameters) that turns a screenshot, task and action history into a <think> reasoning block and a JSON action with point_2d coordinates.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Libra/GUI-Libra-7B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/GUI-Libra/GUI-Libra-7B/raw/0355b647f41136c65bd6c7f6705fba8e5a2e250a/README.md"
+    ],
+    "family_url": "https://github.com/GUI-Libra/GUI-Libra",
+    "documented_by": [
+      "2602.22190"
+    ],
+    "notes": "The Hub manifest at revision 0355b647 lists 4 Safetensors shards with an index plus configuration and tokenizer files; weights were not downloaded and no benchmark result was reproduced. The card's usage section serves the checkpoint through vLLM as an OpenAI-compatible endpoint and prompts it with a GUI action list (Click, Select, Write, KeyboardPress, Scroll). Its vllm serve command names GUI-Libra-4B rather than GUI-Libra-7B, while its Python example names GUI-Libra-7B. The paper link and the web and Android evaluation targets come from the official GitHub README, which the card links. Apache-2.0 is the card's weight declaration; the code repository's license and the training data's terms are separate.",
+    "details": {
+      "hub_id": "GUI-Libra/GUI-Libra-7B",
+      "hub_revision": "0355b647f41136c65bd6c7f6705fba8e5a2e250a",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/GUI-Libra/GUI-Libra-7B/tree/0355b647f41136c65bd6c7f6705fba8e5a2e250a",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "artifact_inspection": "Public Hub file manifest and model card only; weights were not downloaded.",
+      "training_data_note": "The card metadata lists the publisher's GUI-Libra-81K SFT and RL datasets as training data.",
+      "repository_url": "https://github.com/GUI-Libra/GUI-Libra"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.training_data_note",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files",
+          "details.artifact_inspection",
+          "summary",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/GUI-Libra/GUI-Libra-7B/revision/0355b647f41136c65bd6c7f6705fba8e5a2e250a",
+        "sha256": "3e6048b720e7dc0e10a88eb5b34804a8e063cfa255813281157bce9dbe7981fc",
+        "retrieved_at": "2026-10-18T15:55:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "topics",
+          "relations",
+          "summary",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/README.md",
+        "sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
+        "retrieved_at": "2026-10-18T15:55:29Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/GUI-Libra/GUI-Libra-7B/raw/0355b647f41136c65bd6c7f6705fba8e5a2e250a/README.md",
+          "retrieved_at": "2026-10-18T15:55:30Z",
+          "basis": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate."
+        },
+        "reason": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/GUI-Libra/GUI-Libra-7B/raw/0355b647f41136c65bd6c7f6705fba8e5a2e250a/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "93e22f5ded472a60c66b812bd9a5c07ae93634c68195b4c9d36fca2dbc780f8d",
+    "reviewed_at": "2026-10-18T15:57:12Z"
+  },
+  {
+    "name": "GUI-Libra 8B",
+    "kind": "model",
+    "url": "https://huggingface.co/GUI-Libra/GUI-Libra-8B",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "web-navigation",
+      "mobile-navigation",
+      "reinforcement-learning"
+    ],
+    "summary": "GUI-Libra checkpoint fine-tuned from Qwen3-VL-8B-Instruct (about 8.77B BF16 parameters) that turns a screenshot, task and action history into a <thinking> reasoning block and a JSON action with point_2d coordinates.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Libra/GUI-Libra-8B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/GUI-Libra/GUI-Libra-8B/raw/15ee285bc1e279eee1b7ea5e953b7dd823e6dbd3/README.md"
+    ],
+    "family_url": "https://github.com/GUI-Libra/GUI-Libra",
+    "documented_by": [
+      "2602.22190"
+    ],
+    "notes": "The Hub manifest at revision 15ee285b lists 4 Safetensors shards with an index plus configuration and tokenizer files; weights were not downloaded and no benchmark result was reproduced. The card's usage section serves the checkpoint through vLLM as an OpenAI-compatible endpoint and prompts it with a GUI action list (Click, Select, Write, KeyboardPress, Scroll). The paper link and the web and Android evaluation targets come from the official GitHub README, which the card links. Apache-2.0 is the card's weight declaration; the code repository's license and the training data's terms are separate.",
+    "details": {
+      "hub_id": "GUI-Libra/GUI-Libra-8B",
+      "hub_revision": "15ee285bc1e279eee1b7ea5e953b7dd823e6dbd3",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/GUI-Libra/GUI-Libra-8B/tree/15ee285bc1e279eee1b7ea5e953b7dd823e6dbd3",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "8B",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "artifact_inspection": "Public Hub file manifest and model card only; weights were not downloaded.",
+      "training_data_note": "The card metadata lists the publisher's GUI-Libra-81K SFT and RL datasets as training data.",
+      "repository_url": "https://github.com/GUI-Libra/GUI-Libra"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.training_data_note",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files",
+          "details.artifact_inspection",
+          "summary",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/GUI-Libra/GUI-Libra-8B/revision/15ee285bc1e279eee1b7ea5e953b7dd823e6dbd3",
+        "sha256": "8a17da30a39508a921bbe7be37ee686ad8517582667cc905785393291c94e78f",
+        "retrieved_at": "2026-10-18T15:55:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "topics",
+          "relations",
+          "summary",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/README.md",
+        "sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
+        "retrieved_at": "2026-10-18T15:55:29Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/GUI-Libra/GUI-Libra-8B/raw/15ee285bc1e279eee1b7ea5e953b7dd823e6dbd3/README.md",
+          "retrieved_at": "2026-10-18T15:55:31Z",
+          "basis": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate."
+        },
+        "reason": "Model-card metadata declaration (license: apache-2.0) for this checkpoint; the code repository's license and the training data's terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/GUI-Libra/GUI-Libra-8B/raw/15ee285bc1e279eee1b7ea5e953b7dd823e6dbd3/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3167bb98de26f8706db1cde493ebbc04031c48d7946b122552a60d8aa772469d",
+    "reviewed_at": "2026-10-18T15:57:12Z"
+  },
+  {
+    "name": "GUI-Libra",
+    "kind": "framework",
+    "url": "https://github.com/GUI-Libra/GUI-Libra",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "imitation-learning",
+      "grounding",
+      "evaluation"
+    ],
+    "summary": "Post-training code that turns Qwen2.5-VL and Qwen3-VL models into native GUI agents through action-aware SFT and KL-regularized GRPO, with evaluation harnesses for WebArena-Lite-v2, Online-Mind2Web and AndroidWorld.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Libra"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/README.md"
+    ],
+    "documented_by": [
+      "2602.22190"
+    ],
+    "notes": "At commit f3e9c78e the tree holds SFT/ (action-aware fine-tuning; its source package is named aguvis and the README credits AGUVIS, and the Qwen2.5-VL script sets an action-token weight of 2.0), EasyR1/ (a bundled EasyR1/veRL copy with GUI reward functions; the Qwen2.5-VL GRPO script sets kl_coef 0.001) and evaluation/ (WebArenaLiteV2, online-mind2web-eval, android_world_seeact_v, and offline_evaluation for Multimodal-Mind2Web and AndroidControl). The README also names the GUI-Libra-81K dataset and the 3B/4B/7B/8B checkpoints, which are published on the Hugging Face Hub rather than in this repository. The README declares MIT and links a root LICENSE, but the recursive tree has no root LICENSE; EasyR1/ and evaluation/android_world_seeact_v/ carry their own LICENSE files. Training and evaluation were not run.",
+    "details": {
+      "repository_revision": "f3e9c78e5c6435d0fb39210191ce1ad284361120",
+      "repository_tree_sha": "69237ad998d790b2d197ce3e42996753c4676034",
+      "availability": "Training and evaluation code; the checkpoints and datasets are published separately on the Hugging Face Hub."
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.availability",
+      "licenses.code"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/GUI-Libra/GUI-Libra/git/commits/f3e9c78e5c6435d0fb39210191ce1ad284361120",
+        "sha256": "03e44e9004cd01af3161c0d1896b4edc65b6f0877ad63d8446f7c78d56be153d",
+        "retrieved_at": "2026-10-18T15:56:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "licenses.code",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/GUI-Libra/GUI-Libra/git/trees/69237ad998d790b2d197ce3e42996753c4676034?recursive=1",
+        "sha256": "a4739b78936829f094ae797fb2f4939418312187223623dd1b8d0dc9906dd25a",
+        "retrieved_at": "2026-10-18T15:53:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/SFT/scripts/train_qwen2_5.sh",
+        "sha256": "e3362ee8278902dfb9b117161037d6928bc474f7c7a9589bc635a909e12dc519",
+        "retrieved_at": "2026-10-18T15:55:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/EasyR1/examples/gui_grpo.sh",
+        "sha256": "d7e636eac8c0caba9d937fcaa80542b8e6adcf28aac10ed866e822b7bf81601a",
+        "retrieved_at": "2026-10-18T15:55:31Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README declares MIT and links a root LICENSE, but the recursive tree at commit f3e9c78e has no root LICENSE; the bundled EasyR1/ and evaluation/android_world_seeact_v/ components carry their own LICENSE files. The project-wide code license stays unresolved instead of treating a README statement or a component license as the whole project license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/f3e9c78e5c6435d0fb39210191ce1ad284361120/README.md",
+          "https://api.github.com/repos/GUI-Libra/GUI-Libra/git/trees/69237ad998d790b2d197ce3e42996753c4676034?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
+    "reviewed_at": "2026-10-18T15:57:12Z"
   }
 ]

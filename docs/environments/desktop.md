@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -120,6 +120,7 @@
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [GUI-ReWalk](https://github.com/bytedance/GUI-ReWalk) | desktop, linux | [2509.15738](https://arxiv.org/abs/2509.15738) (2025) | code Apache-2.0 | A desktop trajectory-generation framework that moves from stochastic GUI exploration to inferred goals and multi-stage task completion, with retrospective reasoning annotations. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/bytedance/GUI-ReWalk/HEAD/README.md) |
 | [HUD](https://github.com/hud-evals/hud-python) | web, desktop | — | code MIT | SDK for RL environments and evals spanning coding, browser, computer-use and robotics agents, whose environments expose SSH, MCP, CDP or VNC capabilities behind a minimal start-and-grade protocol. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hud-evals/hud-python/HEAD/README.md) |
+| [MEGA-GUI](https://github.com/samsungsds-research-papers/mega-gui) | desktop | [2511.13087](https://arxiv.org/abs/2511.13087) (2025) | — | Notebook code for MEGA-GUI, which chains vision-language agents for region selection with bidirectional zoom and instruction rewriting before element grounding, run on ScreenSpot-Pro and OSWorld-G. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/samsungsds-research-papers/mega-gui/HEAD/README.md) |
 | [OS-Sentinel](https://github.com/OS-Copilot/OS-Sentinel) | desktop | [2510.24411](https://arxiv.org/abs/2510.24411) (2025) | code Apache-2.0 | Safety-checking environment and benchmark for mobile agents on AndroidWorld that judges proposed actions with rule-based and VLM-based checks, evaluated on the MobileRisk trajectory dataset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Sentinel/HEAD/README.md) |
 | [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |

@@ -63143,5 +63143,83 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MEGA-GUI",
+    "kind": "framework",
+    "url": "https://github.com/samsungsds-research-papers/mega-gui",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "training-free"
+    ],
+    "scope": "core",
+    "summary": "Notebook code for MEGA-GUI, which chains vision-language agents for region selection with bidirectional zoom and instruction rewriting before element grounding, run on ScreenSpot-Pro and OSWorld-G.",
+    "verify_terms": [
+      "MEGA-GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/samsungsds-research-papers/mega-gui/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2511.13087"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:c79e152e6f7af1a9efed",
+        "evidence_url": "https://raw.githubusercontent.com/samsungsds-research-papers/mega-gui/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld-g",
+        "evidence_url": "https://raw.githubusercontent.com/samsungsds-research-papers/mega-gui/HEAD/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/samsungsds-research-papers/mega-gui/git/trees/e5fabcd948b06b87282dc110a5c7e6c68e3d4f7a?recursive=1",
+        "sha256": "c8718bcedab9dcdd42d5aeccbe96883a1a3906d145cff2c8469fbbaf30b4d05a",
+        "retrieved_at": "2026-10-18T11:58:30Z"
+      }
+    ],
+    "details": {
+      "availability": "Public pipeline and data-generator notebooks, image-free benchmark metadata and per-model zoom logs; models are external services or self-hosted checkpoints.",
+      "repository_revision": "e5fabcd948b06b87282dc110a5c7e6c68e3d4f7a"
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README states MIT and refers to LICENSE and NOTICE files, but neither file is in the inspected tree and GitHub reports no license, so no code grant is established.",
+        "evidence_urls": [
+          "https://api.github.com/repos/samsungsds-research-papers/mega-gui/git/trees/e5fabcd948b06b87282dc110a5c7e6c68e3d4f7a?recursive=1"
+        ]
+      }
+    },
+    "notes": "The README links arXiv:2511.13087. The tree at commit e5fabcd (48 entries) holds two pipeline notebooks (the OSWorld-G one adds a refusal stage), two data-generator notebooks, image-free ScreenSpot-Pro and OSWorld-G metadata parquet files, ROI and candidate-point zoom logs for GPT CUA, GTA1, Gemini, Qwen and UI-TARS runs, a vLLM serving guide and a semantic-refinement parquet. Models are reached through Azure OpenAI, OpenRouter or a self-hosted vLLM server; no training code or checkpoints are released. Benchmark images must be downloaded separately.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9bdeec3c1a3c874f86dae691c52dcdb6455ba1f18e0e0b0c784948323bbe1992",
+    "reviewed_at": "2026-10-18T11:59:11Z"
   }
 ]

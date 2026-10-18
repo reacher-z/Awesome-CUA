@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:1807bdb33fc352a97240",
+    "name": "ScaleCUA (THUDM) Qwen3-VL-8B OSWorld",
+    "kind": "model",
+    "url": "https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-osworld",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction"
+    ],
+    "summary": "Qwen3-VL-8B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for OSWorld desktop tasks after a released SFT start point.",
+    "scope": "core",
+    "verify_terms": [
+      "ScaleCUA-qwen3-vl-osworld"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-osworld/raw/d27cdab2d500f323af27c0c9fdcf123f40c83d42/README.md"
+    ],
+    "documented_by": [
+      "2607.11185"
+    ],
+    "family_url": "https://github.com/THUDM/SCALE-CUA",
+    "notes": "Hub API at revision d27cdab2 lists four BF16 safetensors shards (about 8.77B parameters) in the Qwen3VLForConditionalGeneration architecture; the repository is not gated. The card calls this the online-RL (RLVR) checkpoint and names extreme1228/ScaleCUA-qwen3-vl-osworld-sft as its start point, which is also its Hub base_model. The card and the THUDM/SCALE-CUA README report 67.7% on OSWorld; this is a publisher figure and was not reproduced. The card YAML declares license 'other' and its prose says the weights are released for research and inherit the license of Qwen3-VL-8B; that license is not resolved here. This project is distinct from OpenGVLab/ScaleCUA.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "extreme1228/ScaleCUA-qwen3-vl-osworld",
+      "hub_revision": "d27cdab2d500f323af27c0c9fdcf123f40c83d42",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-osworld/tree/d27cdab2d500f323af27c0c9fdcf123f40c83d42",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "8B",
+      "base_model": "extreme1228/ScaleCUA-qwen3-vl-osworld-sft",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "repository_url": "https://github.com/THUDM/SCALE-CUA"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/extreme1228/ScaleCUA-qwen3-vl-osworld/revision/d27cdab2d500f323af27c0c9fdcf123f40c83d42",
+        "sha256": "39802e7890517c83ddd53b16c3e1196c1cde03d85803d64fa8e49ce48c659838",
+        "retrieved_at": "2026-10-18T15:42:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "relations",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/THUDM/SCALE-CUA/3929e2fe364623153f2caa94ead71dc1aea50fb0/README.md",
+        "sha256": "d4a68b00acc4becf2a25688520595babea9b694b56541e709f066413b5b80aea",
+        "retrieved_at": "2026-10-18T15:41:39Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7f1fb5e0229ec526c6f75baa9331864d49442200a19ea7888fe4f4d69eead546",
+    "reviewed_at": "2026-10-18T15:43:13Z"
   }
 ]

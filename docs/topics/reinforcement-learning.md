@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (24)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -45,6 +45,7 @@ All entries in this section: web.
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
 | [MobileRL 9B checkpoint](https://huggingface.co/xuyifan/MobileRL-9B) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | weights apache-2.0 | A GLM-4.1V-based mobile action checkpoint released by the MobileRL project for Android interaction. | [✓ 2026‑10‑17](https://huggingface.co/api/models/xuyifan/MobileRL-9B) |
 | [PAE LLaVA 7B](https://huggingface.co/yifeizhou/pae-llava-7b) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | weights cc-by-nc-4.0 | A released LLaVA checkpoint for visual browser interaction from the PAE autonomous task-proposal and policy-learning system. | [✓ 2026‑10‑17](https://huggingface.co/yifeizhou/pae-llava-7b/raw/main/README.md) |
+| [ScaleCUA (THUDM) Qwen3-VL-8B OSWorld](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-osworld) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3-VL-8B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for OSWorld desktop tasks after a released SFT start point. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-osworld/raw/d27cdab2d500f323af27c0c9fdcf123f40c83d42/README.md) |
 | [UI-AGILE](https://github.com/KDEGroup/UI-AGILE) | cross-platform | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | code MIT | GUI agent trained by RL with a continuous reward, a simple-thinking reward and cropping-based resampling on about 9k samples, plus a plug-in decomposed grounding-and-selection inference method. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/KDEGroup/UI-AGILE/HEAD/README.md) |
 | [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |
 | [UI-R1](https://github.com/lll6gg/UI-R1) | cross-platform | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | code Apache-2.0 | Rule-based reinforcement learning for GUI action prediction, releasing UI-R1-3B, trained from Qwen2.5-VL-3B, the efficiency-oriented UI-R1-E-3B, and training data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/lll6gg/UI-R1/HEAD/README.md) |

@@ -63143,5 +63143,165 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Mind2Web-Live",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Task files for the WebCanvas live-web benchmark: 438 training and 104 test tasks derived from Mind2Web, each with key-node checks on URLs or page elements that score intermediate progress.",
+    "verify_terms": [
+      "Mind2Web-Live"
+    ],
+    "notes": "The files hold task instructions, reference task lengths and key-node evaluation functions (URL inclusion or exact match, element path and value matches, and semantic URL and value matches), not trajectories or page snapshots. Agents run on live websites through the WebCanvas framework, so results depend on site changes, location and time. The test file was revised on 2024-10-24; the 2024-05-28 test file stays under old_version with 104 tasks and 444 key nodes, which with the 1,995 training key nodes gives the 2,439 states the WebCanvas README reports. The card itself links only the WebCanvas repository and declares CC-BY-4.0.",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "scope"
+    ],
+    "details": {
+      "hub_revision": "160677b57f6a608e6d63b51849a33d2920b35588",
+      "dataset_profile": {
+        "supervision": [
+          "key-node evaluation annotations",
+          "reference task lengths"
+        ],
+        "modalities": [
+          "task instructions",
+          "URL and page-element evaluation functions"
+        ],
+        "formats": [
+          "JSON"
+        ],
+        "splits": [
+          "train (2024-05-28 file)",
+          "test (2024-10-24 file)"
+        ],
+        "counts": [
+          {
+            "value": 438,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "train file mind2web-live_train_20240528.json at Hub revision 160677b5",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_train_20240528.json"
+          },
+          {
+            "value": 1995,
+            "unit": "key-node evaluation entries",
+            "qualifier": "exact",
+            "population": "train file mind2web-live_train_20240528.json at Hub revision 160677b5",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_train_20240528.json"
+          },
+          {
+            "value": 104,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "test file mind2web-live_test_20241024.json at Hub revision 160677b5",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_test_20241024.json"
+          },
+          {
+            "value": 443,
+            "unit": "key-node evaluation entries",
+            "qualifier": "exact",
+            "population": "test file mind2web-live_test_20241024.json at Hub revision 160677b5",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_test_20241024.json"
+          },
+          {
+            "value": 542,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "original Mind2Web-Live release as described in the WebCanvas README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/iMeanAI/WebCanvas/b9f289128614cd99b97abd0bb9bfc3a45f0847e0/README.md"
+          }
+        ],
+        "notes": "Tasks and key-node evaluation entries are different units. The revised test file has one fewer key node than the original 2024-05-28 test file.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_train_20240528.json",
+          "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_test_20241024.json",
+          "https://raw.githubusercontent.com/iMeanAI/WebCanvas/b9f289128614cd99b97abd0bb9bfc3a45f0847e0/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/raw/160677b57f6a608e6d63b51849a33d2920b35588/README.md",
+        "sha256": "8ac014447b87cd4450289e5e3b3254e0f8ad9a90d31e76b0efcb70c402aaa80e",
+        "retrieved_at": "2026-10-18T15:45:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes",
+          "relations",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/iMeanAI/WebCanvas/b9f289128614cd99b97abd0bb9bfc3a45f0847e0/README.md",
+        "sha256": "5b2b4b4ce1241db7fd776f2ba0856ec2e0e441a56fa6461234abe0c6516f643e",
+        "retrieved_at": "2026-10-18T15:45:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.dataset_profile",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_train_20240528.json",
+        "sha256": "026adb028cc07f72e39af0952c8770fa630d59ea8ceffb4dc4fab5e01fd57b35",
+        "retrieved_at": "2026-10-18T15:45:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.dataset_profile",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/iMeanAI/Mind2Web-Live/resolve/160677b57f6a608e6d63b51849a33d2920b35588/mind2web-live_test_20241024.json",
+        "sha256": "abc2032302fed1ac801539ecc6003dd73ff0aafe824aaf9450e4e504a8ff83f2",
+        "retrieved_at": "2026-10-18T15:45:40Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:imeanai/webcanvas",
+        "evidence_url": "https://raw.githubusercontent.com/iMeanAI/WebCanvas/b9f289128614cd99b97abd0bb9bfc3a45f0847e0/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2406.12373",
+        "evidence_url": "https://raw.githubusercontent.com/iMeanAI/WebCanvas/b9f289128614cd99b97abd0bb9bfc3a45f0847e0/README.md"
+      }
+    ],
+    "reviewed_sha256": "1d1ea013b8b39f2c526dec3846bd750199c5570c0961b7495ff3d1b99924438d",
+    "reviewed_at": "2026-10-18T15:46:21Z"
   }
 ]

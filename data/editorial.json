@@ -63143,5 +63143,155 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FiftyOne GUI Grounding Training Set with Synthetic Augmentation",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation",
+      "robustness"
+    ],
+    "summary": "4,036 GUI screenshots, mostly macOS browser views, with interaction keypoints and task descriptions: 739 manually annotated originals plus 3,297 color-vision and reworded-task variants made with a FiftyOne plugin.",
+    "scope": "core",
+    "verify_terms": [
+      "FiftyOne GUI Grounding Training Set with Synthetic Augmentation"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
+    ],
+    "notes": "First published as harpreetsahota/FiftyOne-GUI-Grounding-Train-with-Synthetic, which the Hub now resolves to this repository. The card describes grayscale, color inversion, six color-vision simulations, resolution scaling and text variants, and says synthetic samples carry a transform_record field. The exported samples at revision 3deedc5d have no such field (metadata.json lists none), and their tags name only three transforms: 1,884 tritanopia, 942 color-inverted and 471 task-description-augmented samples. The 739 originals are tagged 370 train and 369 val, and every synthetic sample is tagged train. The card's Apache-2.0 declaration does not cover the third-party applications and websites in the screenshots.",
+    "details": {
+      "hub_id": "Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+      "hub_revision": "3deedc5d3667696aff317e5e8a3b47d83b9fb48c",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/tree/3deedc5d3667696aff317e5e8a3b47d83b9fb48c",
+      "dataset_profile": {
+        "supervision": [
+          "human-placed interaction points",
+          "action types",
+          "natural-language task descriptions",
+          "programmatic image and text augmentations"
+        ],
+        "modalities": [
+          "screenshots",
+          "task descriptions",
+          "interaction keypoints"
+        ],
+        "formats": [
+          "FiftyOne dataset export (samples.json, metadata.json)",
+          "PNG"
+        ],
+        "splits": [
+          "train",
+          "val"
+        ],
+        "counts": [
+          {
+            "value": 4036,
+            "unit": "samples",
+            "qualifier": "exact",
+            "population": "whole release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
+          },
+          {
+            "value": 739,
+            "unit": "original annotated screenshots",
+            "qualifier": "exact",
+            "population": "real samples in the release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
+          },
+          {
+            "value": 3297,
+            "unit": "synthetic variant samples",
+            "qualifier": "exact",
+            "population": "augmented samples in the release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
+          },
+          {
+            "value": 4036,
+            "unit": "PNG files",
+            "qualifier": "exact",
+            "population": "data/ at Hub revision 3deedc5d",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/revision/3deedc5d3667696aff317e5e8a3b47d83b9fb48c"
+          }
+        ],
+        "notes": "Computed from samples.json at this revision (15.7 MB, read once, not retained as a receipt): 4,036 samples, of which 739 have plain timestamp file names and 3,297 carry a hash suffix; sample tags give 1,884 tritanopia, 942 color_inverted and 471 task_description_augmented variants, and 370 train plus 369 val originals; 17,916 keypoints in all, counted again on each variant; platform labels 3,721 macOS, 205 Mobile and 110 blank. Variants duplicate the annotations of their source screenshots, so samples are not independent examples. Samples, files and keypoints are different units and are not summed.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md",
+          "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/revision/3deedc5d3667696aff317e5e8a3b47d83b9fb48c",
+          "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/metadata.json"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/revision/3deedc5d3667696aff317e5e8a3b47d83b9fb48c",
+        "sha256": "3bb91cff67b20daec766bb819352cc443bc03a942985a27a2bb94f36734ddb60",
+        "retrieved_at": "2026-10-18T15:58:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/metadata.json",
+        "sha256": "350cc2918e6a826bfda5f5b5feb9f6f35320d5b7fd06eda1c677e269ee462d07",
+        "retrieved_at": "2026-10-18T15:58:39Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md",
+          "retrieved_at": "2026-10-18T15:58:38Z",
+          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to the third-party applications and websites shown in the screenshots."
+        },
+        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to the third-party applications and websites shown in the screenshots.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "44795390cfe06d7e1fe10541bb949f609cc1af8fd204857f6f6487eb3ba71895",
+    "reviewed_at": "2026-10-18T15:59:10Z"
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:hkust-nlp/guimid",
+    "url": "https://github.com/hkust-nlp/GUIMid",
+    "decision": "alias",
+    "target_id": "arxiv:2504.10127",
+    "reason": "Project page for the paper arXiv 2504.10127: the repository holds only a README with the paper title, results table and BibTeX, plus figure assets. Training code is marked coming soon, and the data it links is the indexed Hub dataset url:422010da7a5c845a18f6."
   }
 ]

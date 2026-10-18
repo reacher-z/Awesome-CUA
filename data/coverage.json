@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -523,8 +523,8 @@
       "resolved_aliases": 3,
       "curated": 109,
       "excluded": 1,
-      "set_aside": 9,
-      "unindexed": 44
+      "set_aside": 10,
+      "unindexed": 43
     },
     {
       "id": "delunn-multimodal",
@@ -1661,8 +1661,8 @@
       "resolved_aliases": 0,
       "curated": 2,
       "excluded": 0,
-      "set_aside": 6,
-      "unindexed": 21
+      "set_aside": 7,
+      "unindexed": 20
     },
     {
       "id": "release-multiui",

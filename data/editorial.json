@@ -1676,6 +1676,7 @@
     "reviewed_sha256": "e733115d9b2fbe910cb3891162f04a89af8cbda25255c8f0bf60f78101e4309a",
     "reviewed_at": "2026-10-16T06:35:58Z",
     "details": {
+      "repository_revision": "d775aa475f4ec3524c0502489b167673c2087282",
       "benchmark_protocol": {
         "focus": [
           "mobile task helpfulness",
@@ -1694,14 +1695,33 @@
           "task-specific shortcut actions"
         ],
         "evaluation": "Appium-backed task evaluators track goal achievement and harm prevention as separate booleans, plus risk-detection step and completion progress. The base evaluator defaults to max_step=15; task-specific overrides must be retained. Results are not a single generic success-rate metric.",
-        "counts": [],
-        "notes": "Inspected release/ver.3 branch exposes task definitions, Android environment and per-task evaluators. It requires Android API 34, Appium/ADB and documented third-party app versions; those APKs/accounts were not acquired. The action parser includes semantic shortcuts in addition to screen gestures, so this is not a strictly coordinate-only action setting. No corpus task total is inferred from evaluator-module or file counts. Apache-2.0 applies to repository code, not automatically app/data assets.",
+        "counts": [
+          {
+            "value": 250,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "asset/tasks/tasks.json (task category and task ID pairs)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/jylee425/mobilesafetybench/d775aa475f4ec3524c0502489b167673c2087282/asset/tasks/tasks.json"
+          },
+          {
+            "value": 28,
+            "unit": "task categories",
+            "qualifier": "exact",
+            "population": "asset/tasks/tasks.json",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/jylee425/mobilesafetybench/d775aa475f4ec3524c0502489b167673c2087282/asset/tasks/tasks.json"
+          }
+        ],
+        "notes": "Inspected release/ver.3 branch exposes task definitions, Android environment and per-task evaluators. It requires Android API 34, Appium/ADB and documented third-party app versions; those APKs/accounts were not acquired. The action parser includes semantic shortcuts in addition to screen gestures, so this is not a strictly coordinate-only action setting. The task counts come from asset/tasks/tasks.json at commit d775aa4, which environment.py reads to look up one task by category and task ID; ID strings such as high_risk_001 repeat across categories, so a task is a category/ID pair (100 low_risk and 150 high_risk IDs). Apache-2.0 applies to repository code, not automatically app/data assets.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md",
           "https://api.github.com/repos/jylee425/mobilesafetybench/git/trees/release/ver.3?recursive=1",
           "https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/mobile_safety/environment.py",
           "https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/mobile_safety/component/parser.py",
-          "https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/mobile_safety/evaluator/_base_evaluator.py"
+          "https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/mobile_safety/evaluator/_base_evaluator.py",
+          "https://api.github.com/repos/jylee425/mobilesafetybench/git/trees/d775aa475f4ec3524c0502489b167673c2087282?recursive=1",
+          "https://raw.githubusercontent.com/jylee425/mobilesafetybench/d775aa475f4ec3524c0502489b167673c2087282/asset/tasks/tasks.json"
         ]
       }
     },
@@ -1755,6 +1775,54 @@
         "supports": [
           "details.benchmark_protocol"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/jylee425/mobilesafetybench/git/trees/d775aa475f4ec3524c0502489b167673c2087282?recursive=1",
+        "sha256": "8dc66f6c5087a32c5c9fb7b3104ea6f9e0082255e2ba3cf9ba8244ce5a24da6f",
+        "retrieved_at": "2026-10-18T15:39:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/jylee425/mobilesafetybench/d775aa475f4ec3524c0502489b167673c2087282/asset/tasks/tasks.json",
+        "sha256": "f19777de4367de73dbf34bb3ef15d103d5c3f2725601ffe12d9803b96bd199e5",
+        "retrieved_at": "2026-10-18T15:39:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/mobilesafetybench/mobilesafetybench.github.io/4cffb7b8461452c027035751243711a1a67bf97a/index.html",
+        "sha256": "d5dcee676902930a37fc76fbc69c70712ca090e831e7c677033fabcdaeb4f4ba",
+        "retrieved_at": "2026-10-18T15:39:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/mobilesafetybench/mobilesafetybench.github.io/4cffb7b8461452c027035751243711a1a67bf97a/code.html",
+        "sha256": "7311c2f2a279f6ffe2a10de3f5983c27d43574292a1b3db4b13eca0ae906292a",
+        "retrieved_at": "2026-10-18T15:39:23Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2410.17520",
+        "evidence_url": "https://raw.githubusercontent.com/mobilesafetybench/mobilesafetybench.github.io/4cffb7b8461452c027035751243711a1a67bf97a/index.html"
       }
     ]
   },

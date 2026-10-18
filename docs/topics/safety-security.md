@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (2)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,7 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| [Hermes Connector](https://github.com/CorsenAI/hermes-connector) | — | code MIT | Chrome extension and local companion that let a Hermes Agent session read and control only the signed-in tabs a user attaches, routing each browser request to that exact session. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/CorsenAI/hermes-connector/HEAD/README.md) |
 
 ## Surveys
 

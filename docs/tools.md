@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
+**21 resources:** [Web (11)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -21,6 +21,7 @@ All entries in this section: web.
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
 | [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
 | [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | — | code Apache-2.0 | MCP tools for browser control and inspection through Chrome DevTools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/HEAD/README.md) |
+| [Hermes Connector](https://github.com/CorsenAI/hermes-connector) | — | code MIT | Chrome extension and local companion that let a Hermes Agent session read and control only the signed-in tabs a user attaches, routing each browser request to that exact session. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/CorsenAI/hermes-connector/HEAD/README.md) |
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | — | code Apache-2.0 | MCP server that lets LLM clients drive Playwright browsers through structured accessibility snapshots instead of screenshots, with opt-in vision, PDF and devtools capabilities. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright-mcp/HEAD/README.md) |
 | [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
 | [Tarsier](https://github.com/reworkd/tarsier) | — | code MIT | Perception utilities for web agents that tag interactable elements with typed IDs an LLM can act on, and use OCR to render page screenshots as whitespace-structured text for models without vision. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/reworkd/tarsier/HEAD/README.md) |

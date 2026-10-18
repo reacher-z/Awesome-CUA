@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (18)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
 
 ## Benchmarks
 
@@ -131,6 +131,7 @@ All entries in this section: web.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android, ios | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Experiment framework for developing and evaluating browser agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ServiceNow/AgentLab/HEAD/README.md) |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |

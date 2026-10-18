@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**75 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
+**76 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (14)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -97,6 +97,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android, ios | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) | cross-platform | [2604.11784](https://arxiv.org/abs/2604.11784) (2026) | code Apache-2.0 | Framework for GUI agent training, evaluation, and deployment. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/ClawGUI/HEAD/README.md) |
 | [CUAWright (formerly Webwright)](https://github.com/microsoft/Webwright) | web, desktop | [2610.04116](https://arxiv.org/abs/2610.04116) (2026) | code MIT | Agent framework for browser and desktop tasks using automation code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/Webwright/HEAD/README.md) |

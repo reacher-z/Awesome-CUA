@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (38)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -138,6 +138,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
 | [Agent Workflow Memory implementation](https://github.com/zorazrw/agent-workflow-memory) | web | [2409.07429](https://arxiv.org/abs/2409.07429) (2024) | code Apache-2.0 | Research code that extracts reusable browser-task routines from demonstrations or prior executions, stores them as workflow memory and reuses them during subsequent navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zorazrw/agent-workflow-memory/HEAD/README.md) |
+| [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android, ios | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
 | [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Experiment framework for developing and evaluating browser agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ServiceNow/AgentLab/HEAD/README.md) |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |

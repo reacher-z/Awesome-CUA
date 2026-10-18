@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (21)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -124,6 +124,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android, ios | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
 | [CHOP](https://github.com/Yuqi-Zhou/CHOP) | android, harmonyos | [2503.03743](https://arxiv.org/abs/2503.03743) (2025) | code MIT | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
 
 ## Benchmarks
 
@@ -34,12 +34,11 @@
 
 ## Frameworks
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
-| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent-Eval-Refine](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android, ios | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Code for judging web and mobile agent trajectories with a captioner-plus-LLM or GPT-4V evaluator, using the verdicts in Reflexion on WebArena and filtered behavior cloning on iOS, plus Android emulator runners. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
+| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
+| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 
 ## Tools
 

@@ -11,10 +11,10 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1483,
   "discovery_identifiers": 4052,
-  "unindexed_candidates": 903,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 80,
   "alias_candidates": 9,
-  "out_of_scope_candidates": 0,
+  "out_of_scope_candidates": 1,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -432,8 +432,8 @@
       "curated": 24,
       "excluded": 0,
       "set_aside": 4,
-      "out_of_scope": 0,
-      "unindexed": 85
+      "out_of_scope": 1,
+      "unindexed": 84
     },
     {
       "id": "steel-web-archive",
@@ -618,8 +618,8 @@
       "curated": 8,
       "excluded": 0,
       "set_aside": 2,
-      "out_of_scope": 0,
-      "unindexed": 50
+      "out_of_scope": 1,
+      "unindexed": 49
     },
     {
       "id": "yearly-gui",

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:reworkd/agentgpt",
+    "url": "https://github.com/reworkd/AgentGPT",
+    "decision": "out_of_scope",
+    "reason": "AgentGPT is an archived web application that runs an autonomous goal-to-task LLM loop whose tools are web search, Wikipedia search, code and image generation; the browser is only its user interface. It never observes or operates web pages, desktop applications or mobile screens, so it is a generic LLM agent platform rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T12:19:59Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/reworkd/AgentGPT/HEAD/README.md",
+      "sha256": "93e162f0fd70c55376ba1f597097f9e61d72a52a8da37d7ae90b1a03c6425ea1",
+      "retrieved_at": "2026-10-18T11:50:07Z"
+    }
   }
 ]

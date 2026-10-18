@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-18 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+19 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (15)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (2)](#infrastructure) · [Papers (15)](#papers)
 
 ## Benchmarks
 
@@ -24,11 +24,10 @@ All entries in this section: desktop, linux.
 
 ## Infrastructure
 
-All entries in this section: linux, desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [celestia-kai](https://github.com/ShiinaHiiragi/Celestia) | desktop, linux | — | code GPL-2.0 | Modified Celestia build from ScienceBoard whose Qt app runs a local HTTP server; its /dump route returns simulation time, observer and render settings as JSON so the benchmark can check astronomy tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/celestia/HEAD/manual.md) |
+| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
 
 ## Papers
 

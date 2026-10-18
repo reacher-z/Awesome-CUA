@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -124,6 +124,7 @@
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-TARS](https://github.com/bytedance/UI-TARS) | cross-platform | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | code Apache-2.0 | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bytedance/UI-TARS/HEAD/README.md) |
 | [UI-TARS 1.5 7B](https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B) | cross-platform | — | weights apache-2.0 | UI-TARS 1.5 GUI-agent checkpoint in the Qwen2.5-VL architecture with about 8.3B parameters stored in FP32, released under Apache-2.0 for English image-text-to-text use in Transformers. | [✓ 2026‑10‑16](https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-1.5-7B) |
+| [UI-TARS 7B SFT](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-SFT) | cross-platform, web, desktop, android | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | weights apache-2.0 | SFT-labelled 7B UI-TARS checkpoint: a native GUI agent model in the Qwen2-VL architecture, stored in FP32, for screen perception, element grounding and multi-step actions on web, mobile and desktop. | [✓ 2026‑10‑18](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-SFT/raw/3434901a9dd04dd3625617d839a5724fe5e2db20/README.md) |
 | [UI-Venus](https://github.com/inclusionAI/UI-Venus) | cross-platform | [2508.10833](https://arxiv.org/abs/2508.10833) (2025), [2602.09082](https://arxiv.org/abs/2602.09082) (2026), [2609.00028](https://arxiv.org/abs/2609.00028) (2026) | — | GUI agent model family; UI-Venus-2, at 9B and 27B, acts on mobile, web and desktop in one end-to-end agent, trained with keypoint-based multi-judge task verification. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/inclusionAI/UI-Venus/HEAD/README.md) |
 | [UI-Venus 2 9B](https://huggingface.co/inclusionAI/UI-Venus-2-9b) | cross-platform | — | — | UI-Venus 2 GUI-agent checkpoint fine-tuned from Qwen3.5-9B, with about 9.4B BF16 parameters in the Qwen3.5 multimodal architecture, loaded through Transformers for image-text-to-text. | [✓ 2026‑10‑16](https://huggingface.co/api/models/inclusionAI/UI-Venus-2-9b) |
 | [UIX-Qwen2](https://huggingface.co/neulab/UIX-Qwen2) | web | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | weights odc-by | A MultiUI-trained visual-language checkpoint for text-rich webpage understanding and interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/neulab/UIX-Qwen2/raw/main/README.md) |

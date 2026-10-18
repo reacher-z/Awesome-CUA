@@ -63143,5 +63143,73 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "UI-TARS 7B SFT",
+    "kind": "model",
+    "url": "https://huggingface.co/ByteDance-Seed/UI-TARS-7B-SFT",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "summary": "SFT-labelled 7B UI-TARS checkpoint: a native GUI agent model in the Qwen2-VL architecture, stored in FP32, for screen perception, element grounding and multi-step actions on web, mobile and desktop.",
+    "scope": "core",
+    "verify_terms": [
+      "UI-TARS-7B-SFT"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/ByteDance-Seed/UI-TARS-7B-SFT/raw/3434901a9dd04dd3625617d839a5724fe5e2db20/README.md"
+    ],
+    "family_url": "https://github.com/bytedance/UI-TARS",
+    "documented_by": [
+      "2501.12326"
+    ],
+    "notes": "Hub API at revision 3434901a lists seven F32 safetensors shards (about 8.29B parameters) in the Qwen2VLForConditionalGeneration architecture; the repository is not gated. The card declares Apache-2.0 for the checkpoint. The card's sibling links use the earlier bytedance-research namespace. Its card reports 17.7 on OSWorld with a 15-step budget and 33.0 on AndroidWorld for this checkpoint. Card benchmark tables are publisher measurements and were not reproduced.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "ByteDance-Seed/UI-TARS-7B-SFT",
+      "hub_revision": "3434901a9dd04dd3625617d839a5724fe5e2db20",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/ByteDance-Seed/UI-TARS-7B-SFT/tree/main",
+      "architecture": "Qwen2VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "repository_url": "https://github.com/bytedance/UI-TARS"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-7B-SFT",
+        "sha256": "593a8f425ecb4c6302873bbb7bda9dec0c66bcb973860d8919a1b4ed6709f2a6",
+        "retrieved_at": "2026-10-18T11:34:12Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4a0e03cea82f6d539b7d618e5df4648232c108dda3d0321a6adbbf29dd4db00e",
+    "reviewed_at": "2026-10-18T11:34:34Z"
   }
 ]

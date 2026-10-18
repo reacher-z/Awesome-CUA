@@ -63143,5 +63143,84 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "VibeSurf",
+    "kind": "agent",
+    "url": "https://github.com/vibesurf-ai/VibeSurf",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Browser assistant with a Chrome-extension UI that runs parallel Browser Use agents across tabs and Langflow-based drag-and-drop browser workflows for logins, data collection and research, using local or hosted LLMs.",
+    "scope": "core",
+    "verify_terms": [
+      "VibeSurf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/README.md"
+    ],
+    "notes": "pyproject.toml pins browser-use 0.9.5; the README also credits LangGraph and Langflow, and the tree vendors a langflow directory. It installs as a uv tool, a Windows installer or a Docker image with noVNC; from Chrome 142 the extension must be loaded manually. Integrations include Composio and site APIs for Xiaohongshu, Douyin, Weibo and YouTube. The README's token-saving and speed claims were not tested. The LICENSE is a 'VibeSurf Open Source License' that adds multi-tenant, SaaS, frontend-logo and contributor conditions to Apache-2.0, while pyproject.toml declares plain Apache-2.0, so the code license is left unknown. Latest release 0.5.18 (2026-01-17). Code was read, not run.",
+    "details": {
+      "availability": "Public source, PyPI package installed with uv, a Windows installer and a GHCR Docker image"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/pyproject.toml",
+        "sha256": "97b5d7bf51bf343eaced126fd67164a5642e56c2a206a41020a70367b68a6f6a",
+        "retrieved_at": "2026-10-18T12:06:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/LICENSE",
+        "sha256": "ca7712f8e100ee3f6ee6316c8fad4be37dfeb0b1e88be27631ec04259ae1b9d7",
+        "retrieved_at": "2026-10-18T12:06:27Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:browser-use/browser-use",
+        "evidence_url": "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/pyproject.toml"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The LICENSE is a custom 'VibeSurf Open Source License' (Apache-2.0 plus multi-tenant, SaaS, frontend-logo and contributor conditions), which conflicts with the plain Apache-2.0 declared in pyproject.toml; no standard identifier applies, so the code license stays unknown.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/LICENSE",
+          "https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/pyproject.toml"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7b114b2c218e8555f36f5eeabd6a3c90d6c700cb74b175f0019d08b277d3ed9e",
+    "reviewed_at": "2026-10-18T12:06:50Z"
   }
 ]

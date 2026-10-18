@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-110 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+111 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (79)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (79)](#papers)
 
 ## Benchmarks
 
@@ -35,6 +35,7 @@
 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | desktop, windows, linux | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | — | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
 | [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | desktop, web | — | code Apache-2.0 | Desktop app for a local GUI agent driven by UI-TARS and Seed-1.5-VL/1.6 models, offering local and remote operators for computers and browsers; the repository also ships the Agent TARS CLI and web UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bytedance/UI-TARS-desktop/HEAD/README.md) |
+| [VibeSurf](https://github.com/vibesurf-ai/VibeSurf) | web | — | — | Browser assistant with a Chrome-extension UI that runs parallel Browser Use agents across tabs and Langflow-based drag-and-drop browser workflows for logins, data collection and research, using local or hosted LLMs. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/vibesurf-ai/VibeSurf/HEAD/README.md) |
 
 ## Frameworks
 

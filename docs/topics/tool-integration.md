@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (6)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -40,6 +40,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AppClaw](https://github.com/appclawhq/AppClaw) | android, ios | — | code Apache-2.0 | Plain-language Android and iOS automation agent over appium-mcp, with deterministic YAML flows, step recording and export, and a vitest-style test runner for devices. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/appclawhq/AppClaw/HEAD/README.md) |
 | [AutoDroid V2](https://github.com/MobileLLM/AutoDroid-V2) | android | [2412.18116](https://arxiv.org/abs/2412.18116) (2024) | — | An Android automation implementation that builds app documentation from exploration traces and evaluates language-model-generated execution code in emulator workflows. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MobileLLM/AutoDroid-V2/HEAD/README_minimal.md) |
 | [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) | desktop | — | code Apache-2.0 | Assistant framework combining code execution and computer interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenInterpreter/open-interpreter/HEAD/README.md) |
 | [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) | web | [2310.10634](https://arxiv.org/abs/2310.10634) (2023) | code Apache-2.0 | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md) |

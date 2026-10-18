@@ -63143,5 +63143,40 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AppClaw",
+    "kind": "agent",
+    "url": "https://github.com/appclawhq/AppClaw",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Plain-language Android and iOS automation agent over appium-mcp, with deterministic YAML flows, step recording and export, and a vitest-style test runner for devices.",
+    "scope": "core",
+    "verify_terms": [
+      "AppClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/appclawhq/AppClaw/HEAD/README.md"
+    ],
+    "notes": "Needs Node.js 22+, a connected device, emulator or simulator, and a key for a hosted LLM provider or a local Ollama model. Published as the @appclaw/cli, @appclaw/runner and @appclaw/core npm packages. Cloud devices are mentioned but were not inspected. Apache-2.0 is declared for the code only.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "096a2f39bd185e9063c99f5cf1d21e43c66c25d2eab47ff4c349962509c14bf7",
+    "reviewed_at": "2026-10-18T10:54:13Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (17)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -106,6 +106,7 @@
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TencentQQGYLab/AppAgent/HEAD/README.md) |
 | [AppAgent Pro](https://github.com/LaoKuiZe/AppAgent-Pro) | android | [2508.18689](https://arxiv.org/abs/2508.18689) (2025) | code MIT | Proactive Android agent built on AppAgent that uses GPT-4o to decide whether YouTube or Amazon content would help, operates those apps over ADB, and merges what it finds into its answer. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/LaoKuiZe/AppAgent-Pro/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |
+| [AppClaw](https://github.com/appclawhq/AppClaw) | android, ios | — | code Apache-2.0 | Plain-language Android and iOS automation agent over appium-mcp, with deterministic YAML flows, step recording and export, and a vitest-style test runner for devices. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/appclawhq/AppClaw/HEAD/README.md) |
 | [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/cooelf/Auto-GUI/HEAD/README.md) |
 | [AutoDroid](https://github.com/MobileLLM/AutoDroid) | android | [2308.15272](https://arxiv.org/abs/2308.15272) (2023) | — | LLM-powered Android task automation built on DroidBot, released with DroidTask, a dataset of per-app screenshots, view hierarchies, exploration records and ground-truth task files. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MobileLLM/AutoDroid/HEAD/README.md) |
 | [AutoDroid V2](https://github.com/MobileLLM/AutoDroid-V2) | android | [2412.18116](https://arxiv.org/abs/2412.18116) (2024) | — | An Android automation implementation that builds app documentation from exploration traces and evaluates language-model-generated execution code in emulator workflows. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MobileLLM/AutoDroid-V2/HEAD/README_minimal.md) |

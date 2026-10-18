@@ -59932,11 +59932,30 @@
         "splits": [
           "training"
         ],
-        "counts": [],
-        "notes": "Public manifest exposes data.zip; the internal file schema and number of examples remain unverified. Supervision describes the publisher’s refinement/thought-completion/trajectory-boost pipeline, not an independently sampled data-quality audit.",
+        "counts": [
+          {
+            "value": 312,
+            "unit": "human trajectories",
+            "qualifier": "exact",
+            "population": "task trajectories collected with PC Tracker and augmented for training, arXiv 2505.13909v2",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2505.13909v2"
+          },
+          {
+            "value": 27000,
+            "unit": "training samples",
+            "qualifier": "approximately",
+            "population": "samples built from the 312 augmented trajectories, arXiv 2505.13909v2",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2505.13909v2"
+          }
+        ],
+        "notes": "Public manifest exposes data.zip. The card says this repository holds the dataset used in the paper, which reports 27K training samples built from 312 human trajectories after Trajectory Boost; whether data.zip holds exactly these samples was not checked, and its internal schema remains unverified. Supervision describes the publisher’s refinement/thought-completion/trajectory-boost pipeline, not an independently sampled data-quality audit.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md",
-          "https://huggingface.co/api/datasets/henryhe0123/PC-Agent-E"
+          "https://huggingface.co/api/datasets/henryhe0123/PC-Agent-E",
+          "https://arxiv.org/html/2505.13909v2",
+          "https://huggingface.co/datasets/henryhe0123/PC-Agent-E/raw/4f64c7b055154bed9ffea677aa86aeb51a01cb73/README.md"
         ]
       }
     },
@@ -59966,8 +59985,19 @@
         "method": "editorial_primary_review",
         "supports": [
           "relations",
-          "licenses.data"
+          "licenses.data",
+          "details.dataset_profile"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2505.13909v2",
+        "sha256": "c731dd8ed3cee9f1bdb97ac44b780fda5ff092437303c783cf4014c48e9fcc90",
+        "retrieved_at": "2026-10-18T16:14:33Z"
       }
     ],
     "documented_by": [

@@ -36045,6 +36045,28 @@
           "environments",
           "notes"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/1ba06e8b3690b66b643063ce2d6597870484016e/simple_normal_tasks.json",
+        "sha256": "36a329996ba61ed32fc602d8d8fff4a3dbcd04247fe35ce20bf263ac28a64eae",
+        "retrieved_at": "2026-10-18T15:38:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/1ba06e8b3690b66b643063ce2d6597870484016e/complex_normal_tasks.json",
+        "sha256": "4cb27fc1b3eca62abaa5b41aa360f8129067865a16ebf9887d2a85546b750d1d",
+        "retrieved_at": "2026-10-18T15:38:11Z"
       }
     ],
     "details": {
@@ -36053,7 +36075,24 @@
       "disabled": false,
       "download_url": "https://huggingface.co/datasets/xwk123/MobileBench-v2/tree/main",
       "benchmark_protocol": {
-        "counts": [],
+        "counts": [
+          {
+            "value": 8909,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "common-simple complete set (simple_normal_tasks.json) at Hub revision 1ba06e8b",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/1ba06e8b3690b66b643063ce2d6597870484016e/simple_normal_tasks.json"
+          },
+          {
+            "value": 3745,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "common-complex complete set (complex_normal_tasks.json) at Hub revision 1ba06e8b",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/1ba06e8b3690b66b643063ce2d6597870484016e/complex_normal_tasks.json"
+          }
+        ],
         "focus": [
           "offline multi-path evaluation",
           "noisy interfaces",
@@ -36070,12 +36109,15 @@
           "clarification responses"
         ],
         "evaluation": "Paper defines multi-path and noise/ambiguity evaluations; the public card identifies which files are full common-task sets and which are samples.",
-        "notes": "Release completeness differs by split. No full-benchmark sample total is inferred from the archive manifest.",
+        "notes": "Release completeness differs by split. Counts cover only the two files the card calls complete common-task sets, one entry per uniquely named task; the noisy, contaminated and ambiguous splits are sampled or archived subsets and are not counted. No total across splits is computed.",
         "evidence_urls": [
           "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md",
-          "https://export.arxiv.org/api/query?id_list=2503.16788%2C2503.17709%2C2503.18492%2C2503.19537%2C2503.20978%2C2503.21620%2C2503.23434%2C2504.01382%2C2504.07981%2C2504.10445%2C2504.10458%2C2504.11257%2C2504.11281%2C2504.12679%2C2504.13805%2C2504.13865%2C2504.14239%2C2504.18575%2C2504.19838%2C2504.20464%2C2505.10924%2C2505.11891%2C2505.12299%2C2505.12632%2C2505.13227%2C2505.13887%2C2505.13909%2C2505.14289%2C2505.15810%2C2505.16282%2C2505.16827%2C2505.18829%2C2505.19897%2C2505.21496%2C2505.21499%2C2505.21936%2C2505.22648%2C2505.23762%2C2505.24838%2C2506.00618%2C2506.01391%2C2506.01968%2C2506.02456%2C2506.03143%2C2506.03569%2C2506.04135%2C2506.04614%2C2506.07672%2C2506.08012%2C2506.08972&max_results=50"
+          "https://export.arxiv.org/api/query?id_list=2503.16788%2C2503.17709%2C2503.18492%2C2503.19537%2C2503.20978%2C2503.21620%2C2503.23434%2C2504.01382%2C2504.07981%2C2504.10445%2C2504.10458%2C2504.11257%2C2504.11281%2C2504.12679%2C2504.13805%2C2504.13865%2C2504.14239%2C2504.18575%2C2504.19838%2C2504.20464%2C2505.10924%2C2505.11891%2C2505.12299%2C2505.12632%2C2505.13227%2C2505.13887%2C2505.13909%2C2505.14289%2C2505.15810%2C2505.16282%2C2505.16827%2C2505.18829%2C2505.19897%2C2505.21496%2C2505.21499%2C2505.21936%2C2505.22648%2C2505.23762%2C2505.24838%2C2506.00618%2C2506.01391%2C2506.01968%2C2506.02456%2C2506.03143%2C2506.03569%2C2506.04135%2C2506.04614%2C2506.07672%2C2506.08012%2C2506.08972&max_results=50",
+          "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/1ba06e8b3690b66b643063ce2d6597870484016e/simple_normal_tasks.json",
+          "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/1ba06e8b3690b66b643063ce2d6597870484016e/complex_normal_tasks.json"
         ]
-      }
+      },
+      "hub_revision": "1ba06e8b3690b66b643063ce2d6597870484016e"
     },
     "reviewed_relations": [
       {
@@ -36097,8 +36139,13 @@
     ],
     "reviewed_licenses": {
       "data": {
-        "value": null,
-        "reason": "The same first-party card has an Apache-2.0 metadata header but explicitly assigns Apache-2.0 to code and CC-BY-NC-SA-4.0 to the dataset in its License section. Preserve both declarations and leave a single data license unresolved instead of displaying the permissive header as the data permission.",
+        "value": {
+          "declared": "cc-by-nc-sa-4.0",
+          "url": "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md",
+          "retrieved_at": "2026-10-17T04:01:33Z",
+          "basis": "Dataset-scoped statement in the card's License section; the same section assigns Apache-2.0 to code only."
+        },
+        "reason": "The card's License section explicitly licenses the dataset under CC BY-NC-SA 4.0 and assigns Apache-2.0 to the code. The YAML header's apache-2.0 tag names no scope, so the explicit dataset statement sets the data slot; the card asks commercial users to contact the copyright holder.",
         "evidence_urls": [
           "https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md"
         ]

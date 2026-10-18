@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:magicgh/ask-before-plan",
+    "url": "https://github.com/magicgh/Ask-before-Plan",
+    "decision": "out_of_scope",
+    "reason": "Ask-before-Plan is the code for a proactive planning agent (arXiv:2406.12639) that asks clarifying questions and then calls Python tool APIs over a static travel environment (flights, accommodations, attractions, cities, budget). It operates no web page, GUI or device, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-18T11:48:59Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/magicgh/Ask-before-Plan/HEAD/README.md",
+      "sha256": "c82c357b7a4cb1a3f05c4b61351ef636a592a4fc7ae508040267f38140cdc2eb",
+      "retrieved_at": "2026-10-18T11:33:40Z"
+    }
   }
 ]

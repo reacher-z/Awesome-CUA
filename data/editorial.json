@@ -7990,7 +7990,94 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "24251854f9481af5c8db65750197604546f000b54868930a6de79adc365db854",
-    "reviewed_at": "2026-10-16T06:40:54Z"
+    "reviewed_at": "2026-10-16T06:40:54Z",
+    "documented_by": [
+      "2411.02391"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "details": {
+      "repository_revision": "715834bf04730c081ef55685d2247e306166ac13",
+      "benchmark_protocol": {
+        "focus": [
+          "adversarial pop-ups drawn into computer-agent observations",
+          "OSWorld and VisualWebArena task subsets"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots",
+          "set-of-marks screenshots"
+        ],
+        "actions": [],
+        "evaluation": "The same tasks are run with and without an attack config. The README defines attack success rate as how often the agent clicks a pop-up and reports the change in task success rate on the original OSWorld and VisualWebArena tasks.",
+        "counts": [
+          {
+            "value": 50,
+            "unit": "OSWorld tasks",
+            "qualifier": "exact",
+            "population": "OSWorld/evaluation_examples/test_easy.json at commit 715834b",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/OSWorld/evaluation_examples/test_easy.json"
+          },
+          {
+            "value": 72,
+            "unit": "VisualWebArena tasks",
+            "qualifier": "exact",
+            "population": "VisualWebArena/agent_easy test set named in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md"
+          }
+        ],
+        "notes": "Counted unique task IDs in test_easy.json, spread over ten OSWorld application groups. The VisualWebArena run script iterates test indices 0 to 72 over agent_easy. The README places the attack logic in the repository's modified OSWorld and VisualWebArena snapshots, which need their own VM and web-environment setup; no run was performed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md",
+          "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/OSWorld/evaluation_examples/test_easy.json",
+          "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/OSWorld/task_run.sh",
+          "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/VisualWebArena/task_run.sh"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/OSWorld/evaluation_examples/test_easy.json",
+        "sha256": "7b5b54dec38858e72c404f1f0b7d1b9bd15fd1266bd99490a768bc80dcf926d5",
+        "retrieved_at": "2026-10-18T15:42:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/OSWorld/task_run.sh",
+        "sha256": "efffd953fe5b89fbe04a7114ae1c870db5f71b67f461c46bdaaf176afef0f353",
+        "retrieved_at": "2026-10-18T15:42:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/SALT-NLP/PopupAttack/715834bf04730c081ef55685d2247e306166ac13/VisualWebArena/task_run.sh",
+        "sha256": "be3e4452304e3289416dc08f6a6433e05ec9ea85198ba3f5da1575e7f6dad564",
+        "retrieved_at": "2026-10-18T15:42:51Z"
+      }
+    ]
   },
   {
     "name": "OS-Sentinel",

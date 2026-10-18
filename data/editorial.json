@@ -63143,5 +63143,99 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:0c9ce9f220b2fdfd70b0",
+    "name": "Holo3.1 35B-A3B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo-3.1-35B-A3B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "mobile-navigation",
+      "tool-integration"
+    ],
+    "summary": "35B-A3B checkpoint of H Company's Holo3.1 family, a sparse mixture-of-experts vision-language model for web, desktop and mobile computer use with native function calling.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo3.1"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo-3.1-35B-A3B/raw/2bdb92851a8cd9d72cdd891fdf38cfcc7fefae2c/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "notes": "Hub API at revision 2bdb9285 lists 26 BF16 safetensors shards (about 35.1B parameters) in the Qwen3_5MoeForConditionalGeneration architecture; the repository is not gated. The card is written for the whole Holo3.1 family (0.8B, 4B, 9B and 35B-A3B) and names web, desktop and mobile without a mobile operating system. Its YAML base_model lists Qwen3.6-35B-A3B and three Qwen3.5 sizes while its prose says the Qwen 3.5 family, so base_model is unset. FP8, NVFP4 and GGUF quantizations are separate Hub repositories and are not added here. Benchmark results appear only as images and are not recorded. The card declares Apache-2.0 for the weights.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "Hcompany/Holo-3.1-35B-A3B",
+      "hub_revision": "2bdb92851a8cd9d72cdd891fdf38cfcc7fefae2c",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo-3.1-35B-A3B/tree/2bdb92851a8cd9d72cdd891fdf38cfcc7fefae2c",
+      "architecture": "Qwen3_5MoeForConditionalGeneration",
+      "parameter_label": "35B-A3B",
+      "listed_weight_files": [
+        "model-00001-of-00026.safetensors",
+        "model-00002-of-00026.safetensors",
+        "model-00003-of-00026.safetensors",
+        "model-00004-of-00026.safetensors",
+        "model-00005-of-00026.safetensors",
+        "model-00006-of-00026.safetensors",
+        "model-00007-of-00026.safetensors",
+        "model-00008-of-00026.safetensors",
+        "model-00009-of-00026.safetensors",
+        "model-00010-of-00026.safetensors",
+        "model-00011-of-00026.safetensors",
+        "model-00012-of-00026.safetensors",
+        "model-00013-of-00026.safetensors",
+        "model-00014-of-00026.safetensors",
+        "model-00015-of-00026.safetensors",
+        "model-00016-of-00026.safetensors",
+        "model-00017-of-00026.safetensors",
+        "model-00018-of-00026.safetensors",
+        "model-00019-of-00026.safetensors",
+        "model-00020-of-00026.safetensors",
+        "model-00021-of-00026.safetensors",
+        "model-00022-of-00026.safetensors",
+        "model-00023-of-00026.safetensors",
+        "model-00024-of-00026.safetensors",
+        "model-00025-of-00026.safetensors",
+        "model-00026-of-00026.safetensors"
+      ]
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo-3.1-35B-A3B/revision/2bdb92851a8cd9d72cdd891fdf38cfcc7fefae2c",
+        "sha256": "c21a7d4a5b4439f67cc6d15e45b1a8185726ad490307fd42f9c03ebce23492ff",
+        "retrieved_at": "2026-10-18T15:44:13Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d99bf15b6e5cb377b1b7a75f3cd8e2b0e07d4aa3323576c0e1477afe90712d1a",
+    "reviewed_at": "2026-10-18T15:44:37Z"
   }
 ]

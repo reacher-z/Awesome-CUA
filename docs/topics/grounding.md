@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -18,6 +18,7 @@
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) · [leaderboard](https://gui-agent.github.io/grounding-leaderboard) | desktop, windows, macos, linux | — | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding/HEAD/readme.md) |
 | [ScreenSpot v2](https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2) | cross-platform | — | — | data apache-2.0 | Second version of the ScreenSpot grounding test set, published by OS-Copilot as separate desktop, mobile and web annotation files with a shared screenshot archive. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/OS-Copilot/ScreenSpot-v2) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
+| [showdown-clicks](https://huggingface.co/datasets/generalagents/showdown-clicks) | macos, desktop | — | [557 annotated clicks](https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/showdown-clicks-dev/data.csv) · [5,679 left clicks](https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md) | data mit | Offline click benchmark from General Agents: 557 human left clicks on macOS screenshots, each with an instruction and the bounding box of valid click locations, scored by whether a predicted point lands inside. | [✓ 2026‑10‑18](https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md) |
 | [WebClick](https://huggingface.co/datasets/Hcompany/WebClick) | web | [2506.02865](https://arxiv.org/abs/2506.02865) (2025) | [1,639 examples](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) | — | A web-interface localization benchmark with screenshot instructions and target boxes, including agent browsing, human browsing and calendar cases. | [✓ 2026‑10‑17](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) |
 
 ## Datasets

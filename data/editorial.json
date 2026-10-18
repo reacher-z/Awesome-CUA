@@ -63143,5 +63143,114 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "showdown-clicks",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/generalagents/showdown-clicks",
+    "environments": [
+      "macos",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation"
+    ],
+    "summary": "Offline click benchmark from General Agents: 557 human left clicks on macOS screenshots, each with an instruction and the bounding box of valid click locations, scored by whether a predicted point lands inside.",
+    "scope": "core",
+    "aliases": [
+      "Showdown-Clicks",
+      "showdown-clicks-dev"
+    ],
+    "verify_terms": [
+      "showdown-clicks"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md"
+    ],
+    "notes": "The card describes showdown-clicks as part of General Agents' showdown suite and a 5,679-click collection recorded in late 2024, of which only the 557-click showdown-clicks-dev subset is released; the remainder is not public. Screenshots range from 1280x800 to 1680x1050. The card's results table includes the publisher's own ace-control models; those scores were not reproduced. The card declares MIT and notes that screenshots may contain third-party content. The companion repository github.com/generalagents/showdown was not reviewed.",
+    "details": {
+      "hub_id": "generalagents/showdown-clicks",
+      "hub_revision": "a6dfa6415d7fdd41fb5c0544e1dd9a5da439f1ce",
+      "gated": false,
+      "disabled": false,
+      "benchmark_protocol": {
+        "focus": [
+          "instruction-conditioned click grounding",
+          "low-level desktop control"
+        ],
+        "setting": "offline",
+        "observations": [
+          "macOS screenshots"
+        ],
+        "actions": [
+          "single left-click coordinate"
+        ],
+        "evaluation": "A prediction counts as correct when the predicted click point falls inside the annotated bounding box of viable click locations; the card reports accuracy with bootstrapped 95% confidence intervals and latency.",
+        "counts": [
+          {
+            "value": 557,
+            "unit": "annotated clicks",
+            "qualifier": "exact",
+            "population": "showdown-clicks-dev/data.csv (dev split)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/showdown-clicks-dev/data.csv"
+          },
+          {
+            "value": 5679,
+            "unit": "left clicks",
+            "qualifier": "exact",
+            "population": "full showdown-clicks collection described by the card; not released",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md"
+          }
+        ],
+        "notes": "The released CSV has 557 rows with unique IDs and screenshots, and columns for instruction, bounding box and image size. Only the dev subset is public, so scores on the full collection cannot be reproduced from the release.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md",
+          "https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/showdown-clicks-dev/data.csv"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_revision",
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/api/datasets/generalagents/showdown-clicks",
+        "sha256": "b1a8a685e2bca74891afc030decdb65fc46d2f0a2d2842df1df24faa2999c678",
+        "retrieved_at": "2026-10-18T11:14:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/showdown-clicks-dev/data.csv",
+        "sha256": "c13a190cdc2157438ec505778dfa21ebbce1b9f518d06b8d3ebb31737aeb5312",
+        "retrieved_at": "2026-10-18T11:14:41Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.benchmark_protocol",
+      "details.hub_id"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "14d46319e7abf54616df512b8bbc7d6d62347e9b1a36e21a61aa2c4667e909a4",
+    "reviewed_at": "2026-10-18T11:15:01Z"
   }
 ]

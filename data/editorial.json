@@ -49908,7 +49908,8 @@
         "method": "editorial_primary_review",
         "supports": [
           "release_status",
-          "details.repository_revision"
+          "details.repository_revision",
+          "relations"
         ],
         "url": "https://api.github.com/repos/xlang-ai/OpenAgents/git/trees/main?recursive=1",
         "sha256": "cf5a65d5a6b7ba2a9cf950421f6902534d523f7e8d850d1b23bd5395fd3d04c8",
@@ -49971,7 +49972,14 @@
           "https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/LICENSE"
         ]
       }
-    }
+    },
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:xlang-ai/openagents",
+        "evidence_url": "https://api.github.com/repos/xlang-ai/OpenAgents/git/trees/main?recursive=1"
+      }
+    ]
   },
   {
     "name": "UIBert AppSim and RefExp annotations",
@@ -63143,5 +63151,104 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenAgents",
+    "kind": "framework",
+    "url": "https://github.com/xlang-ai/OpenAgents",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "scope": "adjacent",
+    "summary": "Self-hostable platform with a Flask backend and Next.js chat UI for three language agents: a Python/SQL data agent, a plugins agent over 200+ APIs, and a web agent that drives Chrome through an extension.",
+    "verify_terms": [
+      "OpenAgents"
+    ],
+    "documented_by": [
+      "2310.10634"
+    ],
+    "notes": "Repository-level record for the full OpenAgents platform (COLM 2024). Browser control lives only in real_agents/web_agent and the WeBot Chrome extension, which already has its own component record; the extension posts processed page HTML to backend/api/webot_actions.py, which asks the model for the next action. The data and plugins agents act through code execution and API calls, not a GUI, so the platform as a whole is adjacent. The README hosts a public demo and describes local source deployment; the extension ships as frontend/webot_extension.zip, which was not downloaded or executed. Not a fork, not archived; last commit November 2024. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public backend, frontend and agent source for local deployment; the hosted demo is separate, and model API keys are supplied by the user.",
+      "repository_revision": "ff2e46440699af1324eb25655b622c4a131265bb",
+      "repository_tree_sha": "f5a0ea6fefb3126d11e0020f821a137007f787d2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xlang-ai/OpenAgents/git/commits/ff2e46440699af1324eb25655b622c4a131265bb",
+        "sha256": "192319fe09ccf7b4917cb78208bf143c01f7b9e1838b0248a43a7f18f334c35c",
+        "retrieved_at": "2026-10-18T15:42:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xlang-ai/OpenAgents/git/trees/f5a0ea6fefb3126d11e0020f821a137007f787d2?recursive=1",
+        "sha256": "cd1a2e4039c56edff425902602d215bc3001cf5f2e98d068bb69a633299b9b39",
+        "retrieved_at": "2026-10-18T15:42:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OpenAgents/ff2e46440699af1324eb25655b622c4a131265bb/backend/app.py",
+        "sha256": "74af841d92b325bc36ea5bd4fa5d27588e3e8b6c329275bdb773a9dd4ec680d4",
+        "retrieved_at": "2026-10-18T15:42:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OpenAgents/ff2e46440699af1324eb25655b622c4a131265bb/backend/api/webot_actions.py",
+        "sha256": "390bd768c07e3791453ef84e5dd08122b3bbbe6c1b941db336ed6e5b08fb457d",
+        "retrieved_at": "2026-10-18T15:42:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OpenAgents/ff2e46440699af1324eb25655b622c4a131265bb/frontend/package.json",
+        "sha256": "50eb8f995b7fede866659d1eff7fab3cbd87f2089c48c32864249e2712d708de",
+        "retrieved_at": "2026-10-18T15:42:15Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fb6ef7fdb133612467e27ffa642ccbe73cfb4bd8fb0c63c1bc629ad686694e1d",
+    "reviewed_at": "2026-10-18T15:42:41Z"
   }
 ]

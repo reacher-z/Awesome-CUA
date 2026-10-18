@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T15:42:41Z",
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -190,7 +190,7 @@
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
-    "framework": 75,
+    "framework": 76,
     "infrastructure": 14,
     "model": 98,
     "paper": 2697,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -256,7 +256,7 @@
       "linux": 6,
       "macos": 1,
       "unspecified": 2,
-      "web": 37,
+      "web": 38,
       "windows": 2
     },
     "infrastructure": {
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -344,13 +344,13 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 226,
-      "indexed_resources": 225,
+      "indexed": 227,
+      "indexed_resources": 226,
       "resolved_aliases": 6,
-      "curated": 215,
+      "curated": 216,
       "excluded": 0,
       "set_aside": 29,
-      "unindexed": 83
+      "unindexed": 82
     },
     {
       "id": "zju-gui",
@@ -460,13 +460,13 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 24,
-      "indexed_resources": 24,
+      "indexed": 25,
+      "indexed_resources": 25,
       "resolved_aliases": 1,
-      "curated": 24,
+      "curated": 25,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 82
+      "unindexed": 81
     },
     {
       "id": "steel-web-archive",
@@ -663,13 +663,13 @@
         "state": "success"
       },
       "discovered": 193,
-      "indexed": 150,
-      "indexed_resources": 150,
+      "indexed": 151,
+      "indexed_resources": 151,
       "resolved_aliases": 3,
-      "curated": 148,
+      "curated": 149,
       "excluded": 0,
       "set_aside": 15,
-      "unindexed": 28
+      "unindexed": 27
     },
     {
       "id": "osu-gui",
@@ -721,13 +721,13 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 93,
+      "indexed_resources": 93,
       "resolved_aliases": 1,
-      "curated": 83,
+      "curated": 84,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 45
+      "unindexed": 44
     },
     {
       "id": "jin-gui-hub",

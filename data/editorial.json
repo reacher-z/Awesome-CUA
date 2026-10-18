@@ -63143,5 +63143,109 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:7638e3f688374cea2217",
+    "name": "Holotron4 30B-A3B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holotron4-30B-A3B",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "tool-integration"
+    ],
+    "summary": "NemotronH Nano Omni-based computer-use checkpoint in H Company's Holo4 family; an external harness sends it screenshots and tool results and executes the clicks, typing, code and tool calls it requests.",
+    "scope": "core",
+    "verify_terms": [
+      "Holotron4-30B-A3B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holotron4-30B-A3B/raw/52184310f6c916e5e7d4b8f055af49fc41642574/README.md"
+    ],
+    "family_url": "https://hcompany.ai/research/models",
+    "publisher_id": "organization:h",
+    "notes": "The pinned Hub manifest lists 17 BF16 safetensors shards (about 33.0B parameters by the Hub count) with custom modeling code, and config.json declares the NemotronH_Nano_Omni_Reasoning_V3 architecture. The card says the model is built on NVIDIA Nemotron 3 Nano Omni and lists it in the Holo4 family beside the Qwen-based Holo4 checkpoints; its YAML names no base_model, so none is recorded. The card declares the NVIDIA Open Model Agreement for the weights (Hub license 'other'). OSWorld, OSWorld 2.0, AutomationBench, PinchBench and ALE scores on the card are publisher figures and were not reproduced; the FreeCAD demo on the card shows Holo4-27B, not this checkpoint. An FP8 repository is a separate release. No weights were downloaded or run.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "Hcompany/Holotron4-30B-A3B",
+      "hub_revision": "52184310f6c916e5e7d4b8f055af49fc41642574",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holotron4-30B-A3B/tree/52184310f6c916e5e7d4b8f055af49fc41642574",
+      "architecture": "NemotronH_Nano_Omni_Reasoning_V3",
+      "parameter_label": "30B-A3B",
+      "listed_weight_files": [
+        "model-00001-of-00017.safetensors",
+        "model-00002-of-00017.safetensors",
+        "model-00003-of-00017.safetensors",
+        "model-00004-of-00017.safetensors",
+        "model-00005-of-00017.safetensors",
+        "model-00006-of-00017.safetensors",
+        "model-00007-of-00017.safetensors",
+        "model-00008-of-00017.safetensors",
+        "model-00009-of-00017.safetensors",
+        "model-00010-of-00017.safetensors",
+        "model-00011-of-00017.safetensors",
+        "model-00012-of-00017.safetensors",
+        "model-00013-of-00017.safetensors",
+        "model-00014-of-00017.safetensors",
+        "model-00015-of-00017.safetensors",
+        "model-00016-of-00017.safetensors",
+        "model-00017-of-00017.safetensors"
+      ],
+      "license_name": "nvidia-open-model-agreement"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.artifact_type",
+      "details.parameter_label",
+      "details.license_name"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holotron4-30B-A3B/revision/52184310f6c916e5e7d4b8f055af49fc41642574",
+        "sha256": "cac950916e085d7206498a31f0b8d9cecd52090d6e04f6c2a34832589e080050",
+        "retrieved_at": "2026-10-18T15:51:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture",
+          "notes"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holotron4-30B-A3B/raw/52184310f6c916e5e7d4b8f055af49fc41642574/config.json",
+        "sha256": "b008470b6b727f11fd65a16f9e037553995b04621868e389b2480fed8ac908da",
+        "retrieved_at": "2026-10-18T15:51:48Z"
+      }
+    ],
+    "read_basis": "Read the pinned model card, config.json and Hub API record (file manifest, cardData license fields). No weights were downloaded or run.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9095b7a5137876923d527f739c3013c3a12d84a7178b83502b7457058a8e081c",
+    "reviewed_at": "2026-10-18T15:52:23Z"
   }
 ]

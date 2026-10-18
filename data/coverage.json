@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T15:52:15Z",
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -192,7 +192,7 @@
     "dataset": 86,
     "framework": 75,
     "infrastructure": 14,
-    "model": 98,
+    "model": 99,
     "paper": 2697,
     "product": 20,
     "survey": 18,
@@ -201,7 +201,7 @@
   "curated_by_environment": {
     "android": 300,
     "cross-platform": 197,
-    "desktop": 322,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
@@ -271,7 +271,7 @@
     "model": {
       "android": 24,
       "cross-platform": 47,
-      "desktop": 24,
+      "desktop": 25,
       "ios": 4,
       "linux": 6,
       "macos": 4,
@@ -319,7 +319,7 @@
   "license_declarations_by_scope": {
     "code": 182,
     "data": 61,
-    "weights": 56,
+    "weights": 57,
     "document": 0
   },
   "sources": [
@@ -1801,13 +1801,13 @@
         "state": "success"
       },
       "discovered": 39,
-      "indexed": 4,
-      "indexed_resources": 4,
+      "indexed": 5,
+      "indexed_resources": 5,
       "resolved_aliases": 0,
-      "curated": 4,
+      "curated": 5,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 35
+      "unindexed": 34
     },
     {
       "id": "maxiw-gui",

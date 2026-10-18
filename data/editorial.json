@@ -63143,5 +63143,57 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Opera Neon",
+    "kind": "product",
+    "url": "https://www.operaneon.com/",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Opera's subscription agentic browser whose Neon Do agent opens, closes and acts across tabs inside the user's logged-in session, with task workspaces, prompt cards and MCP or CLI access for outside agents.",
+    "scope": "core",
+    "verify_terms": [
+      "Opera Neon"
+    ],
+    "notes": "Opera's release notes dated 30 September 2025 announce the first invitation-based release. They describe Neon Do acting inside the user's local browser session with visible, pausable actions, say that it was previewed earlier as Browser Operator, and say the Make feature runs on a virtual machine on Opera's European servers. The inspected homepage says agentic features need a subscription (stated as $19.90/month), describes MCP and CLI connection paths for external agents, and states that credentials stay on the device. These are publisher statements; pricing, availability and agent reliability were not independently checked. No Opera publisher record exists yet, so no published_by relation is asserted.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested",
+      "released_at": "2025-09-30",
+      "release_notes_url": "https://www.operaneon.com/news/opera-ships-the-opera-neon-ai-agentic-browser"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details",
+          "notes"
+        ],
+        "url": "https://www.operaneon.com/news/opera-ships-the-opera-neon-ai-agentic-browser",
+        "sha256": "78629059a5ed04d3a65ab94615c1fa1b361e3b81c46d7de0f6a430d179b9c73c",
+        "retrieved_at": "2026-10-18T11:11:34Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d5a1a38b908a5dfa12fd8f9fb4cb3bcc04250f3bbe1c6e6a336ff92a4018ba24",
+    "reviewed_at": "2026-10-18T11:11:55Z"
   }
 ]

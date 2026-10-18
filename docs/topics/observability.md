@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-36 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+37 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+
+## Datasets
+
+All entries in this section: cross-platform, desktop, android.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Holo4 Trajectories](https://huggingface.co/datasets/Hcompany/trajectories) | — | [7,366 trajectories](https://huggingface.co/datasets/Hcompany/trajectories/raw/ede2a362c99ddba0d03f439c47a0b8fea6abae22/README.md) · [7,366 trajectory JSON files](https://huggingface.co/api/datasets/Hcompany/trajectories) · [49,192 WebP screenshot files](https://huggingface.co/api/datasets/Hcompany/trajectories) · [116 redacted placeholder image files](https://huggingface.co/api/datasets/Hcompany/trajectories) | data apache-2.0 | H Company's 7,366 published Holo4 27B and Holo4 35B-A3B runs on OSWorld, OSWorld 2, AndroidWorld and three other suites, logging step reasoning, actions and tool results, with screenshots for fewer than half. | [✓ 2026‑10‑18](https://huggingface.co/datasets/Hcompany/trajectories/raw/ede2a362c99ddba0d03f439c47a0b8fea6abae22/README.md) |
 
 ## Agents
 

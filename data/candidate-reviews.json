@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:ggml-org/llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "decision": "out_of_scope",
+    "reason": "llama.cpp is a general LLM inference engine; it has no agent or interface-control capability.",
+    "reviewed_at": "2026-10-18T11:23:25Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/README.md",
+      "sha256": "dc2d34687c844ecf929d9e9a9c9c78e8023b52abf3b2b3d039600c79016673b6",
+      "retrieved_at": "2026-10-18T11:19:27Z"
+    }
   }
 ]

@@ -93,7 +93,7 @@ class CandidateReviewTests(unittest.TestCase):
         cases = {"alias target is not active": {"id": "url:file", "url": "https://example.org/tool/blob/main/README.md", "decision": "alias", "target_id": "url:missing", "reason": "x"},
             "prefix alias": {"url_prefix": "https://example.org/tool", "decision": "alias", "reason": "x"},
             "prefix with a query": {"url_prefix": "https://badges.example.net/svg?repo=a", "decision": "not_a_resource", "reason": "x"},
-            "unknown decision": {"id": "url:open", "url": "https://example.org/agent", "decision": "out_of_scope", "reason": "x"},
+            "unknown decision": {"id": "url:open", "url": "https://example.org/agent", "decision": "ignore", "reason": "x"},
             "missing reason": {"id": "url:open", "url": "https://example.org/agent", "decision": "not_a_resource", "reason": " "},
             "URL differs from the candidate": {"id": "url:open", "url": "https://example.org/other", "decision": "not_a_resource", "reason": "x"}}
         for label, entry in cases.items():

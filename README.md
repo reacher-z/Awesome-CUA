@@ -73,7 +73,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,175 resource records** · **1,614 curated** · **2,715 paper and survey records** · **54 discovery documents**
 
-Evidence through `2026-10-18T13:06:20.028238+00:00`. 1,561 records have bibliographic verification only; 905 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-18T13:06:20.028238+00:00`. 1,561 records have bibliographic verification only; 905 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources and 0 resources reviewed as outside the computer-use scope. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -199,7 +199,7 @@ The [download manifest](https://awesomecua.github.io/downloads/manifest.json) re
 - **[Catalog JSONL](data/catalog.jsonl):** one resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
 - **[Reference graph](data/references.jsonl):** outbound references from primary sources. `mentions` does not mean `trained_on` or `evaluated_on`.
 - **[Discovery registry](data/sources.json)** and **[candidates](data/candidates.jsonl):** source snapshots and where each identifier was found.
-- **[Review queue](data/review-queue.jsonl):** unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
+- **[Review queue](data/review-queue.jsonl):** unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources, as other addresses of indexed resources, or as resources outside the computer-use scope stay listed with a `resolution` and their reason.
 - **[JSON Schema](schemas/resource.schema.json)** and **[coverage JSON](data/coverage.json):** machine-checkable contracts and coverage accounting.
 - **[BibTeX](https://awesomecua.github.io/downloads/citations.bib)** and **[CSL JSON](https://awesomecua.github.io/downloads/citations.csl.json):** reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json`.
 

@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from c
 - 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links, 36 other addresses of indexed resources and 0 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -32,62 +32,62 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources. Sources overlap. These figures do not measure global completeness or editorial recall.
 
-| Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-17 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-17 |
-| [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-17 |
-| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-17 |
-| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-17 |
-| [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-17 |
-| [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-17 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | OK · 2026-10-17 |
-| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-10-17 |
-| [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 27 | OK · 2026-10-17 |
-| [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-10-17 |
-| [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 28 | OK · 2026-10-17 |
-| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 486 | 394 | 0 | 45 | 13 | OK · 2026-10-17 |
-| [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 92 | 83 | 0 | 7 | 45 | OK · 2026-10-17 |
-| [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 206 | 203 | 152 | 0 | 1 | 2 | OK · 2026-10-17 |
-| [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-10-17 |
-| [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 26 | 25 | 0 | 3 | 11 | OK · 2026-10-17 |
-| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 46 | OK · 2026-10-17 |
-| [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-10-17 |
-| [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-10-17 |
-| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-17 |
-| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-10-18 |
-| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-10-18 |
-| [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-10-18 |
-| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-10-18 |
-| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 27 | 9 | 8 | 0 | 3 | 15 | OK · 2026-10-18 |
-| [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-10-17 |
-| [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 2 | 3 | OK · 2026-10-17 |
-| [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 9 | 9 | 0 | 1 | 5 | OK · 2026-10-17 |
-| [THUDM SCALE-CUA — first-party releases](https://github.com/THUDM/SCALE-CUA) | 28 | 1 | 1 | 0 | 1 | 26 | OK · 2026-10-17 |
-| [ShowUI-π — first-party releases](https://github.com/showlab/showui-pi) | 11 | 4 | 4 | 0 | 3 | 4 | OK · 2026-10-17 |
-| [OpenCUA — first-party releases](https://github.com/xlang-ai/OpenCUA) | 18 | 6 | 6 | 0 | 4 | 8 | OK · 2026-10-17 |
-| [WebDreamer — first-party releases](https://github.com/OSU-NLP-Group/WebDreamer) | 5 | 3 | 3 | 0 | 1 | 1 | OK · 2026-10-17 |
-| [NNetNav — first-party releases](https://github.com/MurtyShikhar/NNetnav) | 6 | 2 | 2 | 0 | 2 | 2 | OK · 2026-10-17 |
-| [GroundGUI — first-party releases](https://github.com/PrentisAI/GroundGUI) | 11 | 6 | 6 | 0 | 0 | 5 | OK · 2026-10-17 |
-| [Seg2Click — first-party releases](https://github.com/jcwang0602/Seg2Click) | 11 | 8 | 8 | 0 | 1 | 2 | OK · 2026-10-17 |
-| [SwitchMem — first-party releases](https://github.com/dmis-lab/SwitchMem) | 0 | 0 | 0 | 0 | 0 | 0 | OK · 2026-10-17 |
-| [OpenMobile-2 — first-party releases](https://github.com/OpenMobile2/OpenMobile2-Code) | 12 | 7 | 7 | 0 | 0 | 5 | OK · 2026-10-17 |
-| [MobileGym++ — first-party releases](https://github.com/OpenMobile2/MobileGym-plusplus) | 8 | 4 | 4 | 0 | 1 | 3 | OK · 2026-10-17 |
-| [CarryOn — first-party releases](https://github.com/Ethannju/carryon) | 2 | 1 | 1 | 0 | 0 | 1 | OK · 2026-10-17 |
-| [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 1 | 1 | OK · 2026-10-17 |
-| [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 3 | 3 | 0 | 2 | 1 | OK · 2026-10-18 |
-| [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 5 | 5 | 0 | 2 | 3 | OK · 2026-10-18 |
-| [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 4 | 17 | OK · 2026-10-16 |
-| [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 4 | 4 | 0 | 1 | 2 | OK · 2026-10-16 |
-| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 6 | 21 | OK · 2026-10-16 |
-| [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 1 | 1 | 0 | 0 | 7 | OK · 2026-10-16 |
-| [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 0 | 7 | OK · 2026-10-17 |
-| [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 4 | 4 | 0 | 4 | 8 | OK · 2026-10-16 |
-| [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 14 | OK · 2026-10-17 |
-| [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 35 | OK · 2026-10-17 |
-| [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 22 | OK · 2026-10-17 |
-| [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 9 | OK · 2026-10-17 |
-| [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 385 | 0 | 0 | 45 | OK · 2026-10-17 |
+| Source | Discovered | Indexed | Curated | Excluded | Set aside | Out of scope | Unresolved | Fetch |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 0 | 83 | OK · 2026-10-17 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 0 | 38 | OK · 2026-10-17 |
+| [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 0 | 20 | OK · 2026-10-17 |
+| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 0 | 30 | OK · 2026-10-17 |
+| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 0 | 82 | OK · 2026-10-17 |
+| [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 0 | 6 | OK · 2026-10-17 |
+| [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 0 | 44 | OK · 2026-10-17 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 0 | 75 | OK · 2026-10-17 |
+| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 0 | 23 | OK · 2026-10-17 |
+| [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 0 | 27 | OK · 2026-10-17 |
+| [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 0 | 50 | OK · 2026-10-17 |
+| [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 0 | 28 | OK · 2026-10-17 |
+| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 486 | 394 | 0 | 45 | 0 | 13 | OK · 2026-10-17 |
+| [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 92 | 83 | 0 | 7 | 0 | 45 | OK · 2026-10-17 |
+| [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 206 | 203 | 152 | 0 | 1 | 0 | 2 | OK · 2026-10-17 |
+| [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 0 | 7 | OK · 2026-10-17 |
+| [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 26 | 25 | 0 | 3 | 0 | 11 | OK · 2026-10-17 |
+| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 0 | 46 | OK · 2026-10-17 |
+| [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 0 | 10 | OK · 2026-10-17 |
+| [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 0 | 6 | OK · 2026-10-17 |
+| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 0 | 37 | OK · 2026-10-17 |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | 0 | OK · 2026-10-18 |
+| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 0 | 8 | OK · 2026-10-18 |
+| [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 0 | 3 | OK · 2026-10-18 |
+| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 0 | 36 | OK · 2026-10-18 |
+| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 27 | 9 | 8 | 0 | 3 | 0 | 15 | OK · 2026-10-18 |
+| [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 0 | 11 | OK · 2026-10-17 |
+| [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 2 | 0 | 3 | OK · 2026-10-17 |
+| [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 9 | 9 | 0 | 1 | 0 | 5 | OK · 2026-10-17 |
+| [THUDM SCALE-CUA — first-party releases](https://github.com/THUDM/SCALE-CUA) | 28 | 1 | 1 | 0 | 1 | 0 | 26 | OK · 2026-10-17 |
+| [ShowUI-π — first-party releases](https://github.com/showlab/showui-pi) | 11 | 4 | 4 | 0 | 3 | 0 | 4 | OK · 2026-10-17 |
+| [OpenCUA — first-party releases](https://github.com/xlang-ai/OpenCUA) | 18 | 6 | 6 | 0 | 4 | 0 | 8 | OK · 2026-10-17 |
+| [WebDreamer — first-party releases](https://github.com/OSU-NLP-Group/WebDreamer) | 5 | 3 | 3 | 0 | 1 | 0 | 1 | OK · 2026-10-17 |
+| [NNetNav — first-party releases](https://github.com/MurtyShikhar/NNetnav) | 6 | 2 | 2 | 0 | 2 | 0 | 2 | OK · 2026-10-17 |
+| [GroundGUI — first-party releases](https://github.com/PrentisAI/GroundGUI) | 11 | 6 | 6 | 0 | 0 | 0 | 5 | OK · 2026-10-17 |
+| [Seg2Click — first-party releases](https://github.com/jcwang0602/Seg2Click) | 11 | 8 | 8 | 0 | 1 | 0 | 2 | OK · 2026-10-17 |
+| [SwitchMem — first-party releases](https://github.com/dmis-lab/SwitchMem) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | OK · 2026-10-17 |
+| [OpenMobile-2 — first-party releases](https://github.com/OpenMobile2/OpenMobile2-Code) | 12 | 7 | 7 | 0 | 0 | 0 | 5 | OK · 2026-10-17 |
+| [MobileGym++ — first-party releases](https://github.com/OpenMobile2/MobileGym-plusplus) | 8 | 4 | 4 | 0 | 1 | 0 | 3 | OK · 2026-10-17 |
+| [CarryOn — first-party releases](https://github.com/Ethannju/carryon) | 2 | 1 | 1 | 0 | 0 | 0 | 1 | OK · 2026-10-17 |
+| [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 1 | 0 | 1 | OK · 2026-10-17 |
+| [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 3 | 3 | 0 | 2 | 0 | 1 | OK · 2026-10-18 |
+| [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 5 | 5 | 0 | 2 | 0 | 3 | OK · 2026-10-18 |
+| [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 4 | 0 | 17 | OK · 2026-10-16 |
+| [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 4 | 4 | 0 | 1 | 0 | 2 | OK · 2026-10-16 |
+| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 6 | 0 | 21 | OK · 2026-10-16 |
+| [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 1 | 1 | 0 | 0 | 0 | 7 | OK · 2026-10-16 |
+| [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 0 | 0 | 7 | OK · 2026-10-17 |
+| [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 4 | 4 | 0 | 4 | 0 | 8 | OK · 2026-10-16 |
+| [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 0 | 14 | OK · 2026-10-17 |
+| [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 0 | 35 | OK · 2026-10-17 |
+| [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 0 | 22 | OK · 2026-10-17 |
+| [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 0 | 9 | OK · 2026-10-17 |
+| [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 385 | 0 | 0 | 0 | 45 | OK · 2026-10-17 |
 
 ## Paper-discovery query coverage
 

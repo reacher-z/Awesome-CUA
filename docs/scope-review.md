@@ -4,7 +4,7 @@ The active catalog focuses on computer-use agents and directly relevant foundati
 
 ## Explicit decisions
 
-`data/exclusions.json` is an authored list of primary-abstract scope reviews. Each entry records the paper identity, original title and URL, reason, review time, metadata fingerprint, and primary response receipt. No keyword rule automatically excludes a paper.
+`data/exclusions.json` is an authored list of primary-abstract scope reviews. Each entry records the paper identity, original title and URL, reason, review time, metadata fingerprint, and primary response receipt. No keyword rule automatically excludes a paper. A GitHub, Hugging Face or website candidate outside the scope is recorded in `data/candidate-reviews.json` with `decision: out_of_scope` instead; see [methodology](methodology.md#explicit-scope-review).
 
 `data/exclusion-status.json` is generated during the offline build. A decision applies only while its metadata fingerprint and retained evidence match and no upstream metadata change is queued. Otherwise the record remains visible as metadata-only and the decision is queued for revalidation. A curated inclusion or a dependency from a retained relationship must be reconciled before an exclusion can take effect.
 

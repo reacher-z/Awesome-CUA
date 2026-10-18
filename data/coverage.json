@@ -14,6 +14,7 @@
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
+  "out_of_scope_candidates": 0,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -350,6 +351,7 @@
       "curated": 215,
       "excluded": 0,
       "set_aside": 29,
+      "out_of_scope": 0,
       "unindexed": 83
     },
     {
@@ -379,6 +381,7 @@
       "curated": 163,
       "excluded": 0,
       "set_aside": 14,
+      "out_of_scope": 0,
       "unindexed": 38
     },
     {
@@ -408,6 +411,7 @@
       "curated": 178,
       "excluded": 0,
       "set_aside": 6,
+      "out_of_scope": 0,
       "unindexed": 20
     },
     {
@@ -437,6 +441,7 @@
       "curated": 87,
       "excluded": 0,
       "set_aside": 6,
+      "out_of_scope": 0,
       "unindexed": 30
     },
     {
@@ -466,6 +471,7 @@
       "curated": 24,
       "excluded": 0,
       "set_aside": 7,
+      "out_of_scope": 0,
       "unindexed": 82
     },
     {
@@ -495,6 +501,7 @@
       "curated": 1,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 6
     },
     {
@@ -524,6 +531,7 @@
       "curated": 109,
       "excluded": 1,
       "set_aside": 9,
+      "out_of_scope": 0,
       "unindexed": 44
     },
     {
@@ -553,6 +561,7 @@
       "curated": 459,
       "excluded": 1,
       "set_aside": 9,
+      "out_of_scope": 0,
       "unindexed": 75
     },
     {
@@ -582,6 +591,7 @@
       "curated": 63,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 23
     },
     {
@@ -611,6 +621,7 @@
       "curated": 32,
       "excluded": 0,
       "set_aside": 3,
+      "out_of_scope": 0,
       "unindexed": 27
     },
     {
@@ -640,6 +651,7 @@
       "curated": 8,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 50
     },
     {
@@ -669,6 +681,7 @@
       "curated": 148,
       "excluded": 0,
       "set_aside": 15,
+      "out_of_scope": 0,
       "unindexed": 28
     },
     {
@@ -698,6 +711,7 @@
       "curated": 394,
       "excluded": 0,
       "set_aside": 45,
+      "out_of_scope": 0,
       "unindexed": 13
     },
     {
@@ -727,6 +741,7 @@
       "curated": 83,
       "excluded": 0,
       "set_aside": 7,
+      "out_of_scope": 0,
       "unindexed": 45
     },
     {
@@ -756,6 +771,7 @@
       "curated": 152,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 2
     },
     {
@@ -785,6 +801,7 @@
       "curated": 0,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 7
     },
     {
@@ -814,6 +831,7 @@
       "curated": 25,
       "excluded": 0,
       "set_aside": 3,
+      "out_of_scope": 0,
       "unindexed": 11
     },
     {
@@ -843,6 +861,7 @@
       "curated": 182,
       "excluded": 0,
       "set_aside": 6,
+      "out_of_scope": 0,
       "unindexed": 46
     },
     {
@@ -872,6 +891,7 @@
       "curated": 66,
       "excluded": 0,
       "set_aside": 4,
+      "out_of_scope": 0,
       "unindexed": 10
     },
     {
@@ -901,6 +921,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 6
     },
     {
@@ -930,6 +951,7 @@
       "curated": 55,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 37
     },
     {
@@ -960,6 +982,7 @@
       "curated": 136,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 0
     },
     {
@@ -990,6 +1013,7 @@
       "curated": 34,
       "excluded": 0,
       "set_aside": 13,
+      "out_of_scope": 0,
       "unindexed": 8
     },
     {
@@ -1020,6 +1044,7 @@
       "curated": 39,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 3
     },
     {
@@ -1050,6 +1075,7 @@
       "curated": 129,
       "excluded": 14,
       "set_aside": 14,
+      "out_of_scope": 0,
       "unindexed": 36
     },
     {
@@ -1080,6 +1106,7 @@
       "curated": 8,
       "excluded": 0,
       "set_aside": 3,
+      "out_of_scope": 0,
       "unindexed": 15
     },
     {
@@ -1109,6 +1136,7 @@
       "curated": 5,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 11
     },
     {
@@ -1138,6 +1166,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 3
     },
     {
@@ -1167,6 +1196,7 @@
       "curated": 9,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 5
     },
     {
@@ -1196,6 +1226,7 @@
       "curated": 1,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 26
     },
     {
@@ -1225,6 +1256,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 3,
+      "out_of_scope": 0,
       "unindexed": 4
     },
     {
@@ -1254,6 +1286,7 @@
       "curated": 6,
       "excluded": 0,
       "set_aside": 4,
+      "out_of_scope": 0,
       "unindexed": 8
     },
     {
@@ -1283,6 +1316,7 @@
       "curated": 3,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 1
     },
     {
@@ -1312,6 +1346,7 @@
       "curated": 2,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 2
     },
     {
@@ -1341,6 +1376,7 @@
       "curated": 6,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 5
     },
     {
@@ -1370,6 +1406,7 @@
       "curated": 8,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 2
     },
     {
@@ -1399,6 +1436,7 @@
       "curated": 0,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 0
     },
     {
@@ -1428,6 +1466,7 @@
       "curated": 7,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 5
     },
     {
@@ -1457,6 +1496,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 3
     },
     {
@@ -1486,6 +1526,7 @@
       "curated": 1,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 1
     },
     {
@@ -1515,6 +1556,7 @@
       "curated": 1,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 1
     },
     {
@@ -1545,6 +1587,7 @@
       "curated": 3,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 1
     },
     {
@@ -1575,6 +1618,7 @@
       "curated": 5,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 3
     },
     {
@@ -1604,6 +1648,7 @@
       "curated": 12,
       "excluded": 0,
       "set_aside": 4,
+      "out_of_scope": 0,
       "unindexed": 17
     },
     {
@@ -1633,6 +1678,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 1,
+      "out_of_scope": 0,
       "unindexed": 2
     },
     {
@@ -1662,6 +1708,7 @@
       "curated": 2,
       "excluded": 0,
       "set_aside": 6,
+      "out_of_scope": 0,
       "unindexed": 21
     },
     {
@@ -1691,6 +1738,7 @@
       "curated": 1,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 7
     },
     {
@@ -1720,6 +1768,7 @@
       "curated": 5,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 7
     },
     {
@@ -1749,6 +1798,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 4,
+      "out_of_scope": 0,
       "unindexed": 8
     },
     {
@@ -1778,6 +1828,7 @@
       "curated": 3,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 14
     },
     {
@@ -1807,6 +1858,7 @@
       "curated": 4,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 35
     },
     {
@@ -1837,6 +1889,7 @@
       "curated": 26,
       "excluded": 0,
       "set_aside": 2,
+      "out_of_scope": 0,
       "unindexed": 22
     },
     {
@@ -1867,6 +1920,7 @@
       "curated": 15,
       "excluded": 3,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 9
     },
     {
@@ -1897,6 +1951,7 @@
       "curated": 385,
       "excluded": 0,
       "set_aside": 0,
+      "out_of_scope": 0,
       "unindexed": 45
     }
   ],

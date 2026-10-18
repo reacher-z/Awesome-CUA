@@ -329,32 +329,57 @@ def validate_sources(sources):
     return errors
 
 
+# The keys each exact candidate review carries beyond id, url, decision and reason.
+CANDIDATE_REVIEW_KEYS = {"not_a_resource": (), "alias": ("target_id",), "out_of_scope": ("reviewed_at", "evidence")}
+
+
+def review_receipt(entry):
+    """An out_of_scope review's receipt for the primary page read, in the exclusions' shape, retrieved no later than the review."""
+    evidence = entry.get("evidence")
+    if not isinstance(evidence, dict) or set(evidence) != {"url", "sha256", "retrieved_at"}:
+        return False
+    if not https(evidence["url"]) or not urllib.parse.urlsplit(evidence["url"]).netloc:
+        return False
+    if not isinstance(evidence["sha256"], str) or not re.fullmatch(r"[0-9a-f]{64}", evidence["sha256"]):
+        return False
+    if not timestamp(entry.get("reviewed_at")) or not timestamp(evidence["retrieved_at"]):
+        return False
+    instant = lambda value: dt.datetime.fromisoformat(value.upper().replace("Z", "+00:00"))
+    return instant(entry["reviewed_at"]) >= instant(evidence["retrieved_at"])
+
+
 def candidate_reviews(candidates, ids, excluded, aliases):
-    """Reviewed set-aside decisions for unresolved discovered identifiers: links that are not resources, or another address of an active record."""
+    """Reviewed decisions for unresolved discovered identifiers: links that are not resources, another address of an active record,
+    or a non-bibliographic resource reviewed as outside the computer-use scope."""
     entries = read_json(DATA / "candidate-reviews.json", [])
     if not isinstance(entries, list):
         raise ValueError("Candidate reviews must be a list")
     exact, prefixes = {}, []
     for entry in entries:
-        if not isinstance(entry, dict) or entry.get("decision") not in {"not_a_resource", "alias"} or not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
-            raise ValueError("Candidate review needs a not_a_resource or alias decision and a reason: " + json.dumps(entry)[:200])
-        alias = entry["decision"] == "alias"
+        if not isinstance(entry, dict) or entry.get("decision") not in CANDIDATE_REVIEW_KEYS or not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
+            raise ValueError("Candidate review needs a not_a_resource, alias or out_of_scope decision and a reason: " + json.dumps(entry)[:200])
+        decision = entry["decision"]
         if "url_prefix" in entry:
             prefix = entry["url_prefix"]
             parts = urllib.parse.urlsplit(prefix) if isinstance(prefix, str) else None
-            # A prefix covers that URL and the paths or queries below it; aliases are one-to-one, so only non-resources take a prefix.
-            if alias or set(entry) != {"url_prefix", "decision", "reason"} or not parts or parts.scheme != "https" or not parts.netloc or parts.query or parts.fragment or prefix.endswith("/"):
+            # A prefix covers that URL and the paths or queries below it. Aliases are one-to-one and a scope review reads one resource, so only non-resources take a prefix.
+            if decision != "not_a_resource" or set(entry) != {"url_prefix", "decision", "reason"} or not parts or parts.scheme != "https" or not parts.netloc or parts.query or parts.fragment or prefix.endswith("/"):
                 raise ValueError("Invalid candidate-review prefix: " + str(prefix))
             prefixes.append(entry)
             continue
-        if set(entry) != {"id", "url", "decision", "reason", *(("target_id",) if alias else ())} or not isinstance(entry["id"], str) or entry["id"] in exact:
+        if decision == "out_of_scope":
+            if str(entry.get("id")).startswith("arxiv:"):
+                raise ValueError(f"{entry['id']}: an arXiv scope decision binds to its metadata fingerprint; record it in data/exclusions.json")
+            if not review_receipt(entry):
+                raise ValueError(f"{entry.get('id')}: an out_of_scope candidate review needs reviewed_at and an evidence receipt (https url, sha256, retrieved_at no later than reviewed_at) for the primary page that was read")
+        if set(entry) != {"id", "url", "decision", "reason", *CANDIDATE_REVIEW_KEYS[decision]} or not isinstance(entry["id"], str) or entry["id"] in exact:
             raise ValueError("Invalid or duplicate candidate review: " + str(entry.get("id")))
-        if alias and entry["target_id"] not in ids:
+        if decision == "alias" and entry["target_id"] not in ids:
             raise ValueError(f"{entry['id']}: candidate alias target is not an active resource: {entry['target_id']}")
         exact[entry["id"]] = entry
     reviews, resolved = {}, ids | excluded
     for row in candidates:
-        # Indexing or a scope decision wins; an entry for a since-resolved identifier no longer applies.
+        # Indexing (including curation) or a scope exclusion wins; an entry for a since-resolved identifier no longer applies.
         if aliases.get(row["id"], row["id"]) in resolved:
             continue
         entry = exact.get(row["id"]) or next((p for p in prefixes if row["url"] == p["url_prefix"] or row["url"].startswith((p["url_prefix"] + "/", p["url_prefix"] + "?"))), None)
@@ -393,6 +418,9 @@ def coverage(rows, pending, scope_decisions):
     source_rows = []
     aliases = source_aliases(rows)
     reviews = candidate_reviews(candidates, ids, excluded, aliases)
+    # Non-resources and aliases are set aside; out-of-scope resources are counted on their own.
+    out_of_scope = {rid for rid, review in reviews.items() if review["resolution"] == "out_of_scope"}
+    set_aside = reviews.keys() - out_of_scope
     for source in sources:
         population = {r["id"] for r in candidates if any(o["source_id"] == source["id"] for o in r["discovered_in"])}
         resolved = {aliases.get(identity, identity) for identity in population}
@@ -403,7 +431,7 @@ def coverage(rows, pending, scope_decisions):
             "snapshot": runs.get(source["id"]), "discovered": len(population), "indexed": len(indexed_identifiers),
             "indexed_resources":len(present), "resolved_aliases":sum(aliases.get(identity,identity)!=identity for identity in indexed_identifiers),
             "curated": sum(by_id[aliases.get(i,i)]["review_status"] == "curated" for i in indexed_identifiers),
-            "excluded":len(excluded_identifiers), "set_aside":len(population & reviews.keys()), "unindexed":len(population-indexed_identifiers-excluded_identifiers-reviews.keys())})
+            "excluded":len(excluded_identifiers), "set_aside":len(population & set_aside), "out_of_scope":len(population & out_of_scope), "unindexed":len(population-indexed_identifiers-excluded_identifiers-reviews.keys())})
     latest = max((e["retrieved_at"] for r in rows for e in r["evidence"]), default="")
     return {"as_of_utc": latest, "total_records": len(rows), "curated_records": sum(r["review_status"] == "curated" for r in rows),
         "bibliographic_records": sum(r['kind'] in {'paper','survey'} for r in rows),
@@ -416,6 +444,7 @@ def coverage(rows, pending, scope_decisions):
         "metadata_only_records": sum(r["review_status"] == "metadata_verified" for r in rows),
         "discovery_identifiers": len(candidates), "unindexed_candidates": len({aliases.get(r['id'],r['id']) for r in candidates if r['id'] not in reviews} - ids - excluded),
         "non_resource_candidates": sum(r["resolution"] == "not_a_resource" for r in reviews.values()), "alias_candidates": sum(r["resolution"] == "alias" for r in reviews.values()),
+        "out_of_scope_candidates": len(out_of_scope),
         "pending_editorial": pending, "uncurated_linked_papers": uncurated_linked_papers(rows), "by_kind": dict(sorted(collections.Counter(r["kind"] for r in rows).items())),
         "curated_by_environment": dict(sorted(collections.Counter(e for r in rows if r["review_status"] == "curated" for e in r["environments"]).items())),
         "curated_by_kind_and_environment": {kind: dict(sorted(collections.Counter(e for r in rows if r["review_status"] == "curated" and r["kind"] == kind for e in set(r["environments"])).items()))
@@ -689,16 +718,16 @@ def documents(rows, report):
         f"- {report['total_records']:,} resource records: {report['curated_records']:,} curated; {report['metadata_only_records']:,} bibliographic metadata only.",
         f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities. This count overlaps the status counts above.",
         f"- {report['arxiv_archive_records']:,} retained arXiv metadata records; {report['excluded_records']:,} explicit scope exclusions are outside the active catalog.",
-        f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved after accounting for scope exclusions and for {report.get('non_resource_candidates',0):,} reviewed non-resource links and {report.get('alias_candidates',0):,} other addresses of indexed resources, which stay in the review queue with their reasons.",
+        f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved after accounting for scope exclusions and for {report.get('non_resource_candidates',0):,} reviewed non-resource links, {report.get('alias_candidates',0):,} other addresses of indexed resources and {report.get('out_of_scope_candidates',0):,} resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.",
         f"- {len(report['pending_editorial'])} editorial proposals await verification or review.", "",
         "These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.", "",
         "## Curated coverage by kind and environment", "", "Counts of source-reviewed resources. A resource tagged with several environments counts in each column; `·` marks an empty cell, which is where contributions are most needed.", "",
         *matrix_lines(report["curated_by_kind_and_environment"]), "",
         "## Source snapshot coverage", "", "The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources. Sources overlap. These figures do not measure global completeness or editorial recall.", "",
-        "| Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
+        "| Source | Discovered | Indexed | Curated | Excluded | Set aside | Out of scope | Unresolved | Fetch |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for s in report["sources"]:
         status = s["snapshot"] or {}
-        lines.append(f"| [{md(s['name'])}]({s['url']}) | {s['discovered']} | {s['indexed']} | {s['curated']} | {s['excluded']} | {s.get('set_aside',0)} | {s['unindexed']} | {'OK' if status.get('ok') else 'FAILED'} · {status.get('retrieved_at', '')[:10]} |")
+        lines.append(f"| [{md(s['name'])}]({s['url']}) | {s['discovered']} | {s['indexed']} | {s['curated']} | {s['excluded']} | {s.get('set_aside',0)} | {s.get('out_of_scope',0)} | {s['unindexed']} | {'OK' if status.get('ok') else 'FAILED'} · {status.get('retrieved_at', '')[:10]} |")
     search = report["primary_search"]
     discovery = report.get('paper_discovery', {})
     if discovery:
@@ -767,7 +796,7 @@ README_TEXT = {
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
         "stats": ("**{total:,} resource records** · **{curated:,} curated** · **{arxiv:,} paper and survey records** · **{sources} discovery documents**\n\n"
-            "Evidence through `{as_of}`. {metadata:,} records have bibliographic verification only; {unindexed:,} discovered identifiers remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
+            "Evidence through `{as_of}`. {metadata:,} records have bibliographic verification only; {unindexed:,} discovered identifiers remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources and {out_of_scope:,} resources reviewed as outside the computer-use scope. "
             "{excluded:,} scope exclusions retain their original metadata in the archive. Counts overlap as explained below.")},
     "zh": {"explore_header": "| 研究与训练 | 工程与产业 |",
         "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "dataset": "数据集", "benchmark": "基准",
@@ -781,7 +810,7 @@ README_TEXT = {
             "infrastructure": "基础设施", "product": "产品", "company": "发布方"},
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
         "stats": ("**{total:,} 条资源记录** · **{curated:,} 条已审阅** · **{arxiv:,} 条论文与综述记录** · **{sources} 个发现来源文档**\n\n"
-            "证据截至 `{as_of}`。{metadata:,} 条记录仅完成书目核实；{unindexed:,} 个已发现的标识符尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
+            "证据截至 `{as_of}`。{metadata:,} 条记录仅完成书目核实；{unindexed:,} 个已发现的标识符尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址、{out_of_scope:,} 个资源经审阅确认不属于计算机使用智能体范围，均不计入其中。"
             "{excluded:,} 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。")},
 }
 
@@ -789,7 +818,7 @@ README_TEXT = {
 def stats_block(report, lang="en"):
     return "\n\n" + README_TEXT[lang]["stats"].format(total=report["total_records"], curated=report["curated_records"], arxiv=report["bibliographic_records"],
         sources=len(report["sources"]), as_of=report["as_of_utc"], metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
-        set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0),
+        set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0), out_of_scope=report.get("out_of_scope_candidates", 0),
         excluded=report["excluded_records"]) + "\n\n"
 
 
@@ -933,7 +962,7 @@ def build(args):
     candidates = read_jsonl(DATA / "candidates.jsonl")
     aliases=source_aliases(rows)
     reviews = candidate_reviews(candidates, ids, excluded, aliases)
-    # Set-aside links stay visible with their reviewed resolution and reason; rows without a resolution await review.
+    # Set-aside and out-of-scope links stay visible with their reviewed resolution and reason; rows without a resolution await review.
     queue = [{**r, "review_status": "candidate", **reviews.get(r['id'], {"reason": "discovered identifier; primary evidence and relevance need review"})} for r in candidates if aliases.get(r['id'],r['id']) not in ids and aliases.get(r['id'],r['id']) not in excluded]
     editorial_pending = {r["id"]: r for r in pending}
     merged = {r["id"]: r for r in queue}
@@ -1027,6 +1056,7 @@ def validate(args):
     scope_validator = jsonschema.Draft202012Validator(read_json(ROOT/'schemas/scope-decision.schema.json'), format_checker=formats)
     scope_errors = ['Scope decisions: '+error.message for error in scope_validator.iter_errors(decisions)]
     errors.extend(scope_errors)
+    outcomes = []
     if not scope_errors:
         retained = {row['id']:row for row in read_jsonl(DATA/'papers.jsonl')}
         retained.update({row['id']:row for row in rows})
@@ -1041,6 +1071,14 @@ def validate(args):
                 errors.append(outcome['id']+': scope-excluded record remains in the active catalog')
             if outcome['status']=='revalidation_pending' and outcome['id'] not in published:
                 errors.append(outcome['id']+': stale scope decision must not suppress a record')
+    candidate_validator = jsonschema.Draft202012Validator(read_json(ROOT/'schemas/candidate-review.schema.json'), format_checker=formats)
+    candidate_errors = ['Candidate reviews: '+error.message for error in candidate_validator.iter_errors(read_json(DATA/'candidate-reviews.json', []))]
+    errors.extend(candidate_errors)
+    if not candidate_errors:
+        try:
+            candidate_reviews(read_jsonl(DATA/'candidates.jsonl'), {row['id'] for row in rows}, {o['id'] for o in outcomes if o['status']=='excluded'}, source_aliases(rows))
+        except ValueError as error:
+            errors.append('Candidate reviews: '+str(error))
     if errors:
         raise ValueError("\n".join(errors[:40]))
     print(f"Validated {len(rows)} records: JSON Schema, identifiers, dates, source receipts, scoped licenses, and reviewed relation targets.")

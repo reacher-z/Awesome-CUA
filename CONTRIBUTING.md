@@ -13,6 +13,8 @@ Report security vulnerabilities privately, as described in [SECURITY.md](SECURIT
 
 Do not directly edit generated files. [Authored and generated files](docs/data-dictionary.md#authored-and-generated-files) lists every input and the command that writes each output. Do not copy upstream abstracts, READMEs, datasets, or model weights into this repository. Do not infer dataset/model licensing from the code license. Preserve unknowns as null, with count units and evaluation settings stated when facts are available.
 
+To resolve a discovered candidate without curating it, add an entry to `data/candidate-reviews.json` after inspecting its primary page: `not_a_resource` for a badge, file or placeholder, `alias` with `target_id` for another address of an active record, or `out_of_scope` for a GitHub, Hugging Face or website resource outside the computer-use scope. An `out_of_scope` entry names one `id` and `url` (no `url_prefix`) and needs a specific `reason`, `reviewed_at`, and an `evidence` receipt with the page's `url`, `sha256` and `retrieved_at`; the build rejects it otherwise. Out-of-scope arXiv papers go in `data/exclusions.json` as described in [scope review](docs/scope-review.md). [Methodology](docs/methodology.md#explicit-scope-review) explains each decision.
+
 New discovery sources belong in `data/sources.json`. Identify the exact document and scope; prefer complementary sources over mirrors. Do not promote a list entry to a curated record without a first-party check. Report broken links, missing resources, and incorrect merges through the issue template.
 
 ## Resolving conflicts with the scheduled scan

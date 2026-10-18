@@ -63143,5 +63143,55 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "CODA",
+    "kind": "agent",
+    "url": "https://github.com/OpenIXCLab/CODA",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "science"
+    ],
+    "summary": "Inference code for CODA, which pairs a CODA-PLANNER-TARS-32B planner served with vLLM and a UI-TARS-1.5-7B executor on ScienceBoard scientific-software tasks in Ubuntu virtual machines.",
+    "scope": "core",
+    "verify_terms": [
+      "CODA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenIXCLab/CODA/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2508.20096"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:os-copilot/scienceboard",
+        "evidence_url": "https://raw.githubusercontent.com/OpenIXCLab/CODA/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "url:4d32ad3682ae2d71c178",
+        "evidence_url": "https://raw.githubusercontent.com/OpenIXCLab/CODA/HEAD/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The README calls this the official implementation of arXiv:2508.20096. Only the ScienceBoard inference path is released: the tree (commit be61f2f) holds a ScienceBoard_CODA folder with a replacement sci package for Celestia, ChimeraX, GrassGIS, KAlgebra, Lean and TeXstudio tasks, a qwenvl_test.py runner and test.sh; runs need a separate ScienceBoard checkout and its VMware Ubuntu images. The OpenRLHF-based decoupled RL training code and the Qwen2.5-VL-72B judge model are listed as unfinished to-do items. The planner weights are on Hugging Face and were not reviewed here. README badges name Apache-2.0 for code and CC BY-NC 4.0 for data with a research-only notice, but there is no LICENSE file and GitHub reports no license, so the code license stays unknown.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d6a1aa1fc4f96439f0b75e0509e01d20da29658de2041b774375db49275135dd",
+    "reviewed_at": "2026-10-18T11:50:41Z"
   }
 ]

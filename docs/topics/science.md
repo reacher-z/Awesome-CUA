@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-18 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+19 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (15)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Infrastructure (1)](#infrastructure) · [Papers (15)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,14 @@ All entries in this section: desktop, linux.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |
+
+## Agents
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [CODA](https://github.com/OpenIXCLab/CODA) | [2508.20096](https://arxiv.org/abs/2508.20096) (2025) | — | Inference code for CODA, which pairs a CODA-PLANNER-TARS-32B planner served with vLLM and a UI-TARS-1.5-7B executor on ScienceBoard scientific-software tasks in Ubuntu virtual machines. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OpenIXCLab/CODA/HEAD/README.md) |
 
 ## Infrastructure
 

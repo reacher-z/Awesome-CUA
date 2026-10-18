@@ -4388,6 +4388,32 @@
     "reviewed_at": "2026-10-16T11:18:51Z",
     "documented_by": [
       "2510.20286"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "CC-BY-NC-SA-4.0",
+          "url": "https://raw.githubusercontent.com/alibaba/UI-Ins/1953bbc5200960cc8fd10a0dd06c646a66cd3ba0/README.md",
+          "retrieved_at": "2026-10-18T15:50:12Z",
+          "basis": "The README's License section states that the repository follows CC-BY-NC-SA 4.0 and is for non-commercial use only. It is recorded for the repository's own code and prompts; vendored LLaMA-Factory and verl keep their Apache-2.0 LICENSE files, and the UI-Ins model checkpoints are separate Hugging Face releases."
+        },
+        "reason": "The README's License section states that the repository follows CC-BY-NC-SA 4.0 and is for non-commercial use only. It is recorded for the repository's own code and prompts; vendored LLaMA-Factory and verl keep their Apache-2.0 LICENSE files, and the UI-Ins model checkpoints are separate Hugging Face releases.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/alibaba/UI-Ins/1953bbc5200960cc8fd10a0dd06c646a66cd3ba0/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/alibaba/UI-Ins/1953bbc5200960cc8fd10a0dd06c646a66cd3ba0/README.md",
+        "sha256": "e06aedcb1760867470afeb27d4eb4cdde9a3b76b9d55af183047df3c0ae2b71c",
+        "retrieved_at": "2026-10-18T15:50:12Z"
+      }
     ]
   },
   {

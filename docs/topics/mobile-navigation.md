@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (16)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -54,6 +54,7 @@
 | [BlueLM-GUI](https://github.com/vivo-ai-lab/BlueLM-GUI) | android | [2609.12394](https://arxiv.org/abs/2609.12394) (2026) | code Apache-2.0 | Mobile GUI agent research release with technical report, benchmark data, and evaluation tooling from vivo AI Lab. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo-ai-lab/BlueLM-GUI/HEAD/README.md) |
 | [GELab Zero](https://github.com/stepfun-ai/gelab-zero) | android | — | code MIT | Open mobile GUI agent stack pairing a 4B model that runs on consumer hardware with local multi-device infrastructure, an MCP server, and AndroidDaily benchmark tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stepfun-ai/gelab-zero/HEAD/README.md) |
 | [GELab Zero 4B Preview](https://huggingface.co/stepfun-ai/GELab-Zero-4B-preview) | android | — | weights apache-2.0 | Preview GELab-Zero phone-use agent checkpoint fine-tuned from Qwen3-VL-4B-Instruct, with about 4.4B BF16 parameters, tagged for Android in English and Chinese, under Apache-2.0. | [✓ 2026‑10‑16](https://huggingface.co/api/models/stepfun-ai/GELab-Zero-4B-preview) |
+| [Holo3.1 9B](https://huggingface.co/Hcompany/Holo-3.1-9B) | web, desktop, cross-platform | — | weights apache-2.0 | 9B checkpoint of H Company's Holo3.1 family of vision-language models for web, desktop and mobile computer-use agents, with native function calling for agent frameworks. | [✓ 2026‑10‑18](https://huggingface.co/Hcompany/Holo-3.1-9B/raw/bcd6a36af9f100f57cba28e2bf6481ac3feedf33/README.md) |
 | [Magma](https://github.com/microsoft/Magma) | web | — | code MIT | Microsoft foundation model for multimodal agents, pretrained with Set-of-Mark and Trace-of-Mark objectives on UI, robotics and video data and fine-tunable for web and mobile UI navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/Magma/HEAD/README.md) |
 | [MAI-UI 8B](https://huggingface.co/Tongyi-MAI/MAI-UI-8B) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | weights apache-2.0 | A released MAI-UI checkpoint combining mobile GUI actions, agent-user interaction and tool-use-oriented navigation. | [✓ 2026‑10‑17](https://huggingface.co/Tongyi-MAI/MAI-UI-8B/raw/main/README.md) |
 | [MobileRL 9B checkpoint](https://huggingface.co/xuyifan/MobileRL-9B) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | weights apache-2.0 | A GLM-4.1V-based mobile action checkpoint released by the MobileRL project for Android interaction. | [✓ 2026‑10‑17](https://huggingface.co/api/models/xuyifan/MobileRL-9B) |

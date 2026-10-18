@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (33)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -31,6 +31,7 @@
 | [DragOn](https://huggingface.co/datasets/Hcompany/DragOn) | cross-platform | — | — | data apache-2.0 | Drag-grounding training and evaluation data pairing each screenshot instruction with start and end boxes, across text highlighting, spreadsheet cells, slide resizing and sliders. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Hcompany/DragOn) |
 | [GroundGUI RL Dataset](https://huggingface.co/datasets/PrentisAI/GroundGUI_RL) | desktop | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | [12,600 prompts](https://huggingface.co/datasets/PrentisAI/GroundGUI_RL/raw/main/README.md) · [11,205 screenshots](https://huggingface.co/datasets/PrentisAI/GroundGUI_RL/raw/main/README.md) · [87 desktop applications](https://huggingface.co/datasets/PrentisAI/GroundGUI_RL/raw/main/README.md) | data mit | Desktop grounding prompts selected from GroundCUA and formatted for click-based reinforcement learning with target-box rewards. | [✓ 2026‑10‑17](https://huggingface.co/datasets/PrentisAI/GroundGUI_RL/raw/main/README.md) |
 | [Grounding-Anything-GUI](https://huggingface.co/datasets/Miaosen/Grounding-Anything-GUI) | unspecified | — | — | data apache-2.0 | The public training archive linked by the Phi-Ground project for its Phi-Ground-Any model. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/Miaosen/Grounding-Anything-GUI) |
+| [GTA1 cleaned grounding dataset](https://huggingface.co/datasets/HelloKKMe/grounding_dataset) | desktop, web | [2507.05791](https://arxiv.org/abs/2507.05791) (2025) | — | data CC-BY-NC-SA-4.0 | Cleaned GUI grounding training data linked by the GTA1 repository, drawn mainly from Aria-UI and OS-Atlas, with samples dropped when the target box does not match an OmniParser-detected element. | [✓ 2026‑10‑18](https://huggingface.co/datasets/HelloKKMe/grounding_dataset/raw/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1/README.md) |
 | [GUI-360](https://huggingface.co/datasets/vyokky/GUI-360) | desktop, windows | [2511.04307](https://arxiv.org/abs/2511.04307) (2025) | — | data mit | Desktop GUI trajectory data supporting multiple interface understanding tasks. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/vyokky/GUI-360) |
 | [GUI-Actor data](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data) | unspecified | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | — | — | A processed screenshot and bounding-box collection released for training GUI-Actor visual grounding models. | [✓ 2026‑10‑17](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data/raw/main/README.md) |
 | [GUI-Drag](https://huggingface.co/datasets/osunlp/GUI-Drag-dataset) | cross-platform | — | — | data apache-2.0 | Data for learning text-dragging interactions in graphical interfaces. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/osunlp/GUI-Drag-dataset) |

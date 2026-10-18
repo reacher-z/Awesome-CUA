@@ -63143,5 +63143,125 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GTA1 cleaned grounding dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/HelloKKMe/grounding_dataset",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "Cleaned GUI grounding training data linked by the GTA1 repository, drawn mainly from Aria-UI and OS-Atlas, with samples dropped when the target box does not match an OmniParser-detected element.",
+    "scope": "core",
+    "verify_terms": [
+      "GTA1"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/HelloKKMe/grounding_dataset/raw/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1/README.md"
+    ],
+    "notes": "Hub revision 5c0836a5 lists the card, inp.json and ten split image archive parts (image.part.aa to image.part.aj); the repository is not gated and has no card metadata. The card describes desktop and web grounding sources and names no paper; the GTA1 repository README links this repository as GTA1's training data and cleaned dataset, which supports the paper relation. Salesforce later published a separate grounding release with a different field schema and more source datasets; this record covers only this upload. The license comes from the GTA1 README, not the card.",
+    "details": {
+      "hub_id": "HelloKKMe/grounding_dataset",
+      "hub_revision": "5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/HelloKKMe/grounding_dataset/tree/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1",
+      "repository_url": "https://github.com/Yan98/GTA1",
+      "dataset_profile": {
+        "supervision": [
+          "instruction-to-bounding-box GUI grounding",
+          "OmniParser IoU filtering of annotated boxes"
+        ],
+        "modalities": [
+          "GUI screenshots",
+          "bounding-box annotations"
+        ],
+        "formats": [
+          "JSON (inp.json)",
+          "split binary image archive"
+        ],
+        "splits": [
+          "training"
+        ],
+        "counts": [],
+        "notes": "inp.json (767,769,533 bytes) and ten image archive parts (208,677,206,554 bytes in total) were listed through the Hub API but not downloaded, so no example count is given; the Hub size band is not a sample count. The filtering step and its OmniParser IoU criterion come from the card and the GTA1 preprocessing code; the card notes that the filter can occasionally remove correct samples and puts such cases below 3% of the data.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/HelloKKMe/grounding_dataset/raw/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1/README.md",
+          "https://huggingface.co/api/datasets/HelloKKMe/grounding_dataset/revision/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1",
+          "https://raw.githubusercontent.com/Yan98/GTA1/81f0c4c2997cf6ad696d42f47c5480f4c856b73a/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/HelloKKMe/grounding_dataset/revision/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1",
+        "sha256": "74797aa594a98347ac080d446950094ac34076c749e39a6c99ab1a2751896c7f",
+        "retrieved_at": "2026-10-18T12:27:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.repository_url",
+          "details.dataset_profile",
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/Yan98/GTA1/81f0c4c2997cf6ad696d42f47c5480f4c856b73a/README.md",
+        "sha256": "16c633cc2e6e457a37f33b410a93c639edf7b55bb2b590e08f20734da7564951",
+        "retrieved_at": "2026-10-18T12:27:44Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-NC-SA-4.0",
+          "url": "https://raw.githubusercontent.com/Yan98/GTA1/81f0c4c2997cf6ad696d42f47c5480f4c856b73a/README.md",
+          "retrieved_at": "2026-10-18T12:27:44Z",
+          "basis": "The GTA1 repository README, which links this Hub repository as GTA1's training and cleaned dataset, states under License that the dataset follows CC BY-NC-SA 4.0 for non-commercial use only. The Hub card declares no license; upstream source images keep their own terms."
+        },
+        "reason": "The GTA1 repository README, which links this Hub repository as GTA1's training and cleaned dataset, states under License that the dataset follows CC BY-NC-SA 4.0 for non-commercial use only. The Hub card declares no license; upstream source images keep their own terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Yan98/GTA1/81f0c4c2997cf6ad696d42f47c5480f4c856b73a/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2507.05791",
+        "evidence_url": "https://raw.githubusercontent.com/Yan98/GTA1/81f0c4c2997cf6ad696d42f47c5480f4c856b73a/README.md"
+      }
+    ],
+    "reviewed_sha256": "cae816e6d5696a1122f836235b70a326a7d66a389d078cc48588cf20bd64a518",
+    "reviewed_at": "2026-10-18T12:29:18Z"
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:llm-in-sandbox/llm-in-sandbox",
+    "url": "https://github.com/llm-in-sandbox/llm-in-sandbox",
+    "decision": "out_of_scope",
+    "reason": "LLM-in-Sandbox places a model in a Docker code sandbox whose only tools are a bash executor, a file editor and a submit action, and evaluates it on chemistry, physics, math, biomedical, long-context and instruction-following tasks. It does not observe or operate graphical interfaces, web pages or mobile devices, so it falls outside the GUI computer-use boundary like other terminal and coding agents.",
+    "reviewed_at": "2026-10-18T12:19:24Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/llm-in-sandbox/llm-in-sandbox/HEAD/README.md",
+      "sha256": "b03bfc73cb05f79985282999332b626f09905b86e4822eca981e2be28c578cc9",
+      "retrieved_at": "2026-10-18T11:49:06Z"
+    }
   }
 ]

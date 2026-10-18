@@ -185,6 +185,9 @@ def canonical(url, *, allow_doi=False):
     if parts.scheme not in {"http", "https"} or not parts.netloc:
         return None
     host = parts.hostname.lower() if parts.hostname else ""
+    # The catalog treats leading www labels as URL aliases. Normalize before
+    # provider/filter checks too, so a cleaned URL has the same identity again.
+    host = re.sub(r"^(?:www\.)+", "", host)
     try:
         address = ipaddress.ip_address(host)
     except ValueError:

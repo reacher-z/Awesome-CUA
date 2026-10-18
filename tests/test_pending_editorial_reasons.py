@@ -12,7 +12,7 @@ from catalog import editorial_identity
 
 NOTE = "The repository path returns 404 with no redirect; the paper is cataloged separately."
 # Unapproved proposals whose primary source cannot be fetched; each needs a recorded decision.
-DEAD = {"github:thudm/autoglm": "THUDM/AutoGLM", "url:df3dc96d9e27b824f6ea": "403", "github:agiresearch/litecua": "Cerebrum"}
+DEAD = {"github:thudm/autoglm": "THUDM/AutoGLM", "url:932ab3ba304c8564bb9f": "403", "github:agiresearch/litecua": "Cerebrum"}
 
 
 def entry(name, **extra):

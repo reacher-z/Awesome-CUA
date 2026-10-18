@@ -250,7 +250,7 @@ def resource_markdown(r):
     return '\n'.join(line.rstrip() for line in lines)+'\n'
 
 
-def build_search_pages(destination, rows, coverage, root):
+def build_search_pages(destination, rows, coverage, root, *, url_migrations=None):
     lookup={r["id"]:r for r in rows}
     incoming=incoming_relations(rows)
     titles=resource_titles(rows)
@@ -285,6 +285,25 @@ def build_search_pages(destination, rows, coverage, root):
             (destination/path.lstrip('/')/'publication-citation.csl.json').write_text(json.dumps(citation_csl(r,edition='publication'),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         else:
             for name in ('publication-citation.bib','publication-citation.csl.json'):(destination/path.lstrip('/')/name).unlink(missing_ok=True)
+    for former, owner in (url_migrations or {}).items():
+        if owner not in lookup:
+            continue
+        record=lookup[owner]
+        path=resource_path({'id':former})
+        current=resource_path(record)
+        body=f'<h1>This record has a canonical address</h1><p>The catalog normalized a leading <code>www.</code> hostname. This is an identity migration, not a new source review.</p><p><a href="{current}">Continue to {esc(record["name"])}</a>.</p><p>Use <code>{esc(owner)}</code> for citations and upserts.</p>'
+        content=page('Record address updated', 'The former catalog ID resolves to its canonical resource.', current, body, index=False,
+                     crumbs=[('AwesomeCUA','/'),('Catalog','/catalog/'),(record['name'],current),('Former address',path)])
+        content=content.replace('</head>',f'<meta http-equiv="refresh" content="0; url={current}">\n</head>')
+        emit(path,content,index=False)
+        manifest[-1]['alias_of']=current
+        target=destination/path.lstrip('/')
+        (target/'record.json').write_text(json.dumps(record,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
+        (target/'index.md').write_text(clean_text(f'# Record address updated\n\nFormer ID: {former}\n\nCanonical record: {SITE}{current}\n\n'+resource_markdown(record)),encoding='utf-8')
+        for name in ('citation.bib','citation.csl.json','publication-citation.bib','publication-citation.csl.json'):
+            original=destination/current.lstrip('/')/name
+            if original.exists():(target/name).write_bytes(original.read_bytes())
+            else:(target/name).unlink(missing_ok=True)
     scope_status=json.loads((root/'data/exclusion-status.json').read_text(encoding='utf-8'))
     for decision in scope_status['decisions']:
         if decision['status']!='excluded':continue
@@ -470,7 +489,7 @@ def build_search_pages(destination, rows, coverage, root):
     ET.indent(sitemap,space='  ')
     (destination/'sitemap.xml').write_bytes(clean_text(ET.tostring(sitemap,encoding='utf-8',xml_declaration=True).decode()).encode())
     (destination/'sitemap.txt').write_text(clean_text(''.join(SITE+item['path']+'\n' for item in sorted(manifest,key=lambda x:x['path']) if item['indexable'])),encoding='utf-8')
-    (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('alias_of') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'url_alias_pages':sum(bool(x.get('alias_of')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))
     key=config['indexnow_key'];(destination/(key+'.txt')).write_text(key,encoding='utf-8')
     return manifest

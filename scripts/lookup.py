@@ -5,6 +5,7 @@ import copy
 import json
 from pathlib import Path
 from repository_identity import repository_aliases
+from url_identity import url_aliases
 
 DATA = Path(__file__).resolve().parents[1] / 'data'
 EXCLUSION_LEDGER_URL = 'https://awesomecua.github.io/downloads/exclusions.json'
@@ -106,8 +107,19 @@ def read_lookup(resource_id, *, related=False, data_dir=None):
         raise ValueError('Scope decisions require a string ID')
     alias_path = directory / 'repository-aliases.json'
     declarations = json.loads(alias_path.read_text(encoding='utf-8')) if alias_path.exists() else []
+    aliases = repository_aliases(declarations, records)
+    url_path = directory / 'url-aliases.json'
+    url_declarations = json.loads(url_path.read_text(encoding='utf-8')) if url_path.exists() else []
+    from catalog import canonical
+    active = {row['id'] for row in records}
+    for former, target in url_aliases(url_declarations, canonical, records).items():
+        if target not in active:
+            continue  # An unreviewed candidate never becomes an active lookup.
+        if former in aliases and aliases[former] != target:
+            raise ValueError('Conflicting former resource ID: ' + former)
+        aliases[former] = target
     return lookup(resource_id, records, ledger['decisions'], related=related,
-                  aliases=repository_aliases(declarations, records))
+                  aliases=aliases)
 
 
 def get_resource(args):

@@ -10,6 +10,8 @@ from agent_pages import CLONE_COMMAND, RELEASES_URL
 from export_citations import encode_citations
 from export_rag import encode_documents
 from repository_identity import attach_repository_aliases
+from url_identity import attach_url_aliases
+from catalog import canonical
 
 
 GROUPS = {
@@ -188,12 +190,19 @@ def build_download_manifest(destination, rows, catalog_bytes):
     add('repository-aliases', '/downloads/repository-aliases.json', 'provenance', ('Former repository names', '仓库旧地址映射'),
         ('Former and canonical GitHub or Hugging Face names verified against the same repository ID. They do not add resources.', '通过相同的 GitHub 或 Hugging Face 仓库 ID 核实旧名与规范名称。它们不增加资源记录。'),
         'JSON', 'application/json', len(repository_declarations), 'aliases', 'provenance')
+    url_declarations = read_json('/downloads/url-aliases.json')
+    if attach_url_aliases(rows, url_declarations, canonical) != rows:
+        raise ValueError('URL normalization aliases differ from their catalog owners')
+    add('url-aliases', '/downloads/url-aliases.json', 'provenance', ('Former URL identities', 'URL 旧标识映射'),
+        ('Recorded leading-www normalization mappings. These are catalog policy, not HTTP identity or renewed content review.', '记录去除 www 前缀后的标识映射。这是目录规范化规则，不代表 HTTP 身份核实或重新审阅内容。'),
+        'JSON', 'application/json', len(url_declarations), 'aliases', 'provenance')
     for name, title in [
         ('resource.schema.json', ('Resource schema', '资源记录规范')),
         ('scope-decision.schema.json', ('Scope-decision schema', '范围决定规范')),
         ('publication-observation.schema.json', ('Publication-observation schema', '出版来源规范')),
         ('download-manifest.schema.json', ('Download-manifest schema', '下载清单规范')),
         ('repository-alias.schema.json', ('Repository-alias schema', '仓库地址映射规范')),
+        ('url-alias.schema.json', ('URL-alias schema', 'URL 标识映射规范')),
     ]:
         add(name.replace('.', '-'), '/schemas/' + name, 'contracts', title,
             ('Machine-readable field and format contract.', '可供程序读取的字段与格式约束。'), 'JSON Schema', 'application/schema+json', 1, 'schemas', 'contract')

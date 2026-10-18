@@ -10,11 +10,6 @@
     "reason": "Star History chart page that a repository star-count badge links to."
   },
   {
-    "url_prefix": "https://www.star-history.com",
-    "decision": "not_a_resource",
-    "reason": "Star History chart page that a repository star-count badge links to."
-  },
-  {
     "url_prefix": "https://visitor-badge.lithub.cc",
     "decision": "not_a_resource",
     "reason": "Visitor-count badge image in a list header."
@@ -109,8 +104,8 @@
     "reason": "PyTorch wheel index used in installation instructions."
   },
   {
-    "id": "url:e93fab6deae2e8764bfc",
-    "url": "https://www.google.com/search?q=LICENSE",
+    "id": "url:580c3c3e64e0a68ef6e5",
+    "url": "https://google.com/search?q=LICENSE",
     "decision": "not_a_resource",
     "reason": "Web search for the word LICENSE, linked from a license section."
   },
@@ -139,20 +134,20 @@
     "reason": "Target of the Awesome badge in a list header."
   },
   {
-    "id": "url:dc8621e65a7c436e0e5e",
-    "url": "https://www.google.com/flights",
+    "id": "url:7250b72266d918d9bca4",
+    "url": "https://google.com/flights",
     "decision": "not_a_resource",
     "reason": "Website used as a task target when collecting demonstrations, not a resource about computer-use agents."
   },
   {
-    "id": "url:09f0bcc910663e4fceab",
-    "url": "https://www.amazon.com",
+    "id": "url:d5855a41ea9a9962c07e",
+    "url": "https://amazon.com",
     "decision": "not_a_resource",
     "reason": "Start URL in example code, a task website rather than a resource about computer-use agents."
   },
   {
-    "id": "url:ebcdad9e6d6ac2266c5a",
-    "url": "https://www.nlp.stanford.edu",
+    "id": "url:84d5798c77f7f40bfc7e",
+    "url": "https://nlp.stanford.edu",
     "decision": "not_a_resource",
     "reason": "Example task website in usage instructions."
   },
@@ -215,20 +210,6 @@
     "decision": "alias",
     "target_id": "url:4784f63cd7117f64a2a3",
     "reason": "File-tree view of the indexed ScienceBoard-Traj Hub dataset repository."
-  },
-  {
-    "id": "url:5f93a5192b1aa2f9b7cd",
-    "url": "https://www.browser-use.com",
-    "decision": "alias",
-    "target_id": "url:ef244017b1460269fc68",
-    "reason": "www. address of https://browser-use.com, the primary URL of the indexed record; organization:browser-use shares that page."
-  },
-  {
-    "id": "url:b3ffe248cc4292a5e7f0",
-    "url": "https://browserbase.com",
-    "decision": "alias",
-    "target_id": "url:978d1dcd70fde8661b9e",
-    "reason": "Address without www. of https://www.browserbase.com, the primary URL of the indexed record; organization:browserbase shares that page."
   },
   {
     "id": "url:5455417a4c0f8a93fccc",

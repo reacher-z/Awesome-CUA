@@ -77,6 +77,7 @@ class CandidateReviewTests(unittest.TestCase):
         self.write("candidates.jsonl", self.candidates)
         self.write("candidate-reviews.json", self.reviews)
         with mock.patch.object(build, "source_records", return_value=(self.rows, [], [])), mock.patch.object(build, "validate_records", return_value=[]), \
+                mock.patch.object(build, "candidate_identity_errors", return_value=[]), \
                 mock.patch.object(build, "documents", return_value={}), mock.patch.object(build, "write_sqlite"), mock.patch.object(build, "write_json"), \
                 contextlib.redirect_stdout(io.StringIO()):
             build.build(types.SimpleNamespace(check=False))
@@ -103,7 +104,8 @@ class CandidateReviewTests(unittest.TestCase):
     def test_listed_identifiers_no_longer_count_as_unresolved(self):
         queue = [json.loads(line) for line in (ROOT / "data" / "review-queue.jsonl").read_text(encoding="utf-8").splitlines()]
         unresolved = {row["id"] for row in queue if "resolution" not in row}
-        self.assertEqual(sorted(set(LISTED) & unresolved), [])
+        migrations = {entry['alias_id']:entry['target_id'] for entry in json.loads((ROOT/'data/url-aliases.json').read_text())}
+        self.assertEqual(sorted({migrations.get(rid,rid) for rid in LISTED} & unresolved), [])
 
 
 if __name__ == "__main__":

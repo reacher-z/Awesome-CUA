@@ -63143,5 +63143,74 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:james4ever0/agi_computer_control",
+    "name": "Cybergod",
+    "kind": "framework",
+    "url": "https://github.com/James4Ever0/agi_computer_control",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation",
+      "sandbox"
+    ],
+    "summary": "Experimental monorepo for computer-control agents with a tmux terminal environment, a web recorder for GUI and terminal sessions in noVNC/ttyd Docker workers, and random-input data collection.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Cybergod"
+    ],
+    "aliases": [
+      "agi_computer_control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/James4Ever0/agi_computer_control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent: a heterogeneous research repository rather than a packaged agent. Besides the tmux environment (tmux_trials/lib.py) and the GUI/terminal recorder, it holds many exploratory experiments (action encoders, HID and physical input control, VM recording) and AGI manifesto text. Linked datasets on Hugging Face, ModelScope and Kaggle and the separate Vimgolf-Gym, CTF-Gym and Cybergod-Gym repositories are not part of this record. The Cybergod paper is a self-published PDF release asset, not an arXiv record. No license file was found, so code rights stay unknown. Code was read, not run.",
+    "details": {
+      "availability": "Public source; prebuilt worker images on Docker Hub per the recorder README",
+      "repository_url": "https://github.com/James4Ever0/agi_computer_control"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/James4Ever0/agi_computer_control/HEAD/web_gui_terminal_recorder/README.md",
+        "sha256": "e625a92e0beb11b75241c498ce7eeaa581280dcc743c96944e514e1bbe34876d",
+        "retrieved_at": "2026-10-18T11:28:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/James4Ever0/agi_computer_control/HEAD/tmux_trials/lib.py",
+        "sha256": "948a5e74178a4c0856b8947756eb79c7d014c8a8d60c9606d1e615dcc1ac6c6a",
+        "retrieved_at": "2026-10-18T11:28:44Z"
+      }
+    ],
+    "reviewed_sha256": "08ef7edf2639222fb61699aed6b9a97a141eef3facf00e1910c739e272298fe9",
+    "reviewed_at": "2026-10-18T11:29:05Z"
   }
 ]

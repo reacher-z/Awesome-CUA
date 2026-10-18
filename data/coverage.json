@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "total_records": 3176,
+  "curated_records": 1616,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -9,9 +9,9 @@
   "arxiv_archive_records": 2838,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1561,
+  "metadata_only_records": 1560,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -187,7 +187,7 @@
   "uncurated_linked_papers": [],
   "by_kind": {
     "agent": 43,
-    "benchmark": 88,
+    "benchmark": 89,
     "company": 16,
     "dataset": 86,
     "framework": 75,
@@ -206,7 +206,7 @@
     "ios": 21,
     "linux": 49,
     "macos": 30,
-    "unspecified": 377,
+    "unspecified": 379,
     "web": 621,
     "windows": 63
   },
@@ -229,7 +229,7 @@
       "ios": 1,
       "linux": 5,
       "macos": 3,
-      "unspecified": 3,
+      "unspecified": 4,
       "web": 42,
       "windows": 5
     },
@@ -287,7 +287,7 @@
       "ios": 8,
       "linux": 18,
       "macos": 14,
-      "unspecified": 341,
+      "unspecified": 342,
       "web": 441,
       "windows": 37
     },
@@ -317,8 +317,8 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
-    "data": 61,
+    "code": 183,
+    "data": 62,
     "weights": 56,
     "document": 0
   },
@@ -547,13 +547,13 @@
         "state": "success"
       },
       "discovered": 588,
-      "indexed": 503,
-      "indexed_resources": 503,
+      "indexed": 504,
+      "indexed_resources": 504,
       "resolved_aliases": 5,
-      "curated": 459,
+      "curated": 461,
       "excluded": 1,
       "set_aside": 9,
-      "unindexed": 75
+      "unindexed": 74
     },
     {
       "id": "tianyuan-cua",
@@ -695,7 +695,7 @@
       "indexed": 486,
       "indexed_resources": 486,
       "resolved_aliases": 0,
-      "curated": 394,
+      "curated": 395,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 13
@@ -957,7 +957,7 @@
       "indexed": 186,
       "indexed_resources": 186,
       "resolved_aliases": 0,
-      "curated": 136,
+      "curated": 137,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 0
@@ -1894,7 +1894,7 @@
       "indexed": 451,
       "indexed_resources": 451,
       "resolved_aliases": 56,
-      "curated": 385,
+      "curated": 386,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 45

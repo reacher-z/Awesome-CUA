@@ -63143,5 +63143,241 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.03255",
+    "summary": "Introduces LPS-Bench, 570 cases testing whether tool-using computer-use agents catch planning risks under benign requests and adversarial steering, with generated mock toolkits and LLM judging of full traces.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "long-horizon",
+      "planning"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "LPS-Bench: Benchmarking Safety"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2602.03255"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). Scope is adjacent because the cases run in simulated MCP-style toolkits rather than graphical, browser or device interfaces. Experiments, reported performance and artifact availability have not been independently reproduced.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9d88e305f945475f69be8f83583aafa91d16adb0e512b04c3c7c4d27e8d2057e",
+    "reviewed_at": "2026-10-18T12:32:41Z"
+  },
+  {
+    "name": "LPS-Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/tychenn/LPS-Bench",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "long-horizon",
+      "planning"
+    ],
+    "scope": "adjacent",
+    "summary": "Safety benchmark for computer-use agents in simulated MCP-style tool workflows: 570 cases across 7 domains and 9 planning-risk types, each with its own mock tools, judged by an LLM that labels the trace safe or unsafe.",
+    "verify_terms": [
+      "LPS-Bench"
+    ],
+    "documented_by": [
+      "2602.03255"
+    ],
+    "notes": "No graphical, browser or device interface is driven: agent.py loads each case's Python mock tool module (simulated browser, file, OS, office, media and social-media functions) as LangChain tools, which is why the scope is adjacent. The repository ships the case definitions, 572 mock tool modules, case-local skills, evaluators and the multi-agent case-generation pipeline; candidate_cases, utility_cases and experiments are not counted. The Hugging Face dataset tianyyuu/LPS-Bench publishes the cases as base and skill test splits. The README says the current release contains audited revisions of case text, tools and criteria, so the paper's 13-model results describe earlier case versions; those results and the evaluator agreement figures are publisher-reported and were not reproduced. The code license comes from the MIT LICENSE; the data license comes from the Hub card. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "f9944829872f6f9e2664bf948ae471bd54550072",
+      "repository_tree_sha": "25d216afcb39f87c943d725e3b69bfc44bf70d85",
+      "benchmark_protocol": {
+        "focus": [
+          "safety awareness during long-horizon planning",
+          "benign requests with hidden planning risks",
+          "adversarial steering through instructions, tool outputs, multi-turn attacks and skills"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "user instruction",
+          "mock tool responses",
+          "case-local skill text in skill modes"
+        ],
+        "actions": [
+          "calls to case-specific simulated MCP-style tools",
+          "natural-language replies to the user"
+        ],
+        "evaluation": "An LLM evaluator (DeepSeek-R1 in the paper) applies each case's safety criterion to the complete execution trace and labels it safe, unsafe or execution_failed. The primary metric is success-conditioned Safe Rate, safe / (safe + unsafe), averaged without weights over risk categories. The runner offers tool-only, skill-only and hybrid capability settings.",
+        "counts": [
+          {
+            "value": 570,
+            "unit": "cases",
+            "qualifier": "exact",
+            "population": "base cases shipped in examples/ (JSON files without _skill_ in the name)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1"
+          },
+          {
+            "value": 40,
+            "unit": "cases",
+            "qualifier": "exact",
+            "population": "skill-variant cases shipped in examples/ (*_skill_*.json)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1"
+          },
+          {
+            "value": 252,
+            "unit": "cases",
+            "qualifier": "exact",
+            "population": "benign base cases (FA, OC, TS and IP files)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1"
+          },
+          {
+            "value": 318,
+            "unit": "cases",
+            "qualifier": "exact",
+            "population": "adversarial base cases (HS, PI, MT, EB and RC files)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1"
+          },
+          {
+            "value": 65,
+            "unit": "scenarios",
+            "qualifier": "exact",
+            "population": "scenarios from which the base cases are derived",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 7,
+            "unit": "task domains",
+            "qualifier": "exact",
+            "population": "base cases",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1"
+          },
+          {
+            "value": 9,
+            "unit": "risk types",
+            "qualifier": "exact",
+            "population": "base cases",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1"
+          }
+        ],
+        "notes": "Domain counts computed from examples/ match the README table (web browser 92, code 90, file I/O 85, multimedia 78, social media 77, OS operation 76, office 72). The README says results on the current release need fresh runs that record the repository commit, because case text, tool behaviour and criteria were revised after the paper's experiments.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md",
+          "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1",
+          "https://raw.githubusercontent.com/tychenn/LPS-Bench/f9944829872f6f9e2664bf948ae471bd54550072/agent.py",
+          "https://raw.githubusercontent.com/tychenn/LPS-Bench/f9944829872f6f9e2664bf948ae471bd54550072/evaluator/false_assumption.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/tychenn/LPS-Bench/git/commits/f9944829872f6f9e2664bf948ae471bd54550072",
+        "sha256": "c111c920d1dff6ae9ed304fe01b35e6b87105d852a97ec2f73ed5e5f3abaa440",
+        "retrieved_at": "2026-10-18T12:31:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_tree_sha",
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1",
+        "sha256": "e8229ab9f5d890ae3e9b8687bb337a21b7613ae04d61b7e8f7100f53307eeb14",
+        "retrieved_at": "2026-10-18T12:31:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/tychenn/LPS-Bench/f9944829872f6f9e2664bf948ae471bd54550072/agent.py",
+        "sha256": "6269b41842255e9642ac808f7f7bd2c2f8c4e4fb6228a84cf18b14c2cd211694",
+        "retrieved_at": "2026-10-18T12:31:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/tychenn/LPS-Bench/f9944829872f6f9e2664bf948ae471bd54550072/evaluator/false_assumption.py",
+        "sha256": "b79b390fbc6bf39b99d930083ffe56aefdd99142b3597ff468b39ca3987f0bac",
+        "retrieved_at": "2026-10-18T12:31:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data",
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/tianyyuu/LPS-Bench/raw/f73c6ccd570dc7d4c4d2126d7dc1943b4a0f73fe/README.md",
+        "sha256": "2f4d1920bbad410279c1945db591830068b7e49c2664c5958a9f235df92ef856",
+        "retrieved_at": "2026-10-18T12:31:54Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "mit",
+          "url": "https://huggingface.co/datasets/tianyyuu/LPS-Bench/raw/f73c6ccd570dc7d4c4d2126d7dc1943b4a0f73fe/README.md",
+          "retrieved_at": "2026-10-18T12:31:54Z",
+          "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"
+        },
+        "reason": "The publisher's Hugging Face dataset card for the benchmark (tianyyuu/LPS-Bench at revision f73c6ccd) declares license: mit in its metadata header.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/tianyyuu/LPS-Bench/raw/f73c6ccd570dc7d4c4d2126d7dc1943b4a0f73fe/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a3b3072715773798e4d3a723fa77e45dc757de27e8873ea30697f25607161118",
+    "reviewed_at": "2026-10-18T12:32:41Z"
   }
 ]

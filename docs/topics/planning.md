@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+274 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (208)](#papers)
+
+## Benchmarks
+
+All entries in this section: unspecified.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [LPS-Bench](https://github.com/tychenn/LPS-Bench) | [2602.03255](https://arxiv.org/abs/2602.03255) (2026) | [570 cases](https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1) · [65 scenarios](https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md) · [7 task domains](https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1) · [9 risk types](https://api.github.com/repos/tychenn/LPS-Bench/git/trees/25d216afcb39f87c943d725e3b69bfc44bf70d85?recursive=1) | code MIT · data mit | Safety benchmark for computer-use agents in simulated MCP-style tool workflows: 570 cases across 7 domains and 9 planning-risk types, each with its own mock tools, judged by an LLM that labels the trace safe or unsafe. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md) |
 
 ## Datasets
 
@@ -163,6 +171,7 @@
 | 2026‑02‑05 | [Do Web Agents Investigate Before They Decide?](https://arxiv.org/abs/2602.05354) | web | Introduces MIRAGE, a web decision benchmark where agents must actively uncover evidence that can contradict the visible context. Separate investigation, reasoning, decision, and hallucination measures diagnose failures beyond reaching the right page. |
 | 2026‑02‑05 | [M$^2$-Miner: Multi-Agent Enhanced MCTS for Mobile GUI Agent Data Mining](https://arxiv.org/abs/2602.05429) | unspecified | M2-Miner uses multi-agent-guided Monte Carlo tree search to collect mobile GUI intent–trajectory pairs. Intent recycling and progressive collector training aim to increase the diversity and usefulness of the mined interaction data. |
 | 2026‑02‑03 | [Agent Alpha: Tree Search Unifying Generation, Exploration and Evaluation for Computer-Use Agents](https://arxiv.org/abs/2602.02995) | desktop | Agent Alpha uses step-level Monte Carlo tree search to reuse successful prefixes and recover from early GUI mistakes. Comparison-based evaluation and diversity-constrained expansion guide the search, with experiments on OSWorld. |
+| 2026‑02‑03 | [LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios](https://arxiv.org/abs/2602.03255) | unspecified | Introduces LPS-Bench, 570 cases testing whether tool-using computer-use agents catch planning risks under benign requests and adversarial steering, with generated mock toolkits and LLM judging of full traces. |
 | 2026‑02‑02 | [Avenir-Web: Human-Experience-Imitating Multimodal Web Agents with Mixture of Grounding Experts](https://arxiv.org/abs/2602.02468) | web | Avenir-Web combines multiple grounding specialists with procedural experience, a task checklist and adaptive memory. It evaluates this planning and execution framework on live Online-Mind2Web tasks. |
 | 2026‑02‑02 | [SafePred: A Predictive Guardrail for Computer-Using Agents via World Models](https://arxiv.org/abs/2602.01725) | desktop, web | SafePred uses world-model risk forecasts to guide action filtering and task replanning. Its desktop and web safety evaluations distinguish policy compliance, task success and success under the specified policy. |
 | 2026‑01‑29 | [BEAP-Agent: Backtrackable Execution and Adaptive Planning for GUI Agents](https://arxiv.org/abs/2601.21352) | desktop | BEAP-Agent treats GUI execution as depth-first search with coordinated planning, execution and task-state tracking. It supports backtracking across multiple levels of earlier states and evaluates recovery on OSWorld. |

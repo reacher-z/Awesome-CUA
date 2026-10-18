@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:allenai/open-instruct",
+    "url": "https://github.com/allenai/open-instruct",
+    "decision": "out_of_scope",
+    "reason": "Open-Instruct is a general LLM post-training codebase; it contains no computer-use agent, interface environment or GUI data.",
+    "reviewed_at": "2026-10-18T11:21:49Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/allenai/open-instruct/main/README.md",
+      "sha256": "a415dae659f4a66da5e75b44779c04ff75d15f70115cdd3af8fc7636ca825558",
+      "retrieved_at": "2026-10-18T11:19:21Z"
+    }
   }
 ]

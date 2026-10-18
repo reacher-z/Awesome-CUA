@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-18T08:01:28Z**. Generated from committed sou
 - 3,055 resource records: 1,572 curated; 1,483 bibliographic metadata only.
 - 2,606 paper and survey records, including 2,593 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,715 retained arXiv metadata records; 122 explicit scope exclusions are outside the active catalog.
-- 4,052 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links, 9 other addresses of indexed resources and 0 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
+- 4,052 discovery identifiers; 902 remain unresolved after accounting for scope exclusions and for 80 reviewed non-resource links, 9 other addresses of indexed resources and 1 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
 - 18 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -62,7 +62,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ShowUI-π — first-party releases](https://github.com/showlab/showui-pi) | 11 | 4 | 4 | 0 | 3 | 0 | 4 | OK · 2026-10-18 |
 | [OpenCUA — first-party releases](https://github.com/xlang-ai/OpenCUA) | 18 | 6 | 6 | 0 | 3 | 0 | 9 | OK · 2026-10-18 |
 | [WebDreamer — first-party releases](https://github.com/OSU-NLP-Group/WebDreamer) | 5 | 3 | 3 | 0 | 1 | 0 | 1 | OK · 2026-10-18 |
-| [NNetNav — first-party releases](https://github.com/MurtyShikhar/NNetnav) | 6 | 2 | 2 | 0 | 2 | 0 | 2 | OK · 2026-10-18 |
+| [NNetNav — first-party releases](https://github.com/MurtyShikhar/NNetnav) | 6 | 2 | 2 | 0 | 2 | 1 | 1 | OK · 2026-10-18 |
 | [GroundGUI — first-party releases](https://github.com/PrentisAI/GroundGUI) | 11 | 6 | 6 | 0 | 0 | 0 | 5 | OK · 2026-10-18 |
 | [Seg2Click — first-party releases](https://github.com/jcwang0602/Seg2Click) | 11 | 8 | 8 | 0 | 1 | 0 | 2 | OK · 2026-10-18 |
 | [SwitchMem — first-party releases](https://github.com/dmis-lab/SwitchMem) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | OK · 2026-10-18 |

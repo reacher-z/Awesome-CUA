@@ -63143,5 +63143,114 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "UI Act",
+    "kind": "agent",
+    "url": "https://github.com/TobiasNorlund/ui-act",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "summary": "Linux desktop agent that sends screenshots to Claude's computer-use tool and acts through its own virtual mouse and keyboard on a second X11 pointer, so the user can keep working; runs on the full desktop or one window.",
+    "verify_terms": [
+      "UI Act"
+    ],
+    "notes": "Runs only on Ubuntu Desktop 24.04 or later in an X11 session (not Wayland) and ships as a .deb with a ui-act CLI and a GNOME Shell launcher extension. Each run creates a Multi-Pointer X master device with uinput mouse and keyboard devices; screenshots captured with xcap are downscaled and sent to the Anthropic Messages API (computer_20251124 tool, default model claude-opus-4-6) with a user-supplied key, and the user is prompted when the model asks for clarification or finishes. Anthropic is the only supported backend. Anonymous usage telemetry is on by default and can be disabled with --no-telemetry. The README says the earlier UI Act model project moved to TobiasNorlund/UI-Act-model, a separate repository not covered by this record. The LICENSE file is the Apache License 2.0 text with a 2024 copyright notice; the GitHub API reports NOASSERTION. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TobiasNorlund/ui-act/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Rust source and a Debian package for Ubuntu 24.04 or later on X11; requires the user's own Anthropic API key.",
+      "repository_revision": "de02b67ea9280af4edb84f85238620282db8d240",
+      "repository_tree_sha": "11a99b6359c3d39903e2687fd99de94cdfdf6aca",
+      "package_version": "0.2.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/TobiasNorlund/ui-act/git/commits/de02b67ea9280af4edb84f85238620282db8d240",
+        "sha256": "6174c35a220d1c6443ca15ac03776dffa94c0c3fc9ca36e50bbac20ba705c32f",
+        "retrieved_at": "2026-10-18T12:28:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/TobiasNorlund/ui-act/git/trees/11a99b6359c3d39903e2687fd99de94cdfdf6aca?recursive=1",
+        "sha256": "34a83da9a35be225cad6942dc479f431fed88216e0c278971543f569a88c23fd",
+        "retrieved_at": "2026-10-18T12:28:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TobiasNorlund/ui-act/de02b67ea9280af4edb84f85238620282db8d240/ui_act/src/agent.rs",
+        "sha256": "9ef865cec747afae4c36ab9160d9d55ab36f47ef789c340360235c804e42f3b7",
+        "retrieved_at": "2026-10-18T12:28:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TobiasNorlund/ui-act/de02b67ea9280af4edb84f85238620282db8d240/ui_act/src/device.rs",
+        "sha256": "05cfbfd9fc48ddbf1c663149c86f3ecdbbb154da552d1c001f06b46c488613a7",
+        "retrieved_at": "2026-10-18T12:28:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TobiasNorlund/ui-act/de02b67ea9280af4edb84f85238620282db8d240/ui_act/src/env/full_desktop.rs",
+        "sha256": "1dda60778dcc042c12ca8fe4fc8365890c04157b557a7fac8c5c788d949fab81",
+        "retrieved_at": "2026-10-18T12:28:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TobiasNorlund/ui-act/de02b67ea9280af4edb84f85238620282db8d240/ui_act/Cargo.toml",
+        "sha256": "41b0f0de67f7cb8ae95fd4fdd1d25c3ede2da0eed37c5c76fa31c84d9be24060",
+        "retrieved_at": "2026-10-18T12:28:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bf00399ca8aebd400aceba9708ccfa1134cdb6f5234526afbbb8c94c2a6a1018",
+    "reviewed_at": "2026-10-18T12:29:16Z"
   }
 ]

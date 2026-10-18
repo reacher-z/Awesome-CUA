@@ -23804,13 +23804,67 @@
         "url": "https://raw.githubusercontent.com/lll6gg/UI-R1/HEAD/README.md",
         "sha256": "f55ac6a0c50d298d46c5f7083a0879959fd7cd3c1d91496af295ebf2afcc13a3",
         "retrieved_at": "2026-10-16T06:36:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "details.hub_revision"
+        ],
+        "url": "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/e8e45d20962424f4cfdabe88db5cc047683a5ebc/train.json",
+        "sha256": "9fd876e023e60b1c2fa3722100f3f8f40608c0d68f3b475c4b35bce5ae0ecf01",
+        "retrieved_at": "2026-10-18T15:46:32Z"
       }
     ],
     "details": {
       "hub_id": "LZXzju/UI-R1-3B-Train",
       "gated": false,
       "disabled": false,
-      "download_url": "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/tree/main"
+      "download_url": "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/tree/main",
+      "hub_revision": "e8e45d20962424f4cfdabe88db5cc047683a5ebc",
+      "dataset_profile": {
+        "supervision": [
+          "GUI grounding targets with bounding boxes",
+          "mobile action labels"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "bounding boxes",
+          "actions"
+        ],
+        "formats": [
+          "JSON annotations",
+          "PNG screenshot files"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 136,
+            "unit": "training samples",
+            "qualifier": "exact",
+            "population": "train.json at Hub revision e8e45d20",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/e8e45d20962424f4cfdabe88db5cc047683a5ebc/train.json"
+          },
+          {
+            "value": 115,
+            "unit": "referenced screenshots",
+            "qualifier": "exact",
+            "population": "train.json at Hub revision e8e45d20 (distinct img_filename values)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/e8e45d20962424f4cfdabe88db5cc047683a5ebc/train.json"
+          }
+        ],
+        "notes": "Of the 136 samples, 101 carry a bbox target (click actions) and 35 do not (open_app, navigate_back, scroll and input_text steps); the data_source field labels 85 samples android and 51 ios. The 115 referenced file names match the files under train_imgs/ in the Hub manifest.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/e8e45d20962424f4cfdabe88db5cc047683a5ebc/train.json",
+          "https://huggingface.co/api/datasets/LZXzju/UI-R1-3B-Train"
+        ]
+      }
     }
   },
   {

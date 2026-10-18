@@ -11,7 +11,7 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [ShowUI-π training data](https://huggingface.co/datasets/showlab/ShowUI-pi-data) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | — | Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md) |
-| [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
+| [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | [136 training samples](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/e8e45d20962424f4cfdabe88db5cc047683a5ebc/train.json) · [115 referenced screenshots](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/e8e45d20962424f4cfdabe88db5cc047683a5ebc/train.json) | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
 
 ## Models
 

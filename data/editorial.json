@@ -63143,5 +63143,97 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenAI Computer Use Sample Apps",
+    "kind": "agent",
+    "url": "https://github.com/openai/openai-cua-sample-app",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "OpenAI reference agents that drive a browser through Playwright JavaScript or a desktop through PyAutoGUI Python, with the model writing code via the Responses API, plus mock kanban, paint and booking labs.",
+    "scope": "core",
+    "verify_terms": [
+      "Computer Use Sample Apps"
+    ],
+    "aliases": [
+      "openai-cua-sample-app",
+      "CUA sample app"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openai/openai-cua-sample-app/HEAD/README.md"
+    ],
+    "publisher_id": "organization:openai",
+    "notes": "The repository (ID 946708780, created 2025-03-11) keeps its original name and a description about using CUA through the API, but the inspected README and python-app/app/responses_loop.py now drive the model through persistent code-execution function tools (exec_py for PyAutoGUI; a JavaScript worker for Playwright) rather than the computer-use tool, so no relation to the OpenAI CUA model record is asserted. The default model is configurable. Each run copies a lab template and records screenshots and a replay trace. The README states that generated code runs with user permissions, without an operating-system sandbox or OpenAI's production action-review controls, and that a final answer does not prove task success. MIT applies to the sample code.",
+    "details": {
+      "availability": "Published source; requires an OpenAI API key",
+      "repository_url": "https://github.com/openai/openai-cua-sample-app",
+      "repository_tree_sha": "f2a3dc523ae406f9b704f9a420a05402a63b4522"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/openai/openai-cua-sample-app",
+        "sha256": "60ffbe86c794b4fad2fea1c8926f43dae9b0d590107dbeef26d1bf556e23e8bd",
+        "retrieved_at": "2026-10-18T11:14:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/openai/openai-cua-sample-app/git/trees/main?recursive=1",
+        "sha256": "ab019f99571d9ab49c6282b250f8e22f78de9fce5b23f8580ddf904c1b1572f2",
+        "retrieved_at": "2026-10-18T11:14:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openai/openai-cua-sample-app/HEAD/python-app/app/responses_loop.py",
+        "sha256": "bba5f3c71f4a56fe6ad4ce6eded667e88ed32f3af9dae962a312823599a018b5",
+        "retrieved_at": "2026-10-18T11:15:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/openai/openai-cua-sample-app/HEAD/LICENSE",
+        "sha256": "13df7812ca53ecaae1cb4a868844bb598373047ae1d580e4debfbef1dd5b6915",
+        "retrieved_at": "2026-10-18T11:14:48Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "46a7e27a2b7ba6bfea22349ff05e9acebf82eb06258817a4b42155b82fedd17c",
+    "reviewed_at": "2026-10-18T11:15:18Z"
   }
 ]

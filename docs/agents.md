@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**43 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
+**44 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (1)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -78,6 +78,7 @@ All entries in this section: web.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/README.md) |
+| [OpenAI Computer Use Sample Apps](https://github.com/openai/openai-cua-sample-app) | web, desktop | — | code MIT | OpenAI reference agents that drive a browser through Playwright JavaScript or a desktop through PyAutoGUI Python, with the model writing code via the Responses API, plus mock kanban, paint and booking labs. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/openai/openai-cua-sample-app/HEAD/README.md) |
 | [UI-TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | desktop, web | — | code Apache-2.0 | Desktop app for a local GUI agent driven by UI-TARS and Seed-1.5-VL/1.6 models, offering local and remote operators for computers and browsers; the repository also ships the Agent TARS CLI and web UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bytedance/UI-TARS-desktop/HEAD/README.md) |
 
 [↑ Back to top](#agent-catalog)

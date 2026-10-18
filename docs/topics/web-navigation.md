@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (9)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -37,6 +37,7 @@ All entries in this section: web.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Go-Browse-WA processed data](https://huggingface.co/datasets/apurvaga/go-browse-wa) | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | [164,533 step records](https://huggingface.co/datasets/apurvaga/go-browse-wa/raw/main/README.md) | — | Flattened web-interaction training records with accessibility-tree observations, assistant completions, trajectory rewards and step-link metadata. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/apurvaga/go-browse-wa) |
+| [Mind2Web bbox eval (MultiUI)](https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval) | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | — | data odc-by | Mind2Web steps repackaged by the MultiUI authors as JPEG screenshots with per-step JSONL queries and candidate-element boxes, for MultiUI's screenshot-based Mind2Web action evaluation. | [✓ 2026‑10‑18](https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval/raw/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d/README.md) |
 | [MT-Mind2Web](https://huggingface.co/datasets/magicgh/MT-Mind2Web) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | [600 conversations](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) · [2,896 dialogue turns](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) | data cc-by-4.0 | Multi-turn web-navigation conversations constructed from Mind2Web interactions, with dialogue turns, HTML snapshots, element candidates and click/type/select action sequences. | [✓ 2026‑10‑17](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) |
 | [NNetNav Live data](https://huggingface.co/datasets/stanfordnlp/nnetnav-live) | — | — | data apache-2.0 | Browser-interaction data released with NNetNav for its live-website setting, with separate training and test files. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/stanfordnlp/nnetnav-live) |
 | [NNetNav WebArena data](https://huggingface.co/datasets/stanfordnlp/nnetnav-wa) | — | — | data apache-2.0 | NNetNav's WebArena-oriented browser-interaction data release, with separate training and test files. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/stanfordnlp/nnetnav-wa) |

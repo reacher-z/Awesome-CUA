@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T16:03:54Z",
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -189,7 +189,7 @@
     "agent": 43,
     "benchmark": 88,
     "company": 16,
-    "dataset": 86,
+    "dataset": 87,
     "framework": 75,
     "infrastructure": 14,
     "model": 98,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -244,7 +244,7 @@
       "linux": 7,
       "macos": 2,
       "unspecified": 7,
-      "web": 25,
+      "web": 26,
       "windows": 4
     },
     "framework": {
@@ -318,7 +318,7 @@
   },
   "license_declarations_by_scope": {
     "code": 182,
-    "data": 61,
+    "data": 62,
     "weights": 56,
     "document": 0
   },
@@ -1685,13 +1685,13 @@
         "state": "success"
       },
       "discovered": 8,
-      "indexed": 1,
-      "indexed_resources": 1,
+      "indexed": 2,
+      "indexed_resources": 2,
       "resolved_aliases": 0,
-      "curated": 1,
+      "curated": 2,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 7
+      "unindexed": 6
     },
     {
       "id": "release-ui-genie",

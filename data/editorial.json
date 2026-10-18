@@ -63143,5 +63143,146 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:56b5936190d20fa3d1c1",
+    "name": "Mind2Web bbox eval (MultiUI)",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "evaluation"
+    ],
+    "summary": "Mind2Web steps repackaged by the MultiUI authors as JPEG screenshots with per-step JSONL queries and candidate-element boxes, for MultiUI's screenshot-based Mind2Web action evaluation.",
+    "scope": "core",
+    "verify_terms": [
+      "Mind2Web evaluation set"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval/raw/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d/README.md"
+    ],
+    "documented_by": [
+      "2410.13824"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "component_of",
+        "target_id": "github:neulab/multiui",
+        "evidence_url": "https://raw.githubusercontent.com/neulab/MultiUI/e261d8ad3d329a8b6e719cfd4f6a6d8e6df3cede/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:osu-nlp-group/mind2web",
+        "evidence_url": "https://raw.githubusercontent.com/neulab/MultiUI/e261d8ad3d329a8b6e719cfd4f6a6d8e6df3cede/README.md"
+      }
+    ],
+    "notes": "The Hub API at revision b089ea88 lists two ZIP archives (about 6.25 GB and 14.4 GB) beside a card that declares ODC-By; the repository is not gated. The card only names this the Mind2Web evaluation set for the MultiUI paper. The MultiUI README calls it its processed Mind2Web evaluation dataset, places it under its Mind2Web-SeeAct offline-experiment directory and runs eval_m2w.py on test_task, test_website or test_domain. Archive contents were read from their ZIP central directories and one sample query, not unpacked: each step folder, named by Mind2Web annotation and action IDs, holds a queries.jsonl with the task, previous actions, target operation and positive and negative candidate elements with bounding boxes, plus JPEG images. The archive named for ground-truth crops also has a train split; the paper's Appendix H says screenshots are randomly cropped around the target element. Mind2Web's own data terms are not resolved here; ODC-By is the card declaration.",
+    "details": {
+      "hub_id": "neulab/Mind2Web_bbox_eval",
+      "hub_revision": "b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval/tree/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d",
+      "repository_url": "https://github.com/neulab/MultiUI",
+      "dataset_profile": {
+        "supervision": [
+          "next-action prediction on Mind2Web steps",
+          "candidate-element bounding boxes"
+        ],
+        "modalities": [
+          "screenshots",
+          "task instructions",
+          "previous actions",
+          "target operations",
+          "candidate elements with bounding boxes"
+        ],
+        "formats": [
+          "ZIP archives",
+          "JSONL",
+          "JPEG"
+        ],
+        "splits": [
+          "train",
+          "test_task",
+          "test_website",
+          "test_domain"
+        ],
+        "counts": [],
+        "notes": "Counts were taken with a script from the archives' ZIP central directories at revision b089ea88 and have no retained receipt, so they are kept here rather than as count observations. bbox_generate_gt_crop_offline_data_-1choices.zip: 16,715 step folders with one JPEG each (train 7,357; test_task 2,093; test_website 1,370; test_domain 5,895). offline_data_-1choices.zip: 9,364 step folders with 27,967 JPEGs, test splits only (test_task 2,093; test_website 1,373; test_domain 5,898). Step folders are not tasks; distinct annotation IDs per split are train 1,009, test_task 252, test_website 177 and test_domain 912, with the same test counts in both archives.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval/raw/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d/README.md",
+          "https://huggingface.co/api/datasets/neulab/Mind2Web_bbox_eval/tree/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d",
+          "https://raw.githubusercontent.com/neulab/MultiUI/e261d8ad3d329a8b6e719cfd4f6a6d8e6df3cede/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/neulab/Mind2Web_bbox_eval/revision/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d",
+        "sha256": "e662d712439d9cfc547fc2b1834051c194eff072e3947281a3588281662f49ab",
+        "retrieved_at": "2026-10-18T16:02:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/neulab/Mind2Web_bbox_eval/tree/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d",
+        "sha256": "b623f067568ec9fa36b4caed1b7de98a01d0d4197945ce42de078d32be508698",
+        "retrieved_at": "2026-10-18T16:02:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "relations",
+          "notes",
+          "details.repository_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/neulab/MultiUI/e261d8ad3d329a8b6e719cfd4f6a6d8e6df3cede/README.md",
+        "sha256": "fe0c03fe73529a29788d559103c4aed48dca6ed9ba3bfd5f151f902fa8858b38",
+        "retrieved_at": "2026-10-18T16:02:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2410.13824v3",
+        "sha256": "383ada0c47d09acea6b865ed67571c9540b2d602bd6b0ea8ad3130121efd190c",
+        "retrieved_at": "2026-10-18T16:03:00Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ef5fe8c440d4670845bb315570bff678673ea2fa3953871fb60f0e82c67df970",
+    "reviewed_at": "2026-10-18T16:04:03Z"
   }
 ]

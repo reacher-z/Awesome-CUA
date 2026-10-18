@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Mind2Web bbox eval (MultiUI)](https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval) | web | [2410.13824](https://arxiv.org/abs/2410.13824) (2024) | — | data odc-by | Mind2Web steps repackaged by the MultiUI authors as JPEG screenshots with per-step JSONL queries and candidate-element boxes, for MultiUI's screenshot-based Mind2Web action evaluation. | [✓ 2026‑10‑18](https://huggingface.co/datasets/neulab/Mind2Web_bbox_eval/raw/b089ea88cd2cabc44c10d62f7e99a896a4aeaf2d/README.md) |
 | [ShowUI-π training data](https://huggingface.co/datasets/showlab/ShowUI-pi-data) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | — | Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md) |
 | [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
 

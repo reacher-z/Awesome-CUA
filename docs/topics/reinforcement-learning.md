@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (24)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -40,6 +40,7 @@ All entries in this section: web.
 | [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |
 | [GUI-R1](https://github.com/ritzz-ai/GUI-R1) | cross-platform | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | code Apache-2.0 | GUI action-model training and evaluation code with verifiable rewards, plus linked reinforcement-learning data and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ritzz-ai/GUI-R1/HEAD/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
+| [Holo2 8B](https://huggingface.co/Hcompany/Holo2-8B) | web, desktop, cross-platform | — | weights Apache-2.0 | Holo2 checkpoint fine-tuned from Qwen3-VL-8B-Thinking through supervised and online RL stages for UI element localization and multi-step navigation on web, desktop and mobile interfaces. | [✓ 2026‑10‑18](https://huggingface.co/Hcompany/Holo2-8B/raw/09cd3b45966f61c8c5ae4bc1424151c682ccc5c8/README.md) |
 | [InfiGUI-G1 7B](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | weights apache-2.0 | A GUI-grounding checkpoint trained with adaptive exploration rewards and multiple candidate answers to improve instruction-to-element alignment. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B/raw/main/README.md) |
 | [InfiGUI-R1](https://github.com/Reallm-Labs/InfiGUI-R1) | cross-platform | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | code Apache-2.0 | 3B GUI agent trained in two stages: distilling spatial reasoning from teacher models, then reinforcement learning that rewards accurate sub-goals and trains error recovery. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Reallm-Labs/InfiGUI-R1/HEAD/README.md) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |

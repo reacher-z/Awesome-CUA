@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -1253,8 +1253,8 @@
       "resolved_aliases": 1,
       "curated": 6,
       "excluded": 0,
-      "set_aside": 4,
-      "unindexed": 8
+      "set_aside": 5,
+      "unindexed": 7
     },
     {
       "id": "release-webdreamer",

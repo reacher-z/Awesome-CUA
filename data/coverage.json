@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-18T15:33:06Z",
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -192,22 +192,22 @@
     "dataset": 86,
     "framework": 75,
     "infrastructure": 14,
-    "model": 98,
+    "model": 99,
     "paper": 2697,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 300,
+    "android": 301,
     "cross-platform": 197,
-    "desktop": 322,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -269,14 +269,14 @@
       "windows": 1
     },
     "model": {
-      "android": 24,
+      "android": 25,
       "cross-platform": 47,
-      "desktop": 24,
+      "desktop": 25,
       "ios": 4,
       "linux": 6,
       "macos": 4,
       "unspecified": 2,
-      "web": 28,
+      "web": 29,
       "windows": 5
     },
     "paper": {
@@ -317,9 +317,9 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
-    "weights": 56,
+    "weights": 57,
     "document": 0
   },
   "sources": [
@@ -344,13 +344,13 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 226,
-      "indexed_resources": 225,
-      "resolved_aliases": 6,
-      "curated": 215,
+      "indexed": 227,
+      "indexed_resources": 226,
+      "resolved_aliases": 7,
+      "curated": 216,
       "excluded": 0,
       "set_aside": 29,
-      "unindexed": 83
+      "unindexed": 82
     },
     {
       "id": "zju-gui",
@@ -663,13 +663,13 @@
         "state": "success"
       },
       "discovered": 193,
-      "indexed": 150,
-      "indexed_resources": 150,
-      "resolved_aliases": 3,
-      "curated": 148,
+      "indexed": 151,
+      "indexed_resources": 151,
+      "resolved_aliases": 4,
+      "curated": 149,
       "excluded": 0,
       "set_aside": 15,
-      "unindexed": 28
+      "unindexed": 27
     },
     {
       "id": "osu-gui",
@@ -721,13 +721,13 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 92,
-      "indexed_resources": 92,
-      "resolved_aliases": 1,
-      "curated": 83,
+      "indexed": 93,
+      "indexed_resources": 93,
+      "resolved_aliases": 2,
+      "curated": 84,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 45
+      "unindexed": 44
     },
     {
       "id": "jin-gui-hub",
@@ -837,13 +837,13 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 195,
-      "indexed_resources": 195,
-      "resolved_aliases": 3,
-      "curated": 182,
+      "indexed": 196,
+      "indexed_resources": 196,
+      "resolved_aliases": 4,
+      "curated": 183,
       "excluded": 0,
       "set_aside": 6,
-      "unindexed": 46
+      "unindexed": 45
     },
     {
       "id": "mobile-agents",
@@ -1044,13 +1044,13 @@
         "state": "success"
       },
       "discovered": 215,
-      "indexed": 151,
-      "indexed_resources": 151,
-      "resolved_aliases": 2,
-      "curated": 129,
+      "indexed": 152,
+      "indexed_resources": 152,
+      "resolved_aliases": 3,
+      "curated": 130,
       "excluded": 14,
       "set_aside": 14,
-      "unindexed": 36
+      "unindexed": 35
     },
     {
       "id": "philfung-cua",
@@ -1831,13 +1831,13 @@
         "state": "success"
       },
       "discovered": 50,
-      "indexed": 26,
-      "indexed_resources": 26,
-      "resolved_aliases": 0,
-      "curated": 26,
+      "indexed": 27,
+      "indexed_resources": 27,
+      "resolved_aliases": 1,
+      "curated": 27,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 22
+      "unindexed": 21
     },
     {
       "id": "on-device-agents",

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -61,6 +61,7 @@
 | [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
 | [ARPO UI-TARS-1.5-7B checkpoint](https://huggingface.co/Fanbin/ARPO_UITARS1.5_7B) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | — | UI-TARS-1.5-7B-derived checkpoint trained with ARPO on OSWorld desktop tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
+| [CogVLM & CogAgent](https://github.com/zai-org/CogVLM) | web, android, desktop | [2312.08914](https://arxiv.org/abs/2312.08914) (2023) | code Apache-2.0 · weights other | Official CogVLM-17B and original CogAgent-18B release: a 1120-pixel VLM that returns a plan, next action and grounded operation with box coordinates for a GUI screenshot, with demos and LoRA fine-tuning. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zai-org/CogVLM/HEAD/README.md) |
 | [EvoCUA](https://github.com/meituan/EvoCUA) | desktop | [2601.15876](https://arxiv.org/abs/2601.15876) (2026) | code Apache-2.0 | Computer-use model and training resources from the EvoCUA project. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/meituan/EvoCUA/HEAD/README.md) |
 | [EvoCUA 32B 20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) | desktop | — | weights apache-2.0 | Larger EvoCUA computer-use agent checkpoint (20260105 release) with about 33B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-32B-20260105) |
 | [EvoCUA 8B 20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) | desktop | — | weights apache-2.0 | EvoCUA computer-use agent checkpoint (20260105 release) with about 8.8B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-8B-20260105) |

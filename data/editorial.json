@@ -63143,5 +63143,109 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "CogVLM & CogAgent",
+    "kind": "model",
+    "url": "https://github.com/zai-org/CogVLM",
+    "environments": [
+      "web",
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "scope": "core",
+    "summary": "Official CogVLM-17B and original CogAgent-18B release: a 1120-pixel VLM that returns a plan, next action and grounded operation with box coordinates for a GUI screenshot, with demos and LoRA fine-tuning.",
+    "verify_terms": [
+      "CogAgent"
+    ],
+    "documented_by": [
+      "2312.08914"
+    ],
+    "notes": "The repository was renamed from THUDM/CogVLM to zai-org/CogVLM (same GitHub repository ID); the former name is recorded in data/repository-aliases.json. CogVLM itself is a general visual language model (arXiv 2311.03079); this record is curated for the CogAgent-18B GUI release documented by arXiv 2312.08914, whose README lists AITW and Mind2Web results and GUI question answering on web, PC and mobile screenshots. The later CogAgent-9B release lives in the separate THUDM/CogAgent repository. The agent prompt templates are in utils/utils/template.py, and the Streamlit agent demo takes an uploaded screenshot and returns text; no component that executes actions on a device ships here. Checkpoints (cogagent-chat, cogagent-vqa and CogVLM variants) are downloaded from Hugging Face or OpenXLab and were not inspected. Code is Apache-2.0; weights fall under the custom CogVLM License (free academic research use, registration required for commercial use). Benchmark claims are publisher-reported. Last commit 2024-05-29. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zai-org/CogVLM/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public inference, demo and LoRA fine-tuning code; checkpoints are downloaded separately from Hugging Face or OpenXLab under the CogVLM License.",
+      "license_name": "The CogVLM License"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/zai-org/CogVLM/git/commits/f7283b2c8d26cd7f932d9a5f7f5f9307f568195d",
+        "sha256": "1a03d75f20f5c79d216ce2b52582b1c561f537b80ec396f3f17155dd85858d9f",
+        "retrieved_at": "2026-10-18T15:32:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/zai-org/CogVLM/f7283b2c8d26cd7f932d9a5f7f5f9307f568195d/utils/utils/template.py",
+        "sha256": "124a13efb5ce975f18c331390c7ff53b1eec7bd10d63d21988fbd87f532c2f44",
+        "retrieved_at": "2026-10-18T15:32:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/zai-org/CogVLM/f7283b2c8d26cd7f932d9a5f7f5f9307f568195d/composite_demo/demo_agent_cogagent.py",
+        "sha256": "634145d9d7cd8ba4f10e9c08e0bdf24bf402932a723cc9574165d2b4dda59af1",
+        "retrieved_at": "2026-10-18T15:32:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.weights",
+          "details.license_name",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/zai-org/CogVLM/f7283b2c8d26cd7f932d9a5f7f5f9307f568195d/MODEL_LICENSE",
+        "sha256": "7d4a48f47dd5402e6dcab59cec8339afc9856b4b188eb37ce563e3a6f4f5a1ec",
+        "retrieved_at": "2026-10-18T15:32:30Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "other",
+          "url": "https://raw.githubusercontent.com/zai-org/CogVLM/f7283b2c8d26cd7f932d9a5f7f5f9307f568195d/MODEL_LICENSE",
+          "retrieved_at": "2026-10-18T15:32:30Z",
+          "basis": "publisher weights license file named by the README; custom terms, not an SPDX license"
+        },
+        "reason": "The README says use of the model weights must comply with MODEL_LICENSE, the custom CogVLM License, which permits free academic research use and requires registration for commercial use.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/zai-org/CogVLM/f7283b2c8d26cd7f932d9a5f7f5f9307f568195d/MODEL_LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "845d0c7f8f13501791a18b61b3f312bdac112273ff742eded3c926b777f0e002",
+    "reviewed_at": "2026-10-18T15:33:05Z"
   }
 ]

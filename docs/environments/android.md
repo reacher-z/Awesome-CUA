@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -81,6 +81,7 @@
 | [AutoGLM Phone 9B Multilingual](https://huggingface.co/zai-org/AutoGLM-Phone-9B-Multilingual) | android, ios | — | weights mit | Multilingual variant of the AutoGLM phone-agent checkpoint for Open-AutoGLM, likewise fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters. | [✓ 2026‑10‑16](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B-Multilingual) |
 | [BlueLM-GUI](https://github.com/vivo-ai-lab/BlueLM-GUI) | android | [2609.12394](https://arxiv.org/abs/2609.12394) (2026) | code Apache-2.0 | Mobile GUI agent research release with technical report, benchmark data, and evaluation tooling from vivo AI Lab. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo-ai-lab/BlueLM-GUI/HEAD/README.md) |
 | [Code2World-8B checkpoint](https://huggingface.co/GD-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | weights MIT | Released GUI world-model checkpoint that turns a screenshot and proposed action into HTML for rendering a predicted next screen. | [✓ 2026‑10‑18](https://huggingface.co/GD-ML/Code2World/raw/3e48194a8228570164ecd510f9d83ac839e9e931/README.md) |
+| [CogVLM & CogAgent](https://github.com/zai-org/CogVLM) | web, android, desktop | [2312.08914](https://arxiv.org/abs/2312.08914) (2023) | code Apache-2.0 · weights other | Official CogVLM-17B and original CogAgent-18B release: a 1120-pixel VLM that returns a plan, next action and grounded operation with box coordinates for a GUI screenshot, with demos and LoRA fine-tuning. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zai-org/CogVLM/HEAD/README.md) |
 | [Ferret-UI](https://github.com/apple/ml-ferret) | android, ios | [2404.05719](https://arxiv.org/abs/2404.05719) (2024) | — | Screen understanding research within the Ferret model family. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/main/ferretui/README.md) |
 | [GELab Zero](https://github.com/stepfun-ai/gelab-zero) | android | — | code MIT | Open mobile GUI agent stack pairing a 4B model that runs on consumer hardware with local multi-device infrastructure, an MCP server, and AndroidDaily benchmark tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stepfun-ai/gelab-zero/HEAD/README.md) |
 | [GELab Zero 4B Preview](https://huggingface.co/stepfun-ai/GELab-Zero-4B-preview) | android | — | weights apache-2.0 | Preview GELab-Zero phone-use agent checkpoint fine-tuned from Qwen3-VL-4B-Instruct, with about 4.4B BF16 parameters, tagged for Android in English and Chinese, under Apache-2.0. | [✓ 2026‑10‑16](https://huggingface.co/api/models/stepfun-ai/GELab-Zero-4B-preview) |

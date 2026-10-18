@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:cactus-compute/cactus",
+    "url": "https://github.com/cactus-compute/cactus",
+    "decision": "out_of_scope",
+    "reason": "Cactus is a hybrid edge-cloud engine for running language, vision and speech models on devices, with a terminal coding agent; it does not observe or operate graphical interfaces.",
+    "reviewed_at": "2026-10-18T11:22:28Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/cactus-compute/cactus/main/README.md",
+      "sha256": "c67f736474fd2924426d6b49b3841aeeebf10b18c533beb395eadd3e8bf1ec96",
+      "retrieved_at": "2026-10-18T11:19:23Z"
+    }
   }
 ]

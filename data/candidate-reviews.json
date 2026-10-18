@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:dongyh20/octopus",
+    "url": "https://github.com/dongyh20/Octopus",
+    "decision": "out_of_scope",
+    "reason": "Octopus is an embodied vision-language programmer that controls OmniGibson, GTA and Minecraft through generated code, not a computer, browser or mobile interface.",
+    "reviewed_at": "2026-10-18T11:23:10Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/dongyh20/Octopus/master/README.md",
+      "sha256": "3335332148f23c285411d4962cb5e1062a58fa6767bba4c65421232094b33f3d",
+      "retrieved_at": "2026-10-18T11:19:26Z"
+    }
   }
 ]

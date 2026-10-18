@@ -63143,5 +63143,158 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SATraj-OS",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/AI45Research/SATraj-OS",
+    "scope": "core",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "data-generation",
+      "safety-security",
+      "imitation-learning"
+    ],
+    "summary": "Desktop computer-use trajectories with per-step screenshots and success, safety and attack labels, split into capability runs, safe-completion and refusal runs, and a legacy RiOSWorld-derived safety archive.",
+    "verify_terms": [
+      "SATraj-OS"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+    ],
+    "notes": "The ungated Hub repository (revision 74deb768) publishes trajectories.jsonl files with zipped or tarred step screenshots in three configs: Capability (tasks from SCOPE-Gen), Safety-v2 (safe completions and refusals on attack-injected Capability tasks) and a legacy Safety archive generated through RiOSWorld rollouts that keeps risky outcomes. Each record has chat-format messages whose assistant turns hold an action description and a coordinate action, plus success, safety, reward and attack fields. The card declares Apache-2.0 for the data; screenshots show third-party desktop applications whose own terms are not addressed. Thunderbird and VLC capability files are present but not listed in the capability config. The Safactory report (arXiv 2605.06230, v2) describes SATraj-OS as produced with its OSGym environment and reports 10,496 trajectories and 158,196 steps. That paper is not yet in the retained archive, so no paper relation is recorded. Publisher model results trained on the data were not reproduced.",
+    "details": {
+      "availability": "Ungated Hub dataset with JSONL trajectories and archived screenshots",
+      "hub_id": "AI45Research/SATraj-OS",
+      "release_revision": "74deb768ee16733b952b789e91b69e7450df5dea",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/tree/74deb768ee16733b952b789e91b69e7450df5dea",
+      "dataset_profile": {
+        "supervision": [
+          "computer-use trajectories",
+          "task-success labels",
+          "safety-outcome labels",
+          "safe-refusal examples"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "actions",
+          "action descriptions"
+        ],
+        "formats": [
+          "JSONL",
+          "ZIP image archives",
+          "tar.gz image archives"
+        ],
+        "splits": [
+          "capability/train",
+          "safety/train",
+          "safety_v2/train"
+        ],
+        "counts": [
+          {
+            "value": 4344,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "Capability set",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+          },
+          {
+            "value": 68140,
+            "unit": "interaction steps",
+            "qualifier": "exact",
+            "population": "Capability set",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+          },
+          {
+            "value": 541,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "Safety-v2 set",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+          },
+          {
+            "value": 3486,
+            "unit": "interaction steps",
+            "qualifier": "exact",
+            "population": "Safety-v2 set",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+          },
+          {
+            "value": 6152,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "legacy Safety archive",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+          },
+          {
+            "value": 88496,
+            "unit": "interaction steps",
+            "qualifier": "exact",
+            "population": "legacy Safety archive",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md"
+          }
+        ],
+        "notes": "Counts are publisher-reported on the card and were not recomputed from the JSONL files. The card's headline 4,885 trajectories and 71,626 steps cover Capability plus Safety-v2 only. The Safactory report's 10,496 trajectories match Capability plus the legacy Safety archive, but its 158,196 steps do not equal the card's step totals for those sets. A trajectory is a multi-step episode, not a screenshot count.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/AI45Research/SATraj-OS/raw/main/README.md",
+          "https://arxiv.org/html/2605.06230v2"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.release_revision",
+          "details.hub_id",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ],
+        "url": "https://huggingface.co/api/datasets/AI45Research/SATraj-OS",
+        "sha256": "9afd95cd02de90cb4fab79a80810f5858409128e23a19b6913b79571ea5766f5",
+        "retrieved_at": "2026-10-18T11:16:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2605.06230v2",
+        "sha256": "f2b9696b13f7052a31f460675dd19e406485816dd284892378c2e281ec3d3d16",
+        "retrieved_at": "2026-10-18T11:16:01Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.dataset_profile",
+      "licenses.data"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2e23775770af343f07319036f671ad5561ec387fcbcc2f7ea9199bf90494d977",
+    "reviewed_at": "2026-10-18T11:16:24Z"
   }
 ]

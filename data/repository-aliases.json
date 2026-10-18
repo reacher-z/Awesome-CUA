@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:anthropics/anthropic-quickstarts",
+    "target_id": "github:anthropics/claude-quickstarts",
+    "repository_id": 849553306,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T10:53:34Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/anthropics/anthropic-quickstarts",
+        "resolved_url": "https://api.github.com/repositories/849553306",
+        "repository_id": 849553306,
+        "full_name": "anthropics/claude-quickstarts",
+        "html_url": "https://github.com/anthropics/claude-quickstarts",
+        "retrieved_at": "2026-10-18T10:53:34Z",
+        "sha256": "e1427329142bdf3806056557da5af87bb80e3a254948e8bcf652a0855e919b53"
+      },
+      {
+        "url": "https://api.github.com/repos/anthropics/claude-quickstarts",
+        "resolved_url": "https://api.github.com/repos/anthropics/claude-quickstarts",
+        "repository_id": 849553306,
+        "full_name": "anthropics/claude-quickstarts",
+        "html_url": "https://github.com/anthropics/claude-quickstarts",
+        "retrieved_at": "2026-10-18T10:53:34Z",
+        "sha256": "e1427329142bdf3806056557da5af87bb80e3a254948e8bcf652a0855e919b53"
+      }
+    ]
   }
 ]

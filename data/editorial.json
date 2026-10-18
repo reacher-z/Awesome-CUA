@@ -63143,5 +63143,123 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Claude Quickstarts",
+    "kind": "agent",
+    "url": "https://github.com/anthropics/claude-quickstarts",
+    "environments": [
+      "desktop",
+      "linux",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "Anthropic reference code for Claude computer and browser use: a Dockerized Linux desktop agent loop, a native macOS agent with trajectory recording, a Playwright browser agent and minimal VNC and CDP toolset drivers.",
+    "scope": "core",
+    "verify_terms": [
+      "Claude Quickstarts"
+    ],
+    "publisher_id": "organization:anthropic",
+    "notes": "Formerly anthropics/anthropic-quickstarts. The computer-use parts are Computer Use Demo (Ubuntu desktop in Docker over X11 and VNC, with a Streamlit UI), Computer Use Best Practices (macOS only, meant to run in a VM), Browser Use Demo, and the computer and browser toolset quickstarts. The customer-support, financial-analysis, autonomous-coding and Managed Agents quickstarts are not computer-use resources. The root MIT license covers repository code; access to Claude models is separate.",
+    "details": {
+      "repository_url": "https://github.com/anthropics/claude-quickstarts"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/anthropics/claude-quickstarts",
+        "sha256": "e1427329142bdf3806056557da5af87bb80e3a254948e8bcf652a0855e919b53",
+        "retrieved_at": "2026-10-18T10:53:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/computer-use-demo/README.md",
+        "sha256": "4dfc9574743baf822a41285b5171fa52b66305370fc3060e07c87f2c63bb3dbe",
+        "retrieved_at": "2026-10-18T10:53:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/computer-use-best-practices/README.md",
+        "sha256": "69243a44a10ebd4ec4f451b2e95c8b108c09f5512d1ecc3630ab975408856b3d",
+        "retrieved_at": "2026-10-18T10:53:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/browser-use-demo/README.md",
+        "sha256": "b13b74f007bb4d61409d104d6eca5a5067d5353efbad2b15690d28413c06bfe5",
+        "retrieved_at": "2026-10-18T10:53:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/LICENSE",
+        "sha256": "d7a04bf11ce24a7b79cd44b4a78dcc9971eaeb3b565821de437e0ecb7723e634",
+        "retrieved_at": "2026-10-18T10:53:41Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:57f17b7d0c18b2d7c8bf",
+        "evidence_url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/computer-use-demo/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T10:53:41Z",
+          "basis": "Reviewed repository license declaration for code; Claude model access, third-party dependencies and container images are separate."
+        },
+        "reason": "Reviewed repository license declaration for code; Claude model access, third-party dependencies and container images are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/anthropics/claude-quickstarts/HEAD/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8dcfdc6fda662dacb7a88d3a7661d4b05dbcb2730fd637ab0cbb5d727a80a620",
+    "reviewed_at": "2026-10-18T10:54:19Z"
   }
 ]

@@ -63143,5 +63143,111 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Browsentic",
+    "kind": "tool",
+    "url": "https://github.com/imshaikot/browsentic",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Browser extension and local bridge that let signed-in agent CLIs or MCP clients operate the user's own browser through DOM-inventory page tools, screenshots and debugger-level input, with side-panel approvals.",
+    "scope": "core",
+    "verify_terms": [
+      "Browsentic"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/imshaikot/browsentic/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Ships as a Manifest V3 extension (Chrome Web Store, Edge Add-ons, signed Firefox add-on), the npm package browsentic (Bridge daemon, CLI and optional stdio MCP server) and macOS/Windows setup apps; v0.8.9 was the latest release at review. It has no model of its own: the side panel spawns an agent CLI the user is signed in to (Claude Code, Codex, Antigravity and others). docs/reference/tools.md at 3d7335c lists 51 page_ tools and 4 browsentic_ daemon tools (counted by script). page_getPageInfo returns a DOM inventory of interactive elements with ARIA roles, state, landmarks and CSS selectors; page_screenshot captures pixels; page_clickElement fires synthetic pointer events, and page_trustedClick attaches Chrome's debugger for trusted input. Tools to locate and answer captchas are included. The Android mode (experimental) drives Chrome on a USB- or Wi-Fi-paired phone through adb, not other apps. The README says releases up to 0.7.15 were MIT; the current LICENSE is Apache-2.0. Code was read, not run.",
+    "details": {
+      "availability": "Public source, browser-store extension, npm Bridge/CLI/MCP package and setup apps; models come from the user's own agent CLI",
+      "repository_revision": "3d7335cb832375940f379608037ad137bfbb8770",
+      "package_version": "0.8.9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imshaikot/browsentic/3d7335cb832375940f379608037ad137bfbb8770/docs/reference/tools.md",
+        "sha256": "0f8a7af8ee0e8b1f2a03c4c537c6c1e4f3f3fa87546b0f2e9f85ff92f7fe7d39",
+        "retrieved_at": "2026-10-18T16:10:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imshaikot/browsentic/3d7335cb832375940f379608037ad137bfbb8770/src/lib/actions/page/get-page-info.ts",
+        "sha256": "62c259ce30e6df9151b34cab9b68fb90f25704438d74e5291f881ff9f8c6c86f",
+        "retrieved_at": "2026-10-18T16:10:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imshaikot/browsentic/3d7335cb832375940f379608037ad137bfbb8770/src/lib/actions/page/trusted-click.ts",
+        "sha256": "e3a248408ed2300c08dd57cf155d98b91e6d51dd0f33ad9ca70c68ef2cafa7a2",
+        "retrieved_at": "2026-10-18T16:10:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/imshaikot/browsentic/3d7335cb832375940f379608037ad137bfbb8770/docs/guide/features/android.md",
+        "sha256": "4213e2dfaad8e88cfce48ad6051e7b6d699b97ae6a9309bec89fe1ac35b33090",
+        "retrieved_at": "2026-10-18T16:10:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/imshaikot/browsentic/3d7335cb832375940f379608037ad137bfbb8770/LICENSE",
+        "sha256": "1f9950d1327953e657a39d8119db934f867e82b915530415b6f464e673329cc4",
+        "retrieved_at": "2026-10-18T16:10:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/imshaikot/browsentic/3d7335cb832375940f379608037ad137bfbb8770/package.json",
+        "sha256": "347ec9434af3e119fc2395aca2081f33a518af2ea7820ef8104e7b0bdd59d2ed",
+        "retrieved_at": "2026-10-18T16:10:34Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0a9cda8a76f5dd24c3cb0378db4e605b26488a71a884a0d39652783961e79c27",
+    "reviewed_at": "2026-10-18T16:10:35Z"
   }
 ]

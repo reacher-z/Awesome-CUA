@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:showlab/awesome-video-diffusion",
+    "url": "https://github.com/showlab/Awesome-Video-Diffusion",
+    "decision": "out_of_scope",
+    "reason": "Awesome Video Diffusion is a list of diffusion models and papers for video generation, editing, restoration and related applications. It is not about agents that operate interfaces, and the showlab-gui list links it only as the source of its README template.",
+    "reviewed_at": "2026-10-18T12:21:05Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/showlab/Awesome-Video-Diffusion/HEAD/README.md",
+      "sha256": "1bb4dc566219620cd5cffc9938fe267ce14e93b254ec3dd35a6dbdb5cba1874b",
+      "retrieved_at": "2026-10-18T12:09:54Z"
+    }
   }
 ]

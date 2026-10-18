@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:neur-io/bami",
+    "url": "https://github.com/Neur-IO/BAMI",
+    "decision": "alias",
+    "target_id": "arxiv:2605.06664",
+    "reason": "Project repository of the BAMI paper: it holds only a README, the technical-report PDF and a teaser image, and says the inference code is still to be released. Its title and nine authors match arXiv:2605.06664."
   }
 ]

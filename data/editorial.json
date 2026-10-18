@@ -63143,5 +63143,112 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:theduckai/ducktrack",
+    "name": "DuckTrack",
+    "kind": "tool",
+    "url": "https://github.com/TheDuckAI/DuckTrack",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "summary": "Tray app that logs mouse and keyboard events to JSONL while OBS records the screen, building multimodal computer-interaction data, and can replay a recording's input events on Windows, macOS or Linux.",
+    "scope": "core",
+    "verify_terms": [
+      "DuckTrack"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md"
+    ],
+    "notes": "Input events are captured with pynput and replayed with pynput, plus pyautogui for some scrolling, and the screen video comes from OBS through its websocket, so OBS must be installed and configured. Each recording folder holds events.jsonl, system metadata, a user description and the MP4. Recording can be paused to hide sensitive input. The README lists known bugs (a macOS segfault after many playbacks, no mouse capture under raw input, OBS startup problems on some Linux machines). OpenCUA's README says its annotation tool is based on DuckTrack and OpenAdapt. The MIT license covers the code; it does not cover recordings made with the tool.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "09e0473fbf5271dce2af9a825832b8bdac6f3f1e"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/TheDuckAI/DuckTrack",
+        "sha256": "6cd12595b5fff02d21e140799e301389fff1ed9edaf8e8b3101d0b3656864d36",
+        "retrieved_at": "2026-10-18T12:29:39Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/TheDuckAI/DuckTrack/git/trees/main?recursive=1",
+        "sha256": "2f3b346e8e7424dfbf3cde4919ccc703267dd552968c853e258f9bccae452468",
+        "retrieved_at": "2026-10-18T12:29:41Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/TheDuckAI/DuckTrack/09e0473fbf5271dce2af9a825832b8bdac6f3f1e/ducktrack/recorder.py",
+        "sha256": "636353732cbb47ac2f250c401da89199064bf0d40e0ad325567848e178414144",
+        "retrieved_at": "2026-10-18T12:29:42Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/TheDuckAI/DuckTrack/09e0473fbf5271dce2af9a825832b8bdac6f3f1e/ducktrack/playback.py",
+        "sha256": "4d29dd294cecf54922e92d77adad447027d14754e9727a2d21f36629c5ac055b",
+        "retrieved_at": "2026-10-18T12:29:42Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/TheDuckAI/DuckTrack/09e0473fbf5271dce2af9a825832b8bdac6f3f1e/ducktrack/obs_client.py",
+        "sha256": "e8d3cbed2e0f44afc9a19f6e165b6e609077ca5d9ce02ad0396a4dc39c1f8e4f",
+        "retrieved_at": "2026-10-18T12:29:42Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/xlang-ai/OpenCUA/dfc91ba89f700d10f26ec50362d308571482ab8b/README.md",
+        "sha256": "91fed11b234775bde91bb766ee65e1015897ced6668de8e80418fcee09f8f75d",
+        "retrieved_at": "2026-10-18T12:29:42Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9fed3242e39ee00ca213ac4271693a3ab5dd56dec040f36f8a278fa0d642ffdb",
+    "reviewed_at": "2026-10-18T12:30:20Z"
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:james4ever0/computer_control_agent_knowledge_base",
+    "url": "https://github.com/James4Ever0/computer_control_agent_knowledge_base",
+    "decision": "out_of_scope",
+    "reason": "A personal retrieval knowledge base built with embedchain from crawled pages about computer-control and Devin-style agent projects, released once as a 7z database (v0.1, August 2024). It is a reference collection about other projects rather than an agent, dataset, benchmark or tool for computer use.",
+    "reviewed_at": "2026-10-18T11:31:28Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/James4Ever0/computer_control_agent_knowledge_base/HEAD/README.md",
+      "sha256": "628e58ba9598cc2000d8e49d17d8c21cc36b4c0ccda72ee5940984af234ae170",
+      "retrieved_at": "2026-10-18T11:22:24Z"
+    }
   }
 ]

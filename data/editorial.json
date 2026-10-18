@@ -571,13 +571,40 @@
           "refusal represented by negative coordinates in the evaluator"
         ],
         "evaluation": "The inspected Jedi runner maps predictions from resized-image coordinates back to the original image, then checks the predicted center against rectangle/polygon targets or the refusal rule. It reports overall and classification-group accuracy. This is offline grounding, not OSWorld task-execution success.",
-        "counts": [],
-        "notes": "The repository retains original OSWorld-G.json and refined OSWorld-G_refined.json instructions; treat them as alternative benchmark versions, not additional disjoint tasks. Refined instructions reduce requirements beyond grounding. The same repository also contains Jedi training/rendering material, which is excluded from benchmark counts. The standalone generic eval.py entry point is a stub; the named model runner supplies image_size to its geometry helper. No task count or successful execution is inferred from repository file totals. Apache-2.0 is recorded for code only.",
+        "counts": [
+          {
+            "value": 564,
+            "unit": "grounding instances",
+            "qualifier": "exact",
+            "population": "benchmark/OSWorld-G.json (original instructions) at commit daa6bd8",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G.json"
+          },
+          {
+            "value": 564,
+            "unit": "grounding instances",
+            "qualifier": "exact",
+            "population": "benchmark/OSWorld-G_refined.json (refined instructions) at commit daa6bd8",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G_refined.json"
+          },
+          {
+            "value": 251,
+            "unit": "screenshots",
+            "qualifier": "exact",
+            "population": "distinct image_path values in benchmark/OSWorld-G.json at commit daa6bd8",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G.json"
+          }
+        ],
+        "notes": "The repository retains original OSWorld-G.json and refined OSWorld-G_refined.json instructions; treat them as alternative benchmark versions, not additional disjoint tasks. Refined instructions reduce requirements beyond grounding. The same repository also contains Jedi training/rendering material, which is excluded from benchmark counts. The standalone generic eval.py entry point is a stub; the named model runner supplies image_size to its geometry helper. Counts come from the two benchmark JSON files at commit daa6bd8: each lists 564 instances with distinct IDs over the same 251 screenshots, and 54 instances in each have a refusal target. The paper abstract also reports 564 samples. No successful execution is inferred. Apache-2.0 is recorded for code only.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/README.md",
           "https://api.github.com/repos/xlang-ai/OSWorld-G/git/trees/main?recursive=1",
           "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/evaluation/qwen25_vllm_osworld_g_jedi.py",
-          "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/evaluation/eval.py"
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/evaluation/eval.py",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G.json",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G_refined.json"
         ]
       }
     },
@@ -621,6 +648,26 @@
         "supports": [
           "details.benchmark_protocol"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G.json",
+        "sha256": "8d8f210461a16702b99410658b605708f963b70aa5fc03fca897b4bafd9e3962",
+        "retrieved_at": "2026-10-18T15:58:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-G/daa6bd8e0e629f0917ad2984df930bf0bd967540/benchmark/OSWorld-G_refined.json",
+        "sha256": "72f7877651dddd9287bbfe613bd41799629cadaa1c0c5bd0d7d4c10a6fd6d94b",
+        "retrieved_at": "2026-10-18T15:58:20Z"
       }
     ]
   },

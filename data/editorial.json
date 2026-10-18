@@ -63143,5 +63143,103 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "PhysiClaw",
+    "kind": "agent",
+    "url": "https://github.com/physiclaw/PhysiClaw",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "workflow"
+    ],
+    "scope": "core",
+    "summary": "Agent that operates an unmodified iPhone from outside, reading the screen through a camera with OCR and icon detection and tapping or swiping with a serial-driven stylus robot, plus playbooks for known app flows.",
+    "verify_terms": [
+      "PhysiClaw"
+    ],
+    "notes": "The architecture document describes a CoreXY stylus with a solenoid tap, driven by FluidNC firmware through G-code over USB serial, and MCP tools for observing (peek, screenshot), gestures, navigation, unlocking and clipboard text. When the camera image is unclear, the stylus triggers an iOS screenshot through AssistiveTouch and a Shortcut uploads it; text is pasted through a Shortcut, which is why only the iPhone is supported. A runtime loop wakes the agent for scheduled jobs or when the screen lights up with a new message, and users talk to it through its own WhatsApp account. The repository also builds the hardware as CAD-as-code (build123d) into an assembly manual and sourcing guide; hardware releases are tagged separately (physiclaw-hardware-v0.50, 2026-10-16). Python package physiclaw 0.7.3, classified Alpha; it needs the hardware and a user-chosen LLM provider. The README states that the MIT license covers both hardware and software. Not a fork, not archived. Nothing was built or run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/physiclaw/PhysiClaw/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Python agent, firmware-setup and CAD-as-code hardware source; requires building the stylus-and-camera rig, an iPhone and model credentials.",
+      "repository_revision": "7d82ed67cfcc462f8f49affb7566c921e29cb584",
+      "repository_tree_sha": "ebd54c717c457c83b3fa9ec0f97130d9804e79f3",
+      "package_version": "0.7.3"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/physiclaw/PhysiClaw/git/commits/7d82ed67cfcc462f8f49affb7566c921e29cb584",
+        "sha256": "7b6c27db052c77183a3a745fa5e285047021691cac0264dc3db543f82e9fd089",
+        "retrieved_at": "2026-10-18T12:22:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/physiclaw/PhysiClaw/7d82ed67cfcc462f8f49affb7566c921e29cb584/docs/concepts/architecture.mdx",
+        "sha256": "4e55eed5e16541f46b02f80f23d0e425b460bf924a45ce31b7dd4536e29d53d2",
+        "retrieved_at": "2026-10-18T12:22:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/physiclaw/PhysiClaw/7d82ed67cfcc462f8f49affb7566c921e29cb584/pyproject.toml",
+        "sha256": "2855dcba33c46038ecfeff907558e90d98ad184cd2f67528896657e58afe8431",
+        "retrieved_at": "2026-10-18T12:22:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/physiclaw/PhysiClaw/7d82ed67cfcc462f8f49affb7566c921e29cb584/hardware/README.md",
+        "sha256": "043f9d1cb8162d93db0c16fc698e7cd7ce578dbee3daa119a684e4c10e405fb8",
+        "retrieved_at": "2026-10-18T12:22:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/physiclaw/PhysiClaw/7d82ed67cfcc462f8f49affb7566c921e29cb584/src/physiclaw/core/hardware/grbl.py",
+        "sha256": "b941596d91691dcda55b94e7e592bf99eb883f775df641a4b62ab64286ddda14",
+        "retrieved_at": "2026-10-18T12:22:36Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "98615fadffe4394f06630fcbe60de51f1d6fe784ab9af5b9883cefaf0e57bc54",
+    "reviewed_at": "2026-10-18T12:23:02Z"
   }
 ]

@@ -63143,5 +63143,147 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WebBench",
+    "kind": "benchmark",
+    "url": "https://github.com/Halluminate/WebBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Live-web benchmark from Halluminate and Skyvern with read, create, update, delete and file-download tasks on 452 high-traffic websites, including logins and form entry, with released per-agent run results.",
+    "scope": "core",
+    "verify_terms": [
+      "WebBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/README.md"
+    ],
+    "notes": "The README and dataset card describe 2,454 tasks on 452 websites (category counts summing to 2,454) and an expanded pool of 5,750 tasks. The released webbenchfinal.csv has 2,647 rows with unique IDs and 453 distinct starting URLs, so the released file and the documented total differ. Tasks run on live third-party websites, so content, logins and anti-bot measures change over time. The repository holds the task CSVs and per-agent result files but no evaluation harness; the README points to the leaderboard and technical report for methodology. The Hugging Face dataset card declares MIT for the task data; the repository LICENSE is MIT for the repository. Website content and account requirements belong to the target sites.",
+    "details": {
+      "leaderboard_url": "https://webbench.ai/",
+      "hub_id": "Halluminate/WebBench",
+      "benchmark_protocol": {
+        "focus": [
+          "live-web task completion",
+          "write operations such as account creation, updates and deletions",
+          "file downloads"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [
+          "browser interactions on live websites"
+        ],
+        "evaluation": "The repository releases per-agent result files; the scoring procedure is described in the publisher's technical report rather than an executable evaluator in the repository.",
+        "counts": [
+          {
+            "value": 2454,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "documented WebBench task set",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/README.md"
+          },
+          {
+            "value": 452,
+            "unit": "websites",
+            "qualifier": "exact",
+            "population": "documented site coverage",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/README.md"
+          },
+          {
+            "value": 2647,
+            "unit": "task rows",
+            "qualifier": "exact",
+            "population": "webbenchfinal.csv as released",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/webbenchfinal.csv"
+          }
+        ],
+        "notes": "The released CSV has columns ID, Starting URL, Category and Task, with 1,637 READ, 594 CREATE, 206 UPDATE, 166 DELETE and 44 FILE_MANIPULATION rows; the README's category table sums to 2,454. A separate webbench_hitl_final.csv covers human-in-the-loop runs. Record the task file revision with a score.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/README.md",
+          "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/webbenchfinal.csv"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/webbenchfinal.csv",
+        "sha256": "fd5311a38bdb6f941e8f544150735656c114d76fbfb17193da973d5de0165217",
+        "retrieved_at": "2026-10-18T11:13:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.hub_id",
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/Halluminate/WebBench/raw/main/README.md",
+        "sha256": "017626f88e56eacdb45d7f8b90540ba4a65fa67b78ea745c026b8c28181dff29",
+        "retrieved_at": "2026-10-18T11:13:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/api/datasets/Halluminate/WebBench",
+        "sha256": "fd85246105d23d09511b920505391f1937bbd0ca3037963498edb9744554d593",
+        "retrieved_at": "2026-10-18T11:13:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Halluminate/WebBench/HEAD/LICENSE",
+        "sha256": "96804aa272fe40cdfb8b5c8f4d1d94757bcfaf1bf5596fb829214843d2371e58",
+        "retrieved_at": "2026-10-18T11:13:09Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/datasets/Halluminate/WebBench/raw/main/README.md",
+          "retrieved_at": "2026-10-18T11:13:09Z",
+          "basis": "Hugging Face dataset card YAML license for the Halluminate/WebBench task data; target-site content is not covered."
+        },
+        "reason": "The dataset card for the Hub copy of the task CSV declares license: mit; this is a data declaration from the dataset card, not inferred from the repository code license.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Halluminate/WebBench/raw/main/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.benchmark_protocol",
+      "details.leaderboard_url"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9898c4ea9c7d08c08566893dd6adb6a6ca3d2e3ef85a2dbcbc350b2bd22736b8",
+    "reviewed_at": "2026-10-18T11:13:44Z"
   }
 ]

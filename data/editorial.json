@@ -23541,6 +23541,46 @@
         "supports": [
           "details.dataset_profile"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2412.04454v2",
+        "sha256": "0c9e49cae95cf7ddb5271f6b691dc4d600af1dbcb24b483f456e94e8ea994b31",
+        "retrieved_at": "2026-10-18T16:12:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/omniact_fix.json",
+        "sha256": "acb30d215755fb2a6c5b2e087c4f0dc4cb0ab087915f0258f9d568536b25a546",
+        "retrieved_at": "2026-10-18T16:12:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/ricoig16k.json",
+        "sha256": "8132c7e8ba19c5ff573501765bef8d0e0ea6e88020b9230895d9cb9cc87404f7",
+        "retrieved_at": "2026-10-18T16:12:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/ui_refexp.json",
+        "sha256": "9ade78dbdab2876092e737fcd77f499208abfddcfc7d5d8318995c73342e1287",
+        "retrieved_at": "2026-10-18T16:12:45Z"
       }
     ],
     "details": {
@@ -23564,13 +23604,50 @@
         "splits": [
           "training"
         ],
-        "counts": [],
-        "notes": "Stage 1 grounding release, Hub revision 5d11f8f5. JSON annotations and ZIP/multipart TAR image packages are publicly listed. The official training configuration groups web, desktop and mobile inputs and selects all rows of its configured inputs; this is a training recipe, not a release sample count or held-out split. The config names omniact.json while the Hub manifest lists omniact_fix.json, so local paths need reconciliation. No sample total is inferred from names such as webui350k. Apache-2.0 is the release card declaration; upstream source rights remain separate.",
+        "counts": [
+          {
+            "value": 1036000,
+            "unit": "single-step grounding examples",
+            "qualifier": "approximately",
+            "population": "grounding split of the Aguvis Data Collection across nine sources, Table 10 of arXiv 2412.04454v2",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2412.04454v2"
+          },
+          {
+            "value": 6720,
+            "unit": "single-step grounding examples",
+            "qualifier": "exact",
+            "population": "rows of omniact_fix.json at Hub revision 5d11f8f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/omniact_fix.json"
+          },
+          {
+            "value": 16133,
+            "unit": "single-step grounding examples",
+            "qualifier": "exact",
+            "population": "rows of ricoig16k.json at Hub revision 5d11f8f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/ricoig16k.json"
+          },
+          {
+            "value": 15624,
+            "unit": "single-step grounding examples",
+            "qualifier": "exact",
+            "population": "rows of ui_refexp.json at Hub revision 5d11f8f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/ui_refexp.json"
+          }
+        ],
+        "notes": "Stage 1 grounding release, Hub revision 5d11f8f5. JSON annotations and ZIP/multipart TAR image packages are publicly listed. The official training configuration groups web, desktop and mobile inputs and selects all rows of its configured inputs; this is a training recipe, not a release sample count or held-out split. The config names omniact.json while the Hub manifest lists omniact_fix.json, so local paths need reconciliation. The paper's Table 10 reports 1.036M single-step examples for the grounding split. The Hub manifest has no separate GUIAct file and adds seeclick_mi.json, so the release is not established to match that table exactly. Computed counts cover only the three annotation files small enough to retain; they are close to the table's OmniACT (7K), RICO Icon (16K) and UI RefExp (16K) rows. No sample total is inferred from names such as webui350k. Apache-2.0 is the release card declaration; upstream source rights remain separate.",
         "evidence_urls": [
           "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/main/README.md",
           "https://huggingface.co/api/datasets/xlangai/aguvis-stage1",
           "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/README.md",
-          "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/data/stage1.yaml"
+          "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/data/stage1.yaml",
+          "https://arxiv.org/html/2412.04454v2",
+          "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/omniact_fix.json",
+          "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/ricoig16k.json",
+          "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/5d11f8f53388e60d033d1582ad4a93dfd17e3a4b/ui_refexp.json"
         ]
       }
     },

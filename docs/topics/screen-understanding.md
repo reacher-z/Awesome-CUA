@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (2)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -65,11 +65,10 @@
 
 ## Frameworks
 
-All entries in this section: cross-platform.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Seg2Click](https://github.com/jcwang0602/Seg2Click) | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | code MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/jcwang0602/Seg2Click/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Object Detection for Graphical User Interface](https://github.com/chenjshnn/Object-Detection-for-Graphical-User-Interface) | android | [2008.05132](https://arxiv.org/abs/2008.05132) (2020) | code Apache-2.0 | Baseline code from an FSE 2020 study of GUI element detection: Faster R-CNN, YOLOv3, CenterNet and a Xianyu reimplementation, trained and tested on Rico screenshot splits, with pretrained models on Zenodo. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/chenjshnn/Object-Detection-for-Graphical-User-Interface/HEAD/README.md) |
+| [Seg2Click](https://github.com/jcwang0602/Seg2Click) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | code MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/jcwang0602/Seg2Click/HEAD/README.md) |
 
 ## Tools
 

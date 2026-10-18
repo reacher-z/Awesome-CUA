@@ -63143,5 +63143,106 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:chenjshnn/object-detection-for-graphical-user-interface",
+    "name": "Object Detection for Graphical User Interface",
+    "kind": "framework",
+    "url": "https://github.com/chenjshnn/Object-Detection-for-Graphical-User-Interface",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Baseline code from an FSE 2020 study of GUI element detection: Faster R-CNN, YOLOv3, CenterNet and a Xianyu reimplementation, trained and tested on Rico screenshot splits, with pretrained models on Zenodo.",
+    "scope": "core",
+    "verify_terms": [
+      "Object Detection for Graphical User Interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chenjshnn/Object-Detection-for-Graphical-User-Interface/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3a16e6e0ea37a191e7f77e78e368b213e42b147bd54b67f69ee92a8843d0e488",
+    "reviewed_at": "2026-10-18T10:59:41Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The authors' own hybrid detector lives in the separate MulongXie/UIED repository, and REMAUI is referenced through pix2app; neither is part of this record. The root LICENSE.txt is Apache-2.0, while the adapted FASTER_RCNN and PyTorch-YOLOv3 folders keep their upstream MIT and GPL-3.0 texts. Zenodo record 8098605 holds the pretrained models, data splits and Rico annotations and declares CC-BY-4.0. This record does not extend that grant to Rico's source data.",
+    "details": {
+      "repository_url": "https://github.com/chenjshnn/Object-Detection-for-Graphical-User-Interface",
+      "repository_tree_sha": "449078d5ad2a20c88206d58f7bb9e7b92b832e7d"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/chenjshnn/Object-Detection-for-Graphical-User-Interface",
+        "sha256": "8de71d520857d0fd6ac1d8857134b95241fb6df567da751c5542ea4be0101fe9",
+        "retrieved_at": "2026-10-18T10:59:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/chenjshnn/Object-Detection-for-Graphical-User-Interface/git/trees/master?recursive=1",
+        "sha256": "bf2da043966cba45a34a8c25c694d525a278be1099cc56da89f4f8d9e26fafa2",
+        "retrieved_at": "2026-10-18T10:59:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://zenodo.org/api/records/8098605",
+        "sha256": "971847d07fa6ffe7c345a64bb85f93cde87bd3f492fe8a8956efe11ad429f1ef",
+        "retrieved_at": "2026-10-18T10:59:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/chenjshnn/Object-Detection-for-Graphical-User-Interface/HEAD/LICENSE.txt",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T10:59:17Z"
+      }
+    ],
+    "documented_by": [
+      "2008.05132"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/chenjshnn/Object-Detection-for-Graphical-User-Interface/HEAD/LICENSE.txt",
+          "retrieved_at": "2026-10-18T10:59:17Z",
+          "basis": "Root LICENSE.txt is the Apache-2.0 text for repository code; the adapted FASTER_RCNN (MIT) and PyTorch-YOLOv3 (GPL-3.0) folders carry their own upstream license files, and the Zenodo models and Rico-derived data are separate."
+        },
+        "reason": "Root LICENSE.txt is the Apache-2.0 text for repository code; the adapted FASTER_RCNN (MIT) and PyTorch-YOLOv3 (GPL-3.0) folders carry their own upstream license files, and the Zenodo models and Rico-derived data are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/chenjshnn/Object-Detection-for-Graphical-User-Interface/HEAD/LICENSE.txt"
+        ]
+      }
+    }
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (9)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -42,6 +42,7 @@ All entries in this section: web.
 | [NNetNav WebArena data](https://huggingface.co/datasets/stanfordnlp/nnetnav-wa) | — | — | data apache-2.0 | NNetNav's WebArena-oriented browser-interaction data release, with separate training and test files. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/stanfordnlp/nnetnav-wa) |
 | [Plan-and-Act training data](https://huggingface.co/datasets/xTRam1/plan-and-act-data) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | — | data mit | Planner and action-executor training examples for WebArena-Lite and WebVoyager, with model-specific processed files and raw trajectory annotations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xTRam1/plan-and-act-data/raw/main/README.md) |
 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | — | data MIT | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. | [✓ 2026‑10‑18](https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md) |
+| [WebLINX dataset](https://huggingface.co/datasets/McGill-NLP/WebLINX) | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | [2,337 demonstrations](https://huggingface.co/datasets/McGill-NLP/WebLINX/raw/a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13/splits.json) · [2,126 chat-config turn records](https://huggingface.co/datasets/McGill-NLP/WebLINX/resolve/a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13/data/chat/valid.json.gz) | data cc-by-nc-sa-4.0 | Hub data of WebLINX 1.0: conversational web-navigation demonstrations preprocessed into per-turn records with dialogue, cleaned HTML, candidate elements and action history, plus reranking data. | [✓ 2026‑10‑18](https://huggingface.co/datasets/McGill-NLP/WebLINX/raw/a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13/README.md) |
 | [WebPRM checklist-generation data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) | — | [3,630 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation/raw/main/README.md) | — | Web-task context, starting observations and action history paired with structured checklists and subgoal analyses for checklist generation. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) |
 | [WebPRM Collection preference data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [9,460 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) | — | Checklist-annotated web decision records with page observations, prior actions, one preferred continuation and rejected alternatives for process-reward learning. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) |
 

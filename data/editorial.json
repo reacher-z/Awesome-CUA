@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "TopoClaw",
+    "kind": "agent",
+    "url": "https://github.com/MadeAgents/TopoClaw",
+    "environments": [
+      "android",
+      "windows",
+      "desktop"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "cross-app",
+      "tool-integration"
+    ],
+    "summary": "Cross-device assistant that operates Android phones and Windows PCs through GUI actions, deep links and code, chaining task steps across devices and joining group chats with other assistants.",
+    "scope": "core",
+    "verify_terms": [
+      "TopoClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MadeAgents/TopoClaw/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Repository combines the TopoClaw agent framework (with GUI agent modules for computer and mobile prompts), the TopoMobile Android client, the TopoDesktop Electron client and a customer_service relay backend. The README states the desktop client is Windows-only and the mobile client Android-only; macOS, Linux and iOS are listed as planned. GUI tasks need a user-configured multimodal model behind an OpenAI-compatible API. No paper is named. Apache-2.0 covers the repository code, not external models.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "536c9c614e40950bcef6881854eaf91125439f1dedf1314f02928bca7e237192",
+    "reviewed_at": "2026-10-18T11:32:46Z"
   }
 ]

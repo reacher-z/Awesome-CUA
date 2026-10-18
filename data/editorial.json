@@ -63143,5 +63143,75 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Pix2Struct Screen2Words base",
+    "kind": "model",
+    "url": "https://huggingface.co/google/pix2struct-screen2words-base",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding"
+    ],
+    "summary": "Base-size Pix2Struct checkpoint fine-tuned on Screen2Words that writes a short functional summary of a mobile UI screenshot, converted to Transformers from Google's original release.",
+    "scope": "core",
+    "verify_terms": [
+      "Finetuned on Screen2Words"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/google/pix2struct-screen2words-base/raw/175147296b4f48000fdd37fc83e1334674cdaa47/README.md"
+    ],
+    "documented_by": [
+      "2210.03347"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "github:google-research-datasets/screen2words",
+        "evidence_url": "https://huggingface.co/google/pix2struct-screen2words-base/raw/175147296b4f48000fdd37fc83e1334674cdaa47/README.md"
+      }
+    ],
+    "notes": "Hub API at revision 17514729 lists one pytorch_model.bin with tokenizer and processor files in the Pix2StructForConditionalGeneration architecture; the repository is not gated. The card says the T5X checkpoint was contributed by the Pix2Struct authors and added to Hugging Face by Younes Belkada, and it reuses the generic Pix2Struct description with usage deferred to the pix2struct-textcaps-base card; it gives no Screen2Words scores. The card does not link a code repository, so no family relation is recorded. The card declares Apache-2.0 for the checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "google/pix2struct-screen2words-base",
+      "hub_revision": "175147296b4f48000fdd37fc83e1334674cdaa47",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/google/pix2struct-screen2words-base/tree/main",
+      "architecture": "Pix2StructForConditionalGeneration",
+      "listed_weight_files": [
+        "pytorch_model.bin"
+      ]
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/google/pix2struct-screen2words-base/revision/175147296b4f48000fdd37fc83e1334674cdaa47",
+        "sha256": "79b7a950e057181b26b7c54d72514286a9c0fe8a1791d3ecf5a0ed38c240ec82",
+        "retrieved_at": "2026-10-18T12:05:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d0e7a6212944d78629b8cff07fa563cc71abeef37adff33551ea1ee685f6004c",
+    "reviewed_at": "2026-10-18T12:05:33Z"
   }
 ]

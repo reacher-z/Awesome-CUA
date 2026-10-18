@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -92,6 +92,7 @@
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
+| [Pix2Struct Screen2Words base](https://huggingface.co/google/pix2struct-screen2words-base) | android | [2210.03347](https://arxiv.org/abs/2210.03347) (2022) | weights apache-2.0 | Base-size Pix2Struct checkpoint fine-tuned on Screen2Words that writes a short functional summary of a mobile UI screenshot, converted to Transformers from Google's original release. | [✓ 2026‑10‑18](https://huggingface.co/google/pix2struct-screen2words-base/raw/175147296b4f48000fdd37fc83e1334674cdaa47/README.md) |
 | [ScaleCUA 7B](https://huggingface.co/OpenGVLab/ScaleCUA-7B) | web, desktop, android, linux | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | weights apache-2.0 | A Qwen2.5-VL-based computer-use checkpoint with direct grounding and agent action modes across desktop, mobile and web interfaces. | [✓ 2026‑10‑17](https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md) |
 | [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) | web, desktop, android, ios | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | — | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. | [✓ 2026‑10‑17](https://huggingface.co/api/models/cckevinn/SeeClick) |
 | [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |

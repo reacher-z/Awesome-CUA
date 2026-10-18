@@ -63143,5 +63143,90 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:7fbde54a49250739baee",
+    "name": "ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard SFT",
+    "kind": "model",
+    "url": "https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "action-prediction",
+      "science"
+    ],
+    "summary": "Supervised GLM-4.6V-Flash checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent.",
+    "scope": "core",
+    "verify_terms": [
+      "ScaleCUA-glm4.6v-scienceboard-sft"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft/raw/2bcf77b8a30c161d9ed2e075276877275319d1ad/README.md"
+    ],
+    "documented_by": [
+      "2607.11185"
+    ],
+    "family_url": "https://github.com/THUDM/SCALE-CUA",
+    "notes": "Hub API at revision 2bcf77b8 lists five BF16 safetensors shards (about 10.29B parameters) in the Glm4vForConditionalGeneration architecture, plus training-state files under iter_0000494/; the repository is not gated. The card calls this the SFT start point used to initialize online RL and names GLM-4.6V-Flash as its base without Hub base_model metadata, so base_model is unset. The card YAML declares license 'other' and its prose says the weights are released for research and inherit the base model's license; that license is not resolved here. The card reports no score for this checkpoint. The THUDM/SCALE-CUA README lists it among six SFT start-point checkpoints, each with a ModelScope mirror. This project is distinct from OpenGVLab/ScaleCUA.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "extreme1228/ScaleCUA-glm4.6v-scienceboard-sft",
+      "hub_revision": "2bcf77b8a30c161d9ed2e075276877275319d1ad",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft/tree/2bcf77b8a30c161d9ed2e075276877275319d1ad",
+      "architecture": "Glm4vForConditionalGeneration",
+      "listed_weight_files": [
+        "model-00001-of-00005.safetensors",
+        "model-00002-of-00005.safetensors",
+        "model-00003-of-00005.safetensors",
+        "model-00004-of-00005.safetensors",
+        "model-00005-of-00005.safetensors"
+      ],
+      "repository_url": "https://github.com/THUDM/SCALE-CUA"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft/revision/2bcf77b8a30c161d9ed2e075276877275319d1ad",
+        "sha256": "4feef38e55602ab8eb6cbc2f1d8dcccc7d3d1cad0e91128570ca85e9e8caa177",
+        "retrieved_at": "2026-10-18T16:00:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "relations",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/THUDM/SCALE-CUA/3929e2fe364623153f2caa94ead71dc1aea50fb0/README.md",
+        "sha256": "d4a68b00acc4becf2a25688520595babea9b694b56541e709f066413b5b80aea",
+        "retrieved_at": "2026-10-18T16:00:48Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0e3266010e93daa32e8ba81ceca8d83771ecbbbd8cd409833d0aae518e6348db",
+    "reviewed_at": "2026-10-18T16:01:11Z"
   }
 ]

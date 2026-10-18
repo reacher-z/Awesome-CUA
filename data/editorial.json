@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MP-GUI training code",
+    "kind": "framework",
+    "url": "https://github.com/BigTaige/MP-GUI",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "Training code and annotation files for MP-GUI, which adds textual, graphical and spatial perceivers and a fusion gate to InternVL2-8B, plus a Qwen2-VL pipeline that synthesizes GUI-understanding data.",
+    "scope": "core",
+    "verify_terms": [
+      "MP-GUI"
+    ],
+    "documented_by": [
+      "2503.14021"
+    ],
+    "notes": "The tree holds the MP-GUI model code (modeling_MPGUI.py on an InternVL-Chat base), staged training scripts, LoRA merging, spatial-relation and icon-grounding data scripts, and JSONL training and benchmark annotations. Screenshots must be fetched from AMEX, AITW and Rico, so environments follow those Android sources. No trained MP-GUI checkpoint is linked. The root MIT license covers code; it is not extended to the annotation files, source datasets or InternVL2 weights.",
+    "details": {
+      "repository_url": "https://github.com/BigTaige/MP-GUI",
+      "repository_tree_sha": "eac17315eef8a8bbbe91b787efa23a57fc254ec8"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/BigTaige/MP-GUI",
+        "sha256": "696363a5d66c56b263a73fb731242492e8e21f4e1d36612754335a8535409069",
+        "retrieved_at": "2026-10-18T10:55:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/BigTaige/MP-GUI/git/trees/main?recursive=1",
+        "sha256": "032fe61d202ad1c066c71997e1816d23bf6b98c2195e88509e1f4168f981f7f3",
+        "retrieved_at": "2026-10-18T10:55:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/BigTaige/MP-GUI/HEAD/LICENSE",
+        "sha256": "5b1b6bd7af109e87cdde9905738be3747cad8a199609ac3ce7889aab59bd7f8f",
+        "retrieved_at": "2026-10-18T10:55:38Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/BigTaige/MP-GUI/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T10:55:38Z",
+          "basis": "Reviewed repository license declaration for code; annotation files, source datasets and base-model weights are separate."
+        },
+        "reason": "Reviewed repository license declaration for code; annotation files, source datasets and base-model weights are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/BigTaige/MP-GUI/HEAD/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d6253125be06f3ab7f0fe96ca9dfc94559be5f7fab722b8e9e75e9cdfa2a102f",
+    "reviewed_at": "2026-10-18T10:56:09Z"
   }
 ]

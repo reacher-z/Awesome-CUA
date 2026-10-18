@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:aider-ai/aider",
+    "url": "https://github.com/aider-ai/aider",
+    "decision": "out_of_scope",
+    "reason": "Aider is a terminal coding assistant that edits files in a local Git repository; it has no GUI, browser or device action space.",
+    "reviewed_at": "2026-10-18T11:20:43Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/Aider-AI/aider/main/README.md",
+      "sha256": "e40e05367ceacf7138a2605484bf7d1cb5a262d2dba03f52a5327c023b3cd0dc",
+      "retrieved_at": "2026-10-18T11:19:18Z"
+    }
   }
 ]

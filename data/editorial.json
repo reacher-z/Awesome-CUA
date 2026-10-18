@@ -63143,5 +63143,50 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "LASER",
+    "kind": "agent",
+    "url": "https://github.com/Mayer123/LASER",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "training-free"
+    ],
+    "summary": "WebShop agent code that frames navigation as moving among defined states, each with its own permitted actions, so an OpenAI-model agent can backtrack after errors; includes a seeded copy of the WebShop site.",
+    "scope": "core",
+    "verify_terms": [
+      "LASER: LLM Agent with State-Space Exploration"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2309.08172"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:princeton-nlp/webshop",
+        "evidence_url": "https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Official code for arXiv:2309.08172. The README asks users to set up the WebShop environment and replace its web_agent_site folder with this repository's copy, which adds fixed seeds so instructions are deterministic and API calls can be cached. The agent script calls OpenAI models. Root LICENSE is GPL-3.0 text and covers this repository's code; the bundled WebShop site copy, product data and models keep their own terms.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a41189f55f929db66c3a7fd72b5b0c7804d28efb2fca890d803679ee2113e9b7",
+    "reviewed_at": "2026-10-18T11:34:58Z"
   }
 ]

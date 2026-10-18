@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-30 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)
+**Contents:** [Agents (2)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)
 
 ## Agents
 
@@ -12,6 +12,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [LASER](https://github.com/Mayer123/LASER) | [2309.08172](https://arxiv.org/abs/2309.08172) (2023) | code GPL-3.0 | WebShop agent code that frames navigation as moving among defined states, each with its own permitted actions, so an OpenAI-model agent can backtrack after errors; includes a seeded copy of the WebShop site. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
 
 ## Tools

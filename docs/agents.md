@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**43 resources:** [Web (10)](#web) · [Desktop (15)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
+**44 resources:** [Web (11)](#web) · [Desktop (15)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (2)](#cross-platform) · [Unspecified (1)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -19,6 +19,7 @@ All entries in this section: web.
 | [Agent E](https://github.com/EmergenceAI/Agent-E) | [2407.13032](https://arxiv.org/abs/2407.13032) (2024) | code MIT | Browser automation agent on the AG2 framework that pairs a planner agent with a browser navigation agent to fill forms, search shops and work through sites, also callable over a local HTTP API. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/EmergenceAI/Agent-E/HEAD/README.md) |
 | [AutoWebGLM](https://github.com/THUDM/AutoWebGLM) | — | code Apache-2.0 | Web navigation agent built on ChatGLM3-6B that simplifies HTML for the model, is trained on hybrid human and AI data with RL and rejection sampling, and comes with the bilingual AutoWebBench. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AutoWebGLM/HEAD/README.md) |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
+| [LASER](https://github.com/Mayer123/LASER) | [2309.08172](https://arxiv.org/abs/2309.08172) (2023) | code GPL-3.0 | WebShop agent code that frames navigation as moving among defined states, each with its own permitted actions, so an OpenAI-model agent can backtrack after errors; includes a seeded copy of the WebShop site. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |

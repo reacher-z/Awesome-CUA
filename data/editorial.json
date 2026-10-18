@@ -15127,7 +15127,127 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "93defc2b31d0f8e6144e77cda4a74abeafd5253ae18a626bfc625f429050770a",
-    "reviewed_at": "2026-10-16T10:48:36Z"
+    "reviewed_at": "2026-10-16T10:48:36Z",
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "apache-2.0",
+          "url": "https://huggingface.co/datasets/kuangtie/GUI-Robust/raw/c76f899ccb2f2d52d0d3a4c0009f212aad305ad1/README.md",
+          "retrieved_at": "2026-10-18T15:53:55Z",
+          "basis": "The README states that the complete dataset is on Hugging Face as kuangtie/GUI-Robust, and that dataset card's metadata declares license: apache-2.0. It is recorded for the data; the GitHub evaluation code has no LICENSE file or license statement."
+        },
+        "reason": "The README states that the complete dataset is on Hugging Face as kuangtie/GUI-Robust, and that dataset card's metadata declares license: apache-2.0. It is recorded for the data; the GitHub evaluation code has no LICENSE file or license statement.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/kuangtie/GUI-Robust/raw/c76f899ccb2f2d52d0d3a4c0009f212aad305ad1/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "details": {
+      "repository_revision": "dc738e8d0d56a64df832c8c2bfbdaf9a28bdf315",
+      "benchmark_protocol": {
+        "focus": [
+          "GUI agent robustness under real-world anomalies",
+          "step grounding and full-task execution"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screenshots",
+          "step or task descriptions"
+        ],
+        "actions": [
+          "click",
+          "input",
+          "get_info",
+          "open",
+          "wait",
+          "human"
+        ],
+        "evaluation": "evaluation.py scores predicted actions and element locations against the annotations, also breaking location hits down by the annotated element type (icon, text, box). Step mode reports action and coordinate accuracy; task mode adds task success. Either mode runs on normal or abnormal tasks.",
+        "counts": [
+          {
+            "value": 5318,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "annotated tasks in GUI-Robust, as the paper (v1) reports",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.14477v1"
+          },
+          {
+            "value": 200,
+            "unit": "abnormal-scenario tasks",
+            "qualifier": "exact",
+            "population": "tasks under abnormal scenarios, as the paper (v1) reports",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.14477v1"
+          },
+          {
+            "value": 392,
+            "unit": "websites and desktop applications",
+            "qualifier": "exact",
+            "population": "task sources, as the paper (v1) reports",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.14477v1"
+          },
+          {
+            "value": 7,
+            "unit": "anomaly types",
+            "qualifier": "exact",
+            "population": "abnormal scenarios covered, as the paper (v1) reports",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2506.14477v1"
+          }
+        ],
+        "notes": "Counts are the paper's; the Hugging Face release was not downloaded or reconciled with them. Models plug in through pred_step_loc and pred_task_full methods, with a Qwen2.5-VL wrapper as the README's example.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/chessbean1/GUI-Robust/HEAD/README.md",
+          "https://arxiv.org/html/2506.14477v1",
+          "https://raw.githubusercontent.com/chessbean1/GUI-Robust/dc738e8d0d56a64df832c8c2bfbdaf9a28bdf315/evaluation.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/kuangtie/GUI-Robust/raw/c76f899ccb2f2d52d0d3a4c0009f212aad305ad1/README.md",
+        "sha256": "5d9090f62d183240a8868a4207a4934f251f09105446d9fd23b6600944e9e28e",
+        "retrieved_at": "2026-10-18T15:53:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2506.14477v1",
+        "sha256": "d335f437d464cf4b388df45f5f8c2eb1a5bb63f2b8fe08d0cedbe86e64f6b06b",
+        "retrieved_at": "2026-10-18T15:53:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/chessbean1/GUI-Robust/dc738e8d0d56a64df832c8c2bfbdaf9a28bdf315/evaluation.py",
+        "sha256": "3fb1ec4bbfd0d8efd535a93ac87cc37acb9d13bb3b2358349aaeb38b542ce6c1",
+        "retrieved_at": "2026-10-18T15:54:35Z"
+      }
+    ]
   },
   {
     "url": "https://github.com/Yuqi-Zhou/GUI-G1",

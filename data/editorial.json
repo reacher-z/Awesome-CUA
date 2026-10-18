@@ -2050,6 +2050,94 @@
     "reviewed_at": "2026-10-16T10:50:15Z",
     "documented_by": [
       "2502.08047"
+    ],
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "desktop GUI tasks started from non-default states",
+          "agent robustness to changed initial conditions"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "user query",
+          "instructional video",
+          "project file",
+          "live desktop state"
+        ],
+        "actions": [
+          "desktop GUI actions"
+        ],
+        "evaluation": "Each meta task carries a ground-truth subtask plan; augmented variants reuse its query and apply pyautogui pre-actions (Add-Step, Adjust-Step or Trim-Step) that change the starting state. The inspected card and README do not describe an automatic success checker.",
+        "counts": [
+          {
+            "value": 611,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "WorldGUI after the 2025-06-10 update stated in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/showlab/WorldGUI/HEAD/README.md"
+          },
+          {
+            "value": 111,
+            "unit": "meta tasks",
+            "qualifier": "exact",
+            "population": "worldgui_metadata.json in hhenryz/WorldGUI-Bench at revision 964c6a2 (Project IDs ending in _meta)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/resolve/964c6a21c7379c611798c537e6330fd571ae91dc/worldgui_metadata.json"
+          },
+          {
+            "value": 500,
+            "unit": "augmented task variants",
+            "qualifier": "exact",
+            "population": "worldgui_metadata.json in hhenryz/WorldGUI-Bench at revision 964c6a2 (Project IDs containing _aug_)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/resolve/964c6a21c7379c611798c537e6330fd571ae91dc/worldgui_metadata.json"
+          }
+        ],
+        "notes": "The metadata file has 611 entries with distinct Project IDs, matching the README total, across 10 applications in five categories (Office, Web Usage, Windows Usage, Media, Coding). Augmentation types: 250 Add-Step, 130 Adjust-Step, 116 Trim-Step and 4 Trim-Step+Add-Step. The project files and instructional videos were not downloaded.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/showlab/WorldGUI/HEAD/README.md",
+          "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/resolve/964c6a21c7379c611798c537e6330fd571ae91dc/worldgui_metadata.json",
+          "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/raw/964c6a21c7379c611798c537e6330fd571ae91dc/README.md"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "apache-2.0",
+          "url": "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/raw/964c6a21c7379c611798c537e6330fd571ae91dc/README.md",
+          "retrieved_at": "2026-10-18T15:48:08Z",
+          "basis": "Publisher Hub-card metadata for the WorldGUI-Bench dataset; third-party software, documents and videos keep their own terms."
+        },
+        "reason": "The README links hhenryz/WorldGUI-Bench as the released WorldGUI dataset, and its card declares Apache-2.0. The GitHub repository has no license file, so no code license is set.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/raw/964c6a21c7379c611798c537e6330fd571ae91dc/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/resolve/964c6a21c7379c611798c537e6330fd571ae91dc/worldgui_metadata.json",
+        "sha256": "d2bf25c10f4c4279d432506f9fb48cb2f3ec980fb88446fba863d4e53c1facde",
+        "retrieved_at": "2026-10-18T15:48:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench/raw/964c6a21c7379c611798c537e6330fd571ae91dc/README.md",
+        "sha256": "e034a9a9b98355f0b49d2378f881b5ee14bf16c8fb3be5bce430e0154a0508e0",
+        "retrieved_at": "2026-10-18T15:48:08Z"
+      }
     ]
   },
   {

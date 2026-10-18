@@ -63143,5 +63143,117 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Holotron-12B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holotron-12B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "Computer-use policy checkpoint from H Company and NVIDIA, fine-tuned from Nemotron Nano 12B v2 VL on localization and navigation data, with a hybrid SSM-attention backbone for high-throughput multi-image inference.",
+    "scope": "core",
+    "verify_terms": [
+      "Holotron-12B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holotron-12B/raw/a68349a8cbee7570c86e85c5864a3481ab2f3520/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.artifact_type",
+      "details.training_data_note"
+    ],
+    "notes": "The manifest lists six Safetensors shards, about 13.2B BF16 parameters by the Hub count. The card names the NVIDIA Open Model License in its text but sets no license field and ships no license file; H's models page lists the same license and includes Holotron-12B among the lab's open checkpoints. The fine-tuning mixture is proprietary and not released. Throughput and WebVoyager figures are publisher measurements that were not reproduced; no weights were loaded.",
+    "details": {
+      "hub_id": "Hcompany/Holotron-12B",
+      "hub_revision": "a68349a8cbee7570c86e85c5864a3481ab2f3520",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holotron-12B/tree/a68349a8cbee7570c86e85c5864a3481ab2f3520",
+      "artifact_type": "model-checkpoint",
+      "base_model": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
+      "architecture": "NemotronH_Nano_VL_V2",
+      "parameter_label": "12B",
+      "training_data_note": "The card describes supervised fine-tuning on H Company's proprietary localization and navigation data mixture, about 14 billion tokens; no training data is released with the checkpoint."
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/Hcompany/Holotron-12B",
+        "sha256": "e89d926da5f3eb86e379dc922b002273aa58c7eddcae5526a6307dd650ed4be2",
+        "retrieved_at": "2026-10-18T15:55:18Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Hcompany/Holotron-12B/raw/a68349a8cbee7570c86e85c5864a3481ab2f3520/config.json",
+        "sha256": "c122cb7428978b26e1dcb19fdd1bab6db8c33dcb42fc380d505783b5b189594f",
+        "retrieved_at": "2026-10-18T15:55:18Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ]
+      },
+      {
+        "url": "https://hcompany.ai/research/models",
+        "sha256": "ddfa335cd71d0a7a4e61640752b1b24830f951a72c175e88fd03bf00a5e783c8",
+        "retrieved_at": "2026-10-18T15:55:18Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.weights"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "NVIDIA Open Model License",
+          "url": "https://huggingface.co/Hcompany/Holotron-12B/raw/a68349a8cbee7570c86e85c5864a3481ab2f3520/README.md",
+          "retrieved_at": "2026-10-18T15:55:28Z",
+          "basis": "Publisher model-card text for this checkpoint names the NVIDIA Open Model License; the card metadata has no license field and the repository has no license file. Code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card text names the NVIDIA Open Model License for this checkpoint, matching H's models page; code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holotron-12B/raw/a68349a8cbee7570c86e85c5864a3481ab2f3520/README.md",
+          "https://hcompany.ai/research/models"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json, Hub API record (file manifest and card metadata), H's models page and the Holotron-12B release post. No weights were downloaded or run.",
+    "reviewed_sha256": "92912de5e547c322760b307abb5e917b80bc100237e52e95089019ce42b9e985",
+    "reviewed_at": "2026-10-18T15:55:35Z"
   }
 ]

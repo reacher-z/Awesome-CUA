@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (9)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -52,6 +52,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [CUAWright (formerly Webwright)](https://github.com/microsoft/Webwright) | web, desktop | [2610.04116](https://arxiv.org/abs/2610.04116) (2026) | code MIT | Agent framework for browser and desktop tasks using automation code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/Webwright/HEAD/README.md) |
 | [DroidCall generation and evaluation code](https://github.com/UbiquitousLearning/DroidCall) | android | [2412.00402](https://arxiv.org/abs/2412.00402) (2024) | code MIT | Data-generation, fine-tuning and evaluation utilities for teaching small language models to invoke Android intents through predefined functions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/UbiquitousLearning/DroidCall/HEAD/README.md) |
+| [Ghost in the Droid](https://github.com/ghost-in-the-droid/android-agent) | android, ios | — | code MIT | Python framework that gives LLM agents a real Android phone over ADB or an iPhone through WebDriverAgent, with 62 MCP tools, replayable per-app skills and a dashboard for running multi-device phone farms. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghost-in-the-droid/android-agent/HEAD/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | web | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |

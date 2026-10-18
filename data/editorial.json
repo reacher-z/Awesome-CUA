@@ -63143,5 +63143,80 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:ghost-in-the-droid/android-agent",
+    "name": "Ghost in the Droid",
+    "kind": "framework",
+    "url": "https://github.com/ghost-in-the-droid/android-agent",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Python framework that gives LLM agents a real Android phone over ADB or an iPhone through WebDriverAgent, with 62 MCP tools, replayable per-app skills and a dashboard for running multi-device phone farms.",
+    "scope": "core",
+    "verify_terms": [
+      "Ghost in the Droid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ghost-in-the-droid/android-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The README describes Android control through ADB (optional Portal companion app) and opt-in iOS control through Appium XCUITest and WebDriverAgent, which needs a Mac with Xcode. Model backends are swappable, including Claude Code, OpenRouter, Ollama, vLLM and on-device runtimes. Its AndroidWorld result (115 of 116 tasks) is labelled a preview without published methodology and was not checked. Latest release is v1.5.1; the software was not installed or run. Root LICENSE is the MIT text for the code; model-provider terms and third-party app content are separate.",
+    "details": {
+      "availability": "Public source, PyPI package ghost-in-the-droid and GitHub releases.",
+      "release_tag": "v1.5.1",
+      "repository_url": "https://github.com/ghost-in-the-droid/android-agent"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/ghost-in-the-droid/android-agent",
+        "sha256": "cfe868c00993af28ab4dec770d9dd74792b42a95016a6a01ce41a1b12d14e1f5",
+        "retrieved_at": "2026-10-18T11:23:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/ghost-in-the-droid/android-agent/releases/latest",
+        "sha256": "bff4cc6023144f81091b7a0eb63508ec0ef652936cb154b74904a40c8518395e",
+        "retrieved_at": "2026-10-18T11:23:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ghost-in-the-droid/android-agent/HEAD/LICENSE",
+        "sha256": "e513facf9352a2a60c8bcfb4eb4d272475eb0451340b2838e52b6ad23c75e08f",
+        "retrieved_at": "2026-10-18T11:23:12Z"
+      }
+    ],
+    "reviewed_sha256": "3d740dcf6c0338179b9e873750444250b4b22d471cb104e6907980b25ccfead4",
+    "reviewed_at": "2026-10-18T11:23:54Z"
   }
 ]

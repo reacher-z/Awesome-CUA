@@ -63143,5 +63143,118 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ToolCUA",
+    "kind": "model",
+    "url": "https://github.com/X-PLUG/ToolCUA",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "reinforcement-learning",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Release repository for ToolCUA-8B, a Qwen3-VL-8B desktop agent model trained to choose between screenshot-grounded GUI actions and MCP tool calls, with an OSWorld-MCP evaluation agent and tool servers.",
+    "verify_terms": [
+      "ToolCUA"
+    ],
+    "documented_by": [
+      "2605.12481"
+    ],
+    "notes": "The repository holds evaluation code; the ToolCUA-8B weights are published separately as mPLUG/ToolCUA-8B on Hugging Face (card base_model Qwen/Qwen3-VL-8B-Instruct, config architecture Qwen3VLForConditionalGeneration). The README's TODO lists the GUI-Tool trajectory synthesis pipeline and the agentic RL training infrastructure as not yet released. The agent in eval/qwen3vl_toolcua_agent_mcp.py accepts only screenshot observations and turns computer_use calls into pyautogui code or forwards MCP tool calls; it is meant to be copied into an OSWorld or OSWorld-MCP checkout, whose environment defaults to Ubuntu. eval/evaluaton_data holds task-ID lists: 333 feasible OSWorld-MCP tasks split into 238 has-tool and 95 no-tool tasks. Reported OSWorld-MCP scores are publisher claims and were not reproduced; nothing was run. The root LICENSE is MIT for code; the Hub card's mit tag is a separate weights declaration and is not applied from the code license. Not a fork, not archived.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/X-PLUG/ToolCUA/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public evaluation code and MCP tool servers; ToolCUA-8B weights are downloaded separately from Hugging Face; the data synthesis pipeline and RL training infrastructure are listed as unreleased.",
+      "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "8B"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/X-PLUG/ToolCUA/git/commits/2643f8625144005fb932724f1e099d9a59ef1932",
+        "sha256": "837c5d48918afcb105d2f3b2e3f7f36c6178c4caad9b09ffafc9bbf2c1cdfaa7",
+        "retrieved_at": "2026-10-18T12:29:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/X-PLUG/ToolCUA/git/trees/5d5e6a8b0b370e1550655edab0c3f8893349fbab?recursive=1",
+        "sha256": "b9a0674baa27b2dfa3296f7cb8abbd448286c7557335f5a9a5c69c0a11c795c1",
+        "retrieved_at": "2026-10-18T12:29:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/ToolCUA/2643f8625144005fb932724f1e099d9a59ef1932/eval/qwen3vl_toolcua_agent_mcp.py",
+        "sha256": "9ea5b5515b64dc0c6da6bd76f1dd7d71a2fdc4dee0d3c42fd752dc123359b240",
+        "retrieved_at": "2026-10-18T12:29:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/ToolCUA/2643f8625144005fb932724f1e099d9a59ef1932/LICENSE",
+        "sha256": "a355c8a73966284662c8ae89f44c432cbb3a7dff59cf6d54281d9718918b4712",
+        "retrieved_at": "2026-10-18T12:29:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.base_model",
+          "details.parameter_label"
+        ],
+        "url": "https://huggingface.co/mPLUG/ToolCUA-8B/raw/8169c7ff6e7974aaee6187d322fac2553c81118a/README.md",
+        "sha256": "934a03cad304837c5496f4eb6d1ddf2a2011ad56dec459c3de8825f6720336dd",
+        "retrieved_at": "2026-10-18T12:29:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/mPLUG/ToolCUA-8B/raw/8169c7ff6e7974aaee6187d322fac2553c81118a/config.json",
+        "sha256": "4f229c1217a927fc886379868d6550e7c8744204dd8eb3e9981b7c5ff5a6dd05",
+        "retrieved_at": "2026-10-18T12:29:28Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ea9905b5e3403b347b7251de553957ca6942a4b0d0c84604c2f46535fec8a923",
+    "reviewed_at": "2026-10-18T12:30:35Z"
   }
 ]

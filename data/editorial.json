@@ -63143,5 +63143,367 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Click-100k",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/mlfoundations/Click-100k",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "101,314 screenshot–instruction pairs with target boxes for click grounding, filtered from public GUI grounding sets and tutorial-video frames, packaged with EasyR1 point-prediction prompts.",
+    "scope": "core",
+    "verify_terms": [
+      "Click-100k"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/mlfoundations/Click-100k/raw/f728db8f1dab96b09f8042c309fffb810f8e19e7/README.md"
+    ],
+    "notes": "Sources named by the card: ShowUI (web and desktop), AutoGUI, PC-Agent-E, WaveUI, OS-Atlas, UGround, PixMo Points, SeeClick, UI-Vision, a Jedi spreadsheet subset and frames from professional-application tutorial videos labelled with Claude 4 Sonnet (the card says 85 videos, the release README 80+). Each source was capped at 50k instances, and noisy or trivial samples were removed with OmniParser and grounding-model filters. The card says SeeClick, PixMo and UGround samples were excluded during RL training, so the training subset is smaller than the release. The release declares no data license, and the upstream sources keep their own terms. The training config names the dataset mlfoundations/clicks-100k, a spelling that differs from this Hub ID. Parquet files were not downloaded.",
+    "details": {
+      "hub_id": "mlfoundations/Click-100k",
+      "hub_revision": "f728db8f1dab96b09f8042c309fffb810f8e19e7",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/mlfoundations/Click-100k/tree/f728db8f1dab96b09f8042c309fffb810f8e19e7",
+      "repository_url": "https://github.com/mlfoundations/Gelato",
+      "dataset_profile": {
+        "supervision": [
+          "element instructions with target bounding boxes"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "bounding boxes"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 101314,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "train split (dataset_info in the card metadata)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/mlfoundations/Click-100k/raw/f728db8f1dab96b09f8042c309fffb810f8e19e7/README.md"
+          },
+          {
+            "value": 64,
+            "unit": "Parquet shards",
+            "qualifier": "exact",
+            "population": "data/ at Hub revision f728db8f",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/mlfoundations/Click-100k/revision/f728db8f1dab96b09f8042c309fffb810f8e19e7"
+          }
+        ],
+        "notes": "Each row holds an image path, the image, an EasyR1 prompt that embeds the element description, pixel and normalized boxes and the image size. Examples and shards are different units. Per-source counts are not given.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/mlfoundations/Click-100k/raw/f728db8f1dab96b09f8042c309fffb810f8e19e7/README.md",
+          "https://huggingface.co/api/datasets/mlfoundations/Click-100k/revision/f728db8f1dab96b09f8042c309fffb810f8e19e7",
+          "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile",
+      "details.repository_url"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/mlfoundations/Click-100k/revision/f728db8f1dab96b09f8042c309fffb810f8e19e7",
+        "sha256": "e3636612b79e3c042500613bf351bb4202669acaf1d3ccbb82cc73279bc049a8",
+        "retrieved_at": "2026-10-18T15:53:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md",
+        "sha256": "437eb06553ed6d63d871d18842906b26b6148db5b0a5489064736ef6f5f0cfcf",
+        "retrieved_at": "2026-10-18T15:53:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/training_configs/README.md",
+        "sha256": "c2a6c7ebe068b732f3e2cf21ee085c1ca375e4c044e39a053bd34e74c0287669",
+        "retrieved_at": "2026-10-18T15:53:37Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "Neither the dataset card nor the release repository declares a license for Click-100k; the code repository has no license file, and the upstream sources keep their own terms.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/mlfoundations/Click-100k/raw/f728db8f1dab96b09f8042c309fffb810f8e19e7/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3d6d130f966f51338eb58cae805640aa37db9985a7bbc86fa95417bcbef4fe01",
+    "reviewed_at": "2026-10-18T15:56:18Z"
+  },
+  {
+    "name": "Gelato",
+    "kind": "model",
+    "url": "https://github.com/mlfoundations/Gelato",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning",
+      "data-generation"
+    ],
+    "summary": "Release code for Gelato-30B-A3B, a GUI click-grounding model trained with GRPO on Click-100k: EasyR1 configs, click rewards, grounding evaluation scripts and logs, and a GPT-5-planned OS-World agent harness.",
+    "scope": "core",
+    "verify_terms": [
+      "Gelato-30B-A3B"
+    ],
+    "notes": "There is no arXiv paper; the README's citation is a GitHub @misc entry. The README describes how Click-100k was filtered (OmniParser element checks, Qwen2.5-VL-7B difficulty and GTA1-7B-2507 alignment filters) and reports 63.88% on ScreenSpot-Pro, 69.15% on OS-World-G with refusal prompting, and 58.71 ± 0.66% automated OS-World success across three runs; none of these was reproduced. It also releases a UI-TARS-1.5-7B baseline trained with the same recipe as mlfoundations/Gelato-UI-TARS-1.5-7B, which has no model card. evaluation/os-world/gelato_agent.py is a modified GTA1.5 OSWorld agent: GPT-5 plans from screenshots and its tool calls become pyautogui commands, with click targets requested from a vLLM-served grounding model; it runs inside an OSWorld checkout. The repository has no license file.",
+    "details": {
+      "availability": "Training configs, reward functions, grounding evaluation code, evaluation logs and the OS-World agent script are in the repository; the weights and the Click-100k data are on the Hugging Face Hub.",
+      "artifact_inspection": "README, recursive file tree, training_configs/README.md and evaluation/os-world/gelato_agent.py at commit 2a8757d4; nothing was run."
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/mlfoundations/Gelato/git/trees/2a8757d473a63d34f71b043192d08dad61d298ee?recursive=1",
+        "sha256": "264ea1121a89f66087bdc945fa132b3ffa310ca6333dbc801ed0a443764e4e4c",
+        "retrieved_at": "2026-10-18T15:53:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/training_configs/README.md",
+        "sha256": "c2a6c7ebe068b732f3e2cf21ee085c1ca375e4c044e39a053bd34e74c0287669",
+        "retrieved_at": "2026-10-18T15:53:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/evaluation/os-world/gelato_agent.py",
+        "sha256": "060968a137ee7cd396722252742ef8f7a26e81504e1d36d5110c70a25f71d445",
+        "retrieved_at": "2026-10-18T15:53:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md",
+        "sha256": "437eb06553ed6d63d871d18842906b26b6148db5b0a5489064736ef6f5f0cfcf",
+        "retrieved_at": "2026-10-18T15:53:38Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:bf847949766b2b257d1c",
+        "evidence_url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The recursive tree at commit 2a8757d4 has no LICENSE file and the README states no license, so no code license is established.",
+        "evidence_urls": [
+          "https://api.github.com/repos/mlfoundations/Gelato/git/trees/2a8757d473a63d34f71b043192d08dad61d298ee?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "437eb06553ed6d63d871d18842906b26b6148db5b0a5489064736ef6f5f0cfcf",
+    "reviewed_at": "2026-10-18T15:56:18Z"
+  },
+  {
+    "name": "Gelato-30B-A3B",
+    "kind": "model",
+    "url": "https://huggingface.co/mlfoundations/Gelato-30B-A3B",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning"
+    ],
+    "summary": "Qwen3-VL-30B-A3B-Instruct checkpoint trained with GRPO on Click-100k that returns one (x,y) click point, normalized to 0–1000, for a screenshot and an element description.",
+    "scope": "core",
+    "verify_terms": [
+      "Gelato-30B-A3B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/mlfoundations/Gelato-30B-A3B/raw/161e92880a1685a98caa5ef5de8813fe8a43cbb4/README.md"
+    ],
+    "family_url": "https://github.com/mlfoundations/Gelato",
+    "notes": "The card's example prompts for one (x,y) point and rescales it from a 0–1000 frame to pixels. The Hub manifest at revision 161e9288 lists 14 Safetensors shards; the API reports 31,070,754,032 BF16 parameters. The release README says the published weights are the step-84 checkpoint of a 100-step DAPO-style GRPO run and that all intermediate checkpoints are released, but the Hub shows only the main branch of this repository. Reported benchmark scores were not reproduced and no weights were loaded.",
+    "details": {
+      "hub_id": "mlfoundations/Gelato-30B-A3B",
+      "hub_revision": "161e92880a1685a98caa5ef5de8813fe8a43cbb4",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/mlfoundations/Gelato-30B-A3B/tree/161e92880a1685a98caa5ef5de8813fe8a43cbb4",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "architecture": "Qwen3VLMoeForConditionalGeneration",
+      "parameter_label": "30B-A3B",
+      "training_data_note": "The card metadata and the release README name Click-100k as the training data.",
+      "listed_weight_files": [
+        "model-00001-of-00014.safetensors",
+        "model-00002-of-00014.safetensors",
+        "model-00003-of-00014.safetensors",
+        "model-00004-of-00014.safetensors",
+        "model-00005-of-00014.safetensors",
+        "model-00006-of-00014.safetensors",
+        "model-00007-of-00014.safetensors",
+        "model-00008-of-00014.safetensors",
+        "model-00009-of-00014.safetensors",
+        "model-00010-of-00014.safetensors",
+        "model-00011-of-00014.safetensors",
+        "model-00012-of-00014.safetensors",
+        "model-00013-of-00014.safetensors",
+        "model-00014-of-00014.safetensors"
+      ],
+      "repository_url": "https://github.com/mlfoundations/Gelato"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.base_model",
+          "details.architecture",
+          "details.listed_weight_files",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/mlfoundations/Gelato-30B-A3B/revision/161e92880a1685a98caa5ef5de8813fe8a43cbb4",
+        "sha256": "89a8d65f413e2664c4355df9de84fc46bd9612d914df96affd05d68f88eb10e7",
+        "retrieved_at": "2026-10-18T15:53:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mlfoundations/Gelato/2a8757d473a63d34f71b043192d08dad61d298ee/README.md",
+        "sha256": "437eb06553ed6d63d871d18842906b26b6148db5b0a5489064736ef6f5f0cfcf",
+        "retrieved_at": "2026-10-18T15:53:38Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:bf847949766b2b257d1c",
+        "evidence_url": "https://huggingface.co/mlfoundations/Gelato-30B-A3B/raw/161e92880a1685a98caa5ef5de8813fe8a43cbb4/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/mlfoundations/Gelato-30B-A3B/raw/161e92880a1685a98caa5ef5de8813fe8a43cbb4/README.md",
+          "retrieved_at": "2026-10-18T15:53:38Z",
+          "basis": "Model-card metadata declaration for this checkpoint; the code repository has no license file and the Click-100k data terms are separate."
+        },
+        "reason": "Model-card metadata declaration for this checkpoint; the code repository has no license file and the Click-100k data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/mlfoundations/Gelato-30B-A3B/raw/161e92880a1685a98caa5ef5de8813fe8a43cbb4/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ae96174873e2a52a206ea9b7e718609678ec15e5830f5eac1f52d325770fcd8b",
+    "reviewed_at": "2026-10-18T15:56:18Z"
   }
 ]

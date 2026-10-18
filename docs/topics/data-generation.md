@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+340 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (56)](#datasets) · [Models (3)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -21,6 +21,7 @@
 | [AndroidControl](https://github.com/google-research/google-research/tree/master/android_control) | android | [2406.03679](https://arxiv.org/abs/2406.03679) (2024) | [> 15,000 demonstrations](https://raw.githubusercontent.com/google-research/google-research/master/android_control/README.md) · [833 applications](https://raw.githubusercontent.com/google-research/google-research/master/android_control/README.md) | code Apache-2.0 | Android demonstrations with high-level goals, step instructions, screenshots, and accessibility trees. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-research/google-research/master/android_control/README.md) |
 | [AutoDroid V2 training data](https://huggingface.co/datasets/BlitherBoom/AutoDroid-V2-Dataset) | android | — | — | data mit | Conversation-formatted supervision released for fine-tuning AutoDroid V2, with the project documenting a ShareGPT-style JSON configuration. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/BlitherBoom/AutoDroid-V2-Dataset) |
 | [CAGUI](https://huggingface.co/datasets/openbmb/CAGUI) | android | [2506.01391](https://arxiv.org/abs/2506.01391) (2025) | — | data cc-by-nc-4.0 | Chinese Android GUI benchmark released with AgentCPM-GUI, with a grounding track for widgets and OCR text and an agent track for multi-step tasks in Chinese apps. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/openbmb/CAGUI) |
+| [Click-100k](https://huggingface.co/datasets/mlfoundations/Click-100k) | desktop, web | — | [101,314 examples](https://huggingface.co/datasets/mlfoundations/Click-100k/raw/f728db8f1dab96b09f8042c309fffb810f8e19e7/README.md) · [64 Parquet shards](https://huggingface.co/api/datasets/mlfoundations/Click-100k/revision/f728db8f1dab96b09f8042c309fffb810f8e19e7) | — | 101,314 screenshot–instruction pairs with target boxes for click grounding, filtered from public GUI grounding sets and tutorial-video frames, packaged with EasyR1 point-prediction prompts. | [✓ 2026‑10‑18](https://huggingface.co/datasets/mlfoundations/Click-100k/raw/f728db8f1dab96b09f8042c309fffb810f8e19e7/README.md) |
 | [CMGUI](https://huggingface.co/datasets/alibabagroup/CMGUI) | android | [2603.08533](https://arxiv.org/abs/2603.08533) (2026) | — | data cc-by-4.0 | 18k trajectories with 98k steps from more than 50 Chinese mobile apps in domains such as e-commerce and social media, for building GUI agents on Chinese apps. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/alibabagroup/CMGUI) |
 | [CUA-Gym](https://huggingface.co/datasets/xlangai/CUA-Gym) | desktop | [2605.25624](https://arxiv.org/abs/2605.25624) (2026) | — | data cc-by-4.0 | Computer-use environment and task resources for agent research. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/xlangai/CUA-Gym) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
@@ -70,6 +71,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Gelato](https://github.com/mlfoundations/Gelato) | desktop | — | — | Release code for Gelato-30B-A3B, a GUI click-grounding model trained with GRPO on Click-100k: EasyR1 configs, click rewards, grounding evaluation scripts and logs, and a GPT-5-planned OS-World agent harness. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/mlfoundations/Gelato/HEAD/README.md) |
 | [OpenCUA](https://github.com/xlang-ai/OpenCUA) | desktop | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT | Open computer-use research stack including models and training resources. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OpenCUA/HEAD/README.md) |
 | [ScaleCUA](https://github.com/OpenGVLab/ScaleCUA) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | code Apache-2.0 | Computer-use model family trained with cross-platform interaction data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/ScaleCUA/HEAD/README.md) |
 

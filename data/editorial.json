@@ -63143,5 +63143,116 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-Odyssey — original OpenGVLab release",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "cross-app",
+      "data-generation"
+    ],
+    "summary": "Original Hub upload of GUI Odyssey: 7,735 cross-app Android navigation episodes from six emulated devices with per-step screenshots, actions and four split files, which the card says is superseded.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI Odyssey consists of 7,735 episodes"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey/raw/71e0e7e2d169c642e7a99c264d82ffecadf67889/README.md"
+    ],
+    "component_of": "https://github.com/OpenGVLab/GUI-Odyssey",
+    "documented_by": [
+      "2406.08451"
+    ],
+    "notes": "The card now asks users to switch to the newer hflqf88888/GUIOdyssey release, which reports a different episode total; this record keeps the earlier OpenGVLab upload, whose card still links the GUI-Odyssey repository and paper. Hub API at revision 71e0e7e2: not gated, with all_anno.json, 7,735 annotation JSON files, four split files and screenshot folders; its sibling list stops at 100,000 entries. A paginated Hub tree listing at the same revision counted 118,791 PNG files in 100 screenshot folders; zipped copies of annotations and screenshots sit under zips/. The card declares CC-BY-4.0 for the data.",
+    "details": {
+      "hub_id": "OpenGVLab/GUI-Odyssey",
+      "hub_revision": "71e0e7e2d169c642e7a99c264d82ffecadf67889",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey/tree/71e0e7e2d169c642e7a99c264d82ffecadf67889",
+      "repository_url": "https://github.com/OpenGVLab/GUI-Odyssey",
+      "dataset_profile": {
+        "supervision": [
+          "cross-app trajectories",
+          "action grounding"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "actions",
+          "click and scroll coordinates",
+          "device metadata"
+        ],
+        "formats": [
+          "JSON annotations",
+          "PNG screenshots",
+          "zip archives"
+        ],
+        "splits": [
+          "random",
+          "task",
+          "device",
+          "app"
+        ],
+        "counts": [
+          {
+            "value": 7735,
+            "unit": "episodes",
+            "qualifier": "exact",
+            "population": "original OpenGVLab/GUI-Odyssey release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey/raw/71e0e7e2d169c642e7a99c264d82ffecadf67889/README.md"
+          },
+          {
+            "value": 7735,
+            "unit": "annotation JSON files",
+            "qualifier": "exact",
+            "population": "annotations/ at revision 71e0e7e2",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/OpenGVLab/GUI-Odyssey/revision/71e0e7e2d169c642e7a99c264d82ffecadf67889"
+          }
+        ],
+        "notes": "Each annotation file is one episode keyed by episode_id, with device, task (category, apps, meta-task, instruction) and per-step screenshot, action, info and ps fields; actions are CLICK, SCROLL, LONG_PRESS, TYPE, COMPLETE, IMPOSSIBLE, HOME and BACK, with coordinates normalized to 0-1000. Each split file lists train and test episode IDs. Screenshots were not counted from a retained receipt.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey/raw/71e0e7e2d169c642e7a99c264d82ffecadf67889/README.md",
+          "https://huggingface.co/api/datasets/OpenGVLab/GUI-Odyssey/revision/71e0e7e2d169c642e7a99c264d82ffecadf67889"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/OpenGVLab/GUI-Odyssey/revision/71e0e7e2d169c642e7a99c264d82ffecadf67889",
+        "sha256": "4a8355cb0fb25eb47234f7ed6eace6abf12e462768f7f9240f81577a58811c4e",
+        "retrieved_at": "2026-10-18T12:08:13Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e881ff64f9657889838715ff44588c4963a41b7b389d527da88214626fd8159a",
+    "reviewed_at": "2026-10-18T12:08:34Z"
   }
 ]

@@ -63143,5 +63143,91 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:browser-use/macos-harness",
+    "name": "macOS Harness",
+    "kind": "tool",
+    "url": "https://github.com/browser-use/macos-harness",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Python CLI and agent skill giving coding agents eleven commands to read any Mac app window as numbered accessibility elements plus a screenshot and to act on them without moving the user's pointer.",
+    "scope": "core",
+    "verify_terms": [
+      "macOS Harness",
+      "macos-harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/macos-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Repository of the browser-use GitHub organization (not a fork, not archived). The README marks it experimental and macOS-only. install writes a skill and turn hooks for Claude Code, Codex, Pi or OpenCode. Actions go through accessibility actions first, then events posted to the target app's process; an optional policy file can require approval before an agent's first use of each app. Anonymous usage telemetry is on by default and can be disabled. Code was read, not run.",
+    "details": {
+      "availability": "Public source and PyPI package; GitHub releases v0.2.0 and v0.2.1 carry no binary assets",
+      "package_version": "0.2.1",
+      "repository_revision": "43d9edf8286153482348b15f7d8c22d9e38f6c6b"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/macos-harness/43d9edf8286153482348b15f7d8c22d9e38f6c6b/src/macos_harness/tools.py",
+        "sha256": "66455a78bdcacfdcaf6923acf18c5ae77095cb8e02fc72e802f1ed9c682db803",
+        "retrieved_at": "2026-10-18T11:50:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/macos-harness/43d9edf8286153482348b15f7d8c22d9e38f6c6b/src/macos_harness/telemetry.py",
+        "sha256": "51d9d80355705e7332ab3a8d90d8f25433b81330958c81156675af064fcfd241",
+        "retrieved_at": "2026-10-18T11:50:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.package_version",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/macos-harness/43d9edf8286153482348b15f7d8c22d9e38f6c6b/pyproject.toml",
+        "sha256": "7301ee0bccc6da34ba9d8b4def5d264478ad777c055aa78bceb11dc9129ea631",
+        "retrieved_at": "2026-10-18T11:50:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/macos-harness/43d9edf8286153482348b15f7d8c22d9e38f6c6b/LICENSE",
+        "sha256": "5afa3d97bf1e6f998d587fa101e3fe0d0c416840b7fe77bcd6ae97690a334631",
+        "retrieved_at": "2026-10-18T11:50:35Z"
+      }
+    ],
+    "reviewed_sha256": "9a88db95ac412d4973a256c63a198d3c3bff88e1e271c505ba626ea83380431d",
+    "reviewed_at": "2026-10-18T11:51:24Z"
   }
 ]

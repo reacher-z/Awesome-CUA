@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:huggingface/lerobot",
+    "url": "https://github.com/huggingface/lerobot",
+    "decision": "out_of_scope",
+    "reason": "LeRobot is Hugging Face's PyTorch library for real-world robotics: robot-arm and humanoid control, the LeRobotDataset format and robot policies. It surfaced only through ShowUI-π's acknowledgements and has no screen, browser or GUI interaction.",
+    "reviewed_at": "2026-10-18T11:49:22Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/huggingface/lerobot/HEAD/README.md",
+      "sha256": "79d69e66512bc9e9571e214cb42a71249977d39baff45c1acd69a8e38cba2178",
+      "retrieved_at": "2026-10-18T11:24:51Z"
+    }
   }
 ]

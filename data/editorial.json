@@ -45517,7 +45517,7 @@
     "verify_terms": [
       "GUIMid"
     ],
-    "notes": "The public manifest includes GUIMid.json, mavis.tar.gz, GUI_trajectory.json, traj.tar.gz and domain-specific JSON files. The card says image data for some individual domains is still forthcoming and its overview inconsistently says nine tasks while later enumerating seven vision-language plus four language-only domains; no aggregate task/sample count is inferred. Training code remains marked coming soon in the repository. MIT is the publisher dataset declaration, not a relicensing of all upstream content.",
+    "notes": "The public manifest includes GUIMid.json, mavis.tar.gz, GUI_trajectory.json, traj.tar.gz and domain-specific JSON files. The card says image data for some individual domains is still forthcoming and its overview inconsistently says nine tasks while later enumerating seven vision-language plus four language-only domains; the recorded sample counts come from the paper, not from the card. Training code remains marked coming soon in the repository. MIT is the publisher dataset declaration, not a relicensing of all upstream content.",
     "evidence_urls": [
       "https://huggingface.co/datasets/hkust-nlp/GUIMid/raw/main/README.md"
     ],
@@ -45557,12 +45557,30 @@
         "splits": [
           "train configurations for named mid-training domains"
         ],
-        "notes": "Do not treat Hub size bands or the inconsistent introductory task count as a sample total. Some constituent-domain image packages remain forthcoming.",
+        "notes": "Counts are the paper's statements: the GUIMid mixture is about 300K examples and the post-training data about 56K samples (28K web, 27K mobile). The paper samples 150K examples for each single-domain file except Non-GUI Agents (about 51K). Hub size bands are not sample totals, and some constituent-domain image packages remain forthcoming.",
         "evidence_urls": [
           "https://huggingface.co/datasets/hkust-nlp/GUIMid/raw/main/README.md",
-          "https://raw.githubusercontent.com/hkust-nlp/GUIMid/HEAD/README.md"
+          "https://raw.githubusercontent.com/hkust-nlp/GUIMid/HEAD/README.md",
+          "https://arxiv.org/html/2504.10127v2"
         ],
-        "counts": []
+        "counts": [
+          {
+            "value": 300000,
+            "unit": "mid-training examples",
+            "qualifier": "approximately",
+            "population": "GUIMid mixture (GUIMid.json): 150K MathInstruct, 20K CodeI/O, 50K Olympiad Math and 80K Multi-modal Math examples, as described in arXiv 2504.10127v2 Section 4.1",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2504.10127v2"
+          },
+          {
+            "value": 56000,
+            "unit": "post-training samples",
+            "qualifier": "approximately",
+            "population": "GUI post-training data (GUI_trajectory.json): web and mobile single-step samples, as described in arXiv 2504.10127v2 Sections 3.2 and 4.1 and Table 2",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2504.10127v2"
+          }
+        ]
       }
     },
     "documented_by": [
@@ -45603,6 +45621,17 @@
         "url": "https://raw.githubusercontent.com/hkust-nlp/GUIMid/HEAD/README.md",
         "sha256": "d9f63a03088c37f7145725c7a182100d1593fceadd26a9bf817d434ca8d6297e",
         "retrieved_at": "2026-10-17T11:18:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2504.10127v2",
+        "sha256": "c6b51cf308f0d8759ff339cc50a83e0dc0d026c3684b2636da3b3076a96ab1cf",
+        "retrieved_at": "2026-10-18T16:07:25Z"
       }
     ],
     "reviewed_licenses": {

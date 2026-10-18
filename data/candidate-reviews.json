@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:openai/codex",
+    "url": "https://github.com/openai/codex",
+    "decision": "out_of_scope",
+    "reason": "Codex CLI is OpenAI's terminal coding agent for reading, editing and running code in a local repository. The repository's only computer-use and browser-use code consists of feature gates, allow/deny policy schemas for the separately distributed desktop apps and transcript rendering of such tool calls; the executors that see or operate interfaces are not in it, so graphical interaction is not material to this resource.",
+    "reviewed_at": "2026-10-18T11:52:06Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/openai/codex/HEAD/README.md",
+      "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+      "retrieved_at": "2026-10-18T11:47:16Z"
+    }
   }
 ]

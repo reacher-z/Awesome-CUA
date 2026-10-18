@@ -63143,5 +63143,135 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "UI-Voyager",
+    "kind": "model",
+    "url": "https://github.com/ui-voyager/UI-Voyager",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning",
+      "data-generation"
+    ],
+    "summary": "4B Android GUI agent model fine-tuned from Qwen3-VL-4B through rejection fine-tuning and group-relative self-distillation; the repository holds its AndroidWorld evaluation harness and SSIM fork-point detection code.",
+    "scope": "core",
+    "verify_terms": [
+      "UI-Voyager"
+    ],
+    "documented_by": [
+      "2603.24533"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/HEAD/README.md"
+    ],
+    "notes": "Repository of the UI-Voyager paper (arXiv 2603.24533). The checkpoint is published on Hugging Face as MarsXL/UI-Voyager, which has no catalog record; its card at revision c262b85 names Qwen/Qwen3-VL-4B-Instruct as the base model and declares license mit in its metadata. No weights license is set on this record because the weights are not in this repository. The tree at commit 67b65e2 contains an AndroidWorld evaluation agent (androidworld/eval) that sends the current screenshot and the step history to the model through an OpenAI-compatible endpoint and can save rollouts as SFT-format data, run and stop scripts for parallel emulators, and fork-point code (cores/) that pairs failed with successful trajectories by screenshot SSIM and writes corrective SFT examples. It also vendors copies of android_env and android_world with their own LICENSE files. No fine-tuning or GRSD training scripts are released: cores/README.md refers to a run_group_sample.sh that is not in the tree, and the README's Data Collection section is empty. eval_results/androidworld_ui-voyager_trajectories.tar is a Git LFS pointer. The MIT LICENSE covers the repository's code. The reported 81.0% AndroidWorld success rate was not reproduced; code was read, not run.",
+    "details": {
+      "availability": "Evaluation harness and fork-point detection source; checkpoint on Hugging Face; no training scripts; trajectory archive stored through Git LFS"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/ui-voyager/UI-Voyager",
+        "sha256": "b45ae608cf451121747a9e2aa273aa6e5622d00846e3a4099d59075b9cde6916",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/ui-voyager/UI-Voyager/git/trees/67b65e2be093753ecaa2964f48739339b870813e?recursive=1",
+        "sha256": "dda5579a65a19e272c21bbf95fff7d83d10e7b3f0147ed8acf4b531ecb52b26e",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/67b65e2be093753ecaa2964f48739339b870813e/androidworld/eval/agents/qwen_agent.py",
+        "sha256": "8969b87cc05518df2df4f7b958fda9e011a78bc24ab7ef697e088f950e160441",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/67b65e2be093753ecaa2964f48739339b870813e/cores/README.md",
+        "sha256": "35cb270b8a75900b398d416902b0fbb7df1fd8ee0cc96a1bc950a513936b911d",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/67b65e2be093753ecaa2964f48739339b870813e/cores/fork_algorithm.py",
+        "sha256": "50124dc307963df7423f92f170d86cdd3d6d4b8cbb97348abf53bdd9406b35e0",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/67b65e2be093753ecaa2964f48739339b870813e/eval_results/.gitattributes",
+        "sha256": "287fae26701e439d25a8cc6768255c6271343f3c292b8071855bb913aad88be9",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://huggingface.co/MarsXL/UI-Voyager/raw/c262b85f18f1c669b19bca544e0ee2eb71225ff3/README.md",
+        "sha256": "59a2d1e7fff36df9826d8d7f1f2b8ebd1c9fc55000eb733904cc9144e0dec009",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/67b65e2be093753ecaa2964f48739339b870813e/LICENSE",
+        "sha256": "f7b20aa3079a1779f35284655a65e2f8e95833f6e2412601a6edcda05153b059",
+        "retrieved_at": "2026-10-18T15:42:11Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4f4360dbe9787f0884d968a7cee28e44bc334f5a20f59997bcdb16ea214f56af",
+    "reviewed_at": "2026-10-18T15:42:44Z"
   }
 ]

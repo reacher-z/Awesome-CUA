@@ -63143,5 +63143,116 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SwiftAutoGUI",
+    "kind": "tool",
+    "url": "https://github.com/NakaokaRei/SwiftAutoGUI",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "web-navigation"
+    ],
+    "summary": "Swift library and sagui CLI for macOS mouse, keyboard, screenshot and image-matching automation, with a model-driven agent that reads screenshots and accessibility trees and a separate Chromium CDP browser agent.",
+    "scope": "core",
+    "verify_terms": [
+      "SwiftAutoGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NakaokaRei/SwiftAutoGUI/HEAD/README.md"
+    ],
+    "notes": "Modelled on PyAutoGUI. The default agent backend observes a JPEG screenshot plus a structured context of windows and the focused window's accessibility tree (ScreenContextProvider), and acts through CGEvent input and accessibility actions; models plug in through Apple's FoundationModels LanguageModel interface, with an OpenAI-compatible adapter. The optional SwiftAutoGUIBrowser product observes an existing Chromium debugging session through the CDP DOM and accessibility tree and dispatches CDP input events, refusing native-app actions and cross-origin navigation unless authorized. Image recognition uses a Metal template matcher. The tree also has a Claude Code plugin with macOS and browser control skills. Package.swift requires macOS 27; latest release 1.0.0. The agent was not run.",
+    "details": {
+      "availability": "Swift Package Manager source, Homebrew-installable sagui CLI and GitHub releases",
+      "repository_revision": "37717fa71dfabb0f53d06164d28ef36c1511b491",
+      "release_tag": "1.0.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/NakaokaRei/SwiftAutoGUI",
+        "sha256": "c257348fb285f59e8deb83e07cb63000d2e9ae05148fd6d385278d9b59748a04",
+        "retrieved_at": "2026-10-18T15:39:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/NakaokaRei/SwiftAutoGUI/git/trees/37717fa71dfabb0f53d06164d28ef36c1511b491?recursive=1",
+        "sha256": "3553e3a6f6a902e19e60a3bbee51a878390d3be12b83a95199c357a69c468781",
+        "retrieved_at": "2026-10-18T15:39:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/NakaokaRei/SwiftAutoGUI/37717fa71dfabb0f53d06164d28ef36c1511b491/Sources/SwiftAutoGUI/Actions/AgentAutomationBackend.swift",
+        "sha256": "4398e06086a60f09bea685019427b4e2b7f9eb5f16f5714c38d88e742325bbb0",
+        "retrieved_at": "2026-10-18T15:39:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/NakaokaRei/SwiftAutoGUI/37717fa71dfabb0f53d06164d28ef36c1511b491/Sources/SwiftAutoGUIBrowser/BrowserSession.swift",
+        "sha256": "9d0de0ff5dcfeab10d35cd602bb42f55fb4cc2563f9a285180dfb06346497720",
+        "retrieved_at": "2026-10-18T15:39:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/NakaokaRei/SwiftAutoGUI/37717fa71dfabb0f53d06164d28ef36c1511b491/Package.swift",
+        "sha256": "8c8cce722ef0ef36b8d02a3a288081a81c2df4732a9f8705c3ff441804d0003c",
+        "retrieved_at": "2026-10-18T15:39:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/NakaokaRei/SwiftAutoGUI/37717fa71dfabb0f53d06164d28ef36c1511b491/LICENSE",
+        "sha256": "a1e76d4c9c28f8bffbbc613dcef8b6d882ff2b00303b5cc0d05f151c97301076",
+        "retrieved_at": "2026-10-18T15:39:16Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6cba7bb04cf3cd225907f063c502839b42f005700c70c43de8d81ad758e64a1b",
+    "reviewed_at": "2026-10-18T15:39:48Z"
   }
 ]

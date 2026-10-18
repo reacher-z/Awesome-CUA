@@ -63143,5 +63143,104 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "DSHBox",
+    "kind": "agent",
+    "url": "https://github.com/WSK-build/DSHBox",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "scope": "adjacent",
+    "summary": "Android app that runs the DeepSeek Harness agent locally in a PRoot Debian sandbox and gives it a WebView browser CLI and a phone assistant that operates native apps via Accessibility and Shizuku backends.",
+    "verify_terms": [
+      "DSHBox"
+    ],
+    "notes": "Adjacent: the app's main job is hosting DeepSeek Harness (DSH), a coding-agent runtime, on Android 10+ ARM64 without root or Termux, alongside a terminal and file manager; the GUI executors are bundled tools that DSH chooses between. The browser workspace exposes 24 tools through a bundled browser-use plugin and a sandbox browser CLI (observe, locate, click on screenshot coordinates, type, scroll, screenshot, plus opt-in CDP debugging). Pilot, the phone assistant, lists 39 capabilities and reaches the app layer through a file-based mailbox; its vendored interlock-relay core has an Accessibility backend (node actions and gestures on the default display), a Shizuku shell backend that can also act on a background virtual display, and direct platform calls, behind approval gates. The README declares GPL v3 for the project; pilot/NOTICE marks interlock-relay-core as Apache-2.0 and the DSHBox adapter as GPL-3.0, and PRoot, Debian and other components keep their own terms. README.md is in Chinese and README.en.md in English. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WSK-build/DSHBox/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Kotlin/JavaScript source and APK releases for Android 10+ ARM64; Debian and Node.js are fetched or imported on first run, and DSH needs its own model provider setup.",
+      "repository_revision": "0b429b442004b901aac81dfeb8e81e12564d1cf1",
+      "repository_tree_sha": "9cb5c0a8cfba43f37550f9900b930330160a887d"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/WSK-build/DSHBox/git/commits/0b429b442004b901aac81dfeb8e81e12564d1cf1",
+        "sha256": "df1251e23881fd1e86633827566179d347398f163abdec1cf844ba8745f38102",
+        "retrieved_at": "2026-10-18T15:45:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments",
+          "scope"
+        ],
+        "url": "https://raw.githubusercontent.com/WSK-build/DSHBox/0b429b442004b901aac81dfeb8e81e12564d1cf1/README.en.md",
+        "sha256": "769307be59ac76df4d91c5ed8fb7bd5961b2a93a67e327880d70bde7dabe5597",
+        "retrieved_at": "2026-10-18T15:45:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WSK-build/DSHBox/0b429b442004b901aac81dfeb8e81e12564d1cf1/pilot/interlock-relay-core/src/main/java/interlock/relay/core/exec/a11y/A11yBackend.kt",
+        "sha256": "b9141af5d128fbd2f787515094928761591c86fe3964ae3a966617eda59bd82b",
+        "retrieved_at": "2026-10-18T15:45:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WSK-build/DSHBox/0b429b442004b901aac81dfeb8e81e12564d1cf1/browser/browser-bridge/src/main/assets/browser/lib/browser-cli.cjs",
+        "sha256": "ca8f977a38b7f5bbb8225de2d98485d4bb2311b86fef443d3428839a60f58eab",
+        "retrieved_at": "2026-10-18T15:45:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WSK-build/DSHBox/0b429b442004b901aac81dfeb8e81e12564d1cf1/pilot/NOTICE",
+        "sha256": "c4f29f4d44fb98c326d5434029554565ed83c38c97e67b35d5e4c0674e3eb680",
+        "retrieved_at": "2026-10-18T15:45:22Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a324853986002f902cedd37fbfa2fe4316d5de44a85de949755fb0a4e8ffa4ab",
+    "reviewed_at": "2026-10-18T15:45:48Z"
   }
 ]

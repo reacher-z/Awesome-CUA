@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "decision": "out_of_scope",
+    "reason": "vLLM is a general library for serving and running inference on language and multimodal models through an OpenAI-compatible API. It has no GUI, browser or device interaction of its own, and ScaleCUA's README links it only as the server for deploying its models.",
+    "reviewed_at": "2026-10-18T15:33:34Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/HEAD/README.md",
+      "sha256": "4dc7399323b9660117f8cc1226afb7a81cdbb912dbb4ae74b66d89052417d11c",
+      "retrieved_at": "2026-10-18T12:29:37Z"
+    }
   }
 ]

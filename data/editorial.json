@@ -63143,5 +63143,120 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OSWorld file cache (Ubuntu)",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation"
+    ],
+    "summary": "Hub-hosted copy of the files that OSWorld's Ubuntu task configurations download for task setup and evaluation, organized by application and task ID after their migration from Google Drive.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "OSWorld File Cache"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/raw/1e112283c4ecb08d6fed8069bca7de74fa2f12aa/README.md"
+    ],
+    "component_of": "https://github.com/xlang-ai/OSWorld",
+    "documented_by": [
+      "2404.07972"
+    ],
+    "notes": "Adjacent: a file host that the curated OSWorld benchmark depends on, not a benchmark or training set by itself. OSWorld task JSON (for example os/5c1075ca, which fetches setup.sh and eval.sh) points at this repository. The Hub API at revision 1e112283 reports an ungated repository with 720 files, most of them in application/task-ID folders, plus a fonts archive. The card metadata declares Apache-2.0, while its License section says the files follow the original OSWorld project's terms.",
+    "details": {
+      "hub_id": "xlangai/ubuntu_osworld_file_cache",
+      "hub_revision": "1e112283c4ecb08d6fed8069bca7de74fa2f12aa",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/tree/main",
+      "repository_url": "https://github.com/xlang-ai/OSWorld",
+      "dataset_profile": {
+        "supervision": [
+          "task setup and evaluation assets"
+        ],
+        "modalities": [
+          "images",
+          "documents",
+          "spreadsheets",
+          "presentations",
+          "audio and video",
+          "scripts"
+        ],
+        "formats": [
+          "original application file formats",
+          "archives"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 720,
+            "unit": "files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 1e112283",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_file_cache"
+          },
+          {
+            "value": 262,
+            "unit": "application/task-ID folders",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 1e112283",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_file_cache"
+          }
+        ],
+        "notes": "Counts come from the Hub file manifest. A task folder is not an OSWorld task definition, and not every OSWorld task has a folder here. Files were not downloaded.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_file_cache",
+          "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/raw/1e112283c4ecb08d6fed8069bca7de74fa2f12aa/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_file_cache",
+        "sha256": "064fcc8dd91932dccbb0257be254fe5a95b95f369fb3d41ca2c169413cc424cf",
+        "retrieved_at": "2026-10-18T11:46:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld/b138d348256078fa634fc3b73567a7337c793e6b/evaluation_examples/examples/os/5c1075ca-bb34-46a3-a7a0-029bd7463e79.json",
+        "sha256": "6b57e8b32c048a252d8076fc280bf029f869e99e2938530ff78087aa7fdce410",
+        "retrieved_at": "2026-10-18T11:46:05Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "23b49d5e9a3c5cdcba990640ccf271d35411cc51ff85c18771a9f74b9d351944",
+    "reviewed_at": "2026-10-18T11:46:29Z"
   }
 ]

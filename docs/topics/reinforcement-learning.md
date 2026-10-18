@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -60,6 +60,7 @@ All entries in this section: web.
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) | cross-platform | [2604.11784](https://arxiv.org/abs/2604.11784) (2026) | code Apache-2.0 | Framework for GUI agent training, evaluation, and deployment. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/ClawGUI/HEAD/README.md) |
 | [ComputerRL](https://github.com/THUDM/ComputerRL) | desktop | [2508.14040](https://arxiv.org/abs/2508.14040) (2025) | code Apache-2.0 | Reinforcement-learning infrastructure for computer-use agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/ComputerRL/HEAD/README.md) |
+| [DART-GUI](https://github.com/Computer-use-agents/dart-gui) | desktop, linux | [2509.23866](https://arxiv.org/abs/2509.23866) (2025) | code Apache-2.0 | Code for DART's decoupled multi-turn RL of GUI agents: a verl-based asynchronous trainer, a screenshot rollout service for remote OSWorld Ubuntu desktops, task lists and MySQL schemas for rollouts and checkpoints. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Computer-use-agents/dart-gui/HEAD/README.md) |
 | [Digi-Q](https://github.com/DigiRL-agent/digiq) | android | [2502.15760](https://arxiv.org/abs/2502.15760) (2025) | — | Offline device-control training code that learns action values and uses them to select promising actions, with linked trajectories and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digiq/HEAD/README.md) |
 | [DigiRL](https://github.com/DigiRL-agent/digirl) | android | [2406.11896](https://arxiv.org/abs/2406.11896) (2024) | code Apache-2.0 | Reinforcement learning for autonomous mobile device control. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digirl/HEAD/README.md) |
 | [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |

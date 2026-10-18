@@ -26925,7 +26925,7 @@
     "verify_terms": [
       "Miaosen/Grounding-Anything-GUI"
     ],
-    "notes": "The Hub exposes train.zip and a card containing only license/language metadata. The official repository marks this training-data release complete, but its Phi-Ground-Any paper is still pending. No binding to the earlier Phi-Ground paper, sample count, split structure or operating-system coverage is inferred.",
+    "notes": "The Hub exposes train.zip and a card containing only license/language metadata. The official repository lists this archive as the training data of the Phi-Ground-Any model; its checklist still marks the Phi-Ground-Any paper as pending, but the Phi-Ground-Any model card links arXiv 2605.12501 as that model's paper. No sample count is taken from that paper, because the archive's coverage of the paper's training corpus is not established. No binding to the earlier Phi-Ground paper, split structure or operating-system coverage is inferred.",
     "evidence_urls": [
       "https://huggingface.co/api/datasets/Miaosen/Grounding-Anything-GUI"
     ],
@@ -26937,6 +26937,11 @@
         "type": "component_of",
         "target_id": "github:microsoft/phi-ground",
         "evidence_url": "https://raw.githubusercontent.com/microsoft/Phi-Ground/HEAD/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2605.12501",
+        "evidence_url": "https://huggingface.co/microsoft/Phi-Ground-Any/raw/081399127fd191906edf46a98f3d8d5193e328c2/README.md"
       }
     ],
     "additional_evidence": [
@@ -26961,6 +26966,17 @@
         "url": "https://raw.githubusercontent.com/microsoft/Phi-Ground/HEAD/README.md",
         "sha256": "a0609394a736dc495d077cd57a2945b018123e5b3f9514d7d5bafb9e690aeae2",
         "retrieved_at": "2026-10-16T06:36:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://huggingface.co/microsoft/Phi-Ground-Any/raw/081399127fd191906edf46a98f3d8d5193e328c2/README.md",
+        "sha256": "666e12200e5700ad3243fcdcfa3621db587e7d5b95be3315ef79b6c4f880a7e4",
+        "retrieved_at": "2026-10-18T15:48:59Z"
       }
     ],
     "details": {

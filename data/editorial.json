@@ -63143,5 +63143,66 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Scout",
+    "kind": "agent",
+    "url": "https://github.com/outcrawlai/scout",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "TypeScript browser agent that drives any Chromium over CDP in a look-act-check loop, with separate user-chosen hands, brain, eyes and extract models and optional JSON Schema answers.",
+    "scope": "core",
+    "verify_terms": [
+      "Scout"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/outcrawlai/scout/HEAD/README.md"
+    ],
+    "notes": "Published by Outcrawl; the GitHub description calls the repository an automatic mirror of Outcrawl's production repository. Packages: scout (entry point), runtime (agent loop), model (prompts and provider-neutral clients), scout-core, scout-cdp (DevTools-protocol driver) and agenthands (local pointer and keyboard planning). It runs against a local browser, any CDP endpoint or Outcrawl's hosted browser, which needs an Outcrawl key and adds residential connections, captcha solving and replays. The README's 92.5% page reach on Browser Use's 80-site benchmark is publisher-reported and was not reproduced. Root code is Apache-2.0; packages/agenthands keeps its own MIT license. Code was read, not run.",
+    "details": {
+      "availability": "Public source and the @outcrawl/scout npm package; the optional hosted browser is a metered Outcrawl service with a free monthly credit allowance",
+      "package_version": "0.1.1"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/outcrawlai/scout/HEAD/packages/scout/package.json",
+        "sha256": "5c700791379c0c8cf01ceaf6da226a13b96ad40decdad0cb0b4222f100b851ff",
+        "retrieved_at": "2026-10-18T11:51:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/outcrawlai/scout/HEAD/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-18T11:51:54Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "11cc1b3f60502973ba833fbcc83e5159c6751ba3b94a1cdd5496008d4cf398fe",
+    "reviewed_at": "2026-10-18T11:52:11Z"
   }
 ]

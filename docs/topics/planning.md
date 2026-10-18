@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (18)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -65,6 +65,7 @@
 | [PC-Agent](https://github.com/GAIR-NLP/PC-Agent) | desktop | [2412.17589](https://arxiv.org/abs/2412.17589) (2024) | code MIT | Human-cognition-transfer framework for PC agents: PC Tracker logs human computer use, cognition completion turns logs into cognitive trajectories, and a planner works with a grounding agent. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent/HEAD/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| [Scout](https://github.com/outcrawlai/scout) | web | — | code Apache-2.0 | TypeScript browser agent that drives any Chromium over CDP in a look-act-check loop, with separate user-chosen hands, brain, eyes and extract models and optional JSON Schema answers. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/outcrawlai/scout/HEAD/README.md) |
 | [ScreenAgent](https://github.com/niuzaisheng/ScreenAgent) | desktop | [2402.07945](https://arxiv.org/abs/2402.07945) (2024) | — | Environment and agent in which a vision-language model controls real desktops over VNC with mouse and keyboard in plan, act and reflect stages, plus a hand-annotated dataset of daily computer tasks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/niuzaisheng/ScreenAgent/HEAD/README.md) |
 | [UFO](https://github.com/microsoft/UFO) | windows, desktop | [2402.07939](https://arxiv.org/abs/2402.07939) (2024) | — | Windows agent framework for application and desktop automation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/UFO/HEAD/README.md) |
 | [VisionTasker](https://github.com/AkimotoAyako/VisionTasker) | android | [2312.11190](https://arxiv.org/abs/2312.11190) (2023) | code GPL-3.0 | An Android automation implementation that translates screenshot-based UI understanding into language descriptions for step-by-step LLM planning and action execution. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/readme.md) |

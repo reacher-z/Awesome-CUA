@@ -2805,12 +2805,49 @@
           "pixel (x,y) cursor coordinate"
         ],
         "evaluation": "The inspected evaluator scales target boxes from a 1000×1000 reference grid into image pixels and tests pixel predictions, allowing ±10 pixels around the center along any target dimension narrower than 1 pixel after scaling. It reports cumulative hit accuracy by turn (earlier hits remain correct), miss distances, any-turn hit rate, and a correction rate whose denominator is all successfully processed samples. The default budget is five turns; retain prompt/feedback variant, turn budget, and processed/skipped coverage.",
-        "counts": [],
-        "notes": "The release has four editor/theme JSONL partitions (Cursor/VS Code × dark/light) and screenshot files. Partitions are not train/test splits or independent task totals. README’s initial field table calls bbox pixel coordinates, but the evaluation-format section and actual ratio_h/ratio_w=dimension/1000 code use normalized target boxes; profile follows the inspected evaluator and retains the inconsistency. Source/images were not executed or downloaded as a dataset. MIT is recorded for repository code only.",
+        "counts": [
+          {
+            "value": 1368,
+            "unit": "instruction–target samples",
+            "qualifier": "exact",
+            "population": "dataset/cursor_dark/combined_data.jsonl at commit bfefa86f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/cursor_dark/combined_data.jsonl"
+          },
+          {
+            "value": 1367,
+            "unit": "instruction–target samples",
+            "qualifier": "exact",
+            "population": "dataset/cursor_light/combined_data.jsonl at commit bfefa86f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/cursor_light/combined_data.jsonl"
+          },
+          {
+            "value": 1329,
+            "unit": "instruction–target samples",
+            "qualifier": "exact",
+            "population": "dataset/vscode_dark/combined_data.jsonl at commit bfefa86f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/vscode_dark/combined_data.jsonl"
+          },
+          {
+            "value": 1326,
+            "unit": "instruction–target samples",
+            "qualifier": "exact",
+            "population": "dataset/vscode_light/combined_data.jsonl at commit bfefa86f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/vscode_light/combined_data.jsonl"
+          }
+        ],
+        "notes": "The release has four editor/theme JSONL partitions (Cursor/VS Code × dark/light) and screenshot files. Partitions are not train/test splits or independent task totals. Counted by script at commit bfefa86f, they hold 1,368, 1,367, 1,329 and 1,326 samples, and every sample in a partition refers to that partition's single screenshot. README’s initial field table calls bbox pixel coordinates, but the evaluation-format section and actual ratio_h/ratio_w=dimension/1000 code use normalized target boxes; profile follows the inspected evaluator and retains the inconsistency. Source/images were not executed or downloaded as a dataset. MIT is recorded for repository code only.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/microsoft/precision-cua-bench/HEAD/README.md",
           "https://raw.githubusercontent.com/microsoft/precision-cua-bench/HEAD/eval/test_allturns_api.py",
-          "https://api.github.com/repos/microsoft/precision-cua-bench/git/trees/main?recursive=1"
+          "https://api.github.com/repos/microsoft/precision-cua-bench/git/trees/main?recursive=1",
+          "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/cursor_dark/combined_data.jsonl",
+          "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/cursor_light/combined_data.jsonl",
+          "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/vscode_dark/combined_data.jsonl",
+          "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/vscode_light/combined_data.jsonl"
         ]
       }
     },
@@ -2863,6 +2900,46 @@
         "supports": [
           "relations"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/cursor_dark/combined_data.jsonl",
+        "sha256": "2b1ab10367a72ea2c0b5e1ff4bdd38a97c4ebdf7c0616ac52fedd224e3663cb7",
+        "retrieved_at": "2026-10-18T15:55:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/cursor_light/combined_data.jsonl",
+        "sha256": "6b3e158ce20e3ec0d2359938c1ae94210a1086bbafe9b7c71ee1b967774b9a41",
+        "retrieved_at": "2026-10-18T15:55:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/vscode_dark/combined_data.jsonl",
+        "sha256": "9d199ca4d6b216237781d5c06d1f1e9dd0f6da2be2ddca0c5b80abcbb10f05c1",
+        "retrieved_at": "2026-10-18T15:55:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/precision-cua-bench/bfefa86fd8ebebfb874baaf6ff9c8bbc806a7251/dataset/vscode_light/combined_data.jsonl",
+        "sha256": "32f16a87c9042d3d9d119b977cf5c3c6e85760812b455594e2d0f338f0b6ed09",
+        "retrieved_at": "2026-10-18T15:55:27Z"
       }
     ],
     "reviewed_relations": [

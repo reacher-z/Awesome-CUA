@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:zhixin-l/tipo",
+    "url": "https://github.com/Zhixin-L/TIPO",
+    "decision": "not_a_resource",
+    "reason": "Dead link: on 2026-10-18 the GitHub page and API both returned 404 with no rename redirect, the owner's two public repositories are other projects, and the Wayback Machine's only captures (April 2026) are 404 pages. arXiv 2604.11259 announces its code and dataset for this address, but nothing has been published there."
   }
 ]

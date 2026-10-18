@@ -63143,5 +63143,148 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:1b2091d717c977d4f8b9",
+    "name": "AMEX dataset release",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Yuxiang007/AMEX",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "mobile-navigation"
+    ],
+    "summary": "Official Hub release of AMEX: Android app screenshots annotated for interactive-element grounding, screen and element functionality, and instructions with stepwise GUI-action chains.",
+    "scope": "core",
+    "verify_terms": [
+      "AMEX"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/Yuxiang007/AMEX/raw/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/README.md"
+    ],
+    "documented_by": [
+      "2407.17490"
+    ],
+    "notes": "The card calls this the official dataset repository of the AMEX paper. The full release sits under AMEX/ as element_anno.zip, instruction_anno.zip and a screenshot archive split into eight 10 GiB parts plus a final zip (about 93.5 GB together); a sample/ folder holds one episode's five screenshots with its annotations. The card adds ScreenSpot mobile-subset and AndroidControl results that are not in the arXiv paper; they are publisher figures and were not reproduced. The card does not link the AMEX-codebase training-code repository (github:yuxiangchai/amex-codebase), so no relation to it is recorded. CC-BY-4.0 is the card's data declaration; that repository's Apache-2.0 code license is separate.",
+    "details": {
+      "hub_id": "Yuxiang007/AMEX",
+      "hub_revision": "17196b29c88dd48a7fb90ef9131bc5c7bf39f26e",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/Yuxiang007/AMEX/tree/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e",
+      "dataset_profile": {
+        "supervision": [
+          "interactive-element grounding",
+          "screen and element functionality descriptions",
+          "instructions with stepwise GUI-action chains"
+        ],
+        "modalities": [
+          "screenshots",
+          "element bounding boxes",
+          "functionality descriptions",
+          "instructions",
+          "actions"
+        ],
+        "formats": [
+          "split ZIP archives",
+          "JSON",
+          "PNG"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 104000,
+            "unit": "screenshots",
+            "population": "AMEX collection described in the arXiv v1 abstract",
+            "evidence_url": "https://arxiv.org/abs/2407.17490v1",
+            "qualifier": "more-than",
+            "basis": "reported"
+          },
+          {
+            "value": 3046,
+            "unit": "instruction episodes",
+            "population": "AMEX/instruction_anno.zip at revision 17196b29 (one JSON file per episode, unique episode_id)",
+            "evidence_url": "https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip",
+            "qualifier": "exact",
+            "basis": "computed"
+          },
+          {
+            "value": 38709,
+            "unit": "action steps",
+            "population": "steps lists of the 3,046 instruction episodes in AMEX/instruction_anno.zip at revision 17196b29",
+            "evidence_url": "https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip",
+            "qualifier": "exact",
+            "basis": "computed"
+          }
+        ],
+        "notes": "Episode and step counts were computed with a script from the instruction archive; screenshots and element annotations were not downloaded, so the screenshot figure is the paper's reported scale. Each step records the action type, touch and lift coordinates, typed text, package name and screenshot path. No train/test split is published.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Yuxiang007/AMEX/raw/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/README.md",
+          "https://huggingface.co/api/datasets/Yuxiang007/AMEX/revision/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e",
+          "https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip",
+          "https://arxiv.org/abs/2407.17490v1"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/Yuxiang007/AMEX/revision/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e",
+        "sha256": "dad2a3226a7c3c2f74998be09f4e989a82bd91cf21b1cbd22211d807cfa91d97",
+        "retrieved_at": "2026-10-18T15:51:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip",
+        "sha256": "673d89f1fee1b3be6ec8c3c380e24768265c04f0ece87d852ff185b05daa585a",
+        "retrieved_at": "2026-10-18T15:51:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/abs/2407.17490v1",
+        "sha256": "0b19217aee442587ec75e7d691d4645f6d6125e82edf0c08ee5670a1a64ddfd8",
+        "retrieved_at": "2026-10-18T15:51:39Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "dbae95ce714b90305b09b8b7a9dd8d01c277f1f6a6d265f8210e9f6bab6a2192",
+    "reviewed_at": "2026-10-18T15:52:13Z"
   }
 ]

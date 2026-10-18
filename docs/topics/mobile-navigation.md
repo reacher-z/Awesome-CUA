@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (14)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -29,6 +29,7 @@
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AMEX dataset release](https://huggingface.co/datasets/Yuxiang007/AMEX) | android | [2407.17490](https://arxiv.org/abs/2407.17490) (2024) | [> 104,000 screenshots](https://arxiv.org/abs/2407.17490v1) · [3,046 instruction episodes](https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip) · [38,709 action steps](https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip) | data cc-by-4.0 | Official Hub release of AMEX: Android app screenshots annotated for interactive-element grounding, screen and element functionality, and instructions with stepwise GUI-action chains. | [✓ 2026‑10‑18](https://huggingface.co/datasets/Yuxiang007/AMEX/raw/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/README.md) |
 | [Android in the Wild](https://github.com/google-research/google-research/tree/master/android_in_the_wild) | android | [2307.10088](https://arxiv.org/abs/2307.10088) (2023) | [715,142 episodes](https://raw.githubusercontent.com/google-research/google-research/master/android_in_the_wild/README.md) · [5,689,993 action examples](https://raw.githubusercontent.com/google-research/google-research/master/android_in_the_wild/README.md) | code Apache-2.0 | Human demonstrations of Android tasks with screenshots and touch actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-research/google-research/master/android_in_the_wild/README.md) |
 | [AndroidControl](https://github.com/google-research/google-research/tree/master/android_control) | android | [2406.03679](https://arxiv.org/abs/2406.03679) (2024) | [> 15,000 demonstrations](https://raw.githubusercontent.com/google-research/google-research/master/android_control/README.md) · [833 applications](https://raw.githubusercontent.com/google-research/google-research/master/android_control/README.md) | code Apache-2.0 | Android demonstrations with high-level goals, step instructions, screenshots, and accessibility trees. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-research/google-research/master/android_control/README.md) |
 | [AutoDroid V2 training data](https://huggingface.co/datasets/BlitherBoom/AutoDroid-V2-Dataset) | android | — | — | data mit | Conversation-formatted supervision released for fine-tuning AutoDroid V2, with the project documenting a ShareGPT-style JSON configuration. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/BlitherBoom/AutoDroid-V2-Dataset) |

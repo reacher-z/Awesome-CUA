@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (33)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -25,6 +25,7 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Aguvis stage 1 grounding data](https://huggingface.co/datasets/xlangai/aguvis-stage1) | cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | — | data apache-2.0 | The first-stage Aguvis training collection, packaging GUI element-grounding annotations and image archives from multiple interface-data sources. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/main/README.md) |
+| [AMEX dataset release](https://huggingface.co/datasets/Yuxiang007/AMEX) | android | [2407.17490](https://arxiv.org/abs/2407.17490) (2024) | [> 104,000 screenshots](https://arxiv.org/abs/2407.17490v1) · [3,046 instruction episodes](https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip) · [38,709 action steps](https://huggingface.co/datasets/Yuxiang007/AMEX/resolve/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/AMEX/instruction_anno.zip) | data cc-by-4.0 | Official Hub release of AMEX: Android app screenshots annotated for interactive-element grounding, screen and element functionality, and instructions with stepwise GUI-action chains. | [✓ 2026‑10‑18](https://huggingface.co/datasets/Yuxiang007/AMEX/raw/17196b29c88dd48a7fb90ef9131bc5c7bf39f26e/README.md) |
 | [Aria-UI Context-aware Data](https://huggingface.co/datasets/Aria-UI/Aria-UI_Context-aware_Data) | android | — | [≈ 992,000 instruction-output pairs](https://raw.githubusercontent.com/AriaUI/Aria-UI/HEAD/README.md) | data apache-2.0 | Episode-based mobile GUI grounding data released with Aria-UI for incorporating interaction history into target localization. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Aria-UI/Aria-UI_Context-aware_Data) |
 | [Aria-UI Data](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data) | web, android, desktop, linux | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | [≈ 2,900,000 instructions](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data/raw/main/README.md) · [≈ 173,000 images](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data/raw/main/README.md) | data apache-2.0 | GUI element descriptions and grounding instructions spanning web, mobile, and Ubuntu desktop interfaces. | [✓ 2026‑10‑16](https://huggingface.co/datasets/Aria-UI/Aria-UI_Data/raw/main/README.md) |
 | [AutoGUI v1 training data](https://huggingface.co/datasets/AutoGUI/AutoGUI-v1-702k) | web, cross-platform | [2502.01977](https://arxiv.org/abs/2502.01977) (2025) | [701,864 training rows](https://huggingface.co/datasets/AutoGUI/AutoGUI-v1-702k/raw/main/README.md) | data cc-by-4.0 | Screenshot-based grounding and captioning samples with UI functionality descriptions, target coordinates, and bounding boxes. | [✓ 2026‑10‑16](https://huggingface.co/datasets/AutoGUI/AutoGUI-v1-702k/raw/main/README.md) |

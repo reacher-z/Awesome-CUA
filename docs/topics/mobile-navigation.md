@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (16)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -59,6 +59,7 @@
 | [MobileRL 9B checkpoint](https://huggingface.co/xuyifan/MobileRL-9B) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | weights apache-2.0 | A GLM-4.1V-based mobile action checkpoint released by the MobileRL project for Android interaction. | [✓ 2026‑10‑17](https://huggingface.co/api/models/xuyifan/MobileRL-9B) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |
+| [OS-Genesis 4B AW](https://huggingface.co/OS-Copilot/OS-Genesis-4B-AW) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights Apache-2.0 | InternVL2-4B checkpoint fine-tuned on OS-Genesis AndroidWorld trajectories; its card prompt pairs a screenshot and accessibility tree with the goal and action history to produce the next thought and action. | [✓ 2026‑10‑18](https://huggingface.co/OS-Copilot/OS-Genesis-4B-AW/raw/004b6a2aced3cde9d57be11508f78d8178ed4d09/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |

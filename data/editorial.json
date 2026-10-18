@@ -63143,5 +63143,117 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "xa11y",
+    "kind": "tool",
+    "url": "https://github.com/xa11y/xa11y",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "scope": "core",
+    "summary": "Rust library with Python and JavaScript bindings that drives native desktop apps through macOS, Windows and Linux accessibility APIs using CSS-like selectors, plus a Strands agent tool built on its tree snapshots.",
+    "verify_terms": [
+      "xa11y"
+    ],
+    "notes": "The Cargo workspace holds xa11y-core, platform providers for macOS (AXUIElement), Windows (UI Automation) and Linux (AT-SPI2), the xa11y umbrella crate, PyO3 and napi bindings (xa11y-python, xa11y-js), a pytest plugin, a fuzzer and test apps. Element actions include press, focus, toggle, expand, select, set_value, type_text and show_menu; the core also captures screenshots and can draw element tags onto them. strands-xa11y gives Strands agents a use_desktop tool and a read-only inspect_desktop tool: a text snapshot of the accessibility tree with refs, actions on refs or selectors, and synthesized keys, mouse, drag, scroll and screenshots as explicit fallbacks. The README also names end-to-end desktop tests and assistive tools as uses. macOS needs Accessibility and Screen Recording permissions; Linux needs AT-SPI2, and synthesized input on Wayland needs /dev/uinput. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xa11y/xa11y/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public source with crates.io, PyPI and npm packages and tagged releases; strands-xa11y is published separately on PyPI.",
+      "repository_revision": "80ada852a482a9f9f6f7e03cbc12d84e50cbc347",
+      "release_tag": "v0.15.2",
+      "package_version": "0.15.2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/xa11y/xa11y/80ada852a482a9f9f6f7e03cbc12d84e50cbc347/Cargo.toml",
+        "sha256": "4aa4319edbfa9cefdf9b82c0e9b99482a9f20b1aa229dd68605853339cd06083",
+        "retrieved_at": "2026-10-18T16:04:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/xa11y/xa11y/80ada852a482a9f9f6f7e03cbc12d84e50cbc347/strands-xa11y/README.md",
+        "sha256": "99d0e02dc5785f0a55d9c5b55c9d9d077011fc7f0c7bd13a378dcaae27708509",
+        "retrieved_at": "2026-10-18T16:04:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xa11y/xa11y/80ada852a482a9f9f6f7e03cbc12d84e50cbc347/strands-xa11y/src/strands_xa11y/_actions.py",
+        "sha256": "337dbf815a8adc01889c613847322b86e6a8666bf7f550145b083a4406fec488",
+        "retrieved_at": "2026-10-18T16:04:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xa11y/xa11y/80ada852a482a9f9f6f7e03cbc12d84e50cbc347/xa11y-core/src/screenshot/annotate.rs",
+        "sha256": "b342a2f1ecc42a1ebbbe7be111efa5097c8d6d7029af88fa14460967d31f9ff3",
+        "retrieved_at": "2026-10-18T16:04:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xa11y/xa11y/80ada852a482a9f9f6f7e03cbc12d84e50cbc347/xa11y-python/Cargo.toml",
+        "sha256": "eed96749377ba838209c5849620f15255b68673834294a8c11de19ceb5fa8747",
+        "retrieved_at": "2026-10-18T16:04:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xa11y/xa11y/80ada852a482a9f9f6f7e03cbc12d84e50cbc347/xa11y-js/Cargo.toml",
+        "sha256": "e55bfceb66c3eba71887c98cdda07dc244c79a5427105782db1954960095d4c2",
+        "retrieved_at": "2026-10-18T16:04:54Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e3051bb7d7c6f38229578ee62a9a37c8e88f6b6c44a0a350628d89282000230c",
+    "reviewed_at": "2026-10-18T16:05:23Z"
   }
 ]

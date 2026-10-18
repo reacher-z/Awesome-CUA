@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-49 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -64,6 +64,7 @@ All entries in this section: desktop, windows, linux.
 | --- | --- | --- | --- | --- | --- |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
+| [xa11y](https://github.com/xa11y/xa11y) | desktop, macos, windows, linux | — | code MIT | Rust library with Python and JavaScript bindings that drives native desktop apps through macOS, Windows and Linux accessibility APIs using CSS-like selectors, plus a Strands agent tool built on its tree snapshots. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xa11y/xa11y/HEAD/README.md) |
 
 ## Infrastructure
 

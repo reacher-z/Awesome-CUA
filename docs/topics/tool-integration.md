@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -73,6 +73,7 @@
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | web | — | code Apache-2.0 | MCP server that lets LLM clients drive Playwright browsers through structured accessibility snapshots instead of screenshots, with opt-in vision, PDF and devtools capabilities. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright-mcp/HEAD/README.md) |
 | [WebMarker](https://github.com/reidbarber/webmarker) | web | — | code MIT | A browser library that labels interactive elements and their boxes for visual prompting, preserving element mappings that automation code can use to execute selected actions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/reidbarber/webmarker/HEAD/README.md) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
+| [xa11y](https://github.com/xa11y/xa11y) | desktop, macos, windows, linux | — | code MIT | Rust library with Python and JavaScript bindings that drives native desktop apps through macOS, Windows and Linux accessibility APIs using CSS-like selectors, plus a Strands agent tool built on its tree snapshots. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xa11y/xa11y/HEAD/README.md) |
 
 ## Infrastructure
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
 
 ## Models
 
@@ -48,6 +48,7 @@ All entries in this section: desktop.
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | web | — | code Apache-2.0 | MCP server that lets LLM clients drive Playwright browsers through structured accessibility snapshots instead of screenshots, with opt-in vision, PDF and devtools capabilities. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright-mcp/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
+| [xa11y](https://github.com/xa11y/xa11y) | desktop, macos, windows, linux | — | code MIT | Rust library with Python and JavaScript bindings that drives native desktop apps through macOS, Windows and Linux accessibility APIs using CSS-like selectors, plus a Strands agent tool built on its tree snapshots. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xa11y/xa11y/HEAD/README.md) |
 
 ## Infrastructure
 

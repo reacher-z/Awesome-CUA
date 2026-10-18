@@ -63143,5 +63143,90 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OS-Genesis web training data",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/OS-Copilot/OS-Genesis-web-data",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "web-navigation",
+      "imitation-learning"
+    ],
+    "summary": "Gated OS-Genesis web release holding one JSONL file of reverse-task-synthesis training trajectories and a screenshot archive, named in the project README as training data for its WA checkpoints.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.hub_id",
+      "details.hub_revision",
+      "details.gated",
+      "details.disabled",
+      "details.download_url",
+      "details.dataset_profile"
+    ],
+    "notes": "Access is auto-gated, so the card body was not read; the Hub API reports MIT in the card metadata for this data release. The manifest at revision 0080190f holds os_genesis_web_training.jsonl and os_genesis_web_screenshots.zip; no record count is asserted. The raw web triples the README links on Google Drive and the separate mobile data release are not part of this asset.",
+    "details": {
+      "hub_id": "OS-Copilot/OS-Genesis-web-data",
+      "hub_revision": "0080190f5d15bae75a018054546edc391f09b384",
+      "gated": "auto",
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/OS-Copilot/OS-Genesis-web-data/tree/0080190f5d15bae75a018054546edc391f09b384",
+      "dataset_profile": {
+        "counts": [],
+        "supervision": [
+          "web action trajectories"
+        ],
+        "modalities": [
+          "screenshots",
+          "text",
+          "actions"
+        ],
+        "formats": [
+          "JSONL",
+          "ZIP"
+        ],
+        "splits": [
+          "web training"
+        ],
+        "notes": "The README pairs this one training file with the 4B, 7B and 8B WA checkpoints; no sample count is inferred from the JSONL file or ZIP packaging.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/OS-Copilot/OS-Genesis-web-data",
+          "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md"
+        ]
+      }
+    },
+    "documented_by": [
+      "2412.19723"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md",
+        "sha256": "430e495ab250395d666854bd18b0fc29b819cd784cd7730215ef65e461834d0d",
+        "retrieved_at": "2026-10-18T15:45:47Z"
+      }
+    ],
+    "reviewed_sha256": "94c7927766c63a5f70f59faf4b50c0b32163228139ab4a3ef2fad64a3c495a0e",
+    "reviewed_at": "2026-10-18T15:46:23Z"
   }
 ]

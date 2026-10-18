@@ -63143,5 +63143,93 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:celestoai/celesto",
+    "name": "Celesto",
+    "kind": "infrastructure",
+    "url": "https://github.com/CelestoAI/celesto",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "sandbox"
+    ],
+    "summary": "Virtual-machine computers for AI agents, run locally or in Celesto Cloud, with command-only, Chromium-over-CDP and Linux desktop runtimes plus Windows 11 and macOS previews, driven by a CLI and Python SDK.",
+    "scope": "core",
+    "verify_terms": [
+      "Celesto"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CelestoAI/celesto/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The package describes itself as a sandbox for computer-using agents over Firecracker, QEMU and libkrun. Browser sessions expose a CDP endpoint, a viewer URL and a display URL for a VNC client or computer-use agent; desktop computers ship Chromium, a terminal, a file manager and a text editor. Windows computers need a Linux host with KVM and a user-built image, and the macOS desktop is a preview limited to Apple Silicon. The repository also holds OpenMuse, a preview computer coworker that browses public websites in a disposable Celesto desktop with action approvals and human takeover; it is not recorded separately. Celesto Cloud is a hosted service with its own terms, and the CLI and SDK send opt-out usage telemetry. Code was read, not run.",
+    "details": {
+      "availability": "Public source and PyPI package; GitHub releases carry a dashboard UI archive and published guest images; Celesto Cloud requires an API key",
+      "repository_revision": "4740edc19b2bd8d23ee445211c6eecf60f9cb8b9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CelestoAI/celesto/4740edc19b2bd8d23ee445211c6eecf60f9cb8b9/docs/guides/computers.md",
+        "sha256": "2dbeb9596a1a6a16e8ef77e6c62863ebc34922c0a8e685409bcc4f9e425b1f0e",
+        "retrieved_at": "2026-10-18T11:59:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CelestoAI/celesto/4740edc19b2bd8d23ee445211c6eecf60f9cb8b9/open-muse/README.md",
+        "sha256": "4247f4be89e48448470b6c26031dc7a38f7f00b5b9ff486ac2db9aecfdf2e769",
+        "retrieved_at": "2026-10-18T11:59:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "scope",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/CelestoAI/celesto/4740edc19b2bd8d23ee445211c6eecf60f9cb8b9/pyproject.toml",
+        "sha256": "03054e6c097993e08ba1b5a48f979e17c7016447704717c9a90d403684f43ed4",
+        "retrieved_at": "2026-10-18T11:59:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/CelestoAI/celesto/4740edc19b2bd8d23ee445211c6eecf60f9cb8b9/LICENSE",
+        "sha256": "71e471613d65fc7d158d3db41c2e23c1b9c2616004b003eff6be42aca572a995",
+        "retrieved_at": "2026-10-18T11:59:21Z"
+      }
+    ],
+    "reviewed_sha256": "00c2cb61dbdf0b1b3a5e5aeaacc67bd2ac10dda7e2609b3c75935d4026cf1b2a",
+    "reviewed_at": "2026-10-18T12:00:06Z"
   }
 ]

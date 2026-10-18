@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (18)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -54,6 +54,7 @@
 | [Agent S](https://github.com/simular-ai/Agent-S) | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/simular-ai/Agent-S/HEAD/README.md) |
 | [AssistGUI](https://github.com/showlab/assistgui) | desktop | — | — | LLM-based assistant for automating work in desktop productivity software by watching the screen and issuing mouse and keyboard commands; its repository says the code will be released later. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/assistgui/HEAD/README.md) |
 | [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/cooelf/Auto-GUI/HEAD/README.md) |
+| [Browser Operator](https://github.com/BrowserOperator/browser-operator-core) | web | — | code BSD-3-Clause | Chromium-based AI browser whose DevTools panel runs a multi-agent framework (web-task, action, form-fill, research and verification agents) over accessibility trees with OpenRouter, OpenAI, Groq or LiteLLM models. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/README.md) |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | web | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
 | [Cradle](https://github.com/BAAI-Agents/Cradle) | desktop | [2403.03186](https://arxiv.org/abs/2403.03186) (2024) | code MIT | Framework in which foundation models control games and software from screenshots alone, acting through keyboard and mouse, shown on RDR2, Stardew Valley, Cities: Skylines and Dealer's Life 2. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/BAAI-Agents/Cradle/HEAD/README.md) |

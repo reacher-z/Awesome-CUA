@@ -63143,5 +63143,103 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Browser Operator",
+    "kind": "agent",
+    "url": "https://github.com/BrowserOperator/browser-operator-core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "memory"
+    ],
+    "summary": "Chromium-based AI browser whose DevTools panel runs a multi-agent framework (web-task, action, form-fill, research and verification agents) over accessibility trees with OpenRouter, OpenAI, Groq or LiteLLM models.",
+    "scope": "core",
+    "verify_terms": [
+      "Browser Operator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/README.md"
+    ],
+    "notes": "The repository is a modified Chrome DevTools frontend (not flagged as a GitHub fork); the AI Chat panel holds the agent framework, accessibility-tree and extraction tools, memory, MCP client and evaluation code, and agent-server is a Node.js HTTP and WebSocket wrapper that sends tasks to agents and captures pages over CDP. The README offers macOS 10.15+ and Windows 10+ builds; the latest release is v0.6.0 (2025-12-11) and the last push was 2026-03-19. The LICENSE is the Chromium Authors' BSD-3-Clause text inherited from DevTools; third_party components keep their own terms. Code was read, not run.",
+    "details": {
+      "availability": "Public source and macOS and Windows browser builds on GitHub releases; models come from the user's provider or a local LiteLLM proxy"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/front_end/panels/ai_chat/agent_framework/implementation/ConfiguredAgents.ts",
+        "sha256": "a6912cb7177b0ec98c4181b067efa6f4d52fa19b189eb644dba53b4c31b36f50",
+        "retrieved_at": "2026-10-18T12:03:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/front_end/panels/ai_chat/Readme.md",
+        "sha256": "53a65ac8d6bccf74ffdcdafa03f9947c5cde0bd21b3d746c904c265027ce5a9d",
+        "retrieved_at": "2026-10-18T12:02:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/agent-server/README.md",
+        "sha256": "95e1d0b3672c8eab9846d4ec299b58817fdd89e4dc4de28bf50ea65654a189a8",
+        "retrieved_at": "2026-10-18T12:02:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/LICENSE",
+        "sha256": "ff11d445fb41a1087c7630e120ab15f1a2cb67c1b707173cb494141805fca35e",
+        "retrieved_at": "2026-10-18T12:02:57Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1d3912f652635cda661e6e7c30d392aa587178d5923b7485620bdfcc2b249d46",
+    "reviewed_at": "2026-10-18T12:03:22Z",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "BSD-3-Clause",
+          "url": "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T12:02:57Z",
+          "basis": "BSD-3-Clause text of The Chromium Authors, written as // comments and inherited from Chrome DevTools; the README states Browser Operator is released under BSD-3-Clause. Covers repository code only; third_party components keep their own licenses."
+        },
+        "reason": "enrich does not recognize the comment-prefixed text, but it is the three-clause BSD license used by Chromium and the README declares BSD-3-Clause; models, browser builds and third-party components are not covered.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/LICENSE"
+        ]
+      }
+    }
   }
 ]

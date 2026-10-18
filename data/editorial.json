@@ -14973,7 +14973,188 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "9c938f8f3f3ee04f459362a8b7d399588fd030ce476cda111e5f23fbf1e31f10",
-    "reviewed_at": "2026-10-16T10:48:36Z"
+    "reviewed_at": "2026-10-16T10:48:36Z",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/LICENSE",
+          "retrieved_at": "2026-10-18T15:57:57Z",
+          "basis": "The root LICENSE is the CC BY-NC 4.0 legal code, and the README's License section says the majority of AgentDAM is CC-BY-NC 4.0; the vendored visualwebarena directory is MIT under its own LICENSE."
+        },
+        "reason": "The root LICENSE is the CC BY-NC 4.0 legal code, and the README's License section says the majority of AgentDAM is CC-BY-NC 4.0; the vendored visualwebarena directory is MIT under its own LICENSE.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/LICENSE",
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/README.md"
+        ]
+      },
+      "data": {
+        "value": {
+          "declared": "CC-BY-NC; Llama 3.1 license terms also apply",
+          "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/README.md",
+          "retrieved_at": "2026-10-18T15:57:57Z",
+          "basis": "The README's License section says the data in agentdam/data is licensed CC-BY-NC for benchmarking purposes, and that the wa_format files are Llama 3.1 output subject to the Llama 3.1 license, including its naming condition for models trained on the data."
+        },
+        "reason": "The README's License section says the data in agentdam/data is licensed CC-BY-NC for benchmarking purposes, and that the wa_format files are Llama 3.1 output subject to the Llama 3.1 license, including its naming condition for models trained on the data.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "details": {
+      "repository_revision": "5d4068a404b624ed24ebbe5fb49ba5f644557912",
+      "benchmark_protocol": {
+        "focus": [
+          "data minimization: not using sensitive personal information a task does not need",
+          "end-to-end web tasks on GitLab, Reddit and shopping sites"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "accessibility trees",
+          "set-of-marks screenshots"
+        ],
+        "actions": [],
+        "evaluation": "With --privacy_test, an LLM judge with a few-shot template checks each agent action against the task's sensitive_data field, and any positive verdict marks the episode as a privacy leakage. Task performance is scored separately by the WebArena evaluator at the end of the episode.",
+        "counts": [
+          {
+            "value": 246,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "AgentDAM benchmark, as the paper (v3) reports",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2503.09780v3"
+          },
+          {
+            "value": 48,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "task_id entries in agentdam/data/wa_format/gitlab_privacy.json at commit 5d4068a",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/gitlab_privacy.json"
+          },
+          {
+            "value": 114,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "task_id entries in agentdam/data/wa_format/reddit_privacy.json",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/reddit_privacy.json"
+          },
+          {
+            "value": 84,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "task_id entries in agentdam/data/wa_format/shopping_privacy.json",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/shopping_privacy.json"
+          }
+        ],
+        "notes": "The three site files hold 246 entries with distinct UID values, matching the paper; task_id restarts at 0 in each file. Runs need self-hosted WebArena GitLab, Reddit and shopping sites; no run was performed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md",
+          "https://arxiv.org/html/2503.09780v3",
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/gitlab_privacy.json",
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/reddit_privacy.json",
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/shopping_privacy.json",
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/run_agentdam.py",
+          "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/privacy_eval.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/README.md",
+        "sha256": "9c938f8f3f3ee04f459362a8b7d399588fd030ce476cda111e5f23fbf1e31f10",
+        "retrieved_at": "2026-10-18T15:57:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/LICENSE",
+        "sha256": "4b531055125dcda36059651634bdb424ad2612f4759b3d2067a731d2823d1cdc",
+        "retrieved_at": "2026-10-18T15:57:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/gitlab_privacy.json",
+        "sha256": "058422b886e2ce5b36a0b1e8097f4e3a1bb206c7ec70253cc90dbd1566dfe7c2",
+        "retrieved_at": "2026-10-18T15:57:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/reddit_privacy.json",
+        "sha256": "15956fc488fc627e6bb44b3f245b34ed16c75e674ecd69f805a18075061680e2",
+        "retrieved_at": "2026-10-18T15:57:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/data/wa_format/shopping_privacy.json",
+        "sha256": "0127c39c4d5ac4b0e92d0407239f19e4a7fdbd67785f9b123afd672d9eec0bce",
+        "retrieved_at": "2026-10-18T15:57:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/run_agentdam.py",
+        "sha256": "b7e3da2524e4d9eabec5f50ea5956d7f9c0fa5417c8fc12b10082bbae7d68667",
+        "retrieved_at": "2026-10-18T15:57:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/5d4068a404b624ed24ebbe5fb49ba5f644557912/agentdam/privacy_eval.py",
+        "sha256": "44056f46b3da88c9faf77a8764205e1220a10f4813e8d1439e39e2223774a72b",
+        "retrieved_at": "2026-10-18T15:57:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2503.09780v3",
+        "sha256": "022df168ad6c701b93bad60c39e11b12602e4c38f64ce6edaa2029ab136aa2df",
+        "retrieved_at": "2026-10-18T15:57:59Z"
+      }
+    ]
   },
   {
     "url": "https://github.com/OSU-NLP-Group/WebDreamer",

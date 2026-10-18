@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:openbmb/ioa",
+    "url": "https://github.com/OpenBMB/IoA",
+    "decision": "out_of_scope",
+    "reason": "Internet of Agents is a framework in which heterogeneous LLM agents such as AutoGPT, Open Interpreter and a ReAct agent register with a server, form nested teams and exchange messages to solve tasks. Its README describes no GUI, browser or device action space of its own, so it is a generic multi-agent orchestration framework rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T11:51:17Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/OpenBMB/IoA/HEAD/README.md",
+      "sha256": "28f5e1812ebe693b4637d6d4e8a9ea81106366e1e18b3ab6d90b683acb18e76f",
+      "retrieved_at": "2026-10-18T11:46:12Z"
+    }
   }
 ]

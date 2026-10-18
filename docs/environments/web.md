@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (38)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -156,6 +156,7 @@
 | [Plan-and-Act](https://github.com/SqueezeAILab/plan-and-act) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | code MIT | A web-agent framework that separates high-level planning from action execution, with replanning and synthetic planner-data generation components. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/SqueezeAILab/plan-and-act/HEAD/README.md) |
 | [Proposer-Agent-Evaluator (PAE)](https://github.com/amazon-science/PAE) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | — | A browser-agent training system that proposes tasks, collects visual interaction trajectories, and uses automated evaluation to drive policy improvement. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/amazon-science/PAE/HEAD/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
+| [ScreenParse Webshot toolkit](https://github.com/Saidgurbuz/screenparse) | web | [2602.14276](https://arxiv.org/abs/2602.14276) (2026) | code MIT | Official ScreenParse code: the Webshot toolkit that renders websites with Playwright, records visible DOM elements as boxed, nested annotations, relabels them with Qwen3-VL, exports YOLO data and evaluates parsers. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
 | [SkillWeaver](https://github.com/OSU-NLP-Group/SkillWeaver) | web | [2504.07079](https://arxiv.org/abs/2504.07079) (2025) | code MIT | A web-agent framework that explores sites, synthesizes reusable interaction APIs and builds a skill library for later tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/SkillWeaver/HEAD/README.md) |

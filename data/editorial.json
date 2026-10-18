@@ -63143,5 +63143,132 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ScreenParse Webshot toolkit",
+    "kind": "framework",
+    "url": "https://github.com/Saidgurbuz/screenparse",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "data-generation",
+      "evaluation"
+    ],
+    "summary": "Official ScreenParse code: the Webshot toolkit that renders websites with Playwright, records visible DOM elements as boxed, nested annotations, relabels them with Qwen3-VL, exports YOLO data and evaluates parsers.",
+    "scope": "core",
+    "verify_terms": [
+      "ScreenParse",
+      "Webshot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2602.14276"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The README calls this the official code release for the ICML 2026 paper and links the ScreenParse dataset and the ScreenVLM and ScreenParser checkpoints on Hugging Face; none of them is stored in this repository, and the only training script, scripts/train.py, trains Ultralytics YOLO detectors. At commit b294659b, webshot/src/webshot/worker.py drives Chromium through Playwright, dismisses cookie banners and overlays, and records each visible DOM element's tag, role, attributes, text, bounding rectangle and parent and child indices with a screenshot; vlm_refine.py and vlm_quality_score.py relabel elements and score annotation quality with Qwen3-VL-8B-Instruct by default through vLLM. The evaluation CLI runs YOLO, RT-DETR, OmniParser weights, Qwen3-VL, InternVL3, Gemini, PaddleOCR-VL and ScreenVLM on YOLO-format, GroundCUA or ScreenSpot data and reports PageIoU, label PageIoU, mAP, recall and NED. The Webshot README's 771K-screenshot and 21M-element figures describe the dataset and were not checked here. MIT covers this code only; dataset and checkpoint terms are declared on their own Hub pages.",
+    "details": {
+      "repository_revision": "b294659b87fb75f3fd4964310fd2039d385749b3",
+      "repository_tree_sha": "7643cfa0696153a9173be8a2a9070250b4b761d8",
+      "availability": "Public Webshot generation, refinement, export, YOLO training and evaluation source; the dataset and the ScreenVLM and ScreenParser checkpoints are separate Hugging Face releases."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/Saidgurbuz/screenparse/git/trees/b294659b87fb75f3fd4964310fd2039d385749b3?recursive=1",
+        "sha256": "4fc52981fb4436b08410dc6804fc402abf7e2846aa0a497a25a2bb30247304d3",
+        "retrieved_at": "2026-10-18T15:41:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/Saidgurbuz/screenparse/git/commits/b294659b87fb75f3fd4964310fd2039d385749b3",
+        "sha256": "05221bb76e826548ffe50c72de35d14dfcf84cac210332e8b1d61bd7d1a408e2",
+        "retrieved_at": "2026-10-18T15:41:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/webshot/README.md",
+        "sha256": "8230a72807ba5a42426b0c37bc9f622535757217639e563052d5376a9457387b",
+        "retrieved_at": "2026-10-18T15:41:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/webshot/src/webshot/worker.py",
+        "sha256": "4b946c642e62e51ca74223882486f8ea14d60615a3b0c864f81ccead16b6c4cb",
+        "retrieved_at": "2026-10-18T15:41:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/webshot/src/webshot/vlm_refine.py",
+        "sha256": "bbe1e8d6480be763a960acf26233371436a8c7d56fa1e9453941ddc8e7397125",
+        "retrieved_at": "2026-10-18T15:41:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/webshot/src/webshot/cli.py",
+        "sha256": "46668f27c02bfb2e72e5e46d367da7edae0a92bc96e6d11eb3ac3e162d03ae6f",
+        "retrieved_at": "2026-10-18T15:41:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/webshot/src/evaluation/cli.py",
+        "sha256": "3926f452b0ab3d851f4bfb51dd19a9cb9f69a27884af627955a8bf6ebf44ae08",
+        "retrieved_at": "2026-10-18T15:41:51Z"
+      }
+    ],
+    "reviewed_sha256": "50b7a84830bcbbbe8ace25b163f42df2ede1accd6fccd3b84de807c4cea022c5",
+    "reviewed_at": "2026-10-18T15:42:37Z"
   }
 ]

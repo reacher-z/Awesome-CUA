@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -97,6 +97,7 @@ All entries in this section: android.
 | [Plan-and-Act](https://github.com/SqueezeAILab/plan-and-act) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | code MIT | A web-agent framework that separates high-level planning from action execution, with replanning and synthetic planner-data generation components. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/SqueezeAILab/plan-and-act/HEAD/README.md) |
 | [Proposer-Agent-Evaluator (PAE)](https://github.com/amazon-science/PAE) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | — | A browser-agent training system that proposes tasks, collects visual interaction trajectories, and uses automated evaluation to drive policy improvement. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/amazon-science/PAE/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
+| [ScreenParse Webshot toolkit](https://github.com/Saidgurbuz/screenparse) | web | [2602.14276](https://arxiv.org/abs/2602.14276) (2026) | code MIT | Official ScreenParse code: the Webshot toolkit that renders websites with Playwright, records visible DOM elements as boxed, nested annotations, relabels them with Qwen3-VL, exports YOLO data and evaluates parsers. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/README.md) |
 | [SkillWeaver](https://github.com/OSU-NLP-Group/SkillWeaver) | web | [2504.07079](https://arxiv.org/abs/2504.07079) (2025) | code MIT | A web-agent framework that explores sites, synthesizes reusable interaction APIs and builds a skill library for later tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/SkillWeaver/HEAD/README.md) |
 | [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (18)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
 
 ## Benchmarks
 
@@ -141,6 +141,7 @@ All entries in this section: web.
 | [HUD](https://github.com/hud-evals/hud-python) | web, desktop | — | code MIT | SDK for RL environments and evals spanning coding, browser, computer-use and robotics agents, whose environments expose SSH, MCP, CDP or VNC capabilities behind a minimal start-and-grade protocol. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hud-evals/hud-python/HEAD/README.md) |
 | [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | code Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/HEAD/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
+| [ScreenParse Webshot toolkit](https://github.com/Saidgurbuz/screenparse) | web | [2602.14276](https://arxiv.org/abs/2602.14276) (2026) | code MIT | Official ScreenParse code: the Webshot toolkit that renders websites with Playwright, records visible DOM elements as boxed, nested annotations, relabels them with Qwen3-VL, exports YOLO data and evaluates parsers. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
 | [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |

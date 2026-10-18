@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (2)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -65,11 +65,10 @@
 
 ## Frameworks
 
-All entries in this section: cross-platform.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Seg2Click](https://github.com/jcwang0602/Seg2Click) | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | code MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/jcwang0602/Seg2Click/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ScreenParse Webshot toolkit](https://github.com/Saidgurbuz/screenparse) | web | [2602.14276](https://arxiv.org/abs/2602.14276) (2026) | code MIT | Official ScreenParse code: the Webshot toolkit that renders websites with Playwright, records visible DOM elements as boxed, nested annotations, relabels them with Qwen3-VL, exports YOLO data and evaluates parsers. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Saidgurbuz/screenparse/b294659b87fb75f3fd4964310fd2039d385749b3/README.md) |
+| [Seg2Click](https://github.com/jcwang0602/Seg2Click) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | code MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/jcwang0602/Seg2Click/HEAD/README.md) |
 
 ## Tools
 

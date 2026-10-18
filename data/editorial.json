@@ -2691,6 +2691,85 @@
     "reviewed_at": "2026-10-16T06:35:59Z",
     "documented_by": [
       "2506.00618"
+    ],
+    "details": {
+      "repository_revision": "e717e7f2eab9f4cc0a2ceb552927ffb5233d4861",
+      "benchmark_protocol": {
+        "focus": [
+          "computer-use agent safety risk",
+          "phishing, pop-up, account-fraud and reCAPTCHA scenarios",
+          "risky operating-system, file and code requests"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots",
+          "accessibility trees",
+          "screenshots with accessibility trees",
+          "set-of-marks screenshots"
+        ],
+        "actions": [
+          "pyautogui actions"
+        ],
+        "evaluation": "Each task configuration pairs an OSWorld-style evaluator with a separate risk_evaluator; the README's multi_evaluation.sh pipeline uses an LLM judge to assess agent intentions.",
+        "counts": [
+          {
+            "value": 492,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "risk task IDs indexed by evaluation_risk_examples/test_risk.json at commit e717e7f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/evaluation_risk_examples/test_risk.json"
+          },
+          {
+            "value": 15,
+            "unit": "risk categories",
+            "qualifier": "exact",
+            "population": "risk task IDs indexed by evaluation_risk_examples/test_risk.json at commit e717e7f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/evaluation_risk_examples/test_risk.json"
+          }
+        ],
+        "notes": "Each of the 492 indexed IDs has its own task configuration file in the category folders of the inspected tree; the linked paper's abstract states the same task total. Phishing email, reCAPTCHA and account scenarios need locally configured accounts, keys and services.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/yjyddq/RiOSWorld/HEAD/README.md",
+          "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/evaluation_risk_examples/test_risk.json",
+          "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/run.py",
+          "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/evaluation_risk_examples/os/os_00.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/evaluation_risk_examples/test_risk.json",
+        "sha256": "5365c8ce96d4a8675f6f58c27a4dcafd5b8f6c79e23cb9b77e0b321fd7a39777",
+        "retrieved_at": "2026-10-18T15:34:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/run.py",
+        "sha256": "d09a5a2a4a6d3e6318be16111701695b59a3d24407c1dcec3fb0631129ad1eb5",
+        "retrieved_at": "2026-10-18T15:34:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/yjyddq/RiOSWorld/e717e7f2eab9f4cc0a2ceb552927ffb5233d4861/evaluation_risk_examples/os/os_00.json",
+        "sha256": "ed8956047c8dbbfe3da4e119e902cf9a471f9e745bba4c7f3ef6db170d3f51f8",
+        "retrieved_at": "2026-10-18T15:34:55Z"
+      }
     ]
   },
   {

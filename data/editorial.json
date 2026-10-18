@@ -63143,5 +63143,153 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:testtesta6/visiondroid",
+    "name": "VisionDroid",
+    "kind": "agent",
+    "url": "https://github.com/testtestA6/VisionDroid",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Prototype Android GUI-testing code in which an LLM explores an app from its view hierarchy through adb, then a vision model checks widget-annotated screenshots of the path for non-crash functional bugs.",
+    "scope": "core",
+    "verify_terms": [
+      "VisionDroid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/testtestA6/VisionDroid/HEAD/README.md"
+    ],
+    "notes": "Code released for the VisionDroid approach in version 1 of arXiv 2407.03037, whose PDF links this repository; version 2 renames the approach Trident and describes three agents, which this code does not reflect. The explorer prompts a text-only chat model with the activity and widgets read from the uiautomator2 hierarchy and acts with adb taps and back presses; a separate script draws numbered boxes of enabled widgets on the saved screenshots, which the detector sends to a GPT-4 vision endpoint. Although the README names Appium, the inspected code drives the device through uiautomator2 and adb, keeps placeholder API keys and model names, and hard-codes a Windows adb path. The repository also holds a pilot-study bug-report spreadsheet and a table of Google Play apps whose reported bugs were confirmed or fixed. It was last pushed in April 2024 and has no license file.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_url": "https://github.com/testtestA6/VisionDroid",
+      "repository_revision": "3cc7dc097306ce4c8495fdcd09b04e04c3a7c98a"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/testtestA6/VisionDroid",
+        "sha256": "501c7b5f5eb01bf71c538b8c23ef355e7d6cba1f62f91622b84a7145d0788228",
+        "retrieved_at": "2026-10-18T12:27:19Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/testtestA6/VisionDroid/git/trees/main?recursive=1",
+        "sha256": "268968055d123aa28681f754295d40a937ffcb543921def3ac173b1c5a3b27df",
+        "retrieved_at": "2026-10-18T12:27:20Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "notes",
+          "licenses.code"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/testtestA6/VisionDroid/3cc7dc097306ce4c8495fdcd09b04e04c3a7c98a/VisionDroid%20Code/main.py",
+        "sha256": "707fd367363347b8af67fb286d673d6be6d14b87831c9cf6dd0f3d1d2e49189d",
+        "retrieved_at": "2026-10-18T12:27:21Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/testtestA6/VisionDroid/3cc7dc097306ce4c8495fdcd09b04e04c3a7c98a/VisionDroid%20Code/cmd.py",
+        "sha256": "a74b092439d9e5627d349283bcb180c1627a5cf3e8fd8d32271ba9087da7bcc0",
+        "retrieved_at": "2026-10-18T12:27:21Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/testtestA6/VisionDroid/3cc7dc097306ce4c8495fdcd09b04e04c3a7c98a/VisionDroid%20Code/graph.py",
+        "sha256": "c084b34afe7413dfd51a3b098d8e15de58878b41a924fda626ae44bad97576b4",
+        "retrieved_at": "2026-10-18T12:27:21Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/testtestA6/VisionDroid/3cc7dc097306ce4c8495fdcd09b04e04c3a7c98a/VisionDroid%20Code/process_image.py",
+        "sha256": "22ce18ac9fd67e61b0b03862d88e5eb7bf0fd97e4b9f20bcea0e32f4a279cd93",
+        "retrieved_at": "2026-10-18T12:27:21Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/testtestA6/VisionDroid/3cc7dc097306ce4c8495fdcd09b04e04c3a7c98a/VisionDroid%20Code/detector.py",
+        "sha256": "0004aea4863c2a10e6598552ac6861af393944a66c0dcb712b7a3ba997c95692",
+        "retrieved_at": "2026-10-18T12:27:21Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://arxiv.org/pdf/2407.03037v1",
+        "sha256": "0ac500f9b9c84d093c012e04581eb540edd95a2913195f6213831cebcd873496",
+        "retrieved_at": "2026-10-18T12:27:21Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2407.03037",
+        "evidence_url": "https://arxiv.org/pdf/2407.03037v1"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No license file appears in the inspected non-truncated tree, and the README and GitHub metadata declare no license.",
+        "evidence_urls": [
+          "https://api.github.com/repos/testtestA6/VisionDroid/git/trees/main?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5d6d1b02d4decd06754440ba92edb7f52ccb6f9aabc4c40721c8fe559d6edee8",
+    "reviewed_at": "2026-10-18T12:28:02Z"
   }
 ]

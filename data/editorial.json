@@ -63143,5 +63143,129 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:turixai/turix-cua",
+    "name": "TuriX CUA",
+    "kind": "agent",
+    "url": "https://github.com/TurixAI/TuriX-CUA",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "cross-app",
+      "planning",
+      "memory"
+    ],
+    "summary": "macOS desktop agent whose brain and actor models read screenshots and issue pixel clicks, drags, typing, hotkeys, app launches and AppleScript while a memory model condenses history; Windows and Linux use other branches.",
+    "scope": "core",
+    "verify_terms": [
+      "TuriX"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The main branch is macOS-only: Quartz mouse events, pyautogui and pynput input, an Accessibility-tree builder and an optional planner with markdown skills. The tree builder can draw numbered element boxes, but src/agent/service.py sends the plain screen capture to the brain and actor and only text to the memory model. The README sends Windows and Linux users to the multi-agent-windows and multi-agent-linux branches, which were not inspected; the main tree has no MCP server. Default brain and actor models are TuriX-hosted endpoints; Ollama and other LangChain providers are configurable. The README's OSWorld 64.2% and Mac-benchmark 80% figures are publisher-reported and were not reproduced. The MIT LICENSE names Gregor Zunic (2024) and NGT-LTD (2025). Code was read, not run.",
+    "details": {
+      "availability": "Public source and tagged releases without binary assets; a packaged app is offered from the publisher site",
+      "release_tag": "v0.4",
+      "repository_revision": "88c777bddfec9796667445873886a3563aa27246",
+      "repository_tree_sha": "f7c87a5b598d82a2a245637464be422c4d549236"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/TurixAI/TuriX-CUA",
+        "sha256": "75a89fc3fec7e6d5038384630b92ce501ad6124ba281d95d06c55ca0de7c94f0",
+        "retrieved_at": "2026-10-18T11:31:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/TurixAI/TuriX-CUA/git/trees/88c777bddfec9796667445873886a3563aa27246?recursive=1",
+        "sha256": "a135dd5b82c975676c43947ec95b151ed856cc39fb5c93ac583501925b728562",
+        "retrieved_at": "2026-10-18T11:31:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/88c777bddfec9796667445873886a3563aa27246/src/controller/service.py",
+        "sha256": "9363bc6fc925f5e66b73c41f4c971f2264ba05e51e673a901202725910fa8283",
+        "retrieved_at": "2026-10-18T11:31:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/88c777bddfec9796667445873886a3563aa27246/src/mac/actions.py",
+        "sha256": "f4722cb11d01e7e80bdda6f28360ae1f608e96d6f06d2cf47b60543e1c6a717a",
+        "retrieved_at": "2026-10-18T11:31:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/88c777bddfec9796667445873886a3563aa27246/src/agent/service.py",
+        "sha256": "f527b26559c6f18f39886223192d9b557caefc80b2539b8b7fa742e78599f109",
+        "retrieved_at": "2026-10-18T11:58:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/TurixAI/TuriX-CUA/releases/latest",
+        "sha256": "43c7bda4528d3857a280014c042e22e243573c61fa74bbfca1bba69e5b4f7464",
+        "retrieved_at": "2026-10-18T11:31:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/88c777bddfec9796667445873886a3563aa27246/LICENSE",
+        "sha256": "38056696d0db54dc515e510d6e4ca656db9ec97f5a3c4eba0fd24453352248a2",
+        "retrieved_at": "2026-10-18T11:31:28Z"
+      }
+    ],
+    "reviewed_sha256": "9ac2fc65ce0bab91f200332b50007961dfd461f17ed1a61c0ff27c9123fe02fe",
+    "reviewed_at": "2026-10-18T11:32:12Z"
   }
 ]

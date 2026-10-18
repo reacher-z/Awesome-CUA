@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-4 source-reviewed resources tagged `history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+5 source-reviewed resources tagged `history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Index](https://github.com/lmnr-ai/index) | — | code Apache-2.0 | Archived Laminar browser agent in Python that drives Playwright Chromium with vision-capable LLMs, returns Pydantic-structured results and offers an interactive CLI with optional Laminar tracing. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lmnr-ai/index/HEAD/README.md) |
 
 ## Frameworks
 

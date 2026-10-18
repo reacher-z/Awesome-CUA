@@ -63143,5 +63143,84 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Index",
+    "kind": "agent",
+    "url": "https://github.com/lmnr-ai/index",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "observability",
+      "human-in-the-loop",
+      "history"
+    ],
+    "summary": "Archived Laminar browser agent in Python that drives Playwright Chromium with vision-capable LLMs, returns Pydantic-structured results and offers an interactive CLI with optional Laminar tracing.",
+    "scope": "core",
+    "aliases": [
+      "lmnr-index"
+    ],
+    "verify_terms": [
+      "lmnr-index"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lmnr-ai/index/HEAD/README.md"
+    ],
+    "notes": "GitHub reports the repository as archived, with the last push on 2025-06-09. The tree holds the agent, Playwright browser and controller modules (actions include give_human_control and spreadsheet-cell clicks), providers for Anthropic, Bedrock, Gemini, Vertex, OpenAI and Groq, and two structured-output eval scripts rather than a benchmark. The README also advertises a hosted serverless Index API and chat UI run by Laminar; their current availability was not checked. Apache-2.0 covers repository code only.",
+    "details": {
+      "availability": "Archived source and the lmnr-index Python package; the hosted Index API is a separate Laminar service",
+      "repository_tree_sha": "d64bce88d95ce459f75e514a442c6260930f703c"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/lmnr-ai/index",
+        "sha256": "7922b878350bcc1e56f7eb5c8223f9a8e11eeac7741f61d1c338f29b72fcd016",
+        "retrieved_at": "2026-10-18T11:36:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/lmnr-ai/index/git/trees/main?recursive=1",
+        "sha256": "acbdfcdeeb5603c837cce3bc237855cb0217030a55b3abd7387b913ee5510b33",
+        "retrieved_at": "2026-10-18T11:36:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/lmnr-ai/index/HEAD/LICENSE",
+        "sha256": "7a70278b79cfd6a123a34593b9a5b3bc5d925b1b1ad90dff104482658ccdf654",
+        "retrieved_at": "2026-10-18T11:37:41Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7dc084999b84d9dd5f3ca7b009cb6b165452f7089348ecb47e39cd447c9815c5",
+    "reviewed_at": "2026-10-18T11:38:20Z"
   }
 ]

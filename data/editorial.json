@@ -35067,7 +35067,7 @@
     "verify_terms": [
       "UI-Genie"
     ],
-    "notes": "The public manifest contains reward_data.jsonl but no separately packaged image archive. The card declares MIT. The 517k identifier is not converted into a verified sample count, and complete image packaging is not inferred from the JSONL filename.",
+    "notes": "The public manifest contains reward_data.jsonl but no separately packaged image archive. The card declares MIT. The recorded 517k count is the paper's description of its reward corpus; streaming the released reward_data.jsonl at revision 4e6afee gives 472,769 lines, and the card does not explain the difference. Complete image packaging is not inferred from the JSONL filename.",
     "evidence_urls": [
       "https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md"
     ],
@@ -35080,7 +35080,16 @@
       "disabled": false,
       "download_url": "https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/tree/main",
       "dataset_profile": {
-        "counts": [],
+        "counts": [
+          {
+            "value": 517000,
+            "unit": "reward samples",
+            "qualifier": "approximately",
+            "population": "UI-Genie-RM-517k reward corpus as described in arXiv 2505.21496v1 Section 3.2 and Table 1 (AndroidControl, AMEX, AndroidLab and exploration sources)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2505.21496v1"
+          }
+        ],
         "supervision": [
           "trajectory rewards"
         ],
@@ -35091,10 +35100,11 @@
           "JSONL"
         ],
         "splits": [],
-        "notes": "The public manifest contains reward_data.jsonl but no separately packaged image archive. The card declares MIT. The 517k identifier is not converted into a verified sample count, and complete image packaging is not inferred from the JSONL filename.",
+        "notes": "Approximately 517k is the paper's corpus size; Table 1 lists 263k AndroidControl, 170k AMEX, 24k AndroidLab and 59k exploration samples, each with positive and negative examples. The released reward_data.jsonl at revision 4e6afee has 472,769 lines, so the count describes the paper's corpus, not a verified row total of this release. No separately packaged image archive is listed.",
         "evidence_urls": [
           "https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md",
-          "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md"
+          "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md",
+          "https://arxiv.org/html/2505.21496v1"
         ]
       }
     },
@@ -35127,6 +35137,17 @@
         "url": "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md",
         "sha256": "e08569bd9d8a6ff44537d4fe69243ddfeb8a41ae5c9f87ef84af50a67c64c726",
         "retrieved_at": "2026-10-17T03:59:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.21496v1",
+        "sha256": "62b6b74b4a05edb3772486839553b1aa87d655a734bdab8be5e698b6db34a33d",
+        "retrieved_at": "2026-10-18T16:11:32Z"
       }
     ],
     "scope": "core",

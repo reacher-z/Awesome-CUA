@@ -63143,5 +63143,73 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "UI-TARS 72B DPO",
+    "kind": "model",
+    "url": "https://huggingface.co/ByteDance-Seed/UI-TARS-72B-DPO",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "summary": "DPO-labelled 72B UI-TARS checkpoint that its card marks as recommended: a native GUI agent model in the Qwen2-VL architecture for screen perception, element grounding and multi-step actions on web, mobile and desktop.",
+    "scope": "core",
+    "verify_terms": [
+      "UI-TARS-72B-DPO"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/ByteDance-Seed/UI-TARS-72B-DPO/raw/43a70a29275e7d1569bb3f3dda5be4a2ff976d5f/README.md"
+    ],
+    "family_url": "https://github.com/bytedance/UI-TARS",
+    "documented_by": [
+      "2501.12326"
+    ],
+    "notes": "Hub API at revision 43a70a29 lists 31 BF16 safetensors shards (about 73.4B parameters) in the Qwen2VLForConditionalGeneration architecture; the repository is not gated. The card declares Apache-2.0 for the checkpoint. The card's sibling links use the earlier bytedance-research namespace. Its card reports 22.7 on OSWorld with a 15-step budget and 24.6 with 50 steps for this checkpoint. Card benchmark tables are publisher measurements and were not reproduced.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "ByteDance-Seed/UI-TARS-72B-DPO",
+      "hub_revision": "43a70a29275e7d1569bb3f3dda5be4a2ff976d5f",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/ByteDance-Seed/UI-TARS-72B-DPO/tree/main",
+      "architecture": "Qwen2VLForConditionalGeneration",
+      "parameter_label": "72B",
+      "repository_url": "https://github.com/bytedance/UI-TARS"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-72B-DPO",
+        "sha256": "25e3b62ab6c1c4f63fe30f5c940ba7f0d90b0bf24e76c4e6966b82d4a2c4bdbd",
+        "retrieved_at": "2026-10-18T11:34:14Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "153f5c4f95261750b82701e1be952f30a12b14409c898ddf1535a6439b8c0850",
+    "reviewed_at": "2026-10-18T11:34:44Z"
   }
 ]

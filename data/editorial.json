@@ -63143,5 +63143,143 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "midscene-pc",
+    "kind": "tool",
+    "url": "https://github.com/Mofangbao/midscene-pc",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "automation"
+    ],
+    "summary": "npm package adding a desktop device to Midscene.js: it captures monitor or window screenshots and sends mouse, keyboard and clipboard input locally or to a remote desktop over a token-protected HTTP service.",
+    "scope": "core",
+    "verify_terms": [
+      "midscene-pc"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Mofangbao/midscene-pc/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:web-infra-dev/midscene",
+        "evidence_url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/package.json"
+      }
+    ],
+    "notes": "TypeScript package by Mofangbao (npm midscene-pc 1.2.2 at the reviewed commit), depending on @midscene/core. PCDevice implements Midscene's device interface (src/pc.device.ts) and PCAgent extends Midscene's Agent with an aiOutput method (src/pc.agent.ts); element location and planning stay in Midscene's model calls, configured by default for a Qwen3-VL endpoint. The local service captures monitors and windows with node-screenshots and drives the mouse, keyboard and clipboard through a nut.js fork (src/services/local.pc.service.ts); text is typed by pasting from the clipboard. Running npx midscene-pc starts an Express server exposing capture and input endpoints with an optional token (src/server.ts), so a client can control a remote desktop; the README links a separate Ubuntu desktop Docker image. The tool was not run.",
+    "details": {
+      "availability": "Source and the midscene-pc npm package",
+      "repository_revision": "f210f4e77e3bf337ff301881224f346ddaa4ae4f",
+      "package_version": "1.2.2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://github.com/Mofangbao/midscene-pc/tree/f210f4e77e3bf337ff301881224f346ddaa4ae4f",
+        "sha256": "fb11ac560e8af4a09008816728fb17adaa622dc2b7a94e48460f131f04602290",
+        "retrieved_at": "2026-10-18T16:08:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations",
+          "details.package_version",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/package.json",
+        "sha256": "f524ec4ce548f14e4b81ad2e929c834e3ea31f209fd4e3c724da2b49ce448018",
+        "retrieved_at": "2026-10-18T16:08:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/src/pc.device.ts",
+        "sha256": "146189bc3aa1e034fd716d79159c778649758055e23bf478c56f965b152a972b",
+        "retrieved_at": "2026-10-18T16:08:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/src/pc.agent.ts",
+        "sha256": "0228deb1bcc0e0224c4b0eb2c063fee3b22cc3d536cdba0351bfe02baa2752ae",
+        "retrieved_at": "2026-10-18T16:08:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/src/services/local.pc.service.ts",
+        "sha256": "e67c201cd20de20f2b7268bf6727700f5a64e976e425f5f7322b3ceb6fa89654",
+        "retrieved_at": "2026-10-18T16:08:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/src/server.ts",
+        "sha256": "d363e7dacca20e0021a217af35c31bd661004606040c2b3d3cca19519fbaa8a1",
+        "retrieved_at": "2026-10-18T16:08:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/README.en.md",
+        "sha256": "b601d73a62efb122392c94dd03446c2d5d409488adc378dd817256dfee74ec09",
+        "retrieved_at": "2026-10-18T16:08:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Mofangbao/midscene-pc/f210f4e77e3bf337ff301881224f346ddaa4ae4f/LICENSE",
+        "sha256": "1e08d60ec9e5067a54c51fcedbce65d82dc55aa363a2ff1336bcdd6340b1f24f",
+        "retrieved_at": "2026-10-18T16:08:47Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "04f11e5d34949f51f960840ebaac9d40ce522d50e102af80e572ad889d8c9213",
+    "reviewed_at": "2026-10-18T16:09:18Z"
   }
 ]

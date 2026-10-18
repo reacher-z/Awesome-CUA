@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**14 resources:** [Web (2)](#web) · [Desktop (6)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (3)](#cross-platform)
+**15 resources:** [Web (2)](#web) · [Desktop (7)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -31,6 +31,7 @@ All entries in this section: web.
 | [Nut.js](https://github.com/nut-tree/nut.js) | desktop | — | — | Desktop automation library for keyboard, mouse, and screen interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nut-tree/nut.js/HEAD/README.md) |
 | [PyAutoGUI](https://github.com/asweigart/pyautogui) | desktop | — | — | Cross-platform Python module for scripted mouse and keyboard control, message boxes and screenshots with on-screen image search, working on the primary monitor under Windows, macOS and Linux. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/asweigart/pyautogui/HEAD/README.md) |
 | [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
+| [Windows in Docker (dockur/windows)](https://github.com/dockur/windows) | windows, desktop | — | code MIT | Docker container that downloads and installs a chosen Windows release into a KVM-accelerated virtual machine, reachable through a browser viewer or RDP, with configurable CPU, memory, disk and networking. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/dockur/windows/HEAD/readme.md) |
 
 [↑ Back to top](#infrastructure-catalog)
 

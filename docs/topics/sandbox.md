@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-55 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+56 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (8)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
 
 ## Benchmarks
 
@@ -32,6 +32,7 @@
 | [Lume](https://github.com/trycua/lume) | desktop, macos, linux | — | code MIT | Virtual machine management for local computer-use environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md) |
 | [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
 | [Steel Browser](https://github.com/steel-dev/steel-browser) | web | — | code Apache-2.0 | Open-source browser API managing Chrome sessions for agents, reachable through Puppeteer, Playwright or Selenium over CDP, with persisted cookies, proxy rotation, stealth and a session debugging UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/steel-dev/steel-browser/HEAD/README.md) |
+| [Windows in Docker (dockur/windows)](https://github.com/dockur/windows) | windows, desktop | — | code MIT | Docker container that downloads and installs a chosen Windows release into a KVM-accelerated virtual machine, reachable through a browser viewer or RDP, with configurable CPU, memory, disk and networking. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/dockur/windows/HEAD/readme.md) |
 
 ## Products
 

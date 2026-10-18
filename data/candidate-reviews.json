@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:supernalintelligence/awesome-general-agents-benchmark-",
+    "url": "https://github.com/supernalintelligence/Awesome-General-Agents-Benchmark-",
+    "decision": "out_of_scope",
+    "reason": "A general link list of benchmarks for AI agents and frontier models (112 table rows across 14 sections, covering reasoning, math, science, coding, safety and aggregators), of which only the 16-row Web and GUI Interaction section concerns interface agents. It is not one of the catalog's discovery sources and releases no software, data or survey of its own, so it does not fit a resource kind.",
+    "reviewed_at": "2026-10-18T15:33:04Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/supernalintelligence/Awesome-General-Agents-Benchmark/HEAD/README.md",
+      "sha256": "fdcce626e7bac4f4770bf848db11db1ffa32e65b4ddf26dab5dadd4f8ec93d12",
+      "retrieved_at": "2026-10-18T12:25:15Z"
+    }
   }
 ]

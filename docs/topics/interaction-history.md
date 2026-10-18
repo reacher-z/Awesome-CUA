@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-47 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Papers (46)](#papers)
+**Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Papers (46)](#papers)
 
 ## Models
 
@@ -13,6 +13,14 @@ All entries in this section: android, desktop.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+
+## Frameworks
+
+All entries in this section: android, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [SimpAgent](https://github.com/JiuTian-VL/SimpAgent) | [2507.03730](https://arxiv.org/abs/2507.03730) (2025) | — | Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress interaction history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JiuTian-VL/SimpAgent/HEAD/README.md) |
 
 ## Papers
 

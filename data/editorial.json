@@ -63143,5 +63143,36 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SimpAgent",
+    "kind": "framework",
+    "url": "https://github.com/JiuTian-VL/SimpAgent",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "interaction-history",
+      "action-prediction",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "Qwen2-VL fine-tuning and evaluation code for GUI agents that mask irrelevant screen elements and compress interaction history, with scripts for AITW, Mind2Web, AndroidControl and GUI-Odyssey.",
+    "verify_terms": [
+      "SimpAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JiuTian-VL/SimpAgent/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2507.03730"
+    ],
+    "notes": "Official ICCV 2025 code for arXiv:2507.03730. The repository has no LICENSE file or license declaration, so the code license is unknown. Converted training and test JSON files are linked from the Hugging Face dataset Minuskid/SimpAgent-data, whose API lists no card license; that dataset is not curated by this record. Screenshots for AITW, Mind2Web, AndroidControl and GUI-Odyssey must be obtained from those releases. The README requires a patched Qwen2-VL modeling file for transformers 4.45.2 and links no trained checkpoints.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "97eb4cde1d95f711ed578ca09e93483b3005ff45e24107e14ffb5ffecbafdd96",
+    "reviewed_at": "2026-10-18T11:25:29Z"
   }
 ]

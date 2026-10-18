@@ -63143,5 +63143,103 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:andelf/axcli",
+    "name": "axcli",
+    "kind": "tool",
+    "url": "https://github.com/andelf/axcli",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Rust command-line tool that lets agents snapshot macOS app accessibility trees, select elements with CSS-like locators, and send clicks, typing, keys, scrolls and window screenshots, mostly without focusing the app.",
+    "scope": "core",
+    "verify_terms": [
+      "axcli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/andelf/axcli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ee143aa5f2f87fe308ea7b6151a0206b0f84761bb01e0f6d9e7b164bf6e269a0",
+    "reviewed_at": "2026-10-18T10:55:50Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Source and the crates.io package axcli 0.1.0 (published 2026-03-17) are public; no GitHub release is published. It requires macOS Accessibility and Screen Recording permissions and was not installed or run. The README and Cargo.toml declare MIT OR Apache-2.0, but the tree has no license text file.",
+    "details": {
+      "availability": "Public source and crates.io package metadata.",
+      "package_version": "0.1.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/andelf/axcli",
+        "sha256": "22a4c87c1823b24ae0382df27c24e71fb78ada55137c395201ed8fcf40cec305",
+        "retrieved_at": "2026-10-18T10:55:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status"
+        ],
+        "url": "https://api.github.com/repos/andelf/axcli/git/trees/main?recursive=1",
+        "sha256": "ff21798ade3c017124e0656040891a86c7ea3163e42880859a9a07a8fc8bc813",
+        "retrieved_at": "2026-10-18T10:55:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.package_version"
+        ],
+        "url": "https://crates.io/api/v1/crates/axcli/0.1.0",
+        "sha256": "6070c8b4e243bbf9450921f621d4b019eea7d6a59a1cce1f0e99071be0130e8e",
+        "retrieved_at": "2026-10-18T10:55:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/andelf/axcli/HEAD/Cargo.toml",
+        "sha256": "f42e42014a96263b6dd15c0807b059cf1931d5fc7e4011bb43c752c344617b16",
+        "retrieved_at": "2026-10-18T10:55:20Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT OR Apache-2.0",
+          "url": "https://raw.githubusercontent.com/andelf/axcli/HEAD/Cargo.toml",
+          "retrieved_at": "2026-10-18T10:55:20Z",
+          "basis": "The package manifest's license field and the README's License section both declare MIT OR Apache-2.0 for the code. The repository has no license text file."
+        },
+        "reason": "The package manifest's license field and the README's License section both declare MIT OR Apache-2.0 for the code. The repository has no license text file.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/andelf/axcli/HEAD/Cargo.toml"
+        ]
+      }
+    }
   }
 ]

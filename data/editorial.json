@@ -63143,5 +63143,73 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "UI-TARS 2B SFT",
+    "kind": "model",
+    "url": "https://huggingface.co/ByteDance-Seed/UI-TARS-2B-SFT",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "summary": "SFT-labelled 2B UI-TARS checkpoint, the compact size of the original release: a native GUI agent model in the Qwen2-VL architecture, stored in FP32, for screen perception, element grounding and GUI actions.",
+    "scope": "core",
+    "verify_terms": [
+      "UI-TARS-2B-SFT"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/ByteDance-Seed/UI-TARS-2B-SFT/raw/f366a1db3e7f29635f5b236d6a71dea367a0a700/README.md"
+    ],
+    "family_url": "https://github.com/bytedance/UI-TARS",
+    "documented_by": [
+      "2501.12326"
+    ],
+    "notes": "Hub API at revision f366a1db lists two F32 safetensors shards (about 2.44B parameters) in the Qwen2VLForConditionalGeneration architecture; the repository is not gated. The card declares Apache-2.0 for the checkpoint. The card's sibling links use the earlier bytedance-research namespace. The card's online agent table has no 2B row, and its sibling links also name a GGUF conversion that this record does not cover. Card benchmark tables are publisher measurements and were not reproduced.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "ByteDance-Seed/UI-TARS-2B-SFT",
+      "hub_revision": "f366a1db3e7f29635f5b236d6a71dea367a0a700",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/ByteDance-Seed/UI-TARS-2B-SFT/tree/main",
+      "architecture": "Qwen2VLForConditionalGeneration",
+      "parameter_label": "2B",
+      "repository_url": "https://github.com/bytedance/UI-TARS"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-2B-SFT",
+        "sha256": "677fccdec48ab2ca045ae66bcbe46ded963dfd1c9c3b47d0a43d32254e5f590e",
+        "retrieved_at": "2026-10-18T11:34:23Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4830ae0aa6b32597f9fac19addf31d61cad22b2e415d58e1995805857d69c62d",
+    "reviewed_at": "2026-10-18T11:34:57Z"
   }
 ]

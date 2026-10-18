@@ -63143,5 +63143,201 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2605.06664",
+    "name": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.06664",
+    "summary": "BAMI improves GUI grounding at inference time: masked-prediction attribution traces errors to precision and ambiguity bias, and coarse-to-fine focus plus candidate selection counter them without retraining.",
+    "environments": [
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "training-free"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "BAMI: Training-Free Bias Mitigation"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2605.06664"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the complete official abstract and the v1 HTML. Evaluation uses ScreenSpot-Pro and ScreenSpot-V2. Candidate selection relies on a correction model: the paper tests API models such as GPT-5 and, in appendix C.3, a LoRA-tuned Qwen3-VL-8B corrector trained on 128,487 automatically labeled two-box samples, so the grounding model is unchanged but the local corrector is trained. Experimental findings have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.06664v1",
+        "sha256": "2b2685f4f68842335f3357e1f1670c00a1183ad7c629cc43fe21bca40eb1ecfb",
+        "retrieved_at": "2026-10-18T15:33:04Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "553dc0f54684d0e45c35065b602fa8d935e60c672f4104e00aebcec1ba86a40d",
+    "reviewed_at": "2026-10-18T15:35:28Z"
+  },
+  {
+    "name": "Two-Box Judge GUI Dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui",
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "Training data for BAMI's local correction model: pairs of cropped GUI screenshots that each highlight one candidate box, with a click command and an automatic label for the box that fits it.",
+    "scope": "core",
+    "verify_terms": [
+      "Two-Box Judge GUI Dataset"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/README.md"
+    ],
+    "documented_by": [
+      "2605.06664"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "In each sample, the first crop marks the grounding model's initial box and the second the box found after masking and regrounding; both are crops around the candidate, not full screenshots. Labels come from IoU of at least 0.5 or a center point inside the ground-truth box, with box 1 chosen when both or neither qualify, so the classes are imbalanced. The card names GUIAct web data and an unnamed Windows/macOS desktop set as sources. The 12,849-sample validation split that the card and dataset_infos.json report is not in the repository at revision a09c08da, although the bundled loader expects a validation folder. Apache-2.0 is the card's data declaration and does not settle rights in the upstream screenshots. Appendix C.3 of the BAMI paper (v1 HTML) describes training its LoRA Qwen3-VL-8B corrector on 128,487 such samples.",
+    "details": {
+      "hub_id": "THU-BoZhang/two-box-judge-gui",
+      "hub_revision": "a09c08daed473ad1154414021a3d724d68deeb37",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/tree/a09c08daed473ad1154414021a3d724d68deeb37",
+      "dataset_profile": {
+        "supervision": [
+          "automatically derived choice between two candidate boxes against ground truth"
+        ],
+        "modalities": [
+          "cropped GUI screenshots with a highlighted candidate box",
+          "natural-language click commands"
+        ],
+        "formats": [
+          "Parquet metadata",
+          "PNG images"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 115638,
+            "unit": "two-box samples",
+            "qualifier": "exact",
+            "population": "train/metadata.parquet at revision a09c08da (106,350 labeled box 1, 9,288 labeled box 2)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/resolve/a09c08daed473ad1154414021a3d724d68deeb37/train/metadata.parquet"
+          },
+          {
+            "value": 12849,
+            "unit": "two-box samples",
+            "qualifier": "exact",
+            "population": "validation split as reported; no validation files at revision a09c08da",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/dataset_infos.json"
+          },
+          {
+            "value": 128487,
+            "unit": "two-box samples",
+            "qualifier": "exact",
+            "population": "train plus validation as reported by dataset_infos.json and the card",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/dataset_infos.json"
+          }
+        ],
+        "notes": "Each sample has two image files, so image and sample counts differ. The train metadata has 27,934 distinct command strings; per its original-path columns, 98,369 train rows come from a desktop-named source folder and 17,269 from another folder. The card's per-source figures (about 70K GUIAct and 423K desktop samples) describe the pool before balancing, not this release. Image files were not downloaded or counted.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/README.md",
+          "https://huggingface.co/api/datasets/THU-BoZhang/two-box-judge-gui/revision/a09c08daed473ad1154414021a3d724d68deeb37",
+          "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/dataset_infos.json",
+          "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/resolve/a09c08daed473ad1154414021a3d724d68deeb37/train/metadata.parquet"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/THU-BoZhang/two-box-judge-gui/revision/a09c08daed473ad1154414021a3d724d68deeb37",
+        "sha256": "54e36fe240316a7266800b025607da2d10a4aff3f1bcfc814d956a6f1bee4dd5",
+        "retrieved_at": "2026-10-18T15:33:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/dataset_infos.json",
+        "sha256": "96259003534aa7368a090f5c71b8da188c0ffbacf5af04ae52f3252b3a189549",
+        "retrieved_at": "2026-10-18T15:33:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/resolve/a09c08daed473ad1154414021a3d724d68deeb37/train/metadata.parquet",
+        "sha256": "fabf1525a1e7ad6eac27f6c3c67a24ea1e5881b39cb1e94745a1455558c5ae91",
+        "retrieved_at": "2026-10-18T15:33:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.06664v1",
+        "sha256": "2b2685f4f68842335f3357e1f1670c00a1183ad7c629cc43fe21bca40eb1ecfb",
+        "retrieved_at": "2026-10-18T15:33:04Z"
+      }
+    ],
+    "reviewed_sha256": "962d7047eaefbd0ea93a9240bd729dae0c042bba27d41a2eb0a8289fcd3bab99",
+    "reviewed_at": "2026-10-18T15:35:28Z"
   }
 ]

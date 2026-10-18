@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (56)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -58,6 +58,7 @@
 | [ScreenRef Annotations](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations) | desktop, web, android, linux | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | [633,369 annotation rows](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) | data other | Annotation files, task recipes, and image manifests for ScreenRef; screenshots reside in the separately gated image repository. | [✓ 2026‑10‑17](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) |
 | [ShowUI Desktop](https://huggingface.co/datasets/showlab/ShowUI-desktop-8K) | desktop | — | [7,496 examples](https://huggingface.co/datasets/showlab/ShowUI-desktop-8K/raw/main/README.md) | — | 7,496 desktop grounding examples built from OmniAct screenshots, with annotations rewritten by GPT-4o to describe element appearance, spatial relations and function. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/showlab/ShowUI-desktop-8K) |
 | [ShowUI-web](https://huggingface.co/datasets/showlab/ShowUI-web) | web | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | [21,988 rows](https://huggingface.co/datasets/showlab/ShowUI-web/raw/main/README.md) | — | Web-interface grounding examples with instructions, element boxes and points, paired with a separately packaged screenshot archive. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-web/raw/main/README.md) |
+| [Two-Box Judge GUI Dataset](https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui) | web, desktop, windows, macos | [2605.06664](https://arxiv.org/abs/2605.06664) (2026) | [115,638 two-box samples](https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/resolve/a09c08daed473ad1154414021a3d724d68deeb37/train/metadata.parquet) | data apache-2.0 | Training data for BAMI's local correction model: pairs of cropped GUI screenshots that each highlight one candidate box, with a click command and an automatic label for the box that fits it. | [✓ 2026‑10‑18](https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/README.md) |
 | [UGround V1 Data](https://huggingface.co/datasets/osunlp/UGround-V1-Data) | cross-platform | — | — | data cc-by-nc-sa-4.0 | Gated web grounding training data for UGround in Web-Hybrid and Web-Direct subsets, with a bounding-box version whose coordinates are normalized to 0-999. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/osunlp/UGround-V1-Data) |
 | [UI-Genie reward data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md) |
 | [UI-Genie trajectory data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Synthetic mobile GUI trajectory supervision and screenshots released with the UI-Genie agent-training pipeline. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/raw/main/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-30 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
 
 ## Benchmarks
 
@@ -20,6 +20,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [GUI-R1 data bundle](https://huggingface.co/datasets/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | — | data mit | Training and evaluation Parquet bundles accompanying GUI-R1, including GUI grounding and mobile/web action-prediction data. | [✓ 2026‑10‑17](https://huggingface.co/datasets/ritzzai/GUI-R1/raw/main/README.md) |
 | [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | data mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. | [✓ 2026‑10‑16](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) |
+| [Two-Box Judge GUI Dataset](https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui) | web, desktop, windows, macos | [2605.06664](https://arxiv.org/abs/2605.06664) (2026) | [115,638 two-box samples](https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/resolve/a09c08daed473ad1154414021a3d724d68deeb37/train/metadata.parquet) | data apache-2.0 | Training data for BAMI's local correction model: pairs of cropped GUI screenshots that each highlight one candidate box, with a click command and an automatic label for the box that fits it. | [✓ 2026‑10‑18](https://huggingface.co/datasets/THU-BoZhang/two-box-judge-gui/raw/a09c08daed473ad1154414021a3d724d68deeb37/README.md) |
 
 ## Models
 

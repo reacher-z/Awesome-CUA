@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-38 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (29)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (8)](#datasets) · [Papers (29)](#papers)
 
 ## Benchmarks
 
@@ -18,6 +18,7 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AgentTrek](https://github.com/xlang-ai/AgentTrek) | web | [2412.09605](https://arxiv.org/abs/2412.09605) (2024) | — | — | Synthesizes browser-agent trajectories by replaying web tutorials as guidance, releasing the trajectory data with multimodal grounding and reasoning and an AgentTrek-32B agent. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/AgentTrek/HEAD/README.md) |
+| [Computer Use Large (markov-ai)](https://huggingface.co/datasets/markov-ai/computer-use-large) | desktop | — | [48,478 videos](https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md) · [≈ 12,300 hours of video](https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md) · [6 software categories](https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md) · [48,477 MP4 files](https://huggingface.co/api/datasets/markov-ai/computer-use-large/revision/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9) · [48,473 per-video description JSON files](https://huggingface.co/api/datasets/markov-ai/computer-use-large/revision/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9) | data CC-BY-4.0 | 48,478 trimmed, audio-free screen-recording videos (about 12,300 hours) of AutoCAD, Blender, Excel, Photoshop, Salesforce and VS Code use, gathered from the internet, with duration metadata and no action labels. | [✓ 2026‑10‑18](https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md) |
 | [GUI-Action Narrator](https://github.com/showlab/GUI-Action-Narrator) | cross-platform | — | [4,189 video-captioning samples](https://arxiv.org/abs/2406.13719) | — | Action narration resources for GUI interaction trajectories. | [✓ 2026‑10‑16](https://github.com/showlab/GUI-Action-Narrator) |
 | [GUI-World](https://github.com/Dongping-Chen/GUI-World) | cross-platform | [2406.10819](https://arxiv.org/abs/2406.10819) (2024) | [6 GUI scenario categories](https://raw.githubusercontent.com/Dongping-Chen/GUI-World/master/Readme.md) · [8 question types](https://raw.githubusercontent.com/Dongping-Chen/GUI-World/master/Readme.md) | — | GUI video benchmark and training data covering six scenarios, from Android and iOS to websites and XR, with eight question types for image and video LLMs and the GUI-Vid model. | [✓ 2026‑10‑16](https://github.com/Dongping-Chen/GUI-World) |
 | [MONDAY](https://github.com/runamu/monday) | android, ios, cross-platform | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | — | code Apache-2.0 | Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/runamu/monday/HEAD/README.md) |

@@ -63143,5 +63143,162 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Computer Use Large (markov-ai)",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/markov-ai/computer-use-large",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "video",
+      "data-generation"
+    ],
+    "summary": "48,478 trimmed, audio-free screen-recording videos (about 12,300 hours) of AutoCAD, Blender, Excel, Photoshop, Salesforce and VS Code use, gathered from the internet, with duration metadata and no action labels.",
+    "scope": "core",
+    "aliases": [
+      "markov-ai/computer-use-large"
+    ],
+    "verify_terms": [
+      "Computer Use Large"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
+    ],
+    "notes": "The card says the videos were sourced from the internet, trimmed to screen-recording segments and stripped of audio, and are meant for training and evaluating computer-use agents. Per-folder metadata.jsonl files give file name, category, trimmed duration and segment count only; there are no actions, cursor events or instructions. At Hub revision b50aecce the manifest lists 48,477 MP4 files, one fewer than the card (Excel has 8,110 against 8,111). The repository also holds descriptions.parquet and 48,473 per-video JSON files under descriptions/ that the card does not document; the one inspected file gives the source video's title and channel, transcript text in 10-second windows and a short step description or NO_TASK per window. The card's CC-BY-4.0 declaration does not establish rights to the third-party videos. Videos were not downloaded.",
+    "details": {
+      "hub_id": "markov-ai/computer-use-large",
+      "hub_revision": "b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/markov-ai/computer-use-large/tree/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9",
+      "dataset_profile": {
+        "supervision": [
+          "unlabeled screen recordings"
+        ],
+        "modalities": [
+          "screen-recording video",
+          "per-video duration metadata"
+        ],
+        "formats": [
+          "MP4",
+          "JSONL",
+          "JSON",
+          "Parquet"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 48478,
+            "unit": "videos",
+            "qualifier": "exact",
+            "population": "all six software categories",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
+          },
+          {
+            "value": 12300,
+            "unit": "hours of video",
+            "qualifier": "approximately",
+            "population": "all six software categories after trimming",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
+          },
+          {
+            "value": 6,
+            "unit": "software categories",
+            "qualifier": "exact",
+            "population": "AutoCAD, Blender, Excel, Photoshop, Salesforce, VS Code",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
+          },
+          {
+            "value": 48477,
+            "unit": "MP4 files",
+            "qualifier": "exact",
+            "population": "data/ at Hub revision b50aecce",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/markov-ai/computer-use-large/revision/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9"
+          },
+          {
+            "value": 48473,
+            "unit": "per-video description JSON files",
+            "qualifier": "exact",
+            "population": "descriptions/ at Hub revision b50aecce",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/markov-ai/computer-use-large/revision/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9"
+          }
+        ],
+        "notes": "File counts come from a script over the pinned Hub manifest; the card's per-category table gives Excel 8,111 videos where the manifest has 8,110 MP4 files. The description files are not described by the card; their content was checked in one file only. Videos, hours, categories and files are different units and are not summed. Each category is one configuration with a single train split.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md",
+          "https://huggingface.co/api/datasets/markov-ai/computer-use-large/revision/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9",
+          "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/descriptions/vscode/-2x-5DN-caM_descriptions.json"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "aliases",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/markov-ai/computer-use-large/revision/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9",
+        "sha256": "3b3f16168be7ff108abb2a9e55d716b1336601d33cb7c6b8b8b3729994f2d791",
+        "retrieved_at": "2026-10-18T15:50:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/descriptions/vscode/-2x-5DN-caM_descriptions.json",
+        "sha256": "50f55d2be263484950dc59bceb4b116a8daaeeb8fb38ee7ab6496a8723c29411",
+        "retrieved_at": "2026-10-18T15:50:47Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md",
+          "retrieved_at": "2026-10-18T15:50:47Z",
+          "basis": "Dataset-card metadata and License section declare CC-BY-4.0 for this release; the card says the videos were sourced from the internet, and the declaration does not establish rights to those third-party recordings or the software shown."
+        },
+        "reason": "Dataset-card metadata and License section declare CC-BY-4.0 for this release; the card says the videos were sourced from the internet, and the declaration does not establish rights to those third-party recordings or the software shown.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4e7feff2c4ea2420856a406dd3d74881928c4b86091412825001cf4610050f78",
+    "reviewed_at": "2026-10-18T15:51:14Z"
   }
 ]

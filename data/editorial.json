@@ -63143,5 +63143,146 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "VLAA-GUI",
+    "kind": "agent",
+    "url": "https://github.com/UCSC-VLAA/VLAA-GUI",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "self-reflection",
+      "robustness",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Released VLAA-GUI desktop agent: a screenshot-driven manager with completion verification and loop detection, on-demand search, coding and grounding agents, and pyautogui execution on macOS, Linux or Windows.",
+    "scope": "core",
+    "verify_terms": [
+      "VLAA-GUI"
+    ],
+    "documented_by": [
+      "2604.21375"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:simular-ai/agent-s",
+        "evidence_url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/HEAD/README.md"
+      }
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.availability"
+    ],
+    "notes": "Official UCSC-VLAA code for the VLAA-GUI paper; the README says it builds on the Agent-S codebase. The local runner (vlaa_gui/run_agent.py) captures a plain, resized pyautogui screenshot each step and executes the pyautogui code the agent returns (the pyautogui_coding action space also runs code locally). The grounding agent (vlaa_gui/agents/grounding.py) maps the manager's element descriptions to coordinates with a configured grounding model and a zoomed-crop second pass. The verifier and loop detection are switched by config/template.toml. Models come from configured providers (OpenAI, Gemini, Anthropic via Bedrock, Qwen, vLLM and others in vlaa_gui/core/engine.py); no weights are released. The OSWorld-Verified 77.5% and WindowsAgentArena 61.0% figures are paper results, and osworld_setup points to the OSWorld repository for the benchmark-side integration, so those runs are not reproducible from this repository alone. Code was read, not run.",
+    "details": {
+      "availability": "Public agent source (Python package vlaa_gui 1.1.1); OSWorld integration lives in the OSWorld repository; no model weights",
+      "repository_revision": "6a086a3e345bc5aa56418d0939e6435c09b5e0e9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/vlaa_gui/run_agent.py",
+        "sha256": "5e1910014e0881b47a26744fdb36bdf8e436a379fd880d06c885ef794ec05816",
+        "retrieved_at": "2026-10-18T16:12:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/vlaa_gui/agents/grounding.py",
+        "sha256": "b185124a96f8ccec6c86d4e717677ac31edf09b8bbbab6bccea3c0131fd6aed4",
+        "retrieved_at": "2026-10-18T16:12:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/vlaa_gui/agents/verifier_agent.py",
+        "sha256": "931682995fd49946dc5ab6ff7896c65995091c6a466b5d91268240d49421f28d",
+        "retrieved_at": "2026-10-18T16:12:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/osworld_setup/README.md",
+        "sha256": "64d4bf77b7bd629eebc02afc949378dc315f10d17f85139f474133557fec21bd",
+        "retrieved_at": "2026-10-18T16:12:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/LICENSE",
+        "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+        "retrieved_at": "2026-10-18T16:12:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/config/template.toml",
+        "sha256": "a2a40dfabdacc35e3cc2d41f73bbfeb71ad23fe71eeb257ce6dcf8352673a61f",
+        "retrieved_at": "2026-10-18T16:12:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/vlaa_gui/core/engine.py",
+        "sha256": "92792f61f91640faef0f2fcaea1c967ab3e8325b9de0e3004ab845f8e543beef",
+        "retrieved_at": "2026-10-18T16:12:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/6a086a3e345bc5aa56418d0939e6435c09b5e0e9/pyproject.toml",
+        "sha256": "cec5158d7a09be0720a4967a37ad5dce75916e9702c2290be0a22fc8321942d2",
+        "retrieved_at": "2026-10-18T16:13:37Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "040d2c23556d27e62e81e4cb89134549f611579ac717808ceaa07cbd8285fca0",
+    "reviewed_at": "2026-10-18T16:12:51Z"
   }
 ]

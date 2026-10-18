@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
 
 ## Benchmarks
 
@@ -28,6 +28,14 @@ All entries in this section: cross-platform.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [RoTS](https://github.com/AlibabaResearch/RoTS) | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
+
+## Agents
+
+All entries in this section: desktop, linux, windows, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [VLAA-GUI](https://github.com/UCSC-VLAA/VLAA-GUI) | [2604.21375](https://arxiv.org/abs/2604.21375) (2026) | code Apache-2.0 | Released VLAA-GUI desktop agent: a screenshot-driven manager with completion verification and loop detection, on-demand search, coding and grounding agents, and pyautogui execution on macOS, Linux or Windows. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/HEAD/README.md) |
 
 ## Frameworks
 

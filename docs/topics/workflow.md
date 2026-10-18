@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-110 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+111 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (79)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (79)](#papers)
 
 ## Benchmarks
 
@@ -31,6 +31,7 @@
 | [Bytebot](https://github.com/bytebot-ai/bytebot) | desktop | — | code Apache-2.0 | Open-source desktop agent that works inside its own Ubuntu Linux virtual desktop, with a web task interface, REST APIs for tasks and direct control, a takeover mode and password-manager logins. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bytebot-ai/bytebot/HEAD/README.md) |
 | [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
+| [open-cowork](https://github.com/coasty-ai/open-cowork) | desktop, macos, linux, windows, web | — | code MIT | Desktop and browser computer-use coworker: a screenshot-predict-act loop drives the user's own macOS, Linux or Windows screen, a Playwright page or a Coasty cloud VM, using Coasty's model or a user's vision LLM. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/coasty-ai/open-cowork/HEAD/README.md) |
 | [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | desktop, windows, linux | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | — | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |

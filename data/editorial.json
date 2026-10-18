@@ -63143,5 +63143,109 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "open-cowork",
+    "kind": "agent",
+    "url": "https://github.com/coasty-ai/open-cowork",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "human-in-the-loop",
+      "workflow"
+    ],
+    "scope": "core",
+    "summary": "Desktop and browser computer-use coworker: a screenshot-predict-act loop drives the user's own macOS, Linux or Windows screen, a Playwright page or a Coasty cloud VM, using Coasty's model or a user's vision LLM.",
+    "verify_terms": [
+      "open-cowork"
+    ],
+    "notes": "Published by Coasty as a pnpm TypeScript monorepo: core agent loop (default cap of 25 predict steps), Executor package, BYO-LLM package, Fastify backend, React web app, Electron desktop shell and an Expo mobile companion for monitoring and approvals. The LocalExecutor captures and acts on the host screen through screencapture, cliclick and osascript on macOS, ImageMagick import or gnome-screenshot plus xdotool on Linux X11, and a PowerShell bridge with user32 SendInput and CopyFromScreen on Windows; it moves the real mouse and keyboard. BrowserExecutor drives a Playwright page with coordinate clicks, and RemoteMachineExecutor targets Coasty cloud machines. Predictions come from Coasty's hosted computer-use API through the backend proxy, which alone holds the API key, or from a user-supplied vision model; the default demo mode uses a bundled mock of the Coasty API. Workflows use a versioned JSON DSL with budget caps and human approval steps. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/coasty-ai/open-cowork/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public TypeScript source for backend, web, desktop and mobile clients; hosted predictions need a Coasty API key, otherwise a user-supplied model key or a local model.",
+      "repository_revision": "fbbc6713912f28db593b2954cdf270c601f3dd5e",
+      "repository_tree_sha": "cfede32742de93b533993cba39b227ad0402f9e8"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/coasty-ai/open-cowork/git/commits/fbbc6713912f28db593b2954cdf270c601f3dd5e",
+        "sha256": "f755e9dc261f2124f0efa045499cbcc81d0aa7b4a964174d0797a318cbf7a5c1",
+        "retrieved_at": "2026-10-18T15:35:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/coasty-ai/open-cowork/fbbc6713912f28db593b2954cdf270c601f3dd5e/packages/core/src/agentLoop.ts",
+        "sha256": "41d3ced0ddc3ad5f8b7e2c3e718c80d293359856e8a534e551522b7928b89e64",
+        "retrieved_at": "2026-10-18T15:35:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/coasty-ai/open-cowork/fbbc6713912f28db593b2954cdf270c601f3dd5e/packages/executor/src/local/unixBridges.ts",
+        "sha256": "9ecbb4013f6868f2cd7022a6be773d3aaf20f624291f74581b28d2057af3fe04",
+        "retrieved_at": "2026-10-18T15:35:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/coasty-ai/open-cowork/fbbc6713912f28db593b2954cdf270c601f3dd5e/packages/executor/src/local/windowsBridge.ts",
+        "sha256": "aef0e40d3901afc4319a3ce9fdb40dd8470983f09326f30598c94768e1787c8d",
+        "retrieved_at": "2026-10-18T15:35:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/coasty-ai/open-cowork/fbbc6713912f28db593b2954cdf270c601f3dd5e/packages/executor/src/browser.ts",
+        "sha256": "88f719ccccfd4b56a340f710fd10f641f62edf8b922b759bee5a570b21d2b0b4",
+        "retrieved_at": "2026-10-18T15:35:47Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3647ef0eeac770ec966f74cff3f931f570b693e831ea702daa7acf667ffc33dc",
+    "reviewed_at": "2026-10-18T15:36:11Z"
   }
 ]

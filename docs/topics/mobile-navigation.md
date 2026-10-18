@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (14)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -42,6 +42,7 @@
 | [UI-Genie reward data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md) |
 | [UI-Genie trajectory data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Synthetic mobile GUI trajectory supervision and screenshots released with the UI-Genie agent-training pipeline. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/raw/main/README.md) |
 | [UI-S1 released training examples](https://huggingface.co/datasets/mPLUG/UI_S1_dataset) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | [1,000 training examples](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/UI-S1/README.md) | data apache-2.0 | A public example subset of the UI-S1 mobile training data, packaged as JSONL annotations and Parquet images. | [✓ 2026‑10‑17](https://huggingface.co/datasets/mPLUG/UI_S1_dataset/raw/main/README.md) |
+| [Uni-GUI-Mobile](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile) | android | [2607.04425](https://arxiv.org/abs/2607.04425) (2026) | [871 trajectories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md) · [≈ 14,000 steps](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md) · [10 app categories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md) · [871 task.json trajectory files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Mobile/revision/45244387a3c284810894bc2be974b28014dcf838) · [14,275 PNG screenshot files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Mobile/revision/45244387a3c284810894bc2be974b28014dcf838) | data apache-2.0 | Self-collected phone trajectories from the UI-MOPD training data: 871 tasks across 10 app categories, each with step screenshots, reasoning traces, normalized tap, swipe and type actions, and adb commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md) |
 
 ## Models
 

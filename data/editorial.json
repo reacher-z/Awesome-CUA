@@ -63143,5 +63143,149 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:93278fa5b9e6bd0cbcef",
+    "name": "Uni-GUI-Mobile",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "mobile-navigation",
+      "imitation-learning"
+    ],
+    "summary": "Self-collected phone trajectories from the UI-MOPD training data: 871 tasks across 10 app categories, each with step screenshots, reasoning traces, normalized tap, swipe and type actions, and adb commands.",
+    "scope": "core",
+    "verify_terms": [
+      "Uni-GUI-Mobile"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2607.04425"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The UI-MOPD paper builds Uni-GUI from self-collected desktop and mobile trajectories plus cleaned OpenCUA and OpenMobile trajectories; this repository is the self-collected mobile part (the paper's composition table rounds it to about 1K trajectories and 17K steps, the card reports about 14K steps). Per the paper, teacher models produced the rollouts, an automatic judge kept only successful ones, and reasoning traces were rewritten into one format, so these are not human demonstrations. The card says only 'mobile'; Android is inferred from the adb commands in its step records and the paper's use of AndroidWorld and MobileWorld environments for mobile queries. Apache-2.0 is the card's declaration and does not cover third-party app content in screenshots. Files were not downloaded.",
+    "details": {
+      "hub_id": "UI-MOPD/Uni-GUI-Mobile",
+      "hub_revision": "45244387a3c284810894bc2be974b28014dcf838",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/tree/45244387a3c284810894bc2be974b28014dcf838",
+      "dataset_profile": {
+        "supervision": [
+          "teacher-model GUI trajectories filtered by an automatic success judge",
+          "structured reasoning traces",
+          "normalized mobile actions with adb commands"
+        ],
+        "modalities": [
+          "screenshots",
+          "task queries",
+          "reasoning traces",
+          "actions"
+        ],
+        "formats": [
+          "per-trajectory folders with task.json and PNG screenshots"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 871,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "Uni-GUI-Mobile card statistics",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md"
+          },
+          {
+            "value": 14000,
+            "unit": "steps",
+            "qualifier": "approximately",
+            "population": "Uni-GUI-Mobile card statistics",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md"
+          },
+          {
+            "value": 10,
+            "unit": "app categories",
+            "qualifier": "exact",
+            "population": "Uni-GUI-Mobile card statistics",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md"
+          },
+          {
+            "value": 871,
+            "unit": "task.json trajectory files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 45244387",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Mobile/revision/45244387a3c284810894bc2be974b28014dcf838"
+          },
+          {
+            "value": 14275,
+            "unit": "PNG screenshot files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 45244387",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Mobile/revision/45244387a3c284810894bc2be974b28014dcf838"
+          }
+        ],
+        "notes": "Trajectories, steps, app categories and files are different units and are not summed. The task.json count from the manifest matches the card's trajectory count; screenshot files were counted from the manifest, not opened. Coordinates are normalized to [0, 999] on a 1080x2400 screen. No train/test split is declared.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Mobile/raw/45244387a3c284810894bc2be974b28014dcf838/README.md",
+          "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Mobile/revision/45244387a3c284810894bc2be974b28014dcf838",
+          "https://arxiv.org/html/2607.04425v1"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Mobile/revision/45244387a3c284810894bc2be974b28014dcf838",
+        "sha256": "b3ae1be79448b6a2901630def28957fe31e4a16da9ed09c0e4d4e1180faef392",
+        "retrieved_at": "2026-10-18T12:32:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2607.04425v1",
+        "sha256": "7fc33cf335f41716d5030d562cd6b53323a32f81551caa130afa43043509511b",
+        "retrieved_at": "2026-10-18T12:32:02Z"
+      }
+    ],
+    "reviewed_sha256": "5a71bb44474b2544510d62e30112412096b6ffe0f9c2f5abf8e49bf8273bc088",
+    "reviewed_at": "2026-10-18T12:32:30Z"
   }
 ]

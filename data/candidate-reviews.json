@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:mlc-ai/mlc-llm",
+    "url": "https://github.com/mlc-ai/mlc-llm",
+    "decision": "out_of_scope",
+    "reason": "MLC LLM is a general compiler and inference engine that deploys language models on GPUs, in browsers through WebGPU, and on iOS and Android behind an OpenAI-compatible API. It has no GUI, browser or device interaction of its own, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-18T11:50:19Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/mlc-ai/mlc-llm/HEAD/README.md",
+      "sha256": "c6208e455ea145dbac62aa26493175db67bde071d481edf57ceaf17638d4db09",
+      "retrieved_at": "2026-10-18T11:39:37Z"
+    }
   }
 ]

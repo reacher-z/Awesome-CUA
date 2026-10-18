@@ -63143,5 +63143,79 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "agent-desktop",
+    "kind": "tool",
+    "url": "https://github.com/lahfir/agent-desktop",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Rust CLI and C library that let agents read and operate macOS and Windows apps through OS accessibility trees, using snapshot-scoped element refs and JSON output across 56 operational commands.",
+    "scope": "core",
+    "verify_terms": [
+      "agent-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lahfir/agent-desktop/HEAD/README.md"
+    ],
+    "notes": "Ref actions run headless through the accessibility API by default, and a skeleton snapshot mode limits output for dense apps such as Slack. The README lists Linux as planned even though the tree has a crates/linux adapter. The npm package downloads a release binary checked against the release checksums; Windows binaries are unsigned. Benchmark and probe folders in the tree were not reviewed, and the tool was not run.",
+    "details": {
+      "availability": "Published source, npm package and release archives for macOS and Windows; an FFI library ships with each release"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/lahfir/agent-desktop",
+        "sha256": "e8bcca360222e34e6f11dbb63fd6626740eff3d8fcf366f07953d88445954492",
+        "retrieved_at": "2026-10-18T11:43:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/lahfir/agent-desktop/git/trees/main?recursive=1",
+        "sha256": "efef6e5b13ab257c86182e8c7e6cbd4542530a408f6685ab87aab8bf9641d6e4",
+        "retrieved_at": "2026-10-18T11:43:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/lahfir/agent-desktop/HEAD/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-18T11:43:21Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6bd7e94b879b4423fa1e1718d72e76f226a00a0481841542984305afa1a4522d",
+    "reviewed_at": "2026-10-18T11:43:49Z"
   }
 ]

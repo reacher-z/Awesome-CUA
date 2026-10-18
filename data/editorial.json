@@ -16328,16 +16328,37 @@
           "actions",
           "responses"
         ],
-        "formats": [],
+        "formats": [
+          "Parquet"
+        ],
         "splits": [],
-        "counts": [],
-        "notes": "The card reports a cleaned size of 3.12M without defining the counting unit, so no sample total is inferred. The data card declares noncommercial share-alike terms, separately from the model-weight license.",
+        "counts": [
+          {
+            "value": 3160247,
+            "unit": "interaction instances",
+            "qualifier": "exact",
+            "population": "Dreamer-7B training data summarized in Table C.2 of the paper (v2, April 2025)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2411.06559v2"
+          },
+          {
+            "value": 1247960,
+            "unit": "unique URLs",
+            "qualifier": "exact",
+            "population": "Dreamer-7B training data summarized in Table C.2 of the paper (v2, April 2025)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2411.06559v2"
+          }
+        ],
+        "notes": "Table C.2 of the paper (v2) splits the 3,160,247 instances into 2,653,704 click, 241,234 hover, 217,692 type and 47,617 select interactions. The card says heavier cleaning left 3.12M without naming a unit; the 500 Parquet parts at Hub revision dd0ade3 hold 3,118,660 rows by their footers, so the paper total is not the exact release size. The data card declares noncommercial share-alike terms, separately from the model-weight license.",
         "evidence_urls": [
-          "https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md"
+          "https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md",
+          "https://arxiv.org/html/2411.06559v2",
+          "https://huggingface.co/api/datasets/osunlp/Dreamer-V1-Data/tree/dd0ade371ba6a8b33c35138aa941b1221c900da3"
         ]
       }
     },
-    "notes": "The card reports a cleaned size of 3.12M without explicitly defining its counting unit. The catalog leaves the exact sample count unknown. Its data license differs from the model-weight license.",
+    "notes": "Scale is the paper's Table C.2 count; the card says heavier cleaning left 3.12M without naming a unit, and the released Parquet parts hold 3,118,660 rows. Its data license differs from the model-weight license.",
     "evidence_urls": [
       "https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md"
     ],
@@ -16355,6 +16376,28 @@
       "details.modalities",
       "details.download_url",
       "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2411.06559v2",
+        "sha256": "0f0e2a31c094ce96f9424f1a802383b8459faa8ff7914c7dc986f75a9822d978",
+        "retrieved_at": "2026-10-18T16:11:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/osunlp/Dreamer-V1-Data/tree/dd0ade371ba6a8b33c35138aa941b1221c900da3",
+        "sha256": "4f0fb5f44f9389a2a2dbce27c251c302c82f691b0508daf5d95fcba3ca719531",
+        "retrieved_at": "2026-10-18T16:11:35Z"
+      }
     ]
   },
   {

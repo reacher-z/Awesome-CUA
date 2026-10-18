@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:ddupont808/webmarker",
+    "url": "https://github.com/ddupont808/WebMarker",
+    "decision": "not_a_resource",
+    "reason": "Dead link: on 2026-10-18 the GitHub page and API both returned 404 with no rename redirect, the owner's public repositories include no WebMarker, and the Wayback Machine has no capture. It is not identified with the curated reidbarber/webmarker."
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+80 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (71)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (71)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,14 @@ All entries in this section: android.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
+
+## Datasets
+
+All entries in this section: unspecified.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [META-GUI dataset](https://huggingface.co/datasets/X-LANCE/META-GUI) | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | — | data apache-2.0 | Hub release of META-GUI, task-oriented dialogues in which an agent operates mobile apps: each turn pairs the conversation with screenshots, view-hierarchy XML, recorded GUI actions and a reply. | [✓ 2026‑10‑18](https://huggingface.co/datasets/X-LANCE/META-GUI/raw/12660de515ad55e40e8c4e5afa8f4d0e7430ab34/README.md) |
 
 ## Agents
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (14)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -34,6 +34,7 @@
 | [AutoDroid V2 training data](https://huggingface.co/datasets/BlitherBoom/AutoDroid-V2-Dataset) | android | — | — | data mit | Conversation-formatted supervision released for fine-tuning AutoDroid V2, with the project documenting a ShareGPT-style JSON configuration. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/BlitherBoom/AutoDroid-V2-Dataset) |
 | [DroidCall data](https://huggingface.co/datasets/mllmTeam/DroidCall) | android | [2412.00402](https://arxiv.org/abs/2412.00402) (2024) | — | data apache-2.0 | Instruction-to-function-call examples for learning Android intent invocation, with training, testing and API-annotation files for mobile task execution. | [✓ 2026‑10‑17](https://huggingface.co/datasets/mllmTeam/DroidCall/raw/main/README.md) |
 | [GUIOdyssey — current data release](https://huggingface.co/datasets/hflqf88888/GUIOdyssey) | android | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | [8,334 episodes](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) | data cc-by-4.0 | Cross-app Android interaction episodes with fine-grained step instructions, screen descriptions, action context, and target boxes. | [✓ 2026‑10‑16](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) |
+| [META-GUI dataset](https://huggingface.co/datasets/X-LANCE/META-GUI) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | — | data apache-2.0 | Hub release of META-GUI, task-oriented dialogues in which an agent operates mobile apps: each turn pairs the conversation with screenshots, view-hierarchy XML, recorded GUI actions and a reply. | [✓ 2026‑10‑18](https://huggingface.co/datasets/X-LANCE/META-GUI/raw/12660de515ad55e40e8c4e5afa8f4d0e7430ab34/README.md) |
 | [MONDAY](https://github.com/runamu/monday) | android, ios, cross-platform | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | — | code Apache-2.0 | Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/runamu/monday/HEAD/README.md) |
 | [MONDAY annotations](https://huggingface.co/datasets/runamu/MONDAY) | android, ios | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | [19,725 video annotation records](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 333,000 detected scenes](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 313,000 identified actions](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) | — | Video-derived mobile navigation annotations that pair scene boundaries and screen or element boxes with action labels for training and evaluating GUI agents. | [✓ 2026‑10‑17](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) |
 | [MoTIF](https://github.com/aburns4/MoTIF) | android | [2202.02312](https://arxiv.org/abs/2202.02312) (2022) | — | — | Mobile task demonstrations and natural-language instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aburns4/MoTIF/HEAD/README.md) |

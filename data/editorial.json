@@ -63143,5 +63143,117 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:05a9a7c592089d1ddd46",
+    "name": "META-GUI dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/X-LANCE/META-GUI",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "human-in-the-loop",
+      "action-prediction"
+    ],
+    "summary": "Hub release of META-GUI, task-oriented dialogues in which an agent operates mobile apps: each turn pairs the conversation with screenshots, view-hierarchy XML, recorded GUI actions and a reply.",
+    "scope": "core",
+    "verify_terms": [
+      "META-GUI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/X-LANCE/META-GUI/raw/12660de515ad55e40e8c4e5afa8f4d0e7430ab34/README.md"
+    ],
+    "documented_by": [
+      "2205.11029"
+    ],
+    "notes": "The card only links the paper and the X-LANCE/META-GUI-baseline repository, which documents the raw dialog folders (dialog.json, per-turn actions.json, PNG screenshots and XML view hierarchies) and the processed data.json fields. The Hub manifest at revision 12660de5 holds train.tar and test.tar (about 14.3 GB and 1.8 GB); the baseline README instead describes train and dev folders from an Amazon S3 archive, and the split correspondence is not established. No source names the mobile operating system. The archives were not downloaded, so no dialogue or turn counts are recorded. Apache-2.0 is the Hub card's data declaration; the baseline code's MIT license is separate.",
+    "details": {
+      "hub_id": "X-LANCE/META-GUI",
+      "hub_revision": "12660de515ad55e40e8c4e5afa8f4d0e7430ab34",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/X-LANCE/META-GUI/tree/12660de515ad55e40e8c4e5afa8f4d0e7430ab34",
+      "repository_url": "https://github.com/X-LANCE/META-GUI-baseline",
+      "dataset_profile": {
+        "supervision": [
+          "GUI action sequences per dialogue turn",
+          "target elements for clicks",
+          "system response text"
+        ],
+        "modalities": [
+          "dialogue text",
+          "screenshots",
+          "view hierarchies",
+          "actions"
+        ],
+        "formats": [
+          "TAR archives",
+          "JSON",
+          "PNG",
+          "XML"
+        ],
+        "splits": [
+          "train",
+          "test"
+        ],
+        "counts": [],
+        "notes": "Splits are the two Hub archive names; the baseline README's processed data uses train and dev folders. Formats inside the archives come from the baseline README's raw-data description and were not inspected directly.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/X-LANCE/META-GUI/raw/12660de515ad55e40e8c4e5afa8f4d0e7430ab34/README.md",
+          "https://huggingface.co/api/datasets/X-LANCE/META-GUI/revision/12660de515ad55e40e8c4e5afa8f4d0e7430ab34",
+          "https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/a845f88e7d89fe60d3666d15adb32d4e2ef907db/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/X-LANCE/META-GUI/revision/12660de515ad55e40e8c4e5afa8f4d0e7430ab34",
+        "sha256": "ef370ba12e94c45d0fb74fe3e44b29f9e058e19fab739a15a6a1d04f4101460d",
+        "retrieved_at": "2026-10-18T15:45:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.dataset_profile",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/a845f88e7d89fe60d3666d15adb32d4e2ef907db/README.md",
+        "sha256": "2cea1be73ea75acd46990ab1fb567fbd83ad58a2bc69ca858b207660df9fe8c1",
+        "retrieved_at": "2026-10-18T15:45:57Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cb86b4648766f07f671290abec4b75658496082a2e77661ca47aa593351eacda",
+    "reviewed_at": "2026-10-18T15:46:28Z"
   }
 ]

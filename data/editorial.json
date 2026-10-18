@@ -63143,5 +63143,114 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Bah",
+    "kind": "agent",
+    "url": "https://github.com/alexvilelabah/bah-browser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Electron AI browser whose side-panel agent reads numbered page elements from the DOM or accessibility tree, page text and OCR, then clicks and types through Chromium input events, using cloud or local Ollama models.",
+    "scope": "core",
+    "verify_terms": [
+      "Bah"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alexvilelabah/bah-browser/HEAD/README.md"
+    ],
+    "notes": "Browser application by VilelaLab with Windows and macOS builds (release v1.9.2). The agent loop observes each page through an injected script or the CDP accessibility tree (src/renderer/page-executor.ts), adds tesseract.js OCR text, and attaches a page screenshot only when the configured model accepts images (src/main/ai-engine.ts); clicks and keys go through Electron sendInputEvent on the page (src/main/main.ts). Tools include element-reference clicks and fills, coordinate clicks, tabs and navigation, plus non-interface skills such as image generation, video and price lookups. The README states a 25-step cap, confirmation before paying, buying, deleting or entering card data, and a hand-off on CAPTCHAs and login walls. It runs in the user's persistent logged-in session, presents a Chrome user agent and masks navigator.webdriver, and the app also bundles an ad blocker, password manager, media downloader and torrent client. Supported providers are DeepSeek, Mistral, NVIDIA NIM and Ollama. The agent was not run.",
+    "details": {
+      "availability": "Source and installers for Windows and macOS in GitHub releases",
+      "repository_revision": "6441bdce349ab31041c79f5b9002d82e0fa9f4bc",
+      "release_tag": "v1.9.2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/alexvilelabah/bah-browser",
+        "sha256": "bf0ad7dfbd7cf46bd160275a0128196f13aa63f3cac5059f32bfdba3b24e56e4",
+        "retrieved_at": "2026-10-18T15:46:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/alexvilelabah/bah-browser/git/trees/6441bdce349ab31041c79f5b9002d82e0fa9f4bc?recursive=1",
+        "sha256": "8682c74424570d8181af812c426e92ecd071586f033da1e9c4d3a789d927f45a",
+        "retrieved_at": "2026-10-18T15:46:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/alexvilelabah/bah-browser/6441bdce349ab31041c79f5b9002d82e0fa9f4bc/src/renderer/page-executor.ts",
+        "sha256": "f092fe6b3199d6525ba61db8cb5d90c3398c1e974be0813a6239c33ee411870e",
+        "retrieved_at": "2026-10-18T15:46:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/alexvilelabah/bah-browser/6441bdce349ab31041c79f5b9002d82e0fa9f4bc/src/main/ai-engine.ts",
+        "sha256": "d6ffb9b27132a5834b25c0de9d5469c70a75a8ce3fdb3c476ea0f3ba85da8c1b",
+        "retrieved_at": "2026-10-18T15:46:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/alexvilelabah/bah-browser/6441bdce349ab31041c79f5b9002d82e0fa9f4bc/src/main/main.ts",
+        "sha256": "a37361b80074e376de55115338401f46ef5f99f008d2f93d1127cce7ab799c7a",
+        "retrieved_at": "2026-10-18T15:46:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/alexvilelabah/bah-browser/6441bdce349ab31041c79f5b9002d82e0fa9f4bc/LICENSE",
+        "sha256": "40a1c1e0a2996effbe5ab31283e34886b02125428d23bfb5d69aaa14e0dd17f7",
+        "retrieved_at": "2026-10-18T15:46:12Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3ea4ce1a8965d8f880b6776ae8203aff5e63994c77dd44d2245315f1e7aa19c4",
+    "reviewed_at": "2026-10-18T15:46:46Z"
   }
 ]

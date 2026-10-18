@@ -63143,5 +63143,160 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AgentLimb",
+    "kind": "tool",
+    "url": "https://github.com/hooosberg/AgentLimb",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "efficiency"
+    ],
+    "summary": "Chrome extension, local bridge and MCP server that let external AI coding terminals drive the user's real browser through element-ref page snapshots and CDP input, saving learned per-site selectors as JSON.",
+    "scope": "core",
+    "verify_terms": [
+      "AgentLimb"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hooosberg/AgentLimb/HEAD/README.md"
+    ],
+    "notes": "Chrome Manifest V3 extension (version 0.2.2) with the debugger permission, a Node bridge listening on 127.0.0.1:7791 (kernel/bridge/mvp/server.js) and a stdio MCP server (runtime/mcp-server.mjs). It defines 16 tools (kernel/control/host/tools.js): browser session and tab context, page_snapshot with interactive element refs and coordinate centers, navigate, javascript_eval, a computer tool for click, type, scroll, key, hover, drag and optional screenshots, form_input, wait, muscle_recall/remember/commit, ping, and task_plan/step_done/complete/fail. Mouse input is sent as CDP Input.dispatchMouseEvent through chrome.debugger (kernel/control/background/computer/controller.js). Learned selectors and workflows are stored per domain in ~/Desktop/AgentLimb-muscle/<domain>.json (kernel/muscle/store.js). It runs in the user's signed-in Chromium profiles and can fan one task out to several profiles. Token and time savings in the README are publisher-reported from its own runs. The LICENSE is Business Source License 1.1 with an Additional Use Grant limited to personal, academic and evaluation use, changing to Apache-2.0 on 2030-04-12. The tool was not run.",
+    "details": {
+      "availability": "Source, a Chrome Web Store listing, and extension and runtime zips attached to GitHub release v0.2.2",
+      "repository_revision": "c48cb371e7e797c80483323a2a192df7a3ff80aa",
+      "release_tag": "v0.2.2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://github.com/hooosberg/AgentLimb/tree/c48cb371e7e797c80483323a2a192df7a3ff80aa",
+        "sha256": "d968039f72da977dbd078ebc9935675dec6c260a3e4acab21125c1b7dc3e0be9",
+        "retrieved_at": "2026-10-18T16:10:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/LICENSE",
+        "sha256": "93255246410e8963c7433ef7220b48ebce235cb74a0fc2a704b2c643443d7fce",
+        "retrieved_at": "2026-10-18T16:10:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/manifest.json",
+        "sha256": "6460ae4459f2022dba7b553bee1c13bb9897e53508d10bf9b69de2cd341c7553",
+        "retrieved_at": "2026-10-18T16:10:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/kernel/control/host/tools.js",
+        "sha256": "df3ca78c8d04395d9f77b697e35b6fcf74523c86d8c8ab52585c437240dfc3d0",
+        "retrieved_at": "2026-10-18T16:10:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/kernel/control/background/computer/controller.js",
+        "sha256": "79b1e9160dcd80de4156ebd26d293d7b6cfa2d65c51218679bf883fe3cb82a9e",
+        "retrieved_at": "2026-10-18T16:10:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/kernel/bridge/mvp/server.js",
+        "sha256": "3534f5fef1e64d135c13798e6783a5740d7518e523677551ae9c65fd79519031",
+        "retrieved_at": "2026-10-18T16:10:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/kernel/muscle/store.js",
+        "sha256": "9f698306113f0e68eef17ef1c14562a5a4047874e84ea55b50518dd874dee3ce",
+        "retrieved_at": "2026-10-18T16:10:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/runtime/mcp-server.mjs",
+        "sha256": "0329be597e86f0211a2ebd811876e13957465c0e6be9d63b46a68f85392466e2",
+        "retrieved_at": "2026-10-18T16:10:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.availability",
+          "details.release_tag"
+        ],
+        "url": "https://github.com/hooosberg/AgentLimb/releases/expanded_assets/v0.2.2",
+        "sha256": "c8c4c48690494df22736b448f13b5733a44da02629103469f3559894141eef1b",
+        "retrieved_at": "2026-10-18T16:10:54Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.availability"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "BUSL-1.1 with a non-commercial Additional Use Grant; Change License Apache-2.0 on 2030-04-12",
+          "url": "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/LICENSE",
+          "retrieved_at": "2026-10-18T16:10:48Z",
+          "basis": "Repository LICENSE at the reviewed commit: Business Source License 1.1 parameters naming hooosberg as licensor; not an OSI open-source license before the change date."
+        },
+        "reason": "The LICENSE file is the Business Source License 1.1 template with a custom Additional Use Grant that permits only personal, academic and evaluation use, and a Change Date of 2030-04-12 to Apache-2.0.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/hooosberg/AgentLimb/c48cb371e7e797c80483323a2a192df7a3ff80aa/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5e5070a4a10a87d62c7127fdb158ec10c14ebe684f2be53f745d0df52831905c",
+    "reviewed_at": "2026-10-18T16:11:30Z"
   }
 ]

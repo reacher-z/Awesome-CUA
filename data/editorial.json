@@ -63143,5 +63143,189 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MacOS Agent (BIGAI)",
+    "kind": "agent",
+    "url": "https://github.com/Computer-use-agents/MacOS-Agent",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "cross-app",
+      "planning",
+      "automation"
+    ],
+    "summary": "macOS agent in which a smolagents code agent dispatches per-application sub-agents that read accessibility trees and window screenshots and act through pyautogui mouse and keyboard input.",
+    "scope": "core",
+    "verify_terms": [
+      "MacOS Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/HEAD/README.md"
+    ],
+    "notes": "Released by the Computer-use-agents organization; the project page credits the BIGAI ML Group. macosagent/macosagent.py builds a smolagents CodeAgent whose tools are ten app agents (macosagent/agents/__init__.py): Browser, Calendar, Excel, Finder, Player, PowerPoint, Preview, TextEdit, WeChat and Word. The browser agent wraps the external browser-use library (agents/browser_agent/browser.py). In the Calendar agent, the window is captured with screencapture, interactive elements from the macOS accessibility API are drawn as numbered boxes on that screenshot, and the image plus element list go to the model (calendar/calendar.py, calendar/context.py, calendar/utils.py, agent/service.py); clicks and typing use pyautogui and pynput (controller/service.py). The Excel agent likewise clicks and types with pyautogui and runs AppleScript to save and close workbooks (excel_agent/controller/service.py). The README's License section names CC BY-NC 4.0, but the inspected tree has no license file. The agent was not run.",
+    "details": {
+      "availability": "Source only; no packaged release",
+      "repository_revision": "a047656cbfecd0d7067661ed9c1ed718027d052a"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://github.com/Computer-use-agents/MacOS-Agent/tree/a047656cbfecd0d7067661ed9c1ed718027d052a",
+        "sha256": "a42ff50d08c666ccda20c8cbb26c0626468ee0c0ad7a7a34ece1df0c617f6510",
+        "retrieved_at": "2026-10-18T16:04:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/macosagent.py",
+        "sha256": "28f74e7e8f15f6dfadfc3fa379bc1b3eb354dd184ba0a4f9607f17c031547422",
+        "retrieved_at": "2026-10-18T16:04:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/__init__.py",
+        "sha256": "0887e9fcb53039e886f60e869104bb4bd2a3be8eb27719f554a62c72ff361f0b",
+        "retrieved_at": "2026-10-18T16:04:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/browser_agent/browser.py",
+        "sha256": "a39edf46c7a1e304a8bf10c04d6a0682cebf31f6686d6d35b045a92675dc4490",
+        "retrieved_at": "2026-10-18T16:04:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/calendar_agent/calendar/calendar.py",
+        "sha256": "0cd47d5c73b34f8d226aaa716dae58fca3a8dde85849878bcbc39322b22ea0f0",
+        "retrieved_at": "2026-10-18T16:04:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/calendar_agent/calendar/context.py",
+        "sha256": "72416f838c5858f5ec5e9099a043a9d45c89c44ca86bcd9593595bfdb5c1446f",
+        "retrieved_at": "2026-10-18T16:04:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/calendar_agent/calendar/utils.py",
+        "sha256": "d7e4d38936e1492de86a482f23e84b5c4eb2bb548f1b80ebd3adb27a32d70396",
+        "retrieved_at": "2026-10-18T16:05:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/calendar_agent/agent/service.py",
+        "sha256": "26a2502e4e952ea08b68adb79cec2f297ecfe2e2fd847b7ec521ca57215cfc0c",
+        "retrieved_at": "2026-10-18T16:04:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/calendar_agent/controller/service.py",
+        "sha256": "0870d1830bfb53cfa8458d7acfbb84091fe1702005c70e882c25004136d7ccc4",
+        "retrieved_at": "2026-10-18T16:04:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/macosagent/agents/excel_agent/controller/service.py",
+        "sha256": "976d625d7dbe171af7ae467904d5f736b61f68ad50af9f4e6c576658512b4375",
+        "retrieved_at": "2026-10-18T16:04:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/a047656cbfecd0d7067661ed9c1ed718027d052a/pyproject.toml",
+        "sha256": "fa1f717d5392934603ff9e4d9466a92fb875da2a0165e2ba8ff01fb1cf4f1c6e",
+        "retrieved_at": "2026-10-18T16:04:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://computer-use-agents.github.io/macos/",
+        "sha256": "23b1260ed59a7c103368885d661f2f4975fc6e244b200292324d79c6384032f5",
+        "retrieved_at": "2026-10-18T16:04:07Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.code"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README's License section names CC BY-NC 4.0, but the inspected tree at the reviewed commit has no license file, so no source-license grant is recorded.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/HEAD/README.md",
+          "https://github.com/Computer-use-agents/MacOS-Agent/tree/a047656cbfecd0d7067661ed9c1ed718027d052a"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "13b2e3d4a2b2d3fa6af976bf6e3a37c95e0198c981ca082f2295f3da3d4fe0be",
+    "reviewed_at": "2026-10-18T16:05:23Z"
   }
 ]

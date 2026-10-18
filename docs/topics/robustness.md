@@ -33,7 +33,7 @@ All entries in this section: cross-platform.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | [2410.17401](https://arxiv.org/abs/2410.17401) (2024) | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
 
 ## Surveys

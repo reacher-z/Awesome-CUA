@@ -7914,7 +7914,10 @@
     "verify_terms": [
       "AdvAgent"
     ],
-    "notes": "The official GitHub API resolves AI-secure/AdvWeb to AI-secure/AdvAgent. Public data-generation, SFT/DPO training and evaluation scripts are present, with upstream data and external model APIs required. No repository license was found, and no permission for third-party data or model weights is inferred. The README citation block is empty, so no paper identifier is bound from title similarity alone.",
+    "documented_by": [
+      "2410.17401"
+    ],
+    "notes": "The official GitHub API resolves AI-secure/AdvWeb to AI-secure/AdvAgent. Public data-generation, SFT/DPO training and evaluation scripts are present, with upstream data and external model APIs required. No repository license was found, and no permission for third-party data or model weights is inferred. The README citation block is empty, but its opening line names the paper by the exact title of arXiv 2410.17401 (v4), and the project page that the v4 abstract links lists both that paper and this repository.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md"
     ],
@@ -7970,6 +7973,26 @@
         "url": "https://api.github.com/repos/AI-secure/AdvWeb",
         "sha256": "3ea44a202a677c0beb744ab05bd687da93a83365b7eb0b7999c3a4c22d7e2608",
         "retrieved_at": "2026-10-17T09:17:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://ai-secure.github.io/AdvAgent/",
+        "sha256": "65e3703af392bef13940cbf4ed5548c11af58b77910945298f2916d9a48820c8",
+        "retrieved_at": "2026-10-18T16:13:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://arxiv.org/abs/2410.17401v4",
+        "sha256": "dfeafa019452db280d7a80a52ca723ac7022f3d531e47872d256cfd38884dd50",
+        "retrieved_at": "2026-10-18T16:13:07Z"
       }
     ]
   },

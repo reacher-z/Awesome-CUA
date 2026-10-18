@@ -63143,5 +63143,148 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "HarnessBench",
+    "kind": "benchmark",
+    "url": "https://github.com/reacher-z/HarnessBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Benchmark harness that holds the base model fixed and runs six browser-agent harnesses in per-harness containers on ClawBench's everyday online tasks, reusing ClawBench's recording and judging pipeline.",
+    "verify_terms": [
+      "HarnessBench"
+    ],
+    "notes": "Sister project of ClawBench. The repository holds the harness-bench CLI (harness x model x task matrix expansion with credential gating, run, batch and a leaderboard renderer over ClawBench result summaries), six harness adapters (openclaw, hermes, claw-code, browser-use, stagehand, coze-studio), each a Dockerfile, setup script and run script built on the clawbench-base image, and a one-task smoke fixture. The tasks, the five-layer recording and the judge belong to ClawBench and are not in this repository; the run and batch commands call clawbench.run_case, which the code says needs clawbench-eval 0.2.0 or later. At the inspected commit the README's fixtures/lite.txt 20-task subset is absent from the tree, the browser-use run script calls a run-browser-use.py that neither the tree nor its Dockerfile supplies, and the leaderboard and demo videos are placeholders. stagehand and coze-studio need BrowserBase or Coze credentials. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/reacher-z/HarnessBench/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details"
+    ],
+    "details": {
+      "availability": "Alpha CLI and harness adapters (PyPI harness-bench 0.1.6 per pyproject); tasks, recording and judging come from ClawBench, and no benchmark results are published.",
+      "repository_revision": "d7ff1255d623177b10b59f858a95f48b7bd070e5",
+      "benchmark_protocol": {
+        "focus": [
+          "comparison of agent harnesses with the base model held fixed",
+          "everyday online tasks in a real browser"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "harness-specific (each adapter drives Chrome its own way, for example over CDP or Playwright)"
+        ],
+        "actions": [
+          "harness-specific browser actions"
+        ],
+        "evaluation": "Inherited from ClawBench per the README: five-layer session recordings judged by DOM matching and an LLM judge against human reference runs; the leaderboard partitions pass rates by harness, model and category.",
+        "counts": [
+          {
+            "value": 153,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "ClawBench shared task pool (not stored in this repository)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/HEAD/README.md"
+          },
+          {
+            "value": 6,
+            "unit": "harness adapters",
+            "qualifier": "exact",
+            "population": "clawbench.harnesses entry points registered in pyproject.toml",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/pyproject.toml"
+          }
+        ],
+        "notes": "Task definitions and judge prompts live in ClawBench. Cloud harnesses without credentials are reported as skipped, not scored as zero. No results were published at the inspected commit.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/reacher-z/HarnessBench/HEAD/README.md",
+          "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/pyproject.toml",
+          "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/src/harnessbench/matrix.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/pyproject.toml",
+        "sha256": "fd80d793c455e5c13e8cd455e5a686c036af60ec5c56731b411aa68a60b783f1",
+        "retrieved_at": "2026-10-18T16:02:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/src/harnessbench/matrix.py",
+        "sha256": "5c5dc2cb4e363ca2fe1de37982f353b11034f1d65131233047d2a63f0629e4fe",
+        "retrieved_at": "2026-10-18T16:02:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/src/harnessbench/cli.py",
+        "sha256": "2b2b3340d03783ba77adc06dbe97df441f58230aeff68ef73f05bd631c658a1c",
+        "retrieved_at": "2026-10-18T16:02:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/src/harnessbench/harnesses/browser_use/run.sh",
+        "sha256": "781e8b621ad7ef5e214ae9ea2db825a5168c1c3ce42c0ffa45cef481379d0989",
+        "retrieved_at": "2026-10-18T16:02:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/src/harnessbench/harnesses/browser_use/Dockerfile",
+        "sha256": "9520987e628abd8544c45e3a6444893fe7b690daf676dedd247e731cc85f7b00",
+        "retrieved_at": "2026-10-18T16:02:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/reacher-z/HarnessBench/d7ff1255d623177b10b59f858a95f48b7bd070e5/docs/harness-comparison.md",
+        "sha256": "679b94aab37bd6b0a0daff0a999bd4431b06773a2c1942ab4c34372c3013059a",
+        "retrieved_at": "2026-10-18T16:02:46Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1c334914871f8ac362cf7e21033e0699e36e9da0fd4fe82b1a747ce9b223cf31",
+    "reviewed_at": "2026-10-18T16:03:19Z"
   }
 ]

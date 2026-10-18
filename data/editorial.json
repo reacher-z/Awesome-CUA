@@ -2890,7 +2890,93 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "a2df62f9b4359f7839c7d6c6917ff654f9eadeafa92f96311495b71e37abd9ba",
-    "reviewed_at": "2026-10-16T06:35:59Z"
+    "reviewed_at": "2026-10-16T06:35:59Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2502.18356",
+        "evidence_url": "https://arxiv.org/html/2502.18356v1"
+      }
+    ],
+    "details": {
+      "repository_revision": "309866f64642b864414ca2c7ff956e59e01d3317",
+      "benchmark_protocol": {
+        "focus": [
+          "browser interaction challenges that are easy for humans",
+          "five capability domains"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [],
+        "evaluation": "Each challenge reveals a unique password when solved; a run counts as solved when the password appears in the agent's final message, or through the bundled Inspect AI scaffolding.",
+        "counts": [
+          {
+            "value": 150,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "unique id values in analysis/webgames_tasks.jsonl at commit 309866f",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/convergence-ai/webgames/309866f64642b864414ca2c7ff956e59e01d3317/analysis/webgames_tasks.jsonl"
+          },
+          {
+            "value": 53,
+            "unit": "task families",
+            "qualifier": "exact",
+            "population": "families behind the 150 challenges, as the README's results report",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/convergence-ai/webgames/HEAD/README.md"
+          },
+          {
+            "value": 5,
+            "unit": "capability domains",
+            "qualifier": "exact",
+            "population": "domains of the 150 challenges, as the README reports",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/convergence-ai/webgames/HEAD/README.md"
+          }
+        ],
+        "notes": "Challenges run in a client-side single-page app without a server. The paper (v1) describes an earlier release of over 50 challenges. README success rates are the publisher's own runs.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/convergence-ai/webgames/HEAD/README.md",
+          "https://raw.githubusercontent.com/convergence-ai/webgames/309866f64642b864414ca2c7ff956e59e01d3317/analysis/webgames_tasks.jsonl",
+          "https://arxiv.org/html/2502.18356v1"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/webgames/309866f64642b864414ca2c7ff956e59e01d3317/analysis/webgames_tasks.jsonl",
+        "sha256": "beef3997a298c07e903cf840329e185a18eb26f9d823032fbb72f0b77441a2b9",
+        "retrieved_at": "2026-10-18T15:56:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2502.18356v1",
+        "sha256": "0fe91ddc5e1098d93cad1fd3d2a1f39451ac63e29bdf1ec2b9cec5bfe0b02f43",
+        "retrieved_at": "2026-10-18T15:56:05Z"
+      }
+    ]
   },
   {
     "name": "WebCanvas",
@@ -63143,5 +63229,38 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WebGames: Challenging General-Purpose Web-Browsing AI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2502.18356",
+    "summary": "Introduces WebGames, over 50 hermetic client-side web challenges with verifiable solutions, and finds tested vision-language agents reach at most 43.1% success against 95.7% for humans.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "WebGames: Challenging Ge"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2502.18356v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3e41fc3fd002387787cc3afaab89e9ce6d1f77b389562c99280fc2becf67fe44",
+    "reviewed_at": "2026-10-18T15:56:17Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version arXiv abstract page (v1); its title, ordered author list and normalized abstract SHA match the retained snapshot. The paper lists github.com/convergence-ai/webgames as its code, whose current release has grown to 150 challenges. Experimental results have not been independently reproduced."
   }
 ]

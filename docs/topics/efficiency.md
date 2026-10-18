@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (6)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
 
 ## Benchmarks
 
@@ -19,6 +19,7 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [DiMo-GUI](https://github.com/vivo/DiMo-GUI) | cross-platform | [2507.00008](https://arxiv.org/abs/2507.00008) (2025) | code Apache-2.0 | GUI grounding research using modality-aware visual reasoning and test-time scaling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md) |
+| [laya-browser](https://huggingface.co/cklxx/laya-browser) | web | — | weights apache-2.0 | Non-generative browser-agent policy fine-tuned from the 322M laya encoder: one forward pass over page text and the interactive-element list picks the next operation and its target element. | [✓ 2026‑10‑18](https://huggingface.co/cklxx/laya-browser/raw/645cf366a2ae35f1086e8c20eff48f909bb49206/README.md) |
 | [ShowUI](https://github.com/showlab/ShowUI) | cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | code Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI/HEAD/README.md) |
 | [ShowUI 2B](https://huggingface.co/showlab/ShowUI-2B) | cross-platform | — | weights mit | ShowUI vision-language-action checkpoint fine-tuned from Qwen2-VL-2B-Instruct, published as a single PyTorch weight file under the MIT license and tagged for GUI agents and computer use. | [✓ 2026‑10‑16](https://huggingface.co/api/models/showlab/ShowUI-2B) |
 | [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |

@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (4)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -51,6 +51,7 @@ All entries in this section: desktop.
 | --- | --- | --- | --- | --- |
 | [AskUI](https://www.askui.com/) | [AskUI](https://www.askui.com/) | desktop, web | Agentic test-automation platform running plain-language test cases from pixels rather than selectors on desktop apps, Citrix, in-car head units and mobile devices, deployable on-premise or air-gapped. | [✓ 2026‑10‑16](https://www.askui.com/) |
 | [ChatGPT Agent](https://openai.com/index/introducing-chatgpt-agent/) | [OpenAI](https://openai.com/index/computer-using-agent/) | web, desktop | Hosted agent combining browser interaction, tools, and computer-based tasks. | [✓ 2026‑10‑16](https://openai.com/index/introducing-chatgpt-agent/) |
+| [Copilot Studio computer use](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | windows, desktop, web | Copilot Studio agent tool that operates websites and Windows desktop apps on a configured machine through a computer-using model, with stored credentials, site and app allow lists and human supervision. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 | [Scribe](https://scribehow.com/) | — | desktop, web | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
 
 [↑ Back to top](#product-catalog)

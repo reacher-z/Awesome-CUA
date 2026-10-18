@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-63 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+64 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
 
 ## Benchmarks
 
@@ -69,6 +69,14 @@ All entries in this section: web, desktop, windows, macos, linux.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+
+## Products
+
+All entries in this section: windows, desktop, web.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Copilot Studio computer use](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Copilot Studio agent tool that operates websites and Windows desktop apps on a configured machine through a computer-using model, with stored credentials, site and app allow lists and human supervision. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 
 ## Surveys
 

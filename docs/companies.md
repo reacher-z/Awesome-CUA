@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**16 resources:** [Unspecified (16)](#unspecified)
+**17 resources:** [Unspecified (17)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -27,6 +27,7 @@ All entries in this section: unspecified.
 | [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
+| [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 | [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |

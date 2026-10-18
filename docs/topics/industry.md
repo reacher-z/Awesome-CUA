@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-27 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+28 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (11)](#papers)
+**Contents:** [Publishers (17)](#publishers) · [Papers (11)](#papers)
 
 ## Publishers
 
@@ -23,6 +23,7 @@ All entries in this section: unspecified.
 | [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
+| [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 | [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |

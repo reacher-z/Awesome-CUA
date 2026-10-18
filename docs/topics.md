@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,614 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,616 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -19,10 +19,10 @@
 | [Memory](topics/memory.md) | 162 | 1 | 2 | · | 15 | 144 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Efficiency](topics/efficiency.md) | 150 | 1 | · | 5 | 4 | 140 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) · 2026-10-15 |
 | [Tool integration](topics/tool-integration.md) | 131 | 9 | 2 | 4 | 24 | 92 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
-| [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
-| [Workflows](topics/workflow.md) | 110 | 6 | 2 | · | 22 | 80 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
+| [Automation](topics/automation.md) | 112 | · | · | 1 | 28 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
+| [Workflows](topics/workflow.md) | 111 | 6 | 2 | · | 23 | 80 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Long-horizon tasks](topics/long-horizon.md) | 99 | 5 | 1 | 1 | 4 | 88 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
-| [Human in the loop](topics/human-in-the-loop.md) | 79 | 1 | · | · | 7 | 71 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
+| [Human in the loop](topics/human-in-the-loop.md) | 80 | 1 | · | · | 8 | 71 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Imitation learning](topics/imitation-learning.md) | 74 | 1 | 14 | 5 | 10 | 44 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
 | [Reward models](topics/reward-models.md) | 56 | 4 | 3 | 4 | 3 | 42 | [From Trajectories to Grounded Preferences: Process Preference Synthesis via Interaction Element Graphs for Web PRMs](https://arxiv.org/abs/2609.32351) · 2026-09-26 |
 | [Sandboxes](topics/sandbox.md) | 55 | 3 | · | · | 14 | 38 | [MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments](https://arxiv.org/abs/2610.20939) · 2026-10-14 |
@@ -35,7 +35,7 @@
 | [Video](topics/video.md) | 38 | 2 | 7 | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
 | [Observability](topics/observability.md) | 36 | · | · | · | 3 | 33 | [WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites](https://arxiv.org/abs/2610.03036) · 2026-10-02 |
 | [Training-free methods](topics/training-free.md) | 30 | · | · | · | 2 | 28 | [Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents](https://arxiv.org/abs/2609.33304) · 2026-09-27 |
-| [Industry](topics/industry.md) | 27 | · | · | · | 16 | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
+| [Industry](topics/industry.md) | 28 | · | · | · | 17 | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
 | [Recording](topics/recording.md) | 23 | · | 1 | · | 7 | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
 | [UI design](topics/ui-design.md) | 21 | · | 1 | · | · | 20 | [A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents](https://arxiv.org/abs/2609.19843) · 2026-09-17 |
 | [Survey](topics/survey.md) | 19 | · | · | · | · | 19 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) · 2026-09-02 |

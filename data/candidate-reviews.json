@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:yihaop/dreamstruct",
+    "url": "https://github.com/yihaop/dreamstruct",
+    "decision": "alias",
+    "target_id": "arxiv:2410.00201",
+    "reason": "Source of the DreamStruct project website for the paper arXiv 2410.00201 (ECCV 2024): the repository holds a README with the abstract, resource links and BibTeX, plus index.html, fonts, figures and the poster PDF, and no code. The datasets and models it points to are on Google Drive and Hugging Face, not in this repository."
   }
 ]

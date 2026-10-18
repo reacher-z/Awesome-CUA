@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -344,13 +344,13 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 226,
-      "indexed_resources": 225,
-      "resolved_aliases": 6,
-      "curated": 215,
+      "indexed": 227,
+      "indexed_resources": 226,
+      "resolved_aliases": 7,
+      "curated": 216,
       "excluded": 0,
       "set_aside": 29,
-      "unindexed": 83
+      "unindexed": 82
     },
     {
       "id": "zju-gui",

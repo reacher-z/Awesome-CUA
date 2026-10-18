@@ -63143,5 +63143,116 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "gWorld",
+    "kind": "model",
+    "url": "https://github.com/trillion-labs/gWorld",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "world-models",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Open-weight mobile GUI world models at 8B and 32B that take a screenshot and an action and write next-state reasoning plus renderable HTML for the next screen, with inference, rendering and benchmark scripts.",
+    "verify_terms": [
+      "gWorld"
+    ],
+    "documented_by": [
+      "2602.01576"
+    ],
+    "notes": "Code and model release for the gWorld paper. The README gives a vLLM inference recipe with the world-model prompt (screenshot plus a JSON action in a 0-1000 coordinate space) and a Playwright helper that renders the generated HTML at device scale. src/ holds three scripts for MWMBench AndroidWorld, KApps and test-split transitions; they write predicted HTML, rendered images and ground-truth screens, need the MWMBench paths filled in by hand, and contain no scoring code. No training code is released. The Hub cards for trillionlabs/gWorld-8B (base Qwen/Qwen3-VL-8B-Instruct) and trillionlabs/gWorld-32B (base Qwen/Qwen3-VL-32B) declare apache-2.0. The README's License section states Apache License 2.0, but the repository has no LICENSE file and GitHub reports no license. The checkpoints and MWMBench have no catalog records. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Inference recipe and MWMBench generation-and-rendering scripts on GitHub; gWorld-8B and gWorld-32B weights and MWMBench are on the Hugging Face Hub; no training code."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/trillion-labs/gWorld/35f4112736b8646a08bc6d7eef74cbd20493ab69/src/eval_androidworld.py",
+        "sha256": "c394442b30fe309c6a5fbee9de64540d1a9fe13e105826912c1f74e2695f53f2",
+        "retrieved_at": "2026-10-18T15:59:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/trillion-labs/gWorld/35f4112736b8646a08bc6d7eef74cbd20493ab69/src/eval_kapps.py",
+        "sha256": "ae88948eb8dbfd4515fb926779a52caa972d444e8b6f4f4f720c236155e9a9de",
+        "retrieved_at": "2026-10-18T15:59:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/trillion-labs/gWorld/35f4112736b8646a08bc6d7eef74cbd20493ab69/src/eval_test_splits.py",
+        "sha256": "42ebb54928b7459b302b54a828faaefea6e2b66cc48c07d8d91227008cc8848b",
+        "retrieved_at": "2026-10-18T15:59:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/trillionlabs/gWorld-8B/raw/cf535ccd9b4228a23ec0773e8ab5aaaa26571a57/README.md",
+        "sha256": "169d67b5ac620142e8da88b7cf58e56955bef5701df01b98933b08edf6a1d8d4",
+        "retrieved_at": "2026-10-18T15:59:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/trillionlabs/gWorld-32B/raw/060814019a2404ec67bb735494f00ab7b7c51fc3/README.md",
+        "sha256": "46d2bf7bc74acd3cffe6e59e7693e93dadf27fdeae38b7e6d0dc0456aab2e9c3",
+        "retrieved_at": "2026-10-18T15:59:21Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "apache-2.0",
+          "url": "https://huggingface.co/trillionlabs/gWorld-8B/raw/cf535ccd9b4228a23ec0773e8ab5aaaa26571a57/README.md",
+          "retrieved_at": "2026-10-18T15:59:21Z",
+          "basis": "Publisher model cards for gWorld-8B and gWorld-32B both declare apache-2.0 in their metadata headers."
+        },
+        "reason": "Both Hub model cards (gWorld-8B at cf535cc, gWorld-32B at 0608140) declare apache-2.0 in their metadata headers. This covers the released weights only; the GitHub repository has no LICENSE file.",
+        "evidence_urls": [
+          "https://huggingface.co/trillionlabs/gWorld-8B/raw/cf535ccd9b4228a23ec0773e8ab5aaaa26571a57/README.md",
+          "https://huggingface.co/trillionlabs/gWorld-32B/raw/060814019a2404ec67bb735494f00ab7b7c51fc3/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f5ae4cdd0c25f724765729c5a9e860906e730d8c395b9c3fff65af8b14ae0803",
+    "reviewed_at": "2026-10-18T16:00:26Z"
   }
 ]

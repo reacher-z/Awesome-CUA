@@ -63143,5 +63143,117 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:milind-soni/openmausbot",
+    "name": "OpenMausBot",
+    "kind": "agent",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "aliases": [
+      "MausBot",
+      "OpenGrokBot"
+    ],
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Desktop chat app whose bots run local Claude, Codex or Grok CLIs and each get a computer: a cloud Linux desktop, local VM, VPS or the host through Cua Driver, plus a built-in browser and approval cards.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenMausBot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/milind-soni/OpenMausBot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "OpenMausBot ships no model: an Electron shell talks to a local harness server that runs the claude, codex and grok CLIs or other ACP engines and normalises their events. Host control uses the bundled Cua Driver and needs explicit opt-in; the README marks it supported on macOS, beta on Ubuntu Xorg and disabled on Wayland. Cloud computers come from the third-party Boat service and connected apps from Composio. The README says the project was formerly OpenGrokBot. Everything outside enterprise/ is Apache-2.0; enterprise/ is source-available under its own license. Code was read, not run.",
+    "details": {
+      "availability": "Public source with packaged macOS, Windows and Ubuntu releases; cloud computers need a third-party Boat account",
+      "repository_revision": "62a7b7ac72e4f0adae1b373032592df7327d7b26"
+    },
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:trycua/cua",
+        "evidence_url": "https://raw.githubusercontent.com/milind-soni/OpenMausBot/62a7b7ac72e4f0adae1b373032592df7327d7b26/docs/computer-use-integration.md"
+      }
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/milind-soni/OpenMausBot/62a7b7ac72e4f0adae1b373032592df7327d7b26/docs/computer-use-integration.md",
+        "sha256": "06789e95d4eca5cd14bdfe9be11bf4c1911c08b21890777d6b33b87912e801bc",
+        "retrieved_at": "2026-10-18T11:40:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/milind-soni/OpenMausBot/62a7b7ac72e4f0adae1b373032592df7327d7b26/apps/docs/content/docs/computers/index.mdx",
+        "sha256": "16765486dc0d3ab46f7c3d740cf1f1c64ed6c146923caba72a45f61ae49cc05a",
+        "retrieved_at": "2026-10-18T11:40:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/milind-soni/OpenMausBot/62a7b7ac72e4f0adae1b373032592df7327d7b26/third_party/cua-driver/README.md",
+        "sha256": "3462019dea5235431871a0c9c8f83352b9460d49c7694f8e45eb4177662934a8",
+        "retrieved_at": "2026-10-18T11:40:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/milind-soni/OpenMausBot/62a7b7ac72e4f0adae1b373032592df7327d7b26/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-18T11:40:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/milind-soni/OpenMausBot/62a7b7ac72e4f0adae1b373032592df7327d7b26/LICENSING.md",
+        "sha256": "e2741dbfc0f289c53b7a6bdbbce4ddca82155c5263ebd478ae19156975cc77b2",
+        "retrieved_at": "2026-10-18T11:40:05Z"
+      }
+    ],
+    "reviewed_sha256": "506bc30fecdebe7a024e7f694304c3dfecfce9c362a1b01ee9751a71faad888f",
+    "reviewed_at": "2026-10-18T11:40:33Z"
   }
 ]

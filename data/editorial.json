@@ -1654,6 +1654,124 @@
     "reviewed_at": "2026-10-16T06:40:51Z",
     "documented_by": [
       "2512.14014"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations"
+    ],
+    "details": {
+      "repository_revision": "3db6f2913bd41b105f9b50efcaec1b155faf9c6f",
+      "benchmark_protocol": {
+        "focus": [
+          "next-screen prediction for mobile GUI actions",
+          "semantic world modeling"
+        ],
+        "setting": "offline",
+        "observations": [
+          "current Android screenshot",
+          "natural-language action"
+        ],
+        "actions": [
+          "yes/no answers about the next screen",
+          "free-text description of next-screen changes"
+        ],
+        "evaluation": "eval_qa.py asks a model yes/no questions about the screen after an action and reports exact-match accuracy. For generation rows, score_gpt4o.py has an LLM judge rate accuracy, completeness and relevance from 1 to 5 against the reference change text and the next screenshot; without a config it calls gpt-4o-mini.",
+        "counts": [
+          {
+            "value": 1787,
+            "unit": "yes/no question rows",
+            "qualifier": "exact",
+            "population": "benchmark/qa.csv",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/benchmark/qa.csv"
+          },
+          {
+            "value": 250,
+            "unit": "next-state generation rows",
+            "qualifier": "exact",
+            "population": "benchmark/gen.csv (all rows in the test split)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/benchmark/gen.csv"
+          }
+        ],
+        "notes": "Rows were counted with Python's csv reader at commit 3db6f29. qa.csv has 1,162 Yes and 625 No answers over 459 distinct start screenshots; gen.csv rows come from the google_apps, web_shopping, install and general folders. Screenshots are downloaded separately from the jacklishufan/mobileworldbench Hub dataset. The MobileWorld training annotations are a separate Hub release and are not counted here.",
+        "evidence_urls": [
+          "https://api.github.com/repos/jacklishufan/MobileWorld/git/trees/3db6f2913bd41b105f9b50efcaec1b155faf9c6f?recursive=1",
+          "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/benchmark/qa.csv",
+          "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/benchmark/gen.csv",
+          "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/scripts/eval_qa.py",
+          "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/scripts/eval_gen.py",
+          "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/scripts/score_gpt4o.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/jacklishufan/MobileWorld/git/trees/3db6f2913bd41b105f9b50efcaec1b155faf9c6f?recursive=1",
+        "sha256": "93c742ddc94eaae6d9b905de6978988d427710a16acac768546586fce6003aff",
+        "retrieved_at": "2026-10-18T15:36:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/benchmark/qa.csv",
+        "sha256": "6ac85d8ef55a0ae396878ec18ea428ce9242f884acfad9d0061e10641ed1958d",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/benchmark/gen.csv",
+        "sha256": "34147766ac864138b55c09df2807b0c85f9959bc283e93d22c38e9b6a82a1cb1",
+        "retrieved_at": "2026-10-18T15:36:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/scripts/eval_qa.py",
+        "sha256": "4bb2b4e7454185fd50b1cb6e21c3ca48ecc81a5854393558f49373bcfc39e38e",
+        "retrieved_at": "2026-10-18T15:36:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/scripts/eval_gen.py",
+        "sha256": "83a4f66c81345d794a45417b78cd3772f40d31992e0c46233434f19fdf0af81f",
+        "retrieved_at": "2026-10-18T15:36:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/jacklishufan/MobileWorld/3db6f2913bd41b105f9b50efcaec1b155faf9c6f/scripts/score_gpt4o.py",
+        "sha256": "724077c7b56217a4e1fa4ecc34dd60e9fde5c4a8ddf85bd46389b6939e48a9d6",
+        "retrieved_at": "2026-10-18T15:36:52Z"
+      }
     ]
   },
   {

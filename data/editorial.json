@@ -63143,5 +63143,94 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:ambersahdev/open-interface",
+    "name": "Open Interface",
+    "kind": "agent",
+    "url": "https://github.com/AmberSahdev/Open-Interface",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "planning",
+      "state-tracking"
+    ],
+    "summary": "Desktop app that sends a user request and screenshots to an LLM backend, executes the returned steps as simulated keyboard and mouse input, and re-checks progress with new screenshots.",
+    "scope": "core",
+    "verify_terms": [
+      "Open Interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AmberSahdev/Open-Interface/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "README lists packaged v0.9.0 builds for macOS, Linux (tested on Ubuntu 20.04) and Windows (tested on Windows 10) plus a run-from-source path; binaries were not downloaded or run. Backends are GPT-4o, Gemini or an OpenAI-compatible custom endpoint, and only the primary display is observed. LICENSE.md is the GNU GPL v3 text for the code; model-provider terms are separate. No benchmark results are reported.",
+    "details": {
+      "availability": "Published source; official release metadata inspected",
+      "release_tag": "v0.9.0",
+      "repository_url": "https://github.com/AmberSahdev/Open-Interface",
+      "repository_tree_sha": "5a4f706223507fc9d9eb2239cced85385fcb1308"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/AmberSahdev/Open-Interface",
+        "sha256": "94f79351843c518ca257c9eb0522480e73741273c98f96c67e49c6cc5b0b57fa",
+        "retrieved_at": "2026-10-18T10:51:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/AmberSahdev/Open-Interface/git/trees/main?recursive=1",
+        "sha256": "8cd0e207b93b8686e12fdb0de455791ab7fde678960847a24c43eccf52fc9356",
+        "retrieved_at": "2026-10-18T10:51:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/AmberSahdev/Open-Interface/releases/latest",
+        "sha256": "7661c0b81d392bd2016b62e9b7bf33c456ab0d0243141ad8ffcca9966a31b9ba",
+        "retrieved_at": "2026-10-18T10:51:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/AmberSahdev/Open-Interface/HEAD/LICENSE.md",
+        "sha256": "0890440cf43793a04362af2f369e762de72a333a1fd422be69f2fd3c87013bf7",
+        "retrieved_at": "2026-10-18T10:51:39Z"
+      }
+    ],
+    "reviewed_sha256": "ec2d1a720804c82b7eb0013e8258eb995f1cc1cb7ad7c44d2db7b1c033e403ff",
+    "reviewed_at": "2026-10-18T10:52:17Z"
   }
 ]

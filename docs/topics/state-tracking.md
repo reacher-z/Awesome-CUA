@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+
+## Agents
+
+All entries in this section: desktop, macos, linux, windows.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Open Interface](https://github.com/AmberSahdev/Open-Interface) | — | code GPL-3.0 | Desktop app that sends a user request and screenshots to an LLM backend, executes the returned steps as simulated keyboard and mouse input, and re-checks progress with new screenshots. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AmberSahdev/Open-Interface/HEAD/README.md) |
 
 ## Frameworks
 

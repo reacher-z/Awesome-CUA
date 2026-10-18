@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:m13v/fazm",
+    "target_id": "github:mediar-ai/fazm",
+    "repository_id": 1172888553,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:52:17Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/m13v/fazm",
+        "resolved_url": "https://api.github.com/repositories/1172888553",
+        "repository_id": 1172888553,
+        "full_name": "mediar-ai/fazm",
+        "html_url": "https://github.com/mediar-ai/fazm",
+        "retrieved_at": "2026-10-18T11:52:16Z",
+        "sha256": "76199a4a55fb417b104c5a7abce79190094d3cbe45346db69ea9fd00ac23b6a3"
+      },
+      {
+        "url": "https://api.github.com/repos/mediar-ai/fazm",
+        "resolved_url": "https://api.github.com/repos/mediar-ai/fazm",
+        "repository_id": 1172888553,
+        "full_name": "mediar-ai/fazm",
+        "html_url": "https://github.com/mediar-ai/fazm",
+        "retrieved_at": "2026-10-18T11:52:17Z",
+        "sha256": "76199a4a55fb417b104c5a7abce79190094d3cbe45346db69ea9fd00ac23b6a3"
+      }
+    ]
   }
 ]

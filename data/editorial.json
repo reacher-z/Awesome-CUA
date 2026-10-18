@@ -63143,5 +63143,110 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:mediar-ai/fazm",
+    "name": "Fazm",
+    "kind": "agent",
+    "url": "https://github.com/mediar-ai/fazm",
+    "environments": [
+      "macos",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Voice-driven macOS desktop agent app that runs Claude through an ACP bridge, with MCP tools for Playwright browser control, Google Workspace and macOS app automation.",
+    "scope": "core",
+    "verify_terms": [
+      "Fazm"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.code"
+    ],
+    "notes": "Formerly m13v/fazm; both names resolve to GitHub repository 1172888553 (not a fork, not archived). The repository holds the Swift/SwiftUI app, the TypeScript ACP bridge that wires Playwright, browser-harness, Google Workspace and macOS MCP servers, plus backend, website and inbox-pipeline code. The macOS-control server (mcp-server-macos-use) is built from a separate local checkout and skipped when absent. By default run.sh fetches a bootstrap config from fazm.ai, and model keys come from the hosted backend after sign-in. The README declares MIT, but the tree has no root LICENSE file and the GitHub API reports no license.",
+    "details": {
+      "repository_url": "https://github.com/mediar-ai/fazm",
+      "repository_tree_sha": "f798cfab52eb62cb8ff6b22a1ed8628937634d20"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/mediar-ai/fazm",
+        "sha256": "3a23e6c8926013bc384a3e375d617acec8217a0e4a502a12553abf8e48d6bfd0",
+        "retrieved_at": "2026-10-18T11:52:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/mediar-ai/fazm/git/trees/main?recursive=1",
+        "sha256": "0d90654738c7db61f858020a3ff39a46eeebdbfb9b06394454655adbab94ad43",
+        "retrieved_at": "2026-10-18T11:52:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/acp-bridge/src/index.ts",
+        "sha256": "cc1d55073a15872a023163712d9c4c44bcb258064a1e2141bb6698e738a98ad8",
+        "retrieved_at": "2026-10-18T11:52:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/build.sh",
+        "sha256": "4c05ec93972df2c736853315d2b5aa44dc7e5fcb2b55f0e16e0af95f499d4a22",
+        "retrieved_at": "2026-10-18T11:52:15Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md",
+          "retrieved_at": "2026-10-18T11:52:35Z",
+          "basis": "The README's License section declares MIT; there is no root LICENSE file and the GitHub API reports no license. Bundled third-party MCP servers, the hosted backend and model services keep their own terms."
+        },
+        "reason": "The README's License section declares MIT; there is no root LICENSE file and the GitHub API reports no license. Bundled third-party MCP servers, the hosted backend and model services keep their own terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "945f8a4b4a426217f6485e42b6936c36cfb7ac706f81d8d394d361d15b18e09c",
+    "reviewed_at": "2026-10-18T11:52:36Z"
   }
 ]

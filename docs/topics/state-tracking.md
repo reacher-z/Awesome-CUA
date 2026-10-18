@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+
+## Benchmarks
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [DynamicGUIBench](https://huggingface.co/datasets/L1007555652/osworld_env) | [2604.25380](https://arxiv.org/abs/2604.25380) (2026) | [500 task JSON files](https://huggingface.co/api/datasets/L1007555652/osworld_env) · [150 tasks](https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md) | — | Desktop benchmark of 500 OSWorld-style tasks whose interfaces change between observations through scripted pop-ups, timed edits and shifting lists, with bilingual instructions and end-state evaluators. | [✓ 2026‑10‑18](https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md) |
 
 ## Frameworks
 

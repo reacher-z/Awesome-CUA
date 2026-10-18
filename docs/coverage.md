@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-18T15:40:41Z**. Generated from committed source receipts.
 
-- 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
+- 3,176 resource records: 1,615 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,239 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -17,7 +17,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | [agent](agents.md) | 11 | 16 | 5 | 2 | 1 | 16 | 1 | · | 1 | 1 |
-| [benchmark](benchmarks.md) | 42 | 20 | 5 | 3 | 5 | 19 | 1 | · | 14 | 3 |
+| [benchmark](benchmarks.md) | 42 | 21 | 5 | 3 | 6 | 19 | 1 | · | 14 | 3 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 25 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 7 |
 | [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
@@ -40,7 +40,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-17 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-17 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-17 |
-| [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-17 |
+| [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 117 | 110 | 1 | 9 | 43 | OK · 2026-10-17 |
 | [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | OK · 2026-10-17 |
 | [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-10-17 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 27 | OK · 2026-10-17 |

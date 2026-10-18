@@ -63143,5 +63143,137 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "DynamicGUIBench",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/L1007555652/osworld_env",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "state-tracking",
+      "robustness"
+    ],
+    "summary": "Desktop benchmark of 500 OSWorld-style tasks whose interfaces change between observations through scripted pop-ups, timed edits and shifting lists, with bilingual instructions and end-state evaluators.",
+    "scope": "core",
+    "verify_terms": [
+      "DynamicGUIBench"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol",
+      "licenses.data"
+    ],
+    "notes": "The Hub repository is named osworld_env; its card titles the release DynamicGUIBench. The manifest at revision 44adf69d holds 500 task JSON files under dynamic/ plus per-application asset folders and three stray .nfs files; it contains no agent code. The card states that its Qwen3-VL and UI-TARS results come from the original 150-task release and do not carry over to the 500-task expansion. Tasks run in a separately configured OSWorld environment. No data license is declared.",
+    "details": {
+      "hub_id": "L1007555652/osworld_env",
+      "hub_revision": "44adf69d36a9bd27fbf2173fa619eb0ee92da095",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/L1007555652/osworld_env/tree/44adf69d36a9bd27fbf2173fa619eb0ee92da095",
+      "benchmark_protocol": {
+        "focus": [
+          "desktop task completion when interface state changes between observations"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "English and Chinese task instructions",
+          "live desktop application state"
+        ],
+        "actions": [
+          "desktop GUI actions through a separately configured agent"
+        ],
+        "evaluation": "Each task JSON names an OSWorld evaluator function with its expected result for an executable end-state check; a config_myself block launches applications and scripts the dynamic events during the run.",
+        "counts": [
+          {
+            "value": 500,
+            "unit": "task JSON files",
+            "qualifier": "exact",
+            "population": "dynamic/ directory at Hub revision 44adf69d",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/L1007555652/osworld_env"
+          },
+          {
+            "value": 150,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "original verified release before the 20 August 2026 expansion",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md"
+          }
+        ],
+        "notes": "Computed per-folder task files: Chrome 75, GIMP 45, LibreOffice Calc 50, Impress 42, Writer 50, multi-app 66, OS 42, Thunderbird 44, VLC 38 and VS Code 48. The card groups tasks into interruptive UI states, ephemeral references, dynamic list selection and content-triggered interaction.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md",
+          "https://huggingface.co/api/datasets/L1007555652/osworld_env",
+          "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/dynamic/chrome/chrome_addcart.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/api/datasets/L1007555652/osworld_env",
+        "sha256": "2f568cf0a9b4a7691097809c10f8455372841d6f09421287e4380b1b3de8e3e0",
+        "retrieved_at": "2026-10-18T15:40:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/dynamic/chrome/chrome_addcart.json",
+        "sha256": "64334a72b6d5a9e2cf3a04650db9cd4a73fd36919648853ae266fcc88d60bd0b",
+        "retrieved_at": "2026-10-18T15:40:41Z"
+      }
+    ],
+    "documented_by": [
+      "2604.25380"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "Neither the dataset card nor the Hub metadata declares a license for the task files or assets.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "8492eacf5283bbb02e54c8f4f340bbfebee6539f49f8933743ac310abdf418e0",
+    "reviewed_at": "2026-10-18T15:41:43Z"
   }
 ]

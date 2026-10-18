@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:mishushakov/llm-scraper",
+    "url": "https://github.com/mishushakov/llm-scraper",
+    "decision": "out_of_scope",
+    "reason": "LLM Scraper is a TypeScript library that passes a Playwright page the caller has already opened (as HTML, Markdown, text or a screenshot) to an LLM and returns data matching a Zod or JSON schema, or generates a Playwright extraction script. It does not navigate, click or type, so it is a web-data extraction tool rather than a resource for agents that operate interfaces.",
+    "reviewed_at": "2026-10-18T11:50:08Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/mishushakov/llm-scraper/HEAD/README.md",
+      "sha256": "e0db83490da09d27e7f958a50b966dc867c1f9d7401cce06b35ee43b1863ac7c",
+      "retrieved_at": "2026-10-18T11:39:37Z"
+    }
   }
 ]

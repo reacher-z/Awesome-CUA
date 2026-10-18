@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (36)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -69,6 +69,7 @@
 | [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
 | [UI-S1 released training examples](https://huggingface.co/datasets/mPLUG/UI_S1_dataset) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | [1,000 training examples](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/UI-S1/README.md) | data apache-2.0 | A public example subset of the UI-S1 mobile training data, packaged as JSONL annotations and Parquet images. | [✓ 2026‑10‑17](https://huggingface.co/datasets/mPLUG/UI_S1_dataset/raw/main/README.md) |
 | [UIBert AppSim and RefExp annotations](https://github.com/google-research-datasets/uibert) | android | [2107.13731](https://arxiv.org/abs/2107.13731) (2021) | — | data CC-BY-4.0 | Two Rico-derived UI component retrieval datasets: AppSim pairs semantically similar elements across screens, while RefExp links referring expressions to target elements. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uibert/HEAD/README.md) |
+| [VLM Reasoning Traces for mobile GUI tasks](https://github.com/LlamaTouch/VLM-Reasoning-Traces) | android | [2503.16788](https://arxiv.org/abs/2503.16788) (2025) | [500 step responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/AndroidControl/claude-thinking-task-action.jsonl) · [502 grounding responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/ScreenSpot/gemini-base-bbox-pixel.jsonl) | — | Recorded outputs of Claude 3.7 Sonnet and Gemini 2.0 Flash, each with and without reasoning, on AndroidControl steps and ScreenSpot mobile grounding, including Claude's thinking text. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/README.md) |
 
 ## Models
 

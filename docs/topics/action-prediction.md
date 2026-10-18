@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [ShowUI-π training data](https://huggingface.co/datasets/showlab/ShowUI-pi-data) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | — | Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md) |
 | [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
+| [VLM Reasoning Traces for mobile GUI tasks](https://github.com/LlamaTouch/VLM-Reasoning-Traces) | android | [2503.16788](https://arxiv.org/abs/2503.16788) (2025) | [500 step responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/AndroidControl/claude-thinking-task-action.jsonl) · [502 grounding responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/ScreenSpot/gemini-base-bbox-pixel.jsonl) | — | Recorded outputs of Claude 3.7 Sonnet and Gemini 2.0 Flash, each with and without reasoning, on AndroidControl steps and ScreenSpot mobile grounding, including Claude's thinking text. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/README.md) |
 
 ## Models
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (14)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -42,6 +42,7 @@
 | [UI-Genie reward data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md) |
 | [UI-Genie trajectory data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Synthetic mobile GUI trajectory supervision and screenshots released with the UI-Genie agent-training pipeline. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-Agent-16k/raw/main/README.md) |
 | [UI-S1 released training examples](https://huggingface.co/datasets/mPLUG/UI_S1_dataset) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | [1,000 training examples](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/UI-S1/README.md) | data apache-2.0 | A public example subset of the UI-S1 mobile training data, packaged as JSONL annotations and Parquet images. | [✓ 2026‑10‑17](https://huggingface.co/datasets/mPLUG/UI_S1_dataset/raw/main/README.md) |
+| [VLM Reasoning Traces for mobile GUI tasks](https://github.com/LlamaTouch/VLM-Reasoning-Traces) | android | [2503.16788](https://arxiv.org/abs/2503.16788) (2025) | [500 step responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/AndroidControl/claude-thinking-task-action.jsonl) · [502 grounding responses](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/ScreenSpot/gemini-base-bbox-pixel.jsonl) | — | Recorded outputs of Claude 3.7 Sonnet and Gemini 2.0 Flash, each with and without reasoning, on AndroidControl steps and ScreenSpot mobile grounding, including Claude's thinking text. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/README.md) |
 
 ## Models
 

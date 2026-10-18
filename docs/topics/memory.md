@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-162 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+163 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (1)](#models) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
 
 ## Benchmarks
 
@@ -20,6 +20,14 @@ All entries in this section: ios.
 | --- | --- | --- | --- | --- | --- | --- |
 | [Aria-UI Context-aware Data](https://huggingface.co/datasets/Aria-UI/Aria-UI_Context-aware_Data) | android | — | [≈ 992,000 instruction-output pairs](https://raw.githubusercontent.com/AriaUI/Aria-UI/HEAD/README.md) | data apache-2.0 | Episode-based mobile GUI grounding data released with Aria-UI for incorporating interaction history into target localization. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Aria-UI/Aria-UI_Context-aware_Data) |
 | [MT-Mind2Web](https://huggingface.co/datasets/magicgh/MT-Mind2Web) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | [600 conversations](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) · [2,896 dialogue turns](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) | data cc-by-4.0 | Multi-turn web-navigation conversations constructed from Mind2Web interactions, with dialogue turns, HTML snapshots, element candidates and click/type/select action sequences. | [✓ 2026‑10‑17](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) |
+
+## Models
+
+All entries in this section: cross-platform, desktop, android, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [GUI-Owl 1.5 8B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think/raw/afe3707fc84caebc4d7046118b34493ecf8bb060/README.md) |
 
 ## Agents
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (18)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
@@ -20,6 +20,7 @@
 | [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
 | [ARPO UI-TARS-1.5-7B checkpoint](https://huggingface.co/Fanbin/ARPO_UITARS1.5_7B) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | — | UI-TARS-1.5-7B-derived checkpoint trained with ARPO on OSWorld desktop tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
+| [GUI-Owl 1.5 8B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think/raw/afe3707fc84caebc4d7046118b34493ecf8bb060/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:nus-apr/auto-code-rover",
+    "url": "https://github.com/nus-apr/auto-code-rover",
+    "decision": "out_of_scope",
+    "reason": "AutoCodeRover resolves GitHub issues by searching a repository's code structure, localizing faults and generating patches, and is evaluated on SWE-bench. It operates on source code and tests only, with no graphical, browser or mobile interface, so it is a software-engineering agent rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T11:51:06Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/AutoCodeRoverSG/auto-code-rover/HEAD/README.md",
+      "sha256": "4f1d638718023c068c46aef46335f0843b22cd2a1cbeeee7cc8715e2cf5b742d",
+      "retrieved_at": "2026-10-18T11:44:26Z"
+    }
   }
 ]

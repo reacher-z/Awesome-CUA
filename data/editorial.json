@@ -63143,5 +63143,128 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:b1837823421bd08cb826",
+    "name": "OS-Genesis 4B AC",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "InternVL2-4B checkpoint fine-tuned on OS-Genesis AndroidControl trajectories; its card prompt pairs a screenshot and accessibility tree with the goal and action history to produce the next thought and action.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis-4B-AC"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC/raw/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3/README.md"
+    ],
+    "documented_by": [
+      "2412.19723"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:d3ec5122a2b52fd5ae4b",
+        "evidence_url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC/raw/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3/README.md"
+      }
+    ],
+    "notes": "This is the 4B AndroidControl (AC) task-specific checkpoint; the card calls it a mobile action model, and the 7B and 8B AC checkpoints and the AndroidWorld (AW) and web variants are separate releases whose results are not transferred to it. The card prose, its YAML base_model field and config.json agree on InternVL2-4B, whose language model is Phi-3-mini (Phi3ForCausalLM). The card and the OS-Genesis repository README both list it among the AC family models used for the AndroidControl benchmark. Two public Safetensors shards are present and the Hub reports 4,146,868,224 BF16 parameters. The card declares Apache-2.0 for the checkpoint. No checkpoint was loaded and no result was reproduced.",
+    "details": {
+      "hub_id": "OS-Copilot/OS-Genesis-4B-AC",
+      "hub_revision": "c73c72530fb7a9d7e482fbb96ad23b118a47e8c3",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC/tree/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3",
+      "repository_url": "https://github.com/OS-Copilot/OS-Genesis",
+      "base_model": "OpenGVLab/InternVL2-4B",
+      "architecture": "InternVLChatModel",
+      "parameter_label": "4B",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ],
+      "training_data_note": "The card's table names os_genesis_ac_training_data.jsonl in OS-Copilot/OS-Genesis-mobile-data as the training data."
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.base_model",
+      "details.parameter_label",
+      "details.repository_url",
+      "details.training_data_note",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-4B-AC/revision/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3",
+        "sha256": "212d8f3727374d3fb2f91de0381698199e05855d2206cf68498d36c22b213df4",
+        "retrieved_at": "2026-10-18T16:03:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.base_model",
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC/raw/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3/config.json",
+        "sha256": "bda54194dc2fa23a880791f0a7ce2d78cc1be849d745c0af67bbf96cbbb05a8c",
+        "retrieved_at": "2026-10-18T16:03:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md",
+        "sha256": "430e495ab250395d666854bd18b0fc29b819cd784cd7730215ef65e461834d0d",
+        "retrieved_at": "2026-10-18T16:03:42Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC/raw/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3/README.md",
+          "retrieved_at": "2026-10-18T16:03:42Z",
+          "basis": "Publisher model-card declaration for the checkpoint; base-model, code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the checkpoint; base-model, code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/OS-Copilot/OS-Genesis-4B-AC/raw/c73c72530fb7a9d7e482fbb96ad23b118a47e8c3/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "db757573a6e4646207890032dffd6bc7592409063399b2dd8d1d0e706db18394",
+    "reviewed_at": "2026-10-18T16:04:22Z"
   }
 ]

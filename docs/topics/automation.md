@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (7)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
 
 ## Models
 
@@ -29,6 +29,7 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
+| [App Use](https://github.com/erickjtorres/app-use) | ios, android | — | code MIT | Python library that connects LLM agents to native iOS and Android apps through an Appium server, building element trees from the app UI and issuing taps, typing and gestures toward a task. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/README.md) |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
 | [Midscene.js](https://github.com/web-infra-dev/midscene) | cross-platform | — | code MIT | Visual automation toolkit for web, mobile, and desktop interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-infra-dev/midscene/HEAD/README.md) |

@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:erickjtorres/app-use",
+    "name": "App Use",
+    "kind": "framework",
+    "url": "https://github.com/erickjtorres/app-use",
+    "environments": [
+      "ios",
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "Python library that connects LLM agents to native iOS and Android apps through an Appium server, building element trees from the app UI and issuing taps, typing and gestures toward a task.",
+    "scope": "core",
+    "verify_terms": [
+      "App Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Distributed on PyPI as app-use (Python 3.11+), with optional memory and CLI extras; the latest GitHub release is 0.0.3 (June 2025). iOS needs macOS, Xcode and a signed WebDriverAgent; Android needs the Android SDK with a device or emulator. Demos are on iOS; no benchmark results are reported. MIT is declared for the code; model providers and Appium keep their own terms.",
+    "details": {
+      "availability": "Published source; official release metadata inspected",
+      "release_tag": "0.0.3",
+      "repository_url": "https://github.com/erickjtorres/app-use",
+      "repository_tree_sha": "fc895885e6beb08808bfa181ebdd396afb5dffd1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/erickjtorres/app-use",
+        "sha256": "1bd272d2efc756da94647285bf90b8c4566e962eb7a39f65f2b03e40bba1de92",
+        "retrieved_at": "2026-10-18T11:00:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "summary"
+        ],
+        "url": "https://api.github.com/repos/erickjtorres/app-use/git/trees/main?recursive=1",
+        "sha256": "055c06bddc83d9cbe852e6f2818624fcaee6def91e4410cb112812d019cca753",
+        "retrieved_at": "2026-10-18T11:00:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary"
+        ],
+        "url": "https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/app_use/controller/service.py",
+        "sha256": "ddf18d8848e027882871f1857e090698b5335e16fcdb36f8b1382e8e5a5f67e4",
+        "retrieved_at": "2026-10-18T11:00:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/erickjtorres/app-use/releases/latest",
+        "sha256": "08cf2dd4779c27d86ebacf257122b9478330a10aecc11f47cb68e04fb874cec2",
+        "retrieved_at": "2026-10-18T11:00:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/docs/env-setup.md",
+        "sha256": "82be3f9a05aa4ba89798843d2af01f8a7a0bf880c9b904cda3eeb627c13411ce",
+        "retrieved_at": "2026-10-18T11:00:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/LICENSE",
+        "sha256": "aa593f209b4fc9895869cb3ded0fbf69f332a702a30fe5ad9e9271367700fc37",
+        "retrieved_at": "2026-10-18T11:00:20Z"
+      }
+    ],
+    "reviewed_sha256": "ed507b0d7011efab4230f05596842d2a5ac0beb53a9242933beb7f84ea0692ad",
+    "reviewed_at": "2026-10-18T11:00:53Z"
   }
 ]

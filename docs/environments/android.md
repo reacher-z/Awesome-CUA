@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (21)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -126,6 +126,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
+| [App Use](https://github.com/erickjtorres/app-use) | ios, android | — | code MIT | Python library that connects LLM agents to native iOS and Android apps through an Appium server, building element trees from the app UI and issuing taps, typing and gestures toward a task. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/README.md) |
 | [CHOP](https://github.com/Yuqi-Zhou/CHOP) | android, harmonyos | [2503.03743](https://arxiv.org/abs/2503.03743) (2025) | code MIT | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md) |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [D-PoT evaluation code](https://github.com/sqzhang-lazy/D-PoT) | android | [2410.00467](https://arxiv.org/abs/2410.00467) (2024) | — | Offline prompting and evaluation code for Dynamic Planning of Thoughts on Android-in-the-Wild, including action extraction and comparison with reference actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md) |

@@ -4788,7 +4788,36 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "9c43f97560c3781b28f97c894ff65bbea7121c3df8c183ddf15bb38842bd1e39",
-    "reviewed_at": "2026-10-16T06:36:02Z"
+    "reviewed_at": "2026-10-16T06:36:02Z",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/showlab/assistgui/bc8600049f0a5fd691aa54430ec207f3f6051649/index.html",
+        "sha256": "39d700d6035cdafdc3afedf5919b4eb172b055d636c6fd86e8650403adaf88a8",
+        "retrieved_at": "2026-10-18T16:13:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://arxiv.org/abs/2312.13108v2",
+        "sha256": "bda995b3559b48307789642674b82c9f17da96d81070bbf502337820e948a8a6",
+        "retrieved_at": "2026-10-18T16:13:13Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2312.13108",
+        "evidence_url": "https://raw.githubusercontent.com/showlab/assistgui/bc8600049f0a5fd691aa54430ec207f3f6051649/index.html"
+      }
+    ]
   },
   {
     "name": "ScreenAgent",

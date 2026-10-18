@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-21 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+22 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Papers (20)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Papers (20)](#papers)
 
 ## Datasets
 
@@ -13,6 +13,14 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [WebQA Agent](https://github.com/MigoXLab/webqa-agent) | — | code Apache-2.0 | Website-testing agent that turns plain-language goals into browser tests, driving Chrome through chrome-devtools-mcp by default or Playwright with highlighted-element screenshots, and reports functional and UX issues. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MigoXLab/webqa-agent/HEAD/README.md) |
 
 ## Papers
 

@@ -63143,5 +63143,98 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WebQA Agent",
+    "kind": "agent",
+    "url": "https://github.com/MigoXLab/webqa-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "ui-design"
+    ],
+    "summary": "Website-testing agent that turns plain-language goals into browser tests, driving Chrome through chrome-devtools-mcp by default or Playwright with highlighted-element screenshots, and reports functional and UX issues.",
+    "scope": "core",
+    "verify_terms": [
+      "WebQA Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MigoXLab/webqa-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.availability"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:chromedevtools/chrome-devtools-mcp",
+        "evidence_url": "https://raw.githubusercontent.com/MigoXLab/webqa-agent/HEAD/README.md"
+      }
+    ],
+    "notes": "Three modes: Flash (default) runs a tool-calling agent over the external chrome-devtools-mcp server, which executor/flash/runner.py configures by default; Standard generation plans and executes test cases with LangGraph over a Playwright browser, sending the model a viewport screenshot with highlighted elements (executor/gen/agents/execute_agent.py); Run mode replays YAML-defined cases. The repository also provides a CLI, an MCP server, an Agent Skill and a FastAPI plus web dashboard; built-in Flash skills include UI audit, button checks and a nuclei security scan. Browser Use appears only in the README acknowledgements, not in the dependencies. Code was read, not run.",
+    "details": {
+      "availability": "Public source and PyPI package",
+      "repository_revision": "aa156d4ab8b2a4658b13eb33073c686be843d3e4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/MigoXLab/webqa-agent/aa156d4ab8b2a4658b13eb33073c686be843d3e4/webqa_agent/executor/flash/runner.py",
+        "sha256": "a13d661f8f810ad3ef64825fe1070d53750ed104053eeade2b45d1e58da006e4",
+        "retrieved_at": "2026-10-18T15:34:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/MigoXLab/webqa-agent/aa156d4ab8b2a4658b13eb33073c686be843d3e4/webqa_agent/executor/gen/agents/execute_agent.py",
+        "sha256": "545cc7e22164b1b42cb5dc7c1d851bd00a39e3a0b8406aa5fe7f85d0e5da7f8b",
+        "retrieved_at": "2026-10-18T15:34:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/MigoXLab/webqa-agent/aa156d4ab8b2a4658b13eb33073c686be843d3e4/webqa_agent/browser/session.py",
+        "sha256": "5c3d5889f3cc77692b04a5b94f1b184bc3216844c796f35fdf5d99b081f599ce",
+        "retrieved_at": "2026-10-18T15:34:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/MigoXLab/webqa-agent/aa156d4ab8b2a4658b13eb33073c686be843d3e4/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T15:34:33Z"
+      }
+    ],
+    "reviewed_sha256": "8e601cb94966e5f10b48059a144ee896db61c0a7ef8f2e61acb6ba97779be431",
+    "reviewed_at": "2026-10-18T15:34:52Z"
   }
 ]

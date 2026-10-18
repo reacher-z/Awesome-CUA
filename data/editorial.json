@@ -4079,8 +4079,43 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=800&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "c87e97eb397da04806d53145cf9c13be739fc657bb54dca9318c8c4ed2a36249",
         "retrieved_at": "2026-10-16T06:36:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/OS-Copilot/OS-Genesis-mobile-data/raw/872b66a76210a43fca7c15c2b160c31829e9dc52/README.md",
+        "sha256": "de9de63e21e60e882277a6268e8153abb6c14aaf3e9a7f83e7f98ac14bf37170",
+        "retrieved_at": "2026-10-18T15:41:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/api/datasets/OS-Copilot/OS-Genesis-web-data/revision/0080190f5d15bae75a018054546edc391f09b384?expand%5B%5D=cardData",
+        "sha256": "558237d9e2853f024f755725925eca2f27b91bd03a5e2043a2717fdb6bc3b388",
+        "retrieved_at": "2026-10-18T15:41:09Z"
       }
-    ]
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "mit",
+          "url": "https://huggingface.co/datasets/OS-Copilot/OS-Genesis-mobile-data/raw/872b66a76210a43fca7c15c2b160c31829e9dc52/README.md",
+          "retrieved_at": "2026-10-18T15:41:09Z",
+          "basis": "Publisher Hub-card metadata for the mobile and web trajectory datasets; screenshots of third-party apps and websites keep their own terms."
+        },
+        "reason": "Both publisher Hub datasets that the README links for the trajectory training data, OS-Genesis-mobile-data and OS-Genesis-web-data, declare MIT in their card metadata. The Google Drive raw triples carry no declaration, and the README's MIT badge is not backed by a license file, so no code license is set.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/OS-Copilot/OS-Genesis-mobile-data/raw/872b66a76210a43fca7c15c2b160c31829e9dc52/README.md",
+          "https://huggingface.co/api/datasets/OS-Copilot/OS-Genesis-web-data/revision/0080190f5d15bae75a018054546edc391f09b384?expand%5B%5D=cardData"
+        ]
+      }
+    }
   },
   {
     "name": "AgentTrek",

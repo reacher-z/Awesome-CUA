@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -19,6 +19,7 @@
 | [ScreenSpot v2](https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2) | cross-platform | — | — | data apache-2.0 | Second version of the ScreenSpot grounding test set, published by OS-Copilot as separate desktop, mobile and web annotation files with a shared screenshot archive. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/OS-Copilot/ScreenSpot-v2) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
 | [WebClick](https://huggingface.co/datasets/Hcompany/WebClick) | web | [2506.02865](https://arxiv.org/abs/2506.02865) (2025) | [1,639 examples](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) | — | A web-interface localization benchmark with screenshot instructions and target boxes, including agent browsing, human browsing and calendar cases. | [✓ 2026‑10‑17](https://huggingface.co/datasets/Hcompany/WebClick/raw/main/README.md) |
+| [WinDeskGround](https://github.com/ZZZhr-1/WinDeskGround) | desktop | [2605.16402](https://arxiv.org/abs/2605.16402) (2026) | [1,356 instruction-target pairs](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json) · [585 source window screenshots](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json) · [9 application categories](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json) · [5 simulation difficulty levels](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md) | — | Grounding benchmark toolkit that composites application windows into multi-window desktops with controlled occlusion, clutter and distractors at five difficulty levels, and scores click points against target boxes. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md) |
 
 ## Datasets
 

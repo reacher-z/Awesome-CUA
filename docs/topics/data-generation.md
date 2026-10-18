@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+
+## Benchmarks
+
+All entries in this section: desktop.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [WinDeskGround](https://github.com/ZZZhr-1/WinDeskGround) | [2605.16402](https://arxiv.org/abs/2605.16402) (2026) | [1,356 instruction-target pairs](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json) · [585 source window screenshots](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json) · [9 application categories](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json) · [5 simulation difficulty levels](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md) | — | Grounding benchmark toolkit that composites application windows into multi-window desktops with controlled occlusion, clutter and distractors at five difficulty levels, and scores click points against target boxes. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md) |
 
 ## Datasets
 

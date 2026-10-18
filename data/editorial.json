@@ -63143,5 +63143,152 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WinDeskGround",
+    "kind": "benchmark",
+    "url": "https://github.com/ZZZhr-1/WinDeskGround",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "robustness",
+      "data-generation"
+    ],
+    "scope": "core",
+    "summary": "Grounding benchmark toolkit that composites application windows into multi-window desktops with controlled occlusion, clutter and distractors at five difficulty levels, and scores click points against target boxes.",
+    "verify_terms": [
+      "WinDeskGround"
+    ],
+    "notes": "sentence_sim.json holds the source annotations: element descriptions with target boxes on single application-window screenshots, plus similar descriptions from other windows used as distractors. The generators composite these windows over a wallpaper for sensitivity experiments and L1 to L5 scenes; the window images come from the separate WinDeskGround_windows Hugging Face dataset, and generated scenes are published as the WinDeskGround Hugging Face dataset. Model adapters cover OS-Atlas, UGround, SeeClick, InfiGUI, UI-TARS and API-served Seed and UI-TARS models. Example applications such as File Explorer, PowerShell and Resource Monitor are Windows programs, but the README does not name an operating system. The README's license section is an unfilled placeholder and there is no license file, so the code license stays unknown. The README does not cite the paper; the paper's arXiv page links this repository as its code.",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "1e047cc0e8e606b74faafe321f69845988b828be",
+      "availability": "Public generation and evaluation code with source annotations; window images and generated scenes are separate Hugging Face datasets.",
+      "benchmark_protocol": {
+        "focus": [
+          "GUI grounding under window occlusion",
+          "semantic distractors",
+          "visual clutter"
+        ],
+        "setting": "offline",
+        "observations": [
+          "synthesized multi-window desktop screenshots",
+          "natural-language element descriptions"
+        ],
+        "actions": [
+          "predict a click point"
+        ],
+        "evaluation": "A prediction is correct when its normalized point falls inside the target's bounding box; accuracy is reported per model and experiment.",
+        "counts": [
+          {
+            "value": 1356,
+            "unit": "instruction-target pairs",
+            "qualifier": "exact",
+            "population": "source annotations in sentence_sim.json at commit 1e047cc0",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json"
+          },
+          {
+            "value": 585,
+            "unit": "source window screenshots",
+            "qualifier": "exact",
+            "population": "distinct image paths in sentence_sim.json at commit 1e047cc0",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json"
+          },
+          {
+            "value": 9,
+            "unit": "application categories",
+            "qualifier": "exact",
+            "population": "category labels in sentence_sim.json at commit 1e047cc0",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json"
+          },
+          {
+            "value": 5,
+            "unit": "simulation difficulty levels",
+            "qualifier": "exact",
+            "population": "L1 to L5 generated scene sets",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md"
+          }
+        ],
+        "notes": "The pair, screenshot and category counts match the README's distribution table. The number of generated scenes depends on each generation run and is not counted here.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md",
+          "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json",
+          "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/eval/evaluate_model.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/ZZZhr-1/WinDeskGround/git/trees/1e047cc0e8e606b74faafe321f69845988b828be?recursive=1",
+        "sha256": "d356a25ee004c731fe6e925b3e403a584b09e3d1e80839380655e7b186826f15",
+        "retrieved_at": "2026-10-18T15:42:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/sentence_sim.json",
+        "sha256": "1598dbfe4889c45d5709e7fbaf0c84228e9e0c7a0d29c4f450a5930656600b43",
+        "retrieved_at": "2026-10-18T15:42:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/1e047cc0e8e606b74faafe321f69845988b828be/eval/evaluate_model.py",
+        "sha256": "f60ddd8b5c62e971a8d4ba4f2c536df02210b23090a951e585034f6b777d768f",
+        "retrieved_at": "2026-10-18T15:42:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/abs/2605.16402v1",
+        "sha256": "3d5ec64632b5445b0d659a6392d5612656f7916175f974c48dfbb3cac71affa1",
+        "retrieved_at": "2026-10-18T15:42:52Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2605.16402",
+        "evidence_url": "https://arxiv.org/abs/2605.16402v1"
+      }
+    ],
+    "reviewed_sha256": "0a4885bd95df160629314754e9ff6878df07c584d8e2e80fd18361e00c07c563",
+    "reviewed_at": "2026-10-18T15:43:40Z"
   }
 ]

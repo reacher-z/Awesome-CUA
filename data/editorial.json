@@ -2280,6 +2280,147 @@
     "reviewed_at": "2026-10-16T10:50:15Z",
     "documented_by": [
       "2404.09992"
+    ],
+    "details": {
+      "repository_revision": "54b23ab81f0ae118507760c4865007001172ba0f",
+      "benchmark_protocol": {
+        "focus": [
+          "multihop multimodal web tasks",
+          "long-chain reasoning across websites"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "accessibility tree",
+          "HTML",
+          "page image"
+        ],
+        "actions": [
+          "browser actions on accessibility-tree element IDs"
+        ],
+        "evaluation": "run.py follows each multihop task's check list of expected sites, records completed hops out of total, and calls a WebArena-style evaluator for the task score. The arXiv abstract presents this as a protocol for measuring progress through multihop tasks.",
+        "counts": [
+          {
+            "value": 1050,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "MMInA human-written tasks as stated in the arXiv v2 abstract",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/abs/2404.09992v2"
+          },
+          {
+            "value": 200,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "shopping subset (1 hop, OneStopMarket items) in run.py MMINA_DICT",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py"
+          },
+          {
+            "value": 308,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "wikipedia subset (1 hop, Wikipedia) in run.py MMINA_DICT",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py"
+          },
+          {
+            "value": 176,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "normal subset (2 hops) in run.py MMINA_DICT",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py"
+          },
+          {
+            "value": 100,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "compare subset (3-4 hops) in run.py MMINA_DICT",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py"
+          },
+          {
+            "value": 180,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "multi567 subset (5-7 hops) in run.py MMINA_DICT",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py"
+          },
+          {
+            "value": 86,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "multipro subset (8-10 hops) in run.py MMINA_DICT",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py"
+          }
+        ],
+        "notes": "run.py at commit 54b23ab defines the per-subset task counts it loads from mmina/<subset>/<n>.json, summing to the 1,050 in the abstract; the task files ship as a Google Drive archive that was not downloaded. The observation type defaults to the accessibility tree, with HTML and image as alternatives. The environment builds on WebArena and needs its site setup.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md",
+          "https://arxiv.org/abs/2404.09992v2",
+          "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py",
+          "https://api.github.com/repos/shulin16/MMInA/git/trees/54b23ab81f0ae118507760c4865007001172ba0f?recursive=1"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "S-Lab License 1.0",
+          "url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/LICENSE",
+          "retrieved_at": "2026-10-18T15:50:22Z",
+          "basis": "Repository root LICENSE: non-commercial redistribution and use; commercial use requires contacting the contributors. Not a data license."
+        },
+        "reason": "The root LICENSE at commit 54b23ab is the custom S-Lab License 1.0, which enrich does not map to an SPDX identifier. It is recorded as the code license only; the Google Drive task data carries no separate declaration.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/LICENSE"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/LICENSE",
+        "sha256": "9bd82717258e034d9b274e21f152f42decf6d46ed670725c1c4ce7a3cadcc0aa",
+        "retrieved_at": "2026-10-18T15:50:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/shulin16/MMInA/54b23ab81f0ae118507760c4865007001172ba0f/run.py",
+        "sha256": "956a82b843e3d7285234e9fb815b4be177fe88929d251d0c101c38a036e03d7e",
+        "retrieved_at": "2026-10-18T15:50:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/shulin16/MMInA/git/trees/54b23ab81f0ae118507760c4865007001172ba0f?recursive=1",
+        "sha256": "1f1c7b4323d154dfb7d97ec1c6c3ba01a7f4908f345c975ffe1016d146964847",
+        "retrieved_at": "2026-10-18T15:50:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/abs/2404.09992v2",
+        "sha256": "802c718c4b4b3c97f554744eeb0922e571bd0a5a35602a03354e878075b0d27e",
+        "retrieved_at": "2026-10-18T15:50:24Z"
+      }
     ]
   },
   {

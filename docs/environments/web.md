@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (38)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -142,6 +142,7 @@
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Experiment framework for developing and evaluating browser agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ServiceNow/AgentLab/HEAD/README.md) |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [Browser Use](https://github.com/browser-use/browser-use) | web | — | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browser-use/browser-use/HEAD/README.md) |
+| [CUA-Gym pipeline](https://github.com/xlang-ai/CUA-Gym) | desktop, web | [2605.25624](https://arxiv.org/abs/2605.25624) (2026) | code Apache-2.0 | Pipeline in which Claude Code agents write computer-use task instructions, initial and golden VM states, and separately authored reward scripts, iterating until each reward separates the two states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xlang-ai/CUA-Gym/HEAD/README.md) |
 | [CUAWright (formerly Webwright)](https://github.com/microsoft/Webwright) | web, desktop | [2610.04116](https://arxiv.org/abs/2610.04116) (2026) | code MIT | Agent framework for browser and desktop tasks using automation code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/Webwright/HEAD/README.md) |
 | [Go-Browse](https://github.com/ApGa/Go-Browse) | web | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | code MIT | Structured website-exploration and data-processing code that revisits discovered pages, proposes tasks and collects trajectories for web-agent fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ApGa/Go-Browse/HEAD/README.md) |
 | [GroundGUI training and evaluation code](https://github.com/PrentisAI/GroundGUI) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | code Apache-2.0 | Code for screenshot grounding through supervised training, teacher-guided distillation, reinforcement learning, and benchmark evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md) |

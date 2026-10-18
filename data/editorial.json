@@ -63143,5 +63143,279 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUIGuard-Bench evaluation code",
+    "kind": "benchmark",
+    "url": "https://github.com/shaluoyan523/GUIGuard-Bench",
+    "environments": [
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "Evaluation code for GUIGuard-Bench: privacy-region recognition scoring, LLM-judged planning consistency on masked screenshots and click grounding under protection, with a small Android and PC example subset.",
+    "scope": "core",
+    "verify_terms": [
+      "GUIGuard-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2601.18842",
+        "evidence_url": "https://futuresis.github.io/GUIGuard-page/"
+      }
+    ],
+    "notes": "The README is an anonymous-review version without authors or a citation; the paper link comes from the GUIGuard project page, which links this repository as the paper's code. The full benchmark data is hosted separately on the Hugging Face Hub; this repository ships only dataset_example/ for smoke tests. The README and croissant.json describe that dataset as MIT, while the Hub dataset card at revision c2b5ca41 declares CC-BY-NC-4.0, so no data license is recorded here. The repository has no LICENSE file and the GitHub API reports no license. Nothing was run.",
+    "details": {
+      "repository_revision": "542a902a451592e15ab287414c396aff14fb0d4d",
+      "benchmark_protocol": {
+        "focus": [
+          "privacy-region recognition on GUI screenshots",
+          "planning fidelity on privacy-protected screenshots",
+          "click grounding under visual privacy protection"
+        ],
+        "setting": "offline",
+        "observations": [
+          "recorded trajectory screenshots",
+          "task instructions",
+          "next-action plans"
+        ],
+        "actions": [
+          "predicted privacy regions with labels",
+          "generated next-action plans",
+          "predicted click points"
+        ],
+        "evaluation": "privacy_recognition scores region-level privacy predictions against the labels (IoU-only or paper-style scoring); planner_eval has an LLM judge rate step-level semantic consistency between plans from original and protected trajectories on a 0-4 scale; grounding_eval counts a click as correct when the predicted point falls inside the target box.",
+        "counts": [
+          {
+            "value": 34,
+            "unit": "Android task directories",
+            "qualifier": "exact",
+            "population": "dataset_example/Android at commit 542a902a, of which 33 are complete trajectories",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md"
+          },
+          {
+            "value": 26,
+            "unit": "PC trajectories",
+            "qualifier": "exact",
+            "population": "dataset_example/PC at commit 542a902a",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md"
+          },
+          {
+            "value": 290,
+            "unit": "next-action grounding samples",
+            "qualifier": "exact",
+            "population": "dataset_example/grounding_data/manifest.jsonl at commit 542a902a",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/dataset_example/grounding_data/manifest.jsonl"
+          }
+        ],
+        "notes": "Counts describe dataset_example/, the repository's review subset for smoke tests, not the benchmark; the README says benchmark numbers need the full Hub dataset. A script over the repository tree at this commit found the same 34 Android directories (task 62 lacks traj.jsonl and task_result.json) and 26 PC directories, and 290 images in each of the original, black-mask and LLM-replacement variants. Directories, trajectories and samples are different units and are not summed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md",
+          "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/dataset_example/grounding_data/manifest.jsonl",
+          "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/grounding_eval/grounding_eval/metrics.py",
+          "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/planner_eval/planner_eval/judges/graders/semantic_consistency.py"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.code",
+      "details.repository_revision",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://futuresis.github.io/GUIGuard-page/",
+        "sha256": "14fe15c990481087ad504f631dc94d777736373f56344a0746cd77320c3db3b5",
+        "retrieved_at": "2026-10-18T15:54:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/dataset_example/grounding_data/manifest.jsonl",
+        "sha256": "0cd6681a25d989ec0e925c75d3ea06807e1738d3a853c824de473cec0476b23f",
+        "retrieved_at": "2026-10-18T15:55:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/grounding_eval/grounding_eval/metrics.py",
+        "sha256": "5f173b67f64d4aad028253e821f4cd1afbf682cf84dc0a2bbe75feb1e0141302",
+        "retrieved_at": "2026-10-18T15:55:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/planner_eval/planner_eval/judges/graders/semantic_consistency.py",
+        "sha256": "8ee9842717668cb38c400ac41c8a8e1a5c63c26849150715c9b1f8f54512aa25",
+        "retrieved_at": "2026-10-18T15:55:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/croissant.json",
+        "sha256": "b0b84ad6af5b79da3caada0bb559f9022c546e5df03f56a4f6abe45a1958153e",
+        "retrieved_at": "2026-10-18T15:54:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/ShaofantuoshuzhengzhiSha/GUIGuard-Bench/raw/c2b5ca415cd854452585260b9eaa74699042d920/README.md",
+        "sha256": "81a85cdefb48b37f9869eaa61832d9d97f288cbd443be74e07d779f7948ae229",
+        "retrieved_at": "2026-10-18T15:56:05Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README's License section covers only the dataset, the repository tree at 542a902a has no LICENSE file, and the GitHub API reports no license; no code license is established.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f7961f6d3f6809f6ae61bf5b679d03595b79c64a15a2687dfccdb1b5a89e065b",
+    "reviewed_at": "2026-10-18T15:56:47Z"
+  },
+  {
+    "name": "GUI-Trajectory-Virtual",
+    "kind": "framework",
+    "url": "https://github.com/Futuresis/GUI-Trajectory-Virtual",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "world-models",
+      "mobile-navigation"
+    ],
+    "summary": "Synthesizes Android agent trajectories without a device: an image model behind a chat-completions API draws each next screen from the previous screenshot and the action chosen by a Mobile-Agent-v3-style agent.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Trajectory-Virtual",
+      "Virtual GUI Agent Trajectory Synthesis"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2601.18842",
+        "evidence_url": "https://futuresis.github.io/GUIGuard-page/"
+      }
+    ],
+    "notes": "The README says its arXiv paper is still to come; the GUIGuard project page presents this repository as that paper's trajectory-synthesis workflow, which is the basis for the paper link. In virtual_env_gemini3.py each step sends the previous screenshot and an action description to a chat-completions endpoint and decodes the returned image as the next screen; the code's default model is google/gemini-2.0-flash-exp:free, while the README examples use google/gemini-3-pro-image-preview. The adapter mocks the accessibility tree and ADB calls. The runner defines 57 social-app task goals whose simplified task class reports success as 1.0 without any check, so generated trajectories are not verified outcomes. Nothing was run.",
+    "details": {
+      "repository_revision": "8ccef36747ca140471206534824b9f2f6278d37d",
+      "license_components_note": "agent_env/ includes files carrying Apache-2.0 headers from The android_world Authors, for example agent_env/task_evals/single/contacts.py; the root LICENSE is MIT."
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.repository_revision"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://futuresis.github.io/GUIGuard-page/",
+        "sha256": "14fe15c990481087ad504f631dc94d777736373f56344a0746cd77320c3db3b5",
+        "retrieved_at": "2026-10-18T15:54:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/virtual_env_gemini3.py",
+        "sha256": "5c53724751a6bbd86773179aa3aaad8fc8ae7564d1aaa00167e7fcd4caddc870",
+        "retrieved_at": "2026-10-18T15:54:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/run_virtual.py",
+        "sha256": "fb3ce0feb35566cd2ad2913794cb6983d7a949540e8f1a03fef58e81cce2f931",
+        "retrieved_at": "2026-10-18T15:54:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/virtual_env_adapter.py",
+        "sha256": "e5d4dd12b9562aa48cc6ca641d717633796ea18fa50715570d69e0b5b06def70",
+        "retrieved_at": "2026-10-18T15:56:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/agent_env/task_evals/single/contacts.py",
+        "sha256": "b668a60fd31dc89b7e493585ff1bf4966a3fbd6c8a77da10adaa2f4727133be6",
+        "retrieved_at": "2026-10-18T15:54:40Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2262044b993d01ef4833e28511f2646983e2ae3df2e1ae097eef6896062aa87a",
+    "reviewed_at": "2026-10-18T15:56:47Z"
   }
 ]

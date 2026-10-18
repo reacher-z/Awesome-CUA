@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [GUIGuard-Bench evaluation code](https://github.com/shaluoyan523/GUIGuard-Bench) | android, desktop | [2601.18842](https://arxiv.org/abs/2601.18842) (2026) | [34 Android task directories](https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md) · [26 PC trajectories](https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md) · [290 next-action grounding samples](https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/dataset_example/grounding_data/manifest.jsonl) | — | Evaluation code for GUIGuard-Bench: privacy-region recognition scoring, LLM-judged planning consistency on masked screenshots and click grounding under protection, with a small Android and PC example subset. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/shaluoyan523/GUIGuard-Bench/542a902a451592e15ab287414c396aff14fb0d4d/README.md) |
 | [MMBench-GUI](https://github.com/open-compass/MMBench-GUI) | cross-platform | [2507.19478](https://arxiv.org/abs/2507.19478) (2025) | [> 8,000 tasks](https://raw.githubusercontent.com/open-compass/MMBench-GUI/HEAD/README.md) | — | Four-level GUI-agent benchmark across six platforms, from content understanding and element grounding to task automation and collaboration, scored with an efficiency-quality area metric. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/open-compass/MMBench-GUI/HEAD/README.md) |
 | [OSWorld-G](https://github.com/xlang-ai/OSWorld-G) | desktop | [2505.13227](https://arxiv.org/abs/2505.13227) (2025) | — | code Apache-2.0 | Computer-use grounding benchmark with original and refined instructions, released with the Jedi synthetic data pipeline, a 4-million-example Jedi dataset and Jedi-3B and Jedi-7B models. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/README.md) |
 | [Precision CUA Bench](https://github.com/microsoft/precision-cua-bench) | cross-platform | [2604.13019](https://arxiv.org/abs/2604.13019) (2026) | — | code MIT | Evaluation resources for pixel-precise cursor grounding in code editors. | [✓ 2026‑10‑16](https://github.com/microsoft/precision-cua-bench) |

@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:samsunglabs/tinyclick",
+    "url": "https://github.com/SamsungLabs/TinyClick",
+    "decision": "not_a_resource",
+    "reason": "Removed repository: the page, the repository API and the raw README return 404 with no rename redirect, and SamsungLabs' 107 public repositories include no TinyClick. Wayback has 200 captures through 2025-04-29 and a 404 capture on 2025-11-19. The paper is arxiv:2410.11871."
   }
 ]

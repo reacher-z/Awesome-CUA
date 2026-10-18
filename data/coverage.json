@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
-  "non_resource_candidates": 97,
+  "unindexed_candidates": 904,
+  "non_resource_candidates": 98,
   "alias_candidates": 36,
   "pending_editorial": [
     {
@@ -842,8 +842,8 @@
       "resolved_aliases": 3,
       "curated": 182,
       "excluded": 0,
-      "set_aside": 6,
-      "unindexed": 46
+      "set_aside": 7,
+      "unindexed": 45
     },
     {
       "id": "mobile-agents",

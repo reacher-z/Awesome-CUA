@@ -63143,5 +63143,83 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:asappresearch/webagents-step",
+    "name": "SteP (webagents-step)",
+    "kind": "agent",
+    "url": "https://github.com/asappresearch/webagents-step",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Code for Stacked LLM Policies, in which prompted policies either emit browser actions or call sub-policies pushed onto a stack, with evaluation scripts for WebArena and MiniWoB++.",
+    "scope": "core",
+    "verify_terms": [
+      "SteP",
+      "Stacked LLM Policies"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/asappresearch/webagents-step/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "README pins WebArena to commit 4c741b4 (May 29, 2024) and MiniWoB++ to commit 43bd1fe, and reports self-run gpt-4-turbo-2024-04-09 WebArena success rates over 812 tasks with trajectory logs on Google Drive; those logs were not downloaded and the results are not reproduced here. Root LICENSE is MIT for the code; WebArena, MiniWoB++ and model APIs keep their own terms.",
+    "details": {
+      "repository_url": "https://github.com/asappresearch/webagents-step",
+      "repository_tree_sha": "118594491972f2bca34345f52cc01403ac684bc5"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/asappresearch/webagents-step",
+        "sha256": "64df7cd037d957a26f2be6bbe1a9bb78a7115dad66ff24d7be00da7bc5720f3b",
+        "retrieved_at": "2026-10-18T10:53:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/asappresearch/webagents-step/git/trees/main?recursive=1",
+        "sha256": "97da0efc50fcff166a7b5bbe65f968e9478e8c5e02bbbeadf8627bbb256efcd3",
+        "retrieved_at": "2026-10-18T10:53:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/asappresearch/webagents-step/HEAD/LICENSE",
+        "sha256": "298dc651a692c945007dca6812f261214a997b489d2a7f2a7f50ffce168bcf88",
+        "retrieved_at": "2026-10-18T10:53:48Z"
+      }
+    ],
+    "documented_by": [
+      "2310.03720"
+    ],
+    "reviewed_sha256": "7d50c4fa249fbd137e36999779c9e88d96a0fdc7be37422d9714ecb304b84e31",
+    "reviewed_at": "2026-10-18T10:54:13Z"
   }
 ]

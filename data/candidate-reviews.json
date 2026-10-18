@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:internlm/mindsearch",
+    "url": "https://github.com/InternLM/MindSearch",
+    "decision": "out_of_scope",
+    "reason": "MindSearch is a multi-agent answer engine that decomposes questions into queries for web search APIs (DuckDuckGo, Bing, Brave, Google Serper or Tencent) and summarizes the results. It does not operate web pages or other interfaces, so it is a search agent rather than a web-interaction agent; its paper arxiv:2407.20183 remains metadata-only.",
+    "reviewed_at": "2026-10-18T11:31:04Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/InternLM/MindSearch/HEAD/README.md",
+      "sha256": "e5fc5a4e441b1e870e3b754d9430aa090395b97417a2e308400705f3c06f05f1",
+      "retrieved_at": "2026-10-18T11:22:24Z"
+    }
   }
 ]

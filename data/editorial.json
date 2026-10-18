@@ -63143,5 +63143,131 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:be89a250747f507a27ef",
+    "name": "MoGUI",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/OpenDFM/MoGUI",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "data-generation",
+      "mobile-navigation"
+    ],
+    "summary": "Android app GUI crawl with per-app navigation graphs that link screen IDs through the UI action taken, plus 200 archive shards of the captured screens.",
+    "scope": "core",
+    "verify_terms": [
+      "MoGUI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/OpenDFM/MoGUI/raw/19639219617d083a03e24842fc620e010cc63189/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The card carries only the license, links and citation requests (MobA, META-GUI, CAM-GUI and a MoGUI/MoCon technical report); the complete report it announces as coming soon is not linked, so no paper relation is recorded. The repository's MoGUI_Paper_v0.1.pdf is a two-page pre-release announcement without methods or statistics. Android is established by the metadata: Google Play package names, android.widget element classes and Android permission-controller screens. At revision 19639219 the manifest holds 200 metadata JSON shards, 200 moguidata tar.gz shards totalling about 1.14 TB, and an apk_infos.json file of Google Play listing fields per package. Metadata shard 1 alone holds navigation graphs for 1,084 app packages listing 13,726 valid screens; other shards were not counted. A streamed read of the start of the first tar.gz shard showed per-app folders of PNG screenshots with same-named XML files; the archives were not downloaded. CC BY-NC-SA 4.0 is the card's data declaration and does not establish rights to the third-party apps shown. The sibling MoCon dataset is a separate release.",
+    "details": {
+      "hub_id": "OpenDFM/MoGUI",
+      "hub_revision": "19639219617d083a03e24842fc620e010cc63189",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/OpenDFM/MoGUI/tree/19639219617d083a03e24842fc620e010cc63189",
+      "dataset_profile": {
+        "supervision": [
+          "crawled screen-transition navigation graphs"
+        ],
+        "modalities": [
+          "UI action strings naming element text, package, widget class and bounds",
+          "screenshots (seen in a partial archive read)",
+          "XML view hierarchies (seen in a partial archive read)"
+        ],
+        "formats": [
+          "JSON",
+          "tar.gz archives",
+          "PNG",
+          "XML"
+        ],
+        "splits": [],
+        "counts": [],
+        "notes": "Each metadata shard maps an app package to a root screen, a valid-screen list and a navigation graph whose nodes are screen hashes with next screens and the triggering actions. No total app, screen or transition count is stated by the publisher; only metadata shard 1 was counted, and file counts are not sample counts.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/OpenDFM/MoGUI/resolve/19639219617d083a03e24842fc620e010cc63189/metadata/data_00001_of_00200.json",
+          "https://huggingface.co/api/datasets/OpenDFM/MoGUI/tree/19639219617d083a03e24842fc620e010cc63189/moguidata",
+          "https://huggingface.co/api/datasets/OpenDFM/MoGUI"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/datasets/OpenDFM/MoGUI",
+        "sha256": "aa4356912f147cade9b4f9067103beff80dc594f7b6562f6ae61ac4b9ef9bb71",
+        "retrieved_at": "2026-10-18T16:04:09Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/OpenDFM/MoGUI/resolve/19639219617d083a03e24842fc620e010cc63189/metadata/data_00001_of_00200.json",
+        "sha256": "758a3c377b240a779d73b96b4c2ac5a185c99e0dc04bbda5d4dbcaa3ae59f166",
+        "retrieved_at": "2026-10-18T16:04:11Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "summary",
+          "details.dataset_profile",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/OpenDFM/MoGUI/tree/19639219617d083a03e24842fc620e010cc63189/moguidata",
+        "sha256": "a518ed2d7726225d4c399bdd06c3d9e1a5333425b6dd86446e3d22f2fef1a007",
+        "retrieved_at": "2026-10-18T16:04:13Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.dataset_profile",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/OpenDFM/MoGUI/resolve/19639219617d083a03e24842fc620e010cc63189/MoGUI_Paper_v0.1.pdf",
+        "sha256": "5f7a66c12756ae057bbd3216e45b874825e671769e751cd7efb31081d05a52f5",
+        "retrieved_at": "2026-10-18T16:04:23Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the Hub API record and file manifest, the card and Chinese card at revision 19639219, the pre-release PDF, metadata shard 1 (parsed) and the first member listing of archive shard 1 by streaming. Archives not downloaded.",
+    "reviewed_sha256": "bb6ec801aed5db9d540cf3ccbae6a5e6bc2c26348d69dd34c72c3d88a57492b8",
+    "reviewed_at": "2026-10-18T16:05:40Z"
   }
 ]

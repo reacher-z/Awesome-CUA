@@ -63143,5 +63143,77 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "invisible_playwright_mcp",
+    "kind": "tool",
+    "url": "https://github.com/feder-cr/invisible_playwright_mcp",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MCP server and local web UI that let an LLM drive an anti-detect Firefox build with moving-pointer and key-press input, seeded browser identities, optional proxies and persistent profiles.",
+    "scope": "core",
+    "verify_terms": [
+      "invisible_playwright_mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/feder-cr/invisible_playwright_mcp/HEAD/README.md"
+    ],
+    "notes": "Installs as a plugin or extension for Claude Code, Codex and Gemini CLI; the standalone web UI calls OpenRouter with the user's key. The tree contains the Python package (MCP server, agent loop, web UI) and an MCP test suite; the browser engine library and fingerprint core are separate repositories, and the engine binary is downloaded from a GitHub release on first start. Its claim of avoiding anti-bot detection and captchas was not tested, and the README asks users to respect site terms. The repository LICENSE is MIT; the README says releases before 2 September 2026 were AGPL-3.0.",
+    "details": {
+      "availability": "Published source and Python package run with uvx; the engine binary is fetched from a GitHub release at first start"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/feder-cr/invisible_playwright_mcp",
+        "sha256": "6abd57046814e38bc1c46a5ab24a49aa071571a87d1b9106674516712218f1c9",
+        "retrieved_at": "2026-10-18T11:33:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/feder-cr/invisible_playwright_mcp/git/trees/main?recursive=1",
+        "sha256": "a93e69036a32deab6a1918034c8ed37e534360938546e8d4352e89f362fed2bf",
+        "retrieved_at": "2026-10-18T11:33:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/feder-cr/invisible_playwright_mcp/HEAD/LICENSE",
+        "sha256": "7bd49adceb91947129a3ad60d2131884b60775c54e47b3ef1740a110904a1d8b",
+        "retrieved_at": "2026-10-18T11:33:16Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "87fc13a4a612123e423ab29547620fc1cbeab9ec92c8b49657a8f59bca6bfbf3",
+    "reviewed_at": "2026-10-18T11:33:53Z"
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:steel-dev/atlas",
+    "url": "https://github.com/steel-dev/atlas",
+    "decision": "out_of_scope",
+    "reason": "Atlas is a TypeScript deep-research library that decomposes a question, gathers sources through search APIs and page fetches (plain HTTP or the Steel scrape API for JavaScript-rendered pages) and writes a cited report. It never clicks, types or navigates within a page, so it is a retrieval and report-writing agent rather than a resource for agents that operate interfaces.",
+    "reviewed_at": "2026-10-18T12:21:16Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/steel-dev/atlas/HEAD/README.md",
+      "sha256": "172285dc236563426528f079c0d87df684be43c36583b96fa435d25a879d4c6a",
+      "retrieved_at": "2026-10-18T12:14:53Z"
+    }
   }
 ]

@@ -63143,5 +63143,101 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Open Computer Use",
+    "kind": "agent",
+    "url": "https://github.com/e2b-dev/open-computer-use",
+    "environments": [
+      "linux",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "sandbox",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "A Python agent that operates an Ubuntu E2B Desktop Sandbox through mouse, keyboard and shell actions, pairing interchangeable vision and action LLMs with OS-Atlas or ShowUI grounding and a live display stream.",
+    "scope": "core",
+    "verify_terms": [
+      "Open Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/e2b-dev/open-computer-use/HEAD/README.md"
+    ],
+    "publisher_id": "organization:e2b",
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:e2b-dev/desktop",
+        "evidence_url": "https://raw.githubusercontent.com/e2b-dev/open-computer-use/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:os-copilot/os-atlas",
+        "evidence_url": "https://raw.githubusercontent.com/e2b-dev/open-computer-use/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:showlab/showui",
+        "evidence_url": "https://raw.githubusercontent.com/e2b-dev/open-computer-use/HEAD/README.md"
+      }
+    ],
+    "notes": "The inspected tree contains the sandbox agent, grounding module, OS-Atlas and ShowUI providers (called through Hugging Face Spaces), LLM provider adapters and a streaming log view. Running it needs an E2B API key and keys for the chosen LLM providers, so the sandbox is a hosted service rather than a local VM. The README says the agent uses Ubuntu and that the user can pause and prompt it at any time. Task success was not independently tested. Apache-2.0 applies to repository code; the hosted sandbox and model services keep their own terms.",
+    "details": {
+      "availability": "Published source; requires E2B and model-provider API keys",
+      "repository_url": "https://github.com/e2b-dev/open-computer-use",
+      "repository_tree_sha": "610bac85d242b2fdf43fbe36bce2348658a2d4c9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/e2b-dev/open-computer-use",
+        "sha256": "834075d13b4b11716aa2b88fbfa98da04bf6ba56186c34b8b43aefbd9e36ff4f",
+        "retrieved_at": "2026-10-18T11:13:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/e2b-dev/open-computer-use/git/trees/master?recursive=1",
+        "sha256": "5c6b0c77f58affe3b1bb78ef105b230fb1f15107f7da9bd72a33561f5843f1e8",
+        "retrieved_at": "2026-10-18T11:13:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/e2b-dev/open-computer-use/HEAD/LICENSE",
+        "sha256": "46c828e30f9c217b84ed1843aa08ee79658347042680c6d328f69f6da15fc4ce",
+        "retrieved_at": "2026-10-18T11:13:12Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5ef533102ffbd847273c11f1139c8a84b6c38d92182abe55e64c902e23fbd13e",
+    "reviewed_at": "2026-10-18T11:13:35Z"
   }
 ]

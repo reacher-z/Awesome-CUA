@@ -63143,5 +63143,178 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OSWorld-V2",
+    "kind": "benchmark",
+    "url": "https://github.com/xlang-ai/OSWorld-V2",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "cross-app",
+      "sandbox"
+    ],
+    "scope": "core",
+    "summary": "Ubuntu VM environment, agent runners and pinned release manifests for OSWorld 2.0, whose 108 long-horizon tasks span desktop apps and mocked websites and are scored by gated Python task evaluators.",
+    "aliases": [
+      "OSWorld 2.0"
+    ],
+    "verify_terms": [
+      "OSWorld-V2"
+    ],
+    "documented_by": [
+      "2606.29537"
+    ],
+    "notes": "Public code for OSWorld 2.0; the main branch is development, and comparable runs use a pinned benchmark release: osworld-v2.1 (recommended, announced 2026-09-16), osworld-v2-2026.08.08 or osworld-v2-2026.06.24. Each release manifest pins this code, the gated Hugging Face task classes (xlangai/osworld_v2_tasks) and complete task assets (xlangai/osworld_v2_assets_gated), the Task-Web/OSWorld-web mocked websites and the provider images. GitLab-backed tasks need a self-hosted GitLab. Prebuilt images exist only for Docker and AWS; the tree also has VMware, VirtualBox, Azure, GCP, Aliyun and Volcengine provider code. Ten capability-label files (for example cross_source_reasoning.json, human_in_the_loop.json) tag overlapping task subsets, and test_v2_offline_no_internet.json lists an offline subset. The checkout also keeps 369 OSWorld 1.0 example configurations under evaluation_examples/examples, plus reference agents in mm_agents and hybrid_agents. The osworld-v2.1 manifest itself records that no full 108-task agent evaluation was run for that release and that Task029 setup timed out. Successor to OSWorld (github:xlang-ai/osworld). Not a fork, not archived. Nothing was installed or run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "details": {
+      "availability": "Public environment, runner, reference-agent and release-manifest code; the task classes and complete task assets are gated Hugging Face downloads with automatic approval.",
+      "repository_revision": "d9953673daf55381237e058fd9388cc2d74c5538",
+      "repository_tree_sha": "66c24132634642b79782ee9594b90235e09ee4df",
+      "release_tag": "osworld-v2.1",
+      "benchmark_protocol": {
+        "focus": [
+          "long-horizon computer-use tasks on an Ubuntu desktop",
+          "tasks spanning desktop applications, mocked websites and GitLab"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots",
+          "accessibility tree (optional)",
+          "terminal output (optional)",
+          "task instruction"
+        ],
+        "actions": [
+          "pyautogui Python commands",
+          "computer_13 structured actions",
+          "claude_computer_use actions"
+        ],
+        "evaluation": "Each Python task class implements setup and an evaluate method that returns a float score from environment getters and metrics; the classes are downloaded from a gated Hugging Face dataset.",
+        "counts": [
+          {
+            "value": 108,
+            "unit": "task IDs",
+            "qualifier": "exact",
+            "population": "evaluation_examples/test_v2.json",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/evaluation_examples/test_v2.json"
+          },
+          {
+            "value": 108,
+            "unit": "task files",
+            "qualifier": "exact",
+            "population": "osworld-v2.1 release task hash manifest",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/benchmark_releases/osworld-v2.1.json"
+          }
+        ],
+        "notes": "Counts are task identifiers and task files, not trajectories or runs. Task implementations, setup files and ground-truth assets are not in the public checkout. Some tasks depend on proxy settings, mocked websites and GitLab, which can lower scores when missing.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/HEAD/README.md",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/evaluation_examples/test_v2.json",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/benchmark_releases/osworld-v2.1.json",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/desktop_env/desktop_env.py",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/evaluation_examples/task_class/README_v2.1.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/xlang-ai/OSWorld-V2/git/commits/d9953673daf55381237e058fd9388cc2d74c5538",
+        "sha256": "a2cee0c159c33e74a983515b16e4b781ed58c5fe9c3df4cacf76c2a69f104e69",
+        "retrieved_at": "2026-10-18T12:14:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/xlang-ai/OSWorld-V2/git/trees/d9953673daf55381237e058fd9388cc2d74c5538?recursive=1",
+        "sha256": "69b368bbb33f4808f454a8b9718fc783250ec7a77401551744f6090555a15f29",
+        "retrieved_at": "2026-10-18T12:15:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.release_tag",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/benchmark_releases/osworld-v2.1.json",
+        "sha256": "978686683bdf9f946703c1d316cbbd29c0e3ea97396e48d940ee92c597806ecf",
+        "retrieved_at": "2026-10-18T12:14:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.release_tag"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/benchmark_releases/README.md",
+        "sha256": "f6dc3ee50073e37a2492466fda482d15f5d762526c506cde1c4b8f8b5c008415",
+        "retrieved_at": "2026-10-18T12:14:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/evaluation_examples/test_v2.json",
+        "sha256": "7f2c0f531d035dd6f5886c492b96739534385f8e5369e4c764295ad52bf6e7f4",
+        "retrieved_at": "2026-10-18T12:14:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/desktop_env/desktop_env.py",
+        "sha256": "5aa950e8a8b077256f7e74669d244ec27f0fde57513b29618bb43b816547d09f",
+        "retrieved_at": "2026-10-18T12:14:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/evaluation_examples/task_class/README_v2.1.md",
+        "sha256": "188424db9114615055bb28cfdbdce4425284578173e3773495d92f3837545aa9",
+        "retrieved_at": "2026-10-18T12:14:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0d1d3e91e8786720a167b8bc26a41bd27832eefae652ab1c166193073e99b2b4",
+    "reviewed_at": "2026-10-18T12:16:16Z"
   }
 ]

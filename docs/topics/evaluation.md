@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (87)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
 
 ## Benchmarks
 
@@ -57,6 +57,7 @@
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
 | [OSWorld-G](https://github.com/xlang-ai/OSWorld-G) | desktop | [2505.13227](https://arxiv.org/abs/2505.13227) (2025) | — | code Apache-2.0 | Computer-use grounding benchmark with original and refined instructions, released with the Jedi synthetic data pipeline, a 4-million-example Jedi dataset and Jedi-3B and Jedi-7B models. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld-G/HEAD/README.md) |
 | [OSWorld-Human](https://github.com/WukLab/osworld-human) | desktop | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+| [OSWorld-V2](https://github.com/xlang-ai/OSWorld-V2) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | [108 task IDs](https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/evaluation_examples/test_v2.json) · [108 task files](https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/benchmark_releases/osworld-v2.1.json) | code Apache-2.0 | Ubuntu VM environment, agent runners and pinned release manifests for OSWorld 2.0, whose 108 long-horizon tasks span desktop apps and mocked websites and are scored by gated Python task evaluators. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/HEAD/README.md) |
 | [PPTC](https://github.com/gydpku/PPTC) | unspecified | [2311.01767](https://arxiv.org/abs/2311.01767) (2023) | — | code MIT | PowerPoint creation and editing benchmark with API-based execution and checks of the resulting presentation files. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/gydpku/PPTC/HEAD/README.md) |
 | [Precision CUA Bench](https://github.com/microsoft/precision-cua-bench) | cross-platform | [2604.13019](https://arxiv.org/abs/2604.13019) (2026) | — | code MIT | Evaluation resources for pixel-precise cursor grounding in code editors. | [✓ 2026‑10‑16](https://github.com/microsoft/precision-cua-bench) |
 | [RecreationBench](https://huggingface.co/datasets/Qwen/RecreationBench) · [leaderboard](https://recreation-bench.cc/#leaderboard) | cross-platform | — | — | — | Tasks for recreating reference applications with hybrid computer interaction. | [✓ 2026‑10‑16](https://huggingface.co/datasets/Qwen/RecreationBench/raw/main/README.md) |

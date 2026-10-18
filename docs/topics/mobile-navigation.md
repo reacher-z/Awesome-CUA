@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (15)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
 
 ## Benchmarks
 
@@ -23,6 +23,7 @@
 | [MobileGym++ / MobileGym++ Bench](https://github.com/OpenMobile2/MobileGym-plusplus) | web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | [215 task definitions](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/bench_env/benchmark/official.json) · [63 simulated clients](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md) | code Apache-2.0 | Browser-rendered mobile simulation with resettable app state and a shared task suite for GUI-only and GUI-plus-tool agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md) |
 | [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 | [MobileWorldBench](https://github.com/jacklishufan/MobileWorld) | android | [2512.14014](https://arxiv.org/abs/2512.14014) (2025) | — | — | Benchmark of semantic world modeling for mobile agents, with question-answering tasks and GPT-judged generation tasks, plus training data built on AitW and AndroidControl screens. | [✓ 2026‑10‑16](https://github.com/jacklishufan/MobileWorld) |
+| [NaturalGAIA](https://github.com/KeLes-Coding/NatureGAIA) | android | [2508.01330](https://arxiv.org/abs/2508.01330) (2025) | — | — | Verifiable benchmark of long-horizon Android app tasks with per-subtask answers, released with the LightManus task decomposer and an LLM answer validator; three sample tasks are public. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md) |
 | [SPA-Bench](https://github.com/ai-agents-2030/SPA-Bench) | android | [2410.15164](https://arxiv.org/abs/2410.15164) (2024) | [340 tasks](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) · [66 applications](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) | code MIT | 340 single-app and cross-app tasks over 66 Chinese and English Android apps, with plug-in support for 11 smartphone agents and automatic coarse-to-fine success detection. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) |
 
 ## Datasets

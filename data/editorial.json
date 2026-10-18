@@ -63143,5 +63143,38 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "NaturalGAIA",
+    "kind": "benchmark",
+    "url": "https://github.com/KeLes-Coding/NatureGAIA",
+    "aliases": [
+      "NatureGAIA"
+    ],
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "cross-app",
+      "planning",
+      "mobile-navigation"
+    ],
+    "summary": "Verifiable benchmark of long-horizon Android app tasks with per-subtask answers, released with the LightManus task decomposer and an LLM answer validator; three sample tasks are public.",
+    "verify_terms": [
+      "NaturalGAIA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2508.01330"
+    ],
+    "notes": "The README calls itself the official implementation of the NaturalGAIA paper, and the arXiv abstract links this repository. The public task/ directory holds three sample task files (levels 1 to 3) naming Android apps such as Wikipedia, IMDB and Google; the README does not state the full task count. Runs need ADB, LLM API keys and an LLM answer validator. The framework vendors Mobile-Agent-E (Android over ADB) and PC-Agent operation agents; desktop control is not claimed for the benchmark here. The README describes a Jarvis ADB executor at src/Agent/Operation_Agent/Jarvis, but that path is a submodule entry with no .gitmodules URL, so its code is not published in this repository. A README badge says MIT, but the repository has no LICENSE file, so the code license is unknown. Its quick start clones an anonymous.4open.science mirror.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f254c11e45a4542274ed6425988c220b256896b137b90cfd65ddd689038132cb",
+    "reviewed_at": "2026-10-18T11:31:53Z"
   }
 ]

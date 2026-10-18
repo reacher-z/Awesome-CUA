@@ -63143,5 +63143,87 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:deedy/mac_computer_use",
+    "name": "mac_computer_use",
+    "kind": "agent",
+    "url": "https://github.com/deedy/mac_computer_use",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Adaptation of Anthropic's computer-use demo that runs natively on macOS, taking screenshots with screencapture and sending mouse and keyboard input through cliclick, with a Streamlit chat interface.",
+    "scope": "core",
+    "verify_terms": [
+      "Anthropic Computer Use (for Mac)",
+      "mac_computer_use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deedy/mac_computer_use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "df9815a5e4727c09d0d1705a2b20fd49adcfe9c64c56d3cb2f26ae51ef72addd",
+    "reviewed_at": "2026-10-18T11:00:17Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.code"
+    ],
+    "notes": "Released in October 2024 against the computer-use-2024-10-22 beta API; the agent loop, computer, bash and edit tools follow Anthropic's reference demo, with the computer tool reimplemented for the host Mac instead of a Docker VM. It acts on the user's own machine without isolation. GitHub does not mark it as a fork, and no license file or declaration is present.",
+    "details": {
+      "repository_url": "https://github.com/deedy/mac_computer_use",
+      "repository_tree_sha": "808513170c02fd4bab5ff72b983393b6220aaff1"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/deedy/mac_computer_use",
+        "sha256": "431aea21191bfa78923a960d404fde74f895e130642df6bdc4a282d3f08c5c7d",
+        "retrieved_at": "2026-10-18T10:59:51Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/deedy/mac_computer_use/git/trees/main?recursive=1",
+        "sha256": "bf1b306ac27a97ac04ce7793bbb40f665ba4be76f9f8c1a3770f5391efe656d8",
+        "retrieved_at": "2026-10-18T10:59:52Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha"
+        ]
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:57f17b7d0c18b2d7c8bf",
+        "evidence_url": "https://raw.githubusercontent.com/deedy/mac_computer_use/HEAD/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No license file or declaration appears in the inspected README, GitHub API metadata or non-truncated tree; the upstream Anthropic demo's license is not transferred to this repository.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/deedy/mac_computer_use/HEAD/README.md"
+        ]
+      }
+    }
   }
 ]

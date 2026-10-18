@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (6)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
 
 ## Models
 
@@ -20,6 +20,7 @@ All entries in this section: desktop.
 | --- | --- | --- | --- | --- | --- |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
+| [mac_computer_use](https://github.com/deedy/mac_computer_use) | desktop, macos | — | — | Adaptation of Anthropic's computer-use demo that runs natively on macOS, taking screenshots with screencapture and sending mouse and keyboard input through cliclick, with a Streamlit chat interface. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/deedy/mac_computer_use/HEAD/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
 | [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) | web | [2310.10634](https://arxiv.org/abs/2310.10634) (2023) | code Apache-2.0 | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |

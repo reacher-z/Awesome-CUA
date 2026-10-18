@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (21)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -133,6 +133,7 @@
 | [DigiRL](https://github.com/DigiRL-agent/digirl) | android | [2406.11896](https://arxiv.org/abs/2406.11896) (2024) | code Apache-2.0 | Reinforcement learning for autonomous mobile device control. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digirl/HEAD/README.md) |
 | [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |
 | [DroidCall generation and evaluation code](https://github.com/UbiquitousLearning/DroidCall) | android | [2412.00402](https://arxiv.org/abs/2412.00402) (2024) | code MIT | Data-generation, fine-tuning and evaluation utilities for teaching small language models to invoke Android intents through predefined functions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/UbiquitousLearning/DroidCall/HEAD/README.md) |
+| [ExpActivator](https://github.com/fyzhang1/ExpActivator) | android | [2609.33304](https://arxiv.org/abs/2609.33304) (2026) | — | Research code for training-free experience activation in personal GUI agents: each screen is matched to a user's past states in a frozen backbone, and the matched past action is passed on as evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/fyzhang1/ExpActivator/HEAD/README.md) |
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
 | [MAI-UI inference and evaluation code](https://github.com/Tongyi-MAI/MAI-UI) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | code Apache-2.0 (MAI-UI subdirectory) | Published MAI-UI grounding and navigation-agent implementations with inference demos and evaluation scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/MAI-UI/README.md) |

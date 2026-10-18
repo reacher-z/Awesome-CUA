@@ -63143,5 +63143,123 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ExpActivator",
+    "kind": "framework",
+    "url": "https://github.com/fyzhang1/ExpActivator",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "training-free",
+      "mobile-navigation"
+    ],
+    "summary": "Research code for training-free experience activation in personal GUI agents: each screen is matched to a user's past states in a frozen backbone, and the matched past action is passed on as evidence.",
+    "scope": "core",
+    "verify_terms": [
+      "ExpActivator"
+    ],
+    "documented_by": [
+      "2609.33304"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fyzhang1/ExpActivator/HEAD/README.md"
+    ],
+    "notes": "Official code for arXiv 2609.33304 by authors from Nanyang Technological University and Alibaba Group. The expactivator/ scripts compile user history, build execution and visual indices, calibrate on history only, build per-step grounded evidence and run evaluations and ablations with four frozen backbones (Qwen3-VL-8B, MAI-UI-8B, Qwen3.5-9B, GUI-Owl-1.5-8B) served through vLLM; src/ holds shared and baseline evaluators, and skills/ packages PersonalAlign's hierarchical intent memory as a general agent skill. Evaluation is offline on recorded Android trajectories from PersonalAlign (README-skills.md); historical screenshots are not included and must be fetched from PersonalAlign's Fingertip20k history. The bundled evaluation files hold 7,915 action rows from 775 execution episodes and 215 positive and 100 negative proactive-suggestion states (counted by script). expactivator/README.md says grounded-policy execution results were being regenerated at the reviewed commit. The inspected tree has no license file. No code was run and no result was reproduced.",
+    "details": {
+      "availability": "Source and evaluation samples; historical screenshots and backbone weights are obtained separately",
+      "repository_revision": "3ef8ce5d923de56e56dc17eada833306dd92ea63"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://github.com/fyzhang1/ExpActivator/tree/3ef8ce5d923de56e56dc17eada833306dd92ea63",
+        "sha256": "7e2766cce49055b223fc1019b59abd7b1431ad94eb0dd3e6b85213f268bc5e67",
+        "retrieved_at": "2026-10-18T16:15:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fyzhang1/ExpActivator/3ef8ce5d923de56e56dc17eada833306dd92ea63/expactivator/README.md",
+        "sha256": "319149781432c764aa8ce42e8354122c21b385926566260b5048016e272420e9",
+        "retrieved_at": "2026-10-18T16:15:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fyzhang1/ExpActivator/3ef8ce5d923de56e56dc17eada833306dd92ea63/README-skills.md",
+        "sha256": "720336ab9dead2d6932bafb32a15b5071e684dfa20616d800b4d1b590f8455c1",
+        "retrieved_at": "2026-10-18T16:15:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fyzhang1/ExpActivator/3ef8ce5d923de56e56dc17eada833306dd92ea63/data/personal_execution/personal_execution.json",
+        "sha256": "7940e56bbec5a011e6b95e5a88e1cdea348ded9c6bf0394a4d172ebd492c6dbf",
+        "retrieved_at": "2026-10-18T16:15:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fyzhang1/ExpActivator/3ef8ce5d923de56e56dc17eada833306dd92ea63/data/proactive_suggestion/proactive_samples.json",
+        "sha256": "23cb769523c6b206d4ebe96a7495b0ac8553626942b63bb98292d33c9a966fb0",
+        "retrieved_at": "2026-10-18T16:15:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fyzhang1/ExpActivator/3ef8ce5d923de56e56dc17eada833306dd92ea63/data/proactive_suggestion/proactive_false_samples.json",
+        "sha256": "1019bfe058f47c3c06acbccb359736e9378a8883abd4b0ae51f46704dbde61ab",
+        "retrieved_at": "2026-10-18T16:15:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fyzhang1/ExpActivator/3ef8ce5d923de56e56dc17eada833306dd92ea63/scripts/execution/eval_expactivator_grounded.sh",
+        "sha256": "0456afdf47ed10067fa4472c68eb4ced84da9b0b2fd20b6a1413b96b583bb12b",
+        "retrieved_at": "2026-10-18T16:15:56Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "14701eb7cf448e7a83890dbfaa62599fae92723331b9d32d6c5d433acdeff6f4",
+    "reviewed_at": "2026-10-18T16:16:30Z"
   }
 ]

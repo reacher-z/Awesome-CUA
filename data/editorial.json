@@ -63143,5 +63143,276 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WildGUI",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/xwm/WildGUI",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "data-generation",
+      "video",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "WildGUI release from Video2GUI: per-task JSONL trajectories mined from Internet tutorial videos, with instructions, plans and grounded actions on web, desktop and mobile, plus screenshot shards for parts 1-15.",
+    "scope": "core",
+    "verify_terms": [
+      "WildGUI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/xwm/WildGUI/raw/75287698d5876692d4b998be30a724723906e769/README.md"
+    ],
+    "documented_by": [
+      "2605.14747"
+    ],
+    "notes": "The card describes this as a personally reprocessed annotation release: records were regenerated and cleaned following the annotation workflow, then split so that each JSONL line holds one task with its ordered action trajectory; action parameters are omitted when grounding is unreliable (use_grounding false). The Video2GUI project README links this repository as the WildGUI dataset and names the joker-112/WildGUI_Screenshots repository as the host of the part16-part19 frames. Its figures of about 12M trajectories over more than 1,500 applications and websites describe WildGUI in the paper; the 19 JSONL shards (about 78 GB) were not downloaded, so the Hub record count is not established. The project README says trajectories and grounding boxes were produced by Gemini-3-Pro, so labels are model-generated, not human annotations. The data license is the card's CC-BY-NC-4.0 declaration; the source videos and screenshots keep their own rights, and the Apache-2.0 license of the project repository is not transferred to the data.",
+    "details": {
+      "hub_id": "xwm/WildGUI",
+      "hub_revision": "75287698d5876692d4b998be30a724723906e769",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/xwm/WildGUI/tree/75287698d5876692d4b998be30a724723906e769",
+      "repository_url": "https://github.com/WeiminXiong/Video2GUI",
+      "dataset_profile": {
+        "supervision": [
+          "video-derived task instructions and plans",
+          "model-generated action grounding"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "plans",
+          "actions",
+          "action rationales"
+        ],
+        "formats": [
+          "JSONL",
+          "tar archives of JPEG frames"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 19,
+            "unit": "annotation JSONL shards",
+            "qualifier": "exact",
+            "population": "Hub repository at revision 75287698 (parts 1-19)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xwm/WildGUI/revision/75287698d5876692d4b998be30a724723906e769"
+          },
+          {
+            "value": 4137,
+            "unit": "screenshot tar shards",
+            "qualifier": "exact",
+            "population": "Hub repository at revision 75287698 (parts 1-15)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/xwm/WildGUI/revision/75287698d5876692d4b998be30a724723906e769"
+          },
+          {
+            "value": 12000000,
+            "unit": "interaction trajectories",
+            "qualifier": "approximately",
+            "population": "WildGUI as described in the Video2GUI project README; not recounted in this Hub release",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/WeiminXiong/Video2GUI/02f61de0c329f6763ce1b130596a650e4a9291f1/README.md"
+          }
+        ],
+        "notes": "Shard counts were computed by script from the pinned Hub API file list; they are files, not records. Each JSONL line is one task with its ordered action trajectory; the number of lines was not counted. The reported trajectory figure comes from the project README and may differ from the reprocessed Hub release. Frames for parts 16-19 are in a separate repository.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/xwm/WildGUI/raw/75287698d5876692d4b998be30a724723906e769/README.md",
+          "https://huggingface.co/api/datasets/xwm/WildGUI/revision/75287698d5876692d4b998be30a724723906e769",
+          "https://raw.githubusercontent.com/WeiminXiong/Video2GUI/02f61de0c329f6763ce1b130596a650e4a9291f1/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/xwm/WildGUI/revision/75287698d5876692d4b998be30a724723906e769",
+        "sha256": "0f2184af45c554954dcdfaf27d74e3a4907e637b7297ca7b5d34372a3f264c8f",
+        "retrieved_at": "2026-10-18T12:27:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/WeiminXiong/Video2GUI/02f61de0c329f6763ce1b130596a650e4a9291f1/README.md",
+        "sha256": "5e3e6a0baa737232700c39449d4cbe48dc7e4640fe0de12f521e03b6e7d64f92",
+        "retrieved_at": "2026-10-18T12:27:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5bfb27b61da056f73d3d0040098b694b17785bbb56b59ecbc9c10e6a58c82f0a",
+    "reviewed_at": "2026-10-18T12:28:53Z"
+  },
+  {
+    "name": "WildGUI Screenshots (parts 16-19)",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/joker-112/WildGUI_Screenshots",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "data-generation",
+      "video"
+    ],
+    "summary": "Companion Hub repository holding the WildGUI screenshot tar shards for parts 16-19; the matching trajectory annotations and the other parts' frames are in the main WildGUI repository.",
+    "scope": "core",
+    "verify_terms": [
+      "WildGUI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/joker-112/WildGUI_Screenshots/raw/8d31cbd45c9cb82683bbd5dea767782bb604fbcd/README.md"
+    ],
+    "documented_by": [
+      "2605.14747"
+    ],
+    "component_of": "https://huggingface.co/datasets/xwm/WildGUI",
+    "notes": "The repository contains only JPEG frames packed in tar shards (671 for part16, 878 for part17, 212 for part18 and 161 for part19) and no annotations; each frame is stored as {video_id}/screenshot_{MM_SS}.jpg and is linked to an action through the annotation's video_id and timestamp. The card notes that a small fraction of annotated frames may be missing. The Video2GUI project README lists this repository as part of the WildGUI release. The data license is the card's CC-BY-NC-4.0 declaration; frames derived from third-party tutorial videos keep their own rights.",
+    "details": {
+      "hub_id": "joker-112/WildGUI_Screenshots",
+      "hub_revision": "8d31cbd45c9cb82683bbd5dea767782bb604fbcd",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/joker-112/WildGUI_Screenshots/tree/8d31cbd45c9cb82683bbd5dea767782bb604fbcd",
+      "dataset_profile": {
+        "supervision": [
+          "frames referenced by video-derived trajectory annotations"
+        ],
+        "modalities": [
+          "screenshots"
+        ],
+        "formats": [
+          "tar archives of JPEG frames"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 1922,
+            "unit": "screenshot tar shards",
+            "qualifier": "exact",
+            "population": "Hub repository at revision 8d31cbd4 (parts 16-19)",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/joker-112/WildGUI_Screenshots/revision/8d31cbd45c9cb82683bbd5dea767782bb604fbcd"
+          }
+        ],
+        "notes": "Shard count computed by script from the pinned Hub API file list; it counts files, not frames. The card says each shard holds up to about 20,000 frames; the number of frames was not counted.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/joker-112/WildGUI_Screenshots/raw/8d31cbd45c9cb82683bbd5dea767782bb604fbcd/README.md",
+          "https://huggingface.co/api/datasets/joker-112/WildGUI_Screenshots/revision/8d31cbd45c9cb82683bbd5dea767782bb604fbcd"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/joker-112/WildGUI_Screenshots/revision/8d31cbd45c9cb82683bbd5dea767782bb604fbcd",
+        "sha256": "7532cb6ed1d70aab3c8aa3fc0cc76a4e52809f0440179f0c8f2de4bdfb6349e4",
+        "retrieved_at": "2026-10-18T12:27:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WeiminXiong/Video2GUI/02f61de0c329f6763ce1b130596a650e4a9291f1/README.md",
+        "sha256": "5e3e6a0baa737232700c39449d4cbe48dc7e4640fe0de12f521e03b6e7d64f92",
+        "retrieved_at": "2026-10-18T12:27:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4f2bbaa917b3c4c5927bcd4f23a5e882c58d0610e07f982e6549c840b942c64d",
+    "reviewed_at": "2026-10-18T12:28:53Z"
+  },
+  {
+    "name": "Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.14747",
+    "summary": "Video2GUI filters Internet videos to GUI tutorials and turns them into grounded interaction trajectories, building the WildGUI corpus; pretraining Qwen2.5-VL and MiMo-VL on it improves grounding and action results.",
+    "environments": [
+      "cross-platform",
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "video",
+      "grounding"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Video2GUI: Synthesizing Large-Sc"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experiments, reported performance and artifact availability have not been independently reproduced. The abstract states that the dataset and pipeline will be released; the WildGUI dataset is recorded separately.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "eb2c2e5d003d93b384f355e87eb4a628a534b2dbf0d056486497c123b9c920fc",
+    "reviewed_at": "2026-10-18T12:28:53Z"
   }
 ]

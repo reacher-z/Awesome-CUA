@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "total_records": 3177,
+  "curated_records": 1617,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2838,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1561,
+  "metadata_only_records": 1560,
   "discovery_identifiers": 4239,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
@@ -189,7 +189,7 @@
     "agent": 43,
     "benchmark": 88,
     "company": 16,
-    "dataset": 86,
+    "dataset": 88,
     "framework": 75,
     "infrastructure": 14,
     "model": 98,
@@ -200,14 +200,14 @@
   },
   "curated_by_environment": {
     "android": 300,
-    "cross-platform": 197,
-    "desktop": 322,
+    "cross-platform": 200,
+    "desktop": 324,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 624,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -238,13 +238,13 @@
     },
     "dataset": {
       "android": 35,
-      "cross-platform": 15,
-      "desktop": 18,
+      "cross-platform": 17,
+      "desktop": 20,
       "ios": 2,
       "linux": 7,
       "macos": 2,
       "unspecified": 7,
-      "web": 25,
+      "web": 27,
       "windows": 4
     },
     "framework": {
@@ -281,14 +281,14 @@
     },
     "paper": {
       "android": 176,
-      "cross-platform": 101,
+      "cross-platform": 102,
       "desktop": 204,
       "harmonyos": 2,
       "ios": 8,
       "linux": 18,
       "macos": 14,
       "unspecified": 341,
-      "web": 441,
+      "web": 442,
       "windows": 37
     },
     "product": {
@@ -318,7 +318,7 @@
   },
   "license_declarations_by_scope": {
     "code": 182,
-    "data": 61,
+    "data": 63,
     "weights": 56,
     "document": 0
   },
@@ -550,7 +550,7 @@
       "indexed": 503,
       "indexed_resources": 503,
       "resolved_aliases": 5,
-      "curated": 459,
+      "curated": 460,
       "excluded": 1,
       "set_aside": 9,
       "unindexed": 75
@@ -695,7 +695,7 @@
       "indexed": 486,
       "indexed_resources": 486,
       "resolved_aliases": 0,
-      "curated": 394,
+      "curated": 395,
       "excluded": 0,
       "set_aside": 45,
       "unindexed": 13

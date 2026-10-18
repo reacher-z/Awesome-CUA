@@ -63143,5 +63143,135 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:theodora-y/maskclaw",
+    "name": "MaskClaw",
+    "kind": "framework",
+    "url": "https://github.com/Theodora-Y/MaskClaw",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "memory"
+    ],
+    "summary": "Local privacy layer for GUI agents: a local VLM describes each screenshot and retrieves the user's rules from ChromaDB, RapidOCR locates sensitive text to blur before forwarding, and user corrections evolve the rules.",
+    "scope": "core",
+    "verify_terms": [
+      "MaskClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2605.28646"
+    ],
+    "notes": "Code for the MaskClaw paper, with Chinese and English READMEs. It runs as a FastAPI service whose /process endpoint returns a masked screenshot, plus rule and skill endpoints, an evolution daemon with sandbox checks and a web frontend; the README recommends MiniCPM-V 4.5 on a server or Gemma 4 2B through Ollama on a personal device. An optional hook monkey-patches the screenshot function of Open-AutoGLM's phone_agent, which must be placed next to the code, while the API server's AutoGLM task runner only simulates execution. The README targets phone agents but names no operating system. The repository also commits demo user logs, skill folders, a SQLite skill registry and compiled __pycache__ files. The README shows an MIT badge, but no license file is present.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "repository_url": "https://github.com/Theodora-Y/MaskClaw",
+      "repository_revision": "b65003eb045f7576533f50e0b09f8fcae3c67092"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/Theodora-Y/MaskClaw",
+        "sha256": "7dc8a669be4bc7802bc862a28fbdf5a3d03a5289a76e67a440605bb1c435aee4",
+        "retrieved_at": "2026-10-18T12:32:32Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/Theodora-Y/MaskClaw/git/trees/main?recursive=1",
+        "sha256": "42e9f00a21660e4704c2a5b0c9d35df3dc563fb489ddc04cff7aca86960cf6cc",
+        "retrieved_at": "2026-10-18T12:32:33Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "notes",
+          "licenses.code"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/b65003eb045f7576533f50e0b09f8fcae3c67092/README_en.md",
+        "sha256": "62ddf11eb98281366e9258e0974db3816e287fed4a5ae0f78d46c91157dac125",
+        "retrieved_at": "2026-10-18T12:32:33Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "licenses.code"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/b65003eb045f7576533f50e0b09f8fcae3c67092/proxy_agent.py",
+        "sha256": "76233196d8ee1c37e09815c737ea45f77583ebe1a736390f38fc71bcb5d087da",
+        "retrieved_at": "2026-10-18T12:32:34Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/b65003eb045f7576533f50e0b09f8fcae3c67092/api_server.py",
+        "sha256": "badfe73b7fd423c0557d120a5a6d9ab4648fe5d98bc95dec150014d01195f2ce",
+        "retrieved_at": "2026-10-18T12:32:34Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/b65003eb045f7576533f50e0b09f8fcae3c67092/skills/smart_masker.py",
+        "sha256": "dc964459cff274c76b2d265faca7a4b7bf0b21b72ea85fc4bec419be26accd68",
+        "retrieved_at": "2026-10-18T12:32:34Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary"
+        ]
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:zai-org/open-autoglm",
+        "evidence_url": "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/b65003eb045f7576533f50e0b09f8fcae3c67092/proxy_agent.py"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README shows an MIT badge that links to no license text, and the inspected non-truncated tree has no license file. A badge alone does not establish the license terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/b65003eb045f7576533f50e0b09f8fcae3c67092/README_en.md",
+          "https://api.github.com/repos/Theodora-Y/MaskClaw/git/trees/main?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fed18885f84907890b2d4e1447404af44f4b74cd8095e548aabb4ec64323c60d",
+    "reviewed_at": "2026-10-18T12:33:09Z"
   }
 ]

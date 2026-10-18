@@ -63143,5 +63143,92 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AI Browser (DeepFundAI)",
+    "kind": "agent",
+    "url": "https://github.com/DeepFundAI/ai-browser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Electron desktop browser whose built-in agents, imported from Eko-based npm packages, plan editable multi-step workflows and operate web pages in its own tabs, alongside chat, scheduled tasks and memory.",
+    "scope": "core",
+    "aliases": [
+      "DeepFundAI Browser"
+    ],
+    "verify_terms": [
+      "AI Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DeepFundAI/ai-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "The repository holds the Next.js and Electron app: tabs as Electron WebContentsView instances (electron/main/services/tab-manager.ts), scheduling, memory, settings, and the agent wiring in electron/main/services/eko-service.ts. The BrowserAgent and FileAgent themselves are imported from the npm packages @jarvis-agent/core and @jarvis-agent/electron (0.3.x), which the README describes as based on Eko; their npm metadata names FellouAI as author and a placeholder repository URL, and their source is not in this tree. In Deep Explore mode the user confirms or edits the generated workflow, and the agent can ask questions during a run. The README calls it a learning project developed and tested mainly with DeepSeek models. Releases ship macOS and Windows installers. Code was read, not run.",
+    "details": {
+      "availability": "Public source and macOS and Windows installers attached to GitHub releases",
+      "repository_revision": "1af9ba678f8ab46275baaecacfd1b576cd07d60b"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/DeepFundAI/ai-browser/1af9ba678f8ab46275baaecacfd1b576cd07d60b/electron/main/services/eko-service.ts",
+        "sha256": "c6dafa9e7c30e6b589acaa96b51a3a552b34f55ed76f270c26d28618417acaf1",
+        "retrieved_at": "2026-10-18T15:41:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/DeepFundAI/ai-browser/1af9ba678f8ab46275baaecacfd1b576cd07d60b/electron/main/services/tab-manager.ts",
+        "sha256": "4683c4a14967335bbb3aa5b91d010bdeb9ec4783a57f73213918df8935e753c7",
+        "retrieved_at": "2026-10-18T15:41:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/DeepFundAI/ai-browser/1af9ba678f8ab46275baaecacfd1b576cd07d60b/package.json",
+        "sha256": "19418f0be5ea19b3c775d4a56fae5dbd08d5de665dadbf58440e47906dea3445",
+        "retrieved_at": "2026-10-18T15:41:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/DeepFundAI/ai-browser/1af9ba678f8ab46275baaecacfd1b576cd07d60b/LICENSE",
+        "sha256": "dcf14747aed27f24321ce837c0006d1637c92a818481def3ff5793e2f9aef889",
+        "retrieved_at": "2026-10-18T15:41:29Z"
+      }
+    ],
+    "reviewed_sha256": "227fc4df2761a0fe4abc714e0f50f55290a351d769a05032f749824b99e02993",
+    "reviewed_at": "2026-10-18T15:41:38Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -32,6 +32,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Holo4 35B-A3B BF16](https://huggingface.co/Hcompany/Holo4-35B-A3B) | desktop, web | — | weights apache-2.0 | A Qwen3.6-based computer-use checkpoint designed to request GUI actions, code execution and tool calls through an external agent harness. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo4-35B-A3B/raw/main/README.md) |
+| [MAI-UI 2B](https://huggingface.co/Tongyi-MAI/MAI-UI-2B) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | weights Apache-2.0 | A 2B MAI-UI checkpoint in the Qwen3-VL architecture, from a GUI agent family whose training data adds agent-user interaction and MCP tool calls to mobile navigation and grounding. | [✓ 2026‑10‑18](https://huggingface.co/Tongyi-MAI/MAI-UI-2B/raw/503050934809558c8dfd2ddedaf9621fa74ac2de/README.md) |
 | [MAI-UI 8B](https://huggingface.co/Tongyi-MAI/MAI-UI-8B) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | weights apache-2.0 | A released MAI-UI checkpoint combining mobile GUI actions, agent-user interaction and tool-use-oriented navigation. | [✓ 2026‑10‑17](https://huggingface.co/Tongyi-MAI/MAI-UI-8B/raw/main/README.md) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |

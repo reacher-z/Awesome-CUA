@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -87,6 +87,7 @@
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
+| [MAI-UI 2B](https://huggingface.co/Tongyi-MAI/MAI-UI-2B) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | weights Apache-2.0 | A 2B MAI-UI checkpoint in the Qwen3-VL architecture, from a GUI agent family whose training data adds agent-user interaction and MCP tool calls to mobile navigation and grounding. | [✓ 2026‑10‑18](https://huggingface.co/Tongyi-MAI/MAI-UI-2B/raw/503050934809558c8dfd2ddedaf9621fa74ac2de/README.md) |
 | [MAI-UI 8B](https://huggingface.co/Tongyi-MAI/MAI-UI-8B) | android | [2512.22047](https://arxiv.org/abs/2512.22047) (2025) | weights apache-2.0 | A released MAI-UI checkpoint combining mobile GUI actions, agent-user interaction and tool-use-oriented navigation. | [✓ 2026‑10‑17](https://huggingface.co/Tongyi-MAI/MAI-UI-8B/raw/main/README.md) |
 | [MobileRL 9B checkpoint](https://huggingface.co/xuyifan/MobileRL-9B) | android | [2509.18119](https://arxiv.org/abs/2509.18119) (2025) | weights apache-2.0 | A GLM-4.1V-based mobile action checkpoint released by the MobileRL project for Android interaction. | [✓ 2026‑10‑17](https://huggingface.co/api/models/xuyifan/MobileRL-9B) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |

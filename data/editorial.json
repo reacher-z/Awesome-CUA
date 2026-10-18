@@ -63143,5 +63143,120 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:4b6d61ff2c1d6c8e1a23",
+    "name": "MAI-UI 2B",
+    "kind": "model",
+    "url": "https://huggingface.co/Tongyi-MAI/MAI-UI-2B",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "mobile-navigation",
+      "tool-integration"
+    ],
+    "summary": "A 2B MAI-UI checkpoint in the Qwen3-VL architecture, from a GUI agent family whose training data adds agent-user interaction and MCP tool calls to mobile navigation and grounding.",
+    "scope": "core",
+    "verify_terms": [
+      "MAI-UI"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Tongyi-MAI/MAI-UI-2B/raw/503050934809558c8dfd2ddedaf9621fa74ac2de/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2512.22047",
+        "evidence_url": "https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/3deabf1d1fcf31964511929938b7c9485589b29c/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.weights",
+      "details.parameter_label",
+      "details.artifact_type"
+    ],
+    "notes": "The manifest lists a single model.safetensors file and the card declares Apache-2.0. The card text and benchmark figures describe the whole 2B-to-235B-A22B family and are not assigned to this checkpoint; the project README announces this 2B release together with the 8B. No scores were reproduced and no weights were loaded.",
+    "details": {
+      "hub_id": "Tongyi-MAI/MAI-UI-2B",
+      "hub_revision": "503050934809558c8dfd2ddedaf9621fa74ac2de",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Tongyi-MAI/MAI-UI-2B/tree/503050934809558c8dfd2ddedaf9621fa74ac2de",
+      "artifact_type": "model-checkpoint",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "2B",
+      "repository_url": "https://github.com/Tongyi-MAI/MAI-UI"
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/Tongyi-MAI/MAI-UI-2B",
+        "sha256": "f7448a53766079b6d5f842b11def5b6d6b85ca1968cb7738dad558a24e935afa",
+        "retrieved_at": "2026-10-18T16:01:01Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/Tongyi-MAI/MAI-UI-2B/raw/503050934809558c8dfd2ddedaf9621fa74ac2de/config.json",
+        "sha256": "c4e0154f8df18ff6573e8ee9f1ba00cf5503ae585e446aa9fbd4c579f65f06bd",
+        "retrieved_at": "2026-10-18T16:01:03Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.architecture"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/3deabf1d1fcf31964511929938b7c9485589b29c/README.md",
+        "sha256": "a77375cc0c52ea48cb913ea046b2255fb3fc4666380beea7b29fa7c3fea7629f",
+        "retrieved_at": "2026-10-18T16:01:04Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "release_status",
+          "notes",
+          "details.repository_url",
+          "details.parameter_label"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/Tongyi-MAI/MAI-UI-2B/raw/503050934809558c8dfd2ddedaf9621fa74ac2de/README.md",
+          "retrieved_at": "2026-10-18T16:01:02Z",
+          "basis": "Publisher model-card declaration for the 2B checkpoint; code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the 2B checkpoint; code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Tongyi-MAI/MAI-UI-2B/raw/503050934809558c8dfd2ddedaf9621fa74ac2de/README.md"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card and config.json, the Hub API record (file manifest, cardData) and the pinned Tongyi-MAI/MAI-UI README. No weights were downloaded or run.",
+    "reviewed_sha256": "81731cb409cf6cd4af6121161ec6ba5d2862eb147e898ed57ac8bc974f008b3f",
+    "reviewed_at": "2026-10-18T16:01:41Z"
   }
 ]

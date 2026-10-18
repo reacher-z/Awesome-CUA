@@ -63143,5 +63143,88 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:apireno/domshell",
+    "name": "DOMShell",
+    "kind": "tool",
+    "url": "https://github.com/apireno/DOMShell",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and MCP server that map browser tabs and each page's accessibility tree to a virtual filesystem, so agents browse with ls, cd and find and act with click, type and submit.",
+    "scope": "core",
+    "verify_terms": [
+      "DOMShell"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/apireno/DOMShell/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "910304097f6596bb439acfd3e940126a9bf4c71a539cc57db5b9715db485acfc",
+    "reviewed_at": "2026-10-18T10:52:31Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Public source contains the Chrome extension (src/, public/), a standalone MCP server and stdio proxy (mcp-server/), and small local-model comparison scripts (experiments/). The MCP server is read-only by default; click, type and navigation require --allow-write. MIT covers this code. The Chrome Web Store build and the README's experiment results were not independently checked.",
+    "additional_evidence": [
+      {
+        "url": "https://api.github.com/repos/apireno/DOMShell",
+        "sha256": "907dd34ee6f968a0c7ccb6b3e93e5941df911d01443a892a429a3a779d910cea",
+        "retrieved_at": "2026-10-18T10:51:43Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ]
+      },
+      {
+        "url": "https://api.github.com/repos/apireno/DOMShell/git/trees/main?recursive=1",
+        "sha256": "0c385986859ebccb630024608ce5e4f135c82253d2dd3c56caa5afeaacc71884",
+        "retrieved_at": "2026-10-18T10:51:44Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/apireno/DOMShell/HEAD/LICENSE",
+        "sha256": "b865e4003a8440c8c7ce2b643d698e4bdc2d8f38a572e31a1be707ed4601c26b",
+        "retrieved_at": "2026-10-18T10:51:44Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ]
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/apireno/DOMShell/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T10:51:44Z",
+          "basis": "Reviewed repository license declaration for code; the Chrome Web Store build, MCP clients and model services are separate."
+        },
+        "reason": "Reviewed repository license declaration for code; the Chrome Web Store build, MCP clients and model services are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/apireno/DOMShell/HEAD/LICENSE"
+        ]
+      }
+    }
   }
 ]

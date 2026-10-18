@@ -63143,5 +63143,115 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenComet",
+    "kind": "agent",
+    "url": "https://github.com/princechouhan19/OpenCometAI",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "screen-understanding"
+    ],
+    "summary": "Chrome side-panel agent that tags page elements with numbered boxes, redacts faces, credential fields and text PII on-device before a model sees the screenshot and DOM text, and acts through selectors or debugger clicks.",
+    "scope": "core",
+    "aliases": [
+      "OpenComet-SIH",
+      "Open Comet",
+      "OpenCometAI"
+    ],
+    "verify_terms": [
+      "OpenComet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "The README presents it as a Smart India Hackathon entry for problem statement 26171, whose listed organisation is ISRO. The Manifest V3 extension (version 1.31.0 at review) is loaded unpacked in Chrome; the README says Firefox has been built from the same source since v1.17.0. src/content/dom-detector.js paints numbered boxes on interactive elements, and the service worker captures the tab through the Chrome debugger or captureVisibleTab, so screenshots carry those marks. In privacy mode, MediaPipe, YOLO, ViT, Tesseract OCR and regex/checksum PII detectors run in the browser, and src/lib/privacy-firewall.js blocks or blanks a frame when sanitizing fails. Actions use selectors, with debugger Input.dispatchMouseEvent clicks where needed, inside a tab-group sandbox with an approval mode. Models: on-device Gemma 4, cloud providers, or Ollama through the bundled server. OpenCometBench is the repository's own test suite; its PII precision/recall uses a synthetic corpus built from the detector's own rules, as the README states, so it is not an independent benchmark. Code was read, not run.",
+    "details": {
+      "availability": "Public extension source loaded unpacked, an optional Node companion server and the OpenCometBench suites; no store listing named",
+      "repository_revision": "b1c6a9a226198c2cacab14e6746f384cb10b7575"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/b1c6a9a226198c2cacab14e6746f384cb10b7575/src/background/sw.js",
+        "sha256": "9fb05745727bf83bc92987623f00c5d581eb382425c182cd229a7a3378dc4261",
+        "retrieved_at": "2026-10-18T16:18:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/b1c6a9a226198c2cacab14e6746f384cb10b7575/src/content/dom-detector.js",
+        "sha256": "e37367f96ab7dffb2ad3f52741e6407377d7fc7939e676717ba205f71fdd0391",
+        "retrieved_at": "2026-10-18T16:18:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/b1c6a9a226198c2cacab14e6746f384cb10b7575/src/background/actions.js",
+        "sha256": "3abffee67cebd05c5cd15d605bf0281947f9ca84abcb1ada3a13ffa254dfc770",
+        "retrieved_at": "2026-10-18T16:18:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/b1c6a9a226198c2cacab14e6746f384cb10b7575/src/lib/privacy-firewall.js",
+        "sha256": "a420b4e40a058e518e004a12feafa71a649621acb7e7812df81b2d9c5b2769e9",
+        "retrieved_at": "2026-10-18T16:18:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/b1c6a9a226198c2cacab14e6746f384cb10b7575/manifest.json",
+        "sha256": "9a90cf2acfbfc449cf42ca0a0e115c1ffee3b0efe31c262c5b0cfea8400f0d26",
+        "retrieved_at": "2026-10-18T16:18:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/princechouhan19/OpenCometAI/b1c6a9a226198c2cacab14e6746f384cb10b7575/LICENSE",
+        "sha256": "9807e7c52637413d31b339b21e7659ea044235dc88fc37664073fa495fa73e7b",
+        "retrieved_at": "2026-10-18T16:18:52Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0ac828306c3130219006b7f26a5a5bc1f89267d5c1ded62f4f831d59ad0c293f",
+    "reviewed_at": "2026-10-18T16:19:40Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (4)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -61,6 +61,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | web | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
 | [CoCo-Agent](https://github.com/xbmxb/CoCo-Agent) | android | [2402.11941](https://arxiv.org/abs/2402.11941) (2024) | — | Research implementation combining screen and layout perception with conditional action prediction for smartphone automation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xbmxb/CoCo-Agent/HEAD/README.md) |
+| [OpenComet](https://github.com/princechouhan19/OpenCometAI) | web | — | code MIT | Chrome side-panel agent that tags page elements with numbered boxes, redacts faces, credential fields and text PII on-device before a model sees the screenshot and DOM text, and acts through selectors or debugger clicks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/princechouhan19/OpenCometAI/HEAD/README.md) |
 | [VisionTasker](https://github.com/AkimotoAyako/VisionTasker) | android | [2312.11190](https://arxiv.org/abs/2312.11190) (2023) | code GPL-3.0 | An Android automation implementation that translates screenshot-based UI understanding into language descriptions for step-by-step LLM planning and action execution. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/readme.md) |
 
 ## Frameworks

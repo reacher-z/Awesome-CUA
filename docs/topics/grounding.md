@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (3)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -133,6 +133,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [GPT-4V-Act](https://github.com/ddupont808/GPT-4V-Act) | web | — | — | Electron-based Chromium assistant that numbers interactable elements with a DOM auto-labeler and asks GPT-4V or Claude for set-of-mark click and type actions from the screenshot and task. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ddupont808/GPT-4V-Act/HEAD/README.md) |
 | [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | web | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/SeeAct/HEAD/README.md) |
 | [Self Operating Computer](https://github.com/OthersideAI/self-operating-computer) | desktop | — | code MIT | Framework, released in November 2023, in which a multimodal model views the screen and picks mouse and keyboard actions toward a goal, with backends such as GPT-4o, Claude 3, Gemini and LLaVA. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OthersideAI/self-operating-computer/HEAD/README.md) |
 

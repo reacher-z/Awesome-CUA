@@ -63143,5 +63143,90 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:ddupont808/gpt-4v-act",
+    "name": "GPT-4V-Act",
+    "kind": "agent",
+    "url": "https://github.com/ddupont808/GPT-4V-Act",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Electron-based Chromium assistant that numbers interactable elements with a DOM auto-labeler and asks GPT-4V or Claude for set-of-mark click and type actions from the screenshot and task.",
+    "scope": "core",
+    "verify_terms": [
+      "GPT-4V-Act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ddupont808/GPT-4V-Act/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "README marks clicking and character typing as working and scrolling, special keys, asking the user and remembering information as not implemented; a September 2024 update points to Windows Agent Arena for the planned desktop features. The tree also holds 400 auto-labeled screenshots with a COCO annotation file. No project license file is present, so code and screenshot rights stay unknown.",
+    "details": {
+      "repository_url": "https://github.com/ddupont808/GPT-4V-Act",
+      "repository_tree_sha": "01b296d40935cab393f4a0f932efb653cec94fb1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ddupont808/GPT-4V-Act",
+        "sha256": "f9b8d44e44c20c1c5f2270a5eb2cd6a65ce8c6292f64a9f656a2040ee4d41625",
+        "retrieved_at": "2026-10-18T10:57:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ddupont808/GPT-4V-Act/git/trees/main?recursive=1",
+        "sha256": "eebaaf88d2697242bf9b3801549e30a873a630024b775b3751104d87c1adf723",
+        "retrieved_at": "2026-10-18T10:57:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ddupont808/GPT-4V-Act/HEAD/package.json",
+        "sha256": "62ca820f190136ad84e369bc1d798a36345daecd883c97347ef5d14a444689bc",
+        "retrieved_at": "2026-10-18T10:57:42Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No LICENSE file exists in the inspected tree and the GitHub API reports no license; the npm package.json \"license\": \"ISC\" field is the npm init default naming a license, not a project license text, so code and bundled screenshot rights remain unknown.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ddupont808/GPT-4V-Act/HEAD/package.json"
+        ]
+      }
+    },
+    "reviewed_sha256": "49984f3497e260bddcda90949cb2cc50762f95c2409ac531be940414954cd370",
+    "reviewed_at": "2026-10-18T10:58:04Z"
   }
 ]

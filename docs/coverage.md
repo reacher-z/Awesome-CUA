@@ -2,10 +2,10 @@
 
 Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from committed source receipts.
 
-- 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
+- 3,176 resource records: 1,615 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,239 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -16,7 +16,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 11 | 16 | 5 | 2 | 1 | 16 | 1 | · | 1 | 1 |
+| [agent](agents.md) | 12 | 16 | 5 | 2 | 1 | 16 | 1 | · | 1 | 1 |
 | [benchmark](benchmarks.md) | 42 | 20 | 5 | 3 | 5 | 19 | 1 | · | 14 | 3 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 25 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 7 |
@@ -34,7 +34,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-17 |
+| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 227 | 216 | 0 | 29 | 82 | OK · 2026-10-17 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-17 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-17 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-17 |

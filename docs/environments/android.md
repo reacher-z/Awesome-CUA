@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -98,6 +98,7 @@
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
+| [UI-TARS 7B DPO](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO) | cross-platform, web, desktop, android | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | weights apache-2.0 | DPO-labelled 7B UI-TARS checkpoint that its card marks as recommended: a native GUI agent model in the Qwen2-VL architecture for screen perception, element grounding and multi-step actions on web, mobile and desktop. | [✓ 2026‑10‑18](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO/raw/727b0df39207dafc6cf211a61f29d84b7659c39c/README.md) |
 
 ## Agents
 

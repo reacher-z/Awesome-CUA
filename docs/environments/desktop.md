@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (25)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -81,6 +81,7 @@
 | [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) | web, desktop, android, ios | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | — | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. | [✓ 2026‑10‑17](https://huggingface.co/api/models/cckevinn/SeeClick) |
 | [ShowUI-π](https://github.com/showlab/showui-pi) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | Vision-language-action model and training code for GUI dragging, with links to checkpoints and continuous-action evaluation data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md) |
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
+| [UI-TARS 7B DPO](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO) | cross-platform, web, desktop, android | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | weights apache-2.0 | DPO-labelled 7B UI-TARS checkpoint that its card marks as recommended: a native GUI agent model in the Qwen2-VL architecture for screen perception, element grounding and multi-step actions on web, mobile and desktop. | [✓ 2026‑10‑18](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO/raw/727b0df39207dafc6cf211a61f29d84b7659c39c/README.md) |
 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
 
 ## Agents

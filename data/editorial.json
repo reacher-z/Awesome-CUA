@@ -55077,8 +55077,98 @@
     "reviewed_sha256": "5cc72b992cfc11094dcf341c284d5baadc6c66a302fdfd474b27913fe1c91f6f",
     "reviewed_at": "2026-10-17T17:18:50Z",
     "details": {
-      "leaderboard_url": "https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard"
-    }
+      "leaderboard_url": "https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard",
+      "benchmark_protocol": {
+        "focus": [
+          "long-horizon agentic web search",
+          "time-varying, citation-backed answers"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "task description",
+          "live web pages the agent visits"
+        ],
+        "actions": [
+          "web browsing by the evaluated search system",
+          "markdown answers with source URLs"
+        ],
+        "evaluation": "Per-task judge-agent scripts apply tree-structured rubrics to check answer correctness and whether cited pages support each fact. The README recommends pre-caching the cited webpages, needs OpenAI or Azure OpenAI keys, and some tasks also need Google Maps APIs.",
+        "counts": [
+          {
+            "value": 130,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "Mind2Web 2 benchmark as stated in the arXiv v2 abstract",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/abs/2506.21506v2"
+          },
+          {
+            "value": 130,
+            "unit": "per-task evaluation scripts",
+            "qualifier": "exact",
+            "population": "evaluation_scripts/2025_10_23 in the osunlp/Mind2Web-2 Hub dataset at revision 54f5b25",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/osunlp/Mind2Web-2/tree/54f5b2546c30b86812d9564f4800c0c6f77deb45/evaluation_scripts/2025_10_23",
+            "reference_url": "https://huggingface.co/datasets/osunlp/Mind2Web-2/tree/54f5b2546c30b86812d9564f4800c0c6f77deb45/evaluation_scripts/2025_10_23"
+          }
+        ],
+        "notes": "The README says evaluation scripts for both the public dev set and the test set were released on 2025-10-23. The dev_set.csv and test_set.csv task files sit behind an automatic Hub access gate and were not opened, so no per-split count is recorded. Leaderboard results come from submitted answers and webpage caches.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md",
+          "https://arxiv.org/abs/2506.21506v2",
+          "https://huggingface.co/api/datasets/osunlp/Mind2Web-2/tree/54f5b2546c30b86812d9564f4800c0c6f77deb45/evaluation_scripts/2025_10_23"
+        ]
+      }
+    },
+    "documented_by": [
+      "2506.21506"
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "cc-by-4.0",
+          "url": "https://huggingface.co/api/datasets/osunlp/Mind2Web-2/revision/54f5b2546c30b86812d9564f4800c0c6f77deb45?expand%5B%5D=cardData",
+          "retrieved_at": "2026-10-18T15:43:33Z",
+          "basis": "Publisher Hub-card metadata for the dataset repository holding the task CSVs and judge scripts; cited third-party webpages keep their own terms."
+        },
+        "reason": "The README links osunlp/Mind2Web-2 as the dataset of tasks and evaluation scripts, and its card metadata declares CC-BY-4.0. The repository's MIT LICENSE stays the code license.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/osunlp/Mind2Web-2/revision/54f5b2546c30b86812d9564f4800c0c6f77deb45?expand%5B%5D=cardData"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/abs/2506.21506v2",
+        "sha256": "9ebf14e9fab434acba5f0a1f89d2474a31db91c5b64c52ef896e38e0229f213c",
+        "retrieved_at": "2026-10-18T15:43:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/api/datasets/osunlp/Mind2Web-2/tree/54f5b2546c30b86812d9564f4800c0c6f77deb45/evaluation_scripts/2025_10_23",
+        "sha256": "42844a52150a767be14adcad614f2973e537a7154944a24c0dcb6bce6bf47d9d",
+        "retrieved_at": "2026-10-18T15:43:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/api/datasets/osunlp/Mind2Web-2/revision/54f5b2546c30b86812d9564f4800c0c6f77deb45?expand%5B%5D=cardData",
+        "sha256": "040b9e38775f058c44343907cbf9c5e8eaeafd6a512a6e2698782a2c9a7c6ec1",
+        "retrieved_at": "2026-10-18T15:43:33Z"
+      }
+    ]
   },
   {
     "name": "Magma",
@@ -63143,5 +63233,39 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Mind2Web 2: Evaluating Agentic Search with Agent-as-a-Judge",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.21506",
+    "summary": "Mind2Web 2 pairs 130 long-horizon tasks needing live web browsing and synthesis with Agent-as-a-Judge: task-specific judge agents built on tree-structured rubrics score answer correctness and source attribution.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "long-horizon"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Mind2Web 2: Evaluating Agentic Search"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2506.21506"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experiments, reported performance and artifact availability have not been independently reproduced.",
+    "reviewed_sha256": "80eefafd16a413edbfff40645388ffc20ca91b847f7397d2d33dea3c9e091d1e",
+    "reviewed_at": "2026-10-18T15:44:30Z"
   }
 ]

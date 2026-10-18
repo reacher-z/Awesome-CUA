@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:meta-llama/llama3",
+    "url": "https://github.com/meta-llama/llama3",
+    "decision": "out_of_scope",
+    "reason": "meta-llama/llama3 is Meta's archived and deprecated repository with download scripts and minimal inference code for the general-purpose Llama 3 8B and 70B language models; its README redirects users to llama-models. It provides no GUI, browser or device interaction, and GUI-specific Llama 3 fine-tunes are recorded separately.",
+    "reviewed_at": "2026-10-18T11:49:45Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/meta-llama/llama3/HEAD/README.md",
+      "sha256": "ad2ece7d31e80a30b7fab5cbdba0efa29b3b9852eb51378f1d715f0cdfdb10ce",
+      "retrieved_at": "2026-10-18T11:37:54Z"
+    }
   }
 ]

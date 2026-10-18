@@ -63143,5 +63143,77 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Browser Use Desktop",
+    "kind": "agent",
+    "url": "https://github.com/browser-use/desktop",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Electron app that runs Claude Code or Codex sessions as browser agents in a separate Chromium seeded with the user's imported cookies, started by hotkey or WhatsApp message and built on Browser Harness.",
+    "scope": "core",
+    "publisher_id": "organization:browser-use",
+    "verify_terms": [
+      "Browser Use Desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/desktop/HEAD/README.md"
+    ],
+    "notes": "The README offers a macOS Apple Silicon DMG, a Windows installer and a Linux AppImage, with deb and rpm packages on the releases page. Engines are pluggable adapters in the main process (claude-code is the default; codex and browsercode adapters are also present), and the tree bundles a Browser Harness JavaScript SDK and domain-skill notes for 68 sites. Agent quality depends on the user's Anthropic or OpenAI subscription or API key. Browser Harness has no catalog record on main, so no relation is recorded. The latest non-prerelease is v0.0.31 (2026-05-09) while development continues on main. Code was read, not run.",
+    "details": {
+      "availability": "Public source and installers for macOS (Apple Silicon), Windows and Linux; agent engines need an external Claude Code or Codex subscription or API key",
+      "package_version": "0.0.31"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.availability"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/desktop/HEAD/app/src/main/hl/engines/registry.ts",
+        "sha256": "ba0a0d775e1724b72eeaa28e96fd6c711dee0d6bb0da7ca040b623a12c8fe22e",
+        "retrieved_at": "2026-10-18T11:56:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/desktop/HEAD/app/package.json",
+        "sha256": "5150acdc01b1f3a61cc8bd1542bf5c948dab7840f9c1f725ce97ed22eaa98b43",
+        "retrieved_at": "2026-10-18T11:56:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/desktop/HEAD/LICENSE",
+        "sha256": "5afa3d97bf1e6f998d587fa101e3fe0d0c416840b7fe77bcd6ae97690a334631",
+        "retrieved_at": "2026-10-18T11:56:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "12689a8cb05d9d4d48b0cc340bb4630d2a4c639d0f03acce072e4a9e1ea4fc5b",
+    "reviewed_at": "2026-10-18T11:56:54Z"
   }
 ]

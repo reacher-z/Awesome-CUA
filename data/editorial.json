@@ -49990,7 +49990,7 @@
     "verify_terms": [
       "UI understanding datasets"
     ],
-    "notes": "The archived repository retains TFRecord train/dev/test files for AppSim and RefExp. These are annotation and UI-structure records with Rico image identifiers, not a republished complete screenshot collection or a UIBert checkpoint. The README’s 72k figure describes the upstream Rico source, not the number of released AppSim/RefExp examples; no sample total is inferred. The publisher explicitly assigns CC-BY-4.0 to these datasets.",
+    "notes": "The archived repository retains TFRecord train/dev/test files for AppSim and RefExp. These are annotation and UI-structure records with Rico image identifiers, not a republished complete screenshot collection or a UIBert checkpoint. The README’s 72k figure describes the upstream Rico source, not the number of released AppSim/RefExp examples; split sizes come from the UIBert paper and, for RefExp dev and test, from the released files. The publisher explicitly assigns CC-BY-4.0 to these datasets.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/google-research-datasets/uibert/HEAD/README.md"
     ],
@@ -50040,6 +50040,36 @@
         "url": "https://interactionmining.org/rico",
         "sha256": "f752ebfb2598b7f848d343f428502b28e0f591f27849ab707f14bee398d4eb8d",
         "retrieved_at": "2026-10-17T12:36:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research-datasets/uibert/eceafbde7567959899bfb7f8d9e6fd71a52aaa12/ref_exp/dev.tfrecord",
+        "sha256": "3944cf3e9d7eb456b8db393dad79c9bf8674dc9907e1e023c125370f5f6f268b",
+        "retrieved_at": "2026-10-18T15:50:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research-datasets/uibert/eceafbde7567959899bfb7f8d9e6fd71a52aaa12/ref_exp/test.tfrecord",
+        "sha256": "5a73ed5c4c8ecd0511853572bc5f30b97c2cd893ea726a22190029232ca85d2d",
+        "retrieved_at": "2026-10-18T15:50:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2107.13731v2",
+        "sha256": "666a7198b4bafaddb90c9021475429fb6fb0d6ceb4d65b084a15f9bfe8a1e0ba",
+        "retrieved_at": "2026-10-18T15:50:33Z"
       }
     ],
     "documented_by": [
@@ -50066,11 +50096,87 @@
           "AppSim train/dev/test",
           "RefExp train/dev/test"
         ],
-        "notes": "Original UI images are retrieved separately by Rico IDs. No release-specific sample count is established.",
+        "notes": "Original UI images are retrieved separately by Rico IDs. Split sizes are the UIBert paper's figures. Counted by script, the released RefExp dev and test TFRecords hold 509 and 616 records, each one UI with one referring expression, fewer than the paper's 2.1k and 1.8k. The AppSim TFRecords and the RefExp train file were not retained as receipts.",
         "evidence_urls": [
-          "https://raw.githubusercontent.com/google-research-datasets/uibert/HEAD/README.md"
+          "https://raw.githubusercontent.com/google-research-datasets/uibert/HEAD/README.md",
+          "https://raw.githubusercontent.com/google-research-datasets/uibert/eceafbde7567959899bfb7f8d9e6fd71a52aaa12/ref_exp/dev.tfrecord",
+          "https://raw.githubusercontent.com/google-research-datasets/uibert/eceafbde7567959899bfb7f8d9e6fd71a52aaa12/ref_exp/test.tfrecord",
+          "https://arxiv.org/html/2107.13731v2"
         ],
-        "counts": []
+        "counts": [
+          {
+            "value": 1000000,
+            "unit": "anchor–search UI component pairs",
+            "qualifier": "approximately",
+            "population": "AppSim (Rico-based) as described in the UIBert paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 900000,
+            "unit": "anchor–search UI component pairs",
+            "qualifier": "approximately",
+            "population": "AppSim train split as described in the paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 32000,
+            "unit": "anchor–search UI component pairs",
+            "qualifier": "approximately",
+            "population": "AppSim dev split as described in the paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 32000,
+            "unit": "anchor–search UI component pairs",
+            "qualifier": "approximately",
+            "population": "AppSim test split as described in the paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 16900,
+            "unit": "referring-expression examples",
+            "qualifier": "approximately",
+            "population": "RefExp train split as described in the paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 2100,
+            "unit": "referring-expression examples",
+            "qualifier": "approximately",
+            "population": "RefExp dev split as described in the paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 1800,
+            "unit": "referring-expression examples",
+            "qualifier": "approximately",
+            "population": "RefExp test split as described in the paper",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2107.13731v2"
+          },
+          {
+            "value": 509,
+            "unit": "referring-expression examples",
+            "qualifier": "exact",
+            "population": "released ref_exp/dev.tfrecord at commit eceafbde",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/google-research-datasets/uibert/eceafbde7567959899bfb7f8d9e6fd71a52aaa12/ref_exp/dev.tfrecord"
+          },
+          {
+            "value": 616,
+            "unit": "referring-expression examples",
+            "qualifier": "exact",
+            "population": "released ref_exp/test.tfrecord at commit eceafbde",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/google-research-datasets/uibert/eceafbde7567959899bfb7f8d9e6fd71a52aaa12/ref_exp/test.tfrecord"
+          }
+        ]
       }
     },
     "reviewed_relations": [

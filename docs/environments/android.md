@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (17)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
 
 ## Benchmarks
 
@@ -116,6 +116,7 @@
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | android, desktop, windows, macos, linux, web, cross-platform | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0-or-later | Personal agent for Android, desktop and web that, besides shell, browser and MCP tools, can operate phone apps and desktop windows from screenshots through an operator model and asks before irreversible steps. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
 | [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | android, ios | — | code Apache-2.0 | Phone agent model and framework with device interaction tooling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/zai-org/Open-AutoGLM/HEAD/README.md) |
 | [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
 | [VisionTasker](https://github.com/AkimotoAyako/VisionTasker) | android | [2312.11190](https://arxiv.org/abs/2312.11190) (2023) | code GPL-3.0 | An Android automation implementation that translates screenshot-based UI understanding into language descriptions for step-by-step LLM planning and action execution. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/readme.md) |

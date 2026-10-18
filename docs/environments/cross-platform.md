@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+199 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (2)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (102)](#papers)
 
 ## Benchmarks
 
@@ -99,11 +99,10 @@
 
 ## Agents
 
-All entries in this section: android, cross-platform.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/README.md) |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | android, desktop, windows, macos, linux, web, cross-platform | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0-or-later | Personal agent for Android, desktop and web that, besides shell, browser and MCP tools, can operate phone apps and desktop windows from screenshots through an operator model and asks before irreversible steps. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
 
 ## Frameworks
 
@@ -150,6 +149,7 @@ All entries in this section: cross-platform.
 | 2026‑10‑14 | [MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments](https://arxiv.org/abs/2610.20939) | cross-platform, desktop, web | Unifies GUI evaluation, trajectory collection, environment synthesis, and online reinforcement learning across mobile, computer, and web tasks. |
 | 2026‑10‑13 | [GroundGUI: GUI Grounding by High-Quality Data and Distillation-to-Reinforcement Learning](https://arxiv.org/abs/2610.19100) | desktop, web, cross-platform | Introduces ScreenRef screenshot grounding data and a training sequence from supervised learning through teacher-guided distillation to reinforcement learning for GroundGUI-8B. |
 | 2026‑10‑08 | [AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks](https://arxiv.org/abs/2610.11050) | cross-platform | Introduces AgentHorizon, a benchmark for judging long computer-use trajectories using closely related instructions paired with recorded actions and screenshots. It tests whether judges can detect constraint violations and distinguish successful tasks from similar but incompatible requests. |
+| 2026‑10‑06 | [nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://arxiv.org/abs/2610.08699) | cross-platform, desktop | Defines the personal agent, reconstructs how Meta's Muse is built from public sources, and presents nanoMuse, an open agent spanning a person's devices with hands on phone and computer screens and a gate on every action. |
 | 2026‑09‑25 | [ScreenHaystack: Finding Blind Zones in GUI Grounding](https://arxiv.org/abs/2609.32036) | cross-platform | Moves controlled target icons across high-resolution interfaces to diagnose spatial blind zones in grounding models and study targeted augmentation. |
 | 2026‑09‑18 | [MintAct: A Unified Visual Agent for Digital Environments](https://arxiv.org/abs/2609.22083) | cross-platform | MintAct trains a visual-agent family for grounding, navigation and tool use across mobile, desktop and web environments. Its shared infrastructure supports trajectory collection and asynchronous online RL while controlling cross-domain sampling and off-policy drift. |
 | 2026‑08‑27 | [UI-Venus-2 Technical Report](https://arxiv.org/abs/2609.00028) | web, desktop, cross-platform | Describes a GUI foundation agent trained through expanded environments, function-grounded tasks, and trajectory verification with safety-aware execution mechanisms. |

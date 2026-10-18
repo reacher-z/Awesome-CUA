@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-162 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+164 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (9)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (143)](#papers)
 
 ## Benchmarks
 
@@ -33,6 +33,7 @@ All entries in this section: ios.
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | android, desktop, windows, macos, linux, web, cross-platform | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0-or-later | Personal agent for Android, desktop and web that, besides shell, browser and MCP tools, can operate phone apps and desktop windows from screenshots through an operator model and asks before irreversible steps. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
 
 ## Frameworks
 
@@ -61,6 +62,7 @@ All entries in this section: ios.
 | 2026‑10‑13 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) | desktop, web | Introduces CarryOn, which maintains evidence-linked task objects and remaining-work context across history compression, with evaluations on desktop tasks and web research. |
 | 2026‑10‑09 | [Web$hell: A Unified Interface for Agentic Web Access](https://arxiv.org/abs/2610.13416) | web | Introduces Web$hell, an interface that compiles live pages into persistent information and action objects so agents can gather evidence, navigate websites, and reuse acquired content through shared operations. |
 | 2026‑10‑08 | [DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents](https://arxiv.org/abs/2610.11707) | android | Introduces DeltaReplay, which stores mobile GUI trajectories as transition graphs and decides at each step whether to reuse an action, substitute task-specific parameters, or defer to the base agent. This supports reuse of partially matching experiences without rewriting stored memory. |
+| 2026‑10‑06 | [nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://arxiv.org/abs/2610.08699) | cross-platform, desktop | Defines the personal agent, reconstructs how Meta's Muse is built from public sources, and presents nanoMuse, an open agent spanning a person's devices with hands on phone and computer screens and a gate on every action. |
 | 2026‑10‑05 | [AMBER: Training Long-Horizon Web Agents through Append-Only Memory](https://arxiv.org/abs/2610.07118) | web | Introduces AMBER, an append-only memory framework in which a web agent learns to reason, act, and retain evidence using outcome-reward reinforcement learning. It studies whether preserving entries avoids the loss of facts and corrective feedback seen with rewritten memory. |
 | 2026‑10‑04 | [TeleTune: Evolving Agent Skills From Offline Telemetry](https://arxiv.org/abs/2610.05437) | web | Introduces TeleTune, which edits a textual skill library using held-out action prediction on offline software-use logs with missing goals or interleaved tasks. The learned workflows also guide retrieval of demonstrations for subsequent web-agent execution. |
 | 2026‑10‑01 | [Auditing Web Agent Evaluation on WebArena-Lite: Human Review of Outcomes and Trajectories](https://arxiv.org/abs/2610.01491) | web | Audits WebArena-Lite outcomes and trajectories with human review to identify automatic-evaluator false negatives and the first consequential execution errors. It also studies explicit execution-state memory and procedural guidance, showing why final task scores can miss substantial differences in agent behavior. |

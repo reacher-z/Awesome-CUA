@@ -63143,5 +63143,166 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:nano-muse/nanomuse",
+    "name": "nanoMuse",
+    "kind": "agent",
+    "url": "https://github.com/nano-muse/nanoMuse",
+    "environments": [
+      "android",
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web",
+      "cross-platform"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "human-in-the-loop",
+      "memory"
+    ],
+    "summary": "Personal agent for Android, desktop and web that, besides shell, browser and MCP tools, can operate phone apps and desktop windows from screenshots through an operator model and asks before irreversible steps.",
+    "scope": "core",
+    "verify_terms": [
+      "nanoMuse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2610.08699"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Screen operation (\"hands\") is opt-in and is the last rung after skills, CLIs, MCP servers, logged-in fetches and the in-app browser. On Android the phone operator reads screenshots, plus the accessibility tree when present, and can use its own vision model; the desktop app's operator is a port of UI-TARS-desktop's on nut.js. The iPhone app has no hands because iOS does not allow it, so ios is not listed. Devices share one account through a relay that can be self-hosted; the community relay grants a free model allowance, after which users bring their own key. The android/ tree is based on OpenMinis 1.13 (GPL-3.0). No evaluation of the hands is published; the paper lists one as roadmap. Code was read, not run.",
+    "details": {
+      "availability": "Public source; GitHub releases carry Android APK and desktop installers; iOS through TestFlight",
+      "release_tag": "v1.0.5",
+      "repository_revision": "2ffa1f98224e52e38c9d66b39754cd7b75339fc4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/docs/gui.md",
+        "sha256": "0cfe1b61002a5be28970bfd87b563ceb69d4ffde98207cfe0e0d5eb25f067758",
+        "retrieved_at": "2026-10-18T12:02:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/docs/desktop.md",
+        "sha256": "bd501d274f47a7540e1d076d5cd7cede7ad273a0a26102aafbe98118052f4605",
+        "retrieved_at": "2026-10-18T12:02:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/docs/every-device.md",
+        "sha256": "736c65ac96c741175ef7be5c05ed80a852f8fafc4328bf40b4051a0489741c89",
+        "retrieved_at": "2026-10-18T12:02:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "relations",
+          "details.release_tag",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/CITATION.cff",
+        "sha256": "52f1b9229eee019a489bd978af2e4a324eef7f2c48072a33d6043666f8ddf105",
+        "retrieved_at": "2026-10-18T12:02:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/NOTICE",
+        "sha256": "8a203dde64c0abd314f876cb6516810878fc0e3120eacd5bfd2da932b4d4a439",
+        "retrieved_at": "2026-10-18T12:02:42Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "GPL-3.0-or-later",
+          "url": "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/NOTICE",
+          "retrieved_at": "2026-10-18T12:02:42Z",
+          "basis": "The project NOTICE grants GNU GPL version 3 or any later version; the android/ tree is based on OpenMinis 1.13, released under GPL-3.0."
+        },
+        "reason": "The LICENSE file is the plain GPL-3.0 text, which does not state -only or -or-later; the project's own NOTICE, README and CITATION.cff state GPL-3.0-or-later.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/nano-muse/nanoMuse/2ffa1f98224e52e38c9d66b39754cd7b75339fc4/NOTICE"
+        ]
+      }
+    },
+    "reviewed_sha256": "7f35e29571aba5d88c30a0e59a4e62bc7875b68ebffad4ce20499df8454afc46",
+    "reviewed_at": "2026-10-18T12:03:34Z"
+  },
+  {
+    "name": "nanoMuse: An Open-Source Personal Agent for Every Device You Own",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.08699",
+    "summary": "Defines the personal agent, reconstructs how Meta's Muse is built from public sources, and presents nanoMuse, an open agent spanning a person's devices with hands on phone and computer screens and a gate on every action.",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "safety-security"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "nanoMuse: An Open-Source Personal Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.08699v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version official arXiv abstract page. The report states size and cost as estimates and sets out memory with provenance, an evaluation suite for the hands and an open model for them as roadmap items, so it reports no empirical evaluation of screen operation. Its reading of Meta's Muse relies on public material and a copy of its production prompt, as the abstract says.",
+    "reviewed_sha256": "ce66d228da1b8fe957b951e665933c815a2add5a1c8c78b0d2c346d0ea4d9113",
+    "reviewed_at": "2026-10-18T12:03:34Z"
   }
 ]

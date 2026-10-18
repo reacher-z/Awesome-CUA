@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:fsoft-ai4code/hyperagent",
+    "url": "https://github.com/FSoft-AI4Code/HyperAgent",
+    "decision": "out_of_scope",
+    "reason": "FSoft's HyperAgent is a generalist software-engineering agent that edits and runs code repositories; it has no GUI or browser action space and is unrelated to the curated hyperbrowserai/HyperAgent.",
+    "reviewed_at": "2026-10-18T11:22:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/FSoft-AI4Code/HyperAgent/main/README.md",
+      "sha256": "5a699e973c889d4bfbc7f7aeaf61c4e208f08baf7106f8142218853ce40318c4",
+      "retrieved_at": "2026-10-18T11:19:25Z"
+    }
   }
 ]

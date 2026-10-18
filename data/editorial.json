@@ -63143,5 +63143,100 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Wanta",
+    "kind": "agent",
+    "url": "https://github.com/oomol-lab/wanta",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "scope": "adjacent",
+    "summary": "Electron desktop host for work agents (built-in OpenCode agent plus Claude Code, Codex and Grok adapters) whose bundled integrated browser lets agent and user operate one visible page through ARIA-snapshot refs.",
+    "verify_terms": [
+      "Wanta"
+    ],
+    "notes": "Recorded as adjacent: Wanta is a general agent host whose local tools are files, shell, skills, knowledge and SaaS connectors (OpenConnector), and its only graphical executor is the integrated browser. The Electron main process owns a WebContentsView per task page, Playwright attaches through a custom CDP transport over webContents.debugger, and an authenticated loopback bridge serves seven OpenCode tools: browser_navigate, browser_read (title, URL, dialog state and a Playwright AI-mode ARIA snapshot with refs), browser_click and browser_type on refs or unique selectors, browser_scroll, browser_screenshot and browser_dialog. The user shares the page and completes logins and CAPTCHAs; in Default Access the agent is told to hand sensitive actions to the user, which the design document calls a behavioural policy rather than a system guarantee. External agents keep their own accounts; hosted models, connectors and team workspaces need an OOMOL account. Packages for macOS, Windows and Linux. Root LICENSE is Apache-2.0. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/oomol-lab/wanta/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Electron source with tagged releases; local BYOK mode needs no account, while hosted models, connectors and team features use OOMOL services.",
+      "repository_revision": "d568845ea03f6bae3b1cef2d80b19b5b32bc7952"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "scope"
+        ],
+        "url": "https://raw.githubusercontent.com/oomol-lab/wanta/d568845ea03f6bae3b1cef2d80b19b5b32bc7952/docs/integrated-browser.md",
+        "sha256": "0e390f6a2b44db16f6a62cc46c39077d830da577653041c9bb14a2cdb5d246d4",
+        "retrieved_at": "2026-10-18T16:13:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/oomol-lab/wanta/d568845ea03f6bae3b1cef2d80b19b5b32bc7952/electron/browser/page.ts",
+        "sha256": "1cf4ba22a7c24967103a2e4203682d22868f8b23a0e3622a564069f0c55717b3",
+        "retrieved_at": "2026-10-18T16:13:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/oomol-lab/wanta/d568845ea03f6bae3b1cef2d80b19b5b32bc7952/electron/browser/control-server.ts",
+        "sha256": "5bc88f248c47af8a1327963733a504ac5da11acac93f9182db60f979ef22aaf4",
+        "retrieved_at": "2026-10-18T16:13:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/oomol-lab/wanta/d568845ea03f6bae3b1cef2d80b19b5b32bc7952/electron/agent/tool-sources.ts",
+        "sha256": "68f53b75e7aa3b96367ff25ef4a8000443734b7afcb34f2ac61ad0f73ca982b8",
+        "retrieved_at": "2026-10-18T16:13:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/oomol-lab/wanta/d568845ea03f6bae3b1cef2d80b19b5b32bc7952/package.json",
+        "sha256": "0000c9f83ee180eaabe2925368adbac85dfb6b1cafa12ccf7d82ed2a542796e9",
+        "retrieved_at": "2026-10-18T16:13:21Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f9ea3b05f9492271ad49c57a818e59a95eeb6b8a8796f81835a6c55605a4bea2",
+    "reviewed_at": "2026-10-18T16:14:00Z"
   }
 ]

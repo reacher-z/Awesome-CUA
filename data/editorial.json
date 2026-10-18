@@ -63143,5 +63143,137 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MiniCPM-GUIDance",
+    "kind": "model",
+    "url": "https://huggingface.co/RhapsodyAI/minicpm-guidance",
+    "aliases": [
+      "MiniCPM-GUI",
+      "minicpm-guidance"
+    ],
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "screen-understanding"
+    ],
+    "summary": "MiniCPM-V checkpoint released with GUICourse and tuned on its GUIEnv, GUIAct and GUIChat data; card prompts cover next-action generation from a task and action history, and screenshot chat with grounded boxes.",
+    "scope": "core",
+    "verify_terms": [
+      "minicpm-guidance"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope",
+      "details.hub_id",
+      "details.hub_revision",
+      "details.gated",
+      "details.disabled",
+      "details.download_url",
+      "details.listed_weight_files"
+    ],
+    "notes": "GUICourse's README announces this repository as the MiniCPM-GUI weights with inference code. The card's YAML lists GUIChat, GUIEnv and GUIAct and declares Apache-2.0; its prose gives action and grounding prompt templates and a batch-size-one inference example whose output marks an element with a box. config.json gives MiniCPMVForCausalLM, and the card does not name the base checkpoint. The manifest holds one PyTorch weight file. Web and Android coverage follows from the training data; no checkpoint was loaded and no result was reproduced. The terms of the MiniCPM base model were not assessed.",
+    "details": {
+      "hub_id": "RhapsodyAI/minicpm-guidance",
+      "hub_revision": "854aaf385ec56b8e738161b4aedb3eed5d28f9bc",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/tree/854aaf385ec56b8e738161b4aedb3eed5d28f9bc",
+      "repository_url": "https://github.com/RUCBM/GUICourse",
+      "architecture": "MiniCPMVForCausalLM",
+      "listed_weight_files": [
+        "pytorch_model.bin"
+      ],
+      "training_data_note": "The card says the model was trained on GUICourse, and its metadata lists yiye2023/GUIChat, yiye2023/GUIEnv and yiye2023/GUIAct; it does not say which GUIEnv portion or how much of each set was used."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes",
+          "relations",
+          "details.training_data_note",
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md",
+        "sha256": "2dfe7d1252e18ad2f107e4d450440ca6217edfde26684c8763f57ec28790a7d2",
+        "retrieved_at": "2026-10-18T15:57:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/config.json",
+        "sha256": "4974d4b6f3eacca89a03a88ec790ff3982ddea01fbbc01e8c37b783521c56044",
+        "retrieved_at": "2026-10-18T15:57:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "name",
+          "summary",
+          "environments",
+          "notes",
+          "relations",
+          "details.repository_url",
+          "details.training_data_note"
+        ],
+        "url": "https://raw.githubusercontent.com/RUCBM/GUICourse/a6dd4c3f0445c8b568d2c4792934a65ee4454bef/README.md",
+        "sha256": "0968273442bfb9a6478fe78f8b9a6247a3bb8e6d028880939b432fd009961e98",
+        "retrieved_at": "2026-10-18T15:57:11Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2406.11317",
+        "evidence_url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md"
+      },
+      {
+        "type": "trained_on",
+        "target_id": "url:6cd150ec23361b4d2e84",
+        "evidence_url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md"
+      },
+      {
+        "type": "trained_on",
+        "target_id": "url:edf38d43800be8c955ae",
+        "evidence_url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md"
+      },
+      {
+        "type": "trained_on",
+        "target_id": "url:0af07e00658a430cee6a",
+        "evidence_url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md",
+          "retrieved_at": "2026-10-18T15:57:11Z",
+          "basis": "Publisher model-card declaration for the checkpoint; base-model, code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the checkpoint; base-model, code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/RhapsodyAI/minicpm-guidance/raw/854aaf385ec56b8e738161b4aedb3eed5d28f9bc/README.md"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json, Hub API record (file manifest and card metadata) and the pinned GUICourse README. No weights were downloaded or run.",
+    "reviewed_sha256": "034b80c1ef1d1e5832bf2c430a82c470980a7f5e8190ce9abc922445455d67b9",
+    "reviewed_at": "2026-10-18T15:57:24Z"
   }
 ]

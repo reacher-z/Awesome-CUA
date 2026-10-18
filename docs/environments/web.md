@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (29)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -100,6 +100,7 @@
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [Magma](https://github.com/microsoft/Magma) | web | — | code MIT | Microsoft foundation model for multimodal agents, pretrained with Set-of-Mark and Trace-of-Mark objectives on UI, robotics and video data and fine-tunable for web and mobile UI navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/Magma/HEAD/README.md) |
+| [MiniCPM-GUIDance](https://huggingface.co/RhapsodyAI/minicpm-guidance) | web, android | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | weights Apache-2.0 | MiniCPM-V checkpoint released with GUICourse and tuned on its GUIEnv, GUIAct and GUIChat data; card prompts cover next-action generation from a task and action history, and screenshot chat with grounded boxes. | [✓ 2026‑10‑18](https://huggingface.co/api/models/RhapsodyAI/minicpm-guidance) |
 | [OpenAI CUA](https://openai.com/index/computer-using-agent/) | web, desktop | — | — | Computer-using model introduced with the Operator research preview. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |

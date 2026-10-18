@@ -63143,5 +63143,69 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OS-Atlas Pro 7B",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Atlas-Pro-7B",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding"
+    ],
+    "summary": "OS-Atlas action checkpoint fine-tuned from OS-Atlas-Base-7B that reads a screenshot, task and history and writes a thought plus the next basic or user-defined GUI action, in the Qwen2-VL architecture.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Atlas-Pro-7B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Atlas-Pro-7B/raw/6c0135de0627db98533ac4b47ae71fa17cf21c48/README.md"
+    ],
+    "family_url": "https://github.com/OS-Copilot/OS-Atlas",
+    "documented_by": [
+      "2410.23218"
+    ],
+    "notes": "Hub API at revision 6c0135de lists four BF16 safetensors shards (about 8.29B parameters) in the Qwen2VLForConditionalGeneration architecture; the repository is not gated. The card says the checkpoint is fine-tuned from OS-Atlas-Base-7B and is the Pro model of the paper's Section 5.4, while the Hub base_model metadata names Qwen/Qwen2-VL-7B-Instruct. The card's inference example loads weights from local paths rather than this Hub ID. The card declares Apache-2.0 for the checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "OS-Copilot/OS-Atlas-Pro-7B",
+      "hub_revision": "6c0135de0627db98533ac4b47ae71fa17cf21c48",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Atlas-Pro-7B/tree/main",
+      "architecture": "Qwen2VLForConditionalGeneration",
+      "parameter_label": "7B",
+      "repository_url": "https://github.com/OS-Copilot/OS-Atlas"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Atlas-Pro-7B/revision/6c0135de0627db98533ac4b47ae71fa17cf21c48",
+        "sha256": "8fe182b06e327e37d5b655239aa4e87ce634612e0da9bf6739c6bc94c1bc1ea1",
+        "retrieved_at": "2026-10-18T12:03:55Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "44a33feb0172449e12f3b54b26073acf90af66a64c598768040fd6de32a44e6f",
+    "reviewed_at": "2026-10-18T12:03:56Z"
   }
 ]

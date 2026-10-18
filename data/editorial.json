@@ -6438,19 +6438,59 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "cdb8be8c4692a8ddcf8a66c1f0be666a9214718445925fb3c88615a0d641bf3a",
     "reviewed_at": "2026-10-16T06:38:26Z",
-    "notes": "The card links its paper (arXiv 2601.06031) and code repository (OSU-NLP-Group/GUI-Drag). Neither is a reviewed catalog record yet, so no relation is recorded.",
+    "notes": "The card names UGround, Jedi and paper-style academic document screenshots as image sources. Its coordinates are absolute values for screenshots resized by the Qwen2.5-VL image processor at max_pixels=2116800; images_resized.zip holds those resized images. The paper's separate ScreenDrag benchmark is not part of this repository. The code repository OSU-NLP-Group/GUI-Drag was not reviewed.",
     "additional_evidence": [
       {
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
-          "notes"
+          "notes",
+          "relations",
+          "details.dataset_profile"
         ],
-        "url": "https://huggingface.co/datasets/osunlp/GUI-Drag-dataset/raw/main/README.md",
+        "url": "https://huggingface.co/datasets/osunlp/GUI-Drag-dataset/raw/54b9aebb2f54aa6ddf3646edb33ff8844b5011fb/README.md",
         "sha256": "907c8a5169c180491ef8c26c9428b2c67bc4e26f472d6423ce3715cbe47f76ef",
-        "retrieved_at": "2026-10-17T16:10:54Z"
+        "retrieved_at": "2026-10-18T15:38:15Z"
       }
-    ]
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2601.06031",
+        "evidence_url": "https://huggingface.co/datasets/osunlp/GUI-Drag-dataset/raw/54b9aebb2f54aa6ddf3646edb33ff8844b5011fb/README.md"
+      }
+    ],
+    "details": {
+      "dataset_profile": {
+        "supervision": [
+          "text-dragging GUI grounding"
+        ],
+        "modalities": [
+          "screenshots",
+          "drag coordinate annotations"
+        ],
+        "formats": [
+          "JSON",
+          "ZIP image archives"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 161000,
+            "unit": "text-dragging examples",
+            "qualifier": "approximately",
+            "population": "GUI-Drag dataset as described by the card at revision 54b9aebb",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/osunlp/GUI-Drag-dataset/raw/54b9aebb2f54aa6ddf3646edb33ff8844b5011fb/README.md"
+          }
+        ],
+        "notes": "The repository lists data.json, data_resized.json, images.zip and images_resized.zip. The annotation files were not downloaded, so the 161K figure is the card's statement, not a count of released records.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/osunlp/GUI-Drag-dataset",
+          "https://huggingface.co/datasets/osunlp/GUI-Drag-dataset/raw/54b9aebb2f54aa6ddf3646edb33ff8844b5011fb/README.md"
+        ]
+      }
+    }
   },
   {
     "name": "DragOn",
@@ -63143,5 +63183,39 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Beyond Clicking:A Step Towards Generalist GUI Grounding via Text Dragging",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.06031",
+    "summary": "Introduces GUI-Drag, 161K synthesized text-dragging examples, and ScreenDrag, a 5,333-example benchmark with three dragging metrics, to extend GUI grounding models from clicking to selecting and manipulating text.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Beyond Clicking"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2601.06031&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experiments, reported performance and artifact availability have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b687fe907cccc92e0b2084d1af5c733815403ea38b1a0a19bfa4f131161227fb",
+    "reviewed_at": "2026-10-18T15:38:30Z"
   }
 ]

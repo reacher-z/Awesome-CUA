@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (29)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -103,6 +103,7 @@
 | [OpenAI CUA](https://openai.com/index/computer-using-agent/) | web, desktop | — | — | Computer-using model introduced with the Operator research preview. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |
+| [OS-Genesis 4B WA](https://huggingface.co/OS-Copilot/OS-Genesis-4B-WA) | web | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The WebArena-oriented InternVL2-4B checkpoint trained on web trajectories generated through OS-Genesis reverse task synthesis, predicting the next thought and action from an instruction, history and page. | [✓ 2026‑10‑18](https://huggingface.co/OS-Copilot/OS-Genesis-4B-WA/raw/511f2ec231a517e79d1f913524b9b652dfc5b98e/README.md) |
 | [PAE LLaVA 7B](https://huggingface.co/yifeizhou/pae-llava-7b) | web | [2412.13194](https://arxiv.org/abs/2412.13194) (2024) | weights cc-by-nc-4.0 | A released LLaVA checkpoint for visual browser interaction from the PAE autonomous task-proposal and policy-learning system. | [✓ 2026‑10‑17](https://huggingface.co/yifeizhou/pae-llava-7b/raw/main/README.md) |
 | [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. | [✓ 2026‑10‑17](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md) |
 | [POINTS-GUI-G 8B](https://huggingface.co/tencent/POINTS-GUI-G) | web, desktop, cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | weights other | A specialized interface-grounding checkpoint that returns normalized point coordinates for a requested element in a screenshot. | [✓ 2026‑10‑17](https://huggingface.co/tencent/POINTS-GUI-G/raw/main/README.md) |

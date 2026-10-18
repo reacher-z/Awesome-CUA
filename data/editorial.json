@@ -63143,5 +63143,90 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:807dadc7dc4ba995bbbe",
+    "name": "OS-Genesis 4B WA",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-WA",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "The WebArena-oriented InternVL2-4B checkpoint trained on web trajectories generated through OS-Genesis reverse task synthesis, predicting the next thought and action from an instruction, history and page.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis-4B-WA"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Genesis-4B-WA/raw/511f2ec231a517e79d1f913524b9b652dfc5b98e/README.md"
+    ],
+    "documented_by": [
+      "2412.19723"
+    ],
+    "notes": "Hub API at revision 511f2ec2 lists two BF16 safetensors shards (about 4.15B parameters) in the InternVLChatModel architecture, with custom InternVL and Phi-3 modeling files; the repository is not gated. The card declares Apache-2.0 and OpenGVLab/InternVL2-4B as the base, calls it a web action model, names the OS-Genesis web training file as its training data and points to WebArena evaluation code, although its family-table caption says AndroidControl. The OS-Genesis README lists it under Web. The card's example prompt combines a screenshot, an accessibility tree, the instruction and the action history. AndroidWorld and AndroidControl variants are separate releases, and no result is transferred to this checkpoint.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "OS-Copilot/OS-Genesis-4B-WA",
+      "hub_revision": "511f2ec231a517e79d1f913524b9b652dfc5b98e",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Genesis-4B-WA/tree/511f2ec231a517e79d1f913524b9b652dfc5b98e",
+      "architecture": "InternVLChatModel",
+      "parameter_label": "4B",
+      "base_model": "OpenGVLab/InternVL2-4B",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ],
+      "repository_url": "https://github.com/OS-Copilot/OS-Genesis"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-4B-WA/revision/511f2ec231a517e79d1f913524b9b652dfc5b98e",
+        "sha256": "b8957e2835af052bab25c3fa939601d3fd5fd3d59f48bc1807aadfd4c3ab3df5",
+        "retrieved_at": "2026-10-18T16:02:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/72128850dad4ca9ba642ee7399794b4fb8f5154d/README.md",
+        "sha256": "430e495ab250395d666854bd18b0fc29b819cd784cd7730215ef65e461834d0d",
+        "retrieved_at": "2026-10-18T16:02:18Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bcaeb91865427132f00c4fd2d9af33f9b808bdc3a15f3d479ee25a3453b340ea",
+    "reviewed_at": "2026-10-18T16:02:45Z"
   }
 ]

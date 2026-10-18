@@ -63143,5 +63143,85 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Tree Search for Language Model Agents (search-agents)",
+    "kind": "agent",
+    "url": "https://github.com/kohjingyu/search-agents",
+    "aliases": [
+      "search-agents"
+    ],
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "web-navigation",
+      "training-free",
+      "reward-models"
+    ],
+    "summary": "Inference-time tree search for language-model web agents, guided by a GPT-4o value function, with scripts to run it on self-hosted VisualWebArena and WebArena sites.",
+    "verify_terms": [
+      "Tree Search for Language Model Agents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2407.01476"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:web-arena-x/visualwebarena",
+        "evidence_url": "https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:web-arena-x/webarena",
+        "evidence_url": "https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/README.md"
+      }
+    ],
+    "notes": "Official code for arXiv:2407.01476, adapted from the VisualWebArena and WebArena codebases. Runs need the self-hosted Docker websites of those benchmarks and an OpenAI-compatible endpoint; GPT-4o is the default and Llama-3 is supported through vLLM. The README links GPT-4o agent trajectories as a Google Drive file, which was not downloaded or curated.",
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/LICENSE",
+        "sha256": "a05020744efd1a76f94a3788a9ab9798160ac1a94b3e3adc6cea19fba59af39e",
+        "retrieved_at": "2026-10-18T11:29:26Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:29:26Z",
+          "basis": "The LICENSE file is the MIT permission notice without a title line; its copyright line names the VisualWebArena authors. It covers code only; released trajectories and external models are separate."
+        },
+        "reason": "The LICENSE file is the MIT permission notice without a title line; its copyright line names the VisualWebArena authors. It covers code only; released trajectories and external models are separate.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "b3d8299989034fb3575f706a5f603ca83a7c96fed109f4f4b56acd847552aa0d",
+    "reviewed_at": "2026-10-18T11:29:34Z"
   }
 ]

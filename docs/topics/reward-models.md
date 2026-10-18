@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
 
 ## Benchmarks
 
@@ -31,6 +31,14 @@
 | [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | web | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
 | [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |
 | [WebShepherd 3B](https://huggingface.co/LangAGI-Lab/WebShepherd_3B) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | — | A public text-based process-reward checkpoint from the Web-Shepherd collection for scoring web-agent decisions against task checklists. | [✓ 2026‑10‑17](https://huggingface.co/api/models/LangAGI-Lab/WebShepherd_3B) |
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Tree Search for Language Model Agents (search-agents)](https://github.com/kohjingyu/search-agents) | [2407.01476](https://arxiv.org/abs/2407.01476) (2024) | code MIT | Inference-time tree search for language-model web agents, guided by a GPT-4o value function, with scripts to run it on self-hosted VisualWebArena and WebArena sites. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/kohjingyu/search-agents/HEAD/README.md) |
 
 ## Frameworks
 

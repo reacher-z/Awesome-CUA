@@ -63143,5 +63143,100 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:google-gemini/gemini-cli",
+    "name": "Gemini CLI",
+    "kind": "agent",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Google's open-source terminal agent for Gemini models, whose optional browser subagent drives Chrome through the bundled Chrome DevTools MCP server using accessibility-tree element IDs or screenshot-based clicks.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Gemini CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-gemini/gemini-cli/HEAD/README.md"
+    ],
+    "publisher_id": "organization:google",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Adjacent: the CLI is mainly a coding and terminal agent with file, shell, web-fetch and search tools. Its browser_agent subagent is disabled by default and needs Chrome 144 or later; a visual mode sends screenshots to a configurable vision model such as gemini-2.5-computer-use-preview-10-2025 and clicks at returned coordinates. The README says unpaid and Google One users moved to Antigravity CLI on 2026-06-18. Latest release is v0.64.0; it was not installed or run. Root LICENSE is the Apache-2.0 text for code; Gemini model and service terms are separate.",
+    "details": {
+      "availability": "Public source, npm package @google/gemini-cli and GitHub releases.",
+      "release_tag": "v0.64.0",
+      "repository_url": "https://github.com/google-gemini/gemini-cli"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/google-gemini/gemini-cli",
+        "sha256": "3f52cdf39ac764706a5a58afe9a93fdc99a33801cdb7cd87ffe58f77b8e849c8",
+        "retrieved_at": "2026-10-18T11:27:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/HEAD/docs/core/subagents.md",
+        "sha256": "1a1b38993a2f5c6e16afda1914974a86274e73fac90e3ab62334d45e34bf7849",
+        "retrieved_at": "2026-10-18T11:27:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/google-gemini/gemini-cli/releases/latest",
+        "sha256": "8ecf2417d96fc96d5ab34e14070a37f1f9692fc85b273bb23ba4675924db79a3",
+        "retrieved_at": "2026-10-18T11:27:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/HEAD/LICENSE",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "retrieved_at": "2026-10-18T11:27:17Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:chromedevtools/chrome-devtools-mcp",
+        "evidence_url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/HEAD/docs/core/subagents.md"
+      }
+    ],
+    "reviewed_sha256": "7235196f55461732c246c20ce9996cc56ba2e52641f183ccf4e6493bd93c1c94",
+    "reviewed_at": "2026-10-18T11:27:46Z"
   }
 ]

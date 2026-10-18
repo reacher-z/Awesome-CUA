@@ -63143,5 +63143,100 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "pebkac",
+    "kind": "agent",
+    "url": "https://github.com/michaelsoftmd/pebkac-chrome",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Self-hosted web co-browser in which a smolagents code agent on a local llama.cpp model writes Python that drives Chrome through Zendriver: navigation, CSS-selector clicks and typing, Trafilatura text extraction and tabs.",
+    "verify_terms": [
+      "pebkac"
+    ],
+    "notes": "Containerized stack (Podman or Docker Compose): a FastAPI service wraps a Zendriver-controlled Chrome, and a SafeCodeAgent subclass of the smolagents CodeAgent calls it through tools for navigation, CSS-selector clicks, typing, key presses, Trafilatura content extraction, DuckDuckGo search, background tabs, API-response capture and a Cloudflare challenge handler, within a configurable step limit (default 10). The model reads page text and selectors; the screenshot tool only saves files, and the README lists vision assist as under consideration. Redis and DuckDB cache extracted content, per-site working selectors persist, and runs are logged to SQLite. The user watches and shares the browser over noVNC from a localhost control panel. The README markets anti-bot evasion and says the project is on hold. Root LICENSE is AGPL-3.0. Not a fork, not archived. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/michaelsoftmd/pebkac-chrome/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public source with Compose files and Dockerfiles; needs a local GGUF model served by llama.cpp and a GPU; the author has put the project on hold.",
+      "repository_revision": "fd86e97157b8b784dc26c55f1a599c4e40db9e18"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/michaelsoftmd/pebkac-chrome/fd86e97157b8b784dc26c55f1a599c4e40db9e18/zendriver-docker/app/services/agent_manager.py",
+        "sha256": "ca84f46247a0f0e3984ef2d105ad07df04c1704564a5f8d4dbdf82d12f2e686f",
+        "retrieved_at": "2026-10-18T16:09:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/michaelsoftmd/pebkac-chrome/fd86e97157b8b784dc26c55f1a599c4e40db9e18/zendriver-docker/app/services/safe_code_agent.py",
+        "sha256": "cdae1f7baee973deacf114ea4f33fd9e705bbeb96b761a0e2fd8637c2af19315",
+        "retrieved_at": "2026-10-18T16:09:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/michaelsoftmd/pebkac-chrome/fd86e97157b8b784dc26c55f1a599c4e40db9e18/zendriver-docker/app/tools/browser_tools.py",
+        "sha256": "f370372913265d49e7a26be2b19bb348dedd02b4f6785b119377fe69e5ad72ba",
+        "retrieved_at": "2026-10-18T16:09:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/michaelsoftmd/pebkac-chrome/fd86e97157b8b784dc26c55f1a599c4e40db9e18/zendriver-docker/app/tools/extraction_tools.py",
+        "sha256": "7918678557279caab2ba6280332b9c097255cf3b4a6a3aed1dbc1e3fd3c5e464",
+        "retrieved_at": "2026-10-18T16:09:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/michaelsoftmd/pebkac-chrome/fd86e97157b8b784dc26c55f1a599c4e40db9e18/zendriver-docker/app/tools/utility_tools.py",
+        "sha256": "6a44b755223c468230bae5db13102ff77b449ca12e383885f1e1243ab658e34c",
+        "retrieved_at": "2026-10-18T16:09:16Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ca84c62eefe55c42b2c46d7f4c3fb1f62211c9d1ac96dc68e7a78e1cd6a7cc1e",
+    "reviewed_at": "2026-10-18T16:09:50Z"
   }
 ]

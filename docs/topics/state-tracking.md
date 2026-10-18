@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+
+## Agents
+
+All entries in this section: ios.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ESP32 iPhone Agent](https://github.com/onehumanbeing/esp32-iphone-agent) | — | code MIT | iPhone agent in which an ESP32-S3 board receives the AirPlay screen mirror and acts as a USB HID mouse and keyboard, while an on-phone app has a vision model tap, swipe, type or go home. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/HEAD/README.md) |
 
 ## Frameworks
 

@@ -63143,5 +63143,103 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:onehumanbeing/esp32-iphone-agent",
+    "name": "ESP32 iPhone Agent",
+    "kind": "agent",
+    "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "state-tracking",
+      "observability"
+    ],
+    "summary": "iPhone agent in which an ESP32-S3 board receives the AirPlay screen mirror and acts as a USB HID mouse and keyboard, while an on-phone app has a vision model tap, swipe, type or go home.",
+    "scope": "core",
+    "verify_terms": [
+      "ESP32 iPhone Agent",
+      "esp32-iphone-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The current main branch has no computer in the loop: Arduino firmware forwards the H.264 mirror to a SwiftUI app over BLE, and the app runs a planner and an actor against any OpenAI-compatible vision endpoint, re-homing the AssistiveTouch pointer and checking whether the screen changed after each step. Runs can be replayed and exported as screenshot and action traces. The v0.1.0 release and legacy branch use the earlier design with UxPlay and a Python server on a Mac or Linux host. The root LICENSE is MIT; the AirPlay receiver under hardware/hid_bridge/src/airplay is a GPL-3.0 port of UxPlay, so the linked firmware binary is GPL-3.0. No benchmark results are reported. Code was read, not run.",
+    "details": {
+      "availability": "Public firmware and iOS app source, built and signed by the user; no App Store or firmware binaries",
+      "repository_revision": "68751e4d89abf64af338de39e5452da30d8f2173",
+      "repository_tree_sha": "f2ec5779020abdecbf2d09390600d31f1ca70fab"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/onehumanbeing/esp32-iphone-agent",
+        "sha256": "07a8a2941a7bd6579b589e9061650d34e91627881d4579c32a1ced0e27709ba1",
+        "retrieved_at": "2026-10-18T11:33:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/onehumanbeing/esp32-iphone-agent/git/trees/68751e4d89abf64af338de39e5452da30d8f2173?recursive=1",
+        "sha256": "cf508c7230b4e88e7b26535e969b89c37ea415b0c5cfd6289e96f1ca986a12ab",
+        "retrieved_at": "2026-10-18T11:33:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/68751e4d89abf64af338de39e5452da30d8f2173/ios/IPhoneAgent/Agent/Actions.swift",
+        "sha256": "2165e99ecec724e77eb546ed09014aa3961c3742c8e6779408f5f99c28546e4c",
+        "retrieved_at": "2026-10-18T11:33:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/68751e4d89abf64af338de39e5452da30d8f2173/LICENSE",
+        "sha256": "8ced745c0be8568fb1708a4d21665a8dafbaffb1f23bcafcbb105b15001260b2",
+        "retrieved_at": "2026-10-18T11:33:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/68751e4d89abf64af338de39e5452da30d8f2173/hardware/hid_bridge/src/airplay/LICENSE-GPL.md",
+        "sha256": "851144509e1146f082a6251642babaae749414a4ec3317e4843e480aebe9d002",
+        "retrieved_at": "2026-10-18T11:33:28Z"
+      }
+    ],
+    "reviewed_sha256": "b059690c5e020ee6b9046fd100508a86bced82ed04091b52fb1cc5d96144e10f",
+    "reviewed_at": "2026-10-18T11:34:18Z"
   }
 ]

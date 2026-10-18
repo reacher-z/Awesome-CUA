@@ -63143,5 +63143,130 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AndroidHowTo (third-party regeneration)",
+    "kind": "dataset",
+    "url": "https://github.com/debymf/generating_android_howto",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "action-prediction"
+    ],
+    "summary": "A third-party rebuild of the Seq2Act AndroidHowTo corpus: Android how-to instructions crawled from Common Crawl pages with action-phrase annotations, shipped as TFRecords with the crawl and build scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "AndroidHowTo"
+    ],
+    "documented_by": [
+      "2005.03776"
+    ],
+    "notes": "The repository author states that the code only reproduces the Seq2Act authors' AndroidHowTo generation, and asks users to cite the Seq2Act paper. It holds ten generated TFRecord shards, the merged crawl output, the annotation CSV, the vocabulary, 3,414 per-WARC intermediate files and a copy of the seq2act data-generation code. This is not a Google release. No license file or declaration is present, so code and data rights stay unknown; Common Crawl page content is third-party.",
+    "details": {
+      "repository_url": "https://github.com/debymf/generating_android_howto",
+      "dataset_profile": {
+        "supervision": [
+          "action-phrase extraction from natural-language instructions"
+        ],
+        "modalities": [
+          "text",
+          "action-phrase span annotations"
+        ],
+        "formats": [
+          "TFRecord",
+          "JSON",
+          "CSV"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 21129,
+            "unit": "instruction examples",
+            "qualifier": "exact",
+            "population": "regenerated TFRecord shards in androidhowto_dataset/",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/androidhowto_dataset/stats.txt"
+          },
+          {
+            "value": 139751,
+            "unit": "annotated action steps",
+            "qualifier": "exact",
+            "population": "regenerated TFRecord shards in androidhowto_dataset/",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/androidhowto_dataset/stats.txt"
+          }
+        ],
+        "notes": "Counts come from the generation statistics file shipped with this rebuild; they describe this regeneration, not the corpus size reported in the Seq2Act paper. No train, validation or test split files are published.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/androidhowto_dataset/stats.txt"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/debymf/generating_android_howto",
+        "sha256": "9866f6b804a9aaa8a3cfc4e1c8e04292def8183eb5e6b5ab566a78ec6443b20a",
+        "retrieved_at": "2026-10-18T10:58:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "licenses.code",
+          "licenses.data"
+        ],
+        "url": "https://api.github.com/repos/debymf/generating_android_howto/git/trees/main?recursive=1",
+        "sha256": "b9c2a6995ebf86c29ccfb18419e0c03bcb16d6f4fc8d9fe9e36f339208ab6cac",
+        "retrieved_at": "2026-10-18T10:58:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/androidhowto_dataset/stats.txt",
+        "sha256": "3a1e588ed29e2b4e09bed8e41ae6aa2dacc3d6e291efb4c21d5d5990f69a2f9b",
+        "retrieved_at": "2026-10-18T10:58:54Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The repository tree has no license file and the README declares no license; the upstream seq2act license is not assumed for this copy.",
+        "evidence_urls": [
+          "https://api.github.com/repos/debymf/generating_android_howto/git/trees/main?recursive=1"
+        ]
+      },
+      "data": {
+        "value": null,
+        "reason": "No data license is declared for the regenerated files, and the instructions come from third-party Common Crawl pages.",
+        "evidence_urls": [
+          "https://api.github.com/repos/debymf/generating_android_howto/git/trees/main?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e8c73323ff5bc5cc82583a61dea9686206ded5771235cc52b06b8d58cabad546",
+    "reviewed_at": "2026-10-18T10:59:21Z"
   }
 ]

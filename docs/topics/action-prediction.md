@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AndroidHowTo (third-party regeneration)](https://github.com/debymf/generating_android_howto) | android | [2005.03776](https://arxiv.org/abs/2005.03776) (2020) | [21,129 instruction examples](https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/androidhowto_dataset/stats.txt) · [139,751 annotated action steps](https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/androidhowto_dataset/stats.txt) | — | A third-party rebuild of the Seq2Act AndroidHowTo corpus: Android how-to instructions crawled from Common Crawl pages with action-phrase annotations, shipped as TFRecords with the crawl and build scripts. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/README.md) |
 | [ShowUI-π training data](https://huggingface.co/datasets/showlab/ShowUI-pi-data) | desktop | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | — | Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks. | [✓ 2026‑10‑17](https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md) |
 | [UI-R1 3B training data](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train) | android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | — | — | The released mobile training subset for the original UI-R1 3B model, with action annotations and individual screenshot files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md) |
 

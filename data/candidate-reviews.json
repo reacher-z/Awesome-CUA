@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:vyokky/llm-brained-gui-agents-survey",
+    "url": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "decision": "not_a_resource",
+    "reason": "Companion paper list of the survey arxiv:2411.18279: the repository holds the searchable paper page (index.html, papers.js) over 325 entries in seven category files under data/, plus the survey's figures, so the survey is cited through its arXiv record."
   }
 ]

@@ -63143,5 +63143,75 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GUI-Owl 1.5 2B Instruct",
+    "kind": "model",
+    "url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-2B-Instruct",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Smallest instruct checkpoint of GUI-Owl 1.5, a Qwen3-VL-based native GUI agent family from Mobile-Agent-v3.5 for desktop, mobile and browser tasks, usable alone or as a role in that framework.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Owl-1.5-2B-Instruct"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/mPLUG/GUI-Owl-1.5-2B-Instruct/raw/528ceaec795bbfbe6103bd79e03db849feadfb24/README.md"
+    ],
+    "documented_by": [
+      "2602.16855"
+    ],
+    "notes": "Hub API at revision 528ceaec lists one BF16 safetensors file (about 2.13B parameters) in the Qwen3VLForConditionalGeneration architecture; the repository is not gated. The card is written for the whole GUI-Owl 1.5 family (instruct and thinking variants from 2B to 32B) and links the X-PLUG/MobileAgent repository; its tool/MCP, memory and multi-agent claims are family-level. For this checkpoint the card reports 43.5 on OSWorld-Verified, 67.9 on AndroidWorld, 33.0 on OSWorld-MCP, 31.3 on Mobile-World and 25.8 on WindowsAA; these are publisher measurements and were not reproduced. The card declares MIT for the checkpoint; it gives no Hub base_model metadata.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "mPLUG/GUI-Owl-1.5-2B-Instruct",
+      "hub_revision": "528ceaec795bbfbe6103bd79e03db849feadfb24",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-2B-Instruct/tree/main",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "2B",
+      "listed_weight_files": [
+        "model.safetensors"
+      ],
+      "repository_url": "https://github.com/X-PLUG/MobileAgent"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/mPLUG/GUI-Owl-1.5-2B-Instruct/revision/528ceaec795bbfbe6103bd79e03db849feadfb24",
+        "sha256": "e4255782c39b634789d8bf608acb5d87360fda8ff3f107fb065f465af98fb5c3",
+        "retrieved_at": "2026-10-18T12:04:43Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8520a786d7a9d411e45466c2b7e7786d062ec03f2778acecc4a45991a803d8d8",
+    "reviewed_at": "2026-10-18T12:04:44Z"
   }
 ]

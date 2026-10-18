@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (48)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -63,6 +63,7 @@
 | [GUI-G1 3B v1](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | weights mit | A Qwen2.5-VL-3B checkpoint released for R1-style visual grounding experiments, predicting interface target locations from screenshots and instructions. | [✓ 2026‑10‑17](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1/raw/main/README.md) |
 | [GUI-G2](https://github.com/ZJU-REAL/GUI-G2) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | — | GUI grounding models at 3B and 7B trained with Gaussian rewards for click proximity to element centers and region coverage, with variance scaled to element size. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/GUI-G2/HEAD/README.md) |
 | [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |
+| [GUI-Owl 1.5 2B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-2B-Instruct) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights mit | Smallest instruct checkpoint of GUI-Owl 1.5, a Qwen3-VL-based native GUI agent family from Mobile-Agent-v3.5 for desktop, mobile and browser tasks, usable alone or as a role in that framework. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-2B-Instruct/raw/528ceaec795bbfbe6103bd79e03db849feadfb24/README.md) |
 | [GUI-R1](https://github.com/ritzz-ai/GUI-R1) | cross-platform | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | code Apache-2.0 | GUI action-model training and evaluation code with verifiable rewards, plus linked reinforcement-learning data and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ritzz-ai/GUI-R1/HEAD/README.md) |
 | [Holo Model Family](https://hcompany.ai/research/models) | cross-platform | — | — | H computer-use model family and its release-specific access options. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |

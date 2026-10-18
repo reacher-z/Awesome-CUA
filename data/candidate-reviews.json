@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:ubiquitouslearning/mllm",
+    "url": "https://github.com/UbiquitousLearning/mLLM",
+    "decision": "out_of_scope",
+    "reason": "mllm is a C++/Python inference engine that runs language and vision-language models on phones, NPUs and Jetson boards, with an on-device chat demo for Android. It provides no GUI observation, screen understanding or device-control agent, so it is generic on-device inference rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T15:32:37Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/UbiquitousLearning/mllm/HEAD/README.md",
+      "sha256": "255a19ff6c361b5895ecc51a2c0b96f8b8702b55caf81f02d6805bb7e9ba2365",
+      "retrieved_at": "2026-10-18T12:23:52Z"
+    }
   }
 ]

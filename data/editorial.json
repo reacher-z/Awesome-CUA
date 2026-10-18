@@ -63143,5 +63143,197 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Uni-GUI-Desktop-1",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "data-generation",
+      "imitation-learning",
+      "cross-app"
+    ],
+    "summary": "Desktop trajectories from the UI-MOPD training data, collected in OSWorld environments: 2,685 tasks across 10 app categories with step screenshots, reasoning traces, normalized actions and pyautogui code.",
+    "scope": "core",
+    "verify_terms": [
+      "Uni-GUI-Desktop-1"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md"
+    ],
+    "editorial_reviewed": true,
+    "documented_by": [
+      "2607.04425"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://arxiv.org/html/2607.04425v1"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The UI-MOPD paper builds Uni-GUI from self-collected desktop and mobile trajectories plus cleaned OpenCUA and OpenMobile trajectories; its composition table rounds the self-collected desktop part to about 7K trajectories and 95K steps, so this repository (2,685 trajectories and about 36K steps per the card) holds a portion of it. Per the paper, desktop queries were generated with Kimi-K2.6 from functional points of initialized OSWorld environments, Kimi-K2.6 produced the rollouts and Gemini-3.1-Pro cleaned them, so these are not human demonstrations. Every folder name ends in an OSWorld task ID: a script over the manifest finds 245 distinct IDs, all present in OSWorld's test_all.json, with up to 19 trajectories each. Two opened task.json files for the same OSWorld task label it 'OSWorld'; one repeats that task's instruction verbatim and the other paraphrases it, so the data overlaps OSWorld's test tasks. Both carry verified: false and task_completed: true, while the card's example shows verified: true; 160 folders also hold a result.txt. Linux is inferred from the paper's use of OSWorld environments and the Linux terminal and /home/user paths in the opened queries. Apache-2.0 is the card's declaration and does not cover third-party application content in screenshots. Only two task.json files and one result.txt were opened.",
+    "details": {
+      "hub_id": "UI-MOPD/Uni-GUI-Desktop-1",
+      "hub_revision": "92ef5917cd46a899a13461532fdda9e5a8d3bc62",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/tree/92ef5917cd46a899a13461532fdda9e5a8d3bc62",
+      "dataset_profile": {
+        "supervision": [
+          "teacher-model GUI trajectories cleaned by a filtering pipeline",
+          "structured reasoning traces",
+          "normalized desktop actions with pyautogui code"
+        ],
+        "modalities": [
+          "screenshots",
+          "task queries",
+          "reasoning traces",
+          "actions"
+        ],
+        "formats": [
+          "per-trajectory folders with task.json and PNG screenshots"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 2685,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "Uni-GUI-Desktop-1 card statistics",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md"
+          },
+          {
+            "value": 36000,
+            "unit": "steps",
+            "qualifier": "approximately",
+            "population": "Uni-GUI-Desktop-1 card statistics",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md"
+          },
+          {
+            "value": 10,
+            "unit": "application categories",
+            "qualifier": "exact",
+            "population": "Uni-GUI-Desktop-1 card statistics",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md"
+          },
+          {
+            "value": 2685,
+            "unit": "task.json trajectory files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 92ef5917",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62"
+          },
+          {
+            "value": 38283,
+            "unit": "PNG screenshot files",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 92ef5917",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62"
+          },
+          {
+            "value": 245,
+            "unit": "distinct OSWorld task IDs in trajectory folder names",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 92ef5917, matched against OSWorld test_all.json",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62"
+          }
+        ],
+        "notes": "Trajectories, steps, application categories, files and task IDs are different units and are not summed. The task.json count from the manifest matches the card's trajectory count; screenshot files were counted from the manifest, not opened. Coordinates are normalized to [0, 999] on a 1920x1080 screen. No train/test split is declared.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md",
+          "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62",
+          "https://arxiv.org/html/2607.04425v1",
+          "https://raw.githubusercontent.com/xlang-ai/OSWorld/b138d348256078fa634fc3b73567a7337c793e6b/evaluation_examples/test_all.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62",
+        "sha256": "10e90be7f9d76804ea44a39ea33c0d3d6f121fc2cb23d0d5eb0ffa0e3f92a6e4",
+        "retrieved_at": "2026-10-18T15:41:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "relations",
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2607.04425v1",
+        "sha256": "7fc33cf335f41716d5030d562cd6b53323a32f81551caa130afa43043509511b",
+        "retrieved_at": "2026-10-18T15:41:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/47a8cd34-02ce9a50-7af2-47ed-8596-af0c230501f8/task.json",
+        "sha256": "f6becd79ec187bd6d6ea2ba3a5521c6b80d6b4b5e5d6efb2e0422ef0f369578a",
+        "retrieved_at": "2026-10-18T15:41:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/0c267f5e-02ce9a50-7af2-47ed-8596-af0c230501f8/task.json",
+        "sha256": "7af0ffc4d28e344dd6fddd670121573d027b66b72d420fe49db343b35a68bee5",
+        "retrieved_at": "2026-10-18T15:41:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/OSWorld/b138d348256078fa634fc3b73567a7337c793e6b/evaluation_examples/test_all.json",
+        "sha256": "9ebc5187cbd727ef26c24626820076b102fff812863c640a67c467fea9542ab5",
+        "retrieved_at": "2026-10-18T15:41:30Z"
+      }
+    ],
+    "reviewed_sha256": "b42140e6959b7265a2594fe4aabb79cd6f79b48ab6e59c70f018d5ddd011ef63",
+    "reviewed_at": "2026-10-18T15:42:03Z"
   }
 ]

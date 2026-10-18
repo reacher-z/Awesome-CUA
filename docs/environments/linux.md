@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-49 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (8)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -27,6 +27,7 @@
 | [ScreenRef](https://huggingface.co/datasets/PrentisAI/ScreenRef) | desktop, web, android, linux | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | [585,981 distinct screenshots](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) · [633,369 annotation rows](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) | data other | GUI screenshots paired with localization instructions and targets, including absent-target examples; image access is gated under publisher terms. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/PrentisAI/ScreenRef) |
 | [ScreenRef Annotations](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations) | desktop, web, android, linux | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | [633,369 annotation rows](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) | data other | Annotation files, task recipes, and image manifests for ScreenRef; screenshots reside in the separately gated image repository. | [✓ 2026‑10‑17](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) |
 | [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | data mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. | [✓ 2026‑10‑16](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) |
+| [Uni-GUI-Desktop-1](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1) | desktop, linux | [2607.04425](https://arxiv.org/abs/2607.04425) (2026) | [2,685 trajectories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [≈ 36,000 steps](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [10 application categories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [2,685 task.json trajectory files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) · [38,283 PNG screenshot files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) · [245 distinct OSWorld task IDs in trajectory folder names](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) | data apache-2.0 | Desktop trajectories from the UI-MOPD training data, collected in OSWorld environments: 2,685 tasks across 10 app categories with step screenshots, reasoning traces, normalized actions and pyautogui code. | [✓ 2026‑10‑18](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) |
 
 ## Models
 

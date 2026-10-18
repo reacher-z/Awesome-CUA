@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-54 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+55 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (3)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (35)](#papers)
 
 ## Benchmarks
 
@@ -26,12 +26,11 @@
 
 ## Datasets
 
-All entries in this section: android.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [GUI-Odyssey](https://github.com/OpenGVLab/GUI-Odyssey) | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | [8,334 episodes](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) | — | Human-demonstrated Android episodes for cross-app navigation, spanning six task types, 212 apps and about 1,400 app combinations, for training and evaluating agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/GUI-Odyssey/HEAD/README.md) |
-| [GUIOdyssey — current data release](https://huggingface.co/datasets/hflqf88888/GUIOdyssey) | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | [8,334 episodes](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) | data cc-by-4.0 | Cross-app Android interaction episodes with fine-grained step instructions, screen descriptions, action context, and target boxes. | [✓ 2026‑10‑16](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [GUI-Odyssey](https://github.com/OpenGVLab/GUI-Odyssey) | android | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | [8,334 episodes](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) | — | Human-demonstrated Android episodes for cross-app navigation, spanning six task types, 212 apps and about 1,400 app combinations, for training and evaluating agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/GUI-Odyssey/HEAD/README.md) |
+| [GUIOdyssey — current data release](https://huggingface.co/datasets/hflqf88888/GUIOdyssey) | android | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | [8,334 episodes](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) | data cc-by-4.0 | Cross-app Android interaction episodes with fine-grained step instructions, screen descriptions, action context, and target boxes. | [✓ 2026‑10‑16](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) |
+| [Uni-GUI-Desktop-1](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1) | desktop, linux | [2607.04425](https://arxiv.org/abs/2607.04425) (2026) | [2,685 trajectories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [≈ 36,000 steps](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [10 application categories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [2,685 task.json trajectory files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) · [38,283 PNG screenshot files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) · [245 distinct OSWorld task IDs in trajectory folder names](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) | data apache-2.0 | Desktop trajectories from the UI-MOPD training data, collected in OSWorld environments: 2,685 tasks across 10 app categories with step screenshots, reasoning traces, normalized actions and pyautogui code. | [✓ 2026‑10‑18](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) |
 
 ## Agents
 

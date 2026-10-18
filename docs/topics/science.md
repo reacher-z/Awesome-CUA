@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-18 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+19 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (15)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (2)](#infrastructure) · [Papers (15)](#papers)
 
 ## Benchmarks
 
@@ -24,11 +24,10 @@ All entries in this section: desktop, linux.
 
 ## Infrastructure
 
-All entries in this section: linux, desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | desktop, linux | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
+| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
 
 ## Papers
 

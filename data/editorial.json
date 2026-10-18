@@ -63143,5 +63143,123 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "System1-Agents",
+    "kind": "framework",
+    "url": "https://github.com/ThinkFlowLab/system1-agents",
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "web-navigation"
+    ],
+    "scope": "adjacent",
+    "summary": "Framework that puts System 1 decision models such as Jev, Laya or Cua-S1 in openJiuwen agents to pick one typed option per step; ships browser, desktop-app, game, ALFWorld and ticket-routing agents.",
+    "verify_terms": [
+      "System1-Agents",
+      "system1-agents"
+    ],
+    "notes": "Adjacent because browser and desktop control are two of several shipped domains; the package (s1a) is equally aimed at games, ALFWorld, ticket routing and an injection-guard rail. On a decision turn the System 1 model answers typed choice questions while a chat model keeps planning, typed values and the final answer. The browser front runs a stock openJiuwen browser subagent (pinned ThinkFlowLab fork of agent-core) over @playwright/mcp; its in-page probe numbers the visible controls of the top document's light DOM, and the decision model chooses an element plus an operation head (CLICK, TYPE_TEXT, PRESS_ENTER, SELECT, scrolling). OmniJev instead receives a page screenshot. The desktop agent drives a Windows or macOS app window through the external Cua Driver over MCP, clicking accessibility elements bound to a window snapshot. Decision models are reached through TypeSafe, OpenRouter or served endpoints; Cua-S1 Nano runs in process from a pinned trycua/cua subdirectory. Speed and cost tables in the README are the publisher's single-episode comparisons. The browser files carry Huawei copyright notices with ThinkFlowLab modifications under Apache-2.0. Code was read, not run.",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "availability": "Public Python source with CLI, MCP server and agent skills; decision models need a TypeSafe or OpenRouter key, a served endpoint, or the optional Cua-S1 extra.",
+      "repository_revision": "0fe20f5044d455126c81f668ac9d28d706e6d3c0",
+      "repository_tree_sha": "f252f9febcc8edd96b8fdd81664500be72c0b33f"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.repository_revision",
+          "details.repository_tree_sha"
+        ],
+        "url": "https://api.github.com/repos/ThinkFlowLab/system1-agents/git/commits/0fe20f5044d455126c81f668ac9d28d706e6d3c0",
+        "sha256": "5e0ee2406487549dc9bccfac9d667afd9f366b124aa4ffffd6233f5b20b6b1a1",
+        "retrieved_at": "2026-10-18T15:37:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/0fe20f5044d455126c81f668ac9d28d706e6d3c0/s1a/browser/action_space.py",
+        "sha256": "694eaff77c20180021cc6bb3d621792c57ebfb7515acf6373916b62a5e0b06d1",
+        "retrieved_at": "2026-10-18T15:37:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/0fe20f5044d455126c81f668ac9d28d706e6d3c0/s1a/browser/probe_js.py",
+        "sha256": "dc1dc042d2b38dadfb982ddd5d0737ed300d8d6ab6fbd4653f0134bb5b59585b",
+        "retrieved_at": "2026-10-18T15:37:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/0fe20f5044d455126c81f668ac9d28d706e6d3c0/s1a/agents/desktop.py",
+        "sha256": "a9a53f1fdaf89ed105531bea0775051c7b5dc3ce1acb6075379742c7b9eaac92",
+        "retrieved_at": "2026-10-18T15:37:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/0fe20f5044d455126c81f668ac9d28d706e6d3c0/s1a/desktop/driver.py",
+        "sha256": "74168a625f08243655f17632046a6aedfee7b2f1efb13694a390307cc6e04c62",
+        "retrieved_at": "2026-10-18T15:37:23Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/0fe20f5044d455126c81f668ac9d28d706e6d3c0/pyproject.toml",
+        "sha256": "00d4864efa51b7e312ac279d246abafc45f93a5b9e887affff23f48ad72c569b",
+        "retrieved_at": "2026-10-18T15:37:23Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:trycua/cua",
+        "evidence_url": "https://raw.githubusercontent.com/ThinkFlowLab/system1-agents/0fe20f5044d455126c81f668ac9d28d706e6d3c0/pyproject.toml"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a5836edea1115fdb9d280e0958f528f99db9f454e0270c408a15579922d3bbb7",
+    "reviewed_at": "2026-10-18T15:37:55Z"
   }
 ]

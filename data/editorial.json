@@ -63143,5 +63143,114 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:e0e4712ee701f652bf31",
+    "name": "GUI-Owl 1.5 32B Think",
+    "kind": "model",
+    "url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "planning",
+      "tool-integration",
+      "memory"
+    ],
+    "summary": "Thinking variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Owl-1.5-32B-Thinking",
+      "GUI-Owl 1.5"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/raw/6635d0e256809902add2e091050c7f00b6c25c93/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.repository_url"
+    ],
+    "notes": "The card's tables label this checkpoint GUI-Owl-1.5-32B-Thinking and describe the thinking models as the larger variants for tasks that need planning and reflection; the 32B instruct checkpoint is a separate repository. The Hub manifest lists 14 Safetensors shards and an index, and the API reports a Qwen3VLForConditionalGeneration config with 33,357,390,064 BF16 parameters. The card defers usage to a cookbook outside this repository and shows vLLM serving. Benchmark scores in the card are publisher-reported and were not reproduced. MIT is the card's weight declaration and is not extended to Qwen3-VL or training data.",
+    "details": {
+      "hub_id": "mPLUG/GUI-Owl-1.5-32B-Think",
+      "hub_revision": "6635d0e256809902add2e091050c7f00b6c25c93",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/tree/6635d0e256809902add2e091050c7f00b6c25c93",
+      "repository_url": "https://github.com/X-PLUG/MobileAgent",
+      "artifact_type": "model-checkpoint",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "32B",
+      "listed_weight_files": [
+        "model-00001-of-00014.safetensors",
+        "model-00002-of-00014.safetensors",
+        "model-00003-of-00014.safetensors",
+        "model-00004-of-00014.safetensors",
+        "model-00005-of-00014.safetensors",
+        "model-00006-of-00014.safetensors",
+        "model-00007-of-00014.safetensors",
+        "model-00008-of-00014.safetensors",
+        "model-00009-of-00014.safetensors",
+        "model-00010-of-00014.safetensors",
+        "model-00011-of-00014.safetensors",
+        "model-00012-of-00014.safetensors",
+        "model-00013-of-00014.safetensors",
+        "model-00014-of-00014.safetensors"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/models/mPLUG/GUI-Owl-1.5-32B-Think",
+        "sha256": "22db276232ececb495d4dae07cc15c7f253387ea10b05b1095f33c256284a60b",
+        "retrieved_at": "2026-10-18T15:33:29Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.architecture",
+          "details.listed_weight_files"
+        ]
+      }
+    ],
+    "documented_by": [
+      "2602.16855"
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/raw/6635d0e256809902add2e091050c7f00b6c25c93/README.md",
+          "retrieved_at": "2026-10-18T15:33:29Z",
+          "basis": "Publisher model-card declaration for this checkpoint; base-model and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for this checkpoint; base-model and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/raw/6635d0e256809902add2e091050c7f00b6c25c93/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "e4b496b2caf26ba3b60fc2b7de500f23c897f0d6d440e58f75e445ddac5ce83b",
+    "reviewed_at": "2026-10-18T15:33:55Z"
   }
 ]

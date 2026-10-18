@@ -5559,7 +5559,33 @@
     "editorial_reviewed": true,
     "scope": "adjacent",
     "reviewed_sha256": "9e7a23adb62bd05d0fd45e5c95a57fcfc3cc4d19ab89d6801c5bf1e23d3c678c",
-    "reviewed_at": "2026-10-16T06:36:04Z"
+    "reviewed_at": "2026-10-16T06:36:04Z",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "BSD-3-Clause",
+          "url": "https://raw.githubusercontent.com/asweigart/pyautogui/b4255d0be42c377154c7d92337d7f8515fc63234/LICENSE.txt",
+          "retrieved_at": "2026-10-18T16:18:36Z",
+          "basis": "LICENSE.txt at commit b4255d0 is the three-clause BSD text (copyright 2014 Al Sweigart, with the non-endorsement clause naming PyAutoGUI) without a title line, so header detection does not identify it; setup.py declares license='BSD'."
+        },
+        "reason": "LICENSE.txt at commit b4255d0 is the three-clause BSD text (copyright 2014 Al Sweigart, with the non-endorsement clause naming PyAutoGUI) without a title line, so header detection does not identify it; setup.py declares license='BSD'.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/asweigart/pyautogui/b4255d0be42c377154c7d92337d7f8515fc63234/LICENSE.txt"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/asweigart/pyautogui/b4255d0be42c377154c7d92337d7f8515fc63234/LICENSE.txt",
+        "sha256": "48f16390e9d5559e2aaacfe3a009666af686187bea7175a4503201da942331ac",
+        "retrieved_at": "2026-10-18T16:18:36Z"
+      }
+    ]
   },
   {
     "name": "Nut.js",

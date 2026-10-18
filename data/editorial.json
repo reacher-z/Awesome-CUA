@@ -63143,5 +63143,62 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "claude-minecraft-use",
+    "kind": "agent",
+    "url": "https://github.com/ObservedObserver/claude-minecraft-use",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration"
+    ],
+    "summary": "Adaptation of Anthropic's computer-use quickstart that drives a local macOS desktop through cliclick and screencapture, adding held-key and mouse-hold actions so Claude can play Minecraft.",
+    "verify_terms": [
+      "claude-minecraft-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:57f17b7d0c18b2d7c8bf",
+        "evidence_url": "https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/README.md"
+      }
+    ],
+    "notes": "A hobby demo: the README says it exists for fun and to test Claude computer use, and reports inaccurate coordinate control and weak step-by-step handling of complex tasks. The code targets the computer_20241022 tool with Claude 3.5 Sonnet and keeps the quickstart's bash and edit tools; the tree still carries the quickstart's Docker image files, but the README and system prompt target a local macOS machine. Root LICENSE is MIT, and LICENSE.QucikStart keeps Anthropic's MIT notice for the quickstart code.",
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/computer_use_demo/tools/computer.py",
+        "sha256": "7ce94b87840775069a8aa06691fd05e222a06e10337b2ff8ce5058a513c6f80e",
+        "retrieved_at": "2026-10-18T11:45:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/computer_use_demo/loop.py",
+        "sha256": "bdc4414564a0f82087b623ad353a8a2a404009121515060ba54dec9dfb9664b4",
+        "retrieved_at": "2026-10-18T11:45:58Z"
+      }
+    ],
+    "reviewed_sha256": "ad6587798873d7cae348ce8a35fb75f162a3ceb16e91f9e7bff387e24ab2ff0e",
+    "reviewed_at": "2026-10-18T11:46:06Z"
   }
 ]

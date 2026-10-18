@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,614 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,615 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -18,7 +18,7 @@
 | [Robustness](topics/robustness.md) | 183 | 10 | 1 | · | 2 | 170 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Memory](topics/memory.md) | 162 | 1 | 2 | · | 15 | 144 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Efficiency](topics/efficiency.md) | 150 | 1 | · | 5 | 4 | 140 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) · 2026-10-15 |
-| [Tool integration](topics/tool-integration.md) | 131 | 9 | 2 | 4 | 24 | 92 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
+| [Tool integration](topics/tool-integration.md) | 132 | 9 | 2 | 4 | 25 | 92 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
 | [Workflows](topics/workflow.md) | 110 | 6 | 2 | · | 22 | 80 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Long-horizon tasks](topics/long-horizon.md) | 99 | 5 | 1 | 1 | 4 | 88 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |

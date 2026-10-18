@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:omnimind-ai/omniinfer",
+    "url": "https://github.com/omnimind-ai/OmniInfer",
+    "decision": "out_of_scope",
+    "reason": "OmniInfer is a cross-platform engine for running LLMs and VLMs locally, with a terminal UI, an OpenAI- and Anthropic-compatible local server and Android and iOS embedding modules over backends such as llama.cpp, MNN and MLX. It neither observes nor operates graphical interfaces; its only agent-style demo runs a robot VLA policy in the LIBERO simulator, so it is generic inference infrastructure rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T11:51:43Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/omnimind-ai/OmniInfer/HEAD/README.md",
+      "sha256": "516a813573e75c842f821497c60631fb63f8bdbfd492f3bd0bf7da7c60e07051",
+      "retrieved_at": "2026-10-18T11:46:36Z"
+    }
   }
 ]

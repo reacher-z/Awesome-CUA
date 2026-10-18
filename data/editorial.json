@@ -63143,5 +63143,84 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ClickAgent",
+    "kind": "agent",
+    "url": "https://github.com/Samsung/ClickAgent",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "mobile-navigation",
+      "planning",
+      "self-reflection"
+    ],
+    "summary": "Android agent code in which a multimodal LLM reasons and plans each action while a separate UI-location model picks the screen point to tap, driving an emulator or phone over ADB with an optional reflection step.",
+    "scope": "core",
+    "verify_terms": [
+      "ClickAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Samsung/ClickAgent/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2410.11872"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Released by Samsung with arXiv:2410.11872; the last commit (2903d06a) is from 2024-10. Reproducing the paper's Table 1 requires self-hosting a TinyClick location server (api/host_florence.py), the repository's host API worker and InternVL2-Llama3-76B, with vLLM suggested; no checkpoints are bundled. tests/test_sets/test_set.csv holds 586 instructions (432 general, 154 web), counted with a script, and the README lists 28 Android apps used. config.ini defaults to an emulator with at most 8 steps. No license file is in the tree and no license is declared in the README or by the GitHub API, so code terms are unknown. Nothing was installed or run.",
+    "details": {
+      "repository_revision": "2903d06ab2275346695c28e445068a2dab781ef7",
+      "repository_tree_sha": "8ca490f923e90db797ba6f5fc6ceb8558a2823a3",
+      "availability": "Agent, model-serving and test-runner code with an instruction list; model weights and the large reasoning model must be obtained and hosted separately."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/Samsung/ClickAgent/git/trees/8ca490f923e90db797ba6f5fc6ceb8558a2823a3?recursive=1",
+        "sha256": "b50b24227d838a1e4dfd0d88db27da0850ae99a987f7abca2635616da657a721",
+        "retrieved_at": "2026-10-18T12:02:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Samsung/ClickAgent/2903d06ab2275346695c28e445068a2dab781ef7/tests/test_sets/test_set.csv",
+        "sha256": "c69205099e5a81d5ed3acd5498977fed848fe9213246ebea92471fe6603a8b8d",
+        "retrieved_at": "2026-10-18T12:02:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Samsung/ClickAgent/2903d06ab2275346695c28e445068a2dab781ef7/config.ini",
+        "sha256": "a13b77afa4b1698385e7f1d5e266a968929799e9cbea24d492c70181daba9b5e",
+        "retrieved_at": "2026-10-18T12:02:35Z"
+      }
+    ],
+    "reviewed_sha256": "8d11136e35e1f64a4aeb9ce1de11d793984b8f516275383902675630a7cf8964",
+    "reviewed_at": "2026-10-18T12:03:07Z"
   }
 ]

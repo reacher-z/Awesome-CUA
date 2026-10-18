@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FSB",
+    "kind": "agent",
+    "url": "https://github.com/fullselfbrowsing/FSB",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "memory"
+    ],
+    "summary": "Chrome extension agent that reads pages as DOM snapshots with element references, has a chosen model plan tool calls, and clicks, types and navigates through content scripts; an MCP bridge lets other agents drive it.",
+    "scope": "core",
+    "aliases": [
+      "Full Self Browsing"
+    ],
+    "verify_terms": [
+      "Full Self Browsing"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fullselfbrowsing/FSB/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Manifest V3 extension: the background worker runs the agent loop (extension/ai/agent-loop.js) with xAI, Gemini, OpenAI, Anthropic, OpenRouter, LM Studio or custom OpenAI-compatible models, and content scripts (extension/content/) build DOM snapshots, execute actions and wait for the page to settle. The README calls it DOM-first with zero vision, but extension/ai/screenshot-attachments.js lets the autopilot attach up to four CDP screenshots per turn, kept in memory only. The npm package fsb-mcp-server (mcp/) translates MCP calls into the extension's own background routes; it does not replace the extension runtime. Local memory, a credential and payment vault, and trigger watchers are included. vendor/opentabs-snapshot pins MIT-licensed OpenTabs metadata used for the app capability catalog. Tool counts and reliability statements come from the README and were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source, Chrome Web Store extension and npm MCP server package",
+      "repository_revision": "f5255da173454e6a7f4199abbc613828dce648b9"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fullselfbrowsing/FSB/f5255da173454e6a7f4199abbc613828dce648b9/extension/ai/agent-loop.js",
+        "sha256": "eadb627a4c40977296e607d124ff70ba76e69981014ef10cad1c1e8cbe964c74",
+        "retrieved_at": "2026-10-18T15:36:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fullselfbrowsing/FSB/f5255da173454e6a7f4199abbc613828dce648b9/extension/content/dom-analysis.js",
+        "sha256": "e30fd2a4427b27f78c2ac929dc47be0219898c5d8ee0fb5c8012cde119dc29ec",
+        "retrieved_at": "2026-10-18T15:36:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fullselfbrowsing/FSB/f5255da173454e6a7f4199abbc613828dce648b9/extension/ai/screenshot-attachments.js",
+        "sha256": "ce18674bbac1084129e943132035f397813902497582fdf9c800f5dcf3de80f0",
+        "retrieved_at": "2026-10-18T15:36:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fullselfbrowsing/FSB/f5255da173454e6a7f4199abbc613828dce648b9/mcp/src/bridge.ts",
+        "sha256": "0a7116274450a4f2bbeb08a23bc2257cf74fe4adee6ce6ffc6b99a1fd65691db",
+        "retrieved_at": "2026-10-18T15:36:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/fullselfbrowsing/FSB/f5255da173454e6a7f4199abbc613828dce648b9/vendor/opentabs-snapshot/PIN.md",
+        "sha256": "445e21e282c0975dc9fd7f856787ff6532fd34366db4c8e84a892ca74c0e00df",
+        "retrieved_at": "2026-10-18T15:36:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/fullselfbrowsing/FSB/f5255da173454e6a7f4199abbc613828dce648b9/LICENSE",
+        "sha256": "1f197c458d402a510be823a43bfdab1e715d3300a7bf61ab2c1c31ee4163d032",
+        "retrieved_at": "2026-10-18T15:36:03Z"
+      }
+    ],
+    "reviewed_sha256": "a41ec2f79099b5befb976d290b77952c5995a99770b7f3756b5a76d60eb0ede9",
+    "reviewed_at": "2026-10-18T15:36:24Z"
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:langchain-ai/langgraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "decision": "out_of_scope",
+    "reason": "LangGraph is LangChain's general, low-level orchestration framework for building long-running, stateful LLM agents. Its README describes no GUI, browser or device interaction, and the methodology does not treat generic LLM frameworks as computer-use resources.",
+    "reviewed_at": "2026-10-18T11:48:47Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/langchain-ai/langgraph/HEAD/README.md",
+      "sha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933",
+      "retrieved_at": "2026-10-18T11:33:05Z"
+    }
   }
 ]

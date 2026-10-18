@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:hyp1231/awesome-llm-powered-agent",
+    "url": "https://github.com/hyp1231/awesome-llm-powered-agent",
+    "decision": "out_of_scope",
+    "reason": "A general link list of LLM-agent papers and projects covering planning, multi-agent cooperation, embodied AI, games and human simulation, with only a short Web Agents subsection. It is not one of the catalog's discovery sources and accompanies no survey, so it has no computer-use artifact of its own.",
+    "reviewed_at": "2026-10-18T11:30:52Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/hyp1231/awesome-llm-powered-agent/HEAD/README.md",
+      "sha256": "822f00424931ddca57c093bcc1aa3d4b700094b211368bbeb90e63eccad22bd7",
+      "retrieved_at": "2026-10-18T11:22:24Z"
+    }
   }
 ]

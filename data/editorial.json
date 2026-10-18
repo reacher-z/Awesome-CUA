@@ -63143,5 +63143,97 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:minitap-ai/mobile-use",
+    "name": "mobile-use",
+    "kind": "agent",
+    "url": "https://github.com/minitap-ai/mobile-use",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "automation"
+    ],
+    "summary": "Open-source multi-agent system that carries out natural-language tasks on Android devices and iOS simulators, splitting work across planner, orchestrator, cortex and executor nodes and returning app data as JSON.",
+    "scope": "core",
+    "verify_terms": [
+      "mobile-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/minitap-ai/mobile-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The README cites arXiv:2602.07787 and reports completing every AndroidWorld task; that result is publisher-reported and was not reproduced here. iOS support covers simulators on macOS through idb, and the README states that physical iOS devices are not yet supported. Distributed on PyPI as minitap-mobile-use; the latest GitHub release is v3.3.0 (January 2026). Apache-2.0 is declared for the code; the LLM providers it calls keep their own terms.",
+    "details": {
+      "availability": "Published source and PyPI package; official release metadata inspected",
+      "release_tag": "v3.3.0",
+      "repository_url": "https://github.com/minitap-ai/mobile-use",
+      "repository_tree_sha": "7b89fde187e02acc3ff7aca49c00795f95668e61"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/minitap-ai/mobile-use",
+        "sha256": "e697f03b5bb7e6555daba942c9b72159f900ed68451be8464c73e0c64d2ebbef",
+        "retrieved_at": "2026-10-18T11:38:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "summary"
+        ],
+        "url": "https://api.github.com/repos/minitap-ai/mobile-use/git/trees/main?recursive=1",
+        "sha256": "10fcfe62524011a665fd8e601a65224917c1ed6eeda0f30bddcdaf087d007054",
+        "retrieved_at": "2026-10-18T11:38:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "release_status",
+          "details.release_tag"
+        ],
+        "url": "https://api.github.com/repos/minitap-ai/mobile-use/releases/latest",
+        "sha256": "98ceb79e939ff3669a7bac699300edb0983de699d45cf6e4a97d3b7e024e4f70",
+        "retrieved_at": "2026-10-18T11:38:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/minitap-ai/mobile-use/HEAD/LICENSE",
+        "sha256": "83eacb160cdeea43e85545f6dbed7eb9588c56e604dae639063cd7846cfc67f3",
+        "retrieved_at": "2026-10-18T11:38:12Z"
+      }
+    ],
+    "documented_by": [
+      "2602.07787"
+    ],
+    "reviewed_sha256": "d9f1dc9560baec4746a58f3c0fa8b167a9fb365b7e2888698d0cb75f803c856c",
+    "reviewed_at": "2026-10-18T11:38:50Z"
   }
 ]

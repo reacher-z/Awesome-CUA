@@ -23647,6 +23647,16 @@
         "supports": [
           "details.dataset_profile"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://arxiv.org/html/2412.04454v2",
+        "sha256": "0c9e49cae95cf7ddb5271f6b691dc4d600af1dbcb24b483f456e94e8ea994b31",
+        "retrieved_at": "2026-10-18T16:18:15Z"
       }
     ],
     "details": {
@@ -23672,13 +23682,23 @@
         "splits": [
           "training"
         ],
-        "counts": [],
-        "notes": "Stage 2 trajectory release, Hub revision bd6f1ed4, is distinct from Stage 1 grounding. The public manifest lists source-specific JSON levels and image ZIP/multipart TAR packages. The training recipe uses all rows for some inputs and random:33% for others; several l2 paths occur twice while the manifest also contains l3 files. Recipe rows/levels are neither independent datasets nor disjoint train/test splits. No example/action/trajectory count is inferred. Apache-2.0 is the card declaration, with separate underlying source terms.",
+        "counts": [
+          {
+            "value": 35000,
+            "unit": "trajectories",
+            "qualifier": "approximately",
+            "population": "planning & reasoning split of the Aguvis Data Collection, arXiv 2412.04454v2 Table 11 (eight web and mobile sources)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2412.04454v2"
+          }
+        ],
+        "notes": "Stage 2 trajectory release, Hub revision bd6f1ed4, is distinct from Stage 1 grounding. The public manifest lists source-specific JSON levels and image ZIP/multipart TAR packages. The training recipe uses all rows for some inputs and random:33% for others; several l2 paths occur twice while the manifest also contains l3 files. Recipe rows/levels are neither independent datasets nor disjoint train/test splits. The 35K trajectory figure is the paper's Table 11 total for the planning & reasoning split; the Hub release also lists guide.json, which that table does not name, so the figure is not a row total of this release. Apache-2.0 is the card declaration, with separate underlying source terms.",
         "evidence_urls": [
           "https://huggingface.co/datasets/xlangai/aguvis-stage2/raw/main/README.md",
           "https://huggingface.co/api/datasets/xlangai/aguvis-stage2",
           "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/README.md",
-          "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/data/stage2.yaml"
+          "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/data/stage2.yaml",
+          "https://arxiv.org/html/2412.04454v2"
         ]
       }
     },

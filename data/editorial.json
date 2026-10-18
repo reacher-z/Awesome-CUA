@@ -7894,8 +7894,81 @@
         "supports": [
           "relations"
         ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenWu98/agent-attack/d745e2b81308c8b71350e175ad68552189d848c7/LICENSE",
+        "sha256": "9393e3abbfe1096cde0a2fdd8300988e309bc0c51977ef1ab65a8c4eca25fd76",
+        "retrieved_at": "2026-10-18T15:52:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://arxiv.org/html/2406.12814v3",
+        "sha256": "d4357bc8c266ebdc0814f1bba12f07b26403741053a60dea5dc8be137defc38a",
+        "retrieved_at": "2026-10-18T15:52:33Z"
       }
-    ]
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/ChenWu98/agent-attack/d745e2b81308c8b71350e175ad68552189d848c7/LICENSE",
+          "retrieved_at": "2026-10-18T15:52:33Z",
+          "basis": "The root LICENSE holds the standard MIT permission text under a 2024 Carnegie Mellon University copyright, without an 'MIT License' title line, so header detection did not match it; GitHub's license API also reports MIT. It covers the code; no separate data license is declared."
+        },
+        "reason": "The root LICENSE holds the standard MIT permission text under a 2024 Carnegie Mellon University copyright, without an 'MIT License' title line, so header detection did not match it; GitHub's license API also reports MIT. It covers the code; no separate data license is declared.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ChenWu98/agent-attack/d745e2b81308c8b71350e175ad68552189d848c7/LICENSE"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "details": {
+      "repository_revision": "d745e2b81308c8b71350e175ad68552189d848c7",
+      "benchmark_protocol": {
+        "focus": [
+          "targeted adversarial attacks on multimodal web agents",
+          "attacker-controlled trigger images or text in VisualWebArena"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [],
+        "evaluation": "Each VWA-Adv task pairs a VisualWebArena task with a trigger image or text, a targeted adversarial goal and a start state at the trigger. Manually annotated execution-based functions return 0 or 1 for the adversarial goal; benign success rate and attack success rate are reported separately.",
+        "counts": [
+          {
+            "value": 200,
+            "unit": "adversarial tasks",
+            "qualifier": "exact",
+            "population": "VWA-Adv as curated in the paper (v3)",
+            "basis": "reported",
+            "evidence_url": "https://arxiv.org/html/2406.12814v3"
+          }
+        ],
+        "notes": "Episode-wise evaluation needs the authors' modified VisualWebArena fork and its self-hosted sites; a lighter step-wise evaluation runs without them. The repository ships pre-generated adversarial examples under data/. No attack or evaluation was run.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md",
+          "https://arxiv.org/html/2406.12814v3"
+        ]
+      }
+    }
   },
   {
     "name": "AdvAgent (formerly AdvWeb)",

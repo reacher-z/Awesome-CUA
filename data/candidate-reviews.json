@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:alibaba/mnn",
+    "url": "https://github.com/alibaba/MNN",
+    "decision": "out_of_scope",
+    "reason": "MNN is a general on-device inference engine for neural networks and LLMs; it provides no agent or interface-control capability.",
+    "reviewed_at": "2026-10-18T11:21:28Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/alibaba/MNN/master/README.md",
+      "sha256": "a0b80e613bd936291302c3b087c8c36965b402f3f35d112e7baed27a8c9ba356",
+      "retrieved_at": "2026-10-18T11:19:20Z"
+    }
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:goofrey/zoom-search",
+    "url": "https://github.com/goofrey/zoom-search",
+    "decision": "out_of_scope",
+    "reason": "Zoom Search is a search-and-answer tool for agents: it rewrites questions, calls search-engine APIs such as Tavily, narrows to selected source domains and returns sourced answers over MCP or LangGraph. It never opens or operates web pages, so it is web retrieval rather than computer or browser use.",
+    "reviewed_at": "2026-10-18T11:31:52Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/goofrey/zoom-search/HEAD/README.md",
+      "sha256": "1b9d341e5c2eabaec5ff70956432348cc6d1355aac3e6e7499116e27c7c8688a",
+      "retrieved_at": "2026-10-18T11:24:51Z"
+    }
   }
 ]

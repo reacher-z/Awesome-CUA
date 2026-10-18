@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (24)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -90,6 +90,7 @@ All entries in this section: web.
 | [Browser Use](https://github.com/browser-use/browser-use) | — | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browser-use/browser-use/HEAD/README.md) |
 | [Go-Browse](https://github.com/ApGa/Go-Browse) | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | code MIT | Structured website-exploration and data-processing code that revisits discovered pages, proposes tasks and collects trajectories for web-agent fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ApGa/Go-Browse/HEAD/README.md) |
 | [HyperAgent](https://github.com/hyperbrowserai/HyperAgent) | — | — | Library adding natural-language commands to Playwright: accessibility-tree single actions, multi-step tasks that can use screenshots, an MCP client and action caching for replay without LLM calls. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/HEAD/README.md) |
+| [Language Agent Tree Search (LATS)](https://github.com/andyz245/LanguageAgentTreeSearch) | — | code MIT | Official LATS code: UCT-guided tree search over agent trajectories with LM value prompts and reflections, including a text-mode WebShop runner alongside HotPotQA and programming experiments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/andyz245/LanguageAgentTreeSearch/HEAD/README.md) |
 | [LaVague](https://github.com/lavague-ai/LaVague) | — | code Apache-2.0 | Open-source web agent framework where a World Model turns an objective and the current page into instructions and an Action Engine compiles them into Selenium or Playwright code to run. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/lavague-ai/LaVague/HEAD/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [NNetNav](https://github.com/MurtyShikhar/NNetnav) | [2410.02907](https://arxiv.org/abs/2410.02907) (2024) | code Apache-2.0 | Collects and labels browser-exploration trajectories for agent training, with code for data processing, fine-tuning, and web evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md) |

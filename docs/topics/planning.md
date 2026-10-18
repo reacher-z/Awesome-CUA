@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (16)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
 
 ## Datasets
 
@@ -80,6 +80,7 @@
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUI-ReWalk](https://github.com/bytedance/GUI-ReWalk) | desktop, linux | [2509.15738](https://arxiv.org/abs/2509.15738) (2025) | code Apache-2.0 | A desktop trajectory-generation framework that moves from stochastic GUI exploration to inferred goals and multi-stage task completion, with retrospective reasoning annotations. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/bytedance/GUI-ReWalk/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
+| [Language Agent Tree Search (LATS)](https://github.com/andyz245/LanguageAgentTreeSearch) | web | — | code MIT | Official LATS code: UCT-guided tree search over agent trajectories with LM value prompts and reflections, including a text-mode WebShop runner alongside HotPotQA and programming experiments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/andyz245/LanguageAgentTreeSearch/HEAD/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | web | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
 | [Plan-and-Act](https://github.com/SqueezeAILab/plan-and-act) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | code MIT | A web-agent framework that separates high-level planning from action execution, with replanning and synthetic planner-data generation components. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/SqueezeAILab/plan-and-act/HEAD/README.md) |

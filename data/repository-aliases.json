@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:lapisrocks/languageagenttreesearch",
+    "target_id": "github:andyz245/languageagenttreesearch",
+    "repository_id": 700717169,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:21:48Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/lapisrocks/LanguageAgentTreeSearch",
+        "resolved_url": "https://api.github.com/repositories/700717169",
+        "repository_id": 700717169,
+        "full_name": "andyz245/LanguageAgentTreeSearch",
+        "html_url": "https://github.com/andyz245/LanguageAgentTreeSearch",
+        "retrieved_at": "2026-10-18T11:21:48Z",
+        "sha256": "98d97c6f3714357e5ce66d999471fdc7ab5c119962eb5a21103343f04fde93f6"
+      },
+      {
+        "url": "https://api.github.com/repos/andyz245/LanguageAgentTreeSearch",
+        "resolved_url": "https://api.github.com/repos/andyz245/LanguageAgentTreeSearch",
+        "repository_id": 700717169,
+        "full_name": "andyz245/LanguageAgentTreeSearch",
+        "html_url": "https://github.com/andyz245/LanguageAgentTreeSearch",
+        "retrieved_at": "2026-10-18T11:21:48Z",
+        "sha256": "98d97c6f3714357e5ce66d999471fdc7ab5c119962eb5a21103343f04fde93f6"
+      }
+    ]
   }
 ]

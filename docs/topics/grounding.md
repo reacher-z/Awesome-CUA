@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (68)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -75,6 +75,7 @@
 | [GroundGUI-8B](https://huggingface.co/PrentisAI/GroundGUI-8B) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | weights apache-2.0 | Screenshot grounding checkpoint that emits a single click in a normalized coordinate space. | [✓ 2026‑10‑17](https://huggingface.co/PrentisAI/GroundGUI-8B/raw/main/README.md) |
 | [GUI-Actor](https://github.com/microsoft/GUI-Actor) | cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | code MIT | GUI grounding model with attention-based action localization. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/GUI-Actor/HEAD/README.md) |
 | [GUI-Actor 7B Qwen2-VL](https://huggingface.co/microsoft/GUI-Actor-7B-Qwen2-VL) | cross-platform | — | weights mit | GUI-Actor checkpoint fine-tuned from Qwen2-VL-7B-Instruct, with about 8.4B BF16 parameters, whose config names a pointer variant of the Qwen2-VL class rather than the stock one, under MIT. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/GUI-Actor-7B-Qwen2-VL) |
+| [GUI-AIMA](https://github.com/sjz5202/GUI-AIMA) | cross-platform, desktop | [2511.00810](https://arxiv.org/abs/2511.00810) (2025) | code Apache-2.0 | Code for GUI-AIMA, a Qwen2.5-VL grounding model that adds a learnable anchor token and weights attention heads to pick target screen patches, with training scripts, five benchmark evaluations and a 3B checkpoint. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sjz5202/GUI-AIMA/HEAD/README.md) |
 | [GUI-G1](https://github.com/Yuqi-Zhou/GUI-G1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | code Apache-2.0 | GUI-grounding training code that modifies reasoning templates, reward functions, and the GRPO objective, with a linked model release. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/GUI-G1/HEAD/README.md) |
 | [GUI-G1 3B v1](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1) | cross-platform | [2505.15810](https://arxiv.org/abs/2505.15810) (2025) | weights mit | A Qwen2.5-VL-3B checkpoint released for R1-style visual grounding experiments, predicting interface target locations from screenshots and instructions. | [✓ 2026‑10‑17](https://huggingface.co/Yuqi-Zhou/GUI-G1-3B-v1/raw/main/README.md) |
 | [GUI-G2](https://github.com/ZJU-REAL/GUI-G2) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | — | GUI grounding models at 3B and 7B trained with Gaussian rewards for click proximity to element centers and region coverage, with variance scaled to element size. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/GUI-G2/HEAD/README.md) |

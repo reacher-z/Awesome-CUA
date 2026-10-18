@@ -17,7 +17,7 @@
 [阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C175-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C614-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C176-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C615-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -73,9 +73,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,175 条资源记录** · **1,614 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
+**3,176 条资源记录** · **1,615 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-18T13:06:20.028238+00:00`。1,561 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-18T13:06:20.028238+00:00`。1,561 条记录仅完成书目核实；904 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -88,9 +88,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [综述](docs/surveys.md) · **18** | [框架](docs/frameworks.md) · **75** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
 | [基准](docs/benchmarks.md) · **88** | [工具](docs/tools.md) · **20** |
-| [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
+| [模型与权重版本](docs/models.md) · **99** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**按平台：** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **323** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **198**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -121,27 +121,27 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | 7 | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | — | Visually grounded web tasks extending the WebArena evaluation setting. |
 | [AndroidWorld](https://github.com/google-research/android_world) | 6 | android | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | 代码 Apache-2.0 | Android environment with programmatic task evaluation for mobile agents. |
 
-**模型** · [全部 98 项 →](docs/models.md)
+**模型** · [全部 99 项 →](docs/models.md)
 
 | 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |
 | --- | ---: | --- | --- | --- | --- |
-| [SeeClick](https://github.com/njucckevin/SeeClick) | 9 | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | 代码 Apache-2.0 | GUI grounding model trained to locate visual interface elements. |
-| [Aguvis](https://github.com/xlang-ai/aguvis) | 5 | cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | — | Vision-based GUI agent models with unified action representations. |
+| [SeeClick](https://github.com/njucckevin/SeeClick) | 10 | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | 代码 Apache-2.0 | GUI grounding model trained to locate visual interface elements. |
+| [Aguvis](https://github.com/xlang-ai/aguvis) | 6 | cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | — | Vision-based GUI agent models with unified action representations. |
 | [UI-TARS](https://github.com/bytedance/UI-TARS) | 5 | cross-platform | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | 代码 Apache-2.0 | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use. |
+| [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas) | 4 | cross-platform | [2410.23218](https://arxiv.org/abs/2410.23218) (2024) | 代码 Apache-2.0 | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates. |
+| [GUI-Actor](https://github.com/microsoft/GUI-Actor) | 3 | cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | 代码 MIT | GUI grounding model with attention-based action localization. |
 | [OpenCUA](https://github.com/xlang-ai/OpenCUA) | 3 | desktop | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | 代码 MIT | Open computer-use research stack including models and training resources. |
-| [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas) | 3 | cross-platform | [2410.23218](https://arxiv.org/abs/2410.23218) (2024) | 代码 Apache-2.0 | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates. |
-| [ShowUI](https://github.com/showlab/ShowUI) | 3 | cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | 代码 Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. |
 
 **数据集** · [全部 86 项 →](docs/datasets.md)
 
 | 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |
 | --- | ---: | --- | --- | --- | --- |
-| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | 4 | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | 数据 mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. |
+| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | 5 | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | 数据 mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. |
+| [GUI-Actor data](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data) | 3 | unspecified | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | — | A processed screenshot and bounding-box collection released for training GUI-Actor visual grounding models. |
 | [GUI-Odyssey](https://github.com/OpenGVLab/GUI-Odyssey) | 3 | android | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | — | Human-demonstrated Android episodes for cross-app navigation, spanning six task types, 212 apps and about 1,400 app combinations, for training and evaluating agents. |
 | [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct) | 3 | web, android | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | Web and Android GUI action-instruction data, with single-step, multi-step and smartphone partitions. |
 | [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat) | 3 | unspecified | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | Conversational GUI supervision with text-rich images and bounding boxes, organized as single-turn questions and multi-turn dialogues. |
 | [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv) | 3 | web | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | The released local-supervision portion of GUIEnv, pairing webpage regions and text for OCR and GUI grounding. |
-| [OpenMobile-Data-v2](https://huggingface.co/datasets/OpenMobile-2/OpenMobile-Data-v2) | 3 | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | — | Mobile-agent supervision from emulator and simulator trajectories, plus executable tasks with starting states and success checks for reinforcement learning. |
 
 **框架** · [全部 75 项 →](docs/frameworks.md)
 
@@ -184,8 +184,8 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑18 | [AgentStudio](https://github.com/skyworkai/agent-studio) | 框架 | desktop, linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
 | 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | 框架 | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
 | 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | 框架 | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
+| 2026‑10‑18 | [GUI-AIMA](https://github.com/sjz5202/GUI-AIMA) | 模型 | cross-platform, desktop | Code for GUI-AIMA, a Qwen2.5-VL grounding model that adds a learnable anchor token and weights attention heads to pick target screen patches, with training scripts, five benchmark evaluations and a 3B checkpoint. |
 | 2026‑10‑18 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | 基准 | web, android, cross-platform | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
-| 2026‑10‑18 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | 基准 | web | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. |
 <!-- RECENT:END -->
 
 ## 使用数据

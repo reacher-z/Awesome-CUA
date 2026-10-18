@@ -63143,5 +63143,88 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "BrowserPilot",
+    "kind": "agent",
+    "url": "https://github.com/ai-naymul/BrowserPilot",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Self-hosted web data-extraction agent in which Gemini sees a page screenshot and indexed interactive elements, then clicks, types, scrolls or navigates in a Patchright Chromium until it can export the requested data.",
+    "scope": "core",
+    "verify_terms": [
+      "BrowserPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ai-naymul/BrowserPilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "backend/agent.py loops over page states: backend/vision_model.py sends Gemini a compressed JPEG screenshot plus up to 20 DOM-derived interactive elements with indices, and the reply is one of click, type, scroll, press_key, navigate, extract or done; backend/browser_controller.py executes it by element index in Patchright, a Playwright fork. The README's statement that it does not rely on DOM structure is therefore only partly accurate. Ghost Mode adds fingerprint rotation, proxies and humanized mouse and typing to avoid bot detection; the README's detector scores and protected-site results are publisher-reported and were not reproduced. The repository also has a bulk scraping engine, a FastAPI server with live browser streaming and a web dashboard. Code was read, not run.",
+    "details": {
+      "availability": "Public source with Docker setup and tagged GitHub releases",
+      "repository_revision": "e9c68c68cd7dbdd6c323ad4b6c58465e3b04ee73"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-naymul/BrowserPilot/e9c68c68cd7dbdd6c323ad4b6c58465e3b04ee73/backend/agent.py",
+        "sha256": "8b77f1fac26281ac50a2124c2fc6103bcd32879a9e44fca3061e5492113d52bf",
+        "retrieved_at": "2026-10-18T15:40:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-naymul/BrowserPilot/e9c68c68cd7dbdd6c323ad4b6c58465e3b04ee73/backend/vision_model.py",
+        "sha256": "29efe1c020cde8918365da03cf9bb8d7d8b201462cae25d2510db5c25b6a8c72",
+        "retrieved_at": "2026-10-18T15:40:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-naymul/BrowserPilot/e9c68c68cd7dbdd6c323ad4b6c58465e3b04ee73/backend/browser_controller.py",
+        "sha256": "3172ee5ffc061f611a6f1429fbfbe77b8e59d671cb2184559098f5779b85fa10",
+        "retrieved_at": "2026-10-18T15:40:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-naymul/BrowserPilot/e9c68c68cd7dbdd6c323ad4b6c58465e3b04ee73/LICENSE",
+        "sha256": "bbf60256147a0370114cf7f84f464664985da40ab6f70f7b2c05a261fd33d16b",
+        "retrieved_at": "2026-10-18T15:40:03Z"
+      }
+    ],
+    "reviewed_sha256": "e4622c48687f1f6b713017f883befee54bc1d408e7c7ec2b33f18e8db90e4722",
+    "reviewed_at": "2026-10-18T15:40:22Z"
   }
 ]

@@ -63143,5 +63143,119 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OS-Genesis 8B AW",
+    "kind": "model",
+    "url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "AndroidWorld-oriented InternVL2-8B checkpoint trained on OS-Genesis mobile trajectories; the card prompts it with a screenshot, accessibility tree, goal and action history for the next thought and action.",
+    "scope": "core",
+    "verify_terms": [
+      "OS-Genesis-8B-AW"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW/raw/d0cd248ad68531db06ab178fc28e8aff1fbfc4fc/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.base_model",
+      "details.parameter_label",
+      "details.repository_url",
+      "details.training_data_note",
+      "licenses.weights"
+    ],
+    "notes": "This is the AW task-specific checkpoint; the 4B and 7B AW checkpoints and the AndroidControl (AC) and web variants are separate releases, and their results are not transferred to it. The card prose and config.json name InternVL2-8B (InternLM2 language model) as the starting model, while the card's YAML base_model field says InternVL2-4B; the prose and configuration are followed. Four public Safetensors shards are present. The card declares Apache-2.0 for the checkpoint. No checkpoint was loaded and no result was reproduced.",
+    "details": {
+      "hub_id": "OS-Copilot/OS-Genesis-8B-AW",
+      "hub_revision": "d0cd248ad68531db06ab178fc28e8aff1fbfc4fc",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW/tree/d0cd248ad68531db06ab178fc28e8aff1fbfc4fc",
+      "repository_url": "https://github.com/OS-Copilot/OS-Genesis",
+      "base_model": "OpenGVLab/InternVL2-8B",
+      "architecture": "InternVLChatModel",
+      "parameter_label": "8B",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "training_data_note": "The card's table names os_genesis_aw_training_data.jsonl in OS-Copilot/OS-Genesis-mobile-data as the training data."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/OS-Copilot/OS-Genesis-8B-AW",
+        "sha256": "ecefebf79f90b77f135093ab69ab9a0c562ecac3de4c2dbd2be95b6d9fc0d15b",
+        "retrieved_at": "2026-10-18T15:49:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.base_model",
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW/raw/d0cd248ad68531db06ab178fc28e8aff1fbfc4fc/config.json",
+        "sha256": "918ec82f37bd5bf98f1e2a01940943f4dc7b60b01751447e32324410597278d5",
+        "retrieved_at": "2026-10-18T15:49:10Z"
+      }
+    ],
+    "documented_by": [
+      "2412.19723"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "trained_on",
+        "target_id": "url:d3ec5122a2b52fd5ae4b",
+        "evidence_url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW/raw/d0cd248ad68531db06ab178fc28e8aff1fbfc4fc/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW/raw/d0cd248ad68531db06ab178fc28e8aff1fbfc4fc/README.md",
+          "retrieved_at": "2026-10-18T15:49:09Z",
+          "basis": "Publisher model-card declaration for the checkpoint; base-model, code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the checkpoint; base-model, code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/OS-Copilot/OS-Genesis-8B-AW/raw/d0cd248ad68531db06ab178fc28e8aff1fbfc4fc/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "f0cc611dbfad9747eb40b847ea898dc5acd5e53a7012d4f0a233d00747041c8d",
+    "reviewed_at": "2026-10-18T15:49:22Z"
   }
 ]

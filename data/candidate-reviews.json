@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:pytorch/executorch",
+    "url": "https://github.com/pytorch/executorch",
+    "decision": "out_of_scope",
+    "reason": "ExecuTorch is PyTorch's general runtime and export toolchain for running models on phones, laptops, embedded devices and microcontrollers. It provides no GUI observation, screen understanding or device-control capability, so it is generic on-device inference infrastructure like MNN and llama.cpp rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T12:20:21Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/pytorch/executorch/897d28fe3094f27898115ebd65fecafdef5970cb/README.md",
+      "sha256": "edc454a811e13bb1735d82d40522a56a4a8b747042987943dbe9fe8669aae736",
+      "retrieved_at": "2026-10-18T12:04:36Z"
+    }
   }
 ]

@@ -17,7 +17,7 @@
 [阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C175-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C614-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C176-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C615-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -73,9 +73,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,175 条资源记录** · **1,614 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
+**3,176 条资源记录** · **1,615 条已审阅** · **2,715 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-18T13:06:20.028238+00:00`。1,561 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-18T15:37:39Z`。1,561 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -87,10 +87,10 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [按主题浏览研究](docs/topics.md) · **1,136** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,715 条论文与综述记录 | [智能体](docs/agents.md) · **43** |
 | [综述](docs/surveys.md) · **18** | [框架](docs/frameworks.md) · **75** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
-| [基准](docs/benchmarks.md) · **88** | [工具](docs/tools.md) · **20** |
+| [基准](docs/benchmarks.md) · **88** | [工具](docs/tools.md) · **21** |
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**按平台：** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **323** · [Windows](docs/environments/windows.md) **64** · [macOS](docs/environments/macos.md) **31** · [Linux](docs/environments/linux.md) **50** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -174,6 +174,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
 | --- | --- | --- | --- | --- |
+| 2026‑10‑18 | [Computer Use MCP (Zavora)](https://github.com/zavora-ai/computer-use-mcp) | 工具 | desktop, macos, windows, linux | MCP server and in-process client for desktop control on macOS, Windows and Linux: window screenshots, OCR, accessibility controls, app scripting, and mouse and keyboard input through a Rust native module. |
 | 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | 数据集 | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
 | 2026‑10‑18 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | 框架 | android | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. |
 | 2026‑10‑18 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | 框架 | unspecified | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. |
@@ -185,7 +186,6 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑18 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | 框架 | web | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. |
 | 2026‑10‑18 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | 框架 | android | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. |
 | 2026‑10‑18 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | 基准 | web, android, cross-platform | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
-| 2026‑10‑18 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | 基准 | web | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. |
 <!-- RECENT:END -->
 
 ## 使用数据

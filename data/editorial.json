@@ -63143,5 +63143,75 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:90b24afa7bb8b2181205",
+    "name": "Holo3.1 4B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo-3.1-4B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "mobile-navigation",
+      "tool-integration"
+    ],
+    "summary": "4B checkpoint of H Company's Holo3.1 family, a vision-language model for web, desktop and mobile computer-use agents with native function calling, built on a dense Qwen3.5 architecture.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo3.1"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo-3.1-4B/raw/8c88265a5a159bfd1492db9243733dd2e6e04a6e/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "notes": "Hub API at revision 8c88265a lists two BF16 safetensors shards (about 5.17B parameters, including the vision encoder) in the dense Qwen3_5ForConditionalGeneration architecture; the repository is not gated. The card is shared by the whole Holo3.1 family (0.8B, 4B, 9B and 35B-A3B) and names web, desktop and mobile without a mobile operating system. Its YAML base_model lists Qwen3.6-35B-A3B and three Qwen3.5 sizes and its prose says the Qwen 3.5 family, so base_model is unset. The card lists quantized releases only for the 35B-A3B size. Benchmark results appear only as images and are not recorded. The card declares Apache-2.0 for the weights.",
+    "details": {
+      "artifact_type": "model-checkpoint",
+      "hub_id": "Hcompany/Holo-3.1-4B",
+      "hub_revision": "8c88265a5a159bfd1492db9243733dd2e6e04a6e",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo-3.1-4B/tree/8c88265a5a159bfd1492db9243733dd2e6e04a6e",
+      "architecture": "Qwen3_5ForConditionalGeneration",
+      "parameter_label": "4B",
+      "listed_weight_files": [
+        "model-00001-of-00002.safetensors",
+        "model-00002-of-00002.safetensors"
+      ]
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.weights"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo-3.1-4B/revision/8c88265a5a159bfd1492db9243733dd2e6e04a6e",
+        "sha256": "50190a160f8c380aabc1bd4bc2738f357b2bb84e7efbee9a82fca403da13a306",
+        "retrieved_at": "2026-10-18T16:02:03Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "059de62841a8ca6c8d2c32f1210ecf58cd8efc8755c2795000d8d87afe49ad5e",
+    "reviewed_at": "2026-10-18T16:02:36Z"
   }
 ]

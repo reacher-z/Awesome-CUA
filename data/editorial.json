@@ -63143,5 +63143,81 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "github:feder-cr/invisible_dots",
+    "name": "invisible_dots",
+    "kind": "agent",
+    "url": "https://github.com/feder-cr/invisible_dots",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "memory",
+      "human-in-the-loop"
+    ],
+    "summary": "Self-hosted agent in which each Dot owns a QEMU Linux VM with a desktop, terminal and anti-detect Firefox that it drives through snapshot, click, type and screenshot tools, with memory, approvals and schedules.",
+    "scope": "core",
+    "verify_terms": [
+      "invisible_dots"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/feder-cr/invisible_dots/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Each Dot's VM runs Xvfb with an XFCE session; the model gets shell execution, file tools, a whole-desktop screenshot and page tools from invisible_playwright_mcp, a patched Firefox whose fingerprint is set in the engine, and it has no mouse or keyboard tools for the desktop itself. The engine is a hard fork of HKUDS nanobot and models are reached through OpenRouter. The README advertises evasion of anti-bot systems and asks users to respect site terms and robots.txt. GitHub reports repository ID 837911756, created 2024-08-04; the former AIHawk job-applier names (Jobs_Applier_AI_Agent_AIHawk, linkedIn_auto_jobs_applier_with_AI, Auto_Jobs_Applier_AIHawk) redirect to it, so its stars and history include that earlier project. Code is MIT except the nanobot fork, which keeps its own MIT notice. Code was read, not run.",
+    "details": {
+      "availability": "Public source with alpha status; VM golden images are published as GitHub release assets",
+      "repository_revision": "ef69f5e19c1b46e41e743234fa5019e39442adcb",
+      "repository_tree_sha": "4b519bafd9d1f61ff37343c31b713dedf8b69c6b"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/feder-cr/invisible_dots/ef69f5e19c1b46e41e743234fa5019e39442adcb/docs/architecture.md",
+        "sha256": "e81ddf05f0b6ad536ce5eb4593dfdd668acd743454816ea17d710ec6c1247903",
+        "retrieved_at": "2026-10-18T11:37:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/feder-cr/invisible_dots/ef69f5e19c1b46e41e743234fa5019e39442adcb/LICENSE",
+        "sha256": "f8e26bc469ae827b30a93daa0a6ce8f12a65036334e700600280bf70f0fbbd9e",
+        "retrieved_at": "2026-10-18T11:37:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/feder-cr/invisible_dots/ef69f5e19c1b46e41e743234fa5019e39442adcb/THIRD_PARTY_NOTICES.md",
+        "sha256": "281812306bc4afe0dc5dc2bd975ecc8f60afc4ca566680620e32ab2d9ae3b2de",
+        "retrieved_at": "2026-10-18T11:37:50Z"
+      }
+    ],
+    "reviewed_sha256": "19737ad214a108c788051ceb201ecb80246096c29315e926299e844fefae9180",
+    "reviewed_at": "2026-10-18T11:38:26Z"
   }
 ]

@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:openbmb/tell_me_more",
+    "url": "https://github.com/OpenBMB/Tell_Me_More",
+    "decision": "out_of_scope",
+    "reason": "The repository releases the Intention-in-Interaction (IN3) benchmark of vague instructions and Mistral-Interact, a Mistral-7B fine-tune that asks users for missing details before an agent such as XAgent starts a task. The interaction is text dialogue with the user, with no GUI, browser or device control, so it is out of scope for a computer-use catalog.",
+    "reviewed_at": "2026-10-18T11:51:29Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/OpenBMB/Tell_Me_More/HEAD/README.md",
+      "sha256": "95a0d43bdf625a6845c8fd2ded35f86dfb2db4cc8ff7fd53da746de82cec5d40",
+      "retrieved_at": "2026-10-18T11:46:13Z"
+    }
   }
 ]

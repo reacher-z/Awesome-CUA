@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a3155db43158302b7967",
+    "url": "https://huggingface.co/datasets/Voxel51/ScreenSpot-Pro",
+    "decision": "alias",
+    "target_id": "url:c79e152e6f7af1a9efed",
+    "reason": "Third-party copy of the indexed ScreenSpot-Pro data: Voxel51/ScreenSpot-Pro repackages the same 1,581 screenshots in FiftyOne format with only the English instructions and target boxes, and credits likaixin/ScreenSpot-Pro."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:62301ca2c50a88013579",
+    "url": "https://huggingface.co/collections/osunlp/webdreamer-67ee17325839c8a02339dbfb",
+    "decision": "alias",
+    "target_id": "github:osu-nlp-group/webdreamer",
+    "reason": "Hugging Face release collection for the indexed WebDreamer project; the WebDreamer README names it as the home of all released training data and models (Dreamer V1 data, Dreamer-7B with its in-domain variants, and Dreamer-72B)."
   }
 ]

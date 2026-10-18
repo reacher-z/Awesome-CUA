@@ -63143,5 +63143,102 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "DSH Mobile",
+    "kind": "agent",
+    "url": "https://github.com/Soodok/Deepseek-Harness-Local-Android",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration"
+    ],
+    "summary": "Android port of DeepSeek Harness that runs its Node.js agent engine in the app sandbox and adds an Accessibility-based executor for reading the screen, tapping, swiping and typing in other apps.",
+    "scope": "adjacent",
+    "aliases": [
+      "Deepseek-harness-Mobile"
+    ],
+    "verify_terms": [
+      "DSH Mobile"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Adjacent: the README presents the app as a port of DeepSeek Harness (deepseek-ai/deepseek-harness, engine pinned to 0.2.0-rc.2) whose agent logic, plugins and WebUI come from upstream, and calls phone control one tool among shell, file and extension tools. The repository supplies the Android runtime (bionic Node.js, keep-alive service, extension center) and the device executor: DshAccessibilityService.kt reads the accessibility tree with OCR fallback and dispatches gestures and text input, engine/AgentBridge.kt exposes screen, tap, gesture, input, launch and loop endpoints to the engine on a token-gated 127.0.0.1:3083 bridge, and engine/LocalLoopExecutor.kt runs model-written JSON action programs locally with pick, act, verify and retry steps. Models are reached through a configured API endpoint. The README's latency and task figures are the author's measurements and were not reproduced. Code was read, not run.",
+    "details": {
+      "availability": "Public source and APK builds attached to GitHub releases",
+      "repository_revision": "710c95b98b44340d828b3e8ddba509b88d5ef4c7"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/710c95b98b44340d828b3e8ddba509b88d5ef4c7/README_EN.md",
+        "sha256": "f8e22625ca96373a5c651c560722fb502a576a4409aff01a016b76882a63125f",
+        "retrieved_at": "2026-10-18T12:33:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/710c95b98b44340d828b3e8ddba509b88d5ef4c7/app/src/main/java/app/dsh/mobile/DshAccessibilityService.kt",
+        "sha256": "f35a043c37a1fdb4d4321ff051ed2280a114efb7150e356085b185aff8196804",
+        "retrieved_at": "2026-10-18T12:33:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/710c95b98b44340d828b3e8ddba509b88d5ef4c7/app/src/main/java/app/dsh/mobile/engine/AgentBridge.kt",
+        "sha256": "580ff47122a52c2e27fd954ea4a94e6f746e0f4e79011a9fb38b9dc16b588f38",
+        "retrieved_at": "2026-10-18T12:33:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/710c95b98b44340d828b3e8ddba509b88d5ef4c7/app/src/main/java/app/dsh/mobile/engine/LocalLoopExecutor.kt",
+        "sha256": "9b8a4b2d6447a29e59ed7784104f8af1910f92a3b42374a0aa3daeb908e18242",
+        "retrieved_at": "2026-10-18T12:33:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/710c95b98b44340d828b3e8ddba509b88d5ef4c7/LICENSE",
+        "sha256": "c573a4642c52750dcbb16b57520a092d11af61035cdd7f0adeef89593df227fb",
+        "retrieved_at": "2026-10-18T12:33:02Z"
+      }
+    ],
+    "reviewed_sha256": "0acc338a01433de569d7f49efb50040cdac0b9453ba50920520e0593f4d1c45b",
+    "reviewed_at": "2026-10-18T12:33:30Z"
   }
 ]

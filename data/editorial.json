@@ -5682,7 +5682,44 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "8682f83d71dd4d44772db3e531f2a9fcb168729211e0cc43493020a0773b0aba",
-    "reviewed_at": "2026-10-16T06:36:05Z"
+    "reviewed_at": "2026-10-16T06:36:05Z",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/587c40fd5a1b79ae7aababac4fc66dda0423e7e4/LICENSE",
+        "sha256": "b8e1287947eea31708da3cd7fba1108c0bf826c5ef1e0bc447be2f10a870a78c",
+        "retrieved_at": "2026-10-18T16:11:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/587c40fd5a1b79ae7aababac4fc66dda0423e7e4/LICENSING.md",
+        "sha256": "4adae4f0ba633b6ddf668cb9e3e1ee492a97e49da8332890490153153decf293",
+        "retrieved_at": "2026-10-18T16:11:08Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "PolyForm-Shield-1.0.0",
+          "url": "https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/587c40fd5a1b79ae7aababac4fc66dda0423e7e4/LICENSE",
+          "retrieved_at": "2026-10-18T16:11:07Z",
+          "basis": "Repository LICENSE text at commit 587c40f is PolyForm Shield 1.0.0; LICENSING.md calls the project source-available and requires a separate commercial license only for competing products. Bundled dependencies keep their own terms."
+        },
+        "reason": "The LICENSE file and LICENSING.md both declare PolyForm Shield 1.0.0 for the code, a source-available license that the catalog's LICENSE-header detector does not recognize. The repository releases no data or weights.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/587c40fd5a1b79ae7aababac4fc66dda0423e7e4/LICENSE",
+          "https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/587c40fd5a1b79ae7aababac4fc66dda0423e7e4/LICENSING.md"
+        ]
+      }
+    }
   },
   {
     "name": "AgentNet",

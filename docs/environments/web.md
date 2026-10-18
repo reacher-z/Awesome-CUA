@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (38)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -170,6 +170,7 @@
 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 | [WebRL](https://github.com/THUDM/WebRL) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | Training pipeline that evolves web tasks from prior attempts and uses an outcome reward model to refine browser policies. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/THUDM/WebRL/HEAD/README.md) |
+| [WebSRC baseline code](https://github.com/X-LANCE/WebSRC-Baseline) | web | [2101.09465](https://arxiv.org/abs/2101.09465) (2021) | code MIT | Baseline pipeline for WebSRC webpage question answering that converts the data to SQuAD-style files and trains BERT or ELECTRA readers on page text, on text with HTML tags, or with added visual features. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-LANCE/WebSRC-Baseline/HEAD/README.md) |
 | [WebVLN research implementation](https://github.com/WebVLN/WebVLN) | web | [2312.15820](https://arxiv.org/abs/2312.15820) (2023) | — | Training and evaluation code for question-guided website navigation that combines visual observations with web-specific HTML information. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WebVLN/WebVLN/HEAD/README.md) |
 | [Workflow-Guided Exploration research code](https://github.com/stanfordnlp/wge) | web | [1802.08802](https://arxiv.org/abs/1802.08802) (2018) | code Apache-2.0 | Research code that learns browser-control policies by constraining exploration with workflows induced from demonstrations, with a Selenium-based MiniWoB environment and experiment harness. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/stanfordnlp/wge/HEAD/README.md) |
 | [WorkForceAgent-R1](https://github.com/night-chen/WorkForceAgent-R1) | web | [2505.22942](https://arxiv.org/abs/2505.22942) (2025) | — | Web-task reward functions, WorkArena data processing and GRPO training configurations for reasoning-oriented language agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/night-chen/WorkForceAgent-R1/HEAD/README.md) |

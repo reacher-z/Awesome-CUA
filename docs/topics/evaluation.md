@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (18)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
 
 ## Benchmarks
 
@@ -146,6 +146,7 @@ All entries in this section: web.
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |
 | [WebAgent-R1](https://github.com/weizhepei/WebAgent-R1) | web | [2505.16421](https://arxiv.org/abs/2505.16421) (2025) | code Apache-2.0 | Environment setup, multi-turn reinforcement-learning and evaluation tooling for browser agents interacting with WebArena. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/weizhepei/WebAgent-R1/HEAD/WebAgent-R1/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
+| [WebSRC baseline code](https://github.com/X-LANCE/WebSRC-Baseline) | web | [2101.09465](https://arxiv.org/abs/2101.09465) (2021) | code MIT | Baseline pipeline for WebSRC webpage question answering that converts the data to SQuAD-style files and trains BERT or ELECTRA readers on page text, on text with HTML tags, or with added visual features. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-LANCE/WebSRC-Baseline/HEAD/README.md) |
 | [WebVLN research implementation](https://github.com/WebVLN/WebVLN) | web | [2312.15820](https://arxiv.org/abs/2312.15820) (2023) | — | Training and evaluation code for question-guided website navigation that combines visual observations with web-specific HTML information. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WebVLN/WebVLN/HEAD/README.md) |
 
 ## Tools

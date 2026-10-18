@@ -4274,8 +4274,72 @@
         "url": "https://export.arxiv.org/api/query?id_list=2406.12814%2C2406.13719%2C2406.14056%2C2406.14250%2C2406.14314%2C2406.18082%2C2406.19263%2C2407.00993%2C2407.01476%2C2407.01489%2C2407.01511%2C2407.01558%2C2407.03037%2C2407.03913%2C2407.04346%2C2407.05291%2C2407.07061%2C2407.08850%2C2407.09018%2C2407.09295%2C2407.10956%2C2407.13032%2C2407.13063%2C2407.15673%2C2407.15711%2C2407.16741%2C2407.17490%2C2407.18901%2C2407.19056%2C2407.20183%2C2408.00203%2C2408.02544%2C2408.06327%2C2408.07199%2C2408.11824%2C2408.15978%2C2409.02453%2C2409.04566%2C2409.07429%2C2409.08264%2C2409.09354%2C2409.10741%2C2409.11295%2C2409.13711%2C2409.14337%2C2409.14818%2C2409.15441%2C2409.15637%2C2409.17140%2C2409.20566&max_results=50",
         "sha256": "b9a83994d8ac36ccdb606a5219511f8bb35ad3948ade4f9f3e28d386221aedfb",
         "retrieved_at": "2026-10-16T06:31:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/showlab/GUI-Narrator/5cb8e6cea361dac854992aa692ef283c1ac48f90/README.md",
+        "sha256": "6cfebb27e4039becb2d45addc171f23f9a94836a6a83c38915846a621603f4f8",
+        "retrieved_at": "2026-10-18T16:15:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/showlab/GUI-Narrator/5cb8e6cea361dac854992aa692ef283c1ac48f90/index.html",
+        "sha256": "3b968fe8ce2f2fd4363c2617626357e719350210ed9dacd270f217632b39dd4c",
+        "retrieved_at": "2026-10-18T16:15:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/FRank62Wu/ShowUI-Narrator/raw/a572967e475a10d3c4eb2917398c8fb3168eea73/README.md",
+        "sha256": "a734cacbeac236a610aad2e9c8dafc8fc9cec4ff01b8490244c0f23c977e5830",
+        "retrieved_at": "2026-10-18T16:15:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/FRank62Wu/Act2Cap_benchmark/raw/dd8416a6f0cd6fed4ec2b1aaf88e954813491e84/README.md",
+        "sha256": "b952c2a6a996a205ef44b5175af6386ad7cfe5b2ebfcbe7618b61b3bc0520f60",
+        "retrieved_at": "2026-10-18T16:15:13Z"
       }
-    ]
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2406.13719",
+        "evidence_url": "https://raw.githubusercontent.com/showlab/GUI-Narrator/5cb8e6cea361dac854992aa692ef283c1ac48f90/README.md"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "apache-2.0",
+          "url": "https://huggingface.co/datasets/FRank62Wu/Act2Cap_benchmark/raw/dd8416a6f0cd6fed4ec2b1aaf88e954813491e84/README.md",
+          "retrieved_at": "2026-10-18T16:15:13Z",
+          "basis": "Card metadata of the publisher's Act2Cap_benchmark Hub dataset (revision dd8416a), which holds data collected from GUI-Action-Narrator; covers the Hub-released benchmark files. Not a code license; the ShowUI-Narrator weights carry their own card license."
+        },
+        "reason": "The README points to Hugging Face for the test benchmark, the linked ShowUI-Narrator model card names FRank62Wu/Act2Cap_benchmark as its dataset, and that dataset card declares apache-2.0. The repository itself has no LICENSE file, so the code license stays unknown.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/FRank62Wu/Act2Cap_benchmark/raw/dd8416a6f0cd6fed4ec2b1aaf88e954813491e84/README.md",
+          "https://huggingface.co/FRank62Wu/ShowUI-Narrator/raw/a572967e475a10d3c4eb2917398c8fb3168eea73/README.md",
+          "https://raw.githubusercontent.com/showlab/GUI-Narrator/5cb8e6cea361dac854992aa692ef283c1ac48f90/README.md"
+        ]
+      }
+    }
   },
   {
     "name": "RoTS",

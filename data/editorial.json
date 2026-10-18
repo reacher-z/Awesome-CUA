@@ -63143,5 +63143,141 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:7ed70b39ac79f97f8a87",
+    "name": "GUI-Perturbed",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/figai/GUI-Perturbed",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Step-level web grounding benchmark that re-renders Mind2Web pages with style, zoom and text-size perturbations and pairs each screenshot with a direct or relational instruction and a target box.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Perturbed"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/README.md"
+    ],
+    "documented_by": [
+      "2604.14262"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:osu-nlp-group/mind2web",
+        "evidence_url": "https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/README.md"
+      }
+    ],
+    "notes": "The card YAML at revision 727c857b lists one eval split of 3,120 examples in four Parquet shards, with screenshot, instruction, gt_bbox, visual_variant, instruction_type, task_id and step_index fields. Hugging Face dataset-viewer statistics show 780 rows for each of four visual variants (labelled original, style, precision and text_shrink; the card calls the first one baseline) and 1,560 rows for each of the direct and relational instruction types, so the card's per-variant sample size of 390 covers one instruction type. The card states that the set is for evaluation, not training, and that the pages come from Mind2Web MHTML archives. eval.yaml names point-in-bbox accuracy. The card declares CC BY 4.0 for the dataset. The linked generation code repository was not inspected, and no rows were downloaded.",
+    "details": {
+      "hub_id": "figai/GUI-Perturbed",
+      "hub_revision": "727c857bcf7cf3b4077773aefd6e3ab8295c0ed7",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/figai/GUI-Perturbed/tree/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7",
+      "benchmark_protocol": {
+        "focus": [
+          "step-level web GUI element localization",
+          "robustness to visual and instruction perturbations"
+        ],
+        "setting": "offline",
+        "observations": [
+          "rendered web-page screenshots",
+          "natural-language instructions"
+        ],
+        "actions": [
+          "predicted target location"
+        ],
+        "evaluation": "eval.yaml specifies point-in-bbox accuracy against the annotated target box; results can be split by visual variant and instruction type. Grounding accuracy does not measure end-to-end task success.",
+        "counts": [
+          {
+            "value": 3120,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "eval split at revision 727c857b",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/README.md"
+          },
+          {
+            "value": 283,
+            "unit": "distinct Mind2Web task IDs",
+            "qualifier": "exact",
+            "population": "eval split",
+            "basis": "computed",
+            "evidence_url": "https://datasets-server.huggingface.co/statistics?dataset=figai/GUI-Perturbed&config=default&split=eval"
+          }
+        ],
+        "notes": "Each example is one screenshot, instruction and target box; four visual variants are crossed with two instruction types. Examples, source tasks and visual variants are different units.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/README.md",
+          "https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/eval.yaml",
+          "https://datasets-server.huggingface.co/statistics?dataset=figai/GUI-Perturbed&config=default&split=eval"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/figai/GUI-Perturbed/revision/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7",
+        "sha256": "55c9358d6269d88f6f2eebc5f74c463096bd417434092bbcfef3b9774b179c23",
+        "retrieved_at": "2026-10-18T15:59:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/eval.yaml",
+        "sha256": "119930290bb21bcceb3f3a2b22d4f738ce5d0eb4531652cb7e7ad0dde348e30a",
+        "retrieved_at": "2026-10-18T15:59:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://datasets-server.huggingface.co/statistics?dataset=figai/GUI-Perturbed&config=default&split=eval",
+        "sha256": "5a23805cf7a6122abf01288f46139bb3c7890306678ec0280e9e6d488adb5908",
+        "retrieved_at": "2026-10-18T15:59:07Z"
+      }
+    ],
+    "read_basis": "Read the pinned dataset card, eval.yaml, Hub API record and the dataset-viewer column statistics for the eval split. No Parquet rows were downloaded.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6105d4c240dd71a698fe63b501aa74c2c2478455dbbd03313abb7ccc81ce237e",
+    "reviewed_at": "2026-10-18T15:59:44Z"
   }
 ]

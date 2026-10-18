@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Adversarial Web Agents](https://github.com/ChenWu98/agent-attack) | web | [2406.12814](https://arxiv.org/abs/2406.12814) (2024) | — | — | Evaluation resources for adversarial attacks on multimodal web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md) |
 | [B-MoCA](https://github.com/jylee425/b-moca) | android | — | [131 task-definition files](https://api.github.com/repos/jylee425/b-moca/git/trees/release/ver.3?recursive=1) · [35 environment configuration rows](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/asset/environments/config/environments_train.csv) | code Apache-2.0 | Mobile control benchmark with varied interface configurations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/readme.md) |
+| [GUI-Perturbed](https://huggingface.co/datasets/figai/GUI-Perturbed) | web | [2604.14262](https://arxiv.org/abs/2604.14262) (2026) | [3,120 examples](https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/README.md) · [283 distinct Mind2Web task IDs](https://datasets-server.huggingface.co/statistics?dataset=figai/GUI-Perturbed&config=default&split=eval) | data cc-by-4.0 | Step-level web grounding benchmark that re-renders Mind2Web pages with style, zoom and text-size perturbations and pairs each screenshot with a direct or relational instruction and a target box. | [✓ 2026‑10‑18](https://huggingface.co/datasets/figai/GUI-Perturbed/raw/727c857bcf7cf3b4077773aefd6e3ab8295c0ed7/README.md) |
 | [GUI-Robust](https://github.com/chessbean1/GUI-Robust) | cross-platform | [2506.14477](https://arxiv.org/abs/2506.14477) (2025) | — | — | Evaluation scripts and linked data for comparing GUI action predictions and task execution under ordinary and anomalous interface conditions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/chessbean1/GUI-Robust/HEAD/README.md) |
 | [GUIHalluBench](https://github.com/ant-research/GUIHalluBench) | cross-platform | — | [1,000 page-annotation entries](https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md) | — | Measures hallucination in UI-element parsing by matching the boxes and descriptions a model lists for 1,000 English and 1,000 Chinese screenshots against human annotations. | [✓ 2026‑10‑16](https://github.com/ant-research/GUIHalluBench) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |

@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:significant-gravitas/auto-gpt",
+    "target_id": "github:significant-gravitas/autogpt",
+    "repository_id": 614765452,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T12:17:54Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/Significant-Gravitas/Auto-GPT",
+        "resolved_url": "https://api.github.com/repositories/614765452",
+        "repository_id": 614765452,
+        "full_name": "Significant-Gravitas/AutoGPT",
+        "html_url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "retrieved_at": "2026-10-18T12:17:15Z",
+        "sha256": "dfc4e852f421a6e386788d0e11e645ceabab0ff5efc364454f1f0ac82ef1a32f"
+      },
+      {
+        "url": "https://api.github.com/repos/Significant-Gravitas/AutoGPT",
+        "resolved_url": "https://api.github.com/repos/Significant-Gravitas/AutoGPT",
+        "repository_id": 614765452,
+        "full_name": "Significant-Gravitas/AutoGPT",
+        "html_url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "retrieved_at": "2026-10-18T12:17:16Z",
+        "sha256": "dfc4e852f421a6e386788d0e11e645ceabab0ff5efc364454f1f0ac82ef1a32f"
+      }
+    ]
   }
 ]

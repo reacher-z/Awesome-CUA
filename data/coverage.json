@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-18T13:06:20.028238+00:00",
-  "total_records": 3175,
-  "curated_records": 1614,
+  "total_records": 3176,
+  "curated_records": 1615,
   "bibliographic_records": 2715,
   "arxiv_active_records": 2702,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 903,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -190,7 +190,7 @@
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
-    "framework": 75,
+    "framework": 76,
     "infrastructure": 14,
     "model": 98,
     "paper": 2697,
@@ -201,13 +201,13 @@
   "curated_by_environment": {
     "android": 300,
     "cross-platform": 197,
-    "desktop": 322,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
-    "linux": 49,
+    "linux": 50,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -250,13 +250,13 @@
     "framework": {
       "android": 20,
       "cross-platform": 7,
-      "desktop": 22,
+      "desktop": 23,
       "harmonyos": 1,
       "ios": 1,
-      "linux": 6,
+      "linux": 7,
       "macos": 1,
       "unspecified": 2,
-      "web": 37,
+      "web": 38,
       "windows": 2
     },
     "infrastructure": {
@@ -344,13 +344,13 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 226,
-      "indexed_resources": 225,
-      "resolved_aliases": 6,
-      "curated": 215,
+      "indexed": 227,
+      "indexed_resources": 226,
+      "resolved_aliases": 7,
+      "curated": 216,
       "excluded": 0,
       "set_aside": 29,
-      "unindexed": 83
+      "unindexed": 82
     },
     {
       "id": "zju-gui",
@@ -460,13 +460,13 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 24,
-      "indexed_resources": 24,
+      "indexed": 25,
+      "indexed_resources": 25,
       "resolved_aliases": 1,
-      "curated": 24,
+      "curated": 25,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 82
+      "unindexed": 81
     },
     {
       "id": "steel-web-archive",
@@ -634,13 +634,13 @@
         "state": "success"
       },
       "discovered": 63,
-      "indexed": 11,
-      "indexed_resources": 11,
-      "resolved_aliases": 0,
-      "curated": 8,
+      "indexed": 12,
+      "indexed_resources": 12,
+      "resolved_aliases": 1,
+      "curated": 9,
       "excluded": 0,
       "set_aside": 2,
-      "unindexed": 50
+      "unindexed": 49
     },
     {
       "id": "yearly-gui",

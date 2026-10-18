@@ -63143,5 +63143,137 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AutoGPT",
+    "kind": "framework",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Agent platform for building block workflows or chatting with AutoPilot, which has browser navigate, act and screenshot tools and can open a streamed E2B Linux desktop; the MIT classic agent adds Playwright browsing.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "AutoGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/HEAD/README.md"
+    ],
+    "notes": "The README presents a hosted, paid AutoGPT Platform and a self-hosted deployment from the same repository, with a visual block builder, AutoPilot chat, a marketplace and integrations with 45+ services; computer interaction is one capability among many, hence adjacent. AutoPilot's browser tools call the external agent-browser CLI on a local Chromium and return accessibility-tree snapshots of interactive elements. Its desktop tool starts XFCE and a VNC stream in the E2B sandbox where its shell runs. The classic/ agent, which its README marks unsupported, has a Playwright component that reads pages, clicks elements, fills forms and takes screenshots. Formerly Significant-Gravitas/Auto-GPT.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "details": {
+      "repository_revision": "06d623e5e04cc96621130bb4bd118465c9e635d8",
+      "repository_tree_sha": "2dcfeff30fbf957a92414358c15ab669f3d14a31",
+      "license_components_note": "The root LICENSE places autogpt_platform/ under the PolyForm Shield License 1.0.0 (autogpt_platform/LICENSE.md) and everything outside it, including classic/, under MIT."
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The repository splits its code license by folder: PolyForm Shield 1.0.0 for autogpt_platform/ and MIT for everything else, so no single repository-wide code license is recorded. GitHub reports NOASSERTION.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/LICENSE",
+          "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/autogpt_platform/LICENSE.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/LICENSE",
+        "sha256": "aafc62ebf01092909ae72131b66f48c89ea7eaf4bd7e916f3f05f7960611799a",
+        "retrieved_at": "2026-10-18T12:16:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/autogpt_platform/LICENSE.md",
+        "sha256": "67530f8e9adfcc5d2e9d72b804500cebb7472ff84c34a6729a80a2a9be901ee6",
+        "retrieved_at": "2026-10-18T12:16:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/autogpt_platform/backend/backend/copilot/tools/agent_browser.py",
+        "sha256": "0d1b2f852f4a2006754075bb2aa906e0fb85cdc5ef27d5c2322cdaad832810f4",
+        "retrieved_at": "2026-10-18T12:16:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/autogpt_platform/backend/backend/copilot/tools/start_desktop.py",
+        "sha256": "21765a32a6d35094195f5fcbebf66cfc4adb89f8498689418a220bff5718e3f3",
+        "retrieved_at": "2026-10-18T12:16:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/autogpt_platform/backend/backend/blocks/desktop/_api.py",
+        "sha256": "016fb4dec28688f4b677fc76d0215b3b413d1407da7923ea0fdfd18f770a2163",
+        "retrieved_at": "2026-10-18T12:16:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/classic/forge/forge/components/web/playwright_browser.py",
+        "sha256": "774ea9db052dc2aea4d997a381bb0d45e891f1771f1bd82615c38c507bed4c8b",
+        "retrieved_at": "2026-10-18T12:16:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/06d623e5e04cc96621130bb4bd118465c9e635d8/classic/README.md",
+        "sha256": "55a2e10268508e9deec0f5763239c8b21ea8ae57149357eb4018faf9e088ce60",
+        "retrieved_at": "2026-10-18T12:16:58Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5e8b890b94d97d55260792c60b4db01c8aeaf9a83e100171c78b444d1e5e598f",
+    "reviewed_at": "2026-10-18T12:17:54Z"
   }
 ]

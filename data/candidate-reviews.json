@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:thu-keg/agentic-reward-modeling",
+    "url": "https://github.com/THU-KEG/Agentic-Reward-Modeling",
+    "decision": "out_of_scope",
+    "reason": "The repository implements RewardAgent, a reward system for language-model text responses that combines a preference reward model with factuality and instruction-following verification, evaluated on RM-Bench, JudgeBench, IFBench, best-of-n search and DPO. Nothing in it operates or evaluates graphical, web or mobile interfaces.",
+    "reviewed_at": "2026-10-18T15:33:47Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/THU-KEG/Agentic-Reward-Modeling/HEAD/README.md",
+      "sha256": "1a106ca25a0ce2099e6dfa889470969d7ec4678bec35eba5c2cf707e4cb92aba",
+      "retrieved_at": "2026-10-18T12:34:08Z"
+    }
   }
 ]

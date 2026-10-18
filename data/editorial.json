@@ -2004,6 +2004,93 @@
     "reviewed_at": "2026-10-16T10:50:15Z",
     "documented_by": [
       "2404.05955"
+    ],
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "web page understanding by multimodal models",
+          "OCR and grounding on web screenshots"
+        ],
+        "setting": "offline",
+        "observations": [
+          "web page screenshot",
+          "question or instruction"
+        ],
+        "actions": [
+          "captions, answers and OCR text",
+          "choice among element or action options"
+        ],
+        "evaluation": "utils/eval_utils.py scores captioning and both OCR tasks with ROUGE-1/2/L F1, WebQA with the best ROUGE-1 F1 over reference answers, and element grounding, action prediction and action grounding by multiple-choice accuracy.",
+        "counts": [
+          {
+            "value": 1536,
+            "unit": "test instances",
+            "qualifier": "exact",
+            "population": "sum of the test splits of the seven task configs in the Hub card metadata at revision 9dace8a",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/visualwebbench/VisualWebBench/raw/9dace8acebf210929bd47256d7ded44439377946/README.md"
+          },
+          {
+            "value": 139,
+            "unit": "websites",
+            "qualifier": "exact",
+            "population": "VisualWebBench as stated in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/HEAD/README.md"
+          },
+          {
+            "value": 7,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "task types stated in the README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/HEAD/README.md"
+          }
+        ],
+        "notes": "Per-config test sizes in the card: action_ground 103, action_prediction 281, element_ground 413, element_ocr 245, heading_ocr 46, web_caption 134 and webqa 314. The README rounds the total to 1.5K instances over 87 sub-domains. Every instance is a QA-style item on a static screenshot; no live browsing is involved.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/HEAD/README.md",
+          "https://huggingface.co/datasets/visualwebbench/VisualWebBench/raw/9dace8acebf210929bd47256d7ded44439377946/README.md",
+          "https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/5840afaa4dcaf994bdbcfb5afa3a2eea65fb7c92/utils/eval_utils.py"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "apache-2.0",
+          "url": "https://huggingface.co/datasets/visualwebbench/VisualWebBench/raw/9dace8acebf210929bd47256d7ded44439377946/README.md",
+          "retrieved_at": "2026-10-18T15:54:42Z",
+          "basis": "Publisher Hub-card metadata for the VisualWebBench dataset; screenshots of third-party websites keep their own terms."
+        },
+        "reason": "The README links visualwebbench/VisualWebBench as the dataset, and its card declares Apache-2.0. The GitHub repository has no license file, so no code license is set.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/visualwebbench/VisualWebBench/raw/9dace8acebf210929bd47256d7ded44439377946/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/datasets/visualwebbench/VisualWebBench/raw/9dace8acebf210929bd47256d7ded44439377946/README.md",
+        "sha256": "4fe84ee60b93d6568313b0526e63993b4ea3fd12408f44dec98c99f41f9ef04a",
+        "retrieved_at": "2026-10-18T15:54:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/VisualWebBench/VisualWebBench/5840afaa4dcaf994bdbcfb5afa3a2eea65fb7c92/utils/eval_utils.py",
+        "sha256": "9038ec786d0e8b3b47ba134b173d60efe2eca9be741c8ea17ff8c8c42ce524a0",
+        "retrieved_at": "2026-10-18T15:54:42Z"
+      }
     ]
   },
   {

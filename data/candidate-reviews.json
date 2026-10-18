@@ -250,5 +250,17 @@
     "decision": "alias",
     "target_id": "arxiv:2406.13264",
     "reason": "NASA ADS abstract page for the arXiv preprint 2406.13264 (WONDERBREAD)."
+  },
+  {
+    "id": "github:google-research/google-research",
+    "url": "https://github.com/google-research/google-research",
+    "decision": "out_of_scope",
+    "reason": "google-research/google-research is Google Research's monorepo of unrelated research code and datasets. Every list that surfaced it links into the android_in_the_wild or android_control folders, which are already indexed as component:google-research/android_in_the_wild and component:google-research/android_control, or shows a star badge. The repository as a whole is not a computer-use resource.",
+    "reviewed_at": "2026-10-18T11:48:13Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/HEAD/README.md",
+      "sha256": "1022d37738b52c672304dbe71038a4a1f0d2cac5de3c9178652873a5698a8674",
+      "retrieved_at": "2026-10-18T11:24:51Z"
+    }
   }
 ]

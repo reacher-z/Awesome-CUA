@@ -63143,5 +63143,139 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Holo1.5 72B",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo1.5-72B",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "reinforcement-learning"
+    ],
+    "summary": "The 72B member of H Company's Holo1.5 series, fine-tuned from Qwen2.5-VL-72B-Instruct for UI element localization and screen question answering on web, desktop and mobile interfaces.",
+    "scope": "core",
+    "verify_terms": [
+      "Holo1.5-72B"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holo1.5-72B/raw/9860b387b56bbdc30785169ac4928de0c0fc0675/README.md"
+    ],
+    "family_url": "https://hcompany.ai/research/models",
+    "publisher_id": "organization:h",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.training_data_note",
+      "details.artifact_type"
+    ],
+    "notes": "The card describes supervised fine-tuning followed by online reinforcement learning (GRPO) on proprietary, synthetic and open-source UI data, with inputs up to 3840 x 2160 pixels. It declares a non-commercial CC BY-NC 4.0 license for the 72B weights, while the 3B and 7B Holo1.5 checkpoints carry different terms, so this declaration is not generalized to the series. The manifest lists 31 Safetensors shards and the Hub reports 73,410,777,344 BF16 parameters. Localization and QA scores on the card are publisher claims and were not reproduced; no weights were loaded.",
+    "details": {
+      "hub_id": "Hcompany/Holo1.5-72B",
+      "hub_revision": "9860b387b56bbdc30785169ac4928de0c0fc0675",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holo1.5-72B/tree/9860b387b56bbdc30785169ac4928de0c0fc0675",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen2.5-VL-72B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "parameter_label": "72B",
+      "listed_weight_files": [
+        "model-00001-of-00031.safetensors",
+        "model-00002-of-00031.safetensors",
+        "model-00003-of-00031.safetensors",
+        "model-00004-of-00031.safetensors",
+        "model-00005-of-00031.safetensors",
+        "model-00006-of-00031.safetensors",
+        "model-00007-of-00031.safetensors",
+        "model-00008-of-00031.safetensors",
+        "model-00009-of-00031.safetensors",
+        "model-00010-of-00031.safetensors",
+        "model-00011-of-00031.safetensors",
+        "model-00012-of-00031.safetensors",
+        "model-00013-of-00031.safetensors",
+        "model-00014-of-00031.safetensors",
+        "model-00015-of-00031.safetensors",
+        "model-00016-of-00031.safetensors",
+        "model-00017-of-00031.safetensors",
+        "model-00018-of-00031.safetensors",
+        "model-00019-of-00031.safetensors",
+        "model-00020-of-00031.safetensors",
+        "model-00021-of-00031.safetensors",
+        "model-00022-of-00031.safetensors",
+        "model-00023-of-00031.safetensors",
+        "model-00024-of-00031.safetensors",
+        "model-00025-of-00031.safetensors",
+        "model-00026-of-00031.safetensors",
+        "model-00027-of-00031.safetensors",
+        "model-00028-of-00031.safetensors",
+        "model-00029-of-00031.safetensors",
+        "model-00030-of-00031.safetensors",
+        "model-00031-of-00031.safetensors"
+      ],
+      "training_data_note": "The card describes proprietary training data for UI understanding and action prediction, mixing open-source datasets, large-scale synthetic data and human-annotated samples; no training data ships in this repository."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holo1.5-72B",
+        "sha256": "29fdc7d785278615785a8286c2971fc3bdb4dee9664bfc4a8d4dccf732f9335e",
+        "retrieved_at": "2026-10-18T16:06:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holo1.5-72B/raw/9860b387b56bbdc30785169ac4928de0c0fc0675/config.json",
+        "sha256": "b0c1c47d5317a857b28f9d5a11a833ba14d38c573db217fced296892c686e6e2",
+        "retrieved_at": "2026-10-18T16:06:30Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://huggingface.co/Hcompany/Holo1.5-72B/raw/9860b387b56bbdc30785169ac4928de0c0fc0675/README.md",
+          "retrieved_at": "2026-10-18T16:06:30Z",
+          "basis": "Publisher model-card declaration for the 72B weights (non-commercial); the Qwen2.5-VL-72B-Instruct base license, code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card declaration for the 72B weights (non-commercial); the Qwen2.5-VL-72B-Instruct base license, code and training-data terms are separate.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holo1.5-72B/raw/9860b387b56bbdc30785169ac4928de0c0fc0675/README.md"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json and Hub API record (file manifest and cardData). No weights were downloaded or run.",
+    "reviewed_sha256": "153747d67809932cf8bd4476741ae1b1421ffb7309a754219fc91ccc8632c3be",
+    "reviewed_at": "2026-10-18T16:06:56Z"
   }
 ]

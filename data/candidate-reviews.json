@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:sugarandgugu/focus",
+    "url": "https://github.com/sugarandgugu/Focus",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API return 404 with no rename redirect, and the owner's public repositories include no Focus repository. The only Wayback captures (March 2025) show a README-only placeholder saying the code would be released soon. The paper it was listed for, arXiv 2503.06470, is indexed."
   }
 ]

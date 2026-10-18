@@ -63143,5 +63143,113 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Salesforce Grounding Dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Salesforce/grounding_dataset",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "GUI grounding set that merges Aria-UI, OmniAct, Widget Caption, UI-Vision and OS-Atlas screenshots into target boxes with action, appearance, function and combined instructions, cited to GTA1.",
+    "scope": "core",
+    "verify_terms": [
+      "Salesforce/grounding_dataset"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/Salesforce/grounding_dataset/raw/0bf2eb71734353da92f137f8b26e27c2f75efcfc/README.md"
+    ],
+    "documented_by": [
+      "2507.05791"
+    ],
+    "notes": "Hub revision 0bf2eb71 lists the card and 75 train Parquet shards; the repository is not gated. The card names desktop, web, mobile and operating-system interfaces without naming a mobile OS. Each row keeps a source-dataset tag and the original caption; the card does not describe how the description, function and combined instruction fields were produced, and no rows were downloaded. The card asks users to cite GTA1 and the five source datasets but does not say which GTA1 checkpoint was trained on this release. No license is declared for the compilation itself.",
+    "details": {
+      "hub_id": "Salesforce/grounding_dataset",
+      "hub_revision": "0bf2eb71734353da92f137f8b26e27c2f75efcfc",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/Salesforce/grounding_dataset/tree/0bf2eb71734353da92f137f8b26e27c2f75efcfc",
+      "dataset_profile": {
+        "supervision": [
+          "instruction-to-bounding-box GUI grounding"
+        ],
+        "modalities": [
+          "GUI screenshots",
+          "bounding boxes",
+          "instructions",
+          "element descriptions"
+        ],
+        "formats": [
+          "Parquet"
+        ],
+        "splits": [
+          "train"
+        ],
+        "counts": [
+          {
+            "value": 70688,
+            "unit": "examples",
+            "qualifier": "exact",
+            "population": "train split at Hub revision 0bf2eb71",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Salesforce/grounding_dataset/raw/0bf2eb71734353da92f137f8b26e27c2f75efcfc/README.md"
+          }
+        ],
+        "notes": "The count is the card's dataset_info num_examples for the train split and was not recounted from the 75 Parquet shards. An example is one screenshot-target pair with its instructions, not a unique screen. Rows are tagged ariaui, omniact, widget_caption, ui_vision or os_altas by source.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Salesforce/grounding_dataset/raw/0bf2eb71734353da92f137f8b26e27c2f75efcfc/README.md",
+          "https://huggingface.co/api/datasets/Salesforce/grounding_dataset/revision/0bf2eb71734353da92f137f8b26e27c2f75efcfc"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.dataset_profile",
+      "licenses.data"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/Salesforce/grounding_dataset/revision/0bf2eb71734353da92f137f8b26e27c2f75efcfc",
+        "sha256": "573d7ee66dbb84e8eef9609b7f1ce3913659521a4895fb92c2731b73d7de82ab",
+        "retrieved_at": "2026-10-18T12:25:55Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "The card declares no license for this compilation. It lists the five source datasets' own licenses (Apache-2.0, MIT, CC BY 4.0), which stay with those sources and are not a grant for this release.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Salesforce/grounding_dataset/raw/0bf2eb71734353da92f137f8b26e27c2f75efcfc/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "503369538fd705e5932f9eaa32b1107874fbb1392ead98c64988d9f1da3c4459",
+    "reviewed_at": "2026-10-18T12:26:53Z"
   }
 ]

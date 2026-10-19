@@ -63143,5 +63143,45 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.22510",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "safety-security"
+    ],
+    "summary": "ClawProBench scores OpenClaw model-plus-runtime configurations from execution traces with a safety gate, using 102 live scenarios across workspace, browser, memory and messaging surfaces and a frozen 68-scenario holdout.",
+    "verify_terms": [
+      "ClawProBench: Trace-Aware Evaluation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.22510v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent agent-runtime benchmark: 12 of the 102 full-profile scenarios exercise OpenClaw's browser surface, while most act on workspace files and other runtime tools. It evaluates 68 configurations on the full profile and 37 on the holdout. The v1 full text names the code repository github.com/suyoumo/ClawProBench. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2608.22510v1",
+        "retrieved_at": "2026-10-19T08:47:22Z",
+        "sha256": "2cc0f73f0be0a37e10856d44fdf4c45cce47f70e651484499f24c56e345ad842",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML introduction, related-work comparison, scenario inventory and Appendix F native-surface diagnostics (Table 34).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b477df292d73612f63c95c046467e89be5d9a89a0bb371ab97c55fce29fbf6ba",
+    "reviewed_at": "2026-10-19T08:47:24Z"
   }
 ]

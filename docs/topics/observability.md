@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-36 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+37 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (34)](#papers)
 
 ## Agents
 
@@ -42,6 +42,7 @@ All entries in this section: web.
 | 2026‑09‑21 | [OSWorld-Pro: Process-based Evaluation for Computer Use Agents](https://arxiv.org/abs/2609.24890) | desktop | Adds annotated intermediate subgoals to computer-use tasks and uses process-oriented evaluation to identify action and progress failures. |
 | 2026‑09‑02 | [Monitoring Web Agents Without Internal Signals: Observable Trajectories and Key-Step Supervision](https://arxiv.org/abs/2609.02057) | web | Predicts web-agent failure risk from observable trajectory prefixes using cross-step behavior and black-box consistency queries. Key-step labels preserve valid early prefixes of failed runs, and evaluation tests early intervention and transfer across website categories. |
 | 2026‑08‑28 | [CURA: Certified Runtime Alarms for Computer-Use Agents](https://arxiv.org/abs/2608.27808) | desktop | Introduces CURA, a telemetry-based runtime monitor that turns computer-use trajectories into sequential failure alarms and can trigger mid-task oversight. Its certificate controls false alarms, while the study separately reports detection performance and limits of retrospective monitoring. |
+| 2026‑08‑23 | [ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts](https://arxiv.org/abs/2608.22510) | web | ClawProBench scores OpenClaw model-plus-runtime configurations from execution traces with a safety gate, using 102 live scenarios across workspace, browser, memory and messaging surfaces and a frozen 68-scenario holdout. |
 | 2026‑07‑30 | [How Benchmarks Mis-Score Computer-Use Agents](https://arxiv.org/abs/2607.28367) | web, desktop | Audits failure-scored computer-use trajectories to distinguish agent errors from broken tasks and evaluator false negatives. It organizes reliability issues across task construction, trajectory evidence, scoring, and reporting, then derives corresponding evaluation design practices. |
 | 2026‑07‑20 | [Sidekick: Designing Communication for Effective Multitasking with Computer Use Agents](https://arxiv.org/abs/2607.17527) | unspecified | Introduces Sidekick, a communication interface that uses ambient status cues, multimodal action summaries, and visual and verbal explanations of reasoning to help people monitor computer-use agents. A user study examines progress awareness, error traceability, and multitasking across background and foreground interaction. |
 | 2026‑07‑16 | [Plover: Steering GUI Agents through Plan-Centric Interaction](https://arxiv.org/abs/2607.15193) | unspecified | Plover exposes GUI-agent plans and replanning as persistent artifacts that users can inspect and edit during execution. Its planner–executor design supports localized correction through plan edits, language guidance and screenshot-grounded interventions, studied through failure repair and workflow scenarios. |

@@ -6301,6 +6301,11 @@
         "type": "component_of",
         "target_id": "github:showlab/showui",
         "evidence_url": "https://huggingface.co/datasets/showlab/ShowUI-desktop-8K/raw/main/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2411.17465",
+        "evidence_url": "https://huggingface.co/datasets/showlab/ShowUI-desktop/raw/0d190dfee8ca2cb24f1a7157f8bdde52845d5348/README.md"
       }
     ],
     "details": {
@@ -6347,6 +6352,16 @@
         "url": "https://huggingface.co/datasets/showlab/ShowUI-desktop-8K/raw/main/README.md",
         "sha256": "577a78efa03cde05141c23033222014094681cb5d04786dbb4a698df8543b3df",
         "retrieved_at": "2026-10-17T02:02:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://huggingface.co/datasets/showlab/ShowUI-desktop/raw/0d190dfee8ca2cb24f1a7157f8bdde52845d5348/README.md",
+        "sha256": "577a78efa03cde05141c23033222014094681cb5d04786dbb4a698df8543b3df",
+        "retrieved_at": "2026-10-19T06:02:31Z"
       }
     ]
   },

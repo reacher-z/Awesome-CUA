@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8c9a0287feace5f75f33",
+    "url": "https://dl.acm.org/doi/10.1145/3637528.3671620",
+    "decision": "alias",
+    "target_id": "arxiv:2404.03648",
+    "reason": "ACM Digital Library landing page for the KDD 2024 edition (DOI 10.1145/3637528.3671620) of the indexed AutoWebGLM paper."
   }
 ]

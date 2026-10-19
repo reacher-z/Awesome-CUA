@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
 
 ## Benchmarks
 
@@ -102,6 +102,7 @@ All entries in this section: unspecified.
 | 2026‑09‑29 | [HybridCUA: Learning to Orchestrate GUI and CLI for Computer-Use Agents](https://arxiv.org/abs/2609.38008) | desktop, windows | Trains computer agents on verified GUI, command-line, and interleaved trajectories to learn when and how to combine interaction modes. |
 | 2026‑09‑28 | [SCOUT: Synergizing Reasoning and Tool-Use for Computer-Use Safety](https://arxiv.org/abs/2609.36201) | unspecified | Introduces SCOUT, a safety verifier that first derives task-specific completion and safety rubrics from a computer-use trajectory, then actively probes the resulting environment for evidence. It evaluates whether these two stages detect harmful consequences that screenshots alone can miss. |
 | 2026‑09‑26 | [CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600) | unspecified | Introduces CUA-SWE, a benchmark and execution environment that combines code changes with graphical interaction and visual inspection of running software. Task-specific tests verify repairs and changes whose required information may be available only through the application interface. |
+| 2026‑09‑25 | [From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks](https://arxiv.org/abs/2609.30887) | android | GUI-Hopper trains Qwen3.5 Android agents to mix taps and swipes with deeplink calls from a device-verified catalog of landing screens. It is evaluated on MobileWorld and on commercial apps in MobileWorld-Real. |
 | 2026‑09‑18 | [MintAct: A Unified Visual Agent for Digital Environments](https://arxiv.org/abs/2609.22083) | cross-platform | MintAct trains a visual-agent family for grounding, navigation and tool use across mobile, desktop and web environments. Its shared infrastructure supports trajectory collection and asynchronous online RL while controlling cross-domain sampling and off-policy drift. |
 | 2026‑09‑18 | [RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000) | desktop, linux, macos, windows, android, web | RecreationWorld gives hybrid agents running reference applications to explore and recreate using native GUI controls and coding tools. Its multi-platform benchmark checks interaction-dependent behavior with programmatic and visual assertions, while trajectory-training transfer is evaluated separately. |
 | 2026‑09‑11 | [AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents](https://arxiv.org/abs/2609.13548) | web | AutoTailor compiles web trajectories into reusable browser-automation APIs, then filters and dynamically revises the capability inventory. WebArena experiments distinguish API-only operation from an agent that can fall back to ordinary reasoning and browser actions. |

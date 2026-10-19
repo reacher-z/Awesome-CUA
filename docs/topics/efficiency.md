@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (141)](#papers)
 
 ## Benchmarks
 
@@ -55,6 +55,7 @@ All entries in this section: desktop.
 | 2026‑09‑26 | [CUA-Sandbox: Efficient Environments for Computer-Use Agent Reinforcement Learning](https://arxiv.org/abs/2609.32750) | web, desktop | Introduces CUA-Sandbox, which separates each rollout’s mutable state from shared initialized software runtimes. State-scoped execution and transactional resets or branches aim to reduce training-environment costs while retaining original interfaces and evaluators. |
 | 2026‑09‑26 | [PastForward: Faster On-Device GUI Agents via Computational Experience Reuse](https://arxiv.org/abs/2609.32166) | android | Introduces PastForward, which reuses earlier output sequences as verified decoding proposals and starts future action computation from predicted GUI transitions. Screen checks determine whether speculative computation and cached model states can be retained. |
 | 2026‑09‑26 | [REBASE: Device-Cloud Experience Coherence for GUI Agents Across App Updates](https://arxiv.org/abs/2609.32130) | unspecified | Introduces REBASE, a device–cloud protocol for repairing cached GUI experience after app updates. It combines cloud replay, device-side step verification, and progressively richer failure reports to produce repairs tied to application versions. |
+| 2026‑09‑25 | [From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks](https://arxiv.org/abs/2609.30887) | android | GUI-Hopper trains Qwen3.5 Android agents to mix taps and swipes with deeplink calls from a device-verified catalog of landing screens. It is evaluated on MobileWorld and on commercial apps in MobileWorld-Real. |
 | 2026‑09‑24 | [Jev-Mobile: Jev as an Executor for Mobile GUI Agents](https://arxiv.org/abs/2609.30186) | android | Separates occasional visual-language planning from frequent lightweight action selection over an accessibility-tree-based action space. |
 | 2026‑09‑21 | [How Many Pixels Is a Digit Worth? Place-Aware Coordinate Entropy for GUI Agent Confidence Estimation](https://arxiv.org/abs/2609.24277) | unspecified | PACE weights coordinate-digit entropy by place value to estimate confidence in GUI clicks from one forward pass. It evaluates correctness ranking and selective accuracy against repeated-sampling alternatives on ScreenSpot-Pro and ScreenSpot-v2. |
 | 2026‑09‑16 | [RankGround: Efficient High-Resolution GUI Grounding via Lightweight Reranker-Guided Crop Selection](https://arxiv.org/abs/2609.18690) | unspecified | RankGround trains a lightweight reranker to select a promising screenshot crop before one VLM localization call. Ranking supervision uses containment and boundary-aware augmentation, with pointwise and listwise training stages. |

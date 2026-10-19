@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -187,6 +187,7 @@
 | 2026‑09‑28 | [Same Tasks, Different Apps: Why Mobile GUI Agents Fail to Generalize?](https://arxiv.org/abs/2609.34139) | android | Introduces AnyAppBench, a live Android benchmark that holds user goals fixed while changing the application used to achieve them. It combines category-controlled task pairs with failure annotations to distinguish task understanding from application-specific execution skill. |
 | 2026‑09‑26 | [PastForward: Faster On-Device GUI Agents via Computational Experience Reuse](https://arxiv.org/abs/2609.32166) | android | Introduces PastForward, which reuses earlier output sequences as verified decoding proposals and starts future action computation from predicted GUI transitions. Screen checks determine whether speculative computation and cached model states can be retained. |
 | 2026‑09‑26 | [The GUI Is Not the State: Diagnosing State Aliasing in GUI World Models](https://arxiv.org/abs/2609.32679) | android | Introduces StateAliasBench to isolate GUI world-model ambiguities in which matching visible screens and actions can lead to different futures. It augments frozen world models with structured state recovered from interaction history and evaluates the effect on prediction and agent execution. |
+| 2026‑09‑25 | [From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks](https://arxiv.org/abs/2609.30887) | android | GUI-Hopper trains Qwen3.5 Android agents to mix taps and swipes with deeplink calls from a device-verified catalog of landing screens. It is evaluated on MobileWorld and on commercial apps in MobileWorld-Real. |
 | 2026‑09‑24 | [Jev-Mobile: Jev as an Executor for Mobile GUI Agents](https://arxiv.org/abs/2609.30186) | android | Separates occasional visual-language planning from frequent lightweight action selection over an accessibility-tree-based action space. |
 | 2026‑09‑23 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) | android | GUI-SD-v2 extends on-policy self-distillation from grounding to multi-turn GUI interaction. It first strengthens responses to privileged guidance, then selectively distills step-specific reasoning and memory support for later actions. |
 | 2026‑09‑18 | [RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000) | desktop, linux, macos, windows, android, web | RecreationWorld gives hybrid agents running reference applications to explore and recreate using native GUI controls and coding tools. Its multi-platform benchmark checks interaction-dependent behavior with programmatic and visual assertions, while trajectory-training transfer is evaluated separately. |

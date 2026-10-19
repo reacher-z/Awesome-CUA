@@ -63143,5 +63143,52 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AutoBrowser",
+    "kind": "product",
+    "url": "https://chromewebstore.google.com/detail/autobrowser/lebgieachadpombahcacicmebckokcjl",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Chrome side-panel extension that runs a browser-use-style web agent: it indexes a tab's interactive elements and has a user-configured OpenAI-compatible model open tabs, click, type and press keys.",
+    "scope": "core",
+    "verify_terms": [
+      "AutoBrowser"
+    ],
+    "notes": "The Chrome Web Store listing names browser-use as its inspiration, shows version 1.1.1 updated February 27, 2025, 38 users and no ratings, and says the developer has not identified as a trader; it links no website or source repository. The inspected version 1.1.1 package has a side panel where the user enters a Base URL, API key and model ID for an OpenAI-compatible chat API. The agent numbers the page's interactive DOM elements and calls four actions (open a new tab, click an element by index, type into an element by index, press a key), which bundled Puppeteer executes through the chrome.debugger protocol. No image input to the model was found in the package. The awesome-web-agents list describes the extension as using Claude Computer Use; the inspected version does not show that. Reliability was not tested.",
+    "details": {
+      "availability": "Chrome Web Store extension; no source repository is published"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://clients2.google.com/service/update2/crx?response=redirect&prodversion=128.0&acceptformat=crx2,crx3&x=id%3Dlebgieachadpombahcacicmebckokcjl%26uc",
+        "sha256": "ea2c0498b2b7b87b619a4cf8737127e8cbbb239ac4a7148695ddb0ac51ffd733",
+        "retrieved_at": "2026-10-19T06:12:08Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7b37717ce632428036d782bb96c06f3600ee31bf3d2a2fb7bbb749ddafe99f9e",
+    "reviewed_at": "2026-10-19T06:16:11Z"
   }
 ]

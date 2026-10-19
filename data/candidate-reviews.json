@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2591f363415c7d8cfe91",
+    "url": "https://groundcua.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2511.07332",
+    "reason": "Project website for the indexed GroundCUA paper; it links arXiv 2511.07332 with its code, dataset and GroundNext model."
   }
 ]

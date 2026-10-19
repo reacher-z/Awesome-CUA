@@ -63143,5 +63143,38 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SynChain: Inducing Computer-Use Agent Systems to Construct Their Own Attack Chains",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.06862",
+    "summary": "Introduces SynChain, a fine-tuning attack that leads skill-based agents to write poisoned yet benign-looking skills and memory that reactivate later, tested on 30 CuaChain task chains in OpenClaw, Codex and Claude Code.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "memory"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "SynChain: Inducing Computer-Use Agent Systems"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.06862v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "397d081280dd5032daf07a377575bb51153744afa81e2b033f21c49a0f6104d5",
+    "reviewed_at": "2026-10-19T08:46:31Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent: the paper calls skill-based agent systems computer-use agents, but its evaluated agents (OpenClaw, Codex and Claude Code) work through terminals, files and persistent skill and memory artifacts; it reports no graphical-interface tasks. CuaChain pairs 30 benign task chains with three attack objectives (privacy leakage, privilege tampering, unauthorized write), and defenses include prompt sandwiching, skill vetting and GuardAgent. Reviewed against the v1 abstract and HTML full text; results were not independently reproduced."
   }
 ]

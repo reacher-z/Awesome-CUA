@@ -63143,5 +63143,94 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Ace",
+    "kind": "product",
+    "url": "https://generalagents.com/ace",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "imitation-learning"
+    ],
+    "summary": "General Agents' desktop autopilot, trained on recorded expert behavior, that predicts clicks, keystrokes and other actions from screenshots; its API client ships a macOS controller that executes them.",
+    "scope": "core",
+    "verify_terms": [
+      "Introducing Ace",
+      "computer autopilot"
+    ],
+    "aliases": [
+      "General Agents Ace"
+    ],
+    "notes": "The Ace page describes a computer autopilot that uses the mouse and keyboard on the user's desktop, says it was trained by software specialists and domain experts on over a million tasks, and charts click-prediction accuracy for ace-control-medium and ace-control-small against Operator, Claude 3.7 Sonnet, UI-TARS-72B-SFT and other models, plus action latency; these are publisher figures and were not reproduced. The About page says Ace learns from experts' screen recordings with mouse and keyboard logs, and that General Agents is developing video-language-action models. The official Python client (generalagents-python 0.1.1 at commit d36f6a8) posts a WebP screenshot, the instruction and recent actions to /v1/control/predict on api.generalagents.com; its macOS Computer class captures the screen with screencapture and performs clicks, drags, scrolls, key presses and typing through pyautogui. The client's Apache-2.0 code license does not cover the hosted models. At review time api.generalagents.com and docs.generalagents.com did not resolve in DNS, and the reviewed pages give no pricing, download or sign-up path, so current availability is unknown.",
+    "details": {
+      "pricing_url": null,
+      "availability": "Hosted models reached through an API; the API and documentation hosts did not resolve at review time, and no pricing or sign-up path is published."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "topics"
+        ],
+        "url": "https://generalagents.com/about",
+        "sha256": "d1025a19c3e0ca083dea325fb1025046e004d5588167b557039c594ee9bdd661",
+        "retrieved_at": "2026-10-19T06:24:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/generalagents/generalagents-python/d36f6a858685fb1d7842b6f05c8af501130f8efc/README.md",
+        "sha256": "4e48a9a8621540dfac3abc14bc889e633e8c1f61ba1907153bd91f7f19d97dbc",
+        "retrieved_at": "2026-10-19T06:24:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/generalagents/generalagents-python/d36f6a858685fb1d7842b6f05c8af501130f8efc/src/generalagents/agent.py",
+        "sha256": "7c1b9d4ba8723d83bcdd7f3193cc145f32f8244ad2e43d14ca32bb60b79a667d",
+        "retrieved_at": "2026-10-19T06:24:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/generalagents/generalagents-python/d36f6a858685fb1d7842b6f05c8af501130f8efc/src/generalagents/macos/computer.py",
+        "sha256": "154bf2204a1a519915fd0fb36053a3dfc9d58166d16e5e441d2e720e1954499d",
+        "retrieved_at": "2026-10-19T06:24:05Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "adecc8e6c94df3363de75630191eaed47ee82dff7ba675540b1a710c50a38de8",
+    "reviewed_at": "2026-10-19T06:24:30Z"
   }
 ]

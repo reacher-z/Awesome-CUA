@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (2)](#products) · [Papers (244)](#papers)
 
 ## Benchmarks
 
@@ -165,11 +165,10 @@
 
 ## Products
 
-All entries in this section: web.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [AgentQL](https://www.agentql.com/) | — | Natural-language querying and interaction tools for web interfaces. | [✓ 2026‑10‑16](https://www.agentql.com/) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Ace](https://generalagents.com/ace) | — | desktop, macos | General Agents' desktop autopilot, trained on recorded expert behavior, that predicts clicks, keystrokes and other actions from screenshots; its API client ships a macOS controller that executes them. | [✓ 2026‑10‑19](https://generalagents.com/ace) |
+| [AgentQL](https://www.agentql.com/) | — | web | Natural-language querying and interaction tools for web interfaces. | [✓ 2026‑10‑16](https://www.agentql.com/) |
 
 ## Papers
 

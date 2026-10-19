@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:16e3d137699cea261175",
+    "url": "https://openreview.net/forum?id=IgTUGrZfMr",
+    "decision": "alias",
+    "target_id": "arxiv:2603.24440",
+    "reason": "OpenReview page of the ICLR 2026 Workshop LLA poster edition of the indexed CUA-Suite paper; same title and authors."
   }
 ]

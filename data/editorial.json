@@ -63143,5 +63143,42 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MemHarness: Memory Is Reconstructed, Not Replayed",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.28272",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "reinforcement-learning"
+    ],
+    "scope": "adjacent",
+    "summary": "Introduces MemHarness, in which a GRPO-trained policy critiques and reconstructs retrieved past experiences against the current state before acting, instead of replaying them verbatim; evaluated on ALFWorld and WebShop.",
+    "verify_terms": [
+      "MemHarness: Memory Is Reconstructed"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.28272v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent agent-memory method. Its evaluations use ALFWorld, a text-based household environment, and WebShop, a simulated shopping website that is its only web environment. The v1 full text links github.com/KnowledgeXLab/MemHarness. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.28272v1",
+        "sha256": "135439263dd63cf76255c8e9cc5a89267d0ac5acfc3d0215945b7b966cafa75f",
+        "retrieved_at": "2026-10-19T08:36:37Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for its benchmarks (ALFWorld and WebShop only) and code link. No code execution or result reproduction.",
+    "reviewed_sha256": "eee9d8b8db69905a43f9ff5cbddc9e0788579d8731bf9ff08d58d620df58c0b3",
+    "reviewed_at": "2026-10-19T08:47:53Z"
   }
 ]

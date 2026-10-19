@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (181)](#papers)
 
 ## Benchmarks
 
@@ -129,6 +129,7 @@ All entries in this section: cross-platform.
 | 2026‑08‑04 | [Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents](https://arxiv.org/abs/2608.03327) | desktop | This study separates tool-adoption behavior from task competence in hybrid GUI–MCP agents. It tests tool-use incentives and screenshot-history compression, showing why changed action preferences alone need not improve held-out accuracy. |
 | 2026‑08‑03 | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | desktop, web | Qwen-CUA operates through screenshots and keyboard/mouse events while compressing older visual history into reusable context blocks. Its report combines verifiable task generation, trajectory-based training and separate browser and Bash-augmented studies. |
 | 2026‑07‑30 | [Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale](https://arxiv.org/abs/2607.28074) | web | Introduces Echoverse, which compiles specifications into stateful applications with database-grounded graders and uses rollouts to improve both the environments and agent policies. It examines behavioral depth, targeted interface practice, and environment repair as sources of training value. |
+| 2026‑07‑30 | [MemHarness: Memory Is Reconstructed, Not Replayed](https://arxiv.org/abs/2607.28272) | web | Introduces MemHarness, in which a GRPO-trained policy critiques and reconstructs retrieved past experiences against the current state before acting, instead of replaying them verbatim; evaluated on ALFWorld and WebShop. |
 | 2026‑07‑30 | [Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents](https://arxiv.org/abs/2607.28227) | cross-platform, web, desktop | Describes a foundation GUI agent with combined GUI and command-line actions, large-scale interaction infrastructure, and iterative environment and task generation. |
 | 2026‑07‑23 | [OpenForgeRL: Train Harness-native Agents in Any Environment](https://arxiv.org/abs/2607.21557) | web | OpenForgeRL connects stateful agent harnesses to reinforcement-learning infrastructure through a model-call recording proxy and isolated rollout containers. Its validation includes browser and computer-use agents, alongside tool-oriented agents, and examines how harness choice affects learned reliability. |
 | 2026‑07‑14 | [A Learning-Rate-Gated Failure of GRPO in a Small Language and Vision-Language Model Web Agent: A Controlled Null and Its Mechanism](https://arxiv.org/abs/2607.12640) | web | Studies a controlled setting where GRPO fails to improve a strong small web agent and can reduce text-track performance. Matched reachable-reward tasks and component grafting distinguish limited optimization headroom from learning-rate-dependent failure mechanisms. |

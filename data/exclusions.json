@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2608.14427",
+    "name": "Large-scale workflow placement in serverless computing using integer nonlinear programming",
+    "url": "https://arxiv.org/abs/2608.14427",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract formulates the placement of serverless workflows across cloud and edge nodes as an integer nonlinear program with a decomposition strategy that reduces cost and runtime. This distributed-systems optimization is unrelated to agents that operate computer interfaces.",
+    "reviewed_at": "2026-10-19T08:44:03Z",
+    "metadata_fingerprint": "a14f83e97bcdb4df28313c40c2351fe3f420f05fdeb54abec4d6150d5421cc68",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "13d3fb5811d203f2e6b80eb45d30ebc0b3cfefd88e2034ffa3b1b80687bef285",
+      "retrieved_at": "2026-10-16T06:36:32Z"
+    }
   }
 ]

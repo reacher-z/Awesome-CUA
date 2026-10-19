@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0b9babde61a69790374e",
+    "url": "https://manus.bot",
+    "decision": "not_a_resource",
+    "reason": "Dead link: manus.bot has no A, AAAA or CNAME record (its Route 53 zone answers only SOA and NS, so the host does not resolve), and the Wayback CDX query is empty. The listing names Manus, which is indexed at manus.im."
   }
 ]

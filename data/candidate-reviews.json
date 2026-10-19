@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2bbed6b1f560dd56023b",
+    "url": "https://bmz-q-q.github.io/MirrorGuard",
+    "decision": "alias",
+    "target_id": "arxiv:2601.12822",
+    "reason": "Former project website for the indexed MirrorGuard paper. The address now returns 404, and the same page is served at bmz-q-q.github.io/Mirror-Guard/."
   }
 ]

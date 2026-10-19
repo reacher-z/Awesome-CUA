@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f726fcd4910d9b8cb02b",
+    "url": "https://cmu-l3.github.io/gym-anything",
+    "decision": "alias",
+    "target_id": "arxiv:2604.06126",
+    "reason": "Project website for the indexed Gym-Anything paper; it links arxiv.org/abs/2604.06126, the cmu-l3/gym-anything code and its CUA-World benchmark folder."
   }
 ]

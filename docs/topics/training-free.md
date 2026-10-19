@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-30 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)
+**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (29)](#papers)
 
 ## Agents
 
@@ -28,6 +28,7 @@ All entries in this section: web.
 | --- | --- | --- | --- |
 | 2026‑09‑27 | [Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents](https://arxiv.org/abs/2609.33304) | unspecified | Introduces ExpActivator, which matches the current GUI state to relevant historical states before supplying past actions as guidance. A separate activation rule decides whether a recurring user intent is warranted by the current time and situation or should be withheld. |
 | 2026‑09‑15 | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) | android, desktop | EvoSkill-GUI revises reusable skill files from execution feedback through an executor–critic loop. It studies how training-free updates to localization, recovery and procedure information help subsequent mobile and desktop tasks. |
+| 2026‑09‑14 | [RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments](https://arxiv.org/abs/2609.15364) | desktop, linux | Introduces RSIAgent, a training-free framework whose curriculum, actor and verifier agents explore a new software environment broad-then-deep and freeze the learned memory for reuse, evaluated on OSWorld-v2 and ALE. |
 | 2026‑09‑09 | [TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents](https://arxiv.org/abs/2609.10297) | unspecified | TRACE orders screenshot evidence for monotonic visual-token reduction using layout priors, instruction relevance and feature novelty. Spatial token reserves and incremental KV contraction aim to preserve useful evidence for future GUI targets without repeatedly encoding retired frames. |
 | 2026‑09‑04 | [From Interaction Traces to Persistent Skills: Online Evolution for Computer-Use Agents](https://arxiv.org/abs/2609.04869) | desktop | An online skill-evolution framework turns GUI interaction traces and evaluator feedback into a versioned library of reusable procedures without updating model parameters. Controlled OSWorld comparisons examine both the benefits of shared procedural memory and its domain-dependent instability under repeated revision. |
 | 2026‑08‑26 | [LocalLSTC: A Long Short-Term Control Architecture for Locally Deployed GUI Agents](https://arxiv.org/abs/2608.25777) | desktop, windows | Introduces LocalLSTC, a training-free control architecture that maintains persistent task state and uses it to form short execution commitments. Outcomes feed back into that state for progress checks, recovery, and termination in locally deployed desktop agents. |

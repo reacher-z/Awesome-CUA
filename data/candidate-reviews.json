@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0facf7a16e830a4f6c28",
+    "url": "https://timewarp-web.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2603.04949",
+    "reason": "Project website for the indexed TimeWarp web-agent benchmark paper."
   }
 ]

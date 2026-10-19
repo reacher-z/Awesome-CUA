@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:33ef81b5c8f3ebc310d5",
+    "url": "https://showlab.github.io/videogui",
+    "decision": "alias",
+    "target_id": "github:showlab/videogui",
+    "reason": "Project website for the indexed VideoGUI benchmark repository, which sets it as its homepage; the page also presents the VideoGUI paper (arXiv 2406.10227)."
   }
 ]

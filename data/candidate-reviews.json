@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0f586b6ae86261d12585",
+    "url": "https://dl.acm.org/doi/10.1145/3716628",
+    "decision": "out_of_scope",
+    "reason": "This ACM Computing Surveys article (arXiv 2406.02630) reviews security threats to AI agents in general, grouped into input, internal execution, environment and external-entity gaps. Its full text does not discuss GUI, browser, mobile or computer-use agents; web pages appear only as an indirect prompt-injection channel.",
+    "reviewed_at": "2026-10-19T06:35:14Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1145/3716628",
+      "sha256": "47409204a12865e7dfe84cbc88aa38cdd8e17ba17ecd584ca1c93965c66f1191",
+      "retrieved_at": "2026-10-19T06:09:50Z"
+    }
   }
 ]

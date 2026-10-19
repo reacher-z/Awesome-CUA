@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f5c8f3c346ef688c8d10",
+    "url": "https://please.com",
+    "decision": "not_a_resource",
+    "reason": "Domain-sale page (\"please.com | Available for acquisition\") with no product behind it. Wayback captures from February 2024 to January 2026 show only for-sale pages, GoDaddy for-sale redirects or a parked placeholder, not the MultiOn or Please AI agent that the source names."
   }
 ]

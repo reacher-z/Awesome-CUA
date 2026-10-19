@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2227,6 +2227,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2607.03726%2C2607.05120%2C2607.05465%2C2607.05743%2C2607.06008%2C2607.06595%2C2607.07403%2C2607.07744%2C2607.08252%2C2607.08964%2C2607.10455%2C2607.10608%2C2607.12406%2C2607.12756%2C2607.13085%2C2607.13594%2C2607.13884%2C2607.13988%2C2607.15899%2C2607.16352%2C2607.16636%2C2607.16900%2C2607.17044%2C2607.20064%2C2607.20121%2C2607.21522%2C2607.22738%2C2607.23722%2C2607.24720%2C2607.26300%2C2607.26769%2C2607.27881%2C2607.28229%2C2607.28272%2C2607.28430%2C2608.00548%2C2608.02163%2C2608.03223%2C2608.03451%2C2608.03499%2C2608.05013%2C2608.05430%2C2608.06811%2C2608.07873%2C2608.09268%2C2608.10357%2C2608.10669%2C2608.11274%2C2608.11434%2C2608.15089&max_results=50",
         "sha256": "5128028eea81e3ae80715cb038513012598c0c81a7cbfe8c0d4d6adb6c00e518",
         "retrieved_at": "2026-10-17T12:31:32Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2608.16211",
+      "name": "BaT: Towards Self-Evolving Medical Research Agent with Stage Rubrics",
+      "url": "https://arxiv.org/abs/2608.16211",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents Benchmark-as-Teacher, a stage-rubric curriculum and GRPO post-training system for medical-imaging research agents that produce code and reports, evaluated on AutoMedBench-Lite. These sandboxed research-workflow agents do not operate GUIs, browsers or devices, so the work is outside the computer-use scope.",
+      "reviewed_at": "2026-10-19T08:42:52Z",
+      "metadata_fingerprint": "92664e856cd3494cea9662202a54fb167d3de839280ef47315f861b927b1bf0c",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2608.16211%2C2608.16391%2C2608.17067%2C2608.17975%2C2608.19741%2C2608.21500%2C2608.22301%2C2608.22510%2C2608.23035%2C2608.23320%2C2608.26238%2C2608.26546%2C2608.26991%2C2608.27260%2C2608.29814%2C2608.31076%2C2609.02292%2C2609.04173%2C2609.04298%2C2609.05776%2C2609.06059%2C2609.07529%2C2609.08149%2C2609.08418%2C2609.09187%2C2609.11561%2C2609.12533%2C2609.15096%2C2609.15544%2C2609.20732%2C2609.21293%2C2609.23986%2C2609.24971%2C2609.24997%2C2609.27455%2C2609.29647%2C2609.29964%2C2609.30798%2C2609.32835%2C2609.34428%2C2609.35002%2C2609.35232%2C2609.35394%2C2609.35581%2C2609.36071%2C2609.36352%2C2609.36777%2C2609.37017%2C2609.38923%2C2609.39222&max_results=50",
+        "sha256": "6499b4f4917eec0765d16d6e26a08d7edc5146a30753b19cf8218517656bb070",
+        "retrieved_at": "2026-10-17T12:31:35Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

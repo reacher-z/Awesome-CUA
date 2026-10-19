@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2308,6 +2308,23 @@
       "reason": "The abstract studies Python-mediated control of robot primitives and VLA policies on robotic manipulation benchmarks. Its code-execution mechanism serves physical robot actions, not computer-interface tasks.",
       "reviewed_at": "2026-10-17T14:29:24.824538+00:00",
       "metadata_fingerprint": "486bb662bae6ad0be899d32508bce7f7d96a148ab375f750c1f3cdd45c86c218",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
+        "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
+        "retrieved_at": "2026-10-17T12:31:39Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2610.18067",
+      "name": "WorkRover: Scaling Long-Horizon Cowork Agent Training Via Recursive Environment Evolution",
+      "url": "https://arxiv.org/abs/2610.18067",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents WorkRover, which builds and repairs aligned work contexts, tasks and verifiers for training long-horizon cowork agents with GRPO and turn-level credit assignment, evaluated on JobBench, OfficeQA Pro and GDPval v2. Its agents work through files, skills and MCP tool interfaces, and the paper describes no screenshot, GUI or browser interaction, so this file- and tool-based agent training work is outside the computer-use scope.",
+      "reviewed_at": "2026-10-19T08:44:02Z",
+      "metadata_fingerprint": "6d0e2a670d51aa67a8cbe3f19c23f51df798d0e9c05151e902c3c1e8549bf2a8",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
         "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",

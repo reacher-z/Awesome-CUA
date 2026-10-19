@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2609.04298",
+    "name": "Harbor Adapters and Harbor-Index: Infrastructure and a Curated Meta-Dataset for Large-Scale Agentic Evaluation",
+    "url": "https://arxiv.org/abs/2609.04298",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "Harbor Adapters ports more than 80 agentic benchmarks, mostly coding, reasoning, science and tool-use suites, into one evaluation framework, runs 8 models with the bash-only Terminus-2 and native coding-agent harnesses on 54 of them, and distils the 82-task Harbor-Index. An OSWorld adapter appears only among those left out of the experiments, so the paper has no substantive GUI, browser or device component and is outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T08:43:27Z",
+    "metadata_fingerprint": "582594fad6056e124cdaa35916a941a4cb52a91220ee811cce9457d8b883a597",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2608.16211%2C2608.16391%2C2608.17067%2C2608.17975%2C2608.19741%2C2608.21500%2C2608.22301%2C2608.22510%2C2608.23035%2C2608.23320%2C2608.26238%2C2608.26546%2C2608.26991%2C2608.27260%2C2608.29814%2C2608.31076%2C2609.02292%2C2609.04173%2C2609.04298%2C2609.05776%2C2609.06059%2C2609.07529%2C2609.08149%2C2609.08418%2C2609.09187%2C2609.11561%2C2609.12533%2C2609.15096%2C2609.15544%2C2609.20732%2C2609.21293%2C2609.23986%2C2609.24971%2C2609.24997%2C2609.27455%2C2609.29647%2C2609.29964%2C2609.30798%2C2609.32835%2C2609.34428%2C2609.35002%2C2609.35232%2C2609.35394%2C2609.35581%2C2609.36071%2C2609.36352%2C2609.36777%2C2609.37017%2C2609.38923%2C2609.39222&max_results=50",
+      "sha256": "6499b4f4917eec0765d16d6e26a08d7edc5146a30753b19cf8218517656bb070",
+      "retrieved_at": "2026-10-17T12:31:35Z"
+    }
   }
 ]

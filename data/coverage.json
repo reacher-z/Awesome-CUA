@@ -1,17 +1,17 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
+  "as_of_utc": "2026-10-19T07:53:57Z",
   "total_records": 3178,
   "curated_records": 1614,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
-  "publication_metadata_records": 77,
+  "publication_metadata_records": 78,
   "arxiv_archive_records": 2841,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -1935,13 +1935,13 @@
         "state": "success"
       },
       "discovered": 496,
-      "indexed": 451,
-      "indexed_resources": 451,
-      "resolved_aliases": 56,
-      "curated": 385,
+      "indexed": 452,
+      "indexed_resources": 452,
+      "resolved_aliases": 57,
+      "curated": 386,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 45
+      "unindexed": 44
     }
   ],
   "primary_search": {

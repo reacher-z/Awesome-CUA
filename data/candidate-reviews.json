@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ee4ab0ba1723ccd0da95",
+    "url": "https://paperswithcode.com/dataset/automotiveui-bench-4k",
+    "decision": "alias",
+    "target_id": "url:e80e9cf4f565f9ab2abf",
+    "reason": "Former Papers with Code page of the AutomotiveUI-Bench-4K dataset, indexed at its Hugging Face release; the URL now redirects to Hugging Face trending papers."
   }
 ]

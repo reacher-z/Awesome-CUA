@@ -63143,5 +63143,138 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "AutomotiveUI-Bench-4K",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "screen-understanding",
+      "industry"
+    ],
+    "summary": "Offline test set of 998 photos and screenshots of in-vehicle infotainment screens from 15 brands, with 4,208 English annotations for locating UI elements and judging expected results as passed or failed.",
+    "scope": "core",
+    "verify_terms": [
+      "AutomotiveUI-Bench-4K"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md"
+    ],
+    "notes": "Sparks Solutions publishes one ungated test split of 22 Parquet shards at revision d760810c. The card describes mostly photographs of in-vehicle infotainment displays plus some direct screenshots such as Android Auto; its per-brand image counts cover 13 car brands, Apple CarPlay and Google Android Auto and sum to 998. No catalog platform facet fits infotainment systems, so the environment is unspecified. Each annotation pairs a bounding box with either an imperative test action or an expected-result statement labeled passed or failed; UI text is German or English and annotations are English. The card's example code runs the publisher's ELAM-7B model, and its results table is publisher-reported. The card cites arXiv 2505.05895 (Ernhofer et al., 2025). CC-BY-4.0 is the card's data declaration.",
+    "details": {
+      "availability": "Ungated test split of 22 Parquet shards on the Hub; the card includes example inference and scoring code.",
+      "hub_id": "sparks-solutions/AutomotiveUI-Bench-4K",
+      "hub_revision": "d760810c47bed006d88ee70dad7248056fdec223",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/tree/d760810c47bed006d88ee70dad7248056fdec223",
+      "benchmark_protocol": {
+        "focus": [
+          "grounding infotainment UI elements from test-action commands",
+          "judging expected-result statements as passed or failed"
+        ],
+        "setting": "offline",
+        "observations": [
+          "photographs and screenshots of in-vehicle infotainment displays",
+          "English test-action or expected-result text"
+        ],
+        "actions": [
+          "point or bounding box for the referenced UI element",
+          "passed or failed verdict for expected results"
+        ],
+        "evaluation": "The card's scoring script counts a grounding hit when the predicted point, or the center of a predicted box, lies inside the annotated box, and scores expected-result verdicts against the passed or failed labels, overall and by UI language.",
+        "counts": [
+          {
+            "value": 4208,
+            "unit": "annotations",
+            "qualifier": "exact",
+            "population": "test split, the only split, at revision d760810c",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md"
+          },
+          {
+            "value": 998,
+            "unit": "images",
+            "qualifier": "exact",
+            "population": "images in the release",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md"
+          },
+          {
+            "value": 2269,
+            "unit": "annotations",
+            "qualifier": "exact",
+            "population": "Test Action rows in the test split, from the Hub dataset viewer's column statistics",
+            "basis": "computed",
+            "evidence_url": "https://datasets-server.huggingface.co/statistics?dataset=sparks-solutions/AutomotiveUI-Bench-4K&config=default&split=test"
+          },
+          {
+            "value": 1939,
+            "unit": "annotations",
+            "qualifier": "exact",
+            "population": "Expected Result rows in the test split (1,375 passed, 564 failed), from the Hub dataset viewer's column statistics",
+            "basis": "computed",
+            "evidence_url": "https://datasets-server.huggingface.co/statistics?dataset=sparks-solutions/AutomotiveUI-Bench-4K&config=default&split=test"
+          }
+        ],
+        "notes": "Image and annotation totals are the card's. The class split comes from the Hub dataset viewer's statistics for the test split, whose 4,208 rows match the card; the language column is the UI language (2,220 German and 1,988 English rows). The 2.5 GB of Parquet shards were not downloaded.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md",
+          "https://huggingface.co/api/datasets/sparks-solutions/AutomotiveUI-Bench-4K/revision/d760810c47bed006d88ee70dad7248056fdec223",
+          "https://datasets-server.huggingface.co/statistics?dataset=sparks-solutions/AutomotiveUI-Bench-4K&config=default&split=test"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.availability",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://huggingface.co/api/datasets/sparks-solutions/AutomotiveUI-Bench-4K/revision/d760810c47bed006d88ee70dad7248056fdec223",
+        "sha256": "864ae1e85c8348b194569e78e9ac1defc9c928016ab4f0d0e49895d8e99c0130",
+        "retrieved_at": "2026-10-19T07:49:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://datasets-server.huggingface.co/statistics?dataset=sparks-solutions/AutomotiveUI-Bench-4K&config=default&split=test",
+        "sha256": "ae3164aa48bcf6a05f6f6c0dd6d43e463b97a1dc5562b60460f4e787f7841d44",
+        "retrieved_at": "2026-10-19T07:50:08Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5fa723cda0c5a9982158a1a716fad26242dd3e560365d149cb268d7aa1761dd7",
+    "reviewed_at": "2026-10-19T07:50:56Z"
   }
 ]

@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AutomotiveUI-Bench-4K](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K) | unspecified | — | [4,208 annotations](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) · [998 images](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) | data cc-by-4.0 | Offline test set of 998 photos and screenshots of in-vehicle infotainment screens from 15 brands, with 4,208 English annotations for locating UI elements and judging expected results as passed or failed. | [✓ 2026‑10‑19](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) |
 | [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
 | [Screen Point-and-Read / Tree-of-Lens](https://github.com/UCSB-AI/Screen-Point-and-Read) | cross-platform | [2406.19263](https://arxiv.org/abs/2406.19263) (2024) | — | code MIT | Screen-reading benchmark and Tree-of-Lens implementation for interpreting user-indicated regions and their layout context. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/eric-ai-lab/Screen-Point-and-Read/HEAD/README.md) |
 | [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | [910 tasks](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) · [233 human trajectories](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) | — | Visually grounded web tasks extending the WebArena evaluation setting. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) |

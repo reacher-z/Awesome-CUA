@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 A *leaderboard* link after the name is the official leaderboard that the reviewed source links. *Scale* is the first publisher-reported or computed count per unit from the reviewed profile, linked to its source; subsets and units are never combined. *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**88 resources:** [Web (35)](#web) · [Desktop (15)](#desktop) · [Mobile (17)](#mobile) · [Cross-platform (18)](#cross-platform) · [Unspecified (3)](#unspecified)
+**89 resources:** [Web (35)](#web) · [Desktop (15)](#desktop) · [Mobile (17)](#mobile) · [Cross-platform (18)](#cross-platform) · [Unspecified (4)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -132,6 +132,7 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AppWorld](https://github.com/StonyBrookNLP/appworld) · [leaderboard](https://appworld.dev/appworld/leaderboard) | [2407.18901](https://arxiv.org/abs/2407.18901) (2024) | [750 tasks](https://arxiv.org/abs/2407.18901) · [9 applications](https://arxiv.org/abs/2407.18901) | code Apache-2.0 | Simulated applications, user data, and state-based task checks for evaluating agents that interact through APIs and code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stonybrooknlp/appworld/HEAD/README.md) |
+| [AutomotiveUI-Bench-4K](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K) | — | [4,208 annotations](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) · [998 images](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) | data cc-by-4.0 | Offline test set of 998 photos and screenshots of in-vehicle infotainment screens from 15 brands, with 4,208 English annotations for locating UI elements and judging expected results as passed or failed. | [✓ 2026‑10‑19](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) |
 | [MobileGUI-VBench](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench) | [2609.12394](https://arxiv.org/abs/2609.12394) (2026) | [150 tasks](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench/raw/main/README.md) · [40 mobile apps](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench/raw/main/README.md) | — | Mobile-app task definitions covering everyday scenarios, with annotated preconditions and clarification requirements for evaluating agent behavior. | [✓ 2026‑10‑17](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench/raw/main/README.md) |
 | [PPTC](https://github.com/gydpku/PPTC) | [2311.01767](https://arxiv.org/abs/2311.01767) (2023) | — | code MIT | PowerPoint creation and editing benchmark with API-based execution and checks of the resulting presentation files. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/gydpku/PPTC/HEAD/README.md) |
 

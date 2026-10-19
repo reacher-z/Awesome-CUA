@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0cfdb9fc9042d1d0741e",
+    "url": "https://openreview.net/pdf?id=Pc8AU1aF5e",
+    "decision": "alias",
+    "target_id": "arxiv:2306.07863",
+    "reason": "OpenReview PDF of the ICLR 2024 edition of the indexed Synapse paper; same title and authors."
   }
 ]

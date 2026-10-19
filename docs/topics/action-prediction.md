@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (18)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
 
 ## Datasets
 
@@ -25,6 +25,7 @@
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |
 | [Holo3 35B-A3B](https://huggingface.co/Hcompany/Holo3-35B-A3B) | web, desktop, cross-platform | — | weights apache-2.0 | A sparse Qwen3.5-based GUI-action checkpoint released for navigation and computer-use workflows. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo3-35B-A3B/raw/main/README.md) |
 | [Holo4 35B-A3B BF16](https://huggingface.co/Hcompany/Holo4-35B-A3B) | desktop, web | — | weights apache-2.0 | A Qwen3.6-based computer-use checkpoint designed to request GUI actions, code execution and tool calls through an external agent harness. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo4-35B-A3B/raw/main/README.md) |
+| [Holotron 3 Nano](https://huggingface.co/Hcompany/Holotron-3-Nano) | web, desktop | — | weights NVIDIA Open Model License | Computer-use policy checkpoint that H Company post-trained from NVIDIA Nemotron 3 Nano Omni, a hybrid Mamba-MoE model with 3B of 30B parameters active per token, aimed at lower-latency agent workloads. | [✓ 2026‑10‑19](https://huggingface.co/Hcompany/Holotron-3-Nano/raw/525e05a4b21747ea5c32b09a5969bfc425d5e95c/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |

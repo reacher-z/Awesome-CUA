@@ -63143,5 +63143,138 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:f39d67f7a4a6f869f39c",
+    "name": "Holotron 3 Nano",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holotron-3-Nano",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "Computer-use policy checkpoint that H Company post-trained from NVIDIA Nemotron 3 Nano Omni, a hybrid Mamba-MoE model with 3B of 30B parameters active per token, aimed at lower-latency agent workloads.",
+    "scope": "core",
+    "verify_terms": [
+      "Holotron-3-Nano"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/Hcompany/Holotron-3-Nano/raw/525e05a4b21747ea5c32b09a5969bfc425d5e95c/README.md"
+    ],
+    "publisher_id": "organization:h",
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.weights",
+      "details.base_model",
+      "details.parameter_label",
+      "details.artifact_type"
+    ],
+    "notes": "Hub API at revision 525e05a4 lists seven safetensors shards (about 33.01B parameters, nearly all BF16) with custom modeling code, and config.json declares NemotronH_Nano_Omni_Reasoning_V3 with 128 routed experts, 6 active per token, and a 262,144-token position limit; the repository is not gated. The card text names the NVIDIA Open Model License while its metadata says 'other' and no license file ships; H's models page lists the same license. The card fetches the RADIO vision code from nvidia/C-RADIOv2-H while the release post names C-RADIOv4, so no encoder version is recorded. OSWorld-Verified, ScreenSpot-Pro, OSWorld-G and internal enterprise scores in the release post are publisher figures and were not reproduced; no weights were loaded.",
+    "details": {
+      "hub_id": "Hcompany/Holotron-3-Nano",
+      "hub_revision": "525e05a4b21747ea5c32b09a5969bfc425d5e95c",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/Hcompany/Holotron-3-Nano/tree/525e05a4b21747ea5c32b09a5969bfc425d5e95c",
+      "artifact_type": "model-checkpoint",
+      "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "architecture": "NemotronH_Nano_Omni_Reasoning_V3",
+      "parameter_label": "30B-A3B",
+      "training_data_note": "The card and release post describe post-training on H Company's proprietary data mixture, about 52 billion tokens seen according to the post; no training data is released with the checkpoint.",
+      "listed_weight_files": [
+        "model-00001-of-00007.safetensors",
+        "model-00002-of-00007.safetensors",
+        "model-00003-of-00007.safetensors",
+        "model-00004-of-00007.safetensors",
+        "model-00005-of-00007.safetensors",
+        "model-00006-of-00007.safetensors",
+        "model-00007-of-00007.safetensors"
+      ]
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/models/Hcompany/Holotron-3-Nano/revision/525e05a4b21747ea5c32b09a5969bfc425d5e95c",
+        "sha256": "2cf0bf25a4651598ffa97f1f8346995e1621d5b7c6e8d9e222da2ff5c65201e1",
+        "retrieved_at": "2026-10-19T06:02:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture",
+          "notes"
+        ],
+        "url": "https://huggingface.co/Hcompany/Holotron-3-Nano/raw/525e05a4b21747ea5c32b09a5969bfc425d5e95c/config.json",
+        "sha256": "c35380544d8a4e0363423330906500bf0b542a65daba17af2047637efad8c6ff",
+        "retrieved_at": "2026-10-19T06:02:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.weights"
+        ],
+        "url": "https://hcompany.ai/research/models",
+        "sha256": "ddfa335cd71d0a7a4e61640752b1b24830f951a72c175e88fd03bf00a5e783c8",
+        "retrieved_at": "2026-10-19T06:02:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "topics",
+          "summary",
+          "notes",
+          "details.training_data_note"
+        ],
+        "url": "https://hcompany.ai/newsroom/holotron3",
+        "sha256": "f1a85322e0c82ee5b12cf3dbdd986ba2578330df80859a059beddd12f34b573e",
+        "retrieved_at": "2026-10-19T06:02:56Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "NVIDIA Open Model License",
+          "url": "https://huggingface.co/Hcompany/Holotron-3-Nano/raw/525e05a4b21747ea5c32b09a5969bfc425d5e95c/README.md",
+          "retrieved_at": "2026-10-19T06:02:55Z",
+          "basis": "Publisher model-card text for this checkpoint names the NVIDIA Open Model License; the card metadata says 'other' and the repository has no license file. Code and training-data terms are separate."
+        },
+        "reason": "Publisher model-card text names the NVIDIA Open Model License for this checkpoint, matching H's models page; the Hub value 'other' is not a license name.",
+        "evidence_urls": [
+          "https://huggingface.co/Hcompany/Holotron-3-Nano/raw/525e05a4b21747ea5c32b09a5969bfc425d5e95c/README.md",
+          "https://hcompany.ai/research/models"
+        ]
+      }
+    },
+    "read_basis": "Read the pinned model card, config.json, Hub API revision record, H's models page and the Holotron 3 release post. No weights were downloaded or run.",
+    "reviewed_sha256": "5cc77556ea6205641e21d666ddd9a714e5f4b317a6300ebc4af1b80e835f2730",
+    "reviewed_at": "2026-10-19T06:03:26Z"
   }
 ]

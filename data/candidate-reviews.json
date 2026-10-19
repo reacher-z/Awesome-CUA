@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:83ad05e194c121277cab",
+    "url": "https://bailian.console.aliyun.com?spm=5176.21213303.J_qCOwPWspKEuWcmp8qiZNQ.131.39712f3dOmFAxI&scm=20140722.S_card%40%40%E4%BA%A7%E5%93%81%40%402983180.S_card0.ID_card%40%40%E4%BA%A7%E5%93%81%40%402983180-RL_%E7%99%BE%E7%82%BC-LOC_search~UND~card~UND~item-OR_ser-V_3-P0_0&tab=model",
+    "decision": "not_a_resource",
+    "reason": "Alibaba Cloud Bailian (Model Studio) console, the model tab of a hosting platform, reached through search-tracking parameters. Once the fragment that named the gui-plus model page is dropped, the address serves only the generic console shell."
   }
 ]

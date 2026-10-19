@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b2922b32c776bf3f191b",
+    "url": "https://midscenejs.com/showcases",
+    "decision": "alias",
+    "target_id": "github:web-infra-dev/midscene",
+    "reason": "Showcases page in the documentation site of the indexed Midscene.js repository, with demo tasks and reports for its web, iOS, Android, HarmonyOS and desktop agents."
   }
 ]

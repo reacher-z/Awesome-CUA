@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:150373c7f9cac2cbf759",
+    "url": "https://microsoft.github.io/UFO",
+    "decision": "alias",
+    "target_id": "github:microsoft/ufo",
+    "reason": "Documentation website of the indexed UFO repository, published from its gh-pages branch and set as the repository homepage."
   }
 ]

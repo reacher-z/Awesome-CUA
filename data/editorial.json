@@ -63143,5 +63143,48 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.23035",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "tool-integration",
+      "planning",
+      "memory"
+    ],
+    "summary": "MobilePA-Bench evaluates mobile planning agents on 1,705 tasks over 212 tools in a stateful app sandbox, covering tool use, delegation to GUI and other sub-agents, memory retrieval and skill invocation.",
+    "verify_terms": [
+      "MobilePA-Bench: Benchmarking Mobile Planner Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.23035v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent tool-centric mobile benchmark: the sandbox simulates application databases across 13 domains and names no mobile operating system. GUI work is scored as a correct handoff to a GUI sub-agent rather than executed screen control. The v2 full text names the repository github.com/Tongyi-MAI/MobilePA-Bench. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2608.23035v2",
+        "retrieved_at": "2026-10-19T08:46:31Z",
+        "sha256": "76c73751bda3eeec742c6abd80ffce82dd7125d9758bda4cf4af4f5a46899361",
+        "supports": [
+          "scope",
+          "environments",
+          "summary",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML introduction, related work, Section 3 (scope, sub-agent collaboration, memory and skill dimensions) and the evaluation setup giving the 1,705-task total.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2b36d4d3f5857584bdf205fbc3e29a179aff06e0c37541301406ca64ecae0079",
+    "reviewed_at": "2026-10-19T08:46:32Z"
   }
 ]

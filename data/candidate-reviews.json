@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c12c24645ad49600bd21",
+    "url": "https://openreview.net/forum?id=AUaW6DS9si",
+    "decision": "alias",
+    "target_id": "arxiv:2506.21506",
+    "reason": "OpenReview forum of the NeurIPS 2025 Datasets and Benchmarks Track edition of the indexed Mind2Web 2 paper; same title and authors."
   }
 ]

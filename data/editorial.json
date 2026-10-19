@@ -63143,5 +63143,53 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:a5dc446fab5e6bdce517",
+    "name": "In-Context Teacher–Student Guidance for Open-Weight Browser Agents",
+    "kind": "paper",
+    "url": "https://sol.sbc.org.br/index.php/kdmile/article/view/44978",
+    "summary": "Training-free protocol that turns a teacher model's offline reasoning traces into prompt guidance for open-weight browser agents; on MiniWoB++ it lifts solved student-task pairs from 208 to 271 across ten students.",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "training-free",
+      "efficiency"
+    ],
+    "verify_terms": [
+      "Open-Weight Browser Agents",
+      "In-Context Learning Guidance"
+    ],
+    "evidence_urls": [
+      "https://sol.sbc.org.br/index.php/kdmile/article/download/44978/44741"
+    ],
+    "primary_supports": [
+      "environments",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "kind",
+          "name"
+        ],
+        "url": "https://api.crossref.org/works/10.5753/kdmile.2026.32021",
+        "retrieved_at": "2026-10-19T08:40:21Z",
+        "sha256": "5345106b26513bf1583ebb0bf29cb15b8fad38c75dcf3da43de6432aee1fddf0"
+      }
+    ],
+    "notes": "The annotation was reviewed against the publisher PDF and the Crossref deposit for its DOI. Experiments have not been independently reproduced. The method, In-Context Learning Guidance (ICLG), has GPT-5.1 solve tasks offline and appends only its reasoning fields, not its low-level actions, to the student prompt; the teacher is not called while the student runs. Evaluation serves the 130 MiniWoB++ tasks locally, caps each run at 5 minutes and 25 interaction steps, counts a score of at least 0.5 as solved, and reports single runs: seven of ten students improve and three lose one task. Retry and refined-prompt ablations cover three students. The paper names no code release or arXiv version.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "244d2777c017208be3f374b4ab4ef6954c3db314a273e532063d6487c087567d",
+    "reviewed_at": "2026-10-19T08:41:32Z"
   }
 ]

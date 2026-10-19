@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d642c930de1e1d5fd70e",
+    "url": "https://coasty.ai/blog/computer-use-ai-agent-news-2026",
+    "decision": "out_of_scope",
+    "reason": "A Coasty marketing blog post that comments on OSWorld accuracy trends and common agent failures, then promotes Coasty's own desktop agent and its self-reported OSWorld scores. It is vendor commentary with no agent, dataset, benchmark, method or tool of its own.",
+    "reviewed_at": "2026-10-19T06:38:37Z",
+    "evidence": {
+      "url": "https://coasty.ai/blog/computer-use-ai-agent-news-2026",
+      "sha256": "9e85e2edebbf0561f49d7986d4eb09332b53824954909fd53de5f8063b280931",
+      "retrieved_at": "2026-10-19T06:19:12Z"
+    }
   }
 ]

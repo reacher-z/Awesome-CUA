@@ -63143,5 +63143,52 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.00450",
+    "summary": "ZoneClaw splits OpenClaw-style workspace memory into trust zones with gated promotion and role-separated processes, lowering persistent memory-injection attack success from 372/480 to 6/480 trials.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "memory"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "ZoneClaw: Mitigating Persistent Memory Attacks"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.00450v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Experiments run OpenClaw in isolated Harbor tasks backed by local mail, chat, forum, documentation and marketplace services, across four attack scenarios, two injection settings and four LLM backbones. The paper names its code repository (euph00/ZoneClaw-code), which is not reviewed here. Reviewed against the versioned arXiv abstract page and HTML full text. Experimental results and released artifacts have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.00450v1",
+        "retrieved_at": "2026-10-19T08:41:41Z",
+        "sha256": "063101c76d718b7862cb64505422cc53d88e3c32ea5d465db04f12c7d16508e2",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_sha256": "cdcfe1def82603c399a99feb11fc469f77255900362ea930f4c998fd610ba078",
+    "reviewed_at": "2026-10-19T08:43:03Z"
   }
 ]

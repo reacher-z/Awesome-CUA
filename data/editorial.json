@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SPECTRA: On-Device Cognitive Perturbation and Trajectory Analysis for Autonomous Edge-Cloud GUI Grounding",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.35775",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "efficiency",
+      "robustness"
+    ],
+    "scope": "core",
+    "summary": "SPECTRA decides when an edge GUI grounder should defer to a cloud model by masking salient visual anchors and measuring prefill hidden-state divergence, evaluated on MMBench-GUI, ScreenSpot-Pro and UI-I2E-Bench.",
+    "verify_terms": [
+      "SPECTRA: On-Device Cognitive Perturbation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.35775v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The arXiv comment reports acceptance at ACM MM 2026; no publisher edition was checked. In the v1 full text, edge models InfiGUI-G1-3B and Holo1.5-3B are paired with the cloud model GTA1-32B, the request predictor is trained on about 7.3k samples drawn mainly from Widget Caption and OmniAct, and MMBench-GUI spans six operating systems. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.35775v1",
+        "sha256": "727848010e6238d85bdc56a45b5b0e8e7080b229050e393616d065d64872c92d",
+        "retrieved_at": "2026-10-19T08:36:35Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML benchmark, dataset and results sections. No code execution or result reproduction.",
+    "reviewed_sha256": "8dd92c6e6208b961b11349c483aabc0566861c33f20703828a7937837be0b3fd",
+    "reviewed_at": "2026-10-19T08:46:35Z"
   }
 ]

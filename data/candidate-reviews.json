@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:31b6deb6ffaa1b5ba7db",
+    "url": "https://openreview.net/forum?id=5fg0VtRxgi",
+    "decision": "alias",
+    "target_id": "arxiv:2310.03720",
+    "reason": "OpenReview page of the COLM 2024 edition of the indexed SteP: Stacked LLM Policies for Web Actions paper; same title and authors."
   }
 ]

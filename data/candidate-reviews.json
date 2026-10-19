@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:3fc78f9621c648336d56",
+    "url": "https://openreview.net/forum?id=Hghm8tVvbs",
+    "decision": "alias",
+    "target_id": "arxiv:2609.15307",
+    "reason": "OpenReview page of an earlier ICLR 2026 submission (not accepted) of the work in the indexed arXiv paper, before its retitling; same two insights, method and ScreenSpot results under earlier method names."
   }
 ]

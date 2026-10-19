@@ -63143,5 +63143,54 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2607.19865",
+    "name": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.19865",
+    "summary": "DocOps provides 210 deterministically verified Word, Excel, PowerPoint and PDF tasks at four difficulty levels, comparing document-API, Bash and coding-agent harnesses and analyzing agent failure modes.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow",
+      "tool-integration",
+      "state-tracking"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "DocOps: A Verifiable Benchmark"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.19865v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.19865v1",
+        "sha256": "587d41b99c12db24ed53acaa23a92113b4a33b8a76cf916070661bc463ad0e63",
+        "retrieved_at": "2026-10-19T08:43:18Z"
+      }
+    ],
+    "notes": "Reviewed against the exact-version v1 arXiv abstract page and v1 HTML full text. Adjacent document-automation benchmark: Section 4.1.2 evaluates DocTools (document APIs without a shell), Terminus-2 (Bash), Claude Code and Codex acting on native files, not office-application GUIs. The 210 tasks comprise 50 L1, 40 L2, 60 L3 and 60 L4 tasks. The paper names the code and dataset at https://github.com/icip-cas/DocOps and a project site. Results have not been independently reproduced.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c72fd985ea01a67855599cf40e406d5bc0af1befe40dc9c665088e5290ea8140",
+    "reviewed_at": "2026-10-19T08:44:55Z"
   }
 ]

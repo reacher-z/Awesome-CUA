@@ -63143,5 +63143,54 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.11655",
+    "summary": "Labels failed agent trajectories as process or content failures to choose between self-evolving harness edits and LoRA training on evolved-harness trajectories, tested on DeepPlanning and WebArena-Lite.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "long-horizon",
+      "web-navigation",
+      "imitation-learning"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Harness Evolution Hits a Ceiling"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.11655v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent: the main study uses the DeepPlanning travel-planning benchmark. Its web component reruns the harness-evolution loop on WebArena-Lite with Qwen3.5-9B (48 development and 117 test tasks), where adapters trained on the resulting trajectories did not add to the harness gain. Reviewed against the versioned arXiv abstract page and HTML full text. Experimental results and released artifacts have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.11655v1",
+        "retrieved_at": "2026-10-19T08:41:34Z",
+        "sha256": "8e146ba9cfb15ddefceaa59286fbc0b5349ed8f79c1382991f0e1ac62881e0e8",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_sha256": "1d4838016171d4cc0af59a87ae3fbaf71570b3be7677bbd5ff2a44a5e26b95da",
+    "reviewed_at": "2026-10-19T08:43:42Z"
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:935885a1216159d413f0",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3126594.3126651",
+    "decision": "alias",
+    "target_id": "url:b560b5d6abaab98483f6",
+    "reason": "ACM Digital Library abstract page for DOI 10.1145/3126594.3126651, the UIST 2017 Rico paper already indexed under its doi.org address."
   }
 ]

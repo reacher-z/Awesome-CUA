@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c2bf550f02b935270a8a",
+    "url": "https://datalens.uk",
+    "decision": "out_of_scope",
+    "reason": "DataLens is a Chrome and Edge extension that turns the page a user has open, including paginated lists, into a table for export to Excel or CSV, using an AI model to identify the fields. It extracts data from pages rather than carrying out tasks on interfaces, so it is a scraper outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:36:04Z",
+    "evidence": {
+      "url": "https://datalens.uk",
+      "sha256": "dd35bfc18f1878e6969c5b7345a8ccecb11800898e27b388beca48af61112c69",
+      "retrieved_at": "2026-10-19T06:14:32Z"
+    }
   }
 ]

@@ -63143,5 +63143,213 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.07429",
+    "summary": "Introduces GameWorld, a browser benchmark of 34 games and 170 state-verified tasks that compares computer-use keyboard and mouse control with semantic action parsing across 18 model-interface pairs.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "planning"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "GameWorld: Towards Standardized and Verifiable"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.07429v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the v1 arXiv abstract page; its title and ordered author list match the retained v1 snapshot, and the abstract names gameworld-bench.github.io as the project page. Scope is adjacent because the tasks are video games rather than ordinary software workflows, although one of the two studied interfaces is computer-use mouse and keyboard control. Experimental results have not been independently reproduced.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1f9c1e4707e6c12ee3d31a1c656b14bb920083af26a38314176491c411ba3b8c",
+    "reviewed_at": "2026-10-19T06:29:20Z"
+  },
+  {
+    "name": "GameWorld",
+    "kind": "benchmark",
+    "url": "https://github.com/gameworld-project/GameWorld",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "planning"
+    ],
+    "summary": "Browser benchmark of 34 games and 170 tasks in which multimodal agents act through raw mouse and keyboard input or per-game semantic actions, with success and progress read from game state.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "GameWorld"
+    ],
+    "documented_by": [
+      "2604.07429"
+    ],
+    "notes": "Official benchmark code for arxiv:2604.07429. At commit 679b1b6 the repository holds the runtime, model adapters, the game and task catalog and two bundled games (01_2048 and 10_doodle-jump); the full 34-game library is the separate gameworld-project/GameWorld-Games repository, which the README clones into games/gameworld-games, a gitlink at this commit. Agents observe PNG screenshots captured through the Chrome DevTools Protocol at 1280x720 by default. Computer-use adapters emit clicks, drags, scrolls, key presses and typing that Playwright executes on the page, limited per game to allowed keys; generalist adapters call named semantic controls that each game YAML binds to low-level actions, such as a held arrow key or a wait in Doodle Jump. The runtime pauses the game during model inference by default. The README leaderboard was produced on the separate Fine-Control Protocol branch with a 400-step limit and three runs per task, while main defaults to 100 steps. GitHub reports no license and the tree has no LICENSE file, so code terms are unknown; rights to the bundled third-party game snapshots were not reviewed.",
+    "details": {
+      "repository_revision": "679b1b6917be841e35ee557f83c9c10b81141085",
+      "benchmark_protocol": {
+        "focus": [
+          "multimodal game agents in browser games",
+          "computer-use versus semantic-action control"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshot"
+        ],
+        "actions": [
+          "mouse click, drag and scroll",
+          "key press and typing",
+          "per-game semantic controls"
+        ],
+        "evaluation": "Each task YAML sets objective targets over fields exposed by the game's window.gameAPI; the evaluator reads that state through Playwright and reports success or failure plus progress toward the targets. The README reports SR@3 and PG@3 over three runs per task.",
+        "counts": [
+          {
+            "value": 34,
+            "unit": "games",
+            "qualifier": "exact",
+            "population": "GameWorld benchmark game library",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/HEAD/README.md"
+          },
+          {
+            "value": 170,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "GameWorld benchmark task catalog",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/HEAD/README.md"
+          }
+        ],
+        "notes": "At commit 679b1b6 the catalog has 34 game YAMLs and 170 task YAMLs, five per game, matching the README; GameWorld-Games at the pinned gitlink 5532292 has 34 game folders. Keep the protocol branch, step limit, interface (computer-use or semantic), pause-during-inference setting and number of runs with any score. No benchmark run was executed for this review.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/HEAD/README.md",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/action_executor.py",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/browser_manager.py",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/runtime/runtime_config.py",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/task_evaluator.py",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/game_state_tracker.py",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/runtime/coordinator.py",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/catalog/games/10_doodle-jump.yaml",
+          "https://raw.githubusercontent.com/gameworld-project/GameWorld-Games/55322928fa8bd51cb1719bd3807a32634aa5d3cb/README.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/action_executor.py",
+        "sha256": "2444dddb7928bc6a65ae7f60e54118ea3f5f09792d9dee1163175f141e5bc1d8",
+        "retrieved_at": "2026-10-19T06:28:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/browser_manager.py",
+        "sha256": "405dec9960b042fad7c7c87edc346cbcad1e976fb34713048b67a9270d81631d",
+        "retrieved_at": "2026-10-19T06:28:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/runtime/runtime_config.py",
+        "sha256": "db3c3e5cf32b785c93b044f9ad3595e3b6411c8f32853dffe8bb7f684040fbff",
+        "retrieved_at": "2026-10-19T06:28:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/task_evaluator.py",
+        "sha256": "7d191c8d79a8c126afe6f121301c093c13fe3ca28726e7a5d45c6d72e037bbc3",
+        "retrieved_at": "2026-10-19T06:28:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/env/game_state_tracker.py",
+        "sha256": "73941060691d7a9f59a925d16688fb816ab280ef9306b1d68dbc8b876b965ad0",
+        "retrieved_at": "2026-10-19T06:28:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/runtime/coordinator.py",
+        "sha256": "a031a6d45f6b04e8f48941a9d37a69421098a18220a7ef7d79e96921c2880cbd",
+        "retrieved_at": "2026-10-19T06:28:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld/679b1b6917be841e35ee557f83c9c10b81141085/catalog/games/10_doodle-jump.yaml",
+        "sha256": "a77ad88229a018fb794825eb929b526bb52ce1fc3c6f1a193b87f38d4863eb84",
+        "retrieved_at": "2026-10-19T06:28:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gameworld-project/GameWorld-Games/55322928fa8bd51cb1719bd3807a32634aa5d3cb/README.md",
+        "sha256": "02fa6d682de1a5589e481a0754b0a36c6ca34e55faa5e856a2b7f01ad0e94c89",
+        "retrieved_at": "2026-10-19T06:28:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a20fdc3d534295ba721ce7c12b121f03b56a0ededb9f2eacc40d5aefa56da624",
+    "reviewed_at": "2026-10-19T06:29:20Z"
   }
 ]

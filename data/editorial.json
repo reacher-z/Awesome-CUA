@@ -63143,5 +63143,74 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:4395ff8522cd77109b83",
+    "name": "LongHorizonUI: A Unified Framework for Robust long-horizon Task Automation of GUI Agent",
+    "kind": "paper",
+    "url": "https://openreview.net/forum?id=BK7Mk5d4WE",
+    "summary": "Training-free GUI agent that indexes screen elements via icon detection and OCR, checks each step with multi-level reflection and recovers by fallback clicks or rollback; introduces LongGUIBench, tasks over 15 steps.",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "long-horizon",
+      "evaluation",
+      "self-reflection",
+      "robustness",
+      "screen-understanding",
+      "training-free"
+    ],
+    "verify_terms": [
+      "LongHorizonUI",
+      "LongGUIBench"
+    ],
+    "evidence_urls": [
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/002a6bef26174b590e4eab95b63feb1b-Abstract-Conference.html"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.identity_basis",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.venue",
+      "details.publication.volume",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.publication.authors",
+          "details.publication.identity_basis",
+          "details.publication.notes",
+          "details.publication.title",
+          "environments",
+          "notes",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/002a6bef26174b590e4eab95b63feb1b-Paper-Conference.pdf",
+        "sha256": "009272a661a93100f6e776ab83f5cd2957a81e6a0b0e4e5d53633dfd9f93bd80",
+        "retrieved_at": "2026-10-19T06:41:02Z"
+      }
+    ],
+    "notes": "Reviewed against the ICLR 2026 proceedings page and PDF; the OpenReview forum lists it as an ICLR 2026 Poster. Experiments were not reproduced. LongHorizonUI's components run without fine-tuning, with Gemini 2.5 Pro as the default backbone; Appendix D.6 also reports Gemini 1.5 Flash and Qwen2.5-VL-7B backbones. LongGUIBench tasks need more than 15 steps across games and general apps; the paper states 371 scenarios but gives 207 game scenarios in Section 2.1 and 224 in Appendix D.2, and does not name the benchmark's device platform. Other reported evaluations are ScreenSpot grounding, AndroidControl and GUI-Odyssey, plus zero-shot AndroidWorld and OSWorld runs in Appendix D.5. The paper points to kane2kang.github.io/LongHorizonUI for code, which was not reviewed here. No arXiv version was found.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fda88d4c935640339743751062d9deffa985e01c8dde011d0828f518dacf5091",
+    "reviewed_at": "2026-10-19T06:46:18Z",
+    "read_basis": "Read the ICLR proceedings page metadata and abstract, and the full proceedings PDF text (method, LongGUIBench construction, implementation details, benchmark appendix and zero-shot transfer appendix); checked the OpenReview note in a browser. No code execution or result reproduction."
   }
 ]

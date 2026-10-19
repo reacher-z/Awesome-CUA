@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2607.17951",
+    "name": "RT-SHCUA: Real-Time Self-Hosted Computer-Use Agent for UAV Control",
+    "url": "https://arxiv.org/abs/2607.17951",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract restructures OpenClaw-like self-hosted agents for natural-language UAV control, turning their outputs into contract-bound flight-skill invocations with timing, authorization, trusted enforcement and evidence checks, evaluated on a UAV prototype. Despite the computer-use agent framing, the contribution is aerial-vehicle control and cyber-physical safety rather than operating graphical, web or device interfaces, so it is outside the catalog scope.",
+    "reviewed_at": "2026-10-19T08:40:35Z",
+    "metadata_fingerprint": "f8edaa75c1b81e4c572872a6b98ed72799095b231e74c6655deec9bfe8febad8",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "13d3fb5811d203f2e6b80eb45d30ebc0b3cfefd88e2034ffa3b1b80687bef285",
+      "retrieved_at": "2026-10-16T06:36:32Z"
+    }
   }
 ]

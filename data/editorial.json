@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Beyond the Verdict: Evidence-Aligned Evaluation of Visual Prompt-Injection Guardrails",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.05535",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "grounding",
+      "web-navigation"
+    ],
+    "summary": "Introduces Mind2Web-Injection, 9,954 web screenshot-instruction pairs with pixel-exact evidence boxes and counterfactuals, to test whether VLM guardrails for web agents localize the injected text behind a verdict.",
+    "verify_terms": [
+      "Beyond the Verdict: Evidence-Aligned Evaluation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.05535v1"
+    ],
+    "scope": "core",
+    "notes": "Pairs are built from Multimodal-Mind2Web screenshots of entertainment, shopping and travel sites; the guardrail VLM judges whether on-screen text conflicts with the user instruction. Six VLMs are compared, and ReadGate and CmdCompare are training-free diagnostic interventions. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2609.05535v1",
+        "retrieved_at": "2026-10-19T08:44:41Z",
+        "sha256": "c1966c96d65537e42c508460206e73fa23607798219744e67c1b00a467424b78",
+        "supports": [
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections on benchmark construction (source pages, splits) and experiments. No code or data repository is named in v1.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "56c6e0cab46530b3e76fc50e16bf21361e2066d955217b5cf159d53d7df8074f",
+    "reviewed_at": "2026-10-19T08:44:42Z"
   }
 ]

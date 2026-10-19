@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4ddc6659780d3d5ee69d",
+    "url": "https://b-moca.github.io",
+    "decision": "alias",
+    "target_id": "github:jylee425/b-moca",
+    "reason": "Project website for the indexed B-MoCA benchmark repository."
   }
 ]

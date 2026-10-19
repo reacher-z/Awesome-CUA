@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (19)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -205,6 +205,7 @@
 | Resource | Publisher | Environments | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [AgentQL](https://www.agentql.com/) | — | web | Natural-language querying and interaction tools for web interfaces. | [✓ 2026‑10‑16](https://www.agentql.com/) |
+| [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore) | — | web | AWS managed agent platform whose Browser tool runs isolated cloud browser sessions with automation and live-view streams and optional recording, alongside runtime, memory, gateway and code-execution services. | [✓ 2026‑10‑19](https://docs.aws.amazon.com/bedrock-agentcore/) |
 | [Amazon Nova Act](https://aws.amazon.com/nova/act/) | — | web | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. | [✓ 2026‑10‑17](https://aws.amazon.com/nova/act/) |
 | [AskUI](https://www.askui.com/) | [AskUI](https://www.askui.com/) | desktop, web | Agentic test-automation platform running plain-language test cases from pixels rather than selectors on desktop apps, Citrix, in-car head units and mobile devices, deployable on-premise or air-gapped. | [✓ 2026‑10‑16](https://www.askui.com/) |
 | [Browser Use Cloud](https://browser-use.com/) | [Browser Use](https://browser-use.com/) | web | Hosted browser-agent platform from Browser Use. | [✓ 2026‑10‑16](https://browser-use.com/) |

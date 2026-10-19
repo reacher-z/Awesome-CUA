@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (16)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -17,6 +17,7 @@ All entries in this section: web.
 | Resource | Publisher | Description | Evidence |
 | --- | --- | --- | --- |
 | [AgentQL](https://www.agentql.com/) | — | Natural-language querying and interaction tools for web interfaces. | [✓ 2026‑10‑16](https://www.agentql.com/) |
+| [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore) | — | AWS managed agent platform whose Browser tool runs isolated cloud browser sessions with automation and live-view streams and optional recording, alongside runtime, memory, gateway and code-execution services. | [✓ 2026‑10‑19](https://docs.aws.amazon.com/bedrock-agentcore/) |
 | [Amazon Nova Act](https://aws.amazon.com/nova/act/) | — | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. | [✓ 2026‑10‑17](https://aws.amazon.com/nova/act/) |
 | [Browser Use Cloud](https://browser-use.com/) | [Browser Use](https://browser-use.com/) | Hosted browser-agent platform from Browser Use. | [✓ 2026‑10‑16](https://browser-use.com/) |
 | [BrowserAct](https://www.browseract.com/) | [BrowserAct](https://www.browseract.com/) | Managed web scraping platform with reusable browser interaction workflows. | [✓ 2026‑10‑16](https://www.browseract.com/) |

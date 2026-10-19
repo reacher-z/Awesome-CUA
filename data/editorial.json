@@ -63143,5 +63143,54 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Amazon Bedrock AgentCore",
+    "kind": "product",
+    "url": "https://docs.aws.amazon.com/bedrock-agentcore",
+    "evidence_urls": [
+      "https://docs.aws.amazon.com/bedrock-agentcore/"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "observability"
+    ],
+    "summary": "AWS managed agent platform whose Browser tool runs isolated cloud browser sessions with automation and live-view streams and optional recording, alongside runtime, memory, gateway and code-execution services.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Bedrock AgentCore",
+      "AgentCore Browser"
+    ],
+    "aliases": [
+      "AgentCore"
+    ],
+    "primary_supports": [
+      "kind",
+      "name",
+      "scope",
+      "summary"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html",
+        "retrieved_at": "2026-10-19T06:26:29Z",
+        "sha256": "b45199d057ddc309c83051dcf4379b71aeefcd44e03ba3f8afae585ded759e38"
+      }
+    ],
+    "notes": "A general agent hosting platform, so the scope is adjacent. Its computer-interaction component is AgentCore Browser: a containerized browser reached through a WebSocket automation endpoint (usable from Strands, Nova Act or Playwright) and a live-view endpoint where a person can watch the session and interact with it directly. Sessions default to 15 minutes and last at most 8 hours. Session recording, available for custom browsers, stores DOM changes, user actions, console logs and network events in the customer's S3 bucket. Amazon Nova Act (url:dec156cbf0cb1181f7b6) is cataloged separately. The landing URL redirects to its trailing-slash form over plain HTTP, so evidence is read from the HTTPS trailing-slash address. Availability and pricing were not independently tested.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c7c033e95908ee62575257c53b04e48471ae153b54fecebe0e0a18dcf17f6ac1",
+    "reviewed_at": "2026-10-19T06:27:09Z"
   }
 ]

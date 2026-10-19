@@ -63143,5 +63143,67 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:36a7cba41056d46cdcde",
+    "name": "Visual Grounding for User Interfaces",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2024.naacl-industry.9/",
+    "summary": "Proposes LVG, which detects and grounds the UI element named by a free-form command in an Android screenshot, using layout-guided contrastive learning and synthetic referring expressions generated from Rico screens.",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "data-generation"
+    ],
+    "verify_terms": [
+      "Visual Grounding for User Interfaces",
+      "layout-guided contrastive learning"
+    ],
+    "evidence_urls": [
+      "https://aclanthology.org/2024.naacl-industry.9/"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.doi",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.publisher",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://aclanthology.org/2024.naacl-industry.9.pdf",
+        "retrieved_at": "2026-10-19T06:07:28Z",
+        "sha256": "873ca788d03394a0d491af66abe85897858b88a84b7900264df0260d7dca82a7"
+      }
+    ],
+    "notes": "The annotation was reviewed against the ACL Anthology landing page and proceedings PDF. Experiments have not been independently reproduced. LVG is trained on the UIBert dataset (16,660 referring expressions on 5,682 Android screenshots) plus 22,617 synthetic expressions for 21,282 Rico screens, and the paper reports evaluation on Android data only. The paper names no code release, and no arXiv version was found.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8e947c2ee7903ecf6274ed390d35a81a796f9c1e02bcc7fb7ccfb414090cca2f",
+    "reviewed_at": "2026-10-19T06:08:02Z"
   }
 ]

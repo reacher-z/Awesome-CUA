@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-372 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+373 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (244)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (245)](#papers)
 
 ## Benchmarks
 
@@ -383,6 +383,7 @@ All entries in this section: web.
 | 2024‑06‑27 | [Read Anywhere Pointed: Layout-aware GUI Screen Reading with Tree-of-Lens Grounding](https://arxiv.org/abs/2406.19263) | cross-platform | Introduces Screen Point-and-Read and a hierarchical layout approach that interprets screen regions indicated by a user-selected point. |
 | 2024‑06‑20 | [VGA: Vision GUI Assistant -- Minimizing Hallucinations through Image-Centric Fine-Tuning](https://arxiv.org/abs/2406.14056) | cross-platform | Uses image-dependent question-answer data and staged fine-tuning to improve GUI comprehension and reduce unsupported visual answers. |
 | 2024‑06‑17 | [GUICourse: From General Vision Language Models to Versatile GUI Agents](https://arxiv.org/abs/2406.11317) | cross-platform | Introduces GUIEnv, GUIAct, and GUIChat datasets to develop OCR, grounding, component knowledge, and interaction abilities in visual-language models. |
+| 2024‑06 | [Visual Grounding for User Interfaces](https://aclanthology.org/2024.naacl-industry.9/) | android | Proposes LVG, which detects and grounds the UI element named by a free-form command in an Android screenshot, using layout-guided contrastive learning and synthetic referring expressions generated from Rico screens. |
 | 2024‑05‑24 | [V-Zen: Efficient GUI Understanding and Precise Grounding With A Novel Multimodal LLM](https://arxiv.org/abs/2405.15341) | unspecified | Describes V-Zen, a multimodal GUI model with dual-resolution image encoders for grounding and next-action prediction, fine-tuned using GUIDE interface elements and task sequences. |
 | 2024‑05‑05 | [Visual Grounding Methods for Efficient Interaction with Desktop Graphical User Interfaces](https://arxiv.org/abs/2407.01558) | desktop | Compares modular OCR-based and end-to-end methods for locating desktop GUI targets from natural-language instructions. |
 | 2024‑04‑09 | [GUIDE: Graphical User Interface Data for Execution](https://arxiv.org/abs/2404.16048) | web | Introduces annotated website task trajectories with screenshots, prior actions, reasoning, and grounded next actions for process automation. |

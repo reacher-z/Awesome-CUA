@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -353,6 +353,7 @@ All entries in this section: android.
 | 2024‑06‑12 | [GUIOdyssey: A Comprehensive Dataset for Cross-App GUI Navigation on Mobile Devices](https://arxiv.org/abs/2406.08451) | android | Introduces annotated cross-application mobile trajectories and studies history-aware navigation over long task sequences. |
 | 2024‑06‑12 | [Tell Me What's Next: Textual Foresight for Generic UI Representations](https://arxiv.org/abs/2406.07822) | unspecified | Textual Foresight learns UI representations by describing the future screen expected after an action on the current interface. The OpenApp dataset supports pretraining and downstream evaluation of representations that connect individual elements with whole-screen changes. |
 | 2024‑06‑06 | [On the Effects of Data Scale on UI Control Agents](https://arxiv.org/abs/2406.03679) | android | Studies how Android task performance changes with demonstration scale and releases AndroidControl with high- and low-level instructions. |
+| 2024‑06 | [Visual Grounding for User Interfaces](https://aclanthology.org/2024.naacl-industry.9/) | android | Proposes LVG, which detects and grounds the UI element named by a free-form command in an Android screenshot, using layout-guided contrastive learning and synthetic referring expressions generated from Rico screens. |
 | 2024‑05‑30 | [Large Language Models Can Self-Improve At Web Agent Tasks](https://arxiv.org/abs/2405.20309) | web | Examines self-improvement by fine-tuning web agents on three mixtures of model-generated training data. WebArena experiments and trajectory-level evaluation measures study task performance, robustness, and behavior beyond aggregate success rates. |
 | 2024‑05‑11 | [MUD: Towards a Large-Scale and Noise-Filtered UI Dataset for Modern Style UI Modeling](https://arxiv.org/abs/2405.07090) | android | MUD combines LLM-guided Android app exploration, noise filtering and human annotation to collect modern UI screenshots. The study evaluates the resulting data for element detection and UI retrieval. |
 | 2024‑04‑09 | [GUIDE: Graphical User Interface Data for Execution](https://arxiv.org/abs/2404.16048) | web | Introduces annotated website task trajectories with screenshots, prior actions, reasoning, and grounded next actions for process automation. |

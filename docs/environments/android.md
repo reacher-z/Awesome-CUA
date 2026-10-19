@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -323,6 +323,7 @@
 | 2024‑06‑12 | [GUIOdyssey: A Comprehensive Dataset for Cross-App GUI Navigation on Mobile Devices](https://arxiv.org/abs/2406.08451) | android | Introduces annotated cross-application mobile trajectories and studies history-aware navigation over long task sequences. |
 | 2024‑06‑06 | [On the Effects of Data Scale on UI Control Agents](https://arxiv.org/abs/2406.03679) | android | Studies how Android task performance changes with demonstration scale and releases AndroidControl with high- and low-level instructions. |
 | 2024‑06‑03 | [Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration](https://arxiv.org/abs/2406.01014) | android | Separates mobile planning, decision-making, and reflection, with a memory unit for task progress and relevant content. |
+| 2024‑06 | [Visual Grounding for User Interfaces](https://aclanthology.org/2024.naacl-industry.9/) | android | Proposes LVG, which detects and grounds the UI element named by a free-form command in an Android screenshot, using layout-guided contrastive learning and synthetic referring expressions generated from Rico screens. |
 | 2024‑05‑23 | [AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://arxiv.org/abs/2405.14573) | android | Introduces parameterized Android tasks with initialization, success checks, and cleanup for reproducible interactive evaluation. |
 | 2024‑05‑11 | [MUD: Towards a Large-Scale and Noise-Filtered UI Dataset for Modern Style UI Modeling](https://arxiv.org/abs/2405.07090) | android | MUD combines LLM-guided Android app exploration, noise filtering and human annotation to collect modern UI screenshots. The study evaluates the resulting data for element detection and UI retrieval. |
 | 2024‑04‑25 | [Benchmarking Mobile Device Control Agents across Diverse Configurations](https://arxiv.org/abs/2404.16660) | android | Introduces B-MoCA, an interactive mobile-control benchmark that varies device settings, layouts, and languages to test generalization. |

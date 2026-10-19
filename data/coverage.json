@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
-  "non_resource_candidates": 97,
+  "unindexed_candidates": 904,
+  "non_resource_candidates": 98,
   "alias_candidates": 36,
   "pending_editorial": [
     {
@@ -650,8 +650,8 @@
       "resolved_aliases": 0,
       "curated": 8,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 50
+      "set_aside": 3,
+      "unindexed": 49
     },
     {
       "id": "yearly-gui",

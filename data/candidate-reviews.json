@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:29634ecd8da089730352",
+    "url": "https://supernalintelligence.com",
+    "decision": "not_a_resource",
+    "reason": "Website of the Supernal Intelligence maintainers of the supernal-gui discovery source: a directory of leaderboards, benchmarks and GUI agents that the list's README links as its own site. It redirects to www.supernalintelligence.com/dashboard."
   }
 ]

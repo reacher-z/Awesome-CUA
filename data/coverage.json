@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -350,8 +350,8 @@
       "resolved_aliases": 6,
       "curated": 215,
       "excluded": 0,
-      "set_aside": 29,
-      "unindexed": 83
+      "set_aside": 30,
+      "unindexed": 82
     },
     {
       "id": "zju-gui",
@@ -680,8 +680,8 @@
       "resolved_aliases": 3,
       "curated": 148,
       "excluded": 0,
-      "set_aside": 15,
-      "unindexed": 28
+      "set_aside": 16,
+      "unindexed": 27
     },
     {
       "id": "osu-gui",
@@ -1070,8 +1070,8 @@
       "resolved_aliases": 2,
       "curated": 129,
       "excluded": 14,
-      "set_aside": 14,
-      "unindexed": 36
+      "set_aside": 15,
+      "unindexed": 35
     },
     {
       "id": "philfung-cua",

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a33b77c90e430a6c90e3",
+    "url": "https://os-copilot.github.io",
+    "decision": "alias",
+    "target_id": "github:os-copilot/os-copilot",
+    "reason": "Project website for the indexed OS-Copilot agent repository and its FRIDAY agent."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:30da8409ad5a690ef687",
+    "url": "https://seerray-lab.github.io/Xiaomi-GUI-0",
+    "decision": "alias",
+    "target_id": "arxiv:2606.31410",
+    "reason": "Former GitHub Pages address of the project website for the indexed Xiaomi-GUI-0 Technical Report (arXiv 2606.31410). It now returns 404; the GitHub API resolves SeerRay-Lab/Xiaomi-GUI-0 to the renamed SeerRay-Lab/Xiaomi-GUI repository, whose site at seerray-lab.github.io/Xiaomi-GUI serves the same project page."
   }
 ]

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:865032cbe662fc70c4b2",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Pretrain-predecay-s450000",
+    "decision": "out_of_scope",
+    "reason": "This repository holds the NeoMME-800M masked-language-model checkpoint saved at step 450,000 of a 500,000-step pretraining run, with its native optimizer state, as a starting point for continued pretraining of H Company's text-and-image document encoder. The card and its paper describe document encoding, not GUI, screen or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:07:11Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Pretrain-predecay-s450000/raw/e9a937e2973f0094d1984b5145d0d52d10b03141/README.md",
+      "sha256": "a2c72835288a7e41e43ba447fbf851c31d15843cd7f68fcbe1fc9e9d5dccd2ee",
+      "retrieved_at": "2026-10-18T16:04:29Z"
+    }
   }
 ]

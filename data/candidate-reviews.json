@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8803959f853113b8b42d",
+    "url": "https://aleksandarhaber.com/install-and-run-browser-use-ai-agents-locally-using-ollama",
+    "decision": "out_of_scope",
+    "reason": "A third-party blog tutorial with an embedded YouTube video that walks through installing the already-curated Browser Use library (github:browser-use/browser-use) on Windows and running it locally with Ollama and Qwen2.5-14B. It is a setup recipe for an existing framework, not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:34:27Z",
+    "evidence": {
+      "url": "https://aleksandarhaber.com/install-and-run-browser-use-ai-agents-locally-using-ollama/",
+      "sha256": "b8217bd900c60580e3bf8687dbdec7c804c3bdfc3efa55c2dafe09eaf6a48f25",
+      "retrieved_at": "2026-10-19T06:03:54Z"
+    }
   }
 ]

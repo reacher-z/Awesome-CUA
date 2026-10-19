@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:bb14d3a04d327ec45435",
+    "url": "https://openreview.net/forum?id=QDtORaZt8K",
+    "decision": "alias",
+    "target_id": "arxiv:2504.10127",
+    "reason": "OpenReview page of the COLM 2025 edition of the indexed paper Breaking the Data Barrier -- Building GUI Agents Through Task Generalization; same title and the same seven authors in order."
   }
 ]

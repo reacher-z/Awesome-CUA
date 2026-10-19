@@ -63143,5 +63143,52 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22539",
+    "summary": "WebMix adapts web agents to unseen sites and versions: a scout writes an interface manual, and a router uses it to mix a bank of trained LoRA adapters without gradient updates. Tested on TimeWarp and WebArena-Lite-v2.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "robustness",
+      "imitation-learning"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Adaptation of Web Agents using Mixture Hypernetworks"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.22539v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version v1 abstract. Section 3 of the v1 full text has the agent read the page accessibility tree and emit grounded actions; each bank adapter is fine-tuned on demonstrations from one source interface, and experiments use Qwen-3.5 4B and Llama-3.1 8B. The paper links a project page (webmix-hyper.github.io), which is not reviewed here. Experimental results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "topics",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2610.22539v1",
+        "sha256": "0c95ddb42bbfc91aabf25e2dc2d2393a9977b6d979a2c891c5bcf80798dbfbc3",
+        "retrieved_at": "2026-10-19T08:39:39Z"
+      }
+    ],
+    "reviewed_sha256": "a6ffd01d978bc2b428216d9eeb176d426d963ad197940037efcf6ba611cba361",
+    "reviewed_at": "2026-10-19T08:39:54Z"
   }
 ]

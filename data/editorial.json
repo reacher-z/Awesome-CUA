@@ -63143,5 +63143,380 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OpenMobile code",
+    "kind": "framework",
+    "url": "https://github.com/njucckevin/OpenMobile-Code",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "mobile-navigation",
+      "imitation-learning"
+    ],
+    "summary": "OpenMobile pipeline for AndroidWorld: random-walk exploration, memory-based task-instruction synthesis, learner/expert policy-switching rollouts, conversion to LLaMA-Factory SFT data, and AndroidWorld evaluation.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenMobile"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md"
+    ],
+    "documented_by": [
+      "2604.15093"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:google-research/android_world",
+        "evidence_url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Official code of the OpenMobile paper (COLM 2026 per the README). AndroidWorld/ holds a modified AndroidWorld copy with exploration (random_walk_aw.py), rollout (run_diy.py), post-processing and evaluation scripts; task_synthesis/ builds screen context and environment memory and generates and judges instructions with a strong multimodal model; LlamaFactory/ registers the four released data splits and gives Qwen3-VL and Qwen3.5 SFT configs. The tree also contains an Android-Lab folder. The Qwen3VL agent in AndroidWorld/android_world/agents/seeact_v.py sends recent plain screenshots to an OpenAI-compatible endpoint and executes the returned mobile_use tool calls; UI-element metadata is saved for post-processing only. The policy-switching mode lets a strong model monitor a weaker actor and take over. The README's AndroidWorld success rates (including Qwen3.5-9B results it says were not reproducible under vLLM) were not reproduced; code was read, not run.",
+    "details": {
+      "repository_revision": "faca68f386aff7277cdf494c84693c51090229c6",
+      "availability": "Public synthesis, rollout, conversion and evaluation code with LLaMA-Factory configs; the OpenMobile-8B checkpoint and OpenMobile-Data are released separately on Hugging Face."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/njucckevin/OpenMobile-Code/git/trees/faca68f386aff7277cdf494c84693c51090229c6?recursive=1",
+        "sha256": "eb6fdd1db8dc4497999545d3f2cccdc8fe76a4adb2fd645801d0c15a7600b7fb",
+        "retrieved_at": "2026-10-19T06:53:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/AndroidWorld/android_world/agents/seeact_v.py",
+        "sha256": "93d1727d85392961feeb885c55d3d6834d8ff9f7085c7a54754cff126feee0fd",
+        "retrieved_at": "2026-10-19T06:53:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/LlamaFactory/dataset_info.json",
+        "sha256": "1c915333e2d61d34742eb6f669ca0a3721f7566ce79a2eecdb9706845bd53138",
+        "retrieved_at": "2026-10-19T06:53:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/LICENSE",
+        "sha256": "b09fcaf4fbc265223c2479c410beef2b98c5e687c78ecedf3452aa12ffc465f1",
+        "retrieved_at": "2026-10-19T06:53:35Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8594e32aab90e0fdbaf436997e4082884423b6d3298f46247dcf0820e0499080",
+    "reviewed_at": "2026-10-19T06:54:58Z"
+  },
+  {
+    "id": "url:3849b18aa87edefc6afd",
+    "name": "OpenMobile-Data",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/cckevinn/OpenMobile-Data",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "mobile-navigation",
+      "imitation-learning"
+    ],
+    "summary": "OpenMobile's synthesized Android agent data: four LLaMA-Factory SFT split files built from AndroidWorld rollouts plus an archive of the original rollout trajectories and screenshots.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenMobile Data"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/cckevinn/OpenMobile-Data/raw/8ed12d15763057f8e8d40134cfddfcc756ff8a7a/README.md"
+    ],
+    "documented_by": [
+      "2604.15093"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The short card says the four JSON files are LLaMA-Factory training files and raw_dumps.tar.gz holds the original rollout trajectories with the screenshots the training files need. The OpenMobile code README registers the files as openmobile_split1 to openmobile_split4 in ShareGPT format and gives a converter to the Qwen3.5 format. No license is declared on the card.",
+    "details": {
+      "hub_id": "cckevinn/OpenMobile-Data",
+      "hub_revision": "8ed12d15763057f8e8d40134cfddfcc756ff8a7a",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/cckevinn/OpenMobile-Data/tree/8ed12d15763057f8e8d40134cfddfcc756ff8a7a",
+      "repository_url": "https://github.com/njucckevin/OpenMobile-Code",
+      "dataset_profile": {
+        "supervision": [
+          "synthesized task instructions",
+          "agent rollout trajectories with learner/expert policy switching"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "step histories",
+          "reasoning text",
+          "actions",
+          "target element bounding boxes"
+        ],
+        "formats": [
+          "LLaMA-Factory ShareGPT JSON",
+          "tar.gz archive of raw rollouts"
+        ],
+        "splits": [
+          "split1",
+          "split2",
+          "split3",
+          "split4"
+        ],
+        "counts": [
+          {
+            "value": 2800,
+            "unit": "synthesized instructions",
+            "qualifier": "approximately",
+            "population": "OpenMobile dataset (project page)",
+            "basis": "reported",
+            "evidence_url": "https://njucckevin.github.io/openmobile/"
+          },
+          {
+            "value": 34000,
+            "unit": "action steps",
+            "qualifier": "approximately",
+            "population": "OpenMobile dataset (project page)",
+            "basis": "reported",
+            "evidence_url": "https://njucckevin.github.io/openmobile/"
+          },
+          {
+            "value": 20,
+            "unit": "Android apps",
+            "qualifier": "exact",
+            "population": "OpenMobile dataset (project page)",
+            "basis": "reported",
+            "evidence_url": "https://njucckevin.github.io/openmobile/"
+          }
+        ],
+        "notes": "Instruction, step and app counts are the project page's headline figures. Streaming the four split files at revision 8ed12d1 gave 7,393, 6,767, 9,345 and 3,855 step-level samples (27,360 in total), each with one screenshot path into raw_dumps, a system prompt with the mobile_use tool, the task and step history, an assistant thought with a tool call, and a target bounding box; the files exceed the receipt budget, so these computed counts are not recorded as count observations. Steps in the files and the page's action steps are not reconciled. The four split names are training files, not train/test splits.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/cckevinn/OpenMobile-Data/raw/8ed12d15763057f8e8d40134cfddfcc756ff8a7a/README.md",
+          "https://huggingface.co/api/datasets/cckevinn/OpenMobile-Data/revision/8ed12d15763057f8e8d40134cfddfcc756ff8a7a",
+          "https://njucckevin.github.io/openmobile/",
+          "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/cckevinn/OpenMobile-Data/revision/8ed12d15763057f8e8d40134cfddfcc756ff8a7a",
+        "sha256": "054432be78024ecf09b1d8f022c11b82addf7ee5127a8f355d9a6eb18b212355",
+        "retrieved_at": "2026-10-19T06:53:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile",
+          "environments"
+        ],
+        "url": "https://njucckevin.github.io/openmobile/",
+        "sha256": "b37f01ef9fcffa0eef1f6c5c317a333e6f14210dfda54843fdaba2f88331b864",
+        "retrieved_at": "2026-10-19T06:53:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.repository_url",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md",
+        "sha256": "8594e32aab90e0fdbaf436997e4082884423b6d3298f46247dcf0820e0499080",
+        "retrieved_at": "2026-10-19T06:53:33Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": null,
+        "reason": "The dataset card declares no license; the code repository's Apache-2.0 license is not transferred to the data, and the code README says other released artifacts may have their own terms.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/cckevinn/OpenMobile-Data/raw/8ed12d15763057f8e8d40134cfddfcc756ff8a7a/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5a119d88171e645b3dccad526ed25e75d4e28e4e5c101f89daa1c6697b92d601",
+    "reviewed_at": "2026-10-19T06:54:58Z"
+  },
+  {
+    "id": "url:6616228d4f267363458e",
+    "name": "OpenMobile-8B",
+    "kind": "model",
+    "url": "https://huggingface.co/cckevinn/OpenMobile-8B",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "summary": "Mobile agent checkpoint with a Qwen3-VL architecture, released with OpenMobile and fine-tuned on its synthesized Android trajectories; the code README serves it with vLLM for AndroidWorld evaluation.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenMobile-8B"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md"
+    ],
+    "documented_by": [
+      "2604.15093"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "github:njucckevin/openmobile-code",
+        "evidence_url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md"
+      },
+      {
+        "type": "trained_on",
+        "target_id": "url:3849b18aa87edefc6afd",
+        "evidence_url": "https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.training_data_note"
+    ],
+    "notes": "The Hub model card (README.md) is empty, so identity and purpose come from the OpenMobile code README, which links this repository as the model, lists fine-tuned checkpoints based on OpenMobile data, and uses OpenMobile-8B as the example model for AndroidWorld evaluation. The project page reports AndroidWorld, AndroidLab and MobileWorld results for its Qwen3-VL-8B variant; these were not reproduced. No base-model ID is declared on the Hub. The manifest lists four Safetensors shards and an index; weights were not downloaded.",
+    "details": {
+      "hub_id": "cckevinn/OpenMobile-8B",
+      "hub_revision": "0cd9fc56c7f359ebe62ae273b731f3213fd62b40",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/cckevinn/OpenMobile-8B/tree/0cd9fc56c7f359ebe62ae273b731f3213fd62b40",
+      "artifact_type": "model-checkpoint",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "parameter_label": "8B",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "artifact_inspection": "Hub file manifest and config at the pinned revision; the card is empty and the weights were not downloaded.",
+      "training_data_note": "Code README: fine-tuned checkpoints based on OpenMobile data; the project page describes Qwen3-VL-8B fine-tuned on OpenMobile data.",
+      "repository_url": "https://github.com/njucckevin/OpenMobile-Code"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files",
+          "notes",
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/api/models/cckevinn/OpenMobile-8B/revision/0cd9fc56c7f359ebe62ae273b731f3213fd62b40",
+        "sha256": "07751fda41e98eccbb1e9d439b4fcc93a15580948fa81afa18b439d9143859c0",
+        "retrieved_at": "2026-10-19T06:53:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/cckevinn/OpenMobile-8B/raw/0cd9fc56c7f359ebe62ae273b731f3213fd62b40/config.json",
+        "sha256": "50902136bf6856d8935a6fd84aa9bdb4eedf6ef260d9143421943f5800001fd0",
+        "retrieved_at": "2026-10-19T06:53:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.training_data_note"
+        ],
+        "url": "https://njucckevin.github.io/openmobile/",
+        "sha256": "b37f01ef9fcffa0eef1f6c5c317a333e6f14210dfda54843fdaba2f88331b864",
+        "retrieved_at": "2026-10-19T06:53:36Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": null,
+        "reason": "The Hub card is empty and declares no license; the code README's Apache-2.0 covers the code and says other released artifacts may have their own terms.",
+        "evidence_urls": [
+          "https://huggingface.co/api/models/cckevinn/OpenMobile-8B/revision/0cd9fc56c7f359ebe62ae273b731f3213fd62b40"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8594e32aab90e0fdbaf436997e4082884423b6d3298f46247dcf0820e0499080",
+    "reviewed_at": "2026-10-19T06:54:58Z"
   }
 ]

@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-19T06:54:58Z",
+  "total_records": 3181,
+  "curated_records": 1617,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
@@ -189,17 +189,17 @@
     "agent": 43,
     "benchmark": 88,
     "company": 16,
-    "dataset": 86,
-    "framework": 75,
+    "dataset": 87,
+    "framework": 76,
     "infrastructure": 14,
-    "model": 98,
+    "model": 99,
     "paper": 2700,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 300,
+    "android": 303,
     "cross-platform": 197,
     "desktop": 322,
     "harmonyos": 3,
@@ -237,7 +237,7 @@
       "unspecified": 16
     },
     "dataset": {
-      "android": 35,
+      "android": 36,
       "cross-platform": 15,
       "desktop": 18,
       "ios": 2,
@@ -248,7 +248,7 @@
       "windows": 4
     },
     "framework": {
-      "android": 20,
+      "android": 21,
       "cross-platform": 7,
       "desktop": 22,
       "harmonyos": 1,
@@ -269,7 +269,7 @@
       "windows": 1
     },
     "model": {
-      "android": 24,
+      "android": 25,
       "cross-platform": 47,
       "desktop": 24,
       "ios": 4,
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0

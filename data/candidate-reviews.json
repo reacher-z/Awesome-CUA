@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9dd76995d7995ac1a0c7",
+    "url": "https://notte.cc",
+    "decision": "alias",
+    "target_id": "github:nottelabs/notte",
+    "reason": "Landing website for the indexed Notte browser-agent framework and cloud platform; the repository's README and GitHub homepage field point to it."
   }
 ]

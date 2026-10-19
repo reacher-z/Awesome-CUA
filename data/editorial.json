@@ -5309,7 +5309,44 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "9fe74ee087156efde4531a058ccd3abad504032e0bd994979992ed4164c8704b",
     "reviewed_at": "2026-10-16T06:36:04Z",
-    "publisher_id": "organization:hyperbrowser"
+    "publisher_id": "organization:hyperbrowser",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "AGPL-3.0-or-later",
+          "url": "https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/a7ec1f45e2f7b99ea505218b0516d156da7597b5/LICENSE",
+          "retrieved_at": "2026-10-19T06:03:10Z",
+          "basis": "The LICENSE at commit a7ec1f4 is a short program notice, not the full license text: copyright 2025 S2 Labs Inc., licensed under the GNU Affero General Public License \"either version 3 of the License, or (at your option) any later version\". GitHub classifies it as NOASSERTION, and package.json gives the short form AGPL-3.0 for @hyperbrowser/agent."
+        },
+        "reason": "The LICENSE at commit a7ec1f4 is a short program notice, not the full license text: copyright 2025 S2 Labs Inc., licensed under the GNU Affero General Public License \"either version 3 of the License, or (at your option) any later version\". GitHub classifies it as NOASSERTION, and package.json gives the short form AGPL-3.0 for @hyperbrowser/agent.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/a7ec1f45e2f7b99ea505218b0516d156da7597b5/LICENSE",
+          "https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/a7ec1f45e2f7b99ea505218b0516d156da7597b5/package.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/a7ec1f45e2f7b99ea505218b0516d156da7597b5/LICENSE",
+        "sha256": "4c29121d0da7bdb4893aa0f7035815e99a4f801a760434aac77370b2ad4c00bc",
+        "retrieved_at": "2026-10-19T06:03:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/a7ec1f45e2f7b99ea505218b0516d156da7597b5/package.json",
+        "sha256": "3b472044f66558638838298ea6dc343e5b1d781a99b26ff8fb0bc78c0d9062ca",
+        "retrieved_at": "2026-10-19T06:03:10Z"
+      }
+    ]
   },
   {
     "name": "CUAWright (formerly Webwright)",

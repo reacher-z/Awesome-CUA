@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
+  "as_of_utc": "2026-10-19T06:03:10Z",
   "total_records": 3178,
   "curated_records": 1614,
   "bibliographic_records": 2718,
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0

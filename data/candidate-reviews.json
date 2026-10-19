@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:59a677c3d80441b8fc2d",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3637528.3671646",
+    "decision": "alias",
+    "target_id": "arxiv:2312.06677",
+    "reason": "ACM Digital Library abstract page for the KDD 2024 edition (DOI 10.1145/3637528.3671646), retitled Intelligent Agents with LLM-based Process Automation, of the indexed LLMPA paper. Crossref lists seven authors for this edition, the arXiv list without Longfei Li and Jinjie Gu, in the same order; the abstract is the same."
   }
 ]

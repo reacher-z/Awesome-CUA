@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:241ffd85c9e1c43cb606",
+    "url": "https://saidgurbuz.github.io/screenparse",
+    "decision": "alias",
+    "target_id": "arxiv:2602.14276",
+    "reason": "Project website of the indexed ScreenParse paper: same five authors, and its citation block cites arXiv 2602.14276 under the same title; the page heading omits the final word \"Supervision\" and labels the work ICML 2026."
   }
 ]

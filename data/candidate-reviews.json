@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:706b604379969ecb2f14",
+    "url": "https://osu-nlp-group.github.io/UGround",
+    "decision": "alias",
+    "target_id": "github:osu-nlp-group/uground",
+    "reason": "Project website for the indexed UGround visual grounding repository."
   }
 ]

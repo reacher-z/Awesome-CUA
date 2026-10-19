@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d67073361d40856980e8",
+    "url": "https://highlight.run",
+    "decision": "not_a_resource",
+    "reason": "Redirects to www.highlight.io and from there to the LaunchDarkly homepage; it is not the Highlight AI desktop assistant (highlightai.com) that the listing names, and no computer-use resource is behind it."
   }
 ]

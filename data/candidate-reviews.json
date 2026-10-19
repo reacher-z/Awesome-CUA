@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e7fea3f3f07c57a16dae",
+    "url": "https://browserable.ai",
+    "decision": "alias",
+    "target_id": "github:browserable/browserable",
+    "reason": "Website of the Browserable browser-agent library; it is the repository homepage and links the browserable/browserable source."
   }
 ]

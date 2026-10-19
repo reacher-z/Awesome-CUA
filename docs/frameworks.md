@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**75 resources:** [Web (28)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
+**76 resources:** [Web (29)](#web) · [Desktop (14)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -21,6 +21,7 @@ All entries in this section: web.
 | [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Experiment framework for developing and evaluating browser agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ServiceNow/AgentLab/HEAD/README.md) |
 | [Browser Use](https://github.com/browser-use/browser-use) | — | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/browser-use/browser-use/HEAD/README.md) |
+| [Browserable](https://github.com/browserable/browserable) | — | code MIT | Self-hosted browser-agent platform with a JS SDK and REST API: a planner sets high-level steps, and a runner reads a screenshot and a numbered DOM chunk to pick Playwright actions in a local or hosted browser. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/browserable/browserable/HEAD/README.md) |
 | [Go-Browse](https://github.com/ApGa/Go-Browse) | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | code MIT | Structured website-exploration and data-processing code that revisits discovered pages, proposes tasks and collects trajectories for web-agent fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ApGa/Go-Browse/HEAD/README.md) |
 | [HyperAgent](https://github.com/hyperbrowserai/HyperAgent) | — | — | Library adding natural-language commands to Playwright: accessibility-tree single actions, multi-step tasks that can use screenshots, an MCP client and action caching for replay without LLM calls. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hyperbrowserai/HyperAgent/HEAD/README.md) |
 | [LaVague](https://github.com/lavague-ai/LaVague) | — | code Apache-2.0 | Open-source web agent framework where a World Model turns an objective and the current page into instructions and an Action Engine compiles them into Selenium or Playwright code to run. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/lavague-ai/LaVague/HEAD/README.md) |

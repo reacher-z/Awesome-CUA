@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:46d5bfa2a1d99417b008",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_BAMI_Training-Free_Bias_Mitigation_in_GUI_Grounding_CVPR_2026_paper.html",
+    "decision": "alias",
+    "target_id": "arxiv:2605.06664",
+    "reason": "CVF Open Access page for the CVPR 2026 edition (pages 34596-34605) of the indexed BAMI preprint; title and nine-author list match arXiv 2605.06664, which the page links."
   }
 ]

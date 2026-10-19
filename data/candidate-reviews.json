@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:1e0cef12163868c9a338",
+    "url": "https://sheetcopilot.github.io",
+    "decision": "alias",
+    "target_id": "github:bravegroup/sheetcopilot",
+    "reason": "Project website for the indexed SheetCopilot spreadsheet agent repository, which sets it as its homepage; the page also presents the SheetCopilot paper (arXiv 2305.19308)."
   }
 ]

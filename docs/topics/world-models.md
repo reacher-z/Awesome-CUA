@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-42 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+43 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Papers (36)](#papers)
 
 ## Datasets
 
@@ -44,6 +44,7 @@ All entries in this section: web.
 | 2026‑09‑02 | [Discriminative World Models for Web Agents](https://arxiv.org/abs/2609.02885) | web | Trains discriminative web world models to distinguish the true next state from outcomes of alternative actions. Branching web trajectories support training, followed by tests of predicted-state matching, process-reward action ranking and end-to-end WebArena-Lite selection. |
 | 2026‑08‑30 | [GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments](https://arxiv.org/abs/2609.00048) | unspecified | Introduces GUI-CC, a benchmark for assessing GUI world models as multi-step agent environments. Separate reference-action and agent-loop tracks test whether generated screens preserve context, plausible transitions, and task progress throughout interaction. |
 | 2026‑08‑27 | [WM-R1: Training GUI Agents to Reason and leverage World Models with Reinforcement Learning](https://arxiv.org/abs/2608.27508) | android | Uses learned world models for mobile-agent training rollouts and for reasoning about the consequences of candidate GUI actions. |
+| 2026‑08‑25 | [GameWAM: A World Action Model for Video Games](https://arxiv.org/abs/2608.26200) | unspecified | GameWAM jointly generates future frames and native keyboard-mouse actions for closed-loop play in Minecraft and ViZDoom, routing each action step between gameplay and in-game GUI control modes. |
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |
 | 2026‑07‑27 | [Scaling GUI Agents with Visual State Transitions](https://arxiv.org/abs/2607.24112) | desktop, android | Introduces State Transition Pretraining, which jointly learns to infer actions from GUI changes and predict future states from current screens and actions. Subsequent instruction-trajectory fine-tuning tests whether these representations transfer to desktop and mobile agent tasks. |
 | 2026‑07‑19 | [EvoGUI: An Evolution-Aware Benchmark for GUI State-Transition Understanding](https://arxiv.org/abs/2607.17050) | web | Introduces EvoGUI, which derives temporal ordering, inverse action/value prediction, and successor-discrimination probes from recorded GUI trajectories. Its web-derived benchmark isolates transition understanding from the other abilities involved in end-to-end task success. |

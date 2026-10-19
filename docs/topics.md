@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,614 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,615 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -21,16 +21,16 @@
 | [Tool integration](topics/tool-integration.md) | 131 | 9 | 2 | 4 | 24 | 92 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
 | [Workflows](topics/workflow.md) | 110 | 6 | 2 | · | 22 | 80 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
-| [Long-horizon tasks](topics/long-horizon.md) | 99 | 5 | 1 | 1 | 4 | 88 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
+| [Long-horizon tasks](topics/long-horizon.md) | 100 | 5 | 1 | 1 | 4 | 89 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Human in the loop](topics/human-in-the-loop.md) | 79 | 1 | · | · | 7 | 71 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Imitation learning](topics/imitation-learning.md) | 74 | 1 | 14 | 5 | 10 | 44 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
 | [Reward models](topics/reward-models.md) | 56 | 4 | 3 | 4 | 3 | 42 | [From Trajectories to Grounded Preferences: Process Preference Synthesis via Interaction Element Graphs for Web PRMs](https://arxiv.org/abs/2609.32351) · 2026-09-26 |
 | [Sandboxes](topics/sandbox.md) | 55 | 3 | · | · | 14 | 38 | [MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments](https://arxiv.org/abs/2610.20939) · 2026-10-14 |
 | [Cross-app](topics/cross-app.md) | 54 | 13 | 2 | · | 4 | 35 | [AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks](https://arxiv.org/abs/2610.11050) · 2026-10-08 |
-| [Action prediction](topics/action-prediction.md) | 48 | · | 2 | 17 | 3 | 26 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
+| [Action prediction](topics/action-prediction.md) | 49 | · | 2 | 17 | 3 | 27 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
 | [State tracking](topics/state-tracking.md) | 48 | · | · | · | 3 | 45 | [LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles](https://arxiv.org/abs/2609.34769) · 2026-09-28 |
 | [Interaction history](topics/interaction-history.md) | 47 | · | · | 1 | · | 46 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
-| [World models](topics/world-models.md) | 42 | · | 3 | 2 | 2 | 35 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) · 2026-10-09 |
+| [World models](topics/world-models.md) | 43 | · | 3 | 2 | 2 | 36 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) · 2026-10-09 |
 | [Self-reflection](topics/self-reflection.md) | 38 | · | · | 3 | 7 | 28 | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) · 2026-09-15 |
 | [Video](topics/video.md) | 38 | 2 | 7 | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
 | [Observability](topics/observability.md) | 36 | · | · | · | 3 | 33 | [WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites](https://arxiv.org/abs/2610.03036) · 2026-10-02 |

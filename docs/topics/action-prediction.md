@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (27)](#papers)
 
 ## Datasets
 
@@ -49,6 +49,7 @@
 | --- | --- | --- | --- |
 | 2026‑09‑23 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) | web | WebMRE pairs guidance sentences with grounded actions in an offline benchmark derived from successful WebArena traces. Controlled decoding-prefix interventions test how guide content affects action selection, while separating offline prediction metrics from live browser task success. |
 | 2026‑09‑22 | [Towards Omni-dimensional GUI Agent Navigation with Masked Trajectory Prediction](https://arxiv.org/abs/2609.25769) | unspecified | MaP unifies GUI-navigation objectives by masking and predicting components of multi-turn trajectories. Role-aware adapters address heterogeneous training data, and evaluations compare the approach with direct task-mixture training across navigation benchmarks. |
+| 2026‑08‑25 | [GameWAM: A World Action Model for Video Games](https://arxiv.org/abs/2608.26200) | unspecified | GameWAM jointly generates future frames and native keyboard-mouse actions for closed-loop play in Minecraft and ViZDoom, routing each action step between gameplay and in-game GUI control modes. |
 | 2026‑08‑22 | [Beyond Success and Failure: Length-Aware Contrastive Learning for GUI Agents](https://arxiv.org/abs/2608.21830) | unspecified | Introduces LACL-GUI, a contrastive learning objective that distinguishes trajectory quality within both successful and failed GUI executions. It favors concise successes and uses divergence from successful trajectories to differentiate failures during policy optimization. |
 | 2026‑07‑27 | [Scaling GUI Agents with Visual State Transitions](https://arxiv.org/abs/2607.24112) | desktop, android | Introduces State Transition Pretraining, which jointly learns to infer actions from GUI changes and predict future states from current screens and actions. Subsequent instruction-trajectory fine-tuning tests whether these representations transfer to desktop and mobile agent tasks. |
 | 2026‑07‑19 | [EvoGUI: An Evolution-Aware Benchmark for GUI State-Transition Understanding](https://arxiv.org/abs/2607.17050) | web | Introduces EvoGUI, which derives temporal ordering, inverse action/value prediction, and successor-discrimination probes from recorded GUI trajectories. Its web-derived benchmark isolates transition understanding from the other abilities involved in end-to-end task success. |

@@ -63143,5 +63143,46 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "GameWAM: A World Action Model for Video Games",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.26200",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "world-models",
+      "action-prediction",
+      "long-horizon"
+    ],
+    "summary": "GameWAM jointly generates future frames and native keyboard-mouse actions for closed-loop play in Minecraft and ViZDoom, routing each action step between gameplay and in-game GUI control modes.",
+    "verify_terms": [
+      "GameWAM: A World Action Model for Video Games"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.26200v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent game-control work: 'GUI control' refers to Minecraft's in-game interface screens, which share the keyboard-mouse action space with gameplay and are trained with scripted MineStudio GUI trajectories. Evaluation uses the Minecraft MCU benchmark and a four-map ViZDoom suite. The v2 PDF states that code, data and weights will be released, and the abstract links the project page yunncheng.github.io/GameWAM. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/pdf/2608.26200v2",
+        "retrieved_at": "2026-10-19T08:49:38Z",
+        "sha256": "1ebf72d4c62419a8d59e5e81c5cc99431bad503678c3def26ff0fb930c42fcf9",
+        "supports": [
+          "scope",
+          "environments",
+          "summary",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 PDF (no HTML rendering exists): introduction, data construction including scripted GUI trajectories, per-action gameplay/GUI routing, MCU and ViZDoom evaluation, and the release statement.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c9a652f183f25e9d65ee213e25278b13a92d5a9f649e842a3c3b2882b3a35bdb",
+    "reviewed_at": "2026-10-19T08:49:40Z"
   }
 ]

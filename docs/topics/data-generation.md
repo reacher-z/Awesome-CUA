@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -151,6 +151,7 @@ All entries in this section: android.
 | 2026‑08‑22 | [Training Needs Trustworthy Worlds: Verified Synthetic Web Environments for Agent Learning](https://arxiv.org/abs/2608.21898) | web | Builds synthetic websites with verified navigation, backend state, and feasible tasks to provide reliable supervision for web-agent training. |
 | 2026‑08‑16 | [UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations](https://arxiv.org/abs/2608.15930) | desktop, windows | Combines environment-grounded training with demonstration-conditioned workflows, and introduces OSWorkerBench for extended office-task evaluation. |
 | 2026‑08‑12 | [SynWeaver: Website-Prior Task and Trajectory Co-Synthesis for Web Agents](https://arxiv.org/abs/2608.12429) | web | SynWeaver explores a website to build a map of page states and executable interactions, then learns website priors for task proposals. Joint task/trajectory synthesis revises inconsistent pairs and verifies or repairs the resulting supervision. |
+| 2026‑08‑08 | [Back to the Future: A workbook time machine for spread sheet creation benchmarks](https://arxiv.org/abs/2608.07873) | desktop, windows | Introduces the workbook time machine, which derives spreadsheet-creation tasks from real Excel workbooks, producing WTM-Corpus and the 150-task WTM-Bench for formulas, charts, pivot tables and conditional formatting. |
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |
 | 2026‑08‑03 | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | desktop, web | Qwen-CUA operates through screenshots and keyboard/mouse events while compressing older visual history into reusable context blocks. Its report combines verifiable task generation, trajectory-based training and separate browser and Bash-augmented studies. |
 | 2026‑07‑30 | [Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale](https://arxiv.org/abs/2607.28074) | web | Introduces Echoverse, which compiles specifications into stateful applications with database-grounded graders and uses rollouts to improve both the environments and agent policies. It examines behavioral depth, targeted interface practice, and environment repair as sources of training value. |

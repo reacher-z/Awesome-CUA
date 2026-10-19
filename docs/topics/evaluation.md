@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (560)](#papers)
 
 ## Benchmarks
 
@@ -262,6 +262,7 @@ All entries in this section: web.
 | 2026‑08‑11 | [DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?](https://arxiv.org/abs/2608.10366) | desktop, linux | DSAgentBench evaluates end-to-end data-science workflows spanning analysis, modeling and visualization inside a real desktop environment. Task evaluators check produced analytical and visual artifacts, while the released interface supports screenshot or accessibility observations and GUI actions. |
 | 2026‑08‑10 | [Hallucination-Free GUI Grounding via Regression-Free Layout-Aware Matching](https://arxiv.org/abs/2608.09654) | web | This framework separates frozen-model instruction expansion from a trained layout-aware matcher that localizes GUI elements without coordinate regression. Binary text/icon supervision supports the matcher, with evaluations on GUI grounding and Mind2Web element-selection tasks. |
 | 2026‑08‑09 | [CAP: A Scalable Benchmark for Evaluating Cross-Site Browser Agents with Complex Actions and Perception](https://arxiv.org/abs/2608.08392) | web | CAP builds cross-site browser workflows by decomposing websites into operation and perception requirements and recomposing them into tasks. Its judge-based evaluation diagnoses complex interactions and visual-perception failures across real websites. |
+| 2026‑08‑08 | [Back to the Future: A workbook time machine for spread sheet creation benchmarks](https://arxiv.org/abs/2608.07873) | desktop, windows | Introduces the workbook time machine, which derives spreadsheet-creation tasks from real Excel workbooks, producing WTM-Corpus and the 150-task WTM-Bench for formulas, charts, pivot tables and conditional formatting. |
 | 2026‑08‑07 | [RealGUINoise: An Interactive Cross-Platform Benchmark for GUI Agent Robustness under Real-World Interface Noise](https://arxiv.org/abs/2609.38184) | web, desktop, cross-platform | Evaluates interactive GUI agents under varied realistic interface noise, comparing task completion, safety, and behavior with clean-environment runs. |
 | 2026‑08‑06 | [Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents](https://arxiv.org/abs/2608.06171) | web | Measures the complementarity, cost and rerun variability of six browser observation modes on WebArena and VisualWebArena. Its routing experiments distinguish an oracle cost opportunity from policies that fail to robustly outperform a fixed observation mode. |
 | 2026‑08‑06 | [StepReflect: Structured UI Transition Reflection for Mobile GUI Agents](https://arxiv.org/abs/2608.05587) | android | StepReflect predicts structured per-action reflections from transition specifications and paired visual evidence. The paper distinguishes offline transition-label accuracy from online task success when the reflection model is integrated into mobile agents. |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (84)](#papers)
 
 ## Models
 
@@ -83,6 +83,7 @@ All entries in this section: web.
 | 2026‑08‑31 | [SCAFFOLD: Self-Improving Web Agents via Recursive Parametric Skill Abstraction](https://arxiv.org/abs/2609.05511) | web | Introduces SCAFFOLD, which extracts executable skills from web trajectories, composes them into a hierarchy, and compresses redundant skills through behavioral checks. It periodically distills skill-guided trajectories into the policy and studies repeated improvement across web benchmarks. |
 | 2026‑08‑27 | [ASIL: Replacing Screenshot-and-Click with Structured State and Semantic Actions](https://arxiv.org/abs/2608.26991) | unspecified | ASIL exposes application state as structured JSON and provides code-executable semantic actions. Its application benchmark compares this interface with screenshot control and application-native APIs, and studies supervised and reinforcement learning on the structured interface. |
 | 2026‑08‑27 | [UI-Venus-2 Technical Report](https://arxiv.org/abs/2609.00028) | web, desktop, cross-platform | Describes a GUI foundation agent trained through expanded environments, function-grounded tasks, and trajectory verification with safety-aware execution mechanisms. |
+| 2026‑08‑08 | [Back to the Future: A workbook time machine for spread sheet creation benchmarks](https://arxiv.org/abs/2608.07873) | desktop, windows | Introduces the workbook time machine, which derives spreadsheet-creation tasks from real Excel workbooks, producing WTM-Corpus and the 150-task WTM-Bench for formulas, charts, pivot tables and conditional formatting. |
 | 2026‑07‑31 | [MAGA: Multi-Platform Self-Fusion of GUI Agents via Structured Action Distillation](https://arxiv.org/abs/2607.29320) | cross-platform | MAGA distills specialized GUI agents into one policy by allocating supervision according to structured-action correctness rather than treating all response tokens equally. A training-only teacher hint supports fusion across mobile, web and desktop settings without changing student inputs. |
 | 2026‑07‑16 | [Tactile: Giving Computer-Using Agents Hands and Feet](https://arxiv.org/abs/2607.14443) | desktop, macos | Tactile turns accessibility, OCR and visual evidence into explicit desktop targets with executable actions and verification cues. Its execution loop chooses semantic actions or coordinate fallbacks while retaining provenance for replay and diagnosis. |
 | 2026‑06‑29 | [LUMOS: A Semantic Operating-System Layer for Accessibility-Grounded AI Agents](https://arxiv.org/abs/2606.30697) | web | LUMOS converts native accessibility metadata and browser UI structure into semantic interface blueprints with stable element identifiers and available actions. It combines live pointer-to-element grounding with an observe-act loop constrained to visible-UI primitives. |

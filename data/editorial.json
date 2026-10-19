@@ -63143,5 +63143,40 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Back to the Future: A workbook time machine for spread sheet creation benchmarks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.07873",
+    "summary": "Introduces the workbook time machine, which derives spreadsheet-creation tasks from real Excel workbooks, producing WTM-Corpus and the 150-task WTM-Bench for formulas, charts, pivot tables and conditional formatting.",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "data-generation",
+      "automation"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "workbook time machine for spread sheet creation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.07873v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "df6fbb8aa1008c83a0f43b3fbf5f8c8452d7288ff75d34939177052c6c415aad",
+    "reviewed_at": "2026-10-19T08:46:51Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent application-automation benchmark: agents act on Excel workbooks through code APIs (openpyxl, VBA through COM automation, and Office.js) rather than GUI actions. Source workbooks come from the Enron and FUSE corpora; WTM-Corpus holds 8,931 queries over 2,977 tasks, and WTM-Bench asks each of its 150 tasks at three specificity levels. The evaluation compares SheetCopilot, SheetAgent and SpreadsheetBench orchestrations with a tool-calling loop. Reviewed against the v1 abstract and HTML full text; results were not independently reproduced."
   }
 ]

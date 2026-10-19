@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
 
 ## Benchmarks
 
@@ -123,6 +123,7 @@ All entries in this section: web.
 | 2026‑06‑09 | [Workflow-GYM: Towards Long-Horizon Evaluation of Computer-use Agentic tasks in Real-World Professional Fields](https://arxiv.org/abs/2606.11042) | unspecified | Workflow-GYM evaluates long GUI workflows in professional software rather than isolated interface actions. Its analysis examines failures such as omitted stages, accumulated errors and goal drift during specialized end-to-end work. |
 | 2026‑06‑04 | [MacArena: Benchmarking Computer Use Agents on an Online macOS Environment](https://arxiv.org/abs/2606.06560) | desktop, macos | MacArena runs computer-use tasks through Apple’s virtualization framework on Apple Silicon, combining task ports with macOS-native workloads. It distinguishes the ported and native subsets when examining agent performance and cross-platform transfer. |
 | 2026‑06‑03 | [Domain-Conditioned Safety in Frontier Computer-Using Agents: A 793-Episode Browser Benchmark, a Coding-Domain Cross-Reference, and a Reproducibility Audit of Recent Red-Teaming](https://arxiv.org/abs/2606.05233) | web | Introduces CUA-HandCrafted, a browser-agent red-teaming benchmark that varies attack templates, tasks and system prompts. Its domain comparison and reproducibility audit caution against transferring browser-surface safety conclusions to coding agents or unreleased optimized injections. |
+| 2026‑06 | [Exposing and Evaluating Hallucinations for GUI Grounding](https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Exposing_and_Evaluating_Hallucinations_for_GUI_Grounding_CVPR_2026_paper.html) | web, desktop, cross-platform | Separates confusion and fabricated hallucinations in GUI grounding, labels 1,000 English and 1,000 Chinese GUI-HalluBench instances for parsing and hallucination, and tests prompt and fine-tuning mitigations. |
 | 2026‑06 | [GUI-SAGE: Enhancing GUI Automation with Self-Explanatory Learning](https://openaccess.thecvf.com/content/CVPR2026/html/Tang_GUI-SAGE_Enhancing_GUI_Automation_with_Self-Explanatory_Learning_CVPR_2026_paper.html) | android | GUI-SAGE generates reasoning conditioned on known actions and weights policy updates using confidence and reward signals. Its experiments use AndroidControl and GUIOdyssey data and separately evaluate interactive AndroidWorld tasks. |
 | 2026‑05‑27 | [MIRAGE: Context-Aware Prompt Injection against Mobile GUI Agents via User-Generated Content](https://arxiv.org/abs/2605.28116) | unspecified | MIRAGE constructs mobile screenshot injections in ordinary user-content regions through localization, contextual payload generation and realism curation. Its evaluation separates visual realism from attack effectiveness against pixel-observing GUI agents. |
 | 2026‑05‑26 | [AndroidDaily: A Verifiable Benchmark for Mobile GUI Agents on Real-World Closed-Source Applications](https://arxiv.org/abs/2605.27761) | android | AndroidDaily evaluates mobile GUI agents on daily workflows in closed-source Android apps. Its GRADE evaluator follows visual trajectories against operational obligations, output-quality requirements and negative constraints, producing process-level diagnostics without hidden app state. |

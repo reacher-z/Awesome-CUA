@@ -63143,5 +63143,88 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:b87c2f4d605e65ff0726",
+    "name": "Exposing and Evaluating Hallucinations for GUI Grounding",
+    "kind": "paper",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Exposing_and_Evaluating_Hallucinations_for_GUI_Grounding_CVPR_2026_paper.html",
+    "aliases": [
+      "Evaluating and Easing Hallucinations for GUI Grounding"
+    ],
+    "summary": "Separates confusion and fabricated hallucinations in GUI grounding, labels 1,000 English and 1,000 Chinese GUI-HalluBench instances for parsing and hallucination, and tests prompt and fine-tuning mitigations.",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "robustness",
+      "evaluation",
+      "screen-understanding"
+    ],
+    "verify_terms": [
+      "Exposing and Evaluating Hallucinations for GUI Grounding",
+      "GUI-HalluBench"
+    ],
+    "evidence_urls": [
+      "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Exposing_and_Evaluating_Hallucinations_for_GUI_Grounding_CVPR_2026_paper.html"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fcf0796b159e1df0d2c1718d9d6aecd56a87563c1fdd69feb1444fdae43959ac",
+    "reviewed_at": "2026-10-19T06:39:35Z",
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "environments",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "aliases",
+          "details.publication.authors",
+          "details.publication.identity_basis",
+          "details.publication.notes",
+          "environments",
+          "notes",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Exposing_and_Evaluating_Hallucinations_for_GUI_Grounding_CVPR_2026_paper.pdf",
+        "retrieved_at": "2026-10-19T06:26:32Z",
+        "sha256": "4484a58b5c49efccac7c1af8f71e049e9b0a7c17e980a603eb6d3dfdcf3af2e9"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/aiben-ch/GUI-HalluBench/207ee106e8fc10d458c9512fe27bbd04fd124b0a/README.md",
+        "retrieved_at": "2026-10-19T06:38:53Z",
+        "sha256": "667a05d2e2f35b95228d0e3bda015a76096e07e06979357214f42a4e18633afb"
+      }
+    ],
+    "notes": "The annotation was reviewed against retained primary publication sources. Experiments have not been independently reproduced. The CVF landing page, citation metadata and BibTeX title the paper 'Exposing and Evaluating Hallucinations for GUI Grounding'; the PDF title page reads 'Evaluating and Easing Hallucinations for GUI Grounding', and only the PDF abstract describes the Parsing-guided Prompt (PGP) and Hallucination-aware Fine-Tuning (HFT) methods. English screens come from ScreenSpot and AMEX and Chinese screens were collected manually, across mobile, web and desktop interfaces; the paper does not split the mobile share by operating system. No arXiv version was found. The PDF names github.com/aiben-ch/GUI-HalluBench as its data location, and that repository's README points only to github.com/ant-research/GUIHalluBench, indexed as github:ant-research/guihallubench.",
+    "read_basis": "Read the CVF landing page (abstract, citation metadata, BibTeX) and the complete CVPR PDF text, including Sections 3.1-3.4 on data collection, annotation, sampling and metrics, plus the pinned aiben-ch/GUI-HalluBench README. No data download or result reproduction."
   }
 ]

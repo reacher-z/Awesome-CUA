@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:71915caf6957fce0fb7d",
+    "url": "https://lgy0404.github.io/MemGUI-Bench",
+    "decision": "alias",
+    "target_id": "arxiv:2602.06075",
+    "reason": "Project website and leaderboard for the indexed MemGUI-Bench paper."
   }
 ]

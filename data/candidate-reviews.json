@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:30b75c9ed8182335c9dd",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3654777.3676386",
+    "decision": "alias",
+    "target_id": "arxiv:2312.11190",
+    "reason": "ACM Digital Library abstract page for the UIST 2024 edition (DOI 10.1145/3654777.3676386) of the indexed VisionTasker paper."
   }
 ]

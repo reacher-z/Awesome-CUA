@@ -3956,6 +3956,9 @@
       "MultiUI",
       "multiui"
     ],
+    "documented_by": [
+      "2410.13824"
+    ],
     "editorial_reviewed": true,
     "reviewed_sha256": "fe0c03fe73529a29788d559103c4aed48dca6ed9ba3bfd5f151f902fa8858b38",
     "reviewed_at": "2026-10-17T02:09:27Z",
@@ -4011,8 +4014,31 @@
         "url": "https://raw.githubusercontent.com/neulab/multiui/HEAD/README.md",
         "sha256": "fe0c03fe73529a29788d559103c4aed48dca6ed9ba3bfd5f151f902fa8858b38",
         "retrieved_at": "2026-10-16T06:36:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://neulab.github.io/MultiUI/",
+        "sha256": "088d8e8c2c539292e7605de5ee1110ad1ce376f4942d87c187f4cfb9714486cb",
+        "retrieved_at": "2026-10-19T06:05:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2410.13824v3",
+        "sha256": "383ada0c47d09acea6b865ed67571c9540b2d602bd6b0ea8ad3130121efd190c",
+        "retrieved_at": "2026-10-19T06:05:21Z"
       }
-    ]
+    ],
+    "notes": "The README is titled as code for the paper Harnessing Webpage UIs for Text-Rich Visual Understanding (arXiv 2410.13824), and the paper's project page links both that paper and this repository."
   },
   {
     "name": "OS-Genesis",

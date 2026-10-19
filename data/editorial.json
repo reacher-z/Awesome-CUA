@@ -5579,7 +5579,44 @@
     "editorial_reviewed": true,
     "scope": "adjacent",
     "reviewed_sha256": "41a6435d6c27a647b4d2170cba476fa6a941b12f8a4ffe41674a508df9e0ea1d",
-    "reviewed_at": "2026-10-16T06:36:04Z"
+    "reviewed_at": "2026-10-16T06:36:04Z",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/nut-tree/nut.js/e413fa1f19a19c4631812e4e1eaf47aa732b5cbe/core/nut.js/LICENSE",
+          "retrieved_at": "2026-10-19T06:08:17Z",
+          "basis": "The monorepo has no root license file. At commit e413fa1 the main package core/nut.js carries the full Apache License 2.0 text, and its package.json declares Apache-2.0 for @nut-tree/nut-js, as do the provider-interfaces, shared, clipboard and libnut workspace packages; the root package.json and core/configs declare none."
+        },
+        "reason": "The monorepo has no root license file. At commit e413fa1 the main package core/nut.js carries the full Apache License 2.0 text, and its package.json declares Apache-2.0 for @nut-tree/nut-js, as do the provider-interfaces, shared, clipboard and libnut workspace packages; the root package.json and core/configs declare none.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/nut-tree/nut.js/e413fa1f19a19c4631812e4e1eaf47aa732b5cbe/core/nut.js/LICENSE",
+          "https://raw.githubusercontent.com/nut-tree/nut.js/e413fa1f19a19c4631812e4e1eaf47aa732b5cbe/core/nut.js/package.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/nut-tree/nut.js/e413fa1f19a19c4631812e4e1eaf47aa732b5cbe/core/nut.js/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-19T06:08:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/nut-tree/nut.js/e413fa1f19a19c4631812e4e1eaf47aa732b5cbe/core/nut.js/package.json",
+        "sha256": "a6174d90f9ff4f96088bd3c1e186fb942af32e5a4fcdf3b29f4c1ab4943a12e2",
+        "retrieved_at": "2026-10-19T06:08:17Z"
+      }
+    ]
   },
   {
     "name": "OmniParser",

@@ -5289,7 +5289,67 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "5ecb73264cce10b75ec04dea59aaff77ffde552259fba6932507779a35681c5b",
-    "reviewed_at": "2026-10-16T06:36:04Z"
+    "reviewed_at": "2026-10-16T06:36:04Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations"
+    ],
+    "details": {
+      "license_components_note": "The standalone Node SDK in node-sdk/ is MIT-licensed under its own LICENSE, as COPYRIGHT.md states; the rest of the repository is SSPL-1.0."
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "SSPL-1.0",
+          "url": "https://raw.githubusercontent.com/nottelabs/notte/93f62ad3b05165fca8949fd04ecde9c14c25ab39/LICENSE",
+          "retrieved_at": "2026-10-19T06:07:05Z",
+          "basis": "At commit 93f62ad the root LICENSE is the Server Side Public License, Version 1 text, and COPYRIGHT.md says the software is licensed under SSPL v1; the README License section and pyproject.toml say the same. COPYRIGHT.md exempts the standalone Node SDK in node-sdk/, which is MIT."
+        },
+        "reason": "At commit 93f62ad the root LICENSE is the Server Side Public License, Version 1 text, and COPYRIGHT.md says the software is licensed under SSPL v1; the README License section and pyproject.toml say the same. COPYRIGHT.md exempts the standalone Node SDK in node-sdk/, which is MIT.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/nottelabs/notte/93f62ad3b05165fca8949fd04ecde9c14c25ab39/LICENSE",
+          "https://raw.githubusercontent.com/nottelabs/notte/93f62ad3b05165fca8949fd04ecde9c14c25ab39/COPYRIGHT.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/nottelabs/notte/93f62ad3b05165fca8949fd04ecde9c14c25ab39/LICENSE",
+        "sha256": "16958790cbd06680a54d8bf7d380d1d586e2e780e7115c1c1f57172d702351eb",
+        "retrieved_at": "2026-10-19T06:07:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/nottelabs/notte/93f62ad3b05165fca8949fd04ecde9c14c25ab39/COPYRIGHT.md",
+        "sha256": "3ef1365f8dcbb897010b5ad01b1a7d9f71cb52097c76e9962bb6644557ea445a",
+        "retrieved_at": "2026-10-19T06:07:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/nottelabs/notte/93f62ad3b05165fca8949fd04ecde9c14c25ab39/node-sdk/LICENSE",
+        "sha256": "9ad8365799109301ae43b94c8d71f4aa90477d23cab1530a96cb94f271ed9528",
+        "retrieved_at": "2026-10-19T06:07:05Z"
+      }
+    ]
   },
   {
     "name": "HyperAgent",

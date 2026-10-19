@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0c377715c6d8dad5d4da",
+    "url": "https://openreview.net/forum?id=9JQtrumvg8",
+    "decision": "alias",
+    "target_id": "arxiv:2307.12856",
+    "reason": "OpenReview forum of the ICLR 2024 edition of the indexed WebAgent paper; same title and authors."
   }
 ]

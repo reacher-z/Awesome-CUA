@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2610.11922",
+    "name": "Project Greenhouse: Progress Toward Fully Open and Sovereign Agentic Search",
+    "url": "https://arxiv.org/abs/2610.11922",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract describes pre-training and fine-tuning a fully open pointwise decoder-only reranker (the Gaggle models) from public data as a first step toward agentic search. Its experiments are passage-reranking evaluations on TREC and BEIR collections, with no browser, GUI or computer-interface agent component.",
+    "reviewed_at": "2026-10-19T08:39:12Z",
+    "metadata_fingerprint": "a1eafccf847fa4a000ce327bd07660f2307adf0c37aeb77506aa066f0bae0cb4",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
+      "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
+      "retrieved_at": "2026-10-17T12:31:39Z"
+    }
   }
 ]

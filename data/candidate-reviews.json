@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:436eb55c4e36e6c043bc",
+    "url": "https://nothumansearch.ai",
+    "decision": "out_of_scope",
+    "reason": "Not Human Search is a hosted search engine that ranks websites by machine-readable agent signals such as llms.txt, OpenAPI specs, MCP servers and Schema.org markup, and serves results through a REST API and an MCP server. It helps agents find APIs to call and does not operate browsers, GUIs or devices.",
+    "reviewed_at": "2026-10-19T06:40:29Z",
+    "evidence": {
+      "url": "https://nothumansearch.ai",
+      "sha256": "f28968deab64a4ad08a2ea779c58bb0b35d77cdab852f091506b6236a062ec90",
+      "retrieved_at": "2026-10-19T06:30:42Z"
+    }
   }
 ]

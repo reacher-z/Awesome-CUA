@@ -63143,5 +63143,156 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:114ced4a94d12f384d69",
+    "name": "Mobile-R1 trajectory sample",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning"
+    ],
+    "summary": "Open sample of Mobile-R1's annotated trajectories on Chinese Android apps: 1,007 tasks whose steps pair a screenshot with a thought, a subtask and a mobile_use action such as click, swipe, type or open.",
+    "scope": "core",
+    "verify_terms": [
+      "Mobile-R1"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/raw/c3904f0fdad03a3a4191492880312bda5ad36516/README.md"
+    ],
+    "documented_by": [
+      "2506.20332"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The card describes this release as an open-sourced sample: the full Mobile-R1 dataset has 24,521 manually annotated instances from 4,635 trajectories, of which 1,007 trajectories on 28 applications are published. Instructions, thoughts and subtasks are in Chinese. Each data.jsonl row carries the app name, instruction, system prompt, screen size and a step list whose entries hold an image filename, thought, subtask, a mobile_use function call and the full model-style response. The card's apache-2.0 declaration covers this release and does not settle rights to the app screenshots.",
+    "details": {
+      "hub_id": "Mobile-R1/Mobile-R1",
+      "hub_revision": "c3904f0fdad03a3a4191492880312bda5ad36516",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/tree/c3904f0fdad03a3a4191492880312bda5ad36516",
+      "dataset_profile": {
+        "supervision": [
+          "manually annotated trajectories"
+        ],
+        "modalities": [
+          "screenshots",
+          "instructions",
+          "thoughts",
+          "subtask descriptions",
+          "actions"
+        ],
+        "formats": [
+          "JSONL",
+          "PNG images"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 1007,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "Mobile-R1 Hub release (card statistics)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/raw/c3904f0fdad03a3a4191492880312bda5ad36516/README.md"
+          },
+          {
+            "value": 28,
+            "unit": "applications",
+            "qualifier": "exact",
+            "population": "Mobile-R1 Hub release (card statistics)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/raw/c3904f0fdad03a3a4191492880312bda5ad36516/README.md"
+          },
+          {
+            "value": 3924,
+            "unit": "samples (steps)",
+            "qualifier": "exact",
+            "population": "Mobile-R1 Hub release (card statistics)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/raw/c3904f0fdad03a3a4191492880312bda5ad36516/README.md"
+          },
+          {
+            "value": 1007,
+            "unit": "data.jsonl rows",
+            "qualifier": "exact",
+            "population": "Mobile-R1 Hub release at revision c3904f0",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/resolve/c3904f0fdad03a3a4191492880312bda5ad36516/data.jsonl"
+          },
+          {
+            "value": 3899,
+            "unit": "trajectory step entries",
+            "qualifier": "exact",
+            "population": "Mobile-R1 Hub release at revision c3904f0",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/resolve/c3904f0fdad03a3a4191492880312bda5ad36516/data.jsonl"
+          },
+          {
+            "value": 3924,
+            "unit": "PNG files under images/",
+            "qualifier": "exact",
+            "population": "Mobile-R1 Hub release at revision c3904f0",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/Mobile-R1/Mobile-R1/revision/c3904f0fdad03a3a4191492880312bda5ad36516"
+          }
+        ],
+        "notes": "Counts in different units are not summed. The card's 3,924 samples equal the number of PNG files in the manifest, but data.jsonl references 3,899 distinct images, all present, leaving 25 files unreferenced. The rows use 30 non-empty app_name strings, including variant spellings of the same app (B站 and 哔哩哔哩), plus 5 rows with an empty name, so the card's 28 applications was not recomputed. No train/test split is declared.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/raw/c3904f0fdad03a3a4191492880312bda5ad36516/README.md",
+          "https://huggingface.co/api/datasets/Mobile-R1/Mobile-R1/revision/c3904f0fdad03a3a4191492880312bda5ad36516",
+          "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/resolve/c3904f0fdad03a3a4191492880312bda5ad36516/data.jsonl"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/api/datasets/Mobile-R1/Mobile-R1/revision/c3904f0fdad03a3a4191492880312bda5ad36516",
+        "sha256": "3379e01e9e163c27700a3c11a8647cef1311faad72f740a58d8255ab2342ed98",
+        "retrieved_at": "2026-10-19T06:56:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/Mobile-R1/Mobile-R1/resolve/c3904f0fdad03a3a4191492880312bda5ad36516/data.jsonl",
+        "sha256": "a5af20573ee10ee858ab6b464cc7ed27b964cd6c967993b3711967c3069ebce3",
+        "retrieved_at": "2026-10-19T06:56:15Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c92e2343802f3b669e2efd1818ee48080c1eb992fc44237d564a5853b08fd625",
+    "reviewed_at": "2026-10-19T06:56:45Z"
   }
 ]

@@ -63143,5 +63143,46 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.01964",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "long-horizon",
+      "state-tracking",
+      "planning"
+    ],
+    "scope": "core",
+    "summary": "Presents LongHorizon-Harness, a Manage-Execute-Audit loop that keeps task state outside the executor's context and updates it only with audited facts, evaluated on WeaveBench, OSWorld 2.0 and Terminal-Bench 2.1.",
+    "verify_terms": [
+      "LongHorizon-Harness: Advancing Long-Horizon Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.01964v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Scope is core: in the v1 full text, WeaveBench tasks combine GUI and CLI actions in a containerized Ubuntu desktop VM and OSWorld 2.0 contributes 108 professional desktop workflow tasks, while Terminal-Bench 2.1 is command-line only. The executor uses Claude Code as its execution backend; on the OSWorld 2.0 Opus 4.7 subset the harness uses a hybrid GUI and CLI tool pool. The paper links github.com/AMAP-ML/LongHorizon-Harness. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.01964v1",
+        "sha256": "5343d703d3e898340fe38fd73fe113d2d2f2f734fe338a789d800e4cb7705dab",
+        "retrieved_at": "2026-10-19T08:36:34Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML benchmark descriptions (WeaveBench, OSWorld 2.0, Terminal-Bench 2.1), implementation details and Appendix B.1. No code execution or result reproduction.",
+    "reviewed_sha256": "e62e7928c2f973b07676cb766d09f692a089b3bb22f71c895058b55916cb4dc9",
+    "reviewed_at": "2026-10-19T08:41:29Z"
   }
 ]

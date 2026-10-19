@@ -63143,5 +63143,45 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.12404",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "self-reflection",
+      "memory",
+      "training-free",
+      "web-navigation"
+    ],
+    "summary": "VRL-Bench compares verbal trial-and-error updates such as Reflexion with memory-free retry under fixed six-trial budgets on MiniWoB and WebShop, and proposes VEX², a language-model exploration scheduler.",
+    "verify_terms": [
+      "VRL-Bench: Benchmarking agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.12404v1"
+    ],
+    "scope": "core",
+    "notes": "Reviewed against the v1 abstract and HTML full text (Section 2.2): 64 MiniWoB task families with ten reset-seed sequences each and the first 100 WebShop human-test goals, run with DeepSeek-V4-Flash, GPT-5.4 nano and GLM-4.7-FlashX. The compared updates are Reflexion and adapted Dynamic Cheatsheet and ACE variants. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.12404v1",
+        "sha256": "02c59e2a30c285d8bf2b8d8df7f900ae9dde5bae28199b9df4f220b246f843d1",
+        "retrieved_at": "2026-10-19T08:45:01Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "14c41274e556447b067234cf31b703cd2ba8f8396c0a3ab3685deb89276091f9",
+    "reviewed_at": "2026-10-19T08:47:19Z"
   }
 ]

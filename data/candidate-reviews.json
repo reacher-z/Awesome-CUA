@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:fb1ce465a3ebc33f542e",
+    "url": "https://openreview.net/forum?id=3WWFrg8UjJ",
+    "decision": "alias",
+    "target_id": "arxiv:2402.07456",
+    "reason": "OpenReview forum of the ICLR 2024 LLM Agents workshop poster edition of the indexed OS-Copilot paper; same title and the same eight authors in the same order."
   }
 ]

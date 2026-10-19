@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (210)](#papers)
 
 ## Benchmarks
 
@@ -168,6 +168,7 @@ All entries in this section: web.
 | 2026‑09‑26 | [From Trajectories to Grounded Preferences: Process Preference Synthesis via Interaction Element Graphs for Web PRMs](https://arxiv.org/abs/2609.32351) | web | Introduces SURFPRM, which turns web demonstrations into an interaction-element graph for synthesizing grounded negative actions. Its contrastive preference data trains process reward models to distinguish plausible on-page alternatives and guide downstream trajectory search. |
 | 2026‑09‑24 | [The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge](https://arxiv.org/abs/2609.30604) | web | KNOWS benchmarks browser workflows that retrieve and synthesize information into documents, presentations and spreadsheets. Task-specific evaluators combine deterministic checks with model judgments, distinguishing partial progress from usable end-to-end artifact completion. |
 | 2026‑09‑17 | [EconSkills: Studying Skill Transfer and Retrieval for Web Agents on Live Economic Data](https://arxiv.org/abs/2609.19523) | web | EconSkills converts verified economic-data browsing traces into parameterized procedures with navigation, verification and recovery guidance. Its evaluation separates known-skill transfer from library retrieval, exposing the limits of approximate matches to new tasks. |
+| 2026‑09‑15 | [RiskChainBench: A Benchmark for Obfuscated Platform Message Restoration and Evidence-Grounded Web Investigation](https://arxiv.org/abs/2609.16900) | web | RiskChainBench pairs 3,600 synthetic obfuscated-message inputs for target restoration with 600 human-labeled local websites that a VLM web agent investigates to write evidence-cited risk reports, across ten models. |
 | 2026‑09‑11 | [AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents](https://arxiv.org/abs/2609.13548) | web | AutoTailor compiles web trajectories into reusable browser-automation APIs, then filters and dynamically revises the capability inventory. WebArena experiments distinguish API-only operation from an agent that can fall back to ordinary reasoning and browser actions. |
 | 2026‑09‑11 | [Token Efficient Task Execution via Application Behavior Modeling for Web Agents](https://arxiv.org/abs/2609.13491) | web | OdoBot builds a model of web-application behavior from successful task demonstrations and uses it to guide task execution. Its Canvas LMS evaluation compares token use and completion with existing web agents. |
 | 2026‑08‑31 | [SCAFFOLD: Self-Improving Web Agents via Recursive Parametric Skill Abstraction](https://arxiv.org/abs/2609.05511) | web | Introduces SCAFFOLD, which extracts executable skills from web trajectories, composes them into a hierarchy, and compresses redundant skills through behavioral checks. It periodically distills skill-guided trajectories into the policy and studies repeated improvement across web benchmarks. |

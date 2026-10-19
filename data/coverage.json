@@ -1,17 +1,17 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
-  "bibliographic_records": 2718,
+  "as_of_utc": "2026-10-19T06:06:01Z",
+  "total_records": 3179,
+  "curated_records": 1615,
+  "bibliographic_records": 2719,
   "arxiv_active_records": 2705,
-  "non_arxiv_bibliographic_records": 13,
-  "publication_metadata_records": 77,
+  "non_arxiv_bibliographic_records": 14,
+  "publication_metadata_records": 78,
   "arxiv_archive_records": 2841,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -193,13 +193,13 @@
     "framework": 75,
     "infrastructure": 14,
     "model": 98,
-    "paper": 2700,
+    "paper": 2701,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 300,
+    "android": 301,
     "cross-platform": 197,
     "desktop": 322,
     "harmonyos": 3,
@@ -280,7 +280,7 @@
       "windows": 5
     },
     "paper": {
-      "android": 176,
+      "android": 177,
       "cross-platform": 101,
       "desktop": 204,
       "harmonyos": 2,
@@ -405,13 +405,13 @@
         "state": "success"
       },
       "discovered": 224,
-      "indexed": 198,
-      "indexed_resources": 198,
+      "indexed": 199,
+      "indexed_resources": 199,
       "resolved_aliases": 0,
-      "curated": 178,
+      "curated": 179,
       "excluded": 0,
       "set_aside": 6,
-      "unindexed": 20
+      "unindexed": 19
     },
     {
       "id": "wjhou-cua",

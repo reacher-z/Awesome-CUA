@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (141)](#papers)
 
 ## Benchmarks
 
@@ -173,6 +173,7 @@ All entries in this section: desktop.
 | 2024‑09‑25 | [AXIS: Efficient Human-Agent-Computer Interaction with API-First LLM-Based Agents](https://arxiv.org/abs/2409.17140) | unspecified | Introduces AXIS, an API-first application agent that can use UI actions and expand its available APIs through automated application exploration. The work evaluates the approach on Microsoft Word tasks. |
 | 2024‑09‑23 | [Steward: Natural Language Web Automation](https://arxiv.org/abs/2409.15441) | web | Introduces Steward, a natural-language browser automation system that repeatedly plans and executes website actions. The paper examines completion detection, state representation, responsiveness, and caching in real-site tasks. |
 | 2024‑07‑17 | [Agent-E: From Autonomous Web Navigation to Foundational Design Principles in Agentic Systems](https://arxiv.org/abs/2407.13032) | web | Agent-E combines hierarchical web-task control with DOM distillation and observations of interface changes. WebVoyager experiments inform a broader discussion of primitive skills, observation reduction, and self-improvement in agent architecture. |
+| 2024‑06 | [UINav: A Practical Approach to Train On-Device Automation Agents](https://aclanthology.org/2024.naacl-industry.4/) | android | Trains small Android automation agents from demonstrations, using macro actions with status checks, demonstration augmentation, and a referee model that predicts task completion to guide further demonstrations. |
 | 2023‑10‑08 | [UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model](https://arxiv.org/abs/2310.05126) | web | Introduces UReader, which combines unified instruction tuning, auxiliary text-reading tasks and shape-adaptive image crops for OCR-free visual language understanding. Its evaluation includes webpage screenshots alongside documents, tables, charts and natural images. |
 | 2023‑06‑13 | [Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control](https://arxiv.org/abs/2306.07863) | web | Synapse filters task-irrelevant page state and places complete abstracted state-action trajectories into the prompt. An embedding-based exemplar memory retrieves relevant demonstrations for new tasks, evaluated on MiniWoB++ and Mind2Web. |
 | 2023‑05‑23 | [Hierarchical Prompting Assists Large Language Model on Web Navigation](https://arxiv.org/abs/2305.14257) | web | Separates web navigation prompting into a SUMMARIZER that extracts action-relevant observations and an ACTOR that chooses the next action from the condensed context. |

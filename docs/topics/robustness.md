@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
 
 ## Benchmarks
 
@@ -211,6 +211,7 @@ All entries in this section: web.
 | 2024‑10‑01 | [Multimodal Auto Validation For Self-Refinement in Web Agents](https://arxiv.org/abs/2410.00689) | web | Studies text and visual validation for web agents and uses the resulting validator to detect failures and guide workflow self-refinement. |
 | 2024‑08‑05 | [Caution for the Environment: Multimodal LLM Agents are Susceptible to Environmental Distractions](https://arxiv.org/abs/2408.02544) | unspecified | Measures how irrelevant GUI content affects multimodal agents using a simulated dataset and three perception patterns. The study also examines adversarial environment injection and possible ways to improve instruction faithfulness. |
 | 2024‑06‑18 | [Dissecting Adversarial Robustness of Multimodal LM Agents](https://arxiv.org/abs/2406.12814) | web | Introduces adversarial tasks on VisualWebArena and an evaluation framework that tracks how manipulated information passes between agent components. The analysis examines vulnerabilities introduced by reflection and tree-search evaluators as well as direct action generation. |
+| 2024‑06 | [UINav: A Practical Approach to Train On-Device Automation Agents](https://aclanthology.org/2024.naacl-industry.4/) | android | Trains small Android automation agents from demonstrations, using macro actions with status checks, demonstration augmentation, and a referee model that predicts task completion to guide further demonstrations. |
 | 2024‑04‑25 | [Benchmarking Mobile Device Control Agents across Diverse Configurations](https://arxiv.org/abs/2404.16660) | android | Introduces B-MoCA, an interactive mobile-control benchmark that varies device settings, layouts, and languages to test generalization. |
 | 2024‑04‑08 | [WILBUR: Adaptive In-Context Learning for Robust and Accurate Web Agents](https://arxiv.org/abs/2404.05902) | web | WILBUR learns to rank prior task demonstrations for a web agent’s prompt and synthesizes instructions from past runs. A generated task curriculum and a backtracking mechanism support adaptation and recovery, evaluated on WebVoyager. |
 | 2024‑03‑06 | [PPTC-R benchmark: Towards Evaluating the Robustness of Large Language Models for PowerPoint Task Completion](https://arxiv.org/abs/2403.03788) | unspecified | Benchmarks robustness of API-based PowerPoint completion under sentence-level, semantic, and multilingual instruction perturbations and changes to the available API set. |

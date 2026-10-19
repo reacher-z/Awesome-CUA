@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-74 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+75 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (44)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Papers (45)](#papers)
 
 ## Benchmarks
 
@@ -110,6 +110,7 @@ All entries in this section: unspecified.
 | 2025‑07‑05 | [How to Train Your LLM Web Agent: A Statistical Diagnosis](https://arxiv.org/abs/2507.04103) | web | Studies compute allocation for web-agent post-training with teacher-generated supervised fine-tuning followed by on-policy reinforcement learning. It samples 1,370 training configurations and uses bootstrap analysis to examine hyperparameter sensitivity on WorkArena and MiniWoB++. |
 | 2025‑02‑10 | [AppVLM: A Lightweight Vision Language Model for Online App Control](https://arxiv.org/abs/2502.06395) | android | AppVLM first learns app actions from AndroidControl and then refines its policy through data collected in AndroidWorld. The study compares offline action prediction and online task completion for a lightweight vision-language smartphone agent. |
 | 2024‑09‑24 | [Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale](https://arxiv.org/abs/2409.15637) | web | Synatra converts indirect procedural knowledge, including human-oriented tutorials, into direct demonstrations for digital agents. It trains a 7B CodeLlama on 100,000 synthesized demonstrations and evaluates the resulting policy on Mind2Web, MiniWoB++, and WebArena. |
+| 2024‑06 | [UINav: A Practical Approach to Train On-Device Automation Agents](https://aclanthology.org/2024.naacl-industry.4/) | android | Trains small Android automation agents from demonstrations, using macro actions with status checks, demonstration augmentation, and a referee model that predicts task completion to guide further demonstrations. |
 | 2024‑04‑16 | [Grounded Language Agent for Product Search via Intelligent Web Interactions](https://arxiv.org/abs/2404.10887) | web | Introduces GLAINTEL, a Flan-T5-based product-search web agent studied under unsupervised learning, demonstration-based training, and unsupervised domain adaptation. It compares ways to combine demonstrations with reinforcement learning. |
 | 2023‑05‑19 | [Multimodal Web Navigation with Instruction-Finetuned Foundation Models](https://arxiv.org/abs/2305.11854) | web | Trains WebGUM offline from demonstrations by jointly tuning an instruction-following language model and a vision encoder over webpage screenshots and HTML. The agent predicts browser actions and is evaluated on MiniWoB, WebShop, and Mind2Web. |
 | 2019‑08‑30 | [Interactive Task and Concept Learning from Natural Language Instructions and GUI Demonstrations](https://arxiv.org/abs/1909.00031) | unspecified | Introduces PUMICE, an agent that learns mobile-app procedures and conditional concepts through natural-language conversation and GUI demonstrations, recursively resolving ambiguous instructions with users. |

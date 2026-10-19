@@ -63143,5 +63143,68 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:ca76de56f3ddbd7c61b4",
+    "name": "UINav: A Practical Approach to Train On-Device Automation Agents",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2024.naacl-industry.4/",
+    "summary": "Trains small Android automation agents from demonstrations, using macro actions with status checks, demonstration augmentation, and a referee model that predicts task completion to guide further demonstrations.",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning",
+      "efficiency",
+      "robustness"
+    ],
+    "verify_terms": [
+      "UINav",
+      "On-Device Automation Agents"
+    ],
+    "evidence_urls": [
+      "https://aclanthology.org/2024.naacl-industry.4/"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.doi",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.publisher",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://aclanthology.org/2024.naacl-industry.4.pdf",
+        "retrieved_at": "2026-10-19T06:05:45Z",
+        "sha256": "1952c5f1c367e9ff58ed9d2fa079a3ba1dcb4b0c8091e1bca11e0bede0861960"
+      }
+    ],
+    "notes": "The annotation was reviewed against the ACL Anthology landing page and proceedings PDF. Experiments have not been independently reproduced. Screens are represented from the Android accessibility tree or from pixel-based screen understanding, chosen by heuristics. Evaluation uses the public MoTIF dataset and a demonstration study of 43 tasks across 128 Android apps and websites. An arXiv preprint of the same work (2312.10170) is not retained in the catalog archive, so this record follows the publisher edition.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "57230f0768eae7d22db314ff06a2b92693ae42bcfdc37cf57e839fd05fd1eec9",
+    "reviewed_at": "2026-10-19T06:06:14Z"
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cbc2880bf84a8f49d9d4",
+    "url": "https://lgy0404.github.io/LearnAct",
+    "decision": "alias",
+    "target_id": "arxiv:2504.13805",
+    "reason": "Project website for the indexed LearnAct paper, which presents both the LearnAct framework and the LearnGUI benchmark."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:233aae1b5354f15e1d54",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yan_LaSM_Layer-wise_Scaling_Mechanism_for_Defending_Pop-up_Attack_on_GUI_CVPR_2026_paper.html",
+    "decision": "alias",
+    "target_id": "arxiv:2507.10610",
+    "reason": "CVF Open Access page for the CVPR 2026 edition (pages 6528-6537) of the indexed LaSM preprint, which the page links; the title and the same four authors match arXiv 2507.10610, with the second and third authors listed in swapped order."
   }
 ]

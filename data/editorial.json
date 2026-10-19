@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "OmniStepBench: Deployment-Aware Agent Evaluation across Modalities and Task Complexity",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.06059",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "OmniStepBench adapts 233 tasks from 22 benchmarks into a modality-by-execution-form matrix run in a shared OpenClaw runtime, comparing 42 API and local models on accuracy, tokens and reference cost.",
+    "verify_terms": [
+      "OmniStepBench: Deployment-Aware"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.06059v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent general-agent benchmark. The v2 HTML full text (Table 11) lists 9 OSWorld desktop-control tasks among the 233, and the shared OpenClaw tool suite includes a headless Playwright browser skill and a desktop-control skill for keyboard, mouse and window actions; most tasks are reasoning, search and multimodal question answering. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.06059v2",
+        "sha256": "28865bef9ddc88887e4822c2cf5d44ce58d4ee0a7b52a7e3a85d2a14f9d8b7f9",
+        "retrieved_at": "2026-10-19T08:45:02Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3f3b8f7c0065bc5cf3d4c9a8c60102bfc701aa1131886b06161bcd675cfdba4d",
+    "reviewed_at": "2026-10-19T08:48:05Z"
   }
 ]

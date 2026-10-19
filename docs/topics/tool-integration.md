@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
 
 ## Benchmarks
 
@@ -106,6 +106,7 @@ All entries in this section: unspecified.
 | 2026‑09‑18 | [RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000) | desktop, linux, macos, windows, android, web | RecreationWorld gives hybrid agents running reference applications to explore and recreate using native GUI controls and coding tools. Its multi-platform benchmark checks interaction-dependent behavior with programmatic and visual assertions, while trajectory-training transfer is evaluated separately. |
 | 2026‑09‑11 | [AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents](https://arxiv.org/abs/2609.13548) | web | AutoTailor compiles web trajectories into reusable browser-automation APIs, then filters and dynamically revises the capability inventory. WebArena experiments distinguish API-only operation from an agent that can fall back to ordinary reasoning and browser actions. |
 | 2026‑09‑06 | [Improving Proficiency and Efficiency of Android GUI Agents via Self-Generating Tool Actions](https://arxiv.org/abs/2609.06792) | android | DroidTool generates application-state tools through proposal, implementation, testing and repair. Relational tests connect the tools’ preconditions and effects, and the resulting tools are evaluated as additions to Android GUI agents. |
+| 2026‑09‑05 | [OmniStepBench: Deployment-Aware Agent Evaluation across Modalities and Task Complexity](https://arxiv.org/abs/2609.06059) | desktop | OmniStepBench adapts 233 tasks from 22 benchmarks into a modality-by-execution-form matrix run in a shared OpenClaw runtime, comparing 42 API and local models on accuracy, tokens and reference cost. |
 | 2026‑09‑04 | [CUA-Universe: A Scalable and Dynamic Environment for Hybrid GUI+CLI Agents](https://arxiv.org/abs/2609.05374) | desktop | Turns desktop applications into reproducible GUI-and-CLI environments and generates verified hybrid trajectories for agent post-training. |
 | 2026‑08‑27 | [ASIL: Replacing Screenshot-and-Click with Structured State and Semantic Actions](https://arxiv.org/abs/2608.26991) | unspecified | ASIL exposes application state as structured JSON and provides code-executable semantic actions. Its application benchmark compares this interface with screenshot control and application-native APIs, and studies supervised and reinforcement learning on the structured interface. |
 | 2026‑08‑25 | [WebMCP-Phalanx: Enforcing and Characterizing Trust Boundaries for Browser-Integrated LLM Agents](https://arxiv.org/abs/2608.24017) | web | Proposes WebMCP-Phalanx, a browser-integrated runtime that binds page-exposed tools to their registering principals and separates content inspection from privileged invocation. It studies lifecycle and prompt-injection attacks, including a timing bypass that motivates validating all visible metadata before tool use. |

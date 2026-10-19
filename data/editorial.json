@@ -63143,5 +63143,42 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "CoAdapt-GUI: Joint Workflow Context and Policy Adaptation for Unseen GUI Applications",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.11588",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "reinforcement-learning",
+      "workflow",
+      "robustness"
+    ],
+    "summary": "CoAdapt-GUI adapts mobile GUI agents to unseen apps at test time by jointly refining a transferable workflow context and a LoRA policy from the agent's own rollouts and rewards, without target demonstrations.",
+    "verify_terms": [
+      "CoAdapt-GUI"
+    ],
+    "notes": "Reviewed against the v1 abstract and full text. AndroidWorld-Generalization runs start from a UI-TARS-7B checkpoint; AndroidWorld Plus splits 25 apps into 12 source and 13 target apps and uses Qwen3-VL-8B-Instruct. Adaptation runs in resettable emulators. The paper text names no code repository. Reported results were not reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.11588v1"
+    ],
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.11588v1",
+        "sha256": "98705ed9ec417051dc2ebdf5ee174b3aab37b7b7a5bd0d24c8ffeec68e80a8d8",
+        "retrieved_at": "2026-10-19T08:41:41Z"
+      }
+    ],
+    "reviewed_sha256": "617c2871607ec393403dadc0840858be4dd010c733f53b36d617a3173a07465b",
+    "reviewed_at": "2026-10-19T08:41:42Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (2)](#products) · [Papers (83)](#papers)
 
 ## Models
 
@@ -62,11 +62,10 @@ All entries in this section: desktop.
 
 ## Products
 
-All entries in this section: web.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Amazon Nova Act](https://aws.amazon.com/nova/act/) | — | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. | [✓ 2026‑10‑17](https://aws.amazon.com/nova/act/) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Amazon Nova Act](https://aws.amazon.com/nova/act/) | — | web | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. | [✓ 2026‑10‑17](https://aws.amazon.com/nova/act/) |
+| [Fellou](https://fellou.ai/) | — | web, desktop, macos | Fellou's agentic browser, which drafts a step-by-step plan for review and then browses, fills forms and runs scheduled or parallel tasks; a Computer Use mode extends it to local apps and files. | [✓ 2026‑10‑19](https://fellou.ai/) |
 
 ## Papers
 

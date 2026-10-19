@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c26f3960e39b1163c108",
+    "url": "https://facebookresearch.github.io/OpenApps",
+    "decision": "alias",
+    "target_id": "github:facebookresearch/openapps",
+    "reason": "Documentation site of the indexed OpenApps benchmark repository; the README links it as the docs and the repository homepage points to it."
   }
 ]

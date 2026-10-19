@@ -63143,5 +63143,133 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "reverseloom",
+    "kind": "agent",
+    "url": "https://github.com/KuiChi-x/reverseloom",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "summary": "Local browser agent that drives Chromium over CDP from element digests and box-labelled screenshots, traces network traffic and JavaScript with breakpoints, and writes crawlers that run without a browser.",
+    "verify_terms": [
+      "reverseloom"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KuiChi-x/reverseloom/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Built on graphloom, the author's own agent framework (a PyPI dependency). browser_manager.py launches an installed Chrome, Edge, Chromium or Brave (or the author's separate kc-browser) through patchright with fingerprint launch arguments and an optional proxy; it never downloads Chromium. Before each model turn, observer.py injects the URL, tabs, a serialized interactive-element list, debugger state and a screenshot; browser_snapshot.py and image_utils.py draw labelled outlines of those elements on the screenshot, and only the latest snapshot is kept in context. automation.py clicks and types at element centres by element ID (ocId) or at pixel coordinates through page.mouse; other tools set CDP breakpoints, search network payloads and scripts, read coordinates off a grid overlay, pause for a human (login, captcha) and read or write files and run shell commands. The DOM serializer under browser/dom/serializer carries the same file header and class names as Browser Use's serializer, with no notice crediting it. The README's Akamai Bot Manager run is a publisher demonstration. Its download badge names v1.0.0, but no such release exists; the latest release, v0.1.14, ships Windows and macOS archives. Root LICENSE is Apache-2.0; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source (pip install from the repository) and Windows and macOS app archives in GitHub releases; needs a separately installed Chromium-based browser and a user-supplied model API.",
+      "repository_revision": "2ef59592f81a41799af236b631ba2b4eba29e964",
+      "release_tag": "v0.1.14",
+      "package_version": "0.1.14"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/src/reverseloom/browser/observer.py",
+        "sha256": "994e058614ad557ce51b17be4411fddb6195a3664b1ad18a357fdc8ed6ba8723",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/src/reverseloom/browser/browser_snapshot.py",
+        "sha256": "796c874d0e78b241b54a39134c2aada6eeb19a9993e77a435de8ade76c6a137b",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/src/reverseloom/browser/image_utils.py",
+        "sha256": "c60a628a7bd4758a96cca98af90a522a96df852cb82aa7013e957c462dc6d529",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/src/reverseloom/tools/browser/automation.py",
+        "sha256": "a7caf35b517d0d9a75a9b96ae60a084754c9f8f81dccdafb40737d632619f481",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/src/reverseloom/browser/browser_manager.py",
+        "sha256": "e956f4f80f60829e5b04ae26b5e9d19706ca30d291467ff244c7cceaedb79bc6",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/src/reverseloom/browser/dom/serializer/serializer.py",
+        "sha256": "7c5015b74d9867bfb7b0d264a42175480e067c0c50752f7e3170fbd464b2d9ec",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/pyproject.toml",
+        "sha256": "08f881b88ef14d674234b4cf5a5c72182f21dd5dcfcb1cc92ac3b07c31c15e3e",
+        "retrieved_at": "2026-10-19T06:14:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/KuiChi-x/reverseloom/2ef59592f81a41799af236b631ba2b4eba29e964/LICENSE",
+        "sha256": "8e5b14574bc8ffe3b071e27546f3331bcb6173bf4a986c8a0e5048a6573f1659",
+        "retrieved_at": "2026-10-19T06:14:53Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "49f5867879b9e7a9074c141042563e54a74d27454fd0c93b7e35bcbfc89a18ac",
+    "reviewed_at": "2026-10-19T06:15:18Z"
   }
 ]

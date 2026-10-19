@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (10)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -76,6 +76,7 @@ All entries in this section: web.
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
 | [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) | [2310.10634](https://arxiv.org/abs/2310.10634) (2023) | code Apache-2.0 | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| [reverseloom](https://github.com/KuiChi-x/reverseloom) | — | code Apache-2.0 | Local browser agent that drives Chromium over CDP from element digests and box-labelled screenshots, traces network traffic and JavaScript with breakpoints, and writes crawlers that run without a browser. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/KuiChi-x/reverseloom/HEAD/README.md) |
 | [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/SeeAct/HEAD/README.md) |
 | [Surf New](https://github.com/steel-dev/surf.new) | — | code MIT | Next.js and FastAPI playground from Steel for trying web agents in a controlled browser environment, with live views of browser interaction and support for providers such as Claude and GPT-4. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/steel-dev/surf.new/HEAD/README.md) |
 

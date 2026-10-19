@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:78454805e1096c02f48e",
+    "url": "https://digirl-agent.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2406.11896",
+    "reason": "Project website for the indexed DigiRL paper; it gives the paper's title, authors and abstract and links its code repository and data."
   }
 ]

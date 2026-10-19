@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed sou
 - 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,841 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,242 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,242 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 37 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -54,12 +54,12 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 46 | OK · 2026-10-19 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-10-19 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-10-19 |
-| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-19 |
+| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 1 | 36 | OK · 2026-10-19 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-10-19 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-10-19 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-10-19 |
-| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-10-19 |
-| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 27 | 9 | 8 | 0 | 3 | 15 | OK · 2026-10-19 |
+| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 15 | 35 | OK · 2026-10-19 |
+| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 27 | 9 | 8 | 0 | 4 | 14 | OK · 2026-10-19 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-10-19 |
 | [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 2 | 3 | OK · 2026-10-19 |
 | [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 9 | 9 | 0 | 1 | 5 | OK · 2026-10-19 |

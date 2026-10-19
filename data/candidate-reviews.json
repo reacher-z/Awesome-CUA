@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:104f54697df72349e15e",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/computer-use",
+    "decision": "alias",
+    "target_id": "url:57f17b7d0c18b2d7c8bf",
+    "reason": "Former path of the Claude computer use tool documentation; it now redirects to the same computer-use-tool page as the indexed Claude Computer Use record."
   }
 ]

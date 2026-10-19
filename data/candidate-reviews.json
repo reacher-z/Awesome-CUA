@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:28e1265269e127a10bf8",
+    "url": "https://openreview.net/forum?id=IpzRWE52yw",
+    "decision": "alias",
+    "target_id": "arxiv:2506.03533",
+    "reason": "OpenReview page of the ICLR 2026 poster edition of the indexed Go-Browse paper; same title and authors."
   }
 ]

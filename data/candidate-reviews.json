@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8d42067401ec21d9546e",
+    "url": "https://monica.im",
+    "decision": "out_of_scope",
+    "reason": "monica.im is the homepage of Monica, Butterfly Effect Pte. Ltd.'s all-in-one AI assistant for chat, writing, summarizing, translating and image generation in a browser sidebar and in desktop and mobile apps. The page describes no agent that operates web pages, desktops or phones. The discovery list labels this link 'Manus', which the catalog already indexes at manus.im.",
+    "reviewed_at": "2026-10-19T06:39:47Z",
+    "evidence": {
+      "url": "https://monica.im",
+      "sha256": "63c3677140fea914f4f3c8ce8b3ddb83866031aa2987b520145a16efae08b1df",
+      "retrieved_at": "2026-10-19T06:25:09Z"
+    }
   }
 ]

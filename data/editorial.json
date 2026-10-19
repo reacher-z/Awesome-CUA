@@ -63143,5 +63143,62 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Claude Code",
+    "kind": "product",
+    "url": "https://docs.anthropic.com/en/docs/claude-code",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Anthropic agentic coding tool for terminal, IDE, desktop and web, with an opt-in computer-use preview that screenshots and operates approved apps on macOS (CLI) and on macOS and Windows (Desktop).",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Claude Code"
+    ],
+    "publisher_id": "organization:anthropic",
+    "primary_supports": [
+      "kind",
+      "name",
+      "relations",
+      "scope",
+      "summary"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://code.claude.com/docs/en/computer-use.md",
+        "retrieved_at": "2026-10-19T06:25:17Z",
+        "sha256": "de3cc4cf15744a48add0e568373b7ea26a9bf51cd8b143a68c084c2977e1163c"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "summary"
+        ],
+        "url": "https://code.claude.com/docs/en/desktop.md",
+        "retrieved_at": "2026-10-19T06:25:17Z",
+        "sha256": "d52aba073096157418773f99dd6d5ed0b7ad9a16674669dcae4ac56a4b5d4e5b"
+      }
+    ],
+    "notes": "A general coding agent, so the scope is adjacent. GUI control is an opt-in research preview for Pro and Max plans, provided in the CLI by a built-in computer-use MCP server on macOS and in the Desktop app on macOS and Windows. Claude Code tries MCP servers, Bash and the Claude in Chrome integration first and reserves screen control for apps those cannot reach. Browser automation runs through the separately cataloged Claude for Chrome extension (url:07b6bbce7ce26a847f79). The docs.anthropic.com address redirects to code.claude.com/docs. Availability was not independently tested.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0c6847c0594857e72c8d22fb7dbd7dd327752f38203b634b78c0ee355bcdb414",
+    "reviewed_at": "2026-10-19T06:25:41Z"
   }
 ]

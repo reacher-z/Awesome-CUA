@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e6dbb541b9b969385365",
+    "url": "https://posgnu.github.io/rci-web",
+    "decision": "alias",
+    "target_id": "arxiv:2303.17491",
+    "reason": "Project page of the indexed paper Language Models can Solve Computer Tasks: same title and authors (Kim, Baldi, McAleer), MiniWoB++ demonstrations, and links to arXiv 2303.17491 and the posgnu/rci-agent code."
   }
 ]

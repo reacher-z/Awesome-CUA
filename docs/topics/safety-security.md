@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (178)](#papers)
 
 ## Benchmarks
 
@@ -228,6 +228,7 @@ All entries in this section: web.
 | 2025‑02‑26 | [OS-Kairos: Adaptive Interaction for MLLM-Powered GUI Agents](https://arxiv.org/abs/2503.16465) | android | Uses step-level confidence estimates to decide when a GUI agent should act autonomously or request human intervention in complex situations. |
 | 2025‑02‑18 | [Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks](https://arxiv.org/abs/2502.13053) | android | Examines active environmental injection against mobile agents, testing whether adversarial interface content redirects decisions during task execution. |
 | 2025‑01‑31 | [Towards Computer-Using Personal Agents](https://arxiv.org/abs/2503.15515) | web, cross-platform | Proposes computer-using personal agents connected to user-controlled data repositories, discussing privacy, interoperability, and collaborative tasks. |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | web | Presents Halligan, a VLM agent that abstracts visual CAPTCHAs into frames, elements and keypoints and solves each as a search problem through generated interaction code, tested on 2,600 challenges of 26 types. |
 | 2024‑11‑04 | [Attacking Vision-Language Computer Agents via Pop-ups](https://arxiv.org/abs/2411.02391) | desktop, web | Tests whether adversarial visual pop-ups divert computer agents from intended tasks in desktop and web benchmark environments. |
 | 2024‑10‑30 | [Evaluating Cultural and Social Awareness of LLM Web Agents](https://arxiv.org/abs/2410.23252) | web | Introduces CASA to assess web agents' responses to cultural and social norms in shopping and forum tasks, including misleading observations. |
 | 2024‑10‑23 | [MobileSafetyBench: Evaluating Safety of Autonomous Agents in Mobile Device Control](https://arxiv.org/abs/2410.17520) | android | Evaluates mobile agents on misuse, side effects, and indirect prompt-injection risks in an Android emulator environment. |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-30 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)
+**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (29)](#papers)
 
 ## Agents
 
@@ -52,5 +52,6 @@ All entries in this section: web.
 | 2025‑08‑07 | [Test-Time Reinforcement Learning for GUI Grounding via Region Consistency](https://arxiv.org/abs/2508.05615) | unspecified | GUI-RC aggregates multiple grounding predictions into spatial voting grids to choose a consensus region. GUI-RCPO then turns agreement with that region into a reward for test-time policy updates on unlabeled GUI screenshots. |
 | 2025‑07‑13 | [LaSM: Layer-wise Scaling Mechanism for Defending Pop-up Attack on GUI Agents](https://arxiv.org/abs/2507.10610) | unspecified | Introduces LaSM, a training-free defense that selectively scales attention and MLP components to improve alignment with task-relevant screen regions. It evaluates the approach against pop-up-based GUI injection attacks. |
 | 2025‑06‑18 | [Understanding GUI Agent Localization Biases through Logit Sharpness](https://arxiv.org/abs/2506.15425) | unspecified | Introduces a finer-grained taxonomy of GUI localization errors and a logit-based Peak Sharpness Score for analyzing coordinate-prediction uncertainty. A context-aware cropping method refines the visual input without retraining the grounding model. |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | web | Presents Halligan, a VLM agent that abstracts visual CAPTCHAs into frames, elements and keypoints and solves each as a search problem through generated interaction code, tested on 2,600 challenges of 26 types. |
 | 2023‑03‑30 | [Language Models can Solve Computer Tasks](https://arxiv.org/abs/2303.17491) | web | Introduces recursive criticism and improvement prompting for language-model agents performing computer tasks, evaluated on MiniWoB++ with a small number of demonstrations per task. |
 | 2022‑09‑18 | [Enabling Conversational Interaction with Mobile UI using Large Language Models](https://arxiv.org/abs/2209.08655) | unspecified | Studies few-shot prompting of a single language model for four mobile-UI interaction tasks, aiming to support conversational interface use without a separate trained model for each task. |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (560)](#papers)
 
 ## Benchmarks
 
@@ -634,6 +634,7 @@ All entries in this section: web.
 | 2025‑01‑27 | [WinClick: GUI Grounding with Multimodal Large Language Models](https://arxiv.org/abs/2503.04730) | desktop, windows | Introduces a screenshot-based Windows GUI agent and the WinSpot benchmark for evaluating localization of actionable interface regions. |
 | 2025‑01‑13 | [WebWalker: Benchmarking LLMs in Web Traversal](https://arxiv.org/abs/2501.07572) | web | Introduces WebWalkerQA and an exploration-and-critique framework for gathering information by traversing multiple levels of a website. |
 | 2025‑01‑02 | [A3: Android Agent Arena for Mobile GUI Agents with Essential-State Procedural Evaluation](https://arxiv.org/abs/2501.01149) | android | Introduces Android Agent Arena with online application tasks and procedural evaluation based on reaching essential intermediate states. |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | web | Presents Halligan, a VLM agent that abstracts visual CAPTCHAs into frames, elements and keypoints and solves each as a search problem through generated interaction code, tested on 2,600 challenges of 26 types. |
 | 2024‑12‑24 | [GUI Testing Arena: A Unified Benchmark for Advancing Autonomous GUI Testing Agent](https://arxiv.org/abs/2412.18426) | unspecified | Evaluates GUI testing through test-intent generation, execution, and defect detection using real, modified, and synthetic mobile application data. |
 | 2024‑12‑18 | [TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks](https://arxiv.org/abs/2412.14161) | web, desktop | Simulates a software-company workplace to evaluate agents on professional tasks involving websites, programs, files, and coworker communication. |
 | 2024‑12‑13 | [Large Action Models: From Inception to Implementation](https://arxiv.org/abs/2412.10047) | desktop, windows | Uses a Windows-agent case study to describe a development workflow for large action models, covering data collection, training, grounding, environment integration, and evaluation. |

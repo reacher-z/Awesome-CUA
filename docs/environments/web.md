@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (442)](#papers)
 
 ## Benchmarks
 
@@ -563,6 +563,7 @@
 | 2025‑01‑28 | [CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation](https://arxiv.org/abs/2501.16609) | web | Introduces CowPilot, a web-navigation framework where agents suggest actions and users can pause, reject, override, or resume them. It evaluates autonomous and collaborative use through task success and human effort. |
 | 2025‑01‑20 | [Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training](https://arxiv.org/abs/2501.11425) | web | Builds self-critique training examples from searched recovery paths to improve agents' ability to detect and correct errors during interaction. |
 | 2025‑01‑13 | [WebWalker: Benchmarking LLMs in Web Traversal](https://arxiv.org/abs/2501.07572) | web | Introduces WebWalkerQA and an exploration-and-critique framework for gathering information by traversing multiple levels of a website. |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | web | Presents Halligan, a VLM agent that abstracts visual CAPTCHAs into frames, elements and keypoints and solves each as a search problem through generated interaction code, tested on 2,600 challenges of 26 types. |
 | 2024‑12‑18 | [TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks](https://arxiv.org/abs/2412.14161) | web, desktop | Simulates a software-company workplace to evaluate agents on professional tasks involving websites, programs, files, and coworker communication. |
 | 2024‑12‑17 | [Proposer-Agent-Evaluator(PAE): Autonomous Skill Discovery For Foundation Model Internet Agents](https://arxiv.org/abs/2412.13194) | web | Combines autonomous task proposal, web interaction, and visual success evaluation to discover skills and improve browser-agent policies. |
 | 2024‑12‑14 | [WEPO: Web Element Preference Optimization for LLM-based Web Navigation](https://arxiv.org/abs/2412.10742) | web | Uses web-element preference optimization with sampled negative HTML elements to align high-level user intent with navigation actions. |

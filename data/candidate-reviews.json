@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:12aac8cced48c576a0a7",
+    "url": "https://halligan.pages.dev",
+    "decision": "alias",
+    "target_id": "url:6942e8211a0f59eb7878",
+    "reason": "Project website for the Halligan USENIX Security 2025 paper, which the paper names as its website; same title and seven authors."
   }
 ]

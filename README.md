@@ -17,7 +17,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 [Read the research survey](https://awesomecua.github.io/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C178-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C614-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C179-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C615-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
@@ -71,9 +71,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,178 resource records** · **1,614 curated** · **2,718 paper and survey records** · **54 discovery documents**
+**3,179 resource records** · **1,615 curated** · **2,719 paper and survey records** · **54 discovery documents**
 
-Evidence through `2026-10-19T04:42:05Z`. 1,564 records have bibliographic verification only; 905 discovered identifiers remain unresolved, not counting 133 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-10-19T06:22:46Z`. 1,564 records have bibliographic verification only; 904 discovered identifiers remain unresolved, not counting 134 links reviewed as non-resources or other addresses of indexed resources. 136 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -82,13 +82,13 @@ Evidence through `2026-10-19T04:42:05Z`. 1,564 records have bibliographic verifi
 <!-- EXPLORE:START -->
 | Research and training | Engineering and industry |
 | --- | --- |
-| [Research by topic](docs/topics.md) · **1,136** reviewed papers · [Full bibliography](docs/papers.md) · 2,718 paper and survey records | [Agents](docs/agents.md) · **43** |
+| [Research by topic](docs/topics.md) · **1,137** reviewed papers · [Full bibliography](docs/papers.md) · 2,719 paper and survey records | [Agents](docs/agents.md) · **43** |
 | [Surveys](docs/surveys.md) · **18** | [Frameworks](docs/frameworks.md) · **75** |
 | [Datasets](docs/datasets.md) · **86** | [Infrastructure](docs/infrastructures.md) · **14** |
 | [Benchmarks](docs/benchmarks.md) · **88** | [Tools](docs/tools.md) · **20** |
 | [Models and checkpoint releases](docs/models.md) · **98** | [Products](docs/products.md) · **20** · [Publishers and brands](docs/companies.md) · **16** |
 
-**By platform:** [Web](docs/environments/web.md) **621** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**By platform:** [Web](docs/environments/web.md) **622** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **300** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -158,10 +158,10 @@ The most-mentioned curated resources per category: the count is how many other c
 | --- | ---: | --- | --- | --- | --- |
 | [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | 9 | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. |
 | [Agent S](https://github.com/simular-ai/Agent-S) | 2 | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. |
+| [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | 2 | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. |
 | [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | 2 | web | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | 1 | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. |
 | [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | 1 | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. |
-| [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | 1 | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. |
 
 <!-- HIGHLIGHTS:END -->
 

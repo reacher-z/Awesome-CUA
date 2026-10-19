@@ -1,19 +1,19 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
-  "bibliographic_records": 2718,
+  "as_of_utc": "2026-10-19T06:22:46Z",
+  "total_records": 3179,
+  "curated_records": 1615,
+  "bibliographic_records": 2719,
   "arxiv_active_records": 2705,
-  "non_arxiv_bibliographic_records": 13,
-  "publication_metadata_records": 77,
+  "non_arxiv_bibliographic_records": 14,
+  "publication_metadata_records": 78,
   "arxiv_archive_records": 2841,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -193,7 +193,7 @@
     "framework": 75,
     "infrastructure": 14,
     "model": 98,
-    "paper": 2700,
+    "paper": 2701,
     "product": 20,
     "survey": 18,
     "tool": 20
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -288,7 +288,7 @@
       "linux": 18,
       "macos": 14,
       "unspecified": 341,
-      "web": 441,
+      "web": 442,
       "windows": 37
     },
     "product": {
@@ -710,8 +710,8 @@
       "resolved_aliases": 0,
       "curated": 394,
       "excluded": 0,
-      "set_aside": 45,
-      "unindexed": 13
+      "set_aside": 46,
+      "unindexed": 12
     },
     {
       "id": "opendilab-ui",

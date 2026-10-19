@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
 
 ## Benchmarks
 
@@ -185,6 +185,7 @@ All entries in this section: cross-platform.
 | 2025‑03‑14 | [DeskVision: Large Scale Desktop Region Captioning for Advanced GUI Agents](https://arxiv.org/abs/2503.11170) | desktop | Introduces AutoCaptioner, DeskVision, and GUIExplorer for generating desktop region descriptions and training interface-understanding models. |
 | 2025‑03‑05 | [SpiritSight Agent: Advanced GUI Agent with One Look](https://arxiv.org/abs/2503.03196) | cross-platform | Introduces SpiritSight and GUI-Lasagne data, combining multilevel GUI annotations with visual block parsing for high-resolution interface navigation. |
 | 2025‑02‑12 | [TRISHUL: Towards Region Identification and Screen Hierarchy Understanding for Large VLM based GUI Agents](https://arxiv.org/abs/2502.08226) | cross-platform | Combines hierarchical screen parsing with spatially enriched element descriptions to support both locating GUI targets and describing indicated elements. |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | web | Presents Halligan, a VLM agent that abstracts visual CAPTCHAs into frames, elements and keypoints and solves each as a search problem through generated interaction code, tested on 2,600 challenges of 26 types. |
 | 2024‑12‑13 | [Iris: Breaking GUI Complexity with Adaptive Focus and Self-Refining](https://arxiv.org/abs/2412.10342) | web, desktop | Combines information-sensitive image cropping with a learning loop between element description and grounding for complex interface understanding. |
 | 2024‑12‑12 | [Falcon-UI: Understanding GUI Before Following User Instructions](https://arxiv.org/abs/2412.09362) | web, android, cross-platform | Pretrains GUI-context understanding with instruction-free web interactions before fine-tuning Falcon-UI on instructed GUI tasks. |
 | 2024‑10‑25 | [EDGE: Enhanced Grounded GUI Understanding with Enriched Multi-Granularity Synthetic Data](https://arxiv.org/abs/2410.19461) | web, cross-platform | Synthesizes GUI training examples at multiple levels of detail from webpages and studies transfer of learned understanding to other interface environments. |

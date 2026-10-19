@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,107; 523 ⭐) · [2025](#2025) (700; 368 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,107; 523 ⭐) · [2025](#2025) (701; 369 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -1825,6 +1825,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2025-01-07 | [LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token](https://arxiv.org/abs/2501.03895) | metadata |  |
 | 2025-01-03 | [AgentRefine: Enhancing Agent Generalization through Refinement Tuning](https://arxiv.org/abs/2501.01702) | metadata |  |
 | 2025-01-02 | [A3: Android Agent Arena for Mobile GUI Agents with Essential-State Procedural Evaluation](https://arxiv.org/abs/2501.01149) | ⭐ reviewed | [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md) |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [screen-understanding](topics/screen-understanding.md), [training-free](topics/training-free.md) |
 
 ## 2024
 

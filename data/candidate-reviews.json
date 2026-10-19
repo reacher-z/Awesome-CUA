@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a9f93baab9b50bdb58e1",
+    "url": "https://qhlin.me",
+    "decision": "not_a_resource",
+    "reason": "Personal academic homepage of Kevin Qinghong Lin, linked from his name in the ShowUI-π author byline; a person's page listing many projects, not a resource."
   }
 ]

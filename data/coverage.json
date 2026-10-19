@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
-  "non_resource_candidates": 97,
+  "unindexed_candidates": 904,
+  "non_resource_candidates": 98,
   "alias_candidates": 36,
   "pending_editorial": [
     {
@@ -1250,8 +1250,8 @@
       "resolved_aliases": 0,
       "curated": 4,
       "excluded": 0,
-      "set_aside": 3,
-      "unindexed": 4
+      "set_aside": 4,
+      "unindexed": 3
     },
     {
       "id": "release-opencua",

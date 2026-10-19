@@ -7,7 +7,7 @@ import catalog
 
 
 # Hub datasets and checkpoints that had no reviewed relation (#93), with the link their retained sources state.
-LINKED = {"url:c5eb975c0d66f8a2954f": ("variant_of", "github:thudm/cogagent"),
+LINKED = {"url:c5eb975c0d66f8a2954f": ("variant_of", "github:zai-org/cogagent"),
     "url:c79e152e6f7af1a9efed": ("component_of", "github:likaixin2000/screenspot-pro-gui-grounding"),
     "url:79287058342289aa5d45": ("documented_by", "arxiv:2502.01977"),
     "url:07b65dc937756ddff4a1": ("component_of", "github:ariaui/aria-ui"),

@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:thudm/cogagent",
+    "target_id": "github:zai-org/cogagent",
+    "repository_id": 724535804,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T12:05:16Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/THUDM/CogAgent",
+        "resolved_url": "https://api.github.com/repositories/724535804",
+        "repository_id": 724535804,
+        "full_name": "zai-org/CogAgent",
+        "html_url": "https://github.com/zai-org/CogAgent",
+        "retrieved_at": "2026-10-18T12:04:47Z",
+        "sha256": "0a8adfffe08f52afe199ec4f194a04f521c239a26e24aae3502d7e37c949f412"
+      },
+      {
+        "url": "https://api.github.com/repos/zai-org/CogAgent",
+        "resolved_url": "https://api.github.com/repos/zai-org/CogAgent",
+        "repository_id": 724535804,
+        "full_name": "zai-org/CogAgent",
+        "html_url": "https://github.com/zai-org/CogAgent",
+        "retrieved_at": "2026-10-18T12:04:47Z",
+        "sha256": "0a8adfffe08f52afe199ec4f194a04f521c239a26e24aae3502d7e37c949f412"
+      }
+    ]
   }
 ]

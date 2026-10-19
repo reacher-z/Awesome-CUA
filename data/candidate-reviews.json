@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b743e80bc0be1ef8de8d",
+    "url": "https://microsoft.github.io/FIVE-UI-Evol",
+    "decision": "alias",
+    "target_id": "arxiv:2504.11257",
+    "reason": "Leaderboard website for UI-I2E-Bench, the grounding benchmark introduced by the indexed UI-E2I-Synth paper; published from the deploy_website branch of microsoft/FIVE-UI-Evol."
   }
 ]

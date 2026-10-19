@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:beabd1248afe045ac222",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M is H Company's 263M-parameter pretrained text-and-image encoder backbone, trained with a masked discrete-diffusion objective on web text, code, document pages, captions and synthetic OCR data; its card says it needs a task head for retrieval, classification or extraction. The card describes no GUI, screen-control or agent use, so it is a document-understanding encoder outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:07:34Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M/raw/5ba79fb246e23776d2c2fcead975eae2775ed94b/README.md",
+      "sha256": "732a99f5e41f3e79af0b082e25dbb14afd92778cfc43d8a5201fe4584c2f01b3",
+      "retrieved_at": "2026-10-18T16:07:05Z"
+    }
   }
 ]

@@ -63143,5 +63143,43 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Spine-Branch Coordination for Multi-agent Computer Use",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.22077",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "long-horizon",
+      "efficiency"
+    ],
+    "summary": "Spine-Branch splits computer-use tasks into a spine that keeps one VM's state and parallel branch subtasks on disposable VMs, so states never merge; evaluated on 200 Odysseys tasks with three CUA backbones.",
+    "verify_terms": [
+      "Spine-Branch Coordination"
+    ],
+    "notes": "Reviewed against the v1 abstract and full text. Workers act from screenshots with click, type and scroll actions inside isolated desktop virtual machines. Odysseys is the main testbed; a supplementary OSWorld 2.0 comparison finds that most tasks there do not benefit from decomposition. Reported results were not reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.22077v1"
+    ],
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.22077v1",
+        "sha256": "e446ef42b0dc3d21cbf5f8837938d02115cce9e270f99b4c44ee013a57128e08",
+        "retrieved_at": "2026-10-19T08:39:34Z"
+      }
+    ],
+    "reviewed_sha256": "e4af236b4a939e02d56524d23ea5d67b5d753db6b89108474db0deb9593b6885",
+    "reviewed_at": "2026-10-19T08:39:36Z"
   }
 ]

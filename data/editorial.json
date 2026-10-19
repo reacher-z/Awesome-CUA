@@ -63143,5 +63143,56 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "HARPA AI",
+    "kind": "product",
+    "url": "https://harpa.ai",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow"
+    ],
+    "summary": "Chrome extension that brings chat models to any web page for summaries and writing, with an automation engine whose user-built commands navigate, click, paste, extract and monitor pages around AI steps.",
+    "verify_terms": [
+      "HARPA AI"
+    ],
+    "scope": "adjacent",
+    "evidence_urls": [
+      "https://harpa.ai/guides/getting-started"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "notes"
+        ],
+        "url": "https://harpa.ai/guides/custom-page-aware-chatgpt-commands",
+        "retrieved_at": "2026-10-19T06:25:55Z",
+        "sha256": "f16f3064fcf23dd417d1562b65ed14c2ee0b4656a41c51dd898dab6d1da7e9e8"
+      }
+    ],
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "notes": "Recorded as adjacent: the publisher's getting-started guide presents HARPA mainly as a page-aware AI chat for summarizing, writing and search, with an AUTOMATE tab for page monitors and scheduled commands. The reviewed guides describe page actions as user-built command steps (NAVIGATE, CLICK, PASTE, SCROLL, EXTRACT, RUN JS) that run in the open tab and can be combined with GPT steps, rather than a model that plans clicks from screenshots. The homepage is not used as a receipt because its email-obfuscation markup changes on every request.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4fd9f2628e565e53c5cf15ab9d6ebb13209a6a8f9904427c612100d89446806b",
+    "reviewed_at": "2026-10-19T06:26:10Z"
   }
 ]

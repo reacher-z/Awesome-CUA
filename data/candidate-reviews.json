@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:12eca12dbb5a4c439fbe",
+    "url": "https://composio.dev/blog/claude-computer-use",
+    "decision": "out_of_scope",
+    "reason": "A October 2024 Composio blog post (now served at composio.dev/content/claude-computer-use) in which a Composio employee runs Anthropic's computer-use quickstart demo on a few web and spreadsheet tasks and gives an opinion on cost and speed. It is commentary on the already-curated Claude computer-use capability (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:34:43Z",
+    "evidence": {
+      "url": "https://composio.dev/blog/claude-computer-use",
+      "sha256": "1d1f14a9057eb1d3517aa238cadc0353baae793b9f1fbab9f4cda20ed2ccc24a",
+      "retrieved_at": "2026-10-19T06:12:01Z"
+    }
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:85ef306422597923d184",
+    "url": "https://smartflow-4c5a0a.webflow.io",
+    "decision": "alias",
+    "target_id": "arxiv:2405.12842",
+    "reason": "Project website of the indexed SmartFlow paper: it carries the paper title \"SmartFlow: Robotic Process Automation using LLMs\" and the same five authors, with a demo video and Google Drive links to the paper, supplementary material and dataset."
   }
 ]

@@ -63143,5 +63143,320 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FIVE-UI-Evol",
+    "kind": "framework",
+    "url": "https://github.com/microsoft/FIVE-UI-Evol",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "data-generation",
+      "grounding",
+      "sandbox",
+      "memory"
+    ],
+    "summary": "Microsoft monorepo for InfiniteWeb website and task-evaluator synthesis, the UI-E2I-Synth grounding evaluation script and UI-I2E-Bench leaderboard, and UI-Evol trajectory-based knowledge refinement.",
+    "scope": "core",
+    "verify_terms": [
+      "FIVE-UI-Evol"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2601.04126",
+        "evidence_url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/InfiniteWeb/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2505.21964",
+        "evidence_url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-Evol/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2504.11257",
+        "evidence_url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/leaderboard/index.html"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/InfiniteWeb/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The repository was renamed from microsoft/E2I-Synth; both API names return repository 919941789, and the UI-Evol README still clones the old address. InfiniteWeb/ synthesizes multi-page websites with data, APIs, user tasks and dense reward evaluators from a website seed, validates them with generated tests, and includes an OSWorld integration; its README links arXiv 2601.04126 and a Hub dataset. UI-E2I-Synth/ holds only i2e-bench-eval.py, which scores point predictions from an OpenAI-compatible model against UI-I2E-Bench boxes, and the leaderboard site; the instruction-synthesis pipeline itself is not in this tree. UI-Evol/ re-traces actions from screenshot sequences and has an LLM critic refine task knowledge, configured for Azure OpenAI. The root LICENSE is MIT; InfiniteWeb/ and the leaderboard folder carry their own license files. Code was read, not run; paper results were not reproduced.",
+    "details": {
+      "repository_revision": "a07e8ecfad9203c202ba04557f8c5ad9f58d61f1",
+      "availability": "Public InfiniteWeb generation code, UI-I2E-Bench evaluation script and leaderboard site, and UI-Evol code; the UI-I2E-Bench data is on the Hub and the UI-E2I-Synth instruction-synthesis pipeline is not released here."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/microsoft/FIVE-UI-Evol/git/trees/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1?recursive=1",
+        "sha256": "007edd511d3c42740788911931a51bcd3b2b07bd14e7c50032229454bd84eae5",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/InfiniteWeb/README.md",
+        "sha256": "3395ff8d8158cd4e8956ab22af4b7d39e51a18f7959e80cd556d8f6a327fdc23",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-Evol/README.md",
+        "sha256": "78e818f9bc5f109d478f66a9d530d2dc6ce8f031e753f1bf438a76b587c32948",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/leaderboard/index.html",
+        "sha256": "9ddfcc1e1898d61fa01197cdb0fafee7990cc92e3671c229ae83634330c66814",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/i2e-bench-eval.py",
+        "sha256": "504f491e65b1d242644857d5c1ed2cdf86a6c214f252332d4b84a4f31adc6dbc",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/LICENSE",
+        "sha256": "b5cb7ff7859e7d282d98fc43ab081b0dda5dc659dc3385cf65740c759a7e6a6c",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "39e3df2f62f2c49750a52696e02228bafcc1c3cf02709e0a91cdc3f916c5ed97",
+    "reviewed_at": "2026-10-19T07:09:21Z",
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/LICENSE",
+          "retrieved_at": "2026-10-19T07:08:31Z",
+          "basis": "The root LICENSE is the MIT permission text under a 'The MIT License (MIT)' title, which enrich does not detect; recorded for the repository's code. InfiniteWeb/ and the leaderboard folder carry their own license files, and no data or weights license is inferred."
+        },
+        "reason": "The root LICENSE is the MIT permission text under a 'The MIT License (MIT)' title, which enrich does not detect; recorded for the repository's code. InfiniteWeb/ and the leaderboard folder carry their own license files, and no data or weights license is inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/LICENSE"
+        ]
+      }
+    }
+  },
+  {
+    "id": "url:c08566be0d973ec40c48",
+    "name": "UI-I2E-Bench",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/vaundys/I2E-Bench",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation"
+    ],
+    "summary": "GUI grounding benchmark from UI-E2I-Synth: 1,477 explicit and implicit instructions on mobile, desktop and web screenshots, each paired with a target element's bounding box and element type.",
+    "scope": "core",
+    "verify_terms": [
+      "I2E-Bench"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/vaundys/I2E-Bench/revision/ecfcc016d92c87ce6c194dba1b3faffabf7db51d"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2504.11257",
+        "evidence_url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/leaderboard/index.html"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "environments",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data"
+    ],
+    "notes": "The Hub card has only metadata (apache-2.0, English, 1K<n<10K). The UI-I2E-Bench leaderboard page in microsoft/FIVE-UI-Evol links this dataset, the UI-E2I-Synth paper and the code, and describes the benchmark as using implicit instructions and long-tail element types with realistic element-to-screen size ratios. Each annotation row gives an image path, instruction, bounding box, element type, source and quality flags. The evaluation script in that repository counts a prediction correct when the predicted point falls inside the box and reports accuracy by source, element type and instruction type. The apache-2.0 declaration does not settle rights to the screenshots.",
+    "details": {
+      "hub_revision": "ecfcc016d92c87ce6c194dba1b3faffabf7db51d",
+      "repository_url": "https://github.com/microsoft/FIVE-UI-Evol/tree/main/UI-E2I-Synth",
+      "benchmark_protocol": {
+        "focus": [
+          "GUI element grounding from explicit and implicit instructions"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screenshots",
+          "natural-language instructions"
+        ],
+        "actions": [
+          "point prediction"
+        ],
+        "evaluation": "Point-in-box accuracy against the annotated bounding box, broken down by source platform, element type and instruction type (UI-E2I-Synth/i2e-bench-eval.py).",
+        "counts": [
+          {
+            "value": 1477,
+            "unit": "annotated instructions",
+            "qualifier": "exact",
+            "population": "I2E-bench-annotation.jsonl at Hub revision ecfcc01",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl"
+          },
+          {
+            "value": 1161,
+            "unit": "distinct screenshots referenced",
+            "qualifier": "exact",
+            "population": "I2E-bench-annotation.jsonl at Hub revision ecfcc01",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl"
+          },
+          {
+            "value": 705,
+            "unit": "mobile instructions",
+            "qualifier": "exact",
+            "population": "I2E-bench-annotation.jsonl at Hub revision ecfcc01",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl"
+          },
+          {
+            "value": 519,
+            "unit": "desktop instructions",
+            "qualifier": "exact",
+            "population": "I2E-bench-annotation.jsonl at Hub revision ecfcc01",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl"
+          },
+          {
+            "value": 253,
+            "unit": "web instructions",
+            "qualifier": "exact",
+            "population": "I2E-bench-annotation.jsonl at Hub revision ecfcc01",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl"
+          },
+          {
+            "value": 917,
+            "unit": "implicit instructions",
+            "qualifier": "exact",
+            "population": "I2E-bench-annotation.jsonl at Hub revision ecfcc01",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl"
+          }
+        ],
+        "notes": "Counts were computed from the pinned annotation file; source counts sum to the instruction total, and implicit plus 560 explicit instructions do too. The Hub manifest has 1,509 PNG files in five folders, more than the 1,161 screenshots the annotations reference. No split is declared.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl",
+          "https://huggingface.co/api/datasets/vaundys/I2E-Bench/revision/ecfcc016d92c87ce6c194dba1b3faffabf7db51d",
+          "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/i2e-bench-eval.py",
+          "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/leaderboard/index.html"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/vaundys/I2E-Bench/resolve/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/I2E-bench-annotation.jsonl",
+        "sha256": "56f69897e22e683d82f015e698f33e35d19de25d77eeaba992039767efe63981",
+        "retrieved_at": "2026-10-19T07:08:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "relations",
+          "notes",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/leaderboard/index.html",
+        "sha256": "9ddfcc1e1898d61fa01197cdb0fafee7990cc92e3671c229ae83634330c66814",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/microsoft/FIVE-UI-Evol/a07e8ecfad9203c202ba04557f8c5ad9f58d61f1/UI-E2I-Synth/i2e-bench-eval.py",
+        "sha256": "504f491e65b1d242644857d5c1ed2cdf86a6c214f252332d4b84a4f31adc6dbc",
+        "retrieved_at": "2026-10-19T07:08:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/vaundys/I2E-Bench/raw/ecfcc016d92c87ce6c194dba1b3faffabf7db51d/README.md",
+        "sha256": "718a10fa2b6c81adfe66e848f13cd9672364685e2ab638ef67c3892a1cb74d8a",
+        "retrieved_at": "2026-10-19T07:08:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cf382038d5dc2c54bb2353b50fad311ff8fab34bab7433fe26a66147ef44607c",
+    "reviewed_at": "2026-10-19T07:09:21Z"
   }
 ]

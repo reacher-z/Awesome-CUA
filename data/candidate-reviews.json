@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f041e0e86dc92f792d43",
+    "url": "https://openreview.net/forum?id=6jZi4HSs6o",
+    "decision": "alias",
+    "target_id": "arxiv:2504.01382",
+    "reason": "OpenReview forum of the COLM 2025 edition of the indexed paper An Illusion of Progress? Assessing the Current State of Web Agents; same title and the same eight authors in the same order."
   }
 ]

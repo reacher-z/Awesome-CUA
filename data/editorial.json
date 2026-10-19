@@ -63143,5 +63143,47 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SimTrace: Grounded Multimodal User Trajectories Generation for Online User Modeling",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.38397",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "web-navigation",
+      "action-prediction",
+      "sandbox"
+    ],
+    "scope": "core",
+    "summary": "SimTrace anonymizes real user sessions, builds a simulated twin of the website and has a browser agent reproduce each session, yielding clickstreams that pair actions with page HTML, screenshots and personas.",
+    "verify_terms": [
+      "SimTrace: Grounded Multimodal User Trajectories"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.38397v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The paper applies SimTrace to e-commerce: Section 3 of the v1 full text describes a synthetic dataset over five simulated stores (apparel, food, cookware, toys, accessories) in English, French, Turkish and Hindi, and Section 2.3 describes a teacher agent with plan, act, reflect and verify modules that issues browser actions in the twin. Downstream evaluations cover purchase prediction, session-based recommendation and next-action prediction. The paper names its code (github.com/agentic-foundation-modeling-research/SimTrace) and dataset (huggingface.co/datasets/luyunan/SimTrace); neither release is reviewed here. Experimental results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.38397v1",
+        "sha256": "67783a02290838ea8dfe47d38e403bb74b252a5300f57bca788abd1b517d864b",
+        "retrieved_at": "2026-10-19T08:37:45Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract page and the v1 HTML full text (Sections 1-3 and the experiment overview). No result reproduction.",
+    "reviewed_sha256": "7f4d7a3e78b05d314b7f100ba8d2487890756fa5f79234c592e3113624e9622e",
+    "reviewed_at": "2026-10-19T08:38:03Z"
   }
 ]

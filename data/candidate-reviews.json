@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:6905d482ed83d1782558",
+    "url": "https://openinterpreter.com",
+    "decision": "alias",
+    "target_id": "github:openinterpreter/open-interpreter",
+    "reason": "Project website for the indexed Open Interpreter repository, which names it as its homepage."
   }
 ]

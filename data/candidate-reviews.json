@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9e8c997f53fd6a59e3a2",
+    "url": "https://odysseys-website.pages.dev",
+    "decision": "alias",
+    "target_id": "arxiv:2604.24964",
+    "reason": "Former address of the project website for the indexed Odysseys long-horizon web benchmark paper; it now redirects to odysseysbench.com."
   }
 ]

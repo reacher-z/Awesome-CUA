@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:68d5ae6b679e7abff552",
+    "url": "https://openreview.net/forum?id=JDa5RiTIC7",
+    "decision": "alias",
+    "target_id": "arxiv:2411.06559",
+    "reason": "OpenReview forum of the withdrawn ICLR 2025 submission that became the indexed WebDreamer paper; same method, benchmarks and main results table, and ten of its twelve authors."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:bc1ee67d0b76917da5bf",
+    "url": "https://openreview.net/forum?id=Y9uGznsgIU",
+    "decision": "alias",
+    "target_id": "arxiv:2404.06474",
+    "reason": "OpenReview record, imported from DBLP, of the arXiv (CoRR 2024) version of the indexed paper Autonomous Evaluation and Refinement of Digital Agents; same title and authors, PDF link arXiv 2404.06474v3."
   }
 ]

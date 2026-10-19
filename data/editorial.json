@@ -63143,5 +63143,68 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:07e274077af6ea9fd5f9",
+    "name": "WebOlympus: An Open Platform for Web Agents on Live Websites",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2024.emnlp-demo.20/",
+    "summary": "Presents WebOlympus, an open platform that runs web agents on live websites from a few lines of code or a Chrome extension, with a safety monitor that blocks harmful actions through human or model checks.",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "human-in-the-loop",
+      "data-generation"
+    ],
+    "verify_terms": [
+      "WebOlympus"
+    ],
+    "evidence_urls": [
+      "https://aclanthology.org/2024.emnlp-demo.20/"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.doi",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.publisher",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "environments",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://aclanthology.org/2024.emnlp-demo.20.pdf",
+        "retrieved_at": "2026-10-19T06:11:56Z",
+        "sha256": "45f9b7b1e180728de6731e4ef8b2a9e6a86a7eadf34e743a7b8240d862e67e40"
+      }
+    ],
+    "notes": "The annotation was reviewed against the ACL Anthology landing page and proceedings PDF. Experiments have not been independently reproduced. The platform observes HTML and screenshots and grounds actions through textual choices, set-of-mark overlays or pixel coordinates. On 50 Mind2Web tasks run on live websites, the paper reports SeeAct success of 48% with textual choices and 56% with set-of-mark grounding. The paper says code will be released for research under an OPEN-RAIL license; no release was checked in this review.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1e49bf4c75028979e1b17f1327b5f818f89dbe284ff5e43a581e5fb074103d98",
+    "reviewed_at": "2026-10-19T06:12:20Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -338,6 +338,7 @@ All entries in this section: android.
 | 2024‑12‑05 | [Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction](https://arxiv.org/abs/2412.04454) | cross-platform | Uses screenshots, a unified action space, and staged grounding and reasoning training for cross-platform GUI interaction. |
 | 2024‑11‑30 | [DroidCall: A Dataset for LLM-powered Android Intent Invocation](https://arxiv.org/abs/2412.00402) | android | Introduces data and a generation pipeline for translating natural-language requests into Android intent invocations using compact language models. |
 | 2024‑11‑20 | [AdaptAgent: Adapting Multimodal Web Agents with Few-Shot Learning from Human Demonstrations](https://arxiv.org/abs/2411.13451) | web | Adapts multimodal web agents to unfamiliar websites using a small number of human demonstrations through prompting or meta-learning. |
+| 2024‑11 | [WebOlympus: An Open Platform for Web Agents on Live Websites](https://aclanthology.org/2024.emnlp-demo.20/) | web | Presents WebOlympus, an open platform that runs web agents on live websites from a few lines of code or a Chrome extension, with a safety monitor that blocks harmful actions through human or model checks. |
 | 2024‑10‑31 | [AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents](https://arxiv.org/abs/2410.24024) | android | Provides a shared Android action environment, reproducible tasks, and instruction data for training and comparing language and multimodal agents. |
 | 2024‑10‑30 | [OS-ATLAS: A Foundation Action Model for Generalist GUI Agents](https://arxiv.org/abs/2410.23218) | cross-platform | Combines cross-platform GUI grounding data synthesis with action-model training to study generalization to unfamiliar interfaces. |
 | 2024‑10‑25 | [EDGE: Enhanced Grounded GUI Understanding with Enriched Multi-Granularity Synthetic Data](https://arxiv.org/abs/2410.19461) | web, cross-platform | Synthesizes GUI training examples at multiple levels of detail from webpages and studies transfer of learned understanding to other interface environments. |

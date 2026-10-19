@@ -63143,5 +63143,119 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ViMo code",
+    "kind": "framework",
+    "url": "https://github.com/ai-agents-2030/ViMo",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "world-models",
+      "mobile-navigation"
+    ],
+    "summary": "Code for the ViMo GUI world model: Gemini-based next-screen text prediction, AITW and AndroidControl data processing, InstructPix2Pix-style graphic inference, and an AndroidWorld agent that consults it.",
+    "scope": "core",
+    "verify_terms": [
+      "ViMo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2504.13936",
+        "evidence_url": "https://ai-agents-2030.github.io/ViMo/"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The README describes ViMo as a GUI world model that predicts the next GUI state as image and text. UI_text_prediction.py runs the text-prediction step with Gemini (gemini-2.0-flash), with a GPT-4o variant in the same file. data/ holds the selected Android in the Wild and AndroidControl episode IDs with annotations; images must be downloaded from the original releases, then generate_ocr.py and check_fix.py prepare the symbolic text representation. Graphic prediction is trained by following the InstructPix2Pix project, with edit_cli.py and generate.yaml for inference; no trained weights are in the repository. 'ViMo-Empowered Agent' is a copy of AndroidWorld (with its own Apache-2.0 LICENSE) whose vimo modules post the current screenshot and a candidate action to a world-model server and score the predicted screen when choosing actions. The README does not cite the paper; the project page links this repository and arXiv 2504.13936. No license file is at the repository root. Code was read, not run.",
+    "details": {
+      "repository_revision": "1f319fece4d3a4ac1d41b4572751bca1a10fa690",
+      "availability": "Public text-prediction, data-processing, graphic-inference and agent code with episode-ID annotations; no trained world-model weights, and AITW/AndroidControl images must be obtained separately."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ai-agents-2030/ViMo/git/trees/1f319fece4d3a4ac1d41b4572751bca1a10fa690?recursive=1",
+        "sha256": "bff182c03efb5b0acd9610f4ed4ff204cb3a2fe731bc416e59924f041b308ebc",
+        "retrieved_at": "2026-10-19T06:59:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/UI_text_prediction.py",
+        "sha256": "0723d06257b3d2fb795bc28238baaafaaf2737a684623d07ce99e25ba28c0110",
+        "retrieved_at": "2026-10-19T06:59:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/ViMo-Empowered%20Agent/android_world/agents/vimo/vimo_reward.py",
+        "sha256": "a1dbd214d87549cd65262cdaff34d09463bfba3a74c742cb72d0912b20d9ec24",
+        "retrieved_at": "2026-10-19T06:59:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/edit_cli.py",
+        "sha256": "bbe69cee05e986cf67f090dce46f3a748ce94539f5c3ce44ee14af45088dc14a",
+        "retrieved_at": "2026-10-19T07:00:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://ai-agents-2030.github.io/ViMo/",
+        "sha256": "96f6b0485c524b937fbca9985f2630d3c5667239d9e9940b67c86e3a8e76425b",
+        "retrieved_at": "2026-10-19T07:00:00Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No license file is at the repository root and the README states no license; the Apache-2.0 LICENSE inside the vendored AndroidWorld copy covers that copy only.",
+        "evidence_urls": [
+          "https://api.github.com/repos/ai-agents-2030/ViMo/git/trees/1f319fece4d3a4ac1d41b4572751bca1a10fa690?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3bd1ee4aef9f07f0732989b83fb9ee1631814d72b567eb3300e32dc2d9b674a4",
+    "reviewed_at": "2026-10-19T07:00:36Z"
   }
 ]

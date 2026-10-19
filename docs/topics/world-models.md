@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-42 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+43 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (3)](#frameworks) · [Papers (35)](#papers)
 
 ## Datasets
 
@@ -23,12 +23,11 @@
 
 ## Frameworks
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ViMo code](https://github.com/ai-agents-2030/ViMo) | android | [2504.13936](https://arxiv.org/abs/2504.13936) (2025) | — | Code for the ViMo GUI world model: Gemini-based next-screen text prediction, AITW and AndroidControl data processing, InstructPix2Pix-style graphic inference, and an AndroidWorld agent that consults it. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/README.md) |
+| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 
 ## Papers
 

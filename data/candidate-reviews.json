@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f62893415473cef868d2",
+    "url": "https://pyautogui.readthedocs.io/en/latest",
+    "decision": "alias",
+    "target_id": "github:asweigart/pyautogui",
+    "reason": "Latest-version root of the PyAutoGUI documentation on Read the Docs, built from the docs/ Sphinx sources of the indexed PyAutoGUI repository, whose README links it as the full documentation."
   }
 ]

@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "RMSWeb: Reflection, Failure-Mode Mining, and Salvage-DS for Web Agent Reinforcement Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.00335",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "web-navigation",
+      "self-reflection",
+      "data-generation"
+    ],
+    "scope": "core",
+    "summary": "Presents RMSWeb, a recipe for 8B and 32B Qwen3-VL web agents that pairs reflection-conditioned retries for data collection, failure-mode mining for offline RL, and Salvage-DS rewards and sampling for RL.",
+    "verify_terms": [
+      "RMSWeb: Reflection, Failure-Mode Mining"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.00335v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "In the v1 full text, a shared Browser Use interface serves collection, training-data generation and live-web evaluation, and the policy acts on combined screenshot and DOM observations. Evaluations use WebVoyager (a 588-task retained set), Online-Mind2Web and WebTailBench, and the paper cautions that external evaluation protocols differ. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.00335v1",
+        "sha256": "30c8c07fb90ad764a196bb582f1b3ba268d8ddf8f325f3fa42a6b7a6797ec435",
+        "retrieved_at": "2026-10-19T08:36:35Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML introduction, related-work positioning and experimental setup describing the Browser Use harness and observations. No code execution or result reproduction.",
+    "reviewed_sha256": "82ff9b61e6ef0ddd20022ca461be6a3c2b6a904ec8c92f7472d1bbd117b78d3a",
+    "reviewed_at": "2026-10-19T08:45:14Z"
   }
 ]

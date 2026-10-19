@@ -1,8 +1,8 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-19T08:45:13Z**. Generated from committed source receipts.
 
-- 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
+- 3,178 resource records: 1,615 curated; 1,563 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,841 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,242 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
@@ -23,7 +23,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 441 | 204 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
+| [paper](topics.md) | 442 | 204 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |

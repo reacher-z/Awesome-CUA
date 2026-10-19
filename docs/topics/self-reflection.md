@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-38 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (28)](#papers)
+**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (29)](#papers)
 
 ## Models
 
@@ -43,6 +43,7 @@ All entries in this section: web.
 | 2026‑08‑10 | [LookAgain: Closed-Loop GUI Grounding with Visually Grounded Reflection](https://arxiv.org/abs/2608.09723) | unspecified | LookAgain treats a GUI coordinate as a revisable hypothesis, rendering its marker and a local screenshot patch before confirmation. Reflective supervised trajectories provide a cold start, followed by GRPO using terminal grounding correctness. |
 | 2026‑08‑06 | [StepReflect: Structured UI Transition Reflection for Mobile GUI Agents](https://arxiv.org/abs/2608.05587) | android | StepReflect predicts structured per-action reflections from transition specifications and paired visual evidence. The paper distinguishes offline transition-label accuracy from online task success when the reflection model is integrated into mobile agents. |
 | 2026‑07‑31 | [CUADebug: Diagnosing and Repairing Computer-Use Agent Failures](https://arxiv.org/abs/2608.02643) | unspecified | CUADebug combines a failure taxonomy and human-annotated OSWorld failure trajectories with an agent that locates causal steps and proposes corrections from screenshots and action traces. It evaluates root-cause diagnosis separately from controlled task re-execution and failure recovery. |
+| 2026‑07‑31 | [RMSWeb: Reflection, Failure-Mode Mining, and Salvage-DS for Web Agent Reinforcement Learning](https://arxiv.org/abs/2608.00335) | web | Presents RMSWeb, a recipe for 8B and 32B Qwen3-VL web agents that pairs reflection-conditioned retries for data collection, failure-mode mining for offline RL, and Salvage-DS rewards and sampling for RL. |
 | 2026‑07‑27 | [Falsifiable Commitment Planning for Self-Correcting Web Agents](https://arxiv.org/abs/2607.24167) | web | Introduces FCPAgent, which attaches confirming and falsifying evidence to each skill-grounded plan step. A plan–test–repair loop checks actions and observations, then localizes contradictions so execution, skills, or plans can be revised at the appropriate level. |
 | 2026‑06‑30 | [Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents](https://arxiv.org/abs/2606.31270) | unspecified | Uses failed computer-use trajectories to diagnose failure modes and generate inference-time agent code patches, with light human verification. An OSWorld study evaluates this failure-driven improvement loop without additional model training. |
 | 2026‑04‑23 | [Measure Twice, Click Once: Co-evolving Proposer and Visual Critic via Reinforcement Learning for GUI Grounding](https://arxiv.org/abs/2604.21268) | unspecified | Trains a GUI grounding proposer together with a visual critic that evaluates candidate locations rendered on screenshots. An adaptive reinforcement-learning schedule balances their development, using proposal diversity and critic feedback during training. |

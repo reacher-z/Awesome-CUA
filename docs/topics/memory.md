@@ -2,23 +2,23 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-162 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+164 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (3)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (142)](#papers)
 
 ## Benchmarks
 
-All entries in this section: ios.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [iOSWorld](https://github.com/ljang0/iOSWorld) | — | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | code Apache-2.0 | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [iOSWorld](https://github.com/ljang0/iOSWorld) | ios | — | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | code Apache-2.0 | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) |
+| [MemGUI-Bench](https://github.com/lgy0404/MemGUI-Bench) · [leaderboard](https://lgy0404.github.io/MemGUI-Bench/leaderboard.html) | android | [2602.06075](https://arxiv.org/abs/2602.06075) (2026) | [128 tasks](https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv) · [26 applications](https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv) · [115 tasks marked as requiring UI memory](https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv) | code MIT · data mit | Memory-centric Android benchmark of 128 tasks across 26 apps, run in Dockerized emulators on a MobileWorld-style runtime and judged by MemGUI-Eval, an LLM evaluator reporting pass@k and memory metrics. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/README.md) |
 
 ## Datasets
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Aria-UI Context-aware Data](https://huggingface.co/datasets/Aria-UI/Aria-UI_Context-aware_Data) | android | — | [≈ 992,000 instruction-output pairs](https://raw.githubusercontent.com/AriaUI/Aria-UI/HEAD/README.md) | data apache-2.0 | Episode-based mobile GUI grounding data released with Aria-UI for incorporating interaction history into target localization. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Aria-UI/Aria-UI_Context-aware_Data) |
+| [MemGUI-Bench agent trajectories](https://huggingface.co/datasets/lgy0404/memgui-bench-trajs) | android | [2602.06075](https://arxiv.org/abs/2602.06075) (2026) | [14 per-agent ZIP archives](https://huggingface.co/api/datasets/lgy0404/memgui-bench-trajs/revision/4525fc5b11cf0033cc31cafa78beb2237df6890a) · [19 gzip JSON trajectory preview bundles](https://huggingface.co/api/datasets/lgy0404/memgui-bench-trajs/revision/4525fc5b11cf0033cc31cafa78beb2237df6890a) | data apache-2.0 | Recorded MemGUI-Bench runs of mobile GUI agents and models, packaged as per-agent ZIP archives with step screenshots, action logs and evaluator outputs, plus compressed trajectory previews for the leaderboard viewer. | [✓ 2026‑10‑19](https://huggingface.co/datasets/lgy0404/memgui-bench-trajs/raw/4525fc5b11cf0033cc31cafa78beb2237df6890a/README.md) |
 | [MT-Mind2Web](https://huggingface.co/datasets/magicgh/MT-Mind2Web) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | [600 conversations](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) · [2,896 dialogue turns](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) | data cc-by-4.0 | Multi-turn web-navigation conversations constructed from Mind2Web interactions, with dialogue turns, HTML snapshots, element candidates and click/type/select action sequences. | [✓ 2026‑10‑17](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) |
 
 ## Agents

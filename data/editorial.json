@@ -63143,5 +63143,342 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MemGUI-Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/lgy0404/MemGUI-Bench",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "memory",
+      "long-horizon",
+      "cross-app"
+    ],
+    "summary": "Memory-centric Android benchmark of 128 tasks across 26 apps, run in Dockerized emulators on a MobileWorld-style runtime and judged by MemGUI-Eval, an LLM evaluator reporting pass@k and memory metrics.",
+    "scope": "core",
+    "verify_terms": [
+      "MemGUI-Bench"
+    ],
+    "aliases": [
+      "https://huggingface.co/datasets/lgy0404/MemGUI-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/README.md"
+    ],
+    "documented_by": [
+      "2602.06075"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:tongyi-mai/mobileworld",
+        "evidence_url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.leaderboard_url"
+    ],
+    "notes": "Official benchmark code for the MemGUI-Bench paper (ACM MM 2026 per the README). The mg CLI pulls a prebuilt Docker runtime with the Android emulator and the MemGUI AVD snapshot, launches parallel backend containers on a Linux host with KVM, runs agents through MobileWorld's agent interface (src/mobile_world) and writes MobileWorld-format trajectories with screenshots. MemGUI-Eval (memgui_eval/) describes each step with a multimodal model and makes a final decision with a second model; the leaderboard uses Gemini 2.5 Flash and Gemini 2.5 Pro for these roles. Each task CSV row gives the app(s), difficulty, whether UI memory is required and golden steps; the default step budget is int(golden_steps * 2.5 + 1). The Hugging Face dataset lgy0404/MemGUI-Bench holds the same two task CSV files (byte-identical at revisions 217713e and 3fb01b6), so it is recorded as an alias. Agent results in the README and leaderboard were not reproduced.",
+    "details": {
+      "repository_revision": "3fb01b6cc0d13e287c67f488c76f449df7d65558",
+      "leaderboard_url": "https://lgy0404.github.io/MemGUI-Bench/leaderboard.html",
+      "availability": "Public benchmark runtime, task CSVs, MemGUI-Eval evaluator and trajectory viewer; the runtime image is pulled prebuilt and evaluation needs API access to the judge models.",
+      "benchmark_protocol": {
+        "focus": [
+          "memory-intensive mobile GUI tasks",
+          "cross-app long-horizon tasks"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots"
+        ],
+        "actions": [
+          "MobileWorld JSON actions"
+        ],
+        "evaluation": "MemGUI-Eval: an LLM step-description model and a final-decision model judge each trajectory; reported metrics are pass@K, information retrieval rate (IRR), failure recovery rate (FRR), memory task performance ratio (MTPR), step ratio, time per step and cost per step.",
+        "counts": [
+          {
+            "value": 128,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "data/memgui-tasks-all.csv at 3fb01b6 (full benchmark)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv"
+          },
+          {
+            "value": 40,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "data/memgui-tasks-40.csv at 3fb01b6 (quick-test subset)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-40.csv"
+          },
+          {
+            "value": 26,
+            "unit": "applications",
+            "qualifier": "exact",
+            "population": "data/memgui-tasks-all.csv at 3fb01b6 (full benchmark)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv"
+          },
+          {
+            "value": 115,
+            "unit": "tasks marked as requiring UI memory",
+            "qualifier": "exact",
+            "population": "data/memgui-tasks-all.csv at 3fb01b6 (full benchmark)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv"
+          }
+        ],
+        "notes": "Counts come from the pinned CSV files and match the README badges (128 tasks, 26 apps, 89.8% memory-intensive). The full set has 48, 42 and 38 tasks at difficulty levels 1, 2 and 3, and its golden steps average about 36. The 40-task file is a subset of the 128 tasks, so the two counts are not summed. Leaderboard settings fix the judge models; debugging runs may use others.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/README.md",
+          "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv",
+          "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-40.csv",
+          "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/memgui_eval/evaluator.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/lgy0404/MemGUI-Bench/git/trees/3fb01b6cc0d13e287c67f488c76f449df7d65558?recursive=1",
+        "sha256": "5ea1ee28f93335f167bc25b3db56248dc01cfc066ea8eceaddaf361545fc03ab",
+        "retrieved_at": "2026-10-19T07:05:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-all.csv",
+        "sha256": "28d862beb94250e5630b6f7cc2a50369f4fb533fe7cf780991c1f4f73790be07",
+        "retrieved_at": "2026-10-19T07:05:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/data/memgui-tasks-40.csv",
+        "sha256": "138b8371bf1880df837b99d596e5a86679a9fe0ce0be33da69846e4ea2b44169",
+        "retrieved_at": "2026-10-19T07:05:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/memgui_eval/evaluator.py",
+        "sha256": "c8e9270c39852e17fa1b2d34bf3ca630375f68a1d817474e6a446e53d9490c1f",
+        "retrieved_at": "2026-10-19T07:05:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/LICENSE",
+        "sha256": "4fcd9de2604362b40f3529af286e34882e01bd4cb26dbedc9934c09a3f6ee827",
+        "retrieved_at": "2026-10-19T07:05:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "aliases",
+          "notes",
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/lgy0404/MemGUI-Bench/raw/217713ee891b227b1f297c3a59dd1798e9d4a09b/README.md",
+        "sha256": "1c291cb5096e2cf98e945456b1acb66d7b1bebd3d950c9d043b34ef75dd660b5",
+        "retrieved_at": "2026-10-19T07:05:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "aliases",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/lgy0404/MemGUI-Bench/revision/217713ee891b227b1f297c3a59dd1798e9d4a09b",
+        "sha256": "d44183bab1958372904dd52e19efdb4d8bb277a896fe24a9954b65e2fc926db1",
+        "retrieved_at": "2026-10-19T07:05:19Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fab1bf3b766c2e59e46515dd60cf71b040986690b169bfcc0d35c6e9bc0f58fb",
+    "reviewed_at": "2026-10-19T07:06:22Z",
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "mit",
+          "url": "https://huggingface.co/datasets/lgy0404/MemGUI-Bench/raw/217713ee891b227b1f297c3a59dd1798e9d4a09b/README.md",
+          "retrieved_at": "2026-10-19T07:05:19Z",
+          "basis": "The Hub card for the task CSV files (the alias lgy0404/MemGUI-Bench) declares mit; it covers the task definitions, not app content."
+        },
+        "reason": "The Hub card for the task CSV files (the alias lgy0404/MemGUI-Bench) declares mit; it covers the task definitions, not app content.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/lgy0404/MemGUI-Bench/raw/217713ee891b227b1f297c3a59dd1798e9d4a09b/README.md"
+        ]
+      }
+    }
+  },
+  {
+    "id": "url:2b7363c3a20d8022b319",
+    "name": "MemGUI-Bench agent trajectories",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/lgy0404/memgui-bench-trajs",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "memory"
+    ],
+    "summary": "Recorded MemGUI-Bench runs of mobile GUI agents and models, packaged as per-agent ZIP archives with step screenshots, action logs and evaluator outputs, plus compressed trajectory previews for the leaderboard viewer.",
+    "scope": "core",
+    "verify_terms": [
+      "MemGUI-Bench"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/lgy0404/memgui-bench-trajs/raw/4525fc5b11cf0033cc31cafa78beb2237df6890a/README.md"
+    ],
+    "documented_by": [
+      "2602.06075"
+    ],
+    "component_of": "https://github.com/lgy0404/MemGUI-Bench",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.dataset_profile"
+    ],
+    "notes": "The card says each attempt holds step screenshots, a log.json action sequence, evaluation_summary.json and final_decision.json, and action visualizations. The MemGUI-Bench README asks submitters to add a gzip JSON preview and MP4 under site/trajs/ through Hub pull requests. Archive names identify the agent or model, such as M3A, T3A, Mobile-Agent-E, Agent-S2, GUI-Owl-7B and several API models. The card's usage section shows an older run.py interface. Archives were not downloaded. The card's apache-2.0 declaration does not settle rights to app screenshots.",
+    "details": {
+      "hub_id": "lgy0404/memgui-bench-trajs",
+      "hub_revision": "4525fc5b11cf0033cc31cafa78beb2237df6890a",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/lgy0404/memgui-bench-trajs/tree/4525fc5b11cf0033cc31cafa78beb2237df6890a",
+      "repository_url": "https://github.com/lgy0404/MemGUI-Bench",
+      "dataset_profile": {
+        "supervision": [
+          "agent execution trajectories with LLM-judged outcomes"
+        ],
+        "modalities": [
+          "screenshots",
+          "action logs",
+          "evaluation results",
+          "video previews"
+        ],
+        "formats": [
+          "ZIP archives",
+          "gzip JSON",
+          "MP4"
+        ],
+        "splits": [],
+        "counts": [
+          {
+            "value": 14,
+            "unit": "per-agent ZIP archives",
+            "qualifier": "exact",
+            "population": "Hub manifest at revision 4525fc5",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lgy0404/memgui-bench-trajs/revision/4525fc5b11cf0033cc31cafa78beb2237df6890a"
+          },
+          {
+            "value": 19,
+            "unit": "gzip JSON trajectory preview bundles",
+            "qualifier": "exact",
+            "population": "site/trajs/ in the Hub manifest at revision 4525fc5",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/lgy0404/memgui-bench-trajs/revision/4525fc5b11cf0033cc31cafa78beb2237df6890a"
+          }
+        ],
+        "notes": "Archives and preview bundles are different packagings and overlap in the agents they cover; neither is a trajectory or task count. site/trajs/index.json lists only 9 of the 19 preview bundles.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/lgy0404/memgui-bench-trajs/raw/4525fc5b11cf0033cc31cafa78beb2237df6890a/README.md",
+          "https://huggingface.co/api/datasets/lgy0404/memgui-bench-trajs/revision/4525fc5b11cf0033cc31cafa78beb2237df6890a",
+          "https://huggingface.co/datasets/lgy0404/memgui-bench-trajs/raw/4525fc5b11cf0033cc31cafa78beb2237df6890a/site/trajs/index.json"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.dataset_profile",
+          "notes"
+        ],
+        "url": "https://huggingface.co/api/datasets/lgy0404/memgui-bench-trajs/revision/4525fc5b11cf0033cc31cafa78beb2237df6890a",
+        "sha256": "36b39075a426e792530250753c3befd3136b963e65b67e230ed1deedca9b1296",
+        "retrieved_at": "2026-10-19T07:05:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.dataset_profile"
+        ],
+        "url": "https://huggingface.co/datasets/lgy0404/memgui-bench-trajs/raw/4525fc5b11cf0033cc31cafa78beb2237df6890a/site/trajs/index.json",
+        "sha256": "d7889d1a5f6da09930ce70b128e304d61b08768c27bc0500cb9f8863b314a866",
+        "retrieved_at": "2026-10-19T07:05:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations",
+          "details.repository_url"
+        ],
+        "url": "https://raw.githubusercontent.com/lgy0404/MemGUI-Bench/3fb01b6cc0d13e287c67f488c76f449df7d65558/README.md",
+        "sha256": "fab1bf3b766c2e59e46515dd60cf71b040986690b169bfcc0d35c6e9bc0f58fb",
+        "retrieved_at": "2026-10-19T07:05:14Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "62d58168fbb7a1a7fd895627d839a4b37d0c46f9d2914c2888ea2356cc012735",
+    "reviewed_at": "2026-10-19T07:06:22Z"
   }
 ]

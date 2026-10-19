@@ -12,6 +12,7 @@ LEADERBOARDS = {
     "github:xlang-ai/osworld": "https://os-world.github.io/",
     "github:web-arena-x/webarena": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/edit?usp=sharing",
     "github:google-research/android_world": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0#gid=0",
+    "github:lgy0404/memgui-bench": "https://lgy0404.github.io/MemGUI-Bench/leaderboard.html",
     "github:likaixin2000/screenspot-pro-gui-grounding": "https://gui-agent.github.io/grounding-leaderboard",
     "github:imeanai/webcanvas": "https://github.com/iMeanAI/WebCanvas/blob/main/Mind2web-live_Leaderboard.md",
     "github:jetastra/macagentbench": "https://jetastra.github.io/MacAgentBench/",

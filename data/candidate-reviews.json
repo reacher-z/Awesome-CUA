@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5a73ab9fb41a4b6651bf",
+    "url": "https://mp.weixin.qq.com/s/naVskQ9btJFkoUyyQVr7zA",
+    "decision": "out_of_scope",
+    "reason": "A Chinese-language article published on 2025-06-26 by the media account 机器之心 (Jiqizhixin), introducing the ScienceBoard benchmark with a byline note on its first author. It is press coverage of the already-curated ScienceBoard (github:os-copilot/scienceboard, arxiv:2505.19897), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:40:01Z",
+    "evidence": {
+      "url": "https://mp.weixin.qq.com/s/naVskQ9btJFkoUyyQVr7zA",
+      "sha256": "541733a477d022c79521a3db26e48245b3bc6eb8d98dcc14d46d91f028901d18",
+      "retrieved_at": "2026-10-19T06:30:02Z"
+    }
   }
 ]

@@ -63143,5 +63143,82 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Dex",
+    "kind": "product",
+    "url": "https://www.joindex.com",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "memory",
+      "workflow"
+    ],
+    "summary": "ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Dex"
+    ],
+    "aliases": [
+      "Dex by ThirdLayer",
+      "Dexterity AI"
+    ],
+    "notes": "The homepage footer names ThirdLayer, Inc. as the operator. getdexterity.com, the address in the discovery source, answers with a 301 redirect to www.joindex.com, and a February 2025 Wayback Machine capture of getdexterity.com, titled Dexterity AI, describes the same Dex browser product with natural-language navigation, cross-tab automation and form filling. The current homepage presents browser control (navigating tabs, filling forms) as one of four capabilities beside an operational graph, an editable knowledge manual and event- or schedule-triggered agents that work through integrations with Gmail, Slack, CRMs and other tools. The prompts in its use-case library mostly name connected apps such as HubSpot, Gmail, Slack and Notion rather than browser actions, so the scope is adjacent. The pricing page lists the browser extension among the features of its paid individual plans, and the homepage marks a desktop app as coming soon. The models behind the agents, reliability and the security and privacy claims are publisher statements and were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.joindex.com/pricing",
+      "availability": "not independently tested"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details",
+          "notes"
+        ],
+        "url": "https://www.joindex.com/pricing",
+        "sha256": "bc45c73a4a2a8a014b3e7a4b51330408f19f7aa3f756a0e57d25d154cefd132e",
+        "retrieved_at": "2026-10-19T06:20:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "scope"
+        ],
+        "url": "https://www.joindex.com/use-cases",
+        "sha256": "d1f0fafe9557d70cdf0551caa0770aca862286d7fdbda3cedd64402076521640",
+        "retrieved_at": "2026-10-19T06:21:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "aliases"
+        ],
+        "url": "https://web.archive.org/web/20250220191338id_/https://getdexterity.com/",
+        "sha256": "6f95cdad836edc7036c5df2f4f7838f607d4a53b06304072110c1e8a86a9dd6a",
+        "retrieved_at": "2026-10-19T06:20:57Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6bbd606b6aa212a9fd5d092d699cc36be260175476ef9f2fea2deac52b365408",
+    "reviewed_at": "2026-10-19T06:21:38Z"
   }
 ]

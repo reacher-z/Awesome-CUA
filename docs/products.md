@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (16)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -24,6 +24,7 @@ All entries in this section: web.
 | [Browserless](https://www.browserless.io/) | [Browserless](https://www.browserless.io/) | Hosted browser infrastructure for automation applications. | [✓ 2026‑10‑16](https://www.browserless.io/) |
 | [ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/) | [OpenAI](https://openai.com/index/computer-using-agent/) | OpenAI browser product integrating ChatGPT and agent capabilities. | [✓ 2026‑10‑16](https://openai.com/index/introducing-chatgpt-atlas/) |
 | [Claude for Chrome](https://claude.com/chrome) | [Anthropic](https://claude.com/chrome) | Claude browser extension for interacting with websites. | [✓ 2026‑10‑16](https://claude.com/chrome) |
+| [Dex](https://www.joindex.com) | — | ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations. | [✓ 2026‑10‑19](https://www.joindex.com) |
 | [HoloTab](https://hcompany.ai/newsroom/meet-holotab) | [H](https://hcompany.ai/research/models) | H browser extension for executing tasks through website interfaces. | [✓ 2026‑10‑16](https://hcompany.ai/newsroom/meet-holotab) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | [Manus](https://manus.im/) | General agent platform with browser-based task execution. | [✓ 2026‑10‑16](https://manus.im/) |

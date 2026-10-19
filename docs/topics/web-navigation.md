@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (9)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
 
 ## Benchmarks
 
@@ -137,6 +137,7 @@ All entries in this section: web.
 | [Browser Use Cloud](https://browser-use.com/) | [Browser Use](https://browser-use.com/) | Hosted browser-agent platform from Browser Use. | [✓ 2026‑10‑16](https://browser-use.com/) |
 | [ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/) | [OpenAI](https://openai.com/index/computer-using-agent/) | OpenAI browser product integrating ChatGPT and agent capabilities. | [✓ 2026‑10‑16](https://openai.com/index/introducing-chatgpt-atlas/) |
 | [Claude for Chrome](https://claude.com/chrome) | [Anthropic](https://claude.com/chrome) | Claude browser extension for interacting with websites. | [✓ 2026‑10‑16](https://claude.com/chrome) |
+| [Dex](https://www.joindex.com) | — | ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations. | [✓ 2026‑10‑19](https://www.joindex.com) |
 | [HoloTab](https://hcompany.ai/newsroom/meet-holotab) | [H](https://hcompany.ai/research/models) | H browser extension for executing tasks through website interfaces. | [✓ 2026‑10‑16](https://hcompany.ai/newsroom/meet-holotab) |
 | [Operator](https://openai.com/index/introducing-operator/) | [OpenAI](https://openai.com/index/computer-using-agent/) | Historical OpenAI browser-agent research preview. | [✓ 2026‑10‑16](https://openai.com/index/introducing-operator/) |
 | [TinyFish](https://www.tinyfish.ai/) | [TinyFish](https://www.tinyfish.ai/) | Browser-agent API for executing web tasks and extracting structured results. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |

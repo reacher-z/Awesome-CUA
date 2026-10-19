@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c0fde1087f4bd9248b3e",
+    "url": "https://getdexterity.com",
+    "decision": "alias",
+    "target_id": "url:76f0ba33cddbb348ea01",
+    "reason": "Former domain of the indexed Dex browser product; it redirects (301) to www.joindex.com."
   }
 ]

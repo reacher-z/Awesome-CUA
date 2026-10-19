@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (19)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -214,6 +214,7 @@
 | [ChatGPT Agent](https://openai.com/index/introducing-chatgpt-agent/) | [OpenAI](https://openai.com/index/computer-using-agent/) | web, desktop | Hosted agent combining browser interaction, tools, and computer-based tasks. | [✓ 2026‑10‑16](https://openai.com/index/introducing-chatgpt-agent/) |
 | [ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/) | [OpenAI](https://openai.com/index/computer-using-agent/) | web | OpenAI browser product integrating ChatGPT and agent capabilities. | [✓ 2026‑10‑16](https://openai.com/index/introducing-chatgpt-atlas/) |
 | [Claude for Chrome](https://claude.com/chrome) | [Anthropic](https://claude.com/chrome) | web | Claude browser extension for interacting with websites. | [✓ 2026‑10‑16](https://claude.com/chrome) |
+| [Dex](https://www.joindex.com) | — | web | ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations. | [✓ 2026‑10‑19](https://www.joindex.com) |
 | [HoloTab](https://hcompany.ai/newsroom/meet-holotab) | [H](https://hcompany.ai/research/models) | web | H browser extension for executing tasks through website interfaces. | [✓ 2026‑10‑16](https://hcompany.ai/newsroom/meet-holotab) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | web | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | [Manus](https://manus.im/) | web | General agent platform with browser-based task execution. | [✓ 2026‑10‑16](https://manus.im/) |

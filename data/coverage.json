@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-19T06:21:13Z",
+  "total_records": 3179,
+  "curated_records": 1615,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -194,7 +194,7 @@
     "infrastructure": 14,
     "model": 98,
     "paper": 2700,
-    "product": 20,
+    "product": 21,
     "survey": 18,
     "tool": 20
   },
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -293,7 +293,7 @@
     },
     "product": {
       "desktop": 5,
-      "web": 18
+      "web": 19
     },
     "survey": {
       "android": 2,
@@ -470,8 +470,8 @@
       "resolved_aliases": 1,
       "curated": 24,
       "excluded": 0,
-      "set_aside": 7,
-      "unindexed": 82
+      "set_aside": 8,
+      "unindexed": 81
     },
     {
       "id": "steel-web-archive",

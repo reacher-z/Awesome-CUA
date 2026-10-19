@@ -63143,5 +63143,39 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FocusMem: Factorizing Content, Readout, and Trust in Latent GUI Memory",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.04530",
+    "summary": "Introduces FocusMem, a latent memory interface for GUI agents that separates episodic and working-memory content, builds state-conditioned readouts and gates irrelevant blocks, trained while the GUI policy stays frozen.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "web-navigation",
+      "robustness"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "FocusMem: Factorizing Content, Readout, and Trust"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.04530v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "614d351c3fdf1e44a2d704e4774f5d0c445a17c54162b136312e308bdb56638a",
+    "reviewed_at": "2026-10-19T08:45:54Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Evaluated with a frozen Qwen3-VL-8B policy on fixed accessible subsets of MMInA-Wikipedia, MMInA-Shopping, DeepShop, WebVoyager and Online-Mind2Web, using Gemini-3.1-Pro as success judge; the paper lists transfer to mobile and desktop environments as open. It links code at github.com/stanley-ju/FocusMem. Reviewed against the v1 abstract and HTML full text; results were not independently reproduced."
   }
 ]

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:51a27bb7418a7e6c923b",
+    "url": "https://dzone.com/articles/build-ai-browser-agent-llms-playwright-browser-use",
+    "decision": "out_of_scope",
+    "reason": "A third-party DZone tutorial that describes the already-curated Browser Use library and walks through cloning, installing and launching the already-curated Browser Use WebUI (github:browser-use/web-ui) with Playwright. It is a setup guide for existing tools, not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:34:59Z",
+    "evidence": {
+      "url": "https://dzone.com/articles/build-ai-browser-agent-llms-playwright-browser-use",
+      "sha256": "446857889c758749449dabb709b1cab1e470b306e1ea3565645f016fd9ca6662",
+      "retrieved_at": "2026-10-19T06:13:28Z"
+    }
   }
 ]

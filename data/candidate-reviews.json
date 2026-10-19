@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:05e6724a4b24e54ce24e",
+    "url": "https://mindsearch.netlify.app",
+    "decision": "out_of_scope",
+    "reason": "This is the project landing page of MindSearch, an open-source answer-engine framework in which LLM agents query web search engines and summarize the results; it links the InternLM/MindSearch repository and demo. MindSearch does not operate web pages or other interfaces, so the page falls outside scope with its repository.",
+    "reviewed_at": "2026-10-19T06:38:51Z",
+    "evidence": {
+      "url": "https://mindsearch.netlify.app",
+      "sha256": "db77280cc7aa28d3f051ac792dd995af4c2be557f0c0ce691c8483253ba7b799",
+      "retrieved_at": "2026-10-19T06:24:11Z"
+    }
   }
 ]

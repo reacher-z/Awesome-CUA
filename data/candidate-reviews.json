@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9d08f6ffa77f70fa379b",
+    "url": "https://dl.acm.org/doi/10.5555/3305890.3306005",
+    "decision": "alias",
+    "target_id": "url:52a3261eb6a19b402e88",
+    "reason": "ACM Digital Library guide-proceedings entry (ICML 2017, volume 70, pages 3135-3144) for World of Bits, already indexed under its PMLR proceedings page."
   }
 ]

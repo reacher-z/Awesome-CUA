@@ -63143,5 +63143,120 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "DoomArena",
+    "kind": "framework",
+    "url": "https://github.com/ServiceNow/DoomArena",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "A security-testing framework whose attack gateways wrap BrowserGym, OSWorld, tau-bench and mail-agent environments to inject pop-ups, banners and other adversarial content under configurable threat models.",
+    "scope": "core",
+    "verify_terms": [
+      "DoomArena"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ServiceNow/DoomArena/HEAD/README.md"
+    ],
+    "notes": "The inspected tree contains separately installable packages for the core attack library and for BrowserGym, OSWorld, tau-bench, MCP, mail-agent and promptceptor integrations, with web attacks (banner, pop-up, injected div and user-generated content) and an OSWorld pop-up inpainting attack. Running the BrowserGym and OSWorld integrations requires those environments and model API keys; attack success rates reported by the authors were not reproduced. Apache-2.0 covers this repository's code; wrapped benchmarks keep their own terms. Project page: https://servicenow.github.io/DoomArena/.",
+    "details": {
+      "availability": "Published source; README documents PyPI packages",
+      "repository_url": "https://github.com/ServiceNow/DoomArena",
+      "repository_tree_sha": "b80902f107b4d28194580352a59b3029f4a018b4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/ServiceNow/DoomArena",
+        "sha256": "8f9e575fffd303558aa65232fdd47223effb8229600bbacc7cbd9ea7ce28787e",
+        "retrieved_at": "2026-10-18T11:02:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_tree_sha",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/ServiceNow/DoomArena/git/trees/main?recursive=1",
+        "sha256": "73de9d44b5823e6d1798bc744641cfbda64c097b29e0dc8613527a5a586d9939",
+        "retrieved_at": "2026-10-18T11:02:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ServiceNow/DoomArena/HEAD/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T11:02:34Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f9413fac36822485801e4159423c77e0c090968a7bef4a8b0a0e1d1369be439b",
+    "reviewed_at": "2026-10-18T11:03:02Z",
+    "documented_by": [
+      "2504.14064"
+    ]
+  },
+  {
+    "id": "arxiv:2504.14064",
+    "name": "DoomArena: A framework for Testing AI Agents Against Evolving Security Threats",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.14064",
+    "summary": "Introduces DoomArena, a plug-in framework that applies configurable attacks and threat models to BrowserGym web agents and tau-bench tool-calling agents, and analyzes combined attacks and guardrail-based defenses.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "DoomArena: A framework for Testing"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2504.14064&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experimental findings and artifact availability have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f4fd7f54de095adeee56c4befe27f8599acde054f35945aa2e0f0d82ee5880d7",
+    "reviewed_at": "2026-10-18T11:03:54Z"
   }
 ]

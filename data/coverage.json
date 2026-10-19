@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
+  "total_records": 3179,
+  "curated_records": 1615,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
@@ -182,6 +182,13 @@
       "url": "https://arxiv.org/abs/2504.11703",
       "reason": "Reviewer hold: the retained abstract and full-text Sections 8–9 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2504.14064",
+      "name": "DoomArena: A framework for Testing AI Agents Against Evolving Security Threats",
+      "url": "https://arxiv.org/abs/2504.14064",
+      "reason": "current source snapshot needs editorial review",
+      "cause": "unreviewed_snapshot"
     }
   ],
   "uncurated_linked_papers": [],
@@ -190,7 +197,7 @@
     "benchmark": 88,
     "company": 16,
     "dataset": 86,
-    "framework": 75,
+    "framework": 76,
     "infrastructure": 14,
     "model": 98,
     "paper": 2700,
@@ -201,13 +208,13 @@
   "curated_by_environment": {
     "android": 300,
     "cross-platform": 197,
-    "desktop": 322,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -250,13 +257,13 @@
     "framework": {
       "android": 20,
       "cross-platform": 7,
-      "desktop": 22,
+      "desktop": 23,
       "harmonyos": 1,
       "ios": 1,
       "linux": 6,
       "macos": 1,
       "unspecified": 2,
-      "web": 37,
+      "web": 38,
       "windows": 2
     },
     "infrastructure": {
@@ -317,7 +324,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -36,6 +36,7 @@ All entries in this section: android.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [DoomArena](https://github.com/ServiceNow/DoomArena) | web, desktop | [2504.14064](https://arxiv.org/abs/2504.14064) (2025) | code Apache-2.0 | A security-testing framework whose attack gateways wrap BrowserGym, OSWorld, tau-bench and mail-agent environments to inject pop-ups, banners and other adversarial content under configurable threat models. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ServiceNow/DoomArena/HEAD/README.md) |
 | [OS-Sentinel](https://github.com/OS-Copilot/OS-Sentinel) | desktop | [2510.24411](https://arxiv.org/abs/2510.24411) (2025) | code Apache-2.0 | Safety-checking environment and benchmark for mobile agents on AndroidWorld that judges proposed actions with rule-based and VLM-based checks, evaluated on the MobileRisk trajectory dataset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Sentinel/HEAD/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
@@ -215,7 +216,7 @@ All entries in this section: web.
 | 2025‑05‑15 | [Characterizing Unintended Consequences in Human-GUI Agent Collaboration for Web Browsing](https://arxiv.org/abs/2505.09875) | web | Studies unintended consequences of collaborative web browsing with GUI agents through social-media analysis and interviews. It organizes observed failures, user impacts, and mitigation practices around planning, interface interaction, feedback, privacy, and trust. |
 | 2025‑04‑24 | [Toward a Human-Centered Evaluation Framework for Trustworthy LLM-Powered GUI Agents](https://arxiv.org/abs/2504.17934) | unspecified | Presents a position paper on privacy and security evaluation for GUI agents, identifying risk categories and challenges in involving human evaluators. It proposes risk-aware assessment and in-context consent as design directions. |
 | 2025‑04‑22 | [WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks](https://arxiv.org/abs/2504.18575) | web | Introduces WASP, an end-to-end benchmark for prompt-injection security in web agents. Its evaluation separates partial attack progress from completion of the attacker’s full objective. |
-| 2025‑04‑18 | [DoomArena: A framework for Testing AI Agents Against Evolving Security Threats](https://arxiv.org/abs/2504.14064) | web | Presents a modular security testing framework that plugs into BrowserGym and tool-use benchmarks to evaluate agents under configurable threat models. |
+| 2025‑04‑18 | [DoomArena: A framework for Testing AI Agents Against Evolving Security Threats](https://arxiv.org/abs/2504.14064) | web | Introduces DoomArena, a plug-in framework that applies configurable attacks and threat models to BrowserGym web agents and tau-bench tool-calling agents, and analyzes combined attacks and guardrail-based defenses. |
 | 2025‑04‑15 | [The Obvious Invisible Threat: LLM-Powered GUI Agents' Vulnerability to Fine-Print Injections](https://arxiv.org/abs/2504.11281) | web | Characterizes six forms of GUI-content injection and studies their effects on GUI agents and human users using adversarial webpages. The analysis examines privacy failures and the limits of human oversight. |
 | 2025‑04‑07 | [On the Robustness of GUI Grounding Models Against Image Attacks](https://arxiv.org/abs/2504.04716) | web, desktop, cross-platform | Evaluates GUI grounding models under natural image noise, untargeted adversarial perturbations, and targeted image attacks. Experiments cover mobile, desktop, and web interfaces and analyze sensitivity to image resolution and adversarial changes. |
 | 2025‑03‑26 | [ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning](https://arxiv.org/abs/2503.22738) | web | Proposes a guardrail agent that reasons over explicit safety policies and checks action trajectories, with a web-agent safety benchmark. |

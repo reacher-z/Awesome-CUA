@@ -2,11 +2,11 @@
 
 Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed source receipts.
 
-- 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
+- 3,179 resource records: 1,615 curated; 1,564 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,841 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,242 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 24 editorial proposals await verification or review.
+- 25 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -20,7 +20,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [benchmark](benchmarks.md) | 42 | 20 | 5 | 3 | 5 | 19 | 1 | · | 14 | 3 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
 | [dataset](datasets.md) | 25 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 7 |
-| [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
+| [framework](frameworks.md) | 38 | 23 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 441 | 204 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
@@ -142,7 +142,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 182 |
+| code | 183 |
 | data | 61 |
 | weights | 56 |
 | document | 0 |
@@ -151,7 +151,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-24 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 21 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+25 proposals: 3 with unresolved primary evidence, 1 whose current source snapshot awaits review, 21 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -179,6 +179,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) | Reviewer hold: this release evaluates general tool-using agents in JSON-schema/Python simulated environments. The retained README and paper Sections 3.2.1 and Appendix C do not establish direct GUI or browser execution for this benchmark. Keep the source and receipt pending an explicit adjacent-scope justification. |
 | [PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action](https://arxiv.org/abs/2409.00138) | Reviewer hold: the retained abstract and full-text Sections 3.2–3.3 describe ToolEmu/GPT-4-emulated tool trajectories and final-action privacy evaluation. They do not establish direct GUI or browser interaction for this method. Preserve the bibliographic record as metadata-only pending an explicit adjacent-scope justification. |
 | [Progent: Securing AI Agents with Privilege Control](https://arxiv.org/abs/2504.11703) | Reviewer hold: the retained abstract and full-text Sections 8–9 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense. |
+| [DoomArena: A framework for Testing AI Agents Against Evolving Security Threats](https://arxiv.org/abs/2504.14064) | current source snapshot needs editorial review |
 
 ## Uncurated papers behind curated resources
 

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:45ec936167a440314676",
+    "url": "https://lindy.ai",
+    "decision": "out_of_scope",
+    "reason": "Lindy is a commercial AI teammate that works through Slack, iMessage, email and phone and connects to 1,500+ tools via integrations and MCP servers for sales, support, finance and engineering tasks. Its homepage mentions driving the browser like a person only as a fallback, on Pro plans and up, for tools with no integration, so GUI interaction is not material to the product.",
+    "reviewed_at": "2026-10-19T06:39:17Z",
+    "evidence": {
+      "url": "https://lindy.ai",
+      "sha256": "3b5f83e098c077b73289ef40457d15b00b30851ad864cf25ce529d3bb9bb6e02",
+      "retrieved_at": "2026-10-19T06:28:50Z"
+    }
   }
 ]

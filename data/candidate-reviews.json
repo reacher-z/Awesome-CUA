@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:6ee5f21805e30a490c09",
+    "url": "https://docs.lavague.ai",
+    "decision": "alias",
+    "target_id": "github:lavague-ai/lavague",
+    "reason": "Documentation site of the indexed LaVague web-agent framework; the repository README and homepage field point to it."
   }
 ]

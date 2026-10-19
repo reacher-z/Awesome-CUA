@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:53b29f711c63c84840bf",
+    "url": "https://interactionmining.org/rico",
+    "decision": "alias",
+    "target_id": "url:0b134b082a7bd507fc6a",
+    "reason": "Bare-domain Rico project address; it redirects through www.interactionmining.org/rico to the indexed Rico dataset page at www.interactionmining.org/archive/rico."
   }
 ]

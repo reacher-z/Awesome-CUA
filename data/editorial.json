@@ -63143,5 +63143,64 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Tongyi UI Agent API",
+    "kind": "product",
+    "url": "https://help.aliyun.com/zh/model-studio/ui-agent-api",
+    "aliases": [
+      "通义 UI Agent"
+    ],
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "planning",
+      "self-reflection"
+    ],
+    "summary": "Alibaba Cloud Model Studio API that returns the next GUI action with its reasoning for a screenshot and task, with a mobile pipeline and a PC pipeline using planner, worker, reflector and memory agents.",
+    "verify_terms": [
+      "通义 UI Agent",
+      "gui_agent_server"
+    ],
+    "scope": "core",
+    "evidence_urls": [
+      "https://help.aliyun.com/zh/model-studio/ui-agent-api.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "details",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/X-PLUG/MobileAgent/11cea575561fb7800b5fb6b6cafa56f7a91de11f/README.md",
+        "retrieved_at": "2026-10-19T06:31:53Z",
+        "sha256": "ca402ffd3b05f72a6d72f47de52c962f92e410749a77939044f3301d4330af16"
+      }
+    ],
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "notes": "The page (version V0.0.1) documents a DashScope endpoint for the gui-owl app that takes a screenshot URL, a task instruction, a session ID and optional operation hints (add_info), and returns the next action, such as a click or swipe with screen coordinates, with a thought and an explanation. Requests set device_type to mobile or pc and use the model pre-gui_owl_7b; the PC pipeline also names worker, manager, reflector and notetaker models and can enable the reflection and memory agents. The page states that the agent targets phones, in-car systems, TVs and PCs, names no mobile operating system, and lists usage as free for a limited time. The X-PLUG/MobileAgent README links this page as a limited-time free Mobile-Agent-v3 API; the page itself names no paper or released checkpoint, so no relation to the Mobile-Agent or GUI-Owl records is asserted. The receipt uses the Markdown export because the HTML embeds a per-request tracking ID.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cb5bc5f73accb2e5e73cc3e1043ca741f371e50ea4784ddf6b207dfd5a66506a",
+    "reviewed_at": "2026-10-19T06:32:06Z"
   }
 ]

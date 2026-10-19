@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-19T06:31:54Z",
+  "total_records": 3179,
+  "curated_records": 1615,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -194,21 +194,21 @@
     "infrastructure": 14,
     "model": 98,
     "paper": 2700,
-    "product": 20,
+    "product": 21,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
     "android": 300,
-    "cross-platform": 197,
-    "desktop": 322,
+    "cross-platform": 198,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
     "web": 621,
-    "windows": 63
+    "windows": 64
   },
   "curated_by_kind_and_environment": {
     "agent": {
@@ -292,8 +292,10 @@
       "windows": 37
     },
     "product": {
-      "desktop": 5,
-      "web": 18
+      "cross-platform": 1,
+      "desktop": 6,
+      "web": 18,
+      "windows": 1
     },
     "survey": {
       "android": 2,
@@ -1635,13 +1637,13 @@
         "state": "success"
       },
       "discovered": 33,
-      "indexed": 12,
-      "indexed_resources": 12,
+      "indexed": 13,
+      "indexed_resources": 13,
       "resolved_aliases": 0,
-      "curated": 12,
+      "curated": 13,
       "excluded": 0,
       "set_aside": 4,
-      "unindexed": 17
+      "unindexed": 16
     },
     {
       "id": "release-guicourse",

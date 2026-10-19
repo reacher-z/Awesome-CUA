@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e17427963ca01a5de2e7",
+    "url": "https://press.opera.com",
+    "decision": "not_a_resource",
+    "reason": "Home page of the Opera Newsroom, a feed of company press releases about browsers, gaming and other products; the source links it as the code for the Browser Operator announcement, but it holds no code or agent."
   }
 ]

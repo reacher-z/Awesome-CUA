@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2ef592a5e30038f258af",
+    "url": "https://llava-vl.github.io/blog/2024-01-30-llava-next",
+    "decision": "out_of_scope",
+    "reason": "This 30 January 2024 LLaVA team blog post announces LLaVA-NeXT, a general vision-language model with higher input resolution and better OCR and reasoning, and reports general multimodal benchmarks such as MMMU, MathVista and VQAv2. It does not address GUI, web or mobile interaction, so it is a general base model rather than a computer-use resource.",
+    "reviewed_at": "2026-10-19T06:39:31Z",
+    "evidence": {
+      "url": "https://llava-vl.github.io/blog/2024-01-30-llava-next",
+      "sha256": "23029ba42dcf6bba3b006770a839f44e76b52763b600d8780ab2d9712d7c886e",
+      "retrieved_at": "2026-10-19T06:28:50Z"
+    }
   }
 ]

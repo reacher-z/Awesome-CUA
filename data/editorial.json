@@ -63143,5 +63143,66 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Asteroid",
+    "kind": "product",
+    "url": "https://asteroid.ai",
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "industry",
+      "web-navigation"
+    ],
+    "summary": "Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API.",
+    "scope": "core",
+    "verify_terms": [
+      "Asteroid"
+    ],
+    "notes": "The site footer names Entropy Systems, Inc. as the operator. The homepage describes three execution modes: a frontier model reading the screen and acting on first runs, agent-written deterministic scripts for repeat runs, and direct calls to a portal's private API when one is found; it also describes an agent builder (Astro), approval checkpoints and step-by-step run recordings. An August 2026 company blog post says Asteroid has deployed agents built on Anthropic's computer use tool since February 2026 as an early-access participant, and that its agents run on Linux sandboxes and reach Windows-only EHRs through remote desktop. Customer outcome figures, HIPAA and SOC 2 claims, pricing and reliability are publisher statements and were not independently tested. The asteroidai GitHub organization and docs.asteroid.ai were not reviewed.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://asteroid.ai/pricing",
+      "availability": "not independently tested"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://asteroid.ai/blog/computer-use-in-healthcare/",
+        "sha256": "1a9af433c56a5b0d7399cf1bccd2f6e07affb4669ef5511d2b1c6488b7b20596",
+        "retrieved_at": "2026-10-19T06:04:57Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:57f17b7d0c18b2d7c8bf",
+        "evidence_url": "https://asteroid.ai/blog/computer-use-in-healthcare/"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7ecbc3b9308526702692bc16f38e0e5903532d8ecc5b026193527ea99b9b20db",
+    "reviewed_at": "2026-10-19T06:05:25Z"
   }
 ]

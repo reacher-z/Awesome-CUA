@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-27 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+28 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (11)](#papers)
+**Contents:** [Products (1)](#products) · [Publishers (16)](#publishers) · [Papers (11)](#papers)
+
+## Products
+
+All entries in this section: web, desktop, windows, linux.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Asteroid](https://asteroid.ai) | — | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
 
 ## Publishers
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-55 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+56 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (6)](#products) · [Papers (38)](#papers)
 
 ## Benchmarks
 
@@ -42,6 +42,7 @@
 | [E2B](https://e2b.dev/) | [E2B](https://e2b.dev/) | desktop | Sandbox infrastructure for executing agent workloads. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | web | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Steel Cloud](https://steel.dev/) | [Steel](https://steel.dev/) | web | Managed browser infrastructure associated with Steel Browser. | [✓ 2026‑10‑16](https://steel.dev/) |
+| [Wuying Agentic Mobile](https://help.aliyun.com/zh/ecp/what-is-cloud-phone-mobile-use-agent) | — | android | Alibaba Cloud Wuying service that runs Qwen-driven agents (MobileUseAgent with OpenClaw) in cloud Android containers to carry out natural-language tasks across apps, for process automation and app testing. | [✓ 2026‑10‑19](https://help.aliyun.com/zh/ecp/what-is-cloud-phone-mobile-use-agent.md) |
 
 ## Papers
 

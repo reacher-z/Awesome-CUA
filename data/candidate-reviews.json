@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0fa046456844d3d7ca17",
+    "url": "https://help.aliyun.com/zh/ecp/quickly-experience-and-create-cloud-phone-mobileclaw",
+    "decision": "alias",
+    "target_id": "url:df3102617f3a66c44fc9",
+    "reason": "Quick-start documentation page for the indexed Wuying Agentic Mobile service; the URL now redirects to the renamed cloud-phone-jvs-mobile page."
   }
 ]

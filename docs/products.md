@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Mobile (1)](#mobile) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -42,6 +42,16 @@ All entries in this section: desktop.
 | --- | --- | --- | --- |
 | [E2B](https://e2b.dev/) | [E2B](https://e2b.dev/) | Sandbox infrastructure for executing agent workloads. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Simular](https://www.simular.ai/) | [Simular](https://www.simular.ai/) | Computer-use products and research from Simular. | [✓ 2026‑10‑16](https://www.simular.ai/) |
+
+[↑ Back to top](#product-catalog)
+
+## Mobile
+
+All entries in this section: android.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Wuying Agentic Mobile](https://help.aliyun.com/zh/ecp/what-is-cloud-phone-mobile-use-agent) | — | Alibaba Cloud Wuying service that runs Qwen-driven agents (MobileUseAgent with OpenClaw) in cloud Android containers to carry out natural-language tasks across apps, for process automation and app testing. | [✓ 2026‑10‑19](https://help.aliyun.com/zh/ecp/what-is-cloud-phone-mobile-use-agent.md) |
 
 [↑ Back to top](#product-catalog)
 

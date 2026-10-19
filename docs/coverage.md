@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-19T06:30:19Z**. Generated from committed source receipts.
 
-- 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
+- 3,179 resource records: 1,615 curated; 1,564 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,841 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,242 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,242 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 37 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -24,7 +24,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 441 | 204 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
-| [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
+| [product](products.md) | 18 | 5 | · | · | · | 1 | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
 
@@ -77,7 +77,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 1 | 1 | OK · 2026-10-19 |
 | [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 3 | 3 | 0 | 2 | 1 | OK · 2026-10-19 |
 | [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 5 | 5 | 0 | 2 | 3 | OK · 2026-10-19 |
-| [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 4 | 17 | OK · 2026-10-19 |
+| [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 5 | 16 | OK · 2026-10-19 |
 | [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 4 | 4 | 0 | 1 | 2 | OK · 2026-10-19 |
 | [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 6 | 21 | OK · 2026-10-19 |
 | [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 1 | 1 | 0 | 0 | 7 | OK · 2026-10-19 |

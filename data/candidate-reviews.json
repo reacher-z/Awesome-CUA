@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0464f6807d8dbeb55df1",
+    "url": "https://openreview.net/forum?id=XaKNDIAHas&referrer=%5Bthe+profile+of+Tat-Seng+Chua%5D%28%2Fprofile%3Fid%3D~Tat-Seng_Chua2",
+    "decision": "alias",
+    "target_id": "arxiv:2504.07981",
+    "reason": "OpenReview forum, reached through a profile referrer link, of the ScreenSpot-Pro paper at the Workshop on Reasoning and Planning for Large Language Models; same title and authors as the indexed arXiv paper."
   }
 ]

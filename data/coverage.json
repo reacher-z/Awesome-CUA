@@ -11,10 +11,10 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1561,
   "discovery_identifiers": 4239,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
-  "out_of_scope_candidates": 0,
+  "out_of_scope_candidates": 1,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -351,8 +351,8 @@
       "curated": 215,
       "excluded": 0,
       "set_aside": 29,
-      "out_of_scope": 0,
-      "unindexed": 83
+      "out_of_scope": 1,
+      "unindexed": 82
     },
     {
       "id": "zju-gui",
@@ -681,8 +681,8 @@
       "curated": 148,
       "excluded": 0,
       "set_aside": 15,
-      "out_of_scope": 0,
-      "unindexed": 28
+      "out_of_scope": 1,
+      "unindexed": 27
     },
     {
       "id": "osu-gui",

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d1e6e942f07e9fc49147",
+    "url": "https://dl.acm.org/doi/10.1145/2009916.2010020",
+    "decision": "out_of_scope",
+    "reason": "This SIGIR 2011 paper learns vertical-level features from one labeled seed site to extract entity attributes from other websites for search engines and knowledge bases, evaluated on 80 sites in 8 verticals. It is web information extraction with no agent observing or acting on an interface.",
+    "reviewed_at": "2026-10-19T06:37:28Z",
+    "evidence": {
+      "url": "https://dl.acm.org/doi/10.1145/2009916.2010020",
+      "sha256": "ec286356c2eed88d170ccc3f7dc18a838ba26beff049698bd5e557d4fcd704bf",
+      "retrieved_at": "2026-10-19T06:12:34Z"
+    }
   }
 ]

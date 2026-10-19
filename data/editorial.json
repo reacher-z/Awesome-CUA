@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Agentic Reinforcement Learning with Self-Distilled Reward Shaping",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.03223",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "long-horizon"
+    ],
+    "scope": "adjacent",
+    "summary": "Introduces ADRS, which turns skill-conditioned rescoring by a frozen policy snapshot into return-gated token-level credit for multi-turn agent RL, evaluated on ALFWorld, search QA and WebShop.",
+    "verify_terms": [
+      "Self-Distilled Reward Shaping"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.03223v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent agent-training method. The v1 full text names ALFWorld, search question answering and WebShop as its three interactive benchmarks; WebShop, a simulated shopping website, is the only web environment. Privileged skills are used only in training; rollouts and inference stay skill-free. The paper links code for anonymous review at github.com/gitrxh/ADRS-arxiv. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.03223v1",
+        "sha256": "c3c1de03349d7fceccf7f2687836e781678a90508dc7327eacef4f35b90e4402",
+        "retrieved_at": "2026-10-19T08:36:33Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML experimental setup naming ALFWorld, Search and WebShop. No code execution or result reproduction.",
+    "reviewed_sha256": "e0051fb26c57813084cd6bd0c296e9c90d82a0fb6966fb18a37de1d1c7aab0e3",
+    "reviewed_at": "2026-10-19T08:37:51Z"
   }
 ]

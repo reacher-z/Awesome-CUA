@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (180)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (181)](#papers)
 
 ## Benchmarks
 
@@ -126,6 +126,7 @@ All entries in this section: cross-platform.
 | 2026‑08‑18 | [Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents](https://arxiv.org/abs/2608.17319) | web | Combines a browser execution framework, recovery-oriented supervision, and online reinforcement learning, with a bilingual live-web task benchmark. |
 | 2026‑08‑10 | [LookAgain: Closed-Loop GUI Grounding with Visually Grounded Reflection](https://arxiv.org/abs/2608.09723) | unspecified | LookAgain treats a GUI coordinate as a revisable hypothesis, rendering its marker and a local screenshot patch before confirmation. Reflective supervised trajectories provide a cold start, followed by GRPO using terminal grounding correctness. |
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |
+| 2026‑08‑04 | [Agentic Reinforcement Learning with Self-Distilled Reward Shaping](https://arxiv.org/abs/2608.03223) | web | Introduces ADRS, which turns skill-conditioned rescoring by a frozen policy snapshot into return-gated token-level credit for multi-turn agent RL, evaluated on ALFWorld, search QA and WebShop. |
 | 2026‑08‑04 | [Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents](https://arxiv.org/abs/2608.03327) | desktop | This study separates tool-adoption behavior from task competence in hybrid GUI–MCP agents. It tests tool-use incentives and screenshot-history compression, showing why changed action preferences alone need not improve held-out accuracy. |
 | 2026‑08‑03 | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | desktop, web | Qwen-CUA operates through screenshots and keyboard/mouse events while compressing older visual history into reusable context blocks. Its report combines verifiable task generation, trajectory-based training and separate browser and Bash-augmented studies. |
 | 2026‑07‑30 | [Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale](https://arxiv.org/abs/2607.28074) | web | Introduces Echoverse, which compiles specifications into stateful applications with database-grounded graders and uses rollouts to improve both the environments and agent policies. It examines behavioral depth, targeted interface practice, and environment repair as sources of training value. |

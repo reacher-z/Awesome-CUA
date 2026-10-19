@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-21 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+22 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Papers (20)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Papers (21)](#papers)
 
 ## Datasets
 
@@ -18,6 +18,7 @@ All entries in this section: unspecified.
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑10‑11 | [A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution](https://arxiv.org/abs/2610.15765) | desktop | DeskIF-Bench runs 255 artifact-verified tasks on four releases of six desktop applications to measure how interface changes affect agents; ANIS then synthesizes atomic and goal-level commands from installed applications. |
 | 2026‑09‑17 | [A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents](https://arxiv.org/abs/2609.19843) | unspecified | Studies how automatic defaults and reflective social-influence cues affect GUI-agent shopping decisions under different reasoning configurations. A randomized simulated-shopping experiment finds that reasoning changes the type of susceptibility rather than uniformly removing interface influence. |
 | 2026‑07‑26 | [From Blind Edits to Verified Repair: Building Trustworthy User-Side LLM Agents for Web Accessibility](https://arxiv.org/abs/2608.24913) | web | Builds a local browser-extension agent that generates and verifies additive CSS repairs for WCAG web accessibility violations. |
 | 2026‑05‑22 | [VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents](https://arxiv.org/abs/2605.26144) | web, android | VISTA evaluates coding agents that turn design handoffs into working web and Android applications. Its evaluator locates annotated interactive components and probes their behavior, keeping visual localization distinct from functional correctness. |

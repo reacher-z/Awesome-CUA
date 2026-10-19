@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (560)](#papers)
 
 ## Benchmarks
 
@@ -183,6 +183,7 @@ All entries in this section: web.
 | 2026‑10‑12 | [BrowseSafe++: Benchmarking Prompt Injection Detection Across Web Contexts, Languages, and Browser Views](https://arxiv.org/abs/2610.17457) | web | Extends BrowseSafe with paired attacked and clean webpages in several representations, and studies text and screenshot detectors plus feedback-adapted prompt injections. |
 | 2026‑10‑12 | [Learn from Move: the Next Step for GUI Agents](https://arxiv.org/abs/2610.16720) | unspecified | Introduces LatentGUIWorld to test learning interface semantics and dynamics through interaction, and studies finer movement actions with intermediate visual feedback and exploration demonstrations. |
 | 2026‑10‑12 | [PrivacyGuard: Source-Linked Sanitization and Locally Resolvable PII References for Cloud GUI Agents](https://arxiv.org/abs/2610.16778) | android | Introduces PrivacyGuard, which sanitizes source-linked personal information and maintains locally resolvable references across mobile-agent turns to reduce exposure to remote planners. |
+| 2026‑10‑11 | [A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution](https://arxiv.org/abs/2610.15765) | desktop | DeskIF-Bench runs 255 artifact-verified tasks on four releases of six desktop applications to measure how interface changes affect agents; ANIS then synthesizes atomic and goal-level commands from installed applications. |
 | 2026‑10‑10 | [The Agent Clicks Approve: Injected Page Text Makes Browser Agents Authorize Access the Task Never Named](https://arxiv.org/abs/2610.15138) | web | Studies prompt-injected account-access approvals in browser agents and proposes a service-side authority envelope that checks authorization requests against the user task before allowing them to complete. |
 | 2026‑10‑09 | [A Baseline Assessment for the Agentic Web Technology Stack](https://arxiv.org/abs/2610.13703) | web | Presents MASTIF, a framework for comparing combinations of agent models, protocols, and implementation frameworks on web tasks, with an initial assessment using 300 Mind2Web tasks. |
 | 2026‑10‑09 | [CaptchaAgent: Verifiable Visual Reasoning for CAPTCHA Solving](https://arxiv.org/abs/2610.12866) | web | Presents CaptchaAgent, which builds an explicit visual representation of objects and relations, refines ambiguous regions, and checks counterfactual consistency before acting on interactive CAPTCHAs. |

@@ -63143,5 +63143,54 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.15765",
+    "summary": "DeskIF-Bench runs 255 artifact-verified tasks on four releases of six desktop applications to measure how interface changes affect agents; ANIS then synthesizes atomic and goal-level commands from installed applications.",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design",
+      "efficiency"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Synthesizing Agent-Native Interfaces"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.15765v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent desktop-software agent study: per Section 4.1 of the v1 full text, agents (the OpenCode scaffold with Claude Haiku 4.5 and DeepSeek V4 Flash) reach each application only through its programmatic interface or synthesized commands, so GUIs are a contrast, not the execution modality. Section 3 reuses 102 of the 255 tasks from OSWorld and OpenComputer; the ANIS evaluation expands to 368 tasks across eight applications. The paper names its code (github.com/co-evolve-lab/ANIS) and dataset (huggingface.co/datasets/SimAlan/DeskIF-Bench), which are not reviewed here. Experimental results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2610.15765v1",
+        "sha256": "59f097867c03d9e861b30ba9b7ca07ce047678e8f8eb72131e7477174eba550a",
+        "retrieved_at": "2026-10-19T08:45:49Z"
+      }
+    ],
+    "reviewed_sha256": "e40c265b84ba71e5ef2187b92cc81e908b20a0be568a72d5812bb34d379766ff",
+    "reviewed_at": "2026-10-19T08:45:59Z"
   }
 ]

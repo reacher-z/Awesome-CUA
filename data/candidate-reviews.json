@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:dba74d12eb6142e7bd73",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-dense",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M-Retriever-ST-dense is the Sentence Transformers dense-embedding variant of H Company's 800M multimodal document retriever: it embeds text queries and document pages (text or page images) and is evaluated only on ViDoRe and BEIR retrieval. Its card describes no GUI, screen-control or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:07:55Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-dense/raw/c0b3be7a95e59145e5f2a626caeed894ff5285c1/README.md",
+      "sha256": "5b2927d3c37cd1e8460e46d37cdb3e6ebbdba121afbb363e32b54318740f998d",
+      "retrieved_at": "2026-10-18T16:12:53Z"
+    }
   }
 ]

@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-63 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+64 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Gym-Anything](https://github.com/cmu-l3/gym-anything) | desktop, linux, windows, macos, android | [2604.06126](https://arxiv.org/abs/2604.06126) (2026) | [200 software applications](https://arxiv.org/abs/2604.06126v1) · [> 10,000 long-horizon tasks](https://arxiv.org/abs/2604.06126v1) · [7,150 tasks](https://raw.githubusercontent.com/cmu-l3/gym-anything/4a8d9672d92d8ff2daef232c4bf9c49d3ac4f2ca/benchmarks/cua_world/splits/verified.json) · [191 environments](https://raw.githubusercontent.com/cmu-l3/gym-anything/4a8d9672d92d8ff2daef232c4bf9c49d3ac4f2ca/benchmarks/cua_world/splits/verified.json) | code MIT | Runtime and CUA-World task suite that turn real applications on Ubuntu, Windows 11, Android and macOS into screen-observing, mouse-and-keyboard agent environments with setup scripts and program verifiers. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/cmu-l3/gym-anything/4a8d9672d92d8ff2daef232c4bf9c49d3ac4f2ca/README.md) |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) · [leaderboard](https://gui-agent.github.io/grounding-leaderboard) | desktop, windows, macos, linux | — | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding/HEAD/readme.md) |
 | [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) | windows, desktop | [2409.08264](https://arxiv.org/abs/2409.08264) (2024) | [154 task definitions](https://raw.githubusercontent.com/microsoft/WindowsAgentArena/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_all.json) | code MIT | Windows 11 benchmark for multimodal desktop agents in a reproducible VM that runs locally or in parallel on Azure ML, with a harder mode where agents must set tasks up themselves. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/WindowsAgentArena/HEAD/README.md) |

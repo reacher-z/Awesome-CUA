@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:57c169130922283e3331",
+    "url": "https://glama.ai/blog/2024-10-23-automating-macos-using-claude",
+    "decision": "out_of_scope",
+    "reason": "An October 2024 Glama blog post by Frank Fiegel (punkpeye) that explains how to run Anthropic's computer-use quickstart natively on macOS by swapping in a cliclick-based computer.py, credited to a third-party gist, and lists related projects. It is a tutorial about the already-curated Claude Computer Use (url:57f17b7d0c18b2d7c8bf), not a maintained agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:38:21Z",
+    "evidence": {
+      "url": "https://glama.ai/blog/2024-10-23-automating-macos-using-claude",
+      "sha256": "5c7e91a0de001634bbc46937dc77444ffdc947fe97294a63b3e41697dd988754",
+      "retrieved_at": "2026-10-19T06:18:03Z"
+    }
   }
 ]

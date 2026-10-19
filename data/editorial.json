@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.05784",
+    "summary": "Compiles passively captured screen activity, such as app focus, URLs, accessibility trees and input events, into typed activity frames that give computer-use agents memory and guarded routine replay without a model.",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "recording",
+      "interaction-history",
+      "efficiency"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Activity Frames: Deterministic Screen-Activity Compilation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.05784v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8be016f98e6d9c03b73d12b208876bd7a002f753b13e897fe08fa5ffd6b200ed",
+    "reviewed_at": "2026-10-19T08:46:15Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Measurements come from a single professional's capture corpus; the Routine Overhead Ratio is a modeled upper bound, and live replay is shown on one two-step routine in a browser session. The compiler is exposed to agents as context blocks and an MCP server. The paper names a reference implementation at github.com/nossa-y/activity-frames. Reviewed against the v1 abstract and HTML full text; results were not independently reproduced."
   }
 ]

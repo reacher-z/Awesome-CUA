@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-23 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+24 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (16)](#papers)
 
 ## Datasets
 
@@ -60,6 +60,7 @@ All entries in this section: desktop, web.
 | 2026‑09‑02 | [OmegaUse-SOP: SOP Engineering for Professional Computer Use from Human Demonstrations](https://arxiv.org/abs/2609.02149) | unspecified | OmegaUse-SOP converts expert GUI demonstrations into configurable procedures and refines them with domain rules and human input. It records, abstracts, grounds and verifies live execution, with a case study of photovoltaic simulation workflows in PVsyst 7.2. |
 | 2026‑08‑20 | [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319) | unspecified | Task Model Induction disentangles concurrent activities in screenshot and mouse/keyboard traces, then constructs hierarchical goals and procedural control flow for each task. Evaluation tests reconstruction of observed execution and reuse of derived skills on held-out tasks. |
 | 2026‑08‑14 | [LegacyWorld: Atomicity-Aware Evaluation of GUI Agents for Legacy Workflows](https://arxiv.org/abs/2608.14131) | desktop, windows | LegacyWorld evaluates Windows GUI workflows under an atomicity criterion: finish correctly or fail without persistent unintended changes. It compares expert prompts with prompts derived from recorded golden paths and separates useful completion, safe failure and non-atomic side effects. |
+| 2026‑08‑06 | [Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay](https://arxiv.org/abs/2608.05784) | desktop, web | Compiles passively captured screen activity, such as app focus, URLs, accessibility trees and input events, into typed activity frames that give computer-use agents memory and guarded routine replay without a model. |
 | 2026‑06‑17 | [HANSEL: Extracting Breadcrumbs from Web Agent Trajectories for Interactive Verification](https://arxiv.org/abs/2606.18671) | web | HANSEL extracts evidence pages and snippets from browser-agent traces and preserves relevant page state in interactive verification views. It flags untraceable answers and evaluates evidence selection and human verification effort separately. |
 | 2026‑06‑16 | [PreAct: Computer-Using Agents that Get Faster on Repeated Tasks](https://arxiv.org/abs/2606.17929) | cross-platform | PreAct compiles successful screen-interaction runs into guarded state-machine programs for repeated tasks. It validates programs from clean states before storage and returns control to the agent when replayed screen expectations fail, with tests across mobile, desktop and web. |
 | 2026‑05‑28 | [Syll: Open-Source Personal Automation with Cross-Surface Execution](https://arxiv.org/abs/2606.07594) | desktop, macos | Syll combines tool calls, shell execution and visual GUI control in a personal-automation runtime. It turns user demonstrations into reusable skills and exposes execution logs, keyframes and approval checkpoints for inspection. |

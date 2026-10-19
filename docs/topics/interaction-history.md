@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-47 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Papers (46)](#papers)
+**Contents:** [Models (1)](#models) · [Papers (47)](#papers)
 
 ## Models
 
@@ -24,6 +24,7 @@ All entries in this section: android, desktop.
 | 2026‑09‑09 | [TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents](https://arxiv.org/abs/2609.10297) | unspecified | TRACE orders screenshot evidence for monotonic visual-token reduction using layout priors, instruction relevance and feature novelty. Spatial token reserves and incremental KV contraction aim to preserve useful evidence for future GUI targets without repeatedly encoding retired frames. |
 | 2026‑09‑02 | [Monitoring Web Agents Without Internal Signals: Observable Trajectories and Key-Step Supervision](https://arxiv.org/abs/2609.02057) | web | Predicts web-agent failure risk from observable trajectory prefixes using cross-step behavior and black-box consistency queries. Key-step labels preserve valid early prefixes of failed runs, and evaluation tests early intervention and transfer across website categories. |
 | 2026‑08‑20 | [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319) | unspecified | Task Model Induction disentangles concurrent activities in screenshot and mouse/keyboard traces, then constructs hierarchical goals and procedural control flow for each task. Evaluation tests reconstruction of observed execution and reuse of derived skills on held-out tasks. |
+| 2026‑08‑06 | [Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay](https://arxiv.org/abs/2608.05784) | desktop, web | Compiles passively captured screen activity, such as app focus, URLs, accessibility trees and input events, into typed activity frames that give computer-use agents memory and guarded routine replay without a model. |
 | 2026‑08‑06 | [The Next Screenshot Knows: Gated Hindsight Distillation for Mobile GUI Agents](https://arxiv.org/abs/2608.06065) | android | Gated Hindsight Distillation gives a teacher access to the next screenshot during training while the student sees only the available trajectory prefix. Distillation is applied when hindsight repairs a student failure, and the resulting policies are evaluated on Android tasks. |
 | 2026‑08‑04 | [Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents](https://arxiv.org/abs/2608.03327) | desktop | This study separates tool-adoption behavior from task competence in hybrid GUI–MCP agents. It tests tool-use incentives and screenshot-history compression, showing why changed action preferences alone need not improve held-out accuracy. |
 | 2026‑08‑03 | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | desktop, web | Qwen-CUA operates through screenshots and keyboard/mouse events while compressing older visual history into reusable context blocks. Its report combines verifiable task generation, trajectory-based training and separate browser and Bash-augmented studies. |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (442)](#papers)
 
 ## Benchmarks
 
@@ -302,6 +302,7 @@
 | 2026‑08‑10 | [Hallucination-Free GUI Grounding via Regression-Free Layout-Aware Matching](https://arxiv.org/abs/2608.09654) | web | This framework separates frozen-model instruction expansion from a trained layout-aware matcher that localizes GUI elements without coordinate regression. Binary text/icon supervision supports the matcher, with evaluations on GUI grounding and Mind2Web element-selection tasks. |
 | 2026‑08‑09 | [CAP: A Scalable Benchmark for Evaluating Cross-Site Browser Agents with Complex Actions and Perception](https://arxiv.org/abs/2608.08392) | web | CAP builds cross-site browser workflows by decomposing websites into operation and perception requirements and recomposing them into tasks. Its judge-based evaluation diagnoses complex interactions and visual-perception failures across real websites. |
 | 2026‑08‑07 | [RealGUINoise: An Interactive Cross-Platform Benchmark for GUI Agent Robustness under Real-World Interface Noise](https://arxiv.org/abs/2609.38184) | web, desktop, cross-platform | Evaluates interactive GUI agents under varied realistic interface noise, comparing task completion, safety, and behavior with clean-environment runs. |
+| 2026‑08‑06 | [Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay](https://arxiv.org/abs/2608.05784) | desktop, web | Compiles passively captured screen activity, such as app focus, URLs, accessibility trees and input events, into typed activity frames that give computer-use agents memory and guarded routine replay without a model. |
 | 2026‑08‑06 | [Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents](https://arxiv.org/abs/2608.06171) | web | Measures the complementarity, cost and rerun variability of six browser observation modes on WebArena and VisualWebArena. Its routing experiments distinguish an oracle cost opportunity from policies that fail to robustly outperform a fixed observation mode. |
 | 2026‑08‑05 | [LoginTrap: Uncovering Task-Agnostic Phishing-Style Indirect Prompt Injection Attacks against LLM-based Web Agents](https://arxiv.org/abs/2608.04741) | web | Introduces LoginTrap, a black-box indirect-injection evaluation in which attacker-controlled page context and login flows induce unauthorized authentication. It measures end-to-end private-data leakage across web-agent backbones, architectures and defenses. |
 | 2026‑08‑03 | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | desktop, web | Qwen-CUA operates through screenshots and keyboard/mouse events while compressing older visual history into reusable context blocks. Its report combines verifiable task generation, trajectory-based training and separate browser and Bash-augmented studies. |

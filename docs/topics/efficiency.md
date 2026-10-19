@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (141)](#papers)
 
 ## Benchmarks
 
@@ -71,6 +71,7 @@ All entries in this section: desktop.
 | 2026‑08‑22 | [Beyond Success and Failure: Length-Aware Contrastive Learning for GUI Agents](https://arxiv.org/abs/2608.21830) | unspecified | Introduces LACL-GUI, a contrastive learning objective that distinguishes trajectory quality within both successful and failed GUI executions. It favors concise successes and uses divergence from successful trajectories to differentiate failures during policy optimization. |
 | 2026‑08‑18 | [ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents](https://arxiv.org/abs/2608.18307) | web | ComponentBench evaluates short interactions with canonical web UI components using verified tasks and matched human reference trajectories. Its diagnostic pipeline compares observation/action representations and analyzes structural difficulty, failure patterns and interaction efficiency. |
 | 2026‑08‑16 | [Improving LLM-based Autonomous Web Agents with Filtering](https://arxiv.org/abs/2609.27770) | web | Trains HTML-element relevance filters on Mind2Web trajectories and transfers them to WebArena to reduce irrelevant browser context. It also evaluates a zero-shot ColBERT retriever and documents baseline web-agent failure modes. |
+| 2026‑08‑06 | [Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay](https://arxiv.org/abs/2608.05784) | desktop, web | Compiles passively captured screen activity, such as app focus, URLs, accessibility trees and input events, into typed activity frames that give computer-use agents memory and guarded routine replay without a model. |
 | 2026‑08‑06 | [Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents](https://arxiv.org/abs/2608.06171) | web | Measures the complementarity, cost and rerun variability of six browser observation modes on WebArena and VisualWebArena. Its routing experiments distinguish an oracle cost opportunity from policies that fail to robustly outperform a fixed observation mode. |
 | 2026‑08‑06 | [StepReflect: Structured UI Transition Reflection for Mobile GUI Agents](https://arxiv.org/abs/2608.05587) | android | StepReflect predicts structured per-action reflections from transition specifications and paired visual evidence. The paper distinguishes offline transition-label accuracy from online task success when the reflection model is integrated into mobile agents. |
 | 2026‑08‑04 | [Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents](https://arxiv.org/abs/2608.03327) | desktop | This study separates tool-adoption behavior from task competence in hybrid GUI–MCP agents. It tests tool-use incentives and screenshot-history compression, showing why changed action preferences alone need not improve held-out accuracy. |

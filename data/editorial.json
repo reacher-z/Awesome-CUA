@@ -63143,5 +63143,45 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "CONTRAMEM: Learning Self-Evolving Procedural Memory from Contrasting Multi-Model Trajectories",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.22533",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "training-free",
+      "cross-app"
+    ],
+    "summary": "CONTRAMEM distills app-level Function Cards and task-level Skill Cards from contrasting trajectories of several models on the same tasks into a training-free procedural memory, evaluated on GAIA2/ARE and AppWorld.",
+    "verify_terms": [
+      "CONTRAMEM: Learning Self-Evolving Procedural Memory"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.22533v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: the GAIA2/ARE and AppWorld agents act through application function calls rather than screen interaction, although the paper calls the tasks computer-use tasks. Memory built from GPT-5.5, Claude Sonnet 4.6 and DeepSeek V4 Pro trajectories is also tested unchanged on Qwen3.7 Plus. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2608.22533v2",
+        "retrieved_at": "2026-10-19T08:48:11Z",
+        "sha256": "7a70de7ce8c1b5a67178aa4ee46f473a5a643a33c7fe71cfeb72b0e3bcc74a86",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML introduction, related work, methodology (trajectory normalization of app calls, Function and Skill Cards) and experimental setup.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2dd0f394aae7b84ba182d74d7d5b53c638c584dfb1330f27a31351728b3645fe",
+    "reviewed_at": "2026-10-19T08:48:12Z"
   }
 ]

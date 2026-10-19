@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-54 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+55 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (36)](#papers)
 
 ## Benchmarks
 
@@ -57,6 +57,7 @@ All entries in this section: desktop, linux.
 | 2026‑09‑29 | [EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686) | desktop | Introduces professional engineering tasks across software domains, with GUI and CLI access and artifact checks for geometric, physical, and design validity. |
 | 2026‑09‑29 | [MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows](https://arxiv.org/abs/2609.37053) | desktop, windows | Introduces MatToolBench, a Windows-based materials-science benchmark combining GUI operation, scientific-software scripting, and database queries. Expert-defined subcriteria support partial-credit scoring, while the evaluation examines domain knowledge gaps and cross-tool handoff failures. |
 | 2026‑09‑09 | [JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition](https://arxiv.org/abs/2609.10451) | desktop, android, windows, linux | JarvisGUI composes typed input-output task transformations into dynamic workflows spanning Android, Windows and Ubuntu devices. Its virtual-environment benchmark tests transfer of intermediate results, shared state and cross-device dependencies. |
+| 2026‑08‑23 | [CONTRAMEM: Learning Self-Evolving Procedural Memory from Contrasting Multi-Model Trajectories](https://arxiv.org/abs/2608.22533) | unspecified | CONTRAMEM distills app-level Function Cards and task-level Skill Cards from contrasting trajectories of several models on the same tasks into a training-free procedural memory, evaluated on GAIA2/ARE and AppWorld. |
 | 2026‑08‑09 | [CAP: A Scalable Benchmark for Evaluating Cross-Site Browser Agents with Complex Actions and Perception](https://arxiv.org/abs/2608.08392) | web | CAP builds cross-site browser workflows by decomposing websites into operation and perception requirements and recomposing them into tasks. Its judge-based evaluation diagnoses complex interactions and visual-perception failures across real websites. |
 | 2026‑06‑22 | [Capable but Careless: Do Computer-Use Agents Follow Contextual Integrity?](https://arxiv.org/abs/2606.23189) | unspecified | AgentCIBench evaluates whether computer-use agents disclose information in ways that violate its original context. Deterministically scored scenarios test nearby sensitive UI content, ambiguous requests and recipient mismatches, including end-to-end agent execution. |
 | 2026‑06‑21 | [MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop](https://arxiv.org/abs/2606.22557) | desktop, macos | Introduces macOS tasks spanning GUI and command-line interaction, with deterministic checks and intermediate-progress scoring for application workflows. |

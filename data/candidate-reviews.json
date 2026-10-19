@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8fbead4edc592702aba6",
+    "url": "https://surf.new",
+    "decision": "alias",
+    "target_id": "github:steel-dev/surf.new",
+    "reason": "Hosted playground deployed from the indexed Surf.new repository, which names it as its homepage; the domain no longer resolves, and a December 2025 Wayback capture shows the Steel web-agent playground linking that repository."
   }
 ]

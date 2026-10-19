@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:da6c7ce30d89a9018660",
+    "url": "https://deepmind.google/discover/blog/a-generalist-agent",
+    "decision": "out_of_scope",
+    "reason": "This May 2022 Google DeepMind post announces Gato, a single transformer policy that plays Atari games, captions images, chats and stacks blocks with a real robot arm. It does not operate graphical user interfaces, websites or devices, and its paper (arXiv 2205.06175) is not in the catalog.",
+    "reviewed_at": "2026-10-19T06:36:26Z",
+    "evidence": {
+      "url": "https://deepmind.google/discover/blog/a-generalist-agent",
+      "sha256": "608c20651e876c36dcfb2a951842136f0cb6790818cc7155f27b33e4fbac619c",
+      "retrieved_at": "2026-10-19T06:14:34Z"
+    }
   }
 ]

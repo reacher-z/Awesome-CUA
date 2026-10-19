@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:dc36e6a92c0cd731939a",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M-Retriever is H Company's 263M-parameter multimodal document retriever, fine-tuned from NeoMME-260M, that embeds text queries and document pages (text or page images) into multi-vector and dense representations; its card evaluates it only on ViDoRe and BEIR retrieval. It does not observe or act on graphical interfaces and the card describes no agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:08:40Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever/raw/481083153ac22931afbd614e672212bffbcb666e/README.md",
+      "sha256": "e6b46b239531d7724c2cf46410c6d42a195783c60bafd2ff0a6b83cf5405d93d",
+      "retrieved_at": "2026-10-18T16:15:52Z"
+    }
   }
 ]

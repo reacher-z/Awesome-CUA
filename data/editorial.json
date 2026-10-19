@@ -63143,5 +63143,29 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.14239",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox"
+    ],
+    "summary": "Proposes CoArena, an arena where users submit tasks, two agent systems run each task concurrently in identical sandboxed desktops, and blind pairwise votes refit a Bradley-Terry leaderboard.",
+    "verify_terms": [
+      "CoArena: Evaluating Computer-Use"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.14239v1"
+    ],
+    "scope": "core",
+    "notes": "Reviewed against the v1 abstract; arXiv provides no HTML full text for this version. The paper defines five measurable real-time evaluation properties and a Bradley-Terry rating method whose single-vote streaming update recovers Elo. Its five-system, 211-vote example is illustrative and reports no measurement of a deployed system. The abstract page links a project page at https://coarena.ai.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "348b0ff3651e5c514c18a417b45bf25e1e52a7a3dcc407e649709cfd29d925d1",
+    "reviewed_at": "2026-10-19T08:46:48Z"
   }
 ]

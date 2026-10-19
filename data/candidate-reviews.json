@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9b576f82b28d76a56452",
+    "url": "https://openreview.net/forum?id=whqkAw5M7q",
+    "decision": "alias",
+    "target_id": "arxiv:2510.06607",
+    "reason": "OpenReview page of an ICLR 2026 submission (not accepted) of the indexed paper under an earlier title, when its benchmark was named AdvCUA; same twelve authors and the same 140-task MITRE ATT&CK-aligned benchmark."
   }
 ]

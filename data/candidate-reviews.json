@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:394669125c027db38e96",
+    "url": "https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro&freeDownloads=true",
+    "decision": "not_a_resource",
+    "reason": "Broadcom support-portal download listing for VMware Workstation Pro, a general-purpose desktop hypervisor that the ScienceBoard README names as a prerequisite in its legacy installation steps; it is installation tooling, not a computer-use resource."
   }
 ]

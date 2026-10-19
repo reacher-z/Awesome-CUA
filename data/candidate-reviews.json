@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a4cf742c3efdf157af48",
+    "url": "https://openreview.net/forum?id=jY2ow7jRdZ",
+    "decision": "alias",
+    "target_id": "arxiv:2503.03196",
+    "reason": "OpenReview page of the withdrawn ICLR 2025 submission of the indexed SpiritSight Agent paper; same title, and its four authors are among the five on arXiv."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c37e7aa80209265e655e",
+    "url": "https://mobile-gpt.github.io",
+    "decision": "alias",
+    "target_id": "github:fclab-skku/mobilegpt",
+    "reason": "Project page for the indexed MobileGPT agent; its Code link points to mobilegptsys/MobileGPT, the former name of that repository."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d5e8af82937d0b50e9d2",
+    "url": "https://bytebot.ai",
+    "decision": "alias",
+    "target_id": "github:bytebot-ai/bytebot",
+    "reason": "Website of the indexed Bytebot desktop agent. It is the bytebot-ai/bytebot repository homepage and links that repository for self-hosting."
   }
 ]

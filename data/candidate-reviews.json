@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e2723af8a1bd3d379a20",
+    "url": "https://cybertronagent.github.io/Mirage-1.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2506.10387",
+    "reason": "Project website for the indexed Mirage-1 paper; it repeats the paper's title, authors and abstract and links its arXiv entry."
   }
 ]

@@ -22768,7 +22768,7 @@
     "verify_terms": [
       "UICrit"
     ],
-    "notes": "The published CSV contains critique text, normalized boxes, ratings and RICO IDs; screenshots are referenced through RICO. The README explicitly licenses the work CC-BY-4.0. Its current 1,000-screen, 11,344-critique release differs from the original paper population. The README cites an ACM DOI rather than an arXiv ID, so no paper relation is asserted here. Its README establishes mobile interfaces without naming an operating system.",
+    "notes": "The published CSV contains critique text, normalized boxes, ratings and RICO IDs; screenshots are referenced through RICO. The README explicitly licenses the work CC-BY-4.0. Its current 1,000-screen, 11,344-critique release differs from the original paper population. The README cites the UIST '24 paper by its ACM DOI; that paper's arXiv v3 (accepted to UIST 2024) links this repository as its dataset. Its README establishes mobile interfaces without naming an operating system.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md"
     ],
@@ -22795,6 +22795,38 @@
         "url": "https://api.github.com/repos/google-research-datasets/uicrit/contents",
         "sha256": "8e790a53de8c40aa14f9e49aebf42b077e6a172a6841f38c7c6851af57b0617a",
         "retrieved_at": "2026-10-17T02:02:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research-datasets/uicrit/adc92136cdaecf6a5c8bb85af08594dd9271eb00/README.md",
+        "sha256": "345ff7003120f146016741099dd57b9b1a9ffc54ce1fc90f4d16d61e31d379e6",
+        "retrieved_at": "2026-10-19T06:02:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2407.08850v3",
+        "sha256": "4c01f44c52cc1c4d8a0ed619e271a619205537ca4d28bf191d28986c3443fe20",
+        "retrieved_at": "2026-10-19T06:02:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/abs/2407.08850v3",
+        "sha256": "f0ae50e0075bb55765131b90bcc22edfdc6f2295c64cd2444d79c32b57fb1485",
+        "retrieved_at": "2026-10-19T06:02:01Z"
       }
     ],
     "details": {
@@ -22835,6 +22867,27 @@
           "https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md"
         ],
         "splits": []
+      }
+    },
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2407.08850",
+        "evidence_url": "https://arxiv.org/html/2407.08850v3"
+      }
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://raw.githubusercontent.com/google-research-datasets/uicrit/adc92136cdaecf6a5c8bb85af08594dd9271eb00/README.md",
+          "retrieved_at": "2026-10-19T06:02:00Z",
+          "basis": "The README at commit adc9213 says \"This work is licensed under a Creative Commons Attribution 4.0 International License\" and links the CC BY 4.0 deed. The repository holds only that README and uicrit_public.csv, so the statement covers the released critiques and ratings; RICO screenshots are referenced, not redistributed."
+        },
+        "reason": "The README at commit adc9213 says \"This work is licensed under a Creative Commons Attribution 4.0 International License\" and links the CC BY 4.0 deed. The repository holds only that README and uicrit_public.csv, so the statement covers the released critiques and ratings; RICO screenshots are referenced, not redistributed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/google-research-datasets/uicrit/adc92136cdaecf6a5c8bb85af08594dd9271eb00/README.md"
+        ]
       }
     }
   },

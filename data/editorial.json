@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.06477",
+    "summary": "Introduces StepJack, a 480-example benchmark built on the RedTeamCUA sandbox that splits an adversarial goal into innocuous sub-steps planted across a chain of web pages, and evaluates six computer-use agents against it.",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "StepJack: Benchmarking Computer-Use Agent Safety"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.06477v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3d8caa568bfc82622b1aac5bd9dda64422b861eb360aaffaf30ef4dad1d35c1e",
+    "reviewed_at": "2026-10-19T08:44:09Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Built on the RedTeamCUA sandbox (arxiv:2505.21936), an OSWorld-based environment in which the attacker can post comments or upload documents on web pages along the agent's navigation path; there are 480 test examples per agent. Decompositions come from an LLM pipeline and are filtered on a verifier agent that is also one of the six evaluated agents. The paper links code and data at github.com/BorealisAI/StepJack. Reviewed against the v1 abstract and HTML full text; results were not independently reproduced."
   }
 ]

@@ -63143,5 +63143,45 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Invisible Ink Threats: Adversarial Goals Behind Legitimate Tasks in Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.02018",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Introduces II-Bench, 444 low-harm injected goals across Reddit, OwnCloud and RocketChat, and HITLCUA, which pairs an OSWorld-based VM with Docker web apps and a simulated user to test confirmation-based CUA defenses.",
+    "verify_terms": [
+      "Invisible Ink Threats"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.02018v2"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Reviewed against v2. In the full text, the three platforms are Reddit, OwnCloud and RocketChat web applications derived from WebArena and TheAgentCompany, combined with an OSWorld-based virtual machine; human confirmation is simulated by an API-based user. Attacks cover page navigation and interaction, information exfiltration, and code download and execution. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.02018v2",
+        "sha256": "7a8c2ad4908acd408d6f492ae18b752967ba7f77cc69d209fa0f5a39fb08511b",
+        "retrieved_at": "2026-10-19T08:36:34Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML sandbox and evaluation sections naming the OSWorld VM and the Reddit, OwnCloud and RocketChat platforms. No code execution or result reproduction.",
+    "reviewed_sha256": "e63d86719c8a3d3b264d7c79247ef1331f8a77d41dff78968261a84a3ee8d0e2",
+    "reviewed_at": "2026-10-19T08:42:25Z"
   }
 ]

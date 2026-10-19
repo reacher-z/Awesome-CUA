@@ -63143,5 +63143,72 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:dca82e9214c5926109f1",
+    "name": "Grounding Multimodal Large Language Model in GUI World",
+    "kind": "paper",
+    "url": "https://openreview.net/forum?id=M9iky9Ruhx",
+    "summary": "Trains a 0.4B SAM-initialized GUI grounding model on 0.5M auto-collected web screenshots with 35M element annotations, then links it to a Qwen-VL planner through a position token for MiniWob, AITW and Mind2Web.",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation",
+      "web-navigation",
+      "mobile-navigation"
+    ],
+    "verify_terms": [
+      "Grounding Multimodal Large Language Model in GUI World"
+    ],
+    "evidence_urls": [
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/31fc85f7461ce71eadf27fb7281973bd-Abstract-Conference.html"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.identity_basis",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.venue",
+      "details.publication.volume",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.publication.authors",
+          "details.publication.identity_basis",
+          "details.publication.notes",
+          "details.publication.title",
+          "environments",
+          "notes",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/31fc85f7461ce71eadf27fb7281973bd-Paper-Conference.pdf",
+        "sha256": "c5227784f66ec43bc1bd35c6d64f2a7958c4ee159a7a1bd7967b4cd6a3ee986a",
+        "retrieved_at": "2026-10-19T07:18:21Z"
+      }
+    ],
+    "notes": "Reviewed against the ICLR 2025 proceedings page and PDF; the OpenReview forum lists it as an ICLR 2025 Poster. Experiments were not reproduced. The grounding model, AssistGUIGrounder (AGG), pairs a SAM-pretrained ViT image encoder and a transformer query encoder with a two-layer box decoder. The data engine loads Common Crawl pages from 118 domains in a browser such as Chrome, scrolls them with Page Down and reads element data through UI Automation; grounding training used 0.36M web images with 22M annotations after smoothing, plus 27K mobile screenshots from WidgetCaption and RICO. ScreenSpot grounding covers mobile, desktop and web screenshots; agent fine-tuning covers MiniWob, AITW and Mind2Web. The paper gives github.com/showlab/AssistGUIGround for code and data; that repository returned HTTP 404 on 2026-10-19. No arXiv version was found.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "60075b72c7f1a92cc64e2d76048ad8d4049969210409245bab84cced1cd53a04",
+    "reviewed_at": "2026-10-19T07:19:08Z",
+    "read_basis": "Read the ICLR proceedings page metadata and abstract, and the full proceedings PDF text (data engine, model architecture, agent integration, experimental setup, result tables and data appendix); checked the OpenReview note through the api2 notes endpoint in a browser. No code execution or result reproduction."
   }
 ]

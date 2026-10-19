@@ -1,17 +1,17 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
-  "bibliographic_records": 2718,
+  "as_of_utc": "2026-10-19T07:18:21Z",
+  "total_records": 3179,
+  "curated_records": 1615,
+  "bibliographic_records": 2719,
   "arxiv_active_records": 2705,
-  "non_arxiv_bibliographic_records": 13,
-  "publication_metadata_records": 77,
+  "non_arxiv_bibliographic_records": 14,
+  "publication_metadata_records": 78,
   "arxiv_archive_records": 2841,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -193,21 +193,21 @@
     "framework": 75,
     "infrastructure": 14,
     "model": 98,
-    "paper": 2700,
+    "paper": 2701,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
-    "android": 300,
-    "cross-platform": 197,
+    "android": 301,
+    "cross-platform": 198,
     "desktop": 322,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -280,15 +280,15 @@
       "windows": 5
     },
     "paper": {
-      "android": 176,
-      "cross-platform": 101,
+      "android": 177,
+      "cross-platform": 102,
       "desktop": 204,
       "harmonyos": 2,
       "ios": 8,
       "linux": 18,
       "macos": 14,
       "unspecified": 341,
-      "web": 441,
+      "web": 442,
       "windows": 37
     },
     "product": {
@@ -945,13 +945,13 @@
         "state": "success"
       },
       "discovered": 96,
-      "indexed": 59,
-      "indexed_resources": 59,
+      "indexed": 60,
+      "indexed_resources": 60,
       "resolved_aliases": 0,
-      "curated": 55,
+      "curated": 56,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 37
+      "unindexed": 36
     },
     {
       "id": "gui-agent-security",

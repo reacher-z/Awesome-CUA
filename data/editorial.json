@@ -3938,6 +3938,43 @@
       "scope",
       "relations",
       "details.dataset_profile"
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/README.md",
+          "retrieved_at": "2026-10-19T06:15:53Z",
+          "basis": "The README's License section says the dataset is licensed under CC BY 4.0, and the root LICENSE at commit 1dfdbcc is the CC BY 4.0 legal code. This covers the released question, answer and bounding-box files; the README says the screenshots are referenced by Rico image IDs and retrieved from Rico, so they keep Rico's terms."
+        },
+        "reason": "The README's License section says the dataset is licensed under CC BY 4.0, and the root LICENSE at commit 1dfdbcc is the CC BY 4.0 legal code. This covers the released question, answer and bounding-box files; the README says the screenshots are referenced by Rico image IDs and retrieved from Rico, so they keep Rico's terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/README.md",
+          "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/LICENSE"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/README.md",
+        "sha256": "7d1bfe7d6eddd5d3fc4c33d4814de3cabf7a6b6fd3d3f85ba4c2b33036bf8867",
+        "retrieved_at": "2026-10-19T06:15:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/LICENSE",
+        "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+        "retrieved_at": "2026-10-19T06:15:53Z"
+      }
     ]
   },
   {

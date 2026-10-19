@@ -63143,5 +63143,56 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "PlaySuite: A Large-Scale Benchmark for Interactive Visual Intelligence",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.07127",
+    "summary": "Benchmarks vision-language, computer-use and VLA models on 5,734 Linux and browser games through a shared keyboard-and-mouse harness, scoring gameplay progress with a Video-LLM judge.",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "video",
+      "long-horizon"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "PlaySuite: A Large-Scale Benchmark"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.07127v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent game benchmark: games from PyWeek and itch.io run on an Xvfb virtual display, natively or in a browser, and computer-use models keep their own action formats, which adapters translate into one shared keyboard and mouse grammar. The fourteen evaluated open models include UI-TARS-1.5, OpenCUA, EvoCUA and GUI-Owl-1.5. The paper links a GitHub repository (dhevarghese/PlaySuite) and a Hugging Face dataset (Dheerraa/PlaySuite), which are not reviewed here. Reviewed against the versioned arXiv abstract page and HTML full text. Experimental results and released artifacts have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.07127v1",
+        "retrieved_at": "2026-10-19T08:41:35Z",
+        "sha256": "fac79ad04c84384548646dcdf58f030efaf9fe7ea0c06029ab4e1384124d17e9",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_sha256": "4395b55d272f9cfeb6ede9b26375ac1448cee0e539eed2bdd42505f36288ea6f",
+    "reviewed_at": "2026-10-19T08:44:14Z"
   }
 ]

@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2607.06306",
+    "name": "UI2App: Benchmarking Visual Interaction Inference in Executable Web Application Generation",
+    "url": "https://arxiv.org/abs/2607.06306",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract introduces UI2App, 600 screenshots in 95 state-coherent sets from which vision-language models generate runnable multi-route web applications, scored for executability, visual fidelity and an interaction-inference score. The models write front-end code from static screenshots rather than operate an interface; per the full text, headless Chromium only renders the outputs and interactions are judged by human annotators or an LLM reading code and screenshots, so this screenshot-to-code benchmark is outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T08:55:29Z",
+    "metadata_fingerprint": "5332101ab503d760f009ad0207684f213a806fe284c4046f4b4a2c3ef5e7d19a",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2607.05277%2C2607.06118%2C2607.06306%2C2607.07820%2C2607.11185%2C2607.11388%2C2607.12625%2C2607.12640%2C2607.13027%2C2607.14277%2C2607.14443%2C2607.14548%2C2607.15193%2C2607.15550%2C2607.17050%2C2607.18046%2C2607.19865%2C2607.21557%2C2607.22798%2C2607.23263%2C2607.24112%2C2607.24167%2C2607.25904%2C2607.26041%2C2607.27155%2C2607.28074%2C2607.28227%2C2607.28609%2C2607.29320%2C2608.01964%2C2608.02352%2C2608.02643%2C2608.03270%2C2608.03327%2C2608.04530%2C2608.04741%2C2608.05587%2C2608.05784%2C2608.05891%2C2608.06065%2C2608.06171%2C2608.06477%2C2608.09278%2C2608.09654%2C2608.10366%2C2608.10692%2C2608.11588%2C2608.12429%2C2608.15930%2C2608.17310&max_results=50",
+      "sha256": "65cc3856c70a0fb267f9996872e077de10e9f54821ab1ffb1d82f0a92fa11dbf",
+      "retrieved_at": "2026-10-16T06:33:09Z"
+    }
   }
 ]

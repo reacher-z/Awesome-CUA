@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c0dfb6a42cc3f6027616",
+    "url": "https://ltzheng.github.io/agent-studio",
+    "decision": "alias",
+    "target_id": "arxiv:2403.17918",
+    "reason": "Project website for the indexed AgentStudio paper; it links the paper, the code, the GroundUI, IDMBench and CriticBench datasets and a leaderboard."
   }
 ]

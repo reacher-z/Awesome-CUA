@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MATE: Policy-Aware Security Auditing for Mobile Agents via Synthesis-Driven Trajectory Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.22724",
+    "summary": "Introduces MATE, a policy-conditioned auditor that decides whether a mobile GUI agent trajectory violates a natural-language app security policy, trained on 140K synthesized trajectories and tested on MATEBench.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "data-generation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "MATE: Policy-Aware Security Auditing for Mobile Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.22724v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version arXiv v1 abstract page, whose title, ordered author list, version and normalized abstract SHA match the retained snapshot. According to the full text, MATEBench covers 14 risk categories and 158 apps, and its real-world subset has 162 manually collected trajectories from 13 apps produced by AutoGLM, Mobile-Agent and an Android-emulator agent built by the authors. The arXiv comment states acceptance to USENIX Security 2026. The paper points to artifacts on Zenodo (doi:10.5281/zenodo.20232924) and a project page (jiangchangyue.github.io/MATE); neither is reviewed here. Experimental results have not been independently reproduced.",
+    "read_basis": "arXiv v1 abstract page and HTML full text (Sections 1, 2.1 and the real-world subset description).",
+    "reviewed_sha256": "d8940792a2174015d48d4cee402cb3216308af5cd60ac898cafffe49c0ed6a98",
+    "reviewed_at": "2026-10-19T08:42:59Z"
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0425847cbe0a8c70ce43",
+    "url": "https://tongyi-mai.github.io/MAI-UI-blog/MobileWorld-Blog-Post",
+    "decision": "alias",
+    "target_id": "github:tongyi-mai/mobileworld",
+    "reason": "Redirect to a MobileWorld team blog post on end-to-end frontier-model results and real-phone setup; the post's source is a file on the indexed MobileWorld repository's gh-pages branch, listed on the project website's Blog page."
   }
 ]

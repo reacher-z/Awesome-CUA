@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c01a0a0897800e1d41bf",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39974",
+    "decision": "alias",
+    "target_id": "arxiv:2511.09157",
+    "reason": "AAAI Proceedings landing page for the AAAI-26 edition (DOI 10.1609/aaai.v40i32.39974) of the indexed ProBench paper."
   }
 ]

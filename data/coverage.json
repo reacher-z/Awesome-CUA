@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -530,8 +530,8 @@
       "resolved_aliases": 3,
       "curated": 109,
       "excluded": 1,
-      "set_aside": 9,
-      "unindexed": 44
+      "set_aside": 10,
+      "unindexed": 43
     },
     {
       "id": "delunn-multimodal",

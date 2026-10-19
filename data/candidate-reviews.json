@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c1b322d8849bf125e295",
+    "url": "https://mp.weixin.qq.com/s/_gu3NSCpAbAE1A8mEhGD7Q",
+    "decision": "out_of_scope",
+    "reason": "A Chinese-language AIxiv column article published on 2025-01-22 by the media account 机器之心 (Jiqizhixin) that summarizes the OS-Genesis paper for a general audience. It is press coverage of the already-curated OS-Genesis (github:os-copilot/os-genesis, arxiv:2412.19723), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:40:15Z",
+    "evidence": {
+      "url": "https://mp.weixin.qq.com/s/_gu3NSCpAbAE1A8mEhGD7Q",
+      "sha256": "afbf01ebcda7ac858c7f07cbc1316e6c88fd08319a98dba416cd7b4ec0f4ae39",
+      "retrieved_at": "2026-10-19T06:30:14Z"
+    }
   }
 ]

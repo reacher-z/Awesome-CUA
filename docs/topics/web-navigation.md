@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (210)](#papers)
 
 ## Benchmarks
 
@@ -160,6 +160,7 @@ All entries in this section: web.
 | 2026‑10‑09 | [Web$hell: A Unified Interface for Agentic Web Access](https://arxiv.org/abs/2610.13416) | web | Introduces Web$hell, an interface that compiles live pages into persistent information and action objects so agents can gather evidence, navigate websites, and reuse acquired content through shared operations. |
 | 2026‑10‑07 | [Secure-CUA: Controlling Untrusted Influence in Computer-Use Agents](https://arxiv.org/abs/2610.09469) | web | Proposes Secure-CUA, which commits to per-action transactions before reading untrusted page content and separates content queries from GUI target selection. The paper formalizes its protection assumptions and evaluates benign task utility on WebArena. |
 | 2026‑10‑05 | [CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling](https://arxiv.org/abs/2610.06829) | web | Introduces CLIFT, which certifies agent-generated verification signals against training-time judges and reuses them for per-step rewards and trajectory selection. At inference, a frozen question bank helps compare candidate web rollouts without querying an external judge. |
+| 2026‑10‑02 | [HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents](https://arxiv.org/abs/2610.03574) | web | Provides 423 human-validated questions in 13 languages whose answers require obscure, often non-text web evidence, evaluated with native search, Exa retrieval and the OWL browsing multi-agent harness. |
 | 2026‑10‑02 | [WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites](https://arxiv.org/abs/2610.03036) | web | Describes WebFovea, a vision-based live-web agent whose execution loop checks action parsing, browser effects, feedback accuracy, and observation delivery. The report analyzes failures such as coordinate mismatches and silent control interactions and documents corresponding harness changes. |
 | 2026‑09‑30 | [Action Conditioned Bisimulation For GUI Agent Memory](https://arxiv.org/abs/2609.38778) | web | Defines a GUI-memory merge rule that treats two states as equivalent only when shared actions lead to matching outcomes and successor states. The training-free method replaces observation-similarity merging and is tested in closed-loop MiniWoB++ interaction. |
 | 2026‑09‑29 | [AdaptArena: Evaluating Test-Time Personalization of Web Agents](https://arxiv.org/abs/2609.36488) | web | Introduces AdaptArena to test whether web agents can infer unstated user preferences from relevant past trajectories and carry those preferences into new tasks. Its AdaptiveAgent baseline separates preference-retrieval challenges from failures in downstream web execution. |

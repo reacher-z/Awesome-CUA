@@ -63143,5 +63143,53 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.03574",
+    "summary": "Provides 423 human-validated questions in 13 languages whose answers require obscure, often non-text web evidence, evaluated with native search, Exa retrieval and the OWL browsing multi-agent harness.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "HyperBrowseComp: A Multilingual and Multimodal"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.03574v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent information-seeking benchmark: the built-in search and Exa settings call search (and, with Exa, page-fetch) tools in a ReAct loop, and only the OWL setting drives a headless Chromium browser with annotated screenshots. Answers are graded by an LLM judge. The project page is HyperBrowseComp.github.io. Reviewed against the versioned arXiv abstract page and HTML full text. Experimental results and released artifacts have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.03574v1",
+        "retrieved_at": "2026-10-19T08:41:35Z",
+        "sha256": "74ec3bcf2e6987c5b1ec65cb0bd645ba86b063ffb789101262a3f727518876c6",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "reviewed_sha256": "bbc8d427c8e0b642f1416283a4f0e605b5a37a3edb7caa461ac3ab5bdd6ac649",
+    "reviewed_at": "2026-10-19T08:44:47Z"
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c58388ddbedc6d09e026",
+    "url": "https://openreview.net/forum?id=O0nBMRlkc8",
+    "decision": "alias",
+    "target_id": "arxiv:2406.01014",
+    "reason": "OpenReview forum of the NeurIPS 2024 edition of the indexed Mobile-Agent-v2 paper; same title and authors."
   }
 ]

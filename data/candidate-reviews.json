@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:442f7c03ed2cef9faafe",
+    "url": "https://openreview.net/forum?id=cgIDqcJcoI",
+    "decision": "alias",
+    "target_id": "arxiv:2510.01524",
+    "reason": "OpenReview forum of the ICLR 2026 poster edition of the indexed WALT paper; same title and the same eleven authors."
   }
 ]

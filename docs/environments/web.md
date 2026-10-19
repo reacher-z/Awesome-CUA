@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (19)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
 
 ## Benchmarks
 
@@ -220,6 +220,7 @@
 | [Operator](https://openai.com/index/introducing-operator/) | [OpenAI](https://openai.com/index/computer-using-agent/) | web | Historical OpenAI browser-agent research preview. | [✓ 2026‑10‑16](https://openai.com/index/introducing-operator/) |
 | [Scribe](https://scribehow.com/) | — | desktop, web | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
 | [Skyvern Cloud](https://www.skyvern.com/) | [Skyvern](https://www.skyvern.com/) | web | Hosted Skyvern service for AI browser workflows such as invoice downloads and form filling, with built-in CAPTCHA and 2FA handling, proxy geotargeting, run explanations and JSON or CSV output. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
+| [Starizon AI](https://starizon.ai) | — | web | Chrome side-panel agent that researches across tabs, bookmarks and a local knowledge base, and hands click-and-type tasks on signed-in sites to its Agent S6 browser agent, with replays, schedules and page monitors. | [✓ 2026‑10‑19](https://starizon.ai) |
 | [Steel Cloud](https://steel.dev/) | [Steel](https://steel.dev/) | web | Managed browser infrastructure associated with Steel Browser. | [✓ 2026‑10‑16](https://steel.dev/) |
 | [TinyFish](https://www.tinyfish.ai/) | [TinyFish](https://www.tinyfish.ai/) | web | Browser-agent API for executing web tasks and extracting structured results. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
 

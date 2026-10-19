@@ -63143,5 +63143,78 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Starizon AI",
+    "kind": "product",
+    "url": "https://starizon.ai",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Chrome side-panel agent that researches across tabs, bookmarks and a local knowledge base, and hands click-and-type tasks on signed-in sites to its Agent S6 browser agent, with replays, schedules and page monitors.",
+    "scope": "core",
+    "verify_terms": [
+      "Starizon"
+    ],
+    "notes": "The terms of service name Starizon Ltd as the provider of the website, browser extension and related services. Agent S6 navigates, clicks, types and fills in forms in the browser session the user is already signed in to; it stops for confirmations, sign-ins, choices between options and pages it cannot get past, and actions that cannot be undone, such as submitting or paying, wait for the user. Chat history, the Knowledge Base and Spaces are stored in the browser profile, while prompts and task context, including page screenshots when browser actions need them, go to the chosen model service or to the user's own API key. The about page claims over 70% on Online-Mind2Web with visual understanding and DOM preprocessing; that score, reliability and pricing terms are publisher statements and were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://starizon.ai/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://starizon.ai/features/agent",
+        "sha256": "4bb9d255cd816e247f3000304de1728b305a05ac28a970abe14097dffd58a5cc",
+        "retrieved_at": "2026-10-19T08:45:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://starizon.ai/tos",
+        "sha256": "a1b5d42405ba8cf8a89fdeb8c9aef27dc9866733161535a3442e6b7525c4a672",
+        "retrieved_at": "2026-10-19T08:45:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://starizon.ai/about",
+        "sha256": "f91e22f3ccdcef49cdd3204fcc1b3afd6e684f00562d5c0334ed53e1b2f1aa98",
+        "retrieved_at": "2026-10-19T08:45:05Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "62b7f69b7939fda71adc8093be0065172e72d7cfd5c7d4e2d8b616aabf969a5e",
+    "reviewed_at": "2026-10-19T08:45:27Z"
   }
 ]

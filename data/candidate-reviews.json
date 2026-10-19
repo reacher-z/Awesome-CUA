@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0156fea8e631601aa2f7",
+    "url": "https://openai.com/research/webgpt",
+    "decision": "alias",
+    "target_id": "arxiv:2112.09332",
+    "reason": "OpenAI's publication page for WebGPT, now served at openai.com/index/webgpt/; it summarizes the indexed arXiv paper 2112.09332 and links it as the paper."
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (189)](#papers)
 
 ## Benchmarks
 
@@ -141,6 +141,7 @@
 | 2026‑08‑09 | [Not an A11y: How Android Accessibility Exposes Mobile AI Agents to Indirect Prompt Injection](https://arxiv.org/abs/2608.08939) | android | Demonstrates that unsanitized Android accessibility tree metadata exposes mobile GUI agents to stealthy indirect prompt injection attacks. |
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |
 | 2026‑08‑06 | [The Next Screenshot Knows: Gated Hindsight Distillation for Mobile GUI Agents](https://arxiv.org/abs/2608.06065) | android | Gated Hindsight Distillation gives a teacher access to the next screenshot during training while the student sees only the available trajectory prefix. Distillation is applied when hindsight repairs a student failure, and the resulting policies are evaluated on Android tasks. |
+| 2026‑07‑31 | [Alignment Is Local: A Paired Diagnostic for GUI Agents under User-Side Persuasion](https://arxiv.org/abs/2607.29199) | android | Introduces AXIS, pairing 43 screen-grounded harmful mobile cases and 23 benign controls with single-turn probes and four-turn escalation chains to test how prompt-level GUI-agent guardrails erode under user persuasion. |
 | 2026‑07‑20 | [SEE: Structure-aware Exploring & Exploiting for Long-horizon GUI Agent Trajectory Synthesis](https://arxiv.org/abs/2607.18046) | unspecified | Introduces SEE, which first explores mobile interfaces to build a screen-and-element transition graph, then composes task trajectories through graph planning and controlled sampling. It studies coverage, loop avoidance, and transfer after training agents on the generated sequences. |
 | 2026‑07‑16 | [HyMobileAgent: Data-Environment Co-Scaling for Efficient GUI Agents](https://arxiv.org/abs/2607.14548) | unspecified | Combines GUI perception data, instructional videos, real and simulated devices, and planning with reflection to develop a mobile agent. |
 | 2026‑07‑14 | [KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill](https://arxiv.org/abs/2607.12625) | desktop, android, ios, harmonyos, windows | KnowAct-GUIClaw combines a host planner with pluggable GUI subagents, attributable experience memory and an evolving skill library. It uses user profiles and feedback for task decomposition and evaluates transfer across Android, iOS, HarmonyOS and Windows. |

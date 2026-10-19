@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Alignment Is Local: A Paired Diagnostic for GUI Agents under User-Side Persuasion",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.29199",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Introduces AXIS, pairing 43 screen-grounded harmful mobile cases and 23 benign controls with single-turn probes and four-turn escalation chains to test how prompt-level GUI-agent guardrails erode under user persuasion.",
+    "verify_terms": [
+      "Alignment Is Local"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.29199v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "In the v1 full text, cases were captured on researcher-owned devices via ADB, each pairing a screenshot with a UI-automator hierarchy; this Android tooling is the basis for the android environment. 172 independent probes and 86 four-turn chains are evaluated on Qwen, Claude and GPT agents with and without a one-line guardrail. The threat model is the user's own utterances, with no environment injection. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.29199v1",
+        "sha256": "09d083c7b5abe2d801681242280fbbad63ebf12be30ef6d54daf0637b4a8932d",
+        "retrieved_at": "2026-10-19T08:36:35Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML threat model, corpus construction and probe-count sections. No code execution or result reproduction.",
+    "reviewed_sha256": "5f5e425a537e35e1815594bee892eddc8e353bdac96ef0113b4370c4916ca2a0",
+    "reviewed_at": "2026-10-19T08:43:39Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -206,6 +206,7 @@
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |
 | 2026‑08‑06 | [StepReflect: Structured UI Transition Reflection for Mobile GUI Agents](https://arxiv.org/abs/2608.05587) | android | StepReflect predicts structured per-action reflections from transition specifications and paired visual evidence. The paper distinguishes offline transition-label accuracy from online task success when the reflection model is integrated into mobile agents. |
 | 2026‑08‑06 | [The Next Screenshot Knows: Gated Hindsight Distillation for Mobile GUI Agents](https://arxiv.org/abs/2608.06065) | android | Gated Hindsight Distillation gives a teacher access to the next screenshot during training while the student sees only the available trajectory prefix. Distillation is applied when hindsight repairs a student failure, and the resulting policies are evaluated on Android tasks. |
+| 2026‑07‑31 | [Alignment Is Local: A Paired Diagnostic for GUI Agents under User-Side Persuasion](https://arxiv.org/abs/2607.29199) | android | Introduces AXIS, pairing 43 screen-grounded harmful mobile cases and 23 benign controls with single-turn probes and four-turn escalation chains to test how prompt-level GUI-agent guardrails erode under user persuasion. |
 | 2026‑07‑27 | [Scaling GUI Agents with Visual State Transitions](https://arxiv.org/abs/2607.24112) | desktop, android | Introduces State Transition Pretraining, which jointly learns to infer actions from GUI changes and predict future states from current screens and actions. Subsequent instruction-trajectory fine-tuning tests whether these representations transfer to desktop and mobile agent tasks. |
 | 2026‑07‑14 | [KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill](https://arxiv.org/abs/2607.12625) | desktop, android, ios, harmonyos, windows | KnowAct-GUIClaw combines a host planner with pluggable GUI subagents, attributable experience memory and an evolving skill library. It uses user profiles and feedback for task decomposition and evaluates transfer across Android, iOS, HarmonyOS and Windows. |
 | 2026‑06‑30 | [Xiaomi-GUI-0 Technical Report](https://arxiv.org/abs/2606.31410) | android | Describes a mobile GUI agent trained through real-device interaction, corrected failure trajectories, supervised learning, and reinforcement learning. |

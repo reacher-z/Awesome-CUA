@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:955ed52bd98ae8a5e909",
+    "url": "https://glama.ai/blog/2024-10-22-automate-computer-using-claude",
+    "decision": "out_of_scope",
+    "reason": "An October 2024 Glama blog post by Frank Fiegel (punkpeye) that shows how to start Anthropic's computer-use demo Docker container, tries one Hacker News browsing prompt, and lists community demos, limitations and alternatives. It is a setup guide for the already-curated Claude Computer Use (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:38:08Z",
+    "evidence": {
+      "url": "https://glama.ai/blog/2024-10-22-automate-computer-using-claude",
+      "sha256": "02f7f32e03dd1764232a3fb81283a27749fdcbe54669853e43e96765a79ccd6e",
+      "retrieved_at": "2026-10-19T06:18:02Z"
+    }
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9313ab9fccbb410f7121",
+    "url": "https://guide-bench.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2603.25864",
+    "reason": "Project website for the indexed GUIDE benchmark paper, with the same title and seven authors and a link to arXiv 2603.25864."
   }
 ]

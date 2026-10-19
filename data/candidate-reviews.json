@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:3b3b5ef63f79f4e111ad",
+    "url": "https://openai.com/index/cua-preview",
+    "decision": "not_a_resource",
+    "reason": "Dead link labeled 'OpenAI CUA (Operator)' in a discovery list: the path redirects to /index/cua-preview/, which returns OpenAI's HTTP 404 page; no further redirect, and the Wayback CDX query for the path is empty. OpenAI announced the Computer-Using Agent and Operator at /index/computer-using-agent/ and /index/introducing-operator/."
   }
 ]

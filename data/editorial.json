@@ -63143,5 +63143,51 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:6e436831f76a1337ea8b",
+    "name": "OpenWebAgent: An Open Toolkit to Enable Web Agents on Large Language Models",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2024.acl-demos.8/",
+    "summary": "Presents OpenWebAgent, a web automation toolkit that pairs a Chrome plugin with an HTML parser and an action generation module, in a modular framework where developers plug in LLMs or LMMs.",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "verify_terms": [
+      "OpenWebAgent"
+    ],
+    "evidence_urls": [
+      "https://aclanthology.org/2024.acl-demos.8/"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.doi",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.publisher",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "environments",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "notes": "The annotation was reviewed against the ACL Anthology landing page and the proceedings PDF. The PDF exceeds the catalog's 10 MB fetch budget, so only the landing page is a retained receipt. Experiments have not been independently reproduced. The abstract states that the framework, Chrome plugin and demo video are published in an author GitHub repository, which was not part of this paper review.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "60eb2a2b9a61a6b3c74411d63dbd198dc53f8c818d230d1ab2c4e0fd54e41be9",
+    "reviewed_at": "2026-10-19T06:10:50Z"
   }
 ]

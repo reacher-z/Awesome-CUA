@@ -63143,5 +63143,63 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:a998ab1efc741ba69d82",
+    "name": "RealWeb: A Benchmark for Universal Instruction Following in Realistic Web Services Navigation",
+    "kind": "paper",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10707522",
+    "summary": "Introduces RealWeb, a Chinese benchmark of 11,739 instructions on 40 real websites with annotated screenshots and slot trees, plus a baseline that detects page regions, parses instructions and acts on the pages.",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "screen-understanding"
+    ],
+    "verify_terms": [
+      "RealWeb"
+    ],
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.1109/icws62655.2024.00056/transform/application/x-bibtex"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.doi",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.publisher",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "kind",
+      "name"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://gitee.com/plabrolin/real-web/raw/55266af1e965afde416d37283fe98e90c696fc16/README.md",
+        "retrieved_at": "2026-10-19T06:24:21Z",
+        "sha256": "1f2e8be950b20e67480ca014a552c17a52a6f73b5121b883c1aed84600e13b21"
+      }
+    ],
+    "notes": "The annotation was reviewed against the IEEE Xplore abstract page, the Crossref-deposited citation and the authors' Gitee repository README. Experiments have not been independently reproduced. The abstract counts 110 pages and names the baseline WeServe, reporting a 68.61% success rate; the README counts 119 pages across 15 domains. At the inspected commit the repository's Codes folder holds only a placeholder file, while the dataset files are present. No arXiv version was found.",
+    "editorial_reviewed": true,
+    "read_basis": "Read the IEEE Xplore abstract page (title, abstract, authors, DOI, pages 342-351, ICWS 2024), the Crossref BibTeX deposit, the Crossref works record, and the Gitee README and recursive tree at commit 55266af1. The IEEE page bytes change on every request, so the stable Crossref citation is the retained primary receipt. No data download or result reproduction.",
+    "reviewed_sha256": "6d6552f9ae1a59136e0570819bb7537128f1d65cd6fef30e694d10693e8f165e",
+    "reviewed_at": "2026-10-19T06:25:33Z"
   }
 ]

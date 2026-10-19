@@ -63143,5 +63143,178 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Odysseys",
+    "kind": "benchmark",
+    "url": "https://github.com/ljang0/Odysseys",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "web-navigation"
+    ],
+    "summary": "200 long-horizon web tasks drawn from real browsing sessions, run on the live Internet in Chrome through the OSWorld runner and scored per rubric item by an LLM judge over the trajectory's screenshots and actions.",
+    "scope": "core",
+    "verify_terms": [
+      "Odysseys"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/README.md"
+    ],
+    "documented_by": [
+      "2604.24964"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.leaderboard_url"
+    ],
+    "notes": "Each task has a SHA-1 ID, a prompt, a starting URL, a difficulty level, a reference step count, numbered rubric items with requirement and verification text, and SimilarWeb category tags. The README runs tasks with the OSWorld runner (Chrome in an Ubuntu VM, 100-step budget) after converting them with convert_odysseys_to_osworld.py, whose OSWorld evaluator is a placeholder; scoring is done afterwards by run_full_trajectory_per_rubric.py, which asks an LLM judge (by default gemini-3.1-flash-lite-preview, the model the README uses, or an OpenAI-compatible model) whether any step satisfies each rubric item. Reported metrics are the averaged rubric score, the perfect rate and trajectory efficiency. The README says the starting URL is always Google, but 70 of the 200 tasks in odysseys.json start at another site, and the converter opens each task's own URL. Tasks run on live websites, so results can drift. README results are paper figures and were not reproduced.",
+    "details": {
+      "repository_revision": "837814633ef948479abb3d142458f0acdb73fa65",
+      "leaderboard_url": "https://odysseys-website.pages.dev/leaderboard.html",
+      "availability": "Public task file, pre-converted OSWorld examples, conversion and LLM-judge scoring scripts; running tasks needs a separate OSWorld setup and judge-model API access.",
+      "benchmark_protocol": {
+        "focus": [
+          "long-horizon web tasks from real browsing sessions"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "screenshots"
+        ],
+        "actions": [
+          "OSWorld computer actions in Chrome"
+        ],
+        "evaluation": "Post-hoc rubric scoring: an LLM judge marks each rubric item satisfied if any step's screenshot and action satisfy it; metrics are mean rubric score, perfect rate (all items satisfied) and trajectory efficiency.",
+        "counts": [
+          {
+            "value": 200,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "data/odysseys.json at 8378146",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json"
+          },
+          {
+            "value": 45,
+            "unit": "easy tasks",
+            "qualifier": "exact",
+            "population": "data/odysseys.json at 8378146",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json"
+          },
+          {
+            "value": 46,
+            "unit": "medium tasks",
+            "qualifier": "exact",
+            "population": "data/odysseys.json at 8378146",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json"
+          },
+          {
+            "value": 109,
+            "unit": "hard tasks",
+            "qualifier": "exact",
+            "population": "data/odysseys.json at 8378146",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json"
+          },
+          {
+            "value": 1225,
+            "unit": "rubric items",
+            "qualifier": "exact",
+            "population": "data/odysseys.json at 8378146",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json"
+          }
+        ],
+        "notes": "Counts were computed from the pinned task file and match the README's 200 tasks split into 45 easy, 46 medium and 109 hard. Difficulty follows reference step count and domain spread. The observation and action spaces are those of the OSWorld agent used; the paper setup uses a 100-step budget.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/README.md",
+          "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json",
+          "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/scripts/python/convert_odysseys_to_osworld.py",
+          "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/scripts/python/run_full_trajectory_per_rubric.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/ljang0/Odysseys/git/trees/837814633ef948479abb3d142458f0acdb73fa65?recursive=1",
+        "sha256": "c045c5525b370808035bffe95869fca74950580053f53bffd3563b801e5f451b",
+        "retrieved_at": "2026-10-19T07:10:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json",
+        "sha256": "0bb7081d740eb6237b72e7e33524cc9489e769c5e236ec54879a8eb06ebc48e0",
+        "retrieved_at": "2026-10-19T07:10:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/scripts/python/convert_odysseys_to_osworld.py",
+        "sha256": "d80d1edac5e9245225722f8ca5566b3b5e0346a60efe7f595918d60177d48bbc",
+        "retrieved_at": "2026-10-19T07:10:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/scripts/python/run_full_trajectory_per_rubric.py",
+        "sha256": "736c3c20a6d1d00d6fa1ffb34ae2b7c7835618bea0fe735bab99d036ee26983f",
+        "retrieved_at": "2026-10-19T07:10:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/LICENSE",
+        "sha256": "e58e9591671256eb4c7a45959614e70e9416ceda7b89d2120f9ade55060ed13b",
+        "retrieved_at": "2026-10-19T07:10:56Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ffbbc15712ee94ec6718756992e7fda72c0632b259e73db7e93dd2d34674dd80",
+    "reviewed_at": "2026-10-19T07:11:32Z"
   }
 ]

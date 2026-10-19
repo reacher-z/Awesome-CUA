@@ -15,6 +15,7 @@ LEADERBOARDS = {
     "github:likaixin2000/screenspot-pro-gui-grounding": "https://gui-agent.github.io/grounding-leaderboard",
     "github:imeanai/webcanvas": "https://github.com/iMeanAI/WebCanvas/blob/main/Mind2web-live_Leaderboard.md",
     "github:jetastra/macagentbench": "https://jetastra.github.io/MacAgentBench/",
+    "github:ljang0/odysseys": "https://odysseys-website.pages.dev/leaderboard.html",
     "github:mcgill-nlp/agent-reward-bench": "https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard",
     "github:mcgill-nlp/safearena": "https://huggingface.co/spaces/McGill-NLP/safearena-leaderboard",
     "github:osu-nlp-group/mind2web-2": "https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard",

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-99 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+100 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
 
 ## Benchmarks
 
@@ -14,6 +14,7 @@
 | [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) | web | — | — | code MIT | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md) |
 | [MMInA](https://github.com/shulin16/MMInA) | web | [2404.09992](https://arxiv.org/abs/2404.09992) (2024) | — | — | Multimodal web tasks in a WebArena-based environment that chain from 1 to 10 hops across sites such as a shopping store and Wikipedia, testing long-chain reasoning. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md) |
 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | [25 task-definition records](https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md) | — | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
+| [Odysseys](https://github.com/ljang0/Odysseys) · [leaderboard](https://odysseys-website.pages.dev/leaderboard.html) | web | [2604.24964](https://arxiv.org/abs/2604.24964) (2026) | [200 tasks](https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json) · [45 easy tasks](https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json) · [46 medium tasks](https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json) · [109 hard tasks](https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json) · [1,225 rubric items](https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/data/odysseys.json) | code MIT | 200 long-horizon web tasks drawn from real browsing sessions, run on the live Internet in Chrome through the OSWorld runner and scored per rubric item by an LLM judge over the trajectory's screenshots and actions. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/ljang0/Odysseys/837814633ef948479abb3d142458f0acdb73fa65/README.md) |
 | [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
 
 ## Datasets

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-621 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+622 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (441)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (442)](#papers)
 
 ## Benchmarks
 
@@ -295,6 +295,7 @@
 | 2026‑08‑25 | [WebMCP-Phalanx: Enforcing and Characterizing Trust Boundaries for Browser-Integrated LLM Agents](https://arxiv.org/abs/2608.24017) | web | Proposes WebMCP-Phalanx, a browser-integrated runtime that binds page-exposed tools to their registering principals and separates content inspection from privileged invocation. It studies lifecycle and prompt-injection attacks, including a timing bypass that motivates validating all visible metadata before tool use. |
 | 2026‑08‑22 | [Lexical Coupling in GUI Element Grounding: Sentence Embeddings Track Labels across Mobile and Web](https://arxiv.org/abs/2608.21794) | web, cross-platform | Studies whether text-embedding GUI grounding scores reflect semantic matching or recovery of visible labels. Same-screen ranking comparisons with lexical baselines expose differences between deployable fusion, oracle selection, and performance on label-poor targets. |
 | 2026‑08‑22 | [Training Needs Trustworthy Worlds: Verified Synthetic Web Environments for Agent Learning](https://arxiv.org/abs/2608.21898) | web | Builds synthetic websites with verified navigation, backend state, and feasible tasks to provide reliable supervision for web-agent training. |
+| 2026‑08‑18 | [Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements](https://arxiv.org/abs/2608.17310) | web | Agentic ESOpt fine-tunes all parameters of LLM agents with evolution strategies, using reward-weighted perturbation updates at inference-level GPU memory; evaluated on WebArena-Lite and heuristic design. |
 | 2026‑08‑18 | [ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents](https://arxiv.org/abs/2608.18307) | web | ComponentBench evaluates short interactions with canonical web UI components using verified tasks and matched human reference trajectories. Its diagnostic pipeline compares observation/action representations and analyzes structural difficulty, failure patterns and interaction efficiency. |
 | 2026‑08‑18 | [Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents](https://arxiv.org/abs/2608.17319) | web | Combines a browser execution framework, recovery-oriented supervision, and online reinforcement learning, with a bilingual live-web task benchmark. |
 | 2026‑08‑16 | [Improving LLM-based Autonomous Web Agents with Filtering](https://arxiv.org/abs/2609.27770) | web | Trains HTML-element relevance filters on Mind2Web trajectories and transfers them to WebArena to reduce irrelevant browser context. It also evaluates a zero-shot ColBERT retriever and documents baseline web-agent failure modes. |

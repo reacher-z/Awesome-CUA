@@ -63143,5 +63143,43 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.17310",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "long-horizon"
+    ],
+    "summary": "Agentic ESOpt fine-tunes all parameters of LLM agents with evolution strategies, using reward-weighted perturbation updates at inference-level GPU memory; evaluated on WebArena-Lite and heuristic design.",
+    "verify_terms": [
+      "Agentic ESOpt"
+    ],
+    "notes": "Adjacent: a general method for fine-tuning LLM agents. Its web experiment (Section 5.2) runs Qwen3.5-27B on WebArena-Lite with WebRL-style observations and id-based actions; Sudoku, math, DocVQA and heuristic-design settings involve no GUI. Code is linked at github.com/zz1358m/Agentic-ESOpt. Reviewed against the v2 abstract and full text; results were not reproduced.",
+    "scope": "adjacent",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.17310v2"
+    ],
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.17310v2",
+        "sha256": "1fe9084ba3bc9db88d907e13519d7feb27d539027dd660a4d53b4aa4a4d1bbc7",
+        "retrieved_at": "2026-10-19T08:41:21Z"
+      }
+    ],
+    "reviewed_sha256": "b523cabd7ac152e3d13e2b24c2003c4f7ec7530b9f456db109391ce34f4575e5",
+    "reviewed_at": "2026-10-19T08:41:23Z"
   }
 ]

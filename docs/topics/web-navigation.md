@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-292 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+293 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (209)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (210)](#papers)
 
 ## Benchmarks
 
@@ -174,6 +174,7 @@ All entries in this section: web.
 | 2026‑08‑31 | [When and What to Teach: Budget-Aware Online Adaptation for Web Agents](https://arxiv.org/abs/2609.05513) | web | Proposes an online teaching framework that decides which web-agent episodes warrant a stronger teacher and which trajectory turns merit training. A solvability gate and score-guided trimming aim to preserve first-attempt performance while reducing teaching and training costs. |
 | 2026‑08‑29 | [Learning Simple Test-Time Environments for LLM Web Agents](https://arxiv.org/abs/2608.29305) | web | Introduces Test-Time Environment Decomposition, which uses trial interaction to break complex web observations into simpler modules. A label-free adaptation procedure learns from these sub-environments and studies whether their gains compose in full web tasks. |
 | 2026‑08‑25 | [BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes](https://arxiv.org/abs/2608.24848) | web | Introduces BrowserForge, which combines broad website sourcing, parallel browser sandboxes, and task-proposer/solver interaction to collect verified web trajectories. The pipeline uses page structure during synthesis but trains a policy that acts from screenshots. |
+| 2026‑08‑18 | [Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements](https://arxiv.org/abs/2608.17310) | web | Agentic ESOpt fine-tunes all parameters of LLM agents with evolution strategies, using reward-weighted perturbation updates at inference-level GPU memory; evaluated on WebArena-Lite and heuristic design. |
 | 2026‑08‑18 | [Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents](https://arxiv.org/abs/2608.17319) | web | Combines a browser execution framework, recovery-oriented supervision, and online reinforcement learning, with a bilingual live-web task benchmark. |
 | 2026‑08‑16 | [Improving LLM-based Autonomous Web Agents with Filtering](https://arxiv.org/abs/2609.27770) | web | Trains HTML-element relevance filters on Mind2Web trajectories and transfers them to WebArena to reduce irrelevant browser context. It also evaluates a zero-shot ColBERT retriever and documents baseline web-agent failure modes. |
 | 2026‑08‑12 | [SynWeaver: Website-Prior Task and Trajectory Co-Synthesis for Web Agents](https://arxiv.org/abs/2608.12429) | web | SynWeaver explores a website to build a map of page states and executable interactions, then learns website priors for task proposals. Joint task/trajectory synthesis revises inconsistent pairs and verifies or repairs the resulting supervision. |

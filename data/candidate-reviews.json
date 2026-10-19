@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ef89688a87b6eb6b5cf6",
+    "url": "https://openreview.net/forum?id=EaSKCja3rr",
+    "decision": "alias",
+    "target_id": "arxiv:2404.08860",
+    "reason": "OpenReview forum of the SIGIR 2024 Gen-IR workshop edition of the indexed mobile how-to query reranking paper; same title and the same three authors, with Yi Zhang listed second and Jeshwanth Bheemanpally third (the arXiv order is reversed)."
   }
 ]

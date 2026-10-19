@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5b584af76ba29db3af32",
+    "url": "https://langchain-ai.github.io/langgraph/tutorials/web-navigation/web_voyager",
+    "decision": "out_of_scope",
+    "reason": "This LangGraph documentation address held a tutorial notebook that rebuilt the WebVoyager browser agent on LangGraph; it now only redirects to the generic LangGraph overview, and the notebook's copy in langchain-ai/langgraph says it was moved and is kept for archival purposes. It is a retired framework tutorial, not a released agent, benchmark or dataset.",
+    "reviewed_at": "2026-10-19T06:39:03Z",
+    "evidence": {
+      "url": "https://langchain-ai.github.io/langgraph/tutorials/web-navigation/web_voyager",
+      "sha256": "796557683a5f506f67353225e7dc20fd5f395f87ef99be62a71f965613db9ff5",
+      "retrieved_at": "2026-10-19T06:28:49Z"
+    }
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:6ce568c6745133dc42f0",
+    "url": "https://the-agent-company.com",
+    "decision": "alias",
+    "target_id": "github:theagentcompany/theagentcompany",
+    "reason": "Project website and leaderboard for the indexed TheAgentCompany benchmark repository, which names it as its homepage."
   }
 ]

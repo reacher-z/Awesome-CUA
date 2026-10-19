@@ -3415,7 +3415,44 @@
     "reviewed_at": "2026-10-16T10:50:15Z",
     "documented_by": [
       "2412.16256"
-    ]
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.weights"
+        ],
+        "url": "https://raw.githubusercontent.com/AriaUI/Aria-UI/2f87eb7a9b8b910c9f709ac2fe7725afd6799fad/README.md",
+        "sha256": "a2a3c5ad115e4e2109b56686c9e0b073bcfec6d9f052a58bc92683af44933480",
+        "retrieved_at": "2026-10-19T06:15:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.weights"
+        ],
+        "url": "https://huggingface.co/Aria-UI/Aria-UI-base/raw/3de27f50607b45cb7a2534bcd85adeba96df83a0/README.md",
+        "sha256": "0f77609f345b33a88062adde74352038c0704e76de7ee7b32430fb429a0892ed",
+        "retrieved_at": "2026-10-19T06:15:30Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": {
+          "declared": "apache-2.0",
+          "url": "https://huggingface.co/Aria-UI/Aria-UI-base/raw/3de27f50607b45cb7a2534bcd85adeba96df83a0/README.md",
+          "retrieved_at": "2026-10-19T06:15:30Z",
+          "basis": "The README at commit 2f87eb7 links the Aria-UI weights as Aria-UI/Aria-UI-base, whose model card at Hub revision 3de27f5 declares license: apache-2.0 in its metadata header. This covers those weights only; the GitHub repository has no license file, so code stays unknown, and the Aria-Base-8K base model and training data keep their own terms."
+        },
+        "reason": "The README at commit 2f87eb7 links the Aria-UI weights as Aria-UI/Aria-UI-base, whose model card at Hub revision 3de27f5 declares license: apache-2.0 in its metadata header. This covers those weights only; the GitHub repository has no license file, so code stays unknown, and the Aria-Base-8K base model and training data keep their own terms.",
+        "evidence_urls": [
+          "https://huggingface.co/Aria-UI/Aria-UI-base/raw/3de27f50607b45cb7a2534bcd85adeba96df83a0/README.md",
+          "https://raw.githubusercontent.com/AriaUI/Aria-UI/2f87eb7a9b8b910c9f709ac2fe7725afd6799fad/README.md"
+        ]
+      }
+    }
   },
   {
     "name": "Ferret-UI",

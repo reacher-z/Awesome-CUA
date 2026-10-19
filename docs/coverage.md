@@ -1,6 +1,6 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-19T06:15:30Z**. Generated from committed source receipts.
 
 - 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
@@ -144,7 +144,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 | --- | ---: |
 | code | 182 |
 | data | 61 |
-| weights | 56 |
+| weights | 57 |
 | document | 0 |
 
 A code license never fills a data or weights field. Hub declarations are publisher metadata, not independently audited legal conclusions. Missing values remain null.

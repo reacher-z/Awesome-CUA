@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:543eb835feb4c59741cc",
+    "url": "https://deta.surf",
+    "decision": "out_of_scope",
+    "reason": "Deta Surf is an open-source AI notebook for macOS, Windows and Linux that collects web pages, files, videos and PDFs into notebooks and generates notes and answers from them with a chosen language model. No agent operates websites or applications for the user, so it is a research and note-taking tool outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:36:45Z",
+    "evidence": {
+      "url": "https://deta.surf",
+      "sha256": "9e246b1569ae3673eee2cad51d9a51d652570d21f2d2a13e222553e11dee8d1f",
+      "retrieved_at": "2026-10-19T06:14:34Z"
+    }
   }
 ]

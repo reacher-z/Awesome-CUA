@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:92b2d396e6293e47da6a",
+    "url": "https://modelscope.cn/models/iic/GUI-Owl-7B",
+    "decision": "alias",
+    "target_id": "url:aeb32973694f91ad9920",
+    "reason": "ModelScope copy of the indexed GUI-Owl 7B checkpoint, linked beside it in the Mobile-Agent README; all five safetensors shards have the same SHA-256 digests as on Hugging Face."
   }
 ]

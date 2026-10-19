@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ed048de0531541a28cb4",
+    "url": "https://o-mega.ai/articles/agentic-computer-use-the-ultimate-deep-guide-2026",
+    "decision": "out_of_scope",
+    "reason": "A long O-mega company article, first published in December 2025 and revised in September 2026, that surveys computer-use agents through benchmark scores, a scored top-10 list that includes O-mega's own platform, pricing, security and legal news, and ends with a sign-up pitch. It is vendor commentary with no agent, dataset, benchmark, method or tool of its own.",
+    "reviewed_at": "2026-10-19T06:40:44Z",
+    "evidence": {
+      "url": "https://o-mega.ai/articles/agentic-computer-use-the-ultimate-deep-guide-2026",
+      "sha256": "363428941e6ed2db7107c4ce668df7aad458c889ec27e826e1c6f34a7414f2a7",
+      "retrieved_at": "2026-10-19T06:30:43Z"
+    }
   }
 ]

@@ -63143,5 +63143,223 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "MirrorGuard code",
+    "kind": "framework",
+    "url": "https://github.com/WhitzardAgent/MirrorGuard",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "data-generation"
+    ],
+    "summary": "MirrorGuard pipeline that synthesizes risky and benign computer-use trajectories in a text-based GUI simulator, builds unsafe-to-safe thought corrections for training, and plugs the corrector into OSWorld-style agents.",
+    "scope": "core",
+    "verify_terms": [
+      "MirrorGuard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/README.md"
+    ],
+    "documented_by": [
+      "2601.12822"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Official WhitzardAgent code for the MirrorGuard paper. MirrorWorld task generation (task_generation/) and an LLM-driven GUI simulator (simulator.py) produce text-only trajectories; dataset_generation/safe_thought.py rewrites unsafe thoughts and prepare_dataset.py packages ShareGPT-style training files. The repository includes dataset_generation/train.jsonl (about 86 MB) and test.jsonl (2,439 lines, of which 16 are not valid standalone JSON), each holding a system prompt and a conversation. Integration examples cover replacement steering for a ReAct agent, prefilling steering for UI-TARS, and an Owl agent reference, written as OSWorld-style agent files; examples/shared/correction_runtime.py calls the deployed corrector through an OpenAI-compatible endpoint with the screenshot, history and original thought. The released MirrorGuard VLM is on Hugging Face. Unsafe-rate and OSWorld figures in the README are paper results and were not reproduced; code was read, not run.",
+    "details": {
+      "repository_revision": "9c5fb812a126493c75b6adda757af3b680a24708",
+      "availability": "Public synthesis, correction and dataset-preparation code with bundled train/test JSONL files and agent integration examples; the trained corrector is released separately on Hugging Face."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/WhitzardAgent/MirrorGuard/git/trees/9c5fb812a126493c75b6adda757af3b680a24708?recursive=1",
+        "sha256": "211b758a19e3b00b79b57bdc8f3f649687aa955195f5714be25693ed693ceb0f",
+        "retrieved_at": "2026-10-19T06:50:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/dataset_generation/test.jsonl",
+        "sha256": "4c9079f876657bd3c2ff7d43629ab5e8d92eb14fa5132e422c28ff73e646c087",
+        "retrieved_at": "2026-10-19T06:50:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/examples/shared/correction_runtime.py",
+        "sha256": "29a8e430e061f53a4ed958f1f48a7ebc5e6a5d7792cb65e423716da1946a4e23",
+        "retrieved_at": "2026-10-19T06:50:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/simulator.py",
+        "sha256": "9554149045ab49a83727510e159d7cea448ab97ba1d4853aa632b6796e4b5dbf",
+        "retrieved_at": "2026-10-19T06:50:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/LICENSE",
+        "sha256": "8bb263819f9a6ee87b8c7bc6d058c3c4b1d338835006d5b5089f53560c2bc770",
+        "retrieved_at": "2026-10-19T06:50:27Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "90ab7463e9d9c4d6c5e3b60acf385486ca1d9f09455aea0450b167406cfdf728",
+    "reviewed_at": "2026-10-19T06:51:26Z"
+  },
+  {
+    "id": "url:5f4264af210fb2686870",
+    "name": "MirrorGuard checkpoint",
+    "kind": "model",
+    "url": "https://huggingface.co/WhitzardAgent/MirrorGuard",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security"
+    ],
+    "summary": "Qwen2.5-VL-7B-Instruct fine-tune that reads an instruction, history, screenshot and a computer-use agent's thought, returns the thought unchanged when safe and rewrites or refuses it when risky.",
+    "scope": "core",
+    "verify_terms": [
+      "MirrorGuard"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/WhitzardAgent/MirrorGuard/raw/ea5025874aa1d8a32cabec9d2c05b5634db34c14/README.md"
+    ],
+    "documented_by": [
+      "2601.12822"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "variant_of",
+        "target_id": "github:whitzardagent/mirrorguard",
+        "evidence_url": "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.base_model",
+      "details.training_data_note",
+      "licenses.weights"
+    ],
+    "notes": "The card gives the system prompt, a vLLM serving command and training settings (LLaMA-Factory 'full' tags, 6 epochs, learning rate 1e-5). The WhitzardAgent/MirrorGuard code README describes this checkpoint as the final VLM trained on reasoning-correction data from its MirrorWorld pipeline and deploys it as a runtime corrector in its agent examples. The card's GitHub link (github.com/bmz-q-q/MirrorGuard) returns 404. Weights were not downloaded or run; the manifest lists four Safetensors shards and an index.",
+    "details": {
+      "hub_id": "WhitzardAgent/MirrorGuard",
+      "hub_revision": "ea5025874aa1d8a32cabec9d2c05b5634db34c14",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/WhitzardAgent/MirrorGuard/tree/ea5025874aa1d8a32cabec9d2c05b5634db34c14",
+      "artifact_type": "model-checkpoint",
+      "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "architecture": "Qwen2_5_VLForConditionalGeneration",
+      "listed_weight_files": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "artifact_inspection": "Hub file manifest, config and card at the pinned revision; weights not downloaded.",
+      "training_data_note": "Card: trained through simulation-based learning from Qwen2.5-VL-7B-Instruct. Code README: fine-tuned on reasoning-correction data produced by the MirrorWorld synthesis and dataset-generation pipeline.",
+      "repository_url": "https://github.com/WhitzardAgent/MirrorGuard"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url",
+          "details.listed_weight_files"
+        ],
+        "url": "https://huggingface.co/api/models/WhitzardAgent/MirrorGuard/revision/ea5025874aa1d8a32cabec9d2c05b5634db34c14",
+        "sha256": "18d2ac4e60be47c04e0fa32dfea16699913196b9ec9bc52a84e889b11aaa0eea",
+        "retrieved_at": "2026-10-19T06:50:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.architecture"
+        ],
+        "url": "https://huggingface.co/WhitzardAgent/MirrorGuard/raw/ea5025874aa1d8a32cabec9d2c05b5634db34c14/config.json",
+        "sha256": "0657beb7641fb2b71666de6760616f429fa4ed39e7b8d8989686ac1a4f2ee1fd",
+        "retrieved_at": "2026-10-19T06:50:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "details.training_data_note",
+          "details.repository_url",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/WhitzardAgent/MirrorGuard/9c5fb812a126493c75b6adda757af3b680a24708/README.md",
+        "sha256": "90ab7463e9d9c4d6c5e3b60acf385486ca1d9f09455aea0450b167406cfdf728",
+        "retrieved_at": "2026-10-19T06:50:26Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "weights": {
+        "value": null,
+        "reason": "The card's metadata declares license 'other' and its License section points to a LICENSE file at github.com/bmz-q-q/MirrorGuard, which returns 404; the MIT license of the WhitzardAgent/MirrorGuard code is not transferred to the weights.",
+        "evidence_urls": [
+          "https://huggingface.co/WhitzardAgent/MirrorGuard/raw/ea5025874aa1d8a32cabec9d2c05b5634db34c14/README.md"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "477c263651059d4926f1bdc24daf09d43514853afd69a2286f7df1ce66743e36",
+    "reviewed_at": "2026-10-19T06:51:26Z"
   }
 ]

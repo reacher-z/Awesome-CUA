@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:fde1d92ed0c758c033c6",
+    "url": "https://ottogrid.ai",
+    "decision": "not_a_resource",
+    "reason": "Lapsed domain of the discontinued Otto table-based research agent product: HTTPS times out and HTTP forwards to a Namecheap parking page; Wayback shows the product page until 2026-01-23 and a disabled deployment (HTTP 402) from 2026-02-18 on."
   }
 ]

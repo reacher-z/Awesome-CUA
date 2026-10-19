@@ -63143,5 +63143,39 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Agent Safety Should Be a Runtime Contract",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.11274",
+    "summary": "Position paper arguing that agent safety should be a runtime contract enforced by the harness, pairing preventive gates with evidence-gated submission, backed by incident, false-completion and trajectory audits.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "safety-security",
+      "observability",
+      "human-in-the-loop"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Agent Safety Should Be a Runtime Contract"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.11274v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3fddd701d26bb721ad950dc2128253276bd50cdf47ce7bba1e9f931428aa8c73",
+    "reviewed_at": "2026-10-19T08:47:23Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent position paper on harness-level safety for autonomous agents in general. Its computer-use content is a trajectory-schema audit of 12 agent systems that includes OpenAI Operator, Anthropic computer use and an OSWorld baseline and scores whether each captures screenshots; most audited systems are coding agents. Reviewed against the v1 abstract and HTML full text; the audits and their supplementary JSON files were not independently reproduced."
   }
 ]

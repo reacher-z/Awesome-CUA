@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
+  "as_of_utc": "2026-10-19T08:47:23Z",
   "total_records": 3178,
-  "curated_records": 1614,
+  "curated_records": 1615,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2841,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1564,
+  "metadata_only_records": 1563,
   "discovery_identifiers": 4242,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
@@ -206,7 +206,7 @@
     "ios": 21,
     "linux": 49,
     "macos": 30,
-    "unspecified": 377,
+    "unspecified": 378,
     "web": 621,
     "windows": 63
   },
@@ -287,7 +287,7 @@
       "ios": 8,
       "linux": 18,
       "macos": 14,
-      "unspecified": 341,
+      "unspecified": 342,
       "web": 441,
       "windows": 37
     },

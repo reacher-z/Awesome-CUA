@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e610860c53fe848970cb",
+    "url": "https://openreview.net/forum?id=zg5is4GJ3R",
+    "decision": "alias",
+    "target_id": "arxiv:2504.00906",
+    "reason": "OpenReview forum of the COLM 2025 edition of the indexed Agent S2 paper; same title and the same six authors in the same order."
   }
 ]

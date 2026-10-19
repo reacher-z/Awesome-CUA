@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0f5968603bc5d1582f01",
+    "url": "https://colmon46.github.io/i2e-bench-leaderboard",
+    "decision": "alias",
+    "target_id": "arxiv:2504.11257",
+    "reason": "Leaderboard page for UI-I2E-Bench, the grounding benchmark introduced by the indexed UI-E2I-Synth paper; the page cites only that paper and now marks itself unmaintained and points to the paper's artifact site."
   }
 ]

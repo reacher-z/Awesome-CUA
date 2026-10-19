@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a2d3395b73f93a9c04aa",
+    "url": "https://osworld-mcp.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2510.24563",
+    "reason": "Project website and leaderboard for the indexed OSWorld-MCP benchmark paper (arXiv 2510.24563)."
   }
 ]

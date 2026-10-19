@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5e9ac65f43e2c369f30c",
+    "url": "https://browsegpt.ai",
+    "decision": "alias",
+    "target_id": "github:danielpquinn/browsegpt",
+    "reason": "Website of the BrowseGPT Chrome extension; it links the danielpquinn/browsegpt source repository, whose README links back to it."
   }
 ]

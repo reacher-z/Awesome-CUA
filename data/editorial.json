@@ -63143,5 +63143,106 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "BrowseGPT",
+    "kind": "agent",
+    "url": "https://github.com/danielpquinn/browsegpt",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Chrome extension with a local Node.js server that lists the visible page's links, buttons and inputs as a numbered outline and asks OpenAI gpt-3.5-turbo for the next CLICK, ENTER_TEXT or NAVIGATE step toward a goal.",
+    "scope": "core",
+    "verify_terms": [
+      "BrowseGPT"
+    ],
+    "notes": "Inspected at commit c86c148e (23 July 2024), the latest commit on the default branch. The content script assigns IDs to visible, in-viewport elements and sends the first 100 outline lines with the goal, URL and up to five previous steps to the server, whose few-shot prompt asks gpt-3.5-turbo for one JSON command with a reason; the extension then calls click(), enters text or changes the location. Each submission runs one step, and elements already acted on are left out of later outlines. The Manifest V3 extension is labelled version 2.0. The browsegpt.ai site and its llms.txt describe Claude Haiku 4.5 as the default model with OpenAI GPT as an option, but the public repository's server calls only the OpenAI API; the Chrome Web Store build was not inspected. The repository has no license file, so the code license is unknown. No code was run.",
+    "details": {
+      "repository_revision": "c86c148ec7862f971fe827e1270684b9c8c41016",
+      "availability": "Public extension and server source with no license file; the published Chrome Web Store build was not inspected."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/danielpquinn/browsegpt/git/trees/c86c148ec7862f971fe827e1270684b9c8c41016?recursive=1",
+        "sha256": "c62774e401dfeeb8345bceb4bce0bbe78bae756ee25617813401828f8052ac29",
+        "retrieved_at": "2026-10-19T07:16:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/danielpquinn/browsegpt/c86c148ec7862f971fe827e1270684b9c8c41016/extension/content.js",
+        "sha256": "3dbf1c8225ca5bdc2d3ab7c5c7678a564ab105d6bda589285aedfe6658fa9ad7",
+        "retrieved_at": "2026-10-19T06:15:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/danielpquinn/browsegpt/c86c148ec7862f971fe827e1270684b9c8c41016/extension/main-vue.js",
+        "sha256": "a64ba7f0038e262163f378df4e320371fc1231a80600883102810abf14c24a3e",
+        "retrieved_at": "2026-10-19T06:15:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/danielpquinn/browsegpt/c86c148ec7862f971fe827e1270684b9c8c41016/server/lib.js",
+        "sha256": "27446dfeb7b4e3f333360b2ec2a9869d258f1c4a2f91a89d054ea4da09dd461c",
+        "retrieved_at": "2026-10-19T06:15:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/danielpquinn/browsegpt/c86c148ec7862f971fe827e1270684b9c8c41016/extension/manifest.json",
+        "sha256": "ecb5c03ffde657405ed8ab4098430e4a9f33df21b5ded6be56c843d2940f8f80",
+        "retrieved_at": "2026-10-19T06:15:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://browsegpt.ai/llms.txt",
+        "sha256": "38cff1cc93e9fc68fa63038d9594027848d741111749cbaa47e18f98cb3c0995",
+        "retrieved_at": "2026-10-19T06:15:41Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b9fb78e90668bcdf178ed8370837dff0359b2841e659e3b977c8125cfcf50b74",
+    "reviewed_at": "2026-10-19T06:16:15Z"
   }
 ]

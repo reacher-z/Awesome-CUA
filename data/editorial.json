@@ -63143,5 +63143,121 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "ScreenAgent Web Client",
+    "kind": "agent",
+    "url": "https://github.com/niuzaisheng/ScreenAgentWebClient",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "self-reflection",
+      "human-in-the-loop"
+    ],
+    "summary": "Browser noVNC client for ScreenAgent's plan, act and reflect loop: GPT-4o, GPT-4V or a self-hosted OpenAI-compatible vision model reads a remote desktop screenshot and proposes mouse and keyboard actions to run.",
+    "scope": "core",
+    "verify_terms": [
+      "ScreenAgent Web Client"
+    ],
+    "documented_by": [
+      "2402.07945"
+    ],
+    "component_of": "https://github.com/niuzaisheng/ScreenAgent",
+    "notes": "A separate repository from the ScreenAgent research code: the ScreenAgent README announces the web client as a 19 May 2024 release, and the client README points to the ScreenAgent paper and repository for the pipeline design. The README directs users to a hosted build at screenagent.pages.dev, with websockify (novnc_proxy) bridging the browser to their own VNC server. The planning, acting and reflecting stages each render a Windows or Linux prompt template (English or Chinese), which is sent with a JPEG of the VNC framebuffer; the user copies the model's reply to an editor, parses actions from it and runs them, and an Auto Transition switch can advance stages. The README says the client can build chosen/rejected pairs for RLHF; at the inspected commit the Export History control is commented out. No code was executed.",
+    "details": {
+      "repository_revision": "8bd91bcd3581b3e9a8a792a2f59e4299fda334e9"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "environments",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/niuzaisheng/ScreenAgentWebClient/git/trees/8bd91bcd3581b3e9a8a792a2f59e4299fda334e9?recursive=1",
+        "sha256": "4b23480616729e663b7a8f2c8ededc021aae449f50b11125f2056eb4afd69737",
+        "retrieved_at": "2026-10-19T08:42:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/niuzaisheng/ScreenAgentWebClient/8bd91bcd3581b3e9a8a792a2f59e4299fda334e9/src/components/ScreenAgentPanel.vue",
+        "sha256": "cb49d394c5465cb88b2d99a2944e52dbfa9cfed4132cf1a0f3462eebb54fbb44",
+        "retrieved_at": "2026-10-19T08:42:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/niuzaisheng/ScreenAgentWebClient/8bd91bcd3581b3e9a8a792a2f59e4299fda334e9/src/components/Automaton.vue",
+        "sha256": "067475bb3bc80198af854be13f4bdda5ac1d79a9c1414457e2a5b3aeaa5d753e",
+        "retrieved_at": "2026-10-19T08:42:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/niuzaisheng/ScreenAgent/2312c852908dda5fbc43d903fad5929a9dec649d/README.md",
+        "sha256": "2248b2048b9166ce0348b24e81b2587fdf373a958fd86ab870ba85825425b02f",
+        "retrieved_at": "2026-10-19T08:42:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/niuzaisheng/ScreenAgentWebClient/8bd91bcd3581b3e9a8a792a2f59e4299fda334e9/LICENSE",
+        "sha256": "b93b8c693ab06b47d409d1da9cd528201920bcfde6f485289ce73b2052dc91fc",
+        "retrieved_at": "2026-10-19T08:42:58Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MPL-2.0",
+          "url": "https://raw.githubusercontent.com/niuzaisheng/ScreenAgentWebClient/8bd91bcd3581b3e9a8a792a2f59e4299fda334e9/LICENSE",
+          "retrieved_at": "2026-10-19T08:42:58Z",
+          "basis": "The LICENSE notice places the web client's own files (src, public, index.html and the noVNC patches) under the Mozilla Public License 2.0; bundled noVNC files and other libraries keep the licenses it lists."
+        },
+        "reason": "GitHub reports NOASSERTION because the LICENSE file is a project notice rather than a standard license text, but the notice explicitly licenses the ScreenAgent Web Client files under MPL 2.0 and lists separate terms for incorporated noVNC files.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/niuzaisheng/ScreenAgentWebClient/8bd91bcd3581b3e9a8a792a2f59e4299fda334e9/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "98965dae5237740eea526fec23fa4f6901c38eee22f4867413e83841eaa0904d",
+    "reviewed_at": "2026-10-19T08:43:58Z",
+    "read_basis": "Reviewed the README, the recursive file tree, LICENSE, ScreenAgentPanel.vue, Automaton.vue and action.js at commit 8bd91bcd, the ScreenAgent README at commit 2312c852, and the deployed screenagent.pages.dev bundle. No code execution."
   }
 ]

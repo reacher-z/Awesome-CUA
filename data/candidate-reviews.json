@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ebe2fd1c7ea22b5a0b58",
+    "url": "https://screenagent.pages.dev",
+    "decision": "alias",
+    "target_id": "github:niuzaisheng/screenagentwebclient",
+    "reason": "Hosted build of the ScreenAgent Web Client: the page is titled \"ScreenAgent Web Clinet\", and the repository README tells users to open https://screenagent.pages.dev after starting websockify next to their VNC server."
   }
 ]

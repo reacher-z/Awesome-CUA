@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-49 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (2)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -45,6 +45,7 @@ All entries in this section: desktop, windows, linux.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [ScreenAgent Web Client](https://github.com/niuzaisheng/ScreenAgentWebClient) | [2402.07945](https://arxiv.org/abs/2402.07945) (2024) | code MPL-2.0 | Browser noVNC client for ScreenAgent's plan, act and reflect loop: GPT-4o, GPT-4V or a self-hosted OpenAI-compatible vision model reads a remote desktop screenshot and proposes mouse and keyboard actions to run. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/niuzaisheng/ScreenAgentWebClient/HEAD/README.md) |
 | [SheetCopilot](https://github.com/BraveGroup/SheetCopilot) | [2305.19308](https://arxiv.org/abs/2305.19308) (2023) | — | Spreadsheet automation agent for Windows/Excel, with benchmark assets and a separately released headless Ubuntu evaluation backend. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/BraveGroup/SheetCopilot/HEAD/README.md) |
 
 ## Frameworks

@@ -5476,7 +5476,48 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "0fe34cd605e492c4c93f760e9caefd194f9c8ec7cfc3d4d4a927a1ac1613e51c",
-    "reviewed_at": "2026-10-16T06:36:04Z"
+    "reviewed_at": "2026-10-16T06:36:04Z",
+    "notes": "The README's Paper link points to section 2.2 of the UI-TARS-2 technical report, which describes an all-in-one sandbox that combines GUI operation with file-system and tool-calling functions for training, evaluation and inference.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/agent-infra/sandbox/7f1afaf8d82bd30531a19caeb1a24dfebbc97d8c/README.md",
+        "sha256": "0fe34cd605e492c4c93f760e9caefd194f9c8ec7cfc3d4d4a927a1ac1613e51c",
+        "retrieved_at": "2026-10-19T06:10:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2509.02544v2",
+        "sha256": "db699a0299f5fa06e1f94ab8bae743a60d7febf5899fd237532ab46dd9a99610",
+        "retrieved_at": "2026-10-19T06:10:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://arxiv.org/abs/2509.02544v2",
+        "sha256": "3b0c75bd7a6255dc05a4b4251ddbe804355758fd233bdc07dfefe482efdfa935",
+        "retrieved_at": "2026-10-19T06:10:59Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2509.02544",
+        "evidence_url": "https://raw.githubusercontent.com/agent-infra/sandbox/7f1afaf8d82bd30531a19caeb1a24dfebbc97d8c/README.md"
+      }
+    ]
   },
   {
     "name": "Mobile Env",

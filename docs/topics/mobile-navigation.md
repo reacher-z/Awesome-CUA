@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-261 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+262 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (188)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (189)](#papers)
 
 ## Benchmarks
 
@@ -278,6 +278,7 @@
 | 2024‑06‑06 | [On the Effects of Data Scale on UI Control Agents](https://arxiv.org/abs/2406.03679) | android | Studies how Android task performance changes with demonstration scale and releases AndroidControl with high- and low-level instructions. |
 | 2024‑06‑03 | [Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration](https://arxiv.org/abs/2406.01014) | android | Separates mobile planning, decision-making, and reflection, with a memory unit for task progress and relevant content. |
 | 2024‑05‑23 | [AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://arxiv.org/abs/2405.14573) | android | Introduces parameterized Android tasks with initialization, success checks, and cleanup for reproducible interactive evaluation. |
+| 2024‑05‑11 | [AXNav: Replaying Accessibility Tests from Natural Language](https://doi.org/10.1145/3613904.3642777) | ios | Replays natural-language accessibility tests on cloud iOS devices with GPT-4 planner, action and evaluation agents over pixel-based UI detections, flagging VoiceOver, Dynamic Type and Button Shapes issues in videos. |
 | 2024‑04‑13 | [Enhancing Mobile "How-to" Queries with Automated Search Results Verification and Reranking](https://arxiv.org/abs/2404.08860) | android | Executes instructions from mobile how-to search results inside a controlled Android environment, then uses the observed success of those instructions to verify and rerank technical-support results. |
 | 2024‑04‑12 | [LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation](https://arxiv.org/abs/2404.16054) | unspecified | LlamaTouch executes mobile tasks on devices and evaluates whether an agent visits manually annotated essential application or system states. Screenshot and hierarchy annotations, combined with exact and fuzzy state matching, support evaluation of 496 tasks across multiple agents. |
 | 2024‑04‑12 | [Training a Vision Language Model as Smartphone Assistant](https://arxiv.org/abs/2404.08755) | android | Trains a smartphone assistant from sequences of screenshots paired with earlier actions. The model predicts UI-only interactions such as taps and swipes, with evaluation on Android in the Wild. |

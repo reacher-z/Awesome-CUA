@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cc2a9294aeaa757798e9",
+    "url": "https://dl.acm.org/doi/full/10.1145/3613904.3642777",
+    "decision": "alias",
+    "target_id": "url:54fd94aa3e21ead81c86",
+    "reason": "ACM Digital Library full-text page of DOI 10.1145/3613904.3642777, the CHI 2024 AXNav paper indexed under its doi.org address."
   }
 ]

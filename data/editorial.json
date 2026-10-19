@@ -63143,5 +63143,56 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:54fd94aa3e21ead81c86",
+    "name": "AXNav: Replaying Accessibility Tests from Natural Language",
+    "kind": "paper",
+    "url": "https://doi.org/10.1145/3613904.3642777",
+    "summary": "Replays natural-language accessibility tests on cloud iOS devices with GPT-4 planner, action and evaluation agents over pixel-based UI detections, flagging VoiceOver, Dynamic Type and Button Shapes issues in videos.",
+    "scope": "core",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "self-reflection",
+      "ui-design"
+    ],
+    "verify_terms": [
+      "AXNav",
+      "Replaying Accessibility Tests"
+    ],
+    "evidence_urls": [
+      "https://machinelearning.apple.com/research/axnav"
+    ],
+    "primary_supports": [
+      "environments",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://arxiv.org/pdf/2310.02424v3",
+        "retrieved_at": "2026-10-19T06:20:09Z",
+        "sha256": "1c1c009a041d25f225fb4e672ef440076ce0c058251318fcb9a32a514c8d2b2c"
+      }
+    ],
+    "notes": "The annotation was reviewed against the Apple Machine Learning Research page and the arXiv v3 manuscript, which carries the CHI '24 ACM reference format and DOI. Experiments have not been independently reproduced. UI elements come from the Screen Recognition detector applied to device screenshots and reach the agents as a numbered plain-text list; VoiceOver gestures are triggered through a custom application wrapping an XCTest-based Swift API. Evaluation covers 62 regression test cases from five of the authors' organization's apps, 20 tests written for five popular free App Store apps, and a 10-participant study with accessibility QA testers. The paper does not state a code or data release. An arXiv preprint of the same work (2310.02424) is not retained in the catalog archive, so this record follows the publisher edition. The Apple page lists the authors Regina Cheng and Jeff Nichols; the paper and Crossref print Ruijia Cheng and Jeffrey Nichols.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ba3c1d430f1d3036e9c05a34f5b072253d5218ae8fd02243a6653e49d32a812b",
+    "reviewed_at": "2026-10-19T06:20:54Z"
   }
 ]

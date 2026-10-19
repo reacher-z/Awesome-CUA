@@ -12,6 +12,6 @@ Environment facets come from the editorial review and overlap: a resource tagged
 | [macOS](environments/macos.md) | 30 | 3 | 2 | 4 | 7 | 14 |
 | [Linux](environments/linux.md) | 49 | 5 | 7 | 6 | 13 | 18 |
 | [Android](environments/android.md) | 300 | 19 | 35 | 24 | 44 | 178 |
-| [iOS](environments/ios.md) | 21 | 1 | 2 | 4 | 5 | 9 |
+| [iOS](environments/ios.md) | 22 | 1 | 2 | 4 | 5 | 10 |
 | [HarmonyOS](environments/harmonyos.md) | 3 | · | · | · | 1 | 2 |
 | [Cross-platform](environments/cross-platform.md) | 197 | 14 | 15 | 47 | 9 | 112 |

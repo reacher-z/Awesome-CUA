@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-21 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+22 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Papers (20)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Papers (21)](#papers)
 
 ## Datasets
 
@@ -37,4 +37,5 @@ All entries in this section: unspecified.
 | 2025‑07‑17 | [Machine-Readable Ads: Accessibility and Trust Patterns for AI Web Agents interacting with Online Advertisements](https://arxiv.org/abs/2507.12844) | web | Compares DOM-based and pixel-based web agents on a cloned news site containing advertisements, consent dialogs and paywalls. The study examines how interface presentation affects ad interaction and consequential subscription choices. |
 | 2025‑05‑08 | [Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding](https://arxiv.org/abs/2505.05026) | unspecified | Introduces WiserUI-Bench, pairing real UI variants from industry A/B tests with observed behavioral winners and expert explanations. It evaluates models’ ability to predict the more effective interface and explain its effect on user behavior. |
 | 2024‑09‑26 | [Inferring Alt-text For UI Icons With Large Language Models During App Development](https://arxiv.org/abs/2409.18060) | unspecified | Introduces IconDesc, which generates mobile icon alt-text from partial UI context such as element identifiers, bounds, nearby text and hierarchy. Model evaluation and a user study examine the resulting accessibility descriptions. |
+| 2024‑05‑11 | [AXNav: Replaying Accessibility Tests from Natural Language](https://doi.org/10.1145/3613904.3642777) | ios | Replays natural-language accessibility tests on cloud iOS devices with GPT-4 planner, action and evaluation agents over pixel-based UI detections, flagging VoiceOver, Dynamic Type and Button Shapes issues in videos. |
 | 2017‑10‑20 | [Rico: A Mobile App Dataset for Building Data-Driven Design Applications](https://doi.org/10.1145/3126594.3126651) | android | Introduces Rico, collecting Android interface designs and interaction traces through crowdsourced use followed by automated exploration. The paper demonstrates UI-layout retrieval using learned representations and describes visual, textual, structural, and interaction data. |

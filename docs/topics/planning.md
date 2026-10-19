@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (208)](#papers)
 
 ## Datasets
 
@@ -282,6 +282,7 @@
 | 2024‑06‑11 | [CAAP: Context-Aware Action Planning Prompting to Solve Computer Tasks with Front-End UI Only](https://arxiv.org/abs/2406.06947) | web | CAAP converts screenshots into textual observations and plans keyboard-and-mouse actions using a prompt that examines task context from multiple perspectives. The agent is evaluated on MiniWoB++ and WebShop using only front-end visual observations. |
 | 2024‑06‑03 | [Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration](https://arxiv.org/abs/2406.01014) | android | Separates mobile planning, decision-making, and reflection, with a memory unit for task progress and relevant content. |
 | 2024‑05‑17 | [Latent State Estimation Helps UI Agents to Reason](https://arxiv.org/abs/2405.11120) | unspecified | Studies explicit textual estimates of latent UI state, including whether commanded actions occurred and how far a task has progressed. The experiments compare agents that reason with these estimates against agents that omit them across public and internal task benchmarks. |
+| 2024‑05‑11 | [AXNav: Replaying Accessibility Tests from Natural Language](https://doi.org/10.1145/3613904.3642777) | ios | Replays natural-language accessibility tests on cloud iOS devices with GPT-4 planner, action and evaluation agents over pixel-based UI detections, flagging VoiceOver, Dynamic Type and Button Shapes issues in videos. |
 | 2024‑05‑07 | [Unveiling Disparities in Web Task Handling Between Human and Web Agent](https://arxiv.org/abs/2405.04497) | web | Compares human think-aloud web-task behavior with web-agent planning, action, and reflection. The analysis highlights differences in updating plans, handling ambiguity, and investigating failures. |
 | 2024‑04‑28 | [MMAC-Copilot: Multi-modal Agent Collaboration Operating Copilot](https://arxiv.org/abs/2404.18074) | desktop | Introduces MMAC-Copilot, which coordinates agents with different expertise to operate PC applications. VIBench evaluates visual interaction with applications that lack usable APIs, spanning office, recreation and game tasks. |
 | 2024‑03‑05 | [Android in the Zoo: Chain-of-Action-Thought for GUI Agents](https://arxiv.org/abs/2403.02713) | android | Introduces Chain-of-Action-Thought and Android-In-The-Zoo annotations that connect prior actions, screen observations, intended actions, and expected outcomes. |

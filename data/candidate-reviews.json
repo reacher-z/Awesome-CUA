@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:fc8b62ff8909ed0c919d",
+    "url": "https://openreview.net/forum?id=bkjKnO9s7T",
+    "decision": "alias",
+    "target_id": "arxiv:2509.26506",
+    "reason": "OpenReview forum of the ICLR 2026 poster edition of the indexed SCUBA paper; same title and the same eleven authors in the same order, with Silvio Savarese written in lowercase on OpenReview."
   }
 ]

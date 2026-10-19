@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9dd7bcc544b2b899a033",
+    "url": "https://aclanthology.org/2024.findings-acl.928",
+    "decision": "out_of_scope",
+    "reason": "CToolEval (Findings of ACL 2024) is a Chinese benchmark of LLM tool invocation over 398 APIs from 27 apps in 14 domains. Agents call those APIs directly and never operate a graphical, browser or device interface, so the paper is outside the computer-use scope. It has no arXiv version, and its linked repository is already being set aside as a dead link (PR #817).",
+    "reviewed_at": "2026-10-19T06:35:46Z",
+    "evidence": {
+      "url": "https://aclanthology.org/2024.findings-acl.928",
+      "sha256": "228f6563697298756e45ec95076d2bb40adb79467a4e64c377ce3245559fffc8",
+      "retrieved_at": "2026-10-19T06:14:46Z"
+    }
   }
 ]

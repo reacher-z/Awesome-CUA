@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:yiye3/guicourse",
+    "target_id": "github:rucbm/guicourse",
+    "repository_id": 811216288,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T07:15:40Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/yiye3/GUICourse",
+        "resolved_url": "https://api.github.com/repositories/811216288",
+        "repository_id": 811216288,
+        "full_name": "RUCBM/GUICourse",
+        "html_url": "https://github.com/RUCBM/GUICourse",
+        "retrieved_at": "2026-10-19T07:13:32Z",
+        "sha256": "42a070f4a525d91c3fdc0a4cd60f97c1874103966fbf44f8584c6364718f81c0"
+      },
+      {
+        "url": "https://api.github.com/repos/RUCBM/GUICourse",
+        "resolved_url": "https://api.github.com/repos/RUCBM/GUICourse",
+        "repository_id": 811216288,
+        "full_name": "RUCBM/GUICourse",
+        "html_url": "https://github.com/RUCBM/GUICourse",
+        "retrieved_at": "2026-10-19T07:13:32Z",
+        "sha256": "42a070f4a525d91c3fdc0a4cd60f97c1874103966fbf44f8584c6364718f81c0"
+      }
+    ]
   }
 ]

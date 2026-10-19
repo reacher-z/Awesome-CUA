@@ -3607,7 +3607,7 @@
   {
     "name": "GUICourse",
     "kind": "dataset",
-    "url": "https://github.com/yiye3/GUICourse",
+    "url": "https://github.com/RUCBM/GUICourse",
     "environments": [
       "cross-platform"
     ],
@@ -3621,10 +3621,11 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "0968273442bfb9a6478fe78f8b9a6247a3bb8e6d028880939b432fd009961e98",
-    "reviewed_at": "2026-10-16T10:50:15Z",
+    "reviewed_at": "2026-10-19T07:15:39Z",
     "documented_by": [
       "2406.11317"
-    ]
+    ],
+    "notes": "Formerly published as yiye3/GUICourse; that address now resolves to this repository (GitHub repository ID 811216288), and both serve the same reviewed README."
   },
   {
     "name": "AMEX",

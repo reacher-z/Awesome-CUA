@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2295,6 +2295,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2608.16211%2C2608.16391%2C2608.17067%2C2608.17975%2C2608.19741%2C2608.21500%2C2608.22301%2C2608.22510%2C2608.23035%2C2608.23320%2C2608.26238%2C2608.26546%2C2608.26991%2C2608.27260%2C2608.29814%2C2608.31076%2C2609.02292%2C2609.04173%2C2609.04298%2C2609.05776%2C2609.06059%2C2609.07529%2C2609.08149%2C2609.08418%2C2609.09187%2C2609.11561%2C2609.12533%2C2609.15096%2C2609.15544%2C2609.20732%2C2609.21293%2C2609.23986%2C2609.24971%2C2609.24997%2C2609.27455%2C2609.29647%2C2609.29964%2C2609.30798%2C2609.32835%2C2609.34428%2C2609.35002%2C2609.35232%2C2609.35394%2C2609.35581%2C2609.36071%2C2609.36352%2C2609.36777%2C2609.37017%2C2609.38923%2C2609.39222&max_results=50",
         "sha256": "6499b4f4917eec0765d16d6e26a08d7edc5146a30753b19cf8218517656bb070",
         "retrieved_at": "2026-10-17T12:31:35Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2610.00042",
+      "name": "Zengram-Lite: An In-Browser Agentic-Memory Framework - Semantic Knowledge, Session Tracking, and Token-Budgeted Context",
+      "url": "https://arxiv.org/abs/2610.00042",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "zengram-lite is a WebAssembly agentic-memory library that runs in a browser tab, providing fact storage with hybrid recall, session and tool-call tables, and token-budgeted context assembly over an embedded SQL engine. The browser is only its host runtime; the work does not study agents that operate web pages or other interfaces, so it is outside the computer-use scope.",
+      "reviewed_at": "2026-10-19T08:43:44Z",
+      "metadata_fingerprint": "8583e28bce893f64a0461c2b987c57b0ac22ad3b714a3c53cbc2b20b1661e4eb",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "13d3fb5811d203f2e6b80eb45d30ebc0b3cfefd88e2034ffa3b1b80687bef285",
+        "retrieved_at": "2026-10-16T06:36:32Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

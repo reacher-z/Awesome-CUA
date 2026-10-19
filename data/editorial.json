@@ -63143,5 +63143,150 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:37b4f525e6d7a56a9967",
+    "name": "GuideBench",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/kixlab/GuideBench",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "human-in-the-loop",
+      "video",
+      "screen-understanding"
+    ],
+    "summary": "Released data for the GUIDE benchmark: annotated segments of narrated novice screen recordings in 10 applications, for predicting user behavior state, short-term intent and whether and how to help.",
+    "scope": "core",
+    "verify_terms": [
+      "GuideBench"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1"
+    ],
+    "documented_by": [
+      "2603.25864"
+    ],
+    "notes": "Formerly published as saelyne/GuideBench; the Hub API redirects that name to this repository with the same object ID. Access is gated with automatic approval. The Hub manifest at revision 783caa86 holds three annotation JSON files (one per task), 40 task-description Markdown files, 120 think-aloud transcription JSON files and two CSV files under videos/; no video files are hosted in the repository. The project page lists Photoshop, GIMP, Figma, Canva, PowerPoint, Google Slides, Premiere Pro, CapCut, Google Sheets and Excel without naming operating systems; the environment facets follow from those applications. Models are evaluated on video snippets without the narrations. CC-BY-4.0 is the Hub data declaration; annotation files were not downloaded and scores were not reproduced.",
+    "details": {
+      "hub_id": "kixlab/GuideBench",
+      "hub_revision": "783caa868dc3a929ef99702731a1e0b27add48f1",
+      "gated": "auto",
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/kixlab/GuideBench/tree/783caa868dc3a929ef99702731a1e0b27add48f1",
+      "benchmark_protocol": {
+        "focus": [
+          "user behavior state detection",
+          "short-term intent prediction",
+          "help need and help content prediction"
+        ],
+        "setting": "offline",
+        "observations": [
+          "screen-recording video segments"
+        ],
+        "actions": [],
+        "evaluation": "Accuracy on 9-way behavior-state classification, 4-way multiple-choice intent prediction, and help prediction split into a binary help-need decision and a 4-way multiple-choice help-content question.",
+        "counts": [
+          {
+            "value": 120,
+            "unit": "demonstrations",
+            "population": "GUIDE screen recordings",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://guide-bench.github.io"
+          },
+          {
+            "value": 67.5,
+            "unit": "hours of screen recordings",
+            "population": "GUIDE screen recordings",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://guide-bench.github.io"
+          },
+          {
+            "value": 54,
+            "unit": "novice users",
+            "population": "GUIDE participants",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://guide-bench.github.io"
+          },
+          {
+            "value": 10,
+            "unit": "applications",
+            "population": "GUIDE software coverage",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://guide-bench.github.io"
+          },
+          {
+            "value": 40,
+            "unit": "open-ended tasks",
+            "population": "GUIDE task design",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://guide-bench.github.io"
+          },
+          {
+            "value": 120,
+            "unit": "transcription files",
+            "population": "Hub manifest at revision 783caa86 (transcriptions/)",
+            "qualifier": "exact",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1"
+          },
+          {
+            "value": 40,
+            "unit": "task-description files",
+            "population": "Hub manifest at revision 783caa86 (tasks/)",
+            "qualifier": "exact",
+            "basis": "computed",
+            "evidence_url": "https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1"
+          }
+        ],
+        "notes": "Demonstration, hour, user, application and task counts are the project page's figures; file counts come from the Hub manifest. Segment counts per task were not computed because the annotation files sit behind the access gate.",
+        "evidence_urls": [
+          "https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1",
+          "https://guide-bench.github.io"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "relations",
+      "notes",
+      "licenses.data",
+      "details.hub_id",
+      "details.hub_revision",
+      "details.gated",
+      "details.disabled",
+      "details.download_url",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://guide-bench.github.io",
+        "sha256": "0a3441b26d204655fe737e7b3738a61ebb8c67fd0977e26042cad59f24352c14",
+        "retrieved_at": "2026-10-19T06:04:26Z"
+      }
+    ],
+    "read_basis": "Read the pinned Hub API record (card metadata and file manifest), the publicly rendered dataset card and the GUIDE project page. The raw card and annotation files are behind the access gate and were not downloaded.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d1e2fedc00dbf1c9531cd5cc676f900f149690a2e08655f8d93c56d5abd8d389",
+    "reviewed_at": "2026-10-19T06:04:53Z"
   }
 ]

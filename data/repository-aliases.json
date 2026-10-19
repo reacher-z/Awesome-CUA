@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "url:ebc6421ebf9b4f9c6c06",
+    "target_id": "url:37b4f525e6d7a56a9967",
+    "repository_id": "69e03249c2203bd4afa292da",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-10-19T06:04:53Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/saelyne/GuideBench",
+        "resolved_url": "https://huggingface.co/api/datasets/kixlab/GuideBench",
+        "repository_id": "69e03249c2203bd4afa292da",
+        "full_name": "kixlab/GuideBench",
+        "html_url": "https://huggingface.co/datasets/kixlab/GuideBench",
+        "retrieved_at": "2026-10-19T06:03:50Z",
+        "sha256": "d1e2fedc00dbf1c9531cd5cc676f900f149690a2e08655f8d93c56d5abd8d389"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/kixlab/GuideBench",
+        "resolved_url": "https://huggingface.co/api/datasets/kixlab/GuideBench",
+        "repository_id": "69e03249c2203bd4afa292da",
+        "full_name": "kixlab/GuideBench",
+        "html_url": "https://huggingface.co/datasets/kixlab/GuideBench",
+        "retrieved_at": "2026-10-19T06:03:50Z",
+        "sha256": "d1e2fedc00dbf1c9531cd5cc676f900f149690a2e08655f8d93c56d5abd8d389"
+      }
+    ]
   }
 ]

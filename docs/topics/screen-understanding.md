@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [GuideBench](https://huggingface.co/datasets/kixlab/GuideBench) | desktop, web | [2603.25864](https://arxiv.org/abs/2603.25864) (2026) | [120 demonstrations](https://guide-bench.github.io) · [67.5 hours of screen recordings](https://guide-bench.github.io) · [54 novice users](https://guide-bench.github.io) · [10 applications](https://guide-bench.github.io) · [40 open-ended tasks](https://guide-bench.github.io) · [120 transcription files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) · [40 task-description files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) | data cc-by-4.0 | Released data for the GUIDE benchmark: annotated segments of narrated novice screen recordings in 10 applications, for predicting user behavior state, short-term intent and whether and how to help. | [✓ 2026‑10‑19](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) |
 | [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
 | [Screen Point-and-Read / Tree-of-Lens](https://github.com/UCSB-AI/Screen-Point-and-Read) | cross-platform | [2406.19263](https://arxiv.org/abs/2406.19263) (2024) | — | code MIT | Screen-reading benchmark and Tree-of-Lens implementation for interpreting user-indicated regions and their layout context. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/eric-ai-lab/Screen-Point-and-Read/HEAD/README.md) |
 | [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | [910 tasks](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) · [233 human trajectories](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) | — | Visually grounded web tasks extending the WebArena evaluation setting. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-arena-x/visualwebarena/HEAD/README.md) |

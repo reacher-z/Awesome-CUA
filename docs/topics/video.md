@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-38 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (29)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (29)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [GuideBench](https://huggingface.co/datasets/kixlab/GuideBench) | desktop, web | [2603.25864](https://arxiv.org/abs/2603.25864) (2026) | [120 demonstrations](https://guide-bench.github.io) · [67.5 hours of screen recordings](https://guide-bench.github.io) · [54 novice users](https://guide-bench.github.io) · [10 applications](https://guide-bench.github.io) · [40 open-ended tasks](https://guide-bench.github.io) · [120 transcription files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) · [40 task-description files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) | data cc-by-4.0 | Released data for the GUIDE benchmark: annotated segments of narrated novice screen recordings in 10 applications, for predicting user behavior state, short-term intent and whether and how to help. | [✓ 2026‑10‑19](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) |
 | [VideoGUI](https://github.com/showlab/videogui) | desktop | [2406.10227](https://arxiv.org/abs/2406.10227) (2024) | — | — | Benchmark for desktop GUI tasks derived from instructional videos. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/videogui/HEAD/README.md) |
 | [WONDERBREAD](https://github.com/HazyResearch/wonderbread) | web | [2406.13264](https://arxiv.org/abs/2406.13264) (2024) | [6 task types](https://raw.githubusercontent.com/HazyResearch/wonderbread/HEAD/README.md) · [2,928 human demonstrations](https://zenodo.org/api/records/14094162) · [598 web navigation workflows](https://zenodo.org/api/records/14094162) | data cc-by-4.0 | An offline benchmark of workflow documentation, quality assessment and knowledge transfer using human web-navigation demonstrations, action traces and written procedures. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HazyResearch/wonderbread/HEAD/README.md) |
 

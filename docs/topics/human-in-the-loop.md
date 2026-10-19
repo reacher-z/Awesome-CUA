@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+80 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (71)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (71)](#papers)
 
 ## Benchmarks
 
-All entries in this section: android.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [GuideBench](https://huggingface.co/datasets/kixlab/GuideBench) | desktop, web | [2603.25864](https://arxiv.org/abs/2603.25864) (2026) | [120 demonstrations](https://guide-bench.github.io) · [67.5 hours of screen recordings](https://guide-bench.github.io) · [54 novice users](https://guide-bench.github.io) · [10 applications](https://guide-bench.github.io) · [40 open-ended tasks](https://guide-bench.github.io) · [120 transcription files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) · [40 task-description files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) | data cc-by-4.0 | Released data for the GUIDE benchmark: annotated segments of narrated novice screen recordings in 10 applications, for predicting user behavior state, short-term intent and whether and how to help. | [✓ 2026‑10‑19](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) |
+| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 
 ## Agents
 

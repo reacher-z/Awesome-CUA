@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2fd12b3aa14f4a9673af",
+    "url": "https://computer-use-ootb.github.io",
+    "decision": "alias",
+    "target_id": "github:showlab/computer_use_ootb",
+    "reason": "Project page linked from the indexed Computer Use OOTB repository README; it presents the Claude 3.5 Computer Use case study (arXiv:2411.10323) that documents the repository."
   }
 ]

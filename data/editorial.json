@@ -63143,5 +63143,68 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:b5cab56e1a439ca8e524",
+    "name": "WinSpot: GUI Grounding Benchmark with Multimodal Large Language Models",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2025.acl-short.85/",
+    "summary": "Introduces WinSpot, a Windows GUI grounding benchmark of 5,000 manually validated coordinate-instruction pairs, built by having multimodal LLMs label raw desktop screenshots without HTML or accessibility trees.",
+    "scope": "core",
+    "environments": [
+      "windows",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "data-generation"
+    ],
+    "verify_terms": [
+      "WinSpot"
+    ],
+    "evidence_urls": [
+      "https://aclanthology.org/2025.acl-short.85/"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.doi",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.publisher",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "environments",
+      "kind",
+      "name",
+      "scope",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.publication.identity_basis",
+          "environments",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://aclanthology.org/2025.acl-short.85.pdf",
+        "retrieved_at": "2026-10-19T06:13:20Z",
+        "sha256": "7548ed8560f5fe474b54923fd8f28be8c5490439a0dd405263bd8e760e66b20c"
+      }
+    ],
+    "notes": "The annotation was reviewed against the ACL Anthology landing page and proceedings PDF. Experiments have not been independently reproduced. This short paper is separate from the WinClick preprint arxiv:2503.04730, which also introduces WinSpot and which the paper cites as prior work. Screenshots come from Bing image search over popular Microsoft Store apps, filtered with Phi-3-vision, labeled by an in-house icon detector and aligned with instructions by GPT-4o. The abstract counts 5,000 coordinate-instruction pairs, while the benchmark section describes over 5,000 annotated screenshots from 14 Windows applications. The benchmark repository linked from the paper was not part of this review.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7766b10064d39e20da853db23b2ed48b2b769b7e9b560be29043061d4fbb619f",
+    "reviewed_at": "2026-10-19T06:13:48Z"
   }
 ]

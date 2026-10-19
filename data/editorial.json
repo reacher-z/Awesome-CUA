@@ -63143,5 +63143,52 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22990",
+    "summary": "Keeps 74 web tasks fixed while a persona agent playing one of 44 users rewrites each request and answers the agent's questions, scoring computer-use agents on completion, stated requirements and user satisfaction.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "PersonaCUABench: Benchmarking Computer-Use Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.22990v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version v1 abstract. Section 3.1 of the v1 full text draws the 74 tasks (38 information, 36 action) from Odysseys live-website tasks and REAL sandboxed site replicas, run in one shared browser harness; its Limitations section leaves desktop applications, standalone chat and coding workflows outside the task scope. The paper names its code repository as github.com/MatrAIx-ai/PersonaCUABench, which is not reviewed here. Experimental results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2610.22990v1",
+        "sha256": "bf9066e8b3472100f120e21534f92655f4d0814f2521b9d23d778e5239c7a2a4",
+        "retrieved_at": "2026-10-19T08:36:40Z"
+      }
+    ],
+    "reviewed_sha256": "1737b28aab3a48b1f11f115b32787c79e2e5db513d28baa48c61c0f7a64bc9ec",
+    "reviewed_at": "2026-10-19T08:37:16Z"
   }
 ]

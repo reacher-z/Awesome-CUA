@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cc76cd5cb3935b1394d8",
+    "url": "https://exa.ai",
+    "decision": "out_of_scope",
+    "reason": "Exa is a commercial web search and content-retrieval API that returns ranked results, page contents and generated answers to AI applications through API calls. It does not open or operate web pages or other interfaces, so it is web retrieval infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-19T06:37:14Z",
+    "evidence": {
+      "url": "https://exa.ai",
+      "sha256": "585c49a7b62ab819b18d2da0f832197c29002586738e43c12ad4e670ee19cf3b",
+      "retrieved_at": "2026-10-19T06:17:13Z"
+    }
   }
 ]

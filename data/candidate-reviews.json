@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:22ce693d5ecb30906b04",
+    "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0",
+    "decision": "alias",
+    "target_id": "github:google-research/android_world",
+    "reason": "AndroidWorld Leaderboard spreadsheet that the indexed AndroidWorld benchmark README links as its leaderboard."
   }
 ]

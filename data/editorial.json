@@ -63143,5 +63143,40 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Affora: A Design System for Agent-Friendly Interfaces",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.19125",
+    "summary": "Presents Affora, a design system that keeps web interface actions and state readable to computer-use agents while allowing visual variation, derived from three controlled studies and tested on independently built sites.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "web-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Affora: A Design System for Agent-Friendly Interfaces"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.19125v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version arXiv v1 abstract page, whose title, author, version and normalized abstract SHA match the retained snapshot. According to the full text, the studied implementation is web-based, with interaction meaning carried by the rendered DOM; Study 1 compares native HTML with eight component libraries, and the transfer evaluation includes locally deployed WebArena Magento and WebShop sites run with two ChatGPT 5.6 variants in the authors' harness. Desktop interfaces are discussed only as future work. The paper describes reusable implementations and executable checks but gives no release location. Experimental results have not been independently reproduced.",
+    "read_basis": "arXiv v1 abstract page and HTML full text (Sections 1, 4.1, 6 and 7.4).",
+    "reviewed_sha256": "443e26698ce4716891289febfe84230084a38c3e232e337b24e7f847391859a6",
+    "reviewed_at": "2026-10-19T08:44:59Z"
   }
 ]

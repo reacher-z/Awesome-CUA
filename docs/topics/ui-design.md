@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-21 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+22 source-reviewed resources tagged `ui-design`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Papers (20)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Papers (21)](#papers)
 
 ## Datasets
 
@@ -19,6 +19,7 @@ All entries in this section: unspecified.
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
 | 2026‑09‑17 | [A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents](https://arxiv.org/abs/2609.19843) | unspecified | Studies how automatic defaults and reflective social-influence cues affect GUI-agent shopping decisions under different reasoning configurations. A randomized simulated-shopping experiment finds that reasoning changes the type of susceptibility rather than uniformly removing interface influence. |
+| 2026‑09‑16 | [Affora: A Design System for Agent-Friendly Interfaces](https://arxiv.org/abs/2609.19125) | web | Presents Affora, a design system that keeps web interface actions and state readable to computer-use agents while allowing visual variation, derived from three controlled studies and tested on independently built sites. |
 | 2026‑07‑26 | [From Blind Edits to Verified Repair: Building Trustworthy User-Side LLM Agents for Web Accessibility](https://arxiv.org/abs/2608.24913) | web | Builds a local browser-extension agent that generates and verifies additive CSS repairs for WCAG web accessibility violations. |
 | 2026‑05‑22 | [VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents](https://arxiv.org/abs/2605.26144) | web, android | VISTA evaluates coding agents that turn design handoffs into working web and Android applications. Its evaluator locates annotated interactive components and probes their behavior, keeping visual localization distinct from functional correctness. |
 | 2026‑04‑28 | [Beyond Screenshots: Evaluating VLMs' Understanding of UI Animations](https://arxiv.org/abs/2604.26148) | unspecified | AniMINT evaluates how VLMs perceive, explain and interpret UI animations using densely annotated videos. The study distinguishes basic motion recognition from higher-level animation meaning and probes motion, context and perceptual cues. |

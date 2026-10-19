@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:99dd8ba9b4c6cd85d36c",
+    "url": "https://octo-models.github.io",
+    "decision": "out_of_scope",
+    "reason": "Project page of Octo, an open transformer diffusion policy for robot manipulation pretrained on 800k robot episodes from the Open X-Embodiment dataset and evaluated on physical robot setups. It controls robot arms, not graphical interfaces, browsers or devices, and its paper (arXiv 2405.12213) is not in the catalog.",
+    "reviewed_at": "2026-10-19T06:40:58Z",
+    "evidence": {
+      "url": "https://octo-models.github.io",
+      "sha256": "4f23c47e37533137b1e3845afd57bbbd74ed37865f3fce0699ca673a8cde0b6b",
+      "retrieved_at": "2026-10-19T06:30:44Z"
+    }
   }
 ]

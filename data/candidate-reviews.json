@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:20bf0a09e1f1815b0d91",
+    "url": "https://prosoftarena.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2601.02399",
+    "reason": "Project website for the indexed ProSoftArena benchmark paper: it gives the same title and the same eleven authors in the same order, and its Paper, Code and Hugging Face buttons all point to github.com/jiaxin-ai/ProSoftArena, which returned HTTP 404 on 2026-10-19."
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:fad6d835a43befe938f6",
+    "url": "https://scalewob.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2605.25160",
+    "reason": "Project website of the indexed ScaleWoB paper: it links arXiv 2605.25160 and lists the same seven authors, but shows the paper under its version 1 title, \"SimuWoB: Simulating Real-World Mobile Apps for Fast and Faithful GUI Agent Benchmarking\"."
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
 
 ## Benchmarks
 
@@ -135,6 +135,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgentNetTool](https://github.com/xlang-ai/AgentNetTool) | desktop, windows, macos, linux | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT | A cross-platform annotation app that records OBS screen video, mouse and keyboard events, macOS and Windows accessibility elements, and browser-extension HTML while people demonstrate computer-use tasks. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/xlang-ai/AgentNetTool/05068e93ea8110694e96d62d6c6d485bb4e958f0/README.md) |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |

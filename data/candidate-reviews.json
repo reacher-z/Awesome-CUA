@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5fc3302528b301b50efb",
+    "url": "https://agentnet-tool.xlang.ai",
+    "decision": "alias",
+    "target_id": "github:xlang-ai/agentnettool",
+    "reason": "Documentation site (installation, annotation guidance and FAQ) for the indexed AgentNetTool annotation app of OpenCUA."
   }
 ]

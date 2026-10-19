@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:verigui-team/verigui",
+    "target_id": "github:verigui-team/veriweb",
+    "repository_id": 1021849895,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T07:14:29Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/VeriGUI-Team/VeriGUI",
+        "resolved_url": "https://api.github.com/repositories/1021849895",
+        "repository_id": 1021849895,
+        "full_name": "VeriGUI-Team/VeriWeb",
+        "html_url": "https://github.com/VeriGUI-Team/VeriWeb",
+        "retrieved_at": "2026-10-19T07:13:30Z",
+        "sha256": "c880d3cb55eef426a958b0b65727bf7d902505b041f0100bf462cf1a62ef2db4"
+      },
+      {
+        "url": "https://api.github.com/repos/VeriGUI-Team/VeriWeb",
+        "resolved_url": "https://api.github.com/repos/VeriGUI-Team/VeriWeb",
+        "repository_id": 1021849895,
+        "full_name": "VeriGUI-Team/VeriWeb",
+        "html_url": "https://github.com/VeriGUI-Team/VeriWeb",
+        "retrieved_at": "2026-10-19T07:13:31Z",
+        "sha256": "c880d3cb55eef426a958b0b65727bf7d902505b041f0100bf462cf1a62ef2db4"
+      }
+    ]
   }
 ]

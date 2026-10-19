@@ -2471,7 +2471,7 @@
   {
     "name": "VeriWeb (formerly VeriGUI)",
     "kind": "benchmark",
-    "url": "https://github.com/VeriGUI-Team/VeriGUI",
+    "url": "https://github.com/VeriGUI-Team/VeriWeb",
     "environments": [
       "web"
     ],
@@ -2489,7 +2489,8 @@
       "VeriWeb"
     ],
     "reviewed_sha256": "e9a0866c8d9fa1759dedebd5ea3a4176009e51eb669f5877540524e53ac1077d",
-    "reviewed_at": "2026-10-16T06:35:59Z"
+    "reviewed_at": "2026-10-19T07:14:28Z",
+    "notes": "Formerly published as VeriGUI-Team/VeriGUI; that address now resolves to this repository (GitHub repository ID 1021849895), and both serve the same reviewed README."
   },
   {
     "name": "WindowsWorld",

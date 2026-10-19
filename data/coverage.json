@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
+  "as_of_utc": "2026-10-19T07:14:29Z",
   "total_records": 3178,
   "curated_records": 1614,
   "bibliographic_records": 2718,
@@ -527,7 +527,7 @@
       "discovered": 170,
       "indexed": 116,
       "indexed_resources": 115,
-      "resolved_aliases": 3,
+      "resolved_aliases": 4,
       "curated": 109,
       "excluded": 1,
       "set_aside": 9,

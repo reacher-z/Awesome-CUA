@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b2393e252a7c2a156dd1",
+    "url": "https://ai.google/discover/jarvis",
+    "decision": "not_a_resource",
+    "reason": "Dead link for a rumored Google agent the discovery source lists as \"Project Jarvis\" with few details: the URL redirects to /discover/jarvis/, which returns 404 with a generic page; Wayback CDX and availability queries return no capture."
   }
 ]

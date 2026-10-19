@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cec88e0609d3c2cdcc20",
+    "url": "https://skyworkai.github.io/agent-studio",
+    "decision": "alias",
+    "target_id": "arxiv:2403.17918",
+    "reason": "Former AgentStudio project and documentation site, served from the SkyworkAI/agent-studio GitHub Pages. An April 2024 Wayback capture links arXiv 2403.17918 as its paper; a September 2024 capture lists the same six authors under the subtitle \"Integrating benchmarks, environments, and toolkits for general computer agents\". The address has returned 404 since October 2024."
   }
 ]

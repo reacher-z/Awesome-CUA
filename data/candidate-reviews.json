@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:03a20e805d953af506e9",
+    "url": "https://openreview.net/forum?id=CjfQssZtAb",
+    "decision": "alias",
+    "target_id": "arxiv:2502.15760",
+    "reason": "OpenReview forum of the ICLR 2025 edition of the indexed Digi-Q paper (same authors; the arXiv version notes ICLR 2025 acceptance). The ICLR edition is titled Digi-Q: Learning VLM Q-Value Functions for Training Device-Control Agents, adding VLM to the arXiv title."
   }
 ]

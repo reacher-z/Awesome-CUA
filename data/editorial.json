@@ -63143,5 +63143,41 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.29892",
+    "summary": "Presents Qwen-Planner-Agent, a mobile planning agent built through agent-run data production, online reinforcement learning with competence-aware reward shaping and model-harness co-evolution, tested on MobilePA-Bench.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "reinforcement-learning",
+      "data-generation",
+      "memory"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.29892v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version arXiv v1 abstract page, whose title, ordered author list, version and normalized abstract SHA match the retained snapshot. According to the full text, the agent acts primarily through typed tool calls rather than pixel-coordinate GUI actions, so the paper is recorded as adjacent; development combines programmatic sandboxes, LLM-simulated environments and selected real-device sessions. MobilePA-Bench, described in a separate paper (arXiv 2608.23035), has more than 1,700 executable tasks and more than 200 mobile tools. The paper does not name the mobile operating system. The arXiv comment links a project page (tongyi-mai.github.io/Qwen-Planner-Agent), which is not reviewed here. Experimental results have not been independently reproduced.",
+    "read_basis": "arXiv v1 abstract page and HTML full text (Sections 2.1, 2.2, 3.1 and 4.2).",
+    "reviewed_sha256": "266a3c2f486bf5d52bd313e81f62d197474771452c099c1f1274e197a42a17e1",
+    "reviewed_at": "2026-10-19T08:47:32Z"
   }
 ]

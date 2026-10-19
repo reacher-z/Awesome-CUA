@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed sou
 - 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,841 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,242 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,242 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 37 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -74,7 +74,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OpenMobile-2 — first-party releases](https://github.com/OpenMobile2/OpenMobile2-Code) | 12 | 7 | 7 | 0 | 0 | 5 | OK · 2026-10-19 |
 | [MobileGym++ — first-party releases](https://github.com/OpenMobile2/MobileGym-plusplus) | 8 | 4 | 4 | 0 | 1 | 3 | OK · 2026-10-19 |
 | [CarryOn — first-party releases](https://github.com/Ethannju/carryon) | 2 | 1 | 1 | 0 | 0 | 1 | OK · 2026-10-19 |
-| [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 1 | 1 | OK · 2026-10-19 |
+| [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 2 | 0 | OK · 2026-10-19 |
 | [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 3 | 3 | 0 | 2 | 1 | OK · 2026-10-19 |
 | [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 5 | 5 | 0 | 2 | 3 | OK · 2026-10-19 |
 | [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 4 | 17 | OK · 2026-10-19 |

@@ -63143,5 +63143,52 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2610.19366",
+    "summary": "Surveys memory for multimodal agents across image, video, audio, GUI and embodied settings, organized by how memory is formed and represented and by three management tiers: static, dynamic and self-evolving.",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "memory"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "The Evolution of Multimodal Agent Memory"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2610.19366v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent broad survey of multimodal agent memory. The v1 full text treats GUI interaction as one of five memory modalities throughout, and Section 7.2.4 reviews GUI-memory benchmarks, including the mobile benchmarks MemGUI-Bench and KnowU-Bench. Surveyed systems and their reported results are not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2610.19366v1",
+        "sha256": "308796868bf9b1cb042bc6008e1e6f4ba6e776a2d4e13d40ad5684b477861563",
+        "retrieved_at": "2026-10-19T08:40:35Z"
+      }
+    ],
+    "reviewed_sha256": "325e754c6ecaa3ef7d73270975c0410915e3d47575f5ca8bcc595fc7160584ff",
+    "reviewed_at": "2026-10-19T08:40:45Z"
   }
 ]

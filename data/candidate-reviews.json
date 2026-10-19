@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:490e2dddee8567c4e619",
+    "url": "https://pengxiang-zhao.github.io/MAS-Bench",
+    "decision": "alias",
+    "target_id": "arxiv:2509.06477",
+    "reason": "Project website for the indexed MAS-Bench paper (arXiv 2509.06477), a benchmark for GUI-shortcut hybrid mobile agents."
   }
 ]

@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:fdfd8496b90bacf3ca31",
+    "url": "https://onpiste.work",
+    "decision": "not_a_resource",
+    "reason": "Dead homepage of the withdrawn OnPiste browser-automation Chrome extension: onpiste.work has no DNS address record (NOERROR, empty answer from public resolvers), its Chrome Web Store item hmojfgaobpbggbfcaijjghjimbbjfnei now returns an untitled empty listing, and the onpiste GitHub organization holds only an empty feedback repository; the last Wayback capture of the site is from 2026-02-15."
   }
 ]

@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4574c2b22102997e0559",
+    "url": "https://cdn.mobilegym.dev",
+    "decision": "not_a_resource",
+    "reason": "Static asset host from which the MobileGym++ phone (github:openmobile2/mobilegym-plusplus) loads wallpapers; its root returns a Cloudflare 404 page and the Wayback CDX query for the domain is empty, so it serves no resource of its own."
   }
 ]

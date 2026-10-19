@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:41964f6b10a7e062595c",
+    "url": "https://gair-nlp.github.io/PC-Agent",
+    "decision": "alias",
+    "target_id": "github:gair-nlp/pc-agent",
+    "reason": "Project website for the indexed PC Agent repository, which names it as its homepage."
   }
 ]

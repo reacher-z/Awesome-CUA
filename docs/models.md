@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**99 resources:** [Web (14)](#web) · [Desktop (10)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -41,6 +41,7 @@ All entries in this section: web.
 | [EvoCUA](https://github.com/meituan/EvoCUA) | desktop | [2601.15876](https://arxiv.org/abs/2601.15876) (2026) | code Apache-2.0 | Computer-use model and training resources from the EvoCUA project. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/meituan/EvoCUA/HEAD/README.md) |
 | [EvoCUA 32B 20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) | desktop | — | weights apache-2.0 | Larger EvoCUA computer-use agent checkpoint (20260105 release) with about 33B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-32B-20260105) |
 | [EvoCUA 8B 20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) | desktop | — | weights apache-2.0 | EvoCUA computer-use agent checkpoint (20260105 release) with about 8.8B BF16 parameters in the Qwen3-VL architecture, tagged for OSWorld and for English and Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/meituan/EvoCUA-8B-20260105) |
+| [Kimi-VL](https://github.com/MoonshotAI/Kimi-VL) | desktop | [2504.07491](https://arxiv.org/abs/2504.07491) (2025) | code MIT | Moonshot AI open-weight MoE vision-language model with 2.8B activated LLM parameters and a native-resolution encoder; its README reports OSWorld, ScreenSpot-Pro and OSWorld-G results for OS-agent use. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MoonshotAI/Kimi-VL/HEAD/README.md) |
 | [OpenCUA](https://github.com/xlang-ai/OpenCUA) | desktop | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT | Open computer-use research stack including models and training resources. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OpenCUA/HEAD/README.md) |
 | [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |

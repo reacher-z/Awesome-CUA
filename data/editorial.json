@@ -63143,5 +63143,129 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Kimi-VL",
+    "kind": "model",
+    "url": "https://github.com/MoonshotAI/Kimi-VL",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Moonshot AI open-weight MoE vision-language model with 2.8B activated LLM parameters and a native-resolution encoder; its README reports OSWorld, ScreenSpot-Pro and OSWorld-G results for OS-agent use.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Kimi-VL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MoonshotAI/Kimi-VL/HEAD/README.md"
+    ],
+    "notes": "General-purpose vision-language model family (Kimi-VL-A3B-Instruct, Kimi-VL-A3B-Thinking and Kimi-VL-A3B-Thinking-2506 on Hugging Face); OS-agent interaction and GUI grounding are reported benchmark capabilities, so the record is adjacent. The inspected tree holds only the README, the technical-report PDF, requirements.txt and LICENSE; no GUI-agent harness or evaluation code is released in this repository, and the reported OSWorld and grounding scores were not reproduced. The MIT LICENSE file applies to this repository; checkpoint cards declare their own weights terms, which were not reviewed. Weights collection: https://huggingface.co/collections/moonshotai/kimi-vl-a3b-67f67b6ac91d3b03d382dd85. The repository file listing was inspected at Git object 41d5ef072bc5.",
+    "details": {
+      "availability": "README and technical report; checkpoints hosted on Hugging Face",
+      "repository_url": "https://github.com/MoonshotAI/Kimi-VL"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/MoonshotAI/Kimi-VL",
+        "sha256": "1e4456ecef6609ac5f6a053cd4c337bf98c92ec65d183ac6b046e9a73799929a",
+        "retrieved_at": "2026-10-18T11:14:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/MoonshotAI/Kimi-VL/git/trees/main?recursive=1",
+        "sha256": "0d00b2a3db74a2b2ac0b6148bb376fb107c1b9598a993220c874ece627e5c7ec",
+        "retrieved_at": "2026-10-18T11:14:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/MoonshotAI/Kimi-VL/HEAD/LICENSE",
+        "sha256": "f0c89806155f93f4ea5cb9e81ef70aad1a7729240132df9706db9584024547db",
+        "retrieved_at": "2026-10-18T11:14:18Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6efabbe27d40d6180d1ab11eee51a8709b5400343cead682786e1aaee89926f4",
+    "reviewed_at": "2026-10-18T11:14:37Z",
+    "documented_by": [
+      "2504.07491"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/MoonshotAI/Kimi-VL/HEAD/LICENSE",
+          "retrieved_at": "2026-10-18T11:14:18Z",
+          "basis": "Reviewed repository LICENSE: the MIT license text with typographic quotation marks; it covers this repository, not the separately hosted checkpoints."
+        },
+        "reason": "Reviewed repository LICENSE: the MIT license text with typographic quotation marks; it covers this repository, not the separately hosted checkpoints.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/MoonshotAI/Kimi-VL/HEAD/LICENSE"
+        ]
+      }
+    }
+  },
+  {
+    "id": "arxiv:2504.07491",
+    "name": "Kimi-VL Technical Report",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.07491",
+    "summary": "Reports Kimi-VL, an open MoE vision-language model with 2.8B activated decoder parameters and a native-resolution encoder, evaluated on reasoning, long-context, OSWorld agent and ScreenSpot-Pro grounding tasks.",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Kimi-VL Technical Report"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2504.07491&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract, which reports OSWorld and ScreenSpot-Pro among many evaluations of a general-purpose model. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c0c606c0129a11c5cd23ba6222711fd977cc014d823c839226a57f0cff25c9dd",
+    "reviewed_at": "2026-10-18T11:15:16Z"
   }
 ]

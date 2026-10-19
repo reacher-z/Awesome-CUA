@@ -4199,8 +4199,43 @@
         "url": "https://export.arxiv.org/api/query?id_list=2403.03186%2C2403.03788%2C2403.07718%2C2403.10170%2C2403.11905%2C2403.16971%2C2403.17918%2C2403.20271%2C2404.01549%2C2404.01744%2C2404.02475%2C2404.03648%2C2404.05427%2C2404.05719%2C2404.05955%2C2404.06474%2C2404.07972%2C2404.08755%2C2404.08860%2C2404.08948%2C2404.09992%2C2404.10887%2C2404.11459%2C2404.16006%2C2404.16048%2C2404.16054%2C2404.16660%2C2404.18074%2C2404.19296%2C2405.00516%2C2405.11120%2C2405.12842%2C2405.14573%2C2405.14751%2C2405.15793%2C2405.16247%2C2405.20309%2C2406.01014%2C2406.01623%2C2406.03679%2C2406.06947%2C2406.07822%2C2406.08184%2C2406.08340%2C2406.08451%2C2406.10227%2C2406.10819%2C2406.11317%2C2406.11896%2C2406.12373&max_results=50",
         "sha256": "be244bfae7f89ef9449b69d85aac44295eb7b5f7e5e1bbedd76df312696676a7",
         "retrieved_at": "2026-10-16T06:31:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md",
+        "sha256": "d2dd5886bce90f6eaee880719c79a6ede6ec0eaa08da32d7610bde656b8dc9ed",
+        "retrieved_at": "2026-10-19T06:17:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/Dongping-Chen/GUI-World/57e0226a9d60f32f5177c87a0592383f6d0c11f6/Readme.md",
+        "sha256": "905bf69ce80c866377841474cefe08f85ec4ef552cdd9ffeb2fb1531e07370b6",
+        "retrieved_at": "2026-10-19T06:17:37Z"
       }
-    ]
+    ],
+    "reviewed_licenses": {
+      "data": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md",
+          "retrieved_at": "2026-10-19T06:17:30Z",
+          "basis": "The repository README at commit 57e0226 names the ONE-Lab/GUI-World Hub dataset as the canonical train and test release, and that card's License section at revision 7901fa3 states CC BY 4.0. The card metadata has no license key. The repository has no license file, so its code keeps no declared license."
+        },
+        "reason": "The repository README at commit 57e0226 names the ONE-Lab/GUI-World Hub dataset as the canonical train and test release, and that card's License section at revision 7901fa3 states CC BY 4.0. The card metadata has no license key. The repository has no license file, so its code keeps no declared license.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/ONE-Lab/GUI-World/raw/7901fa3f0b9e36afa87d24ff9ecd48037c7fd6a0/README.md",
+          "https://raw.githubusercontent.com/Dongping-Chen/GUI-World/57e0226a9d60f32f5177c87a0592383f6d0c11f6/Readme.md"
+        ]
+      }
+    }
   },
   {
     "name": "GUI-Action Narrator",

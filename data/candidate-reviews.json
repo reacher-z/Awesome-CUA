@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8f2c0a68a9b2759ecfac",
+    "url": "https://futuresis.github.io/GUIGuard-page",
+    "decision": "alias",
+    "target_id": "arxiv:2601.18842",
+    "reason": "Project website for the indexed GUIGuard-Bench paper; it links arXiv 2601.18842 with its code and Hub dataset."
   }
 ]

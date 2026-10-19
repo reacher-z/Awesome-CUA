@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cf9704b759ff67523f6c",
+    "url": "https://microsoft.github.io/GUI-Actor",
+    "decision": "alias",
+    "target_id": "github:microsoft/gui-actor",
+    "reason": "Project website for the indexed GUI-Actor repository, published from its project_page branch and set as the repository homepage."
   }
 ]

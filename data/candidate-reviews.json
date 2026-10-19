@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a08b871c640b59d6cf9e",
+    "url": "https://dl.acm.org/doi/10.1145/3210240.3210339",
+    "decision": "alias",
+    "target_id": "url:901ca855640457dfe2f1",
+    "reason": "ACM Digital Library landing page for DOI 10.1145/3210240.3210339, the MobiSys 2018 Kite paper already indexed under its doi.org address."
   }
 ]

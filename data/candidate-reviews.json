@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8a31387a9b60882f6b3d",
+    "url": "https://openreview.net/forum?id=Esntu2V82P",
+    "decision": "alias",
+    "target_id": "arxiv:2508.00935",
+    "reason": "OpenReview page of the withdrawn ICLR 2026 submission of the indexed CUAHarm paper, Measuring Harmfulness of Computer-Using Agents: same title, 104-task benchmark and six authors, one listed as Jiayao rather than Janet Tang."
   }
 ]

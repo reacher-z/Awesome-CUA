@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-203 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+204 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@
 | [Adversarial Web Agents](https://github.com/ChenWu98/agent-attack) | web | [2406.12814](https://arxiv.org/abs/2406.12814) (2024) | — | — | Evaluation resources for adversarial attacks on multimodal web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md) |
 | [AgentDAM](https://github.com/facebookresearch/ai-agent-privacy) | web | [2503.09780](https://arxiv.org/abs/2503.09780) (2025) | — | — | Web-agent benchmark for measuring unnecessary use of sensitive personal information during end-to-end task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md) |
 | [BrowserART](https://github.com/scaleapi/browser-art) | web | [2410.13886](https://arxiv.org/abs/2410.13886) (2024) | — | — | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/README.md) |
+| [deedchain](https://github.com/PillCrew/deedchain) | web | — | [24 tasks](https://api.github.com/repos/PillCrew/deedchain/git/trees/3b2e68c963885706506fa77ced3d9be69742eea3?recursive=1) · [11 synthetic scoring cases](https://raw.githubusercontent.com/PillCrew/deedchain/HEAD/README.md) | code MIT | Benchmark of whether browser agents' final reports match what they did: 24 frozen HTML tasks, including impossible ones and wrong draft reports, scored by rule-based claim checks without an LLM judge. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/PillCrew/deedchain/HEAD/README.md) |
 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | web | [2409.11295](https://arxiv.org/abs/2409.11295) (2024) | — | code MIT | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
 | [MobileSafetyBench](https://github.com/jylee425/mobilesafetybench) | android | — | — | code Apache-2.0 | Android emulator testbed that scores mobile device-control agents on both safety and helpfulness, using ADB and Appium for observations, actions and success checks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md) |

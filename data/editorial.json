@@ -63143,5 +63143,200 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "deedchain",
+    "kind": "benchmark",
+    "url": "https://github.com/PillCrew/deedchain",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Benchmark of whether browser agents' final reports match what they did: 24 frozen HTML tasks, including impossible ones and wrong draft reports, scored by rule-based claim checks without an LLM judge.",
+    "verify_terms": [
+      "deedchain"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PillCrew/deedchain/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "evaluates",
+        "target_id": "url:ef244017b1460269fc68",
+        "evidence_url": "https://raw.githubusercontent.com/PillCrew/deedchain/HEAD/README.md"
+      }
+    ],
+    "notes": "Published by PillCrew. The deedchain package (0.5.0 at review) has no runtime dependencies. Adapters score a Browser Use Cloud run through its runs API, a browser_use AgentHistoryList, or an AgentRun JSONL transcript; benchmarks/run_suite.py drives Browser Use Cloud over the 24 fixtures hosted on the project's GitHub Pages site. A stdio MCP server exposes verify_report and submit_run, and docs/index.html runs a JavaScript port of the scorer. The README reports two live probes against Browser Use Cloud with gpt-5.6-luna (10 outcome tasks and 8 count tasks) in which no false reports were found, and says its thesis that agents misreport at a meaningful rate is not yet supported by live data. At the reviewed commit the tree has no submissions directory or LEADERBOARD.md; examples/submission.json is a three-run example. For tasks outside the failure category, success comes from the hosted run's own terminal status, not from an independent page-state check. The extractor covers a fixed English vocabulary, and DISPLACEMENT is reserved and always 0 (KNOWN_LIMITATIONS.md). No release or tag. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source with the frozen task suite, fixtures, scorer, adapters, live-run harness, MCP server and browser demo; no release and no committed leaderboard submissions.",
+      "repository_revision": "3b2e68c963885706506fa77ced3d9be69742eea3",
+      "benchmark_protocol": {
+        "focus": [
+          "report fidelity of browser agents",
+          "admitting failure on impossible tasks",
+          "correcting a wrong draft report"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "agent-defined browser observations of static HTML fixtures",
+          "the agent's final text report for scoring"
+        ],
+        "actions": [
+          "agent-defined browser actions"
+        ],
+        "evaluation": "Rule-based extraction of action, count, price, percent and outcome claims from the final report, each adjudicated against gold metrics and a gold outcome recorded by a reference script over the SHA-256-pinned fixture. Truthfulness is 100 × verified / (verified + contradicted); each run is also placed in a success-versus-report quadrant with omission, fabrication and exaggeration counts. No LLM judge. In the live harness, success is false for failure-category tasks and otherwise the hosted run's terminal status.",
+        "counts": [
+          {
+            "value": 24,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "frozen fidelity suite (task JSON files under benchmarks/tasks)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/PillCrew/deedchain/git/trees/3b2e68c963885706506fa77ced3d9be69742eea3?recursive=1"
+          },
+          {
+            "value": 7,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "failure category (impossible by design)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/PillCrew/deedchain/git/trees/3b2e68c963885706506fa77ced3d9be69742eea3?recursive=1"
+          },
+          {
+            "value": 7,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "temptation category (wrong draft report to correct)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/PillCrew/deedchain/git/trees/3b2e68c963885706506fa77ced3d9be69742eea3?recursive=1"
+          },
+          {
+            "value": 11,
+            "unit": "synthetic scoring cases",
+            "qualifier": "exact",
+            "population": "deterministic extractor regression set (benchmarks/cases.py)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/PillCrew/deedchain/HEAD/README.md"
+          }
+        ],
+        "notes": "Task counts are task definition JSON files at the reviewed commit; each has a paired HTML fixture. Remaining categories: nav 3, form 3, extract 2, state 2. Tolerances are ±2 percentage points for percentages and ±20% relative for other numbers. Scores apply only to the fixed claim vocabulary.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/PillCrew/deedchain/HEAD/README.md",
+          "https://api.github.com/repos/PillCrew/deedchain/git/trees/3b2e68c963885706506fa77ced3d9be69742eea3?recursive=1",
+          "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/deedchain/tasks.py",
+          "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/benchmarks/run_suite.py",
+          "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/KNOWN_LIMITATIONS.md",
+          "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/benchmarks/tasks/temptation/tempt_wrong_count.json"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/PillCrew/deedchain/git/trees/3b2e68c963885706506fa77ced3d9be69742eea3?recursive=1",
+        "sha256": "61bcd81069eceb9fb9a8f1946c6bd06ef4ad9787243ee459d8bf0ae731a956a1",
+        "retrieved_at": "2026-10-19T06:16:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/deedchain/tasks.py",
+        "sha256": "a23f051e03f6bc47c6dc10facf1ef3ece7d3adff71a458656cf5479a96450cd0",
+        "retrieved_at": "2026-10-19T06:16:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/benchmarks/tasks/temptation/tempt_wrong_count.json",
+        "sha256": "869d8091ec261aa43cc8d0e0d1a43946c23632c6665ae2c59fb41dccf52f98a4",
+        "retrieved_at": "2026-10-19T06:16:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/benchmarks/run_suite.py",
+        "sha256": "c5997ea018a18ef5db08b8dd5295e46291ecb2efb1d06c1497d591220c60558d",
+        "retrieved_at": "2026-10-19T06:16:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/deedchain/adapters/browser_use_cloud.py",
+        "sha256": "2d7b33f7a2d773fbc428b5009f506590b1f0dfcbef51ae781a08f9145455d828",
+        "retrieved_at": "2026-10-19T06:16:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/KNOWN_LIMITATIONS.md",
+        "sha256": "3c7db78684928b9d81a5c8f146a5438c724b7703c20b87e7ce2fee8cb3c248ee",
+        "retrieved_at": "2026-10-19T06:16:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/deedchain/mcp_server.py",
+        "sha256": "587009f2d4c017b8a7e6e30ec9e126d00b71fd6bfef13ce6f3241f59e1ac167c",
+        "retrieved_at": "2026-10-19T06:16:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/PillCrew/deedchain/3b2e68c963885706506fa77ced3d9be69742eea3/LICENSE",
+        "sha256": "33439fe076663b472bafae7360b5443097d6b1dc3f1aee4800d19ec138234916",
+        "retrieved_at": "2026-10-19T06:16:38Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "089251b6dd29051380ba9135d4f08197f6970db52e6cb1887953140c09c7631f",
+    "reviewed_at": "2026-10-19T06:17:46Z"
   }
 ]

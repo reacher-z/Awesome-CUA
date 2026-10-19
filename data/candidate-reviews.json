@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e4484d99a5ebf9c83b6a",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/27878",
+    "decision": "alias",
+    "target_id": "arxiv:2312.15820",
+    "reason": "AAAI proceedings page for the AAAI-24 edition (DOI 10.1609/aaai.v38i2.27878, pages 1165-1173) of the indexed WebVLN preprint; title and six-author list match arXiv 2312.15820."
   }
 ]

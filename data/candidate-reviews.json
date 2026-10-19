@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d4e330b02a5d6213ca27",
+    "url": "https://openreview.net/forum?id=klOr9y9nMU",
+    "decision": "alias",
+    "target_id": "arxiv:2510.15455",
+    "reason": "OpenReview forum of the NeurIPS 2025 edition of the indexed CORE paper on reducing UI exposure in mobile agents; same title and authors."
   }
 ]

@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-54 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+55 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (35)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [AgentCIBench](https://huggingface.co/datasets/UKPLab/agentcibench) | web | [2606.23189](https://arxiv.org/abs/2606.23189) (2026) | [117 scenarios](https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md) | data cc-by-4.0 | Contextual-integrity benchmark for computer-use agents: 117 synthetic multi-app workspace scenarios that pair under-specified requests with must-share and must-not-share lists, plus a 50-scenario live-UI subset. | [✓ 2026‑10‑19](https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md) |
 | [AppWorld](https://github.com/StonyBrookNLP/appworld) · [leaderboard](https://appworld.dev/appworld/leaderboard) | unspecified | [2407.18901](https://arxiv.org/abs/2407.18901) (2024) | [750 tasks](https://arxiv.org/abs/2407.18901) · [9 applications](https://arxiv.org/abs/2407.18901) | code Apache-2.0 | Simulated applications, user data, and state-based task checks for evaluating agents that interact through APIs and code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stonybrooknlp/appworld/HEAD/README.md) |
 | [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
 | [CRAB](https://github.com/camel-ai/crab) | desktop, android | [2407.01511](https://arxiv.org/abs/2407.01511) (2024) | [120 tasks](https://arxiv.org/abs/2407.01511) | — | Cross-environment benchmark framework for multimodal agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/camel-ai/crab/HEAD/README.md) |

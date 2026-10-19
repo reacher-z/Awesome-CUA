@@ -63143,5 +63143,217 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:d7f35409d35584385097",
+    "name": "AgentCIBench",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/UKPLab/agentcibench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "cross-app"
+    ],
+    "summary": "Contextual-integrity benchmark for computer-use agents: 117 synthetic multi-app workspace scenarios that pair under-specified requests with must-share and must-not-share lists, plus a 50-scenario live-UI subset.",
+    "scope": "core",
+    "verify_terms": [
+      "AgentCIBench"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+    ],
+    "documented_by": [
+      "2606.23189"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "licenses.data",
+      "details.benchmark_protocol"
+    ],
+    "notes": "Each scenario is a JSON snapshot of app states in the OpenApps workspace (messenger, todo, calendar, code editor, maps and shopping apps) with a task prompt and a disclosure policy. The card's test split serves the state-grounded reasoning track; test_e2e is a 50-scenario subset of it (all IDs overlap) for runs in the rendered UI, which the code README describes as a local multi-app web environment driven through Playwright; seeds holds 36 disjoint hand-written scenarios. The card says source is seed or mcts, but every released row reads seed or legacy_pilot_seed. The code repository linked as ukplab/arxiv2026-agentcibench now resolves to UKPLab/emnlp2026-agentcibench (GitHub API), and the card's second code link, agentcibench/agentcibench, returns 404. The 67.9% average leakage over 15 agents is a publisher figure and was not reproduced. CC BY 4.0 is the card's data declaration; the code is a separate Apache-2.0 release.",
+    "details": {
+      "hub_id": "UKPLab/agentcibench",
+      "hub_revision": "f5523cb986828ee77bc505120a933f114bbcf4f3",
+      "gated": false,
+      "disabled": false,
+      "download_url": "https://huggingface.co/datasets/UKPLab/agentcibench/tree/f5523cb986828ee77bc505120a933f114bbcf4f3",
+      "repository_url": "https://github.com/UKPLab/emnlp2026-agentcibench",
+      "repository_revision": "7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6",
+      "benchmark_protocol": {
+        "focus": [
+          "contextual-integrity compliance of computer-use agents",
+          "information disclosure across personal apps"
+        ],
+        "setting": "mixed",
+        "observations": [
+          "decoded app states",
+          "rendered app UI (live-UI subset)",
+          "natural-language task prompts"
+        ],
+        "actions": [
+          "GUI actions in the rendered workspace (live-UI subset)",
+          "content shared or sent through the workspace apps"
+        ],
+        "evaluation": "The code release scores each run for utility (required items shared) and contextual-integrity violation (prohibited items leaked), combining deterministic text matching against the scenario's must-share and must-not-share lists with an LLM judge at temperature 0; summaries report utility rate, leak rate and average reward.",
+        "counts": [
+          {
+            "value": 117,
+            "unit": "scenarios",
+            "population": "test split",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+          },
+          {
+            "value": 50,
+            "unit": "scenarios",
+            "population": "test_e2e split (subset of test used for live-UI evaluation)",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+          },
+          {
+            "value": 36,
+            "unit": "scenarios",
+            "population": "seeds split (hand-written seed scenarios)",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+          },
+          {
+            "value": 75,
+            "unit": "scenarios",
+            "population": "test split, failure mode task_ambiguity_overshare",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+          },
+          {
+            "value": 24,
+            "unit": "scenarios",
+            "population": "test split, failure mode recipient_misalignment",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+          },
+          {
+            "value": 18,
+            "unit": "scenarios",
+            "population": "test split, failure mode visual_co_location",
+            "qualifier": "exact",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md"
+          }
+        ],
+        "notes": "Setting is mixed: the reasoning track scores responses over decoded app states, while the test_e2e subset runs in the rendered web UI. A script recount of the released JSONL files matches every reported split and failure-mode count. The 50 test_e2e IDs all appear in test, so the two splits are not added; seeds share no IDs with either.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md",
+          "https://huggingface.co/datasets/UKPLab/agentcibench/resolve/f5523cb986828ee77bc505120a933f114bbcf4f3/data/test-00000-of-00001.jsonl",
+          "https://huggingface.co/datasets/UKPLab/agentcibench/resolve/f5523cb986828ee77bc505120a933f114bbcf4f3/data/test_e2e-00000-of-00001.jsonl",
+          "https://huggingface.co/datasets/UKPLab/agentcibench/resolve/f5523cb986828ee77bc505120a933f114bbcf4f3/data/seeds-00000-of-00001.jsonl",
+          "https://raw.githubusercontent.com/UKPLab/emnlp2026-agentcibench/7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6/README.md",
+          "https://raw.githubusercontent.com/UKPLab/emnlp2026-agentcibench/7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6/mcts/reward_judge.py",
+          "https://raw.githubusercontent.com/UKPLab/emnlp2026-agentcibench/7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6/eval/metrics.py"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "url": "https://huggingface.co/api/datasets/UKPLab/agentcibench/revision/f5523cb986828ee77bc505120a933f114bbcf4f3",
+        "sha256": "2ae68d96a7bff7a2eb78f323c3e87b09768812c06f2a2e0aadbaee2d627f5f7d",
+        "retrieved_at": "2026-10-19T06:04:29Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_id",
+          "details.hub_revision",
+          "details.gated",
+          "details.disabled",
+          "details.download_url"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/UKPLab/agentcibench/resolve/f5523cb986828ee77bc505120a933f114bbcf4f3/data/test-00000-of-00001.jsonl",
+        "sha256": "709d43e4e09d2f3558d9290b8bdf4c15e95e4fefc29a56be6d12b52e646c99d7",
+        "retrieved_at": "2026-10-19T06:04:29Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/UKPLab/agentcibench/resolve/f5523cb986828ee77bc505120a933f114bbcf4f3/data/test_e2e-00000-of-00001.jsonl",
+        "sha256": "9aced6b0d1e1368c28b3b110ba85e79a935b501a03a3c1b48fb97996dd4c05b2",
+        "retrieved_at": "2026-10-19T06:04:30Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ]
+      },
+      {
+        "url": "https://huggingface.co/datasets/UKPLab/agentcibench/resolve/f5523cb986828ee77bc505120a933f114bbcf4f3/data/seeds-00000-of-00001.jsonl",
+        "sha256": "1b1a458c15ac64d63b7f6c20fab23740115a2b09d151ceeeb6f2c353c97f5418",
+        "retrieved_at": "2026-10-19T06:04:30Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/UKPLab/emnlp2026-agentcibench/7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6/README.md",
+        "sha256": "f836c578d6fea20f7b38092071a9646d2db19b422fe6117d57e6de57ab5e1324",
+        "retrieved_at": "2026-10-19T06:04:30Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "details.repository_url",
+          "details.repository_revision",
+          "details.benchmark_protocol"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/UKPLab/emnlp2026-agentcibench/7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6/mcts/reward_judge.py",
+        "sha256": "9527a682f91c5d7455853f392096ad47f117e35a14fda01b03969a4ef9c3bdc5",
+        "retrieved_at": "2026-10-19T06:04:30Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/UKPLab/emnlp2026-agentcibench/7b3fad424d0c5a450ac3bc3dc4050c38094c6dc6/eval/metrics.py",
+        "sha256": "c51a95f1e0df49d627e986e6be845e3917260f4d1e82991bd88fecb6724dda24",
+        "retrieved_at": "2026-10-19T06:04:30Z",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ]
+      }
+    ],
+    "read_basis": "Read the pinned dataset card, Hub API revision record and all three JSONL splits (rows recounted by script), plus the code README, mcts/reward_judge.py and eval/metrics.py at commit 7b3fad42 and the GitHub API records for both linked code repositories. No benchmark was run.",
+    "reviewed_sha256": "3e34a24a57ba5602f25711c464635970a14582ae8e39b146f932f81e65950cde",
+    "reviewed_at": "2026-10-19T06:05:28Z"
   }
 ]

@@ -2,15 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-682 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+683 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
+**Contents:** [Benchmarks (87)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (559)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AgentBench](https://github.com/THUDM/AgentBench) · [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vRR3Wl7wsCgHpwUw1_eUXW_fptAPLL3FkhnW_rua0O1Ji_GIVrpTjY5LaKAhwO-WeARjnY_KNw0SYNJ/pubhtml) | cross-platform, web | [2308.03688](https://arxiv.org/abs/2308.03688) (2023) | — | code Apache-2.0 | Agent evaluation suite with containerized tasks and a function-calling interface, including operating-system and shopping environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AgentBench/HEAD/README.md) |
+| [AgentCIBench](https://huggingface.co/datasets/UKPLab/agentcibench) | web | [2606.23189](https://arxiv.org/abs/2606.23189) (2026) | [117 scenarios](https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md) | data cc-by-4.0 | Contextual-integrity benchmark for computer-use agents: 117 synthetic multi-app workspace scenarios that pair under-specified requests with must-share and must-not-share lists, plus a 50-scenario live-UI subset. | [✓ 2026‑10‑19](https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md) |
 | [AgentDAM](https://github.com/facebookresearch/ai-agent-privacy) | web | [2503.09780](https://arxiv.org/abs/2503.09780) (2025) | — | — | Web-agent benchmark for measuring unnecessary use of sensitive personal information during end-to-end task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md) |
 | [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) | web | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | data Custom AgentRewardBench Terms of Use | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md) |
 | [AndroidArena](https://github.com/AndroidArenaAgent/AndroidArena) | android | [2402.06596](https://arxiv.org/abs/2402.06596) (2024) | — | — | Android environment for evaluating language-model-driven agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AndroidArenaAgent/AndroidArena/HEAD/README.md) |

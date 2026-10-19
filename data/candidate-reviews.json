@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:58cc6dd3cc1df0ea6305",
+    "url": "https://microsoft.github.io/Magma",
+    "decision": "alias",
+    "target_id": "github:microsoft/magma",
+    "reason": "Project website for the indexed Magma repository, published from its homepage branch."
   }
 ]

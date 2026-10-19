@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b3adba37854ced041632",
+    "url": "https://modelscope.cn/collections/extreme1228/ScaleCUA",
+    "decision": "alias",
+    "target_id": "github:thudm/scale-cua",
+    "reason": "ModelScope release collection of checkpoints and a dataset for the indexed THUDM SCALE-CUA project, linked from that repository's README header."
   }
 ]

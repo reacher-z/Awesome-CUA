@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7d58642e4d7e736049f3",
+    "url": "https://penghao-wu.github.io/GUI_Reflection",
+    "decision": "alias",
+    "target_id": "arxiv:2506.08012",
+    "reason": "Project website for the indexed GUI-Reflection paper (arXiv 2506.08012) on self-reflection training for multimodal GUI models."
   }
 ]

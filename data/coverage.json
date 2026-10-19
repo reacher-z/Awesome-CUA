@@ -1,17 +1,17 @@
 {
   "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
-  "bibliographic_records": 2718,
-  "arxiv_active_records": 2705,
+  "total_records": 3182,
+  "curated_records": 1616,
+  "bibliographic_records": 2721,
+  "arxiv_active_records": 2708,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
-  "arxiv_archive_records": 2841,
+  "arxiv_archive_records": 2844,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1564,
-  "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "metadata_only_records": 1566,
+  "discovery_identifiers": 4245,
+  "unindexed_candidates": 902,
   "non_resource_candidates": 97,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -192,22 +192,22 @@
     "dataset": 86,
     "framework": 75,
     "infrastructure": 14,
-    "model": 98,
-    "paper": 2700,
+    "model": 99,
+    "paper": 2703,
     "product": 20,
     "survey": 18,
     "tool": 20
   },
   "curated_by_environment": {
     "android": 300,
-    "cross-platform": 197,
-    "desktop": 322,
+    "cross-platform": 198,
+    "desktop": 323,
     "harmonyos": 3,
     "ios": 21,
     "linux": 49,
     "macos": 30,
-    "unspecified": 377,
-    "web": 621,
+    "unspecified": 378,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -270,13 +270,13 @@
     },
     "model": {
       "android": 24,
-      "cross-platform": 47,
-      "desktop": 24,
+      "cross-platform": 48,
+      "desktop": 25,
       "ios": 4,
       "linux": 6,
       "macos": 4,
       "unspecified": 2,
-      "web": 28,
+      "web": 29,
       "windows": 5
     },
     "paper": {
@@ -287,7 +287,7 @@
       "ios": 8,
       "linux": 18,
       "macos": 14,
-      "unspecified": 341,
+      "unspecified": 342,
       "web": 441,
       "windows": 37
     },
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 182,
+    "code": 183,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -1185,13 +1185,13 @@
         "state": "success"
       },
       "discovered": 15,
-      "indexed": 9,
-      "indexed_resources": 9,
-      "resolved_aliases": 0,
-      "curated": 9,
+      "indexed": 10,
+      "indexed_resources": 10,
+      "resolved_aliases": 1,
+      "curated": 10,
       "excluded": 0,
       "set_aside": 1,
-      "unindexed": 5
+      "unindexed": 4
     },
     {
       "id": "release-thudm-scalecua",
@@ -1365,13 +1365,13 @@
         "state": "success"
       },
       "discovered": 11,
-      "indexed": 6,
-      "indexed_resources": 6,
+      "indexed": 7,
+      "indexed_resources": 7,
       "resolved_aliases": 0,
-      "curated": 6,
+      "curated": 7,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 5
+      "unindexed": 4
     },
     {
       "id": "release-seg2click",
@@ -1455,13 +1455,13 @@
         "state": "success"
       },
       "discovered": 12,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 8,
+      "indexed_resources": 8,
       "resolved_aliases": 0,
-      "curated": 7,
+      "curated": 8,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 5
+      "unindexed": 4
     },
     {
       "id": "release-mobilegympp",
@@ -1695,13 +1695,13 @@
         "state": "success"
       },
       "discovered": 29,
-      "indexed": 2,
-      "indexed_resources": 2,
-      "resolved_aliases": 0,
-      "curated": 2,
+      "indexed": 3,
+      "indexed_resources": 3,
+      "resolved_aliases": 1,
+      "curated": 3,
       "excluded": 0,
       "set_aside": 6,
-      "unindexed": 21
+      "unindexed": 20
     },
     {
       "id": "release-multiui",
@@ -1755,13 +1755,13 @@
         "state": "success"
       },
       "discovered": 12,
-      "indexed": 5,
-      "indexed_resources": 5,
-      "resolved_aliases": 0,
-      "curated": 5,
+      "indexed": 6,
+      "indexed_resources": 6,
+      "resolved_aliases": 1,
+      "curated": 6,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 7
+      "unindexed": 6
     },
     {
       "id": "release-scienceboard",

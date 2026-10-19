@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (48)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
 
 ## Benchmarks
 
@@ -77,6 +77,7 @@
 | [Phi-Ground checkpoint](https://huggingface.co/microsoft/Phi-Ground) | cross-platform | — | weights mit | Microsoft Phi-Ground GUI grounding checkpoint fine-tuned from Phi-3.5-vision-instruct, shipped as two PyTorch weight shards with custom Phi-3-V configuration and processing code under MIT. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/Phi-Ground) |
 | [POINTS-GUI](https://github.com/Tencent/POINTS-GUI) | cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | — | POINTS-GUI-G-8B GUI grounding model, trained from a POINTS-1.5 base without native grounding through a data pipeline that unifies coordinates, filters noise and adds hard cases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Tencent/POINTS-GUI/HEAD/README.md) |
 | [POINTS-GUI-G 8B](https://huggingface.co/tencent/POINTS-GUI-G) | web, desktop, cross-platform | [2602.06391](https://arxiv.org/abs/2602.06391) (2026) | weights other | A specialized interface-grounding checkpoint that returns normalized point coordinates for a requested element in a screenshot. | [✓ 2026‑10‑17](https://huggingface.co/tencent/POINTS-GUI-G/raw/main/README.md) |
+| [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | cross-platform, desktop, web | [2511.21631](https://arxiv.org/abs/2511.21631) (2025) | code Apache-2.0 | Alibaba Qwen open-weight vision-language model series in dense and MoE sizes; its README lists PC and mobile GUI operation among the capabilities and ships computer-use and mobile-agent cookbooks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md) |
 | [ScaleCUA](https://github.com/OpenGVLab/ScaleCUA) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | code Apache-2.0 | Computer-use model family trained with cross-platform interaction data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/ScaleCUA/HEAD/README.md) |
 | [SeeClick](https://github.com/njucckevin/SeeClick) | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | code Apache-2.0 | GUI grounding model trained to locate visual interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/njucckevin/SeeClick/HEAD/readme.md) |
 | [Seg2Click Qwen2.5-VL 3B](https://huggingface.co/jcwang0602/Seg2Click-Qwen2.5-VL-3B) | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | weights other | Seg2Click checkpoint based on Qwen2.5-VL-3B with a custom action-mask decoder. | [✓ 2026‑10‑17](https://huggingface.co/jcwang0602/Seg2Click-Qwen2.5-VL-3B/raw/main/README.md) |

@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,107; 523 ⭐) · [2025](#2025) (700; 368 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,107; 523 ⭐) · [2025](#2025) (701; 369 ⭐) · [2024](#2024) (429; 180 ⭐) · [2023](#2023) (205; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -1182,6 +1182,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2025-11-27 | [Training High-Level Schedulers with Execution-Feedback Reinforcement Learning for Long-Horizon GUI Automation](https://arxiv.org/abs/2511.22235) | ⭐ reviewed | [long-horizon](topics/long-horizon.md), [planning](topics/planning.md), [reinforcement-learning](topics/reinforcement-learning.md), [state-tracking](topics/state-tracking.md) |
 | 2025-11-27 | [Real-Time Procedural Learning From Experience for AI Agents](https://arxiv.org/abs/2511.22074) | metadata |  |
 | 2025-11-27 | [A Safety and Security Framework for Real-World Agentic Systems](https://arxiv.org/abs/2511.21990) | metadata |  |
+| 2025-11-26 | [Qwen3-VL Technical Report](https://arxiv.org/abs/2511.21631) | ⭐ reviewed | [screen-understanding](topics/screen-understanding.md) |
 | 2025-11-26 | [Prune4Web: DOM Tree Pruning Programming for Web Agent](https://arxiv.org/abs/2511.21398) | ⭐ reviewed | [efficiency](topics/efficiency.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
 | 2025-11-25 | [OpenApps: Simulating Environment Variations to Measure UI-Agent Reliability](https://arxiv.org/abs/2511.20766) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [robustness](topics/robustness.md) |
 | 2025-11-25 | [Image2Gcode: Image-to-G-code Generation for Additive Manufacturing Using Diffusion-Transformer Model](https://arxiv.org/abs/2511.20636) | metadata |  |
@@ -1984,6 +1985,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2024-09-22 | [MobileViews: A Million-scale and Diverse Mobile GUI Dataset](https://arxiv.org/abs/2409.14337) | ⭐ reviewed | [data-generation](topics/data-generation.md), [screen-understanding](topics/screen-understanding.md) |
 | 2024-09-21 | [StateAct: Enhancing LLM Base Agents via Self-prompting and State-tracking](https://arxiv.org/abs/2410.02810) | ⭐ reviewed | [memory](topics/memory.md), [planning](topics/planning.md) |
 | 2024-09-18 | [The Impact of Element Ordering on LM Agent Performance](https://arxiv.org/abs/2409.12089) | ⭐ reviewed | [evaluation](topics/evaluation.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
+| 2024-09-18 | [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](https://arxiv.org/abs/2409.12191) | metadata |  |
 | 2024-09-17 | [Grounded GUI Understanding for Vision-Based Spatial Intelligent Agent: Exemplified by Extended Reality Apps](https://arxiv.org/abs/2409.10811) | ⭐ reviewed | [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
 | 2024-09-17 | [EIA: Environmental Injection Attack on Generalist Web Agents for Privacy Leakage](https://arxiv.org/abs/2409.11295) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
 | 2024-09-16 | [NaviQAte: Functionality-Guided Web Application Navigation](https://arxiv.org/abs/2409.10741) | ⭐ reviewed | [automation](topics/automation.md), [web-navigation](topics/web-navigation.md) |
@@ -2359,6 +2361,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2023-09-11 | [Multi3DRefer: Grounding Text Description to Multiple 3D Objects](https://arxiv.org/abs/2309.05251) | metadata |  |
 | 2023-09-08 | [Four Ways to Improve Verbo-visual Fusion for Dense 3D Visual Grounding](https://arxiv.org/abs/2309.04561) | metadata |  |
 | 2023-09-05 | [Robust frequency-dependent diffusion kurtosis computation using an efficient direction scheme, axisymmetric modelling, and spatial regularization](https://arxiv.org/abs/2309.02319) | metadata |  |
+| 2023-08-31 | [YaRN: Efficient Context Window Extension of Large Language Models](https://arxiv.org/abs/2309.00071) | metadata |  |
 | 2023-08-29 | [AutoDroid: LLM-powered Task Automation in Android](https://arxiv.org/abs/2308.15272) | ⭐ reviewed | [memory](topics/memory.md), [mobile-navigation](topics/mobile-navigation.md) |
 | 2023-08-28 | [Universal quantum computation using atoms in cross-cavity systems](https://arxiv.org/abs/2308.14881) | metadata |  |
 | 2023-08-28 | [Fiber optic computing using distributed feedback](https://arxiv.org/abs/2308.14504) | metadata |  |

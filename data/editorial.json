@@ -63143,5 +63143,117 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Qwen3-VL",
+    "kind": "model",
+    "url": "https://github.com/QwenLM/Qwen3-VL",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "summary": "Alibaba Qwen open-weight vision-language model series in dense and MoE sizes; its README lists PC and mobile GUI operation among the capabilities and ships computer-use and mobile-agent cookbooks.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Qwen3-VL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md"
+    ],
+    "notes": "General-purpose vision-language model family; GUI operation is one listed capability, so the record is adjacent rather than a dedicated computer-use model. The inspected tree contains cookbooks (including computer_use.ipynb and mobile_agent.ipynb), evaluation scripts, qwen-vl-finetune training code and qwen-vl-utils; checkpoints are distributed separately on Hugging Face and ModelScope and are not counted here. The repository previously carried the Qwen2-VL and Qwen2.5-VL names (same GitHub repository 849239437), recorded as repository aliases. Apache-2.0 is the repository code license; each checkpoint card declares its own weights terms, which were not reviewed. Reported GUI-agent benchmark scores were not reproduced.",
+    "details": {
+      "availability": "Published source and cookbooks; checkpoints hosted on Hugging Face and ModelScope",
+      "repository_url": "https://github.com/QwenLM/Qwen3-VL"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41",
+        "retrieved_at": "2026-10-18T11:05:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-VL/git/trees/main?recursive=1",
+        "sha256": "3a4ef8ed036536d06be32fed705c42f96edcc261f6d1119e605eb9a02e460f5e",
+        "retrieved_at": "2026-10-18T11:06:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-18T11:06:02Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fc21106258c51e0b91a652eef12f5925becb146ea8b8c79a4251ac2e89a2f1ac",
+    "reviewed_at": "2026-10-18T11:07:02Z",
+    "documented_by": [
+      "2511.21631"
+    ]
+  },
+  {
+    "id": "arxiv:2511.21631",
+    "name": "Qwen3-VL Technical Report",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.21631",
+    "summary": "Describes the Qwen3-VL dense and MoE vision-language models, with 256K-token interleaved context, interleaved-MRoPE, DeepStack and textual video timestamps; a general foundation model aimed partly at agentic use.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "screen-understanding"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Qwen3-VL Technical Report"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2309.00071%2C2409.12191%2C2511.21631&max_results=3"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract, which positions the models for agentic decision-making but names no GUI environment; the GUI-operation claim comes from the curated Qwen3-VL repository README. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3eebc4a3be1eecf990598a5e872dbb1a8c2b55354c418a7bd47b6c9648897f80",
+    "reviewed_at": "2026-10-18T11:08:13Z"
   }
 ]

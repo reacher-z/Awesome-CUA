@@ -538,5 +538,59 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:qwenlm/qwen2.5-vl",
+    "target_id": "github:qwenlm/qwen3-vl",
+    "repository_id": 849239437,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:08:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen2.5-VL",
+        "resolved_url": "https://api.github.com/repositories/849239437",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:06:42Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      },
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "resolved_url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:05:59Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:qwenlm/qwen2-vl",
+    "target_id": "github:qwenlm/qwen3-vl",
+    "repository_id": 849239437,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:08:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen2-VL",
+        "resolved_url": "https://api.github.com/repositories/849239437",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:06:43Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      },
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "resolved_url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:05:59Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      }
+    ]
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:edf0e1fc902532c34c73",
+    "url": "https://openreview.net/forum?id=lsAY6fWsog",
+    "decision": "alias",
+    "target_id": "arxiv:2504.06821",
+    "reason": "OpenReview forum of the COLM 2025 edition of the indexed paper Inducing Programmatic Skills for Agentic Tasks; same title and the same four authors in the same order."
   }
 ]

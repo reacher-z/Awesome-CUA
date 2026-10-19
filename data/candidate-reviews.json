@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c94877149df8958a590b",
+    "url": "https://crawl4ai.com",
+    "decision": "out_of_scope",
+    "reason": "crawl4ai.com is the hosted API for the open-source Crawl4AI crawler, whose endpoints turn a URL into Markdown or typed JSON, run web searches, return Google results pages as data and answer questions with sources. It retrieves and extracts page content for LLM pipelines and does not let an agent operate a web interface, so it is a crawler outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:37:45Z",
+    "evidence": {
+      "url": "https://crawl4ai.com",
+      "sha256": "e82d847bb486f3a3be0853e7cfd75ff8b5eb9655e5c643a820c39c3f9d4a4db6",
+      "retrieved_at": "2026-10-19T06:18:13Z"
+    }
   }
 ]

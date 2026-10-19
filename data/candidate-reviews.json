@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:1d0a3816a2803ce4081d",
+    "url": "https://chenwu.io/attack-agent",
+    "decision": "alias",
+    "target_id": "github:chenwu98/agent-attack",
+    "reason": "Project website for the indexed VisualWebArena-Adv adversarial web agent repository and its paper arxiv:2406.12814; it links that repository's code and data."
   }
 ]

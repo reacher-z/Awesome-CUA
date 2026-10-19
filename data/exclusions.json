@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2610.09484",
+    "name": "MIMESIS: Learning User Simulators as Training Environments for Interactive Agents",
+    "url": "https://arxiv.org/abs/2610.09484",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract trains a user simulator on human conversations and uses it for multi-turn reinforcement learning of conversational agents. Its eight agent environments are UserRL text dialogue gyms (travel, function calling, persuasion and similar tasks), with no GUI, browser or device interaction.",
+    "reviewed_at": "2026-10-19T08:39:30Z",
+    "metadata_fingerprint": "6924c7328e4c564c3b245d0f6a80f52e143cb1682a9667156d8e01245ee1c88a",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
+      "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
+      "retrieved_at": "2026-10-17T12:31:39Z"
+    }
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ced988a0cde47274f72f",
+    "url": "https://midscenejs.com/ios-getting-started",
+    "decision": "alias",
+    "target_id": "github:web-infra-dev/midscene",
+    "reason": "iOS guide in the documentation site of the indexed Midscene.js repository; it now redirects to midscenejs.com/platforms/ios."
   }
 ]

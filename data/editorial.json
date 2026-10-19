@@ -63143,5 +63143,139 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Atlas (dortanes)",
+    "kind": "agent",
+    "url": "https://github.com/dortanes/atlas",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "planning",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "summary": "Archived Electron overlay agent for Windows that sends full-screen captures to Gemini Computer Use or a JSON action loop and executes the returned clicks, typing and scrolls with robotjs.",
+    "aliases": [
+      "Atlas"
+    ],
+    "verify_terms": [
+      "Atlas"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dortanes/atlas/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Unrelated to OpenAI's ChatGPT Atlas and to OS-Atlas. GitHub marks the repository archived; the README calls v0.2.3 the final version and says Atlas runs only on Windows. AgentLoop.ts classifies each command as chat, direct (shell or hotkey, no screenshot) or action. Action commands use ComputerUseLoop.ts when the model supports Gemini's computer_use tool (Gemini 3.x per the README): it sends a plain screen capture from screenshot-desktop, and computerUseMapper.ts converts click_at, type_text_at, scroll_at, drag_and_drop and similar calls from Gemini's 0-999 grid to screen pixels. Other models run ActionLoop.ts, which asks for JSON actions with coordinates rescaled to the screen. MouseController.ts and the keyboard controller act through @hurdlegroup/robotjs; PowerShell commands, web search and local file search are further actions. The app adds a 2-5 step task planner, a permission prompt for risky actions and Gemini safety confirmations, personas with memory, ElevenLabs or Yandex Alice speech output and local Vosk speech input. Root LICENSE is Apache-2.0; not a fork. Code was read, not run.",
+    "details": {
+      "availability": "Archived public source with a Windows installer in GitHub releases (v0.1.0 to v0.2.3); no further development.",
+      "repository_revision": "3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8",
+      "release_tag": "v0.2.3",
+      "package_version": "0.2.3"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/electron/main/services/agent/AgentLoop.ts",
+        "sha256": "9582fb0d4b113f4a41fc9f0a5f5e4295ef6e8d85f3179aefb02687e9e5586da6",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/electron/main/services/agent/ComputerUseLoop.ts",
+        "sha256": "63f1698d83f5f3c92f8a35b7a2b550e4838d5cad85d58a9828289a726a130e34",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/electron/main/services/agent/computerUseMapper.ts",
+        "sha256": "44f2e907cd2c7947f747222593d34f08b0715bccd22d998c9b55c89f7fb53718",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/electron/main/services/agent/ActionLoop.ts",
+        "sha256": "417d81df78f920bdfb4d2f030aeecc6286bebd6adf3d2e4b62a358e7148a9f32",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/electron/main/services/vision/ScreenCapture.ts",
+        "sha256": "0e9b6fcf16817811d139079427423e718692aa01cf839efe02a7c429fc418e92",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/electron/main/services/motor/MouseController.ts",
+        "sha256": "04f0db7f1c8ca2b68f29dbeb50f272b64d128938bd9f1e0ef8a61078a64ec59c",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/package.json",
+        "sha256": "cc8c396a18e643212183d529a89254f0fe666e5c8385702957504a19a5a4d2a7",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/dortanes/atlas/3d3d85b1b4c8e5eecdd70aadaa1baa355988e7f8/LICENSE",
+        "sha256": "2482d649475c8f5ba3907061c7b3f78a0aa5debc954a073421bf0b223bcb3de6",
+        "retrieved_at": "2026-10-19T06:12:57Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "108f89cfbcf19bb1186a8ead9ac7471b1d701eee7bb9590e8fefcd1ccd416d72",
+    "reviewed_at": "2026-10-19T06:13:28Z"
   }
 ]

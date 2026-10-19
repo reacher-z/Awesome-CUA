@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:362a8f9845a677c277c6",
+    "url": "https://openreview.net/forum?id=c6l7yA0HSq",
+    "decision": "alias",
+    "target_id": "arxiv:2411.06559",
+    "reason": "OpenReview page of the TMLR edition of the indexed WebDreamer paper (Is Your LLM Secretly a World Model of the Internet?); same title and authors."
   }
 ]

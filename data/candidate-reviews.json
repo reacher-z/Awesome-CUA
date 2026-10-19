@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:05d65eaf78a9799d9496",
+    "url": "https://sy-h.com",
+    "decision": "not_a_resource",
+    "reason": "Personal academic homepage of Siyuan Hu, linked from his name in the ShowUI-π author byline; a person's page listing many projects, not a resource."
   }
 ]

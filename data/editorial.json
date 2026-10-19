@@ -63143,5 +63143,52 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2607.25255",
+    "name": "SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.25255",
+    "summary": "SafeFlow tracks semantic taints from root requests through a multi-agent collaboration graph and validates whole workflows before irreversible actions. Tests cover ASB, AgentHarm, RedCode and SafeArena web tasks.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "workflow"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "SafeFlow: Semantic Information-Flow Control"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.25255v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.25255v2",
+        "sha256": "f1cd189b066a9fe6f022de5556b9f9649d8e745048f84352736dda23430df553",
+        "retrieved_at": "2026-10-19T08:43:17Z"
+      }
+    ],
+    "notes": "Reviewed against the exact-version v2 arXiv abstract page and v2 HTML full text. Adjacent multi-agent safety defense: SafeArena is the only web-agent benchmark among the four, and Section 5.1 and Tables 15-16 describe its 110 instances, like the others, through a shared schema of normalized tool traces and site-tool capability metadata. The paper names its code at https://github.com/Haowen-academic/SafeFlow. Experimental results have not been independently reproduced.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a913916a8ecf7d420752251c262e818af9aedb818e2ff96ff43d1521deed58e3",
+    "reviewed_at": "2026-10-19T08:44:28Z"
   }
 ]

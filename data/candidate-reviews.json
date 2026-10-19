@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:334c8e97e5c0387b7c5b",
+    "url": "https://modelscope.cn/studios/MobileAgentTest/computer_use",
+    "decision": "alias",
+    "target_id": "github:x-plug/mobileagent",
+    "reason": "ModelScope online demo of Mobile-Agent-v3.5, linked as such from the indexed Mobile-Agent repository; the app calls the hosted GUI-Owl agent service."
   }
 ]

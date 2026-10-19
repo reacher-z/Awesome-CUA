@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:bravegroup/autogui",
+    "target_id": "github:zjulihongxin/autogui",
+    "repository_id": 811706476,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T07:03:30Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/BraveGroup/AutoGUI",
+        "resolved_url": "https://api.github.com/repositories/811706476",
+        "repository_id": 811706476,
+        "full_name": "ZJULiHongxin/AutoGUI",
+        "html_url": "https://github.com/ZJULiHongxin/AutoGUI",
+        "retrieved_at": "2026-10-19T07:01:33Z",
+        "sha256": "0cb04554d69ce35de9aa795902b5edcce383c86e015df497c47aba673b793a09"
+      },
+      {
+        "url": "https://api.github.com/repos/ZJULiHongxin/AutoGUI",
+        "resolved_url": "https://api.github.com/repos/ZJULiHongxin/AutoGUI",
+        "repository_id": 811706476,
+        "full_name": "ZJULiHongxin/AutoGUI",
+        "html_url": "https://github.com/ZJULiHongxin/AutoGUI",
+        "retrieved_at": "2026-10-19T07:01:34Z",
+        "sha256": "0cb04554d69ce35de9aa795902b5edcce383c86e015df497c47aba673b793a09"
+      }
+    ]
   }
 ]

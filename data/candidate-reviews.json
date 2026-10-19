@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:23eceae42703a834bec7",
+    "url": "https://openreview.net/forum?id=BL4WBIfyrz",
+    "decision": "alias",
+    "target_id": "arxiv:2410.17883",
+    "reason": "OpenReview page of the ICLR 2025 spotlight edition of the indexed Lightweight Neural App Control (LiMAC) paper; same title and authors."
   }
 ]

@@ -75,7 +75,9 @@
       "scope",
       "relations",
       "details.benchmark_protocol",
-      "details.leaderboard_url"
+      "details.leaderboard_url",
+      "aliases",
+      "notes"
     ],
     "additional_evidence": [
       {
@@ -108,7 +110,11 @@
         "sha256": "fcb9497e93a8986407345d3012c872c9c2fed253420730fbea64ccfcace67dbb",
         "retrieved_at": "2026-10-16T11:34:59Z"
       }
-    ]
+    ],
+    "aliases": [
+      "OSWorld-Verified"
+    ],
+    "notes": "The reviewed README announces OSWorld-Verified (2025-07-28) as an update of this repository's tasks and environment code that fixes community-reported issues and adds AWS-parallel evaluation, and asks that results from the latest version be compared with the re-run results on the official site. The task manifests counted here belong to that current release."
   },
   {
     "name": "WebArena",

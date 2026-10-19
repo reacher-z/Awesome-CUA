@@ -341,7 +341,7 @@
     "url": "https://os-world.github.io",
     "decision": "alias",
     "target_id": "github:xlang-ai/osworld",
-    "reason": "Project website and leaderboard for the indexed OSWorld benchmark repository."
+    "reason": "Project website and leaderboard for the indexed OSWorld benchmark repository; it hosts the OSWorld-Verified results and is already the leaderboard_url of the curated OSWorld benchmark."
   },
   {
     "id": "url:7363d0c9ecdc9a0a089b",

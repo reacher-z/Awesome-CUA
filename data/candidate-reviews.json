@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:12f2d6b288b11497d7bc",
+    "url": "https://dev.to/nodeshiftcloud/build-a-browser-use-agent-with-deepseek-a-step-by-step-guide-2n59",
+    "decision": "out_of_scope",
+    "reason": "A NodeShift blog tutorial from January 2025 that provisions a cloud virtual machine and runs the already-curated Browser Use Web UI (github:browser-use/web-ui) with a DeepSeek model. It is a setup guide for an existing tool, not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:36:59Z",
+    "evidence": {
+      "url": "https://dev.to/nodeshiftcloud/build-a-browser-use-agent-with-deepseek-a-step-by-step-guide-2n59",
+      "sha256": "fdc6599e0a405206bfa233403210ecefa909c68cbfe6d895e0c1a8d4f8f1a648",
+      "retrieved_at": "2026-10-19T06:14:35Z"
+    }
   }
 ]

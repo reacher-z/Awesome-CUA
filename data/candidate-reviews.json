@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:09903761071cbd6f24da",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hu_ShowUI-p_Flow-based_Generative_Models_as_GUI_Dexterous_Hands_CVPR_2026_paper.html",
+    "decision": "alias",
+    "target_id": "arxiv:2512.24965",
+    "reason": "CVF Open Access page for the CVPR 2026 edition (pages 8130-8140) of the indexed ShowUI-π preprint, spelled ShowUI-p by the proceedings; title, abstract and three-author list match arXiv 2512.24965."
   }
 ]

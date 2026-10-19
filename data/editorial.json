@@ -63143,5 +63143,43 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Software Engineering for and with GUI Agent",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2608.09278",
+    "summary": "Reviews 336 GUI-agent papers from January 2018 to April 2026 through five research questions on landscape, architectures, evaluation, software lifecycle concerns such as testing and maintenance, and open challenges.",
+    "environments": [
+      "web",
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "evaluation",
+      "observability",
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Software Engineering for and with GUI Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.09278v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "62145ca8ab239824e5b95852771ae1ec3d300df2cbddc2defd69566516fd4b2b",
+    "reviewed_at": "2026-10-19T08:47:07Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Software-engineering review of GUI agents across web, mobile and desktop settings; it reports mobile and web work as dominant and identifies recovery, human escalation, safety enforcement, auditability, observability and privacy engineering as underdeveloped. Reviewed against the v1 abstract and HTML full text; the paper-selection protocol was not independently reproduced."
   }
 ]

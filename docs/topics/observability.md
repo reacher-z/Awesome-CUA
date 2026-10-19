@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-36 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+37 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (33)](#papers)
 
 ## Agents
 
@@ -29,6 +29,14 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+
+## Surveys
+
+All entries in this section: web, android, desktop.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2026‑08‑10 | [Software Engineering for and with GUI Agent](https://arxiv.org/abs/2608.09278) | Reviews 336 GUI-agent papers from January 2018 to April 2026 through five research questions on landscape, architectures, evaluation, software lifecycle concerns such as testing and maintenance, and open challenges. |
 
 ## Papers
 

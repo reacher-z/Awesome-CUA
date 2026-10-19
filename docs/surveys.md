@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Date* retains the arXiv first-submission date, or the publisher-only record's publication date at its known precision; newest first. Titles link primary sources; receipts are in `data/catalog.jsonl`.
 
-**18 resources:** [Web (2)](#web) · [Mobile (1)](#mobile) · [Cross-platform (12)](#cross-platform) · [Unspecified (3)](#unspecified)
+**19 resources:** [Web (2)](#web) · [Mobile (1)](#mobile) · [Cross-platform (13)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -37,6 +37,7 @@ All entries in this section: android, ios.
 | --- | --- | --- | --- |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform | Surveys GUI-agent efficiency beyond task success: observation, context and memory, action, and planner or runtime cost. |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform | Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents. |
+| 2026‑08‑10 | [Software Engineering for and with GUI Agent](https://arxiv.org/abs/2608.09278) | web, android, desktop | Reviews 336 GUI-agent papers from January 2018 to April 2026 through five research questions on landscape, architectures, evaluation, software lifecycle concerns such as testing and maintenance, and open challenges. |
 | 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform | Surveys agents that operate computers and phones through operating-system interfaces, covering components, capabilities, foundation models, frameworks, and benchmarks. |
 | 2025‑05‑16 | [A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?](https://arxiv.org/abs/2505.10924) | cross-platform | Systematizes safety and security threats to computer-using agents, with taxonomies of threats and defensive strategies. |
 | 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | cross-platform | Formalizes GUI tasks as Markov decision processes and traces agent training from prompting through supervised fine-tuning to reinforcement learning. |

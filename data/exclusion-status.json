@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2206,6 +2206,23 @@
       "reason": "The system controls an autonomous mobile manipulator in a simulated industrial warehouse using onboard vision-language agents. Mobile here refers to a robot, with inspection and warehouse tasks rather than phone or GUI automation.",
       "reviewed_at": "2026-10-17T14:29:57.522339+00:00",
       "metadata_fingerprint": "7373bfcef7e6519560ebc6ef13240da211bbddf27e321ae3b19036b7000f4ced",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2607.03726%2C2607.05120%2C2607.05465%2C2607.05743%2C2607.06008%2C2607.06595%2C2607.07403%2C2607.07744%2C2607.08252%2C2607.08964%2C2607.10455%2C2607.10608%2C2607.12406%2C2607.12756%2C2607.13085%2C2607.13594%2C2607.13884%2C2607.13988%2C2607.15899%2C2607.16352%2C2607.16636%2C2607.16900%2C2607.17044%2C2607.20064%2C2607.20121%2C2607.21522%2C2607.22738%2C2607.23722%2C2607.24720%2C2607.26300%2C2607.26769%2C2607.27881%2C2607.28229%2C2607.28272%2C2607.28430%2C2608.00548%2C2608.02163%2C2608.03223%2C2608.03451%2C2608.03499%2C2608.05013%2C2608.05430%2C2608.06811%2C2608.07873%2C2608.09268%2C2608.10357%2C2608.10669%2C2608.11274%2C2608.11434%2C2608.15089&max_results=50",
+        "sha256": "5128028eea81e3ae80715cb038513012598c0c81a7cbfe8c0d4d6adb6c00e518",
+        "retrieved_at": "2026-10-17T12:31:32Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2607.21522",
+      "name": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "url": "https://arxiv.org/abs/2607.21522",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents GS-Agent, a multi-agent system that writes physics-engine code to generate dynamic 4D scenes with assets, materials, motion, cameras and lighting from text. This generative simulation and graphics research does not involve agents operating computer interfaces and is outside the GUI/computer-use agent scope.",
+      "reviewed_at": "2026-10-19T08:39:10Z",
+      "metadata_fingerprint": "3765affbacf0e7480355e2c71e0bc2c9035456359031ad7f15c2b2497168d9c3",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2607.03726%2C2607.05120%2C2607.05465%2C2607.05743%2C2607.06008%2C2607.06595%2C2607.07403%2C2607.07744%2C2607.08252%2C2607.08964%2C2607.10455%2C2607.10608%2C2607.12406%2C2607.12756%2C2607.13085%2C2607.13594%2C2607.13884%2C2607.13988%2C2607.15899%2C2607.16352%2C2607.16636%2C2607.16900%2C2607.17044%2C2607.20064%2C2607.20121%2C2607.21522%2C2607.22738%2C2607.23722%2C2607.24720%2C2607.26300%2C2607.26769%2C2607.27881%2C2607.28229%2C2607.28272%2C2607.28430%2C2608.00548%2C2608.02163%2C2608.03223%2C2608.03451%2C2608.03499%2C2608.05013%2C2608.05430%2C2608.06811%2C2608.07873%2C2608.09268%2C2608.10357%2C2608.10669%2C2608.11274%2C2608.11434%2C2608.15089&max_results=50",
         "sha256": "5128028eea81e3ae80715cb038513012598c0c81a7cbfe8c0d4d6adb6c00e518",

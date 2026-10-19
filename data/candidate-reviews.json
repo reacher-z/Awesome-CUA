@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:be4c675b051338a62075",
+    "url": "https://agenttrek.github.io",
+    "decision": "alias",
+    "target_id": "github:xlang-ai/agenttrek",
+    "reason": "Project website for the indexed AgentTrek repository; it links github.com/xlang-ai/AgentTrek and the paper arXiv 2412.09605."
   }
 ]

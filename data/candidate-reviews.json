@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f28e520edd657e8b6689",
+    "url": "https://cognition.dev",
+    "decision": "not_a_resource",
+    "reason": "Parked domain that the supernal-gui list links for Devin. HTTPS times out; HTTP forwards to a Namecheap parking page for a recently registered domain, and the only 2023 Wayback capture is a Porkbun parking page. It hosts no Cognition or Devin content."
   }
 ]

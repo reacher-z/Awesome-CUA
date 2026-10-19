@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:6953e8e6d3e1a6fa26f2",
+    "url": "https://security.fudan.edu.cn/webagent",
+    "decision": "alias",
+    "target_id": "arxiv:2601.08406",
+    "reason": "Public address of the WebTrap Park platform that the indexed paper's abstract names; it redirects to an HTTP page titled \"WebTrap Park\" whose BibTeX cites arXiv 2601.08406 with the same title and seven authors."
   }
 ]

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:282be9e587b28498e17a",
+    "url": "https://adaptive.ai",
+    "decision": "out_of_scope",
+    "reason": "Adaptive is a commercial platform whose agents run sales follow-up, marketing, customer lifecycle and market research and build small apps through OAuth-connected services such as Gmail, Stripe, Square and GitHub. Its homepage describes no agent that observes or operates graphical interfaces, browsers or devices, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-19T06:08:15Z",
+    "evidence": {
+      "url": "https://adaptive.ai",
+      "sha256": "1c21e4c754ffc663e37b5b1b4c003cf63ad3f38e373f17dd8748895ecffb59dd",
+      "retrieved_at": "2026-10-18T16:15:59Z"
+    }
   }
 ]

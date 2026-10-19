@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:58096ccb90f3749b6eb6",
+    "url": "https://chengyou-jia.github.io/AgentStore-Home",
+    "decision": "alias",
+    "target_id": "arxiv:2410.18603",
+    "reason": "Project website for the indexed AgentStore paper; it links arxiv.org/abs/2410.18603 and a code repository that no longer exists."
   }
 ]

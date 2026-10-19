@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:43bff9bf9e072a29a577",
+    "url": "https://mobilegym.github.io",
+    "decision": "alias",
+    "target_id": "github:purewhiter/mobilegym",
+    "reason": "Redirect page to mobilegym.dev, the project website and repository homepage of the indexed MobileGym simulation platform."
   }
 ]

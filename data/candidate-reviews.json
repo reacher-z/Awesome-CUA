@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e2660eed999af57846e6",
+    "url": "https://eccv.ecva.net/virtual/2024/poster/1107",
+    "decision": "alias",
+    "target_id": "arxiv:2402.17553",
+    "reason": "ECCV 2024 virtual-conference poster page for the indexed OmniACT paper, with the same title and seven authors."
   }
 ]

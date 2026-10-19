@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:097cb157bd72a50a0c43",
+    "url": "https://ai.google.dev/gemini-api",
+    "decision": "out_of_scope",
+    "reason": "The URL redirects to the Gemini API documentation home, which introduces Google's general-purpose API for text, image and multimodal generation and conversational agents. Computer use appears only as one built-in tool in its navigation and tool list, and that tool is already indexed as the curated Gemini Computer Use record (url:879d4e3e75e83582bde6).",
+    "reviewed_at": "2026-10-19T06:09:23Z",
+    "evidence": {
+      "url": "https://ai.google.dev/gemini-api",
+      "sha256": "41c875dabbe87129436a3610d606bc1218631993308ac5af02739db819ff3063",
+      "retrieved_at": "2026-10-19T06:03:09Z"
+    }
   }
 ]

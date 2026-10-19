@@ -63143,5 +63143,75 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:714e149f2daf7235fc80",
+    "name": "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+    "kind": "paper",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3b893ba1de12f76020b03f7ae8e1afd-Abstract-Conference.html",
+    "summary": "ExACT pairs Reflective MCTS, which adds contrastive reflection and multi-agent-debate state values to tree search, with Exploratory Learning, which fine-tunes GPT-4o on flattened search traversals for web tasks.",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "self-reflection",
+      "imitation-learning",
+      "reward-models"
+    ],
+    "verify_terms": [
+      "ExACT",
+      "Reflective-MCTS"
+    ],
+    "evidence_urls": [
+      "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3b893ba1de12f76020b03f7ae8e1afd-Abstract-Conference.html"
+    ],
+    "primary_supports": [
+      "details.publication.authors",
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.title",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "details.publication.volume",
+      "kind",
+      "name",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.publication.authors",
+          "details.publication.identity_basis",
+          "details.publication.notes",
+          "details.publication.title",
+          "environments",
+          "notes",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a3b893ba1de12f76020b03f7ae8e1afd-Paper-Conference.pdf",
+        "sha256": "7c534527bb5e216a82f8c7a94e05a7f9bd19d6e784764d426213ab7288e488b5",
+        "retrieved_at": "2026-10-19T08:02:37Z"
+      }
+    ],
+    "notes": "Reviewed against the ICLR 2025 proceedings page and PDF; experiments were not reproduced. The R-MCTS agent reads Set-of-Mark-annotated screenshots on all 910 VisualWebArena tasks, and is also run on WebArena GitLab tasks and, in Appendix C, on OSWorld. Contrastive reflection picks the actions whose predicted value diverges most from the search tree's estimate, has the model explain the error, and stores the reflection for retrieval on later tasks. Fine-tuning uses VisualWebArena's text-only observation modality because GPT-4o image fine-tuning was unavailable, and trains on R-MCTS trajectories from the Classifieds environment (65 for Imitation Learning, 35 for Exploratory Learning). The same paper is posted on arXiv as 2410.02052. The paper points to aka.ms/ExACT for code and data, which was not reviewed here.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8eac8d5797b53d6aafaabd453dbeab2bbbf00cf28fba1347dfa808ed5331a952",
+    "reviewed_at": "2026-10-19T08:03:44Z",
+    "read_basis": "Read the ICLR 2025 proceedings page metadata and abstract and the full proceedings PDF text (method, experimental setup, learning results, Appendix C OSWorld results); checked the arXiv 2410.02052 abstract page and version history. No code execution or result reproduction."
   }
 ]

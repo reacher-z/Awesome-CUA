@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-38 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (28)](#papers)
+**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (29)](#papers)
 
 ## Models
 
@@ -59,6 +59,7 @@ All entries in this section: web.
 | 2025‑07‑21 | [MobileUse: A GUI Agent with Hierarchical Reflection for Autonomous Mobile Operation](https://arxiv.org/abs/2507.16853) | android | MobileUse reflects on errors at action and task timescales, invoking reflection when needed and using proactive exploration to learn unfamiliar apps. It evaluates this mobile execution framework on AndroidWorld and AndroidLab and describes a toolkit for physical-device operation. |
 | 2025‑05‑28 | [UI-Evol: Automatic Knowledge Evolving for Computer Use Agents](https://arxiv.org/abs/2505.21964) | desktop | Introduces UI-Evol, which extracts action sequences from agent interactions and critiques external guidance against those traces. Evaluation on OSWorld examines how revised operational knowledge affects execution and behavioral consistency. |
 | 2025‑05‑26 | [WebCoT: Enhancing Web Agent Reasoning by Reconstructing Chain-of-Thought in Reflection, Branching, and Rollback](https://arxiv.org/abs/2505.20013) | web | WebCoT turns reflection, look-ahead, branching and rollback procedures into chain-of-thought training rationales. Fine-tuning on these reconstructed trajectories is evaluated for web-agent self-improvement and transfer across navigation tasks. |
+| 2025‑05‑01 | [ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3b893ba1de12f76020b03f7ae8e1afd-Abstract-Conference.html) | web, desktop | ExACT pairs Reflective MCTS, which adds contrastive reflection and multi-agent-debate state values to tree search, with Exploratory Learning, which fine-tunes GPT-4o on flattened search traversals for web tasks. |
 | 2025‑04‑22 | [Guiding VLM Agents with Process Rewards at Inference Time for GUI Navigation](https://arxiv.org/abs/2504.16073) | unspecified | Guides visual GUI agents at inference time with a process-reward model that evaluates intermediate actions. It combines stepwise guidance with trajectory reflection and retry mechanisms in static and interactive navigation tasks. |
 | 2024‑11‑06 | [From Novice to Expert: LLM Agent Policy Optimization via Step-wise Reinforcement Learning](https://arxiv.org/abs/2411.03817) | web | Introduces StepAgent, which compares agent and expert actions to supply intermediate rewards for policy learning, with implicit-reward and inverse-RL variants. Evaluation includes WebShop and Mind2Web alongside non-web tasks. |
 | 2024‑02‑23 | [On the Multi-turn Instruction Following for Conversational Web Agents](https://arxiv.org/abs/2402.15057) | web | MT-Mind2Web evaluates web navigation through sequences of conversational user instructions. Self-MAP combines memory-augmented planning with reflection to preserve context and dependencies across those interaction turns. |

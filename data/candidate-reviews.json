@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4c957fdf21c636846dcd",
+    "url": "https://openreview.net/pdf?id=SoEmgM1ioC",
+    "decision": "alias",
+    "target_id": "arxiv:2502.14496",
+    "reason": "OpenReview PDF of the COLM 2025 edition of the indexed paper on credit re-assignment for language multi-agent learning (CollabUIAgents); same title and authors."
   }
 ]

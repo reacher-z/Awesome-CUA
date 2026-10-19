@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d60fc3757b59c4c1cd5c",
+    "url": "https://openreview.net/forum?id=wl4c9jvcyY",
+    "decision": "alias",
+    "target_id": "arxiv:2502.01977",
+    "reason": "OpenReview forum of the indexed AutoGUI paper as submitted to ICLR 2025, where it was not accepted; same title and the same six authors, two of them in swapped order."
   }
 ]

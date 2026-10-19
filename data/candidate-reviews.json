@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:1465cb5a08eed821caeb",
+    "url": "https://crab.camel-ai.org",
+    "decision": "alias",
+    "target_id": "github:camel-ai/crab",
+    "reason": "Project website for the indexed CRAB cross-environment benchmark repository, which names it as its homepage."
   }
 ]

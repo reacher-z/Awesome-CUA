@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2607.13157",
+    "name": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
+    "url": "https://arxiv.org/abs/2607.13157",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The report describes Oracle Agent Memory, a database-native memory layer for long-horizon agents covering memory lifecycle, scoped storage and retrieval, and evaluates it on the LongMemEval conversational memory benchmark. It involves no GUI, browser or device interaction, so this agent-memory infrastructure is outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T08:54:52Z",
+    "metadata_fingerprint": "60585cbdad4af4e725c3277a24875edb15939ab8ff4c06b8ef40fa945e67f868",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2401.05507%2C2406.07275%2C2409.16427%2C2410.00079%2C2503.07701%2C2503.22738%2C2505.15859%2C2505.17735%2C2505.23596%2C2507.05257%2C2507.06134%2C2507.21953%2C2507.23336%2C2508.06960%2C2508.08997%2C2509.02473%2C2509.23694%2C2510.09116%2C2510.14438%2C2511.18423%2C2512.12818%2C2512.13564%2C2601.10758%2C2601.12449%2C2601.21841%2C2603.01152%2C2603.19993%2C2603.20576%2C2604.04503%2C2604.17562%2C2604.23941%2C2605.16265%2C2606.06448%2C2606.06462%2C2606.29193%2C2607.01647%2C2607.13157&max_results=37",
+      "sha256": "13d5969845070cd2877dc51ae5300c2d623e5daef00c8a1552ffa46af3f721a5",
+      "retrieved_at": "2026-10-16T07:54:03Z"
+    }
   }
 ]

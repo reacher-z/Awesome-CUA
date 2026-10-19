@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2210,6 +2210,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2607.03726%2C2607.05120%2C2607.05465%2C2607.05743%2C2607.06008%2C2607.06595%2C2607.07403%2C2607.07744%2C2607.08252%2C2607.08964%2C2607.10455%2C2607.10608%2C2607.12406%2C2607.12756%2C2607.13085%2C2607.13594%2C2607.13884%2C2607.13988%2C2607.15899%2C2607.16352%2C2607.16636%2C2607.16900%2C2607.17044%2C2607.20064%2C2607.20121%2C2607.21522%2C2607.22738%2C2607.23722%2C2607.24720%2C2607.26300%2C2607.26769%2C2607.27881%2C2607.28229%2C2607.28272%2C2607.28430%2C2608.00548%2C2608.02163%2C2608.03223%2C2608.03451%2C2608.03499%2C2608.05013%2C2608.05430%2C2608.06811%2C2608.07873%2C2608.09268%2C2608.10357%2C2608.10669%2C2608.11274%2C2608.11434%2C2608.15089&max_results=50",
         "sha256": "5128028eea81e3ae80715cb038513012598c0c81a7cbfe8c0d4d6adb6c00e518",
         "retrieved_at": "2026-10-17T12:31:32Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2607.13157",
+      "name": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
+      "url": "https://arxiv.org/abs/2607.13157",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The report describes Oracle Agent Memory, a database-native memory layer for long-horizon agents covering memory lifecycle, scoped storage and retrieval, and evaluates it on the LongMemEval conversational memory benchmark. It involves no GUI, browser or device interaction, so this agent-memory infrastructure is outside the computer-use scope.",
+      "reviewed_at": "2026-10-19T08:54:52Z",
+      "metadata_fingerprint": "60585cbdad4af4e725c3277a24875edb15939ab8ff4c06b8ef40fa945e67f868",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2401.05507%2C2406.07275%2C2409.16427%2C2410.00079%2C2503.07701%2C2503.22738%2C2505.15859%2C2505.17735%2C2505.23596%2C2507.05257%2C2507.06134%2C2507.21953%2C2507.23336%2C2508.06960%2C2508.08997%2C2509.02473%2C2509.23694%2C2510.09116%2C2510.14438%2C2511.18423%2C2512.12818%2C2512.13564%2C2601.10758%2C2601.12449%2C2601.21841%2C2603.01152%2C2603.19993%2C2603.20576%2C2604.04503%2C2604.17562%2C2604.23941%2C2605.16265%2C2606.06448%2C2606.06462%2C2606.29193%2C2607.01647%2C2607.13157&max_results=37",
+        "sha256": "13d5969845070cd2877dc51ae5300c2d623e5daef00c8a1552ffa46af3f721a5",
+        "retrieved_at": "2026-10-16T07:54:03Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

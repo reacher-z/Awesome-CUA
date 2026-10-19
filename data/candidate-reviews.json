@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:3120889feb7492cd25a3",
+    "url": "https://ethannju.github.io/carryon",
+    "decision": "alias",
+    "target_id": "arxiv:2610.18784",
+    "reason": "Project website for the indexed CarryOn paper (Pack Light, CarryOn), with the same title and authors and a link to the arXiv abstract."
   }
 ]

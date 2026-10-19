@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b40c51376faff46f7e33",
+    "url": "https://convergence.ai",
+    "decision": "not_a_resource",
+    "reason": "Former homepage of Convergence, the Proxy web-agent company that Salesforce acquired in 2025. Every request now returns HTTP 403, as all Wayback captures since August 2025 do, and the last readable capture (July 2025) only announces the acquisition."
   }
 ]

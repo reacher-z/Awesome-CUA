@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-183 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (169)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
 
 ## Benchmarks
 
@@ -78,6 +78,7 @@ All entries in this section: web.
 | 2026‑09‑15 | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) | android, desktop | EvoSkill-GUI revises reusable skill files from execution feedback through an executor–critic loop. It studies how training-free updates to localization, recovery and procedure information help subsequent mobile and desktop tasks. |
 | 2026‑09‑15 | [When Agents See Differently: Exposing UI Desynchronization Threats in Mobile Agents](https://arxiv.org/abs/2609.16732) | android | Investigates mismatches between what humans see on a mobile display and what agents receive through screenshots or accessibility metadata. An automated evaluation framework embeds instruction-agnostic perturbations into functional APK clones and compares static and dynamic agent deviations with human noticeability. |
 | 2026‑09‑14 | [Learning from Reliable Negatives: Confidence-Anchored Test-Time Adaptation for GUI Grounding](https://arxiv.org/abs/2609.15307) | unspecified | Confidence-Anchored Learning uses coordinate-token confidence to filter pseudo-supervision for GUI grounding. Its negative-only variant performs label-free test-time updates to reduce reliance on potentially incorrect positive examples. |
+| 2026‑09‑07 | [FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?](https://arxiv.org/abs/2609.07603) | unspecified | FinCUABuildBench poses 576 requests to construct dynamic financial computer-use tasks across 24 workflows and three runtime-change types; FinCUABuildAgent builds the tasks, environments and validators. |
 | 2026‑09‑06 | [AgentHijack: Visual Patch Attacks on Multimodal Computer-Use Agents](https://arxiv.org/abs/2609.09212) | web | AgentHijack evaluates whether visual patch effects propagate from screenshots through model outputs and action parsing into real environment changes. Its controlled web-page experiments distinguish intermediate attack signals from verified end-to-end consequences. |
 | 2026‑09‑06 | [Selective Knowledge Control for Continual GUI Agent Learning over Application Streams](https://arxiv.org/abs/2609.06530) | unspecified | Introduces activation-conditioned gradient control for GUI agents learning successive applications. It protects inactive application-specific neurons, constrains updates to shared neurons, and accumulates a compact historical state to balance adaptation with retention. |
 | 2026‑09‑04 | [ElderBench: Benchmarking Autonomous Mobile Agents for Older Adults](https://arxiv.org/abs/2609.04850) | unspecified | ElderBench evaluates mobile GUI agents on smartphone requests elicited from older adults, including indirect and underspecified language. Online and offline tests, instruction normalization and linguistic analyses examine how these request patterns contribute to failures. |

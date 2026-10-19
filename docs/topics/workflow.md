@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-110 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+111 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (79)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (80)](#papers)
 
 ## Benchmarks
 
@@ -88,6 +88,7 @@ All entries in this section: cross-platform.
 | 2026‑09‑15 | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) | android, desktop | EvoSkill-GUI revises reusable skill files from execution feedback through an executor–critic loop. It studies how training-free updates to localization, recovery and procedure information help subsequent mobile and desktop tasks. |
 | 2026‑09‑14 | [CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251) | desktop | CADWorld evaluates screenshot-and-GUI agents on long FreeCAD workflows, from modeling and assembly to manufacturing and simulation. Executable checks inspect saved engineering artifacts for geometry, constraints, construction structure and downstream state. |
 | 2026‑09‑11 | [AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents](https://arxiv.org/abs/2609.13548) | web | AutoTailor compiles web trajectories into reusable browser-automation APIs, then filters and dynamically revises the capability inventory. WebArena experiments distinguish API-only operation from an agent that can fall back to ordinary reasoning and browser actions. |
+| 2026‑09‑07 | [FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?](https://arxiv.org/abs/2609.07603) | unspecified | FinCUABuildBench poses 576 requests to construct dynamic financial computer-use tasks across 24 workflows and three runtime-change types; FinCUABuildAgent builds the tasks, environments and validators. |
 | 2026‑09‑04 | [From Interaction Traces to Persistent Skills: Online Evolution for Computer-Use Agents](https://arxiv.org/abs/2609.04869) | desktop | An online skill-evolution framework turns GUI interaction traces and evaluator feedback into a versioned library of reusable procedures without updating model parameters. Controlled OSWorld comparisons examine both the benefits of shared procedural memory and its domain-dependent instability under repeated revision. |
 | 2026‑09‑02 | [OmegaUse-SOP: SOP Engineering for Professional Computer Use from Human Demonstrations](https://arxiv.org/abs/2609.02149) | unspecified | OmegaUse-SOP converts expert GUI demonstrations into configurable procedures and refines them with domain rules and human input. It records, abstracts, grounds and verifies live execution, with a case study of photovoltaic simulation workflows in PVsyst 7.2. |
 | 2026‑08‑20 | [Inducing Task Models from Computer-Use Traces](https://arxiv.org/abs/2608.20319) | unspecified | Task Model Induction disentangles concurrent activities in screenshot and mouse/keyboard traces, then constructs hierarchical goals and procedural control flow for each task. Evaluation tests reconstruction of observed execution and reuse of derived skills on held-out tasks. |

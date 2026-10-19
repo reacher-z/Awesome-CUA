@@ -63143,5 +63143,46 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.07603",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "data-generation",
+      "industry",
+      "robustness",
+      "workflow"
+    ],
+    "summary": "FinCUABuildBench poses 576 requests to construct dynamic financial computer-use tasks across 24 workflows and three runtime-change types; FinCUABuildAgent builds the tasks, environments and validators.",
+    "verify_terms": [
+      "FinCUABuild: Can Agents Build"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.07603v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: per the v1 HTML full text, each constructed episode gives the evaluated agent an episode-level tool graph over a financial workspace, and automation-point verification checks semantic outcomes while excluding low-level interface actions. The downstream comparison runs general multi-agent frameworks (AutoGen GroupChat, Magentic-One, CrewAI, LangGraph, CAMEL), financial agents and matched controls on 144 qualified episodes. The abstract links code at https://github.com/FengxianJi/FinCUABuild. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2609.07603v1",
+        "sha256": "7b8a8459fe9478609e636f7f9f91c7090b929b7948b7b35721a205ab03ba715a",
+        "retrieved_at": "2026-10-19T08:45:01Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f07a0c930183283178a1df6bba58052f0d841389fca06380cc9a162c686a0b5a",
+    "reviewed_at": "2026-10-19T08:47:43Z"
   }
 ]

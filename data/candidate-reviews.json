@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:77007e43347d7c5658b6",
+    "url": "https://openreview.net/forum?id=I7ODESoF6k",
+    "decision": "alias",
+    "target_id": "arxiv:2508.04482",
+    "reason": "Authors' OpenReview archive copy of the indexed OS Agents survey; first posted under the same title and later retitled for computer, phone and browser use."
   }
 ]

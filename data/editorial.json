@@ -63143,5 +63143,43 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Automated Trajectory Evaluation for Mobile Agents via Step-Level Consequence Reasoning and Aggregation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.20797",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "reward-models",
+      "safety-security",
+      "mobile-navigation",
+      "state-tracking"
+    ],
+    "summary": "CRATE is a two-stage VLM judge that infers each mobile-agent step's state change, then aggregates the step evidence to score task completion; CRATE-S scores operational safety. Tested on AndroidWorld and MobileRisk.",
+    "verify_terms": [
+      "Step-Level Consequence Reasoning"
+    ],
+    "notes": "Reviewed against the v1 abstract and full text. Section 4.2 adds CRATEBench, 187 tasks across 35 apps, with UI-TARS-7B trajectories recorded on a physical mobile device for 62 of them. Code is linked at anonymous.4open.science/r/CRATE-D580. Reported results were not reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.20797v1"
+    ],
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.20797v1",
+        "sha256": "6fadb9afa0a8671591bfdcd867bda1d9b6ca8ce9b6490426f8dba8b7a7b72be0",
+        "retrieved_at": "2026-10-19T08:40:31Z"
+      }
+    ],
+    "reviewed_sha256": "1d831e9fc8a644a62388e1645678629fb2a817228b9f44565152c817c761ea2d",
+    "reviewed_at": "2026-10-19T08:40:32Z"
   }
 ]

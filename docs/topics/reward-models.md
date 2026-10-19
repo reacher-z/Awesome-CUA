@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (43)](#papers)
 
 ## Benchmarks
 
@@ -57,6 +57,7 @@ All entries in this section: web.
 | 2026‑09‑02 | [Discriminative World Models for Web Agents](https://arxiv.org/abs/2609.02885) | web | Trains discriminative web world models to distinguish the true next state from outcomes of alternative actions. Branching web trajectories support training, followed by tests of predicted-state matching, process-reward action ranking and end-to-end WebArena-Lite selection. |
 | 2026‑08‑25 | [Task-Adaptive Rubrics for GUI Reward Modeling](https://arxiv.org/abs/2608.24174) | unspecified | Introduces AdaptRubric, which retrieves reusable criteria for a GUI task family and then generates instruction-specific checks for concrete values and constraints. It evaluates these adaptive rubrics in offline reward assessment and online agent optimization. |
 | 2026‑08‑24 | [GSAR: Goal-State-Anchor Rewards for Mobile GUI Agents with Self-Evolving Data Synthesis](https://arxiv.org/abs/2608.22847) | android | Introduces GSAR, which synthesizes GUI tasks and successful goal states, then annotates task-relevant interface elements as reward anchors. These anchors support offline trajectory verification and online policy training. |
+| 2026‑08‑21 | [Automated Trajectory Evaluation for Mobile Agents via Step-Level Consequence Reasoning and Aggregation](https://arxiv.org/abs/2608.20797) | android | CRATE is a two-stage VLM judge that infers each mobile-agent step's state change, then aggregates the step evidence to score task completion; CRATE-S scores operational safety. Tested on AndroidWorld and MobileRisk. |
 | 2026‑08‑11 | [Benchmarking LLM Judges for Mobile Agent Evaluation](https://arxiv.org/abs/2608.11434) | unspecified | MobileJudgeBench compares completion judges against human labels on mobile-agent trajectories. It studies screenshot-sampling baselines, model-dependent error profiles and how judge quality relates to agent rankings and reinforcement-learning rewards. |
 | 2026‑08‑06 | [StepReflect: Structured UI Transition Reflection for Mobile GUI Agents](https://arxiv.org/abs/2608.05587) | android | StepReflect predicts structured per-action reflections from transition specifications and paired visual evidence. The paper distinguishes offline transition-label accuracy from online task success when the reflection model is integrated into mobile agents. |
 | 2026‑07‑30 | [OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models](https://arxiv.org/abs/2607.28609) | cross-platform | Introduces OSReward and its harder and multidimensional variants for assessing judgments of computer-use trajectories. It also releases a reasoning-annotated judgment corpus and trains reward models, examining reliability, leniency bias, and evaluation cost. |

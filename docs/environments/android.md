@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-300 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+301 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (176)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (177)](#papers)
 
 ## Benchmarks
 
@@ -201,6 +201,7 @@
 | 2026‑08‑27 | [WM-R1: Training GUI Agents to Reason and leverage World Models with Reinforcement Learning](https://arxiv.org/abs/2608.27508) | android | Uses learned world models for mobile-agent training rollouts and for reasoning about the consequences of candidate GUI actions. |
 | 2026‑08‑25 | [Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments](https://arxiv.org/abs/2608.24099) | android | Introduces AnTrap, which injects task-solvable runtime anomalies into Android GUI-agent trajectories using a layered failure taxonomy. It compares model robustness and adversarial reinforcement learning to distinguish recoverable interface traps from persistent contextual failures. |
 | 2026‑08‑24 | [GSAR: Goal-State-Anchor Rewards for Mobile GUI Agents with Self-Evolving Data Synthesis](https://arxiv.org/abs/2608.22847) | android | Introduces GSAR, which synthesizes GUI tasks and successful goal states, then annotates task-relevant interface elements as reward anchors. These anchors support offline trajectory verification and online policy training. |
+| 2026‑08‑21 | [Automated Trajectory Evaluation for Mobile Agents via Step-Level Consequence Reasoning and Aggregation](https://arxiv.org/abs/2608.20797) | android | CRATE is a two-stage VLM judge that infers each mobile-agent step's state change, then aggregates the step evidence to score task completion; CRATE-S scores operational safety. Tested on AndroidWorld and MobileRisk. |
 | 2026‑08‑18 | [MobileWorldSafety: Benchmarking GUI Agent Safety Against Environmental Injection Attacks in Android Apps](https://arxiv.org/abs/2608.17659) | android | Evaluates environmental injection risks in Android tasks using programmatic risk checks and model-based adjudication of ambiguous cases. |
 | 2026‑08‑09 | [Not an A11y: How Android Accessibility Exposes Mobile AI Agents to Indirect Prompt Injection](https://arxiv.org/abs/2608.08939) | android | Demonstrates that unsanitized Android accessibility tree metadata exposes mobile GUI agents to stealthy indirect prompt injection attacks. |
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |

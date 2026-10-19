@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2312,6 +2312,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
         "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
         "retrieved_at": "2026-10-17T12:31:39Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2610.18868",
+      "name": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "url": "https://arxiv.org/abs/2610.18868",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces Tev-Gym, 1,170 verified long-horizon task environments in seven technical domains with dense progress rewards derived from a hidden task specification, and trains Tev-27B with progress-potential reward shaping, evaluated on Agents' Last Exam and Terminal-Bench subsets. The tasks are workspace and terminal work without GUI, browser or device operation, so this agent training work is outside the computer-use scope.",
+      "reviewed_at": "2026-10-19T08:44:29Z",
+      "metadata_fingerprint": "cbc6b50be83e06f40e91db2c922cc224c9d5e98a5c9b973291cc5ea06aa36999",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2610.11655%2C2610.11707%2C2610.11942%2C2610.12611%2C2610.12823%2C2610.12866%2C2610.12984%2C2610.13268%2C2610.13416%2C2610.13703%2C2610.14157%2C2610.14228%2C2610.15138%2C2610.15765%2C2610.16234%2C2610.16319%2C2610.16720%2C2610.16778%2C2610.17457%2C2610.17710%2C2610.17792%2C2610.17895%2C2610.17928%2C2610.18508%2C2610.18784%2C2610.18868%2C2610.19100%2C2610.19128%2C2610.20584&max_results=29",
+        "sha256": "9641755401e0e8ec9613f7c4509029d968ab4f10751ba4d43cab57e7d27c1da1",
+        "retrieved_at": "2026-10-16T06:33:24Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2c735a98fd797a4970b0",
+    "url": "https://mobilegym-mock-production.up.railway.app",
+    "decision": "alias",
+    "target_id": "github:openmobile2/mobilegym-plusplus",
+    "reason": "Hosted copy of the MobileGym++ simulated phone, linked as \"Try the phone\" from the indexed MobileGym++ repository."
   }
 ]

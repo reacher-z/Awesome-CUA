@@ -28011,7 +28011,7 @@
     "verify_terms": [
       "Web-Shepherd"
     ],
-    "notes": "The tree contains src/webprm modules and a WebRewardBench evaluation script. The README’s illustrative folder layout differs from the actual tree, so a complete training pipeline is not claimed. No root code license is declared. Some old checkpoint links are unavailable; current model releases are separately identified through the official Hub collection.",
+    "notes": "The tree contains src/webprm modules and a WebRewardBench evaluation script. The README’s illustrative folder layout differs from the actual tree, so a complete training pipeline is not claimed. No root code license is declared. Some old checkpoint links are unavailable; current model releases are separately identified through the official Hub collection. The paper (arXiv v2) gives this repository as the home of its model, dataset and code.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md"
     ],
@@ -28038,6 +28038,24 @@
         "url": "https://api.github.com/repos/kyle8581/Web-Shepherd/git/trees/main?recursive=1",
         "sha256": "ba7d28866cec4fb889499fc011473aedcdcc36fd8175c73527eafd7ef6b6dbba",
         "retrieved_at": "2026-10-17T02:44:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.15277v2",
+        "sha256": "013a1f65cd0fba880332c8c36500463237cf7571e3e57911e7f680c541cd5b9d",
+        "retrieved_at": "2026-10-19T06:04:07Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2505.15277",
+        "evidence_url": "https://arxiv.org/html/2505.15277v2"
       }
     ]
   },

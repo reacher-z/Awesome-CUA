@@ -117,7 +117,7 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- |
 | [agent-browser](https://github.com/vercel-labs/agent-browser) | — | code Apache-2.0 | A browser-automation command-line interface that exposes browser state and interaction commands for AI agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/vercel-labs/agent-browser/HEAD/README.md) |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
-| [Web-Shepherd inference and evaluation](https://github.com/kyle8581/Web-Shepherd) | — | — | Process-reward inference and benchmark-evaluation utilities that use task checklists to assess individual web-agent decisions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md) |
+| [Web-Shepherd inference and evaluation](https://github.com/kyle8581/Web-Shepherd) | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | — | Process-reward inference and benchmark-evaluation utilities that use task checklists to assess individual web-agent decisions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md) |
 
 ## Infrastructure
 

@@ -47,7 +47,7 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Web-Shepherd inference and evaluation](https://github.com/kyle8581/Web-Shepherd) | — | — | Process-reward inference and benchmark-evaluation utilities that use task checklists to assess individual web-agent decisions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md) |
+| [Web-Shepherd inference and evaluation](https://github.com/kyle8581/Web-Shepherd) | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | — | Process-reward inference and benchmark-evaluation utilities that use task checklists to assess individual web-agent decisions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md) |
 
 ## Papers
 

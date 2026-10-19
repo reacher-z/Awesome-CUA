@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:313e52837147991455e5",
+    "url": "https://ltzheng.github.io/Synapse",
+    "decision": "alias",
+    "target_id": "arxiv:2306.07863",
+    "reason": "Project website for the indexed Synapse paper; it links the paper, the indexed Synapse code repository and the agent trajectories."
   }
 ]

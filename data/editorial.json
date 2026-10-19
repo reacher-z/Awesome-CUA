@@ -63143,5 +63143,40 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "The Verifiable Action Card: Trustworthy Human-in-the-Loop Control for Secure Autonomous Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.18411",
+    "summary": "Proposes the Verifiable Action Card, which rebuilds an agentic browser's approval prompt from the pending action and trusted intent provenance and binds consent to that exact action at dispatch, tested on 24 scenarios.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "The Verifiable Action Card: Trustworthy Human-in-the-Loop Control"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2609.18411v2"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version arXiv v2 abstract page, whose title, ordered author list, version and normalized abstract SHA match the retained snapshot. According to the full text, VAC is implemented in an Electron/Chromium agentic browser whose Python agent attaches over the Chrome DevTools Protocol through Playwright and perceives pages as indexed element lists. The 24 scenarios are 13 attacks and 11 legitimate tasks on self-contained local pages; gpt-oss-120B and Gemini-2.5-Flash run the full suite with three seeds, while three further open-weight models come from an earlier single-seed pilot on a subset. The paper calls the browser and benchmark open but gives no release location. Experimental results have not been independently reproduced.",
+    "read_basis": "arXiv v2 abstract page and HTML full text (contributions list, Sections 6 and 7.2).",
+    "reviewed_sha256": "d68530fadab8e8d1636785dd11e47c975a698279a149d4af53816b59572a0446",
+    "reviewed_at": "2026-10-19T08:44:13Z"
   }
 ]

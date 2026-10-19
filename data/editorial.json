@@ -63143,5 +63143,135 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "VSC-RL code",
+    "kind": "framework",
+    "url": "https://github.com/ai-agents-2030/VSC_RL",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "planning",
+      "mobile-navigation"
+    ],
+    "summary": "VSC-RL training code for Android in the Wild tasks: Gemini-generated subgoals condition an Auto-UI policy trained online in emulators with learned critics and a Gemini end-state evaluator, built on DigiRL.",
+    "scope": "core",
+    "verify_terms": [
+      "VSC-RL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ai-agents-2030/VSC_RL/401d793efa6ab54aa6ff3634590e03c2f13fe487/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2502.07949",
+        "evidence_url": "https://ai-agents-2030.github.io/VSC-RL/"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:digirl-agent/digirl",
+        "evidence_url": "https://raw.githubusercontent.com/ai-agents-2030/VSC_RL/401d793efa6ab54aa6ff3634590e03c2f13fe487/README.md"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The README presents the repository as the implementation for reproducing VSC-RL on the AitW benchmarks, built on DigiRL, and names vscrl/algorithms/vscrl/trainer.py and subgoal_generator.py as the core files, with example generated subgoals for the general task set. The README does not cite the paper; the project page links this repository and arXiv 2502.07949. subgoal_generator.py prompts Gemini with a downscaled screenshot and a one-shot example to split a task into subtasks. The Android environment (vscrl/environment/android/env.py) drives emulators through Appium and returns screenshots; evaluate.py judges task completion with Gemini 1.5 Pro from the final screenshots. The default config selects the AitW general or web-shopping task set, Auto-UI-Base as the policy and roberta-base as the critic; emulator setup follows DigiRL's instructions. No license file is present. Code was read, not run.",
+    "details": {
+      "repository_revision": "401d793efa6ab54aa6ff3634590e03c2f13fe487",
+      "availability": "Public training, subgoal-generation and evaluation code with AitW task lists; no trained checkpoints. The Auto-UI-Base starting checkpoint, emulator images and Gemini access are obtained separately."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/ai-agents-2030/VSC_RL/git/trees/401d793efa6ab54aa6ff3634590e03c2f13fe487?recursive=1",
+        "sha256": "4642117bc56e5ede1f0c0a3cf98ec4c61d90332534278f364af0eda4583f934b",
+        "retrieved_at": "2026-10-19T06:58:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/VSC_RL/401d793efa6ab54aa6ff3634590e03c2f13fe487/subgoal_generator.py",
+        "sha256": "1024260b7eeb3c8d6b83c3ba171f84f9eb04743640e09ef40cec2ac045839b88",
+        "retrieved_at": "2026-10-19T06:58:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/VSC_RL/401d793efa6ab54aa6ff3634590e03c2f13fe487/vscrl/environment/android/evaluate.py",
+        "sha256": "3b6c145f5bbc054ba66fb813c6ffd02c027d81f1ffaaa6766742b803fdddeb7d",
+        "retrieved_at": "2026-10-19T06:58:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/VSC_RL/401d793efa6ab54aa6ff3634590e03c2f13fe487/vscrl/environment/android/env.py",
+        "sha256": "d17c4727f0a0afa95cdae09d490aaf573917345e3c3b39f2b7c136b8dd4d4646",
+        "retrieved_at": "2026-10-19T06:58:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/ai-agents-2030/VSC_RL/401d793efa6ab54aa6ff3634590e03c2f13fe487/scripts/config/main/default.yaml",
+        "sha256": "0613f266683adc2c59d7511ee2923d94b68359aabce41945e8469b06cb54c883",
+        "retrieved_at": "2026-10-19T06:58:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://ai-agents-2030.github.io/VSC-RL/",
+        "sha256": "051df85a1ed6c481d84022855ea4bfc28db35e5668d8812e032ee83fc81f8792",
+        "retrieved_at": "2026-10-19T06:58:18Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The repository tree has no license file and the README states no license.",
+        "evidence_urls": [
+          "https://api.github.com/repos/ai-agents-2030/VSC_RL/git/trees/401d793efa6ab54aa6ff3634590e03c2f13fe487?recursive=1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "36f2f34b8a09839a4b221107d2946cc49c1c4a3a5fc9339182d5ad1779ecc373",
+    "reviewed_at": "2026-10-19T06:58:49Z"
   }
 ]

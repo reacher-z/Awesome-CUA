@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cb47a716636e193ba59f",
+    "url": "https://chatpaper.com/chatpaper/zh-CN/paper/17441",
+    "decision": "alias",
+    "target_id": "arxiv:2404.18074",
+    "reason": "ChatPaper listing page for the indexed MMAC-Copilot arXiv paper: it repeats the paper's title, authors and arXiv date with a Chinese translation of the abstract and links arxiv.org/abs/2404.18074."
   }
 ]

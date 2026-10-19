@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ce7515618ba40abd4689",
+    "url": "https://miniwob.farama.org",
+    "decision": "alias",
+    "target_id": "github:farama-foundation/miniwob-plusplus",
+    "reason": "Documentation website of the indexed MiniWoB++ repository, which names it as its documentation site and repository homepage."
   }
 ]

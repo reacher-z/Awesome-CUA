@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -470,8 +470,8 @@
       "resolved_aliases": 1,
       "curated": 24,
       "excluded": 0,
-      "set_aside": 7,
-      "unindexed": 82
+      "set_aside": 8,
+      "unindexed": 81
     },
     {
       "id": "steel-web-archive",
@@ -890,8 +890,8 @@
       "resolved_aliases": 0,
       "curated": 66,
       "excluded": 0,
-      "set_aside": 4,
-      "unindexed": 10
+      "set_aside": 5,
+      "unindexed": 9
     },
     {
       "id": "web-research",

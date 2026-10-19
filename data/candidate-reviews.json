@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8eb25c226af6b10391bc",
+    "url": "https://os-copilot.github.io/OSReward-Home",
+    "decision": "alias",
+    "target_id": "arxiv:2607.28609",
+    "reason": "Project website for the indexed OSReward paper, with its benchmark overview, leaderboard and release links."
   }
 ]

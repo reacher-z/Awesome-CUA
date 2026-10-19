@@ -63143,5 +63143,45 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Towards Faithful Simulation of Human Shopping Behavior",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.20707",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "reinforcement-learning",
+      "data-generation",
+      "evaluation"
+    ],
+    "summary": "RecVerse simulates e-commerce shoppers with a screenshot-grounded GUI agent, hierarchical memory and session-level RL; the paper also introduces USB, 5,274 real user browsing trajectories with page screenshots.",
+    "verify_terms": [
+      "Faithful Simulation of Human Shopping Behavior"
+    ],
+    "notes": "Reviewed against the v1 abstract and full text. The agent imitates logged shopper behavior for recommender evaluation rather than completing assigned tasks. Appendix B.2 builds USB on the homepage feed of a mobile e-commerce platform whose operating system is not stated; the paper text names no download location. Reported results were not reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.20707v1"
+    ],
+    "editorial_reviewed": true,
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.20707v1",
+        "sha256": "f4c81ee714e7213639f3925718b41f909f02c2277c50cdf76288c27604949728",
+        "retrieved_at": "2026-10-19T08:40:16Z"
+      }
+    ],
+    "reviewed_sha256": "2906d36b11ce763f57ff49aeec2446636ba435289447ec4cd9c16aa1ab0c7853",
+    "reviewed_at": "2026-10-19T08:40:17Z"
   }
 ]

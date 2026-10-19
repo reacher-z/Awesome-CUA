@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ec672bf1610c27cd4090",
+    "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/sima-generalist-ai-agent-for-3d-virtual-environments/Scaling%20Instructable%20Agents%20Across%20Many%20Simulated%20Worlds.pdf",
+    "decision": "alias",
+    "target_id": "arxiv:2404.10179",
+    "reason": "Google DeepMind-hosted PDF of the SIMA technical report dated March 2024. Its title and its SIMA Team list of 90 authors match arXiv v1 of 2404.10179 in the same order; arXiv v2 and v3 add Jony Hudson, Kshitij Gupta and Rory Lawton."
   }
 ]

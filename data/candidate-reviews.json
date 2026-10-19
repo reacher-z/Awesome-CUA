@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:87b42dd6f8bcd054d9d5",
+    "url": "https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-virtual-environments",
+    "decision": "alias",
+    "target_id": "arxiv:2404.10179",
+    "reason": "Google DeepMind announcement page for the indexed SIMA technical report, published the same day; it summarizes that report and links its arXiv entry."
   }
 ]

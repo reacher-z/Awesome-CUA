@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-338 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -114,6 +114,14 @@ All entries in this section: android.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
+
+## Surveys
+
+All entries in this section: cross-platform.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2026‑08‑27 | [What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents](https://arxiv.org/abs/2608.27260) | Surveys data generation for LLM agents, factoring generated data into environment, task, interaction and verifier, and reviewing accuracy, complexity and diversity across tool, web, GUI, coding and embodied agents. |
 
 ## Papers
 

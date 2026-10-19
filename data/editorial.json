@@ -63143,5 +63143,44 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2608.27260",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "data-generation"
+    ],
+    "summary": "Surveys data generation for LLM agents, factoring generated data into environment, task, interaction and verifier, and reviewing accuracy, complexity and diversity across tool, web, GUI, coding and embodied agents.",
+    "verify_terms": [
+      "What Makes Good Agentic Data?"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2608.27260v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent cross-domain survey. Section 6.3.6 and several tables cover web, GUI and computer-use data pipelines and environments, including OS-Genesis, Explorer, OSWorld and AndroidWorld, beside tool-use, coding, embodied and scientific agents. Surveyed results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2608.27260v1",
+        "retrieved_at": "2026-10-19T08:45:33Z",
+        "sha256": "f113c7b71e179fe0323b365dd5a44740711b87c1f99310c58e134d1f6edb1754",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML table of contents, Section 6.3.6 on web, GUI and computer-use agents, and the tables listing GUI data-generation pipelines.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7695aa0ceeeec20800293b9113d291128424f0f73f8d3b7d59f2395bac25d65c",
+    "reviewed_at": "2026-10-19T08:45:33Z"
   }
 ]

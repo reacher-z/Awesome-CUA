@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -71,6 +71,7 @@
 | [Mobilerun Portal (formerly Droidrun Portal)](https://github.com/droidrun/mobilerun-portal) | android | — | code AGPL-3.0-or-later | An Android accessibility service that exposes UI-element inspection, device-control interfaces and screen feedback to mobile automation agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun-portal/HEAD/README.md) |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | web | — | code Apache-2.0 | MCP server that lets LLM clients drive Playwright browsers through structured accessibility snapshots instead of screenshots, with opt-in vision, PDF and devtools capabilities. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright-mcp/HEAD/README.md) |
+| [Tarsier-AI](https://github.com/siddzzzz/Tarsier) | desktop, windows, macos, linux, web | — | code MIT | Python library and MCP server that lets LLM agents operate Windows, macOS and Linux apps through native accessibility trees pruned into compact YAML snapshots, plus Playwright web control by role and name. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/siddzzzz/Tarsier/HEAD/README.md) |
 | [WebMarker](https://github.com/reidbarber/webmarker) | web | — | code MIT | A browser library that labels interactive elements and their boxes for visual prompting, preserving element mappings that automation code can use to execute selected actions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/reidbarber/webmarker/HEAD/README.md) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
 

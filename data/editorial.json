@@ -63143,5 +63143,121 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Tarsier-AI",
+    "kind": "tool",
+    "url": "https://github.com/siddzzzz/Tarsier",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Python library and MCP server that lets LLM agents operate Windows, macOS and Linux apps through native accessibility trees pruned into compact YAML snapshots, plus Playwright web control by role and name.",
+    "aliases": [
+      "tarsier-ai"
+    ],
+    "verify_terms": [
+      "Tarsier-AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/siddzzzz/Tarsier/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Published on PyPI as tarsier-ai (0.6.0 at review, matching tag v0.6.0). Not related to the Reworkd project of the same short name (github:reworkd/tarsier, a different repository and owner). tarsier/core/elements.py has separate backends for Windows UI Automation (uiautomation), macOS AXAPI (atomacos) and Linux AT-SPI (pyatspi); each prunes the window's tree and writes a YAML snapshot, and elements are located by role and name and clicked, typed into, dragged or read. tarsier/core/web.py drives Chromium through Playwright and uses Playwright's ARIA snapshot of the page as the web state. The tarsier-mcp server (tarsier/mcp/server.py) registers 21 tools: 11 desktop and 10 web. examples/gemini_agent.py is a Gemini function-calling loop over the library. pyproject.toml declares the Windows and macOS dependencies but not pyatspi, which Linux users install from the system. The README's token, latency and robustness tables are the author's own measurements without a committed harness, so they are not treated as a benchmark. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source with a PyPI package (tarsier-ai) and tagged releases; the MCP server is installed as the tarsier-mcp command.",
+      "repository_revision": "f548f9d1afb37edcce1d814a40939a83f47643d4",
+      "release_tag": "v0.6.0",
+      "package_version": "0.6.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/siddzzzz/Tarsier/f548f9d1afb37edcce1d814a40939a83f47643d4/tarsier/core/elements.py",
+        "sha256": "7233ff935ce4b747675241525688cf4f6f84c8162219d6ae91813707bb43480c",
+        "retrieved_at": "2026-10-19T06:11:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/siddzzzz/Tarsier/f548f9d1afb37edcce1d814a40939a83f47643d4/tarsier/core/web.py",
+        "sha256": "bde2dd3b49e215e8776b467a6248d70b41a352c3e4e9ed030a4f22fcd5a7b4de",
+        "retrieved_at": "2026-10-19T06:11:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/siddzzzz/Tarsier/f548f9d1afb37edcce1d814a40939a83f47643d4/tarsier/mcp/server.py",
+        "sha256": "f0e056828c6bffa5a5341a96635a5a64504792c0380b4207621b17dbefe627fd",
+        "retrieved_at": "2026-10-19T06:11:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/siddzzzz/Tarsier/f548f9d1afb37edcce1d814a40939a83f47643d4/pyproject.toml",
+        "sha256": "ae25a315dd12bbb8fd6bf35d31b5e07c82bbf39a36d8d7f21518b48acd0d1524",
+        "retrieved_at": "2026-10-19T06:11:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/siddzzzz/Tarsier/f548f9d1afb37edcce1d814a40939a83f47643d4/examples/gemini_agent.py",
+        "sha256": "9e0346e1b8e7d94de177083089c3dec3d31dcb82779fc93d033f127afbfd2ef0",
+        "retrieved_at": "2026-10-19T06:11:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/siddzzzz/Tarsier/f548f9d1afb37edcce1d814a40939a83f47643d4/LICENSE",
+        "sha256": "b28d05d89078083340d53ff9765c99878353fe0e58cdfcf622fe86f4cc63e644",
+        "retrieved_at": "2026-10-19T06:11:02Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9f64616fbd9eb21e21a55ebe4d6a93ef8574e7231f6a2d38edb8fe9d1e909755",
+    "reviewed_at": "2026-10-19T06:11:42Z"
   }
 ]

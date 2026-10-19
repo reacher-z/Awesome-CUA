@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2609.39924",
+    "name": "CoVisco: Codec-Native Vision Encoder with Native Token Compression for Unified Image-Video Understanding",
+    "url": "https://arxiv.org/abs/2609.39924",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract presents a codec-native vision encoder with segmented attention and learnable abstract tokens that compress long-video inputs for multimodal language models, evaluated on video embedding and understanding benchmarks. This general visual-representation work has no GUI or computer-use component.",
+    "reviewed_at": "2026-10-19T08:38:55Z",
+    "metadata_fingerprint": "da5aee93d735935adbe293c3b002f59a05899abaf06fcf0f059df3075632b705",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
+      "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
+      "retrieved_at": "2026-10-17T12:31:39Z"
+    }
   }
 ]

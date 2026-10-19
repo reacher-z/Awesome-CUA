@@ -63143,5 +63143,158 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "SWE-bench Multimodal",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding"
+    ],
+    "summary": "Issue-resolution benchmark for visual JavaScript and TypeScript software, where each task's issue or patch includes screenshots, mockups or renderings and fixes are checked by repository unit tests.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "SWE-bench Multimodal"
+    ],
+    "evidence_urls": [
+      "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal/raw/main/README.md"
+    ],
+    "notes": "Adjacent scope: agents resolve issues by producing code patches and are not required to operate a graphical interface, but every instance requires interpreting interface screenshots, recordings or renderings of front-end software. The card's prose describes 612 issue-pull request pairs (102 dev, 510 test) from 17 repositories, while the card's dataset_info and the Hub dataset viewer report 100 dev and 480 test rows for the released Parquet files; the published rows are counted here and the difference is unexplained. The card's eval.yaml describes 517 issues with visual elements and the paper abstract reports 617 task instances. The card declares no data license, so data terms remain unknown. An older copy exists at princeton-nlp/SWE-bench_Multimodal and was not reviewed. Evaluation uses the SWE-bench harness and per-instance Docker images; nothing was run here.",
+    "details": {
+      "hub_id": "SWE-bench/SWE-bench_Multimodal",
+      "hub_revision": "4e6662d51c48e475f7f346e4fa09a6f8b31fcaa5",
+      "gated": false,
+      "disabled": false,
+      "leaderboard_url": "https://www.swebench.com/multimodal.html",
+      "benchmark_protocol": {
+        "focus": [
+          "issue resolution in visual JavaScript/TypeScript software",
+          "interpreting screenshots and renderings in issue reports"
+        ],
+        "setting": "offline",
+        "observations": [
+          "repository checkout",
+          "issue text",
+          "issue and patch images"
+        ],
+        "actions": [
+          "code patch submission"
+        ],
+        "evaluation": "Submitted patches are applied in per-instance Docker images and judged by the repository's FAIL_TO_PASS and PASS_TO_PASS unit tests through the SWE-bench harness; the reported metric is the percentage of instances resolved.",
+        "counts": [
+          {
+            "value": 480,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Hub test split as released (dataset_info and dataset viewer)",
+            "basis": "reported",
+            "evidence_url": "https://datasets-server.huggingface.co/size?dataset=SWE-bench/SWE-bench_Multimodal"
+          },
+          {
+            "value": 100,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Hub dev split as released (dataset_info and dataset viewer)",
+            "basis": "reported",
+            "evidence_url": "https://datasets-server.huggingface.co/size?dataset=SWE-bench/SWE-bench_Multimodal"
+          },
+          {
+            "value": 612,
+            "unit": "issue-pull request pairs",
+            "qualifier": "exact",
+            "population": "dataset card prose (102 dev and 510 test from 17 repositories)",
+            "basis": "reported",
+            "evidence_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal/raw/main/README.md"
+          }
+        ],
+        "notes": "The released Parquet rows (100 dev, 480 test) differ from the card's prose totals (102 dev, 510 test); record the Hub revision and split with a score. The dev and test splits use disjoint repositories. Some carbon-design-system accessibility tests fetch a rule engine over the network at evaluation time, so their verdicts can vary between runs.",
+        "evidence_urls": [
+          "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal/raw/main/README.md",
+          "https://datasets-server.huggingface.co/size?dataset=SWE-bench/SWE-bench_Multimodal"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.hub_revision",
+          "licenses.data"
+        ],
+        "url": "https://huggingface.co/api/datasets/SWE-bench/SWE-bench_Multimodal",
+        "sha256": "5f1503ae26a328a37c4d3f67d1b73b0d64e3dd80534eed4604a8b65944bcd6dc",
+        "retrieved_at": "2026-10-18T11:11:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://datasets-server.huggingface.co/size?dataset=SWE-bench/SWE-bench_Multimodal",
+        "sha256": "8347894b2ea01e61e4d74fbbeaeacd7809ae0bef9beabdb74c16636cfbd9a3fc",
+        "retrieved_at": "2026-10-18T11:11:05Z"
+      }
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "details.benchmark_protocol",
+      "details.leaderboard_url",
+      "details.hub_id"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "dbff146d57bbc200cb584c300d045bc81ab738cec0c07ae405e4f5ebbf5dc6ea",
+    "reviewed_at": "2026-10-18T11:11:39Z",
+    "documented_by": [
+      "2410.03859"
+    ]
+  },
+  {
+    "id": "arxiv:2410.03859",
+    "name": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2410.03859",
+    "summary": "Introduces SWE-bench Multimodal, issue-resolution tasks from 17 JavaScript libraries for interface design, diagramming, visualization and mapping, each with images, and tests how SWE-bench systems generalize to them.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "SWE-bench Multimodal: Do AI Systems Generalize"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2410.03859&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Adjacent scope: systems fix visual front-end bugs by editing code rather than operating an interface. The abstract reports 617 task instances, which differs from the released Hub split sizes. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c94a4981a9d8544a6aa678d639e2af5d6c75b1ed69a2a3a7547da982e568bcad",
+    "reviewed_at": "2026-10-18T11:12:10Z"
   }
 ]

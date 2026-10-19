@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:58343bd3b3d0de7f0cdf",
+    "url": "https://dl.acm.org/doi/10.1145/3132847.3133009",
+    "decision": "out_of_scope",
+    "reason": "This CIKM 2017 paper studies natural language interfaces that map user commands to web service API calls (NL2API). It involves no graphical interface, web page or device interaction, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:35:29Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1145/3132847.3133009",
+      "sha256": "1119879fc10b7fb1045ff3c1fa47c575240cf4eb5a967087864fc3fdca6b36b3",
+      "retrieved_at": "2026-10-19T06:09:51Z"
+    }
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ff147d50026d2d44c62d",
+    "url": "https://modelscope.cn/collections/iic/GUI-Owl-15",
+    "decision": "alias",
+    "target_id": "github:x-plug/mobileagent",
+    "reason": "ModelScope release collection for the GUI-Owl-1.5 checkpoints of the indexed Mobile-Agent project; it lists the same six models as the project's Hugging Face collection."
   }
 ]

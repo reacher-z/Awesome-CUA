@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:54f46b3cbcbea4933048",
+    "url": "https://openreview.net/forum?id=MuCDzH0ctf",
+    "decision": "alias",
+    "target_id": "arxiv:2410.06703",
+    "reason": "OpenReview forum of the ICLR 2026 poster edition of the indexed ST-WebAgentBench paper; same title, with six of the seven arXiv authors."
   }
 ]

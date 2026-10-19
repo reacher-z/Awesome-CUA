@@ -63143,5 +63143,137 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "Proxy Lite",
+    "kind": "agent",
+    "url": "https://github.com/convergence-ai/proxy-lite",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Convergence AI's open-weights web agent runner: a Playwright Chromium loop that sends annotated screenshots and numbered element lists to proxy-lite-3b and executes its click, type, scroll and navigation tool calls.",
+    "scope": "core",
+    "verify_terms": [
+      "Proxy Lite"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The repository is the scaffold for Convergence AI's proxy-lite-3b model: a CLI (proxy), a Streamlit app and a Runner that loops a solver and a webbrowser environment. By default it calls a demo endpoint on Hugging Face Spaces, which the README says is not suitable for production; it recommends serving convergence-ai/proxy-lite-3b with vLLM and the hermes tool-call parser. The webbrowser environment (src/proxy_lite/environments/webbrowser.py) launches Chromium through Playwright with playwright_stealth, injects JavaScript to find interactable elements, and by default sends a screenshot annotated with numbered bounding boxes plus a text list of the marked elements; earlier screenshots are dropped from the context. BrowserTool exposes goto, google_search, click, type, scroll, back, wait, reload and do_nothing actions addressed by mark_id. The README says the model is meant to complete tasks autonomously and may struggle with logins or user-confirmed steps. Model weights are not in this repository. Code was read, not run.",
+    "details": {
+      "repository_revision": "a4389c599d5f5f77dc18510c879e2e783434766b",
+      "package_version": "0.1.0",
+      "availability": "Public agent scaffold, CLI and Streamlit app; the proxy-lite-3b weights are published separately on Hugging Face."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "release_status",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/convergence-ai/proxy-lite/git/trees/a4389c599d5f5f77dc18510c879e2e783434766b?recursive=1",
+        "sha256": "07b4e718c079d9fa161f810ffe0644b30403a73bf315daddd5bd38b0018f7dcc",
+        "retrieved_at": "2026-10-19T06:47:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/src/proxy_lite/environments/webbrowser.py",
+        "sha256": "9ebe6fd41fe0c62816547a35dd9a0b64ed96c4476b5e2e1a55d52aeb8bee0583",
+        "retrieved_at": "2026-10-19T06:47:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/src/proxy_lite/browser/browser.py",
+        "sha256": "369df6ed8e0cd2ed33031af48ff475e722ebded7c63fd69703738c1863fe2eda",
+        "retrieved_at": "2026-10-19T06:47:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/src/proxy_lite/tools/browser_tool.py",
+        "sha256": "56d51de9e960738bcaf6211c30d2de9096643e3749d4cb3319387abee62e0a90",
+        "retrieved_at": "2026-10-19T06:47:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/src/proxy_lite/agents/proxy_lite_agent.py",
+        "sha256": "e19427b2b64c1c0b26e163c8532df43846153a0aa4e21ef2aef733c345015807",
+        "retrieved_at": "2026-10-19T06:47:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/pyproject.toml",
+        "sha256": "5ee90766c962e95294ae81faf1b758486befe9cfe62548d1cb55d7d1e8373903",
+        "retrieved_at": "2026-10-19T06:47:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/LICENSE",
+        "sha256": "58861e2641c884b02cc0f8b589fbbb17657df93ed0da92534c1cec8b543be4c4",
+        "retrieved_at": "2026-10-19T06:47:30Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "CC-BY-NC-4.0",
+          "url": "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/LICENSE",
+          "retrieved_at": "2026-10-19T06:47:30Z",
+          "basis": "The repository LICENSE file states that the work is licensed under CC BY-NC 4.0 (a notice, not the legal code); recorded for code only; it is not applied to the proxy-lite-3b weights or the hosted Proxy service."
+        },
+        "reason": "The repository LICENSE file states that the work is licensed under CC BY-NC 4.0 (a notice, not the legal code); recorded for code only; it is not applied to the proxy-lite-3b weights or the hosted Proxy service.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/convergence-ai/proxy-lite/a4389c599d5f5f77dc18510c879e2e783434766b/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1ac1036e2ed944d36ed8aa9d1294bb359b85091f276114118aa3c5b77f7f7593",
+    "reviewed_at": "2026-10-19T06:48:10Z"
   }
 ]

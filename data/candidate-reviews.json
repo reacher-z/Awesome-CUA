@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:050c43290555b1d14c37",
+    "url": "https://openreview.net/forum?id=jE6pDYCnVF",
+    "decision": "alias",
+    "target_id": "arxiv:2401.16158",
+    "reason": "OpenReview forum of the ICLR 2024 Workshop on Large Language Model (LLM) Agents edition of the indexed Mobile-Agent paper; same title and authors."
   }
 ]

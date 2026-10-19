@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-19T04:42:05Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-19T06:18:59Z**. Generated from committed source receipts.
 
-- 3,178 resource records: 1,614 curated; 1,564 bibliographic metadata only.
+- 3,179 resource records: 1,615 curated; 1,564 bibliographic metadata only.
 - 2,718 paper and survey records, including 2,705 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,841 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,242 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 24 editorial proposals await verification or review.
+- 4,242 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 37 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 23 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -24,7 +24,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 441 | 204 | 37 | 14 | 18 | 176 | 8 | 2 | 101 | 341 |
-| [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
+| [product](products.md) | 19 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
 
@@ -37,13 +37,13 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-19 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-19 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-19 |
-| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-19 |
+| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 7 | 29 | OK · 2026-10-19 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-19 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-19 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-19 |
 | [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | OK · 2026-10-19 |
-| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-10-19 |
-| [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 27 | OK · 2026-10-19 |
+| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 3 | 22 | OK · 2026-10-19 |
+| [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 4 | 26 | OK · 2026-10-19 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-10-19 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 28 | OK · 2026-10-19 |
 | [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 486 | 394 | 0 | 45 | 13 | OK · 2026-10-19 |
@@ -151,7 +151,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-24 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 21 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+23 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 20 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -169,7 +169,6 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [Aguvis-7B-720P checkpoint](https://huggingface.co/xlangai/Aguvis-7B-720P) | Weight files are listed, but the official README still marks the release in progress and the inspected Hub metadata lacks weight terms; review remains pending. |
 | [UGround V1 bounding-box data](https://huggingface.co/datasets/osunlp/UGround-V1-Data-Box) | Public API identifies the dataset and Parquet manifest, but access is gated=auto and the raw card returns 401. No access request or agreement acceptance was made. Defer curation of a directly usable release until access scope and the full card can be reviewed. |
 | [LiteCUA implementation](https://github.com/agiresearch/LiteCUA) | primary evidence unresolved: HTTP Error 404: Not Found; agiresearch/LiteCUA still returns 404 from the GitHub API and its README endpoint, with no redirect, although the AIOS README still links it as the LiteCUA codebase. The Cerebrum README says LiteCUA has been integrated into Cerebrum, the AIOS agent SDK (agiresearch/Cerebrum), which needs its own proposal and review. The paper (arxiv:2505.18829) is curated separately; do not infer a release at this path. |
-| [Project Mariner](https://labs.google.com/mariner/) | The Project Mariner page on labs.google.com is a client-rendered sign-in shell whose HTML carries only the title, and the former deepmind.google Project Mariner pages now redirect to the DeepMind homepage. Approval needs a readable first-party product page. |
 | [On-Device Language Models: A Comprehensive Review](https://arxiv.org/abs/2409.00088) | This survey covers on-device language-model architectures, compression and deployment. Further review is needed to establish substantive computer-interface-agent coverage. |
 | [Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153) | This is a general position on small language models in agentic architectures. The abstract does not establish a specific computer-interface application for adjacent inclusion. |
 | [An Information Theoretic Perspective on Agentic System Design](https://arxiv.org/abs/2512.21720) | The abstract studies compressor-predictor language-model systems and Deep Research. A concrete connection to GUI, browser or operating-system interaction needs further primary-source review. |

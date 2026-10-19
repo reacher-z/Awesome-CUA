@@ -55126,21 +55126,32 @@
     "name": "Project Mariner",
     "kind": "product",
     "url": "https://labs.google.com/mariner/",
+    "evidence_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/"
+    ],
     "environments": [
       "web"
     ],
     "topics": [
-      "web-navigation"
+      "web-navigation",
+      "human-in-the-loop",
+      "history"
     ],
-    "summary": "Google research prototype built with Gemini that reads the browser screen and completes web tasks through an experimental Chrome extension.",
+    "summary": "Discontinued Google browser-agent research prototype built with Gemini 2.0 that read screen pixels and page elements and acted in the active Chrome tab through an extension, asking before sensitive actions.",
     "verify_terms": [
       "Project Mariner"
     ],
+    "scope": "core",
+    "notes": "Historical product entry. The primary source is the Project Mariner section of Google's December 2024 Gemini 2.0 announcement, which describes an early research prototype tested by trusted testers. The Google Labs page at this URL states that Project Mariner was shut down on 4 May 2026, and the former deepmind.google Project Mariner pages redirect to the DeepMind home page. Do not infer current availability.",
     "publisher_id": "organization:google",
-    "editorial_reviewed": false,
-    "reviewed_sha256": "3a6ae2099fbd805a6bb7b09d6650044361297abdd74c76919dbdbf4ade63728a",
-    "reviewed_at": "2026-10-17T17:18:50Z",
-    "review_note": "The Project Mariner page on labs.google.com is a client-rendered sign-in shell whose HTML carries only the title, and the former deepmind.google Project Mariner pages now redirect to the DeepMind homepage. Approval needs a readable first-party product page."
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c44d9a95bf01039af6b3fd5eb8922f00f70b9bc4fa23ad2f43abc18bd040ece7",
+    "reviewed_at": "2026-10-19T06:19:24Z"
   },
   {
     "name": "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding",

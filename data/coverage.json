@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-19T04:42:05Z",
-  "total_records": 3178,
-  "curated_records": 1614,
+  "as_of_utc": "2026-10-19T06:18:59Z",
+  "total_records": 3179,
+  "curated_records": 1615,
   "bibliographic_records": 2718,
   "arxiv_active_records": 2705,
   "non_arxiv_bibliographic_records": 13,
@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1564,
   "discovery_identifiers": 4242,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -114,13 +114,6 @@
       "cause": "unresolved_evidence"
     },
     {
-      "id": "url:12d789d450207bd6d5da",
-      "name": "Project Mariner",
-      "url": "https://labs.google.com/mariner/",
-      "reason": "The Project Mariner page on labs.google.com is a client-rendered sign-in shell whose HTML carries only the title, and the former deepmind.google Project Mariner pages now redirect to the DeepMind homepage. Approval needs a readable first-party product page.",
-      "cause": "reviewer_hold"
-    },
-    {
       "id": "arxiv:2409.00088",
       "name": "On-Device Language Models: A Comprehensive Review",
       "url": "https://arxiv.org/abs/2409.00088",
@@ -194,7 +187,7 @@
     "infrastructure": 14,
     "model": 98,
     "paper": 2700,
-    "product": 20,
+    "product": 21,
     "survey": 18,
     "tool": 20
   },
@@ -207,7 +200,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 377,
-    "web": 621,
+    "web": 622,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -293,7 +286,7 @@
     },
     "product": {
       "desktop": 5,
-      "web": 18
+      "web": 19
     },
     "survey": {
       "android": 2,
@@ -440,8 +433,8 @@
       "resolved_aliases": 1,
       "curated": 87,
       "excluded": 0,
-      "set_aside": 6,
-      "unindexed": 30
+      "set_aside": 7,
+      "unindexed": 29
     },
     {
       "id": "steel-web",
@@ -590,8 +583,8 @@
       "resolved_aliases": 0,
       "curated": 63,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 23
+      "set_aside": 3,
+      "unindexed": 22
     },
     {
       "id": "cdxeve-cua",
@@ -620,8 +613,8 @@
       "resolved_aliases": 0,
       "curated": 32,
       "excluded": 0,
-      "set_aside": 3,
-      "unindexed": 27
+      "set_aside": 4,
+      "unindexed": 26
     },
     {
       "id": "supernal-gui",

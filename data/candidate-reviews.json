@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a4f3fb5c5252adb32bcd",
+    "url": "https://deepmind.google/models/project-mariner",
+    "decision": "alias",
+    "target_id": "url:12d789d450207bd6d5da",
+    "reason": "Former Google DeepMind product page for Project Mariner; it now redirects to the DeepMind home page after the project was shut down."
   }
 ]

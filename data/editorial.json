@@ -63143,5 +63143,53 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "arxiv:2607.26300",
+    "name": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.26300",
+    "summary": "AgentGUI is a locally hosted interface for observing and steering concurrent long-running agent sessions, with trajectory views, manual and automated drift correction, and a user study of trace comprehension.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "observability",
+      "long-horizon"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "AgentGUI: An Interface for Observing"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.26300v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.26300v2",
+        "sha256": "939691f5f6ebf06c2e6a23cbff288d9b7a91a1de2352a6468eba10d856ebca86",
+        "retrieved_at": "2026-10-19T08:43:18Z"
+      }
+    ],
+    "notes": "Reviewed against the exact-version v2 arXiv abstract page and v2 HTML full text. Adjacent supervision interface: the graphical interface is for people overseeing agents. Section 3 gives primary support to Hermes agents, each desk in a persistent Docker sandbox, and experimental support to the Claude Agent SDK; the paper's agents take terminal and code actions, and it does not evaluate agents operating graphical interfaces. The user study had 8 participants. The paper names a project site and the repository https://github.com/eth-medical-ai-lab/agent-gui. Results have not been independently reproduced.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e1bf0118347b1cce8cb62a3d348f69a19717050d052e371706fca213113ba315",
+    "reviewed_at": "2026-10-19T08:44:40Z"
   }
 ]

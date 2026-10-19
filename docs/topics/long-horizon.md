@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-99 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+100 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (88)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (89)](#papers)
 
 ## Benchmarks
 
@@ -62,6 +62,7 @@ All entries in this section: web.
 | 2026‑08‑11 | [DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?](https://arxiv.org/abs/2608.10366) | desktop, linux | DSAgentBench evaluates end-to-end data-science workflows spanning analysis, modeling and visualization inside a real desktop environment. Task evaluators check produced analytical and visual artifacts, while the released interface supports screenshot or accessibility observations and GUI actions. |
 | 2026‑08‑03 | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | desktop, web | Qwen-CUA operates through screenshots and keyboard/mouse events while compressing older visual history into reusable context blocks. Its report combines verifiable task generation, trajectory-based training and separate browser and Bash-augmented studies. |
 | 2026‑07‑30 | [Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents](https://arxiv.org/abs/2607.28227) | cross-platform, web, desktop | Describes a foundation GUI agent with combined GUI and command-line actions, large-scale interaction infrastructure, and iterative environment and task generation. |
+| 2026‑07‑28 | [AgentGUI: An Interface for Observing and Steering Long-Running AI Agents](https://arxiv.org/abs/2607.26300) | unspecified | AgentGUI is a locally hosted interface for observing and steering concurrent long-running agent sessions, with trajectory views, manual and automated drift correction, and a user study of trace comprehension. |
 | 2026‑07‑24 | [StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents](https://arxiv.org/abs/2607.22798) | desktop | Introduces StateAct, a code-first computer-use harness that manipulates program state directly and delegates screenshot-and-click subgoals to a GUI agent. An independent completion gate checks saved outputs, while fresh subagents handle subgoals to limit accumulated context. |
 | 2026‑07‑20 | [SEE: Structure-aware Exploring & Exploiting for Long-horizon GUI Agent Trajectory Synthesis](https://arxiv.org/abs/2607.18046) | unspecified | Introduces SEE, which first explores mobile interfaces to build a screen-and-element transition graph, then composes task trajectories through graph planning and controlled sampling. It studies coverage, loop avoidance, and transfer after training agents on the generated sequences. |
 | 2026‑07‑20 | [Sidekick: Designing Communication for Effective Multitasking with Computer Use Agents](https://arxiv.org/abs/2607.17527) | unspecified | Introduces Sidekick, a communication interface that uses ambient status cues, multimodal action summaries, and visual and verbal explanations of reasoning to help people monitor computer-use agents. A user study examines progress awareness, error traceability, and multitasking across background and foreground interaction. |

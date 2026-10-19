@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2b9161de3439cc2ac8b2",
+    "url": "https://bailian.console.aliyun.com/next?tab=demohouse",
+    "decision": "not_a_resource",
+    "reason": "Alibaba Cloud Bailian (Model Studio) console, the demo tab of a hosting platform. Once the fragment that named the Mobile-Agent-v3.5 computer-use demo is dropped, the address serves only the generic console shell."
   }
 ]

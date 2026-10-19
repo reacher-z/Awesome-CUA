@@ -63143,5 +63143,66 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "id": "url:e876bff0950b82a0c9b7",
+    "name": "AdapAction: Adaptive Target Action Backdoor Attack against GUI Agents",
+    "kind": "paper",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_AdapAction_Adaptive_Target_Action_Backdoor_Attack_against_GUI_Agents_CVPR_2026_paper.html",
+    "summary": "Backdoor attack that fine-tunes GUI agents on teacher-written malicious trajectories, so a trigger makes the agent choose a harmful action fitting the current screen and instruction; tested on AitZ and AndroidControl.",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation"
+    ],
+    "verify_terms": [
+      "AdapAction",
+      "Adaptive Target Action Backdoor"
+    ],
+    "evidence_urls": [
+      "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_AdapAction_Adaptive_Target_Action_Backdoor_Attack_against_GUI_Agents_CVPR_2026_paper.html"
+    ],
+    "primary_supports": [
+      "details.publication.date_basis",
+      "details.publication.date_parts",
+      "details.publication.identity_basis",
+      "details.publication.notes",
+      "details.publication.pages",
+      "details.publication.pdf_url",
+      "details.publication.type",
+      "details.publication.url",
+      "details.publication.venue",
+      "kind",
+      "scope",
+      "summary",
+      "topics"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.publication.authors",
+          "details.publication.identity_basis",
+          "details.publication.notes",
+          "details.publication.title",
+          "environments",
+          "name",
+          "scope",
+          "summary",
+          "topics"
+        ],
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_AdapAction_Adaptive_Target_Action_Backdoor_Attack_against_GUI_Agents_CVPR_2026_paper.pdf",
+        "retrieved_at": "2026-10-19T06:38:38Z",
+        "sha256": "946cbc9a6e0ab3161e6e4d7d71a58433eba6b51babe3cdcf58b9f30c3a388cb0"
+      }
+    ],
+    "notes": "The annotation was reviewed against the CVF open-access landing page and PDF. Experiments have not been independently reproduced. A teacher model (for example Gemini 2.5 Pro) writes malicious reasoning trajectories drawn from a five-category malicious action library, and the agent learns them by supervised fine-tuning, which the paper calls Context-Aware Behavioral Imitation. Main results fine-tune Qwen2-VL-2B and Qwen2-VL-7B at a 0.1 poisoning ratio with a blended visual trigger; an AndroidWorld emulator deployment through Mobile-Agent-v3 is described in the supplementary material. The paper links no code release or arXiv version.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c540ae31dfb8a356917ef343c6e2bd1036bf0758276f838a5fd608cde690e7da",
+    "reviewed_at": "2026-10-19T06:39:44Z"
   }
 ]

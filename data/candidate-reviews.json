@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:54072262ef11970f7740",
+    "url": "https://iclr26-dart-gui.github.io",
+    "decision": "not_a_resource",
+    "reason": "Dead anonymous-review page named in the ICLR 2026 DART submission abstract: it returns the GitHub Pages 404 page, the iclr26-dart-gui organization has no public repositories, the Wayback Machine has no capture (CDX query empty), and the paper (arxiv:2509.23866) now links computer-use-agents.github.io/dart-gui instead."
   }
 ]

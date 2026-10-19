@@ -4433,7 +4433,28 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "0f05aa4f447d43439f6b3f4ab179cbe1e59d170eaf6c0684fa9c2eb0872e5985",
-    "reviewed_at": "2026-10-16T06:36:02Z"
+    "reviewed_at": "2026-10-16T06:36:02Z",
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2501.12326",
+        "evidence_url": "https://raw.githubusercontent.com/bytedance/UI-TARS-desktop/3ac2cb8d946d78d5ff92ad17b318eaafa18c178c/README.md"
+      }
+    ],
+    "notes": "The README's UI-TARS Desktop section links arXiv 2501.12326 as its paper, and its Citation section asks users to cite that paper. The paper introduces the UI-TARS model that the app runs.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/bytedance/UI-TARS-desktop/3ac2cb8d946d78d5ff92ad17b318eaafa18c178c/README.md",
+        "sha256": "0f05aa4f447d43439f6b3f4ab179cbe1e59d170eaf6c0684fa9c2eb0872e5985",
+        "retrieved_at": "2026-10-19T06:10:18Z"
+      }
+    ]
   },
   {
     "name": "Mobile-Agent",

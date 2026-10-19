@@ -3442,7 +3442,44 @@
     "reviewed_at": "2026-10-16T10:50:15Z",
     "documented_by": [
       "2404.05719"
-    ]
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/25985c2c4f24b12bc917bd94ec8c879a89176644/LICENSE",
+        "sha256": "5da9f451730ab60b7a169ea3939974252831420ba430ca0ba436bc03a1ca6bb0",
+        "retrieved_at": "2026-10-19T06:14:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/25985c2c4f24b12bc917bd94ec8c879a89176644/ferretui/README.md",
+        "sha256": "1973f702c08ca9637ce03bc28fc34188be05826e9d43f9992b08e804f474b1a1",
+        "retrieved_at": "2026-10-19T06:14:03Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "AML",
+          "url": "https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/25985c2c4f24b12bc917bd94ec8c879a89176644/LICENSE",
+          "retrieved_at": "2026-10-19T06:14:02Z",
+          "basis": "The root LICENSE at commit 25985c2 grants a personal, non-exclusive license under Apple's copyrights to use, reproduce, modify and redistribute the software and excludes patent rights. Its text matches the SPDX AML (Apple MIT License) template, in which \"Computer,\" is optional and the copyright line is not matched. The ferretui component has no license file of its own; its README adds a notice that the data and code are intended and licensed for research use only and restricted by the Gemma and LLaMA terms. The released checkpoints and the training data are not covered by this code license."
+        },
+        "reason": "The root LICENSE at commit 25985c2 grants a personal, non-exclusive license under Apple's copyrights to use, reproduce, modify and redistribute the software and excludes patent rights. Its text matches the SPDX AML (Apple MIT License) template, in which \"Computer,\" is optional and the copyright line is not matched. The ferretui component has no license file of its own; its README adds a notice that the data and code are intended and licensed for research use only and restricted by the Gemma and LLaMA terms. The released checkpoints and the training data are not covered by this code license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/25985c2c4f24b12bc917bd94ec8c879a89176644/LICENSE",
+          "https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/25985c2c4f24b12bc917bd94ec8c879a89176644/ferretui/README.md"
+        ]
+      }
+    }
   },
   {
     "name": "GELab Zero",

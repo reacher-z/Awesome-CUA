@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2142,6 +2142,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2605.12233%2C2605.12493%2C2605.12978%2C2605.13119%2C2605.14133%2C2605.16909%2C2605.17260%2C2605.17324%2C2605.17448%2C2605.17656%2C2605.17721%2C2605.19447%2C2605.19587%2C2605.20894%2C2605.22642%2C2605.23204%2C2605.25233%2C2605.25901%2C2605.26086%2C2605.26144%2C2605.26252%2C2605.26646%2C2605.27209%2C2605.27705%2C2605.27898%2C2605.28158%2C2605.28255%2C2605.29341%2C2605.29463%2C2605.29801%2C2605.30010%2C2605.30052%2C2605.30126%2C2605.30434%2C2605.30907%2C2605.30914%2C2605.31264%2C2605.31557%2C2606.00530%2C2606.00543%2C2606.00856%2C2606.01057%2C2606.01961%2C2606.02540%2C2606.03103%2C2606.03889%2C2606.03895%2C2606.04315%2C2606.04455%2C2606.05525&max_results=50",
         "sha256": "9a71e95803ce58c462c84e2b45a891555e31d1fb409e643bb3ca4675a44c96e6",
         "retrieved_at": "2026-10-17T12:31:23Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2606.05646",
+      "name": "Enhancing Software Engineering Through Closed-Loop Memory Optimization",
+      "url": "https://arxiv.org/abs/2606.05646",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces MemOp, a closed-loop framework that measures memory utility by its validated downstream effect and uses it to build and optimize memory for software-engineering agents resolving repository issues, with experiments drawn from SWE-bench Verified. These agents edit code and run commands in repositories rather than operating a GUI, browser or device, so the work is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:05:12Z",
+      "metadata_fingerprint": "b9d30acfec51d3250278cac992b4304451c37c73d5cd9114f401dd37c3f16dfe",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
+        "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",
+        "retrieved_at": "2026-10-17T12:31:28Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Frameworks (3)](#frameworks) · [Papers (46)](#papers)
 
 ## Frameworks
 
@@ -32,6 +32,7 @@
 | 2026‑07‑24 | [StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents](https://arxiv.org/abs/2607.22798) | desktop | Introduces StateAct, a code-first computer-use harness that manipulates program state directly and delegates screenshot-and-click subgoals to a GUI agent. An independent completion gate checks saved outputs, while fresh subagents handle subgoals to limit accumulated context. |
 | 2026‑07‑13 | [StructAgent: Harness Long-horizon Digital Agents with Unified Causal Structure](https://arxiv.org/abs/2607.11388) | desktop | StructAgent maintains compact task state and regulates long-horizon execution through verified transitions and progress checkpoints. Its workflow supports evidence-based completion and targeted recovery, with desktop computer-use evaluation and a separate Minecraft extension. |
 | 2026‑07‑05 | [Do GUI Agents Believe Their Eyes? Diagnosing State-Belief Reliance on Pixels versus Structure](https://arxiv.org/abs/2607.04334) | cross-platform | Defines visual state reliance and probes whether GUI agents resolve screenshot/structure conflicts using pixels, serialized interface structure or prior beliefs. Paired interventions and live multi-step tests connect misattributed state beliefs to failures and compare consistency-based mitigations. |
+| 2026‑06‑30 | [What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States](https://arxiv.org/abs/2606.31612) | android | Proposes ATMem, mobile GUI-agent memory kept as an execution state that links task values to role and status, STR-GRPO RL for selective memory use, and DataScope, a 96-instance cross-app Android benchmark. |
 | 2026‑06‑23 | [VisCritic: Visual State Comparison as Process Reward for GUI Agents](https://arxiv.org/abs/2606.24525) | unspecified | VisCritic compares before/after screenshots through change-aware visual features and an action-conditioned critic. Weakly supervised samples from existing traces train judgments of action success, progress and error type for GUI-agent verification. |
 | 2026‑06‑19 | [ChainWorld: Composing Long-Horizon Desktop Workloads from Atomic OSWorld Tasks](https://arxiv.org/abs/2606.21654) | desktop | ChainWorld composes compatible atomic OSWorld tasks into multi-objective desktop chains while preserving their evaluators. It compares giving the full sequence at once with revealing goals turn by turn, exposing different state and session-management failures. |
 | 2026‑06‑05 | [StainFlow: Entity-Stain Tracking and Evidence Linking for Process Rewards in GUI Agents](https://arxiv.org/abs/2606.07027) | android | StainFlow tracks visually verifiable task entities through GUI trajectories to identify phases and retrieve focused evidence windows. Its process-reward model is tested for both online policy learning and trajectory-completion judgments. |

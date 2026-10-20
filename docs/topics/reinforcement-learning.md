@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+233 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (181)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (182)](#papers)
 
 ## Benchmarks
 
@@ -135,6 +135,7 @@ All entries in this section: cross-platform.
 | 2026‑07‑13 | [SCALECUA: Scaling Computer Use Agents with Verifiable Task Synthesis and Efficient Online RL](https://arxiv.org/abs/2607.11185) | desktop | Scales computer-agent reinforcement learning through verifiable task generation, capability-aware rollout allocation, and segmented visual context. |
 | 2026‑07‑11 | [MAG: A Web-Agent Benchmark and Harness for Multimodal Action and Guide Generation](https://arxiv.org/abs/2607.10079) | web | MAG jointly evaluates browser task actions and user-facing guides grounded in screenshots through element marks or pixel coordinates. Its harness covers annotation, live evaluation and joint metrics, with an expert-trajectory-augmented GRPO training study. |
 | 2026‑07‑07 | [EvoCUA-1.5: Online Reinforcement Learning for Multi-turn Computer-Use Agents](https://arxiv.org/abs/2607.09773) | desktop | EvoCUA-1.5 trains multi-turn desktop agents through online reinforcement learning in executable sandboxes. It combines step-level policy optimization, task filtering and calibration, an adaptive curriculum, and asynchronous rollout handling with staleness control. |
+| 2026‑06‑30 | [What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States](https://arxiv.org/abs/2606.31612) | android | Proposes ATMem, mobile GUI-agent memory kept as an execution state that links task values to role and status, STR-GRPO RL for selective memory use, and DataScope, a 96-instance cross-app Android benchmark. |
 | 2026‑06‑30 | [Xiaomi-GUI-0 Technical Report](https://arxiv.org/abs/2606.31410) | android | Describes a mobile GUI agent trained through real-device interaction, corrected failure trajectories, supervised learning, and reinforcement learning. |
 | 2026‑06‑29 | [GUICrafter: Weakly-Supervised GUI Agent Leveraging Massive Unannotated Screenshots](https://arxiv.org/abs/2606.29705) | unspecified | GUICrafter first learns grounding from large collections of unannotated screenshots and webpages, then uses a smaller high-quality dataset for reinforcement-learning calibration. The curriculum targets reduced dependence on manually annotated GUI training data. |
 | 2026‑06‑24 | [WinDOM: Self-Family Distillation for Small-Model GUI Grounding](https://arxiv.org/abs/2606.25964) | web | WinDOM obtains bounding-box supervision from a Windows 11 web reimplementation driven through Playwright, and studies rejection-sampling distillation for small GUI grounders. It treats the depth of the supervised cold start as a GRPO choice, comparing same-size EMA and larger same-family teachers. |

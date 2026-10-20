@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.31612",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "state-tracking",
+      "reinforcement-learning",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Proposes ATMem, mobile GUI-agent memory kept as an execution state that links task values to role and status, STR-GRPO RL for selective memory use, and DataScope, a 96-instance cross-app Android benchmark.",
+    "verify_terms": [
+      "What Memory Do GUI Agents Really Need"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.31612v2"
+    ],
+    "scope": "core",
+    "notes": "ATMem-UI 4B and 8B are initialized from Qwen3-VL and trained with SFT and then online RL on 128 containerized Android virtual devices; STR-GRPO contrasts memory-on and memory-off rollouts and adds a memory-cost-aware reward. Evaluation covers AndroidWorld, MobileWorld and DataScope (32 task templates at three difficulty levels across 14 apps), with App-Level Progress and Scope-Aware F1 metrics; the paper reports 76.6% AndroidWorld success for the 8B model. The v2 text states that code and models will be made public but gives no location. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.31612v2",
+        "retrieved_at": "2026-10-20T04:00:49Z",
+        "sha256": "ca6b95686d11466716842a717863d8382da6239a11feff82b30f1365ba477a92",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML sections 3.1-3.4 (ATMem, rollout synthesis, STR-GRPO, DataScope benchmark and metrics), 4.1 (experimental setup) and 4.2 (main results).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "47eecb12aad4d776ab52bbfa19cf17fa637f47d19057b3918316bff388b255a2",
+    "reviewed_at": "2026-10-20T04:10:54Z"
   }
 ]

@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.06663",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "world-models",
+      "ui-design"
+    ],
+    "scope": "adjacent",
+    "summary": "Introduces PlanViz, a 360-question benchmark of image generation and editing for route planning, workflow diagrams and web or UI states, scored for unified multimodal models by an MLLM judge.",
+    "verify_terms": [
+      "PlanViz: Evaluating Planning-Oriented Image Generation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.06663v2"
+    ],
+    "notes": "Adjacent: the evaluated systems are unified multimodal and image-generation models, not agents operating an interface. The GUI component is the web and UI sub-task, which asks models to generate UI layouts or to edit a real website or app screenshot into its state after described user actions, with references captured by performing those actions; some workflow-editing items also start from interface screenshots. The v2 full text has 60 items per sub-task and setting (231 open-ended, 129 closed-ended) and uses Qwen3-VL-235B-A22B-Instruct as judge. It points to code at github.com/lijunxian111/PlanViz. Results have not been independently reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML for the sub-task definitions, data construction, item counts and judge model. No code execution or result reproduction.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.06663v2",
+        "sha256": "4d227e7acdcba0ed641d8fc78eb08959697894f4536104c90d5fd3c3d24b0933",
+        "retrieved_at": "2026-10-20T04:57:01Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7628e3c239961d662d40b898b3615918cd393fb09ccc0eb7b0422b4d8410f5b2",
+    "reviewed_at": "2026-10-20T04:57:02Z"
   }
 ]

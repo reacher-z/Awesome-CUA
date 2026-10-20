@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:52ae1e712fd005951d46",
+    "url": "https://www.webmarkerjs.com",
+    "decision": "alias",
+    "target_id": "github:reidbarber/webmarker",
+    "reason": "Former documentation website of the indexed WebMarker library; archived captures show its docs linking the repository, which now publishes its docs on GitHub Pages."
   }
 ]

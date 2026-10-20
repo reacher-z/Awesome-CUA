@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agentic Reinforcement Learning with Implicit Step Rewards",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.19199",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "reward-models",
+      "web-navigation"
+    ],
+    "summary": "iStar alternately trains an implicit process reward model with a trajectory-level DPO objective and adds its step rewards to episode advantages in agent RL; tested on WebShop, VisualSokoban and SOTOPIA.",
+    "verify_terms": [
+      "Agentic Reinforcement Learning with Implicit Step Rewards"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: the web component is WebShop, a simulated shopping website the agent searches, browses and buys from through text observations, trained from Qwen2.5-7B-Instruct (86.5% success and 93.6% score reported). VisualSokoban uses Qwen2.5-VL-7B-Instruct, and SOTOPIA is open-ended social dialogue scored by GPT-4o. The method is combined with RLOO, REINFORCE++ and GRPO. The paper says code will be released and names no repository. Results were not independently reproduced.",
+    "read_basis": "Read the arXiv v3 abstract and the v3 HTML Sections 3.1 (implicit step rewards, trajectory-based DPO, advantage combination), 4 (benchmarks, baselines, Tables 1-2, Figure 3), 6 (conclusion) and Appendices B (WebShop, VisualSokoban, SOTOPIA) and C.1 (training details).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.19199v3"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.19199v3",
+        "retrieved_at": "2026-10-20T07:44:20Z",
+        "sha256": "f671f90600e3eb5fc42a5a7b91c449eb56cf4599c4d2c1276ac787786dd410a6",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d79002a4c57abe39281d5bf2a1ba0802bee4ea26bc1348282b1946212d7bb11e",
+    "reviewed_at": "2026-10-20T07:44:30Z"
   }
 ]

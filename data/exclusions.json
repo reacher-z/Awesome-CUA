@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2603.17826",
+    "name": "FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software Repair",
+    "url": "https://arxiv.org/abs/2603.17826",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract studies multimodal automated program repair on SWE-bench Multimodal, combining a hybrid workflow-agent design, crop and bounding-box tools over issue screenshots, and a memory bank built from failed repair attempts. The agent edits repository code and inspects static screenshots attached to issue reports; it never observes or operates a running interface, so this software-repair work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:23:05Z",
+    "metadata_fingerprint": "930a632743a0272e83d556a4471e79a77eeaa79fef0b96b8f171de1923bf1566",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2602.07008%2C2602.07283%2C2602.07787%2C2602.09856%2C2602.10356%2C2602.10814%2C2602.10915%2C2602.11524%2C2602.11858%2C2602.12276%2C2602.12544%2C2602.12852%2C2602.13559%2C2602.13653%2C2602.14865%2C2602.15384%2C2602.17003%2C2602.17245%2C2602.17588%2C2602.24142%2C2603.00503%2C2603.00676%2C2603.02951%2C2603.04364%2C2603.04949%2C2603.07024%2C2603.07432%2C2603.08013%2C2603.08316%2C2603.08938%2C2603.10268%2C2603.10291%2C2603.10505%2C2603.10577%2C2603.12710%2C2603.14248%2C2603.14448%2C2603.17441%2C2603.17826%2C2603.20278%2C2603.20340%2C2603.22529%2C2603.23007%2C2603.23559%2C2603.24160%2C2603.24533%2C2603.26041%2C2603.26266%2C2604.00073%2C2604.00842&max_results=50",
+      "sha256": "d494c76e512656f76a5912eac0768bbbdd50014387c779a0618a40c1722c399b",
+      "retrieved_at": "2026-10-16T06:32:59Z"
+    }
   }
 ]

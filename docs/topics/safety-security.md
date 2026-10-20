@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (2)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
 
 ## Benchmarks
 
@@ -43,11 +43,10 @@ All entries in this section: android.
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | web | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| [OpenDesk](https://github.com/vitalops/opendesk) | desktop, macos, linux, windows, web | — | code MIT | Computer-use MCP server and Python/TypeScript SDKs giving agents Set-of-Marks screenshots, accessibility-based UI actions, mouse, keyboard, OCR, CDP browser control and workflow replay on local or paired machines. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/vitalops/opendesk/HEAD/README.md) |
 
 ## Surveys
 

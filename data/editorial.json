@@ -63844,5 +63844,110 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "OpenDesk",
+    "kind": "tool",
+    "url": "https://github.com/vitalops/opendesk",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding",
+      "safety-security",
+      "memory"
+    ],
+    "summary": "Computer-use MCP server and Python/TypeScript SDKs giving agents Set-of-Marks screenshots, accessibility-based UI actions, mouse, keyboard, OCR, CDP browser control and workflow replay on local or paired machines.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenDesk"
+    ],
+    "aliases": [
+      "opendesk"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Published by VitalOps and unrelated to the openDesk office suite. The Python package opendesk is version 0.3.0 in pyproject.toml at the inspected commit, and the README also documents an npm package, @vitalops/opendesk-sdk. marks.py builds Set-of-Marks screenshots from platform accessibility APIs (AppleScript on macOS, AT-SPI2 on Linux, UI Automation on Windows); the browser tool drives Chrome, Edge or Brave over the DevTools protocol. The README also describes record-and-replay workflows compiled for replay without model calls, scheduling, a local screen-memory index, a safety guard with risk tiers, approvals, prompt-injection scanning and a hash-chained audit log, and encrypted pairing for remote machines. docs/eval.md describes an evaluation harness with macOS smoke and prompt-injection suites; its OSWorld adapter is marked untested and was unit-tested with fakes only. No model is bundled; an MCP client or SDK caller supplies the agent. Code was read, not run.",
+    "details": {
+      "availability": "Public Python and TypeScript source with PyPI and npm packages; no model is bundled, so an MCP client or SDK caller supplies the agent.",
+      "repository_revision": "b7e564952dc77795cdb1741940354c351e9e6370",
+      "package_version": "0.3.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/vitalops/opendesk/b7e564952dc77795cdb1741940354c351e9e6370/README.md",
+        "sha256": "78391eec46769ee8bec1c65bb5328c94aca3757717142be35f4e63e9059003b0",
+        "retrieved_at": "2026-10-20T08:17:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/vitalops/opendesk/b7e564952dc77795cdb1741940354c351e9e6370/python/pyproject.toml",
+        "sha256": "a10d74cf1b9b50dfc4e98275b4220b9f0f50d0bfb68ed9f3785d6effd860c8f3",
+        "retrieved_at": "2026-10-20T08:17:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/vitalops/opendesk/b7e564952dc77795cdb1741940354c351e9e6370/python/opendesk/computer/marks.py",
+        "sha256": "cd85db8949edfda6bdc9d7c5311ea653da9be3e159650ba69b364e6370f96338",
+        "retrieved_at": "2026-10-20T08:17:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/vitalops/opendesk/b7e564952dc77795cdb1741940354c351e9e6370/docs/eval.md",
+        "sha256": "05d2a8f3c961b4f94618cf2b26ef81aab58ae73822cf6e865151b4568f3f2185",
+        "retrieved_at": "2026-10-20T08:17:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/vitalops/opendesk/b7e564952dc77795cdb1741940354c351e9e6370/LICENSE",
+        "sha256": "78b6dc70a67b47401f51d2a734221901d4774b7f5e138d2db0b40cd979a2bea2",
+        "retrieved_at": "2026-10-20T08:17:18Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit b7e5649, the Python pyproject.toml and npm package.json, the Set-of-Marks source, the evaluation guide and the root LICENSE. No code execution.",
+    "reviewed_sha256": "78391eec46769ee8bec1c65bb5328c94aca3757717142be35f4e63e9059003b0",
+    "reviewed_at": "2026-10-20T08:17:45Z"
   }
 ]

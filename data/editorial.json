@@ -63844,5 +63844,91 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Do Browser",
+    "kind": "product",
+    "url": "https://www.dobrowser.io",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "memory"
+    ],
+    "summary": "Chrome extension whose agent carries out plain-language browser tasks across tabs, clicking, filling forms, scraping data and saving files, with built-in and user-made skills and hosted or connected models.",
+    "scope": "core",
+    "verify_terms": [
+      "Do Browser"
+    ],
+    "aliases": [
+      "doBrowser"
+    ],
+    "notes": "Smooth Brain LLC operates Do Browser under its terms of service. The homepage FAQ says it supports Chrome on Mac, Windows and Linux desktops, automates scraping, form filling, screenshots, navigation, clicks and multi-tab work, fills login forms only when explicitly told to and cannot read saved passwords; the homepage also offers slide and small-app generation. The documentation describes skills in the Agent Skills format (a folder with a SKILL.md file), built-in skills for Gmail, Google Sheets, Google Flights, X, LinkedIn messaging, Figma and tldraw, skills the agent saves from a task it has just completed, and a virtual filesystem kept in the browser's IndexedDB. Models come from the hosted plan, a ChatGPT or Claude subscription sign-in, or a Gemini API key. Pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://www.dobrowser.io/docs/skills",
+        "sha256": "dd0e6eebea2834a3a6c9c8cc69ade1d3a9a15bc7d87041cdae8319b77e8e6c9d",
+        "retrieved_at": "2026-10-20T04:36:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://www.dobrowser.io/docs/ai-providers",
+        "sha256": "8404157eddde4e8bcd84a4229254c31f62b38e9d7bcc041e53539436dc7a1097",
+        "retrieved_at": "2026-10-20T04:36:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://www.dobrowser.io/docs/filesystem",
+        "sha256": "59704ffd9ddfa1b7a47c112aa1b8d4f39ba4dbb2a8173f3cbc3b4c5d5c3c6749",
+        "retrieved_at": "2026-10-20T04:36:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://www.dobrowser.io/terms",
+        "sha256": "227622f86bc4e3476ccd15d24d317644e10fa31578b2787eb9eca3a24c987f7d",
+        "retrieved_at": "2026-10-20T04:36:43Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5f1e136332f81776afc07003e8057595a35e8548736f61b6075d5c5960ce8b29",
+    "reviewed_at": "2026-10-20T04:36:51Z"
   }
 ]

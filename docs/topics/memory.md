@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-166 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+167 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (2)](#surveys) · [Papers (145)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Products (1)](#products) · [Surveys (2)](#surveys) · [Papers (145)](#papers)
 
 ## Benchmarks
 
@@ -46,6 +46,14 @@ All entries in this section: ios.
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
+
+## Products
+
+All entries in this section: web.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Do Browser](https://www.dobrowser.io) | — | Chrome extension whose agent carries out plain-language browser tasks across tabs, clicking, filling forms, scraping data and saving files, with built-in and user-made skills and hosted or connected models. | [✓ 2026‑10‑20](https://www.dobrowser.io) |
 
 ## Surveys
 

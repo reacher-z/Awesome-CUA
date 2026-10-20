@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4f2e66c20b4c754bd94e",
+    "url": "https://python.langchain.com/docs/integrations/tools/playwright",
+    "decision": "out_of_scope",
+    "reason": "This LangChain v0.3 documentation address described the PlayWright Browser Toolkit integration; it now returns a 308 redirect to the generic LangChain Python integrations overview, which does not mention Playwright, and docs.langchain.com/oss/python/integrations/tools/playwright returns 404. The toolkit's code survives only in the archived langchain-ai/langchain-community repository, so the address documents a retired framework integration rather than a maintained agent, benchmark or dataset.",
+    "reviewed_at": "2026-10-20T04:20:38Z",
+    "evidence": {
+      "url": "https://python.langchain.com/docs/integrations/tools/playwright",
+      "sha256": "c0739741475b5655a1670c1ec318f9538d8a429d26d6eef1d9af3fbcefcecf59",
+      "retrieved_at": "2026-10-19T08:38:42Z"
+    }
   }
 ]

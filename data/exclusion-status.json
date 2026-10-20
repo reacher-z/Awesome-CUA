@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1951,6 +1951,23 @@
       "reason": "The abstract combines contact-mechanics simulations and deep learning to model friction for railway wheelsets. This mechanical-engineering simulation study is outside the GUI/computer-use agent scope.",
       "reviewed_at": "2026-10-17T05:31:22Z",
       "metadata_fingerprint": "5e6e9d8ac335bdd34a329617d51eceb0fcacc4042825b053c6ad95ce91759b75",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "ae98e77b8bb125e45277aacec768a047e7bb0e13f33ca9ff6ca7c19e29e56cca",
+        "retrieved_at": "2026-10-16T06:36:47Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2511.04359",
+      "name": "Neutral-atom quantum computation using multi-qubit geometric gates via adiabatic passage",
+      "url": "https://arxiv.org/abs/2511.04359",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract proposes two- and multi-qubit geometric phase gates for neutral-atom quantum computers driven by a double stimulated Raman adiabatic passage pulse sequence, analyzes gate fidelity and robustness to Rabi-frequency, blockade and position errors, and simulates Grover's search. This quantum-hardware research is outside the GUI/computer-use agent scope.",
+      "reviewed_at": "2026-10-20T05:15:06Z",
+      "metadata_fingerprint": "549d7beb1e0250d7b9dc9e4d0166dee24a4b8571f0ae09c2f8f6c07fc8dec82e",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "ae98e77b8bb125e45277aacec768a047e7bb0e13f33ca9ff6ca7c19e29e56cca",

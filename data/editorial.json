@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "WebRouter: Query-specific Router via Variational Information Bottleneck for Cost-sensitive Web Agent",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.11221",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "WebRouter trains an mDeBERTa query router with a cost-aware variational information bottleneck loss to pick one of three LLMs for each browser-use web-agent step, evaluated on five WebVoyager websites.",
+    "verify_terms": [
+      "WebRouter: Query-specific Router"
+    ],
+    "scope": "core",
+    "notes": "Section 4.1 evaluates browser-use agents on WebVoyager tasks from Apple, ArXiv, Coursera, Google and Hugging Face (at least 46 tasks per site), routing among Gemini-2.5 Flash, GPT-4.1 Mini and GPT-4o through OpenRouter, with 11,800 training samples. The reported 87.8% cost reduction against GPT-4o with a 3.8% accuracy drop was not independently reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the complete v1 HTML (method in Section 3, experiment setup and results in Sections 4.1-4.2) and checked the v1 PDF title page for links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.11221v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.11221v1",
+        "retrieved_at": "2026-10-20T07:40:11Z",
+        "sha256": "49b26e2ddc7bbcd3e82b6b3ec4e9a384c0ac55d8b847bbbb8828955b4d9566db",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cdcd3053c8806f0b26810e51a3657b2346ba054bbf764268c06a0efb9a0bf119",
+    "reviewed_at": "2026-10-20T07:40:35Z"
   }
 ]

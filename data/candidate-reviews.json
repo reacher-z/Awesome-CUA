@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:056fc284d518c930bc9c",
+    "url": "https://openreview.net/forum?id=0bmGL4q7vJ",
+    "decision": "out_of_scope",
+    "reason": "This ICLR 2025 paper synthesizes multimodal tool-usage trajectories (MM-Traj, 20K tasks) and tunes a vision-language model as a controller that calls external tools, evaluated on the GTA and GAIA benchmarks. It concerns tool calling and describes no graphical-interface, web-page or device interaction, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:16:47Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20250711032645id_/https://openreview.net/forum?id=0bmGL4q7vJ",
+      "sha256": "f92ce5101133f4ddb6b2bde2e6b2e70d85947bebc854e5a72ec26e04207aa230",
+      "retrieved_at": "2026-10-19T06:39:04Z"
+    }
   }
 ]

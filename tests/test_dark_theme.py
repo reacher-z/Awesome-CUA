@@ -53,6 +53,15 @@ class DarkThemeTests(unittest.TestCase):
         for text in ('--ink', '--muted', '--faint', '--blue', '--green'):
             for surface in ('--bg', '--paper', '--soft-blue'):
                 self.assertGreaterEqual(contrast(tokens[text], tokens[surface]), 4.5, f'{text} on {surface}')
+        for surface in ('--bg', '--paper', '--soft-blue'):
+            self.assertGreaterEqual(contrast(tokens['--blue-line'], tokens[surface]), 3, f'--blue-line on {surface}')
+
+    def test_every_light_color_token_has_a_dark_value(self):
+        css = (ROOT / 'web' / 'styles.css').read_text(encoding='utf-8')
+        tokens = next(d for media, selector, d in self.sheets['styles.css'] if media == DARK and selector == ':root')
+        for light in re.findall(r'(?m)^:root\{([^}]*)\}', css):
+            for name in re.findall(r'(--[\w-]+):#', light):
+                self.assertIn(name, tokens, f'{name} has no dark value')
 
     def test_every_hard_coded_light_color_has_a_dark_override(self):
         for name, found in self.sheets.items():

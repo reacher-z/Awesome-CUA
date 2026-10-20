@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "ProactiveMobile: A Comprehensive Benchmark for Boosting Proactive Intelligence on Mobile Devices",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.21858",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "interaction-history",
+      "human-in-the-loop",
+      "data-generation"
+    ],
+    "summary": "Introduces ProactiveMobile, 3,660 instances in 14 scenarios where a mobile agent infers unstated user intent from profile, device state, world information and GUI or text trajectories and outputs calls from 63 APIs.",
+    "verify_terms": [
+      "Boosting Proactive Intelligence on Mobile Devices"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.21858v4"
+    ],
+    "scope": "core",
+    "notes": "Multimodal trajectories reuse screenshot sequences from GUI-Odyssey, AITZ, CAGUI and self-collected mobile GUI data; text trajectories are LLM-expanded action logs. User profile, device status, world information and candidate intents are LLM-generated, mapped to function sequences, then filtered by rules, Gemini 2.5 Pro and 30 trained annotators. Each instance has one to three target function sequences; metrics are success rate and false-trigger rate, with a 64-instance out-of-distribution test set. The arXiv v4 abstract reports 19.15% success for fine-tuned Qwen2.5-VL-7B, while the v4 full text reports 20.82%. Data and code are named at github.com/xiaomi-research/proactive-mobile. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2602.21858v4",
+        "retrieved_at": "2026-10-20T04:42:11Z",
+        "sha256": "5dae226a2d8d08f6e6e1fe2595993be05fa8fbcd85085113b1b193bece3ef81f",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v4 abstract and the v4 HTML sections 1 (introduction and contributions), 3.1-3.4 (task definition, trajectory acquisition, generation pipeline, three-stage review, function pool, difficulty levels) and 4.1-4.4 (setting, metrics, overall performance, out-of-distribution test).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a8e4aa8be3b747036bfb1730ed057a4ec7ddd786879630fd3215a914e31a1e8a",
+    "reviewed_at": "2026-10-20T04:42:35Z"
   }
 ]

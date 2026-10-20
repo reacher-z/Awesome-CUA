@@ -63844,5 +63844,102 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Opus",
+    "kind": "agent",
+    "url": "https://github.com/jeffrey-zang/opus",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Electron app for macOS whose OpenAI Agents SDK loop operates apps through AppleScript, Accessibility-element clicks, key presses, shell commands and URIs, guided by element lists and screenshots.",
+    "scope": "core",
+    "verify_terms": [
+      "Opus"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Not related to Anthropic's Claude Opus models. initAgents.ts defines an app-selection agent and an action agent, both configured with gpt-4.1-mini through the OpenAI Agents SDK, so an OpenAI API key is required. Each action step receives the target app's AppleScript dictionary, a list of clickable Accessibility elements (role, title, value, help and description) and, when captured, a screenshot (runAgents.ts). Swift helpers under app/swift read the Accessibility tree, click, send keys and move the app window to a separate virtual display so the agent can work in the background. The repository also contains the tryop.us landing site and a small server. Code was read, not run.",
+    "details": {
+      "availability": "Public Electron and Swift source; the model is reached through the OpenAI API, and no weights are bundled.",
+      "repository_revision": "d3f4b7b3e54bab6cbb7bf4fa8b257f47500c6890"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/jeffrey-zang/opus/d3f4b7b3e54bab6cbb7bf4fa8b257f47500c6890/README.md",
+        "sha256": "e7d20d6325d5f3cc599abe8db897d414ef171d3940ba88a4e0d5e438c705c3fb",
+        "retrieved_at": "2026-10-20T08:10:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/jeffrey-zang/opus/d3f4b7b3e54bab6cbb7bf4fa8b257f47500c6890/app/electron/ai/initAgents.ts",
+        "sha256": "19e7a4c6cc7dfc55e5bb912110c92c033741aa019c1517916021a12dee0fe3ef",
+        "retrieved_at": "2026-10-20T08:10:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/jeffrey-zang/opus/d3f4b7b3e54bab6cbb7bf4fa8b257f47500c6890/app/electron/ai/runAgents.ts",
+        "sha256": "707883082b60fd82d022dc7f63700f5a1bf578229554c8be571e1c693cda16f6",
+        "retrieved_at": "2026-10-20T08:10:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/jeffrey-zang/opus/d3f4b7b3e54bab6cbb7bf4fa8b257f47500c6890/app/swift/moveToOpusDisplay.swift",
+        "sha256": "0c491fe60b5cd1b14983866698c1ea9e3049d94e05d2df449ebbb798e5ffcdbb",
+        "retrieved_at": "2026-10-20T08:10:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/jeffrey-zang/opus/d3f4b7b3e54bab6cbb7bf4fa8b257f47500c6890/LICENSE",
+        "sha256": "8ea5c2587dca9af8c22500b816dbbae73c3bc214d690314261244d167463b4df",
+        "retrieved_at": "2026-10-20T08:10:57Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit d3f4b7b, the agent definitions and step prompt construction, the window-move Swift helper and the root LICENSE. No code execution.",
+    "reviewed_sha256": "e7d20d6325d5f3cc599abe8db897d414ef171d3940ba88a4e0d5e438c705c3fb",
+    "reviewed_at": "2026-10-20T08:11:18Z"
   }
 ]

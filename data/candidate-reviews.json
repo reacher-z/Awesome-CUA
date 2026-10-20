@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:40eb109bf0616eee2783",
+    "url": "https://www.proxyagent.ai",
+    "decision": "not_a_resource",
+    "reason": "Former address of Convergence's Proxy web agent, now a parked domain: HTTPS fails the TLS handshake for both proxyagent.ai and www.proxyagent.ai, plain HTTP redirects www to the apex and serves a Porkbun 'Coming Soon' parking page (sha256 057f64244055), and the Wayback CDX has no capture of either host."
   }
 ]

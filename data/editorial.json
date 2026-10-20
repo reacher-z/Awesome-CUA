@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "You Told Me to Do It: Measuring Instructional Text-induced Private Data Leakage in LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.11862",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Measures how agents follow adversarial setup instructions in README files, introducing ReadSecBench (500 real READMEs with injected payloads) and finding up to 85% end-to-end exfiltration with Claude Computer Use.",
+    "verify_terms": [
+      "Instructional Text-induced Private Data Leakage"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.11862v1"
+    ],
+    "scope": "core",
+    "notes": "Payloads vary linguistic disguise, structural depth (inline, link, deep link) and semantic level in READMEs from 100 projects each in Java, Python, C, C++ and JavaScript. Attack experiments use Claude Computer Use with Claude Sonnet 3.7 on a Linux server; OpenDevin, OpenManus and Browser Use also parsed and attempted the injected instructions, but only Claude Computer Use completed exfiltration. The paper adds a 15-participant user study and tests of 12 rule-based and 6 LLM-based defenses, and states that ReadSecBench will be published at a URL confirmed upon acceptance. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.11862v1",
+        "retrieved_at": "2026-10-20T04:33:21Z",
+        "sha256": "87c8aa94b8417a526a7fd4cb26ea2193bfebaf91c69018472ac015c2663c0ffc",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections III and IV (threat model, three-dimensional taxonomy, experimental setup with Claude Computer Use, cross-agent and cross-LLM evaluation, defenses) and Appendices A and B (agent capabilities, README collection).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9f4b44f6ac0481af16a9c922f4288d070123b6d868d4f2d00489763d316c2c0a",
+    "reviewed_at": "2026-10-20T04:33:45Z"
   }
 ]

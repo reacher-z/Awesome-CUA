@@ -13,6 +13,8 @@ let TOPICS = {};
 Object.assign(TEXT.en, {resourceBadges:'Resource badges',relatedResearch:'Related research',jevScope:'System One & typed decisions',agentEyebrow:'USE THE DATA',agentTitle:'Clone the complete catalog',agentCopy:'Clone for local search and RAG exports. Records retain source evidence, review states, and scoped licenses.',agentGuide:'Agent & RAG guide',agentGuideCopy:'Search records and export retrieval documents.',agentInstructions:'Agent instructions',agentInstructionsCopy:'AGENTS.md · Search, export, and cite.',localSearch:'Try a local search',localSearchRequirements:'Python 3.11+; no package installation or account needed.',agentManifest:'RAG manifest',agentManifestCopy:'Export counts and snapshot fingerprints.',agentDownloads:'Browse download formats',cloneCommandLabel:'Git clone command',copyCommand:'Copy command',commandCopying:'Copying…',commandCopied:'Command copied. Paste it into your terminal.',commandCopyFailed:'Copy failed. Select and copy the command manually.',ragReviewed:'RAG documents · reviewed',ragReviewedCopy:'One retrieval document per reviewed resource, with citations and provenance.',ragAll:'RAG documents · all records',ragAllCopy:'Every active record, including metadata-only entries with their review state.'});
 Object.assign(TEXT.zh, {resourceBadges:'资源徽章',relatedResearch:'相关研究',jevScope:'System One 与类型化决策',agentEyebrow:'使用数据',agentTitle:'克隆完整资源目录',agentCopy:'克隆后可在本地检索或导出 RAG 文档；记录保留来源证据、审阅状态与分项许可。',agentGuide:'Agent 与 RAG 指南',agentGuideCopy:'检索记录并导出检索文档。',agentInstructions:'Agent 使用说明',agentInstructionsCopy:'AGENTS.md · 检索、导出与引用。',localSearch:'试一次本地检索',localSearchRequirements:'需要 Python 3.11+，无需安装软件包或注册账号。',agentManifest:'RAG 导出清单',agentManifestCopy:'导出数量与快照指纹。',agentDownloads:'查看下载格式',cloneCommandLabel:'Git 克隆命令',copyCommand:'复制命令',commandCopying:'正在复制…',commandCopied:'命令已复制，可粘贴到终端。',commandCopyFailed:'复制失败，请选中命令后手动复制。',ragReviewed:'RAG 文档 · 已审阅',ragReviewedCopy:'每项已审阅资源对应一份检索文档，保留引用和来源。',ragAll:'RAG 文档 · 全部记录',ragAllCopy:'包含全部当前记录，并保留仅有元数据条目的审阅状态。'});
 Object.assign(TEXT.en,{topicDirectory:'Browse topics'});
+Object.assign(TEXT.en,{searchKeys:'Press Enter or Down Arrow to move to the first result, Escape to clear.'});
+Object.assign(TEXT.zh,{searchKeys:'按 Enter 或向下方向键跳到第一条结果，按 Esc 清除搜索。'});
 Object.assign(TEXT.zh,{topicDirectory:'浏览主题'});
 Object.assign(TEXT.en,{pageNumber:'Page %s',pageStatus:'Page %s of %s'});
 Object.assign(TEXT.zh,{pageNumber:'第 %s 页',pageStatus:'第 %s 页，共 %s 页'});
@@ -223,6 +225,16 @@ document.addEventListener('click',async event=>{
   catch{toast(t('citationFailed'));}finally{button.disabled=false;}
 });
 $('#search').addEventListener('input',event=>change({q:event.target.value}));
+// Enter or ↓ jumps from the search box to the first result instead of a dozen Tab presses past the filters; Esc clears the query. IME composition keeps its own Enter.
+$('#search').addEventListener('keydown',event=>{
+  if(event.isComposing)return;
+  if(event.key==='Escape'&&event.target.value){event.preventDefault();event.target.value='';change({q:''});return;}
+  if(event.key!=='Enter'&&event.key!=='ArrowDown')return;
+  const first=$('#results [data-record]');
+  if(!first)return;
+  // Scroll the whole card, not only its title link, clear of the sticky header (scroll-padding-top).
+  event.preventDefault();first.focus({preventScroll:true});(first.closest?.('article')||first).scrollIntoView({block:'nearest'});
+});
 for(const [id,key] of [['platform','platform'],['review','review'],['topic','topic'],['year','year'],['sort','sort']])$('#'+id).addEventListener('change',event=>change({[key]:event.target.value}));
 // Both reset buttons hide themselves, so focus moves to the result summary, which announces the restored count.
 const reset=()=>{change({q:'',kind:'',platform:'',review:'',topic:'',year:'',sort:'featured'});$('#results-count').focus();};

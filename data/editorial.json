@@ -63844,5 +63844,49 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Are LLM Agents the New RPA? A Comparative Study with RPA Across Enterprise Workflows",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.04198",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "evaluation",
+      "industry",
+      "workflow"
+    ],
+    "summary": "Compares UiPath RPA bots with Anthropic's computer-use agent on three RPA Challenge web workflows (form entry, price monitoring, invoice extraction) for execution time, reliability and development time.",
+    "verify_terms": [
+      "Are LLM Agents the New RPA?"
+    ],
+    "scope": "core",
+    "notes": "The agent is Anthropic's computer-use reference container (commit 99502f5, claude-sonnet-4-20250514, tool version computer_use_20250124) on Ubuntu 22.04.5 with Firefox, LibreOffice and Gedit; the RPA baseline is UiPath Studio 2023.4.0 Community Edition. The agent's single run of the form-entry challenge failed when the session froze; it succeeded in 9 of 10 monitoring runs and 6 of 10 runs of a shortened four-invoice task, against 10 of 10 for UiPath, and was slower in both, while prompting took about 10 and 15 minutes versus about 38 and 240 minutes of RPA development. Development times are single, approximate measurements per process. The paper links run data and screenshots at github.com/Scherifow/LLM-agents-Research, which was not inspected; no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 PDF (arXiv provides no HTML rendering for v1).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.04198v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/pdf/2509.04198v1",
+        "retrieved_at": "2026-10-20T08:01:20Z",
+        "sha256": "0ec6c3dca052334f233c1f3fe465c2e18db9a023ac20d1f6e29c53c622a23333",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "90360844c238e97e449d266320bb5f41c376778bf5a1a96de46265b5f2e85320",
+    "reviewed_at": "2026-10-20T08:01:43Z"
   }
 ]

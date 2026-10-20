@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-112 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+113 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (82)](#papers)
 
 ## Benchmarks
 
@@ -129,6 +129,7 @@ All entries in this section: cross-platform.
 | 2025‑11‑21 | [UI-CUBE: Enterprise-Grade Computer Use Agent Benchmarking Beyond Task Accuracy to Operational Reliability](https://arxiv.org/abs/2511.17131) | unspecified | UI-CUBE evaluates 226 tasks ranging from individual controls to copy-paste and enterprise workflows. Interface variations, multiple resolutions, and application-state validation support diagnosis of operational reliability beyond task accuracy alone. |
 | 2025‑09‑30 | [SCUBA: Salesforce Computer Use Benchmark](https://arxiv.org/abs/2509.26506) | unspecified | SCUBA evaluates enterprise UI navigation and CRM workflows with 300 task instances derived from Salesforce user interviews. Salesforce sandbox execution and milestone-based assessment support comparisons between zero-shot agents and agents given demonstrations. |
 | 2025‑09‑08 | [MAS-Bench: A Unified Benchmark for Shortcut-Augmented Hybrid Mobile GUI Agents](https://arxiv.org/abs/2509.06477) | unspecified | MAS-Bench evaluates mobile agents that combine GUI actions with APIs, deep links, and reusable scripts. Its 139 tasks across 11 apps test use of 88 predefined shortcuts as well as the ability to generate new reusable workflows. |
+| 2025‑09‑04 | [Are LLM Agents the New RPA? A Comparative Study with RPA Across Enterprise Workflows](https://arxiv.org/abs/2509.04198) | web, desktop, linux | Compares UiPath RPA bots with Anthropic's computer-use agent on three RPA Challenge web workflows (form entry, price monitoring, invoice extraction) for execution time, reliability and development time. |
 | 2025‑09‑02 | [AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent](https://arxiv.org/abs/2509.02444) | unspecified | Describes a mobile-agent stack combining region-based coordinate correction, hierarchical task planning, multi-agent voting, and reuse of successful interaction traces. |
 | 2025‑08‑26 | [AppAgent-Pro: A Proactive GUI Agent System for Multidomain Information Integration and User Assistance](https://arxiv.org/abs/2508.18689) | android | Proposes a proactive GUI assistant that gathers information across domains in response to user requests and anticipated information needs. |
 | 2025‑06‑08 | [BIMgent: Towards Autonomous Building Modeling via Computer-use Agents](https://arxiv.org/abs/2506.07217) | unspecified | BIMgent plans software-specific workflows and executes GUI actions for building-information modeling. It evaluates multimodal building design and reconstruction tasks in professional authoring software. |

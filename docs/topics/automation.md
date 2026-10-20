@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (84)](#papers)
 
 ## Models
 
@@ -115,6 +115,7 @@ All entries in this section: web.
 | 2025‑10‑06 | [From Imperative to Declarative: Towards LLM-friendly OS Interfaces for Boosted Computer-Use Agents](https://arxiv.org/abs/2510.04607) | desktop, windows | Introduces a Declarative Model Interface that maps existing GUIs to access, state and observation primitives while handling low-level interactions. Evaluation uses Word, PowerPoint and Excel on Windows with a GUI-agent baseline. |
 | 2025‑10‑01 | [WALT: Web Agents that Learn Tools](https://arxiv.org/abs/2510.01524) | web | WALT explores website functionality and converts demonstrated interactions into validated, reusable tools combining DOM actions, URL navigation, and agentic fallbacks. It evaluates this expanded browser action space on WebArena and VisualWebArena. |
 | 2025‑09‑18 | [ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data](https://arxiv.org/abs/2509.15221) | cross-platform | Introduces a cross-platform computer-use dataset and agents trained with a collection pipeline combining automated interaction and human input. |
+| 2025‑09‑04 | [Are LLM Agents the New RPA? A Comparative Study with RPA Across Enterprise Workflows](https://arxiv.org/abs/2509.04198) | web, desktop, linux | Compares UiPath RPA bots with Anthropic's computer-use agent on three RPA Challenge web workflows (form entry, price monitoring, invoice extraction) for execution time, reliability and development time. |
 | 2025‑08‑17 | [You Don't Know Until You Click:Automated GUI Testing for Production-Ready Software Evaluation](https://arxiv.org/abs/2508.14104) | unspecified | RealDevWorld evaluates generated software repositories with 194 development tasks and AppEvalPilot, an agent judge that operates the resulting GUIs. The evaluation examines functional behavior, visual fidelity, and runtime responses to produce task-specific diagnostic feedback. |
 | 2025‑08‑05 | [CoAct-1: Computer-using Multi-Agent System with Coding Actions](https://arxiv.org/abs/2508.03923) | desktop | CoAct-1 delegates subtasks between a GUI operator and a programmer that executes Python or Bash. Its OSWorld evaluation studies a hybrid action space in which scripts handle suitable file and data operations while visual interaction handles other steps. |
 | 2025‑07‑25 | [OS-MAP: How Far Can Computer-Using Agents Go in Breadth and Depth?](https://arxiv.org/abs/2507.19132) | unspecified | OS-MAP organizes 416 computer-use tasks across 15 applications by a five-level automation taxonomy and a hierarchy of user demands. The benchmark separates required autonomy from generalization scope to diagnose where agents struggle as task demands increase. |

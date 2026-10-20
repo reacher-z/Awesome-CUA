@@ -116,13 +116,42 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     return document
 
 
-def resource_schema(record):
-    entity={"@type":"ScholarlyArticle" if record["kind"] in {"paper","survey"} else "CreativeWork", "name":record["name"], "description":description(record), "url":SITE+resource_path(record), "sameAs":record["url"], "identifier":record["id"]}
-    if record["authors"]:entity["author"]=[{"@type":"Person","name":name} for name in record["authors"]]
-    if record["published_at"]:entity["datePublished"]=record["published_at"]
-    if record["updated_at"]:entity["dateModified"]=record["updated_at"]
+# Declared licence strings that are exactly an SPDX identifier (case-insensitive); anything else is never translated into a licence URL.
+SPDX_LICENSES = {key.casefold():spdx for key,spdx in [("Apache-2.0","Apache-2.0"), ("MIT","MIT"), ("BSD-2-Clause","BSD-2-Clause"), ("BSD-3-Clause","BSD-3-Clause"), ("GPL-2.0","GPL-2.0"), ("GPL-3.0","GPL-3.0"), ("GPL-3.0-only","GPL-3.0-only"), ("GPL-3.0-or-later","GPL-3.0-or-later"), ("LGPL-3.0","LGPL-3.0"), ("AGPL-3.0","AGPL-3.0"), ("AGPL-3.0-only","AGPL-3.0-only"), ("AGPL-3.0-or-later","AGPL-3.0-or-later"), ("MPL-2.0","MPL-2.0"), ("Unlicense","Unlicense"), ("CC0-1.0","CC0-1.0"), ("CC0 1.0","CC0-1.0"), ("CC-BY-4.0","CC-BY-4.0"), ("CC-BY-SA-4.0","CC-BY-SA-4.0"), ("CC-BY-NC-4.0","CC-BY-NC-4.0"), ("CC-BY-NC-SA-4.0","CC-BY-NC-SA-4.0"), ("CC-BY-NC-ND-4.0","CC-BY-NC-ND-4.0"), ("ODC-By","ODC-By-1.0"), ("ODC-By-1.0","ODC-By-1.0"), ("ODbL-1.0","ODbL-1.0"), ("PDDL-1.0","PDDL-1.0")]}
+# Each entity type states only the licence scope it describes: code for source code, data for datasets, weights for models.
+LICENSE_SLOT = {"SoftwareSourceCode":"code", "Dataset":"data"}
+
+
+def entity_type(record):
+    if record["kind"] in {"paper","survey"}:return "ScholarlyArticle"
+    if record["kind"]=="company":return "Organization"
+    host=re.sub(r"^https?://(www\.)?","",record["url"]).split("/")[0].lower()
+    if (record["kind"]=="dataset" or record["url"].lower().startswith("https://huggingface.co/datasets/")) and len(description(record))>=50:return "Dataset"
+    if host=="github.com" and record["kind"]!="dataset":return "SoftwareSourceCode"
+    return "CreativeWork"
+
+
+def spdx_license(declared):
+    spdx=SPDX_LICENSES.get(declared.strip().casefold()) if isinstance(declared,str) else None
+    return f"https://spdx.org/licenses/{spdx}.html" if spdx else None
+
+
+def resource_schema(record, lookup=None):
+    kind=entity_type(record)
+    entity={"@type":kind, "name":record["name"], "description":description(record), "url":SITE+resource_path(record), "sameAs":record["url"], "identifier":record["id"]}
+    if kind!="Organization":
+        if record["authors"]:entity["author"]=[{"@type":"Person","name":name} for name in record["authors"]]
+        if record["published_at"]:entity["datePublished"]=record["published_at"]
+        if record["updated_at"]:entity["dateModified"]=record["updated_at"]
     if record["topics"]:entity["keywords"]=record["topics"]
-    if record["kind"]=="dataset" and len(description(record))>=50:entity["@type"]="Dataset"
+    if kind=="SoftwareSourceCode":entity["codeRepository"]=record["url"]
+    slot=LICENSE_SLOT.get(kind) or ("weights" if record["kind"]=="model" and kind=="CreativeWork" else None)
+    if slot and (declared:=(record["licenses"].get(slot) or {}).get("declared")) and (license_url:=spdx_license(declared)):entity["license"]=license_url
+    if kind not in {"ScholarlyArticle","Organization"}:
+        # Reviewed introduction/documentation relations name the paper to cite; shared topics or mentions never do.
+        papers=sorted((r for r in record["relations"] if r["type"] in {"introduced_by","documented_by"} and r["target_id"].startswith("arxiv:")),key=lambda r:(r["type"]!="introduced_by",r["target_id"]))
+        cited=[{"@type":"ScholarlyArticle","url":"https://arxiv.org/abs/"+r["target_id"][6:],**({"name":lookup[r["target_id"]]["name"]} if lookup and r["target_id"] in lookup else {})} for r in dict((r["target_id"],r) for r in papers).values()]
+        if cited:entity["citation"]=cited
     return entity
 
 
@@ -278,7 +307,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         manifest.append(item)
     for r in rows:
         path=resource_path(r)
-        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r))
+        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming),resource_schema(r,lookup),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r))
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r)),encoding='utf-8')
         (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:

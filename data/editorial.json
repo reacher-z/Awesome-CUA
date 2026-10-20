@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "LLMs as Scalable, General-Purpose Simulators For Evolving Digital Agent Training",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.14969",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "world-models",
+      "web-navigation",
+      "mobile-navigation"
+    ],
+    "summary": "Proposes UI-Simulator, in which an LLM simulates accessibility-tree UI states and transitions to synthesize agent training trajectories, plus a targeted scaling variant, evaluated on WebArena and AndroidWorld.",
+    "verify_terms": [
+      "LLMs as Scalable, General-Purpose Simulators"
+    ],
+    "scope": "core",
+    "notes": "GPT-4o-mini serves as both the world simulator and the teacher agent; a guided rollout with step-wise task control explores simulated UIs, and a trajectory wrapper infers instructions and reasoning. A retrieval-augmented variant grounds simulation in a small corpus of test-environment transitions and is compared with OS-Genesis at equal prior experience. UI-Simulator-Grow picks tasks of intermediate difficulty by teacher-forcing loss and uses replay for continual learning. Students are Llama-3-8B-Instruct for WebArena (812 tasks) and Qwen-2.5-7B-Instruct for AndroidWorld (116 tasks). The paper links code (github.com/WadeYin9712/UI-Simulator), models and data (huggingface.co/UI-Simulator) and a project page; none is recorded here, and no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-7, Table 1 and the appendices, plus the PDF title page links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.14969v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.14969v1",
+        "retrieved_at": "2026-10-20T07:46:40Z",
+        "sha256": "50d4b3b560efda8c9e419d45a279fb320d2f8822e51588f489b1d017f568ce79",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ee302ddbca4504f3ebf7f56f844c5a07f2a86e64e7b7ba4eb8d45c3d541bc9a3",
+    "reviewed_at": "2026-10-20T07:47:07Z"
   }
 ]

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:6cfff423d61048961ea1",
+    "url": "https://simonwillison.net/2024/Oct/22/computer-use",
+    "decision": "out_of_scope",
+    "reason": "A 22 October 2024 post on Simon Willison's personal weblog recounting his first runs of Anthropic's computer-use-demo Docker container and commenting on coordinate output, prompt injection risk and model naming. It is commentary on the already-curated Claude computer-use capability (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-20T04:19:34Z",
+    "evidence": {
+      "url": "https://simonwillison.net/2024/Oct/22/computer-use",
+      "sha256": "fb01a0cba8bd47d2ec4b672cafdf23b82cbe46ff426e843798e6fd7ac6c56361",
+      "retrieved_at": "2026-10-19T08:33:54Z"
+    }
   }
 ]

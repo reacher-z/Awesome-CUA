@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AgentA/B: Automated and Scalable Web A/BTesting with Interactive LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.09723",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Presents Agent A/B, which drives persona-based LLM agents through live webpages in headless Chrome to simulate UI A/B tests, applied with 1,000 agents to an Amazon.com filter-panel redesign.",
+    "verify_terms": [
+      "AgentA/B: Automated and Scalable Web"
+    ],
+    "scope": "core",
+    "notes": "In the case study, agents built on the UXAgent framework with Claude 3.5 Sonnet receive JSON page observations extracted by an in-browser JavaScript parser and choose search, product-click, filter-click, purchase or stop actions, which Selenium executes in headless Chrome (16 nodes, at most 20 actions per session). The system generated 100,000 personas and sampled 500 agents per condition; the reduced filter panel produced 414 versus 404 purchases, directionally matching a parallel human A/B test. The v4 full text is retitled 'Agent A/B: Automated and Scalable A/B Testing on Live Websites with Interactive LLM Agents' and published in the CHI 2026 Extended Abstracts (DOI 10.1145/3772363.3799039); the arXiv title and abstract keep the earlier wording. The paper states that code and personas will be released but links no repository. No results were reproduced.",
+    "read_basis": "Read the arXiv v4 abstract and the full v4 HTML text (Sections 1-6 and Appendices A-B).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2504.09723v4"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2504.09723v4",
+        "retrieved_at": "2026-10-20T08:40:08Z",
+        "sha256": "cd89a0677f0b6a680a1e7e5c0f2138f65a2c988f89467bb3a6770eb34a688ba7",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "327cb8fa011b47db24f3c231107c4239a551232136859c15ac92f8eeb159f649",
+    "reviewed_at": "2026-10-20T08:41:29Z"
   }
 ]

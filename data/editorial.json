@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Why Do LLM-based Web Agents Fail? A Hierarchical Planning Perspective",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.14248",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Separates LLM web-agent behavior into high-level planning, low-level execution and replanning on Mind2Web-Live tasks with human-aligned plans, comparing natural-language and PDDL plans; execution is the main bottleneck.",
+    "verify_terms": [
+      "Why Do LLM-based Web Agents Fail"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.14248v2"
+    ],
+    "scope": "core",
+    "notes": "Uses the 104-task Mind2Web-Live test set on live websites, turning its expert key-node annotations into manually checked high-level plans. Agents observe a text-based DOM representation under an expanded action space and two primitive click/type/select/hover settings; gpt-5-nano is the main model, with claude-haiku-4.5 and gemini-flash-2.5 for comparison. The paper links code at github.com/Ziyu-Yao-NLP-Lab/llm-hierarchical-web-agents. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.14248v2",
+        "retrieved_at": "2026-10-20T04:29:23Z",
+        "sha256": "de22a8fa90bfe70214d577e5070b23d2ea53581d49a98ab5735fe28c592974fb",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 3 and 4 (hierarchical framework, Mind2Web-Live data, models, DOM observation and action settings) plus the replanning and cross-model results.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8db5b0714ea43df102112e5049cec4e10056b1bf0d2d12c0b187506a34c9840a",
+    "reviewed_at": "2026-10-20T04:29:40Z"
   }
 ]

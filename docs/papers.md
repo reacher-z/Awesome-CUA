@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,117; 531 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,116; 531 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -575,7 +575,6 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-05-29 | [Learning to Adapt: Self-Improving Web Agent via Cognitive-Aware Exploration](https://arxiv.org/abs/2605.31365) | metadata |  |
 | 2026-05-29 | [GUI-C$^2$: Coarse-to-Fine GUI Grounding via Difficulty-Aware Reinforcement Learning](https://arxiv.org/abs/2605.30884) | metadata |  |
 | 2026-05-29 | [EGOSTREAM: A Diagnostic Benchmark for Streaming Episodic Memory in Egocentric Vision](https://arxiv.org/abs/2605.31557) | metadata |  |
-| 2026-05-29 | [COLLEAGUE.SKILL: Automated AI Skill Generation via Expert Knowledge Distillation](https://arxiv.org/abs/2605.31264) | metadata |  |
 | 2026-05-29 | [BlueFin: Benchmarking LLM Agents on Financial Spreadsheets](https://arxiv.org/abs/2605.30907) | metadata |  |
 | 2026-05-28 | [WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction](https://arxiv.org/abs/2605.29341) | metadata |  |
 | 2026-05-28 | [UI-KOBE: Knowledge-Oriented Behavior Exploration for Lightweight Graph-Guided GUI Agents](https://arxiv.org/abs/2605.29534) | ⭐ reviewed | [efficiency](topics/efficiency.md), [memory](topics/memory.md), [mobile-navigation](topics/mobile-navigation.md), [planning](topics/planning.md), [state-tracking](topics/state-tracking.md) |

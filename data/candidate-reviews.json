@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7ab3e51a49c632058e97",
+    "url": "https://www.microsoft.com/en-us/research/publication/interactive-agent-foundation-model",
+    "decision": "out_of_scope",
+    "reason": "This Microsoft Research page lists the February 2024 arXiv paper 2402.05929, which trains one multi-task agent foundation model with masked visual autoencoding, language modeling and next-action prediction and evaluates it on robotics, gaming and healthcare video tasks. It does not study agents that operate web, desktop or mobile interfaces, so it is outside the catalog's scope.",
+    "reviewed_at": "2026-10-20T05:09:43Z",
+    "evidence": {
+      "url": "https://www.microsoft.com/en-us/research/publication/interactive-agent-foundation-model/",
+      "sha256": "6ee663c6bb1ed508b72651b51342ab440dfea8b1a47301605e9e847e2179a58d",
+      "retrieved_at": "2026-10-20T04:29:38Z"
+    }
   }
 ]

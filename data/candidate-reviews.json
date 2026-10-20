@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7966d456db7ba244b22e",
+    "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse",
+    "decision": "out_of_scope",
+    "reason": "Ethan Mollick's One Useful Thing post of 22 October 2024 gives first impressions of Anthropic's Claude computer use, from a lesson-planning task and a run at the Paperclip Clicker browser game, with prompting hints from Anthropic. It is third-party commentary that releases no software, data or evaluation of its own.",
+    "reviewed_at": "2026-10-20T05:10:42Z",
+    "evidence": {
+      "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse",
+      "sha256": "65a527caac3e316a2d14ade795f657ab74c1d4813af26ad0fb20228e1884b828",
+      "retrieved_at": "2026-10-20T04:25:34Z"
+    }
   }
 ]

@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2507.02825",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Proposes the Agentic Benchmark Checklist for task and outcome validity and reporting, and applies it to ten agentic benchmarks, finding WebArena grading flaws and broken OSWorld Chrome-task evaluators.",
+    "verify_terms": [
+      "Establishing Best Practices for Building Rigorous Agentic Benchmarks"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: WebArena and OSWorld are two of the ten benchmarks assessed with the checklist; the others are SWE-bench, SWE-Lancer, KernelBench, BIRD, Cybench, MLE-bench, GAIA and τ-bench. The paper reports that WebArena's substring matching and unvalidated LLM judge overestimate agent performance by 1.4-5.2%, and that website changes break the HTML-selector evaluators of 13 of 46 tasks in OSWorld's Chrome section, underestimating performance there by 28%. Its case study revises CVE-Bench, a cybersecurity benchmark, reducing performance overestimation by 33%. The paper links code at github.com/uiuc-kang-lab/agentic-benchmarks, which is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v5 abstract and the full v5 HTML text: Sections 1-6 with Table 1 (assessed benchmarks), Section 5.2 (assessment findings), Appendix B (benchmark collection), the WebArena and OSWorld assessment reports in Appendix D, and Appendix E.5 (WebArena case study).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2507.02825v5"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2507.02825v5",
+        "retrieved_at": "2026-10-20T08:12:36Z",
+        "sha256": "a6702e1563cb045ad92e2dfa9a2a6c5cdc01864fe5a1eabe84d9839308b21d95",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ec827265f08ffd2ae50b865affb511c923f28dce021ee32a516c0faa33dcfd98",
+    "reviewed_at": "2026-10-20T08:13:01Z"
   }
 ]

@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from c
 - 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links, 36 other addresses of indexed resources and 0 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
+- 4,239 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links, 36 other addresses of indexed resources and 1 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+185 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (171)](#papers)
 
 ## Benchmarks
 
@@ -135,6 +135,7 @@ All entries in this section: web.
 | 2026‑05‑02 | [Faithful Mobile GUI Agents with Guided Advantage Estimator](https://arxiv.org/abs/2605.01208) | unspecified | Introduces Faithful-Agent, which first teaches abstention under perturbed evidence and then refines GUI policies with an anchor-based, variance-adaptive advantage estimator. A thought-action consistency reward encourages decisions grounded in displayed evidence and instructions. |
 | 2026‑04‑29 | [Step-level Optimization for Efficient Computer-use Agents](https://arxiv.org/abs/2604.27151) | unspecified | Proposes a step-level model cascade that runs a smaller computer-use policy until learned monitors flag stalled progress or semantic drift. Separate history-based stuck detection and milestone checks determine when to escalate for recovery or verification without retraining the larger model. |
 | 2026‑04‑27 | [OS-SPEAR: A Toolkit for the Safety, Performance,Efficiency, and Robustness Analysis of OS Agents](https://arxiv.org/abs/2604.24348) | unspecified | Provides an evaluation toolkit for joint safety, efficiency, and multimodal robustness analysis of operating-system GUI agents. |
+| 2026‑04‑26 | [Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces](https://arxiv.org/abs/2606.13686) | web | Introduces WebDecept, a plugin that injects seven deceptive e-commerce interface patterns, such as pop-ups, redirection, cart add-ons and price drift, into VisualWebArena shopping tasks to test multimodal web agents. |
 | 2026‑04‑23 | [VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation](https://arxiv.org/abs/2604.21375) | desktop, linux, windows | VLAA-GUI combines mandatory checks for visually supported completion, multi-tier loop recovery and on-demand workflow search. Optional coding and grounding agents support execution, with component ablations on Linux and Windows GUI tasks. |
 | 2026‑04‑20 | [Do LLMs Need to See Everything? A Benchmark and Study of Failures in LLM-driven Smartphone Automation using Screentext vs. Screenshots](https://arxiv.org/abs/2604.17817) | android | DailyDroid compares text-only and text-plus-screenshot agents on everyday Android tasks across multiple apps and difficulty levels. Its failure analysis examines accessibility, observation modality and agent/application behavior. |
 | 2026‑04‑20 | [On the Reliability of Computer Use Agents](https://arxiv.org/abs/2604.17849) | desktop | This study examines repeated OSWorld executions to separate execution stochasticity, task-specification ambiguity and behavioral variation. Paired task-level tests show why one successful run is insufficient evidence of reliable computer use. |

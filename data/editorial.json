@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.13686",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Introduces WebDecept, a plugin that injects seven deceptive e-commerce interface patterns, such as pop-ups, redirection, cart add-ons and price drift, into VisualWebArena shopping tasks to test multimodal web agents.",
+    "verify_terms": [
+      "Benchmarking Web Agent Safety under E-commerce Deceptive"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.13686v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v1 full text, which the arXiv comments mark as accepted to ACL 2026, builds 45 purchase tasks from 9 seed templates on the VisualWebArena shopping site, gives agents a screenshot plus accessibility tree, and reports task completion and safety-violation rates for GPT-5.1, GPT-4o, Claude Sonnet 4.5, Gemini 2.5 Pro and Qwen3-VL-Plus. It points to a project page at webdecept.github.io. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2606.13686v1",
+        "sha256": "e9fb00b984ff2ba16ba73e468fba72d0968130f78868d13ea50a00f43e93fa32",
+        "retrieved_at": "2026-10-20T04:33:51Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the environment, task construction, observation format and evaluated models. No code execution or result reproduction.",
+    "reviewed_sha256": "02ec8237160bb77a795c12ad46fb256b465bc7dde499c53f3d6d3efac90da8f8",
+    "reviewed_at": "2026-10-20T04:34:00Z"
   }
 ]

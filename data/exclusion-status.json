@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2006,6 +2006,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2601.13462%2C2601.14232%2C2601.15331%2C2601.17548%2C2601.18418%2C2601.18491%2C2601.18827%2C2601.20171%2C2601.20613%2C2601.20742%2C2601.21233%2C2601.21253%2C2601.22037%2C2601.22154%2C2601.22511%2C2601.22607%2C2602.01550%2C2602.03117%2C2602.03361%2C2602.05665%2C2602.05746%2C2602.05877%2C2602.06052%2C2602.07398%2C2602.07458%2C2602.07918%2C2602.09007%2C2602.09463%2C2602.09514%2C2602.10122%2C2602.10525%2C2602.11224%2C2602.12268%2C2602.12430%2C2602.13318%2C2602.13543%2C2602.13692%2C2602.14038%2C2602.14337%2C2602.14364%2C2602.16313%2C2602.16317%2C2602.16666%2C2602.16901%2C2602.16930%2C2602.17547%2C2602.17646%2C2602.18846%2C2602.19320%2C2602.19594&max_results=50",
         "sha256": "c8c95278aa5dcc6a8f2eda3f3b44d61ec1f35adcb6a4c6c9ab328691a1a4f102",
         "retrieved_at": "2026-10-17T12:31:12Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2603.01152",
+      "name": "DeepResearch-9K: A Challenging Benchmark Dataset of Deep-Research Agent",
+      "url": "https://arxiv.org/abs/2603.01152",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces DeepResearch-9K, 9,000 multi-hop questions at three difficulty levels derived from open QA datasets with search trajectories from Tongyi-DeepResearch-30B-A3B, and DeepResearch-R1, an RL framework for multi-turn search agents; the paper's agents call search tools backed by the Serper API. It trains and evaluates search-tool question answering rather than operating a browser, GUI or device, so it is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:27:56Z",
+      "metadata_fingerprint": "c7d5080315aeb036a2f6920a9a3abb88ec4638477030fbadc42f11138750364d",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2401.05507%2C2406.07275%2C2409.16427%2C2410.00079%2C2503.07701%2C2503.22738%2C2505.15859%2C2505.17735%2C2505.23596%2C2507.05257%2C2507.06134%2C2507.21953%2C2507.23336%2C2508.06960%2C2508.08997%2C2509.02473%2C2509.23694%2C2510.09116%2C2510.14438%2C2511.18423%2C2512.12818%2C2512.13564%2C2601.10758%2C2601.12449%2C2601.21841%2C2603.01152%2C2603.19993%2C2603.20576%2C2604.04503%2C2604.17562%2C2604.23941%2C2605.16265%2C2606.06448%2C2606.06462%2C2606.29193%2C2607.01647%2C2607.13157&max_results=37",
+        "sha256": "13d5969845070cd2877dc51ae5300c2d623e5daef00c8a1552ffa46af3f721a5",
+        "retrieved_at": "2026-10-16T07:54:03Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

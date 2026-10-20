@@ -2045,7 +2045,7 @@
     "url": "https://arxiv.org/abs/2601.09113",
     "decision": "out_of_scope",
     "basis": "primary_abstract_review",
-    "reason": "This survey organizes memory in LLMs and multimodal LLMs into implicit (parametric), explicit (external retrieval) and agentic memory, and reviews multimodal memory, benchmarks and open problems. GUI agents appear only as a few examples in one paragraph of its agentic-memory discussion, so this general model-memory survey falls outside the computer-use scope.",
+    "reason": "This survey organizes memory in LLMs and multimodal LLMs into implicit (parametric), explicit (external retrieval) and agentic memory, and reviews multimodal memory, benchmarks and open problems. GUI agents appear only as examples in one paragraph on multimodal memory-augmented agents, and WebArena only as one listed agent-memory benchmark, so this general model-memory survey falls outside the computer-use scope.",
     "reviewed_at": "2026-10-20T04:50:48Z",
     "metadata_fingerprint": "27b693e2128e462d5c26cb4b03693367465758dd81daafc37871836f16c9153e",
     "evidence": {

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8bda04024d8c6012d6a2",
+    "url": "https://www.interactionmining.org/rico.html",
+    "decision": "alias",
+    "target_id": "url:0b134b082a7bd507fc6a",
+    "reason": "Former address of the Rico project page; it now returns HTTP 404, and Wayback captures from 2023 to March 2025 show the same Rico dataset page that is indexed at www.interactionmining.org/archive/rico."
   }
 ]

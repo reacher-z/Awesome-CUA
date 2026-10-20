@@ -63844,5 +63844,111 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Fara Browser Automation Agent",
+    "kind": "agent",
+    "url": "https://github.com/pmbstyle/fara-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Local Python browser agent that sends Playwright Firefox screenshots to a quantized Fara-7B served by LM Studio and executes its click, type, scroll, key and navigation calls at rescaled viewport coordinates.",
+    "scope": "core",
+    "aliases": [
+      "pmbstyle/fara-agent"
+    ],
+    "verify_terms": [
+      "Fara Browser Automation Agent"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.availability"
+    ],
+    "notes": "agent.py, which describes itself as a simplified Fara agent for LM Studio, opens Playwright Firefox at bing.com with a 1440x900 viewport, resizes each screenshot to the model's input size and sends it with the task, current URL, last three actions and scroll position; with the default max_n_images of 1 only the latest screenshot stays in context. It parses the model's <tool_call> computer_use JSON (visit_url, web_search, left_click, mouse_move, type, scroll, key, history_back, wait, pause_and_memorize_fact, terminate), maps coordinates back to the viewport, and adds a loop warning after repeated up/down scrolling. config.json points at LM Studio's server on localhost:1234 with model microsoft_fara-7b and 20 rounds; the README recommends the third-party bartowski/microsoft_Fara-7B-GGUF Q5_K_M quantization. An optional debug overlay and click markers are hidden during screenshots. No evaluation results are published. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT Python source with a command-line runner; no model weights are bundled, and the README points to a third-party GGUF build of Fara-7B loaded in LM Studio.",
+      "repository_revision": "a3f05971218a1753c5dd5300c5ba278305131982"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "relations",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/fara-agent/a3f05971218a1753c5dd5300c5ba278305131982/README.md",
+        "sha256": "1f93000eaa5db58811e94c3f253a82f8752441f7459e4ce628114cc781ff031f",
+        "retrieved_at": "2026-10-20T08:34:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/fara-agent/a3f05971218a1753c5dd5300c5ba278305131982/agent.py",
+        "sha256": "a39702d71c115149b67f83e6cad496d2dea090ccd40bd56a4254c135b4608fb8",
+        "retrieved_at": "2026-10-20T08:35:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/fara-agent/a3f05971218a1753c5dd5300c5ba278305131982/browser.py",
+        "sha256": "9478e6aa14f281ad84b3dfa8941c25334d864c912af90be982c812b6c24ad732",
+        "retrieved_at": "2026-10-20T08:35:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/fara-agent/a3f05971218a1753c5dd5300c5ba278305131982/config.json",
+        "sha256": "807cf8d84f8631e1f72003b7a8ee5212a697288377a3ff3c3971bcc6f1079483",
+        "retrieved_at": "2026-10-20T08:35:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/fara-agent/a3f05971218a1753c5dd5300c5ba278305131982/LICENSE",
+        "sha256": "3e9927b4fcbf5507656ca5b5f90f71efb32fb5033321c0f6b9eeb69d50f4001a",
+        "retrieved_at": "2026-10-20T08:35:12Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:a4da77ee63f879cc8e63",
+        "evidence_url": "https://raw.githubusercontent.com/pmbstyle/fara-agent/a3f05971218a1753c5dd5300c5ba278305131982/README.md"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1f93000eaa5db58811e94c3f253a82f8752441f7459e4ce628114cc781ff031f",
+    "reviewed_at": "2026-10-20T08:36:40Z"
   }
 ]

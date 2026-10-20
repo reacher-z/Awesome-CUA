@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b3d8859fa802093b0fb6",
+    "url": "https://openai.com/index/dall-e-3",
+    "decision": "out_of_scope",
+    "reason": "This is OpenAI's announcement page for DALL·E 3, a text-to-image model available in ChatGPT and the API. It neither operates nor evaluates graphical interfaces; the showlab Awesome-GUI-Agent README links it only to credit the generator of its teaser illustration, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:16:35Z",
+    "evidence": {
+      "url": "https://openai.com/index/dall-e-3",
+      "sha256": "0e789f126d5d0a42c22cd9325c220ef49ad220bac342be689e3c8ca7eb797e85",
+      "retrieved_at": "2026-10-19T06:30:51Z"
+    }
   }
 ]

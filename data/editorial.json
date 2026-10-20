@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.23449",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "cross-app",
+      "tool-integration",
+      "efficiency",
+      "safety-security"
+    ],
+    "summary": "AOHP modifies AOSP so agents act as first-class OS actors, adding generated service entrances, structured UI observations, background interaction, a native sandbox and taint-tracked data flow, tested on 30 mobile tasks.",
+    "verify_terms": [
+      "An Open-Source OS-Level Agent Harness"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.23449v1"
+    ],
+    "scope": "core",
+    "notes": "Evaluated with the OpenClaw agent on 30 self-crafted tasks over real Android apps in five capability categories plus a hybrid category, against stock Android where the agent works from conventional GUI observations; AOHP adds API, CLI, structured-UI and rendered-GUI invocation modes. Security cases use a purpose-built annotated payment app. The paper names its source code at github.com/aohp-os/aohp. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.23449v1",
+        "retrieved_at": "2026-10-20T03:58:21Z",
+        "sha256": "239fe60ba093b68b9da5eb615f4be20c6bb91cdcf12d01752957a72fdd85a886",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 3 (system design), 5 (efficient agent interfaces), 7 (evaluation) and Appendix A (benchmark tasks).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1e9a518ebf03ce461a0cf14d624cfaf8249190b679831a5567605223e5927e70",
+    "reviewed_at": "2026-10-20T04:09:43Z"
   }
 ]

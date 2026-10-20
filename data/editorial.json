@@ -63844,5 +63844,123 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Clawd Cursor",
+    "kind": "tool",
+    "url": "https://github.com/AmrDab/clawdcursor",
+    "aliases": [
+      "clawdcursor"
+    ],
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "state-tracking",
+      "safety-security"
+    ],
+    "scope": "core",
+    "summary": "Local MCP server giving any agent desktop control on Windows, macOS and Linux by fusing the accessibility tree and OCR into element ids, using screenshots last, verifying effects and gating every action.",
+    "verify_terms": [
+      "Clawd Cursor"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AmrDab/clawdcursor/HEAD/README.md"
+    ],
+    "notes": "TypeScript npm package clawdcursor (version 1.5.19 at the inspected commit) by Amr Dabbas, served over stdio MCP or HTTP MCP on 127.0.0.1:3847 with a bearer token, and packaged as a Claude Desktop extension and a Claude Code plugin. The UI state compiler (src/core/sense/ui-map.ts) merges an accessibility snapshot, OCR and, lazily, a screenshot into one map of confidence-scored elements with el_NN ids; the README orders perception as accessibility tree, then OCR, then browser DOM over CDP, with screenshots and coordinate clicks as the last tier. Platform adapters use UI Automation through a PowerShell bridge on Windows, a native Swift accessibility helper on macOS and AT-SPI on Linux X11 and Wayland, with Windows OCR, Apple Vision or Tesseract, and nut-js, ydotool or wtype for input. Every tool call passes one safety.evaluate() gate that allows, asks for confirmation (sends, deletes, purchases, sensitive apps) or blocks (lock, log-out, shutdown sequences); an optional expect argument re-checks the live screen and reports a deviation (src/core/sense/reactive-check.ts); the agent can pause for the user at sign-ins, 2FA or CAPTCHAs. The README counts 98 granular tools grouped into 7 compound tools. A built-in agent loop can also run tasks with a configured provider such as Claude, GPT, Gemini or a local Ollama model. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public TypeScript and Swift source; npm package, Claude Desktop extension bundles and GitHub releases; no model.",
+      "repository_revision": "66051a74199035b3b50fb5cb1bb15db11117f135",
+      "package_version": "1.5.19"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/AmrDab/clawdcursor/git/trees/66051a74199035b3b50fb5cb1bb15db11117f135?recursive=1",
+        "sha256": "0ad59f2a3b0b573fa0ce9c6291f6d62e442cf90e78313b92a1be8ce848104442",
+        "retrieved_at": "2026-10-20T08:13:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AmrDab/clawdcursor/66051a74199035b3b50fb5cb1bb15db11117f135/LICENSE",
+        "sha256": "5e7cde62760360f84678735661a68ef8e6da755b235d6c57afa79c57aaa6d6f8",
+        "retrieved_at": "2026-10-20T08:13:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/AmrDab/clawdcursor/66051a74199035b3b50fb5cb1bb15db11117f135/package.json",
+        "sha256": "0af11ca691a4f606e690b68070f76e6c22bb0002f687a0ec1475be58282dba3f",
+        "retrieved_at": "2026-10-20T08:13:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/AmrDab/clawdcursor/66051a74199035b3b50fb5cb1bb15db11117f135/src/core/sense/ui-map.ts",
+        "sha256": "33e808d906314aad11d17348080b91a0c535d5e333783430e0d5db025dacae6c",
+        "retrieved_at": "2026-10-20T08:13:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/AmrDab/clawdcursor/66051a74199035b3b50fb5cb1bb15db11117f135/src/core/safety.ts",
+        "sha256": "da084b749feba3412cd1098d32bcd71960bfad7e30eae48c77095fb036712ffd",
+        "retrieved_at": "2026-10-20T08:13:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "topics"
+        ],
+        "url": "https://raw.githubusercontent.com/AmrDab/clawdcursor/66051a74199035b3b50fb5cb1bb15db11117f135/src/core/sense/reactive-check.ts",
+        "sha256": "9b8d63b88d6dd2154e1a1584fe4dd1727b828cce60fdcf54d3849c4009cb6a55",
+        "retrieved_at": "2026-10-20T08:13:21Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "81a5e1a6bd77b656250624a35de15e7ea6c1619bfb03f3ea0f8f66e5c8d90b9a",
+    "reviewed_at": "2026-10-20T08:13:50Z"
   }
 ]

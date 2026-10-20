@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.13186",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Introduces MM-BrowseComp, 400 hand-written questions across 22 subtasks whose key evidence lies in web images and videos, with per-question checklists, and evaluates 27 VLMs and browsing agents.",
+    "verify_terms": [
+      "MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents"
+    ],
+    "scope": "adjacent",
+    "notes": "The 27 evaluated systems are 17 tool-free VLMs, 6 models with their providers' search tools (OpenAI web_search; Gemini google_search and url_context) and 4 open-source agent frameworks (Agent-R1, OWL, DeerFlow, WebDancer). Appendix B.1 gives Agent-R1 a search engine, a web browser tool and image, video and PDF analyzers, and runs OWL with its official GAIA workforce script, which (camel-ai/owl gaia69 branch, commit ceada80b) equips OWL's web agent with a headless browser-simulation toolkit alongside search tools. Metrics are overall accuracy, strict accuracy (answer plus full checklist) and average checklist score. Accepted to EMNLP 2026; the release is at github.com/MMBrowseComp/MM-BrowseComp. No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract, the full v2 HTML text (Sections 3-4 and Appendix B) and the OWL GAIA workforce script it cites.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2508.13186v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2508.13186v2",
+        "retrieved_at": "2026-10-20T08:01:59Z",
+        "sha256": "8d48fd6e5d3793650c2f3e5c71b8f4e9209999705e4f6a8b895898a862ea4232",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/camel-ai/owl/ceada80b2ab9dc013673e0224ee43fda4c87eb83/run_gaia_workforce.py",
+        "retrieved_at": "2026-10-20T08:02:00Z",
+        "sha256": "43b54a4bafbf42ca70e48c15b6bb8416589251bf8a992aa9f66cf34ebd61bb57",
+        "supports": [
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3c9eac6fc580fce8ebb823e5a2509446e407a1005e1d80bdecbc1f376db4a6a8",
+    "reviewed_at": "2026-10-20T08:02:33Z"
   }
 ]

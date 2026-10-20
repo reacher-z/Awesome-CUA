@@ -63844,5 +63844,173 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Eido",
+    "kind": "agent",
+    "url": "https://github.com/tony3liu/eido",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "macOS coding workspace built on Zed and the pi agent, adding experimental browser use via an included agent that picks indexed page elements and acts over CDP, and computer use via a bundled Cua Driver MCP server.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Eido"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Coding is the primary purpose: the README frames release v0.0.1 (Apple Silicon, macOS 13 or later, locally signed and not notarized) around a describe, investigate, edit, review and verify loop, and calls browser and desktop automation experimental. server.mjs runs an eido-browser MCP server with browser_* tools. Its default Ultrafast engine, adapted in TypeScript from browser-use/jev-ultrafast, launches Playwright Chromium, injects snapshot.js to list up to 250 visible interactive elements with roles and labels plus visible page text, has a decision model choose one click, fill, select, scroll or wait step at a time, and dispatches mouse and key events over the DevTools protocol (browser.ts); per server.mjs, screenshots serve recording and the inspector rather than model input. config.mjs points decision requests at the hosted TypeSafe API (model jev-latest) by default and, unless overridden, generates typed text with the user's main model. A Legacy engine uses the jev-browser npm dependency. computer.mjs registers the bundled or a user-installed cua-driver as the eido_computer MCP server, which needs macOS Accessibility and Screen Recording permission; native/cua/upstream.json pins trycua/cua tag cua-driver-rs-v0.34.0, and per NOTICE the native/cua/overlay patches add session-owned background focus, exact-window keyboard guards and window capture validation. NOTICE licenses Eido-original code GPL-3.0-or-later, while Zed components marked Apache-2.0, the Cua Driver and jev-ultrafast-derived code (MIT), pi (MIT) and upstream pi-acp adapter code (Apache-2.0) keep their own terms. Code was read, not run.",
+    "details": {
+      "availability": "Public source with a prebuilt Apple Silicon DMG for release v0.0.1; no model is bundled, and the user configures model providers and their authentication.",
+      "repository_revision": "b80cad273ae81d8d8f37f2073a41a0d5532ac702",
+      "release_tag": "v0.0.1"
+    },
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:trycua/cua",
+        "evidence_url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/native/cua/upstream.json"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "GPL-3.0-or-later",
+          "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/NOTICE",
+          "retrieved_at": "2026-10-20T08:32:56Z",
+          "basis": "NOTICE grants GPL-3.0 or any later version for Eido-original code and Eido-authored modifications; LICENSE holds the GPL-3.0 text."
+        },
+        "reason": "NOTICE explicitly declares GPL-3.0-or-later for Eido-original code. It does not relicense incorporated upstream code: Zed components marked Apache-2.0, the MIT Cua Driver and jev-ultrafast-derived code, MIT pi and the Apache-2.0 pi-acp adapter keep their own terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/NOTICE",
+          "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/LICENSE"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision",
+          "details.release_tag"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/README.md",
+        "sha256": "4b55d2ab57f54c04a317198bd5882c12b336d0200f7dce33738aaa513b47c387",
+        "retrieved_at": "2026-10-20T08:32:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/packages/runtime/src/browser/server.mjs",
+        "sha256": "81598be20f7a809750a8d0f362709da48bd569fa11e4499da7b54ba477592c77",
+        "retrieved_at": "2026-10-20T08:32:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/packages/runtime/src/browser/ultrafast/browser.ts",
+        "sha256": "91422cdeebcfe6ff50ed467192302cee34aab009e62219f89b5732b72c8fca1f",
+        "retrieved_at": "2026-10-20T08:32:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/packages/runtime/src/browser/ultrafast/snapshot.js",
+        "sha256": "e50473501c8fb8e70f3b21866d987393e3f2315c639d638bd477d170e81ed78d",
+        "retrieved_at": "2026-10-20T08:32:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/packages/runtime/src/browser/config.mjs",
+        "sha256": "fc86171dade649839cde8495a1b1d1e4a3347a1f4ec559ee3123c8fd927581f2",
+        "retrieved_at": "2026-10-20T08:32:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/packages/runtime/src/computer.mjs",
+        "sha256": "cbf5b5f57ccebc9a7df9112186b3e82aac73af10aa0d8143d5b75f4b9c72a2f9",
+        "retrieved_at": "2026-10-20T08:32:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/native/cua/upstream.json",
+        "sha256": "981b09f24e3d4410c04c93843589754a8ed03df55b20945338c5f746dbfe3d37",
+        "retrieved_at": "2026-10-20T08:32:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/NOTICE",
+        "sha256": "b7cd7358d6a9cbcc2901e2b1f0beb0698dbd2b99735dcc659a338c079e9b88af",
+        "retrieved_at": "2026-10-20T08:32:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/tony3liu/eido/b80cad273ae81d8d8f37f2073a41a0d5532ac702/LICENSE",
+        "sha256": "0aa0322ea494da441088e4d9144c6720bf99d9e2e1eefcd29d1f58b19b5c4246",
+        "retrieved_at": "2026-10-20T08:33:01Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit b80cad2 (tag v0.0.1), NOTICE, LICENSE, root package.json, the eido-browser MCP server, the Ultrafast browser, snapshot, model and config sources, computer.mjs and native/cua/upstream.json. No code execution.",
+    "reviewed_sha256": "4b55d2ab57f54c04a317198bd5882c12b336d0200f7dce33738aaa513b47c387",
+    "reviewed_at": "2026-10-20T08:35:20Z"
   }
 ]

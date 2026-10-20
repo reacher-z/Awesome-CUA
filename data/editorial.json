@@ -63653,5 +63653,101 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "dassi",
+    "kind": "product",
+    "url": "https://www.dassi.ai",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop",
+      "memory"
+    ],
+    "summary": "Side-panel extension for Chrome, Edge and Brave whose agent reads pages, takes screenshots, clicks, types, fills forms and manages tabs in the user's signed-in browser, with saved skills, schedules and a choice of model.",
+    "scope": "core",
+    "verify_terms": [
+      "dassi"
+    ],
+    "aliases": [
+      "Dassi AI"
+    ],
+    "notes": "Omnify Labs of San Francisco builds dassi. The documentation says the agent identifies elements by role, text and position, can run JavaScript in the page, uses screenshots to verify its work and to handle coordinate-based interfaces, and asks the user to approve a plan before visiting new domains or acting on sensitive pages; it does not enter passwords or payment details or solve CAPTCHAs. The homepage describes teaching a job once, scheduled runs in the user's open browser, an editable memory of corrections and per-site JavaScript helpers the agent writes for itself, while the documentation's limitations page still says it does not run tasks in the background or on a schedule. Models include Claude, GPT, Gemini and local models, through managed credits or the user's own key. The documentation source, omnify-labs/dassi-docs, is CC-BY-4.0 per the GitHub API; that covers the documentation, not the extension. Pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.dassi.ai/pricing/",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/omnify-labs/dassi-docs/97ad14d2506cf07b95af8b35fdfa76144d49c864/src/content/docs/index.md",
+        "sha256": "3eaa698aa5123cbd4ceabaa66ae564c73c7e816f84a1e71ed81754933585c3f6",
+        "retrieved_at": "2026-10-20T04:32:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/omnify-labs/dassi-docs/97ad14d2506cf07b95af8b35fdfa76144d49c864/src/content/docs/guides/browser-automation.md",
+        "sha256": "0c8ced42e05e218cf1bd4473e099c418fa3059e54ec21eb1351b14abf22ad386",
+        "retrieved_at": "2026-10-20T04:32:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/omnify-labs/dassi-docs/97ad14d2506cf07b95af8b35fdfa76144d49c864/src/content/docs/reference/limitations.md",
+        "sha256": "ac3c62e329c1761d4a27c9fa65aefaaf965c34d2fb5971849709e050f8e98121",
+        "retrieved_at": "2026-10-20T04:32:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://www.dassi.ai/about/",
+        "sha256": "cf1c4a290b2634313912fe60cfeec7d50d8d142346e68e3e31093715ca16e101",
+        "retrieved_at": "2026-10-20T04:32:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.pricing_url"
+        ],
+        "url": "https://www.dassi.ai/pricing/",
+        "sha256": "40663ad6247cba9b160a5372d65c64dbec3d3c3064aa516bdcd389b015432054",
+        "retrieved_at": "2026-10-20T04:32:46Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2cdb34c5a982139df2aab7b83f1efb8e6746c4f3d0ceaf6b68cacd367bd00463",
+    "reviewed_at": "2026-10-20T04:33:06Z"
   }
 ]

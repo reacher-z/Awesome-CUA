@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.23939",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "self-reflection"
+    ],
+    "scope": "core",
+    "summary": "Proposes DRIVE, which splits web-agent experience into natural-language reasoning skills and programmatic interaction skills, retrieves both by task and page context, and refines them by skill-level reflection.",
+    "verify_terms": [
+      "Modeling Skills at the Reasoning and Interaction Levels"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.23939v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v1 full text evaluates DRIVE on the five WebArena domains (Shopping, CMS, Forum, Gitlab, Map) with a GPT-4.1 backbone and a 20-step limit, against the vanilla WebArena agent, AgentOccam, Go-Browse, SteP and SkillWeaver run under the same configuration, and repeats the comparison with Qwen2.5-7B-Instruct. The paper names no code repository. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.23939v1",
+        "sha256": "3e09d86c6291210bee9441515aa3501e411b26bb6feb323d01fa582e50a183ea",
+        "retrieved_at": "2026-10-20T04:29:39Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the WebArena setup, backbones and baselines. No code execution or result reproduction.",
+    "reviewed_sha256": "f830e648322e8d58908bf9d84b8cc1585b98e580ebe521a3f90cad8aa8d5222e",
+    "reviewed_at": "2026-10-20T04:29:50Z"
   }
 ]

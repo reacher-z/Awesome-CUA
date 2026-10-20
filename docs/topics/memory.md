@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-165 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+166 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (145)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (146)](#papers)
 
 ## Benchmarks
 
@@ -115,6 +115,7 @@ All entries in this section: ios.
 | 2026‑05‑10 | [Mem-W: Latent Memory-Native GUI Agents](https://arxiv.org/abs/2605.09317) | web | Introduces Mem-W, which compresses previous trajectories and current-session segments into latent memory tokens used directly by the GUI policy. Self-distillation and outcome supervision train this memory representation for web and mobile navigation. |
 | 2026‑05‑07 | [X-OmniClaw Technical Report: A Unified Mobile Agent for Multimodal Understanding and Interaction](https://arxiv.org/abs/2605.05765) | android | Describes an Android agent architecture combining multimodal perception, working and personal memory, hybrid XML/visual grounding, and reusable skills captured from user interactions. |
 | 2026‑04‑30 | [Exploring LLM Agent Designs and Interaction Modalities for Scientific Visualization](https://arxiv.org/abs/2604.27996) | unspecified | This study compares specialized, computer-use and coding agents on scientific visualization workflows. It examines GUI, CLI, code and tool-call interaction modes, including how persistent memory changes performance across repeated trials. |
+| 2026‑04‑28 | [DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning](https://arxiv.org/abs/2605.23939) | web | Proposes DRIVE, which splits web-agent experience into natural-language reasoning skills and programmatic interaction skills, retrieves both by task and page context, and refines them by skill-level reflection. |
 | 2026‑04‑15 | [AgentClick: A Skill-Based Human-in-the-Loop Review Layer for Terminal AI Agents](https://arxiv.org/abs/2604.16520) | web | AgentClick gives terminal-based agents a browser review interface for plans, drafts, execution traces and editable memory. A local server and skill plugin let users inspect proposed actions and provide structured feedback. |
 | 2026‑04‑15 | [UI-Copilot: Advancing Long-Horizon GUI Automation via Tool-Integrated Policy Optimization](https://arxiv.org/abs/2604.13822) | android | UI-Copilot separates GUI execution from on-demand memory retrieval and numerical assistance. Its training procedure treats tool selection and multi-turn task execution as distinct optimization targets while keeping persistent observations outside transient context. |
 | 2026‑04‑14 | [WebXSkill: Skill Learning for Autonomous Web Agents](https://arxiv.org/abs/2604.13318) | web | WebXSkill pairs parameterized action programs with step-level language guidance, mining reusable skills from synthetic browser-agent traces. A URL-based graph supports retrieval, and deployment alternates between direct program execution and guided native planning. |

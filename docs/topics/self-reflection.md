@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-39 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+40 source-reviewed resources tagged `self-reflection`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (29)](#papers)
+**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (30)](#papers)
 
 ## Models
 
@@ -46,6 +46,7 @@ All entries in this section: web.
 | 2026‑07‑31 | [CUADebug: Diagnosing and Repairing Computer-Use Agent Failures](https://arxiv.org/abs/2608.02643) | unspecified | CUADebug combines a failure taxonomy and human-annotated OSWorld failure trajectories with an agent that locates causal steps and proposes corrections from screenshots and action traces. It evaluates root-cause diagnosis separately from controlled task re-execution and failure recovery. |
 | 2026‑07‑27 | [Falsifiable Commitment Planning for Self-Correcting Web Agents](https://arxiv.org/abs/2607.24167) | web | Introduces FCPAgent, which attaches confirming and falsifying evidence to each skill-grounded plan step. A plan–test–repair loop checks actions and observations, then localizes contradictions so execution, skills, or plans can be revised at the appropriate level. |
 | 2026‑06‑30 | [Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents](https://arxiv.org/abs/2606.31270) | unspecified | Uses failed computer-use trajectories to diagnose failure modes and generate inference-time agent code patches, with light human verification. An OSWorld study evaluates this failure-driven improvement loop without additional model training. |
+| 2026‑04‑28 | [DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning](https://arxiv.org/abs/2605.23939) | web | Proposes DRIVE, which splits web-agent experience into natural-language reasoning skills and programmatic interaction skills, retrieves both by task and page context, and refines them by skill-level reflection. |
 | 2026‑04‑23 | [Measure Twice, Click Once: Co-evolving Proposer and Visual Critic via Reinforcement Learning for GUI Grounding](https://arxiv.org/abs/2604.21268) | unspecified | Trains a GUI grounding proposer together with a visual critic that evaluates candidate locations rendered on screenshots. An adaptive reinforcement-learning schedule balances their development, using proposal diversity and critic feedback during training. |
 | 2026‑04‑23 | [VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation](https://arxiv.org/abs/2604.21375) | desktop, linux, windows | VLAA-GUI combines mandatory checks for visually supported completion, multi-tier loop recovery and on-demand workflow search. Optional coding and grounding agents support execution, with component ablations on Linux and Windows GUI tasks. |
 | 2026‑03‑16 | [GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents](https://arxiv.org/abs/2603.15039) | unspecified | GUI-CEval evaluates Chinese mobile GUI agents through a hierarchy of atomic abilities and application-level tasks collected on physical devices. Its diagnostics cover perception, planning, reflection, execution and post-action evaluation across a broad set of apps. |

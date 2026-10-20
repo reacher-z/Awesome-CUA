@@ -1999,7 +1999,7 @@
       "url": "https://arxiv.org/abs/2601.22607",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract proposes EigenData, a hierarchical multi-agent engine that synthesizes tool-grounded dialogues with executable per-instance checkers, followed by user-model fine-tuning and GRPO-style reinforcement learning for multi-turn tool-using agents, evaluated on the Airline and Telecom domains of tau^2-bench. These agents act through API tool calls and dialogue rather than graphical, browser or device interfaces, so this conversational tool-use post-training work is outside the computer-use scope.",
+      "reason": "The abstract proposes EigenData (named AReaL-SEA in the v3 full text), a hierarchical multi-agent engine that synthesizes tool-grounded dialogues with executable per-instance checkers, followed by user-model fine-tuning and GRPO-style reinforcement learning for multi-turn tool-using agents; the full text evaluates it on the Airline, Retail and Telecom domains of tau^2-bench. These agents act through API tool calls and dialogue rather than graphical, browser or device interfaces, so this conversational tool-use post-training work is outside the computer-use scope.",
       "reviewed_at": "2026-10-20T04:44:23Z",
       "metadata_fingerprint": "b6059116a58f8a5e9a094485fd5bd4a4b483fd8f0f07c4480110c4ef3f3f6eb6",
       "evidence": {

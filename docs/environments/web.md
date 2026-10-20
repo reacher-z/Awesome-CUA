@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-623 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+624 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (444)](#papers)
 
 ## Benchmarks
 
@@ -443,6 +443,7 @@
 | 2025‑12‑18 | [OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models](https://arxiv.org/abs/2512.16295) | web, desktop, android | OS-Oracle synthesizes GUI critic examples and trains a pre-action critic with supervised learning followed by consistency-preserving GRPO. It introduces OS-Critic Bench across mobile, web, and desktop settings and tests critic-assisted agents in OSWorld and AndroidWorld. |
 | 2025‑12‑14 | [ceLLMate: Sandboxing Browser AI Agents](https://arxiv.org/abs/2512.12594) | web | ceLLMate constrains browser-agent authority through an extension that applies policies at the HTTP layer. It evaluates this sandbox against prompt-injection attacks in WASP, avoiding dependence on brittle low-level click and keystroke policies. |
 | 2025‑12‑08 | [Privacy Practices of Browser Agents](https://arxiv.org/abs/2512.07725) | web | Presents a privacy evaluation framework for browser agents covering component weaknesses, website defenses, tracking, privacy-related prompts and personal-data leakage. The framework is applied to deployed browser-agent tools. |
+| 2025‑12‑07 | [Permission Manifests for Web Agents](https://arxiv.org/abs/2601.02371) | web | Proposes agent-permissions.json, a robots.txt-style manifest in which websites declare CSS-selector rules for agent interactions, natural-language action guidelines and preferred APIs, with a parser and generator. |
 | 2025‑11‑28 | [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) | web | LegalWebAgent separates user-needs clarification, webpage browsing, and actions such as form completion or scheduling. A 15-task evaluation studies legal-service workflows relevant to Québec civil-law users, using HTML and screenshot observations. |
 | 2025‑11‑26 | [Prune4Web: DOM Tree Pruning Programming for Web Agent](https://arxiv.org/abs/2511.21398) | web | Introduces Prune4Web, where generated scoring programs filter DOM elements according to decomposed subtasks before grounding. An annotation pipeline and two-turn training procedure coordinate the planner, programmatic filter and grounder. |
 | 2025‑11‑24 | [Fara-7B: An Efficient Agentic Model for Computer Use](https://arxiv.org/abs/2511.19663) | web | Introduces FaraGen synthetic web trajectories, a compact screenshot-based action model, and WebTailBench for underrepresented browser tasks. |

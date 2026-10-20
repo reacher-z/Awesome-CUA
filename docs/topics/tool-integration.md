@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
 
 ## Benchmarks
 
@@ -146,6 +146,7 @@ All entries in this section: unspecified.
 | 2025‑12‑26 | [MAI-UI Technical Report: Real-World Centric Foundation GUI Agents](https://arxiv.org/abs/2512.22047) | android | MAI-UI combines GUI navigation, native user interaction, and MCP tool calls in a family of policies trained through generated data and online reinforcement learning. The report also studies device-cloud routing and scaling of parallel environments and interaction budgets, with grounding and Android navigation evaluation. |
 | 2025‑12‑22 | [MobileWorld: Benchmarking Autonomous Mobile Agents in Agent-User Interactive and MCP-Augmented Environments](https://arxiv.org/abs/2512.19432) | android | Introduces long mobile workflows that combine agent-user interaction, cross-application tasks, and MCP-based tool access. |
 | 2025‑12‑17 | [Step-GUI Technical Report](https://arxiv.org/abs/2512.15431) | android, desktop | Step-GUI uses calibrated trajectory rewards to turn generated GUI interaction data into training signals for compact agent models. The report also introduces GUI-MCP for hierarchical GUI operations and local task delegation, and AndroidDaily for static-action and end-to-end mobile evaluation. |
+| 2025‑12‑07 | [Permission Manifests for Web Agents](https://arxiv.org/abs/2601.02371) | web | Proposes agent-permissions.json, a robots.txt-style manifest in which websites declare CSS-selector rules for agent interactions, natural-language action guidelines and preferred APIs, with a parser and generator. |
 | 2025‑11‑22 | [Building Browser Agents: Architecture, Security, and Practical Solutions](https://arxiv.org/abs/2511.19477) | web | Reports architectural and security lessons from building a browser agent, including hybrid accessibility-tree and visual context, browser tooling and programmatic constraints. A WebGames evaluation accompanies the discussion of reliability and specialization. |
 | 2025‑10‑28 | [OSWorld-MCP: Benchmarking MCP Tool Invocation In Computer-Use Agents](https://arxiv.org/abs/2510.24563) | desktop | OSWorld-MCP evaluates how agents choose between GUI operations and MCP tool calls in computer tasks. It combines generated and curated tools, with 158 manually validated tools across seven applications, to examine tool use alongside task completion. |
 | 2025‑10‑20 | [UltraCUA: A Foundation Model for Computer Use Agents with Hybrid Action](https://arxiv.org/abs/2510.17790) | desktop, windows | UltraCUA trains a shared policy for primitive GUI actions and high-level tool calls using synthesized tasks and hybrid trajectories. Supervised fine-tuning followed by online reinforcement learning is evaluated on OSWorld and WindowsAgentArena. |

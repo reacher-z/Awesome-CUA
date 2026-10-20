@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Permission Manifests for Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.02371",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Proposes agent-permissions.json, a robots.txt-style manifest in which websites declare CSS-selector rules for agent interactions, natural-language action guidelines and preferred APIs, with a parser and generator.",
+    "verify_terms": [
+      "Permission Manifests for Web Agents"
+    ],
+    "scope": "core",
+    "notes": "Specification and position paper from the Lightweight Agent Standards Working Group; it reports no quantitative evaluation. Resource rules pair a verb (for example read_content, click_element or submit_form) with a CSS selector, an allow or deny flag and optional modifiers such as rate limits or required human confirmation. Action guidelines use RFC 2119 terms, and an api field points agents to OpenAPI, MCP or A2A endpoints. The file is placed in the site's .well-known directory. Enforcement is left to sites; the paper suggests checking resource rules in the browser driver before each DOM command. It names repositories github.com/las-wg/agent-permissions.json, las-wg/agent-permissions-python and las-wg/agent-permissions-generator; none was reviewed here.",
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 1 (introduction and footnoted repository), 2 (Table 1 positioning against robots.txt, llms.txt, AIPref, MCP and A2A), 3.1-3.5 (structure, resource rules, verbs, modifiers, action guidelines, APIs), 4.1-4.3 (enforcement, incentives, limitations) and 5.1-5.2 (Python library and manifest generator).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.02371v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.02371v2",
+        "retrieved_at": "2026-10-20T05:26:58Z",
+        "sha256": "c4387cb6aca8afaeb82bdf1a469532c5ca9fe145e4b8a6a007b561673a510550",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "91e3946a2458f7fb49163feac405baba09b0490dc4a068ed68c478abe467aa68",
+    "reviewed_at": "2026-10-20T05:27:00Z"
   }
 ]

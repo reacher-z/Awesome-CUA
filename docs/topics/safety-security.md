@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -164,6 +164,7 @@ All entries in this section: web.
 | 2025‑12‑29 | [It's a TRAP! Task-Redirecting Agent Persuasion Benchmark for Web Agents](https://arxiv.org/abs/2512.23128) | web | Introduces TRAP, which evaluates task-redirection attacks embedded in realistic web interfaces. Controlled website clones and a modular injection framework support comparisons of persuasion techniques and contextual changes across agents. |
 | 2025‑12‑14 | [ceLLMate: Sandboxing Browser AI Agents](https://arxiv.org/abs/2512.12594) | web | ceLLMate constrains browser-agent authority through an extension that applies policies at the HTTP layer. It evaluates this sandbox against prompt-injection attacks in WASP, avoiding dependence on brittle low-level click and keystroke policies. |
 | 2025‑12‑08 | [Privacy Practices of Browser Agents](https://arxiv.org/abs/2512.07725) | web | Presents a privacy evaluation framework for browser agents covering component weaknesses, website defenses, tracking, privacy-related prompts and personal-data leakage. The framework is applied to deployed browser-agent tools. |
+| 2025‑12‑07 | [Permission Manifests for Web Agents](https://arxiv.org/abs/2601.02371) | web | Proposes agent-permissions.json, a robots.txt-style manifest in which websites declare CSS-selector rules for agent interactions, natural-language action guidelines and preferred APIs, with a parser and generator. |
 | 2025‑11‑22 | [Building Browser Agents: Architecture, Security, and Practical Solutions](https://arxiv.org/abs/2511.19477) | web | Reports architectural and security lessons from building a browser agent, including hybrid accessibility-tree and visual context, browser tooling and programmatic constraints. A WebGames evaluation accompanies the discussion of reliability and specialization. |
 | 2025‑11‑17 | [DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents](https://arxiv.org/abs/2511.13248) | unspecified | Applies dual-task adversarial perturbations to mobile screenshots to conceal personally identifiable information from untrusted MLLM routers while preserving agent task utility. |
 | 2025‑10‑31 | [Measuring the Security of Mobile LLM Agents under Adversarial Prompts from Untrusted Third-Party Channels](https://arxiv.org/abs/2510.27140) | unspecified | Measures how untrusted third-party notifications, messages, and app content can hijack mobile LLM agents into executing unauthorized cross-app actions. |

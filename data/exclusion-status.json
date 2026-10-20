@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1989,6 +1989,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
         "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
         "retrieved_at": "2026-10-18T04:21:52Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2601.06328",
+      "name": "C-World: A Computer Use Agent Environment Creator",
+      "url": "https://arxiv.org/abs/2601.06328",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "Despite its title, the abstract describes C-World as an environment creator whose action space is 5,571 format-unified tools across 204 applications, executed through live API calls or approximated by a World Engine, with nine LLMs evaluated and 1,170 trajectories used for fine-tuning. The paper builds these tools from MCP servers, so it studies API tool-calling agents rather than agents operating a computer GUI, browser or device.",
+      "reviewed_at": "2026-10-20T04:48:11Z",
+      "metadata_fingerprint": "0adf4952bbd24533ef6270658449f785e5854c691e5699e3b9e51651565e9e72",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "ae98e77b8bb125e45277aacec768a047e7bb0e13f33ca9ff6ca7c19e29e56cca",
+        "retrieved_at": "2026-10-16T06:36:47Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

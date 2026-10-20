@@ -63653,5 +63653,48 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.29445",
+    "environments": [
+      "ios",
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "video",
+      "evaluation",
+      "mobile-navigation",
+      "training-free"
+    ],
+    "summary": "Introduces VG-GUI-Bench, 1,000 mobile GUI test cases that pair tutorial videos with step-wise actions, and TASKER, a training-free keyframe search applied to video-guided GUI agents and to VideoQA.",
+    "verify_terms": [
+      "Bridging VideoQA and Video-Guided Agentic Tasks"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.29445v1"
+    ],
+    "scope": "core",
+    "notes": "VG-GUI-Bench reuses tutorial videos, ground-truth action sequences and keyframe screenshots from the MONDAY mobile dataset (the paper's case study is an iOS task); episodes average 10.71 steps, and predictions are scored against ground truth by action accuracy, completion, frames per step and improvement over the no-video setting. TASKER is also evaluated on VideoQA (EgoSchema, NExT-QA) and, in Appendix G, on an OSWorld subset with collected tutorial videos. The paper names github.com/VG-GUI-TASKER/VG-GUI-TASKER and vg-gui-tasker.github.io for code and data, and its arXiv comments list ECCV 2026. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.29445v1",
+        "retrieved_at": "2026-10-20T04:00:50Z",
+        "sha256": "d86f612897b97cf49f23e8922ef565ad55ef4e0f1fd5d09275f4e188836bb05d",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 1, 3.1 (VG-GUI-Bench data source, action space, pipeline, metrics), 3.2 (TASKER), 4.1 (main results) and Appendix G (OSWorld).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cb8de2577de77e9d6edd484232f5140c387896bc0883356f7398eafa34ae0b7b",
+    "reviewed_at": "2026-10-20T04:11:46Z"
   }
 ]

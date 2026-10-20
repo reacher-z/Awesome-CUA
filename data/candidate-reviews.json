@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:a9dae6f22b637892e4c0",
+    "url": "https://www.mdpi.com/1999-5903/17/4/180",
+    "decision": "out_of_scope",
+    "reason": "This Future Internet 2025 article proposes a framework that combines model-driven development with generative AI and multi-agent reinforcement learning to personalize and re-lay-out e-commerce user interfaces from collected user behavior data. Its agents generate and optimize interface designs for human users; no agent perceives or operates a graphical interface, so it is outside the catalog's scope.",
+    "reviewed_at": "2026-10-20T05:09:22Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251126082822id_/https://www.mdpi.com/1999-5903/17/4/180",
+      "sha256": "7606ab30618232613ab4b61748a2c31aea8d6a24019395585edbee8b9063c9b2",
+      "retrieved_at": "2026-10-20T04:29:20Z"
+    }
   }
 ]

@@ -63844,5 +63844,74 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Beyond Rule-Based Workflows: An Information-Flow-Orchestrated Multi-Agents Paradigm via Agent-to-Agent Communication from CORAL",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.09883",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "Replaces predefined multi-agent workflows with an information-flow orchestrator that directs planner, web, document and coding agents through CORAL A2A messages; 63.64% pass@1 on GAIA validation versus 55.15% for OWL.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Beyond Rule-Based Workflows"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.09883v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent general-purpose multi-agent coordination method evaluated on the 165-task GAIA validation set, with agent roles and models matched to an OWL reimplementation. Its web agent reuses OWL's tools; in the released code (web_agent.py at commit d864859) the browse_url tool comes from CAMEL's AsyncBrowserToolkit, a modified copy of which is vendored and drives a headless Chromium through Playwright. Browser operation itself is not analyzed. Code: github.com/Coral-Protocol/Beyond-Rule-Based-Workflows. Reported results are not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.09883v1",
+        "retrieved_at": "2026-10-20T04:54:53Z",
+        "sha256": "13794f21bd2acbe89298a410cecee37362cc1ce9b045fa0158a2791fa2410889",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/Coral-Protocol/Beyond-Rule-Based-Workflows/d864859737f1626ba4a35ec15ea5534f3863a38d/agent_defined_workflow/web_agent.py",
+        "retrieved_at": "2026-10-20T04:54:52Z",
+        "sha256": "a56d5259d5de8ab38f8045e50dffaec6bdfe9cdae48f8ac172e621f6449217e9",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/Coral-Protocol/Beyond-Rule-Based-Workflows/d864859737f1626ba4a35ec15ea5534f3863a38d/agent_defined_workflow/utils/camel/toolkits/async_browser_toolkit.py",
+        "retrieved_at": "2026-10-20T04:54:52Z",
+        "sha256": "259f6884ae2f5c10b5bdadf9c862e7e4d6ba9db5110d871b63a72daa5cc7ad5c",
+        "supports": [
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bfcb59e3796d7797f4e7de42286710e85f818f744fcc2f4d7cc17ead3bf471d0",
+    "reviewed_at": "2026-10-20T04:55:35Z"
   }
 ]

@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:274a43bf6043c02c522a",
+    "url": "https://drive.google.com/file/d/1X2QktZ51OUofZ43vDGB4RuAPlXbdf5ua/view?usp=sharing",
+    "decision": "not_a_resource",
+    "reason": "Google Drive file state_transfer_screenshots_web.zip, the web screenshot archive of the raw state-action-state triples that the github:os-copilot/os-genesis README links under Raw collected triples; a download file, not a separate resource."
   }
 ]

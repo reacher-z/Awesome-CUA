@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-20T05:52:01Z**. Generated from committed sou
 - 3,209 resource records: 1,629 curated; 1,580 bibliographic metadata only.
 - 2,747 paper and survey records, including 2,734 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,870 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,260 discovery identifiers; 906 remain unresolved after accounting for scope exclusions and for 98 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,260 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 99 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -79,7 +79,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 5 | 5 | 0 | 2 | 3 | OK · 2026-10-20 |
 | [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 12 | 12 | 0 | 4 | 17 | OK · 2026-10-20 |
 | [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 4 | 4 | 0 | 1 | 2 | OK · 2026-10-20 |
-| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 6 | 21 | OK · 2026-10-20 |
+| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 7 | 20 | OK · 2026-10-20 |
 | [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 1 | 1 | 0 | 0 | 7 | OK · 2026-10-20 |
 | [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 0 | 7 | OK · 2026-10-20 |
 | [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 4 | 4 | 0 | 4 | 8 | OK · 2026-10-20 |

@@ -63844,5 +63844,57 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2510.23883",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "safety-security",
+      "evaluation",
+      "robustness"
+    ],
+    "summary": "Surveys agentic AI security threats (prompt injection, autonomous exploitation, MCP and A2A attacks, web interface risks), defenses and 31 benchmarks, 13 of them in web, computer or Android domains.",
+    "verify_terms": [
+      "Threats, Defenses, Evaluation, and Open Challenges"
+    ],
+    "scope": "adjacent",
+    "notes": "Published in IEEE Access (DOI 10.1109/ACCESS.2026.3675554, per the v3 abstract page). Web and computer-use material is concentrated in the interface and environment risks section (WebArena error analysis, AgentOccam's action and observation design, BrowserGym and Mind2Web reproducibility issues, CAPTCHA failures reported by Open CaptchaWorld), the autonomous website hacking subsection, and the benchmark review: its Table 2 lists 31 benchmarks, 13 in web, computer or Android domains (BrowserGym, MiniWoB++, OSWorld, OSWorld-Human, VisualWebArena, AndroidWorld, WebShop, WCA, AssistantBench, ST-WebAgent-Bench, OS-Harm, WASP, SafeArena). Most of the survey covers general agentic threats such as prompt injection, tool abuse, MCP and A2A protocols, multi-agent systems and governance, so scope is adjacent. arXiv has no HTML rendering of v3; section content was checked in the v2 HTML.",
+    "read_basis": "Read the arXiv v3 abstract, the v3 PDF (10.1 MB, above the catalog fetch limit, so not a receipt) and the v2 HTML: Sections 3.2-3.4, 5.1-5.3 and Table 2 in full, the rest skimmed. Table 2 rows were counted with a script in both versions (31 each).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.23883v3"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.23883v2",
+        "retrieved_at": "2026-10-20T07:55:28Z",
+        "sha256": "bfbeb8e725ff890afe85e33858d5a8d8061123a3eba7392c605261e6499d6448",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "232cd7e7294f68d64529bdfd97393f14155cfcf0ac5a6f7fcc03da4748f804fe",
+    "reviewed_at": "2026-10-20T07:55:59Z"
   }
 ]

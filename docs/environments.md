@@ -6,12 +6,12 @@ Environment facets come from the editorial review and overlap: a resource tagged
 
 | Platform | All | Benchmarks | Datasets | Models | Systems | Papers |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [Web](environments/web.md) | 623 | 42 | 25 | 28 | 82 | 446 |
-| [Desktop](environments/desktop.md) | 322 | 20 | 18 | 24 | 55 | 205 |
+| [Web](environments/web.md) | 624 | 42 | 25 | 28 | 82 | 447 |
+| [Desktop](environments/desktop.md) | 323 | 20 | 18 | 24 | 55 | 206 |
 | [Windows](environments/windows.md) | 63 | 5 | 4 | 5 | 11 | 38 |
 | [macOS](environments/macos.md) | 30 | 3 | 2 | 4 | 7 | 14 |
 | [Linux](environments/linux.md) | 49 | 5 | 7 | 6 | 13 | 18 |
-| [Android](environments/android.md) | 308 | 19 | 35 | 24 | 44 | 186 |
+| [Android](environments/android.md) | 309 | 19 | 35 | 24 | 44 | 187 |
 | [iOS](environments/ios.md) | 21 | 1 | 2 | 4 | 5 | 9 |
 | [HarmonyOS](environments/harmonyos.md) | 3 | · | · | · | 1 | 2 |
 | [Cross-platform](environments/cross-platform.md) | 197 | 14 | 15 | 47 | 9 | 112 |

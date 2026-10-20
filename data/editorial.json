@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "SlowBA: An efficiency backdoor attack towards VLM-based GUI agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.08316",
+    "environments": [
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "reinforcement-learning",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Introduces SlowBA, a backdoor that uses rendered pop-up triggers and two-stage reward-level injection to make VLM GUI agents emit long reasoning chains, raising latency while largely preserving action accuracy.",
+    "verify_terms": [
+      "An efficiency backdoor attack towards VLM-based GUI agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.08316v3"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Core GUI-agent security paper. The v3 full text backdoors GUI-R1-3B, built on Qwen2.5-VL, with the data in the GUI-R1 repository: OmniAct-Web and GUI-Act-Web for web, ScreenSpot-Pro for desktop and AndroidControl-Low for Android. Triggers are rendered pop-up windows such as update or security notices, and robustness is reported under detection-based and adaptive defenses. The paper links code at github.com/tu-tuing/SlowBA. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2603.08316v3",
+        "sha256": "8fd62acc4f10680b4d81a584d2a4e2124ff19b24aa85270a2275eb722b61e31b",
+        "retrieved_at": "2026-10-20T04:22:22Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and the v3 HTML threat model, trigger injection and experimental settings (model, datasets, baselines, defenses). No code execution or result reproduction.",
+    "reviewed_sha256": "bc57e164ed0b4a7219fbb196af6c776b59a0d3dcbc69a516b8b914e39d430b0c",
+    "reviewed_at": "2026-10-20T04:30:07Z"
   }
 ]

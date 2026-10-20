@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+340 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -204,6 +204,7 @@ All entries in this section: android.
 | 2026‑04‑07 | [Gym-Anything: Turn any Software into an Agent Environment](https://arxiv.org/abs/2604.06126) | unspecified | Introduces Gym-Anything, where a setup agent configures software environments and an independent auditor checks the resulting evidence. CUA-World supplies long-horizon tasks across professional applications, with experiments on trajectory distillation and test-time auditing. |
 | 2026‑03‑25 | [CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents](https://arxiv.org/abs/2603.24440) | desktop | CUA-Suite combines continuous expert desktop demonstrations in VideoCUA with the UI-Vision evaluation benchmark and GroundCUA grounding data. Screen recordings, cursor traces and layered annotations support study of temporal behavior and professional software workflows. |
 | 2026‑03‑25 | [UI-Voyager: A Self-Evolving GUI Agent Learning via Failed Experience](https://arxiv.org/abs/2603.24533) | android | Introduces a two-stage mobile GUI learner that first co-evolves trajectories and policies through rejection fine-tuning. Group Relative Self-Distillation then uses successful rollout branches to provide step-level supervision for failed trajectories, evaluated on AndroidWorld. |
+| 2026‑03‑23 | [CAPTCHA Solving for Native GUI Agents: Automated Reasoning-Action Data Generation and Self-Corrective Training](https://arxiv.org/abs/2603.23559) | web, android, desktop | Trains ReCAP, Qwen3-VL-based native GUI agents, on about 150,000 solution and 10,000 self-correction trajectories from a seven-type dynamic CAPTCHA system, mixed with general GUI data to keep broader GUI skills. |
 | 2026‑03‑18 | [WebPII: Benchmarking Visual PII Detection for Computer-Use Agents](https://arxiv.org/abs/2603.17357) | web | WebPII provides synthetic e-commerce screenshots with fine-grained annotations for sensitive information, including partially filled forms and transaction identifiers. It also trains WebRedact to detect visual PII as a privacy component for computer-use agents. |
 | 2026‑03‑12 | [HATS: Hardness-Aware Trajectory Synthesis for GUI Agents](https://arxiv.org/abs/2603.12138) | unspecified | Introduces HATS, which directs GUI trajectory exploration toward semantically ambiguous actions and iteratively checks instruction-execution alignment. Feedback from trajectory refinement updates the exploration signal used to collect subsequent training examples. |
 | 2026‑03‑11 | [Safe and Scalable Web Agent Learning via Recreated Websites](https://arxiv.org/abs/2603.10505) | web | Introduces VeriEnv, which recreates websites as executable training environments and exposes internal state through a Python SDK for task generation and deterministic reward checks. Experiments examine web-agent learning across new and expanded site environments. |

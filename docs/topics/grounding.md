@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-374 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (247)](#papers)
 
 ## Benchmarks
 
@@ -249,6 +249,7 @@ All entries in this section: web.
 | 2026‑03‑27 | [GUIDE: Resolving Domain Bias in GUI Agents through Real-Time Web Video Retrieval and Plug-and-Play Annotation](https://arxiv.org/abs/2603.26266) | unspecified | GUIDE retrieves relevant software tutorials through subtitle-based video search, then infers planning and grounding knowledge from consecutive annotated keyframes. It inserts that knowledge into existing GUI-agent modules without parameter updates and evaluates the plug-in on OSWorld. |
 | 2026‑03‑27 | [Towards GUI Agents: Vision-Language Diffusion Models for GUI Grounding](https://arxiv.org/abs/2603.26211) | web, desktop | Adapts a discrete vision-language diffusion model to single-turn GUI action and bounding-box prediction, using a hybrid masking schedule for coordinate geometry. Experiments across web, desktop and mobile datasets examine grounding accuracy and inference tradeoffs. |
 | 2026‑03‑25 | [CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents](https://arxiv.org/abs/2603.24440) | desktop | CUA-Suite combines continuous expert desktop demonstrations in VideoCUA with the UI-Vision evaluation benchmark and GroundCUA grounding data. Screen recordings, cursor traces and layered annotations support study of temporal behavior and professional software workflows. |
+| 2026‑03‑23 | [CAPTCHA Solving for Native GUI Agents: Automated Reasoning-Action Data Generation and Self-Corrective Training](https://arxiv.org/abs/2603.23559) | web, android, desktop | Trains ReCAP, Qwen3-VL-based native GUI agents, on about 150,000 solution and 10,000 self-correction trajectories from a seven-type dynamic CAPTCHA system, mixed with general GUI data to keep broader GUI skills. |
 | 2026‑03‑20 | [MedSPOT: A Workflow-Aware Sequential Grounding Benchmark for Clinical GUI](https://arxiv.org/abs/2603.19993) | desktop | Benchmarks sequential target localization in clinical software workflows, emphasizing how early mistakes affect subsequent interaction steps. |
 | 2026‑03‑18 | [AdaZoom-GUI: Adaptive Zoom-based GUI Grounding with Instruction Refinement](https://arxiv.org/abs/2603.17441) | unspecified | Combines instruction rewriting with conditional second-stage zooming for small GUI targets. A grounding dataset and GRPO training support joint prediction of click coordinates and element bounding boxes. |
 | 2026‑03‑16 | [Visual Confused Deputy: Exploiting and Defending Perception Failures in Computer-Using Agents](https://arxiv.org/abs/2603.14707) | unspecified | Formalizes a visual confused-deputy failure in which a computer agent acts on a misperceived UI object. A separate guardrail checks both the visual target and the agent's action reasoning against deployment-specific knowledge before permitting execution. |

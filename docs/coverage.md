@@ -1,6 +1,6 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T04:09:58Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T05:19:44Z**. Generated from committed source receipts.
 
 - 3,193 resource records: 1,628 curated; 1,565 bibliographic metadata only.
 - 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
@@ -23,7 +23,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 20 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 101 | 345 |
+| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 9 | 2 | 101 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |

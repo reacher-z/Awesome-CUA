@@ -63659,14 +63659,14 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2606.02208",
     "environments": [
-      "unspecified"
+      "ios"
     ],
     "topics": [
       "screen-understanding",
       "data-generation"
     ],
     "scope": "core",
-    "summary": "Compares one-, two-, four- and eight-step MLLM prompting workflows for annotating eight UI element types on expert-labeled MUIAnno mobile screens; two-step decomposition gives the highest precision.",
+    "summary": "Compares one-, two-, four- and eight-step MLLM prompting workflows for annotating eight UI element types on expert-labeled MUIAnno iOS app screens; the two-step workflow is more precise than the other three.",
     "verify_terms": [
       "Context-Aware Workflow Decomposition for Automated Mobile UI Annotation"
     ],
@@ -63674,7 +63674,7 @@
       "https://arxiv.org/abs/2606.02208v1"
     ],
     "editorial_reviewed": true,
-    "notes": "The v1 full text selects Gemini 3.1 Pro for the main runs after comparing it with GPT-5.4, Gemma-4-31B-IT and Claude Opus 4.6. Its data statement points to the MUIAnno dataset on Hugging Face (atharparvezce/MUIAnno-Mobile-UI-Dataset). The paper does not name the mobile operating system of the screens. Results have not been independently reproduced.",
+    "notes": "The v1 full text selects Gemini 3.1 Pro for the main runs after comparing it with GPT-5.4, Gemma-4-31B-IT and Claude Opus 4.6. Its data statement points to the MUIAnno dataset on Hugging Face (atharparvezce/MUIAnno-Mobile-UI-Dataset), and its MUIAnno reference links atharparvezce/iOS-1K-Mobile-UI-Dataset, whose card at revision c616b870 describes 1,000 real-world iOS screens from App Store apps; the paper text itself does not name the operating system. Results have not been independently reproduced.",
     "additional_evidence": [
       {
         "role": "primary",
@@ -63686,10 +63686,21 @@
         "url": "https://arxiv.org/html/2606.02208v1",
         "sha256": "640959c478b626d386238ee02f6eccd9e2212ea1d596607f69c9e55974a3b877",
         "retrieved_at": "2026-10-20T04:00:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://huggingface.co/datasets/atharparvezce/iOS-1K-Mobile-UI-Dataset/raw/c616b870539e5731a68e413806a68aeefefef803/README.md",
+        "sha256": "932f55f042bf9b28e0e72ce5de9b7ed53abbac871a849acadaf95a9f18d5897b",
+        "retrieved_at": "2026-10-20T05:19:20Z"
       }
     ],
-    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the dataset, element classes, compared models and data statement. No code execution or result reproduction.",
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the dataset, element classes, compared models and data statement, then the pinned MUIAnno dataset card linked from the paper's reference list for the screen platform. No code execution or result reproduction.",
     "reviewed_sha256": "30c3a1f2d88ddbbc857732e87808e92b5190473f0b22f752da27c6e88dc54dbb",
-    "reviewed_at": "2026-10-20T04:09:58Z"
+    "reviewed_at": "2026-10-20T05:19:26Z"
   }
 ]

@@ -75,7 +75,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,193 条资源记录** · **1,628 条已审阅** · **2,733 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-20T04:09:58Z`。1,565 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-20T05:19:44Z`。1,565 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 133 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。136 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -90,7 +90,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [基准](docs/benchmarks.md) · **88** | [工具](docs/tools.md) · **20** |
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **623** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **308** · [iOS](docs/environments/ios.md) **21** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**按平台：** [Web](docs/environments/web.md) **623** · [Desktop](docs/environments/desktop.md) **322** · [Windows](docs/environments/windows.md) **63** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **49** · [Android](docs/environments/android.md) **308** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。

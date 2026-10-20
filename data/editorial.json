@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "LHAW: Controllable Underspecification for Long-Horizon Tasks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.10525",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "evaluation",
+      "long-horizon",
+      "data-generation"
+    ],
+    "scope": "adjacent",
+    "summary": "Removes goal, constraint, input or context details from long-horizon tasks, labels each variant by agent trials, and releases 285 variants from TheAgentCompany, SWE-Bench Pro and MCP-Atlas to study clarification.",
+    "verify_terms": [
+      "Controllable Underspecification for Long-Horizon Tasks"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.10525v2"
+    ],
+    "notes": "Adjacent: 85 of the 285 variants come from 13 TheAgentCompany ownCloud tasks run in an OpenHands-based harness, where the CodeAct baseline has bash, Python, browser and filesystem tools (Section 4.5, Appendix G); the other 200 are SWE-Bench Pro repository tasks and MCP-Atlas tool-calling tasks. Variants are classed as outcome-critical, divergent or benign from observed terminal-state divergence. Clarification goes through an ask_user tool answered by a user simulator hosted as an MCP server (Section 3.5). Evaluated models are Claude Opus 4.5, Claude Sonnet 4.5, Gemini 3 Pro, Gemini 3 Flash and GPT-5.2. The paper names github.com/scaleapi/lhaw and huggingface.co/ScaleAI/lhaw. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.10525v2",
+        "sha256": "5291fba048f086aef98c654b7f65988ee5208762d5a9618d0e7342ca1913ad95",
+        "retrieved_at": "2026-10-20T04:41:38Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML full text for task selection (Section 3.1), the taxonomy and pipeline (3.2-3.3), benchmark construction counts (3.4), the user simulator (3.5), the experimental setup and prompting ablation (4.1, 4.5) and the per-benchmark harnesses (Appendix G). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "627e204dcb63ed3006227169ff299cca81edcbb66e4292de9ec4b633ac4f5665",
+    "reviewed_at": "2026-10-20T04:41:53Z"
   }
 ]

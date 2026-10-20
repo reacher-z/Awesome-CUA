@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-232 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+233 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (181)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (18)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (182)](#papers)
 
 ## Benchmarks
 
@@ -142,6 +142,7 @@ All entries in this section: cross-platform.
 | 2026‑06‑22 | [ENVS: Environment-Native Verified Search for Long-Horizon GUI Agents](https://arxiv.org/abs/2606.22948) | desktop | ENVS branches over GUI actions in live desktop VMs, verifies successful leaves, and converts them into balanced step-level training supervision. It also introduces OSWorld-Noisy to test recovery from dynamic interruptions while retaining the underlying tasks. |
 | 2026‑06‑18 | [Automating SKILL.md Generation for Computer-Using Agents via Interaction Trajectory Mining](https://arxiv.org/abs/2606.20363) | unspecified | Segments and clusters GUI trajectories into inspectable skills, then trains a skill-aware policy from those annotations. Its diagnostic results distinguish readable source-domain clusters from reliable transfer and report limited or absent downstream gains. |
 | 2026‑06‑18 | [MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930) | android | MobileForge couples real-app exploration and generated tasks with hierarchical feedback for mobile-agent adaptation. Its optimizer turns trajectory outcomes, step feedback and corrective hints into contextualized GRPO updates, with evaluation on AndroidWorld and a GUI-only MobileWorld split. |
+| 2026‑06‑16 | [When Web Agents Finish but Still Fail: Reproducible Triggers and Trace Diagnostics for Parallel Web Exploration](https://arxiv.org/abs/2606.20724) | web | Parallel WebBench has 1,679 verified live-web records, including 350 human-verified multi-field tasks reached from root URLs, used to train GRPO web agents and diagnose search loops, early stops and synthesis collapse. |
 | 2026‑06‑12 | [VISTA: View-Consistent Self-Verified Training for GUI Grounding](https://arxiv.org/abs/2606.14579) | unspecified | VISTA forms GRPO comparison groups from target-preserving crops of the same GUI instance with exactly remapped target boxes. A conditional, advantage-weighted cross-view anchor supplies additional supervision without entering the group baseline, and evaluation includes view-consistency robustness. |
 | 2026‑06‑09 | [GUI-AC: Enhancing Continual Learning in GUI Agents](https://arxiv.org/abs/2606.10522) | unspecified | GUI-AC uses grounding certainty to adjust advantage weighting and policy-clipping bounds during continual reinforcement fine-tuning. Its mechanisms aim to suppress noisy confidence updates while retaining exploration under shifting GUI domains and resolutions. |
 | 2026‑06‑08 | [AliyunConsoleAgent: Training Web Agents in Real-World Cloud Environments via Distillation and Reinforcement Learning](https://arxiv.org/abs/2606.09447) | web | AliyunConsoleAgent trains browser agents to verify documented procedures against changing cloud-console UIs through trajectory distillation and online GRPO. Provisioned rollout environments and backend audit-log checks support training and outcome evaluation. |

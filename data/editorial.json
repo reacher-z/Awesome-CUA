@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "When Web Agents Finish but Still Fail: Reproducible Triggers and Trace Diagnostics for Parallel Web Exploration",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.20724",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "reinforcement-learning",
+      "data-generation"
+    ],
+    "summary": "Parallel WebBench has 1,679 verified live-web records, including 350 human-verified multi-field tasks reached from root URLs, used to train GRPO web agents and diagnose search loops, early stops and synthesis collapse.",
+    "verify_terms": [
+      "Reproducible Triggers and Trace Diagnostics"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.20724v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent web-information benchmark: agents navigate live websites from a root URL through text tools, either a WebWalker-style visit_page scaffold or a WebExplorer-style search and browse scaffold with Jina Reader-style page extraction, rather than a rendered browser. The 1,329 reconstructed records come from prior web-exploration QA data with link-chain-verified URL paths. Accuracy and element-wise F1 are judged by GPT-4.1-mini. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.20724v2",
+        "retrieved_at": "2026-10-20T03:58:22Z",
+        "sha256": "a272cb3be625321e6e82c833b5996d844aff040c9b87bb78ffa4b143a4617427",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 3 (benchmark construction), 4.1 (experimental setup) and Appendices D and E (construction and path verification).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "782b532ec3f888e8a87a6c48a79c301aaf157959342e423d5a1efd8a42c72b10",
+    "reviewed_at": "2026-10-20T04:10:27Z"
   }
 ]

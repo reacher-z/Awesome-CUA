@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.31154",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "PPT-Eval is a benchmark of 120 PowerPoint for the web tasks over 12 decks, run in a sandboxed Chromium session with screenshot observations and scored by task-specific rubrics that give partial credit.",
+    "verify_terms": [
+      "PPT-Eval: A Benchmark for Computer-Use Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.31154v1"
+    ],
+    "scope": "core",
+    "notes": "Each task opens an anonymous PowerPoint for the web editing link in Chromium inside an Ubuntu screenenv sandbox; agents act with their native mouse and keyboard action spaces under a 30-step budget. Rubric checks combine python-pptx structural diffs with Claude-4-Sonnet LLM/VLM judgments and penalize extraneous edits; the paper reports a Kendall tau-b of 0.77 against human judgments. Evaluated agents include Claude-4.5-Opus, Claude-4-Sonnet, OpenAI computer-use-preview, OpenCUA and Qwen3-VL, plus a Claude Code API baseline. The paper gives microsoft.github.io/ppteval as the benchmark location and lists ICML 2026 (PMLR 306) in its arXiv comments. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.31154v1",
+        "retrieved_at": "2026-10-20T04:00:48Z",
+        "sha256": "e6ca8d9722ab59a0b66ea896c23e4dabb6516562b5fce4addc7b7d987e99076d",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 3 (tasks, environment, file selection, task curation, rubric design), 4 (rubric meta-evaluation, agent benchmarking, human and API baselines) and 6 (conclusion).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a9adfd263821b270bd7c58d9cf03a0aeb1f1eb2049c56265b853eb5d1c0b2406",
+    "reviewed_at": "2026-10-20T04:09:02Z"
   }
 ]

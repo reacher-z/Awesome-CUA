@@ -63653,5 +63653,202 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Computer Agent Arena",
+    "kind": "benchmark",
+    "url": "https://github.com/xlang-ai/computer-agent-arena",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "summary": "Crowdsourced arena where users pit two computer-use agents against each other on Ubuntu or Windows VMs; the repository holds the voting frontend, setup presets and 2,010 verified battle sessions, not the backend.",
+    "verify_terms": [
+      "Computer Agent Arena"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/desktop_env/server/README.md"
+      },
+      {
+        "type": "evaluates",
+        "target_id": "url:57f17b7d0c18b2d7c8bf",
+        "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv"
+      },
+      {
+        "type": "evaluates",
+        "target_id": "github:bytedance/ui-tars",
+        "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv"
+      }
+    ],
+    "notes": "Platform code from the xlang-ai organization; the repository description and README name ICLR 2026. At the reviewed commit (the second of two) the tree holds the React/TypeScript frontend (dual-agent chat and evaluation panels, a bundled noVNC desktop viewer, trajectory player, ranking and Prolific pages), quick-setup presets for Chrome, LibreOffice and other apps, setup notes for OSWorld's in-VM server and for AWS, VMware and VirtualBox providers, backend/requirements.txt and backend/scripts/sessions_clean_filtered.csv. Although the README describes the full stack, the tree has no Python source: there is no backend/main.py, the server notes refer to main.py and pyxcursor.py files that are absent, and backend/agents is a git submodule pointing to xlang-ai/computer-agent-arena-hub, which the GitHub API did not return at review (404). The CSV has 2,010 verified two-agent sessions started between 2025-02-13 and 2025-05-15 (1,070 Windows, 940 Ubuntu; 653 distinct user IDs) with user-written task instructions, each agent's model and method, per-step feedback and the battle result (751 and 644 wins for the first and second agent, 615 ties). Agents in it are Claude 3.5 and 3.7 Sonnet computer use, OpenAI computer-use-preview, UI-TARS-1.5, a Qwen2.5-VL-72B agent, and GPT-4.1, GPT-4o, o3, o4-mini and Gemini models through a base agent. The frontend evaluation form asks for each agent's correctness (correct, partially correct, wrong) and a pairwise preference (A better, tie, B better, tie with both bad). The README shows an MIT badge and links a LICENSE file, but the tree has no license file. Not a fork, not archived; no release. Code was read, not run.",
+    "details": {
+      "availability": "Frontend source, setup presets and notes, and a CSV of verified battle sessions; the backend server and agent hub source are not in the repository; no release.",
+      "repository_revision": "4536036e8d0a3de9a0de9829c09f4a5916f73013",
+      "repository_tree_sha": "4c5ef474719e68fcf5e54820745a07a1e9b9e789",
+      "benchmark_protocol": {
+        "focus": [
+          "human pairwise preference between computer-use agents",
+          "open-ended user-written tasks"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "live Ubuntu or Windows virtual machine desktop shown to the user through VNC",
+          "agent-defined observations of that desktop"
+        ],
+        "actions": [
+          "agent-defined desktop actions"
+        ],
+        "evaluation": "After two agents attempt the same user task on separate virtual machines, the user rates each agent's correctness (correct, partially correct, wrong) and states a pairwise preference (A better, tie, B better, or tie with both bad); per-step feedback is also recorded. The README says the votes feed an ELO leaderboard; the backend that aggregates them is not in the repository.",
+        "counts": [
+          {
+            "value": 2010,
+            "unit": "verified two-agent battle sessions",
+            "qualifier": "exact",
+            "population": "backend/scripts/sessions_clean_filtered.csv (started 2025-02-13 to 2025-05-15)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv"
+          },
+          {
+            "value": 1070,
+            "unit": "verified two-agent battle sessions",
+            "qualifier": "exact",
+            "population": "Windows sessions in the CSV",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv"
+          },
+          {
+            "value": 940,
+            "unit": "verified two-agent battle sessions",
+            "qualifier": "exact",
+            "population": "Ubuntu sessions in the CSV",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv"
+          },
+          {
+            "value": 615,
+            "unit": "verified two-agent battle sessions",
+            "qualifier": "exact",
+            "population": "sessions whose battle_result is tie",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv"
+          }
+        ],
+        "notes": "Counts are rows of the released CSV, computed with Python's csv module; each row is one session with two agents and a distinct session ID. Agent observations and actions are defined by the agent implementations in the unreleased hub.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv",
+          "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/frontend/src/components/Arena/eval.tsx",
+          "https://api.github.com/repos/xlang-ai/computer-agent-arena/git/trees/4536036e8d0a3de9a0de9829c09f4a5916f73013?recursive=1",
+          "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/README.md"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README shows an MIT badge and links a LICENSE file, but the complete tree at the reviewed commit has no license file, so no grant is established.",
+        "evidence_urls": [
+          "https://api.github.com/repos/xlang-ai/computer-agent-arena/git/trees/4536036e8d0a3de9a0de9829c09f4a5916f73013?recursive=1"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability",
+          "details.benchmark_protocol",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/xlang-ai/computer-agent-arena/git/trees/4536036e8d0a3de9a0de9829c09f4a5916f73013?recursive=1",
+        "sha256": "1ee818ef657248aca717db0d900e681b9aa17fc4ec2ca8b3b7effe2da9dc2aca",
+        "retrieved_at": "2026-10-20T04:30:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/README.md",
+        "sha256": "00d3174a9b3e8e3a330dc6cec3b054310f64ec469b6b34d41f1f46b4279a72a2",
+        "retrieved_at": "2026-10-20T04:30:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/.gitmodules",
+        "sha256": "a972e48328679c1c89c08490e27b39c25ef7f138fc26122ad0d7f64283d1fb9a",
+        "retrieved_at": "2026-10-20T04:30:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/desktop_env/server/README.md",
+        "sha256": "af2b411ab7c09f148577223a71fb91dc82746b1928a82c6b6f91871b079b15b5",
+        "retrieved_at": "2026-10-20T04:30:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv",
+        "sha256": "f1c6dd44d44d45e31671174edb37aa0d02b28f84b2c494ae73caafdd64965dec",
+        "retrieved_at": "2026-10-20T04:30:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/frontend/src/components/Arena/eval.tsx",
+        "sha256": "6d4e406d0ff1d573480bd2bd864ef9b1326b11c6d671ee3690468b925201b8f1",
+        "retrieved_at": "2026-10-20T04:30:11Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "00d3174a9b3e8e3a330dc6cec3b054310f64ec469b6b34d41f1f46b4279a72a2",
+    "reviewed_at": "2026-10-20T04:31:10Z"
   }
 ]

@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+84 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
 
 ## Benchmarks
 
-All entries in this section: android.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Computer Agent Arena](https://github.com/xlang-ai/computer-agent-arena) | desktop, linux, windows | — | [2,010 verified two-agent battle sessions](https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/4536036e8d0a3de9a0de9829c09f4a5916f73013/backend/scripts/sessions_clean_filtered.csv) | — | Crowdsourced arena where users pit two computer-use agents against each other on Ubuntu or Windows VMs; the repository holds the voting frontend, setup presets and 2,010 verified battle sessions, not the backend. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/xlang-ai/computer-agent-arena/HEAD/README.md) |
+| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 
 ## Agents
 

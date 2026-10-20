@@ -63844,5 +63844,54 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "UFO3: Weaving the Digital Agent Galaxy",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.11332",
+    "summary": "Presents UFO3, which runs each request as an evolving task DAG across Windows GUI, Linux CLI and Android device agents, evaluated on NebulaBench, 55 cross-device tasks on five machines.",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "cross-app",
+      "tool-integration",
+      "robustness",
+      "evaluation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Weaving the Digital Agent Galaxy"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2511.11332v2"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ea22ff73d3caeec787e93002034f21ef87714939930510f701eb140bc9d347f6",
+    "reviewed_at": "2026-10-20T05:24:46Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "notes": "The WindowsAgent is UFO2 operating desktop applications through its GUI, and the LinuxAgent executes shell commands; an Android MobileAgent is implemented, but the NebulaBench setup uses one Windows 11 desktop and four Ubuntu machines. NebulaBench tasks are mostly logs, configuration, DevOps, data and GPU workloads, with five browsing tasks; all agents use GPT-5-Chat. The paper links code at github.com/microsoft/UFO. Reviewed against the v2 abstract and HTML full text (Sections 8.6, 10.1 and 10.2); results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2511.11332v2",
+        "sha256": "a6466bf0167057ad022744429e72e19547ccec911bd0d3e0ca3544be35acb976",
+        "retrieved_at": "2026-10-20T05:24:17Z"
+      }
+    ]
   }
 ]

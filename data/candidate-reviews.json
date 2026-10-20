@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:12379f1e44023d4b6276",
+    "url": "https://www.runcopycat.com",
+    "decision": "out_of_scope",
+    "reason": "runcopycat.com now serves CopyCat AI's insurance proposal builder, which turns carrier PDF quotes into branded broker proposals with source citations; the browser-automation agent product the discovery list describes is no longer offered there, and the current product does not operate GUIs.",
+    "reviewed_at": "2026-10-20T05:12:39Z",
+    "evidence": {
+      "url": "https://www.runcopycat.com",
+      "sha256": "74329b87106fdc2484bfd34ec019d2056ae27e45e80e1ef4443396e7ad39d506",
+      "retrieved_at": "2026-10-20T05:00:11Z"
+    }
   }
 ]

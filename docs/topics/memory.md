@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-165 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+166 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (145)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (146)](#papers)
 
 ## Benchmarks
 
@@ -125,6 +125,7 @@ All entries in this section: ios.
 | 2026‑03‑13 | [Adaptive Vision-Language Model Routing for Computer Use Agents](https://arxiv.org/abs/2603.12823) | unspecified | Adaptive VLM Routing estimates GUI-action difficulty and small-model confidence to select a model under a predicted reliability threshold. Grounding and agent-routing benchmarks assess the cost–accuracy trade-off, with prior interaction context used for warm agents. |
 | 2026‑03‑09 | [PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents](https://arxiv.org/abs/2603.08013) | unspecified | PIRA-Bench evaluates proactive intent recommendations from noisy GUI screenshot sequences containing interleaved tasks and user context. Its PIRF baseline combines memory and state tracking to maintain multiple task threads and identify opportunities to assist. |
 | 2026‑03‑09 | [SecAgent: Efficient Mobile GUI Agent with Semantic Context](https://arxiv.org/abs/2603.08533) | unspecified | Presents a Chinese mobile GUI dataset and navigation benchmark together with SecAgent, which compresses previous screenshots and actions into semantic summaries. The agent is trained with supervised and reinforcement fine-tuning to use this compact interaction context. |
+| 2026‑03‑07 | [Enhancing Web Agents with a Hierarchical Memory Tree](https://arxiv.org/abs/2603.07024) | web | Hierarchical Memory Tree abstracts web trajectories into intent, stage and action levels; a planner checks stage pre-conditions and an actor matches stored element descriptions. Evaluated on Mind2Web and WebArena. |
 | 2026‑02‑24 | [ActionEngine: From Reactive to Programmatic Web Agents via State Machine Memory](https://arxiv.org/abs/2602.20502) | web | ActionEngine explores web applications to build an updateable state-machine memory of GUI states, operations and transitions. It generates complete task programs from that memory, using reactive repair to handle changed interfaces or missing knowledge. |
 | 2026‑02‑19 | [Persona2Web: Benchmarking Personalized Web Agents for Contextual Reasoning with User History](https://arxiv.org/abs/2602.17003) | web | Persona2Web tests whether web agents can resolve ambiguous requests using preferences implicit in a user’s history. Its reasoning-aware evaluation compares agent architectures and history-access strategies on personalized tasks on the open web. |
 | 2026‑02‑18 | [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](https://arxiv.org/abs/2602.16313) | web | MemoryArena links tasks across sessions so that agents must distill earlier interaction experience and use it in later decisions. Its evaluation includes web navigation alongside planning, search and formal reasoning, testing memory through subsequent actions rather than recall alone. |

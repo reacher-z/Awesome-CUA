@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-294 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+295 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (211)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (212)](#papers)
 
 ## Benchmarks
 
@@ -213,6 +213,7 @@ All entries in this section: web.
 | 2026‑03‑23 | [Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos](https://arxiv.org/abs/2603.22529) | web | Ego2Web pairs first-person videos with online tasks that require agents to connect the user’s physical context to web actions. It also evaluates an automatic task judge against human judgments and analyzes failures in video understanding and web execution. |
 | 2026‑03‑20 | [ContractSkill: Repairable Contract-Based Skills for Multimodal Web Agents](https://arxiv.org/abs/2603.20340) | web | Turns draft web-agent skills into structured executable artifacts that support deterministic checks, fault localization and local repair. VisualWebArena and MiniWoB experiments examine execution and reuse within the same benchmark family. |
 | 2026‑03‑19 | [ClawTrap: A MITM-Based Red-Teaming Framework for Real-World OpenClaw Security Evaluation](https://arxiv.org/abs/2603.18762) | web | Presents a man-in-the-middle network red-teaming framework for evaluating autonomous OpenClaw agents under live traffic manipulation. |
+| 2026‑03‑07 | [Enhancing Web Agents with a Hierarchical Memory Tree](https://arxiv.org/abs/2603.07024) | web | Hierarchical Memory Tree abstracts web trajectories into intent, stage and action levels; a planner checks stage pre-conditions and an actor matches stored element descriptions. Evaluated on Mind2Web and WebArena. |
 | 2026‑03‑05 | [TimeWarp: Evaluating Web Agents by Revisiting the Past](https://arxiv.org/abs/2603.04949) | web | TimeWarp tests web agents across multiple versions of the same sites, varying visual design, frontend code and workflows. TimeTraj transfers plans across versions to collect training trajectories and study robustness to interface change. |
 | 2026‑03‑05 | [WebFactory: Automated Compression of Foundational Language Intelligence into Grounded Web Agents](https://arxiv.org/abs/2603.05044) | web | Introduces WebFactory, a GUI-agent training pipeline that synthesizes websites, generates tasks and trajectories, and trains with decomposed rewards. Offline and online transfer evaluations examine agents trained on the generated environments. |
 | 2026‑02‑28 | [Atomicity for Agents: Exposing, Exploiting, and Mitigating TOCTOU Vulnerabilities in Browser-Use Agents](https://arxiv.org/abs/2603.00476) | web | Identifies time-of-check to time-of-use (TOCTOU) race vulnerabilities when web pages mutate between agent planning and action execution. |

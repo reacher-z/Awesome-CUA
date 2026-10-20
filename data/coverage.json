@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-19T21:04:13Z",
+  "as_of_utc": "2026-10-20T04:09:39Z",
   "total_records": 3193,
-  "curated_records": 1627,
+  "curated_records": 1628,
   "bibliographic_records": 2733,
   "arxiv_active_records": 2720,
   "non_arxiv_bibliographic_records": 13,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 2856,
   "excluded_records": 136,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1566,
+  "metadata_only_records": 1565,
   "discovery_identifiers": 4244,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 380,
-    "web": 623,
+    "web": 624,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -288,7 +288,7 @@
       "linux": 18,
       "macos": 14,
       "unspecified": 344,
-      "web": 443,
+      "web": 444,
       "windows": 37
     },
     "product": {
@@ -768,7 +768,7 @@
       "indexed": 208,
       "indexed_resources": 208,
       "resolved_aliases": 0,
-      "curated": 157,
+      "curated": 158,
       "excluded": 0,
       "set_aside": 1,
       "unindexed": 2

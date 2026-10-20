@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "OpenWebRL: Demystifying Online Multi-turn Reinforcement Learning for Visual Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.02031",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "web-navigation",
+      "interaction-history"
+    ],
+    "scope": "core",
+    "summary": "Presents OpenWebRL, an open pipeline for online multi-turn RL of screenshot-based web agents on live sites, training OpenWebRL-4B from 0.4K warm-start trajectories and 2.2K tasks; tested on Online-Mind2Web and DeepShop.",
+    "verify_terms": [
+      "OpenWebRL: Demystifying Online Multi-turn"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.02031v2"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v2 full text starts from Qwen3-VL-4B, warm-starts it with trajectories that Qwen3-VL-235B-A22B-Thinking rolled out on WebGym-derived tasks, keeps only recent screenshots while carrying older steps as text, and also reports WebVoyager. It links the project page openwebrl.github.io and states that training data, models and code will be released. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2606.02031v2",
+        "sha256": "c8e68032edd2b245e631504ba4dbbe60bac424381b382c9140142a1607db1bcd",
+        "retrieved_at": "2026-10-20T04:00:49Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML for the observation format, base and teacher models, data source, benchmarks and release statement. No code execution or result reproduction.",
+    "reviewed_sha256": "6ec1ce3c29f2f44292ed3ae26ea272395c90e1cd781c95c8a8822faec20ed73a",
+    "reviewed_at": "2026-10-20T04:09:40Z"
   }
 ]

@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "SkillHarness: Harnessing Safe Skills for Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.20636",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "memory",
+      "robustness"
+    ],
+    "scope": "core",
+    "summary": "Treats skill learning and reuse by computer-use agents as a safety-constrained process, with skill boundaries from multi-source signals and selective skill reuse; tested on OS-Harm, WASP, ST-WebAgentBench and OpenApps.",
+    "verify_terms": [
+      "SkillHarness: Harnessing Safe Skills"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.20636v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Marked work in progress in the arXiv comments. The v1 full text uses GPT-5.4 for skill learning and GPT-5.4-mini, Qwen3.6 models, OpenCUA-7B and MAI-UI-8B for execution; it runs ST-WebAgentBench on GitLab and SuiteCRM and WASP on GitLab and Reddit, and perturbs OpenApps with pop-ups and misleading labels. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2606.20636v1",
+        "sha256": "f76b2a356645ff832bf18fcd8bdf560c9061c6f9c2916467e06f8d3dbf7a7ae3",
+        "retrieved_at": "2026-10-20T04:00:49Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the four benchmarks, their sites, the perturbations and the evaluated models. No code execution or result reproduction.",
+    "reviewed_sha256": "756e51e98342aafa7fcb9d49c378923cb1d342a1e0542387c68a3750bf13d2df",
+    "reviewed_at": "2026-10-20T04:09:10Z"
   }
 ]

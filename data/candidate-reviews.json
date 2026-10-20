@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d785ac06ca5229f9e753",
+    "url": "https://www.context.dev",
+    "decision": "out_of_scope",
+    "reason": "Context.dev is a commercial web data API whose endpoints scrape a URL into Markdown, JSON or screenshots, search the web, crawl sites in batches, answer questions with sources and watch pages for changes. Its optional pre-capture browser actions only click, scroll or wait to load content, so it is retrieval infrastructure rather than an agent, environment or tool for operating interfaces.",
+    "reviewed_at": "2026-10-20T05:10:25Z",
+    "evidence": {
+      "url": "https://www.context.dev",
+      "sha256": "96303104a9dc80b3446ac946d5cfbccc6b5413bad7e58766e72b3508c4a7771d",
+      "retrieved_at": "2026-10-20T04:31:41Z"
+    }
   }
 ]

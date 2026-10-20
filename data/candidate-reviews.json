@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f714a2ad3e251e5794f4",
+    "url": "https://techcrunch.com/2025/03/03/opera-announces-a-new-agentic-feature-for-its-browser",
+    "decision": "out_of_scope",
+    "reason": "A 3 March 2025 TechCrunch news item by Ivan Mehta reporting Opera's announcement of Browser Operator, a preview agent that completes tasks on websites inside the user's own browser, based on Opera's demo video and claims. It is third-party press coverage, not an agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-20T04:21:57Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251128192712id_/https://techcrunch.com/2025/03/03/opera-announces-a-new-agentic-feature-for-its-browser/",
+      "sha256": "7b70ff6d0c0ed0b59d71f7e3aee4e89d59484a43bf66f3f8552e10d6ae054a6c",
+      "retrieved_at": "2026-10-19T08:50:08Z"
+    }
   }
 ]

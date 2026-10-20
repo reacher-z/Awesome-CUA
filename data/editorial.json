@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Read More, Think More: Revisiting Observation Reduction for Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.01535",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "web-navigation",
+      "interaction-history",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Compares HTML, accessibility-tree and screenshot observations for web agents on 330 WorkArena L1 tasks across models and thinking budgets, and tests observation history with a token-efficient diff representation.",
+    "verify_terms": [
+      "Revisiting Observation Reduction for Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.01535v1"
+    ],
+    "notes": "Single-benchmark study on WorkArena L1 (ServiceNow; 33 task types with 10 seeds each) run with AgentLab. Models include Claude Sonnet 4.6, GPT-5.1, o3-mini and Gemini 2.5 Flash alongside open gpt-oss, Qwen3-VL and Llama 3.1 models. The advantage of raw HTML is reported as conditional on model capability and thinking-token budget rather than general. The v1 text names no code release. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.01535v1",
+        "sha256": "d2302133143caffad522659e3792b8049f5eb745dd2b5c2c60220f45460394d8",
+        "retrieved_at": "2026-10-20T04:22:12Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML full text for the problem setting (Section 2), experimental setup and models (3.1), observation, grounding-error and history results (3.2-3.4). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9b06acc69aaeb0a40bd45639b37601a34b2ec219471d3114a4a74f500e920b41",
+    "reviewed_at": "2026-10-20T04:22:27Z"
   }
 ]

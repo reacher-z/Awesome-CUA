@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (141)](#papers)
 
 ## Benchmarks
 
@@ -106,6 +106,7 @@ All entries in this section: desktop.
 | 2026‑04‑27 | [OS-SPEAR: A Toolkit for the Safety, Performance,Efficiency, and Robustness Analysis of OS Agents](https://arxiv.org/abs/2604.24348) | unspecified | Provides an evaluation toolkit for joint safety, efficiency, and multimodal robustness analysis of operating-system GUI agents. |
 | 2026‑04‑15 | [UI-Zoomer: Uncertainty-Driven Adaptive Zoom-In for GUI Grounding](https://arxiv.org/abs/2604.14113) | unspecified | Introduces UI-Zoomer, a training-free grounding method that uses candidate agreement and token confidence to decide when to crop and retry. Prediction variance determines a separate crop radius for each uncertain interface target. |
 | 2026‑04‑08 | [Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions](https://arxiv.org/abs/2604.07277) | android | Introduces Android Coach, which uses a learned critic to evaluate multiple candidate actions at each observed emulator state. Process rewards and a group-wise advantage estimator support online training, evaluated on AndroidLab and AndroidWorld. |
+| 2026‑04‑02 | [Read More, Think More: Revisiting Observation Reduction for Web Agents](https://arxiv.org/abs/2604.01535) | web | Compares HTML, accessibility-tree and screenshot observations for web agents on 330 WorkArena L1 tasks across models and thinking budgets, and tests observation history with a token-efficient diff representation. |
 | 2026‑04‑01 | [PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding](https://arxiv.org/abs/2604.00886) | unspecified | PixelPrune removes pixel-redundant patches before the vision encoder, reducing both encoding and downstream language-model work. The training-free method evaluates lossless and controlled-lossy compression on document and GUI tasks. |
 | 2026‑03‑30 | [MolmoPoint: Better Pointing for VLMs with Grounding Tokens](https://arxiv.org/abs/2603.28069) | unspecified | MolmoPoint replaces textual coordinate generation with pointing tokens that select visual regions and refine them through subpatches. The general image/video method includes GUI-pointing evaluation on ScreenSpotPro alongside other visual grounding tasks. |
 | 2026‑03‑27 | [Towards GUI Agents: Vision-Language Diffusion Models for GUI Grounding](https://arxiv.org/abs/2603.26211) | web, desktop | Adapts a discrete vision-language diffusion model to single-turn GUI action and bounding-box prediction, using a hybrid masking schedule for coordinate geometry. Experiments across web, desktop and mobile datasets examine grounding accuracy and inference tradeoffs. |

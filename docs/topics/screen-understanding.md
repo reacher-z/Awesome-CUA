@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
 
 ## Benchmarks
 
@@ -135,6 +135,7 @@ All entries in this section: cross-platform.
 | 2026‑04‑20 | [Do LLMs Need to See Everything? A Benchmark and Study of Failures in LLM-driven Smartphone Automation using Screentext vs. Screenshots](https://arxiv.org/abs/2604.17817) | android | DailyDroid compares text-only and text-plus-screenshot agents on everyday Android tasks across multiple apps and difficulty levels. Its failure analysis examines accessibility, observation modality and agent/application behavior. |
 | 2026‑04‑14 | [PrecisionCUA: Iterative Visual Refinement for Pixel-Precise Cursor Grounding in Code Editors](https://arxiv.org/abs/2604.13019) | unspecified | Studies iterative cursor grounding in dense code-editor interfaces, using visual feedback from earlier attempts to correct displacement. PrecisionCUA evaluates this closed-loop process across multiple model families on coding-interface tasks. |
 | 2026‑04‑08 | [What's Missing in Screen-to-Action? Towards a UI-in-the-Loop Paradigm for Multimodal GUI Reasoning](https://arxiv.org/abs/2604.06995) | unspecified | Introduces UILoop, which inserts explicit UI-element localization, function and usage reasoning between screen observation and action. UI Comprehension-Bench evaluates these element-level capabilities with three metrics. |
+| 2026‑04‑02 | [Read More, Think More: Revisiting Observation Reduction for Web Agents](https://arxiv.org/abs/2604.01535) | web | Compares HTML, accessibility-tree and screenshot observations for web agents on 330 WorkArena L1 tasks across models and thinking budgets, and tests observation history with a token-efficient diff representation. |
 | 2026‑04‑01 | [PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding](https://arxiv.org/abs/2604.00886) | unspecified | PixelPrune removes pixel-redundant patches before the vision encoder, reducing both encoding and downstream language-model work. The training-free method evaluates lossless and controlled-lossy compression on document and GUI tasks. |
 | 2026‑03‑30 | [MolmoPoint: Better Pointing for VLMs with Grounding Tokens](https://arxiv.org/abs/2603.28069) | unspecified | MolmoPoint replaces textual coordinate generation with pointing tokens that select visual regions and refine them through subpatches. The general image/video method includes GUI-pointing evaluation on ScreenSpotPro alongside other visual grounding tasks. |
 | 2026‑03‑27 | [Where and How to Prune: An Empirical Study of Visual Token Pruning for GUI Agent Navigation](https://arxiv.org/abs/2603.26041) | unspecified | Studies visual token pruning for GUI navigation, separating reusable screenshot encoder embeddings from later language-model computation. The analysis examines foreground-background token allocation and spatial coverage when pruning historical screenshots. |

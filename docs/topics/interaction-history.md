@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-47 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Papers (46)](#papers)
+**Contents:** [Models (1)](#models) · [Papers (47)](#papers)
 
 ## Models
 
@@ -39,6 +39,7 @@ All entries in this section: android, desktop.
 | 2026‑05‑12 | [LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues](https://arxiv.org/abs/2605.12493) | web | LongMemEval-V2 asks memory systems to recover environment knowledge from long web-agent histories for question answering. Its AgentRunbook variants contrast indexed knowledge pools with coding-agent retrieval from stored trajectory files. |
 | 2026‑05‑11 | [ReVision: Scaling Computer-Use Agents via Temporal Visual Redundancy Reduction](https://arxiv.org/abs/2605.11212) | desktop, web | Trains GUI agents with a learned selector that removes repeated visual patches across consecutive screenshots while preserving spatial structure. ReVision evaluates this history representation on OSWorld, WebTailBench and AgentNetBench. |
 | 2026‑04‑29 | [Step-level Optimization for Efficient Computer-use Agents](https://arxiv.org/abs/2604.27151) | unspecified | Proposes a step-level model cascade that runs a smaller computer-use policy until learned monitors flag stalled progress or semantic drift. Separate history-based stuck detection and milestone checks determine when to escalate for recovery or verification without retraining the larger model. |
+| 2026‑04‑02 | [Read More, Think More: Revisiting Observation Reduction for Web Agents](https://arxiv.org/abs/2604.01535) | web | Compares HTML, accessibility-tree and screenshot observations for web agents on 330 WorkArena L1 tasks across models and thinking budgets, and tests observation history with a token-efficient diff representation. |
 | 2026‑03‑27 | [Where and How to Prune: An Empirical Study of Visual Token Pruning for GUI Agent Navigation](https://arxiv.org/abs/2603.26041) | unspecified | Studies visual token pruning for GUI navigation, separating reusable screenshot encoder embeddings from later language-model computation. The analysis examines foreground-background token allocation and spatial coverage when pruning historical screenshots. |
 | 2026‑02‑18 | [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](https://arxiv.org/abs/2602.16313) | web | MemoryArena links tasks across sessions so that agents must distill earlier interaction experience and use it in later decisions. Its evaluation includes web navigation alongside planning, search and formal reasoning, testing memory through subsequent actions rather than recall alone. |
 | 2026‑01‑14 | [Compress to Focus: Efficient Coordinate Compression for Policy Optimization in Multi-Turn GUI Agents](https://arxiv.org/abs/2601.11631) | unspecified | CCPO couples GUI policy optimization with coordinate-guided compression of past visual observations. It aggregates targets across rollouts to focus retained context and uses distance-based advantages to train grounding and compression together. |

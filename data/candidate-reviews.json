@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:aaf62a374517dcb7151d",
+    "url": "https://www.sentienceapi.com",
+    "decision": "alias",
+    "target_id": "url:4ee15c39dc38f230ad58",
+    "reason": "Former domain of Predicate Systems, which brands itself 'formerly SentienceAPI': www.sentienceapi.com redirects (301, then 308) to predicatesystems.ai and returns the same home page bytes (sha256 36c1848163bd)."
   }
 ]

@@ -63844,5 +63844,52 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agent-Dice: Disentangling Knowledge Updates via Geometric Consensus for Agent Continual Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.03641",
+    "summary": "Proposes Agent-Dice, parameter fusion for agent continual learning that prunes conflicting update directions by geometric consensus and reweights shared ones by curvature, evaluated on Android GUI and tool-use data.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "imitation-learning",
+      "mobile-navigation",
+      "action-prediction"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "Agent-Dice: Disentangling"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.03641v4"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent: the method addresses agent continual learning in general. Its GUI experiments fine-tune OS-Atlas-Pro-7B and Qwen3-VL-8B in sequence on AITZ, AndroidControl and GUI-Odyssey and report offline action-type, step-success and trajectory-success rates; its tool-use experiments use ToolACE subsets with Qwen3-8B and Llama-3.1-8B. No online device evaluation is reported. The paper links code at github.com/Wuzheng02/Agent-Dice. Results have not been reproduced. Basis: exact-version abstract page and HTML sections 4.1 Implementation, Tables 1-2, 5.4 and Appendix B.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2601.03641v4",
+        "retrieved_at": "2026-10-20T04:51:19Z",
+        "sha256": "9e6528c253fb28fab296495d4cf014c1d4ef4ced8be4fcdc3a0e8b1ba485b65a"
+      }
+    ],
+    "reviewed_sha256": "448a4f3cf92f56b8e50cf96bde27332f255168a63b63002444acf2670150ed85",
+    "reviewed_at": "2026-10-20T04:51:41Z"
   }
 ]

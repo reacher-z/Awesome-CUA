@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Optimizing Agentic Workflows using Meta-tools",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.22037",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "workflow",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Proposes Agent Workflow Optimization, which mines recurring tool-call sequences from agent traces and merges them into deterministic meta-tools, cutting LLM calls on VisualWebArena and AppWorld.",
+    "verify_terms": [
+      "Optimizing Agentic Workflows using Meta-tools"
+    ],
+    "scope": "adjacent",
+    "notes": "On VisualWebArena (Reddit, Classifieds and Shopping) the meta-tools bundle the click, type and scroll actions of the benchmark's tool-calling agent into search, comment-posting and review operations; on AppWorld they merge API calls of the coding-agent configuration. With GPT-5.1 and Claude Sonnet 4.5, reported LLM-call reductions are 5.6% to 10.2% on VisualWebArena and 7.2% to 11.9% on AppWorld, with GPT-OSS 120B results in an appendix. The paper states that AWO is released as open source, with the location removed for double-blind review. Results were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.22037v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.22037v2",
+        "retrieved_at": "2026-10-20T04:55:16Z",
+        "sha256": "cafc3f20e0a6172485559f2a6078507f8d61ab036a51a63b7b1f7329e4d7fc5a",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML sections 1 (introduction), 4 (setup, benchmarks and meta-tool identification), 5 (results) and Appendix A.2 (VisualWebArena meta-tools).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "86fb46613a5936238368d2e2605ddec6682d276edcde84ec3819709d39897a2d",
+    "reviewed_at": "2026-10-20T04:55:18Z"
   }
 ]

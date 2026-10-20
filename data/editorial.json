@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Genesis: Evolving Attack Strategies for LLM Web Agent Red-Teaming",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.18314",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Proposes Genesis, a red-teaming framework that evolves web-page prompt injections with a genetic algorithm and a growing strategy library, tested against SeeAct and WebExperT on 600 Mind2Web tasks.",
+    "verify_terms": [
+      "Genesis: Evolving Attack Strategies"
+    ],
+    "scope": "core",
+    "notes": "Following AdvAgent, the authors take 840 Mind2Web tasks from the Finance, Medical, Housing and Cooking domains (240 for building the strategy library, 600 for testing). Each injection is inserted into the page HTML, the modified page is rendered to a screenshot, and success means the agent's next action matches a targeted adversarial action within 10 attempts. Target agents run on GPT-4o, Gemini-2.5-Flash and GPT-5 backends; baselines include GCG, I-GCG, AgentAttack, InjecAttack, EIA and AdvAgent. The comment field states ICME 2026 acceptance. Code is linked at github.com/CjangCjengh/web_agent_attack and is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections I-V, Tables I-III and the experimental setup.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.18314v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.18314v2",
+        "retrieved_at": "2026-10-20T07:33:42Z",
+        "sha256": "4e104c3a01baa4738bc9cb4ca4a454353fc961c40360b2ffa4fef1f860a424b6",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fa678a7b491144818ff558603c528c887217857a35689d63d9cf7d7c896cd5f2",
+    "reviewed_at": "2026-10-20T07:34:03Z"
   }
 ]

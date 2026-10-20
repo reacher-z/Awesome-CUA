@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "UniACE: A Unified Framework for Evaluating LLM Agentic Capabilities",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.27898",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "efficiency"
+    ],
+    "summary": "UniACE re-hosts 7 agent benchmarks, including AgentBench web tasks and BrowseComp, as instruction-tool-environment triplets run by one shared harness in isolated runtimes with optional offline web snapshots.",
+    "verify_terms": [
+      "UniACE: A Unified Framework for Evaluating"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.27898v3"
+    ],
+    "scope": "adjacent",
+    "notes": "Reviewed against the v3 abstract and HTML full text (Sections 3 and 4, Appendix H). The migrated benchmarks are AgentBench, BFCL, tau-bench, tau2-bench, BrowseComp, MultiAgentBench and Agent-SafetyBench, run with 15 models. The web component is a minority of the 24 domains: AgentBench Web Browsing keeps Mind2Web-derived tasks over local HTML snapshots with the original tool logic, AgentBench Web Shopping replaces browser interaction with product search and selection tools, and BrowseComp and BFCL Web Search use search and page-fetch tools, with crawled snapshots in offline mode. The paper names code at github.com/whfeLingYu/A-Unified-Framework-for-the-Evaluation-of-LLM-Agentic-Capabilities and data at huggingface.co/datasets/whfeLingYu/Unified_Agent_Framework. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.27898v3",
+        "sha256": "70bdabbc6393f4e664f7e1c964d77c910b6cde6cfdc0f78a2b21a35a1ccfaec8",
+        "retrieved_at": "2026-10-20T04:01:14Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9f89f057fa76f088a37940e3a9fabc172072a4535c76616fd793d17d8ceae68c",
+    "reviewed_at": "2026-10-20T04:14:13Z"
   }
 ]

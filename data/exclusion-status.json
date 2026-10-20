@@ -2203,7 +2203,7 @@
       "url": "https://arxiv.org/abs/2607.02032",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract presents PACE, which selects small subsets of non-agentic benchmark instances and fits a regression that predicts model scores on costly agentic benchmarks, yielding PACE-Bench. Per the full text, its four targets are GAIA, SWE-Bench Verified, SWE-Bench Multimodal and SWT-Bench run with OpenHands, and the paper leaves browser-based or embodied agent benchmarks to future work, so this evaluation-cost study is outside the computer-use scope.",
+      "reason": "The abstract presents PACE, which selects small subsets of non-agentic benchmark instances and fits a regression that predicts model scores on costly agentic benchmarks, yielding PACE-Bench. Per the full text, its four targets are GAIA, which the paper calls browser-based question answering, SWE-Bench Verified, SWE-Bench Multimodal and SWT-Bench, with target scores taken from the OpenHands Index. PACE regresses those scores from non-agentic instances and analyzes no agent actions on web pages, so this evaluation-cost study is outside the computer-use scope.",
       "reviewed_at": "2026-10-20T03:57:12Z",
       "metadata_fingerprint": "e0caf3e5a5e07a6fa8dc740ef18b939159ac9043e0754e6778b73d630e56e8a3",
       "evidence": {

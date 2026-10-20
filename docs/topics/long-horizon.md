@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-101 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+102 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (90)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -91,6 +91,7 @@ All entries in this section: web.
 | 2026‑04‑27 | [Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks](https://arxiv.org/abs/2604.24964) | web | Introduces Odysseys, a live-web benchmark of long, multi-site tasks derived from browsing sessions. Graded task rubrics and a rubric-score-per-step measure evaluate both partial progress and trajectory efficiency. |
 | 2026‑04‑20 | [WebUncertainty: Dual-Level Uncertainty Driven Planning and Reasoning For Autonomous Web Agent](https://arxiv.org/abs/2604.17821) | web | WebUncertainty adapts planning mode to task uncertainty and guides action-level tree search with confidence-derived uncertainty estimates. Its evaluations examine autonomous execution of dynamic, long-horizon web tasks on WebArena and WebVoyager. |
 | 2026‑04‑15 | [UI-Copilot: Advancing Long-Horizon GUI Automation via Tool-Integrated Policy Optimization](https://arxiv.org/abs/2604.13822) | android | UI-Copilot separates GUI execution from on-demand memory retrieval and numerical assistance. Its training procedure treats tool selection and multi-turn task execution as distinct optimization targets while keeping persistent observations outside transient context. |
+| 2026‑04‑13 | [CocoaBench: Evaluating Unified Digital Agents in the Wild](https://arxiv.org/abs/2604.11201) | web | CocoaBench has 153 human-authored long-horizon tasks that require combining vision, search and coding, each scored by an automatic evaluation function, plus Cocoa-Agent, a shared browser-and-shell scaffold. |
 | 2026‑04‑07 | [Gym-Anything: Turn any Software into an Agent Environment](https://arxiv.org/abs/2604.06126) | unspecified | Introduces Gym-Anything, where a setup agent configures software environments and an independent auditor checks the resulting evidence. CUA-World supplies long-horizon tasks across professional applications, with experiments on trajectory distillation and test-time auditing. |
 | 2026‑04‑06 | [GUIDE: Interpretable GUI Agent Evaluation via Hierarchical Diagnosis](https://arxiv.org/abs/2604.04399) | web, android | GUIDE evaluates GUI trajectories by segmenting them into subtasks, diagnosing each segment, and aggregating structured findings into a task verdict. It tests diagnostic judgments on e-commerce, web-agent and Android-control traces rather than relying on one holistic trajectory score. |
 | 2026‑04‑05 | [The Art of Building Verifiers for Computer Use Agents](https://arxiv.org/abs/2604.06240) | web | Describes a web-trajectory verifier built around structured rubrics, separate process and outcome judgments, and explicit treatment of uncontrollable failures. CUAVerifierBench supplies human labels for evaluating these choices and screenshot-based context management. |

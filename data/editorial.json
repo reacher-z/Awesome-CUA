@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "CocoaBench: Evaluating Unified Digital Agents in the Wild",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.11201",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "tool-integration"
+    ],
+    "summary": "CocoaBench has 153 human-authored long-horizon tasks that require combining vision, search and coding, each scored by an automatic evaluation function, plus Cocoa-Agent, a shared browser-and-shell scaffold.",
+    "verify_terms": [
+      "CocoaBench: Evaluating Unified"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.11201v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent unified digital-agent benchmark. Per the v2 HTML full text, tasks are specified only by an instruction and an output check, so any agent stack can run them; Cocoa-Agent runs in the AIO Sandbox container with browser tools at both DOM level and screenshot-based GUI control, plus terminal, file and code execution. Compared systems also include ChatGPT Agent Mode, OpenClaw, Codex, Claude Code and OpenAI Deep Research, and the best reaches 45.1% success. Under Cocoa-Agent, code and shell execution account for the largest share of tool calls, followed by browser actions. The paper names a project page at https://cocoabench.github.io/. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.11201v2",
+        "sha256": "80cab8e95bc9aa65988faecd1e9a70feddc4ecf4ed63e4c3915b8683e60a0f08",
+        "retrieved_at": "2026-10-20T04:27:46Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e73088126381f7856e611d481ccc20704c1a9f0bfaed05a4107f0a6de9c66e1b",
+    "reviewed_at": "2026-10-20T04:27:47Z"
   }
 ]

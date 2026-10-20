@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-131 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+132 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (5)](#agents) · [Frameworks (8)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
 
 ## Benchmarks
 
@@ -133,6 +133,7 @@ All entries in this section: unspecified.
 | 2026‑04‑15 | [AgentClick: A Skill-Based Human-in-the-Loop Review Layer for Terminal AI Agents](https://arxiv.org/abs/2604.16520) | web | AgentClick gives terminal-based agents a browser review interface for plans, drafts, execution traces and editable memory. A local server and skill plugin let users inspect proposed actions and provide structured feedback. |
 | 2026‑04‑15 | [UI-Copilot: Advancing Long-Horizon GUI Automation via Tool-Integrated Policy Optimization](https://arxiv.org/abs/2604.13822) | android | UI-Copilot separates GUI execution from on-demand memory retrieval and numerical assistance. Its training procedure treats tool selection and multi-turn task execution as distinct optimization targets while keeping persistent observations outside transient context. |
 | 2026‑04‑13 | [ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents](https://arxiv.org/abs/2604.11784) | android, harmonyos, ios | Presents ClawGUI, a shared harness for GUI-agent reinforcement learning, benchmark evaluation and deployment on mobile devices. It combines parallel virtual and physical environments, process rewards, and hybrid CLI-GUI execution with persistent memory. |
+| 2026‑04‑13 | [CocoaBench: Evaluating Unified Digital Agents in the Wild](https://arxiv.org/abs/2604.11201) | web | CocoaBench has 153 human-authored long-horizon tasks that require combining vision, search and coding, each scored by an automatic evaluation function, plus Cocoa-Agent, a shared browser-and-shell scaffold. |
 | 2026‑04‑10 | [EE-MCP: Self-Evolving MCP-GUI Agents via Automated Environment Generation and Experience Learning](https://arxiv.org/abs/2604.09815) | desktop | EE-MCP studies application-dependent mixtures of GUI actions and MCP calls using generated environments, trajectory collection and filtered training. An experience bank extracts rules from trajectory comparisons for inference-time improvement, distinct from model distillation. |
 | 2026‑03‑11 | [Terminal Is All You Need: Design Properties for Human-AI Agent Collaboration](https://arxiv.org/abs/2603.10664) | unspecified | This position paper derives interface design principles from terminal-based human-agent collaboration: representational compatibility, transparent actions and low participation barriers. It argues that graphical and other agent-facing modalities should provide these properties explicitly. |
 | 2026‑02‑16 | [EmbeWebAgent: Embedding Web Agents into Any Customized UI](https://arxiv.org/abs/2602.14865) | web | EmbeWebAgent embeds agent access into existing web applications through frontend observations and a page-specific function registry. Its workflow combines GUI primitives, composite actions and MCP tools, demonstrated in a live interface. |

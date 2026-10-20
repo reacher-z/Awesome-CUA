@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cf4cb76515477302fc84",
+    "url": "https://www.openinterpreter.com",
+    "decision": "alias",
+    "target_id": "github:openinterpreter/open-interpreter",
+    "reason": "www host of the Open Interpreter project website, where openinterpreter.com redirects; the indexed repository names openinterpreter.com as its homepage and its README links the blog post, install guide and docs on this host."
   }
 ]

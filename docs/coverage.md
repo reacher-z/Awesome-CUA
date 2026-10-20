@@ -1,8 +1,8 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T05:52:01Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T08:20:18Z**. Generated from committed source receipts.
 
-- 3,209 resource records: 1,629 curated; 1,580 bibliographic metadata only.
+- 3,210 resource records: 1,630 curated; 1,580 bibliographic metadata only.
 - 2,747 paper and survey records, including 2,734 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,870 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,260 discovery identifiers; 906 remain unresolved after accounting for scope exclusions and for 98 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
@@ -26,7 +26,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 101 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
-| [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
+| [tool](tools.md) | 11 | 4 | 3 | 3 | 2 | 5 | 2 | · | 1 | 2 |
 
 ## Source snapshot coverage
 
@@ -142,7 +142,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 183 |
+| code | 184 |
 | data | 61 |
 | weights | 56 |
 | document | 0 |

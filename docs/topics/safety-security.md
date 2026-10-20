@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (2)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
 
 ## Benchmarks
 
@@ -43,11 +43,10 @@ All entries in this section: android.
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | web | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| [DSH Computer Use](https://github.com/Anionex/dsh-computer-use) | desktop, macos | — | code MIT | DeepSeek Harness bundle for native macOS app control: fresh Accessibility observations with target handles, AXPress and value setting first, then keyboard and pointer events posted to the target process and window. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/Anionex/dsh-computer-use/HEAD/README.md) |
 
 ## Surveys
 

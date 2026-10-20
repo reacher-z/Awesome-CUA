@@ -63844,5 +63844,148 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "DSH Computer Use",
+    "kind": "tool",
+    "url": "https://github.com/Anionex/dsh-computer-use",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "safety-security"
+    ],
+    "summary": "DeepSeek Harness bundle for native macOS app control: fresh Accessibility observations with target handles, AXPress and value setting first, then keyboard and pointer events posted to the target process and window.",
+    "scope": "core",
+    "verify_terms": [
+      "DSH Computer Use"
+    ],
+    "aliases": [
+      "@anionex/dsh-computer-use"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Published on npm as @anionex/dsh-computer-use (package.json 0.3.4, tagged v0.3.4 at the inspected commit) and installed into DeepSeek Harness Web or Headless profiles; the bundle registers only computer_use_activate until its Skill is loaded, then exposes 11 computer_* tools (list_apps, observe, click, set_value, type_text, press_key, scroll, drag, perform_action, wait, confirm). A committed ad-hoc-signed universal Swift helper (native/macos, macOS 14+; manifest pins its SHA-256) walks the AXUIElement tree, captures optional screenshots with ScreenCaptureKit, posts keyboard events to the target pid, and routes pointer fallback through SkyLight's SLEventPostToPid without moving the system cursor; a separate click-through overlay draws an agent cursor. Each action names the observation it acts on (an optional TTL rejects stale ones) and returns a fresh full or diff observation; read and control leases are scoped per bundle id, and high-impact actions need a one-use computer_confirm token. The README limits the provider to macOS (Windows and Linux are not implemented), directs browser work to DOM/CDP automation and OCR or visual grounding to a separate vision toolkit, and calls the release early. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT source, a committed universal macOS helper binary and an npm package; no model is bundled, so the DeepSeek Harness agent supplies decisions.",
+      "repository_revision": "1e9c8862e99ee86519799b8f30e335d22c078ee7",
+      "release_tag": "v0.3.4",
+      "package_version": "0.3.4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/README.md",
+        "sha256": "1e46d36c45844b6621c47718e9d51a22e2d227a6522254e904bc1dd29a8107af",
+        "retrieved_at": "2026-10-20T08:19:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/package.json",
+        "sha256": "b309fc3dd4428d07abd72da2c2f1977904715781a4a9c0aba3ea476a93a3f4f3",
+        "retrieved_at": "2026-10-20T08:19:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/src/tools.ts",
+        "sha256": "ca6efded49d6702bdec797878f68e1a5d1ad2b1532d4c7e9df4dc3ab061dc470",
+        "retrieved_at": "2026-10-20T08:19:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/native/macos/Sources/Helper/main.swift",
+        "sha256": "2a8434b97904f5bf785fb69256b51685bf85def0e6fedd6eb2d3729a093529a6",
+        "retrieved_at": "2026-10-20T08:19:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/native/macos/Sources/Helper/TargetedPointer.swift",
+        "sha256": "b903577d33fb34f92b2462011914ce2c6c36a3fc227c2f6acfe9d74c1ef6ceaa",
+        "retrieved_at": "2026-10-20T08:19:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/native/macos/manifest.json",
+        "sha256": "6a9a25327d63a1ffe47537250c63347c465ed8b3f904865226b12d40add85c13",
+        "retrieved_at": "2026-10-20T08:19:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/docs/interaction-policy.md",
+        "sha256": "a782acbe65cf50c2c2dd4c8334494dbc916b2280f44e8e8a2f3d628354c646d3",
+        "retrieved_at": "2026-10-20T08:19:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.release_tag",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/Anionex/dsh-computer-use/git/ref/tags/v0.3.4",
+        "sha256": "267a06d5659d962799fe1d07bc0a890168f6c3909a5b9460be95949d5a76cb52",
+        "retrieved_at": "2026-10-20T08:19:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Anionex/dsh-computer-use/1e9c8862e99ee86519799b8f30e335d22c078ee7/LICENSE",
+        "sha256": "ab087dd49725c21f8207f6442045c938478d0bbee2fdc68eab9ca64671475f12",
+        "retrieved_at": "2026-10-20T08:19:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1e46d36c45844b6621c47718e9d51a22e2d227a6522254e904bc1dd29a8107af",
+    "reviewed_at": "2026-10-20T08:20:17Z"
   }
 ]

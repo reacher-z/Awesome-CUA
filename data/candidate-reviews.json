@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:cb2cf60ada3f2ac3ce39",
+    "url": "https://openui.fly.dev",
+    "decision": "out_of_scope",
+    "reason": "openui.fly.dev is the hosted demo of W&B's OpenUI, the homepage that the github.com/wandb/openui repository declares; OpenUI renders interface code that a language model writes from a text description and does not observe or operate an existing GUI, browser or device. The live site returned HTTP 502 on 2026-10-19, and the Internet Archive capture of 2026-04-07 shows the 'OpenUI by W&B' web app, so it should follow the out-of-scope decision for the repository.",
+    "reviewed_at": "2026-10-20T04:18:20Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20260407203934id_/https://openui.fly.dev/",
+      "sha256": "5db523a5d942630f86c60d2aa9a81ca545be2ee45bdeabe6fc8e26f90fbf593d",
+      "retrieved_at": "2026-10-19T07:25:58Z"
+    }
   }
 ]

@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.12978",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "evaluation"
+    ],
+    "summary": "Studies agent memories that an LLM keeps consolidating: utility rises then degrades, at times below a no-memory baseline, on ARC-AGI, ALFWorld, ScienceWorld, WebShop and AppWorld, while raw episodes stay competitive.",
+    "verify_terms": [
+      "Useful Memories Become Faulty"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.12978v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent agent-memory study: WebShop is its only web environment, alongside ALFWorld, ScienceWorld, AppWorld and the authors' ARC-AGI Stream testbed with Retain, Delete and Consolidate actions. Mind2Web is named among the studied benchmarks, but the v2 full text reports no Mind2Web results. Seven memory frameworks (LangMem, Mem0, ProPlay, ACE, AWM, Letta, Dynamic Cheatsheet) are compared with GPT-5.4-mini and Claude Sonnet 5 backbones. The front matter links github.com/DylanZSZ/Memory-Collapse-Eval. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2605.12978v2",
+        "retrieved_at": "2026-10-20T04:17:51Z",
+        "sha256": "403dfc231dc5c4c1b59a229013819db97ae2ae40234f11603851466e906be5c5",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 1 to 4 (benchmarks, consolidation regimes, ARC-AGI Stream, episodic-only baseline and the seven-framework comparison), searching the full text for Mind2Web results.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "40c87ccb29288f62f7cc2149ef3328a232837ed3220e348d91524042ccf5fefd",
+    "reviewed_at": "2026-10-20T04:18:09Z"
   }
 ]

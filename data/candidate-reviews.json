@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f6407c99f95647b29d56",
+    "url": "https://anonymous.4open.science/r/MobileRL-iclr-4513",
+    "decision": "not_a_resource",
+    "reason": "Anonymous GitHub review copy that the MobileRL ICLR 2026 submission abstract links as its code, now gone: the page shell loads, but the repository API returns 410 Gone for files, README and options, and both Wayback captures (2026-04-20) hold only the app shell. The published code is github:thudm/mobilerl."
   }
 ]

@@ -63844,5 +63844,140 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "agent-ctrl",
+    "kind": "tool",
+    "url": "https://github.com/k4cper-g/agent-ctrl",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Rust CLI and daemon that let agents snapshot native app accessibility trees as element refs and act on them, with UI Automation on Windows, AX on macOS and a read-only AT-SPI surface on Linux.",
+    "scope": "core",
+    "verify_terms": [
+      "agent-ctrl"
+    ],
+    "aliases": [
+      "@agent-ctrl/cli"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Published on npm as @agent-ctrl/cli (package.json and Cargo.toml 0.1.4; annotated tag v0.1.4 points at the inspected commit), with release binaries for Windows x64 and macOS arm64/x64 and a typed @agent-ctrl/client TypeScript wrapper. agent-ctrl open <surface> starts a per-session daemon; snapshot pins a target window and returns its accessibility tree with @eN action refs and @sN scope refs, which click, type, fill, select, check, scroll, drag, press, wait and find commands consume. Screenshots of a window, region, element or the desktop can be annotated with cached refs. Windows (crates/surface-uia, UI Automation patterns plus SendInput) and macOS (crates/surface-ax, Accessibility plus CGEvent input) have the full action vocabulary; Linux (crates/surface-atspi) only snapshots, finds, inspects and lists windows, and Android and iOS surfaces are planned. The README leaves browser automation to the separate agent-browser project. The tool contains no model or agent loop. Code was read, not run.",
+    "details": {
+      "availability": "Public Apache-2.0 Rust source, npm package and release binaries for Windows and macOS; Linux is built from source and is snapshot-read only. No model is bundled.",
+      "repository_revision": "7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212",
+      "release_tag": "v0.1.4",
+      "package_version": "0.1.4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/README.md",
+        "sha256": "83ef4fe4a724261be2733d09636b44ffc50b882d89f3b3587a087a1b2867125e",
+        "retrieved_at": "2026-10-20T08:21:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/package.json",
+        "sha256": "f9b4b4ac293091890ee0f4918a96326b80f714023c294010e4300b5ef7466399",
+        "retrieved_at": "2026-10-20T08:21:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/Cargo.toml",
+        "sha256": "6bcfe6ae39fb5c0ec1a7c4ca30cdf1cf4965f3c772947ed6c60f11ef60581f64",
+        "retrieved_at": "2026-10-20T08:21:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/crates/surface-uia/src/windows_impl.rs",
+        "sha256": "b5b77cdbb6a4540d4f76354378b3a5506fc7408ce65de3c218df82ae15c8dbcb",
+        "retrieved_at": "2026-10-20T08:21:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/crates/surface-ax/src/macos.rs",
+        "sha256": "da1e91a186b0a729b06b2e7a673a4ae84383a18a0fba32ea78827d5d31a09d49",
+        "retrieved_at": "2026-10-20T08:21:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/crates/surface-atspi/src/linux.rs",
+        "sha256": "0f2b814fa5b2d95843af097896330f4ea524f8046ae637730b9f1583ccf9c465",
+        "retrieved_at": "2026-10-20T08:21:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/k4cper-g/agent-ctrl/7cc6b3d6d25ae6064aa1cf56d32df3af6e24a212/LICENSE",
+        "sha256": "71696a8c0214c93f3c693cfcae345f026287e46611e7d5e8d0659ab364c0f936",
+        "retrieved_at": "2026-10-20T08:21:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.release_tag",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/k4cper-g/agent-ctrl/git/tags/37ad90bd95020d9c421d214cf9623f700cd64e44",
+        "sha256": "cd7cf488acfd83e5b78bf4040e350eca3f2f0586b096d6d49b45ddc3a9c749e0",
+        "retrieved_at": "2026-10-20T08:22:19Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "83ef4fe4a724261be2733d09636b44ffc50b882d89f3b3587a087a1b2867125e",
+    "reviewed_at": "2026-10-20T08:22:47Z"
   }
 ]

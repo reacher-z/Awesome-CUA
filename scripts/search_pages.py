@@ -161,13 +161,18 @@ def resource_body(record, lookup, incoming=None):
     r=record
     status="AI-assisted editorial review against a primary source" if eligible(r) else "Bibliographic metadata verified; topic relevance and research findings have not been reviewed"
     body=f'<div class="eyebrow">{esc(KINDS[r["kind"]])}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(description(r))}</p><p class="review-notice">{esc(status)}. This is a catalog annotation, not an independent reproduction or endorsement.</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">Original source ↗</a><a class="button secondary" href="{resource_path(r)}index.md">Read as Markdown</a><a class="button secondary" href="{resource_path(r)}record.json">Record JSON</a></div>'
-    facts=[("Resource type",KINDS[r["kind"]]),("Environment",", ".join(r["environments"])),("Topics",", ".join(r["topics"]) or "Not assigned"),("Record publication date",record_date_text(r) or "Not recorded"),("Evidence retrieved",r["last_verified_at"]),("Resource ID",r["id"])]
-    body+='<h2>What is this resource?</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k,v in facts)+'</dl>'
+    from paper_library import PLATFORMS  # local import keeps this change clear of the module's import block
+    platforms=", ".join(PLATFORMS[e][0] if e in PLATFORMS else "Not specified" if e=="unspecified" else e for e in r["environments"])
+    topics=", ".join(f'<a href="{topic_path(t)}">{esc(topic_name(t))}</a>' for t in r["topics"]) or "Not assigned"
+    # Values are HTML: labels, topic links and times are built from escaped parts.
+    facts=[("Category",f'<a href="/categories/{r["kind"]}/">{esc(KINDS[r["kind"]])}</a>'),("Platforms",esc(platforms)),("Topics",topics),("Record publication date",esc(record_date_text(r) or "Not recorded")),("Evidence retrieved",utc_time(r["last_verified_at"])),("Resource ID",f'<code>{esc(r["id"])}</code>')]
+    body+='<h2>What is this resource?</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{v}</dd></div>' for k,v in facts)+'</dl>'
+    body+=connected_assets_html(r,lookup,incoming)
     snapshot=r['details'].get('arxiv_snapshot')
     if snapshot:
         version=(f'<a href="{safe_href(snapshot["versioned_url"])}">arXiv v{esc(snapshot["version"])}</a>' if snapshot.get('versioned_url') else 'Version not recorded')
         body+='<h2>Recorded paper version</h2><p>'+version+'</p>'
-        if snapshot.get('updated_at'):body+='<p>Version updated: '+esc(snapshot['updated_at'])+'.</p>'
+        if snapshot.get('updated_at'):body+='<p>Version updated: '+utc_time(snapshot['updated_at'])+'.</p>'
         body+='<p>This identifies the retained arXiv metadata snapshot; newly observed changes require separate review.</p>'
         if snapshot.get('abstract_sha256'):body+='<details><summary>Abstract fingerprint</summary><code>'+esc(snapshot['abstract_sha256'])+'</code></details>'
     if r["authors"]:body+='<h2>Authors</h2><p>'+esc(', '.join(r["authors"]))+'</p>'
@@ -189,24 +194,35 @@ def resource_body(record, lookup, incoming=None):
     details=[(k,v) for k,v in r["details"].items() if k not in {*PROFILE_KEYS.values(),'arxiv_snapshot','publication','license_review'} and v is not None and v!=[] and v!=""]
     if details:
         body+='<h2>Recorded specifications</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k.replace("_"," "))}</dt><dd>{esc(json.dumps(v,ensure_ascii=False) if isinstance(v,(dict,list,bool)) else v)}</dd></div>' for k,v in details)+'</dl>'
-    if eligible(r) and r['topics']:
-        body+='<h2>Explore related topics</h2><div class="library-topics">'+''.join('<a href="'+topic_path(topic)+'">'+esc(topic_name(topic))+'</a>' for topic in r['topics'])+'</div>'
     if r["notes"]:body+='<h2>Scope and limitations</h2><p>'+esc(r["notes"])+'</p>'
     if r["relations"]:
         body+='<h2>Related resources</h2><ul>'+''.join(f'<li>{esc(rel["type"].replace("_"," "))}: <a href="{resource_path(lookup[rel["target_id"]])}">{esc(lookup[rel["target_id"]]["name"])}</a></li>' for rel in r["relations"] if rel["target_id"] in lookup)+'</ul>'
-    backlinks=(incoming or {}).get(r['id'],[])
-    if backlinks:
-        labels={'documented_by':'Documented resource','introduced_by':'Introduced resource','published_by':'Published resource','variant_of':'Model variant','component_of':'Component'}
-        body+='<h2 id="connected-assets">Connected assets</h2><p>These links come from reviewed resource records. A documentation link does not imply a training-data or evaluation dependency.</p><ul>'
-        for rel in backlinks:
-            source=lookup[rel['source_id']]
-            body+=f'<li>{esc(labels.get(rel["type"],rel["type"].replace("_"," ")))}: <a href="{resource_path(source)}">{esc(source["name"])}</a> · {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">relationship evidence</a></li>'
-        body+='</ul>'
     body+='<h2>Primary evidence and verification</h2><p>Source retrieval is separate from experiment reproduction. Use the original publication or publisher page when citing claims about the resource.</p><ol class="source-list">'
     for ev in r["evidence"]:
-        body+=f'<li><a href="{safe_href(ev["url"])}">{esc(ev["method"].replace("_"," "))}</a><p>Retrieved {esc(ev["retrieved_at"])}. Supports: {esc(", ".join(ev["supports"]))}.</p><details><summary>Content fingerprint</summary><code>{esc(ev["sha256"])}</code></details></li>'
+        body+=f'<li><a href="{safe_href(ev["url"])}">{esc(ev["method"].replace("_"," "))}</a><p>Retrieved {utc_time(ev["retrieved_at"])}. Supports: {esc(", ".join(ev["supports"]))}.</p><details><summary>Content fingerprint</summary><code>{esc(ev["sha256"])}</code></details></li>'
     body+='</ol><h2>Suggest a correction</h2><p><a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">Open a source-backed correction</a>. Include this record ID and the original source. Read our <a href="/about/">editorial policy</a> and <a href="/coverage/">coverage boundaries</a>.</p>'
     return body
+
+
+def utc_time(stamp):
+    # Evidence timestamps read as "2026-10-16 06:31 UTC"; the exact recorded value stays in the datetime attribute.
+    try:
+        moment=dt.datetime.fromisoformat(stamp).astimezone(dt.timezone.utc)
+    except (TypeError, ValueError):
+        return esc(stamp)
+    return f'<time datetime="{esc(stamp)}">{moment:%Y-%m-%d %H:%M} UTC</time>'
+
+
+def connected_assets_html(r, lookup, incoming):
+    # Reviewed links from code, data and model records sit right under the facts, where readers of a paper look for them.
+    backlinks=(incoming or {}).get(r['id'],[])
+    if not backlinks:return ''
+    labels={'documented_by':'Documented resource','introduced_by':'Introduced resource','published_by':'Published resource','variant_of':'Model variant','component_of':'Component'}
+    body='<h2 id="connected-assets">Connected assets</h2><p>These links come from reviewed resource records. A documentation link does not imply a training-data or evaluation dependency.</p><ul>'
+    for rel in backlinks:
+        source=lookup[rel['source_id']]
+        body+=f'<li>{esc(labels.get(rel["type"],rel["type"].replace("_"," ")))}: <a href="{resource_path(source)}">{esc(source["name"])}</a> · {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">relationship evidence</a></li>'
+    return body+'</ul>'
 
 
 def resource_markdown(r):

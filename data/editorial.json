@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "MedBrowseComp: Benchmarking Medical Deep Research and Computer Use",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.14963",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Introduces MedBrowseComp, over 1,000 multi-hop medical questions linking HemOnc.org regimens to trial, paper and FDA records, and evaluates deep-research systems and a Claude computer-use agent.",
+    "verify_terms": [
+      "MedBrowseComp: Benchmarking Medical Deep Research"
+    ],
+    "scope": "core",
+    "notes": "Questions are built from 121 oncology trials on HemOnc.org linked to PubMed, ClinicalTrials.gov, FDA Orange Book and stock-price data: 605 deep-research questions over one to five hops and 484 computer-use questions (trial ID, second author, PMID, start date) reachable in one or two hops from HemOnc.org. The computer-use baseline is Claude 3.7 Sonnet in Anthropic's computer-use Ubuntu 22.04 sandbox with Firefox, run in parallel Docker containers; other systems include o3 and Gemini 2.5 Pro search and deep research, Perplexity and Sonar Pro, and RAG pipelines, judged by GPT-4.1 mini. The paper names code at github.com/shan23chen/MedBrowseComp, Hugging Face datasets AIM-Harvard/MedBrowseComp and MedBrowseComp_Meta, and a project page at moreirap12.github.io/mbc-browse-app. No results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text (Sections 3-5 and Appendices A.1, A.3).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.14963v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2505.14963v1",
+        "retrieved_at": "2026-10-20T08:22:01Z",
+        "sha256": "2e6e844f16302a59eca235f4e9731335fb050f55f95ed98c29de1a83fc29fe58",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c86a4a747ea64a8e6152467b5b86937f6fcae8b6250a64e1896cd7c7b04581c4",
+    "reviewed_at": "2026-10-20T08:22:29Z"
   }
 ]

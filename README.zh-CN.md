@@ -10,7 +10,7 @@
 
 [English](README.md) · **简体中文**
 
-<a href="https://awesomecua.github.io/?lang=zh"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></a>
+<a href="https://awesomecua.github.io/?lang=zh"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-banner-dark.zh-CN.svg"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></picture></a>
 
 **[搜索与筛选](https://awesomecua.github.io/?lang=zh)** · **[研究论文](https://awesomecua.github.io/zh/papers/)** · **[按主题浏览](https://awesomecua.github.io/zh/topics/)** · **[数据与 Agent](https://awesomecua.github.io/zh/data/)**
 

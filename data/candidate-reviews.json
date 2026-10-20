@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7bf20443847f9c8f5732",
+    "url": "https://yuxiangchai.github.io/AMEX",
+    "decision": "alias",
+    "target_id": "github:yuxiangchai/amex-codebase",
+    "reason": "Former address of the AMEX dataset project website, which links the indexed AMEX-codebase repository. It now returns 404; Wayback captures from 2024 show the page, and the same page is now served at www.yxchai.com/AMEX."
   }
 ]

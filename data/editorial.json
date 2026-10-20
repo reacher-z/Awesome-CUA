@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.10887",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "grounding",
+      "planning"
+    ],
+    "summary": "Introduces InfantAgent-Next, which splits planning, tool selection and execution across models and pairs file, code and browser tools with screenshot-based clicking; evaluated on OSWorld, GAIA and SWE-Bench.",
+    "verify_terms": [
+      "InfantAgent-Next: A Multimodal Generalist Agent"
+    ],
+    "scope": "core",
+    "notes": "Each step selects among seven toolkits (file reading, file searching, file editing, web browsing, computer use, code execution and advanced tools), and separate models handle images, audio and video. Mouse clicks use iterative region cropping with a visual grounding model, ablated on ScreenSpot-Pro. On OSWorld the agent runs in the official VMware setup with PyAutoGUI, Claude-3.7-Sonnet for reasoning and UI-TARS-1.5-7B for grounding, with non-visual toolkits disabled; its own runtime is an isolated virtual machine exposing a GNOME desktop, Bash and Jupyter. The abstract links code at github.com/bin123apple/InfantAgent. No results were reproduced.",
+    "read_basis": "Read the arXiv v3 abstract and the full v3 HTML text (Sections 3-4 and Appendices A, C and D).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.10887v3"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2505.10887v3",
+        "retrieved_at": "2026-10-20T08:24:01Z",
+        "sha256": "0e8613561f02018892d8c3ce14d2f9929e3dcaf7d5ffc68aa6ad24552b1d190b",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "1b36eb312aa5438168b238c615fa5bfcd71f6f69d043f45a9c2d6bfe50efc10f",
+    "reviewed_at": "2026-10-20T08:24:20Z"
   }
 ]

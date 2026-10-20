@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8b4a9ef8ffc50d5fe667",
+    "url": "https://highlightai.com",
+    "decision": "out_of_scope",
+    "reason": "Highlight AI is a macOS and Windows assistant that reads on-screen windows through accessibility and screen-recording permissions and records meetings to produce briefs, chat answers and drafted follow-ups. It acts through app integrations and MCP rather than by operating graphical interfaces, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:16:08Z",
+    "evidence": {
+      "url": "https://highlightai.com/changelog",
+      "sha256": "72491fa24f32e9b26c52b888a7dc57e9a86c019c1350ba0e2bcdca320bfea36a",
+      "retrieved_at": "2026-10-19T06:35:00Z"
+    }
   }
 ]

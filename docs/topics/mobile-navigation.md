@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-271 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+272 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (10)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (199)](#papers)
 
 ## Benchmarks
 
@@ -146,6 +146,7 @@
 | 2026‑08‑06 | [The Next Screenshot Knows: Gated Hindsight Distillation for Mobile GUI Agents](https://arxiv.org/abs/2608.06065) | android | Gated Hindsight Distillation gives a teacher access to the next screenshot during training while the student sees only the available trajectory prefix. Distillation is applied when hindsight repairs a student failure, and the resulting policies are evaluated on Android tasks. |
 | 2026‑07‑20 | [SEE: Structure-aware Exploring & Exploiting for Long-horizon GUI Agent Trajectory Synthesis](https://arxiv.org/abs/2607.18046) | unspecified | Introduces SEE, which first explores mobile interfaces to build a screen-and-element transition graph, then composes task trajectories through graph planning and controlled sampling. It studies coverage, loop avoidance, and transfer after training agents on the generated sequences. |
 | 2026‑07‑16 | [HyMobileAgent: Data-Environment Co-Scaling for Efficient GUI Agents](https://arxiv.org/abs/2607.14548) | unspecified | Combines GUI perception data, instructional videos, real and simulated devices, and planning with reflection to develop a mobile agent. |
+| 2026‑07‑15 | [Multi-Head Latent Control: A Unified Interface for LLM Agent Decision Making](https://arxiv.org/abs/2607.14277) | android, desktop | Trains lightweight heads on a frozen LLM or VLM's hidden states to decide when to defer to a larger model, ask for clarification, call tools or abstain, and tests step-level small-to-large routing on AndroidWorld. |
 | 2026‑07‑14 | [KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill](https://arxiv.org/abs/2607.12625) | desktop, android, ios, harmonyos, windows | KnowAct-GUIClaw combines a host planner with pluggable GUI subagents, attributable experience memory and an evolving skill library. It uses user profiles and feedback for task decomposition and evaluates transfer across Android, iOS, HarmonyOS and Windows. |
 | 2026‑07‑01 | [(A)I Sees What You Don't: Exploiting New Attack Surfaces in Third-Party Mobile Agents](https://arxiv.org/abs/2607.00333) | unspecified | Analyzes cross-app privilege escalation and visual attack surfaces introduced by third-party VLM-powered mobile agents. |
 | 2026‑06‑30 | [Xiaomi-GUI-0 Technical Report](https://arxiv.org/abs/2606.31410) | android | Describes a mobile GUI agent trained through real-device interaction, corrected failure trajectories, supervised learning, and reinforcement learning. |

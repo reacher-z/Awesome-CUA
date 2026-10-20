@@ -63844,5 +63844,127 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Xiryn",
+    "kind": "agent",
+    "url": "https://github.com/SouravBeraAkaSpeed/xiryn",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "human-in-the-loop",
+      "memory",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Self-hosted personal agent app that gives each agent its own Docker Linux desktop with Chromium, operated through screenshots and xdotool clicks and keys, with live take-over, memory, a vault and Telegram control.",
+    "verify_terms": [
+      "Xiryn"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Next.js app run locally (version 0.4.1 in package.json; tag v0.4.1 points at b8016b5, and the inspected commit 489e9c4 is later). Each agent's workstation is a Docker container built from workstation/: Debian (trixie-slim) with Xvfb, xfwm4 and a panel, Chromium, x11vnc and noVNC, xdotool and scrot, a persistent home volume, and an inactivity watchdog. lib/agent/tools.ts defines the tool belt for the Vercel AI SDK streamText loop: shell and fs_* through docker exec; screen_capture and screen_share (scrot JPEG through xiryn-shot); pointer_click, pointer_move, pointer_drag, pointer_scroll, key_type and key_press (xdotool in lib/workstation.ts), each returning a fresh screenshot; request_takeover; vault_list, vault_fill, request_payment_approval and request_secret; memory_write and memory_forget; web_search and web_fetch through Firecrawl; and delegate for squads. Observation is plain screenshots of a 1280x800 display with pixel coordinates; there is no accessibility tree or element annotation. Before each step the runtime keeps only the two most recent screenshots in full (docs/architecture.md). The vault fills saved logins and cards into fields without the model seeing them, and cards only after the owner approves the payment. The user can watch and take over the desktop, and the agent hands over at logins, payments, one-time codes or CAPTCHAs, with a Telegram notice when paired. Models come from the owner's keys for OpenAI, Anthropic, Google, xAI, Groq, Mistral, DeepSeek, OpenRouter, Ollama, LM Studio or any OpenAI-compatible endpoint. The README's comparison with hosted agents is the author's own. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source with tagged GitHub releases; runs locally with Node.js and Docker, using the owner's model API keys.",
+      "repository_revision": "489e9c4fa4c3705c4ff87d1f90e7d8b616837c14",
+      "release_tag": "v0.4.1",
+      "package_version": "0.4.1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/docs/architecture.md",
+        "sha256": "a981aa1295fe450f358a8fdbaebf6e347ddd30655327c20d368f3a205b77a45e",
+        "retrieved_at": "2026-10-20T08:13:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/lib/agent/tools.ts",
+        "sha256": "3dfffee7f38880d93c3cc0063cee4d0fe0a1c32304ac34bc3363b9877063f18e",
+        "retrieved_at": "2026-10-20T08:14:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/lib/workstation.ts",
+        "sha256": "a57b7a6d23c0175b5f6d39e65265baae6b8572d90056da9b71b1dbc0c01243f2",
+        "retrieved_at": "2026-10-20T08:14:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/workstation/Dockerfile",
+        "sha256": "d2ab9ab4c377755984d128c7655619f7fb114e2fd58f4a51c1dc175316abd65b",
+        "retrieved_at": "2026-10-20T08:14:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/workstation/rootfs/usr/local/bin/xiryn-shot",
+        "sha256": "365ea5c5baa1d65666948557d755a8e1c2180589d8095871f3701f8b0bd582d1",
+        "retrieved_at": "2026-10-20T08:14:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/package.json",
+        "sha256": "427f984809cb545bbcc4d2f64c51d0b9ef932447401c1856762d737829205cb9",
+        "retrieved_at": "2026-10-20T08:14:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/489e9c4fa4c3705c4ff87d1f90e7d8b616837c14/LICENSE",
+        "sha256": "64cd47199151b05cb1ccc1866cb31fff39b16be5627b3c347c9da604237da33e",
+        "retrieved_at": "2026-10-20T08:14:07Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "71b4c54e1c81f6a48dfbdc0824169bc67bbc630511ab78ebfa0cd7aaaa8cb858",
+    "reviewed_at": "2026-10-20T08:14:46Z"
   }
 ]

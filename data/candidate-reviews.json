@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ab8062b62991ffcfb6ae",
+    "url": "https://platform.claude.com/docs/en/agent-sdk/overview",
+    "decision": "out_of_scope",
+    "reason": "The Claude Agent SDK packages the Claude Code agent loop as a Python and TypeScript library whose built-in tools read and edit files, run shell commands and search the web. The overview lists no graphical, browser or device-control executor, so it is a general agent framework outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:18:49Z",
+    "evidence": {
+      "url": "https://platform.claude.com/docs/en/agent-sdk/overview",
+      "sha256": "f6fa46a65faf653a00d71f63933c964f67811f64830639924a5a5f007f3f9a0f",
+      "retrieved_at": "2026-10-19T07:46:02Z"
+    }
   }
 ]

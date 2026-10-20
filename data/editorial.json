@@ -63653,5 +63653,43 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Designing Agent-Ready Websites for AI Web Agents: A Framework for Machine Readability, Actionability, and Decision Reliability",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.12056",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "web-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Proposes an agent-ready website design framework for e-commerce and tests it by comparing baseline and agent-ready versions of one shop prototype over five tasks, three browser-agent models and 300 runs.",
+    "verify_terms": [
+      "Designing Agent-Ready Websites for AI Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.12056v1"
+    ],
+    "notes": "The v1 full text runs the agents through the open-source browser-use framework. The agent-ready version adds machine-readable product data (JSON files and JSON-LD), richer semantic labels and decision-reliability cues to an otherwise identical prototype. The study is a controlled single-site proof of concept, and its results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.12056v1",
+        "sha256": "11cee9f3db25051aa3a137b24321d114a2f4623e592dfca965ecc4376c5d1d46",
+        "retrieved_at": "2026-10-20T03:58:45Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML framework description, website-version comparison table, experiment setup and limitations. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cb672ddd33206e20080a285888bdfdce842f5b5c829fdadd7da36b8e020892ee",
+    "reviewed_at": "2026-10-20T03:59:57Z"
   }
 ]

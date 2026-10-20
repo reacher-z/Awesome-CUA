@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.21072",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "self-reflection",
+      "human-in-the-loop"
+    ],
+    "summary": "Browser-use multi-agent system whose reconnaissance team contrasts failed and successful trajectories to write hint or action tools for an action team; 36.48% success on VisualWebArena with GPT-5-Chat.",
+    "verify_terms": [
+      "Recon-Act: A Self-Evolving Multi-Agent Browser-Use System"
+    ],
+    "scope": "core",
+    "notes": "The implementation reaches Level 3 of the paper's six-level roadmap: the Analyst and Tool Manager are human-operated, while the Coder, Master and Execution Agent run on GPT-5-Chat. Actions are executed through Playwright, and reconnaissance tools read URLs, images and set-of-marks observations as text. Training used a hand-written set of fewer than 10 examples per VisualWebArena domain and produced 11 tools (9 decision-mode, 2 hint-mode). Reported VisualWebArena success is 36.48% overall (Classifieds 39.32%, Reddit 27.14%, Shopping 39.27%). The paper links code at github.com/inclusionAI/AWorld (examples/visualwebarena); it was not reviewed here. Results were not independently reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 1 (six-level roadmap, contributions), 2.1, 3 (system architecture, Playwright execution), 3.1-3.2 (Reconnaissance and Action Teams, hint and decision tools), 4.1-4.3 (VisualWebArena, Table 1, implementation details, Tables 2-3) and 6 (limitations).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.21072v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.21072v1",
+        "retrieved_at": "2026-10-20T07:41:00Z",
+        "sha256": "ea458741d09823e4281beb499a3b6b046dae4dce38329351e16b032889438f3e",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8838483d8a71ed5b27b7b47e26ac4c6fdc40cc97d8955dd4c021ddb92573acd8",
+    "reviewed_at": "2026-10-20T07:41:23Z"
   }
 ]

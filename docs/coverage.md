@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-20T05:52:01Z**. Generated from committed sou
 - 3,209 resource records: 1,629 curated; 1,580 bibliographic metadata only.
 - 2,747 paper and survey records, including 2,734 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,870 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,260 discovery identifiers; 906 remain unresolved after accounting for scope exclusions and for 98 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,260 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 99 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -35,7 +35,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-20 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-20 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 15 | 37 | OK · 2026-10-20 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-20 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-20 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-20 |
@@ -49,7 +49,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 487 | 390 | 0 | 45 | 12 | OK · 2026-10-20 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 92 | 83 | 0 | 7 | 45 | OK · 2026-10-20 |
 | [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 213 | 210 | 158 | 0 | 1 | 2 | OK · 2026-10-20 |
-| [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-10-20 |
+| [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 1 | 6 | OK · 2026-10-20 |
 | [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 26 | 25 | 0 | 3 | 11 | OK · 2026-10-20 |
 | [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 46 | OK · 2026-10-20 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-10-20 |

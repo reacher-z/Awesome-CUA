@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "The Cost of Dynamic Reasoning: Demystifying AI Agents and Test-Time Scaling from an AI Infrastructure Perspective",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.04301",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "evaluation"
+    ],
+    "summary": "Measures the infrastructure cost of LLM agents (ReAct, Reflexion, LATS, LLMCompiler) on HotpotQA, WebShop, MATH and HumanEval: latency, GPU use, energy and datacenter power under test-time scaling.",
+    "verify_terms": [
+      "The Cost of Dynamic Reasoning"
+    ],
+    "scope": "adjacent",
+    "notes": "WebShop is one of four workloads; its agents use search and click tools on locally hosted shopping pages, and the other benchmarks use Wikipedia APIs (HotpotQA), Wolfram Alpha and a calculator (MATH), and self-generated tests (HumanEval). Agents run on Llama-3.1-Instruct 8B and 70B served by vLLM 0.6.6 with prefix caching on Google Cloud GPU instances; accuracy uses 50 sampled questions per benchmark. Analyses cover per-request latency breakdowns, GPU utilization, KV-cache memory, serving throughput against a ShareGPT chatbot baseline, test-time scaling trade-offs and per-query energy. The arXiv comment states acceptance at HPCA 2026, and the paper names github.com/VIA-Research/AgentBench, which is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-6, Table I (benchmarks, tools and agents), the serving setup, the WebShop latency and throughput results and the energy analysis.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2506.04301v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2506.04301v2",
+        "retrieved_at": "2026-10-20T08:16:51Z",
+        "sha256": "6bba166bbd555ee8493764d7317f687a5d9d391f32fefd5cc3a62594705310c5",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "topics",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "03dcc7d6cc7eaf0380857b2b8a37058ea551262e4159f930242dd71c2f099a06",
+    "reviewed_at": "2026-10-20T08:17:27Z"
   }
 ]

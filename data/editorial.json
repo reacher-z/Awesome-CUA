@@ -63844,5 +63844,69 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.25726",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "cross-app",
+      "long-horizon"
+    ],
+    "summary": "Introduces Toolathlon, 108 execution-verified multi-app tasks over 32 MCP-served applications (604 tools) with realistic initial states; Claude-4.5-Sonnet reaches 38.6% and DeepSeek-V3.2-Exp 20.1%.",
+    "verify_terms": [
+      "Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution"
+    ],
+    "scope": "adjacent",
+    "notes": "Each task has its own evaluation script, and 72 of the 108 start from initialized states, using locally containerized Poste.io email, Canvas, Kubernetes and WooCommerce as well as remote services such as Google Sheets and Notion. Agents run in an OpenAI Agents SDK loop with tool-error handling, paging of overlong outputs and context management; tools are mostly MCP servers, plus Python execution and web search. Browser use is a minority component: Appendix A lists a revised Playwright browser-automation MCP server among the 32, the released task configurations load it for tasks such as filling in an online questionnaire, and the paper notes that tasks could also be done through GUI or CLI workflows given credentials. Scope is adjacent because most tasks go through application APIs. Claude-4.5-Sonnet's 38.6% Pass@1 comes with 20.2 tool-calling turns on average. The paper links toolathlon.xyz and github.com/hkust-nlp/toolathlon. No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML text: Sections 1-7, Tables 1-3 and Appendices A-C; Appendices D-E skimmed. Counted the task configurations at commit 9be8d8fe07a497b18ee61e3f2ae694e9797f39eb with a script: 24 of 108 list the playwright_with_chunk MCP server.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.25726v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.25726v2",
+        "retrieved_at": "2026-10-20T07:57:17Z",
+        "sha256": "86119abf6364c2b0d2234d93117b7371fa3ff3272a9b6f1678acc5ec32dfe7f2",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/hkust-nlp/toolathlon/9be8d8fe07a497b18ee61e3f2ae694e9797f39eb/tasks/finalpool/fillout-online-forms/task_config.json",
+        "retrieved_at": "2026-10-20T07:57:18Z",
+        "sha256": "e78dd11fc52cc4538d4f7b6b516327708ca4d559361b4843bf8959ff071de43c",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/hkust-nlp/toolathlon/9be8d8fe07a497b18ee61e3f2ae694e9797f39eb/tasks/finalpool/fillout-online-forms/docs/task.md",
+        "retrieved_at": "2026-10-20T07:57:18Z",
+        "sha256": "3494170fe4b16a0c777c2037b0bce8841564197711bb289acf219e0f0e30f5f0",
+        "supports": [
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e8b0b348a7590dda0e4a83675b87f9e80f1fb924634aee899eb36973b1de0d07",
+    "reviewed_at": "2026-10-20T07:57:46Z"
   }
 ]

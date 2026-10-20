@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d1e4128de64578d40279",
+    "url": "https://intel.twzrd.xyz",
+    "decision": "out_of_scope",
+    "reason": "TWZRD Agent Intel is a paid API and MCP server that scores Solana and Base seller wallets and returns signed receipts before an agent makes x402 micropayments. Its own llms.txt says it does not fetch pages or solve CAPTCHAs, so it involves no GUI, browser or device operation and falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:17:14Z",
+    "evidence": {
+      "url": "https://intel.twzrd.xyz",
+      "sha256": "6c6d1b738a29d22e1542d489bb97f35eefb3a2fa9d56eec6c46105e91e67e912",
+      "retrieved_at": "2026-10-19T06:46:28Z"
+    }
   }
 ]

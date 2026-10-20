@@ -63653,5 +63653,49 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "AQuaUI: Visual Token Reduction for GUI Agents with Adaptive Quadtrees",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.19260",
+    "environments": [
+      "android",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "training-free",
+      "grounding",
+      "screen-understanding",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Training-free token reduction that merges GUI screenshot tokens into adaptive quadtree leaves, with a conditional quadtree reusing earlier screenshots, evaluated on grounding benchmarks, AndroidWorld and AndroidControl.",
+    "verify_terms": [
+      "AQuaUI: Visual Token Reduction for GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.19260v1"
+    ],
+    "notes": "Per the v1 full text, grounding is evaluated on UI-Vision, ScreenSpot-Pro, ScreenSpot-V2, OSWorld-G and MMBench-GUI, and navigation on AndroidWorld and AndroidControl, using Qwen2-VL, ShowUI, GUI-Owl-1.5, MAI-UI and Qwen3-VL models. The abstract reports up to 13.22% speedup and 29.52% fewer visual tokens on GUI-Owl-1.5-32B-Instruct while retaining 99.06% of full-token performance. The desktop and web environments come from static grounding benchmarks. The paper names no code repository. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.19260v1",
+        "sha256": "9e28274fd9e23f051ed8d3a4c77179b2e620f7b5e191a8b88356965235900f44",
+        "retrieved_at": "2026-10-20T04:00:53Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML full text for the benchmarks, evaluated models and any release link. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "193dea0f9b7e2e5fb2297d27d1bb718eae78516cffb92b397bc1806b622ac76b",
+    "reviewed_at": "2026-10-20T04:09:13Z"
   }
 ]

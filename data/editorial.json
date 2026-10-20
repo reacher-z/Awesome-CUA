@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "What and When to Distill: Selective Hindsight Distillation for Multi-Turn Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.19447",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "long-horizon"
+    ],
+    "scope": "adjacent",
+    "summary": "Studies five feedback sources and two insertion granularities in multi-turn agent RL and introduces SERL, which reweights GRPO advantages on action tokens via a feedback-conditioned teacher, on ALFWorld and WebShop.",
+    "verify_terms": [
+      "Selective Hindsight Distillation for Multi-Turn Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.19447v1"
+    ],
+    "notes": "Adjacent agent-training method. Its evaluations use ALFWorld, a text-based household environment, and WebShop, a simulated shopping website that is its only web environment; the base model is Qwen2.5-7B-Instruct. The v1 full text links code at github.com/OliverLeeXZ/SERL, which was not reviewed here. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.19447v1",
+        "sha256": "9861747f25d504233c66d40b3587040724b2d597524b1863589be40c98db2ea2",
+        "retrieved_at": "2026-10-20T04:00:54Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML full text for the method, benchmarks (ALFWorld and WebShop only), base model and code link. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3007b4eeefcc1f26a2569c7e4351e28878f9df103f0b0e0c18f7f560045b5ebb",
+    "reviewed_at": "2026-10-20T04:13:50Z"
   }
 ]

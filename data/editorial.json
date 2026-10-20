@@ -63667,7 +63667,7 @@
       "evaluation"
     ],
     "scope": "core",
-    "summary": "Introduces WebDecept, a plugin that injects seven deceptive e-commerce interface patterns, such as pop-ups, redirection, cart add-ons and price drift, into VisualWebArena shopping tasks to test multimodal web agents.",
+    "summary": "Introduces WebDecept, which injects seven deceptive e-commerce patterns, such as pop-ups, redirection, cart add-ons and price drift, into 45 web-agent purchase tasks on the VisualWebArena shopping site.",
     "verify_terms": [
       "Benchmarking Web Agent Safety under E-commerce Deceptive"
     ],

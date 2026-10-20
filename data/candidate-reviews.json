@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:13905d393b73e465b616",
+    "url": "https://relevance.ai",
+    "decision": "out_of_scope",
+    "reason": "Relevance AI is a no-code platform for building sales, marketing, support and operations agents that act through 1,000+ app integrations, evals and governance controls. Its only page interaction comes from optional tool steps for Airtop, a separate browser service that needs its own account, so it is a general agent-builder platform rather than a computer-use resource.",
+    "reviewed_at": "2026-10-20T04:19:17Z",
+    "evidence": {
+      "url": "https://relevance.ai",
+      "sha256": "ade5239277240a029f857f5718cdecdc658c2b42fbf6acb7a4c3bdf6581a5080",
+      "retrieved_at": "2026-10-19T08:33:08Z"
+    }
   }
 ]

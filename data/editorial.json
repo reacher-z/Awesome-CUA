@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Towards Automated Crowdsourced Testing via Personified-LLM",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.24160",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Presents PersonaTester, which conditions LLM GUI-testing agents on nine crowdworker personas derived from 1,500 annotated test traces, varying mindset, exploration strategy and input habits, across 15 mobile apps.",
+    "verify_terms": [
+      "Automated Crowdsourced Testing via Personified-LLM"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.24160v2"
+    ],
+    "scope": "core",
+    "notes": "Each step turns the screenshot into a labelled widget list through computer-vision widget detection, OCR and GPT-4o; o4-mini chooses persona-conditioned test actions, executed as screen-coordinate taps, text input and scrolls. The 15 subject apps (4 open-source, 11 commercial) are described as mobile apps without naming the platform. The v2 comments list acceptance at FSE 2026, and the paper points to a replication package at sites.google.com/view/personatester. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.24160v2",
+        "retrieved_at": "2026-10-20T04:34:19Z",
+        "sha256": "b302efba27d43421a7e03bfa3f8a1c0d3a2b5d8b0a7c6e0b15383d4ab4634253",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and comments and the v2 HTML Sections 2.1 (1,500 annotated traces, nine personas), 3.2-3.4 (GUI state understanding, decision-making, coordinate execution) and 4.1 (15 apps, GPT-4o and o4-mini configuration).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ca17e5b5b4a5c056adfe7d4897d50c655c866db0a51751956b948221193ff272",
+    "reviewed_at": "2026-10-20T04:34:36Z"
   }
 ]

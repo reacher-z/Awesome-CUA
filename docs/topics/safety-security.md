@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -178,6 +178,7 @@ All entries in this section: web.
 | 2025‑10‑02 | [Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness](https://arxiv.org/abs/2510.01670) | desktop | BLIND-ACT tests whether computer-use agents persist with ambiguous, contradictory, or infeasible goals without adequate contextual reasoning. Its OSWorld-based tasks and judged trajectories examine these behaviors and the effect of mitigation prompts. |
 | 2025‑10‑01 | [WAInjectBench: Benchmarking Prompt Injection Detections for Web Agents](https://arxiv.org/abs/2510.01354) | web | Introduces WAInjectBench with a threat-model taxonomy and malicious and benign text-image datasets for web-agent prompt-injection detection. It compares detector families across explicit and less visible forms of injected content. |
 | 2025‑09‑26 | [Benchmarking MLLM-based Web Understanding: Reasoning, Robustness and Safety](https://arxiv.org/abs/2509.21782) | web | Evaluates multimodal LLMs on web interface reasoning, visual perturbation robustness, and safety-critical web understanding tasks. |
+| 2025‑09‑26 | [Can We Stop Malicious AI? KILLBENCH: A Benchmark for External AI Kill Switch Feasibility](https://arxiv.org/abs/2511.13725) | web | Benchmark of prompt-style payloads placed in web pages to halt malicious web agents mid-task: 550 malicious tasks in 8 scenarios on 7 WebArena-based sites, 4 agent configurations and 4 halt methods. |
 | 2025‑09‑26 | [Secure and Efficient Access Control for Computer-Use Agents via Context Space](https://arxiv.org/abs/2509.22256) | unspecified | Introduces CSAgent, which combines static access policies with user intent and context and enforces them through an operating-system service. A supporting toolchain constructs and refines policies for agents using API, CLI and GUI interfaces. |
 | 2025‑09‑17 | [InfraMind: A Novel Exploration-based GUI Agentic Framework for Mission-critical Industrial Management](https://arxiv.org/abs/2509.13704) | unspecified | InfraMind explores industrial management GUIs using virtual-machine snapshots and builds memory for planning and hierarchical state recognition. Its framework also studies knowledge distillation and safety checks on open-source and commercial data-center management platforms. |
 | 2025‑09‑15 | [PrivWeb: Unobtrusive and Content-aware Privacy Protection For Web Agents](https://arxiv.org/abs/2509.11939) | web | Introduces PrivWeb, which uses a local language model to anonymize interface information according to user preferences. Adaptive notifications and selective pauses give users control over sensitive information access during web-agent tasks. |

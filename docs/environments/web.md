@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-623 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+624 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (444)](#papers)
 
 ## Benchmarks
 
@@ -474,6 +474,7 @@
 | 2025‑09‑29 | [Retrieval-augmented GUI Agents with Generative Guidelines](https://arxiv.org/abs/2509.24183) | web, android | RAG-GUI trains a small guidance adapter to filter and summarize retrieved web tutorials while keeping the acting agent fixed. Supervised and rejection-sampling stages prepare the adapter for inference-time assistance, tested on offline web/mobile tasks and interactive Android tasks. |
 | 2025‑09‑28 | [WAREX: Web Agent Reliability Evaluation on Existing Benchmarks](https://arxiv.org/abs/2510.03285) | web | WAREX augments existing web-agent benchmarks with reliability challenges arising from unstable systems and changing or disruptive website behavior. Evaluation on WebArena, WebVoyager and REAL examines how these disturbances affect task completion. |
 | 2025‑09‑26 | [Benchmarking MLLM-based Web Understanding: Reasoning, Robustness and Safety](https://arxiv.org/abs/2509.21782) | web | Evaluates multimodal LLMs on web interface reasoning, visual perturbation robustness, and safety-critical web understanding tasks. |
+| 2025‑09‑26 | [Can We Stop Malicious AI? KILLBENCH: A Benchmark for External AI Kill Switch Feasibility](https://arxiv.org/abs/2511.13725) | web | Benchmark of prompt-style payloads placed in web pages to halt malicious web agents mid-task: 550 malicious tasks in 8 scenarios on 7 WebArena-based sites, 4 agent configurations and 4 halt methods. |
 | 2025‑09‑26 | [RISK: A Framework for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2509.21982) | web | RISK combines browser-interaction training data, a benchmark, and reinforcement fine-tuning for e-commerce risk-management workflows. Its trajectories and rewards distinguish individual actions from multi-step stateful tasks involving deeply embedded web content. |
 | 2025‑09‑17 | [Detecting Pipeline Failures through Fine-Grained Analysis of Web Agents](https://arxiv.org/abs/2509.14382) | web | Introduces a modular framework for identifying errors at intermediate stages of a web-agent pipeline. A SeeAct and Mind2Web case study examines weaknesses that are obscured by final task-success metrics. |
 | 2025‑09‑17 | [TGPO: Tree-Guided Preference Optimization for Robust Web Agent Reinforcement Learning](https://arxiv.org/abs/2509.14172) | web | TGPO merges semantically equivalent web states into tree-structured trajectories for offline preference optimization. A process reward model scores subgoal progress, redundant behavior, and action validity, while dynamic weighting emphasizes consequential decisions. |

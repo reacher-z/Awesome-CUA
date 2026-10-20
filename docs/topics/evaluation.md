@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-691 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+692 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -531,6 +531,7 @@ All entries in this section: web.
 | 2025‑09‑28 | [WAREX: Web Agent Reliability Evaluation on Existing Benchmarks](https://arxiv.org/abs/2510.03285) | web | WAREX augments existing web-agent benchmarks with reliability challenges arising from unstable systems and changing or disruptive website behavior. Evaluation on WebArena, WebVoyager and REAL examines how these disturbances affect task completion. |
 | 2025‑09‑27 | [GUI-PRA: Process Reward Agent for GUI Tasks](https://arxiv.org/abs/2509.23263) | android | GUI-PRA evaluates GUI progress by generating task-specific criteria and actively inspecting visual evidence with tools. It tests offline judgment on OS-Critic Bench and the effects of this feedback on online mobile policies in AndroidWorld. |
 | 2025‑09‑26 | [Benchmarking MLLM-based Web Understanding: Reasoning, Robustness and Safety](https://arxiv.org/abs/2509.21782) | web | Evaluates multimodal LLMs on web interface reasoning, visual perturbation robustness, and safety-critical web understanding tasks. |
+| 2025‑09‑26 | [Can We Stop Malicious AI? KILLBENCH: A Benchmark for External AI Kill Switch Feasibility](https://arxiv.org/abs/2511.13725) | web | Benchmark of prompt-style payloads placed in web pages to halt malicious web agents mid-task: 550 malicious tasks in 8 scenarios on 7 WebArena-based sites, 4 agent configurations and 4 halt methods. |
 | 2025‑09‑26 | [ProRe: A Proactive Reward System for GUI Agents via Reasoner-Actor Collaboration](https://arxiv.org/abs/2509.21823) | unspecified | ProRe evaluates GUI task outcomes by having a reasoner assign targeted environment-probing tasks to specialist actors. The additional observations support reward judgments, with separate evaluation of judge accuracy and downstream agent task success. |
 | 2025‑09‑26 | [RISK: A Framework for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2509.21982) | web | RISK combines browser-interaction training data, a benchmark, and reinforcement fine-tuning for e-commerce risk-management workflows. Its trajectories and rewards distinguish individual actions from multi-step stateful tasks involving deeply embedded web content. |
 | 2025‑09‑17 | [Detecting Pipeline Failures through Fine-Grained Analysis of Web Agents](https://arxiv.org/abs/2509.14382) | web | Introduces a modular framework for identifying errors at intermediate stages of a web-agent pipeline. A SeeAct and Mind2Web case study examines weaknesses that are obscured by final task-success metrics. |

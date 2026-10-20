@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:33a881a27e5b08126915",
+    "url": "https://tongyi-mai.github.io/MAI-UI-blog",
+    "decision": "alias",
+    "target_id": "github:tongyi-mai/mai-ui",
+    "reason": "Project website for the indexed MAI-UI repository, whose README links it as the official MAI-UI website; it presents the MAI-UI technical report and model family."
   }
 ]

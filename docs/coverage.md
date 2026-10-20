@@ -2,9 +2,9 @@
 
 Evidence snapshot through **2026-10-20T05:52:01Z**. Generated from committed source receipts.
 
-- 3,209 resource records: 1,629 curated; 1,580 bibliographic metadata only.
-- 2,747 paper and survey records, including 2,734 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,870 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
+- 3,208 resource records: 1,629 curated; 1,579 bibliographic metadata only.
+- 2,746 paper and survey records, including 2,733 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,870 retained arXiv metadata records; 137 explicit scope exclusions are outside the active catalog.
 - 4,260 discovery identifiers; 906 remain unresolved after accounting for scope exclusions and for 98 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
@@ -37,7 +37,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-20 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-20 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-20 |
-| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-20 |
+| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 95 | 87 | 1 | 6 | 30 | OK · 2026-10-20 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-20 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-20 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-20 |
@@ -188,7 +188,7 @@ None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 
-136 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
+137 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
 
 ## Known gaps
 

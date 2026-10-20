@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1785,6 +1785,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2503.16788%2C2503.17709%2C2503.18492%2C2503.19537%2C2503.20978%2C2503.21620%2C2503.23434%2C2504.01382%2C2504.07981%2C2504.10445%2C2504.10458%2C2504.11257%2C2504.11281%2C2504.12679%2C2504.13805%2C2504.13865%2C2504.14239%2C2504.18575%2C2504.19838%2C2504.20464%2C2505.10924%2C2505.11891%2C2505.12299%2C2505.12632%2C2505.13227%2C2505.13887%2C2505.13909%2C2505.14289%2C2505.15810%2C2505.16282%2C2505.16827%2C2505.18829%2C2505.19897%2C2505.21496%2C2505.21499%2C2505.21936%2C2505.22648%2C2505.23762%2C2505.24838%2C2506.00618%2C2506.01391%2C2506.01968%2C2506.02456%2C2506.03143%2C2506.03569%2C2506.04135%2C2506.04614%2C2506.07672%2C2506.08012%2C2506.08972&max_results=50",
         "sha256": "afe4e75ffb8a5c44f4c088a90ffa5f53553036f514aa768f5aee0c5aa38d731e",
         "retrieved_at": "2026-10-16T06:31:42Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2506.02153",
+      "name": "Small Language Models are the Future of Agentic AI",
+      "url": "https://arxiv.org/abs/2506.02153",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract argues the position that small language models are sufficiently capable, more suitable and more economical than large models for most invocations in agentic systems, discusses barriers to their adoption and outlines an LLM-to-SLM agent conversion algorithm, without agent experiments. GUI content is limited to one of three appendix case studies, which estimates that about 70% of the LLM queries of Cradle, a GUI computer-control agent, could be handled by specialized small models; the other two cover MetaGPT and Open Operator, which the paper describes as API workflow automation. This general position on language-model sizing for agents is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T08:00:24Z",
+      "metadata_fingerprint": "72a898a918b97f897021bb8423b9cbd5b698fd58c3e90cfbfc3e9061c3daae02",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
+        "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
+        "retrieved_at": "2026-10-18T04:21:52Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

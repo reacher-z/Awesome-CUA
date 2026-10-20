@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2506.02153",
+    "name": "Small Language Models are the Future of Agentic AI",
+    "url": "https://arxiv.org/abs/2506.02153",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract argues the position that small language models are sufficiently capable, more suitable and more economical than large models for most invocations in agentic systems, discusses barriers to their adoption and outlines an LLM-to-SLM agent conversion algorithm, without agent experiments. GUI content is limited to one of three appendix case studies, which estimates that about 70% of the LLM queries of Cradle, a GUI computer-control agent, could be handled by specialized small models; the other two cover MetaGPT and Open Operator, which the paper describes as API workflow automation. This general position on language-model sizing for agents is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T08:00:24Z",
+    "metadata_fingerprint": "72a898a918b97f897021bb8423b9cbd5b698fd58c3e90cfbfc3e9061c3daae02",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
+      "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
+      "retrieved_at": "2026-10-18T04:21:52Z"
+    }
   }
 ]

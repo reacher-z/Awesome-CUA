@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2604.15715",
+    "name": "GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows",
+    "url": "https://arxiv.org/abs/2604.15715",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract presents GTA-2, a tool-agent benchmark that pairs GTA-Atomic short-horizon tool-use queries with GTA-Workflow, 132 open-ended deliverable tasks scored by recursive checkpoints. The full text implements its 37 tools (OCR, search, document and media generators, solvers) as function calls in a ReAct harness and compares execution frameworks such as OpenClaw and Manus only on their final deliverables. The benchmark defines no GUI, browser or device interaction, so this tool-use benchmark is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:29:22Z",
+    "metadata_fingerprint": "cf0c0682521e8aca2381fdf302633f13637026928206b2ccc4e7765a6f092b38",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2604.03598%2C2604.04759%2C2604.05547%2C2604.06170%2C2604.07340%2C2604.10547%2C2604.10938%2C2604.11978%2C2604.12282%2C2604.13018%2C2604.13346%2C2604.13954%2C2604.15579%2C2604.15671%2C2604.15715%2C2604.16520%2C2604.18240%2C2604.18934%2C2604.19572%2C2604.19667%2C2604.19742%2C2604.20841%2C2604.20987%2C2604.22436%2C2604.23781%2C2604.24479%2C2604.26148%2C2604.27621%2C2604.27996%2C2604.28093%2C2604.28139%2C2604.28181%2C2605.00425%2C2605.01462%2C2605.02240%2C2605.03042%2C2605.03242%2C2605.04811%2C2605.05191%2C2605.05811%2C2605.06110%2C2605.07073%2C2605.07358%2C2605.08374%2C2605.08985%2C2605.10912%2C2605.10966%2C2605.11363%2C2605.11732%2C2605.11817&max_results=50",
+      "sha256": "05ec5d668ac75d3d7c5b71ea7d6e76a3fbf5ebeb742e0843db2329e5e41aa208",
+      "retrieved_at": "2026-10-17T12:31:19Z"
+    }
   }
 ]

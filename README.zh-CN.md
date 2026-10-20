@@ -95,6 +95,16 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
 
+<!-- CHARTS:START -->
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/papers-by-year-dark.svg"><img src="docs/assets/papers-by-year-light.svg" alt="堆叠柱状图：按发表年份统计的 2,606 条论文与综述记录，范围为 ≤2016 至 2026。每列底部为已审阅记录，上方为仅完成书目核实的记录。2026 年记录最多，共 1,083 条，其中 506 条已审阅。"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/platforms-dark.svg"><img src="docs/assets/platforms-light.svg" alt="横向堆叠条形图：各平台的已审阅资源数量，按基准与数据集、模型、系统和论文分段。数量最多的是 Web 596、Desktop 320、Android 294。环境标签可以重叠，同一资源可计入多个平台。"></picture>
+
+精确计数：[按年份的论文目录](docs/papers.md) · [按平台的资源](docs/environments.md)
+
+<!-- CHARTS:END -->
+
 ## 重点资源
 
 按类别列出被其他已收录资源在其已审阅一手来源（README、模型卡或数据集卡）中提及最多的已审阅资源。该计数反映目录内部的关联程度，不代表质量、流行度或基准表现；每个类别页面都列出全部已审阅条目。综述排在最前，按时间倒序。资源名称和简介保留原文。

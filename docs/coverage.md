@@ -10,6 +10,12 @@ Evidence snapshot through **2026-10-19T21:04:13Z**. Generated from committed sou
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/papers-by-year-dark.svg"><img src="assets/papers-by-year-light.svg" alt="Stacked column chart of 2,606 paper and survey records by publication year, ≤2016 to 2026. Each column stacks reviewed records at the base and metadata-only records above. 2026 has the most records: 1,083, of which 506 are reviewed."></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/platforms-dark.svg"><img src="assets/platforms-light.svg" alt="Horizontal stacked bar chart of curated resources per platform, split into benchmarks and datasets, models, systems, and papers. Largest: Web 596, Desktop 320, Android 294. Environment tags overlap, so one resource can count on several platforms."></picture>
+
+Exact counts: [bibliography by year](papers.md) · [resources by platform](environments.md)
+
 ## Curated coverage by kind and environment
 
 Counts of source-reviewed resources. A resource tagged with several environments counts in each column; `·` marks an empty cell, which is where contributions are most needed.

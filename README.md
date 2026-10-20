@@ -93,6 +93,16 @@ Evidence through `2026-10-19T21:04:13Z`. 1,566 records have bibliographic verifi
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
 
+<!-- CHARTS:START -->
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/papers-by-year-dark.svg"><img src="docs/assets/papers-by-year-light.svg" alt="Stacked column chart of 2,606 paper and survey records by publication year, ≤2016 to 2026. Each column stacks reviewed records at the base and metadata-only records above. 2026 has the most records: 1,083, of which 506 are reviewed."></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/platforms-dark.svg"><img src="docs/assets/platforms-light.svg" alt="Horizontal stacked bar chart of curated resources per platform, split into benchmarks and datasets, models, systems, and papers. Largest: Web 596, Desktop 320, Android 294. Environment tags overlap, so one resource can count on several platforms."></picture>
+
+Exact counts: [bibliography by year](docs/papers.md) · [resources by platform](docs/environments.md)
+
+<!-- CHARTS:END -->
+
 ## Highlights
 
 The most-mentioned curated resources per category: the count is how many other cataloged resources mention each one in their reviewed first-party source (README, model or dataset card). It reflects connectedness inside this catalog, not quality, popularity, or benchmark performance. Every category page lists all reviewed entries. Surveys come first, newest first.

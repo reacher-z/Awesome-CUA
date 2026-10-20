@@ -17,6 +17,7 @@ from scope_review import resolve_exclusions, scope_report
 from arxiv_metadata import validate_snapshot
 from repository_identity import repository_aliases, attach_repository_aliases, unrecorded_hub_renames
 from lookup import REVIEWED_RELATION_TYPES
+from charts import THEMES, esc, stacked_bars, stacked_columns
 from publication_metadata import (alias_owner_errors, attach_publications, duplicate_publication_errors, publication_aliases,
     publication_links, publication_search_text, record_date_text, record_year, validate_publication)
 
@@ -615,6 +616,59 @@ def environment_pages(rows):
     return files
 
 
+CHART_GROUPS = [("Benchmarks and datasets", {"benchmark", "dataset"}), ("Models", {"model"}),
+    ("Systems", {"agent", "framework", "tool", "infrastructure", "product", "company"}), ("Papers", {"paper", "survey"})]
+
+
+def papers_by_year(rows, span=10):
+    """Paper and survey records per publication year, reviewed vs metadata-only; years before the latest `span` fold into one column."""
+    counts = collections.defaultdict(collections.Counter)
+    for r in rows:
+        if r["kind"] in {"paper", "survey"}:
+            counts[record_year(r) or "Undated"][r["review_status"] == "curated"] += 1
+    years = sorted(int(y) for y in counts if y != "Undated")
+    first = max(years[0], years[-1] - span + 1) if years else 0
+    buckets = [(f"≤{first - 1}", sum((counts[str(y)] for y in years if y < first), collections.Counter()))] if years and years[0] < first else []
+    buckets += [(str(y), counts[str(y)]) for y in range(first, years[-1] + 1)] if years else []
+    buckets += [("Undated", counts["Undated"])] if "Undated" in counts else []
+    return [label for label, _ in buckets], [("Reviewed", [c[True] for _, c in buckets]), ("Metadata only", [c[False] for _, c in buckets])]
+
+
+def platforms_by_group(rows):
+    """Curated resources per platform facet by kind group; facets overlap, so a resource counts on each of its platforms."""
+    curated = [r for r in rows if r["review_status"] == "curated"]
+    present = [(env, label) for env, label in PLATFORMS if any(env in r["environments"] for r in curated)]
+    return [label for _, label in present], [(name, [sum(r["kind"] in kinds and env in r["environments"] for r in curated) for env, _ in present]) for name, kinds in CHART_GROUPS]
+
+
+def chart_files(rows):
+    years, review = papers_by_year(rows)
+    platforms, groups = platforms_by_group(rows)
+    files = {}
+    for theme in THEMES:
+        files[f"docs/assets/papers-by-year-{theme}.svg"] = stacked_columns("papers-by-year", theme, "Papers and surveys per year",
+            f"{sum(map(sum, (values for _, values in review))):,} records by publication year; {sum(review[0][1]):,} have an editorial relevance review.", years, review, THEMES[theme]["ordinal"][::-1])
+        files[f"docs/assets/platforms-{theme}.svg"] = stacked_bars("platforms", theme, "Curated resources per platform",
+            "Environment tags overlap: a resource tagged with several platforms counts on each.", platforms, groups, THEMES[theme]["categorical"])
+    return files
+
+
+def chart_lines(rows, lang="en", base="docs/"):
+    """Light/dark <picture> embeds with data-derived alt text; base is the path from the page to docs/."""
+    text = README_TEXT[lang]
+    years, review = papers_by_year(rows)
+    platforms, groups = platforms_by_group(rows)
+    labels, totals, reviewed = (years, [sum(column) for column in zip(*(values for _, values in review))], review[0][1]) if years else (["—"], [0], [0])
+    peak = max(range(len(labels)), key=totals.__getitem__)
+    platform_totals = sorted(zip(platforms, map(sum, zip(*(values for _, values in groups)))), key=lambda item: -item[1])
+    dated = [label for label in labels if label != "Undated"] or labels
+    alts = {"papers-by-year": text["chart_years"].format(total=sum(totals), first=dated[0], last=dated[-1], peak=labels[peak], n=totals[peak], reviewed=reviewed[peak]),
+        "platforms": text["chart_platforms"].format(leaders=text["list_separator"].join(f"{label} {n:,}" for label, n in platform_totals[:3]))}
+    pictures = [f'<picture><source media="(prefers-color-scheme: dark)" srcset="{base}assets/{slug}-dark.svg"><img src="{base}assets/{slug}-light.svg" alt="{esc(alt)}"></picture>'
+        for slug, alt in alts.items()]
+    return [pictures[0], "", pictures[1], "", text["chart_exact"].format(base=base)]
+
+
 MATRIX_ENVIRONMENTS = ["web", "desktop", "windows", "macos", "linux", "android", "ios", "harmonyos", "cross-platform", "unspecified"]
 
 
@@ -692,6 +746,7 @@ def documents(rows, report):
         f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved after accounting for scope exclusions and for {report.get('non_resource_candidates',0):,} reviewed non-resource links and {report.get('alias_candidates',0):,} other addresses of indexed resources, which stay in the review queue with their reasons.",
         f"- {len(report['pending_editorial'])} editorial proposals await verification or review.", "",
         "These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.", "",
+        *chart_lines(rows, base=""), "",
         "## Curated coverage by kind and environment", "", "Counts of source-reviewed resources. A resource tagged with several environments counts in each column; `·` marks an empty cell, which is where contributions are most needed.", "",
         *matrix_lines(report["curated_by_kind_and_environment"]), "",
         "## Source snapshot coverage", "", "The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources. Sources overlap. These figures do not measure global completeness or editorial recall.", "",
@@ -727,6 +782,7 @@ def documents(rows, report):
         "- Name changes, repository transfers, and related resource families need continuing entity resolution.", "",
         "See [methodology](methodology.md) for the inclusion boundary and [the review queue](../data/review-queue.jsonl) for actionable gaps.", ""]
     files["docs/coverage.md"] = "\n".join(lines)
+    files.update(chart_files(rows))
     return files
 
 
@@ -765,6 +821,11 @@ README_TEXT = {
         "kinds": {"benchmark": "Benchmarks", "model": "Models", "dataset": "Datasets", "framework": "Frameworks", "agent": "Agents"},
         "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {},
+        "chart_years": ("Stacked column chart of {total:,} paper and survey records by publication year, {first} to {last}. Each column stacks reviewed records at the base "
+            "and metadata-only records above. {peak} has the most records: {n:,}, of which {reviewed:,} are reviewed."),
+        "chart_platforms": ("Horizontal stacked bar chart of curated resources per platform, split into benchmarks and datasets, models, systems, and papers. "
+            "Largest: {leaders}. Environment tags overlap, so one resource can count on several platforms."),
+        "list_separator": ", ", "chart_exact": "Exact counts: [bibliography by year]({base}papers.md) · [resources by platform]({base}environments.md)",
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
         "stats": ("**{total:,} resource records** · **{curated:,} curated** · **{arxiv:,} paper and survey records** · **{sources} discovery documents**\n\n"
             "Evidence through `{as_of}`. {metadata:,} records have bibliographic verification only; {unindexed:,} discovered identifiers remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
@@ -779,6 +840,9 @@ README_TEXT = {
         "recent_header": "| 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |",
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
             "infrastructure": "基础设施", "product": "产品", "company": "发布方"},
+        "chart_years": "堆叠柱状图：按发表年份统计的 {total:,} 条论文与综述记录，范围为 {first} 至 {last}。每列底部为已审阅记录，上方为仅完成书目核实的记录。{peak} 年记录最多，共 {n:,} 条，其中 {reviewed:,} 条已审阅。",
+        "chart_platforms": "横向堆叠条形图：各平台的已审阅资源数量，按基准与数据集、模型、系统和论文分段。数量最多的是 {leaders}。环境标签可以重叠，同一资源可计入多个平台。",
+        "list_separator": "、", "chart_exact": "精确计数：[按年份的论文目录]({base}papers.md) · [按平台的资源]({base}environments.md)",
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
         "stats": ("**{total:,} 条资源记录** · **{curated:,} 条已审阅** · **{arxiv:,} 条论文与综述记录** · **{sources} 个发现来源文档**\n\n"
             "证据截至 `{as_of}`。{metadata:,} 条记录仅完成书目核实；{unindexed:,} 个已发现的标识符尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
@@ -954,7 +1018,7 @@ def build(args):
         path = ROOT / filename
         if path.exists():
             blocks = {"STATS": stats_block(report, lang), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
-                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
+                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang), "CHARTS": "\n\n" + "\n".join(chart_lines(rows, lang)) + "\n\n"}
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():
                 # A function replacement keeps backslashes in generated Markdown literal.

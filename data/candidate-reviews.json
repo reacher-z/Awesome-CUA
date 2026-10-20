@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:b0676300ea65342ee07f",
+    "url": "https://www.nature.com/articles/s41467-026-69010-1",
+    "decision": "out_of_scope",
+    "reason": "This Nature Communications article (2026; arXiv 2508.04039) shows that large reasoning models can autonomously run persuasive multi-turn text conversations that jailbreak other chat models. The attacks happen only in conversation, with no browser, GUI, tool or device actions, so it concerns language-model safety rather than computer-use agents.",
+    "reviewed_at": "2026-10-20T05:10:05Z",
+    "evidence": {
+      "url": "https://www.nature.com/articles/s41467-026-69010-1.pdf",
+      "sha256": "43f722b05ec4dbb432f19e2bbc47ab9baa45bed850d5f5130c7a287c60e35386",
+      "retrieved_at": "2026-10-20T04:25:43Z"
+    }
   }
 ]

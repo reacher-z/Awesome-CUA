@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "AI Planning Framework for LLM-Based Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.12710",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Maps step-by-step, tree-search and full-plan-in-advance web agents to BFS, best-first and DFS search, proposes five trajectory-quality metrics, and adds 794 author-recorded human trajectories for WebArena tasks.",
+    "verify_terms": [
+      "AI Planning Framework for LLM-Based Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.12710v1"
+    ],
+    "scope": "core",
+    "notes": "Experiments run all 812 WebArena tasks with GPT-4o-mini, comparing WebArena's step-by-step agent with the authors' Full-Plan-in-Advance agent; both act on accessibility-tree observations. The authors completed 794 of the 812 tasks by hand to form the reference trajectories, and several metrics use an LLM judge to match agent steps against them. The paper links metrics code and the trajectory dataset at github.com/shahnovsky/WebArena-Human-Trajectory-Dataset. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.12710v1",
+        "retrieved_at": "2026-10-20T04:30:58Z",
+        "sha256": "0bb78856554cd660e0a2d41343516ff647b60c6d113f3298834ac5304d3a7c00",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 3 to 6 (planning taxonomy, accessibility-tree observation, five metrics, experimental setup on 812 WebArena tasks, human gold trajectory annotation and results).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c45626c4d6a8717b650fd5bf9dc66b699a19816273993506c7819c3dc4ee01ec",
+    "reviewed_at": "2026-10-20T04:31:13Z"
   }
 ]

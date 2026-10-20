@@ -63653,5 +63653,42 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "AEM: Adaptive Entropy Modulation for Multi-Turn Agentic Reinforcement Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.00425",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning"
+    ],
+    "scope": "adjacent",
+    "summary": "Proposes AEM, a supervision-free credit assignment method for multi-turn agent RL that rescales advantages with a response-level uncertainty proxy, evaluated on ALFWorld, WebShop and SWE-bench-Verified.",
+    "verify_terms": [
+      "Adaptive Entropy Modulation for Multi-Turn"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.00425v3"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v3 full text adds AEM to GRPO, DAPO and GSPO with Qwen2.5-1.5B and 7B Instruct on ALFWorld and WebShop, a simulated HTML shopping environment, and integrates it into DeepSWE (Qwen3-32B) for SWE-bench-Verified. The web component is WebShop only. The paper names no code repository. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.00425v3",
+        "sha256": "9f1bdb89104e62384a178386a1ee85a8e6dc9667e0992c9fb6ddda6a33cf7368",
+        "retrieved_at": "2026-10-20T04:22:40Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and checked the v3 HTML for the benchmarks, base RL methods and model sizes. No code execution or result reproduction.",
+    "reviewed_sha256": "8d550f66ca897fb91b440166760ec68b6fa8d814d51141d5d13e126380d78e91",
+    "reviewed_at": "2026-10-20T04:22:49Z"
   }
 ]

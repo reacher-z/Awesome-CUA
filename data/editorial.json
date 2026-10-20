@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "\"I Strongly Suspect This Website Is a Scam\": Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.00497",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Introduces Scammer4U, a pre-registered benchmark of 91 attacker-controlled sites and 10 benign twins measuring PII submission by web agents under social engineering; agents often submit data even after flagging a scam.",
+    "verify_terms": [
+      "Benchmarking PII Leakage and Detection without Defense"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.00497v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v1 full text runs GPT-5 mini, Claude Haiku 4.5, Gemini 3 Flash and Llama 4 Scout in one Playwright harness that observes each page as a screenshot plus flattened DOM, against locally served Flask sites. It releases the environments, harness and analysis at github.com/sohambuilds/llmsocialengg. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2606.00497v1",
+        "sha256": "407fad4f8dcbadf2cf003315dde8b0fc4df7279ced589d288a11335f23149ea4",
+        "retrieved_at": "2026-10-20T04:00:50Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the harness, observation format, evaluated models, environment hosting and release link. No code execution or result reproduction.",
+    "reviewed_sha256": "c70682df3703c34ce677e96d937e77bf2835dc0d24c964ebcab1c9dbff008a2a",
+    "reviewed_at": "2026-10-20T04:10:35Z"
   }
 ]

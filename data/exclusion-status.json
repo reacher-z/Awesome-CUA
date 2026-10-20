@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2070,6 +2070,23 @@
       "reason": "DeVI learns physics-based character motion and dexterous human–object interaction from synthetic video. It evaluates physical-motion reconstruction and manipulation rather than software-interface agents.",
       "reviewed_at": "2026-10-17T14:30:31.862259+00:00",
       "metadata_fingerprint": "93850aa8de82f5a3d98c62931eaabc5784e162c3d0798b70ca68e903ce7cdf71",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2604.03598%2C2604.04759%2C2604.05547%2C2604.06170%2C2604.07340%2C2604.10547%2C2604.10938%2C2604.11978%2C2604.12282%2C2604.13018%2C2604.13346%2C2604.13954%2C2604.15579%2C2604.15671%2C2604.15715%2C2604.16520%2C2604.18240%2C2604.18934%2C2604.19572%2C2604.19667%2C2604.19742%2C2604.20841%2C2604.20987%2C2604.22436%2C2604.23781%2C2604.24479%2C2604.26148%2C2604.27621%2C2604.27996%2C2604.28093%2C2604.28139%2C2604.28181%2C2605.00425%2C2605.01462%2C2605.02240%2C2605.03042%2C2605.03242%2C2605.04811%2C2605.05191%2C2605.05811%2C2605.06110%2C2605.07073%2C2605.07358%2C2605.08374%2C2605.08985%2C2605.10912%2C2605.10966%2C2605.11363%2C2605.11732%2C2605.11817&max_results=50",
+        "sha256": "05ec5d668ac75d3d7c5b71ea7d6e76a3fbf5ebeb742e0843db2329e5e41aa208",
+        "retrieved_at": "2026-10-17T12:31:19Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2604.20987",
+      "name": "Co-Evolving LLM Decision and Skill Bank Agents for Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2604.20987",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents COSPLAY, which co-evolves an LLM decision agent with a skill-bank agent that extracts reusable skills from unlabeled rollouts, evaluated on 2048, Candy Crush, Tetris, Super Mario Bros, Avalon and Diplomacy. The full text converts every game observation into a structured text state and has the agent emit discrete text actions through a Gym-style API, so this game-playing agent work involves no GUI, browser or device interaction and is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:25:01Z",
+      "metadata_fingerprint": "38e1527cca0eae5dea2f64f3759cd952655a6a9e860393af78ff151d62529e80",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2604.03598%2C2604.04759%2C2604.05547%2C2604.06170%2C2604.07340%2C2604.10547%2C2604.10938%2C2604.11978%2C2604.12282%2C2604.13018%2C2604.13346%2C2604.13954%2C2604.15579%2C2604.15671%2C2604.15715%2C2604.16520%2C2604.18240%2C2604.18934%2C2604.19572%2C2604.19667%2C2604.19742%2C2604.20841%2C2604.20987%2C2604.22436%2C2604.23781%2C2604.24479%2C2604.26148%2C2604.27621%2C2604.27996%2C2604.28093%2C2604.28139%2C2604.28181%2C2605.00425%2C2605.01462%2C2605.02240%2C2605.03042%2C2605.03242%2C2605.04811%2C2605.05191%2C2605.05811%2C2605.06110%2C2605.07073%2C2605.07358%2C2605.08374%2C2605.08985%2C2605.10912%2C2605.10966%2C2605.11363%2C2605.11732%2C2605.11817&max_results=50",
         "sha256": "05ec5d668ac75d3d7c5b71ea7d6e76a3fbf5ebeb742e0843db2329e5e41aa208",

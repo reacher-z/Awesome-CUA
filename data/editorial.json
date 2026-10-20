@@ -63844,5 +63844,98 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Touchpoint",
+    "kind": "tool",
+    "url": "https://github.com/Touchpoint-Labs/Touchpoint",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "state-tracking"
+    ],
+    "summary": "Python library and MCP server that read native accessibility trees through AT-SPI2, UI Automation and macOS AX, merge Chromium and Electron content over CDP, and act on elements with input fallbacks.",
+    "scope": "core",
+    "verify_terms": [
+      "Touchpoint"
+    ],
+    "aliases": [
+      "touchpoint-py"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Published on PyPI as touchpoint-py (pyproject 0.3.0); the README marks it alpha and tested on Linux X11, Windows and macOS. find() matches element names by exact, contains, word and fuzzy stages; click and other actions use the accessibility action and fall back to xdotool, SendInput or CGEvent input when fallback_input is on. The CDP backend attaches to browsers and Electron apps launched with a remote-debugging port and merges their web content with native window chrome. The touchpoint-mcp server runs in vision mode by default (screenshots, coordinate clicks) or, with TOUCHPOINT_MODE=no-vision, gives agents a structured snapshot of the active window, diff_snapshot and change flags on most actions. Stated limits: no input on pure Wayland, blocking CDP calls and no URL navigation API. No model or agent loop is bundled. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT Python source and PyPI package with native backends for Linux, Windows and macOS, a CDP backend and an MCP server; no model is bundled.",
+      "repository_revision": "f512227621c3e0f4e5675e4e7dbed7aaebdcc76b",
+      "package_version": "0.3.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/Touchpoint-Labs/Touchpoint/f512227621c3e0f4e5675e4e7dbed7aaebdcc76b/README.md",
+        "sha256": "02232f30ba1d164fa3ad514639f278daf2aec3224893bcd150ee03207bc8f92f",
+        "retrieved_at": "2026-10-20T08:32:26Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/Touchpoint-Labs/Touchpoint/f512227621c3e0f4e5675e4e7dbed7aaebdcc76b/pyproject.toml",
+        "sha256": "522dc08b618d61a8ab062cc6af7fd04945cd00c389c8720ed70b0bc2a1196f6b",
+        "retrieved_at": "2026-10-20T08:32:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Touchpoint-Labs/Touchpoint/f512227621c3e0f4e5675e4e7dbed7aaebdcc76b/touchpoint/mcp/server.py",
+        "sha256": "6d7b62cb304f6fc40396a468c59a80900e4a28ff4c363caecb14eea17b37050d",
+        "retrieved_at": "2026-10-20T08:32:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Touchpoint-Labs/Touchpoint/f512227621c3e0f4e5675e4e7dbed7aaebdcc76b/LICENSE",
+        "sha256": "4354cccc246522946fb003947e2dd270b48c0a962f6a20edc0ae80a8638aedad",
+        "retrieved_at": "2026-10-20T08:32:53Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit f512227, pyproject.toml, the MCP server module and the root LICENSE. No code execution.",
+    "reviewed_sha256": "02232f30ba1d164fa3ad514639f278daf2aec3224893bcd150ee03207bc8f92f",
+    "reviewed_at": "2026-10-20T08:34:31Z"
   }
 ]

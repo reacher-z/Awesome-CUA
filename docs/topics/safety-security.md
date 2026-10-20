@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (2)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,7 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| [Panerelay](https://github.com/F-loat/panerelay) | — | code MIT | Chrome and Edge extension with a local bridge that lets agent-browser, Browser Use or Playwright CLI attach over CDP to tabs the user authorized, under a control lease, and gives agents cookie-backed HTTP fetch. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/F-loat/panerelay/HEAD/README.md) |
 
 ## Surveys
 

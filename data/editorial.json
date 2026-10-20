@@ -63844,5 +63844,147 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Panerelay",
+    "kind": "tool",
+    "url": "https://github.com/F-loat/panerelay",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Chrome and Edge extension with a local bridge that lets agent-browser, Browser Use or Playwright CLI attach over CDP to tabs the user authorized, under a control lease, and gives agents cookie-backed HTTP fetch.",
+    "scope": "adjacent",
+    "aliases": [
+      "@panerelay/setup"
+    ],
+    "verify_terms": [
+      "Panerelay"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Adjacent because Panerelay supplies browser attachment, routing and policy while the connected engines keep their own DOM, navigation and interaction semantics; it never installs them. The MV3 extension (debugger permission) attaches chrome.debugger to tabs the user authorized, either the current tab or all supported tabs, and the bridge routes the engines' CDP traffic over loopback without a remote-debugging port; mutating automation needs a visible control lease that the user can release. Fetch runs HTTP(S) requests in the extension background with the browser's cookies after per-domain approval, never returns cookie values, fails closed on redirects, and backs a browser_fetch MCP tool and 99 site adapters (one panerelay.site.ts manifest each) that expose site commands over the same path. A side panel starts or resumes Codex or Claude Code sessions, optionally OpenCode or Qoder over ACP, with the current tab's URL and title as context. Installed with npx @panerelay/setup (0.11.1, tag v0.11.1 at the inspected commit); Chrome is the verified baseline and Edge shares its Chromium implementation. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT source for the extension, bridge, CLI and adapters, a Chrome Web Store listing and npm setup packages; no model or agent runtime is bundled.",
+      "repository_revision": "852dcd8208f58a885187329c185df9167d45c9c3",
+      "release_tag": "v0.11.1",
+      "package_version": "0.11.1"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/README.md",
+        "sha256": "61f2f83ed80e61b62a5cc09951ca0109f8fb6acccbe93394a747c1374c4c3ff5",
+        "retrieved_at": "2026-10-20T08:40:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/skills/panerelay/SKILL.md",
+        "sha256": "e939f1b13d55c014ada732552989e180bb2d57281ab7c365c991d70f5709af64",
+        "retrieved_at": "2026-10-20T08:40:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/apps/extension/manifest.json",
+        "sha256": "b12bc4331d006ea5280c6145ba536c00d88e155eea3f4696410adcdc2749975b",
+        "retrieved_at": "2026-10-20T08:40:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/apps/extension/src/background/index.ts",
+        "sha256": "4fb20a67e3203e96928b0f9a95433e319d8a3b6cedd4653decaad6cbe82c948b",
+        "retrieved_at": "2026-10-20T08:41:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/packages/bridge/README.md",
+        "sha256": "a0eb481b17cfcd456501cf15f740a76638a11b26445ff2ad9b5440948d3d44fa",
+        "retrieved_at": "2026-10-20T08:41:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/packages/setup/package.json",
+        "sha256": "f6b9590e6a5c0acbe8a3a34c5b39841b4ddcfbb7128d070b324f385bb77542e6",
+        "retrieved_at": "2026-10-20T08:41:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/F-loat/panerelay/git/trees/852dcd8208f58a885187329c185df9167d45c9c3?recursive=1",
+        "sha256": "82e886b0f55384dfd9b5206c78961c73f5da9a6b83e255cb36014cfa648311f1",
+        "retrieved_at": "2026-10-20T08:41:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.release_tag",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/F-loat/panerelay/git/ref/tags/v0.11.1",
+        "sha256": "d39665d28d64c2cb99ed5f848c63fc88957dc1dab87dd85c7365a8c82d01d5d0",
+        "retrieved_at": "2026-10-20T08:41:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/F-loat/panerelay/852dcd8208f58a885187329c185df9167d45c9c3/LICENSE",
+        "sha256": "196be81ce3b84612d3f1f42944c30a48edfe26c1edb7296bdc78caa6463e4e86",
+        "retrieved_at": "2026-10-20T08:41:19Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "61f2f83ed80e61b62a5cc09951ca0109f8fb6acccbe93394a747c1374c4c3ff5",
+    "reviewed_at": "2026-10-20T08:43:10Z"
   }
 ]

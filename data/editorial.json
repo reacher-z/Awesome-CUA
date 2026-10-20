@@ -63844,5 +63844,78 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AutoData: A Multi-Agent System for Open Web Data Collection",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.15859",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "efficiency",
+      "evaluation"
+    ],
+    "scope": "adjacent",
+    "summary": "Introduces AutoData, a multi-agent system whose research squad studies web sources and whose development squad writes and tests crawler or REST API code, plus Instruct2DS, a live web data-collection benchmark.",
+    "verify_terms": [
+      "AutoData: A Multi-Agent System for Open Web Data Collection"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.15859v1"
+    ],
+    "notes": "Adjacent: the system's output is a generated Python collection program, not step-by-step page operation. The research squad (plan, web, tool and blueprint agents) explores sources and writes a blueprint; the development squad (engineering, test and validation agents) implements, runs and checks the program; OHCache routes messages over an oriented hypergraph and caches artifacts such as HTML files. The v1 paper does not name the web agent's tools and lists a headless-browser agent for client-side-rendered or login-protected sites as future work. Its code link, github.com/GraphResearcher/AutoData, points to github.com/Tianyi-Billy-Ma/AutoData, where at commit 11d5a6c the web agent is a browser agent built on the Browser Use library. Experiments use 234 sampled Instruct2DS tasks (81 academic, 81 stock-market, 72 sports) with Manus, OpenManus, AutoAgent, AutoAgents, Cursor, Cline and human programmers as baselines, plus SWDE, Extended SWDE and HumanEval. No results were reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2505.15859v1",
+        "sha256": "8eea1df8d858ebb1d7b347db847292f475cebfff5163b180775affbdcd86e438",
+        "retrieved_at": "2026-10-20T08:39:49Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/GraphResearcher/AutoData/b0cda21d5e5cc6d74b54019ce0abdb98c260685d/README.md",
+        "sha256": "11d5a1caffdcf4a653e1c435be44a8039b802fb1ca3996f869e89bac2b6a4773",
+        "retrieved_at": "2026-10-20T08:40:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Tianyi-Billy-Ma/AutoData/11d5a6c89a5de268fe7b996938d996e209c20de8/README.md",
+        "sha256": "1e7469a001c9e729dcd250a8b8953e18eafcfa3df850387c42cbda512e615812",
+        "retrieved_at": "2026-10-20T08:39:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Tianyi-Billy-Ma/AutoData/11d5a6c89a5de268fe7b996938d996e209c20de8/autodata/agents/browser_agent.py",
+        "sha256": "fc57e05cffc94709b528de61f707c74ca72aa083565b3fe766f2c43f61af9af5",
+        "retrieved_at": "2026-10-20T08:39:57Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and full v1 HTML text (Sections 1-6 and Appendices A-H, including baselines, Instruct2DS task counts in D.4, error analysis and limitations); read the GraphResearcher/AutoData README and the Tianyi-Billy-Ma/AutoData README and agents/browser_agent.py at the pinned commits. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f1283fa929fe52658ec5c220125217a76605e4013af49787a0d627ff11feef8c",
+    "reviewed_at": "2026-10-20T08:41:19Z"
   }
 ]

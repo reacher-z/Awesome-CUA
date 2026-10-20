@@ -63844,5 +63844,60 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Dia",
+    "kind": "product",
+    "url": "https://www.diabrowser.com",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "safety-security"
+    ],
+    "summary": "AI browser from The Browser Company for macOS and Windows whose assistant reads open tabs and connected work apps, with an approval-gated agentic mode that fills forms and drafts replies on the current site.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Dia"
+    ],
+    "aliases": [
+      "Dia Browser"
+    ],
+    "notes": "The homepage presents Dia as a work browser: a morning brief, reports and slide decks assembled from tabs and connected tools such as Slack, Notion, Teams and GSuite, plus profiles, split views and tab grouping. The security page describes the agent's safeguards: a chat starts without access to other tabs or write actions until the user grants them, form fills and email drafts are shown for approval before they are inserted, irreversible actions stay as drafts, agentic mode sees only approved context and cannot navigate to another website on its own, and password fields and irreversible action buttons are hidden from it. The same page names GPT, Claude and Gemini as the underlying models and says The Browser Company is part of Atlassian. Agent capabilities and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://www.diabrowser.com/security",
+        "sha256": "3b25b21d131ab01010fa6b3547021fef09f0d2695837508350b9bf900c579fb0",
+        "retrieved_at": "2026-10-20T04:34:57Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2c9e3fd869d2bded9f2634171eb33a2ac9a1f95970ba14c566beb86eb558c695",
+    "reviewed_at": "2026-10-20T04:35:11Z"
   }
 ]

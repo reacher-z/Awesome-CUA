@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1666,6 +1666,23 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
         "retrieved_at": "2026-10-16T06:36:54Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2504.14348",
+      "name": "Manipulating Multimodal Agents via Cross-Modal Prompt Injection",
+      "url": "https://arxiv.org/abs/2504.14348",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract proposes CrossInject, a cross-modal prompt injection attack that aligns adversarial image perturbations with malicious instructions and optimizes a malicious textual command against an LLM-constructed defensive system prompt. Per the full text, the victims are two visual question-answering chatbots (RecipeMaster and PoetryGenius on Qwen2-VL-2B and Phi-3.5-vision) that receive the injection through local documents or HTML-wrapped webpage text placed in the prompt, plus a LIMO smart vehicle on a physical driving track. No evaluated agent navigates a browser or operates a GUI, so the paper is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T08:24:28Z",
+      "metadata_fingerprint": "b7357551dd1b44d440d1f97795c663a0c1f4f162baf824a376714f4c6fc92d77",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2504.03206%2C2504.03601%2C2504.06821%2C2504.09723%2C2504.11301%2C2504.11543%2C2504.12609%2C2504.14233%2C2504.14348%2C2504.14603%2C2504.16073%2C2504.16419%2C2504.17892%2C2504.18580%2C2504.20965%2C2505.00019%2C2505.00693%2C2505.01578%2C2505.02094%2C2505.03570%2C2505.03574%2C2505.05026%2C2505.05849%2C2505.06507%2C2505.07003%2C2505.07473%2C2505.10468%2C2505.10887%2C2505.12053%2C2505.12490%2C2505.12728%2C2505.13291%2C2505.14030%2C2505.14454%2C2505.14646%2C2505.15801%2C2505.15816%2C2505.17020%2C2505.18746%2C2505.19095%2C2505.19713%2C2505.20023%2C2505.20732%2C2505.20795%2C2505.21055%2C2505.22304%2C2505.22429%2C2505.23450%2C2505.23559%2C2506.00641&max_results=50",
+        "sha256": "27144160e8981bb9f36b60c391689774913ff3f026eeeffc2923154c404a6529",
+        "retrieved_at": "2026-10-17T07:57:47Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

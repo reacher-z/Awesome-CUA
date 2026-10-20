@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9e0666bdb6a9d63b6ac2",
+    "url": "https://tongyi-mai.github.io/MAI-UI-blog/Grounding-Blog",
+    "decision": "alias",
+    "target_id": "github:tongyi-mai/mobileworld",
+    "reason": "Redirect to the MobileWorld team grounding blog post, whose source is a file on the gh-pages branch of the indexed MobileWorld repository and which the benchmark website lists on its Blog page."
   }
 ]

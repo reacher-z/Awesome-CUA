@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2510.00515",
+    "name": "Efficient Multi-modal Large Language Models via Progressive Consistency Distillation",
+    "url": "https://arxiv.org/abs/2510.00515",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract proposes EPIC, progressive token-wise and layer-wise consistency distillation for training multimodal LLMs under visual token compression. The full text trains LLaVA-1.5-based models and evaluates them on ten general visual understanding benchmarks (VQAv2, GQA, VizWiz, ScienceQA-IMG, TextVQA, POPE, MME, MMBench, MMBench-CN and OCRBench), with no GUI screens, interface benchmarks or agents, so this general MLLM efficiency work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T07:42:56Z",
+    "metadata_fingerprint": "042cb195660be4d6c773d3217b28a43ab99905cfcca795022353ee3a8f1a1306",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2508.20410%2C2508.20890%2C2508.21456%2C2509.00088%2C2509.00531%2C2509.00969%2C2509.01684%2C2509.03536%2C2509.04018%2C2509.04908%2C2509.05368%2C2509.05831%2C2509.06917%2C2509.07098%2C2509.07553%2C2509.08820%2C2509.10345%2C2509.10540%2C2509.11253%2C2509.12543%2C2509.12987%2C2509.13615%2C2509.14547%2C2509.14744%2C2509.15061%2C2509.15237%2C2509.17336%2C2509.19185%2C2509.19199%2C2509.21072%2C2509.21291%2C2509.21766%2C2509.21799%2C2509.22715%2C2509.22830%2C2509.23738%2C2509.24704%2C2509.25455%2C2509.25693%2C2510.00172%2C2510.00515%2C2510.02190%2C2510.04491%2C2510.05096%2C2510.05156%2C2510.05788%2C2510.07284%2C2510.07915%2C2510.08787%2C2510.09517&max_results=50",
+      "sha256": "3429cc2fc7737050cac964c976293fc4793e52c5913636c1f67d04243fbefb6a",
+      "retrieved_at": "2026-10-17T07:57:56Z"
+    }
   }
 ]

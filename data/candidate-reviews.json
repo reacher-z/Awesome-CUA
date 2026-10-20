@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0c048ad66a9bde20d50e",
+    "url": "https://openreview.net/forum?id=XLMAMmowdY",
+    "decision": "out_of_scope",
+    "reason": "This ICLR 2025 paper represents each of over 47,000 API tools as a vocabulary token so a language model retrieves and calls tools by generating them. It covers text tool calling only and describes no graphical-interface, web-page or device interaction, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:17:00Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20250711094410id_/https://openreview.net/forum?id=XLMAMmowdY",
+      "sha256": "9414c4f1ab8bc957102a98ca6b4bd0d77856aaa550605dd8782bf418db629e49",
+      "retrieved_at": "2026-10-19T06:39:05Z"
+    }
   }
 ]

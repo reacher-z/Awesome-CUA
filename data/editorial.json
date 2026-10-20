@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "GTA: Generating Long-Horizon Tasks for Web Agents at Scale",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.29218",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "evaluation",
+      "web-navigation",
+      "long-horizon"
+    ],
+    "summary": "GTA crawls site graphs of over 50 live websites and generates multi-hop web tasks paired with replay-validated trajectories, yielding 5,000 single-site and 600 cross-site tasks evaluated with Browser Use and AgentOccam.",
+    "verify_terms": [
+      "GTA: Generating Long-Horizon Tasks"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.29218v1"
+    ],
+    "scope": "core",
+    "notes": "Per the v1 full text (Sections 2 to 4), the generated tasks cover English, Italian, German and Japanese websites, and human performance on GTA tasks is reported as 85%. The arXiv comment states publication in the proceedings of the 64th Annual Meeting of the ACL. The paper names the code repository github.com/tenghaohuang/GTA, which is not curated here. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.29218v1",
+        "sha256": "ae602a787b328f205ea30a199628297b8f3382d83150211e5ac6750cfbc3778f",
+        "retrieved_at": "2026-10-20T04:08:54Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "996f547f7dbb232a4d8ed152baf9faf124de0f2a73b85500afd42baabf1bd4ee",
+    "reviewed_at": "2026-10-20T04:08:55Z"
   }
 ]

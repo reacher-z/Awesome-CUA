@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.15863",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "workflow",
+      "web-navigation"
+    ],
+    "summary": "Proposes PolySkill, which induces web-agent skills that separate an abstract goal from site-specific implementations, and measures skill reuse and success on Mind2Web, WebArena and unseen shopping sites.",
+    "verify_terms": [
+      "PolySkill: Learning Generalizable Skills"
+    ],
+    "scope": "core",
+    "notes": "Skill induction builds on the verification pipeline of ASI and is compared with ASI and SkillWeaver. Mind2Web success is scored by a GPT-4.1 automatic judge rather than by reference actions; WebArena uses its functional checks. Continual-learning runs move from WebArena shopping to Amazon and Target, and a task-free setting has the agent propose its own exploration tasks. Backbones are GPT-4.1, Claude-3.7-Sonnet, Qwen3-Coder-480B-A35B and GLM-4.5, run through the BrowserGym API. Code is linked at github.com/simonucl/PolySkill and is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-6, Tables 1-2, the continual-learning and self-exploration experiments, and the appendices.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.15863v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.15863v2",
+        "retrieved_at": "2026-10-20T07:39:19Z",
+        "sha256": "242aa216ca74e2dbda1b7e93d7e156370a03eba5bcba065a61e7b1ba23810ef2",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d2c37604b798524ae5b244e2969449174303e974c1b4191d3784b284b0d5577e",
+    "reviewed_at": "2026-10-20T07:39:38Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-166 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+167 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (2)](#surveys) · [Papers (145)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (2)](#surveys) · [Papers (146)](#papers)
 
 ## Benchmarks
 
@@ -153,6 +153,7 @@ All entries in this section: ios.
 | 2025‑10‑28 | [MGA: Memory-Driven GUI Agent for Observation-Centric Interaction](https://arxiv.org/abs/2510.24168) | desktop | Introduces MGA, which separates task-agnostic screen-state reading from decision making and connects steps through structured state memory. Validated state deltas replace full trajectory replay, evaluated on OSWorld and application tasks. |
 | 2025‑10‑24 | [OpenPhone: Mobile Agentic Foundation Models](https://arxiv.org/abs/2510.22009) | android | OpenPhone trains a compact mobile policy with supervised learning followed by GRPO on synthetic GUI data, incorporating reasoning and memory management. Its device-cloud design handles routine work locally and delegates complex subtasks, with online evaluation on AndroidLab. |
 | 2025‑10‑22 | [Surfer 2: The Next Generation of Cross-Platform Computer Use Agents](https://arxiv.org/abs/2510.19949) | web, desktop, android | Surfer2 combines hierarchical context management with separate planning and execution, self-verification, and recovery for visual computer use. It evaluates the framework across web, desktop, and Android tasks without task-specific fine-tuning. |
+| 2025‑10‑17 | [PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction](https://arxiv.org/abs/2510.15863) | web | Proposes PolySkill, which induces web-agent skills that separate an abstract goal from site-specific implementations, and measures skill reuse and success on Mind2Web, WebArena and unseen shopping sites. |
 | 2025‑10‑13 | [R-WoM: Retrieval-augmented World Model For Computer-use Agents](https://arxiv.org/abs/2510.11892) | desktop, web | R-WoM evaluates how well world models predict nearby GUI states, align complete procedures, and recognize milestone transitions. It retrieves external tutorials to guide simulated future interactions, with experiments on subsets of OSWorld and WebArena. |
 | 2025‑10‑12 | [BrowserAgent: Building Web Agents with Human-Inspired Web Browsing Actions](https://arxiv.org/abs/2510.10666) | web | Trains BrowserAgent to use Playwright-based scrolling, clicking and typing directly on webpages for information-seeking tasks. Supervised and rejection fine-tuning are paired with explicit memory for conclusions carried across steps. |
 | 2025‑10‑10 | [Auto-scaling Continuous Memory for GUI Agent](https://arxiv.org/abs/2510.09038) | unspecified | Encodes GUI trajectories into compact continuous embeddings that can be retrieved directly into an agent’s input. An automated environment-discovery and rollout pipeline expands this memory for long tasks and unfamiliar interfaces. |

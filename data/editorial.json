@@ -63674,7 +63674,7 @@
     "verify_terms": [
       "Browse AI"
     ],
-    "notes": "The help center describes three ways to train a robot: Table Studio, where AI proposes the columns from a URL; Robot Studio, which records the user's point-and-click actions, turning typed text into input parameters and keeping clicks, dropdown and checkbox choices and navigation as fixed actions; and a Chrome extension that trains in the user's own browser when neither studio can load the site. Robots can sign in with session cookies or a password, paginate, scroll, capture screenshots and run on schedules or in bulk, and the llms.txt file states cloud-based execution. The interactions serve data extraction and change monitoring. Prices, usage figures and reliability are publisher statements and were not independently tested.",
+    "notes": "The help center describes two ways to train a robot: Table Studio, where AI builds the data table from a URL, and Robot Studio, where the user shows the robot what to capture through visual point-and-click training; the llms.txt file also lists a Chrome extension for robot training. Trained robots mimic a user to sign in with stored credentials, fill forms and searches, click buttons, toggles and dropdowns, paginate and scroll, capture screenshots and run on schedules or in bulk, and the llms.txt file states cloud-based execution. The interactions serve data extraction and change monitoring. Prices, usage figures and reliability are publisher statements and were not independently tested.",
     "details": {
       "access": "publisher-managed",
       "pricing_url": "https://browse.ai/pricing",
@@ -63697,29 +63697,6 @@
         "supports": [
           "summary",
           "topics",
-          "notes"
-        ],
-        "url": "https://help.browse.ai/en/articles/16774543-choosing-between-table-studio-robot-studio-and-the-chrome-extension.md",
-        "sha256": "23f056c68349ec8ab9fceac1443cbb87ef4a0df434b76c7eb088c5bb25fac883",
-        "retrieved_at": "2026-10-20T04:26:57Z"
-      },
-      {
-        "role": "primary",
-        "method": "editorial_primary_review",
-        "supports": [
-          "summary",
-          "topics",
-          "notes"
-        ],
-        "url": "https://help.browse.ai/en/articles/10497039-can-my-robot-fill-out-a-form-or-perform-an-action-before-extracting-data.md",
-        "sha256": "1f1305a3b9bdb63dea3d7638b463c01a116169cc9886f2c2ba42dbc170fa67f9",
-        "retrieved_at": "2026-10-20T04:26:58Z"
-      },
-      {
-        "role": "primary",
-        "method": "editorial_primary_review",
-        "supports": [
-          "summary",
           "notes"
         ],
         "url": "https://help.browse.ai/en/articles/10445807-what-are-robots-and-what-can-they-do.md",

@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ab48e5c07b077687cf24",
+    "url": "https://www.icml-computeruseagents.com",
+    "decision": "not_a_resource",
+    "reason": "Former site of the ICML 2025 Workshop on Computer Use Agents (Vancouver, 19 July 2025), an event page linked as the venue of a paper, not a resource. The domain has since lapsed: the live URL serves a script redirect to a parking subdomain, and Wayback shows a parking page from 14 May 2026 after the last workshop capture on 10 October 2025."
   }
 ]

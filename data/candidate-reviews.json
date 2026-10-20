@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ef24f7780616205eb54f",
+    "url": "https://xiao9905.github.io/AutoGLM",
+    "decision": "alias",
+    "target_id": "arxiv:2411.00820",
+    "reason": "Project website of the indexed AutoGLM paper, with the same title and 30 authors; it also announces the separately indexed Open-AutoGLM release."
   }
 ]

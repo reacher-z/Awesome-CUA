@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2607.01084",
+    "name": "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
+    "url": "https://arxiv.org/abs/2607.01084",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract formalizes OpenAgent, tool-use agents facing shifts in queries, tool sets, interaction dynamics and domains, measures SFT and RL agents in a controlled sandbox across perception, interaction, reasoning and internalization tiers, and proposes Perturbation-Augmented Fine-Tuning. Per the full text, the sandbox is a local Python environment that simulates function calls over a database, with no GUI, browser or device interaction, so this function-calling robustness study is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T03:58:24Z",
+    "metadata_fingerprint": "a3a6a4af532024ddb112ff17843524981d38697c0d0f782a486a3c14fafc3761",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
+      "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",
+      "retrieved_at": "2026-10-17T12:31:28Z"
+    }
   }
 ]

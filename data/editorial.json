@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "D-Artemis: A Deliberative Cognitive Framework for Mobile GUI Multi-Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.21799",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "self-reflection",
+      "planning",
+      "grounding",
+      "mobile-navigation"
+    ],
+    "summary": "D-Artemis drives general multimodal LLMs on phones with app-specific tip retrieval, a trained thought-action consistency check that triggers action correction, and post-execution status reflection.",
+    "verify_terms": [
+      "A Deliberative Cognitive Framework for Mobile GUI Multi-Agents"
+    ],
+    "scope": "core",
+    "notes": "The manager agent observes screenshots only. Evaluated on AndroidWorld (116 tasks in a live emulator) with Qwen2.5-VL-72B-Instruct and GUI-Owl-32B base models, and on the mobile subset of ScreenSpot-V2 with Qwen2.5-VL-72B; reported results are 75.8% success on AndroidWorld and 96.8% on ScreenSpot-V2. The base models are not trained on trajectory data, while the consistency checker is a separately fine-tuned Qwen2.5-VL-7B (Appendix D). The paper names no code release, and no results were reproduced.",
+    "read_basis": "Read the arXiv v3 abstract and the full v3 HTML text: Sections 1-6, Tables 1-2 and Appendices D, F and I; checked the v3 PDF for code links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.21799v3"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.21799v3",
+        "retrieved_at": "2026-10-20T07:40:09Z",
+        "sha256": "07283da44f7ef4a35ca297bcfe460bb9c70d1b8cb0f3203f4b90b395be7befb0",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cf8abf78bdeb8b11a6a7292a5c64a0ee3fc995f4755da3ea627f873a076c0216",
+    "reviewed_at": "2026-10-20T07:40:11Z"
   }
 ]

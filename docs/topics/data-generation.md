@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+340 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -276,6 +276,7 @@ All entries in this section: android.
 | 2025‑08‑29 | [UItron: Foundational GUI Agent with Advanced Perception and Planning](https://arxiv.org/abs/2508.21767) | desktop, cross-platform | UItron combines GUI perception and planning data engineering with supervised training and curriculum reinforcement learning in connected mobile and PC environments. It also collects more than one million operation steps across 100 Chinese apps and builds offline and online evaluation environments. |
 | 2025‑08‑21 | [Mobile-Agent-v3: Fundamental Agents for GUI Automation](https://arxiv.org/abs/2508.15144) | cross-platform | Introduces GUI-Owl models and Mobile-Agent-v3 orchestration, using environment-generated trajectories to support GUI capabilities. |
 | 2025‑08‑18 | [A Functionality-Grounded Benchmark for Evaluating Web Agents in E-commerce Domains](https://arxiv.org/abs/2508.15832) | web | Amazon-Bench generates functionality-specific web tasks from page content and interactive controls, covering operations beyond product search. Its evaluator checks task completion and unintended changes to account state, such as address or purchase settings. |
+| 2025‑08‑12 | [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/abs/2508.09124) | desktop | Introduces OdysseyBench, 602 office tasks across Word, Excel, PDF, email and calendar apps whose details are spread over multi-day dialogues, generated with the HomerAgents multi-agent framework. |
 | 2025‑08‑12 | [OpenCUA: Open Foundations for Computer-Use Agents](https://arxiv.org/abs/2508.09123) | desktop | Presents demonstration collection infrastructure, the AgentNet dataset, and a training pipeline for open computer-use models. |
 | 2025‑08‑06 | [Evolving in Tasks: Empowering the Multi-modality Large Language Model as the Computer Use Agent](https://arxiv.org/abs/2508.04037) | unspecified | The Self-Evolution Agent combines automatic generation of verifiable computer-use trajectories with step-wise reinforcement learning for long-horizon training. It also describes a model-enhancement procedure that integrates grounding and planning capabilities without an additional training stage. |
 | 2025‑08‑06 | [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://arxiv.org/abs/2508.04700) | desktop | SEAgent explores unfamiliar software using a world-state assessor and an automatically generated task curriculum. It learns from failed and successful interactions through adversarial imitation and GRPO, then combines specialist experience into a generalist agent evaluated on five OSWorld software environments. |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-166 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+167 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (2)](#surveys) · [Papers (145)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (2)](#surveys) · [Papers (146)](#papers)
 
 ## Benchmarks
 
@@ -168,6 +168,7 @@ All entries in this section: ios.
 | 2025‑08‑30 | [KG-RAG: Enhancing GUI Agent Decision-Making via Knowledge Graph-Driven Retrieval-Augmented Generation](https://arxiv.org/abs/2509.00366) | android, web, desktop, cross-platform | KG-RAG converts UI transition graphs into a searchable vector store and uses intent-guided retrieval to construct actionable navigation paths. It introduces KG-Android-Bench and KG-Harmony-Bench and evaluates transfer from mobile apps to web and desktop tasks. |
 | 2025‑08‑25 | [PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration](https://arxiv.org/abs/2508.18040) | unspecified | Introduces PerPilot and the PerInstruct dataset for completing user-specific mobile instructions through memory retrieval, app exploration, and clarification when missing context remains unresolved. |
 | 2025‑08‑23 | [WebSight: A Vision-First Architecture for Robust Web Agents](https://arxiv.org/abs/2508.16987) | web | WebSight uses a vision-language model trained on web-interface examples within a modular agent with planning, action, verification, and episodic memory components. It evaluates element clicking on Showdown Clicks and full browsing tasks on WebVoyager using visual observations. |
+| 2025‑08‑12 | [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/abs/2508.09124) | desktop | Introduces OdysseyBench, 602 office tasks across Word, Excel, PDF, email and calendar apps whose details are spread over multi-day dialogues, generated with the HomerAgents multi-agent framework. |
 | 2025‑07‑29 | [MapAgent: Trajectory-Constructed Memory-Augmented Planning for Mobile Task Automation](https://arxiv.org/abs/2507.21953) | android | Builds reusable page memories from past mobile trajectories and retrieves them to support task planning and execution. |
 | 2025‑07‑01 | [WebArxiv: A Reproducible Benchmark for Evaluating Multimodal Web Agents on arXiv Tasks](https://arxiv.org/abs/2507.00938) | web | WebArxiv provides 510 static-snapshot tasks with deterministic answers for scholarly browsing, including constrained paper retrieval, content extraction, and cross-paper comparison. The study also tests dynamic retrieval of interaction history to address repetitive or incomplete agent reasoning. |
 | 2025‑06‑22 | [Chain-of-Memory: Enhancing GUI Agents for Cross-Application Navigation](https://arxiv.org/abs/2506.18158) | unspecified | Chain-of-Memory explicitly records action descriptions and task-relevant screen information in short- and long-term memory for GUI navigation. GUI Odyssey-CoM provides 111,000 screen-action pairs with memory annotations for learning and evaluating information retention across applications. |

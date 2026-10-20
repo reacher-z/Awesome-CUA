@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-102 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+103 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (5)](#frameworks) · [Papers (90)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (5)](#frameworks) · [Papers (91)](#papers)
 
 ## Benchmarks
 
@@ -118,6 +118,7 @@ All entries in this section: web.
 | 2025‑09‑04 | [MobileRAG: Enhancing Mobile Agent with Retrieval-Augmented Generation](https://arxiv.org/abs/2509.03891) | unspecified | MobileRAG combines retrieval and memory components to support mobile tasks that need external knowledge or long action sequences. MobileRAG-Eval is introduced to study these requirements on complex real-world app tasks. |
 | 2025‑09‑02 | [AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent](https://arxiv.org/abs/2509.02444) | unspecified | Describes a mobile-agent stack combining region-based coordinate correction, hierarchical task planning, multi-agent voting, and reuse of successful interaction traces. |
 | 2025‑09‑01 | [FlashAdventure: A Benchmark for GUI Agents Solving Full Story Arcs in Diverse Adventure Games](https://arxiv.org/abs/2509.01052) | unspecified | FlashAdventure evaluates GUI agents on completing story arcs in 34 adventure games. It pairs an automated gameplay judge with COAST, a framework that keeps long-term clue memory to plan and complete sequential objectives. |
+| 2025‑08‑12 | [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/abs/2508.09124) | desktop | Introduces OdysseyBench, 602 office tasks across Word, Excel, PDF, email and calendar apps whose details are spread over multi-day dialogues, generated with the HomerAgents multi-agent framework. |
 | 2025‑08‑02 | [NaturalGAIA: A Verifiable Benchmark and Hierarchical Framework for Long-Horizon GUI Tasks](https://arxiv.org/abs/2508.01330) | unspecified | NaturalGAIA builds verifiable long-horizon GUI tasks from human interaction intents while separating causal task structure from its verbal description. Its LightManus-Jarvis framework divides dynamic planning and context management from execution based on visual and structural interface information. |
 | 2025‑07‑21 | [MobileUse: A GUI Agent with Hierarchical Reflection for Autonomous Mobile Operation](https://arxiv.org/abs/2507.16853) | android | MobileUse reflects on errors at action and task timescales, invoking reflection when needed and using proactive exploration to learn unfamiliar apps. It evaluates this mobile execution framework on AndroidWorld and AndroidLab and describes a toolkit for physical-device operation. |
 | 2025‑06‑17 | [AgentSynth: Scalable Task Generation for Generalist Computer-Use Agents](https://arxiv.org/abs/2506.14205) | desktop, web | AgentSynth composes easily generated subtasks into longer computer-use tasks and trajectories with adjustable difficulty. Its evaluation uses the number of subtasks to probe how agent success changes as task complexity grows. |

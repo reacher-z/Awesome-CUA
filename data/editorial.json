@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.09124",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "cross-app",
+      "memory",
+      "data-generation"
+    ],
+    "summary": "Introduces OdysseyBench, 602 office tasks across Word, Excel, PDF, email and calendar apps whose details are spread over multi-day dialogues, generated with the HomerAgents multi-agent framework.",
+    "verify_terms": [
+      "OdysseyBench: Evaluating LLM Agents on Long-Horizon"
+    ],
+    "scope": "adjacent",
+    "notes": "OdysseyBench+ (300 tasks) turns OfficeBench tasks into long user-assistant dialogues, and OdysseyBench-Neo (302 tasks) is synthesized from scratch by HomerAgents-Neo, built on Magentic-One. Agents act in a Docker environment with pre-installed applications operated through Python libraries, and the saved file system is checked with exact, fuzzy and execution-based evaluation. Models are compared with the full dialogue history in context and with RAG over raw or summarized dialogue. The paper links github.com/microsoft/OdysseyBench. No results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract, the full v1 HTML text (Sections 3-6) and the PDF for release links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2508.09124v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2508.09124v1",
+        "retrieved_at": "2026-10-20T08:08:18Z",
+        "sha256": "569e66def94041bbf265eae75a9b7abaeae8b106a10fb697b621a7493b705e4b",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "78b7a9a3699515e19bfe378ec22905a54493af0dbb9fd22437cce7733abee7a5",
+    "reviewed_at": "2026-10-20T08:08:43Z"
   }
 ]

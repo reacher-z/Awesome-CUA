@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (205)](#papers)
 
 ## Benchmarks
 
@@ -314,6 +314,7 @@ All entries in this section: web, desktop, android, windows.
 | 2025‑08‑27 | [CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning](https://arxiv.org/abs/2508.20096) | desktop | CODA combines a generalist planner with a specialist GUI executor and trains application-specific planners through decoupled GRPO. Successful specialist trajectories then support supervised training of a consolidated planner, evaluated across four ScienceBoard applications. |
 | 2025‑08‑19 | [ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents](https://arxiv.org/abs/2508.14040) | desktop | Combines API and GUI actions with distributed desktop reinforcement learning and alternating supervised training to address training instability. |
 | 2025‑08‑12 | [FineState-Bench: A Comprehensive Benchmark for Fine-Grained State Control in GUI Agents](https://arxiv.org/abs/2508.09241) | desktop, web, cross-platform | FineState-Bench evaluates fine-grained GUI perception and control across desktop, web, and mobile interfaces. Its Visual Diagnostic Assistant separates perception and localization contributions in controlled interaction experiments. |
+| 2025‑08‑12 | [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/abs/2508.09124) | desktop | Introduces OdysseyBench, 602 office tasks across Word, Excel, PDF, email and calendar apps whose details are spread over multi-day dialogues, generated with the HomerAgents multi-agent framework. |
 | 2025‑08‑12 | [OpenCUA: Open Foundations for Computer-Use Agents](https://arxiv.org/abs/2508.09123) | desktop | Presents demonstration collection infrastructure, the AgentNet dataset, and a training pipeline for open computer-use models. |
 | 2025‑08‑06 | [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://arxiv.org/abs/2508.04700) | desktop | SEAgent explores unfamiliar software using a world-state assessor and an automatically generated task curriculum. It learns from failed and successful interactions through adversarial imitation and GRPO, then combines specialist experience into a generalist agent evaluated on five OSWorld software environments. |
 | 2025‑08‑05 | [CoAct-1: Computer-using Multi-Agent System with Coding Actions](https://arxiv.org/abs/2508.03923) | desktop | CoAct-1 delegates subtasks between a GUI operator and a programmer that executes Python or Bash. Its OSWorld evaluation studies a hybrid action space in which scripts handle suitable file and data operations while visual interaction handles other steps. |

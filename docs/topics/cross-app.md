@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-54 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+55 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (36)](#papers)
 
 ## Benchmarks
 
@@ -71,6 +71,7 @@ All entries in this section: desktop, linux.
 | 2026‑01‑18 | [Mind the Gap: Action Rebinding Attacks against Android GUI Agents](https://arxiv.org/abs/2601.12349) | android | Studies action-rebinding attacks in which an Android GUI agent’s planned input is redirected to a different application during the observation–action delay. The evaluation examines cross-application execution and the consequences of treating an earlier screen as the current action target. |
 | 2025‑12‑30 | [ProSoftArena: Benchmarking Hierarchical Capabilities of Multimodal Agents in Professional Software Environments](https://arxiv.org/abs/2601.02399) | windows, desktop | ProSoftArena evaluates 436 professional-software tasks across six disciplines and 13 applications in a Windows 11 virtual-machine environment. Its capability hierarchy, execution-based checks, and human-in-the-loop evaluation cover precise GUI operations and multi-software workflows. |
 | 2025‑09‑19 | [GUI-ReWalk: Massive Data Generation for GUI Agent via Stochastic Exploration and Intent-Aware Reasoning](https://arxiv.org/abs/2509.15738) | android | GUI-ReWalk begins with stochastic interface exploration and then infers goals to generate coherent action trajectories. It supports long-horizon workflows across applications and studies training on the resulting data using grounding and navigation benchmarks. |
+| 2025‑08‑12 | [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/abs/2508.09124) | desktop | Introduces OdysseyBench, 602 office tasks across Word, Excel, PDF, email and calendar apps whose details are spread over multi-day dialogues, generated with the HomerAgents multi-agent framework. |
 | 2025‑06‑22 | [Chain-of-Memory: Enhancing GUI Agents for Cross-Application Navigation](https://arxiv.org/abs/2506.18158) | unspecified | Chain-of-Memory explicitly records action descriptions and task-relevant screen information in short- and long-term memory for GUI navigation. GUI Odyssey-CoM provides 111,000 screen-action pairs with memory annotations for learning and evaluating information retention across applications. |
 | 2025‑05‑16 | [Creating General User Models from Computer Use](https://arxiv.org/abs/2505.10831) | unspecified | Proposes general user models that turn computer-use observations into confidence-weighted propositions and revise them as new context arrives. Demonstrations use this memory to contextualize assistants, manage notifications, and support proactive actions across apps. |
 | 2025‑05‑06 | [OSUniverse: Benchmark for Multimodal GUI-navigation AI Agents](https://arxiv.org/abs/2505.03570) | desktop | Introduces OSUniverse, a desktop GUI benchmark spanning precise clicks through multistep and multiapplication tasks. It provides both manual scoring and an automated validation mechanism. |

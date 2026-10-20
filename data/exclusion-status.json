@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1798,6 +1798,23 @@
       "reason": "The abstract trains quantum circuits to decode quantum error-correcting codes and correct noisy quantum hardware. This quantum error-correction method is outside the GUI/computer-use agent scope.",
       "reviewed_at": "2026-10-17T05:31:21Z",
       "metadata_fingerprint": "c5d9e8b48166c90f4ffba593c5973bea5c9aecc1e9500a617e1b8bc6f171994d",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
+        "retrieved_at": "2026-10-16T06:36:50Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2507.02592",
+      "name": "WebSailor: Navigating Super-human Reasoning for Web Agent",
+      "url": "https://arxiv.org/abs/2507.02592",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents WebSailor, a post-training recipe for information-seeking agents that combines synthesized high-uncertainty questions built by structured sampling and information obfuscation, a rejection-sampling fine-tuning cold start and the DUPO reinforcement-learning algorithm. Its ReAct agent acts only through a Google search tool and a visit tool that retrieves page text with Jina and summarizes it, and it is evaluated on BrowseComp-en, BrowseComp-zh, a 103-question text-only GAIA subset, xbench-DeepSearch and a SimpleQA subset. No browser is rendered or operated, so this search-API deep-research agent is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T08:04:58Z",
+      "metadata_fingerprint": "326ada50e376426afc411526a21d0d369cfeb0a71196da1da21f26435e091658",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",

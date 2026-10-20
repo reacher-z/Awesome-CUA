@@ -1905,6 +1905,21 @@
     }
   },
   {
+    "id": "arxiv:2606.07074",
+    "name": "SlimSearcher: Training Efficiency-Aware Web Agents via Adaptive Reward Gating",
+    "url": "https://arxiv.org/abs/2606.07074",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract presents SlimSearcher, which trains deep-research search agents with Pareto-efficient trajectory filtering and adaptive reward gating to cut tool calls on GAIA, BrowseComp and XBench-DeepSearch. Its experiments use the Serper search API and Jina Reader page parsing rather than a browser or GUI, so the work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:01:58Z",
+    "metadata_fingerprint": "c3402df9b8f89c8481bc98723a5b6a752ce568fadf9b39a2dd5c1926b750132f",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=200&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "aeacc1a41bb90f3d296823356174fe77d1547ffbe7cd56652cf9d98fca09206c",
+      "retrieved_at": "2026-10-16T06:36:36Z"
+    }
+  },
+  {
     "id": "arxiv:2606.07723",
     "name": "VoLo: A Physical Orchestrator for Open-Vocabulary Long-Horizon Manipulation",
     "url": "https://arxiv.org/abs/2606.07723",

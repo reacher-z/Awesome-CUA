@@ -63844,5 +63844,65 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Selenium",
+    "kind": "infrastructure",
+    "url": "https://github.com/SeleniumHQ/selenium",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation"
+    ],
+    "summary": "Browser automation project implementing W3C WebDriver, with Java, Python, Ruby, .NET and JavaScript bindings, Selenium Grid for spreading sessions across machines, and the Rust-based Selenium Manager for driver setup.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Selenium",
+      "WebDriver"
+    ],
+    "notes": "The repository README addresses contributors and points users to the documentation on selenium.dev, the project website. The inspected tree holds the WebDriver bindings (java, py, rb, dotnet, javascript), the Java Grid server, the Internet Explorer driver (cpp/iedriver) and Selenium Manager (rust), a command-line tool that locates or downloads browsers and drivers. Selenium IDE, the record-and-playback tool also presented on selenium.dev, lives in the separate SeleniumHQ/selenium-ide repository. Agents use Selenium as an execution layer for browser actions; it contains no agent or model of its own.",
+    "details": {
+      "repository_revision": "0839e44f91d7c0dd660f2ad21a4fe1dc29d2623c",
+      "availability": "Published source and language packages; no release was installed or run"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/SeleniumHQ/selenium/git/trees/0839e44f91d7c0dd660f2ad21a4fe1dc29d2623c?recursive=1",
+        "sha256": "223db50df54239caa7d0413212e9b32debc17f7c872c93217b76749c0414770b",
+        "retrieved_at": "2026-10-20T05:02:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/SeleniumHQ/selenium/0839e44f91d7c0dd660f2ad21a4fe1dc29d2623c/rust/README.md",
+        "sha256": "38588ba31b43bb9e9df672451edaa4a35ace2ffe826367b28204747744a9e3ec",
+        "retrieved_at": "2026-10-20T05:02:47Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete README, rust/README.md at commit 0839e44, the recursive tree at that commit, the root LICENSE, the GitHub repository metadata (id 7613257, not a fork, Apache-2.0) and the selenium.dev home page. No build or test run.",
+    "reviewed_sha256": "ef1a1505315cb887dcf485f657947cbab59c11cdd8c63b32ffc54af413ac6f31",
+    "reviewed_at": "2026-10-20T05:02:59Z"
   }
 ]

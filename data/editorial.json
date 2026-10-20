@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Scaling, Benchmarking, and Reasoning of Vision-Language Agents for Mobile GUI Navigation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.27134",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "data-generation",
+      "reinforcement-learning"
+    ],
+    "summary": "Introduces HyperTrack, over 16,000 tasks from 650+ Chinese Android apps, and GUIEvalKit, an offline toolkit unifying five mobile benchmarks with semi-online evaluation, and compares SFT and RL scaling.",
+    "verify_terms": [
+      "Scaling, Benchmarking, and Reasoning of Vision-Language Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.27134v1"
+    ],
+    "scope": "core",
+    "notes": "Reviewed against the v1 abstract and HTML full text (Sections 2 to 4, Appendix A.2); ICML 2026 per the arXiv comment. UI-TARS-1.5-7B and Qwen3-VL-8B-Thinking are fine-tuned with SFT and DAPO-style RL on HyperTrack subsets of increasing size. GUIEvalKit covers AndroidControl, AiTZ, GUI Odyssey, CAGUI and HyperTrack, and its semi-online evaluation is compared with AndroidWorld online success for six models. Per Appendix A.2, the experiments use the full HyperTrack dataset, while the public link (huggingface.co/datasets/HyperTrackPreview/HyperTrackPreview) holds only a preview test subset pending privacy and compliance review. The paper names the toolkit code at github.com/xiaomi-research/guievalkit. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.27134v1",
+        "sha256": "eb164d9441cbe0231b760461bdebaa1b6430bd8bc0c797f3851574f33d16d23f",
+        "retrieved_at": "2026-10-20T04:01:16Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2e112103392c13f6a37dceb724222b70f29cc4cf5467f02d689ca4e2e4db36f8",
+    "reviewed_at": "2026-10-20T04:12:58Z"
   }
 ]

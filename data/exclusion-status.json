@@ -2016,7 +2016,7 @@
       "url": "https://arxiv.org/abs/2602.05665",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys graph-based memory for LLM agents, covering a memory taxonomy, extraction, storage, retrieval and evolution techniques, libraries and benchmarks. Web benchmarks appear only as one benchmark category, and its applications cover conversational, code, recommender, finance, game, robotics, medical and science agents rather than GUI, browser or device agents, so it is outside the computer-use scope.",
+      "reason": "The abstract surveys graph-based memory for LLM agents, covering a memory taxonomy, extraction, storage, retrieval and evolution techniques, libraries and benchmarks. Web tasks appear only in one benchmark paragraph (WebShop, WebArena, MT-Mind2Web and others), and its applications cover conversational, code, recommender, finance, game, robotics, medical and science agents, where Cradle's screenshot-based computer control is a single game-agent example, so this general agent-memory survey is outside the computer-use scope.",
       "reviewed_at": "2026-10-20T04:45:28Z",
       "metadata_fingerprint": "89a7ade748c72730f9dfbf3fb2b4eb7bf8dce0957a723224ded371005d7d24ab",
       "evidence": {

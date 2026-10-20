@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:200bc4728f6d34f3386b",
+    "url": "https://vigilworkshop.github.io/static/papers-2021/26.pdf",
+    "decision": "alias",
+    "target_id": "arxiv:2104.08560",
+    "reason": "ViGIL 2021 workshop copy of the MoTIF paper; the PDF has the same title and six authors as arXiv 2104.08560, whose comment records acceptance at ViGIL at NAACL 2021."
   }
 ]

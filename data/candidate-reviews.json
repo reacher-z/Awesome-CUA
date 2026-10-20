@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c326531c8636d22689cc",
+    "url": "https://anonymous.4open.science/r/MemGUI-Bench-Anonymous",
+    "decision": "not_a_resource",
+    "reason": "Anonymous GitHub double-blind review copy of the MemGUI-Bench code, linked from its ICLR 2026 submission abstract. Its README describes an anonymous submission holding only the core implementation, and the service does not disclose the source repository; the paper is arxiv:2602.06075."
   }
 ]

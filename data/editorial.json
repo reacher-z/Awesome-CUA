@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "WebATLAS: An LLM Agent with Experience-Driven Memory and Action Simulation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.22732",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "world-models",
+      "planning",
+      "training-free"
+    ],
+    "summary": "Proposes WebATLAS, a training-free web agent that builds a cognitive map by curiosity-driven exploration and simulates candidate actions in a planner-actor-critic loop; 63.0% on 165 WebArena-Lite tasks.",
+    "verify_terms": [
+      "Experience-Driven Memory and Action Simulation"
+    ],
+    "scope": "core",
+    "notes": "Built on AgentOccam with Claude-4-Sonnet and evaluated only on the 165-task WebArena-Lite subset. Before evaluation, explorer subagents without task rewards seed a cognitive map of observation-action-observation transitions with LLM-written summaries; semantic memory stores site constraints such as input formats. The critic retrieves the recorded next observation for each candidate action from the map instead of having the LLM predict it (unexplored nodes return a placeholder), and replanning uses the look-ahead results. Reported averages: 63.0% with multi-site tasks and 67.1% without, against 53.9% for Plan-and-Act and 47.9% for an AgentOccam rerun with the same model; Table 2 ablates the map, summarization, planner and look-ahead. Workshop paper (LAW 2025). The paper names no code release, and no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-6, Tables 1-2.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.22732v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.22732v2",
+        "retrieved_at": "2026-10-20T07:49:43Z",
+        "sha256": "66a5b7821255238c9dd3239cc3d7887056d5fa491f32a87e59d90cf5ecb6ef4b",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "19225ee4bef8980fcc11afc640a9af33e6417ef51ec36dcec7ff87851b5a1afe",
+    "reviewed_at": "2026-10-20T07:52:00Z"
   }
 ]

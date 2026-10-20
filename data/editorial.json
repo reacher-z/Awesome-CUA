@@ -63844,5 +63844,113 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Open Browser Use",
+    "kind": "tool",
+    "url": "https://github.com/iFurySt/open-browser-use",
+    "aliases": [
+      "open-browser-use"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Agent-runtime-neutral Chrome automation layer that pairs an extension with a native-messaging CLI, giving agents tab control and raw CDP commands through a CLI, an MCP server, a skill and JavaScript, Python and Go SDKs.",
+    "verify_terms": [
+      "Open Browser Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iFurySt/open-browser-use/HEAD/README.md"
+    ],
+    "notes": "Published by iFurySt; the README presents it as an open-source alternative to the Chrome browser-use capability in Codex.app. A Manifest V3 extension (apps/chrome-extension) with the debugger, nativeMessaging, tabs, scripting and history permissions on all URLs runs commands through chrome.debugger and talks to the Go `open-browser-use` CLI (alias obu), registered as a Chrome native messaging host whose relay (internal/host/relay.go) serves local clients over a socket. `obu mcp` exposes MCP tools for listing, opening and claiming tabs, navigation, page info, history, raw CDP commands, a browser cursor overlay, file-chooser handling, session naming and line-oriented action plans. SDKs are published as open-browser-use-sdk on npm and PyPI plus a Go package, and a skill installs into Codex or Claude Code. An Electron package for embedded in-app browsers is in the workspace but, per the README, not yet published to npm. It ships no model; the calling agent decides the actions. Root LICENSE is MIT; not a fork, not archived; release v1.1.0 tags an earlier commit than the inspected one. Code was read, not run.",
+    "details": {
+      "availability": "Public Go CLI, Chrome extension, SDK and skill source; npm, PyPI, Homebrew and Chrome Web Store distributions; no model.",
+      "repository_revision": "b136cac71a3c497b5696aefd871dd15cba7d7559"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/iFurySt/open-browser-use/git/trees/b136cac71a3c497b5696aefd871dd15cba7d7559?recursive=1",
+        "sha256": "a4357d47bc9b4b5fde95c55e943da2624b2c2455544e0323d95f5f9c5a3dbadc",
+        "retrieved_at": "2026-10-20T08:15:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/iFurySt/open-browser-use/b136cac71a3c497b5696aefd871dd15cba7d7559/LICENSE",
+        "sha256": "0fdb775e00e6fdde23984b4f1184cd13c34135caac1e714ad489141c239704bc",
+        "retrieved_at": "2026-10-20T08:15:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/iFurySt/open-browser-use/b136cac71a3c497b5696aefd871dd15cba7d7559/apps/chrome-extension/manifest.json",
+        "sha256": "26692811923038aa527a833866fc0c47bf1ec9b4a30b5a06a7b78d19d8d5da06",
+        "retrieved_at": "2026-10-20T08:15:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/iFurySt/open-browser-use/b136cac71a3c497b5696aefd871dd15cba7d7559/apps/chrome-extension/background.js",
+        "sha256": "cee121532e6ec6a3f52eb3ffd8ab2e36a1ce6ce5e750c2549d63f34de1633420",
+        "retrieved_at": "2026-10-20T08:15:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/iFurySt/open-browser-use/b136cac71a3c497b5696aefd871dd15cba7d7559/cmd/open-browser-use/mcp.go",
+        "sha256": "9a838b5a31b5b40790cc89080e5b66fd9b5cde2f82c713e8bec2840a249dba75",
+        "retrieved_at": "2026-10-20T08:15:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/iFurySt/open-browser-use/b136cac71a3c497b5696aefd871dd15cba7d7559/internal/host/relay.go",
+        "sha256": "fa4d06b42c32c1c9a8a2df9b7a3197b68adf58e8f96367f0493a686ef83dda93",
+        "retrieved_at": "2026-10-20T08:15:36Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2e48f131345057efc4ac56935f2d2a702c716e4e9d67c65a39caaef16d50baf0",
+    "reviewed_at": "2026-10-20T08:16:03Z"
   }
 ]

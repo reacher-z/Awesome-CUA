@@ -1183,8 +1183,17 @@
           "Python/Playwright action mode"
         ],
         "evaluation": "Gymnasium reset/step interface delegates reward, completion, messages and task info to each adapter’s validate() method. There is no universal BrowserGym success metric or shared task total; retain benchmark/adapter version and action subset for comparisons.",
-        "counts": [],
-        "notes": "A framework with interactive browser adapters and a static WebLINX evaluation integration, so the profile setting is mixed. README-listed integrations are not added as disjoint tasks or datasets. Core requires Playwright/Chromium; individual benchmarks have their own setup, credentials, licenses and validation rules. Apache-2.0 covers repository code only. No browser tasks or third-party project code were executed.",
+        "counts": [
+          {
+            "value": 10,
+            "unit": "integrated benchmarks",
+            "qualifier": "exact",
+            "population": "benchmarks the README lists as included by default: MiniWoB, WebArena, WebArenaVerified, VisualWebArena, WorkArena, AssistantBench, WebLINX, OpenApps, TimeWarp and Knows",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/ServiceNow/BrowserGym/HEAD/README.md"
+          }
+        ],
+        "notes": "A framework with interactive browser adapters and a static WebLINX evaluation integration, so the profile setting is mixed. The count is the README's list of benchmarks included by default (WebLINX as a static benchmark); it is not a task total, and the integrations are not added as disjoint tasks or datasets. Core requires Playwright/Chromium; individual benchmarks have their own setup, credentials, licenses and validation rules. Apache-2.0 covers repository code only. No browser tasks or third-party project code were executed.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/ServiceNow/BrowserGym/HEAD/README.md",
           "https://raw.githubusercontent.com/ServiceNow/BrowserGym/HEAD/browsergym/core/src/browsergym/core/env.py",

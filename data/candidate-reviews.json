@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:bf3a83fc163f29db9770",
+    "url": "https://xufangzhi.github.io/symbol-llm-page",
+    "decision": "out_of_scope",
+    "reason": "This page is the project website of Symbol-LLM (arXiv 2311.09278), which instruction-tunes language models on 34 symbolic tasks such as SQL, knowledge-graph queries, code, logic and planning. It does not build or evaluate agents that operate graphical, web or mobile interfaces, so the page and the paper are outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T05:12:09Z",
+    "evidence": {
+      "url": "https://xufangzhi.github.io/symbol-llm-page",
+      "sha256": "942697bed5f248ace4e5498f7fe40058b1dfb7bcdc9ba76ebf7364b40744bc92",
+      "retrieved_at": "2026-10-20T04:54:58Z"
+    }
   }
 ]

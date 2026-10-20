@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:089e347bd4bcf8981595",
+    "url": "https://drive.google.com/drive/folders/1Gzm44P5QBxvBYUU4BiYW-WlxbiB5M19K",
+    "decision": "not_a_resource",
+    "reason": "Google Drive folder titled WebVLN that the github:webvln/webvln README links for downloading the WebVLN-v1 dataset and pretrained models; a download folder, not a separate resource."
   }
 ]

@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Understanding User Experiences of Computer Use Agents: Design Space and Opportunities for Building Agent UX Prototypes",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.04452",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "human-in-the-loop",
+      "observability"
+    ],
+    "summary": "Builds a 21-subcategory taxonomy of computer-use agent UX, elicits prototyping needs from 12 participants, and studies AgentUXlab, a probe for prototyping browser agent UX, with 14 participants.",
+    "verify_terms": [
+      "Understanding User Experiences of Computer Use Agents"
+    ],
+    "scope": "core",
+    "notes": "AgentUXlab pairs a workflow editor with an execution interface modified from the CowPilot Chrome extension (arxiv:2501.16609), adding UI-action previews, user-input components and a debug view of screenshots and accessibility trees; study participants prototyped agents for a coffee chain's website. Section 3's taxonomy, built from interviews with eight practitioners and validated in a 20-participant Wizard-of-Oz study, overlaps with arXiv 2602.07283 by an overlapping author team, which reports that taxonomy study alone. Findings are qualitative and were not independently reproduced.",
+    "read_basis": "Read the arXiv v3 abstract, the v3 HTML table of contents and Sections 1, 3.1, 4.1-4.3 (including the AgentUXlab implementation in 4.2.8 and the study protocol in 4.3.1), and checked the v3 PDF title page for links; compared with the arXiv 2602.07283 abstract.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.04452v3"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.04452v3",
+        "retrieved_at": "2026-10-20T07:42:50Z",
+        "sha256": "01e23baf6a4a3a8d47ad6d43c36d40f89d01795cbce8229238053cf054b180eb",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7085f08622175cb421b81f61a338a579a5c07de8ad67a1673b75c1084dbf2bb9",
+    "reviewed_at": "2026-10-20T07:43:17Z"
   }
 ]

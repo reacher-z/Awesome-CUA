@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2104,6 +2104,23 @@
       "reason": "VLAs-as-Tools coordinates vision-language-action policies for bounded physical robot operations. The evaluations concern simulated manipulation and real Franka robot tasks rather than graphical software control.",
       "reviewed_at": "2026-10-17T14:30:31.862255+00:00",
       "metadata_fingerprint": "d3dcc1263ac9135af3abacf49b6e7b2fdd8c5132fca8a6cc20b592bb61bc2502",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2605.12233%2C2605.12493%2C2605.12978%2C2605.13119%2C2605.14133%2C2605.16909%2C2605.17260%2C2605.17324%2C2605.17448%2C2605.17656%2C2605.17721%2C2605.19447%2C2605.19587%2C2605.20894%2C2605.22642%2C2605.23204%2C2605.25233%2C2605.25901%2C2605.26086%2C2605.26144%2C2605.26252%2C2605.26646%2C2605.27209%2C2605.27705%2C2605.27898%2C2605.28158%2C2605.28255%2C2605.29341%2C2605.29463%2C2605.29801%2C2605.30010%2C2605.30052%2C2605.30126%2C2605.30434%2C2605.30907%2C2605.30914%2C2605.31264%2C2605.31557%2C2606.00530%2C2606.00543%2C2606.00856%2C2606.01057%2C2606.01961%2C2606.02540%2C2606.03103%2C2606.03889%2C2606.03895%2C2606.04315%2C2606.04455%2C2606.05525&max_results=50",
+        "sha256": "9a71e95803ce58c462c84e2b45a891555e31d1fb409e643bb3ca4675a44c96e6",
+        "retrieved_at": "2026-10-17T12:31:23Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2605.17324",
+      "name": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
+      "url": "https://arxiv.org/abs/2605.17324",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces ASPI, a 728-scenario benchmark showing that LLM agents become more vulnerable to prompt injection when they seek clarification than when they act on fully specified instructions with adversarial tool-returned data. Per the full text it builds on AgentDojo's simulated workspace, messaging, travel and banking tool suites, with no GUI, browser or device interaction, so it is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:04:48Z",
+      "metadata_fingerprint": "0b4612daebb49b500ae285ade523598a407b2b978057523a7958b78a19de77fb",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2605.12233%2C2605.12493%2C2605.12978%2C2605.13119%2C2605.14133%2C2605.16909%2C2605.17260%2C2605.17324%2C2605.17448%2C2605.17656%2C2605.17721%2C2605.19447%2C2605.19587%2C2605.20894%2C2605.22642%2C2605.23204%2C2605.25233%2C2605.25901%2C2605.26086%2C2605.26144%2C2605.26252%2C2605.26646%2C2605.27209%2C2605.27705%2C2605.27898%2C2605.28158%2C2605.28255%2C2605.29341%2C2605.29463%2C2605.29801%2C2605.30010%2C2605.30052%2C2605.30126%2C2605.30434%2C2605.30907%2C2605.30914%2C2605.31264%2C2605.31557%2C2606.00530%2C2606.00543%2C2606.00856%2C2606.01057%2C2606.01961%2C2606.02540%2C2606.03103%2C2606.03889%2C2606.03895%2C2606.04315%2C2606.04455%2C2606.05525&max_results=50",
         "sha256": "9a71e95803ce58c462c84e2b45a891555e31d1fb409e643bb3ca4675a44c96e6",

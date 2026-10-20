@@ -192,21 +192,36 @@ def resource_body(record, lookup, incoming=None):
     if eligible(r) and r['topics']:
         body+='<h2>Explore related topics</h2><div class="library-topics">'+''.join('<a href="'+topic_path(topic)+'">'+esc(topic_name(topic))+'</a>' for topic in r['topics'])+'</div>'
     if r["notes"]:body+='<h2>Scope and limitations</h2><p>'+esc(r["notes"])+'</p>'
-    if r["relations"]:
-        body+='<h2>Related resources</h2><ul>'+''.join(f'<li>{esc(rel["type"].replace("_"," "))}: <a href="{resource_path(lookup[rel["target_id"]])}">{esc(lookup[rel["target_id"]]["name"])}</a></li>' for rel in r["relations"] if rel["target_id"] in lookup)+'</ul>'
-    backlinks=(incoming or {}).get(r['id'],[])
-    if backlinks:
-        labels={'documented_by':'Documented resource','introduced_by':'Introduced resource','published_by':'Published resource','variant_of':'Model variant','component_of':'Component'}
-        body+='<h2 id="connected-assets">Connected assets</h2><p>These links come from reviewed resource records. A documentation link does not imply a training-data or evaluation dependency.</p><ul>'
-        for rel in backlinks:
-            source=lookup[rel['source_id']]
-            body+=f'<li>{esc(labels.get(rel["type"],rel["type"].replace("_"," ")))}: <a href="{resource_path(source)}">{esc(source["name"])}</a> · {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">relationship evidence</a></li>'
-        body+='</ul>'
+    body+=connections_html(r,lookup,incoming)
     body+='<h2>Primary evidence and verification</h2><p>Source retrieval is separate from experiment reproduction. Use the original publication or publisher page when citing claims about the resource.</p><ol class="source-list">'
     for ev in r["evidence"]:
         body+=f'<li><a href="{safe_href(ev["url"])}">{esc(ev["method"].replace("_"," "))}</a><p>Retrieved {esc(ev["retrieved_at"])}. Supports: {esc(", ".join(ev["supports"]))}.</p><details><summary>Content fingerprint</summary><code>{esc(ev["sha256"])}</code></details></li>'
     body+='</ol><h2>Suggest a correction</h2><p><a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">Open a source-backed correction</a>. Include this record ID and the original source. Read our <a href="/about/">editorial policy</a> and <a href="/coverage/">coverage boundaries</a>.</p>'
     return body
+
+
+# How each reviewed relation reads from the record that states it (outgoing) and from the record it points to (incoming).
+RELATION_LABELS={'introduced_by':('Introduced by','Introduces'),'documented_by':('Documented by','Documents'),'published_by':('Published by','Publishes'),
+    'variant_of':('Variant of','Has variant'),'component_of':('Part of','Has part'),'uses':('Uses','Used by'),'trained_on':('Trained on','Training data for')}
+RELATION_ORDER=list(RELATION_LABELS)
+KIND_BADGES={'paper':('Paper','papers'),'survey':('Survey','papers'),'benchmark':('Benchmark','benchmarks'),'dataset':('Dataset','datasets'),'model':('Model','models'),
+    'agent':('Agent','systems'),'framework':('Framework','systems'),'infrastructure':('Infrastructure','systems'),'tool':('Tool','systems'),'product':('Product','systems'),'company':('Publisher','systems')}
+
+
+def connections_html(r, lookup, incoming):
+    """Reviewed links in both directions as one labeled list: relation, kind badge, name, year and the evidence for the link."""
+    links=[(RELATION_LABELS.get(rel['type'],(rel['type'].replace('_',' ').capitalize(),))[0],rel['type'],lookup[rel['target_id']],rel['evidence_url']) for rel in r['relations'] if rel['target_id'] in lookup]
+    links+=[(RELATION_LABELS.get(rel['type'],(None,rel['type'].replace('_',' ').capitalize()))[1],rel['type'],lookup[rel['source_id']],rel['evidence_url']) for rel in (incoming or {}).get(r['id'],[]) if rel['source_id'] in lookup]
+    if not links:return ''
+    rank=lambda t:RELATION_ORDER.index(t) if t in RELATION_ORDER else len(RELATION_ORDER)
+    body='<h2 id="connected-assets">Connections</h2><p class="relation-note">Reviewed links between catalog records, each with the source that states it. A documentation link does not imply a training-data or evaluation dependency.</p><ul class="relation-list">'
+    for label,kind,other,evidence in sorted(links,key=lambda x:(rank(x[1]),x[0],list(KINDS).index(x[2]['kind']) if x[2]['kind'] in KINDS else 99,x[2]['name'].casefold())):
+        badge,group=KIND_BADGES.get(other['kind'],(other['kind'].title(),'systems'))
+        year=record_date_text(other)[:4]
+        body+=(f'<li class="relation-item"><span class="relation-type">{esc(label)}</span><span class="topic-kind topic-col-{group}">{esc(badge)}</span>'
+               f'<a class="relation-name" href="{resource_path(other)}">{esc(other["name"])}</a><span class="relation-year">{esc(year)}</span>'
+               f'<a class="relation-evidence" href="{safe_href(evidence)}" aria-label="Evidence for this link: {esc(other["name"])}">evidence ↗</a></li>')
+    return body+'</ul>'
 
 
 def resource_markdown(r):

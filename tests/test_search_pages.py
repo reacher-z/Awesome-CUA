@@ -307,7 +307,7 @@ class SearchPagesTests(unittest.TestCase):
         self.assertIn('github:xlang-ai/opencua',assets)
         self.assertTrue(any(r['name']=='AgentNet' and r['id'] in assets for r in self.rows))
         text=(self.dest/resource_path(paper).lstrip('/')/'index.html').read_text()
-        self.assertIn('Connected assets',text);self.assertIn('AgentNet',text)
+        self.assertIn('<h2 id="connected-assets">Connections</h2>',text);self.assertIn('AgentNet',text)
         export=json.loads((self.dest/'downloads/relationships.json').read_text())
         self.assertEqual(export['relation_count'],sum(len(r['relations']) for r in self.rows))
         self.assertTrue(any(e['type']=='documented_by' for e in export['relations']))

@@ -63844,5 +63844,187 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "OysterWorkflow",
+    "kind": "tool",
+    "url": "https://github.com/ShuxinYang111/oysterworkflow",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Desktop app that records screen text, input events and optional voice coaching during real computer work, extracts a reviewable workflow graph with decisions and checks, and serves it to Codex or MCP agents to run.",
+    "scope": "core",
+    "verify_terms": [
+      "OysterWorkflow"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Capture runs through screenpipe, vendored as a git submodule from the publisher's fork alongside a Hermes agent submodule (.gitmodules); the ingest pipeline reads its OCR text, UI input events and audio transcriptions through the local screenpipe API (src/ingest/fetch-ocr.ts, fetch-ui-events.ts, fetch-audio.ts, src/screenpipe/client.ts), with accessibility rows currently disabled. LLM prompts then turn segmented events into candidate workflows and versioned workflow graphs (src/skill/workflow-learning.ts) and generate agent harnesses from surface and app rule packs. The bundled MCP bridge exposes search, fetch, prepare_workflow_run, get_workflow_run, advance_workflow_run and cancel_workflow_run (plugins/oysterworkflow/mcp/tools.json); OysterWorkflow keeps graph state, transitions and retry limits while Codex or another MCP client performs the actions with its own apps and tools, so GUI execution is not implemented here. The README says the current build targets macOS on Apple Silicon and the Windows 0.1.0 build is older. Licensing is split by path between Apache-2.0 and PolyForm Noncommercial 1.0.0. package.json lists version 0.2.2. Code was read, not run.",
+    "details": {
+      "availability": "Public source and release installers (macOS Apple Silicon current; Windows 0.1.0 older); running workflows requires Codex or another MCP client and its model.",
+      "repository_revision": "2d2eb2456f86d7a9c6584a5179fa48c32db4a258",
+      "package_version": "0.2.2",
+      "license_components_note": "Root LICENSE is Apache-2.0 for the open core; LICENSING.md places the desktop product paths under PolyForm Noncommercial 1.0.0, and the screenpipe and Hermes submodules keep their own licenses."
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/README.md",
+        "sha256": "828a374c4ef9d9e13437a525641eff9a57c5bc4cce632e7c2f03eefbd8584314",
+        "retrieved_at": "2026-10-20T08:15:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes",
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/LICENSING.md",
+        "sha256": "af75c34cfc38147ee85c88f0db3f2b5b9b478e405f6971a531e30e3549bb3116",
+        "retrieved_at": "2026-10-20T08:15:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-20T08:15:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/package.json",
+        "sha256": "c6f8355aadecda391ce3a50050ce25d147cf156fa6a7c3279f8ae8f1ec97c012",
+        "retrieved_at": "2026-10-20T08:15:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.license_components_note"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/.gitmodules",
+        "sha256": "41dcb4b5e29ac6516640a445b3c032ca4140680ba684945426600a79896c9421",
+        "retrieved_at": "2026-10-20T08:15:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/src/ingest/fetch-ui-events.ts",
+        "sha256": "18e9ab916d2977156cd16d0f043182015953bff1e0efe0ae0fd8a34a06fb2b57",
+        "retrieved_at": "2026-10-20T08:15:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/src/ingest/fetch-ocr.ts",
+        "sha256": "5f3f3c5b95b2748288540c61772aa2fc390fa6dc18def4d5b6d39b251746ba6a",
+        "retrieved_at": "2026-10-20T08:16:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/src/ingest/fetch-audio.ts",
+        "sha256": "33f5c76c11a0506b6c5dc473b93abc803a111b0079723b5b6a591c570c5b0d1c",
+        "retrieved_at": "2026-10-20T08:16:20Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/src/screenpipe/client.ts",
+        "sha256": "6a3f029f9e9ee3a391eaab90e1f28f69939af1e38e3b22b15b4932a2582ff6b3",
+        "retrieved_at": "2026-10-20T08:15:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/src/skill/workflow-learning.ts",
+        "sha256": "52af997f896fd57adb14fa5b2b15de3de7f86fe66b48d775b22be157e8460030",
+        "retrieved_at": "2026-10-20T08:15:48Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/plugins/oysterworkflow/mcp/tools.json",
+        "sha256": "8b70c309dc825720bf66a5b9ebe6615532c92e1db82926c4bd7cc0e5dc36a7e3",
+        "retrieved_at": "2026-10-20T08:15:49Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0 (open core) and PolyForm-Noncommercial-1.0.0 (desktop product paths)",
+          "url": "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/LICENSING.md",
+          "retrieved_at": "2026-10-20T08:15:45Z",
+          "basis": "Path-scoped licensing read from LICENSING.md and LICENSE at the inspected commit: original open-core code (capture and extraction pipeline, ingest, Screenpipe client, workflow-graph extraction, harness generation, CLI utilities, plugins) is Apache-2.0, while desktop/, ui/, src/product/, src/runtime/, src/lab-api/, src/cloud/, src/codex-workflow/ and other listed desktop-product paths are PolyForm Noncommercial 1.0.0. Vendored submodules and third-party binaries keep their own licenses."
+        },
+        "reason": "Path-scoped licensing read from LICENSING.md and LICENSE at the inspected commit: original open-core code (capture and extraction pipeline, ingest, Screenpipe client, workflow-graph extraction, harness generation, CLI utilities, plugins) is Apache-2.0, while desktop/, ui/, src/product/, src/runtime/, src/lab-api/, src/cloud/, src/codex-workflow/ and other listed desktop-product paths are PolyForm Noncommercial 1.0.0. Vendored submodules and third-party binaries keep their own licenses.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/LICENSING.md",
+          "https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/2d2eb2456f86d7a9c6584a5179fa48c32db4a258/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "828a374c4ef9d9e13437a525641eff9a57c5bc4cce632e7c2f03eefbd8584314",
+    "reviewed_at": "2026-10-20T08:16:38Z"
   }
 ]

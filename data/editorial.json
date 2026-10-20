@@ -63844,5 +63844,125 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AI Mime",
+    "kind": "agent",
+    "url": "https://github.com/prakhar1114/ai_mime",
+    "environments": [
+      "macos",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "automation",
+      "robustness"
+    ],
+    "summary": "macOS app that records a demonstrated task, has an agent compile it into a portable skill of scripts, browser CDP steps and computer-use fallbacks, and patches the skill when a rerun breaks.",
+    "scope": "core",
+    "verify_terms": [
+      "AI Mime"
+    ],
+    "aliases": [
+      "ai_mime"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Requires macOS 13 or newer, Python 3.12 and Accessibility, Screen Recording and Input Monitoring permissions; Windows is not supported yet. The recorder (pynput listeners and mss screenshots) writes a manifest of clicks, typing, hotkeys and scrolls with pre-action screenshots, plus optional extract and detail notes. Reflection turns the trace into a coordinate-free schema.json; an optimizer writes optimized_plan.json, preferring script steps, then browser_harness steps (Chrome CDP through a browser-harness git submodule), then ui_agent steps; a build agent packages a Claude Skill-compatible folder with run.sh, inputs and a fallback plan. The ui_agent drives the Mac in the foreground through cua-computer-server MCP tools, which AI Mime extends with combined screenshot-plus-accessibility-tree reads, and is told to target accessibility elements before screenshot coordinates. Agent runtimes are Anthropic (Claude Code) or OpenAI (Codex), selected during onboarding, with custom providers in user_config.yml. A prebuilt macOS DMG is linked from the README. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT Python source and a prebuilt macOS app; it needs an Anthropic or OpenAI agent runtime and bundles no model.",
+      "repository_revision": "0d5e9d3168cdde02d43448fa4a80521ebac3501d"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/README.md",
+        "sha256": "75bc7660d005f5407470449ddb466695192c3cf56c1052f026ac9449cc299916",
+        "retrieved_at": "2026-10-20T08:38:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/docs/architecture.md",
+        "sha256": "72484de01db7cae978b1a0b8d5efcbe186b16297f3cfbaf471c2541edc3a8452",
+        "retrieved_at": "2026-10-20T08:38:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/src/ai_mime/agent_runner/computer_use.py",
+        "sha256": "33a8ecce99dc84b106a94a6946cec5e11c742c0c66acdaa9e95d06a737a41e21",
+        "retrieved_at": "2026-10-20T08:39:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/src/ai_mime/computer_server_custom.py",
+        "sha256": "8107c5ddd0c3890875ab492a0075adfd308fb9df75e2d82c8e046c86a616c2cd",
+        "retrieved_at": "2026-10-20T08:39:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/src/ai_mime/record/capture.py",
+        "sha256": "a424dc623f967b6d40ee8c9369fd5c19a73345853ff84cac0bec69fd852dbddb",
+        "retrieved_at": "2026-10-20T08:40:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/pyproject.toml",
+        "sha256": "e30cdf0b24abf56cf7465e115dae74f3438e183356e5b3ec82c3531ed068d4b5",
+        "retrieved_at": "2026-10-20T08:39:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/prakhar1114/ai_mime/0d5e9d3168cdde02d43448fa4a80521ebac3501d/LICENSE",
+        "sha256": "9f31d9ff0d3bb24073544e54810ab69bc51f713d2e61334a0a1fa19978cda8da",
+        "retrieved_at": "2026-10-20T08:39:22Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit 0d5e9d3 (harness/browser-harness is a submodule of the prakhar1114/browser-harness fork), docs/architecture.md, the computer-use runner, the custom computer-server tools, the recorder capture module, pyproject.toml and the root LICENSE. No code execution.",
+    "reviewed_sha256": "75bc7660d005f5407470449ddb466695192c3cf56c1052f026ac9449cc299916",
+    "reviewed_at": "2026-10-20T08:41:19Z"
   }
 ]

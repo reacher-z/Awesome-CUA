@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+185 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
 
 ## Benchmarks
 
@@ -28,6 +28,14 @@ All entries in this section: cross-platform.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [RoTS](https://github.com/AlibabaResearch/RoTS) | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
+
+## Agents
+
+All entries in this section: macos, desktop, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [AI Mime](https://github.com/prakhar1114/ai_mime) | — | code MIT | macOS app that records a demonstrated task, has an agent compile it into a portable skill of scripts, browser CDP steps and computer-use fallbacks, and patches the skill when a rerun breaks. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/prakhar1114/ai_mime/HEAD/README.md) |
 
 ## Frameworks
 

@@ -6,67 +6,69 @@
 
 **Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Models
 
-All entries in this section: desktop.
+All entries in this section: Desktop.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [ShowUI-π](https://github.com/showlab/showui-pi) | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | Vision-language-action model and training code for GUI dragging, with links to checkpoints and continuous-action evaluation data. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [ShowUI-π](https://github.com/showlab/showui-pi) [✓](https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md "Source checked 2026-10-16")<br>[2512.24965](https://arxiv.org/abs/2512.24965) (2025) | 3 | Vision-language-action model and training code for GUI dragging, with links to checkpoints and continuous-action evaluation data. |
 
 ## Agents
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
-| [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
-| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
-| [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) | web | [2310.10634](https://arxiv.org/abs/2310.10634) (2023) | code Apache-2.0 | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md) |
-| [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) [✓](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md "Source checked 2026-10-16")<br>[2601.07181](https://arxiv.org/abs/2601.07181) (2026) · code Apache‑2.0 | 1 | Desktop, Windows, macOS | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. |
+| [COLA demo](https://github.com/Alokia/COLA-demo) [✓](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md "Source checked 2026-10-16")<br>[2503.09263](https://arxiv.org/abs/2503.09263) (2025) | · | Desktop, Windows | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. |
+| [Lumen browser agent](https://github.com/omxyz/lumen) [✓](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | Web | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. |
+| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) [✓](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md "Source checked 2026-10-17")<br>code Apache‑2.0 | · | Web | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. |
+| [OpenAgents Web Agent](https://github.com/xlang-ai/OpenAgents/tree/main/real_agents/web_agent) [✓](https://raw.githubusercontent.com/xlang-ai/OpenAgents/HEAD/README.md "Source checked 2026-10-17")<br>[2310.10634](https://arxiv.org/abs/2310.10634) (2023) · code Apache‑2.0 | · | Web | The OpenAgents browser-control component, connecting a Chrome extension to a web agent and local chat platform for navigating sites and completing interface tasks. |
 
 ## Frameworks
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
-| [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
-| [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
-| [Midscene.js](https://github.com/web-infra-dev/midscene) | cross-platform | — | code MIT | Visual automation toolkit for web, mobile, and desktop interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/web-infra-dev/midscene/HEAD/README.md) |
-| [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
-| [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [Midscene.js](https://github.com/web-infra-dev/midscene) [✓](https://raw.githubusercontent.com/web-infra-dev/midscene/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | 2 | Cross‑platform | Visual automation toolkit for web, mobile, and desktop interfaces. |
+| [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) [✓](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md "Source checked 2026-10-18")<br>[2505.13909](https://arxiv.org/abs/2505.13909) (2025) · code MIT | 1 | Desktop, Windows, Linux | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. |
+| [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) [✓](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md "Source checked 2026-10-18")<br>[2506.14205](https://arxiv.org/abs/2506.14205) (2025) · code Apache‑2.0 | · | Desktop, Web | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. |
+| [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) [✓](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md "Source checked 2026-10-18")<br>[2505.16282](https://arxiv.org/abs/2505.16282) (2025) · code Apache‑2.0 | · | Desktop, Linux | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. |
+| [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) [✓](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md "Source checked 2026-10-16")<br>[2610.00948](https://arxiv.org/abs/2610.00948) (2026) · code Apache‑2.0 | · | Desktop | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. |
+| [STEVE / STEVE-R1 research code](https://github.com/FanbinLu/STEVE-R1) [✓](https://raw.githubusercontent.com/FanbinLu/STEVE/HEAD/README.md "Source checked 2026-10-16")<br>[2503.12532](https://arxiv.org/abs/2503.12532) (2025) | · | Desktop, Windows, Linux | Research code and linked models for step-verified computer-use training; the current repository describes STEVE-R1 and its trajectory releases. |
 
 ## Tools
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [agent-browser](https://github.com/vercel-labs/agent-browser) | web | — | code Apache-2.0 | A browser-automation command-line interface that exposes browser state and interaction commands for AI agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/vercel-labs/agent-browser/HEAD/README.md) |
-| [AUITestAgent](https://github.com/bz-lab/AUITestAgent) | unspecified | [2407.09018](https://arxiv.org/abs/2407.09018) (2024) | — | Generates mobile GUI interactions from natural-language test requirements and checks application behavior against those requirements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/bz-lab/AUITestAgent/HEAD/README.md) |
-| [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | web | — | code Apache-2.0 | MCP tools for browser control and inspection through Chrome DevTools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/HEAD/README.md) |
-| [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
-| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
-| [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
-| [Playwright MCP](https://github.com/microsoft/playwright-mcp) | web | — | code Apache-2.0 | MCP server that lets LLM clients drive Playwright browsers through structured accessibility snapshots instead of screenshots, with opt-in vision, PDF and devtools capabilities. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright-mcp/HEAD/README.md) |
-| [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
-| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [agent-browser](https://github.com/vercel-labs/agent-browser) [✓](https://raw.githubusercontent.com/vercel-labs/agent-browser/HEAD/README.md "Source checked 2026-10-17")<br>code Apache‑2.0 | 1 | Web | A browser-automation command-line interface that exposes browser state and interaction commands for AI agents. |
+| [Mobile Harness](https://github.com/droidrun/mobile-harness) [✓](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | 1 | Android, iOS | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. |
+| [Playwright MCP](https://github.com/microsoft/playwright-mcp) [✓](https://raw.githubusercontent.com/microsoft/playwright-mcp/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | 1 | Web | MCP server that lets LLM clients drive Playwright browsers through structured accessibility snapshots instead of screenshots, with opt-in vision, PDF and devtools capabilities. |
+| [AUITestAgent](https://github.com/bz-lab/AUITestAgent) [✓](https://raw.githubusercontent.com/bz-lab/AUITestAgent/HEAD/README.md "Source checked 2026-10-16")<br>[2407.09018](https://arxiv.org/abs/2407.09018) (2024) | · | Not specified | Generates mobile GUI interactions from natural-language test requirements and checks application behavior against those requirements. |
+| [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) [✓](https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | · | Web | MCP tools for browser control and inspection through Chrome DevTools. |
+| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) [✓](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md "Source checked 2026-10-17")<br>code Apache‑2.0 | · | Android, iOS | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. |
+| [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) [✓](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | Desktop, Windows, macOS, Linux, Android | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. |
+| [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) [✓](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst "Source checked 2026-10-17")<br>[Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) · code MIT | · | Desktop, macOS, Linux, Windows | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. |
+| [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) [✓](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | Windows, Desktop, Web | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. |
 
 ## Infrastructure
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AndroidEnv](https://github.com/google-deepmind/android_env) | android | [2105.13231](https://arxiv.org/abs/2105.13231) (2021) | code Apache-2.0 | Android device-control platform with screenshots, accessibility telemetry, input actions, and an optional reinforcement-learning task interface. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-deepmind/android_env/HEAD/README.md) |
-| [Appium](https://github.com/appium/appium) | android, ios | — | code Apache-2.0 | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/appium/appium/HEAD/README.md) |
-| [Nut.js](https://github.com/nut-tree/nut.js) | desktop | — | — | Desktop automation library for keyboard, mouse, and screen interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nut-tree/nut.js/HEAD/README.md) |
-| [Playwright](https://github.com/microsoft/playwright) | web | — | code Apache-2.0 | Browser automation library used as an execution layer by agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright/HEAD/README.md) |
-| [PyAutoGUI](https://github.com/asweigart/pyautogui) | desktop | — | — | Cross-platform Python module for scripted mouse and keyboard control, message boxes and screenshots with on-screen image search, working on the primary monitor under Windows, macOS and Linux. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/asweigart/pyautogui/HEAD/README.md) |
-| [Universe legacy GUI interaction client](https://github.com/openai/universe) | web, desktop | — | code MIT | An archived Gym-compatible client that exposes screen observations and keyboard/mouse actions over VNC for remote application and browser environments, including the historical World of Bits integration. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/openai/universe/HEAD/README.rst) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [AndroidEnv](https://github.com/google-deepmind/android_env) [✓](https://raw.githubusercontent.com/google-deepmind/android_env/HEAD/README.md "Source checked 2026-10-16")<br>[2105.13231](https://arxiv.org/abs/2105.13231) (2021) · code Apache‑2.0 | 4 | Android | Android device-control platform with screenshots, accessibility telemetry, input actions, and an optional reinforcement-learning task interface. |
+| [Playwright](https://github.com/microsoft/playwright) [✓](https://raw.githubusercontent.com/microsoft/playwright/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | 3 | Web | Browser automation library used as an execution layer by agents. |
+| [Appium](https://github.com/appium/appium) [✓](https://raw.githubusercontent.com/appium/appium/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | · | Android, iOS | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. |
+| [Nut.js](https://github.com/nut-tree/nut.js) [✓](https://raw.githubusercontent.com/nut-tree/nut.js/HEAD/README.md "Source checked 2026-10-16") | · | Desktop | Desktop automation library for keyboard, mouse, and screen interaction. |
+| [PyAutoGUI](https://github.com/asweigart/pyautogui) [✓](https://raw.githubusercontent.com/asweigart/pyautogui/HEAD/README.md "Source checked 2026-10-16") | · | Desktop | Cross-platform Python module for scripted mouse and keyboard control, message boxes and screenshots with on-screen image search, working on the primary monitor under Windows, macOS and Linux. |
+| [Universe legacy GUI interaction client](https://github.com/openai/universe) [✓](https://raw.githubusercontent.com/openai/universe/HEAD/README.rst "Source checked 2026-10-17")<br>code MIT | · | Web, Desktop | An archived Gym-compatible client that exposes screen observations and keyboard/mouse actions over VNC for remote application and browser environments, including the historical World of Bits integration. |
 
 ## Products
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Amazon Nova Act](https://aws.amazon.com/nova/act/) | — | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. | [✓ 2026‑10‑17](https://aws.amazon.com/nova/act/) |
+| Resource | Mentions | Publisher | Description |
+| --- | ---: | --- | --- |
+| [Amazon Nova Act](https://aws.amazon.com/nova/act/) [✓](https://aws.amazon.com/nova/act/ "Source checked 2026-10-17") | · | — | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. |
 
 ## Papers
 

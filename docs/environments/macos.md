@@ -6,60 +6,58 @@
 
 **Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [MacAgentBench](https://github.com/JetAstra/MacAgentBench) · [leaderboard](https://jetastra.github.io/MacAgentBench/) | desktop, macos | [2606.22557](https://arxiv.org/abs/2606.22557) (2026) | [676 tasks](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) · [25 applications](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) | code MIT | 676 macOS tasks across 25 applications, each run in its own Docker container and scored by deterministic rule-based checks with multiple checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
-| [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) · [leaderboard](https://gui-agent.github.io/grounding-leaderboard) | desktop, windows, macos, linux | — | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding/HEAD/readme.md) |
+| Resource | Mentions | Other platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) [✓](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md "Source checked 2026-10-16")<br>[2404.07972](https://arxiv.org/abs/2404.07972) (2024) · code Apache‑2.0 | 21 | Desktop, Linux, Windows | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | Execution-based evaluation of agents performing tasks in real desktop environments. |
+| [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) · [leaderboard](https://gui-agent.github.io/grounding-leaderboard) [✓](https://raw.githubusercontent.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding/HEAD/readme.md "Source checked 2026-10-16")<br>code MIT | 8 | Desktop, Windows, Linux | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | GUI grounding benchmark focused on professional high-resolution interfaces. |
+| [MacAgentBench](https://github.com/JetAstra/MacAgentBench) · [leaderboard](https://jetastra.github.io/MacAgentBench/) [✓](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md "Source checked 2026-10-16")<br>[2606.22557](https://arxiv.org/abs/2606.22557) (2026) · code MIT | · | Desktop | [676 tasks](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) · [25 applications](https://raw.githubusercontent.com/JetAstra/MacAgentBench/HEAD/README.md) | 676 macOS tasks across 25 applications, each run in its own Docker container and scored by deterministic rule-based checks with multiple checkpoints. |
 
 ## Datasets
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [GUI-R1 data bundle](https://huggingface.co/datasets/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | — | data mit | Training and evaluation Parquet bundles accompanying GUI-R1, including GUI grounding and mobile/web action-prediction data. | [✓ 2026‑10‑17](https://huggingface.co/datasets/ritzzai/GUI-R1/raw/main/README.md) |
-| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | data mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. | [✓ 2026‑10‑16](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) |
+| Resource | Mentions | Other platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) [✓](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md "Source checked 2026-10-16")<br>[2504.07981](https://arxiv.org/abs/2504.07981) (2025) · data mit | 4 | Desktop, Windows, Linux | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. |
+| [GUI-R1 data bundle](https://huggingface.co/datasets/ritzzai/GUI-R1) [✓](https://huggingface.co/datasets/ritzzai/GUI-R1/raw/main/README.md "Source checked 2026-10-17")<br>[2504.10458](https://arxiv.org/abs/2504.10458) (2025) · data mit | 2 | Desktop, Windows, Linux, Android, Web | — | Training and evaluation Parquet bundles accompanying GUI-R1, including GUI grounding and mobile/web action-prediction data. |
 
 ## Models
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
-| [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
-| [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md) |
-| [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) [✓](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md "Source checked 2026-10-17")<br>[2504.10458](https://arxiv.org/abs/2504.10458) (2025) · weights mit | 1 | Desktop, Windows, Linux, Android, Web | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. |
+| [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) [✓](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md "Source checked 2026-10-17")<br>weights other | · | Desktop, Windows, Cross‑platform | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. |
+| [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) [✓](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md "Source checked 2026-10-17")<br>[2508.09123](https://arxiv.org/abs/2508.09123) (2025) · weights mit | · | Desktop, Linux, Windows | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. |
+| [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) [✓](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md "Source checked 2026-10-17")<br>[2508.09123](https://arxiv.org/abs/2508.09123) (2025) · weights mit | · | Desktop, Linux, Windows | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. |
 
 ## Agents
 
-All entries in this section: desktop, windows, macos.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
-| [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) [✓](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md "Source checked 2026-10-16")<br>[2601.07181](https://arxiv.org/abs/2601.07181) (2026) · code Apache‑2.0 | 1 | Desktop, Windows | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. |
+| [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) [✓](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md "Source checked 2026-10-18")<br>[2502.14282](https://arxiv.org/abs/2502.14282) (2025) · code MIT | · | Desktop, Windows | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. |
 
 ## Frameworks
 
-All entries in this section: desktop, macos, linux.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) [✓](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md "Source checked 2026-10-16")<br>[2610.12984](https://arxiv.org/abs/2610.12984) (2026) · code MIT | 1 | Desktop, Linux | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. |
 
 ## Tools
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
-| [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) [✓](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | Desktop, Windows, Linux, Android | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. |
+| [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) [✓](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst "Source checked 2026-10-17")<br>[Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) · code MIT | · | Desktop, Linux, Windows | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. |
 
 ## Infrastructure
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | web, desktop, windows, macos, linux | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
-| [Lume](https://github.com/trycua/lume) | desktop, macos, linux | — | code MIT | Virtual machine management for local computer-use environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) [✓](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md "Source checked 2026-10-17")<br>code AGPL‑3.0 | · | Web, Desktop, Windows, Linux | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. |
+| [Lume](https://github.com/trycua/lume) [✓](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | · | Desktop, Linux | Virtual machine management for local computer-use environments. |
 
 ## Papers
 

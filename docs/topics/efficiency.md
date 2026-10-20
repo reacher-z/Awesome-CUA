@@ -6,32 +6,34 @@
 
 **Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-All entries in this section: desktop.
+All entries in this section: Desktop.
 
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [OSWorld-Human](https://github.com/WukLab/osworld-human) | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+| Resource | Mentions | Scale | Description |
+| --- | ---: | --- | --- |
+| [OSWorld-Human](https://github.com/WukLab/osworld-human) [✓](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md "Source checked 2026-10-17")<br>[2506.16042](https://arxiv.org/abs/2506.16042) (2025) | · | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. |
 
 ## Models
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [DiMo-GUI](https://github.com/vivo/DiMo-GUI) | cross-platform | [2507.00008](https://arxiv.org/abs/2507.00008) (2025) | code Apache-2.0 | GUI grounding research using modality-aware visual reasoning and test-time scaling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md) |
-| [ShowUI](https://github.com/showlab/ShowUI) | cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | code Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI/HEAD/README.md) |
-| [ShowUI 2B](https://huggingface.co/showlab/ShowUI-2B) | cross-platform | — | weights mit | ShowUI vision-language-action checkpoint fine-tuned from Qwen2-VL-2B-Instruct, published as a single PyTorch weight file under the MIT license and tagged for GUI agents and computer use. | [✓ 2026‑10‑16](https://huggingface.co/api/models/showlab/ShowUI-2B) |
-| [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |
-| [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [ShowUI](https://github.com/showlab/ShowUI) [✓](https://raw.githubusercontent.com/showlab/ShowUI/HEAD/README.md "Source checked 2026-10-16")<br>[2411.17465](https://arxiv.org/abs/2411.17465) (2024) · code Apache‑2.0 | 3 | Cross‑platform | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. |
+| [ShowUI 2B](https://huggingface.co/showlab/ShowUI-2B) [✓](https://huggingface.co/api/models/showlab/ShowUI-2B "Source checked 2026-10-16")<br>weights mit | 2 | Cross‑platform | ShowUI vision-language-action checkpoint fine-tuned from Qwen2-VL-2B-Instruct, published as a single PyTorch weight file under the MIT license and tagged for GUI agents and computer use. |
+| [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) [✓](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md "Source checked 2026-10-17")<br>[2507.22025](https://arxiv.org/abs/2507.22025) (2025) · weights mit | 2 | Android | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. |
+| [DiMo-GUI](https://github.com/vivo/DiMo-GUI) [✓](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md "Source checked 2026-10-16")<br>[2507.00008](https://arxiv.org/abs/2507.00008) (2025) · code Apache‑2.0 | · | Cross‑platform | GUI grounding research using modality-aware visual reasoning and test-time scaling. |
+| [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) [✓](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md "Source checked 2026-10-18")<br>[2506.23491](https://arxiv.org/abs/2506.23491) (2025) · weights Apache‑2.0 | · | Cross‑platform, Desktop, Web | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. |
 
 ## Frameworks
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [Digi-Q](https://github.com/DigiRL-agent/digiq) | android | [2502.15760](https://arxiv.org/abs/2502.15760) (2025) | — | Offline device-control training code that learns action values and uses them to select promising actions, with linked trajectories and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digiq/HEAD/README.md) |
-| [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |
-| [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
-| [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [Digi-Q](https://github.com/DigiRL-agent/digiq) [✓](https://raw.githubusercontent.com/DigiRL-agent/digiq/HEAD/README.md "Source checked 2026-10-16")<br>[2502.15760](https://arxiv.org/abs/2502.15760) (2025) | · | Android | Offline device-control training code that learns action values and uses them to select promising actions, with linked trajectories and checkpoints. |
+| [DistRL](https://github.com/DistRL-lab/distrl-open) [✓](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md "Source checked 2026-10-16")<br>[2410.14803](https://arxiv.org/abs/2410.14803) (2024) · code Apache‑2.0 | · | Android | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. |
+| [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) [✓](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md "Source checked 2026-10-17")<br>[2508.05615](https://arxiv.org/abs/2508.05615) (2025) | · | Cross‑platform, Desktop, Web | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. |
+| [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) [✓](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md "Source checked 2026-10-16")<br>[2607.11185](https://arxiv.org/abs/2607.11185) (2026) | · | Desktop | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. |
 
 ## Papers
 

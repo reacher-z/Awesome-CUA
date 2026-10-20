@@ -6,41 +6,43 @@
 
 **Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (5)](#frameworks) · [Papers (90)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
-| [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) | web | — | — | code MIT | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md) |
-| [MMInA](https://github.com/shulin16/MMInA) | web | [2404.09992](https://arxiv.org/abs/2404.09992) (2024) | — | — | Multimodal web tasks in a WebArena-based environment that chain from 1 to 10 hops across sites such as a shopping store and Wikipedia, testing long-chain reasoning. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md) |
-| [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | [25 task-definition records](https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md) | — | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
-| [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
+| Resource | Mentions | Platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [ColorBench](https://github.com/MadeAgents/ColorBench) [✓](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md "Source checked 2026-10-17")<br>[2510.14621](https://arxiv.org/abs/2510.14621) (2025) · code Apache‑2.0 · data apache‑2.0 | · | Android | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. |
+| [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) [✓](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | Web | — | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. |
+| [MMInA](https://github.com/shulin16/MMInA) [✓](https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md "Source checked 2026-10-16")<br>[2404.09992](https://arxiv.org/abs/2404.09992) (2024) | · | Web | — | Multimodal web tasks in a WebArena-based environment that chain from 1 to 10 hops across sites such as a shopping store and Wikipedia, testing long-chain reasoning. |
+| [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) [✓](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md "Source checked 2026-10-18")<br>[2501.11733](https://arxiv.org/abs/2501.11733) (2025) | · | Android | [25 task-definition records](https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md) | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. |
+| [OS-Map](https://github.com/OS-Copilot/OS-Map) [✓](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md "Source checked 2026-10-17")<br>[2507.19132](https://arxiv.org/abs/2507.19132) (2025) · code MIT | · | Desktop, Linux | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. |
 
 ## Datasets
 
-All entries in this section: desktop, web.
+All entries in this section: Desktop, Web.
 
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| Resource | Mentions | Scale | Description |
+| --- | ---: | --- | --- |
+| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) [✓](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md "Source checked 2026-10-18")<br>[2506.14205](https://arxiv.org/abs/2506.14205) (2025) · data Apache‑2.0 | · | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. |
 
 ## Models
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. | [✓ 2026‑10‑17](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) [✓](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md "Source checked 2026-10-17")<br>[2503.09572](https://arxiv.org/abs/2503.09572) (2025) · weights mit | 1 | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. |
 
 ## Frameworks
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
-| [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
-| [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
-| [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
-| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [AgentProg](https://github.com/MobileLLM/AgentProg) [✓](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md "Source checked 2026-10-18")<br>[2512.10371](https://arxiv.org/abs/2512.10371) (2025) · code Apache‑2.0 | · | Android | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. |
+| [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) [✓](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md "Source checked 2026-10-18")<br>[2506.14205](https://arxiv.org/abs/2506.14205) (2025) · code Apache‑2.0 | · | Desktop, Web | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. |
+| [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) [✓](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md "Source checked 2026-10-17")<br>[2603.18429](https://arxiv.org/abs/2603.18429) (2026) · code MIT | · | Android | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. |
+| [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) [✓](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md "Source checked 2026-10-18")<br>[2505.16282](https://arxiv.org/abs/2505.16282) (2025) · code Apache‑2.0 | · | Desktop, Linux | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. |
+| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) [✓](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md "Source checked 2026-10-20")<br>[2606.19926](https://arxiv.org/abs/2606.19926) (2026) | · | Android | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. |
 
 ## Papers
 

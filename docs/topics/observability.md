@@ -6,29 +6,31 @@
 
 **Contents:** [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (33)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Agents
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Lumen browser agent](https://github.com/omxyz/lumen) | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Lumen browser agent](https://github.com/omxyz/lumen) [✓](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. |
 
 ## Frameworks
 
-All entries in this section: desktop.
+All entries in this section: Desktop.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) [✓](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md "Source checked 2026-10-16")<br>[2610.00948](https://arxiv.org/abs/2610.00948) (2026) · code Apache‑2.0 | · | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. |
 
 ## Tools
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [BrowserTrace](https://github.com/aaronlab/browsertrace) [✓](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | · | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. |
 
 ## Papers
 

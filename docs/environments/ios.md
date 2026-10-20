@@ -6,62 +6,54 @@
 
 **Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (8)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-All entries in this section: ios.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [iOSWorld](https://github.com/ljang0/iOSWorld) | — | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | code Apache-2.0 | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) |
+| Resource | Mentions | Scale | Description |
+| --- | ---: | --- | --- |
+| [iOSWorld](https://github.com/ljang0/iOSWorld) [✓](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | · | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. |
 
 ## Datasets
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [MONDAY](https://github.com/runamu/monday) | android, ios, cross-platform | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | — | code Apache-2.0 | Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/runamu/monday/HEAD/README.md) |
-| [MONDAY annotations](https://huggingface.co/datasets/runamu/MONDAY) | android, ios | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | [19,725 video annotation records](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 333,000 detected scenes](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 313,000 identified actions](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) | — | Video-derived mobile navigation annotations that pair scene boundaries and screen or element boxes with action labels for training and evaluating GUI agents. | [✓ 2026‑10‑17](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) |
+| Resource | Mentions | Other platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [MONDAY annotations](https://huggingface.co/datasets/runamu/MONDAY) [✓](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md "Source checked 2026-10-17")<br>[2505.12632](https://arxiv.org/abs/2505.12632) (2025) | 1 | Android | [19,725 video annotation records](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 333,000 detected scenes](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 313,000 identified actions](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) | Video-derived mobile navigation annotations that pair scene boundaries and screen or element boxes with action labels for training and evaluating GUI agents. |
+| [MONDAY](https://github.com/runamu/monday) [✓](https://raw.githubusercontent.com/runamu/monday/HEAD/README.md "Source checked 2026-10-18")<br>[2505.12632](https://arxiv.org/abs/2505.12632) (2025) · code Apache‑2.0 | · | Android, Cross‑platform | — | Cross-platform mobile GUI trajectory dataset derived from instructional videos, with released data-processing helpers and example evaluation code for Android and iOS data. |
 
 ## Models
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AutoGLM Phone 9B](https://huggingface.co/zai-org/AutoGLM-Phone-9B) | android, ios | — | weights mit | AutoGLM phone-agent checkpoint for Open-AutoGLM, fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters and tagged for Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B) |
-| [AutoGLM Phone 9B Multilingual](https://huggingface.co/zai-org/AutoGLM-Phone-9B-Multilingual) | android, ios | — | weights mit | Multilingual variant of the AutoGLM phone-agent checkpoint for Open-AutoGLM, likewise fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters. | [✓ 2026‑10‑16](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B-Multilingual) |
-| [Ferret-UI](https://github.com/apple/ml-ferret) | android, ios | [2404.05719](https://arxiv.org/abs/2404.05719) (2024) | — | Screen understanding research within the Ferret model family. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/main/ferretui/README.md) |
-| [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) | web, desktop, android, ios | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | — | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. | [✓ 2026‑10‑17](https://huggingface.co/api/models/cckevinn/SeeClick) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [AutoGLM Phone 9B Multilingual](https://huggingface.co/zai-org/AutoGLM-Phone-9B-Multilingual) [✓](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B-Multilingual "Source checked 2026-10-16")<br>weights mit | 2 | Android | Multilingual variant of the AutoGLM phone-agent checkpoint for Open-AutoGLM, likewise fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters. |
+| [AutoGLM Phone 9B](https://huggingface.co/zai-org/AutoGLM-Phone-9B) [✓](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B "Source checked 2026-10-16")<br>weights mit | 1 | Android | AutoGLM phone-agent checkpoint for Open-AutoGLM, fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters and tagged for Chinese. |
+| [Ferret-UI](https://github.com/apple/ml-ferret) [✓](https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/main/ferretui/README.md "Source checked 2026-10-16")<br>[2404.05719](https://arxiv.org/abs/2404.05719) (2024) | · | Android | Screen understanding research within the Ferret model family. |
+| [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) [✓](https://huggingface.co/api/models/cckevinn/SeeClick "Source checked 2026-10-17")<br>[2401.10935](https://arxiv.org/abs/2401.10935) (2024) | · | Web, Desktop, Android | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. |
 
 ## Agents
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | — | code Apache-2.0 | Phone agent model and framework with device interaction tooling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/zai-org/Open-AutoGLM/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) [✓](https://raw.githubusercontent.com/zai-org/Open-AutoGLM/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | 1 | Android | Phone agent model and framework with device interaction tooling. |
 
 ## Frameworks
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) [✓](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | Android | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. |
 
 ## Tools
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobile Harness](https://github.com/droidrun/mobile-harness) | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
-| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [Mobile Harness](https://github.com/droidrun/mobile-harness) [✓](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | 1 | Android | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. |
+| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) [✓](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md "Source checked 2026-10-17")<br>code Apache‑2.0 | · | Android | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. |
 
 ## Infrastructure
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Appium](https://github.com/appium/appium) | — | code Apache-2.0 | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/appium/appium/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [Appium](https://github.com/appium/appium) [✓](https://raw.githubusercontent.com/appium/appium/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | · | Android | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. |
 
 ## Surveys
 

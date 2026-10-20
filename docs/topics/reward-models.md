@@ -6,48 +6,50 @@
 
 **Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) | web | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | data Custom AgentRewardBench Terms of Use | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md) |
-| [CUAVerifierBench](https://huggingface.co/datasets/microsoft/CUAVerifierBench) | web | [2604.06240](https://arxiv.org/abs/2604.06240) (2026) | [106 trajectories](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) · [215 annotation rows](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) | data mit | Human-annotated browser-agent trajectories for comparing automated task-success and process-quality verifiers against reviewer judgments. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) |
-| [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
-| [WebRewardBench](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [776 rows](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) | — | An offline preference-evaluation set for web process reward models, pairing page and trajectory context with preferred and rejected candidate decisions. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) |
+| Resource | Mentions | Platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [CUAVerifierBench](https://huggingface.co/datasets/microsoft/CUAVerifierBench) [✓](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md "Source checked 2026-10-17")<br>[2604.06240](https://arxiv.org/abs/2604.06240) (2026) · data mit | 1 | Web | [106 trajectories](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) · [215 annotation rows](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) | Human-annotated browser-agent trajectories for comparing automated task-success and process-quality verifiers against reviewer judgments. |
+| [WebRewardBench](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) [✓](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md "Source checked 2026-10-17")<br>[2505.15277](https://arxiv.org/abs/2505.15277) (2025) | 1 | Web | [776 rows](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) | An offline preference-evaluation set for web process reward models, pairing page and trajectory context with preferred and rejected candidate decisions. |
+| [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) [✓](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md "Source checked 2026-10-17")<br>[2504.08942](https://arxiv.org/abs/2504.08942) (2025) · data Custom AgentRewardBench Terms of Use | · | Web | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. |
+| [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) [✓](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md "Source checked 2026-10-17")<br>[2512.16295](https://arxiv.org/abs/2512.16295) (2025) · data apache‑2.0 | · | Cross‑platform, Desktop, Web | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. |
 
 ## Datasets
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [UI-Genie reward data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md) |
-| [WebPRM checklist-generation data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) | web | — | [3,630 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation/raw/main/README.md) | — | Web-task context, starting observations and action history paired with structured checklists and subgoal analyses for checklist generation. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) |
-| [WebPRM Collection preference data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [9,460 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) | — | Checklist-annotated web decision records with page observations, prior actions, one preferred continuation and rejected alternatives for process-reward learning. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) |
+| Resource | Mentions | Platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [UI-Genie reward data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k) [✓](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md "Source checked 2026-10-17")<br>[2505.21496](https://arxiv.org/abs/2505.21496) (2025) · data mit | 1 | Android | — | Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model. |
+| [WebPRM Collection preference data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) [✓](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md "Source checked 2026-10-17")<br>[2505.15277](https://arxiv.org/abs/2505.15277) (2025) | 1 | Web | [9,460 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) | Checklist-annotated web decision records with page observations, prior actions, one preferred continuation and rejected alternatives for process-reward learning. |
+| [WebPRM checklist-generation data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) [✓](https://huggingface.co/api/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation "Source checked 2026-10-17") | · | Web | [3,630 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation/raw/main/README.md) | Web-task context, starting observations and action history paired with structured checklists and subgoal analyses for checklist generation. |
 
 ## Models
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |
-| [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | web | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
-| [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |
-| [WebShepherd 3B](https://huggingface.co/LangAGI-Lab/WebShepherd_3B) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | — | A public text-based process-reward checkpoint from the Web-Shepherd collection for scoring web-agent decisions against task checklists. | [✓ 2026‑10‑17](https://huggingface.co/api/models/LangAGI-Lab/WebShepherd_3B) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) [✓](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md "Source checked 2026-10-17")<br>[2507.15846](https://arxiv.org/abs/2507.15846) (2025) · weights apache‑2.0 | 1 | Cross‑platform | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. |
+| [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) [✓](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md "Source checked 2026-10-17")<br>[2504.01382](https://arxiv.org/abs/2504.01382) (2025) · weights apache‑2.0 | 1 | Web | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. |
+| [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) [✓](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b "Source checked 2026-10-17")<br>[2411.02337](https://arxiv.org/abs/2411.02337) (2024) | · | Web | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. |
+| [WebShepherd 3B](https://huggingface.co/LangAGI-Lab/WebShepherd_3B) [✓](https://huggingface.co/api/models/LangAGI-Lab/WebShepherd_3B "Source checked 2026-10-17")<br>[2505.15277](https://arxiv.org/abs/2505.15277) (2025) | · | Web | A public text-based process-reward checkpoint from the Web-Shepherd collection for scoring web-agent decisions against task checklists. |
 
 ## Frameworks
 
-All entries in this section: android.
+All entries in this section: Android.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
-| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [UI-Genie](https://github.com/Euphoria16/UI-Genie) [✓](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md "Source checked 2026-10-17")<br>[2505.21496](https://arxiv.org/abs/2505.21496) (2025) | 3 | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. |
+| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) [✓](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md "Source checked 2026-10-17")<br>[2502.18906](https://arxiv.org/abs/2502.18906) (2025) · code MIT | · | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. |
 
 ## Tools
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Web-Shepherd inference and evaluation](https://github.com/kyle8581/Web-Shepherd) | — | — | Process-reward inference and benchmark-evaluation utilities that use task checklists to assess individual web-agent decisions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Web-Shepherd inference and evaluation](https://github.com/kyle8581/Web-Shepherd) [✓](https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md "Source checked 2026-10-17") | · | Process-reward inference and benchmark-evaluation utilities that use task checklists to assess individual web-agent decisions. |
 
 ## Papers
 

@@ -6,51 +6,53 @@
 
 **Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Datasets
 
-All entries in this section: desktop.
+All entries in this section: Desktop.
 
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
+| Resource | Mentions | Scale | Description |
+| --- | ---: | --- | --- |
+| [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) [✓](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md "Source checked 2026-10-16")<br>[2610.12984](https://arxiv.org/abs/2610.12984) (2026) · data cc‑by‑4.0 | 1 | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. |
 
 ## Agents
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
-| [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) [✓](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | 1 | Desktop | Tools for learning and automating workflows from desktop demonstrations. |
+| [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) [✓](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md "Source checked 2026-10-16")<br>[2601.07181](https://arxiv.org/abs/2601.07181) (2026) · code Apache‑2.0 | 1 | Desktop, Windows, macOS | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. |
 
 ## Frameworks
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
-| [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) [✓](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md "Source checked 2026-10-16")<br>[2610.12984](https://arxiv.org/abs/2610.12984) (2026) · code MIT | 1 | Desktop, macOS, Linux | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. |
+| [AgentStudio](https://github.com/skyworkai/agent-studio) [✓](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md "Source checked 2026-10-18")<br>[2403.17918](https://arxiv.org/abs/2403.17918) (2024) · code AGPL‑3.0 | · | Desktop, Linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
 
 ## Tools
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Browser Use WebUI](https://github.com/browser-use/web-ui) | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Browser Use WebUI](https://github.com/browser-use/web-ui) [✓](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md "Source checked 2026-10-17")<br>code MIT | · | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. |
 
 ## Infrastructure
 
-All entries in this section: web, desktop, windows, macos, linux.
+All entries in this section: Web, Desktop, Windows, macOS, Linux.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) [✓](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md "Source checked 2026-10-17")<br>code AGPL‑3.0 | · | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. |
 
 ## Products
 
-All entries in this section: desktop, web.
+All entries in this section: Desktop, Web.
 
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Scribe](https://scribehow.com/) | — | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
+| Resource | Mentions | Publisher | Description |
+| --- | ---: | --- | --- |
+| [Scribe](https://scribehow.com/) [✓](https://scribehow.com/ "Source checked 2026-10-16") | · | — | Workflow recording and documentation product adjacent to agent data collection. |
 
 ## Papers
 

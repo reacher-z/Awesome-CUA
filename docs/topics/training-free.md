@@ -6,21 +6,23 @@
 
 **Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (28)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Agents
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [RCI Agent](https://github.com/posgnu/rci-agent) | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [RCI Agent](https://github.com/posgnu/rci-agent) [✓](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md "Source checked 2026-10-17")<br>[2303.17491](https://arxiv.org/abs/2303.17491) (2023) · code MIT | · | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. |
 
 ## Tools
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) [✓](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md "Source checked 2026-10-17")<br>[2412.10840](https://arxiv.org/abs/2412.10840) (2024) | · | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. |
 
 ## Papers
 

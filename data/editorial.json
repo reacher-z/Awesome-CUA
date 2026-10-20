@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "OTora: A Unified Red Teaming Framework for Reasoning-Level Denial-of-Service in LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.08876",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "OTora red-teams LLM agents for reasoning-level denial of service: optimized triggers induce chosen tool calls and genetic-search payloads inflate reasoning, slowing WebShop, Email and OS agents while tasks still succeed.",
+    "verify_terms": [
+      "OTora: A Unified Red Teaming Framework"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.08876v3"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent agent-security paper: the WebShop agent is its web setting, while the Email and OS agents are instantiated from InjecAgent tool schemas with post-tool observations as the injection surface. All agents use ReAct-style prompting; black-box triggers are tested with Gemini-1.5-Flash and GPT-3.5-Turbo and white-box ones with LLaMA-3.1-70B-Instruct and GPT-OSS-120B. The arXiv comment states acceptance at ICML 2026, and the abstract links code at github.com/llm2409/OTora. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2605.08876v3",
+        "retrieved_at": "2026-10-20T04:19:13Z",
+        "sha256": "1f4cd7581832becbce584ebd0f7d81267c661b00500ac3b53df33a6bc57d5fd0",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and the v3 HTML Section 4 (benchmarks, agent interfaces, black-box and white-box backbones) and Appendix implementation details.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "34e780e1e583a6e2b8bf67728883be58c0fef836482f15fac6260ac001ae38c1",
+    "reviewed_at": "2026-10-20T04:19:30Z"
   }
 ]

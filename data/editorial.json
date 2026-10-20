@@ -63844,5 +63844,135 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Browser Use Terminal",
+    "kind": "agent",
+    "url": "https://github.com/browser-use/terminal",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "summary": "Rust terminal UI browser agent from Browser Use whose model drives the user's Chrome, a headless Chromium or a Browser Use cloud browser by running Python scripts over raw CDP, with steerable, resumable runs.",
+    "verify_terms": [
+      "Browser Use Terminal"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/terminal/HEAD/README.md"
+    ],
+    "publisher_id": "organization:browser-use",
+    "notes": "Installed as the `browser` command. Rust crates hold the Ratatui interface, the LLM harness (tools, subagents, context compaction, cancellation), a SQLite event log of history, screenshots and artifacts, and the CDP connection. The model gets two browser tools: `browser`, a control plane that attaches to an already open local Chromium-family browser with remote debugging enabled, launches a managed headless or headed Chromium, or starts a Browser Use Cloud profile; and `browser_script`, which runs fresh Python per call with helpers such as new_tab, goto_url, js, capture_screenshot, click_at_xy, type_text, press_key, scroll and fill_input over the Rust-held CDP session, plus raw cdp() calls. The system prompt tells the model to change real forms through screenshots, coordinate clicks and typed input rather than page JavaScript, and to call done only after verifying the result. Model clients cover OpenAI, Anthropic, Google, OpenRouter and OpenAI-compatible endpoints, and a ChatGPT-backed Codex login read from ~/.codex/auth.json. A skill lets Claude Code, Codex or OpenCode call `browser-use-terminal browser exec` with the same runtime. datasets/BU_Bench_V1.json lists 100 tasks, 20 each labelled WebBenchREAD, OM2W2, InteractionTests, GAIA and BrowseComp (script count); the repository reports no scores for it. The README says its anonymous telemetry can be disabled with BUT_TELEMETRY=0. Root LICENSE is MIT (copyright Browser Use); not a fork, not archived; the latest GitHub release, v0.1.8, predates the inspected commit. Code was read, not run.",
+    "details": {
+      "availability": "Public Rust and Python source, install script and release binaries; no model weights; models come from the configured provider.",
+      "repository_revision": "16cdd3ac47261292d88f410abb1f0234577850ce",
+      "repository_tree_sha": "d00d951cf0f432ae22db3dccaa2f6ac0672ab8d0"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/browser-use/terminal/git/trees/16cdd3ac47261292d88f410abb1f0234577850ce?recursive=1",
+        "sha256": "69b2e30ceaef7208f6d428b701832551c7eaaff94a4c4dda2e60e230696b9a13",
+        "retrieved_at": "2026-10-20T08:05:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/LICENSE",
+        "sha256": "5afa3d97bf1e6f998d587fa101e3fe0d0c416840b7fe77bcd6ae97690a334631",
+        "retrieved_at": "2026-10-20T08:05:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/prompts/browser-agent-system.md",
+        "sha256": "2a0b37e821c39d530ea85f5e8ed10a95e1e1c7c0192fe3c902cb4a3ff73c606f",
+        "retrieved_at": "2026-10-20T08:05:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/prompts/browser-tool-description.md",
+        "sha256": "60f280fdb382bdba96facf521eb34ca0c0d7aad8b9a849596c1cc959133b3064",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/crates/browser-use-browser/src/browser_script_helpers.py",
+        "sha256": "847427bee10c2a1c19c55fa0a55a1d338af9427952f6126949e7536314d6635a",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/crates/browser-use-llm/src/providers/mod.rs",
+        "sha256": "a9e16446deeaab056cfc9634ab83bff00377cb9ed674fdbb9ede935c5fd8d3b0",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/crates/browser-use-llm/src/auth/codex.rs",
+        "sha256": "5f6b16f0a040323323eb04653a3c1c551cd95d2940eb2cd900391d4c4314db17",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/browser-use/terminal/16cdd3ac47261292d88f410abb1f0234577850ce/datasets/BU_Bench_V1.json",
+        "sha256": "9e1c5882a189903eff04258f4f1f0ff4219e1e03bb94448a5df9a7e31c985a79",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "70392f0919aa417827ff3cb548a60efa6726ec1517d4a69542601608b5944240",
+    "reviewed_at": "2026-10-20T08:06:12Z"
   }
 ]

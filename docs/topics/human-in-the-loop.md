@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+84 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (6)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
 
 ## Benchmarks
 
@@ -18,6 +18,7 @@ All entries in this section: android.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Browser Use Terminal](https://github.com/browser-use/terminal) | web | — | code MIT | Rust terminal UI browser agent from Browser Use whose model drives the user's Chrome, a headless Chromium or a Browser Use cloud browser by running Python scripts over raw CDP, with steerable, resumable runs. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/browser-use/terminal/HEAD/README.md) |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
 | [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |

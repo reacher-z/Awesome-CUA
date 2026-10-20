@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7b42d3b33e52548ffb4b",
+    "url": "https://www.microsoft.com/en-us/research/articles/fara1-5-computer-use-agent",
+    "decision": "alias",
+    "target_id": "github:microsoft/fara",
+    "reason": "Microsoft Research blog post (21 May 2026, updated 22 Jul 2026) announcing the Fara1.5 4B, 9B and 27B browser computer-use models; the indexed microsoft/fara repository sets it as its homepage and links it as the Fara1.5 blog post."
   }
 ]

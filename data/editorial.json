@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "BrowseSafe: Understanding and Preventing Prompt Injection Within AI Browser Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.20597",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Introduces BrowseSafe-Bench, 14,719 HTML browser-tool outputs with hidden or rewritten prompt injections and benign distractors, scores 23 models as detectors, and proposes a layered defense with a fine-tuned classifier.",
+    "verify_terms": [
+      "BrowseSafe: Understanding and"
+    ],
+    "scope": "core",
+    "notes": "Benchmark scaffolds were informed by 100,000 sampled tool-call outputs from a production browser agent; the samples span 11 attack types, 9 injection strategies, 5 distractor types and 5 domains, split into 11,039 training and 3,680 test samples. Evaluation scores injection detection on individual tool outputs (F1, precision, recall, balanced accuracy) rather than end-to-end agent tasks. The defense's detector is a fine-tuned Qwen3-30B-A3B-Instruct-2507, reported at up to 0.904 F1 with under one second of latency. The v2 full text is titled \"Understanding and Detecting Prompt Injection\" while the arXiv metadata keeps \"Preventing\". The paper names the dataset huggingface.co/datasets/perplexity-ai/browsesafe-bench and the model huggingface.co/perplexity-ai/browsesafe. No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML: Sections 1-5, Table 1, Appendix C (defense architecture and threat model) and the evaluation-metric definitions.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2511.20597v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2511.20597v2",
+        "retrieved_at": "2026-10-20T05:16:44Z",
+        "sha256": "55df7f36cb68087a35e586cae35886f782de036279c9c7cde1905ff2c2be3554",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e4b27dd47896482f321cb0c11a7dad71dffc6ed9d5de5ae102db2b465fb30d05",
+    "reviewed_at": "2026-10-20T05:17:01Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-294 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+295 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (211)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (9)](#agents) · [Frameworks (23)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (8)](#products) · [Surveys (2)](#surveys) · [Papers (212)](#papers)
 
 ## Benchmarks
 
@@ -182,6 +182,7 @@ All entries in this section: web.
 | 2026‑07‑31 | [From Monoliths to Swarms: A Study of Attack Surface Evolution in the Transition to Multi-Agent Web Systems](https://arxiv.org/abs/2608.00202) | web | Categorizes structural attack surfaces that emerge when single-agent browser systems are decomposed into multi-agent web workflows. |
 | 2026‑07‑26 | [From Blind Edits to Verified Repair: Building Trustworthy User-Side LLM Agents for Web Accessibility](https://arxiv.org/abs/2608.24913) | web | Builds a local browser-extension agent that generates and verifies additive CSS repairs for WCAG web accessibility violations. |
 | 2026‑07‑21 | [Broken Gates: Re-evaluating Web Bot Defenses in the Age of LLM Agents](https://arxiv.org/abs/2607.18659) | web | Measures how autonomous LLM browser agents interact with commercial bot-management and anti-automation defenses on the web. |
+| 2026‑07‑09 | [Prismata: Confining Cross-Site Prompt Injection in Web Agents](https://arxiv.org/abs/2607.08147) | web | Prismata defends web agents against cross-site prompt injection by deriving trust labels for page elements, then redacting observations and blocking actions on low-privilege content, without developer annotations. |
 | 2026‑07‑07 | [WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation](https://arxiv.org/abs/2607.06118) | web | WebRetriever evaluates navigation, knowledge-assisted interaction and end-to-end information-extraction workflows under separate protocols. Its NavEval judge uses richer interaction context to diagnose cases where navigation success does not translate into useful task completion. |
 | 2026‑07‑06 | [Untrusted Content Masking for Web Agents with Security Guarantees](https://arxiv.org/abs/2607.05277) | web | Untrusted Content Masking uses DOM structure to redact untrusted webpage regions before agent observation. A sandboxed interaction interface separates privileges so browser actions can proceed under the proposed trust-boundary model without exposing protected content to the planner. |
 | 2026‑07‑01 | [Navigation Alone Is Not Enough: Evaluating Explanatory Assistive UI Agents](https://arxiv.org/abs/2608.09944) | web | Introduces NeXUI, an assistive UI-agent benchmark that evaluates navigation together with interface-grounded explanations and user oversight in recorded interface states. |

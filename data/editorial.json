@@ -63653,5 +63653,42 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Prismata: Confining Cross-Site Prompt Injection in Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.08147",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Prismata defends web agents against cross-site prompt injection by deriving trust labels for page elements, then redacting observations and blocking actions on low-privilege content, without developer annotations.",
+    "verify_terms": [
+      "Prismata: Confining Cross-Site Prompt Injection"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.08147v1"
+    ],
+    "notes": "In the v1 full text, Prismata sits between a BrowserGym agent (Playwright-driven headless Chromium with accessibility-tree observations) and the page. Evaluation injects three pop-up attack templates (Shortcut, Fake Completion, Ignore Instruction) into WebArena sites and adds WASP and adaptive variants; screenshot observations are left outside its scope. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.08147v1",
+        "sha256": "0b83cdfe07b80668dcfbb1a541fc3ce8a50aae47b111b276cbfdbb068eedb22f",
+        "retrieved_at": "2026-10-20T03:58:44Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML threat model, system architecture, attack templates and experimental setup. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3c0a1d644e8123a90bda62c007a1e842c53cc603809ccbf383926d93a2ff2def",
+    "reviewed_at": "2026-10-20T03:59:14Z"
   }
 ]

@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
+**21 resources:** [Web (10)](#web) · [Desktop (1)](#desktop) · [Mobile (5)](#mobile) · [Cross-platform (3)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -43,6 +43,7 @@ All entries in this section: desktop, macos, linux, windows.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [iphone-use](https://github.com/leeguooooo/iphone-use) | ios | — | code PolyForm-Shield-1.0.0 | Mac daemon and MCP server that let agents drive a real iPhone over USB or Wi-Fi through its own XCTest runner: accessibility-tree element lists, settle-checked taps, typing and swipes, and replayable per-app flows. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/leeguooooo/iphone-use/HEAD/README.md) |
 | [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
 | [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
 | [Mobilerun Portal (formerly Droidrun Portal)](https://github.com/droidrun/mobilerun-portal) | android | — | code AGPL-3.0-or-later | An Android accessibility service that exposes UI-element inspection, device-control interfaces and screen feedback to mobile automation agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun-portal/HEAD/README.md) |

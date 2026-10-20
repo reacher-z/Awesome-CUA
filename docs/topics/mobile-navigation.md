@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (3)](#tools) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
 
 ## Benchmarks
 
@@ -105,6 +105,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [iphone-use](https://github.com/leeguooooo/iphone-use) | ios | — | code PolyForm-Shield-1.0.0 | Mac daemon and MCP server that let agents drive a real iPhone over USB or Wi-Fi through its own XCTest runner: accessibility-tree element lists, settle-checked taps, typing and swipes, and replayable per-app flows. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/leeguooooo/iphone-use/HEAD/README.md) |
 | [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
 | [Mobilerun Portal (formerly Droidrun Portal)](https://github.com/droidrun/mobilerun-portal) | android | — | code AGPL-3.0-or-later | An Android accessibility service that exposes UI-element inspection, device-control interfaces and screen feedback to mobile automation agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun-portal/HEAD/README.md) |
 

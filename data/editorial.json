@@ -63844,5 +63844,152 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "iphone-use",
+    "kind": "tool",
+    "url": "https://github.com/leeguooooo/iphone-use",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "scope": "core",
+    "summary": "Mac daemon and MCP server that let agents drive a real iPhone over USB or Wi-Fi through its own XCTest runner: accessibility-tree element lists, settle-checked taps, typing and swipes, and replayable per-app flows.",
+    "aliases": [
+      "iphone-use-mcp"
+    ],
+    "verify_terms": [
+      "iphone-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/leeguooooo/iphone-use/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Installed with install.sh, which also registers the MCP server with Claude Code and Codex (v0.21.0 at review; tag v0.21.0 points at 51df76a, and the inspected commit b20d686 is later, with crates/mcp/Cargo.toml at 0.21.0). A daemon on the Mac drives one phone through the project's own XCTest runner (runner/), which speaks the WebDriverAgent HTTP API, reads the screen as one accessibility snapshot (RunnerElements.swift) and synthesizes touch paths (RunnerActions.swift); the runner README credits portions adapted from Callstack's agent-device under MIT. The same control is offered as an MCP server (iphone-use-mcp, over stdio or HTTP), an HTTP API (/agent/*), and a browser or iOS remote-control view with a live H.264 stream; an iOS Simulator can be driven the same way as a preview. crates/mcp/README.md documents phone_* tools for status, screenshots with optional element frames, element lists with an OCR fallback, taps by normalized coordinate, snapshot-bound element index or exact label, scrolling, typing, named keys, the Home and Spotlight shortcuts, batched multi-step runs, flows, logs, crash reports, screen recording, app install and simulated location. Each action reports whether it was applied, not sent or unknown, and whether a retry is safe. phone_jev_run hands a whole goal to a built-in loop in which TypeSafe's hosted Jev model picks each step from the element table and an OpenAI-compatible model writes text (crates/mcp/src/jev.rs, adapted from Browser Use's jev-ultrafast under MIT). Flows are reviewed per-app scripts that replay without a model; their registry is a separate repository (leeguooooo/iphone-use-flows). It needs a Mac on macOS 15 or later with Xcode signed in to an Apple ID, and an iPhone on iOS 15 or later with Developer Mode on. The daemon enforces owner limits (blocked apps, a per-task action cap). The README's speed comparison with agent-device is the author's own measurement. Code is source-available under PolyForm Shield 1.0.0, which prohibits competing products or services; LICENSING.md says earlier copies were published under MIT and third-party portions keep their MIT notices. Not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source under a source-available license, with tagged GitHub releases installed by install.sh; runs on the user's Mac against their own iPhone.",
+      "repository_revision": "b20d6866ce63e03181b218dd4a71f8286c4ff1b1",
+      "release_tag": "v0.21.0"
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "PolyForm-Shield-1.0.0",
+          "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/LICENSE",
+          "retrieved_at": "2026-10-20T08:02:31Z",
+          "basis": "Repository LICENSE at the reviewed commit is the unmodified PolyForm Shield 1.0.0 text with a Required Notice; LICENSING.md calls it source-available, not OSI open source."
+        },
+        "reason": "The LICENSE file is PolyForm Shield 1.0.0, which enrich does not recognize as a standard open-source text. LICENSING.md scopes it to the project's own code and documentation, keeps third-party portions (agent-device, jev-ultrafast, idevice) under their MIT notices, and states that copies published earlier under MIT keep those permissions.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/LICENSE",
+          "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/LICENSING.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/crates/mcp/README.md",
+        "sha256": "cd3d8106b094ca9eef4eeb7ff312f35e87b4b4d608955ba5b6459dffae4dbc75",
+        "retrieved_at": "2026-10-20T08:02:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/runner/README.md",
+        "sha256": "4a89ef4cf2d37cd650bb2d5a4b560134646439067605a070c32206447d886b76",
+        "retrieved_at": "2026-10-20T08:02:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/runner/IPhoneUseRunner/IPhoneUseRunnerUITests/RunnerElements.swift",
+        "sha256": "41f820a503f8f5897e08ba507911c29337c2dd17ad3aeb31274b2b69247758b1",
+        "retrieved_at": "2026-10-20T08:02:30Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/runner/IPhoneUseRunner/IPhoneUseRunnerUITests/RunnerActions.swift",
+        "sha256": "4fd9b483d237e85d16249d8222fdfaa7d86da6dc1ee6c657c6d15eba08d0288a",
+        "retrieved_at": "2026-10-20T08:02:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/crates/mcp/src/jev.rs",
+        "sha256": "2dbff13a3b5a83004cf89ff3a616eb8bd128b78f33ddc0b135983397e3d60b09",
+        "retrieved_at": "2026-10-20T08:02:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/crates/mcp/Cargo.toml",
+        "sha256": "8f238f32d700c8faaa06f2e09ee1437371c0e06ecd8546281a384a1419190707",
+        "retrieved_at": "2026-10-20T08:02:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/LICENSE",
+        "sha256": "b7311638ce93a9f5791ea073189925d920ab98facecfd3e1d3bb1ea377cd3baa",
+        "retrieved_at": "2026-10-20T08:02:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/leeguooooo/iphone-use/b20d6866ce63e03181b218dd4a71f8286c4ff1b1/LICENSING.md",
+        "sha256": "178ea4bd3dcc7c62366b494b41b48a0816167c85cdbe888beb70eacca0ad8480",
+        "retrieved_at": "2026-10-20T08:02:33Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e7a63b56356941af69c4b0a45403887edffe49dad93bd87fb9ed75673331854e",
+    "reviewed_at": "2026-10-20T08:03:33Z"
   }
 ]

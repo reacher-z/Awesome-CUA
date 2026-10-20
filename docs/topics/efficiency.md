@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-150 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+151 source-reviewed resources tagged `efficiency`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (5)](#models) · [Frameworks (5)](#frameworks) · [Papers (140)](#papers)
 
 ## Benchmarks
 
@@ -30,6 +30,7 @@ All entries in this section: desktop.
 | --- | --- | --- | --- | --- | --- |
 | [Digi-Q](https://github.com/DigiRL-agent/digiq) | android | [2502.15760](https://arxiv.org/abs/2502.15760) (2025) | — | Offline device-control training code that learns action values and uses them to select promising actions, with linked trajectories and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digiq/HEAD/README.md) |
 | [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |
+| [FluidUse](https://github.com/FluidInference/FluidUse) | desktop, macos, web | — | code Apache-2.0 | Swift package for local computer use on Apple silicon that reads forms in running Mac apps or browsers through the Accessibility API and fills them with on-device Core ML decision models. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/FluidInference/FluidUse/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
 

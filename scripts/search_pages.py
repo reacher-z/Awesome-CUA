@@ -16,6 +16,7 @@ from paper_library import library_pages, library_path, library_years, paper_libr
 from publication_metadata import publication, format_date_parts, record_date_text, record_year
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
+from catalog import editorial_identity
 
 SITE = "https://awesomecua.github.io"
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
@@ -103,7 +104,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
     og_url=f'<meta property="og:url" content="{url}">' if canonical else ''
     full_title=title if 'AwesomeCUA' in title else title+' | AwesomeCUA'
-    document=f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title><meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA research updates"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script></head><body><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><img src="/favicon.svg" width="32" height="32" alt=""><span>Awesome<span class="brand-cua">CUA</span></span></a><nav aria-label="Main navigation"><a href="/catalog/">Catalog</a><a href="/papers/">Papers</a><a href="/topics/">Topics</a><a href="/guides/">Guides</a><a href="/data/">Data</a></nav><a class="github-link" href="{SOURCE_REPO}">GitHub ↗</a></div></header><main id="content" class="reading-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{trail}</ol></nav>{body}</main><footer class="shell"><a class="brand" href="/">AwesomeCUA</a><a href="/about/">Editorial policy</a><a href="/coverage/">Coverage</a><a href="/data/">Download data</a><a href="/llms.txt">Machine-readable guide</a><a href="{SOURCE_REPO}">Source repository ↗</a></footer></body></html>'''
+    document=f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title><meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA: newly reviewed resources"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script></head><body><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><img src="/favicon.svg" width="32" height="32" alt=""><span>Awesome<span class="brand-cua">CUA</span></span></a><nav aria-label="Main navigation"><a href="/catalog/">Catalog</a><a href="/papers/">Papers</a><a href="/topics/">Topics</a><a href="/guides/">Guides</a><a href="/data/">Data</a></nav><a class="github-link" href="{SOURCE_REPO}">GitHub ↗</a></div></header><main id="content" class="reading-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{trail}</ol></nav>{body}</main><footer class="shell"><a class="brand" href="/">AwesomeCUA</a><a href="/about/">Editorial policy</a><a href="/coverage/">Coverage</a><a href="/data/">Download data</a><a href="/llms.txt">Machine-readable guide</a><a href="{SOURCE_REPO}">Source repository ↗</a></footer></body></html>'''
 
     if lang.startswith('zh'):
         chrome={'Skip to content':'跳到正文','Catalog':'目录','Papers':'论文','Topics':'主题','Guides':'指南','Data':'数据','Editorial policy':'收录方法','Coverage':'覆盖台账','Download data':'下载数据','Machine-readable guide':'机器读取指南','GitHub organization ↗':'GitHub 组织 ↗','Source repository ↗':'源代码仓库 ↗'}
@@ -249,6 +250,42 @@ def resource_markdown(r):
         lines+=['',f'- {slot} review: '+review['reason'],'  Sources: '+', '.join(review['evidence_urls'])]
     lines+=['','## Primary evidence','']+[f'- {ev["url"]} (retrieved {ev["retrieved_at"]}; SHA-256 {ev["sha256"]})' for ev in r["evidence"]]
     return '\n'.join(line.rstrip() for line in lines)+'\n'
+
+
+FEED_ENTRIES = 50
+FEED_AUTHORS = 10
+
+
+def reviewed_times(root):
+    # Editorial approval times, keyed exactly as the README's recently reviewed table keys them. Recorded values mix
+    # "Z", "+00:00" and microseconds, so they are compared as UTC datetimes rather than as strings.
+    # Like scripts/build.py, a checkout without editorial input has no review times.
+    path=root/'data/editorial.json'
+    entries=json.loads(path.read_text(encoding='utf-8')) if path.exists() else []
+    return {(e.get("id") or editorial_identity(e)[0]):dt.datetime.fromisoformat(e["reviewed_at"].replace("Z","+00:00")).astimezone(dt.timezone.utc) for e in entries if e.get("editorial_reviewed") and e.get("reviewed_at")}
+
+
+def atom_time(value):
+    return value.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def review_feed(reviewed, reviewed_at, snapshot):
+    # Newest editorial approvals of every kind, dated by their review rather than a source retrieval or the build.
+    # A stable second sort keeps records approved at the same moment in name order.
+    recent=sorted((r for r in reviewed if r["id"] in reviewed_at),key=lambda r:r["name"].casefold())
+    recent=sorted(recent,key=lambda r:reviewed_at[r["id"]],reverse=True)[:FEED_ENTRIES]
+    feed=ET.Element('feed',xmlns='http://www.w3.org/2005/Atom')
+    # The id predates the wider scope; keeping it lets existing subscribers keep the same feed.
+    for key,value in [('title','AwesomeCUA: newly reviewed computer-use agent resources'),('subtitle',f'The {FEED_ENTRIES} most recent editorial approvals of papers, models, datasets, benchmarks, frameworks and tools, newest first.'),('id',SITE+'/papers/'),('updated',atom_time(reviewed_at[recent[0]["id"]]) if recent else snapshot)]:ET.SubElement(feed,key).text=value
+    ET.SubElement(feed,'link',href=SITE+'/feed.xml',rel='self');ET.SubElement(feed,'link',href=SITE+'/catalog/')
+    for r in recent:
+        entry=ET.SubElement(feed,'entry')
+        for key,value in [('title',r['name']),('id',SITE+resource_path(r)),('published',atom_time(reviewed_at[r['id']])),('updated',atom_time(reviewed_at[r['id']])),('summary',description(r))]:ET.SubElement(entry,key).text=value
+        ET.SubElement(entry,'link',href=SITE+resource_path(r))
+        ET.SubElement(entry,'category',term=r['kind'],label=KINDS[r['kind']])
+        for name in r['authors'][:FEED_AUTHORS] or ['AwesomeCUA']:
+            ET.SubElement(ET.SubElement(entry,'author'),'name').text=name
+    return clean_text(ET.tostring(feed,encoding='utf-8',xml_declaration=True).decode()).encode()
 
 
 def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
@@ -447,7 +484,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     # A static, visible directory is useful to visitors even when JavaScript is unavailable.
     home=(destination/'index.html').read_text(encoding='utf-8')
     home=re.sub(r'<!-- SURVEY:START -->(.*?)<!-- SURVEY:END -->',lambda m:m[1] if survey_page else '',home,flags=re.S)
-    extra=f'<link rel="canonical" href="{SITE}/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="{SITE}/"><link rel="alternate" hreflang="en" href="{SITE}/"><link rel="alternate" hreflang="zh-CN" href="{SITE}/zh/"><link rel="alternate" hreflang="x-default" href="{SITE}/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA research updates"><link rel="stylesheet" href="./pages.css">'
+    extra=f'<link rel="canonical" href="{SITE}/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="{SITE}/"><link rel="alternate" hreflang="en" href="{SITE}/"><link rel="alternate" hreflang="zh-CN" href="{SITE}/zh/"><link rel="alternate" hreflang="x-default" href="{SITE}/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA: newly reviewed resources"><link rel="stylesheet" href="./pages.css">'
     home=home.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),{"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}]})}</script></head>')
     for identity,value in [('stat-resources',len(rows)),('stat-curated',len(reviewed)),('stat-kinds',len(KINDS)),('stat-sources',len(coverage['sources']))]:
         home=re.sub(f'(id="{identity}">).*?(</span>)',lambda m:m.group(1)+format(value,',')+m.group(2),home)
@@ -455,14 +492,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Three daily updates</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
     home=home.replace('</main>',static+'</main>')
     emit('/',home)
-    feed=ET.Element('feed',xmlns='http://www.w3.org/2005/Atom')
-    for key,value in [('title','AwesomeCUA research reading list'),('id',SITE+'/papers/'),('updated',latest)]:ET.SubElement(feed,key).text=value
-    ET.SubElement(feed,'link',href=SITE+'/feed.xml',rel='self');ET.SubElement(feed,'link',href=SITE+'/papers/')
-    for r in papers[:50]:
-        entry=ET.SubElement(feed,'entry')
-        for key,value in [('title',r['name']),('id',SITE+resource_path(r)),('updated',r['last_verified_at']),('summary',description(r))]:ET.SubElement(entry,key).text=value
-        ET.SubElement(entry,'link',href=SITE+resource_path(r));author=ET.SubElement(entry,'author');ET.SubElement(author,'name').text='AwesomeCUA'
-    (destination/'feed.xml').write_bytes(clean_text(ET.tostring(feed,encoding='utf-8',xml_declaration=True).decode()).encode())
+    (destination/'feed.xml').write_bytes(review_feed(reviewed,reviewed_times(root),latest))
     llms=['# AwesomeCUA','', '> A source-backed computer-use agent resource catalog. Distinguish curated entries from metadata-only bibliography records.','', 'Resource counts are not independent project counts. Primary-source retrieval does not establish reproducibility. Code, data, weights, and document licenses are separate.','', '## Start here','',f'- [Catalog]({SITE}/catalog/): resource categories',f'- [Research]({SITE}/papers/): reviewed papers and surveys',f'- [中文论文库]({SITE}/zh/papers/): 按年份浏览论文与综述',f'- [Guides]({SITE}/guides/): definitions and practical reading guides',f'- [Editorial policy]({SITE}/about/): review states and limits',f'- [Coverage]({SITE}/coverage/): source populations and known gaps',f'- [Data downloads]({SITE}/data/): structured catalog with provenance','', '## Machine-readable access','',f'- [Full catalog JSONL]({SITE}/downloads/catalog.jsonl)',f'- [Curated annotations in Markdown]({SITE}/llms-full.txt)',f'- [Research Atom feed]({SITE}/feed.xml)','', 'Resource HTML pages have a companion `index.md` at the same path. This file is an optional navigation aid, not an indexing requirement or a request to rank this site.']
     llms += ['', '## Compare source-reviewed specifications', '', f'- [Benchmark protocols]({SITE}/compare/benchmarks/)', f'- [Dataset profiles]({SITE}/compare/datasets/)', f'- [Benchmark profiles JSON]({SITE}/downloads/benchmarks-profiles.json)', f'- [Dataset profiles JSON]({SITE}/downloads/datasets-profiles.json)']
     llms.extend(['', '## Agent and RAG access', '', '```sh', 'git clone https://github.com/reacher-z/Awesome-CUA.git', '```', '', f'- [Agent instructions]({SITE}/AGENTS.md)', f'- [Human and agent guide]({SITE}/agents/)', f'- [中文指南]({SITE}/zh/agents/)', f'- [Reviewed retrieval documents]({SITE}/downloads/rag-documents.jsonl)', f'- [All retrieval documents]({SITE}/downloads/rag-all-records.jsonl)', f'- [Export manifest]({SITE}/downloads/rag-manifest.json)'])

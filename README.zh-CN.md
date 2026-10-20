@@ -169,7 +169,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 ## 最新审阅
 
-按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在[主题页面](docs/topics.md)中。
+按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在[主题页面](docs/topics.md)中。订阅 [Atom feed](https://awesomecua.github.io/feed.xml) 可获取包括论文在内、各类资源最新通过审阅的 50 条。
 
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |

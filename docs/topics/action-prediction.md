@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `action-prediction`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (26)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (27)](#papers)
 
 ## Datasets
 
@@ -58,6 +58,7 @@
 | 2026‑04‑03 | [OmniGUI: Benchmarking GUI Agents in Omni-Modal Smartphone Environments](https://arxiv.org/abs/2605.18758) | unspecified | OmniGUI evaluates step-level action prediction from interleaved smartphone screenshots, synchronous audio and video. Expert demonstrations carry multimodal-dependency annotations, and initial baselines use native multimodal models as agent proxies to study temporal and audio-related failures. |
 | 2026‑03‑27 | [Towards GUI Agents: Vision-Language Diffusion Models for GUI Grounding](https://arxiv.org/abs/2603.26211) | web, desktop | Adapts a discrete vision-language diffusion model to single-turn GUI action and bounding-box prediction, using a hybrid masking schedule for coordinate geometry. Experiments across web, desktop and mobile datasets examine grounding accuracy and inference tradeoffs. |
 | 2026‑03‑12 | [HATS: Hardness-Aware Trajectory Synthesis for GUI Agents](https://arxiv.org/abs/2603.12138) | unspecified | Introduces HATS, which directs GUI trajectory exploration toward semantically ambiguous actions and iteratively checks instruction-execution alignment. Feedback from trajectory refinement updates the exploration signal used to collect subsequent training examples. |
+| 2026‑02‑27 | [CoME: Empowering Channel-of-Mobile-Experts with Informative Hybrid-Capabilities Reasoning](https://arxiv.org/abs/2602.24142) | android | Proposes CoME, a mobile-agent model whose router activates one of four experts for each reasoning stage (screen summary, subtask plan, action decision, action function), trained in stages and with information-gain DPO. |
 | 2026‑02‑19 | [Computer-Using World Model](https://arxiv.org/abs/2602.17365) | desktop | Presents a desktop world model that predicts textual UI changes before synthesizing the next screenshot. It learns from Microsoft Office transitions and is evaluated by letting a frozen agent compare simulated actions before execution. |
 | 2026‑02‑19 | [Modeling Distinct Human Interaction in Web Agents](https://arxiv.org/abs/2602.17588) | web | CowCorpus records interleaved human and agent actions during web navigation and identifies distinct patterns of user intervention. Models trained to anticipate these interventions are integrated into live web agents and assessed in a user study. |
 | 2026‑01‑26 | [SwipeGen: Bridging the Execution Gap in GUI Agents via Human-like Swipe Synthesis](https://arxiv.org/abs/2601.18305) | unspecified | Introduces SwipeGen for synthesizing varied swipe trajectories and SwipeBench for assessing their execution quality. The study examines how richer control of trajectory, speed, and timing changes GUI agents’ interaction performance. |

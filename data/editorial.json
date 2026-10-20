@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "CoME: Empowering Channel-of-Mobile-Experts with Informative Hybrid-Capabilities Reasoning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.24142",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "screen-understanding",
+      "planning"
+    ],
+    "summary": "Proposes CoME, a mobile-agent model whose router activates one of four experts for each reasoning stage (screen summary, subtask plan, action decision, action function), trained in stages and with information-gain DPO.",
+    "verify_terms": [
+      "Channel-of-Mobile-Experts"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.24142v2"
+    ],
+    "scope": "core",
+    "notes": "The experts are initialized from Qwen2-VL-2B feed-forward layers and trained through Expert-FT, Router-FT and CoT-FT stages, then Info-DPO, which weights intermediate reasoning steps by their information gain under a reward model. Training and evaluation use offline step-level action matching on AITZ and on AMEX augmented with AITZ-style reasoning annotations, against 13 dense and mixture-of-experts baselines. The paper says the augmented AMEX data will be open-sourced but gives no location. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2602.24142v2",
+        "retrieved_at": "2026-10-20T04:33:53Z",
+        "sha256": "08aefa4cd0c2ccf37d5416591da451e296a27c309abad24946ebe77b1d570e06",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML sections 3.1-3.4 (task formulation, CoME architecture, progressive training, Info-DPO), 4.1-4.2 (setup, AITZ and AMEX results) and Appendix D (datasets, baselines, metrics, implementation).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "58faf6f191a941369141b5b886ec6b8de9239314dd948fafab6f7aa524d0c940",
+    "reviewed_at": "2026-10-20T04:34:13Z"
   }
 ]

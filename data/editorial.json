@@ -63844,5 +63844,109 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Clawbrowser",
+    "kind": "infrastructure",
+    "url": "https://github.com/clawbrowser/clawbrowser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation"
+    ],
+    "summary": "Patched Chromium runtime for browser agents that keeps each named profile's generated fingerprint, proxy binding, cookies and storage together and exposes the running browser through a standard CDP endpoint.",
+    "scope": "core",
+    "verify_terms": [
+      "Clawbrowser"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Built from a pinned Chromium (151.0.7922.109 in scripts/chromium_pin.conf) plus 62 patch files under clawbrowser/patches/ (counted from the tree at the inspected commit) that apply profile values to navigator properties, screen metrics, canvas, WebGL and audio output, fonts, timezone and user-agent client hints, hide the webdriver signal, and keep WebRTC and DNS on the profile proxy. Fingerprint profiles come from the hosted Clawbrowser API with a user API key (/v1/fingerprints/generate in clawbrowser/cli/api_client.cc and api/openapi.yaml), which also verifies proxies and creates temporary remote-viewing sessions. Agents attach with Playwright, Puppeteer or another CDP client; the repository contains no agent loop. The clawctl bootstrapper that installs the runtime and writes agent integration templates is a separate repository. Runs as a macOS app (Apple Silicon), a portable Linux runtime for servers and containers, or a Windows install. The README says it is not a universal CAPTCHA bypass and asks users to follow site terms and applicable law. Code was read, not built.",
+    "details": {
+      "availability": "Public MIT source and release builds for macOS, Linux and Windows; generating fingerprint profiles requires an API key from the hosted Clawbrowser service.",
+      "repository_revision": "f799efb97805ce98e870b5d57c53759912911410"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/clawbrowser/clawbrowser/f799efb97805ce98e870b5d57c53759912911410/README.md",
+        "sha256": "a3f6374605978ce5274a5798ffc8580f0c040ecca2bf2d054e05d38b535d5eec",
+        "retrieved_at": "2026-10-20T08:18:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/clawbrowser/clawbrowser/git/trees/f799efb97805ce98e870b5d57c53759912911410?recursive=1",
+        "sha256": "71657932cea6e0040df49cc6bf80f410ef7ea80a6d616b89383c348dcb012b53",
+        "retrieved_at": "2026-10-20T08:18:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/clawbrowser/clawbrowser/f799efb97805ce98e870b5d57c53759912911410/scripts/chromium_pin.conf",
+        "sha256": "9ec05bbebf9c3683de80327ceb7f8293095a6e9ff7a4d1b3e1bc32eb97b42b75",
+        "retrieved_at": "2026-10-20T08:18:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/clawbrowser/clawbrowser/f799efb97805ce98e870b5d57c53759912911410/clawbrowser/cli/api_client.cc",
+        "sha256": "e6f1ebc9fc55e0bfda9b8f7715537cd3f5930f1adee0c810210d2ad226b8934f",
+        "retrieved_at": "2026-10-20T08:18:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/clawbrowser/clawbrowser/f799efb97805ce98e870b5d57c53759912911410/api/openapi.yaml",
+        "sha256": "f36ef1bf63aa0a2b8f835d08bce8b103be17a3c8a95e2b5cf2b4225a77429844",
+        "retrieved_at": "2026-10-20T08:18:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/clawbrowser/clawbrowser/f799efb97805ce98e870b5d57c53759912911410/LICENSE",
+        "sha256": "34ee7a99c7746672a78552cfdd7b3c0fcd40f84ed3dfbfeb9971db593dd60474",
+        "retrieved_at": "2026-10-20T08:18:44Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a3f6374605978ce5274a5798ffc8580f0c040ecca2bf2d054e05d38b535d5eec",
+    "reviewed_at": "2026-10-20T08:19:27Z"
   }
 ]

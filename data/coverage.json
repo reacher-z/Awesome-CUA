@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-10-20T03:55:29.533431+00:00",
-  "total_records": 3195,
-  "curated_records": 1629,
+  "as_of_utc": "2026-10-20T05:02:59Z",
+  "total_records": 3196,
+  "curated_records": 1630,
   "bibliographic_records": 2733,
   "arxiv_active_records": 2720,
   "non_arxiv_bibliographic_records": 13,
@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1566,
   "discovery_identifiers": 4244,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -191,7 +191,7 @@
     "company": 16,
     "dataset": 86,
     "framework": 77,
-    "infrastructure": 14,
+    "infrastructure": 15,
     "model": 98,
     "paper": 2715,
     "product": 20,
@@ -207,7 +207,7 @@
     "linux": 49,
     "macos": 30,
     "unspecified": 380,
-    "web": 623,
+    "web": 624,
     "windows": 63
   },
   "curated_by_kind_and_environment": {
@@ -265,7 +265,7 @@
       "ios": 1,
       "linux": 4,
       "macos": 2,
-      "web": 5,
+      "web": 6,
       "windows": 1
     },
     "model": {
@@ -317,7 +317,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 183,
+    "code": 184,
     "data": 61,
     "weights": 56,
     "document": 0
@@ -560,8 +560,8 @@
       "resolved_aliases": 5,
       "curated": 459,
       "excluded": 1,
-      "set_aside": 9,
-      "unindexed": 75
+      "set_aside": 10,
+      "unindexed": 74
     },
     {
       "id": "tianyuan-cua",

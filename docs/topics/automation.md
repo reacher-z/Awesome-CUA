@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
 
 ## Models
 
@@ -58,6 +58,7 @@ All entries in this section: desktop.
 | [Nut.js](https://github.com/nut-tree/nut.js) | desktop | — | — | Desktop automation library for keyboard, mouse, and screen interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nut-tree/nut.js/HEAD/README.md) |
 | [Playwright](https://github.com/microsoft/playwright) | web | — | code Apache-2.0 | Browser automation library used as an execution layer by agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright/HEAD/README.md) |
 | [PyAutoGUI](https://github.com/asweigart/pyautogui) | desktop | — | — | Cross-platform Python module for scripted mouse and keyboard control, message boxes and screenshots with on-screen image search, working on the primary monitor under Windows, macOS and Linux. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/asweigart/pyautogui/HEAD/README.md) |
+| [Selenium](https://github.com/SeleniumHQ/selenium) | web | — | code Apache-2.0 | Browser automation project implementing W3C WebDriver, with Java, Python, Ruby, .NET and JavaScript bindings, Selenium Grid for spreading sessions across machines, and the Rust-based Selenium Manager for driver setup. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/SeleniumHQ/selenium/HEAD/README.md) |
 | [Universe legacy GUI interaction client](https://github.com/openai/universe) | web, desktop | — | code MIT | An archived Gym-compatible client that exposes screen observations and keyboard/mouse actions over VNC for remote application and browser environments, including the historical World of Bits integration. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/openai/universe/HEAD/README.rst) |
 
 ## Products

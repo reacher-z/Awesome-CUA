@@ -63844,5 +63844,70 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "rabbit r1",
+    "kind": "product",
+    "url": "https://www.rabbit.tech/rabbit-r1",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Pocket voice-and-touch AI device that serves as a physical channel into rabbit OS3, whose DLAM capability can drive applications on a computer the user connects, with permission.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "rabbit r1",
+      "rabbit OS3"
+    ],
+    "notes": "rabbit inc. lists r1 at $199 USD with no subscription. The r1 page and user guide place computer use in OS3 rather than on the device: OS3 works on computers where the rabbit agent is installed, through their terminal, and DLAM, which the guide calls rabbit's computer-use capability, drives an application's screen with the user's permission. The updates log dates a DLAM early-access preview for desktop control via r1 on Windows and Mac to 29 January 2026, BYOK support for DLAM with Anthropic and OpenAI keys to rabbitOS 2.3 (10 July 2026), and OS3 general availability to 22 September 2026. Earlier r1 releases shipped LAM playground, a web agent acting through a webdriver from visual and structured input (1 October 2024), and teach mode, which learned website tasks from demonstrations (21 November 2024); the current user guide describes neither. The DLAM model, its observations and its reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "details",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://www.rabbit.tech/r1-user-guide",
+        "sha256": "52082e382a47ef156df88fe7de65df136f79fbeb55470544cac1d5d163273e80",
+        "retrieved_at": "2026-10-20T04:55:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://www.rabbit.tech/updates",
+        "sha256": "068ee0c0d61033891060d1233e05fe387a9362e17feee5ff5373b2dd9b973cdd",
+        "retrieved_at": "2026-10-20T04:55:05Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the r1 product page, the r1 user guide (last updated 09/22/2026) and the updates changelog, plus the rabbit OS3 home page. No device purchase, account setup or DLAM run.",
+    "reviewed_sha256": "2511557d772f11d19ca05e6efe5756010bcb3370989841e1403f4eb0355413b8",
+    "reviewed_at": "2026-10-20T04:55:51Z"
   }
 ]

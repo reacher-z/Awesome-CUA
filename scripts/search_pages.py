@@ -12,7 +12,7 @@ from collections import Counter, defaultdict
 from specifications import PROFILE_KEYS, comparison_body, profile_export, resource_profile_html, count_text, safe_href
 from agent_pages import agent_guide_body, RELEASES_URL
 from export_citations import citation_bibtex, citation_csl
-from paper_library import library_pages, library_path, library_years, paper_library
+from paper_library import PLATFORMS, library_pages, library_path, library_years, paper_library
 from publication_metadata import publication, format_date_parts, record_date_text, record_year
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
@@ -127,7 +127,19 @@ def resource_schema(record):
 
 
 def listing(rows):
-    return '<div class="reading-list">'+"".join(f'<article><div class="list-overline">{esc(KINDS[r["kind"]])} · {esc(r["review_status"])}</div><h2><a href="{resource_path(r)}">{esc(r["name"])}</a></h2><p>{esc(description(r))}</p><small>{esc(record_date_text(r) or "Release date not recorded")} · {esc(", ".join(r["environments"]))}</small></article>' for r in rows)+'</div>'
+    # The page heading already names the kind and review state, so entries carry only their own facts.
+    def entry(r):
+        facts=''.join(f'<span>{esc(fact)}</span>' for fact in listing_facts(r))
+        return f'<article><h2><a href="{resource_path(r)}">{esc(r["name"])}</a></h2><p>{esc(description(r))}</p>'+(f'<small>{facts}</small>' if facts else '')+'</article>'
+    return '<div class="reading-list">'+''.join(entry(r) for r in rows)+'</div>'
+
+
+def listing_facts(r):
+    # Recorded facts only, in the order the catalog cards use; a missing date or platform is left out rather than spelled "not recorded".
+    papers=sorted((rel for rel in r['relations'] if rel['type'] in ('introduced_by','documented_by') and rel['target_id'].startswith('arxiv:')),key=lambda rel:rel['type']!='introduced_by')
+    arxiv=r['identifiers'].get('arxiv') or (papers[0]['target_id'][6:] if papers else None)
+    licenses=[f"{slot.title()} {', '.join(l['declared']) if isinstance(l['declared'],list) else l['declared']}" for slot in ('code','data','weights','document') if (l:=r['licenses'].get(slot)) and l.get('declared')]
+    return [x for x in (', '.join(PLATFORMS[e][0] for e in r['environments'] if e in PLATFORMS),record_date_text(r),arxiv and 'arXiv '+arxiv,*licenses) if x]
 
 
 def publication_body(record):

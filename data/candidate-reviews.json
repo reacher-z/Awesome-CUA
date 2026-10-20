@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:3d82e6f1e186b87b3d5a",
+    "url": "https://serper.dev",
+    "decision": "out_of_scope",
+    "reason": "Serper is a commercial API that returns Google search results (web, images, news, maps, places, shopping, scholar and patents) as JSON for programmatic use. It does not open or operate web pages or other interfaces, so it is search-data infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-20T04:21:19Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20261010093645id_/https://serper.dev/",
+      "sha256": "70d0ca1151636be3a5685e0b13ed8da25d7d07f3d6bd12f3c4e73d5bdd304778",
+      "retrieved_at": "2026-10-19T08:35:17Z"
+    }
   }
 ]

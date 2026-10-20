@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2172,6 +2172,23 @@
       "reason": "VoLoAgent coordinates interruptible robot policies and action primitives for open-vocabulary physical manipulation. Its benchmark and real-robot validation address physical-world planning and recovery, outside the CUA scope.",
       "reviewed_at": "2026-10-17T14:29:57.522342+00:00",
       "metadata_fingerprint": "62ce7ab2ed75539a7fedb0d49c763d1dc9b36f300e7287996d72fb9a4aef3ca8",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
+        "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",
+        "retrieved_at": "2026-10-17T12:31:28Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2606.10394",
+      "name": "STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios",
+      "url": "https://arxiv.org/abs/2606.10394",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces STAGE-Claw, which automatically authors and validates state-based personal-agent tasks and evaluates 11 models on 40 of them by checking the final system state. Per the full text the agents run in OpenClaw and act through shell, file, calendar, reminder, note and messaging tools, with shell and file calls making up about 93% of tool use and no GUI or browser-page operation, so this tool-use agent benchmark is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:07:14Z",
+      "metadata_fingerprint": "3f79c13dd10cad84836aabf43ce0eb840ff126a8182b6473762916d53ed0b7e6",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
         "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",

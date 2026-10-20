@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2512.23738",
+    "name": "Enforcing Temporal Constraints for LLM Agents",
+    "url": "https://arxiv.org/abs/2512.23738",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract presents Agent-C, which enforces temporal safety properties on LLM agent tool calls through a specification language, translation to first-order logic, SMT checking and constrained generation, evaluated on retail customer-service and airline-reservation applications. The full text uses tau-bench tool-call scenarios and adversarial extensions; the agents act through function calls, not a GUI, browser or device, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:52:10Z",
+    "metadata_fingerprint": "7b7a7270e95cfbdda8133b0340d64d0c0d7efb4ba46926a10ad60817ebe5922f",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2512.06866%2C2512.07287%2C2512.08769%2C2512.12594%2C2512.12730%2C2512.13159%2C2512.14012%2C2512.16925%2C2512.16962%2C2512.16975%2C2512.21373%2C2512.23647%2C2512.23738%2C2601.01743%2C2601.02046%2C2601.02163%2C2601.02454%2C2601.02702%2C2601.03468%2C2601.03928%2C2601.04795%2C2601.05107%2C2601.05432%2C2601.06411%2C2601.06487%2C2601.06490%2C2601.06565%2C2601.06663%2C2601.07143%2C2601.07375%2C2601.08012%2C2601.08079%2C2601.08225%2C2601.08237%2C2601.08731%2C2601.09113%2C2601.09749%2C2601.09883%2C2601.10378%2C2601.10440%2C2601.11653%2C2601.11895%2C2601.11903%2C2601.11974%2C2601.12042%2C2601.12307%2C2601.12560%2C2601.12641%2C2601.13186%2C2601.13383&max_results=50",
+      "sha256": "f8cee8b281f54ecb3112bb26b59d166617d33f08f098f44818968a9c9b777ce6",
+      "retrieved_at": "2026-10-17T12:31:09Z"
+    }
   }
 ]

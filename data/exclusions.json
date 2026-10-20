@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2605.14649",
+    "name": "Multi-objective application placement in fog computing using graph neural network-based reinforcement learning",
+    "url": "https://arxiv.org/abs/2605.14649",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract proposes a deep reinforcement learning framework with a graph neural network and two actor-critics for multi-objective placement of interconnected application services on fog computing nodes, compared with genetic algorithms. This distributed-systems resource-allocation research involves no GUI, browser or device-operating agent, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:06:47Z",
+    "metadata_fingerprint": "5b63840cd924f783a991c5cc9026f5aee636b58214e093653be1178ee6738a36",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "27c33576ed43c7bc63d4b290f6558553bd1d3aa112a7358138f4045e1bc14918",
+      "retrieved_at": "2026-10-16T06:36:39Z"
+    }
   }
 ]

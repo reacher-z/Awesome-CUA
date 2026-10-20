@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2108,6 +2108,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2605.12233%2C2605.12493%2C2605.12978%2C2605.13119%2C2605.14133%2C2605.16909%2C2605.17260%2C2605.17324%2C2605.17448%2C2605.17656%2C2605.17721%2C2605.19447%2C2605.19587%2C2605.20894%2C2605.22642%2C2605.23204%2C2605.25233%2C2605.25901%2C2605.26086%2C2605.26144%2C2605.26252%2C2605.26646%2C2605.27209%2C2605.27705%2C2605.27898%2C2605.28158%2C2605.28255%2C2605.29341%2C2605.29463%2C2605.29801%2C2605.30010%2C2605.30052%2C2605.30126%2C2605.30434%2C2605.30907%2C2605.30914%2C2605.31264%2C2605.31557%2C2606.00530%2C2606.00543%2C2606.00856%2C2606.01057%2C2606.01961%2C2606.02540%2C2606.03103%2C2606.03889%2C2606.03895%2C2606.04315%2C2606.04455%2C2606.05525&max_results=50",
         "sha256": "9a71e95803ce58c462c84e2b45a891555e31d1fb409e643bb3ca4675a44c96e6",
         "retrieved_at": "2026-10-17T12:31:23Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2605.14649",
+      "name": "Multi-objective application placement in fog computing using graph neural network-based reinforcement learning",
+      "url": "https://arxiv.org/abs/2605.14649",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract proposes a deep reinforcement learning framework with a graph neural network and two actor-critics for multi-objective placement of interconnected application services on fog computing nodes, compared with genetic algorithms. This distributed-systems resource-allocation research involves no GUI, browser or device-operating agent, so it is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:06:47Z",
+      "metadata_fingerprint": "5b63840cd924f783a991c5cc9026f5aee636b58214e093653be1178ee6738a36",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "27c33576ed43c7bc63d4b290f6558553bd1d3aa112a7358138f4045e1bc14918",
+        "retrieved_at": "2026-10-16T06:36:39Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

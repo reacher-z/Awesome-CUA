@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2506.20668",
+    "name": "DemoDiffusion: One-Shot Human Imitation using pre-trained Diffusion Policy",
+    "url": "https://arxiv.org/abs/2506.20668",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract proposes DemoDiffusion, which retargets the hand motion in a single human demonstration into a rough robot end-effector trajectory and refines it with a pre-trained generalist diffusion policy, evaluated on 8 real-world robot manipulation tasks (and, in the full text, on simulated dexterous grasping). This is robot imitation-learning research with no GUI, web or device interface, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T08:08:48Z",
+    "metadata_fingerprint": "d037c3b12283aabe9d77609bf5033bb642339e91f4aaf63d2d86888c0f58803b",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2506.01423%2C2506.03231%2C2506.04301%2C2506.05336%2C2506.07385%2C2506.07398%2C2506.08136%2C2506.08837%2C2506.10953%2C2506.11425%2C2506.11763%2C2506.13538%2C2506.14683%2C2506.15461%2C2506.18959%2C2506.19502%2C2506.20668%2C2506.21252%2C2506.21495%2C2506.21614%2C2507.01599%2C2507.02279%2C2507.02825%2C2507.04036%2C2507.07400%2C2507.09481%2C2507.09884%2C2507.13348%2C2507.14447%2C2507.16704%2C2507.19902%2C2507.21678%2C2507.22925%2C2508.01548%2C2508.02866%2C2508.04002%2C2508.04389%2C2508.05193%2C2508.05294%2C2508.05748%2C2508.07871%2C2508.07999%2C2508.08228%2C2508.09124%2C2508.09981%2C2508.15804%2C2508.16153%2C2508.17398%2C2508.18489%2C2508.19611&max_results=50",
+      "sha256": "b91987360225499418fcd3645d7d5effac91e8202bf7c7e17c9f9e31d25b5be8",
+      "retrieved_at": "2026-10-17T07:57:51Z"
+    }
   }
 ]

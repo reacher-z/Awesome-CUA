@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2023,6 +2023,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2602.19870%2C2602.22769%2C2602.23166%2C2602.23320%2C2603.00198%2C2603.00842%2C2603.00991%2C2603.01050%2C2603.01145%2C2603.02236%2C2603.02795%2C2603.03278%2C2603.04549%2C2603.06713%2C2603.07106%2C2603.07670%2C2603.07853%2C2603.08706%2C2603.09716%2C2603.10002%2C2603.10664%2C2603.11139%2C2603.11320%2C2603.12483%2C2603.13026%2C2603.13247%2C2603.15714%2C2603.16065%2C2603.16289%2C2603.16839%2C2603.17216%2C2603.17378%2C2603.19313%2C2603.19685%2C2603.21489%2C2603.22527%2C2603.23638%2C2603.24157%2C2603.24639%2C2603.27646%2C2603.28069%2C2603.28407%2C2603.29418%2C2603.29847%2C2604.00528%2C2604.00886%2C2604.01194%2C2604.01438%2C2604.01560%2C2604.02985&max_results=50",
         "sha256": "9289bc047b59e93f75703b72f5e92d9277e115238427519c343df550220e351b",
         "retrieved_at": "2026-10-17T12:31:16Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2603.19375",
+      "name": "Automated Membership Inference Attacks (AutoMIA): Discovering MIA Signal Computations using LLM Agents",
+      "url": "https://arxiv.org/abs/2603.19375",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces AutoMIA, which uses LLM agents to design and implement new membership inference attack signal computations against trained machine-learning models, reporting AUC gains over existing attacks. This privacy-attack automation involves no GUI, web or device interaction and is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:21:49Z",
+      "metadata_fingerprint": "c46e26a2d5b4147ea38e2bfafea44b3e3eeaf311ecd49e01b5d2e334bd17807d",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "27c33576ed43c7bc63d4b290f6558553bd1d3aa112a7358138f4045e1bc14918",
+        "retrieved_at": "2026-10-16T06:36:39Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

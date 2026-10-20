@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2603.19375",
+    "name": "Automated Membership Inference Attacks (AutoMIA): Discovering MIA Signal Computations using LLM Agents",
+    "url": "https://arxiv.org/abs/2603.19375",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract introduces AutoMIA, which uses LLM agents to design and implement new membership inference attack signal computations against trained machine-learning models, reporting AUC gains over existing attacks. This privacy-attack automation involves no GUI, web or device interaction and is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:21:49Z",
+    "metadata_fingerprint": "c46e26a2d5b4147ea38e2bfafea44b3e3eeaf311ecd49e01b5d2e334bd17807d",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "27c33576ed43c7bc63d4b290f6558553bd1d3aa112a7358138f4045e1bc14918",
+      "retrieved_at": "2026-10-16T06:36:39Z"
+    }
   }
 ]

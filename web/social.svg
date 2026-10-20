@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#dfe3ef"/></pattern></defs><rect width="1200" height="630" fill="#fafbfe"/><rect x="780" width="420" height="630" fill="url(#dots)"/><rect x="70" y="65" width="48" height="48" rx="13" fill="#4856df"/><path d="M84 77v26l8-7 5 10 5-3-5-10h11L84 77Z" fill="white"/><text x="135" y="99" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#1b2030">AwesomeCUA</text><text x="70" y="270" font-family="Arial,sans-serif" font-size="74" font-weight="700" letter-spacing="-3" fill="#1b2030">The next interface</text><text x="70" y="359" font-family="Arial,sans-serif" font-size="74" font-weight="700" letter-spacing="-3" fill="#4856df">is an agent.</text><text x="74" y="431" font-family="Arial,sans-serif" font-size="22" fill="#657084">Research, models, data, and tools. One source-backed index.</text><path d="M975 195v160l48-47 32 61 33-18-32-60h67L975 195Z" fill="#4856df"/><path d="M70 515h1060" stroke="#e4e7ee"/><text x="73" y="564" font-family="Arial,sans-serif" font-size="17" fill="#657084">THE COMPUTER-USE AGENT INDEX</text><text x="895" y="564" font-family="Arial,sans-serif" font-size="17" fill="#4856df">awesomecua.github.io</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+
+    <linearGradient id="tile" x1="0" y1="0" x2="0.7" y2="1">
+      <stop stop-color="#c8d6df"/>
+      <stop offset="1" stop-color="#afc1ce"/>
+    </linearGradient>
+  <g id="cua-mark">
+  <rect x="2" y="2" width="60" height="60" rx="19" fill="#fff" stroke="#758bfd" stroke-width="3"/>
+  <rect x="14" y="15" width="36" height="36" rx="11" fill="#28466b" opacity=".07"/>
+  <rect x="14" y="13" width="36" height="36" rx="11" fill="url(#tile)"/>
+  <path d="m21 18.5 22 7.5-9.3 4.8L29 43Z" fill="#172530" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/>
+</g>
+<pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#dce6f5"/></pattern>
+</defs>
+<rect width="1200" height="630" fill="#fbfcff"/>
+<rect x="780" width="420" height="630" fill="url(#dots)"/>
+<use href="#cua-mark" transform="translate(70 65) scale(.75)"/>
+<text x="135" y="99" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#1c2b42">AwesomeCUA</text>
+<text x="70" y="270" font-family="Arial,sans-serif" font-size="68" font-weight="700" letter-spacing="-3" fill="#1c2b42">Computer-use agents.</text>
+<text x="70" y="359" font-family="Arial,sans-serif" font-size="68" font-weight="700" letter-spacing="-3" fill="#3c65d9">Papers, data, and tools.</text>
+<text x="74" y="431" font-family="Arial,sans-serif" font-size="22" fill="#56667d">Research, models, benchmarks, and software. Follow the primary sources.</text>
+<use href="#cua-mark" transform="translate(884 184) scale(3.5)"/>
+<path d="M70 515h1060" stroke="#e2e8f2"/>
+<text x="73" y="564" font-family="Arial,sans-serif" font-size="17" fill="#56667d">THE COMPUTER-USE AGENT INDEX</text>
+<text x="895" y="564" font-family="Arial,sans-serif" font-size="17" fill="#3c65d9">awesomecua.github.io</text>
+</svg>

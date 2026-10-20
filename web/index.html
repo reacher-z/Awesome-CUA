@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the computer-use agent ecosystem. A searchable, source-backed catalog of papers, models, datasets, benchmarks, tools, and products.">
-  <meta name="theme-color" content="#4856df">
-  <meta property="og:title" content="AwesomeCUA — The computer-use agent index">
-  <meta property="og:description" content="Research, models, data, and tools. Explore the computer-use agent ecosystem in one source-backed index.">
+  <meta name="description" content="Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources." data-i18n-content="pageDescription">
+  <meta name="theme-color" content="#3c65d9">
+  <meta property="og:title" content="AwesomeCUA — Computer-use research, data, and tools" data-i18n-content="pageTitle">
+  <meta property="og:description" content="Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources." data-i18n-content="pageDescription">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AwesomeCUA">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="en_US" data-i18n-content="pageLocale">
   <meta property="og:image" content="https://awesomecua.github.io/social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="AwesomeCUA: The next interface is an agent. Research, models, data, and tools in one source-backed index.">
+  <meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools." data-i18n-content="pageImageAlt">
   <meta name="twitter:card" content="summary_large_image">
-  <title>AwesomeCUA — The computer-use agent index</title>
+  <title>AwesomeCUA — Computer-use research, data, and tools</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./app.js"></script>
@@ -29,7 +29,7 @@
         <a href="#catalog" data-i18n="navExplore">Explore</a>
         <a href="/papers/" data-paper-library data-i18n="navPapers">Papers</a>
         <a href="/guides/" data-i18n="navGuides">Guides</a>
-        <a href="/data/" data-data-hub data-i18n="navData">Data / Agents</a>
+        <a href="/data/" data-data-hub data-i18n="navData">Data / RAG</a>
         <a href="#coverage" data-i18n="navCoverage">Coverage</a>
         <a href="#about" data-i18n="navAbout">About</a>
       </nav>
@@ -40,10 +40,10 @@
     <section class="hero shell">
       <div class="hero-copy">
         <div class="eyebrow"><span class="small-cross">✳</span><span data-i18n="eyebrow">COMPUTER-USE AGENT RESOURCES</span></div>
-        <h1><span data-i18n="heroLine1">Computer-use agents.</span><br><span class="accent" data-i18n="heroLine2">One connected index.</span></h1>
-        <p class="hero-description" data-i18n="heroDescription">Discover papers, models, datasets, benchmarks, and tools for agents that use computers. Search the collection and follow every resource to its source.</p>
-        <div class="hero-cta"><a class="button primary" href="#catalog"><span data-i18n="exploreButton">Browse catalog</span><span aria-hidden="true">↗</span></a><!-- SURVEY:START --><a class="button secondary" href="/survey/"><span data-i18n="readSurvey">Read the survey</span><span aria-hidden="true">↗</span></a><!-- SURVEY:END --><button class="button text-button" id="hero-download" type="button"><span data-i18n="getData">Get the data</span><span aria-hidden="true">↓</span></button></div>
-        <div class="hero-caption"><span class="status-dot"></span><span data-i18n="heroCaption">Built for researchers, builders, and the curious.</span></div>
+        <h1><span data-i18n="heroLine1">Computer-use agents.</span><br><span class="accent" data-i18n="heroLine2">Papers, data, and tools.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.</p>
+        <div class="hero-cta"><a class="button primary" href="#catalog"><span data-i18n="exploreButton">Search the catalog</span><span aria-hidden="true">↗</span></a><!-- SURVEY:START --><a class="button secondary" href="/survey/"><span data-i18n="readSurvey">Read the survey</span><span aria-hidden="true">↗</span></a><!-- SURVEY:END --><button class="button text-button" id="hero-download" type="button"><span data-i18n="getData">Data &amp; RAG</span><span aria-hidden="true">↓</span></button></div>
+        <div class="hero-caption"><span class="status-dot"></span><span data-i18n="heroCaption">Reviewed and metadata-only records are labeled.</span></div>
       </div>
       <div class="ecosystem-map" aria-label="Explore web, desktop, and mobile agents" data-i18n-label="mapLabelAria">
         <div class="map-label"><span class="status-dot"></span><span data-i18n="mapLabel">BROWSE BY ENVIRONMENT</span></div>
@@ -54,16 +54,16 @@
     </section>
     <section class="stats-band shell" aria-label="Catalog statistics" data-i18n-label="statsLabel">
       <div><span class="stat-value" id="stat-resources">—</span><span class="stat-label" data-i18n="resources">Resources indexed</span></div>
-      <div><span class="stat-value" id="stat-curated">—</span><span class="stat-label" data-i18n="curatedResources">Editorially reviewed</span></div>
+      <div><span class="stat-value" id="stat-curated">—</span><span class="stat-label" data-i18n="curatedResources">Source-reviewed</span></div>
       <div><span class="stat-value" id="stat-kinds">—</span><span class="stat-label" data-i18n="categories">Resource categories</span></div>
       <div><span class="stat-value" id="stat-sources">—</span><span class="stat-label" data-i18n="discoverySources">Source documents</span></div>
       <div class="snapshot"><span class="snapshot-title" data-i18n="snapshot">DATA SNAPSHOT</span><span id="snapshot-date">—</span><a href="#coverage"><span data-i18n="viewCoverage">View coverage</span> ↗</a></div>
     </section>
     <section class="agent-entry shell" aria-labelledby="agent-entry-title">
-      <div class="agent-entry-heading"><div class="eyebrow" data-i18n="agentEyebrow">USE THE DATA</div><h2 id="agent-entry-title" data-i18n="agentTitle">Clone the complete catalog</h2><p class="agent-entry-copy" data-i18n="agentCopy">Search locally or prepare RAG documents, with source evidence and review states preserved.</p><a class="subtle-link" data-data-hub href="/data/"><span data-i18n="agentDownloads">Browse download formats</span> ↗</a></div>
+      <div class="agent-entry-heading"><div class="eyebrow" data-i18n="agentEyebrow">USE THE DATA</div><h2 id="agent-entry-title" data-i18n="agentTitle">Clone the complete catalog</h2><p class="agent-entry-copy" data-i18n="agentCopy">Clone for local search and RAG exports. Records retain source evidence, review states, and scoped licenses.</p><a class="subtle-link" data-data-hub href="/data/"><span data-i18n="agentDownloads">Browse download formats</span> ↗</a></div>
       <div class="clone-entry-command" data-clone-entry><div class="clone-command"><code aria-label="Git clone command" data-i18n-label="cloneCommandLabel">git clone https://github.com/reacher-z/Awesome-CUA.git</code><button type="button" data-copy-clone data-i18n="copyCommand" aria-describedby="clone-status-home">Copy command</button></div><p id="clone-status-home" class="clone-feedback" data-clone-status role="status" aria-live="polite" aria-atomic="true"></p><details class="agent-search"><summary data-i18n="localSearch">Try a local search</summary><pre><code>cd Awesome-CUA
 python3 scripts/catalog.py search "grounding" --kind model --status curated --json</code></pre><p data-i18n="localSearchRequirements">Python 3.11+; no package installation or account needed.</p></details></div>
-      <ul class="agent-entry-links"><li><a data-agent-guide href="/agents/"><strong><span data-i18n="agentGuide">Agent &amp; RAG guide</span> ↗</strong><span data-i18n="agentGuideCopy">Steps for local search and retrieval data.</span></a></li><li><a href="/AGENTS.md"><strong><span data-i18n="agentInstructions">Agent instructions</span> ↗</strong><span data-i18n="agentInstructionsCopy">AGENTS.md · Search, export, and cite.</span></a></li><li><a href="/downloads/rag-manifest.json"><strong><span data-i18n="agentManifest">RAG manifest</span> ↗</strong><span data-i18n="agentManifestCopy">Export counts and snapshot fingerprints.</span></a></li></ul>
+      <ul class="agent-entry-links"><li><a data-agent-guide href="/agents/"><strong><span data-i18n="agentGuide">Agent &amp; RAG guide</span> ↗</strong><span data-i18n="agentGuideCopy">Search records and export retrieval documents.</span></a></li><li><a href="/AGENTS.md"><strong><span data-i18n="agentInstructions">Agent instructions</span> ↗</strong><span data-i18n="agentInstructionsCopy">AGENTS.md · Search, export, and cite.</span></a></li><li><a href="/downloads/rag-manifest.json"><strong><span data-i18n="agentManifest">RAG manifest</span> ↗</strong><span data-i18n="agentManifestCopy">Export counts and snapshot fingerprints.</span></a></li></ul>
       <div class="agent-related"><span data-i18n="relatedResearch">Related research</span><a href="https://github.com/reacher-z/Awesome-Jev" target="_blank" rel="noopener noreferrer">Awesome-Jev <span data-i18n="jevScope">System One &amp; typed decisions</span> <span aria-hidden="true">↗</span></a></div>
     </section>
     <section id="catalog" class="catalog-section shell" aria-labelledby="catalog-title">
@@ -72,29 +72,29 @@ python3 scripts/catalog.py search "grounding" --kind model --status curated --js
         <aside class="sidebar" aria-label="Resource categories" data-i18n-label="categories">
           <div class="sidebar-label" data-i18n="browseByType">BROWSE BY TYPE</div>
           <div id="categories" class="category-list"></div>
-          <div class="sidebar-note"><span class="note-icon">↗</span><h3 data-i18n="useDataTitle">Made to build on.</h3><p data-i18n="useDataCopy">Take the catalog with you. Structured records, source evidence, and clear review states.</p><button class="subtle-link" id="sidebar-download" type="button"><span data-i18n="downloadData">Download the data</span> ↓</button></div>
+          <div class="sidebar-note"><span class="note-icon">↗</span><h3 data-i18n="useDataTitle">Choose an export</h3><p data-i18n="useDataCopy">Full catalog or reviewed-only RAG, with sources and review states.</p><button class="subtle-link" id="sidebar-download" type="button"><span data-i18n="downloadData">View export formats</span> ↓</button></div>
         </aside>
         <div class="catalog-main">
-          <div class="search-box"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="search" data-i18n="searchLabel">Search the catalog</label><input id="search" type="search" autocomplete="off" placeholder="Search papers, agents, models, datasets…" data-placeholder="searchPlaceholder"><kbd aria-hidden="true">/</kbd></div>
+          <div class="search-box"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="search" data-i18n="searchLabel">Search the catalog</label><input id="search" type="search" autocomplete="off" placeholder="Search tasks or names: grounding, AndroidWorld…" data-placeholder="searchPlaceholder"><kbd aria-hidden="true">/</kbd></div>
           <div class="filter-row">
             <label class="select-wrap"><span data-i18n="platform">Platform</span><select id="platform"><option value="" data-i18n="allPlatforms">All platforms</option></select></label>
-            <label class="select-wrap"><span data-i18n="review">Review</span><select id="review"><option value="" data-i18n="allStates">All states</option><option value="curated" data-i18n="curated">Curated</option><option value="metadata_verified" data-i18n="metadata">Bibliography</option></select></label>
+            <label class="select-wrap"><span data-i18n="review">Review</span><select id="review" aria-describedby="catalog-review-note"><option value="" data-i18n="allStates">All states</option><option value="curated" data-i18n="curated">Reviewed</option><option value="metadata_verified" data-i18n="metadata">Metadata only</option></select></label>
             <label class="select-wrap"><span data-i18n="year">Year</span><select id="year"><option value="" data-i18n="allYears">All years</option></select></label>
             <label class="select-wrap topic-select"><span data-i18n="topic">Topic</span><select id="topic"><option value="" data-i18n="allTopics">All topics</option></select></label>
             <button type="button" class="clear-button" id="clear-filters" data-i18n="clearFilters" hidden>Reset filters</button>
           </div>
-          <div class="popular-topics"><span data-i18n="try">Try</span><button type="button" data-search="grounding" data-i18n="grounding">GUI grounding</button><button type="button" data-topic="reinforcement-learning" data-i18n="rl">Reinforcement learning</button><button type="button" data-topic="safety-security" data-i18n="safety">Safety & security</button><a data-topic-directory href="/topics/"><span data-i18n="topicDirectory">Browse topics</span> ↗</a><a class="paper-library-shortcut" data-paper-library href="/papers/"><span data-i18n="paperLibrary">Research library</span> ↗</a></div>
-          <div class="results-toolbar"><p id="results-count" role="status" aria-live="polite" tabindex="-1" data-i18n="loading">Loading the catalog…</p><label class="sort-wrap"><span class="sr-only" data-i18n="sortBy">Sort results</span><select id="sort"><option value="featured" data-i18n="curatedFirst">Curated first</option><option value="name" data-i18n="nameSort">Name A–Z</option><option value="newest" data-i18n="newest">Newest publication</option></select></label><div class="view-toggle" role="group" aria-label="Result layout" data-i18n-label="layoutLabel"><button id="view-grid" type="button" aria-label="Grid view" data-i18n-label="gridView" aria-pressed="true"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="12" y="2" width="6" height="6" rx="1"/><rect x="2" y="12" width="6" height="6" rx="1"/><rect x="12" y="12" width="6" height="6" rx="1"/></svg></button><button id="view-list" type="button" aria-label="List view" data-i18n-label="listView" aria-pressed="false"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 4h12M6 10h12M6 16h12M2 4h1M2 10h1M2 16h1"/></svg></button></div></div>
+          <div class="popular-topics"><span data-i18n="try">Tasks</span><button type="button" data-search="grounding" data-i18n="grounding">UI grounding</button><button type="button" data-topic="reinforcement-learning" data-i18n="rl">RL training</button><button type="button" data-topic="safety-security" data-i18n="safety">Agent safety</button><a data-topic-directory href="/topics/"><span data-i18n="topicDirectory">Browse topics</span> ↗</a><a class="paper-library-shortcut" data-paper-library href="/papers/"><span data-i18n="paperLibrary">Research library</span> ↗</a></div>
+          <div class="results-toolbar"><p id="results-count" role="status" aria-live="polite" tabindex="-1" data-i18n="loading">Loading the catalog…</p><label class="sort-wrap"><span class="sr-only" data-i18n="sortBy">Sort results</span><select id="sort"><option value="featured" data-i18n="curatedFirst">Reviewed first</option><option value="name" data-i18n="nameSort">Name A–Z</option><option value="newest" data-i18n="newest">Newest publication</option></select></label><div class="view-toggle" role="group" aria-label="Result layout" data-i18n-label="layoutLabel"><button id="view-grid" type="button" aria-label="Grid view" data-i18n-label="gridView" aria-pressed="true"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="12" y="2" width="6" height="6" rx="1"/><rect x="2" y="12" width="6" height="6" rx="1"/><rect x="12" y="12" width="6" height="6" rx="1"/></svg></button><button id="view-list" type="button" aria-label="List view" data-i18n-label="listView" aria-pressed="false"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 4h12M6 10h12M6 16h12M2 4h1M2 10h1M2 16h1"/></svg></button></div></div>
           <div id="load-error" class="empty-state" hidden><h3 data-i18n="errorTitle">The catalog could not be loaded.</h3><p data-i18n="errorCopy">Check your connection and try again.</p><button class="button primary" id="retry" type="button" data-i18n="retry">Try again</button></div>
           <div id="results" class="resource-grid" aria-label="Catalog results" data-i18n-label="resultsLabel" aria-busy="true"></div>
           <div id="empty" class="empty-state" hidden><div class="empty-symbol">⌕</div><h3 data-i18n="emptyTitle">No resources match these filters.</h3><p data-i18n="emptyCopy">Try a broader term or clear a filter. Many papers have not yet been assigned platform or topic tags.</p><button class="button secondary" id="empty-reset" type="button" data-i18n="clearFilters">Reset filters</button></div>
           <nav id="pagination" class="pagination" aria-label="Results pagination" data-i18n-label="paginationLabel"></nav>
-          <p class="catalog-footnote" data-i18n="catalogFootnote">Curated means reviewed against a primary source. Bibliography means title, authors, and dates were verified; relevance and findings still need review.</p>
+          <p id="catalog-review-note" class="catalog-footnote" data-i18n="catalogFootnote">Reviewed: relevance and annotations checked against a primary source. Metadata only: bibliography verified; relevance pending. Neither status means experiments were reproduced.</p>
         </div>
       </div>
     </section>
     <section id="coverage" class="coverage-section shell" aria-labelledby="coverage-title">
-      <div class="coverage-intro"><div class="eyebrow section-eyebrow" data-i18n="coverageEyebrow">TRACEABLE BY DESIGN</div><h2 id="coverage-title" data-i18n="coverageTitle">A useful index earns your trust.</h2><p data-i18n="coverageCopy">You should know what has been checked, where it came from, and what is still missing. We make those boundaries visible.</p><button class="subtle-link" id="coverage-button" type="button"><span data-i18n="coverageButton">Inspect the coverage ledger</span> ↗</button></div>
+      <div class="coverage-intro"><div class="eyebrow section-eyebrow" data-i18n="coverageEyebrow">REVIEW &amp; COVERAGE</div><h2 id="coverage-title" data-i18n="coverageTitle">Review status and known gaps</h2><p data-i18n="coverageCopy">See which records have source review, which have metadata only, and which identifiers remain unresolved.</p><button class="subtle-link" id="coverage-button" type="button"><span data-i18n="coverageButton">Inspect the coverage ledger</span> ↗</button></div>
       <div class="principles"><article><span class="principle-number">01</span><div><h3 data-i18n="principle1Title">Follow the evidence</h3><p data-i18n="principle1Copy">Every record points to a first-party source, with a retrieval date and content fingerprint.</p></div></article><article><span class="principle-number">02</span><div><h3 data-i18n="principle2Title">Keep the distinctions</h3><p data-i18n="principle2Copy">Papers are not projects. Code licenses are not data licenses. A model checkpoint is not a model family.</p></div></article><article><span class="principle-number">03</span><div><h3 data-i18n="principle3Title">Make the gaps visible</h3><p data-i18n="principle3Copy">Comprehensive coverage is our goal. The unreviewed queue and source boundaries stay visible along the way.</p></div></article></div>
     </section>
     <section id="about" class="about-section shell"><div><div class="eyebrow section-eyebrow" data-i18n="aboutEyebrow">AN OPEN FIELD DESERVES AN OPEN MAP</div><h2 data-i18n="aboutTitle">Help map what comes next.</h2><p data-i18n="aboutCopy">Found a paper, dataset, tool, or a detail we missed? Add your knowledge to the computer-use community.</p></div><a class="button primary" href="https://github.com/reacher-z/Awesome-CUA/issues/new?template=resource.yml" target="_blank" rel="noopener noreferrer"><span data-i18n="contribute">Contribute a resource</span><span aria-hidden="true">↗</span></a></section>

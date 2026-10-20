@@ -1,28 +1,32 @@
 {
   "schema_version": 2,
-  "scan_day_utc": "2026-10-18",
-  "query": "(ti:\"computer use\" OR ti:\"computer-use\" OR ti:\"GUI agent\" OR ti:\"GUI agents\" OR ti:\"GUI grounding\" OR ti:\"web agent\" OR ti:\"browser agent\") AND submittedDate:[202610040000 TO 202610180000]",
-  "since_utc": "202610040000",
-  "cutoff_utc": "202610180000",
+  "scan_day_utc": "2026-10-19",
+  "query": "(ti:\"computer use\" OR ti:\"computer-use\" OR ti:\"GUI agent\" OR ti:\"GUI agents\" OR ti:\"GUI grounding\" OR ti:\"web agent\" OR ti:\"browser agent\") AND submittedDate:[202610050000 TO 202610190000]",
+  "since_utc": "202610050000",
+  "cutoff_utc": "202610190000",
   "polling_policy": "Complete arXiv snapshots are reused within one UTC publication day; failed or incomplete searches are retried by a later scheduled scan.",
-  "reported_total": 35,
-  "unique_returned": 35,
+  "reported_total": 37,
+  "unique_returned": 37,
   "complete": true,
   "pages": [
     {
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B202610040000+TO+202610180000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
-      "retrieved_at": "2026-10-18T08:01:23Z",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B202610050000+TO+202610190000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "retrieved_at": "2026-10-19T04:42:05Z",
       "ok": true,
       "request_attempts": 1,
       "status": 200,
-      "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B202610040000+TO+202610180000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B202610050000+TO+202610190000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
       "content_type": "application/atom+xml; charset=utf-8",
-      "sha256": "0b00dbd90203ee74bfb47cd6cdf1f7226de2ae1c8844391b8e195d5c99475851",
-      "bytes": 91794,
+      "sha256": "ffbb3f28a3a0fc8888f30ea8b2cdaf441239685aaacc2d80f311581f4b5a1d5c",
+      "bytes": 98475,
       "start": 0,
-      "returned": 35
+      "returned": 37
     }
   ],
-  "new_ids": [],
+  "new_ids": [
+    "arxiv:2610.23012",
+    "arxiv:2610.22990",
+    "arxiv:2610.22539"
+  ],
   "warnings": []
 }

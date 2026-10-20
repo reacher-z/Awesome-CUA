@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (43)](#papers)
 
 ## Benchmarks
 
@@ -85,6 +85,7 @@ All entries in this section: web.
 | 2025‑12‑17 | [Step-GUI Technical Report](https://arxiv.org/abs/2512.15431) | android, desktop | Step-GUI uses calibrated trajectory rewards to turn generated GUI interaction data into training signals for compact agent models. The report also introduces GUI-MCP for hierarchical GUI operations and local task delegation, and AndroidDaily for static-action and end-to-end mobile evaluation. |
 | 2025‑11‑22 | [WebSTAR: Scalable Data Synthesis for Computer Use Agents with Step-Level Filtering](https://arxiv.org/abs/2512.10962) | web | Introduces a pipeline that filters individual steps from noisy computer-agent rollouts and augments them with reasoning for training. WebSTAR and WebSCORE support GUI-policy supervision and a distilled process reward model, StepRM. |
 | 2025‑10‑02 | [Scaling Agents for Computer Use](https://arxiv.org/abs/2510.02250) | desktop, windows, android | Introduces Behavior Judge, which converts execution trajectories into behavior narratives and compares multiple candidate rollouts. Experiments examine this selection approach on OSWorld, WindowsAgentArena and AndroidWorld. |
+| 2025‑09‑28 | [GUI-Shepherd: Reliable Process Reward and Verification for Long-Sequence GUI Tasks](https://arxiv.org/abs/2509.23738) | android | GUI-Shepherd is a process reward model initialized from UI-TARS-1.5-7B and trained on 52k human-labeled steps, used as a dense reward for online PPO on AndroidWorld and as an inference-time verifier. |
 | 2025‑09‑27 | [GUI-PRA: Process Reward Agent for GUI Tasks](https://arxiv.org/abs/2509.23263) | android | GUI-PRA evaluates GUI progress by generating task-specific criteria and actively inspecting visual evidence with tools. It tests offline judgment on OS-Critic Bench and the effects of this feedback on online mobile policies in AndroidWorld. |
 | 2025‑09‑26 | [ProRe: A Proactive Reward System for GUI Agents via Reasoner-Actor Collaboration](https://arxiv.org/abs/2509.21823) | unspecified | ProRe evaluates GUI task outcomes by having a reasoner assign targeted environment-probing tasks to specialist actors. The additional observations support reward judgments, with separate evaluation of judge accuracy and downstream agent task success. |
 | 2025‑09‑22 | [Orcust: Stepwise-Feedback Reinforcement Learning for GUI Agent](https://arxiv.org/abs/2509.17917) | unspecified | Orcust combines principle-constrained reward modeling with GUI trajectory collection in instrumented virtual machines. Environment-checkable and model-derived principles guide stepwise feedback for grounding, basic operations, and complete task execution. |

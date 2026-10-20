@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "GUI-Shepherd: Reliable Process Reward and Verification for Long-Sequence GUI Tasks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.23738",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "reward-models",
+      "reinforcement-learning",
+      "mobile-navigation",
+      "long-horizon"
+    ],
+    "summary": "GUI-Shepherd is a process reward model initialized from UI-TARS-1.5-7B and trained on 52k human-labeled steps, used as a dense reward for online PPO on AndroidWorld and as an inference-time verifier.",
+    "verify_terms": [
+      "Reliable Process Reward and Verification for Long-Sequence GUI Tasks"
+    ],
+    "scope": "core",
+    "notes": "Training steps come half from AndroidWorld emulator rollouts and half from the AndroidControl training set, with binary human labels and GPT-4o rationales. The authors refactored AndroidWorld to run against remote emulators for parallel online PPO and initialize the value model from the reward model. Reported AndroidWorld success is 40.5% with reward-model-guided PPO, against 32.8% for the UI-TARS-1.5-7B baseline and 37.0% for outcome-reward PPO, and 37.9% with best-of-three verification; offline AndroidControl gains are 2.2 and 4.3 points. The paper names no code release, and no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-6, Tables 1-3 and Appendices A-B; checked the v1 PDF for code links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.23738v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.23738v1",
+        "retrieved_at": "2026-10-20T07:39:14Z",
+        "sha256": "aef7f17fec3e25d11a30baa64d81b9f739e9270f59fc95784e158df461063038",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3fbea1de10c3b464ce9811f1bb970497c1fdd08618167e9b97f1bb4d5812b205",
+    "reviewed_at": "2026-10-20T07:39:16Z"
   }
 ]

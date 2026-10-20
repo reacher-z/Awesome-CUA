@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.20833",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "evaluation",
+      "long-horizon",
+      "reward-models"
+    ],
+    "scope": "adjacent",
+    "summary": "MemGym wraps tau2-bench, SWE-Gym and WebArena-Infinity plus two synthetic tracks behind one memory interface, scoring memory strategies separately from reasoning, and trains MemRM to score context compression.",
+    "verify_terms": [
+      "MemGym: a Long-Horizon Memory Environment"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.20833v1"
+    ],
+    "notes": "Adjacent agent-memory benchmark. Its computer-use track wraps WebArena-Infinity with Playwright-controlled Chromium and text accessibility-tree observations: 170 hard tasks across five apps for smart replay and 140 across three apps for prefix injection, per the v1 full text. The other tracks cover tool-use dialogue, deep-research search and coding. MemRM is Qwen3-1.7B fine-tuned with QLoRA on SWE-Gym compression events. The paper names no code repository. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.20833v1",
+        "sha256": "7a897cc5ac30675a33a85a4b0a5bd0cbfd4d996559678449719650df208dd3fc",
+        "retrieved_at": "2026-10-20T04:00:52Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML full text for the WebArena-Infinity track setup, the other tracks, MemRM and any release link. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "56fa1ed97eb0b6b80c9e93efd94163dc46a5aa037a969b8818da269a09ba4bc5",
+    "reviewed_at": "2026-10-20T04:13:16Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (43)](#papers)
 
 ## Benchmarks
 
@@ -66,6 +66,7 @@ All entries in this section: web.
 | 2026‑06‑23 | [VisCritic: Visual State Comparison as Process Reward for GUI Agents](https://arxiv.org/abs/2606.24525) | unspecified | VisCritic compares before/after screenshots through change-aware visual features and an action-conditioned critic. Weakly supervised samples from existing traces train judgments of action success, progress and error type for GUI-agent verification. |
 | 2026‑06‑09 | [A History-Aware Visually Grounded Critic for Computer Use Agents](https://arxiv.org/abs/2606.11078) | web, desktop | HiViG combines a compact history of completed actions with a visually grounded critic that checks proposed coordinates before execution. Its evaluations separate history-related planning failures from errors caused by targeting the wrong screen element. |
 | 2026‑06‑05 | [StainFlow: Entity-Stain Tracking and Evidence Linking for Process Rewards in GUI Agents](https://arxiv.org/abs/2606.07027) | android | StainFlow tracks visually verifiable task entities through GUI trajectories to identify phases and retrieve focused evidence windows. Its process-reward model is tested for both online policy learning and trajectory-completion judgments. |
+| 2026‑05‑20 | [MemGym: a Long-Horizon Memory Environment for LLM Agents](https://arxiv.org/abs/2605.20833) | web | MemGym wraps tau2-bench, SWE-Gym and WebArena-Infinity plus two synthetic tracks behind one memory interface, scoring memory strategies separately from reasoning, and trains MemRM to score context compression. |
 | 2026‑04‑20 | [AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation](https://arxiv.org/abs/2604.18240) | unspecified | AJ-Bench evaluates judge agents that actively gather evidence from search, data systems and graphical interfaces. Its annotated tasks and trajectories test information acquisition, state verification and process verification. |
 | 2026‑04‑08 | [Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions](https://arxiv.org/abs/2604.07277) | android | Introduces Android Coach, which uses a learned critic to evaluate multiple candidate actions at each observed emulator state. Process rewards and a group-wise advantage estimator support online training, evaluated on AndroidLab and AndroidWorld. |
 | 2026‑04‑06 | [IntentScore: Intent-Conditioned Action Evaluation for Computer-Use Agents](https://arxiv.org/abs/2604.05157) | desktop | Trains IntentScore on offline desktop GUI interactions to assess candidate actions using both their state relevance and planning intent. The reward model is evaluated as an action reranker for Agent S3 on OSWorld. |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-689 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+690 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -339,6 +339,7 @@ All entries in this section: web.
 | 2026‑06‑02 | [DeskCraft: Benchmarking Desktop Agents on Professional Workflows and Human-in-the-Loop Collaboration](https://arxiv.org/abs/2606.03103) | desktop | DeskCraft evaluates professional desktop workflows and human-agent collaboration through mid-execution clarification, interruption and post-completion feedback. Its tasks cover creative applications and expose difficulties in long-horizon execution and proactive clarification. |
 | 2026‑06‑02 | [MedCUA-Bench: A Screenshot-Only Benchmark for Clinical Computer-Use Agents](https://arxiv.org/abs/2606.03203) | unspecified | MedCUA-Bench evaluates screenshot-only clinical interface workflows using paired intent- and step-level goals. It combines reconstructed medical interfaces with completion and clinical-safety checks, and separately reports results on a real OpenEMR system. |
 | 2026‑06 | [GUI-SAGE: Enhancing GUI Automation with Self-Explanatory Learning](https://openaccess.thecvf.com/content/CVPR2026/html/Tang_GUI-SAGE_Enhancing_GUI_Automation_with_Self-Explanatory_Learning_CVPR_2026_paper.html) | android | GUI-SAGE generates reasoning conditioned on known actions and weights policy updates using confidence and reward signals. Its experiments use AndroidControl and GUIOdyssey data and separately evaluate interactive AndroidWorld tasks. |
+| 2026‑05‑28 | [Does The Way You Plan Matter? An Empirical Study of Planning Representations for LLM Web Agents](https://arxiv.org/abs/2605.29927) | web | PlanAhead, a static planner-executor web agent, compares subgoal, narrative, pseudocode and checklist plans on 158 hard WebArena tasks with GPT-4.1-mini, Qwen-2.5-VL-72B and Gemini 2.5 Flash as planners and executors. |
 | 2026‑05‑28 | [PhoneWorld: From Real-App Trajectories to Dynamic and Verifiable Environments for Phone-Use Agents](https://arxiv.org/abs/2605.29486) | android | Introduces PhoneWorld, which converts observed app pages, transitions and state changes into executable Android environments through a build-inspect-repair process. Generated tasks and programmatic verifiers support benchmarking, trajectory collection and online training. |
 | 2026‑05‑27 | [GUI Agents for Continual Game Generation](https://arxiv.org/abs/2605.28258) | web | PlaytestArena evaluates generated browser games using expected in-play behaviors adjudicated by GUI agents. Play2Code pairs a coding agent with a rubric-blind GUI playtester whose interaction traces and feedback guide iterative refinement, with a separate final judge. |
 | 2026‑05‑27 | [MaskClaw: Edge-Side Personalized Privacy Arbitration for GUI Agents with Behavior-Driven Skill Evolution](https://arxiv.org/abs/2605.28646) | unspecified | MaskClaw makes local Allow, Mask or Ask decisions before GUI screenshots leave a trusted environment, using visual evidence and personalized policy memory. Its benchmark and designed evolution scenarios test how corrections and edits can become privacy skills checked by a sandbox gate. |

@@ -63844,5 +63844,103 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "mcp-remote-macos-use",
+    "kind": "tool",
+    "url": "https://github.com/baryhuang/mcp-remote-macos-use",
+    "aliases": [
+      "Remote MacOs Use"
+    ],
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "MCP server that lets an LLM client such as Claude Desktop control a remote Mac through its built-in Screen Sharing, returning screenshots and sending scaled mouse, keyboard, scroll and drag actions over VNC.",
+    "verify_terms": [
+      "mcp-remote-macos-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/baryhuang/mcp-remote-macos-use/HEAD/README.md"
+    ],
+    "notes": "Python MCP server published by baryhuang and distributed as the Docker image buryhuang/mcp-remote-macos-use; the target Mac needs only Screen Sharing enabled, with host, username and password passed as environment variables. Its own RFB client (src/vnc_client.py) supports only Apple Authentication (protocol 30). server.py registers eight tools: remote_macos_get_screen (a PNG screenshot), send_keys, mouse_move, mouse_click, mouse_double_click, mouse_scroll, mouse_drag_n_drop and open_application; action handlers scale the client's coordinates to the remote screen size, and open_application types the app name into Spotlight (Command+Space, text, Return). An optional LiveKit handler adds WebRTC screen sharing when LiveKit variables are set. The server has no model of its own; the MCP client's model decides the actions. Root LICENSE is MIT (copyright peakmojo); not a fork, not archived; the default branch was last committed on 30 April 2025. Code was read, not run.",
+    "details": {
+      "availability": "Public Python source and Dockerfile; Docker Hub image; no model.",
+      "repository_revision": "58c13c785ce76ad1d37975e9b7aa32303b8d7c22"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/baryhuang/mcp-remote-macos-use/git/trees/58c13c785ce76ad1d37975e9b7aa32303b8d7c22?recursive=1",
+        "sha256": "64c98d12fc1ba2171e88bd55081e4233ea6039964d59e9e8338a879c8af63859",
+        "retrieved_at": "2026-10-20T08:11:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/baryhuang/mcp-remote-macos-use/58c13c785ce76ad1d37975e9b7aa32303b8d7c22/LICENSE",
+        "sha256": "03e479d063b4b320ebd9a2965f14132875f14b0194f9575e22ac04407f7e0dc4",
+        "retrieved_at": "2026-10-20T08:11:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/baryhuang/mcp-remote-macos-use/58c13c785ce76ad1d37975e9b7aa32303b8d7c22/src/mcp_remote_macos_use/server.py",
+        "sha256": "20a0d5ef8a6a3be78beb638730a8f555f6ca89cbc1535b879f780241e0ef3e51",
+        "retrieved_at": "2026-10-20T08:11:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/baryhuang/mcp-remote-macos-use/58c13c785ce76ad1d37975e9b7aa32303b8d7c22/src/action_handlers.py",
+        "sha256": "75f99ba319d16467b8662fc5b29b361f0227a96c94a66392107203b9ab50b6cf",
+        "retrieved_at": "2026-10-20T08:11:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/baryhuang/mcp-remote-macos-use/58c13c785ce76ad1d37975e9b7aa32303b8d7c22/src/vnc_client.py",
+        "sha256": "b61ee6ab59def44c2297e72f1502ec1a17f6b6d3bc79c4e0de5a03b0041c0ee5",
+        "retrieved_at": "2026-10-20T08:11:15Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3ee2f530a8510852966e65f7448b9f7bd2d9e884169a4c8248e20f081890e39a",
+    "reviewed_at": "2026-10-20T08:11:40Z"
   }
 ]

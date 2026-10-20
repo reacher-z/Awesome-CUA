@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:89412e155b7b77076e53",
+    "url": "https://www.usenix.org/conference/atc25/presentation/tian",
+    "decision": "out_of_scope",
+    "reason": "CLONE is a USENIX ATC 2025 systems paper on serving large language models on edge devices through model- and system-level co-design with a 28nm hardware accelerator, measured on latency and energy. It does not build, train or evaluate agents that operate graphical, web or mobile interfaces, so it is general on-device LLM inference rather than a computer-use resource.",
+    "reviewed_at": "2026-10-20T05:11:33Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251206182016id_/https://www.usenix.org/conference/atc25/presentation/tian",
+      "sha256": "2d790d7ddc99a4011078e95f9b4c0599d6f13c2c606c550132bdcd0be98dcd43",
+      "retrieved_at": "2026-10-20T04:39:27Z"
+    }
   }
 ]

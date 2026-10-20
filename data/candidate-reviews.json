@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:0d9466cad6b8f06214fe",
+    "url": "https://scrapegraphai.com",
+    "decision": "out_of_scope",
+    "reason": "scrapegraphai.com is the hosted API for ScrapeGraphAI, which turns web pages into Markdown, screenshots or prompt-defined JSON and offers search, site crawling and change-monitoring endpoints plus an MCP server. It retrieves and extracts page content for LLM pipelines and does not let an agent operate a web interface, so it is a crawler outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:20:52Z",
+    "evidence": {
+      "url": "https://scrapegraphai.com",
+      "sha256": "f3581abe72ef42050be23e3e7f371e98d545f520401fb38b419bbb6e4d6358b0",
+      "retrieved_at": "2026-10-19T08:39:35Z"
+    }
   }
 ]

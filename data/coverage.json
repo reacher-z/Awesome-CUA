@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1580,
   "discovery_identifiers": 4260,
-  "unindexed_candidates": 906,
-  "non_resource_candidates": 98,
+  "unindexed_candidates": 905,
+  "non_resource_candidates": 99,
   "alias_candidates": 36,
   "pending_editorial": [
     {
@@ -1700,8 +1700,8 @@
       "resolved_aliases": 0,
       "curated": 2,
       "excluded": 0,
-      "set_aside": 6,
-      "unindexed": 21
+      "set_aside": 7,
+      "unindexed": 20
     },
     {
       "id": "release-multiui",

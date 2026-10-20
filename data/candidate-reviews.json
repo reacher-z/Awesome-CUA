@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:e2ba2dac5d3fac2e9791",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a1c8a68e52499c9396854e3f967e37c0-Abstract-Conference.html",
+    "decision": "out_of_scope",
+    "reason": "Collaborative Gym (Co-Gym) is a framework for human-agent collaboration whose agents act through API-style tools (travel search functions, a distance matrix, paper search and library actions, Jupyter cells and a shared text editor) in travel planning, related-work writing and tabular analysis tasks. Its agents do not operate graphical, browser or device interfaces, so the paper is outside the catalog's computer-use and GUI-agent scope.",
+    "reviewed_at": "2026-10-20T04:19:02Z",
+    "evidence": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a1c8a68e52499c9396854e3f967e37c0-Abstract-Conference.html",
+      "sha256": "4217a895f255dd0ad6d04390e0eb1828ca89391b03683f236e5eb9c03d07ff14",
+      "retrieved_at": "2026-10-19T08:06:43Z"
+    }
   }
 ]

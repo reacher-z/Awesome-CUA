@@ -63653,5 +63653,41 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "A Task-State Representation for Long-Horizon Mobile GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.00502",
+    "summary": "TSR is a training-free wrapper that adds an instruction summary, subgoal tracker and before/after screenshot action check to a mobile GUI actor, tested on MobileWorld, AndroidWorld, MemGUI-Bench and VenusBench-Mobile.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "state-tracking",
+      "long-horizon",
+      "training-free"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "A Task-State Representation for Long-Horizon Mobile GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.00502v1"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Reviewed against the exact-version arXiv v1 abstract page, whose title, ordered author list, version and normalized abstract SHA match the retained snapshot. According to the full text, a prompted LLM updates the state block from the screenshots taken before and after each action, and the serialized block is added to the prompt of an unchanged GUI actor; actor and updater both use Qwen3.5-plus or Kimi-k2.5 through a provider API. Reported success rates rise by up to 12 points on MobileWorld, while Qwen3.5-plus drops 3.45 points on AndroidWorld. The paper names no code release. Experimental results have not been independently reproduced.",
+    "read_basis": "arXiv v1 abstract page and HTML full text (method, experimental setup, results and appendices on benchmarks and action space).",
+    "reviewed_sha256": "7860bafdf9a5633bae30f8dfd63f8b333b90cb5ec10b6fe0d0e017adc10379d1",
+    "reviewed_at": "2026-10-20T03:59:28Z"
   }
 ]

@@ -1999,7 +1999,7 @@
       "url": "https://arxiv.org/abs/2512.07287",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "H-EPM builds a tool graph from past trajectories, with episodic context summaries on tool-to-tool edges, to guide inference and bias reinforcement-learning exploration for multi-turn tool-use agents, evaluated on Telecom and Retail tasks from tau-bench and tau2-bench, ToolSandbox and ACEBench with LLM-simulated users. These are function-calling tasks with no GUI, browser or device interaction, so the work is outside the computer-use scope.",
+      "reason": "H-EPM builds a tool graph from past trajectories, with episodic context summaries on tool-to-tool edges, to guide inference and bias reinforcement-learning exploration for multi-turn tool-use agents, evaluated on Telecom and Retail tasks from tau-bench and tau2-bench, ToolSandbox and ACEBench with LLM-simulated users. These are function-calling tasks: ToolSandbox tools change simulated phone settings such as location services only through API calls, and no GUI, browser or device screen is operated, so the work is outside the computer-use scope.",
       "reviewed_at": "2026-10-20T05:17:30Z",
       "metadata_fingerprint": "c5aaea446d6f17d720a5088370c09a01272843d8fba4ec96299f00af3aef4a04",
       "evidence": {

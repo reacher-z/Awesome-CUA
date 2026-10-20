@@ -63844,5 +63844,144 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "CuaOS",
+    "kind": "agent",
+    "url": "https://github.com/CuaOS/CuaOS",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "self-reflection",
+      "sandbox"
+    ],
+    "summary": "Locally run Linux desktop agent: a quantized Qwen3-VL 8B model acts on screenshots of a trycua/cua-xfce Docker desktop and checks each planned step, with a PyQt6 control UI.",
+    "scope": "core",
+    "verify_terms": [
+      "CuaOS"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "The default executor and verifier is the Qwen3-VL-8B-Instruct-abliterated-v2.0 Q5_K_S GGUF from mradermacher, loaded through llama-cpp-python's Qwen3VLChatHandler (src/config.py, src/llm_client.py). Each action call sends the objective, recent action history and a plain screenshot downscaled to at most 640 px; the model returns one JSON action with normalized coordinates (click, double or right click, type, key press, hotkey, scroll, wait or done), which src/sandbox.py converts to pixels and posts to the container's /cmd API. The planner is a local text-only GGUF model or an OpenRouter/OpenAI API model; src/agent_loop.py runs each planned step with a per-step attempt limit, src/verifier.py has the vision model judge success from a fresh screenshot, and a stuck plan is regenerated up to twice by default under a 20-action cap. Guards reject coordinates near screen edges and repeated identical actions. The trycua/cua-xfce image is built from libs/xfce in the trycua/cua repository (cd-container-xfce.yml). Optional Turkish-to-English command translation is included. The MIT license covers the repository code; downloaded model weights carry their own terms. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT Python source run from a clone (no tagged release); requires an NVIDIA GPU, Docker and GGUF weights downloaded from Hugging Face; an API key is needed only for the optional hosted planner.",
+      "repository_revision": "9798ba13ef4d642212d14621d90dc655dfc350e6"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/README.md",
+        "sha256": "5b89b749b177e873ba0c358801018f130c53956cf47cc91dd8a1b3f0a58bf742",
+        "retrieved_at": "2026-10-20T08:37:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/src/config.py",
+        "sha256": "c8184296b1fa1521b7d730a9737905064e75bbd3fc0afce94648715dbc65de4e",
+        "retrieved_at": "2026-10-20T08:37:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/src/llm_client.py",
+        "sha256": "5722878ddc65c7ced02a231e29151a39afbb022d62ecc636fda10a10cdbfb8de",
+        "retrieved_at": "2026-10-20T08:37:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/src/sandbox.py",
+        "sha256": "1d1bd212a99901b57123757ce1235597bdd02db9031de64b029ccba207ce7a92",
+        "retrieved_at": "2026-10-20T08:37:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/src/agent_loop.py",
+        "sha256": "957f6d1f7e515d9e67bd74d45c36042c9dc15601fd342ecd7b3e8202d5537ce0",
+        "retrieved_at": "2026-10-20T08:37:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/src/verifier.py",
+        "sha256": "5965becd15f364a1bd00db6ac66bedf11ccf00d9e9d7619d3ae8c35892ca07f1",
+        "retrieved_at": "2026-10-20T08:37:50Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/trycua/cua/a4b5fec16a25d0206d075203c723404100a8043e/.github/workflows/cd-container-xfce.yml",
+        "sha256": "ac0b28a38d22f4a915b5c8ff1f1a0013f0f510f421597b14707dba8e30e1d482",
+        "retrieved_at": "2026-10-20T08:38:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/LICENSE",
+        "sha256": "55c01df9fc6d54627d018a53aa7fa2821ad0c6dc4ad5cc8f30f4a4938571ece9",
+        "retrieved_at": "2026-10-20T08:38:02Z"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:trycua/cua",
+        "evidence_url": "https://raw.githubusercontent.com/CuaOS/CuaOS/9798ba13ef4d642212d14621d90dc655dfc350e6/src/config.py"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5b89b749b177e873ba0c358801018f130c53956cf47cc91dd8a1b3f0a58bf742",
+    "reviewed_at": "2026-10-20T08:40:07Z"
   }
 ]

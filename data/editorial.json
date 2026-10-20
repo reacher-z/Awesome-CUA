@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Computer Use at the Edge of the Statistical Precipice",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.08261",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "sandbox",
+      "robustness"
+    ],
+    "scope": "core",
+    "summary": "Shows a screen-blind replay script can beat frontier models on static CUA benchmarks, then proposes PRISM environment principles, hierarchical-bootstrap confidence intervals and DigiWorld, 15 sandboxed Android apps.",
+    "verify_terms": [
+      "Computer Use at the Edge of the Statistical Precipice"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.08261v1"
+    ],
+    "notes": "Full-text v1: DigiWorld has 15 hand-built React Native Android apps in 7 domains, 387 scenarios (304 single-app, 83 composed) and over 4,300 task instances; agents act only through screen-based GUI actions, and outcomes are checked with SQL queries on app state. The paper evaluates Claude Opus 4.6, GPT-5.4 and Gemini 3 Pro, pairs Wilson score intervals with a hierarchical bootstrap, and audits AndroidWorld, OSWorld, VisualWebArena, WorkArena, REAL-bench, DigiData-Bench, WebVoyager and MobileWorld against PRISM. No code or data release is named. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.08261v1",
+        "sha256": "469c615d91b5ca53854d829e1ceb34e5a8c1f833f4df9a714fcca3ac2f883823",
+        "retrieved_at": "2026-10-20T04:19:09Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 2, 3, 5 and 6 and Appendix L (PRISM audit of existing benchmarks). No result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a0a58267fefbce528ca4c5fbfe8d6d3773302f6f3e4c6fa24832275de80dafa2",
+    "reviewed_at": "2026-10-20T04:19:21Z"
   }
 ]

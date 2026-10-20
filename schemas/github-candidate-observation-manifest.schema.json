@@ -1,0 +1,804 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesomecua.github.io/schemas/github-candidate-observation-manifest.schema.json",
+  "title": "AwesomeCUA public candidate observation manifest",
+  "description": "The observation population and source ledger are independent of the active catalog comparison context.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "provider",
+    "scope",
+    "observation_snapshot_sha256",
+    "source_ledger_sha256",
+    "input_fingerprints",
+    "scan",
+    "active_catalog_context",
+    "count",
+    "supporting_primary_bodies",
+    "observed_from",
+    "observed_through",
+    "review_policy",
+    "count_policy",
+    "privacy",
+    "export",
+    "schema",
+    "manifest_schema"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "provider": {
+      "const": "github"
+    },
+    "scope": {
+      "const": "candidate-observations"
+    },
+    "observation_snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_ledger_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "input_fingerprints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "files"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "files": {
+            "type": "object",
+            "required": [
+              "catalog.jsonl",
+              "candidates.jsonl",
+              "primary-evidence.jsonl",
+              "repository-aliases.json",
+              "candidate-reviews.json"
+            ],
+            "properties": {
+              "catalog.jsonl": {
+                "type": "object",
+                "required": [
+                  "bytes",
+                  "sha256"
+                ],
+                "properties": {
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "candidates.jsonl": {
+                "type": "object",
+                "required": [
+                  "bytes",
+                  "sha256"
+                ],
+                "properties": {
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "primary-evidence.jsonl": {
+                "type": "object",
+                "required": [
+                  "bytes",
+                  "sha256"
+                ],
+                "properties": {
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "repository-aliases.json": {
+                "type": "object",
+                "required": [
+                  "bytes",
+                  "sha256"
+                ],
+                "properties": {
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "candidate-reviews.json": {
+                "type": "object",
+                "required": [
+                  "bytes",
+                  "sha256"
+                ],
+                "properties": {
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "scan": {
+      "type": "object",
+      "required": [
+        "configuration",
+        "runs",
+        "queries",
+        "request_outcomes",
+        "global_completeness_established",
+        "limit"
+      ],
+      "properties": {
+        "configuration": {
+          "type": "object",
+          "required": [
+            "topics",
+            "created_after",
+            "created_before"
+          ],
+          "properties": {
+            "topics": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "android-automation",
+                  "browser-agent",
+                  "browser-agents",
+                  "browser-automation",
+                  "computer-use",
+                  "desktop-automation",
+                  "gui-agent",
+                  "gui-agents",
+                  "gui-automation"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "created_after": {
+              "type": "string",
+              "format": "date"
+            },
+            "created_before": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "additionalProperties": false
+        },
+        "runs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "input_id",
+              "started_at",
+              "finished_at",
+              "status",
+              "requests_attempted",
+              "before_unique_repositories",
+              "new_unique_repositories",
+              "accepted_metadata_rows",
+              "after_unique_repositories"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^run:[0-9a-f]{24}$"
+              },
+              "input_id": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "started_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "finished_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "status": {
+                "enum": [
+                  "rate_limited",
+                  "wall_budget",
+                  "request_budget",
+                  "partial",
+                  "finished"
+                ]
+              },
+              "requests_attempted": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "before_unique_repositories": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "new_unique_repositories": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "accepted_metadata_rows": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "after_unique_repositories": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "queries": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "required": [
+                  "id",
+                  "kind",
+                  "status",
+                  "topic",
+                  "created_after",
+                  "created_before",
+                  "reported_total"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^search:[0-9a-f]{24}$"
+                  },
+                  "kind": {
+                    "const": "search"
+                  },
+                  "status": {
+                    "enum": [
+                      "pending",
+                      "split",
+                      "blocked_single_day_window",
+                      "observed_pages_exhausted",
+                      "partial_results",
+                      "partial_api_window"
+                    ]
+                  },
+                  "topic": {
+                    "enum": [
+                      "android-automation",
+                      "browser-agent",
+                      "browser-agents",
+                      "browser-automation",
+                      "computer-use",
+                      "desktop-automation",
+                      "gui-agent",
+                      "gui-agents",
+                      "gui-automation"
+                    ]
+                  },
+                  "created_after": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "created_before": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "reported_total": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "parent_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^(search:[0-9a-f]{24}|existing:[0-9a-f]{64})$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "required": [
+                  "id",
+                  "kind",
+                  "status",
+                  "input_id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^existing:[0-9a-f]{64}$"
+                  },
+                  "kind": {
+                    "const": "existing"
+                  },
+                  "status": {
+                    "enum": [
+                      "pending",
+                      "exhausted",
+                      "superseded_input"
+                    ]
+                  },
+                  "input_id": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "request_outcomes": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "accepted": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "accepted_with_rejections": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rejected": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rate_limited": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unavailable": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "redirect_not_followed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "fetch_failed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "response_too_large": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "malformed_response": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "quarantined": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "global_completeness_established": {
+          "const": false
+        },
+        "limit": {
+          "const": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union."
+        },
+        "epochs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/epoch"
+          }
+        },
+        "current_epoch_id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "query_rechecks_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "dependentRequired": {
+        "epochs": [
+          "current_epoch_id",
+          "query_rechecks_count"
+        ],
+        "current_epoch_id": [
+          "epochs",
+          "query_rechecks_count"
+        ],
+        "query_rechecks_count": [
+          "epochs",
+          "current_epoch_id"
+        ]
+      }
+    },
+    "active_catalog_context": {
+      "type": "object",
+      "required": [
+        "sha256",
+        "records",
+        "role"
+      ],
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "role": {
+          "const": "Comparison context only; not the observation source, selection, or approval."
+        }
+      },
+      "additionalProperties": false
+    },
+    "count": {
+      "type": "object",
+      "required": [
+        "value",
+        "unit"
+      ],
+      "properties": {
+        "value": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit": {
+          "const": "repositories"
+        }
+      },
+      "additionalProperties": false
+    },
+    "supporting_primary_bodies": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "observed_from": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "observed_through": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "review_policy": {
+      "const": "Public GitHub metadata observations only. Every row remains candidate/relevance_pending; HTTP success, a topic tag, or a repository name does not establish CUA relevance, release completeness, licensing, or editorial approval."
+    },
+    "count_policy": {
+      "const": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects."
+    },
+    "privacy": {
+      "type": "object",
+      "required": [
+        "checked_records",
+        "omitted_fields",
+        "policy"
+      ],
+      "properties": {
+        "checked_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "omitted_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "field",
+              "reason"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^github-repository:[1-9][0-9]*$"
+              },
+              "field": {
+                "const": "source_description"
+              },
+              "reason": {
+                "enum": [
+                  "credential_shaped_string",
+                  "private_home_path",
+                  "url_userinfo"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        },
+        "policy": {
+          "const": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
+        }
+      },
+      "additionalProperties": false
+    },
+    "export": {
+      "type": "object",
+      "required": [
+        "file",
+        "format",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "file": {
+          "const": "github-candidates.jsonl"
+        },
+        "format": {
+          "const": "JSONL"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "schema": {
+      "const": "/schemas/github-candidate-observation.schema.json"
+    },
+    "manifest_schema": {
+      "const": "/schemas/github-candidate-observation-manifest.schema.json"
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "mode",
+        "historical_raw_replayed",
+        "baseline_observation_sha256",
+        "baseline_checkpoint_sha256",
+        "successful_receipts_replayed",
+        "primary_bodies_replayed"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "full_retained_replay",
+            "incremental_retained_replay"
+          ]
+        },
+        "historical_raw_replayed": {
+          "type": "boolean"
+        },
+        "baseline_observation_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "baseline_checkpoint_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "successful_receipts_replayed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "primary_bodies_replayed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "checkpoint_state_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "dependentRequired": {
+    "verification": [
+      "checkpoint_state_sha256"
+    ],
+    "checkpoint_state_sha256": [
+      "verification"
+    ]
+  },
+  "$defs": {
+    "epoch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "configuration",
+        "root_query_ids",
+        "created_at",
+        "reason",
+        "previous_epoch_id",
+        "source_state_sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "configuration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "topics",
+            "created_after",
+            "created_before"
+          ],
+          "properties": {
+            "topics": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "computer-use",
+                  "gui-agent",
+                  "gui-agents",
+                  "gui-automation",
+                  "desktop-automation",
+                  "browser-agent",
+                  "browser-agents",
+                  "browser-automation",
+                  "android-automation"
+                ]
+              }
+            },
+            "created_after": {
+              "type": "string",
+              "format": "date"
+            },
+            "created_before": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "root_query_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^search:[0-9a-f]{24}$"
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reason": {
+          "enum": [
+            "initial",
+            "v1_migration",
+            "topic_expansion",
+            "daily_continuation"
+          ]
+        },
+        "previous_epoch_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^epoch:[0-9a-f]{24}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_state_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -69,7 +69,7 @@ class ScanSafetyTests(unittest.TestCase):
             def stage(name,command,timeout=600):
                 invoked.append(name)
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
-            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_papers',return_value={
+            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
                     'name':'recent_arxiv','ok':False,'rate_limited':True,'warnings':['HTTP 429']}),mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             result=scan.read_json(path/'scan-status.json')
@@ -90,7 +90,7 @@ class ScanSafetyTests(unittest.TestCase):
                     scan.write_json(path/'discovery-runs.json',[{'id':'hub','ok':False,'status':429,
                         'provider_host':'huggingface.co','run_started_at':'2026-10-17T00:00:01Z'}])
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
-            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_papers',return_value={
+            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
                     'name':'recent_arxiv','ok':True,'complete':True,'warnings':[]}) as recent,mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             recent.assert_called_once()
@@ -110,7 +110,7 @@ class ScanSafetyTests(unittest.TestCase):
                         'started_at':'2026-10-17T00:00:00Z','finished_at':'2026-10-17T00:00:01Z','configured_query_count':1,
                         'queries':[{'id':'limited','state':'failed','evidence':{'ok':False,'status':429}}]})
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
-            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_papers',return_value={
+            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
                     'name':'recent_arxiv','ok':True,'complete':True,'warnings':[]}) as recent,mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             recent.assert_called_once()

@@ -10,6 +10,7 @@ from site_files import MANAGED_FILES, reconcile_generated_pages
 from publication_metadata import record_date_text
 from build import task_navigator
 from topic_pages import reconcile_topic_exports
+from export_candidates import candidate_publication_plan, candidate_copy_ignores, apply_candidate_publication
 from survey_bundle import PAGE as SURVEY_PAGE, publication_plan as survey_publication_plan, apply_publication as apply_survey_publication
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -30,6 +31,7 @@ def main():
     incoming=json.loads((build/'data/search-manifest.json').read_text(encoding='utf-8'))
     # Validate the bundle, source fingerprints and every owned path before any deletion or copy.
     survey_plan=survey_publication_plan(build,site,source_root=ROOT,site_url=SITE,pages=incoming['pages'])
+    candidate_plan=candidate_publication_plan(build,site)
     old_path=site/'data/search-manifest.json'
     if old_path.exists():
         old=json.loads(old_path.read_text(encoding='utf-8'));new_paths={p['path'] for p in incoming['pages']}
@@ -48,8 +50,10 @@ def main():
                 if not (build/item['path'].lstrip('/')/filename).exists():
                     (site/item['path'].lstrip('/')/filename).unlink(missing_ok=True)
     # Survey files have their own ownership manifest; orphaned build files must not leak through copytree.
-    shutil.copytree(build,site,dirs_exist_ok=True,ignore=lambda folder,names: ['survey'] if Path(folder)==build else [])
+    shutil.copytree(build,site,dirs_exist_ok=True,ignore=lambda folder,names:
+        (['survey'] if Path(folder)==build else []) + candidate_copy_ignores(build,folder,names))
     apply_survey_publication(survey_plan)
+    apply_candidate_publication(candidate_plan)
     reconcile_generated_pages(site,incoming['pages'])
     if (build/'downloads/topics.json').exists():
         topics=json.loads((build/'downloads/topics.json').read_text(encoding='utf-8'))

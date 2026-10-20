@@ -13,6 +13,8 @@ let TOPICS = {};
 Object.assign(TEXT.en, {resourceBadges:'Resource badges',relatedResearch:'Related research',jevScope:'System One & typed decisions',agentEyebrow:'USE THE DATA',agentTitle:'Clone the complete catalog',agentCopy:'Search locally or prepare RAG documents, with source evidence and review states preserved.',agentGuide:'Agent & RAG guide',agentGuideCopy:'Steps for local search and retrieval data.',agentInstructions:'Agent instructions',agentInstructionsCopy:'AGENTS.md · Search, export, and cite.',localSearch:'Try a local search',localSearchRequirements:'Python 3.11+; no package installation or account needed.',agentManifest:'RAG manifest',agentManifestCopy:'Export counts and snapshot fingerprints.',agentDownloads:'Browse download formats',cloneCommandLabel:'Git clone command',copyCommand:'Copy command',commandCopying:'Copying…',commandCopied:'Command copied. Paste it into your terminal.',commandCopyFailed:'Copy failed. Select and copy the command manually.',ragReviewed:'RAG documents · reviewed',ragReviewedCopy:'One retrieval document per reviewed resource, with citations and provenance.',ragAll:'RAG documents · all records',ragAllCopy:'Every active record, including metadata-only entries with their review state.'});
 Object.assign(TEXT.zh, {resourceBadges:'资源徽章',relatedResearch:'相关研究',jevScope:'System One 与类型化决策',agentEyebrow:'使用数据',agentTitle:'克隆完整资源目录',agentCopy:'在本地检索，或准备 RAG 文档；来源证据与审阅状态随记录保留。',agentGuide:'Agent 与 RAG 指南',agentGuideCopy:'本地检索与 RAG 导入步骤。',agentInstructions:'Agent 使用说明',agentInstructionsCopy:'AGENTS.md · 检索、导出与引用。',localSearch:'试一次本地检索',localSearchRequirements:'需要 Python 3.11+，无需安装软件包或注册账号。',agentManifest:'RAG 导出清单',agentManifestCopy:'导出数量与快照指纹。',agentDownloads:'查看下载格式',cloneCommandLabel:'Git 克隆命令',copyCommand:'复制命令',commandCopying:'正在复制…',commandCopied:'命令已复制，可粘贴到终端。',commandCopyFailed:'复制失败，请选中命令后手动复制。',ragReviewed:'RAG 文档 · 已审阅',ragReviewedCopy:'每项已审阅资源对应一份检索文档，保留引用和来源。',ragAll:'RAG 文档 · 全部记录',ragAllCopy:'包含全部当前记录，并保留仅有元数据条目的审阅状态。'});
 Object.assign(TEXT.en,{topicDirectory:'Browse topics'});
+Object.assign(TEXT.en,{emptyQuery:'No resources match “%s”.',emptyFilters:'No resources match all of these filters.',relaxLabel:'Remove one condition',relaxSearch:'Search “%s”',relaxResults:'%s results',relaxOne:'1 result',relaxNone:'still none'});
+Object.assign(TEXT.zh,{emptyQuery:'没有资源匹配“%s”。',emptyFilters:'没有资源同时满足这些条件。',relaxLabel:'去掉一个条件',relaxSearch:'搜索“%s”',relaxResults:'%s 条结果',relaxOne:'1 条结果',relaxNone:'仍无结果'});
 Object.assign(TEXT.zh,{topicDirectory:'浏览主题'});
 Object.assign(TEXT.en,{pageNumber:'Page %s',pageStatus:'Page %s of %s'});
 Object.assign(TEXT.zh,{pageNumber:'第 %s 页',pageStatus:'第 %s 页，共 %s 页'});
@@ -104,9 +106,26 @@ function render() {
   const reviewed=result.filter(r=>r.review_status==='curated').length;
   $('#results-count').innerHTML=`<strong>${num(result.length)}</strong> ${e(t('showing'))} <span class="result-breakdown">· ${num(reviewed)} ${e(t('reviewedCount'))}${result.length>reviewed?` · ${num(result.length-reviewed)} ${e(t('pendingCount'))}`:''}</span>${pages>1?`<span class="sr-only"> · ${e(t('pageStatus').replace('%s',state.page).replace('%s',pages))}</span>`:''}`;
   $('#results').setAttribute('aria-busy','false');$('#empty').hidden=result.length!==0;
+  if(!result.length)renderEmpty();
   $('#clear-filters').hidden=![state.q,state.kind,state.platform,state.review,state.topic,state.year].some(Boolean);
-  $('#pagination').hidden=result.length===0;
+  // A single page needs no pager: its disabled Previous/Next buttons only add noise.
+  $('#pagination').hidden=pages<2;
   $('#pagination').innerHTML=`<button type="button" data-page="${state.page-1}" ${state.page===1?'disabled':''}>${e(t('previous'))}</button><span class="page-numbers">${pageWindow(state.page,pages).map(n=>n===null?'<span class="page-gap" aria-hidden="true">…</span>':`<button type="button" data-page="${n}" aria-label="${e(t('pageNumber').replace('%s',n))}"${n===state.page?' aria-current="page"':''}>${n}</button>`).join('')}</span><button type="button" data-page="${state.page+1}" ${state.page===pages?'disabled':''}>${e(t('next'))}</button>`;
+}
+// Name what matched nothing and offer each active condition as a one-click removal, with the count it would restore.
+const RELAX_KEYS=['q','kind','platform','topic','year','review'];
+function relaxLabel(key) {
+  if(key==='q')return t('relaxSearch').replace('%s',state.q.trim());
+  if(key==='kind')return label(KINDS,state.kind);
+  if(key==='review')return `${t('review')}: ${t(state.review==='curated'?'curated':'metadata')}`;
+  const value=key==='platform'?label(PLATFORMS,state.platform):key==='topic'?label(TOPICS,state.topic):state.year;
+  return `${t(key)}: ${value}`;
+}
+function renderEmpty() {
+  const active=RELAX_KEYS.filter(key=>state[key]);
+  $('#empty-title').textContent=active.length===1&&active[0]==='q'?t('emptyQuery').replace('%s',state.q.trim()):t(active.length?'emptyFilters':'emptyTitle');
+  const options=active.length>1||active[0]!=='q'?active.map(key=>{const relaxed={...state,[key]:''},n=records.filter(r=>matches(r,relaxed)).length;return `<button type="button" data-relax="${key}"${n?'':' disabled'}><span>${e(relaxLabel(key))}</span><span class="relax-count">${e(n?(n===1?t('relaxOne'):t('relaxResults').replace('%s',num(n))):t('relaxNone'))}</span></button>`;}):[];
+  $('#empty-relax').innerHTML=options.length?`<p>${e(t('relaxLabel'))}</p><div>${options.join('')}</div>`:'';
 }
 function denseRow(r) {
   const reviewed=r.review_status==='curated',isPaper=['paper','survey'].includes(r.kind);
@@ -224,6 +243,7 @@ for(const [id,key] of [['platform','platform'],['review','review'],['topic','top
 // Both reset buttons hide themselves, so focus moves to the result summary, which announces the restored count.
 const reset=()=>{change({q:'',kind:'',platform:'',review:'',topic:'',year:'',sort:'featured'});$('#results-count').focus();};
 $('#clear-filters').addEventListener('click',reset);$('#empty-reset').addEventListener('click',reset);
+$('#empty-relax').addEventListener('click',event=>{const button=event.target.closest('[data-relax]');if(!button||button.disabled)return;change({[button.dataset.relax]:''});$('#results-count').focus();});
 $('#view-grid').addEventListener('click',()=>change({view:'grid',page:state.page}));$('#view-list').addEventListener('click',()=>change({view:'list',page:state.page}));
 $('#categories').addEventListener('click',event=>{const button=event.target.closest('[data-kind]');if(button)change({kind:button.dataset.kind,view:['paper','survey'].includes(button.dataset.kind)?'list':state.view});});
 $$('[data-environment]').forEach(button=>button.addEventListener('click',()=>change({platform:button.dataset.environment,kind:'',q:''},true)));

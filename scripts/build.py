@@ -992,6 +992,11 @@ def validate(args):
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
     errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", []))
+    from catalog import validate_candidate_snapshot
+    try:
+        validate_candidate_snapshot(DATA)
+    except (ValueError, OSError, KeyError, TypeError) as error:
+        errors.append('Candidate snapshot integrity: ' + str(error))
     for entry in read_json(DATA / "editorial.json", []):
         if unknown := [str(topic) for topic in entry.get("topics", []) if not isinstance(topic, str) or topic not in TOPICS]:
             errors.append(f"Editorial {entry.get('id') or entry.get('url')}: unknown topics {', '.join(unknown)}")

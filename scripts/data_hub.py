@@ -10,6 +10,7 @@ from agent_pages import CLONE_COMMAND, RELEASES_URL
 from export_citations import encode_citations
 from export_rag import encode_documents
 from repository_identity import attach_repository_aliases
+from export_candidates import RECORD_FILE as CANDIDATE_FILE, MANIFEST_FILE as CANDIDATE_MANIFEST, SCHEMAS as CANDIDATE_SCHEMAS, validate_candidate_export
 
 
 GROUPS = {
@@ -29,6 +30,7 @@ UNITS = {
     'exports': ('export files', '个导出文件'), 'reports': ('report', '份报告'),
     'schemas': ('schema', '份规范'),
     'aliases': ('former repository names', '个仓库旧标识'),
+    'repositories': ('repositories', '个仓库'),
 }
 SCOPE_LABELS = {
     'active': ('All active records', '全部当前记录'),
@@ -38,6 +40,7 @@ SCOPE_LABELS = {
     'archive': ('Retained archive', '保留的原始档案'),
     'provenance': ('Provenance and status', '来源与状态'),
     'contract': ('Format contract', '格式规范'),
+    'candidate-observations': ('Unreviewed candidates', '待审候选'),
 }
 
 
@@ -188,6 +191,21 @@ def build_download_manifest(destination, rows, catalog_bytes):
     add('repository-aliases', '/downloads/repository-aliases.json', 'provenance', ('Former repository names', '仓库旧地址映射'),
         ('Former and canonical GitHub or Hugging Face names verified against the same repository ID. They do not add resources.', '通过相同的 GitHub 或 Hugging Face 仓库 ID 核实旧名与规范名称。它们不增加资源记录。'),
         'JSON', 'application/json', len(repository_declarations), 'aliases', 'provenance')
+    candidate_files = [destination / 'downloads' / name for name in (CANDIDATE_FILE, CANDIDATE_MANIFEST)]
+    have_candidates = any(path.exists() or path.is_symlink() for path in candidate_files)
+    if have_candidates:
+        if any(not path.is_file() or path.is_symlink() for path in candidate_files):
+            raise ValueError('Candidate observations require a complete, safe export pair')
+        candidate_manifest = read_json('/downloads/' + CANDIDATE_MANIFEST)
+        candidate_rows = validate_candidate_export(candidate_files[0].read_bytes(), candidate_manifest, catalog_bytes=catalog_bytes)
+        add('github-candidates', '/downloads/' + CANDIDATE_FILE, 'provenance', ('GitHub candidate repositories', 'GitHub 候选仓库'),
+            ('Public API metadata, counted by numeric repository ID. CUA relevance, availability and licenses await review; these observations are separate from and may overlap the active catalog.',
+             '公开 API 元数据，按数字仓库 ID 去重。CUA 相关性、可用性和许可仍待审阅；这些观察记录独立于当前目录且可能与其重叠。'),
+            'JSONL', 'application/x-ndjson', len(candidate_rows), 'repositories', 'candidate-observations')
+        add('github-candidates-manifest', '/downloads/' + CANDIDATE_MANIFEST, 'provenance', ('Candidate observation manifest', '候选观察清单'),
+            ('Independent observation and input fingerprints, query limits, primary receipts, and a separate active-catalog comparison context.',
+             '独立的观察与输入指纹、查询边界、一手收据，以及单独标明的当前目录对照信息。'),
+            'JSON', 'application/json', 1, 'reports', 'candidate-observations')
     for name, title in [
         ('resource.schema.json', ('Resource schema', '资源记录规范')),
         ('scope-decision.schema.json', ('Scope-decision schema', '范围决定规范')),
@@ -197,6 +215,11 @@ def build_download_manifest(destination, rows, catalog_bytes):
     ]:
         add(name.replace('.', '-'), '/schemas/' + name, 'contracts', title,
             ('Machine-readable field and format contract.', '可供程序读取的字段与格式约束。'), 'JSON Schema', 'application/schema+json', 1, 'schemas', 'contract')
+    if have_candidates:
+        for name, title in zip(CANDIDATE_SCHEMAS, [('Candidate observation schema', '候选观察记录规范'), ('Candidate manifest schema', '候选清单规范')]):
+            add(name.replace('.', '-'), '/schemas/' + name, 'contracts', title,
+                ('Candidate status, public field allowlist and independent observation provenance.', '候选状态、公开字段白名单与独立观察溯源。'),
+                'JSON Schema', 'application/schema+json', 1, 'schemas', 'contract')
     if len({item['id'] for item in artifacts}) != len(artifacts):
         raise ValueError('Download artifact identifiers must be unique')
     manifest = {'schema_version': 1, 'catalog_sha256': source_sha,

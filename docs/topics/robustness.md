@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+185 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (171)](#papers)
 
 ## Benchmarks
 
@@ -146,6 +146,7 @@ All entries in this section: web.
 | 2026‑04‑15 | [Penny Wise, Pixel Foolish: Bypassing Price Constraints in Multimodal Agents via Visual Adversarial Perturbations](https://arxiv.org/abs/2604.16515) | unspecified | Introduces PriceBlind, a visual perturbation method for controlled screenshot-based evaluation of price-constrained multimodal agents. The reported transfer experiments use a simplified single-turn coordinate-selection protocol. |
 | 2026‑04‑14 | [PrecisionCUA: Iterative Visual Refinement for Pixel-Precise Cursor Grounding in Code Editors](https://arxiv.org/abs/2604.13019) | unspecified | Studies iterative cursor grounding in dense code-editor interfaces, using visual feedback from earlier attempts to correct displacement. PrecisionCUA evaluates this closed-loop process across multiple model families on coding-interface tasks. |
 | 2026‑04‑09 | [Are GUI Agents Focused Enough? Automated Distraction via Semantic-level UI Element Injection](https://arxiv.org/abs/2604.07831) | unspecified | This study tests black-box GUI-grounding failures caused by strategically added, innocuous-looking UI elements. Its iterative overlay search is compared with random injection and repeated independent grounding trials to distinguish persistent misdirection from incidental clutter. |
+| 2026‑04‑09 | [Preference Redirection via Attention Concentration: An Attack on Computer Use Agents](https://arxiv.org/abs/2604.08005) | web | PRAC perturbs one product image so an open-weight vision-language model concentrates attention on it, steering a computer-use agent in a mock webshop to that product; mean selection success is 83.7% vs 20% clean. |
 | 2026‑04‑07 | [Don't Act Blindly: Robust GUI Automation via Action-Effect Verification and Self-Correction](https://arxiv.org/abs/2604.05477) | android | Introduces VeriGUI, which checks expected action effects and reasons about recovery before subsequent GUI actions. Training combines synthetic failure trajectories with verification-weighted GRPO, evaluated on an AndroidControl-based robustness benchmark. |
 | 2026‑04‑02 | [GPA: Learning GUI Process Automation from Demonstrations](https://arxiv.org/abs/2604.01676) | unspecified | Presents demonstration-based GUI process replay with Sequential Monte Carlo localization and readiness checks. GPA executes the learned workflow locally and can serve as the GUI execution component of an agent using MCP or CLI tools. |
 | 2026‑03‑24 | [AgentRAE: Remote Action Execution through Notification-based Visual Backdoors against Screenshots-based Mobile GUI Agents](https://arxiv.org/abs/2603.23007) | unspecified | AgentRAE studies notification-based visual backdoors that redirect mobile GUI-agent actions. Its training separates sensitivity to icon differences from trigger/action association, with evaluations of clean behavior and targeted redirection. |

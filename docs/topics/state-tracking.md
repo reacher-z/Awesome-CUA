@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+49 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
+**Contents:** [Frameworks (3)](#frameworks) · [Papers (46)](#papers)
 
 ## Frameworks
 
@@ -44,6 +44,7 @@
 | 2026‑04‑27 | [AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark](https://arxiv.org/abs/2604.24441) | cross-platform | AutoGUI-v2 evaluates interface functionality, grounding and predicted interaction outcomes using hierarchical regions derived through VLM-human annotation. Its tasks span multiple operating systems and expose differences between functional localization, captioning and transition-logic understanding. |
 | 2026‑04‑20 | [AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation](https://arxiv.org/abs/2604.18240) | unspecified | AJ-Bench evaluates judge agents that actively gather evidence from search, data systems and graphical interfaces. Its annotated tasks and trajectories test information acquisition, state verification and process verification. |
 | 2026‑04‑20 | [Temporal UI State Inconsistency in Desktop GUI Agents: Formalizing and Defending Against TOCTOU Attacks on Computer-Use Agents](https://arxiv.org/abs/2604.18860) | desktop, web | This study examines UI changes between a desktop agent’s screenshot observation and action dispatch. Its pre-execution state checks address overlay and focus manipulation, while the reported DOM-injection blind spot limits the defense’s coverage. |
+| 2026‑04‑08 | [Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking](https://arxiv.org/abs/2606.15673) | web | WebStep pairs 1,800 tasks on 10 self-hosted websites with a semantic MDP that records high-level states behind the GUI, enabling process metrics, per-skill decomposition and decisive-error analysis of web agents. |
 | 2026‑04‑07 | [Don't Act Blindly: Robust GUI Automation via Action-Effect Verification and Self-Correction](https://arxiv.org/abs/2604.05477) | android | Introduces VeriGUI, which checks expected action effects and reasons about recovery before subsequent GUI actions. Training combines synthetic failure trajectories with verification-weighted GRPO, evaluated on an AndroidControl-based robustness benchmark. |
 | 2026‑04‑07 | [WebSP-Eval: Evaluating Web Agents on Website Security and Privacy Tasks](https://arxiv.org/abs/2604.06367) | web | WebSP-Eval evaluates agents carrying out website security and privacy tasks such as preference changes and session management. A browser extension controls account and initial state across runs, enabling analysis of failures on stateful UI controls. |
 | 2026‑04‑06 | [GUIDE: Interpretable GUI Agent Evaluation via Hierarchical Diagnosis](https://arxiv.org/abs/2604.04399) | web, android | GUIDE evaluates GUI trajectories by segmenting them into subtasks, diagnosing each segment, and aggregating structured findings into a task verdict. It tests diagnostic judgments on e-commerce, web-agent and Android-control traces rather than relying on one holistic trajectory score. |

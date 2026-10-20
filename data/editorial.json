@@ -63844,5 +63844,49 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Towards Understanding Visual Grounding in Visual Language Models",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2509.10345",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "grounding",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Survey of visual grounding in VLMs covering region formats, architectures, training and benchmarks; GUI agents are one of five domains with referring expressions, grounded VQA, captioning and reasoning.",
+    "verify_terms": [
+      "Towards Understanding Visual Grounding in Visual Language Models"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: most of the survey concerns natural-image grounding. GUI content comprises the GUI-agent domain in Section 2.5, a ScreenSpot example in Figure 1, nine GUI and UI datasets in Table 2 (Widget Caption, GUIAct, ScreenSpot, ScreenSpot-v2, ScreenSpot-Pro, OSWorld-G, Aria-UI, UGround, Jedi), a Section 4.1 paragraph on GUI benchmarks including AITW, step-wise and goal-level GUI metrics in Section 4.2, and GUI-agent research directions in Section 5.2. Environments reflect the surveyed web, desktop and mobile benchmarks rather than an evaluation. No companion repository is named.",
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 1, 2.1, 2.3 (set-of-marks), 2.5 (research domains), 4.1-4.2 (Table 2, GUI benchmarks and metrics), 5.1-5.2 and 6.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.10345v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.10345v2",
+        "retrieved_at": "2026-10-20T07:45:54Z",
+        "sha256": "b685d45eaf8e58f82a8d31767fe55a7e958024d9e04245ea824f6c4e39842a48",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4e711d6d7b2b707d726be468ebd3975d86f55d49ee63d7ba7b68dbd7b9903583",
+    "reviewed_at": "2026-10-20T07:45:57Z"
   }
 ]

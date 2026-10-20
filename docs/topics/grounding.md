@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-374 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (246)](#papers)
 
 ## Benchmarks
 
@@ -170,6 +170,14 @@ All entries in this section: web.
 | Resource | Publisher | Description | Evidence |
 | --- | --- | --- | --- |
 | [AgentQL](https://www.agentql.com/) | — | Natural-language querying and interaction tools for web interfaces. | [✓ 2026‑10‑16](https://www.agentql.com/) |
+
+## Surveys
+
+All entries in this section: cross-platform, web, android, desktop.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2025‑09‑12 | [Towards Understanding Visual Grounding in Visual Language Models](https://arxiv.org/abs/2509.10345) | Survey of visual grounding in VLMs covering region formats, architectures, training and benchmarks; GUI agents are one of five domains with referring expressions, grounded VQA, captioning and reasoning. |
 
 ## Papers
 

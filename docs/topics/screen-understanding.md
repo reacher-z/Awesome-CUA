@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Surveys (1)](#surveys) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -82,6 +82,14 @@ All entries in this section: cross-platform.
 | [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 | [WebMarker](https://github.com/reidbarber/webmarker) | web | — | code MIT | A browser library that labels interactive elements and their boxes for visual prompting, preserving element mappings that automation code can use to execute selected actions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/reidbarber/webmarker/HEAD/README.md) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
+
+## Surveys
+
+All entries in this section: cross-platform, web, android, desktop.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2025‑09‑12 | [Towards Understanding Visual Grounding in Visual Language Models](https://arxiv.org/abs/2509.10345) | Survey of visual grounding in VLMs covering region formats, architectures, training and benchmarks; GUI agents are one of five domains with referring expressions, grounded VQA, captioning and reasoning. |
 
 ## Papers
 

@@ -138,8 +138,8 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
             '<div class="topic-overview"><span><strong>', str(len(entries)), '</strong> ', tr('topics', '个主题'), '</span><span><strong>',
             f'{manifest["resources_with_topics"]:,}', '</strong> ', tr('reviewed resources', '条已审阅资源'),
             '</span><a href="/downloads/topics.json">', tr('Topic index · JSON', '主题索引 · JSON'), ' ↓</a></div>',
-            '<p class="topic-method">', tr('Topics overlap. Counts describe the reviewed catalog, not the size of the whole field. Blank cells mean no reviewed entries with that tag.',
-            '主题可以交叉，数量反映已审阅目录，不代表整个领域的规模。空白表示该标签下尚无已审阅条目。'), '</p><p class="topic-table-help">', tr('Scroll the table horizontally to see every resource type.', '左右滑动表格，查看全部资源类型。'), '</p>',
+            '<p class="topic-method">', tr('Topics overlap. Counts describe the reviewed catalog, not the size of the whole field. 0 means no reviewed entry carries that tag yet.',
+            '主题可以交叉，数量反映已审阅目录，不代表整个领域的规模。0 表示该标签下尚无已审阅条目。'), '</p><p class="topic-table-help">', tr('Scroll the table horizontally to see every resource type.', '左右滑动表格，查看全部资源类型。'), '</p>',
             '<div class="topic-table-scroll" tabindex="0" role="region" aria-label="', tr('Topic coverage table', '主题覆盖表'), '"><table class="topic-matrix"><thead><tr><th scope="col">', tr('Topic', '主题'), '</th>']
     for slug, labels, _ in GROUPS:
         body += ['<th scope="col" class="topic-col-', slug, '">', labels[zh], '</th>']
@@ -154,7 +154,8 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
             if count:
                 body += ['<a class="topic-number" href="', sections[slug], '" aria-label="', esc(entry['name'][language] + ' · ' + labels[zh] + ': ' + str(count)), '">', f'{count:,}', '</a>']
             else:
-                body += ['<span class="topic-zero" aria-label="', tr('No reviewed entries', '暂无已审阅条目'), '">—</span>']
+                # A known zero, not an unknown value: elsewhere on the site — means "not recorded".
+                body += ['<span class="topic-zero">0</span>']
             body += ['</td>']
         body += ['<td class="topic-total">', f'{entry["counts"]["total"]:,}', '</td></tr>']
     body += ['</tbody></table></div><p class="topic-method">', tr('Use the complete catalog to search metadata-only discoveries or entries without topic tags.', '元数据待审条目及未标注主题的资源仍可在完整目录检索。'),

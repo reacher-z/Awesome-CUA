@@ -59,7 +59,7 @@ html:has(.topic-directory,.paper-library,.data-hub){scroll-behavior:auto}
 .topic-matrix tr:last-child :is(th,td){border-bottom:0}.topic-matrix td.topic-total{font-weight:700;color:#354159}
 .topic-col-papers{--topic-ink:#3747bd;--topic-fill:#eef1ff}.topic-col-benchmarks{--topic-ink:#9e2459;--topic-fill:#fff0f5}.topic-col-datasets{--topic-ink:#14715b;--topic-fill:#e9f7f2}.topic-col-models{--topic-ink:#6941a8;--topic-fill:#f4edff}.topic-col-systems{--topic-ink:#935107;--topic-fill:#fff6e7}
 .topic-matrix .topic-number{display:inline-block;min-width:38px;padding:4px 8px;border-radius:5px;background:var(--topic-fill);color:var(--topic-ink)!important;font-weight:650;text-decoration:none!important}
-.topic-matrix .topic-number:hover{outline:1px solid currentColor;outline-offset:1px}.topic-zero{color:#8a95a6}
+.topic-matrix .topic-number:hover{outline:1px solid currentColor;outline-offset:1px}.topic-zero{color:var(--faint);font-variant-numeric:tabular-nums}
 .topic-back{display:flex;justify-content:space-between;gap:15px;margin:0 0 19px;font-size:12px}
 .topic-sections{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
 .reading-shell .topic-sections a{display:flex;align-items:center;gap:12px;color:var(--topic-ink);background:var(--topic-fill);padding:8px 12px;border:1px solid transparent;border-radius:6px;font-size:12px;text-decoration:none}

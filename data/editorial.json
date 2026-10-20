@@ -63844,5 +63844,106 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Kura",
+    "kind": "product",
+    "url": "https://www.trykura.com",
+    "evidence_urls": [
+      "https://docs.trykura.com/introduction.md"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Enterprise browser-agent builder whose Recursion agent runs plain-language steps on the live page and saves them as workflow blocks (actions, navigation, extraction, checks) with cached selectors, deployable as APIs.",
+    "scope": "core",
+    "verify_terms": [
+      "Kura"
+    ],
+    "aliases": [
+      "Kura AI",
+      "Agent Kura"
+    ],
+    "notes": "The homepage says Kura is backed by Y Combinator and lists client-side encryption, stealth browsers, proxy management, credential handling and audit trails. The documentation says the Recursion agent executes each plain-language instruction on the web page in real time and adds the matching blocks to a workflow; Action blocks click, type, press keys and refresh, go back or open, close and switch tabs, alongside navigation, extraction, checkpoint (natural-language assertion), for-loop and conditional blocks. Action and navigation blocks cache the elements or URLs they used and fall back to full reasoning when a cached step fails. A deployed agent gets synchronous and asynchronous API endpoints. The benchmarks page reports 87.0% on 602 of WebVoyager's 643 tasks (41 removed as impossible, booking, login or print tasks) and 90% against 56% for Anthropic's computer-use demo on 50 sampled tasks, for a hierarchical agent of planners, an executor and critics that runs mainly on GPT-4o; these figures are publisher-reported and were not reproduced. Availability and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.trykura.com/recursion-agent/using-recursion-agent.md",
+        "sha256": "3d51e28a2ca0d59b075e6bb466a540d891c0b14035fc2dfad69c0c677678ab70",
+        "retrieved_at": "2026-10-20T04:56:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://docs.trykura.com/workflow-blocks/action.md",
+        "sha256": "dcd43c18ac8f2c6f67102ca07804de93d8e316d2b1bce238c58b2bd5f413999c",
+        "retrieved_at": "2026-10-20T04:56:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://docs.trykura.com/workflow-blocks/caching.md",
+        "sha256": "44bee2cd164283ee426dbe7de196fc67364c1ae32ae88553d072e02a2f6386aa",
+        "retrieved_at": "2026-10-20T04:56:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://docs.trykura.com/productionizing/deployment.md",
+        "sha256": "317935f61f75e2c65f938a21fcbc2e3b8f10e08e47703b9878cba8703510bfc3",
+        "retrieved_at": "2026-10-20T04:56:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://www.trykura.com/static/js/main.32ab346a.js",
+        "sha256": "ef422bc19d3d2b3ce5fa18f304ae4d481217a96e4d1c60354be7d0ba51446712",
+        "retrieved_at": "2026-10-20T04:56:01Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6206452c93711e66e14e2566ea6a6e9f22d0a3903a611e215594a4bcf93d0db9",
+    "reviewed_at": "2026-10-20T04:57:07Z"
   }
 ]

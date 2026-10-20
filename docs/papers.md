@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,117; 531 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,116; 531 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -844,7 +844,6 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-03-24 | [AgentRAE: Remote Action Execution through Notification-based Visual Backdoors against Screenshots-based Mobile GUI Agents](https://arxiv.org/abs/2603.23007) | ⭐ reviewed | [evaluation](topics/evaluation.md), [robustness](topics/robustness.md), [safety-security](topics/safety-security.md) |
 | 2026-03-23 | [Learning Sidewalk Autopilot from Multi-Scale Imitation with Corrective Behavior Expansion](https://arxiv.org/abs/2603.22527) | metadata |  |
 | 2026-03-23 | [Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos](https://arxiv.org/abs/2603.22529) | ⭐ reviewed | [evaluation](topics/evaluation.md), [planning](topics/planning.md), [video](topics/video.md), [web-navigation](topics/web-navigation.md) |
-| 2026-03-23 | [Effective Strategies for Asynchronous Software Engineering Agents](https://arxiv.org/abs/2603.21489) | metadata |  |
 | 2026-03-23 | [CAPTCHA Solving for Native GUI Agents: Automated Reasoning-Action Data Generation and Self-Corrective Training](https://arxiv.org/abs/2603.23559) | metadata |  |
 | 2026-03-21 | [Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents](https://arxiv.org/abs/2603.20576) | metadata |  |
 | 2026-03-20 | [MedSPOT: A Workflow-Aware Sequential Grounding Benchmark for Clinical GUI](https://arxiv.org/abs/2603.19993) | ⭐ reviewed | [evaluation](topics/evaluation.md), [grounding](topics/grounding.md) |

@@ -63863,7 +63863,7 @@
       "Two-Level User Habit Learning"
     ],
     "scope": "core",
-    "notes": "User FingerTip has 300 app-ambiguous (Type I) and 267 content-ambiguous (Type II) instructions across 12 app categories, partitioned per user into training and test instructions. Me-Agent is compared with Mobile-Agent-v2 and Mobile-Agent-E under the same action space and OCR and icon perception tools, with GPT-4o, Claude-3.5-Sonnet and Gemini-2.5-Pro backbones, and is also run on the Mobile-Agent-E dataset. The paper does not name the mobile operating system; the code it links (github.com/Gianthaha/personal-mobile-agent) drives the device through ADB in a Mobile-Agent-E controller, which is the basis for the android environment. Results were not independently reproduced.",
+    "notes": "User FingerTip extends FingerTip 20K (arxiv:2507.21071) with 300 app-ambiguous (Type I) and 267 content-ambiguous (Type II) instructions across 12 app categories, partitioned per user into training and test instructions. Me-Agent is compared with Mobile-Agent-v2 and Mobile-Agent-E under the same action space and OCR and icon perception tools, with GPT-4o, Claude-3.5-Sonnet and Gemini-2.5-Pro backbones, and is also run on the Mobile-Agent-E dataset. The paper does not name the mobile operating system; the code it links (github.com/Gianthaha/personal-mobile-agent) drives the device through ADB in a Mobile-Agent-E controller, which is the basis for the android environment. Results were not independently reproduced.",
     "evidence_urls": [
       "https://arxiv.org/abs/2601.20162v1"
     ],

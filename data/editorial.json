@@ -63653,5 +63653,69 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "HyperWrite Personal Assistant",
+    "kind": "product",
+    "url": "https://www.hyperwriteai.com/personal-assistant",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Browser agent from HyperWrite that carries out typed requests such as searching, making reservations and filling out forms by operating the user's Chrome browser through the HyperWrite extension.",
+    "scope": "core",
+    "verify_terms": [
+      "Personal Assistant"
+    ],
+    "aliases": [
+      "HyperWrite AI Agent"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://www.hyperwriteai.com/aitools/ai-agent",
+        "sha256": "0f3648bc300d114569ff5710bec5e5a751dd10afd37ba15b5fc742639c2f78af",
+        "retrieved_at": "2026-10-20T04:26:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://www.hyperwriteai.com/llms.txt",
+        "sha256": "e1027202cf5c220775723d92f36a3ea2300748d2aab81d51cc0b796ad73d1129",
+        "retrieved_at": "2026-10-20T04:26:11Z"
+      }
+    ],
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.hyperwriteai.com/pricing",
+      "availability": "not independently tested"
+    },
+    "notes": "The site footer names OthersideAI as the publisher of HyperWrite, which its llms.txt describes mainly as an AI writing and productivity assistant with a document editor, TypeAhead sentence prediction in a Chrome extension, Personas and a library of AI tools. The Personal Assistant page presents HyperWrite's AI agent as able to use the browser to complete tasks, with examples such as organizing a Gmail inbox, booking a flight, ordering a pizza and finding candidates on LinkedIn. The AI Agent tool page says the agent executes tasks in the user's browser through the HyperWrite extension, searching, navigating websites, filling out forms and interacting with web applications, and lists a limited free trial with paid Premium and Ultra plans. The Personal Assistant page also carries writing and research copy and leftover placeholder text, and its FAQ describes only the extension's writing features. Which models drive the agent, its current availability and its reliability were not independently tested, and no task was run.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0ce663b5c4fb33c629db30ab126d8a2fc9b5e16db2d376035afaea5c111d6c83",
+    "reviewed_at": "2026-10-20T04:26:19Z"
   }
 ]

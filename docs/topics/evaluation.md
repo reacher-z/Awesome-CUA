@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-689 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+690 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -401,6 +401,7 @@ All entries in this section: web.
 | 2026‑04‑01 | [Do Phone-Use Agents Respect Your Privacy?](https://arxiv.org/abs/2604.00986) | unspecified | Introduces MyPhoneBench to verify whether phone-use agents minimize personal data disclosure when filling forms during benign mobile tasks. |
 | 2026‑04‑01 | [PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding](https://arxiv.org/abs/2604.00886) | unspecified | PixelPrune removes pixel-redundant patches before the vision encoder, reducing both encoding and downstream language-model work. The training-free method evaluates lossless and controlled-lossy compression on document and GUI tasks. |
 | 2026‑03‑31 | [PSPA-Bench: A Personalized Benchmark for Smartphone GUI Agent](https://arxiv.org/abs/2603.29318) | unspecified | PSPA-Bench evaluates personalized smartphone GUI behavior using user-specific instructions and a process-aware assessment of interaction traces. Its comparison of GUI agents diagnoses weaknesses in adapting workflows and preferences rather than measuring generic task completion alone. |
+| 2026‑03‑31 | [Terminal Agents Suffice for Enterprise Automation](https://arxiv.org/abs/2604.00073) | web | Compares Playwright-driven web agents, MCP tool agents and a terminal coding agent that calls platform APIs on 729 ServiceNow, GitLab and ERPNext tasks, and tests browser access as a fallback for UI-bound tasks. |
 | 2026‑03‑30 | [Emergence WebVoyager: Toward Consistent and Transparent Evaluation of (Web) Agents in The Wild](https://arxiv.org/abs/2603.29020) | web | Audits sources of ambiguity and operational variation in WebVoyager evaluation and introduces standardized guidance for task setup, failure handling, annotation and reporting. Emergence WebVoyager applies this protocol to a web-agent evaluation. |
 | 2026‑03‑26 | [GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks](https://arxiv.org/abs/2603.25864) | unspecified | GUIDE evaluates whether models can recognize a user’s behavior, infer intent and decide when to offer help during open-ended software tasks. It uses narrated screen recordings of novice users and studies the effect of additional user context on these assistance decisions. |
 | 2026‑03‑26 | [WebTestBench: Evaluating Computer-Use Agents towards End-to-End Automated Web Testing](https://arxiv.org/abs/2603.25226) | web | Introduces WebTestBench for end-to-end website testing, separating checklist generation from defect detection. Its WebTester baseline evaluates test coverage, detection and sustained interaction across web application categories. |

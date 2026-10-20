@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Terminal Agents Suffice for Enterprise Automation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.00073",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "evaluation",
+      "industry",
+      "web-navigation"
+    ],
+    "summary": "Compares Playwright-driven web agents, MCP tool agents and a terminal coding agent that calls platform APIs on 729 ServiceNow, GitLab and ERPNext tasks, and tests browser access as a fallback for UI-bound tasks.",
+    "verify_terms": [
+      "Terminal Agents Suffice for Enterprise Automation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.00073v4"
+    ],
+    "scope": "adjacent",
+    "notes": "Web agents act through the Playwright MCP server, which exposes accessibility-tree snapshots, screenshots and form, keyboard and tab actions; each comparison keeps the LLM backbone fixed. ServiceNow and GitLab tasks adapt WorkArena and WebArena tasks with programmatic verification, and the ERPNext tasks are new. The v4 comments list publication in TMLR (10/2026). The paper names the StarShell code at github.com/ServiceNow/StarShell and a Hugging Face collection. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2604.00073v4",
+        "retrieved_at": "2026-10-20T04:21:06Z",
+        "sha256": "d48b8608488ebb2face72701a0822dfebdd760b55c053fa3312bcd35199cd958",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v4 abstract and comments and the v4 HTML Sections 1 and 3 (agent paradigms, Playwright MCP web agent, platforms, Table 1 task counts) and 4.3 (browser fallback).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "32c34471884375d972bf3332c48c94731b9fb30e63c4de8ed23414ea90368478",
+    "reviewed_at": "2026-10-20T04:21:32Z"
   }
 ]

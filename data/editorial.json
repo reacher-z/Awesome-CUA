@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "StressWeb: A Diagnostic Benchmark for Web Agent Robustness under Realistic Interaction Variability",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.16385",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Stress-tests multimodal web agents on 149 tasks across 10 generated websites, running each task in a clean setting and under six perturbations of layout, DOM structure, action semantics, pop-ups and execution failures.",
+    "verify_terms": [
+      "StressWeb"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.16385v1"
+    ],
+    "scope": "core",
+    "notes": "Agents act through a shared Playwright-based controller that supplies the current and two previous screenshots, the page HTML and the action history. The websites come from an agent-driven construction pipeline with manual verification; 149 task queries under 7 settings give 1,043 task evaluations, scored by deterministic multi-checkpoint evaluators. The paper links code in the StressWeb directory of github.com/inclusionAI/AWorld-RL. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2604.16385v1",
+        "retrieved_at": "2026-10-20T04:33:15Z",
+        "sha256": "bd66f10226a4a8fa4d0d8a766c4c287e01bf85f4bc37e94b466f16f43ad44360",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 1, 3.1-3.3 (environment construction, 10 websites and 149 queries, six perturbation types, deterministic evaluation) and 4.1 (models and Playwright controller).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "dda7f8701c315fe553ace3736cf310cebe74a7ffd4c2edae0e9417ee2a0c1bf4",
+    "reviewed_at": "2026-10-20T04:33:29Z"
   }
 ]

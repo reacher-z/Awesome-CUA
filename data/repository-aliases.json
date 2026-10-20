@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:jeomon/macos-mcp",
+    "target_id": "github:cursortouch/macos-mcp",
+    "repository_id": 1190321719,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-20T07:56:31Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/Jeomon/macos-mcp",
+        "resolved_url": "https://api.github.com/repositories/1190321719",
+        "repository_id": 1190321719,
+        "full_name": "CursorTouch/MacOS-MCP",
+        "html_url": "https://github.com/CursorTouch/MacOS-MCP",
+        "retrieved_at": "2026-10-20T07:55:33Z",
+        "sha256": "67607a6fa5075a4b45fc8c4a239bb206abbd2aeb701cfe40bd4e3fe03280d222"
+      },
+      {
+        "url": "https://api.github.com/repos/CursorTouch/MacOS-MCP",
+        "resolved_url": "https://api.github.com/repos/CursorTouch/MacOS-MCP",
+        "repository_id": 1190321719,
+        "full_name": "CursorTouch/MacOS-MCP",
+        "html_url": "https://github.com/CursorTouch/MacOS-MCP",
+        "retrieved_at": "2026-10-20T07:55:34Z",
+        "sha256": "67607a6fa5075a4b45fc8c4a239bb206abbd2aeb701cfe40bd4e3fe03280d222"
+      }
+    ]
   }
 ]

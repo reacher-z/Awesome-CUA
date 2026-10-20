@@ -63844,5 +63844,108 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "macOS-MCP",
+    "kind": "tool",
+    "url": "https://github.com/CursorTouch/MacOS-MCP",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "scope": "core",
+    "summary": "MCP server that reads the macOS Accessibility tree into numbered interactive elements, optionally with an annotated screenshot, and lets agents click, type, scroll, send shortcuts and run AppleScript or shell commands.",
+    "aliases": [
+      "macos-mcp"
+    ],
+    "verify_terms": [
+      "macOS-MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CursorTouch/MacOS-MCP/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Published on PyPI as macos-mcp (0.4.6 at review). Release tag v0.4.6 points at 4ab71ac; the inspected commit ccebebd is later and still declares version 0.4.6 in pyproject.toml. The repository was first published as Jeomon/macos-mcp, which now resolves to the same GitHub repository (ID 1190321719); the README's badges and software citation still use that address. src/macos_mcp/__main__.py registers 12 MCP tools: App, Shell, Snapshot, Click, Type, Scroll, Move, Shortcut, Wait, Scrape, Desktop and Notification. Snapshot walks each app's accessibility tree (tree/service.py) into lists of interactive and scrollable elements with coordinates, and with use_vision it adds a screenshot annotated with numbered boxes (desktop/service.py, get_annotated_screenshot). Click, Type, Scroll and Move act at screen coordinates through the bundled ax module; Shell runs shell commands or AppleScript; Desktop creates Mission Control Spaces; Scrape converts a web page to Markdown. The README lists browser automation among its tasks and the tree service keeps extra page nodes for browser apps. It runs over stdio, SSE or streamable HTTP, with optional bearer token, IP allowlist, TLS and OAuth for HTTP. The README says anonymous telemetry is on by default and is turned off with ANONYMIZED_TELEMETRY=false. It needs macOS 12 or later with Accessibility and Screen Recording permissions. Its Windows counterpart from the same author is github:cursortouch/windows-mcp. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source with a PyPI package (macos-mcp) and tagged GitHub releases; runs locally on macOS 12 or later.",
+      "repository_revision": "ccebebd6ee33cbd8260cdf08b067f1da91ecdc0b",
+      "release_tag": "v0.4.6",
+      "package_version": "0.4.6"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CursorTouch/MacOS-MCP/ccebebd6ee33cbd8260cdf08b067f1da91ecdc0b/src/macos_mcp/__main__.py",
+        "sha256": "2ea947c0f17e170df1b2c55a5ee272ec22c26c7a388f62227bfd21a6b68db732",
+        "retrieved_at": "2026-10-20T07:55:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CursorTouch/MacOS-MCP/ccebebd6ee33cbd8260cdf08b067f1da91ecdc0b/src/macos_mcp/desktop/service.py",
+        "sha256": "9642e70020f1aab4c36952a31bc6e0aab16d7007d837b4eb4c7cbe2febfd618c",
+        "retrieved_at": "2026-10-20T07:55:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/CursorTouch/MacOS-MCP/ccebebd6ee33cbd8260cdf08b067f1da91ecdc0b/src/macos_mcp/tree/service.py",
+        "sha256": "45072a3ab770395a714db7aea91523b76e407a02842a4f7f134743c13319c74e",
+        "retrieved_at": "2026-10-20T07:55:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/CursorTouch/MacOS-MCP/ccebebd6ee33cbd8260cdf08b067f1da91ecdc0b/pyproject.toml",
+        "sha256": "c2210d512465a1818263de09761610ab0cc7c8b66c09d429894dd36a6bb99e13",
+        "retrieved_at": "2026-10-20T07:55:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/CursorTouch/MacOS-MCP/ccebebd6ee33cbd8260cdf08b067f1da91ecdc0b/LICENSE",
+        "sha256": "02cc0ff8ee1c698a8668a60411c952cf0d0293fc387e0eabb48391399153e6b9",
+        "retrieved_at": "2026-10-20T07:55:11Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e2943d7c64d17f0fc868aa0baf59c2f0f36afda787131ed90450134353acd5fa",
+    "reviewed_at": "2026-10-20T07:56:31Z"
   }
 ]

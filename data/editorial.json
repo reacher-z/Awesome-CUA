@@ -63653,5 +63653,43 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.10577",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "OS-BLIND poses 300 human-crafted OSWorld tasks in 12 harm categories across 8 applications where benign instructions meet harmful context or outcomes; most evaluated computer-use agents exceed 90% attack success.",
+    "verify_terms": [
+      "The Blind Spot of Agent Safety"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.10577v2"
+    ],
+    "scope": "core",
+    "notes": "Per the v2 HTML full text, OS-BLIND is built on OSWorld's Ubuntu virtual machine and spans Chrome, GIMP, LibreOffice Writer, Calc and Impress, a synthetic Gmail client, VLC and VS Code plus OS-level operations, split into environment-embedded threats and agent-initiated harms. The paper links code at https://github.com/limenlp/OS_Blind and data at https://huggingface.co/datasets/lime-nlp/OS-Blind. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.10577v2",
+        "sha256": "591acdd0d610cda4b06aa114a0f24a6c5c263057c98b9c2af5b96ceeb9f4f0e1",
+        "retrieved_at": "2026-10-20T04:19:11Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "474f069577cfcf3517100bb859d3b720f6b514934fc800af11238f440dc9ac7c",
+    "reviewed_at": "2026-10-20T04:19:29Z"
   }
 ]

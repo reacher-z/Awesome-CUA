@@ -63674,7 +63674,7 @@
       "https://arxiv.org/abs/2605.29341v2"
     ],
     "scope": "adjacent",
-    "notes": "Adjacent multimodal memory benchmark. The abstract reports 400 tasks, while the v2 full text (Section 3) reports 461 multi-session samples with 24,258 QA pairs. Its Agentic Execution regime replays trajectories from EmbodiedBench, VisualAgentBench and the Agent-Arena GUI task collection, covering 6 GUI and 4 embodied subcategories; evaluated systems answer memory questions over these traces rather than operating an interface live. The paper names github.com/UCSB-AI/WorldMemArena and a Hugging Face dataset, which are not curated here. Results were not independently reproduced.",
+    "notes": "Adjacent multimodal memory benchmark. The abstract reports 400 tasks, while the v2 full text (Section 4 and Table 1) reports 461 multi-session samples with 24,258 QA pairs. Its Agentic Execution regime replays trajectories from EmbodiedBench, VisualAgentBench and the Agent-Arena GUI task collection, covering 6 GUI and 4 embodied subcategories; evaluated systems answer memory questions over these traces rather than operating an interface live. The paper names github.com/UCSB-AI/WorldMemArena and a Hugging Face dataset, which are not curated here. Results were not independently reproduced.",
     "additional_evidence": [
       {
         "role": "primary",

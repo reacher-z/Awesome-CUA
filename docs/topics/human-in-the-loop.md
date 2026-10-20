@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+84 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (76)](#papers)
 
 ## Benchmarks
 
@@ -61,6 +61,7 @@ All entries in this section: unspecified.
 | 2026‑03‑09 | [PIRA-Bench: A Transition from Reactive GUI Agents to GUI-based Proactive Intent Recommendation Agents](https://arxiv.org/abs/2603.08013) | unspecified | PIRA-Bench evaluates proactive intent recommendations from noisy GUI screenshot sequences containing interleaved tasks and user context. Its PIRF baseline combines memory and state tracking to maintain multiple task threads and identify opportunities to assist. |
 | 2026‑02‑19 | [Modeling Distinct Human Interaction in Web Agents](https://arxiv.org/abs/2602.17588) | web | CowCorpus records interleaved human and agent actions during web navigation and identifies distinct patterns of user intervention. Models trained to anticipate these interventions are integrated into live web agents and assessed in a user study. |
 | 2026‑02‑12 | [AmbiBench: Benchmarking Mobile GUI Agents Beyond One-Shot Instructions in the Wild](https://arxiv.org/abs/2602.11750) | unspecified | AmbiBench evaluates mobile GUI agents under four levels of instruction clarity, including tasks requiring active clarification. Its MUSE evaluator separately audits outcomes, execution quality and interaction quality to study alignment with user intent. |
+| 2026‑02‑12 | [How Smart Is Your GUI Agent? A Framework for the Future of Software Interaction](https://arxiv.org/abs/2602.11514) | cross-platform | Proposes GUI Agent Autonomy Levels (GAL), a six-level scale from manual operation to full automation that places scripted tools, RPA platforms and LLM-driven web, desktop and mobile agents by autonomy and oversight. |
 | 2026‑02‑10 | [A11y-CUA Dataset: Characterizing the Accessibility Gap in Computer Use Agents](https://arxiv.org/abs/2602.09310) | unspecified | Introduces A11y-CUA, a dataset comparing how blind or low-vision users and sighted users perform everyday computer tasks. It contrasts those traces with agent behavior under default, keyboard-only, and magnifier conditions to identify barriers to shared control. |
 | 2026‑02‑07 | [Mapping the Design Space of User Experience for Computer Use Agents](https://arxiv.org/abs/2602.07283) | web | Develops a taxonomy of computer-use-agent interaction design through system review and practitioner interviews. A Wizard-of-Oz study then examines how users respond to normal, erroneous, and risky web-based execution, focusing on control, explanation, prompts, and mental models. |
 | 2026‑01‑28 | [OS-Marathon: Benchmarking Computer-Use Agents on Vast-Horizon, Repetitive Tasks](https://arxiv.org/abs/2601.20650) | unspecified | Introduces OS-Marathon to evaluate long repetitive computer-use workflows whose execution grows with the amount of input data. It studies failure accumulation under task decomposition and GraphDemo, which adapts agents using a demonstration of the recurring workflow. |

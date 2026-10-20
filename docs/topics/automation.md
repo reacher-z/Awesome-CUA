@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+112 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (83)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (1)](#products) · [Papers (84)](#papers)
 
 ## Models
 
@@ -105,6 +105,7 @@ All entries in this section: web.
 | 2026‑03‑10 | [SpecOps: A Fully Automated AI Agent Testing Framework in Real-World GUI Environments](https://arxiv.org/abs/2603.10268) | web | SpecOps divides testing of GUI-based agents into test generation, environment setup, execution and validation handled by specialist agents. Its evaluation spans five real-world agents, including web applications and browser extensions, and measures execution reliability and bug discovery. |
 | 2026‑02‑25 | [Avenir-UX: Automated UX Evaluation via Simulated Human Web Interaction with GUI Grounding](https://arxiv.org/abs/2604.09581) | web | Avenir-UX combines grounded web interaction with simulated user profiles and structured usability measures to produce evaluations of website journeys. The paper describes its architecture and use of SUS, step-wise ease questions and think-aloud traces for automated UX reporting. |
 | 2026‑02‑16 | [EmbeWebAgent: Embedding Web Agents into Any Customized UI](https://arxiv.org/abs/2602.14865) | web | EmbeWebAgent embeds agent access into existing web applications through frontend observations and a page-specific function registry. Its workflow combines GUI primitives, composite actions and MCP tools, demonstrated in a live interface. |
+| 2026‑02‑12 | [How Smart Is Your GUI Agent? A Framework for the Future of Software Interaction](https://arxiv.org/abs/2602.11514) | cross-platform | Proposes GUI Agent Autonomy Levels (GAL), a six-level scale from manual operation to full automation that places scripted tools, RPA platforms and LLM-driven web, desktop and mobile agents by autonomy and oversight. |
 | 2026‑02‑12 | [WebTestPilot: Agentic End-to-End Web Testing against Natural Language Specification by Inferring Oracles with Symbolized GUI Elements](https://arxiv.org/abs/2602.11724) | web | WebTestPilot turns natural-language requirements into web test steps with inferred preconditions and postconditions over symbolized GUI elements. A benchmark of bug-injected web applications tests whether these context-aware oracles distinguish application defects from agent mistakes. |
 | 2026‑02‑11 | [See, Plan, Snap: Evaluating Multimodal GUI Agents in Scratch](https://arxiv.org/abs/2602.10814) | web | ScratchWorld evaluates program construction through the Scratch interface using fine-grained drag-and-drop actions and a complementary semantic-API mode. Runtime tests assess the resulting programs, allowing analysis of the gap between program reasoning and GUI manipulation. |
 | 2026‑01‑29 | [CovAgent: Overcoming the 30% Curse of Mobile Application Coverage with Agentic AI and Dynamic Instrumentation](https://arxiv.org/abs/2601.21253) | android | CovAgent augments Android GUI fuzzers by analyzing decompiled app code and component transitions to identify unsatisfied activation conditions. A second agent generates instrumentation that enables otherwise difficult-to-reach activities, with coverage-based evaluation. |

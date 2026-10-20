@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (102)](#papers)
 
 ## Benchmarks
 
@@ -168,6 +168,7 @@ All entries in this section: cross-platform.
 | 2026‑04‑16 | [FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems](https://arxiv.org/abs/2604.14956) | web, desktop, cross-platform | Introduces FedGUI, a federated GUI-learning benchmark built from six datasets spanning mobile, web and desktop interfaces. Its experiments separate platform, device, operating-system and data-source heterogeneity when evaluating collaborative training. |
 | 2026‑03‑19 | [OS-Themis: A Scalable Critic Framework for Generalist GUI Rewards](https://arxiv.org/abs/2603.19191) | android, cross-platform | Presents OS-Themis, a multi-agent critic that divides GUI trajectories into verifiable milestones and reviews their evidence before assigning an outcome. OGRBench evaluates GUI rewards across platforms, with AndroidWorld experiments examining training and trajectory filtering. |
 | 2026‑02‑15 | [Mobile-Agent-v3.5: Multi-platform Fundamental GUI Agents](https://arxiv.org/abs/2602.16855) | cross-platform | Presents GUI-Owl-1.5 variants and a hybrid data pipeline for multimodal GUI interaction, tool use, memory, and multi-platform tasks. |
+| 2026‑02‑12 | [How Smart Is Your GUI Agent? A Framework for the Future of Software Interaction](https://arxiv.org/abs/2602.11514) | cross-platform | Proposes GUI Agent Autonomy Levels (GAL), a six-level scale from manual operation to full automation that places scripted tools, RPA platforms and LLM-driven web, desktop and mobile agents by autonomy and oversight. |
 | 2026‑02‑09 | [UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082) | cross-platform, web, android | Describes a GUI-agent family combining broad intermediate training, full-trajectory online reinforcement learning, and merging of specialized models. |
 | 2026‑02‑06 | [POINTS-GUI-G: GUI-Grounding Journey](https://arxiv.org/abs/2602.06391) | cross-platform | Studies GUI-grounding development from a weakly grounded base model through data preparation, visual training, and verifiable rewards. |
 | 2025‑12‑18 | [VenusBench-GD: A Comprehensive Multi-Platform GUI Benchmark for Diverse Grounding Tasks](https://arxiv.org/abs/2512.16501) | cross-platform | VenusBench-GD is a bilingual, cross-platform GUI grounding benchmark organized into basic and advanced tasks. Its annotation pipeline and six-subtask taxonomy support comparisons of general multimodal models and GUI-specialized models across different grounding demands. |

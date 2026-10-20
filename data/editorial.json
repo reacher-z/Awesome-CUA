@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "How Smart Is Your GUI Agent? A Framework for the Future of Software Interaction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.11514",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "evaluation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "summary": "Proposes GUI Agent Autonomy Levels (GAL), a six-level scale from manual operation to full automation that places scripted tools, RPA platforms and LLM-driven web, desktop and mobile agents by autonomy and oversight.",
+    "verify_terms": [
+      "How Smart Is Your GUI Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.11514v1"
+    ],
+    "notes": "Short position paper with no experiments or benchmark. It places Selenium, UI Automator and AppleScript at Level 2, RPA platforms and LLM agents such as WebAgent and AppAgent at Level 3, and cites Claude Computer Use, ChatGPT Atlas and Manus as approaching Level 4. It judges most deployed agents to sit between Levels 1 and 3 and lists ease of use, security, privacy and personalization as open challenges. Level placements are the authors' qualitative judgments.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.11514v1",
+        "sha256": "8766112c6b2da064b1fa3a38862eb5f8463350cf0b043343cd23195555266e7b",
+        "retrieved_at": "2026-10-20T04:37:30Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the complete v1 HTML text: the level definitions with examples (Section 2), current status and open challenges (Section 3) and the conclusion. The paper reports no experiments.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6f65c01198ef772e61bae84273330e37ea2c860c9ff405d763b0273539ab04a2",
+    "reviewed_at": "2026-10-20T04:37:48Z"
   }
 ]

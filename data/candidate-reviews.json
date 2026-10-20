@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:df68b8c9b9205612c8bc",
+    "url": "https://zju-real.github.io/GUI-G2",
+    "decision": "alias",
+    "target_id": "github:zju-real/gui-g2",
+    "reason": "Project website (now redirecting to zjureal.com/GUI-G2/) for the indexed GUI-G2 grounding model repository; it links github.com/zju-real/GUI-G2, arXiv 2507.15846 and the GUI-G2-3B and GUI-G2-7B checkpoints."
   }
 ]

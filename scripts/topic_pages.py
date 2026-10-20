@@ -135,7 +135,7 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
             tr('Explore by topic', '<span class="topic-title-name">Computer-Use</span> <span class="topic-title-name">主题目录</span>'), '</h1></div><a class="library-language" href="',
             topic_path(language='en' if zh else 'zh'), '">', 'English' if zh else '中文', '</a></div>',
             '<p class="topic-intro">', tr('Find the papers, models, datasets, benchmarks, and tools that belong together.', '把同一方向的论文、模型、数据集、评测基准与工具放在一起看。'), '</p>',
-            '<div class="topic-overview"><span><strong>', str(len(entries)), '</strong> ', tr('topics', '个主题'), '</span><span><strong>',
+            '<div class="topic-overview"><span><strong>', f'{len(entries):,}', '</strong> ', tr('topics', '个主题'), '</span><span><strong>',
             f'{manifest["resources_with_topics"]:,}', '</strong> ', tr('reviewed resources', '条已审阅资源'),
             '</span><a href="/downloads/topics.json">', tr('Topic index · JSON', '主题索引 · JSON'), ' ↓</a></div>',
             '<p class="topic-method">', tr('Topics overlap. Counts describe the reviewed catalog, not the size of the whole field. Blank cells mean no reviewed entries with that tag.',
@@ -152,7 +152,7 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
             count = entry['counts'][slug]
             body += ['<td class="topic-col-', slug, '">']
             if count:
-                body += ['<a class="topic-number" href="', sections[slug], '" aria-label="', esc(entry['name'][language] + ' · ' + labels[zh] + ': ' + str(count)), '">', f'{count:,}', '</a>']
+                body += ['<a class="topic-number" href="', sections[slug], '" aria-label="', esc(entry['name'][language] + ' · ' + labels[zh] + ': ' + f'{count:,}'), '">', f'{count:,}', '</a>']
             else:
                 body += ['<span class="topic-zero" aria-label="', tr('No reviewed entries', '暂无已审阅条目'), '">—</span>']
             body += ['</td>']
@@ -199,7 +199,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
     for slug, labels, _ in GROUPS:
         if counts[slug]:
             link = sections[slug]
-            body += ['<a class="topic-col-', slug, '" href="', link[len(here):] if link.startswith(here + '#') else link, '">', labels[zh], '<strong>', str(counts[slug]), '</strong></a>']
+            body += ['<a class="topic-col-', slug, '" href="', link[len(here):] if link.startswith(here + '#') else link, '">', labels[zh], '<strong>', f'{counts[slug]:,}', '</strong></a>']
     body += ['</nav><p class="topic-method">', tr('Membership follows reviewed tags; it does not establish a dependency between neighboring records. Dates preserve source precision. Annotations retain their original language.',
              '条目依据已审阅标签归类，同一主题不表示资源之间存在依赖关系。日期保留来源精度，注释保留原语言。'), '</p>']
     visible, offset = [], 0
@@ -209,7 +209,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
         if not shown:
             continue
         body += ['<section class="topic-resource-group" aria-labelledby="', slug, '"><div class="paper-year-heading"><h2 id="', slug, '">', labels[zh],
-                 '</h2><span>', str(len(selected)), '</span><a href="#content">', tr('Back to top', '回到顶部'), ' ↑</a></div>']
+                 '</h2><span>', f'{len(selected):,}', '</span><a href="#content">', tr('Back to top', '回到顶部'), ' ↑</a></div>']
         for row in shown:
             visible.append(row)
             date = record_date_text(row)

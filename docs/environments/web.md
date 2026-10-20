@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-623 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+624 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (444)](#papers)
 
 ## Benchmarks
 
@@ -484,6 +484,7 @@
 | 2025‑09‑01 | [Throttling Web Agents Using Reasoning Gates](https://arxiv.org/abs/2509.01619) | web | Introduces reasoning gates that require agents to solve generated, verifiable puzzles before receiving access to resources. The throttling approach is deployed on a custom website and MCP servers and evaluated with web agents. |
 | 2025‑08‑30 | [KG-RAG: Enhancing GUI Agent Decision-Making via Knowledge Graph-Driven Retrieval-Augmented Generation](https://arxiv.org/abs/2509.00366) | android, web, desktop, cross-platform | KG-RAG converts UI transition graphs into a searchable vector store and uses intent-guided retrieval to construct actionable navigation paths. It introduces KG-Android-Bench and KG-Harmony-Bench and evaluates transfer from mobile apps to web and desktop tasks. |
 | 2025‑08‑29 | [Morae: Proactively Pausing UI Agents for User Choices](https://arxiv.org/abs/2508.21456) | web | Introduces Morae, a UI agent that detects decision points and pauses for user choices using interface code and screenshots. A study with blind and low-vision participants evaluates this mixed-initiative approach on real web tasks. |
+| 2025‑08‑24 | [DashboardQA: Benchmarking Multimodal Agents for Question Answering on Interactive Dashboards](https://arxiv.org/abs/2508.17398) | web, desktop, linux | Introduces DashboardQA, 405 questions over 112 interactive Tableau Public dashboards, and evaluates GUI agents in an OSWorld-based Ubuntu VM using screenshots alone or with accessibility trees. |
 | 2025‑08‑23 | [WebSight: A Vision-First Architecture for Robust Web Agents](https://arxiv.org/abs/2508.16987) | web | WebSight uses a vision-language model trained on web-interface examples within a modular agent with planning, action, verification, and episodic memory components. It evaluates element clicking on Showdown Clicks and full browsing tasks on WebVoyager using visual observations. |
 | 2025‑08‑18 | [A Functionality-Grounded Benchmark for Evaluating Web Agents in E-commerce Domains](https://arxiv.org/abs/2508.15832) | web | Amazon-Bench generates functionality-specific web tasks from page content and interactive controls, covering operations beyond product search. Its evaluator checks task completion and unintended changes to account state, such as address or purchase settings. |
 | 2025‑08‑18 | [WebMall -- A Multi-Shop Benchmark for Evaluating Web Agents](https://arxiv.org/abs/2508.13024) | web | WebMall provides four simulated online shops with heterogeneous product data for comparison shopping, related-product searches, and checkout tasks. It evaluates web agents with different observation formats and memory configurations in a fixed offline environment. |

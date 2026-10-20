@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-278 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+279 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (213)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (214)](#papers)
 
 ## Datasets
 
@@ -202,6 +202,7 @@
 | 2025‑08‑27 | [CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning](https://arxiv.org/abs/2508.20096) | desktop | CODA combines a generalist planner with a specialist GUI executor and trains application-specific planners through decoupled GRPO. Successful specialist trajectories then support supervised training of a consolidated planner, evaluated across four ScienceBoard applications. |
 | 2025‑08‑26 | [AppAgent-Pro: A Proactive GUI Agent System for Multidomain Information Integration and User Assistance](https://arxiv.org/abs/2508.18689) | android | Proposes a proactive GUI assistant that gathers information across domains in response to user requests and anticipated information needs. |
 | 2025‑08‑25 | [PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration](https://arxiv.org/abs/2508.18040) | unspecified | Introduces PerPilot and the PerInstruct dataset for completing user-specific mobile instructions through memory retrieval, app exploration, and clarification when missing context remains unresolved. |
+| 2025‑08‑24 | [DashboardQA: Benchmarking Multimodal Agents for Question Answering on Interactive Dashboards](https://arxiv.org/abs/2508.17398) | web, desktop, linux | Introduces DashboardQA, 405 questions over 112 interactive Tableau Public dashboards, and evaluates GUI agents in an OSWorld-based Ubuntu VM using screenshots alone or with accessibility trees. |
 | 2025‑08‑23 | [WebSight: A Vision-First Architecture for Robust Web Agents](https://arxiv.org/abs/2508.16987) | web | WebSight uses a vision-language model trained on web-interface examples within a modular agent with planning, action, verification, and episodic memory components. It evaluates element clicking on Showdown Clicks and full browsing tasks on WebVoyager using visual observations. |
 | 2025‑08‑21 | [Mobile-Agent-v3: Fundamental Agents for GUI Automation](https://arxiv.org/abs/2508.15144) | cross-platform | Introduces GUI-Owl models and Mobile-Agent-v3 orchestration, using environment-generated trajectories to support GUI capabilities. |
 | 2025‑08‑12 | [OpenCUA: Open Foundations for Computer-Use Agents](https://arxiv.org/abs/2508.09123) | desktop | Presents demonstration collection infrastructure, the AgentNet dataset, and a training pipeline for open computer-use models. |

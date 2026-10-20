@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-691 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+692 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -548,6 +548,7 @@ All entries in this section: web.
 | 2025‑08‑29 | [Morae: Proactively Pausing UI Agents for User Choices](https://arxiv.org/abs/2508.21456) | web | Introduces Morae, a UI agent that detects decision points and pauses for user choices using interface code and screenshots. A study with blind and low-vision participants evaluates this mixed-initiative approach on real web tasks. |
 | 2025‑08‑27 | [InquireMobile: Teaching VLM-based Mobile Agent to Request Human Assistance via Reinforcement Fine-Tuning](https://arxiv.org/abs/2508.19679) | unspecified | InquireMobile trains mobile agents to seek human confirmation at critical decisions using staged reinforcement fine-tuning and pre-action reasoning. InquireBench evaluates safe interaction and proactive inquiry, distinguishing asking for help from completing the underlying task. |
 | 2025‑08‑27 | [Mind the Third Eye! Benchmarking Privacy Awareness in MLLM-powered Smartphone Agents](https://arxiv.org/abs/2508.19493) | unspecified | Introduces SAPA-Bench with 7,138 smartphone scenarios to evaluate whether MLLM-powered mobile agents detect and protect sensitive personal information on screen. |
+| 2025‑08‑24 | [DashboardQA: Benchmarking Multimodal Agents for Question Answering on Interactive Dashboards](https://arxiv.org/abs/2508.17398) | web, desktop, linux | Introduces DashboardQA, 405 questions over 112 interactive Tableau Public dashboards, and evaluates GUI agents in an OSWorld-based Ubuntu VM using screenshots alone or with accessibility trees. |
 | 2025‑08‑18 | [A Functionality-Grounded Benchmark for Evaluating Web Agents in E-commerce Domains](https://arxiv.org/abs/2508.15832) | web | Amazon-Bench generates functionality-specific web tasks from page content and interactive controls, covering operations beyond product search. Its evaluator checks task completion and unintended changes to account state, such as address or purchase settings. |
 | 2025‑08‑18 | [WebMall -- A Multi-Shop Benchmark for Evaluating Web Agents](https://arxiv.org/abs/2508.13024) | web | WebMall provides four simulated online shops with heterogeneous product data for comparison shopping, related-product searches, and checkout tasks. It evaluates web agents with different observation formats and memory configurations in a fixed offline environment. |
 | 2025‑08‑17 | [You Don't Know Until You Click:Automated GUI Testing for Production-Ready Software Evaluation](https://arxiv.org/abs/2508.14104) | unspecified | RealDevWorld evaluates generated software repositories with 194 development tasks and AppEvalPilot, an agent judge that operates the resulting GUIs. The evaluation examines functional behavior, visual fidelity, and runtime responses to produce task-specific diagnostic feedback. |

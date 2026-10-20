@@ -63844,5 +63844,49 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "DashboardQA: Benchmarking Multimodal Agents for Question Answering on Interactive Dashboards",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.17398",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "grounding",
+      "planning"
+    ],
+    "summary": "Introduces DashboardQA, 405 questions over 112 interactive Tableau Public dashboards, and evaluates GUI agents in an OSWorld-based Ubuntu VM using screenshots alone or with accessibility trees.",
+    "verify_terms": [
+      "DashboardQA: Benchmarking Multimodal Agents"
+    ],
+    "scope": "core",
+    "notes": "Each episode opens a dashboard URL in full-screen Chrome inside an extended OSWorld Ubuntu virtual machine at 1920x1080; agents act through pyautogui mouse and keyboard commands plus WAIT, FAIL and DONE, observing screenshots or screenshots with ATSPI accessibility trees. Answers are scored with relaxed accuracy (5% numeric tolerance) and ANLS. Evaluated agents include GPT-4o, o4-mini, Gemini 2.5 Pro, OpenAI CUA, Jedi with GPT-4o and UI-TARS. The abstract links the release at github.com/vis-nlp/DashboardQA. No results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text (Sections 3-5 and the appendix prompts).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2508.17398v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2508.17398v1",
+        "retrieved_at": "2026-10-20T07:57:29Z",
+        "sha256": "b8f720babea0270028102c7443143ab34c8976236ece6f0011124aff1f54da08",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "20e7453848578ea0617dee43b9942723470b7df998604d0057a9c447c4983b06",
+    "reviewed_at": "2026-10-20T07:57:57Z"
   }
 ]

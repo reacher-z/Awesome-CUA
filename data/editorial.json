@@ -63653,5 +63653,43 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Structured Distillation of Web Agent Capabilities Enables Generalization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.07776",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "imitation-learning",
+      "web-navigation"
+    ],
+    "summary": "Agent-as-Annotators assigns task-designer, annotator and supervisor roles to LLM modules to synthesize web trajectories; Qwen3.5-9B fine-tuned on 2,322 filtered Gemini 3 Pro trajectories reaches 41.5% on WebArena.",
+    "verify_terms": [
+      "Structured Distillation of Web Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.07776v1"
+    ],
+    "scope": "core",
+    "notes": "Per the v1 HTML full text, the A3-Synth training set covers 3,000 tasks across six WebArena environments, and the fine-tuned student is also evaluated on VisualWebArena, WorkArena L1, WorkArena++ L2 and MiniWoB. The abstract links a project page at https://agent-as-annotators.github.io; the paper states that the trajectories, pipeline code and checkpoint are to be released. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.07776v1",
+        "sha256": "9e0d865735ebde8bd04ad1a94a85225fad58746d7bffc9220be7484d3bd35fc3",
+        "retrieved_at": "2026-10-20T04:21:16Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e43726db0f459ec85aae3d170c2b756283c55e07ee7758f4aa9152628ae2460d",
+    "reviewed_at": "2026-10-20T04:21:18Z"
   }
 ]

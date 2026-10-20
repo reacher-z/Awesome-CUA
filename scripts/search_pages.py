@@ -14,6 +14,7 @@ from agent_pages import agent_guide_body, RELEASES_URL
 from export_citations import citation_bibtex, citation_csl
 from paper_library import library_pages, library_path, library_years, paper_library
 from publication_metadata import publication, format_date_parts, record_date_text, record_year
+from topic_pages import KIND_LABELS as KIND_SINGULAR  # (English, Chinese) label for one resource of a kind
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
 
@@ -160,7 +161,7 @@ def incoming_relations(rows):
 def resource_body(record, lookup, incoming=None):
     r=record
     status="AI-assisted editorial review against a primary source" if eligible(r) else "Bibliographic metadata verified; topic relevance and research findings have not been reviewed"
-    body=f'<div class="eyebrow">{esc(KINDS[r["kind"]])}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(description(r))}</p><p class="review-notice">{esc(status)}. This is a catalog annotation, not an independent reproduction or endorsement.</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">Original source ↗</a><a class="button secondary" href="{resource_path(r)}index.md">Read as Markdown</a><a class="button secondary" href="{resource_path(r)}record.json">Record JSON</a></div>'
+    body=f'<div class="eyebrow">{esc(KIND_SINGULAR[r["kind"]][0])}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(description(r))}</p><p class="review-notice">{esc(status)}. This is a catalog annotation, not an independent reproduction or endorsement.</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">Original source ↗</a><a class="button secondary" href="{resource_path(r)}index.md">Read as Markdown</a><a class="button secondary" href="{resource_path(r)}record.json">Record JSON</a></div>'
     facts=[("Resource type",KINDS[r["kind"]]),("Environment",", ".join(r["environments"])),("Topics",", ".join(r["topics"]) or "Not assigned"),("Record publication date",record_date_text(r) or "Not recorded"),("Evidence retrieved",r["last_verified_at"]),("Resource ID",r["id"])]
     body+='<h2>What is this resource?</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k,v in facts)+'</dl>'
     snapshot=r['details'].get('arxiv_snapshot')
@@ -370,7 +371,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         body+=f'<article><h2><a href="{resource_path(paper)}">{esc(paper["name"])}</a></h2><p>{esc(description(paper))}</p><ul>'
         for rel in incoming[paper['id']]:
             source=lookup[rel['source_id']]
-            body+=f'<li><a href="{resource_path(source)}">{esc(source["name"])}</a> — {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">source evidence</a></li>'
+            body+=f'<li><a href="{resource_path(source)}">{esc(source["name"])}</a> — {esc(KIND_SINGULAR[source["kind"]][0])} · <a href="{safe_href(rel["evidence_url"])}">source evidence</a></li>'
         body+='</ul></article>'
     body+='</div><p><a href="/downloads/relationships.json">Download reviewed relationships as JSON</a> · <a href="/about/">Editorial policy</a></p>'
     emit('/connections/',page('Computer-use papers, code, and datasets','Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.','/connections/',body))

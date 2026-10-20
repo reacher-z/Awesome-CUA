@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-691 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+692 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (87)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
 
 ## Benchmarks
 
@@ -73,6 +73,7 @@
 | [Spider2-V](https://github.com/xlang-ai/Spider2-V) | web, desktop | [2407.10956](https://arxiv.org/abs/2407.10956) (2024) | [494 task definitions](https://raw.githubusercontent.com/xlang-ai/Spider2-V/HEAD/evaluation_examples/test_all.json) · [20 applications](https://raw.githubusercontent.com/xlang-ai/Spider2-V/HEAD/README.md) | code Apache-2.0 | Visual agent evaluation on data-science and engineering workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/Spider2-V/HEAD/README.md) |
 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | web | [2410.06703](https://arxiv.org/abs/2410.06703) (2024) | — | — | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/segev-shlomov/ST-WebAgentBench/HEAD/README.md) |
 | [TheAgentCompany](https://github.com/TheAgentCompany/TheAgentCompany) · [leaderboard](https://the-agent-company.com/#/leaderboard) | web, desktop | [2412.14161](https://arxiv.org/abs/2412.14161) (2024) | [175 task images](https://raw.githubusercontent.com/TheAgentCompany/TheAgentCompany/HEAD/README.md) | code MIT | Self-contained workplace environment for evaluating agents on professional tasks involving websites, files, code, and simulated coworkers. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TheAgentCompany/TheAgentCompany/HEAD/README.md) |
+| [UI-NEXUS](https://github.com/StarWalkin/UI-NEXUS) | android | [2506.08972](https://arxiv.org/abs/2506.08972) (2025) | [100 task templates](https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv) | — | Compositional mobile-agent benchmark: 100 task templates chaining actions across local utility apps on an AndroidWorld-based emulator and online Chinese and English service apps, with emulator state-setup tooling. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/HEAD/README.md) |
 | [VeriWeb (formerly VeriGUI)](https://github.com/VeriGUI-Team/VeriGUI) | web | — | — | code Apache-2.0 | Verifiable web information-seeking benchmark renamed from VeriGUI; desktop evaluation is described as future work. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/VeriGUI-Team/VeriGUI/HEAD/README.md) |
 | [VideoGUI](https://github.com/showlab/videogui) | desktop | [2406.10227](https://arxiv.org/abs/2406.10227) (2024) | — | — | Benchmark for desktop GUI tasks derived from instructional videos. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/videogui/HEAD/README.md) |
 | [VisualAgentBench](https://github.com/THUDM/VisualAgentBench) | cross-platform, web, android | [2408.06327](https://arxiv.org/abs/2408.06327) (2024) | — | code Apache-2.0 | Evaluation framework spanning visual GUI, embodied, and design tasks, including mobile and WebArena-based environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/VisualAgentBench/HEAD/README.md) |

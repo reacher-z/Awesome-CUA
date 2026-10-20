@@ -63844,5 +63844,203 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "UI-NEXUS",
+    "kind": "benchmark",
+    "url": "https://github.com/StarWalkin/UI-NEXUS",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "long-horizon"
+    ],
+    "scope": "core",
+    "summary": "Compositional mobile-agent benchmark: 100 task templates chaining actions across local utility apps on an AndroidWorld-based emulator and online Chinese and English service apps, with emulator state-setup tooling.",
+    "verify_terms": [
+      "UI-NEXUS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "introduced_by",
+        "target_id": "arxiv:2506.08972",
+        "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:google-research/android_world",
+        "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:google-deepmind/android_env",
+        "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/README.md"
+      }
+    ],
+    "notes": "Official repository of the paper \"Atomic-to-Compositional Generalization for Mobile Agents with A New Benchmark and Scheduling System\" (named by title in the README). The task files are data/offline_English.csv (50 English tasks for UI-NEXUS-Anchor, the local utility app subset), data/online_Chinese.csv (25 tasks) and data/online_English.xlsx (25 tasks); each row has a category (Simple Concatenation, Context Transition or Deep Dive), the apps involved, a template and one instantiation. UI-NEXUS-Anchor reuses AndroidWorld's 20 apps on a Pixel 6, API 33 emulator; the repository bundles adapted copies of AndroidWorld and AndroidEnv (each with its Apache-2.0 license text), and the README also credits SPA-Bench's AndroidWorld adaptation. android_world/emulator_init sets app and system state (contacts, SMS, calendar, music, notes, settings) from JSON files; android_world/task_config holds representative configurations for five Anchor tasks (six files; one is filed under two categories), and the README says the complete set will follow. The README says the agent-running code is still being refactored, and neither the task files nor the state configurations carry success criteria, so the evaluation procedure cannot be reproduced from this repository. The README reports 30 online service apps and an average optimal length of 14.05 steps. There is no root license file. Not a fork, not archived; no release.",
+    "details": {
+      "availability": "Task templates, adapted emulator code and partial task state configurations; complete configurations and agent-running code not yet released; no release or tag.",
+      "repository_revision": "c2ebeadc2c6821ecd246e097787efcc9a448b1b5",
+      "repository_tree_sha": "31eb764cb08e191bb397b95688d9e0eaf0a1715a",
+      "benchmark_protocol": {
+        "focus": [
+          "compositional multi-app mobile tasks",
+          "generalization from atomic to compositional tasks"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "agent-defined observations of the Android emulator or device"
+        ],
+        "actions": [
+          "agent-defined Android actions"
+        ],
+        "evaluation": "Not specified in the repository: the README defers the agent-running code, and neither the task files nor the state configurations carry success criteria.",
+        "counts": [
+          {
+            "value": 100,
+            "unit": "task templates",
+            "qualifier": "exact",
+            "population": "all task files (50 + 25 + 25 rows)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv"
+          },
+          {
+            "value": 50,
+            "unit": "task templates",
+            "qualifier": "exact",
+            "population": "UI-NEXUS-Anchor, English, local utility apps (data/offline_English.csv)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv"
+          },
+          {
+            "value": 25,
+            "unit": "task templates",
+            "qualifier": "exact",
+            "population": "online service apps, Chinese (data/online_Chinese.csv)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/online_Chinese.csv"
+          },
+          {
+            "value": 25,
+            "unit": "task templates",
+            "qualifier": "exact",
+            "population": "online service apps, English (data/online_English.xlsx)",
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/online_English.xlsx"
+          }
+        ],
+        "notes": "Template counts are data rows with distinct task IDs, counted with Python's csv module and by parsing the XLSX sheet XML. Anchor categories: Simple Concatenation 20, Context Transition 20, Deep Dive 10; each online file: Simple Concatenation 7, Context Transition 11, Deep Dive 7. Each row carries one instantiation of its template.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv",
+          "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/online_Chinese.csv",
+          "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/online_English.xlsx",
+          "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/README.md",
+          "https://api.github.com/repos/StarWalkin/UI-NEXUS/git/trees/c2ebeadc2c6821ecd246e097787efcc9a448b1b5?recursive=1"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The complete tree at the reviewed commit has no root license file; the Apache-2.0 texts under android_env and android_world cover those bundled adapted upstream packages, not the benchmark's own task data or scripts.",
+        "evidence_urls": [
+          "https://api.github.com/repos/StarWalkin/UI-NEXUS/git/trees/c2ebeadc2c6821ecd246e097787efcc9a448b1b5?recursive=1"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability",
+          "details.benchmark_protocol",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/StarWalkin/UI-NEXUS/git/trees/c2ebeadc2c6821ecd246e097787efcc9a448b1b5?recursive=1",
+        "sha256": "0ea9401ff29cf9fd9cc5adb4b084e77c09f25a2df0119e45a4bc056895c55fde",
+        "retrieved_at": "2026-10-20T04:36:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes",
+          "details.availability",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/README.md",
+        "sha256": "4a2ebb00b718b7aca9f4460827270d6e9828cc7ee9148a124ae663c6b1186f84",
+        "retrieved_at": "2026-10-20T04:36:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv",
+        "sha256": "c37e589a077131149f1d1a292500b60354e5c2ff401494422d36cda8ccbe1b2d",
+        "retrieved_at": "2026-10-20T04:36:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/online_Chinese.csv",
+        "sha256": "815766e4ba5fa6111289ad66fabc6bdc44ed5ea9af40052e4388b27781771472",
+        "retrieved_at": "2026-10-20T04:36:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/online_English.xlsx",
+        "sha256": "819efeb7ea389ff0a340d717e0b39ae5ab89bf7ebcad1b45dac8acf414f5b111",
+        "retrieved_at": "2026-10-20T04:36:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/android_world/emulator_init/README.md",
+        "sha256": "29d7bcb1df1d7264d685945a580e0238cef82a9e1d3fbae9b2cfffba8a3e5c86",
+        "retrieved_at": "2026-10-20T04:36:18Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4a2ebb00b718b7aca9f4460827270d6e9828cc7ee9148a124ae663c6b1186f84",
+    "reviewed_at": "2026-10-20T04:37:31Z"
   }
 ]

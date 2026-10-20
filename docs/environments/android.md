@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-310 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+311 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
 
 ## Benchmarks
 
@@ -28,6 +28,7 @@
 | [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 | [MobileWorldBench](https://github.com/jacklishufan/MobileWorld) | android | [2512.14014](https://arxiv.org/abs/2512.14014) (2025) | — | — | Benchmark of semantic world modeling for mobile agents, with question-answering tasks and GPT-judged generation tasks, plus training data built on AitW and AndroidControl screens. | [✓ 2026‑10‑16](https://github.com/jacklishufan/MobileWorld) |
 | [SPA-Bench](https://github.com/ai-agents-2030/SPA-Bench) | android | [2410.15164](https://arxiv.org/abs/2410.15164) (2024) | [340 tasks](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) · [66 applications](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) | code MIT | 340 single-app and cross-app tasks over 66 Chinese and English Android apps, with plug-in support for 11 smartphone agents and automatic coarse-to-fine success detection. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) |
+| [UI-NEXUS](https://github.com/StarWalkin/UI-NEXUS) | android | [2506.08972](https://arxiv.org/abs/2506.08972) (2025) | [100 task templates](https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv) | — | Compositional mobile-agent benchmark: 100 task templates chaining actions across local utility apps on an AndroidWorld-based emulator and online Chinese and English service apps, with emulator state-setup tooling. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/HEAD/README.md) |
 | [VisualAgentBench](https://github.com/THUDM/VisualAgentBench) | cross-platform, web, android | [2408.06327](https://arxiv.org/abs/2408.06327) (2024) | — | code Apache-2.0 | Evaluation framework spanning visual GUI, embodied, and design tasks, including mobile and WebArena-based environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/VisualAgentBench/HEAD/README.md) |
 
 ## Datasets

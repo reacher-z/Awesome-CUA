@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 A *leaderboard* link after the name is the official leaderboard that the reviewed source links. *Scale* is the first publisher-reported or computed count per unit from the reviewed profile, linked to its source; subsets and units are never combined. *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**88 resources:** [Web (35)](#web) · [Desktop (15)](#desktop) · [Mobile (17)](#mobile) · [Cross-platform (18)](#cross-platform) · [Unspecified (3)](#unspecified)
+**89 resources:** [Web (35)](#web) · [Desktop (15)](#desktop) · [Mobile (18)](#mobile) · [Cross-platform (18)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -97,6 +97,7 @@ All entries in this section: web.
 | [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 | [MobileWorldBench](https://github.com/jacklishufan/MobileWorld) | android | [2512.14014](https://arxiv.org/abs/2512.14014) (2025) | — | — | Benchmark of semantic world modeling for mobile agents, with question-answering tasks and GPT-judged generation tasks, plus training data built on AitW and AndroidControl screens. | [✓ 2026‑10‑16](https://github.com/jacklishufan/MobileWorld) |
 | [SPA-Bench](https://github.com/ai-agents-2030/SPA-Bench) | android | [2410.15164](https://arxiv.org/abs/2410.15164) (2024) | [340 tasks](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) · [66 applications](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) | code MIT | 340 single-app and cross-app tasks over 66 Chinese and English Android apps, with plug-in support for 11 smartphone agents and automatic coarse-to-fine success detection. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) |
+| [UI-NEXUS](https://github.com/StarWalkin/UI-NEXUS) | android | [2506.08972](https://arxiv.org/abs/2506.08972) (2025) | [100 task templates](https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/c2ebeadc2c6821ecd246e097787efcc9a448b1b5/data/offline_English.csv) | — | Compositional mobile-agent benchmark: 100 task templates chaining actions across local utility apps on an AndroidWorld-based emulator and online Chinese and English service apps, with emulator state-setup tooling. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/StarWalkin/UI-NEXUS/HEAD/README.md) |
 
 [↑ Back to top](#benchmark-catalog)
 

@@ -11,6 +11,7 @@ The objective is to make accurate public resources discoverable, readable, and c
 - The XML and plain-text sitemaps contain the same indexable HTML pages. It omits artificial build-time `lastmod` values; a source retrieval date is not a page-modification date.
 - `robots.txt` allows Googlebot, bingbot, OAI-SearchBot, PerplexityBot, and Claude-SearchBot. The existing general access policy is retained. Search access and model-training access are different controls.
 - `llms.txt`, `llms-full.txt`, and an Atom feed provide optional navigation and machine-readable annotations. They are not mandatory AI-ranking mechanisms.
+- The homepage `WebSite` node names the site's alternate names (`Awesome-CUA`, `Awesome Computer-Use Agents`) and declares a `SearchAction` for `/?q=<terms>`, the query the catalog app reads. Every page links `/opensearch.xml`, which gives browsers the same search URL. Google no longer shows a sitelinks search box, so neither is a ranking signal.
 - Google’s provided verification file is retained at the site root. Do not delete it during future deployments.
 
 ## Reproduce and validate

@@ -85,6 +85,30 @@ def organization():
     return {"@type":"Organization", "@id":SITE+"/#organization", "name":"AwesomeCUA", "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
 
 
+# The homepage app reads ?q= as its search query (parseState in web/catalog-core.js).
+SEARCH_URL = SITE+"/?q="
+SEARCH_LINK = '<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="AwesomeCUA">'
+
+
+def website():
+    # alternateName gives search engines the names people use for the site; SearchAction and OpenSearch share one query URL.
+    return {"@type":"WebSite", "@id":SITE+"/#website", "url":SITE+"/", "name":"AwesomeCUA", "alternateName":["Awesome-CUA","Awesome Computer-Use Agents"],
+        "description":"Source-backed computer-use and GUI-agent resource catalog", "inLanguage":["en","zh-CN"], "publisher":{"@id":SITE+"/#organization"},
+        "potentialAction":{"@type":"SearchAction", "target":{"@type":"EntryPoint", "urlTemplate":SEARCH_URL+"{search_term_string}"}, "query-input":"required name=search_term_string"}}
+
+
+def opensearch_description():
+    # OpenSearch 1.1 lets browsers add the catalog search to the address bar.
+    root=ET.Element('OpenSearchDescription', xmlns='http://a9.com/-/spec/opensearch/1.1/')
+    for key,value in [('ShortName','AwesomeCUA'), ('Description','Search the AwesomeCUA catalog of computer-use agent papers, models, datasets and benchmarks.'), ('InputEncoding','UTF-8')]:
+        ET.SubElement(root,key).text=value
+    ET.SubElement(root,'Image', type='image/svg+xml', width='32', height='32').text=SITE+'/favicon.svg'
+    ET.SubElement(root,'Url', type='text/html', method='get', template=SEARCH_URL+'{searchTerms}')
+    ET.SubElement(root,'Url', type='application/opensearchdescription+xml', rel='self', template=SITE+'/opensearch.xml')
+    ET.indent(root, space='  ')
+    return ET.tostring(root, encoding='utf-8', xml_declaration=True).decode()+'\n'
+
+
 def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True):
     url=SITE+path
     # One list renders both the visible trail and BreadcrumbList, so they cannot disagree.
@@ -103,7 +127,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
     og_url=f'<meta property="og:url" content="{url}">' if canonical else ''
     full_title=title if 'AwesomeCUA' in title else title+' | AwesomeCUA'
-    document=f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title><meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA: The next interface is an agent. Research, models, data, and tools in one source-backed index."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA research updates"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script></head><body><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><img src="/favicon.svg" width="32" height="32" alt=""><span>Awesome<span class="brand-cua">CUA</span></span></a><nav aria-label="Main navigation"><a href="/catalog/">Catalog</a><a href="/papers/">Papers</a><a href="/topics/">Topics</a><a href="/guides/">Guides</a><a href="/data/">Data</a></nav><a class="github-link" href="{SOURCE_REPO}">GitHub ↗</a></div></header><main id="content" class="reading-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{trail}</ol></nav>{body}</main><footer class="shell"><a class="brand" href="/">AwesomeCUA</a><a href="/about/">Editorial policy</a><a href="/coverage/">Coverage</a><a href="/data/">Download data</a><a href="/llms.txt">Machine-readable guide</a><a href="{SOURCE_REPO}">Source repository ↗</a></footer></body></html>'''
+    document=f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title><meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA: The next interface is an agent. Research, models, data, and tools in one source-backed index."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA research updates">{SEARCH_LINK}<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script></head><body><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><img src="/favicon.svg" width="32" height="32" alt=""><span>Awesome<span class="brand-cua">CUA</span></span></a><nav aria-label="Main navigation"><a href="/catalog/">Catalog</a><a href="/papers/">Papers</a><a href="/topics/">Topics</a><a href="/guides/">Guides</a><a href="/data/">Data</a></nav><a class="github-link" href="{SOURCE_REPO}">GitHub ↗</a></div></header><main id="content" class="reading-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{trail}</ol></nav>{body}</main><footer class="shell"><a class="brand" href="/">AwesomeCUA</a><a href="/about/">Editorial policy</a><a href="/coverage/">Coverage</a><a href="/data/">Download data</a><a href="/llms.txt">Machine-readable guide</a><a href="{SOURCE_REPO}">Source repository ↗</a></footer></body></html>'''
 
     if lang.startswith('zh'):
         chrome={'Skip to content':'跳到正文','Catalog':'目录','Papers':'论文','Topics':'主题','Guides':'指南','Data':'数据','Editorial policy':'收录方法','Coverage':'覆盖台账','Download data':'下载数据','Machine-readable guide':'机器读取指南','GitHub organization ↗':'GitHub 组织 ↗','Source repository ↗':'源代码仓库 ↗'}
@@ -447,8 +471,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     # A static, visible directory is useful to visitors even when JavaScript is unavailable.
     home=(destination/'index.html').read_text(encoding='utf-8')
     home=re.sub(r'<!-- SURVEY:START -->(.*?)<!-- SURVEY:END -->',lambda m:m[1] if survey_page else '',home,flags=re.S)
-    extra=f'<link rel="canonical" href="{SITE}/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="{SITE}/"><link rel="alternate" hreflang="en" href="{SITE}/"><link rel="alternate" hreflang="zh-CN" href="{SITE}/zh/"><link rel="alternate" hreflang="x-default" href="{SITE}/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA research updates"><link rel="stylesheet" href="./pages.css">'
-    home=home.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),{"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}]})}</script></head>')
+    extra=f'<link rel="canonical" href="{SITE}/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="{SITE}/"><link rel="alternate" hreflang="en" href="{SITE}/"><link rel="alternate" hreflang="zh-CN" href="{SITE}/zh/"><link rel="alternate" hreflang="x-default" href="{SITE}/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA research updates">{SEARCH_LINK}<link rel="stylesheet" href="./pages.css">'
+    home=home.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),website()]})}</script></head>')
     for identity,value in [('stat-resources',len(rows)),('stat-curated',len(reviewed)),('stat-kinds',len(KINDS)),('stat-sources',len(coverage['sources']))]:
         home=re.sub(f'(id="{identity}">).*?(</span>)',lambda m:m.group(1)+format(value,',')+m.group(2),home)
     home=home.replace('id="snapshot-date">—','id="snapshot-date">'+latest[:10])
@@ -480,6 +504,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     (destination/'llms-full.txt').write_text(clean_text('# AwesomeCUA curated resource annotations\n\n'+f'Evidence snapshot: {latest}. These records were reviewed with AI assistance; experiments are not independently reproduced.\n\n'+survey_navigation+'\n---\n\n'.join(resource_markdown(r) for r in reviewed)),encoding='utf-8')
     robots='User-agent: *\nAllow: /\n\n'+''.join(f'User-agent: {bot}\nAllow: /\n\n' for bot in ['Googlebot','bingbot','OAI-SearchBot','PerplexityBot','Claude-SearchBot'])+f'Sitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap.txt\n'
     (destination/'robots.txt').write_text(clean_text(robots),encoding='utf-8')
+    (destination/'opensearch.xml').write_text(clean_text(opensearch_description()),encoding='utf-8')
     sitemap=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
     for item in sorted(manifest,key=lambda x:x['path']):
         if item['indexable']:

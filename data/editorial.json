@@ -63653,5 +63653,110 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "CloudCruise",
+    "kind": "product",
+    "url": "https://www.cloudcruise.com",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow",
+      "robustness"
+    ],
+    "summary": "Managed browser-automation platform for healthcare portals and EHRs in which a builder agent turns a chat description into a reusable workflow graph that runs in cloud VMs and a maintenance agent repairs.",
+    "scope": "core",
+    "verify_terms": [
+      "CloudCruise"
+    ],
+    "notes": "The homepage targets payer-portal and EHR workflows and says every run executes in a VM with laptop-like fingerprints and human-like input, with queued concurrency, video replay, per-action screenshots and logs, and HIPAA-compliant infrastructure. The documentation says the builder agent opens a live browser preview, navigates the target site, asks clarifying questions and turns confirmed actions into a node-and-edge graph that later runs deterministically instead of calling an LLM at every step. Click nodes target elements either by XPath or through an LLM vision mode labelled AI (Screenshot). The maintenance agent classifies failures from the error screenshot, page state and selector signals, then recovers in place, asks for input, retries or hands the workflow to the builder agent. Citrix virtual desktops are automated through their HTML5 browser client using the screenshot mode. Runs start through an API with TypeScript and Python SDKs. Pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://cloudcruise.com/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://docs.cloudcruise.com/introduction.md",
+        "sha256": "c88cd7cf9706aee71fd1439370ebca725ea9ab9b22eeb63d403b3d57dad61a4d",
+        "retrieved_at": "2026-10-20T04:30:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.cloudcruise.com/concepts/builder-agent.md",
+        "sha256": "ff937d1447ad519473ffa2af3f7c5184e88e6431c642ddb5de9ae8185a52cb04",
+        "retrieved_at": "2026-10-20T04:30:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.cloudcruise.com/concepts/maintenance-agent.md",
+        "sha256": "87cc51a9de26ac3ac457a01915c2f18dec77e7a807947fd15d5ab21a2260775c",
+        "retrieved_at": "2026-10-20T04:30:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://docs.cloudcruise.com/concepts/workflow-dsl/click.md",
+        "sha256": "bd5f1d86dd4d7e20e2b07b7a7c6167b5cfd8a2f4a3a41ac7cda7a6bedf358650",
+        "retrieved_at": "2026-10-20T04:30:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://docs.cloudcruise.com/concepts/citrix.md",
+        "sha256": "ab26146588f895f4df8816e2d352f0982c77ed66dee4c627e3d5dce8ef4ee565",
+        "retrieved_at": "2026-10-20T04:30:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.pricing_url"
+        ],
+        "url": "https://cloudcruise.com/pricing",
+        "sha256": "43474fff292cf1794bc6133757a188b815acc5e22cc6f4c6850e0e74e70a21e7",
+        "retrieved_at": "2026-10-20T04:30:20Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b7ac3209cb73fdf8b3960035788a11f12840ecd556ae6a5000bcbcfa7a0cb613",
+    "reviewed_at": "2026-10-20T04:30:35Z"
   }
 ]

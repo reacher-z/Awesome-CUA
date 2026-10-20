@@ -63673,7 +63673,7 @@
       "https://arxiv.org/abs/2606.07367v1"
     ],
     "scope": "adjacent",
-    "notes": "Adjacent agent-training method. The v1 full text evaluates on ALFWorld, WebShop and ScienceWorld with Llama-2-7B-Chat as the main base model, and adds comparisons with Qwen2.5-7B-Instruct on ALFWorld and Llama-3-8B-Instruct; WebShop, a simulated shopping website, is the only web environment. The paper names no code release. Results have not been independently reproduced.",
+    "notes": "Adjacent agent-training method. The v1 full text evaluates on ALFWorld, WebShop and ScienceWorld with Llama-2-7B-Chat as the main base model, and adds comparisons with Qwen2.5-7B-Instruct on ALFWorld and Llama-3-8B-Instruct; WebShop, a simulated shopping website, is the only web environment. The v1 paper links a project page, qevolve.github.io, whose Code link points to github.com/QEvolve/q-evolve; that repository is not curated here. Results have not been independently reproduced.",
     "additional_evidence": [
       {
         "role": "primary",

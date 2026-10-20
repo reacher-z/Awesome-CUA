@@ -63653,5 +63653,193 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "WebArena-Infinity",
+    "kind": "benchmark",
+    "url": "https://github.com/web-arena-x/webarena-infinity",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "sandbox",
+      "data-generation"
+    ],
+    "summary": "Generated web apps modeled on GitLab, PayPal, Xero, Elation EHR and other products, each with resettable state and Python-verified tasks for browser agents, plus the coding-agent pipeline that builds them.",
+    "scope": "core",
+    "verify_terms": [
+      "WebArena-Infinity"
+    ],
+    "notes": "Documented by a March 2026 blog post at webarena.dev; the README cites that post and no arXiv paper. At commit 1ca7781, apps/ holds 13 generated environments, each a static HTML/CSS/JS app whose browser pushes its full state to a Python server.py; verifiers read GET /api/state, and POST /api/reset restores the seed state. The tree has 1,620 real-task verifiers (260 easy, 260 medium, 1,100 hard) and 737 functional-test verifiers. The blog's initial-release table lists ten of these environments with 1,260 tasks; elation-patient-communication, figma-slides and figma-text-and-typography are further directories outside that table. evaluation/run_eval_parallel.py runs browser-use agents (GPT-4o, Gemini 3 Flash and Pro, Claude Sonnet 4.6) with vision off unless --use-vision is set, and screenshot agents (Gemini and Claude computer use, Kimi K2.5, Qwen 3.5) whose coordinate actions Playwright executes; defaults are 50 steps and a 600-second task limit. infra/pipeline.py runs Claude Code with --dangerously-skip-permissions to generate new apps from documentation, such as the product-manual files under apps/user-manuals, whose rights were not reviewed. The agent trajectories described in the blog are published separately as the Hugging Face dataset webarena-x/webarena-infinity-trajectories.",
+    "details": {
+      "repository_revision": "1ca77813bf8d8e4011aa3fb1f740f70d78bd522d",
+      "benchmark_protocol": {
+        "focus": [
+          "browser agents on generated replicas of real web applications",
+          "programmatic state verification of task outcomes"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "DOM-derived page state through browser-use (screenshots optional)",
+          "screenshots"
+        ],
+        "actions": [
+          "browser-use element actions",
+          "mouse click, drag and scroll",
+          "key press and typing"
+        ],
+        "evaluation": "Before each task the harness posts /api/reset; after the agent finishes, the task's Python verifier reads the app state from GET /api/state and returns pass or fail with a message. Tasks are graded easy, medium or hard, and the blog reports success rate per agent.",
+        "counts": [
+          {
+            "value": 1260,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "initial release, ten environments (blog statistics table)",
+            "basis": "reported",
+            "evidence_url": "https://webarena.dev/webarena-infinity/content.md"
+          },
+          {
+            "value": 10,
+            "unit": "environments",
+            "qualifier": "exact",
+            "population": "initial release (blog statistics table)",
+            "basis": "reported",
+            "evidence_url": "https://webarena.dev/webarena-infinity/content.md"
+          },
+          {
+            "value": 13,
+            "unit": "environment directories",
+            "qualifier": "exact",
+            "population": "apps/ at commit 1ca7781, excluding ablations, app-description and user-manuals",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/web-arena-x/webarena-infinity/git/trees/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d?recursive=1"
+          },
+          {
+            "value": 1620,
+            "unit": "real-task verifier scripts",
+            "qualifier": "exact",
+            "population": "apps/*/real-tasks/task_*.py at commit 1ca7781 (260 easy, 260 medium, 1,100 hard by file prefix)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/web-arena-x/webarena-infinity/git/trees/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d?recursive=1"
+          },
+          {
+            "value": 737,
+            "unit": "functional-test verifier scripts",
+            "qualifier": "exact",
+            "population": "apps/*/function-tasks/task_*.py at commit 1ca7781",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/web-arena-x/webarena-infinity/git/trees/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d?recursive=1"
+          }
+        ],
+        "notes": "The repository holds three more environment directories than the blog's release table, so state which environments and task suite (real-tasks or function-tasks) a score covers. Keep the agent harness, vision setting, step limit and task timeout with any score. No benchmark run was executed for this review.",
+        "evidence_urls": [
+          "https://webarena.dev/webarena-infinity/content.md",
+          "https://api.github.com/repos/web-arena-x/webarena-infinity/git/trees/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d?recursive=1",
+          "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/run_eval_parallel.py",
+          "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/tasks.py",
+          "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/agents.py",
+          "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/vision_agents.py",
+          "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/docs/environment-protocol.md"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details.benchmark_protocol"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://webarena.dev/webarena-infinity/content.md",
+        "sha256": "f55d394a98ab18b01578d329c6bfe43de90be336051e6e479c730c39e4181f2b",
+        "retrieved_at": "2026-10-20T04:06:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/web-arena-x/webarena-infinity/git/trees/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d?recursive=1",
+        "sha256": "1680aa208a7a5c4615b642a4cfeeb70d61967f0e774fe37e63c22c18800dd3fa",
+        "retrieved_at": "2026-10-20T04:06:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/run_eval_parallel.py",
+        "sha256": "b4a55c3e5bd0479dd70ab660c190aa10c08ec253d86224fa378fe75fb8f3a920",
+        "retrieved_at": "2026-10-20T04:06:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/tasks.py",
+        "sha256": "a36959f9907e486c768fb42f78f58335df8e7fdd8be9216db54ff51c5bf012a8",
+        "retrieved_at": "2026-10-20T04:06:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/agents.py",
+        "sha256": "4c2819c8126df79a979586ad874eecb947c414ba6356d791254bafe16994886e",
+        "retrieved_at": "2026-10-20T04:06:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/evaluation/vision_agents.py",
+        "sha256": "03c1cf3728ac0977ed56a9b1dfe52a0bef979443802905d0ea16fa1d88bfd5dc",
+        "retrieved_at": "2026-10-20T04:06:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/web-arena-x/webarena-infinity/1ca77813bf8d8e4011aa3fb1f740f70d78bd522d/docs/environment-protocol.md",
+        "sha256": "21a54a5f85b4cc75539af061d8b066fa582941fc40268d1052dfe17062d46d44",
+        "retrieved_at": "2026-10-20T04:06:22Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4565d5631292349f2e534fc1602425639d4874cbff64778a28f3ccd6f3086081",
+    "reviewed_at": "2026-10-20T04:07:54Z"
   }
 ]

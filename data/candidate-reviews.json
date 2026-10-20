@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:1dc99ca9417a321e74bb",
+    "url": "https://www.oppo.com",
+    "decision": "not_a_resource",
+    "reason": "Corporate homepage of the device maker OPPO, linked from a hiring notice for its Personal AI Team in a survey README; it presents phones, tablets and wearables and releases no agent software, data or paper."
   }
 ]

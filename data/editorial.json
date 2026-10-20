@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "SimGym: Traffic-Grounded Browser Agents for Offline A/B Testing in E-Commerce",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.01443",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "ui-design",
+      "memory",
+      "industry"
+    ],
+    "summary": "Runs LLM shopper agents in a live browser on control and treatment storefronts, with personas and intents drawn from production clickstreams, to predict A/B add-to-cart shifts; validated on 20 shop theme changes.",
+    "verify_terms": [
+      "Traffic-Grounded Browser Agents for Offline A/B Testing"
+    ],
+    "scope": "core",
+    "notes": "Agents read pages through an accessibility tree with element reference IDs rather than screenshots and act by clicking, typing, scrolling and navigating; 600 agents are simulated per shop. Validation compares agent add-to-cart shifts with confounder-filtered human outcomes for 20 storefront theme changes on a major e-commerce platform, and an ablation without session memory falls to near-chance alignment. Theme changes whose effects are mainly visual were filtered out, pending vision-enabled agents. Results were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.01443v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2602.01443v1",
+        "retrieved_at": "2026-10-20T04:52:13Z",
+        "sha256": "ce447649b1444c0a4c3f2b4f4f375b1de22b2062954ba747ba686f2b9dfecc73",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 1 (introduction), 2.1-2.2 (persona pipeline and agent architecture), 3 (ground-truth dataset construction), 4.1-4.2 (agent count, memory and persona ablations) and Appendix A (pipeline and agent loop).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "64e1bb57331d4ec97f2d8248b379e881cebd754d7fce1d6b47e3f19b6163e3a8",
+    "reviewed_at": "2026-10-20T04:52:13Z"
   }
 ]

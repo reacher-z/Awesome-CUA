@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:22e34e0e38938a7aec55",
+    "url": "https://x-plug.github.io/ToolCUA",
+    "decision": "alias",
+    "target_id": "arxiv:2605.12481",
+    "reason": "Project website of the indexed ToolCUA paper, with the same title and nine authors."
   }
 ]

@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.15030",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "data-generation"
+    ],
+    "summary": "WARD is a guard model that screens a web agent's HTML and screenshot at each step for prompt injection, trained on a 177K-sample dataset from 719 sites, a guard-targeted attack set and adversarial co-training.",
+    "verify_terms": [
+      "WARD: Adversarially Robust Defense of Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.15030v1"
+    ],
+    "scope": "core",
+    "notes": "The full text trains 0.8B and 2B guard models in three stages (WARD-Base, WARD-PIG, then the A3T attacker-guard co-evolution) and evaluates on WARD-Test and the out-of-distribution Popup, EIA, VPI and WASP benchmarks. It runs the guard beside Browser-Use and computer-use agents on VPI and beside WebArena agents on 802 tasks to measure false positives. The abstract links code and models at github.com/caothientri2001vn/WARD-WebAgent. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2605.15030v1",
+        "retrieved_at": "2026-10-20T04:15:37Z",
+        "sha256": "d8761b091e5604d6c6b0558266bbc4098b92ee2e4ea3169c8329926367d14502",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 3 and 4 (problem setup, WARD-Base construction, three-stage training, OOD benchmarks, deployment with Browser-Use and WebArena agents).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "895fd10bfcf67bc3b067290e75bcdca910a48e71239e6f9e69bee6eec9cd1323",
+    "reviewed_at": "2026-10-20T04:15:48Z"
   }
 ]

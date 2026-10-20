@@ -63653,5 +63653,81 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Beam",
+    "kind": "product",
+    "url": "https://www.beam.cloud",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox"
+    ],
+    "summary": "Serverless cloud for AI workloads whose persistent microVMs for agents can include a Linux desktop with a browser that the SDKs, CLI and an MCP server operate through screenshots, clicks, key presses and typing.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Beam"
+    ],
+    "aliases": [
+      "beam.cloud"
+    ],
+    "notes": "The homepage presents Beam as compute for agents: persistent, forkable microVMs that pause and resume, alongside GPU inference endpoints, task queues and sandboxes, and an MCP server whose tools create VMs, run commands and take screenshots, click and type on the desktop. The VM documentation says the default VM runs Ubuntu 24.04 with 4 CPUs and 8 GiB RAM, that `beam vm new` adds a desktop to fresh images, and that VMs do not support GPUs. The desktop documentation covers screenshots, display resizing, mouse moves, clicks, X11 key presses, pasted text, scrolling, dragging, launching GUI programs and recording the guest screen from Python, JavaScript and the CLI; the desktop browser is Chrome on x86-64 and Firefox on ARM64. The homepage footer links the beam-cloud/beta9 repository (serverless GPU inference, sandboxes and background jobs, AGPL-3.0 per the GitHub API); whether it contains the VM desktop was not checked. Pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.beam.cloud/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.beam.cloud/v2/vm/desktop.md",
+        "sha256": "9aef850e3d5015de2af5b52815f89cce13c17f6af0b6cf19b3106f6cf67355f1",
+        "retrieved_at": "2026-10-20T04:20:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://docs.beam.cloud/v2/vm/overview.md",
+        "sha256": "584ad27192b74797f64eef29466122798f0bc7d8de45b03611990cf591e1f15d",
+        "retrieved_at": "2026-10-20T04:20:59Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.pricing_url"
+        ],
+        "url": "https://www.beam.cloud/pricing",
+        "sha256": "4c851cccda4f870bb8c2332b72e5b80c2bab41d2bfe53a960044003ace18fae8",
+        "retrieved_at": "2026-10-20T04:21:00Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "02cb0b41747b984525924788e810c289ad463e29d27437ec99a6259e8f433e0c",
+    "reviewed_at": "2026-10-20T04:21:11Z"
   }
 ]

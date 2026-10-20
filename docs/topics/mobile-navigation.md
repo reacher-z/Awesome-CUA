@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (18)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
 
 ## Benchmarks
 
@@ -71,6 +71,7 @@
 | [AppAgent Pro](https://github.com/LaoKuiZe/AppAgent-Pro) | android | [2508.18689](https://arxiv.org/abs/2508.18689) (2025) | code MIT | Proactive Android agent built on AppAgent that uses GPT-4o to decide whether YouTube or Amazon content would help, operates those apps over ADB, and merges what it finds into its answer. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/LaoKuiZe/AppAgent-Pro/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |
 | [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/cooelf/Auto-GUI/HEAD/README.md) |
+| [AutoCua](https://github.com/ComputerUseAgent/AutoCua) | desktop, macos, windows, linux, web, ios | — | code MIT | Python and Rust computer-use harness whose run_agent call drives macOS, Windows or Linux desktops, the user's Chrome, iOS devices or a terminal coder, choosing numbered elements from accessibility and OCR views. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/HEAD/README.md) |
 | [AutoDroid](https://github.com/MobileLLM/AutoDroid) | android | [2308.15272](https://arxiv.org/abs/2308.15272) (2023) | — | LLM-powered Android task automation built on DroidBot, released with DroidTask, a dataset of per-app screenshots, view hierarchies, exploration records and ground-truth task files. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/MobileLLM/AutoDroid/HEAD/README.md) |
 | [AutoDroid V2](https://github.com/MobileLLM/AutoDroid-V2) | android | [2412.18116](https://arxiv.org/abs/2412.18116) (2024) | — | An Android automation implementation that builds app documentation from exploration traces and evaluates language-model-generated execution code in emulator workflows. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MobileLLM/AutoDroid-V2/HEAD/README_minimal.md) |
 | [CoCo-Agent](https://github.com/xbmxb/CoCo-Agent) | android | [2402.11941](https://arxiv.org/abs/2402.11941) (2024) | — | Research implementation combining screen and layout perception with conditional action prediction for smartphone automation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xbmxb/CoCo-Agent/HEAD/README.md) |

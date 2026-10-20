@@ -63844,5 +63844,150 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AutoCua",
+    "kind": "agent",
+    "url": "https://github.com/ComputerUseAgent/AutoCua",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux",
+      "web",
+      "ios"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "web-navigation",
+      "mobile-navigation"
+    ],
+    "summary": "Python and Rust computer-use harness whose run_agent call drives macOS, Windows or Linux desktops, the user's Chrome, iOS devices or a terminal coder, choosing numbered elements from accessibility and OCR views.",
+    "scope": "core",
+    "verify_terms": [
+      "AutoCua"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Published on PyPI as AutoCua (0.1.4 in pyproject.toml at the inspected commit); one run_agent(mode=...) entry point selects computer use, shell use, web use or iOS mobile use, and Android is listed as not available yet (AutoCua/agent_launcher.py). Desktop observation fuses the OS accessibility tree with OCR (Apple Vision on macOS, downloaded PP-OCRv6 models on Linux) and draws numbered boxes on the screenshot; the model picks a number and unseen numbers are refused (AutoCua/mac/tree/element.py, ocr.py). macOS clicks are posted at kCGHIDEventTap with an AXPress fallback (AutoCua/mac/controller/service.py); Windows uses pywinauto SendInput and, when installed separately, the Interception kernel driver for UAC prompts; Linux needs GNOME with AT-SPI and the RemoteDesktop portal. Web use is a Rust crate with a hand-written CDP client that drives the user's Chrome through the AutoCua extension or a headless Chrome. iOS runs go through WebDriverAgent (AutoCua/ios/controller/service.py). Shell use is a coder agent with read-only scout sub-agents. The README links github.com/AutoCua/AutoCua, a former name that the GitHub API resolves to this repository. MIT covers the project; WebDriverAgent, Interception, PP-OCRv6 and Electron are fetched at setup under their own terms. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT source and PyPI wheels with the Rust browser agent prebuilt; requires a user-supplied model provider key, and some platform components are installed separately.",
+      "repository_revision": "c3d73412c769a5c7283429a23bd77fb405f7c9f4",
+      "package_version": "0.1.4"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/README.md",
+        "sha256": "271abbc4186007f34ae39b6f30d69e5c1647673d85be93fedb2fde33b140bcc3",
+        "retrieved_at": "2026-10-20T08:12:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/pyproject.toml",
+        "sha256": "6a63ddc064bfd05584544774331adfd9c920306e38d80a21cfd1e51e48cb0b39",
+        "retrieved_at": "2026-10-20T08:12:13Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/AutoCua/agent_launcher.py",
+        "sha256": "e19563f4e8a186a5d409e2f5d1152427e2e8a278bacefc6adbf1d16247bf5472",
+        "retrieved_at": "2026-10-20T08:12:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/AutoCua/mac/tree/element.py",
+        "sha256": "a80f58374cfeb95b4a2cae457c2e85192329cfce3ade269948df602c0c6a6449",
+        "retrieved_at": "2026-10-20T08:12:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/AutoCua/mac/tree/ocr.py",
+        "sha256": "856550f713db825a3dbaa4232a8cb42b29e8c421937a10cd4a812fbacdbcd567",
+        "retrieved_at": "2026-10-20T08:12:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/AutoCua/mac/controller/service.py",
+        "sha256": "763eec1ff0346a81e456caa8fb9f077bb99aff8429a5f69b35ae838d978624e3",
+        "retrieved_at": "2026-10-20T08:12:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/AutoCua/ios/controller/service.py",
+        "sha256": "8c07c7635ac8e77d71d3392f314e0d0ea1f7bfc1e10e5c9572150d54398f723f",
+        "retrieved_at": "2026-10-20T08:12:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/AutoCua/web/Cargo.toml",
+        "sha256": "7440b06a78ccbcf62f5c90d5017934786586e518a68dd881e4d2718967719618",
+        "retrieved_at": "2026-10-20T08:12:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ComputerUseAgent/AutoCua/c3d73412c769a5c7283429a23bd77fb405f7c9f4/LICENSE",
+        "sha256": "2c242c26a929f2c047dc163ff4cdeeb9f0a44d881e6c2462ecbff248486cc84a",
+        "retrieved_at": "2026-10-20T08:12:15Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "271abbc4186007f34ae39b6f30d69e5c1647673d85be93fedb2fde33b140bcc3",
+    "reviewed_at": "2026-10-20T08:13:19Z"
   }
 ]

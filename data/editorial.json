@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.29955",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "SpreadsheetBench 2 is a workflow-level benchmark of 321 expert-annotated tasks on real business workbooks (generation, debugging, visualization), averaging 11.8 sheets and 593.5 modified cells per task.",
+    "verify_terms": [
+      "SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.29955v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent application-automation benchmark: in the main setting agents operate on .xlsx files through bash, a read-only view_xlsx tool and submit inside a SWE-agent-based scaffold, not through spreadsheet GUI actions. Four spreadsheet products (Kimi Sheet, GLM in Excel, Claude for Excel, ChatGPT for Excel) were run manually by human operators on a 30-task subset, and GLM-5 is compared across Claude Code, Cline and Kilo Code scaffolds. Visualization outputs are scored by a VLM against rubrics; other tasks are compared with golden workbooks. The paper names spreadsheetbench.github.io as its project page. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.29955v1",
+        "retrieved_at": "2026-10-20T04:00:49Z",
+        "sha256": "04fbdf199c182e706b4e0c691ee6756f025f6ac800fa56b4a6c6d7001f403aaa",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 2 (task categories, construction, statistics, metrics), 3.1-3.3 (settings, results, scaffold comparison) and Appendix C.2 (tools).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "603355d08daf8f3bad6c83158fcb87d7bf2401f21694ab2d71ca93648fde21ee",
+    "reviewed_at": "2026-10-20T04:11:21Z"
   }
 ]

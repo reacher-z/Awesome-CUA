@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "MIRAGE: Mobile Agents with Implicit Reasoning and Generative World Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.04627",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "world-models",
+      "efficiency"
+    ],
+    "summary": "MIRAGE trains Qwen3-VL mobile agents to reason in continuous latent slots distilled from textual thought traces, with a Q-Former head aligning latents to the next screenshot, tested on AndroidWorld and AndroidControl.",
+    "verify_terms": [
+      "Mobile Agents with Implicit Reasoning and Generative World Models"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.04627v2"
+    ],
+    "scope": "core",
+    "notes": "Training uses a sampled subset of AMEX and self-explored AndroidWorld trajectories, with a curriculum from explicit structured thoughts to latent slots, on Qwen3-VL-4B-Instruct and Qwen3-VL-8B-Instruct backbones. The v2 abstract reports that, in the 4B ablation, MIRAGE matches explicit chain-of-thought fine-tuning on AndroidWorld with a 3-5x lower decoded-token budget, and improves AndroidControl action grounding with over 75% fewer generated tokens. The paper links code at github.com/yzc0912/MIRAGE. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.04627v2",
+        "retrieved_at": "2026-10-20T04:12:59Z",
+        "sha256": "10c9944b77e9068825440ca382bfd6001ecfbb21e60723e0aada5ccc7edeb92b",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 3 (latent reasoning, Q-Former world-model objective, two-stage training) and 4.1 (backbones and benchmarks) plus Appendix B (training data). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3f9494433d3d981a4992bba0935bf240adbbed605338fd46c406e30a7aac18a8",
+    "reviewed_at": "2026-10-20T04:15:57Z"
   }
 ]

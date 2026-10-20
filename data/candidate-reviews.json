@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:bc051a38f66a7bf63bc4",
+    "url": "https://vyokky.github.io/LLM-Brained-GUI-Agents-Survey",
+    "decision": "not_a_resource",
+    "reason": "Searchable paper-list page that accompanies the survey arxiv:2411.18279: a filterable table of the survey's collected papers by category, platform and date, served from the index.html and papers.js of github.com/vyokky/LLM-Brained-GUI-Agents-Survey. The survey is cited through its arXiv record."
   }
 ]

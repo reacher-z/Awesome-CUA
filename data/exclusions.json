@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2605.06727",
+    "name": "Medical Imaging Classification with Cold-Atom Reservoir Computing using Auto-Encoders and Surrogate-Driven Training",
+    "url": "https://arxiv.org/abs/2605.06727",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract builds a hybrid quantum-classical pipeline that encodes guided auto-encoder latents into a neutral-atom Rydberg reservoir, trained through a differentiable surrogate, to classify polyps in medical images. This quantum reservoir-computing work involves no GUI, browser or device-operating agent, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:08:59Z",
+    "metadata_fingerprint": "6d55afc81fcda19333e7304207f0847a32b267e618fed2191b230ecdb37326a3",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "27c33576ed43c7bc63d4b290f6558553bd1d3aa112a7358138f4045e1bc14918",
+      "retrieved_at": "2026-10-16T06:36:39Z"
+    }
   }
 ]

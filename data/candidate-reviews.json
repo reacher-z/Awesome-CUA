@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "github:supernalintelligence/awesome-general-agents-leaderboard",
+    "url": "https://github.com/supernalintelligence/Awesome-General-Agents-Leaderboard",
+    "decision": "out_of_scope",
+    "reason": "A link list of 26 leaderboards for language models and general AI agents, such as GAIA, LMSYS Chatbot Arena, HELM and HAL, with no entry for GUI, web or mobile agents. It is not one of the catalog's discovery sources and releases no software, data or survey of its own, so it does not fit a resource kind.",
+    "reviewed_at": "2026-10-20T05:07:25Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/supernalintelligence/Awesome-General-Agents-Leaderboard/HEAD/README.md",
+      "sha256": "aa0b279f106599ce86bdbc4136b17783fdaf9af72e92efa70ff626c3fe1bd82a",
+      "retrieved_at": "2026-10-18T12:25:11Z"
+    }
   }
 ]

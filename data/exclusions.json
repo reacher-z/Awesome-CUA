@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2510.17017",
+    "name": "SafeSearch: Do Not Trade Safety for Utility in LLM Search Agents",
+    "url": "https://arxiv.org/abs/2510.17017",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract studies the safety of LLM search agents that send queries to a retriever and synthesize the results, and proposes SafeSearch, multi-objective reinforcement learning with a query-level safety reward. Experiments use a local BM25 retriever over a Wikipedia-2018 dump, three red-teaming sets (RRB, StrongREJECT, WildTeaming) and TriviaQA, HotpotQA and Bamboogle. The agent only issues text search queries and never operates a browser, computer or phone, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T07:38:17Z",
+    "metadata_fingerprint": "dd5c5c2260314eae31ca5dde30ac1db247ef0b96d44009b35e0b9b300802ad45",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2510.10587%2C2510.10909%2C2510.11144%2C2510.12798%2C2510.14388%2C2510.14513%2C2510.14969%2C2510.16156%2C2510.17017%2C2510.17800%2C2510.19207%2C2510.19247%2C2510.19386%2C2510.19864%2C2510.20333%2C2510.21652%2C2510.22443%2C2510.22936%2C2510.23730%2C2510.23883%2C2510.24702%2C2510.25726%2C2510.26328%2C2510.27135%2C2510.27410%2C2511.00153%2C2511.02650%2C2511.02687%2C2511.03690%2C2511.04220%2C2511.05797%2C2511.06251%2C2511.08319%2C2511.08487%2C2511.10110%2C2511.13725%2C2511.14210%2C2511.14945%2C2511.15705%2C2511.16842%2C2511.17649%2C2511.17775%2C2511.19496%2C2511.19516%2C2511.20636%2C2511.21990%2C2511.22074%2C2512.04302%2C2512.04529%2C2512.06726&max_results=50",
+      "sha256": "240e3d6528900f4a3e87f12f5e55cb7654a4d25d4478e291e9bbf725e7013118",
+      "retrieved_at": "2026-10-17T07:57:59Z"
+    }
   }
 ]

@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "WebAggregator: Enhancing Compositional Reasoning Capabilities of Deep Research Agent Foundation Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.14438",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Proposes WebAggregator, which explores live websites with search, click, input and scroll tools to synthesize about 10K compositional QA pairs for fine-tuning deep research agents, plus a 159-task test set.",
+    "verify_terms": [
+      "WebAggregator: Enhancing Compositional Reasoning"
+    ],
+    "scope": "adjacent",
+    "notes": "The explorer is a code-acting ReAct agent that extends the SmolAgents open deep research agent with DOM parsing. Its action space covers Search, Visit, StrFind, Input, Click, Scroll, Goback, FileRead, Screenshot and ImageCaption, and page actions return web text and DOM rather than a screenshot. Exploration starts from over 160,000 anchor URLs. Training trajectories in this action-code format are sampled from a GPT-4.1 agent with rejection sampling, and WebAggregator models fine-tuned from Qwen2.5 and Qwen3 (8B and 32B) are evaluated on the GAIA text subset, WebWalkerQA, XBench and the human-annotated WebAggregatorQA test set. Adjacent: the subject is deep research question answering, with page interaction as one tool among several. Code is linked at github.com/Tencent/WebAggregator and is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-6, Tables 1-3 and 6, Appendix A (agent details) and Appendix B (data construction and test-set annotation).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.14438v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.14438v2",
+        "retrieved_at": "2026-10-20T07:42:59Z",
+        "sha256": "020555122cdbc2282c021d739bcf608de2cc7ed80a03317953a83eea6ca1317d",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "04ede2339b81a1fbf4152740e7bb62c25812765056972f18be4b4f1bbfc0a1d5",
+    "reviewed_at": "2026-10-20T07:43:29Z"
   }
 ]

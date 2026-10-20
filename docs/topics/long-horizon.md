@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-101 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+102 source-reviewed resources tagged `long-horizon`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (4)](#frameworks) · [Papers (90)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Agents (1)](#agents) · [Frameworks (4)](#frameworks) · [Papers (90)](#papers)
 
 ## Benchmarks
 
@@ -31,6 +31,14 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. | [✓ 2026‑10‑17](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md) |
+
+## Agents
+
+All entries in this section: android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [LongHorizonUI](https://github.com/kane2kang/LongHorizonUI) | — | — | Code for the LongHorizonUI Android agent: OCR plus OmniParser icon detection yields numbered element boxes for an LLM, and failed taps fall back from element index to relative and absolute points with rollback. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kane2kang/LongHorizonUI/HEAD/README.md) |
 
 ## Frameworks
 

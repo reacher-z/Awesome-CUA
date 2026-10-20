@@ -63844,5 +63844,116 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Explorer",
+    "kind": "framework",
+    "url": "https://github.com/OSU-NLP-Group/Explorer",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "web-navigation",
+      "imitation-learning"
+    ],
+    "scope": "core",
+    "summary": "Official Explorer code: a Playwright pipeline where GPT-4o proposer, refiner, summarizer and verifier agents explore live sites over set-of-mark screenshots to synthesize trajectories, with Qwen2-VL training and evals.",
+    "verify_terms": [
+      "Explorer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OSU-NLP-Group/Explorer/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2502.11357"
+    ],
+    "notes": "Official code release for arXiv 2502.11357, published at ACL 2025 Findings; the README links the ACL Anthology edition and the project page links the arXiv PDF. traj_gen/main.py starts from one URL (default amazon.com) and runs for at most --max-steps (default 5): a CAPTCHA-detection agent checks the first screenshot, a task-proposal agent acts at step 0 and a task-refiner agent afterwards, each choosing a grounded action from the parsed page elements and a set-of-mark screenshot; a summarizer then infers the user intent from the action history and screenshots, and a trajectory verifier judges the result. Agent calls go to the OpenAI chat completions API (gpt-4o by default, or gpt-4o-mini), and traj_gen/browser_env.py launches a headful Playwright Chromium (the README runs it under Xvfb). train/train_qwen2vl.py fine-tunes Qwen2-VL (the README's Multimodal-Mind2Web command uses Qwen/Qwen2-VL-7B-Instruct); evals/ holds Mind2Web-Live, Multimodal-Mind2Web (with a separately downloaded DeBERTa candidate-score file), in-domain and MiniWoB++ evaluation code. The README links no synthesized trajectory dataset or trained checkpoints. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public trajectory-synthesis, training and evaluation source; the README links no synthesized dataset or model checkpoints.",
+      "repository_revision": "209bc48fb8a597d5bb38458945c32c5e5c79410c",
+      "repository_tree_sha": "099204ffcff86f1d9fea9fde2a3c6f8f2f0b5ed9"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/OSU-NLP-Group/Explorer/git/trees/209bc48fb8a597d5bb38458945c32c5e5c79410c?recursive=1",
+        "sha256": "13e916340c17354c440c8d8c57fcf0bb82a11f7643bcdffca2fc5f299d9f7f37",
+        "retrieved_at": "2026-10-20T08:39:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/Explorer/209bc48fb8a597d5bb38458945c32c5e5c79410c/LICENSE",
+        "sha256": "93b43d692b033b76129504448695bfe76ef22d18b11e51352bfab4b5622e5aaa",
+        "retrieved_at": "2026-10-20T08:39:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/Explorer/209bc48fb8a597d5bb38458945c32c5e5c79410c/traj_gen/main.py",
+        "sha256": "0082fee52fe2cde11d95055b0e3560243f348758cb4f3a12fff93b5623205ec1",
+        "retrieved_at": "2026-10-20T08:39:25Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/Explorer/209bc48fb8a597d5bb38458945c32c5e5c79410c/traj_gen/browser_env.py",
+        "sha256": "ce149de6aac3302096dff53f28171eef6dd608e0ca51977dd46f42bc5178fee6",
+        "retrieved_at": "2026-10-20T08:39:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OSU-NLP-Group/Explorer/209bc48fb8a597d5bb38458945c32c5e5c79410c/traj_gen/README.md",
+        "sha256": "9de3cde3c74925e6001aa4435754410c647484b32575e83dc580cf744f207b2e",
+        "retrieved_at": "2026-10-20T08:39:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://osu-nlp-group.github.io/Explorer/",
+        "sha256": "f7ce492ddf30cb69b60a2f4039122d6565ee605db03a360eda338292462c8763",
+        "retrieved_at": "2026-10-20T08:39:49Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cbf9c6ea2df0c45ef269df9236638b031ffc7b6c9178d16db550c5d2466e0eec",
+    "reviewed_at": "2026-10-20T08:42:00Z"
   }
 ]

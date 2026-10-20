@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f3fa4bc0e5def4830999",
+    "url": "https://www.anthropic.com/news/developing-computer-use",
+    "decision": "alias",
+    "target_id": "url:57f17b7d0c18b2d7c8bf",
+    "reason": "Anthropic's 22 October 2024 companion post to the computer-use launch, describing how Claude was trained to act from screenshots by counting pixels to move the cursor, its OSWorld result and its safety measures; it covers the indexed Claude Computer Use capability."
   }
 ]

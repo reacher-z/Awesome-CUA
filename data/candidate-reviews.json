@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d398d6e5d0c72429078d",
+    "url": "https://workflow-gym.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2606.11042",
+    "reason": "Project website for the indexed Workflow-GYM benchmark paper; it carries the same title and links arXiv 2606.11042 as its paper, with its dataset marked as coming soon."
   }
 ]

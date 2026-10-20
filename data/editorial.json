@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.29341",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "evaluation",
+      "long-horizon"
+    ],
+    "summary": "WorldMemArena scores multimodal agent memory at the writing, maintenance, retrieval and use stages on multi-session tasks with replayed GUI and embodied trajectories, comparing long-context, RAG and harness agents.",
+    "verify_terms": [
+      "WorldMemArena: Evaluating Multimodal"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.29341v2"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent multimodal memory benchmark. The abstract reports 400 tasks, while the v2 full text (Section 3) reports 461 multi-session samples with 24,258 QA pairs. Its Agentic Execution regime replays trajectories from EmbodiedBench, VisualAgentBench and the Agent-Arena GUI task collection, covering 6 GUI and 4 embodied subcategories; evaluated systems answer memory questions over these traces rather than operating an interface live. The paper names github.com/UCSB-AI/WorldMemArena and a Hugging Face dataset, which are not curated here. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.29341v2",
+        "sha256": "deaf41cf91a97f9ef35739db3c3d8e474e70726ac5501673073fb56f075accea",
+        "retrieved_at": "2026-10-20T04:10:16Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "62164c05760b00f3a0608299793a67b88ef139abf9c9c90b2b7580593f5a5a08",
+    "reviewed_at": "2026-10-20T04:10:18Z"
   }
 ]

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:efef048cf44fdc229c42",
+    "url": "https://zju-real.github.io/ClawGUI-Page",
+    "decision": "alias",
+    "target_id": "github:zju-real/clawgui",
+    "reason": "Project website for the indexed ClawGUI framework repository; the ClawGUI README links it as the Project Page, and it now redirects to zjureal.com/ClawGUI-Page."
   }
 ]

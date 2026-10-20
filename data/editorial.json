@@ -63844,5 +63844,172 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Webagent (webagent.cloud)",
+    "kind": "agent",
+    "url": "https://github.com/webagent-cloud/webagent",
+    "aliases": [
+      "webagent"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Self-hostable browser-agent server that runs Browser Use or Notte agents, turns a run's recorded actions into a parameterized workflow, and replays it with Playwright, falling back to the agent when a step fails.",
+    "verify_terms": [
+      "Webagent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/webagent-cloud/webagent/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:browser-use/browser-use",
+        "evidence_url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/engine_providers/browseruse_service.py"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:nottelabs/notte",
+        "evidence_url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/engine_providers/notte_service.py"
+      }
+    ],
+    "notes": "Open-source code of the webagent.cloud hosted service, published by webagent-cloud. A FastAPI server (server.py, webagent/api.py) with a bundled React UI accepts a prompt and runs it with the engine set by ENGINE_PROVIDER: Browser Use by default, or Notte, whose agent is fixed to gemini-2.5-flash with at most 30 steps. The browser comes from BROWSER_PROVIDER: a local Playwright Chromium over CDP, Browserbase or Steel; at the reviewed commit the Steel provider's create_session takes a context argument that the caller does not pass. Models are reached through Browser Use's chat clients for OpenAI, DeepSeek, Anthropic, Google and Groq; other provider values fall back to the OpenAI client. After a run, workflow_builder_service.py asks an LLM to extract parameters from the prompt and template the recorded actions with their element XPaths; workflow_replay_service.py replays those steps with Playwright (navigation, search, XPath clicks and typing, scrolling, key presses, uploads, dropdowns) without a model and, when an action fails, hands that step to the AI engine for up to three attempts. Tasks, runs and results are kept in a local SQLite database; results can be text or JSON validated against a supplied JSON Schema, and a webhook can be called on completion. The README's n8n, Zapier and Make integrations and Stagehand engine are not in the tree. Root LICENSE is MIT; not a fork, not archived; no release. Code was read, not run.",
+    "details": {
+      "availability": "Public server, workflow replay code, React UI and Dockerfile; no release or tag.",
+      "repository_revision": "21969388bbb70a0ebf44aee0a8a913ccc54d294e",
+      "repository_tree_sha": "83f267d148ba5eb8061d32bb2e2c77bae8043328"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/webagent-cloud/webagent/git/trees/21969388bbb70a0ebf44aee0a8a913ccc54d294e?recursive=1",
+        "sha256": "196b9b7c64b450b10263e5dcb8458f14d7cbd62648894018ab66dc6d455576e1",
+        "retrieved_at": "2026-10-20T04:43:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/LICENSE",
+        "sha256": "8149145076020a5c142fb8fd03463a2da2cadce98aa703ac6746f40cb5ee8f6b",
+        "retrieved_at": "2026-10-20T04:43:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/agent_service.py",
+        "sha256": "91e52a56360d5fd5657ba8c598afb08c86ca26b45a354b2147d0c37d880dc7e3",
+        "retrieved_at": "2026-10-20T04:43:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/engine_providers/browseruse_service.py",
+        "sha256": "6b1ba814c102f943348a7214238d299d59dfad6077f6300cb005ddc43c44646f",
+        "retrieved_at": "2026-10-20T04:43:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/engine_providers/notte_service.py",
+        "sha256": "d8b16ba84530eb6caa72cc5409bbe701904a89e21591eb67152c8f8217197c20",
+        "retrieved_at": "2026-10-20T04:43:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/workflow_builder_service.py",
+        "sha256": "0f3e65b0312156d63c90fb78b7b90516b7d54788bf3fb5c71d08e91c1d62ad38",
+        "retrieved_at": "2026-10-20T04:43:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/workflow_replay_service.py",
+        "sha256": "3d784549d7dd0d92a5c0ea27a0a43d36e311baf5a1bcf59a44707726453a4f25",
+        "retrieved_at": "2026-10-20T04:43:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/workflow_ai_fallback_service.py",
+        "sha256": "b9913e4a935e544c8599b16c0dcd004acec275fded435e743f8e8723e14aeded",
+        "retrieved_at": "2026-10-20T04:43:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/browser_providers/steel_browser_service.py",
+        "sha256": "2740f416cbe5878ade75db3f0fb8bce6763df335e1b4f26c70005599f6724785",
+        "retrieved_at": "2026-10-20T04:43:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/webagent-cloud/webagent/21969388bbb70a0ebf44aee0a8a913ccc54d294e/webagent/llm_service.py",
+        "sha256": "9964b0d3beee28d4deb8ab9ee469768def10b2350e517e6b61e14c52874c0cb1",
+        "retrieved_at": "2026-10-20T04:44:10Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4262e0f23c1fa2bdfe887a9ad9679cbd398c1e031c3760678d863242a3b1f276",
+    "reviewed_at": "2026-10-20T04:44:28Z"
   }
 ]

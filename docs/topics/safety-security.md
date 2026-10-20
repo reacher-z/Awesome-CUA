@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -187,6 +187,7 @@ All entries in this section: web.
 | 2025‑09‑09 | [VeriOS: Query-Driven Proactive Human-Agent-GUI Interaction for Trustworthy OS Agents](https://arxiv.org/abs/2509.07553) | unspecified | Introduces VeriOS-Agent, which learns when to execute GUI actions autonomously and when to query a user under untrustworthy conditions. Its staged training combines supervised learning and group-relative policy optimization. |
 | 2025‑09‑01 | [Throttling Web Agents Using Reasoning Gates](https://arxiv.org/abs/2509.01619) | web | Introduces reasoning gates that require agents to solve generated, verifiable puzzles before receiving access to resources. The throttling approach is deployed on a custom website and MCP servers and evaluated with web agents. |
 | 2025‑08‑27 | [Mind the Third Eye! Benchmarking Privacy Awareness in MLLM-powered Smartphone Agents](https://arxiv.org/abs/2508.19493) | unspecified | Introduces SAPA-Bench with 7,138 smartphone scenarios to evaluate whether MLLM-powered mobile agents detect and protect sensitive personal information on screen. |
+| 2025‑08‑26 | [Reliable Weak-to-Strong Monitoring of LLM Agents](https://arxiv.org/abs/2508.19461) | desktop, linux | Red-teams LLM monitors of covert agent sabotage on SHADE-Arena and CUA-SHADE-Arena (15 TheAgentCompany task pairs), varying agent and monitor awareness, and proposes a hybrid monitor scaffold. |
 | 2025‑08‑18 | [A Functionality-Grounded Benchmark for Evaluating Web Agents in E-commerce Domains](https://arxiv.org/abs/2508.15832) | web | Amazon-Bench generates functionality-specific web tasks from page content and interactive controls, covering operations beyond product search. Its evaluator checks task completion and unintended changes to account state, such as address or purchase settings. |
 | 2025‑08‑12 | [MVISU-Bench: Benchmarking Mobile Agents for Real-World Tasks by Multi-App, Vague, Interactive, Single-App and Unethical Instructions](https://arxiv.org/abs/2508.09057) | unspecified | MVISU-Bench evaluates bilingual mobile tasks involving cross-app work, vague requests, user interaction and unethical instructions alongside ordinary single-app tasks. Its Aider prompting module is designed to clarify intent and mitigate risky execution within agent workflows. |
 | 2025‑07‑30 | [Magentic-UI: Towards Human-in-the-loop Agentic Systems](https://arxiv.org/abs/2507.22358) | web | Magentic-UI combines browser interaction, code execution, file operations, and MCP tools in an interface for human-agent collaboration. It studies collaborative planning and task execution, action guards, and persistent memory through benchmark tasks, simulated users, user studies, and safety assessments. |

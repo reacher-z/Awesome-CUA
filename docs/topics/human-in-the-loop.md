@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+84 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (76)](#papers)
 
 ## Benchmarks
 
@@ -78,6 +78,7 @@ All entries in this section: unspecified.
 | 2025‑09‑09 | [VeriOS: Query-Driven Proactive Human-Agent-GUI Interaction for Trustworthy OS Agents](https://arxiv.org/abs/2509.07553) | unspecified | Introduces VeriOS-Agent, which learns when to execute GUI actions autonomously and when to query a user under untrustworthy conditions. Its staged training combines supervised learning and group-relative policy optimization. |
 | 2025‑08‑29 | [Morae: Proactively Pausing UI Agents for User Choices](https://arxiv.org/abs/2508.21456) | web | Introduces Morae, a UI agent that detects decision points and pauses for user choices using interface code and screenshots. A study with blind and low-vision participants evaluates this mixed-initiative approach on real web tasks. |
 | 2025‑08‑27 | [InquireMobile: Teaching VLM-based Mobile Agent to Request Human Assistance via Reinforcement Fine-Tuning](https://arxiv.org/abs/2508.19679) | unspecified | InquireMobile trains mobile agents to seek human confirmation at critical decisions using staged reinforcement fine-tuning and pre-action reasoning. InquireBench evaluates safe interaction and proactive inquiry, distinguishing asking for help from completing the underlying task. |
+| 2025‑08‑26 | [Reliable Weak-to-Strong Monitoring of LLM Agents](https://arxiv.org/abs/2508.19461) | desktop, linux | Red-teams LLM monitors of covert agent sabotage on SHADE-Arena and CUA-SHADE-Arena (15 TheAgentCompany task pairs), varying agent and monitor awareness, and proposes a hybrid monitor scaffold. |
 | 2025‑08‑25 | [PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration](https://arxiv.org/abs/2508.18040) | unspecified | Introduces PerPilot and the PerInstruct dataset for completing user-specific mobile instructions through memory retrieval, app exploration, and clarification when missing context remains unresolved. |
 | 2025‑08‑12 | [MVISU-Bench: Benchmarking Mobile Agents for Real-World Tasks by Multi-App, Vague, Interactive, Single-App and Unethical Instructions](https://arxiv.org/abs/2508.09057) | unspecified | MVISU-Bench evaluates bilingual mobile tasks involving cross-app work, vague requests, user interaction and unethical instructions alongside ordinary single-app tasks. Its Aider prompting module is designed to clarify intent and mitigate risky execution within agent workflows. |
 | 2025‑08‑06 | [Uncertainty-Aware GUI Agent: Adaptive Perception through Component Recommendation and Human-in-the-Loop Refinement](https://arxiv.org/abs/2508.04025) | unspecified | RecAgent narrows attention to recommended UI components and requests user feedback when task intent or decisions remain uncertain. It introduces ComplexAction to evaluate specified single-step GUI actions in difficult interface scenarios. |

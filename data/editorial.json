@@ -63844,5 +63844,96 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "UiPath ScreenPlay",
+    "kind": "product",
+    "url": "https://www.uipath.com/platform/agentic-automation/rpa/ui-automation/screenplay",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "planning",
+      "robustness"
+    ],
+    "summary": "UiPath Studio activity whose Screen Agent turns natural-language task descriptions into self-driving UI automations on Windows, Linux and macOS, using a planner, a pixel grounder, DOM extraction and selectable LLMs.",
+    "scope": "core",
+    "verify_terms": [
+      "ScreenPlay"
+    ],
+    "aliases": [
+      "UiPath Screen Agent"
+    ],
+    "notes": "UiPath describes Screen Agent as the agentic framework behind the ScreenPlay activity in UiPath Studio and Studio Web: a planner turns intent into high-level action sequences, and a targeter that combines a grounder with UiPath's AI Computer Vision resolves pixel coordinates before acting; ScreenPlay adds AI-based DOM extraction. The installation guide offers out-of-the-box Screen Agent variants with Gemini 2.5 Flash, GPT-4.1, GPT-4.1 mini, GPT-5 and GPT-5 mini, as well as OpenAI Operator and Anthropic computer use, or bring-your-own-model connections to Azure OpenAI, OpenAI, Amazon Bedrock, Google Vertex or an OpenAI V1-compatible provider. The product page says credentials are managed through UiPath Orchestrator and that ScreenPlay resists prompt-injection attacks. UiPath's January 2026 press release and blog report a 67.1% OSWorld-Verified score for the Claude Opus 4.5 variant, then ranked first, and the blog says UiPath also evaluates Screen Agent on its UI-CUBE benchmark; these are publisher statements and were not reproduced. Licensing, pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://www.uipath.com/blog/product-and-updates/uipath-screen-agent-number-one-osworld-ranking",
+        "sha256": "af514392dc9b4aa5d29c438206c5227a7454b2076af1f4a9d19a8eda495b1e77",
+        "retrieved_at": "2026-10-20T04:59:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide-screenplay/installing-screenplay",
+        "sha256": "883cd2bd4d049fedf6dc38283511c9ad79e45d0ca108f434402e2a98b10d60e4",
+        "retrieved_at": "2026-10-20T04:59:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://docs.uipath.com/agents/automation-cloud/latest/user-guide-screenplay/overview",
+        "sha256": "d25a41205d94e9a6d8e169b052649662ab1ffbcde3f2136bd108eb712af0d496",
+        "retrieved_at": "2026-10-20T04:59:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://www.uipath.com/newsroom/uipath-screenagent-osworld-benchmark-top-ranking",
+        "sha256": "4250b004deae25f9132c12026d584b5c4142016582463cbf4b470c3ce0162e21",
+        "retrieved_at": "2026-10-20T04:58:50Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cbe6062bc15be0d536fcf8940e69779bf59e5f9028f75d0bb0d78e74bb2f8db2",
+    "reviewed_at": "2026-10-20T05:00:46Z"
   }
 ]

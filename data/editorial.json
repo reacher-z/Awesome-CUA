@@ -63844,5 +63844,172 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Hanzi Browse",
+    "kind": "agent",
+    "url": "https://github.com/hanzili/hanzi-browse",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "memory"
+    ],
+    "summary": "Chrome extension and MCP server that hand browser tasks from coding agents or apps to a sub-agent in the user's signed-in Chrome, which reads pages and acts through the debugger with per-site hint playbooks.",
+    "scope": "core",
+    "verify_terms": [
+      "Hanzi Browse"
+    ],
+    "aliases": [
+      "hanzi-browse"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The MCP server (npm hanzi-browse 2.4.0 in server/package.json) exposes browser_start, browser_message, browser_status, browser_stop and browser_screenshot. In the default bring-your-own-model mode it relays a task to the extension, whose service worker runs the agent loop with the user's model provider (src/background/service-worker.js); with a Hanzi API key the task goes to the managed service, where a server loop (server/src/agent/loop.ts) calls the hosted model, Gemini according to the README, and sends each tool call to the paired extension. Pages are read through an accessibility-style tree from a content script and CDP screenshots; clicks and keystrokes are dispatched with chrome.debugger Input events (src/background/modules/cdp-helper.js), with human-like pointer paths on domains marked anti-bot. server/src/agent/domain-skills.json holds 24 domain entries of site hints that load by URL. The managed mode is a paid hosted service with a free monthly allowance. Licensed PolyForm Noncommercial 1.0.0. Code was read, not run.",
+    "details": {
+      "availability": "Public source under PolyForm Noncommercial 1.0.0, an npm MCP package and a Chrome Web Store extension; tasks use the user's own model key or the paid managed API.",
+      "repository_revision": "ce6e10dc0e09afdf88b481afc5e8339bee745918",
+      "package_version": "2.4.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/README.md",
+        "sha256": "0a47e1018053c4364fe78c6605c9a22cb6b7ffab5726698c04e5217e8152d6d2",
+        "retrieved_at": "2026-10-20T08:08:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/server/src/index.ts",
+        "sha256": "3001770b4c5fe6996809ec551354ef9707fd3a2253e8a9dbe5a4abf2de156b75",
+        "retrieved_at": "2026-10-20T08:08:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/src/background/service-worker.js",
+        "sha256": "ff8eb357e18e063864710b19d7d472f3248cdc21dddc93ec25cf103747b602b5",
+        "retrieved_at": "2026-10-20T08:08:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/server/src/agent/loop.ts",
+        "sha256": "13ed6222742d17c8134149140a1f9e6b47b6fe1cfaea758e4dd9846a44379294",
+        "retrieved_at": "2026-10-20T08:08:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/src/content/accessibility-tree.js",
+        "sha256": "5cba4e51ff9400b00bc7d6a1bcc4c7df962b699218f349bb5d493983eeae2bda",
+        "retrieved_at": "2026-10-20T08:08:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/src/background/modules/cdp-helper.js",
+        "sha256": "26698d3ef3a45c105d10ae289790d37aa142b4bb9b27476b7a2970803995c0a4",
+        "retrieved_at": "2026-10-20T08:08:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/src/background/tool-handlers/computer-core.js",
+        "sha256": "957c79280f04932f1262f8fd47434894eb634f483cf6dcca64d1842d3010a064",
+        "retrieved_at": "2026-10-20T08:08:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/server/src/agent/domain-skills.json",
+        "sha256": "8367eaa733cbf60ff5d08fb069f820e8257097fdc28283d2a2cf8d4ba9bad1b2",
+        "retrieved_at": "2026-10-20T08:08:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/server/package.json",
+        "sha256": "43c8378798b70fa216692af6689491757cbee24e16b4525e432dc0f4d988562a",
+        "retrieved_at": "2026-10-20T08:08:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/LICENSE",
+        "sha256": "fd819d3be572728dfd07677815b536852fadd631fcd0f4f1789663ceeab549dd",
+        "retrieved_at": "2026-10-20T08:08:17Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "PolyForm-Noncommercial-1.0.0",
+          "url": "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/LICENSE",
+          "retrieved_at": "2026-10-20T08:08:17Z",
+          "basis": "PolyForm Noncommercial License 1.0.0, read from the LICENSE file at the inspected commit: source-available for noncommercial purposes only; not an OSI license. It covers the repository's code; the hosted managed service, Chrome Web Store build and model providers have their own terms."
+        },
+        "reason": "PolyForm Noncommercial License 1.0.0, read from the LICENSE file at the inspected commit: source-available for noncommercial purposes only; not an OSI license. It covers the repository's code; the hosted managed service, Chrome Web Store build and model providers have their own terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/hanzili/hanzi-browse/ce6e10dc0e09afdf88b481afc5e8339bee745918/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0a47e1018053c4364fe78c6605c9a22cb6b7ffab5726698c04e5217e8152d6d2",
+    "reviewed_at": "2026-10-20T08:09:27Z"
   }
 ]

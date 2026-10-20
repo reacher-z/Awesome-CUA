@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2505.10468",
+    "name": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+    "url": "https://arxiv.org/abs/2505.10468",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The review contrasts AI Agents (single LLM-driven, tool-augmented task automation) with Agentic AI (multi-agent collaboration, persistent memory, orchestrated autonomy) through a conceptual taxonomy, application mapping (customer support, scheduling, research assistants, robotics coordination, medical decision support) and challenges. Its GUI and web content is one introductory paragraph on Anthropic's Computer Use and three Table 10 rows (OpenAI Operator, Amazon Nova Act, Manus); no section reviews computer, GUI, browser or mobile agents, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T08:20:28Z",
+    "metadata_fingerprint": "6604aca19e34e1379ac75203bf965b4e5b7bee62158905b62d1f5710a4ab816f",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2504.03206%2C2504.03601%2C2504.06821%2C2504.09723%2C2504.11301%2C2504.11543%2C2504.12609%2C2504.14233%2C2504.14348%2C2504.14603%2C2504.16073%2C2504.16419%2C2504.17892%2C2504.18580%2C2504.20965%2C2505.00019%2C2505.00693%2C2505.01578%2C2505.02094%2C2505.03570%2C2505.03574%2C2505.05026%2C2505.05849%2C2505.06507%2C2505.07003%2C2505.07473%2C2505.10468%2C2505.10887%2C2505.12053%2C2505.12490%2C2505.12728%2C2505.13291%2C2505.14030%2C2505.14454%2C2505.14646%2C2505.15801%2C2505.15816%2C2505.17020%2C2505.18746%2C2505.19095%2C2505.19713%2C2505.20023%2C2505.20732%2C2505.20795%2C2505.21055%2C2505.22304%2C2505.22429%2C2505.23450%2C2505.23559%2C2506.00641&max_results=50",
+      "sha256": "27144160e8981bb9f36b60c391689774913ff3f026eeeffc2923154c404a6529",
+      "retrieved_at": "2026-10-17T07:57:47Z"
+    }
   }
 ]

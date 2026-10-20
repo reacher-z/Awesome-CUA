@@ -63844,5 +63844,118 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Gemini Browser Agent",
+    "kind": "agent",
+    "url": "https://github.com/pmbstyle/gemini-browser-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Chrome extension and Python WebSocket bridge that run Gemini 2.5 Computer Use on the user's active tab, sending tab screenshots to the model and executing its clicks, typing and scrolling via content scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "Gemini Browser Agent"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The README calls the project a research experiment and scaffolding. websocket_agent.py is a local WebSocket server that calls gemini-2.5-computer-use-preview-10-2025 through google-genai with the browser computer-use environment; widget/ is an unpacked Manifest V3 extension with a side panel where the user connects to the bridge and enters a goal. Each turn the extension captures the visible tab with chrome.tabs.captureVisibleTab, the bridge converts the model's 0-1000 normalized coordinates to viewport pixels, and the extension carries out clicks, typing, key presses, hovering, scrolling and navigation by injecting functions (chrome.scripting.executeScript) that dispatch synthetic DOM events at document.elementFromPoint. Drag and drop is approximated with mousedown and mouseup events, unhandled model actions return an unimplemented warning, and the side panel sets a step limit (default 10). It needs a Gemini API key and acts in the user's own browser without a sandbox; the README points to the author's separate gemini-computer-use repository for sandboxed runs. The repository has no license file at the inspected commit. Code was read, not run.",
+    "details": {
+      "availability": "Public Python bridge and unpacked Chrome extension source without a license file; it calls Google's hosted Gemini 2.5 Computer Use preview model with the user's own API key and bundles no model.",
+      "repository_revision": "540b6fd7f1bfcfc351b2f7139ea4404cb089472f"
+    },
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "url:879d4e3e75e83582bde6",
+        "evidence_url": "https://raw.githubusercontent.com/pmbstyle/gemini-browser-agent/540b6fd7f1bfcfc351b2f7139ea4404cb089472f/websocket_agent.py"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The inspected recursive tree has no license file and the README names no license; source terms remain unknown.",
+        "evidence_urls": [
+          "https://api.github.com/repos/pmbstyle/gemini-browser-agent/git/trees/540b6fd7f1bfcfc351b2f7139ea4404cb089472f?recursive=1"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/gemini-browser-agent/540b6fd7f1bfcfc351b2f7139ea4404cb089472f/README.md",
+        "sha256": "e7e20064cbb8a84025f04dddf5a6e849fe05405ed2e779a1fc04cdb3493757bd",
+        "retrieved_at": "2026-10-20T08:39:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/gemini-browser-agent/540b6fd7f1bfcfc351b2f7139ea4404cb089472f/websocket_agent.py",
+        "sha256": "a9fdbe483e2717f92dd902577247ef6d5478b55e0d532710fca422ed2887782a",
+        "retrieved_at": "2026-10-20T08:40:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/gemini-browser-agent/540b6fd7f1bfcfc351b2f7139ea4404cb089472f/widget/actions/browserActions.js",
+        "sha256": "2fd9d29f3b2c1c80ca2188e3b10a5682490d11884a57c938f8f56cd809cde394",
+        "retrieved_at": "2026-10-20T08:40:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/pmbstyle/gemini-browser-agent/540b6fd7f1bfcfc351b2f7139ea4404cb089472f/widget/manifest.json",
+        "sha256": "7bab746e7cf307067432b25d28ef4dd85c6682b2f88c156bde2208d7409c9ccc",
+        "retrieved_at": "2026-10-20T08:40:33Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/pmbstyle/gemini-browser-agent/git/trees/540b6fd7f1bfcfc351b2f7139ea4404cb089472f?recursive=1",
+        "sha256": "84df487918fcec7f8565aed76ef0c7c4da0e4ee98d3c578e13a7aecebc365d5a",
+        "retrieved_at": "2026-10-20T08:41:08Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e7e20064cbb8a84025f04dddf5a6e849fe05405ed2e779a1fc04cdb3493757bd",
+    "reviewed_at": "2026-10-20T08:42:08Z"
   }
 ]

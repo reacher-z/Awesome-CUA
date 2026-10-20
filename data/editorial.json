@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "IntentCUA: Learning Intent-level Representations for Skill Abstraction and Multi-Agent Planning in Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.17049",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "long-horizon",
+      "cross-app"
+    ],
+    "summary": "IntentCUA coordinates a Planner, Plan-Optimizer and Critic over shared plan memory that abstracts interaction traces into intent-level skills, reaching 74.83% success on 286 desktop and web GUI tasks.",
+    "verify_terms": [
+      "IntentCUA"
+    ],
+    "scope": "core",
+    "notes": "AAMAS 2026 per the arXiv comments. Per the v2 full text (Section 5.1, Section 6), the 286 tasks combine 100 in-house tasks, 116 sampled from WebVoyager and 70 from ScreenAgent, and UI-TARS-1.5 and UFO2 are run as baselines through the same atomic GUI action interface. Skills are mined from 30 active hours of interaction traces (113 trace files), and slot steps are generated with GPT-4o. The operating system is not stated outright; task-unit examples label the environment local/Windows. The paper names no code repository. Results were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.17049v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.17049v2",
+        "sha256": "3fdec75d406e61a9a3bdb4f09736ba0b1eb6d0032bf0094ef42dd093dd5a4ea3",
+        "retrieved_at": "2026-10-20T04:37:27Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "dffaf8b2ad9a6c6402baf2a21492bcc5fde63786340828513d6d6f949194ca47",
+    "reviewed_at": "2026-10-20T04:37:29Z"
   }
 ]

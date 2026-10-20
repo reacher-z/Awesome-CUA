@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2505.20795",
+    "name": "Learning Generalizable Robot Policy with Human Demonstration Video as a Prompt",
+    "url": "https://arxiv.org/abs/2505.20795",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract proposes a two-stage robot-learning framework in which a video generation model learns a joint representation of human and robot demonstration videos through cross-prediction and a prototypical contrastive loss maps it to a shared human-robot action space, so that a policy can take a human demonstration video as a prompt and perform new tasks, evaluated on real-world dexterous manipulation. This robotics research has no GUI, web or device-control component, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T08:12:59Z",
+    "metadata_fingerprint": "5351408e79dddcd2e62478043c17ca5220da923346b3d49baa5da34a1b9c812d",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2504.03206%2C2504.03601%2C2504.06821%2C2504.09723%2C2504.11301%2C2504.11543%2C2504.12609%2C2504.14233%2C2504.14348%2C2504.14603%2C2504.16073%2C2504.16419%2C2504.17892%2C2504.18580%2C2504.20965%2C2505.00019%2C2505.00693%2C2505.01578%2C2505.02094%2C2505.03570%2C2505.03574%2C2505.05026%2C2505.05849%2C2505.06507%2C2505.07003%2C2505.07473%2C2505.10468%2C2505.10887%2C2505.12053%2C2505.12490%2C2505.12728%2C2505.13291%2C2505.14030%2C2505.14454%2C2505.14646%2C2505.15801%2C2505.15816%2C2505.17020%2C2505.18746%2C2505.19095%2C2505.19713%2C2505.20023%2C2505.20732%2C2505.20795%2C2505.21055%2C2505.22304%2C2505.22429%2C2505.23450%2C2505.23559%2C2506.00641&max_results=50",
+      "sha256": "27144160e8981bb9f36b60c391689774913ff3f026eeeffc2923154c404a6529",
+      "retrieved_at": "2026-10-17T07:57:47Z"
+    }
   }
 ]

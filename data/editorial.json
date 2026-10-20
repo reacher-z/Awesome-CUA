@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Towards Adaptive ML Benchmarks: Web-Agent-Driven Construction, Domain Expansion, and Metric Optimization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.09321",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "evaluation"
+    ],
+    "summary": "TAM-Bench gathers 150 AutoML tasks from Kaggle, AIcrowd and Biendata through a Browser-Use web-agent pipeline, rates difficulty from leaderboards, and tests AIDE and OpenHands on 18 Lite tasks.",
+    "verify_terms": [
+      "Towards Adaptive ML Benchmarks: Web-Agent-Driven Construction"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: the browser agent builds the benchmark, while the evaluated agents work in code environments. The collection pipeline uses Browser-Use with a LangChain ReAct agent layer, a controller that issues browser commands, a DOM layer that turns pages into text, and Playwright for browser control; GPT-4o converts competition descriptions into a structured task schema. Difficulty is estimated from participant counts and score dispersion. AIDE and OpenHands, each with GPT-4.1 and DeepSeek-V3, run in Ubuntu 20.04 Docker containers with an 8-hour limit and are scored on submission validity, constraint compliance and leaderboard rank. The paper names the repository github.com/JiaHangyi828/TAM-Bench, which was not inspected; no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract, the full v1 HTML text (benchmark construction, difficulty modeling, metrics and experiments) and the PDF title page for release links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.09321v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.09321v1",
+        "retrieved_at": "2026-10-20T08:02:52Z",
+        "sha256": "329d973370517a2476d78b0c46fdff00ec50f2899c962e72cd254c8db4f23033",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c6afd13a9e28587cb918c1a24ac93c31ed59ede28cef8c54e3bff9ebf4f52b7a",
+    "reviewed_at": "2026-10-20T08:03:20Z"
   }
 ]

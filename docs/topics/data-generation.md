@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+340 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (259)](#papers)
 
 ## Datasets
 
@@ -269,6 +269,7 @@ All entries in this section: android.
 | 2025‑09‑19 | [BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent](https://arxiv.org/abs/2509.15566) | unspecified | BTL-UI separates GUI interaction into screen-region attention, planning and executable-command generation. It adds an automated annotation pipeline and rule-based process/outcome rewards for training, with evaluation on both static understanding and dynamic interaction. |
 | 2025‑09‑19 | [GUI-ReWalk: Massive Data Generation for GUI Agent via Stochastic Exploration and Intent-Aware Reasoning](https://arxiv.org/abs/2509.15738) | android | GUI-ReWalk begins with stochastic interface exploration and then infers goals to generate coherent action trajectories. It supports long-horizon workflows across applications and studies training on the resulting data using grounding and navigation benchmarks. |
 | 2025‑09‑18 | [ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform Data](https://arxiv.org/abs/2509.15221) | cross-platform | Introduces a cross-platform computer-use dataset and agents trained with a collection pipeline combining automated interaction and human input. |
+| 2025‑09‑11 | [Towards Adaptive ML Benchmarks: Web-Agent-Driven Construction, Domain Expansion, and Metric Optimization](https://arxiv.org/abs/2509.09321) | web | TAM-Bench gathers 150 AutoML tasks from Kaggle, AIcrowd and Biendata through a Browser-Use web-agent pipeline, rates difficulty from leaderboards, and tests AIDE and OpenHands on 18 Lite tasks. |
 | 2025‑09‑04 | [Learning Active Perception via Self-Evolving Preference Optimization for GUI Grounding](https://arxiv.org/abs/2509.04243) | unspecified | LASER builds preference data for multi-step GUI perception by combining Monte Carlo quality estimates with region-overlap evaluation. Its self-evolving training encourages relevant region selection and adapts the amount of reasoning before predicting screen coordinates. |
 | 2025‑09‑02 | [OmniActor: A Generalist GUI and Embodied Agent for 2D&3D Worlds](https://arxiv.org/abs/2509.02322) | unspecified | Introduces OmniActor, which shares shallow model layers while separating deeper parameters to train jointly on GUI and embodied interactions. A unified action representation and mixed training data support evaluation in both task families. |
 | 2025‑09‑02 | [UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.02544) | web, desktop, windows, android, cross-platform | UI-TARS-2 combines scalable trajectory generation, stabilized multi-turn reinforcement learning, and a sandbox that supports GUI, filesystem, and terminal actions. The report evaluates the resulting agent across web, desktop, Android, and game tasks and analyzes training stability. |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2189,6 +2189,23 @@
       "reason": "Robo2Process builds question-answer supervision and diagnostics from robot manipulation traces. The studied visual states, motion, progress and primitives concern physical robotic execution rather than software-interface behavior.",
       "reviewed_at": "2026-10-17T14:29:57.522341+00:00",
       "metadata_fingerprint": "d7382c77fb95e2dfe3c9013d2e559ae98744ec9357b83e26be425e30efa1f0cf",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
+        "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",
+        "retrieved_at": "2026-10-17T12:31:28Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2607.02032",
+      "name": "PACE: A Proxy for Agentic Capability Evaluation",
+      "url": "https://arxiv.org/abs/2607.02032",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents PACE, which selects small subsets of non-agentic benchmark instances and fits a regression that predicts model scores on costly agentic benchmarks, yielding PACE-Bench. Per the full text, its four targets are GAIA, SWE-Bench Verified, SWE-Bench Multimodal and SWT-Bench run with OpenHands, and the paper leaves browser-based or embodied agent benchmarks to future work, so this evaluation-cost study is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T03:57:12Z",
+      "metadata_fingerprint": "e0caf3e5a5e07a6fa8dc740ef18b939159ac9043e0754e6778b73d630e56e8a3",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
         "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",

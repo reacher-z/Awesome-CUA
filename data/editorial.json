@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Blind Gods and Broken Screens: Architecting a Secure, Intent-Centric Mobile Agent Operating System",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.10915",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Analyzes security flaws of the screen-driven Doubao Mobile Assistant across identity, interface, reasoning and execution, and proposes Aura, an agent OS kernel with structured app agents, tested on MobileSafetyBench.",
+    "verify_terms": [
+      "Architecting a Secure, Intent-Centric Mobile Agent Operating System"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.10915v3"
+    ],
+    "notes": "Black-box case studies target the commercial Doubao Mobile Assistant (fake app identity, visual spoofing, indirect prompt injection, privilege escalation). Aura runs on a simulated mobile device in which Gemini-3-Flash system and app agents call structured mock APIs instead of operating GUIs (Section 5.1.2), so its comparison with Doubao changes both the interaction model and the underlying model. On the 80-task MobileSafetyBench subset it reports task success of 33/35 against 26-27/35 for Doubao on low-risk tasks and attack success of 2/45 against 18-19/45 on high-risk tasks. The v3 HTML title block adds the line 'Taming the OpenClaw Paradigm with an Agent Security Kernel', which the arXiv title omits. No code release is named. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.10915v3",
+        "sha256": "1382dfb4f057c1d8775655804f2e961c9773846851e376b32d516bed3cdb2f52",
+        "retrieved_at": "2026-10-20T04:43:16Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and checked the v3 HTML full text for the Doubao threat analysis (Section 2), the Aura architecture and Agent Kernel defenses (Sections 3-4), and the benchmark subset, implementation and results (Section 5.1-5.3). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f607ff2588275bc8209068d74b34962d523cf1633efa73f85ecfbecdecaa116c",
+    "reviewed_at": "2026-10-20T04:43:36Z"
   }
 ]

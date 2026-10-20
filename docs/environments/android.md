@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-310 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+311 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (185)](#papers)
 
 ## Benchmarks
 
@@ -242,6 +242,7 @@
 | 2026‑03‑08 | [Generalization in Online Reinforcement Learning for Mobile Agents](https://arxiv.org/abs/2603.07432) | android | Introduces AndroidWorld-Generalization with separate tests for unseen task instances, templates, and applications. A GRPO training system combines containerized environments with asynchronous trajectory collection to study these generalization regimes. |
 | 2026‑03‑03 | [CGL: Advancing Continual GUI Learning via Reinforcement Fine-Tuning](https://arxiv.org/abs/2603.02951) | android | Combines supervised and reinforcement fine-tuning for continual GUI learning, using policy entropy to adjust their proportions and gradient projection to limit conflicting updates. AndroidControl-CL groups applications into sequential tasks to evaluate adaptation and retention. |
 | 2026‑02‑12 | [Adaptive Milestone Reward for GUI Agents](https://arxiv.org/abs/2602.11524) | android, web | ADMIRE extracts milestones from successful GUI explorations to provide adaptive intermediate rewards. It assigns credit differently to successful and failed trajectories and evaluates training on AndroidWorld, with additional transfer studies in web and embodied settings. |
+| 2026‑02‑11 | [Blind Gods and Broken Screens: Architecting a Secure, Intent-Centric Mobile Agent Operating System](https://arxiv.org/abs/2602.10915) | android | Analyzes security flaws of the screen-driven Doubao Mobile Assistant across identity, interface, reasoning and execution, and proposes Aura, an agent OS kernel with structured app agents, tested on MobileSafetyBench. |
 | 2026‑02‑10 | [Code2World: A GUI World Model via Renderable Code Generation](https://arxiv.org/abs/2602.09856) | android | Code2World predicts future GUI screens through renderable code, trained on AndroidCode trajectories with supervised learning and render-aware reinforcement learning. It evaluates visual prediction and downstream AndroidWorld navigation with the learned world model. |
 | 2026‑02‑09 | [UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082) | cross-platform, web, android | Describes a GUI-agent family combining broad intermediate training, full-trajectory online reinforcement learning, and merging of specialized models. |
 | 2026‑02‑08 | [Anonymization-Enhanced Privacy Protection for Mobile GUI Agents: Available but Invisible](https://arxiv.org/abs/2602.10139) | android | An anonymization framework replaces sensitive screen content and instructions with consistent, type-preserving placeholders while mediating actions through a local interaction proxy. Experiments on AndroidLab and PrivScreen examine the privacy–utility trade-off when mobile GUI agents operate over these transformed interfaces. |

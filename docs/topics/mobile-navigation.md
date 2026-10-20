@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-272 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `mobile-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (15)](#models) · [Agents (17)](#agents) · [Frameworks (11)](#frameworks) · [Tools (2)](#tools) · [Surveys (2)](#surveys) · [Papers (199)](#papers)
 
 ## Benchmarks
 
@@ -174,6 +174,7 @@
 | 2026‑03‑09 | [SecAgent: Efficient Mobile GUI Agent with Semantic Context](https://arxiv.org/abs/2603.08533) | unspecified | Presents a Chinese mobile GUI dataset and navigation benchmark together with SecAgent, which compresses previous screenshots and actions into semantic summaries. The agent is trained with supervised and reinforcement fine-tuning to use this compact interaction context. |
 | 2026‑02‑12 | [Adaptive Milestone Reward for GUI Agents](https://arxiv.org/abs/2602.11524) | android, web | ADMIRE extracts milestones from successful GUI explorations to provide adaptive intermediate rewards. It assigns credit differently to successful and failed trajectories and evaluates training on AndroidWorld, with additional transfer studies in web and embodied settings. |
 | 2026‑02‑12 | [AmbiBench: Benchmarking Mobile GUI Agents Beyond One-Shot Instructions in the Wild](https://arxiv.org/abs/2602.11750) | unspecified | AmbiBench evaluates mobile GUI agents under four levels of instruction clarity, including tasks requiring active clarification. Its MUSE evaluator separately audits outcomes, execution quality and interaction quality to study alignment with user intent. |
+| 2026‑02‑11 | [Blind Gods and Broken Screens: Architecting a Secure, Intent-Centric Mobile Agent Operating System](https://arxiv.org/abs/2602.10915) | android | Analyzes security flaws of the screen-driven Doubao Mobile Assistant across identity, interface, reasoning and execution, and proposes Aura, an agent OS kernel with structured app agents, tested on MobileSafetyBench. |
 | 2026‑02‑10 | [Code2World: A GUI World Model via Renderable Code Generation](https://arxiv.org/abs/2602.09856) | android | Code2World predicts future GUI screens through renderable code, trained on AndroidCode trajectories with supervised learning and render-aware reinforcement learning. It evaluates visual prediction and downstream AndroidWorld navigation with the learned world model. |
 | 2026‑02‑09 | [UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082) | cross-platform, web, android | Describes a GUI-agent family combining broad intermediate training, full-trajectory online reinforcement learning, and merging of specialized models. |
 | 2026‑02‑08 | [Anonymization-Enhanced Privacy Protection for Mobile GUI Agents: Available but Invisible](https://arxiv.org/abs/2602.10139) | android | An anonymization framework replaces sensitive screen content and instructions with consistent, type-preserving placeholders while mediating actions through a local interaction proxy. Experiments on AndroidLab and PrivScreen examine the privacy–utility trade-off when mobile GUI agents operate over these transformed interfaces. |

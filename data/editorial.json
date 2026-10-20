@@ -2716,7 +2716,100 @@
       "2605.15777"
     ],
     "details": {
-      "leaderboard_url": "https://unipat.ai/benchmarks/SaaS-Bench"
+      "leaderboard_url": "https://unipat.ai/benchmarks/SaaS-Bench",
+      "benchmark_protocol": {
+        "focus": [
+          "multi-step business workflows in real self-hosted SaaS applications",
+          "text-only (uni-m) and multimodal-input (multi-m) tracks"
+        ],
+        "setting": "interactive",
+        "observations": [
+          "natural-language task description (description.md)",
+          "image, audio or PDF input files in the multi-m track"
+        ],
+        "actions": [
+          "browser interaction through a pluggable agent; the reference agent drives headless Chrome with browser-use"
+        ],
+        "evaluation": "After each run, the task's verify.py checks the live application state (database, API and page) with weighted checkpoints, so partly completed workflows earn partial credit. Checks on free text or images call an LLM judge configured separately from the evaluated model; unset, they report that the judge is not configured. The step budget is a run option (--max-steps).",
+        "counts": [
+          {
+            "value": 106,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "all tasks the README says the bench ships, across both tracks",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 23,
+            "unit": "self-hosted SaaS applications",
+            "qualifier": "exact",
+            "population": "apps used by the shipped tasks",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 6,
+            "unit": "domains",
+            "qualifier": "exact",
+            "population": "Business, Healthcare, Software and Teamwork (uni-m); Agriculture and Media (multi-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 15,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Business domain (uni-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 16,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Healthcare domain (uni-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 31,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Software domain (uni-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 12,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Teamwork domain (uni-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 12,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Agriculture domain (multi-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          },
+          {
+            "value": 20,
+            "unit": "task instances",
+            "qualifier": "exact",
+            "population": "Media domain (multi-m)",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+          }
+        ],
+        "notes": "All counts are the README's own figures; the six domain rows add up to the stated 106. The apps run from upstream releases in Docker, and the README asks for about 120 GB of free disk and recommends more than 500 GB of RAM for parallel runs. Only the verify.py contract is fixed, so results from different agents or step budgets are not directly comparable. No task was run for this profile.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/UniPat-AI/SaaS-Bench/HEAD/README.md"
+        ]
+      }
     }
   },
   {

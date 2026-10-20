@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2603.09716",
+    "name": "AutoAgent: Evolving Cognition and Elastic Memory Orchestration for Adaptive Agents",
+    "url": "https://arxiv.org/abs/2603.09716",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract presents AutoAgent, a self-evolving multi-agent framework with prompt-level cognition and an elastic memory orchestrator, evaluated on retrieval-augmented reasoning, tool-augmented benchmarks and embodied tasks. The v1 full text uses multi-hop QA sets, GAIA and HLE-Bench through tool calls, and text-based ALFWorld; it describes no browser, GUI or device operation, so this general agent framework is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:23:51Z",
+    "metadata_fingerprint": "67831ac786c0674d84051e434c94a515e2df350bbe4470f541b2a93b6db09e42",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2602.19870%2C2602.22769%2C2602.23166%2C2602.23320%2C2603.00198%2C2603.00842%2C2603.00991%2C2603.01050%2C2603.01145%2C2603.02236%2C2603.02795%2C2603.03278%2C2603.04549%2C2603.06713%2C2603.07106%2C2603.07670%2C2603.07853%2C2603.08706%2C2603.09716%2C2603.10002%2C2603.10664%2C2603.11139%2C2603.11320%2C2603.12483%2C2603.13026%2C2603.13247%2C2603.15714%2C2603.16065%2C2603.16289%2C2603.16839%2C2603.17216%2C2603.17378%2C2603.19313%2C2603.19685%2C2603.21489%2C2603.22527%2C2603.23638%2C2603.24157%2C2603.24639%2C2603.27646%2C2603.28069%2C2603.28407%2C2603.29418%2C2603.29847%2C2604.00528%2C2604.00886%2C2604.01194%2C2604.01438%2C2604.01560%2C2604.02985&max_results=50",
+      "sha256": "9289bc047b59e93f75703b72f5e92d9277e115238427519c343df550220e351b",
+      "retrieved_at": "2026-10-17T12:31:16Z"
+    }
   }
 ]

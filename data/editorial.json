@@ -63844,5 +63844,44 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Where Not to Learn: Prior-Aligned Training with Subset-based Attribution Constraints",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.07008",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "Penalizes training-time attribution that falls outside human prior regions, using subset-selection attribution; tested on ImageNet-S and Saliency-Bench classifiers and on AgentCPM-GUI over 936 Android click tasks.",
+    "verify_terms": [
+      "Prior-Aligned Training with Subset-based Attribution Constraints"
+    ],
+    "scope": "adjacent",
+    "notes": "Image classification is the main experimental setting; the paper presents the GUI study as a preliminary single-run proof of concept. It fine-tunes AgentCPM-GUI with EAGLE attribution on 936 single-step Android clicking tasks the authors collected with click locations and UI-element boxes, compared with standard SFT, box-guided augmentation SFT and task-reward GRPO. The v6 arXiv comment states acceptance to TMLR 2026, and the paper links a project page at ruoyuchen10.github.io/Attribution-Constraint. Results were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.07008v6"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2602.07008v6",
+        "retrieved_at": "2026-10-20T04:54:26Z",
+        "sha256": "bcdd438f95787f3e86eda467e0f4a5383b1b6f3301b91b319c713d99cbc71b18",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v6 abstract and the v6 HTML sections 1 (introduction), 3 (method), 5.1 (datasets and implementation) and 5.4 (extension to an MLLM-based GUI agent).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ed27815d4a25705d977b3e52896b7e76b24330d167c0729f5376753975de2837",
+    "reviewed_at": "2026-10-20T04:54:27Z"
   }
 ]

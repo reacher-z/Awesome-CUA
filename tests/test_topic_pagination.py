@@ -18,7 +18,7 @@ from test_paper_pages import BUDGET
 
 
 class TopicPaginationTests(unittest.TestCase):
-    # Two per page: papers fill page 1 and start page 2, benchmarks follow on page 2, then datasets and tools on page 3.
+    # Two per page: assets come first (benchmark and dataset on page 1, tool and the first paper on page 2), then the remaining papers on page 3.
     rows = [record('p0', '2026-03-01'), record('p1', '2026-02-01'), record('p2', '2026-01-01'),
             record('b0', None, kind='benchmark'), record('d0', None, kind='dataset'), record('t0', None, kind='tool')]
 
@@ -36,7 +36,7 @@ class TopicPaginationTests(unittest.TestCase):
                 self.assertEqual([item['position'] for item in schema['itemListElement']],
                                  list(range(len(seen) + 1, len(seen) + len(parsed.records) + 1)))
                 seen += parsed.records
-            self.assertEqual(seen, ['p0', 'p1', 'p2', 'b0', 'd0', 't0'])
+            self.assertEqual(seen, ['b0', 'd0', 't0', 'p0', 'p1', 'p2'])
             for number in (0, 4):
                 with self.assertRaises(ValueError):
                     self.render(number)
@@ -57,8 +57,8 @@ class TopicPaginationTests(unittest.TestCase):
                         if anchor and anchor != 'content' and target in ('', *ids):
                             self.assertIn(anchor, ids[target or path], (path, link))
             self.assertEqual(topic_sections('grounding', topic_counts(self.rows)),
-                             {'papers': '/topics/grounding/#papers', 'benchmarks': '/topics/grounding/page/2/#benchmarks',
-                              'datasets': '/topics/grounding/page/3/#datasets', 'systems': '/topics/grounding/page/3/#systems'})
+                             {'benchmarks': '/topics/grounding/#benchmarks', 'datasets': '/topics/grounding/#datasets',
+                              'systems': '/topics/grounding/page/2/#systems', 'papers': '/topics/grounding/page/2/#papers'})
             manifest = {'resources_with_topics': 6, 'topics': [{'id': 'grounding', 'name': {'en': 'Grounding', 'zh': '定位'}, 'counts': topic_counts(self.rows)}]}
             for language in ('en', 'zh'):
                 links = LibraryParser(topic_index_body(manifest, language=language)[0]).links

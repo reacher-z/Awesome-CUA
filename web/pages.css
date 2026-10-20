@@ -71,6 +71,7 @@ html:has(.topic-directory,.paper-library,.data-hub){scroll-behavior:auto}
 .reading-shell .topic-resource p{font-size:12px;line-height:1.7;margin:0 0 6px;color:#4d5a70}
 .reading-shell .topic-resource .topic-resource-authors{font-size:11px;color:#69758a;margin-bottom:5px}
 .topic-resource-facets{display:flex;flex-wrap:wrap;gap:10px;font-size:10px;color:#59667c}.topic-resource-links{display:flex;flex-direction:column;align-items:flex-start;gap:11px;font-size:11px;padding-top:2px;white-space:nowrap}
+.reading-shell .topic-resource .topic-resource-facts{font:11px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--muted);margin:0 0 6px;overflow-wrap:anywhere}.reading-shell .topic-resource-facts a{color:var(--blue)}.topic-paper-year{font-variant-numeric:tabular-nums}
 .topic-resource-group h2{scroll-margin-top:8px}.topic-title-name{white-space:nowrap}
 .reading-shell .topic-table-help{display:none;font-size:11px;margin:0 0 12px}.library-all-topics{font-weight:650}
 @media(max-width:760px){.reading-shell .topic-table-help{display:block}.topic-matrix th:first-child{border-right:1px solid #dde3ee}}

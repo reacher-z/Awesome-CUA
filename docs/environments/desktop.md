@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (205)](#papers)
 
 ## Benchmarks
 
@@ -298,6 +298,7 @@ All entries in this section: web, desktop, android, windows.
 | 2025‑10‑28 | [OSWorld-MCP: Benchmarking MCP Tool Invocation In Computer-Use Agents](https://arxiv.org/abs/2510.24563) | desktop | OSWorld-MCP evaluates how agents choose between GUI operations and MCP tool calls in computer tasks. It combines generated and curated tools, with 158 manually validated tools across seven applications, to examine tool use alongside task completion. |
 | 2025‑10‑22 | [Surfer 2: The Next Generation of Cross-Platform Computer Use Agents](https://arxiv.org/abs/2510.19949) | web, desktop, android | Surfer2 combines hierarchical context management with separate planning and execution, self-verification, and recovery for visual computer use. It evaluates the framework across web, desktop, and Android tasks without task-specific fine-tuning. |
 | 2025‑10‑22 | [VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos](https://arxiv.org/abs/2510.19488) | desktop, web | Extracts structured GUI actions from screen-recorded tutorials using inverse dynamics, then uses the inferred trajectories for computer-use training. |
+| 2025‑10‑21 | [CUARewardBench: A Benchmark for Evaluating Reward Models on Computer-using Agent](https://arxiv.org/abs/2510.18596) | desktop, linux | Introduces CUARewardBench, 272 trajectory-level and 346 step-level expert labels on OSWorld agent runs for testing outcome and process reward models, and proposes a unanimous-vote prompt ensemble. |
 | 2025‑10‑20 | [UltraCUA: A Foundation Model for Computer Use Agents with Hybrid Action](https://arxiv.org/abs/2510.17790) | desktop, windows | UltraCUA trains a shared policy for primitive GUI actions and high-level tool calls using synthesized tasks and hybrid trajectories. Supervised fine-tuning followed by online reinforcement learning is evaluated on OSWorld and WindowsAgentArena. |
 | 2025‑10‑16 | [GUIrilla: A Scalable Framework for Automated Desktop UI Exploration](https://arxiv.org/abs/2510.16051) | macos, desktop | GUIrilla systematically explores macOS interfaces to collect interaction traces and accessibility metadata for downstream GUI research. It organizes these observations into hierarchical MacApp Trees and describes an accessibility-driven collection library. |
 | 2025‑10‑13 | [R-WoM: Retrieval-augmented World Model For Computer-use Agents](https://arxiv.org/abs/2510.11892) | desktop, web | R-WoM evaluates how well world models predict nearby GUI states, align complete procedures, and recognize milestone transitions. It retrieves external tutorials to guide simulated future interactions, with experiments on subsets of OSWorld and WebArena. |

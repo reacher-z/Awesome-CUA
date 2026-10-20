@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-691 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+692 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -515,6 +515,7 @@ All entries in this section: web.
 | 2025‑10‑28 | [OSWorld-MCP: Benchmarking MCP Tool Invocation In Computer-Use Agents](https://arxiv.org/abs/2510.24563) | desktop | OSWorld-MCP evaluates how agents choose between GUI operations and MCP tool calls in computer tasks. It combines generated and curated tools, with 158 manually validated tools across seven applications, to examine tool use alongside task completion. |
 | 2025‑10‑22 | [WebGraphEval: Multi-Turn Trajectory Evaluation for Web Agents using Graph Representation](https://arxiv.org/abs/2510.19205) | web | Introduces WebGraphEval, which merges multiple agents' trajectories into a weighted graph of canonical actions. Structural analyses examine recurring behavior, inefficient paths and important decision points beyond a final success score. |
 | 2025‑10‑21 | [AndroidControl-Curated: Revealing the True Potential of GUI Agents through Benchmark Purification](https://arxiv.org/abs/2510.18488) | android | AndroidControl-Curated audits ambiguities and factual errors in AndroidControl and produces a refined evaluation dataset. The paper also studies post-training a small Magma-R1 model on a curated subset to examine the effect of data quality on GUI action assessment. |
+| 2025‑10‑21 | [CUARewardBench: A Benchmark for Evaluating Reward Models on Computer-using Agent](https://arxiv.org/abs/2510.18596) | desktop, linux | Introduces CUARewardBench, 272 trajectory-level and 346 step-level expert labels on OSWorld agent runs for testing outcome and process reward models, and proposes a unanimous-vote prompt ensemble. |
 | 2025‑10‑20 | [Investigating the Impact of Dark Patterns on LLM-Based Web Agents](https://arxiv.org/abs/2510.18113) | web | Presents LiteAgent for recording web-agent interactions and TrickyArena for enabling or disabling dark patterns in controlled websites. Experiments compare how individual patterns, combined patterns and visual or HTML changes affect agent decisions. |
 | 2025‑10‑16 | [ColorBench: Benchmarking Mobile Agents with Graph-Structured Framework for Complex Long-Horizon Tasks](https://arxiv.org/abs/2510.14621) | unspecified | ColorBench represents mobile tasks as graphs of states collected from real devices, providing a quasi-dynamic environment with multiple valid paths and error paths. It evaluates single-app and cross-app tasks using completion, subtask progress, and atomic diagnostics. |
 | 2025‑10‑14 | [HackWorld: Evaluating Computer-Use Agents on Exploiting Web Application Vulnerabilities](https://arxiv.org/abs/2510.12200) | web | Introduces HackWorld for evaluating visual computer-use agents in a capture-the-flag collection of web applications. The benchmark examines interface navigation and multistep planning during vulnerability discovery and exploitation tasks. |

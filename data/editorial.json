@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "CUARewardBench: A Benchmark for Evaluating Reward Models on Computer-using Agent",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.18596",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "reward-models",
+      "evaluation"
+    ],
+    "summary": "Introduces CUARewardBench, 272 trajectory-level and 346 step-level expert labels on OSWorld agent runs for testing outcome and process reward models, and proposes a unanimous-vote prompt ensemble.",
+    "verify_terms": [
+      "CUARewardBench: A Benchmark for Evaluating Reward Models"
+    ],
+    "scope": "core",
+    "notes": "Trajectories are drawn from the published OSWorld-Verified trajectory set for seven policy models with 25.9-50.8% OSWorld success (including JEDI-7B with o3, o3 with GTA1, Claude-4-Sonnet, OpenCUA-32B and UI-TARS variants), balanced across 10 software categories, limited to under 25 steps and filtered by difficulty. Human annotators label trajectory success and key step correctness. Seven open VLMs (Qwen2.5-VL 7B/32B/72B, GLM-4.5V, GUI-Owl 7B/32B and the SE-Agent world-state model) are evaluated with three prompt templates. The paper names no code or data release for the benchmark itself, and no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract, the full v1 HTML text (Sections 1-6, Tables 1-2 and the evaluation sections) and the PDF for release links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.18596v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.18596v1",
+        "retrieved_at": "2026-10-20T07:35:16Z",
+        "sha256": "a1afc2c574da6808308a669ef240e060db1ed8960fd322c1c6f35051c3b40540",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c2b71f41dcbc138cf5fe2eb67580dc7931fad95d2d9781e244472817ccca184c",
+    "reviewed_at": "2026-10-20T07:35:38Z"
   }
 ]

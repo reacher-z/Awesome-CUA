@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "SPA-RL: Reinforcing LLM Agents via Stepwise Progress Attribution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.20732",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "reward-models",
+      "long-horizon"
+    ],
+    "summary": "Trains a progress estimator to split delayed task rewards into per-step contributions, used with an action-grounding signal as dense PPO rewards for agents on WebShop, ALFWorld and VirtualHome.",
+    "verify_terms": [
+      "Reinforcing LLM Agents via Stepwise Progress Attribution"
+    ],
+    "scope": "adjacent",
+    "notes": "The policy and the progress estimator are both Llama-3.2-3B-Instruct; after behavior cloning, ten exploration rollouts per task train the estimator, and PPO with LoRA optimizes the policy on the fused reward. WebShop, a simulated shopping website (200 test tasks, 64.1% success), is the only web environment; ALFWorld and VirtualHome are embodied household environments. The abstract links code at github.com/WangHanLinHenry/SPA-RL-Agent, which is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-5, Appendix C (benchmark statistics, Table 4) and Appendix D (implementation details).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.20732v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2505.20732v1",
+        "retrieved_at": "2026-10-20T08:10:46Z",
+        "sha256": "28077478973d3938115d72ec64b32a225f052783c853502d0c94104ea53a42a5",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3a1f035198e65b33e1ba2ea5c786ad9cf10e563cce09ccfe7af6719237c320ce",
+    "reviewed_at": "2026-10-20T08:11:30Z"
   }
 ]

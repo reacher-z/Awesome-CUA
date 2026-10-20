@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9f90189258f9cd5ea7ed",
+    "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+    "decision": "out_of_scope",
+    "reason": "A February 2026 Anthropic research post that measures how much autonomy people grant agents, using privacy-preserving analysis of Claude Code sessions and tool calls on the public API: turn durations, auto-approval and interruption rates, and the risk of tool actions. It studies coding and API tool use, not agents operating graphical interfaces, websites or devices.",
+    "reviewed_at": "2026-10-20T04:22:47Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20261018120110id_/https://www.anthropic.com/research/measuring-agent-autonomy",
+      "sha256": "80dc787efe64d745e4956e518f5ef799e30e50935262852d3b5a52e349e50545",
+      "retrieved_at": "2026-10-20T04:11:47Z"
+    }
   }
 ]

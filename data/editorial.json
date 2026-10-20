@@ -63844,5 +63844,150 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Bops",
+    "kind": "agent",
+    "url": "https://github.com/OrgoAI/bops",
+    "environments": [
+      "desktop",
+      "linux",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Mac app for a team of business-ops bots that work on Orgo cloud Linux desktops through OpenAI's computer tool, run as xdotool actions, plus Playwright page scripts, app connectors, approval gates and live take-over.",
+    "verify_terms": [
+      "Bops"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OrgoAI/bops/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Electron app (desktop/) that starts a local Next.js server (app/, lib/server/) on port 3210; version 0.0.28 in package.json, matching release tag v0.0.28 at 92ec73d, and the inspected commit 62c7f98 is later. Bots' tasks run on Orgo cloud computers launched from the bops-base template that orgo/bops-base.mjs builds from vm/ (Codex, the screen MCP and per-screen Chrome helpers). By default lib/server/computer-task.ts runs each thread on OpenAI's Responses API computer tool: Orgo's API returns a screenshot of the bot's screen, and every click, double-click, drag, scroll, typing or key press the model asks for is executed as xdotool commands through Orgo's bash endpoint, with the result screen sent back; the same loop offers a page_script tool that runs a short Playwright script on the screen's Chrome over CDP, a Linux shell, web search, a password vault and app, data and CRM tools. With BOPS_COMPUTER_TOOL=0 threads use OpenAI's Agents API with Codex and vm/screen_mcp.py, which exposes one screen's screenshot and input actions over MCP. Tasks on the user's own Mac run in a bot-owned Chrome; with Full access they also get a shell and the user's apps through Cua Driver behind vm/mac-ui-mcp.mjs, which hides sensitive apps, sends input only in the background and blocks quitting, copying and pasting (lib/server/local.ts). Per the README, reading runs at once while sending, creating and paying wait for the user's approval, and any screen can be watched live and taken over. Self-hosting requires an Orgo account and two OpenAI API keys, with Honcho, Composio, treg, AgentMail, AgentPhone and TypeSafe recommended or optional; signing in with Orgo instead routes provider calls through Orgo's hosted Bops Cloud (cloud/). Licensed FSL-1.1-ALv2 (fair source; competing products and hosted services are excluded, and each version becomes Apache-2.0 two years after release); components/message-ui/ is adapted from MIT-licensed code. Not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source under FSL-1.1-ALv2 with a signed macOS (Apple silicon) app and tagged releases; bots' computers are Orgo cloud machines, so it needs an Orgo account, plus OpenAI API keys when self-hosted.",
+      "repository_revision": "62c7f98d8873707cf792ee518e06868d4f622cde",
+      "release_tag": "v0.0.28",
+      "package_version": "0.0.28"
+    },
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:trycua/cua",
+        "evidence_url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/lib/server/local.ts"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "FSL-1.1-ALv2",
+          "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/LICENSE",
+          "retrieved_at": "2026-10-20T08:16:40Z",
+          "basis": "Repository LICENSE at the reviewed commit: Functional Source License 1.1 with the Apache-2.0 future license, copyright Nick Vasilescu and Organic Intelligence, Inc.; not an OSI open-source license until each version's second anniversary."
+        },
+        "reason": "The LICENSE file is the Functional Source License 1.1, ALv2 Future License, which enrich does not recognize as a standard open-source text. It permits uses other than competing products or services and grants Apache-2.0 for each version two years after it is made available.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/LICENSE"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "environments"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/lib/server/computer-task.ts",
+        "sha256": "283f1262fb8d9b04953fd6318a67785ba4f9f24b8a2d460b3f29139ffe18222d",
+        "retrieved_at": "2026-10-20T08:16:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/vm/screen_mcp.py",
+        "sha256": "57e636b7792c540b96010b4378a88d5280f7fc09ce9cf92f76560bbbdf4536c1",
+        "retrieved_at": "2026-10-20T08:16:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/vm/mac-ui-mcp.mjs",
+        "sha256": "f2233f4443f8abc20a12511647d97f92d7f875fa55cde6ca996efb05e2d2f09d",
+        "retrieved_at": "2026-10-20T08:16:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/lib/server/local.ts",
+        "sha256": "b5de93eda6a88a84f9c6356da8b4976a20b123eea1a8fc84cc3d9df05c429343",
+        "retrieved_at": "2026-10-20T08:16:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/orgo/bops-base.mjs",
+        "sha256": "74e93b0e63db604bb2cf06bf65c4b7a51b78f0805dc27192847283f10461e59c",
+        "retrieved_at": "2026-10-20T08:16:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/package.json",
+        "sha256": "4a7ea0a7b7fb17c72ec7d5fe398f854233c4188594352942ae0dfa2187f57a2c",
+        "retrieved_at": "2026-10-20T08:16:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/OrgoAI/bops/62c7f98d8873707cf792ee518e06868d4f622cde/LICENSE",
+        "sha256": "80fc5e9f40bdfa8d453fefb71f5304e812687e0fcfb1d3c126635b2285090816",
+        "retrieved_at": "2026-10-20T08:16:40Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0d17b7e8fbee9ac443909fe5686805e6fd6816b2c3b2d7d43688655d2d5ccba7",
+    "reviewed_at": "2026-10-20T08:17:27Z"
   }
 ]

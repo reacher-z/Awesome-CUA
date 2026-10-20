@@ -1905,6 +1905,21 @@
     }
   },
   {
+    "id": "arxiv:2606.07682",
+    "name": "SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?",
+    "url": "https://arxiv.org/abs/2606.07682",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract introduces SWE-Marathon, a benchmark of 20 long-horizon software-engineering tasks with executable environments, reference solutions and multi-layer verifiers, and evaluates frontier coding agents on them. Agents work by running commands and editing code in containers rather than operating a GUI, browser or device, so the work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:03:17Z",
+    "metadata_fingerprint": "8bcf4a9d2eb7930f87b1e3a6d2b790e502c9873516462152c1d9ba78b3450959",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2606.05646%2C2606.05670%2C2606.06556%2C2606.06891%2C2606.07367%2C2606.07594%2C2606.07682%2C2606.07723%2C2606.07867%2C2606.10394%2C2606.10525%2C2606.11290%2C2606.12203%2C2606.12736%2C2606.13040%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441%2C2606.17162%2C2606.18425%2C2606.19336%2C2606.19409%2C2606.19704%2C2606.20950%2C2606.21033%2C2606.21565%2C2606.23521%2C2606.23654%2C2606.24775%2C2606.25084%2C2606.26080%2C2606.27406%2C2606.27634%2C2606.28430%2C2606.28480%2C2606.29955%2C2606.30616%2C2607.00692%2C2607.01084%2C2607.02032%2C2607.02448%2C2607.02490%2C2607.02577%2C2607.02911&max_results=50",
+      "sha256": "7eaa9a5430d3a45049e612a117da345c1daafc54277a35a7cf56b42fbb1e8618",
+      "retrieved_at": "2026-10-17T12:31:28Z"
+    }
+  },
+  {
     "id": "arxiv:2606.07723",
     "name": "VoLo: A Physical Orchestrator for Open-Vocabulary Long-Horizon Manipulation",
     "url": "https://arxiv.org/abs/2606.07723",

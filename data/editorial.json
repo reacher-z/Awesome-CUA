@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Hybrid Self-evolving Structured Memory for GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.10291",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "Introduces HyMEM, a self-evolving graph memory for GUI agents that links symbolic strategy and attribute nodes with continuous trajectory embeddings for multi-hop retrieval, node updates and working-memory refresh.",
+    "verify_terms": [
+      "Hybrid Self-evolving Structured Memory"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.10291v1"
+    ],
+    "scope": "core",
+    "notes": "The memory graph is built from 2,883 successful trajectories (GUIAct, the Mind2Web training set and the authors' agent rollouts) and holds 1,858 nodes in the main experiments. Agents act on screenshots with set-of-marks labels and fall back to UI-INS-7B for grounding; evaluation uses WebVoyager, Multimodal-Mind2Web and MMInA, with a reported +22.5% gain for Qwen2.5-VL-7B. The paper links github.com/NickSiboZhu/HyMEM-GUI-Agent and a Hugging Face project page. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.10291v1",
+        "retrieved_at": "2026-10-20T04:32:04Z",
+        "sha256": "61888aac6f83e1c27db00e8dc231babe45e0e5e76afde598aa917edf3ef65d60",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 3 and 4 (graph schema, node encoding, self-evolution operations, retrieval, action interface, memory settings, benchmarks and main results).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "fc2cfddf11111cefcea124f72724e369460b5a8234a7ff1b11d3d1d8fe81da23",
+    "reviewed_at": "2026-10-20T04:32:29Z"
   }
 ]

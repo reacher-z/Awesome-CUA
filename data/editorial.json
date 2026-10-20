@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "PerceptUI: LLM Agents as Human-Aligned Synthetic Users for UI/UX Evaluation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.05697",
+    "environments": [
+      "web",
+      "cross-platform"
+    ],
+    "topics": [
+      "ui-design",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "PerceptUI fine-tunes a vision-language model on teacher rationales contrasting human answers with distractors, then evolves its prompt from failures, to predict how a persona answers UI/UX questions on screenshots.",
+    "verify_terms": [
+      "PerceptUI: LLM Agents as Human-Aligned Synthetic Users"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.05697v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent UI-evaluation work: the model judges static screenshots of web, mobile and in-car interfaces and does not operate them; the paper names interaction traces and browser actions as future work. Evaluations use WiserUI-Bench, UIClip/BetterApp, WebDevJudge, LabintheWild, LabintheWild-UX, UICrit and a proprietary in-car survey dataset (UXCar, about 500 participants and 30 questions). The student is Qwen3-VL-8B-Instruct fine-tuned with QLoRA, and GPT-5.5 is the default rationale teacher. The paper names no code release. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.05697v1",
+        "retrieved_at": "2026-10-20T04:12:59Z",
+        "sha256": "e169c9f6adb5f91b49090d5fab194686d4af48c2653ea558f75bcd5a7aaa4d51",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 3 (method), 4 (settings and the six public datasets, 4.6 automotive transfer), 6 (limitations), Appendix A (student model and fine-tuning setup), E (UXCar) and F.6 (teacher sensitivity). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "182deabf6a3b0eacbd9244f26c66ce0bf00ffb2d5009e39c5376c7058fa0b4ed",
+    "reviewed_at": "2026-10-20T04:14:47Z"
   }
 ]

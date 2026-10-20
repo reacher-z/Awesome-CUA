@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
 
 ## Benchmarks
 
@@ -119,6 +119,7 @@ All entries in this section: cross-platform.
 | 2026‑06‑16 | [VISUALSKILL: Multimodal Skills for Computer-Use Agents](https://arxiv.org/abs/2606.18448) | unspecified | VISUALSKILL organizes application-specific text and figures into hierarchical skills retrieved on demand through an MCP tool. Skills combine authored documentation with live UI exploration, and matched multimodal/text-only comparisons test their utility for interface identification and workflow-state verification. |
 | 2026‑06‑10 | [CAPED: Context-Aware Privacy Exposure Defense for Mobile GUI Agents](https://arxiv.org/abs/2606.12666) | android | CAPED filters mobile screenshots before upload by combining task requirements, screen context and parsed UI elements to mask incidental private content. AndroidWorld and a controlled seeded privacy evaluation examine leakage reduction alongside task utility and prototype costs. |
 | 2026‑06‑04 | [DragOn: A Benchmark and Dataset for Drag-Based GUI Interactions](https://arxiv.org/abs/2606.06322) | unspecified | DragOn supplies drag-grounding training data and a held-out benchmark for highlighting text, selecting cells, resizing elements and moving sliders. It evaluates existing vision-language models and a model fine-tuned on the drag tasks. |
+| 2026‑06‑04 | [PerceptUI: LLM Agents as Human-Aligned Synthetic Users for UI/UX Evaluation](https://arxiv.org/abs/2606.05697) | web, cross-platform | PerceptUI fine-tunes a vision-language model on teacher rationales contrasting human answers with distractors, then evolves its prompt from failures, to predict how a persona answers UI/UX questions on screenshots. |
 | 2026‑06‑04 | [Signal-Driven Observation for Long-Horizon Web Agents](https://arxiv.org/abs/2606.06708) | web | Proposes Signal-Driven Observation: a separate call selects relevant DOM elements and selectors, and a detector requests new observations only after meaningful browser events or failures. The paper frames observation timing and compression as an architectural research problem for long-horizon web agents. |
 | 2026‑06‑03 | [Benchmarking Living-Screen-Native GUI Agents on Short-Video Platforms](https://arxiv.org/abs/2606.04701) | web | LivingScreen evaluates agents in a browser-based short-video environment where observing content consumes time and affects subsequent actions. Its task suite scores accuracy together with information efficiency to diagnose over- and under-observation on continuously changing screens. |
 | 2026‑06‑01 | [STaR-KV: Spatio-Temporal Adaptive Re-weighting for KV Cache Compression in GUI Vision-Language Models](https://arxiv.org/abs/2606.01790) | unspecified | STaR-KV compresses GUI-agent KV caches by calibrating visual-token importance across attention subspaces and interaction time. Its training-free scoring combines spatial specialization, temporal redundancy and an adaptive temperature, evaluated at matched cache budgets. |

@@ -1999,7 +1999,7 @@
       "url": "https://arxiv.org/abs/2512.12730",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "NL2Repo-Bench gives coding agents a natural-language requirements document and an empty workspace and scores the Python library they build against the upstream test suite, across 104 tasks. It evaluates long-horizon repository generation by coding agents (mainly OpenHands CodeAct, plus Cursor-CLI and Claude Code) working through shell, file-editing and code-execution tools rather than GUI, browser or device operation, so it is outside the computer-use scope.",
+      "reason": "NL2Repo-Bench gives coding agents a natural-language requirements document and an empty workspace and scores the Python library they build against the upstream test suite, across 104 tasks. It evaluates long-horizon repository generation by coding agents (mainly OpenHands CodeAct, plus Cursor-CLI and Claude Code) working mainly through shell, file-editing and code-execution tools. OpenHands also exposes a browser tool for documentation lookup, which six of the nine OpenHands models invoked (Table 5), but the tasks need no web or GUI interaction and are scored only by unit tests, so it is outside the computer-use scope.",
       "reviewed_at": "2026-10-20T05:22:13Z",
       "metadata_fingerprint": "f329459ee2a37b5ec226805c0141626db2489d4f163385571490d1818601d66e",
       "evidence": {

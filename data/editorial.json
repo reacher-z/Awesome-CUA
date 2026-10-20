@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "FocusAgent: Simple Yet Effective Ways of Trimming the Large Context of Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.03204",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "FocusAgent prunes accessibility-tree observations with a small LLM retriever that keeps goal-relevant lines, roughly halving observation size on WorkArena L1 and WebArena and blunting pop-up injections.",
+    "verify_terms": [
+      "Trimming the Large Context of Web Agents"
+    ],
+    "scope": "core",
+    "notes": "Runs in BrowserGym and AgentLab with GenericAgent as the base agent: WorkArena L1 with 10 seeds (330 tasks, 15 steps) and the 381-task BrowserGym WebArena test split (30 steps), with GPT-4.1, Claude-3.7-Sonnet and Qwen3-235B-A22B backbones and retrievers including GPT-4.1-mini, GPT-5-mini, Qwen3-8B and Qwen3.5-9B. Success rates drop slightly with closed-source backbones relative to full observations. Security tests use DoomArena banner and pop-up URL-injection attacks plus goal-drift banners on 114 WebArena Reddit tasks; a defense-prompted variant lowers pop-up attack success from over 80% to around 1%, though task success under pop-ups stays low because the pop-up is never closed. The arXiv comment lists TMLR (08/2026). Code: github.com/imenelydiaker/focus_agent (not curated here). No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-7, Tables 1-5 and Appendices F-I.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.03204v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.03204v2",
+        "retrieved_at": "2026-10-20T07:33:48Z",
+        "sha256": "b40060928f3821d948f17101691402c09354c47f46d3e0626f8decebc64eab12",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ed444ea9a8e3152c852225ab00376cd2fd3a0254bcb4e4377d6eee19e097993d",
+    "reviewed_at": "2026-10-20T07:33:51Z"
   }
 ]

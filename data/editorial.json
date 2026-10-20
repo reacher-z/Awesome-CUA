@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Demo2Tutorial: From Human Experience to Multimodal Software Tutorials",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.03951",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "video",
+      "planning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Turns screen recordings and input logs into image-text software tutorials with an action parser, step planner and composer; adds TutorialBench (110 tutorials, 7 apps) and tests tutorials as GUI-agent planning aids.",
+    "verify_terms": [
+      "Demo2Tutorial: From Human Experience"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.03951v1"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Accepted at CVPR 2026 per the arXiv comments. TutorialBench takes 110 reference tutorials from the official sites of Word, PowerPoint, Excel, Acrobat, Premiere Pro, Photoshop and After Effects. The agent study adds generated tutorials to Agent-S3 planning on 17 Chrome and 14 VLC tasks from OSWorld. The v1 paper says code and data will be available at github.com/showlab/Demo2Tutorial. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2606.03951v1",
+        "sha256": "4718f9aad867afb702c34f713c831fd58b9c26b4742ef8ed42ecbf83bbe4d1a7",
+        "retrieved_at": "2026-10-20T04:00:49Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the recorder, TutorialBench applications and size, the OSWorld agent study and the code link. No code execution or result reproduction.",
+    "reviewed_sha256": "a194126b5a8bc1f49921946029e856a37df5c32b74872c4383cd3bc17a61a634",
+    "reviewed_at": "2026-10-20T04:08:27Z"
   }
 ]

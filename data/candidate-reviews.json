@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4f944d82c58ab13c4cec",
+    "url": "https://www.bilibili.com/video/BV1mt3C6AEJm",
+    "decision": "not_a_resource",
+    "reason": "Bilibili upload of the 113-second Qwen-UI-Agent mobile GUI and deep research demo, linked from a MAI-UI README preview image; a demo video, not a resource."
   }
 ]

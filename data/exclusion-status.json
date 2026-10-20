@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1989,6 +1989,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
         "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
         "retrieved_at": "2026-10-18T04:21:52Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2601.08225",
+      "name": "User-Oriented Multi-Turn Dialogue Generation with Tool Use at scale",
+      "url": "https://arxiv.org/abs/2601.08225",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract describes a pipeline that generates multi-turn tool-use dialogues at scale, with a reasoning-model simulator that creates domain-specific tools and a separate user simulator that issues incremental requests and feedback. The full text trains reasoning models on the resulting API-call trajectories and evaluates them on BFCL and tau2-bench; this text tool-calling data work has no GUI, browser or device component.",
+      "reviewed_at": "2026-10-20T04:51:25Z",
+      "metadata_fingerprint": "f079ca592c4065d284cbd56983ad3d8e3c969e7bce61c008b649b379707f679b",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2512.06866%2C2512.07287%2C2512.08769%2C2512.12594%2C2512.12730%2C2512.13159%2C2512.14012%2C2512.16925%2C2512.16962%2C2512.16975%2C2512.21373%2C2512.23647%2C2512.23738%2C2601.01743%2C2601.02046%2C2601.02163%2C2601.02454%2C2601.02702%2C2601.03468%2C2601.03928%2C2601.04795%2C2601.05107%2C2601.05432%2C2601.06411%2C2601.06487%2C2601.06490%2C2601.06565%2C2601.06663%2C2601.07143%2C2601.07375%2C2601.08012%2C2601.08079%2C2601.08225%2C2601.08237%2C2601.08731%2C2601.09113%2C2601.09749%2C2601.09883%2C2601.10378%2C2601.10440%2C2601.11653%2C2601.11895%2C2601.11903%2C2601.11974%2C2601.12042%2C2601.12307%2C2601.12560%2C2601.12641%2C2601.13186%2C2601.13383&max_results=50",
+        "sha256": "f8cee8b281f54ecb3112bb26b59d166617d33f08f098f44818968a9c9b777ce6",
+        "retrieved_at": "2026-10-17T12:31:09Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

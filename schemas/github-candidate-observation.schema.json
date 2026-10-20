@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesomecua.github.io/schemas/github-candidate-observation.schema.json",
+  "title": "AwesomeCUA public GitHub candidate observation",
+  "description": "Public GitHub metadata observations only. Every row remains candidate/relevance_pending; HTTP success, a topic tag, or a repository name does not establish CUA relevance, release completeness, licensing, or editorial approval.",
+  "type": "object",
+  "required": [
+    "id",
+    "repository_id",
+    "canonical_id",
+    "full_name",
+    "url",
+    "source_description",
+    "github_topics",
+    "private",
+    "visibility",
+    "fork",
+    "archived",
+    "created_at",
+    "updated_at",
+    "pushed_at",
+    "metadata_status",
+    "review_status",
+    "scope",
+    "first_observed_at",
+    "last_observed_at",
+    "known_names",
+    "evidence",
+    "metadata_receipt_id",
+    "omitted_fields",
+    "record_sha256"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^github-repository:[1-9][0-9]*$"
+    },
+    "repository_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "canonical_id": {
+      "type": "string",
+      "pattern": "^github:[a-z0-9][a-z0-9-]*/[a-z0-9_.-]+$"
+    },
+    "full_name": {
+      "type": "string",
+      "pattern": "[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9_.-]+$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github\\.com/"
+    },
+    "source_description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 2000
+    },
+    "github_topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]{0,49}$"
+      },
+      "uniqueItems": true,
+      "maxItems": 100
+    },
+    "private": {
+      "const": false
+    },
+    "visibility": {
+      "const": "public"
+    },
+    "fork": {
+      "const": false
+    },
+    "archived": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pushed_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "metadata_status": {
+      "const": "primary_metadata_observed"
+    },
+    "review_status": {
+      "const": "candidate"
+    },
+    "scope": {
+      "const": "relevance_pending"
+    },
+    "first_observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "known_names": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9_.-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "receipt_id",
+          "run_id",
+          "query_id",
+          "position",
+          "url",
+          "request_url_sha256",
+          "observed_at",
+          "retrieved_at",
+          "sha256",
+          "bytes"
+        ],
+        "properties": {
+          "receipt_id": {
+            "type": "string",
+            "pattern": "^receipt:[0-9a-f]{64}$"
+          },
+          "run_id": {
+            "type": "string",
+            "pattern": "^run:[0-9a-f]{24}$"
+          },
+          "query_id": {
+            "type": "string",
+            "pattern": "^(search:[0-9a-f]{24}|existing:[0-9a-f]{64})$"
+          },
+          "position": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://api\\.github\\.com/"
+          },
+          "request_url_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "metadata_receipt_id": {
+      "type": "string",
+      "pattern": "^receipt:[0-9a-f]{64}$"
+    },
+    "omitted_fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "reason"
+        ],
+        "properties": {
+          "field": {
+            "const": "source_description"
+          },
+          "reason": {
+            "enum": [
+              "credential_shaped_string",
+              "private_home_path",
+              "url_userinfo"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "record_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

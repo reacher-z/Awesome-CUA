@@ -15,8 +15,11 @@ import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-from catalog import ROOT, DATA, arxiv_entry, fetch, now, read_json, read_jsonl, write_json, write_jsonl
+from catalog import ROOT, DATA, arxiv_entry, fetch, now, read_json, read_jsonl, write_json, write_jsonl, validate_candidate_snapshot
 from arxiv_metadata import consider_paper, parse_search_feed, timestamp
+from network_budget import (RoundBudget, budget_from_environment, ENV_PHASE,
+                            DEFAULT_REQUESTS, DEFAULT_SECONDS)
+import scan_candidate_stage as candidate_stage
 
 
 def counts():
@@ -29,20 +32,133 @@ def counts():
         'candidates':len(read_jsonl(DATA/'candidates.jsonl'))}
 
 
-# Seconds each subprocess stage may run. Together with the recent arXiv search's retry bound and the workflow's other steps they
-# must fit inside scan.yml's timeout-minutes, so even a stalled stage ends with this scan's own receipt (tests/test_scan_budget.py).
-STAGE_TIMEOUTS={'discovery':300,'huggingface':300,'harvest':300,'build':180,'validate':180}
+# Phase caps never extend the single network-round deadline. Offline build/validation
+# retain separate time, leaving room for the workflow's remaining quality gate.
+STAGE_TIMEOUTS={'discovery':300,'huggingface':300,'recent_arxiv':600,'harvest':300,'github_candidates':220,'build':180,'validate':180}
+NETWORK_STAGES=frozenset({'discovery','huggingface','recent_arxiv','harvest','github_candidates'})
 
 
-def stage(name,command):
-    started=now();timeout=STAGE_TIMEOUTS[name]
+def stage(name,command,timeout=None):
+    started=now();timeout=min(timeout,STAGE_TIMEOUTS[name]) if timeout is not None else STAGE_TIMEOUTS[name]
+    budget=budget_from_environment()
+    if budget and name in NETWORK_STAGES:
+        timeout=min(timeout,budget.remaining_seconds())
+        if timeout<=0:
+            return {'name':name,'started_at':started,'finished_at':now(),'ok':False,'deferred':True,
+                    'request_attempted':False,'error':'Network round wall budget exhausted; no phase started.'}
+    env={**os.environ,ENV_PHASE:name}
     try:
-        result=subprocess.run([sys.executable,*command],cwd=ROOT,encoding='utf-8',errors='replace',stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout)
+        result=subprocess.run([sys.executable,*command],cwd=ROOT,encoding='utf-8',errors='replace',stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout,env=env)
         print(result.stdout[-6000:],flush=True)
         return {'name':name,'started_at':started,'finished_at':now(),'ok':result.returncode==0,'exit_code':result.returncode,
             'error':result.stdout[-1600:] if result.returncode else None}
     except subprocess.TimeoutExpired:
-        return {'name':name,'started_at':started,'finished_at':now(),'ok':False,'error':f'Stage exceeded {timeout} seconds; last verified records retained.'}
+        return {'name':name,'started_at':started,'finished_at':now(),'ok':False,
+                'error':f'Stage exceeded {timeout:g} seconds; last verified records retained.'}
+
+
+def recent_result_path(budget):
+    return budget.path.with_name(budget.run_id+'-recent-result.json')
+
+
+def recent_phase():
+    """Run the recent search under the same hard outer timeout as other network phases."""
+    budget=budget_from_environment()
+    if budget is None:raise ValueError('Recent scan phase requires a network-round context')
+    output=recent_result_path(budget)
+    output.unlink(missing_ok=True)
+    result=stage('recent_arxiv',['scripts/scan.py','--recent-only'])
+    if not result['ok']:return result
+    receipt=read_json(output,{})
+    phase=receipt.get('phase')
+    if (receipt.get('round_id')!=budget.run_id or not isinstance(phase,dict)
+            or phase.get('name')!='recent_arxiv' or type(phase.get('ok')) is not bool):
+        return {**result,'ok':False,'error':'No complete recent-search receipt for this network round.'}
+    return {**result,**phase}
+
+
+def candidate_phase(config):
+    """Validate a new child result without installing it before the catalog build."""
+    limits=candidate_stage.settings(config)
+    started=now()
+    idle={'name':candidate_stage.PHASE,'started_at':started,'finished_at':started,
+          'ok':True,'request_attempted':False,'requests_attempted':0,'published':False,
+          'new_unique_repositories':0,'warnings':[]}
+    if not limits['enabled']:return {**idle,'state':'disabled'}
+    budget=budget_from_environment()
+    if budget is None:raise ValueError('Candidate phase requires a network-round context')
+    reserved=budget.summary()['requests_reserved']
+    if (reserved>=budget.summary()['max_requests'] or budget.remaining_seconds()<=candidate_stage.FINALIZE_SECONDS):
+        return {**idle,'state':'deferred_budget','deferred':True,
+                'reason':'The shared network allowance is exhausted; durable candidate state is unchanged.'}
+    import candidate_state
+    baseline=candidate_state.load_snapshot(DATA)
+    if budget.remaining_seconds()<=candidate_stage.FINALIZE_SECONDS:
+        return {**idle,'state':'deferred_budget','deferred':True,
+                'reason':'The shared time allowance expired during checkpoint validation; durable files are unchanged.'}
+    output=candidate_stage.result_path(budget);output.unlink(missing_ok=True)
+    result=stage(candidate_stage.PHASE,['scripts/scan_candidate_stage.py'],timeout=limits['max_seconds'])
+    if not result['ok']:return {**result,'published':False}
+    receipt=read_json(output,{})
+    phase=receipt.get('phase')
+    if (type(receipt.get('schema_version')) is not int or receipt['schema_version']!=1
+            or receipt.get('round_id')!=budget.run_id or receipt.get('baseline_files')!=baseline.fingerprints
+            or not isinstance(phase,dict) or phase.get('name')!=candidate_stage.PHASE
+            or phase.get('ok') is not True or phase.get('published') is not False):
+        return {**result,'ok':False,'published':False,'error':'No complete candidate receipt for this network round.'}
+    if phase.get('state')=='deferred_budget':
+        if (phase.get('requests_attempted')!=0 or phase.get('request_attempted') is not False
+                or phase.get('files')!=baseline.fingerprints or phase.get('run_id') is not None
+                or budget.summary()['requests_reserved']!=reserved):
+            return {**result,'ok':False,'published':False,'error':'Invalid candidate budget-deferral receipt.'}
+        return {**result,**phase}
+    candidate_stage.checked_summary({**phase,'status':phase.get('scan_status')})
+    staged=candidate_state.load_snapshot(candidate_stage.runtime_path(budget)/'public')
+    reservations=budget.summary()['requests_reserved']-reserved
+    new_receipts=staged.state['receipts'][len(baseline.state['receipts']):]
+    successful=sum(r['outcome']=='accepted' and r['status']==200 and r['raw_body_retained'] for r in new_receipts)
+    current_run=staged.state['runs'][-1]
+    query_statuses=dict(collections.Counter(q['status'] for q in staged.state['queries']))
+    if (phase.get('files')!=staged.fingerprints or len(staged.state['runs'])!=len(baseline.state['runs'])+1
+            or phase.get('run_id')!=current_run['id'] or phase.get('scan_status')!=current_run['status']
+            or any(phase.get(key)!=current_run[key] for key in ('requests_attempted','new_unique_repositories','unknown_requests','rejected_rows'))
+            or phase.get('request_attempted') is not (current_run['requests_attempted']>0)
+            or phase.get('total_unique_repositories')!=len(staged.state['records'])
+            or phase.get('pending_queries')!=query_statuses.get('pending',0)
+            or phase.get('query_status_counts')!=query_statuses or phase.get('epoch_id')!=staged.state.get('current_epoch_id')
+            or type(phase.get('successful_responses')) is not int or phase['successful_responses']!=successful
+            or phase.get('requests_attempted')>reservations or reservations>limits['max_requests']):
+        return {**result,'ok':False,'published':False,'error':'Candidate child result differs from its staged state or shared request ledger.'}
+    # Derive alerts from the verified counts/status rather than trusting a child's display fields.
+    verified=candidate_stage.phase_summary({**phase,'status':current_run['status'],
+        'verification':{'successful_receipts_replayed':successful}},phase['started_at'])
+    phase.update({key:verified[key] for key in ('warnings','state','complete')})
+    return {**result,**phase,'baseline_files':baseline.fingerprints,'ready_to_publish':True,
+            'network_reservations':reservations}
+
+
+def publish_candidate_phase(phase,budget):
+    """Install only a validated child result, rebound to the final catalog bytes."""
+    if not phase.get('ready_to_publish'):return
+    import candidate_state
+    staged=candidate_state.load_snapshot(candidate_stage.runtime_path(budget)/'public')
+    if staged.fingerprints!=phase['files']:
+        raise ValueError('Candidate staged files changed after the child receipt')
+    publication=candidate_state.publish_snapshot(candidate_stage.runtime_path(budget)/'public',DATA,
+        expected_prior_hashes=phase['baseline_files'],catalog_bytes=(DATA/'catalog.jsonl').read_bytes())
+    if publication['staged_files']!=phase['files']:
+        raise ValueError('Candidate publication differs from the validated child output')
+    phase.update(staged_files=phase['files'],files=publication['files'],published=True,
+                 comparison_context_rebound=True,ready_to_publish=False)
+
+
+def candidate_consistency(config):
+    """Final durable-state gate, independent of this round's candidate outcome."""
+    try:
+        result=validate_candidate_snapshot(DATA,require_checkpoint=candidate_stage.settings(config)['enabled'])
+        return {'ok':True,'checked_at':now(),**result}
+    except Exception as error:
+        return {'ok':False,'checked_at':now(),'error':str(error)}
 
 
 def reusable_recent_snapshot(report, query, since, cutoff, day):
@@ -126,6 +242,9 @@ def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
     for phase in phases:
         if not phase.get('ok'):problems.append(phase['name']+': '+phase.get('error','failed'))
         problems.extend(phase.get('warnings',[]))
+        validation=phase.get('durable_validation',{})
+        if validation.get('ok') is False:
+            problems.append('Candidate snapshot integrity: '+validation.get('error','invalid durable triplet'))
     failed_sources=[r['id'] for r in source_runs if not r.get('ok')]
     successful_query=lambda r:r.get('state')=='success' and r.get('evidence',{}).get('ok') and not r.get('parse_error')
     failed_queries=[r['id'] for r in hf_runs if not successful_query(r)]
@@ -133,8 +252,11 @@ def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
     if failed_queries:problems.append('Paper searches failed: '+', '.join(failed_queries))
     if harvest_failures:problems.append(f'{len(harvest_failures)} arXiv identifiers remain unresolved in the retained harvest ledger.')
     phase_ok={p['name']:p.get('ok',False) for p in phases}
-    usable=(phase_ok.get('discovery') and any(r.get('ok') and not r.get('parse_error') for r in source_runs)) or (phase_ok.get('huggingface') and any(successful_query(r) for r in hf_runs)) or phase_ok.get('recent_arxiv')
-    fatal=not usable or any(p['name'] in {'build','validate'} and not p.get('ok') for p in phases)
+    candidate_usable=any(p['name']==candidate_stage.PHASE and p.get('ok') and p.get('published')
+        and p.get('successful_responses',0)>0 for p in phases)
+    usable=(phase_ok.get('discovery') and any(r.get('ok') and not r.get('parse_error') for r in source_runs)) or (phase_ok.get('huggingface') and any(successful_query(r) for r in hf_runs)) or phase_ok.get('recent_arxiv') or candidate_usable
+    fatal=not usable or any(p['name'] in {'build','validate'} and not p.get('ok') for p in phases) or any(
+        p.get('durable_validation',{}).get('ok') is False for p in phases)
     return ('failed' if fatal else 'partial' if problems else 'success'),problems
 
 
@@ -146,11 +268,22 @@ def workflow_message(text):
 def run_scan():
     config=read_json(DATA/'scan-config.json')
     if not 1<=config['recent_lookback_days']<=31 or not 1<=config['recent_max_results']<=2000:raise ValueError('Unbounded recent-search configuration')
+    candidate_stage.settings(config)
+    cooldowns=read_json(DATA/'scan-status.json',{}).get('network_budget',{}).get('provider_cooldowns',{})
+    budget=RoundBudget.create(ROOT/'.cache/scan-rounds',
+        max_requests=config.get('network_max_requests',DEFAULT_REQUESTS),
+        max_seconds=config.get('network_max_seconds',DEFAULT_SECONDS),cooldowns=cooldowns)
+    with budget.activate():
+        return run_round(config,budget)
+
+
+def run_round(config,budget):
     started=now();before=counts();old_papers={r['id'] for r in read_jsonl(DATA/'papers.jsonl')};old_candidates={r['id'] for r in read_jsonl(DATA/'candidates.jsonl')}
     repo=os.getenv('GITHUB_REPOSITORY','');run_id=os.getenv('GITHUB_RUN_ID','')
     run_url=f'https://github.com/{repo}/actions/runs/{run_id}' if repo and run_id else None
     # Replaced when the scan finishes; a run killed before then leaves this receipt instead of the previous run's.
-    write_json(DATA/'scan-status.json',{'id':'scan:'+started,'schema_version':1,'status':'running','started_at':started,'finished_at':None,'run_url':run_url})
+    write_json(DATA/'scan-status.json',{'id':'scan:'+started,'schema_version':1,'status':'running','started_at':started,'finished_at':None,'run_url':run_url,
+        'network_budget':budget.summary()})
     phases=[stage('discovery',['scripts/catalog.py','discover','--refresh'])]
     source_runs=read_json(DATA/'discovery-runs.json',[])
     hf_limited=phases[0]['ok'] and any(r.get('status')==429 and r.get('provider_host')=='huggingface.co'
@@ -160,15 +293,29 @@ def run_scan():
             'request_attempted':False,'error':'Deferred after the publisher-source phase returned Hugging Face HTTP 429.'})
     else:
         phases.append(stage('huggingface',['scripts/discover_papers.py','--refresh']))
-    try:phases.append(recent_papers(config))
+    try:phases.append(recent_phase())
     except Exception as error:phases.append({'name':'recent_arxiv','ok':False,'error':str(error)})
     if phases[-1].get('rate_limited'):
         phases.append({'name':'harvest','ok':False,'deferred':True,
             'error':'Deferred after the recent arXiv query returned HTTP 429; discovered identifiers remain queued.'})
     else:
         phases.append(stage('harvest',['scripts/catalog.py','harvest','--limit',str(config['harvest_limit'])]))
+    try:phases.append(candidate_phase(config))
+    except Exception as error:phases.append({'name':candidate_stage.PHASE,'ok':False,'published':False,'error':str(error)})
+    candidate=phases[-1]
     phases.append(stage('build',['scripts/catalog.py','build']))
+    if phases[-1]['ok']:
+        try:publish_candidate_phase(candidate,budget)
+        except Exception as error:candidate.update(ok=False,published=False,error='Candidate publication rejected: '+str(error))
+    elif candidate.get('ready_to_publish'):
+        candidate['publication_deferred']='Catalog build failed; durable candidate files remain unchanged.'
     phases.append(stage('validate',['scripts/catalog.py','validate']))
+    # A writer can fail during both replacement and rollback. Do not allow
+    # usable legacy sources or a deferred candidate phase to mask torn state.
+    candidate['durable_validation']=candidate_consistency(config)
+    if not candidate['durable_validation']['ok']:
+        candidate['ok']=False
+        candidate.setdefault('error','Durable candidate snapshot failed its final integrity gate.')
     source_runs=read_json(DATA/'discovery-runs.json',[])
     hf_report=read_json(DATA/'paper-discovery-status.json',{})
     hf_current=(hf_report.get('schema_version')==1 and hf_report.get('finished_at')
@@ -185,7 +332,8 @@ def run_scan():
         'pending_metadata_changes':len(read_jsonl(DATA/'metadata-updates.jsonl')),'source_fetches':{'successful':sum(bool(r.get('ok')) for r in source_runs) if phases[0]['ok'] else 0,'total':len(source_runs)},
         'paper_searches':{'successful':sum(r.get('state')=='success' for r in hf_runs),'total':hf_report.get('configured_query_count',0) if hf_current else 0,
             'unique_identifiers':hf_report.get('unique_identifiers',0) if hf_current else 0,'new_candidates':hf_report.get('new_candidate_count',0) if hf_current else 0},
-        'phases':phases,'warnings':problems,'policy':config['policy']}
+        'candidate_observations':{k:v for k,v in candidate.items() if k not in {'name','baseline_files','ready_to_publish'}},
+        'phases':phases,'warnings':problems,'policy':config['policy'],'network_budget':budget.summary()}
     write_json(DATA/'scan-status.json',report)
     history=read_jsonl(DATA/'scan-history.jsonl');history.append({k:v for k,v in report.items() if k!='phases'})
     write_jsonl(DATA/'scan-history.jsonl',history[-config['history_limit']:])
@@ -228,7 +376,16 @@ def check_freshness(current=None):
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check-freshness',action='store_true',help='Only check that a completed scan finished within max_scan_age_hours of data/scan-config.json; writes no data.')
-    return check_freshness() if parser.parse_args(argv).check_freshness else run_scan()
+    parser.add_argument('--recent-only',action='store_true',help=argparse.SUPPRESS)
+    args=parser.parse_args(argv)
+    if args.recent_only:
+        if args.check_freshness:parser.error('Recent phase and freshness check are mutually exclusive')
+        budget=budget_from_environment()
+        if budget is None:parser.error('Recent phase requires a network-round context')
+        phase=recent_papers(read_json(DATA/'scan-config.json'))
+        write_json(recent_result_path(budget),{'round_id':budget.run_id,'phase':phase})
+        return 0
+    return check_freshness() if args.check_freshness else run_scan()
 
 
 if __name__=='__main__':

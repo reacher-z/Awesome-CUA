@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Say One Thing, Do Another? Diagnosing Reasoning-Execution Gaps in VLM-Powered Mobile-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.02204",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "observability"
+    ],
+    "summary": "Adds Ground-Truth Alignment, which checks whether the action implied by a mobile agent's chain of thought matches the reference, and pairs it with exact match to measure execution and reasoning gaps.",
+    "verify_terms": [
+      "Diagnosing Reasoning-Execution Gaps"
+    ],
+    "scope": "core",
+    "notes": "An AgentCPM-GUI-8B evaluator maps each chain of thought to an action; it is checked against two-annotator consensus labels from a stratified 1,800-instance sample. Evaluations cover AITZ, CAGUI and the high-level split of AndroidControl with six models from the AgentCPM-GUI, UI-TARS and GUI-Owl series, plus a UI-TARS 2B/7B/72B scaling study; execution gaps exceed reasoning gaps in 14 of 18 model-dataset pairs. All evaluations are step-level on recorded screens, not live device runs. Data and code: github.com/LZ-Dong/Reasoning-Executing-Gaps (not curated here). No results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-6, Figures 2-5 and Appendices A-B.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.02204v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.02204v1",
+        "retrieved_at": "2026-10-20T07:37:01Z",
+        "sha256": "89833637569b9c968c9bfb63324d6ec3f938f4a7a3e3bd29405bf250fbc9eb31",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9f14a83bdb25861d821a6cf3df9c4722b4f77a31f3edbf81d65adcdaf684f45e",
+    "reviewed_at": "2026-10-20T07:37:05Z"
   }
 ]

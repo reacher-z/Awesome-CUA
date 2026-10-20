@@ -5,7 +5,7 @@ Evidence snapshot through **2026-10-18T13:06:20.028238+00:00**. Generated from c
 - 3,175 resource records: 1,614 curated; 1,561 bibliographic metadata only.
 - 2,715 paper and survey records, including 2,702 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,838 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,239 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links, 36 other addresses of indexed resources and 0 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
+- 4,239 discovery identifiers; 904 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links, 36 other addresses of indexed resources and 1 resources reviewed as outside the computer-use scope, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -37,7 +37,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 0 | 83 | OK · 2026-10-17 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 0 | 38 | OK · 2026-10-17 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 0 | 20 | OK · 2026-10-17 |
-| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 0 | 30 | OK · 2026-10-17 |
+| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 1 | 29 | OK · 2026-10-17 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 0 | 82 | OK · 2026-10-17 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 0 | 6 | OK · 2026-10-17 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 0 | 44 | OK · 2026-10-17 |
@@ -54,7 +54,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 0 | 46 | OK · 2026-10-17 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 0 | 10 | OK · 2026-10-17 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 0 | 6 | OK · 2026-10-17 |
-| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 0 | 37 | OK · 2026-10-17 |
+| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 1 | 36 | OK · 2026-10-17 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | 0 | OK · 2026-10-18 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 0 | 8 | OK · 2026-10-18 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 0 | 3 | OK · 2026-10-18 |

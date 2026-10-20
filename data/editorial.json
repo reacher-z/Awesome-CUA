@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "MemVenom: Triggered Poisoning of Multimodal Memories in Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.10742",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "memory",
+      "web-navigation"
+    ],
+    "summary": "MemVenom poisons the graph-structured multimodal memory of web agents, using an optimized on-page visual trigger to force recall and perturbed images with OCR injection to make agents pursue attacker goals.",
+    "verify_terms": [
+      "MemVenom: Triggered Poisoning of Multimodal Memories"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.10742v1"
+    ],
+    "scope": "core",
+    "notes": "Per the v1 full text, the victims are SeeAct, LiteWebAgent and a ReAct-style web agent with Qwen3-VL and GPT-5.4 backbones, run on SeeAct's Mind2Web-style task set across 10 website categories. Benign tasks use public websites, while the four OWASP-inspired side goals (redirection, privacy leakage, a fake transfer, file deletion) run only on localhost sandbox pages. The external memory is the authors' Qdrant and Kuzu graph implementation, and two lightweight defenses (hardcoded safety rules, LlamaGuard) reduce but do not eliminate the attack. Results were not reproduced, and no code repository is named.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2606.10742v1",
+        "sha256": "b0837219969ec5f7c85137dd2d5afb02e026c81c8c54009a180543e5e8676488",
+        "retrieved_at": "2026-10-20T04:12:10Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8bc09cd39f5973a814b67e175bf6f18012242a05145e309e945829be0a66a571",
+    "reviewed_at": "2026-10-20T04:12:31Z"
   }
 ]

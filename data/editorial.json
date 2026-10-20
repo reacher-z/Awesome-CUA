@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Spatio-Temporal Token Pruning for Efficient High-Resolution GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.23235",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "training-free",
+      "interaction-history",
+      "screen-understanding"
+    ],
+    "summary": "Proposes GUIPruner, training-free token pruning for screenshot-based GUI agents that downsizes older history frames by decay-based resizing and prunes the current screen while keeping its layout and interactive elements.",
+    "verify_terms": [
+      "Spatio-Temporal Token Pruning for Efficient High-Resolution GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.23235v1"
+    ],
+    "scope": "core",
+    "notes": "Evaluated with Qwen2-VL-2B and Qwen2.5-VL-7B, each first fine-tuned on the target datasets, on AITW, GUI-Odyssey, AndroidControl and Mind2Web at 10%, 20% and 40% history retention, against DivPrune, CDPruner, FastV and MoB. The paper reports 3.4x fewer FLOPs and 3.3x faster vision encoding on Qwen2-VL-2B while keeping over 94% of the original performance. No code release is named. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2602.23235v1",
+        "retrieved_at": "2026-10-20T04:39:43Z",
+        "sha256": "9e8335ec0c92550b9096ab30b3168823fccbd64fdb3b155782ce1a168b613cc0",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 3.2-3.3 (history and current-frame redundancy), 4.2-4.3 (Temporal-Adaptive Resolution, Stratified Structure-aware Pruning) and 5.1-5.4 (setup, overall performance, efficiency).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "295b20884009cca5d84746a763ed0bdeceb4361e3a6cef881ef8529b37b921e6",
+    "reviewed_at": "2026-10-20T04:40:14Z"
   }
 ]

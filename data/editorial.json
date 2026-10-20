@@ -63844,5 +63844,104 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Evoui Browser",
+    "kind": "tool",
+    "url": "https://github.com/Salmonbird/evoui-browser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "workflow",
+      "efficiency"
+    ],
+    "summary": "Agent Skill and Python runtime for agent-browser that records browser runs, keeps verified navigation and routines as site knowledge, and replays those mechanical steps when fresh page state still matches.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Evoui Browser"
+    ],
+    "aliases": [
+      "evoui-browser"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Marked experimental by its README. Requires macOS or Linux, Python 3.10 or newer and Node.js 24 or newer; Windows is not supported. agent-browser, pinned to 0.33.1 in the README, performs every browser action; Evoui records the managed agent-browser calls, keeps only navigation and routines with a clear future use and enough evidence, and on a later task checks fresh page state before replaying applicable mechanical steps. A page mismatch, missing target, failed postcondition or unknown outcome returns control to the host agent, and a possibly applied click or submission is not blindly retried. Supported hosts are Codex, Claude Code and Cursor. Learned knowledge and run evidence are stored under ~/.evoui; the README states that cleanup is not redaction or a privacy boundary. Code was read, not run.",
+    "details": {
+      "availability": "Public Python source installed as an Agent Skill; it needs the separately installed agent-browser CLI and a host coding agent, and bundles no model.",
+      "repository_revision": "5bcca670074e040c43788151846eb2ba77be5094"
+    },
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:vercel-labs/agent-browser",
+        "evidence_url": "https://raw.githubusercontent.com/Salmonbird/evoui-browser/5bcca670074e040c43788151846eb2ba77be5094/README.md"
+      }
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes",
+          "relations",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/Salmonbird/evoui-browser/5bcca670074e040c43788151846eb2ba77be5094/README.md",
+        "sha256": "409884575afda67503df39642fe100043fc2e6165be9d41239946c3d4b82fb34",
+        "retrieved_at": "2026-10-20T08:24:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Salmonbird/evoui-browser/5bcca670074e040c43788151846eb2ba77be5094/skills/evoui-browser/SKILL.md",
+        "sha256": "7af36a25fa770550e80d7fc64a5021eb728b3b572572567b5dea8151cb982c2a",
+        "retrieved_at": "2026-10-20T08:24:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Salmonbird/evoui-browser/5bcca670074e040c43788151846eb2ba77be5094/skills/evoui-browser/scripts/evoui/replay/engine.py",
+        "sha256": "dba0d5fc2509efb2f1bef2fb04265c1f1ee2249755c926f8374fcd78b7f05670",
+        "retrieved_at": "2026-10-20T08:24:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Salmonbird/evoui-browser/5bcca670074e040c43788151846eb2ba77be5094/LICENSE",
+        "sha256": "8a7bae61bf5eefb27c83c23cde3459f80cd4dd339d08fb33d6a47383b3ea51eb",
+        "retrieved_at": "2026-10-20T08:24:02Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit 5bcca67, SKILL.md, the replay engine source and the root LICENSE. No code execution.",
+    "reviewed_sha256": "409884575afda67503df39642fe100043fc2e6165be9d41239946c3d4b82fb34",
+    "reviewed_at": "2026-10-20T08:24:22Z"
   }
 ]

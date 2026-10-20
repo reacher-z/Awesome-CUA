@@ -29,7 +29,7 @@ class PartialScanReportingTests(unittest.TestCase):
                 return {'name': name, 'ok': name not in errors, 'error': errors.get(name), 'started_at': '2026-10-17T00:00:00Z'}
             env = {'GITHUB_STEP_SUMMARY': str(path / 'summary.md') if actions else '', 'GITHUB_OUTPUT': str(path / 'output') if actions else ''}
             out = io.StringIO()
-            with mock.patch.object(scan, 'stage', side_effect=stage), mock.patch.object(scan, 'recent_papers', return_value=recent), \
+            with mock.patch.object(scan, 'stage', side_effect=stage), mock.patch.object(scan, 'recent_phase', return_value=recent), \
                     mock.patch.dict(scan.os.environ, env), contextlib.redirect_stdout(out):
                 code = scan.run_scan()
             read = lambda name: (path / name).read_text() if (path / name).exists() else ''

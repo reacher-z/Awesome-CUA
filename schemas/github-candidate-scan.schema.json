@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://awesomecua.github.io/schemas/github-candidate-scan.schema.json",
   "title": "Public GitHub candidate metadata observations",
-  "description": "Independent candidate ledger. Numeric repository IDs count once; metadata observation is neither relevance review nor active-catalog approval. Pagination statuses describe observed API windows, not global recall.",
+  "description": "Independent candidate ledger. Numeric repository IDs count once; metadata observation is neither relevance review nor active-catalog approval. Pagination statuses describe observed API windows, not global recall. Version2 retains explicit migration/topic-expansion/daily epoch history and bounded full-traversal restarts; v1 is still readable. Shared reservations may exceed HTTP attempts when I/O is deferred after reservation.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -19,7 +19,11 @@
   ],
   "properties": {
     "schema_version": {
-      "const": 1
+      "enum": [
+        1,
+        2
+      ],
+      "type": "integer"
     },
     "provider": {
       "const": "github"
@@ -244,6 +248,22 @@
           "type": "null"
         }
       ]
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/epoch"
+      }
+    },
+    "current_epoch_id": {
+      "type": "string",
+      "pattern": "^epoch:[0-9a-f]{24}$"
+    },
+    "query_rechecks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/queryRecheck"
+      }
     }
   },
   "$defs": {
@@ -640,7 +660,8 @@
             "redirect_not_followed",
             "fetch_failed",
             "response_too_large",
-            "malformed_response"
+            "malformed_response",
+            "quarantined"
           ]
         },
         "source_url": {
@@ -866,8 +887,296 @@
         "after_unique_repositories": {
           "type": "integer",
           "minimum": 0
+        },
+        "strict_replay": {
+          "type": "boolean"
+        },
+        "epoch_id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "shared_budget": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "round_id",
+            "reservations_before",
+            "reservations_after",
+            "reservations_charged",
+            "deferred_reason",
+            "deferred_provider"
+          ],
+          "properties": {
+            "round_id": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{32}$"
+            },
+            "reservations_before": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reservations_after": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reservations_charged": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "deferred_reason": {
+              "enum": [
+                null,
+                "request_budget",
+                "wall_budget",
+                "provider_cooldown"
+              ]
+            },
+            "deferred_provider": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[a-z0-9.-]+$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "epoch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "configuration",
+        "root_query_ids",
+        "created_at",
+        "reason",
+        "previous_epoch_id",
+        "source_state_sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "configuration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "topics",
+            "created_after",
+            "created_before"
+          ],
+          "properties": {
+            "topics": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "computer-use",
+                  "gui-agent",
+                  "gui-agents",
+                  "gui-automation",
+                  "desktop-automation",
+                  "browser-agent",
+                  "browser-agents",
+                  "browser-automation",
+                  "android-automation"
+                ]
+              }
+            },
+            "created_after": {
+              "type": "string",
+              "format": "date"
+            },
+            "created_before": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "root_query_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^search:[0-9a-f]{24}$"
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reason": {
+          "enum": [
+            "initial",
+            "v1_migration",
+            "topic_expansion",
+            "daily_continuation"
+          ]
+        },
+        "previous_epoch_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^epoch:[0-9a-f]{24}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_state_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "queryRecheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "query_id",
+        "epoch_id",
+        "restarted_at",
+        "receipt_boundary",
+        "previous"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^recheck:[0-9a-f]{24}$"
+        },
+        "query_id": {
+          "type": "string",
+          "pattern": "^search:[0-9a-f]{24}$"
+        },
+        "epoch_id": {
+          "type": "string",
+          "pattern": "^epoch:[0-9a-f]{24}$"
+        },
+        "restarted_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "receipt_boundary": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "previous": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "next_page",
+            "reported_total",
+            "total_changed",
+            "incomplete_results_seen",
+            "seen_repository_ids",
+            "rejected_rows",
+            "last_attempt"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "partial_results",
+                "partial_api_window"
+              ]
+            },
+            "next_page": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 11
+            },
+            "reported_total": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "total_changed": {
+              "type": "boolean"
+            },
+            "incomplete_results_seen": {
+              "type": "boolean"
+            },
+            "seen_repository_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "rejected_rows": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "last_attempt": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": 2
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "epochs",
+          "current_epoch_id",
+          "query_rechecks"
+        ]
+      },
+      "else": {
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "epochs"
+              ]
+            },
+            {
+              "required": [
+                "current_epoch_id"
+              ]
+            },
+            {
+              "required": [
+                "query_rechecks"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
 }

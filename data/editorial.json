@@ -63844,5 +63844,118 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "record-and-replay",
+    "kind": "tool",
+    "url": "https://github.com/ugarchance/record-and-replay-skill",
+    "aliases": [
+      "record-and-replay-skill"
+    ],
+    "environments": [
+      "web",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "imitation-learning"
+    ],
+    "summary": "Agent-agnostic SKILL.md recorder that captures demonstrations in a Playwright browser (selector candidates, traces) or on the desktop (input events, click screenshots, macOS AX targets) for agents to turn into skills.",
+    "scope": "core",
+    "verify_terms": [
+      "record-and-replay"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Installs as a SKILL.md skill linked into the Claude Code, Codex CLI and opencode skill directories; the host agent starts and stops the recorders through shell commands. Browser mode (scripts/recorder.mjs) opens a persistent headed Chrome or Chromium context with Playwright, injects an init script that logs clicks, debounced inputs, selections and navigations to events.jsonl with testId, role-and-name, id, name, text and CSS selector candidates, and saves Playwright trace chunks; password, card and OTP-like fields are masked heuristically in events.jsonl but not in the traces. Desktop mode (scripts/desktop-lite-recorder.py) records pynput mouse and keyboard events, active-window changes and a half-resolution JPEG at each click (at most one per 700 ms) on macOS, Windows and Linux X11, and on macOS attaches the accessibility element under the cursor; desktop recordings are not masked. SKILL.md then has the agent write a new skill, using scripts/replay-template.mjs (Playwright semantic locators) when browser replay is needed; desktop replay is left to an external accessibility-tree computer-use layer such as cua-driver, which this repository does not ship. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT Node.js and Python source installed as an agent skill; the host coding agent supplies the model, and desktop replay needs a separate computer-use tool.",
+      "repository_revision": "5e6b52ecb097df67eb1c94e83abfd5f39c663ef5"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/5e6b52ecb097df67eb1c94e83abfd5f39c663ef5/SKILL.md",
+        "sha256": "bb288f8965c84082a084d51eba094b6514084c963d7cbdaa011cbaa0c2a59191",
+        "retrieved_at": "2026-10-20T08:39:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/5e6b52ecb097df67eb1c94e83abfd5f39c663ef5/scripts/recorder.mjs",
+        "sha256": "9388b651dbe05d064884aa434e45d406326e0d76609894f8a3957af7e56cc7a0",
+        "retrieved_at": "2026-10-20T08:39:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/5e6b52ecb097df67eb1c94e83abfd5f39c663ef5/scripts/desktop-lite-recorder.py",
+        "sha256": "d096a21a83c4a60afddcfa3488c89f9c5c1dafaffd5d42941e8b535afae59d38",
+        "retrieved_at": "2026-10-20T08:39:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/5e6b52ecb097df67eb1c94e83abfd5f39c663ef5/scripts/replay-template.mjs",
+        "sha256": "15bd2faf543b57222a274a4b8232147e942a85d38015c1bfe58d5616226e75a4",
+        "retrieved_at": "2026-10-20T08:40:00Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/5e6b52ecb097df67eb1c94e83abfd5f39c663ef5/package.json",
+        "sha256": "a6da76ea16c877345f7c38dd266eedac4aad2ab62a036ef71f40d7f41abafac8",
+        "retrieved_at": "2026-10-20T08:40:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/5e6b52ecb097df67eb1c94e83abfd5f39c663ef5/LICENSE",
+        "sha256": "085b5556d43548d16025100545a1c32e502004e75a9e063f845dc42bffb4aea1",
+        "retrieved_at": "2026-10-20T08:40:14Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "419f6bb5201a4b933f5a51a4a9bdaaafed5c1b0523a663aacd562d6206eeaee5",
+    "reviewed_at": "2026-10-20T08:41:24Z"
   }
 ]

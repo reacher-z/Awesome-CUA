@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-112 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+113 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Tools (1)](#tools) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,14 @@
 | [Surfkit](https://github.com/agentsea/surfkit) | desktop | — | code MIT | Python toolkit and CLI for building, publishing and running multimodal agents that operate devices such as Ubuntu desktops, locally or on Kubernetes, with task trackers and an agent hub. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/surfkit/HEAD/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
 | [Workflow-Guided Exploration research code](https://github.com/stanfordnlp/wge) | web | [1802.08802](https://arxiv.org/abs/1802.08802) (2018) | code Apache-2.0 | Research code that learns browser-control policies by constraining exploration with workflows induced from demonstrations, with a Selenium-based MiniWoB environment and experiment harness. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/stanfordnlp/wge/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web, desktop, macos, windows, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [record-and-replay](https://github.com/ugarchance/record-and-replay-skill) | — | code MIT | Agent-agnostic SKILL.md recorder that captures demonstrations in a Playwright browser (selector candidates, traces) or on the desktop (input events, click screenshots, macOS AX targets) for agents to turn into skills. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ugarchance/record-and-replay-skill/HEAD/README.md) |
 
 ## Products
 

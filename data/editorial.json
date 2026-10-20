@@ -63844,5 +63844,50 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Promoting Sustainable Web Agents: Benchmarking and Estimating Energy Consumption through Empirical and Theoretical Analysis",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.04481",
+    "summary": "Measures GPU energy of five open-source web agents on Mind2Web across eight GPU types, estimates energy for MindAct and LASER from their published designs, and compares energy with step success rate.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "Promoting Sustainable Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2511.04481v1"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9bb9d874094f8df419680f7e27886aa562374adf07f40dc4ef957a6f4e2ed66c",
+    "reviewed_at": "2026-10-20T05:26:01Z",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope"
+    ],
+    "notes": "The benchmarked agents are AutoWebGLM, MindAct, MultiUI, Synapse and Synatra, each run five times per GPU with energy recorded by the carbontracker library; Mind2Web was chosen because its tasks do not change, unlike live benchmarks. Fully closed agents such as Operator and Project Mariner are not estimated. It shares authors with the curated position paper arxiv:2502.17903. The paper links code at github.com/DFKIEI/WebAgentEnergy. Reviewed against the v1 abstract and HTML full text; results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2511.04481v1",
+        "sha256": "591c1cb228fbb3859f3eb4ac9fe550f37429430a5115b988ea3b579d161f2ca4",
+        "retrieved_at": "2026-10-20T05:25:43Z"
+      }
+    ]
   }
 ]

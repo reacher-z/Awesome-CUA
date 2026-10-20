@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import build as builder
 from build import write_sqlite
+from catalog_citation import catalog_bibtex
 from data_hub import build_download_manifest
 from export_citations import build_citation_exports
 from export_rag import build_exports, encode_documents
@@ -89,6 +90,7 @@ def make_release_fixture(root, *, with_scripts=False):
     write_sqlite(rows,site/'downloads/catalog.sqlite')
     build_exports(rows,site/'downloads',raw)
     build_citation_exports(rows,site/'downloads',raw)
+    (site/'downloads/awesomecua.bib').write_text(catalog_bibtex('2026-10-17T00:00:00Z'),encoding='utf-8')
     write_topic_exports(site,rows,raw)
     write_json('downloads/benchmarks-profiles.json',profile_export(rows,'benchmark'))
     write_json('downloads/datasets-profiles.json',profile_export(rows,'dataset'))

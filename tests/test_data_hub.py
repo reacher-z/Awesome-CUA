@@ -15,6 +15,7 @@ import jsonschema
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build import write_sqlite
+from catalog_citation import catalog_bibtex
 from data_hub import build_download_manifest, data_hub_body
 from export_citations import build_citation_exports, encode_citations
 from export_rag import build_exports, encode_documents
@@ -82,6 +83,7 @@ class DataHubTests(unittest.TestCase):
         write_sqlite(self.rows, self.destination / 'downloads/catalog.sqlite')
         build_exports(self.rows, self.destination / 'downloads', self.catalog_bytes)
         build_citation_exports(self.rows, self.destination / 'downloads', self.catalog_bytes)
+        (self.destination / 'downloads/awesomecua.bib').write_text(catalog_bibtex('2026-01-01T00:00:00Z'), encoding='utf-8')
         self.write_json('downloads/topics.json', {
             'catalog_sha256': hashlib.sha256(self.catalog_bytes).hexdigest(),
             'topics': [{'id': 'grounding'}, {'id': 'data-generation'}],

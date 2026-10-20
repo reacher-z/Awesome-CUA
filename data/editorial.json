@@ -63844,5 +63844,72 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Yutori",
+    "kind": "product",
+    "url": "https://yutori.com",
+    "evidence_urls": [
+      "https://yutori.com/llms.txt"
+    ],
+    "environments": [
+      "web",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Yutori's web-agent platform: the Navigator computer-use model API (n1.5 for browsers, n2 for full desktops), task APIs for browsing, research and Scout web monitoring, and the Delegate personal agent.",
+    "scope": "core",
+    "verify_terms": [
+      "Yutori"
+    ],
+    "notes": "Yutori was founded by Abhishek Das, Devi Parikh and Dhruv Batra and announced its seed round in March 2025. Navigator models are called through an OpenAI Chat Completions-compatible endpoint: the caller sends a screenshot and a task, the model returns actions as tool calls, and the caller executes them and sends a fresh screenshot in an agent loop. n1.5 drives browsers in a normalized 1000x1000 coordinate space with a core set of 18 coordinate-based tools or an expanded set that adds element extraction, find, set_element_value and JavaScript execution, and can return JSON matching a caller schema. n2 operates a full desktop through batched GUI actions plus bash and file tools; the SDK ships local Docker and Daytona examples, and Yutori MCP runs it on the visible macOS desktop, sending screen contents to Yutori. A Python SDK wraps the APIs, a CLI runs research, browsing and Scout tasks, and an MCP server with workflow skills exposes these tasks and computer use to coding agents. Scouts monitor the web on a schedule, and Delegate is a consumer agent meant to complete handed-off tasks independently. Yutori also publishes a computer-use leaderboards page compiling reported results for six benchmarks. The publisher describes its Online-Mind2Web figure as independently verified and its Navi-Bench v2 and Westworld figures as its own evaluations; capabilities, pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": null,
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://yutori.com/api/llms.txt",
+        "sha256": "5b14d5fedf3be3ea19e70ac6425b7fd8bb80aeaab17b379c636ef66a7bf3b423",
+        "retrieved_at": "2026-10-20T05:22:56Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://yutori.com/leaderboards.md",
+        "sha256": "63614bc1a81a0090992b8ac6ed1ee9471ca22239e699f14e3480657a8c1f24db",
+        "retrieved_at": "2026-10-20T05:22:56Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "822e35d2ec69df8b89cdda8d03ff48fb0b345365b92534e6af00a7ae643cce3a",
+    "reviewed_at": "2026-10-20T05:23:21Z"
   }
 ]

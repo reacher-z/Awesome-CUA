@@ -63844,5 +63844,58 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.21252",
+    "environments": [
+      "web",
+      "cross-platform"
+    ],
+    "topics": [
+      "reward-models",
+      "evaluation",
+      "grounding",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Tests MLLMs as step-level reward models on 1,136 response pairs spanning perception, planning and safety; 495 web items draw on SeeClick, Mind2Web and pop-up attacks, beside embodied and travel tasks.",
+    "verify_terms": [
+      "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: 495 of the 1,136 samples are web items (136 perception items from SeeClick grounding data, which spans web, mobile and desktop screens; 259 planning items from Mind2Web; 100 safety items built with the pop-up attack of Zhang et al. 2024). The rest are embodied perception (MFE-ETP), embodied planning (PCA, covering Minecraft, autonomous driving and virtual home), embodied safety (MSSBench) and TravelPlanner items. Responses come from 10 MLLMs, and pairs were filtered by small models and manual verification. A downstream check runs five reward models in reward-guided A* search on 100 VisualWebArena tasks and reports a Pearson correlation of 0.981 between benchmark accuracy and search performance. Distinct from AgentRewardBench (arXiv 2504.08942), which evaluates judges of web-agent trajectories. The arXiv comment gives ACL 2025 Main; the paper links code at github.com/Quester-one/Agent-RewardBench, which is not recorded here. No results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-3 (data sources, construction and Table 1 data distribution), Section 4 with Table 2 (results), Section 5.1 (VisualWebArena correlation) and the Appendix E examples.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2506.21252v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2506.21252v1",
+        "retrieved_at": "2026-10-20T08:14:04Z",
+        "sha256": "c95f4ca5be03ab618ef45039821ee98ba541c2ec9d7b5a1fa2b358c3c2c2dafc",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "be6db50c031ec2aff2ca0ac25c5f31dc4f8c86b90162600a0ff59b87429aeddd",
+    "reviewed_at": "2026-10-20T08:14:31Z"
   }
 ]

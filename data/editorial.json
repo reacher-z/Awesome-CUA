@@ -63844,5 +63844,109 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Cyberdesk",
+    "kind": "infrastructure",
+    "url": "https://github.com/cyberdesk-hq/cyberdesk",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "scope": "core",
+    "summary": "Kubernetes platform for virtual desktops for computer agents: KubeVirt VMs cloned from a golden snapshot, a REST API that runs click, type, key, drag and screenshot actions inside them, and Python and TypeScript SDKs.",
+    "verify_terms": [
+      "Cyberdesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Monorepo with a Next.js dashboard and docs (apps/web, apps/docs), a Hono API (apps/api), a FastAPI gateway (services/gateway), a Kopf-based Kubernetes operator (services/cyberdesk-operator), Python and TypeScript SDKs (sdks/) and AKS Terraform plus KubeVirt manifests (infra/). The operator assigns a running VM from a warm VirtualMachinePool or clones one from a golden VirtualMachineSnapshot, tracks instance state in Supabase and deletes VMs on timeout. apps/api/src/routes/desktop.ts turns each computer action (click_mouse, scroll, move_mouse, drag_mouse, type, press_keys, wait, screenshot, get_cursor_position) into an xdotool or scrot shell command on DISPLAY :99 and sends it through the gateway's execute-command route to a command service inside the VM; screenshots come back as base64 JPEG. A separate bash-action endpoint runs arbitrary commands. The in-VM command service (execD in cyberdesk-architecture.md) and the golden VM manifest are not in the repository: infra/README.md says the golden VM manifest is gitignored and points team members to internal notes, so a self-hosted deployment from this repository alone lacks the desktop image. The README pins SDK versions cyberdesk 0.2.1 (npm) and 0.2.7 (PyPI); the docs include a tutorial that wires the SDK to Claude's computer-use tool. The source names no guest operating system. The repository has no tags or releases, and its last commit is from 2025-07-20. Root LICENSE is Apache-2.0; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public control-plane source (API, gateway, operator, SDKs, infrastructure manifests); the golden desktop VM manifest and the in-VM command service are not published, and there are no tagged releases.",
+      "repository_revision": "6536bfbb543be42effb07beae062e10fdd5432d0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/6536bfbb543be42effb07beae062e10fdd5432d0/apps/api/src/routes/desktop.ts",
+        "sha256": "a8a5e259aec51afa36b49c2c2f120a969137b078bb3b991ff33b40f542664ad4",
+        "retrieved_at": "2026-10-20T08:08:37Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/6536bfbb543be42effb07beae062e10fdd5432d0/services/gateway/main.py",
+        "sha256": "1d0a9e4ae00457199e55fac96f375d01ff14dc1b225df4d30ba1651de4f6f4ac",
+        "retrieved_at": "2026-10-20T08:08:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/6536bfbb543be42effb07beae062e10fdd5432d0/services/cyberdesk-operator/handlers/controller.py",
+        "sha256": "35d3636cee447ebf1289677720cde21d5ce503e1f06bc50a3fe2df364c52b9c1",
+        "retrieved_at": "2026-10-20T08:08:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/6536bfbb543be42effb07beae062e10fdd5432d0/cyberdesk-architecture.md",
+        "sha256": "ef79489bc8a10f3af2e3a0008dce3289f91183a43504d883bce6bdd3b36d55a2",
+        "retrieved_at": "2026-10-20T08:08:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/6536bfbb543be42effb07beae062e10fdd5432d0/infra/README.md",
+        "sha256": "5ad865451e1f1ac23743a1d9f770f74ad6d7f9fc23906fd20faa6969f3215a91",
+        "retrieved_at": "2026-10-20T08:08:47Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/cyberdesk-hq/cyberdesk/6536bfbb543be42effb07beae062e10fdd5432d0/LICENSE",
+        "sha256": "7185eec52f413c0cd33064d059ace77edf0f0e364f9a72ec6c03938e13043174",
+        "retrieved_at": "2026-10-20T08:08:48Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "636970df49706e5e24f0bdec85533dbe7ecdcf4ef6643dd305432d0812146c1b",
+    "reviewed_at": "2026-10-20T08:09:34Z"
   }
 ]

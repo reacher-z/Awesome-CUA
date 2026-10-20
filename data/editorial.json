@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Cross-Modal Content Optimization for Steering Web Agent Preferences",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.03612",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Proposes CPS, a black-box attack that edits only the attacker's own listing, pairing CLIP-ensemble image perturbations with LLM-refined text to bias VLM web agents' choices on movie and shopping pages.",
+    "verify_terms": [
+      "Steering Web Agent Preferences"
+    ],
+    "scope": "core",
+    "notes": "Each trial shows eight items on a generated result page with one randomly chosen target whose thumbnail and description the attacker may change. Thumbnail perturbations (epsilon 8/255) are optimized against 12 of 19 Open-CLIP encoders per step and transferred to the victim; GPT-4.1 refines descriptions and proposes the visual target and negative concepts. Victim agents follow the VisualWebArena and OS-Attack input format (raw and labeled screenshots plus element descriptions) with GPT-4.1, GPT-4.1-mini, Qwen-2.5-VL-32B and Pixtral-Large backbones, over 100 rounds per setting on ControlNet-100k movie posters and VisualWebArena OneStopShop product data. Detection is measured with GPT-4.1 told that one of the eight items is manipulated. The task is a single selection step, not end-to-end task completion. The paper names no code release, and no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-7, Tables 1-5 and the appendices; checked the v1 PDF for code links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.03612v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.03612v1",
+        "retrieved_at": "2026-10-20T07:29:03Z",
+        "sha256": "0a4f4b39c1e6416c7160f8d36b1e8bc53469667865cdc49d7742def87d1984d8",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b2ed57a7432902a44733ba5509616b4cbff66cef17dd59cc5076ffd4bcedd050",
+    "reviewed_at": "2026-10-20T07:31:38Z"
   }
 ]

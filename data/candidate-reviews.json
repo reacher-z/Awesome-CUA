@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:91f5a2f5f7d1ef383345",
+    "url": "https://webgames.convergence.ai",
+    "decision": "alias",
+    "target_id": "github:convergence-ai/webgames",
+    "reason": "Hosted copy of the indexed WebGames benchmark; the repository README links it as the place to try the challenges and download the task files."
   }
 ]

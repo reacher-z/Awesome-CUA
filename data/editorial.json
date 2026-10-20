@@ -16488,6 +16488,11 @@
         "type": "component_of",
         "target_id": "github:murtyshikhar/nnetnav",
         "evidence_url": "https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md"
+      },
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2410.02907",
+        "evidence_url": "https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md"
       }
     ]
   },

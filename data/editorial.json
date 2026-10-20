@@ -63844,5 +63844,91 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "EdgeBox",
+    "kind": "infrastructure",
+    "url": "https://github.com/BIGPPWONG/EdgeBox",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "scope": "core",
+    "summary": "Electron app that runs local Docker sandboxes with an XFCE desktop, Chromium and VS Code and serves them over MCP: 16 desktop tools for screenshots, mouse, keyboard and windows, plus code, shell and file tools.",
+    "verify_terms": [
+      "EdgeBox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BIGPPWONG/EdgeBox/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "The README presents EdgeBox as a local counterpart of E2B's cloud sandboxes, built on the open-source E2B Code Interpreter project; DesktopController.ts drives a container through the @e2b/code-interpreter SDK and the image bundles E2B's envd binary (sandbox/bin/envd). The Electron host app (releases for Windows, macOS and Linux) needs Docker Desktop and serves MCP over HTTP and keeps one container per session, selected with the x-session-id header. sandbox/Dockerfile builds a Debian 12 image with XFCE, Chromium (remote debugging on port 9222), VS Code, LibreOffice and Jupyter; the README calls it an Ubuntu desktop. server.tsx registers 33 MCP tools: 16 desktop_* tools (added only when GUI tools are enabled in settings), 12 code-execution, shell and filesystem tools, and 5 container_* session tools. Desktop actions run inside the container as xdotool commands (move, click, double-click, drag, scroll, type, keys and key combinations, window search, focus, resize and app launch), and desktop_screenshot captures the display with scrot and returns the PNG; there is no accessibility tree or element annotation. A VNC view lets a person watch or take over. The inspected commit fb26761 is later than the latest release tag v0.8.2 (b73b16e). Root LICENSE is GPL-3.0; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source with prebuilt Electron releases for Windows, macOS and Linux; needs Docker Desktop and builds or pulls the sandbox image locally.",
+      "repository_revision": "fb267612014cff944e0091305fe35b7cc7807e26",
+      "release_tag": "v0.8.2"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BIGPPWONG/EdgeBox/fb267612014cff944e0091305fe35b7cc7807e26/src/services/mcp/DesktopController.ts",
+        "sha256": "5c4b30a6e1f07705f0ce3c01934844dda24b44eb9a7e83d9ce61166fa108fa72",
+        "retrieved_at": "2026-10-20T08:05:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BIGPPWONG/EdgeBox/fb267612014cff944e0091305fe35b7cc7807e26/src/services/mcp/server.tsx",
+        "sha256": "1841e717244b1787db972c7cc84f15b4743d79b9758fe40223aa09e5bbb8855c",
+        "retrieved_at": "2026-10-20T08:05:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/BIGPPWONG/EdgeBox/fb267612014cff944e0091305fe35b7cc7807e26/sandbox/Dockerfile",
+        "sha256": "77a5d69dc78e860194715957c1a5085844e8cc8b431d56ce1f3b8fb0b64e0cdc",
+        "retrieved_at": "2026-10-20T08:05:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/BIGPPWONG/EdgeBox/fb267612014cff944e0091305fe35b7cc7807e26/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "retrieved_at": "2026-10-20T08:05:42Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b236527db4523e9238add95c81e376d55188ae645452b5dbe9f5fa58511f19e3",
+    "reviewed_at": "2026-10-20T08:06:35Z"
   }
 ]

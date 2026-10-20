@@ -63844,5 +63844,49 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "PG-Agent: An Agent Powered by Page Graph",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.03536",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "planning",
+      "training-free",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "Converts GUI episodes into page graphs that link screens by actions, retrieves guidelines from them for a multi-agent planner, and evaluates it with Qwen2.5-VL-72B on AITW, Mind2Web and GUI Odyssey.",
+    "verify_terms": [
+      "PG-Agent: An Agent Powered by Page Graph"
+    ],
+    "scope": "core",
+    "notes": "Page graphs are built from sampled training episodes using screenshots only (no DOM or HTML): a VLM summarizes actions and pages, decides page jumps and merges similar pages, with BGE-M3 embeddings and FAISS retrieval. The agent group has global planning, observation, sub-task planning and decision agents. Evaluation is offline step-level matching on AITW (SeeClick split), Mind2Web and GUI Odyssey against other API-based agents. Accepted to ACM MM 2025; the paper states code will be released at github.com/chenwz-123/PG-Agent. No results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text (Sections 3-4, Tables 1-5 and Appendices A-B).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2509.03536v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2509.03536v1",
+        "retrieved_at": "2026-10-20T07:50:24Z",
+        "sha256": "026299e666fcde5f7510cc8420fb641c1f5dfa68b8986dc2d7be68c0df140438",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "830172cf6ead7ceb123f491bf7bc0ce65368e91f150075afc055a51effc04895",
+    "reviewed_at": "2026-10-20T07:50:42Z"
   }
 ]

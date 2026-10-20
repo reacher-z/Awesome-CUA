@@ -63844,5 +63844,135 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "dsh-computer-use-win",
+    "kind": "tool",
+    "url": "https://github.com/Yu-tao-Li/dsh-computer-use-win",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Windows MCP stdio server and DeepSeek Harness plugin with 23 desktop tools: UI Automation trees and patterns, window screenshots, Windows OCR text boxes, SendInput mouse and keyboard input, and window management.",
+    "scope": "core",
+    "verify_terms": [
+      "dsh-computer-use-win"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Installs as a DeepSeek Harness (DSH) plugin or runs as a standalone MCP stdio server (npx dsh-computer-use-win). mcp/server.mjs defines 23 windows_computer_use_* tools plus a tools management entry; WCU_TOOL_MODE selects all tools (default), a Lite set of ten, or lazy loading. One persistent PowerShell backend (scripts/windows-uia.ps1; Windows PowerShell 5.1 by default) walks cached UI Automation trees under node, depth and time budgets, captures windows with PrintWindow, Windows.Graphics.Capture or a screen crop, reads text through a compiled Windows.Media.Ocr helper, and sends input through SendInput or UIA patterns. Actions report verification 'sent'; wait_for reports 'observed' only when a window, element or OCR text condition is seen. DSH hosts add on-screen takeover indicators and an Esc stop for the current turn. No vision model is bundled: a vision-capable caller or an external parser reads screenshots. THIRD_PARTY.md describes the project as a derivative of cgissing/windows-computer-use (MIT), and LICENSE keeps both copyright holders. package.json 0.5.0 is tagged v0.5.0 at the inspected commit. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT source and npm package for Windows; no model is bundled, so DSH or another MCP client supplies the agent.",
+      "repository_revision": "a6d6c2e625e15ca322842b038b4e9165bee1d42f",
+      "release_tag": "v0.5.0",
+      "package_version": "0.5.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/README.en.md",
+        "sha256": "0d5f35d4b38d8b82e25accbb69d36d41c6db9e3cf0c25a165db576cbc801ee8f",
+        "retrieved_at": "2026-10-20T08:15:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/package.json",
+        "sha256": "251d1acfebafc994dc39d234148e68fba2ec63fe769ecde186c276c114f05cfd",
+        "retrieved_at": "2026-10-20T08:15:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/mcp/server.mjs",
+        "sha256": "991783dd59c4235704f0f172322c83663d1110a4948b02523f26e89242bd9f75",
+        "retrieved_at": "2026-10-20T08:15:34Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/scripts/windows-uia.ps1",
+        "sha256": "faa09185a061400392741b634963063cab9d952a02c8dc50bc401dc4d45e668f",
+        "retrieved_at": "2026-10-20T08:15:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/docs/wiki/architecture.md",
+        "sha256": "68e94a096461f6085029571b05bc04b122662010f245d1ff0af6006d48ac6c66",
+        "retrieved_at": "2026-10-20T08:15:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/THIRD_PARTY.md",
+        "sha256": "4a5f17d9728d38b32a00c9654d3ed4807ecea887997b51acce02c48cd4972a4e",
+        "retrieved_at": "2026-10-20T08:15:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/Yu-tao-Li/dsh-computer-use-win/a6d6c2e625e15ca322842b038b4e9165bee1d42f/LICENSE",
+        "sha256": "e3ecfc149634f568a98c4bff7aebca9f2797e334fb69c2b6539679762eca0d74",
+        "retrieved_at": "2026-10-20T08:15:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.release_tag",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/Yu-tao-Li/dsh-computer-use-win/git/ref/tags/v0.5.0",
+        "sha256": "ff0c75e580ade33282420c40318cd80fdca9d24067245960e2070f8875554a3f",
+        "retrieved_at": "2026-10-20T08:16:16Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5ee921c6b5c2f13709d53235105364730d070b4215b6c93d013e25c397344c1a",
+    "reviewed_at": "2026-10-20T08:16:52Z"
   }
 ]

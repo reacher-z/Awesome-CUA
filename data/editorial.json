@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AI Agent Systems: Architectures, Applications, and Evaluation",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2601.01743",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "survey",
+      "web-navigation",
+      "evaluation",
+      "planning"
+    ],
+    "summary": "Surveys foundation-model agents through a taxonomy of components, orchestration patterns and deployment settings, covering design trade-offs, applications including browser and GUI operation, and evaluation practice.",
+    "verify_terms": [
+      "AI Agent Systems: Architectures, Applications"
+    ],
+    "scope": "adjacent",
+    "notes": "Broad single-author survey of LLM and VLM agents. Its GUI coverage is Section 5.1.3 on browser and GUI operation agents (UI variability, adversarial page content, grounding actions in the DOM or pixels, state verification and recovery, with Figure 20) and WebArena in the benchmark list of Section 6.7. Other application sections cover coding, enterprise workflows, games, robotics, healthcare, multimodal and NLP agents, so GUI agents are one application area among many.",
+    "read_basis": "Read the arXiv v1 abstract, the v1 HTML table of contents, Section 5.1.3 (browser and GUI operation agents), Section 6.7 (benchmarks) and every other passage that mentions GUIs, screenshots, WebArena or web agents.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.01743v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.01743v1",
+        "retrieved_at": "2026-10-20T04:58:15Z",
+        "sha256": "a0b0b15d1681c6f84c58b3b9fb4c06c674e948f56547a21e8d1d67bbb1ce35c7",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2011527d9f1d7e3778a5917af2297efc011d4c21de1d80619ede994f50b3b348",
+    "reviewed_at": "2026-10-20T04:58:16Z"
   }
 ]

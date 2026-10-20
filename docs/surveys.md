@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Date* retains the arXiv first-submission date, or the publisher-only record's publication date at its known precision; newest first. Titles link primary sources; receipts are in `data/catalog.jsonl`.
 
-**18 resources:** [Web (2)](#web) · [Mobile (1)](#mobile) · [Cross-platform (12)](#cross-platform) · [Unspecified (3)](#unspecified)
+**19 resources:** [Web (3)](#web) · [Mobile (1)](#mobile) · [Cross-platform (12)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -16,6 +16,7 @@ All entries in this section: web.
 
 | Date | Resource | Description |
 | --- | --- | --- |
+| 2026‑01‑05 | [AI Agent Systems: Architectures, Applications, and Evaluation](https://arxiv.org/abs/2601.01743) | Surveys foundation-model agents through a taxonomy of components, orchestration patterns and deployment settings, covering design trade-offs, applications including browser and GUI operation, and evaluation practice. |
 | 2025‑03‑30 | [A Survey of WebAgents: Towards Next-Generation AI Agents for Web Automation with Large Foundation Models](https://arxiv.org/abs/2503.23350) | Surveys foundation-model web agents through their architectures, training methods and trustworthiness. It organizes research on completing browser tasks from user instructions and identifies directions for further development. |
 | 2024‑02‑15 | [A Trembling House of Cards? Mapping Adversarial Attacks against Language Agents](https://arxiv.org/abs/2402.10196) | Presents a conceptual perception–reasoning–action framework and 12 potential attack scenarios for language agents, including hypothetical web-navigation attacks. |
 

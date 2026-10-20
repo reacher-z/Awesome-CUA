@@ -63844,5 +63844,56 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2601.12560",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "web-navigation",
+      "planning",
+      "evaluation"
+    ],
+    "summary": "Surveys LLM agents through a taxonomy of perception, brain, planning, action, tool use and collaboration, with sections on web, operating-system and computer-use agents and on cost, latency and security evaluation.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Agentic Artificial Intelligence (AI): Architectures, Taxonomies"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.12560v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent broad survey of LLM agents. Full-text Section 6.1 covers web agents (Mind2Web, WebArena, WebVoyager), screenshot-and-mouse computer use, and operating-system agents (OSWorld, Windows Agent Arena); Sections 4.1.1 and 4.1.3 discuss UI grounding and GUI action spaces. Robotics, games and scientific domains are also covered. Surveyed results are not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.12560v1",
+        "retrieved_at": "2026-10-20T04:38:20Z",
+        "sha256": "e52e11754c497676e4a7b92e7494a24529f5405bdce06ac58399709898b8646b",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b6106e987e389017b997be5a67df12fb5d1157a10197bd4baad91724e24e6a6f",
+    "reviewed_at": "2026-10-20T04:39:01Z"
   }
 ]

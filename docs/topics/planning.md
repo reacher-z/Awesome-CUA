@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-278 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+279 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (213)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (3)](#surveys) · [Papers (213)](#papers)
 
 ## Datasets
 
@@ -94,6 +94,7 @@
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified | This survey organizes agent skills by architecture, acquisition, deployment and security, including their role in computer-use systems and GUI grounding. It also proposes a permission and lifecycle governance framework for skill deployment. |
+| 2026‑01‑18 | [Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents](https://arxiv.org/abs/2601.12560) | cross-platform, web, desktop | Surveys LLM agents through a taxonomy of perception, brain, planning, action, tool use and collaboration, with sections on web, operating-system and computer-use agents and on cost, latency and security evaluation. |
 | 2024‑11‑17 | [Generalist Virtual Agents: A Survey on Autonomous Agents Across Digital Platforms](https://arxiv.org/abs/2411.10943) | web, desktop, android, windows | Surveys virtual agents for browsers, applications and operating systems, organizing prior work by task type, observation and action spaces, model strategies and evaluation methods. It examines screen-based interaction and keyboard, mouse and touch control, alongside transferability and long-sequence decision-making challenges. |
 
 ## Papers

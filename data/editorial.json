@@ -63844,5 +63844,87 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Retriever AI (rtrvr.ai)",
+    "kind": "product",
+    "url": "https://www.rtrvr.ai",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "recording",
+      "tool-integration"
+    ],
+    "summary": "Browser agent from Retriever AI that runs in a Chrome extension on the user's signed-in sessions or in cloud browsers, reading page structure to click, type and fill forms; also callable through an API and MCP.",
+    "scope": "core",
+    "verify_terms": [
+      "Retriever AI",
+      "rtrvr"
+    ],
+    "aliases": [
+      "rtrvr.ai",
+      "rtrvr"
+    ],
+    "notes": "Retriever AI describes its engine as DOM-native: a planner directs sub-agents for clicks, typing and navigation, DOM extraction, pagination and files, and the same agent runs in the Chrome extension, in Cloud headless browsers (logins carried over by Cookie Sync) and through the API. Free Mode includes supported models and cloud browser time with sponsored cards and a daily allowance; users can bring their own model keys, and schedules, triggers, Cookie Sync and API or MCP control of the user's own Chrome require a paid plan. Recordings capture DOM interactions and the page's own network calls rather than the screen, and can be turned into replays or into subroutines that call a site's endpoints directly. An experimental Jev option lets a separate model choose browser actions while the selected model plans. The company also offers Rover, an agent that site owners embed for their visitors, and sells browser-agent trajectories and replica business apps for evaluation. The homepage's Web Bench ranking claim and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://rtrvr.ai/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "details",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://rtrvr.ai/docs/web-agent.md",
+        "sha256": "58c95f6be452e8a005a20bd67cc3881fe010eb0208bc826c2feb2e487a5e1197",
+        "retrieved_at": "2026-10-20T04:58:18Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "topics",
+          "notes"
+        ],
+        "url": "https://rtrvr.ai/docs/recordings.md",
+        "sha256": "36d4b97c1ff4494d1ca86d453ed0eb0113c7475f6e58c1b0add702e3721e12f6",
+        "retrieved_at": "2026-10-20T04:58:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details",
+          "notes"
+        ],
+        "url": "https://rtrvr.ai/llms.txt",
+        "sha256": "c1becb2816d848b7574c3473c48005d5630878be9a5faa6ab0960f060b5e1b6a",
+        "retrieved_at": "2026-10-20T04:57:58Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the homepage, llms.txt, the Web Agent and Recordings & Grounding docs (markdown), and searched the full docs corpus (llms-full.txt) for the page-observation and action mechanism. No account, extension install or task run.",
+    "reviewed_sha256": "5e53c09efaf35427d617ae406bdaad0013514d1866c5e89e458750bab9833434",
+    "reviewed_at": "2026-10-20T04:59:05Z"
   }
 ]

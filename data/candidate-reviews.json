@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:929b5bcde588099095fe",
+    "url": "https://rl4vlm.github.io",
+    "decision": "out_of_scope",
+    "reason": "rl4vlm.github.io is the project page of arXiv 2405.10292, which fine-tunes a LLaVA vision-language model with PPO and chain-of-thought prompts on GymCards arithmetic card games and the ALFWorld embodied household environment. Neither task operates a web page, desktop or mobile interface, so the work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:20:06Z",
+    "evidence": {
+      "url": "https://rl4vlm.github.io",
+      "sha256": "fd20953e8bc6c36b6abe74f31b059daa6e3378ca78c2fbfdc13601097520f0c8",
+      "retrieved_at": "2026-10-19T08:34:42Z"
+    }
   }
 ]

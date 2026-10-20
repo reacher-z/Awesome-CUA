@@ -63653,5 +63653,42 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Learn from Weaknesses: Automated Domain Specialization for Small Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.28775",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "data-generation",
+      "reinforcement-learning"
+    ],
+    "summary": "LearnWeak specializes small computer-use agents to one application by synthesizing tasks from teacher-student failure comparisons and training step-level DPO split by planning and execution errors, on 8 OSWorld domains.",
+    "verify_terms": [
+      "Learn from Weaknesses: Automated Domain Specialization"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.28775v1"
+    ],
+    "scope": "core",
+    "notes": "Reviewed against the v1 abstract and HTML full text (Sections 3 and 4, Appendix B): EvoCUA-8B and OpenCUA-7B students, an EvoCUA-32B teacher and GPT-5-mini for verification and query generation, with data generation and training run separately for each of eight OSWorld domains (GIMP, LibreOffice Calc, Impress and Writer, OS, Thunderbird, VLC, VS Code). Reported gains average 11.6 and 11.1 points; results were not independently reproduced. The paper names a project page at learnweak.github.io and no code repository.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.28775v1",
+        "sha256": "606ffc92a678b9e95087784945d3cea8282f8fcad1cde825690efa9cd1fca00a",
+        "retrieved_at": "2026-10-20T04:01:15Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "478933acf47374eb55639c52aa24ed884a4b0cb74a0c93a9c49b2d6f7849620f",
+    "reviewed_at": "2026-10-20T04:10:51Z"
   }
 ]

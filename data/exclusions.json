@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2512.21720",
+    "name": "An Information Theoretic Perspective on Agentic System Design",
+    "url": "https://arxiv.org/abs/2512.21720",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract models compressor-predictor language-model systems as noisy channels and uses a mutual-information estimator to predict downstream performance across five datasets and three model families. The full text's Deep Research application passes SerpAPI web search results to compressor models that summarize them for a predictor; no agent operates a GUI, browser or device, so this agentic-system design study is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:51:33Z",
+    "metadata_fingerprint": "3896ff4795972f9e9e79b755ab0ae16a77adc28af5384cca548bf3bb91b0b400",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
+      "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
+      "retrieved_at": "2026-10-18T04:21:52Z"
+    }
   }
 ]

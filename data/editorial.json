@@ -55758,25 +55758,6 @@
     "notes": "Reviewed against the complete official arXiv abstract. Experimental results and linked artifact availability have not been independently reproduced."
   },
   {
-    "name": "An Information Theoretic Perspective on Agentic System Design",
-    "kind": "paper",
-    "url": "https://arxiv.org/abs/2512.21720",
-    "verify_terms": [
-      "An Information Theoretic Perspective on "
-    ],
-    "evidence_urls": [
-      "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25"
-    ],
-    "editorial_reviewed": false,
-    "reviewed_sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
-    "reviewed_at": "2026-10-18T04:30:20.087612+00:00",
-    "review_note": "The abstract studies compressor-predictor language-model systems and Deep Research. A concrete connection to GUI, browser or operating-system interaction needs further primary-source review.",
-    "environments": [
-      "unspecified"
-    ],
-    "topics": []
-  },
-  {
     "name": "MANA: Towards Efficient Mobile Ad Detection via Multimodal Agentic UI Navigation",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2603.20351",

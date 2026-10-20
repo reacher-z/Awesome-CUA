@@ -1,15 +1,15 @@
 {
   "as_of_utc": "2026-10-20T03:55:29.533431+00:00",
-  "total_records": 3195,
+  "total_records": 3194,
   "curated_records": 1629,
-  "bibliographic_records": 2733,
-  "arxiv_active_records": 2720,
+  "bibliographic_records": 2732,
+  "arxiv_active_records": 2719,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
   "arxiv_archive_records": 2856,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1566,
+  "metadata_only_records": 1565,
   "discovery_identifiers": 4244,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
@@ -135,13 +135,6 @@
       "cause": "reviewer_hold"
     },
     {
-      "id": "arxiv:2512.21720",
-      "name": "An Information Theoretic Perspective on Agentic System Design",
-      "url": "https://arxiv.org/abs/2512.21720",
-      "reason": "The abstract studies compressor-predictor language-model systems and Deep Research. A concrete connection to GUI, browser or operating-system interaction needs further primary-source review.",
-      "cause": "reviewer_hold"
-    },
-    {
       "id": "arxiv:2604.19299",
       "name": "Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms",
       "url": "https://arxiv.org/abs/2604.19299",
@@ -193,7 +186,7 @@
     "framework": 77,
     "infrastructure": 14,
     "model": 98,
-    "paper": 2715,
+    "paper": 2714,
     "product": 20,
     "survey": 18,
     "tool": 20
@@ -1905,11 +1898,11 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 3,
       "curated": 15,
-      "excluded": 3,
+      "excluded": 4,
       "set_aside": 0,
       "unindexed": 9
     },

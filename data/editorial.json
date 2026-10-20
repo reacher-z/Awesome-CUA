@@ -63143,5 +63143,515 @@
       }
     },
     "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+  },
+  {
+    "name": "WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.02617",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "ui-design"
+    ],
+    "scope": "adjacent",
+    "summary": "Introduces an execution-based benchmark for generated web interfaces, with a headless-browser UI-agent harness that checks DOM interactions and functional assertions.",
+    "verify_terms": [
+      "2610.02617"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f053c4c65f6443acbda26e25cf36f7b6e8ea45f2916535604229f7c4e62ed679",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "Adjacent evaluation infrastructure: the target is generated WebUI functionality, not a general score for computer-use agents. This annotation is based on the complete retained abstract; released artifacts and experimental results were not independently inspected or reproduced."
+  },
+  {
+    "name": "DIBench: Benchmarking Decision Integrity of GUI-based Mobile Agents Under Deceptive Injections",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.06898",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Evaluates whether deceptive UI content steers mobile agents away from instruction-consistent choices, using paired benign and injected decision states and decision-integrity metrics.",
+    "verify_terms": [
+      "2610.06898"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f053c4c65f6443acbda26e25cf36f7b6e8ea45f2916535604229f7c4e62ed679",
+    "reviewed_at": "2026-10-18T14:35:49Z",
+    "notes": "The commercial-app protocol uses fixed screenshots and context for selection decisions, rather than live end-to-end transactions. Android is supported by the paper's emulator setup. Completion and integrity are distinct measures; no reported scores were reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (3.1 Benchmark components; 3.2 Instance generation; 3.3 Paired protocol/metrics; 5 Limitations/Ethics; Appendix B (Android emulator setup)); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2610.06898v1",
+        "retrieved_at": "2026-10-18T10:10:35.098754+00:00",
+        "sha256": "73f83c27e58e46086dbd5f32f108df2c5faa9ab2bd968d48062f39d94b2cc14b"
+      }
+    ]
+  },
+  {
+    "name": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.14132",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "planning",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Introduces intention understanding, prediction, and confirmed execution tasks over mobile GUI trajectories, with a proactive agent combining personalized intention models and experience-guided actions.",
+    "verify_terms": [
+      "2608.14132"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ddd5bd966c7430bd9d4fd0269e7d3d46d8839fa5bfa57d601b97b4dc735cfc9a",
+    "reviewed_at": "2026-10-18T14:35:49Z",
+    "notes": "The benchmark combines real and generated trajectory material. Opportune intervention timing and real-user acceptance are stated limitations. Section 4.2.2 specifies Android emulator instances for generated action trajectories. No results were independently reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (3 Task definition; 4.1 Raw data collection; 4.2 Trajectory construction; 7 Limitations and future directions); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.14132v1",
+        "retrieved_at": "2026-10-18T10:05:22.211464+00:00",
+        "sha256": "8d6aa8484ff4a7cbaac589c2c220407ebf6ecd1e216015a248125abdb0f2ed2d"
+      }
+    ]
+  },
+  {
+    "name": "AndroidReality: How Far Are Mobile Agents from the Real World?",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.07775",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "self-reflection",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Extends AndroidWorld with controlled state, transition, and action perturbations to test mobile-agent robustness, and studies a training-free introspective recovery mechanism.",
+    "verify_terms": [
+      "2608.07775"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ddd5bd966c7430bd9d4fd0269e7d3d46d8839fa5bfa57d601b97b4dc735cfc9a",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "The reviewed protocol normally activates one perturbation type at a time while preserving task semantics and reward. Results do not establish robustness to arbitrary combined deployment disturbances; experiments were not independently reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (3.1 Perturbation formulation; 3.2 Injection; 3.3 Evaluation protocol; 4.3 Error analysis); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2608.07775v1",
+        "retrieved_at": "2026-10-18T10:10:44.898646+00:00",
+        "sha256": "d4afe27efcce2a3b9401f9677304db3cdedfa66f537293bb742bd1abfb16ee59"
+      }
+    ]
+  },
+  {
+    "name": "Navigation Alone Is Not Enough: Evaluating Explanatory Assistive UI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.09944",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Introduces NeXUI, an assistive UI-agent benchmark that evaluates navigation together with interface-grounded explanations and user oversight in recorded interface states.",
+    "verify_terms": [
+      "2608.09944"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=200&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f26fba818a44c6a7f541ab3b0341ca8f4798d837a425a2ac9fb0fc47a553b7bc",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "Packaged tasks use recorded linear transition graphs. Reported model experiments use a text-input validation subset, so their results are not evidence of screenshot-based navigation performance. No results were independently reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (3.3 Interface states and task annotations; 3.4 Evaluation; 4.1 Models and experimental setup; 5 Discussion); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2608.09944v1",
+        "retrieved_at": "2026-10-18T10:05:26.923383+00:00",
+        "sha256": "777197864eeaa34d180bf6b91f32408b7b3d8cc5c9faecc95eca276f5bd426de"
+      }
+    ]
+  },
+  {
+    "name": "Darwin Mobile Agent: A Roadmap for Self-Evolution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.20622",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Describes asynchronous reinforcement-learning infrastructure using parallel cloud-hosted Android instances, explicit task lifecycles, and persistent-state management for mobile GUI interaction.",
+    "verify_terms": [
+      "2606.20622"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5cd7fb95d5ee8e8c473e0c9d5b892bf50ee425604c6a320e8e9a12eff17120a1",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "The implemented stage uses selected tasks, an external judge and heuristic history management. Autonomous curricula, verification and memory are roadmap directions, not completed capabilities established by this record. No runtime or results were reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (2 Agent-Environment Interface and Policy Optimisation; 3 Scalable Asynchronous Mobile Environment; 3.2 Persistent State Management; 3.3 Task Lifecycle; 4.2 Rollout and Optimisation; 4.3 Anatomy of the Self-Evolving Agent); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2606.20622v1",
+        "retrieved_at": "2026-10-18T10:14:00.181958+00:00",
+        "sha256": "e4711466886372760daa83384cb4d129d54fdcfe320be6e91fb7b4971d1a61de"
+      }
+    ]
+  },
+  {
+    "name": "X-OmniClaw Technical Report: A Unified Mobile Agent for Multimodal Understanding and Interaction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.05765",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "grounding",
+      "workflow"
+    ],
+    "scope": "core",
+    "summary": "Describes an Android agent architecture combining multimodal perception, working and personal memory, hybrid XML/visual grounding, and reusable skills captured from user interactions.",
+    "verify_terms": [
+      "2605.05765"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=300&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5cd7fb95d5ee8e8c473e0c9d5b892bf50ee425604c6a320e8e9a12eff17120a1",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "The report presents demonstrations. Its behavior-cloning component captures runtime skills; it does not establish policy-weight imitation training, and literal trace replay is described as future work. No general benchmark result or release completeness is inferred. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (2 Framework; 3 Omni Perception; 4 Omni Memory; 5.1 Omni Action in App Ecosystem; 5.2 Trajectory Cloned Execution); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2605.05765v2",
+        "retrieved_at": "2026-10-18T10:14:10.101459+00:00",
+        "sha256": "80375cd810dcda2e9ccca2c6fbee44730de8449972036c548bde312566b20673"
+      }
+    ]
+  },
+  {
+    "name": "Curiosity Driven Knowledge Retrieval for Mobile Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.19306",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "planning",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Uses execution uncertainty to trigger retrieval from application documentation, code, and past trajectories, organizing the results into structured AppCards for Android agent planning.",
+    "verify_terms": [
+      "2601.19306"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "53521b0a80976320b10efcf7840629e4a2085119710324dd48db2cfd9c5d9cf6",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "The curiosity signal is a model-based proxy, not a calibrated probability of failure. Accurate external app information is a dependency, and AndroidWorld is the reported evaluation environment. No performance numbers were independently reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (3.1 Problem Formulation; 3.2 Curiosity-Driven Information Gain Estimation; 3.3 Retrieving and Embedding External Knowledge); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2601.19306v1",
+        "retrieved_at": "2026-10-18T10:14:20.444793+00:00",
+        "sha256": "ef3bbc8adcc147239ea910e0c59904d7a26ee1610a7a4d1613be2cb845098536"
+      }
+    ]
+  },
+  {
+    "name": "Agent+P: Guiding UI Agents via Symbolic Planning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.06042",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "planning",
+      "long-horizon",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Guides UI agents with symbolic planning over a UI transition graph initialized from app-code analysis and updated through online exploration, with evaluation on AndroidWorld.",
+    "verify_terms": [
+      "2510.06042"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "594b5261dd2039777d36c46cdb8525d973ad57a154b902ff1a171bcbed2c64cc",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "Planning guarantees are relative to the modeled graph and selected target. They do not establish complete graphs, correct grounding or faithful goal translation. The described design depends on static source analysis; no experiments were reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (3.3 UI Automation to Classical Planning; 4.1 UTG Builder; 4.2 Node Selector; 4.3 Plan Generator; 4.4 UI Explorer; 5.1 Datasets); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2510.06042v3",
+        "retrieved_at": "2026-10-18T10:14:29.861666+00:00",
+        "sha256": "5e2cb2f053983140904ec15c097d060ff18315c6c3c956bbcacbec26921709c5"
+      }
+    ]
+  },
+  {
+    "name": "AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2509.02444",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "workflow",
+      "mobile-navigation",
+      "long-horizon"
+    ],
+    "scope": "core",
+    "summary": "Describes a mobile-agent stack combining region-based coordinate correction, hierarchical task planning, multi-agent voting, and reuse of successful interaction traces.",
+    "verify_terms": [
+      "2509.02444"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "594b5261dd2039777d36c46cdb8525d973ad57a154b902ff1a171bcbed2c64cc",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "Trace reuse assumes stable layouts and fixed tasks. The described function-call routes are user-selected, and coordinate calibration depends on valid detected widgets. No particular operating-system coverage, latency guarantee or reproduced result is asserted. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (4.2 OCR/OR Region Localization; 4.2.2 Coordinate Calibration; 4.3 Multi-Agent Voting; 5.2 Task Decomposition; 6.2 Experience Reuse; 6.3 Function Calling); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2509.02444v2",
+        "retrieved_at": "2026-10-18T10:14:33.619660+00:00",
+        "sha256": "6c2591dad8893f87cffdea211584a3733dc2137dafa9416c1885d1b0126fd540"
+      }
+    ]
+  },
+  {
+    "name": "PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2508.18040",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "planning",
+      "human-in-the-loop",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Introduces PerPilot and the PerInstruct dataset for completing user-specific mobile instructions through memory retrieval, app exploration, and clarification when missing context remains unresolved.",
+    "verify_terms": [
+      "2508.18040"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "594b5261dd2039777d36c46cdb8525d973ad57a154b902ff1a171bcbed2c64cc",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "Personalization depends on the validity of stored or inferred user information and retrieval access. This is instruction completion with interaction, not demonstrated permanent model-weight personalization. No specific operating system or reproduced result is asserted. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (The Framework of PerPilot; Personalization Perception; Personalization Completion; PerInstruct Data Construction); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2508.18040v1",
+        "retrieved_at": "2026-10-18T10:18:36.598801+00:00",
+        "sha256": "3c3474b771af7bdd500e6aaa91b83d39ec0d455e59bb83df906e7a94700ad2b7"
+      }
+    ]
+  },
+  {
+    "name": "ProactiveVA: Proactive Visual Analytics with LLM-Based UI Agent",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2507.18165",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "planning"
+    ],
+    "scope": "adjacent",
+    "summary": "Studies proactive assistance in visual-analytics interfaces, using interaction logs to detect support needs and provide context-aware suggestions and guidance.",
+    "verify_terms": [
+      "2507.18165"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4dcd1ba66ba21c0f2cb2aeb00c8bcab7c0cee4da37ff2fa6c16b45066aaa9db0",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "Adjacent work on embedded assistance in two instrumented visual-analytics systems. Its in-lab user-study evidence is context-specific, and the paper discusses clarification and intervention-control trade-offs. General GUI-agent performance is not inferred. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (5.3 User study; 5.3.2 Observed issues; 6.1 Design trade-off; 6.2 Limitations); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2507.18165v1",
+        "retrieved_at": "2026-10-18T10:05:30.529800+00:00",
+        "sha256": "7ca9569113479791a0482f4c196002a8459f1826eb6a3c9fab8a701b33360593"
+      }
+    ]
+  },
+  {
+    "name": "SafeMobile: Chain-level Jailbreak Detection and Automated Evaluation for Multimodal Mobile Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2507.00841",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "summary": "Studies chain-level risk detection for mobile multimodal agents and a language-model-assisted evaluator, assessing safety interventions together with functional preservation.",
+    "verify_terms": [
+      "2507.00841"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22UI+agent%22+OR+ti%3A%22desktop+agent%22+OR+ti%3A%22screen+grounding%22%29+AND+submittedDate%3A%5B200001010000+TO+202610180000%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4dcd1ba66ba21c0f2cb2aeb00c8bcab7c0cee4da37ff2fa6c16b45066aaa9db0",
+    "reviewed_at": "2026-10-18T14:25:00Z",
+    "notes": "The reviewed evaluation uses Android emulation and a specific MobileSafetyBench-derived setup. Its judge and score threshold are evaluator choices, not universal safety measurements, and its task population is not the whole later MobileSafetyBench corpus. No results were reproduced. Basis: complete retained abstract and source-reviewed sections of the exact-version paper (II.B Defense objective; III Chain-level guard and GPTJudge; IV.B Evaluation setup; V.D Judge validity); not an entire-paper reading or reproduction claim.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/pdf/2507.00841v1",
+        "retrieved_at": "2026-10-18T10:10:56.912207+00:00",
+        "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
+      }
+    ]
   }
 ]

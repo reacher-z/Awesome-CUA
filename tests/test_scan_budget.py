@@ -1,5 +1,3 @@
-import inspect
-import math
 from pathlib import Path
 import re
 import subprocess
@@ -26,18 +24,12 @@ def job_timeout():
     return int(re.search(r"^    timeout-minutes: (\d+)$", job, re.M)[1]) * 60
 
 
-def recent_search_bound(max_results):
-    """Worst case for the in-process recent arXiv search: every page spends all of fetch's attempts and longest waits."""
-    request_timeout = int(re.search(r"urlopen\(request, timeout=(\d+)\)", inspect.getsource(catalog.fetch))[1])
-    page_size = int(re.search(r"batch_size=min\((\d+),", inspect.getsource(scan.recent_papers))[1])
-    per_page = catalog.MAX_ATTEMPTS * request_timeout + (catalog.MAX_ATTEMPTS - 1) * catalog.MAX_RETRY_AFTER + catalog.MIN_RETRY_DELAY
-    return math.ceil(max_results / page_size) * per_page
 
 
 class ScanBudgetTests(unittest.TestCase):
     def test_stage_budgets_and_the_recent_search_fit_inside_the_job_timeout(self):
         config = catalog.read_json(ROOT / "data" / "scan-config.json")
-        scan_seconds = sum(scan.STAGE_TIMEOUTS.values()) + recent_search_bound(config["recent_max_results"])
+        scan_seconds = config['network_max_seconds'] + sum(value for key,value in scan.STAGE_TIMEOUTS.items() if key not in scan.NETWORK_STAGES)
         self.assertLess(scan_seconds + OTHER_STEPS, job_timeout())
 
     def test_every_subprocess_stage_runs_under_its_own_budget(self):
@@ -47,13 +39,13 @@ class ScanBudgetTests(unittest.TestCase):
             raise subprocess.TimeoutExpired(command, kwargs["timeout"])
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(scan, "DATA", Path(directory)), \
                 mock.patch.object(scan.subprocess, "run", side_effect=run), \
-                mock.patch.object(scan, "recent_papers", return_value={"name": "recent_arxiv", "ok": True, "warnings": []}), \
+                mock.patch.object(scan, "recent_phase", return_value={"name": "recent_arxiv", "ok": True, "warnings": []}), \
                 mock.patch.dict(scan.os.environ, {"GITHUB_STEP_SUMMARY": ""}):
             scan.write_json(Path(directory) / "scan-config.json", CONFIG)
             self.assertEqual(scan.run_scan(), 1)
             phases = {p["name"]: p for p in scan.read_json(Path(directory) / "scan-status.json")["phases"]}
         self.assertEqual(timeouts, [("discover", 300), ("scripts/discover_papers.py", 300), ("harvest", 300), ("build", 180), ("validate", 180)])
-        self.assertEqual(set(phases) - {"recent_arxiv"}, set(scan.STAGE_TIMEOUTS))
+        self.assertEqual(set(phases), set(scan.STAGE_TIMEOUTS))
         self.assertEqual(phases["harvest"]["error"], "Stage exceeded 300 seconds; last verified records retained.")
 
     def test_an_interrupted_scan_leaves_its_own_running_receipt(self):

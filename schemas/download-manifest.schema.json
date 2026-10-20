@@ -30,11 +30,11 @@
             "required": ["value", "unit"],
             "properties": {
               "value": {"type": "integer", "minimum": 0},
-              "unit": {"enum": ["resources", "documents", "citations", "profiles", "relations", "topics", "papers", "decisions", "sources", "editions", "exports", "reports", "schemas", "aliases"]}
+              "unit": {"enum": ["resources", "documents", "citations", "profiles", "relations", "topics", "papers", "decisions", "sources", "editions", "exports", "reports", "schemas", "aliases", "repositories"]}
             },
             "additionalProperties": false
           },
-          "scope": {"enum": ["active", "reviewed", "reviewed-publication", "recorded-publication", "archive", "provenance", "contract"]},
+          "scope": {"enum": ["active", "reviewed", "reviewed-publication", "recorded-publication", "archive", "provenance", "contract", "candidate-observations"]},
           "bytes": {"type": "integer", "minimum": 0},
           "sha256": {"$ref": "#/$defs/sha256"}
         },

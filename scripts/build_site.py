@@ -15,6 +15,7 @@ from catalog import TOPICS
 from search_pages import build_search_pages, resource_path, SITE
 from export_rag import build_exports
 from export_citations import build_citation_exports
+from export_candidates import copy_public_candidates, SCHEMAS as CANDIDATE_SCHEMAS
 from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
@@ -111,6 +112,10 @@ def write_site(destination):
     shutil.copy2(ROOT/'data/papers.jsonl',destination/'downloads/arxiv-archive.jsonl')
     (destination/'downloads/publications.jsonl').write_bytes((ROOT/'data/publications.jsonl').read_bytes() if (ROOT/'data/publications.jsonl').exists() else b'')
     (destination/'downloads/repository-aliases.json').write_text(json.dumps(repository_declarations,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    candidates=copy_public_candidates(ROOT/'data',destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
+    for contract in CANDIDATE_SCHEMAS:
+        if candidates is not None:shutil.copy2(ROOT/'schemas'/contract,destination/'schemas'/contract)
+        else:(destination/'schemas'/contract).unlink(missing_ok=True)
     write_sqlite(rows,destination/'downloads'/'catalog.sqlite')
     build_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
     build_citation_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())

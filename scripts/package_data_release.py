@@ -386,6 +386,9 @@ Paper citations and publication editions are separate exports in `downloads/`.
 `downloads/topics.json` lists full-record and citation subsets under
 `downloads/topics/<topic>/`; memberships overlap and their counts must not be added.
 Keep stable IDs, review states, evidence, scoped licenses and record fingerprints.
+Optional GitHub candidate observations have their own snapshot and input
+fingerprints. They remain candidate/relevance_pending, may overlap the active
+catalog, and are not included in its normal recommendation or RAG populations.
 
 This ZIP contains data and guidance, not repository scripts. For CLI search or
 custom exports, clone the source and select this exact commit:
@@ -426,7 +429,10 @@ Read README.md and downloads/manifest.json before choosing a corpus. Preserve
 review_status, source receipts, scoped licenses, aliases and record_sha256.
 Use curated records for reviewed recommendations; metadata_verified is bibliography
 awaiting relevance review. Topic subsets overlap. Raw arXiv archive records include
-scope exclusions and are not the active corpus. For source CLI tools, clone and
+scope exclusions and are not the active corpus. Optional GitHub candidate
+observations remain candidate/relevance_pending in a separate population with
+their own observation fingerprint; do not add their counts to the active catalog.
+For source CLI tools, clone and
 checkout the exact commit in data/build-info.json; follow that checkout's AGENTS.md.
 ''').encode()
     payloads['data/build-info.json'] = json_bytes({'artifact_kind': 'offline-data-release', 'source_commit':source_commit,
@@ -460,7 +466,7 @@ checkout the exact commit in data/build-info.json; follow that checkout's AGENTS
                                                    for kind,count in sorted(Counter(r['kind'] for r in rows).items())}},
                    'files':entries, 'zip':{'file':ZIP_NAME, 'bytes':len(zip_body), 'sha256':digest(zip_body), 'members':len(entries),
                                          'compression':'deflate-9', 'entry_timestamp':'1980-01-01T00:00:00'},
-                   'validation_boundary':'Checks cover bundled syntax, contracts, identity links and catalog-derived exports/counts. External raw network bodies and discovery candidate populations are not included or re-fetched; their receipt claims are preserved, not independently proven by this bundle. The trusted workflow checkout/build establishes source_commit authenticity; a 40-hex string alone does not.',
+                   'validation_boundary':'Checks cover bundled syntax, contracts, identity links and catalog-derived exports/counts. Optional sanitized GitHub candidate observations are a separate, unreviewed population with independent observation/input fingerprints. External raw network bodies and the full scan state are not included or re-fetched; historical receipt claims are preserved, not independently proven by this bundle. The trusted workflow checkout/build establishes source_commit authenticity; a 40-hex string alone does not.',
                    'fingerprint_policy':'File hashes cover exact uncompressed bytes. This external manifest is not inside the ZIP, avoiding a circular ZIP hash.'}
         (stage / MANIFEST_NAME).write_bytes(json_bytes(release))
         publish_pair(stage, destination)

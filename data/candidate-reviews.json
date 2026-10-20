@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:20e3e42bfd3d9fd4fcf7",
+    "url": "https://www.uipath.com/newsroom/uipath-screenagent-osworld-benchmark-top-ranking",
+    "decision": "alias",
+    "target_id": "url:b09d10b87e42b7e74de9",
+    "reason": "UiPath press release of 14 January 2026 announcing the OSWorld-Verified ranking of Screen Agent, the agent that powers the indexed UiPath ScreenPlay product."
   }
 ]

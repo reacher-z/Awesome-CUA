@@ -63844,5 +63844,44 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.09222",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Presents MUZZLE, an agentic red-teaming framework that uses web-agent trajectories to choose injection surfaces and adaptively refine indirect prompt injection attacks, reporting 44 attacks across four web applications.",
+    "verify_terms": [
+      "Adaptive Agentic Red-Teaming of Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.09222v2"
+    ],
+    "notes": "The v2 full text runs target agents in The Zoo, a containerized multi-application web environment, on Gitea, Postmill, Classifieds and phpMyAdmin tasks, using the BrowserUse and Agent-E scaffolds with GPT-4.1, GPT-4o and Qwen3-VL-32B-Instruct, and builds the red-team agents with AutoGen. It links code at github.com/gsiros/muzzle and an archived copy at doi.org/10.5281/zenodo.20399450. Results have not been independently reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML for the web environment, applications, agent scaffolds, models and code links. No code execution or result reproduction.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.09222v2",
+        "sha256": "d1e50af1e40ec0727ea691b68e15314e2ab4f29dadb9131977332a21c3d4d920",
+        "retrieved_at": "2026-10-20T04:55:48Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8ac6204afa9f7e310c3559f9627ce55dea3fefbdc422eeadad41527587f5bdb0",
+    "reviewed_at": "2026-10-20T04:55:49Z"
   }
 ]

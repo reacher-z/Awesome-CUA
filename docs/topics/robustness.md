@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+185 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (171)](#papers)
 
 ## Benchmarks
 
@@ -158,6 +158,7 @@ All entries in this section: web.
 | 2026‑03‑05 | [TimeWarp: Evaluating Web Agents by Revisiting the Past](https://arxiv.org/abs/2603.04949) | web | TimeWarp tests web agents across multiple versions of the same sites, varying visual design, frontend code and workflows. TimeTraj transfers plans across versions to collect training trajectories and study robustness to interface change. |
 | 2026‑03‑03 | [CGL: Advancing Continual GUI Learning via Reinforcement Fine-Tuning](https://arxiv.org/abs/2603.02951) | android | Combines supervised and reinforcement fine-tuning for continual GUI learning, using policy entropy to adjust their proportions and gradient projection to limit conflicting updates. AndroidControl-CL groups applications into sequential tasks to evaluate adaptation and retention. |
 | 2026‑02‑10 | [Autonomous Continual Learning for Environment Adaptation of Computer-Use Agents](https://arxiv.org/abs/2602.10356) | desktop, linux, windows | ACuRL uses autonomous interface exploration and an adaptive task curriculum to continually train computer-use policies with reinforcement learning. CUAJudge supplies outcome feedback, and experiments study adaptation across desktop applications and environment changes. |
+| 2026‑02‑09 | [MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks](https://arxiv.org/abs/2602.09222) | web | Presents MUZZLE, an agentic red-teaming framework that uses web-agent trajectories to choose injection surfaces and adaptively refine indirect prompt injection attacks, reporting 44 attacks across four web applications. |
 | 2026‑02‑09 | [When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents](https://arxiv.org/abs/2602.08995) | desktop, web | MisActBench provides action-level labels for task alignment, while DeAction checks proposed computer-use actions and requests revisions through structured feedback. The paper separately evaluates offline detection and interactive operation in OSWorld and RedTeamCUA. |
 | 2026‑02‑02 | [SafeGround: Know When to Trust GUI Grounding Models via Uncertainty Calibration](https://arxiv.org/abs/2602.02419) | unspecified | Introduces SafeGround, which estimates GUI-grounding uncertainty from the spatial dispersion of sampled predictions and calibrates a decision threshold before testing. It studies risk-aware selection on ScreenSpot-Pro, with statistical control scoped to the threshold’s false-discovery rate. |
 | 2026‑01‑29 | [BEAP-Agent: Backtrackable Execution and Adaptive Planning for GUI Agents](https://arxiv.org/abs/2601.21352) | desktop | BEAP-Agent treats GUI execution as depth-first search with coordinated planning, execution and task-state tracking. It supports backtracking across multiple levels of earlier states and evaluates recovery on OSWorld. |

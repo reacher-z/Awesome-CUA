@@ -22,7 +22,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 
 [Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
 
-[Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
+[Coverage ledger](docs/coverage.md) · [Cite](#cite) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
 
 Discovery is scheduled three times daily at **00:17, 08:17 and 16:17 UTC**. [Actual scan results](https://awesomecua.github.io/updates/) · [Schedule and safeguards](docs/maintenance.md).
 
@@ -219,6 +219,23 @@ python3 scripts/export_citations.py --format bibtex --output dist/citations.bib
 
 Use SQLite to join resources, environment/topic facets, and reviewed relations. See [query examples](docs/query-guide.md). `data/catalog.jsonl` is committed; SQLite and JSON array exports are reproducible local build products.
 
+## Cite
+
+If AwesomeCUA helps your research, please cite it. [CITATION.cff](CITATION.cff) holds the same metadata, and GitHub's "Cite this repository" button exports it as APA or BibTeX.
+
+```bibtex
+@misc{awesomecua,
+  title        = {Awesome Computer-Use Agents: a source-backed catalog of computer-use, GUI, browser, and mobile agents},
+  author       = {Zhang, Yuxuan},
+  year         = {2026},
+  url          = {https://awesomecua.github.io/},
+  howpublished = {\url{https://github.com/reacher-z/Awesome-CUA}},
+  note         = {Versioned data releases: https://github.com/reacher-z/Awesome-CUA/releases}
+}
+```
+
+The data changes with every scan, so pin the exact version you used. Each `v*` tag has a [data release](https://github.com/reacher-z/Awesome-CUA/releases) with versioned downloads built from the tagged commit: the catalog as JSONL, JSON and SQLite, the coverage ledger, topic and profile exports, and their `SHA256SUMS`. Cite the release tag, or record the commit from `git rev-parse HEAD` in your clone, or link files at that commit, such as `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`. [Cutting a release](docs/maintenance.md#versioned-data-releases).
+
 ## What “verified” means
 
 | State | What has been checked | What has not been established |
@@ -253,5 +270,3 @@ Network discovery and verification are explicit commands; ordinary builds are of
 The [source registry](data/sources.json) credits the community collections and surveys used for discovery. Bibliographic records use retained arXiv, publisher, and author sources; publication observations preserve edition-specific titles, authors, and date precision. Selected assets are checked against publisher repositories, documentation, and model/dataset cards. Upstream READMEs, papers, model weights, and datasets are not redistributed here.
 
 Original repository code and annotations use the [MIT license](LICENSE). Linked resources retain their own terms; this repository does not relicense them.
-
-To cite the catalog, use [CITATION.cff](CITATION.cff) or GitHub's "Cite this repository" button. The data changes with every scan, so pin the exact version you used. Each `v*` tag has a [data release](https://github.com/reacher-z/Awesome-CUA/releases) with versioned downloads built from the tagged commit: the catalog as JSONL, JSON and SQLite, the coverage ledger, topic and profile exports, and their `SHA256SUMS`. Cite the release tag, or record the commit from `git rev-parse HEAD` in your clone, or link files at that commit, such as `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`. [Cutting a release](docs/maintenance.md#versioned-data-releases).

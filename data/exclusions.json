@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2606.11520",
+    "name": "ISE: An Execution-Grounded Recipe for Multi-Turn OS-Agent Trajectories",
+    "url": "https://arxiv.org/abs/2606.11520",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract presents ISE, a pipeline that synthesizes 23,132 multi-turn trajectories (ISETrace) by simulating users and executing tool calls in isolated OS workspaces, and reports ClawEval gains for a fine-tuned Qwen3-8B. The full text states that the implementation targets macOS and Linux terminals with shell, file and web-fetch tools and does not cover GUI interaction or browser automation, so this terminal tool-use data work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:09:16Z",
+    "metadata_fingerprint": "4935dfe1baef9db3d089cf68e52235d23e112b4d781071b78cf7c9bdb173ab0f",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2606.10423%2C2606.10522%2C2606.10742%2C2606.11078%2C2606.11520%2C2606.12485%2C2606.12666%2C2606.13239%2C2606.13385%2C2606.14106%2C2606.14832%2C2606.15017%2C2606.15034%2C2606.16659%2C2606.16748%2C2606.16802%2C2606.17321%2C2606.17645%2C2606.17929%2C2606.18448%2C2606.18671%2C2606.18890%2C2606.19388%2C2606.19926%2C2606.19930%2C2606.20363%2C2606.20636%2C2606.20717%2C2606.20724%2C2606.20785%2C2606.21654%2C2606.22864%2C2606.22948%2C2606.23449%2C2606.24515%2C2606.24525%2C2606.25705%2C2606.25760%2C2606.27330%2C2606.27595%2C2606.29445%2C2606.29537%2C2606.29705%2C2606.30697%2C2606.31154%2C2606.31270%2C2606.31410%2C2606.31612%2C2607.00502%2C2607.04425&max_results=50",
+      "sha256": "2e5722527f8da4b2cf06372d1e2daccd33ef7fdc7151704b411a0bddd734beae",
+      "retrieved_at": "2026-10-16T06:33:05Z"
+    }
   }
 ]

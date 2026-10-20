@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "STEP: Success-Rate-Aware Trajectory-Efficient Policy Optimization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.13091",
+    "environments": [
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "efficiency",
+      "mobile-navigation"
+    ],
+    "summary": "Proposes STEP, which reallocates GRPO rollouts by smoothed per-task success rates and trains on step-level samples with success-weighted advantages, applied to UI-TARS-DPO-7B on OSWorld and AndroidWorld.",
+    "verify_terms": [
+      "Success-Rate-Aware Trajectory-Efficient Policy Optimization"
+    ],
+    "scope": "core",
+    "notes": "Online RL uses 128 OSWorld training tasks (the pre-sampled subset from ARPO) and 43 AndroidWorld tasks with binary rule-based rewards, comparing against trajectory-level GRPO and a step-split GiGRPO variant. Failed trajectories are discarded and successful ones are split into step samples, with extra step-level GRPO for low-success tasks. Reported results: 62.5 on the OSWorld training set and 45.7 overall on AndroidWorld; on OSWorld the gain on the full task set (7.0 points) is smaller than on the training set (21.1 points). Step time is reported 1.74x faster than trajectory-level GRPO on a 16-GPU setup. The paper names no code release, and no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-8, Tables 1-3, the Limitations section and Appendix B.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2511.13091v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2511.13091v1",
+        "retrieved_at": "2026-10-20T05:26:43Z",
+        "sha256": "992fe2ef525a1df720fb17b619e8cb8d1003fe8375d2d2cc4c1437957bad1bc7",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7e95579c0d865b7a43c610134f5f5819e7a2044c93398c96ebb2d087390e7b2d",
+    "reviewed_at": "2026-10-20T05:27:00Z"
   }
 ]

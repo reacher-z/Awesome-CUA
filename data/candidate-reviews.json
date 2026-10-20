@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:19c4051fad83ee03c2cf",
+    "url": "https://aka.ms/fara1.5-hf",
+    "decision": "alias",
+    "target_id": "github:microsoft/fara",
+    "reason": "Microsoft short link from the Fara README to the Fara1.5 Hugging Face collection, which holds the 4B, 9B and 27B checkpoints of the indexed Fara model family."
   }
 ]

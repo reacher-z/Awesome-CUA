@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "M$^2$: Dual-Memory Augmentation for Long-Horizon Web Agents via Trajectory Summarization and Insight Retrieval",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.00503",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "web-navigation",
+      "training-free",
+      "efficiency",
+      "interaction-history"
+    ],
+    "summary": "Proposes M², a training-free web-agent framework that replaces raw screenshot history with self-written step summaries and adds hints retrieved from an insight bank distilled from 55k successful trajectories.",
+    "verify_terms": [
+      "Dual-Memory Augmentation for Long-Horizon Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.00503v1"
+    ],
+    "scope": "core",
+    "notes": "Evaluated on WebVoyager (12 websites) and 291 accessible Online-Mind2Web tasks with Claude 3.7 Sonnet and Claude Sonnet 4 computer-use agents and Qwen3-VL-32B in virtualized browsers, capped at 60 steps; GPT-4o judges success from the final answer and last five screenshots. The insight bank comes from trajectories on WebVoyager's websites with different queries. The abstract's figures for Qwen3-VL-32B (up to 19.6 points higher success, 58.7% fewer tokens) come from the Online-Mind2Web table. No code release is named. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.00503v1",
+        "retrieved_at": "2026-10-20T04:29:11Z",
+        "sha256": "6e0c35374e50b6a4b0f2b5efd4bf15f4efac9cc6524d7551fcb05c46cfa6f50f",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 2.2 (Dynamic Trajectory Summarization), 2.3 (Insight Retrieval Augmentation and Insight Bank construction) and 3 (experimental setup, WebVoyager and Online-Mind2Web results, ablations).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f98decca4ff8c578e33c663410ec0033e9da0983abaa39aa663e270a4b323ca0",
+    "reviewed_at": "2026-10-20T04:30:03Z"
   }
 ]

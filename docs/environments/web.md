@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-623 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+624 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (444)](#papers)
 
 ## Benchmarks
 
@@ -522,6 +522,7 @@
 | 2025‑05‑28 | [RedTeamCUA: Realistic Adversarial Testing of Computer-Use Agents in Hybrid Web-OS Environments](https://arxiv.org/abs/2505.21936) | web, desktop | RedTeamCUA combines a virtual-machine OS environment with containerized websites for controlled prompt-injection tests spanning both interfaces. Its RTC-Bench contains 864 examples and can initialize agents at injection points to separate attack susceptibility from navigation failures. |
 | 2025‑05‑28 | [WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web Agents via Reinforcement Learning](https://arxiv.org/abs/2505.22942) | web | Uses rule-based rewards for output structure and action correctness to train reasoning for enterprise web navigation. |
 | 2025‑05‑27 | [AdInject: Real-World Black-Box Attacks on Web Agents via Advertising Delivery](https://arxiv.org/abs/2505.21499) | web | Studies advertising delivery as an indirect-injection channel for web agents under a black-box threat model. AdInject evaluates how static ad content shaped by website context can redirect browser actions. |
+| 2025‑05‑26 | [Training LLM-Based Agents with Synthetic Self-Reflected Trajectories and Partial Masking](https://arxiv.org/abs/2505.20023) | web | STeP has a teacher LLM flag a student agent's wrong steps and add reflections and corrections, then fine-tunes on these trajectories with error steps masked from the loss, on ALFWorld, WebShop and SciWorld. |
 | 2025‑05‑26 | [WebCoT: Enhancing Web Agent Reasoning by Reconstructing Chain-of-Thought in Reflection, Branching, and Rollback](https://arxiv.org/abs/2505.20013) | web | WebCoT turns reflection, look-ahead, branching and rollback procedures into chain-of-thought training rationales. Fine-tuning on these reconstructed trajectories is evaluated for web-agent self-improvement and transfer across navigation tasks. |
 | 2025‑05‑22 | [WebAgent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2505.16421) | web | Trains web agents through asynchronous multi-turn environment interaction, using task-success rewards to optimize complete trajectories. |
 | 2025‑05‑21 | [ReGUIDE: Data Efficient GUI Grounding via Spatial Reasoning and Search](https://arxiv.org/abs/2505.15259) | web | Combines self-generated localization reasoning, spatial consistency checks, and inference-time search to improve data-efficient web grounding. |

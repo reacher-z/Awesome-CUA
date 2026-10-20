@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Training LLM-Based Agents with Synthetic Self-Reflected Trajectories and Partial Masking",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.20023",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "imitation-learning",
+      "data-generation"
+    ],
+    "summary": "STeP has a teacher LLM flag a student agent's wrong steps and add reflections and corrections, then fine-tunes on these trajectories with error steps masked from the loss, on ALFWorld, WebShop and SciWorld.",
+    "verify_terms": [
+      "Synthetic Self-Reflected Trajectories and Partial Masking"
+    ],
+    "scope": "adjacent",
+    "notes": "Training data follow ETO (GPT-4 ReAct thoughts over expert trajectories). Half of the successful trajectories initialize a LLaMA2-7B-Chat agent; a teacher model, mainly Qwen1.5-110B-Chat, checks each step of the agent's own rollouts and writes a first-person reflection and corrected action where it errs. WebShop, a simulated shopping website (1,016 training and 200 test tasks), is the only web environment; ALFWorld and SciWorld are simulated household and science tasks. The abstract page, HTML and PDF title page name no code release; no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract, the full v1 HTML text (Sections 1-5, Table 1 dataset statistics, Table 2 main results) and the PDF title page.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.20023v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2505.20023v1",
+        "retrieved_at": "2026-10-20T08:17:07Z",
+        "sha256": "6daf7ebc8de37f9f444c18df90593c20367d298b2a44330716ebdd4ae8b9f581",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "cb8bf254227bff7f791376b937f54a79e478304b3a77faac21536bbcaf386412",
+    "reviewed_at": "2026-10-20T08:17:33Z"
   }
 ]

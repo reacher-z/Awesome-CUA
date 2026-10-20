@@ -63844,5 +63844,109 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Nuphus",
+    "kind": "agent",
+    "url": "https://github.com/mrpulor-gh/nuphus",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Local-first Tauri desktop agent that operates apps and web pages through screen capture, OCR, mouse and keyboard input and a built-in browser, and compiles explored tasks into low-token replayable workflows.",
+    "scope": "core",
+    "verify_terms": [
+      "Nuphus"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The README marks the project Alpha, version 0.2.31, for Windows, macOS and Linux. Desktop control comes from the in-repository desktop-api crate (screen capture with xcap, keyboard and mouse input, Win32 window management) used by src/desktop/client.rs, with local PP-OCRv4 OCR, a YOLO detector and optional vision models for perception; src/desktop_automation holds Windows UI Automation and macOS Accessibility paths. The browser crate nuphus-browser drives Chromium over CDP with chromiumoxide. The README also describes compiling an explored task into a deterministic workflow that replays with few model calls, launching external coding agents such as Cline or Claude Code, and mirroring sessions to a phone client over a LAN or relay connection; the phone is a remote control, not an operated device. Models are user-configured cloud providers. Code was read, not run.",
+    "details": {
+      "availability": "Public Rust and TypeScript source with installers and an npm launcher; no model is bundled, and the user configures a provider.",
+      "repository_revision": "9835fe2ed70fd434deb73498d5a5e5a31bcb2075"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus/9835fe2ed70fd434deb73498d5a5e5a31bcb2075/README.md",
+        "sha256": "488d9f89c2976fb9985391312efc4807904489e4101351ab9286d088f2b2c62f",
+        "retrieved_at": "2026-10-20T08:20:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus/9835fe2ed70fd434deb73498d5a5e5a31bcb2075/README.en.md",
+        "sha256": "029b1029cbf7b980668e85e42d49646c30c1d9c79335132b10135b1527173780",
+        "retrieved_at": "2026-10-20T08:20:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus/9835fe2ed70fd434deb73498d5a5e5a31bcb2075/src/desktop/client.rs",
+        "sha256": "c4f46de34f86e8293e0c1b387adbceafb5dbf6e5f2ef88c73fff9875716e806c",
+        "retrieved_at": "2026-10-20T08:20:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus/9835fe2ed70fd434deb73498d5a5e5a31bcb2075/crates/nuphus-browser/Cargo.toml",
+        "sha256": "956fdbe629121941f8e9217935cd09116c7256b09a9dd9fa20d869b89ae226b0",
+        "retrieved_at": "2026-10-20T08:20:12Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus/9835fe2ed70fd434deb73498d5a5e5a31bcb2075/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-20T08:20:12Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete Chinese and English READMEs, the recursive file tree at commit 9835fe2, the workspace Cargo.toml, the desktop client source, the browser crate manifest and the root LICENSE. No code execution.",
+    "reviewed_sha256": "488d9f89c2976fb9985391312efc4807904489e4101351ab9286d088f2b2c62f",
+    "reviewed_at": "2026-10-20T08:20:35Z"
   }
 ]

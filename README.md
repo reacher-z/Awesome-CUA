@@ -102,66 +102,66 @@ The most-mentioned curated resources per category: the count is how many other c
 
 | Date | Survey | Environments |
 | --- | --- | --- |
-| 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform |
-| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform |
-| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified |
-| 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified |
-| 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform |
+| 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | Cross‑platform |
+| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | Cross‑platform |
+| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | Not specified |
+| 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | Not specified |
+| 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | Cross‑platform |
 
 **Benchmarks** · [all 88 →](docs/benchmarks.md)
 
-| Resource | Mentions | Environments | Paper | License | Description |
-| --- | ---: | --- | --- | --- | --- |
-| [OSWorld](https://github.com/xlang-ai/OSWorld) | 21 | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
-| [WebArena](https://github.com/web-arena-x/webarena) | 15 | web | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | code Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents. |
-| [BrowserGym](https://github.com/ServiceNow/BrowserGym) | 8 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments. |
-| [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) | 8 | desktop, windows, macos, linux | — | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. |
-| [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | 7 | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | — | Visually grounded web tasks extending the WebArena evaluation setting. |
-| [AndroidWorld](https://github.com/google-research/android_world) | 6 | android | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | code Apache-2.0 | Android environment with programmatic task evaluation for mobile agents. |
+| Resource | Mentions | Environments | Description |
+| --- | ---: | --- | --- |
+| [OSWorld](https://github.com/xlang-ai/OSWorld)<br>[2404.07972](https://arxiv.org/abs/2404.07972) (2024) · code Apache‑2.0 | 21 | Desktop, Linux, Windows, macOS | Execution-based evaluation of agents performing tasks in real desktop environments. |
+| [WebArena](https://github.com/web-arena-x/webarena)<br>[2307.13854](https://arxiv.org/abs/2307.13854) (2023) · code Apache‑2.0 | 15 | Web | Self-hosted web environments and tasks for evaluating autonomous web agents. |
+| [BrowserGym](https://github.com/ServiceNow/BrowserGym)<br>[2412.05467](https://arxiv.org/abs/2412.05467) (2024) · code Apache‑2.0 | 8 | Web | Unified interfaces for browser-agent tasks and benchmark environments. |
+| [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding)<br>code MIT | 8 | Desktop, Windows, macOS, Linux | GUI grounding benchmark focused on professional high-resolution interfaces. |
+| [VisualWebArena](https://github.com/web-arena-x/visualwebarena)<br>[2401.13649](https://arxiv.org/abs/2401.13649) (2024) | 7 | Web | Visually grounded web tasks extending the WebArena evaluation setting. |
+| [AndroidWorld](https://github.com/google-research/android_world)<br>[2405.14573](https://arxiv.org/abs/2405.14573) (2024) · code Apache‑2.0 | 6 | Android | Android environment with programmatic task evaluation for mobile agents. |
 
 **Models** · [all 98 →](docs/models.md)
 
-| Resource | Mentions | Environments | Paper | License | Description |
-| --- | ---: | --- | --- | --- | --- |
-| [SeeClick](https://github.com/njucckevin/SeeClick) | 9 | cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | code Apache-2.0 | GUI grounding model trained to locate visual interface elements. |
-| [Aguvis](https://github.com/xlang-ai/aguvis) | 5 | cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | — | Vision-based GUI agent models with unified action representations. |
-| [UI-TARS](https://github.com/bytedance/UI-TARS) | 5 | cross-platform | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | code Apache-2.0 | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use. |
-| [OpenCUA](https://github.com/xlang-ai/OpenCUA) | 3 | desktop | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT | Open computer-use research stack including models and training resources. |
-| [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas) | 3 | cross-platform | [2410.23218](https://arxiv.org/abs/2410.23218) (2024) | code Apache-2.0 | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates. |
-| [ShowUI](https://github.com/showlab/ShowUI) | 3 | cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | code Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. |
+| Resource | Mentions | Environments | Description |
+| --- | ---: | --- | --- |
+| [SeeClick](https://github.com/njucckevin/SeeClick)<br>[2401.10935](https://arxiv.org/abs/2401.10935) (2024) · code Apache‑2.0 | 9 | Cross‑platform | GUI grounding model trained to locate visual interface elements. |
+| [Aguvis](https://github.com/xlang-ai/aguvis)<br>[2412.04454](https://arxiv.org/abs/2412.04454) (2024) | 5 | Cross‑platform | Vision-based GUI agent models with unified action representations. |
+| [UI-TARS](https://github.com/bytedance/UI-TARS)<br>[2501.12326](https://arxiv.org/abs/2501.12326) (2025) · code Apache‑2.0 | 5 | Cross‑platform | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use. |
+| [OpenCUA](https://github.com/xlang-ai/OpenCUA)<br>[2508.09123](https://arxiv.org/abs/2508.09123) (2025) · code MIT | 3 | Desktop | Open computer-use research stack including models and training resources. |
+| [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas)<br>[2410.23218](https://arxiv.org/abs/2410.23218) (2024) · code Apache‑2.0 | 3 | Cross‑platform | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates. |
+| [ShowUI](https://github.com/showlab/ShowUI)<br>[2411.17465](https://arxiv.org/abs/2411.17465) (2024) · code Apache‑2.0 | 3 | Cross‑platform | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. |
 
 **Datasets** · [all 86 →](docs/datasets.md)
 
-| Resource | Mentions | Environments | Paper | License | Description |
-| --- | ---: | --- | --- | --- | --- |
-| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) | 4 | desktop, windows, macos, linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | data mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. |
-| [GUI-Odyssey](https://github.com/OpenGVLab/GUI-Odyssey) | 3 | android | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | — | Human-demonstrated Android episodes for cross-app navigation, spanning six task types, 212 apps and about 1,400 app combinations, for training and evaluating agents. |
-| [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct) | 3 | web, android | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | Web and Android GUI action-instruction data, with single-step, multi-step and smartphone partitions. |
-| [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat) | 3 | unspecified | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | Conversational GUI supervision with text-rich images and bounding boxes, organized as single-turn questions and multi-turn dialogues. |
-| [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv) | 3 | web | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | — | The released local-supervision portion of GUIEnv, pairing webpage regions and text for OCR and GUI grounding. |
-| [OpenMobile-Data-v2](https://huggingface.co/datasets/OpenMobile-2/OpenMobile-Data-v2) | 3 | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | — | Mobile-agent supervision from emulator and simulator trajectories, plus executable tasks with starting states and success checks for reinforcement learning. |
+| Resource | Mentions | Environments | Description |
+| --- | ---: | --- | --- |
+| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro)<br>[2504.07981](https://arxiv.org/abs/2504.07981) (2025) · data mit | 4 | Desktop, Windows, macOS, Linux | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization. |
+| [GUI-Odyssey](https://github.com/OpenGVLab/GUI-Odyssey)<br>[2406.08451](https://arxiv.org/abs/2406.08451) (2024) | 3 | Android | Human-demonstrated Android episodes for cross-app navigation, spanning six task types, 212 apps and about 1,400 app combinations, for training and evaluating agents. |
+| [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct)<br>[2406.11317](https://arxiv.org/abs/2406.11317) (2024) | 3 | Web, Android | Web and Android GUI action-instruction data, with single-step, multi-step and smartphone partitions. |
+| [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat)<br>[2406.11317](https://arxiv.org/abs/2406.11317) (2024) | 3 | Not specified | Conversational GUI supervision with text-rich images and bounding boxes, organized as single-turn questions and multi-turn dialogues. |
+| [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv)<br>[2406.11317](https://arxiv.org/abs/2406.11317) (2024) | 3 | Web | The released local-supervision portion of GUIEnv, pairing webpage regions and text for OCR and GUI grounding. |
+| [OpenMobile-Data-v2](https://huggingface.co/datasets/OpenMobile-2/OpenMobile-Data-v2)<br>[2610.14157](https://arxiv.org/abs/2610.14157) (2026) | 3 | Android, Web | Mobile-agent supervision from emulator and simulator trajectories, plus executable tasks with starting states and success checks for reinforcement learning. |
 
 **Frameworks** · [all 75 →](docs/frameworks.md)
 
-| Resource | Mentions | Environments | Paper | License | Description |
-| --- | ---: | --- | --- | --- | --- |
-| [Browser Use](https://github.com/browser-use/browser-use) | 7 | web | — | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. |
-| [AgentLab](https://github.com/ServiceNow/AgentLab) | 5 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Experiment framework for developing and evaluating browser agents. |
-| [Seg2Click](https://github.com/jcwang0602/Seg2Click) | 5 | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | code MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. |
-| [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | 3 | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | code Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. |
-| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | 3 | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. |
-| [Computer Use OOTB](https://github.com/showlab/computer_use_ootb) | 2 | desktop | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | code Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. |
+| Resource | Mentions | Environments | Description |
+| --- | ---: | --- | --- |
+| [Browser Use](https://github.com/browser-use/browser-use)<br>code MIT | 7 | Web | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. |
+| [AgentLab](https://github.com/ServiceNow/AgentLab)<br>[2412.05467](https://arxiv.org/abs/2412.05467) (2024) · code Apache‑2.0 | 5 | Web | Experiment framework for developing and evaluating browser agents. |
+| [Seg2Click](https://github.com/jcwang0602/Seg2Click)<br>[2610.16234](https://arxiv.org/abs/2610.16234) (2026) · code MIT | 5 | Cross‑platform | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. |
+| [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code)<br>[2610.14157](https://arxiv.org/abs/2610.14157) (2026) · code Apache‑2.0 | 3 | Android, Web | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. |
+| [UI-Genie](https://github.com/Euphoria16/UI-Genie)<br>[2505.21496](https://arxiv.org/abs/2505.21496) (2025) | 3 | Android | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. |
+| [Computer Use OOTB](https://github.com/showlab/computer_use_ootb)<br>[2411.10323](https://arxiv.org/abs/2411.10323) (2024) · code Apache‑2.0 | 2 | Desktop | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. |
 
 **Agents** · [all 43 →](docs/agents.md)
 
-| Resource | Mentions | Environments | Paper | License | Description |
-| --- | ---: | --- | --- | --- | --- |
-| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) | 9 | android, cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | code MIT | Mobile device agent family using visual interface interaction. |
-| [Agent S](https://github.com/simular-ai/Agent-S) | 2 | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. |
-| [SeeAct](https://github.com/OSU-NLP-Group/SeeAct) | 2 | web | [2401.01614](https://arxiv.org/abs/2401.01614) (2024) | — | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. |
-| [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | 1 | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. |
-| [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI) | 1 | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. |
-| [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | 1 | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. |
+| Resource | Mentions | Environments | Description |
+| --- | ---: | --- | --- |
+| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent)<br>[2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) · code MIT | 9 | Android, Cross‑platform | Mobile device agent family using visual interface interaction. |
+| [Agent S](https://github.com/simular-ai/Agent-S)<br>[2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) · code Apache‑2.0 | 2 | Desktop | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. |
+| [SeeAct](https://github.com/OSU-NLP-Group/SeeAct)<br>[2401.01614](https://arxiv.org/abs/2401.01614) (2024) | 2 | Web | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode. |
+| [AppAgent](https://github.com/TencentQQGYLab/AppAgent)<br>[2312.13771](https://arxiv.org/abs/2312.13771) (2023) · code MIT | 1 | Android | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. |
+| [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI)<br>[2309.11436](https://arxiv.org/abs/2309.11436) (2023) · code Apache‑2.0 | 1 | Android | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction. |
+| [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui)<br>code MIT | 1 | Web | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. |
 
 <!-- HIGHLIGHTS:END -->
 

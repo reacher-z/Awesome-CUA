@@ -36,7 +36,8 @@ class ReadmeLocalizationTests(unittest.TestCase):
         self.assertIn("**1** 篇已审阅论文", explore)
         highlights = build.highlights(rows, edges, lang="zh")
         self.assertIn("**基准** · [全部 1 项 →](docs/benchmarks.md)", highlights)
-        self.assertIn("| [Bench](https://example.com/Bench) | 1 | web |", highlights)
+        # Paper and licence sit under the name; the platform uses its Chinese display label.
+        self.assertIn("| [Bench](https://example.com/Bench)<br>代码 MIT | 1 | 网页 |", highlights)
         self.assertIn("代码 MIT", highlights)
         recent = build.recently_reviewed(rows, {"github:a/b": "2026-10-17T00:00:00Z"}, lang="zh")
         self.assertIn("| 基准 | web | Bench summary. |", recent)

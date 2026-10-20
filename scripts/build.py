@@ -856,19 +856,24 @@ def highlights(rows, edges, limit=6, lang="en"):
             cited_by[edge["target_id"]].add(edge["source_id"])
     lines = [""]
     text = README_TEXT[lang]
+    from paper_library import PLATFORMS as PLATFORM_LABELS  # (English, Chinese) display labels shared with the website
+    # Labels and licence identifiers keep their hyphens unbroken so narrow GitHub table columns do not split them over lines.
+    platforms = lambda r: ", ".join(nowrap(PLATFORM_LABELS[e][lang == "zh"]) if e in PLATFORM_LABELS else ("未注明" if lang == "zh" else "Not specified") for e in r["environments"])
     # Surveys come first as the entry point and are ordered by date, not by mentions.
     surveys = sorted((r for r in rows if r["kind"] == "survey" and r["review_status"] == "curated"), key=lambda r: (record_date_text(r), r["name"]), reverse=True)
     if surveys:
         lines += [f"**{text['surveys']}** · [{text['all'].format(n=len(surveys))}](docs/surveys.md)", "", text["survey_header"], "| --- | --- | --- |"]
-        lines += [f"| {nowrap(record_date_text(r) or '—')} | [{md(r['name'])}]({r['url']}) | {', '.join(r['environments'])} |" for r in surveys[:5]]
+        lines += [f"| {nowrap(record_date_text(r) or '—')} | [{md(r['name'])}]({r['url']}) | {platforms(r)} |" for r in surveys[:5]]
         lines.append("")
     for kind, path in HIGHLIGHT_KINDS:
         curated = [r for r in rows if r["kind"] == kind and r["review_status"] == "curated"]
         ranked = sorted((r for r in curated if cited_by[r["id"]]), key=lambda r: (-len(cited_by[r["id"]]), r["name"].casefold()))[:limit]
         if not ranked:
             continue
-        lines += [f"**{text['kinds'][kind]}** · [{text['all'].format(n=len(curated))}]({path})", "", text["highlight_header"], "| --- | ---: | --- | --- | --- | --- |"]
-        lines += [f"| [{md(r['name'])}]({r['url']}) | {len(cited_by[r['id']])} | {', '.join(r['environments'])} | {paper_cell(r, by_id)} | {license_cell(r, lang)} | {md(r['summary'])} |" for r in ranked]
+        # Paper and licence sit under the name, so the description gets the width the two narrow columns used to wrap into.
+        resource, mentions, environments, _paper, _license, description = (cell.strip() for cell in text["highlight_header"].strip("|").split("|"))
+        lines += [f"**{text['kinds'][kind]}** · [{text['all'].format(n=len(curated))}]({path})", "", f"| {resource} | {mentions} | {environments} | {description} |", "| --- | ---: | --- | --- |"]
+        lines += [f"| [{md(r['name'])}]({r['url']})<br>{' · '.join(x for x in (paper_cell(r, by_id), nowrap(license_cell(r, lang))) if x != '—') or '—'} | {len(cited_by[r['id']])} | {platforms(r)} | {md(r['summary'])} |" for r in ranked]
         lines.append("")
     return "\n".join(lines) + "\n"
 

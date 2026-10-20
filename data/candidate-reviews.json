@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:1c6794ed91d94282d0fb",
+    "url": "https://intel.twzrd.xyz/mcp",
+    "decision": "out_of_scope",
+    "reason": "This is the streamable-HTTP MCP endpoint of TWZRD Agent Intel, a paid trust-scoring service for x402 wallet payments on Solana; a GET returns only a notice to POST MCP calls. The service involves no GUI, browser or device operation, so the endpoint falls outside the computer-use scope along with its homepage.",
+    "reviewed_at": "2026-10-20T04:17:27Z",
+    "evidence": {
+      "url": "https://intel.twzrd.xyz/mcp",
+      "sha256": "f880cb74c4a92a850ec5ee3fdbb1be79bce20eef79dbd1d45b0a4670a1549f0d",
+      "retrieved_at": "2026-10-19T06:46:28Z"
+    }
   }
 ]

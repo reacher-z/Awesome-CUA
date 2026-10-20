@@ -63844,5 +63844,154 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "agent-computer-use",
+    "kind": "tool",
+    "url": "https://github.com/kortix-ai/agent-computer-use",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding",
+      "history"
+    ],
+    "summary": "Rust CLI (agent-cu) that lets agents snapshot desktop app accessibility trees into element refs or selectors and click, type, scroll or drag through AX on macOS, UI Automation on Windows and AT-SPI2 on Linux.",
+    "scope": "core",
+    "verify_terms": [
+      "agent-computer-use",
+      "agent-cu"
+    ],
+    "aliases": [
+      "agent-cu"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Published on npm as agent-cu (package.json 0.1.1 at the inspected commit) with precompiled binaries, and also installable as an agent skill (skills/agent-computer-use/SKILL.md). Commands snapshot an app's accessibility tree into @eN refs or query it with a selector DSL (role, name, id, parent-child chains), then click, type, press keys, scroll, drag, move or resize windows, wait for elements, take screenshots, and run JSON batches or YAML workflows; output is JSON by default. Backends: macOS uses AXUIElement with CGEvent input, Windows uses UI Automation, and Linux uses AT-SPI2 over D-Bus with xdotool for input. Electron apps can be driven over the Chrome DevTools Protocol, but automatic Electron detection and relaunch with a debug port is implemented only on macOS (cli/crates/agent-computer-use-cdp/src/detect.rs). The README marks every platform as preview and states that the project is no longer maintained, recommending Cua Driver instead. The repository was formerly named kortix-ai/agent-click (same GitHub repository ID). The tool contains no model or agent loop. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT-licensed Rust source and the agent-cu npm package with precompiled binaries for macOS, Linux and Windows; no model is bundled, and the publisher no longer maintains the project.",
+      "repository_revision": "d67eca2fadffa76c46d448e091b0ec4243e90b59",
+      "package_version": "0.1.1",
+      "maintenance_status": "no longer maintained; the README recommends Cua Driver instead"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.maintenance_status",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/README.md",
+        "sha256": "0f1bff0fd1f3e7f13281464fd680d24174a6e8f990db92fe1da2e7436b22d9e2",
+        "retrieved_at": "2026-10-20T08:34:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/cli/crates/agent-computer-use-macos/src/ax.rs",
+        "sha256": "a790122ec596272c1c2b24a53e7fddbaf6c96c03d638af30ecfb8848e5772309",
+        "retrieved_at": "2026-10-20T08:34:46Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/cli/crates/agent-computer-use-macos/src/input.rs",
+        "sha256": "7d3e9685873b6c957a1bec231b58a45a67e452575f9424c94514bfdaaf4193b8",
+        "retrieved_at": "2026-10-20T08:34:36Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/cli/crates/agent-computer-use-windows/src/uia.rs",
+        "sha256": "4fd52bfe92dd8c0f8948a23ac2111dbf0e953dc49ea02e72e577c93f1fdd062b",
+        "retrieved_at": "2026-10-20T08:34:55Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/cli/crates/agent-computer-use-linux/src/atspi.rs",
+        "sha256": "3137a6d868a8a961ed9dd94edccae779bfb0ce0cd20199a128d46fbea368c054",
+        "retrieved_at": "2026-10-20T08:35:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/cli/crates/agent-computer-use-linux/src/input.rs",
+        "sha256": "b6de2ca443d06b70b577a08015890f2f8c90be716925c9d40d0ab93876507813",
+        "retrieved_at": "2026-10-20T08:35:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/cli/crates/agent-computer-use-cdp/src/detect.rs",
+        "sha256": "9bb5db69945bd11940e07dbbe369512a2dfe7c6cdfae49c9d114badae61a87e0",
+        "retrieved_at": "2026-10-20T08:35:10Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/package.json",
+        "sha256": "f98b4ddf4f446f799b433cc3e4b74be5dabc325acc7d6651a43e89ab36458c8f",
+        "retrieved_at": "2026-10-20T08:35:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/kortix-ai/agent-computer-use/d67eca2fadffa76c46d448e091b0ec4243e90b59/LICENSE",
+        "sha256": "1e40d4e4a07efcc82df9df675c07c365b8a7a7b87a95dc539e882bf172db4e3a",
+        "retrieved_at": "2026-10-20T08:35:14Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0f1bff0fd1f3e7f13281464fd680d24174a6e8f990db92fe1da2e7436b22d9e2",
+    "reviewed_at": "2026-10-20T08:36:55Z"
   }
 ]

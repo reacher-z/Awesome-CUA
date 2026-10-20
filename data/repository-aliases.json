@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:kortix-ai/agent-click",
+    "target_id": "github:kortix-ai/agent-computer-use",
+    "repository_id": 1196589005,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-20T08:36:55+00:00",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/kortix-ai/agent-click",
+        "resolved_url": "https://api.github.com/repositories/1196589005",
+        "repository_id": 1196589005,
+        "full_name": "kortix-ai/agent-computer-use",
+        "html_url": "https://github.com/kortix-ai/agent-computer-use",
+        "retrieved_at": "2026-10-20T08:35:21Z",
+        "sha256": "f1cf004fcfb3d3e7d626574385e9eebd8a25b2eba62b31f2e953f1b030a30e7d"
+      },
+      {
+        "url": "https://api.github.com/repos/kortix-ai/agent-computer-use",
+        "resolved_url": "https://api.github.com/repos/kortix-ai/agent-computer-use",
+        "repository_id": 1196589005,
+        "full_name": "kortix-ai/agent-computer-use",
+        "html_url": "https://github.com/kortix-ai/agent-computer-use",
+        "retrieved_at": "2026-10-20T08:35:24Z",
+        "sha256": "f1cf004fcfb3d3e7d626574385e9eebd8a25b2eba62b31f2e953f1b030a30e7d"
+      }
+    ]
   }
 ]

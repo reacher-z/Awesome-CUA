@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2604.10547",
+    "name": "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?",
+    "url": "https://arxiv.org/abs/2604.10547",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract introduces Agent^2 RL-Bench, which tests whether LLM agents can design, implement, debug and run post-training pipelines, from supervised fine-tuning to online RL, that improve a base model within a fixed budget across six tasks. The evaluated agents write and run training code in an isolated workspace with a grading API; per the full text, ALFWorld and WebShop serve only as rollout environments for the trained model, so this machine-learning engineering benchmark is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:32:04Z",
+    "metadata_fingerprint": "5d1a6174df24f64e0a971b0655088b62ed14c9a82835f6180dd1bd7c43f9ad05",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2604.03598%2C2604.04759%2C2604.05547%2C2604.06170%2C2604.07340%2C2604.10547%2C2604.10938%2C2604.11978%2C2604.12282%2C2604.13018%2C2604.13346%2C2604.13954%2C2604.15579%2C2604.15671%2C2604.15715%2C2604.16520%2C2604.18240%2C2604.18934%2C2604.19572%2C2604.19667%2C2604.19742%2C2604.20841%2C2604.20987%2C2604.22436%2C2604.23781%2C2604.24479%2C2604.26148%2C2604.27621%2C2604.27996%2C2604.28093%2C2604.28139%2C2604.28181%2C2605.00425%2C2605.01462%2C2605.02240%2C2605.03042%2C2605.03242%2C2605.04811%2C2605.05191%2C2605.05811%2C2605.06110%2C2605.07073%2C2605.07358%2C2605.08374%2C2605.08985%2C2605.10912%2C2605.10966%2C2605.11363%2C2605.11732%2C2605.11817&max_results=50",
+      "sha256": "05ec5d668ac75d3d7c5b71ea7d6e76a3fbf5ebeb742e0843db2329e5e41aa208",
+      "retrieved_at": "2026-10-17T12:31:19Z"
+    }
   }
 ]

@@ -63653,5 +63653,82 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Browse AI",
+    "kind": "product",
+    "url": "https://www.browse.ai",
+    "evidence_urls": [
+      "https://www.browse.ai/llms.txt"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "web-navigation"
+    ],
+    "summary": "No-code web scraping and monitoring platform whose robots replay recorded clicks, typed inputs, dropdown choices, logins and pagination on target sites, or let AI build the table, then extract data on a schedule.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Browse AI"
+    ],
+    "notes": "The help center describes three ways to train a robot: Table Studio, where AI proposes the columns from a URL; Robot Studio, which records the user's point-and-click actions, turning typed text into input parameters and keeping clicks, dropdown and checkbox choices and navigation as fixed actions; and a Chrome extension that trains in the user's own browser when neither studio can load the site. Robots can sign in with session cookies or a password, paginate, scroll, capture screenshots and run on schedules or in bulk, and the llms.txt file states cloud-based execution. The interactions serve data extraction and change monitoring. Prices, usage figures and reliability are publisher statements and were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://browse.ai/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://help.browse.ai/en/articles/16774543-choosing-between-table-studio-robot-studio-and-the-chrome-extension.md",
+        "sha256": "23f056c68349ec8ab9fceac1443cbb87ef4a0df434b76c7eb088c5bb25fac883",
+        "retrieved_at": "2026-10-20T04:26:57Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://help.browse.ai/en/articles/10497039-can-my-robot-fill-out-a-form-or-perform-an-action-before-extracting-data.md",
+        "sha256": "1f1305a3b9bdb63dea3d7638b463c01a116169cc9886f2c2ba42dbc170fa67f9",
+        "retrieved_at": "2026-10-20T04:26:58Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://help.browse.ai/en/articles/10445807-what-are-robots-and-what-can-they-do.md",
+        "sha256": "31457812c3a33a5c518daf1920ee1206007fcb0a4c97db7afc61c385fa7b4917",
+        "retrieved_at": "2026-10-20T04:26:59Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5d82b904c4d09ea2ed499511e503ee40fea5763758d663473857b104030cb4d8",
+    "reviewed_at": "2026-10-20T04:27:13Z"
   }
 ]

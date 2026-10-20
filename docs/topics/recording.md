@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-23 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+24 source-reviewed resources tagged `recording`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (15)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products) · [Papers (15)](#papers)
 
 ## Datasets
 
@@ -46,11 +46,10 @@ All entries in this section: web, desktop, windows, macos, linux.
 
 ## Products
 
-All entries in this section: desktop, web.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Scribe](https://scribehow.com/) | — | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Browse AI](https://www.browse.ai) | — | web | No-code web scraping and monitoring platform whose robots replay recorded clicks, typed inputs, dropdown choices, logins and pagination on target sites, or let AI build the table, then extract data on a schedule. | [✓ 2026‑10‑20](https://www.browse.ai/llms.txt) |
+| [Scribe](https://scribehow.com/) | — | desktop, web | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
 
 ## Papers
 

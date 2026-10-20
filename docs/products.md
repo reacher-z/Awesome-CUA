@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (16)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -18,6 +18,7 @@ All entries in this section: web.
 | --- | --- | --- | --- |
 | [AgentQL](https://www.agentql.com/) | — | Natural-language querying and interaction tools for web interfaces. | [✓ 2026‑10‑16](https://www.agentql.com/) |
 | [Amazon Nova Act](https://aws.amazon.com/nova/act/) | — | AWS service for building and deploying agents that automate browser-based UI workflows from natural language and Python, powered by a custom Nova 2 Lite model. | [✓ 2026‑10‑17](https://aws.amazon.com/nova/act/) |
+| [Browse AI](https://www.browse.ai) | — | No-code web scraping and monitoring platform whose robots replay recorded clicks, typed inputs, dropdown choices, logins and pagination on target sites, or let AI build the table, then extract data on a schedule. | [✓ 2026‑10‑20](https://www.browse.ai/llms.txt) |
 | [Browser Use Cloud](https://browser-use.com/) | [Browser Use](https://browser-use.com/) | Hosted browser-agent platform from Browser Use. | [✓ 2026‑10‑16](https://browser-use.com/) |
 | [BrowserAct](https://www.browseract.com/) | [BrowserAct](https://www.browseract.com/) | Managed web scraping platform with reusable browser interaction workflows. | [✓ 2026‑10‑16](https://www.browseract.com/) |
 | [Browserbase Cloud](https://www.browserbase.com/) | [Browserbase](https://www.browserbase.com/) | Managed browser infrastructure for agent applications. | [✓ 2026‑10‑16](https://www.browserbase.com/) |

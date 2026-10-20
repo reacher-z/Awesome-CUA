@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "DiagEval: Trajectory-Conditioned Diagnosis for Reliable Software Evaluation with GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.17439",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "ui-design",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "DiagEval reuses a GUI-agent evaluator's failed trajectory to select diagnostic probes, separating evaluator execution errors from real defects in generated web software; tested on WebDevJudge-Unit and RealDevBench.",
+    "verify_terms": [
+      "DiagEval: Trajectory-Conditioned Diagnosis"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.17439v2"
+    ],
+    "notes": "Per the v2 full text, RealDevBench results use a 429-case test set of projects generated with the Atoms system and labeled by the authors' test engineers, and WebDevJudge-Unit has 502 unit tasks with pass/fail labels. Baseline evaluators include AppEvalPilot, WebVoyager, UI-TARS Agent and model-native computer-use agents. DiagEval does not reconstruct the latent UI graph or produce calibrated probabilities. Code is linked at github.com/scutGit/DiagEval, not reviewed here. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.17439v2",
+        "sha256": "4cf6f242fa4b2087f111f07dfe6d807fc123d022bf83b5903eef3a5a3621b010",
+        "retrieved_at": "2026-10-20T04:00:57Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML full text for the datasets, annotation protocol, baseline evaluators and code link. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "839bfe1ee9b13c5fb4cb12e991e96170b5734c60fcacfce42028cb349f962458",
+    "reviewed_at": "2026-10-20T04:10:55Z"
   }
 ]

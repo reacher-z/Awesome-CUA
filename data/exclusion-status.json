@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2002,6 +2002,23 @@
       "reason": "Z3D localizes objects in 3D scenes from multi-view images, optionally using camera poses and depth maps. Its ScanRefer/Nr3D evaluations concern 3D scene grounding rather than GUI element grounding or software-interface control.",
       "reviewed_at": "2026-10-17T14:31:31.479688+00:00",
       "metadata_fingerprint": "1d1c31e2ff0a63e9a705479be31971aea644ddd2fafbbc98bb3f71c8bcca7d2c",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2601.13462%2C2601.14232%2C2601.15331%2C2601.17548%2C2601.18418%2C2601.18491%2C2601.18827%2C2601.20171%2C2601.20613%2C2601.20742%2C2601.21233%2C2601.21253%2C2601.22037%2C2601.22154%2C2601.22511%2C2601.22607%2C2602.01550%2C2602.03117%2C2602.03361%2C2602.05665%2C2602.05746%2C2602.05877%2C2602.06052%2C2602.07398%2C2602.07458%2C2602.07918%2C2602.09007%2C2602.09463%2C2602.09514%2C2602.10122%2C2602.10525%2C2602.11224%2C2602.12268%2C2602.12430%2C2602.13318%2C2602.13543%2C2602.13692%2C2602.14038%2C2602.14337%2C2602.14364%2C2602.16313%2C2602.16317%2C2602.16666%2C2602.16901%2C2602.16930%2C2602.17547%2C2602.17646%2C2602.18846%2C2602.19320%2C2602.19594&max_results=50",
+        "sha256": "c8c95278aa5dcc6a8f2eda3f3b44d61ec1f35adcb6a4c6c9ab328691a1a4f102",
+        "retrieved_at": "2026-10-17T12:31:12Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2602.09514",
+      "name": "EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies",
+      "url": "https://arxiv.org/abs/2602.09514",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces EcoGym, three simulated economic environments (Vending, Freelance and Operation) for evaluating the long-horizon plan-and-execute decisions of LLM agents over 1000+ steps, scored by business outcomes such as net worth, income and daily active users. Agents act through structured function calls (Appendices C-D); a graphical interface appears only for the human expert baseline (Appendix G), so this economic simulation benchmark is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:47:45Z",
+      "metadata_fingerprint": "e3dbc87ae2cc8cf9ebee4d68a4909e0ae921440e6ee98dafd0541ab5066abe2c",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2601.13462%2C2601.14232%2C2601.15331%2C2601.17548%2C2601.18418%2C2601.18491%2C2601.18827%2C2601.20171%2C2601.20613%2C2601.20742%2C2601.21233%2C2601.21253%2C2601.22037%2C2601.22154%2C2601.22511%2C2601.22607%2C2602.01550%2C2602.03117%2C2602.03361%2C2602.05665%2C2602.05746%2C2602.05877%2C2602.06052%2C2602.07398%2C2602.07458%2C2602.07918%2C2602.09007%2C2602.09463%2C2602.09514%2C2602.10122%2C2602.10525%2C2602.11224%2C2602.12268%2C2602.12430%2C2602.13318%2C2602.13543%2C2602.13692%2C2602.14038%2C2602.14337%2C2602.14364%2C2602.16313%2C2602.16317%2C2602.16666%2C2602.16901%2C2602.16930%2C2602.17547%2C2602.17646%2C2602.18846%2C2602.19320%2C2602.19594&max_results=50",
         "sha256": "c8c95278aa5dcc6a8f2eda3f3b44d61ec1f35adcb6a4c6c9ab328691a1a4f102",

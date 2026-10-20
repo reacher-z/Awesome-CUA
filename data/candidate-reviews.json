@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9b37d491bc442bb265e6",
+    "url": "https://www.nexa4ai.com/octo-planner",
+    "decision": "alias",
+    "target_id": "arxiv:2406.18082",
+    "reason": "Nexa AI product page for the Octo-planner on-device planning model, which links the indexed arXiv paper as its paper; the address now redirects to Qualcomm AI Hub, so it is read from a 2024 Wayback capture."
   }
 ]

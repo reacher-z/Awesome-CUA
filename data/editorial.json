@@ -63844,5 +63844,144 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "windows-computer-use-mcp",
+    "kind": "tool",
+    "url": "https://github.com/sandraschi/windows-computer-use-mcp",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Windows computer-use MCP server on pywinauto with 20 default tools for windows, UI Automation elements, mouse, keyboard, screenshots, OCR and macros, plus a mission tool that plans goals through MCP sampling.",
+    "scope": "core",
+    "verify_terms": [
+      "windows-computer-use-mcp"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Python FastMCP server (package 0.8.0; classifiers list Windows 10 and 11) served over stdio or streamable HTTP beside a FastAPI REST API, with a Vite operator web UI and a Tauri desktop app. tools/__init__.py and app.py register 20 tools by default (script-counted), among them automation_windows, automation_elements, automation_mouse, automation_keyboard, automation_visual (screenshots, OCR, template matching), automation_assert, automation_macro (record and replay), automation_watch, get_desktop_state and get_window_state; face recognition and a global keylogger are two more tools that stay unregistered unless enabled by environment variables. get_window_state returns index-addressable UI Automation elements in ax, som (annotated screenshot) or vision modes. Mouse actions go through SetCursorPos and mouse_event (win32_mouse.py); operations other than position and telemetry are refused until approve_automation opens a time-limited approval window (the project's HITL gate), unless an environment variable bypasses it. automation_mission asks the MCP client's model through sampling to decompose a goal into JSON steps, falls back to a static heuristic when sampling is unavailable, and runs the steps with retries and outcome checks; the server bundles no model. Root LICENSE is MIT. Not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public MIT Python source for Windows with MCPB and installer packaging; no model is bundled, so an MCP client supplies the agent.",
+      "repository_revision": "1ace9e51356b36fa45497530579f16f31fe9c71d",
+      "package_version": "0.8.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/docs/TOOLS.md",
+        "sha256": "98eb5f962609d3af08d3de657dd38b2c48e3449da28c3a408253dc00a1424579",
+        "retrieved_at": "2026-10-20T08:34:53Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/docs/ARCHITECTURE.md",
+        "sha256": "eaaa5bf96dd343e665e23df673ac1c4e88bccd434958d4d220d15b72a9b6e9c7",
+        "retrieved_at": "2026-10-20T08:35:03Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/src/windows_computer_use_mcp/tools/__init__.py",
+        "sha256": "6da4f164523f8a9abccee3a295e5af9ff1e57095102f738231e8c42bc43f9df2",
+        "retrieved_at": "2026-10-20T08:35:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/src/windows_computer_use_mcp/app.py",
+        "sha256": "2df21d044d55c0ec1386a8ef4733693fd3e4a1f26d7907c2a09097b29575063f",
+        "retrieved_at": "2026-10-20T08:35:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/src/windows_computer_use_mcp/tools/portmanteau_mission.py",
+        "sha256": "c057c7d948242c259dc9ef021cc59797e3f300157e5c08fd40dc9b6ce28c0ef4",
+        "retrieved_at": "2026-10-20T08:35:11Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/src/windows_computer_use_mcp/tools/window_state.py",
+        "sha256": "8c9f6d5aba17de973fb1b38ac2a814c555cb62c72d88bb0fdbe740d95bd7868f",
+        "retrieved_at": "2026-10-20T08:35:14Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/src/windows_computer_use_mcp/tools/portmanteau_mouse.py",
+        "sha256": "3c3d15761164fc6a450ee4ebf024b60cbab90b38167d649451ec8603cd5707d1",
+        "retrieved_at": "2026-10-20T08:35:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version",
+          "details.availability"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/pyproject.toml",
+        "sha256": "9aad6556295dab47e02588df12c73e8bd833c44705ec7193eea34d9bde252454",
+        "retrieved_at": "2026-10-20T08:35:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/1ace9e51356b36fa45497530579f16f31fe9c71d/LICENSE",
+        "sha256": "a0d9b5e27c42a333b900f6c29154413a79828101b09164159e85904b91dc28f4",
+        "retrieved_at": "2026-10-20T08:35:19Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "808db9d27ff475075fb8846d2764ca0bb41e92439ac94de95b74006b87513d90",
+    "reviewed_at": "2026-10-20T08:36:44Z"
   }
 ]

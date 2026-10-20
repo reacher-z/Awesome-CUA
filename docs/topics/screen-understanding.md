@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (8)](#tools) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -81,6 +81,7 @@ All entries in this section: cross-platform.
 | [Tarsier](https://github.com/reworkd/tarsier) | web | — | code MIT | Perception utilities for web agents that tag interactable elements with typed IDs an LLM can act on, and use OCR to render page screenshots as whitespace-structured text for models without vision. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/reworkd/tarsier/HEAD/README.md) |
 | [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 | [WebMarker](https://github.com/reidbarber/webmarker) | web | — | code MIT | A browser library that labels interactive elements and their boxes for visual prompting, preserving element mappings that automation code can use to execute selected actions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/reidbarber/webmarker/HEAD/README.md) |
+| [windows-computer-use-mcp](https://github.com/sandraschi/windows-computer-use-mcp) | desktop, windows | — | code MIT | Windows computer-use MCP server on pywinauto with 20 default tools for windows, UI Automation elements, mouse, keyboard, screenshots, OCR and macros, plus a mission tool that plans goals through MCP sampling. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/sandraschi/windows-computer-use-mcp/HEAD/README.md) |
 | [Windows-MCP](https://github.com/CursorTouch/Windows-MCP) | windows, desktop, web | — | code MIT | A Windows MCP bridge exposing application, window, keyboard and mouse operations plus native UI-state inspection for agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CursorTouch/Windows-MCP/HEAD/README.md) |
 
 ## Papers

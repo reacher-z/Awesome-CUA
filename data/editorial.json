@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "id": "url:9113270916a36b4b76f1",
+    "name": "UI-Hawk: Unleashing the Screen Stream Understanding for Mobile GUI Agents",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2025.emnlp-main.920/",
+    "summary": "Mobile GUI agent whose history-aware visual encoder reads earlier screenshots with the current one, trained by a curriculum from grounding, referring, screen QA and summarization to navigation; adds the FunUI benchmark.",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "interaction-history",
+      "screen-understanding",
+      "grounding",
+      "evaluation"
+    ],
+    "verify_terms": [
+      "UI-Hawk",
+      "FunUI"
+    ],
+    "evidence_urls": [
+      "https://aclanthology.org/2025.emnlp-main.920/"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://web.archive.org/web/20260314134926id_/https://www.preprints.org/manuscript/202408.2137",
+        "sha256": "21dd34a105c97fa78e8a93f1b62e6ac0b9a033f297425be1e638c7c379674e20",
+        "retrieved_at": "2026-10-20T04:37:15Z"
+      }
+    ],
+    "notes": "Reviewed against the EMNLP 2025 proceedings page and the full proceedings PDF; experiments were not reproduced. The PDF (10.9 MB) exceeds the receipt size limit, so the retained receipt is the landing page with its complete abstract. Per the PDF, UI-Hawk replaces TextHawk's language model with Qwen2-7B and encodes each history screenshot at a quarter of its size in 144 visual tokens; FunUI holds 2,150 Chinese and 9,347 English Android screens, and navigation is evaluated on GUI-Odyssey+ (GUIOdyssey clicks re-annotated with element boxes) and the authors' Chinese GUI-Zouwu episodes. An earlier version titled 'UI-Hawk: Unleashing the Screen Stream Understanding for GUI Agents' was posted on Preprints.org on 30 August 2024 (DOI 10.20944/preprints202408.2137.v1) by the same six authors. The paper points to github.com/IMNearth/UIHawk for code and data, which was not reviewed here.",
+    "editorial_reviewed": true,
+    "read_basis": "Read the ACL Anthology landing page metadata and abstract, the full proceedings PDF text (method, data collection, FunUI and navigation sections), the Preprints.org page through its 2026-03-14 Wayback capture, and the Crossref records for both DOIs. No code execution or result reproduction.",
+    "reviewed_sha256": "383df4b7f7e301c284b7afe71ba8d71f04b6362b42b2a1d64d104b9cc174ba24",
+    "reviewed_at": "2026-10-20T04:38:57Z"
   }
 ]

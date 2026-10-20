@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-310 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+311 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (185)](#papers)
 
 ## Benchmarks
 
@@ -265,6 +265,7 @@
 | 2025‑12‑01 | [HiconAgent: History Context-aware Policy Optimization for GUI Agents](https://arxiv.org/abs/2512.01763) | android | HiconAgent trains GUI policies to use history through variable-length context sampling and paired policy updates with compressed and complete histories. Its compression retains past actions while removing historical observations, and an alignment loss couples the two branches. |
 | 2025‑11‑20 | [D-GARA: A Dynamic Benchmarking Framework for GUI Agent Robustness in Real-World Anomalies](https://arxiv.org/abs/2511.16590) | android | D-GARA evaluates Android GUI agents under runtime anomalies such as permission dialogs, battery warnings, and update prompts. Its modular environment embeds these interruptions in Android applications to study recovery and robustness. |
 | 2025‑11‑13 | [Co-EPG: A Framework for Co-Evolution of Planning and Grounding in Autonomous GUI Agents](https://arxiv.org/abs/2511.10705) | web, android | Co-EPG alternates reinforcement learning for a planner with updates to a grounding model using generated training examples. The evolving grounder provides feedback to the planner, and evaluation uses Multimodal Mind2Web and AndroidControl. |
+| 2025‑11 | [UI-Hawk: Unleashing the Screen Stream Understanding for Mobile GUI Agents](https://aclanthology.org/2025.emnlp-main.920/) | android | Mobile GUI agent whose history-aware visual encoder reads earlier screenshots with the current one, trained by a curriculum from grounding, referring, screen QA and summarization to navigation; adds the FunUI benchmark. |
 | 2025‑10‑24 | [OpenPhone: Mobile Agentic Foundation Models](https://arxiv.org/abs/2510.22009) | android | OpenPhone trains a compact mobile policy with supervised learning followed by GRPO on synthetic GUI data, incorporating reasoning and memory management. Its device-cloud design handles routine work locally and delegates complex subtasks, with online evaluation on AndroidLab. |
 | 2025‑10‑23 | [UI-Ins: Enhancing GUI Grounding with Multi-Perspective Instruction-as-Reasoning](https://arxiv.org/abs/2510.20286) | cross-platform, android | Treats alternative instruction formulations as reasoning paths and trains GUI-grounding models to select and combine useful perspectives. |
 | 2025‑10‑22 | [Surfer 2: The Next Generation of Cross-Platform Computer Use Agents](https://arxiv.org/abs/2510.19949) | web, desktop, android | Surfer2 combines hierarchical context management with separate planning and execution, self-verification, and recovery for visual computer use. It evaluates the framework across web, desktop, and Android tasks without task-specific fine-tuning. |

@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T03:55:29.533431+00:00**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T04:37:15Z**. Generated from committed source receipts.
 
-- 3,195 resource records: 1,629 curated; 1,566 bibliographic metadata only.
-- 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 3,196 resource records: 1,630 curated; 1,566 bibliographic metadata only.
+- 2,734 paper and survey records, including 2,720 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
 - 2,856 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
-- 4,244 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,244 discovery identifiers; 903 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 38 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -23,7 +23,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 22 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 101 | 344 |
+| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 185 | 8 | 2 | 101 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
@@ -36,7 +36,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-19 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-19 |
-| [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-19 |
+| [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 7 | 19 | OK · 2026-10-19 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-19 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-19 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-19 |
@@ -51,7 +51,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 211 | 208 | 157 | 0 | 1 | 2 | OK · 2026-10-19 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-10-19 |
 | [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 26 | 25 | 0 | 3 | 11 | OK · 2026-10-19 |
-| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 46 | OK · 2026-10-19 |
+| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 7 | 45 | OK · 2026-10-19 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-10-19 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-10-19 |
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-19 |

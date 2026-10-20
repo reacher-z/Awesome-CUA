@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-374 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (247)](#papers)
 
 ## Benchmarks
 
@@ -289,6 +289,7 @@ All entries in this section: web.
 | 2025‑11‑09 | [AUTO-Explorer: Automated Data Collection for GUI Agent](https://arxiv.org/abs/2511.06417) | unspecified | Introduces Auto-Explorer, an automated GUI exploration method that records software states for training-data collection. UIXplore evaluates exploration coverage, and collected data is used to fine-tune and test GUI element grounding. |
 | 2025‑11‑06 | [GUI-360$^\circ$: A Comprehensive Dataset and Benchmark for Computer-Using Agents](https://arxiv.org/abs/2511.04307) | desktop, windows | Collects Windows application trajectories with screenshots and action traces for grounding, screen parsing, and action prediction. |
 | 2025‑11‑02 | [GUI-AIMA: Aligning Intrinsic Multimodal Attention with a Context Anchor for GUI Grounding](https://arxiv.org/abs/2511.00810) | unspecified | Introduces GUI-AIMA, which supervises instruction-relevant attention over visual patches instead of directly training coordinate text generation. Patch-level grounding can be combined with an optional zoom stage and is evaluated across GUI localization benchmarks. |
+| 2025‑11 | [UI-Hawk: Unleashing the Screen Stream Understanding for Mobile GUI Agents](https://aclanthology.org/2025.emnlp-main.920/) | android | Mobile GUI agent whose history-aware visual encoder reads earlier screenshots with the current one, trained by a curriculum from grounding, referring, screen QA and summarization to navigation; adds the FunUI benchmark. |
 | 2025‑10‑31 | [Enhancing Trustworthy GUI Grounding via Self-Critiqued Reinforcement Learning](https://arxiv.org/abs/2510.27266) | unspecified | HyperClick trains GUI grounders to produce a click and an accompanying confidence estimate using rewards for correctness and confidence alignment. Its evaluation examines localization, calibration, and abstention behavior. |
 | 2025‑10‑23 | [UI-Ins: Enhancing GUI Grounding with Multi-Perspective Instruction-as-Reasoning](https://arxiv.org/abs/2510.20286) | cross-platform, android | Treats alternative instruction formulations as reasoning paths and trains GUI-grounding models to select and combine useful perspectives. |
 | 2025‑10‑21 | [AndroidControl-Curated: Revealing the True Potential of GUI Agents through Benchmark Purification](https://arxiv.org/abs/2510.18488) | android | AndroidControl-Curated audits ambiguities and factual errors in AndroidControl and produces a refined evaluation dataset. The paper also studies post-training a small Magma-R1 model on a curated subset to examine the effect of data quality on GUI action assessment. |

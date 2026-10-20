@@ -517,5 +517,19 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ffca8c33695986806a57",
+    "url": "https://www.preprints.org/manuscript/202408.2137",
+    "decision": "alias",
+    "target_id": "url:9113270916a36b4b76f1",
+    "reason": "Preprints.org landing page of the August 2024 preprint of UI-Hawk (DOI 10.20944/preprints202408.2137.v1): same six authors in the same order as the EMNLP 2025 paper, titled '...for GUI Agents' without 'Mobile' and spelling the second author Yaqi Yu. The site refuses scripted requests; read through Wayback capture 20260314134926."
+  },
+  {
+    "id": "url:ef7a45799a4503144a4d",
+    "url": "https://www.preprints.org/manuscript/202408.2137/v1",
+    "decision": "alias",
+    "target_id": "url:9113270916a36b4b76f1",
+    "reason": "Version 1 address of the Preprints.org UI-Hawk preprint, the only version posted; Wayback capture 20260313061716 shows it redirecting to the unversioned manuscript page, an earlier version of the EMNLP 2025 paper by the same six authors."
   }
 ]

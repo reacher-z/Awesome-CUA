@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
 
 ## Benchmarks
 
@@ -159,6 +159,7 @@ All entries in this section: cross-platform.
 | 2025‑11‑26 | [Prune4Web: DOM Tree Pruning Programming for Web Agent](https://arxiv.org/abs/2511.21398) | web | Introduces Prune4Web, where generated scoring programs filter DOM elements according to decomposed subtasks before grounding. An annotation pipeline and two-turn training procedure coordinate the planner, programmatic filter and grounder. |
 | 2025‑11‑17 | [MEGA-GUI: Multi-stage Enhanced Grounding Agents for GUI Elements](https://arxiv.org/abs/2511.13087) | unspecified | Introduces MEGA-GUI, which separates coarse region selection from fine-grained interface-element grounding. Bidirectional zooming and context-aware instruction rewriting coordinate specialized vision-language agents across visual scales. |
 | 2025‑11‑02 | [GUI-AIMA: Aligning Intrinsic Multimodal Attention with a Context Anchor for GUI Grounding](https://arxiv.org/abs/2511.00810) | unspecified | Introduces GUI-AIMA, which supervises instruction-relevant attention over visual patches instead of directly training coordinate text generation. Patch-level grounding can be combined with an optional zoom stage and is evaluated across GUI localization benchmarks. |
+| 2025‑11 | [UI-Hawk: Unleashing the Screen Stream Understanding for Mobile GUI Agents](https://aclanthology.org/2025.emnlp-main.920/) | android | Mobile GUI agent whose history-aware visual encoder reads earlier screenshots with the current one, trained by a curriculum from grounding, referring, screen QA and summarization to navigation; adds the FunUI benchmark. |
 | 2025‑10‑16 | [GUIrilla: A Scalable Framework for Automated Desktop UI Exploration](https://arxiv.org/abs/2510.16051) | macos, desktop | GUIrilla systematically explores macOS interfaces to collect interaction traces and accessibility metadata for downstream GUI research. It organizes these observations into hierarchical MacApp Trees and describes an accessibility-driven collection library. |
 | 2025‑10‑03 | [Improving GUI Grounding with Explicit Position-to-Coordinate Mapping](https://arxiv.org/abs/2510.03230) | unspecified | This work addresses GUI localization errors caused by mismatches between visual patch positions and output pixel coordinates. RULER tokens provide explicit coordinate references, while Interleaved MRoPE balances width and height encoding; evaluation uses the ScreenSpot benchmark family. |
 | 2025‑10‑01 | [GUI-KV: Efficient GUI Agents via KV Cache with Spatio-Temporal Awareness](https://arxiv.org/abs/2510.00536) | unspecified | GUI-KV compresses vision-language agents’ attention caches using visual-token saliency and redundancy between screenshot frames. The method requires no retraining and evaluates how cache budgets affect GUI action accuracy and computational cost. |

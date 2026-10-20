@@ -1,8 +1,8 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T03:55:29.533431+00:00**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T05:28:14Z**. Generated from committed source receipts.
 
-- 3,195 resource records: 1,629 curated; 1,566 bibliographic metadata only.
+- 3,195 resource records: 1,630 curated; 1,565 bibliographic metadata only.
 - 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,856 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,244 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
@@ -25,7 +25,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
 | [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 101 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
-| [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
+| [survey](surveys.md) | 4 | 2 | 1 | · | · | 2 | 1 | · | 12 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
 
 ## Source snapshot coverage
@@ -57,7 +57,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-19 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-10-19 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-10-19 |
-| [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-10-19 |
+| [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 40 | 0 | 1 | 3 | OK · 2026-10-19 |
 | [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-10-19 |
 | [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 27 | 9 | 8 | 0 | 3 | 15 | OK · 2026-10-19 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-10-19 |

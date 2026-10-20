@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-233 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+234 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (181)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (181)](#papers)
 
 ## Benchmarks
 
@@ -86,11 +86,10 @@ All entries in this section: web.
 
 ## Surveys
 
-All entries in this section: cross-platform.
-
-| Date | Resource | Description |
-| --- | --- | --- |
-| 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | Formalizes GUI tasks as Markov decision processes and traces agent training from prompting through supervised fine-tuning to reinforcement learning. |
+| Date | Resource | Environments | Description |
+| --- | --- | --- | --- |
+| 2025‑12‑15 | [Memory in the Age of AI Agents](https://arxiv.org/abs/2512.13564) | cross-platform, web, desktop | Surveys agent memory by form (token-level, parametric, latent), function (factual, experiential, working) and dynamics (formation, evolution, retrieval), and compiles memory benchmarks and open-source frameworks. |
+| 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | cross-platform | Formalizes GUI tasks as Markov decision processes and traces agent training from prompting through supervised fine-tuning to reinforcement learning. |
 
 ## Papers
 

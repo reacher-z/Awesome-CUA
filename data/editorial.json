@@ -63844,5 +63844,49 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Memory in the Age of AI Agents",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2512.13564",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "memory",
+      "evaluation",
+      "reinforcement-learning"
+    ],
+    "summary": "Surveys agent memory by form (token-level, parametric, latent), function (factual, experiential, working) and dynamics (formation, evolution, retrieval), and compiles memory benchmarks and open-source frameworks.",
+    "verify_terms": [
+      "Memory in the Age of AI Agents"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent broad survey of agent memory; most of the covered work is not about GUI agents. GUI and web material appears in the experiential-memory taxonomy table and Sections 4.2.1-4.2.3 (Synapse exemplars, compressed GUI history, R2D2 and BrowserAgent for web navigation, Agent Workflow Memory on Mind2Web and WebArena, skills for mobile GUIs), in working-memory Sections 4.3.1-4.3.2 (Synapse's DOM-to-state abstraction, Agent-S on GUI tasks), and in the Section 6.1 benchmark table and discussion (WebShop, WebArena, MMInA, WebChoreArena, MT-Mind2Web). The survey names its companion paper list github.com/Shichun-Liu/Agent-Memory-Paper-List, which was not reviewed here. Surveyed results were not independently reproduced.",
+    "read_basis": "Read the arXiv v2 abstract, the v2 HTML table of contents, the GUI and web passages of Sections 3.3.1, 4.2.1-4.2.3 (with the experiential-memory taxonomy table) and 4.3.1-4.3.2 (with Table 4), Section 6.1 with Table 6, and the title-page repository link.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2512.13564v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2512.13564v2",
+        "retrieved_at": "2026-10-20T05:28:13Z",
+        "sha256": "7e0eae722046138cca60deb325aa2a80349ee92cade7e31d30bc5b35f32bb62c",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5df3dba900634641e057ab10007d7944c34d761a22364b484fdf6899ab34d817",
+    "reviewed_at": "2026-10-20T05:28:15Z"
   }
 ]

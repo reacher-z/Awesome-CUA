@@ -793,15 +793,36 @@ def stats_block(report, lang="en"):
         excluded=report["excluded_records"]) + "\n\n"
 
 
-def task_navigator(lang="en"):
-    """Short task-oriented entry points shared by source and publication READMEs."""
+TASK_PLATFORMS = ("web", "desktop", "android", "ios")
+REPOSITORY_DOCS = "https://github.com/reacher-z/Awesome-CUA/blob/main/docs/"
+
+
+def platform_links(rows, kind, lang, docs):
+    """One link per main platform hub section with its count of reviewed resources of that kind, e.g. Android 19 → docs/environments/android.md#benchmarks."""
+    from paper_library import PLATFORMS as PLATFORM_LABELS
+    section = {"benchmark": "benchmarks", "dataset": "datasets", "model": "models"}[kind]
+    links = []
+    for env in TASK_PLATFORMS:
+        count = sum(r["kind"] == kind and r["review_status"] == "curated" and env in r["environments"] for r in rows or ())
+        if count or rows is None:
+            links.append(f"[{PLATFORM_LABELS[env][lang == 'zh']}{' ' + format(count, ',') if count else ''}]({docs}environments/{env}.md#{section})")
+    return " · ".join(links)
+
+
+def task_navigator(lang="en", rows=None, docs=REPOSITORY_DOCS):
+    """Short task-oriented entry points shared by source and publication READMEs.
+
+    Benchmark, dataset and model rows link straight to each main platform hub's section, so a reader reaches, say, Android benchmarks in one click.
+    The source README passes relative docs links; the publication README, which lives in another repository, keeps the absolute ones."""
     site = "https://awesomecua.github.io"
+    by = lambda kind: platform_links(rows, kind, lang, docs)
     if lang == "zh":
         heading, columns, cli = "按任务查找", "| 你的任务 | 从这里开始 | 可以找到什么 |", "本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）"
         items = [
             ("查找论文", f"[论文库]({site}/zh/papers/) · [研究主题]({site}/zh/topics/)", "按年份和主题阅读已审阅论文，查看原始来源。"),
-            ("选择评测基准", f"[基准指南]({site}/guides/gui-agent-benchmarks/)", "核对平台、任务、评估器和版本。"),
-            ("寻找训练数据", f"[训练数据指南]({site}/guides/gui-agent-training-data/)", "比较监督形式、划分、样本单位和数据许可。"),
+            ("选择评测基准", f"[基准指南]({site}/guides/gui-agent-benchmarks/) · [协议对比]({site}/compare/benchmarks/)<br>按平台：{by('benchmark')}", "核对平台、任务、评估器和版本。"),
+            ("寻找训练数据", f"[训练数据指南]({site}/guides/gui-agent-training-data/) · [数据集对比]({site}/compare/datasets/)<br>按平台：{by('dataset')}", "比较监督形式、划分、样本单位和数据许可。"),
+            ("挑选模型", f"[模型目录]({site}/categories/model/)<br>按平台：{by('model')}", "模型家族与权重版本，以及各自的论文和权重许可。"),
             ("构建智能体", f"[智能体]({site}/categories/agent/) · [框架]({site}/categories/framework/)", "找到实现入口、支持的平台和论文依据。"),
             ("接入 RAG 或 Agent", f"[使用指南]({site}/zh/agents/) · [数据中心]({site}/zh/data/)", "下载完整记录或检索文档，保留审阅状态和来源。"),
             ("追溯论文与资产", f"[论文—资产关系]({site}/connections/)", "查看经一手来源支持的代码、数据和模型关联。"),
@@ -810,8 +831,9 @@ def task_navigator(lang="en"):
         heading, columns, cli = "Find by task", "| Your task | Start here | What you can find |", "Local examples (after cloning; Python 3.11+, no dependencies required)"
         items = [
             ("Find papers", f"[Research library]({site}/papers/) · [Topics]({site}/topics/)", "Reviewed papers by year and topic, with original sources."),
-            ("Choose a benchmark", f"[Benchmark guide]({site}/guides/gui-agent-benchmarks/)", "Platforms, tasks, evaluators, and versions to compare."),
-            ("Find training data", f"[Training-data guide]({site}/guides/gui-agent-training-data/)", "Supervision, splits, count units, and data licenses."),
+            ("Choose a benchmark", f"[Benchmark guide]({site}/guides/gui-agent-benchmarks/) · [Compare protocols]({site}/compare/benchmarks/)<br>By platform: {by('benchmark')}", "Platforms, tasks, evaluators, and versions to compare."),
+            ("Find training data", f"[Training-data guide]({site}/guides/gui-agent-training-data/) · [Compare datasets]({site}/compare/datasets/)<br>By platform: {by('dataset')}", "Supervision, splits, count units, and data licenses."),
+            ("Pick a model", f"[Model directory]({site}/categories/model/)<br>By platform: {by('model')}", "Model families and checkpoints with their papers and weight licenses."),
             ("Build an agent", f"[Agents]({site}/categories/agent/) · [Frameworks]({site}/categories/framework/)", "Implementation entry points, supported platforms, and papers."),
             ("Use RAG or an agent", f"[Agent guide]({site}/agents/) · [Data hub]({site}/data/)", "Complete records or retrieval documents with review states and sources."),
             ("Trace papers to assets", f"[Paper–asset connections]({site}/connections/)", "Code, datasets, and models linked through reviewed primary evidence."),
@@ -953,7 +975,7 @@ def build(args):
     for filename, lang in (("README.md", "en"), ("README.zh-CN.md", "zh")):
         path = ROOT / filename
         if path.exists():
-            blocks = {"STATS": stats_block(report, lang), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
+            blocks = {"STATS": stats_block(report, lang), "BADGES": shared_badges, "TASKS": task_navigator(lang, rows, "docs/"), "EXPLORE": explore(rows, report, lang),
                 "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():

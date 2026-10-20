@@ -63844,5 +63844,107 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AUV",
+    "kind": "framework",
+    "url": "https://github.com/moeru-ai/auv",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "efficiency",
+      "screen-understanding",
+      "observability"
+    ],
+    "summary": "Rust toolkit, CLI and MCP server for scripting reusable GUI operations on macOS, Linux and Windows, with native input drivers, accessibility trees, OCR and traced, verifiable action results.",
+    "scope": "core",
+    "verify_terms": [
+      "Application Use Via"
+    ],
+    "aliases": [
+      "Application Use Via"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The README states that AUV is not a computer-use agent and ships no agent or harness: an agent calls the auv CLI or the MCP server, or writes reusable Rust or JavaScript/TypeScript operations against the versioned Protobuf/gRPC daemon API; a first-party Python SDK is listed as planned. The capability matrix lists native desktop drivers for macOS, Linux and Windows, with Android and iOS planned, and background pointer input on macOS only. Integrations under supported/ cover desktop apps such as Apple Music and games such as Balatro. evals/osworld only provisions an OSWorld Ubuntu desktop on Kubernetes; its README leaves task setup, evaluation and AUV pairing as separate work. The workspace version in Cargo.toml at the inspected commit is 0.0.35. Code was read, not run.",
+    "details": {
+      "availability": "Public Rust and JavaScript/TypeScript source with prebuilt CLI releases; no model or agent is bundled, so the calling agent supplies the reasoning.",
+      "repository_revision": "11d9e256956d8836e83b48c9eedfaab722ad5c3d"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/moeru-ai/auv/11d9e256956d8836e83b48c9eedfaab722ad5c3d/README.md",
+        "sha256": "6c7b3dd73e2ff75912be373e933151a9e9643c5b3ab057f36d6c2e5d9284a308",
+        "retrieved_at": "2026-10-20T08:05:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/moeru-ai/auv/11d9e256956d8836e83b48c9eedfaab722ad5c3d/Cargo.toml",
+        "sha256": "ef446d78239d4bfd0500dfcfcb58313bb2e4810e451347c4acd519674bcc05df",
+        "retrieved_at": "2026-10-20T08:05:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/moeru-ai/auv/11d9e256956d8836e83b48c9eedfaab722ad5c3d/crates/auv-cli/src/commands/mcp.rs",
+        "sha256": "ef9377f010deebada3a77f64608ff316e10aed4b0065aa276e90b5ab3c52ff82",
+        "retrieved_at": "2026-10-20T08:05:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/moeru-ai/auv/11d9e256956d8836e83b48c9eedfaab722ad5c3d/evals/osworld/README.md",
+        "sha256": "4dab629cf654eff7abc8425829415eb1f2aa429ac29d6c95f89dd3785df0813c",
+        "retrieved_at": "2026-10-20T08:05:45Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/moeru-ai/auv/11d9e256956d8836e83b48c9eedfaab722ad5c3d/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-20T08:05:47Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit 11d9e25, the workspace Cargo.toml, the MCP command source, the OSWorld provisioning README and the root LICENSE. No code execution.",
+    "reviewed_sha256": "6c7b3dd73e2ff75912be373e933151a9e9643c5b3ab057f36d6c2e5d9284a308",
+    "reviewed_at": "2026-10-20T08:06:29Z"
   }
 ]

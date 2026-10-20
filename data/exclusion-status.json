@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2087,6 +2087,23 @@
       "reason": "This survey reviews transferring human video demonstrations into robot manipulation skills and the data supporting that transfer. Its scope is embodied robotics, not learning to operate graphical software interfaces.",
       "reviewed_at": "2026-10-17T14:30:31.862258+00:00",
       "metadata_fingerprint": "8f1e775fcdade2f13ef31c6b32b10846fb30214c0e8a3297583049c2f15f12f9",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2604.03598%2C2604.04759%2C2604.05547%2C2604.06170%2C2604.07340%2C2604.10547%2C2604.10938%2C2604.11978%2C2604.12282%2C2604.13018%2C2604.13346%2C2604.13954%2C2604.15579%2C2604.15671%2C2604.15715%2C2604.16520%2C2604.18240%2C2604.18934%2C2604.19572%2C2604.19667%2C2604.19742%2C2604.20841%2C2604.20987%2C2604.22436%2C2604.23781%2C2604.24479%2C2604.26148%2C2604.27621%2C2604.27996%2C2604.28093%2C2604.28139%2C2604.28181%2C2605.00425%2C2605.01462%2C2605.02240%2C2605.03042%2C2605.03242%2C2605.04811%2C2605.05191%2C2605.05811%2C2605.06110%2C2605.07073%2C2605.07358%2C2605.08374%2C2605.08985%2C2605.10912%2C2605.10966%2C2605.11363%2C2605.11732%2C2605.11817&max_results=50",
+        "sha256": "05ec5d668ac75d3d7c5b71ea7d6e76a3fbf5ebeb742e0843db2329e5e41aa208",
+        "retrieved_at": "2026-10-17T12:31:19Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2605.11363",
+      "name": "PresentAgent-2: Towards Generalist Multimodal Presentation Agents",
+      "url": "https://arxiv.org/abs/2605.11363",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents PresentAgent-2, which turns an open-ended query into a presentation video by researching web sources for text, images and videos, generating slides and scripts, and composing single-speaker, multi-speaker discussion and audience-interaction modes, scored on its own presentation benchmark. This multimodal content-generation agent does not operate a GUI, browser or device, so it is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T04:09:05Z",
+      "metadata_fingerprint": "c3d81f1f63c2ac8c80a221a5717ad37f49a6e2946d58282ecb19460dca7b1f3d",
       "evidence": {
         "url": "https://export.arxiv.org/api/query?id_list=2604.03598%2C2604.04759%2C2604.05547%2C2604.06170%2C2604.07340%2C2604.10547%2C2604.10938%2C2604.11978%2C2604.12282%2C2604.13018%2C2604.13346%2C2604.13954%2C2604.15579%2C2604.15671%2C2604.15715%2C2604.16520%2C2604.18240%2C2604.18934%2C2604.19572%2C2604.19667%2C2604.19742%2C2604.20841%2C2604.20987%2C2604.22436%2C2604.23781%2C2604.24479%2C2604.26148%2C2604.27621%2C2604.27996%2C2604.28093%2C2604.28139%2C2604.28181%2C2605.00425%2C2605.01462%2C2605.02240%2C2605.03042%2C2605.03242%2C2605.04811%2C2605.05191%2C2605.05811%2C2605.06110%2C2605.07073%2C2605.07358%2C2605.08374%2C2605.08985%2C2605.10912%2C2605.10966%2C2605.11363%2C2605.11732%2C2605.11817&max_results=50",
         "sha256": "05ec5d668ac75d3d7c5b71ea7d6e76a3fbf5ebeb742e0843db2329e5e41aa208",

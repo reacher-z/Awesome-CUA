@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:03ef018faf7d2a8783c2",
+    "url": "https://ui-venus.github.io/UI-Venus-2",
+    "decision": "alias",
+    "target_id": "arxiv:2609.00028",
+    "reason": "Project page of the UI-Venus-2 release; its citation block cites the UI-Venus-2 Technical Report by arXiv identifier."
   }
 ]

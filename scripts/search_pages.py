@@ -34,6 +34,13 @@ def clip(text, limit=300):
     return re.sub(r'[\s,;:.]+$','',head[1] if head else text[:limit-1])+'…'
 
 
+def paged_summary(summary, number, total, language="en"):
+    # Later pages of a listing state their position, so no two pages share a meta description; the clip leaves room for it.
+    if number<=1:return summary
+    position=f"Page {number} of {total}." if language=="en" else f"第 {number}/{total} 页。"
+    return clip(summary,300-len(position)-1)+(" " if language=="en" else "")+position
+
+
 def clean_text(text):
     # Publication runs `git diff --check`: no line may end in whitespace and no blank line may end the file.
     lines=[line.rstrip(" \t\r") for line in text.split("\n")]
@@ -344,7 +351,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
             crumbs=[root_crumb,(title,library_path(1,language)),(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else None
             alternatives={'en':library_path(number),'zh-CN':library_path(number,'zh'),'x-default':library_path(number)}
-            emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=crumbs))
+            emit(path,page(numbered,paged_summary(summary,number,library_count,language),path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=crumbs))
     topic_manifest,topic_groups=write_topic_exports(destination,rows,(root/'data/catalog.jsonl').read_bytes())
     for language in ('en','zh'):
         path=topic_path(language=language)
@@ -356,13 +363,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             first=topic_path(topic,language)
             title=topic_name(topic,language)+(' — computer-use research and resources' if language=='en' else '：Computer-Use 研究与资源')
             summary=(f'{len(members)} reviewed resources for {topic_name(topic)}, with original sources, full records and citations.' if language=='en' else f'{len(members)} 条已审阅的{topic_name(topic,language)}资源，包含原始来源、完整记录与论文引用。')
-            for number in range(1,topic_page_count(topic_counts(members))+1):
+            topic_total=topic_page_count(topic_counts(members))
+            for number in range(1,topic_total+1):
                 path=topic_path(topic,language,number)
                 body,schema=topic_body(topic,members,resource_path,language=language,site_url=SITE,number=number)
                 numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
                 alternatives={'en':topic_path(topic,'en',number),'zh-CN':topic_path(topic,'zh',number),'x-default':topic_path(topic,'en',number)}
                 trail=[("AwesomeCUA","/zh/" if language=='zh' else "/"),("主题" if language=='zh' else "Topics",topic_path(language=language)),(topic_name(topic,language),first)]+([(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else [])
-                emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=trail))
+                emit(path,page(numbered,paged_summary(summary,number,topic_total,language),path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=trail))
             (destination/first.lstrip('/')/'index.md').write_text(clean_text(topic_markdown(topic,members,resource_path,language=language,site_url=SITE)),encoding='utf-8')
     linked_papers=[r for r in papers if any(e['type'] in {'documented_by','introduced_by'} for e in incoming.get(r['id'],[]))]
     body='<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div><h1>Computer-use papers, code, and datasets</h1><p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction. They do not automatically mean that a model was trained on a dataset or evaluated on a benchmark.</p><div class="reading-list">'

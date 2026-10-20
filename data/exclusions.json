@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2602.07624",
+    "name": "M2A: Multimodal Memory Agent with Dual-Layer Hybrid Memory for Long-Term Personalized Interactions",
+    "url": "https://arxiv.org/abs/2602.07624",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract proposes M2A, a two-agent dual-layer memory system for personalized multimodal question answering over long conversations, with a pipeline that injects concept-grounded sessions into LoCoMo dialogues. This conversational memory work involves no GUI, browser or device operation, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:44:22Z",
+    "metadata_fingerprint": "db3a5b7d098b4dbe110e82615aa789c3426e679f863a1f39f9b4e9c043894ed0",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2601.16206%2C2601.17722%2C2601.18113%2C2601.18842%2C2601.20162%2C2601.20335%2C2601.20380%2C2601.20650%2C2601.21123%2C2601.22781%2C2602.00575%2C2602.01576%2C2602.01725%2C2602.02419%2C2602.02548%2C2602.02995%2C2602.03255%2C2602.03792%2C2602.05429%2C2602.05832%2C2602.06075%2C2602.06391%2C2602.07153%2C2602.07624%2C2602.08235%2C2602.08995%2C2602.09082%2C2602.09222%2C2602.09310%2C2602.09662%2C2602.10139%2C2602.11514%2C2602.11724%2C2602.11750%2C2602.14093%2C2602.14276%2C2602.14296%2C2602.14721%2C2602.16855%2C2602.17049%2C2602.17365%2C2602.20502%2C2602.21858%2C2602.22190%2C2603.05044%2C2603.05295%2C2603.07978%2C2603.08533%2C2603.10178%2C2603.12138&max_results=50",
+      "sha256": "c22be2d5c6a84b2c367759ce2b8f41f5a178fccd0534e832802c9d57b40918e8",
+      "retrieved_at": "2026-10-16T06:31:56Z"
+    }
   }
 ]

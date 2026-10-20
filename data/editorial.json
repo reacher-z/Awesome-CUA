@@ -63844,5 +63844,44 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Web Agents Should Use Typed Actions Instead of Click-Based Browsing",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.17245",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow",
+      "observability"
+    ],
+    "summary": "Position paper arguing web agents should call typed web verbs (functions with structured inputs and outputs, backed by Web APIs or Playwright workflows) instead of clicking; case studies contrast this with browser-use.",
+    "verify_terms": [
+      "Typed Actions Instead of Click-Based Browsing"
+    ],
+    "scope": "core",
+    "notes": "ICML 2026 Position Paper Track per the arXiv comments. Per the v2 full text, Section 4 details two case studies (travel planning, furniture shopping) and states that a prototype with verbs for more than ten websites completed over one hundred tasks; Appendix A lists only the Amazon and Google Maps verbs used in the case studies. The paper links its prototype, verb catalog and task set at https://github.com/nlweb-ai/MSR-Web-Verbs. The argument is a position, not a controlled benchmark comparison.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.17245v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.17245v2",
+        "sha256": "bc5023f0533b2be83f20b9933e311f2c5d103bca86c069c803ac87e757cadfa2",
+        "retrieved_at": "2026-10-20T04:38:19Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e2dd01c2d28d1ce34f07d3e8823412d88e684fb80e674b96452c89a70c44cdbd",
+    "reviewed_at": "2026-10-20T04:38:20Z"
   }
 ]

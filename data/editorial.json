@@ -63844,5 +63844,56 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2602.06052",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "memory",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "summary": "Surveys foundation-agent memory by substrate, cognitive mechanism and subject, covering single- and multi-agent memory operations, learned memory policies, and benchmarks spanning web, GUI and computer-use tasks.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "A Survey of Agent Memory in the Second Half"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.06052v4"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent broad survey of agent memory. The abstract names computer use among its target settings. The full text discusses procedural memory for web and GUI agents (Section 3.3.2), a memory-driven multi-agent GUI pipeline (Section 4.2.1), cross-application state in OSWorld (Section 6.2.3), and tags agent-centric benchmarks such as Mind2Web, WebArena, WebShop, OSWorld and OdysseyBench by GUI interaction (Section 7.2.2); coding, deep research, embodied and personalization settings are also covered. The arXiv comments list TMLR acceptance and the companion list github.com/AgentMemoryWorld/Awesome-Agent-Memory. Surveyed results are not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2602.06052v4",
+        "retrieved_at": "2026-10-20T04:58:18Z",
+        "sha256": "f250674b10ef9863ea686f9d1f692c1498a56d58c7337f7c4f96247420a0cbfa",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0af6d8ebf70c90aea2431b5abe5e71f3c9e1b010a5a45a2e847e81635bf73c2e",
+    "reviewed_at": "2026-10-20T04:58:39Z"
   }
 ]

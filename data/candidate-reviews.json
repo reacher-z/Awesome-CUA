@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:423fc440548161c79b31",
+    "url": "https://www.kaggle.com/datasets/datasnaek/lightshot",
+    "decision": "out_of_scope",
+    "reason": "A 2017 Kaggle upload by user Mitchell J of 13,000 images scraped by sequential URL from the prnt.sc screenshot-sharing site, with a hand-labelled subset in six content categories (animations, games, objects, people, text, one game character). The images are arbitrary user uploads with no interface annotations, actions or tasks, and the license is given only as 'Data files (c) Original Authors', so it is not a GUI-agent resource.",
+    "reviewed_at": "2026-10-20T05:08:41Z",
+    "evidence": {
+      "url": "https://www.kaggle.com/api/v1/datasets/view/datasnaek/lightshot",
+      "sha256": "d7dadeb3fa730cdd4d5fde298ab4bae0e975978a6ae21d47e60fecf00a5f2cb4",
+      "retrieved_at": "2026-10-20T04:22:41Z"
+    }
   }
 ]

@@ -16,6 +16,7 @@ from paper_library import library_pages, library_path, library_years, paper_libr
 from publication_metadata import publication, format_date_parts, record_date_text, record_year
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
+from catalog import editorial_identity
 
 SITE = "https://awesomecua.github.io"
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
@@ -124,6 +125,25 @@ def resource_schema(record):
     if record["topics"]:entity["keywords"]=record["topics"]
     if record["kind"]=="dataset" and len(description(record))>=50:entity["@type"]="Dataset"
     return entity
+
+
+def utc_date(value):
+    # Editorial timestamps carry Z or explicit offsets; the sitemap states the UTC calendar date.
+    stamp=dt.datetime.fromisoformat(value.replace("Z","+00:00"))
+    return (stamp.astimezone(dt.timezone.utc) if stamp.tzinfo else stamp).date().isoformat()
+
+
+def resource_lastmod(rows, editorial, snapshot):
+    # A reviewed page's main content changes only through an editorial review (or a newer recorded source version),
+    # so its review date is a real modification date; build, scan and retrieval times never are.
+    reviewed_at={(e.get("id") or editorial_identity(e)[0]):e["reviewed_at"] for e in editorial if e.get("editorial_reviewed") and e.get("reviewed_at")}
+    limit=utc_date(snapshot)
+    dates={}
+    for r in rows:
+        if not eligible(r) or r["id"] not in reviewed_at:continue
+        candidates=[utc_date(reviewed_at[r["id"]])]+([r["updated_at"]] if re.fullmatch(r"\d{4}-\d{2}-\d{2}",r.get("updated_at") or "") else [])
+        dates[resource_path(r)]=min(max(candidates),limit)
+    return dates
 
 
 def listing(rows):
@@ -481,10 +501,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     robots='User-agent: *\nAllow: /\n\n'+''.join(f'User-agent: {bot}\nAllow: /\n\n' for bot in ['Googlebot','bingbot','OAI-SearchBot','PerplexityBot','Claude-SearchBot'])+f'Sitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap.txt\n'
     (destination/'robots.txt').write_text(clean_text(robots),encoding='utf-8')
     sitemap=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
+    # Like the README's recent-review list, a source tree without editorial decisions simply has no review dates.
+    editorial_file=root/'data/editorial.json'
+    lastmod=resource_lastmod(rows,json.loads(editorial_file.read_text(encoding='utf-8')) if editorial_file.exists() else [],latest)
     for item in sorted(manifest,key=lambda x:x['path']):
         if item['indexable']:
             node=ET.SubElement(sitemap,'url');ET.SubElement(node,'loc').text=SITE+item['path']
-            # No synthetic build-time lastmod; upstream evidence time is not page modification time.
+            # Only reviewed resource pages have a recorded content date; listings keep no synthetic build-time lastmod.
+            if item['path'] in lastmod:ET.SubElement(node,'lastmod').text=lastmod[item['path']]
     ET.indent(sitemap,space='  ')
     (destination/'sitemap.xml').write_bytes(clean_text(ET.tostring(sitemap,encoding='utf-8',xml_declaration=True).decode()).encode())
     (destination/'sitemap.txt').write_text(clean_text(''.join(SITE+item['path']+'\n' for item in sorted(manifest,key=lambda x:x['path']) if item['indexable'])),encoding='utf-8')

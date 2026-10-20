@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+208 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (7)](#tools) · [Papers (163)](#papers)
 
 ## Benchmarks
 
@@ -122,6 +122,7 @@ All entries in this section: cross-platform.
 | 2026‑06‑04 | [Signal-Driven Observation for Long-Horizon Web Agents](https://arxiv.org/abs/2606.06708) | web | Proposes Signal-Driven Observation: a separate call selects relevant DOM elements and selectors, and a detector requests new observations only after meaningful browser events or failures. The paper frames observation timing and compression as an architectural research problem for long-horizon web agents. |
 | 2026‑06‑03 | [Benchmarking Living-Screen-Native GUI Agents on Short-Video Platforms](https://arxiv.org/abs/2606.04701) | web | LivingScreen evaluates agents in a browser-based short-video environment where observing content consumes time and affects subsequent actions. Its task suite scores accuracy together with information efficiency to diagnose over- and under-observation on continuously changing screens. |
 | 2026‑06‑01 | [STaR-KV: Spatio-Temporal Adaptive Re-weighting for KV Cache Compression in GUI Vision-Language Models](https://arxiv.org/abs/2606.01790) | unspecified | STaR-KV compresses GUI-agent KV caches by calibrating visual-token importance across attention subspaces and interaction time. Its training-free scoring combines spatial specialization, temporal redundancy and an adaptive temperature, evaluated at matched cache budgets. |
+| 2026‑05‑28 | [DiffSpot: Can VLMs Spot Fine-Grained Visual Differences in Web Interfaces?](https://arxiv.org/abs/2605.29615) | web | DiffSpot pairs rendered web interfaces that differ in one mutated CSS property of a target element, 4,400 pairs including 500 no-change controls, to test whether VLMs can name fine-grained changes; 13 VLMs are evaluated. |
 | 2026‑05‑17 | [MUIAnno: An Expert-Annotated Dataset and Evaluation Benchmark for Mobile UI Understanding](https://arxiv.org/abs/2605.17656) | unspecified | MUIAnno provides expert labels for elements in manually explored mobile-app screens, with a web annotation tool that emits structured JSON. It also supplies UI-element detection baselines for the dataset. |
 | 2026‑05‑15 | [DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding](https://arxiv.org/abs/2605.15542) | unspecified | DRS-GUI searches screenshot regions through focus, shift and scatter operations selected by a tree-search planner. A region-quality reward guides this training-free perceptual search before final GUI grounding. |
 | 2026‑05‑11 | [ReVision: Scaling Computer-Use Agents via Temporal Visual Redundancy Reduction](https://arxiv.org/abs/2605.11212) | desktop, web | Trains GUI agents with a learned selector that removes repeated visual patches across consecutive screenshots while preserving spatial structure. ReVision evaluates this history representation on OSWorld, WebTailBench and AgentNetBench. |

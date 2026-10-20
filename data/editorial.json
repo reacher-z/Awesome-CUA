@@ -63653,5 +63653,43 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Same Outcomes, Different Journeys: A Trace-Level Framework for Comparing Human and GUI-Agent Behavior in Production Search Systems",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.07929",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "observability"
+    ],
+    "summary": "Compares humans and GUI agents by outcome, query formulation and navigation traces; in an audio-streaming app, 39 participants and a GPT-5 agent reach similar success on ten search tasks but navigate differently.",
+    "verify_terms": [
+      "Same Outcomes, Different Journeys"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.07929v1"
+    ],
+    "scope": "core",
+    "notes": "Per the v1 HTML full text, the study uses the Spotify mobile application: participants used their own mobile devices, while the agent (AppAgent with GPT-5 at medium reasoning effort) ran in an Android emulator on the same interface. The full text names no code or data release. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.07929v1",
+        "sha256": "0880814d556fe83c2f62b41e872e5005628fc2284634af4358a8e27a7fa65583",
+        "retrieved_at": "2026-10-20T04:22:40Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "26301986ba0c96e66c20df3ec51011d0b7abc250062e2a2247493a5d9ad1fedb",
+    "reviewed_at": "2026-10-20T04:22:41Z"
   }
 ]

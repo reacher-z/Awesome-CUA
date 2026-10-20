@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7b30a00ffb0ab6475e12",
+    "url": "https://tongyi-mai.github.io/Qwen-UI-Agent/demos/source/computer-use-home-office-hd.mp4",
+    "decision": "not_a_resource",
+    "reason": "MP4 recording of the Qwen-UI-Agent home-office computer-use demo, linked from a README preview image; a demo video file, not a resource."
   }
 ]

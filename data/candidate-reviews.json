@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:25756fe8ec6d09789d48",
+    "url": "https://ui-nexus.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2506.08972",
+    "reason": "Project page of the UI-NEXUS paper, with the same title and six authors, linking its arXiv abstract and code repository."
   }
 ]

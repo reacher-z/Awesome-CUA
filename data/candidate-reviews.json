@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ffa84c1e2fe5a19f156b",
+    "url": "https://serpapi.com",
+    "decision": "out_of_scope",
+    "reason": "SerpApi is a commercial API that returns search-engine result pages from Google, Bing, Baidu, DuckDuckGo and shopping or app-store sites as parsed JSON. Callers send queries over HTTP and never open or operate a web page, so it is search-data infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-20T04:21:06Z",
+    "evidence": {
+      "url": "https://serpapi.com",
+      "sha256": "241a63fdf77fb08da23eda2aaf36d8a7a7bfa5d4ec86c6602cde51e9e80b43bc",
+      "retrieved_at": "2026-10-19T08:35:02Z"
+    }
   }
 ]

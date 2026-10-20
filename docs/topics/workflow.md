@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-112 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+113 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (82)](#papers)
 
 ## Benchmarks
 
@@ -111,6 +111,7 @@ All entries in this section: cross-platform.
 | 2026‑05‑28 | [Syll: Open-Source Personal Automation with Cross-Surface Execution](https://arxiv.org/abs/2606.07594) | desktop, macos | Syll combines tool calls, shell execution and visual GUI control in a personal-automation runtime. It turns user demonstrations into reusable skills and exposes execution logs, keyframes and approval checkpoints for inspection. |
 | 2026‑05‑27 | [GUI Agents for Continual Game Generation](https://arxiv.org/abs/2605.28258) | web | PlaytestArena evaluates generated browser games using expected in-play behaviors adjudicated by GUI agents. Play2Code pairs a coding agent with a rubric-blind GUI playtester whose interaction traces and feedback guide iterative refinement, with a separate final judge. |
 | 2026‑05‑25 | [Claw-Anything: Benchmarking Always-On Personal Assistants with Broader Access to User's Digital World](https://arxiv.org/abs/2605.26086) | unspecified | Claw-Anything benchmarks persistent personal assistance across activity histories, backend services and integrated GUI/CLI interaction. Its simulated event histories introduce irrelevant or conflicting context, and a separate generation pipeline supplies training environments. |
+| 2026‑05‑19 | [CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing](https://arxiv.org/abs/2605.19484) | desktop, windows | CutVerse benchmarks GUI agents on 186 expert-demonstrated, long-horizon media post-production tasks across 7 applications such as Premiere Pro and Photoshop, executed with mouse and keyboard actions in Windows VMs. |
 | 2026‑05‑15 | [SaaS-Bench: Can Computer-Use Agents Leverage Real-World SaaS to Solve Professional Workflows?](https://arxiv.org/abs/2605.15777) | web | SaaS-Bench evaluates browser agents on professional workflows across self-hosted applications. Weighted checkpoints measure task completion and partial progress, with application-state checks and configured content judges documented in the official harness. |
 | 2026‑05‑12 | [LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues](https://arxiv.org/abs/2605.12493) | web | LongMemEval-V2 asks memory systems to recover environment knowledge from long web-agent histories for question answering. Its AgentRunbook variants contrast indexed knowledge pools with coding-agent retrieval from stored trajectory files. |
 | 2026‑05‑07 | [X-OmniClaw Technical Report: A Unified Mobile Agent for Multimodal Understanding and Interaction](https://arxiv.org/abs/2605.05765) | android | Describes an Android agent architecture combining multimodal perception, working and personal memory, hybrid XML/visual grounding, and reusable skills captured from user interactions. |

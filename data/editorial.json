@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.19484",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "workflow",
+      "recording"
+    ],
+    "scope": "core",
+    "summary": "CutVerse benchmarks GUI agents on 186 expert-demonstrated, long-horizon media post-production tasks across 7 applications such as Premiere Pro and Photoshop, executed with mouse and keyboard actions in Windows VMs.",
+    "verify_terms": [
+      "CutVerse: A Compositional GUI Agents Benchmark"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.19484v1"
+    ],
+    "notes": "Per the v1 full text, each task is paired with a virtual machine checkpoint and a manually recorded expert trajectory, a parser turns screen recordings and input logs into grounded action trajectories, and milestones are checked with visual QA pairs. Evaluated agents include Claude Opus 4.6, Gemini 3 Flash, Qwen3-VL-32B-Thinking, UI-TARS-1.5-7B and EvoCUA-32B; the abstract reports that existing agents reach 36.0% task success. The project page is github.com/CUC-MIPG/CutVerse, not reviewed here. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.19484v1",
+        "sha256": "444317f88591ca6e7bccd4f5d1042a9aaa49798a07bb44213ded805ff0c819dd",
+        "retrieved_at": "2026-10-20T04:00:55Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML full text for the Windows VM execution setup, action space, milestone evaluation, evaluated agents and project link. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5548498abe4f965b0de000dbea525338c84c13178f5eb9155053be921e9e4e4b",
+    "reviewed_at": "2026-10-20T04:10:21Z"
   }
 ]

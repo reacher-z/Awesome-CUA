@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "MAESTRO: Adapting GUIs and Guiding Navigation with User Preferences in Conversational Agents with GUIs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.06134",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "ui-design",
+      "memory"
+    ],
+    "scope": "adjacent",
+    "summary": "Presents a conversational agent that keeps a preference memory to sort, filter, highlight and augment options in a movie-ticketing web GUI and to propose backtracking, evaluated in a 33-participant user study.",
+    "verify_terms": [
+      "Adapting GUIs and Guiding Navigation with User Preferences"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.06134v2"
+    ],
+    "notes": "Adjacent HCI work (UIST '26) on a GUI-integrated task chatbot rather than an agent operating third-party interfaces. A GPT-5.4 planner chooses standard GUI actions (select, next or previous stage) and the four in-place adaptation operators through tool calls in a React prototype built for the study. Evaluation is one controlled user study (N=33) in a single domain, movie ticketing; task success and completion time did not differ significantly from the baseline. The v2 full text links code at github.com/wooogler/maestro-movie, which was not reviewed here. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.06134v2",
+        "sha256": "b981d1397b49fe81ec49c52b9bd81313a255b7aa2081d1065fce4903913f378a",
+        "retrieved_at": "2026-10-20T04:19:30Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML full text for the agent's action space and adaptation operators (Sections 3.4-3.6), implementation (3.7), study design (4) and limitations (6.5). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3bccb4613ac22111df972f38d1a57eae36f861cb2b70cc3ff863edf60d838654",
+    "reviewed_at": "2026-10-20T04:19:56Z"
   }
 ]

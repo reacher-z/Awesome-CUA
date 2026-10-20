@@ -63844,5 +63844,141 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "GhostDesk",
+    "kind": "tool",
+    "url": "https://github.com/YV17labs/GhostDesk",
+    "environments": [
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Rust MCP server that gives agents screenshots, mouse, keyboard, clipboard and whitelisted app launching on a disposable Wayland desktop in Docker, or natively on a macOS or Windows machine.",
+    "scope": "core",
+    "verify_terms": [
+      "GhostDesk"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "One binary serves the same MCP tools over Streamable HTTP on every platform. The Linux image runs a Sway desktop with Firefox and a noVNC viewer; input goes through the zwlr_virtual_pointer_v1 and zwp_virtual_keyboard_v1 Wayland protocols (crates/platform/src/linux/input/session.rs) and screenshots through grim (crates/platform/src/linux/screen.rs). The macOS backend posts Quartz CGEvents and the Windows backend uses SendInput; neither is sandboxed. Coordinates refer to the last screenshot, and a GhostDesk-Model-Space header rescales normalised coordinates for models such as Qwen. The README requires a vision, tool-calling model behind an MCP client that accepts WebP images; no model or agent loop ships here. Mounting a TLS certificate enables bearer-token auth on MCP and a noVNC password. Licensed FSL-1.1-ALv2 (source-available). Workspace version 8.1.0 at the inspected commit. Code was read, not run.",
+    "details": {
+      "availability": "Public Rust source and published container images; macOS and Windows run the same binary natively. The MCP client supplies the model.",
+      "repository_revision": "f36c5380aa8e4ea83c95d55d9292c16a2f97b181",
+      "package_version": "8.1.0"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/README.md",
+        "sha256": "78c8e5365563640bfbefb321496647aa14244ee8a0863f2907652dc3afd78fff",
+        "retrieved_at": "2026-10-20T08:02:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/Cargo.toml",
+        "sha256": "8a838693d8b4d3489a62dadd70ec199c2d20d4ab8c60d88c2535457ba1e3c971",
+        "retrieved_at": "2026-10-20T08:02:19Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/crates/platform/src/linux/input/session.rs",
+        "sha256": "dab4050497fdedcfd1e14734f59d2741e60536add2f3fffc6a9a281e3105e678",
+        "retrieved_at": "2026-10-20T08:02:52Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/crates/platform/src/linux/screen.rs",
+        "sha256": "f86c3ca4201edc5982c046004448c28aa6d015b1e8fab6cd10e8011d60e13865",
+        "retrieved_at": "2026-10-20T08:02:24Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/crates/platform/src/macos/input/quartz.rs",
+        "sha256": "c88af8b8f82e2f2c584cd8adf05ec30f6f36571ed7f3101ee28f3db715b18993",
+        "retrieved_at": "2026-10-20T08:02:27Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/crates/platform/src/windows/input/win32.rs",
+        "sha256": "d829126c50b567e13dc4d930c923395714029e63ca19ed62948f3b0033e40daa",
+        "retrieved_at": "2026-10-20T08:02:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/LICENSE",
+        "sha256": "68b78153430cd8c3df4f9de5dbbd742987b327673b56e1405ade6fcd68191d3b",
+        "retrieved_at": "2026-10-20T08:02:30Z"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "FSL-1.1-ALv2",
+          "url": "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/LICENSE",
+          "retrieved_at": "2026-10-20T08:02:30Z",
+          "basis": "Functional Source License 1.1 with Apache 2.0 future license, read from the LICENSE file at the inspected commit: source-available with a two-year Competing Use restriction per release, after which that release converts to Apache-2.0. Not an OSI license; it covers GhostDesk code only, not container base images, bundled applications or models."
+        },
+        "reason": "Functional Source License 1.1 with Apache 2.0 future license, read from the LICENSE file at the inspected commit: source-available with a two-year Competing Use restriction per release, after which that release converts to Apache-2.0. Not an OSI license; it covers GhostDesk code only, not container base images, bundled applications or models.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/YV17labs/GhostDesk/f36c5380aa8e4ea83c95d55d9292c16a2f97b181/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "78c8e5365563640bfbefb321496647aa14244ee8a0863f2907652dc3afd78fff",
+    "reviewed_at": "2026-10-20T08:03:28Z"
   }
 ]

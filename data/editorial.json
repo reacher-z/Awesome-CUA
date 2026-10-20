@@ -63844,5 +63844,109 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "nuphus-mcp",
+    "kind": "tool",
+    "url": "https://github.com/mrpulor-gh/nuphus-mcp",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding",
+      "grounding",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Rust MCP server with 45 desktop and Chrome tools: screenshots, mouse and keyboard, Windows UIA and macOS accessibility actions with state checks, local OCR element location, and CDP browser control.",
+    "aliases": [
+      "@nuphus/nuphus-mcp"
+    ],
+    "verify_terms": [
+      "nuphus-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Distributed on npm as @nuphus/nuphus-mcp (0.3.3 at review, matching tag v0.3.3 at the inspected commit 0229b46) and built from source with Cargo. It is a single stdio JSON-RPC process with no network service. crates/nuphus-mcp/src/tools/schemas.rs defines 45 tools, 22 desktop_* and 23 browser_* (unique names counted with a script). The desktop group covers screen and window screenshots, window listing and control, mouse, drag, keyboard and clipboard, plus seven semantic tools (targets_list, target_bind, semantic_observe, semantic_candidate, semantic_execute, semantic_action, verify_state) that act on controls through Windows UI Automation or the macOS Accessibility API and return opaque IDs instead of coordinates. desktop_perceive locates text and icons on a capture with local PaddleOCR and optional YOLO detection and returns screen coordinates that the mouse tools can act on; desktop_vision sends a screenshot to a vision model the user configures (OpenAI-compatible or Anthropic; vision.rs). Browser tools drive Chrome or Edge over CDP (chromiumoxide) with accessibility-tree snapshots that label elements @N, and can attach to an external browser through NUPHUS_MCP_BROWSER_CDP_URL. Mouse input goes through Win32 calls on Windows and the enigo library on other systems (crates/desktop-api/src/input/mouse.rs). Per the README, Windows has full desktop support, macOS has semantic and mouse/keyboard control after the Accessibility permission, and Linux window and input control is partial. Root LICENSE is MIT; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source with tagged GitHub releases and an npm package (@nuphus/nuphus-mcp); runs locally as a stdio process.",
+      "repository_revision": "0229b46052bdc7bb287d1d6983277e99c0ace85a",
+      "release_tag": "v0.3.3",
+      "package_version": "0.3.3"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/0229b46052bdc7bb287d1d6983277e99c0ace85a/crates/nuphus-mcp/src/tools/schemas.rs",
+        "sha256": "7cc38cb5b204def99f7b9356d4b184134222555294d22a3606ce1a6b0e09361a",
+        "retrieved_at": "2026-10-20T07:58:51Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/0229b46052bdc7bb287d1d6983277e99c0ace85a/crates/nuphus-mcp/src/vision.rs",
+        "sha256": "b15e4e4c1f8b72195d22ec6f2df8beb558a51db01b019e361d3b1e8573c61d91",
+        "retrieved_at": "2026-10-20T07:58:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/0229b46052bdc7bb287d1d6983277e99c0ace85a/crates/nuphus-mcp/Cargo.toml",
+        "sha256": "b1a6a05f608f34665cb3aa6d2920face5cdb611f1b844a6c56b332404260e595",
+        "retrieved_at": "2026-10-20T07:58:54Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/0229b46052bdc7bb287d1d6983277e99c0ace85a/crates/desktop-api/src/input/mouse.rs",
+        "sha256": "ea92c702748d8e846724e679a0893d046cdbee0c04d22f8715f336fb9a0e3748",
+        "retrieved_at": "2026-10-20T07:59:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/0229b46052bdc7bb287d1d6983277e99c0ace85a/LICENSE",
+        "sha256": "68cfe1e40b92909806a6c426d8ee6ec1fc6fee270888632f9f9e107af27632df",
+        "retrieved_at": "2026-10-20T07:59:04Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "67d91cca69dfe349c44e39448ef29ed173e59927dfb913586d60ab1d88bf5cd9",
+    "reviewed_at": "2026-10-20T07:59:47Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-374 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (7)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
 
 ## Benchmarks
 
@@ -156,6 +156,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [nuphus-mcp](https://github.com/mrpulor-gh/nuphus-mcp) | desktop, windows, macos, linux, web | — | code MIT | Rust MCP server with 45 desktop and Chrome tools: screenshots, mouse and keyboard, Windows UIA and macOS accessibility actions with state checks, local OCR element location, and CDP browser control. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/mrpulor-gh/nuphus-mcp/HEAD/README.md) |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [OmniParser](https://github.com/microsoft/OmniParser) | cross-platform | [2408.00203](https://arxiv.org/abs/2408.00203) (2024) | — | Screenshot parser that detects interactable regions and captions icons so vision-language models can ground actions, released as V1.5 and V2 weights alongside OmniTool for driving a Windows 11 VM. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
 | [Set of Mark](https://github.com/microsoft/SoM) | unspecified | [2310.11441](https://arxiv.org/abs/2310.11441) (2023) | code MIT | Visual-prompting toolbox that labels image regions for multimodal reference and grounding, including GUI applications. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/SoM/HEAD/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-310 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+311 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
+**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (6)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
 
 ## Benchmarks
 
@@ -154,6 +154,7 @@
 | [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
 | [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
 | [Mobilerun Portal (formerly Droidrun Portal)](https://github.com/droidrun/mobilerun-portal) | android | — | code AGPL-3.0-or-later | An Android accessibility service that exposes UI-element inspection, device-control interfaces and screen feedback to mobile automation agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun-portal/HEAD/README.md) |
+| [native-devtools-mcp](https://github.com/vectora-foundry/native-devtools-mcp) | desktop, macos, windows, android, web | — | code MIT | Local Rust MCP server for operating macOS and Windows apps, Chrome or Electron pages over CDP, and Android devices over ADB, with screenshots, OCR, accessibility lookup, input and template matching. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/vectora-foundry/native-devtools-mcp/HEAD/README.md) |
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 

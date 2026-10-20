@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-63 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+64 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (37)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (38)](#papers)
 
 ## Benchmarks
 
@@ -105,6 +105,7 @@ All entries in this section: web, desktop, android, windows.
 | 2025‑11‑06 | [GUI-360$^\circ$: A Comprehensive Dataset and Benchmark for Computer-Using Agents](https://arxiv.org/abs/2511.04307) | desktop, windows | Collects Windows application trajectories with screenshots and action traces for grounding, screen parsing, and action prediction. |
 | 2025‑10‑20 | [UltraCUA: A Foundation Model for Computer Use Agents with Hybrid Action](https://arxiv.org/abs/2510.17790) | desktop, windows | UltraCUA trains a shared policy for primitive GUI actions and high-level tool calls using synthesized tasks and hybrid trajectories. Supervised fine-tuning followed by online reinforcement learning is evaluated on OSWorld and WindowsAgentArena. |
 | 2025‑10‑06 | [From Imperative to Declarative: Towards LLM-friendly OS Interfaces for Boosted Computer-Use Agents](https://arxiv.org/abs/2510.04607) | desktop, windows | Introduces a Declarative Model Interface that maps existing GUIs to access, state and observation primitives while handling low-level interactions. Evaluation uses Word, PowerPoint and Excel on Windows with a GUI-agent baseline. |
+| 2025‑10‑06 | [Watch and Learn: Learning to Use Computers from Online Videos](https://arxiv.org/abs/2510.04673) | desktop, linux, windows | Labels tutorial videos with an inverse dynamics model trained on 600K web transitions, yielding 53K UI trajectories used as in-context exemplars and fine-tuning data on OSWorld and WindowsAgentArena. |
 | 2025‑10‑02 | [Scaling Agents for Computer Use](https://arxiv.org/abs/2510.02250) | desktop, windows, android | Introduces Behavior Judge, which converts execution trajectories into behavior narratives and compares multiple candidate rollouts. Experiments examine this selection approach on OSWorld, WindowsAgentArena and AndroidWorld. |
 | 2025‑09‑02 | [UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.02544) | web, desktop, windows, android, cross-platform | UI-TARS-2 combines scalable trajectory generation, stabilized multi-turn reinforcement learning, and a sandbox that supports GUI, filesystem, and terminal actions. The report evaluates the resulting agent across web, desktop, Android, and game tasks and analyzes training stability. |
 | 2025‑07‑25 | [MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents](https://arxiv.org/abs/2507.19478) | web, desktop, windows, macos, linux, ios, android, cross-platform | MMBench-GUI evaluates interface understanding, element grounding, task automation, and collaboration across six named desktop, mobile, and web platforms. It introduces the Efficiency-Quality Area metric for examining execution efficiency alongside task quality in online GUI automation. |

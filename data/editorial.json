@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Watch and Learn: Learning to Use Computers from Online Videos",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.04673",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "data-generation",
+      "video",
+      "imitation-learning"
+    ],
+    "summary": "Labels tutorial videos with an inverse dynamics model trained on 600K web transitions, yielding 53K UI trajectories used as in-context exemplars and fine-tuning data on OSWorld and WindowsAgentArena.",
+    "verify_terms": [
+      "Watch and Learn: Learning to Use Computers"
+    ],
+    "scope": "core",
+    "notes": "The inverse dynamics model (frozen SigLIP-2 encoder, four transformer layers, heads for click, release, scroll, type, wait and move) is trained on about 600K transitions recorded with Playwright from Common Crawl entry pages; the 53,125 video-derived trajectories span Ubuntu, macOS and Windows applications. OSWorld-Verified runs use a 50-step limit and WindowsAgentArena a 15-step limit; in-context tests cover Gemini 2.5 Flash, o3, Claude 4 Sonnet and Jedi, and fine-tuning covers Qwen2.5-VL-7B and UI-TARS-1.5-7B. The paper's project page is chanh.ee/wandl. Reported gains were not independently reproduced.",
+    "read_basis": "Read the arXiv v3 abstract and comments, the v3 HTML Sections 1, 3 (state-transition corpus, action space, retrieval and filtering) and 4 (benchmarks, Tables 2-3), Appendices C.1 and D.1, and checked the v3 PDF title page for links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.04673v3"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.04673v3",
+        "retrieved_at": "2026-10-20T07:46:51Z",
+        "sha256": "3ec503313f500bc562df1e9af278eaf3270f13860a9aa756ef81eba145fd612e",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "62ae1b04672779fa512d9fe31b14cce18d5f19405ca3c3f721b60421a2b40f46",
+    "reviewed_at": "2026-10-20T07:47:18Z"
   }
 ]

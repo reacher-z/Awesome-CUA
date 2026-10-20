@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-75 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+76 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (10)](#frameworks) · [Papers (44)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (10)](#frameworks) · [Papers (45)](#papers)
 
 ## Benchmarks
 
@@ -102,6 +102,7 @@ All entries in this section: unspecified.
 | 2025‑11‑22 | [WebSTAR: Scalable Data Synthesis for Computer Use Agents with Step-Level Filtering](https://arxiv.org/abs/2512.10962) | web | Introduces a pipeline that filters individual steps from noisy computer-agent rollouts and augments them with reasoning for training. WebSTAR and WebSCORE support GUI-policy supervision and a distilled process reward model, StepRM. |
 | 2025‑11‑08 | [SynthAgent: Adapting Web Agents with Synthetic Supervision](https://arxiv.org/abs/2511.06101) | web | Introduces SynthAgent, which generates tasks by exploring website elements and refines them when observations reveal conflicts. A later trajectory-refinement stage removes misaligned behavior before fine-tuning agents for the target websites. |
 | 2025‑10‑12 | [BrowserAgent: Building Web Agents with Human-Inspired Web Browsing Actions](https://arxiv.org/abs/2510.10666) | web | Trains BrowserAgent to use Playwright-based scrolling, clicking and typing directly on webpages for information-seeking tasks. Supervised and rejection fine-tuning are paired with explicit memory for conclusions carried across steps. |
+| 2025‑10‑06 | [Watch and Learn: Learning to Use Computers from Online Videos](https://arxiv.org/abs/2510.04673) | desktop, linux, windows | Labels tutorial videos with an inverse dynamics model trained on 600K web transitions, yielding 53K UI trajectories used as in-context exemplars and fine-tuning data on OSWorld and WindowsAgentArena. |
 | 2025‑09‑29 | [Retrieval-augmented GUI Agents with Generative Guidelines](https://arxiv.org/abs/2509.24183) | web, android | RAG-GUI trains a small guidance adapter to filter and summarize retrieved web tutorials while keeping the acting agent fixed. Supervised and rejection-sampling stages prepare the adapter for inference-time assistance, tested on offline web/mobile tasks and interactive Android tasks. |
 | 2025‑09‑29 | [Scaling Synthetic Task Generation for Agents via Exploration](https://arxiv.org/abs/2509.25047) | android, linux, desktop, cross-platform | AutoPlay explores application states and functions to generate tasks, then uses a model executor and verifier to construct demonstrations. It produces 20,000 tasks across 20 Android apps and 10,000 tasks across 13 Ubuntu apps for supervised and reinforcement learning of UI agents. |
 | 2025‑09‑22 | [UIPro: Unleashing Superior Interaction Capability For GUI Agents](https://arxiv.org/abs/2509.17328) | cross-platform | UIPro pretrains GUI understanding on 20.6 million tasks and then harmonizes interaction datasets through a unified action space. Continued fine-tuning uses the merged multi-platform data to train action prediction for generalist GUI operation. |

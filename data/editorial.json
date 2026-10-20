@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "\"What Are You Really Trying to Do?\": Co-Creating Life Goals from Everyday Computer Use",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.00497",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "recording",
+      "human-in-the-loop"
+    ],
+    "scope": "adjacent",
+    "summary": "Introduces Tempo, a macOS system that abstracts passive screenshots of computer use into a hierarchy ending in long-term life goals, which users edit to steer later inference. A one-week field study had 14 participants.",
+    "verify_terms": [
+      "Co-Creating Life Goals from Everyday Computer Use"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.00497v2"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v2 full text, which the arXiv comments mark as accepted at UIST 2026, transcribes screenshots with Gemini 3 Flash, drops frames with PII or content blocked by a contextual-integrity audit, and stores operations, actions, activities and strivings in a local property graph. It demonstrates a proactive-agent prototype on this model; Tempo itself does not operate the computer. It names code at github.com/StanfordHCI/striving-cocreation. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.00497v2",
+        "sha256": "b42b703315aa71e4a182d13e85e726805183d6cd35409a13d73f0c1b1c378e80",
+        "retrieved_at": "2026-10-20T04:23:57Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML for the observation pipeline, platform, prototypes and code location. No code execution or result reproduction.",
+    "reviewed_sha256": "1ab4f8ca669743c895c943f7d0aeea3b616a890ed3b077d6f5b1da4c35b10a72",
+    "reviewed_at": "2026-10-20T04:24:06Z"
   }
 ]

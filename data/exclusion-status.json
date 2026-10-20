@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1955,6 +1955,23 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=500&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "ae98e77b8bb125e45277aacec768a047e7bb0e13f33ca9ff6ca7c19e29e56cca",
         "retrieved_at": "2026-10-16T06:36:47Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2510.16156",
+      "name": "AsyncVoice Agent: Real-Time Explanation for LLM Planning and Reasoning",
+      "url": "https://arxiv.org/abs/2510.16156",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract presents AsyncVoice Agent, which streams an LLM's reasoning from MCP backend servers to a conversational voice front end so that users can interrupt and steer it, and evaluates latency and answer quality on GSM8K math problems and generated travel-planning and deep-research scenarios. The system narrates its own reasoning by voice and never operates a computer, browser or phone, so this human-AI explanation interface is outside the computer-use scope.",
+      "reviewed_at": "2026-10-20T07:40:44Z",
+      "metadata_fingerprint": "c3aba81a4a3508ec4527369b41d5872b7c653c67ffa834e15cc90ca8227bfde2",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2510.10587%2C2510.10909%2C2510.11144%2C2510.12798%2C2510.14388%2C2510.14513%2C2510.14969%2C2510.16156%2C2510.17017%2C2510.17800%2C2510.19207%2C2510.19247%2C2510.19386%2C2510.19864%2C2510.20333%2C2510.21652%2C2510.22443%2C2510.22936%2C2510.23730%2C2510.23883%2C2510.24702%2C2510.25726%2C2510.26328%2C2510.27135%2C2510.27410%2C2511.00153%2C2511.02650%2C2511.02687%2C2511.03690%2C2511.04220%2C2511.05797%2C2511.06251%2C2511.08319%2C2511.08487%2C2511.10110%2C2511.13725%2C2511.14210%2C2511.14945%2C2511.15705%2C2511.16842%2C2511.17649%2C2511.17775%2C2511.19496%2C2511.19516%2C2511.20636%2C2511.21990%2C2511.22074%2C2512.04302%2C2512.04529%2C2512.06726&max_results=50",
+        "sha256": "240e3d6528900f4a3e87f12f5e55cb7654a4d25d4478e291e9bbf725e7013118",
+        "retrieved_at": "2026-10-17T07:57:59Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

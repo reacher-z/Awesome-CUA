@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:c7a01df1b0c354e0a650",
+    "url": "https://www.kaggle.com/datasets/vinothpandian/uisketch/data",
+    "decision": "out_of_scope",
+    "reason": "UISketch is a CHI 2021 dataset of about 19,000 hand-drawn sketches of 21 UI element categories from 1,218 participants, released on Kaggle with image-classification checkpoints for sketch-based UI prototyping. It contains no screenshots, interface states or interactions, so it supports design tooling rather than agents that perceive or operate interfaces.",
+    "reviewed_at": "2026-10-20T05:09:00Z",
+    "evidence": {
+      "url": "https://www.kaggle.com/api/v1/datasets/view/vinothpandian/uisketch",
+      "sha256": "be818aa66adc39155927d404e3c61f272da61e8ed6bbece31455b427d2075f5f",
+      "retrieved_at": "2026-10-20T04:22:42Z"
+    }
   }
 ]

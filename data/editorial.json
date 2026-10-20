@@ -63844,5 +63844,93 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Buddy",
+    "kind": "agent",
+    "url": "https://github.com/ghorbelhamdi/buddy-android",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "human-in-the-loop",
+      "safety-security",
+      "tool-integration"
+    ],
+    "summary": "Android app whose accessibility service serves a local MCP server of phone tools, letting Claude Code, Codex or OpenCode, run in an on-device proot Linux, read the screen, tap, type and open apps.",
+    "scope": "core",
+    "verify_terms": [
+      "Buddy"
+    ],
+    "aliases": [
+      "buddy-android"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Requires a 64-bit Android 11+ phone; the README says it was tested on one OnePlus 12 and uses no adb, PC or root. Tools.java registers the phone tools; read_screen walks the accessibility node tree of the visible windows into a numbered list, and tap acts on those nodes or their clickable ancestors, with a separate screenshot tool. The agents (Claude Code, Codex or OpenCode) are installed into an Alpine Linux that Buddy runs under proot and use the user's own plan or OpenCode's free models; no model is bundled. Actions that send, post, buy, delete or change settings go through confirm cards, and per-app Trust, Hard or Smart rules are enforced by the app; the README names prompt injection from on-screen text as the main risk. benchmark/ reports a small timing comparison of seven model and agent pairs on five phone tasks, two runs each, checked by hand on one phone. Code was read, not run.",
+    "details": {
+      "availability": "Public Java source and APK releases; the agents are downloaded into the app at setup and the user signs in with their own plan, so no model is bundled.",
+      "repository_revision": "522cb600ba35c092fb10a4054881087e4168e07c"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/ghorbelhamdi/buddy-android/522cb600ba35c092fb10a4054881087e4168e07c/README.md",
+        "sha256": "ac9b961b7cdbdc0760407e7ed53f444495d619e85e4f9057696a0258de19a124",
+        "retrieved_at": "2026-10-20T08:12:42Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ghorbelhamdi/buddy-android/522cb600ba35c092fb10a4054881087e4168e07c/app/src/main/java/app/buddy/assistant/Tools.java",
+        "sha256": "0e27239e987811fe386bd23f96f3dce6b3ef99ba20f5b1d99d356104c1e9e00d",
+        "retrieved_at": "2026-10-20T08:12:43Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ghorbelhamdi/buddy-android/522cb600ba35c092fb10a4054881087e4168e07c/benchmark/README.md",
+        "sha256": "51030ac156f1a36d4756266240b404d26918cda290ba3a05dd345ad6544191a5",
+        "retrieved_at": "2026-10-20T08:12:44Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ghorbelhamdi/buddy-android/522cb600ba35c092fb10a4054881087e4168e07c/LICENSE",
+        "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+        "retrieved_at": "2026-10-20T08:12:44Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit 522cb60, the phone tool implementation, the benchmark README and the root LICENSE. No code execution.",
+    "reviewed_sha256": "ac9b961b7cdbdc0760407e7ed53f444495d619e85e4f9057696a0258de19a124",
+    "reviewed_at": "2026-10-20T08:13:04Z"
   }
 ]

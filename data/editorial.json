@@ -63669,7 +63669,7 @@
       "efficiency"
     ],
     "scope": "core",
-    "summary": "Proposes GUI-D, which filters GUI grounding data and scores sample difficulty, and GUI-C², an RL-trained grounder that crops coarse-to-fine by predicted target area with improvement-aware rewards, using 4,624 samples.",
+    "summary": "Proposes GUI-D, which filters GUI grounding data and scores difficulty, and GUI-C², an RL grounder that crops coarse-to-fine by predicted target area with improvement-aware rewards, on 4,624 (3B) or 4,824 (7B) samples.",
     "verify_terms": [
       "Coarse-to-Fine GUI Grounding via Difficulty-Aware"
     ],
@@ -63677,12 +63677,13 @@
       "https://arxiv.org/abs/2605.30884v1"
     ],
     "editorial_reviewed": true,
-    "notes": "The v1 full text trains Qwen2.5-VL-3B and 7B Instruct models with the VLM-R1 framework and reports ScreenSpot, ScreenSpot-v2 (mobile, desktop and web splits) and ScreenSpot-Pro. It states that code and data will be publicly available. Results have not been independently reproduced.",
+    "notes": "The v1 full text trains Qwen2.5-VL-3B and 7B Instruct models with the VLM-R1 framework on GUI-D datasets of 4,624 (3B) and 4,824 (7B) mobile, web and desktop samples, and reports ScreenSpot, ScreenSpot-v2 (mobile, desktop and web splits) and ScreenSpot-Pro. It links a project page (z1oong.github.io/GUI-C2) and states that code and data will be publicly available. Results have not been independently reproduced.",
     "additional_evidence": [
       {
         "role": "primary",
         "method": "editorial_primary_review",
         "supports": [
+          "summary",
           "environments",
           "notes"
         ],
@@ -63693,6 +63694,6 @@
     ],
     "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the base models, training-sample count and grounding benchmarks. No code execution or result reproduction.",
     "reviewed_sha256": "87fca0170867d732f80a36501541bbcf2d9196be62f8d8bdc3626597e5dde3aa",
-    "reviewed_at": "2026-10-20T04:11:21Z"
+    "reviewed_at": "2026-10-20T05:20:52Z"
   }
 ]

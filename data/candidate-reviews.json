@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2b0ca1fa8cf774ff077f",
+    "url": "https://www.hcompany.ai",
+    "decision": "alias",
+    "target_id": "organization:h",
+    "reason": "www.hcompany.ai redirects to hcompany.ai/, the homepage of H Company, which presents its enterprise deployments, Agents API, Models API, Holo models and HoloTab extension. Discovery lists label the link Runner H, but the homepage does not describe that product; hcompany.ai/runner-h redirects to its announcement post."
   }
 ]

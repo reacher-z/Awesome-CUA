@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (16)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -31,6 +31,7 @@ All entries in this section: web.
 | [Skyvern Cloud](https://www.skyvern.com/) | [Skyvern](https://www.skyvern.com/) | Hosted Skyvern service for AI browser workflows such as invoice downloads and form filling, with built-in CAPTCHA and 2FA handling, proxy geotargeting, run explanations and JSON or CSV output. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
 | [Steel Cloud](https://steel.dev/) | [Steel](https://steel.dev/) | Managed browser infrastructure associated with Steel Browser. | [✓ 2026‑10‑16](https://steel.dev/) |
 | [TinyFish](https://www.tinyfish.ai/) | [TinyFish](https://www.tinyfish.ai/) | Browser-agent API for executing web tasks and extracting structured results. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
+| [webagent.cloud](https://webagent.cloud) | — | Hosted browser-agent service that carries out web tasks from natural-language prompts, billed per second of execution, with a REST API, Make, n8n and Zapier integrations and a self-hostable open-source version. | [✓ 2026‑10‑20](https://webagent.cloud) |
 
 [↑ Back to top](#product-catalog)
 

@@ -63844,5 +63844,139 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "GACUA",
+    "kind": "agent",
+    "url": "https://github.com/openmule/gacua",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Gemini CLI-based desktop agent in which Gemini plans each action, gemini-2.5-pro grounds its target on overlapping screenshot crops, and a nut.js MCP server executes it after optional per-step user review.",
+    "scope": "core",
+    "verify_terms": [
+      "GACUA"
+    ],
+    "aliases": [
+      "Gemini CLI as Computer Use Agent"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "GACUA (Gemini CLI as Computer Use Agent) is a monorepo that carries Gemini CLI's packages alongside its own @gacua/backend, @gacua/frontend, @gacua/mcp-computer and @gacua/shared. The backend loop (packages/gacua/backend/src/services/computer-use/agent.ts) sends the chat history and screenshots to the configured Gemini model, which calls click, type, drag, scroll, key or wait tools; for targeted actions a separate gemini-2.5-pro call returns a 0-1000 bounding box on one of several overlapping square crops of the screen (screen.ts). Actions are shown in a web UI where the user accepts or rejects each one unless auto-accept applies, and are executed by an MCP server built on @nut-tree-fork/nut-js (packages/gacua/mcp-computer/src/actions.ts). The web UI can be opened from another device, and the MCP 'body' can run on a different machine from the Gemini 'brain'. The docs name Windows (a Session 0 note for SSH launches) and macOS permission checks; Linux is not named. @gacua/backend is versioned 0.0.1-alpha.10 at the inspected commit, which is dated 2025-09-12. Code was read, not run.",
+    "details": {
+      "availability": "Public Apache-2.0 source and alpha npm packages (@gacua/backend, @gacua/mcp-computer); requires Gemini API authentication.",
+      "repository_revision": "4f7c104507406758fe2d40d1dd8525b261f0ad15",
+      "package_version": "0.0.1-alpha.10"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/README.md",
+        "sha256": "29b7ba2921c1ad8aeaf985317112b489b350f69363f92dceb2ba6cb8df58f9f6",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/docs/gacua/architecture.md",
+        "sha256": "57a96511030795b740c339027c33a89a6855960557d50fbe5705da20b0ff9404",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/docs/gacua/troubleshooting.md",
+        "sha256": "a4db2840700eb118e6b124c65e5da94cf8d9536e50bbcdec241566fe5c4c3397",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/packages/gacua/backend/src/services/computer-use/agent.ts",
+        "sha256": "50d54d9b0fe952b17644760f24e004121c8531377d7e04159f9c97a987d8bbea",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/packages/gacua/backend/src/services/computer-use/screen.ts",
+        "sha256": "5a1392ace7e855cbfd855429beb5c65440445eeee976d5eba587248385d52a17",
+        "retrieved_at": "2026-10-20T08:05:31Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/packages/gacua/mcp-computer/src/actions.ts",
+        "sha256": "d7cc1f83577f5bdbd275a9e41b94fd03e8d72dde5f9f97f5183b50b89a1e2610",
+        "retrieved_at": "2026-10-20T08:05:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.package_version"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/packages/gacua/backend/package.json",
+        "sha256": "f1208eca15b9a4858c6fd336e51e7fb8ca1632133f30032661999996cae8551d",
+        "retrieved_at": "2026-10-20T08:05:32Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/openmule/gacua/4f7c104507406758fe2d40d1dd8525b261f0ad15/LICENSE",
+        "sha256": "09d2d564b15d1a8be7713524b27aa8b10e55ae7cd8aeaf1e04e6059adda0de10",
+        "retrieved_at": "2026-10-20T08:05:32Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "29b7ba2921c1ad8aeaf985317112b489b350f69363f92dceb2ba6cb8df58f9f6",
+    "reviewed_at": "2026-10-20T08:06:12Z"
   }
 ]

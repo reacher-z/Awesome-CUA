@@ -63844,5 +63844,56 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Build the web for agents, not agents for the web",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.10953",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Position paper proposing Agentic Web Interfaces, website interfaces designed for agents rather than humans, with six design principles motivated by the limits of DOM, screenshot and API-based web agents.",
+    "verify_terms": [
+      "Build the web for agents, not agents for the web"
+    ],
+    "scope": "core",
+    "notes": "Section 2 reviews browser-based agents (screenshot, DOM and accessibility-tree observations) and API-based hybrid agents, and their representation, resource, safety and privacy problems. Section 3 lists six principles for an Agentic Web Interface (standardized, human-centric, safe, optimal representations, efficient to host, developer-friendly) and suggests unified higher-level actions, compatibility with user interfaces, access control for agents, progressive information transfer and agentic task queues. Section 5 contrasts AWIs with tool protocols such as MCP. The paper presents no implementation or experiments.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-6, including the principle list in Section 3.2 and the suggestions in Section 3.3.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2506.10953v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2506.10953v1",
+        "retrieved_at": "2026-10-20T08:11:28Z",
+        "sha256": "6b75c3d1a8977abb9bacaa753c764a9875c6c6930ba3854ff27ea20806a79178",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "topics",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c5945f92a3b1f69e61f49e3c2fec84833bf28803259f705b561c8b702786254c",
+    "reviewed_at": "2026-10-20T08:11:46Z"
   }
 ]

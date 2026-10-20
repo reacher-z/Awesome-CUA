@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:eafac31fef5dbe00d5b1",
+    "url": "https://www.gatesnotes.com/AI-agents",
+    "decision": "out_of_scope",
+    "reason": "A 9 November 2023 Gates Notes essay in which Bill Gates predicts that personal AI agents, acting across applications from everyday-language requests, will reshape health care, education, productivity and shopping within five years, and lists open questions about privacy and agent-to-agent protocols. It is opinion commentary with no system, method, data or evaluation and does not discuss operating graphical interfaces.",
+    "reviewed_at": "2026-10-20T05:08:21Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20231109190047id_/https://www.gatesnotes.com/AI-agents",
+      "sha256": "99f387250d4ad379b943627c9c5d4bccedd26a0c3ef8e2d9cc4d3df4bb30d8ac",
+      "retrieved_at": "2026-10-20T04:20:50Z"
+    }
   }
 ]

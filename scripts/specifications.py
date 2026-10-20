@@ -89,6 +89,15 @@ def words(values):
     return ', '.join(values) if values else 'Not recorded'
 
 
+UNKNOWN = '<span class="unknown-value">Not recorded</span>'
+
+
+def shown(value):
+    """Escaped text for a recorded list or string; an unrecorded value is marked up so it never reads like data."""
+    text = ', '.join(value) if isinstance(value, list) else (value or '')
+    return esc(text) if text.strip() else UNKNOWN
+
+
 def count_text(count):
     value = f'{count["value"]:,}'
     return f'{PREFIXES[count["qualifier"]]}{value} {count["unit"]} — {count["population"]}' + (' (computed)' if count['basis']=='computed' else '')
@@ -96,7 +105,7 @@ def count_text(count):
 
 def counts_html(profile):
     if not profile['counts']:
-        return '<span class="unknown-value">Not recorded</span>'
+        return UNKNOWN
     return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="Source for {esc(count["population"])}">source</a></li>' for count in profile['counts']) + '</ul>'
 
 
@@ -129,11 +138,11 @@ def resource_profile_html(row):
     if not profile:
         return ''
     if row['kind'] == 'benchmark':
-        facts = [('Focus', words(profile['focus'])), ('Setting', profile['setting']), ('Observations', words(profile['observations'])), ('Actions / outputs', words(profile['actions'])), ('Evaluation', profile['evaluation'] or 'Not recorded')]
+        facts = [('Focus', shown(profile['focus'])), ('Setting', shown(profile['setting'])), ('Observations', shown(profile['observations'])), ('Actions / outputs', shown(profile['actions'])), ('Evaluation', shown(profile['evaluation']))]
     else:
-        facts = [('Supervision', words(profile['supervision'])), ('Modalities', words(profile['modalities'])), ('Formats', words(profile['formats'])), ('Splits', words(profile['splits']))]
+        facts = [('Supervision', shown(profile['supervision'])), ('Modalities', shown(profile['modalities'])), ('Formats', shown(profile['formats'])), ('Splits', shown(profile['splits']))]
     title = 'Evaluation protocol' if row['kind'] == 'benchmark' else 'Dataset profile'
-    body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>' for label, value in facts) + '</dl>'
+    body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(label)}</dt><dd>{value}</dd></div>' for label, value in facts) + '</dl>'
     body += '<h3>Scale and counting units</h3>' + counts_html(profile)
     body += '<p>' + esc(profile['notes']) + '</p><p><a href="/compare/' + ('benchmarks' if row['kind'] == 'benchmark' else 'datasets') + '/">Compare source-reviewed profiles</a></p>'
     return body
@@ -159,11 +168,11 @@ def comparison_body(rows, kind, link_for):
         text = ' '.join([row['name'], *row['environments'], *visible_values, *(count_text(count) for count in profile['counts'])])
         body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}"><td><a href="{link_for(row)}"><strong>{esc(row["name"])}</strong></a><div>{esc(words(row["environments"]))}</div>'
         if kind == 'benchmark':
-            body += '<p>' + esc(words(profile['focus'])) + '<br>' + esc(profile['setting']) + '</p></td><td><strong>Observe</strong><br>' + esc(words(profile['observations'])) + '<br><strong>Act / output</strong><br>' + esc(words(profile['actions'])) + '</td><td>' + esc(profile['evaluation'] or 'Not recorded') + '</td>'
+            body += '<p>' + shown(profile['focus']) + '<br>' + esc(profile['setting']) + '</p></td><td><strong>Observe</strong><br>' + shown(profile['observations']) + '<br><strong>Act / output</strong><br>' + shown(profile['actions']) + '</td><td>' + shown(profile['evaluation']) + '</td>'
         else:
             license = row['licenses']['data']
-            declaration = f'<a href="{safe_href(license["url"])}">{esc(words(license["declared"]) if isinstance(license["declared"],list) else license["declared"])}</a>' if license else 'Not recorded'
-            body += '<p>' + esc(words(profile['supervision'])) + '</p></td><td>' + esc(words(profile['modalities'])) + '<br><strong>Format</strong><br>' + esc(words(profile['formats'])) + '</td><td>' + esc(words(profile['splits'])) + '<br><strong>Data license</strong><br>' + declaration + '</td>'
+            declaration = f'<a href="{safe_href(license["url"])}">{esc(words(license["declared"]) if isinstance(license["declared"],list) else license["declared"])}</a>' if license else UNKNOWN
+            body += '<p>' + shown(profile['supervision']) + '</p></td><td>' + shown(profile['modalities']) + '<br><strong>Format</strong><br>' + shown(profile['formats']) + '</td><td>' + shown(profile['splits']) + '<br><strong>Data license</strong><br>' + declaration + '</td>'
         body += '<td>' + counts_html(profile) + '<details><summary>Scope and source notes</summary><p>' + esc(profile['notes']) + '</p><ul>' + ''.join(f'<li><a href="{safe_href(url)}">Primary evidence {index+1}</a></li>' for index,url in enumerate(profile['evidence_urls'])) + '</ul></details></td></tr>'
     body += '</tbody></table></div><p>Use each resource page for source timestamps, content fingerprints, and separate code, data, and weight licenses.</p>'
     body += f'<p><a href="/downloads/{plural}-profiles.json">Download these profiles as JSON</a> · <a href="/data/">Complete catalog and SQLite</a> · <a href="/compare/{"datasets" if kind=="benchmark" else "benchmarks"}/">Compare {"datasets" if kind=="benchmark" else "benchmarks"}</a></p><script type="module" src="/compare.js"></script>'

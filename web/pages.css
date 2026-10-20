@@ -37,6 +37,8 @@
 .library-title-tail{white-space:nowrap}
 
 .reading-shell .paper-publication{font-size:11px;line-height:1.6;margin:0 0 7px;color:#657084}.paper-publication a{color:var(--blue-dark)}
+/* Unrecorded profile values read as absent, not as data. */
+.unknown-value{color:var(--faint);font-style:italic}
 
 /* Reviewed topic coverage: fixed meanings for color, with visible text labels. */
 html:has(.topic-directory,.paper-library,.data-hub){scroll-behavior:auto}

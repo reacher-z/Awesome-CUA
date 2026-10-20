@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2607.12406",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "safety-security"
+    ],
+    "scope": "adjacent",
+    "summary": "Surveys LLM-agent safety through isolation, organizing attacks and defenses around user-agent, agent-tool, agent-execution, agent-agent and system-environment boundaries and tracing failures across them.",
+    "verify_terms": [
+      "Isolation as a First-Class Principle for LLM-Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.12406v2"
+    ],
+    "notes": "Adjacent broad agent-safety survey. Full-text v2 Section 4.2 covers code, browser and GUI action risks, and Section 6.3 covers web-agent security and hostile interface environments, including web prompt injection and visual prompt injection against computer-use agents. Surveyed systems and their reported results are not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.12406v2",
+        "sha256": "cb3180dbb025418d7e465c88f0b09f428bac7af50a6b5143ad79cfd350586dfc",
+        "retrieved_at": "2026-10-20T03:58:45Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML outline, Section 4.2 (code, browser and GUI action risks) and Section 6.3 (web-agent security). No result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "23a19eafabc12e85badbb8eb72f0c58b6596868e8f586eff954e66a5513e3321",
+    "reviewed_at": "2026-10-20T04:01:24Z"
   }
 ]

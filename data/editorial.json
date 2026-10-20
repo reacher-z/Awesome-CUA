@@ -63863,7 +63863,7 @@
       "World-Model-Augmented Web Agents"
     ],
     "scope": "core",
-    "notes": "Per the v1 full text (Section 4, Appendix B), WAC is built on the VisualWebArena codebase and compared with ReAct and a WebDreamer reproduction, all using a December 19, 2025 Qwen3-VL-Plus snapshot with a one-step world-model simulation horizon; a cross-model check uses GLM-4.5v on VisualWebArena Classifieds. The paper says code will be released upon publication and names no repository. Results were not independently reproduced.",
+    "notes": "Per the v1 full text (Section 4, Appendix B), WAC is built on the VisualWebArena codebase and compared with ReAct and a WebDreamer reproduction, all using a December 19, 2025 Qwen3-VL-Plus snapshot with a one-step world-model simulation horizon; cross-model checks swap in GLM-4.5v on VisualWebArena Classifieds and GLM-4.6v on VisualWebArena Reddit (Tables 3-4). The paper says code will be released upon publication and names no repository. Results were not independently reproduced.",
     "evidence_urls": [
       "https://arxiv.org/abs/2602.15384v1"
     ],

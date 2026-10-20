@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "WebOperator: Action-Aware Tree Search for Autonomous Agents in Web Environment",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2512.12692",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "web-navigation",
+      "state-tracking",
+      "reward-models",
+      "training-free"
+    ],
+    "summary": "Best-first tree search for web agents that ranks candidate actions by reward and safety, defers destructive actions and validates replayed paths before backtracking; 54.6% success on 812 WebArena tasks with GPT-4o.",
+    "verify_terms": [
+      "WebOperator: Action-Aware Tree Search"
+    ],
+    "scope": "core",
+    "notes": "Built on BrowserGym with accessibility-tree observations. GPT-4o generates up to three candidate actions per step from varied prompt contexts, rule-based checks reject invalid ones, equivalent ones are merged, and a WebShepherd-style checklist reward scores them. Actions are classed as safe, destructive, terminating or invalid. Backtracking jumps to the nearest refresh-stable checkpoint URL and replays the remaining steps in a parallel tab, committing only if accessibility-tree snapshots match. Past-trajectory retrieval uses Go-Browse data. Appendix F reports 63.57% on a 129-task WebVoyager subset. The paper names code at github.com/kagnlp/WebOperator and a project page at kagnlp.github.io/WebOperator; neither was reviewed here. Results were not independently reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 2.2 (action classification), 3.1-3.4 (action generation, destructive actions, backtracking, action selection), 4.1-4.2 (WebArena setup, BrowserGym, gpt-4o, Table 2), Appendices A.1.2, B.2, B.4, E and F (Table 6), the limitations and the reproducibility statement.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2512.12692v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2512.12692v1",
+        "retrieved_at": "2026-10-20T05:25:46Z",
+        "sha256": "45b1b179e77e3a412c98d6cee4bf5b760ed4b167c92e766cfbb05bc01ea4f3b1",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a42ad2d0f6e6c4cb0b52b6213d84d10d90a17092f41a697869e27f6b0399843c",
+    "reviewed_at": "2026-10-20T05:25:47Z"
   }
 ]

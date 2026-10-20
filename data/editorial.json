@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.11858",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "efficiency",
+      "reinforcement-learning"
+    ],
+    "scope": "adjacent",
+    "summary": "Moves zooming from inference to training: teachers label micro-crops and students learn from full images by RL on 74K samples. Adds ZoomBench (845 VQA) and reports gains on ScreenSpot-Pro and OSWorld-G grounding.",
+    "verify_terms": [
+      "Region-to-Image Distillation for Fine-Grained Multimodal Perception"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.11858v2"
+    ],
+    "notes": "General fine-grained multimodal perception work rather than a GUI-agent method. Its GUI evidence is one generalization check (Section 4.4, Figure 6) comparing ZwZ-8B with Qwen3-VL-8B on the ScreenSpot-Pro and OSWorld-G grounding benchmarks; no interactive GUI task is run. ZwZ-4B, ZwZ-7B and ZwZ-8B are trained with DAPO from Qwen3-VL-4B, Qwen2.5-VL-7B and Qwen3-VL-8B. ZoomBench's 845 VQA items span six perceptual dimensions and support a dual-view protocol for the global-regional zooming gap. The paper names code at github.com/inclusionAI/Zooming-without-Zooming. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.11858v2",
+        "sha256": "867f9d964f3c9ebaf8093e19984bbedda06e391fd4a9ddff854b1ae8753b5281",
+        "retrieved_at": "2026-10-20T04:39:18Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML full text for Region-to-Image Distillation and its training data (Section 3.1), ZoomBench construction (Section 3.2), the experimental settings and models (Section 4.1) and the real-world generalization results including GUI grounding (Section 4.4). No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f71661b3c3c0d04de753e0191fd31b1b175d7c7d2cd94c5cfcc07338f09011a1",
+    "reviewed_at": "2026-10-20T04:39:37Z"
   }
 ]

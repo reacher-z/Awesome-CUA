@@ -16,6 +16,7 @@ from paper_library import library_pages, library_path, library_years, paper_libr
 from publication_metadata import publication, format_date_parts, record_date_text, record_year
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
+from citation_file import read_citation_file
 
 SITE = "https://awesomecua.github.io"
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
@@ -124,6 +125,31 @@ def resource_schema(record):
     if record["topics"]:entity["keywords"]=record["topics"]
     if record["kind"]=="dataset" and len(description(record))>=50:entity["@type"]="Dataset"
     return entity
+
+
+# Downloads that Google Dataset Search may list: the complete records, retrieval documents and paper citations, not their manifests.
+DATASET_DOWNLOADS=('catalog-jsonl','catalog-json','catalog-sqlite','rag-reviewed','rag-all','citations-bib','citations-csl-json')
+
+
+def catalog_dataset(description_text,snapshot,rows,download_manifest):
+    # One Dataset node, shared by both language pages, so search engines see one dataset rather than one per translation.
+    cff=read_citation_file(Path(__file__).resolve().parents[1]/'CITATION.cff')
+    repository=cff['repository-code']
+    def person(author):
+        entry={"@type":"Person","name":author['given-names']+' '+author['family-names']}
+        # An alias is linked as a GitHub account only when that account owns the cited repository.
+        if author.get('alias') and repository.lower().startswith(f"https://github.com/{author['alias'].lower()}/"):entry["url"]="https://github.com/"+author['alias']
+        return entry
+    artifacts={item['id']:item for item in download_manifest['artifacts']}
+    distribution=[{"@type":"DataDownload","name":f"{artifacts[key]['title']['en']} ({artifacts[key]['format']})","encodingFormat":artifacts[key]['media_type'],"contentUrl":SITE+artifacts[key]['path'],"contentSize":f"{artifacts[key]['bytes']} bytes"} for key in DATASET_DOWNLOADS if key in artifacts]
+    dataset={"@type":"Dataset","@id":SITE+'/data/#dataset',"name":"AwesomeCUA computer-use agent resource catalog","alternateName":["Awesome Computer-Use Agents","Awesome-CUA","AwesomeCUA"],"description":description_text,"url":SITE+'/data/',"sameAs":[repository],
+        "creator":[person(author) for author in cff['authors']],"publisher":{"@type":"Organization","@id":SITE+'/#organization',"name":"AwesomeCUA","url":SITE+'/'},
+        "license":f"https://spdx.org/licenses/{cff['license']}.html","isAccessibleForFree":True,"version":snapshot[:10],"dateModified":snapshot,
+        "keywords":["computer-use agents","GUI agents","browser agents","web agents","mobile agents","datasets","benchmarks"],"distribution":distribution}
+    # Reviewed papers set the period the catalog documents; unreviewed bibliography records may be off-topic.
+    dates=sorted(r['published_at'] for r in rows if r['kind'] in {'paper','survey'} and r['review_status']=='curated' and r.get('published_at'))
+    if dates:dataset["temporalCoverage"]=f"{dates[0]}/{dates[-1]}"
+    return dataset
 
 
 def listing(rows):
@@ -428,15 +454,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     body='<h1>About AwesomeCUA and its editorial policy</h1><p class="answer-lead">AwesomeCUA is a source-backed catalog of resources for agents that operate computer interfaces. Its purpose is to make research and engineering assets easier to find, compare, and trace to their original publishers.</p><h2>Who maintains the catalog?</h2><p>The AwesomeCUA project publishes the catalog through its <a href="https://github.com/AwesomeCUA">GitHub organization</a>. Annotations and taxonomy are produced with AI-assisted editorial review. This is not a claim of independent peer review, benchmark reproduction, or affiliation with listed publishers.</p><h2>What is included?</h2><p>GUI and hybrid GUI/code agents, visual grounding, web and mobile navigation, training data, evaluation environments, execution infrastructure, safety research, and relevant products. Supporting tools may be marked adjacent.</p><h2>How are claims checked?</h2><p>Community lists and semantic searches discover candidates. Retained arXiv and publication sources support bibliographic facts. Official papers, repositories, documentation, and model/dataset cards support curated annotations. Every record retains source URLs, retrieval timestamps, and content hashes. Source refreshes do not silently inherit editorial approval.</p><h2>What do review states mean?</h2><ul><li><strong>Curated:</strong> a primary source was inspected for identity, scope, and the concise annotation.</li><li><strong>Metadata verified:</strong> bibliographic fields were checked; relevance, taxonomy, and findings are still pending.</li><li><strong>Candidate:</strong> an identifier was discovered but is not a published catalog record.</li></ul><h2>Licenses and corrections</h2><p>Code, data, weights, and document licenses are separate. Public availability does not establish reuse rights. Original catalog annotations and code use MIT; upstream resources keep their own terms. Report errors through <a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">a source-backed correction</a>.</p><h2>Indexing policy</h2><p>Reviewed resource pages and useful collection pages are eligible for indexing. Metadata-only resource pages remain accessible, with <code>noindex,follow</code> until their relevance is reviewed. The full bibliography remains searchable and downloadable.</p><p><a href="/coverage/">Coverage ledger</a> · <a href="/data/">Data and provenance</a></p>'
     emit('/about/',page('About AwesomeCUA and editorial policy','Learn what AwesomeCUA includes, how primary-source review works, what verification does and does not mean, and how to suggest corrections.','/about/',body))
     desc='A structured catalog of computer-use agent research papers, models, datasets, benchmarks, tools, products, and publishers, including original annotations, review states, source evidence, scoped license declarations, and resource relationships.'
-    dataset={"@type":"Dataset","name":"AwesomeCUA computer-use agent resource catalog","description":desc,"url":SITE+'/data/',"creator":{"@id":SITE+'/#organization'},"license":SOURCE_REPO+'/blob/main/LICENSE',"dateModified":latest,"keywords":["computer-use agents","GUI agents","browser agents","datasets","benchmarks"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/x-ndjson","contentUrl":SITE+'/downloads/catalog.jsonl'},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+'/data/records.json'},{"@type":"DataDownload","encodingFormat":"application/vnd.sqlite3","contentUrl":SITE+'/downloads/catalog.sqlite'}],"isAccessibleForFree":True}
     download_manifest=build_download_manifest(destination,rows,(root/'data/catalog.jsonl').read_bytes())
+    dataset=catalog_dataset(desc,latest,rows,download_manifest)
     data_alternatives={'en':'/data/','zh-CN':'/zh/data/','x-default':'/data/'}
     for language,path,title,summary in [
         ('en','/data/','AwesomeCUA data downloads for people and agents',desc),
         ('zh','/zh/data/','AwesomeCUA 数据中心：完整目录、RAG 与论文引用','下载完整 Computer-Use 资源目录、RAG 检索文档、论文引用和来源文件，查看实际条数、文件大小与 SHA-256 指纹。')]:
         body=data_hub_body(download_manifest,language=language,site_url=SITE)
-        data_schema={**dataset,'url':SITE+path,'description':summary}
-        emit(path,page(title,summary,path,body,data_schema,lang='zh-CN' if language=='zh' else 'en',alternatives=data_alternatives))
+        emit(path,page(title,summary,path,body,dataset,lang='zh-CN' if language=='zh' else 'en',alternatives=data_alternatives))
     guides=json.loads((root/'data/site-guides.json').read_text(encoding='utf-8'))
     for guide in guides:
         emit(guide_path(guide),page(guide['title'],guide['description'],guide_path(guide),guide['body'],{"@type":"Article","headline":guide['title'],"description":guide['description'],"author":{"@id":SITE+'/#organization'}},crumbs=[("AwesomeCUA","/"),("Guides","/guides/"),(guide['title'],guide_path(guide))]))

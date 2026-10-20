@@ -179,9 +179,9 @@ class SearchPagesTests(unittest.TestCase):
                     self.assertTrue(target.exists(),f'{path} -> {link}')
                 graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',markup,re.S)[1])['@graph']
                 dataset=next(item for item in graph if item['@type']=='Dataset')
-                self.assertEqual(dataset['url'],SITE+path)
-                self.assertEqual({item['contentUrl'] for item in dataset['distribution']},
-                                 {SITE+'/downloads/catalog.jsonl',SITE+'/data/records.json',SITE+'/downloads/catalog.sqlite'})
+                self.assertEqual((dataset['@id'],dataset['url']),(SITE+'/data/#dataset',SITE+'/data/'))
+                self.assertLessEqual({SITE+'/downloads/catalog.jsonl',SITE+'/data/records.json',SITE+'/downloads/catalog.sqlite'},
+                                     {item['contentUrl'] for item in dataset['distribution']})
         self.assertIn('href="/zh/data/">数据</a>',(self.dest/'zh/data/index.html').read_text())
         self.assertIn(SITE+'/downloads/manifest.json',(self.dest/'llms.txt').read_text())
 

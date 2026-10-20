@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (205)](#papers)
 
 ## Benchmarks
 
@@ -264,6 +264,7 @@ All entries in this section: web, desktop, android, windows.
 | 2026‑04‑20 | [Temporal UI State Inconsistency in Desktop GUI Agents: Formalizing and Defending Against TOCTOU Attacks on Computer-Use Agents](https://arxiv.org/abs/2604.18860) | desktop, web | This study examines UI changes between a desktop agent’s screenshot observation and action dispatch. Its pre-execution state checks address overlay and focus manipulation, while the reported DOM-injection blind spot limits the defense’s coverage. |
 | 2026‑04‑16 | [FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems](https://arxiv.org/abs/2604.14956) | web, desktop, cross-platform | Introduces FedGUI, a federated GUI-learning benchmark built from six datasets spanning mobile, web and desktop interfaces. Its experiments separate platform, device, operating-system and data-source heterogeneity when evaluating collaborative training. |
 | 2026‑04‑10 | [EE-MCP: Self-Evolving MCP-GUI Agents via Automated Environment Generation and Experience Learning](https://arxiv.org/abs/2604.09815) | desktop | EE-MCP studies application-dependent mixtures of GUI actions and MCP calls using generated environments, trajectory collection and filtered training. An experience bank extracts rules from trajectory comparisons for inference-time improvement, distinct from model distillation. |
+| 2026‑04‑07 | [FrontierFinance: A Long-Horizon Computer-Use Benchmark of Real-World Financial Tasks](https://arxiv.org/abs/2604.05912) | desktop | FrontierFinance poses 25 expert-built financial modeling tasks across five model types, averaging over 18 hours of skilled work, with detailed rubrics; computer-use agents with a GUI desktop and bash trail human experts. |
 | 2026‑04‑06 | [IntentScore: Intent-Conditioned Action Evaluation for Computer-Use Agents](https://arxiv.org/abs/2604.05157) | desktop | Trains IntentScore on offline desktop GUI interactions to assess candidate actions using both their state relevance and planning intent. The reward model is evaluated as an action reranker for Agent S3 on OSWorld. |
 | 2026‑03‑27 | [Towards GUI Agents: Vision-Language Diffusion Models for GUI Grounding](https://arxiv.org/abs/2603.26211) | web, desktop | Adapts a discrete vision-language diffusion model to single-turn GUI action and bounding-box prediction, using a hybrid masking schedule for coordinate geometry. Experiments across web, desktop and mobile datasets examine grounding accuracy and inference tradeoffs. |
 | 2026‑03‑25 | [CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents](https://arxiv.org/abs/2603.24440) | desktop | CUA-Suite combines continuous expert desktop demonstrations in VideoCUA with the UI-Vision evaluation benchmark and GroundCUA grounding data. Screen recordings, cursor traces and layered annotations support study of temporal behavior and professional software workflows. |

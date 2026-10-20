@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "IntentWeave: A Progressive Entry Ladder for Multi-Surface Browser Agents in Cloud Portals",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.22917",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "ui-design",
+      "web-navigation"
+    ],
+    "summary": "Proposes IntentWeave, a design space of ten placements for browser-agent assistance ordered as a ladder from in-page hints to full workspaces, built as an Alibaba Cloud portal extension and compared in a 16-person study.",
+    "verify_terms": [
+      "IntentWeave"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.22917v1"
+    ],
+    "scope": "adjacent",
+    "notes": "The prototype injects assistance entry points into the live Alibaba Cloud portal DOM. The within-subjects study compares micro-only, mixed and workspace-heavy strategies on five portal tasks and reports completion time, task success and satisfaction; it names no underlying model and does not evaluate agent actions separately. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.22917v1",
+        "retrieved_at": "2026-10-20T04:35:29Z",
+        "sha256": "4e95721aa84423719054165023b6db5798e16fe14722cc55940515b2c070ed33",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML: Section 2 (ten paradigms), Section 3 (Alibaba Cloud case study, Table 1 tasks) and Section 4 (16-participant within-subjects study, Table 2).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b917e6dd0870d6a04cfff06a21fe321269d510dabf01bbdb9b9d32cac0ad7c86",
+    "reviewed_at": "2026-10-20T04:35:38Z"
   }
 ]

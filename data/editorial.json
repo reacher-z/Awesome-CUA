@@ -1182,7 +1182,7 @@
           "tab/navigation/scroll operations",
           "Python/Playwright action mode"
         ],
-        "evaluation": "Gymnasium reset/step interface delegates reward, completion, messages and task info to each adapter\u2019s validate() method. There is no universal BrowserGym success metric or shared task total; retain benchmark/adapter version and action subset for comparisons.",
+        "evaluation": "Gymnasium reset/step interface delegates reward, completion, messages and task info to each adapter’s validate() method. There is no universal BrowserGym success metric or shared task total; retain benchmark/adapter version and action subset for comparisons.",
         "counts": [],
         "notes": "A framework with interactive browser adapters and a static WebLINX evaluation integration, so the profile setting is mixed. README-listed integrations are not added as disjoint tasks or datasets. Core requires Playwright/Chromium; individual benchmarks have their own setup, credentials, licenses and validation rules. Apache-2.0 covers repository code only. No browser tasks or third-party project code were executed.",
         "evidence_urls": [
@@ -2317,7 +2317,7 @@
           "screenshots"
         ],
         "actions": [],
-        "evaluation": "Level-specific evaluation; Efficiency\u2013Quality Area (EQA) combines navigation quality and efficiency.",
+        "evaluation": "Level-specific evaluation; Efficiency–Quality Area (EQA) combines navigation quality and efficiency.",
         "counts": [
           {
             "value": 8000,
@@ -2396,7 +2396,7 @@
             "evidence_url": "https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md"
           }
         ],
-        "notes": "Each annotation entry represents a page, not one UI element. README\u2019s illustrative num_samples=4796 output is not adopted as a corpus count. Public tree contains both annotation JSON files and an images.tar.gz Git-LFS pointer; payload availability/integrity was not tested by downloading images. LEGAL.md only governs comment-language precedence, not a code/data license grant; both slots remain unknown. No benchmark run was performed.",
+        "notes": "Each annotation entry represents a page, not one UI element. README’s illustrative num_samples=4796 output is not adopted as a corpus count. Public tree contains both annotation JSON files and an images.tar.gz Git-LFS pointer; payload availability/integrity was not tested by downloading images. LEGAL.md only governs comment-language precedence, not a code/data license grant; both slots remain unknown. No benchmark run was performed.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md",
           "https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/src/metrics.py",
@@ -2531,7 +2531,7 @@
           "PyAutoGUI",
           "UiPath Computer_13 action interface"
         ],
-        "evaluation": "Publisher distinguishes S_int (intermediate checkpoint score on L1\u2013L3) and S_final (final completion on L1\u2013L4). Documented step budgets are 15/25/40/20 for L1/L2/L3/L4. Preserve level, observation mode, agent interface and checkpoint/final metric when reporting a run.",
+        "evaluation": "Publisher distinguishes S_int (intermediate checkpoint score on L1–L3) and S_final (final completion on L1–L4). Documented step budgets are 15/25/40/20 for L1/L2/L3/L4. Preserve level, observation mode, agent interface and checkpoint/final metric when reporting a run.",
         "counts": [
           {
             "value": 181,
@@ -2804,9 +2804,9 @@
         "actions": [
           "pixel (x,y) cursor coordinate"
         ],
-        "evaluation": "The inspected evaluator scales target boxes from a 1000\u00d71000 reference grid into image pixels and tests pixel predictions, allowing \u00b110 pixels around the center along any target dimension narrower than 1 pixel after scaling. It reports cumulative hit accuracy by turn (earlier hits remain correct), miss distances, any-turn hit rate, and a correction rate whose denominator is all successfully processed samples. The default budget is five turns; retain prompt/feedback variant, turn budget, and processed/skipped coverage.",
+        "evaluation": "The inspected evaluator scales target boxes from a 1000×1000 reference grid into image pixels and tests pixel predictions, allowing ±10 pixels around the center along any target dimension narrower than 1 pixel after scaling. It reports cumulative hit accuracy by turn (earlier hits remain correct), miss distances, any-turn hit rate, and a correction rate whose denominator is all successfully processed samples. The default budget is five turns; retain prompt/feedback variant, turn budget, and processed/skipped coverage.",
         "counts": [],
-        "notes": "The release has four editor/theme JSONL partitions (Cursor/VS Code \u00d7 dark/light) and screenshot files. Partitions are not train/test splits or independent task totals. README\u2019s initial field table calls bbox pixel coordinates, but the evaluation-format section and actual ratio_h/ratio_w=dimension/1000 code use normalized target boxes; profile follows the inspected evaluator and retains the inconsistency. Source/images were not executed or downloaded as a dataset. MIT is recorded for repository code only.",
+        "notes": "The release has four editor/theme JSONL partitions (Cursor/VS Code × dark/light) and screenshot files. Partitions are not train/test splits or independent task totals. README’s initial field table calls bbox pixel coordinates, but the evaluation-format section and actual ratio_h/ratio_w=dimension/1000 code use normalized target boxes; profile follows the inspected evaluator and retains the inconsistency. Source/images were not executed or downloaded as a dataset. MIT is recorded for repository code only.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/microsoft/precision-cua-bench/HEAD/README.md",
           "https://raw.githubusercontent.com/microsoft/precision-cua-bench/HEAD/eval/test_allturns_api.py",
@@ -3563,7 +3563,7 @@
             "evidence_url": "https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md"
           }
         ],
-        "notes": "The repository gives conflicting episode totals (8,334 and 8,834). This profile uses 8,334 from the specifically recommended current dataset card. No independent archive recount was performed. Coordinates are normalized to 0\u20131000.",
+        "notes": "The repository gives conflicting episode totals (8,334 and 8,834). This profile uses 8,334 from the specifically recommended current dataset card. No independent archive recount was performed. Coordinates are normalized to 0–1000.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/OpenGVLab/GUI-Odyssey/HEAD/README.md",
           "https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md",
@@ -5821,7 +5821,7 @@
             "evidence_url": "https://huggingface.co/datasets/OS-Copilot/OS-Atlas-data/raw/main/README.md"
           }
         ],
-        "notes": "These are subset-specific counts, not a total for the full OS-Atlas release. Raw boxes use 0\u20131 coordinates; the documented training wrapper scales them to 0\u20131000.",
+        "notes": "These are subset-specific counts, not a total for the full OS-Atlas release. Raw boxes use 0–1 coordinates; the documented training wrapper scales them to 0–1000.",
         "evidence_urls": [
           "https://huggingface.co/datasets/OS-Copilot/OS-Atlas-data/raw/main/README.md"
         ]
@@ -5962,7 +5962,7 @@
         "counts": [
           {
             "value": 600000,
-            "unit": "screenshot\u2013view-hierarchy pairs",
+            "unit": "screenshot–view-hierarchy pairs",
             "population": "publisher-reported MobileViews-600K first release",
             "qualifier": "more-than",
             "basis": "reported",
@@ -5977,7 +5977,7 @@
             "evidence_url": "https://huggingface.co/datasets/mllmTeam/MobileViews/raw/c734715eb90a8f3ac0c80973f93ee63950e5a8c8/README.md"
           }
         ],
-        "notes": "Counts describe the card\u2019s first-release claim, not an independently counted archive inventory. The card distinguishes globally image-hash-deduplicated screenshot/VH pairs from the November 2024 complete-app traces; trace state counts must not be added as new unique screens. JPEG/JSON and Parquet are alternative representations. Listed filename ranges are examples, not a complete count proof. No train/validation/test split is documented. Hub revision c734715e is ungated; MIT is its data declaration, without resolving third-party app content rights.",
+        "notes": "Counts describe the card’s first-release claim, not an independently counted archive inventory. The card distinguishes globally image-hash-deduplicated screenshot/VH pairs from the November 2024 complete-app traces; trace state counts must not be added as new unique screens. JPEG/JSON and Parquet are alternative representations. Listed filename ranges are examples, not a complete count proof. No train/validation/test split is documented. Hub revision c734715e is ungated; MIT is its data declaration, without resolving third-party app content rights.",
         "evidence_urls": [
           "https://huggingface.co/datasets/mllmTeam/MobileViews/raw/c734715eb90a8f3ac0c80973f93ee63950e5a8c8/README.md",
           "https://huggingface.co/api/datasets/mllmTeam/MobileViews"
@@ -6582,7 +6582,7 @@
         "counts": [
           {
             "value": 1272,
-            "unit": "instruction\u2013target examples",
+            "unit": "instruction–target examples",
             "population": "Hub test split at 0be08781; not unique screenshots",
             "qualifier": "exact",
             "basis": "reported",
@@ -15746,7 +15746,7 @@
     "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced."
   },
   {
-    "name": "ShowUI-$\u03c0$: Flow-based Generative Models as GUI Dexterous Hands",
+    "name": "ShowUI-$π$: Flow-based Generative Models as GUI Dexterous Hands",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2512.24965",
     "environments": [
@@ -15759,7 +15759,7 @@
     ],
     "summary": "Models discrete clicks and continuous drags with flow-based action generation, and introduces drag trajectories and the ScreenDrag benchmark.",
     "verify_terms": [
-      "ShowUI-$\u03c0$: Flow-based G"
+      "ShowUI-$π$: Flow-based G"
     ],
     "evidence_urls": [
       "https://export.arxiv.org/api/query?id_list=2510.01670%2C2510.04673%2C2510.10073%2C2510.12200%2C2510.14621%2C2510.16051%2C2510.17790%2C2510.18488%2C2510.18596%2C2510.19488%2C2510.19949%2C2510.20286%2C2510.22009%2C2510.24168%2C2510.24411%2C2510.24563%2C2511.00810%2C2511.04307%2C2511.07332%2C2511.09157%2C2511.12254%2C2511.13087%2C2511.15567%2C2511.16590%2C2511.19663%2C2511.20597%2C2511.20766%2C2512.08529%2C2512.10371%2C2512.10962%2C2512.12634%2C2512.14014%2C2512.15431%2C2512.16295%2C2512.16501%2C2512.19432%2C2512.22894%2C2512.24965%2C2601.02399%2C2601.06031%2C2601.07181%2C2601.07262%2C2601.07779%2C2601.08406%2C2601.09923%2C2601.11044%2C2601.11868%2C2601.12822%2C2601.13060%2C2601.15876&max_results=50"
@@ -16080,7 +16080,7 @@
   },
   {
     "url": "https://github.com/showlab/showui-pi",
-    "name": "ShowUI-\u03c0",
+    "name": "ShowUI-π",
     "kind": "model",
     "environments": [
       "desktop"
@@ -17063,7 +17063,7 @@
   },
   {
     "url": "https://huggingface.co/datasets/hflqf88888/GUIOdyssey",
-    "name": "GUIOdyssey \u2014 current data release",
+    "name": "GUIOdyssey — current data release",
     "kind": "dataset",
     "environments": [
       "android"
@@ -17116,7 +17116,7 @@
             "evidence_url": "https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md"
           }
         ],
-        "notes": "The repository gives conflicting episode totals (8,334 and 8,834). This profile uses 8,334 from the specifically recommended current dataset card. No independent archive recount was performed. Coordinates are normalized to 0\u20131000.",
+        "notes": "The repository gives conflicting episode totals (8,334 and 8,834). This profile uses 8,334 from the specifically recommended current dataset card. No independent archive recount was performed. Coordinates are normalized to 0–1000.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/OpenGVLab/GUI-Odyssey/HEAD/README.md",
           "https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md",
@@ -21307,7 +21307,7 @@
     "name": "ConClick: Element-Wise Contrastive Learning Improves GUI Grounding",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.13268",
-    "summary": "Analyzes recurring distractor clicks in GUI grounding and introduces ConClick, a contrastive training method built from target\u2013distractor pairs. Its ReClick inference procedure revisits candidate regions and compares competing predictions.",
+    "summary": "Analyzes recurring distractor clicks in GUI grounding and introduces ConClick, a contrastive training method built from target–distractor pairs. Its ReClick inference procedure revisits candidate regions and compares competing predictions.",
     "environments": [
       "unspecified"
     ],
@@ -21807,7 +21807,7 @@
     "name": "Securing Computer-Use Agents Against Branch Steering Attacks",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.03089",
-    "summary": "Introduces STEER-Bench to study branch-steering attacks that manipulate untrusted web data toward hazardous paths already permitted by an agent\u2019s plan. Its COBRA architecture combines trusted branching plans with advance constraints on the parameters and destinations each branch can use.",
+    "summary": "Introduces STEER-Bench to study branch-steering attacks that manipulate untrusted web data toward hazardous paths already permitted by an agent’s plan. Its COBRA architecture combines trusted branching plans with advance constraints on the parameters and destinations each branch can use.",
     "environments": [
       "web"
     ],
@@ -22135,7 +22135,7 @@
     "name": "Absorbed in Inertia: Activation Analysis for Computer-Use Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.37176",
-    "summary": "Studies repetitive, unproductive actions in desktop agents through their internal activation states. It proposes Reset, Reroute, Restore, a context intervention that temporarily resets an agent\u2019s trajectory and later restores it to help escape repeated ineffective behavior.",
+    "summary": "Studies repetitive, unproductive actions in desktop agents through their internal activation states. It proposes Reset, Reroute, Restore, a context intervention that temporarily resets an agent’s trajectory and later restores it to help escape repeated ineffective behavior.",
     "environments": [
       "desktop"
     ],
@@ -22211,7 +22211,7 @@
     "name": "One Rollout Is All You Get: Fully Test-Time Adaptation for GUI Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.34321",
-    "summary": "Defines a test-time adaptation setting with one counted attempt per arriving GUI task and no ground-truth feedback. Its SOLO method filters or relabels completed episodes, then updates a small adapter from a short window of the agent\u2019s own experience.",
+    "summary": "Defines a test-time adaptation setting with one counted attempt per arriving GUI task and no ground-truth feedback. Its SOLO method filters or relabels completed episodes, then updates a small adapter from a short window of the agent’s own experience.",
     "environments": [
       "web"
     ],
@@ -22352,7 +22352,7 @@
       "evaluation",
       "training-free"
     ],
-    "summary": "Grounding and evaluation code that aggregates a pretrained vision-language model\u2019s attention maps to localize requested interface elements without fine-tuning.",
+    "summary": "Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning.",
     "verify_terms": [
       "TAG"
     ],
@@ -22620,7 +22620,7 @@
     "verify_terms": [
       "DroidCall"
     ],
-    "notes": "The release provides JSONL data and API annotations. This is Android intent-calling supervision rather than screenshot-and-click trajectories, so it is marked adjacent. The dataset card declares Apache-2.0; the companion repository\u2019s MIT code license is a separate declaration.",
+    "notes": "The release provides JSONL data and API annotations. This is Android intent-calling supervision rather than screenshot-and-click trajectories, so it is marked adjacent. The dataset card declares Apache-2.0; the companion repository’s MIT code license is a separate declaration.",
     "evidence_urls": [
       "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/main/README.md"
     ],
@@ -23221,7 +23221,7 @@
     "verify_terms": [
       "WebRL-Llama-3.1-8B"
     ],
-    "notes": "The official Hub API resolves the former THUDM namespace to zai-org. Seven safetensors shards and configuration/tokenizer files are public and ungated. The card marks the weight license as other without naming complete terms, so no permissive weight license is inferred. The card\u2019s evaluation prose also names GLM-4 despite the Llama checkpoint identity; no score is imported.",
+    "notes": "The official Hub API resolves the former THUDM namespace to zai-org. Seven safetensors shards and configuration/tokenizer files are public and ungated. The card marks the weight license as other without naming complete terms, so no permissive weight license is inferred. The card’s evaluation prose also names GLM-4 despite the Llama checkpoint identity; no score is imported.",
     "evidence_urls": [
       "https://huggingface.co/zai-org/webrl-llama-3.1-8b/raw/main/README.md"
     ],
@@ -23495,7 +23495,7 @@
     "verify_terms": [
       "AGUVIS collection stage 1"
     ],
-    "notes": "The manifest contains grounding JSON annotations and packaged images. The card declares Apache-2.0, which is recorded for this release without overriding source-dataset rights. This first-stage grounding collection is distinct from the project\u2019s second-stage trajectory collection. No archive or training sample was downloaded.",
+    "notes": "The manifest contains grounding JSON annotations and packaged images. The card declares Apache-2.0, which is recorded for this release without overriding source-dataset rights. This first-stage grounding collection is distinct from the project’s second-stage trajectory collection. No archive or training sample was downloaded.",
     "evidence_urls": [
       "https://huggingface.co/datasets/xlangai/aguvis-stage1/raw/main/README.md"
     ],
@@ -23770,7 +23770,7 @@
     "verify_terms": [
       "UI-R1"
     ],
-    "notes": "The public manifest includes train.json and a train_imgs directory. The card has no dataset-license declaration, and the model\u2019s MIT metadata is not inherited. The official repository identifies this as v1 training data drawn from AndroidControl and ScreenSpot; later enlarged training mixtures are distinct.",
+    "notes": "The public manifest includes train.json and a train_imgs directory. The card has no dataset-license declaration, and the model’s MIT metadata is not inherited. The official repository identifies this as v1 training data drawn from AndroidControl and ScreenSpot; later enlarged training mixtures are distinct.",
     "evidence_urls": [
       "https://huggingface.co/datasets/LZXzju/UI-R1-3B-Train/raw/main/README.md"
     ],
@@ -25157,7 +25157,7 @@
     "name": "UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2509.11543",
-    "summary": "UI-S1 simulates multi-turn online learning over offline trajectories, using a patch module to recover divergences while retaining the model\u2019s own outputs in context. It combines discounted future returns with step- and episode-level advantages and introduces a semi-online performance proxy.",
+    "summary": "UI-S1 simulates multi-turn online learning over offline trajectories, using a patch module to recover divergences while retaining the model’s own outputs in context. It combines discounted future returns with step- and episode-level advantages and introduces a semi-online performance proxy.",
     "environments": [
       "android"
     ],
@@ -25620,7 +25620,7 @@
     "name": "REBASE: Device-Cloud Experience Coherence for GUI Agents Across App Updates",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.32130",
-    "summary": "Introduces REBASE, a device\u2013cloud protocol for repairing cached GUI experience after app updates. It combines cloud replay, device-side step verification, and progressively richer failure reports to produce repairs tied to application versions.",
+    "summary": "Introduces REBASE, a device–cloud protocol for repairing cached GUI experience after app updates. It combines cloud replay, device-side step verification, and progressively richer failure reports to produce repairs tied to application versions.",
     "environments": [
       "unspecified"
     ],
@@ -25746,7 +25746,7 @@
     "name": "CUA-Sandbox: Efficient Environments for Computer-Use Agent Reinforcement Learning",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.32750",
-    "summary": "Introduces CUA-Sandbox, which separates each rollout\u2019s mutable state from shared initialized software runtimes. State-scoped execution and transactional resets or branches aim to reduce training-environment costs while retaining original interfaces and evaluators.",
+    "summary": "Introduces CUA-Sandbox, which separates each rollout’s mutable state from shared initialized software runtimes. State-scoped execution and transactional resets or branches aim to reduce training-environment costs while retaining original interfaces and evaluators.",
     "environments": [
       "web",
       "desktop"
@@ -25797,7 +25797,7 @@
     "name": "CaptchaArena: A Large-Scale, Fine-Grained Dataset for Training Computer-Use Agents on Interactive CAPTCHAs",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.31957",
-    "summary": "Introduces CaptchaArena, a dataset of execution-verified interactive CAPTCHA solutions with screenshot\u2013action trajectories, reasoning annotations, and pixel masks for irregular targets. The work trains a single policy across CAPTCHA types using supervised learning followed by verifier-reward reinforcement learning.",
+    "summary": "Introduces CaptchaArena, a dataset of execution-verified interactive CAPTCHA solutions with screenshot–action trajectories, reasoning annotations, and pixel masks for irregular targets. The work trains a single policy across CAPTCHA types using supervised learning followed by verifier-reward reinforcement learning.",
     "environments": [
       "unspecified"
     ],
@@ -26098,7 +26098,7 @@
     "name": "Reflection with Action-Induced Visual Differences for Desktop GUI Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2608.24015",
-    "summary": "Introduces Evidence-First Reflection, which separates extraction of action-induced screen changes from judgment of whether an operation achieved its objective. It filters visual differences into relevant evidence before a desktop agent\u2019s reflector decides how execution should continue.",
+    "summary": "Introduces Evidence-First Reflection, which separates extraction of action-induced screen changes from judgment of whether an operation achieved its objective. It filters visual differences into relevant evidence before a desktop agent’s reflector decides how execution should continue.",
     "environments": [
       "desktop",
       "windows"
@@ -26553,7 +26553,7 @@
     "name": "Falsifiable Commitment Planning for Self-Correcting Web Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2607.24167",
-    "summary": "Introduces FCPAgent, which attaches confirming and falsifying evidence to each skill-grounded plan step. A plan\u2013test\u2013repair loop checks actions and observations, then localizes contradictions so execution, skills, or plans can be revised at the appropriate level.",
+    "summary": "Introduces FCPAgent, which attaches confirming and falsifying evidence to each skill-grounded plan step. A plan–test–repair loop checks actions and observations, then localizes contradictions so execution, skills, or plans can be revised at the appropriate level.",
     "environments": [
       "web"
     ],
@@ -26890,7 +26890,7 @@
           "training"
         ],
         "counts": [],
-        "notes": "Public Hub revision 5a0b35fb includes six bbox JSON files and associated image archives. The training configuration names six input paths with sampling_strategy=all; those input paths are not six disjoint datasets or a verified example count. The card\u2019s source-list wording and mismatched hyperlinks remain unresolved, so its approximately 1M screenshots/10M elements headline is not adopted as a release inventory. No data license is established by the card, and the model repository license is not transferred to these data.",
+        "notes": "Public Hub revision 5a0b35fb includes six bbox JSON files and associated image archives. The training configuration names six input paths with sampling_strategy=all; those input paths are not six disjoint datasets or a verified example count. The card’s source-list wording and mismatched hyperlinks remain unresolved, so its approximately 1M screenshots/10M elements headline is not adopted as a release inventory. No data license is established by the card, and the model repository license is not transferred to these data.",
         "evidence_urls": [
           "https://huggingface.co/datasets/cckevinn/GUI-Actor-Data/raw/main/README.md",
           "https://huggingface.co/api/datasets/cckevinn/GUI-Actor-Data",
@@ -27199,7 +27199,7 @@
           "success verdict",
           "process score"
         ],
-        "evaluation": "Agreement metrics including Cohen\u2019s kappa, accuracy and F1 against human annotations; review stages must be kept distinct.",
+        "evaluation": "Agreement metrics including Cohen’s kappa, accuracy and F1 against human annotations; review stages must be kept distinct.",
         "notes": "Trajectory rows and reviewer rows have different grains. Internal task labels do not make the released Parquet files private. No payload data was downloaded.",
         "evidence_urls": [
           "https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md"
@@ -27374,7 +27374,7 @@
     "verify_terms": [
       "UI-AGILE-Data"
     ],
-    "notes": "Public JSON, image archives and Parquet evaluation files are present. The card has no data-license declaration; the model\u2019s MIT declaration is not inherited. The publisher describes fixes to AndroidControl action parameters, but those corrections were not independently reproduced or applied to upstream resources.",
+    "notes": "Public JSON, image archives and Parquet evaluation files are present. The card has no data-license declaration; the model’s MIT declaration is not inherited. The publisher describes fixes to AndroidControl action parameters, but those corrections were not independently reproduced or applied to upstream resources.",
     "evidence_urls": [
       "https://huggingface.co/datasets/KDEGroup/UI-AGILE-Data/raw/main/README.md"
     ],
@@ -28011,7 +28011,7 @@
     "verify_terms": [
       "Web-Shepherd"
     ],
-    "notes": "The tree contains src/webprm modules and a WebRewardBench evaluation script. The README\u2019s illustrative folder layout differs from the actual tree, so a complete training pipeline is not claimed. No root code license is declared. Some old checkpoint links are unavailable; current model releases are separately identified through the official Hub collection.",
+    "notes": "The tree contains src/webprm modules and a WebRewardBench evaluation script. The README’s illustrative folder layout differs from the actual tree, so a complete training pipeline is not claimed. No root code license is declared. Some old checkpoint links are unavailable; current model releases are separately identified through the official Hub collection.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md"
     ],
@@ -28101,7 +28101,7 @@
     ]
   },
   {
-    "name": "ShowUI-\u03c0 checkpoint",
+    "name": "ShowUI-π checkpoint",
     "kind": "model",
     "url": "https://huggingface.co/showlab/ShowUI-pi",
     "environments": [
@@ -28214,7 +28214,7 @@
     "verify_terms": [
       "ScaleCUA-7B"
     ],
-    "notes": "Four public safetensors shards and model/tokenizer configuration are present. The card declares Apache-2.0. The model card\u2019s Paper link points to the code repository, so the arXiv association uses the repository\u2019s explicit citation rather than treating that link as a paper URL.",
+    "notes": "Four public safetensors shards and model/tokenizer configuration are present. The card declares Apache-2.0. The model card’s Paper link points to the code repository, so the arXiv association uses the repository’s explicit citation rather than treating that link as a paper URL.",
     "evidence_urls": [
       "https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md"
     ],
@@ -28347,7 +28347,7 @@
     "verify_terms": [
       "Go-Browse"
     ],
-    "notes": "Seven public safetensors shards and model/tokenizer files are present. The card links the official code and paper but declares no weight license. The code repository\u2019s MIT license is not inherited by this checkpoint, and the separate NNetNav-trained comparison model is not treated as an alias.",
+    "notes": "Seven public safetensors shards and model/tokenizer files are present. The card links the official code and paper but declares no weight license. The code repository’s MIT license is not inherited by this checkpoint, and the separate NNetNav-trained comparison model is not treated as an alias.",
     "evidence_urls": [
       "https://huggingface.co/apurvaga/go-browse-wa-qwen-7B/raw/main/README.md"
     ],
@@ -28498,7 +28498,7 @@
     "verify_terms": [
       "checklist_target_list"
     ],
-    "notes": "Ten public Parquet shards are present. The card names its split test and reports 9,460 rows; the project\u2019s 40K-plus preference-annotation claim is a different grain and is not substituted for this row count. A row can contain multiple rejected alternatives. No data-license declaration is present.",
+    "notes": "Ten public Parquet shards are present. The card names its split test and reports 9,460 rows; the project’s 40K-plus preference-annotation claim is a different grain and is not substituted for this row count. A row can contain multiple rejected alternatives. No data-license declaration is present.",
     "evidence_urls": [
       "https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md"
     ],
@@ -28536,7 +28536,7 @@
         "splits": [
           "test"
         ],
-        "notes": "Preserves the publisher\u2019s split label despite the collection\u2019s training purpose. Rows are not individual preference pairs because rejected is a list. Data license is unknown.",
+        "notes": "Preserves the publisher’s split label despite the collection’s training purpose. Rows are not individual preference pairs because rejected is a list. Data license is unknown.",
         "evidence_urls": [
           "https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md",
           "https://raw.githubusercontent.com/kyle8581/Web-Shepherd/HEAD/README.md"
@@ -29384,7 +29384,7 @@
     "name": "WILBUR: Adaptive In-Context Learning for Robust and Accurate Web Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2404.05902",
-    "summary": "WILBUR learns to rank prior task demonstrations for a web agent\u2019s prompt and synthesizes instructions from past runs. A generated task curriculum and a backtracking mechanism support adaptation and recovery, evaluated on WebVoyager.",
+    "summary": "WILBUR learns to rank prior task demonstrations for a web agent’s prompt and synthesizes instructions from past runs. A generated task curriculum and a backtracking mechanism support adaptation and recovery, evaluated on WebVoyager.",
     "environments": [
       "web"
     ],
@@ -29762,7 +29762,7 @@
     "name": "Identifying User Goals from UI Trajectories",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2406.14314",
-    "summary": "Defines goal identification from observed UI trajectories and an evaluation method for comparing intent descriptions within the same interface context. Experiments reuse Android and web automation data to compare human and model inference of users\u2019 detailed goals.",
+    "summary": "Defines goal identification from observed UI trajectories and an evaluation method for comparing intent descriptions within the same interface context. Experiments reuse Android and web automation data to compare human and model inference of users’ detailed goals.",
     "environments": [
       "android",
       "web",
@@ -30595,7 +30595,7 @@
     "name": "LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2512.04105",
-    "summary": "LegalWebAgent separates user-needs clarification, webpage browsing, and actions such as form completion or scheduling. A 15-task evaluation studies legal-service workflows relevant to Qu\u00e9bec civil-law users, using HTML and screenshot observations.",
+    "summary": "LegalWebAgent separates user-needs clarification, webpage browsing, and actions such as form completion or scheduling. A 15-task evaluation studies legal-service workflows relevant to Québec civil-law users, using HTML and screenshot observations.",
     "environments": [
       "web"
     ],
@@ -30918,7 +30918,7 @@
     "name": "Mind the Gap: Action Rebinding Attacks against Android GUI Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2601.12349",
-    "summary": "Studies action-rebinding attacks in which an Android GUI agent\u2019s planned input is redirected to a different application during the observation\u2013action delay. The evaluation examines cross-application execution and the consequences of treating an earlier screen as the current action target.",
+    "summary": "Studies action-rebinding attacks in which an Android GUI agent’s planned input is redirected to a different application during the observation–action delay. The evaluation examines cross-application execution and the consequences of treating an earlier screen as the current action target.",
     "environments": [
       "android"
     ],
@@ -31054,7 +31054,7 @@
     "name": "SwipeGen: Bridging the Execution Gap in GUI Agents via Human-like Swipe Synthesis",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2601.18305",
-    "summary": "Introduces SwipeGen for synthesizing varied swipe trajectories and SwipeBench for assessing their execution quality. The study examines how richer control of trajectory, speed, and timing changes GUI agents\u2019 interaction performance.",
+    "summary": "Introduces SwipeGen for synthesizing varied swipe trajectories and SwipeBench for assessing their execution quality. The study examines how richer control of trajectory, speed, and timing changes GUI agents’ interaction performance.",
     "environments": [
       "unspecified"
     ],
@@ -31088,7 +31088,7 @@
     "name": "GUIGuard-Bench: Toward a General Evaluation for Privacy-Preserving GUI Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2601.18842",
-    "summary": "Introduces GUIGuard-Bench, which annotates private regions in GUI trajectories with categories, risk levels, and relevance to the user\u2019s task. It evaluates privacy recognition and the effect of screenshot protection on offline planning and task utility.",
+    "summary": "Introduces GUIGuard-Bench, which annotates private regions in GUI trajectories with categories, risk levels, and relevance to the user’s task. It evaluates privacy recognition and the effect of screenshot protection on offline planning and task utility.",
     "environments": [
       "android",
       "desktop"
@@ -31225,7 +31225,7 @@
     "name": "SafeGround: Know When to Trust GUI Grounding Models via Uncertainty Calibration",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2602.02419",
-    "summary": "Introduces SafeGround, which estimates GUI-grounding uncertainty from the spatial dispersion of sampled predictions and calibrates a decision threshold before testing. It studies risk-aware selection on ScreenSpot-Pro, with statistical control scoped to the threshold\u2019s false-discovery rate.",
+    "summary": "Introduces SafeGround, which estimates GUI-grounding uncertainty from the spatial dispersion of sampled predictions and calibrates a decision threshold before testing. It studies risk-aware selection on ScreenSpot-Pro, with statistical control scoped to the threshold’s false-discovery rate.",
     "environments": [
       "unspecified"
     ],
@@ -31361,7 +31361,7 @@
     "name": "Anonymization-Enhanced Privacy Protection for Mobile GUI Agents: Available but Invisible",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2602.10139",
-    "summary": "An anonymization framework replaces sensitive screen content and instructions with consistent, type-preserving placeholders while mediating actions through a local interaction proxy. Experiments on AndroidLab and PrivScreen examine the privacy\u2013utility trade-off when mobile GUI agents operate over these transformed interfaces.",
+    "summary": "An anonymization framework replaces sensitive screen content and instructions with consistent, type-preserving placeholders while mediating actions through a local interaction proxy. Experiments on AndroidLab and PrivScreen examine the privacy–utility trade-off when mobile GUI agents operate over these transformed interfaces.",
     "environments": [
       "android"
     ],
@@ -31497,7 +31497,7 @@
     "name": "Persona2Web: Benchmarking Personalized Web Agents for Contextual Reasoning with User History",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2602.17003",
-    "summary": "Persona2Web tests whether web agents can resolve ambiguous requests using preferences implicit in a user\u2019s history. Its reasoning-aware evaluation compares agent architectures and history-access strategies on personalized tasks on the open web.",
+    "summary": "Persona2Web tests whether web agents can resolve ambiguous requests using preferences implicit in a user’s history. Its reasoning-aware evaluation compares agent architectures and history-access strategies on personalized tasks on the open web.",
     "environments": [
       "web"
     ],
@@ -31848,7 +31848,7 @@
     "name": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2603.22529",
-    "summary": "Ego2Web pairs first-person videos with online tasks that require agents to connect the user\u2019s physical context to web actions. It also evaluates an automatic task judge against human judgments and analyzes failures in video understanding and web execution.",
+    "summary": "Ego2Web pairs first-person videos with online tasks that require agents to connect the user’s physical context to web actions. It also evaluates an automatic task judge against human judgments and analyzes failures in video understanding and web execution.",
     "environments": [
       "web"
     ],
@@ -31919,7 +31919,7 @@
     "name": "GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2603.25864",
-    "summary": "GUIDE evaluates whether models can recognize a user\u2019s behavior, infer intent and decide when to offer help during open-ended software tasks. It uses narrated screen recordings of novice users and studies the effect of additional user context on these assistance decisions.",
+    "summary": "GUIDE evaluates whether models can recognize a user’s behavior, infer intent and decide when to offer help during open-ended software tasks. It uses narrated screen recordings of novice users and studies the effect of additional user context on these assistance decisions.",
     "environments": [
       "unspecified"
     ],
@@ -32243,7 +32243,7 @@
     "name": "Plover: Steering GUI Agents through Plan-Centric Interaction",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2607.15193",
-    "summary": "Plover exposes GUI-agent plans and replanning as persistent artifacts that users can inspect and edit during execution. Its planner\u2013executor design supports localized correction through plan edits, language guidance and screenshot-grounded interventions, studied through failure repair and workflow scenarios.",
+    "summary": "Plover exposes GUI-agent plans and replanning as persistent artifacts that users can inspect and edit during execution. Its planner–executor design supports localized correction through plan edits, language guidance and screenshot-grounded interventions, studied through failure repair and workflow scenarios.",
     "environments": [
       "unspecified"
     ],
@@ -32278,7 +32278,7 @@
     "name": "DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2606.31980",
-    "summary": "DigitalCoach records expert\u2013novice software coaching conversations aligned with screen and input events. Automated and interactive evaluations examine how model coaches differ from humans in explanation, error diagnosis and visual grounding when helping a learner operate software.",
+    "summary": "DigitalCoach records expert–novice software coaching conversations aligned with screen and input events. Automated and interactive evaluations examine how model coaches differ from humans in explanation, error diagnosis and visual grounding when helping a learner operate software.",
     "environments": [
       "unspecified"
     ],
@@ -33824,7 +33824,7 @@
     ]
   },
   {
-    "name": "ShowUI-\u03c0 training data",
+    "name": "ShowUI-π training data",
     "kind": "dataset",
     "url": "https://huggingface.co/datasets/showlab/ShowUI-pi-data",
     "environments": [
@@ -33835,11 +33835,11 @@
       "action-prediction",
       "imitation-learning"
     ],
-    "summary": "Drag-and-click episode data for the ShowUI-\u03c0 model, spanning desktop editing, presentation, handwriting and other interface tasks.",
+    "summary": "Drag-and-click episode data for the ShowUI-π model, spanning desktop editing, presentation, handwriting and other interface tasks.",
     "verify_terms": [
       "ShowUI-pi"
     ],
-    "notes": "Public Parquet chunks and LeRobot metadata are present. The card names a v3.0 revision in its usage example; this review verifies the main manifest and does not assert that tag\u2019s compatibility. No data license is declared. Hub size-category bands are not treated as episode counts.",
+    "notes": "Public Parquet chunks and LeRobot metadata are present. The card names a v3.0 revision in its usage example; this review verifies the main manifest and does not assert that tag’s compatibility. No data license is declared. Hub size-category bands are not treated as episode counts.",
     "evidence_urls": [
       "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md"
     ],
@@ -33884,7 +33884,7 @@
           "LeRobot metadata"
         ],
         "splits": [],
-        "notes": "No sample or episode count is inferred from the size tag or package manifest. Main-branch files were inspected; the card\u2019s v3.0 usage example was not executed.",
+        "notes": "No sample or episode count is inferred from the size tag or package manifest. Main-branch files were inspected; the card’s v3.0 usage example was not executed.",
         "evidence_urls": [
           "https://huggingface.co/datasets/showlab/ShowUI-pi-data/raw/main/README.md"
         ]
@@ -33917,7 +33917,7 @@
     "verify_terms": [
       "GUIEnv"
     ],
-    "notes": "Public JSON annotations and Parquet image packages are present. The project README declares CC-BY-4.0 for datasets, while this Hub card declares Apache-2.0; these conflicting declarations are retained without asserting a single confirmed data license. The project code\u2019s MIT declaration is separate. Only GUIEnv-local is marked released; the advertised 10M-example GUIEnv-global pretraining collection is still unchecked and is not counted here.",
+    "notes": "Public JSON annotations and Parquet image packages are present. The project README declares CC-BY-4.0 for datasets, while this Hub card declares Apache-2.0; these conflicting declarations are retained without asserting a single confirmed data license. The project code’s MIT declaration is separate. Only GUIEnv-local is marked released; the advertised 10M-example GUIEnv-global pretraining collection is still unchecked and is not counted here.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/yiye3/GUICourse/HEAD/README.md"
     ],
@@ -34029,7 +34029,7 @@
     "verify_terms": [
       "GUIAct"
     ],
-    "notes": "Public JSON annotations and Parquet image packages are present. The project README declares CC-BY-4.0 for datasets, while this Hub card declares Apache-2.0; these conflicting declarations are retained without asserting a single confirmed data license. The project code\u2019s MIT declaration is separate.",
+    "notes": "Public JSON annotations and Parquet image packages are present. The project README declares CC-BY-4.0 for datasets, while this Hub card declares Apache-2.0; these conflicting declarations are retained without asserting a single confirmed data license. The project code’s MIT declaration is separate.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/yiye3/GUICourse/HEAD/README.md"
     ],
@@ -34148,7 +34148,7 @@
     "verify_terms": [
       "GUIChat"
     ],
-    "notes": "Public JSON annotations and Parquet image packages are present. The project README declares CC-BY-4.0 for datasets, while this Hub card declares Apache-2.0; these conflicting declarations are retained without asserting a single confirmed data license. The project code\u2019s MIT declaration is separate.",
+    "notes": "Public JSON annotations and Parquet image packages are present. The project README declares CC-BY-4.0 for datasets, while this Hub card declares Apache-2.0; these conflicting declarations are retained without asserting a single confirmed data license. The project code’s MIT declaration is separate.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/yiye3/GUICourse/HEAD/README.md"
     ],
@@ -34710,7 +34710,7 @@
     "verify_terms": [
       "OmniParser"
     ],
-    "notes": "The manifest contains icon_detect/model.pt, icon_detect_v3/model.pt and icon_caption/model.safetensors. Licenses differ by folder: original YOLOv8 detector AGPL-3.0; YOLOv9-E detector and Florence-2 captioner MIT. The card\u2019s top-level MIT metadata must not cover the entire bundle. Components remain one resource; no binaries were executed.",
+    "notes": "The manifest contains icon_detect/model.pt, icon_detect_v3/model.pt and icon_caption/model.safetensors. Licenses differ by folder: original YOLOv8 detector AGPL-3.0; YOLOv9-E detector and Florence-2 captioner MIT. The card’s top-level MIT metadata must not cover the entire bundle. Components remain one resource; no binaries were executed.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md"
     ],
@@ -34823,7 +34823,7 @@
     "verify_terms": [
       "agentsea/wave-ui"
     ],
-    "notes": "Train, validation and test Parquet files are publicly listed. The compilation license explicitly preserves each image\u2019s original source terms and grants no extra rights to those images. The card exposes a platform column without listing its values, so operating-system coverage remains unspecified.",
+    "notes": "Train, validation and test Parquet files are publicly listed. The compilation license explicitly preserves each image’s original source terms and grants no extra rights to those images. The card exposes a platform column without listing its values, so operating-system coverage remains unspecified.",
     "evidence_urls": [
       "https://huggingface.co/api/datasets/agentsea/wave-ui"
     ],
@@ -35063,7 +35063,7 @@
       "mobile-navigation",
       "reward-models"
     ],
-    "summary": "Mobile GUI reward annotations released for training UI-Genie\u2019s trajectory-assessment model.",
+    "summary": "Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model.",
     "verify_terms": [
       "UI-Genie"
     ],
@@ -35511,7 +35511,7 @@
     "verify_terms": [
       "ScienceBoard"
     ],
-    "notes": "The public Hub manifest contains VM.zip. This is an environment image, not neural model weights despite its Hub namespace. The card declares MIT metadata for the hosted release, but that does not relicense Ubuntu or included applications. The archive was not downloaded or booted; VMware\u2019s own terms are separate.",
+    "notes": "The public Hub manifest contains VM.zip. This is an environment image, not neural model weights despite its Hub namespace. The card declares MIT metadata for the hosted release, but that does not relicense Ubuntu or included applications. The archive was not downloaded or booted; VMware’s own terms are separate.",
     "evidence_urls": [
       "https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md"
     ],
@@ -37437,7 +37437,7 @@
     ]
   },
   {
-    "summary": "GEM detects instructions outside a GUI agent\u2019s capabilities by modeling distances in its input-embedding space with a Gaussian mixture. Experiments across mobile, computer and browser data also examine selective escalation to a cloud model when an input is detected as unfamiliar.",
+    "summary": "GEM detects instructions outside a GUI agent’s capabilities by modeling distances in its input-embedding space with a Gaussian mixture. Experiments across mobile, computer and browser data also examine selective escalation to a cloud model when an input is detected as unfamiliar.",
     "environments": [
       "desktop",
       "web",
@@ -38105,7 +38105,7 @@
     ]
   },
   {
-    "summary": "GUI-KV compresses vision-language agents\u2019 attention caches using visual-token saliency and redundancy between screenshot frames. The method requires no retraining and evaluates how cache budgets affect GUI action accuracy and computational cost.",
+    "summary": "GUI-KV compresses vision-language agents’ attention caches using visual-token saliency and redundancy between screenshot frames. The method requires no retraining and evaluates how cache budgets affect GUI action accuracy and computational cost.",
     "environments": [
       "unspecified"
     ],
@@ -40183,7 +40183,7 @@
         "sha256": "bfbb69f57aaed39e3a210fae832e1fd98ed62ba1c01217b792238fe57e1a0ad1"
       }
     ],
-    "notes": "The annotation was reviewed against retained primary publication sources. Experiments have not been independently reproduced. The original manuscript and MSR BibTeX print Sarah Chasins and Ras Bodik. The official conference profiles expand these to Sarah E. Chasins and Rastislav Bod\u00edk; the printed publication names are preserved."
+    "notes": "The annotation was reviewed against retained primary publication sources. Experiments have not been independently reproduced. The original manuscript and MSR BibTeX print Sarah Chasins and Ras Bodik. The official conference profiles expand these to Sarah E. Chasins and Rastislav Bodík; the printed publication names are preserved."
   },
   {
     "id": "url:392a602c660ffa91be46",
@@ -41024,7 +41024,7 @@
     "name": "WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2504.18575",
-    "summary": "Introduces WASP, an end-to-end benchmark for prompt-injection security in web agents. Its evaluation separates partial attack progress from completion of the attacker\u2019s full objective.",
+    "summary": "Introduces WASP, an end-to-end benchmark for prompt-injection security in web agents. Its evaluation separates partial attack progress from completion of the attacker’s full objective.",
     "environments": [
       "web"
     ],
@@ -41194,7 +41194,7 @@
     "name": "Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2505.05026",
-    "summary": "Introduces WiserUI-Bench, pairing real UI variants from industry A/B tests with observed behavioral winners and expert explanations. It evaluates models\u2019 ability to predict the more effective interface and explain its effect on user behavior.",
+    "summary": "Introduces WiserUI-Bench, pairing real UI variants from industry A/B tests with observed behavioral winners and expert explanations. It evaluates models’ ability to predict the more effective interface and explain its effect on user behavior.",
     "environments": [
       "unspecified"
     ],
@@ -42293,7 +42293,7 @@
     "name": "Auto-scaling Continuous Memory for GUI Agent",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2510.09038",
-    "summary": "Encodes GUI trajectories into compact continuous embeddings that can be retrieved directly into an agent\u2019s input. An automated environment-discovery and rollout pipeline expands this memory for long tasks and unfamiliar interfaces.",
+    "summary": "Encodes GUI trajectories into compact continuous embeddings that can be retrieved directly into an agent’s input. An automated environment-discovery and rollout pipeline expands this memory for long tasks and unfamiliar interfaces.",
     "environments": [
       "unspecified"
     ],
@@ -42498,7 +42498,7 @@
     "name": "WebGym: Scaling Training Environments for Visual Web Agents with Realistic Tasks",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2601.02439",
-    "summary": "WebGym supplies realistic web tasks with rubric-based evaluation and an asynchronous rollout system for reinforcement learning. It studies how training on an agent\u2019s own interaction traces scales with task coverage and transfers to unseen websites.",
+    "summary": "WebGym supplies realistic web tasks with rubric-based evaluation and an asynchronous rollout system for reinforcement learning. It studies how training on an agent’s own interaction traces scales with task coverage and transfers to unseen websites.",
     "environments": [
       "web"
     ],
@@ -43305,7 +43305,7 @@
     "name": "Learning with Challenges: Adaptive Difficulty-Aware Data Generation for Mobile GUI Agent Training",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2601.22781",
-    "summary": "MobileGen estimates a mobile agent\u2019s strengths across structural and semantic task difficulty, then samples new training targets around that profile. A controllable multi-agent generator creates the corresponding instructions and GUI trajectories.",
+    "summary": "MobileGen estimates a mobile agent’s strengths across structural and semantic task difficulty, then samples new training targets around that profile. A controllable multi-agent generator creates the corresponding instructions and GUI trajectories.",
     "environments": [
       "unspecified"
     ],
@@ -43596,7 +43596,7 @@
     "name": "M$^2$-Miner: Multi-Agent Enhanced MCTS for Mobile GUI Agent Data Mining",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2602.05429",
-    "summary": "M2-Miner uses multi-agent-guided Monte Carlo tree search to collect mobile GUI intent\u2013trajectory pairs. Intent recycling and progressive collector training aim to increase the diversity and usefulness of the mined interaction data.",
+    "summary": "M2-Miner uses multi-agent-guided Monte Carlo tree search to collect mobile GUI intent–trajectory pairs. Intent recycling and progressive collector training aim to increase the diversity and usefulness of the mined interaction data.",
     "environments": [
       "unspecified"
     ],
@@ -43971,7 +43971,7 @@
     "name": "Agentic Test-Time Scaling for WebAgents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2602.12276",
-    "summary": "CATTS allocates additional inference computation when an agent\u2019s action votes show uncertainty. The paper compares voting and arbiter strategies and evaluates this selective scaling on WebArena-Lite, Online-Mind2Web and GoBrowse.",
+    "summary": "CATTS allocates additional inference computation when an agent’s action votes show uncertainty. The paper compares voting and arbiter strategies and evaluates this selective scaling on WebArena-Lite, Online-Mind2Web and GoBrowse.",
     "environments": [
       "web"
     ],
@@ -44040,7 +44040,7 @@
     "name": "Building Autonomous GUI Navigation via Agentic-Q Estimation and Step-Wise Policy Optimization",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2602.13653",
-    "summary": "This framework learns an agentic-Q model to estimate individual actions\u2019 contributions to GUI task completion. It then optimizes a policy with step-level samples from its own trajectories, decoupling policy updates from environment interaction.",
+    "summary": "This framework learns an agentic-Q model to estimate individual actions’ contributions to GUI task completion. It then optimizes a policy with step-level samples from its own trajectories, decoupling policy updates from environment interaction.",
     "environments": [
       "unspecified"
     ],
@@ -45490,9 +45490,9 @@
           "declared": "CC-BY-NC-4.0",
           "url": "https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/LICENSE-DATA",
           "retrieved_at": "2026-10-17T11:22:59Z",
-          "basis": "Limited to maintainers\u2019 dataset compilation/curation and authored synthetic content; third-party user content remains subject to platform terms and its authors\u2019 rights."
+          "basis": "Limited to maintainers’ dataset compilation/curation and authored synthetic content; third-party user content remains subject to platform terms and its authors’ rights."
         },
-        "reason": "Limited to maintainers\u2019 dataset compilation/curation and authored synthetic content; third-party user content remains subject to platform terms and its authors\u2019 rights.",
+        "reason": "Limited to maintainers’ dataset compilation/curation and authored synthetic content; third-party user content remains subject to platform terms and its authors’ rights.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/LICENSE-DATA"
         ]
@@ -45714,7 +45714,7 @@
     "verify_terms": [
       "GUI-CIDER"
     ],
-    "notes": "The official project explicitly links this corpus, and the ungated Hub API lists GUI-CIDER.jsonl. The repository has no README card at the Hub (404); purpose and Android context are therefore supported by the project README and dataset guide, while the API supports only identity/file availability. No sample count, split inventory, or data license was established. The project README\u2019s MIT badge is not transferred to this data artifact.",
+    "notes": "The official project explicitly links this corpus, and the ungated Hub API lists GUI-CIDER.jsonl. The repository has no README card at the Hub (404); purpose and Android context are therefore supported by the project README and dataset guide, while the API supports only identity/file availability. No sample count, split inventory, or data license was established. The project README’s MIT badge is not transferred to this data artifact.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md"
     ],
@@ -48406,7 +48406,7 @@
     "name": "The Compliance Trap: Diagnosing How AI Agents Consume Conflicting Memory",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2607.10608",
-    "summary": "The Entry\u2013Propagation\u2013Recovery framework traces where conflicting memory first changes an agent action, how the effect propagates and whether recovery occurs. WebArena and the controlled MemTrapBench separate memory-consumption failures across these stages.",
+    "summary": "The Entry–Propagation–Recovery framework traces where conflicting memory first changes an agent action, how the effect propagates and whether recovery occurs. WebArena and the controlled MemTrapBench separate memory-consumption failures across these stages.",
     "environments": [
       "web"
     ],
@@ -49650,7 +49650,7 @@
     "reviewed_licenses": {
       "code": {
         "value": null,
-        "reason": "No project-level source-license declaration in the inspected tree; upstream dependency licenses do not establish this project\u2019s grant.",
+        "reason": "No project-level source-license declaration in the inspected tree; upstream dependency licenses do not establish this project’s grant.",
         "evidence_urls": [
           "https://api.github.com/repos/TongUI-agent/TongUI-agent/git/trees/main?recursive=1"
         ]
@@ -49990,7 +49990,7 @@
     "verify_terms": [
       "UI understanding datasets"
     ],
-    "notes": "The archived repository retains TFRecord train/dev/test files for AppSim and RefExp. These are annotation and UI-structure records with Rico image identifiers, not a republished complete screenshot collection or a UIBert checkpoint. The README\u2019s 72k figure describes the upstream Rico source, not the number of released AppSim/RefExp examples; no sample total is inferred. The publisher explicitly assigns CC-BY-4.0 to these datasets.",
+    "notes": "The archived repository retains TFRecord train/dev/test files for AppSim and RefExp. These are annotation and UI-structure records with Rico image identifiers, not a republished complete screenshot collection or a UIBert checkpoint. The README’s 72k figure describes the upstream Rico source, not the number of released AppSim/RefExp examples; no sample total is inferred. The publisher explicitly assigns CC-BY-4.0 to these datasets.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/google-research-datasets/uibert/HEAD/README.md"
     ],
@@ -52850,7 +52850,7 @@
     "name": "Temporal UI State Inconsistency in Desktop GUI Agents: Formalizing and Defending Against TOCTOU Attacks on Computer-Use Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2604.18860",
-    "summary": "This study examines UI changes between a desktop agent\u2019s screenshot observation and action dispatch. Its pre-execution state checks address overlay and focus manipulation, while the reported DOM-injection blind spot limits the defense\u2019s coverage.",
+    "summary": "This study examines UI changes between a desktop agent’s screenshot observation and action dispatch. Its pre-execution state checks address overlay and focus manipulation, while the reported DOM-injection blind spot limits the defense’s coverage.",
     "environments": [
       "desktop",
       "web"
@@ -52886,7 +52886,7 @@
     "name": "Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2608.03327",
-    "summary": "This study separates tool-adoption behavior from task competence in hybrid GUI\u2013MCP agents. It tests tool-use incentives and screenshot-history compression, showing why changed action preferences alone need not improve held-out accuracy.",
+    "summary": "This study separates tool-adoption behavior from task competence in hybrid GUI–MCP agents. It tests tool-use incentives and screenshot-history compression, showing why changed action preferences alone need not improve held-out accuracy.",
     "environments": [
       "desktop"
     ],
@@ -52922,7 +52922,7 @@
     "name": "Reinforcement Learning for Computer-Use Agents with Autonomous Evaluation",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2606.24515",
-    "summary": "The framework uses a vision-language judge\u2019s final-screen assessment as a terminal reward for GUI reinforcement learning. It models evaluator noise and corrects the reward estimator used by PPO across desktop benchmarks.",
+    "summary": "The framework uses a vision-language judge’s final-screen assessment as a terminal reward for GUI reinforcement learning. It models evaluator noise and corrects the reward estimator used by PPO across desktop benchmarks.",
     "environments": [
       "desktop",
       "macos",
@@ -52997,7 +52997,7 @@
     "name": "Adaptive Vision-Language Model Routing for Computer Use Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2603.12823",
-    "summary": "Adaptive VLM Routing estimates GUI-action difficulty and small-model confidence to select a model under a predicted reliability threshold. Grounding and agent-routing benchmarks assess the cost\u2013accuracy trade-off, with prior interaction context used for warm agents.",
+    "summary": "Adaptive VLM Routing estimates GUI-action difficulty and small-model confidence to select a model under a predicted reliability threshold. Grounding and agent-routing benchmarks assess the cost–accuracy trade-off, with prior interaction context used for warm agents.",
     "environments": [
       "unspecified"
     ],
@@ -53104,7 +53104,7 @@
     "name": "Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.17653",
-    "summary": "EvoSkill-GUI revises reusable skill files from execution feedback through an executor\u2013critic loop. It studies how training-free updates to localization, recovery and procedure information help subsequent mobile and desktop tasks.",
+    "summary": "EvoSkill-GUI revises reusable skill files from execution feedback through an executor–critic loop. It studies how training-free updates to localization, recovery and procedure information help subsequent mobile and desktop tasks.",
     "environments": [
       "android",
       "desktop"
@@ -53780,7 +53780,7 @@
     "name": "MacArena: Benchmarking Computer Use Agents on an Online macOS Environment",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2606.06560",
-    "summary": "MacArena runs computer-use tasks through Apple\u2019s virtualization framework on Apple Silicon, combining task ports with macOS-native workloads. It distinguishes the ported and native subsets when examining agent performance and cross-platform transfer.",
+    "summary": "MacArena runs computer-use tasks through Apple’s virtualization framework on Apple Silicon, combining task ports with macOS-native workloads. It distinguishes the ported and native subsets when examining agent performance and cross-platform transfer.",
     "environments": [
       "desktop",
       "macos"
@@ -54027,7 +54027,7 @@
     "name": "Weasel: Out-of-Domain Generalization for Web Agents via Importance-Diversity Data Selection",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2605.20291",
-    "summary": "Weasel selects web-agent training steps by balancing importance and diversity across states, sites and interaction patterns. It also prunes training accessibility trees around known action targets and regenerates rationales to match the model\u2019s reasoning style.",
+    "summary": "Weasel selects web-agent training steps by balancing importance and diversity across states, sites and interaction patterns. It also prunes training accessibility trees around known action targets and regenerates rationales to match the model’s reasoning style.",
     "environments": [
       "web"
     ],
@@ -54784,7 +54784,7 @@
     "name": "Improving Proficiency and Efficiency of Android GUI Agents via Self-Generating Tool Actions",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2609.06792",
-    "summary": "DroidTool generates application-state tools through proposal, implementation, testing and repair. Relational tests connect the tools\u2019 preconditions and effects, and the resulting tools are evaluated as additions to Android GUI agents.",
+    "summary": "DroidTool generates application-state tools through proposal, implementation, testing and repair. Relational tests connect the tools’ preconditions and effects, and the resulting tools are evaluated as additions to Android GUI agents.",
     "environments": [
       "android"
     ],
@@ -59933,7 +59933,7 @@
           "training"
         ],
         "counts": [],
-        "notes": "Public manifest exposes data.zip; the internal file schema and number of examples remain unverified. Supervision describes the publisher\u2019s refinement/thought-completion/trajectory-boost pipeline, not an independently sampled data-quality audit.",
+        "notes": "Public manifest exposes data.zip; the internal file schema and number of examples remain unverified. Supervision describes the publisher’s refinement/thought-completion/trajectory-boost pipeline, not an independently sampled data-quality audit.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md",
           "https://huggingface.co/api/datasets/henryhe0123/PC-Agent-E"
@@ -60290,7 +60290,7 @@
       "notes",
       "relations"
     ],
-    "notes": "Scoped to the WebEvolver directory; the repository also hosts WebCoT and VScan, which are not merged into this resource. Training and model services require separate setup. Root License.txt explicitly declares MIT for SelfEvolvingAgent and separately identifies CogKernel\u2019s Apache-2.0 dependency terms.",
+    "notes": "Scoped to the WebEvolver directory; the repository also hosts WebCoT and VScan, which are not merged into this resource. Training and model services require separate setup. Root License.txt explicitly declares MIT for SelfEvolvingAgent and separately identifies CogKernel’s Apache-2.0 dependency terms.",
     "details": {
       "repository_url": "https://github.com/Tencent/SelfEvolvingAgent",
       "repository_tree_sha": "a82450e1b5e15070bee79ee8b79f8d9a97cb85f7",
@@ -60394,7 +60394,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "The card and public manifest identify separate policy-model and world-model JSONL files. No row total or complete record schema is documented in the inspected card; the files were not downloaded as training samples. MIT is the publisher\u2019s data declaration.",
+    "notes": "The card and public manifest identify separate policy-model and world-model JSONL files. No row total or complete record schema is documented in the inspected card; the files were not downloaded as training samples. MIT is the publisher’s data declaration.",
     "details": {
       "hub_id": "CognitiveKernel/WebEvolver",
       "hub_revision": "13f4f45b359e138a45b1c89bd4e913298c586ca9",
@@ -60504,7 +60504,7 @@
       "relations",
       "licenses.weights"
     ],
-    "notes": "The Hub manifest lists four-part PyTorch and Safetensors files as alternative representations of one checkpoint, plus configuration/tokenizer files. The card\u2019s example rescales predicted locations through the resized image dimensions. No checkpoint was loaded and no benchmark score was reproduced. Apache-2.0 is the model-card weight declaration; the separate code repository has no project-level license in the inspected tree.",
+    "notes": "The Hub manifest lists four-part PyTorch and Safetensors files as alternative representations of one checkpoint, plus configuration/tokenizer files. The card’s example rescales predicted locations through the resized image dimensions. No checkpoint was loaded and no benchmark score was reproduced. Apache-2.0 is the model-card weight declaration; the separate code repository has no project-level license in the inspected tree.",
     "details": {
       "hub_id": "zonghanHZH/ZonUI-3B",
       "hub_revision": "07212ea7724a69400422571e0f6e053212e66fe6",
@@ -60807,7 +60807,7 @@
       "relations",
       "licenses.weights"
     ],
-    "notes": "Card identifies Code2World-8B and Qwen3-VL-8B-Instruct. Public files include four Safetensors shards, an index and rendering/prompt helper scripts. The GitHub adapter targets AndroidWorld; model-generated HTML rendering and model loading were not executed. MIT is recorded as the weight declaration, without transferring it to the separate GitHub repository\u2019s code or all training sources.",
+    "notes": "Card identifies Code2World-8B and Qwen3-VL-8B-Instruct. Public files include four Safetensors shards, an index and rendering/prompt helper scripts. The GitHub adapter targets AndroidWorld; model-generated HTML rendering and model loading were not executed. MIT is recorded as the weight declaration, without transferring it to the separate GitHub repository’s code or all training sources.",
     "details": {
       "hub_id": "GD-ML/Code2World",
       "hub_revision": "3e48194a8228570164ecd510f9d83ac839e9e931",
@@ -60876,7 +60876,7 @@
       "data-generation",
       "screen-understanding"
     ],
-    "summary": "HTML and annotation release used for Code2World\u2019s action-conditioned GUI-state prediction training, constructed from mobile GUI trajectories.",
+    "summary": "HTML and annotation release used for Code2World’s action-conditioned GUI-state prediction training, constructed from mobile GUI trajectories.",
     "scope": "core",
     "verify_terms": [
       "AndroidCode"
@@ -60928,7 +60928,7 @@
         "counts": [
           {
             "value": 80000,
-            "unit": "screen\u2013action pairs",
+            "unit": "screen–action pairs",
             "population": "AndroidCode corpus described by Code2World README; released JSON rows not recounted",
             "evidence_url": "https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md",
             "qualifier": "more-than",
@@ -61025,7 +61025,7 @@
       "relations",
       "details.benchmark_protocol"
     ],
-    "notes": "Public code includes app/task/configuration and agent-launching implementations. README distinguishes moving main from v1.0-paper and explicitly says even that tag is not a byte-exact snapshot of the published runs. CC-BY-NC-4.0 is the repository\u2019s declared code license; third-party WebShop, map and icon content retain separate terms. No commercial-use permission or fixed downloadable task total is inferred.",
+    "notes": "Public code includes app/task/configuration and agent-launching implementations. README distinguishes moving main from v1.0-paper and explicitly says even that tag is not a byte-exact snapshot of the published runs. CC-BY-NC-4.0 is the repository’s declared code license; third-party WebShop, map and icon content retain separate terms. No commercial-use permission or fixed downloadable task total is inferred.",
     "details": {
       "repository_url": "https://github.com/facebookresearch/OpenApps",
       "repository_tree_sha": "6e6782794433c60468d65ac75bc3f03c56007f8c",
@@ -61165,7 +61165,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "Public release includes train+dev and test ZIP packages plus a test-answer JSON file. The v1.0 card\u2019s exact split table differs from the older project-page headline of 0.44M questions/6.5K pages; counts are kept with their sources. This is static webpage understanding, not an interactive browser-agent trajectory dataset. CC-BY-4.0 is the data-card declaration.",
+    "notes": "Public release includes train+dev and test ZIP packages plus a test-answer JSON file. The v1.0 card’s exact split table differs from the older project-page headline of 0.44M questions/6.5K pages; counts are kept with their sources. This is static webpage understanding, not an interactive browser-agent trajectory dataset. CC-BY-4.0 is the data-card declaration.",
     "details": {
       "hub_id": "X-LANCE/WebSRC_v1.0",
       "hub_revision": "7aa0bc6efc7ef43f68c192e2091108541acbaf1a",
@@ -61197,7 +61197,7 @@
         "counts": [
           {
             "value": 307315,
-            "unit": "question\u2013answer examples",
+            "unit": "question–answer examples",
             "population": "WebSRC v1.0 train",
             "evidence_url": "https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0/raw/7aa0bc6efc7ef43f68c192e2091108541acbaf1a/README.md",
             "qualifier": "exact",
@@ -61213,7 +61213,7 @@
           },
           {
             "value": 52826,
-            "unit": "question\u2013answer examples",
+            "unit": "question–answer examples",
             "population": "WebSRC v1.0 dev",
             "evidence_url": "https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0/raw/7aa0bc6efc7ef43f68c192e2091108541acbaf1a/README.md",
             "qualifier": "exact",
@@ -61229,7 +61229,7 @@
           },
           {
             "value": 40357,
-            "unit": "question\u2013answer examples",
+            "unit": "question–answer examples",
             "population": "WebSRC v1.0 test",
             "evidence_url": "https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0/raw/7aa0bc6efc7ef43f68c192e2091108541acbaf1a/README.md",
             "qualifier": "exact",
@@ -61525,7 +61525,7 @@
       "long-horizon",
       "cross-app"
     ],
-    "summary": "Task definitions for Mobile-Agent-E\u2019s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings.",
+    "summary": "Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings.",
     "scope": "core",
     "verify_terms": [
       "Mobile-Eval-E"
@@ -61545,7 +61545,7 @@
       "relations",
       "details.benchmark_protocol"
     ],
-    "notes": "The public Hub manifest contains one test Parquet file. This resource is the benchmark\u2019s task-definition package, not a bundled phone environment or agent. Card metadata supplies rubrics/reference-operation fields but no data-license declaration or verified automated scorer; the code repository\u2019s MIT license is not transferred to these records.",
+    "notes": "The public Hub manifest contains one test Parquet file. This resource is the benchmark’s task-definition package, not a bundled phone environment or agent. Card metadata supplies rubrics/reference-operation fields but no data-license declaration or verified automated scorer; the code repository’s MIT license is not transferred to these records.",
     "details": {
       "hub_id": "mikewang/mobile_eval_e",
       "hub_revision": "b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83",
@@ -61876,7 +61876,7 @@
       "human-in-the-loop",
       "mobile-navigation"
     ],
-    "summary": "Research code for proactive human\u2013GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations.",
+    "summary": "Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations.",
     "verify_terms": [
       "VeriOS",
       "2509.07553"
@@ -62145,7 +62145,7 @@
       "survey",
       "robustness"
     ],
-    "summary": "Presents a conceptual perception\u2013reasoning\u2013action framework and 12 potential attack scenarios for language agents, including hypothetical web-navigation attacks.",
+    "summary": "Presents a conceptual perception–reasoning–action framework and 12 potential attack scenarios for language agents, including hypothetical web-navigation attacks.",
     "verify_terms": [
       "A Trembling House of Card"
     ],
@@ -62195,7 +62195,7 @@
     "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
     "reviewed_at": "2026-10-18T13:13:38Z",
     "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced.",
-    "review_note": "Reviewer hold: the retained abstract and full-text Sections 3.2\u20133.3 describe ToolEmu/GPT-4-emulated tool trajectories and final-action privacy evaluation. They do not establish direct GUI or browser interaction for this method. Preserve the bibliographic record as metadata-only pending an explicit adjacent-scope justification.",
+    "review_note": "Reviewer hold: the retained abstract and full-text Sections 3.2–3.3 describe ToolEmu/GPT-4-emulated tool trajectories and final-action privacy evaluation. They do not establish direct GUI or browser interaction for this method. Preserve the bibliographic record as metadata-only pending an explicit adjacent-scope justification.",
     "additional_evidence": [
       {
         "role": "primary",
@@ -62233,7 +62233,7 @@
     "reviewed_sha256": "00d275cd5407cec847fa9d43fe73cfc4384c5570b68a5e058c97921799be0bec",
     "reviewed_at": "2026-10-18T13:13:38Z",
     "notes": "The annotation and scope were reviewed against the primary paper abstract. Experimental results and released artifacts have not been independently reproduced.",
-    "review_note": "Reviewer hold: the retained abstract and full-text Sections 8\u20139 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense.",
+    "review_note": "Reviewer hold: the retained abstract and full-text Sections 8–9 evaluate typed tool-call policies on AgentDojo/ASB and MCP integrations. Section 9 explicitly excludes graphical-interface tool calls from the current method. Preserve the bibliographic record as metadata-only; do not describe this as a web/GUI defense.",
     "additional_evidence": [
       {
         "role": "primary",
@@ -63142,7 +63142,7 @@
         ]
       }
     },
-    "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1\u20133.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
+    "read_basis": "Reviewed the exact author-repository README, complete file tree and LICENSE, plus arXiv v2 abstract and Sections 3.1–3.2 identifying the repository and browser-based Onshape environment. No code execution or result reproduction."
   },
   {
     "name": "WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness",
@@ -63675,7 +63675,7 @@
       "https://arxiv.org/abs/2604.13531v1"
     ],
     "scope": "core",
-    "notes": "Tasks are split into RiskWebWorld-Standard (1,070) and RiskWebWorld-Challenge (443, without executable SOPs) and run on live websites with verification barriers such as CAPTCHAs, unexpected pop-ups and dynamic content shifts. The environment refactors the Browser Use framework into Gymnasium primitives on Ray actors that attach to cloud Chromium sessions through CDP and Playwright, with a 20-step cap. Gemini-3-Pro reaches 49.1% success, and RL with verl-agent raises Qwen3-VL-8B by 16.2 points. The paper names no code or data release. Results were not independently reproduced.",
+    "notes": "Tasks are split into RiskWebWorld-Standard (1,070) and RiskWebWorld-Challenge (443, without executable SOPs) and run on live websites with verification barriers such as CAPTCHAs, unexpected pop-ups and dynamic content shifts. The environment refactors the Browser Use framework into Gymnasium primitives on Ray actors that attach to cloud Chromium sessions through CDP and Playwright, with a 20-step cap. Gemini-3-Pro reaches 49.1% success, and RL with verl-agent raises Qwen3-VL-8B by 16.2 points. Appendix B says the code will be open-sourced and the data released through an access application, but gives no location. Results were not independently reproduced.",
     "additional_evidence": [
       {
         "role": "primary",

@@ -63844,5 +63844,44 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.06182",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "robustness"
+    ],
+    "scope": "core",
+    "summary": "Introduces VenusBench-Mobile, an online benchmark of 149 user-intent tasks and 80 environment variations across 27 Android apps, with capability annotations for diagnosing mobile GUI agent failures.",
+    "verify_terms": [
+      "VenusBench-Mobile: A Challenging and User-Centric Benchmark"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.06182v1"
+    ],
+    "notes": "The v1 full text builds on AndroidWorld's emulator infrastructure, adding 7 open-source apps to its 20, verifies tasks by OS-state inspection or MLLM judges, and evaluates agents from screenshots only, including UI-Venus, GUI-Owl, MAI-UI, Qwen3-VL and planner-executor setups with Gemini-3-Pro and GPT-5.1. It points to code and data on the VenusBench-Mobile branch of github.com/inclusionAI/UI-Venus. Results have not been independently reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML for the task and app counts, emulator platform, verification method, observation setting and evaluated agents. No code execution or result reproduction.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.06182v1",
+        "sha256": "76ee478d5306d8ee9e895234a04e6f2b7eefc98002c3eea97c13703788617fc0",
+        "retrieved_at": "2026-10-20T04:52:29Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b2ea88309e344ae0b60afaeaecb4867aed1e90f1aa312744f1946d1c32ede86a",
+    "reviewed_at": "2026-10-20T04:52:30Z"
   }
 ]

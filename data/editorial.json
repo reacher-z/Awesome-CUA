@@ -63653,5 +63653,96 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Komos",
+    "kind": "product",
+    "url": "https://www.komos.ai",
+    "evidence_urls": [
+      "https://docs.komos.ai/index.md"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow",
+      "recording",
+      "tool-integration"
+    ],
+    "summary": "Hosted automation platform whose task flows use a prompt-driven agent to navigate, click, type and extract on websites in a cloud Chromium sandbox or self-hosted runner, built from narrated screen recordings or chat.",
+    "scope": "core",
+    "verify_terms": [
+      "Komos"
+    ],
+    "notes": "The documentation describes a task as a reusable automation graph. Its Agent Action node handles browser steps (navigating, clicking, filling forms, scrolling, extracting) from a natural-language prompt, can also call integrations and inspect captured network requests, and accepts screenshots as visual references. A task can be trained from a narrated screen or tab recording of up to five minutes, which Komos turns into a plan, or built step by step in a visual builder. Runs use a fresh or persistent cloud Chromium sandbox on Daytona compute, or a self-hosted runner on a Windows or macOS host that can reuse SSO sessions; the Chrome extension path is retired. The built-in assistant Moss creates, schedules and debugs tasks from chat and is also reachable from coding agents through an MCP server. The model behind the agent is not stated. Pricing, availability and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.komos.ai/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://docs.komos.ai/agent-action.md",
+        "sha256": "c0607a450032a9fdbe234e5075920e83cb3a4d2f39c3e447a85ce12676892368",
+        "retrieved_at": "2026-10-20T04:24:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ],
+        "url": "https://docs.komos.ai/environments.md",
+        "sha256": "01869935cbbc27b4f1941e6ae2d28bec0a5eae08bb04709ee043208acca0653d",
+        "retrieved_at": "2026-10-20T04:24:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.komos.ai/moss.md",
+        "sha256": "aac2eb8923f9661f9c7c0294f19878975d6dc65bc5f0939f99d751a0f189b2a3",
+        "retrieved_at": "2026-10-20T04:24:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "details"
+        ],
+        "url": "https://docs.komos.ai/automation-resources.md",
+        "sha256": "f6799181ea3ebec58b3df9d31346f8ba062d80629c1fdfb7dad37f65ca8016e3",
+        "retrieved_at": "2026-10-20T04:25:18Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3511f7bbac1c17382aa9a80f702e10387174e8cbe5a514d2e9fe60d1ea86e44e",
+    "reviewed_at": "2026-10-20T04:26:18Z"
   }
 ]

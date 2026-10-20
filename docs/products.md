@@ -6,7 +6,7 @@ Curated metadata, not a performance ranking. Each entry links its first-party ev
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**20 resources:** [Web (15)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
+**21 resources:** [Web (16)](#web) · [Desktop (2)](#desktop) · [Cross-platform (3)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -26,6 +26,7 @@ All entries in this section: web.
 | [Claude for Chrome](https://claude.com/chrome) | [Anthropic](https://claude.com/chrome) | Claude browser extension for interacting with websites. | [✓ 2026‑10‑16](https://claude.com/chrome) |
 | [HoloTab](https://hcompany.ai/newsroom/meet-holotab) | [H](https://hcompany.ai/research/models) | H browser extension for executing tasks through website interfaces. | [✓ 2026‑10‑16](https://hcompany.ai/newsroom/meet-holotab) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
+| [Komos](https://www.komos.ai) | — | Hosted automation platform whose task flows use a prompt-driven agent to navigate, click, type and extract on websites in a cloud Chromium sandbox or self-hosted runner, built from narrated screen recordings or chat. | [✓ 2026‑10‑20](https://docs.komos.ai/index.md) |
 | [Manus](https://manus.im/) | [Manus](https://manus.im/) | General agent platform with browser-based task execution. | [✓ 2026‑10‑16](https://manus.im/) |
 | [Operator](https://openai.com/index/introducing-operator/) | [OpenAI](https://openai.com/index/computer-using-agent/) | Historical OpenAI browser-agent research preview. | [✓ 2026‑10‑16](https://openai.com/index/introducing-operator/) |
 | [Skyvern Cloud](https://www.skyvern.com/) | [Skyvern](https://www.skyvern.com/) | Hosted Skyvern service for AI browser workflows such as invoice downloads and form filling, with built-in CAPTCHA and 2FA handling, proxy geotargeting, run explanations and JSON or CSV output. | [✓ 2026‑10‑16](https://www.skyvern.com/) |

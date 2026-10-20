@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-374 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (247)](#papers)
 
 ## Benchmarks
 
@@ -328,6 +328,7 @@ All entries in this section: web.
 | 2025‑06‑12 | [DiMo-GUI: Advancing Test-time Scaling in GUI Grounding via Modality-Aware Visual Reasoning](https://arxiv.org/abs/2507.00008) | cross-platform | Separates textual and iconic UI elements and iteratively focuses visual regions to refine grounding without additional model training. |
 | 2025‑06‑11 | [LPO: Towards Accurate GUI Agent Interaction via Location Preference Optimization](https://arxiv.org/abs/2506.09373) | unspecified | Location Preference Optimization uses an information-entropy signal to select interaction regions and a distance-based reward to assess click locations. It trains GUI localization through preference optimization and evaluates both offline grounding and online interaction. |
 | 2025‑06‑10 | [UITron-Speech: Towards Automated GUI Agents Based on Speech Instructions](https://arxiv.org/abs/2506.11127) | unspecified | Introduces UITron-Speech, which predicts GUI actions from spoken instructions and screenshots. It combines synthetic speech data and mixed-modality training with a training-free grounding refinement step. |
+| 2025‑06‑04 | [MiMo-VL Technical Report](https://arxiv.org/abs/2506.03569) | cross-platform | Technical report on the MiMo-VL-7B SFT and RL vision-language models, whose 2.4T-token pretraining includes GUI grounding and action trajectories, evaluated on GUI grounding benchmarks including OSWorld-G. |
 | 2025‑06‑03 | [GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents](https://arxiv.org/abs/2506.03143) | cross-platform | Uses an attention-based action head and a verifier to select relevant screen regions without generating coordinates as text. |
 | 2025‑06‑03 | [Surfer-H Meets Holo1: Cost-Efficient Web Agent Powered by Open Weights](https://arxiv.org/abs/2506.02865) | web | Describes Surfer-H, a web agent paired with the Holo1 vision-language model family trained on web content, synthetic examples, and agent-generated data. The work introduces WebClick for web-interface localization and evaluates browser task execution on WebVoyager. |
 | 2025‑05‑27 | [XBOUND: Exploring Capability Boundaries of Device-Control Agents at the State Level](https://arxiv.org/abs/2505.21279) | unspecified | XBOUND evaluates GUI agents at the level of a screen state, considering multiple instructions and possible target actions within it. The study separates action matching from instruction unification and compares effects of grounding and trajectory data. |

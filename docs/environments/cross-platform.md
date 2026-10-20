@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (102)](#papers)
 
 ## Benchmarks
 
@@ -194,6 +194,7 @@ All entries in this section: cross-platform.
 | 2025‑06‑12 | [DiMo-GUI: Advancing Test-time Scaling in GUI Grounding via Modality-Aware Visual Reasoning](https://arxiv.org/abs/2507.00008) | cross-platform | Separates textual and iconic UI elements and iteratively focuses visual regions to refine grounding without additional model training. |
 | 2025‑06‑12 | [Mirage-1: Augmenting and Updating GUI Agent with Hierarchical Multimodal Skills](https://arxiv.org/abs/2506.10387) | android, web, cross-platform | Mirage-1 organizes interaction trajectories into execution, core, and meta-skills, then uses them to guide Monte Carlo tree search during online GUI tasks. It introduces AndroidLH for long-horizon evaluation and tests the approach on Android and web-navigation benchmarks. |
 | 2025‑06‑05 | [Look Before You Leap: A GUI-Critic-R1 Model for Pre-Operative Error Diagnosis in GUI Automation](https://arxiv.org/abs/2506.04614) | cross-platform | Uses a pre-execution critic and reinforcement training to evaluate proposed GUI actions and provide corrective suggestions before execution. |
+| 2025‑06‑04 | [MiMo-VL Technical Report](https://arxiv.org/abs/2506.03569) | cross-platform | Technical report on the MiMo-VL-7B SFT and RL vision-language models, whose 2.4T-token pretraining includes GUI grounding and action trajectories, evaluated on GUI grounding benchmarks including OSWorld-G. |
 | 2025‑06‑03 | [GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents](https://arxiv.org/abs/2506.03143) | cross-platform | Uses an attention-based action head and a verifier to select relevant screen regions without generating coordinates as text. |
 | 2025‑06‑02 | [MLA-Trust: Benchmarking Trustworthiness of Multimodal LLM Agents in GUI Environments](https://arxiv.org/abs/2506.01616) | web, android, cross-platform | Benchmarks truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
 | 2025‑05‑29 | [ZeroGUI: Automating Online GUI Learning at Zero Human Cost](https://arxiv.org/abs/2505.23762) | cross-platform | Combines generated tasks, estimated success rewards, and online reinforcement learning to automate GUI-agent interaction training. |

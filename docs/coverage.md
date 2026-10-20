@@ -1,8 +1,8 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T05:52:01Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T08:13:34Z**. Generated from committed source receipts.
 
-- 3,209 resource records: 1,629 curated; 1,580 bibliographic metadata only.
+- 3,209 resource records: 1,630 curated; 1,579 bibliographic metadata only.
 - 2,747 paper and survey records, including 2,734 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,870 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,260 discovery identifiers; 906 remain unresolved after accounting for scope exclusions and for 98 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
@@ -23,7 +23,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 22 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 101 | 344 |
+| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 102 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
@@ -35,7 +35,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-20 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-20 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 164 | 0 | 14 | 38 | OK · 2026-10-20 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-20 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-20 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-20 |

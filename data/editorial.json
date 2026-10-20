@@ -63844,5 +63844,56 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "MiMo-VL Technical Report",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.03569",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "reinforcement-learning"
+    ],
+    "summary": "Technical report on the MiMo-VL-7B SFT and RL vision-language models, whose 2.4T-token pretraining includes GUI grounding and action trajectories, evaluated on GUI grounding benchmarks including OSWorld-G.",
+    "verify_terms": [
+      "MiMo-VL Technical Report"
+    ],
+    "scope": "adjacent",
+    "notes": "MiMo-VL-7B pairs a Qwen2.5-ViT encoder and an MLP projector with the MiMo-7B-Base language model. Its four-stage pretraining mixes open-source and synthetic GUI data from mobile, web and desktop: element and instruction grounding plus long action trajectories mapped to a unified action space (Appendix D). Mixed on-policy reinforcement learning includes GUI grounding with box (GIoU) and point rewards. GUI results cover VisualWebBench, WebSrc, ScreenSpot, ScreenSpot-v2, ScreenSpot-Pro and OSWorld-G grounding; no GUI agent executes tasks online. The paper names github.com/XiaomiMiMo/MiMo-VL for checkpoints and github.com/XiaomiMiMo/lmms-eval for the evaluation suite; neither is recorded here, and no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-4 (architecture, pretraining data including GUI data, RL rewards, Table 2 and Section 4.4 GUI results) and Appendix D (GUI action space).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2506.03569v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2506.03569v1",
+        "retrieved_at": "2026-10-20T08:13:08Z",
+        "sha256": "2fa51ac0fc704ce61e88ed0d4394aebe2eabd81c47a017225cbc190f792aa24b",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "topics",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e043952bb0769c8d8b8d10d56bd362c990ca17feea9aad4a4365ea82ba5fdfd6",
+    "reviewed_at": "2026-10-20T08:13:36Z"
   }
 ]

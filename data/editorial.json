@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "When AUC 0.998 Is Not Enough: A Candidate Evaluation Protocol for Hidden-State Probes of Indirect Prompt Injection in Multimodal Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.22864",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Case study showing that a high clean-versus-attack AUC from linear hidden-state probes on Qwen2.5-VL-7B over Mind2Web replays does not by itself show injection detection, with a two-control diagnostic protocol.",
+    "verify_terms": [
+      "A Candidate Evaluation Protocol for Hidden-State Probes of Indirect Prompt Injection"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.22864v1"
+    ],
+    "scope": "core",
+    "notes": "Uses teacher-forced replay of fixed Mind2Web trajectories with three injection surfaces: visible-text overlays rendered into screenshots, accessibility-tree/DOM text and tool-return text. The controls are a paired-construction scalar baseline for text-side injections and same-step nuisance-matched visual overlay controls. Labels mark injection-surface presence, not attack success, and the authors treat generalisation beyond this backbone and benchmark as a conjecture. The arXiv comments list the EvalMG '26 workshop at SIGIR 2026. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.22864v1",
+        "retrieved_at": "2026-10-20T04:00:51Z",
+        "sha256": "9b49e1a0e0d37a763e68a538cc64fd5db5689718c5e799095d8a3632601a259f",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 1, 3 (threat model, candidate control set, reporting heuristics, probe family and surfaces), 4 (setup) and 5.1-5.3 (headline AUC, controls C1 and C2).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ecadedd1583fc3b347b20c538c16f436912e7547e1314f1f6e0a5c76eec2cb50",
+    "reviewed_at": "2026-10-20T04:12:31Z"
   }
 ]

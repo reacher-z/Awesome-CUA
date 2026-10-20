@@ -2,9 +2,9 @@
 
 Evidence snapshot through **2026-10-20T03:55:29.533431+00:00**. Generated from committed source receipts.
 
-- 3,195 resource records: 1,629 curated; 1,566 bibliographic metadata only.
-- 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,856 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
+- 3,194 resource records: 1,629 curated; 1,565 bibliographic metadata only.
+- 2,732 paper and survey records, including 2,719 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,856 retained arXiv metadata records; 137 explicit scope exclusions are outside the active catalog.
 - 4,244 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 24 editorial proposals await verification or review.
 
@@ -55,7 +55,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-10-19 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-10-19 |
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-19 |
-| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-10-19 |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 185 | 136 | 1 | 0 | 0 | OK · 2026-10-19 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-10-19 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-10-19 |
 | [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-10-19 |
@@ -188,7 +188,7 @@ None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 
-136 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
+137 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
 
 ## Known gaps
 

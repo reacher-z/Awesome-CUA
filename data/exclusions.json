@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2512.08417",
+    "name": "Attention is All You Need to Defend Against Indirect Prompt Injection Attacks in LLMs",
+    "url": "https://arxiv.org/abs/2512.08417",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "Rennervate detects and sanitizes indirect prompt injections in LLM inputs with a token-level detector that pools attention features, introduces the FIPI dataset, and evaluates on 5 LLMs and 6 text datasets (FIPI plus injection pairs built from MRPC, HSOL, Jfleg, RTE and SST2). Web agents appear only as a motivating application and no agent, browser or GUI environment is evaluated, so this general LLM security defense is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T05:19:48Z",
+    "metadata_fingerprint": "dd4c6272df565de38ec38c7f626150c3ad5f9e34b9a81c0936d91fa777ac1c03",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2508.19461%2C2508.19493%2C2509.21782%2C2509.25140%2C2510.03485%2C2510.07809%2C2510.14276%2C2510.27140%2C2510.27210%2C2511.13248%2C2512.08417%2C2601.07263%2C2602.13516%2C2603.00476%2C2603.11862%2C2603.18762%2C2603.23791%2C2604.00986%2C2604.16515%2C2604.16548%2C2604.24348%2C2605.05509%2C2605.08876%2C2605.20833%2C2605.24785%2C2607.00333%2C2607.18659%2C2607.25255%2C2608.00202%2C2608.08939%2C2608.24913%2C2608.29596&max_results=32",
+      "sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
+      "retrieved_at": "2026-10-18T10:54:12Z"
+    }
   }
 ]

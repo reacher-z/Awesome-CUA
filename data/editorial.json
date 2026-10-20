@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "The Long-Horizon Task Mirage? Diagnosing Where and Why Agentic Systems Break",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.11978",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "observability"
+    ],
+    "summary": "HORIZON lengthens tasks by depth and breadth extension to study long-horizon failure in web, OS, embodied and database domains, collecting over 3,100 GPT-5 and Claude trajectories labeled by a human-validated LLM judge.",
+    "verify_terms": [
+      "The Long-Horizon Task Mirage"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.11978v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent cross-domain diagnostic benchmark. Per the v1 HTML full text, the 700+ tasks come from WebArena (web), AgentBench (OS), MAC-SQL (database) and Isaac Sim (embodied); the WebArena domain is the GUI component. Failures are attributed with a seven-category taxonomy. The abstract links a leaderboard at https://xwang2775.github.io/horizon-leaderboard/. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.11978v1",
+        "sha256": "41db8f16fb0ba06003d17ec727a35e542b82b1c9bbecc6691c543f0fd20a89ae",
+        "retrieved_at": "2026-10-20T04:28:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7b8ba952effad90cc36be821ae7b3efd9e4682160bd085949639bb57e67dc26e",
+    "reviewed_at": "2026-10-20T04:28:43Z"
   }
 ]

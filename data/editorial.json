@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2607.20482",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "evaluation",
+      "web-navigation",
+      "interaction-history"
+    ],
+    "scope": "core",
+    "summary": "Introduces PersonaTrail, 2,524 underspecified web tasks for 100 PersonaHub-derived users whose generated browsing trails hold the missing context, and PACMem, which distills trails into factual and preference memories.",
+    "verify_terms": [
+      "PersonaTrail: Benchmarking Personalized Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2607.20482v2"
+    ],
+    "editorial_reviewed": true,
+    "notes": "The v2 full text generates profiles, trails and queries with Qwen3.6-27B, reports 1,530 single-hop and 994 multi-hop queries over 317 websites, and runs agents through Playwright on a managed open web with Set-of-Mark screenshots and accessibility trees. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2607.20482v2",
+        "sha256": "76f79749eca9cd5d3433efcdccf9ffc2ebce4a55c7d54e5a33c90e6d4030252e",
+        "retrieved_at": "2026-10-20T04:00:50Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML for benchmark construction, statistics and the agent observation setup. No code execution or result reproduction.",
+    "reviewed_sha256": "68dfa5005b73b0f4ab446e6faa207ff6da6fc9f12905bf53f46e5146933568ab",
+    "reviewed_at": "2026-10-20T04:10:59Z"
   }
 ]

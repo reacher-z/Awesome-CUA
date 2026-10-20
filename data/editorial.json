@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "LiteGUI: Lightweight GUI Agents via Multi-Solution Guided Distillation and Dual-Level Reinforcement Learning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.07505",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "imitation-learning",
+      "data-generation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Trains lightweight GUI agents with guided on-policy distillation from multi-solution action annotations and dual-level GRPO, and builds Lite-Dataset (11K multi-solution annotations) and the 160-task Ubuntu Lite-Bench.",
+    "verify_terms": [
+      "LiteGUI: Lightweight GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.07505v2"
+    ],
+    "notes": "Full-text v2 trains Qwen3-VL-2B and Qwen3-VL-30B-A3B students with a Qwen3-VL-32B teacher and evaluates on ScreenSpot-Pro, OSWorld and Lite-Bench. Lite-Bench runs on a live Ubuntu 22.04 desktop with 75 web, 38 terminal and 47 file-system tasks, the file-system tasks restricted to the graphical file manager, and is scored by an LLM judge. Lite-Dataset is described as 30K GUI trajectories with 11K multi-solution annotations from an Ubuntu-like environment including WPS Office. The paper says the dataset, benchmark and code will be released but names no repository. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.07505v2",
+        "sha256": "e0c61df868ec294e4ab79d3cc7ac5b4284d7b745235348ce4dc7e51281b906e6",
+        "retrieved_at": "2026-10-20T04:18:12Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML Sections 1, 4.1 and 5, the reproducibility statement and Appendices A.8 (Lite-Dataset) and A.9 (Lite-Bench). No result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e8378be7144adeba7fa7bd51ba64c36d1941b7accff5535a19c069e888385170",
+    "reviewed_at": "2026-10-20T04:18:23Z"
   }
 ]

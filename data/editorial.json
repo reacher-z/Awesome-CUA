@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "REAL: Benchmarking Autonomous Agents on Deterministic Simulations of Real Websites",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2504.11543",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "sandbox"
+    ],
+    "summary": "Introduces REAL, deterministic replicas of 11 widely used websites with 112 retrieval and state-changing tasks, scored by localStorage state checks and LLM rubric judges via a Playwright and CDP harness.",
+    "verify_terms": [
+      "REAL: Benchmarking Autonomous Agents on Deterministic"
+    ],
+    "scope": "core",
+    "notes": "The 11 sites (Staynb, Omnizon, DashDish, GoCalendar, GoMail, OpenDining, NetworkIn, UDriver, FlyUnified, TopWork, Zilloft) are React/Next.js clones of consumer services hosted on Vercel, pre-authenticated and without CAPTCHAs; site state persists in localStorage. Agents connect through Playwright (screenshots, DOM, accessibility tree) or the Chrome DevTools Protocol, and the harness builds on the BrowserGym interface (arxiv:2412.05467). Configuration flags set network latency, injected error states and hidden ARIA labels, and some tasks are deliberately impossible. With the authors' baseline agent, Claude 3.7 Sonnet Thinking reaches 41.07% over the 112 tasks. The abstract page links github.com/agi-inc/REAL and the paper links github.com/agi-inc/agisdk and realevals.xyz; neither repository is curated here. No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text (Sections 3-8).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2504.11543v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2504.11543v2",
+        "retrieved_at": "2026-10-20T08:36:06Z",
+        "sha256": "4b83c615789ba3a6d506070417736c8e4a4ca5938ed6eab4154cec3eac36feb2",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bdc27c49f3397637d60adbd11beb170a3095abe14c33d3df5dda2f103ab18688",
+    "reviewed_at": "2026-10-20T08:37:23Z"
   }
 ]

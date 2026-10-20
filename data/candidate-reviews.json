@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f5e8edcb66327e91b597",
+    "url": "https://anonymous.4open.science/r/VEM-Agent-51E7",
+    "decision": "not_a_resource",
+    "reason": "Anonymous GitHub double-blind review copy of VEM code, linked from its ICLR 2026 submission abstract; the service hides the source repository and lists an expiration date of 2026-11-03. Its layout (src_aitw, src_m2w) differs from the published code at github:microsoft/gui-agent-rl."
   }
 ]

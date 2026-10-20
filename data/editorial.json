@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Learning Efficient Guardrails for Compliance",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.03485",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Introduces PolicyGuardBench, 59,997 policy-trajectory pairs from WebArena web-agent logs with full and prefix violation labels, and PolicyGuard-4B, a Qwen3-4B guardrail fine-tuned to flag violations.",
+    "verify_terms": [
+      "Learning Efficient Guardrails for Compliance"
+    ],
+    "scope": "core",
+    "notes": "Trajectories are ScribeAgent runs in WebArena, normalized into text action sequences over five domains (GitLab, Map, Reddit, Shopping, Shopping Admin): 733 base trajectories and 2,195 GPT-4o-synthesized policies yield over 314K pairs, from which the balanced benchmark is drawn, with a trajectory-isolated split and prefix tasks truncated to the first one to five steps. Labels come from gpt-oss-120B annotation guided by manually labeled seeds, with low-confidence cases sent to human review; a 287-pair human re-annotation agreed 89.8%. Evaluations cover accuracy, F1, latency, leave-one-domain-out transfer and a closed-loop interception run that raised Completion-Under-Policy from 10.20% to 16.33%. As the paper notes, the text trajectories omit screenshots and layout. The arXiv comment lists ICML 2026. Project page: rakanwen.github.io/policyguard-page (not curated here). No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-5, Tables 1-4 and Appendices A-D; checked the v2 PDF for links.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.03485v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.03485v2",
+        "retrieved_at": "2026-10-20T07:35:01Z",
+        "sha256": "b9ec6be89f5550af2af5ca08cba1461f22a0685340ec8e719aeaca49ac425358",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c41e7a43e47cf5b8b8be773388485e1da53e8715ebe5061ae23a8255373767c8",
+    "reviewed_at": "2026-10-20T07:35:03Z"
   }
 ]

@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "STAMP: Training Explicit Memory for Mobile GUI Agents in Controllable and Scalable Virtual Environments",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.29324",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "mobile-navigation",
+      "data-generation",
+      "reinforcement-learning"
+    ],
+    "summary": "STAMP injects memory targets into generated virtual mobile-app tasks to train Stamp-GUI to write explicit memories, using SFT on 4,194 trajectories and RL in 356 environments, and adds the Memory-World benchmark.",
+    "verify_terms": [
+      "STAMP: Training Explicit Memory"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.29324v1"
+    ],
+    "scope": "core",
+    "notes": "Per the v1 full text (Section 4 and Appendix A), the training environments are LLM-generated simulated mobile web apps, Stamp-GUI is initialized from GUI-Owl-1.5-8B-Think, and evaluation uses memory-focused three-level variants of AndroidWorld and MemGUI-Bench, Memory-World, and the full 116-task AndroidWorld set. No code or data release is linked from the paper. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.29324v1",
+        "sha256": "a479e8278b9065303d3ac41071cb265b2384d41bd5891c956be682f1777cf6e5",
+        "retrieved_at": "2026-10-20T04:09:19Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9c2b9acc7b1efdbe07810c897a2a7c038f37a8d52b15666a05a63c2bb6bc88b0",
+    "reviewed_at": "2026-10-20T04:09:23Z"
   }
 ]

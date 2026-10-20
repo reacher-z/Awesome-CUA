@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:131b753cf9153681d6d5",
+    "url": "https://www.reddit.com/r/ClaudeAI/comments/1ga3uqn/mindblowing_experience_with_claude_computer_use",
+    "decision": "out_of_scope",
+    "reason": "A Reddit user post from 23 October 2024 describing one session with Anthropic's Claude computer-use beta (an Amazon earbuds search compiled into an Excel file) and listing the actions it can take; it is anecdotal commentary that releases no code, data, model, benchmark or method, so it is not a catalog resource.",
+    "reviewed_at": "2026-10-20T05:12:24Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20241109020636id_/https://www.reddit.com/r/ClaudeAI/comments/1ga3uqn/mindblowing_experience_with_claude_computer_use/",
+      "sha256": "f6be9fb1e8dde7ce514611370f1d4792b871c249856db73e5dda5a2c2aa68c30",
+      "retrieved_at": "2026-10-20T04:57:04Z"
+    }
   }
 ]

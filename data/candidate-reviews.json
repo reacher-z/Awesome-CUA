@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9e4ef9c155b6d9f3c6cd",
+    "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+    "decision": "alias",
+    "target_id": "url:57f17b7d0c18b2d7c8bf",
+    "reason": "Anthropic's 22 October 2024 launch announcement of computer use as a public beta with the upgraded Claude 3.5 Sonnet; it links the API documentation of the indexed Claude Computer Use capability. Its other sections cover general-purpose models."
   }
 ]

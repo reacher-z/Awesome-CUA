@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1566,
   "discovery_identifiers": 4244,
-  "unindexed_candidates": 905,
+  "unindexed_candidates": 904,
   "non_resource_candidates": 97,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -440,8 +440,8 @@
       "resolved_aliases": 1,
       "curated": 87,
       "excluded": 0,
-      "set_aside": 6,
-      "unindexed": 30
+      "set_aside": 7,
+      "unindexed": 29
     },
     {
       "id": "steel-web",
@@ -470,8 +470,8 @@
       "resolved_aliases": 1,
       "curated": 24,
       "excluded": 0,
-      "set_aside": 7,
-      "unindexed": 82
+      "set_aside": 8,
+      "unindexed": 81
     },
     {
       "id": "steel-web-archive",
@@ -590,8 +590,8 @@
       "resolved_aliases": 0,
       "curated": 63,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 23
+      "set_aside": 3,
+      "unindexed": 22
     },
     {
       "id": "cdxeve-cua",
@@ -950,8 +950,8 @@
       "resolved_aliases": 0,
       "curated": 55,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 37
+      "set_aside": 1,
+      "unindexed": 36
     },
     {
       "id": "gui-agent-security",

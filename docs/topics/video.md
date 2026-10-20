@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-38 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (29)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (30)](#papers)
 
 ## Benchmarks
 
@@ -45,6 +45,7 @@
 | 2026‑03‑10 | [Video-Based Reward Modeling for Computer-Use Agents](https://arxiv.org/abs/2603.10178) | desktop, linux, macos, windows, android | Builds ExeVR-53k from execution-video, instruction and reward triplets, including negative instructions with step annotations. A reward model uses spatiotemporal token pruning to judge task completion from the instruction and execution keyframes. |
 | 2025‑11‑06 | [Learning from Online Videos at Inference Time for Computer-Use Agents](https://arxiv.org/abs/2511.04137) | unspecified | This work retrieves online video tutorials and converts them into structured GUI action demonstrations with short objectives. A two-stage selection process supplies a relevant local trajectory as in-context guidance at each execution step. |
 | 2025‑10‑22 | [VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos](https://arxiv.org/abs/2510.19488) | desktop, web | Extracts structured GUI actions from screen-recorded tutorials using inverse dynamics, then uses the inferred trajectories for computer-use training. |
+| 2025‑06‑05 | [VideoMolmo: Spatio-Temporal Grounding Meets Pointing](https://arxiv.org/abs/2506.05336) | desktop | Introduces VideoMolmo, a Molmo-based video model that points to described objects across frames and converts points to SAM2 masks, evaluated on VPoS-Bench including VideoGUI screen recordings. |
 | 2025‑05‑30 | [VideoCAD: A Dataset and Model for Learning Long-Horizon 3D CAD UI Interactions from Video](https://arxiv.org/abs/2505.24838) | web | Introduces synthetic CAD interaction videos, a model for learning interface actions from video, and evaluation tasks for spatial and long-horizon reasoning. |
 | 2025‑05‑19 | [Scalable Video-to-Dataset Generation for Cross-Platform Mobile Agents](https://arxiv.org/abs/2505.12632) | cross-platform | Introduces MONDAY and an automated pipeline that extracts mobile-navigation training data from instructional videos across operating-system platforms. |
 | 2025‑04‑17 | [TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents](https://arxiv.org/abs/2504.12679) | cross-platform | TongUI converts multimodal online tutorials, including videos and articles, into GUI-agent trajectories. Its GUI-Net dataset contains 143,000 trajectories spanning five operating systems and more than 200 applications, and supports fine-tuning for grounding and navigation. |

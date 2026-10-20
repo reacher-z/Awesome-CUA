@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2506.05336",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "video"
+    ],
+    "summary": "Introduces VideoMolmo, a Molmo-based video model that points to described objects across frames and converts points to SAM2 masks, evaluated on VPoS-Bench including VideoGUI screen recordings.",
+    "verify_terms": [
+      "VideoMolmo: Spatio-Temporal Grounding Meets Pointing"
+    ],
+    "scope": "adjacent",
+    "notes": "VideoMolmo adds a temporal attention module to the Molmo architecture and a bidirectional SAM2 mask-fusion step; it is trained on 72k video-caption pairs with 100k object points from video segmentation and tracking datasets, none of them GUI data. VPoS-Bench has 100 video-caption pairs and about 1k annotated points across cell tracking, egocentric, driving, robotics and Video-GUI scenarios; the Video-GUI subset has 13 software screen recordings sampled from VideoGUI, with its own column in Table 4. Other results cover referring and reasoning video object segmentation. The paper names github.com/mbzuai-oryx/VideoMolmo for code and models, which is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-5, Table 4 (per-scenario VPoS-Bench results) and Appendix A.3 (VPoS-Bench subsets, including Video-GUI).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2506.05336v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2506.05336v2",
+        "retrieved_at": "2026-10-20T08:15:10Z",
+        "sha256": "5ab1bb1a227bbe186fb7c8f4be85627a4d4f0c055af13a1430d2745c60422298",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "topics",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "6d7569fec25f6c35e861c5ef33cffb7644abb4d4b492a23dca746e2eba3a2a93",
+    "reviewed_at": "2026-10-20T08:15:34Z"
   }
 ]

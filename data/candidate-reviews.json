@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:93572a66369b92e553fc",
+    "url": "https://www.expand.ai",
+    "decision": "out_of_scope",
+    "reason": "Expand is a commercial API that renders web pages in a hosted browser and returns them as Markdown together with the page's embedded JSON and a citable snapshot, with crawl and change-monitoring endpoints. Agents receive page content but never click, type or otherwise operate a page, so it is retrieval infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-20T05:07:44Z",
+    "evidence": {
+      "url": "https://www.expand.ai",
+      "sha256": "623a8551792d28f629827c1994c3083f87a688c89a5e61fc2e1d652d49d20ec4",
+      "retrieved_at": "2026-10-20T04:16:14Z"
+    }
   }
 ]

@@ -63653,5 +63653,190 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "SMAN-Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/gezelligheid0314/SMAN-Bench",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "robustness"
+    ],
+    "scope": "core",
+    "summary": "Evaluation code for SMAN-Bench (Mobile-Bench-v2): AppAgent and Mobile-Agent-v2 runners replay recorded Android pages for single-path, multi-path, noisy and ambiguous tasks, scored by step and task success.",
+    "verify_terms": [
+      "SMAN-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/HEAD/readme.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "introduced_by",
+        "target_id": "arxiv:2505.11891",
+        "evidence_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/1b4279dc1ec8d0183c22528664d84459-Paper-Conference.pdf"
+      },
+      {
+        "type": "component_of",
+        "target_id": "url:1d5b85321b98765141fc",
+        "evidence_url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/readme.md"
+      }
+    ],
+    "notes": "SMAN-Bench is the title of the ICLR 2026 edition of the Mobile-Bench-v2 paper; that edition's proceedings PDF gives this repository as its code and data location, and the README's dataset badge links the Hugging Face release xwk123/MobileBench-v2, which holds the task data. The repository itself has code only, no task files. AppAgent runners draw numbered boxes for clickable and scrollable elements, taken from each recorded page's XML, onto the screenshot; Mobile-Agent-v2 runners (memory unit on, reflection off by default) receive the centre coordinates of the same elements. Single-path and ambiguous runs step through the ground-truth page sequence whatever the agent chooses; multi-path runs move through the recorded page graph according to the agent's actions (default limit 20 rounds) and succeed on reaching the goal page. Ambiguous runs prompt with the task's vague instruction and per-step instructions, or with the complete instruction. eval.py has scorers for single-path, multi-path and noisy runs, printing task success rate, action accuracy and action-type accuracy; the noisy scorer checks the ground-truth click or swipe coordinates against the predicted element's bounds and typed text by character-level F1 above 0.5. Model endpoints are set in config/config.yaml. The README shows an MIT badge, but the tree at the reviewed commit has no LICENSE file. Not a fork, not archived; no release. Code was read, not run.",
+    "details": {
+      "availability": "Public evaluation code (agent runners, scorer and model config); task data is released separately on Hugging Face; no release or tag.",
+      "repository_revision": "8f3358fc8a065454b66d1e8f4f6029a2eb8ac327",
+      "repository_tree_sha": "02ce2003e42d12d0bcfbcc6b6e566d09c9ab4bd5",
+      "benchmark_protocol": {
+        "focus": [
+          "single-path step accuracy",
+          "multi-path task completion",
+          "robustness to pop-ups and ads",
+          "ambiguous instructions"
+        ],
+        "setting": "offline",
+        "observations": [
+          "recorded Android screenshots with element boxes drawn from the page XML",
+          "element centre coordinates (Mobile-Agent-v2 runner)",
+          "task instructions"
+        ],
+        "actions": [
+          "click a labelled element",
+          "scroll a labelled element in a direction",
+          "input text"
+        ],
+        "evaluation": "Predicted actions are mapped to the recorded action IDs of each page. Single-path runs are scored step by step against the ground-truth path (action accuracy, action-type accuracy, success only when every step matches); multi-path runs succeed when the agent's actions reach the goal page in the recorded page graph; noisy runs check ground-truth click and swipe coordinates against the predicted element's bounds and typed text by character-level F1.",
+        "counts": [],
+        "notes": "The repository has no task files; task counts belong to the Hugging Face data release and are not restated here. Scoring rules are taken from eval.py at the reviewed commit, which has no separate scorer for the ambiguous split.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/eval.py",
+          "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/appagent/appagent_singlepath.py",
+          "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/appagent/appagent_multipath.py",
+          "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/mobileagent/mobileagent_singlepath.py",
+          "https://api.github.com/repos/gezelligheid0314/SMAN-Bench/git/trees/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327?recursive=1"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README shows an MIT badge linking a LICENSE file, but the complete tree at the reviewed commit has no license file, so no grant is established.",
+        "evidence_urls": [
+          "https://api.github.com/repos/gezelligheid0314/SMAN-Bench/git/trees/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327?recursive=1"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability",
+          "details.benchmark_protocol",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/gezelligheid0314/SMAN-Bench/git/trees/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327?recursive=1",
+        "sha256": "e3b1edf5ebd8a3c4ece3fe55994678b01188bf8c8aed5ac3ebbd93a818eec0c8",
+        "retrieved_at": "2026-10-20T04:19:28Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/readme.md",
+        "sha256": "73cdb1d20119322652fce8f475be5304efdc78ba9ce7162b282790646bc56a1e",
+        "retrieved_at": "2026-10-20T04:20:09Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes"
+        ],
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/1b4279dc1ec8d0183c22528664d84459-Paper-Conference.pdf",
+        "sha256": "061442053b0487074fd3556a298e8e7a8715741c6f8939b31ead7b9326ffccb6",
+        "retrieved_at": "2026-10-20T04:20:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/eval.py",
+        "sha256": "860f45a6ff49829b3e5ff6ad938862c7420d09bf41964340d87927f636bef45c",
+        "retrieved_at": "2026-10-20T04:19:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/appagent/appagent_singlepath.py",
+        "sha256": "b49ccd022e82f2da2727ec9c048cc5c6eaa9edd0c8953d17e06548bc2859c232",
+        "retrieved_at": "2026-10-20T04:19:29Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/appagent/appagent_multipath.py",
+        "sha256": "fe4dffc17866473e8c26871ca71d12ce2c04187e17df80fa6b1be232b7fbd571",
+        "retrieved_at": "2026-10-20T04:21:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/appagent/appagent_ambiguous.py",
+        "sha256": "0640d5cba898e72764c49039fc837c7b4846b868b3c4d94300d540c62a7f00c0",
+        "retrieved_at": "2026-10-20T04:21:05Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/gezelligheid0314/SMAN-Bench/8f3358fc8a065454b66d1e8f4f6029a2eb8ac327/mobileagent/mobileagent_singlepath.py",
+        "sha256": "f7ec44782984c911ef7c0472fdedccf4286d55ed08f9d072f2599f651a567565",
+        "retrieved_at": "2026-10-20T04:19:29Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "73cdb1d20119322652fce8f475be5304efdc78ba9ce7162b282790646bc56a1e",
+    "reviewed_at": "2026-10-20T04:22:04Z"
   }
 ]

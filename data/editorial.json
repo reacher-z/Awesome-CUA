@@ -63844,5 +63844,47 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agent Data Protocol: Unifying Datasets for Diverse, Effective Fine-tuning of LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.24702",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "imitation-learning",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Proposes the Agent Data Protocol, a schema that converts 13 agent datasets (coding, tool use, web browsing) into one SFT format; Qwen-2.5-Coder models gain on SWE-Bench, WebArena, AgentBench OS and GAIA.",
+    "verify_terms": [
+      "Unifying Datasets for Diverse, Effective Fine-tuning of LLM Agents"
+    ],
+    "scope": "adjacent",
+    "notes": "ADP defines Pydantic schemas for API, code and message actions and for text and web observations (HTML, accessibility tree, URL, viewport size and an optional screenshot). The 13 converted datasets include five web corpora (Go-Browse, Mind2Web, NNetNav-live, NNetNav-wa and Synatra) and mixed sets such as AgentInstruct and openhands-feedback, alongside coding, software-engineering and tool-use data. Web evaluation runs AgentLab (BrowserGym) on WebArena, where ADP-trained Qwen-2.5-Coder-Instruct models reach 21.0%, 22.2% and 22.9% at 7B, 14B and 32B; OpenHands and SWE-Agent cover SWE-Bench Verified, AgentBench OS and GAIA. Scope is adjacent because browsing is one of several domains. The paper links agentdataprotocol.com for its released code and data. No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the v2 HTML text: Sections 1-7 and Tables 1-5; appendices skimmed.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.24702v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.24702v2",
+        "retrieved_at": "2026-10-20T07:52:05Z",
+        "sha256": "1d7501d8242d9191c501d4dbccdb8cb6ea0959fffbf3544f04fd2e73da21e7b3",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "bee4b42b21db543f02a73e440555c819571489a1b0542f3da0a344941c6cbc15",
+    "reviewed_at": "2026-10-20T07:52:39Z"
   }
 ]

@@ -63844,5 +63844,54 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Detect Anything via Next Point Prediction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.12798",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning"
+    ],
+    "summary": "Introduces Rex-Omni, a 3B multimodal model that outputs quantized coordinate tokens for detection, referring and pointing tasks, and evaluates its GUI grounding on ScreenSpot-V2 and ScreenSpot-Pro.",
+    "verify_terms": [
+      "Detect Anything via Next Point Prediction"
+    ],
+    "scope": "adjacent",
+    "notes": "Rex-Omni is built on Qwen2.5-VL-3B-Instruct and repurposes 1,000 vocabulary tokens as coordinates from 0 to 999. Training combines supervised fine-tuning on 22 million samples with GRPO using geometry-aware rewards, including a point-in-box reward written for GUI grounding; GUI training data come from OS-Atlas, UI-RefExp and ShowUI. GUI grounding is one of eleven evaluation sections (Section 5.7), reported as point accuracy on ScreenSpot-V2 (mobile, desktop and web, 1,272 images) and ScreenSpot-Pro (1,581 images); no GUI agent executes tasks. The comment field links a homepage, rex-omni.github.io, which is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-6 with Table 1 (training data), the reward definitions and Section 5.7 with Table 8 (GUI grounding).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.12798v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.12798v1",
+        "retrieved_at": "2026-10-20T07:49:48Z",
+        "sha256": "0ee52f76e521ebea26a8137a9ac80d5a731ef4565d725acdc66b887f9692857b",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d448a6de2fd88c067779f177d762672cbbdd5f1bc2b256187e08f16db13a8cbd",
+    "reviewed_at": "2026-10-20T07:50:16Z"
   }
 ]

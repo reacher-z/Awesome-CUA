@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-55 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+56 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (6)](#products) · [Papers (38)](#papers)
 
 ## Benchmarks
 
@@ -40,6 +40,7 @@
 | [Browserbase Cloud](https://www.browserbase.com/) | [Browserbase](https://www.browserbase.com/) | web | Managed browser infrastructure for agent applications. | [✓ 2026‑10‑16](https://www.browserbase.com/) |
 | [Browserless](https://www.browserless.io/) | [Browserless](https://www.browserless.io/) | web | Hosted browser infrastructure for automation applications. | [✓ 2026‑10‑16](https://www.browserless.io/) |
 | [E2B](https://e2b.dev/) | [E2B](https://e2b.dev/) | desktop | Sandbox infrastructure for executing agent workloads. | [✓ 2026‑10‑16](https://e2b.dev/) |
+| [Firecrawl](https://www.firecrawl.dev) | — | web | Hosted web data API for AI agents that searches and scrapes pages into Markdown or JSON, with an Interact endpoint and browser sandbox in which prompts or Playwright code click, type and fill forms. | [✓ 2026‑10‑20](https://docs.firecrawl.dev/introduction.md) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | web | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Steel Cloud](https://steel.dev/) | [Steel](https://steel.dev/) | web | Managed browser infrastructure associated with Steel Browser. | [✓ 2026‑10‑16](https://steel.dev/) |
 

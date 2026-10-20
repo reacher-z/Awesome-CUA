@@ -63653,5 +63653,82 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Firecrawl",
+    "kind": "product",
+    "url": "https://www.firecrawl.dev",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Hosted web data API for AI agents that searches and scrapes pages into Markdown or JSON, with an Interact endpoint and browser sandbox in which prompts or Playwright code click, type and fill forms.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Firecrawl"
+    ],
+    "evidence_urls": [
+      "https://docs.firecrawl.dev/introduction.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://docs.firecrawl.dev/features/interact.md",
+        "sha256": "d24051dbdcd53fb981ade29129961a3b9c5e099398f714dbf15d40dd7dffd87a",
+        "retrieved_at": "2026-10-20T04:19:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.firecrawl.dev/features/browser.md",
+        "sha256": "a138e33326831e033d749038ad1c9d5da991bac6fe4d5d35218cbda2478eafc5",
+        "retrieved_at": "2026-10-20T04:19:02Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://docs.firecrawl.dev/features/agent.md",
+        "sha256": "d6d01b12c8ab5e30d1c4357fea800017aa8f363f20873b0eb16fbcf143cd5cab",
+        "retrieved_at": "2026-10-20T04:19:03Z"
+      }
+    ],
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.firecrawl.dev/pricing",
+      "availability": "not independently tested"
+    },
+    "notes": "Recorded as adjacent: the publisher presents Firecrawl as a web data API for AI agents, and its search, scrape, map and crawl endpoints return page content as Markdown, HTML, JSON or screenshots without operating the page. Interact continues from a scrape result: POST /v2/scrape/{scrapeId}/interact takes either a natural-language prompt, which it carries out by clicking, typing and scrolling, or Playwright code, and returns a CDP URL and live-view URLs; named profiles keep browser state such as logins between sessions. The Browser Sandbox (POST /v2/interact) opens a standalone isolated browser session with Playwright and the agent-browser CLI preinstalled, CDP access and an embeddable interactive live view. The /agent endpoint gathers data from a prompt by searching and navigating sites and runs on the publisher's Spark 2 model. The homepage HTML changes on every request, so the primary receipt is the documentation introduction. The homepage also links the repository github.com/firecrawl/firecrawl; which hosted features that code includes was not reviewed, and its license does not cover the hosted service. Pricing, availability and reliability were not independently tested, and no task was run.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4ebd6ab8be2e75303248a9bcdb8ec2a206ebe88273366aa71e4cc1172766ddc8",
+    "reviewed_at": "2026-10-20T04:19:09Z"
   }
 ]

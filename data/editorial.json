@@ -63844,5 +63844,84 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Strawberry",
+    "kind": "product",
+    "url": "https://www.strawberrybrowser.com",
+    "evidence_urls": [
+      "https://strawberrybrowser.com/llms.txt"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop",
+      "memory"
+    ],
+    "summary": "Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting.",
+    "scope": "core",
+    "verify_terms": [
+      "Strawberry"
+    ],
+    "aliases": [
+      "Strawberry Browser"
+    ],
+    "notes": "Dendrite Systems, a team based in Stockholm, publishes Strawberry. Its llms.txt describes companions as persistent assistants that are briefed once and remember across sessions, routines that run work on a schedule, saved skills that re-run a workflow, and 93 native integrations with 1,254 operations alongside work done in the browser session the user is signed into; companions ask for approval before sending email, making payments or taking destructive actions. The browser-agent page says a companion plans the work, opens the sites, moves between tabs, clicks through flows and uses an app integration when that is faster than browsing. Regular browsing is free, while companion work draws on monthly credits, with a free plan of 500 credits and paid tiers. The llms.txt also says the publisher retracted its February 2026 comparison benchmark after an audit and now publishes a measurement standard for results. Capabilities, pricing and reliability were not independently tested.",
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://strawberrybrowser.com/pricing",
+      "availability": "not independently tested"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://strawberrybrowser.com/browser-agent",
+        "sha256": "b790fc80bfc58803f708d9c8afdd53b1faa3312950b78e40cefdc0708f8288a9",
+        "retrieved_at": "2026-10-20T04:40:38Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://strawberrybrowser.com/about-us",
+        "sha256": "33c76bdc63bad85d307b305bf0cd4f2f17e7a1da860cf4ce6ff66c4a4b987fa7",
+        "retrieved_at": "2026-10-20T04:40:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.pricing_url"
+        ],
+        "url": "https://strawberrybrowser.com/pricing",
+        "sha256": "74f5cda50ae8ad25ed90f73e308cc4a6401304319f727ad64d69928917532e96",
+        "retrieved_at": "2026-10-20T04:40:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b63ef661f6d4648038baf08bd630ec20129e5c300f5600d71ae38463a82f7560",
+    "reviewed_at": "2026-10-20T04:42:16Z"
   }
 ]

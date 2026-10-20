@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4970ad73091950ba67fb",
+    "url": "https://x-lance.github.io/WebSRC",
+    "decision": "alias",
+    "target_id": "url:e0ba328ae1a643b0a5aa",
+    "reason": "Project website and leaderboard of the indexed WebSRC v1.0 dataset, whose dataset card links it as the WebSRC v1.0 leaderboard."
   }
 ]

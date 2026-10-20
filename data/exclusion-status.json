@@ -2101,7 +2101,7 @@
       "url": "https://arxiv.org/abs/2605.03242",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract presents ROME, which rewrites 100 unsafe R-Judge agent trajectories into 300 deceptive safety-judgment instances, and ARISE, which retrieves analogical safety trajectories as reasoning exemplars at inference time. Models judge textual tool-use interaction records; no agent operates a GUI, browser or device, so it is outside the computer-use scope.",
+      "reason": "The abstract presents ROME, which rewrites 100 unsafe R-Judge agent trajectories into 300 deceptive safety-judgment instances, and ARISE, which retrieves analogical safety trajectories as reasoning exemplars at inference time. The abstract motivates the work with agents deployed in web, app and operating-system environments, and the source trajectories include 14 Web, 12 App and 10 OS records among seven R-Judge domains (full-text Table 3), but all are textual tool-use interaction logs that models judge offline; no agent operates a GUI, browser or device, so it is outside the computer-use scope.",
       "reviewed_at": "2026-10-20T04:14:45Z",
       "metadata_fingerprint": "29a05d5da5ebea3ef3d0fe04924a4d073d57f6fcea065350492e94a82f519a3c",
       "evidence": {

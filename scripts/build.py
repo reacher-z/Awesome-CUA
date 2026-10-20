@@ -183,6 +183,11 @@ def title_author_collisions(rows):
     return collisions
 
 
+def commit_pins(url):
+    """Full SHAs that a receipt URL pins, such as raw.githubusercontent.com/<o>/<r>/<commit>/...; git/trees and git/blobs paths name other objects."""
+    return set(re.findall(r"(?<![0-9a-f])[0-9a-f]{40}(?![0-9a-f])", re.sub(r"/git/(?:trees|blobs)/[0-9a-f]{40}", "", url)))
+
+
 def validate_records(rows):
     errors, seen, alias_owners = [], set(), {}
     required = set(FIELD_TYPES)
@@ -249,6 +254,10 @@ def validate_records(rows):
             error("curated entry lacks an editorial summary/scope")
         if "leaderboard_url" in (r.get("details") or {}) and (r.get("kind") != "benchmark" or r.get("review_status") != "curated" or not https(r["details"]["leaderboard_url"])):
             error("leaderboard_url must be an https URL on a curated benchmark")
+        # A tree SHA that equals the record's commit, or a commit its receipts pin, is a commit in the wrong key.
+        if isinstance(tree := (r.get("details") or {}).get("repository_tree_sha"), str):
+            if tree == r["details"].get("repository_revision") or tree in {sha for ev in r.get("evidence", []) for sha in commit_pins(ev.get("url", ""))}:
+                error("repository_tree_sha holds a commit SHA; record it as repository_revision")
         for issue in validate_profiles(r):
             error(issue)
         for issue in validate_snapshot(r):

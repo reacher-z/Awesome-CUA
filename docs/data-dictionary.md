@@ -69,9 +69,9 @@ The schema checks `dataset_profile`, `benchmark_protocol`, `leaderboard_url`, `a
 | `artifact_inspection` | model | How far the artifact was inspected, such as the file manifest only | Editorial |
 | `hub_revision` | benchmark, dataset, model | Hub commit for the inspected release metadata or files; for checkpoints, the manifest that gave `listed_weight_files` | Editorial |
 | `release_revision` | benchmark, dataset, model | Hub commit of the inspected release | Editorial |
-| `repository_revision` | agent, benchmark, dataset, framework, infrastructure, tool | Git commit of the inspected source tree | Editorial |
+| `repository_revision` | agent, benchmark, dataset, framework, infrastructure, tool | Git commit of the inspected source tree. The top-level `sha` of a GitHub `git/trees/<branch>` or `commits/<branch>` response is this commit; pin receipts by it, such as `raw.githubusercontent.com/<owner>/<repo>/<commit>/README.md` | Editorial |
 | `repository_id` | framework | Numeric repository identity from the retained official GitHub API response; a fork has its own ID, and a matching name or file tree does not establish a rename | Editorial |
-| `repository_tree_sha` | agent, benchmark, framework | Git tree object SHA from the inspected repository file listing; distinct from a commit SHA | Editorial |
+| `repository_tree_sha` | agent, benchmark, framework | Git tree object SHA, such as a commit's `tree.sha`; never the commit itself, which belongs in `repository_revision`. `validate` rejects a value equal to the record's `repository_revision` or to a commit that one of its receipt URLs pins | Editorial |
 | `repository_url` | agent, benchmark, dataset, framework, model | Related implementation repository or component URL; this link alone does not establish a license or a separate resource identity | Editorial |
 | `release_tag` | agent, benchmark, framework, infrastructure, tool | Inspected release tag, such as `v0.8.8` | Editorial |
 | `package_version` | agent, tool | Inspected package version, such as an npm release | Editorial |

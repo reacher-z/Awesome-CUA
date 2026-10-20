@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:3d1972816500a523aa50",
+    "url": "https://openreview.net/forum?id=G7sIFXugTX",
+    "decision": "out_of_scope",
+    "reason": "SWE-Search (ICLR 2025) adds Monte Carlo Tree Search, an LLM value agent and a discriminator agent to software agents that resolve repository-level code issues, evaluated on SWE-bench. Its agents edit code repositories and do not operate a graphical, browser or mobile interface, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:16:22Z",
+    "evidence": {
+      "url": "https://api2.openreview.net/notes?id=G7sIFXugTX",
+      "sha256": "035e6e99df40e963c13367ec8f90abdcdbdd35ab2ecf4c2c851257b238975eca",
+      "retrieved_at": "2026-10-19T06:31:34Z"
+    }
   }
 ]

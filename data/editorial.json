@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Orchard: An Open-Source Agentic Modeling Framework",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.15040",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "sandbox",
+      "data-generation"
+    ],
+    "summary": "Orchard pairs a Kubernetes-native sandbox service with training recipes for software, browser and personal-assistant agents; its Orchard-GUI recipe trains a 4B browser agent on 0.4K distilled trajectories and 2.2K tasks.",
+    "verify_terms": [
+      "Orchard: An Open-Source Agentic Modeling"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.15040v3"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent general agentic-modeling framework: Orchard Env supplies sandbox lifecycle primitives shared by Orchard-SWE (SWE-bench Verified), Orchard-GUI and Orchard-Claw (Claw-Eval). Orchard-GUI fine-tunes Qwen3-VL-4B-Thinking on trajectories distilled from Qwen3-VL-235B-A22B-Thinking, using a generic ReAct browser harness with 13 atomic tools and screenshot observations, then applies RL; it reports 68.4% average success on WebVoyager, Online-Mind2Web and DeepShop. The v3 front matter links github.com/microsoft/Orchard and huggingface.co/datasets/microsoft/Orchard. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2605.15040v3",
+        "retrieved_at": "2026-10-20T04:16:41Z",
+        "sha256": "285252b68cab5252ac5d3d5f321144ac56561da65cb9abd009b55d4b7e1439fd",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and the v3 HTML Sections 1, 2 and 4 (Orchard Env, Orchard-GUI task formulation, action space, data pipeline, SFT and RL).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b823324e652f94d9536fa6392f8c85445ccf553a8eb1e5c377d60c9b95e0ed4d",
+    "reviewed_at": "2026-10-20T04:17:06Z"
   }
 ]

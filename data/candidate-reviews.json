@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:9b88bfec4a46afeb42f3",
+    "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "decision": "out_of_scope",
+    "reason": "A 4 November 2025 Anthropic engineering post arguing that agents should call Model Context Protocol tools by writing code in an execution environment, which cuts the tokens spent on tool definitions and intermediate results. It concerns API tool integration and never involves operating graphical interfaces, websites or devices.",
+    "reviewed_at": "2026-10-20T04:22:28Z",
+    "evidence": {
+      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "sha256": "a156fec895e7958e336c5d598a1cc31fb1271b55b4353c23849e7fea173b31c1",
+      "retrieved_at": "2026-10-20T04:07:03Z"
+    }
   }
 ]

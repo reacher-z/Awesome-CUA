@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-691 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+692 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -526,6 +526,7 @@ All entries in this section: web.
 | 2025‑10‑02 | [Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness](https://arxiv.org/abs/2510.01670) | desktop | BLIND-ACT tests whether computer-use agents persist with ambiguous, contradictory, or infeasible goals without adequate contextual reasoning. Its OSWorld-based tasks and judged trajectories examine these behaviors and the effect of mitigation prompts. |
 | 2025‑10‑02 | [Scaling Agents for Computer Use](https://arxiv.org/abs/2510.02250) | desktop, windows, android | Introduces Behavior Judge, which converts execution trajectories into behavior narratives and compares multiple candidate rollouts. Experiments examine this selection approach on OSWorld, WindowsAgentArena and AndroidWorld. |
 | 2025‑10‑01 | [WAInjectBench: Benchmarking Prompt Injection Detections for Web Agents](https://arxiv.org/abs/2510.01354) | web | Introduces WAInjectBench with a threat-model taxonomy and malicious and benign text-image datasets for web-agent prompt-injection detection. It compares detector families across explicit and less visible forms of injected content. |
+| 2025‑09‑30 | [DRBench: A Realistic Benchmark for Enterprise Deep Research](https://arxiv.org/abs/2510.00172) | web | DRBench poses 100 enterprise deep-research tasks (1,093 sub-questions) whose evidence spans the web and files, chats and emails served by Nextcloud, Mattermost and Roundcube in a Docker workspace. |
 | 2025‑09‑30 | [SCUBA: Salesforce Computer Use Benchmark](https://arxiv.org/abs/2509.26506) | unspecified | SCUBA evaluates enterprise UI navigation and CRM workflows with 300 task instances derived from Salesforce user interviews. Salesforce sandbox execution and milestone-based assessment support comparisons between zero-shot agents and agents given demonstrations. |
 | 2025‑09‑29 | [Generalist Scanner Meets Specialist Locator: A Synergistic Coarse-to-Fine Framework for Robust GUI Grounding](https://arxiv.org/abs/2509.24133) | unspecified | GMS pairs a general vision-language scanner that proposes interface regions with a specialist locator that predicts coordinates within them. Hierarchical coarse-to-fine search coordinates the two components for GUI grounding on ScreenSpot-Pro. |
 | 2025‑09‑28 | [WAREX: Web Agent Reliability Evaluation on Existing Benchmarks](https://arxiv.org/abs/2510.03285) | web | WAREX augments existing web-agent benchmarks with reliability challenges arising from unstable systems and changing or disruptive website behavior. Evaluation on WebArena, WebVoyager and REAL examines how these disturbances affect task completion. |

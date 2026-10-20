@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-623 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+624 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (444)](#papers)
 
 ## Benchmarks
 
@@ -469,6 +469,7 @@
 | 2025‑10‑01 | [PAL-UI: Planning with Active Look-back for Vision-Based GUI Agents](https://arxiv.org/abs/2510.00413) | web, cross-platform | PAL-UI combines observation/action summaries with selective retrieval of historical screenshots during planning. It trains mobile navigation models from step-level supervision and evaluates transfer to web navigation without additional training. |
 | 2025‑10‑01 | [WAInjectBench: Benchmarking Prompt Injection Detections for Web Agents](https://arxiv.org/abs/2510.01354) | web | Introduces WAInjectBench with a threat-model taxonomy and malicious and benign text-image datasets for web-agent prompt-injection detection. It compares detector families across explicit and less visible forms of injected content. |
 | 2025‑10‑01 | [WALT: Web Agents that Learn Tools](https://arxiv.org/abs/2510.01524) | web | WALT explores website functionality and converts demonstrated interactions into validated, reusable tools combining DOM actions, URL navigation, and agentic fallbacks. It evaluates this expanded browser action space on WebArena and VisualWebArena. |
+| 2025‑09‑30 | [DRBench: A Realistic Benchmark for Enterprise Deep Research](https://arxiv.org/abs/2510.00172) | web | DRBench poses 100 enterprise deep-research tasks (1,093 sub-questions) whose evidence spans the web and files, chats and emails served by Nextcloud, Mattermost and Roundcube in a Docker workspace. |
 | 2025‑09‑30 | [Ferret-UI Lite: Lessons from Building Small On-Device GUI Agents](https://arxiv.org/abs/2509.26539) | android, web, desktop, cross-platform | Ferret-UI Lite develops a 3B GUI agent using mixed real and synthetic data, reasoning with visual tools at inference, and reinforcement learning. It evaluates grounding and navigation across mobile, web, and desktop settings, including AndroidWorld and OSWorld. |
 | 2025‑09‑29 | [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140) | web | Distills generalizable reasoning strategies from both successful and failed agent trajectories into a persistent memory bank for test-time retrieval. |
 | 2025‑09‑29 | [Retrieval-augmented GUI Agents with Generative Guidelines](https://arxiv.org/abs/2509.24183) | web, android | RAG-GUI trains a small guidance adapter to filter and summarize retrieved web tutorials while keeping the acting agent fixed. Supervised and rejection-sampling stages prepare the adapter for inference-time assistance, tested on offline web/mobile tasks and interactive Android tasks. |

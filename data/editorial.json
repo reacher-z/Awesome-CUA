@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "DRBench: A Realistic Benchmark for Enterprise Deep Research",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.00172",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "industry",
+      "cross-app"
+    ],
+    "summary": "DRBench poses 100 enterprise deep-research tasks (1,093 sub-questions) whose evidence spans the web and files, chats and emails served by Nextcloud, Mattermost and Roundcube in a Docker workspace.",
+    "verify_terms": [
+      "A Realistic Benchmark for Enterprise Deep Research"
+    ],
+    "scope": "adjacent",
+    "notes": "The environment also includes FileBrowser and a noVNC desktop, and each service exposes both a web interface and an API. The baseline DRBench agent works through service APIs, web search and URL fetching, and reports are scored on insight recall, factuality and report quality. A BrowserGym/AgentLab web agent with GPT-4.1 that used the same apps only through the browser reached 1.11% insight recall (Section 5.5, Appendix J), and app-based retrieval scored lower than receiving the files directly (Section 5.6). Scope is adjacent because the benchmark centers on deep-research reports, with browser operation evaluated as a secondary setting. Code and data: github.com/ServiceNow/drbench (not curated here). No results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-7 and Appendices A-J.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.00172v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.00172v2",
+        "retrieved_at": "2026-10-20T07:38:12Z",
+        "sha256": "906c61acfeec0b0b855814b0e66f67c63729b2450583c0dabf23681e4534c2ca",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0600ef4241af4afead74e1b979909698fcaf9adc381a589ec35e8e63e3decb8c",
+    "reviewed_at": "2026-10-20T07:38:18Z"
   }
 ]

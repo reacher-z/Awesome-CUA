@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-27 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+28 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (11)](#papers)
+**Contents:** [Publishers (16)](#publishers) · [Papers (12)](#papers)
 
 ## Publishers
 
@@ -39,6 +39,7 @@ All entries in this section: unspecified.
 | 2025‑12‑12 | [Using GUI Agent for Electronic Design Automation](https://arxiv.org/abs/2512.11611) | unspecified | GUI-EDA collects more than 2,000 screenshot-answer-action pairs from engineers working across five CAD tools and five physical domains. The accompanying benchmark evaluates more than 30 GUI agents on specialized electronic-design workflows. |
 | 2025‑11‑28 | [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) | web | LegalWebAgent separates user-needs clarification, webpage browsing, and actions such as form completion or scheduling. A 15-task evaluation studies legal-service workflows relevant to Québec civil-law users, using HTML and screenshot observations. |
 | 2025‑11‑21 | [UI-CUBE: Enterprise-Grade Computer Use Agent Benchmarking Beyond Task Accuracy to Operational Reliability](https://arxiv.org/abs/2511.17131) | unspecified | UI-CUBE evaluates 226 tasks ranging from individual controls to copy-paste and enterprise workflows. Interface variations, multiple resolutions, and application-state validation support diagnosis of operational reliability beyond task accuracy alone. |
+| 2025‑09‑30 | [DRBench: A Realistic Benchmark for Enterprise Deep Research](https://arxiv.org/abs/2510.00172) | web | DRBench poses 100 enterprise deep-research tasks (1,093 sub-questions) whose evidence spans the web and files, chats and emails served by Nextcloud, Mattermost and Roundcube in a Docker workspace. |
 | 2025‑09‑30 | [SCUBA: Salesforce Computer Use Benchmark](https://arxiv.org/abs/2509.26506) | unspecified | SCUBA evaluates enterprise UI navigation and CRM workflows with 300 task instances derived from Salesforce user interviews. Salesforce sandbox execution and milestone-based assessment support comparisons between zero-shot agents and agents given demonstrations. |
 | 2025‑09‑26 | [RISK: A Framework for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2509.21982) | web | RISK combines browser-interaction training data, a benchmark, and reinforcement fine-tuning for e-commerce risk-management workflows. Its trajectories and rewards distinguish individual actions from multi-step stateful tasks involving deeply embedded web content. |
 | 2025‑09‑17 | [InfraMind: A Novel Exploration-based GUI Agentic Framework for Mission-critical Industrial Management](https://arxiv.org/abs/2509.13704) | unspecified | InfraMind explores industrial management GUIs using virtual-machine snapshots and builds memory for planning and hierarchical state recognition. Its framework also studies knowledge distillation and safety checks on open-source and commercial data-center management platforms. |

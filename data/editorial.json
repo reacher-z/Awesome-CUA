@@ -63653,5 +63653,84 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Gumloop",
+    "kind": "product",
+    "url": "https://www.gumloop.com",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Business agent platform whose agents work through app connectors and can turn on a Chromium browser that clicks, types, signs in with saved logins and hands control to a person when a site needs it.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Gumloop"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://docs.gumloop.com/core-concepts/agent_browser.md",
+        "sha256": "09680f7a7bd80c485b7bc69583ed882eb1ac5d230ef97553112613f26d17d17c",
+        "retrieved_at": "2026-10-20T04:22:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://docs.gumloop.com/help/browser/browser-vs-connector-vs-api.md",
+        "sha256": "6b2411e22fbb7c3c131dca0ffb3b81681b1da711c6de351ff488e2c8f4c76e48",
+        "retrieved_at": "2026-10-20T04:22:04Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "notes"
+        ],
+        "url": "https://docs.gumloop.com/core-concepts/agents.md",
+        "sha256": "6f063740cfda0e1f87f257a3eff558fd7aefb632cf9b8542af2a5497494b4012",
+        "retrieved_at": "2026-10-20T04:22:05Z"
+      }
+    ],
+    "details": {
+      "access": "publisher-managed",
+      "pricing_url": "https://www.gumloop.com/pricing",
+      "availability": "not independently tested"
+    },
+    "notes": "Recorded as adjacent: Gumloop presents itself as a platform for building, sharing and running AI agents for business teams, which work mainly through app connectors, MCP servers and APIs, and its help pages advise using the agent browser only when no connector or API covers a task. The agent browser is an ability turned on per custom agent, and on Enterprise organizations it is off by default until an admin adds it to a role. It runs Chromium on the agent's computer, which shares the agent's code sandbox, and opens pages, clicks, types, scrolls and switches tabs. Gumloop types saved logins and 2FA codes for the agent without showing them to the model, keeps sign-ins in browser profiles, offers residential proxies and desktop or Pixel 7 mobile emulation, and pauses to hand the live browser to a person at logins, CAPTCHAs or purchase confirmations. Every browser step is recorded for replay. Agents can also be reached from Slack, Microsoft Teams, email and text messages. Pricing, availability and reliability were not independently tested, and no task was run.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "642e4fdd4ba7dc302015dbcc14d2693bfa73c6dbc3db7ef6ffc490fba2e43ed3",
+    "reviewed_at": "2026-10-20T04:22:14Z"
   }
 ]

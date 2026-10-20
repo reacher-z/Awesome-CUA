@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Known By Their Actions: Fingerprinting LLM Browser Agents via UI Traces",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.14786",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "recording",
+      "web-navigation"
+    ],
+    "summary": "Shows that a website can infer which of 14 multimodal LLMs drives a browser agent from passively logged clicks, scrolls, keystrokes and timing, with classifiers reaching up to 96% F1, and tests randomized-delay defenses.",
+    "verify_terms": [
+      "Fingerprinting LLM Browser Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.14786v1"
+    ],
+    "scope": "core",
+    "notes": "Agents share one screenshot-only Midscene.js harness that issues Playwright commands, and an injected JavaScript observer records their UI events. The dataset splits total 1,050 live-web tasks adapted from 2WikiMultiHop and FRAMES on Wikipedia and from WebShop and DeepShop on Amazon. The abstract links the harness and labelled trace corpus at github.com/KabakaWilliam/known_actions. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2605.14786v1",
+        "retrieved_at": "2026-10-20T04:14:14Z",
+        "sha256": "d0d91c8c429cc521c8d35755dc8d7edfc98d74b269179fea45381ed781852a99",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 3 and 4 (threat model, Table 1 dataset splits, models, Midscene.js harness and trace collection).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d437b8ee7d4f0e645cbdbb0c7318652e4bae19896f4c6f8e8a4ced3bd6c58bdc",
+    "reviewed_at": "2026-10-20T04:14:30Z"
   }
 ]

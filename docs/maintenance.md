@@ -119,6 +119,29 @@ Reviewed license decisions can override machine extraction through `reviewed_lic
 
 Discovery occurrences preserve `receipt_id` and the source URL, SHA-256 and retrieval time in `evidence`; a later failed source run cannot erase that provenance or masquerade as a successful refresh. Backfilling older occurrences requires a matching retained successful receipt. HTTP 429 deferral is scoped to the provider host; unrelated sources can continue. A successful response that yields fewer than half of a source's retained candidates, including an empty body, is recorded as a failed `suspicious shrink` run and keeps the earlier occurrences. After confirming the upstream change, apply it with `python3 scripts/catalog.py discover --refresh --accept-shrink <source-id>`.
 
+## Land many data pull requests
+
+Independent data pull requests, such as those labelled `candidate-review`, each commit rebuilt views and append to the same authored lists, so merging one leaves the rest conflicting. `scripts/land_prs.py` lands a reviewed set on one local branch from a clean checkout, with an authenticated `gh` and the interpreter that runs `catalog.py`:
+
+```bash
+.venv/bin/python scripts/land_prs.py --label candidate-review --dry-run
+.venv/bin/python scripts/land_prs.py 301 305 312
+git push origin land/20261018-091500:main
+```
+
+It creates `land/<UTC timestamp>` (or `--branch`) from `origin/main`, which must pass `validate` and `build --check`, and merges each PR head with `--no-ff`: the given numbers in order, or open PRs with `--label`, oldest first. Where both sides changed a keyed input, entries are merged three-way from the merge base, in the branch's order with the PR's new entries appended; `primary-evidence.jsonl`, `enrichment.jsonl` and `papers.jsonl` stay sorted by `id`.
+
+| File | Entry key |
+| --- | --- |
+| `editorial.json` | `id`, else the URL identity ([Editorial input](editorial-input.md#resource-id)) |
+| `candidate-reviews.json` | `id`, or `url_prefix` |
+| `repository-aliases.json` | `alias_id` |
+| `exclusions.json`, `sources.json`, `publications.jsonl`, `primary-evidence.jsonl`, `enrichment.jsonl`, `papers.jsonl` | `id` |
+
+A conflicting [build output](data-dictionary.md#authored-and-generated-files) takes the branch's side and is regenerated; in both READMEs and the data dictionary, only the text outside the generated blocks is merged. The PR is skipped, and the branch reset to the previous merge, when an entry was changed differently on both sides, any other file conflicts, or `build`, `validate` or `build --check` fails. A PR that changes files outside `data/`, `docs/` and top-level Markdown is also skipped unless you pass `--allow-code`, because the build would run its code on your machine. Each landed PR becomes the commit `Merge #N: <title>` with the PR head as second parent, so GitHub marks it merged once the branch reaches `main`.
+
+The script prints a table of merged and skipped PRs, returns to the original checkout and exits 1 if it skipped any. It never pushes: review the branch, then run the printed `git push`, which fails if `main` moved in the meantime; rerun the script then. `--dry-run` performs the same merges and checks, then deletes the branch. Ask the authors of skipped PRs to rebase as [CONTRIBUTING](../CONTRIBUTING.md#resolving-conflicts-with-the-scheduled-scan) describes.
+
 ## Versioned data releases
 
 The website's downloads always show the latest snapshot, and the `cua-catalog` artifact of a Catalog quality run expires after 90 days. A pinned, citable version is a GitHub release made by `.github/workflows/release.yml`. Releases are cut by hand, and no workflow creates or moves a tag. Tag a `main` commit whose Catalog quality run passed, using the snapshot date as the version, and push the tag:

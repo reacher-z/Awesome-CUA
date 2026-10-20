@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-30 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+31 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (14)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (15)](#papers)
 
 ## Benchmarks
 
@@ -76,6 +76,7 @@ All entries in this section: desktop, macos, linux.
 | 2026‑03‑10 | [Video-Based Reward Modeling for Computer-Use Agents](https://arxiv.org/abs/2603.10178) | desktop, linux, macos, windows, android | Builds ExeVR-53k from execution-video, instruction and reward triplets, including negative instructions with step annotations. A reward model uses spatiotemporal token pruning to judge task completion from the instruction and execution keyframes. |
 | 2025‑11‑25 | ["Are We Done Yet?": A Vision-Based Judge for Autonomous Task Completion of Computer Use Agents](https://arxiv.org/abs/2511.20067) | desktop, macos | This study tests vision-language models as task-completion judges using screenshots and instructions from 42 built-in macOS applications. It evaluates judgment accuracy on human-labeled tasks and separately studies how judge feedback affects agent task success. |
 | 2025‑10‑16 | [GUIrilla: A Scalable Framework for Automated Desktop UI Exploration](https://arxiv.org/abs/2510.16051) | macos, desktop | GUIrilla systematically explores macOS interfaces to collect interaction traces and accessibility metadata for downstream GUI research. It organizes these observations into hierarchical MacApp Trees and describes an accessibility-driven collection library. |
+| 2025‑10‑16 | [State Your Intention to Steer Your Attention: An AI Assistant for Intentional Digital Living](https://arxiv.org/abs/2510.14513) | desktop, macos | Presents INA, a macOS assistant whose LLM checks screenshots, app titles and URLs against a stated intention and sends nudges, evaluated on the 350-session IntentionBench and a 22-person field study. |
 | 2025‑07‑25 | [MMBench-GUI: Hierarchical Multi-Platform Evaluation Framework for GUI Agents](https://arxiv.org/abs/2507.19478) | web, desktop, windows, macos, linux, ios, android, cross-platform | MMBench-GUI evaluates interface understanding, element grounding, task automation, and collaboration across six named desktop, mobile, and web platforms. It introduces the Efficiency-Quality Area metric for examining execution efficiency alongside task quality in online GUI automation. |
 | 2025‑06‑04 | [macOSWorld: A Multilingual Interactive Benchmark for GUI Agents](https://arxiv.org/abs/2506.04135) | macos, desktop | macOSWorld provides 202 interactive tasks across 30 applications, with instructions and operating-system interfaces in five languages. It evaluates GUI agents on macOS workflows and includes a separate subset for deception-attack testing. |
 | 2024‑04‑11 | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) | desktop, linux, windows, macos | Introduces a real-computer evaluation environment with execution-based checks for tasks spanning desktop applications and operating-system state. |

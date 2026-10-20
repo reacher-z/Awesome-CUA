@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+84 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (76)](#papers)
 
 ## Benchmarks
 
@@ -70,6 +70,7 @@ All entries in this section: unspecified.
 | 2025‑12‑26 | [MAI-UI Technical Report: Real-World Centric Foundation GUI Agents](https://arxiv.org/abs/2512.22047) | android | MAI-UI combines GUI navigation, native user interaction, and MCP tool calls in a family of policies trained through generated data and online reinforcement learning. The report also studies device-cloud routing and scaling of parallel environments and interaction budgets, with grounding and Android navigation evaluation. |
 | 2025‑12‑01 | [DrawingBench: Evaluating Spatial Reasoning and UI Interaction Capabilities of Large Language Models through Mouse-Based Drawing Tasks](https://arxiv.org/abs/2512.01174) | unspecified | DrawingBench evaluates sequences of low-level mouse-based GUI actions through 250 drawing prompts and rule-based criteria. Action inspection and multi-turn external feedback support analysis of spatial reasoning, tool-state management, and refinement. |
 | 2025‑11‑28 | [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) | web | LegalWebAgent separates user-needs clarification, webpage browsing, and actions such as form completion or scheduling. A 15-task evaluation studies legal-service workflows relevant to Québec civil-law users, using HTML and screenshot observations. |
+| 2025‑10‑16 | [State Your Intention to Steer Your Attention: An AI Assistant for Intentional Digital Living](https://arxiv.org/abs/2510.14513) | desktop, macos | Presents INA, a macOS assistant whose LLM checks screenshots, app titles and URLs against a stated intention and sends nudges, evaluated on the 350-session IntentionBench and a 22-person field study. |
 | 2025‑10‑09 | [ReInAgent: A Context-Aware GUI Agent Enabling Human-in-the-Loop Mobile Task Navigation](https://arxiv.org/abs/2510.07988) | unspecified | Introduces ReInAgent, coordinating information management, planning, and reflection around a shared memory for mobile tasks. It proactively asks users for information and checks consistency when instructions are ambiguous or change during execution. |
 | 2025‑10‑02 | [BrowserArena: Evaluating LLM Agents on Real-World Web Navigation Tasks](https://arxiv.org/abs/2510.02418) | web | Introduces BrowserArena, a live-web platform for head-to-head agent comparisons on user-submitted tasks. Step-level human annotations support targeted analysis of navigation, pop-up handling and CAPTCHA-related failures. |
 | 2025‑09‑25 | [Robust, Observable, and Evolvable Agentic Systems Engineering: A Principled Framework Validated via the Fairy GUI Agent](https://arxiv.org/abs/2509.20729) | unspecified | Presents an agent-engineering framework combining runtime goal clarification, an observable component architecture and evolving execution memory. The Fairy mobile GUI agent evaluates these mechanisms on ambiguous tasks and through controlled and user studies. |

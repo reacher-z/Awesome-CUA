@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "State Your Intention to Steer Your Attention: An AI Assistant for Intentional Digital Living",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.14513",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "human-in-the-loop"
+    ],
+    "summary": "Presents INA, a macOS assistant whose LLM checks screenshots, app titles and URLs against a stated intention and sends nudges, evaluated on the 350-session IntentionBench and a 22-person field study.",
+    "verify_terms": [
+      "State Your Intention to Steer Your Attention"
+    ],
+    "scope": "adjacent",
+    "notes": "INA clarifies the intention through a short dialogue, scores on-screen context with Gemini 2.0 Flash, issues dismissible notifications and learns from user feedback on wrong detections. IntentionBench mixes 50 author-recorded focused sessions over 14 applications and 32 websites into 350 sessions with 138,803 screen captures (about 77 hours); the paper reports 0.878 accuracy and 0.845 F1 and states the dataset will be released. The three-week deployment compares INA with a rule-based reminder and a logging-only baseline. The assistant observes the screen but does not operate the interface. The comment field states CHI 2026 acceptance; the project page intentassistant.github.io is not recorded here, and no results were reproduced.",
+    "read_basis": "Read the arXiv v3 abstract and the full v3 HTML text: Sections 1-9, Tables 1-4 and Appendices A-C.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.14513v3"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.14513v3",
+        "retrieved_at": "2026-10-20T07:44:51Z",
+        "sha256": "fe9754c4eca583c2646363cc02f6bbca503121a3822c71e4b51c89d164544dbf",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8879f9c4bcae9c3b6401e18243855e7867fc98eccf138a04e44614e4c12a0335",
+    "reviewed_at": "2026-10-20T07:45:13Z"
   }
 ]

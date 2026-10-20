@@ -63844,5 +63844,113 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Shadow",
+    "kind": "tool",
+    "url": "https://github.com/ghostwright/shadow",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "recording",
+      "data-generation",
+      "grounding",
+      "memory",
+      "screen-understanding"
+    ],
+    "summary": "macOS app that records screen, audio, input events and accessibility trees on-device, builds searchable episodes, and replays learned procedures through AX-first grounding with a LoRA-tuned ShowUI-2B fallback.",
+    "scope": "core",
+    "verify_terms": [
+      "Shadow"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations"
+    ],
+    "notes": "Requires Apple Silicon, macOS 14 or later and a source build (Swift 6, Rust, XcodeGen). GroundingOracle.swift resolves targets for the Mimicry replay system in four steps: exact accessibility-tree match, fuzzy accessibility match, a local ShowUI-2B model on MLX over a live screenshot, then a vision-model escalation. TrainingDataGenerator.swift turns recorded (screenshot, accessibility state, click) tuples into JSONL grounding examples, and LoRATrainer.swift fine-tunes ShowUI-2B on them through the mlx-vlm Python package once enough new tuples accumulate. The README describes the capture of fourteen signal types, on-device Qwen and Whisper models, a 26-tool agent runtime, and points to a separate computer-use engine from the same publisher for full computer use. Cloud model features are optional with the user's own API key. Code was read, not run.",
+    "details": {
+      "availability": "Public Swift and Rust source built locally; models such as ShowUI-2B, Qwen and Whisper are downloaded separately during setup and are not covered by the repository license.",
+      "repository_revision": "5eef3683b0654e1a1123fe63efa015e257efcdb5"
+    },
+    "reviewed_relations": [
+      {
+        "type": "uses",
+        "target_id": "github:showlab/showui",
+        "evidence_url": "https://raw.githubusercontent.com/ghostwright/shadow/5eef3683b0654e1a1123fe63efa015e257efcdb5/Shadow/Shadow/Intelligence/Grounding/GroundingOracle.swift"
+      }
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/ghostwright/shadow/5eef3683b0654e1a1123fe63efa015e257efcdb5/README.md",
+        "sha256": "019cacc0c585b5c26ba2a4f7fc72cec2fdb43fa02fdecdad1c0904a3fadbcbb4",
+        "retrieved_at": "2026-10-20T08:22:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/ghostwright/shadow/5eef3683b0654e1a1123fe63efa015e257efcdb5/Shadow/Shadow/Intelligence/Grounding/GroundingOracle.swift",
+        "sha256": "d9e2ec54f562462e713558ca72adf8aab7c141e3fd8b2537c480ff0bf206c00f",
+        "retrieved_at": "2026-10-20T08:22:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ghostwright/shadow/5eef3683b0654e1a1123fe63efa015e257efcdb5/Shadow/Shadow/Intelligence/Grounding/LoRATrainer.swift",
+        "sha256": "c74efecb59f211eaf572a0756133bbd94ff087bac340f7e47ecb3b5436acc54f",
+        "retrieved_at": "2026-10-20T08:22:15Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "topics",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ghostwright/shadow/5eef3683b0654e1a1123fe63efa015e257efcdb5/Shadow/Shadow/Intelligence/Grounding/TrainingDataGenerator.swift",
+        "sha256": "1550f777dfb4df1cf5ff47f1ca58bac0c928a60e2214c08baad74143e1ff5207",
+        "retrieved_at": "2026-10-20T08:22:16Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ghostwright/shadow/5eef3683b0654e1a1123fe63efa015e257efcdb5/LICENSE",
+        "sha256": "8c578527d5aac83a4efb4f3a19969bae14853e0f5b0646ae59afff3dc90d36fa",
+        "retrieved_at": "2026-10-20T08:22:16Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit 5eef368, the grounding oracle, LoRA trainer and training-data generator sources, and the root LICENSE. No code execution.",
+    "reviewed_sha256": "019cacc0c585b5c26ba2a4f7fc72cec2fdb43fa02fdecdad1c0904a3fadbcbb4",
+    "reviewed_at": "2026-10-20T08:22:37Z"
   }
 ]

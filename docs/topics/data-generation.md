@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-339 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+340 source-reviewed resources tagged `data-generation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (1)](#tools) · [Papers (258)](#papers)
+**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (2)](#tools) · [Papers (258)](#papers)
 
 ## Datasets
 
@@ -110,11 +110,10 @@ All entries in this section: android.
 
 ## Tools
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Shadow](https://github.com/ghostwright/shadow) | desktop, macos | — | code MIT | macOS app that records screen, audio, input events and accessibility trees on-device, builds searchable episodes, and replays learned procedures through AX-first grounding with a LoRA-tuned ShowUI-2B fallback. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ghostwright/shadow/HEAD/README.md) |
+| [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 
 ## Papers
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-374 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+375 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (6)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (7)](#tools) · [Products (1)](#products) · [Papers (246)](#papers)
 
 ## Benchmarks
 
@@ -159,6 +159,7 @@
 | [OculiX (SikuliX continuation)](https://github.com/oculix-org/Oculix) | desktop, windows, macos, linux, android | — | code MIT | A maintained continuation of SikuliX that locates on-screen targets with image matching and OCR, drives desktop or Android interfaces, and exposes scripting and optional MCP interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/oculix-org/Oculix/HEAD/README.md) |
 | [OmniParser](https://github.com/microsoft/OmniParser) | cross-platform | [2408.00203](https://arxiv.org/abs/2408.00203) (2024) | — | Screenshot parser that detects interactable regions and captions icons so vision-language models can ground actions, released as V1.5 and V2 weights alongside OmniTool for driving a Windows 11 VM. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
 | [Set of Mark](https://github.com/microsoft/SoM) | unspecified | [2310.11441](https://arxiv.org/abs/2310.11441) (2023) | code MIT | Visual-prompting toolbox that labels image regions for multimodal reference and grounding, including GUI applications. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/SoM/HEAD/README.md) |
+| [Shadow](https://github.com/ghostwright/shadow) | desktop, macos | — | code MIT | macOS app that records screen, audio, input events and accessibility trees on-device, builds searchable episodes, and replays learned procedures through AX-first grounding with a LoRA-tuned ShowUI-2B fallback. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ghostwright/shadow/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 | [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | web | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
 | [WebMarker](https://github.com/reidbarber/webmarker) | web | — | code MIT | A browser library that labels interactive elements and their boxes for visual prompting, preserving element mappings that automation code can use to execute selected actions. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/reidbarber/webmarker/HEAD/README.md) |

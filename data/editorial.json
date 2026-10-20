@@ -63653,5 +63653,71 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Accio Work",
+    "kind": "product",
+    "url": "https://www.accio.com/work",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Agent workspace powered by Alibaba for small-business sourcing, store operations and marketing, whose agents can operate the user's own Chromium browser to navigate, click, type, take screenshots and extract data.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Accio Work"
+    ],
+    "evidence_urls": [
+      "https://www.accio.com/work/documents/en/help-about.html"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "topics",
+          "notes"
+        ],
+        "url": "https://www.accio.com/work/documents/en/browser-use-guide.html",
+        "sha256": "f976988baa346489dfab7cff711a5f123c1f6255f79a186e85e6269c71aa7c75",
+        "retrieved_at": "2026-10-20T04:11:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://www.accio.com/work/documents/en/agent-tools-guide.html",
+        "sha256": "5b56e941e5b0de63ffaf804d9e7f5eb23e08e27dd8d3ea300f661063453f7b44",
+        "retrieved_at": "2026-10-20T04:11:24Z"
+      }
+    ],
+    "details": {
+      "access": "publisher-managed",
+      "availability": "not independently tested"
+    },
+    "notes": "Recorded as adjacent: the publisher presents Accio Work, powered by Alibaba, as an agent team for small and medium businesses covering market research, sourcing, storefront operation and marketing, and browser control is one of its tool sets. The Agent Tools Guide lists browser operations (clicks, navigation, screenshots and scripts) in the Full capability preset used by the Coder and Shopify Dropshipper templates, marked as requiring authorization; browser operations need user approval by default. The Browser Use Guide connects agents to the user's own logged-in browser either through the Accio Browser Relay extension, loaded unpacked from the Accio Work installation into any Chromium browser, or through Direct CDP (beta) on Chrome, over a local 127.0.0.1 connection with token authentication. Other tools cover files, terminal commands, web search and fetch, image generation and analysis, scheduled tasks and multi-agent group chats. The /work landing page is a client-rendered app whose HTML changes on every request, so the receipts are the publisher's static help documents. Pricing and licensing were not reviewed.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f91933b3793789f88435067aee77d851b01adb06d9893cda1a8f0fd0d6570871",
+    "reviewed_at": "2026-10-20T04:12:31Z"
   }
 ]

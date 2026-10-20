@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ce318faf98d8a518c31d",
+    "url": "https://www.socialcrawl.dev",
+    "decision": "out_of_scope",
+    "reason": "SocialCrawl is a commercial data API that returns public profiles, posts, comments and search results from social and commerce platforms in one JSON schema, with an MCP server and SDKs for agents. It retrieves data through API calls and does not operate browser, desktop or mobile interfaces, so it is data-retrieval infrastructure rather than a computer-use resource.",
+    "reviewed_at": "2026-10-20T05:11:15Z",
+    "evidence": {
+      "url": "https://www.socialcrawl.dev",
+      "sha256": "c46495ea7b49af6bc2644b70db34997394aa8b28a439c68bd09edd577bd7c3c5",
+      "retrieved_at": "2026-10-20T04:38:46Z"
+    }
   }
 ]

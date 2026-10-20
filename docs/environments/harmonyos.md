@@ -6,13 +6,13 @@
 
 **Contents:** [Frameworks (1)](#frameworks) · [Papers (2)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Frameworks
 
-All entries in this section: android, harmonyos.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [CHOP](https://github.com/Yuqi-Zhou/CHOP) | [2503.03743](https://arxiv.org/abs/2503.03743) (2025) | code MIT | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md) |
+| Resource | Mentions | Other platforms | Description |
+| --- | ---: | --- | --- |
+| [CHOP](https://github.com/Yuqi-Zhou/CHOP) [✓](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md "Source checked 2026-10-16")<br>[2503.03743](https://arxiv.org/abs/2503.03743) (2025) · code MIT | · | Android | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. |
 
 ## Papers
 

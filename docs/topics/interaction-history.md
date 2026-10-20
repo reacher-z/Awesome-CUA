@@ -6,21 +6,23 @@
 
 **Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Papers (46)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Models
 
-All entries in this section: android, desktop.
+All entries in this section: Android, Desktop.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) [✓](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware "Source checked 2026-10-17")<br>[2412.16256](https://arxiv.org/abs/2412.16256) (2024) | 1 | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. |
 
 ## Frameworks
 
-All entries in this section: android.
+All entries in this section: Android.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) [✓](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md "Source checked 2026-10-20")<br>[2606.19926](https://arxiv.org/abs/2606.19926) (2026) | · | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. |
 
 ## Papers
 

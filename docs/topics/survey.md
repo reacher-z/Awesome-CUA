@@ -6,6 +6,8 @@
 
 **Contents:** [Surveys (18)](#surveys) · [Papers (1)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Surveys
 
 | Date | Resource | Environments | Description |

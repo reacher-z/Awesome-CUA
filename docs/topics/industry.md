@@ -6,28 +6,30 @@
 
 **Contents:** [Publishers (16)](#publishers) · [Papers (11)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Publishers
 
-All entries in this section: unspecified.
+All entries in this section: Not specified.
 
-| Resource | Description | Evidence |
-| --- | --- | --- |
-| [Anthropic](https://claude.com/chrome) | Publisher or product brand associated with Anthropic computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://claude.com/chrome) |
-| [AskUI](https://www.askui.com/) | Publisher or product brand associated with AskUI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.askui.com/) |
-| [Browser Use](https://browser-use.com/) | Publisher or product brand associated with Browser Use computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://browser-use.com/) |
-| [BrowserAct](https://www.browseract.com/) | Publisher or product brand associated with BrowserAct computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browseract.com/) |
-| [Browserbase](https://www.browserbase.com/) | Publisher or product brand associated with Browserbase computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browserbase.com/) |
-| [Browserless](https://www.browserless.io/) | Publisher or product brand associated with Browserless computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browserless.io/) |
-| [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
-| [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
-| [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
-| [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
-| [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
-| [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
-| [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
-| [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
-| [Steel](https://steel.dev/) | Publisher or product brand associated with Steel computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://steel.dev/) |
-| [TinyFish](https://www.tinyfish.ai/) | Publisher or product brand associated with TinyFish computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Anthropic](https://claude.com/chrome) [✓](https://claude.com/chrome "Source checked 2026-10-16") | · | Publisher or product brand associated with Anthropic computer-use or browser automation offerings. |
+| [AskUI](https://www.askui.com/) [✓](https://www.askui.com/ "Source checked 2026-10-16") | · | Publisher or product brand associated with AskUI computer-use or browser automation offerings. |
+| [Browser Use](https://browser-use.com/) [✓](https://browser-use.com/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Browser Use computer-use or browser automation offerings. |
+| [BrowserAct](https://www.browseract.com/) [✓](https://www.browseract.com/ "Source checked 2026-10-16") | · | Publisher or product brand associated with BrowserAct computer-use or browser automation offerings. |
+| [Browserbase](https://www.browserbase.com/) [✓](https://www.browserbase.com/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Browserbase computer-use or browser automation offerings. |
+| [Browserless](https://www.browserless.io/) [✓](https://www.browserless.io/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Browserless computer-use or browser automation offerings. |
+| [E2B](https://e2b.dev/) [✓](https://e2b.dev/ "Source checked 2026-10-16") | · | Publisher or product brand associated with E2B computer-use or browser automation offerings. |
+| [Google](https://ai.google.dev/gemini-api/docs/computer-use) [✓](https://ai.google.dev/gemini-api/docs/computer-use "Source checked 2026-10-16") | · | Publisher or product brand associated with Google computer-use or browser automation offerings. |
+| [H](https://hcompany.ai/research/models) [✓](https://hcompany.ai/research/models "Source checked 2026-10-16") | · | Publisher or product brand associated with H computer-use or browser automation offerings. |
+| [Hyperbrowser](https://www.hyperbrowser.ai/) [✓](https://www.hyperbrowser.ai/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. |
+| [Manus](https://manus.im/) [✓](https://manus.im/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Manus computer-use or browser automation offerings. |
+| [OpenAI](https://openai.com/index/computer-using-agent/) [✓](https://openai.com/index/computer-using-agent/ "Source checked 2026-10-16") | · | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. |
+| [Simular](https://www.simular.ai/) [✓](https://www.simular.ai/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Simular computer-use or browser automation offerings. |
+| [Skyvern](https://www.skyvern.com/) [✓](https://www.skyvern.com/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. |
+| [Steel](https://steel.dev/) [✓](https://steel.dev/ "Source checked 2026-10-16") | · | Publisher or product brand associated with Steel computer-use or browser automation offerings. |
+| [TinyFish](https://www.tinyfish.ai/) [✓](https://www.tinyfish.ai/ "Source checked 2026-10-16") | · | Publisher or product brand associated with TinyFish computer-use or browser automation offerings. |
 
 ## Papers
 

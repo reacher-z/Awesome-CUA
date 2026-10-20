@@ -6,13 +6,15 @@
 
 **Contents:** [Datasets (1)](#datasets) · [Papers (21)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Datasets
 
-All entries in this section: unspecified.
+All entries in this section: Not specified.
 
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+| Resource | Mentions | Scale | Description |
+| --- | ---: | --- | --- |
+| [UICrit](https://github.com/google-research-datasets/uicrit) [✓](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md "Source checked 2026-10-17") | · | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. |
 
 ## Papers
 

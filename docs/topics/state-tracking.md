@@ -6,13 +6,15 @@
 
 **Contents:** [Frameworks (3)](#frameworks) · [Papers (45)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Frameworks
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
-| [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
-| [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [AgentProg](https://github.com/MobileLLM/AgentProg) [✓](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md "Source checked 2026-10-18")<br>[2512.10371](https://arxiv.org/abs/2512.10371) (2025) · code Apache‑2.0 | · | Android | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. |
+| [StateAct](https://github.com/ai-nikolai/StateAct) [✓](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md "Source checked 2026-10-17")<br>[2410.02810](https://arxiv.org/abs/2410.02810) (2024) | · | Web | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. |
+| [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) [✓](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md "Source checked 2026-10-18")<br>[2503.18492](https://arxiv.org/abs/2503.18492) (2025) | · | Android | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. |
 
 ## Papers
 

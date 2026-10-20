@@ -6,32 +6,34 @@
 
 **Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (29)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Models
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
-| [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md) |
-| [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) [✓](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md "Source checked 2026-10-17")<br>[2504.14239](https://arxiv.org/abs/2504.14239) (2025) · weights apache‑2.0 | · | Web, Desktop, Android | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. |
+| [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) [✓](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md "Source checked 2026-10-17")<br>[2508.09123](https://arxiv.org/abs/2508.09123) (2025) · weights mit | · | Desktop, Linux, Windows, macOS | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. |
+| [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) [✓](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md "Source checked 2026-10-17")<br>[2508.09123](https://arxiv.org/abs/2508.09123) (2025) · weights mit | · | Desktop, Linux, Windows, macOS | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. |
 
 ## Agents
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
-| [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
-| [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
-| [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [MobA](https://github.com/OpenDFM/MobA) [✓](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md "Source checked 2026-10-17")<br>[2410.13757](https://arxiv.org/abs/2410.13757) (2024) | · | Android | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. |
+| [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) [✓](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md "Source checked 2026-10-18")<br>[2501.11733](https://arxiv.org/abs/2501.11733) (2025) · code MIT | · | Android | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. |
+| [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) [✓](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md "Source checked 2026-10-18")<br>[2502.14282](https://arxiv.org/abs/2502.14282) (2025) · code MIT | · | Desktop, Windows, macOS | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. |
+| [RCI Agent](https://github.com/posgnu/rci-agent) [✓](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md "Source checked 2026-10-17")<br>[2303.17491](https://arxiv.org/abs/2303.17491) (2023) · code MIT | · | Web | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. |
 
 ## Frameworks
 
-All entries in this section: web.
+All entries in this section: Web.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
-| [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) [✓](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md "Source checked 2026-10-17")<br>[2501.11425](https://arxiv.org/abs/2501.11425) (2025) · code Apache‑2.0 | · | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. |
+| [Self-MAP](https://github.com/magicgh/Self-MAP) [✓](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md "Source checked 2026-10-17")<br>[2402.15057](https://arxiv.org/abs/2402.15057) (2024) · code MIT | · | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) [✓](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md "Source checked 2026-10-18")<br>[2504.21024](https://arxiv.org/abs/2504.21024) (2025) · code MIT | · | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. |
 
 ## Papers
 

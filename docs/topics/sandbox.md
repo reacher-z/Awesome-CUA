@@ -6,42 +6,44 @@
 
 **Contents:** [Benchmarks (3)](#benchmarks) · [Frameworks (2)](#frameworks) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Papers (38)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-| Resource | Environments | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| [AppSim-Bench](https://github.com/Acrab-Agentic-Labs/AppSim) | android | [2609.07712](https://arxiv.org/abs/2609.07712) (2026) | [557 tasks](https://arxiv.org/abs/2609.07712) · [17 applications](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) | — | Simulated mobile applications and evaluation tooling for reproducible GUI-agent tasks with controlled application state. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) |
-| [MobileGym](https://github.com/Purewhiter/mobilegym) | web | [2605.26114](https://arxiv.org/abs/2605.26114) (2026) | [416 task templates](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [28 simulated apps](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [160 task identifiers](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/bench_env/splits/train.txt) | code Apache-2.0 · data CC-BY-NC-4.0 | A browser-hosted mobile-app simulator with programmable state, parameterized tasks and deterministic state-checking judges for parallel GUI-agent evaluation and online reinforcement learning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) |
-| [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
+| Resource | Mentions | Platforms | Scale | Description |
+| --- | ---: | --- | --- | --- |
+| [MobileGym](https://github.com/Purewhiter/mobilegym) [✓](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md "Source checked 2026-10-17")<br>[2605.26114](https://arxiv.org/abs/2605.26114) (2026) · code Apache‑2.0 · data CC‑BY‑NC‑4.0 | 1 | Web | [416 task templates](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [28 simulated apps](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [160 task identifiers](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/bench_env/splits/train.txt) | A browser-hosted mobile-app simulator with programmable state, parameterized tasks and deterministic state-checking judges for parallel GUI-agent evaluation and online reinforcement learning. |
+| [AppSim-Bench](https://github.com/Acrab-Agentic-Labs/AppSim) [✓](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md "Source checked 2026-10-16")<br>[2609.07712](https://arxiv.org/abs/2609.07712) (2026) | · | Android | [557 tasks](https://arxiv.org/abs/2609.07712) · [17 applications](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) | Simulated mobile applications and evaluation tooling for reproducible GUI-agent tasks with controlled application state. |
+| [OpenApps](https://github.com/facebookresearch/OpenApps) [✓](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md "Source checked 2026-10-18")<br>[2511.20766](https://arxiv.org/abs/2511.20766) (2025) · code CC‑BY‑NC‑4.0 | · | Web | — | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. |
 
 ## Frameworks
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
-| [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [AgentStudio](https://github.com/skyworkai/agent-studio) [✓](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md "Source checked 2026-10-18")<br>[2403.17918](https://arxiv.org/abs/2403.17918) (2024) · code AGPL‑3.0 | · | Desktop, Linux | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. |
+| [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) [✓](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md "Source checked 2026-10-17")<br>[2505.21936](https://arxiv.org/abs/2505.21936) (2025) · code Apache‑2.0 | · | Web, Desktop | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. |
 
 ## Infrastructure
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [Agent Infra Sandbox](https://github.com/agent-infra/sandbox) | desktop, web | — | code Apache-2.0 | Sandbox environments supporting computer and browser interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agent-infra/sandbox/HEAD/README.md) |
-| [AgentDesk](https://github.com/agentsea/agentdesk) | desktop | — | code MIT | Desktop environments that AI agents control programmatically, run locally with Docker or remotely on Kubernetes, built on the agentd REST daemon and offering a coordinate-grid overlay for LMM input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/agentdesk/HEAD/README.md) |
-| [AndroidEnv](https://github.com/google-deepmind/android_env) | android | [2105.13231](https://arxiv.org/abs/2105.13231) (2021) | code Apache-2.0 | Android device-control platform with screenshots, accessibility telemetry, input actions, and an optional reinforcement-learning task interface. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-deepmind/android_env/HEAD/README.md) |
-| [E2B Desktop](https://github.com/e2b-dev/desktop) | desktop, linux | — | code Apache-2.0 | Open-source, isolated Linux Xfce desktop sandboxes for computer-use agents, driven from Python or JavaScript SDKs with screen streaming, mouse, keyboard and window control, screenshots and shell. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/e2b-dev/desktop/HEAD/README.md) |
-| [Lume](https://github.com/trycua/lume) | desktop, macos, linux | — | code MIT | Virtual machine management for local computer-use environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md) |
-| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
-| [Steel Browser](https://github.com/steel-dev/steel-browser) | web | — | code Apache-2.0 | Open-source browser API managing Chrome sessions for agents, reachable through Puppeteer, Playwright or Selenium over CDP, with persisted cookies, proxy rotation, stealth and a session debugging UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/steel-dev/steel-browser/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [AndroidEnv](https://github.com/google-deepmind/android_env) [✓](https://raw.githubusercontent.com/google-deepmind/android_env/HEAD/README.md "Source checked 2026-10-16")<br>[2105.13231](https://arxiv.org/abs/2105.13231) (2021) · code Apache‑2.0 | 4 | Android | Android device-control platform with screenshots, accessibility telemetry, input actions, and an optional reinforcement-learning task interface. |
+| [E2B Desktop](https://github.com/e2b-dev/desktop) [✓](https://raw.githubusercontent.com/e2b-dev/desktop/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | 2 | Desktop, Linux | Open-source, isolated Linux Xfce desktop sandboxes for computer-use agents, driven from Python or JavaScript SDKs with screen streaming, mouse, keyboard and window control, screenshots and shell. |
+| [Steel Browser](https://github.com/steel-dev/steel-browser) [✓](https://raw.githubusercontent.com/steel-dev/steel-browser/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | 2 | Web | Open-source browser API managing Chrome sessions for agents, reachable through Puppeteer, Playwright or Selenium over CDP, with persisted cookies, proxy rotation, stealth and a session debugging UI. |
+| [Agent Infra Sandbox](https://github.com/agent-infra/sandbox) [✓](https://raw.githubusercontent.com/agent-infra/sandbox/HEAD/README.md "Source checked 2026-10-16")<br>code Apache‑2.0 | 1 | Desktop, Web | Sandbox environments supporting computer and browser interaction. |
+| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) [✓](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md "Source checked 2026-10-17")<br>[2505.19897](https://arxiv.org/abs/2505.19897) (2025) | 1 | Linux, Desktop | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. |
+| [AgentDesk](https://github.com/agentsea/agentdesk) [✓](https://raw.githubusercontent.com/agentsea/agentdesk/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | · | Desktop | Desktop environments that AI agents control programmatically, run locally with Docker or remotely on Kubernetes, built on the agentd REST daemon and offering a coordinate-grid overlay for LMM input. |
+| [Lume](https://github.com/trycua/lume) [✓](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | · | Desktop, macOS, Linux | Virtual machine management for local computer-use environments. |
 
 ## Products
 
-| Resource | Publisher | Environments | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Browserbase Cloud](https://www.browserbase.com/) | [Browserbase](https://www.browserbase.com/) | web | Managed browser infrastructure for agent applications. | [✓ 2026‑10‑16](https://www.browserbase.com/) |
-| [Browserless](https://www.browserless.io/) | [Browserless](https://www.browserless.io/) | web | Hosted browser infrastructure for automation applications. | [✓ 2026‑10‑16](https://www.browserless.io/) |
-| [E2B](https://e2b.dev/) | [E2B](https://e2b.dev/) | desktop | Sandbox infrastructure for executing agent workloads. | [✓ 2026‑10‑16](https://e2b.dev/) |
-| [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | web | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
-| [Steel Cloud](https://steel.dev/) | [Steel](https://steel.dev/) | web | Managed browser infrastructure associated with Steel Browser. | [✓ 2026‑10‑16](https://steel.dev/) |
+| Resource | Mentions | Platforms | Publisher | Description |
+| --- | ---: | --- | --- | --- |
+| [Browserbase Cloud](https://www.browserbase.com/) [✓](https://www.browserbase.com/ "Source checked 2026-10-16") | · | Web | [Browserbase](https://www.browserbase.com/) | Managed browser infrastructure for agent applications. |
+| [Browserless](https://www.browserless.io/) [✓](https://www.browserless.io/ "Source checked 2026-10-16") | · | Web | [Browserless](https://www.browserless.io/) | Hosted browser infrastructure for automation applications. |
+| [E2B](https://e2b.dev/) [✓](https://e2b.dev/ "Source checked 2026-10-16") | · | Desktop | [E2B](https://e2b.dev/) | Sandbox infrastructure for executing agent workloads. |
+| [Hyperbrowser](https://www.hyperbrowser.ai/) [✓](https://www.hyperbrowser.ai/ "Source checked 2026-10-16") | · | Web | [Hyperbrowser](https://www.hyperbrowser.ai/) | Browser infrastructure and automation services for AI agents. |
+| [Steel Cloud](https://steel.dev/) [✓](https://steel.dev/ "Source checked 2026-10-16") | · | Web | [Steel](https://steel.dev/) | Managed browser infrastructure associated with Steel Browser. |
 
 ## Papers
 

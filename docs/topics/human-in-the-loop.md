@@ -6,32 +6,34 @@
 
 **Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
 
+Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source (connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.
+
 ## Benchmarks
 
-All entries in this section: android.
+All entries in this section: Android.
 
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
+| Resource | Mentions | Scale | Description |
+| --- | ---: | --- | --- |
+| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) [✓](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md "Source checked 2026-10-17")<br>[2512.19432](https://arxiv.org/abs/2512.19432) (2025) · code Apache‑2.0 | 2 | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. |
 
 ## Agents
 
-| Resource | Environments | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
-| [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
-| [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |
-| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
-| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| Resource | Mentions | Platforms | Description |
+| --- | ---: | --- | --- |
+| [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) [✓](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md "Source checked 2026-10-16")<br>code MIT | 1 | Web | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. |
+| [COLA demo](https://github.com/Alokia/COLA-demo) [✓](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md "Source checked 2026-10-16")<br>[2503.09263](https://arxiv.org/abs/2503.09263) (2025) | · | Desktop, Windows | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. |
+| [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) [✓](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md "Source checked 2026-10-16")<br>[2401.04124](https://arxiv.org/abs/2401.04124) (2024) | · | Android | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. |
+| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) [✓](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md "Source checked 2026-10-17")<br>code Apache‑2.0 | · | Web | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. |
+| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) [✓](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md "Source checked 2026-10-16")<br>[2503.16465](https://arxiv.org/abs/2503.16465) (2025) | · | Android | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. |
 
 ## Frameworks
 
-All entries in this section: unspecified.
+All entries in this section: Not specified.
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
-| [VeriOS](https://github.com/Wuzheng02/VeriOS) | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
+| Resource | Mentions | Description |
+| --- | ---: | --- |
+| [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) [✓](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md "Source checked 2026-10-16")<br>[2205.11029](https://arxiv.org/abs/2205.11029) (2022) · code MIT | · | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. |
+| [VeriOS](https://github.com/Wuzheng02/VeriOS) [✓](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md "Source checked 2026-10-18")<br>[2509.07553](https://arxiv.org/abs/2509.07553) (2025) | · | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. |
 
 ## Papers
 

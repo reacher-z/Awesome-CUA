@@ -526,6 +526,45 @@ def section_table(members, columns, by_id):
     return lines + ["| " + " | ".join(columns) + " |", "|" + " --- |" * len(columns), *(table_row(r, columns, by_id) for r in members)]
 
 
+def mention_counts(edges):
+    """Distinct other cataloged resources whose reviewed first-party source mentions each resource; the README Highlights measure."""
+    cited_by = collections.defaultdict(set)
+    for edge in edges:
+        if edge["target_in_catalog"] and edge["source_id"] != edge["target_id"]:
+            cited_by[edge["target_id"]].add(edge["source_id"])
+    return {target: len(sources) for target, sources in cited_by.items()}
+
+
+HUB_NOTE = ("Benchmarks, datasets, models and systems are ordered by *Mentions*: how many other cataloged resources mention them in their reviewed first-party source "
+    "(connectedness inside this catalog, not quality or benchmark performance; `·` means none). ✓ links the reviewed source snapshot; hover it for the retrieval date. Papers are newest first.")
+
+
+def hub_table(members, columns, by_id, mentions, hub_env=None):
+    """A hub section of benchmarks, datasets, models or systems: most-mentioned first, with paper and license under the name and evidence folded into it.
+
+    A platform hub lists only the other platforms of each row; a column left empty on every row is dropped."""
+    from paper_library import PLATFORMS as PLATFORM_LABELS
+    members = sorted(members, key=lambda r: (-mentions.get(r["id"], 0), r["name"].casefold()))
+    def platforms(r):
+        envs = [e for e in r["environments"] if e != hub_env]
+        return ", ".join(nowrap(PLATFORM_LABELS[e][0]) if e in PLATFORM_LABELS else "Not specified" for e in envs)
+    def resource(r):
+        primary = next(e for e in r["evidence"] if e["method"] == "editorial_primary_review")
+        leaderboard = (r.get("details") or {}).get("leaderboard_url")
+        name = f"[{md(r['name'])}]({r['url']})" + (f" · [leaderboard]({leaderboard})" if leaderboard else "") + f' [✓]({primary["url"]} "Source checked {primary["retrieved_at"][:10]}")'
+        facts = [x for x in ((paper_cell(r, by_id) if "Paper" in columns else "—"), (nowrap(license_cell(r)) if "License" in columns else "—")) if x != "—"]
+        return name + ("<br>" + " · ".join(facts) if facts else "")
+    label = "Other platforms" if hub_env else "Platforms"
+    shown = [label] if any(platforms(r) for r in members) else []
+    lines = []
+    if not hub_env and len({tuple(r["environments"]) for r in members}) == 1:
+        shown, lines = [], [f"All entries in this section: {platforms(members[0])}.", ""]
+    head = ["Resource", "Mentions", *shown, *(c for c in columns if c in ("Publisher", "Scale")), "Description"]
+    cells = lambda r: {"Resource": resource(r), "Mentions": f"{mentions[r['id']]:,}" if mentions.get(r["id"]) else "·", label: platforms(r) or "—",
+        "Publisher": publisher_cell(r, by_id), "Scale": scale_cell(r), "Description": md(r["summary"])}
+    return lines + ["| " + " | ".join(head) + " |", "| --- | ---: |" + " --- |" * (len(head) - 2), *("| " + " | ".join(cells(r)[c] for c in head) + " |" for r in members)]
+
+
 TOPIC_LABELS = {topic: entry["en"] for topic, entry in TOPICS.items()}
 TOPIC_KINDS = [("benchmark", "Benchmarks"), ("dataset", "Datasets"), ("model", "Models"), ("agent", "Agents"), ("framework", "Frameworks"),
     ("tool", "Tools"), ("infrastructure", "Infrastructure"), ("product", "Products"), ("company", "Publishers"), ("survey", "Surveys"), ("paper", "Papers")]
@@ -541,8 +580,9 @@ def topic_vocabulary():
         *(f"| `{topic}` | {md(entry['en'])} | {md(entry['zh'])} | {md(entry['definition'])} |" for topic, entry in TOPICS.items())]) + "\n"
 
 
-def topic_pages(rows):
+def topic_pages(rows, edges=()):
     """One generated hub per curated topic, listing every reviewed resource kind tagged with it."""
+    mentions = mention_counts(edges)
     by_id = {r["id"]: r for r in rows}
     tagged = collections.defaultdict(list)
     for r in rows:
@@ -564,7 +604,7 @@ def topic_pages(rows):
         index.append(f"| [{topic_label(topic)}](topics/{topic}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(len(papers))} | {newest} |")
         lines = [f"# {topic_label(topic)}", "", f"[Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)", "",
             f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
-            "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower()})" for kind, label in TOPIC_KINDS if kinds[kind]), ""]
+            "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower()})" for kind, label in TOPIC_KINDS if kinds[kind]), "", HUB_NOTE, ""]
         for kind, label in TOPIC_KINDS:
             members = [r for r in group if r["kind"] == kind]
             if not members:
@@ -573,7 +613,8 @@ def topic_pages(rows):
             members.sort(key=lambda r: r["name"].casefold())
             if "Date" in columns:
                 members.sort(key=record_date_text, reverse=True)
-            lines += [f"## {label}", "", *section_table(members, columns, by_id), ""]
+            table = section_table(members, columns, by_id) if "Date" in columns else hub_table(members, columns, by_id, mentions)
+            lines += [f"## {label}", "", *table, ""]
         files[f"docs/topics/{topic}.md"] = "\n".join(lines)
     files["docs/topics.md"] = "\n".join(index + [""])
     return files
@@ -583,8 +624,9 @@ PLATFORMS = [("web", "Web"), ("desktop", "Desktop"), ("windows", "Windows"), ("m
     ("android", "Android"), ("ios", "iOS"), ("harmonyos", "HarmonyOS"), ("cross-platform", "Cross-platform")]
 
 
-def environment_pages(rows):
+def environment_pages(rows, edges=()):
     """One generated hub per platform facet, listing every reviewed resource that carries it."""
+    mentions = mention_counts(edges)
     by_id = {r["id"]: r for r in rows}
     curated = [r for r in rows if r["review_status"] == "curated"]
     files = {}
@@ -601,7 +643,7 @@ def environment_pages(rows):
         index.append(f"| [{label}](environments/{env}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['paper'] + kinds['survey'])} |")
         lines = [f"# {label}", "", "[Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)", "",
             f"{len(group):,} source-reviewed resources tagged `{env}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
-            "**Contents:** " + " · ".join(f"[{name} ({kinds[kind]})](#{name.lower()})" for kind, name in TOPIC_KINDS if kinds[kind]), ""]
+            "**Contents:** " + " · ".join(f"[{name} ({kinds[kind]})](#{name.lower()})" for kind, name in TOPIC_KINDS if kinds[kind]), "", HUB_NOTE, ""]
         for kind, name in TOPIC_KINDS:
             members = sorted((r for r in group if r["kind"] == kind), key=lambda r: r["name"].casefold())
             if not members:
@@ -609,7 +651,8 @@ def environment_pages(rows):
             columns = KIND_COLUMNS.get(kind, KIND_COLUMNS[None])[0]
             if "Date" in columns:
                 members.sort(key=record_date_text, reverse=True)
-            lines += [f"## {name}", "", *section_table(members, columns, by_id), ""]
+            table = section_table(members, columns, by_id) if "Date" in columns else hub_table(members, columns, by_id, mentions, hub_env=env)
+            lines += [f"## {name}", "", *table, ""]
         files[f"docs/environments/{env}.md"] = "\n".join(lines)
     files["docs/environments.md"] = "\n".join(index + [""])
     return files
@@ -631,7 +674,7 @@ def pending_breakdown(pending):
         f"{n['reviewer_hold']} held by a reviewer after reading the current source, and {n['scope_revalidation']} awaiting another scope review.")
 
 
-def documents(rows, report):
+def documents(rows, report, edges=()):
     files = {}
     by_id = {r["id"]: r for r in rows}
     grouped = collections.defaultdict(list)
@@ -680,8 +723,8 @@ def documents(rows, report):
             paper_lines.append(f"| {record_date_text(r) or '—'} | [{md(r['name'])}]({r['url']}) | {'⭐ reviewed' if curated else 'metadata'} | {topics} |")
         paper_lines.append("")
     files["docs/papers.md"] = "\n".join(paper_lines)
-    hubs = topic_pages(rows)
-    hubs.update(environment_pages(rows))
+    hubs = topic_pages(rows, edges)
+    hubs.update(environment_pages(rows, edges))
     if hubs.keys() & files.keys():
         raise ValueError("Generated paths assigned twice: " + ", ".join(sorted(hubs.keys() & files.keys())))
     files.update(hubs)
@@ -916,6 +959,18 @@ def write_sqlite(rows, path):
         temporary.unlink(missing_ok=True)
 
 
+def reference_edges(rows, ids):
+    """Mentions extracted from each record's current reviewed source snapshot; stale enrichment is skipped."""
+    edges = []
+    row_map = {r["id"]: r for r in rows}
+    for r in read_jsonl(DATA / "enrichment.jsonl"):
+        if r["id"] not in ids or not any(e["sha256"] == r.get("evidence_sha256") for e in row_map[r["id"]]["evidence"]):
+            continue
+        for ref in r.get("references", []):
+            edges.append({"id": hashlib.sha256((r["id"] + "\0" + ref["target_id"]).encode()).hexdigest()[:24], "source_id": r["id"], **ref, "target_in_catalog": ref["target_id"] in ids})
+    return edges
+
+
 def build(args):
     rows, pending, scope_decisions = source_records(with_scope=True)
     errors = validate_records(rows)
@@ -924,11 +979,12 @@ def build(args):
         raise ValueError("\n".join(errors[:30]))
     report = coverage(rows, pending, scope_decisions)
     print_uncurated_linked_papers(report["uncurated_linked_papers"])
-    files = documents(rows, report)
+    ids = {r["id"] for r in rows}
+    edges = reference_edges(rows, ids)
+    files = documents(rows, report, edges)
     files["data/catalog.jsonl"] = "".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in rows)
     files["data/coverage.json"] = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
     files['data/exclusion-status.json'] = json.dumps(scope_report(scope_decisions),ensure_ascii=False,indent=2)+'\n'
-    ids = {r["id"] for r in rows}
     excluded = {row['id'] for row in scope_decisions if row['status']=='excluded'}
     candidates = read_jsonl(DATA / "candidates.jsonl")
     aliases=source_aliases(rows)
@@ -940,13 +996,6 @@ def build(args):
     for rid, item in editorial_pending.items():
         merged[rid] = {**merged.get(rid, {}), **item, "review_status": "candidate"}
     files["data/review-queue.jsonl"] = "".join(json.dumps(r, ensure_ascii=False, sort_keys=True) + "\n" for r in sorted(merged.values(), key=lambda r: r["id"]))
-    edges = []
-    row_map = {r["id"]: r for r in rows}
-    for r in read_jsonl(DATA / "enrichment.jsonl"):
-        if r["id"] not in ids or not any(e["sha256"] == r.get("evidence_sha256") for e in row_map[r["id"]]["evidence"]):
-            continue
-        for ref in r.get("references", []):
-            edges.append({"id": hashlib.sha256((r["id"] + "\0" + ref["target_id"]).encode()).hexdigest()[:24], "source_id": r["id"], **ref, "target_in_catalog": ref["target_id"] in ids})
     files["data/references.jsonl"] = "".join(json.dumps(e, ensure_ascii=False, sort_keys=True) + "\n" for e in sorted(edges, key=lambda e: e["id"]))
     reviewed_at = {(e.get("id") or editorial_identity(e)[0]): e.get("reviewed_at") for e in read_json(DATA / "editorial.json", []) if e.get("editorial_reviewed")}
     shared_badges = badges(rows, report)

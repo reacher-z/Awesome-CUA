@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1580,
   "discovery_identifiers": 4260,
-  "unindexed_candidates": 906,
+  "unindexed_candidates": 905,
   "non_resource_candidates": 98,
-  "alias_candidates": 36,
+  "alias_candidates": 37,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -800,8 +800,8 @@
       "resolved_aliases": 0,
       "curated": 0,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 7
+      "set_aside": 1,
+      "unindexed": 6
     },
     {
       "id": "mobile-gui",

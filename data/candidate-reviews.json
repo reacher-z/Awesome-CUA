@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:8f59e9befa0ad61e6827",
+    "url": "https://anonymous.4open.science/r/FingerTip-57B8",
+    "decision": "alias",
+    "target_id": "github:tsinghua-fib-lab/fingertip-20k",
+    "reason": "Anonymized review mirror of the indexed FingerTip-20K repository: it serves the same 11 files with the same sizes, and its README and sampled files are byte-identical to commit e73a4dac."
   }
 ]

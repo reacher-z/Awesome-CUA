@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Screen2AX: Vision-Based Approach for Automatic macOS Accessibility Generation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2507.16704",
+    "environments": [
+      "macos",
+      "desktop"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "data-generation",
+      "evaluation"
+    ],
+    "summary": "Screen2AX infers macOS accessibility trees from one screenshot with YOLOv11 element and group detection, OCR and BLIP icon captions, and releases data from 112 apps plus the Screen2AX-Task benchmark.",
+    "verify_terms": [
+      "Screen2AX: Vision-Based Approach"
+    ],
+    "scope": "core",
+    "notes": "Datasets: Screen2AX-Tree (1,127 screenshots from 112 macOS apps with system accessibility metadata, manually corrected), Screen2AX-Element (986 images, 44,150 element boxes in five classes), Screen2AX-Group (808 images, 30,774 group boxes) and Screen2AX-Task (435 screenshots with 5,934 commands and target boxes; 166 images not used in training serve for evaluation). OCR uses ocrmac (Apple Vision), and BLIP was fine-tuned on 5,000 mostly mobile icons. Hierarchy reconstruction reaches 77% F1. Agent experiments ask GPT-4 which element to click given each representation: on 172 macOS instructions from ScreenSpot, Screen2AX reaches 36.6% against 31.9% for OmniParser V2 and 6.9% for the image alone; on Screen2AX-Task, 33.7% against 16.9% for built-in accessibility and 28.0% for OmniParser V2. The paper links code (github.com/MacPaw/Screen2AX), the macapptree collector (github.com/MacPaw/macapptree) and four Hugging Face datasets (MacPaw/Screen2AX-Tree, -Element, -Group and -Task); no results were reproduced.",
+    "read_basis": "Read the arXiv v1 abstract and the full v1 HTML text: Sections 1-8 and Appendices A-F, plus the PDF title page and link annotations.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2507.16704v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2507.16704v1",
+        "retrieved_at": "2026-10-20T08:15:01Z",
+        "sha256": "784d2ef8e6d7b219c1dc5a0c0de83c12d23f45164c7e640e8f16da0e0935c57d",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "637ccf8121abfea95f82365cd7a4c1e63af2263d217a5f52314b54f7628ff78f",
+    "reviewed_at": "2026-10-20T08:16:00Z"
   }
 ]

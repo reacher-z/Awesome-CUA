@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:2f013e0eba34e335a4bd",
+    "url": "https://www.anthropic.com/solutions/agents",
+    "decision": "out_of_scope",
+    "reason": "Anthropic's marketing page for building AI agents with Claude, now served at claude.com/solutions/agents. It promotes the Claude Platform API, Claude Code and an article on building effective agents for uses such as customer support and coding, and never mentions computer use or interface control, so it describes no computer-use resource.",
+    "reviewed_at": "2026-10-20T04:22:12Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20261017030526id_/https://claude.com/solutions/agents",
+      "sha256": "b28b9ac85807dfcf090e150e071e3798c1fea5b275831fd455aab5be3fb20f60",
+      "retrieved_at": "2026-10-20T04:08:04Z"
+    }
   }
 ]

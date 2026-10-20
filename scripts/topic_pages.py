@@ -1,5 +1,5 @@
 """Dense topic directories and reproducible subsets of reviewed catalog records."""
-from specifications import safe_href
+from specifications import PREFIXES, PROFILE_KEYS, safe_href
 from collections import Counter, defaultdict
 import hashlib
 import html
@@ -13,13 +13,15 @@ from paper_library import PAGE_SIZE, PLATFORMS, TOPICS
 from publication_metadata import record_date_text
 
 
+# Assets come first: a topic usually has a few benchmarks, datasets and models and hundreds of papers, which would otherwise push them several pages down.
 GROUPS = (
-    ('papers', ('Papers & surveys', '论文与综述'), {'paper', 'survey'}),
     ('benchmarks', ('Benchmarks', '评测基准'), {'benchmark'}),
     ('datasets', ('Datasets', '数据集'), {'dataset'}),
     ('models', ('Models', '模型'), {'model'}),
     ('systems', ('Engineering & industry', '工程与产业'), {'agent', 'framework', 'infrastructure', 'tool', 'product', 'company'}),
+    ('papers', ('Papers & surveys', '论文与综述'), {'paper', 'survey'}),
 )
+SLOTS = (('code', ('Code', '代码')), ('data', ('Data', '数据')), ('weights', ('Weights', '权重')), ('document', ('Document', '文档')))
 KIND_LABELS = {
     'paper': ('Paper', '论文'), 'survey': ('Survey', '综述'), 'benchmark': ('Benchmark', '基准'),
     'dataset': ('Dataset', '数据集'), 'model': ('Model', '模型'), 'agent': ('Agent', '智能体'),
@@ -165,6 +167,29 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
     return ''.join(body), schema
 
 
+def asset_paper(row):
+    """The reviewed introducing (else documenting) arXiv paper of a non-paper resource; its identifier encodes the submission year and month."""
+    papers = sorted((rel for rel in row.get('relations', []) if rel['type'] in ('introduced_by', 'documented_by') and re.fullmatch(r'arxiv:\d{4}\.\d{4,5}', rel['target_id'])),
+                    key=lambda rel: (rel['type'] != 'introduced_by', rel['target_id']))
+    return papers[0]['target_id'][6:] if papers else None
+
+
+def asset_facts(row, zh=False):
+    """Recorded paper, first count per unit and declared licenses; unknown facts are left out rather than guessed."""
+    facts = []
+    if arxiv := asset_paper(row):
+        facts.append(('paper', 'arXiv ' + arxiv, 'https://arxiv.org/abs/' + arxiv))
+    first = {}
+    for count in ((row.get('details') or {}).get(PROFILE_KEYS.get(row['kind'], '')) or {}).get('counts', []):
+        first.setdefault(count['unit'], count)
+    facts += [('scale', f"{PREFIXES[c['qualifier']]}{c['value']:,} {c['unit']}", None) for c in first.values()]
+    for slot, labels in SLOTS:
+        declared = ((row.get('licenses') or {}).get(slot) or {}).get('declared')
+        if declared:
+            facts.append(('license', labels[zh] + ' ' + (', '.join(declared) if isinstance(declared, list) else declared), None))
+    return facts
+
+
 def ordered_groups(rows):
     for slug, labels, kinds in GROUPS:
         selected = [row for row in rows if row['kind'] in kinds]
@@ -217,9 +242,15 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
             primary = row.get('details', {}).get('arxiv_snapshot', {}).get('versioned_url') or row['url']
             body += ['<article class="topic-resource" data-resource-id="', esc(row['id']), '"><div class="topic-resource-meta"><span class="topic-kind topic-col-', slug, '">',
                      KIND_LABELS[row['kind']][zh], '</span>']
+            arxiv = None if slug == 'papers' else asset_paper(row)
             if date:
                 body += ['<time datetime="', date, '">', date, '</time>'] if len(date) == 10 else ['<span>', date, '</span>']
+            elif arxiv:
+                # An asset has no release date of its own; its paper's arXiv identifier gives the year of first submission.
+                body += ['<span class="topic-paper-year" title="', tr('Year of the linked arXiv paper', '关联 arXiv 论文的年份'), '">20', arxiv[:2], '</span>']
             body += ['</div><div class="topic-resource-main"><h3><a href="', path, '">', esc(row['name']), '</a></h3>']
+            if slug != 'papers' and (facts := asset_facts(row, zh)):
+                body += ['<p class="topic-resource-facts">', ' · '.join(f'<a href="{safe_href(url)}">{esc(text)}</a>' if url else f'<span>{esc(text)}</span>' for _, text, url in facts), '</p>']
             if row.get('authors'):
                 authors = ', '.join(row['authors'][:2])
                 if len(row['authors']) > 2:

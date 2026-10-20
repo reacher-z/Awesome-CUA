@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5883c0436062e40e031f",
+    "url": "https://anonymous.4open.science/r/GAMBIT-40BB",
+    "decision": "not_a_resource",
+    "reason": "Expired anonymous review copy for GAMBIT, a withdrawn ICLR 2026 submission: the repository API returns 410 repository_expired, Wayback has no capture, and no public repository or arXiv version was found."
   }
 ]

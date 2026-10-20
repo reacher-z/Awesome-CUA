@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7144eb37d5994f404127",
+    "url": "https://webllama.github.io",
+    "decision": "alias",
+    "target_id": "github:mcgill-nlp/webllama",
+    "reason": "Project homepage for the indexed WebLlama repository, which links it as its Homepage."
   }
 ]

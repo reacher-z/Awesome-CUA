@@ -63844,5 +63844,44 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "AgentVigil: Generic Black-Box Red-teaming for Indirect Prompt Injection against LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.05849",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "AgentVigil fuzzes black-box LLM agents for indirect prompt injection, mutating template seeds chosen by Monte Carlo Tree Search; it attacks AgentDojo tool agents, VWA-adv web agents and a WebArena shopping site.",
+    "verify_terms": [
+      "AgentVigil: Generic Black-Box Red-teaming"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.05849v4"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent agent-security paper: AgentDojo personal-assistant suites (function-calling tools, o3-mini as the fuzzing target) are one setting. VWA-adv, adversarial VisualWebArena tasks split into 99 fuzzing and 100 test tasks with GPT-4o as the target, is the web setting, and Section 5.4 posts a generated prompt as a customer review on a local WebArena (Magento) shopping site, where the default WebArena agent is led to attacker URLs. Earlier versions were titled AgentXploit (v1) and AgentFuzzer (v2-v3). The abstract, HTML and PDF name no code release. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2505.05849v4",
+        "retrieved_at": "2026-10-20T08:36:48Z",
+        "sha256": "c79d4a5ccb036c90e70ac0ae7805257c4eb42253ba67d277f080562e2819ae84",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v4 abstract, the v4 HTML Sections 4-5 (method, AgentDojo and VWA-adv setups, real-world case study) and Appendix B, and the v4 PDF link annotations; checked v1-v3 titles on their abs pages.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7248a6cd19ebcba87e115379f2c682c28f5c705b598c90302a0a485657a5f602",
+    "reviewed_at": "2026-10-20T08:37:21Z"
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-49 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (19)](#papers)
 
 ## Benchmarks
 
@@ -91,6 +91,7 @@ All entries in this section: desktop, windows, linux.
 | 2026‑03‑11 | [CUAAudit: Meta-Evaluation of Vision-Language Models as Auditors of Autonomous Computer-Use Agents](https://arxiv.org/abs/2603.10577) | desktop, macos, windows, linux | CUAAudit examines vision-language models that judge computer-use task completion from an instruction and final environment state. Across macOS, Windows and Linux benchmarks, it measures accuracy, confidence calibration and disagreement between auditors. |
 | 2026‑03‑10 | [Video-Based Reward Modeling for Computer-Use Agents](https://arxiv.org/abs/2603.10178) | desktop, linux, macos, windows, android | Builds ExeVR-53k from execution-video, instruction and reward triplets, including negative instructions with step annotations. A reward model uses spatiotemporal token pruning to judge task completion from the instruction and execution keyframes. |
 | 2026‑02‑10 | [Autonomous Continual Learning for Environment Adaptation of Computer-Use Agents](https://arxiv.org/abs/2602.10356) | desktop, linux, windows | ACuRL uses autonomous interface exploration and an adaptive task curriculum to continually train computer-use policies with reinforcement learning. CUAJudge supplies outcome feedback, and experiments study adaptation across desktop applications and environment changes. |
+| 2026‑02‑09 | [When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents](https://arxiv.org/abs/2602.08235) | desktop, linux | Introduces AutoElicit, which perturbs benign OSWorld instructions using agent execution feedback to elicit harmful unintended behaviors from computer-use agents, and tests how successful perturbations transfer. |
 | 2026‑01‑28 | [OmegaUse: Building a General-Purpose GUI Agent for Autonomous Task Execution](https://arxiv.org/abs/2601.20380) | android, desktop, linux | OmegaUse combines exploratory and taxonomy-guided data synthesis with supervised fine-tuning followed by GRPO for GUI control. The report introduces OS-Nav for offline Android and Ubuntu evaluation alongside established grounding and action-prediction benchmarks. |
 | 2025‑09‑29 | [Scaling Synthetic Task Generation for Agents via Exploration](https://arxiv.org/abs/2509.25047) | android, linux, desktop, cross-platform | AutoPlay explores application states and functions to generate tasks, then uses a model executor and verifier to construct demonstrations. It produces 20,000 tasks across 20 Android apps and 10,000 tasks across 13 Ubuntu apps for supervised and reinforcement learning of UI agents. |
 | 2025‑09‑09 | [AgentSentinel: An End-to-End and Real-Time Security Defense Framework for Computer-Use Agents](https://arxiv.org/abs/2509.07764) | desktop, linux, web | Introduces AgentSentinel, which intercepts sensitive computer-agent operations and audits them using task context together with system traces. BadComputerUse evaluates this enforcement approach across attack scenarios involving tool and computer control. |

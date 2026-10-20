@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-322 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+323 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (204)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (22)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Surveys (1)](#surveys) · [Papers (205)](#papers)
 
 ## Benchmarks
 
@@ -273,6 +273,7 @@ All entries in this section: web, desktop, android, windows.
 | 2026‑02‑19 | [Computer-Using World Model](https://arxiv.org/abs/2602.17365) | desktop | Presents a desktop world model that predicts textual UI changes before synthesizing the next screenshot. It learns from Microsoft Office transitions and is evaluated by letting a frozen agent compare simulated actions before execution. |
 | 2026‑02‑10 | [Autonomous Continual Learning for Environment Adaptation of Computer-Use Agents](https://arxiv.org/abs/2602.10356) | desktop, linux, windows | ACuRL uses autonomous interface exploration and an adaptive task curriculum to continually train computer-use policies with reinforcement learning. CUAJudge supplies outcome feedback, and experiments study adaptation across desktop applications and environment changes. |
 | 2026‑02‑09 | [When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents](https://arxiv.org/abs/2602.08995) | desktop, web | MisActBench provides action-level labels for task alignment, while DeAction checks proposed computer-use actions and requests revisions through structured feedback. The paper separately evaluates offline detection and interactive operation in OSWorld and RedTeamCUA. |
+| 2026‑02‑09 | [When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents](https://arxiv.org/abs/2602.08235) | desktop, linux | Introduces AutoElicit, which perturbs benign OSWorld instructions using agent execution feedback to elicit harmful unintended behaviors from computer-use agents, and tests how successful perturbations transfer. |
 | 2026‑02‑06 | [ANCHOR: Branch-Point Data Generation for GUI Agents](https://arxiv.org/abs/2602.07153) | desktop, windows | ANCHOR expands verified desktop demonstrations by generating new tasks at meaningful branch points and executing their instructions. State-aware verification and action filtering refine the resulting trajectories, which are evaluated through fine-tuned agents on OSWorld and WindowsAgentArena. |
 | 2026‑02‑03 | [Agent Alpha: Tree Search Unifying Generation, Exploration and Evaluation for Computer-Use Agents](https://arxiv.org/abs/2602.02995) | desktop | Agent Alpha uses step-level Monte Carlo tree search to reuse successful prefixes and recover from early GUI mistakes. Comparison-based evaluation and diversity-constrained expansion guide the search, with experiments on OSWorld. |
 | 2026‑02‑02 | [SafePred: A Predictive Guardrail for Computer-Using Agents via World Models](https://arxiv.org/abs/2602.01725) | desktop, web | SafePred uses world-model risk forecasts to guide action filtering and task replanning. Its desktop and web safety evaluations distinguish policy compliance, task success and success under the specified policy. |

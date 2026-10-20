@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-691 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+692 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (566)](#papers)
+**Contents:** [Benchmarks (86)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (567)](#papers)
 
 ## Benchmarks
 
@@ -447,6 +447,7 @@ All entries in this section: web.
 | 2026‑02‑09 | [GUI-GenBench: Evaluating Image Generation Models as Interactive GUI Environments](https://arxiv.org/abs/2602.09007) | unspecified | GUI-GenBench tests image-generation models as action-conditioned GUI environments across five suites, including transitions, trajectories and grounding. Its VLM-based GUI-Score separates goal completion, interaction logic, consistency and visual properties. |
 | 2026‑02‑09 | [Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for Scalable and Diverse GUI-Agent Defense](https://arxiv.org/abs/2602.09012) | web | Next-Gen CAPTCHAs introduces generated interactive challenges intended to distinguish human users from GUI agents. The benchmark targets perception, memory, decisions and actions, with backend-supported challenge types designed for scalable instance generation. |
 | 2026‑02‑09 | [When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents](https://arxiv.org/abs/2602.08995) | desktop, web | MisActBench provides action-level labels for task alignment, while DeAction checks proposed computer-use actions and requests revisions through structured feedback. The paper separately evaluates offline detection and interactive operation in OSWorld and RedTeamCUA. |
+| 2026‑02‑09 | [When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents](https://arxiv.org/abs/2602.08235) | desktop, linux | Introduces AutoElicit, which perturbs benign OSWorld instructions using agent execution feedback to elicit harmful unintended behaviors from computer-use agents, and tests how successful perturbations transfer. |
 | 2026‑02‑07 | [Mapping the Design Space of User Experience for Computer Use Agents](https://arxiv.org/abs/2602.07283) | web | Develops a taxonomy of computer-use-agent interaction design through system review and practitioner interviews. A Wizard-of-Oz study then examines how users respond to normal, erroneous, and risky web-based execution, focusing on control, explanation, prompts, and mental models. |
 | 2026‑02‑06 | [ANCHOR: Branch-Point Data Generation for GUI Agents](https://arxiv.org/abs/2602.07153) | desktop, windows | ANCHOR expands verified desktop demonstrations by generating new tasks at meaningful branch points and executing their instructions. State-aware verification and action filtering refine the resulting trajectories, which are evaluated through fine-tuned agents on OSWorld and WindowsAgentArena. |
 | 2026‑02‑05 | [Do Web Agents Investigate Before They Decide?](https://arxiv.org/abs/2602.05354) | web | Introduces MIRAGE, a web decision benchmark where agents must actively uncover evidence that can contradict the visible context. Separate investigation, reasoning, decision, and hallucination measures diagnose failures beyond reaching the right page. |

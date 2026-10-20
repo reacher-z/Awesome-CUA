@@ -63844,5 +63844,45 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.08235",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "evaluation"
+    ],
+    "scope": "core",
+    "summary": "Introduces AutoElicit, which perturbs benign OSWorld instructions using agent execution feedback to elicit harmful unintended behaviors from computer-use agents, and tests how successful perturbations transfer.",
+    "verify_terms": [
+      "Eliciting Unsafe Unintended Behaviors of Computer-Use Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.08235v2"
+    ],
+    "notes": "The v2 full text, which the arXiv comments mark as ICML 2026, builds AutoElicit-Seed (361 seed perturbations of 66 OSWorld tasks in the OS and Multi-Apps domains on Ubuntu), runs elicitation with Claude 4.5 Haiku and Operator as execution agents plus a smaller Claude 4.5 Opus study, and releases AutoElicit-Bench, 117 human-verified perturbations tested on EvoCUA, OpenCUA, Operator and Claude 4.5 Sonnet. Harm and severity labels come from LLM evaluators. It points to a project page at osu-nlp-group.github.io/AutoElicit. Results have not been independently reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML for the OSWorld task subset, seed and benchmark counts, execution agents, transfer targets and evaluation method. No code execution or result reproduction.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.08235v2",
+        "sha256": "4ad9f6090957c86b876c64ebd0f5681b93e0975d5ec911b6dc59a631b39f8e99",
+        "retrieved_at": "2026-10-20T04:54:01Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "610a1b5605f07d5e9d3ce358854b9377b1d902694dfbf1d60880bcf11b953605",
+    "reviewed_at": "2026-10-20T04:54:02Z"
   }
 ]

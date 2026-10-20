@@ -1,8 +1,8 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-20T03:55:29.533431+00:00**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-20T04:54:01Z**. Generated from committed source receipts.
 
-- 3,195 resource records: 1,629 curated; 1,566 bibliographic metadata only.
+- 3,195 resource records: 1,630 curated; 1,565 bibliographic metadata only.
 - 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 2,856 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
 - 4,244 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
@@ -23,7 +23,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [framework](frameworks.md) | 37 | 22 | 2 | 1 | 6 | 22 | 1 | 1 | 7 | 2 |
 | [infrastructure](infrastructures.md) | 5 | 9 | 1 | 2 | 4 | 3 | 1 | · | · | · |
 | [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
-| [paper](topics.md) | 443 | 204 | 37 | 14 | 18 | 184 | 8 | 2 | 101 | 344 |
+| [paper](topics.md) | 443 | 205 | 37 | 14 | 19 | 184 | 8 | 2 | 101 | 344 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 3 | 1 | 1 | · | · | 2 | 1 | · | 11 | 3 |
 | [tool](tools.md) | 11 | 3 | 3 | 2 | 2 | 5 | 2 | · | 1 | 2 |
@@ -37,16 +37,16 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-10-19 |
 | [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-10-19 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-10-19 |
-| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-10-19 |
+| [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 88 | 0 | 6 | 30 | OK · 2026-10-19 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-19 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-19 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-19 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | OK · 2026-10-19 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 460 | 1 | 9 | 75 | OK · 2026-10-19 |
 | [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-10-19 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 27 | OK · 2026-10-19 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-10-19 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 28 | OK · 2026-10-19 |
-| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 486 | 394 | 0 | 45 | 13 | OK · 2026-10-19 |
+| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 486 | 395 | 0 | 45 | 13 | OK · 2026-10-19 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 92 | 83 | 0 | 7 | 45 | OK · 2026-10-19 |
 | [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 211 | 208 | 157 | 0 | 1 | 2 | OK · 2026-10-19 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-10-19 |
@@ -55,7 +55,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-10-19 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-10-19 |
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 55 | 0 | 0 | 37 | OK · 2026-10-19 |
-| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-10-19 |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 137 | 0 | 0 | 0 | OK · 2026-10-19 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-10-19 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-10-19 |
 | [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-10-19 |
@@ -87,7 +87,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 35 | OK · 2026-10-19 |
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 22 | OK · 2026-10-19 |
 | [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 9 | OK · 2026-10-19 |
-| [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 385 | 0 | 0 | 45 | OK · 2026-10-19 |
+| [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 386 | 0 | 0 | 45 | OK · 2026-10-19 |
 
 ## Paper-discovery query coverage
 

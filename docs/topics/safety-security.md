@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-205 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+206 source-reviewed resources tagged `safety-security`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (179)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Surveys (7)](#surveys) · [Papers (180)](#papers)
 
 ## Benchmarks
 
@@ -152,6 +152,7 @@ All entries in this section: web.
 | 2026‑02‑13 | [SPILLage: Agentic Oversharing on the Web](https://arxiv.org/abs/2602.13516) | web | Formalizes and measures natural agentic oversharing when browser agents handle private user emails and calendars across live websites. |
 | 2026‑02‑09 | [Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for Scalable and Diverse GUI-Agent Defense](https://arxiv.org/abs/2602.09012) | web | Next-Gen CAPTCHAs introduces generated interactive challenges intended to distinguish human users from GUI agents. The benchmark targets perception, memory, decisions and actions, with backend-supported challenge types designed for scalable instance generation. |
 | 2026‑02‑09 | [When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents](https://arxiv.org/abs/2602.08995) | desktop, web | MisActBench provides action-level labels for task alignment, while DeAction checks proposed computer-use actions and requests revisions through structured feedback. The paper separately evaluates offline detection and interactive operation in OSWorld and RedTeamCUA. |
+| 2026‑02‑09 | [When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents](https://arxiv.org/abs/2602.08235) | desktop, linux | Introduces AutoElicit, which perturbs benign OSWorld instructions using agent execution feedback to elicit harmful unintended behaviors from computer-use agents, and tests how successful perturbations transfer. |
 | 2026‑02‑08 | [Anonymization-Enhanced Privacy Protection for Mobile GUI Agents: Available but Invisible](https://arxiv.org/abs/2602.10139) | android | An anonymization framework replaces sensitive screen content and instructions with consistent, type-preserving placeholders while mediating actions through a local interaction proxy. Experiments on AndroidLab and PrivScreen examine the privacy–utility trade-off when mobile GUI agents operate over these transformed interfaces. |
 | 2026‑02‑03 | [WebSentinel: Detecting and Localizing Prompt Injection Attacks for Web Agents](https://arxiv.org/abs/2602.03792) | web | WebSentinel identifies suspicious webpage segments and checks each against its surrounding page context to detect and locate prompt injections. Its evaluation uses both contaminated and clean webpage datasets. |
 | 2026‑02‑02 | [SafePred: A Predictive Guardrail for Computer-Using Agents via World Models](https://arxiv.org/abs/2602.01725) | desktop, web | SafePred uses world-model risk forecasts to guide action filtering and task replanning. Its desktop and web safety evaluations distinguish policy compliance, task success and success under the specified policy. |

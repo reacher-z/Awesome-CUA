@@ -63844,5 +63844,114 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Nehemiah",
+    "kind": "infrastructure",
+    "url": "https://github.com/boringcomputers/nehemiah",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "scope": "core",
+    "summary": "Self-hosted Firecracker microVM Linux computers for AI: VNC desktops with Chromium and coding CLIs, snapshot restore and fork, a built-in Claude computer-use loop over VNC, and an MCP server and SDK to drive them.",
+    "aliases": [
+      "nehemiah-mcp"
+    ],
+    "verify_terms": [
+      "Nehemiah"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/boringcomputers/nehemiah/HEAD/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details.availability"
+    ],
+    "notes": "Turborepo monorepo: nehemiahd/ is the Go host daemon that runs each computer as a jailed Firecracker microVM restored from a memory snapshot, with TTL self-destruct, live forking, S3-backed volumes and an egress firewall; apps/web is the SvelteKit site; packages/sdk (nehemiah-sdk) is an Effect TypeScript client; packages/mcp (nehemiah-mcp) is an MCP server with 13 tools (launch, list, extend, fork, publish, save and stop computers, list templates, create volumes, run_command, run_task, screenshot and preview_url), counted with a script. infra/latitude/build-desktop-rootfs.sh builds the desktop guest: a minimal Debian image with Xvfb, openbox, xterm and Chromium, with Claude Code and Codex installed through npm, whose x11vnc display is bridged to the host over vsock. nehemiahd/agentloop.go runs a computer-use loop with Anthropic's computer_20251124 tool: it reads the framebuffer through its own RFB client (rfb.go) and sends clicks, drags, typing, keys and scrolls back as VNC pointer and key events, under a step cap (NEHEMIAH_AGENT_MAX_STEPS, default 30) and a model set by NEHEMIAH_AGENT_MODEL (config.go). Its system prompt is written for the public demo site. A separate shell agent (nehemiahd/shellagent.go) backs run_task, which writes and runs commands. boringcomputers.com is described as a showcase. Per the README, the supported self-hosting path provisions a Latitude.sh bare-metal host from signed managed-release artifacts with operator inputs, and the earlier one-command Linux and Apple Silicon installers now exit with a pointer to that runbook. The repository has no tags or GitHub releases. Root LICENSE is Apache-2.0; not a fork, not archived. Code was read, not run.",
+    "details": {
+      "availability": "Public source under Apache-2.0; self-hosting goes through a managed runbook that provisions a Latitude.sh bare-metal host from signed release artifacts, and the earlier self-serve installers are no longer supported.",
+      "repository_revision": "fea6f0a5299154cb40da9f302a51547e61d40076"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/nehemiahd/agentloop.go",
+        "sha256": "f5d6098234b1467ff54edc015fe2b441cee8e64602b15d84e3087801bfbcaf1a",
+        "retrieved_at": "2026-10-20T08:11:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/nehemiahd/rfb.go",
+        "sha256": "72fabc862272e7fefaf465fb523304c7683e60fc4589df0531b9451978bd1b7a",
+        "retrieved_at": "2026-10-20T08:11:39Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/nehemiahd/config.go",
+        "sha256": "d0fd5c5235c2c850c03468ca1f82741b823341faa31b7501bb9e70f78d8e4118",
+        "retrieved_at": "2026-10-20T08:11:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/packages/mcp/index.mjs",
+        "sha256": "4cba45ea57de2c141c93ebe4fba0214586bdafd2a11c4a8c664b6889764c6213",
+        "retrieved_at": "2026-10-20T08:11:40Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/infra/latitude/build-desktop-rootfs.sh",
+        "sha256": "017a47c935ca6c6f403c495ebff8563c883b7a522fc363b8dc221c90ccbf973a",
+        "retrieved_at": "2026-10-20T08:11:41Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/LICENSE",
+        "sha256": "fafbae0e5a3e7b4f53c5af72c01063307bdb88b0c50bd718a13d52e5053a7836",
+        "retrieved_at": "2026-10-20T08:11:41Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c338e02476f75edcb60dd3ea282ef83f157ecd313d1d1759f5d0bf85e96051d1",
+    "reviewed_at": "2026-10-20T08:12:24Z"
   }
 ]

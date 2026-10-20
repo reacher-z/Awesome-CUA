@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:659465dbd65667247584",
+    "url": "https://ui-mem.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2602.05832",
+    "reason": "Project page of the UI-Mem paper, with the same title and ten authors, linking its arXiv abstract; code, model and data buttons are placeholders marked coming soon."
   }
 ]

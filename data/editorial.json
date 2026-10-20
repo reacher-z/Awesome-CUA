@@ -63653,5 +63653,46 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "ShopGym: An Integrated Framework for Realistic Simulation and Scalable Benchmarking of E-Commerce Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.16116",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "data-generation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "ShopGym converts live storefronts into resettable sandbox shops (ShopArena) and synthesizes catalog-grounded tasks in seven skill categories (ShopGuru), validated with 224 tasks across six sandbox shops.",
+    "verify_terms": [
+      "ShopGym: An Integrated Framework for Realistic Simulation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.16116v1"
+    ],
+    "notes": "Per the v1 full text, agents are evaluated with a BrowserGym accessibility-tree harness and an internal Playwright harness that adds viewport screenshots, with GPT-5 as judge. The six shops are three sandbox shops with synthetic data and three twin shops built from real product data. Checkout, payment and login-protected flows are not covered. The paper names no code repository. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.16116v1",
+        "sha256": "af4f2d90ced949fce3703dbc2464346de8ea70d3e86e4e8a9d7ad62260a28460",
+        "retrieved_at": "2026-10-20T04:00:58Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and checked the v1 HTML full text for the agent harnesses, shop construction, task coverage and any release link. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "551bd6e141a01ac5079175511053f8a99361221ccd8ae52350fdd922c5c76681",
+    "reviewed_at": "2026-10-20T04:12:09Z"
   }
 ]

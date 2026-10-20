@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2602.12852",
+    "name": "WebClipper: Efficient Evolution of Web Agents with Graph-based Trajectory Pruning",
+    "url": "https://arxiv.org/abs/2602.12852",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract proposes WebClipper, which models a deep-research agent's search process as a state graph, prunes trajectories to a minimum-necessary directed acyclic graph, and continues training on the pruned trajectories, with an F-AE accuracy-efficiency score. The agents act through Serper search, Jina Reader page-to-text and Python tools on xbench-DeepSearch, BrowseComp, GAIA text-only and HLE (Section 4); no browser or GUI is operated, so this search-agent efficiency work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:35:37Z",
+    "metadata_fingerprint": "219ce02696c7687c432546546aa9eacc8d9aa33305f919bd4ed01a2b3dc2758b",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=400&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "sha256": "c432f419481a105a8ce71174ec4aea23c4f0d36ddf89cfe1d0974fa349f6cb59",
+      "retrieved_at": "2026-10-16T06:36:43Z"
+    }
   }
 ]

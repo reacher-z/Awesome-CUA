@@ -63844,5 +63844,53 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "When External Threats Become User Context: Tricking Agents into Accepting Malicious Information",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.10758",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Shows that relaying an external artifact in a benign user's request raises malicious-artifact adoption across eight models and four AgentDojo suites, and tests six travel and six web-use agents under safety guidance.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "When External Threats Become User Context"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.10758v4"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Adjacent agent-safety study. The controlled experiments, activation-patching analyses and defense tests use AgentDojo function-calling suites, not GUIs. The web component is a deployed-agent case study (Section 6, Appendix D.2): 20 Travel tasks under three safety-guidance levels, run over three rounds on six travel assistants and six web-use agents (Manus, Browser Use, Narada, Skyvern, OH and Browserbase), scoring observable constraint violations; service versions were not exposed. Version 4 lists AAMAS 2027. Reported results are not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.10758v4",
+        "retrieved_at": "2026-10-20T04:57:05Z",
+        "sha256": "4371c6bbade648a32c599e92089ec61f78b19390cfe6b3adcdf46c4cf08f8bda",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "37a4624cb026e11ef38e76b38c2584a5451586698b5d6db385dbb7ce98de98dd",
+    "reviewed_at": "2026-10-20T04:57:19Z"
   }
 ]

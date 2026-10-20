@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-623 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+624 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
+**Contents:** [Benchmarks (42)](#benchmarks) · [Datasets (25)](#datasets) · [Models (29)](#models) · [Agents (11)](#agents) · [Frameworks (37)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Surveys (3)](#surveys) · [Papers (443)](#papers)
 
 ## Benchmarks
 
@@ -87,6 +87,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [ACT-1](https://www.adept.ai/blog/act-1) | web | — | — | Adept's 2022 action transformer, previewed in demo videos of a Chrome extension that reads a custom rendering of the page and clicks, types and scrolls on its UI elements to carry out typed requests. | [✓ 2026‑10‑20](https://web.archive.org/web/20250814162158id_/https://www.adept.ai/blog/act-1) |
 | [Dreamer-7B](https://huggingface.co/osunlp/Dreamer-7B) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | WebDreamer model checkpoint that predicts the consequences of web actions from screenshots and textual descriptions. | [✓ 2026‑10‑16](https://huggingface.co/osunlp/Dreamer-7B/raw/main/README.md) |
 | [Fara](https://github.com/microsoft/fara) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025), [2606.20785](https://arxiv.org/abs/2606.20785) (2026) | code MIT | Microsoft browser-use agent models that act from screenshots by predicting click coordinates without accessibility trees; Fara1.5 comes in 4B, 9B and 27B, succeeding Fara-7B. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/fara/HEAD/README.md) |
 | [Fara 7B](https://huggingface.co/microsoft/Fara-7b) | web | — | weights mit | Microsoft's Fara checkpoint, a Qwen2.5-VL-architecture image-text-to-text model with about 8.3B BF16 parameters, English, MIT-licensed and linked to arXiv paper 2511.19663. | [✓ 2026‑10‑16](https://huggingface.co/api/models/microsoft/Fara-7b) |

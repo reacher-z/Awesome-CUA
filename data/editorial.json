@@ -63653,5 +63653,36 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "ACT-1",
+    "kind": "model",
+    "url": "https://www.adept.ai/blog/act-1",
+    "evidence_urls": [
+      "https://web.archive.org/web/20250814162158id_/https://www.adept.ai/blog/act-1"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction"
+    ],
+    "summary": "Adept's 2022 action transformer, previewed in demo videos of a Chrome extension that reads a custom rendering of the page and clicks, types and scrolls on its UI elements to carry out typed requests.",
+    "verify_terms": [
+      "ACT-1",
+      "Action Transformer"
+    ],
+    "aliases": [
+      "Action Transformer"
+    ],
+    "scope": "core",
+    "notes": "Announced by the Adept Team on 14 September 2022. The post shows sped-up demo videos only (a Salesforce workflow, spreadsheet work, tasks spanning several tools, looking up information online, and correcting a mistake after one piece of human feedback) and promises a later technical post. It names no weights, API, training data or benchmark results. The live page answers HTTP 403 to scripts (Cloudflare challenge), so the reviewed receipt is the 14 August 2025 Wayback capture.",
+    "details": {
+      "availability": "Announcement with demo videos only; no weights, API or evaluation results are described."
+    },
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2ae4f05ccf826141f5c315c977ebf6a058737f0760f55eb5f0125894d0b27fa0",
+    "reviewed_at": "2026-10-20T04:03:43Z"
   }
 ]

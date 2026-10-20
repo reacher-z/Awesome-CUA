@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:7f239c7e9036287a8693",
+    "url": "https://www.anthropic.com/news/claude-computer-use",
+    "decision": "not_a_resource",
+    "reason": "Dead link listed as \"Claude Computer Use\": the page answers HTTP 404 (its trailing-slash form 308-redirects back to it), with no rename redirect, and the only Wayback capture (March 2026) is also a 404. Claude computer use is indexed from its documentation."
   }
 ]

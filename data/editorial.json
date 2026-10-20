@@ -63653,5 +63653,45 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "MobiFlow: Real-World Mobile Agent Benchmarking through Trajectory Fusion",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.09587",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "robustness"
+    ],
+    "summary": "Introduces MobiFlow, a mobile-agent benchmark of 240 tasks in 20 third-party apps that fuses human trajectories into task state-transition graphs, so agents are scored interactively without system-level app state.",
+    "verify_terms": [
+      "Real-World Mobile Agent Benchmarking through Trajectory Fusion"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.09587v1"
+    ],
+    "scope": "core",
+    "notes": "Graphs are built from human trajectories recorded on real devices with a tool that reads XML UI hierarchies, with OmniParser filling missing element boxes; metrics are completion rate, coverage rate, action match rate and time to action. Besides 160 base tasks, scenarios test instruction following, instruction noise, app interference and open exploration. Evaluated models include GPT-5, Claude Opus 4.1, Grok 4, Gemini 2.5 and 3 Flash, UI-TARS-1.5, AutoGLM-Phone, GUI-Owl and MobiMind, with up to 50 steps. The paper does not name the phone operating system. No dataset or code release is named. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2604.09587v1",
+        "retrieved_at": "2026-10-20T04:32:40Z",
+        "sha256": "3b3dff0dfb28839746a90a11e4f0f8c1110f3f48872ba140692bdc8104365b24",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 4.1-4.3 (task graph construction, metrics, scenarios), 5.1-5.2 (setup, main results) and Appendices A-B (trajectory collection tool, action space).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c4746d150ef9170d9d5ae793ff6beb93060795de8f08d983bcc6f7520dab22c2",
+    "reviewed_at": "2026-10-20T04:32:57Z"
   }
 ]

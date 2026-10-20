@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-112 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+113 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (82)](#papers)
 
 ## Benchmarks
 
@@ -127,6 +127,7 @@ All entries in this section: cross-platform.
 | 2026‑01‑12 | [ShowUI-Aloha: Human-Taught GUI Agent](https://arxiv.org/abs/2601.07181) | desktop | Transforms human screen recordings and input events into annotated demonstrations used by planning and execution components for GUI tasks. |
 | 2025‑12‑12 | [Using GUI Agent for Electronic Design Automation](https://arxiv.org/abs/2512.11611) | unspecified | GUI-EDA collects more than 2,000 screenshot-answer-action pairs from engineers working across five CAD tools and five physical domains. The accompanying benchmark evaluates more than 30 GUI agents on specialized electronic-design workflows. |
 | 2025‑11‑21 | [UI-CUBE: Enterprise-Grade Computer Use Agent Benchmarking Beyond Task Accuracy to Operational Reliability](https://arxiv.org/abs/2511.17131) | unspecified | UI-CUBE evaluates 226 tasks ranging from individual controls to copy-paste and enterprise workflows. Interface variations, multiple resolutions, and application-state validation support diagnosis of operational reliability beyond task accuracy alone. |
+| 2025‑10‑17 | [PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction](https://arxiv.org/abs/2510.15863) | web | Proposes PolySkill, which induces web-agent skills that separate an abstract goal from site-specific implementations, and measures skill reuse and success on Mind2Web, WebArena and unseen shopping sites. |
 | 2025‑09‑30 | [SCUBA: Salesforce Computer Use Benchmark](https://arxiv.org/abs/2509.26506) | unspecified | SCUBA evaluates enterprise UI navigation and CRM workflows with 300 task instances derived from Salesforce user interviews. Salesforce sandbox execution and milestone-based assessment support comparisons between zero-shot agents and agents given demonstrations. |
 | 2025‑09‑08 | [MAS-Bench: A Unified Benchmark for Shortcut-Augmented Hybrid Mobile GUI Agents](https://arxiv.org/abs/2509.06477) | unspecified | MAS-Bench evaluates mobile agents that combine GUI actions with APIs, deep links, and reusable scripts. Its 139 tasks across 11 apps test use of 88 predefined shortcuts as well as the ability to generate new reusable workflows. |
 | 2025‑09‑02 | [AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent](https://arxiv.org/abs/2509.02444) | unspecified | Describes a mobile-agent stack combining region-based coordinate correction, hierarchical task planning, multi-agent voting, and reuse of successful interaction traces. |

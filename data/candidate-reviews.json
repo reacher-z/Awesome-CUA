@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4cc2a85b7bd60dc0a620",
+    "url": "https://palm-e.github.io",
+    "decision": "out_of_scope",
+    "reason": "PaLM-E is an embodied multimodal language model that feeds images and robot state estimates into PaLM for robotic manipulation planning, visual question answering and captioning. Its project page describes no interaction with graphical interfaces, web pages or devices, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:18:35Z",
+    "evidence": {
+      "url": "https://palm-e.github.io",
+      "sha256": "a0a316d5539e12d0be1952f27b57a1441174493e5178d3a118f34a6d5d6e2a57",
+      "retrieved_at": "2026-10-19T07:46:02Z"
+    }
   }
 ]

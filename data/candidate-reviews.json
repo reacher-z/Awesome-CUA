@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ccc69641ceab4252f9d5",
+    "url": "https://www.swebench.com",
+    "decision": "out_of_scope",
+    "reason": "swebench.com hosts the official leaderboards of the SWE-bench family (the original 2,294-instance set, Verified, Bash Only, Lite, Multilingual and Multimodal) and links its tooling. These benchmarks score models on resolving GitHub issues by editing repository code and passing tests, without operating a graphical, browser or device interface, so the site falls outside the computer-use scope; only the Multimodal subset, reviewed separately, involves visual inputs.",
+    "reviewed_at": "2026-10-20T05:11:54Z",
+    "evidence": {
+      "url": "https://www.swebench.com",
+      "sha256": "fea73eb594cc0c539efd7a4368989370b4c36635fab6144806732a10d09a450f",
+      "retrieved_at": "2026-10-20T04:44:58Z"
+    }
   }
 ]

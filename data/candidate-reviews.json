@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:4403f570f495a7f8cd51",
+    "url": "https://www.datacamp.com/blog/what-is-anthropic-computer-use",
+    "decision": "out_of_scope",
+    "reason": "A DataCamp blog tutorial by Abid Ali Awan, dated 22 October 2024, that explains Anthropic's computer-use beta, shows its tool definitions, walks through running Anthropic's reference Docker demo and lists prompting tips, limitations and token pricing. It is third-party instructional content about a resource rather than a resource of its own.",
+    "reviewed_at": "2026-10-20T05:10:58Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20260921141110id_/https://www.datacamp.com/blog/what-is-anthropic-computer-use",
+      "sha256": "842c6d0f0e52106eac740c10715a6d8ad1ccd8027699b9e368142ed22765f506",
+      "retrieved_at": "2026-10-20T04:33:52Z"
+    }
   }
 ]

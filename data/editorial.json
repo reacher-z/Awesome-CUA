@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "ST-Lite: Training-Free KV Cache Compression with Spatio-Trajectory Guidance for Long-Horizon GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.00188",
+    "environments": [
+      "android",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "training-free",
+      "interaction-history",
+      "screen-understanding"
+    ],
+    "summary": "Proposes ST-Lite, training-free KV cache compression for GUI agents that filters redundant history frames, keeps tokens on small UI-element boundaries and uses a flat per-layer budget, tested on seven GUI benchmarks.",
+    "verify_terms": [
+      "Spatio-Trajectory Guidance for Long-Horizon GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.00188v3"
+    ],
+    "scope": "core",
+    "notes": "Applied to UI-TARS-1.5-7B and OpenCUA-7B, with a UGround-7B cross-architecture check, and compared with SnapKV, PyramidKV, VL-Cache and GUI-KV. The main analysis uses ScreenSpot Pro, AITW and AgentNetBench; appendices add ScreenSpot-v2, OSWorld-Verified, Multimodal-Mind2Web and AndroidControl. The paper reports matching or exceeding full-cache accuracy at a 20% budget on the primary backbone and up to 2.35x decoding speedup at fivefold compression. The v3 arXiv comment states acceptance to Findings of EMNLP 2026. The paper names its code at github.com/94wen94/ST-Lite. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.00188v3",
+        "retrieved_at": "2026-10-20T04:35:05Z",
+        "sha256": "49ee1d12b5db9282dd4f6f38f079797245ed7efd6331504a7c4febb521dd0395",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and the v3 HTML sections 2.3 (workload characterization), 3.1-3.3 (CSS, TSG, uniform budget), 4.1-4.5 (setup, results, cache hit rate, ablation, efficiency) and Appendices F, I.2 and T (benchmark descriptions, additional benchmarks, cross-architecture validation).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2dca820f954e512c9499ef5f4539aecff97279a0be2606caa014ed0e186180df",
+    "reviewed_at": "2026-10-20T04:35:22Z"
   }
 ]

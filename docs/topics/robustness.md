@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-184 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+185 source-reviewed resources tagged `robustness`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (170)](#papers)
 
 ## Benchmarks
 
@@ -18,6 +18,7 @@
 | [Mobile-Bench-v2 released data](https://huggingface.co/datasets/xwk123/MobileBench-v2) | android | [2505.11891](https://arxiv.org/abs/2505.11891) (2025) | — | — | Offline mobile-agent task data spanning common tasks and released noisy, contaminated and ambiguous-instruction subsets. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
+| [TimeWarp](https://github.com/sparklabutah/timewarp) | web | [2603.04949](https://arxiv.org/abs/2603.04949) (2026) | [231 tasks](https://raw.githubusercontent.com/sparklabutah/timewarp/4978e690ef2ad33d81a4a0c043da3f80588902a0/src/browsergym/timewarp/data/test.raw.json) · [6 UI versions per site](https://raw.githubusercontent.com/sparklabutah/timewarp/4978e690ef2ad33d81a4a0c043da3f80588902a0/README.md) | — | Web-agent benchmark on self-hosted Wiki, News and Shop sites, each with six era-styled UI versions, registering 231 BrowserGym tasks scored mainly by deterministic answer verifiers. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/sparklabutah/timewarp/HEAD/README.md) |
 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | desktop, windows | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | [141 tasks](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [11 Windows applications](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [20 task IDs](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_custom.json) | code MIT | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) |
 | [WorldGUI](https://github.com/showlab/WorldGUI) | desktop | [2502.08047](https://arxiv.org/abs/2502.08047) (2025) | — | — | 611 desktop GUI tasks that agents must complete from varied starting points, shipped with instructional videos and project files, plus the self-reflective WorldGUI-Agent baseline. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/WorldGUI/HEAD/README.md) |
 

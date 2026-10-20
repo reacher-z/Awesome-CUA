@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-233 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+234 source-reviewed resources tagged `reinforcement-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (181)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (19)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (182)](#papers)
 
 ## Benchmarks
 
@@ -181,6 +181,7 @@ All entries in this section: cross-platform.
 | 2026‑02‑09 | [UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082) | cross-platform, web, android | Describes a GUI-agent family combining broad intermediate training, full-trajectory online reinforcement learning, and merging of specialized models. |
 | 2026‑02‑06 | [POINTS-GUI-G: GUI-Grounding Journey](https://arxiv.org/abs/2602.06391) | cross-platform | Studies GUI-grounding development from a weakly grounded base model through data preparation, visual training, and verifiable rewards. |
 | 2026‑02‑05 | [UI-Mem: Self-Evolving Experience Memory for Online Reinforcement Learning in Mobile GUI Agents](https://arxiv.org/abs/2602.05832) | unspecified | UI-Mem stores workflows, skills and failure patterns as reusable templates to guide online GUI reinforcement learning. It varies guidance within rollout groups and continually updates the memory so an unguided policy can learn from guided experiences. |
+| 2026‑01‑30 | [SSL: Sweet Spot Learning for Differentiated Guidance in Agentic Optimization](https://arxiv.org/abs/2601.22491) | android, desktop, web | Proposes Sweet Spot Learning, an RLVR scheme with tiered rewards by proximity to the target, applied to GUI grounding and planning with Qwen2.5-VL 3B and 7B and to Sudoku, maze and ARC reasoning across 12 benchmarks. |
 | 2026‑01‑29 | [DynaWeb: Model-Based Reinforcement Learning of Web Agents](https://arxiv.org/abs/2601.22149) | web | DynaWeb learns a world model that predicts web-page representations after actions and uses it to generate policy-training rollouts. It interleaves these rollouts with expert trajectories and evaluates the trained web agents on WebArena and WebVoyager. |
 | 2026‑01‑29 | [WebArbiter: A Principle-Guided Reasoning Process Reward Model for Web Agents](https://arxiv.org/abs/2601.21872) | web | WebArbiter generates reasoned action-preference verdicts for web navigation, using reasoning distillation followed by reinforcement learning. It introduces WebPRMBench and evaluates both preference judgments and reward-guided trajectory search. |
 | 2026‑01‑28 | [Continual GUI Agents](https://arxiv.org/abs/2601.20732) | unspecified | Continual GUI Agents defines grounding under changing application domains and screen resolutions. Its GUI-AiF training framework uses separate point- and region-alignment rewards to adapt grounding as these distributions shift. |

@@ -63844,5 +63844,48 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "SSL: Sweet Spot Learning for Differentiated Guidance in Agentic Optimization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2601.22491",
+    "environments": [
+      "android",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "reward-models",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "Proposes Sweet Spot Learning, an RLVR scheme with tiered rewards by proximity to the target, applied to GUI grounding and planning with Qwen2.5-VL 3B and 7B and to Sudoku, maze and ARC reasoning across 12 benchmarks.",
+    "verify_terms": [
+      "Sweet Spot Learning for Differentiated Guidance"
+    ],
+    "scope": "adjacent",
+    "notes": "Eight of the 12 benchmarks are GUI tasks: GUI-Act-Web, OmniAct-Web, OmniAct-Desktop and AndroidControl-Low for short-term planning, AndroidControl-High and GUI-Odyssey for long-term planning, and ScreenSpot and ScreenSpot-Pro for perception; the others are Sudoku, Maze Navigation, ARC-AGI-1 and ARC-AGI-2. GUI training uses about 3K mixed web and mobile examples from GUI-R1, scoring click points with Gaussian-field distance tiers and action types with binary correctness, with RL run in EasyR1. Results were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2601.22491v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2601.22491v1",
+        "retrieved_at": "2026-10-20T04:53:35Z",
+        "sha256": "6b9afe72fd8335b9c83399764bcaa64dfd9791abce2e3f33d26b666c09f5bd2d",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML sections 1 (introduction), 3 (SSL framework with GUI and reasoning instantiations) and 4 (setup, benchmarks, GUI planning and perception results, cross-task transfer and zone ablation).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "9f136355c1aa3268b4329df47b671db7bb566ebe2d4796be7a7c81c4e18a8117",
+    "reviewed_at": "2026-10-20T04:53:36Z"
   }
 ]

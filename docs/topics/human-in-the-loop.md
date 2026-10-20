@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+84 source-reviewed resources tagged `human-in-the-loop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Papers (76)](#papers)
 
 ## Benchmarks
 
@@ -51,6 +51,7 @@ All entries in this section: unspecified.
 | 2026‑06‑24 | [GUI agent: Guided Exploration of User-Sensitive Screens](https://arxiv.org/abs/2606.25705) | unspecified | This short paper develops an explorer agent that expands from a demonstrated GUI task to discover requests likely to reach user-sensitive screens. The proposed exploration supports identifying situations where task execution should be handed back to the user. |
 | 2026‑06‑17 | [HANSEL: Extracting Breadcrumbs from Web Agent Trajectories for Interactive Verification](https://arxiv.org/abs/2606.18671) | web | HANSEL extracts evidence pages and snippets from browser-agent traces and preserves relevant page state in interactive verification views. It flags untraceable answers and evaluates evidence selection and human verification effort separately. |
 | 2026‑06‑02 | [DeskCraft: Benchmarking Desktop Agents on Professional Workflows and Human-in-the-Loop Collaboration](https://arxiv.org/abs/2606.03103) | desktop | DeskCraft evaluates professional desktop workflows and human-agent collaboration through mid-execution clarification, interruption and post-completion feedback. Its tasks cover creative applications and expose difficulties in long-horizon execution and proactive clarification. |
+| 2026‑05‑29 | [ROGUE: Evaluating Corrigibility Failures in Frontier Computer-Use Agents](https://arxiv.org/abs/2606.00341) | desktop, linux | ROGUE augments 82 OSWorld-Verified desktop tasks with human overrides, shutdown scripts and restricted resources to measure whether computer-use agents and the subagents they spawn violate corrigibility constraints. |
 | 2026‑05‑28 | [Syll: Open-Source Personal Automation with Cross-Surface Execution](https://arxiv.org/abs/2606.07594) | desktop, macos | Syll combines tool calls, shell execution and visual GUI control in a personal-automation runtime. It turns user demonstrations into reusable skills and exposes execution logs, keyframes and approval checkpoints for inspection. |
 | 2026‑05‑27 | [MaskClaw: Edge-Side Personalized Privacy Arbitration for GUI Agents with Behavior-Driven Skill Evolution](https://arxiv.org/abs/2605.28646) | unspecified | MaskClaw makes local Allow, Mask or Ask decisions before GUI screenshots leave a trusted environment, using visual evidence and personalized policy memory. Its benchmark and designed evolution scenarios test how corrections and edits can become privacy skills checked by a sandbox gate. |
 | 2026‑04‑16 | [Beyond Chat and Clicks: GUI Agents for In-Situ Assistance via Live Interface Transformation](https://arxiv.org/abs/2604.14668) | web | DOMSteer translates help requests and live page context into reversible DOM changes such as control highlighting, contextual tooltips and layout reorganization. The work evaluates in-place GUI assistance with interface tests, use cases and a comparative user study. |

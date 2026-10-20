@@ -63653,5 +63653,47 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "The Tool Illusion: Rethinking Tool Use in Web Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.03465",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "evaluation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "summary": "Re-evaluates three tool-use web-agent frameworks against browser-only actions on WebArena and VisualWebArena with five backbones, analyzing tool sources, tool complexity, token and step overhead, skills and screenshots.",
+    "verify_terms": [
+      "Rethinking Tool Use in Web Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2604.03465v2"
+    ],
+    "notes": "Controlled empirical study (COLM 2026) of existing frameworks rather than a new agent: WALT and SkillWeaver use LLM-synthesized browser functions, and Hybrid-Agent uses human-developed website APIs called through REST requests. The frameworks were rerun from their released code with documented adjustments (Appendix A); WebArena multi-site tasks were excluded and success is binary. Backbones are GPT-5, GPT-5-mini, GPT-5-nano, Grok-4.1-Fast-Reasoning and Mistral-Large-3.1. The v2 text names no release of the study's own code. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2604.03465v2",
+        "sha256": "4cf4d5b897200815a360033d8b4400f2013010126504c726ea692f0f3a97bb3f",
+        "retrieved_at": "2026-10-20T04:21:05Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v2 abstract and checked the v2 HTML full text for the compared frameworks (Section 3), benchmarks and backbones, the analyses in Section 4, and the reproduction notes in Appendix A. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "122af591b9cc8677dd5d5832dda31703d2a47b4719cede2eefa6b03745f2d5f2",
+    "reviewed_at": "2026-10-20T04:21:22Z"
   }
 ]

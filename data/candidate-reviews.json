@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:747b664f09544509628b",
+    "url": "https://visualwebbench.github.io",
+    "decision": "alias",
+    "target_id": "github:visualwebbench/visualwebbench",
+    "reason": "Project website for the indexed VisualWebBench benchmark repository; the repository README and GitHub homepage field link it as the Homepage."
   }
 ]

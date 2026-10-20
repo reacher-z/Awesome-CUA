@@ -63844,5 +63844,55 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "Agent-Environment Alignment via Automated Interface Generation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.21055",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "state-tracking",
+      "training-free"
+    ],
+    "summary": "ALIGN has LLM analyzer and optimizer modules turn failed agent trajectories into a wrapper that adds environment rules and step-wise feedback, tested on ALFWorld, ScienceWorld, WebShop and M3ToolEval.",
+    "verify_terms": [
+      "Agent-Environment Alignment via Automated Interface Generation"
+    ],
+    "scope": "adjacent",
+    "notes": "ALIGN generates two Python functions: InferRules adds interaction rules and constraints to the initial task information, and WrapStep augments each observation, without changing agent logic or environment code. The evaluated agents (Vanilla, ReAct, Self-Consistency, Self-Refine and a planning agent) use Qwen2.5-7B-Instruct, while Gemini 2.5 Pro and GPT-4.1 generate the interfaces. WebShop is the only web environment (mean gain of 6.59 points); all environments are text-based, and the paper states that it claims no GUI results. The abstract links code at github.com/THUNLP-MT/ALIGN, which is not recorded here; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text: Sections 1-5 (framework, setup, Table 1 results, transfer analysis) and the limitations discussion.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2505.21055v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2505.21055v2",
+        "retrieved_at": "2026-10-20T08:14:02Z",
+        "sha256": "b19cb9823cb7843b646f236488ebb4ef02a77b4cec2eab1e921f1d61c514e57a",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b98575134603a9ad87db104b05bde10a80508840cbe4580e6301d5e284a8163b",
+    "reviewed_at": "2026-10-20T08:14:33Z"
   }
 ]

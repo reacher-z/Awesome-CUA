@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,629 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,630 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -14,7 +14,7 @@
 | [Mobile navigation](topics/mobile-navigation.md) | 272 | 14 | 13 | 15 | 30 | 200 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Reinforcement learning](topics/reinforcement-learning.md) | 233 | 2 | 5 | 23 | 21 | 182 | [OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents](https://arxiv.org/abs/2610.22234) · 2026-10-15 |
 | [Screen understanding](topics/screen-understanding.md) | 207 | 5 | 19 | 10 | 11 | 162 | [STP-GUI: Spatially-Aware Token Pruning for Efficient Web-GUI Agents](https://arxiv.org/abs/2610.20390) · 2026-10-14 |
-| [Safety & security](topics/safety-security.md) | 205 | 12 | · | · | 7 | 186 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
+| [Safety & security](topics/safety-security.md) | 206 | 12 | · | · | 7 | 187 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Robustness](topics/robustness.md) | 184 | 10 | 1 | · | 2 | 171 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Memory](topics/memory.md) | 166 | 1 | 2 | · | 16 | 147 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Efficiency](topics/efficiency.md) | 150 | 1 | · | 5 | 4 | 140 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) · 2026-10-15 |

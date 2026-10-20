@@ -63844,5 +63844,40 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "id": "url:e1842006eb7b4745da03",
+    "name": "A Survey on Benchmarks of LLM-based GUI Agents",
+    "kind": "survey",
+    "url": "https://doi.org/10.36227/techrxiv.176591818.87526814/v1",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.36227/techrxiv.176591818.87526814/v1"
+    ],
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "Surveys LLM-based GUI agent benchmarks in three task tiers (grounding and QA, multi-step navigation, open-world environments), comparing their datasets, environments and metrics, and outlines open evaluation gaps.",
+    "scope": "core",
+    "verify_terms": [
+      "A Survey on Benchmarks of LLM-based GUI Agents"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "A TechRxiv preprint (version 1, 16 December 2025) that has not been peer reviewed. The full text tabulates grounding and QA benchmarks such as ScreenQA, ScreenSpot-Pro and OSWorld-G, navigation benchmarks such as VisualWebArena, AndroidControl and GUI-Odyssey, and open-world benchmarks such as SPA-Bench, macOSWorld and MMBench-GUI, with each benchmark's dataset, environment type, evaluators and venue. It reprints ScreenSpot-Pro and OSWorld leaderboard results and GUI-Odyssey results collected from earlier papers, and names explainability, generalization, security, user-centric tasks and on-device deployment as open challenges. Crossref and the preprint state a CC BY 4.0 license.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "864338417c88646509a817112eae54be5e8a919f6142130030d93b04a1106339",
+    "reviewed_at": "2026-10-20T04:53:58Z"
   }
 ]

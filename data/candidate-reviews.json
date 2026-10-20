@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:5ee32309be4981d585ba",
+    "url": "https://www.interconnects.ai/p/claudes-agency",
+    "decision": "out_of_scope",
+    "reason": "An October 2024 Interconnects newsletter post by Nathan Lambert that gives first impressions of Anthropic's Computer Use beta from two trial web tasks and then compares the Anthropic, Google and OpenAI frontier models. It is third-party commentary with no dataset, code, model or evaluation of its own, so it is not a catalog resource.",
+    "reviewed_at": "2026-10-20T05:08:03Z",
+    "evidence": {
+      "url": "https://www.interconnects.ai/p/claudes-agency",
+      "sha256": "97ced405289750814a00c8c313e3fe44de551b5d2b607b8f88e77954610f0e03",
+      "retrieved_at": "2026-10-20T04:19:19Z"
+    }
   }
 ]

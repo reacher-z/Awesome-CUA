@@ -63844,5 +63844,112 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "OpenCLI",
+    "kind": "tool",
+    "url": "https://github.com/jackwener/OpenCLI",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Browser automation CLI for AI agents that drives the user's logged-in Chrome through an extension and local daemon, reading pruned DOM snapshots with element refs and adding JSON site adapters for over 100 sites.",
+    "verify_terms": [
+      "OpenCLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jackwener/OpenCLI/HEAD/README.md"
+    ],
+    "notes": "Published by jackwener as the npm package @jackwener/opencli (Node.js 20.18.1 or later). A Manifest V3 Chrome extension (Browser Bridge) with the debugger, tabs and cookies permissions and access to all URLs runs commands in tab leases through chrome.debugger (Runtime.evaluate, Page.captureScreenshot); a local daemon on localhost:19825 relays CLI HTTP requests to it over WebSocket, and OPENCLI_CDP_ENDPOINT points the CLI at a remote Chrome DevTools Protocol endpoint instead. The `opencli browser` commands (open, state, click, type, fill, select, keys, wait, extract, network, screenshot, tab and others) take a named session. The state snapshot (src/browser/dom-snapshot.ts) runs in the page, prunes invisible and occluded nodes, walks shadow DOM and same-origin iframes, and tags interactive elements with data-opencli-ref indices for click and type targets; the README says agents read pages through these DOM snapshots rather than screenshots. Agent skills in skills/ (opencli-browser, opencli-adapter-author, opencli-autofix, opencli-usage, smart-search) teach coding agents such as Claude Code or Cursor to use the CLI; the CLI ships no model of its own. The clis/ folder has 170 site directories at the inspected commit (counted from the tree, excluding _shared and _atlassian); the README says 100+ sites. The OpenCLIApp desktop tray app is downloaded from opencli.info and is not in the tree. Root LICENSE is Apache-2.0; not a fork, not archived; release v2.0.1 tags the inspected commit. Code was read, not run.",
+    "details": {
+      "availability": "Public CLI, Chrome extension, daemon, site adapters and agent skills; npm package and extension releases; the OpenCLIApp tray app is distributed separately.",
+      "repository_revision": "ae41ee2241df4798465455115da9cd7729fd455b",
+      "release_tag": "v2.0.1"
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.release_tag",
+          "details.availability"
+        ],
+        "url": "https://api.github.com/repos/jackwener/OpenCLI/git/trees/ae41ee2241df4798465455115da9cd7729fd455b?recursive=1",
+        "sha256": "eb677c375967feb7f0b5154f73516e928b341a3059cdbbb5c5c31d4720975231",
+        "retrieved_at": "2026-10-20T07:53:01Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/jackwener/OpenCLI/ae41ee2241df4798465455115da9cd7729fd455b/LICENSE",
+        "sha256": "0210b8b66cf00358242cb921ba2be3a46dfe0190159b1b952388a3880ce1ff54",
+        "retrieved_at": "2026-10-20T07:53:08Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/jackwener/OpenCLI/ae41ee2241df4798465455115da9cd7729fd455b/extension/manifest.json",
+        "sha256": "574ef5a81ac15febc54de2bad099ab6125502d95b659b4b2c6660f418f7a04ae",
+        "retrieved_at": "2026-10-20T07:53:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/jackwener/OpenCLI/ae41ee2241df4798465455115da9cd7729fd455b/extension/src/cdp.ts",
+        "sha256": "9be41edeb22c3a6503a9681ee6c1fecfae08b10c130b23f31f13d8ec57abe2b1",
+        "retrieved_at": "2026-10-20T07:53:07Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/jackwener/OpenCLI/ae41ee2241df4798465455115da9cd7729fd455b/src/daemon.ts",
+        "sha256": "8000099c0f205fb1d9b500e8400ff900474c13c40295fd09bce7a38affce178b",
+        "retrieved_at": "2026-10-20T07:53:06Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/jackwener/OpenCLI/ae41ee2241df4798465455115da9cd7729fd455b/src/browser/dom-snapshot.ts",
+        "sha256": "df0ffdcf1ab0f198e3005eb1dd7ed878d8e0539e4efdcd00fb2491045985f4e3",
+        "retrieved_at": "2026-10-20T07:53:07Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "3628d0bd2a78213a742b13588db7012802529f01c5edf48ebee9165b2d452108",
+    "reviewed_at": "2026-10-20T07:54:14Z"
   }
 ]

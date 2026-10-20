@@ -63844,5 +63844,46 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "A Multimodal GUI Architecture for Interfacing with LLM-Based Conversational Assistants",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2510.06223",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "tool-integration",
+      "ui-design",
+      "action-prediction"
+    ],
+    "summary": "Proposes an MVVM architecture exposing an app's ViewModels and GUI router as MCP tools so speech-driven LLM assistants can navigate and fill GUIs, and compares LLMs on mapping 55 requests to GUI tool calls.",
+    "verify_terms": [
+      "A Multimodal GUI Architecture for Interfacing with LLM-Based"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent: the assistant acts on the application through tool calls derived from the GUI structure (tools for the visible view from its ViewModel, plus application-global tools from the GUI tree router) rather than by perceiving screenshots; the paper contrasts this with screenshot-based computer-use agents and covers mobile and desktop application patterns. The evaluation uses 55 transcribed Dutch requests and their English translations for a data-center incident-recording app with six functions, scoring per-parameter accuracy and latency. Proprietary models scored 94.4-97.6%, the best open-weight configuration (Qwen3 32B) 93.6% in English, and gpt-oss-20b on an H100 answered in about 1.5 s. The paper names a Flutter demo implementation at github.com/hansvdam/langbar, which was not inspected; no results were reproduced.",
+    "read_basis": "Read the arXiv v2 abstract and the full v2 HTML text (architecture Sections 4-6 and the local model evaluation in Section 7, Table 2).",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2510.06223v2"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2510.06223v2",
+        "retrieved_at": "2026-10-20T08:04:55Z",
+        "sha256": "f953ac2a21312b026bb23be7e4d7264c5a9d4005c9741c5ba1d8e2a9881d2747",
+        "supports": [
+          "summary",
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ab80d2f28bf0ed144feb9fc3b80a0db0da3e894c288357ab2cf95b8751d9619f",
+    "reviewed_at": "2026-10-20T08:05:18Z"
   }
 ]

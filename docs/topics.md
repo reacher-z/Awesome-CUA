@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,629 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
+1,630 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -18,7 +18,7 @@
 | [Robustness](topics/robustness.md) | 184 | 10 | 1 | · | 2 | 171 | [How GUI Agents Fail: GraceBench for Execution Stability Diagnosis](https://arxiv.org/abs/2610.19900) · 2026-10-14 |
 | [Memory](topics/memory.md) | 166 | 1 | 2 | · | 16 | 147 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
 | [Efficiency](topics/efficiency.md) | 150 | 1 | · | 5 | 4 | 140 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) · 2026-10-15 |
-| [Tool integration](topics/tool-integration.md) | 131 | 9 | 2 | 4 | 24 | 92 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
+| [Tool integration](topics/tool-integration.md) | 132 | 9 | 2 | 4 | 24 | 93 | [OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://arxiv.org/abs/2610.22200) · 2026-10-15 |
 | [Workflows](topics/workflow.md) | 112 | 6 | 2 | · | 22 | 82 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
 | [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
 | [Long-horizon tasks](topics/long-horizon.md) | 102 | 5 | 1 | 1 | 5 | 90 | [Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents](https://arxiv.org/abs/2610.18784) · 2026-10-13 |
@@ -27,7 +27,7 @@
 | [Reward models](topics/reward-models.md) | 56 | 4 | 3 | 4 | 3 | 42 | [From Trajectories to Grounded Preferences: Process Preference Synthesis via Interaction Element Graphs for Web PRMs](https://arxiv.org/abs/2609.32351) · 2026-09-26 |
 | [Sandboxes](topics/sandbox.md) | 55 | 3 | · | · | 14 | 38 | [MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments](https://arxiv.org/abs/2610.20939) · 2026-10-14 |
 | [Cross-app](topics/cross-app.md) | 54 | 13 | 2 | · | 4 | 35 | [AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks](https://arxiv.org/abs/2610.11050) · 2026-10-08 |
-| [Action prediction](topics/action-prediction.md) | 48 | · | 2 | 17 | 3 | 26 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
+| [Action prediction](topics/action-prediction.md) | 49 | · | 2 | 17 | 3 | 27 | [Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents](https://arxiv.org/abs/2609.27353) · 2026-09-23 |
 | [Interaction history](topics/interaction-history.md) | 48 | · | · | 1 | 1 | 46 | [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) · 2026-09-23 |
 | [State tracking](topics/state-tracking.md) | 48 | · | · | · | 3 | 45 | [LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles](https://arxiv.org/abs/2609.34769) · 2026-09-28 |
 | [World models](topics/world-models.md) | 42 | · | 3 | 2 | 2 | 35 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) · 2026-10-09 |
@@ -37,7 +37,7 @@
 | [Training-free methods](topics/training-free.md) | 30 | · | · | · | 2 | 28 | [Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents](https://arxiv.org/abs/2609.33304) · 2026-09-27 |
 | [Industry](topics/industry.md) | 27 | · | · | · | 16 | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
 | [Recording](topics/recording.md) | 23 | · | 1 | · | 7 | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
-| [UI design](topics/ui-design.md) | 22 | · | 1 | · | · | 21 | [WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness](https://arxiv.org/abs/2610.02617) · 2026-10-02 |
+| [UI design](topics/ui-design.md) | 23 | · | 1 | · | · | 22 | [WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness](https://arxiv.org/abs/2610.02617) · 2026-10-02 |
 | [Survey](topics/survey.md) | 19 | · | · | · | · | 19 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) · 2026-09-02 |
 | [Scientific workflows](topics/science.md) | 18 | 1 | 1 | · | 1 | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
 | [Historical](topics/history.md) | 4 | · | · | · | 4 | · | — |

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:ee25e56c7ecca5e49c5a",
+    "url": "https://superhighway.walls.sh",
+    "decision": "out_of_scope",
+    "reason": "Superhighway is a hosted web search API for AI agents whose endpoints return ranked results, news, image links and page text as markdown, sold per call with a free tier. It never renders, clicks or types in a page or app, so it is retrieval infrastructure rather than a computer-use agent, environment or tool.",
+    "reviewed_at": "2026-10-20T04:21:39Z",
+    "evidence": {
+      "url": "https://superhighway.walls.sh",
+      "sha256": "9d7b0620ef9431efda623e0dea433991878b3342a7eaf6c2474a9bf9fcd0e13f",
+      "retrieved_at": "2026-10-19T08:47:44Z"
+    }
   }
 ]

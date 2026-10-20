@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-112 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+113 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (7)](#agents) · [Frameworks (8)](#frameworks) · [Products (8)](#products) · [Surveys (1)](#surveys) · [Papers (81)](#papers)
 
 ## Benchmarks
 
@@ -60,6 +60,7 @@
 | [Scribe](https://scribehow.com/) | — | desktop, web | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
 | [Simular](https://www.simular.ai/) | [Simular](https://www.simular.ai/) | desktop | Computer-use products and research from Simular. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern Cloud](https://www.skyvern.com/) | [Skyvern](https://www.skyvern.com/) | web | Hosted Skyvern service for AI browser workflows such as invoice downloads and form filling, with built-in CAPTCHA and 2FA handling, proxy geotargeting, run explanations and JSON or CSV output. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
+| [Twin](https://twin.so) | — | web | No-code platform that turns plain-language goals into scheduled business agents, calling APIs where they exist and falling back to a Web Agent that clicks, types and fills forms in an isolated cloud browser. | [✓ 2026‑10‑20](https://twin.so) |
 
 ## Surveys
 

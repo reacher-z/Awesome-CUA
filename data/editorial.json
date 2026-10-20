@@ -63844,5 +63844,91 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "SpaceO",
+    "kind": "tool",
+    "url": "https://github.com/ParthJadhav/SpaceO",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "human-in-the-loop",
+      "state-tracking"
+    ],
+    "summary": "macOS app, CLI and MCP server that runs agent-controlled apps on headless virtual displays and drives them through Accessibility actions and targeted input, leaving the user's screen and cursor free.",
+    "scope": "core",
+    "verify_terms": [
+      "SpaceO"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "Requires an Apple Silicon Mac with macOS 14 or later. The README limits support to native macOS apps and Chromium browsers; Electron apps such as Cursor and VS Code are refused before launch. Virtual displays and targeted background input rely on private macOS APIs resolved at runtime and confined to the SpaceOPrivate target. Actions prefer Accessibility elements over coordinates and each result is reported as confirmed, unconfirmed or refused; the Viewer can pause a session for a person to take control. The README states that this attention isolation is not a security sandbox: agent apps run as the user. MCPServer.swift at the inspected commit registers 35 spaceo_* tools (script count), and SpaceOVersion.swift gives version 1.0.9. No model is bundled; an MCP client supplies the agent. Code was read, not run.",
+    "details": {
+      "availability": "Public Swift source and signed, notarized macOS releases; no model is bundled, so an MCP client or CLI user supplies the agent.",
+      "repository_revision": "5d453eb1d472c2b67aa914e246e201402e3f50da"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "notes",
+          "details.availability",
+          "details.repository_revision"
+        ],
+        "url": "https://raw.githubusercontent.com/ParthJadhav/SpaceO/5d453eb1d472c2b67aa914e246e201402e3f50da/README.md",
+        "sha256": "e3883f8c1fca7d4ab7ac924d058283450d0663129ee1654ae738dd5f7e8d9e2b",
+        "retrieved_at": "2026-10-20T08:08:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ParthJadhav/SpaceO/5d453eb1d472c2b67aa914e246e201402e3f50da/Sources/SpaceOMCP/MCPServer.swift",
+        "sha256": "1a8dd6d3fc8650420b154ddaf837fd5957edae03b6ff55ac0ca4a6224cdf0ffa",
+        "retrieved_at": "2026-10-20T08:08:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ParthJadhav/SpaceO/5d453eb1d472c2b67aa914e246e201402e3f50da/Sources/SpaceOKit/SpaceOVersion.swift",
+        "sha256": "f0f3b3cfe8e0d559028a27a1c5293109beea4853c24cc8c9e5b5401dbd75cfb8",
+        "retrieved_at": "2026-10-20T08:08:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ParthJadhav/SpaceO/5d453eb1d472c2b67aa914e246e201402e3f50da/LICENSE",
+        "sha256": "f2027a5e29ee0bfafe5460c50d75dbf19d965100b8048ecc98dc905b6fe1362c",
+        "retrieved_at": "2026-10-20T08:08:18Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "read_basis": "Read the complete root README, the recursive file tree at commit 5d453eb, the MCP server source, the version source and the root LICENSE. No code execution.",
+    "reviewed_sha256": "e3883f8c1fca7d4ab7ac924d058283450d0663129ee1654ae738dd5f7e8d9e2b",
+    "reviewed_at": "2026-10-20T08:08:46Z"
   }
 ]

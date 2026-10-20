@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:d2d9756cda572f7f0ac7",
+    "url": "https://uivision.github.io",
+    "decision": "alias",
+    "target_id": "arxiv:2503.15661",
+    "reason": "Project page for the indexed UI-Vision desktop GUI benchmark paper; it carries the same title and 14-author list and links arXiv 2503.15661."
   }
 ]

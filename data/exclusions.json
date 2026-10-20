@@ -2038,5 +2038,20 @@
       "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
       "retrieved_at": "2026-10-17T12:31:39Z"
     }
+  },
+  {
+    "id": "arxiv:2604.19299",
+    "name": "Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms",
+    "url": "https://arxiv.org/abs/2604.19299",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract compares open-source language models under 10B parameters used as base models, as single agents with tools and as multi-agent systems. The full text evaluates 27 models on 20 financial NLP datasets (sentiment, classification, entity recognition, question answering, stock movement, credit scoring, summarization and bankruptcy prediction) with calculator, wiki-search and web-search tools; no agent operates a GUI, browser or device, so this deployment study of small language models is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:25:40Z",
+    "metadata_fingerprint": "c008296e1296c91e40998b81c7c53c106a32791b9d4c1ec746d50c82c1193903",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2210.03347%2C2403.04984%2C2405.07090%2C2406.06282%2C2409.00088%2C2409.10811%2C2411.10943%2C2503.09241%2C2503.20279%2C2503.23350%2C2505.05440%2C2505.10593%2C2505.16422%2C2505.21279%2C2505.24878%2C2506.02153%2C2506.02839%2C2506.05079%2C2506.07976%2C2508.02046%2C2511.07885%2C2511.11248%2C2512.21720%2C2603.20351%2C2604.19299&max_results=25",
+      "sha256": "c194d15b7e422aae48b4e05216a1f1d84471b6666718b9d3dd4c9d250c356e77",
+      "retrieved_at": "2026-10-18T04:21:52Z"
+    }
   }
 ]

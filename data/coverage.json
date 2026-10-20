@@ -1,15 +1,15 @@
 {
   "as_of_utc": "2026-10-19T21:04:13Z",
-  "total_records": 3193,
+  "total_records": 3192,
   "curated_records": 1627,
-  "bibliographic_records": 2733,
-  "arxiv_active_records": 2720,
+  "bibliographic_records": 2732,
+  "arxiv_active_records": 2719,
   "non_arxiv_bibliographic_records": 13,
   "publication_metadata_records": 77,
   "arxiv_archive_records": 2856,
-  "excluded_records": 136,
+  "excluded_records": 137,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1566,
+  "metadata_only_records": 1565,
   "discovery_identifiers": 4244,
   "unindexed_candidates": 905,
   "non_resource_candidates": 97,
@@ -142,13 +142,6 @@
       "cause": "reviewer_hold"
     },
     {
-      "id": "arxiv:2604.19299",
-      "name": "Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms",
-      "url": "https://arxiv.org/abs/2604.19299",
-      "reason": "The abstract compares base models, tool-equipped agents and multi-agent systems without identifying interface-interaction tasks. Retain as metadata pending a task-level scope check.",
-      "cause": "reviewer_hold"
-    },
-    {
       "id": "arxiv:2609.15134",
       "name": "HazardAuditor: From Executable Threats to Safer Computer-Use Agents",
       "url": "https://arxiv.org/abs/2609.15134",
@@ -193,7 +186,7 @@
     "framework": 75,
     "infrastructure": 14,
     "model": 98,
-    "paper": 2715,
+    "paper": 2714,
     "product": 20,
     "survey": 18,
     "tool": 20
@@ -1905,11 +1898,11 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 3,
       "curated": 15,
-      "excluded": 3,
+      "excluded": 4,
       "set_aside": 0,
       "unindexed": 9
     },

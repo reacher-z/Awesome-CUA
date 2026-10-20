@@ -2,11 +2,11 @@
 
 Evidence snapshot through **2026-10-19T21:04:13Z**. Generated from committed source receipts.
 
-- 3,193 resource records: 1,627 curated; 1,566 bibliographic metadata only.
-- 2,733 paper and survey records, including 2,720 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,856 retained arXiv metadata records; 136 explicit scope exclusions are outside the active catalog.
+- 3,192 resource records: 1,627 curated; 1,565 bibliographic metadata only.
+- 2,732 paper and survey records, including 2,719 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,856 retained arXiv metadata records; 137 explicit scope exclusions are outside the active catalog.
 - 4,244 discovery identifiers; 905 remain unresolved after accounting for scope exclusions and for 97 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 24 editorial proposals await verification or review.
+- 23 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -86,7 +86,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 14 | OK · 2026-10-19 |
 | [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 35 | OK · 2026-10-19 |
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 22 | OK · 2026-10-19 |
-| [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 9 | OK · 2026-10-19 |
+| [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 19 | 15 | 4 | 0 | 9 | OK · 2026-10-19 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 385 | 0 | 0 | 45 | OK · 2026-10-19 |
 
 ## Paper-discovery query coverage
@@ -151,7 +151,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-24 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 21 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+23 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 20 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -173,7 +173,6 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [On-Device Language Models: A Comprehensive Review](https://arxiv.org/abs/2409.00088) | This survey covers on-device language-model architectures, compression and deployment. Further review is needed to establish substantive computer-interface-agent coverage. |
 | [Small Language Models are the Future of Agentic AI](https://arxiv.org/abs/2506.02153) | This is a general position on small language models in agentic architectures. The abstract does not establish a specific computer-interface application for adjacent inclusion. |
 | [An Information Theoretic Perspective on Agentic System Design](https://arxiv.org/abs/2512.21720) | The abstract studies compressor-predictor language-model systems and Deep Research. A concrete connection to GUI, browser or operating-system interaction needs further primary-source review. |
-| [Rethinking Scale: Deployment Trade-offs of Small Language Models under Agent Paradigms](https://arxiv.org/abs/2604.19299) | The abstract compares base models, tool-equipped agents and multi-agent systems without identifying interface-interaction tasks. Retain as metadata pending a task-level scope check. |
 | [HazardAuditor: From Executable Threats to Safer Computer-Use Agents](https://arxiv.org/abs/2609.15134) | The abstract trains safety guards from normalized events across Claude Code, Codex, Hermes and OpenClaw. Browser interaction appears in the general motivation, but it does not identify actual GUI/browser tasks or the execution interface of its evaluated benchmarks. Harness names and the computer-use label alone do not establish material GUI evidence. |
 | [AgentAttack](https://github.com/OSU-NLP-Group/AgentAttack) | Reviewer hold: the retained README accompanies a conceptual position paper and lists related work; the official repository tree contains a README, two images, and .DS_Store, with no executable benchmark or test dataset. Do not classify this bibliography as a released benchmark. |
 | [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) | Reviewer hold: this release evaluates general tool-using agents in JSON-schema/Python simulated environments. The retained README and paper Sections 3.2.1 and Appendix C do not establish direct GUI or browser execution for this benchmark. Keep the source and receipt pending an explicit adjacent-scope justification. |
@@ -188,7 +187,7 @@ None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 
-136 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
+137 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
 
 ## Known gaps
 

@@ -517,5 +517,17 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:13260eb47a0f17622546",
+    "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-convergence-ai",
+    "decision": "out_of_scope",
+    "reason": "Salesforce newsroom announcement dated 15 May 2025, with an editor's note that the acquisition of Convergence.ai closed on 11 June 2025; it describes the deal and Convergence's web-agent expertise joining Agentforce but releases no product, code, model, dataset or method, so it is corporate news rather than a catalog resource.",
+    "reviewed_at": "2026-10-20T05:12:57Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251027002703id_/https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-convergence-ai/",
+      "sha256": "2624fcc869a441939a976d11673215714d6b1ecf6e1320ba4da8fa2eb2df6ef8",
+      "retrieved_at": "2026-10-20T05:00:44Z"
+    }
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `reward-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (42)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@
 | [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) | web | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | data Custom AgentRewardBench Terms of Use | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md) |
 | [CUAVerifierBench](https://huggingface.co/datasets/microsoft/CUAVerifierBench) | web | [2604.06240](https://arxiv.org/abs/2604.06240) (2026) | [106 trajectories](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) · [215 annotation rows](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) | data mit | Human-annotated browser-agent trajectories for comparing automated task-success and process-quality verifiers against reviewer judgments. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) |
 | [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
+| [OSReward](https://github.com/OS-Copilot/OSReward) | web, desktop, windows, linux, android | [2607.28609](https://arxiv.org/abs/2607.28609) (2026) | [1,019 trajectories](https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md) | — | Evaluator and collection code for OSReward, which tests VLM judges' SUCCESS/FAIL verdicts on human-labelled computer-use trajectories, plus web, Windows, Android and Ubuntu trajectory pipelines. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/OS-Copilot/OSReward/HEAD/README.md) |
 | [WebRewardBench](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [776 rows](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) | — | An offline preference-evaluation set for web process reward models, pairing page and trajectory context with preferred and rejected candidate decisions. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) |
 
 ## Datasets

@@ -63653,5 +63653,204 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "OSReward",
+    "kind": "benchmark",
+    "url": "https://github.com/OS-Copilot/OSReward",
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "linux",
+      "android"
+    ],
+    "topics": [
+      "reward-models",
+      "evaluation",
+      "data-generation"
+    ],
+    "scope": "core",
+    "summary": "Evaluator and collection code for OSReward, which tests VLM judges' SUCCESS/FAIL verdicts on human-labelled computer-use trajectories, plus web, Windows, Android and Ubuntu trajectory pipelines.",
+    "verify_terms": [
+      "OSReward"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OS-Copilot/OSReward/HEAD/README.md"
+    ],
+    "reviewed_relations": [
+      {
+        "type": "introduced_by",
+        "target_id": "arxiv:2607.28609",
+        "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:microsoft/windowsagentarena",
+        "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/trajectory_collection/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:google-research/android_world",
+        "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/trajectory_collection/README.md"
+      },
+      {
+        "type": "uses",
+        "target_id": "github:xlang-ai/osworld",
+        "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/trajectory_collection/ubuntu/README.md"
+      }
+    ],
+    "notes": "Code for the OSReward paper; the trajectories themselves are released separately on Hugging Face as OS-Copilot/OSReward (the README reports 1,019 Full and 284 Hard trajectories with screenshots and human verdicts), alongside the gated OS-Shepherd-100K corpus and OS-Shepherd checkpoints. eval_pipeline/run_judge.py downloads the Full or Hard Parquet split (or reads local traces), sends a judge the full thought and action history and, by default, the last five screenshots with red markers at normalized action points, at temperature 0, through an OpenAI-compatible or native Anthropic API, and parses one 'Judge: SUCCESS' or 'Judge: FAIL' verdict per trajectory. It reports accuracy, balanced accuracy, SUCCESS and FAIL recall and coverage; missing, failed and unparseable outputs count as incorrect. Its subset option offers full, hard and custom, with no OSReward-Multi option, although the README roadmap lists Multi under the evaluation harness. trajectory_collection/ holds the collection pipelines: webtrail for live and self-hosted websites, a Windows Agent Arena based Windows 11 VM pipeline, an AndroidWorld based emulator pipeline, and an OSWorld based Ubuntu pipeline with a screenshot-only tool-call agent (the root README calls Ubuntu 'on the way' and the collection README calls it a placeholder, but its code is in the tree), plus export_judged_sft.py for judge-SFT bundles. benchmarking_analysis/ scores judges against the ground-truth labels of OSWorld, WindowsAgentArena, WebArena and AndroidWorld rollouts, with small samples under data/raw. The OS-Shepherd-100K construction pipeline and the OS-Shepherd training and inference code are listed as not yet released. There is no root LICENSE; the bundled Windows and Android pipelines carry Microsoft's MIT and the Apache-2.0 license texts. Not a fork, not archived; no release. Code was read, not run.",
+    "details": {
+      "availability": "Public evaluator, collection pipelines and judge analysis; benchmark data, corpus and checkpoints are on Hugging Face; corpus construction and reward-model training code not yet released; no release or tag.",
+      "repository_revision": "0e1e401910e4033c7d3dc2631dc7171dd3c99d9a",
+      "repository_tree_sha": "db6ddf73c135e53429bacc8a079746dccd4bb51e",
+      "benchmark_protocol": {
+        "focus": [
+          "reliability of VLM judges and reward models on computer-use trajectories",
+          "binary success verdicts"
+        ],
+        "setting": "offline",
+        "observations": [
+          "task instruction",
+          "full thought and action history",
+          "last five screenshots with red action-point markers (default)"
+        ],
+        "actions": [
+          "one SUCCESS or FAIL verdict per trajectory"
+        ],
+        "evaluation": "Verdicts are compared with human gold labels; the evaluator reports accuracy, balanced accuracy, SUCCESS recall, FAIL recall and coverage, counting missing, API-error and unparseable outputs as incorrect.",
+        "counts": [
+          {
+            "value": 1019,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "OSReward Full split on Hugging Face",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md"
+          },
+          {
+            "value": 284,
+            "unit": "trajectories",
+            "qualifier": "exact",
+            "population": "OSReward Hard split on Hugging Face",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md"
+          }
+        ],
+        "notes": "Counts are as the README reports them for the Hugging Face release; they were not recounted from the dataset. Screenshot window, history mode, markers and temperature are evaluator defaults that can be changed by flags.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md",
+          "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/eval_pipeline/README.md",
+          "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/eval_pipeline/run_judge.py"
+        ]
+      }
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The complete tree at the reviewed commit has no root license file; the MIT and Apache-2.0 texts under trajectory_collection/windows and trajectory_collection/mobile cover those bundled upstream-derived pipelines, not the whole repository.",
+        "evidence_urls": [
+          "https://api.github.com/repos/OS-Copilot/OSReward/git/trees/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a?recursive=1"
+        ]
+      }
+    },
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.availability",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/OS-Copilot/OSReward/git/trees/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a?recursive=1",
+        "sha256": "6522233e6807ed71417ba52358dfe6609c040e606260b056e0f7b1422d0bdf99",
+        "retrieved_at": "2026-10-20T04:33:17Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations",
+          "notes",
+          "details.availability",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md",
+        "sha256": "ea91d9df443f0dc23a7cf8f53e91adc0ac187c8472e8bfbe0b14bb3ed779083d",
+        "retrieved_at": "2026-10-20T04:33:21Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/eval_pipeline/README.md",
+        "sha256": "13bd46be73db879e77e073368c9a67fa308878074901bf0a43190a8754057704",
+        "retrieved_at": "2026-10-20T04:33:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/eval_pipeline/run_judge.py",
+        "sha256": "6dc1ca1812a15b72ebf11145d53dddbda770b31b7a9df2093c0746cbc2a25598",
+        "retrieved_at": "2026-10-20T04:33:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/trajectory_collection/README.md",
+        "sha256": "8044300c8f0a28ee1ebbce35294769b2837a287554dfa18c270d85251f582d4c",
+        "retrieved_at": "2026-10-20T04:33:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes",
+          "relations"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/trajectory_collection/ubuntu/README.md",
+        "sha256": "c41a25d24a74a01cbb809df70edc0dacce8cd6a2bb0c34a77413269713bf7ee7",
+        "retrieved_at": "2026-10-20T04:33:22Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/benchmarking_analysis/README.md",
+        "sha256": "99c9a201fab38897465f439688326bef7789b76dc92bd3f4555f4f252f47be8a",
+        "retrieved_at": "2026-10-20T04:33:23Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ea91d9df443f0dc23a7cf8f53e91adc0ac187c8472e8bfbe0b14bb3ed779083d",
+    "reviewed_at": "2026-10-20T04:34:14Z"
   }
 ]

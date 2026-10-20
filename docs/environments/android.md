@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-308 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+309 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
+**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (16)](#agents) · [Frameworks (20)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (184)](#papers)
 
 ## Benchmarks
 
@@ -27,6 +27,7 @@
 | [MobileSafetyBench](https://github.com/jylee425/mobilesafetybench) | android | — | — | code Apache-2.0 | Android emulator testbed that scores mobile device-control agents on both safety and helpfulness, using ADB and Appium for observations, actions and success checks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md) |
 | [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 | [MobileWorldBench](https://github.com/jacklishufan/MobileWorld) | android | [2512.14014](https://arxiv.org/abs/2512.14014) (2025) | — | — | Benchmark of semantic world modeling for mobile agents, with question-answering tasks and GPT-judged generation tasks, plus training data built on AitW and AndroidControl screens. | [✓ 2026‑10‑16](https://github.com/jacklishufan/MobileWorld) |
+| [OSReward](https://github.com/OS-Copilot/OSReward) | web, desktop, windows, linux, android | [2607.28609](https://arxiv.org/abs/2607.28609) (2026) | [1,019 trajectories](https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md) | — | Evaluator and collection code for OSReward, which tests VLM judges' SUCCESS/FAIL verdicts on human-labelled computer-use trajectories, plus web, Windows, Android and Ubuntu trajectory pipelines. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/OS-Copilot/OSReward/HEAD/README.md) |
 | [SPA-Bench](https://github.com/ai-agents-2030/SPA-Bench) | android | [2410.15164](https://arxiv.org/abs/2410.15164) (2024) | [340 tasks](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) · [66 applications](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) | code MIT | 340 single-app and cross-app tasks over 66 Chinese and English Android apps, with plug-in support for 11 smartphone agents and automatic coarse-to-fine success detection. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ai-agents-2030/SPA-Bench/HEAD/README.md) |
 | [VisualAgentBench](https://github.com/THUDM/VisualAgentBench) | cross-platform, web, android | [2408.06327](https://arxiv.org/abs/2408.06327) (2024) | — | code Apache-2.0 | Evaluation framework spanning visual GUI, embodied, and design tasks, including mobile and WebArena-based environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/VisualAgentBench/HEAD/README.md) |
 

@@ -139,6 +139,16 @@ def resource_profile_html(row):
     return body
 
 
+def profile_paper(row):
+    """The reviewed introducing (else documenting) arXiv paper and a sort key that orders identifiers by submission month, then number."""
+    papers = sorted((rel['target_id'][6:] for rel in row.get('relations', []) if rel['type'] in ('introduced_by', 'documented_by') and rel['target_id'].startswith('arxiv:')),
+                    key=lambda arxiv: next(rel['type'] != 'introduced_by' for rel in row['relations'] if rel['target_id'] == 'arxiv:' + arxiv))
+    for arxiv in papers:
+        if len(parts := arxiv.split('.')) == 2 and parts[0].isdigit() and len(parts[0]) == 4 and parts[1].isdigit():
+            return arxiv, parts[0] + '.' + parts[1].zfill(5)
+    return None, ''
+
+
 def comparison_body(rows, kind, link_for):
     key = PROFILE_KEYS[kind]
     selected = selected_profiles(rows, kind)
@@ -149,7 +159,8 @@ def comparison_body(rows, kind, link_for):
     body = f'<div class="eyebrow">SOURCE-REVIEWED COMPARISON</div><h1>{title}</h1><p class="answer-lead">{purpose}</p><p>{len(selected)} profiles are available among {total} reviewed {plural} in the catalog. Remaining entries are available in the <a href="/categories/{kind}/">full directory</a>. Missing values mean not recorded.</p>'
     body += '<p>Counts retain their units and subsets; figures are publisher-reported unless marked computed. Different resources can describe parts of the same project.</p>'
     environments = sorted({env for row in selected for env in row['environments']})
-    body += '<div class="compare-controls"><div><label for="compare-query">Search profiles</label><input id="compare-query" type="search" placeholder="Name, interface, supervision, or format…"></div><div><label for="compare-environment">Environment</label><select id="compare-environment"><option value="">All environments</option>' + ''.join(f'<option value="{esc(env)}">{esc(env)}</option>' for env in environments) + '</select></div></div>'
+    body += '<div class="compare-controls"><div><label for="compare-query">Search profiles</label><input id="compare-query" type="search" placeholder="Name, interface, supervision, or format…"></div><div><label for="compare-environment">Environment</label><select id="compare-environment"><option value="">All environments</option>' + ''.join(f'<option value="{esc(env)}">{esc(env)}</option>' for env in environments) + '</select></div>'
+    body += '<div><label for="compare-sort">Sort</label><select id="compare-sort"><option value="">Name A–Z</option><option value="newest">Newest paper first</option></select></div></div>'
     body += f'<p id="compare-results" role="status" aria-live="polite">Showing {len(selected)} of {len(selected)} profiles.</p>'
     columns = ['Resource / setting', 'Observations / actions', 'Evaluation', 'Scale with scope'] if kind == 'benchmark' else ['Resource / supervision', 'Modalities / format', 'Splits / data license', 'Scale with scope']
     body += '<p class="table-help">Scroll the table sideways to see all columns.</p><div class="table-scroll compare-scroll" tabindex="0" aria-label="Profile comparison table"><table class="coverage-table compare-table"><thead><tr>' + ''.join('<th scope="col">' + label + '</th>' for label in columns) + '</tr></thead><tbody>'
@@ -157,7 +168,9 @@ def comparison_body(rows, kind, link_for):
         profile = row['details'][key]
         visible_values = [' '.join(value) if isinstance(value,list) else str(value) for key,value in profile.items() if key not in {'counts','evidence_urls'}]
         text = ' '.join([row['name'], *row['environments'], *visible_values, *(count_text(count) for count in profile['counts'])])
-        body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}"><td><a href="{link_for(row)}"><strong>{esc(row["name"])}</strong></a><div>{esc(words(row["environments"]))}</div>'
+        arxiv, order = profile_paper(row)
+        paper = f'<div class="compare-paper"><a href="https://arxiv.org/abs/{esc(arxiv)}">arXiv {esc(arxiv)}</a> · {esc("20" + arxiv[:2])}</div>' if arxiv else ''
+        body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}" data-paper="{esc(order)}"><td><a href="{link_for(row)}"><strong>{esc(row["name"])}</strong></a>{paper}<div>{esc(words(row["environments"]))}</div>'
         if kind == 'benchmark':
             body += '<p>' + esc(words(profile['focus'])) + '<br>' + esc(profile['setting']) + '</p></td><td><strong>Observe</strong><br>' + esc(words(profile['observations'])) + '<br><strong>Act / output</strong><br>' + esc(words(profile['actions'])) + '</td><td>' + esc(profile['evaluation'] or 'Not recorded') + '</td>'
         else:

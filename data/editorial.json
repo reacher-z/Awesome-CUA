@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.26648",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design"
+    ],
+    "summary": "Benchmarks multimodal coding agents on 193 website-development tasks, from static pages to full-stack sites built from prototypes, scoring function with a GUI agent running test workflows and visuals with a VLM judge.",
+    "verify_terms": [
+      "Vision2Web"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2603.26648v3"
+    ],
+    "scope": "adjacent",
+    "notes": "The agents under test write code in OpenHands and Claude Code; GUI operation enters through the functional verifier, which follows the WebVoyager task protocol with GLM-4.6V and judged 218 of 250 sampled test nodes in agreement with human annotators. The benchmark has 918 prototype images and 1,255 test cases. The paper links a project page at vision2web-bench.github.io. Results were not independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2603.26648v3",
+        "retrieved_at": "2026-10-20T04:31:52Z",
+        "sha256": "a49371d07d4bc9cc5e6f735560f3ffc2a938796620bfe1ddd6fd06ea62e2a9ef",
+        "supports": [
+          "summary",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v3 abstract and the v3 HTML Sections 2 and 3 (task levels, workflow-based verification, GUI agent verifier), 4.1 (models, OpenHands and Claude Code, GLM-4.6V verifier) and 4.4 (verifier validation).",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "19363bea0e59c0c1dc939009f1bcc761e9e3cf9056acc340005da6c3c57847bc",
+    "reviewed_at": "2026-10-20T04:32:13Z"
   }
 ]

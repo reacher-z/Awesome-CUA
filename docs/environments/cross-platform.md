@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+198 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (102)](#papers)
 
 ## Benchmarks
 
@@ -163,6 +163,7 @@ All entries in this section: cross-platform.
 | 2026‑07‑05 | [Do GUI Agents Believe Their Eyes? Diagnosing State-Belief Reliance on Pixels versus Structure](https://arxiv.org/abs/2607.04334) | cross-platform | Defines visual state reliance and probes whether GUI agents resolve screenshot/structure conflicts using pixels, serialized interface structure or prior beliefs. Paired interventions and live multi-step tests connect misattributed state beliefs to failures and compare consistency-based mitigations. |
 | 2026‑07‑05 | [UI-MOPD: Multi-Platform On-Policy Distillation for Unified GUI Agents](https://arxiv.org/abs/2607.04425) | desktop, cross-platform | Introduces Uni-GUI, a collection of executable desktop and mobile trajectories, and UI-MOPD, which trains a shared policy from its own rollouts using platform-specific teachers. The distillation procedure routes each visited state to the appropriate teacher to preserve distinct interaction conventions. |
 | 2026‑06‑16 | [PreAct: Computer-Using Agents that Get Faster on Repeated Tasks](https://arxiv.org/abs/2606.17929) | cross-platform | PreAct compiles successful screen-interaction runs into guarded state-machine programs for repeated tasks. It validates programs from clean states before storage and returns control to the agent when replayed screen expectations fail, with tests across mobile, desktop and web. |
+| 2026‑05‑29 | [GUI-C$^2$: Coarse-to-Fine GUI Grounding via Difficulty-Aware Reinforcement Learning](https://arxiv.org/abs/2605.30884) | cross-platform, desktop, web | Proposes GUI-D, which filters GUI grounding data and scores sample difficulty, and GUI-C², an RL-trained grounder that crops coarse-to-fine by predicted target area with improvement-aware rewards, using 4,624 samples. |
 | 2026‑04‑27 | [AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark](https://arxiv.org/abs/2604.24441) | cross-platform | AutoGUI-v2 evaluates interface functionality, grounding and predicted interaction outcomes using hierarchical regions derived through VLM-human annotation. Its tasks span multiple operating systems and expose differences between functional localization, captioning and transition-logic understanding. |
 | 2026‑04‑27 | [GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction](https://arxiv.org/abs/2604.23941) | cross-platform | Studies a compact encoder-decoder grounding model and progressive training-data refinement for resource-constrained GUI interaction. |
 | 2026‑04‑16 | [FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems](https://arxiv.org/abs/2604.14956) | web, desktop, cross-platform | Introduces FedGUI, a federated GUI-learning benchmark built from six datasets spanning mobile, web and desktop interfaces. Its experiments separate platform, device, operating-system and data-source heterogeneity when evaluating collaborative training. |

@@ -517,5 +517,12 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:f3baebe3e735291b41f8",
+    "url": "https://tongyi-mai.github.io/Qwen-UI-Agent",
+    "decision": "alias",
+    "target_id": "arxiv:2607.28227",
+    "reason": "Project website of the Qwen-UI-Agent Technical Report; its citation block gives the arXiv title, identifier and 16 authors."
   }
 ]

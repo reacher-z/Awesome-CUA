@@ -63653,5 +63653,48 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Planner Matters! An Efficient and Unbalanced Multi-agent Collaboration Framework for Long-horizon Planning",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2605.02168",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "reinforcement-learning",
+      "web-navigation",
+      "memory"
+    ],
+    "scope": "core",
+    "summary": "Splits GUI automation into planner, actor and memory-manager agents, finds planner capacity matters most, and trains only the planner with VLM-judged trajectory rewards; tested on WebVoyager, Mind2Web, MMInA and OSWorld.",
+    "verify_terms": [
+      "Planner Matters! An Efficient and Unbalanced"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2605.02168v1"
+    ],
+    "notes": "Full-text v1 observes screenshots with structured UI signals such as a DOM or accessibility tree and executes GUI actions through Playwright or PyAutoGUI. WebVoyager is the in-domain benchmark, Mind2Web and MMInA are out-of-domain, and OSWorld and MCPBench test generalization to desktop and tool-use tasks. Qwen2.5-VL-32B judges trajectories for the reward; backbones include Qwen2.5-VL-7B and Qwen3-VL-8B. The paper links code at github.com/WenyiWU0111/Planner-Matters-GUI-Agent, which is not reviewed here. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2605.02168v1",
+        "sha256": "5f0bb47322dbf74f5803b8fb935b140fc561e76b1610c6227bef4b1d8b1e287c",
+        "retrieved_at": "2026-10-20T04:20:13Z"
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 2, 3.2, 4.1, 5.1, 5.3 and 5.4. No result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "390b0e4c9338b8a7515a573144b94c0e2b593280ff769baf83240c29fdcdb17c",
+    "reviewed_at": "2026-10-20T04:20:24Z"
   }
 ]

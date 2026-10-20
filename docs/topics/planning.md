@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-278 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+279 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (213)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Surveys (2)](#surveys) · [Papers (214)](#papers)
 
 ## Datasets
 
@@ -156,6 +156,7 @@
 | 2026‑02‑24 | [ActionEngine: From Reactive to Programmatic Web Agents via State Machine Memory](https://arxiv.org/abs/2602.20502) | web | ActionEngine explores web applications to build an updateable state-machine memory of GUI states, operations and transitions. It generates complete task programs from that memory, using reactive repair to handle changed interfaces or missing knowledge. |
 | 2026‑02‑19 | [Computer-Using World Model](https://arxiv.org/abs/2602.17365) | desktop | Presents a desktop world model that predicts textual UI changes before synthesizing the next screenshot. It learns from Microsoft Office transitions and is evaluated by letting a frozen agent compare simulated actions before execution. |
 | 2026‑02‑18 | [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](https://arxiv.org/abs/2602.16313) | web | MemoryArena links tasks across sessions so that agents must distill earlier interaction experience and use it in later decisions. Its evaluation includes web navigation alongside planning, search and formal reasoning, testing memory through subsequent actions rather than recall alone. |
+| 2026‑02‑17 | [World-Model-Augmented Web Agents with Action Correction](https://arxiv.org/abs/2602.15384) | web | WAC has an action model consult a world model, simulates candidate actions' outcomes, and lets a judge model trigger corrections before execution, reaching 24.5% on VisualWebArena and 16.0% on Online-Mind2Web. |
 | 2026‑02‑14 | [OpAgent: Operator Agent for Web Navigation](https://arxiv.org/abs/2602.13559) | web | OpAgent combines multi-task GUI fine-tuning with online web reinforcement learning using outcome judgments and rule-based progress rewards. A modular planner, grounder, reflector and summarizer support navigation and recovery, evaluated separately from the underlying trained policy. |
 | 2026‑02‑12 | [Agentic Test-Time Scaling for WebAgents](https://arxiv.org/abs/2602.12276) | web | CATTS allocates additional inference computation when an agent’s action votes show uncertainty. The paper compares voting and arbiter strategies and evaluates this selective scaling on WebArena-Lite, Online-Mind2Web and GoBrowse. |
 | 2026‑02‑12 | [WebTestPilot: Agentic End-to-End Web Testing against Natural Language Specification by Inferring Oracles with Symbolized GUI Elements](https://arxiv.org/abs/2602.11724) | web | WebTestPilot turns natural-language requirements into web test steps with inferred preconditions and postconditions over symbolized GUI elements. A benchmark of bug-injected web applications tests whether these context-aware oracles distinguish application defects from agent mistakes. |

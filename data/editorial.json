@@ -63844,5 +63844,44 @@
     },
     "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
     "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "name": "World-Model-Augmented Web Agents with Action Correction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2602.15384",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "world-models",
+      "self-reflection",
+      "planning"
+    ],
+    "summary": "WAC has an action model consult a world model, simulates candidate actions' outcomes, and lets a judge model trigger corrections before execution, reaching 24.5% on VisualWebArena and 16.0% on Online-Mind2Web.",
+    "verify_terms": [
+      "World-Model-Augmented Web Agents"
+    ],
+    "scope": "core",
+    "notes": "Per the v1 full text (Section 4, Appendix B), WAC is built on the VisualWebArena codebase and compared with ReAct and a WebDreamer reproduction, all using a December 19, 2025 Qwen3-VL-Plus snapshot with a one-step world-model simulation horizon; a cross-model check uses GLM-4.5v on VisualWebArena Classifieds. The paper says code will be released upon publication and names no repository. Results were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/abs/2602.15384v1"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://arxiv.org/html/2602.15384v1",
+        "sha256": "dbf100247b02bc04441204c5d1a59ae19f5c250a3b7feb9e4e8c39232e3afb79",
+        "retrieved_at": "2026-10-20T04:38:58Z"
+      }
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ab35efff2bf4fbdc49a89529b7d8c77cd6a3a4ce729126cfb14b68aa58ba6ef9",
+    "reviewed_at": "2026-10-20T04:38:59Z"
   }
 ]

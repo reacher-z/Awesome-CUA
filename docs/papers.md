@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,117; 531 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,117; 532 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -943,7 +943,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-02-18 | [CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847) | metadata |  |
 | 2026-02-18 | [CADEvolve: Creating Realistic CAD via Program Evolution](https://arxiv.org/abs/2602.16317) | metadata |  |
 | 2026-02-18 | [AgentLAB: Benchmarking LLM Agents against Long-Horizon Attacks](https://arxiv.org/abs/2602.16901) | metadata |  |
-| 2026-02-17 | [World-Model-Augmented Web Agents with Action Correction](https://arxiv.org/abs/2602.15384) | metadata |  |
+| 2026-02-17 | [World-Model-Augmented Web Agents with Action Correction](https://arxiv.org/abs/2602.15384) | ⭐ reviewed | [planning](topics/planning.md), [self-reflection](topics/self-reflection.md), [web-navigation](topics/web-navigation.md), [world-models](topics/world-models.md) |
 | 2026-02-16 | [WebWorld: A Large-Scale World Model for Web Agent Training](https://arxiv.org/abs/2602.14721) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [world-models](topics/world-models.md) |
 | 2026-02-16 | [SpreadsheetArena: Decomposing Preference in LLM Generation of Spreadsheet Workbooks](https://arxiv.org/abs/2603.10002) | metadata |  |
 | 2026-02-16 | [EmbeWebAgent: Embedding Web Agents into Any Customized UI](https://arxiv.org/abs/2602.14865) | ⭐ reviewed | [automation](topics/automation.md), [tool-integration](topics/tool-integration.md), [web-navigation](topics/web-navigation.md), [workflow](topics/workflow.md) |

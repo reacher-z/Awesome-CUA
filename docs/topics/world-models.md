@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-42 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+43 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Papers (35)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Papers (36)](#papers)
 
 ## Datasets
 
@@ -50,6 +50,7 @@ All entries in this section: web.
 | 2026‑07‑17 | [SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction](https://arxiv.org/abs/2607.15550) | unspecified | Uses instruction screening and a safety-augmented world model to assess likely consequences of mobile GUI actions before execution. |
 | 2026‑05‑11 | [How Mobile World Model Guides GUI Agents?](https://arxiv.org/abs/2605.10347) | android | Compares mobile world models that predict state changes as delta text, full text, images or renderable code. Downstream Android benchmarks examine synthetic training trajectories and test-time guidance, including limits of post-action reflection. |
 | 2026‑02‑19 | [Computer-Using World Model](https://arxiv.org/abs/2602.17365) | desktop | Presents a desktop world model that predicts textual UI changes before synthesizing the next screenshot. It learns from Microsoft Office transitions and is evaluated by letting a frozen agent compare simulated actions before execution. |
+| 2026‑02‑17 | [World-Model-Augmented Web Agents with Action Correction](https://arxiv.org/abs/2602.15384) | web | WAC has an action model consult a world model, simulates candidate actions' outcomes, and lets a judge model trigger corrections before execution, reaching 24.5% on VisualWebArena and 16.0% on Online-Mind2Web. |
 | 2026‑02‑16 | [WebWorld: A Large-Scale World Model for Web Agent Training](https://arxiv.org/abs/2602.14721) | web | Introduces WebWorld, an open-web simulator trained on interaction trajectories for generating agent training data and testing candidate actions. WebWorld-Bench evaluates simulated transitions, alongside downstream web-agent training experiments. |
 | 2026‑02‑11 | [UI-Oceanus: Scaling GUI Agents with Synthetic Environmental Dynamics](https://arxiv.org/abs/2604.02345) | unspecified | UI-Oceanus converts autonomous GUI exploration and execution feedback into supervision for predicting future interface states. It compares forward and inverse objectives during continual pretraining and examines downstream offline and online navigation as synthetic data scales. |
 | 2026‑02‑10 | [Code2World: A GUI World Model via Renderable Code Generation](https://arxiv.org/abs/2602.09856) | android | Code2World predicts future GUI screens through renderable code, trained on AndroidCode trajectories with supervised learning and render-aware reinforcement learning. It evaluates visual prediction and downstream AndroidWorld navigation with the learned world model. |

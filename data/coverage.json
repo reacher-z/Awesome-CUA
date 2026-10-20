@@ -11,8 +11,8 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 1580,
   "discovery_identifiers": 4260,
-  "unindexed_candidates": 906,
-  "non_resource_candidates": 98,
+  "unindexed_candidates": 905,
+  "non_resource_candidates": 99,
   "alias_candidates": 36,
   "pending_editorial": [
     {
@@ -380,8 +380,8 @@
       "resolved_aliases": 1,
       "curated": 163,
       "excluded": 0,
-      "set_aside": 14,
-      "unindexed": 38
+      "set_aside": 15,
+      "unindexed": 37
     },
     {
       "id": "os-agent-survey",
@@ -800,8 +800,8 @@
       "resolved_aliases": 0,
       "curated": 0,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 7
+      "set_aside": 1,
+      "unindexed": 6
     },
     {
       "id": "mobile-gui",

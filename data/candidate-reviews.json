@@ -517,5 +517,11 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "id": "url:946791c854a6c866f7ec",
+    "url": "https://anonymous.4open.science/r/MobileA3gent-Anonymous",
+    "decision": "not_a_resource",
+    "reason": "Expired anonymous review copy that arXiv 2502.02982v2 links as its code: the repository API returns 410 repository_expired, and Wayback holds only redirects and the site shell, with no repository files."
   }
 ]

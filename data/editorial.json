@@ -63653,5 +63653,44 @@
         "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00"
       }
     ]
+  },
+  {
+    "name": "Self-evolving LLM agents with in-distribution Optimization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.07367",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "reward-models"
+    ],
+    "summary": "Introduces Q-Evolve, which learns a weighted implicit Q-learning critic from expert and agent trajectories, uses its advantages as step-wise process rewards, and evolves the policy on ALFWorld, WebShop and ScienceWorld.",
+    "verify_terms": [
+      "Self-evolving LLM agents with in-distribution Optimization"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/abs/2606.07367v1"
+    ],
+    "scope": "adjacent",
+    "notes": "Adjacent agent-training method. The v1 full text evaluates on ALFWorld, WebShop and ScienceWorld with Llama-2-7B-Chat as the main base model, and adds comparisons with Qwen2.5-7B-Instruct on ALFWorld and Llama-3-8B-Instruct; WebShop, a simulated shopping website, is the only web environment. The paper names no code release. Results have not been independently reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2606.07367v1",
+        "retrieved_at": "2026-10-20T04:12:58Z",
+        "sha256": "0c5a3fea141a090a440ccc7817c2617a867c729f12b50211fd950a340b290100",
+        "supports": [
+          "scope",
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "read_basis": "Read the arXiv v1 abstract and the v1 HTML Sections 4 (method) and 5.1 (setup: base models and the ALFWorld, WebShop and ScienceWorld environments) plus the appendix backbone comparisons. No code execution or result reproduction.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ed284a4cd2484e84dc450340fa2960bbeb5a2eb3e0459357017de7a28d8165aa",
+    "reviewed_at": "2026-10-20T04:13:11Z"
   }
 ]

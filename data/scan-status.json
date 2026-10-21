@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-10-21T04:47:42Z",
+  "id": "scan:2026-10-21T13:48:53Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-10-21T04:47:42Z",
-  "finished_at": "2026-10-21T04:53:07Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/39545964792",
+  "started_at": "2026-10-21T13:48:53Z",
+  "finished_at": "2026-10-21T13:51:24Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/39611260118",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 3234,
-    "bibliographic_records": 2750,
-    "arxiv_archive_records": 2888,
-    "excluded_records": 138,
-    "curated_papers": 1200,
-    "curated_resources": 471,
-    "candidates": 4273
-  },
-  "after": {
     "resources": 3244,
     "bibliographic_records": 2760,
     "arxiv_archive_records": 2898,
@@ -31,69 +22,17 @@
     "curated_resources": 471,
     "candidates": 4285
   },
-  "new_papers": [
-    {
-      "id": "arxiv:2606.22673",
-      "name": "Agent MechSuits: Mechanistic Subspace Safety Steering for Multi-Turn CLI Agents",
-      "url": "https://arxiv.org/abs/2606.22673",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.17816",
-      "name": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
-      "url": "https://arxiv.org/abs/2610.17816",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.20597",
-      "name": "Co-Evolving Acting and Forecasting for Language Agents",
-      "url": "https://arxiv.org/abs/2610.20597",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.23857",
-      "name": "Web Agent Agentic Reinforcement Learning Decision Model Under Multi-Cost and Failure Risk",
-      "url": "https://arxiv.org/abs/2610.23857",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.25601",
-      "name": "Step-Aligned Script Generation with Verification and Recovery for Web Automation Testing",
-      "url": "https://arxiv.org/abs/2610.25601",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.27205",
-      "name": "LoWAgent: A Low-Resource Multilingual Benchmark for Web Agents",
-      "url": "https://arxiv.org/abs/2610.27205",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.27645",
-      "name": "CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2610.27645",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.27954",
-      "name": "Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay",
-      "url": "https://arxiv.org/abs/2610.27954",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.28601",
-      "name": "Evolving Agent Interfaces",
-      "url": "https://arxiv.org/abs/2610.28601",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2610.28610",
-      "name": "InterWebCoder: Learning Interactive Webpage Generation from Executable Tests via Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2610.28610",
-      "review_status": "metadata_verified"
-    }
-  ],
-  "new_candidate_count": 12,
+  "after": {
+    "resources": 3244,
+    "bibliographic_records": 2760,
+    "arxiv_archive_records": 2898,
+    "excluded_records": 138,
+    "curated_papers": 1200,
+    "curated_resources": 471,
+    "candidates": 4286
+  },
+  "new_papers": [],
+  "new_candidate_count": 1,
   "pending_metadata_changes": 3,
   "source_fetches": {
     "successful": 54,
@@ -103,22 +42,22 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1494,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-10-21T04:48:42Z",
-    "finished_at": "2026-10-21T04:52:08Z",
+    "started_at": "2026-10-21T13:49:44Z",
+    "finished_at": "2026-10-21T13:50:26Z",
     "ok": true,
     "exit_code": 0,
     "error": null,
     "state": "bounded_progress",
     "complete": false,
     "scan_status": "partial",
-    "run_id": "run:70caf468ee8706fdf18b701d",
+    "run_id": "run:822204297339621074bab221",
     "request_attempted": true,
-    "successful_responses": 25,
-    "requests_attempted": 26,
-    "new_unique_repositories": 23,
+    "successful_responses": 0,
+    "requests_attempted": 1,
+    "new_unique_repositories": 0,
     "total_unique_repositories": 9258,
     "pending_queries": 1,
     "unknown_requests": 1,
@@ -127,7 +66,7 @@
       "observed_pages_exhausted": 66,
       "pending": 1,
       "split": 23,
-      "superseded_input": 13
+      "superseded_input": 14
     },
     "rejected_rows": {},
     "warnings": [
@@ -135,26 +74,26 @@
     ],
     "files": {
       "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
-      "github-candidates-manifest.json": "b46092b5812200152d16a5aba067f9674091a43461c840a1809e7e6dac34ddca",
-      "github-candidate-progress.json": "8716f3fe776926159997526b60262201aa725b231243987b70ffeedf1b4d8803"
+      "github-candidates-manifest.json": "03d19dc0865d4a81289b7b51e2a329fbfe2139870cfa8e3fc814727c2372997d",
+      "github-candidate-progress.json": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357"
     },
     "published": true,
-    "network_reservations": 26,
+    "network_reservations": 1,
     "staged_files": {
       "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
-      "github-candidates-manifest.json": "79682e34a7bfd194234b97770cce0d301e1927f7ba1ac228cd53d54724c1e1ac",
-      "github-candidate-progress.json": "9b5e11a814fc9748c43aa94e86707d0049747e70e838e046264dd7493f9796da"
+      "github-candidates-manifest.json": "03d19dc0865d4a81289b7b51e2a329fbfe2139870cfa8e3fc814727c2372997d",
+      "github-candidate-progress.json": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357"
     },
     "comparison_context_rebound": true,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-10-21T04:53:07Z",
+      "checked_at": "2026-10-21T13:51:24Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
         "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
-        "github-candidates-manifest.json": "b46092b5812200152d16a5aba067f9674091a43461c840a1809e7e6dac34ddca",
-        "github-candidate-progress.json": "8716f3fe776926159997526b60262201aa725b231243987b70ffeedf1b4d8803"
+        "github-candidates-manifest.json": "03d19dc0865d4a81289b7b51e2a329fbfe2139870cfa8e3fc814727c2372997d",
+        "github-candidate-progress.json": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357"
       },
       "repositories": 9258
     }
@@ -162,56 +101,56 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-10-21T04:47:43Z",
-      "finished_at": "2026-10-21T04:47:55Z",
+      "started_at": "2026-10-21T13:48:53Z",
+      "finished_at": "2026-10-21T13:49:05Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-10-21T04:47:55Z",
-      "finished_at": "2026-10-21T04:48:32Z",
+      "started_at": "2026-10-21T13:49:05Z",
+      "finished_at": "2026-10-21T13:49:38Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-10-21T04:48:32Z",
-      "finished_at": "2026-10-21T04:48:33Z",
+      "started_at": "2026-10-21T13:49:38Z",
+      "finished_at": "2026-10-21T13:49:38Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 5,
+      "new_count": 0,
       "warnings": [],
-      "cache_used": false,
-      "rate_limited": false
+      "cache_used": true,
+      "source_retrieved_at": "2026-10-21T04:48:33Z"
     },
     {
       "name": "harvest",
-      "started_at": "2026-10-21T04:48:33Z",
-      "finished_at": "2026-10-21T04:48:36Z",
+      "started_at": "2026-10-21T13:49:38Z",
+      "finished_at": "2026-10-21T13:49:38Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-10-21T04:48:42Z",
-      "finished_at": "2026-10-21T04:52:08Z",
+      "started_at": "2026-10-21T13:49:44Z",
+      "finished_at": "2026-10-21T13:50:26Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "state": "bounded_progress",
       "complete": false,
       "scan_status": "partial",
-      "run_id": "run:70caf468ee8706fdf18b701d",
+      "run_id": "run:822204297339621074bab221",
       "request_attempted": true,
-      "successful_responses": 25,
-      "requests_attempted": 26,
-      "new_unique_repositories": 23,
+      "successful_responses": 0,
+      "requests_attempted": 1,
+      "new_unique_repositories": 0,
       "total_unique_repositories": 9258,
       "pending_queries": 1,
       "unknown_requests": 1,
@@ -220,7 +159,7 @@
         "observed_pages_exhausted": 66,
         "pending": 1,
         "split": 23,
-        "superseded_input": 13
+        "superseded_input": 14
       },
       "rejected_rows": {},
       "warnings": [
@@ -228,48 +167,48 @@
       ],
       "files": {
         "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
-        "github-candidates-manifest.json": "b46092b5812200152d16a5aba067f9674091a43461c840a1809e7e6dac34ddca",
-        "github-candidate-progress.json": "8716f3fe776926159997526b60262201aa725b231243987b70ffeedf1b4d8803"
+        "github-candidates-manifest.json": "03d19dc0865d4a81289b7b51e2a329fbfe2139870cfa8e3fc814727c2372997d",
+        "github-candidate-progress.json": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357"
       },
       "published": true,
       "baseline_files": {
-        "github-candidates.jsonl": "4a6f124222e2bdb11937fa36b06d4fb433cd2a563c931d0778eac67099a99e55",
-        "github-candidates-manifest.json": "7d2c8f532ed2cfab8b494c04c98bb73769df29ed2bb8e11e26e89b1c0a8b4692",
-        "github-candidate-progress.json": "8738b98d0517b3205d4eb90bdfcfc579fe925d80160f463d0a1985bf1e173acd"
+        "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
+        "github-candidates-manifest.json": "b46092b5812200152d16a5aba067f9674091a43461c840a1809e7e6dac34ddca",
+        "github-candidate-progress.json": "8716f3fe776926159997526b60262201aa725b231243987b70ffeedf1b4d8803"
       },
       "ready_to_publish": false,
-      "network_reservations": 26,
+      "network_reservations": 1,
       "staged_files": {
         "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
-        "github-candidates-manifest.json": "79682e34a7bfd194234b97770cce0d301e1927f7ba1ac228cd53d54724c1e1ac",
-        "github-candidate-progress.json": "9b5e11a814fc9748c43aa94e86707d0049747e70e838e046264dd7493f9796da"
+        "github-candidates-manifest.json": "03d19dc0865d4a81289b7b51e2a329fbfe2139870cfa8e3fc814727c2372997d",
+        "github-candidate-progress.json": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357"
       },
       "comparison_context_rebound": true,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-10-21T04:53:07Z",
+        "checked_at": "2026-10-21T13:51:24Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
           "github-candidates.jsonl": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
-          "github-candidates-manifest.json": "b46092b5812200152d16a5aba067f9674091a43461c840a1809e7e6dac34ddca",
-          "github-candidate-progress.json": "8716f3fe776926159997526b60262201aa725b231243987b70ffeedf1b4d8803"
+          "github-candidates-manifest.json": "03d19dc0865d4a81289b7b51e2a329fbfe2139870cfa8e3fc814727c2372997d",
+          "github-candidate-progress.json": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357"
         },
         "repositories": 9258
       }
     },
     {
       "name": "build",
-      "started_at": "2026-10-21T04:52:15Z",
-      "finished_at": "2026-10-21T04:52:17Z",
+      "started_at": "2026-10-21T13:50:33Z",
+      "finished_at": "2026-10-21T13:50:35Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-10-21T04:52:49Z",
-      "finished_at": "2026-10-21T04:53:01Z",
+      "started_at": "2026-10-21T13:51:06Z",
+      "finished_at": "2026-10-21T13:51:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -280,29 +219,26 @@
   ],
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "7a01a50728564d7783d1d237fb19da1e",
+    "round_id": "8a20d0ab2edf4c488fa5e943f40facb1",
     "max_requests": 180,
     "max_seconds": 600,
-    "requests_reserved": 115,
-    "responses_received": 115,
+    "requests_reserved": 88,
+    "responses_received": 88,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 55,
       "huggingface": 32,
-      "recent_arxiv": 1,
-      "harvest": 1,
-      "github_candidates": 26
+      "github_candidates": 1
     },
     "by_provider": {
       "raw.githubusercontent.com": 52,
       "iaie-physicalai.github.io": 2,
       "huggingface.co": 33,
-      "export.arxiv.org": 2,
-      "api.github.com": 26
+      "api.github.com": 1
     },
     "provider_cooldowns": {},
     "blocked_providers": [],
-    "ledger_sha256": "bad44fdc5d62399368df788b4556207c35e6e82954a91def0b751f5a07db5c45",
+    "ledger_sha256": "c368e1c5ee4a4b860414dd0d4de6da92f391717d18003886befab88a0683e90f",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

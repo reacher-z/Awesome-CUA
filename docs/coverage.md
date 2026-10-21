@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-21T04:48:34Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-21T20:10:43Z**. Generated from committed source receipts.
 
-- 3,244 resource records: 1,671 curated; 1,573 bibliographic metadata only.
-- 2,773 paper and survey records, including 2,760 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,898 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,286 discovery identifiers; 907 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,245 resource records: 1,671 curated; 1,574 bibliographic metadata only.
+- 2,774 paper and survey records, including 2,761 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,899 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,287 discovery identifiers; 907 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-21T13:49:38Z; **32/32** query windows succeeded. 1,494 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-10-21T20:10:43Z; **32/32** query windows succeeded. 1,495 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 
@@ -129,7 +129,7 @@ These are ranked search windows, not a field-wide denominator. New identifiers s
 | Workflow automation | visual workflow automation robotic process automation agents | 80 / 80 | success |
 | Multilingual interfaces | multilingual GUI agent interface grounding | 80 / 80 | success |
 | Testing and exploration | GUI agent software testing interface exploration | 80 / 80 | success |
-| Chinese language discovery | 图形界面 智能体 手机 电脑操作 | 8 / 80 | success |
+| Chinese language discovery | 图形界面 智能体 手机 电脑操作 | 9 / 80 | success |
 
 ## Primary arXiv discovery
 

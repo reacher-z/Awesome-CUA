@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,157; 564 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (32; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,157; 564 ⭐) · [2025](#2025) (705; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (33; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -2673,6 +2673,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2020-09-29 | [Universal quantum computing using electro-nuclear wavefunctions of rare-earth ions](https://arxiv.org/abs/2009.14126) | metadata |  |
 | 2020-09-24 | [Neurocoder: Learning General-Purpose Computation Using Stored Neural Programs](https://arxiv.org/abs/2009.11443) | metadata |  |
 | 2020-09-24 | [An Incentive-Based Mechanism for Volunteer Computing using Blockchain](https://arxiv.org/abs/2009.11901) | metadata |  |
+| 2020-09-21 | [PP-OCR: A Practical Ultra Lightweight OCR System](https://arxiv.org/abs/2009.09941) | metadata |  |
 | 2020-09-17 | [DLBCL-Morph: Morphological features computed using deep learning for an annotated digital DLBCL image set](https://arxiv.org/abs/2009.08123) | metadata |  |
 | 2020-09-02 | [Efficient encoding of the weighted MAX k-CUT on a quantum computer using QAOA](https://arxiv.org/abs/2009.01095) | metadata |  |
 | 2020-08-21 | [Fast Transit Computation Using Tabulated Stellar Intensities](https://arxiv.org/abs/2008.09711) | metadata |  |

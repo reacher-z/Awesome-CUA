@@ -1,10 +1,10 @@
 {
   "active_catalog_context": {
-    "records": 3244,
+    "records": 3245,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "0c50b7bb89d189b6fad838fc66725f81bfd2fe3a45f865eac7d2a1df32e48e51"
+    "sha256": "ff3df834c712682eb57a5c8d9dfc9a4cb2ca602066e43104c56001a7b3e47aea"
   },
-  "checkpoint_state_sha256": "71208132de94c2d967d16769b90a21072197fe826fb6395116573e927a6f25e2",
+  "checkpoint_state_sha256": "1d602c55c8efd771da89d91aa13459c8d252a067731e057f2645258ff2f02c5d",
   "count": {
     "unit": "repositories",
     "value": 9258
@@ -391,6 +391,31 @@
         }
       },
       "id": "08d1415c931da004f2b8cb6b70a1a7323501093a505f980f4c103af0542b03d3"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5043924,
+          "sha256": "72f0999a98f958216c4f88e103348f22d9b56504c211791c61571a12443cf902"
+        },
+        "catalog.jsonl": {
+          "bytes": 8452948,
+          "sha256": "0c50b7bb89d189b6fad838fc66725f81bfd2fe3a45f865eac7d2a1df32e48e51"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1836286,
+          "sha256": "69b36c4ae56e9c5ffc486429f260061416f1c03cafab293126154190a0f9b718"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "58512ef46d256b5bf62cc39ad569fb9fdeb102ad9b49ef681ff29d4a6289a0aa"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
@@ -618,10 +643,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:58512ef46d256b5bf62cc39ad569fb9fdeb102ad9b49ef681ff29d4a6289a0aa",
+        "input_id": "58512ef46d256b5bf62cc39ad569fb9fdeb102ad9b49ef681ff29d4a6289a0aa",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:08d1415c931da004f2b8cb6b70a1a7323501093a505f980f4c103af0542b03d3",
         "input_id": "08d1415c931da004f2b8cb6b70a1a7323501093a505f980f4c103af0542b03d3",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:84c404a064e0446fc66a347665d36bd373f5c6196795f660cbe0ec25f7b93b2c",
@@ -1603,7 +1634,7 @@
       "accepted": 301,
       "fetch_failed": 3,
       "rate_limited": 6,
-      "redirect_not_followed": 15,
+      "redirect_not_followed": 16,
       "unavailable": 1
     },
     "runs": [
@@ -1834,16 +1865,28 @@
         "requests_attempted": 1,
         "started_at": "2026-10-21T13:49:58.009908+00:00",
         "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 9258,
+        "before_unique_repositories": 9258,
+        "finished_at": "2026-10-21T20:11:06.952132+00:00",
+        "id": "run:8a0fb370d9472d59c4fab624",
+        "input_id": "58512ef46d256b5bf62cc39ad569fb9fdeb102ad9b49ef681ff29d4a6289a0aa",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-10-21T20:11:03.515528+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "566cb2c4124548ce032b9a68fd6dbb4b40d023bf2f41f255b90f1ae107906881",
+  "source_ledger_sha256": "30a8ae342c32d349dd635e9e501b8d972330afdb8e05b3a6e6f00bc5ad0fc91d",
   "supporting_primary_bodies": 286,
   "verification": {
-    "baseline_checkpoint_sha256": "8716f3fe776926159997526b60262201aa725b231243987b70ffeedf1b4d8803",
+    "baseline_checkpoint_sha256": "fef0ef184c692eefb538db0f0f8e0f1a56a9090564cd36a0c5609764f999d357",
     "baseline_observation_sha256": "d1e7f6b7eb5ea3a98ac341b873d0e558afed26b083298ccaea200af16efda9a2",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",

@@ -72,6 +72,26 @@ python3 scripts/export_rag.py --include-metadata --output dist/rag-all-records.j
 
 The default includes reviewed resources; `--include-metadata` includes every active record with its review state intact. Each row contains `id`, `text`, and `metadata`. Keep citation URLs, evidence, dates, recorded arXiv versions, licenses, and `record_sha256` alongside embeddings. Use IDs for upserts and reconcile removed IDs against the full snapshot and scope ledger. The public [RAG manifest](https://awesomecua.github.io/downloads/rag-manifest.json) gives file counts and SHA-256 fingerprints. Embeddings and upstream paper full text are not part of the export.
 
+`metadata_verified` also covers entries held after source reading; it does not imply that every such paper is unread. Recorded holds appear in `pending_editorial` in the [coverage ledger](https://awesomecua.github.io/downloads/coverage.json). They remain outside the default reviewed export until an editorial decision approves them.
+
+### Catalog and RAG field mapping
+
+The complete catalog and RAG exports use different JSON shapes. For an exact source record from `catalog.py get --json` or a resource's `record.json`, use the catalog column below.
+
+| Meaning | Catalog record | RAG document |
+| --- | --- | --- |
+| Stable resource ID | `id` | `id`, also `metadata.resource_id` |
+| Primary citation URL | `details.arxiv_snapshot.versioned_url` when recorded, otherwise `url` | `metadata.source_url` |
+| Canonical landing URL | `url` | `metadata.canonical_source_url` |
+| Catalog page URL | Added by the exporter | `metadata.citation_url` |
+| Recorded arXiv version | `details.arxiv_snapshot` | `metadata.arxiv_snapshot` |
+| Review status and provenance | `review_status`, `last_verified_at`, `evidence` | The same keys under `metadata` |
+| Source-record fingerprint | Computed by the exporter | `metadata.record_sha256` |
+
+`record_sha256` hashes the source object encoded as UTF-8 JSON with sorted keys, unescaped Unicode, compact `,` / `:` separators and no trailing newline. It does not hash the original JSONL line or the upstream paper. Use `scripts/export_rag.py` to obtain the fingerprint with the matching record. Preserve the primary source URL when citing findings; the catalog page supplies the annotation and review context.
+
+Track export-manifest fingerprints as well: a generator or text-policy change can update retrieval text while its source-record fingerprint remains unchanged.
+
 ## Exact identity and reviewed connections
 
 ```sh

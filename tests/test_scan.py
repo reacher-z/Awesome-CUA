@@ -38,6 +38,21 @@ class ScanSafetyTests(unittest.TestCase):
         phases=[{'name':'discovery','ok':True},{'name':'validate','ok':False,'error':'invalid record'}]
         status,_=scan.summarize_phases(phases,[{'id':'good','ok':True}],[],[])
         self.assertEqual(status,'failed')
+    def test_nullable_error_messages_preserve_failure_classification_and_warnings(self):
+        for error in (None,''):
+            with self.subTest(error=error):
+                phases=[{'name':'discovery','ok':True},
+                    {'name':'recent_arxiv','ok':False,'error':error,'warnings':['HTTP 429']},
+                    {'name':'build','ok':True},{'name':'validate','ok':True}]
+                status,problems=scan.summarize_phases(phases,[{'id':'current','ok':True}],[],[])
+                self.assertEqual(status,'partial')
+                self.assertIn('recent_arxiv: failed',problems)
+                self.assertIn('HTTP 429',problems)
+                phases.append({'name':'github_candidates','ok':False,'error':error,
+                    'durable_validation':{'ok':False,'error':error}})
+                status,problems=scan.summarize_phases(phases,[{'id':'current','ok':True}],[],[])
+                self.assertEqual(status,'failed')
+                self.assertIn('Candidate snapshot integrity: invalid durable triplet',problems)
     def test_http_success_with_only_parse_failures_is_not_a_usable_scan(self):
         phases=[{'name':'discovery','ok':False},{'name':'huggingface','ok':True},
                 {'name':'recent_arxiv','ok':False},{'name':'build','ok':True},{'name':'validate','ok':True}]
@@ -70,7 +85,7 @@ class ScanSafetyTests(unittest.TestCase):
                 invoked.append(name)
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
             with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
-                    'name':'recent_arxiv','ok':False,'rate_limited':True,'warnings':['HTTP 429']}),mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
+                    'name':'recent_arxiv','ok':False,'error':None,'rate_limited':True,'warnings':['HTTP 429']}),mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             result=scan.read_json(path/'scan-status.json')
             self.assertNotIn('harvest',invoked)

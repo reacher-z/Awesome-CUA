@@ -1,8 +1,8 @@
-export const KIND_ORDER = ['paper','survey','model','dataset','benchmark','agent','framework','infrastructure','tool','product','company'];
+export const KIND_ORDER = ['paper','survey','learning','model','dataset','benchmark','agent','framework','infrastructure','tool','product','company'];
 export const FEATURED = ['OSWorld','UI-TARS','Browser Use','OpenCUA','AgentNet','AndroidWorld','WebArena','UI-Venus','Stagehand','ScreenSpot Pro','Agent S','Holo Model Family'];
 export const PAGE_SIZE = 24;
 export const PLATFORM_GROUPS = {desktop:['desktop','windows','macos','linux'],mobile:['android','ios','harmonyos']};
-export const KINDS = {paper:['Papers','论文','▤'],survey:['Surveys','综述','≋'],model:['Models','模型','◈'],dataset:['Datasets','数据集','▦'],benchmark:['Benchmarks','评测基准','◎'],agent:['Agents','智能体','↗'],framework:['Frameworks','框架','◇'],infrastructure:['Infrastructure','基础设施','▧'],tool:['Tools','工具','⚒'],product:['Products','产品','□'],company:['Publishers','发布方','⌂']};
+export const KINDS = {paper:['Papers','论文','▤'],survey:['Surveys','综述','≋'],learning:['Learning resources','学习资源','▥'],model:['Models','模型','◈'],dataset:['Datasets','数据集','▦'],benchmark:['Benchmarks','评测基准','◎'],agent:['Agents','智能体','↗'],framework:['Frameworks','框架','◇'],infrastructure:['Infrastructure','基础设施','▧'],tool:['Tools','工具','⚒'],product:['Products','产品','□'],company:['Publishers','发布方','⌂']};
 export const PLATFORMS = {web:['Web','浏览器'],desktop:['Desktop','桌面'],windows:['Windows','Windows'],macos:['macOS','macOS'],linux:['Linux','Linux'],mobile:['Mobile','移动设备'],android:['Android','Android'],ios:['iOS','iOS'],harmonyos:['HarmonyOS','鸿蒙'],'cross-platform':['Cross-platform','跨平台'],unspecified:['Unassigned','待标注']};
 export function createRecordLoader(fetcher) {
   const cache=new Map();
@@ -30,10 +30,17 @@ export function compactFacts(record, slotLabel = slot => slot) {
 }
 export const TOPIC_ALIASES = {'reinforcement-learning':['RL'],'human-in-the-loop':['HITL']};
 const CJK = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u;
+function compoundForms(value) {
+  const original=String(value || ''), camel=original.replace(/(\p{Ll})(\p{Lu})/gu,'$1 $2');
+  // Keep both intermediate forms (mac OSWorld, macOS World) plus the full split.
+  const acronym=original.replace(/(\p{Lu})(\p{Lu}\p{Ll})/gu,'$1 $2');
+  const split=camel.replace(/(\p{Lu})(\p{Lu}\p{Ll})/gu,'$1 $2');
+  return [...new Set([original,camel,acronym,split])];
+}
 export function searchText(values) {
   const text = values.filter(Boolean).join(' ');
-  // Index the parts of compound names too, so word-start search finds "osworld" in macOSWorld and "llm" in SpreadsheetLLM.
-  const parts = text.split(/\s+/).filter(word => /\p{Ll}\p{Lu}/u.test(word)).map(word => word.replace(/(\p{Ll})(\p{Lu})/gu,'$1 $2'));
+  // Append compound variants without replacing any original or previously indexed form.
+  const parts = text.split(/\s+/).flatMap(word=>compoundForms(word).slice(1));
   return normalize([text,...parts].join(' '));
 }
 // Index the English and Chinese labels of a record's kind, platforms and topics rather than their keys; topic labels come from data/topics.json through index.json.
@@ -54,6 +61,19 @@ export function matches(record, state, ignoreKind = false) {
 const collator = new Intl.Collator('en',{sensitivity:'base'});
 const FEATURED_RANK = new Map(FEATURED.map((name,i) => [name,i]));
 const alpha = (a,b) => collator.compare(a.name,b.name);
+// Rank names only after filtering: this does not broaden literal AND matching.
+// A title's pre-colon name distinguishes "Agent S: ..." from incidental mentions
+// and related names such as "Agent S2: ..." without a hand-maintained paper list.
+function queryNameRank(record, query) {
+  const forms=value=>compoundForms(value).map(normalize);
+  const names=[record.name,...(record.aliases || [])].flatMap(forms);
+  const title=String(record.name || ''), shortTitles=/[:：]/u.test(title)?forms(title.split(/[:：]/u,1)[0]):[];
+  if(names.includes(query) || shortTitles.includes(query))return 0;
+  if(names.some(name=>name.startsWith(query+' ')))return 1;
+  const terms=query.split(' ');
+  if(names.some(name=>terms.every(term=>CJK.test(term)?name.includes(term):name.startsWith(term)||name.includes(' '+term))))return 2;
+  return 3;
+}
 export function filtered(records, state) {
   const result = records.filter(r => matches(r,state));
   // Bibliographic dates are ISO prefixes, so code-unit order is chronological; compute each once per sort.
@@ -63,9 +83,9 @@ export function filtered(records, state) {
   else if (state.sort === 'newest') result.sort((a,b) => newer(a,b) || alpha(a,b));
   else {
     const papers = ['paper','survey'].includes(state.kind), q = normalize(state.q);
-    const exact = new Set(state.q ? result.filter(r => normalize(r.name) === q) : []);
+    const relevance = new Map(result.map(r=>[r,q?queryNameRank(r,q):0]));
     const rank = r => r.kind !== 'company' && FEATURED_RANK.has(r.name) ? FEATURED_RANK.get(r.name) : FEATURED.length;
-    result.sort((a,b) => Number(a.review_status !== 'curated') - Number(b.review_status !== 'curated') || (papers ? newer(a,b) || alpha(a,b) : exact.has(b)-exact.has(a) || rank(a)-rank(b) || alpha(a,b)));
+    result.sort((a,b) => Number(a.review_status !== 'curated') - Number(b.review_status !== 'curated') || relevance.get(a)-relevance.get(b) || (papers ? newer(a,b) || alpha(a,b) : rank(a)-rank(b) || alpha(a,b)));
   }
   return result;
 }

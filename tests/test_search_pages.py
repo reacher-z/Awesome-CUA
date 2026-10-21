@@ -59,6 +59,19 @@ class SearchPagesTests(unittest.TestCase):
     def test_permalink_identity_survives_display_name_change(self):
         r=self.rows[0];self.assertEqual(resource_path(r),resource_path({**r,'name':'A renamed resource'}))
         self.assertEqual(len({resource_path(r) for r in self.rows}),len(self.rows))
+    def test_paper_document_license_is_visible_without_granting_code_permissions(self):
+        records=[r for r in self.rows if r['kind']=='paper' and r['licenses']['document']]
+        self.assertTrue(records)
+        for r in records:
+            with self.subTest(r['id']):
+                text=(self.dest/resource_path(r).lstrip('/')/'index.html').read_text()
+                license=r['licenses']['document']
+                self.assertIn('What licenses are recorded?',text)
+                self.assertIn(html.escape(license['declared']),text)
+                self.assertIn(html.escape(license['url'],quote=True),text)
+                for slot in ('code','data','weights'):
+                    if r['licenses'][slot] is None:
+                        self.assertIn(f'<dt>{slot.title()}</dt><dd>Not recorded</dd>',text)
     def test_every_page_has_matching_canonical_robots_and_visible_heading(self):
         for item in self.manifest['pages']:
             text=(self.dest/item['path'].lstrip('/')/'index.html').read_text();p=PageParser(text)

@@ -475,6 +475,8 @@ KIND_COLUMNS = {
     "survey": (("Date", "Resource", "Environments", "Description"), "*Date* retains the arXiv first-submission date, or the publisher-only record's publication date at its known precision; newest first. Titles link primary sources; receipts are in `data/catalog.jsonl`."),
     "product": (("Resource", "Publisher", "Environments", "Description", "Evidence"), "*Publisher* is a reviewed `published_by` relation. " + EVIDENCE_NOTE),
     "company": (("Resource", "Environments", "Description", "Evidence"), EVIDENCE_NOTE),
+    "learning": (("Resource", "Environments", "License", "Description", "Evidence"),
+        "Courses, tutorials, and guides are separate from their parent software projects. *License* keeps document and code terms separate. " + EVIDENCE_NOTE),
     "benchmark": (("Resource", "Environments", "Paper", "Scale", "License", "Description", "Evidence"),
         "*Scale* is the first publisher-reported or computed count per unit from the reviewed profile, linked to its source; subsets and units are never combined. *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). " + EVIDENCE_NOTE),
 }
@@ -528,7 +530,9 @@ def section_table(members, columns, by_id):
 
 TOPIC_LABELS = {topic: entry["en"] for topic, entry in TOPICS.items()}
 TOPIC_KINDS = [("benchmark", "Benchmarks"), ("dataset", "Datasets"), ("model", "Models"), ("agent", "Agents"), ("framework", "Frameworks"),
-    ("tool", "Tools"), ("infrastructure", "Infrastructure"), ("product", "Products"), ("company", "Publishers"), ("survey", "Surveys"), ("paper", "Papers")]
+    ("tool", "Tools"), ("infrastructure", "Infrastructure"), ("product", "Products"), ("company", "Publishers"),
+    ("learning", "Learning resources"), ("survey", "Surveys"), ("paper", "Papers")]
+KIND_DOCUMENTS = {"company": "companies", "learning": "learning"}
 
 
 def topic_label(topic):
@@ -552,8 +556,8 @@ def topic_pages(rows):
     order = sorted(tagged, key=lambda t: (-len(tagged[t]), t))
     files = {}
     index = ["# Reviewed research by topic", "", "[Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)", "",
-        f"{sum(r['review_status'] == 'curated' for r in rows):,} source-reviewed resources across {len(order)} topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, and papers together, newest papers first.", "",
-        "| Topic | All | Benchmarks | Datasets | Models | Systems | Papers | Newest reviewed paper |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
+        f"{sum(r['review_status'] == 'curated' for r in rows):,} source-reviewed resources across {len(order)} topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.", "",
+        "| Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for topic in order:
         group = tagged[topic]
         kinds = collections.Counter(r["kind"] for r in group)
@@ -561,10 +565,10 @@ def topic_pages(rows):
         systems = sum(kinds[k] for k in ("agent", "framework", "tool", "infrastructure", "product", "company"))
         newest = f"[{md(papers[0]['name'])}]({papers[0]['url']}) · {record_date_text(papers[0]) or '—'}" if papers else "—"
         cell = lambda n: f"{n:,}" if n else "·"
-        index.append(f"| [{topic_label(topic)}](topics/{topic}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(len(papers))} | {newest} |")
+        index.append(f"| [{topic_label(topic)}](topics/{topic}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['learning'])} | {cell(len(papers))} | {newest} |")
         lines = [f"# {topic_label(topic)}", "", f"[Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)", "",
             f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
-            "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower()})" for kind, label in TOPIC_KINDS if kinds[kind]), ""]
+            "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower().replace(' ', '-')})" for kind, label in TOPIC_KINDS if kinds[kind]), ""]
         for kind, label in TOPIC_KINDS:
             members = [r for r in group if r["kind"] == kind]
             if not members:
@@ -590,7 +594,7 @@ def environment_pages(rows):
     files = {}
     index = ["# Reviewed resources by platform", "", "[Home](../README.md) · [Research by topic](topics.md) · [Coverage](coverage.md)", "",
         "Environment facets come from the editorial review and overlap: a resource tagged with several platforms appears in each hub. `unspecified` records are listed only in the category pages.", "",
-        "| Platform | All | Benchmarks | Datasets | Models | Systems | Papers |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
+        "| Platform | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
     cell = lambda n: f"{n:,}" if n else "·"
     for env, label in PLATFORMS:
         group = [r for r in curated if env in r["environments"]]
@@ -598,10 +602,10 @@ def environment_pages(rows):
             continue
         kinds = collections.Counter(r["kind"] for r in group)
         systems = sum(kinds[k] for k in ("agent", "framework", "tool", "infrastructure", "product", "company"))
-        index.append(f"| [{label}](environments/{env}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['paper'] + kinds['survey'])} |")
+        index.append(f"| [{label}](environments/{env}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['learning'])} | {cell(kinds['paper'] + kinds['survey'])} |")
         lines = [f"# {label}", "", "[Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)", "",
             f"{len(group):,} source-reviewed resources tagged `{env}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
-            "**Contents:** " + " · ".join(f"[{name} ({kinds[kind]})](#{name.lower()})" for kind, name in TOPIC_KINDS if kinds[kind]), ""]
+            "**Contents:** " + " · ".join(f"[{name} ({kinds[kind]})](#{name.lower().replace(' ', '-')})" for kind, name in TOPIC_KINDS if kinds[kind]), ""]
         for kind, name in TOPIC_KINDS:
             members = sorted((r for r in group if r["kind"] == kind), key=lambda r: r["name"].casefold())
             if not members:
@@ -621,7 +625,7 @@ MATRIX_ENVIRONMENTS = ["web", "desktop", "windows", "macos", "linux", "android",
 def matrix_lines(matrix):
     lines = ["| Kind | " + " | ".join(MATRIX_ENVIRONMENTS) + " |", "| --- |" + " ---: |" * len(MATRIX_ENVIRONMENTS)]
     for kind, counts in matrix.items():
-        lines.append(f"| [{kind}]({'companies' if kind == 'company' else 'topics' if kind == 'paper' else kind + 's'}.md) | " + " | ".join(str(counts[e]) if counts.get(e) else "·" for e in MATRIX_ENVIRONMENTS) + " |")
+        lines.append(f"| [{kind}]({'topics' if kind == 'paper' else KIND_DOCUMENTS.get(kind, kind + 's')}.md) | " + " | ".join(str(counts[e]) if counts.get(e) else "·" for e in MATRIX_ENVIRONMENTS) + " |")
     return lines
 
 
@@ -643,7 +647,7 @@ def documents(rows, report):
             # Reviewed papers are published by topic (docs/topics/); docs/papers.md is the full bibliography.
             continue
         columns, legend = KIND_COLUMNS.get(kind, KIND_COLUMNS[None])
-        title = f"{kind.title()} catalog"
+        title = "Learning resources" if kind == "learning" else f"{kind.title()} catalog"
         sections = collections.defaultdict(list)
         for r in group:
             sections[environment_family(r)].append(r)
@@ -658,8 +662,8 @@ def documents(rows, report):
                 ordered.sort(key=record_date_text, reverse=True)
             lines += [f"## {label}", "", *section_table(ordered, columns, by_id),
                 "", f"[↑ Back to top](#{title.lower().replace(' ', '-')})", ""]
-        lines += ["Detailed notes and separate code/data/weights license declarations are in `data/catalog.jsonl`.", ""]
-        filename = "companies" if kind == "company" else kind + "s"
+        lines += ["Detailed notes and separate code/data/weights/document license declarations are in `data/catalog.jsonl`.", ""]
+        filename = KIND_DOCUMENTS.get(kind, kind + "s")
         files[f"docs/{filename}.md"] = "\n".join(lines)
     paper_lines = ["# Research bibliography", "", "[Home](../README.md) · [Reviewed research by topic](topics.md) · [Curated surveys](surveys.md) · [Query examples](query-guide.md)", "",
         "Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.",
@@ -750,7 +754,7 @@ def badges(rows, report):
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.
 EXPLORE = [
     ([("topics", "docs/topics.md", "paper"), ("bibliography", "docs/papers.md", "bibliography")], [("agent", "docs/agents.md", "agent")]),
-    ([("survey", "docs/surveys.md", "survey")], [("framework", "docs/frameworks.md", "framework")]),
+    ([("survey", "docs/surveys.md", "survey"), ("learning", "docs/learning.md", "learning")], [("framework", "docs/frameworks.md", "framework")]),
     ([("dataset", "docs/datasets.md", "dataset")], [("infrastructure", "docs/infrastructures.md", "infrastructure")]),
     ([("benchmark", "docs/benchmarks.md", "benchmark")], [("tool", "docs/tools.md", "tool")]),
     ([("model", "docs/models.md", "model")], [("product", "docs/products.md", "product"), ("company", "docs/companies.md", "company")]),
@@ -758,19 +762,19 @@ EXPLORE = [
 # Generated README wording per language; resource names and reviewed summaries are never translated.
 README_TEXT = {
     "en": {"explore_header": "| Research and training | Engineering and industry |",
-        "labels": {"topics": "Research by topic", "bibliography": "Full bibliography", "survey": "Surveys", "dataset": "Datasets", "benchmark": "Benchmarks",
+        "labels": {"topics": "Research by topic", "bibliography": "Full bibliography", "survey": "Surveys", "learning": "Learning resources", "dataset": "Datasets", "benchmark": "Benchmarks",
             "model": "Models and checkpoint releases", "agent": "Agents", "framework": "Frameworks", "infrastructure": "Infrastructure", "tool": "Tools",
             "product": "Products", "company": "Publishers and brands"},
         "by_platform": "By platform:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records",
         "kinds": {"benchmark": "Benchmarks", "model": "Models", "dataset": "Datasets", "framework": "Frameworks", "agent": "Agents"},
         "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
-        "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {},
+        "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
         "stats": ("**{total:,} resource records** · **{curated:,} curated** · **{arxiv:,} paper and survey records** · **{sources} discovery documents**\n\n"
             "Evidence through `{as_of}`. {metadata:,} records have bibliographic verification only; {unindexed:,} discovered identifiers remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
             "{excluded:,} scope exclusions retain their original metadata in the archive. Counts overlap as explained below.")},
     "zh": {"explore_header": "| 研究与训练 | 工程与产业 |",
-        "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "dataset": "数据集", "benchmark": "基准",
+        "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "learning": "学习资源", "dataset": "数据集", "benchmark": "基准",
             "model": "模型与权重版本", "agent": "智能体", "framework": "框架", "infrastructure": "基础设施", "tool": "工具",
             "product": "产品", "company": "发布方与品牌"},
         "by_platform": "按平台：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录",
@@ -778,7 +782,7 @@ README_TEXT = {
         "all": "全部 {n} 项 →", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
         "recent_header": "| 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |",
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
-            "infrastructure": "基础设施", "product": "产品", "company": "发布方"},
+            "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
         "stats": ("**{total:,} 条资源记录** · **{curated:,} 条已审阅** · **{arxiv:,} 条论文与综述记录** · **{sources} 个发现来源文档**\n\n"
             "证据截至 `{as_of}`。{metadata:,} 条记录仅完成书目核实；{unindexed:,} 个已发现的标识符尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
@@ -838,7 +842,8 @@ def explore(rows, report, lang="en"):
             return f"[{label}]({path}) · " + text["arxiv_records"].format(n=report["bibliographic_records"])
         return f"[{label}]({path}) · **{curated[kind]:,}**"
     lines = [text["explore_header"], "| --- | --- |"]
-    lines += [f"| {' · '.join(link(*item) for item in left)} | {' · '.join(link(*item) for item in right)} |" for left, right in EXPLORE]
+    cell = lambda items: " · ".join(link(*item) for item in items if item[2] != "learning" or curated["learning"])
+    lines += [f"| {cell(left)} | {cell(right)} |" for left, right in EXPLORE]
     platforms = collections.Counter(e for r in rows if r["review_status"] == "curated" for e in set(r["environments"]))
     lines += ["", f"**{text['by_platform']}** " + " · ".join(f"[{label}](docs/environments/{env}.md) **{platforms[env]:,}**" for env, label in PLATFORMS if platforms[env])]
     return "\n" + "\n".join(lines) + "\n"

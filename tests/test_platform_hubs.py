@@ -26,7 +26,7 @@ class PlatformHubTests(unittest.TestCase):
         self.assertLess(android.index("[New]("), android.index("[Old]("))
         self.assertIn("[Benchmarks (1)](#benchmarks) · [Models (1)](#models) · [Papers (2)](#papers)", android)
         self.assertIn("[Bench](", files["docs/environments/ios.md"])
-        self.assertIn("| [Android](environments/android.md) | 4 | 1 | · | 1 | · | 2 |", files["docs/environments.md"])
+        self.assertIn("| [Android](environments/android.md) | 4 | 1 | · | 1 | · | · | 2 |", files["docs/environments.md"])
 
     def test_readme_platform_line_in_both_languages(self):
         rows = [row("github:a/bench", "Bench", "benchmark", ["android", "web"]), row("github:a/b2", "B2", "benchmark", ["web"])]

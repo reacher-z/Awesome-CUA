@@ -30,7 +30,15 @@
     "browser-agent",
     "browser-agents",
     "browser-automation",
-    "android-automation"
+    "android-automation",
+    "computer-use-agent",
+    "computer-use-agents",
+    "gui-grounding",
+    "browser-use",
+    "web-agent",
+    "web-agents",
+    "desktop-agent",
+    "mobile-agent"
   ],
   "history_limit": 180,
   "max_consecutive_partial": 4,

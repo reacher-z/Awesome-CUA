@@ -15,7 +15,10 @@ repo, page, response = fixtures.repo, fixtures.page, fixtures.response
 class ScheduledScannerTests(unittest.TestCase):
     setUp = fixtures.ScanTests.setUp
     write_inputs = fixtures.ScanTests.write_inputs
-    execute = fixtures.ScanTests.execute
+    def execute(self, responses, **kwargs):
+        # Resume tests stay on one recorded UTC day unless they explicitly advance it.
+        kwargs.setdefault('created_before', '2026-10-18')
+        return fixtures.ScanTests.execute(self, responses, **kwargs)
     ledger_bytes = fixtures.ScanTests.ledger_bytes
 
     def budget(self, **kwargs):
@@ -154,7 +157,7 @@ class ScheduledScannerTests(unittest.TestCase):
                 state, run = self.execute([response(page([repo()], 1000)),
                                            response(page([])), response(page([]))],
                                           max_requests=3, strict_replay=True,
-                                          advance_epoch=advance_epoch)
+                                          advance_epoch=advance_epoch, created_before='2024-01-04')
                 self.assertEqual(len(self.calls) - start, 3)
                 self.assertEqual(run['requests_attempted'], 3)
                 children = [q for q in state['queries'] if q.get('parent_id')]
@@ -213,7 +216,7 @@ class ScheduledScannerTests(unittest.TestCase):
 
     def test_additive_nine_topic_expansion_preserves_pending_historical_roots(self):
         state, _ = self.execute([response(page([repo(i) for i in range(1, 101)], 101))],
-                                topics=['browser-automation', 'computer-use'])
+                                topics=['browser-automation', 'computer-use'], created_before='2024-01-04')
         original = copy.deepcopy(state)
         expanded = scan.expand_topics(state, sorted(scan.TOPICS), at=self.timer.now())
         self.assertEqual(state, original)
@@ -229,7 +232,7 @@ class ScheduledScannerTests(unittest.TestCase):
             with self.assertRaises(ValueError): scan.expand_topics(expanded, bad)
 
     def test_later_topic_addition_still_starts_at_original_history_floor(self):
-        state, _ = self.execute([response(page([]))])
+        state, _ = self.execute([response(page([]))], created_before='2024-01-04')
         state = scan.migrate_state(state, at='2024-01-04T12:00:00Z')
         scan._advance_epoch(state, '2024-01-05T12:00:00Z')
         existing = copy.deepcopy(state['queries'])
@@ -255,12 +258,13 @@ class ScheduledScannerTests(unittest.TestCase):
         self.assertEqual(query['seen_repository_ids'], [2])
         self.assertEqual(query['status'], 'observed_pages_exhausted')
         self.assertEqual(len(state['records']), 2)
+        self.timer.sleep(86400)
         state, _ = self.execute([response(page([]))], advance_epoch=True, strict_replay=True,
                                 created_after=None, created_before=None)
         self.assertEqual(len(state['epochs']), 2)
         self.assertEqual(state['epochs'][-1]['reason'], 'daily_continuation')
-        self.assertEqual(state['configuration']['created_after'], '2024-01-04')
-        self.assertEqual(state['configuration']['created_before'], '2026-10-18')
+        self.assertEqual(state['configuration']['created_after'], '2026-10-18')
+        self.assertEqual(state['configuration']['created_before'], '2026-10-19')
 
     def test_partial_restart_budget_is_two_and_does_not_fake_completion(self):
         topics = ['browser-automation', 'computer-use', 'gui-agent']
@@ -272,9 +276,10 @@ class ScheduledScannerTests(unittest.TestCase):
         self.assertEqual(sum(q['status'] == 'partial_results' for q in state['queries']), 1)
         self.assertEqual(len(state['epochs']), 1)
 
-    def test_single_day_overflow_is_not_automatically_restarted_or_advanced(self):
-        self.execute([response(page([repo()], 1000))], created_before='2024-01-01', advance_epoch=True)
-        state, run = self.execute([], created_before='2024-01-01', advance_epoch=True)
+    def test_single_day_overflow_is_not_automatically_restarted_same_day(self):
+        item=repo(created_at='2026-10-18T00:00:00Z')
+        self.execute([response(page([item], 1000))], created_after='2026-10-18', advance_epoch=True)
+        state, run = self.execute([], created_after='2026-10-18', advance_epoch=True)
         self.assertEqual(run['requests_attempted'], 0)
         self.assertEqual(state['query_rechecks'], [])
         self.assertEqual(len(state['epochs']), 1)

@@ -28,7 +28,10 @@ from network_budget import BudgetDeferred, budget_from_environment
 
 TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'desktop-automation', 'browser-agent', 'browser-agents',
-                    'browser-automation', 'android-automation'})
+                    'browser-automation', 'android-automation',
+                    'computer-use-agent', 'computer-use-agents', 'gui-grounding',
+                    'browser-use', 'web-agent', 'web-agents', 'desktop-agent',
+                    'mobile-agent'})
 DEFAULT_TOPICS = ('computer-use', 'gui-agent', 'browser-automation')
 INPUTS = ('catalog.jsonl', 'candidates.jsonl', 'primary-evidence.jsonl',
           'repository-aliases.json', 'candidate-reviews.json')
@@ -284,6 +287,73 @@ def _epoch_nodes(state, epoch_id=None):
     return seen
 
 
+def _epoch_owners(state, through=None):
+    """Latest declared owner for each query at an explicit point in epoch history."""
+    owners = {}
+    for epoch in state['epochs']:
+        owners.update({qid: epoch['id'] for qid in _epoch_nodes(state, epoch['id'])})
+        if epoch['id'] == through:
+            break
+    return owners
+
+
+def _query_progress_before_run(state, query, boundary, run):
+    """Reconstruct eligibility from retained receipts, excluding this run's resets."""
+    run_index = {r['id']: i for i, r in enumerate(state['runs'])}
+    index = run_index.get(run['id'], len(state['runs']))
+    start = 0
+    for event in state['query_rechecks']:
+        if event['query_id'] != query['id'] or event['receipt_boundary'] > boundary:
+            continue
+        if 'run_id' in event:
+            if run_index.get(event['run_id'], len(state['runs'])) >= index:
+                continue
+        elif timestamp(event['restarted_at']) > timestamp(run['started_at']):
+            continue
+        start = event['receipt_boundary']
+    matching = [(i, r) for i, r in enumerate(state['receipts'][start:boundary], start)
+                if r['query_id'] == query['id']]
+    progress = [r for _, r in matching if r['outcome'] in {'accepted', 'accepted_with_rejections', 'rejected'}]
+    result = {'status':'pending', 'next_page':1, 'reported_total':None, 'total_changed':False,
+              'incomplete_results_seen':False, 'seen_repository_ids':[], 'rejected_rows':0,
+              'last_attempt':matching[-1][0]+1 if matching else 0}
+    if not progress:
+        return result
+    last = progress[-1]; total = last['reported_total']
+    seen = {rid for r in progress for rid in r['accepted_repository_ids']}
+    result.update(next_page=last['position'], reported_total=total,
+                  total_changed=any(r['reported_total'] != total for r in progress),
+                  incomplete_results_seen=any(r['incomplete_results'] for r in progress),
+                  seen_repository_ids=sorted(seen), rejected_rows=sum(sum(r['rejected_rows'].values()) for r in progress))
+    if total > SPLIT_THRESHOLD:
+        result['status'] = 'blocked_single_day_window' if query['created_after'] == query['created_before'] else 'split'
+    elif not last['returned_count'] or last['position'] * PAGE_SIZE >= total:
+        complete = (len(seen) == total and all(r['reported_total'] == total for r in progress)
+                    and not any(r['incomplete_results'] or r['rejected_rows'] for r in progress))
+        result['status'] = 'observed_pages_exhausted' if complete else 'partial_results'
+    elif last['position'] >= 10:
+        result['status'] = 'partial_api_window'
+    else:
+        result['next_page'] += 1
+    return result
+
+
+def _expected_repair_epochs(state, run, boundary):
+    """Derive old repair permission from actual query ownership and prior progress."""
+    owners = _epoch_owners(state, run['epoch_id'])
+    queries = {q['id']: q for q in state['queries'] if q['id'] in owners}
+    status = {qid: _query_progress_before_run(state, q, boundary, run)['status'] for qid, q in queries.items()}
+    existence = {}
+    def existed(qid):
+        if qid not in existence:
+            parent = queries[qid]['parent_id']
+            existence[qid] = parent is None or existed(parent) and status[parent] == 'split'
+        return existence[qid]
+    needed = {owners[qid] for qid in queries if owners[qid] != run['epoch_id'] and existed(qid)
+              and status[qid] in {'pending', 'partial_results', 'partial_api_window'}}
+    return [e['id'] for e in state['epochs'] if e['id'] in needed]
+
+
 def _epoch_complete(state, epoch_id=None):
     queries = {q['id']: q for q in state['queries']}
     nodes = _epoch_nodes(state, epoch_id)
@@ -341,17 +411,20 @@ def expand_topics(state, topics, *, at=None):
     return validate_state(result)
 
 
-def _retry_partial_queries(state, at, limit=2):
+def _retry_partial_queries(state, at, limit=2, run_id=None):
     """A retry starts a fresh traversal; old evidence and its progress remain auditable."""
-    active = _epoch_nodes(state)
+    owners = _epoch_owners(state)
+    active = set(owners)
     queries = sorted((q for q in state['queries'] if q['id'] in active and q['status'] in {'partial_results', 'partial_api_window'}),
                      key=lambda q: (q['last_attempt'], q['id']))[:limit]
     for query in queries:
         boundary = len(state['receipts'])
         event = {'id': 'recheck:' + _state_digest([query['id'], len(state['query_rechecks']), boundary])[:24],
-                 'query_id': query['id'], 'epoch_id': state['current_epoch_id'],
+                 'query_id': query['id'], 'epoch_id': owners[query['id']],
                  'restarted_at': at, 'receipt_boundary': boundary,
                  'previous': {key: copy.deepcopy(query[key]) for key in QUERY_PROGRESS}}
+        if run_id is not None:
+            event['run_id'] = run_id
         state['query_rechecks'].append(event)
         query.update(status='pending', next_page=1, reported_total=None, total_changed=False,
                      incomplete_results_seen=False, seen_repository_ids=[], rejected_rows=0, last_attempt=0)
@@ -360,13 +433,14 @@ def _retry_partial_queries(state, at, limit=2):
 def _advance_epoch(state, at):
     current = next(e for e in state['epochs'] if e['id'] == state['current_epoch_id'])
     previous = current['configuration']; today = str(timestamp(at).astimezone(timezone.utc).date())
-    if today <= previous['created_before'] or not _epoch_complete(state):
+    if today <= previous['created_before']:
         return
     # Inclusive lower bound repeats the final day of the preceding epoch.
     config = {'topics': list(previous['topics']), 'created_after': previous['created_before'], 'created_before': today}
     queries = [search_query(t, config['created_after'], config['created_before']) for t in config['topics']]
     state['queries'].extend(queries)
-    epoch = _epoch(config, [q['id'] for q in queries], at, 'daily_continuation', current['id'])
+    reason = 'daily_continuation' if _epoch_complete(state) else 'frontier_continuation'
+    epoch = _epoch(config, [q['id'] for q in queries], at, reason, current['id'])
     state['epochs'].append(epoch); state['current_epoch_id'] = epoch['id']; state['configuration'] = config
 
 
@@ -450,7 +524,7 @@ def validate_state(state):
                 raise ValueError('existing cohort differs from its input snapshot')
     run_ids = set()
     run_fields = {'id', 'input_id', 'started_at', 'finished_at', 'status', 'request_budget', 'wall_seconds_budget', 'requests_attempted', 'new_unique_repositories', 'accepted_metadata_rows', 'rejected_rows', 'unknown_requests', 'deferred_queries', 'deferred_query_ids', 'before_unique_repositories', 'after_unique_repositories'}
-    optional_run_fields = {'shared_budget', 'strict_replay', 'epoch_id'}
+    optional_run_fields = {'shared_budget', 'strict_replay', 'epoch_id', 'repair_epoch_ids'}
     for run in state['runs']:
         if not isinstance(run, dict) or not run_fields <= set(run) or set(run) - run_fields - optional_run_fields or not re.fullmatch(r'run:[0-9a-f]{24}', str(run['id'])) or run['id'] in run_ids or run['input_id'] not in input_ids:
             raise ValueError('invalid run receipt')
@@ -466,6 +540,10 @@ def validate_state(state):
             raise ValueError('invalid deferred queries')
         if 'strict_replay' in run and type(run['strict_replay']) is not bool:
             raise ValueError('invalid strict replay flag')
+        if 'repair_epoch_ids' in run and (not isinstance(run['repair_epoch_ids'], list)
+                or any(not isinstance(eid, str) or not re.fullmatch(r'epoch:[0-9a-f]{24}', eid) for eid in run['repair_epoch_ids'])
+                or len(set(run['repair_epoch_ids'])) != len(run['repair_epoch_ids'])):
+            raise ValueError('invalid repair epoch scope')
         if 'shared_budget' in run:
             shared = run['shared_budget']
             if (not isinstance(shared, dict) or set(shared) != {'round_id', 'reservations_before', 'reservations_after', 'reservations_charged', 'deferred_reason', 'deferred_provider'}
@@ -583,12 +661,14 @@ def _validate_epoch_structure(state, queries):
                 if (topic in old_roots and old_roots[topic] != qid or
                         topic not in old_roots and queries[qid]['created_after'] != epochs[0]['configuration']['created_after']):
                     raise ValueError('topic expansion reset an old cursor or omitted historical backfill')
-        elif epoch['reason'] == 'daily_continuation':
+        elif epoch['reason'] in {'daily_continuation', 'frontier_continuation'}:
             old_cfg = previous['configuration']
             if (cfg['topics'] != old_cfg['topics'] or cfg['created_after'] != old_cfg['created_before']
-                    or cfg['created_before'] <= old_cfg['created_before'] or not _epoch_complete(state, previous['id'])
+                    or cfg['created_before'] <= old_cfg['created_before']
+                    or epoch['reason'] == 'daily_continuation' and not _epoch_complete(state, previous['id'])
+                    or cfg['created_before'] != str(timestamp(epoch['created_at']).astimezone(timezone.utc).date())
                     or any(queries[qid]['created_after'] != cfg['created_after'] for qid in roots)):
-                raise ValueError('daily continuation lacks complete preceding traversal or one-day overlap')
+                raise ValueError('continuation lacks its UTC creation date, required traversal, or one-day overlap')
         else:
             raise ValueError('unsupported epoch transition')
         if epoch['reason'] != 'v1_migration' and epoch['source_state_sha256'] is not None:
@@ -611,17 +691,60 @@ def _validate_epochs(state, queries):
     history = state['query_rechecks']
     if not isinstance(history, list):
         raise ValueError('v2 state requires traversal history')
+    event_fields = {'id', 'query_id', 'epoch_id', 'restarted_at', 'receipt_boundary', 'previous'}
+    for event in history:
+        if (not isinstance(event, dict) or not event_fields <= set(event) or set(event) - event_fields - {'run_id'}
+                or not isinstance(event['query_id'], str) or type(event['receipt_boundary']) is not int
+                or 'run_id' in event and (not isinstance(event['run_id'], str) or not re.fullmatch(r'run:[0-9a-f]{24}', event['run_id']))):
+            raise ValueError('invalid traversal restart record')
+        timestamp(event['restarted_at'])
     for run in state['runs']:
         if 'epoch_id' in run and run['epoch_id'] not in ids:
             raise ValueError('run references an unknown epoch')
     runs = {run['id']: run for run in state['runs']}
+    epochs = {e['id']: e for e in state['epochs']}
+    for epoch in state['epochs']:
+        if epoch['reason'] == 'frontier_continuation':
+            associated = [r for r in state['runs'] if r.get('epoch_id') == epoch['id']]
+            if not associated or any('repair_epoch_ids' not in r for r in associated):
+                raise ValueError('frontier continuation lacks its scoped introducing run')
+    allowed_nodes = {}; run_boundaries = {}; legacy_runs = []
+    boundary = 0
+    for run_index, run in enumerate(state['runs']):
+        run_boundaries[run['id']] = boundary
+        run_receipts = [r for r in state['receipts'] if r['run_id'] == run['id']]
+        if (len(run_receipts) != run['requests_attempted']
+                or state['receipts'][boundary:boundary+len(run_receipts)] != run_receipts):
+            raise ValueError('run request boundary differs from ordered receipts')
+        if 'repair_epoch_ids' in run:
+            if run.get('epoch_id') not in ids:
+                raise ValueError('repair scope lacks its current epoch')
+            expected = _expected_repair_epochs(state, run, boundary)
+            if run['repair_epoch_ids'] != expected:
+                raise ValueError('repair epoch scope differs from retained query ownership and progress')
+            epoch = epochs[run['epoch_id']]
+            if (epoch['reason'] in {'daily_continuation', 'frontier_continuation'}
+                    and timestamp(epoch['created_at']) > timestamp(run['started_at'])
+                    or date.fromisoformat(epoch['configuration']['created_before']) > timestamp(run['started_at']).astimezone(timezone.utc).date()):
+                raise ValueError('query frontier exceeds its recorded run date')
+            allowed_nodes[run['id']] = set().union(*(_epoch_nodes(state, eid) for eid in [run['epoch_id'], *expected]))
+        else:
+            previous_run = state['runs'][run_index-1] if run_index else None
+            lower = (previous_run.get('finished_at') or previous_run['started_at']) if previous_run else run['started_at']
+            legacy_runs.append((run, boundary, timestamp(lower)))
+        boundary += run['requests_attempted']
     for receipt in state['receipts']:
-        epoch_id = runs[receipt['run_id']].get('epoch_id')
-        if epoch_id and queries[receipt['query_id']]['kind'] == 'search' and receipt['query_id'] not in _epoch_nodes(state, epoch_id):
+        run = runs[receipt['run_id']]; epoch_id = run.get('epoch_id')
+        if 'repair_epoch_ids' in run and (timestamp(receipt['requested_at']) < timestamp(run['started_at'])
+                or timestamp(receipt['finished_at']) < timestamp(receipt['requested_at'])):
+            raise ValueError('request observation precedes its run/frontier')
+        allowed = allowed_nodes.get(run['id'], _epoch_nodes(state, epoch_id) if epoch_id else set())
+        if epoch_id and queries[receipt['query_id']]['kind'] == 'search' and receipt['query_id'] not in allowed:
             raise ValueError('search receipt belongs to another run epoch')
     boundaries = {}; event_ids = set()
     for index, event in enumerate(history):
-        if not isinstance(event, dict) or set(event) != {'id', 'query_id', 'epoch_id', 'restarted_at', 'receipt_boundary', 'previous'}:
+        event_fields = {'id', 'query_id', 'epoch_id', 'restarted_at', 'receipt_boundary', 'previous'}
+        if not isinstance(event, dict) or not event_fields <= set(event) or set(event) - event_fields - {'run_id'}:
             raise ValueError('invalid traversal restart record')
         qid = event['query_id']; boundary = event['receipt_boundary']; prior = event['previous']
         if (qid not in covered or event['epoch_id'] not in ids or qid not in _epoch_nodes(state, event['epoch_id'])
@@ -629,6 +752,27 @@ def _validate_epochs(state, queries):
                 or not isinstance(prior, dict) or set(prior) != set(QUERY_PROGRESS) or prior['status'] not in {'partial_results', 'partial_api_window'}):
             raise ValueError('invalid traversal restart boundary')
         timestamp(event['restarted_at'])
+        if 'run_id' in event:
+            run = runs.get(event['run_id'])
+            if run is None or 'repair_epoch_ids' not in run:
+                raise ValueError('recheck lacks its scoped run')
+            run_boundary = run_boundaries[run['id']]
+            owner = _epoch_owners(state, run['epoch_id']).get(qid)
+            if (boundary != run_boundary or event['epoch_id'] != owner
+                    or qid not in allowed_nodes[run['id']]
+                    or timestamp(event['restarted_at']) != timestamp(run['started_at'])
+                    or _query_progress_before_run(state, queries[qid], boundary, run) != prior):
+                raise ValueError('recheck differs from its run boundary, query owner, or prior status')
+        else:
+            # Legacy events predate run_id. They still need an actual legacy run
+            # at this boundary/epoch; dropping a new scoped binding is not a
+            # backward-compatibility escape hatch.
+            restarted = timestamp(event['restarted_at'])
+            if not any(run.get('epoch_id') == event['epoch_id'] and boundary == run_boundary
+                       and lower <= restarted <= timestamp(run['started_at'])
+                       and qid in _epoch_nodes(state, run['epoch_id'])
+                       for run, run_boundary, lower in legacy_runs):
+                raise ValueError('unbound recheck lacks a matching legacy run boundary and time')
         expected_id = 'recheck:' + _state_digest([qid, index, boundary])[:24]
         if event['id'] != expected_id or event['id'] in event_ids:
             raise ValueError('invalid traversal restart identity')
@@ -756,16 +900,19 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                  'configuration': config, 'inputs': [], 'records': {},
                  'queries': [search_query(t, config['created_after'], config['created_before']) for t in config['topics']],
                  'receipts': [], 'runs': [], 'deferred_until': None}
+    started = now()
+    run_id = 'run:' + digest((started + str(len(state['runs']))).encode())[:24]
     if advance_epoch:
-        at = now()
+        at = started
         state = migrate_state(state, at=at)
         if new_state:
             epoch = _epoch(state['configuration'], state['epochs'][0]['root_query_ids'], at, 'initial')
             state['epochs'] = [epoch]; state['current_epoch_id'] = epoch['id']
         if topics is not None:
             state = expand_topics(state, topics, at=at)
-        _retry_partial_queries(state, at)
-        _advance_epoch(state, at)
+        if not new_state:
+            _advance_epoch(state, at)
+        _retry_partial_queries(state, at, run_id=run_id)
         config = state['configuration']
     retained_input = next((item for item in state['inputs'] if item['id'] == snapshot['id']), None)
     if retained_input is None:
@@ -787,11 +934,11 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         state['queries'].insert(0, {'id': 'existing:' + snapshot['id'], 'kind': 'existing',
             'input_id': snapshot['id'], 'seed_count': len(seeds), 'next_index': 0,
             'status': 'pending' if seeds else 'exhausted', 'last_attempt': 0})
-    started = now(); start_clock = clock(); previous_request = None
+    start_clock = clock(); previous_request = None
     if state['receipts']:
         age = max(0, (timestamp(started) - timestamp(state['receipts'][-1]['requested_at'])).total_seconds())
         previous_request = start_clock - age
-    run = {'id': 'run:' + digest((started + str(len(state['runs']))).encode())[:24],
+    run = {'id': run_id,
            'input_id': snapshot['id'], 'started_at': started, 'finished_at': None,
            'status': 'running', 'request_budget': max_requests, 'wall_seconds_budget': max_seconds,
            'requests_attempted': 0, 'new_unique_repositories': 0, 'accepted_metadata_rows': 0,
@@ -801,6 +948,7 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
     run['strict_replay'] = strict_replay
     if state['schema_version'] == 2:
         run['epoch_id'] = state['current_epoch_id']
+        run['repair_epoch_ids'] = _expected_repair_epochs(state, run, len(state['receipts']))
     if shared_budget:
         shared = shared_budget.summary()
         run['shared_budget'] = {'round_id': shared['round_id'], 'reservations_before': shared['requests_reserved'],
@@ -815,19 +963,24 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         save(path, state)
 
     persist()
-    attempted_failed = set(); existing_attempts = 0; stopped = None
+    attempted_failed = set(); existing_attempts = 0; stopped = None; prefer_current = True
     while run['requests_attempted'] < max_requests:
         if state['deferred_until'] and timestamp(state['deferred_until']) > timestamp(now()):
             stopped = 'rate_limited'; break
         if clock() - start_clock >= max_seconds:
             stopped = 'wall_budget'; break
         # Splitting a parent adds eligible children during this invocation.
-        active_search = _epoch_nodes(state) if state['schema_version'] == 2 else {q['id'] for q in state['queries'] if q['kind'] == 'search'}
+        current_search = _epoch_nodes(state) if state['schema_version'] == 2 else {q['id'] for q in state['queries'] if q['kind'] == 'search'}
+        active_search = current_search | set().union(*(_epoch_nodes(state, eid) for eid in run.get('repair_epoch_ids', [])))
         pending = [q for q in state['queries'] if q['status'] == 'pending' and q['id'] not in attempted_failed
                    and (q['id'] in active_search if q['kind'] == 'search' else q['input_id'] == snapshot['id'] and existing_attempts < existing_budget)]
         if not pending:
             break
-        query = min(pending, key=lambda q: (q['kind'] != 'existing', q['last_attempt']))
+        existing_pending = [q for q in pending if q['kind'] == 'existing']
+        current_pending = [q for q in pending if q['kind'] == 'search' and q['id'] in current_search]
+        repair_pending = [q for q in pending if q['kind'] == 'search' and q['id'] not in current_search]
+        lane = existing_pending or ((current_pending or repair_pending) if prefer_current else (repair_pending or current_pending))
+        query = min(lane, key=lambda q: q['last_attempt'])
         if query['kind'] == 'existing':
             known = {name.casefold() for r in state['records'].values() for name in r['known_names']}
             while query['next_index'] < len(seeds) and seeds[query['next_index']] in known:
@@ -852,10 +1005,11 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         requested = None
 
         def attempted():
-            nonlocal requested, previous_request, existing_attempts
+            nonlocal requested, previous_request, existing_attempts, prefer_current
             requested = now(); previous_request = clock()
             run['requests_attempted'] += 1
             if query['kind'] == 'existing': existing_attempts += 1
+            else: prefer_current = query['id'] not in current_search
 
         try:
             status, body, headers = _transport_get(url, min(20, remaining), transport=fetcher or _http_get,

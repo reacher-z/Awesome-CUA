@@ -19,12 +19,14 @@ GROUPS = (
     ('datasets', ('Datasets', '数据集'), {'dataset'}),
     ('models', ('Models', '模型'), {'model'}),
     ('systems', ('Engineering & industry', '工程与产业'), {'agent', 'framework', 'infrastructure', 'tool', 'product', 'company'}),
+    ('learning', ('Learning resources', '学习资源'), {'learning'}),
 )
 KIND_LABELS = {
     'paper': ('Paper', '论文'), 'survey': ('Survey', '综述'), 'benchmark': ('Benchmark', '基准'),
     'dataset': ('Dataset', '数据集'), 'model': ('Model', '模型'), 'agent': ('Agent', '智能体'),
     'framework': ('Framework', '框架'), 'infrastructure': ('Infrastructure', '基础设施'),
     'tool': ('Tool', '工具'), 'product': ('Product', '产品'), 'company': ('Publisher', '发布方'),
+    'learning': ('Learning resource', '学习资源'),
 }
 EXPORT_FILES = ('records.jsonl', 'citations.bib', 'citations.csl.json')
 
@@ -61,7 +63,7 @@ def topic_counts(rows):
 
 
 def topic_page_count(counts):
-    return max(1, -(-sum(counts[slug] for slug, _, _ in GROUPS) // PAGE_SIZE))
+    return max(1, -(-sum(counts.get(slug, 0) for slug, _, _ in GROUPS) // PAGE_SIZE))
 
 
 def topic_sections(topic, counts, language='en'):
@@ -70,7 +72,7 @@ def topic_sections(topic, counts, language='en'):
     Pages list groups in GROUPS order, so manifest counts alone locate each group without the member rows."""
     links, start = {}, 0
     for slug, _, _ in GROUPS:
-        if counts[slug]:
+        if counts.get(slug, 0):
             links[slug] = topic_path(topic, language, start // PAGE_SIZE + 1) + '#' + slug
             start += counts[slug]
     return links
@@ -134,7 +136,7 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
     body = ['<section class="topic-directory"><div class="library-heading"><div><div class="eyebrow">RESEARCH · DATA · TOOLS</div><h1>',
             tr('Explore by topic', '<span class="topic-title-name">Computer-Use</span> <span class="topic-title-name">主题目录</span>'), '</h1></div><a class="library-language" href="',
             topic_path(language='en' if zh else 'zh'), '">', 'English' if zh else '中文', '</a></div>',
-            '<p class="topic-intro">', tr('Find the papers, models, datasets, benchmarks, and tools that belong together.', '把同一方向的论文、模型、数据集、评测基准与工具放在一起看。'), '</p>',
+            '<p class="topic-intro">', tr('Find related papers, models, datasets, benchmarks, tools, and learning resources.', '把同一方向的论文、模型、数据集、评测基准、工具与学习资源放在一起看。'), '</p>',
             '<div class="topic-overview"><span><strong>', str(len(entries)), '</strong> ', tr('topics', '个主题'), '</span><span><strong>',
             f'{manifest["resources_with_topics"]:,}', '</strong> ', tr('reviewed resources', '条已审阅资源'),
             '</span><a href="/downloads/topics.json">', tr('Topic index · JSON', '主题索引 · JSON'), ' ↓</a></div>',
@@ -149,7 +151,7 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
         sections = topic_sections(entry['id'], entry['counts'], language)
         body += ['<tr data-topic="', entry['id'], '"><th scope="row"><a href="', path, '">', esc(entry['name'][language]), ' <span aria-hidden="true">↗</span></a></th>']
         for slug, labels, _ in GROUPS:
-            count = entry['counts'][slug]
+            count = entry['counts'].get(slug, 0)
             body += ['<td class="topic-col-', slug, '">']
             if count:
                 body += ['<a class="topic-number" href="', sections[slug], '" aria-label="', esc(entry['name'][language] + ' · ' + labels[zh] + ': ' + str(count)), '">', f'{count:,}', '</a>']

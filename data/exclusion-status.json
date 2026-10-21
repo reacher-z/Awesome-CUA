@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 136,
+  "excluded_records": 138,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -2283,6 +2283,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2609.35239",
+      "name": "Computational Complexity of Clifford Template Compilation: Are Quantum Computers Useful for Compiling Quantum Circuits?",
+      "url": "https://arxiv.org/abs/2609.35239",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract studies the computational complexity of compiling Clifford quantum-circuit templates. This quantum-computing problem does not concern interaction with software interfaces.",
+      "reviewed_at": "2026-10-20T08:47:15.573782+00:00",
+      "metadata_fingerprint": "43decaf003f039a0cc288308c8b03bc41349c01030b25d51cff516f77693aba5",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
+        "retrieved_at": "2026-10-16T06:36:29Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2609.35581",
       "name": "QC-Stark: A Multi-Task Benchmark Revealing Capability Dissociations in LLMs Evaluated on Quantum Computing Tasks",
       "url": "https://arxiv.org/abs/2609.35581",
@@ -2312,6 +2329,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2609.39924%2C2610.00346%2C2610.00583%2C2610.01939%2C2610.05099%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.16117%2C2610.17953%2C2610.18067%2C2610.19366%2C2610.20424&max_results=19",
         "sha256": "c52e4e283e0dae88ef8b3ce67b7424b1d4b48e8f41015d872f4da69f98782eaa",
         "retrieved_at": "2026-10-17T12:31:39Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2610.11992",
+      "name": "Multifunctional synaptic learning and neuromorphic computing using crystalline TiO$_x$/NiO$_x$ heterojunction-based memory devices",
+      "url": "https://arxiv.org/abs/2610.11992",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract studies physical memristor heterojunctions, synapse emulation and MNIST digit recognition. It does not study GUI or computer-use agents.",
+      "reviewed_at": "2026-10-20T08:47:15.572984+00:00",
+      "metadata_fingerprint": "8513e29cf5a11eab2faac7f5ef18922118e2a8227ee2d656ba89d22807a51849",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+        "sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
+        "retrieved_at": "2026-10-16T06:36:29Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

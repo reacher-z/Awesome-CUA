@@ -47,7 +47,7 @@ def documents(records, include_metadata=False):
         if specifications:lines.extend(['','Recorded specifications: '+json.dumps(specifications,ensure_ascii=False,sort_keys=True)])
         if record.get('notes'):lines.extend(['',record['notes']])
         if record['review_status']=='metadata_verified':
-            lines.append('Bibliographic facts only; relevance, methods, and findings have not been editorially reviewed.')
+            lines.append('Bibliographic facts only; this record has no approved editorial annotation. Relevance and findings remain pending.')
         lines.extend(['','Primary source: '+source_url,'Catalog record: '+SITE+resource_path(record)])
         yield {'id':rid,'text':'\n'.join(lines),'metadata':{
             'schema_version':1,'resource_id':rid,'name':record['name'],'kind':record['kind'],
@@ -77,7 +77,7 @@ def build_exports(records, destination, catalog_bytes):
     manifest={'schema_version':1,'catalog_sha256':hashlib.sha256(catalog_bytes).hexdigest(),
         'document_grain':'One resource per document; related papers, code, models, and datasets remain separate resources.',
         'text_policy':'Catalog metadata and original annotations; no paper full text, copied full abstracts, weights, or training examples.',
-        'review_policy':'Use review_status=curated for reviewed retrieval. metadata_verified records require a relevance review.',
+        'review_policy':'Use review_status=curated for reviewed retrieval. metadata_verified records require an editorial relevance decision and can include source-reviewed holds.',
         'exports':exports}
     (destination/'rag-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return manifest

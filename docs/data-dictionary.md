@@ -56,7 +56,7 @@ The schema checks `dataset_profile`, `benchmark_protocol`, `leaderboard_url`, `a
 | `disabled` | benchmark, dataset, infrastructure, model | Whether Hugging Face has disabled the repository | Hub API, or editorial |
 | `size_category_reported` | benchmark, dataset, model | Hub size band, such as `10K<n<100K`, or null; it can count files, so it is never a sample count | Hub API |
 | `dataverse` | dataset | Dataverse publisher, persistent URL, publication date, version number, minor number and state, release time, verbatim license object, and file count | Dataverse API |
-| `license_review` | agent, benchmark, dataset, framework, infrastructure, model, tool | Per license slot, the `reason` and `evidence_urls` of a reviewed license decision | License review |
+| `license_review` | agent, benchmark, dataset, framework, infrastructure, learning, model, paper, survey, tool | Per license slot, the `reason` and `evidence_urls` of a reviewed license decision | License review |
 | `license_name` | dataset, model | License the publisher names without an SPDX identifier, such as `qwen-research` | Editorial |
 | `license_conflict` | framework | Conflicting license declarations that remain unresolved | Editorial |
 | `license_components_note` | framework, tool | Component or dependency notices that differ from the root project license | Editorial |

@@ -43,12 +43,19 @@ jobs:
         id: scan
         run: python scripts/scan.py
       - name: Check generated data and review boundaries
+        id: quality
         run: |
           python scripts/catalog.py validate
           python scripts/catalog.py build --check
           python -m unittest discover -s tests -v
           node --test tests/web.test.mjs
           python scripts/build_site.py
+      - name: Snapshot verified public scan data
+        id: snapshot
+        if: steps.quality.outcome == 'success'
+        env:
+          SCAN_QUALITY_OUTCOME: ${{ steps.quality.outcome }}
+        run: python scripts/package_scan_snapshot.py
       - name: Report a skipped commit
         if: github.ref != 'refs/heads/main' || inputs.dry_run
         run: echo "::notice::Scan ran on $GITHUB_REF; commit skipped"
@@ -97,6 +104,13 @@ jobs:
             data/research-discovery.json
             data/discovery-runs.json
             data/harvest-failures.jsonl
+          retention-days: 30
+      - name: Retain verified scan snapshot
+        if: always() && steps.snapshot.outcome == 'success'
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: verified-scan-snapshot
+          path: dist/scan-snapshot/
           retention-days: 30
   dispatch_quality:
     # Pushes made with GITHUB_TOKEN start no push workflows; dispatch is the documented exception.

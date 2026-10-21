@@ -62,6 +62,57 @@ test('deep links round-trip search, filters, layout, language, and a selected re
     assert.equal(parseState(roundTrip).platform,platform);
   }
 });
+test('learning deep links preserve kind, reviewed facets and bilingual search labels',()=>{
+  const make=(id,kind,review_status='curated')=>({id,kind,review_status,name:id,url:'https://example.org/'+id,aliases:[],authors:[],summary:'Browser practice.',environments:['web'],topics:['web-navigation'],published_at:null});
+  const lessons=[make('course','learning'),make('unreviewed','learning','metadata_verified'),make('paper','paper')];
+  lessons.forEach(row=>row.search_text=recordSearchText(row,topicLabels));
+  for(const q of ['Learning resources','学习资源']){
+    const state=parseState('?kind=learning&review=curated&platform=web&topic=web-navigation&q='+encodeURIComponent(q));
+    assert.equal(state.kind,'learning');
+    assert.deepEqual(filtered(lessons,state).map(row=>row.id),['course']);
+    const encoded=serializeState(state,'zh','course');
+    assert.deepEqual(parseState(encoded),state);
+    assert.equal(new URLSearchParams(encoded).get('record'),'course');
+  }
+  assert.equal(filtered(lessons,initial()).length,3);
+  assert.deepEqual(filtered(lessons,{...initial(),kind:'learning',review:'metadata_verified'}).map(row=>row.id),['unreviewed']);
+});
+test('learning category, cards and directory link render in both languages',async()=>{
+  const source={id:'url:course',name:'Browser course',kind:'learning',url:'https://example.org/course',page_url:'/resources/course/',aliases:[],authors:[],environments:['web'],topics:['web-navigation'],summary:'A source-reviewed browser tutorial.',review_status:'curated',published_at:null,scope:'core',related_count:0};
+  const other={...source,id:'arxiv:2401.00001',kind:'paper',name:'Pending paper',review_status:'metadata_verified',summary:null,topics:[]};
+  const elements=new Map(),element=selector=>{
+    if(!elements.has(selector))elements.set(selector,{dataset:{},listeners:{},classList:{toggle(){}},addEventListener(type,fn){this.listeners[type]=fn;},setAttribute(){},focus(){}});
+    return elements.get(selector);
+  };
+  const directory=element('learning-directory');directory.dataset.i18n='directoryLearning';
+  const location={search:'?kind=learning&review=curated&lang=en',pathname:'/',hash:'#catalog'};
+  const globals={
+    document:{documentElement:{},body:{classList:{toggle(){}}},querySelector:element,querySelectorAll:selector=>selector==='[data-i18n]'?[directory]:[],addEventListener(){}},
+    window:{addEventListener(){}},location,
+    history:{state:null,replaceState(_,__,url){location.search=url.includes('?')?'?'+url.split('?')[1].split('#')[0]:'';}},
+    localStorage:{getItem:()=>null,setItem(){}},
+    fetch:async()=>({ok:true,json:async()=>({records:structuredClone([source,other]),topics:topicLabels,coverage:{curated_records:1,by_kind:{learning:1,paper:1},sources:[],as_of_utc:'2026-10-20T00:00:00Z'}})}),
+  };
+  const saved=Object.keys(globals).map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
+  try{
+    for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
+    await import('../web/app.js?learning-kind-render');
+    await new Promise(resolve=>setImmediate(resolve));
+    assert.match(element('#categories').innerHTML,/data-kind="learning" aria-pressed="true"[^]*?▥[^]*?Learning resources[^]*?category-count">1</);
+    assert.match(element('#results').innerHTML,/data-kind="learning"/);
+    assert.match(element('#results').innerHTML,/kind-chip">Learning resources</);
+    assert.doesNotMatch(element('#results').innerHTML,/Pending paper/);
+    assert.equal(directory.textContent,'Learning resources');
+    element('#language').listeners.click();
+    assert.match(element('#categories').innerHTML,/data-kind="learning" aria-pressed="true"[^]*?学习资源/);
+    assert.match(element('#results').innerHTML,/kind-chip">学习资源</);
+    assert.equal(directory.textContent,'学习资源');
+    assert.equal(parseState(location.search).kind,'learning');
+    assert.equal(new URLSearchParams(location.search).get('lang'),'zh');
+  } finally {
+    for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
+  }
+});
 test('unrecognized sort/type and invalid pages fall back safely',()=>{
   const state=parseState('?kind=bad&sort=bad&page=-10&review=unverified');
   assert.equal(state.page,1);assert.equal(state.kind,'');assert.equal(state.sort,'featured');assert.equal(state.review,'');
@@ -160,6 +211,93 @@ test('paper curated-first order puts reviewed recent work before older reviewed 
   assert.ok(result.slice(reviewed.length).every(r=>r.review_status!=='curated'));
 });
 
+const rankingRecord=(id,name,date,extra={})=>{
+  const row={id,name,published_at:date,kind:'paper',review_status:'curated',aliases:[],authors:[],
+    environments:['web'],topics:['evaluation'],summary:'A computer-use evaluation.',...extra};
+  return {...row,search_text:recordSearchText(row,topicLabels)};
+};
+test('named paper and acronym titles outrank newer incidental mentions without hiding them',()=>{
+  for(const name of ['OSWorld','WebArena','AndroidWorld','Agent S']){
+    const original=rankingRecord('original',name+'： A benchmark for computer-use agents','2024-01-01');
+    const related=rankingRecord('related',name+' 2: Further evaluation','2025-01-01');
+    const mention=rankingRecord('mention','Recent evaluation study','2026-01-01',{summary:'Evaluated using '+name+'.'});
+    const input=[mention,related,original],result=filtered(input,{...initial(),q:name,kind:'paper'});
+    assert.deepEqual(result.map(r=>r.id),['original','related','mention'],name);
+    assert.deepEqual(input,[mention,related,original],'input order is not mutated');
+  }
+});
+test('exact aliases and title-term matches precede summary-only matches',()=>{
+  const aliased=rankingRecord('alias','A workspace benchmark','2024-01-01',{aliases:['DeskBench']});
+  const title=rankingRecord('title','Revisiting DeskBench evaluation','2025-01-01');
+  const mention=rankingRecord('mention','Recent evaluation study','2026-01-01',{summary:'Evaluated using DeskBench.'});
+  assert.deepEqual(filtered([mention,title,aliased],{...initial(),q:'deskbench',kind:'paper'}).map(r=>r.id),['alias','title','mention']);
+});
+test('already-searchable spaced compound names rank their titles and aliases above incidental mentions',()=>{
+  for(const [name,query] of [['WebArena','Web Arena'],['AndroidWorld','Android World'],['MobileWorld','Mobile World']]){
+    const original=rankingRecord('original',name+': A benchmark','2023-01-01');
+    const alias=rankingRecord('alias','A prior benchmark','2022-01-01',{aliases:[name]});
+    const mention=rankingRecord('mention','Latest study','2026-01-01',{summary:'Experiments use '+query+'.'});
+    const input=[mention,alias,original],state={...initial(),q:query,kind:'paper'};
+    assert.deepEqual(filtered(input,state).map(r=>r.id),['original','alias','mention'],query);
+    assert.deepEqual(input.filter(r=>matches(r,state)).map(r=>r.id),['mention','alias','original']);
+    assert.deepEqual(filtered(input,{...state,sort:'newest'}).map(r=>r.id),['mention','original','alias']);
+  }
+});
+test('acronym-to-word boundaries make OSWorld and GUIOdyssey searchable as spaced names',()=>{
+  for(const [name,query] of [['OSWorld','OS World'],['GUIOdyssey','GUI Odyssey']]){
+    const original=rankingRecord('original',name+': A benchmark','2024-01-01');
+    const mention=rankingRecord('mention','Recent study','2026-01-01',{summary:'We evaluate '+query+'.'});
+    assert.ok(matches(original,{...initial(),q:query}),query);
+    assert.ok(matches(original,{...initial(),q:name}),name);
+    assert.deepEqual(filtered([mention,original],{...initial(),kind:'paper',q:query}).map(r=>r.id),['original','mention']);
+  }
+});
+test('acronym expansion retains original and earlier camel-case forms for macOSWorld',()=>{
+  const record=rankingRecord('original','macOSWorld','2024-01-01');
+  for(const form of ['macosworld','mac osworld','macos world','mac os world'])assert.ok(record.search_text.includes(form),form);
+  for(const query of ['macOSWorld','osworld','mac OSWorld','macOS World','mac OS World','OS World']){
+    assert.ok(matches(record,{...initial(),q:query}),query);
+  }
+});
+test('single-word compound title and alias fragments outrank incidental summary mentions',()=>{
+  for(const [name,alias,query] of [['WebArena: A benchmark',null,'Arena'],['A prior benchmark','GUIOdyssey','Odyssey']]){
+    const original=rankingRecord('original',name,'2024-01-01',{aliases:alias?[alias]:[]});
+    const mention=rankingRecord('mention','Recent study','2026-01-01',{summary:'We evaluate '+query+'.'});
+    assert.deepEqual(filtered([mention,original],{...initial(),kind:'paper',q:query}).map(r=>r.id),['original','mention'],query);
+  }
+});
+test('new acronym forms preserve AND filters, review priority and explicit date sorting',()=>{
+  const original=rankingRecord('original','GUIOdyssey: Mobile tasks','2024-01-01',{environments:['android']});
+  const mention=rankingRecord('mention','Recent study','2026-01-01',{summary:'GUI Odyssey tasks.',environments:['android']});
+  const pending=rankingRecord('pending','GUI Odyssey','2027-01-01',{review_status:'metadata_verified',environments:['android']});
+  const wrongPlatform=rankingRecord('web','GUIOdyssey','2024-01-01');
+  const input=[mention,pending,wrongPlatform,original],state={...initial(),kind:'paper',q:'GUI Odyssey',platform:'android'};
+  assert.deepEqual(filtered(input,state).map(r=>r.id),['original','mention','pending']);
+  assert.deepEqual(filtered(input,{...state,sort:'newest'}).map(r=>r.id),['pending','mention','original']);
+  assert.deepEqual(filtered(input,{...state,review:'curated',year:'2024',topic:'evaluation'}).map(r=>r.id),['original']);
+  assert.equal(filtered(input,{...state,q:'GUI Odyssey absent-token'}).length,0);
+});
+test('query relevance preserves review groups and explicit newest and empty-query ordering',()=>{
+  const older=rankingRecord('old','OSWorld: Original benchmark','2024-01-01');
+  const recent=rankingRecord('recent','Recent study','2026-01-01',{summary:'Evaluated using OSWorld.'});
+  const pending=rankingRecord('pending','OSWorld','2027-01-01',{review_status:'metadata_verified'});
+  const input=[pending,recent,older],state={...initial(),kind:'paper',q:'OSWorld'};
+  assert.deepEqual(filtered(input,state).map(r=>r.id),['old','recent','pending']);
+  assert.deepEqual(filtered(input,{...state,sort:'newest'}).map(r=>r.id),['pending','recent','old']);
+  assert.deepEqual(filtered(input,{...state,q:''}).map(r=>r.id),['recent','old','pending']);
+});
+test('query ranking never broadens literal AND matching or changes intersected filters',()=>{
+  const records=[rankingRecord('named','OSWorld: Mobile evaluation','2024-01-01',{environments:['android']}),
+    rankingRecord('mention','Recent study','2026-01-01',{summary:'OSWorld mobile evaluation.',environments:['android']}),
+    rankingRecord('wrong-platform','OSWorld: Mobile benchmark','2025-01-01'),
+    rankingRecord('missing-term','OSWorld','2024-01-01',{environments:['android']}),
+    rankingRecord('pending','OSWorld: Mobile benchmark','2024-01-01',{review_status:'metadata_verified',environments:['android']})];
+  const state={...initial(),kind:'paper',q:'OSWorld mobile',platform:'android',review:'curated',topic:'evaluation'};
+  assert.deepEqual(filtered(records,state).map(r=>r.id),['named','mention']);
+  assert.deepEqual(filtered(records,state).map(r=>r.id).sort(),records.filter(r=>matches(r,state)).map(r=>r.id).sort());
+  assert.equal(filtered(records,{...state,q:'OSWorld missing-token'}).length,0);
+});
+
 test('details request only their own JSON and share concurrent/cached requests',async()=>{
   const {createRecordLoader}=await import('../web/catalog-core.js');
   const calls=[];let release;
@@ -208,7 +346,7 @@ test('related records opened inside the dialog start at the top with focus on th
     for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
   }
 });
-test('sorting keeps the previous order without a collator or query normalization per comparison',()=>{
+test('explicit sorts and empty-query order stay stable without per-comparison normalization',()=>{
   const alpha=(a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'}),newer=(a,b)=>bibliographicDate(b).localeCompare(bibliographicDate(a));
   const legacy=state=>{
     const result=rows.filter(r=>matches(r,state)),rank=r=>r.kind!=='company'&&FEATURED.includes(r.name)?FEATURED.indexOf(r.name):FEATURED.length,exact=r=>state.q&&normalize(r.name)===normalize(state.q)?-1:0;
@@ -218,7 +356,9 @@ test('sorting keeps the previous order without a collator or query normalization
   };
   for(const sort of ['featured','name','newest'])for(const q of ['','g','browser use'])for(const kind of ['','paper']){
     const state={...initial(),sort,q,kind};
-    assert.deepEqual(filtered(rows,state).map(r=>r.id),legacy(state).map(r=>r.id),JSON.stringify(state));
+    const actual=filtered(rows,state).map(r=>r.id),previous=legacy(state).map(r=>r.id);
+    // Only the default queried ranking changed; every query still has the same population.
+    assert.deepEqual(sort==='featured'&&q?actual.toSorted():actual,sort==='featured'&&q?previous.toSorted():previous,JSON.stringify(state));
   }
   const {normalize:nativeNormalize,localeCompare}=String.prototype;let normalized=0,collated=0;
   String.prototype.normalize=function(...args){normalized++;return nativeNormalize.apply(this,args);};

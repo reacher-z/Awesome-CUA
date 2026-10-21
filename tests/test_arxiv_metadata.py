@@ -10,6 +10,7 @@ import tempfile
 import types
 import unittest
 from unittest import mock
+import urllib.parse
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -274,6 +275,40 @@ class IngestionTests(unittest.TestCase):
         self.assertEqual(report["reported_total"], 0)
         self.assertEqual(report["unique_returned"], 0)
         self.assertTrue(report["complete"])
+
+    def test_expanded_recent_query_replaces_same_day_narrow_cache_without_approval(self):
+        narrow = (
+            'ti:"computer use"', 'ti:"computer-use"', 'ti:"GUI agent"',
+            'ti:"GUI agents"', 'ti:"GUI grounding"', 'ti:"web agent"',
+            'ti:"browser agent"',
+        )
+        self.responses = [feed(total=0)]
+        with mock.patch.object(scan, "RECENT_ARXIV_TERMS", narrow):
+            self.assertTrue(self.ingest("recent")["complete"])
+        old_query = catalog.read_json(self.path / "recent-paper-search.json")["query"]
+        observed = entry(aid="2610.00002", abstract="A memory method for GUI agents.")
+        observed.find(ATOM + "title").text = "Recursive History Compression"
+        self.responses = [feed([observed], total=1)]
+        result = self.ingest("recent")
+        self.assertFalse(result["cache_used"])
+        self.assertTrue(result["complete"])
+        query = urllib.parse.parse_qs(urllib.parse.urlparse(self.calls[-1][0]).query)["search_query"][0]
+        self.assertNotEqual(query, old_query)
+        self.assertIn('abs:"GUI agents"', query)
+        self.assertIn('abs:"web navigation"', query)
+        self.assertIn('abs:AndroidWorld', query)
+        self.assertIn('abs:Mind2Web', query)
+        self.assertIn('ti:GUI', query)
+        self.assertIn('ti:"Android agent"', query)
+        self.assertIn("submittedDate:[202610030000 TO 202610170000]", query)
+        row = catalog.read_jsonl(self.path / "papers.jsonl")[0]
+        self.assertEqual(row["review_status"], "metadata_verified")
+        self.assertIsNone(row["summary"])
+        self.assertEqual(row["topics"], [])
+        occurrence = catalog.read_jsonl(self.path / "candidates.jsonl")[0]["discovered_in"][0]
+        self.assertIn("title and abstract", occurrence["section"])
+        self.assertTrue(self.ingest("recent")["cache_used"])
+        self.assertEqual(len(self.calls), 2)
 
     def test_both_searches_reject_false_empty_successes(self):
         error = ET.Element(ATOM + "entry")

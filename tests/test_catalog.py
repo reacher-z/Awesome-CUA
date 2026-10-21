@@ -409,7 +409,7 @@ class TopicHubTests(unittest.TestCase):
         self.assertIn("[Benchmarks (1)](#benchmarks) · [Papers (2)](#papers)", hub)
         index = files["docs/topics.md"]
         self.assertLess(index.index("[GUI grounding]"), index.index("[Safety & security]"))
-        self.assertIn("| [GUI grounding](topics/grounding.md) | 3 | 1 | · | · | · | 2 | [Newer paper]", index)
+        self.assertIn("| [GUI grounding](topics/grounding.md) | 3 | 1 | · | · | · | · | 2 | [Newer paper]", index)
 
     def test_bibliography_year_index_marks_reviews_and_undated_records(self):
         rows = [self.row("arxiv:2401.00001", "Reviewed", "paper", ["grounding"], "2024-01-01"),

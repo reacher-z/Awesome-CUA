@@ -83,7 +83,15 @@
                   "browser-agent",
                   "browser-agents",
                   "browser-automation",
-                  "android-automation"
+                  "android-automation",
+                  "computer-use-agent",
+                  "computer-use-agents",
+                  "gui-grounding",
+                  "browser-use",
+                  "web-agent",
+                  "web-agents",
+                  "desktop-agent",
+                  "mobile-agent"
                 ]
               }
             },
@@ -367,7 +375,15 @@
             "browser-agent",
             "browser-agents",
             "browser-automation",
-            "android-automation"
+            "android-automation",
+            "computer-use-agent",
+            "computer-use-agents",
+            "gui-grounding",
+            "browser-use",
+            "web-agent",
+            "web-agents",
+            "desktop-agent",
+            "mobile-agent"
           ]
         },
         "created_after": {
@@ -853,6 +869,14 @@
               ]
             }
           }
+        },
+        "repair_epoch_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^epoch:[0-9a-f]{24}$"
+          }
         }
       }
     },
@@ -896,7 +920,15 @@
                   "browser-agent",
                   "browser-agents",
                   "browser-automation",
-                  "android-automation"
+                  "android-automation",
+                  "computer-use-agent",
+                  "computer-use-agents",
+                  "gui-grounding",
+                  "browser-use",
+                  "web-agent",
+                  "web-agents",
+                  "desktop-agent",
+                  "mobile-agent"
                 ]
               }
             },
@@ -928,7 +960,8 @@
             "initial",
             "v1_migration",
             "topic_expansion",
-            "daily_continuation"
+            "daily_continuation",
+            "frontier_continuation"
           ]
         },
         "previous_epoch_id": {
@@ -1046,6 +1079,10 @@
               "minimum": 0
             }
           }
+        },
+        "run_id": {
+          "type": "string",
+          "pattern": "^run:[0-9a-f]{24}$"
         }
       }
     }

@@ -63655,6 +63655,2972 @@
     ]
   },
   {
+    "id": "github:kwai/memgui-agent",
+    "name": "MemGUI-Agent",
+    "kind": "framework",
+    "url": "https://github.com/kwai/MemGUI-Agent",
+    "summary": "MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "interaction-history",
+      "long-horizon",
+      "imitation-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "The inspected release documentation describes dataset utilities, a LoRA SFT template and gold-step offline evaluation; live Android rollouts are explicitly outside that evaluator and linked to separate benchmark repositories. Executable source files, external datasets/checkpoints and reported results were not independently verified in this bounded review.",
+    "verify_terms": [
+      "MemGUI-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "licenses.code"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/evaluation/memgui3k_offline_eval/README.md",
+        "sha256": "4c92c584b6885a3bde8ee89d04ccf48287e7f6119889f75cde0c034c90bd8217",
+        "retrieved_at": "2026-10-20T03:55:26.237759+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/LICENSE",
+        "sha256": "d4e344274155be1d0a192c8ae2940169abb0bd8546d045b96b45810593860636",
+        "retrieved_at": "2026-10-20T03:55:01.061844+00:00",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "details.repository_id"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-18&per_page=100&page=1&sort=updated&order=asc",
+        "sha256": "0ae4477b885b0915e43874399c2a6b91f7d07954697370204550df931f7db82c",
+        "retrieved_at": "2026-10-19T19:10:26.954787+00:00"
+      }
+    ],
+    "paper_ids": [
+      "2606.19926"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Source review completed for the documented training and evaluation scope; linked artifacts remain unverified.",
+    "read_basis": "Read the complete root README, complete linked component README, complete root LICENSE/notice, and the retained official GitHub numeric-identity response. No code execution or full-paper reread.",
+    "details": {
+      "repository_id": 1278022559
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "The README declares Apache-2.0, but the inspected LICENSE is a short notice and link rather than the complete terms; the code license remains unconfirmed.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/LICENSE",
+          "https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "3f7545f466407ed5336f47d18b12e8354ec352ff83dcf973b1545f81d9a629ac",
+    "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "id": "github:kwai/mobileforge",
+    "name": "MobileForge",
+    "kind": "framework",
+    "url": "https://github.com/kwai/MobileForge",
+    "summary": "Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "data-generation",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "The root README describes MobileGym exploration/feedback and HiFPO optimization. The training README limits its public training path to the Qwen3-VL-8B experiment. Linked model and dataset collections, executable source completeness and benchmark results were not independently verified; the repository code license is not a model or dataset license.",
+    "verify_terms": [
+      "MobileForge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kwai/MobileForge/main/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "relations",
+      "notes",
+      "environments",
+      "licenses.code"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/main/training/README.md",
+        "sha256": "58187fe25d8398ef2ae31de02debd4bc3b932ff1925db86a87f5de65b016aed1",
+        "retrieved_at": "2026-10-20T03:55:29.533431+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://raw.githubusercontent.com/kwai/MobileForge/main/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "retrieved_at": "2026-10-20T03:55:07.420029+00:00",
+        "supports": [
+          "licenses.code",
+          "notes"
+        ]
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "details.repository_id"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-18&per_page=100&page=1&sort=updated&order=asc",
+        "sha256": "0ae4477b885b0915e43874399c2a6b91f7d07954697370204550df931f7db82c",
+        "retrieved_at": "2026-10-19T19:10:26.954787+00:00"
+      }
+    ],
+    "paper_ids": [
+      "2606.19930"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Source review completed for the documented training and evaluation scope; linked artifacts remain unverified.",
+    "read_basis": "Read the complete root README, complete linked component README, complete root LICENSE/notice, and the retained official GitHub numeric-identity response. No code execution or full-paper reread.",
+    "details": {
+      "repository_id": 1278021888
+    },
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/kwai/MobileForge/main/LICENSE",
+          "retrieved_at": "2026-10-20T03:55:07.420029+00:00",
+          "basis": "Complete repository root Apache License 2.0 text; code declaration only, not linked datasets or weights."
+        },
+        "reason": "The complete root LICENSE declares Apache-2.0 for repository code. Linked data and model weights, and third-party dependencies, retain separate licensing requirements.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/kwai/MobileForge/main/LICENSE",
+          "https://raw.githubusercontent.com/kwai/MobileForge/main/README.md"
+        ]
+      }
+    },
+    "reviewed_sha256": "f78f58a6e3b8dd2ae3e8c49a15473782ae258ecd70719f7eeddfa43a10441adf",
+    "reviewed_at": "2026-10-20T04:06:27Z"
+  },
+  {
+    "id": "arxiv:2610.26071",
+    "name": "CUA-Lite: An Open Platform for Computer Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26071",
+    "summary": "CUA-Lite unifies environment interfaces, supervised data formats and per-model harnesses for evaluation, reinforcement learning and supervised fine-tuning across desktop, browser and mobile tasks.",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "tool-integration",
+      "data-generation",
+      "evaluation",
+      "imitation-learning",
+      "reinforcement-learning",
+      "sandbox"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete official abstract and selected v1 methods, training and limitations sections. WebVoyager uses offline mirrors; VM-free sandboxes are Linux-only, and reported desktop/mobile gains do not establish unseen-app transfer. No results or released artifacts were independently reproduced.",
+    "verify_terms": [
+      "CUA-Lite: An Open Platform for Computer Use Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26071v1",
+        "sha256": "d4231fa9677e916ca8cc27493dfbbe9fb34c7430207150e6b9be10c2bad43bfb",
+        "retrieved_at": "2026-10-20T08:28:55.967592+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26469",
+    "name": "VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26469",
+    "summary": "VeriCUA trains a Judge to select verification checks and stopping decisions while a frozen Probe inspects the post-task GUI. Single-attempt reinforcement learning balances verdict correctness and Probe use.",
+    "environments": [
+      "desktop",
+      "linux",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "reward-models",
+      "reinforcement-learning",
+      "evaluation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 method/evaluation sections. The Judge is trained on OSWorld and frozen for MobileWorld/WebArena transfer; downstream Actor RL is separate. Evaluation uses screened terminal outcomes, and reported cost counts Probe tokens. No independent reproduction.",
+    "verify_terms": [
+      "VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26469v1",
+        "sha256": "f13f0225c721d5aa430bb8aea1d1e7a7da5973760c4c3b82f26ba648aade82ba",
+        "retrieved_at": "2026-10-20T08:28:59.073204+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26503",
+    "name": "ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26503",
+    "summary": "ScopeMem conditions latent-memory prefixes on a frozen GUI agent's initial action and trains them to correct errors while preserving correct decisions. Its evaluation separates action repairs from harmful revisions.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "interaction-history",
+      "imitation-learning",
+      "robustness",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 controlled-study, method and limitations sections. Results are offline, step-level action matching; online task success is explicitly left untested. The frozen actor is queried twice per step. No independent reproduction or redistribution-license claim.",
+    "verify_terms": [
+      "ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26503v1",
+        "sha256": "0554aa531a5f94f51cba6c51bd1b13fb05b0f462497afa5d1dae7ec6fc6e375a",
+        "retrieved_at": "2026-10-20T08:29:02.225995+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26828",
+    "name": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26828",
+    "summary": "WildAWM synthesizes resettable GUI/MCP/CLI environments and cross-interface tasks, using execution-based checks of solvability, difficulty and verifier consistency before supervised and reinforcement learning.",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "data-generation",
+      "sandbox",
+      "tool-integration",
+      "long-horizon",
+      "imitation-learning",
+      "reinforcement-learning"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 synthesis, training and evaluation sections. The system uses hybrid GUI/MCP/CLI interfaces. Evaluation includes benchmark subsets and model-based judgments, so reported scores are not treated as directly comparable GUI-only results. No independent reproduction.",
+    "verify_terms": [
+      "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26828v1",
+        "sha256": "b680e07a5a883e7bb0210a1734a628be6c47d91b7df0487a2044d56d1b7e227e",
+        "retrieved_at": "2026-10-20T08:29:05.337543+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Complete official abstract and selected exact-v1 full-text sections. Fresh Atom metadata and abstract hash match the retained record; no reproduction or release-completeness claim.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T08:45:57Z"
+  },
+  {
+    "id": "arxiv:2610.26203",
+    "name": "Focused Omni-Modal GUI Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26203",
+    "summary": "FocusGUI learns step-specific weights over screenshot, audio, video and interaction-context channels, injecting a compact residual into a frozen decoder without pruning its inputs.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "imitation-learning",
+      "interaction-history",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected v1 method/evaluation sections. OmniGUI uses episode-disjoint reference-action evaluation; Type Match, Exact Match and Goal Progress are not presented as independently demonstrated live task-success gains. The Android role is explicit in Appendix D.1. No reproduction or artifact-release verification.",
+    "verify_terms": [
+      "Focused Omni-Modal GUI Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26203v1",
+        "sha256": "28848f8f597b2a8865ad98f5aa1e4401e15a49f92b33f7bce4d4f044c168ada0",
+        "retrieved_at": "2026-10-20T09:17:23.872790+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.26660",
+    "name": "Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26660",
+    "summary": "Tandem serves hybrid GUI-agent models on Android NPUs using divergence-point state checkpoints, rollback-aware speculative decoding and idle power release between request bursts.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "efficiency",
+      "mobile-navigation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 system/evaluation sections. Main latency measurements replay recorded requests and exclude app execution; the paper also reports instrumented real tasks. These are serving-time, energy and action-fidelity results, not a claimed task-success improvement. Hardware, cooling and model configurations matter. No independent reproduction.",
+    "verify_terms": [
+      "Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26660v1",
+        "sha256": "7cb553f8230cfb203df446f08e29d48b676addfe9b076d35171d09970d1970bf",
+        "retrieved_at": "2026-10-20T09:17:26.960480+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.26703",
+    "name": "Comparing Computer Use Behavior Across Multiple Levels of Abstraction",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26703",
+    "summary": "MAP annotates computer-use traces at linked operation, function/consequence, method and goal levels, then compares human and agent workflows through sequence, pattern and effort metrics.",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 taxonomy, annotation, evaluation and limitations sections. MAP analyzes existing human/agent traces rather than deploying a new acting policy. Annotation and timing coverage depend on the source datasets; manual agreement reflects a particular labeling scheme. Behavioral findings do not establish a privacy guarantee. No independent reproduction.",
+    "verify_terms": [
+      "Comparing Computer Use Behavior Across Multiple Levels of Abstraction"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.26703v1",
+        "sha256": "9a964cbf50123887ad20bf156e69c0bbe4567d6b2c28e4cf202d5538eab8294c",
+        "retrieved_at": "2026-10-20T09:17:30.049627+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.24277",
+    "name": "SPIDES: Information-Flow Control for Browser Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.24277",
+    "summary": "SPIDES propagates HTML integrity and confidentiality labels into agent context and mediates browser actions with information-flow policies and approval gates, evaluated in the labeled MicroNet ecosystem.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "human-in-the-loop",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 threat-model, policy, evaluation and limitations sections. Guarantees assume correct labels/trusted origins and a trusted browser/harness mediating actions; evaluation uses idealized approvals. Origin-level reader sets can miss recipient distinctions within one origin. No unrestricted prompt-injection immunity or independent reproduction is claimed.",
+    "verify_terms": [
+      "SPIDES: Information-Flow Control for Browser Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.24277v1",
+        "sha256": "daceefecb2e6b910a6c7f2ffe35e89c7070f6282f4f35ee89e885a2e77aa94c4",
+        "retrieved_at": "2026-10-20T09:17:33.132448+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.23307",
+    "name": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23307",
+    "summary": "MobileInject evaluates visual/textual observation injection in stateful Android workflows using resettable emulators, benign/adversarial state oracles and trace-based diagnosis of emitted rationales and actions.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation",
+      "observability",
+      "cross-app"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete abstract and selected v1 construction, threat-model and evaluation sections. The attacker modifies observation surfaces, not system instructions, model parameters or the OS. State oracles are distinct from emitted-rationale diagnoses, whose labels include outcome-dependent constraints. Those diagnostics are not independent evidence of hidden-reasoning causality. No reproduction or release verification.",
+    "verify_terms": [
+      "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.23307v1",
+        "sha256": "3803984a185b6258276b87b87ac1991583878fb41dc22618ff743f6f69c7bc7e",
+        "retrieved_at": "2026-10-20T09:17:36.223826+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Reviewed the complete official abstract and selected versioned methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T09:31:58Z"
+  },
+  {
+    "id": "arxiv:2610.23012",
+    "name": "Adaptation of Computer Use Agents to New Software with User Manuals",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23012",
+    "summary": "MAGE retrieves software-manual sections into fixed execution plans and generates setup/main task-plan pairs whose GUI rollouts support application-specific policy adaptation with round-based GRPO.",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "data-generation",
+      "reinforcement-learning"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 methods, evaluation and validation sections. Execution plans stay fixed per episode; policy training is separate and application-specific. Screenshot-based training/Slack judgments can miss task conditions, and OSWorld tasks may overlap backbone pretraining. No independent reproduction, safe-deployment guarantee or artifact-release verification.",
+    "verify_terms": [
+      "Adaptation of Computer Use Agents to New Software with User Manuals"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.23012v1",
+        "sha256": "75c025a862a046b8bcbdd84b800a37132edcc1ec271d40c57c18ec984652a0b0",
+        "retrieved_at": "2026-10-20T10:34:04.380045+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2610.22539",
+    "name": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22539",
+    "summary": "WebMix uses a scout-produced interface manual to route mixtures of source-trained LoRA adapters for web agents, adapting to target interfaces without target-time gradient updates.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "imitation-learning",
+      "robustness"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 method, evaluation and analysis sections. Adapter-bank and router training use source demonstrations. Domain scouting accesses target training-task intents and answer-stripped reference procedures; version scouting is task-free. No target-time gradients does not mean no target task information. No independent reproduction or artifact/license verification.",
+    "verify_terms": [
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.22539v1",
+        "sha256": "0c95ddb42bbfc91aabf25e2dc2d2393a9977b6d979a2c891c5bcf80798dbfbc3",
+        "retrieved_at": "2026-10-20T10:34:07.486792+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2610.22990",
+    "name": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22990",
+    "summary": "PersonaCUABench varies simulated user requests and clarification dialogue over fixed web tasks, comparing task completion with requirement handling and persona-agent satisfaction ratings.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 construction, evaluation and limitations sections. Main interactions and satisfaction ratings use LLM-simulated personas; human annotators validate selected outputs. The harness observes page text, with screenshots only for auditing. Results are not evidence about real demographic populations or desktop agents. No independent reproduction.",
+    "verify_terms": [
+      "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.22990v1",
+        "sha256": "bf9066e8b3472100f120e21534f92655f4d0814f2521b9d23d778e5239c7a2a4",
+        "retrieved_at": "2026-10-20T10:42:06.870916+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2610.23303",
+    "name": "MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23303",
+    "summary": "MobileJailBench evaluates mobile-agent jailbreaks in a browser-based Android-like simulator, combining feedback-driven attack evolution, separately admitted task expansions and evidence-grounded outcome adjudication.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "evaluation",
+      "observability",
+      "cross-app"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained abstract and selected exact-v1 threat-model, construction and evaluation sections. Execution uses a browser-based Android-like simulator, not real Android isolation or live services. The attacker controls instructions and designated carriers, not privileged simulator state/APIs or system/model/harness internals. Rates depend on release, budget and adjudication coverage. SAF labels track observable expressions and actions, not latent reasoning; unresolved episodes are excluded from rate denominators. No independent reproduction.",
+    "verify_terms": [
+      "MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202610130000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2610.23303v1",
+        "sha256": "ec9d647818be346ddbf7807be87b4789cd53e50c5d3d7a7904ad4f49bc71c38e",
+        "retrieved_at": "2026-10-20T10:42:09.967883+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Reviewed the complete official abstract and selected exact-version methods, evaluation and limitations sections; independent source review completed.",
+    "read_basis": "Original-timestamp retained Atom reuse after exact metadata/abstract-hash checks, plus selected exact-version official HTML sections. No result reproduction or asset-release verification.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "80bed80786f939973d0d13b4f892300fee02a6110e326247131fc83d257796de",
+    "reviewed_at": "2026-10-20T10:51:01Z"
+  },
+  {
+    "id": "arxiv:2609.30887",
+    "name": "From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.30887",
+    "summary": "GUI-Hopper combines verified Android deeplinks with GUI actions, using landing-screen descriptions, hybrid trajectory training and reinforcement learning to select navigation shortcuts and recover through GUI control.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "data-generation",
+      "imitation-learning",
+      "reinforcement-learning",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "Reviewed the complete retained Atom abstract and selected exact-v1 full text. The Atom has incomplete clauses; its text/hash remain unchanged and this annotation uses the explicit methods. Evaluation is Android-only, with a selected real-app subset. Landing-Activity verification is not task completion. Model/catalog release is prospective in the paper. No independent reproduction.",
+    "verify_terms": [
+      "From Tapping to Hopping: Augmenting Mobile GUI Agents with App-Native Deeplinks"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22+OR+ti%3A%22browser+agents%22+OR+ti%3A%22mobile+agent%22+OR+ti%3A%22mobile+agents%22+OR+ti%3A%22desktop+agent%22%29+AND+submittedDate%3A%5B202609200000+TO+202610192359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "url": "https://arxiv.org/html/2609.30887v1",
+        "sha256": "2b6b8147cf7b0e1fcded85f397c272bcf535ed179789e76c3ff4f15aa3fe53a7",
+        "retrieved_at": "2026-10-20T10:53:44.035673+00:00",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ]
+      }
+    ],
+    "review_note": "Complete retained abstract and selected exact-v1 methods, evaluation and limitations independently reviewed; detailed annotation binds the versioned HTML.",
+    "read_basis": "Complete original retained Atom abstract and selected exact-v1 HTML sections; the incomplete Atom wording is preserved rather than reconstructed.",
+    "reviewed_sha256": "096098b62f82867ee39dfd7cf44095edc5c6a9307351265592e485d82eadf111",
+    "reviewed_at": "2026-10-20T11:06:34Z",
+    "editorial_reviewed": true
+  },
+  {
+    "id": "arxiv:2610.00450",
+    "name": "ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.00450",
+    "verify_terms": [
+      "ZoneClaw: Mitigating Persistent Memory Attacks by Establishing Memory-Zoning in OpenClaw-Style Computer-Use Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.00450v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Sections 3.3, 4.1 and Appendices A.3-A.4: the OpenClaw service/workspace evaluation does not establish GUI/browser interaction. Need concrete observation/action interfaces and execution-trace evidence to decide core or adjacent relevance. Retain metadata; this is not an abstract-only exclusion.",
+    "read_basis": "Complete retained abstract and selected exact-v1 methodology/harness/evaluation sections, including raw Tables 6-7. Full-text scope evidence does not settle GUI/browser or concrete terminal-control relevance.",
+    "reviewed_sha256": "063101c76d718b7862cb64505422cc53d88e3c32ea5d465db04f12c7d16508e2",
+    "reviewed_at": "2026-10-20T11:06:34Z"
+  },
+  {
+    "id": "github:charlypoly/web-context-bench-python",
+    "name": "Web Context Bench (Python)",
+    "kind": "benchmark",
+    "url": "https://github.com/charlypoly/web-context-bench-python",
+    "summary": "Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "scope": "core",
+    "notes": "This is a single-snapshot representation evaluation on local fixtures and captured pages, not a live multi-step agent benchmark. Its shared-prompt, one-model setup differs from complete Browser Use or Stagehand agents. The methodology notes unresolved redistribution licensing for third-party practice-site snapshots; MIT is recorded for repository code only. Selected scoring code was read, but no models, browser tasks or claimed results were run or reproduced.",
+    "verify_terms": [
+      "Web page representations"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "environments",
+      "details.benchmark_protocol.focus",
+      "details.benchmark_protocol.setting",
+      "details.benchmark_protocol.observations",
+      "details.benchmark_protocol.actions",
+      "details.benchmark_protocol.notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Aweb-agents+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:05:35.063004+00:00",
+        "sha256": "3e22e1cbfa47bcf98f6f70a5f6f162a31a509a9f2091a84679bb5231977e29d9"
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url",
+          "notes"
+        ],
+        "url": "https://github.com/charlypoly/web-context-bench-python",
+        "retrieved_at": "2026-10-20T11:50:54.545491Z",
+        "sha256": "fd30e94e78e7167a49579922259fde1c7d7f8259e9f00afba15faf3a71966a94"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes",
+          "licenses.data",
+          "details.benchmark_protocol.focus",
+          "details.benchmark_protocol.setting",
+          "details.benchmark_protocol.observations",
+          "details.benchmark_protocol.actions",
+          "details.benchmark_protocol.evaluation",
+          "details.benchmark_protocol.notes"
+        ],
+        "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/METHODOLOGY.md",
+        "retrieved_at": "2026-10-20T11:52:30.131541Z",
+        "sha256": "1c3c0cbf9f9d9f7cd9e7a2f027ecb217fd5c16fa157916281a15bb7f403f6f1c"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes",
+          "details.benchmark_protocol.evaluation",
+          "details.benchmark_protocol.notes"
+        ],
+        "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/src/wpbench/scoring.py",
+        "retrieved_at": "2026-10-20T11:53:28.567861Z",
+        "sha256": "8cada5d71b5a61e7aff2e1ac2b951c266eb2db7c082c06c5a13aa127d42b3fc5"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE",
+        "retrieved_at": "2026-10-20T11:51:41.499735Z",
+        "sha256": "9b64ef672f5091b6074d02502f6d3c161d94308a3d9d142d7437dcddf611bbc4"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE",
+          "retrieved_at": "2026-10-20T11:51:41.499735Z",
+          "basis": "Complete MIT license text in the repository root at the inspected commit; repository code only."
+        },
+        "reason": "The inspected root LICENSE contains complete MIT terms for repository software. The methodology explicitly leaves redistribution permission for captured third-party practice-site pages unresolved; code MIT is not a blanket snapshot/data license.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "read_basis": "Complete pinned README and complete methodology and MIT license; complete scoring.py; official root/source listings and retained numeric-identity receipt. No candidate code or tests executed.",
+    "details": {
+      "benchmark_protocol": {
+        "focus": [
+          "Browser-representation token use",
+          "Factual READ accuracy",
+          "ACT target-element selection"
+        ],
+        "setting": "offline",
+        "observations": [
+          "Top-document HTML",
+          "Markdown converted from HTML",
+          "Playwright accessibility snapshot",
+          "Browser Use indexed DOM",
+          "Stagehand hybrid snapshot",
+          "Viewport screenshot"
+        ],
+        "actions": [
+          "READ text answer",
+          "ACT selector, text/label, accessible role/name, DOM index, Stagehand reference or screenshot point, according to the representation"
+        ],
+        "evaluation": "READ uses normalized exact match against an answer or allowed alias. ACT resolves predicted identifiers to ground-truth elements, or checks screenshot points inside the target box. Representation-token accounting subtracts fixed-prompt tokens; screenshots use billed input usage minus the fixed prompt. These are answer/target correctness and token metrics, not completed-task success.",
+        "counts": [],
+        "notes": "Fixed local-page observations; the reported run uses claude-sonnet-5 and a shared prompt, without scrolling or an agent loop. Browser Use disables its viewport cutoff and sends untruncated text; Stagehand uses a separate matched browser load. Short-string representability labels are approximate. Offline does not mean API-free. Third-party snapshot redistribution remains unresolved; results were not reproduced.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md",
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/METHODOLOGY.md",
+          "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/src/wpbench/scoring.py"
+        ]
+      }
+    },
+    "reviewed_sha256": "14775f6e3daba69d4684380fd33bf717bdc3093b65be796eb863bbd27d0c0bab",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:chenghengli/windom",
+    "name": "WinDOM code",
+    "kind": "framework",
+    "url": "https://github.com/ChenghengLi/WinDOM",
+    "summary": "GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "imitation-learning",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "The Windows-style environment is win11React in Playwright, not native Windows control. The repository documents its predecessor trajectory pipeline but explicitly omits the final corpus harvester. The inspected ScreenSpot evaluator defaults to a privileged ground-truth-center demonstration; --no-demo and --official-prompt select other modes, so evaluation results require their prompt and coordinate settings. Linked datasets, weights and reported scores were not independently verified; MIT applies to inspected repository code.",
+    "verify_terms": [
+      "WinDOM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes",
+      "environments",
+      "relations"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-grounding+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:04:53.470789+00:00",
+        "sha256": "3d76d934e98641746085772b98ee17059749f980a616435498a7ad483bd4cec1"
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url",
+          "notes"
+        ],
+        "url": "https://github.com/ChenghengLi/WinDOM",
+        "retrieved_at": "2026-10-20T11:50:58.795155Z",
+        "sha256": "08b89c5e6143afa4c0cdde95f8ec016d9033ee004f7631fadd4457144c2b87c9"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes",
+          "licenses.data"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/data/README.md",
+        "retrieved_at": "2026-10-20T11:52:41.278660Z",
+        "sha256": "09488140d35408cc11bb9c12b1bb435b21814cf6525937a8309475c9326c4004"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/src/windom/training/sfd_4b.py",
+        "retrieved_at": "2026-10-20T11:52:45.091369Z",
+        "sha256": "0ee33b1e416ea4c5d8834688e6f42fbd15ef493f1b82398d3bb985838cbdffb9"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/src/windom/evaluation/screenspot.py",
+        "retrieved_at": "2026-10-20T11:52:48.511963Z",
+        "sha256": "c481b2f91f2d82bf801632da6ab6cce01bc42c780104d743156c272942d2cef3"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/LICENSE",
+        "retrieved_at": "2026-10-20T11:51:44.940106Z",
+        "sha256": "d5a37ff86df9b231440ab1bcf3ecf77304a0a53e772182cdb622a3ab5d043447"
+      }
+    ],
+    "documented_by": [
+      "2606.25964"
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/LICENSE",
+          "retrieved_at": "2026-10-20T11:51:44.940106Z",
+          "basis": "Complete MIT license text in the repository root at the inspected commit; repository code only."
+        },
+        "reason": "The inspected root LICENSE is complete MIT text for repository code. The local data README says same as parent repository, but the linked Hub dataset/model cards and artifacts were not inspected; their licenses are not inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/LICENSE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "read_basis": "Complete pinned README and complete data README, MIT license and ScreenSpot evaluator; selected teacher-prompt/distillation/CLI/optimizer sections of sfd_4b.py; official root listing and retained numeric-identity receipt. No candidate code or tests executed.",
+    "reviewed_sha256": "7cda5207d8882bc8dedaefb93d2ccf54b310354917283b8f4890fffdc5764958",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:patrickstarl/gui-grounding-eval",
+    "name": "GUI Grounding Evaluation Harness",
+    "kind": "tool",
+    "url": "https://github.com/PatrickStarL/gui-grounding-eval",
+    "summary": "ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "This is an independent harness using ScreenSpot-Pro, not a new dataset or verified leaderboard entry. The read code maps points back to original-image coordinates and scores point-in-box hits; documentation limits comparisons by prompt, model, subset and provider behavior. No OS support, code license or external data/weight license was established in this bounded review. Model calls, tests and reported results were not executed or reproduced.",
+    "verify_terms": [
+      "GUI Grounding Evaluation Harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Agui-grounding+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:04:53.470789+00:00",
+        "sha256": "3d76d934e98641746085772b98ee17059749f980a616435498a7ad483bd4cec1"
+      },
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url",
+          "notes"
+        ],
+        "url": "https://github.com/PatrickStarL/gui-grounding-eval",
+        "retrieved_at": "2026-10-20T11:51:05.389053Z",
+        "sha256": "4fe6f65a21586dde0bf8b64f8c49e5c583b320bf5e0c2b8253baf2cd3fcfc5d2"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/ssp_eval/metrics.py",
+        "retrieved_at": "2026-10-20T11:53:32.022035Z",
+        "sha256": "c3eb1708b7d57dcde7478ca2f5063241b1ab567b2ba2ba28b9956b043da2b6c2"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/ssp_eval/geometry.py",
+        "retrieved_at": "2026-10-20T11:53:35.461491Z",
+        "sha256": "66fa5940f0c4f6265cb162cb0596402848dd2a49fd48b07ee950dc866b8730a5"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/ssp_eval/runner.py",
+        "retrieved_at": "2026-10-20T11:53:38.931130Z",
+        "sha256": "f83bc0632a616e7b01c8a46b0e435733f0cc47b4a19f0c709b221eaee8a0db5f"
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "read_basis": "Complete pinned README and complete metrics.py, geometry.py and runner.py; official root/source listings and retained numeric-identity receipt. No separate license text was established. No candidate code or tests executed.",
+    "reviewed_sha256": "3226df7608039522072e59d459094fc45be9c5a6be7ea0d7ad76ddf9723a3aea",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:solplum/yunkai",
+    "name": "Yunkai",
+    "kind": "agent",
+    "summary": "Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "notes": "The Android AccessibilityService contains concrete screen-reading and action paths. The inspected HarmonyOS accessibility extension is a lifecycle/event scaffold with its screen-content probe disabled; HDC appears in an external UI-test driver, so Harmony GUI-control parity is not established by this review. Setup requires a configured OpenAI-compatible model endpoint and API key: local storage does not establish offline inference or a no-transmission guarantee. Documented approval and privacy mechanisms are not independently tested security guarantees. No app, device test or model inference was run.",
+    "verify_terms": [
+      "Yunkai"
+    ],
+    "read_basis": "Complete pinned README and MIT license; complete Android ScreenSenseService.kt, Harmony M2Tools.ets, ScreenSenseExtension.ets and drive_harmony.sh; official commit identity and complete recursive tree listing. Only these implementation files were read; no repository code was imported or executed.",
+    "url": "https://github.com/solplum/yunkai",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "2aa6cd83165bfc201b0128c250e80892895d63af"
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Amobile-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:06:00.276978+00:00",
+        "sha256": "01f97a863952373bd10a1f849d79706344be63f5774fe7e0cfe9ba774e41d213"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/solplum/yunkai/commits/main",
+        "retrieved_at": "2026-10-20T11:54:02.419278+00:00",
+        "sha256": "e2797712132e69cc50fa7ad2ae815a48339f77eebec1e85a5dc0cd75702574f1"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/solplum/yunkai/git/trees/4ca94f2f7d8f13099ae2c351d9578ed5ef0cb509?recursive=1",
+        "retrieved_at": "2026-10-20T11:56:30.226860+00:00",
+        "sha256": "08f48cb5c15b8d505e76a91d996c656d87765946cc7137bce088e73e6e64cf06"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE",
+        "retrieved_at": "2026-10-20T11:57:22.238029+00:00",
+        "sha256": "c39441f92c303832d42f1f153c4442533ac925007e12d70f3199c568a0baac88"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-android/app/src/main/java/com/zhuolin/yunkai/service/screen/ScreenSenseService.kt",
+        "retrieved_at": "2026-10-20T11:59:51.424713+00:00",
+        "sha256": "964aad706676fc7b74e532f8bc441fa766f3ce0ca3e4d0e115c7a90c70656883"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-harmony/entry/src/main/ets/service/tools/M2Tools.ets",
+        "retrieved_at": "2026-10-20T11:59:54.745065+00:00",
+        "sha256": "628cc3015999176052a09e3f3bbb8635d87163a9430d98cb6a6a7c09117dfd37"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-harmony/entry/src/main/ets/service/screen/ScreenSenseExtension.ets",
+        "retrieved_at": "2026-10-20T12:04:53.632582+00:00",
+        "sha256": "ba8c9b0f4b5cea5ac36a4b49f3cf27e77e5c6beb49022e43c667e359be2c6fca"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/yunkai-harmony/tests/fullflow/drive_harmony.sh",
+        "retrieved_at": "2026-10-20T12:04:56.914360+00:00",
+        "sha256": "423a77e1fd57f3e105898f1adfc94c493de5c0de97fae4379f9cf540c89d4640"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE",
+          "retrieved_at": "2026-10-20T11:57:22.238029+00:00",
+          "basis": "Complete root MIT license text inspected at the pinned commit. Repository software only; data, weights and third-party assets retain separate terms."
+        },
+        "reason": "Complete root MIT license text inspected at the pinned commit. Repository software only; data, weights and third-party assets retain separate terms.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "eea31b35aa0b55c97f8ccda3438382ad49d2453671b49bb817efb5bc3384e900",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:anikasomaia/local-activity-recorder",
+    "name": "Activity Recorder",
+    "kind": "tool",
+    "summary": "Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection.",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "scope": "core",
+    "notes": "Recording is started and stopped from the tray; screenshots use a five-second timer. The manual Upload Data action uses a built-in third-party demonstration endpoint unless changed in code, sending recorded files as base64 JSON. Successful uploads move files into uploaded subfolders rather than delete them; no automatic expiry policy was found in the inspected capture/upload path. Sensitive-application filters are listed as future work. The README's .NET version requirements are inconsistent, and long-session behavior was not established. No license declaration was found in the inspected files or complete tree's license-file names, so code permission remains unknown. No activity was captured and no uploader or executable was run.",
+    "verify_terms": [
+      "Activity Recorder"
+    ],
+    "read_basis": "Complete pinned README, Program.cs and DataUploader.cs; complete InputMonitor.cs and ScreenshotCapture.cs reconstructed from the official commit's deleted duplicate-file patches and verified against current root-path Git blob SHA1 and sizes; complete current tree listing. The reconstruction is not a new raw-file request. No recording or upload was performed.",
+    "url": "https://github.com/anikasomaia/local-activity-recorder",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "967cea087bf6496b3b82743fb96770fa29f8e203"
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Acomputer-use-agents+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:04:41.685729+00:00",
+        "sha256": "90c30399c8aa5031f82164978bc12eae3bebba172758d20877a87fec53566c12"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "summary",
+          "environments",
+          "topics",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/anikasomaia/local-activity-recorder/commits/master",
+        "retrieved_at": "2026-10-20T11:54:07.061516+00:00",
+        "sha256": "f5b501fa132163d749c6695d81c76d45fdff2888ea890e31cbaa9bc4172fed3b"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "summary",
+          "environments",
+          "notes",
+          "licenses.code"
+        ],
+        "url": "https://api.github.com/repos/anikasomaia/local-activity-recorder/git/trees/f7ec5b6ecf0ba1bfe6362d7f2bfb0f1af5ac6bc7?recursive=1",
+        "retrieved_at": "2026-10-20T11:56:33.833893+00:00",
+        "sha256": "ee9e5899d1f150982eb05ca1f8794406cef0ffc80eb8223811b504ff972370c1"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/Program.cs",
+        "retrieved_at": "2026-10-20T12:05:00.168119+00:00",
+        "sha256": "ce3022b4016d140eac554e392dbe42f54ffb3e8098b03e2bf72e92ff49c5d084"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/DataUploader.cs",
+        "retrieved_at": "2026-10-20T12:05:03.421222+00:00",
+        "sha256": "e70e2e68b5dd586e5ad0fb0b12c8b937b4614bd5237bac61d03d22144c4751f4"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": null,
+        "reason": "No license declaration was found in the inspected README/C# files, and the complete pinned tree has no LICENSE, LICENCE or COPYING-named file. Public source access does not establish reuse permission.",
+        "evidence_urls": [
+          "https://api.github.com/repos/anikasomaia/local-activity-recorder/git/trees/f7ec5b6ecf0ba1bfe6362d7f2bfb0f1af5ac6bc7?recursive=1"
+        ]
+      }
+    },
+    "reviewed_sha256": "440e0e43026ba7a20eaca17507cec33bd697d8b1eed6fb056be34136b3f4f76f",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "github:radishsoftware/mobster",
+    "name": "Mobster engine",
+    "kind": "agent",
+    "summary": "iOS agent engine organized around an observe, decide, verify and act loop, using WebDriverAgent screen state and phone actions such as taps, typing, swipes and app switches.",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "This entry covers the published engine, not the separate Mobster for Mac product. The documented reference example requires an already-serving WebDriverAgent runner for an iPhone and a model-service key; it performs a fixed read-only Settings task and declines approvals. The repository lists benchmark/evaluation tooling, but dated simulator subsets, real-device trials and earlier engine results are different evaluation populations. The README explicitly places several product modules outside this repository. Source inspection confirms WDA dispatch paths, not task success, security guarantees or reproducible performance; no phone, simulator, model or benchmark was run. MIT applies to the inspected repository software, not automatically to external WDA code, images or other data.",
+    "verify_terms": [
+      "Mobster engine"
+    ],
+    "read_basis": "Complete pinned README, MIT license and mobile_agent/drivers.py; official commit identity and complete recursive tree listing. Driver mixins, agent-loop implementation, benchmark/evaluation implementations, product code and dependencies were not fully read or executed.",
+    "url": "https://github.com/RadishSoftware/mobster",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "details": {
+      "repository_revision": "738cecdd3eacb9df88d48efb9efa53507bb4aeb4"
+    },
+    "editorial_reviewed": true,
+    "review_note": "Pinned primary documentation and relevant implementation were independently reviewed. Scope, platform and license limits are recorded; no candidate code or results were executed or reproduced.",
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "identity"
+        ],
+        "url": "https://api.github.com/search/repositories?q=topic%3Amobile-agent+is%3Apublic+fork%3Afalse+created%3A2008-01-01..2026-10-20&per_page=100&page=1&sort=updated&order=asc",
+        "retrieved_at": "2026-10-20T11:06:00.276978+00:00",
+        "sha256": "01f97a863952373bd10a1f849d79706344be63f5774fe7e0cfe9ba774e41d213"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision"
+        ],
+        "url": "https://api.github.com/repos/RadishSoftware/mobster/commits/main",
+        "retrieved_at": "2026-10-20T11:54:17.260430+00:00",
+        "sha256": "fde31e2fdae142655f09fa14fb3114bf39a22cc1ff7994204a66622f5cbfe2c7"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "details.repository_revision",
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/RadishSoftware/mobster/git/trees/81f2c1990c07a3aaf001a5c3eb4f37a457f0fb3d?recursive=1",
+        "retrieved_at": "2026-10-20T11:56:37.457839+00:00",
+        "sha256": "8c2b9647b33a93b1a33e9256307e09b0f3e6aa62608019defa6dcdc5d7bff3dc"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/LICENSE",
+        "retrieved_at": "2026-10-20T11:57:25.539870+00:00",
+        "sha256": "f9ad743798f16491100ea692069e346f82bbdb5a5df91e4e01c1d6168f2513cf"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/mobile_agent/drivers.py",
+        "retrieved_at": "2026-10-20T12:05:06.711971+00:00",
+        "sha256": "4296a186cc2c00b9de93ababae490dc99cba596d858eff195e40283d58d73a0a"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "MIT",
+          "url": "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/LICENSE",
+          "retrieved_at": "2026-10-20T11:57:25.539870+00:00",
+          "basis": "Complete root MIT license text inspected at the pinned commit. Applies to repository software; data, weights, external WebDriverAgent code and separately distributed products do not inherit this declaration."
+        },
+        "reason": "Complete root MIT license text inspected at the pinned commit. Applies to repository software; data, weights, external WebDriverAgent code and separately distributed products do not inherit this declaration.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/LICENSE"
+        ]
+      }
+    },
+    "reviewed_sha256": "dfffdc4b5850ed6bfe0bcfe705fa5918d61420f8c80df2e38f61b7d1fb3819ec",
+    "reviewed_at": "2026-10-20T12:29:50Z"
+  },
+  {
+    "id": "arxiv:2610.24372",
+    "name": "Beyond Next-Screen Prediction: The Decision Value of GUI World Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.24372",
+    "summary": "Separates next-screen prediction from action evaluation in GUI lookahead and trains Direct Action Ranking on reference actions, comparing prediction-augmented scoring under matched offline supervision.",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "world-models",
+      "action-prediction",
+      "imitation-learning"
+    ],
+    "scope": "core",
+    "notes": "The matched augmentation experiment measures offline ranking; AndroidWorld task-success comparisons use differently trained evaluators and do not isolate prediction value. A separate web evaluator is trained on Mind2Web, and web results do not uniformly favor direct scoring. The main study concerns one-step selection. No independent reproduction.",
+    "verify_terms": [
+      "The Decision Value of GUI World Models"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.24372v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "9dff18935a1faa7ec16366bac6a6e9e41f0381d561568c3aba39fe783efcfbd3",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.22408",
+    "name": "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22408",
+    "summary": "ECHOES learns recursive textual task memory through privileged screenshot-history distillation and GRPO, then predicts GUI actions from the current screenshot and memory.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "memory",
+      "interaction-history",
+      "state-tracking",
+      "long-horizon",
+      "imitation-learning",
+      "reinforcement-learning",
+      "efficiency",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Privileged screenshot history is used during training, while deployment retains self-generated textual state. GUI results use action/step metrics and model-specific history settings; online Sokoban transfer is separate. GRPO rewards action correctness, valid output format and compression length. Diagnostic memory replay is distinct from the validation gap used to schedule training. No independent reproduction.",
+    "verify_terms": [
+      "Recursive History Compression and Privileged On-Policy Distillation"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.22408v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "0389d96a8f6c4975129f5c526e8df9ca4690f31364a2f4e66aaea4a75f0eabbc",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.15502",
+    "name": "From Observations to Authorized Actions: Measuring Source Information in Android Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.15502",
+    "summary": "Measures source-attribution limits in Android accessibility and separately tests application-history and selected-WebView-object checks for authorizing AppFunctions actions.",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "The two prototypes use different workloads and trust assumptions on patched Android/WebView components. Approval is simulated; authenticated browser delivery and atomic capture remain unimplemented. Coarse source history can withhold benign work and persist across tasks. Direct-call checks and limited live-agent trials are separate, and writes are in-memory. No production vulnerability, general defense rate or released artifact is established.",
+    "verify_terms": [
+      "Measuring Source Information in Android Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.15502v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "a38b3ddc9d5d6744eefc937f86e174917f9b5de149323632d5d1b20283d79c8e",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.11963",
+    "url": "https://arxiv.org/abs/2610.11963",
+    "name": "Can LLMs Fix It Without Code? Toward Automated Verification of No-Code Bug Fixes",
+    "kind": "paper",
+    "summary": "Tests natural-language no-code fixes through GUI execution in Linux Brave. Scripted fixed/buggy-state gates and issue-specific checkers distinguish fix outcomes from the executor's completion claims.",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "notes": "The evaluation reuses 322 fixes from 12 generation configurations and is restricted to nine of 51 candidate issues after environment setup and sanity checks. Resolution counts any success in three runs with a 20-step episode limit; executor harnesses and decoding settings differ. Opening the update page triggers a harness-controlled switch to the fixed browser build. Checker behavior, reconstructed starting states and the two-author human reference limit interpretation. The replication package was linked by the paper but was not inspected; no software, agent, model or result was run or reproduced.",
+    "verify_terms": [
+      "Can LLMs Fix It Without Code?"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.11963v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "9fad44164a6f00446d2c91a31e3e77a4aab8145ac3747e9d1ce0165c1aebda95",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2609.33102",
+    "url": "https://arxiv.org/abs/2609.33102",
+    "name": "ORBIT: A Framework for Multi-Agent Safety and Security Evaluations",
+    "kind": "paper",
+    "summary": "Inspect-based framework that varies multi-agent roles, communication, attacks and defenses, with BrowserGym and virtual-desktop GUI adapters alongside coding and other tool scenarios.",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "notes": "BrowserART uses an accessibility-tree action interface, while the desktop adapter uses mouse, keyboard and screenshots. The adapted tasks are not claimed to preserve the constructs of their source benchmarks. Experiments cover a representative configuration slice with fixed attack templates; the OS-Harm results are imported from prior work using a different model and stack. Browser defense tables also differ in baseline versus defended judges and in judged benign denominators. Human judge validation used one grader. These results do not establish a universally effective defense. The linked repository and its code/data licenses were not independently inspected, and no experiment was run.",
+    "verify_terms": [
+      "Multi-Agent Safety and Security Evaluations"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.33102v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced.",
+    "reviewed_sha256": "3ea667f4187ba601011e5ff00c4d63676b6d9903d12b80a0d7d5dd9920f00c65",
+    "reviewed_at": "2026-10-20T13:32:51Z"
+  },
+  {
+    "id": "arxiv:2610.22672",
+    "name": "Not All Graphs Are Maps: A Task-Agnostic Exploration Framework for Mobile GUI Navigation",
+    "url": "https://arxiv.org/abs/2610.22672",
+    "kind": "paper",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "evaluation"
+    ],
+    "summary": "TAG-Nav supplies Android GUI agents with destination and route memory distilled from offline app exploration. DestBench measures arrival at a reference pre-action screen, separately from downstream task execution.",
+    "notes": "The controlled cohort has 84 tasks across six apps; the broader inventory spans 20 apps. Main results use human destination labels. DroidTask and SPA-Bench are converted to navigation-only protocols. Some comparison cells received another graph condition’s memory, with sensitivity analyses reported. Cross-family runs differ in app versions, state and denominators. A small stale-graph probe does not establish robustness. Models, code, artifacts and performance were not independently reproduced.",
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.22672v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "verify_terms": [
+      "TAG-Nav",
+      "DestBench"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5fd9d7926e99d068fa8fb7238a9e7811e3f8c55d00e6b89d5672754cb3e619bc",
+    "reviewed_at": "2026-10-20T13:32:51Z",
+    "review_note": "Selected versioned primary methods, evaluation and limitations were independently reviewed. Bibliographic snapshots remain separately retained; experiments and linked artifacts were not reproduced."
+  },
+  {
+    "id": "arxiv:2610.22697",
+    "name": "What It Is, Not What It Says: Securing Agentic Browsing Interactions with Web Semantics",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.22697",
+    "summary": "Intact records webpage element provenance and capabilities, isolates planning per element, and uses a browser harness to constrain actions and request consent for third-party interactions.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "planning",
+      "human-in-the-loop"
+    ],
+    "scope": "core",
+    "notes": "Evaluation instructs the model to simulate compromise and measures planner outputs and permission appearance. Utility uses plan matching and LLM-judged element suitability; no steps are executed in that assessment. Assumes an honest first party, trusted browser/harness and untampered instrumentation; multi-page and availability attacks are outside scope. Parallel latency reduction is an unimplemented estimate. No independent reproduction.",
+    "verify_terms": [
+      "Securing Agentic Browsing Interactions with Web Semantics"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.22697v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "cb6a8a9c0cc47be21b36b3d1831b26c6189d8f2e4af0d7e26d643c9c2a65452f"
+  },
+  {
+    "url": "https://www.deeplearning.ai/courses/building-ai-browser-agents",
+    "name": "Building AI Browser Agents",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "Browser-agent course with worked lessons on structured web extraction and multi-step browser interaction, followed by AgentQ search and self-correction concepts.",
+    "notes": "Review covers the public syllabus and complete published transcripts of the simple-agent and autonomous-agent lessons, not the whole course or its video frames. The first uses Playwright and structured HTML extraction; the second uses a MultiOn session API and shows missed steps, continuations and clarifications. Hosted notebooks and helper files were not retrieved, and current service access was not tested. No account, enrollment, terms acceptance, installation or execution occurred. Course and example-code reuse terms remain unknown.",
+    "verify_terms": [
+      "Building AI Browser Agents"
+    ],
+    "id": "url:aa693ca3e8948623f31e",
+    "evidence_urls": [
+      "https://www.deeplearning.ai/courses/building-ai-browser-agents"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://learn.deeplearning.ai/courses/building-ai-browser-agents/lesson/wwewm/building-a-simple-web-agent",
+        "retrieved_at": "2026-10-20T13:41:10.403317+00:00",
+        "sha256": "0915d862638a308da6200d9603d668ab4d11bcabfa713ff0ccb82c7b21a5a92f"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://learn.deeplearning.ai/courses/building-ai-browser-agents/lesson/lot5j/building-an-autonomous-web-agent",
+        "retrieved_at": "2026-10-20T13:42:56.029732+00:00",
+        "sha256": "20d17ca47d1d16826f8e2736d6639d0cf11e826ef28c788187e16adcac9d7561"
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "1f0315e8758fe0edd97adb2c5253955dcdbe6d7bd8be393fe14dcd093483705f"
+  },
+  {
+    "url": "https://huggingface.co/docs/smolagents/examples/web_browser",
+    "name": "Web Browser Automation with Agents (smolagents tutorial)",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Versioned tutorial building a vision-guided CodeAgent with Selenium/Helium browser tools, screenshot callbacks and example web-navigation tasks.",
+    "notes": "The reviewed v1.26.0 page matches all eight code blocks in its commit-pinned Markdown source. It uses InferenceClientModel and a vision model, unlike the retained v1.8.0 example. The shown setup starts a local visible Chrome session, and its installation command does not pin dependency versions. Runtime API compatibility, model-provider access and example outcomes were not tested. The inspected repository root contains Apache-2.0 terms, but explicit applicability to this Markdown tutorial was not established from retained sources; document reuse terms remain unknown. Model weights, visited websites and hosted-service terms are separate. No installation or notebook execution occurred.",
+    "verify_terms": [
+      "Web Browser Automation with Agents"
+    ],
+    "id": "url:5857c840372512cfe3fc",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/docs/source/en/examples/web_browser.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "identity",
+          "name",
+          "summary",
+          "environments",
+          "topics",
+          "scope",
+          "notes"
+        ],
+        "url": "https://huggingface.co/docs/smolagents/v1.26.0/examples/web_browser",
+        "retrieved_at": "2026-10-20T13:41:14.002361+00:00",
+        "sha256": "736281d4d96fc310050a09e830801f739729cc01217fef0be1fd45874e4c68f6"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://api.github.com/repos/huggingface/smolagents/git/ref/tags/v1.26.0",
+        "retrieved_at": "2026-10-20T13:41:17.450466+00:00",
+        "sha256": "cf08eff3ce4ca2fd85f85ba1eebca477277bca0cb2a54613e172741392061365"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://huggingface.co/docs/smolagents/v1.8.0/examples/web_browser",
+        "retrieved_at": "2026-10-20T12:51:48.091044+00:00",
+        "sha256": "9def26af20ef4a6c4091e5873b53737940b360e6ff7db2d606add92d6586c8fb"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.document"
+        ],
+        "url": "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/LICENSE",
+        "retrieved_at": "2026-10-20T13:43:02.729855+00:00",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_licenses": {
+      "document": {
+        "value": null,
+        "reason": "The retained repository-root file contains Apache-2.0 terms, but the reviewed Markdown has no license notice and the retained sources do not explicitly establish that this license applies to the tutorial document. Document reuse terms remain unknown; this is not a claim that no license exists. Code, data, weights and hosted-service terms are not inferred.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/docs/source/en/examples/web_browser.md",
+          "https://raw.githubusercontent.com/huggingface/smolagents/12c1bc820eca50ace6f80a21d90426d41d74f845/LICENSE"
+        ]
+      }
+    },
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "0bd3804794c37f263db5cba3429523721854e95fe1477127f9fb83d4d0510f50"
+  },
+  {
+    "id": "github:wlanderson0/orbit",
+    "name": "ORBIT framework",
+    "kind": "framework",
+    "url": "https://github.com/wlanderson0/orbit",
+    "summary": "Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools.",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "Reviewed version 1.0.3 source at commit 588b3035, not an asserted reproduction of the paper. BrowserART tools return accessibility trees, including the screenshot-named refresh. Qualification is scenario-specific: the project documents browser-judge and desktop-scoring limits; its opt-in exact-send oracle covers one derived local task, not SMTP delivery. Runtime profiles and scoring policies are separate. Apache-2.0 is the top-level Orbit code declaration; third-party components and external data/environments retain separate terms. No installation, release archive or live evaluation was tested.",
+    "verify_terms": [
+      "Multi-agent evaluations built on",
+      "Version 1.0.3"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "github_repository_identity",
+        "supports": [
+          "id",
+          "url"
+        ],
+        "url": "https://api.github.com/repos/wlanderson0/orbit",
+        "sha256": "0436414b9bcc4307f3bcde476a544da6fe1dd5baa90939eed392942490fbfbf7",
+        "retrieved_at": "2026-10-20T13:39:57.052202+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/orbit/scenarios/browser/browserart/tools.py",
+        "sha256": "c47d046b129999da5e63b7723a3f3e2e0cc31c27ce74b45f71f8c6d0df1fc0d8",
+        "retrieved_at": "2026-10-20T13:42:37.098639+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "summary",
+          "environments",
+          "scope",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/orbit/scenarios/desktop/osworld/tools.py",
+        "sha256": "2cce76b22252a415d64c356b2062771e528b554dd83b6f88fca769f48fa8a826",
+        "retrieved_at": "2026-10-20T14:10:32.910533Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/docs/benchmark-qualification.md",
+        "sha256": "66515d7ee87eab5a2f42c26132d0bf3e2a3b9c006156d2378181cf91966a2903",
+        "retrieved_at": "2026-10-20T14:09:35.060985Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/orbit/scenarios/browser/browserart/scorer.py",
+        "sha256": "94c781028dc80b2a748d759fae2456f6a986da7487651a6bcbb179e8ad4fe023",
+        "retrieved_at": "2026-10-20T14:10:29.541892Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "retrieved_at": "2026-10-20T13:41:29.036076+00:00"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "licenses.code",
+          "licenses.data",
+          "notes"
+        ],
+        "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/NOTICE",
+        "sha256": "f68a64f775b1f329416f2fe294bb07b5e475893f77d1cdb5300bdb08acf95410",
+        "retrieved_at": "2026-10-20T14:09:31.550310Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "relations"
+        ],
+        "url": "https://arxiv.org/html/2609.33102v1",
+        "sha256": "3ea667f4187ba601011e5ff00c4d63676b6d9903d12b80a0d7d5dd9920f00c65",
+        "retrieved_at": "2026-10-20T13:12:28.833839+00:00"
+      }
+    ],
+    "reviewed_relations": [
+      {
+        "type": "documented_by",
+        "target_id": "arxiv:2609.33102",
+        "evidence_url": "https://arxiv.org/html/2609.33102v1"
+      }
+    ],
+    "reviewed_licenses": {
+      "code": {
+        "value": {
+          "declared": "Apache-2.0",
+          "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
+          "retrieved_at": "2026-10-20T13:41:29.036076+00:00",
+          "basis": "Complete root Apache License 2.0 text for Orbit-original code. NOTICE preserves separate third-party component terms, including MIT-vendored modules; this is not a uniform license for the entire dependency/data bundle."
+        },
+        "reason": "Record only the publisher's top-level Apache-2.0 declaration for Orbit-original code. NOTICE explicitly preserves per-component terms; neither bundled or external data nor model weights inherit this declaration. Its account of BrowserART licensing is not an independent resolution of upstream conflicting declarations.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
+          "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/NOTICE"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Platform, evaluation, reading and license limits remain explicit; no linked code or service was executed.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "b6743e3e9e5256d7afa8bb411baf246b60ba71bcfb84eda5a816fba3ddd7d78b"
+  },
+  {
+    "id": "arxiv:2610.20424",
+    "name": "BizBench: Unveiling Hidden Challenges in Deploying Long-Horizon Agents for Real-World Business",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.20424",
+    "verify_terms": [
+      "BizBench"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.20424v1"
+    ],
+    "primary_supports": [
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Sections 3.1–3.3, 4.2–4.4 and 5.1: the reconstructed environment uses documents, database states, business-tool calls and an LLM user simulator. The inspected execution protocol does not establish GUI, browser or concrete OS/terminal interaction; a portal approval is represented as a tool/state event. Need explicit interface observations/actions and evaluated interaction evidence before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
+    "reviewed_at": "2026-10-20T14:34:38Z",
+    "reviewed_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13"
+  },
+  {
+    "id": "arxiv:2610.09944",
+    "url": "https://arxiv.org/abs/2610.09944",
+    "name": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
+    "kind": "paper",
+    "summary": "Evaluates duration following, runtime forecasts and elapsed-time estimates in native agent harnesses, including OSWorld desktop tasks, with external timers, native graders and work-versus-wait analysis.",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "observability"
+    ],
+    "scope": "core",
+    "notes": "This cross-domain suite includes 16 OSWorld 2.0 tasks among 222 tasks from 18 sources. A single run per task and requested duration, provider effects and incomplete native grades limit comparisons; elapsed time is not evidence of productive work. The OSWorld task 092 video judge was skipped without an API key. The inspected repository README identifies desktop-VM timing and states that the current 222-task forecasting runs will be added; its existing forecasting code covers an earlier study, and transcript work/wait labels are not public. No code or benchmark was executed and no license was verified.",
+    "verify_terms": [
+      "AgentTime: Can Agents Estimate and Control Their Own Runtime?"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.09944v2"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "additional_evidence": [
+      {
+        "url": "https://github.com/michaelofengenden/agenttimebench",
+        "retrieved_at": "2026-10-20T15:15:05.368243+00:00",
+        "sha256": "9bef76f95b41a7ca39c6fa3276d6122e4b27e1e0bd56a777edcfd7e11e7d7342",
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "environments",
+          "notes"
+        ]
+      }
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "5424a5f9278ef276c84799a08d4e2e171ee93947a38c1d6670c36fa76dc84fe3"
+  },
+  {
+    "id": "arxiv:2610.23986",
+    "name": "BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.23986",
+    "summary": "Benchmarks agents creating editable Blender projects through shell, Python and MCP tools, judging delivered scenes with multi-view renders, task-specific rubrics and visual-quality ratings.",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "scope": "adjacent",
+    "notes": "The evaluated agents use Linux shell/Python/MCP tools and can inspect viewport screenshots; graphical CUA control and Windows/macOS are future work. Each agent is run once per task, with different Codex/Claude Code harnesses across systems. Scores combine weighted rubric satisfaction and model-rated visual quality. Tool counts include unsuccessful calls and do not establish matched compute or successful actions. No independent reproduction or artifact-release verification.",
+    "verify_terms": [
+      "Benchmarking Visual Agents for 3D Creation from Real-World References"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.23986v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "bef4399f087e484b62ff5b8dc2c283f92e0357b94c93b464b86fd97fe7b069cb"
+  },
+  {
+    "id": "arxiv:2610.13092",
+    "summary": "Evaluates Jev as a bounded action selector inside three AndroidWorld agents and two text-based ALFWorld agents, separating decision savings from task success, recovery and resources per delivered outcome.",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "evaluation",
+      "mobile-navigation",
+      "self-reflection"
+    ],
+    "scope": "core",
+    "notes": "The mobile evaluation uses text UI observations and one fixed instance for each of 116 AndroidWorld task types; three repeats share seed 0. Five agent families use different budgets, with candidate-interface and tool-call granularity changes in some variants. Reported costs use fixed experimental prices, and outcome-selected trace labels are not population failure rates. Faster selection does not imply faster or more reliable task completion. Selected sections were source-read; no independent reproduction.",
+    "name": "When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.13092",
+    "verify_terms": [
+      "An Empirical Study of Jev in Agent Workflows"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.13092v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "3db7474953cbe5a3052fb22793038f2383bdd0e7c775af06494a5e8501646d18"
+  },
+  {
+    "id": "arxiv:2609.32511",
+    "summary": "ShareMem consolidates reusable experience across users while keeping preference retrieval user-bound; its web evaluation predicts target elements and actions on recorded Mind2Web states.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "web-navigation",
+      "action-prediction",
+      "evaluation"
+    ],
+    "scope": "core",
+    "notes": "Main Mind2Web evaluation uses 252 recorded tasks assigned to 20 simulated users, frozen demonstration-derived memory and task-macro step metrics; it is not a live-browser completion test. The main split withholds same-site local experience, and sharing gains shrink when local coverage rises. Mind2Web has no preference channel; preference claims come from separate service and coding settings. User-bound retrieval is not a demonstrated privacy or security guarantee. Selected sections were source-read; no independent reproduction.",
+    "name": "Learning from Others, Acting for You: Cross-User Memory Sharing for LLM Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.32511",
+    "verify_terms": [
+      "Learning from Others, Acting for You: Cross-User Memory Sharing for LLM Agents"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.32511v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "ce7210dccecb2896202639e6f7be41876fee20de1135b0d23278cead2d695339"
+  },
+  {
+    "id": "arxiv:2610.18579",
+    "url": "https://arxiv.org/abs/2610.18579",
+    "name": "Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops",
+    "kind": "paper",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "interaction-history"
+    ],
+    "summary": "Pairs factual probes with next-action choices on frozen agent traces, including Mind2Web, to diagnose reading-decision gaps without closed-loop execution.",
+    "notes": "Adjacent diagnostic research across simulators, policies, tools, coding and an offline Mind2Web subset. Models choose among supplied admissible actions; they do not generate actions or execute a closed-loop browser policy in the reported evaluation. The paired probes measure selected visible facts, not complete understanding or internal causation. Pooled results are not a web-only leaderboard, and the paper reports coverage limits and label-sensitivity analyses. No benchmark release, code, data or weights were independently inspected.",
+    "verify_terms": [
+      "Reading Right, Acting Wrong"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.18579v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.18579v1",
+          "retrieved_at": "2026-10-20T15:08:55Z",
+          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses."
+        },
+        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.18579v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "bcbc640d1e732ba0415a9755bce120a811a13a2ba7fba3e58a167b3a9111c2a6"
+  },
+  {
+    "id": "arxiv:2610.02542",
+    "url": "https://arxiv.org/abs/2610.02542",
+    "name": "How To Train Your World Model: Fine-tuning vs RAG for LM-based World Modeling",
+    "kind": "paper",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "world-models",
+      "planning",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Compares fine-tuned, retrieval-based and hybrid language-model world models for next-observation prediction and action selection in text environments including WebShop.",
+    "notes": "Adjacent cross-domain study with WebShop as its web evaluation. WebShop uses text-rendered search/product pages and an explicit valid-action menu, not screenshot control or live purchases. A frozen policy proposes five actions; a world model predicts their next observations and the policy scores them before one is executed in the simulator. Utility is normalized environment reward, while fidelity uses a model judge; neither is a universal GUI task-success rate. Fine-tuning and retrieval use collected training experience; the hybrid masks same-episode retrieval, which does not establish general contamination freedom. The retained Atom and v1 HTML abstract wording differs; original bibliographic metadata and its abstract digest are preserved.",
+    "verify_terms": [
+      "How To Train Your World Model"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.02542v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.02542v1",
+          "retrieved_at": "2026-10-20T15:08:56Z",
+          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses."
+        },
+        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.02542v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "d8c22c6b3f07d4156c38af9dd7ca7c06a5d0a11889a7350d821a020e21604590"
+  },
+  {
+    "id": "arxiv:2610.14966",
+    "url": "https://arxiv.org/abs/2610.14966",
+    "name": "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition",
+    "kind": "paper",
+    "verify_terms": [
+      "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.14966v1"
+    ],
+    "primary_supports": [
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after exact-v1 Sections 2–4 and Appendices A.1, B.1–B.2, C and E.5: constructed business environments expose operations and persistent state through tools. The main actor has no terminal, arbitrary code execution or personal workspace; fixed scripts use a dedicated tool. The supplementary Codex experiment disables shell, web and multi-agent execution. The inspected protocol does not establish GUI, browser or concrete OS interaction. Need evaluated interface observations/actions before core or adjacent inclusion. Preserve metadata; this is not a scope exclusion.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "cabd4678c7c477c6b68cc0518f0a7258833f797e902bc1824485a2c67c66b3ff"
+  },
+  {
+    "id": "arxiv:2610.14306",
+    "name": "Plottery: A Code-Integrated GUI for Matplotlib",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.14306",
+    "verify_terms": [
+      "Plottery: A Code-Integrated GUI for Matplotlib"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.14306v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after complete v1 main text (Sections I–VII) and Appendix VII-A: Plottery is a human-operated Jupyter plotting interface with direct manipulation, editable code and a prompt-to-code assistant. Its evaluation studies people switching modalities; the inspected method does not establish an agent observing or operating the GUI, or a CUA execution/recording interface. Need explicit agent interaction or directly used CUA-support evidence before core/adjacent inclusion. Preserve the metadata record; no scope exclusion is proposed.",
+    "reviewed_at": "2026-10-20T15:25:00Z",
+    "reviewed_sha256": "ded3ffd311f782aab9fb02c2b233546ee903300a22657850d6ba853e9c22dcd4"
+  },
+  {
+    "id": "arxiv:2610.15738",
+    "name": "Visible but Not Avoided: State-Dependent Re-Proposal of Rejected Candidates in Catalog-Based LLM Optimization Loops",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.15738",
+    "summary": "Studies repeated rejected edits while optimizing a screenshot-only GUI agent, contrasting static probes with reached loop states and testing how rejection wording changes subsequent edit proposals.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "training-free"
+    ],
+    "scope": "core",
+    "notes": "The downstream test uses one screenshot-only agent, nine synthetic apps and 60 cached development items, with TAP-tag or text-answer outputs; this is not demonstrated live-app completion. Two catalogs reword the same 40 edits. Re-proposal effects do not establish internal causal mechanisms or task-success gains. Main serving providers were unpinned; rationale labels came from LLM annotators. No independent reproduction.",
+    "verify_terms": [
+      "Catalog-Based LLM Optimization Loops"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.15738v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license limits remain explicit; no linked model, code or benchmark was executed.",
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.15738v1",
+          "retrieved_at": "2026-10-20T15:31:34.620763Z",
+          "basis": "The retained version-specific arXiv HTML infobox explicitly declares License: CC BY 4.0 for this document."
+        },
+        "reason": "Publisher document declaration only; no code, data or weights license inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.15738v1"
+        ]
+      }
+    },
+    "reviewed_at": "2026-10-20T16:09:15Z",
+    "reviewed_sha256": "7ec947ceb462b5fd23a4a67df64e931e427224ef721b681d3fc92c1d4379449f"
+  },
+  {
+    "id": "arxiv:2609.29892",
+    "name": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.29892",
+    "summary": "Trains a mobile planner with supervised trajectories and competence-adaptive RL, then couples typed tool execution with memory, skills and offline model-harness refinement.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "data-generation",
+      "reinforcement-learning",
+      "memory",
+      "mobile-navigation",
+      "efficiency"
+    ],
+    "scope": "core",
+    "notes": "Primarily typed tool actions and structured feedback, not pixel-coordinate GUI control; backends combine programmatic sandboxes, LLM simulation and selected real-device sessions. No specific OS is established. Model/harness updates are reviewed offline, not autonomous serving-time changes. Co-evolution scores use an evolve/development set; output-cost estimates exclude input, tools, devices and harness processing. Memory comparisons differ in history access and processing cost; user authorization relies on trusted upstream services. No independent reproduction.",
+    "verify_terms": [
+      "Hybrid Mobile Environment Infrastructure"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.29892v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2609.29892v1",
+          "retrieved_at": "2026-10-20T15:43:20.402537Z",
+          "basis": "The exact-v1 arXiv HTML infobox (#license-tr) declares License: CC BY 4.0 for this paper. This declaration is document-only."
+        },
+        "reason": "Record the paper-specific arXiv document declaration; it does not establish code, data or model-weight permissions.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2609.29892v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license limits remain explicit; no linked model, code or benchmark was executed.",
+    "reviewed_at": "2026-10-20T16:09:15Z",
+    "reviewed_sha256": "d4385231cea2965a48895eeebd2dd6000265dd7b43731a0ad88b0373a21d0308"
+  },
+  {
+    "id": "arxiv:2610.14855",
+    "name": "PEAM: On-device Communication Agent for Personalized, Efficient and Autonomous Mobile Network Configuration",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.14855",
+    "verify_terms": [
+      "On-device Communication Agent"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.14855v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Methodology, Evaluation and Appendices A (On-Device Deployment), B and D. PEAM generates background network-configuration rules and reports real cellular/Wi-Fi switching on Android 16; active rules execute after explicit user acceptance. The inspected work does not establish GUI observation/action control or a component actually used by a CUA workflow. Native network switching alone does not establish that broader role. Need direct interface/control or CUA-support evidence before inclusion. Preserve metadata; no permanent exclusion is proposed.",
+    "reviewed_at": "2026-10-20T16:09:15Z",
+    "reviewed_sha256": "7e76afb27048fc502646c3ca1cc87a52c6ba1b4e041f4b5c0cf9fbe3bd24e5a9"
+  },
+  {
+    "id": "arxiv:2610.18067",
+    "name": "WorkRover: Scaling Long-Horizon Cowork Agent Training Via Recursive Environment Evolution",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.18067",
+    "summary": "Synthesizes resettable workspaces with files, application observations and skills; repairs environment incompatibilities and trains long-task agents using verifier-linked turn credit.",
+    "scope": "core",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "data-generation",
+      "long-horizon",
+      "evaluation",
+      "reward-models",
+      "reinforcement-learning",
+      "workflow"
+    ],
+    "notes": "App WorkEnvs expose UI observations and interaction interfaces alongside file and tool workflows; no specific operating system or pixel-control success is established. Verifier shaping depends on deterministic-check and dependency coverage. External reference scores use differing harnesses or subsets; GDPval Elo is not comparable to percentage metrics. A successful-trace analysis subset is separate from online RL outcomes. No implementation release or independent reproduction was verified.",
+    "verify_terms": [
+      "Scaling Long-Horizon Cowork Agent Training Via Recursive Environment Evolution"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.18067v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "scope",
+      "environments",
+      "topics",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.18067v1",
+          "retrieved_at": "2026-10-20T19:02:20Z",
+          "basis": "The exact-v1 arXiv HTML infobox explicitly declares CC BY 4.0 for this paper."
+        },
+        "reason": "Document declaration only; code, data and weights permissions are not inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.18067v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "f1fbdd2ecb2a54b7723372118e2b0ac818420f3a3dd280c2486c8e064cf486d6"
+  },
+  {
+    "id": "arxiv:2610.19384",
+    "name": "MMA-SafetyBench: A Benchmark for Multimodal Agent Safety Evaluation",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.19384",
+    "summary": "Builds trajectory-guided visual-injection tests for web, desktop and mobile observations, separating target-matching action predictions from broader semantic compromise.",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "grounding"
+    ],
+    "scope": "core",
+    "notes": "ASR measures predicted coordinates inside an annotated target or compromised generated content; actual clicks, environment changes and downstream harm are not verified. SCR additionally counts adopted adversarial intent or task/schema disruption. Clean-task and attacked-trajectory denominators differ, including 42 clean desktop tasks versus 209 adversarial desktop trajectories. Payloads and injection points are fixed, and neutral prompts change both compliance cues and instruction-priority guidance. GPT-5 judging has a 300-trajectory human-label check, with borderline disagreements. Android-style mobile dialogs do not establish an Android runtime. Code/data links were identified but not inspected; no independent reproduction.",
+    "verify_terms": [
+      "MMA-SafetyBench"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.19384v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.19384v1",
+          "retrieved_at": "2026-10-20T19:02:16.329923+00:00",
+          "basis": "The retained exact-v1 arXiv HTML infobox explicitly declares License: CC BY 4.0 for this document."
+        },
+        "reason": "Paper-specific document declaration only; no code, data or weights permissions are inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.19384v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "ca995ec330f62a43d3d4fbbf28dfe83c5fa8b05f5c1e446929493409760268d1"
+  },
+  {
+    "id": "arxiv:2610.19366",
+    "name": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2610.19366",
+    "summary": "Surveys multimodal memory using representation and management axes, distinguishing fixed-policy updates from policy evolution and comparing GUI memory evaluation with other modalities.",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "memory",
+      "evaluation",
+      "interaction-history"
+    ],
+    "scope": "adjacent",
+    "notes": "A broad literature synthesis spanning images, video, audio, GUI and embodied settings. Its GUI section compares interface-state retention, action outcomes, cross-session reuse and visual evidence, but the paper does not provide a new GUI-agent experiment. Taxonomy corpus counts and benchmark classifications are authors' annotations, not independently audited field coverage. Updating stored content alone does not establish the survey's self-evolving-policy tier; endpoint task success does not isolate memory use. Lifecycle, resource-budget and provenance recommendations are proposed evaluation directions rather than demonstrated guarantees. Platform facets stay unspecified; cited systems and releases were not independently verified.",
+    "verify_terms": [
+      "The Evolution of Multimodal Agent Memory"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.19366v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2610.19366v1",
+          "retrieved_at": "2026-10-20T19:02:22.864948+00:00",
+          "basis": "The retained exact-v1 arXiv HTML infobox explicitly declares License: CC BY 4.0 for this document."
+        },
+        "reason": "Paper-specific document declaration only; no code, data or weights permissions are inferred.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2610.19366v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "308796868bf9b1cb042bc6008e1e6f4ba6e776a2d4e13d40ad5684b477861563"
+  },
+  {
+    "id": "arxiv:2609.31364",
+    "name": "OpenVAM: Open-World Visual Attention Modeling with VLMs",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2609.31364",
+    "summary": "Combines dense saliency prediction with explanations of attended elements, including webpage layouts; evaluates human-attention agreement and textual rationales rather than agent actions.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design",
+      "evaluation",
+      "data-generation"
+    ],
+    "scope": "adjacent",
+    "notes": "Static human-attention modeling on U-EYE webpage screenshots, with FIWI held out from training; no live-browser, agent-action or task-success evaluation. Gemini-generated reference rationales are expert-checked, and JScore compares generated text with references; human validation covers a separate 100-image subset. Reference text and heatmap alignment do not establish causal explanations of gaze or temporal scanpaths. Several baseline scores come from prior papers. Code/data/weight releases and licenses were not verified; no independent reproduction.",
+    "verify_terms": [
+      "Open-World Visual Attention Modeling with VLMs"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2609.31364v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "licenses.document"
+    ],
+    "reviewed_licenses": {
+      "document": {
+        "value": {
+          "declared": "CC-BY-4.0",
+          "url": "https://arxiv.org/html/2609.31364v1",
+          "retrieved_at": "2026-10-20T19:01:29.156954Z",
+          "basis": "The exact-v1 arXiv HTML infobox (#license-tr) declares License: CC BY 4.0 for this paper document."
+        },
+        "reason": "Document declaration only. The paper does not establish code, model-weight or underlying dataset permissions through this license.",
+        "evidence_urls": [
+          "https://arxiv.org/html/2609.31364v1"
+        ]
+      }
+    },
+    "editorial_reviewed": true,
+    "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "cd4ba28778b725c63f4a7329f683b2a287db2e46ed228a0d47006fcd95bbce80"
+  },
+  {
+    "id": "arxiv:2610.17953",
+    "name": "Agent-Reflex: Teaching Language Agents to Act Reflectively",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.17953",
+    "verify_terms": [
+      "Teaching Language Agents to Act Reflectively"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.17953v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after v1 Sections3.1,4.1 and AppendicesB,D.2,D.5,F. Evaluation uses standardized MCP function calls and simulated service workflows; GUI/browser/OS action evaluation is not established. Construction agents use browser/OS tools, and failure mining includes file/OS benchmarks, but these are support stages rather than reported CUA policy results. Need direct interface interaction or a demonstrated CUA consumer before core/adjacent annotation. Preserve metadata; no permanent exclusion.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "2a386715c04ade524c872cf66ab1cd8db1a2f6c787991cbd7fc59b93587cd9ba"
+  },
+  {
+    "id": "arxiv:2610.16260",
+    "name": "ScreenASR-Bench: A Tiered Benchmark for Speech Recognition with Visual Context",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.16260",
+    "verify_terms": [
+      "A Tiered Benchmark for Speech Recognition with Visual Context"
+    ],
+    "evidence_urls": [
+      "https://arxiv.org/html/2610.16260v1"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "scope"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion.",
+    "reviewed_at": "2026-10-20T19:29:44Z",
+    "reviewed_sha256": "fed38272c6c64f56e5675f0df9a5091ce38e4b9f92f1de4878c96dfcff9b1e99"
+  },
+  {
     "name": "ClawBench: Can AI Agents Complete Everyday Online Tasks?",
     "kind": "paper",
     "url": "https://arxiv.org/abs/2604.08523",
@@ -63687,6 +66653,33 @@
     "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experiments, reported performance and artifact availability have not been independently reproduced.",
     "reviewed_sha256": "e6011e7f11aab2272d1b5a38c317bfbe2eae9629258c726c7769985c5c566adb",
     "reviewed_at": "2026-10-18T11:55:00Z"
+  },
+  {
+    "name": "WebWorld: The Browser as a World Model for Self-Improving Web Code",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.30530",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow",
+      "robustness",
+      "data-generation"
+    ],
+    "scope": "adjacent",
+    "summary": "Uses typed browser interaction contracts to accept web-code improvements only when target progress and previously verified capabilities are preserved. Accepted transitions supply self-improvement data.",
+    "verify_terms": [
+      "WebWorld: The Browser as a World Model for Self-Improving Web Code"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2212.04661%2C2508.20151%2C2604.05117%2C2604.08523%2C2605.08703%2C2605.30288%2C2606.06113%2C2606.06741%2C2606.11042%2C2606.11700%2C2606.18195%2C2607.04733%2C2607.12463%2C2607.15933%2C2608.14015%2C2608.17800%2C2608.19583%2C2608.30530%2C2608.31100%2C2608.31111%2C2609.00365%2C2609.01437%2C2609.07784%2C2609.34151%2C2609.36388%2C2610.02488%2C2610.20951%2C2610.21046&max_results=28"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent browser-backed artifact validation, not a GUI navigation benchmark or original-source recovery. Distinct from WebWorld: A Large-Scale World Model for Web Agent Training. Results have not been independently reproduced.",
+    "read_basis": "Original arXiv Atom title, complete abstract, authors and version snapshot; checked separately from the unrelated WebWorld web simulator.",
+    "reviewed_sha256": "f880f8415dd6faa6caa8d2a182345e7d7ed5e05d6812463a0b8259ef66893949",
+    "reviewed_at": "2026-10-20T02:51:27.624179+00:00"
   },
   {
     "name": "ClawBench",
@@ -63824,32 +66817,5 @@
     ],
     "reviewed_sha256": "61bad2a8e6ab56df159237d75f1081e1246b294183b31ef7abe47193ac26b541",
     "reviewed_at": "2026-10-18T11:55:00Z"
-  },
-  {
-    "name": "WebWorld: The Browser as a World Model for Self-Improving Web Code",
-    "kind": "paper",
-    "url": "https://arxiv.org/abs/2608.30530",
-    "environments": [
-      "web"
-    ],
-    "topics": [
-      "evaluation",
-      "workflow",
-      "robustness",
-      "data-generation"
-    ],
-    "scope": "adjacent",
-    "summary": "Uses typed browser interaction contracts to accept web-code improvements only when target progress and previously verified capabilities are preserved. Accepted transitions supply self-improvement data.",
-    "verify_terms": [
-      "WebWorld: The Browser as a World Model for Self-Improving Web Code"
-    ],
-    "evidence_urls": [
-      "https://export.arxiv.org/api/query?id_list=2212.04661%2C2508.20151%2C2604.05117%2C2604.08523%2C2605.08703%2C2605.30288%2C2606.06113%2C2606.06741%2C2606.11042%2C2606.11700%2C2606.18195%2C2607.04733%2C2607.12463%2C2607.15933%2C2608.14015%2C2608.17800%2C2608.19583%2C2608.30530%2C2608.31100%2C2608.31111%2C2609.00365%2C2609.01437%2C2609.07784%2C2609.34151%2C2609.36388%2C2610.02488%2C2610.20951%2C2610.21046&max_results=28"
-    ],
-    "editorial_reviewed": true,
-    "notes": "Adjacent browser-backed artifact validation, not a GUI navigation benchmark or original-source recovery. Distinct from WebWorld: A Large-Scale World Model for Web Agent Training. Results have not been independently reproduced.",
-    "read_basis": "Original arXiv Atom title, complete abstract, authors and version snapshot; checked separately from the unrelated WebWorld web simulator.",
-    "reviewed_sha256": "f880f8415dd6faa6caa8d2a182345e7d7ed5e05d6812463a0b8259ef66893949",
-    "reviewed_at": "2026-10-20T02:51:27.624179+00:00"
   }
 ]

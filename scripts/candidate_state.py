@@ -227,6 +227,9 @@ def _history(baseline, state):
     if (len(state['runs']) != len(old['runs']) + 1 or not export.equal_json(state['runs'][:-1], old['runs'])
             or not state['runs'][-1]['finished_at'] or state['runs'][-1]['status'] == 'running'):
         raise CandidateStateError('Incremental update requires one appended, completed round')
+    if ('repair_epoch_ids' in state['runs'][-1]
+            and state['runs'][-1].get('epoch_id') != state.get('current_epoch_id')):
+        raise CandidateStateError('Incremental run does not name the current query frontier')
     for key in ('receipts', 'inputs'):
         if not export.equal_json(state[key][:len(old[key])], old[key]):
             raise CandidateStateError('Incremental update changed retained ' + key)
@@ -243,10 +246,14 @@ def _history(baseline, state):
     progress_keys = {'status', 'next_page', 'reported_total', 'total_changed', 'incomplete_results_seen',
                      'seen_repository_ids', 'rejected_rows', 'last_attempt'}
     old_queries = {q['id']: q for q in old['queries']}
+    appended_run = state['runs'][-1]
+    scoped_run = 'repair_epoch_ids' in appended_run
     for reset in resets.values():
         prior = old_queries.get(reset['query_id'])
         if (prior is None or prior['kind'] != 'search' or prior['status'] not in {'partial_results', 'partial_api_window'}
                 or reset['receipt_boundary'] != len(old['receipts'])
+                or (scoped_run or 'run_id' in reset) and reset.get('run_id') != appended_run['id']
+                or scoped_run and scan.timestamp(reset['restarted_at']) != scan.timestamp(appended_run['started_at'])
                 or not export.equal_json(reset['previous'], {k: prior[k] for k in progress_keys})):
             raise CandidateStateError('Query recheck is not bound to the prior cursor and receipt boundary')
     for query in old['queries']:

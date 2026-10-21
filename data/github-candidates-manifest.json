@@ -1,20 +1,20 @@
 {
   "active_catalog_context": {
-    "records": 3193,
+    "records": 3234,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "f3651124da8fca145288efe83b584b4e298af6a7aa807b5b53236e6d7f8d13ad"
+    "sha256": "2c4d85731ff658d645ce31e57f506df489da3f2d4dd53b219696536886302765"
   },
-  "checkpoint_state_sha256": "eb5adde0a563c0b602d70855a89b6edaea1414a0acc781dab7c140c1f1b3f9d1",
+  "checkpoint_state_sha256": "91d139c05d0f885b2a254464636c5b33656845ef40955f5f87637743d8364d7d",
   "count": {
     "unit": "repositories",
-    "value": 7243
+    "value": 9235
   },
   "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
   "export": {
-    "bytes": 15334270,
+    "bytes": 25703412,
     "file": "github-candidates.jsonl",
     "format": "JSONL",
-    "sha256": "3da44cc3ae19e5fc09f8621423fd0382529866d055aca3fc90c820bb272a1c23"
+    "sha256": "4a6f124222e2bdb11937fa36b06d4fb433cd2a563c931d0778eac67099a99e55"
   },
   "input_fingerprints": [
     {
@@ -116,14 +116,239 @@
         }
       },
       "id": "c4d455c04735fa84a6f7f6d34d9c763e53d7971f45d0bda01609dfcbdc9cdd8a"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5030768,
+          "sha256": "62f6f0593721c49819bebc452809cee46196b8e217df33ad74e2fb0c7f920faf"
+        },
+        "catalog.jsonl": {
+          "bytes": 8293330,
+          "sha256": "35064aaf3459f4e4353684edf9be12fef156ba7f098181742114d5eeac3710e5"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1792527,
+          "sha256": "c0ec76400d53449d567f7bd12258b133102c255cbb39d251ffc999cdcb814cb7"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "7e1244c0ad41c489c54a0576ba12f2e843aae7d917bd68cc14066da464be12b3"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5030768,
+          "sha256": "62f6f0593721c49819bebc452809cee46196b8e217df33ad74e2fb0c7f920faf"
+        },
+        "catalog.jsonl": {
+          "bytes": 8318084,
+          "sha256": "8b920a2a730c58008b17f219992c5ba00158a9c33a2b10bee3d61e4fc93fe955"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1792527,
+          "sha256": "c0ec76400d53449d567f7bd12258b133102c255cbb39d251ffc999cdcb814cb7"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "024d5a5cad975c080d026d2a1729f3c3d7c75d1179cb6fb7c2215cec826fdaae"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5030768,
+          "sha256": "62f6f0593721c49819bebc452809cee46196b8e217df33ad74e2fb0c7f920faf"
+        },
+        "catalog.jsonl": {
+          "bytes": 8320445,
+          "sha256": "6145afd5a0ca9359a89a6c6d765cb251f34fcbffd83fd9d70e3ce2542febe497"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1798736,
+          "sha256": "8eece6741d921abaff650ac85525ced1111d1ca7ca59acf5e212cc12f0c7906e"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "beb4963be6257cd3fbcf704276fc3b00e6cf1fd2dcd548df4f218ba7ba154143"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5030768,
+          "sha256": "62f6f0593721c49819bebc452809cee46196b8e217df33ad74e2fb0c7f920faf"
+        },
+        "catalog.jsonl": {
+          "bytes": 8328148,
+          "sha256": "9beabb10c42308ce91d760338d976f91404af60a96ba9a278d2d3abe78623803"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1806506,
+          "sha256": "6f8ae0ba0e5987fd37c25c9ca728cb8b6582dc156b15c4bc5a1fee3cd29f1f69"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "81d1af2c4cb9ba5e42aa1a137b45c8e216e9ae9d66fca82078c98498702c2bea"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5030768,
+          "sha256": "62f6f0593721c49819bebc452809cee46196b8e217df33ad74e2fb0c7f920faf"
+        },
+        "catalog.jsonl": {
+          "bytes": 8334529,
+          "sha256": "814e195e6166c1d8700f20a68e649cf5ca7a82611c5f106bce9c5ef2e7995a00"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1812736,
+          "sha256": "3a2915f010231d2f4d48cc90369c375db760d2abafe7acca2522961e233064c4"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "67265fe6acbad6b33800f27447ef5ef8cae27d03a3de84bab09e6f7e81fb911d"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5030768,
+          "sha256": "62f6f0593721c49819bebc452809cee46196b8e217df33ad74e2fb0c7f920faf"
+        },
+        "catalog.jsonl": {
+          "bytes": 8336144,
+          "sha256": "fd71133ba3ad1174d3c34ce5d4b6811076c14507f71ac884bc1aa23d6f357736"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1814982,
+          "sha256": "45b136bcc8b8a8da043b3e29f148f370ba1486a70431199aadcbeb58ad98f901"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "fa9a961b11aed51e249a1cc85b00d3af5e83e3856a72a0252b787fc460d2ba96"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5036010,
+          "sha256": "783f6f0a9eed05bc65372e7190e3b1e30a35d10cf9eb7164e21b372cc40cf8c3"
+        },
+        "catalog.jsonl": {
+          "bytes": 8380153,
+          "sha256": "16acb84ef7884a74fde148eb44bd47c498fef731c7ae51d991626f60b90cb6ed"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1823068,
+          "sha256": "e51bf0256056738255181c2936377d65450c0cd87b1b2670c3150b567471e157"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "9ea9c6ecd1d4c79ac0ad13bcb595799ea3c669ae5f757bf5d66d6aebdf3e2fb7"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5037944,
+          "sha256": "33a393658dc6847f6bde7fc10459f85ec577751ce508be5885bc1ab194cb92f3"
+        },
+        "catalog.jsonl": {
+          "bytes": 8422274,
+          "sha256": "e15762fe18ea6f60fb08408de7b4d5c44e87da0e3a282f9e963e1a9eb6ffde24"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1832732,
+          "sha256": "b05f2ccf0a3be5e780f1def4dcbb600ebc4f0fb8c3989feb26a40730bc6dec47"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "6336caca3fcc440343d942b8f2da3d2c658d385f67453be92ee5e827fb92d588"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5037944,
+          "sha256": "e79a2f865a3c545cf7229d1cd1f42ef45347c88beb21900c80d001ba5477abc1"
+        },
+        "catalog.jsonl": {
+          "bytes": 8434167,
+          "sha256": "2c4d85731ff658d645ce31e57f506df489da3f2d4dd53b219696536886302765"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1836286,
+          "sha256": "69b36c4ae56e9c5ffc486429f260061416f1c03cafab293126154190a0f9b718"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "8a79ce52275e25416e75be069a18db51cebab495768ff5c4c1711b37d221af9e"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
-  "observation_snapshot_sha256": "3da44cc3ae19e5fc09f8621423fd0382529866d055aca3fc90c820bb272a1c23",
+  "observation_snapshot_sha256": "4a6f124222e2bdb11937fa36b06d4fb433cd2a563c931d0778eac67099a99e55",
   "observed_from": "2026-10-18T13:02:50.777197+00:00",
-  "observed_through": "2026-10-20T02:36:54.899767+00:00",
+  "observed_through": "2026-10-20T19:14:56.883446+00:00",
   "privacy": {
-    "checked_records": 7243,
+    "checked_records": 9235,
     "omitted_fields": [],
     "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
   },
@@ -132,7 +357,7 @@
   "scan": {
     "configuration": {
       "created_after": "2008-01-01",
-      "created_before": "2026-10-18",
+      "created_before": "2026-10-20",
       "topics": [
         "computer-use",
         "gui-agent",
@@ -142,10 +367,18 @@
         "browser-agent",
         "browser-agents",
         "browser-automation",
-        "android-automation"
+        "android-automation",
+        "computer-use-agent",
+        "computer-use-agents",
+        "gui-grounding",
+        "browser-use",
+        "web-agent",
+        "web-agents",
+        "desktop-agent",
+        "mobile-agent"
       ]
     },
-    "current_epoch_id": "epoch:7e5eb19df303a20f98927f2f",
+    "current_epoch_id": "epoch:1998b271ab440c5dc4b999a0",
     "epochs": [
       {
         "configuration": {
@@ -198,16 +431,152 @@
           "search:3dd0d753730dd39b43467d5d"
         ],
         "source_state_sha256": null
+      },
+      {
+        "configuration": {
+          "created_after": "2026-10-18",
+          "created_before": "2026-10-20",
+          "topics": [
+            "computer-use",
+            "gui-agent",
+            "gui-agents",
+            "gui-automation",
+            "desktop-automation",
+            "browser-agent",
+            "browser-agents",
+            "browser-automation",
+            "android-automation"
+          ]
+        },
+        "created_at": "2026-10-20T10:07:56.142010+00:00",
+        "id": "epoch:8005a1b9c1eda46667376643",
+        "previous_epoch_id": "epoch:7e5eb19df303a20f98927f2f",
+        "reason": "frontier_continuation",
+        "root_query_ids": [
+          "search:78f28c6993e7b74e363f0dd8",
+          "search:f0a3ef35c117e32733666e25",
+          "search:a8b5a438c036e3898cebdd9a",
+          "search:c4fb32d2cfd8e9f9fe7ad91b",
+          "search:3c1b8282c155969869a83924",
+          "search:f44eb5d8254b128b4bc889bd",
+          "search:5060228d150e77a91d4cd41a",
+          "search:7883c6b0bfb148897c2fecbc",
+          "search:fb35324ccb367a0b8d81a175"
+        ],
+        "source_state_sha256": null
+      },
+      {
+        "configuration": {
+          "created_after": "2008-01-01",
+          "created_before": "2026-10-20",
+          "topics": [
+            "computer-use",
+            "gui-agent",
+            "gui-agents",
+            "gui-automation",
+            "desktop-automation",
+            "browser-agent",
+            "browser-agents",
+            "browser-automation",
+            "android-automation",
+            "computer-use-agent",
+            "computer-use-agents",
+            "gui-grounding",
+            "browser-use",
+            "web-agent",
+            "web-agents",
+            "desktop-agent",
+            "mobile-agent"
+          ]
+        },
+        "created_at": "2026-10-20T11:03:00.930030+00:00",
+        "id": "epoch:1998b271ab440c5dc4b999a0",
+        "previous_epoch_id": "epoch:8005a1b9c1eda46667376643",
+        "reason": "topic_expansion",
+        "root_query_ids": [
+          "search:78f28c6993e7b74e363f0dd8",
+          "search:f0a3ef35c117e32733666e25",
+          "search:a8b5a438c036e3898cebdd9a",
+          "search:c4fb32d2cfd8e9f9fe7ad91b",
+          "search:3c1b8282c155969869a83924",
+          "search:f44eb5d8254b128b4bc889bd",
+          "search:5060228d150e77a91d4cd41a",
+          "search:7883c6b0bfb148897c2fecbc",
+          "search:fb35324ccb367a0b8d81a175",
+          "search:c4a269ead0a1de7364d2337a",
+          "search:53c6d7afca1d0bf0d7a97c55",
+          "search:5dc78a0529432a5f2ea1195f",
+          "search:61e704c2c0fa326ed32b0392",
+          "search:7ba37b8aec055b86543566e9",
+          "search:201d6c6aabed7d7a49a91532",
+          "search:7a9b210b0f8ffb643970b059",
+          "search:2787a02fa9fcc327945f6897"
+        ],
+        "source_state_sha256": null
       }
     ],
     "global_completeness_established": false,
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:8a79ce52275e25416e75be069a18db51cebab495768ff5c4c1711b37d221af9e",
+        "input_id": "8a79ce52275e25416e75be069a18db51cebab495768ff5c4c1711b37d221af9e",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
+        "id": "existing:6336caca3fcc440343d942b8f2da3d2c658d385f67453be92ee5e827fb92d588",
+        "input_id": "6336caca3fcc440343d942b8f2da3d2c658d385f67453be92ee5e827fb92d588",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:9ea9c6ecd1d4c79ac0ad13bcb595799ea3c669ae5f757bf5d66d6aebdf3e2fb7",
+        "input_id": "9ea9c6ecd1d4c79ac0ad13bcb595799ea3c669ae5f757bf5d66d6aebdf3e2fb7",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:fa9a961b11aed51e249a1cc85b00d3af5e83e3856a72a0252b787fc460d2ba96",
+        "input_id": "fa9a961b11aed51e249a1cc85b00d3af5e83e3856a72a0252b787fc460d2ba96",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:67265fe6acbad6b33800f27447ef5ef8cae27d03a3de84bab09e6f7e81fb911d",
+        "input_id": "67265fe6acbad6b33800f27447ef5ef8cae27d03a3de84bab09e6f7e81fb911d",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:81d1af2c4cb9ba5e42aa1a137b45c8e216e9ae9d66fca82078c98498702c2bea",
+        "input_id": "81d1af2c4cb9ba5e42aa1a137b45c8e216e9ae9d66fca82078c98498702c2bea",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:beb4963be6257cd3fbcf704276fc3b00e6cf1fd2dcd548df4f218ba7ba154143",
+        "input_id": "beb4963be6257cd3fbcf704276fc3b00e6cf1fd2dcd548df4f218ba7ba154143",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:024d5a5cad975c080d026d2a1729f3c3d7c75d1179cb6fb7c2215cec826fdaae",
+        "input_id": "024d5a5cad975c080d026d2a1729f3c3d7c75d1179cb6fb7c2215cec826fdaae",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:7e1244c0ad41c489c54a0576ba12f2e843aae7d917bd68cc14066da464be12b3",
+        "input_id": "7e1244c0ad41c489c54a0576ba12f2e843aae7d917bd68cc14066da464be12b3",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
         "id": "existing:c4d455c04735fa84a6f7f6d34d9c763e53d7971f45d0bda01609dfcbdc9cdd8a",
         "input_id": "c4d455c04735fa84a6f7f6d34d9c763e53d7971f45d0bda01609dfcbdc9cdd8a",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:0d95df4e7362ceedb3339091d4332ec40598057261c6e4c4f831855f09a4ce48",
@@ -414,7 +783,7 @@
         "kind": "search",
         "parent_id": "search:1fcf787c46b4c2749f818972",
         "reported_total": 801,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -494,7 +863,7 @@
         "kind": "search",
         "parent_id": "search:8c6132a1109bdece66ea6a2c",
         "reported_total": 646,
-        "status": "partial_results",
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -503,8 +872,8 @@
         "id": "search:d0d91d8e69c0bc34770055b3",
         "kind": "search",
         "parent_id": "search:8c6132a1109bdece66ea6a2c",
-        "reported_total": 737,
-        "status": "pending",
+        "reported_total": 739,
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -543,8 +912,8 @@
         "id": "search:2da8704d708bbc88a4ce2ef2",
         "kind": "search",
         "parent_id": "search:4a46c8ae62f3554b372f8156",
-        "reported_total": 709,
-        "status": "pending",
+        "reported_total": 710,
+        "status": "observed_pages_exhausted",
         "topic": "computer-use"
       },
       {
@@ -554,7 +923,7 @@
         "kind": "search",
         "parent_id": "search:81e64cf55236719b185be42d",
         "reported_total": 448,
-        "status": "partial_results",
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -564,7 +933,7 @@
         "kind": "search",
         "parent_id": "search:81e64cf55236719b185be42d",
         "reported_total": 556,
-        "status": "partial_results",
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -573,8 +942,8 @@
         "id": "search:96f11be69b8b72edc47bdd64",
         "kind": "search",
         "parent_id": "search:476cfc40f96f091cc2f8cf41",
-        "reported_total": 658,
-        "status": "pending",
+        "reported_total": 655,
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -614,7 +983,7 @@
         "kind": "search",
         "parent_id": null,
         "reported_total": 339,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "gui-automation"
       },
       {
@@ -634,7 +1003,7 @@
         "kind": "search",
         "parent_id": null,
         "reported_total": 403,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "browser-agent"
       },
       {
@@ -654,7 +1023,7 @@
         "kind": "search",
         "parent_id": null,
         "reported_total": 663,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "android-automation"
       },
       {
@@ -753,7 +1122,7 @@
         "id": "search:533e43999ac1ce7721049d55",
         "kind": "search",
         "parent_id": "search:737ea1b9b271e9ac6700bc83",
-        "reported_total": 834,
+        "reported_total": null,
         "status": "pending",
         "topic": "desktop-automation"
       },
@@ -764,7 +1133,7 @@
         "kind": "search",
         "parent_id": "search:9c344409e06858ea430a6e41",
         "reported_total": 345,
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -773,16 +1142,187 @@
         "id": "search:c21aa7855585a900c4d51779",
         "kind": "search",
         "parent_id": "search:9c344409e06858ea430a6e41",
-        "reported_total": 616,
-        "status": "pending",
+        "reported_total": 511,
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:78f28c6993e7b74e363f0dd8",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 35,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:f0a3ef35c117e32733666e25",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-agent"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:a8b5a438c036e3898cebdd9a",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-agents"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:c4fb32d2cfd8e9f9fe7ad91b",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-automation"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:3c1b8282c155969869a83924",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 54,
+        "status": "observed_pages_exhausted",
+        "topic": "desktop-automation"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:f44eb5d8254b128b4bc889bd",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 61,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-agent"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:5060228d150e77a91d4cd41a",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-agents"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:7883c6b0bfb148897c2fecbc",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 158,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-10-18",
+        "created_before": "2026-10-20",
+        "id": "search:fb35324ccb367a0b8d81a175",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
+        "topic": "android-automation"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:c4a269ead0a1de7364d2337a",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 166,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use-agent"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:53c6d7afca1d0bf0d7a97c55",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 57,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use-agents"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:5dc78a0529432a5f2ea1195f",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 19,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-grounding"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:61e704c2c0fa326ed32b0392",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 387,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-use"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:7ba37b8aec055b86543566e9",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 134,
+        "status": "observed_pages_exhausted",
+        "topic": "web-agent"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:201d6c6aabed7d7a49a91532",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 88,
+        "status": "observed_pages_exhausted",
+        "topic": "web-agents"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:7a9b210b0f8ffb643970b059",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 154,
+        "status": "observed_pages_exhausted",
+        "topic": "desktop-agent"
+      },
+      {
+        "created_after": "2008-01-01",
+        "created_before": "2026-10-20",
+        "id": "search:2787a02fa9fcc327945f6897",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 68,
+        "status": "observed_pages_exhausted",
+        "topic": "mobile-agent"
       }
     ],
-    "query_rechecks_count": 0,
+    "query_rechecks_count": 17,
     "request_outcomes": {
-      "accepted": 124,
-      "rate_limited": 2,
-      "redirect_not_followed": 3,
+      "accepted": 276,
+      "fetch_failed": 3,
+      "rate_limited": 6,
+      "redirect_not_followed": 13,
       "unavailable": 1
     },
     "runs": [
@@ -857,20 +1397,152 @@
         "requests_attempted": 30,
         "started_at": "2026-10-20T02:33:45.774943+00:00",
         "status": "request_budget"
+      },
+      {
+        "accepted_metadata_rows": 2390,
+        "after_unique_repositories": 8357,
+        "before_unique_repositories": 7243,
+        "finished_at": "2026-10-20T03:59:37.641968+00:00",
+        "id": "run:187c46c0f989231290687f4e",
+        "input_id": "c4d455c04735fa84a6f7f6d34d9c763e53d7971f45d0bda01609dfcbdc9cdd8a",
+        "new_unique_repositories": 1114,
+        "requests_attempted": 30,
+        "started_at": "2026-10-20T03:56:25.655336+00:00",
+        "status": "request_budget"
+      },
+      {
+        "accepted_metadata_rows": 1819,
+        "after_unique_repositories": 8538,
+        "before_unique_repositories": 8357,
+        "finished_at": "2026-10-20T05:54:47.289993+00:00",
+        "id": "run:4cb3328619448dec18790fb1",
+        "input_id": "7e1244c0ad41c489c54a0576ba12f2e843aae7d917bd68cc14066da464be12b3",
+        "new_unique_repositories": 181,
+        "requests_attempted": 23,
+        "started_at": "2026-10-20T05:52:21.367651+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 900,
+        "after_unique_repositories": 8541,
+        "before_unique_repositories": 8538,
+        "finished_at": "2026-10-20T08:28:03.044487+00:00",
+        "id": "run:ceed7c802ee617aef2ea7d4b",
+        "input_id": "024d5a5cad975c080d026d2a1729f3c3d7c75d1179cb6fb7c2215cec826fdaae",
+        "new_unique_repositories": 3,
+        "requests_attempted": 11,
+        "started_at": "2026-10-20T08:26:57.146812+00:00",
+        "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 1803,
+        "after_unique_repositories": 8555,
+        "before_unique_repositories": 8541,
+        "finished_at": "2026-10-20T09:19:45.277552+00:00",
+        "id": "run:ee28fa58e815c989c5c7dbfa",
+        "input_id": "beb4963be6257cd3fbcf704276fc3b00e6cf1fd2dcd548df4f218ba7ba154143",
+        "new_unique_repositories": 14,
+        "requests_attempted": 22,
+        "started_at": "2026-10-20T09:17:27.593817+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 238,
+        "after_unique_repositories": 8576,
+        "before_unique_repositories": 8555,
+        "finished_at": "2026-10-20T10:08:23.303771+00:00",
+        "id": "run:5a07ef16cbcb3d5fd3037b92",
+        "input_id": "81d1af2c4cb9ba5e42aa1a137b45c8e216e9ae9d66fca82078c98498702c2bea",
+        "new_unique_repositories": 21,
+        "requests_attempted": 5,
+        "started_at": "2026-10-20T10:07:56.142010+00:00",
+        "status": "request_budget"
+      },
+      {
+        "accepted_metadata_rows": 2352,
+        "after_unique_repositories": 9035,
+        "before_unique_repositories": 8576,
+        "finished_at": "2026-10-20T11:06:19.714249+00:00",
+        "id": "run:6c3d08d514f9cf715a4b8e35",
+        "input_id": "67265fe6acbad6b33800f27447ef5ef8cae27d03a3de84bab09e6f7e81fb911d",
+        "new_unique_repositories": 459,
+        "requests_attempted": 30,
+        "started_at": "2026-10-20T11:03:00.930030+00:00",
+        "status": "request_budget"
+      },
+      {
+        "accepted_metadata_rows": 644,
+        "after_unique_repositories": 9175,
+        "before_unique_repositories": 9035,
+        "finished_at": "2026-10-20T11:17:03.487764+00:00",
+        "id": "run:623fca79006351b5cf89b97f",
+        "input_id": "fa9a961b11aed51e249a1cc85b00d3af5e83e3856a72a0252b787fc460d2ba96",
+        "new_unique_repositories": 140,
+        "requests_attempted": 11,
+        "started_at": "2026-10-20T11:15:57.338172+00:00",
+        "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 953,
+        "after_unique_repositories": 9219,
+        "before_unique_repositories": 9175,
+        "finished_at": "2026-10-20T11:53:31.921997+00:00",
+        "id": "run:2e4a8a5a70a5c9c9b33efaba",
+        "input_id": "fa9a961b11aed51e249a1cc85b00d3af5e83e3856a72a0252b787fc460d2ba96",
+        "new_unique_repositories": 44,
+        "requests_attempted": 15,
+        "started_at": "2026-10-20T11:51:23.549142+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 361,
+        "after_unique_repositories": 9224,
+        "before_unique_repositories": 9219,
+        "finished_at": "2026-10-20T13:49:14.025690+00:00",
+        "id": "run:f61f2b38d87fcd9dc8a3042c",
+        "input_id": "9ea9c6ecd1d4c79ac0ad13bcb595799ea3c669ae5f757bf5d66d6aebdf3e2fb7",
+        "new_unique_repositories": 5,
+        "requests_attempted": 7,
+        "started_at": "2026-10-20T13:48:31.890640+00:00",
+        "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 982,
+        "after_unique_repositories": 9235,
+        "before_unique_repositories": 9224,
+        "finished_at": "2026-10-20T19:14:58.234795+00:00",
+        "id": "run:2eb419fd0cb4f6ab79cd6c3f",
+        "input_id": "6336caca3fcc440343d942b8f2da3d2c658d385f67453be92ee5e827fb92d588",
+        "new_unique_repositories": 11,
+        "requests_attempted": 13,
+        "started_at": "2026-10-20T19:13:36.505482+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 9235,
+        "before_unique_repositories": 9235,
+        "finished_at": "2026-10-20T20:01:46.776279+00:00",
+        "id": "run:389ffe8cf7bd7990362d1ffe",
+        "input_id": "8a79ce52275e25416e75be069a18db51cebab495768ff5c4c1711b37d221af9e",
+        "new_unique_repositories": 0,
+        "requests_attempted": 2,
+        "started_at": "2026-10-20T20:01:36.898842+00:00",
+        "status": "rate_limited"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "a78a05154086055cf58c5e3d6f298d60ec9877a244b2ad4359c732bd40b73e07",
-  "supporting_primary_bodies": 124,
+  "source_ledger_sha256": "524e695017e591aea4a8403b12ff3e59c74e1df5013e47f9b3d4a28310320463",
+  "supporting_primary_bodies": 270,
   "verification": {
-    "baseline_checkpoint_sha256": "f56f4b9f026a74174c900059ab756b9d0c3fff344baf0defbf95c3365785b61b",
-    "baseline_observation_sha256": "924d6a4bfc99b6d26bb1c445113e1d34250c28db4301424db853917521ddc487",
+    "baseline_checkpoint_sha256": "e72b0a1bc154a3e4b308cfa59f819b74955ef3d4609c0397944ec03c8893be99",
+    "baseline_observation_sha256": "4a6f124222e2bdb11937fa36b06d4fb433cd2a563c931d0778eac67099a99e55",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 30,
-    "successful_receipts_replayed": 30
+    "primary_bodies_replayed": 0,
+    "successful_receipts_replayed": 0
   }
 }

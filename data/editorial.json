@@ -66619,5 +66619,29 @@
     "review_note": "Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion.",
     "reviewed_at": "2026-10-20T19:29:44Z",
     "reviewed_sha256": "fed38272c6c64f56e5675f0df9a5091ce38e4b9f92f1de4878c96dfcff9b1e99"
+  },
+  {
+    "name": "ibara",
+    "kind": "tool",
+    "url": "https://github.com/MayberryDT/ibara",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "cross-app"
+    ],
+    "summary": "MCP server for agents to use browsers and native apps on separate Omarchy computers their owner provides, with desktop viewing and control in an Omarchy console.",
+    "verify_terms": [
+      "ibara",
+      "Omarchy"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Omarchy only, including Omarchy virtual machines; requires Tailscale. Linux classification does not imply support for other distributions. Core is MIT-licensed; the separately bundled stream and viewer programs retain GPL-3.0.",
+    "reviewed_sha256": "359efc3c29ca1ef21cd7cd607d46fb550ef939bcc12e097493b8453cc4278530",
+    "reviewed_at": "2026-10-19T23:20:40Z",
+    "read_basis": "Read README opening, install, MCP tools, requirements and licensing. Omarchy-only opening controls scope; the contradictory historical FAQ has a separate correction PR MayberryDT/ibara#5. Proposed by the ibara maintainer for upstream editorial review."
   }
 ]

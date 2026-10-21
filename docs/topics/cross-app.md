@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `cross-app`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (37)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (37)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,14 @@ All entries in this section: desktop, linux.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [GUI-ReWalk](https://github.com/bytedance/GUI-ReWalk) | [2509.15738](https://arxiv.org/abs/2509.15738) (2025) | code Apache-2.0 | A desktop trajectory-generation framework that moves from stochastic GUI exploration to inferred goals and multi-stage task completion, with retrospective reasoning annotations. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/bytedance/GUI-ReWalk/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: desktop, linux, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ibara](https://github.com/MayberryDT/ibara) | — | code MIT | MCP server for agents to use browsers and native apps on separate Omarchy computers their owner provides, with desktop viewing and control in an Omarchy console. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/MayberryDT/ibara/HEAD/README.md) |
 
 ## Papers
 

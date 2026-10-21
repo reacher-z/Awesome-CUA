@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,671 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
+1,672 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -20,13 +20,13 @@
 | [Efficiency](topics/efficiency.md) | 158 | 2 | · | 5 | 5 | · | 146 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [Tool integration](topics/tool-integration.md) | 136 | 9 | 2 | 4 | 24 | · | 97 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
 | [Workflows](topics/workflow.md) | 113 | 6 | 2 | · | 22 | · | 83 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
-| [Automation](topics/automation.md) | 111 | · | · | 1 | 27 | · | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
+| [Automation](topics/automation.md) | 112 | · | · | 1 | 28 | · | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
 | [Long-horizon tasks](topics/long-horizon.md) | 105 | 5 | 1 | 1 | 5 | · | 93 | [Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828) · 2026-10-19 |
 | [Human in the loop](topics/human-in-the-loop.md) | 87 | 1 | · | · | 8 | · | 78 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
 | [Imitation learning](topics/imitation-learning.md) | 84 | 1 | 14 | 5 | 12 | · | 52 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
 | [Reward models](topics/reward-models.md) | 58 | 4 | 3 | 4 | 3 | · | 44 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
 | [Sandboxes](topics/sandbox.md) | 58 | 3 | · | · | 14 | · | 41 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
-| [Cross-app](topics/cross-app.md) | 56 | 13 | 2 | · | 4 | · | 37 | [MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents](https://arxiv.org/abs/2610.23303) · 2026-10-16 |
+| [Cross-app](topics/cross-app.md) | 57 | 13 | 2 | · | 5 | · | 37 | [MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents](https://arxiv.org/abs/2610.23303) · 2026-10-16 |
 | [Interaction history](topics/interaction-history.md) | 53 | · | · | 1 | 1 | · | 51 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
 | [Action prediction](topics/action-prediction.md) | 51 | · | 2 | 17 | 3 | · | 29 | [Beyond Next-Screen Prediction: The Decision Value of GUI World Models](https://arxiv.org/abs/2610.24372) · 2026-10-17 |
 | [State tracking](topics/state-tracking.md) | 49 | · | · | · | 3 | · | 46 | [ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation](https://arxiv.org/abs/2610.22408) · 2026-10-14 |

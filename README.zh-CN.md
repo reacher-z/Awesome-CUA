@@ -17,7 +17,7 @@
 [阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C244-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C245-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C672-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -73,7 +73,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,244 条资源记录** · **1,671 条已审阅** · **2,773 条论文与综述记录** · **54 个发现来源文档**
+**3,245 条资源记录** · **1,672 条已审阅** · **2,773 条论文与综述记录** · **54 个发现来源文档**
 
 证据截至 `2026-10-21T04:48:34Z`。1,573 条记录仅完成书目核实；906 个已发现的标识符尚待处理，另有 136 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。138 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
@@ -87,10 +87,10 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [按主题浏览研究](docs/topics.md) · **1,181** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,773 条论文与综述记录 | [智能体](docs/agents.md) · **45** |
 | [综述](docs/surveys.md) · **19** · [学习资源](docs/learning.md) · **2** | [框架](docs/frameworks.md) · **79** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
-| [基准](docs/benchmarks.md) · **89** | [工具](docs/tools.md) · **22** |
+| [基准](docs/benchmarks.md) · **89** | [工具](docs/tools.md) · **23** |
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **646** · [Desktop](docs/environments/desktop.md) **334** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**按平台：** [Web](docs/environments/web.md) **647** · [Desktop](docs/environments/desktop.md) **335** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -185,7 +185,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑20 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | 工具 | desktop, windows | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. |
 | 2026‑10‑20 | [MobileForge](https://github.com/kwai/MobileForge) | 框架 | android | Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B. |
 | 2026‑10‑20 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | 框架 | android | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. |
-| 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | 数据集 | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
+| 2026‑10‑19 | [ibara](https://github.com/MayberryDT/ibara) | 工具 | desktop, linux, web | MCP server for agents to use browsers and native apps on separate Omarchy computers their owner provides, with desktop viewing and control in an Omarchy console. |
 <!-- RECENT:END -->
 
 ## 使用数据

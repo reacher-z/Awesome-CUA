@@ -17,7 +17,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 [Read the research survey](https://awesomecua.github.io/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C244-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C245-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C672-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
@@ -71,7 +71,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,244 resource records** · **1,671 curated** · **2,773 paper and survey records** · **54 discovery documents**
+**3,245 resource records** · **1,672 curated** · **2,773 paper and survey records** · **54 discovery documents**
 
 Evidence through `2026-10-21T04:48:34Z`. 1,573 records have bibliographic verification only; 906 discovered identifiers remain unresolved, not counting 136 links reviewed as non-resources or other addresses of indexed resources. 138 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
@@ -85,10 +85,10 @@ Evidence through `2026-10-21T04:48:34Z`. 1,573 records have bibliographic verifi
 | [Research by topic](docs/topics.md) · **1,181** reviewed papers · [Full bibliography](docs/papers.md) · 2,773 paper and survey records | [Agents](docs/agents.md) · **45** |
 | [Surveys](docs/surveys.md) · **19** · [Learning resources](docs/learning.md) · **2** | [Frameworks](docs/frameworks.md) · **79** |
 | [Datasets](docs/datasets.md) · **86** | [Infrastructure](docs/infrastructures.md) · **14** |
-| [Benchmarks](docs/benchmarks.md) · **89** | [Tools](docs/tools.md) · **22** |
+| [Benchmarks](docs/benchmarks.md) · **89** | [Tools](docs/tools.md) · **23** |
 | [Models and checkpoint releases](docs/models.md) · **98** | [Products](docs/products.md) · **20** · [Publishers and brands](docs/companies.md) · **16** |
 
-**By platform:** [Web](docs/environments/web.md) **646** · [Desktop](docs/environments/desktop.md) **334** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**By platform:** [Web](docs/environments/web.md) **647** · [Desktop](docs/environments/desktop.md) **335** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -183,7 +183,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑10‑20 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | tool | desktop, windows | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. |
 | 2026‑10‑20 | [MobileForge](https://github.com/kwai/MobileForge) | framework | android | Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B. |
 | 2026‑10‑20 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | framework | android | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. |
-| 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | dataset | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
+| 2026‑10‑19 | [ibara](https://github.com/MayberryDT/ibara) | tool | desktop, linux, web | MCP server for agents to use browsers and native apps on separate Omarchy computers their owner provides, with desktop viewing and control in an Omarchy console. |
 <!-- RECENT:END -->
 
 ## Use the data

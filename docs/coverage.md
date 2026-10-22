@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-22T13:49:08Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-22T20:07:57Z**. Generated from committed source receipts.
 
-- 3,250 resource records: 1,671 curated; 1,579 bibliographic metadata only.
-- 2,779 paper and survey records, including 2,766 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,904 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,292 discovery identifiers; 907 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,251 resource records: 1,671 curated; 1,580 bibliographic metadata only.
+- 2,780 paper and survey records, including 2,767 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,905 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,293 discovery identifiers; 907 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-22T13:49:07Z; **32/32** query windows succeeded. 1,496 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-10-22T20:07:57Z; **32/32** query windows succeeded. 1,496 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

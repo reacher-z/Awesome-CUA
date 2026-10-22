@@ -20,7 +20,7 @@
 [![Catalog records](https://img.shields.io/badge/records-3%2C249-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
-[按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
+[按任务查找](#按任务查找) · [超过三小时的任务](#超过三小时的任务) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
 
 [覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/)
 
@@ -70,6 +70,23 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 </details>
 
 <!-- TASKS:END -->
+
+## 超过三小时的任务
+
+同时具备输入、输出，且一手来源写明耗时超过 3 小时的具体电脑操作任务，仍是覆盖缺口。目标是 1,000 条。已打开的一手来源目前支持 **1** 条。缺口是 999。短时的 GUI、网页、移动端和定位样本不计入这 1 条。
+
+| 字段 | 来源写明的内容 |
+| --- | --- |
+| 任务 | Cradle，Dealer's Life 2，[`env_config_dealers.json`](https://github.com/BAAI-Agents/Cradle/blob/main/conf/env_config_dealers.json) 中的任务 id 1 |
+| 输入 | 自动游玩 Dealer's Life 2，持续 7 天。在出价页面调用 `give_price` 并传入整数。在其他页面点击屏幕上给出的选项。 |
+| 时长 | 该任务说明中的 7 天 |
+| 输出 | 同一段说明把目标写为尽量扩大利润。该文件没有另给期望输出。 |
+
+[![Cradle 的 Dealer's Life 2 环境说明所附起始画面：柜台前的买家、对话选项，以及游戏内日历第 1 月第 1 周第 1 天。](https://raw.githubusercontent.com/BAAI-Agents/Cradle/main/docs/envs/images/dealers/dealer_start.jpg)](https://github.com/BAAI-Agents/Cradle/blob/main/docs/envs/dealers.md)
+
+图片仍在 Cradle 仓库中。环境说明用它表示这次运行的起始画面。7 天是任务说明里的时长；配置没有另外写明实际经过了多少小时。画面上的游戏内日历停在第 1 月第 1 周第 1 天。
+
+Cradle 的其他环境配置没有第二条写明超过 3 小时的任务。[WorkArena README](https://raw.githubusercontent.com/ServiceNow/WorkArena/HEAD/README.md) 统计了 682 个 WorkArena++ 任务，没有给出逐条时长。其组合任务模块里的 1 天、2 天和 3 天是变更请求的排期字段。[TheAgentCompany](https://arxiv.org/abs/2412.14161) 写道，完成单个任务可能从 10 分钟到数小时不等，并且有些复杂任务的设计耗时超过 10 小时。这些句子没有指出哪一条任务的执行时间超过 3 小时，因此计数仍是 1。
 
 <!-- STATS:START -->
 

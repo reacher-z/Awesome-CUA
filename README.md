@@ -20,7 +20,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 [![Catalog records](https://img.shields.io/badge/records-3%2C249-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
-[Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
+[Find by task](#find-by-task) · [Long tasks](#tasks-longer-than-three-hours) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
 
 [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
 
@@ -68,6 +68,23 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 </details>
 
 <!-- TASKS:END -->
+
+## Tasks longer than three hours
+
+Concrete computer-use tasks that have an input, an output, and a primary source stating a duration over 3 hours are a coverage gap. The target is 1,000. Opened primary sources support **1**. The gap is 999. Short GUI, web, mobile, and grounding examples are outside this count.
+
+| Field | What the source states |
+| --- | --- |
+| Task | Cradle, Dealer's Life 2, task id 1 in [`env_config_dealers.json`](https://github.com/BAAI-Agents/Cradle/blob/main/conf/env_config_dealers.json) |
+| Input | Play Dealer's Life 2 automatically for 7 days. On a price page, call `give_price` with an integer. On other pages, click the option shown on screen. |
+| Duration | 7 days, written in that task instruction |
+| Output | The same instruction says the purpose is to make the profit as large as possible. The file gives no separate expected output. |
+
+[![Starting screen published with Cradle's Dealer's Life 2 notes: a buyer at the shop counter, dialogue choices, and an in-game calendar on month 1, week 1, day 1.](https://raw.githubusercontent.com/BAAI-Agents/Cradle/main/docs/envs/images/dealers/dealer_start.jpg)](https://github.com/BAAI-Agents/Cradle/blob/main/docs/envs/dealers.md)
+
+The picture stays in the Cradle repository. It shows the screen those notes use for the start of the run. The 7 days are the duration in the task instruction; the config does not also give a wall-clock length in hours. The in-game calendar on that screen is at month 1, week 1, day 1.
+
+Cradle's other environment configs add no second task with a stated duration over 3 hours. The [WorkArena README](https://raw.githubusercontent.com/ServiceNow/WorkArena/HEAD/README.md) counts 682 WorkArena++ tasks and gives them no per-task duration. Their compositional modules use 1-day, 2-day, and 3-day values as change-request schedule fields. [TheAgentCompany](https://arxiv.org/abs/2412.14161) says completing a single task can take from 10 minutes to several hours, and that some complex tasks took more than 10 hours to design. Those sentences name no task whose performance time is over 3 hours, so the count stays 1.
 
 <!-- STATS:START -->
 

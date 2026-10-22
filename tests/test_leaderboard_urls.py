@@ -22,6 +22,7 @@ LEADERBOARDS = {
     "github:servicenow/workarena": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard",
     "github:stonybrooknlp/appworld": "https://appworld.dev/appworld/leaderboard",
     "github:theagentcompany/theagentcompany": "https://the-agent-company.com/#/leaderboard",
+    "github:tiger-ai-lab/clawbench": "https://huggingface.co/spaces/TIGER-Lab/ClawBench",
     "github:thudm/agentbench": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRR3Wl7wsCgHpwUw1_eUXW_fptAPLL3FkhnW_rua0O1Ji_GIVrpTjY5LaKAhwO-WeARjnY_KNw0SYNJ/pubhtml",
     "github:thudm/android-lab": "https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw/edit?gid=0#gid=0",
     "github:tongyi-mai/mobileworld": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",

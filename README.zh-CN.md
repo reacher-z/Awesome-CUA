@@ -17,7 +17,7 @@
 [阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C249-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C251-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -73,9 +73,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,249 条资源记录** · **1,671 条已审阅** · **2,778 条论文与综述记录** · **54 个发现来源文档**
+**3,251 条资源记录** · **1,674 条已审阅** · **2,779 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-22T04:46:45Z`。1,578 条记录仅完成书目核实；907 个已发现的标识符尚待处理，另有 136 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。138 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-22T04:46:45Z`。1,577 条记录仅完成书目核实；905 个已发现的标识符尚待处理，另有 136 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。138 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -84,13 +84,13 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 研究与训练 | 工程与产业 |
 | --- | --- |
-| [按主题浏览研究](docs/topics.md) · **1,181** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,778 条论文与综述记录 | [智能体](docs/agents.md) · **45** |
+| [按主题浏览研究](docs/topics.md) · **1,183** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,779 条论文与综述记录 | [智能体](docs/agents.md) · **45** |
 | [综述](docs/surveys.md) · **19** · [学习资源](docs/learning.md) · **2** | [框架](docs/frameworks.md) · **79** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
-| [基准](docs/benchmarks.md) · **89** | [工具](docs/tools.md) · **22** |
+| [基准](docs/benchmarks.md) · **90** | [工具](docs/tools.md) · **22** |
 | [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
 
-**按平台：** [Web](docs/environments/web.md) **646** · [Desktop](docs/environments/desktop.md) **334** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
+**按平台：** [Web](docs/environments/web.md) **649** · [Desktop](docs/environments/desktop.md) **334** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -110,13 +110,13 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified |
 
-**基准** · [全部 89 项 →](docs/benchmarks.md)
+**基准** · [全部 90 项 →](docs/benchmarks.md)
 
 | 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |
 | --- | ---: | --- | --- | --- | --- |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) | 21 | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | 代码 Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
 | [WebArena](https://github.com/web-arena-x/webarena) | 15 | web | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | 代码 Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents. |
-| [BrowserGym](https://github.com/ServiceNow/BrowserGym) | 8 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | 代码 Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments. |
+| [BrowserGym](https://github.com/ServiceNow/BrowserGym) | 9 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | 代码 Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments. |
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) | 8 | desktop, windows, macos, linux | — | 代码 MIT | GUI grounding benchmark focused on professional high-resolution interfaces. |
 | [VisualWebArena](https://github.com/web-arena-x/visualwebarena) | 7 | web | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | — | Visually grounded web tasks extending the WebArena evaluation setting. |
 | [AndroidWorld](https://github.com/google-research/android_world) | 6 | android | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | 代码 Apache-2.0 | Android environment with programmatic task evaluation for mobile agents. |
@@ -147,7 +147,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 | 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |
 | --- | ---: | --- | --- | --- | --- |
-| [Browser Use](https://github.com/browser-use/browser-use) | 7 | web | — | 代码 MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. |
+| [Browser Use](https://github.com/browser-use/browser-use) | 8 | web | — | 代码 MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset. |
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | 5 | web | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | 代码 Apache-2.0 | Experiment framework for developing and evaluating browser agents. |
 | [Seg2Click](https://github.com/jcwang0602/Seg2Click) | 5 | cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | 代码 MIT | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask. |
 | [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) | 3 | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | 代码 Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation. |

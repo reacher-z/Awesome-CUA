@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-42 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+43 source-reviewed resources tagged `observability`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (38)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (38)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
 
 ## Agents
 

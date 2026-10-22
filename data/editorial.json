@@ -4412,7 +4412,21 @@
     "publisher_id": "organization:simular",
     "documented_by": [
       "2410.08164",
-      "2504.00906"
+      "2504.00906",
+      "2510.02250"
+    ],
+    "aliases": [
+      "Agent S3"
+    ],
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "relations",
+      "aliases"
     ]
   },
   {

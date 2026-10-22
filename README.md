@@ -20,7 +20,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 [![Catalog records](https://img.shields.io/badge/records-3%2C251-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
-[Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
+[Find by task](#find-by-task) · [Long tasks](#tasks-longer-than-three-hours) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
 
 [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
 
@@ -68,6 +68,56 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 </details>
 
 <!-- TASKS:END -->
+
+## Tasks longer than three hours
+
+Concrete computer-use tasks that have an input, an output, and a primary source stating a duration over 3 hours are a coverage gap. The target is 1,000. Opened primary sources support **29**. The gap is 971. Short GUI, web, mobile, and grounding examples are outside this count.
+
+| Field | What the source states |
+| --- | --- |
+| Task | Cradle, Dealer's Life 2, task id 1 in [`env_config_dealers.json`](https://github.com/BAAI-Agents/Cradle/blob/main/conf/env_config_dealers.json) |
+| Input | Play Dealer's Life 2 automatically for 7 days. On a price page, call `give_price` with an integer. On other pages, click the option shown on screen. |
+| Duration | 7 days, written in that task instruction |
+| Output | The same instruction says the purpose is to make the profit as large as possible. The file gives no separate expected output. |
+
+[![Starting screen published with Cradle's Dealer's Life 2 notes: a buyer at the shop counter, dialogue choices, and an in-game calendar on month 1, week 1, day 1.](https://raw.githubusercontent.com/BAAI-Agents/Cradle/main/docs/envs/images/dealers/dealer_start.jpg)](https://github.com/BAAI-Agents/Cradle/blob/main/docs/envs/dealers.md)
+
+The picture stays in the Cradle repository. It shows the screen those notes use for the start of the run. The 7 days are the duration in the task instruction; the config does not also give a wall-clock length in hours. The in-game calendar on that screen is at month 1, week 1, day 1.
+
+Cradle's other environment configs add no second task with a stated duration over 3 hours. The [WorkArena README](https://raw.githubusercontent.com/ServiceNow/WorkArena/HEAD/README.md) counts 682 WorkArena++ tasks and gives them no per-task duration. Their compositional modules use 1-day, 2-day, and 3-day values as change-request schedule fields. [TheAgentCompany](https://arxiv.org/abs/2412.14161) says completing a single task can take from 10 minutes to several hours, and that some complex tasks took more than 10 hours to design. Those sentences name no task whose performance time is over 3 hours.
+
+[OmegaUse-OfficeVal](https://omegause-officeval.github.io/) adds 28. Its [English task records](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/data-studio/train.jsonl) store `human_labor_time` in minutes, the average time human workers took to finish that task without a model. The dataset card states that unit. Across all 100 tasks the mean is 139.42 minutes, matching the project page's 2.32 hours. Twenty-eight tasks are over 180 minutes. The longest, `officeval_046`, is 501 minutes, which is the page's 8.35 hours. Each of those records also has an instruction, input-file URLs, and a rubric for the deliverable. The same page's fastest model average is 0.184 hours per task; that agent runtime is not the duration counted here.
+
+| Task | Minutes | Instruction |
+| --- | ---: | --- |
+| [officeval_001](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_001.json) | 204 | Modify the provided Word documents according to the following requirements: 1. Delete the content under "Lesson Learning Objectives" and... |
+| [officeval_008](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_008.json) | 304 | Translate the English-language PDF paper into Chinese, and modify the translated paper using the formatting of the “Translated Literature... |
+| [officeval_010](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_010.json) | 228 | Modify the flowchart in the document: delete the fourth row, move the text inside the boxes, and make the flowchart editable. |
+| [officeval_013](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_013.json) | 227 | Check the paper's cover page, Chinese abstract, English abstract, table of contents, main text, references, and acknowledgments in accord... |
+| [officeval_018](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_018.json) | 251 | Modify the “Public Notice Study Room Operations Plan” report in accordance with the formatting requirements, including the font, font siz... |
+| [officeval_019](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_019.json) | 249 | Add a cover page to the exam paper (refer to the images for the specific layout); center the main title in the exam paper and set it in S... |
+| [officeval_020](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_020.json) | 194 | Format the lesson plan according to the formatting requirements shown in the image. |
+| [officeval_022](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_022.json) | 287 | Following the format of the “Statement of Business Operations,” reformat the “Business Operations Anomaly Investigation Submission Materi... |
+| [officeval_024](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_024.json) | 211 | Make the following adjustments to my thesis in accordance with the formatting requirements in the thesis template document: 1. Adjust and... |
+| [officeval_031](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_031.json) | 255 | Place the test questions from the PDF into the provided Word template, matching the question formatting in the Word document. |
+| [officeval_033](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_033.json) | 307 | Replace every retail price value in the document with the value obtained by multiplying it by 1.1, keep all other formatting unchanged, a... |
+| [officeval_034](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_034.json) | 188 | Format the document. For the formatting of the individual clauses, follow the layout shown in the images: use two columns, with Chinese a... |
+| [officeval_040](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_040.json) | 190 | 1. Format the document title as follows: LiSu, size No. 2, bold, blue, Glow (Olive Green, 7 pt glow, Accent 3), Shadow (Offset: Top), cen... |
+| [officeval_043](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_043.json) | 400 | Recreate the business card as a 2-slide PowerPoint presentation. All elements in the resulting presentation must be editable, except that... |
+| [officeval_046](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_046.json) | 501 | Create a new two-slide ppt for me and replicate just these 2 pages (they must be exactly identical), centered on two 30 × 20 PPT slides w... |
+| [officeval_049](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_049.json) | 240 | Recreate this image, with every element editable, and deliver it to me as a one-slide ppt with the same dimensions as the image. |
+| [officeval_050](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_050.json) | 321 | Please make these two PowerPoint slides directly editable, including allowing content to be deleted, while keeping the content exactly th... |
+| [officeval_054](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_054.json) | 239 | Recreate the original image as a single-slide PowerPoint presentation with content identical to the original image. It must be editable.... |
+| [officeval_055](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_055.json) | 188 | Turn this image into an editable PPT, not an image. Also make the following adjustments: 1. Replace the word “assessment” in the second s... |
+| [officeval_056](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_056.json) | 230 | Recreate this flowchart in a PPT using text boxes and arrow shapes. The completed flowchart must be fully editable, not an image; make it... |
+| [officeval_072](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_072.json) | 187 | Turn this into a PPT with editable text; the layout, content, and colors should all be roughly the same as the original. |
+| [officeval_074](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_074.json) | 237 | Translate all Chinese text in this PowerPoint into English. Do not disrupt the layout or change the image backgrounds. |
+| [officeval_076](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_076.json) | 194 | Turn the following content I sent you into a PPT. Use one slide for each title section, make each level-one heading a section title slide... |
+| [officeval_079](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_079.json) | 241 | Translate the content of the PPT into Mongolian. Do not change any data or layout positions. |
+| [officeval_081](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_081.json) | 196 | Create an Excel spreadsheet that achieves what is demonstrated in the video: after a number is entered in one cell, the active cell autom... |
+| [officeval_082](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_082.json) | 230 | In the “1111” spreadsheet, set it up so that when items on the left are checked, the selected content is automatically displayed on the r... |
+| [officeval_084](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_084.json) | 344 | Could you create a macro button? In the first workbook, create a macro button so that clicking the “Print Credit Slip” button outlined by... |
+| [officeval_085](https://huggingface.co/datasets/baidu-frontier-research/OmegaUse-OfficeVal/blob/main/task-en/officeval_085.json) | 213 | Could you create three charts for the three tables, styled like the S11 chart in the image? Place each completed chart in the table corre... |
 
 <!-- STATS:START -->
 

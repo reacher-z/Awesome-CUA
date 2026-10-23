@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-22T20:07:57Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-23T13:28:12Z**. Generated from committed source receipts.
 
-- 3,251 resource records: 1,671 curated; 1,580 bibliographic metadata only.
-- 2,780 paper and survey records, including 2,767 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,905 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,297 discovery identifiers; 911 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,258 resource records: 1,671 curated; 1,587 bibliographic metadata only.
+- 2,787 paper and survey records, including 2,774 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,912 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,300 discovery identifiers; 907 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -49,7 +49,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 28 | OK · 2026-10-23 |
 | [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 488 | 397 | 0 | 45 | 11 | OK · 2026-10-23 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 92 | 83 | 0 | 7 | 45 | OK · 2026-10-23 |
-| [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 229 | 222 | 167 | 0 | 1 | 6 | OK · 2026-10-23 |
+| [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 229 | 226 | 167 | 0 | 1 | 2 | OK · 2026-10-23 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-10-23 |
 | [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 26 | 25 | 0 | 3 | 11 | OK · 2026-10-23 |
 | [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 195 | 182 | 0 | 6 | 46 | OK · 2026-10-23 |
@@ -92,13 +92,13 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-23T04:50:40Z; **32/32** query windows succeeded. 1,496 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-10-23T13:28:11Z; **32/32** query windows succeeded. 1,498 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 
 | Area | Query | Returned / limit | State |
 | --- | --- | ---: | --- |
-| General computer use | computer use agents | 75 / 80 | success |
+| General computer use | computer use agents | 76 / 80 | success |
 | Grounding evaluation | GUI grounding benchmark | 80 / 80 | success |
 | Mobile learning | mobile GUI agent reinforcement learning | 80 / 80 | success |
 | Web data and evaluation | web agent dataset benchmark | 80 / 80 | success |

@@ -1,20 +1,20 @@
 {
   "active_catalog_context": {
-    "records": 3251,
+    "records": 3258,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "5efeba987fed1d6a23d42135e47666a2b93d08f38307ee3454aedfcaa0bf55f2"
+    "sha256": "e13f168683218157da83f438df22abe6f8ef5235e9de4ef037fbba3aaff44527"
   },
-  "checkpoint_state_sha256": "48eb7f0a3bdb30f7069ed38dc14ff4c5a2a7f4c2894fd67f28e4c23d84a3b163",
+  "checkpoint_state_sha256": "1bbd69b23a409b2a3ab8bc7edf58d77a5eb4cb5a5fe6f3af3d8275e6ec49ca5e",
   "count": {
     "unit": "repositories",
-    "value": 9310
+    "value": 9347
   },
   "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
   "export": {
-    "bytes": 26396265,
+    "bytes": 26470429,
     "file": "github-candidates.jsonl",
     "format": "JSONL",
-    "sha256": "103c282ddc210c699955dcacf67f49262c4a12a6f0622168cb448b933ae3f4d1"
+    "sha256": "a9f886643475d813c65892d148de2b7fd5b0ac990ba61311d155a5b41e9e95a4"
   },
   "input_fingerprints": [
     {
@@ -516,14 +516,39 @@
         }
       },
       "id": "ba1b83082b4e244dcadf9a809d11ed3b3f0d8a56966232808c6a54af07dc6c14"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5054670,
+          "sha256": "6283fda43dc368bd6e51ad3838523e81d0ceec59f0cee3efadffe6e514550da0"
+        },
+        "catalog.jsonl": {
+          "bytes": 8465323,
+          "sha256": "5efeba987fed1d6a23d42135e47666a2b93d08f38307ee3454aedfcaa0bf55f2"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1836286,
+          "sha256": "69b36c4ae56e9c5ffc486429f260061416f1c03cafab293126154190a0f9b718"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "a4e55c9c8d59518545c8e2cd742b39b7636d1432289a47d39ea5b1e05c3aad2d"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
-  "observation_snapshot_sha256": "103c282ddc210c699955dcacf67f49262c4a12a6f0622168cb448b933ae3f4d1",
+  "observation_snapshot_sha256": "a9f886643475d813c65892d148de2b7fd5b0ac990ba61311d155a5b41e9e95a4",
   "observed_from": "2026-10-18T13:02:50.777197+00:00",
-  "observed_through": "2026-10-23T04:50:58.820369+00:00",
+  "observed_through": "2026-10-23T13:30:21.976496+00:00",
   "privacy": {
-    "checked_records": 9310,
+    "checked_records": 9347,
     "omitted_fields": [],
     "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
   },
@@ -841,10 +866,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:a4e55c9c8d59518545c8e2cd742b39b7636d1432289a47d39ea5b1e05c3aad2d",
+        "input_id": "a4e55c9c8d59518545c8e2cd742b39b7636d1432289a47d39ea5b1e05c3aad2d",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:ba1b83082b4e244dcadf9a809d11ed3b3f0d8a56966232808c6a54af07dc6c14",
         "input_id": "ba1b83082b4e244dcadf9a809d11ed3b3f0d8a56966232808c6a54af07dc6c14",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:5d64d86b68bf42f487d770034a5a8c86a81711ea9bd1fc958fe6828268857c0b",
@@ -2036,8 +2067,8 @@
         "id": "search:6cbac8a9aaf15e3cc7f9dc85",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 3,
+        "status": "observed_pages_exhausted",
         "topic": "gui-agent"
       },
       {
@@ -2046,8 +2077,8 @@
         "id": "search:cc856dabb5ba96d3d3f100fa",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "gui-agents"
       },
       {
@@ -2056,8 +2087,8 @@
         "id": "search:21b3141c3d8139e8f3b220bd",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "gui-automation"
       },
       {
@@ -2066,8 +2097,8 @@
         "id": "search:ebf0d81f761d98ab8c11b8e4",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 5,
+        "status": "observed_pages_exhausted",
         "topic": "desktop-automation"
       },
       {
@@ -2076,8 +2107,8 @@
         "id": "search:ffb5e068f4d0ab81149adcdc",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "browser-agent"
       },
       {
@@ -2086,8 +2117,8 @@
         "id": "search:7beff394c9d63d9329e5fe69",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "browser-agents"
       },
       {
@@ -2096,8 +2127,8 @@
         "id": "search:88a7e5b8d65efe66707d5107",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 32,
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -2106,8 +2137,8 @@
         "id": "search:7adc3f802689c11e5e90cd13",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "android-automation"
       },
       {
@@ -2116,8 +2147,8 @@
         "id": "search:0401ebbe44dcbbc38b55de49",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "computer-use-agent"
       },
       {
@@ -2126,8 +2157,8 @@
         "id": "search:8e4b45464ce7bd5cd6b755f6",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "computer-use-agents"
       },
       {
@@ -2136,8 +2167,8 @@
         "id": "search:c14519bdd6e02e8841d31d33",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "gui-grounding"
       },
       {
@@ -2146,8 +2177,8 @@
         "id": "search:531871a931eacd608c11dda6",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 3,
+        "status": "observed_pages_exhausted",
         "topic": "browser-use"
       },
       {
@@ -2156,8 +2187,8 @@
         "id": "search:9ec21eacda1a0865442b8a73",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "web-agent"
       },
       {
@@ -2166,8 +2197,8 @@
         "id": "search:2be1831ce41e0f052051d2e4",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "web-agents"
       },
       {
@@ -2176,8 +2207,8 @@
         "id": "search:cf9e71f83d89f696689fcd79",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "desktop-agent"
       },
       {
@@ -2186,17 +2217,17 @@
         "id": "search:6fb27f19d9fa400334914cc1",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
         "topic": "mobile-agent"
       }
     ],
     "query_rechecks_count": 17,
     "request_outcomes": {
-      "accepted": 319,
+      "accepted": 335,
       "fetch_failed": 3,
       "rate_limited": 7,
-      "redirect_not_followed": 20,
+      "redirect_not_followed": 21,
       "unavailable": 1
     },
     "runs": [
@@ -2487,20 +2518,32 @@
         "requests_attempted": 3,
         "started_at": "2026-10-23T04:50:50.797690+00:00",
         "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 48,
+        "after_unique_repositories": 9347,
+        "before_unique_repositories": 9310,
+        "finished_at": "2026-10-23T13:30:23.278517+00:00",
+        "id": "run:2ee36b6767868f76747a6848",
+        "input_id": "a4e55c9c8d59518545c8e2cd742b39b7636d1432289a47d39ea5b1e05c3aad2d",
+        "new_unique_repositories": 37,
+        "requests_attempted": 17,
+        "started_at": "2026-10-23T13:28:35.297821+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "e631a95436c8a2d17fc84e258e54fb8eb9f8b33171a132b9cfe3ae300b6d6f5c",
-  "supporting_primary_bodies": 296,
+  "source_ledger_sha256": "08a7d88e7b715094f0f3309b949a9d1e9525d4a7ae05f3995aac0f712e5e2ea9",
+  "supporting_primary_bodies": 304,
   "verification": {
-    "baseline_checkpoint_sha256": "595997da8ad3a4b0f253debe96874c0e90ad33b144c321f54a98627557a788c7",
-    "baseline_observation_sha256": "cecbfcedd8ef144b8052a2564a55cfa56f41e599eda8ed0b427f3705efa90a8f",
+    "baseline_checkpoint_sha256": "cb016339726e6ec3a424a851ad6762e5192c75c4fcb2f0e1efa0fb58295128cd",
+    "baseline_observation_sha256": "103c282ddc210c699955dcacf67f49262c4a12a6f0622168cb448b933ae3f4d1",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 1,
-    "successful_receipts_replayed": 1
+    "primary_bodies_replayed": 9,
+    "successful_receipts_replayed": 16
   }
 }

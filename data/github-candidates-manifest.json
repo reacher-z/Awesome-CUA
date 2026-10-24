@@ -4,7 +4,7 @@
     "role": "Comparison context only; not the observation source, selection, or approval.",
     "sha256": "33ccda94c4efc0ea058cbfc410f250e74652c2e00e74c8692428b513b33193ba"
   },
-  "checkpoint_state_sha256": "ab38dfcfa8f1e8d5753d2e8e7b111fa708ba5b5c17fe8ba5689eb82134915bc2",
+  "checkpoint_state_sha256": "f994db59c124d676472ef5ac84c685601060db1723b2cf3900cfd90cc9e6c2d2",
   "count": {
     "unit": "repositories",
     "value": 9379
@@ -591,6 +591,31 @@
         }
       },
       "id": "a88d93e69332aa396ddab7e069089239c1b470ea94aca67e3b4526800472d53f"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5055910,
+          "sha256": "ae9dda492e2547150ca992fca37e8ea5f866056610d34907f7f407370deb223b"
+        },
+        "catalog.jsonl": {
+          "bytes": 8482739,
+          "sha256": "33ccda94c4efc0ea058cbfc410f250e74652c2e00e74c8692428b513b33193ba"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1836286,
+          "sha256": "69b36c4ae56e9c5ffc486429f260061416f1c03cafab293126154190a0f9b718"
+        },
+        "repository-aliases.json": {
+          "bytes": 24061,
+          "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+        }
+      },
+      "id": "8e1a565f1a1dfe1afb070eca97560f3b1e6ada779501482666b2823fa8fd7dcb"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
@@ -965,10 +990,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:8e1a565f1a1dfe1afb070eca97560f3b1e6ada779501482666b2823fa8fd7dcb",
+        "input_id": "8e1a565f1a1dfe1afb070eca97560f3b1e6ada779501482666b2823fa8fd7dcb",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:a88d93e69332aa396ddab7e069089239c1b470ea94aca67e3b4526800472d53f",
         "input_id": "a88d93e69332aa396ddab7e069089239c1b470ea94aca67e3b4526800472d53f",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:74045b3a8f5d745b72d7353e3258dd3057273efb84a63ece80b76944775f4172",
@@ -2508,7 +2539,7 @@
       "accepted": 352,
       "fetch_failed": 3,
       "rate_limited": 7,
-      "redirect_not_followed": 23,
+      "redirect_not_followed": 24,
       "unavailable": 1
     },
     "runs": [
@@ -2835,20 +2866,32 @@
         "requests_attempted": 18,
         "started_at": "2026-10-24T04:38:23.046972+00:00",
         "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 9379,
+        "before_unique_repositories": 9379,
+        "finished_at": "2026-10-24T12:41:46.172083+00:00",
+        "id": "run:9053fb85fcfd4ffbb5e94757",
+        "input_id": "8e1a565f1a1dfe1afb070eca97560f3b1e6ada779501482666b2823fa8fd7dcb",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-10-24T12:41:43.453034+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "e7b01815b35e3c1226d551b514b1ee4989df2b7467fbc2c6f77f982f7aa63103",
+  "source_ledger_sha256": "7f7542ece3511e1ffbaa332681b0b77181f961d306411f6407b72d5976c8000a",
   "supporting_primary_bodies": 312,
   "verification": {
-    "baseline_checkpoint_sha256": "f82aeea2fd5fa009205dd70b2e5d2f7175139c8d38601aa22938520db123350b",
-    "baseline_observation_sha256": "a9f886643475d813c65892d148de2b7fd5b0ac990ba61311d155a5b41e9e95a4",
+    "baseline_checkpoint_sha256": "06e8961c24de3157dbea9b5ef0bea02e3998082296f2ec79e0d3fd52c33ee788",
+    "baseline_observation_sha256": "ff396d8b2700582c822726e9009d31676dfef84d9d235e4a4ba76c7b33c58106",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 9,
-    "successful_receipts_replayed": 17
+    "primary_bodies_replayed": 0,
+    "successful_receipts_replayed": 0
   }
 }

@@ -1,36 +1,29 @@
 {
   "schema_version": 2,
-  "scan_day_utc": "2026-10-23",
-  "query": "(ti:\"computer use\" OR ti:\"computer-use\" OR ti:\"GUI agent\" OR ti:\"GUI agents\" OR ti:\"GUI grounding\" OR ti:\"web agent\" OR ti:\"browser agent\" OR ti:GUI OR ti:\"Android agent\" OR abs:\"computer-use agents\" OR abs:\"GUI agents\" OR abs:\"browser agents\" OR abs:\"mobile GUI\" OR abs:\"web navigation\" OR abs:AndroidWorld OR abs:Mind2Web) AND submittedDate:[202610090000 TO 202610230000]",
-  "since_utc": "202610090000",
-  "cutoff_utc": "202610230000",
+  "scan_day_utc": "2026-10-24",
+  "query": "(ti:\"computer use\" OR ti:\"computer-use\" OR ti:\"GUI agent\" OR ti:\"GUI agents\" OR ti:\"GUI grounding\" OR ti:\"web agent\" OR ti:\"browser agent\" OR ti:GUI OR ti:\"Android agent\" OR abs:\"computer-use agents\" OR abs:\"GUI agents\" OR abs:\"browser agents\" OR abs:\"mobile GUI\" OR abs:\"web navigation\" OR abs:AndroidWorld OR abs:Mind2Web) AND submittedDate:[202610100000 TO 202610240000]",
+  "since_utc": "202610100000",
+  "cutoff_utc": "202610240000",
   "polling_policy": "Complete arXiv snapshots are reused within one UTC publication day; failed or incomplete searches are retried by a later scheduled scan.",
-  "reported_total": 65,
-  "unique_returned": 65,
+  "reported_total": 55,
+  "unique_returned": 55,
   "complete": true,
   "pages": [
     {
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610090000+TO+202610230000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
-      "retrieved_at": "2026-10-23T13:28:11Z",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610100000+TO+202610240000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "retrieved_at": "2026-10-24T04:37:59Z",
       "ok": true,
       "request_attempts": 1,
       "status": 200,
-      "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610090000+TO+202610230000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610100000+TO+202610240000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
       "content_type": "application/atom+xml; charset=utf-8",
-      "sha256": "4a33c80b1036aa166001550d487c3c4babc2c502b81ca09f6e0eb3274f948b30",
-      "bytes": 172476,
+      "sha256": "c2773bbbb74ead2cf55bca4a35124b42aef9e32e277512be7ec2ed1dd6656f5f",
+      "bytes": 146392,
       "request_attempted": true,
       "start": 0,
-      "returned": 65
+      "returned": 55
     }
   ],
-  "new_ids": [
-    "arxiv:2610.31404",
-    "arxiv:2610.31307",
-    "arxiv:2610.31274",
-    "arxiv:2610.31107",
-    "arxiv:2610.30792",
-    "arxiv:2610.30573"
-  ],
+  "new_ids": [],
   "warnings": []
 }

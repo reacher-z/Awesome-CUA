@@ -26,7 +26,13 @@ export function bibliographicDate(record) {
 }
 export function compactFacts(record, slotLabel = slot => slot) {
   const year=bibliographicDate(record).slice(0,4), arxiv=record.paper_arxiv;
-  return [year&&{key:'year',text:year},arxiv&&{key:'paper',text:'arXiv '+arxiv,url:'https://arxiv.org/abs/'+arxiv},...Object.entries(record.declared_licenses || {}).map(([slot,name])=>({key:'license',text:slotLabel(slot)+' '+name}))].filter(Boolean);
+  return [year&&{key:'year',text:year},arxiv&&{key:'paper',text:'arXiv '+arxiv,url:'https://arxiv.org/abs/'+arxiv},...(record.scale || []).map(text=>({key:'scale',text})),...Object.entries(record.declared_licenses || {}).map(([slot,name])=>({key:'license',text:slotLabel(slot)+' '+name}))].filter(Boolean);
+}
+// Card facts are clamped to two lines: a card shows only the first recorded count, after the licenses, so the clamp can hide the count but
+// never a license. List rows wrap freely and show every count before the licenses.
+export function cardFacts(record, slotLabel) {
+  const facts=compactFacts({...record,scale:(record.scale || []).slice(0,1)},slotLabel);
+  return [...facts.filter(fact=>fact.key!=='scale'),...facts.filter(fact=>fact.key==='scale')];
 }
 export const TOPIC_ALIASES = {'reinforcement-learning':['RL'],'human-in-the-loop':['HITL']};
 const CJK = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u;

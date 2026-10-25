@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-25T04:42:34Z; **32/32** query windows succeeded. 1,498 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-10-25T13:12:13Z; **32/32** query windows succeeded. 1,498 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

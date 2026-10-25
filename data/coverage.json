@@ -383,7 +383,7 @@
       "snapshot": {
         "id": "showlab-gui",
         "url": "https://raw.githubusercontent.com/showlab/Awesome-GUI-Agent/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:47Z",
+        "retrieved_at": "2026-10-25T13:11:25Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -393,7 +393,7 @@
         "bytes": 61336,
         "request_attempted": true,
         "unique_resources": 338,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -413,7 +413,7 @@
       "snapshot": {
         "id": "zju-gui",
         "url": "https://raw.githubusercontent.com/ZJU-REAL/Awesome-GUI-Agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:48Z",
+        "retrieved_at": "2026-10-25T13:11:26Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -423,7 +423,7 @@
         "bytes": 53322,
         "request_attempted": true,
         "unique_resources": 218,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -443,7 +443,7 @@
       "snapshot": {
         "id": "os-agent-survey",
         "url": "https://raw.githubusercontent.com/OS-Agent-Survey/OS-Agent-Survey/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:48Z",
+        "retrieved_at": "2026-10-25T13:11:26Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -453,7 +453,7 @@
         "bytes": 69065,
         "request_attempted": true,
         "unique_resources": 224,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -473,7 +473,7 @@
       "snapshot": {
         "id": "wjhou-cua",
         "url": "https://raw.githubusercontent.com/wjhou/awesome-computer-use-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:48Z",
+        "retrieved_at": "2026-10-25T13:11:26Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -483,7 +483,7 @@
         "bytes": 39694,
         "request_attempted": true,
         "unique_resources": 132,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -503,7 +503,7 @@
       "snapshot": {
         "id": "steel-web",
         "url": "https://raw.githubusercontent.com/steel-dev/awesome-web-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:48Z",
+        "retrieved_at": "2026-10-25T13:11:26Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -513,7 +513,7 @@
         "bytes": 27039,
         "request_attempted": true,
         "unique_resources": 113,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -533,7 +533,7 @@
       "snapshot": {
         "id": "steel-web-archive",
         "url": "https://raw.githubusercontent.com/steel-dev/awesome-web-agents/main/ARCHIVE.md",
-        "retrieved_at": "2026-10-25T04:41:48Z",
+        "retrieved_at": "2026-10-25T13:11:26Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -543,7 +543,7 @@
         "bytes": 1138,
         "request_attempted": true,
         "unique_resources": 7,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -563,7 +563,7 @@
       "snapshot": {
         "id": "gui-datasets",
         "url": "https://raw.githubusercontent.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:49Z",
+        "retrieved_at": "2026-10-25T13:11:27Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -573,7 +573,7 @@
         "bytes": 48882,
         "request_attempted": true,
         "unique_resources": 170,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -593,7 +593,7 @@
       "snapshot": {
         "id": "delunn-multimodal",
         "url": "https://raw.githubusercontent.com/DeLunnLi/Awesome-Multimodal-GUI-Agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:49Z",
+        "retrieved_at": "2026-10-25T13:11:27Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -603,7 +603,7 @@
         "bytes": 159209,
         "request_attempted": true,
         "unique_resources": 588,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -623,7 +623,7 @@
       "snapshot": {
         "id": "tianyuan-cua",
         "url": "https://raw.githubusercontent.com/TianyuanYang/awesome-computer-use/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:49Z",
+        "retrieved_at": "2026-10-25T13:11:27Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -633,7 +633,7 @@
         "bytes": 21565,
         "request_attempted": true,
         "unique_resources": 94,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -653,7 +653,7 @@
       "snapshot": {
         "id": "cdxeve-cua",
         "url": "https://raw.githubusercontent.com/cdxeve/awesome-computer-use-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:49Z",
+        "retrieved_at": "2026-10-25T13:11:27Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -663,7 +663,7 @@
         "bytes": 9976,
         "request_attempted": true,
         "unique_resources": 78,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -683,7 +683,7 @@
       "snapshot": {
         "id": "supernal-gui",
         "url": "https://raw.githubusercontent.com/supernalintelligence/Awesome-Gui-Agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:49Z",
+        "retrieved_at": "2026-10-25T13:11:27Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -693,7 +693,7 @@
         "bytes": 18498,
         "request_attempted": true,
         "unique_resources": 63,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -713,7 +713,7 @@
       "snapshot": {
         "id": "yearly-gui",
         "url": "https://raw.githubusercontent.com/qy0720/awesome-yearly-gui-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:50Z",
+        "retrieved_at": "2026-10-25T13:11:28Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -723,7 +723,7 @@
         "bytes": 20691,
         "request_attempted": true,
         "unique_resources": 193,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -743,7 +743,7 @@
       "snapshot": {
         "id": "osu-gui",
         "url": "https://raw.githubusercontent.com/OSU-NLP-Group/GUI-Agents-Paper-List/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:50Z",
+        "retrieved_at": "2026-10-25T13:11:28Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -753,7 +753,7 @@
         "bytes": 429948,
         "request_attempted": true,
         "unique_resources": 544,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -773,7 +773,7 @@
       "snapshot": {
         "id": "opendilab-ui",
         "url": "https://raw.githubusercontent.com/opendilab/awesome-ui-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:50Z",
+        "retrieved_at": "2026-10-25T13:11:28Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -783,7 +783,7 @@
         "bytes": 35980,
         "request_attempted": true,
         "unique_resources": 144,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -803,7 +803,7 @@
       "snapshot": {
         "id": "jin-gui-hub",
         "url": "https://raw.githubusercontent.com/jin-s13/awesome-gui-agent-hub/main/AWESOME.md",
-        "retrieved_at": "2026-10-25T04:41:50Z",
+        "retrieved_at": "2026-10-25T13:11:28Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -813,7 +813,7 @@
         "bytes": 75543,
         "request_attempted": true,
         "unique_resources": 230,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -833,7 +833,7 @@
       "snapshot": {
         "id": "zju-iclr26",
         "url": "https://raw.githubusercontent.com/ZJU-REAL/Awesome-GUI-Agents/main/ICLR2026/Paperlist.md",
-        "retrieved_at": "2026-10-25T04:41:50Z",
+        "retrieved_at": "2026-10-25T13:11:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -843,7 +843,7 @@
         "bytes": 140177,
         "request_attempted": true,
         "unique_resources": 7,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -863,7 +863,7 @@
       "snapshot": {
         "id": "mobile-gui",
         "url": "https://raw.githubusercontent.com/dqtz5vpvj9-create/awesome-mobile-gui-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:51Z",
+        "retrieved_at": "2026-10-25T13:11:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -873,7 +873,7 @@
         "bytes": 31646,
         "request_attempted": true,
         "unique_resources": 40,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -893,7 +893,7 @@
       "snapshot": {
         "id": "phone-gui",
         "url": "https://raw.githubusercontent.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents/master/README.md",
-        "retrieved_at": "2026-10-25T04:41:51Z",
+        "retrieved_at": "2026-10-25T13:11:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -903,7 +903,7 @@
         "bytes": 48015,
         "request_attempted": true,
         "unique_resources": 247,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -923,7 +923,7 @@
       "snapshot": {
         "id": "mobile-agents",
         "url": "https://raw.githubusercontent.com/aialt/awesome-mobile-agents/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:51Z",
+        "retrieved_at": "2026-10-25T13:11:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -933,7 +933,7 @@
         "bytes": 23445,
         "request_attempted": true,
         "unique_resources": 91,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -953,7 +953,7 @@
       "snapshot": {
         "id": "web-research",
         "url": "https://raw.githubusercontent.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:51Z",
+        "retrieved_at": "2026-10-25T13:11:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -963,7 +963,7 @@
         "bytes": 4224,
         "request_attempted": true,
         "unique_resources": 10,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -983,7 +983,7 @@
       "snapshot": {
         "id": "ranpox-cua",
         "url": "https://raw.githubusercontent.com/ranpox/awesome-computer-use/main/README.md",
-        "retrieved_at": "2026-10-25T04:41:52Z",
+        "retrieved_at": "2026-10-25T13:11:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -993,7 +993,7 @@
         "bytes": 11601,
         "request_attempted": true,
         "unique_resources": 96,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1013,7 +1013,7 @@
       "snapshot": {
         "id": "gui-agent-security",
         "url": "https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:52Z",
+        "retrieved_at": "2026-10-25T13:11:30Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1023,7 +1023,7 @@
         "bytes": 36964,
         "request_attempted": true,
         "unique_resources": 186,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1043,7 +1043,7 @@
       "snapshot": {
         "id": "gui-agent-safety",
         "url": "https://raw.githubusercontent.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:52Z",
+        "retrieved_at": "2026-10-25T13:11:30Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1053,7 +1053,7 @@
         "bytes": 50132,
         "request_attempted": true,
         "unique_resources": 72,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1073,7 +1073,7 @@
       "snapshot": {
         "id": "gui-agent-memory",
         "url": "https://raw.githubusercontent.com/kqcoxn/Awesome-GUI-Agent-Memory/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:52Z",
+        "retrieved_at": "2026-10-25T13:11:30Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1083,7 +1083,7 @@
         "bytes": 24575,
         "request_attempted": true,
         "unique_resources": 50,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1103,7 +1103,7 @@
       "snapshot": {
         "id": "chenvoid-gui",
         "url": "https://raw.githubusercontent.com/ChenVoid/Awesome-GUI-Agent/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:52Z",
+        "retrieved_at": "2026-10-25T13:11:30Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1113,7 +1113,7 @@
         "bytes": 31725,
         "request_attempted": true,
         "unique_resources": 215,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1133,7 +1133,7 @@
       "snapshot": {
         "id": "philfung-cua",
         "url": "https://raw.githubusercontent.com/philfung/awesome-computer-use/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:53Z",
+        "retrieved_at": "2026-10-25T13:11:30Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1143,7 +1143,7 @@
         "bytes": 3326,
         "request_attempted": true,
         "unique_resources": 27,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1163,7 +1163,7 @@
       "snapshot": {
         "id": "release-fara",
         "url": "https://raw.githubusercontent.com/microsoft/fara/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:53Z",
+        "retrieved_at": "2026-10-25T13:11:31Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1173,7 +1173,7 @@
         "bytes": 19152,
         "request_attempted": true,
         "unique_resources": 18,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1193,7 +1193,7 @@
       "snapshot": {
         "id": "release-ui-venus",
         "url": "https://raw.githubusercontent.com/inclusionAI/UI-Venus/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:53Z",
+        "retrieved_at": "2026-10-25T13:11:31Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1203,7 +1203,7 @@
         "bytes": 35279,
         "request_attempted": true,
         "unique_resources": 9,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1223,7 +1223,7 @@
       "snapshot": {
         "id": "release-opengvlab-scalecua",
         "url": "https://raw.githubusercontent.com/OpenGVLab/ScaleCUA/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:53Z",
+        "retrieved_at": "2026-10-25T13:11:31Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1233,7 +1233,7 @@
         "bytes": 7910,
         "request_attempted": true,
         "unique_resources": 15,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1253,7 +1253,7 @@
       "snapshot": {
         "id": "release-thudm-scalecua",
         "url": "https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:53Z",
+        "retrieved_at": "2026-10-25T13:11:31Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1263,7 +1263,7 @@
         "bytes": 13479,
         "request_attempted": true,
         "unique_resources": 28,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1283,7 +1283,7 @@
       "snapshot": {
         "id": "release-showui-pi",
         "url": "https://raw.githubusercontent.com/showlab/showui-pi/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:54Z",
+        "retrieved_at": "2026-10-25T13:11:32Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1293,7 +1293,7 @@
         "bytes": 2784,
         "request_attempted": true,
         "unique_resources": 11,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1313,7 +1313,7 @@
       "snapshot": {
         "id": "release-opencua",
         "url": "https://raw.githubusercontent.com/xlang-ai/OpenCUA/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:54Z",
+        "retrieved_at": "2026-10-25T13:11:32Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1323,7 +1323,7 @@
         "bytes": 17894,
         "request_attempted": true,
         "unique_resources": 18,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1343,7 +1343,7 @@
       "snapshot": {
         "id": "release-webdreamer",
         "url": "https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:54Z",
+        "retrieved_at": "2026-10-25T13:11:32Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1353,7 +1353,7 @@
         "bytes": 6779,
         "request_attempted": true,
         "unique_resources": 5,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1373,7 +1373,7 @@
       "snapshot": {
         "id": "release-nnetnav",
         "url": "https://raw.githubusercontent.com/MurtyShikhar/NNetnav/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:54Z",
+        "retrieved_at": "2026-10-25T13:11:32Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1383,7 +1383,7 @@
         "bytes": 10548,
         "request_attempted": true,
         "unique_resources": 6,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1403,7 +1403,7 @@
       "snapshot": {
         "id": "release-groundgui",
         "url": "https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:54Z",
+        "retrieved_at": "2026-10-25T13:11:32Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1413,7 +1413,7 @@
         "bytes": 14195,
         "request_attempted": true,
         "unique_resources": 11,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1433,7 +1433,7 @@
       "snapshot": {
         "id": "release-seg2click",
         "url": "https://raw.githubusercontent.com/jcwang0602/Seg2Click/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:54Z",
+        "retrieved_at": "2026-10-25T13:11:33Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1443,7 +1443,7 @@
         "bytes": 12553,
         "request_attempted": true,
         "unique_resources": 12,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1463,7 +1463,7 @@
       "snapshot": {
         "id": "release-switchmem",
         "url": "https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:55Z",
+        "retrieved_at": "2026-10-25T13:11:33Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1473,7 +1473,7 @@
         "bytes": 9710,
         "request_attempted": true,
         "unique_resources": 1,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1493,7 +1493,7 @@
       "snapshot": {
         "id": "release-openmobile2",
         "url": "https://raw.githubusercontent.com/OpenMobile2/OpenMobile2-Code/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:55Z",
+        "retrieved_at": "2026-10-25T13:11:33Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1503,7 +1503,7 @@
         "bytes": 15272,
         "request_attempted": true,
         "unique_resources": 13,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1523,7 +1523,7 @@
       "snapshot": {
         "id": "release-mobilegympp",
         "url": "https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:55Z",
+        "retrieved_at": "2026-10-25T13:11:33Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1533,7 +1533,7 @@
         "bytes": 14565,
         "request_attempted": true,
         "unique_resources": 8,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1553,7 +1553,7 @@
       "snapshot": {
         "id": "release-carryon",
         "url": "https://raw.githubusercontent.com/Ethannju/carryon/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:55Z",
+        "retrieved_at": "2026-10-25T13:11:33Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1563,7 +1563,7 @@
         "bytes": 2342,
         "request_attempted": true,
         "unique_resources": 2,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1583,7 +1583,7 @@
       "snapshot": {
         "id": "release-gracebench",
         "url": "https://iaie-physicalai.github.io/GraceBench",
-        "retrieved_at": "2026-10-25T04:41:56Z",
+        "retrieved_at": "2026-10-25T13:11:34Z",
         "ok": true,
         "request_attempts": 2,
         "status": 200,
@@ -1593,7 +1593,7 @@
         "bytes": 12407,
         "request_attempted": true,
         "unique_resources": 3,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "iaie-physicalai.github.io",
         "state": "success"
       },
@@ -1613,7 +1613,7 @@
       "snapshot": {
         "id": "release-aguvis",
         "url": "https://raw.githubusercontent.com/xlang-ai/aguvis/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:56Z",
+        "retrieved_at": "2026-10-25T13:11:34Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1623,7 +1623,7 @@
         "bytes": 4575,
         "request_attempted": true,
         "unique_resources": 6,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1643,7 +1643,7 @@
       "snapshot": {
         "id": "release-os-atlas",
         "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Atlas/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:56Z",
+        "retrieved_at": "2026-10-25T13:11:34Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1653,7 +1653,7 @@
         "bytes": 8354,
         "request_attempted": true,
         "unique_resources": 10,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1673,7 +1673,7 @@
       "snapshot": {
         "id": "release-mobileagent",
         "url": "https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:56Z",
+        "retrieved_at": "2026-10-25T13:11:34Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1683,7 +1683,7 @@
         "bytes": 15180,
         "request_attempted": true,
         "unique_resources": 33,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1703,7 +1703,7 @@
       "snapshot": {
         "id": "release-guicourse",
         "url": "https://raw.githubusercontent.com/yiye3/GUICourse/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:56Z",
+        "retrieved_at": "2026-10-25T13:11:34Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1713,7 +1713,7 @@
         "bytes": 6658,
         "request_attempted": true,
         "unique_resources": 7,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1733,7 +1733,7 @@
       "snapshot": {
         "id": "release-os-genesis",
         "url": "https://raw.githubusercontent.com/OS-Copilot/OS-Genesis/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:57Z",
+        "retrieved_at": "2026-10-25T13:11:35Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1743,7 +1743,7 @@
         "bytes": 9262,
         "request_attempted": true,
         "unique_resources": 29,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1763,7 +1763,7 @@
       "snapshot": {
         "id": "release-multiui",
         "url": "https://raw.githubusercontent.com/neulab/multiui/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:57Z",
+        "retrieved_at": "2026-10-25T13:11:35Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1773,7 +1773,7 @@
         "bytes": 3697,
         "request_attempted": true,
         "unique_resources": 8,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1793,7 +1793,7 @@
       "snapshot": {
         "id": "release-ui-genie",
         "url": "https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:57Z",
+        "retrieved_at": "2026-10-25T13:11:35Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1803,7 +1803,7 @@
         "bytes": 5703,
         "request_attempted": true,
         "unique_resources": 12,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1823,7 +1823,7 @@
       "snapshot": {
         "id": "release-scienceboard",
         "url": "https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:57Z",
+        "retrieved_at": "2026-10-25T13:11:35Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1833,7 +1833,7 @@
         "bytes": 13878,
         "request_attempted": true,
         "unique_resources": 16,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1853,7 +1853,7 @@
       "snapshot": {
         "id": "release-mai-ui",
         "url": "https://raw.githubusercontent.com/Tongyi-MAI/MAI-UI/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:58Z",
+        "retrieved_at": "2026-10-25T13:11:35Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1863,7 +1863,7 @@
         "bytes": 13854,
         "request_attempted": true,
         "unique_resources": 17,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1883,17 +1883,17 @@
       "snapshot": {
         "id": "release-hcompany-model-index",
         "url": "https://huggingface.co/api/models?author=Hcompany&limit=100&sort=lastModified&direction=-1",
-        "retrieved_at": "2026-10-25T04:41:58Z",
+        "retrieved_at": "2026-10-25T13:11:36Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/models?author=Hcompany&limit=100&sort=lastModified&direction=-1",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "386ecb7df9131367d7681f5c3c02e16b441722b1d59bb21df8d59bf9c0e302c7",
+        "sha256": "ed1d531fb0f90cda8d2ca8dfe7593e164e785ad872dd6dbc89c76efbf5e00086",
         "bytes": 23060,
         "request_attempted": true,
         "unique_resources": 39,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "huggingface.co",
         "state": "success"
       },
@@ -1913,7 +1913,7 @@
       "snapshot": {
         "id": "maxiw-gui",
         "url": "https://raw.githubusercontent.com/maxi-w/awesome-ai-for-gui-agents/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:58Z",
+        "retrieved_at": "2026-10-25T13:11:36Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1923,7 +1923,7 @@
         "bytes": 9378,
         "request_attempted": true,
         "unique_resources": 50,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1943,7 +1943,7 @@
       "snapshot": {
         "id": "on-device-agents",
         "url": "https://raw.githubusercontent.com/Adam-THU/awesome-on-device-agents/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:58Z",
+        "retrieved_at": "2026-10-25T13:11:36Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1953,7 +1953,7 @@
         "bytes": 11821,
         "request_attempted": true,
         "unique_resources": 32,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -1973,7 +1973,7 @@
       "snapshot": {
         "id": "awesome-everything-gui",
         "url": "https://raw.githubusercontent.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List/HEAD/README.md",
-        "retrieved_at": "2026-10-25T04:41:58Z",
+        "retrieved_at": "2026-10-25T13:11:36Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1983,7 +1983,7 @@
         "bytes": 441781,
         "request_attempted": true,
         "unique_resources": 496,
-        "run_started_at": "2026-10-25T04:41:47Z",
+        "run_started_at": "2026-10-25T13:11:25Z",
         "provider_host": "raw.githubusercontent.com",
         "state": "success"
       },
@@ -2166,8 +2166,8 @@
   },
   "paper_discovery": {
     "schema_version": 1,
-    "started_at": "2026-10-25T04:41:59Z",
-    "finished_at": "2026-10-25T04:42:34Z",
+    "started_at": "2026-10-25T13:11:37Z",
+    "finished_at": "2026-10-25T13:12:13Z",
     "provider": "huggingface_papers_search",
     "requested_refresh": true,
     "status": "success",
@@ -2187,13 +2187,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=computer+use+agents&limit=80",
-          "retrieved_at": "2026-10-25T04:41:59Z",
+          "retrieved_at": "2026-10-25T13:11:37Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=computer+use+agents&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "5eaa71728a17910f7a3f823a4ea410f017b14cb24167745c6a9950ab0fdf3273",
+          "sha256": "602373f516c7b127405b986bb38e760649c2c7a61b131fd539cfff9e3bb66bd6",
           "bytes": 579149,
           "request_attempted": true
         },
@@ -2292,7 +2292,7 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+grounding+benchmark&limit=80",
-          "retrieved_at": "2026-10-25T04:42:00Z",
+          "retrieved_at": "2026-10-25T13:11:38Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
@@ -2401,13 +2401,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=mobile+GUI+agent+reinforcement+learning&limit=80",
-          "retrieved_at": "2026-10-25T04:42:01Z",
+          "retrieved_at": "2026-10-25T13:11:39Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=mobile+GUI+agent+reinforcement+learning&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "93f6b171017c2c361a2e2ca56ec6de804c366b203e6529be6b48820588c95297",
+          "sha256": "3b3c9df7c8addd9c12bc88f60341a670e55a49b08175f30ed7990ea9bc43b2b2",
           "bytes": 585869,
           "request_attempted": true
         },
@@ -2510,13 +2510,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=web+agent+dataset+benchmark&limit=80",
-          "retrieved_at": "2026-10-25T04:42:02Z",
+          "retrieved_at": "2026-10-25T13:11:40Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=web+agent+dataset+benchmark&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "b356036395825e6fe88dc4fc32b50228342cd8af376fcaa96a5977e56a9bd7f7",
+          "sha256": "066163e84a31d7d7e3acfbc0fbc450e29d10d29b77a09b7dae697e47c033de29",
           "bytes": 575429,
           "request_attempted": true
         },
@@ -2619,7 +2619,7 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=computer+use+agent+safety&limit=80",
-          "retrieved_at": "2026-10-25T04:42:04Z",
+          "retrieved_at": "2026-10-25T13:11:42Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
@@ -2728,13 +2728,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+memory+planning&limit=80",
-          "retrieved_at": "2026-10-25T04:42:05Z",
+          "retrieved_at": "2026-10-25T13:11:43Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+memory+planning&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "891f0135625f27e49bedc3b668de5a6e81af95e12aacadb9850603dbb24d1ca0",
+          "sha256": "7c9ba8f574222755ede7a8523346cce98e68a3f1906423a395020e59bd9818c5",
           "bytes": 569764,
           "request_attempted": true
         },
@@ -2837,13 +2837,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=desktop+computer+use+agent+Windows+macOS+Linux&limit=80",
-          "retrieved_at": "2026-10-25T04:42:07Z",
+          "retrieved_at": "2026-10-25T13:11:44Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=desktop+computer+use+agent+Windows+macOS+Linux&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "49dab8bb4d29176bf82445dd1b4b2d314b022eddabb76f053483c67f22a3d9a7",
+          "sha256": "a465be2da5867438aeaa4ab1497bc65bd0ede7beb09f8e6ad0cb2269abd8f586",
           "bytes": 580060,
           "request_attempted": true
         },
@@ -2946,13 +2946,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=Android+smartphone+GUI+agent+automation&limit=80",
-          "retrieved_at": "2026-10-25T04:42:08Z",
+          "retrieved_at": "2026-10-25T13:11:45Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=Android+smartphone+GUI+agent+automation&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "d0db2c568ec84313b9125a43652073345a86443d2e2d9cd52567c0985a689085",
+          "sha256": "f4d45c9ac4ce03cafef4b048fd6a3224d8edcd6a6ef6249bebde4f44b509e124",
           "bytes": 580424,
           "request_attempted": true
         },
@@ -3055,13 +3055,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=iOS+iPhone+GUI+agent+benchmark&limit=80",
-          "retrieved_at": "2026-10-25T04:42:09Z",
+          "retrieved_at": "2026-10-25T13:11:46Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=iOS+iPhone+GUI+agent+benchmark&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "7adb4047fc4e8b3618104d96a2c1222357d658915f75118d52b9a1f31f2b912d",
+          "sha256": "10c57d7dffee17e714c26e571f93a6c6fdab96944f9160080f64273319e59455",
           "bytes": 592655,
           "request_attempted": true
         },
@@ -3164,13 +3164,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=HarmonyOS+mobile+GUI+agent&limit=80",
-          "retrieved_at": "2026-10-25T04:42:10Z",
+          "retrieved_at": "2026-10-25T13:11:48Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=HarmonyOS+mobile+GUI+agent&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "906b7fd54c8ba5ec0fb63b3bebae9caae98f51a7ba687f41fb17acbae34fedab",
+          "sha256": "9e778fe4e768053dc7221b76ce270f1cc7905865c13bc80b36a72881ca6a1eef",
           "bytes": 586163,
           "request_attempted": true
         },
@@ -3273,13 +3273,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+screen+understanding+interface+element+detection&limit=80",
-          "retrieved_at": "2026-10-25T04:42:11Z",
+          "retrieved_at": "2026-10-25T13:11:50Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+screen+understanding+interface+element+detection&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "af8a568c8ba46507ed7b05e20aac323d4459b207de7cb633235b4a68c1bbbaf5",
+          "sha256": "061883e696c855a324c869b7d0ad971bb8d7932dd7d75ee08ec45c5bf9c4e71d",
           "bytes": 536673,
           "request_attempted": true
         },
@@ -3382,13 +3382,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=screenshot+visual+grounding+click+localization+agent&limit=80",
-          "retrieved_at": "2026-10-25T04:42:12Z",
+          "retrieved_at": "2026-10-25T13:11:51Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=screenshot+visual+grounding+click+localization+agent&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "14f960a389c48844f60ed0c36929cfa938b6487328e013d3cd843b9bd17939dc",
+          "sha256": "b75c214e38266a8d3c8f99bd9b0134933256fec0687d7edc279d04e0d4c77b14",
           "bytes": 531188,
           "request_attempted": true
         },
@@ -3491,13 +3491,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=visual+web+navigation+browser+agent&limit=80",
-          "retrieved_at": "2026-10-25T04:42:13Z",
+          "retrieved_at": "2026-10-25T13:11:52Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=visual+web+navigation+browser+agent&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "2043d658b4738c760723273f24dd5eb49e59bfc8953e4a3414c31222dd8c540e",
+          "sha256": "468692a1ddc588205b8efb9f657c056652e7e8e7ae6162cb78b4688deb234d55",
           "bytes": 539556,
           "request_attempted": true
         },
@@ -3600,13 +3600,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=cross+application+multi+app+GUI+agents&limit=80",
-          "retrieved_at": "2026-10-25T04:42:14Z",
+          "retrieved_at": "2026-10-25T13:11:53Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=cross+application+multi+app+GUI+agents&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "497bd12bcf2ed433bc075e1deee662659bb013be2eb2e67609169b97715588d8",
+          "sha256": "d0b4f9b048b976208a31d01c8c37cf9a231cb7f6f17fc3f5a3ae6835b1158141",
           "bytes": 609199,
           "request_attempted": true
         },
@@ -3709,13 +3709,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=long+horizon+computer+use+agent+workflow+planning&limit=80",
-          "retrieved_at": "2026-10-25T04:42:15Z",
+          "retrieved_at": "2026-10-25T13:11:54Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=long+horizon+computer+use+agent+workflow+planning&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "29257d9ff4a48912c1d7de860f4b89822b3d9d0a247888276baf85ae88b8f8ba",
+          "sha256": "53626f535a5cad81de8f7595e1e5631585642d77b4ff8f63c5ff3ac90f291876",
           "bytes": 579658,
           "request_attempted": true
         },
@@ -3818,13 +3818,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+episodic+memory+self+reflection&limit=80",
-          "retrieved_at": "2026-10-25T04:42:16Z",
+          "retrieved_at": "2026-10-25T13:11:55Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+episodic+memory+self+reflection&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "a1d6c9060d3aaad4e38dc86b22347b56b97432a6ff20ab4481f1fdd4a0744a16",
+          "sha256": "e0a61488889c1bf532b04eb0b6d156501c87a69ce5c957275e5fee9b3dcc5c58",
           "bytes": 546159,
           "request_attempted": true
         },
@@ -3927,13 +3927,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=computer+use+agent+online+reinforcement+learning+rewards&limit=80",
-          "retrieved_at": "2026-10-25T04:42:17Z",
+          "retrieved_at": "2026-10-25T13:11:56Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=computer+use+agent+online+reinforcement+learning+rewards&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "765a88e2c951b629569b8c0fa41cc729d4e903455ae76e15a071afdf61b05035",
+          "sha256": "5798bd3027aa3f9f3d78852108bb2dc03ea96b76c9ea9f87a44a07908603cd7a",
           "bytes": 526538,
           "request_attempted": true
         },
@@ -4036,13 +4036,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+imitation+learning+human+demonstration+trajectories&limit=80",
-          "retrieved_at": "2026-10-25T04:42:19Z",
+          "retrieved_at": "2026-10-25T13:11:58Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+imitation+learning+human+demonstration+trajectories&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "a8af7f1af32636031a1c6b9360f27f1eb0357d9c14091723d9c6130f6c835a70",
+          "sha256": "6a9f505638f7948768acec157eaaea371dadbcee79cfbe6d519a773d68232ba1",
           "bytes": 510058,
           "request_attempted": true
         },
@@ -4145,13 +4145,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=synthetic+GUI+agent+training+data+generation&limit=80",
-          "retrieved_at": "2026-10-25T04:42:20Z",
+          "retrieved_at": "2026-10-25T13:11:59Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=synthetic+GUI+agent+training+data+generation&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "56891b724777660fe32fc61ac929d340d34e71c09c34da20854a68ae00574e11",
+          "sha256": "21312708b6f0b1ca5f71d31bb1b11956771abef930053e6433df219b624df63b",
           "bytes": 614945,
           "request_attempted": true
         },
@@ -4254,14 +4254,14 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=computer+use+benchmark+task+evaluation+state+verification&limit=80",
-          "retrieved_at": "2026-10-25T04:42:21Z",
+          "retrieved_at": "2026-10-25T13:12:00Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=computer+use+benchmark+task+evaluation+state+verification&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "6ae3808a56dc60ed56203696aaa5ff4f3e81079d409bd02cbeaaa9905332a761",
-          "bytes": 592992,
+          "sha256": "58af61f5dd79e22637c560e1549b917daac8f881841dc6dd0df06e4a8c747d3e",
+          "bytes": 593540,
           "request_attempted": true
         },
         "identifiers": [
@@ -4363,13 +4363,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=professional+software+GUI+agent+CAD+Blender+3D&limit=80",
-          "retrieved_at": "2026-10-25T04:42:22Z",
+          "retrieved_at": "2026-10-25T13:12:01Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=professional+software+GUI+agent+CAD+Blender+3D&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "62a504a5760c56b4bd0ced28bffb274ddfe2bcc5f2dfcb2a2fbcbf76f2bb48d4",
+          "sha256": "37626c75065aa19cee1e16e9b7def3e1b1f1b993fdf5fea35abf51b60a30550e",
           "bytes": 533380,
           "request_attempted": true
         },
@@ -4472,13 +4472,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=spreadsheets+presentations+documents+computer+use+agents&limit=80",
-          "retrieved_at": "2026-10-25T04:42:23Z",
+          "retrieved_at": "2026-10-25T13:12:02Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=spreadsheets+presentations+documents+computer+use+agents&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "e27c181d5fd40585054ec3f3d628e4cffa4dfbb4645a0f1ceb96ed94dd162628",
+          "sha256": "6d69d1e376181b55fe5d185b6adc660bf2379ae330fe280be9c994c0bf45ca21",
           "bytes": 534135,
           "request_attempted": true
         },
@@ -4581,13 +4581,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=accessibility+assistive+multimodal+GUI+agents&limit=80",
-          "retrieved_at": "2026-10-25T04:42:24Z",
+          "retrieved_at": "2026-10-25T13:12:03Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=accessibility+assistive+multimodal+GUI+agents&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "700d8b22858175d506df28da090d6b7710ddc43898f0fced9bb86933b3bf077a",
+          "sha256": "300d16a727f1758695835346cba66d8d260ce11622db469a19d49fa6bd68f35d",
           "bytes": 546038,
           "request_attempted": true
         },
@@ -4690,13 +4690,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+robustness+dynamic+interfaces+distribution+shift&limit=80",
-          "retrieved_at": "2026-10-25T04:42:25Z",
+          "retrieved_at": "2026-10-25T13:12:04Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+robustness+dynamic+interfaces+distribution+shift&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "c74f635a899f1f75ef69d743323b4f624111b68eef959910a90c69b0e084f04c",
+          "sha256": "b2166b338ac88a94a46cd22adba53d256e9fb3684a95ee489a7ef635829c520e",
           "bytes": 561332,
           "request_attempted": true
         },
@@ -4799,13 +4799,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=browser+GUI+agent+prompt+injection+adversarial+security&limit=80",
-          "retrieved_at": "2026-10-25T04:42:26Z",
+          "retrieved_at": "2026-10-25T13:12:05Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=browser+GUI+agent+prompt+injection+adversarial+security&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "d1098d4f83d2b25934f32c6cf050e4f415f3e5290beef0bd0b2e8ca67861261a",
+          "sha256": "28f8c416f80858675a2a7eed7f9e4b0b5c4d5842b90023af08c23dcda148e9a4",
           "bytes": 509556,
           "request_attempted": true
         },
@@ -4908,7 +4908,7 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+human+collaboration+clarification+intervention&limit=80",
-          "retrieved_at": "2026-10-25T04:42:27Z",
+          "retrieved_at": "2026-10-25T13:12:06Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
@@ -5017,13 +5017,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+efficiency+latency+visual+token+compression&limit=80",
-          "retrieved_at": "2026-10-25T04:42:28Z",
+          "retrieved_at": "2026-10-25T13:12:07Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+efficiency+latency+visual+token+compression&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "c80991c8904a7e76c12245e6250756628ce4fcc2d9d49b9736247e2d6148dd68",
+          "sha256": "8a7ee8d4bd7de1ff1dbbc0ee55f67ceffe3d71c21437d21718930a063bdc029d",
           "bytes": 526886,
           "request_attempted": true
         },
@@ -5126,13 +5126,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=open+source+GUI+model+computer+use+checkpoint&limit=80",
-          "retrieved_at": "2026-10-25T04:42:29Z",
+          "retrieved_at": "2026-10-25T13:12:08Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=open+source+GUI+model+computer+use+checkpoint&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "20a01c859128bdc558bd74368dbf9a70041940f7a87b83ce484471f2de7b087b",
+          "sha256": "6cac16df207f7e5f5563aa19c807e908fc633667aca82f9e1c45d298068fd496",
           "bytes": 567265,
           "request_attempted": true
         },
@@ -5235,13 +5235,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=visual+workflow+automation+robotic+process+automation+agents&limit=80",
-          "retrieved_at": "2026-10-25T04:42:30Z",
+          "retrieved_at": "2026-10-25T13:12:09Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=visual+workflow+automation+robotic+process+automation+agents&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "62ccd4de1e4ff9fedc0c2f8e04ddd87f2a90e44eec3b5ed91b26433440d10cb1",
+          "sha256": "84ec49c82ba6f9ba08308d1b66e061f69773d7455e1e832e5849080f025a706c",
           "bytes": 549465,
           "request_attempted": true
         },
@@ -5344,13 +5344,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=multilingual+GUI+agent+interface+grounding&limit=80",
-          "retrieved_at": "2026-10-25T04:42:31Z",
+          "retrieved_at": "2026-10-25T13:12:10Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=multilingual+GUI+agent+interface+grounding&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "57d8a6475a8050ef31bd0bda71fc1cbe7812734c83614a2ac7fff977bff42646",
+          "sha256": "7d59faa28a9c72d80b364e8e43d150eb088f80ca4dcd36f02af56a3abac41205",
           "bytes": 588368,
           "request_attempted": true
         },
@@ -5453,13 +5453,13 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=GUI+agent+software+testing+interface+exploration&limit=80",
-          "retrieved_at": "2026-10-25T04:42:32Z",
+          "retrieved_at": "2026-10-25T13:12:12Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,
           "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+software+testing+interface+exploration&limit=80",
           "content_type": "application/json; charset=utf-8",
-          "sha256": "38566d1636a1f38d7e22074fa9088884c9306528b98db39f69f88b55b190724e",
+          "sha256": "0c9c16617aa793c176532b64a79e7ed14a088a0a1e11d1696a92fbdacf7b5e16",
           "bytes": 576559,
           "request_attempted": true
         },
@@ -5562,7 +5562,7 @@
         "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
         "evidence": {
           "url": "https://huggingface.co/api/papers/search?q=%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2+%E6%99%BA%E8%83%BD%E4%BD%93+%E6%89%8B%E6%9C%BA+%E7%94%B5%E8%84%91%E6%93%8D%E4%BD%9C&limit=80",
-          "retrieved_at": "2026-10-25T04:42:33Z",
+          "retrieved_at": "2026-10-25T13:12:13Z",
           "ok": true,
           "request_attempts": 1,
           "status": 200,

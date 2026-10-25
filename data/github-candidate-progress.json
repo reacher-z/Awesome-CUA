@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "007172dd804ffa7d84742c8dd113b9e6baa2ae17174034c4a3dd40eef70fd30a",
+  "manifest_sha256": "d90336a3f46cdf4e31a5039b2ab97d36d73ccd698549cb8f1aecd1d776214d5e",
   "observation_snapshot_sha256": "3bba7d5e89dac089ad9336e9a1bf41ef2c5d118d1f8742f6c051786239fe0468",
   "provider": "github",
   "schema_version": 1,
@@ -1166,11 +1166,48 @@
           }
         },
         "id": "e1d7c41305a757895d23fa26c20e93b5f1ba8ab690d6301d7edad3ae70a0fc47"
+      },
+      {
+        "active_records": 3260,
+        "curated_records": 1671,
+        "existing_seed_count": 229,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 19986,
+            "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+          },
+          "candidates.jsonl": {
+            "bytes": 5055910,
+            "sha256": "029442486b6a417eb693be957c8056b9be354a5cbb283825765cba7f80a52375"
+          },
+          "catalog.jsonl": {
+            "bytes": 8482739,
+            "sha256": "33ccda94c4efc0ea058cbfc410f250e74652c2e00e74c8692428b513b33193ba"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 1836286,
+            "sha256": "69b36c4ae56e9c5ffc486429f260061416f1c03cafab293126154190a0f9b718"
+          },
+          "repository-aliases.json": {
+            "bytes": 24061,
+            "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+          }
+        },
+        "id": "137b2df1fc6031c85ba3ce7734c55f7b42b4035a3411a951d39578b5876e9c18"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:137b2df1fc6031c85ba3ce7734c55f7b42b4035a3411a951d39578b5876e9c18",
+        "input_id": "137b2df1fc6031c85ba3ce7734c55f7b42b4035a3411a951d39578b5876e9c18",
+        "kind": "existing",
+        "last_attempt": 409,
+        "next_index": 2,
+        "seed_count": 229,
+        "status": "pending"
+      },
       {
         "id": "existing:e1d7c41305a757895d23fa26c20e93b5f1ba8ab690d6301d7edad3ae70a0fc47",
         "input_id": "e1d7c41305a757895d23fa26c20e93b5f1ba8ab690d6301d7edad3ae70a0fc47",
@@ -1178,7 +1215,7 @@
         "last_attempt": 405,
         "next_index": 2,
         "seed_count": 229,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:9d65b046f45b320c6ad2f404dafb237d8b4d6ec0ea8d951578082c97954e8d94",
@@ -61246,6 +61283,26 @@
         "run_id": "run:d582b2e48e6126a8f093668f",
         "source_url": "https://api.github.com/search/repositories?q=topic%3Aweb-agents+is%3Apublic+fork%3Afalse+created%3A2026-10-24..2026-10-25&per_page=100&page=1&sort=updated&order=asc",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-10-25T19:05:09.303727+00:00",
+        "id": "receipt:fe8ea26df56a0262241a27fced14ce25cf15db46aa466aae746ddb03f6ca4bd8",
+        "incomplete_results": null,
+        "outcome": "redirect_not_followed",
+        "position": 1,
+        "query_id": "existing:137b2df1fc6031c85ba3ce7734c55f7b42b4035a3411a951d39578b5876e9c18",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "68f653a6d8b56ef27c478546cb91b6a127acd0103d4849150dc3104314398686",
+        "requested_at": "2026-10-25T19:05:09.161232+00:00",
+        "response_bytes": 198,
+        "response_sha256": "6b5bb8a823de0cec9aa11bdfe6f07da23e4d8ae40d455a04e0219f44b0789ea6",
+        "returned_count": null,
+        "run_id": "run:5492e3498e653228dfd939e8",
+        "source_url": null,
+        "status": 301
       }
     ],
     "runs": [
@@ -62302,9 +62359,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 202.909591282
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 9412,
+        "before_unique_repositories": 9412,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:137b2df1fc6031c85ba3ce7734c55f7b42b4035a3411a951d39578b5876e9c18"
+        ],
+        "epoch_id": "epoch:066cfac821a5763867dab389",
+        "finished_at": "2026-10-25T19:05:10.334016+00:00",
+        "id": "run:5492e3498e653228dfd939e8",
+        "input_id": "137b2df1fc6031c85ba3ce7734c55f7b42b4035a3411a951d39578b5876e9c18",
+        "new_unique_repositories": 0,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 1,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 88,
+          "reservations_before": 87,
+          "reservations_charged": 1,
+          "round_id": "ae9eefda413641eeb88c24d427572791"
+        },
+        "started_at": "2026-10-25T19:05:06.242525+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 196.73741984499998
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "d50753753f08648c9ab0ddeff4920d88b1b7814e2f1873504ef6daa3e7ebd47f"
+  "state_sha256": "70ccb7d3d8248261c26d126e35411f71e9a23335a24ec411937cf721e7394ebd"
 }

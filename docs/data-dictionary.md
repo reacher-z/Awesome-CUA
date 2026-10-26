@@ -225,7 +225,7 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `github-candidate-progress.json` | Command output | `candidate_state.py` prepares the initial checkpoint from retained evidence; `scan.py` advances the fingerprint-bound query/epoch cursors and receipts. No repository descriptions, owner/contact objects or raw API bodies belong here |
 | `catalog.jsonl`, `coverage.json`, `exclusion-status.json`, `references.jsonl`, `review-queue.jsonl` | Build output | `catalog.py build` |
 | `docs/agents.md`, `docs/benchmarks.md`, `docs/companies.md`, `docs/datasets.md`, `docs/frameworks.md`, `docs/infrastructures.md`, `docs/models.md`, `docs/products.md`, `docs/surveys.md`, `docs/tools.md` | Build output | `catalog.py build` |
-| `docs/papers.md`, `docs/coverage.md`, `docs/topics.md`, `docs/topics/*.md` | Build output | `catalog.py build` |
+| `docs/papers.md`, `docs/coverage.md`, `docs/topics.md`, `docs/topics/*.md`, `docs/environments.md`, `docs/environments/*.md` | Build output | `catalog.py build` |
 | `BADGES`, `STATS`, `EXPLORE`, `HIGHLIGHTS`, and `RECENT` blocks in `README.md` and `README.zh-CN.md` | Build output | `catalog.py build` replaces the text between each block's `START` and `END` markers; the rest of both READMEs is authored |
 | `TOPICS` block in `docs/data-dictionary.md` | Build output | `catalog.py build` regenerates the topic table from `topics.json`; the rest of this file is authored |
 | `dist/catalog.sqlite`, `dist/catalog.json`, `dist/site/` | Ignored build output | `catalog.py build` and `build_site.py`; never committed |

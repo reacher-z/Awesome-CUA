@@ -10,7 +10,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 
 **English** · [简体中文](README.zh-CN.md)
 
-<a href="https://awesomecua.github.io/"><img src="assets/readme-banner.svg" alt="Awesome CUA — computer-use agent research, data and tools connected to original sources" width="960"></a>
+<a href="https://awesomecua.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-banner-dark.svg"><img src="assets/readme-banner.svg" alt="Awesome CUA — computer-use agent research, data and tools connected to original sources" width="960"></picture></a>
 
 **[Search & filter](https://awesomecua.github.io/)** · **[Research papers](https://awesomecua.github.io/papers/)** · **[Browse topics](https://awesomecua.github.io/topics/)** · **[Data & agents](https://awesomecua.github.io/data/)**
 

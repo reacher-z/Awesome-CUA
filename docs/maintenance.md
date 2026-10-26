@@ -164,3 +164,9 @@ Push the tag with git, not through the GitHub release form: the form publishes i
 Asset names are the same in every release, so a pinned download is `https://github.com/reacher-z/Awesome-CUA/releases/download/<tag>/awesomecua-data.zip`. The bundle is data-only: its own instructions describe the included paths; repository CLI commands require a source clone at the recorded commit. The site downloads continue to follow newer publications, so compare catalog fingerprints before mixing them with a release.
 
 If a run failed before creating a release, re-run it, or dispatch the workflow on the tag with `gh workflow run release.yml --ref <tag>`; a tag pushed with another workflow's `GITHUB_TOKEN` starts no run and needs this dispatch. Once a release has been published, preserve its tag and assets for existing citations. Use a new version for changed data. Dispatched on a branch, the workflow builds the same files into a `release-assets` artifact without publishing, which previews a release.
+
+## Repository social preview
+
+Links to the repository on Slack, X, LinkedIn or Discord show its social preview image. `.github/social-preview.png` is a 1280×640 PNG, the size GitHub recommends, rendered from `.github/social-preview.svg`. It shows no counts, so it does not go stale between scans. The website's own preview, `web/social.png`, stays 1200×630 for Open Graph.
+
+After editing the SVG, render it at exactly 1280×640 with any SVG rasterizer, for example `rsvg-convert -w 1280 -h 640 .github/social-preview.svg -o .github/social-preview.png`, or a headless browser with a 1280×640 viewport and no page margin. Keep the PNG under 1 MB. GitHub has no API for this image: an administrator uploads it under **Settings → General → Social preview → Edit → Upload an image…**, and `gh repo view reacher-z/Awesome-CUA --json usesCustomOpenGraphImage` then reports `true`.

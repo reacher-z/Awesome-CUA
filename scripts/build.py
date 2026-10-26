@@ -504,13 +504,18 @@ def table_row(r, columns, by_id):
     return "| " + " | ".join(cells[column] for column in columns) + " |"
 
 
-def scale_cell(r):
-    """First count per unit, keeping its precision qualifier and linking its own source; units are never converted or summed."""
+def scale_counts(r):
+    """First count per unit, keeping its precision qualifier; units are never converted or summed."""
     profile = (r.get("details") or {}).get(PROFILE_KEYS.get(r.get("kind"), "")) or {}
     first = {}
     for count in profile.get("counts", []):
         first.setdefault(count["unit"], count)
-    return " · ".join(f"[{PREFIXES[c['qualifier']]}{c['value']:,} {md(c['unit'])}]({c.get('reference_url') or c['evidence_url']})" for c in first.values()) or "—"
+    return list(first.values())
+
+
+def scale_cell(r):
+    """Each first count per unit links its own source."""
+    return " · ".join(f"[{PREFIXES[c['qualifier']]}{c['value']:,} {md(c['unit'])}]({c.get('reference_url') or c['evidence_url']})" for c in scale_counts(r)) or "—"
 
 
 def nowrap(date):

@@ -1,4 +1,4 @@
-import { KIND_ORDER, KINDS, PLATFORMS, PAGE_SIZE, FACT_LABELS, createRecordLoader, bibliographicDate, compactFacts, initials, matches, filtered, pageWindow, parseState, serializeState, recordSearchText, escapeHTML as e, safeURL, formatDate, formatFact } from './catalog-core.js';
+import { KIND_ORDER, KINDS, PLATFORMS, PAGE_SIZE, FACT_LABELS, createRecordLoader, bibliographicDate, cardFacts, compactFacts, initials, matches, filtered, pageWindow, parseState, serializeState, recordSearchText, escapeHTML as e, safeURL, formatDate, formatFact } from './catalog-core.js';
 
 const TEXT = {
   en: {
@@ -89,7 +89,7 @@ function card(r) {
   const monogram=initials(r.name) || KINDS[r.kind]?.[2] || '';
   const curated=r.review_status==='curated';
   const summary=r.summary || (r.authors.slice(0,3).join(' · ')+(r.authors.length>3?' et al.':''));
-  const tags=r.environments.filter(x=>x!=='unspecified').slice(0,2).map(x=>label(PLATFORMS,x)), facts=compactFacts(r,t);
+  const tags=r.environments.filter(x=>x!=='unspecified').slice(0,2).map(x=>label(PLATFORMS,x)), facts=cardFacts(r,t);
   if(curated && r.topics.length && tags.length<3) tags.push(label(TOPICS,r.topics[0]));
   return `<article class="resource-card" data-kind="${e(r.kind)}"><div class="card-top"><div class="resource-monogram" aria-hidden="true">${e(monogram)}</div><span class="kind-chip">${e(label(KINDS,r.kind))}</span></div><h3 class="card-title"><a href="${e(r.page_url)}" data-record="${e(r.id)}">${e(r.name)}</a></h3>${facts.length?`<p class="card-facts">${facts.map(factMarkup).join('\u00a0· ')}</p>`:''}<p class="resource-summary ${curated?'':'is-bibliography'}">${e(summary)}</p><div class="card-tags">${tags.map(x=>`<span>${e(x)}</span>`).join('')}</div><div class="card-bottom ${curated?'is-curated':''}"><span class="review-dot"></span><span>${e(t(curated?'curatedBadge':'metadataBadge'))}</span><a class="card-external" href="${e(safeURL(r.url))}" target="_blank" rel="noopener noreferrer" aria-label="${e(t('openSource'))}: ${e(r.name)}">↗</a></div></article>`;
 }

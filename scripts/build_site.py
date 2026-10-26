@@ -10,7 +10,7 @@ import tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from build import validate_records, write_sqlite
+from build import scale_counts, validate_records, write_sqlite
 from catalog import TOPICS
 from search_pages import build_search_pages, resource_path, SITE
 from export_rag import build_exports
@@ -19,6 +19,7 @@ from export_candidates import copy_public_candidates, SCHEMAS as CANDIDATE_SCHEM
 from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
+from specifications import PREFIXES
 from survey_bundle import copy_bundle as copy_survey_bundle
 
 
@@ -37,6 +38,12 @@ def compact_facts(row):
     papers=sorted((r for r in row['relations'] if r['type'] in ('introduced_by','documented_by') and r['target_id'].startswith('arxiv:')),key=lambda r:r['type']!='introduced_by')
     licenses={slot:', '.join(l['declared']) if isinstance(l['declared'],list) else l['declared'] for slot in ('code','data','weights','document') if (l:=row['licenses'].get(slot)) and l.get('declared')}
     return {'paper_arxiv':row['identifiers'].get('arxiv') or (papers[0]['target_id'][6:] if papers else None),'declared_licenses':licenses}
+
+
+def compact_scale(row):
+    # The category tables' scale text without links; rows with no recorded count omit the key, so unprofiled rows add no bytes.
+    scale=[f'{PREFIXES[c["qualifier"]]}{c["value"]:,} {c["unit"]}' for c in scale_counts(row)]
+    return {'scale':scale} if scale else {}
 
 
 def replaceable(destination):
@@ -103,7 +110,7 @@ def write_site(destination):
         'paper_source_url':row.get('details',{}).get('arxiv_snapshot',{}).get('versioned_url'),
         'paper_date':record_date_text(row),
         'publication_search_text':publication_search_text(row),
-        'related_count':len(related[row['id']]),'incoming_relations':incoming[row['id']],**compact_facts(row)} for row in rows]}
+        'related_count':len(related[row['id']]),'incoming_relations':incoming[row['id']],**compact_facts(row),**compact_scale(row)} for row in rows]}
     for filename,payload in [('index.json',index),('records.json',rows)]:
         (destination/'data'/filename).write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     for name in ['catalog.jsonl','coverage.json','sources.json']:

@@ -470,11 +470,28 @@ test('compact card facts list only recorded year, arXiv paper and declared licen
   assert.deepEqual(compactFacts({id:'url:bare',published_at:null}),[]);
   for(const r of rows)for(const fact of compactFacts(r))assert.match(fact.text,/^\d{4}$/,r.id);
 });
+test('card facts show each recorded scale with its precision qualifier between paper and licenses',async()=>{
+  const {compactFacts}=await import('../web/catalog-core.js');
+  const facts=compactFacts({id:'github:xlang-ai/osworld',published_at:null,paper_arxiv:'2404.07972',declared_licenses:{code:'Apache-2.0'},scale:['369 task definitions','≈ 66 applications','> 15,000 demonstrations']});
+  assert.deepEqual(facts.map(f=>[f.key,f.text]),[['paper','arXiv 2404.07972'],['scale','369 task definitions'],['scale','≈ 66 applications'],['scale','> 15,000 demonstrations'],['license','code Apache-2.0']]);
+  assert.ok(facts.filter(f=>f.key==='scale').every(f=>!f.url));
+  assert.deepEqual(compactFacts({id:'url:bare',published_at:null,scale:[]}),[]);
+});
+test('cards show only the first recorded count, after the licenses, so the two-line clamp never hides a license',async()=>{
+  const {cardFacts,compactFacts}=await import('../web/catalog-core.js');
+  const record={id:'github:xlang-ai/osworld',published_at:'2024-04-11',paper_arxiv:'2404.07972',declared_licenses:{code:'Apache-2.0',data:'CC-BY-4.0'},scale:['369 task definitions','≈ 66 applications']};
+  assert.deepEqual(cardFacts(record).map(f=>[f.key,f.text]),[['year','2024'],['paper','arXiv 2404.07972'],['license','code Apache-2.0'],['license','data CC-BY-4.0'],['scale','369 task definitions']]);
+  assert.deepEqual(record.scale,['369 task definitions','≈ 66 applications']);
+  assert.equal(compactFacts(record).filter(f=>f.key==='scale').length,2);
+  assert.deepEqual(cardFacts({id:'url:bare',published_at:null}),[]);
+  assert.deepEqual(cardFacts({id:'url:count',published_at:null,scale:['12 websites']}).map(f=>f.text),['12 websites']);
+});
 test('cards and list rows render compact facts without placeholders',async()=>{
   const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
   const base={aliases:[],environments:['desktop'],topics:[],authors:[],scope:'core',review_status:'curated',summary:'Fixture summary.',paper_version:null,paper_source_url:null,paper_date:null,related_count:0,incoming_relations:[]};
-  const records=[{...base,id:'github:xlang-ai/osworld',name:'OSWorld',kind:'benchmark',url:'https://github.com/xlang-ai/OSWorld',page_url:'/resources/osworld/',published_at:null,paper_arxiv:'2404.07972',declared_licenses:{code:'Apache-2.0'}},
-    {...base,id:'url:bare',name:'Bare tool',kind:'tool',url:'https://example.org/',page_url:'/resources/bare/',published_at:null,paper_arxiv:null,declared_licenses:{}}];
+  const records=[{...base,id:'github:xlang-ai/osworld',name:'OSWorld',kind:'benchmark',url:'https://github.com/xlang-ai/OSWorld',page_url:'/resources/osworld/',published_at:null,paper_arxiv:'2404.07972',declared_licenses:{code:'Apache-2.0'},scale:['369 task definitions','≈ 66 applications']},
+    {...base,id:'url:bare',name:'Bare tool',kind:'tool',url:'https://example.org/',page_url:'/resources/bare/',published_at:null,paper_arxiv:null,declared_licenses:{}},
+    {...base,id:'url:escaped',name:'Escaped data',kind:'dataset',url:'https://example.org/data',page_url:'/resources/escaped/',published_at:null,paper_arxiv:null,declared_licenses:{},scale:['≈ 1,000 <img src=x onerror=alert(1)> "rows"']}];
   const keys=['document','window','location','history','localStorage','fetch'],saved=keys.map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
   const render=async(search,name)=>{
     const elements=new Map(),element=selector=>{if(!elements.has(selector))elements.set(selector,{dataset:{},classList:{toggle(){}},addEventListener(){},setAttribute(){},showModal(){},close(){}});return elements.get(selector);};
@@ -484,12 +501,18 @@ test('cards and list rows render compact facts without placeholders',async()=>{
     return element('#results').innerHTML.split(/(?=<article )/);
   };
   try {
-    const [card,bare]=await render('','facts-grid');
-    assert.match(card,/<p class="card-facts"><a href="https:\/\/arxiv\.org\/abs\/2404\.07972"[^>]*>arXiv 2404\.07972<\/a>\u00a0· <span title="Code Apache-2\.0">Code Apache-2\.0<\/span><\/p>/);
+    const pick=(articles,id)=>articles.find(html=>html.includes(`data-record="${id}"`));
+    const cards=await render('','facts-grid'),[card,bare,escaped]=['github:xlang-ai/osworld','url:bare','url:escaped'].map(id=>pick(cards,id));
+    assert.match(card,/<p class="card-facts"><a href="https:\/\/arxiv\.org\/abs\/2404\.07972"[^>]*>arXiv 2404\.07972<\/a>\u00a0· <span title="Code Apache-2\.0">Code Apache-2\.0<\/span>\u00a0· <span title="369 task definitions">369 task definitions<\/span><\/p>/);
+    assert.doesNotMatch(card,/66 applications/);
     assert.doesNotMatch(bare,/card-facts/);
-    const [row,bareRow]=await render('?view=list&lang=zh','facts-list');
-    assert.match(row,/>arXiv 2404\.07972<\/a><span title="代码 Apache-2\.0">代码 Apache-2\.0<\/span>/);
+    const listed=await render('?view=list&lang=zh','facts-list'),[row,bareRow,escapedRow]=['github:xlang-ai/osworld','url:bare','url:escaped'].map(id=>pick(listed,id));
+    assert.match(row,/>arXiv 2404\.07972<\/a><span title="369 task definitions">369 task definitions<\/span><span title="≈ 66 applications">≈ 66 applications<\/span><span title="代码 Apache-2\.0">代码 Apache-2\.0<\/span>/);
     for(const html of [row,bareRow])assert.doesNotMatch(html,/—|<time|row-date-value/);
+    for(const html of [escaped,escapedRow]){
+      assert.match(html,/<span title="≈ 1,000 &lt;img src=x onerror=alert\(1\)&gt; &quot;rows&quot;">≈ 1,000 &lt;img src=x onerror=alert\(1\)&gt; &quot;rows&quot;<\/span>/);
+      assert.doesNotMatch(html,/<img/);
+    }
   } finally {
     for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
   }

@@ -48,8 +48,9 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | 你的任务 | 从这里开始 | 可以找到什么 |
 | --- | --- | --- |
 | 查找论文 | [论文库](https://awesomecua.github.io/zh/papers/) · [研究主题](https://awesomecua.github.io/zh/topics/) | 按年份和主题阅读已审阅论文，查看原始来源。 |
-| 选择评测基准 | [基准指南](https://awesomecua.github.io/guides/gui-agent-benchmarks/) | 核对平台、任务、评估器和版本。 |
-| 寻找训练数据 | [训练数据指南](https://awesomecua.github.io/guides/gui-agent-training-data/) | 比较监督形式、划分、样本单位和数据许可。 |
+| 选择评测基准 | [基准指南](https://awesomecua.github.io/guides/gui-agent-benchmarks/) · [协议对比](https://awesomecua.github.io/compare/benchmarks/)<br>按平台：[网页 42](docs/environments/web.md#benchmarks) · [桌面 20](docs/environments/desktop.md#benchmarks) · [Android 19](docs/environments/android.md#benchmarks) · [iOS 1](docs/environments/ios.md#benchmarks) | 核对平台、任务、评估器和版本。 |
+| 寻找训练数据 | [训练数据指南](https://awesomecua.github.io/guides/gui-agent-training-data/) · [数据集对比](https://awesomecua.github.io/compare/datasets/)<br>按平台：[网页 25](docs/environments/web.md#datasets) · [桌面 18](docs/environments/desktop.md#datasets) · [Android 35](docs/environments/android.md#datasets) · [iOS 2](docs/environments/ios.md#datasets) | 比较监督形式、划分、样本单位和数据许可。 |
+| 挑选模型 | [模型目录](https://awesomecua.github.io/categories/model/)<br>按平台：[网页 28](docs/environments/web.md#models) · [桌面 24](docs/environments/desktop.md#models) · [Android 24](docs/environments/android.md#models) · [iOS 4](docs/environments/ios.md#models) | 模型家族与权重版本，以及各自的论文和权重许可。 |
 | 构建智能体 | [智能体](https://awesomecua.github.io/categories/agent/) · [框架](https://awesomecua.github.io/categories/framework/) | 找到实现入口、支持的平台和论文依据。 |
 | 接入 RAG 或 Agent | [使用指南](https://awesomecua.github.io/zh/agents/) · [数据中心](https://awesomecua.github.io/zh/data/) | 下载完整记录或检索文档，保留审阅状态和来源。 |
 | 追溯论文与资产 | [论文—资产关系](https://awesomecua.github.io/connections/) | 查看经一手来源支持的代码、数据和模型关联。 |

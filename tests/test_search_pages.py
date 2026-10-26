@@ -85,7 +85,8 @@ class SearchPagesTests(unittest.TestCase):
         urls=[x.text for x in root.findall('s:url/s:loc',ns)]
         expected={SITE+p['path'] for p in self.manifest['pages'] if p['indexable']}
         self.assertEqual(set(urls),expected);self.assertEqual(len(urls),len(set(urls)))
-        self.assertFalse(root.findall('s:url/s:lastmod',ns))
+        # Only reviewed resource pages carry a lastmod (their editorial review date); listings have none.
+        self.assertTrue(all('/resources/' in u.find('s:loc',ns).text for u in root.findall('s:url',ns) if u.find('s:lastmod',ns) is not None))
         for row in self.rows:self.assertEqual(SITE+resource_path(row) in urls,eligible(row))
         self.assertEqual((self.dest/'sitemap.txt').read_text().splitlines(),urls)
     def test_static_pages_link_to_real_local_destinations(self):

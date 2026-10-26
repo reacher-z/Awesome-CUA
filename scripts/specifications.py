@@ -148,23 +148,28 @@ def comparison_body(rows, kind, link_for):
     purpose = 'Match the task setting, available observations, action interface, and evaluator to the capability you need to measure.' if kind == 'benchmark' else 'Match supervision, modalities, data format, splits, and license to the training objective you need.'
     body = f'<div class="eyebrow">SOURCE-REVIEWED COMPARISON</div><h1>{title}</h1><p class="answer-lead">{purpose}</p><p>{len(selected)} profiles are available among {total} reviewed {plural} in the catalog. Remaining entries are available in the <a href="/categories/{kind}/">full directory</a>. Missing values mean not recorded.</p>'
     body += '<p>Counts retain their units and subsets; figures are publisher-reported unless marked computed. Different resources can describe parts of the same project.</p>'
-    environments = sorted({env for row in selected for env in row['environments']})
-    body += '<div class="compare-controls"><div><label for="compare-query">Search profiles</label><input id="compare-query" type="search" placeholder="Name, interface, supervision, or format…"></div><div><label for="compare-environment">Environment</label><select id="compare-environment"><option value="">All environments</option>' + ''.join(f'<option value="{esc(env)}">{esc(env)}</option>' for env in environments) + '</select></div></div>'
+    from paper_library import PLATFORMS  # imported here: paper_library itself imports this module
+    label = lambda env: PLATFORMS.get(env, ('Not specified' if env == 'unspecified' else env,))[0]
+    environments = sorted({env for row in selected for env in row['environments']}, key=lambda env: label(env).casefold())
+    body += '<div class="compare-controls"><div><label for="compare-query">Search profiles</label><input id="compare-query" type="search" placeholder="Name, interface, supervision, or format…"></div><div><label for="compare-environment">Environment</label><select id="compare-environment"><option value="">All environments</option>' + ''.join(f'<option value="{esc(env)}">{esc(label(env))}</option>' for env in environments) + '</select></div></div>'
     body += f'<p id="compare-results" role="status" aria-live="polite">Showing {len(selected)} of {len(selected)} profiles.</p>'
     columns = ['Resource / setting', 'Observations / actions', 'Evaluation', 'Scale with scope'] if kind == 'benchmark' else ['Resource / supervision', 'Modalities / format', 'Splits / data license', 'Scale with scope']
-    body += '<p class="table-help">Scroll the table sideways to see all columns.</p><div class="table-scroll compare-scroll" tabindex="0" aria-label="Profile comparison table"><table class="coverage-table compare-table"><thead><tr>' + ''.join('<th scope="col">' + label + '</th>' for label in columns) + '</tr></thead><tbody>'
+    body += '<p class="table-help compare-help">Scroll the table sideways to see all columns.</p><div class="table-scroll compare-scroll" tabindex="0" aria-label="Profile comparison table"><table class="coverage-table compare-table"><thead><tr>' + ''.join('<th scope="col">' + label + '</th>' for label in columns) + '</tr></thead><tbody>'
     for row in selected:
         profile = row['details'][key]
         visible_values = [' '.join(value) if isinstance(value,list) else str(value) for key,value in profile.items() if key not in {'counts','evidence_urls'}]
-        text = ' '.join([row['name'], *row['environments'], *visible_values, *(count_text(count) for count in profile['counts'])])
-        body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}"><td><a href="{link_for(row)}"><strong>{esc(row["name"])}</strong></a><div>{esc(words(row["environments"]))}</div>'
+        platforms = [label(env) for env in row['environments']]
+        text = ' '.join([row['name'], *row['environments'], *platforms, *visible_values, *(count_text(count) for count in profile['counts'])])
+        # data-label names each cell's column for the stacked phone layout, where the header row is hidden.
+        cell = lambda index: f'<td data-label="{esc(columns[index])}">'
+        body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}">{cell(0)}<a href="{link_for(row)}"><strong>{esc(row["name"])}</strong></a><div>{esc(words(platforms))}</div>'
         if kind == 'benchmark':
-            body += '<p>' + esc(words(profile['focus'])) + '<br>' + esc(profile['setting']) + '</p></td><td><strong>Observe</strong><br>' + esc(words(profile['observations'])) + '<br><strong>Act / output</strong><br>' + esc(words(profile['actions'])) + '</td><td>' + esc(profile['evaluation'] or 'Not recorded') + '</td>'
+            body += '<p>' + esc(words(profile['focus'])) + '<br>Setting: ' + esc(profile['setting']) + '</p></td>' + cell(1) + '<strong>Observe</strong><br>' + esc(words(profile['observations'])) + '<br><strong>Act / output</strong><br>' + esc(words(profile['actions'])) + '</td>' + cell(2) + esc(profile['evaluation'] or 'Not recorded') + '</td>'
         else:
             license = row['licenses']['data']
             declaration = f'<a href="{safe_href(license["url"])}">{esc(words(license["declared"]) if isinstance(license["declared"],list) else license["declared"])}</a>' if license else 'Not recorded'
-            body += '<p>' + esc(words(profile['supervision'])) + '</p></td><td>' + esc(words(profile['modalities'])) + '<br><strong>Format</strong><br>' + esc(words(profile['formats'])) + '</td><td>' + esc(words(profile['splits'])) + '<br><strong>Data license</strong><br>' + declaration + '</td>'
-        body += '<td>' + counts_html(profile) + '<details><summary>Scope and source notes</summary><p>' + esc(profile['notes']) + '</p><ul>' + ''.join(f'<li><a href="{safe_href(url)}">Primary evidence {index+1}</a></li>' for index,url in enumerate(profile['evidence_urls'])) + '</ul></details></td></tr>'
+            body += '<p>' + esc(words(profile['supervision'])) + '</p></td>' + cell(1) + esc(words(profile['modalities'])) + '<br><strong>Format</strong><br>' + esc(words(profile['formats'])) + '</td>' + cell(2) + esc(words(profile['splits'])) + '<br><strong>Data license</strong><br>' + declaration + '</td>'
+        body += cell(3) + counts_html(profile) + '<details><summary>Scope and source notes</summary><p>' + esc(profile['notes']) + '</p><ul>' + ''.join(f'<li><a href="{safe_href(url)}">Primary evidence {index+1}</a></li>' for index,url in enumerate(profile['evidence_urls'])) + '</ul></details></td></tr>'
     body += '</tbody></table></div><p>Use each resource page for source timestamps, content fingerprints, and separate code, data, and weight licenses.</p>'
     body += f'<p><a href="/downloads/{plural}-profiles.json">Download these profiles as JSON</a> · <a href="/data/">Complete catalog and SQLite</a> · <a href="/compare/{"datasets" if kind=="benchmark" else "benchmarks"}/">Compare {"datasets" if kind=="benchmark" else "benchmarks"}</a></p><script type="module" src="/compare.js"></script>'
     return body

@@ -153,6 +153,11 @@ def build_download_manifest(destination, rows, catalog_bytes):
             raise ValueError('Citation content differs from the source edition and selection: ' + export['file'])
     add('citations-manifest', '/downloads/citations-manifest.json', 'citations', ('Citation export manifest', '引用导出清单'),
         ('Edition, date and identity policies with exact counts and fingerprints.', '引用版次、日期和身份规则，以及精确数量与指纹。'), 'JSON', 'application/json', len(citations['exports']), 'exports', 'provenance')
+    add('awesomecua-bib', '/downloads/awesomecua.bib', 'citations', ('Cite AwesomeCUA', '引用 AwesomeCUA'),
+        ('BibTeX entry for the catalog itself, from CITATION.cff. Also record the release tag or commit you used.', '本目录自身的 BibTeX 条目，来自 CITATION.cff；请同时记录所用的发布标签或提交。'),
+        'BibTeX', 'application/x-bibtex', 1, 'citations', 'provenance')
+    if line_count(destination / 'downloads/awesomecua.bib', prefix='@') != 1:
+        raise ValueError('The catalog citation must be exactly one BibTeX entry')
 
     add('topics', '/downloads/topics.json', 'research', ('Topic subsets', '主题子集'),
         ('Exact member IDs and JSONL/citation downloads for every reviewed topic. Memberships overlap.', '每个已审阅主题的精确成员 ID 与 JSONL、引用下载。主题成员可以交叉。'),

@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-26T15:13:03Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-26T21:02:58Z**. Generated from committed source receipts.
 
-- 3,266 resource records: 1,671 curated; 1,595 bibliographic metadata only.
-- 2,795 paper and survey records, including 2,782 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,920 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,311 discovery identifiers; 910 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,268 resource records: 1,671 curated; 1,597 bibliographic metadata only.
+- 2,797 paper and survey records, including 2,784 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,922 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,313 discovery identifiers; 910 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -42,7 +42,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-10-26 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-10-26 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 109 | 1 | 9 | 44 | OK · 2026-10-26 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | OK · 2026-10-26 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | FAILED · 2026-10-26 |
 | [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-10-26 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 48 | 32 | 0 | 3 | 27 | OK · 2026-10-26 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-10-26 |
@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-26T15:13:03Z; **32/32** query windows succeeded. 1,499 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-10-26T21:02:58Z; **32/32** query windows succeeded. 1,500 distinct identifiers; 2 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

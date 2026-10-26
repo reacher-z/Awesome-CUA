@@ -2914,7 +2914,39 @@
       "2406.12373"
     ],
     "details": {
-      "leaderboard_url": "https://github.com/iMeanAI/WebCanvas/blob/main/Mind2web-live_Leaderboard.md"
+      "leaderboard_url": "https://github.com/iMeanAI/WebCanvas/blob/main/Mind2web-live_Leaderboard.md",
+      "benchmark_protocol": {
+        "focus": [
+          "live-web task completion",
+          "key-node intermediate evaluation"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [],
+        "evaluation": "Each Mind2Web-Live task carries key nodes, intermediate states that are scored during the run so that partial progress counts. The README reports completion rate or score, task success rate, an efficiency score, and a USD efficiency score (US dollar consumption per key-node completion), and notes that IP region, operating system and browser affect results.",
+        "counts": [
+          {
+            "value": 542,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "Mind2Web-Live dataset as described in the WebCanvas README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/iMeanAI/WebCanvas/HEAD/README.md"
+          },
+          {
+            "value": 2439,
+            "unit": "intermediate evaluation states",
+            "qualifier": "exact",
+            "population": "Mind2Web-Live dataset as described in the WebCanvas README",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/iMeanAI/WebCanvas/HEAD/README.md"
+          }
+        ],
+        "notes": "Mind2Web-Live is the README's refined, live-web version of the static Mind2Web dataset, published on the Hugging Face Hub; counts here are the README's totals, not computed from the released files. Results on live websites are not fixed snapshots, so keep the evaluation date, environment and test-file version with any score. The agent framework was read from the README, not run.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/iMeanAI/WebCanvas/HEAD/README.md"
+        ]
+      }
     }
   },
   {

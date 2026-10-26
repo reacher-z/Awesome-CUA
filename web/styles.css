@@ -10,6 +10,8 @@
 @media(max-width:370px){.shell,.header-inner{width:calc(100% - 28px)}.hero h1{font-size:38px}.hero-cta{gap:14px}.button{gap:15px}.stats-band>div{padding-left:8px}.stat-value{font-size:22px}.view-toggle{display:none}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 .toast:empty{padding:0;box-shadow:none}
+/* Keyboard focus on a card's or row's title link outlines the whole card or row that the link opens, not just the title text. */
+@supports selector(:has(*)){.resource-card:has(.card-title a:focus-visible){outline:2px solid var(--blue);outline-offset:3px}.resource-card .card-title a:focus-visible{outline:none}.resource-row:has(.row-main h3 a:focus-visible){outline:2px solid var(--blue);outline-offset:-2px;border-radius:8px}.resource-row .row-main h3 a:focus-visible{outline:none}}
 
 /* Readable resource metadata at desktop and mobile sizes. */
 .search-box input{font-size:13px}.resource-summary{font-size:12px;line-height:1.7;min-height:61px}.card-title{font-size:15px}.list-view .resource-summary{font-size:12px}.list-view .card-title{font-size:14px}

@@ -59316,7 +59316,7 @@
     "notes": "Released code includes task-generation and training-format conversion scripts. OSWorld/InSTA environments and model services require separate setup; the repository is not a bundled VM or model checkpoint. Code and the separately published dataset have distinct license declarations.",
     "details": {
       "repository_url": "https://github.com/sunblaze-ucb/AgentSynth",
-      "repository_tree_sha": "cd42a4bd158fe3f0a1b0f376b9428d6a5fcb81b2"
+      "repository_revision": "cd42a4bd158fe3f0a1b0f376b9428d6a5fcb81b2"
     },
     "additional_evidence": [
       {
@@ -59338,7 +59338,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -59536,7 +59536,7 @@
     "notes": "Official GitHub API resolves the former dvlab-research/ARPO URL to JIA-Lab-research/ARPO with the same numeric repository ID. Training/evaluation scripts are released; OSWorld environments and the separate model checkpoint are not bundled into this code record. Reported benchmark scores were not reproduced.",
     "details": {
       "repository_url": "https://github.com/JIA-Lab-research/ARPO",
-      "repository_tree_sha": "7489ae309e90d8b3b9e823f495b63e5116434060"
+      "repository_revision": "7489ae309e90d8b3b9e823f495b63e5116434060"
     },
     "additional_evidence": [
       {
@@ -59558,7 +59558,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -59725,7 +59725,7 @@
     "notes": "README demonstrates Windows and Linux operation and describes thought completion and trajectory augmentation. The released source tree contains postprocess, train and deploy code. The checkpoint, data archive and WindowsAgentArena-V2 are separate resources; external model APIs and a training framework are required.",
     "details": {
       "repository_url": "https://github.com/GAIR-NLP/PC-Agent-E",
-      "repository_tree_sha": "9b1b00b907b99a4a8dbfc9c01ea49010878dfbd6"
+      "repository_revision": "9b1b00b907b99a4a8dbfc9c01ea49010878dfbd6"
     },
     "additional_evidence": [
       {
@@ -59747,7 +59747,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -60027,7 +60027,7 @@
     "notes": "Repository contains executable evaluation code and task definitions. README links a separate Windows 11 VM snapshot; that image and its software licenses/access were not validated by downloading it. MIT is recorded for repository code only. Default task selection and the reported full suite have different scopes.",
     "details": {
       "repository_url": "https://github.com/GAIR-NLP/WindowsAgentArena-V2",
-      "repository_tree_sha": "2927fe55005d1be75d5a9188c0045f73ba28d192",
+      "repository_revision": "2927fe55005d1be75d5a9188c0045f73ba28d192",
       "benchmark_protocol": {
         "focus": [
           "Windows desktop task execution",
@@ -60100,7 +60100,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
+          "details.repository_revision",
           "details.benchmark_protocol"
         ]
       },
@@ -60201,7 +60201,7 @@
     "notes": "Public tree contains the agentprog package, CLI, program/context-management code and AndroidWorld evaluation integration. README announces AW-Extend, but this record is the framework rather than a separately audited benchmark release. External model services and Android device/emulator setup are required. Apache-2.0 covers code, not external model weights, apps or VM images.",
     "details": {
       "repository_url": "https://github.com/MobileLLM/AgentProg",
-      "repository_tree_sha": "ef5e2998ac2defa86e0dc4c13e7e00d595e1e7cf"
+      "repository_revision": "ef5e2998ac2defa86e0dc4c13e7e00d595e1e7cf"
     },
     "additional_evidence": [
       {
@@ -60223,7 +60223,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -60293,7 +60293,7 @@
     "notes": "Scoped to the WebEvolver directory; the repository also hosts WebCoT and VScan, which are not merged into this resource. Training and model services require separate setup. Root License.txt explicitly declares MIT for SelfEvolvingAgent and separately identifies CogKernel’s Apache-2.0 dependency terms.",
     "details": {
       "repository_url": "https://github.com/Tencent/SelfEvolvingAgent",
-      "repository_tree_sha": "a82450e1b5e15070bee79ee8b79f8d9a97cb85f7",
+      "repository_revision": "a82450e1b5e15070bee79ee8b79f8d9a97cb85f7",
       "component_path": "WebEvolver"
     },
     "additional_evidence": [
@@ -60316,7 +60316,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -60617,7 +60617,7 @@
     "notes": "README describes AITW test sampling and preprocessing reused from Auto-GUI, followed by prediction/action-extraction/evaluation scripts. This is not claimed as a ready-to-run interactive phone controller. No project-level license declaration appears in the inspected README/API/non-truncated tree; code, dataset and model rights remain unestablished here.",
     "details": {
       "repository_url": "https://github.com/sqzhang-lazy/D-PoT",
-      "repository_tree_sha": "fc764f19802f4f59afa635bfeec5a50e4c3d5465"
+      "repository_revision": "fc764f19802f4f59afa635bfeec5a50e4c3d5465"
     },
     "additional_evidence": [
       {
@@ -60639,7 +60639,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -60705,7 +60705,7 @@
     "notes": "Code is released for the two named browser benchmarks. Visual-observer checkpoints are linked separately through Google Drive and were not downloaded or access-tested. Root LICENSE begins with GNU AGPL v3 and includes third-party notices; this code declaration is not transferred to bundled/generated data or external weights.",
     "details": {
       "repository_url": "https://github.com/caap-agent/caap-agent",
-      "repository_tree_sha": "9d65c0f30e3c119db533dd832863b4f3f7b74b18"
+      "repository_revision": "9d65c0f30e3c119db533dd832863b4f3f7b74b18"
     },
     "additional_evidence": [
       {
@@ -60727,7 +60727,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha"
+          "details.repository_revision"
         ]
       },
       {
@@ -61028,7 +61028,7 @@
     "notes": "Public code includes app/task/configuration and agent-launching implementations. README distinguishes moving main from v1.0-paper and explicitly says even that tag is not a byte-exact snapshot of the published runs. CC-BY-NC-4.0 is the repository’s declared code license; third-party WebShop, map and icon content retain separate terms. No commercial-use permission or fixed downloadable task total is inferred.",
     "details": {
       "repository_url": "https://github.com/facebookresearch/OpenApps",
-      "repository_tree_sha": "6e6782794433c60468d65ac75bc3f03c56007f8c",
+      "repository_revision": "6e6782794433c60468d65ac75bc3f03c56007f8c",
       "benchmark_protocol": {
         "focus": [
           "UI-agent reliability under environment variation",
@@ -61077,7 +61077,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
+          "details.repository_revision",
           "details.benchmark_protocol"
         ]
       },
@@ -61339,7 +61339,7 @@
     "notes": "Scoped to PC-Agent in the MobileAgent monorepo and distinct from GAIR-NLP/PC-Agent. The source tree contains current and v1 implementations; the README states a March 2025 code update. Root MIT covers repository code; the separately linked PC-Eval tasks and application software are not assigned that license by this record.",
     "details": {
       "repository_url": "https://github.com/X-PLUG/MobileAgent",
-      "repository_tree_sha": "11cea575561fb7800b5fb6b6cafa56f7a91de11f",
+      "repository_revision": "11cea575561fb7800b5fb6b6cafa56f7a91de11f",
       "component_path": "PC-Agent"
     },
     "additional_evidence": [
@@ -61362,7 +61362,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
+          "details.repository_revision",
           "relations"
         ]
       },
@@ -61438,7 +61438,7 @@
     "notes": "The inspected README explicitly supports Android only, with experiments on Samsung Galaxy A15; host-machine macOS/Linux instructions do not imply control of those operating systems. Agent code, launch scripts and benchmark definitions are present. The root MIT code license does not establish terms for the separately published task dataset or external models.",
     "details": {
       "repository_url": "https://github.com/X-PLUG/MobileAgent",
-      "repository_tree_sha": "11cea575561fb7800b5fb6b6cafa56f7a91de11f",
+      "repository_revision": "11cea575561fb7800b5fb6b6cafa56f7a91de11f",
       "component_path": "Mobile-Agent-E"
     },
     "additional_evidence": [
@@ -61461,7 +61461,7 @@
         "supports": [
           "identity",
           "release_status",
-          "details.repository_tree_sha",
+          "details.repository_revision",
           "relations"
         ]
       },

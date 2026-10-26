@@ -9,7 +9,7 @@ from unittest import mock
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
-from search_pages import clean_text, resource_path
+from search_pages import clean_text, eligible, resource_path, reviewed_times
 from test_search_pages import copy_survey_source_inputs
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -56,7 +56,9 @@ class GeneratedWhitespaceTests(unittest.TestCase):
             guides[0]['body']+='  \n<p>Trailing guide markup.</p> \t\n\n'
             guides_path.write_text(json.dumps(guides))
             catalog_path=source/'data/catalog.jsonl';rows=[json.loads(line) for line in catalog_path.read_text().splitlines()]
-            paper=max((r for r in rows if r['kind'] in {'paper','survey'} and r['review_status']=='curated'),key=lambda r:r.get('published_at') or '')
+            # The feed lists the newest editorial approvals, name order breaking ties; inject into its first entry.
+            reviewed=reviewed_times(ROOT)
+            paper=max(sorted((r for r in rows if eligible(r) and r['id'] in reviewed),key=lambda r:r['name'].casefold()),key=lambda r:reviewed[r['id']])
             paper.update(summary=paper['summary']+'  \nSecond line. \n',notes='Limitation.  \n\n')
             catalog_path.write_text(''.join(json.dumps(r,ensure_ascii=False,sort_keys=True)+'\n' for r in rows))
             with mock.patch('build_site.ROOT',source):destination=build_site(Path(directory)/'site')

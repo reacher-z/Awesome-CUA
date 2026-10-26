@@ -167,7 +167,7 @@ The most-mentioned curated resources per category: the count is how many other c
 
 ## Recently reviewed
 
-Newest editorial approvals of models, datasets, benchmarks, systems, and tools (newest first). New papers appear by date in the [topic hubs](docs/topics.md).
+Newest editorial approvals of models, datasets, benchmarks, systems, and tools (newest first). New papers appear by date in the [topic hubs](docs/topics.md). Subscribe to the [Atom feed](https://awesomecua.github.io/feed.xml) for the 50 newest approvals of every kind, papers included.
 
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |

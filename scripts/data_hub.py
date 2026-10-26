@@ -252,7 +252,7 @@ def data_hub_body(manifest, *, language='en', site_url='https://awesomecua.githu
             '</strong> ', tr('reviewed resources', '条已审阅资源'), '</span><a href="/downloads/manifest.json">', tr('Complete download manifest', '完整下载清单'), ' ↗</a></div>',
             '<div class="data-clone"><div class="clone-command"><code>', CLONE_COMMAND, '</code>',
             copy_button(CLONE_COMMAND, tr('Copy the Git clone command', '复制 Git 克隆命令'), 'command'), '</div><p><a href="', '/zh/agents/' if zh else '/agents/', '">',
-            tr('Agent & RAG guide', 'Agent 与 RAG 指南'), '</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="', '/zh/topics/' if zh else '/topics/', '">', tr('Browse topic subsets', '浏览主题子集'), '</a> · <a href="', RELEASES_URL, '">', tr('Versioned snapshots', '版本快照'), '</a></p></div>',
+            tr('Agent & RAG guide', 'Agent 与 RAG 指南'), '</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="', '/zh/topics/' if zh else '/topics/', '">', tr('Browse topic subsets', '浏览主题子集'), '</a> · <a href="', RELEASES_URL, '">', tr('Versioned snapshots', '版本快照'), '</a> · <a href="/feed.xml" type="application/atom+xml">', tr('Atom feed of new reviews', '新审阅 Atom 订阅'), '</a></p></div>',
             '<nav class="data-group-nav" aria-label="', tr('Download groups', '下载分组'), '">']
     for group, labels in GROUPS.items():
         body += ['<a href="#downloads-', group, '">', labels[zh], '</a>']

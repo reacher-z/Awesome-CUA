@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,179; 564 ⭐) · [2025](#2025) (706; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (33; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,198; 564 ⭐) · [2025](#2025) (706; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (33; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,6 +13,21 @@ Dates retain their recorded precision: a year or month does not imply a known da
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-10-26 | [iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents](https://arxiv.org/abs/2610.34735) | metadata |  |
+| 2026-10-26 | [RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649) | metadata |  |
+| 2026-10-26 | [GUIFlow: Temporal Redundancy-Aware Incremental Inference for GUI Agents](https://arxiv.org/abs/2610.34959) | metadata |  |
+| 2026-10-26 | [Chart the Invisible: Interactive Perception for Hidden-Target Exploration in GUI Agents](https://arxiv.org/abs/2610.35237) | metadata |  |
+| 2026-10-26 | [Back to Basics: A Skill-Centric Approach to Generalist Web Agents](https://arxiv.org/abs/2610.35823) | metadata |  |
+| 2026-10-25 | [HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget](https://arxiv.org/abs/2610.34582) | metadata |  |
+| 2026-10-25 | [Beyond Benchmarks: Can Small Open-Weight Models Get Real Coding Work Done?](https://arxiv.org/abs/2610.34241) | metadata |  |
+| 2026-10-25 | [AndroidFlux: Evaluating and Reward Modeling Failure Recovery Capabilities in Mobile Use Multimodal Agents](https://arxiv.org/abs/2610.34384) | metadata |  |
+| 2026-10-25 | [AgentProofBench: Benchmarking Reusable Verifiers for Web Agents](https://arxiv.org/abs/2610.34634) | metadata |  |
+| 2026-10-24 | [Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents](https://arxiv.org/abs/2610.33568) | metadata |  |
+| 2026-10-24 | [SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents](https://arxiv.org/abs/2610.33528) | metadata |  |
+| 2026-10-24 | [Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory](https://arxiv.org/abs/2610.33702) | metadata |  |
+| 2026-10-24 | [PreView: Enhancing GUI Grounding with Preprocessed Views and Cues](https://arxiv.org/abs/2610.33645) | metadata |  |
+| 2026-10-24 | [OS-Wizard: Scaling Computer-Using Agents to Specialized Software via Knowledge-Guided Exploration](https://arxiv.org/abs/2610.33907) | metadata |  |
+| 2026-10-24 | [Build or Adopt? Custom-Built vs. General-Purpose LLM Agent Harnesses for Automotive GUI Testing](https://arxiv.org/abs/2610.33636) | metadata |  |
 | 2026-10-23 | [WaitLens: Temporal VLM-Based Adaptive Waiting for Industrial GUI Testing Agents](https://arxiv.org/abs/2610.32482) | metadata |  |
 | 2026-10-23 | [IGG: A Benchmark for Interactive GUI Grounding under Visibility Constraints](https://arxiv.org/abs/2610.32536) | metadata |  |
 | 2026-10-23 | [Correct Answers, Closed Gates: SolveBind for GUI Agents at the Verification Barrier](https://arxiv.org/abs/2610.32223) | metadata |  |
@@ -21,10 +36,12 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-22 | [Reuse, Rewrite, or Reject: Evidence-Constrained Trace Reuse for Repeated Mobile GUI Control](https://arxiv.org/abs/2610.31712) | metadata |  |
 | 2026-10-22 | [PointerBench: A Diagnostic Benchmark for Fine-Grained GUI Grounding](https://arxiv.org/abs/2610.31274) | metadata |  |
 | 2026-10-22 | [Learning What to Ask for Tomorrow: Active Preference Acquisition for Long-Term Personalized Web Agents](https://arxiv.org/abs/2610.31107) | metadata |  |
+| 2026-10-22 | [HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games](https://arxiv.org/abs/2610.31162) | metadata |  |
 | 2026-10-22 | [Diagnosing Personalization Failures in Mobile GUI Agents](https://arxiv.org/abs/2610.30573) | metadata |  |
 | 2026-10-22 | [AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack](https://arxiv.org/abs/2610.31404) | metadata |  |
 | 2026-10-21 | [Who Verifies the Agent's Success Claim? Self-Report Leakage in GUI-Agent Completion Judging](https://arxiv.org/abs/2610.29609) | metadata |  |
 | 2026-10-21 | [Understanding Tool-Mediated Interaction Failures in Agentic GUI Software: An Empirical Study](https://arxiv.org/abs/2610.31698) | metadata |  |
+| 2026-10-21 | [Steering Black-Box Large Language Model Agents with Pitfall Anticipation World Model](https://arxiv.org/abs/2610.29139) | metadata |  |
 | 2026-10-21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | metadata |  |
 | 2026-10-20 | [RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation](https://arxiv.org/abs/2610.27861) | metadata |  |
 | 2026-10-20 | [Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay](https://arxiv.org/abs/2610.27954) | metadata |  |
@@ -46,6 +63,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-17 | [fxBench: Evaluating and Understanding Formula Suggestions in Spreadsheets](https://arxiv.org/abs/2610.24729) | metadata |  |
 | 2026-10-17 | [Hippo: Training-Free Agent Self-Evolution via Hippocampal Replay](https://arxiv.org/abs/2610.24453) | metadata |  |
 | 2026-10-17 | [Beyond Next-Screen Prediction: The Decision Value of GUI World Models](https://arxiv.org/abs/2610.24372) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [evaluation](topics/evaluation.md), [imitation-learning](topics/imitation-learning.md), [world-models](topics/world-models.md) |
+| 2026-10-17 | [Assessing the CAD Capabilities of General-Purpose AI Models: A Case Study of GPT-6 Astra](https://arxiv.org/abs/2610.24451) | metadata |  |
 | 2026-10-16 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-16 | [PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas](https://arxiv.org/abs/2610.22990) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-16 | [MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents](https://arxiv.org/abs/2610.23303) | ⭐ reviewed | [cross-app](topics/cross-app.md), [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md), [observability](topics/observability.md), [safety-security](topics/safety-security.md) |
@@ -58,6 +76,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-15 | [Multimodal Filesystem Memory For Long-Horizon Embodied Agents](https://arxiv.org/abs/2610.22686) | metadata |  |
 | 2026-10-15 | [Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards](https://arxiv.org/abs/2610.22448) | metadata |  |
 | 2026-10-15 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) | ⭐ reviewed | [efficiency](topics/efficiency.md), [planning](topics/planning.md) |
+| 2026-10-15 | [Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows](https://arxiv.org/abs/2610.21109) | metadata |  |
 | 2026-10-15 | [Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks](https://arxiv.org/abs/2610.22539) | ⭐ reviewed | [imitation-learning](topics/imitation-learning.md), [robustness](topics/robustness.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-14 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) | ⭐ reviewed | [efficiency](topics/efficiency.md), [grounding](topics/grounding.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-14 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) | ⭐ reviewed | [data-generation](topics/data-generation.md), [efficiency](topics/efficiency.md), [web-navigation](topics/web-navigation.md) |

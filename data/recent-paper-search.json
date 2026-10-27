@@ -5,26 +5,38 @@
   "since_utc": "202610130000",
   "cutoff_utc": "202610270000",
   "polling_policy": "Complete arXiv snapshots are reused within one UTC publication day; failed or incomplete searches are retried by a later scheduled scan.",
-  "reported_total": null,
-  "unique_returned": 0,
-  "complete": false,
+  "reported_total": 63,
+  "unique_returned": 63,
+  "complete": true,
   "pages": [
     {
       "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610130000+TO+202610270000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
-      "retrieved_at": "2026-10-27T05:06:41Z",
-      "ok": false,
-      "request_attempts": 2,
-      "error": "HTTP Error 429: Unknown Error",
-      "status": 429,
+      "retrieved_at": "2026-10-27T14:32:45Z",
+      "ok": true,
+      "request_attempts": 1,
+      "status": 200,
       "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610130000+TO+202610270000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
-      "deferred": true,
-      "deferred_reason": "provider_cooldown",
-      "deferred_provider": "export.arxiv.org",
-      "request_attempted": true
+      "content_type": "application/atom+xml; charset=utf-8",
+      "sha256": "2e6c9736b795a8dd3ad3fe3f2287ceb3aa30a8b438a2a39ced7723e65677792b",
+      "bytes": 166732,
+      "request_attempted": true,
+      "start": 0,
+      "returned": 63
     }
   ],
-  "new_ids": [],
-  "warnings": [
-    "HTTP Error 429: Unknown Error"
-  ]
+  "new_ids": [
+    "arxiv:2610.35823",
+    "arxiv:2610.35237",
+    "arxiv:2610.34959",
+    "arxiv:2610.34735",
+    "arxiv:2610.34634",
+    "arxiv:2610.34582",
+    "arxiv:2610.34384",
+    "arxiv:2610.33907",
+    "arxiv:2610.33702",
+    "arxiv:2610.33645",
+    "arxiv:2610.33636",
+    "arxiv:2610.33528"
+  ],
+  "warnings": []
 }

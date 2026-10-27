@@ -1,35 +1,30 @@
 {
   "schema_version": 2,
-  "scan_day_utc": "2026-10-26",
-  "query": "(ti:\"computer use\" OR ti:\"computer-use\" OR ti:\"GUI agent\" OR ti:\"GUI agents\" OR ti:\"GUI grounding\" OR ti:\"web agent\" OR ti:\"browser agent\" OR ti:GUI OR ti:\"Android agent\" OR abs:\"computer-use agents\" OR abs:\"GUI agents\" OR abs:\"browser agents\" OR abs:\"mobile GUI\" OR abs:\"web navigation\" OR abs:AndroidWorld OR abs:Mind2Web) AND submittedDate:[202610120000 TO 202610260000]",
-  "since_utc": "202610120000",
-  "cutoff_utc": "202610260000",
+  "scan_day_utc": "2026-10-27",
+  "query": "(ti:\"computer use\" OR ti:\"computer-use\" OR ti:\"GUI agent\" OR ti:\"GUI agents\" OR ti:\"GUI grounding\" OR ti:\"web agent\" OR ti:\"browser agent\" OR ti:GUI OR ti:\"Android agent\" OR abs:\"computer-use agents\" OR abs:\"GUI agents\" OR abs:\"browser agents\" OR abs:\"mobile GUI\" OR abs:\"web navigation\" OR abs:AndroidWorld OR abs:Mind2Web) AND submittedDate:[202610130000 TO 202610270000]",
+  "since_utc": "202610130000",
+  "cutoff_utc": "202610270000",
   "polling_policy": "Complete arXiv snapshots are reused within one UTC publication day; failed or incomplete searches are retried by a later scheduled scan.",
-  "reported_total": 56,
-  "unique_returned": 56,
-  "complete": true,
+  "reported_total": null,
+  "unique_returned": 0,
+  "complete": false,
   "pages": [
     {
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610120000+TO+202610260000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
-      "retrieved_at": "2026-10-26T04:48:05Z",
-      "ok": true,
-      "request_attempts": 1,
-      "status": 200,
-      "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610120000+TO+202610260000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
-      "content_type": "application/atom+xml; charset=utf-8",
-      "sha256": "71398a7fa401052653f687f16024ac36d7e85efea9d985ea400be109250b51b3",
-      "bytes": 149769,
-      "request_attempted": true,
-      "start": 0,
-      "returned": 56
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610130000+TO+202610270000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "retrieved_at": "2026-10-27T05:06:41Z",
+      "ok": false,
+      "request_attempts": 2,
+      "error": "HTTP Error 429: Unknown Error",
+      "status": 429,
+      "final_url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agent%22+OR+ti%3A%22browser+agent%22+OR+ti%3AGUI+OR+ti%3A%22Android+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22browser+agents%22+OR+abs%3A%22mobile+GUI%22+OR+abs%3A%22web+navigation%22+OR+abs%3AAndroidWorld+OR+abs%3AMind2Web%29+AND+submittedDate%3A%5B202610130000+TO+202610270000%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "deferred": true,
+      "deferred_reason": "provider_cooldown",
+      "deferred_provider": "export.arxiv.org",
+      "request_attempted": true
     }
   ],
-  "new_ids": [
-    "arxiv:2610.32536",
-    "arxiv:2610.32482",
-    "arxiv:2610.32223",
-    "arxiv:2610.31712",
-    "arxiv:2610.31698"
-  ],
-  "warnings": []
+  "new_ids": [],
+  "warnings": [
+    "HTTP Error 429: Unknown Error"
+  ]
 }

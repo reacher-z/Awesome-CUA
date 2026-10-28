@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "0223de14d81985c3238793aa99f8da6bbd464799e3dc738cffdeeb5dcaa6ff36",
-  "observation_snapshot_sha256": "d9ee0210fb01c17c17b1dd304fd079e64cb401f0017d1dfb406e52c8c0b02245",
+  "manifest_sha256": "f8b2354dd2f823e435c7c574908d58ae0ed0dedd7df188b18c8b2500f0c006a9",
+  "observation_snapshot_sha256": "72c60b09321347bcc8e056c75875ce918d2111189c7375e703719c65aedb0ac6",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -1537,11 +1537,48 @@
           }
         },
         "id": "f4145c5e6930343a3c0f4ef7cf4e2b63a11917ea84cbfa4ba2f118a438621aae"
+      },
+      {
+        "active_records": 3295,
+        "curated_records": 1671,
+        "existing_seed_count": 232,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 19986,
+            "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+          },
+          "candidates.jsonl": {
+            "bytes": 5070467,
+            "sha256": "007a5682a08750f780b8b7bed8701c99c76525edfed63afef1d371c82961d7ad"
+          },
+          "catalog.jsonl": {
+            "bytes": 8549702,
+            "sha256": "78e09e274b7011bb88c4be79baafff58bd7fdf1205fb98a146c08888dab15f85"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 1836286,
+            "sha256": "69b36c4ae56e9c5ffc486429f260061416f1c03cafab293126154190a0f9b718"
+          },
+          "repository-aliases.json": {
+            "bytes": 24061,
+            "sha256": "f830cd3a152433350805a322d75e5e7beb6ce1e799760c99fe34ab44d8da4c14"
+          }
+        },
+        "id": "99dc89f8f1c5c609c3630910f2c279609dfcc72a13b3ca6ed4427808bd3f328c"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:99dc89f8f1c5c609c3630910f2c279609dfcc72a13b3ca6ed4427808bd3f328c",
+        "input_id": "99dc89f8f1c5c609c3630910f2c279609dfcc72a13b3ca6ed4427808bd3f328c",
+        "kind": "existing",
+        "last_attempt": 461,
+        "next_index": 2,
+        "seed_count": 232,
+        "status": "pending"
+      },
       {
         "id": "existing:f4145c5e6930343a3c0f4ef7cf4e2b63a11917ea84cbfa4ba2f118a438621aae",
         "input_id": "f4145c5e6930343a3c0f4ef7cf4e2b63a11917ea84cbfa4ba2f118a438621aae",
@@ -1549,7 +1586,7 @@
         "last_attempt": 450,
         "next_index": 2,
         "seed_count": 232,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:d4547b9103fbbcc669a66c41ac37348a48a690817b48f34cbca0552a73fbb76b",
@@ -19638,14 +19675,19 @@
         "id": "search:1dc8a1fbce9e44c6b862fb86",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 460,
+        "last_attempt": 469,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:computer-use-agent is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
-        "seen_repository_ids": [],
-        "status": "pending",
+        "reported_total": 4,
+        "seen_repository_ids": [
+          1435386017,
+          1435551367,
+          1436363926,
+          1437213569
+        ],
+        "status": "observed_pages_exhausted",
         "topic": "computer-use-agent",
         "total_changed": false
       },
@@ -19655,14 +19697,20 @@
         "id": "search:ff99e7e26c6951a51b9f01b9",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 462,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:computer-use-agents is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
-        "seen_repository_ids": [],
-        "status": "pending",
+        "reported_total": 5,
+        "seen_repository_ids": [
+          1435386017,
+          1435551367,
+          1436135516,
+          1436363926,
+          1436816499
+        ],
+        "status": "observed_pages_exhausted",
         "topic": "computer-use-agents",
         "total_changed": false
       },
@@ -19672,14 +19720,14 @@
         "id": "search:0f14fae8c89f0212b0e50784",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 463,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:gui-grounding is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "gui-grounding",
         "total_changed": false
       },
@@ -19689,14 +19737,16 @@
         "id": "search:0a84f3472c614a6029548a5f",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 464,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:browser-use is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
-        "seen_repository_ids": [],
-        "status": "pending",
+        "reported_total": 1,
+        "seen_repository_ids": [
+          1435561289
+        ],
+        "status": "observed_pages_exhausted",
         "topic": "browser-use",
         "total_changed": false
       },
@@ -19706,14 +19756,16 @@
         "id": "search:3c07bd5c52be6f6ca775540f",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 465,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:web-agent is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
-        "seen_repository_ids": [],
-        "status": "pending",
+        "reported_total": 1,
+        "seen_repository_ids": [
+          1435239228
+        ],
+        "status": "observed_pages_exhausted",
         "topic": "web-agent",
         "total_changed": false
       },
@@ -19723,14 +19775,14 @@
         "id": "search:6829155104690eff5278ec9d",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 466,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:web-agents is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "web-agents",
         "total_changed": false
       },
@@ -19740,14 +19792,19 @@
         "id": "search:3cf2ae5cdcd026f88f276270",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 467,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:desktop-agent is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
-        "seen_repository_ids": [],
-        "status": "pending",
+        "reported_total": 4,
+        "seen_repository_ids": [
+          1435104756,
+          1435483936,
+          1437178400,
+          1437213569
+        ],
+        "status": "observed_pages_exhausted",
         "topic": "desktop-agent",
         "total_changed": false
       },
@@ -19757,14 +19814,14 @@
         "id": "search:1d07ed7443485c29ce09f7d3",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 468,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:mobile-agent is:public fork:false created:2026-10-27..2026-10-28",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "mobile-agent",
         "total_changed": false
       }
@@ -64004,6 +64061,206 @@
         "run_id": "run:bead8c9bfcb2b20aab99fdf1",
         "source_url": null,
         "status": 403
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-10-28T15:07:38.615558+00:00",
+        "id": "receipt:057962ef023b7a33c73485e449b02c90503832ac046eb50d8305020716bcf088",
+        "incomplete_results": null,
+        "outcome": "redirect_not_followed",
+        "position": 1,
+        "query_id": "existing:99dc89f8f1c5c609c3630910f2c279609dfcc72a13b3ca6ed4427808bd3f328c",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "68f653a6d8b56ef27c478546cb91b6a127acd0103d4849150dc3104314398686",
+        "requested_at": "2026-10-28T15:07:38.406532+00:00",
+        "response_bytes": 198,
+        "response_sha256": "6b5bb8a823de0cec9aa11bdfe6f07da23e4d8ae40d455a04e0219f44b0789ea6",
+        "returned_count": null,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": null,
+        "status": 301
+      },
+      {
+        "accepted_repository_ids": [
+          1435386017,
+          1435551367,
+          1436135516,
+          1436363926,
+          1436816499
+        ],
+        "finished_at": "2026-10-28T15:07:45.319146+00:00",
+        "id": "receipt:f2bcd356e3f90b5dfb8080615f89428c194bc9b77e9a2f1b5b013993eacb3ac8",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:ff99e7e26c6951a51b9f01b9",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 5,
+        "request_url_sha256": "0b6f1f187e8d93efb1e973deacd82754cbaa60cf5335694c48890900fe320cfd",
+        "requested_at": "2026-10-28T15:07:44.911623+00:00",
+        "response_bytes": 31532,
+        "response_sha256": "ed760cdb3ac7e1b3b628474fecee478cc62d73d260c9e233fc04cd29b151a122",
+        "returned_count": 5,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Acomputer-use-agents+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-10-28T15:07:51.813636+00:00",
+        "id": "receipt:2b577a45626996dcdc74e3d0594b00d14d7cfdb8471195b356cdd161bbee1ed7",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:0f14fae8c89f0212b0e50784",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "cea791aec176704d1c7ccc03ba47245cad5a46148fd1be7779ba07d53b9be002",
+        "requested_at": "2026-10-28T15:07:51.416922+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Agui-grounding+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1435561289
+        ],
+        "finished_at": "2026-10-28T15:07:58.189890+00:00",
+        "id": "receipt:77ed5959b0f3c2bb10a7ba5251e69d41a551c9681831716018aa4cd98ffbb20f",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:0a84f3472c614a6029548a5f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 1,
+        "request_url_sha256": "673353948ece9fea4e8358ca1f91589f852c44bcd3b52e0a752d1ca674b84df3",
+        "requested_at": "2026-10-28T15:07:57.921961+00:00",
+        "response_bytes": 6019,
+        "response_sha256": "d5a0faae9e6c033d82de04bb639c835422b4fd936dd22fdf582979b4fad03270",
+        "returned_count": 1,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Abrowser-use+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1435239228
+        ],
+        "finished_at": "2026-10-28T15:08:04.766676+00:00",
+        "id": "receipt:dfdc3f54aa15dc4feb52e48be85551c856e6412f10a93c64f7b2e3638651aabc",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:3c07bd5c52be6f6ca775540f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 1,
+        "request_url_sha256": "944e08122313534b7b5b3cbe9d46bb140a643a74136a416b81b6cd878356a2da",
+        "requested_at": "2026-10-28T15:08:04.427282+00:00",
+        "response_bytes": 5909,
+        "response_sha256": "5e2e8d4508cff0bbcfe233f08e7a0ff0397c80d5dd534dfdcd50f09b9ca532de",
+        "returned_count": 1,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Aweb-agent+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-10-28T15:08:11.201718+00:00",
+        "id": "receipt:635a56b201475767db04b832eb5276609c73a6553b461e729ce13146e247b370",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:6829155104690eff5278ec9d",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "c5554cc14f8d432aae1325affebefc22fdcee6d09357e2231b8beb0f7c60297a",
+        "requested_at": "2026-10-28T15:08:10.932668+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Aweb-agents+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1435104756,
+          1435483936,
+          1437178400,
+          1437213569
+        ],
+        "finished_at": "2026-10-28T15:08:17.883494+00:00",
+        "id": "receipt:6297ae006b175ba846646460fe62a3ca14843c8ad2fc034d9b820b01955dff2f",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:3cf2ae5cdcd026f88f276270",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 4,
+        "request_url_sha256": "bfb8ca090b8ed854d70c587b5de40de0da2456076118d01633deae37f1186613",
+        "requested_at": "2026-10-28T15:08:17.438194+00:00",
+        "response_bytes": 24163,
+        "response_sha256": "9c5ad13a6e0ab61b7db5a904fb45fc6bc080caed8ceaef7d8c061a932e178105",
+        "returned_count": 4,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Adesktop-agent+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-10-28T15:08:24.173226+00:00",
+        "id": "receipt:4f9b328229923524747cf913bd2ce52800dabcc1eb49ec9305570e70d99f86d1",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:1d07ed7443485c29ce09f7d3",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "85bf0a1139efb6a85ea8544e45d0db2675404308df2c4d53b3b42ffd23dde1c9",
+        "requested_at": "2026-10-28T15:08:23.943512+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Amobile-agent+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1435386017,
+          1435551367,
+          1436363926,
+          1437213569
+        ],
+        "finished_at": "2026-10-28T15:08:30.866714+00:00",
+        "id": "receipt:fd69e916c24f6341fd17616d35cd42e66b67c85554fcac6440325890d91fdf8d",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:1dc8a1fbce9e44c6b862fb86",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 4,
+        "request_url_sha256": "6cf0aae7aebd6dfb90264ba59dcca1106e5297424682cb89095b2736296b8047",
+        "requested_at": "2026-10-28T15:08:30.449029+00:00",
+        "response_bytes": 25332,
+        "response_sha256": "e1aba85aebdfdfba1fd5cc2b51c6bed670a4fbe67c0008aef000dba37d33cdbb",
+        "returned_count": 4,
+        "run_id": "run:2da48159bb8b1aa7178ca8a3",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Acomputer-use-agent+is%3Apublic+fork%3Afalse+created%3A2026-10-27..2026-10-28&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
       }
     ],
     "runs": [
@@ -65316,9 +65573,40 @@
         "strict_replay": true,
         "unknown_requests": 2,
         "wall_seconds_budget": 195.951825965
+      },
+      {
+        "accepted_metadata_rows": 15,
+        "after_unique_repositories": 9555,
+        "before_unique_repositories": 9551,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:99dc89f8f1c5c609c3630910f2c279609dfcc72a13b3ca6ed4427808bd3f328c"
+        ],
+        "epoch_id": "epoch:6aebe6a62818e2b6a1621c34",
+        "finished_at": "2026-10-28T15:08:31.708112+00:00",
+        "id": "run:2da48159bb8b1aa7178ca8a3",
+        "input_id": "99dc89f8f1c5c609c3630910f2c279609dfcc72a13b3ca6ed4427808bd3f328c",
+        "new_unique_repositories": 4,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 9,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 97,
+          "reservations_before": 88,
+          "reservations_charged": 9,
+          "round_id": "61eb337339f4434f8d25c50f9956e370"
+        },
+        "started_at": "2026-10-28T15:07:36.222910+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 202.412052015
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "d0e94d9d7e67f55d5f17bc789ead3923025a82f8bf2838c423125cc7c97cf634"
+  "state_sha256": "1155ccda36274040564fe796f82e63699616304a8f4197ae84f8f441449ee5a9"
 }

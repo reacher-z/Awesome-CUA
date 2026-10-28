@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-10-28T15:07:23Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-10-28T21:06:09Z**. Generated from committed source receipts.
 
-- 3,296 resource records: 1,671 curated; 1,625 bibliographic metadata only.
-- 2,825 paper and survey records, including 2,812 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,950 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,341 discovery identifiers; 910 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,303 resource records: 1,671 curated; 1,632 bibliographic metadata only.
+- 2,832 paper and survey records, including 2,819 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,957 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,348 discovery identifiers; 910 remain unresolved after accounting for scope exclusions and for 100 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -92,13 +92,13 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-28T15:07:23Z; **32/32** query windows succeeded. 1,504 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-10-28T21:06:08Z; **32/32** query windows succeeded. 1,499 distinct identifiers; 7 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 
 | Area | Query | Returned / limit | State |
 | --- | --- | ---: | --- |
-| General computer use | computer use agents | 77 / 80 | success |
+| General computer use | computer use agents | 80 / 80 | success |
 | Grounding evaluation | GUI grounding benchmark | 80 / 80 | success |
 | Mobile learning | mobile GUI agent reinforcement learning | 80 / 80 | success |
 | Web data and evaluation | web agent dataset benchmark | 80 / 80 | success |

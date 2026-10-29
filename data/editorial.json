@@ -66619,5 +66619,203 @@
     "review_note": "Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion.",
     "reviewed_at": "2026-10-20T19:29:44Z",
     "reviewed_sha256": "fed38272c6c64f56e5675f0df9a5091ce38e4b9f92f1de4878c96dfcff9b1e99"
+  },
+  {
+    "name": "ClawBench: Can AI Agents Complete Everyday Online Tasks?",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2604.08523",
+    "summary": "Introduces ClawBench, 153 everyday tasks on production websites in 15 categories; an interception layer blocks each final submission so bookings, purchases and job applications are scored without side effects.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "workflow"
+    ],
+    "scope": "core",
+    "verify_terms": [
+      "ClawBench: Can AI Agents Complete"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2604.08523"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Experiments, reported performance and artifact availability have not been independently reproduced.",
+    "reviewed_sha256": "e6011e7f11aab2272d1b5a38c317bfbe2eae9629258c726c7769985c5c566adb",
+    "reviewed_at": "2026-10-18T11:55:00Z"
+  },
+  {
+    "name": "WebWorld: The Browser as a World Model for Self-Improving Web Code",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.30530",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow",
+      "robustness",
+      "data-generation"
+    ],
+    "scope": "adjacent",
+    "summary": "Uses typed browser interaction contracts to accept web-code improvements only when target progress and previously verified capabilities are preserved. Accepted transitions supply self-improvement data.",
+    "verify_terms": [
+      "WebWorld: The Browser as a World Model for Self-Improving Web Code"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2212.04661%2C2508.20151%2C2604.05117%2C2604.08523%2C2605.08703%2C2605.30288%2C2606.06113%2C2606.06741%2C2606.11042%2C2606.11700%2C2606.18195%2C2607.04733%2C2607.12463%2C2607.15933%2C2608.14015%2C2608.17800%2C2608.19583%2C2608.30530%2C2608.31100%2C2608.31111%2C2609.00365%2C2609.01437%2C2609.07784%2C2609.34151%2C2609.36388%2C2610.02488%2C2610.20951%2C2610.21046&max_results=28"
+    ],
+    "editorial_reviewed": true,
+    "notes": "Adjacent browser-backed artifact validation, not a GUI navigation benchmark or original-source recovery. Distinct from WebWorld: A Large-Scale World Model for Web Agent Training. Results have not been independently reproduced.",
+    "read_basis": "Original arXiv Atom title, complete abstract, authors and version snapshot; checked separately from the unrelated WebWorld web simulator.",
+    "reviewed_sha256": "f880f8415dd6faa6caa8d2a182345e7d7ed5e05d6812463a0b8259ef66893949",
+    "reviewed_at": "2026-10-20T02:51:27.624179+00:00"
+  },
+  {
+    "name": "ClawBench",
+    "kind": "benchmark",
+    "url": "https://github.com/TIGER-AI-Lab/ClawBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "workflow",
+      "observability"
+    ],
+    "summary": "Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence.",
+    "scope": "core",
+    "verify_terms": [
+      "ClawBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md"
+    ],
+    "documented_by": [
+      "2604.08523"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "relations",
+      "details"
+    ],
+    "notes": "Renamed from reacher-z/ClawBench; both API names return repository 1206519531 (TIGER-AI-Lab/ClawBench), which is not a fork and not archived. Counts and scoring rules were read at commit 07eb50a3. The tree also holds v1-lite, claw-eval and environmental-observation task folders, which are not counted here. Task definitions and execution traces are also published as Hugging Face datasets (NAIL-Group/ClawBench, NAIL-Group/ClawBenchV1Trace, TIGER-Lab/ClawBenchV2Trace), whose cards and licenses were not reviewed for this record. Apache-2.0 is recorded for repository code only. Nothing was installed or run.",
+    "details": {
+      "leaderboard_url": "https://huggingface.co/spaces/TIGER-Lab/ClawBench",
+      "repository_tree_sha": "d12a2dda577f2c943a74d833e8253860eda81eaf",
+      "benchmark_protocol": {
+        "focus": [
+          "everyday online tasks on production websites",
+          "multi-step, write-heavy form workflows"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [
+          "harness-defined browser actions such as navigating, clicking and filling forms"
+        ],
+        "evaluation": "Two stages per task run: a request interceptor inside the container blocks the final HTTP request and marks the run intercepted when its URL regex and method match the task's eval_schema; an LLM judge (default deepseek-v4-pro at temperature 0) then checks the intercepted body against the instruction. A pass needs both. The original V1 paper rubric instead compares agent and human-reference trajectories.",
+        "counts": [
+          {
+            "value": 152,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "V1 corpus shipped in test-cases/v1 (task.json files)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1"
+          },
+          {
+            "value": 129,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "V2 corpus shipped in test-cases/v2 (task.json files)",
+            "basis": "computed",
+            "evidence_url": "https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1"
+          },
+          {
+            "value": 153,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "V1 corpus as published in the paper and used as the scoring denominator",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/07eb50a3d4c5a799f5ad4eebd57c67c10417787f/eval/scoring.md"
+          },
+          {
+            "value": 130,
+            "unit": "tasks",
+            "qualifier": "exact",
+            "population": "V2 corpus as published and used as the scoring denominator",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/07eb50a3d4c5a799f5ad4eebd57c67c10417787f/eval/scoring.md"
+          },
+          {
+            "value": 143,
+            "unit": "live websites",
+            "qualifier": "exact",
+            "population": "shipped V1 corpus",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md"
+          },
+          {
+            "value": 63,
+            "unit": "live websites",
+            "qualifier": "exact",
+            "population": "shipped V2 corpus",
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md"
+          }
+        ],
+        "notes": "The README says two ASPCA tasks were removed after publication, so the shipped corpora hold 152 and 129 tasks while scoring.md still divides by 153 and 130. Live sites change over time, and the README asks for comparisons under the same corpus revision, harness and rubric. Agents run through selectable harnesses (for example Hermes and OpenClaw), so observations and actions depend on the harness.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md",
+          "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/07eb50a3d4c5a799f5ad4eebd57c67c10417787f/eval/scoring.md",
+          "https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1"
+        ]
+      },
+      "repository_revision": "07eb50a3d4c5a799f5ad4eebd57c67c10417787f"
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.repository_revision",
+          "details.repository_tree_sha",
+          "details.benchmark_protocol"
+        ],
+        "url": "https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1",
+        "sha256": "144a65c3dd92c7437e4ce065bed7b16e4c33496ea395d2bb1ecbd74132da29ce",
+        "retrieved_at": "2026-10-18T11:54:35Z"
+      },
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/07eb50a3d4c5a799f5ad4eebd57c67c10417787f/eval/scoring.md",
+        "sha256": "8d8ade83a355e10800591435de5aa111e8d8297374b025ff88804358ee80b71a",
+        "retrieved_at": "2026-10-18T11:54:36Z"
+      }
+    ],
+    "reviewed_sha256": "61bad2a8e6ab56df159237d75f1081e1246b294183b31ef7abe47193ac26b541",
+    "reviewed_at": "2026-10-18T11:55:00Z"
   }
 ]

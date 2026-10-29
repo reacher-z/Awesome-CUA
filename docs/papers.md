@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,180; 566 ⭐) · [2025](#2025) (706; 373 ⭐) · [2024](#2024) (428; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (72; 13 ⭐) · [2021](#2021) (52; 8 ⭐) · [2020](#2020) (33; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,211; 566 ⭐) · [2025](#2025) (706; 373 ⭐) · [2024](#2024) (429; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (73; 13 ⭐) · [2021](#2021) (53; 8 ⭐) · [2020](#2020) (34; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,6 +13,30 @@ Dates retain their recorded precision: a year or month does not imply a known da
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-10-27 | [When to Intervene? An Empirical Study of Errors and Self-Recovery in LLM Agents](https://arxiv.org/abs/2610.36471) | metadata |  |
+| 2026-10-27 | [Right Click, Wrong Box: Grading GUI Grounding by What a Click Does](https://arxiv.org/abs/2610.36831) | metadata |  |
+| 2026-10-27 | [Learning to Look Beyond Screens: Transferable Visual Observation from GUI Grounding](https://arxiv.org/abs/2610.37093) | metadata |  |
+| 2026-10-27 | [GUI-JEPA: Candidate-Conditioned JEPA Latents as a Fast Action Policy for Mobile GUI Agents](https://arxiv.org/abs/2610.36877) | metadata |  |
+| 2026-10-27 | [From Interaction to Capability: Task Advancement as State and Supervision for GUI Agents](https://arxiv.org/abs/2610.37482) | metadata |  |
+| 2026-10-27 | [AdaGround: Token-Normalized Adaptive Zooming with Verifier-in-the-Loop Refinement for GUI Grounding](https://arxiv.org/abs/2610.36874) | metadata |  |
+| 2026-10-26 | [iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents](https://arxiv.org/abs/2610.34735) | metadata |  |
+| 2026-10-26 | [The Agent in the Middle: How AI-Mediated Access Reshapes Web Vulnerability Exploitation](https://arxiv.org/abs/2610.35541) | metadata |  |
+| 2026-10-26 | [RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649) | metadata |  |
+| 2026-10-26 | [GUIFlow: Temporal Redundancy-Aware Incremental Inference for GUI Agents](https://arxiv.org/abs/2610.34959) | metadata |  |
+| 2026-10-26 | [Chart the Invisible: Interactive Perception for Hidden-Target Exploration in GUI Agents](https://arxiv.org/abs/2610.35237) | metadata |  |
+| 2026-10-26 | [Back to Basics: A Skill-Centric Approach to Generalist Web Agents](https://arxiv.org/abs/2610.35823) | metadata |  |
+| 2026-10-25 | [Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents](https://arxiv.org/abs/2610.34167) | metadata |  |
+| 2026-10-25 | [Rethinking Verification in Agent Harnesses](https://arxiv.org/abs/2610.34577) | metadata |  |
+| 2026-10-25 | [HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget](https://arxiv.org/abs/2610.34582) | metadata |  |
+| 2026-10-25 | [Beyond Benchmarks: Can Small Open-Weight Models Get Real Coding Work Done?](https://arxiv.org/abs/2610.34241) | metadata |  |
+| 2026-10-25 | [AndroidFlux: Evaluating and Reward Modeling Failure Recovery Capabilities in Mobile Use Multimodal Agents](https://arxiv.org/abs/2610.34384) | metadata |  |
+| 2026-10-25 | [AgentProofBench: Benchmarking Reusable Verifiers for Web Agents](https://arxiv.org/abs/2610.34634) | metadata |  |
+| 2026-10-24 | [Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents](https://arxiv.org/abs/2610.33568) | metadata |  |
+| 2026-10-24 | [SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents](https://arxiv.org/abs/2610.33528) | metadata |  |
+| 2026-10-24 | [Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory](https://arxiv.org/abs/2610.33702) | metadata |  |
+| 2026-10-24 | [PreView: Enhancing GUI Grounding with Preprocessed Views and Cues](https://arxiv.org/abs/2610.33645) | metadata |  |
+| 2026-10-24 | [OS-Wizard: Scaling Computer-Using Agents to Specialized Software via Knowledge-Guided Exploration](https://arxiv.org/abs/2610.33907) | metadata |  |
+| 2026-10-24 | [Build or Adopt? Custom-Built vs. General-Purpose LLM Agent Harnesses for Automotive GUI Testing](https://arxiv.org/abs/2610.33636) | metadata |  |
 | 2026-10-23 | [WaitLens: Temporal VLM-Based Adaptive Waiting for Industrial GUI Testing Agents](https://arxiv.org/abs/2610.32482) | metadata |  |
 | 2026-10-23 | [IGG: A Benchmark for Interactive GUI Grounding under Visibility Constraints](https://arxiv.org/abs/2610.32536) | metadata |  |
 | 2026-10-23 | [Correct Answers, Closed Gates: SolveBind for GUI Agents at the Verification Barrier](https://arxiv.org/abs/2610.32223) | metadata |  |
@@ -21,10 +45,12 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-22 | [Reuse, Rewrite, or Reject: Evidence-Constrained Trace Reuse for Repeated Mobile GUI Control](https://arxiv.org/abs/2610.31712) | metadata |  |
 | 2026-10-22 | [PointerBench: A Diagnostic Benchmark for Fine-Grained GUI Grounding](https://arxiv.org/abs/2610.31274) | metadata |  |
 | 2026-10-22 | [Learning What to Ask for Tomorrow: Active Preference Acquisition for Long-Term Personalized Web Agents](https://arxiv.org/abs/2610.31107) | metadata |  |
+| 2026-10-22 | [HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games](https://arxiv.org/abs/2610.31162) | metadata |  |
 | 2026-10-22 | [Diagnosing Personalization Failures in Mobile GUI Agents](https://arxiv.org/abs/2610.30573) | metadata |  |
 | 2026-10-22 | [AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack](https://arxiv.org/abs/2610.31404) | metadata |  |
 | 2026-10-21 | [Who Verifies the Agent's Success Claim? Self-Report Leakage in GUI-Agent Completion Judging](https://arxiv.org/abs/2610.29609) | metadata |  |
 | 2026-10-21 | [Understanding Tool-Mediated Interaction Failures in Agentic GUI Software: An Empirical Study](https://arxiv.org/abs/2610.31698) | metadata |  |
+| 2026-10-21 | [Steering Black-Box Large Language Model Agents with Pitfall Anticipation World Model](https://arxiv.org/abs/2610.29139) | metadata |  |
 | 2026-10-21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | metadata |  |
 | 2026-10-20 | [RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation](https://arxiv.org/abs/2610.27861) | metadata |  |
 | 2026-10-20 | [Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay](https://arxiv.org/abs/2610.27954) | metadata |  |
@@ -46,6 +72,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-17 | [fxBench: Evaluating and Understanding Formula Suggestions in Spreadsheets](https://arxiv.org/abs/2610.24729) | metadata |  |
 | 2026-10-17 | [Hippo: Training-Free Agent Self-Evolution via Hippocampal Replay](https://arxiv.org/abs/2610.24453) | metadata |  |
 | 2026-10-17 | [Beyond Next-Screen Prediction: The Decision Value of GUI World Models](https://arxiv.org/abs/2610.24372) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [evaluation](topics/evaluation.md), [imitation-learning](topics/imitation-learning.md), [world-models](topics/world-models.md) |
+| 2026-10-17 | [Assessing the CAD Capabilities of General-Purpose AI Models: A Case Study of GPT-6 Astra](https://arxiv.org/abs/2610.24451) | metadata |  |
 | 2026-10-16 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-16 | [PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas](https://arxiv.org/abs/2610.22990) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-16 | [MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents](https://arxiv.org/abs/2610.23303) | ⭐ reviewed | [cross-app](topics/cross-app.md), [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md), [observability](topics/observability.md), [safety-security](topics/safety-security.md) |
@@ -58,6 +85,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-15 | [Multimodal Filesystem Memory For Long-Horizon Embodied Agents](https://arxiv.org/abs/2610.22686) | metadata |  |
 | 2026-10-15 | [Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards](https://arxiv.org/abs/2610.22448) | metadata |  |
 | 2026-10-15 | [LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents](https://arxiv.org/abs/2610.22280) | ⭐ reviewed | [efficiency](topics/efficiency.md), [planning](topics/planning.md) |
+| 2026-10-15 | [Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows](https://arxiv.org/abs/2610.21109) | metadata |  |
 | 2026-10-15 | [Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks](https://arxiv.org/abs/2610.22539) | ⭐ reviewed | [imitation-learning](topics/imitation-learning.md), [robustness](topics/robustness.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-14 | [Why Generate a Click? Plug-in Decision Heads for Web Agents](https://arxiv.org/abs/2610.20107) | ⭐ reviewed | [efficiency](topics/efficiency.md), [grounding](topics/grounding.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-14 | [Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents](https://arxiv.org/abs/2610.19834) | ⭐ reviewed | [data-generation](topics/data-generation.md), [efficiency](topics/efficiency.md), [web-navigation](topics/web-navigation.md) |
@@ -345,6 +373,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-08-16 | [UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations](https://arxiv.org/abs/2608.15930) | ⭐ reviewed | [data-generation](topics/data-generation.md), [long-horizon](topics/long-horizon.md), [workflow](topics/workflow.md) |
 | 2026-08-16 | [Improving LLM-based Autonomous Web Agents with Filtering](https://arxiv.org/abs/2609.27770) | ⭐ reviewed | [efficiency](topics/efficiency.md), [evaluation](topics/evaluation.md), [screen-understanding](topics/screen-understanding.md), [web-navigation](topics/web-navigation.md) |
 | 2026-08-15 | [StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling](https://arxiv.org/abs/2608.15089) | metadata |  |
+| 2026-08-14 | [Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification](https://arxiv.org/abs/2608.14929) | metadata |  |
 | 2026-08-14 | [On the Acceleration of Pulsar Timing computations using Normalising Flows and Parallelisation](https://arxiv.org/abs/2608.13991) | metadata |  |
 | 2026-08-14 | [LegacyWorld: Atomicity-Aware Evaluation of GUI Agents for Legacy Workflows](https://arxiv.org/abs/2608.14131) | ⭐ reviewed | [evaluation](topics/evaluation.md), [recording](topics/recording.md), [safety-security](topics/safety-security.md), [workflow](topics/workflow.md) |
 | 2026-08-14 | [Large-scale workflow placement in serverless computing using integer nonlinear programming](https://arxiv.org/abs/2608.14427) | metadata |  |
@@ -918,6 +947,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-03-19 | [Automated Membership Inference Attacks (AutoMIA): Discovering MIA Signal Computations using LLM Agents](https://arxiv.org/abs/2603.19375) | metadata |  |
 | 2026-03-19 | [AndroTMem: From Interaction Trajectories to Anchored Memory in Long-Horizon GUI Agents](https://arxiv.org/abs/2603.18429) | ⭐ reviewed | [evaluation](topics/evaluation.md), [long-horizon](topics/long-horizon.md), [memory](topics/memory.md) |
 | 2026-03-18 | [WebPII: Benchmarking Visual PII Detection for Computer-Use Agents](https://arxiv.org/abs/2603.17357) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [screen-understanding](topics/screen-understanding.md) |
+| 2026-03-18 | [Guardrails as Infrastructure: Policy-First Control for Tool-Orchestrated Workflows](https://arxiv.org/abs/2603.18059) | metadata |  |
 | 2026-03-18 | [FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software Repair](https://arxiv.org/abs/2603.17826) | metadata |  |
 | 2026-03-18 | [Efficient Exploration at Scale](https://arxiv.org/abs/2603.17378) | metadata |  |
 | 2026-03-18 | [AdaZoom-GUI: Adaptive Zoom-based GUI Grounding with Instruction Refinement](https://arxiv.org/abs/2603.17441) | ⭐ reviewed | [grounding](topics/grounding.md), [reinforcement-learning](topics/reinforcement-learning.md), [screen-understanding](topics/screen-understanding.md) |
@@ -1121,6 +1151,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-01-25 | [Automated structural testing of LLM-based agents: methods, framework, and case studies](https://arxiv.org/abs/2601.18827) | metadata |  |
 | 2026-01-24 | [Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems](https://arxiv.org/abs/2601.17548) | metadata |  |
 | 2026-01-24 | [GraphPilot: GUI Task Automation with One-Step LLM Reasoning Powered by Knowledge Graph](https://arxiv.org/abs/2601.17418) | ⭐ reviewed | [efficiency](topics/efficiency.md), [memory](topics/memory.md), [mobile-navigation](topics/mobile-navigation.md), [planning](topics/planning.md) |
+| 2026-01-23 | [DataStates-LLM: Scalable Checkpointing for Transformer Models Using Composable State Providers](https://arxiv.org/abs/2601.16956) | metadata |  |
 | 2026-01-22 | [The Behavioral Fabric of LLM-Powered GUI Agents: Human Values and Interaction Outcomes](https://arxiv.org/abs/2601.16356) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [ui-design](topics/ui-design.md) |
 | 2026-01-22 | [EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience](https://arxiv.org/abs/2601.15876) | ⭐ reviewed | [data-generation](topics/data-generation.md), [long-horizon](topics/long-horizon.md), [sandbox](topics/sandbox.md), [self-reflection](topics/self-reflection.md) |
 | 2026-01-22 | [Computer Environments Elicit General Agentic Intelligence in LLMs](https://arxiv.org/abs/2601.16206) | metadata |  |
@@ -2333,6 +2364,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2024-01-11 | [Universal Vulnerabilities in Large Language Models: Backdoor Attacks for In-context Learning](https://arxiv.org/abs/2401.05949) | metadata |  |
 | 2024-01-10 | [Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security](https://arxiv.org/abs/2401.05459) | metadata |  |
 | 2024-01-10 | [InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks](https://arxiv.org/abs/2401.05507) | metadata |  |
+| 2024-01-09 | [DebugBench: Evaluating Debugging Capability of Large Language Models](https://arxiv.org/abs/2401.04621) | metadata |  |
 | 2024-01-08 | [Fault-tolerant quantum computation using large spin cat-codes](https://arxiv.org/abs/2401.04271) | metadata |  |
 | 2024-01-07 | [Portable medical devices creation technology by using the Bluetooth module](https://arxiv.org/abs/2402.03323) | metadata |  |
 | 2024-01-04 | [MobileAgent: enhancing mobile control via human-machine interaction and SOP integration](https://arxiv.org/abs/2401.04124) | ⭐ reviewed | [human-in-the-loop](topics/human-in-the-loop.md), [mobile-navigation](topics/mobile-navigation.md), [workflow](topics/workflow.md) |
@@ -2608,6 +2640,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2022-04-06 | [A Design Methodology for Fault-Tolerant Computing using Astrocyte Neural Networks](https://arxiv.org/abs/2204.02942) | metadata |  |
 | 2022-04-04 | [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691) | metadata |  |
 | 2022-03-29 | [High Speed Photonic Neuromorphic Computing Using Recurrent Optical Spectrum Slicing Neural Networks](https://arxiv.org/abs/2203.15807) | metadata |  |
+| 2022-03-25 | [CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis](https://arxiv.org/abs/2203.13474) | metadata |  |
 | 2022-03-21 | [Unified Multivariate Gaussian Mixture for Efficient Neural Image Compression](https://arxiv.org/abs/2203.10897) | metadata |  |
 | 2022-03-16 | [Measurement-based quantum computation using two-component BECs](https://arxiv.org/abs/2203.08993) | metadata |  |
 | 2022-03-14 | [Enhanced-Fidelity Ultrafast Geometric Quantum Computation Using Strong Classical Drives](https://arxiv.org/abs/2203.06831) | metadata |  |
@@ -2648,6 +2681,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2021-09-26 | [Singularities of serial robots: Identification and distance computation using geometric algebra](https://arxiv.org/abs/2109.12470) | metadata |  |
 | 2021-09-25 | [All-photonic architectural roadmap for scalable quantum computing using Greenberger-Horne-Zeilinger states](https://arxiv.org/abs/2109.12280) | metadata |  |
 | 2021-09-24 | [Quantum Computation Using Action Variables](https://arxiv.org/abs/2109.13639) | metadata |  |
+| 2021-09-24 | [CPT: Colorful Prompt Tuning for Pre-trained Vision-Language Models](https://arxiv.org/abs/2109.11797) | metadata |  |
 | 2021-09-16 | [Scalable massively parallel computing using continuous-time data representation in nanoscale crossbar array](https://arxiv.org/abs/2109.07976) | metadata |  |
 | 2021-09-02 | [A Max-Min Task Offloading Algorithm for Mobile Edge Computing Using Non-Orthogonal Multiple Access](https://arxiv.org/abs/2109.01239) | metadata |  |
 | 2021-08-11 | [A Better Loss for Visual-Textual Grounding](https://arxiv.org/abs/2108.05308) | metadata |  |
@@ -2718,6 +2752,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2020-04-18 | [BReG-NeXt: Facial Affect Computing Using Adaptive Residual Networks With Bounded Gradient](https://arxiv.org/abs/2004.08495) | metadata |  |
 | 2020-03-25 | [Cognitive computation using neural representations of time and space in the Laplace domain](https://arxiv.org/abs/2003.11668) | metadata |  |
 | 2020-03-01 | [A Study on Multimodal and Interactive Explanations for Visual Question Answering](https://arxiv.org/abs/2003.00431) | metadata |  |
+| 2020-01-01 | [Reinforcement Learning with Goal-Distance Gradient](https://arxiv.org/abs/2001.00127) | metadata |  |
 
 ## 2019
 

@@ -17,7 +17,7 @@
 [阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C316-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C323-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C671-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -73,9 +73,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,316 条资源记录** · **1,671 条已审阅** · **2,845 条论文与综述记录** · **54 个发现来源文档**
+**3,323 条资源记录** · **1,671 条已审阅** · **2,852 条论文与综述记录** · **54 个发现来源文档**
 
-证据截至 `2026-10-30T05:50:33Z`。1,645 条记录仅完成书目核实；910 个已发现的标识符尚待处理，另有 141 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。138 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-10-30T15:04:11Z`。1,652 条记录仅完成书目核实；910 个已发现的标识符尚待处理，另有 141 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。138 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -84,7 +84,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 研究与训练 | 工程与产业 |
 | --- | --- |
-| [按主题浏览研究](docs/topics.md) · **1,181** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,845 条论文与综述记录 | [智能体](docs/agents.md) · **45** |
+| [按主题浏览研究](docs/topics.md) · **1,181** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,852 条论文与综述记录 | [智能体](docs/agents.md) · **45** |
 | [综述](docs/surveys.md) · **19** · [学习资源](docs/learning.md) · **2** | [框架](docs/frameworks.md) · **79** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
 | [基准](docs/benchmarks.md) · **89** | [工具](docs/tools.md) · **22** |

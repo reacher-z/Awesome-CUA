@@ -89,6 +89,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 22 | OK · 2026-10-30 |
 | [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 9 | OK · 2026-10-30 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 385 | 0 | 0 | 45 | OK · 2026-10-30 |
+| [Awesome Computer Use — eurafaeldecarvalho](https://github.com/eurafaeldecarvalho/awesome-computer-use) | 0 | 0 | 0 | 0 | 0 | 0 | FAILED ·  |
 
 ## Paper-discovery query coverage
 

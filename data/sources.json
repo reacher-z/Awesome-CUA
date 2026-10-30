@@ -858,5 +858,20 @@
       "datasets",
       "models"
     ]
+  },
+  {
+    "id": "eurafaeldecarvalho-computer-use",
+    "name": "Awesome Computer Use — eurafaeldecarvalho",
+    "url": "https://raw.githubusercontent.com/eurafaeldecarvalho/awesome-computer-use/main/README.md",
+    "homepage": "https://github.com/eurafaeldecarvalho/awesome-computer-use",
+    "role": "discovery",
+    "scope": [
+      "frameworks",
+      "browser",
+      "benchmarks",
+      "tools"
+    ],
+    "notes": "Dated list limited to repositories with a default-branch commit since 2026-08-01 and under 90 days old. Only produces unreviewed candidates; its descriptions were written by a coding agent and are not maintainer-reviewed.",
+    "rationale": "Complements existing sources with recent agents, harnesses and browser tools; a URL match on 2026-10-30 found about 20 of its repositories in neither catalog.jsonl nor candidates.jsonl."
   }
 ]

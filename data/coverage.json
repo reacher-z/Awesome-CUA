@@ -1993,6 +1993,20 @@
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 45
+    },
+    {
+      "id": "eurafaeldecarvalho-computer-use",
+      "name": "Awesome Computer Use — eurafaeldecarvalho",
+      "url": "https://github.com/eurafaeldecarvalho/awesome-computer-use",
+      "snapshot": null,
+      "discovered": 0,
+      "indexed": 0,
+      "indexed_resources": 0,
+      "resolved_aliases": 0,
+      "curated": 0,
+      "excluded": 0,
+      "set_aside": 0,
+      "unindexed": 0
     }
   ],
   "primary_search": {

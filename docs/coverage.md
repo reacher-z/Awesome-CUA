@@ -206,5 +206,6 @@ None: every paper linked from a curated resource is curated.
 - Publisher entries cover selected brands; corporate ownership, funding, usage, revenue, and product pricing are not researched here.
 - Download links and available code do not establish that an asset is reproducible or still works.
 - Name changes, repository transfers, and related resource families need continuing entity resolution.
+- The English survey manuscript stays pinned to data release v2026.10.18. Later curated surveys, and frozen surveys that received only an abstract check, are listed in [the manuscript gap note](survey-manuscript-gap.md).
 
 See [methodology](methodology.md) for the inclusion boundary and [the review queue](../data/review-queue.jsonl) for actionable gaps.

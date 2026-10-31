@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-10-31T05:41:54Z; **32/32** query windows succeeded. 1,502 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-10-31T14:33:37Z; **32/32** query windows succeeded. 1,492 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 
@@ -100,7 +100,7 @@ These are ranked search windows, not a field-wide denominator. New identifiers s
 | --- | --- | ---: | --- |
 | General computer use | computer use agents | 80 / 80 | success |
 | Grounding evaluation | GUI grounding benchmark | 80 / 80 | success |
-| Mobile learning | mobile GUI agent reinforcement learning | 80 / 80 | success |
+| Mobile learning | mobile GUI agent reinforcement learning | 61 / 80 | success |
 | Web data and evaluation | web agent dataset benchmark | 80 / 80 | success |
 | Safety and security | computer use agent safety | 80 / 80 | success |
 | Memory and planning | GUI agent memory planning | 80 / 80 | success |
@@ -115,7 +115,7 @@ These are ranked search windows, not a field-wide denominator. New identifiers s
 | Long horizon tasks | long horizon computer use agent workflow planning | 80 / 80 | success |
 | Agent memory | GUI agent episodic memory self reflection | 80 / 80 | success |
 | Reinforcement learning | computer use agent online reinforcement learning rewards | 80 / 80 | success |
-| Demonstrations | GUI agent imitation learning human demonstration trajectories | 80 / 80 | success |
+| Demonstrations | GUI agent imitation learning human demonstration trajectories | 74 / 80 | success |
 | Synthetic training data | synthetic GUI agent training data generation | 80 / 80 | success |
 | Task verification | computer use benchmark task evaluation state verification | 80 / 80 | success |
 | Professional software | professional software GUI agent CAD Blender 3D | 80 / 80 | success |
@@ -129,7 +129,7 @@ These are ranked search windows, not a field-wide denominator. New identifiers s
 | Workflow automation | visual workflow automation robotic process automation agents | 80 / 80 | success |
 | Multilingual interfaces | multilingual GUI agent interface grounding | 80 / 80 | success |
 | Testing and exploration | GUI agent software testing interface exploration | 80 / 80 | success |
-| Chinese language discovery | 图形界面 智能体 手机 电脑操作 | 9 / 80 | success |
+| Chinese language discovery | 图形界面 智能体 手机 电脑操作 | 8 / 80 | success |
 
 ## Primary arXiv discovery
 

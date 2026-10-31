@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-646 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+647 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (43)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (11)](#agents) · [Frameworks (39)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (461)](#papers)
+**Contents:** [Benchmarks (43)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (12)](#agents) · [Frameworks (39)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (18)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (461)](#papers)
 
 ## Benchmarks
 
@@ -122,6 +122,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Agent E](https://github.com/EmergenceAI/Agent-E) | web | [2407.13032](https://arxiv.org/abs/2407.13032) (2024) | code MIT | Browser automation agent on the AG2 framework that pairs a planner agent with a browser navigation agent to fill forms, search shops and work through sites, also callable over a local HTTP API. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/EmergenceAI/Agent-E/HEAD/README.md) |
+| [agent-qa](https://github.com/vostride/agent-qa) | web, android, ios | — | — | QA agent for web, Android and iOS apps, using plain-language tests through CLI and MCP with persistent memory and validated self-improvement. | [✓ 2026‑10‑31](https://raw.githubusercontent.com/vostride/agent-qa/v0.2.3/README.md) |
 | [AutoWebGLM](https://github.com/THUDM/AutoWebGLM) | web | — | code Apache-2.0 | Web navigation agent built on ChatGLM3-6B that simplifies HTML for the model, is trained on hybrid human and AI data with RL and rejection sampling, and comes with the bilingual AutoWebBench. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AutoWebGLM/HEAD/README.md) |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | web | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |

@@ -66619,5 +66619,34 @@
     "review_note": "Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion.",
     "reviewed_at": "2026-10-20T19:29:44Z",
     "reviewed_sha256": "fed38272c6c64f56e5675f0df9a5091ce38e4b9f92f1de4878c96dfcff9b1e99"
+  },
+  {
+    "name": "agent-qa",
+    "kind": "agent",
+    "url": "https://github.com/vostride/agent-qa",
+    "environments": [
+      "web",
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "automation",
+      "memory",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "QA agent for web, Android and iOS apps, using plain-language tests through CLI and MCP with persistent memory and validated self-improvement.",
+    "verify_terms": [
+      "agent-qa"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vostride/agent-qa/v0.2.3/README.md"
+    ],
+    "editorial_reviewed": true,
+    "scope": "core",
+    "notes": "Project website: https://vostride.com. Requires configured model access; provider charges may apply.",
+    "read_basis": "Released v0.2.3 README and public MCP, memory and self-improvement documentation.",
+    "reviewed_sha256": "c7bb88b0cf90592c5bd4ff2a24ec8c55a8c5aed52092beb1832a6accd4d86dcd",
+    "reviewed_at": "2026-10-31T10:36:30Z"
   }
 ]

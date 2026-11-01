@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-01T06:06:08Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-01T15:10:23Z**. Generated from committed source receipts.
 
-- 3,325 resource records: 1,671 curated; 1,654 bibliographic metadata only.
-- 2,854 paper and survey records, including 2,841 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,979 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,377 discovery identifiers; 912 remain unresolved after accounting for scope exclusions and for 105 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,326 resource records: 1,671 curated; 1,655 bibliographic metadata only.
+- 2,855 paper and survey records, including 2,842 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,980 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,379 discovery identifiers; 913 remain unresolved after accounting for scope exclusions and for 105 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -36,7 +36,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 226 | 215 | 0 | 29 | 83 | OK · 2026-11-01 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 218 | 166 | 163 | 0 | 14 | 38 | OK · 2026-11-01 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 167 | 164 | 0 | 14 | 39 | OK · 2026-11-01 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 198 | 178 | 0 | 6 | 20 | OK · 2026-11-01 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 87 | 0 | 6 | 30 | OK · 2026-11-01 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 24 | 24 | 0 | 7 | 82 | OK · 2026-11-01 |
@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-01T06:06:07Z; **32/32** query windows succeeded. 1,353 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-11-01T15:10:23Z; **32/32** query windows succeeded. 1,503 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 
@@ -100,22 +100,22 @@ These are ranked search windows, not a field-wide denominator. New identifiers s
 | --- | --- | ---: | --- |
 | General computer use | computer use agents | 80 / 80 | success |
 | Grounding evaluation | GUI grounding benchmark | 80 / 80 | success |
-| Mobile learning | mobile GUI agent reinforcement learning | 35 / 80 | success |
-| Web data and evaluation | web agent dataset benchmark | 57 / 80 | success |
-| Safety and security | computer use agent safety | 29 / 80 | success |
-| Memory and planning | GUI agent memory planning | 29 / 80 | success |
-| Desktop platforms | desktop computer use agent Windows macOS Linux | 73 / 80 | success |
+| Mobile learning | mobile GUI agent reinforcement learning | 80 / 80 | success |
+| Web data and evaluation | web agent dataset benchmark | 80 / 80 | success |
+| Safety and security | computer use agent safety | 80 / 80 | success |
+| Memory and planning | GUI agent memory planning | 80 / 80 | success |
+| Desktop platforms | desktop computer use agent Windows macOS Linux | 80 / 80 | success |
 | Android | Android smartphone GUI agent automation | 80 / 80 | success |
 | iOS | iOS iPhone GUI agent benchmark | 80 / 80 | success |
 | HarmonyOS | HarmonyOS mobile GUI agent | 80 / 80 | success |
-| Screen understanding | GUI screen understanding interface element detection | 73 / 80 | success |
-| Visual grounding | screenshot visual grounding click localization agent | 62 / 80 | success |
+| Screen understanding | GUI screen understanding interface element detection | 80 / 80 | success |
+| Visual grounding | screenshot visual grounding click localization agent | 80 / 80 | success |
 | Browser interaction | visual web navigation browser agent | 80 / 80 | success |
 | Cross application work | cross application multi app GUI agents | 80 / 80 | success |
 | Long horizon tasks | long horizon computer use agent workflow planning | 80 / 80 | success |
 | Agent memory | GUI agent episodic memory self reflection | 80 / 80 | success |
-| Reinforcement learning | computer use agent online reinforcement learning rewards | 41 / 80 | success |
-| Demonstrations | GUI agent imitation learning human demonstration trajectories | 74 / 80 | success |
+| Reinforcement learning | computer use agent online reinforcement learning rewards | 80 / 80 | success |
+| Demonstrations | GUI agent imitation learning human demonstration trajectories | 80 / 80 | success |
 | Synthetic training data | synthetic GUI agent training data generation | 80 / 80 | success |
 | Task verification | computer use benchmark task evaluation state verification | 80 / 80 | success |
 | Professional software | professional software GUI agent CAD Blender 3D | 80 / 80 | success |

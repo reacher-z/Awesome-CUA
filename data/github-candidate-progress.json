@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "6950fb0ca8735dfa30742825071edd0f7efac1bcdec414ddcbda843c243a754f",
+  "manifest_sha256": "b3ddc96772c8b4a3fcbe2e888b7dfb36aa7711624dc3ce75aa5fce68a1c4a2c7",
   "observation_snapshot_sha256": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
   "provider": "github",
   "schema_version": 1,
@@ -2097,11 +2097,48 @@
           }
         },
         "id": "4a5586d1c361a89e969938d11135590dfb0b31248e3f4993b5e12e9c25e5eb37"
+      },
+      {
+        "active_records": 3328,
+        "curated_records": 1674,
+        "existing_seed_count": 233,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 19986,
+            "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+          },
+          "candidates.jsonl": {
+            "bytes": 5096548,
+            "sha256": "a16452675efac38842e187dcd49a6fde3f39e19ae6fe94c58afe0786a5eeddff"
+          },
+          "catalog.jsonl": {
+            "bytes": 8614028,
+            "sha256": "8a224b2a22500feb17c9c8def9fca45417c9f100aa3fa38dd4329acc273939e5"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 1838874,
+            "sha256": "672f3b1a0ac6fb9d8eb6d97c2587b26f85765842727d062f8dede63eb9082b08"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0",
+        "input_id": "5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0",
+        "kind": "existing",
+        "last_attempt": 551,
+        "next_index": 2,
+        "seed_count": 233,
+        "status": "pending"
+      },
       {
         "id": "existing:4a5586d1c361a89e969938d11135590dfb0b31248e3f4993b5e12e9c25e5eb37",
         "input_id": "4a5586d1c361a89e969938d11135590dfb0b31248e3f4993b5e12e9c25e5eb37",
@@ -2109,7 +2146,7 @@
         "last_attempt": 550,
         "next_index": 2,
         "seed_count": 235,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:d264524ec78135df58d30f256342f807c7a5c3396b8e4212a5d645a570a32873",
@@ -68273,6 +68310,26 @@
         "run_id": "run:d29dbfa7698efd9a60488229",
         "source_url": null,
         "status": 301
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-01T20:31:42.674395+00:00",
+        "id": "receipt:e2b1ea5206380977762e343dec2b428b88911ffb0592c7ba8a5032cd6dfe865a",
+        "incomplete_results": null,
+        "outcome": "redirect_not_followed",
+        "position": 1,
+        "query_id": "existing:5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "68f653a6d8b56ef27c478546cb91b6a127acd0103d4849150dc3104314398686",
+        "requested_at": "2026-11-01T20:31:42.551289+00:00",
+        "response_bytes": 198,
+        "response_sha256": "6b5bb8a823de0cec9aa11bdfe6f07da23e4d8ae40d455a04e0219f44b0789ea6",
+        "returned_count": null,
+        "run_id": "run:bfd8e97b3152965c840e3027",
+        "source_url": null,
+        "status": 301
       }
     ],
     "runs": [
@@ -69989,9 +70046,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 195.24639837799998
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 9729,
+        "before_unique_repositories": 9729,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0"
+        ],
+        "epoch_id": "epoch:d46cfa7a68a98157943d97f5",
+        "finished_at": "2026-11-01T20:31:44.912931+00:00",
+        "id": "run:bfd8e97b3152965c840e3027",
+        "input_id": "5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0",
+        "new_unique_repositories": 0,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 1,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 89,
+          "reservations_before": 88,
+          "reservations_charged": 1,
+          "round_id": "c0fb66e519a54a7eaf4130dedbd29747"
+        },
+        "started_at": "2026-11-01T20:31:36.241928+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 193.50650828599998
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "2c6b67a7efe83c8bd5e1b2f85fa14a03eba586c5d960854d133dabc2e753997d"
+  "state_sha256": "e729f2a9b05739d65b164118b1a3339e3e077b5d5d38af257ae245f90f3d6221"
 }

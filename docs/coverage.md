@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-02T06:03:30Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-02T18:23:21Z**. Generated from committed source receipts.
 
-- 3,344 resource records: 1,674 curated; 1,670 bibliographic metadata only.
-- 2,872 paper and survey records, including 2,859 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 2,997 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,395 discovery identifiers; 911 remain unresolved after accounting for scope exclusions and for 105 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 3,346 resource records: 1,674 curated; 1,672 bibliographic metadata only.
+- 2,874 paper and survey records, including 2,861 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 2,999 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
+- 4,398 discovery identifiers; 912 remain unresolved after accounting for scope exclusions and for 105 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -56,11 +56,11 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 77 | 66 | 0 | 4 | 10 | OK · 2026-11-02 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-11-02 |
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 56 | 0 | 0 | 37 | OK · 2026-11-02 |
-| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 186 | 186 | 136 | 0 | 0 | 0 | OK · 2026-11-02 |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 196 | 196 | 144 | 0 | 0 | 0 | OK · 2026-11-02 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-11-02 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-11-02 |
 | [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-11-02 |
-| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 32 | 10 | 10 | 0 | 3 | 19 | OK · 2026-11-02 |
+| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 33 | 10 | 10 | 0 | 3 | 20 | OK · 2026-11-02 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-11-02 |
 | [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 2 | 3 | OK · 2026-11-02 |
 | [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 9 | 9 | 0 | 1 | 5 | OK · 2026-11-02 |
@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-02T06:03:28Z; **32/32** query windows succeeded. 1,504 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-11-02T18:23:20Z; **32/32** query windows succeeded. 1,504 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

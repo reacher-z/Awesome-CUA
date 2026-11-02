@@ -1,20 +1,20 @@
 {
   "active_catalog_context": {
-    "records": 3344,
+    "records": 3346,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "5b2f2d0d8f315de8a563a7ae3d3c33633f15f48ad9d25125a466628e140d4f5b"
+    "sha256": "afaa204c58ead851231ea560f9a7dfc5ed2e1a63351d41e29fc55f99aba108a6"
   },
-  "checkpoint_state_sha256": "1be731e864e8feb3dc69aa02ca944bfd832a8fe773a31ee8d21520a50d66a00b",
+  "checkpoint_state_sha256": "910a70cb75259b91679993f37f3fcecf5f5f2cb558c6c07c37bf5f966d8fdad1",
   "count": {
     "unit": "repositories",
-    "value": 9738
+    "value": 9783
   },
   "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
   "export": {
-    "bytes": 27292037,
+    "bytes": 27382087,
     "file": "github-candidates.jsonl",
     "format": "JSONL",
-    "sha256": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4"
+    "sha256": "23962f25ce9e0464711f30a5504e2f1ad298a6fa9d8b528c2db33db27e061549"
   },
   "input_fingerprints": [
     {
@@ -1266,14 +1266,39 @@
         }
       },
       "id": "732b7d58572ac30d2d5278b0ad554eae2168b3d1687ec1f9f4c0879953084843"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5104555,
+          "sha256": "24d7d18282bb45166c1ed38d38c6b4b1e58d07d4eeafbac69337370da887c190"
+        },
+        "catalog.jsonl": {
+          "bytes": 8644126,
+          "sha256": "5b2f2d0d8f315de8a563a7ae3d3c33633f15f48ad9d25125a466628e140d4f5b"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1838874,
+          "sha256": "672f3b1a0ac6fb9d8eb6d97c2587b26f85765842727d062f8dede63eb9082b08"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "334ab2c8e11a9e1eba5a13cae88b39880194f04f22d2856f750f7b60ddd32370"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
-  "observation_snapshot_sha256": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+  "observation_snapshot_sha256": "23962f25ce9e0464711f30a5504e2f1ad298a6fa9d8b528c2db33db27e061549",
   "observed_from": "2026-10-18T13:02:50.777197+00:00",
-  "observed_through": "2026-11-02T06:04:02.736343+00:00",
+  "observed_through": "2026-11-02T18:25:21.670100+00:00",
   "privacy": {
-    "checked_records": 9738,
+    "checked_records": 9783,
     "omitted_fields": [],
     "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
   },
@@ -2081,10 +2106,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:334ab2c8e11a9e1eba5a13cae88b39880194f04f22d2856f750f7b60ddd32370",
+        "input_id": "334ab2c8e11a9e1eba5a13cae88b39880194f04f22d2856f750f7b60ddd32370",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:732b7d58572ac30d2d5278b0ad554eae2168b3d1687ec1f9f4c0879953084843",
         "input_id": "732b7d58572ac30d2d5278b0ad554eae2168b3d1687ec1f9f4c0879953084843",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:5d9174ef44b57f4938795da3cdf17716b7730fcfbeb06854003c6305bb8becc0",
@@ -5176,8 +5207,8 @@
         "id": "search:1ac72c95e581d012093424f6",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "gui-automation"
       },
       {
@@ -5186,8 +5217,8 @@
         "id": "search:9b01ef98acf689b6645faa8a",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 14,
+        "status": "observed_pages_exhausted",
         "topic": "desktop-automation"
       },
       {
@@ -5196,8 +5227,8 @@
         "id": "search:b6b11cd41b4914f1b3e2e760",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "browser-agent"
       },
       {
@@ -5206,8 +5237,8 @@
         "id": "search:1875bef68fcd216cb619c0c4",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "browser-agents"
       },
       {
@@ -5216,8 +5247,8 @@
         "id": "search:e4a4af2aa328ea92bb437a38",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 35,
+        "status": "observed_pages_exhausted",
         "topic": "browser-automation"
       },
       {
@@ -5226,8 +5257,8 @@
         "id": "search:c8696a047e09c5cf9365369c",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 3,
+        "status": "observed_pages_exhausted",
         "topic": "android-automation"
       },
       {
@@ -5236,8 +5267,8 @@
         "id": "search:d80a512adcd548c55a007187",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "computer-use-agent"
       },
       {
@@ -5246,8 +5277,8 @@
         "id": "search:50f4dfef678ea2511722daae",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "computer-use-agents"
       },
       {
@@ -5256,8 +5287,8 @@
         "id": "search:46a5bced63715216d8659878",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "gui-grounding"
       },
       {
@@ -5266,8 +5297,8 @@
         "id": "search:013a3bc14a9e06f6014f3ced",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "browser-use"
       },
       {
@@ -5276,8 +5307,8 @@
         "id": "search:d6214644a04ae6e64b7b3e0f",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
         "topic": "web-agent"
       },
       {
@@ -5286,8 +5317,8 @@
         "id": "search:5b432ad155c960af6b7765ee",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "web-agents"
       },
       {
@@ -5296,8 +5327,8 @@
         "id": "search:c8ab4eb1b67169e60e091a19",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
         "topic": "desktop-agent"
       },
       {
@@ -5306,17 +5337,17 @@
         "id": "search:73cf57b72ab30196459a166b",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "mobile-agent"
       }
     ],
     "query_rechecks_count": 17,
     "request_outcomes": {
-      "accepted": 491,
+      "accepted": 505,
       "fetch_failed": 3,
       "rate_limited": 11,
-      "redirect_not_followed": 50,
+      "redirect_not_followed": 51,
       "unavailable": 1
     },
     "runs": [
@@ -5967,20 +5998,32 @@
         "requests_attempted": 5,
         "started_at": "2026-11-02T06:03:52.233609+00:00",
         "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 58,
+        "after_unique_repositories": 9783,
+        "before_unique_repositories": 9738,
+        "finished_at": "2026-11-02T18:25:23.695964+00:00",
+        "id": "run:1eb1c3420f2b442c2187cd1c",
+        "input_id": "334ab2c8e11a9e1eba5a13cae88b39880194f04f22d2856f750f7b60ddd32370",
+        "new_unique_repositories": 45,
+        "requests_attempted": 15,
+        "started_at": "2026-11-02T18:23:45.784246+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "0610b681fc137d28d5d5268d794b52ed1bc624cf6ddd79c5f8e104d32ed645bc",
-  "supporting_primary_bodies": 386,
+  "source_ledger_sha256": "5601c928d34d011aa47ffc8ef2ae3a7c02a85d5c70dec027d63051db61f5f3f0",
+  "supporting_primary_bodies": 394,
   "verification": {
-    "baseline_checkpoint_sha256": "240ec07cd7324641596c61e936ffc7ac81ffb48b12562e5d876b7c6b2f8562b5",
-    "baseline_observation_sha256": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
+    "baseline_checkpoint_sha256": "2ff60005e2977602656892ea3ce78a0f612296ffb2a37b0932f1c3f996cbc43a",
+    "baseline_observation_sha256": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 2,
-    "successful_receipts_replayed": 3
+    "primary_bodies_replayed": 9,
+    "successful_receipts_replayed": 14
   }
 }

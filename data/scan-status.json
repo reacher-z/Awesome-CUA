@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-01T20:30:15Z",
+  "id": "scan:2026-11-02T06:02:39Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-01T20:30:15Z",
-  "finished_at": "2026-11-01T20:33:28Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/41347152048",
+  "started_at": "2026-11-02T06:02:39Z",
+  "finished_at": "2026-11-02T06:05:48Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/41397474640",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 3328,
-    "bibliographic_records": 2843,
-    "arxiv_archive_records": 2981,
-    "excluded_records": 138,
-    "curated_papers": 1202,
-    "curated_resources": 472,
-    "candidates": 4379
-  },
-  "after": {
     "resources": 3338,
     "bibliographic_records": 2853,
     "arxiv_archive_records": 2991,
@@ -31,69 +22,54 @@
     "curated_resources": 472,
     "candidates": 4389
   },
+  "after": {
+    "resources": 3344,
+    "bibliographic_records": 2859,
+    "arxiv_archive_records": 2997,
+    "excluded_records": 138,
+    "curated_papers": 1202,
+    "curated_resources": 472,
+    "candidates": 4395
+  },
   "new_papers": [
     {
-      "id": "arxiv:2604.24696",
-      "name": "NeuroClaw Technical Report",
-      "url": "https://arxiv.org/abs/2604.24696",
+      "id": "arxiv:2609.29578",
+      "name": "PartHackBench: Certified Equal-Progress Stress Tests for Partial-Credit Tool-Agent Evaluation",
+      "url": "https://arxiv.org/abs/2609.29578",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2605.02661",
-      "name": "AcademiClaw: When Students Set Challenges for AI Agents",
-      "url": "https://arxiv.org/abs/2605.02661",
+      "id": "arxiv:2610.40747",
+      "name": "Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use From Evolved Harnesses",
+      "url": "https://arxiv.org/abs/2610.40747",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2605.06717",
-      "name": "Agentic Coding Needs Proactivity, Not Just Autonomy",
-      "url": "https://arxiv.org/abs/2605.06717",
+      "id": "arxiv:2610.41181",
+      "name": "AgentShield: Fortifying Web Applications Against AI Agents and Agentic Browsers",
+      "url": "https://arxiv.org/abs/2610.41181",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2605.08703",
-      "name": "RewardHarness: Self-Evolving Agentic Post-Training",
-      "url": "https://arxiv.org/abs/2605.08703",
+      "id": "arxiv:2610.41272",
+      "name": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
+      "url": "https://arxiv.org/abs/2610.41272",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2605.13831",
-      "name": "Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context",
-      "url": "https://arxiv.org/abs/2605.13831",
+      "id": "arxiv:2610.41397",
+      "name": "Cross-Interface Authorization for AI Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2610.41397",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2605.14271",
-      "name": "Auditing Agent Harness Safety",
-      "url": "https://arxiv.org/abs/2605.14271",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2605.14678",
-      "name": "$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows",
-      "url": "https://arxiv.org/abs/2605.14678",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2605.27882",
-      "name": "VibeSearchBench: Benchmarking Long-horizon Proactive Search in the Wild",
-      "url": "https://arxiv.org/abs/2605.27882",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2607.05804",
-      "name": "TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training",
-      "url": "https://arxiv.org/abs/2607.05804",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2607.08768",
-      "name": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
-      "url": "https://arxiv.org/abs/2607.08768",
+      "id": "arxiv:2610.41432",
+      "name": "Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents",
+      "url": "https://arxiv.org/abs/2610.41432",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 10,
+  "new_candidate_count": 6,
   "pending_metadata_changes": 8,
   "source_fetches": {
     "successful": 53,
@@ -103,206 +79,214 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1504,
-    "new_candidates": 0
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-01T20:31:17Z",
-    "finished_at": "2026-11-01T20:32:19Z",
+    "started_at": "2026-11-02T06:03:38Z",
+    "finished_at": "2026-11-02T06:04:49Z",
     "ok": true,
     "exit_code": 0,
     "error": null,
-    "state": "bounded_progress",
+    "state": "rate_limited",
     "complete": false,
-    "scan_status": "partial",
-    "run_id": "run:bfd8e97b3152965c840e3027",
+    "scan_status": "rate_limited",
+    "run_id": "run:f8e3a6b5ab975731b0d3678c",
     "request_attempted": true,
-    "successful_responses": 0,
-    "requests_attempted": 1,
-    "new_unique_repositories": 0,
-    "total_unique_repositories": 9729,
-    "pending_queries": 1,
-    "unknown_requests": 1,
-    "epoch_id": "epoch:d46cfa7a68a98157943d97f5",
+    "successful_responses": 3,
+    "requests_attempted": 5,
+    "new_unique_repositories": 9,
+    "total_unique_repositories": 9738,
+    "pending_queries": 15,
+    "unknown_requests": 2,
+    "epoch_id": "epoch:dc19daf996ecfa766cd841f6",
     "query_status_counts": {
-      "observed_pages_exhausted": 253,
-      "pending": 1,
+      "observed_pages_exhausted": 256,
+      "pending": 15,
       "split": 23,
-      "superseded_input": 48
+      "superseded_input": 49
     },
     "rejected_rows": {},
     "warnings": [
-      "1 GitHub candidate requests have no accepted metadata response."
+      "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
+      "2 GitHub candidate requests have no accepted metadata response."
     ],
     "files": {
-      "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-      "github-candidates-manifest.json": "b3ddc96772c8b4a3fcbe2e888b7dfb36aa7711624dc3ce75aa5fce68a1c4a2c7",
-      "github-candidate-progress.json": "240ec07cd7324641596c61e936ffc7ac81ffb48b12562e5d876b7c6b2f8562b5"
+      "github-candidates.jsonl": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+      "github-candidates-manifest.json": "b701fc7c24f553b1f9878219fbd207d6169704a50909262e60d502b0b2b9763c",
+      "github-candidate-progress.json": "2ff60005e2977602656892ea3ce78a0f612296ffb2a37b0932f1c3f996cbc43a"
     },
     "published": true,
-    "network_reservations": 1,
+    "network_reservations": 5,
     "staged_files": {
-      "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-      "github-candidates-manifest.json": "2a6f4ecfc452835f567d56b9bc4ec2d3d52f21780bdd8a85ec54f5c6a70e2a45",
-      "github-candidate-progress.json": "ffff4b85a42939dbd13cb131c9cb51c6c1e73dd1c36223cb1acc1cb7948c9a75"
+      "github-candidates.jsonl": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+      "github-candidates-manifest.json": "67c23e1f63ea17f8f62f7f0f5625f9ef313274a3e98dae5367a96836702dd55b",
+      "github-candidate-progress.json": "e33e460968bd99ee3ce3ef46290a372bae0e460d4aac32f735bb6de5bcd2a9af"
     },
     "comparison_context_rebound": true,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-01T20:33:28Z",
+      "checked_at": "2026-11-02T06:05:47Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
-        "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-        "github-candidates-manifest.json": "b3ddc96772c8b4a3fcbe2e888b7dfb36aa7711624dc3ce75aa5fce68a1c4a2c7",
-        "github-candidate-progress.json": "240ec07cd7324641596c61e936ffc7ac81ffb48b12562e5d876b7c6b2f8562b5"
+        "github-candidates.jsonl": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+        "github-candidates-manifest.json": "b701fc7c24f553b1f9878219fbd207d6169704a50909262e60d502b0b2b9763c",
+        "github-candidate-progress.json": "2ff60005e2977602656892ea3ce78a0f612296ffb2a37b0932f1c3f996cbc43a"
       },
-      "repositories": 9729
+      "repositories": 9738
     }
   },
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-01T20:30:15Z",
-      "finished_at": "2026-11-01T20:30:23Z",
+      "started_at": "2026-11-02T06:02:40Z",
+      "finished_at": "2026-11-02T06:02:56Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-01T20:30:23Z",
-      "finished_at": "2026-11-01T20:31:09Z",
+      "started_at": "2026-11-02T06:02:56Z",
+      "finished_at": "2026-11-02T06:03:28Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-01T20:31:09Z",
-      "finished_at": "2026-11-01T20:31:09Z",
+      "started_at": "2026-11-02T06:03:28Z",
+      "finished_at": "2026-11-02T06:03:29Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 0,
+      "new_count": 5,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-01T06:06:07Z"
+      "cache_used": false,
+      "rate_limited": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-01T20:31:09Z",
-      "finished_at": "2026-11-01T20:31:09Z",
+      "started_at": "2026-11-02T06:03:29Z",
+      "finished_at": "2026-11-02T06:03:32Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-01T20:31:17Z",
-      "finished_at": "2026-11-01T20:32:19Z",
+      "started_at": "2026-11-02T06:03:38Z",
+      "finished_at": "2026-11-02T06:04:49Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
-      "state": "bounded_progress",
+      "state": "rate_limited",
       "complete": false,
-      "scan_status": "partial",
-      "run_id": "run:bfd8e97b3152965c840e3027",
+      "scan_status": "rate_limited",
+      "run_id": "run:f8e3a6b5ab975731b0d3678c",
       "request_attempted": true,
-      "successful_responses": 0,
-      "requests_attempted": 1,
-      "new_unique_repositories": 0,
-      "total_unique_repositories": 9729,
-      "pending_queries": 1,
-      "unknown_requests": 1,
-      "epoch_id": "epoch:d46cfa7a68a98157943d97f5",
+      "successful_responses": 3,
+      "requests_attempted": 5,
+      "new_unique_repositories": 9,
+      "total_unique_repositories": 9738,
+      "pending_queries": 15,
+      "unknown_requests": 2,
+      "epoch_id": "epoch:dc19daf996ecfa766cd841f6",
       "query_status_counts": {
-        "observed_pages_exhausted": 253,
-        "pending": 1,
+        "observed_pages_exhausted": 256,
+        "pending": 15,
         "split": 23,
-        "superseded_input": 48
+        "superseded_input": 49
       },
       "rejected_rows": {},
       "warnings": [
-        "1 GitHub candidate requests have no accepted metadata response."
+        "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
+        "2 GitHub candidate requests have no accepted metadata response."
       ],
       "files": {
-        "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-        "github-candidates-manifest.json": "b3ddc96772c8b4a3fcbe2e888b7dfb36aa7711624dc3ce75aa5fce68a1c4a2c7",
-        "github-candidate-progress.json": "240ec07cd7324641596c61e936ffc7ac81ffb48b12562e5d876b7c6b2f8562b5"
+        "github-candidates.jsonl": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+        "github-candidates-manifest.json": "b701fc7c24f553b1f9878219fbd207d6169704a50909262e60d502b0b2b9763c",
+        "github-candidate-progress.json": "2ff60005e2977602656892ea3ce78a0f612296ffb2a37b0932f1c3f996cbc43a"
       },
       "published": true,
       "baseline_files": {
         "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-        "github-candidates-manifest.json": "6950fb0ca8735dfa30742825071edd0f7efac1bcdec414ddcbda843c243a754f",
-        "github-candidate-progress.json": "5eebeba72b7dbedadee4fc6434b6d53a1b7848902abce277a1c12c96b7a8ade7"
+        "github-candidates-manifest.json": "b3ddc96772c8b4a3fcbe2e888b7dfb36aa7711624dc3ce75aa5fce68a1c4a2c7",
+        "github-candidate-progress.json": "240ec07cd7324641596c61e936ffc7ac81ffb48b12562e5d876b7c6b2f8562b5"
       },
       "ready_to_publish": false,
-      "network_reservations": 1,
+      "network_reservations": 5,
       "staged_files": {
-        "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-        "github-candidates-manifest.json": "2a6f4ecfc452835f567d56b9bc4ec2d3d52f21780bdd8a85ec54f5c6a70e2a45",
-        "github-candidate-progress.json": "ffff4b85a42939dbd13cb131c9cb51c6c1e73dd1c36223cb1acc1cb7948c9a75"
+        "github-candidates.jsonl": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+        "github-candidates-manifest.json": "67c23e1f63ea17f8f62f7f0f5625f9ef313274a3e98dae5367a96836702dd55b",
+        "github-candidate-progress.json": "e33e460968bd99ee3ce3ef46290a372bae0e460d4aac32f735bb6de5bcd2a9af"
       },
       "comparison_context_rebound": true,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-01T20:33:28Z",
+        "checked_at": "2026-11-02T06:05:47Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
-          "github-candidates.jsonl": "08ae06b82e184bf889500477acab87cbe2ce70c9f06e7e45ceb8cd5ebf6c2943",
-          "github-candidates-manifest.json": "b3ddc96772c8b4a3fcbe2e888b7dfb36aa7711624dc3ce75aa5fce68a1c4a2c7",
-          "github-candidate-progress.json": "240ec07cd7324641596c61e936ffc7ac81ffb48b12562e5d876b7c6b2f8562b5"
+          "github-candidates.jsonl": "0e1391a939ff704f7a29d09ead67189c60570e3e0cc72733e06020c29b0d06c4",
+          "github-candidates-manifest.json": "b701fc7c24f553b1f9878219fbd207d6169704a50909262e60d502b0b2b9763c",
+          "github-candidate-progress.json": "2ff60005e2977602656892ea3ce78a0f612296ffb2a37b0932f1c3f996cbc43a"
         },
-        "repositories": 9729
+        "repositories": 9738
       }
     },
     {
       "name": "build",
-      "started_at": "2026-11-01T20:32:26Z",
-      "finished_at": "2026-11-01T20:32:29Z",
+      "started_at": "2026-11-02T06:04:55Z",
+      "finished_at": "2026-11-02T06:04:58Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-01T20:33:07Z",
-      "finished_at": "2026-11-01T20:33:21Z",
+      "started_at": "2026-11-02T06:05:30Z",
+      "finished_at": "2026-11-02T06:05:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "1 GitHub candidate requests have no accepted metadata response.",
+    "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
+    "2 GitHub candidate requests have no accepted metadata response.",
     "Discovery sources failed: delunn-multimodal"
   ],
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "c0fb66e519a54a7eaf4130dedbd29747",
+    "round_id": "74ed79f24c42430b927f4382e2b79f9b",
     "max_requests": 180,
     "max_seconds": 600,
-    "requests_reserved": 89,
-    "responses_received": 89,
+    "requests_reserved": 94,
+    "responses_received": 94,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 55,
       "huggingface": 32,
+      "recent_arxiv": 1,
       "harvest": 1,
-      "github_candidates": 1
+      "github_candidates": 5
     },
     "by_provider": {
       "raw.githubusercontent.com": 52,
       "iaie-physicalai.github.io": 2,
       "huggingface.co": 33,
-      "export.arxiv.org": 1,
-      "api.github.com": 1
+      "export.arxiv.org": 2,
+      "api.github.com": 5
     },
-    "provider_cooldowns": {},
-    "blocked_providers": [],
-    "ledger_sha256": "6bc040b56b3363064f4e84b824941e280bc108818f3ce13afcdb5ec5a71ddb6e",
+    "provider_cooldowns": {
+      "api.github.com": "2026-11-02T06:05:22.429336+00:00"
+    },
+    "blocked_providers": [
+      "api.github.com"
+    ],
+    "ledger_sha256": "c8c254ddb369d36ca8b15c6f3070b984a91288bcdb8c42e1ad6602b4ff759401",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

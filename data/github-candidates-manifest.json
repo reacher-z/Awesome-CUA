@@ -1,10 +1,10 @@
 {
   "active_catalog_context": {
-    "records": 3363,
+    "records": 3366,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "54c747abe77ffc9a5e281d7ddb49cdf99e09f755977bb9fe1e068664ee42fbb4"
+    "sha256": "9a0d5f448ccc5e0d348c4b33e4af7406bbf2c3f38a9c63f170dee41c107e75fb"
   },
-  "checkpoint_state_sha256": "397faf71a5b3380826f101fa7d2f441af1515884b344bc4e78931540ad759a7b",
+  "checkpoint_state_sha256": "3e96bc34895b21df2dc4cc0482f88abc67311d1222406c102e87b1aefdad3745",
   "count": {
     "unit": "repositories",
     "value": 9850
@@ -1391,6 +1391,31 @@
         }
       },
       "id": "cd29f6f61d57f8f0eeda2c230e0da5ba9acd457f97a3d887ff41290235fc57e7"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 19986,
+          "sha256": "e90a588bf543ad85603efcff3852ccde458ed843c65138783e44df3ebab072e9"
+        },
+        "candidates.jsonl": {
+          "bytes": 5111867,
+          "sha256": "d4f52fa561b8c4517e631888a817783c8ed6a49a00afed575d1b77b2a7a4e810"
+        },
+        "catalog.jsonl": {
+          "bytes": 8679958,
+          "sha256": "54c747abe77ffc9a5e281d7ddb49cdf99e09f755977bb9fe1e068664ee42fbb4"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 1838874,
+          "sha256": "672f3b1a0ac6fb9d8eb6d97c2587b26f85765842727d062f8dede63eb9082b08"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "48bdf2411ab65a038a98fd6a817640e2a0c45e51b6ed417d1423e2f0166d7998"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
@@ -2304,10 +2329,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:48bdf2411ab65a038a98fd6a817640e2a0c45e51b6ed417d1423e2f0166d7998",
+        "input_id": "48bdf2411ab65a038a98fd6a817640e2a0c45e51b6ed417d1423e2f0166d7998",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:cd29f6f61d57f8f0eeda2c230e0da5ba9acd457f97a3d887ff41290235fc57e7",
         "input_id": "cd29f6f61d57f8f0eeda2c230e0da5ba9acd457f97a3d887ff41290235fc57e7",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:5dd63b7ce5834c4a22001dd6e053a5fc4f5e531c34de6b89dc7e97b121b97d2a",
@@ -5909,7 +5940,7 @@
       "accepted": 539,
       "fetch_failed": 3,
       "rate_limited": 12,
-      "redirect_not_followed": 55,
+      "redirect_not_followed": 56,
       "unavailable": 1
     },
     "runs": [
@@ -6620,20 +6651,32 @@
         "requests_attempted": 18,
         "started_at": "2026-11-04T00:39:37.723663+00:00",
         "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 9850,
+        "before_unique_repositories": 9850,
+        "finished_at": "2026-11-04T08:24:51.346616+00:00",
+        "id": "run:810d3a99daa49cc828094c6a",
+        "input_id": "48bdf2411ab65a038a98fd6a817640e2a0c45e51b6ed417d1423e2f0166d7998",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-04T08:24:42.957158+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "6aa29386f31aada7cf7ec0d6e77986e8274c0f55d17bb42547827212a8cd6e12",
+  "source_ledger_sha256": "7fdda9c5a2364e73b004718eeab609094ba9fd8a9b8c016929d2a92eb235d1db",
   "supporting_primary_bodies": 411,
   "verification": {
-    "baseline_checkpoint_sha256": "f355c73716dbf88846aaada3ae7c863bf8d95e561f8f07590ae825b75d459bb8",
-    "baseline_observation_sha256": "4bdeddffaff6b85da6a35446b313913bdb96570a64615d6d1c11a1d205ae1cdf",
+    "baseline_checkpoint_sha256": "05b000efe708c9ae35d5cde64e3f91f3dad1bfeb2ca6489e88e07834c193b551",
+    "baseline_observation_sha256": "487bb94749845aa8e668e8ccfbadebcacbe3c9f694a6e1b5f0fad2262dd45460",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 10,
-    "successful_receipts_replayed": 17
+    "primary_bodies_replayed": 0,
+    "successful_receipts_replayed": 0
   }
 }

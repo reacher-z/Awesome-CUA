@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,268; 566 ⭐) · [2025](#2025) (707; 373 ⭐) · [2024](#2024) (429; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (73; 13 ⭐) · [2021](#2021) (53; 8 ⭐) · [2020](#2020) (34; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,271; 566 ⭐) · [2025](#2025) (707; 373 ⭐) · [2024](#2024) (429; 180 ⭐) · [2023](#2023) (204; 42 ⭐) · [2022](#2022) (73; 13 ⭐) · [2021](#2021) (53; 8 ⭐) · [2020](#2020) (34; 4 ⭐) · [2019](#2019) (19; 1 ⭐) · [2018](#2018) (29; 5 ⭐) · [2017](#2017) (11; 3 ⭐) · [2016](#2016) (14; 2 ⭐) · [2015](#2015) (13; 0 ⭐) · [2014](#2014) (14; 0 ⭐) · [2013](#2013) (5; 0 ⭐) · [2012](#2012) (1; 0 ⭐) · [2011](#2011) (4; 0 ⭐) · [2010](#2010) (5; 1 ⭐) · [2009](#2009) (3; 1 ⭐) · [2008](#2008) (2; 0 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,6 +13,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-11-03 | [ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents](https://arxiv.org/abs/2611.05036) | metadata |  |
 | 2026-11-02 | [WebHarbor: Docking Real Websites for Evolving GUI Agent Environments](https://arxiv.org/abs/2611.03634) | metadata |  |
 | 2026-11-02 | [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents](https://arxiv.org/abs/2611.03238) | metadata |  |
 | 2026-11-02 | [MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework](https://arxiv.org/abs/2611.02472) | metadata |  |
@@ -198,6 +199,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-05 | [Imagine to Act: High-Fidelity Data Synthesis via Image Editing World Model for Scalable GUI Agent Training](https://arxiv.org/abs/2610.05861) | ⭐ reviewed | [data-generation](topics/data-generation.md), [mobile-navigation](topics/mobile-navigation.md), [world-models](topics/world-models.md) |
 | 2026-10-05 | [Decoupling What from Where: How Should a Small GUI Grounding Model Receive the Action Type?](https://arxiv.org/abs/2610.07444) | ⭐ reviewed | [evaluation](topics/evaluation.md), [grounding](topics/grounding.md), [robustness](topics/robustness.md) |
 | 2026-10-05 | [CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling](https://arxiv.org/abs/2610.06829) | ⭐ reviewed | [evaluation](topics/evaluation.md), [reinforcement-learning](topics/reinforcement-learning.md), [web-navigation](topics/web-navigation.md) |
+| 2026-10-05 | [ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing](https://arxiv.org/abs/2610.06514) | metadata |  |
 | 2026-10-05 | [AMBER: Training Long-Horizon Web Agents through Append-Only Memory](https://arxiv.org/abs/2610.07118) | ⭐ reviewed | [long-horizon](topics/long-horizon.md), [memory](topics/memory.md), [reinforcement-learning](topics/reinforcement-learning.md) |
 | 2026-10-04 | [TeleTune: Evolving Agent Skills From Offline Telemetry](https://arxiv.org/abs/2610.05437) | ⭐ reviewed | [efficiency](topics/efficiency.md), [memory](topics/memory.md), [workflow](topics/workflow.md) |
 | 2026-10-04 | [Small Agents with Semantic Search: Efficient Multilingual Code Localization](https://arxiv.org/abs/2610.05099) | metadata |  |
@@ -570,6 +572,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-06-29 | [Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent](https://arxiv.org/abs/2606.30616) | metadata |  |
 | 2026-06-29 | [One Forward Beats Two: InnerZoom for Accurate and Efficient GUI Grounding](https://arxiv.org/abs/2606.30084) | ⭐ reviewed | [efficiency](topics/efficiency.md), [evaluation](topics/evaluation.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
 | 2026-06-29 | [On the Internet, Nobody Knows You're an LLM Bot: Unmasking Web Agents with Multi-Layer Fingerprinting](https://arxiv.org/abs/2606.30119) | ⭐ reviewed | [evaluation](topics/evaluation.md), [observability](topics/observability.md), [safety-security](topics/safety-security.md) |
+| 2026-06-29 | [ManimAgent: Self-Evolving Multimodal Agents for Visual Education](https://arxiv.org/abs/2606.30296) | metadata |  |
 | 2026-06-29 | [LUMOS: A Semantic Operating-System Layer for Accessibility-Grounded AI Agents](https://arxiv.org/abs/2606.30697) | ⭐ reviewed | [automation](topics/automation.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md), [tool-integration](topics/tool-integration.md) |
 | 2026-06-29 | [GUICrafter: Weakly-Supervised GUI Agent Leveraging Massive Unannotated Screenshots](https://arxiv.org/abs/2606.29705) | ⭐ reviewed | [data-generation](topics/data-generation.md), [grounding](topics/grounding.md), [reinforcement-learning](topics/reinforcement-learning.md), [screen-understanding](topics/screen-understanding.md) |
 | 2026-06-28 | [OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks](https://arxiv.org/abs/2606.29537) | ⭐ reviewed | [evaluation](topics/evaluation.md), [long-horizon](topics/long-horizon.md), [workflow](topics/workflow.md) |

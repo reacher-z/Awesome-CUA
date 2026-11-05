@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-05T08:25:07Z",
+  "id": "scan:2026-11-05T16:23:33Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-05T08:25:07Z",
-  "finished_at": "2026-11-05T08:27:46Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/41994255413",
+  "started_at": "2026-11-05T16:23:33Z",
+  "finished_at": "2026-11-05T16:26:45Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42063907307",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 3372,
-    "bibliographic_records": 2887,
-    "arxiv_archive_records": 3025,
-    "excluded_records": 138,
-    "curated_papers": 1202,
-    "curated_resources": 472,
-    "candidates": 4425
-  },
-  "after": {
     "resources": 3376,
     "bibliographic_records": 2891,
     "arxiv_archive_records": 3029,
@@ -31,33 +22,24 @@
     "curated_resources": 472,
     "candidates": 4431
   },
+  "after": {
+    "resources": 3377,
+    "bibliographic_records": 2892,
+    "arxiv_archive_records": 3030,
+    "excluded_records": 138,
+    "curated_papers": 1202,
+    "curated_resources": 472,
+    "candidates": 4432
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.05873",
-      "name": "Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing",
-      "url": "https://arxiv.org/abs/2611.05873",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.06039",
-      "name": "Securing Web Agents with the Compile-Then-Execute Paradigm",
-      "url": "https://arxiv.org/abs/2611.06039",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.06544",
-      "name": "MKD2World: A Typed Spatial MarkDown World Model For Web Agents",
-      "url": "https://arxiv.org/abs/2611.06544",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.06854",
-      "name": "Visual Token Routing: Learning to keep tokens that matter",
-      "url": "https://arxiv.org/abs/2611.06854",
+      "id": "arxiv:2605.26079",
+      "name": "Automated Benchmark Auditing for AI Agents and Large Language Models",
+      "url": "https://arxiv.org/abs/2605.26079",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 6,
+  "new_candidate_count": 1,
   "pending_metadata_changes": 9,
   "source_fetches": {
     "successful": 53,
@@ -66,19 +48,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1506,
-    "new_candidates": 0
+    "unique_identifiers": 1505,
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-05T08:26:03Z",
-    "finished_at": "2026-11-05T08:26:50Z",
+    "started_at": "2026-11-05T16:24:27Z",
+    "finished_at": "2026-11-05T16:25:30Z",
     "ok": true,
     "exit_code": 0,
     "error": null,
     "state": "bounded_progress",
     "complete": false,
     "scan_status": "partial",
-    "run_id": "run:3bae073719806383f830995f",
+    "run_id": "run:8e131f6340caf26ba3fc7336",
     "request_attempted": true,
     "successful_responses": 0,
     "requests_attempted": 1,
@@ -91,7 +73,7 @@
       "observed_pages_exhausted": 321,
       "pending": 1,
       "split": 23,
-      "superseded_input": 58
+      "superseded_input": 59
     },
     "rejected_rows": {},
     "warnings": [
@@ -99,26 +81,26 @@
     ],
     "files": {
       "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-      "github-candidates-manifest.json": "915e5bd43e053be1330db29b9b3cb31accd29035ee1ad6c28b2532e5f71d890f",
-      "github-candidate-progress.json": "cfe418f83745400de2f7a4b7be15a25de8435d7ed4f1f2333d1fb23488a25dd8"
+      "github-candidates-manifest.json": "c79ac8d91468646b6b03c53b8e1acbb6a337ca1cd769bb866f3f77a17e5d4e86",
+      "github-candidate-progress.json": "e04d87594c0373b05b17026154c1b20650d316866bbb154e67316d4ad66cd713"
     },
     "published": true,
     "network_reservations": 1,
     "staged_files": {
       "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-      "github-candidates-manifest.json": "ba37bed46a589983237b4fcbe242789022f3f9d7479aa8d2132239db92e3acef",
-      "github-candidate-progress.json": "d8ff815150862d5eb7b95774557885caf6dc553f44c611591eba16064538fa37"
+      "github-candidates-manifest.json": "32d24280f7100c1280b2bb52bedef1dd89c5ad6fc94e47a53bc67f32b57267d5",
+      "github-candidate-progress.json": "dfe8b90be1d2f56085283e2023812661f3a342f2482455975fd0a3879eccbf1c"
     },
     "comparison_context_rebound": true,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-05T08:27:46Z",
+      "checked_at": "2026-11-05T16:26:45Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
         "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-        "github-candidates-manifest.json": "915e5bd43e053be1330db29b9b3cb31accd29035ee1ad6c28b2532e5f71d890f",
-        "github-candidate-progress.json": "cfe418f83745400de2f7a4b7be15a25de8435d7ed4f1f2333d1fb23488a25dd8"
+        "github-candidates-manifest.json": "c79ac8d91468646b6b03c53b8e1acbb6a337ca1cd769bb866f3f77a17e5d4e86",
+        "github-candidate-progress.json": "e04d87594c0373b05b17026154c1b20650d316866bbb154e67316d4ad66cd713"
       },
       "repositories": 9898
     }
@@ -126,24 +108,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-05T08:25:08Z",
-      "finished_at": "2026-11-05T08:25:25Z",
+      "started_at": "2026-11-05T16:23:33Z",
+      "finished_at": "2026-11-05T16:23:46Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-05T08:25:25Z",
-      "finished_at": "2026-11-05T08:25:56Z",
+      "started_at": "2026-11-05T16:23:46Z",
+      "finished_at": "2026-11-05T16:24:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-05T08:25:56Z",
-      "finished_at": "2026-11-05T08:25:56Z",
+      "started_at": "2026-11-05T16:24:18Z",
+      "finished_at": "2026-11-05T16:24:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -155,23 +137,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-05T08:25:56Z",
-      "finished_at": "2026-11-05T08:25:57Z",
+      "started_at": "2026-11-05T16:24:19Z",
+      "finished_at": "2026-11-05T16:24:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-05T08:26:03Z",
-      "finished_at": "2026-11-05T08:26:50Z",
+      "started_at": "2026-11-05T16:24:27Z",
+      "finished_at": "2026-11-05T16:25:30Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "state": "bounded_progress",
       "complete": false,
       "scan_status": "partial",
-      "run_id": "run:3bae073719806383f830995f",
+      "run_id": "run:8e131f6340caf26ba3fc7336",
       "request_attempted": true,
       "successful_responses": 0,
       "requests_attempted": 1,
@@ -184,7 +166,7 @@
         "observed_pages_exhausted": 321,
         "pending": 1,
         "split": 23,
-        "superseded_input": 58
+        "superseded_input": 59
       },
       "rejected_rows": {},
       "warnings": [
@@ -192,48 +174,48 @@
       ],
       "files": {
         "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-        "github-candidates-manifest.json": "915e5bd43e053be1330db29b9b3cb31accd29035ee1ad6c28b2532e5f71d890f",
-        "github-candidate-progress.json": "cfe418f83745400de2f7a4b7be15a25de8435d7ed4f1f2333d1fb23488a25dd8"
+        "github-candidates-manifest.json": "c79ac8d91468646b6b03c53b8e1acbb6a337ca1cd769bb866f3f77a17e5d4e86",
+        "github-candidate-progress.json": "e04d87594c0373b05b17026154c1b20650d316866bbb154e67316d4ad66cd713"
       },
       "published": true,
       "baseline_files": {
         "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-        "github-candidates-manifest.json": "bc5b095375db8567f1ce05c516e12ba75b9871d5d13d6dec195cfb470a0bc074",
-        "github-candidate-progress.json": "1739ff338d16aef9910a35c97fe93c60fbfebd98e8cd96b99a2596af18903701"
+        "github-candidates-manifest.json": "915e5bd43e053be1330db29b9b3cb31accd29035ee1ad6c28b2532e5f71d890f",
+        "github-candidate-progress.json": "cfe418f83745400de2f7a4b7be15a25de8435d7ed4f1f2333d1fb23488a25dd8"
       },
       "ready_to_publish": false,
       "network_reservations": 1,
       "staged_files": {
         "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-        "github-candidates-manifest.json": "ba37bed46a589983237b4fcbe242789022f3f9d7479aa8d2132239db92e3acef",
-        "github-candidate-progress.json": "d8ff815150862d5eb7b95774557885caf6dc553f44c611591eba16064538fa37"
+        "github-candidates-manifest.json": "32d24280f7100c1280b2bb52bedef1dd89c5ad6fc94e47a53bc67f32b57267d5",
+        "github-candidate-progress.json": "dfe8b90be1d2f56085283e2023812661f3a342f2482455975fd0a3879eccbf1c"
       },
       "comparison_context_rebound": true,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-05T08:27:46Z",
+        "checked_at": "2026-11-05T16:26:45Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
           "github-candidates.jsonl": "ae8f5ffec93dd09d676db751ddf754023a14f23325bf81b2fe604faf981dd9dc",
-          "github-candidates-manifest.json": "915e5bd43e053be1330db29b9b3cb31accd29035ee1ad6c28b2532e5f71d890f",
-          "github-candidate-progress.json": "cfe418f83745400de2f7a4b7be15a25de8435d7ed4f1f2333d1fb23488a25dd8"
+          "github-candidates-manifest.json": "c79ac8d91468646b6b03c53b8e1acbb6a337ca1cd769bb866f3f77a17e5d4e86",
+          "github-candidate-progress.json": "e04d87594c0373b05b17026154c1b20650d316866bbb154e67316d4ad66cd713"
         },
         "repositories": 9898
       }
     },
     {
       "name": "build",
-      "started_at": "2026-11-05T08:26:56Z",
-      "finished_at": "2026-11-05T08:26:58Z",
+      "started_at": "2026-11-05T16:25:38Z",
+      "finished_at": "2026-11-05T16:25:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-05T08:27:29Z",
-      "finished_at": "2026-11-05T08:27:39Z",
+      "started_at": "2026-11-05T16:26:23Z",
+      "finished_at": "2026-11-05T16:26:37Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -245,7 +227,7 @@
   ],
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "4a3a26b10cf94d62b4e6e370540e6495",
+    "round_id": "f8e5fe7a9c32464a9625a9cc011206a4",
     "max_requests": 180,
     "max_seconds": 600,
     "requests_reserved": 89,
@@ -266,7 +248,7 @@
     },
     "provider_cooldowns": {},
     "blocked_providers": [],
-    "ledger_sha256": "0f20f86dc0a8fa3ffb9f3aa206bc105bef740b2edc8cf10b6b82a59758f73904",
+    "ledger_sha256": "4c91275d1de121d4c470178558cf4ec54da6c27bf4f52c580bbbf6877b78bb80",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

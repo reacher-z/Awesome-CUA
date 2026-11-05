@@ -29,7 +29,7 @@ FROZEN_BIBLIOGRAPHY = SURVEY / 'fixtures/frozen-catalog-bibliography.json'
 FROZEN_BIBLIOGRAPHY_SHA = 'c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64'
 RECORD_HASH_METHOD = 'sha256-utf8-json-sorted-keys-compact-v1'
 TITLE = 'Computer-Use Agents: Methods, Evaluation, Human Agency, and Research Assets'
-CANONICAL = 'https://awesomecua.github.io/survey/'
+CANONICAL = 'https://awesomecua.com/survey/'
 SECTIONS = ('context', 'review-design', 'methods', 'evaluation', 'human-agency', 'assets', 'agenda')
 EVIDENCE = ('context', 'methods', 'evaluation', 'root', 'corpus-statistics', 'title-search', 'supplementary-screening', 'extra-references')
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -629,11 +629,11 @@ def build(output, *, check_history=True, write_source_outputs=False):
             n.children.insert(0, Node('strong', {}, [f'Table {len(tables) + 1}. ']))
     appendix = render(appendix_tree)
     tables.append({'id': 'reading-register-table', 'number': len(tables) + 1, 'caption': 'Reading level and inspected sections for every cited source.'})
-    structured = {'@context': 'https://schema.org', '@type': 'ScholarlyArticle', 'headline': TITLE, 'description': abstract, 'inLanguage': 'en', 'dateCreated': '2026-10-18', 'creativeWorkStatus': 'Working manuscript; not peer reviewed', 'publisher': {'@type': 'Organization', 'name': 'AwesomeCUA', 'url': 'https://awesomecua.github.io/'}, 'url': CANONICAL, 'isAccessibleForFree': True, 'citation': [{'@type': 'CreativeWork', 'name': item['title'], 'url': item['URL']} for item in citations]}
+    structured = {'@context': 'https://schema.org', '@type': 'ScholarlyArticle', 'headline': TITLE, 'description': abstract, 'inLanguage': 'en', 'dateCreated': '2026-10-18', 'creativeWorkStatus': 'Working manuscript; not peer reviewed', 'publisher': {'@type': 'Organization', 'name': 'AwesomeCUA', 'url': 'https://awesomecua.com/'}, 'url': CANONICAL, 'isAccessibleForFree': True, 'citation': [{'@type': 'CreativeWork', 'name': item['title'], 'url': item['URL']} for item in citations]}
     structured.pop('@context')
     structured = {'@context': 'https://schema.org', '@graph': [structured, {
         '@type': 'BreadcrumbList', 'itemListElement': [
-            {'@type': 'ListItem', 'position': 1, 'name': 'AwesomeCUA', 'item': 'https://awesomecua.github.io/'},
+            {'@type': 'ListItem', 'position': 1, 'name': 'AwesomeCUA', 'item': 'https://awesomecua.com/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'Research survey', 'item': CANONICAL},
         ]
     }]}

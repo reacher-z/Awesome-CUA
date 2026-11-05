@@ -230,6 +230,20 @@ class ArxivQueryTests(unittest.TestCase):
             with self.subTest(body=body[:60]), self.assertRaises(ValueError):
                 catalog.source_links(self.source(), body)
 
+    def test_an_identifier_list_names_exactly_the_papers_it_queries(self):
+        listed = {"id": "backfill", "url": "https://export.arxiv.org/api/query?id_list=1812.09195,2106.00133&max_results=2",
+                  "homepage": "https://arxiv.org", "parser": "arxiv_query"}
+        body = feed([entry(aid="1812.09195"), entry(aid="2106.00133", version=3)], total=2)
+        self.assertEqual(catalog.source_links(listed, body), [
+            (None, "arXiv API identifier list; relevance awaits review", "https://arxiv.org/abs/1812.09195"),
+            (None, "arXiv API identifier list; relevance awaits review", "https://arxiv.org/abs/2106.00133")])
+        with self.assertRaisesRegex(ValueError, "not requested"):
+            catalog.source_links(listed, feed([entry(aid="1812.09195"), entry(aid="2401.00001")], total=2))
+        for query in ["id_list=1812.09195,1812.09195&max_results=2", "id_list=1812.09195,2106.00133&max_results=1",
+                      "id_list=cs/0208008&max_results=1", "id_list=1812.09195&search_query=ti:web&max_results=1", "max_results=5"]:
+            with self.subTest(query=query), self.assertRaises(ValueError):
+                catalog.source_links({**listed, "url": "https://export.arxiv.org/api/query?" + query}, body)
+
 
 class ReferenceTargetTests(unittest.TestCase):
     def edge(self, url):

@@ -467,22 +467,27 @@ def hub_collection_links(source, body):
 
 
 def arxiv_query_links(source, body):
-    """Entries of one bounded arXiv API query; the query is a discovery population, not a relevance decision."""
+    """Entries of one bounded arXiv API search or identifier list; a discovery population, not a relevance decision."""
     url = urllib.parse.urlsplit(source['url'])
     params = urllib.parse.parse_qs(url.query, keep_blank_values=True)
-    limit = params.get('max_results', [''])[0]
+    limit, search, listed = params.get('max_results', [''])[0], params.get('search_query', [''])[0], params.get('id_list', [''])[0]
+    listed = listed.split(',') if listed else []
     if (url.scheme != 'https' or url.hostname != 'export.arxiv.org' or url.port is not None or url.path != '/api/query' or url.fragment
-            or set(params) - {'search_query', 'start', 'max_results', 'sortBy', 'sortOrder'} or any(len(v) != 1 for v in params.values())
-            or not params.get('search_query', [''])[0].strip() or params.get('start', ['0'])[0] != '0'
-            or not limit.isdigit() or not 1 <= int(limit) <= 2000):
-        raise ValueError('arXiv query source must be one export.arxiv.org API query starting at 0 with max_results of 1..2000')
+            or set(params) - {'search_query', 'id_list', 'start', 'max_results', 'sortBy', 'sortOrder'} or any(len(v) != 1 for v in params.values())
+            or bool(search.strip()) == bool(listed) or len(set(listed)) != len(listed)
+            or any(not re.fullmatch(r'\d{4}\.\d{4,5}', aid, re.A) for aid in listed) or params.get('start', ['0'])[0] != '0'
+            or not limit.isdigit() or not len(listed) <= int(limit) <= 2000 or int(limit) < 1):
+        raise ValueError('arXiv query source must be one export.arxiv.org API search or identifier list starting at 0 with max_results of 1..2000')
     entries, _ = parse_search_feed(body, None, int(limit))
+    section = 'arXiv API ' + ('identifier list' if listed else 'query') + '; relevance awaits review'
     result = []
     for entry in entries:
         parsed = canonical(entry.findtext('{http://www.w3.org/2005/Atom}id', ''))
         # Pre-2007 identifiers such as cs/0208008 have no catalog identity, as in harvest and search-arxiv.
         if parsed and parsed[2] == 'arxiv':
-            result.append((None, 'arXiv API query; relevance awaits review', parsed[1]))
+            if listed and parsed[0].split(':', 1)[1] not in listed:
+                raise ValueError('arXiv identifier-list response contains an identifier that was not requested')
+            result.append((None, section, parsed[1]))
     return result
 
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://awesomecua.github.io/schemas/github-candidate-scan.schema.json",
+  "$id": "https://awesomecua.com/schemas/github-candidate-scan.schema.json",
   "title": "Public GitHub candidate metadata observations",
   "description": "Independent candidate ledger. Numeric repository IDs count once; metadata observation is neither relevance review nor active-catalog approval. Pagination statuses describe observed API windows, not global recall. Version2 retains explicit migration/topic-expansion/daily/frontier epoch history and bounded full-traversal restarts; v1 is still readable. Shared reservations may exceed HTTP attempts when I/O is deferred after reservation. New UTC frontiers retain unfinished historical queries; scoped runs derive repair epoch permissions from prior progress.",
   "type": "object",

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://awesomecua.github.io/">
+  <a href="https://awesomecua.com/">
     <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="220">
   </a>
 </p>
@@ -17,11 +17,11 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 | [**WebsiteBench**](https://github.com/TIGER-AI-Lab/WebsiteBench) | Rebuild full-stack websites through browser exploration. |
 | [**ClawBench**](https://github.com/TIGER-AI-Lab/ClawBench) | Evaluate browser agents on everyday online tasks. |
 
-<a href="https://awesomecua.github.io/"><img src="assets/readme-banner.svg" alt="Awesome CUA — computer-use agent research, data and tools connected to original sources" width="960"></a>
+<a href="https://awesomecua.com/"><img src="assets/readme-banner.svg" alt="Awesome CUA — computer-use agent research, data and tools connected to original sources" width="960"></a>
 
-**[Search & filter](https://awesomecua.github.io/)** · **[Research papers](https://awesomecua.github.io/papers/)** · **[Browse topics](https://awesomecua.github.io/topics/)** · **[Data & agents](https://awesomecua.github.io/data/)**
+**[Search & filter](https://awesomecua.com/)** · **[Research papers](https://awesomecua.com/papers/)** · **[Browse topics](https://awesomecua.com/topics/)** · **[Data & agents](https://awesomecua.com/data/)**
 
-[Read the research survey](https://awesomecua.github.io/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
+[Read the research survey](https://awesomecua.com/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
 
 <!-- BADGES:START -->
 [![Catalog records](https://img.shields.io/badge/records-3%2C377-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
@@ -31,7 +31,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 
 [Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
 
-Discovery is scheduled three times daily at **00:17, 08:17 and 16:17 UTC**. [Actual scan results](https://awesomecua.github.io/updates/) · [Schedule and safeguards](docs/maintenance.md).
+Discovery is scheduled three times daily at **00:17, 08:17 and 16:17 UTC**. [Actual scan results](https://awesomecua.com/updates/) · [Schedule and safeguards](docs/maintenance.md).
 
 **For people, RAG systems, and agents — clone the complete catalog:**
 
@@ -39,25 +39,25 @@ Discovery is scheduled three times daily at **00:17, 08:17 and 16:17 UTC**. [Act
 git clone https://github.com/reacher-z/Awesome-CUA.git
 ```
 
-[Agent instructions](AGENTS.md) · [RAG and agent guide](https://awesomecua.github.io/agents/) · [Complete JSONL](https://awesomecua.github.io/downloads/catalog.jsonl) · [Retrieval documents](https://awesomecua.github.io/downloads/rag-documents.jsonl)
+[Agent instructions](AGENTS.md) · [RAG and agent guide](https://awesomecua.com/agents/) · [Complete JSONL](https://awesomecua.com/downloads/catalog.jsonl) · [Retrieval documents](https://awesomecua.com/downloads/rag-documents.jsonl)
 
 The goal is comprehensive coverage of public research and industry resources, with provenance that can be inspected. Papers, models, training data, evaluation environments, frameworks, infrastructure, products, and publishers belong in the same searchable catalog.
 
 **Global completeness is a goal, not a verified claim.** We publish the source populations, review states, and remaining gaps. Bibliographic metadata verification is different from reviewing a resource's relevance or quality.
 
-[Browse by topic](https://awesomecua.github.io/topics/) · [Topic subsets and fingerprints](https://awesomecua.github.io/downloads/topics.json)
+[Browse by topic](https://awesomecua.com/topics/) · [Topic subsets and fingerprints](https://awesomecua.com/downloads/topics.json)
 
 <!-- TASKS:START -->
 ## Find by task
 
 | Your task | Start here | What you can find |
 | --- | --- | --- |
-| Find papers | [Research library](https://awesomecua.github.io/papers/) · [Topics](https://awesomecua.github.io/topics/) | Reviewed papers by year and topic, with original sources. |
-| Choose a benchmark | [Benchmark guide](https://awesomecua.github.io/guides/gui-agent-benchmarks/) | Platforms, tasks, evaluators, and versions to compare. |
-| Find training data | [Training-data guide](https://awesomecua.github.io/guides/gui-agent-training-data/) | Supervision, splits, count units, and data licenses. |
-| Build an agent | [Agents](https://awesomecua.github.io/categories/agent/) · [Frameworks](https://awesomecua.github.io/categories/framework/) | Implementation entry points, supported platforms, and papers. |
-| Use RAG or an agent | [Agent guide](https://awesomecua.github.io/agents/) · [Data hub](https://awesomecua.github.io/data/) | Complete records or retrieval documents with review states and sources. |
-| Trace papers to assets | [Paper–asset connections](https://awesomecua.github.io/connections/) | Code, datasets, and models linked through reviewed primary evidence. |
+| Find papers | [Research library](https://awesomecua.com/papers/) · [Topics](https://awesomecua.com/topics/) | Reviewed papers by year and topic, with original sources. |
+| Choose a benchmark | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/) | Platforms, tasks, evaluators, and versions to compare. |
+| Find training data | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/) | Supervision, splits, count units, and data licenses. |
+| Build an agent | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/) | Implementation entry points, supported platforms, and papers. |
+| Use RAG or an agent | [Agent guide](https://awesomecua.com/agents/) · [Data hub](https://awesomecua.com/data/) | Complete records or retrieval documents with review states and sources. |
+| Trace papers to assets | [Paper–asset connections](https://awesomecua.com/connections/) | Code, datasets, and models linked through reviewed primary evidence. |
 
 <details>
 <summary>Local examples (after cloning; Python 3.11+, no dependencies required)</summary>
@@ -195,20 +195,20 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 
 ## Use the data
 
-Browse the [interactive website](https://awesomecua.github.io/) to search and filter all resources, inspect source evidence, switch between English and Chinese, or download the complete catalog. [Website development and publishing](docs/website.md).
+Browse the [interactive website](https://awesomecua.com/) to search and filter all resources, inspect source evidence, switch between English and Chinese, or download the complete catalog. [Website development and publishing](docs/website.md).
 
-The [English data hub](https://awesomecua.github.io/data/) and [中文数据中心](https://awesomecua.github.io/zh/data/) organize public downloads into six groups: complete catalog, RAG documents, citations, topics and comparisons, sources and review status, and schemas. Cloning still gives you the complete source catalog; the hub provides exports from its published snapshot.
+The [English data hub](https://awesomecua.com/data/) and [中文数据中心](https://awesomecua.com/zh/data/) organize public downloads into six groups: complete catalog, RAG documents, citations, topics and comparisons, sources and review status, and schemas. Cloning still gives you the complete source catalog; the hub provides exports from its published snapshot.
 
-The [download manifest](https://awesomecua.github.io/downloads/manifest.json) records each listed export's actual count and unit, scope, byte size, and SHA-256 fingerprint. These are different formats and overlapping views of the catalog, so their counts must not be added together. Compare `catalog_sha256` across manifests before combining files from different downloads.
+The [download manifest](https://awesomecua.com/downloads/manifest.json) records each listed export's actual count and unit, scope, byte size, and SHA-256 fingerprint. These are different formats and overlapping views of the catalog, so their counts must not be added together. Compare `catalog_sha256` across manifests before combining files from different downloads.
 
-[Reviewed research](https://awesomecua.github.io/papers/) · [Computer-use agent guides](https://awesomecua.github.io/guides/) · [Static resource directory](https://awesomecua.github.io/catalog/) · [Search and AI discovery](docs/search-discovery.md)
+[Reviewed research](https://awesomecua.com/papers/) · [Computer-use agent guides](https://awesomecua.com/guides/) · [Static resource directory](https://awesomecua.com/catalog/) · [Search and AI discovery](docs/search-discovery.md)
 
 - **[Catalog JSONL](data/catalog.jsonl):** one resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
 - **[Reference graph](data/references.jsonl):** outbound references from primary sources. `mentions` does not mean `trained_on` or `evaluated_on`.
 - **[Discovery registry](data/sources.json)** and **[candidates](data/candidates.jsonl):** source snapshots and where each identifier was found.
 - **[Review queue](data/review-queue.jsonl):** unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
 - **[JSON Schema](schemas/resource.schema.json)** and **[coverage JSON](data/coverage.json):** machine-checkable contracts and coverage accounting.
-- **[BibTeX](https://awesomecua.github.io/downloads/citations.bib)** and **[CSL JSON](https://awesomecua.github.io/downloads/citations.csl.json):** reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json`.
+- **[BibTeX](https://awesomecua.com/downloads/citations.bib)** and **[CSL JSON](https://awesomecua.com/downloads/citations.csl.json):** reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json`.
 
 ```bash
 # Python 3.11+. Search and export require only the standard library.

@@ -419,7 +419,7 @@ test('the comparison page hides rows outside the filter and keeps it in the URL'
   const query=control('query'),environment={...control('environment'),options:['','android','desktop','linux','web'].map(value=>({value}))},output={textContent:''},urls=[];
   const elements={'#compare-query':query,'#compare-environment':environment,'#compare-results':output};
   const globals={document:{querySelector:selector=>elements[selector],querySelectorAll:selector=>selector==='[data-profile-row]'?profiles:[]},
-    location:{search:'?q=screenshots&environment=android',href:'https://awesomecua.github.io/compare/benchmarks/?q=screenshots&environment=android'},history:{replaceState:(data,title,url)=>urls.push(String(url))}};
+    location:{search:'?q=screenshots&environment=android',href:'https://awesomecua.com/compare/benchmarks/?q=screenshots&environment=android'},history:{replaceState:(data,title,url)=>urls.push(String(url))}};
   for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
   try {
     await import('../web/compare.js?filter');

@@ -32,6 +32,12 @@ def copy_survey_source_inputs(destination):
             shutil.copy2(ROOT/name, target)
 
 
+def page_origin(site,path):
+    # The reviewed survey bundle keeps the origin it was built for (SITE or a former origin) until it is rebuilt.
+    if path=='/survey/':return json.loads((site/'survey/build-manifest.json').read_text(encoding='utf-8'))['canonical_location_intended'].removesuffix(path)
+    return SITE
+
+
 class PageParser(HTMLParser):
     def __init__(self,text):
         super().__init__();self.canonical=[];self.robots=[];self.links=[];self.scripts=[];self.heading_count=0
@@ -75,7 +81,7 @@ class SearchPagesTests(unittest.TestCase):
     def test_every_page_has_matching_canonical_robots_and_visible_heading(self):
         for item in self.manifest['pages']:
             text=(self.dest/item['path'].lstrip('/')/'index.html').read_text();p=PageParser(text)
-            self.assertEqual(p.canonical,[SITE+item['path']],item['path'])
+            self.assertEqual(p.canonical,[page_origin(self.dest,item['path'])+item['path']],item['path'])
             self.assertEqual(p.heading_count,1,item['path'])
             self.assertEqual('noindex' in p.robots[0],not item['indexable'],item['path'])
             for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
@@ -245,6 +251,7 @@ class SearchPagesTests(unittest.TestCase):
     def test_machine_navigation_and_verified_files_exist(self):
         config=json.loads((ROOT/'data/site-discovery.json').read_text())
         self.assertEqual((self.dest/(config['indexnow_key']+'.txt')).read_text(),config['indexnow_key'])
+        self.assertEqual((self.dest/'CNAME').read_text(),urllib.parse.urlsplit(SITE).hostname+'\n')
         self.assertEqual((self.dest/config['google_verification_file']).read_bytes(),(ROOT/'web'/config['google_verification_file']).read_bytes())
         self.assertIn('/papers/',(self.dest/'llms.txt').read_text())
         ET.parse(self.dest/'feed.xml')

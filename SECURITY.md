@@ -6,7 +6,7 @@ Report vulnerabilities in:
 
 - this repository's scripts, schemas, and data pipeline (`scripts/`, `schemas/`, `data/`);
 - its GitHub Actions workflows (`.github/workflows/`) and the website publication workflow (`automation/publish.yml`), including token permissions and injection through scanned metadata;
-- the website at https://awesomecua.github.io/, built from this repository by `scripts/build_site.py` and the client code in `web/`. Third-party metadata is rendered into its HTML and JavaScript, so cross-site scripting and unsafe links are in scope;
+- the website at https://awesomecua.com/ (the former awesomecua.github.io address redirects there), built from this repository by `scripts/build_site.py` and the client code in `web/`. Third-party metadata is rendered into its HTML and JavaScript, so cross-site scripting and unsafe links are in scope;
 - credentials or tokens exposed in the git history.
 
 Vulnerabilities in linked papers, repositories, models, or datasets belong with their publishers. Report incorrect catalog facts through the [resource issue form](https://github.com/reacher-z/Awesome-CUA/issues/new?template=resource.yml).

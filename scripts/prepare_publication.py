@@ -4,7 +4,8 @@ from pathlib import Path
 import argparse
 import json
 import shutil
-from search_pages import KINDS, SITE, REPO, SOURCE_REPO, clean_text, resource_path
+from search_pages import KINDS, REPO, SOURCE_REPO, clean_text, resource_path
+from site_config import SITE
 from agent_pages import CLONE_COMMAND
 from site_files import MANAGED_FILES, reconcile_generated_pages
 from publication_metadata import record_date_text

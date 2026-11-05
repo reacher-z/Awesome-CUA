@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://awesomecua.github.io/schemas/github-candidate-observation.schema.json",
+  "$id": "https://awesomecua.com/schemas/github-candidate-observation.schema.json",
   "title": "AwesomeCUA public GitHub candidate observation",
   "description": "Public GitHub metadata observations only. Every row remains candidate/relevance_pending; HTTP success, a topic tag, or a repository name does not establish CUA relevance, release completeness, licensing, or editorial approval.",
   "type": "object",

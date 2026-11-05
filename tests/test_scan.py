@@ -61,6 +61,14 @@ class ScanSafetyTests(unittest.TestCase):
         self.assertEqual(status,'failed');self.assertIn('bad-shape',' '.join(problems))
         runs.append({'id':'empty-valid','state':'success','evidence':{'ok':True,'status':200},'identifiers':[]})
         self.assertEqual(scan.summarize_phases(phases,[],runs,[])[0],'partial')
+    def test_a_retired_discovery_source_is_not_a_scan_gap(self):
+        phases=[{'name':'discovery','ok':True},{'name':'build','ok':True},{'name':'validate','ok':True}]
+        retired={'id':'gone','ok':False,'state':'retired','request_attempted':False}
+        self.assertEqual(scan.summarize_phases(phases,[{'id':'live','ok':True},retired],[],[]),('success',[]))
+        failed={'id':'down','ok':False,'state':'failed','error':'HTTP Error 404: Not Found'}
+        self.assertEqual(scan.summarize_phases(phases,[{'id':'live','ok':True},retired,failed],[],[]),('partial',['Discovery sources failed: down']))
+        # A registry of retired sources alone is not a usable discovery result.
+        self.assertEqual(scan.summarize_phases(phases,[retired],[],[])[0],'failed')
     def test_arxiv_error_feed_cannot_be_counted_as_successful_empty_search(self):
         body=b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><id>http://arxiv.org/api/errors#bad_query</id><title>Error</title></entry></feed>'
         info={'ok':True,'url':'https://export.arxiv.org/api/query','retrieved_at':'2026-10-16T00:00:00Z','sha256':'a'*64}

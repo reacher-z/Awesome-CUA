@@ -338,6 +338,7 @@ def finalize_runtime(baseline, runtime_dir, staged_public_dir, *, catalog_bytes)
             'query_status_counts': dict(sorted(Counter(q['status'] for q in state['queries']).items())),
             'epoch_id': state.get('current_epoch_id'),
             'unknown_requests': run['unknown_requests'], 'rejected_rows': copy.deepcopy(run['rejected_rows']),
+            'settled_unknown_requests': scan.settled_unknown_requests(new_receipts, run['id']),
             'files': files, 'verification': verification}
 
 

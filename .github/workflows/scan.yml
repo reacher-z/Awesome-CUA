@@ -1,8 +1,8 @@
-name: Three daily discovery scans
+name: Discovery scans every two hours
 
 on:
   schedule:
-    - cron: '17 0,8,16 * * *'
+    - cron: '7 */2 * * *'
       timezone: UTC
   workflow_dispatch:
     inputs:
@@ -26,6 +26,8 @@ jobs:
     outputs:
       pushed: ${{ steps.commit.outputs.pushed }}
       repeated_partial: ${{ steps.scan.outputs.repeated_partial }}
+      status: ${{ steps.scan.outputs.status }}
+      notes: ${{ steps.scan.outputs.notes }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
@@ -126,6 +128,63 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run catalog.yml --ref main -R "$GITHUB_REPOSITORY"
+  track_scan_health:
+    # One tracking issue stays open while scans of main are unhealthy: it is edited in place on each such run and
+    # closed by the next healthy run, so a long outage neither fails silently nor posts a new issue every two hours.
+    needs: scan
+    if: always() && github.ref == 'refs/heads/main' && !inputs.dry_run
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      issues: write
+    steps:
+      - name: Update the scan health tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SCAN_RESULT: ${{ needs.scan.result }}
+          SCAN_STATUS: ${{ needs.scan.outputs.status }}
+          SCAN_NOTES: ${{ needs.scan.outputs.notes }}
+          REPEATED_PARTIAL: ${{ needs.scan.outputs.repeated_partial }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          label=scan-health
+          repo=(-R "$GITHUB_REPOSITORY")
+          open=$(gh issue list "${repo[@]}" --label "$label" --state open --limit 20 --json number --jq 'map(.number) | sort | map(tostring) | join(" ")')
+          read -r tracking duplicates <<< "$open" || true
+          if [ "$SCAN_RESULT" = success ] && [ "$REPEATED_PARTIAL" != true ]; then
+            for number in $open; do
+              gh issue close "$number" "${repo[@]}" --reason completed --comment "Resolved by $RUN_URL: the scan job succeeded with status \`${SCAN_STATUS:-unknown}\`."
+            done
+            exit 0
+          fi
+          # A failed job may never have written a receipt; the jobs API still names the failing step.
+          failing=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" --jq '[.jobs[] | select(.conclusion == "failure" or .conclusion == "cancelled") | .name + " (" + ([.steps[] | select(.conclusion == "failure" or .conclusion == "cancelled") | .name] | join(", ")) + ")"] | join("; ")' || true)
+          now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          count=1; since=$now
+          if [ -n "$tracking" ]; then
+            marker=$(gh issue view "$tracking" "${repo[@]}" --json body --jq .body | sed -n 's/^<!-- scan-health unhealthy_runs=\([0-9][0-9]*\) since=\([0-9TZ:-]*\) -->$/\1 \2/p') || marker=
+            marker=${marker%%$'\n'*}
+            if [ -n "$marker" ]; then read -r count since <<< "$marker"; count=$((count + 1)); fi
+          fi
+          {
+            printf '<!-- scan-health unhealthy_runs=%s since=%s -->\n' "$count" "$since"
+            printf 'The scheduled discovery scan of `main` is unhealthy. This issue is edited in place on each unhealthy run and closed automatically by the next healthy run.\n\n'
+            printf -- '- Latest unhealthy run: %s (%s, %s)\n' "$RUN_URL" "$GITHUB_EVENT_NAME" "$now"
+            printf -- '- Scan job: `%s`; scan status: `%s`; repeated partial scans: `%s`\n' "$SCAN_RESULT" "${SCAN_STATUS:-not recorded}" "${REPEATED_PARTIAL:-false}"
+            printf -- '- Failing jobs and steps: %s\n' "${failing:-none recorded}"
+            printf -- '- Consecutive unhealthy runs: %s since %s\n\n' "$count" "$since"
+            printf 'Gaps recorded by the latest scan receipt:\n\n```text\n%s\n```\n' "$(printf '%s' "${SCAN_NOTES:-none recorded}" | sed 's/```/` ` `/g')"
+          } > "$RUNNER_TEMP/scan-health.md"
+          if [ -z "$tracking" ]; then
+            gh label create "$label" "${repo[@]}" --color B60205 --description 'Open while the scheduled discovery scan is unhealthy' 2>/dev/null || true
+            gh issue create "${repo[@]}" --title 'Scheduled discovery scan is unhealthy' --label "$label" --body-file "$RUNNER_TEMP/scan-health.md"
+          else
+            gh issue edit "$tracking" "${repo[@]}" --body-file "$RUNNER_TEMP/scan-health.md"
+            for number in $duplicates; do
+              gh issue close "$number" "${repo[@]}" --reason 'not planned' --comment "Duplicate of #$tracking, which tracks scan health."
+            done
+          fi
   report_repeated_partial:
     # A partial scan stays green so its verified data is committed; a run of them fails this job so GitHub sends a failure notice.
     needs: scan

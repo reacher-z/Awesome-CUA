@@ -2,7 +2,7 @@ name: Scan freshness
 
 on:
   schedule:
-    # GitHub can delay or drop any scheduled run, so a check every three hours notices a late or dropped three-times-daily scan.
+    # GitHub can delay or drop any scheduled run, so a check every three hours notices two-hourly scans that stopped arriving.
     - cron: '37 */3 * * *'
   workflow_dispatch:
 

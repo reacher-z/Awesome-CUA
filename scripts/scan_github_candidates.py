@@ -45,10 +45,46 @@ PAGE_SIZE = 100
 SPLIT_THRESHOLD = 900
 QUERY_PROGRESS = ('status', 'next_page', 'reported_total', 'total_changed',
                   'incomplete_results_seen', 'seen_repository_ids', 'rejected_rows', 'last_attempt')
+# A renamed or transferred (permanent redirect) or deleted (404) repository gives the same
+# answer on every request. Later existing-candidate cohorts skip that name for this long
+# instead of retrying it first on every scan, which stalled the lane behind it. A quarantined
+# direct response is not settled: it is retried, because the next answer can be acceptable.
+SETTLED_SEED_RECHECK = timedelta(days=30)
 
 
 def digest(body):
     return hashlib.sha256(body).hexdigest()
+
+
+def existing_seed_url(name):
+    return 'https://api.github.com/repos/' + name
+
+
+def settled_seed_answer(receipt):
+    """True when an existing-candidate request got a final answer for that name; transient failures stay retryable."""
+    return (receipt['outcome'] == 'redirect_not_followed' and receipt['status'] in {301, 308}
+            or receipt['outcome'] == 'unavailable' and receipt['status'] == 404)
+
+
+def settled_unknown_requests(receipts, run_id):
+    """This run's existing-candidate requests answered by a permanent redirect or a 404.
+
+    They count as unknown requests (no metadata was accepted), but the answer is final for that name, so the
+    scan reports them as a notice instead of a gap that would make every scan partial until the names are reviewed."""
+    return sum(receipt['run_id'] == run_id and receipt['query_id'].startswith('existing:') and settled_seed_answer(receipt)
+               for receipt in receipts)
+
+
+def settled_seed_requests(state, at):
+    """Request-URL fingerprints whose latest existing-candidate answer is settled and inside the recheck window."""
+    existing = {q['id'] for q in state['queries'] if q['kind'] == 'existing'}
+    latest = {}
+    for receipt in state['receipts']:
+        if receipt['query_id'] in existing:
+            latest[receipt['request_url_sha256']] = receipt
+    cutoff = timestamp(at) - SETTLED_SEED_RECHECK
+    return {sha for sha, receipt in latest.items()
+            if settled_seed_answer(receipt) and timestamp(receipt['requested_at']) > cutoff}
 
 
 def utcnow():
@@ -963,6 +999,7 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         save(path, state)
 
     persist()
+    settled = settled_seed_requests(state, started)
     attempted_failed = set(); existing_attempts = 0; stopped = None; prefer_current = True
     while run['requests_attempted'] < max_requests:
         if state['deferred_until'] and timestamp(state['deferred_until']) > timestamp(now()):
@@ -983,12 +1020,13 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         query = min(lane, key=lambda q: q['last_attempt'])
         if query['kind'] == 'existing':
             known = {name.casefold() for r in state['records'].values() for name in r['known_names']}
-            while query['next_index'] < len(seeds) and seeds[query['next_index']] in known:
+            while query['next_index'] < len(seeds) and (seeds[query['next_index']] in known
+                    or digest(existing_seed_url(seeds[query['next_index']]).encode()) in settled):
                 query['next_index'] += 1
             if query['next_index'] >= len(seeds):
                 query['status'] = 'exhausted'; persist(); continue
             position = query['next_index']
-            url = 'https://api.github.com/repos/' + seeds[position]
+            url = existing_seed_url(seeds[position])
         else:
             position = query['next_page']
             url = 'https://api.github.com/search/repositories?' + urllib.parse.urlencode({
@@ -1124,9 +1162,13 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         if query['kind'] == 'existing' and not limited and not quarantined:
             query['next_index'] += 1
             if query['next_index'] >= query['seed_count']: query['status'] = 'exhausted'
+        # A settled answer concerns only this name: record it once, skip the name, and let the lane continue.
+        settled_seed = query['kind'] == 'existing' and settled_seed_answer(receipt)
+        if settled_seed:
+            settled.add(receipt['request_url_sha256'])
         if not parsed:
-            run['unknown_requests'] += 1; attempted_failed.add(query['id'])
-        if quarantined:
+            run['unknown_requests'] += 1
+        if (not parsed and not settled_seed) or quarantined:
             attempted_failed.add(query['id'])
         state['receipts'].append(receipt)
         run['accepted_metadata_rows'] += len(receipt['accepted_repository_ids'])
@@ -1138,7 +1180,9 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
     pending_count = sum(q['status'] == 'pending' for q in state['queries'])
     run['finished_at'] = now(); run['deferred_queries'] = pending_count
     run['deferred_query_ids'] = [q['id'] for q in state['queries'] if q['status'] == 'pending']
-    run['status'] = stopped or ('request_budget' if pending_count and run['requests_attempted'] >= max_requests else 'partial' if pending_count or run['unknown_requests'] or run['rejected_rows'] or any(q['status'] in {'partial_results', 'blocked_single_day_window', 'partial_api_window'} for q in state['queries']) else 'finished')
+    # Settled answers stay counted as unknown requests, but they are final, so they do not leave the round partial.
+    unsettled = run['unknown_requests'] - settled_unknown_requests(state['receipts'], run['id'])
+    run['status'] = stopped or ('request_budget' if pending_count and run['requests_attempted'] >= max_requests else 'partial' if pending_count or unsettled or run['rejected_rows'] or any(q['status'] in {'partial_results', 'blocked_single_day_window', 'partial_api_window'} for q in state['queries']) else 'finished')
     persist()
     return state, run
 

@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import re
 import subprocess
 import tempfile
 import textwrap
@@ -45,7 +46,8 @@ class ScanWorkflowTests(unittest.TestCase):
     def test_only_the_dispatch_job_can_write_actions(self):
         self.assertEqual(section("permissions"), "{}")
         self.assertEqual(section("jobs", "scan", "permissions"), "contents: write\n")
-        self.assertEqual(section("jobs", "scan", "outputs"), "pushed: ${{ steps.commit.outputs.pushed }}\nrepeated_partial: ${{ steps.scan.outputs.repeated_partial }}\n")
+        self.assertEqual(section("jobs", "scan", "outputs"), "pushed: ${{ steps.commit.outputs.pushed }}\nrepeated_partial: ${{ steps.scan.outputs.repeated_partial }}\n"
+                         "status: ${{ steps.scan.outputs.status }}\nnotes: ${{ steps.scan.outputs.notes }}\n")
         self.assertEqual(section("jobs", "dispatch_quality", "needs"), "scan")
         self.assertEqual(section("jobs", "dispatch_quality", "if"), "needs.scan.outputs.pushed == 'true'")
         self.assertEqual(section("jobs", "dispatch_quality", "permissions"), "actions: write\n")
@@ -55,6 +57,57 @@ class ScanWorkflowTests(unittest.TestCase):
         self.assertIn("GH_TOKEN: ${{ github.token }}", steps)
         self.assertIn('run: gh workflow run catalog.yml --ref main -R "$GITHUB_REPOSITORY"', steps)
         self.assertEqual(WORKFLOW.read_text().count("actions: write"), 1)
+
+
+def run_commands(path, job, steps=None):
+    """Shell commands of a job's run steps, in order; optionally only the named steps."""
+    lines = path.read_text().splitlines()
+    start = lines.index(f"  {job}:")
+    end = next((i for i in range(start + 1, len(lines)) if re.fullmatch(r"  [\w-]+:", lines[i])), len(lines))
+    commands, name = [], None
+    for index in range(start + 1, end):
+        line = lines[index]
+        named = re.fullmatch(r"      - name: (.+)", line)
+        if named:
+            name = named.group(1)
+        elif line.startswith("      - "):
+            name = None
+        if steps is not None and name not in steps:
+            continue
+        if line.strip() == "run: |":
+            commands += [l.strip() for l in block(lines, index).splitlines() if l.strip() and not l.strip().startswith("#")]
+        elif line.strip().startswith("run: ") or line.startswith("      - run: "):
+            commands.append(line.split("run: ", 1)[1].strip())
+    return commands
+
+
+class QualityGateParityTests(unittest.TestCase):
+    """Every Catalog quality check, including checks added later, runs in the scan job before its commit and in publication."""
+    CI = ROOT / ".github" / "workflows" / "catalog.yml"
+    PUBLISH = ROOT / "automation" / "publish.yml"
+    SETUP = "python -m pip install --require-hashes -r requirements-dev.txt"
+    # The scan's own build phase runs catalog.py build; the gates then confirm it with build --check.
+    REBUILD = "python scripts/catalog.py build"
+
+    def ci_checks(self):
+        checks = [command for command in run_commands(self.CI, "validate") if command not in {self.SETUP, self.REBUILD}]
+        self.assertIn("python -m unittest discover -s tests -v", checks)
+        return checks
+
+    def test_scan_job_runs_every_catalog_quality_check_before_committing(self):
+        self.assertIn("['scripts/catalog.py','build']", (ROOT / "scripts" / "scan.py").read_text())
+        self.assertEqual(run_commands(WORKFLOW, "scan", {"Check generated data and review boundaries"}), self.ci_checks())
+        order = [line.strip() for line in WORKFLOW.read_text().splitlines() if line.startswith("      - name: ")]
+        self.assertLess(order.index("- name: Check generated data and review boundaries"), order.index("- name: Commit verified scan output"))
+        # A failed check skips the commit: the commit step never runs on always() or failure().
+        commit = WORKFLOW.read_text().split("- name: Commit verified scan output\n", 1)[1].split("\n      - name:", 1)[0]
+        self.assertNotRegex(commit, r"always\(\)|failure\(\)|continue-on-error")
+
+    def test_publication_runs_every_catalog_quality_check_in_order_before_deploying(self):
+        published = run_commands(self.PUBLISH, "build", {"Validate source data and website behavior", "Build website from the verified catalog"})
+        self.assertEqual([check for check in self.ci_checks() if check not in published], [], "publication skips Catalog quality checks")
+        positions = [published.index(check) for check in self.ci_checks()]
+        self.assertEqual(positions, sorted(positions))
 
 
 class ScanCommitStepTests(unittest.TestCase):

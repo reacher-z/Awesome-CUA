@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '47 1,9,17 * * *'
+    # GitHub has started this repository's scheduled runs hours late, so frequent checks bound the wait after a scan.
+    # A check without a new source commit only reads two revisions; it builds, commits and deploys nothing.
+    - cron: '25,55 * * * *'
       timezone: UTC
   workflow_dispatch:
 
@@ -16,7 +18,52 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      publish: ${{ steps.decision.outputs.publish }}
+      source_commit: ${{ steps.decision.outputs.source_commit }}
+    steps:
+      - name: Check out the published revision record
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: main
+          sparse-checkout: data/build-info.json
+          sparse-checkout-cone-mode: false
+          filter: blob:none
+          persist-credentials: false
+      - name: Compare the source catalog head with the published revision
+        id: decision
+        run: |
+          source=$(git ls-remote https://github.com/reacher-z/Awesome-CUA.git refs/heads/main | cut -f1)
+          if ! printf '%s\n' "$source" | grep -Eqx '[0-9a-f]{40}'; then echo '::error::Could not read the source catalog main revision'; exit 1; fi
+          committed=$(jq -r '.source_commit // empty' data/build-info.json 2>/dev/null) || committed=
+          # The snapshot is committed before deployment, so the live record decides and a failed deployment is retried.
+          # This repository's github.io name keeps answering after a custom domain is set: Pages redirects it with its path.
+          live=$(curl -fsSL --max-time 20 "https://${GITHUB_REPOSITORY#*/}/data/build-info.json" | jq -r '.source_commit // empty') || live=
+          # The Pages CDN caches that record for up to 10 minutes whatever the query string, so a fresh snapshot gets 20.
+          age=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          publish=true
+          # Only a scheduled check is skipped: a push or a manual dispatch always rebuilds.
+          if [ "$GITHUB_EVENT_NAME" = schedule ]; then
+            if [ "$live" = "$source" ]; then
+              publish=false
+              echo "::notice title=Nothing new to publish::Source commit $source is already live; build, snapshot commit and deployment are skipped."
+            elif [ "$committed" = "$source" ] && [ -z "$live" ] && [ "$age" -lt 7200 ]; then
+              # An unreadable live site (for example during a DNS change) retries at most once per scan interval.
+              publish=false
+              echo "::warning title=Live site unreadable::Source commit $source is already in the website snapshot, but the live record could not be read; deployment is retried once the snapshot is two hours old."
+            elif [ "$committed" = "$source" ] && [ -n "$live" ] && [ "$age" -lt 1200 ]; then
+              publish=false
+              echo "::notice title=Deployment propagating::Source commit $source was committed $((age / 60)) minutes ago; the live site can still serve its cached previous record."
+            fi
+          fi
+          printf 'publish=%s\nsource_commit=%s\n' "$publish" "$source" >> "$GITHUB_OUTPUT"
+          printf '%s check: source `%s`, live `%s`, committed `%s` (%s s ago), publish: %s\n' "$GITHUB_EVENT_NAME" "$source" "${live:-unreadable}" "${committed:-none}" "$age" "$publish" >> "$GITHUB_STEP_SUMMARY"
   build:
+    needs: gate
+    if: needs.gate.outputs.publish == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     outputs:
@@ -34,7 +81,8 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
           repository: reacher-z/Awesome-CUA
-          ref: main
+          # The revision the gate compared, even if main moves before this checkout; the next check publishes newer commits.
+          ref: ${{ needs.gate.outputs.source_commit }}
           path: .pipeline/source
           persist-credentials: false
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0

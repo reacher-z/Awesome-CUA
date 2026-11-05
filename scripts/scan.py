@@ -139,10 +139,14 @@ def candidate_phase(config):
             or type(phase.get('successful_responses')) is not int or phase['successful_responses']!=successful
             or phase.get('requests_attempted')>reservations or reservations>limits['max_requests']):
         return {**result,'ok':False,'published':False,'error':'Candidate child result differs from its staged state or shared request ledger.'}
+    from scan_github_candidates import settled_unknown_requests
+    settled=settled_unknown_requests(new_receipts,current_run['id'])
+    if phase.get('settled_unknown_requests',0)!=settled:
+        return {**result,'ok':False,'published':False,'error':'Candidate child result differs from its staged settled-answer receipts.'}
     # Derive alerts from the verified counts/status rather than trusting a child's display fields.
-    verified=candidate_stage.phase_summary({**phase,'status':current_run['status'],
+    verified=candidate_stage.phase_summary({**phase,'status':current_run['status'],'settled_unknown_requests':settled,
         'verification':{'successful_receipts_replayed':successful}},phase['started_at'])
-    phase.update({key:verified[key] for key in ('warnings','state','complete')})
+    phase.update({key:verified[key] for key in ('warnings','notices','settled_unknown_requests','state','complete')})
     return {**result,**phase,'baseline_files':baseline.fingerprints,'ready_to_publish':True,
             'network_reservations':reservations}
 
@@ -255,7 +259,8 @@ def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
         validation=phase.get('durable_validation',{})
         if validation.get('ok') is False:
             problems.append('Candidate snapshot integrity: '+(validation.get('error') or 'invalid durable triplet'))
-    failed_sources=[r['id'] for r in source_runs if not r.get('ok')]
+    # A retired source is documented in the registry and no longer fetched, so it is not a gap of this scan.
+    failed_sources=[r['id'] for r in source_runs if not r.get('ok') and r.get('state')!='retired']
     successful_query=lambda r:r.get('state')=='success' and r.get('evidence',{}).get('ok') and not r.get('parse_error')
     failed_queries=[r['id'] for r in hf_runs if not successful_query(r)]
     if failed_sources:problems.append('Discovery sources failed: '+', '.join(failed_sources))
@@ -335,11 +340,12 @@ def run_round(config,budget):
         phases[1].update(ok=False,error='No complete receipt for the current paper-discovery run; previous successes are not reused.')
     status,problems=summarize_phases(phases,source_runs,hf_runs,read_jsonl(DATA/'harvest-failures.jsonl'))
     papers=read_jsonl(DATA/'papers.jsonl');candidates=read_jsonl(DATA/'candidates.jsonl');finished=now()
+    retired_sources=sum(r.get('state')=='retired' for r in source_runs)
     new_papers=[{'id':r['id'],'name':r['name'],'url':r['url'],'review_status':'metadata_verified'} for r in papers if r['id'] not in old_papers]
     report={'id':'scan:'+started,'schema_version':1,'status':status,'started_at':started,'finished_at':finished,'run_url':run_url,
         'schedule':{'timezone':config['timezone'],'times_local':config['scan_times_local']},'before':before,'after':counts(),
         'new_papers':new_papers,'new_candidate_count':sum(r['id'] not in old_candidates for r in candidates),
-        'pending_metadata_changes':len(read_jsonl(DATA/'metadata-updates.jsonl')),'source_fetches':{'successful':sum(bool(r.get('ok')) for r in source_runs) if phases[0]['ok'] else 0,'total':len(source_runs)},
+        'pending_metadata_changes':len(read_jsonl(DATA/'metadata-updates.jsonl')),'source_fetches':{'successful':sum(bool(r.get('ok')) for r in source_runs) if phases[0]['ok'] else 0,'total':len(source_runs)-retired_sources,**({'retired':retired_sources} if retired_sources else {})},
         'paper_searches':{'successful':sum(r.get('state')=='success' for r in hf_runs),'total':hf_report.get('configured_query_count',0) if hf_current else 0,
             'unique_identifiers':hf_report.get('unique_identifiers',0) if hf_current else 0,'new_candidates':hf_report.get('new_candidate_count',0) if hf_current else 0},
         'candidate_observations':{k:v for k,v in candidate.items() if k not in {'name','baseline_files','ready_to_publish'}},
@@ -351,18 +357,25 @@ def run_round(config,budget):
     streak=next((i for i,r in enumerate(reversed(history)) if r.get('status')!='partial'),len(history))
     repeated=streak>=config.get('max_consecutive_partial',float('inf'))
     notes=problems+([f'The last {streak} scans were all partial; the recorded gaps are not clearing on their own.'] if repeated else [])
-    print(summary);print(''.join('- '+n+'\n' for n in notes),end='')
+    # Notices are final answers worth reading (for example renamed candidate repositories); they are not scan gaps.
+    notices=[n for p in phases for n in p.get('notices',[])]
+    print(summary);print(''.join('- '+n+'\n' for n in notes+notices),end='')
     summary_file=os.getenv('GITHUB_STEP_SUMMARY')
     if summary_file:
         # In Actions, annotations put each gap on the run page; a partial scan still exits 0 so its verified data is committed.
         for problem in problems:print(f'::{"error" if status=="failed" else "warning"} title=Scan {status}::'+workflow_message(problem))
         if repeated:print('::error title=Repeated partial scans::'+notes[-1])
+        for notice in notices:print('::notice title=Scan note::'+workflow_message(notice))
         with open(summary_file,'a',encoding='utf-8') as f:
             f.write('## AwesomeCUA scan\n\n'+summary+'\n\n'+f'Scheduled at {", ".join(config["scan_times_local"])} {config["timezone"]}.\n\n')
-            f.write('\n'.join('- '+n for n in notes)+'\n')
-    # scan.yml fails a separate job on this output, after the scan job has committed this run's data.
-    if repeated and os.getenv('GITHUB_OUTPUT'):
-        with open(os.getenv('GITHUB_OUTPUT'),'a',encoding='utf-8') as f:f.write('repeated_partial=true\n')
+            f.write('\n'.join('- '+n for n in notes+notices)+'\n')
+    if os.getenv('GITHUB_OUTPUT'):
+        # The health-tracking job copies the status and recorded gaps into the scan tracking issue.
+        delimiter='SCAN_NOTES_'+os.urandom(8).hex()
+        with open(os.getenv('GITHUB_OUTPUT'),'a',encoding='utf-8') as f:
+            f.write(f'status={status}\nnotes<<{delimiter}\n'+''.join(n.replace('\r',' ').replace('\n',' ')+'\n' for n in notes)+delimiter+'\n')
+            # scan.yml fails a separate job on this output, after the scan job has committed this run's data.
+            if repeated:f.write('repeated_partial=true\n')
     return 1 if status=='failed' else 0
 
 

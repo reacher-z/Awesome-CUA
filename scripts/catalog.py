@@ -10,10 +10,12 @@ import email.utils
 import hashlib
 import html
 import http.client
+import io
 import ipaddress
 import json
 import os
 from pathlib import Path
+import posixpath
 import random
 import re
 import sys
@@ -22,6 +24,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zipfile
+import zlib
 
 from arxiv_metadata import entry_snapshot, consider_paper, parse_search_feed
 from network_budget import BudgetDeferred, budget_from_environment, budgeted_urlopen
@@ -44,7 +48,7 @@ STATUSES = {"curated", "metadata_verified"}
 # The one topic vocabulary: key -> English and Chinese labels and a one-line definition.
 TOPICS = json.loads((DATA / "topics.json").read_text(encoding="utf-8"))
 SHRINK_FLOOR = 0.5  # A successful source response below this share of its retained candidates is held for review.
-REFERENCE_SOURCE = "curated-references"  # Discovery provenance for arXiv papers that curated records cite in data/references.jsonl.
+REFERENCE_SOURCE = "curated-references"  # Discovery provenance for papers, repositories and Hub repositories that curated records cite in data/references.jsonl.
 # MIN_RETRY_DELAY matches the 3.1 s spacing kept between arXiv requests (at most one per 3 s).
 RETRY_STATUSES, MAX_ATTEMPTS, MAX_RETRY_AFTER, MIN_RETRY_DELAY = {429, 500, 502, 503, 504}, 3, 60, 3.1
 
@@ -299,34 +303,210 @@ def editorial_identity(row):
     return canonical(row['url'],allow_doi=isinstance(row.get('kind'),str) and row['kind'] in {'paper','survey'})
 
 
+# Declared discovery-source formats and the optional selection keys each accepts (documented in docs/maintenance.md).
+SOURCE_OPTIONS = {'links': {'sections', 'doi_links'}, 'xlsx_links': {'doi_links'}, 'arxiv_query': set(),
+                  'huggingface_models': {'id_pattern', 'min_likes'}, 'huggingface_datasets': {'id_pattern', 'min_likes'},
+                  'huggingface_collection': set()}
+HUB_REPOSITORY = re.compile(r'[A-Za-z0-9][A-Za-z0-9_.-]*/[A-Za-z0-9][A-Za-z0-9_.-]*', re.A)
+# First path segments of huggingface.co pages that are not a model repository owner.
+HUB_RESERVED = {'api', 'blog', 'changelog', 'chat', 'collections', 'datasets', 'docs', 'enterprise', 'join', 'learn', 'login', 'models',
+                'new', 'organizations', 'papers', 'posts', 'pricing', 'search', 'settings', 'spaces', 'tasks'}
+XLSX_MAX_PARTS, XLSX_MAX_BYTES = 2_000, 50_000_000  # Bounds on a workbook's unpacked parts, checked before any part is read.
+XLSX_NS = {'m': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main',
+           'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships',
+           'p': 'http://schemas.openxmlformats.org/package/2006/relationships'}
+
+
+def source_option_errors(source):
+    """Registry errors for a source's parser and selection keys; an unusable declaration fails before any request."""
+    parser = source.get('parser', 'links')
+    if parser not in SOURCE_OPTIONS:
+        return ['unknown discovery-source parser ' + repr(parser)]
+    errors = [f'{key} is not an option of the {parser} parser' for key in sorted({'sections', 'doi_links', 'id_pattern', 'min_likes'} - SOURCE_OPTIONS[parser]) if key in source]
+    sections = source.get('sections')
+    if 'sections' in source and (not isinstance(sections, list) or not 1 <= len(sections) <= 20 or len(set(sections)) != len(sections)
+                                 or any(not isinstance(s, str) or not s.strip() or len(s) > 140 for s in sections)):
+        errors.append('sections must list 1-20 distinct heading texts of at most 140 characters')
+    if 'doi_links' in source and source['doi_links'] is not True:
+        errors.append('doi_links, when present, must be true')
+    if 'min_likes' in source and (type(source['min_likes']) is not int or source['min_likes'] < 1):
+        errors.append('min_likes must be a positive integer')
+    if 'id_pattern' in source:
+        pattern = source['id_pattern']
+        try:
+            valid = isinstance(pattern, str) and 0 < len(pattern) <= 200 and re.compile(pattern) is not None
+        except re.error:
+            valid = False
+        if not valid:
+            errors.append('id_pattern must be a regular expression of at most 200 characters')
+    return errors
+
+
+def heading_path_links(text, sections):
+    """Links under a heading whose text, or a parent heading's text, contains a declared section name (case-insensitive)."""
+    wanted = [s.casefold() for s in sections]
+    result, path, fence = [], [], None
+    for line_no, line in enumerate(text.splitlines(), 1):
+        marker = re.match(r' {0,3}(`{3,}|~{3,})', line)
+        if marker and (fence is None or marker[1][0] == fence[0] and len(marker[1]) >= len(fence)):
+            fence = marker[1] if fence is None else None  # A '#' line inside a code block is not a heading.
+        elif fence is None and (heading := re.match(r' {0,3}(#{1,6})(?:[ \t]+(.*?))?[ \t#]*$', line)):
+            path = [(level, title) for level, title in path if level < len(heading[1])]
+            path.append((len(heading[1]), re.sub(r'[#*_]', '', heading[2] or '').strip()[:140]))
+        if any(w in title.casefold() for _, title in path for w in wanted):
+            result.extend((line_no, path[-1][1], url) for url in LINK_RE.findall(line))
+    return result
+
+
+def xlsx_links(body):
+    """External hyperlinks, HYPERLINK formulas and URL text in an Office Open XML workbook, located by sheet name and row."""
+    try:
+        book = zipfile.ZipFile(io.BytesIO(body))
+    except zipfile.BadZipFile as error:
+        raise ValueError('Spreadsheet source is not an Office Open XML workbook') from error
+    with book:
+        parts = {info.filename: info for info in book.infolist()}
+        if len(parts) > XLSX_MAX_PARTS or sum(info.file_size for info in parts.values()) > XLSX_MAX_BYTES:
+            raise ValueError('Spreadsheet exceeds its unpacked part budget')
+        def part(name):
+            if name not in parts:
+                raise ValueError('Spreadsheet part is missing: ' + name)
+            try:
+                data = book.read(name)
+            except (zipfile.BadZipFile, zlib.error, EOFError, NotImplementedError, RuntimeError) as error:
+                raise ValueError(f'Spreadsheet part {name} cannot be unpacked: {error}') from error
+            return ET.fromstring(data)
+        def relationships(name):
+            folder, _, base = name.rpartition('/')
+            path = f'{folder}/_rels/{base}.rels'
+            return {r.get('Id'): (r.get('Target') or '', r.get('TargetMode')) for r in part(path).findall('p:Relationship', XLSX_NS)} if path in parts else {}
+        text_of = lambda node: ''.join(t.text or '' for t in node.iter('{%s}t' % XLSX_NS['m']))
+        shared = [text_of(item) for item in part('xl/sharedStrings.xml').findall('m:si', XLSX_NS)] if 'xl/sharedStrings.xml' in parts else []
+        targets = relationships('xl/workbook.xml')
+        result = []
+        for sheet in part('xl/workbook.xml').iterfind('m:sheets/m:sheet', XLSX_NS):
+            name = ' '.join((sheet.get('name') or '').split())[:140]
+            target, _ = targets.get(sheet.get('{%s}id' % XLSX_NS['r']), ('', None))
+            path = posixpath.normpath(target[1:] if target.startswith('/') else posixpath.join('xl', target))
+            if not path.startswith('xl/') or not path.endswith('.xml'):
+                raise ValueError('Spreadsheet sheet part is outside the workbook: ' + target)
+            root, external = part(path), relationships(path)
+            found = []
+            for row in root.iterfind('m:sheetData/m:row', XLSX_NS):
+                number = int(row.get('r')) if (row.get('r') or '').isdigit() else None
+                for cell in row.iterfind('m:c', XLSX_NS):
+                    value, formula = cell.find('m:v', XLSX_NS), cell.find('m:f', XLSX_NS)
+                    texts = [formula.text or '' if formula is not None else '', text_of(cell) if cell.get('t') == 'inlineStr' else '']
+                    if value is not None and value.text:
+                        index = value.text.strip()
+                        texts.append(shared[int(index)] if cell.get('t') == 's' and index.isdigit() and int(index) < len(shared) else value.text)
+                    found.extend((number, name, url) for text in texts for url in LINK_RE.findall(text))
+            for link in root.iterfind('m:hyperlinks/m:hyperlink', XLSX_NS):
+                url, mode = external.get(link.get('{%s}id' % XLSX_NS['r']), ('', None))
+                cell = re.match(r'[A-Z]{1,3}(\d+)', link.get('ref') or '')
+                if mode == 'External' and LINK_RE.fullmatch(url):
+                    found.append((int(cell[1]) if cell else None, name, url))
+            result.extend(sorted(found, key=lambda item: (item[0] is None, item[0] or 0)))
+        return result
+
+
+def hub_index_links(source, body, kind):
+    """A bounded Hub models or datasets listing, by publisher and/or search term; an index is not a relevance decision."""
+    label = {'models': 'Model', 'datasets': 'Dataset'}[kind]
+    url = urllib.parse.urlsplit(source['url'])
+    params = urllib.parse.parse_qs(url.query, keep_blank_values=True)
+    if url.scheme != 'https' or url.hostname != 'huggingface.co' or url.port is not None or url.path != '/api/' + kind or url.fragment:
+        raise ValueError(f'{label}-index source must be the official Hugging Face {kind} API')
+    author, search, limit = (params.get(key, [''])[0] for key in ('author', 'search', 'limit'))
+    if (set(params) - {'author', 'search', 'limit', 'sort', 'direction'} or any(len(values) != 1 for values in params.values())
+            or author and not re.fullmatch(r'[A-Za-z0-9_.-]+', author) or search and not re.fullmatch(r'[A-Za-z0-9 _.-]{1,60}', search)
+            or not (author or search) or not limit.isdigit() or not 1 <= int(limit) <= 100):
+        raise ValueError(f'{label}-index source requires one publisher or search term and a limit of 1..100')
+    payload = json.loads(body)
+    if not isinstance(payload, list) or len(payload) > int(limit):
+        raise ValueError(f'{label}-index response exceeds its declared window or is not a list')
+    noun = kind[:-1]
+    section = (f'Publisher {noun} index; relevance and variant identity await review' if not search
+               else f'Hub {noun} search "{search}"' + (f' by {author}' if author else '') + '; relevance awaits review')
+    pattern, floor, result = source.get('id_pattern'), source.get('min_likes'), []
+    for item in payload:
+        identity = item.get('id') if isinstance(item, dict) else None
+        if not isinstance(identity, str) or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', identity):
+            raise ValueError(f'{label}-index entry has an invalid repository identifier')
+        if author and identity.split('/')[0].casefold() != author.casefold():
+            raise ValueError(f'{label}-index entry is outside the declared publisher')
+        if floor is not None and (type(item.get('likes')) is not int or item['likes'] < 0):
+            raise ValueError(f'{label}-index entry has no like count for its declared floor')
+        if pattern and not re.search(pattern, identity) or floor is not None and item['likes'] < floor:
+            continue
+        result.append((None, section, 'https://huggingface.co/' + ('datasets/' if kind == 'datasets' else '') + identity))
+    return result
+
+
+def hub_collection_links(source, body):
+    """Models, datasets, Spaces and papers in one public Hub collection; curators' collections are discovery input only."""
+    url = urllib.parse.urlsplit(source['url'])
+    path = re.fullmatch(r'/api/collections/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', url.path)
+    if url.scheme != 'https' or url.hostname != 'huggingface.co' or url.port is not None or not path or url.query or url.fragment:
+        raise ValueError('Collection source must be one official Hugging Face collection API path')
+    payload = json.loads(body)
+    if not isinstance(payload, dict) or not isinstance(payload.get('items'), list) or str(payload.get('slug', '')).casefold() != path[1].casefold():
+        raise ValueError('Collection response is not the declared collection')
+    pages = {'model': 'https://huggingface.co/', 'dataset': 'https://huggingface.co/datasets/', 'space': 'https://huggingface.co/spaces/',
+             'paper': 'https://huggingface.co/papers/'}
+    result = []
+    for item in payload['items']:
+        kind, identity = (item.get('type'), item.get('id')) if isinstance(item, dict) else (None, None)
+        if kind == 'collection':
+            continue  # A nested collection is another curator's list, not a resource.
+        if kind not in pages or not isinstance(identity, str) or not (
+                re.fullmatch(r'\d{4}\.\d{4,5}', identity) if kind == 'paper' else HUB_REPOSITORY.fullmatch(identity)):
+            raise ValueError('Collection item has an unsupported type or identifier')
+        result.append((None, f'Hub collection {path[1]}; relevance awaits review', pages[kind] + identity))
+    return result
+
+
+def arxiv_query_links(source, body):
+    """Entries of one bounded arXiv API query; the query is a discovery population, not a relevance decision."""
+    url = urllib.parse.urlsplit(source['url'])
+    params = urllib.parse.parse_qs(url.query, keep_blank_values=True)
+    limit = params.get('max_results', [''])[0]
+    if (url.scheme != 'https' or url.hostname != 'export.arxiv.org' or url.port is not None or url.path != '/api/query' or url.fragment
+            or set(params) - {'search_query', 'start', 'max_results', 'sortBy', 'sortOrder'} or any(len(v) != 1 for v in params.values())
+            or not params.get('search_query', [''])[0].strip() or params.get('start', ['0'])[0] != '0'
+            or not limit.isdigit() or not 1 <= int(limit) <= 2000):
+        raise ValueError('arXiv query source must be one export.arxiv.org API query starting at 0 with max_results of 1..2000')
+    entries, _ = parse_search_feed(body, None, int(limit))
+    result = []
+    for entry in entries:
+        parsed = canonical(entry.findtext('{http://www.w3.org/2005/Atom}id', ''))
+        # Pre-2007 identifiers such as cs/0208008 have no catalog identity, as in harvest and search-arxiv.
+        if parsed and parsed[2] == 'arxiv':
+            result.append((None, 'arXiv API query; relevance awaits review', parsed[1]))
+    return result
+
+
 def source_links(source, body):
     """Parse only declared source formats; provider metadata remains a candidate."""
     parser = source.get('parser', 'links')
-    if parser == 'huggingface_models':
-        url = urllib.parse.urlsplit(source['url'])
-        params = urllib.parse.parse_qs(url.query)
-        if url.scheme != 'https' or url.hostname != 'huggingface.co' or url.path != '/api/models':
-            raise ValueError('Model-index source must be the official Hugging Face models API')
-        author = params.get('author', [''])[0]
-        limit = params.get('limit', [''])[0]
-        if not re.fullmatch(r'[A-Za-z0-9_.-]+', author) or not limit.isdigit() or not 1 <= int(limit) <= 100:
-            raise ValueError('Model-index source requires one publisher and a limit of 1..100')
-        payload = json.loads(body)
-        if not isinstance(payload, list) or len(payload) > int(limit):
-            raise ValueError('Model-index response exceeds its declared window or is not a list')
-        result = []
-        for item in payload:
-            identity = item.get('id') if isinstance(item, dict) else None
-            if not isinstance(identity, str) or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', identity):
-                raise ValueError('Model-index entry has an invalid repository identifier')
-            if identity.split('/')[0].casefold() != author.casefold():
-                raise ValueError('Model-index entry is outside the declared publisher')
-            result.append((None, 'Publisher model index; relevance and variant identity await review', 'https://huggingface.co/' + identity))
-        return result
-    if parser != 'links':
-        raise ValueError('Unknown discovery source parser: ' + str(parser))
+    if errors := source_option_errors(source):
+        raise ValueError('Invalid discovery source: ' + '; '.join(errors))
+    try:
+        if parser in {'huggingface_models', 'huggingface_datasets'}:
+            return hub_index_links(source, body, parser.split('_', 1)[1])
+        if parser == 'huggingface_collection':
+            return hub_collection_links(source, body)
+        if parser == 'arxiv_query':
+            return arxiv_query_links(source, body)
+        if parser == 'xlsx_links':
+            return xlsx_links(body)
+    except ET.ParseError as error:  # A SyntaxError subclass: report it like any other malformed response.
+        raise ValueError('Source response is not well-formed XML: ' + str(error)) from error
+    text = body.decode('utf-8', errors='replace')
+    if 'sections' in source:
+        return heading_path_links(text, source['sections'])
     result, heading = [], ''
-    for line_no, line in enumerate(body.decode('utf-8', errors='replace').splitlines(), 1):
+    for line_no, line in enumerate(text.splitlines(), 1):
         if line.startswith('#'):
             heading = re.sub(r'[#*_]', '', line).strip()[:140]
         result.extend((line_no, heading, url) for url in LINK_RE.findall(line))
@@ -359,8 +539,10 @@ def retain_discovery_evidence(rows, previous_runs):
 
 
 def reconcile_candidates(rows):
-    """Apply the current URL rules to stored candidates: a row whose URL they now clean merges into that URL's identity; one they reject is dropped."""
-    parsed = [(row, canonical(row["url"])) for row in rows]
+    """Apply the current URL rules to stored candidates: a row whose URL they now clean merges into that URL's identity; one they reject is dropped.
+
+    A DOI resolver URL is kept here: only a source that declares doi_links can have discovered it."""
+    parsed = [(row, canonical(row["url"], allow_doi=True)) for row in rows]
     result = {row["id"]: row for row, identity in parsed if identity and identity[1] == row["url"]}
     for row, identity in parsed:
         if identity and identity[1] != row["url"]:
@@ -371,24 +553,43 @@ def reconcile_candidates(rows):
     return result
 
 
+def reference_target(edge):
+    """The discovery identity of a mention: an arXiv paper, a GitHub repository, or a Hub model or dataset page.
+
+    Other mentions (Spaces, collections, organization, documentation and blog pages) are not promoted."""
+    if edge["target_id"].startswith("arxiv:"):
+        return edge["target_id"], "https://arxiv.org/abs/" + edge["target_id"].split(":", 1)[1], "arxiv"
+    parsed = canonical(edge.get("target_url") or "")
+    if not parsed or parsed[0] != edge["target_id"]:
+        return None
+    if parsed[2] == "github":
+        return parsed
+    page = re.fullmatch(r"https://huggingface\.co/(datasets/)?([^/]+/[^/]+)", parsed[1])
+    if page and HUB_REPOSITORY.fullmatch(page[2]) and (page[1] or page[2].split("/")[0].casefold() not in HUB_RESERVED):
+        return parsed
+    return None
+
+
 def reference_candidates(rows):
-    """Add arXiv papers cited by curated records to the discovery population: harvest verifies their metadata, never their relevance."""
+    """Add papers, repositories and Hub models or datasets cited by curated records to the discovery population.
+
+    harvest verifies the papers' metadata; nothing here establishes relevance."""
     curated = {r["id"] for r in read_jsonl(DATA / "catalog.jsonl") if r["review_status"] == "curated"}
-    refs = sorted((e for e in read_jsonl(DATA / "references.jsonl") if e["relation"] == "mentions" and e["source_id"] in curated
-                   and e["target_id"].startswith("arxiv:")), key=lambda e: (e["target_id"], e["source_id"]))
+    refs = sorted(((e, target) for e in read_jsonl(DATA / "references.jsonl") if e["relation"] == "mentions" and e["source_id"] in curated
+                   and (target := reference_target(e))), key=lambda item: (item[1][0], item[0]["source_id"]))
     first = {}
-    for e in refs:
-        first[e["target_id"]] = min(first.get(e["target_id"], e["retrieved_at"]), e["retrieved_at"])
-    # Like a source refresh, the current references replace the old ones; an uncited paper stays a historical candidate.
+    for e, (rid, _, _) in refs:
+        first[rid] = min(first.get(rid, e["retrieved_at"]), e["retrieved_at"])
+    # Like a source refresh, the current references replace the old ones; an uncited target stays a historical candidate.
     for row in rows.values():
         row["discovered_in"] = [o for o in row["discovered_in"] if o["source_id"] != REFERENCE_SOURCE]
-    for e in refs:
-        rid = e["target_id"]
-        row = rows.setdefault(rid, {"id": rid, "url": "https://arxiv.org/abs/" + rid.split(":", 1)[1], "provider": "arxiv",
-            "first_discovered_at": first[rid], "discovered_in": []})
+    for e, (rid, url, provider) in refs:
+        row = rows.setdefault(rid, {"id": rid, "url": url, "provider": provider, "first_discovered_at": first[rid], "discovered_in": []})
         row["discovered_in"].append(discovery_occurrence(REFERENCE_SOURCE, {"url": e["source_url"], "sha256": e["source_sha256"],
             "retrieved_at": e["retrieved_at"]}, section=f"Cited by {e['source_id']}; relevance awaits review"))
-    print(f"{REFERENCE_SOURCE}: {len(refs)} citations of {len(first)} arXiv identifiers", flush=True)
+    kinds = Counter(rid.split(":", 1)[0] for rid in first)
+    print(f"{REFERENCE_SOURCE}: {len(refs)} citations of {len(first)} identifiers "
+          f"({kinds['arxiv']} arXiv, {kinds['github']} GitHub, {kinds['url']} Hub)", flush=True)
 
 
 def discover(args):
@@ -435,7 +636,8 @@ def discover(args):
             continue
         seen, found = set(), []
         for line_no, heading, url in links:
-            parsed = canonical(url)
+            # A bibliography source can opt in to DOI resolver links; elsewhere an incidental DOI stays ignored.
+            parsed = canonical(url, allow_doi=source.get('doi_links') is True)
             if not parsed:
                 continue
             rid, clean, provider = parsed

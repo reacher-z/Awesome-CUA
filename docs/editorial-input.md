@@ -14,7 +14,7 @@ Otherwise the entry stays in `data/review-queue.jsonl` and the coverage ledger. 
 
 ## Resource ID
 
-The ID is `id` when given, otherwise the first value of `editorial_identity(entry)` in `scripts/catalog.py`. That is `canonical(url)`, except that `paper` and `survey` entries may also use an HTTPS `doi.org` URL: the DOI is case-folded into `https://doi.org/<doi>` and receives a `url:` ID. Other kinds reject bare DOI links, as discovery does. The same ID keys the entry's receipt in `primary-evidence.jsonl`, its row in `enrichment.jsonl`, and the published record, so changing `url` or `id` requires `verify` and another review.
+The ID is `id` when given, otherwise the first value of `editorial_identity(entry)` in `scripts/catalog.py`. That is `canonical(url)`, except that `paper` and `survey` entries may also use an HTTPS `doi.org` URL: the DOI is case-folded into `https://doi.org/<doi>` and receives a `url:` ID. Other kinds reject bare DOI links, as discovery does for a source that does not declare `doi_links`. The same ID keys the entry's receipt in `primary-evidence.jsonl`, its row in `enrichment.jsonl`, and the published record, so changing `url` or `id` requires `verify` and another review.
 
 ```bash
 python3 -c "import sys; sys.path.insert(0,'scripts'); from catalog import editorial_identity; print(editorial_identity({'url': 'https://github.com/xlang-ai/OSWorld/tree/main', 'kind': 'benchmark'})[0])"

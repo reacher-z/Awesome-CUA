@@ -517,5 +517,52 @@
     "decision": "alias",
     "target_id": "github:ai-secure/advagent",
     "reason": "Project website for the indexed AdvWeb / AdvAgent repository."
+  },
+  {
+    "url_prefix": "https://info.arxiv.org",
+    "decision": "not_a_resource",
+    "reason": "arXiv help, policy and organization pages linked from the chrome of arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "url_prefix": "https://static.arxiv.org",
+    "decision": "not_a_resource",
+    "reason": "Stylesheet and script assets of arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "url_prefix": "https://status.arxiv.org",
+    "decision": "not_a_resource",
+    "reason": "arXiv service status page in the footer of arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "url_prefix": "https://use.typekit.net",
+    "decision": "not_a_resource",
+    "reason": "Web-font stylesheet loaded by arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "url_prefix": "https://fontawesome.com",
+    "decision": "not_a_resource",
+    "reason": "Icon-font credit and license in the footer of arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "url_prefix": "https://dlmf.nist.gov/LaTeXML",
+    "decision": "not_a_resource",
+    "reason": "LaTeXML converter credit in arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "url_prefix": "https://math.nist.gov/~BMiller/LaTeXML",
+    "decision": "not_a_resource",
+    "reason": "LaTeXML author page credited in arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "id": "url:f7a436a39e7146ed448c",
+    "url": "https://arxiv.org",
+    "decision": "not_a_resource",
+    "reason": "arXiv home page linked from the header of arXiv HTML paper pages; not a cited resource."
+  },
+  {
+    "id": "url:a0156761ea49fe5749a0",
+    "url": "https://arxiv.org/IgnoreMe",
+    "decision": "not_a_resource",
+    "reason": "Placeholder link in the header markup of arXiv HTML paper pages; not a resource."
   }
 ]

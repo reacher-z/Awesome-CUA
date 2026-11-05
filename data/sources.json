@@ -940,6 +940,7 @@
       "Browser Agents",
       "Mobile Agents",
       "Vision and Grounding",
+      "Screen Capture and Recording",
       "Desktop Automation Libraries",
       "RPA Tools",
       "MCP Servers for Desktop",
@@ -954,7 +955,7 @@
       "Research Papers",
       "The Leaderboard"
     ],
-    "rationale": "Screen capture, OCR, agent memory and orchestration, IDE agents and related lists are not computer-use resources.",
+    "rationale": "OCR, agent memory and orchestration, IDE agents and related lists are not computer-use resources. Screen capture and recording is read because those tools give agents screen context and some also operate the GUI.",
     "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
   },
   {
@@ -1522,6 +1523,34 @@
       "research"
     ],
     "rationale": "Semantic Scholar reference lists cite these papers: arXiv 2508.04482, the OS Agents survey, cites 1812.09195, 1902.07257 and 2106.00133 (graph/v1 references response SHA-256 36a8acc7358ff284cc227b93ca186a392e7ca38c6f63191272465a410d45be5b), and arXiv 2604.27955, the RL GUI agents survey, cites 2602.06485 (SHA-256 3fce6c09be42e313a7f0fa9bd16fd66854ab4ee95df1a264002ec83f17eda609); both retrieved 2026-11-05 18:31 UTC. No registered source lists them. The unauthenticated Semantic Scholar API rate-limits repeated requests, so the scheduled scan queries the cited arXiv identifiers directly.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "id": "efficient-gui-survey-references",
+    "name": "Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography",
+    "url": "https://arxiv.org/html/2609.02309",
+    "homepage": "https://arxiv.org/abs/2609.02309",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "survey-bibliography"
+    ],
+    "doi_links": true,
+    "rationale": "The arXiv HTML rendering links the survey's references, including OpenReview-only submissions that Semantic Scholar lists by title alone. Page-chrome links of arXiv HTML are set aside in data/candidate-reviews.json.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "id": "gui-agents-survey-references",
+    "name": "GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography",
+    "url": "https://arxiv.org/html/2412.13501",
+    "homepage": "https://arxiv.org/abs/2412.13501",
+    "role": "discovery",
+    "scope": [
+      "research",
+      "survey-bibliography"
+    ],
+    "doi_links": true,
+    "rationale": "The arXiv HTML rendering links the references of the survey, including UI-Pro, an OpenReview-only submission that Semantic Scholar lists by title alone. Page-chrome links of arXiv HTML are set aside in data/candidate-reviews.json.",
     "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
   }
 ]

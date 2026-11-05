@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-05T21:14:44Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-05T22:51:37Z**. Generated from committed source receipts.
 
-- 3,636 resource records: 1,674 curated; 1,962 bibliographic metadata only.
-- 3,164 paper and survey records, including 3,151 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 3,292 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
-- 5,788 discovery identifiers; 1,920 remain unresolved after accounting for scope exclusions and for 107 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 48 editorial proposals await verification or review.
+- 3,653 resource records: 1,674 curated; 1,979 bibliographic metadata only.
+- 3,181 paper and survey records, including 3,167 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
+- 3,308 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
+- 5,875 discovery identifiers; 1,967 remain unresolved after accounting for scope exclusions and for 129 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 49 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -93,7 +93,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 245 | 198 | 1 | 0 | 88 | OK · 2026-11-05 |
 | [ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections](https://github.com/showlab/Awesome-Multimodal-Embodied-Agent) | 221 | 127 | 72 | 0 | 6 | 88 | OK · 2026-11-05 |
 | [Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | 205 | 198 | 135 | 0 | 2 | 5 | OK · 2026-11-05 |
-| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 116 | 43 | 43 | 0 | 0 | 73 | OK · 2026-11-05 |
+| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 120 | 43 | 43 | 0 | 0 | 77 | OK · 2026-11-05 |
 | [Agent-Tools/awesome-autonomous-web — browser-agent sections](https://github.com/Agent-Tools/awesome-autonomous-web) | 45 | 13 | 13 | 0 | 0 | 32 | OK · 2026-11-05 |
 | [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 7 | 7 | 0 | 0 | 37 | OK · 2026-11-05 |
 | [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 84 | 81 | 0 | 11 | 26 | OK · 2026-11-05 |
@@ -136,6 +136,8 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-05 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-05 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 0 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 73 | 67 | 0 | 22 | 27 | OK · 2026-11-05 |
+| [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 74 | 53 | 0 | 22 | 21 | OK · 2026-11-05 |
 
 ## Paper-discovery query coverage
 
@@ -199,7 +201,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-48 proposals: 5 with unresolved primary evidence, 15 whose current source snapshot awaits review, 28 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+49 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 28 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -251,6 +253,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [RobinHeZtto/Open-AutoGLM-Android](https://github.com/RobinHeZtto/Open-AutoGLM-Android) | current source snapshot needs editorial review |
 | [nitic-nlp-team/webnavix](https://github.com/nitic-nlp-team/webnavix) | current source snapshot needs editorial review |
 | [Nimra-Fayaz/AI-Powered-Navigation](https://github.com/Nimra-Fayaz/AI-Powered-Navigation) | current source snapshot needs editorial review |
+| [Aomni](https://www.aomni.com) | current source snapshot needs editorial review |
 
 ## Uncurated papers behind curated resources
 

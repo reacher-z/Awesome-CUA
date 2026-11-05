@@ -67003,5 +67003,15 @@
     ],
     "review_note": "Tagged `web-navigation` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 8 of 31 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
     "editorial_reviewed": false
+  },
+  {
+    "name": "Aomni",
+    "kind": "product",
+    "url": "https://www.aomni.com",
+    "environments": [
+      "web"
+    ],
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 3160, retrieved 2026-11-05) as a research agent whose tools include a full web browser, which would make it an adjacent web research agent. On 2026-11-05 www.aomni.com redirected to heybento.ai; identity, availability and scope await editorial review.",
+    "editorial_reviewed": false
   }
 ]

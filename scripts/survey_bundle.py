@@ -5,6 +5,7 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 from urllib.parse import unquote, urljoin, urlsplit
+from site_config import FORMER_SITES
 
 PAGE = '/survey/'
 MANIFEST = 'build-manifest.json'
@@ -66,10 +67,16 @@ def checked_path(root, relative):
     return current
 
 
+def survey_locations(site_url):
+    """The page on the current origin, or on a former origin until the reviewed bundle is rebuilt."""
+    # A tuple compares by equality, so a malformed unhashable manifest value still fails as ValueError below.
+    return tuple(origin.rstrip('/') + PAGE for origin in (site_url, *FORMER_SITES))
+
+
 def file_entries(manifest, site_url):
     if (not isinstance(manifest, dict) or type(manifest.get('schema_version')) is not int
             or manifest['schema_version'] != 1
-            or manifest.get('canonical_location_intended') != site_url.rstrip('/') + PAGE
+            or manifest.get('canonical_location_intended') not in survey_locations(site_url)
             or not re.fullmatch(r'[0-9a-f]{40}', str(manifest.get('source_commit_for_inventory', '')))
             or not re.fullmatch(r'[0-9a-f]{64}', str(manifest.get('catalog_sha256', '')))):
         raise ValueError('Invalid survey manifest identity or version')
@@ -146,12 +153,13 @@ def load_bundle(directory, *, source_root, site_url):
     metadata = PageMetadata()
     metadata.feed(payloads['index.html'].decode('utf-8'))
     robots = {part.strip().lower() for value in metadata.robots for part in value.split(',')}
-    if (metadata.canonical != [site_url.rstrip('/') + PAGE] or metadata.headings != 1
+    location = manifest['canonical_location_intended']
+    if (metadata.canonical != [location] or metadata.headings != 1
             or metadata.language != 'en' or len(metadata.robots) != 1
             or not {'index', 'follow'} <= robots or 'noindex' in robots):
         raise ValueError('Survey HTML needs its canonical URL, English language, one H1 and indexable robots metadata')
     payloads[MANIFEST] = raw_manifest
-    origin = urlsplit(site_url)
+    origin = urlsplit(location)
     for href in metadata.links:
         parsed = urlsplit(href)
         if parsed.scheme or parsed.netloc:

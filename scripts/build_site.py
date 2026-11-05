@@ -12,7 +12,8 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from build import validate_records, write_sqlite
 from catalog import TOPICS
-from search_pages import build_search_pages, resource_path, SITE
+from search_pages import build_search_pages, resource_path
+from site_config import HOST, SITE
 from export_rag import build_exports
 from export_citations import build_citation_exports
 from export_candidates import copy_public_candidates, SCHEMAS as CANDIDATE_SCHEMAS
@@ -124,6 +125,8 @@ def write_site(destination):
         if (ROOT/'data'/name).exists():shutil.copy2(ROOT/'data'/name,destination/'downloads'/name)
     shutil.copy2(ROOT/'LICENSE',destination/'LICENSE')
     (destination/'.nojekyll').write_text('',encoding='utf-8')
+    # Actions deployments take the custom domain from the Pages settings; the file keeps it with the snapshot and for branch publishing.
+    (destination/'CNAME').write_text(HOST+'\n',encoding='utf-8')
     manifest=build_search_pages(destination,rows,coverage,ROOT,survey_page=survey_page)
     reconcile_generated_pages(destination,manifest)
     return manifest,len(rows)

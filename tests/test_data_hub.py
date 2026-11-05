@@ -18,6 +18,7 @@ from build import write_sqlite
 from data_hub import build_download_manifest, data_hub_body
 from export_citations import build_citation_exports, encode_citations
 from export_rag import build_exports, encode_documents
+from site_config import SITE
 
 
 def record(aid, status='curated'):
@@ -234,7 +235,7 @@ class DataHubTests(unittest.TestCase):
                 self.assertIn('git clone https://github.com/reacher-z/Awesome-CUA.git', values)
                 for item in manifest['artifacts']:
                     self.assertIn(item['path'], links)
-                    self.assertIn('https://awesomecua.github.io' + item['path'], values)
+                    self.assertIn(SITE + item['path'], values)
                     self.assertIn(item['sha256'], values)
                 self.assertIn(manifest['catalog_sha256'], values)
                 self.assertTrue(any(tag == 'input' and attrs.get('id') == 'data-copy-value'

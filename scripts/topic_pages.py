@@ -11,6 +11,7 @@ from urllib.parse import urlencode
 from export_citations import encode_citations
 from paper_library import PAGE_SIZE, PLATFORMS, TOPICS
 from publication_metadata import record_date_text
+from site_config import SITE
 
 
 GROUPS = (
@@ -129,7 +130,7 @@ def reconcile_topic_exports(destination, topic_ids):
                     (folder / name).unlink(missing_ok=True)
 
 
-def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.github.io'):
+def topic_index_body(manifest, *, language='en', site_url=SITE):
     zh = language == 'zh'
     def tr(en, cn): return cn if zh else en
     entries = sorted(manifest['topics'], key=lambda item: (-item['counts']['total'], item['id']))
@@ -176,7 +177,7 @@ def ordered_groups(rows):
             yield slug, labels, selected
 
 
-def topic_body(topic, rows, resource_path, *, language='en', site_url='https://awesomecua.github.io', number=1):
+def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, number=1):
     """Return one topic page's HTML and an ItemList describing exactly its visible resources."""
     zh = language == 'zh'
     def tr(en, cn): return cn if zh else en
@@ -252,7 +253,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
     return ''.join(body), schema
 
 
-def topic_markdown(topic, rows, resource_path, *, language='en', site_url='https://awesomecua.github.io'):
+def topic_markdown(topic, rows, resource_path, *, language='en', site_url=SITE):
     lines = ['# ' + topic_name(topic, language), '',
              'Reviewed topic membership; resources can appear in multiple topics. Shared membership is not a dependency claim.', '',
              f'Full source records: {site_url}/downloads/topics/{topic}/records.jsonl', '']

@@ -81,7 +81,15 @@ def submit_changes(*, site_dir, config_path, state_path, receipts_path, submit=F
     sitemap = [entry.text for entry in ET.parse(site_dir / 'sitemap.xml').findall('s:url/s:loc', namespace)]
     if len(sitemap) != len(set(sitemap)) or set(sitemap) != {site + path for path in current}:
         raise ValueError('Sitemap and indexable manifest disagree')
+    former_sites = config.get('former_site_urls', [])
+    if not isinstance(former_sites, list) or not all(isinstance(url, str) for url in former_sites):
+        raise ValueError('Former site origins must be a list of URLs')
     previous_state = read_json(state_path, {})
+    replaced_site = None
+    if previous_state and previous_state.get('schema_version') == 1 and isinstance(previous_state.get('site'), str) \
+            and previous_state['site'] != site and previous_state['site'] in {url.rstrip('/') for url in former_sites}:
+        # IndexNow state is per host: pages accepted for a former origin were never submitted for this one.
+        replaced_site, previous_state = previous_state['site'], {}
     if previous_state and (previous_state.get('schema_version') != 1 or previous_state.get('site') != site):
         raise ValueError('Accepted-state identity does not match this site')
     previous = previous_state.get('accepted_pages', {})
@@ -103,6 +111,8 @@ def submit_changes(*, site_dir, config_path, state_path, receipts_path, submit=F
         'source_commit': build_info.get('source_commit'), 'publication_run': build_info.get('publication_run'),
         'meaning': 'Planned changes only; no request sent.',
     }
+    if replaced_site:
+        receipt['replaces_accepted_state_for'] = replaced_site
     if not submit:
         return receipt
     if not urls:

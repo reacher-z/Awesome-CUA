@@ -9,6 +9,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from topic_pages import reviewed_topics, topic_body, topic_counts, topic_index_body, topic_markdown, topic_path, write_topic_exports
 from search_pages import resource_path
+from site_config import SITE
 from test_paper_library import LibraryParser
 from test_resource_payloads import paper
 
@@ -65,7 +66,7 @@ class TopicPagesTests(unittest.TestCase):
             self.assertEqual(len(parsed.records), 2)
             self.assertEqual(schema['numberOfItems'], len(parsed.records))
             self.assertEqual([i['url'] for i in schema['itemListElement']],
-                             ['https://awesomecua.github.io' + resource_path({'id': rid}) for rid in parsed.records])
+                             [SITE + resource_path({'id': rid}) for rid in parsed.records])
             for link in parsed.links:
                 if link.startswith('#') and link != '#content':
                     self.assertIn(link[1:], parsed.ids)

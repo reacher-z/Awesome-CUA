@@ -29,7 +29,7 @@ Discovery searches are ranked, bounded windows. Their provenance is saved in `da
 
 ## Submit and measure
 
-Google Search Console is the authority for property verification, sitemap processing, URL inspection, and actual indexing. After deploying the tested build, submit `https://awesomecua.github.io/sitemap.xml` and inspect the homepage and a representative resource page. A submission-success message is not an indexing confirmation.
+Google Search Console is the authority for property verification, sitemap processing, URL inspection, and actual indexing. After deploying the tested build, submit `https://awesomecua.com/sitemap.xml` to a property for `awesomecua.com` and inspect the homepage and a representative resource page. The verified `awesomecua.github.io` property now only reports the redirects to the canonical domain. A submission-success message is not an indexing confirmation.
 
 IndexNow is a separate notification channel for participating engines, not a Google submission endpoint:
 
@@ -41,7 +41,7 @@ python3 scripts/submit_indexnow.py --state .cache/github-pages-publish/.indexnow
 # Add --submit only after the exact tested build is live.
 ```
 
-The script compares page-content hashes with the last accepted state. It submits new or changed indexable pages and previously accepted pages that were removed or changed to `noindex`. Newly discovered metadata-only pages are excluded. An unchanged build sends no network request. Before any submission it verifies the public key file, the exact live search manifest, and agreement between the local sitemap and indexable pages.
+The script compares page-content hashes with the last accepted state. It submits new or changed indexable pages and previously accepted pages that were removed or changed to `noindex`. Newly discovered metadata-only pages are excluded. An unchanged build sends no network request. IndexNow state is per host: after the configured `site_url` moves, accepted state recorded for an origin listed in `former_site_urls` is set aside and every indexable page is submitted for the new host. Before any submission it verifies the public key file, the exact live search manifest, and agreement between the local sitemap and indexable pages.
 
 The website publication workflow runs this notification only after successful deployment, using the exact source revision that built the site. The website repository keeps `.indexnow/state.json` and the most recent 180 outcomes in `.indexnow/submissions.json`. Only HTTP 200 advances accepted page hashes; failed requests and HTTP 202 leave changes pending for the next publication. Search-notification failure does not undo the already deployed website. Local manual receipts default to `data/search-submissions.json`.
 

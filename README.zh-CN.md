@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://awesomecua.github.io/">
+  <a href="https://awesomecua.com/">
     <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="220">
   </a>
 </p>
@@ -17,11 +17,11 @@
 | [**WebsiteBench**](https://github.com/TIGER-AI-Lab/WebsiteBench) | 通过浏览器探索，重建完整的网站前后端。 |
 | [**ClawBench**](https://github.com/TIGER-AI-Lab/ClawBench) | 评测浏览器智能体完成日常线上任务的能力。 |
 
-<a href="https://awesomecua.github.io/?lang=zh"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></a>
+<a href="https://awesomecua.com/?lang=zh"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></a>
 
-**[搜索与筛选](https://awesomecua.github.io/?lang=zh)** · **[研究论文](https://awesomecua.github.io/zh/papers/)** · **[按主题浏览](https://awesomecua.github.io/zh/topics/)** · **[数据与 Agent](https://awesomecua.github.io/zh/data/)**
+**[搜索与筛选](https://awesomecua.com/?lang=zh)** · **[研究论文](https://awesomecua.com/zh/papers/)** · **[按主题浏览](https://awesomecua.com/zh/topics/)** · **[数据与 Agent](https://awesomecua.com/zh/data/)**
 
-[阅读英文研究综述](https://awesomecua.github.io/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
+[阅读英文研究综述](https://awesomecua.com/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
 [![Catalog records](https://img.shields.io/badge/records-3%2C377-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
@@ -29,9 +29,9 @@
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
 
-[覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.github.io/) · [中文主页](https://awesomecua.github.io/zh/)
+[覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.com/) · [中文主页](https://awesomecua.com/zh/)
 
-资源发现计划每日执行三次，时间为 **UTC 00:17、08:17 和 16:17**。[实际扫描结果](https://awesomecua.github.io/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+资源发现计划每日执行三次，时间为 **UTC 00:17、08:17 和 16:17**。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
 
 **供人、RAG 系统和智能体使用——克隆完整目录：**
 
@@ -39,27 +39,27 @@
 git clone https://github.com/reacher-z/Awesome-CUA.git
 ```
 
-[Agent 操作指南](AGENTS.md) · [RAG 与智能体指南](https://awesomecua.github.io/zh/agents/)（[English](https://awesomecua.github.io/agents/)） · [完整 JSONL](https://awesomecua.github.io/downloads/catalog.jsonl) · [检索文档](https://awesomecua.github.io/downloads/rag-documents.jsonl)
+[Agent 操作指南](AGENTS.md) · [RAG 与智能体指南](https://awesomecua.com/zh/agents/)（[English](https://awesomecua.com/agents/)） · [完整 JSONL](https://awesomecua.com/downloads/catalog.jsonl) · [检索文档](https://awesomecua.com/downloads/rag-documents.jsonl)
 
 目标是全面覆盖公开的研究和产业资源，并提供可检查的来源证据。论文、模型、训练数据、评测环境、框架、基础设施、产品和发布方都收录在同一个可检索目录中。
 
 **“全球最全”是建设目标，而不是已经核实的结论。** 我们公开来源范围、审阅状态和剩余缺口。核实书目元数据不等于审阅了资源的相关性或质量。
 
-使用 `python3 scripts/catalog.py get arxiv:2404.07972 --related --json` 可按稳定 ID 取得完整记录与已核实关联。[BibTeX](https://awesomecua.github.io/downloads/citations.bib) 和 [CSL JSON](https://awesomecua.github.io/downloads/citations.csl.json) 提供已审阅论文引用；每条资源页面也有可直接读取的 `record.json`。
+使用 `python3 scripts/catalog.py get arxiv:2404.07972 --related --json` 可按稳定 ID 取得完整记录与已核实关联。[BibTeX](https://awesomecua.com/downloads/citations.bib) 和 [CSL JSON](https://awesomecua.com/downloads/citations.csl.json) 提供已审阅论文引用；每条资源页面也有可直接读取的 `record.json`。
 
-[按主题浏览](https://awesomecua.github.io/zh/topics/)（[English](https://awesomecua.github.io/topics/)） · [主题子集与指纹](https://awesomecua.github.io/downloads/topics.json)
+[按主题浏览](https://awesomecua.com/zh/topics/)（[English](https://awesomecua.com/topics/)） · [主题子集与指纹](https://awesomecua.com/downloads/topics.json)
 
 <!-- TASKS:START -->
 ## 按任务查找
 
 | 你的任务 | 从这里开始 | 可以找到什么 |
 | --- | --- | --- |
-| 查找论文 | [论文库](https://awesomecua.github.io/zh/papers/) · [研究主题](https://awesomecua.github.io/zh/topics/) | 按年份和主题阅读已审阅论文，查看原始来源。 |
-| 选择评测基准 | [基准指南](https://awesomecua.github.io/guides/gui-agent-benchmarks/) | 核对平台、任务、评估器和版本。 |
-| 寻找训练数据 | [训练数据指南](https://awesomecua.github.io/guides/gui-agent-training-data/) | 比较监督形式、划分、样本单位和数据许可。 |
-| 构建智能体 | [智能体](https://awesomecua.github.io/categories/agent/) · [框架](https://awesomecua.github.io/categories/framework/) | 找到实现入口、支持的平台和论文依据。 |
-| 接入 RAG 或 Agent | [使用指南](https://awesomecua.github.io/zh/agents/) · [数据中心](https://awesomecua.github.io/zh/data/) | 下载完整记录或检索文档，保留审阅状态和来源。 |
-| 追溯论文与资产 | [论文—资产关系](https://awesomecua.github.io/connections/) | 查看经一手来源支持的代码、数据和模型关联。 |
+| 查找论文 | [论文库](https://awesomecua.com/zh/papers/) · [研究主题](https://awesomecua.com/zh/topics/) | 按年份和主题阅读已审阅论文，查看原始来源。 |
+| 选择评测基准 | [基准指南](https://awesomecua.com/guides/gui-agent-benchmarks/) | 核对平台、任务、评估器和版本。 |
+| 寻找训练数据 | [训练数据指南](https://awesomecua.com/guides/gui-agent-training-data/) | 比较监督形式、划分、样本单位和数据许可。 |
+| 构建智能体 | [智能体](https://awesomecua.com/categories/agent/) · [框架](https://awesomecua.com/categories/framework/) | 找到实现入口、支持的平台和论文依据。 |
+| 接入 RAG 或 Agent | [使用指南](https://awesomecua.com/zh/agents/) · [数据中心](https://awesomecua.com/zh/data/) | 下载完整记录或检索文档，保留审阅状态和来源。 |
+| 追溯论文与资产 | [论文—资产关系](https://awesomecua.com/connections/) | 查看经一手来源支持的代码、数据和模型关联。 |
 
 <details>
 <summary>本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）</summary>
@@ -197,13 +197,13 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 ## 使用数据
 
-打开[交互式网站](https://awesomecua.github.io/)，可以搜索和筛选全部资源、查看来源证据、切换中英文界面，或下载完整目录。网站开发与发布见 [website.md](docs/website.md)。
+打开[交互式网站](https://awesomecua.com/)，可以搜索和筛选全部资源、查看来源证据、切换中英文界面，或下载完整目录。网站开发与发布见 [website.md](docs/website.md)。
 
-[中文数据中心](https://awesomecua.github.io/zh/data/)与[English data hub](https://awesomecua.github.io/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
+[中文数据中心](https://awesomecua.com/zh/data/)与[English data hub](https://awesomecua.com/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
 
-[下载清单](https://awesomecua.github.io/downloads/manifest.json)为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。不同格式和视图可能包含相同资源，单位也可能不同，不能把这些数量相加。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
+[下载清单](https://awesomecua.com/downloads/manifest.json)为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。不同格式和视图可能包含相同资源，单位也可能不同，不能把这些数量相加。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
 
-[已审阅研究](https://awesomecua.github.io/zh/papers/)（[English](https://awesomecua.github.io/papers/)） · [Computer-use agent 指南](https://awesomecua.github.io/guides/) · [静态资源目录](https://awesomecua.github.io/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
+[已审阅研究](https://awesomecua.com/zh/papers/)（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
 
 - **[目录 JSONL](data/catalog.jsonl)：** 每行一个资源，包含稳定 ID、类型化字段、来源证据、按范围区分的许可和审阅状态。
 - **[引用图](data/references.jsonl)：** 一手来源中的对外引用。`mentions` 不等于 `trained_on` 或 `evaluated_on`。

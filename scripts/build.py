@@ -17,6 +17,7 @@ from scope_review import resolve_exclusions, scope_report
 from arxiv_metadata import validate_snapshot
 from repository_identity import repository_aliases, attach_repository_aliases, unrecorded_hub_renames
 from lookup import REVIEWED_RELATION_TYPES
+from site_config import SITE
 from publication_metadata import (alias_owner_errors, attach_publications, duplicate_publication_errors, publication_aliases,
     publication_links, publication_search_text, record_date_text, record_year, validate_publication)
 
@@ -799,7 +800,7 @@ def stats_block(report, lang="en"):
 
 def task_navigator(lang="en"):
     """Short task-oriented entry points shared by source and publication READMEs."""
-    site = "https://awesomecua.github.io"
+    site = SITE
     if lang == "zh":
         heading, columns, cli = "按任务查找", "| 你的任务 | 从这里开始 | 可以找到什么 |", "本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）"
         items = [

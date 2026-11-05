@@ -4,6 +4,7 @@ import html
 from urllib.parse import urlencode
 from catalog import TOPICS as VOCABULARY
 from publication_metadata import publication, record_date_text, record_year
+from site_config import SITE
 from specifications import safe_href
 
 
@@ -78,7 +79,7 @@ def library_years(rows, language='en'):
     return links
 
 
-def paper_library(rows, resource_path, *, language='en', site_url='https://awesomecua.github.io', number=1, survey_available=False):
+def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1, survey_available=False):
     """Return one library page's HTML and an ItemList describing exactly its visible reviewed papers."""
     zh = language == 'zh'
     def tr(en, cn):

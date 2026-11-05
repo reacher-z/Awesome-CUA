@@ -24,7 +24,8 @@ def documents(records, include_metadata=False):
             raise ValueError('Unrecognized catalog review status: '+rid)
         if not include_metadata and record['review_status']!='curated':continue
         # Use the same stable permalink convention as the website builder.
-        from search_pages import resource_path, SITE
+        from search_pages import resource_path
+        from site_config import SITE
         snapshot=record.get('details',{}).get('arxiv_snapshot')
         source_url=(snapshot or {}).get('versioned_url') or record['url']
         lines=[record['name'],f"Resource type: {record['kind']}",f"Review status: {record['review_status']}",f"Scope: {record['scope']}"]

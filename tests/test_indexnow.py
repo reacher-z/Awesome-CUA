@@ -106,6 +106,34 @@ class IndexNowTests(unittest.TestCase):
                 self.assertEqual(self.run_submission(submit=False)['url_count'], 3)
                 error.close()
 
+    def test_state_accepted_for_a_former_origin_restarts_for_the_new_host(self):
+        indexing.write_json(self.config, {'site_url': self.site + '/', 'former_site_urls': ['https://old.example/'], 'indexnow_key': self.key})
+        indexing.write_json(self.state, {**self.previous, 'site': 'https://old.example', 'accepted_pages': indexing.fingerprints(self.manifest, self.site)})
+        response = io.BytesIO(b'')
+        response.status = 200
+        with mock.patch.object(indexing, 'fetch_public', side_effect=self.preflight) as fetch, mock.patch.object(indexing.urllib.request, 'urlopen', return_value=response) as post:
+            result = self.run_submission()
+        payload = json.loads(post.call_args.args[0].data)
+        self.assertEqual((payload['host'], payload['keyLocation']), ('catalog.example', self.site + '/' + self.key + '.txt'))
+        self.assertEqual(payload['urlList'], [self.site + '/', self.site + '/new/'])
+        self.assertEqual({call.args[0] for call in fetch.call_args_list}, {self.site + '/' + self.key + '.txt', self.site + '/data/search-manifest.json'})
+        self.assertEqual(result['replaces_accepted_state_for'], 'https://old.example')
+        state = indexing.read_json(self.state)
+        self.assertEqual((state['site'], state['accepted_pages']), (self.site, indexing.fingerprints(self.manifest, self.site)))
+        self.assertEqual(self.run_submission(submit=False)['url_count'], 0)
+
+    def test_state_for_an_undeclared_origin_is_rejected(self):
+        for config in [{'site_url': self.site, 'indexnow_key': self.key},
+                       {'site_url': self.site, 'former_site_urls': ['https://old.example/'], 'indexnow_key': self.key}]:
+            with self.subTest(config=config):
+                indexing.write_json(self.config, config)
+                indexing.write_json(self.state, {**self.previous, 'site': 'https://other.example'})
+                with self.assertRaisesRegex(ValueError, 'Accepted-state identity'):
+                    self.run_submission(submit=False)
+        indexing.write_json(self.config, {'site_url': self.site, 'former_site_urls': 'https://old.example/', 'indexnow_key': self.key})
+        with self.assertRaisesRegex(ValueError, 'Former site origins'):
+            self.run_submission(submit=False)
+
     def test_foreign_paths_or_sitemap_disagreement_are_rejected(self):
         self.previous['accepted_pages']['//outside.example/stolen'] = 'f' * 64
         indexing.write_json(self.state, self.previous)

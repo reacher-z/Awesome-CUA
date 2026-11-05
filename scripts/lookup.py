@@ -5,9 +5,10 @@ import copy
 import json
 from pathlib import Path
 from repository_identity import repository_aliases
+from site_config import SITE
 
 DATA = Path(__file__).resolve().parents[1] / 'data'
-EXCLUSION_LEDGER_URL = 'https://awesomecua.github.io/downloads/exclusions.json'
+EXCLUSION_LEDGER_URL = SITE + '/downloads/exclusions.json'
 EXIT_OK = 0
 EXIT_NOT_FOUND = 1
 EXIT_EXCLUDED = 3  # argparse reserves 2 for invalid command-line usage.

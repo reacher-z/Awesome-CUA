@@ -10,6 +10,7 @@ from agent_pages import CLONE_COMMAND, RELEASES_URL
 from export_citations import encode_citations
 from export_rag import encode_documents
 from repository_identity import attach_repository_aliases
+from site_config import SITE
 from export_candidates import RECORD_FILE as CANDIDATE_FILE, MANIFEST_FILE as CANDIDATE_MANIFEST, SCHEMAS as CANDIDATE_SCHEMAS, validate_candidate_export
 
 
@@ -232,7 +233,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
     return manifest
 
 
-def data_hub_body(manifest, *, language='en', site_url='https://awesomecua.github.io'):
+def data_hub_body(manifest, *, language='en', site_url=SITE):
     zh = language == 'zh'
     def tr(en, cn): return cn if zh else en
     def esc(value): return html.escape(str(value), quote=True)

@@ -36,6 +36,7 @@ VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'met
 
 sys.path.insert(0, str(ROOT / 'scripts'))
 from export_citations import citation_bibtex, citation_csl, citation_key, tex_escape  # noqa: E402
+from publication_metadata import AUTHORS_OMITTED, omit_authors  # noqa: E402
 
 
 def digest(data: bytes) -> str:
@@ -116,7 +117,11 @@ def load_frozen_bibliography(path=None, *, check_history=True):
     if history is not None:
         archived = {r['id']: r for r in map(json.loads, history.splitlines())}
         for record in records:
-            if archived.get(record['id']) != record:
+            expected = archived.get(record['id'])
+            if expected is not None and record.get('authors_omitted') is True:
+                # The catalog lists no authors for this record; every other field still matches the pinned object.
+                expected = omit_authors(expected)
+            if expected != record:
                 raise ValueError('Frozen bibliography differs from the available pinned Git object: ' + record['id'])
     return records, {
         'fixture_sha256': digest(data), 'record_count': len(records),
@@ -137,9 +142,13 @@ def export_frozen_bibliography(destination):
         for node in walk(parse((SURVEY / 'sections' / (name + '.html')).read_text())):
             if node.tag == 'cite':
                 keys.update(node.attrs['data-keys'].split())
+    reviewed = json.loads(FROZEN_BIBLIOGRAPHY.read_bytes())
+    omitted = {entry['record']['id'] for entry in reviewed.get('records', []) if entry['record'].get('authors_omitted') is True}
     entries = []
     for record in map(json.loads, data.splitlines()):
         if record['kind'] in {'paper', 'survey'} and citation_key(record) in keys:
+            if record['id'] in omitted:
+                record = omit_authors(record)
             entries.append({'citation_key': citation_key(record), 'record_sha256': record_sha256(record), 'record': record})
     entries.sort(key=lambda item: item['citation_key'])
     fixture = {'schema_version': 1, 'source_commit': PIN, 'catalog_git_path': 'data/catalog.jsonl', 'catalog_sha256': CATALOG_SHA, 'record_hash_method': RECORD_HASH_METHOD, 'selection': 'Original paper/survey records from the pinned catalog whose stable citation keys occur in this manuscript. Fresh-search citations and extra references are separate inputs.', 'record_count': len(entries), 'records': entries}
@@ -244,7 +253,10 @@ def arxiv_record(row):
     if not match:
         raise ValueError('Fresh bibliography has no exact version: ' + aid)
     return {
-        'id': row['id'], 'kind': 'paper', 'name': row['title'], 'authors': row['authors'],
+        'id': row['id'], 'kind': 'paper', 'name': row['title'],
+        # An omitted author list stays empty even if the retained search row still names authors.
+        'authors': [] if row.get('authors_omitted') is True else row['authors'],
+        **({'authors_omitted': True} if row.get('authors_omitted') is True else {}),
         'review_status': 'metadata_verified', 'url': 'https://arxiv.org/abs/' + aid,
         'published_at': row['published'][:10], 'updated_at': row['updated'][:10],
         'identifiers': {'arxiv': aid},
@@ -326,6 +338,8 @@ def verify_read_bibliography(key, item, ledgers):
             authors = source.get('ordered_authors', source.get('authors'))
             if source.get('title') != item['title']:
                 raise ValueError('Reading/citation title conflict: ' + chapter + '/' + key)
+            if (source.get('authors_omitted') is True) != (item.get('custom', {}).get('authors_omitted') is True):
+                raise ValueError('Reading/citation author-omission conflict: ' + chapter + '/' + key)
             if authors != [a['literal'] for a in item.get('author', [])]:
                 raise ValueError('Reading/citation ordered-author conflict: ' + chapter + '/' + key)
 
@@ -447,7 +461,9 @@ def reference_html(items):
         key = item['citation-key']
         authors = [a.get('literal', '') for a in item.get('author', [])]
         out.append(f'<li id="ref-{html.escape(key)}" value="{number}"><a class="reference-title" href="{html.escape(safe_url(item["URL"]), quote=True)}">{html.escape(item["title"])}</a>')
-        if len(authors) > 8:
+        if item.get('custom', {}).get('authors_omitted') is True:
+            out.append(f'<p><a href="{html.escape(safe_url(item["URL"]), quote=True)}">{html.escape(AUTHORS_OMITTED[0])}</a></p>')
+        elif len(authors) > 8:
             out.append('<p>' + html.escape(', '.join(authors[:3])) + ', and colleagues.</p><details><summary>Complete author list (' + str(len(authors)) + ')</summary><p>' + html.escape('; '.join(authors)) + '</p></details>')
         elif authors:
             out.append('<p>' + html.escape('; '.join(authors)) + '.</p>')
@@ -576,6 +592,8 @@ def build(output, *, check_history=True, write_source_outputs=False):
         level = 'selected_fulltext_sections_read' if 'selected_fulltext_sections_read' in levels else reading['readings'][0]['read_level']
         if level not in {'selected_fulltext_sections_read', 'abstract_and_author_project_only', 'dataset_snapshot_integrity_inspection'}:
             raise ValueError('Unsupported reading level for cited source: ' + key)
+        if item.get('custom', {}).get('authors_omitted') is True:
+            reading['authors_omitted'] = True
         reading.update(reference_number=numbers[key], title=item['title'], ordered_authors=[a['literal'] for a in item.get('author', [])], citation_url=item['URL'], read_level=level, edition_label=('arXiv v' + str(item['version']) + '; first submitted ' + date_string(item)) if item.get('archive') == 'arXiv' else (item.get('version') or date_string(item)))
         item.setdefault('custom', {})['manuscript_read_level'] = level
         citations.append(item)

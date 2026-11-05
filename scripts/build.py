@@ -18,6 +18,7 @@ from arxiv_metadata import validate_snapshot
 from repository_identity import repository_aliases, attach_repository_aliases, unrecorded_hub_renames
 from lookup import REVIEWED_RELATION_TYPES
 from site_config import SITE
+from publication_metadata import authors_omitted, omit_authors
 from publication_metadata import (alias_owner_errors, attach_publications, duplicate_publication_errors, publication_aliases,
     publication_links, publication_search_text, record_date_text, record_year, validate_publication)
 
@@ -61,6 +62,8 @@ def source_records(with_scope=False):
         raise ValueError('Publisher observations must not be written into the retained arXiv archive')
     observations=read_jsonl(DATA/'publications.jsonl')
     records = attach_publications({r['id']: r for r in archived}, observations, publication_identity)
+    # An omitted author list also empties the attached edition's list; publications.jsonl keeps its observation.
+    records = {rid: omit_authors(row) if authors_omitted(row) else row for rid, row in records.items()}
     aliases=publication_aliases(observations,publication_identity)
     evidence = {r["id"]: r for r in read_jsonl(DATA / "primary-evidence.jsonl")}
     enrichment = {r["id"]: r for r in read_jsonl(DATA / "enrichment.jsonl")}
@@ -123,6 +126,8 @@ def source_records(with_scope=False):
             "identifiers": base.get("identifiers", {}), "links": [{"rel": "primary", "url": editorial["url"]}],
             "relations": relations, "licenses": licenses, "evidence": base.get("evidence", []) + [primary] + editorial.get("additional_evidence", []) + extra.get("evidence", []),
             "last_verified_at": ev["retrieved_at"], "notes": editorial.get("notes", ""), "details": details}
+        if base.get("authors_omitted") is True:
+            row["authors_omitted"] = True
         records[rid] = row
         row['links'] = publication_links(row)
     changes = {row['id'] for row in read_jsonl(DATA/'metadata-updates.jsonl')}
@@ -137,6 +142,8 @@ def source_records(with_scope=False):
 FIELD_TYPES = {"id": str, "name": str, "kind": str, "url": str, "aliases": list, "environments": list, "topics": list, "scope": str, "summary": (str, type(None)), "review_status": str,
     "published_at": (str, type(None)), "updated_at": (str, type(None)), "authors": list, "identifiers": dict, "links": list, "relations": list, "licenses": dict, "evidence": list,
     "last_verified_at": str, "notes": str, "details": dict}
+# Optional fields; authors_omitted records that the catalog lists no authors for the record.
+OPTIONAL_FIELD_TYPES = {"authors_omitted": bool}
 EVIDENCE_FIELDS = {"role", "method", "supports", "url", "retrieved_at", "sha256"}
 # Read from the published contract, so a new receipt method is declared in one place.
 EVIDENCE_METHODS = set(read_json(ROOT / "schemas/resource.schema.json")["properties"]["evidence"]["items"]["properties"]["method"]["enum"])
@@ -150,7 +157,7 @@ def malformed_fields(r):
     nested = {"aliases": strings, "environments": strings, "topics": strings, "authors": strings, "identifiers": lambda v: strings(v.values()),
         "evidence": lambda v: all(isinstance(e, dict) and strings(e.get(k, "") for k in ("url", "sha256", "retrieved_at", "role", "method")) and isinstance(e.get("supports", []), list) for e in v),
         "relations": lambda v: all(isinstance(e, dict) and strings(e.get(k, "") for k in ("type", "target_id", "evidence_url")) for e in v)}
-    return [key for key, kind in FIELD_TYPES.items() if key in r and not (isinstance(r[key], kind) and nested.get(key, lambda v: True)(r[key]))]
+    return [key for key, kind in {**FIELD_TYPES, **OPTIONAL_FIELD_TYPES}.items() if key in r and not (isinstance(r[key], kind) and nested.get(key, lambda v: True)(r[key]))]
 
 
 def https(url):
@@ -174,7 +181,9 @@ def title_author_collisions(rows):
     groups = collections.defaultdict(list)
     for r in rows:
         if not malformed_fields(r) and r.get("kind") in {"paper", "survey"} and isinstance(r.get("name"), str):
-            groups["".join(c for c in r["name"].casefold() if c.isalnum()), tuple(" ".join(a.casefold().split()) for a in r.get("authors", []))].append(r)
+            # Omitted author lists compare as one shared marker, never as an empty list of names.
+            authors = ("\0authors-omitted",) if r.get("authors_omitted") is True else tuple(" ".join(a.casefold().split()) for a in r.get("authors", []))
+            groups["".join(c for c in r["name"].casefold() if c.isalnum()), authors].append(r)
     collisions = []
     for group in groups.values():
         ids = {r.get("id") for r in group}
@@ -200,8 +209,12 @@ def validate_records(rows):
         seen.add(rid)
         if missing := required - r.keys():
             error("missing fields " + ", ".join(sorted(missing)))
-        if unknown := r.keys() - required:
+        if unknown := r.keys() - required - OPTIONAL_FIELD_TYPES.keys():
             error("unknown fields " + ", ".join(sorted(unknown)))
+        if "authors_omitted" in r:
+            edition = r.get("details", {}).get("publication")
+            if r["authors_omitted"] is not True or r.get("authors") or isinstance(edition, dict) and edition.get("authors"):
+                error("authors_omitted must be true, with empty record and publication author lists")
         if "id" in r and not re.fullmatch(r"(?:arxiv|github|url|component|organization):\S+", rid):
             error("invalid id prefix or whitespace")
         if r.get("kind") not in KINDS:

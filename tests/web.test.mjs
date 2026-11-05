@@ -470,6 +470,33 @@ test('compact card facts list only recorded year, arXiv paper and declared licen
   assert.deepEqual(compactFacts({id:'url:bare',published_at:null}),[]);
   for(const r of rows)for(const fact of compactFacts(r))assert.match(fact.text,/^\d{4}$/,r.id);
 });
+test('an omitted author list renders as a link to the paper in cards, rows and the record dialog',async()=>{
+  const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
+  const record={id:'arxiv:2601.00001',name:'Withheld authors fixture',kind:'paper',url:'https://arxiv.org/abs/2601.00001',page_url:'/resources/arxiv-2601-00001/',aliases:[],environments:['web'],topics:[],authors:[],authors_omitted:true,scope:'relevance_pending',review_status:'metadata_verified',summary:null,published_at:'2026-01-01',paper_version:1,paper_source_url:'https://arxiv.org/abs/2601.00001v1',paper_date:'2026-01-01',related_count:0,incoming_relations:[]};
+  const keys=['document','window','location','history','localStorage','fetch'],saved=keys.map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
+  const settle=()=>new Promise(resolve=>setImmediate(resolve));
+  const boot=async(search,name)=>{
+    const clicks=[],elements=new Map(),element=selector=>{if(!elements.has(selector))elements.set(selector,{dataset:{},listeners:{},classList:{toggle(){}},open:false,addEventListener(type,fn){(this.listeners[type]??=[]).push(fn);},setAttribute(){},focus(){},scrollIntoView(){},showModal(){this.open=true;},close(){this.open=false;}});return elements.get(selector);};
+    const detail={...record,licenses:{code:null,data:null,weights:null,document:null},details:{arxiv_snapshot:{version:1,versioned_url:'https://arxiv.org/abs/2601.00001v1'}},identifiers:{arxiv:'2601.00001'},relations:[],notes:'',evidence:[],last_verified_at:'2026-01-02T00:00:00Z'};
+    const globals={document:{documentElement:{},body:{classList:{toggle(){}}},addEventListener(type,fn){if(type==='click')clicks.push(fn);},querySelector:element,querySelectorAll:()=>[]},window:{addEventListener(){}},location:{search,pathname:'/',hash:''},history:{state:null,length:1,pushState(){},replaceState(){}},localStorage:{getItem:()=>null,setItem(){}},fetch:async url=>({ok:true,json:async()=>url.endsWith('record.json')?structuredClone(detail):{coverage,records:[structuredClone(record)]}})};
+    for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
+    await import(`../web/app.js?${name}`);await settle();
+    const open=async()=>{for(const listener of clicks)listener({target:{closest:selector=>selector==='[data-record]'?{tagName:'A',dataset:{record:record.id}}:null},button:0,preventDefault(){}});await settle();};
+    return {results:()=>element('#results').innerHTML,dialog:()=>element('#detail-content').innerHTML,open};
+  };
+  try {
+    const grid=await boot('?view=grid','omitted-authors-grid');
+    assert.match(grid.results(),/Authors: see the paper/);
+    const rows=await boot('?view=list','omitted-authors-list');
+    assert.match(rows.results(),/<span class="row-authors">Authors: see the paper<\/span>/);
+    await rows.open();
+    assert.match(rows.dialog(),/<h3>Authors<\/h3><p><a href="https:\/\/arxiv\.org\/abs\/2601\.00001v1" target="_blank" rel="noopener noreferrer">Authors: see the paper<\/a><\/p>/);
+    const zh=await boot('?view=list&lang=zh','omitted-authors-zh');
+    assert.match(zh.results(),/<span class="row-authors">作者见原文<\/span>/);
+  } finally {
+    for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
+  }
+});
 test('cards and list rows render compact facts without placeholders',async()=>{
   const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
   const base={aliases:[],environments:['desktop'],topics:[],authors:[],scope:'core',review_status:'curated',summary:'Fixture summary.',paper_version:null,paper_source_url:null,paper_date:null,related_count:0,incoming_relations:[]};

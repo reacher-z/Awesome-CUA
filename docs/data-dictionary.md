@@ -15,6 +15,7 @@ The executable contract is [resource.schema.json](../schemas/resource.schema.jso
 | `summary` | Original concise annotation; null for metadata-only entries |
 | `published_at`, `updated_at` | Exact calendar dates where established, otherwise null; a known year/month remains in `details.publication.date_parts` |
 | `authors`, `identifiers` | Official bibliographic attribution and IDs |
+| `authors_omitted` | Optional; only `true`. The catalog does not list this record's authors: `authors` and any `details.publication.authors` are empty, and pages and exports show "Authors: see the paper" (作者见原文) with a link to the source. Read the author list from the paper |
 | `links` | Typed links, starting with a primary or paper link |
 | `relations` | Explicit semantic assertions: introduced by, documented by, published by, component of, variant of, etc. |
 | `licenses` | Four separate nullable declarations: code, data, weights, document |

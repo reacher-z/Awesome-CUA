@@ -24,7 +24,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 [Read the research survey](https://awesomecua.com/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
 
 <!-- BADGES:START -->
-[![Catalog records](https://img.shields.io/badge/records-3%2C377-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Catalog records](https://img.shields.io/badge/records-3%2C636-4856df?style=flat-square&labelColor=303447)](data/catalog.jsonl) [![Source-reviewed records](https://img.shields.io/badge/source--reviewed-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
@@ -78,9 +78,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**3,377 resource records** · **1,674 curated** · **2,905 paper and survey records** · **54 discovery documents**
+**3,636 resource records** · **1,674 curated** · **3,164 paper and survey records** · **101 discovery documents**
 
-Evidence through `2026-11-05T16:24:19Z`. 1,703 records have bibliographic verification only; 914 discovered identifiers remain unresolved, not counting 143 links reviewed as non-resources or other addresses of indexed resources. 138 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-11-05T21:14:44Z`. 1,962 records have bibliographic verification only; 1,920 discovered identifiers remain unresolved, not counting 143 links reviewed as non-resources or other addresses of indexed resources. 141 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -89,7 +89,7 @@ Evidence through `2026-11-05T16:24:19Z`. 1,703 records have bibliographic verifi
 <!-- EXPLORE:START -->
 | Research and training | Engineering and industry |
 | --- | --- |
-| [Research by topic](docs/topics.md) · **1,183** reviewed papers · [Full bibliography](docs/papers.md) · 2,905 paper and survey records | [Agents](docs/agents.md) · **45** |
+| [Research by topic](docs/topics.md) · **1,183** reviewed papers · [Full bibliography](docs/papers.md) · 3,164 paper and survey records | [Agents](docs/agents.md) · **45** |
 | [Surveys](docs/surveys.md) · **19** · [Learning resources](docs/learning.md) · **2** | [Frameworks](docs/frameworks.md) · **79** |
 | [Datasets](docs/datasets.md) · **86** | [Infrastructure](docs/infrastructures.md) · **14** |
 | [Benchmarks](docs/benchmarks.md) · **90** | [Tools](docs/tools.md) · **22** |

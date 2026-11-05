@@ -155,7 +155,8 @@
     "scope": [
       "research",
       "cross-platform"
-    ]
+    ],
+    "doi_links": true
   },
   {
     "id": "opendilab-ui",
@@ -862,5 +863,665 @@
       "datasets",
       "models"
     ]
+  },
+  {
+    "role": "discovery",
+    "id": "trycua-acu",
+    "name": "trycua/acu — Awesome Computer Use",
+    "url": "https://raw.githubusercontent.com/trycua/acu/main/README.md",
+    "homepage": "https://github.com/trycua/acu",
+    "scope": [
+      "research",
+      "products",
+      "frameworks",
+      "infrastructure"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "gui-grounding-survey",
+    "name": "Awesome GUI Grounding (GUI grounding survey list)",
+    "url": "https://raw.githubusercontent.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding/main/README.md",
+    "homepage": "https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding",
+    "scope": [
+      "research",
+      "models",
+      "benchmarks",
+      "datasets"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "showlab-mm-embodied",
+    "name": "ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections",
+    "url": "https://raw.githubusercontent.com/showlab/Awesome-Multimodal-Embodied-Agent/main/README.md",
+    "homepage": "https://github.com/showlab/Awesome-Multimodal-Embodied-Agent",
+    "scope": [
+      "research",
+      "benchmarks"
+    ],
+    "sections": [
+      "A. Related Surveys",
+      "Multimodal Agents"
+    ],
+    "rationale": "Sections B and D and the embodied/robotic benchmark groups cover robot agents, which are outside the catalog boundary.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "rl-gui-agents",
+    "name": "Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)",
+    "url": "https://raw.githubusercontent.com/Steve2457/Awesome-RL-GUI-Agents/main/README.md",
+    "homepage": "https://github.com/Steve2457/Awesome-RL-GUI-Agents",
+    "scope": [
+      "research",
+      "models",
+      "benchmarks"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "12britz-cua",
+    "name": "12britz/awesome-computer-use — agent, grounding, automation and evaluation sections",
+    "url": "https://raw.githubusercontent.com/12britz/awesome-computer-use/main/README.md",
+    "homepage": "https://github.com/12britz/awesome-computer-use",
+    "scope": [
+      "products",
+      "frameworks",
+      "tools",
+      "research"
+    ],
+    "sections": [
+      "Desktop Agents",
+      "Browser Agents",
+      "Mobile Agents",
+      "Vision and Grounding",
+      "Desktop Automation Libraries",
+      "RPA Tools",
+      "MCP Servers for Desktop",
+      "Sandbox",
+      "Voice-Controlled",
+      "Agent Testing",
+      "Game-Playing",
+      "Training Data",
+      "Screen Understanding",
+      "Browser Extension Agents",
+      "Desktop-Native",
+      "Research Papers",
+      "The Leaderboard"
+    ],
+    "rationale": "Screen capture, OCR, agent memory and orchestration, IDE agents and related lists are not computer-use resources.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "autonomous-web",
+    "name": "Agent-Tools/awesome-autonomous-web — browser-agent sections",
+    "url": "https://raw.githubusercontent.com/Agent-Tools/awesome-autonomous-web/main/README.md",
+    "homepage": "https://github.com/Agent-Tools/awesome-autonomous-web",
+    "scope": [
+      "browser",
+      "products",
+      "infrastructure",
+      "benchmarks"
+    ],
+    "sections": [
+      "Browsers for AI",
+      "MCP Servers for Browser",
+      "AI Web Copilots",
+      "AI Web Automation Frameworks",
+      "Enterprise System Automation",
+      "Web Agent Benchmarks",
+      "Visual Web Automation"
+    ],
+    "rationale": "Authentication, crawler, search, CAPTCHA and GraphQL sections are web-data tooling rather than agents that operate pages.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "agent-native-browsers",
+    "name": "haoruilee/awesome-agent-native-services — Browser & Web Execution Services",
+    "url": "https://raw.githubusercontent.com/haoruilee/awesome-agent-native-services/main/README.md",
+    "homepage": "https://github.com/haoruilee/awesome-agent-native-services",
+    "scope": [
+      "browser",
+      "infrastructure"
+    ],
+    "sections": [
+      "Browser & Web Execution Services"
+    ],
+    "rationale": "The other categories list messaging, payment, memory, voice and other non-interface services.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-benchmark",
+    "name": "LLM-Brained GUI Agents survey tables — data/benchmark.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/benchmark.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "research",
+      "benchmarks"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-dataset",
+    "name": "LLM-Brained GUI Agents survey tables — data/dataset.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/dataset.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "research",
+      "datasets"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-framework",
+    "name": "LLM-Brained GUI Agents survey tables — data/framework.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/framework.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "research",
+      "frameworks"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-gui-testing",
+    "name": "LLM-Brained GUI Agents survey tables — data/gui-testing.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/gui-testing.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "research",
+      "testing"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-models",
+    "name": "LLM-Brained GUI Agents survey tables — data/models.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/models.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "research",
+      "models"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-survey",
+    "name": "LLM-Brained GUI Agents survey tables — data/survey.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/survey.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "research"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "llm-brained-gui-survey-virtual-assistant",
+    "name": "LLM-Brained GUI Agents survey tables — data/virtual-assistant.json",
+    "url": "https://raw.githubusercontent.com/vyokky/LLM-Brained-GUI-Agents-Survey/main/data/virtual-assistant.json",
+    "homepage": "https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey",
+    "scope": [
+      "products"
+    ],
+    "doi_links": true,
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "osworld-verified-leaderboard",
+    "name": "OSWorld-Verified leaderboard results",
+    "url": "https://os-world.github.io/static/data/osworld_verified_results.xlsx",
+    "homepage": "https://os-world.github.io",
+    "parser": "xlsx_links",
+    "scope": [
+      "leaderboard",
+      "agents",
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "osworld-self-reported-leaderboard",
+    "name": "OSWorld self-reported leaderboard results",
+    "url": "https://os-world.github.io/static/data/self_reported_results.xlsx",
+    "homepage": "https://os-world.github.io",
+    "parser": "xlsx_links",
+    "scope": [
+      "leaderboard",
+      "agents",
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "screenspot-pro-leaderboard",
+    "name": "ScreenSpot-Pro grounding leaderboard results",
+    "url": "https://gui-agent.github.io/grounding-leaderboard/results/screenspot_pro.json",
+    "homepage": "https://gui-agent.github.io/grounding-leaderboard",
+    "scope": [
+      "leaderboard",
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "androidworld-leaderboard",
+    "name": "AndroidWorld leaderboard spreadsheet",
+    "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/export?format=xlsx",
+    "homepage": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo",
+    "parser": "xlsx_links",
+    "scope": [
+      "leaderboard",
+      "agents",
+      "mobile"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "webarena-leaderboard",
+    "name": "WebArena and VisualWebArena leaderboard spreadsheet",
+    "url": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ/export?format=xlsx",
+    "homepage": "https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ",
+    "parser": "xlsx_links",
+    "scope": [
+      "leaderboard",
+      "agents",
+      "browser"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "androidlab-leaderboard",
+    "name": "AndroidLab leaderboard spreadsheet",
+    "url": "https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw/export?format=xlsx",
+    "homepage": "https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw",
+    "parser": "xlsx_links",
+    "scope": [
+      "leaderboard",
+      "agents",
+      "mobile"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "arxiv-abstract-phrases",
+    "name": "arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)",
+    "url": "https://export.arxiv.org/api/query?search_query=abs%3A%22GUI+agent%22+OR+abs%3A%22GUI+agents%22+OR+abs%3A%22computer-use+agent%22+OR+abs%3A%22computer-use+agents%22+OR+abs%3A%22computer+use+agent%22+OR+abs%3A%22computer+use+agents%22+OR+abs%3A%22GUI+grounding%22+OR+abs%3A%22web+agent%22+OR+abs%3A%22web+agents%22&start=0&max_results=2000&sortBy=submittedDate&sortOrder=descending",
+    "homepage": "https://arxiv.org",
+    "parser": "arxiv_query",
+    "scope": [
+      "research"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-models-search-gui",
+    "name": "Hub model search \"gui\" (by likes)",
+    "url": "https://huggingface.co/api/models?search=gui&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/models?search=gui",
+    "parser": "huggingface_models",
+    "min_likes": 3,
+    "id_pattern": "(?i)(?:^|[-_./])gui(?:[-_./]|$)",
+    "scope": [
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-models-search-computer-use",
+    "name": "Hub model search \"computer-use\" (by likes)",
+    "url": "https://huggingface.co/api/models?search=computer-use&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/models?search=computer-use",
+    "parser": "huggingface_models",
+    "min_likes": 3,
+    "id_pattern": "(?i)computer[-_]?use",
+    "scope": [
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-datasets-search-gui",
+    "name": "Hub dataset search \"gui\" (by likes)",
+    "url": "https://huggingface.co/api/datasets?search=gui&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/datasets?search=gui",
+    "parser": "huggingface_datasets",
+    "min_likes": 3,
+    "id_pattern": "(?i)(?:^|[-_./])gui(?:[-_./]|$)",
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-datasets-search-computer-use",
+    "name": "Hub dataset search \"computer-use\" (by likes)",
+    "url": "https://huggingface.co/api/datasets?search=computer-use&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/datasets?search=computer-use",
+    "parser": "huggingface_datasets",
+    "min_likes": 3,
+    "id_pattern": "(?i)computer[-_]?use",
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-datasets-search-web-agent",
+    "name": "Hub dataset search \"web-agent\" (by likes)",
+    "url": "https://huggingface.co/api/datasets?search=web-agent&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/datasets?search=web-agent",
+    "parser": "huggingface_datasets",
+    "min_likes": 3,
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-datasets-search-mind2web",
+    "name": "Hub dataset search \"mind2web\" (by likes)",
+    "url": "https://huggingface.co/api/datasets?search=mind2web&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/datasets?search=mind2web",
+    "parser": "huggingface_datasets",
+    "min_likes": 3,
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-datasets-search-android",
+    "name": "Hub dataset search \"android\" (by likes)",
+    "url": "https://huggingface.co/api/datasets?search=android&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/datasets?search=android",
+    "parser": "huggingface_datasets",
+    "min_likes": 3,
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-datasets-search-screenspot",
+    "name": "Hub dataset search \"screenspot\" (by likes)",
+    "url": "https://huggingface.co/api/datasets?search=screenspot&sort=likes&direction=-1&limit=100",
+    "homepage": "https://huggingface.co/datasets?search=screenspot",
+    "parser": "huggingface_datasets",
+    "min_likes": 3,
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-maxiw-gui-datasets",
+    "name": "Hub collection maxiw/gui-datasets",
+    "url": "https://huggingface.co/api/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b",
+    "homepage": "https://huggingface.co/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b",
+    "parser": "huggingface_collection",
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-maxiw-research-on-gui-models",
+    "name": "Hub collection maxiw/research-on-gui-models",
+    "url": "https://huggingface.co/api/collections/maxiw/research-on-gui-models-66b907281caaa1d77cfc536d",
+    "homepage": "https://huggingface.co/collections/maxiw/research-on-gui-models-66b907281caaa1d77cfc536d",
+    "parser": "huggingface_collection",
+    "scope": [
+      "research",
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-m-ric-gui-agents",
+    "name": "Hub collection m-ric/gui-agents",
+    "url": "https://huggingface.co/api/collections/m-ric/gui-agents-67cc9f6ea029f09af73caff8",
+    "homepage": "https://huggingface.co/collections/m-ric/gui-agents-67cc9f6ea029f09af73caff8",
+    "parser": "huggingface_collection",
+    "scope": [
+      "research"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-thomwolf-gui-agents",
+    "name": "Hub collection thomwolf/gui-agents",
+    "url": "https://huggingface.co/api/collections/thomwolf/gui-agents-675d54f9e907322a10f1cfae",
+    "homepage": "https://huggingface.co/collections/thomwolf/gui-agents-675d54f9e907322a10f1cfae",
+    "parser": "huggingface_collection",
+    "scope": [
+      "research"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-johannhartmann-computer-use-models",
+    "name": "Hub collection johannhartmann/computer-use-models",
+    "url": "https://huggingface.co/api/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f",
+    "homepage": "https://huggingface.co/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f",
+    "parser": "huggingface_collection",
+    "scope": [
+      "models"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-sergiopaniego-gui-grounding-datasets",
+    "name": "Hub collection sergiopaniego/gui-grounding-datasets",
+    "url": "https://huggingface.co/api/collections/sergiopaniego/gui-grounding-datasets-6867faa9ecb5032865458705",
+    "homepage": "https://huggingface.co/collections/sergiopaniego/gui-grounding-datasets-6867faa9ecb5032865458705",
+    "parser": "huggingface_collection",
+    "scope": [
+      "datasets"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-xlbqc-gui-agent",
+    "name": "Hub collection xlbqc/gui-agent",
+    "url": "https://huggingface.co/api/collections/xlbqc/gui-agent-67bc272a55edf2ef92ae1076",
+    "homepage": "https://huggingface.co/collections/xlbqc/gui-agent-67bc272a55edf2ef92ae1076",
+    "parser": "huggingface_collection",
+    "scope": [
+      "research"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "hf-collection-yuxiang007-gui-agent",
+    "name": "Hub collection Yuxiang007/gui-agent",
+    "url": "https://huggingface.co/api/collections/Yuxiang007/gui-agent-689d9f3701de4072f3d60dcd",
+    "homepage": "https://huggingface.co/collections/Yuxiang007/gui-agent-689d9f3701de4072f3d60dcd",
+    "parser": "huggingface_collection",
+    "scope": [
+      "research"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-xlangai-model-index",
+    "name": "XLANG Lab — official Hub model index",
+    "url": "https://huggingface.co/api/models?author=xlangai&limit=100&sort=lastModified&direction=-1",
+    "homepage": "https://huggingface.co/xlangai",
+    "parser": "huggingface_models",
+    "scope": [
+      "models",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-ui-tars-model-index",
+    "name": "ByteDance Seed UI-TARS — official Hub model index",
+    "url": "https://huggingface.co/api/models?author=ByteDance-Seed&search=UI-TARS&limit=100",
+    "homepage": "https://huggingface.co/ByteDance-Seed",
+    "parser": "huggingface_models",
+    "scope": [
+      "models",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-gui-owl-model-index",
+    "name": "mPLUG GUI-Owl — official Hub model index",
+    "url": "https://huggingface.co/api/models?author=mPLUG&search=GUI&limit=100",
+    "homepage": "https://huggingface.co/mPLUG",
+    "parser": "huggingface_models",
+    "scope": [
+      "models",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-gta1-model-index",
+    "name": "Salesforce GTA1 — official Hub model index",
+    "url": "https://huggingface.co/api/models?author=Salesforce&search=GTA1&limit=100",
+    "homepage": "https://huggingface.co/Salesforce",
+    "parser": "huggingface_models",
+    "scope": [
+      "models",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-microsoft-gui-model-index",
+    "name": "Microsoft GUI models — official Hub model index",
+    "url": "https://huggingface.co/api/models?author=microsoft&search=GUI&limit=100",
+    "homepage": "https://huggingface.co/microsoft",
+    "parser": "huggingface_models",
+    "scope": [
+      "models",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-omniparser-model-index",
+    "name": "Microsoft OmniParser — official Hub model index",
+    "url": "https://huggingface.co/api/models?author=microsoft&search=OmniParser&limit=100",
+    "homepage": "https://huggingface.co/microsoft",
+    "parser": "huggingface_models",
+    "scope": [
+      "models",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-opengvlab-gui-dataset-index",
+    "name": "OpenGVLab GUI datasets — official Hub dataset index",
+    "url": "https://huggingface.co/api/datasets?author=OpenGVLab&search=GUI&limit=100",
+    "homepage": "https://huggingface.co/OpenGVLab",
+    "parser": "huggingface_datasets",
+    "scope": [
+      "datasets",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-osunlp-mind2web-dataset-index",
+    "name": "OSU NLP Mind2Web datasets — official Hub dataset index",
+    "url": "https://huggingface.co/api/datasets?author=osunlp&search=Mind2Web&limit=100",
+    "homepage": "https://huggingface.co/osunlp",
+    "parser": "huggingface_datasets",
+    "scope": [
+      "datasets",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "role": "discovery",
+    "id": "release-stepfun-android-dataset-index",
+    "name": "StepFun Android datasets — official Hub dataset index",
+    "url": "https://huggingface.co/api/datasets?author=stepfun-ai&search=Android&limit=100",
+    "homepage": "https://huggingface.co/stepfun-ai",
+    "parser": "huggingface_datasets",
+    "scope": [
+      "datasets",
+      "release-monitoring",
+      "bounded-publisher-window"
+    ],
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "id": "survey-bibliography-backfill",
+    "name": "Survey bibliography references with no other registered listing (arXiv identifier query)",
+    "url": "https://export.arxiv.org/api/query?id_list=1812.09195,1902.07257,2106.00133,2602.06485&max_results=4",
+    "homepage": "https://arxiv.org",
+    "role": "discovery",
+    "parser": "arxiv_query",
+    "scope": [
+      "research"
+    ],
+    "rationale": "Semantic Scholar reference lists cite these papers: arXiv 2508.04482, the OS Agents survey, cites 1812.09195, 1902.07257 and 2106.00133 (graph/v1 references response SHA-256 36a8acc7358ff284cc227b93ca186a392e7ca38c6f63191272465a410d45be5b), and arXiv 2604.27955, the RL GUI agents survey, cites 2602.06485 (SHA-256 3fce6c09be42e313a7f0fa9bd16fd66854ab4ee95df1a264002ec83f17eda609); both retrieved 2026-11-05 18:31 UTC. No registered source lists them. The unauthenticated Semantic Scholar API rate-limits repeated requests, so the scheduled scan queries the cited arXiv identifiers directly.",
+    "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
   }
 ]

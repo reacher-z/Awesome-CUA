@@ -66817,5 +66817,191 @@
     ],
     "reviewed_sha256": "61bad2a8e6ab56df159237d75f1081e1246b294183b31ef7abe47193ac26b541",
     "reviewed_at": "2026-10-18T11:55:00Z"
+  },
+  {
+    "name": "Taxy AI",
+    "kind": "agent",
+    "url": "https://github.com/TaxyAI/browser-extension",
+    "environments": [
+      "web"
+    ],
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 2639, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Adept AI",
+    "kind": "product",
+    "url": "https://www.adept.ai",
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 2985, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Cykel",
+    "kind": "product",
+    "url": "https://www.cykel.ai",
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 3804, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "iMean.AI",
+    "kind": "product",
+    "url": "https://www.imean.ai",
+    "verify_terms": [
+      "iMean"
+    ],
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 4364, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Minion AI",
+    "kind": "product",
+    "url": "https://minion.ai",
+    "verify_terms": [
+      "Minion"
+    ],
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 4746, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Sentius",
+    "kind": "product",
+    "url": "https://www.sentius.ai",
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 5146, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Test Driver",
+    "kind": "product",
+    "url": "https://testdriver.ai",
+    "verify_terms": [
+      "TestDriver",
+      "Test Driver"
+    ],
+    "review_note": "Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 5314, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Enhans ACT agents",
+    "kind": "product",
+    "url": "https://enhans.ai",
+    "verify_terms": [
+      "Enhans"
+    ],
+    "review_note": "Named, without a link, on the Online-Mind2Web leaderboard (Hugging Face Space osunlp/Online_Mind2Web_Leaderboard, agent tables retrieved 2026-11-05); this URL is the publisher site the entry names. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Hark",
+    "kind": "product",
+    "url": "https://hark.com",
+    "review_note": "Named, without a link, on the Online-Mind2Web leaderboard (Hugging Face Space osunlp/Online_Mind2Web_Leaderboard, agent tables retrieved 2026-11-05); this URL is the publisher site the entry names. Relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "id": "component:inclusionai/aworld-rl/v2p",
+    "name": "V2P-7B",
+    "kind": "model",
+    "url": "https://github.com/inclusionAI/AWorld-RL/tree/main/V2P",
+    "verify_terms": [
+      "V2P"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/inclusionAI/AWorld-RL/main/V2P/README.md"
+    ],
+    "review_note": "Linked from the ScreenSpot-Pro leaderboard entry \"V2P-7B\" (retrieved 2026-11-05) as a sub-directory of inclusionAI/AWorld-RL (formerly inclusionAI/AgenticLearning, repository ID 1011694681). A component record needs its own review of the sub-directory README; relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "id": "component:volcengine/vephone/mobileuse",
+    "name": "MobileUseAgent",
+    "kind": "agent",
+    "url": "https://github.com/volcengine/vePhone/tree/main/Quick%20Start/MobileUse",
+    "verify_terms": [
+      "MobileUse",
+      "Mobile Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/volcengine/vePhone/main/Quick%20Start/MobileUse/readme.md"
+    ],
+    "review_note": "Linked from the AndroidWorld leaderboard entry \"MobileUseAgent\" (retrieved 2026-11-05) as a sub-directory of volcengine/vePhone. A component record needs its own review of the sub-directory README; relevance, kind and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "jackwener/DSH-Android",
+    "kind": "agent",
+    "url": "https://github.com/jackwener/DSH-Android",
+    "environments": [
+      "android"
+    ],
+    "verify_terms": [
+      "DSH-Android"
+    ],
+    "review_note": "Tagged `phone-agent` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 12 of 44 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "brandlll-lee/PhoneBot-Android",
+    "kind": "agent",
+    "url": "https://github.com/brandlll-lee/PhoneBot-Android",
+    "environments": [
+      "android"
+    ],
+    "verify_terms": [
+      "PhoneBot-Android"
+    ],
+    "review_note": "Tagged `phone-agent` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 12 of 44 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Runa-Asahi/tsuki-phone-agent",
+    "kind": "agent",
+    "url": "https://github.com/Runa-Asahi/tsuki-phone-agent",
+    "environments": [
+      "android"
+    ],
+    "verify_terms": [
+      "tsuki-phone-agent"
+    ],
+    "review_note": "Tagged `phone-agent` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 12 of 44 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "RobinHeZtto/Open-AutoGLM-Android",
+    "kind": "agent",
+    "url": "https://github.com/RobinHeZtto/Open-AutoGLM-Android",
+    "environments": [
+      "android"
+    ],
+    "verify_terms": [
+      "Open-AutoGLM-Android"
+    ],
+    "review_note": "Tagged `phone-agent` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 12 of 44 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "nitic-nlp-team/webnavix",
+    "kind": "agent",
+    "url": "https://github.com/nitic-nlp-team/webnavix",
+    "environments": [
+      "web"
+    ],
+    "verify_terms": [
+      "webnavix"
+    ],
+    "review_note": "Tagged `web-navigation` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 8 of 31 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
+    "editorial_reviewed": false
+  },
+  {
+    "name": "Nimra-Fayaz/AI-Powered-Navigation",
+    "kind": "agent",
+    "url": "https://github.com/Nimra-Fayaz/AI-Powered-Navigation",
+    "environments": [
+      "web"
+    ],
+    "verify_terms": [
+      "AI-Powered-Navigation"
+    ],
+    "review_note": "Tagged `web-navigation` on GitHub (topic search retrieved 2026-11-05). That tag is not a scheduled candidate query because only 8 of 31 of its repositories are in scope (docs/reviews/2026-11-05-candidate-topic-expansion.md). Relevance and summary await editorial review.",
+    "editorial_reviewed": false
   }
 ]

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 138,
+  "excluded_records": 141,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -1229,6 +1229,40 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2312.11805",
+      "name": "Gemini: A Family of Highly Capable Multimodal Models",
+      "url": "https://arxiv.org/abs/2312.11805",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces the Gemini family of general multimodal models and their image, audio, video and text benchmarks; it does not describe an agent or resource for operating graphical interfaces. The OSWorld leaderboard links it only as a base model.",
+      "reviewed_at": "2026-11-05T21:21:58Z",
+      "metadata_fingerprint": "502f515f99d2a33b45b5075ff4c79a3d2d78497bbfd6386daea6d304b53cfe72",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2312.02051%2C2312.10170%2C2312.11805%2C2401.03428%2C2401.03568%2C2401.04088%2C2402.01680%2C2402.01817%2C2402.02716%2C2402.03300%2C2402.03578%2C2402.15116%2C2403.05530%2C2403.07548%2C2403.08978%2C2403.09333%2C2403.11481%2C2403.12881%2C2403.14508%2C2404.00282%2C2404.04902%2C2405.11106%2C2405.11143%2C2405.14093%2C2405.16256%2C2406.09455%2C2406.14088%2C2406.16707%2C2407.06886%2C2407.11691%2C2408.09071%2C2408.15769%2C2409.02813%2C2409.03215%2C2409.04465%2C2409.12191%2C2409.17146%2C2409.18142%2C2409.18807%2C2409.19256%2C2410.02052%2C2410.21220%2C2410.21276%2C2411.05755%2C2411.17933%2C2412.10400%2C2412.14171%2C2501.02189%2C2501.02863%2C2501.07278&max_results=50",
+        "sha256": "4f8c52402475481097941fac66a689892def7057d6129b23f62f53f31e53690a",
+        "retrieved_at": "2026-11-05T21:13:41Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2403.05530",
+      "name": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "url": "https://arxiv.org/abs/2403.05530",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces the Gemini 1.5 general multimodal model family and its long-context recall over documents, video and audio; it does not describe an agent or resource for operating graphical interfaces. The OSWorld leaderboard links it only as a base model.",
+      "reviewed_at": "2026-11-05T21:21:58Z",
+      "metadata_fingerprint": "86a7025f8b6f6073ed41422482f9af9508ace99d4bbe3b3ad4b9e5ad1b53b614",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2312.02051%2C2312.10170%2C2312.11805%2C2401.03428%2C2401.03568%2C2401.04088%2C2402.01680%2C2402.01817%2C2402.02716%2C2402.03300%2C2402.03578%2C2402.15116%2C2403.05530%2C2403.07548%2C2403.08978%2C2403.09333%2C2403.11481%2C2403.12881%2C2403.14508%2C2404.00282%2C2404.04902%2C2405.11106%2C2405.11143%2C2405.14093%2C2405.16256%2C2406.09455%2C2406.14088%2C2406.16707%2C2407.06886%2C2407.11691%2C2408.09071%2C2408.15769%2C2409.02813%2C2409.03215%2C2409.04465%2C2409.12191%2C2409.17146%2C2409.18142%2C2409.18807%2C2409.19256%2C2410.02052%2C2410.21220%2C2410.21276%2C2411.05755%2C2411.17933%2C2412.10400%2C2412.14171%2C2501.02189%2C2501.02863%2C2501.07278&max_results=50",
+        "sha256": "4f8c52402475481097941fac66a689892def7057d6129b23f62f53f31e53690a",
+        "retrieved_at": "2026-11-05T21:13:41Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2404.06647",
       "name": "From Protoscience to Epistemic Monoculture: How Benchmarking Set the Stage for the Deep Learning Revolution",
       "url": "https://arxiv.org/abs/2404.06647",
@@ -1819,6 +1853,23 @@
         "url": "https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=600&max_results=100&sortBy=submittedDate&sortOrder=descending",
         "sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
         "retrieved_at": "2026-10-16T06:36:50Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2507.06261",
+      "name": "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities",
+      "url": "https://arxiv.org/abs/2507.06261",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces the Gemini 2.X general model family and its reasoning, multimodal and long-context results; agentic workflows appear only as a prospective use, without a graphical-interface agent contribution. The GUI grounding survey cites it as a base model.",
+      "reviewed_at": "2026-11-05T21:21:58Z",
+      "metadata_fingerprint": "79372a3b0a75baa70a3ab63e3ec260320122d178078e2c6767259cb8ee51d097",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2501.12485%2C2502.01456%2C2502.03214%2C2502.03971%2C2502.06776%2C2502.12561%2C2502.13417%2C2502.17419%2C2502.20694%2C2503.02878%2C2503.16365%2C2503.20036%2C2504.07491%2C2504.12682%2C2505.03733%2C2505.05262%2C2505.05895%2C2505.07062%2C2505.10978%2C2505.17629%2C2505.20075%2C2505.23678%2C2505.24298%2C2505.24876%2C2506.00520%2C2506.01952%2C2506.06287%2C2506.14079%2C2506.19998%2C2506.24045%2C2507.01006%2C2507.04370%2C2507.06261%2C2507.10202%2C2507.10644%2C2507.11662%2C2507.23773%2C2508.09736%2C2508.16271%2C2508.16763%2C2508.18265%2C2508.19828%2C2508.20018%2C2508.21475%2C2509.02547%2C2509.08826%2C2509.08827%2C2509.11067%2C2509.13313%2C2509.21733&max_results=50",
+        "sha256": "62b85cd4bee4c668046d5f6eb67dedef915ba699d6765891016403c863691a73",
+        "retrieved_at": "2026-11-05T21:13:58Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

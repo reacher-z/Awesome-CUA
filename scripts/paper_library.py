@@ -3,7 +3,7 @@ from collections import Counter, defaultdict
 import html
 from urllib.parse import urlencode
 from catalog import TOPICS as VOCABULARY
-from publication_metadata import publication, record_date_text, record_year
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, record_date_text, record_year
 from site_config import SITE
 from specifications import safe_href
 
@@ -149,7 +149,9 @@ def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1
                 body.append('<span class="paper-survey">' + tr('Survey', '综述') + '</span>')
             body.append('</div><div class="paper-entry-main"><h3><a href="' + path + '">' + esc(row['name']) + '</a></h3>')
             authors = row.get('authors', [])
-            if authors:
+            if authors_omitted(row):
+                body.append('<p class="paper-authors"><a href="' + safe_href(source) + '">' + esc(tr(*AUTHORS_OMITTED)) + '</a></p>')
+            elif authors:
                 names = ', '.join(authors[:2])
                 if len(authors) > 2:
                     names += tr(' + ' + str(len(authors) - 2) + (' author' if len(authors) == 3 else ' authors'), ' 等 ' + str(len(authors)) + ' 位作者')

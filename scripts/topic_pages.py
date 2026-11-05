@@ -10,7 +10,7 @@ from urllib.parse import urlencode
 
 from export_citations import encode_citations
 from paper_library import PAGE_SIZE, PLATFORMS, TOPICS
-from publication_metadata import record_date_text
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, record_date_text
 from site_config import SITE
 
 
@@ -223,7 +223,9 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, numb
             if date:
                 body += ['<time datetime="', date, '">', date, '</time>'] if len(date) == 10 else ['<span>', date, '</span>']
             body += ['</div><div class="topic-resource-main"><h3><a href="', path, '">', esc(row['name']), '</a></h3>']
-            if row.get('authors'):
+            if authors_omitted(row):
+                body += ['<p class="topic-resource-authors"><a href="', safe_href(primary), '">', esc(tr(*AUTHORS_OMITTED)), '</a></p>']
+            elif row.get('authors'):
                 authors = ', '.join(row['authors'][:2])
                 if len(row['authors']) > 2:
                     authors += tr(' et al.', ' 等 ' + str(len(row['authors'])) + ' 位作者')

@@ -13,7 +13,7 @@ from specifications import PROFILE_KEYS, comparison_body, profile_export, resour
 from agent_pages import agent_guide_body, RELEASES_URL
 from export_citations import citation_bibtex, citation_csl
 from paper_library import library_pages, library_path, library_years, paper_library
-from publication_metadata import publication, format_date_parts, record_date_text, record_year
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, format_date_parts, record_date_text, record_year
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE
@@ -133,11 +133,13 @@ def listing(rows):
 def publication_body(record):
     pub=publication(record)
     if not pub:return ''
-    facts=[('Title',pub['title']),('Authors',', '.join(pub['authors'])),
+    facts=[('Title',pub['title']),('Authors',None if authors_omitted(record) else ', '.join(pub['authors'])),
            ('Publication date (recorded precision)',format_date_parts(pub['date_parts'])),
            ('Venue',pub.get('venue')),('Publisher',pub.get('publisher')),('Series',pub.get('series')),
            ('Volume',pub.get('volume')),('Issue',pub.get('issue')),('Pages',pub.get('pages')),('DOI',pub.get('doi'))]
-    body='<section class="publication-record"><h2>Publication record</h2><dl class="page-facts">'+''.join('<div><dt>'+esc(key)+'</dt><dd>'+esc(value)+'</dd></div>' for key,value in facts if value)+'</dl>'
+    rows=[(key,esc(value)) for key,value in facts if value]
+    if authors_omitted(record):rows.insert(1,('Authors','<a href="'+safe_href(pub['url'])+'">'+esc(AUTHORS_OMITTED[0])+'</a>'))
+    body='<section class="publication-record"><h2>Publication record</h2><dl class="page-facts">'+''.join('<div><dt>'+esc(key)+'</dt><dd>'+value+'</dd></div>' for key,value in rows)+'</dl>'
     body+='<p><a href="'+safe_href(pub['url'])+'">Publication source ↗</a>'
     if pub.get('pdf_url'):body+=' · <a href="'+safe_href(pub['pdf_url'])+'">Publisher or author PDF ↗</a>'
     body+='</p><p><a href="'+resource_path(record)+'publication-citation.bib" download>Publication BibTeX</a> · <a href="'+resource_path(record)+'publication-citation.csl.json" download>Publication CSL JSON</a></p>'
@@ -187,12 +189,14 @@ def resource_body(record, lookup, incoming=None, pending_review=None):
         if snapshot.get('updated_at'):body+='<p>Version updated: '+esc(snapshot['updated_at'])+'.</p>'
         body+='<p>This identifies the retained arXiv metadata snapshot; newly observed changes require separate review.</p>'
         if snapshot.get('abstract_sha256'):body+='<details><summary>Abstract fingerprint</summary><code>'+esc(snapshot['abstract_sha256'])+'</code></details>'
-    if r["authors"]:body+='<h2>Authors</h2><p>'+esc(', '.join(r["authors"]))+'</p>'
+    if authors_omitted(r):body+='<h2>Authors</h2><p class="authors-omitted"><a href="'+safe_href((snapshot or {}).get('versioned_url') or r["url"])+'">'+esc(AUTHORS_OMITTED[0])+'</a></p>'
+    elif r["authors"]:body+='<h2>Authors</h2><p>'+esc(', '.join(r["authors"]))+'</p>'
     preferred='arxiv:'+r['identifiers']['preferred_arxiv'] if r['identifiers'].get('preferred_arxiv') else None
     if preferred and preferred in lookup:
         body+='<h2>Preferred paper record</h2><p>The retained source identifies this as an alternate bibliographic record. Follow <a href="'+resource_path(lookup[preferred])+'">'+esc(lookup[preferred]['name'])+'</a> for the preferred arXiv identity. These records should not be counted as independent works.</p>'
     if r['kind'] in {'paper','survey'}:
         body+='<h2>Cite this paper</h2><p><a href="'+resource_path(r)+'citation.bib" download>Download BibTeX</a> · <a href="'+resource_path(r)+'citation.csl.json" download>Download CSL JSON</a></p><p>Citations preserve the selected source edition, its authors and recorded date precision. Unrecorded venues and identifiers are omitted.</p>'
+        if authors_omitted(r):body+='<p>This catalog does not list the authors, so these citation files omit them; take the author list from the paper.</p>'
         body+=publication_body(r)
     if r["kind"] not in {"paper","survey"} or any(r["licenses"].values()):
         body+='<h2>What licenses are recorded?</h2><p>Code, training data, weights, and documents can have different terms. A blank declaration means unknown, not unrestricted use.</p><dl class="page-facts">'
@@ -232,12 +236,13 @@ def resource_markdown(r, pending_review=None):
     hold=reviewer_hold(r,pending_review)
     if hold:
         lines+=['','## Recorded reviewer hold','',markdown_literal(hold),'',f'- Review ledger: {SITE}/downloads/coverage.json']
-    if r["authors"]:lines+=['','## Authors','',', '.join(r["authors"])]
+    if authors_omitted(r):lines+=['','## Authors','',f'[{AUTHORS_OMITTED[0]}]({(r["details"].get("arxiv_snapshot") or {}).get("versioned_url") or r["url"]})']
+    elif r["authors"]:lines+=['','## Authors','',', '.join(r["authors"])]
     if r['kind'] in {'paper','survey'}:
         lines+=['','## Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json']
     pub=publication(r)
     if pub:
-        lines+=['','## Publication record','', '- Title: '+pub['title'], '- Authors: '+', '.join(pub['authors']),
+        lines+=['','## Publication record','', '- Title: '+pub['title'], '- '+(AUTHORS_OMITTED[0]+' ('+pub['url']+')' if authors_omitted(r) else 'Authors: '+', '.join(pub['authors'])),
                 '- Publication date (recorded precision): '+(format_date_parts(pub['date_parts']) or 'not recorded'),
                 '- Publication source: '+pub['url'],
                 '- Publication BibTeX: '+SITE+resource_path(r)+'publication-citation.bib',

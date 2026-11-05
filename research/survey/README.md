@@ -22,6 +22,8 @@ The production site may copy and verify a reviewed static artifact separately. T
 
 `fixtures/frozen-catalog-bibliography.json` contains the **70 original paper/survey records actually cited from the pinned catalog**, without changing their fields. Each entry retains its stable citation key and source-record SHA-256. The record hash is computed over UTF-8 JSON with sorted keys, compact separators, and non-ASCII characters preserved. The fixture also records the original full-catalog fingerprint and source commit. Its exact file fingerprint is pinned in the builder.
 
+A record may instead carry `authors_omitted: true` with empty author lists, as the production catalog shows it; the history comparison and the re-export below apply that same omission to the pinned object and accept no other difference. Such a reference shows "Authors: see the paper" with a link to the cited edition.
+
 The subset cannot recreate the full catalog's SHA-256; that fingerprint records the catalog from which the subset was exported. The reviewed fixture's own hash and per-record hashes verify the offline input. The builder additionally checks citation titles, ordered author lists, and inspected arXiv versions against the reading ledgers. It never substitutes the mutable `data/catalog.jsonl` in the current checkout.
 
 If the pinned Git object is already available, the default build additionally compares all 70 records against `git show <pinned-commit>:data/catalog.jsonl`. If that object or Git itself is unavailable, as in a shallow checkout, the verified fixture is sufficient. The builder never fetches missing history. To skip even the local history probe:

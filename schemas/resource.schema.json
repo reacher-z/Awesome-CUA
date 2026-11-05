@@ -129,6 +129,10 @@
         "type": "string"
       }
     },
+    "authors_omitted": {
+      "const": true,
+      "description": "Optional. The catalog does not list this record's authors: authors is empty, and readers consult the linked source for the author list. Pages and exports show 'Authors: see the paper' instead of names."
+    },
     "identifiers": {
       "type": "object",
       "additionalProperties": {
@@ -627,6 +631,32 @@
               "paper",
               "survey"
             ]
+          }
+        }
+      }
+    },
+    {
+      "description": "An omitted author list is empty, including any recorded publication edition's author list.",
+      "if": {
+        "required": [
+          "authors_omitted"
+        ]
+      },
+      "then": {
+        "properties": {
+          "authors": {
+            "maxItems": 0
+          },
+          "details": {
+            "properties": {
+              "publication": {
+                "properties": {
+                  "authors": {
+                    "maxItems": 0
+                  }
+                }
+              }
+            }
           }
         }
       }

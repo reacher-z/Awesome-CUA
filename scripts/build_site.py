@@ -99,7 +99,7 @@ def write_site(destination):
                 related[relation['target_id']].add(row['id']);related[row['id']].add(relation['target_id'])
                 incoming[relation['target_id']].append({'source_id':row['id'],'type':relation['type'],'evidence_url':relation['evidence_url']})
     index={'coverage':{k:coverage[k] for k in ['as_of_utc','total_records','curated_records','metadata_only_records','by_kind','unindexed_candidates','sources','excluded_records','arxiv_archive_records']},
-        'topics':{topic:[entry['en'],entry['zh']] for topic,entry in TOPICS.items()},'records':[{**{k:row[k] for k in keys},'page_url':resource_path(row),
+        'topics':{topic:[entry['en'],entry['zh']] for topic,entry in TOPICS.items()},'records':[{**{k:row[k] for k in keys},**({'authors_omitted':True} if row.get('authors_omitted') is True else {}),'page_url':resource_path(row),
         'paper_version':row.get('details',{}).get('arxiv_snapshot',{}).get('version'),
         'paper_source_url':row.get('details',{}).get('arxiv_snapshot',{}).get('versioned_url'),
         'paper_date':record_date_text(row),

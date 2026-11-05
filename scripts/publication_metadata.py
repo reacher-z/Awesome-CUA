@@ -8,6 +8,24 @@ PUBLICATION_TYPES = frozenset({'conference-paper', 'journal-article', 'report', 
 DOI_PATTERN = re.compile(r'10\.\d{4,9}/\S+', re.I)
 PUBLICATION_TEXT = ('venue', 'publisher', 'series', 'volume', 'issue', 'pages', 'date_basis', 'event_dates', 'identity_basis', 'notes')
 PUBLICATION_FIELDS = {'type', 'title', 'authors', 'date_parts', 'url', 'pdf_url', 'evidence_urls', 'doi', *PUBLICATION_TEXT}
+# Shown wherever a record with authors_omitted would list names: English and Chinese.
+AUTHORS_OMITTED = ('Authors: see the paper', '作者见原文')
+
+
+def authors_omitted(record):
+    """Whether the catalog lists no authors for this record; readers consult its linked source."""
+    return isinstance(record, dict) and record.get('authors_omitted') is True
+
+
+def omit_authors(record):
+    """Return a copy of a record that lists no authors, in either its own or its publication's author list."""
+    record = copy.deepcopy(record)
+    record['authors'] = []
+    record['authors_omitted'] = True
+    edition = publication(record)
+    if edition is not None and 'authors' in edition:
+        edition['authors'] = []
+    return record
 
 
 def checked_date_parts(parts):

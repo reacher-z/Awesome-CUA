@@ -251,6 +251,8 @@ class ScanTests(unittest.TestCase):
         self.assertEqual([r['outcome'] for r in state['receipts']], ['redirect_not_followed', 'unavailable', 'accepted'])
         self.assertEqual(run['unknown_requests'], 2)
         self.assertEqual(scan.settled_unknown_requests(state['receipts'], run['id']), 2)
+        # The search shard is still pending when the request budget runs out.
+        self.assertEqual(run['status'], 'request_budget')
         # Every scan changes the catalog, so a new cohort restarts at index 0: it asks none of the settled names again.
         self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other', 'review_status': 'curated'}])
         self.calls.clear()
@@ -260,6 +262,7 @@ class ScanTests(unittest.TestCase):
         self.assertEqual(run['unknown_requests'], 0)
         cohort = next(q for q in state['queries'] if q['id'] == 'existing:' + run['input_id'])
         self.assertEqual((cohort['next_index'], cohort['status']), (3, 'exhausted'))
+        self.assertEqual(run['status'], 'finished')
         # After the recheck window the names are asked again; a transient failure never settles a name.
         self.timer.seconds += 31 * 86400
         self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other-2', 'review_status': 'curated'}])
@@ -271,6 +274,19 @@ class ScanTests(unittest.TestCase):
         state, run = self.execute([response(repo(1, 'public-owner/moved')), response({'message': 'Not Found'}, 404)], **options)
         self.assertEqual(names(), ['moved', 'gone'])
         self.assertIn('github-repository:1', state['records'])
+
+    def test_a_round_whose_only_gaps_are_settled_answers_finishes(self):
+        self.write_inputs([{'id': 'github:public-owner/moved', 'url': 'https://github.com/public-owner/moved', 'provider': 'github',
+                            'discovered_in': []}])
+        state, run = self.execute([response({'message': 'Moved Permanently'}, 301), response(page([]))], max_requests=2, existing_budget=1)
+        self.assertEqual((run['unknown_requests'], run['status']), (1, 'finished'))
+        state, run = self.execute([], max_requests=1, existing_budget=1)
+        self.assertEqual((run['requests_attempted'], run['status']), (0, 'finished'))
+        # An unsettled failure of the same request still leaves the round partial.
+        self.write_inputs([{'id': 'github:public-owner/flaky', 'url': 'https://github.com/public-owner/flaky', 'provider': 'github',
+                            'discovered_in': []}])
+        state, run = self.execute([response({'message': 'Server Error'}, 502)], max_requests=1, existing_budget=1)
+        self.assertEqual((run['unknown_requests'], run['status']), (1, 'partial'))
 
     def test_a_quarantined_direct_answer_is_retried_rather_than_settled(self):
         self.write_inputs([{'id': 'github:public-owner/forked', 'url': 'https://github.com/public-owner/forked', 'provider': 'github',

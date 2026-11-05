@@ -1180,7 +1180,9 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
     pending_count = sum(q['status'] == 'pending' for q in state['queries'])
     run['finished_at'] = now(); run['deferred_queries'] = pending_count
     run['deferred_query_ids'] = [q['id'] for q in state['queries'] if q['status'] == 'pending']
-    run['status'] = stopped or ('request_budget' if pending_count and run['requests_attempted'] >= max_requests else 'partial' if pending_count or run['unknown_requests'] or run['rejected_rows'] or any(q['status'] in {'partial_results', 'blocked_single_day_window', 'partial_api_window'} for q in state['queries']) else 'finished')
+    # Settled answers stay counted as unknown requests, but they are final, so they do not leave the round partial.
+    unsettled = run['unknown_requests'] - settled_unknown_requests(state['receipts'], run['id'])
+    run['status'] = stopped or ('request_budget' if pending_count and run['requests_attempted'] >= max_requests else 'partial' if pending_count or unsettled or run['rejected_rows'] or any(q['status'] in {'partial_results', 'blocked_single_day_window', 'partial_api_window'} for q in state['queries']) else 'finished')
     persist()
     return state, run
 

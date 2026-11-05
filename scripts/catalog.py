@@ -618,6 +618,13 @@ def discover(args):
                 'request_attempted': False, 'unique_resources': 0, 'run_started_at': started, 'provider_host': host}
             print(f"RETIRED {source['id']} since {retired['date']}: not fetched; retained provenance unchanged", flush=True)
             continue
+        if errors := source_option_errors(source):
+            # An unusable declaration is not requested, so it cannot draw a rate limit that defers valid sources on the host.
+            manifests[source['id']] = {'id': source['id'], 'url': source['url'], 'ok': False, 'state': 'failed',
+                'error': 'Invalid discovery source: ' + '; '.join(errors), 'request_attempted': False,
+                'unique_resources': 0, 'run_started_at': started, 'provider_host': host}
+            print(f"FAILED {source['id']}: invalid declaration; not fetched", flush=True)
+            continue
         deferred = host in rate_limited_hosts
         if deferred:
             info, body = {'url': source['url'], 'retrieved_at': now(), 'ok': False,

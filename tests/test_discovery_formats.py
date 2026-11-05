@@ -70,8 +70,10 @@ class SectionAndDoiTests(unittest.TestCase):
         self.enterContext(contextlib.redirect_stdout(io.StringIO()))
         self.source = {"id": "survey", "name": "Survey", "url": "https://raw.githubusercontent.com/o/survey/main/README.md",
                        "homepage": "https://github.com/o/survey", "sections": ["a. related surveys", "Multimodal Agents"]}
+        self.requests = []
 
     def fetch(self, url, refresh=False):
+        self.requests.append(url)
         return {"url": url, "ok": True, "status": 200, "sha256": sha(SURVEY.encode()), "retrieved_at": "2026-11-05T00:00:00Z"}, SURVEY.encode()
 
     def discover(self, source):
@@ -132,6 +134,20 @@ class SectionAndDoiTests(unittest.TestCase):
                                  ["hub: id_pattern must be a regular expression of at most 200 characters"])
         with self.assertRaisesRegex(ValueError, "sections is not an option of the arxiv_query parser"):
             catalog.source_links({**self.source, "parser": "arxiv_query"}, b"")
+
+    def test_an_unusable_declaration_is_reported_without_a_request(self):
+        self.discover(self.source)
+        before = catalog.read_jsonl(self.path / "candidates.jsonl")
+        self.requests.clear()
+        catalog.write_json(self.path / "sources.json", [{**self.source, "doi_links": "yes"}])
+        catalog.discover(types.SimpleNamespace(refresh=True, limit=0))
+        run = catalog.read_json(self.path / "discovery-runs.json")[0]
+        self.assertEqual(self.requests, [])
+        self.assertEqual({key: run[key] for key in ("ok", "state", "request_attempted", "unique_resources", "error")},
+                         {"ok": False, "state": "failed", "request_attempted": False, "unique_resources": 0,
+                          "error": "Invalid discovery source: doi_links, when present, must be true"})
+        # Earlier occurrences stay, as after any failed pass.
+        self.assertEqual(catalog.read_jsonl(self.path / "candidates.jsonl"), before)
 
 
 class SpreadsheetTests(unittest.TestCase):

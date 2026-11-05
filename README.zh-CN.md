@@ -10,6 +10,13 @@
 
 [English](README.md) · **简体中文**
 
+## 推荐基准
+
+| 项目 | 评测任务 |
+| --- | --- |
+| [**WebsiteBench**](https://github.com/TIGER-AI-Lab/WebsiteBench) | 通过浏览器探索，重建完整的网站前后端。 |
+| [**ClawBench**](https://github.com/TIGER-AI-Lab/ClawBench) | 评测浏览器智能体完成日常线上任务的能力。 |
+
 <a href="https://awesomecua.github.io/?lang=zh"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></a>
 
 **[搜索与筛选](https://awesomecua.github.io/?lang=zh)** · **[研究论文](https://awesomecua.github.io/zh/papers/)** · **[按主题浏览](https://awesomecua.github.io/zh/topics/)** · **[数据与 Agent](https://awesomecua.github.io/zh/data/)**

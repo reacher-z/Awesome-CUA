@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLISH = ROOT / "automation" / "publish.yml"
 STEP = "Compare the source catalog head with the published revision"
 HEAD = "a" * 40
+# The website repository; its name is also its GitHub Pages host.
+REPOSITORY = "AwesomeCUA/awesomecua.github.io"
 OTHER = "b" * 40
 
 
@@ -75,7 +77,7 @@ class PublicationGateStepTests(unittest.TestCase):
             (self.site / "data" / "build-info.json").write_text(json.dumps(published))
         env = {**os.environ, "PATH": f"{self.tmp / 'bin'}{os.pathsep}{os.environ['PATH']}", "SOURCE_HEAD": head,
                "GITHUB_EVENT_NAME": event, "GITHUB_OUTPUT": str(self.tmp / "output"), "GITHUB_STEP_SUMMARY": str(self.tmp / "summary"),
-               "GITHUB_REPOSITORY": "AwesomeCUA/awesomecua.github.io", "GITHUB_RUN_ID": "7", "CURL_LOG": str(self.tmp / "curl.log"),
+               "GITHUB_REPOSITORY": REPOSITORY, "GITHUB_RUN_ID": "7", "CURL_LOG": str(self.tmp / "curl.log"),
                "COMMIT_TIME": str(int(time.time()) - 60 * committed_minutes_ago)}
         env.pop("LIVE_BODY", None)
         if live is not None or live_body is not None:
@@ -93,7 +95,7 @@ class PublicationGateStepTests(unittest.TestCase):
         self.assertEqual(outputs, {"publish": "false", "source_commit": HEAD})
         self.assertIn(f"::notice title=Nothing new to publish::Source commit {HEAD} is already live", completed.stdout)
         # The live record is read from the Pages host that this repository's name designates.
-        self.assertEqual((self.tmp / "curl.log").read_text(), "https://awesomecua.github.io/data/build-info.json\n")
+        self.assertEqual((self.tmp / "curl.log").read_text(), "https://" + REPOSITORY.split("/", 1)[1] + "/data/build-info.json\n")
 
     def test_scheduled_check_publishes_a_new_source_commit(self):
         completed, outputs = self.decide("schedule", {"source_commit": OTHER}, live=OTHER)

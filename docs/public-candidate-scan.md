@@ -55,9 +55,17 @@ Existing GitHub candidates without a successful retained primary response are
 considered first, ordered by distinct discovery-source count and stable name.
 Known repository aliases resolve before requests. `--existing-budget` caps this
 phase per invocation; topic shards can use the remaining request budget. Its
-cursor persists. An unavailable existing candidate is recorded as an unknown
-attempt and the cursor advances, so a permanent 404 cannot block the queue.
-There is no automatic repeated probing of that completed seed within an epoch.
+cursor persists. A settled answer about one name is recorded once, the cursor
+advances, and the phase continues with the next name in the same invocation. A
+settled answer is a permanent redirect (HTTP 301 or 308, for a renamed or
+transferred repository; the redirect is not followed), a 404, or a response whose
+row the public-only policy rejects. Unavailable answers count as unknown
+attempts. The scheduled scan changes its input files on almost every run, so each
+run usually starts a new seed cohort at the first seed. Later cohorts therefore
+skip a name with a settled answer for 30 days (`SETTLED_SEED_RECHECK`) and then
+ask once more; without this, one renamed repository was requested first by every
+scan and stopped the phase. Network errors, server errors, rate limits and
+unparseable bodies settle nothing and are retried by a later run.
 If input fingerprints change, a new seed cohort is created, unfinished old seed
 cursors are marked `superseded_input`, and previously observed repository data
 and search-shard progress remain intact.

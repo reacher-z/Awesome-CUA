@@ -255,7 +255,8 @@ def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
         validation=phase.get('durable_validation',{})
         if validation.get('ok') is False:
             problems.append('Candidate snapshot integrity: '+(validation.get('error') or 'invalid durable triplet'))
-    failed_sources=[r['id'] for r in source_runs if not r.get('ok')]
+    # A retired source is documented in the registry and no longer fetched, so it is not a gap of this scan.
+    failed_sources=[r['id'] for r in source_runs if not r.get('ok') and r.get('state')!='retired']
     successful_query=lambda r:r.get('state')=='success' and r.get('evidence',{}).get('ok') and not r.get('parse_error')
     failed_queries=[r['id'] for r in hf_runs if not successful_query(r)]
     if failed_sources:problems.append('Discovery sources failed: '+', '.join(failed_sources))
@@ -335,11 +336,12 @@ def run_round(config,budget):
         phases[1].update(ok=False,error='No complete receipt for the current paper-discovery run; previous successes are not reused.')
     status,problems=summarize_phases(phases,source_runs,hf_runs,read_jsonl(DATA/'harvest-failures.jsonl'))
     papers=read_jsonl(DATA/'papers.jsonl');candidates=read_jsonl(DATA/'candidates.jsonl');finished=now()
+    retired_sources=sum(r.get('state')=='retired' for r in source_runs)
     new_papers=[{'id':r['id'],'name':r['name'],'url':r['url'],'review_status':'metadata_verified'} for r in papers if r['id'] not in old_papers]
     report={'id':'scan:'+started,'schema_version':1,'status':status,'started_at':started,'finished_at':finished,'run_url':run_url,
         'schedule':{'timezone':config['timezone'],'times_local':config['scan_times_local']},'before':before,'after':counts(),
         'new_papers':new_papers,'new_candidate_count':sum(r['id'] not in old_candidates for r in candidates),
-        'pending_metadata_changes':len(read_jsonl(DATA/'metadata-updates.jsonl')),'source_fetches':{'successful':sum(bool(r.get('ok')) for r in source_runs) if phases[0]['ok'] else 0,'total':len(source_runs)},
+        'pending_metadata_changes':len(read_jsonl(DATA/'metadata-updates.jsonl')),'source_fetches':{'successful':sum(bool(r.get('ok')) for r in source_runs) if phases[0]['ok'] else 0,'total':len(source_runs)-retired_sources,**({'retired':retired_sources} if retired_sources else {})},
         'paper_searches':{'successful':sum(r.get('state')=='success' for r in hf_runs),'total':hf_report.get('configured_query_count',0) if hf_current else 0,
             'unique_identifiers':hf_report.get('unique_identifiers',0) if hf_current else 0,'new_candidates':hf_report.get('new_candidate_count',0) if hf_current else 0},
         'candidate_observations':{k:v for k,v in candidate.items() if k not in {'name','baseline_files','ready_to_publish'}},
@@ -360,9 +362,13 @@ def run_round(config,budget):
         with open(summary_file,'a',encoding='utf-8') as f:
             f.write('## AwesomeCUA scan\n\n'+summary+'\n\n'+f'Scheduled at {", ".join(config["scan_times_local"])} {config["timezone"]}.\n\n')
             f.write('\n'.join('- '+n for n in notes)+'\n')
-    # scan.yml fails a separate job on this output, after the scan job has committed this run's data.
-    if repeated and os.getenv('GITHUB_OUTPUT'):
-        with open(os.getenv('GITHUB_OUTPUT'),'a',encoding='utf-8') as f:f.write('repeated_partial=true\n')
+    if os.getenv('GITHUB_OUTPUT'):
+        # The health-tracking job copies the status and recorded gaps into the scan tracking issue.
+        delimiter='SCAN_NOTES_'+os.urandom(8).hex()
+        with open(os.getenv('GITHUB_OUTPUT'),'a',encoding='utf-8') as f:
+            f.write(f'status={status}\nnotes<<{delimiter}\n'+''.join(n.replace('\r',' ').replace('\n',' ')+'\n' for n in notes)+delimiter+'\n')
+            # scan.yml fails a separate job on this output, after the scan job has committed this run's data.
+            if repeated:f.write('repeated_partial=true\n')
     return 1 if status=='failed' else 0
 
 

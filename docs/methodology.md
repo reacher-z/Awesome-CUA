@@ -98,7 +98,7 @@ The scheduled recent query covers a 14-day first-submission window ending at the
 
 A complete, successful result, including a valid zero-result feed, is reused within that UTC day with its original retrieval timestamps. Changing the query invalidates a narrower same-day snapshot; failed or partial searches are also retried by a later scan. The existing result ceiling and shared network budget still apply, and a truncated result never counts as complete. This is a local UTC cache policy following the API's recommendation to cache an identical query within its daily publication cycle; the API defines date-query bounds in GMT. [arXiv API manual](https://info.arxiv.org/help/api/user-manual.html)
 
-All three daily workflow runs still attempt to refresh all configured discovery documents and the Hugging Face paper searches. Recent-query reuse only skips that arXiv request. The 14-day discovery window does not provide revision monitoring for every historical paper in the archive.
+Every scheduled workflow run still attempts to refresh all configured discovery documents and the Hugging Face paper searches. Recent-query reuse only skips that arXiv request. The 14-day discovery window does not provide revision monitoring for every historical paper in the archive.
 
 ## Performance comparisons
 

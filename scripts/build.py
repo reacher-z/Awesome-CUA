@@ -327,6 +327,16 @@ def validate_sources(sources):
         parts = urllib.parse.urlsplit(source["homepage"]) if isinstance(source.get("homepage"), str) else None
         if not parts or parts.scheme != "https" or not parts.netloc:
             errors.append(f"{source.get('id', '<missing>')}: discovery-source homepage must be an https URL")
+        if "retired" in source:
+            retired = source["retired"]
+            try:
+                valid = (isinstance(retired, dict) and set(retired) == {"date", "reason"} and isinstance(retired["date"], str)
+                         and dt.date.fromisoformat(retired["date"]).isoformat() == retired["date"]
+                         and isinstance(retired["reason"], str) and len(retired["reason"].strip()) >= 20)
+            except ValueError:
+                valid = False
+            if not valid:
+                errors.append(f"{source.get('id', '<missing>')}: a retired discovery source needs exactly an ISO 'date' and a documented 'reason'")
     return errors
 
 
@@ -703,7 +713,8 @@ def documents(rows, report):
         "| Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for s in report["sources"]:
         status = s["snapshot"] or {}
-        lines.append(f"| [{md(s['name'])}]({s['url']}) | {s['discovered']} | {s['indexed']} | {s['curated']} | {s['excluded']} | {s.get('set_aside',0)} | {s['unindexed']} | {'OK' if status.get('ok') else 'FAILED'} · {status.get('retrieved_at', '')[:10]} |")
+        fetch = f"RETIRED · {status.get('retired_on', '')}" if status.get("state") == "retired" else f"{'OK' if status.get('ok') else 'FAILED'} · {status.get('retrieved_at', '')[:10]}"
+        lines.append(f"| [{md(s['name'])}]({s['url']}) | {s['discovered']} | {s['indexed']} | {s['curated']} | {s['excluded']} | {s.get('set_aside',0)} | {s['unindexed']} | {fetch} |")
     search = report["primary_search"]
     discovery = report.get('paper_discovery', {})
     if discovery:

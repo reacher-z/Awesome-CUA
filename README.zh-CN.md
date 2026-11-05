@@ -31,7 +31,7 @@
 
 [覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.com/) · [中文主页](https://awesomecua.com/zh/)
 
-资源发现计划每日执行三次，时间为 **UTC 00:17、08:17 和 16:17**。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+资源发现计划每两小时执行一次，时间为 **UTC 00:07、02:07、04:07、06:07、08:07、10:07、12:07、14:07、16:07、18:07、20:07 和 22:07**。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
 
 **供人、RAG 系统和智能体使用——克隆完整目录：**
 

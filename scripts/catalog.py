@@ -402,6 +402,14 @@ def discover(args):
     started = now()
     for source in sources:
         host = urllib.parse.urlsplit(source['url']).hostname
+        retired = source.get('retired')
+        if retired:
+            # A retired document is no longer requested; its earlier occurrences stay as historical provenance.
+            manifests[source['id']] = {'id': source['id'], 'url': source['url'], 'ok': False, 'state': 'retired',
+                'retired_on': retired['date'], 'error': 'Retired source: ' + retired['reason'],
+                'request_attempted': False, 'unique_resources': 0, 'run_started_at': started, 'provider_host': host}
+            print(f"RETIRED {source['id']} since {retired['date']}: not fetched; retained provenance unchanged", flush=True)
+            continue
         deferred = host in rate_limited_hosts
         if deferred:
             info, body = {'url': source['url'], 'retrieved_at': now(), 'ok': False,

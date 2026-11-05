@@ -2550,19 +2550,7 @@
         "versioned_url": "https://arxiv.org/abs/2312.08914v3"
       },
       "publication": {
-        "authors": [
-          "Wenyi Hong",
-          "Weihan Wang",
-          "Qingsong Lv",
-          "Jiazheng Xu",
-          "Wenmeng Yu",
-          "Junhui Ji",
-          "Yan Wang",
-          "Zihan Wang",
-          "Yuxiao Dong",
-          "Ming Ding",
-          "Jie Tang"
-        ],
+        "authors": [],
         "date_basis": "Year from publisher citation metadata and month from the same page's embedded BibTeX; no day is supplied.",
         "date_parts": [
           2024,
@@ -2588,53 +2576,10 @@
         "volume": null
       },
       "citation_edition": "record",
+      "authors_omitted": true,
       "manuscript_read_level": "selected_fulltext_sections_read"
     },
-    "note": "First published: 2023-12-14; Recorded arXiv version: v3; Recorded version updated: 2024-12-27T06:56:18Z.",
-    "author": [
-      {
-        "literal": "Wenyi Hong"
-      },
-      {
-        "literal": "Weihan Wang"
-      },
-      {
-        "literal": "Qingsong Lv"
-      },
-      {
-        "literal": "Jiazheng Xu"
-      },
-      {
-        "literal": "Wenmeng Yu"
-      },
-      {
-        "literal": "Junhui Ji"
-      },
-      {
-        "literal": "Yan Wang"
-      },
-      {
-        "literal": "Zihan Wang"
-      },
-      {
-        "literal": "Yuxuan Zhang"
-      },
-      {
-        "literal": "Juanzi Li"
-      },
-      {
-        "literal": "Bin Xu"
-      },
-      {
-        "literal": "Yuxiao Dong"
-      },
-      {
-        "literal": "Ming Ding"
-      },
-      {
-        "literal": "Jie Tang"
-      }
-    ],
+    "note": "First published: 2023-12-14; Recorded arXiv version: v3; Recorded version updated: 2024-12-27T06:56:18Z; Authors: see the paper (https://arxiv.org/abs/2312.08914v3); this catalog does not list them.",
     "issued": {
       "date-parts": [
         [

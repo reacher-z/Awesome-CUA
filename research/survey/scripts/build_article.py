@@ -26,7 +26,7 @@ SURVEY = ROOT / 'research/survey'
 PIN = '87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db'
 CATALOG_SHA = '7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f'
 FROZEN_BIBLIOGRAPHY = SURVEY / 'fixtures/frozen-catalog-bibliography.json'
-FROZEN_BIBLIOGRAPHY_SHA = '0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb'
+FROZEN_BIBLIOGRAPHY_SHA = 'c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64'
 RECORD_HASH_METHOD = 'sha256-utf8-json-sorted-keys-compact-v1'
 TITLE = 'Computer-Use Agents: Methods, Evaluation, Human Agency, and Research Assets'
 CANONICAL = 'https://awesomecua.github.io/survey/'
@@ -148,7 +148,8 @@ def export_frozen_bibliography(destination):
     for record in map(json.loads, data.splitlines()):
         if record['kind'] in {'paper', 'survey'} and citation_key(record) in keys:
             if record['id'] in omitted:
-                record = omit_authors(record)
+                # Keep the catalog's sorted key order, so authors_omitted follows authors.
+                record = dict(sorted(omit_authors(record).items()))
             entries.append({'citation_key': citation_key(record), 'record_sha256': record_sha256(record), 'record': record})
     entries.sort(key=lambda item: item['citation_key'])
     fixture = {'schema_version': 1, 'source_commit': PIN, 'catalog_git_path': 'data/catalog.jsonl', 'catalog_sha256': CATALOG_SHA, 'record_hash_method': RECORD_HASH_METHOD, 'selection': 'Original paper/survey records from the pinned catalog whose stable citation keys occur in this manuscript. Fresh-search citations and extra references are separate inputs.', 'record_count': len(entries), 'records': entries}

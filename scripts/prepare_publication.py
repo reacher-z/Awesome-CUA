@@ -13,6 +13,7 @@ from build import task_navigator
 from topic_pages import reconcile_topic_exports
 from export_candidates import candidate_publication_plan, candidate_copy_ignores, apply_candidate_publication
 from survey_bundle import PAGE as SURVEY_PAGE, publication_plan as survey_publication_plan, apply_publication as apply_survey_publication
+from privacy_guard import require_clean, tree_files
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -88,6 +89,8 @@ def main():
     readme+=['## Automatic updates','',f'[Source catalog and scan code](https://github.com/reacher-z/Awesome-CUA) · [Scan status]({SITE}/updates/)','', f'Discovery is scheduled every two hours at {scan_times}. This website checks for a new source commit at {publish_checks} and rebuilds from validated source data only when there is one; each publication retains its own quality gate. GitHub scheduling can be delayed; the status page records actual completion times.','', 'New discoveries are bibliographic metadata or candidates until a separate editorial review. The publishing workflow uses repository-scoped GitHub tokens and does not require a stored personal access token.','']
     readme[0:0]=['<p align="center">',f'  <a href="{SITE}/"><img src="badges/featured-by-awesomecua-laurel.svg" alt="Featured by Awesome CUA" width="220"></a>','</p>','']
     (site/'README.md').write_text(clean_text('\n'.join(readme)),encoding='utf-8')
+    # The whole snapshot, including files left by earlier publications, must not name a protected person.
+    require_clean(tree_files(site),'publication snapshot')
     if args.skip_profile:
         print(f'Prepared {incoming["indexable_pages"]} indexable pages and the public README; profile left to its own checkout.')
         return
@@ -98,6 +101,7 @@ def main():
     profile_text=profile_text.replace(f"**{report['total_records']:,} resource records** · **{report['curated_records']:,} reviewed** · **{len(KINDS)} categories**",f'![Live catalog counts]({SITE}/badges/catalog.svg)')
     profile_text+=f'\n[Scan status · every 2 hours]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'
     profile_path.write_text(profile_text,encoding='utf-8')
+    require_clean([profile_path],'organization profile')
     print(f'Prepared {incoming["indexable_pages"]} indexable pages and updated public README/profile. Review diffs before committing.')
 
 

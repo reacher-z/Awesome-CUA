@@ -21,6 +21,7 @@ from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
 from survey_bundle import copy_bundle as copy_survey_bundle
+from privacy_guard import require_clean, tree_files
 
 
 def version_script_imports(destination):
@@ -45,7 +46,7 @@ def replaceable(destination):
     return not destination.exists() or destination.is_dir() and not destination.is_symlink() and (not any(destination.iterdir()) or (destination/'data/search-manifest.json').is_file() and not (destination/'.git').exists())
 
 
-def build_site(output=None):
+def build_site(output=None, check=None):
     destination=Path(output) if output else ROOT/'dist'/'site'
     if not replaceable(destination):raise ValueError(f'Refusing to replace {destination}: build into an empty directory or a previous site build.')
     destination.parent.mkdir(parents=True,exist_ok=True)
@@ -54,6 +55,8 @@ def build_site(output=None):
     try:
         staging.chmod(0o755)
         manifest,count=write_site(staging)
+        # An optional check sees the complete staged site; if it raises, the previous build stays in place.
+        if check:check(staging)
         if destination.exists():shutil.rmtree(destination)
         staging.rename(destination)
     except BaseException:
@@ -134,4 +137,8 @@ def write_site(destination):
 
 if __name__=='__main__':
     sys.stdout.reconfigure(encoding='utf-8')
-    build_site(sys.argv[1] if len(sys.argv)>1 else None)
+    # Command-line builds (CI, the scheduled scan, publication and releases) refuse output that names a protected
+    # person before it replaces the previous build.
+    checked=[]
+    build_site(sys.argv[1] if len(sys.argv)>1 else None,check=lambda staging:checked.append(require_clean(tree_files(staging),'website')))
+    print(f'Checked {checked[0]:,} website files for protected personal names.')

@@ -217,7 +217,7 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `enrichment.jsonl` | Command output | `catalog.py enrich` |
 | `arxiv-search.json` | Command output | `catalog.py search-arxiv` |
 | `candidates.jsonl` | Command output | `catalog.py discover`, `discover_papers.py`, `catalog.py search-arxiv`, `scan.py` |
-| `papers.jsonl`, `metadata-updates.jsonl` | Command output | `catalog.py harvest`, `catalog.py search-arxiv`, `scan.py`; `backfill_arxiv_snapshots.py --write` also writes `papers.jsonl` |
+| `papers.jsonl`, `metadata-updates.jsonl` | Command output | `catalog.py harvest`, `catalog.py search-arxiv`, `scan.py`; `backfill_arxiv_snapshots.py --write` and `privacy_guard.py --omit-protected-authors` also write `papers.jsonl` |
 | `harvest-failures.jsonl` | Command output | `catalog.py harvest`, run by `scan.py` |
 | `discovery-runs.json` | Command output | `catalog.py discover`, run by `scan.py` |
 | `research-discovery.json`, `paper-discovery-status.json` | Command output | `discover_papers.py`, run by `scan.py` |

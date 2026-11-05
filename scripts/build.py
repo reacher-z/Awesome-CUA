@@ -73,6 +73,7 @@ def source_records(with_scope=False):
         bibliography = {key: copy.deepcopy(value) for key,value in row.get('details', {}).items()
                         if key in {'arxiv_snapshot','publication'}}
         row.update(scope="relevance_pending", details=bibliography)
+    seen = set()
     for editorial in read_json(DATA / "editorial.json", []):
         if 'publication' in editorial.get('details', {}):
             raise ValueError('Publisher bibliographic facts belong in publications.jsonl, separately from editorial relevance approval')
@@ -80,13 +81,23 @@ def source_records(with_scope=False):
         if not parsed:
             raise ValueError(f"Invalid editorial URL: {editorial['url']}")
         rid = editorial.get("id", parsed[0])
+        if rid in seen:
+            # A second entry would publish one record and queue the other, so the record's state would depend on file order.
+            raise ValueError('Duplicate editorial entry: ' + rid)
+        seen.add(rid)
         if aliases.get(parsed[0],rid)!=rid:
             raise ValueError('Editorial URL belongs to canonical publication resource '+aliases[parsed[0]]+'; do not create '+rid)
         if editorial.get('kind') in {'paper','survey'} and (rid not in records or parsed[0]!=rid):
             raise ValueError('Paper editorial entry requires its retained canonical bibliography identity: '+rid)
+        screen = editorial.get('relevance_screen')
+        if screen is not None and (screen not in {'core', 'adjacent'} or editorial.get('kind') not in {'paper', 'survey'}):
+            raise ValueError('relevance_screen must be core or adjacent on a paper or survey entry: ' + rid)
         ev = evidence.get(rid)
         if not editorial.get("editorial_reviewed") or not ev or not ev.get("content_matched") or editorial.get("reviewed_sha256") != ev.get("sha256"):
-            reason, cause = editorial.get("review_note", "editorial review pending"), "reviewer_hold"
+            if screen and editorial.get('scope', 'core') != screen:
+                raise ValueError('A screened proposal keeps the scope its relevance_screen proposes: ' + rid)
+            # A screened proposal read its matching receipt for relevance only; it now needs an annotation, not a scope decision.
+            reason, cause = editorial.get("review_note", "editorial review pending"), "annotation_pending" if screen else "reviewer_hold"
             if not ev or not ev.get("content_matched"):
                 # A failed fetch has no snapshot for the note to go stale against, so the reviewer's decision stays visible.
                 reason, cause = "primary evidence unresolved: " + (ev or {}).get("error", "content mismatch") + ("; " + editorial["review_note"] if editorial.get("review_note") else ""), "unresolved_evidence"
@@ -658,7 +669,8 @@ def matrix_lines(matrix):
 def pending_breakdown(pending):
     n = collections.Counter(p.get("cause") for p in pending)
     return (f"{len(pending)} proposals: {n['unresolved_evidence']} with unresolved primary evidence, {n['unreviewed_snapshot']} whose current source snapshot awaits review, "
-        f"{n['reviewer_hold']} held by a reviewer after reading the current source, and {n['scope_revalidation']} awaiting another scope review.")
+        f"{n['reviewer_hold']} held by a reviewer after reading the current source, {n['annotation_pending']} screened as relevant from the current source and awaiting an editorial annotation, "
+        f"and {n['scope_revalidation']} awaiting another scope review.")
 
 
 def documents(rows, report):
@@ -716,7 +728,7 @@ def documents(rows, report):
         raise ValueError("Generated paths assigned twice: " + ", ".join(sorted(hubs.keys() & files.keys())))
     files.update(hubs)
     lines = ["# Coverage and quality ledger", "", f"Evidence snapshot through **{report['as_of_utc']}**. Generated from committed source receipts.", "",
-        f"- {report['total_records']:,} resource records: {report['curated_records']:,} curated; {report['metadata_only_records']:,} bibliographic metadata only.",
+        f"- {report['curated_records']:,} curated resources. Another {report['metadata_only_records']:,} records await review with bibliographic metadata only; the active catalog file holds {report['total_records']:,} records in all.",
         f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities. This count overlaps the status counts above.",
         f"- {report['arxiv_archive_records']:,} retained arXiv metadata records; {report['excluded_records']:,} explicit scope exclusions are outside the active catalog.",
         f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved after accounting for scope exclusions and for {report.get('non_resource_candidates',0):,} reviewed non-resource links and {report.get('alias_candidates',0):,} other addresses of indexed resources, which stay in the review queue with their reasons.",
@@ -767,13 +779,14 @@ def shield(label, message, color):
 
 
 def badges(rows, report):
-    curated = report["curated_records"]
     # Keep the small status strip secondary to the README's editorial banner.
-    # Counts still come from this build; workflow status stays live on main.
+    # Counts still come from this build; workflow status stays live on main. Only curated records
+    # count as resources; records awaiting review and discovered candidates keep their own labels.
     style = '?style=flat-square&labelColor=303447'
     return ("\n" + " ".join([
-        f"[![Catalog records]({shield('records', format(report['total_records'], ','), '4856df')}{style})](data/catalog.jsonl)",
-        f"[![Source-reviewed records]({shield('source-reviewed', format(curated, ','), '4856df')}{style})](docs/coverage.md)",
+        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4856df')}{style})](docs/coverage.md)",
+        f"[![Records awaiting review]({shield('awaiting review', format(report['metadata_only_records'], ','), '606779')}{style})](docs/coverage.md)",
+        f"[![Discovered candidates]({shield('candidates', format(report['unindexed_candidates'], ','), '606779')}{style})](data/review-queue.jsonl)",
         "[![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
         f"[![MIT license]({shield('license', 'MIT', '606779')}{style})](LICENSE)"]) + "\n")
 
@@ -792,33 +805,36 @@ README_TEXT = {
         "labels": {"topics": "Research by topic", "bibliography": "Full bibliography", "survey": "Surveys", "learning": "Learning resources", "dataset": "Datasets", "benchmark": "Benchmarks",
             "model": "Models and checkpoint releases", "agent": "Agents", "framework": "Frameworks", "infrastructure": "Infrastructure", "tool": "Tools",
             "product": "Products", "company": "Publishers and brands"},
-        "by_platform": "By platform:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records",
+        "by_platform": "By platform:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records, including those awaiting review",
         "kinds": {"benchmark": "Benchmarks", "model": "Models", "dataset": "Datasets", "framework": "Frameworks", "agent": "Agents"},
         "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
-        "stats": ("**{total:,} resource records** · **{curated:,} curated** · **{arxiv:,} paper and survey records** · **{sources} discovery documents**\n\n"
-            "Evidence through `{as_of}`. {metadata:,} records have bibliographic verification only; {unindexed:,} discovered identifiers remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
+        "stats": ("**{curated:,} curated resources** · **{papers:,} reviewed papers and surveys** · **{sources} discovery documents**\n\n"
+            "Evidence through `{as_of}`. Only curated resources are counted above. Listed separately: **{metadata:,} records awaiting review** have bibliographic verification only, "
+            "and **{unindexed:,} discovered candidates** remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
             "{excluded:,} scope exclusions retain their original metadata in the archive. Counts overlap as explained below.")},
     "zh": {"explore_header": "| 研究与训练 | 工程与产业 |",
         "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "learning": "学习资源", "dataset": "数据集", "benchmark": "基准",
             "model": "模型与权重版本", "agent": "智能体", "framework": "框架", "infrastructure": "基础设施", "tool": "工具",
             "product": "产品", "company": "发布方与品牌"},
-        "by_platform": "按平台：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录",
+        "by_platform": "按平台：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录（含待审阅）",
         "kinds": {"benchmark": "基准", "model": "模型", "dataset": "数据集", "framework": "框架", "agent": "智能体"},
         "all": "全部 {n} 项 →", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
         "recent_header": "| 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |",
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
             "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
-        "stats": ("**{total:,} 条资源记录** · **{curated:,} 条已审阅** · **{arxiv:,} 条论文与综述记录** · **{sources} 个发现来源文档**\n\n"
-            "证据截至 `{as_of}`。{metadata:,} 条记录仅完成书目核实；{unindexed:,} 个已发现的标识符尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
+        "stats": ("**{curated:,} 条已审阅资源** · **{papers:,} 篇已审阅论文与综述** · **{sources} 个发现来源文档**\n\n"
+            "证据截至 `{as_of}`。以上只统计已审阅资源。单独列出：**{metadata:,} 条待审阅记录**仅完成书目核实；"
+            "**{unindexed:,} 个已发现候选**尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
             "{excluded:,} 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。")},
 }
 
 
-def stats_block(report, lang="en"):
-    return "\n\n" + README_TEXT[lang]["stats"].format(total=report["total_records"], curated=report["curated_records"], arxiv=report["bibliographic_records"],
+def stats_block(report, lang="en", reviewed_papers=0):
+    """README headline: curated resources only, with records awaiting review and candidates labelled separately."""
+    return "\n\n" + README_TEXT[lang]["stats"].format(curated=report["curated_records"], papers=reviewed_papers,
         sources=len(report["sources"]), as_of=report["as_of_utc"], metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
         set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0),
         excluded=report["excluded_records"]) + "\n\n"
@@ -982,10 +998,11 @@ def build(args):
     files["data/references.jsonl"] = "".join(json.dumps(e, ensure_ascii=False, sort_keys=True) + "\n" for e in sorted(edges, key=lambda e: e["id"]))
     reviewed_at = {(e.get("id") or editorial_identity(e)[0]): e.get("reviewed_at") for e in read_json(DATA / "editorial.json", []) if e.get("editorial_reviewed")}
     shared_badges = badges(rows, report)
+    reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
     for filename, lang in (("README.md", "en"), ("README.zh-CN.md", "zh")):
         path = ROOT / filename
         if path.exists():
-            blocks = {"STATS": stats_block(report, lang), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
+            blocks = {"STATS": stats_block(report, lang, reviewed_papers), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
                 "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():

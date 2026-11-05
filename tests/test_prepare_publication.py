@@ -89,9 +89,10 @@ class PreparePublicationTests(unittest.TestCase):
     def readme_counts(self, rows):
         readme = (self.site / 'README.md').read_text()
         curated = sum(r['review_status'] == 'curated' for r in rows)
-        papers = sum(r['id'].startswith('arxiv:') for r in rows)
-        self.assertIn(f'**{len(rows)} resource records** · **{curated} curated** · **{papers} paper and survey records** · **0 discovery documents**', readme)
-        kinds = collections.Counter(r['kind'] for r in rows)
+        papers = sum(r['review_status'] == 'curated' and r['kind'] in {'paper', 'survey'} for r in rows)
+        self.assertIn(f'**{curated} curated resources** · **{papers} reviewed papers and surveys** · **0 discovery documents**', readme)
+        self.assertNotIn('resource records**', readme)
+        kinds = collections.Counter(r['kind'] for r in rows if r['review_status'] == 'curated')
         table = [line for line in readme.splitlines() if '[Open directory]' in line]
         self.assertEqual(table, [f'| {name} | {kinds[kind]} | [Open directory]({SITE}/categories/{kind}/) |' for kind, name in KINDS.items()])
         return readme

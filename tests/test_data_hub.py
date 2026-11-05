@@ -238,6 +238,11 @@ class DataHubTests(unittest.TestCase):
                     self.assertIn(SITE + item['path'], values)
                     self.assertIn(item['sha256'], values)
                 self.assertIn(manifest['catalog_sha256'], values)
+                # The headline counts curated resources; the rest of the complete catalog is labelled separately.
+                counts = {item['id']: item['count']['value'] for item in manifest['artifacts']}
+                stats = markup.split('<div class="data-stats">', 1)[1].split('</div>', 1)[0]
+                self.assertTrue(stats.startswith(f"<span><strong>{counts['rag-reviewed']:,}</strong>"), stats)
+                self.assertIn(f"<strong>{counts['catalog-jsonl'] - counts['rag-reviewed']:,}</strong>", stats)
                 self.assertTrue(any(tag == 'input' and attrs.get('id') == 'data-copy-value'
                                     and 'readonly' in attrs for tag, attrs in tags))
 

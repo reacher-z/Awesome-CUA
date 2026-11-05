@@ -249,8 +249,9 @@ def data_hub_body(manifest, *, language='en', site_url=SITE):
             '</h1></div><a class="library-language" href="', '/data/' if zh else '/zh/data/', '">', 'English' if zh else '中文', '</a></div>',
             '<p class="data-intro">', tr('Choose the complete catalog, retrieval documents, citations, or a focused research subset. Counts and fingerprints come from the published files.',
              '选择完整目录、检索文档、论文引用或专题子集。条数、文件大小和指纹均来自实际导出文件。'), '</p>',
-            '<div class="data-stats"><span><strong>', f'{total:,}', '</strong> ', tr('active resources', '条当前资源'), '</span><span><strong>', f'{reviewed:,}',
-            '</strong> ', tr('reviewed resources', '条已审阅资源'), '</span><a href="/downloads/manifest.json">', tr('Complete download manifest', '完整下载清单'), ' ↗</a></div>',
+            # Headline: curated resources; the rest of the complete catalog is labelled as awaiting review, never added in.
+            '<div class="data-stats"><span><strong>', f'{reviewed:,}', '</strong> ', tr('curated resources', '条已审阅资源'), '</span><span><strong>', f'{total - reviewed:,}',
+            '</strong> ', tr('records awaiting review, not counted', '条待审阅记录（不计入）'), '</span><a href="/downloads/manifest.json">', tr('Complete download manifest', '完整下载清单'), ' ↗</a></div>',
             '<div class="data-clone"><div class="clone-command"><code>', CLONE_COMMAND, '</code>',
             copy_button(CLONE_COMMAND, tr('Copy the Git clone command', '复制 Git 克隆命令'), 'command'), '</div><p><a href="', '/zh/agents/' if zh else '/agents/', '">',
             tr('Agent & RAG guide', 'Agent 与 RAG 指南'), '</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="', '/zh/topics/' if zh else '/topics/', '">', tr('Browse topic subsets', '浏览主题子集'), '</a> · <a href="', RELEASES_URL, '">', tr('Versioned snapshots', '版本快照'), '</a></p></div>',

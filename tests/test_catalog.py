@@ -381,7 +381,14 @@ class ReadmeBlockTests(unittest.TestCase):
         table = build.explore(rows, {"bibliographic_records": 1234})
         self.assertIn("[Benchmarks](docs/benchmarks.md) · **2**", table)
         self.assertIn("[Research by topic](docs/topics.md) · **1** reviewed papers", table)
-        self.assertIn("[Full bibliography](docs/papers.md) · 1,234 paper and survey records", table)
+        self.assertIn("[Full bibliography](docs/papers.md) · 1,234 paper and survey records, including those awaiting review", table)
+
+    def test_badges_count_only_curated_resources_and_label_the_rest(self):
+        strip = build.badges([], {"curated_records": 1674, "metadata_only_records": 1962, "unindexed_candidates": 1920, "total_records": 3636})
+        self.assertIn("[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df", strip)
+        self.assertIn("[![Records awaiting review](https://img.shields.io/badge/awaiting%20review-1%2C962-", strip)
+        self.assertIn("[![Discovered candidates](https://img.shields.io/badge/candidates-1%2C920-", strip)
+        self.assertNotIn("3%2C636", strip)
 
     def test_shield_escapes_separators(self):
         self.assertEqual(build.shield("evidence through", "2026-10-17", "1d76db"), "https://img.shields.io/badge/evidence%20through-2026--10--17-1d76db")

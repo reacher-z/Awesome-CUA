@@ -107,7 +107,10 @@ class SearchPagesTests(unittest.TestCase):
     def test_homepage_is_useful_without_javascript(self):
         text=(self.dest/'index.html').read_text();p=PageParser(text)
         self.assertIn('/papers/',p.links);self.assertIn('/catalog/',p.links);self.assertIn('/data/',p.links)
-        self.assertIn(f'id="stat-resources">{len(self.rows):,}</span>',text)
+        reviewed=[row for row in self.rows if eligible(row)]
+        self.assertIn(f'id="stat-curated">{len(reviewed):,}</span>',text)
+        self.assertNotIn('id="stat-resources"',text)
+        for identity in ('stat-pending','stat-candidates','stat-sources'):self.assertRegex(text,f'id="{identity}">[0-9][0-9,]*</span>')
         self.assertIn('Computer-use agent research and resources',text)
     def test_bilingual_libraries_preserve_the_complete_reviewed_paper_set(self):
         expected={row['id'] for row in self.rows if eligible(row) and row['kind'] in {'paper','survey'}}

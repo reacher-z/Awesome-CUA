@@ -2,7 +2,7 @@
 
 Evidence snapshot through **2026-11-05T22:51:37Z**. Generated from committed source receipts.
 
-- 3,653 resource records: 1,674 curated; 1,979 bibliographic metadata only.
+- 1,674 curated resources. Another 1,979 records await review with bibliographic metadata only; the active catalog file holds 3,653 records in all.
 - 3,181 paper and survey records, including 3,167 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
 - 3,308 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
 - 5,875 discovery identifiers; 1,967 remain unresolved after accounting for scope exclusions and for 129 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
@@ -201,7 +201,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-49 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 28 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+49 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 28 held by a reviewer after reading the current source, 0 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |

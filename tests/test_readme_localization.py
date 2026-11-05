@@ -22,11 +22,22 @@ class ReadmeLocalizationTests(unittest.TestCase):
             self.assertEqual(en[key].keys(), zh[key].keys())
 
     def test_chinese_stats_keep_every_figure(self):
-        zh = build.stats_block(self.report, "zh")
-        for figure in ("2,545", "996", "2,164", "44", "2026-10-17T07:57:59Z", "1,549", "1,402", "100"):
+        zh = build.stats_block(self.report, "zh", 812)
+        for figure in ("996", "812", "44", "2026-10-17T07:57:59Z", "1,549", "1,402", "100"):
             self.assertIn(figure, zh)
-        self.assertIn("条资源记录", zh)
-        self.assertTrue(build.stats_block(self.report).startswith("\n\n**2,545 resource records**"))
+        self.assertIn("条已审阅资源", zh)
+        self.assertTrue(build.stats_block(self.report, reviewed_papers=812).startswith("\n\n**996 curated resources** · **812 reviewed papers and surveys**"))
+
+    def test_headline_counts_only_curated_resources(self):
+        for lang in ("en", "zh"):
+            with self.subTest(lang):
+                block = build.stats_block(self.report, lang, 812)
+                headline, detail = block.strip().split("\n\n")
+                self.assertNotIn("2,545", block)
+                self.assertNotIn("1,549", headline)
+                self.assertNotIn("1,402", headline)
+                self.assertIn("**1,549", detail)
+                self.assertIn("**1,402", detail)
 
     def test_chinese_tables_translate_labels_but_not_resources(self):
         rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]

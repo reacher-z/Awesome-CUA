@@ -45,9 +45,10 @@ PAGE_SIZE = 100
 SPLIT_THRESHOLD = 900
 QUERY_PROGRESS = ('status', 'next_page', 'reported_total', 'total_changed',
                   'incomplete_results_seen', 'seen_repository_ids', 'rejected_rows', 'last_attempt')
-# A renamed (permanent redirect), deleted (404) or policy-rejected repository gives the
-# same answer on every request. Later existing-candidate cohorts skip that name for this
-# long instead of retrying it first on every scan, which stalled the lane behind it.
+# A renamed or transferred (permanent redirect) or deleted (404) repository gives the same
+# answer on every request. Later existing-candidate cohorts skip that name for this long
+# instead of retrying it first on every scan, which stalled the lane behind it. A quarantined
+# direct response is not settled: it is retried, because the next answer can be acceptable.
 SETTLED_SEED_RECHECK = timedelta(days=30)
 
 
@@ -60,10 +61,18 @@ def existing_seed_url(name):
 
 
 def settled_seed_answer(receipt):
-    """True when an existing-candidate response definitively answered for that name; transient failures stay retryable."""
-    return (receipt['outcome'] in {'rejected', 'quarantined'}
-            or receipt['outcome'] == 'redirect_not_followed' and receipt['status'] in {301, 308}
+    """True when an existing-candidate request got a final answer for that name; transient failures stay retryable."""
+    return (receipt['outcome'] == 'redirect_not_followed' and receipt['status'] in {301, 308}
             or receipt['outcome'] == 'unavailable' and receipt['status'] == 404)
+
+
+def settled_unknown_requests(receipts, run_id):
+    """This run's existing-candidate requests answered by a permanent redirect or a 404.
+
+    They count as unknown requests (no metadata was accepted), but the answer is final for that name, so the
+    scan reports them as a notice instead of a gap that would make every scan partial until the names are reviewed."""
+    return sum(receipt['run_id'] == run_id and receipt['query_id'].startswith('existing:') and settled_seed_answer(receipt)
+               for receipt in receipts)
 
 
 def settled_seed_requests(state, at):
@@ -1159,7 +1168,7 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
             settled.add(receipt['request_url_sha256'])
         if not parsed:
             run['unknown_requests'] += 1
-        if (not parsed or quarantined) and not settled_seed:
+        if (not parsed and not settled_seed) or quarantined:
             attempted_failed.add(query['id'])
         state['receipts'].append(receipt)
         run['accepted_metadata_rows'] += len(receipt['accepted_repository_ids'])

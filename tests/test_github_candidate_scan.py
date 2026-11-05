@@ -240,38 +240,50 @@ class ScanTests(unittest.TestCase):
     def test_settled_existing_answers_neither_stall_the_lane_nor_repeat_in_later_cohorts(self):
         def candidate(name, refs): return {'id': 'github:' + name, 'provider': 'github', 'url': 'https://github.com/' + name,
                                            'discovered_in': [{'source_id': str(i)} for i in range(refs)]}
-        seeds = [candidate('public-owner/moved', 4), candidate('public-owner/gone', 3),
-                 candidate('public-owner/forked', 2), candidate('public-owner/live', 1)]
-        options = {'max_requests': 4, 'existing_budget': 4, 'strict_replay': True}
+        seeds = [candidate('public-owner/moved', 4), candidate('public-owner/gone', 3), candidate('public-owner/live', 2)]
+        options = {'max_requests': 3, 'existing_budget': 3, 'strict_replay': True}
         names = lambda: [url.rsplit('/', 1)[-1] for url, _ in self.calls]
         self.write_inputs(seeds)
-        # A rename, a deletion and a rejected fork each answer for one name; the lane continues past them.
+        # A rename and a deletion each answer for one name; the lane continues past them in the same run.
         state, run = self.execute([response({'message': 'Moved Permanently'}, 301), response({'message': 'Not Found'}, 404),
-                                   response(repo(3, 'public-owner/forked', fork=True)), response(repo(4, 'public-owner/live'))], **options)
-        self.assertEqual(names(), ['moved', 'gone', 'forked', 'live'])
-        self.assertEqual([r['outcome'] for r in state['receipts']], ['redirect_not_followed', 'unavailable', 'quarantined', 'accepted'])
-        self.assertEqual((run['unknown_requests'], run['rejected_rows']), (2, {'fork_or_unknown': 1}))
+                                   response(repo(3, 'public-owner/live'))], **options)
+        self.assertEqual(names(), ['moved', 'gone', 'live'])
+        self.assertEqual([r['outcome'] for r in state['receipts']], ['redirect_not_followed', 'unavailable', 'accepted'])
+        self.assertEqual(run['unknown_requests'], 2)
+        self.assertEqual(scan.settled_unknown_requests(state['receipts'], run['id']), 2)
         # Every scan changes the catalog, so a new cohort restarts at index 0: it asks none of the settled names again.
         self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other', 'review_status': 'curated'}])
         self.calls.clear()
         state, run = self.execute([response(page([]))], **options)
         self.assertEqual(len(self.calls), 1)
         self.assertIn('/search/repositories?', self.calls[0][0])
-        self.assertEqual((run['unknown_requests'], run['rejected_rows']), (0, {}))
+        self.assertEqual(run['unknown_requests'], 0)
         cohort = next(q for q in state['queries'] if q['id'] == 'existing:' + run['input_id'])
-        self.assertEqual((cohort['next_index'], cohort['status']), (4, 'exhausted'))
+        self.assertEqual((cohort['next_index'], cohort['status']), (3, 'exhausted'))
         # After the recheck window the names are asked again; a transient failure never settles a name.
         self.timer.seconds += 31 * 86400
         self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other-2', 'review_status': 'curated'}])
         self.calls.clear()
-        _, run = self.execute([response({'message': 'Server Error'}, 502)], **options)
-        self.assertEqual((names(), run['unknown_requests']), (['moved'], 1))
+        state, run = self.execute([response({'message': 'Server Error'}, 502)], **options)
+        self.assertEqual((names(), run['unknown_requests'], scan.settled_unknown_requests(state['receipts'], run['id'])), (['moved'], 1, 0))
         self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other-3', 'review_status': 'curated'}])
         self.calls.clear()
-        state, run = self.execute([response(repo(1, 'public-owner/moved')), response({'message': 'Not Found'}, 404),
-                                   response(repo(3, 'public-owner/forked', fork=True))], **options)
-        self.assertEqual(names(), ['moved', 'gone', 'forked'])
+        state, run = self.execute([response(repo(1, 'public-owner/moved')), response({'message': 'Not Found'}, 404)], **options)
+        self.assertEqual(names(), ['moved', 'gone'])
         self.assertIn('github-repository:1', state['records'])
+
+    def test_a_quarantined_direct_answer_is_retried_rather_than_settled(self):
+        self.write_inputs([{'id': 'github:public-owner/forked', 'url': 'https://github.com/public-owner/forked', 'provider': 'github',
+                            'discovered_in': [{'source_id': 'a'}]},
+                           {'id': 'github:public-owner/next', 'url': 'https://github.com/public-owner/next', 'provider': 'github',
+                            'discovered_in': []}])
+        state, run = self.execute([response(repo(5, 'public-owner/forked', fork=True))], max_requests=1, existing_budget=1, strict_replay=True)
+        self.assertEqual(([r['outcome'] for r in state['receipts']], len(self.calls)), (['quarantined'], 1))
+        self.assertEqual(scan.settled_seed_requests(state, self.timer.now()), set())
+        self.write_inputs([{'id': 'github:public-owner/forked', 'url': 'https://github.com/public-owner/forked', 'provider': 'github',
+                            'discovered_in': [{'source_id': 'a'}]}], catalog=[{'id': 'github:public-owner/other', 'review_status': 'curated'}])
+        self.execute([response(repo(5, 'public-owner/forked'))], max_requests=1, existing_budget=1, strict_replay=True)
+        self.assertTrue(self.calls[-1][0].endswith('/repos/public-owner/forked'))
 
     def test_input_changes_create_new_seed_fingerprint_without_losing_records(self):
         state, _ = self.execute([response(page([repo()]))])

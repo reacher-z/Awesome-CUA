@@ -38,16 +38,28 @@ jobs:
         run: |
           source=$(git ls-remote https://github.com/reacher-z/Awesome-CUA.git refs/heads/main | cut -f1)
           if ! printf '%s\n' "$source" | grep -Eqx '[0-9a-f]{40}'; then echo '::error::Could not read the source catalog main revision'; exit 1; fi
-          published=$(jq -r '.source_commit // empty' data/build-info.json 2>/dev/null || true)
+          committed=$(jq -r '.source_commit // empty' data/build-info.json 2>/dev/null) || committed=
+          # The snapshot is committed before deployment, so the live record decides and a failed deployment is retried.
+          # This repository's github.io name keeps answering after a custom domain is set: Pages redirects it with its path.
+          live=$(curl -fsSL --max-time 20 "https://${GITHUB_REPOSITORY#*/}/data/build-info.json" | jq -r '.source_commit // empty') || live=
+          # The Pages CDN caches that record for up to 10 minutes whatever the query string, so a fresh snapshot gets 20.
+          age=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          publish=true
           # Only a scheduled check is skipped: a push or a manual dispatch always rebuilds.
-          if [ "$GITHUB_EVENT_NAME" = schedule ] && [ "$published" = "$source" ]; then
-            publish=false
-            echo "::notice title=Nothing new to publish::Source commit $source is already published; build, snapshot commit and deployment are skipped."
-          else
-            publish=true
+          if [ "$GITHUB_EVENT_NAME" = schedule ]; then
+            if [ "$live" = "$source" ]; then
+              publish=false
+              echo "::notice title=Nothing new to publish::Source commit $source is already live; build, snapshot commit and deployment are skipped."
+            elif [ "$committed" = "$source" ] && [ -z "$live" ]; then
+              publish=false
+              echo "::warning title=Live site unreadable::Source commit $source is already in the website snapshot, but the live record could not be read; deployment is not retried now."
+            elif [ "$committed" = "$source" ] && [ "$age" -lt 1200 ]; then
+              publish=false
+              echo "::notice title=Deployment propagating::Source commit $source was committed $((age / 60)) minutes ago; the live site can still serve its cached previous record."
+            fi
           fi
           printf 'publish=%s\nsource_commit=%s\n' "$publish" "$source" >> "$GITHUB_OUTPUT"
-          printf '%s check: source `%s`, published `%s`, publish: %s\n' "$GITHUB_EVENT_NAME" "$source" "${published:-none}" "$publish" >> "$GITHUB_STEP_SUMMARY"
+          printf '%s check: source `%s`, live `%s`, committed `%s` (%s s ago), publish: %s\n' "$GITHUB_EVENT_NAME" "$source" "${live:-unreadable}" "${committed:-none}" "$age" "$publish" >> "$GITHUB_STEP_SUMMARY"
   build:
     needs: gate
     if: needs.gate.outputs.publish == 'true'

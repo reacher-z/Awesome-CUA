@@ -139,10 +139,14 @@ def candidate_phase(config):
             or type(phase.get('successful_responses')) is not int or phase['successful_responses']!=successful
             or phase.get('requests_attempted')>reservations or reservations>limits['max_requests']):
         return {**result,'ok':False,'published':False,'error':'Candidate child result differs from its staged state or shared request ledger.'}
+    from scan_github_candidates import settled_unknown_requests
+    settled=settled_unknown_requests(new_receipts,current_run['id'])
+    if phase.get('settled_unknown_requests',0)!=settled:
+        return {**result,'ok':False,'published':False,'error':'Candidate child result differs from its staged settled-answer receipts.'}
     # Derive alerts from the verified counts/status rather than trusting a child's display fields.
-    verified=candidate_stage.phase_summary({**phase,'status':current_run['status'],
+    verified=candidate_stage.phase_summary({**phase,'status':current_run['status'],'settled_unknown_requests':settled,
         'verification':{'successful_receipts_replayed':successful}},phase['started_at'])
-    phase.update({key:verified[key] for key in ('warnings','state','complete')})
+    phase.update({key:verified[key] for key in ('warnings','notices','settled_unknown_requests','state','complete')})
     return {**result,**phase,'baseline_files':baseline.fingerprints,'ready_to_publish':True,
             'network_reservations':reservations}
 
@@ -353,15 +357,18 @@ def run_round(config,budget):
     streak=next((i for i,r in enumerate(reversed(history)) if r.get('status')!='partial'),len(history))
     repeated=streak>=config.get('max_consecutive_partial',float('inf'))
     notes=problems+([f'The last {streak} scans were all partial; the recorded gaps are not clearing on their own.'] if repeated else [])
-    print(summary);print(''.join('- '+n+'\n' for n in notes),end='')
+    # Notices are final answers worth reading (for example renamed candidate repositories); they are not scan gaps.
+    notices=[n for p in phases for n in p.get('notices',[])]
+    print(summary);print(''.join('- '+n+'\n' for n in notes+notices),end='')
     summary_file=os.getenv('GITHUB_STEP_SUMMARY')
     if summary_file:
         # In Actions, annotations put each gap on the run page; a partial scan still exits 0 so its verified data is committed.
         for problem in problems:print(f'::{"error" if status=="failed" else "warning"} title=Scan {status}::'+workflow_message(problem))
         if repeated:print('::error title=Repeated partial scans::'+notes[-1])
+        for notice in notices:print('::notice title=Scan note::'+workflow_message(notice))
         with open(summary_file,'a',encoding='utf-8') as f:
             f.write('## AwesomeCUA scan\n\n'+summary+'\n\n'+f'Scheduled at {", ".join(config["scan_times_local"])} {config["timezone"]}.\n\n')
-            f.write('\n'.join('- '+n for n in notes)+'\n')
+            f.write('\n'.join('- '+n for n in notes+notices)+'\n')
     if os.getenv('GITHUB_OUTPUT'):
         # The health-tracking job copies the status and recorded gaps into the scan tracking issue.
         delimiter='SCAN_NOTES_'+os.urandom(8).hex()

@@ -55,6 +55,9 @@ def checked_summary(summary):
     for key in SUMMARY_COUNTS:
         if type(summary.get(key)) is not int or summary[key] < 0:
             raise ValueError('Invalid candidate stage count: ' + key)
+    settled = summary.get('settled_unknown_requests', 0)
+    if type(settled) is not int or not 0 <= settled <= summary['unknown_requests']:
+        raise ValueError('Invalid candidate stage count: settled_unknown_requests')
     rejected = summary.get('rejected_rows')
     if (not isinstance(rejected, dict)
             or any(not isinstance(k, str) or type(v) is not int or v < 0 for k, v in rejected.items())):
@@ -71,8 +74,13 @@ def phase_summary(summary, started):
     warnings = []
     if summary['status'] == 'rate_limited':
         warnings.append('GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.')
-    if summary['unknown_requests']:
-        warnings.append(f"{summary['unknown_requests']} GitHub candidate requests have no accepted metadata response.")
+    settled = summary.get('settled_unknown_requests', 0)
+    unanswered = summary['unknown_requests'] - settled
+    if unanswered:
+        warnings.append(f"{unanswered} GitHub candidate requests have no accepted metadata response.")
+    # Renamed or deleted repositories answer the same way every time: report them once without making the scan partial.
+    from scan_github_candidates import SETTLED_SEED_RECHECK
+    notices = [f'{settled} existing GitHub candidate names now redirect or return 404; the answers are recorded and those names are skipped for {SETTLED_SEED_RECHECK.days} days.'] if settled else []
     if sum(summary['rejected_rows'].values()):
         warnings.append(f"{sum(summary['rejected_rows'].values())} GitHub metadata rows were rejected; rejection reasons remain in the candidate scan receipt.")
     statuses = summary.get('query_status_counts', {})
@@ -83,7 +91,7 @@ def phase_summary(summary, started):
     if partial:
         warnings.append(f'{partial} GitHub search windows retain incomplete-response or pagination gaps; completion is not claimed.')
     complete = (summary['status'] == 'finished' and not summary['pending_queries']
-                and not summary['unknown_requests'] and not summary['rejected_rows'] and not blocked and not partial)
+                and not unanswered and not summary['rejected_rows'] and not blocked and not partial)
     successful = summary.get('verification', {}).get('successful_receipts_replayed', 0)
     if type(successful) is not int or not 0 <= successful <= summary['requests_attempted']:
         raise ValueError('Invalid newly verified candidate response count')
@@ -95,7 +103,8 @@ def phase_summary(summary, started):
             'successful_responses': successful,
             **{key: summary[key] for key in SUMMARY_COUNTS},
             'epoch_id': summary.get('epoch_id'), 'query_status_counts': statuses,
-            'rejected_rows': summary['rejected_rows'], 'warnings': warnings,
+            'rejected_rows': summary['rejected_rows'], 'settled_unknown_requests': settled,
+            'warnings': warnings, 'notices': notices,
             'files': summary['files'], 'published': False}
 
 

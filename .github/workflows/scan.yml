@@ -128,17 +128,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run catalog.yml --ref main -R "$GITHUB_REPOSITORY"
-  report_repeated_partial:
-    # A partial scan stays green so its verified data is committed; a run of them fails this job so GitHub sends a failure notice.
-    needs: scan
-    if: needs.scan.outputs.repeated_partial == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Fail after repeated partial scans
-        run: |
-          echo '::error title=Repeated partial scans::Consecutive scans were partial; see the scan job annotations and the warnings in data/scan-status.json.'
-          exit 1
   track_scan_health:
     # One tracking issue stays open while scans of main are unhealthy: it is edited in place on each such run and
     # closed by the next healthy run, so a long outage neither fails silently nor posts a new issue every two hours.
@@ -196,3 +185,14 @@ jobs:
               gh issue close "$number" "${repo[@]}" --reason 'not planned' --comment "Duplicate of #$tracking, which tracks scan health."
             done
           fi
+  report_repeated_partial:
+    # A partial scan stays green so its verified data is committed; a run of them fails this job so GitHub sends a failure notice.
+    needs: scan
+    if: needs.scan.outputs.repeated_partial == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fail after repeated partial scans
+        run: |
+          echo '::error title=Repeated partial scans::Consecutive scans were partial; see the scan job annotations and the warnings in data/scan-status.json.'
+          exit 1

@@ -229,9 +229,16 @@ def fetch(url, refresh=False):
 def canonical(url, *, allow_doi=False):
     """Resource identity: arXiv version folding, GitHub repo folding, URL cleanup."""
     if not isinstance(url,str):return None
-    candidate=html.unescape(url).strip()
+    url = html.unescape(url).strip()
+    # Trailing prose punctuation is not part of a link; a ")" is only when it closes nothing in the URL.
+    # Backticks, braces and backslashes, raw or percent-encoded, are Markdown, LaTeX or string-escape residue.
+    # This applies to DOI resolver links too: a DOI that ends a sentence keeps the identity of the bare DOI.
+    while tail := re.search(r"(?:[.,;:`{}\\)]|%(?:60|7B|7D|5C))\Z", url, re.I):
+        if tail[0] == ")" and url.count(")") <= url.count("("):
+            break
+        url = url[:tail.start()]
     try:
-        doi_parts=urllib.parse.urlsplit(candidate)
+        doi_parts=urllib.parse.urlsplit(url)
         if (doi_parts.hostname or '').lower() in {'doi.org','www.doi.org','dx.doi.org'}:
             if doi_parts.scheme not in {'http','https'} or doi_parts.username is not None or doi_parts.password is not None:
                 return None
@@ -246,13 +253,6 @@ def canonical(url, *, allow_doi=False):
             return 'url:'+hashlib.sha256(clean.encode()).hexdigest()[:20],clean,'url'
     except (ValueError,UnicodeError):
         return None
-    url = html.unescape(url).strip()
-    # Trailing prose punctuation is not part of a link; a ")" is only when it closes nothing in the URL.
-    # Backticks, braces and backslashes, raw or percent-encoded, are Markdown, LaTeX or string-escape residue.
-    while tail := re.search(r"(?:[.,;:`{}\\)]|%(?:60|7B|7D|5C))\Z", url, re.I):
-        if tail[0] == ")" and url.count(")") <= url.count("("):
-            break
-        url = url[:tail.start()]
     try:
         parts = urllib.parse.urlsplit(url)
     except ValueError:
@@ -320,12 +320,13 @@ XLSX_NS = {'m': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main',
 def source_option_errors(source):
     """Registry errors for a source's parser and selection keys; an unusable declaration fails before any request."""
     parser = source.get('parser', 'links')
-    if parser not in SOURCE_OPTIONS:
+    if not isinstance(parser, str) or parser not in SOURCE_OPTIONS:
         return ['unknown discovery-source parser ' + repr(parser)]
     errors = [f'{key} is not an option of the {parser} parser' for key in sorted({'sections', 'doi_links', 'id_pattern', 'min_likes'} - SOURCE_OPTIONS[parser]) if key in source]
     sections = source.get('sections')
-    if 'sections' in source and (not isinstance(sections, list) or not 1 <= len(sections) <= 20 or len(set(sections)) != len(sections)
-                                 or any(not isinstance(s, str) or not s.strip() or len(s) > 140 for s in sections)):
+    if 'sections' in source and (not isinstance(sections, list) or not 1 <= len(sections) <= 20
+                                 or any(not isinstance(s, str) or not s.strip() or len(s) > 140 for s in sections)
+                                 or len(set(sections)) != len(sections)):
         errors.append('sections must list 1-20 distinct heading texts of at most 140 characters')
     if 'doi_links' in source and source['doi_links'] is not True:
         errors.append('doi_links, when present, must be true')

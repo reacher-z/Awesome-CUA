@@ -90,6 +90,14 @@ class SectionAndDoiTests(unittest.TestCase):
         # Without a declaration every link is read, as before.
         self.assertEqual(len(catalog.source_links({"parser": "links"}, SURVEY.encode())), 6)
 
+    def test_a_doi_that_ends_a_sentence_keeps_the_bare_doi_identity(self):
+        bare = catalog.canonical("https://doi.org/10.1145/3832165", allow_doi=True)
+        for text in ["https://doi.org/10.1145/3832165.", "https://doi.org/10.1145/3832165,", "https://doi.org/10.1145/3832165);"]:
+            with self.subTest(text=text):
+                self.assertEqual(catalog.canonical(text, allow_doi=True), bare)
+        # Balanced parentheses stay part of a DOI.
+        self.assertEqual(catalog.canonical("https://doi.org/10.1002/(SICI)1097-4571", allow_doi=True)[1], "https://doi.org/10.1002/(sici)1097-4571")
+
     def test_doi_links_are_candidates_only_for_a_source_that_declares_them(self):
         self.assertEqual(sorted(self.discover(self.source)), ["arxiv:2401.00001", "github:web-arena-x/webarena"])
         candidates = self.discover({**self.source, "doi_links": True})
@@ -112,8 +120,10 @@ class SectionAndDoiTests(unittest.TestCase):
                 ("sections", [], "sections must list 1-20 distinct heading texts of at most 140 characters"),
                 ("sections", ["Agents", "Agents"], "sections must list 1-20 distinct heading texts of at most 140 characters"),
                 ("doi_links", "yes", "doi_links, when present, must be true"),
+                ("sections", [["Agents"]], "sections must list 1-20 distinct heading texts of at most 140 characters"),
                 ("min_likes", 3, "min_likes is not an option of the links parser"),
-                ("parser", "rss", "unknown discovery-source parser 'rss'")]:
+                ("parser", "rss", "unknown discovery-source parser 'rss'"),
+                ("parser", ["links"], "unknown discovery-source parser ['links']")]:
             with self.subTest(key=key, value=value):
                 self.assertEqual(build.validate_sources([{**self.source, key: value}]), ["survey: " + message])
         for value in ["(", "x" * 201, 7]:

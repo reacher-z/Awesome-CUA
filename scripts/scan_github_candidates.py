@@ -31,7 +31,11 @@ TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'browser-automation', 'android-automation',
                     'computer-use-agent', 'computer-use-agents', 'gui-grounding',
                     'browser-use', 'web-agent', 'web-agents', 'desktop-agent',
-                    'mobile-agent'})
+                    'mobile-agent',
+                    # Reviewed 2026-11-05: docs/reviews/2026-11-05-candidate-topic-expansion.md
+                    'cua', 'computer-control', 'computer-agent', 'os-agent', 'os-agents',
+                    'mobile-agents', 'android-agent', 'phone-use', 'mobile-use',
+                    'screen-understanding', 'ui-agent'})
 DEFAULT_TOPICS = ('computer-use', 'gui-agent', 'browser-automation')
 INPUTS = ('catalog.jsonl', 'candidates.jsonl', 'primary-evidence.jsonl',
           'repository-aliases.json', 'candidate-reviews.json')

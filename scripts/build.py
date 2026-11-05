@@ -11,7 +11,7 @@ import re
 import sqlite3
 import urllib.parse
 
-from catalog import ROOT, DATA, KINDS, ENVIRONMENTS, STATUSES, TOPICS, atomic_write, canonical, editorial_identity, publication_identity, read_json, read_jsonl, write_json, write_jsonl
+from catalog import ROOT, DATA, KINDS, ENVIRONMENTS, STATUSES, TOPICS, atomic_write, canonical, editorial_identity, publication_identity, read_json, read_jsonl, source_option_errors, write_json, write_jsonl
 from specifications import PREFIXES, PROFILE_KEYS, validate_profiles
 from scope_review import resolve_exclusions, scope_report
 from arxiv_metadata import validate_snapshot
@@ -351,6 +351,7 @@ def validate_sources(sources):
                 valid = False
             if not valid:
                 errors.append(f"{source.get('id', '<missing>')}: a retired discovery source needs exactly an ISO 'date' and a documented 'reason'")
+        errors.extend(f"{source.get('id', '<missing>')}: {error}" for error in source_option_errors(source))
     return errors
 
 

@@ -92,7 +92,11 @@
       "research",
       "models",
       "datasets"
-    ]
+    ],
+    "retired": {
+      "date": "2026-11-05",
+      "reason": "The upstream repository behind this list returns HTTP 404 from raw.githubusercontent.com on every scan since 2026-10-26T21:01Z and from the GitHub repository API (checked 2026-11-05), so the document was deleted or made private. Identifiers it contributed keep their evidence from its last fetched snapshot of 2026-10-26."
+    }
   },
   {
     "id": "tianyuan-cua",

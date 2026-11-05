@@ -18,6 +18,8 @@ A read-only [Hugging Face mirror](https://huggingface.co/datasets/AgPerry/awesom
 
 For repeatable ingestion, use a [tagged data release](https://github.com/reacher-z/Awesome-CUA/releases). `awesomecua-data.zip` packages the catalog, RAG documents, citations, topic subsets and their manifests together. Verify `SHA256SUMS` and retain `release-manifest.json`, the source commit and the catalog fingerprint. The ZIP contains data; the CLI commands in this guide require a source clone at that recorded commit.
 
+For lightweight access without cloning, the [static API](https://awesomecua.com/api/) serves versioned JSON and CSV: [curated resources](https://awesomecua.com/api/v1/resources.json), [curated papers](https://awesomecua.com/api/v1/papers.json), [categories](https://awesomecua.com/api/v1/categories.json), [recent changes](https://awesomecua.com/api/v1/changes.json) and, separately and flagged as unreviewed, [candidates](https://awesomecua.com/api/v1/candidates.json). [llms.txt](https://awesomecua.com/llms.txt) links the Markdown version of every kind, topic and research-library page.
+
 Read the [download manifest](https://awesomecua.com/downloads/manifest.json) to select an artifact by `path`, `format`, and `scope`. Each listed export records its actual `count.value` and `count.unit`, exact `bytes`, and `sha256`. Resource, document, citation, archive, and topic counts have different or overlapping populations; do not add them together. Verify the downloaded bytes and compare `catalog_sha256` with the RAG, citation, and topic manifests before combining snapshots. The [manifest schema](https://awesomecua.com/schemas/download-manifest.schema.json) defines the fields.
 
 ## Search before reading the whole catalog

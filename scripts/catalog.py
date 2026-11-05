@@ -25,6 +25,7 @@ import xml.etree.ElementTree as ET
 
 from arxiv_metadata import entry_snapshot, consider_paper, parse_search_feed
 from network_budget import BudgetDeferred, budget_from_environment, budgeted_urlopen
+from privacy_guard import omit_protected_authors
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / ".cache" / "http"
@@ -479,7 +480,8 @@ def arxiv_entry(entry, evidence):
     title = get("title")
     if not title:
         return None
-    return {"id": rid, "name": title, "kind": "paper", "url": url,
+    # An author list naming a protected person is never retained; see docs/maintenance.md#protected-names.
+    return omit_protected_authors({"id": rid, "name": title, "kind": "paper", "url": url,
         "aliases": [], "environments": ["unspecified"], "topics": [],
         "summary": None, "review_status": "metadata_verified",
         "published_at": get("published")[:10] or None, "updated_at": get("updated")[:10] or None,
@@ -490,7 +492,7 @@ def arxiv_entry(entry, evidence):
         "licenses": {"code": None, "data": None, "weights": None, "document": None},
         "evidence": [{"role": "primary", "method": "arxiv_api", "supports": ["name", "authors", "published_at", "updated_at", "identifiers.arxiv", "details.arxiv_snapshot"], **evidence}],
         "last_verified_at": evidence["retrieved_at"],
-        "notes": "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."}
+        "notes": "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."})
 
 
 def harvest(args):

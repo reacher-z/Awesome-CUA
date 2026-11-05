@@ -84,21 +84,21 @@
     "research/survey/sections/assets.html": "11fb06f3f79cd56c261532beb282199293efe4767e18920eb802f71218f4fae5",
     "research/survey/sections/agenda.html": "86ecec3fa6c42c5331ddb539e03dabfe5ba448a6f308b57885f2a2ff0e3bf941",
     "research/survey/evidence/context.json": "2e3210a9a6860448d8e5a2239761484bb46bc9c039becb2e0bef9d961f752888",
-    "research/survey/evidence/methods.json": "315aeee1df6318b5333ecfa1e34c5c3cad2965c8475e0fbcb9ae049ffeebd33b",
+    "research/survey/evidence/methods.json": "10f295758e2ae7c955a8f643279b44e233209c80fe2a7cc16128ccf6b918f562",
     "research/survey/evidence/evaluation.json": "f1d188d7ab2b9f41c7c764266cd8c04c3b7c0319d24cf76228deb00f7cb0e74c",
     "research/survey/evidence/root.json": "32bfaa034625d8002ab87d6e39c6d81aec2d934a7169a134d5998982756bb9a3",
     "research/survey/evidence/corpus-statistics.json": "47fd9c2b1ed89fbfe540d17721691fd7b82e82dadea2c5205c5555a6a6a38be7",
-    "research/survey/evidence/title-search.json": "661bb5b7eea1125e9f5db7edc2644581fd5941d0cecea5835e3dbb2794b091c9",
+    "research/survey/evidence/title-search.json": "970ca63afcaee31cba70d28716a26364bf04e0cfaf6e306fe8cf3307a580e662",
     "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
     "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
-    "research/survey/scripts/build_article.py": "158795eb17d12c6deb24aab11757c3b8ffc1ca87fb295832aefc7967e910c806",
+    "research/survey/scripts/build_article.py": "7f58bc6bd4410a58da96e9a1849540bb7bbc7ec901b24fcbb0cc40c42388f87c",
     "research/survey/article.css": "f70cedca3e5b0c3b48123cd280afdf7d30cc83aa4cebb6363db6ab4066f89d54",
     "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
     "research/survey/template.html": "a5f6f52a090ec551771b8076940c34644c4e27f8ec4ca49ae40dca8e9d8c8d17",
     "research/survey/figures/corpus.svg": "33bb85647bd7a42235ada6dc47ef51f7d272d98e922cf181e51495d96140b106",
     "scripts/export_citations.py": "82633d1cdccbcf818b0e9a55a7119c63390cf8805875367c2b1dc800732f6a92",
     "scripts/publication_metadata.py": "2b2f89c0584acc44ec5bf686e94c206abc85358edcc314872f5357246f5d5e82",
-    "research/survey/fixtures/frozen-catalog-bibliography.json": "0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb"
+    "research/survey/fixtures/frozen-catalog-bibliography.json": "c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64"
   },
   "files": [
     {
@@ -128,13 +128,13 @@
     },
     {
       "path": "evidence/methods.json",
-      "bytes": 152855,
-      "sha256": "3cee151d0d0cfbc659e25550d857db3b58546a79017fcc02ec2eb1757576e230"
+      "bytes": 152702,
+      "sha256": "2815157236d23ef2dd3ac24773c012337f2ff3784787325db70e0312c7b19b08"
     },
     {
       "path": "evidence/reading-index.json",
-      "bytes": 97754,
-      "sha256": "952dcab2a02e8080e372faa0864550b2433b14290a6acd3cd71c2ac0e480deff"
+      "bytes": 97601,
+      "sha256": "cfe6ae481133d2cf84a3ddc87ec98063510b30cdf925986f6636a67327f3e458"
     },
     {
       "path": "evidence/root.json",
@@ -148,27 +148,27 @@
     },
     {
       "path": "evidence/title-search.json",
-      "bytes": 725233,
-      "sha256": "b72c034d9f008d6655c31559635d4a239e394e0744fee9bbb331281a88d5cad8"
+      "bytes": 723462,
+      "sha256": "4195e1e433a52edb7c7844b5b323e22db4d84f79988d943cc49e30dd3bde8ff6"
     },
     {
       "path": "index.html",
-      "bytes": 464368,
-      "sha256": "ea4312a479c6cb125d16bd9d0b88e3239ceeb9ed0cf8e1cd5d8f15106ac7fe46"
+      "bytes": 463776,
+      "sha256": "3724e8d70060d9f5a74e8f6dfc6203d5f130b8c6bc98a3c7029347229770b19d"
     },
     {
       "path": "references.bib",
-      "bytes": 101124,
-      "sha256": "b60a0de533d985f7b313554f6b843bbe7dfcd6973d2d2a9efddcda4e388d1b95"
+      "bytes": 100850,
+      "sha256": "b3bd089f496764f0d30b736562aabe9bb762bcf014e01c617e1e3266c0760000"
     },
     {
       "path": "references.json",
-      "bytes": 218662,
-      "sha256": "596d3353d3e1741725844d9e8e2a91ccfe53628fc65d40acd59d3bffb3d449ff"
+      "bytes": 217814,
+      "sha256": "2e499e093a4e5dbdaf6e2320247cb263e1705828d6ffd6e04a97e9367a0183bc"
     }
   ],
   "frozen_bibliography_verification": {
-    "fixture_sha256": "0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb",
+    "fixture_sha256": "c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64",
     "record_count": 70,
     "record_hash_method": "sha256-utf8-json-sorted-keys-compact-v1",
     "history_check": "not_available_or_disabled; verified_pinned_fixture_used",

@@ -20,7 +20,11 @@ class CitationFileTests(unittest.TestCase):
             self.assertIn(key, self.cff)
         self.assertEqual(self.cff["cff-version"], "1.2.0")
         self.assertEqual(self.cff["type"], "dataset")
-        self.assertRegex((ROOT / "CITATION.cff").read_text(), r"authors:\n  - given-names: \S+\n    family-names: \S+")
+
+    def test_cites_the_project_entity_without_personal_fields(self):
+        text = (ROOT / "CITATION.cff").read_text()
+        self.assertEqual(text.split("authors:\n", 1)[1].split("\nlicense:", 1)[0], '  - name: "Awesome CUA"')
+        self.assertNotRegex(text, r"(?m)^\s+(?:-\s+)?(?:given-names|family-names|name-particle|alias|email|orcid|website|affiliation):")
 
     def test_matches_license_repository_and_website(self):
         self.assertEqual(self.cff["license"], "MIT")

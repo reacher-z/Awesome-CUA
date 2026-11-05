@@ -18,7 +18,7 @@ from arxiv_metadata import validate_snapshot
 from repository_identity import repository_aliases, attach_repository_aliases, unrecorded_hub_renames
 from lookup import REVIEWED_RELATION_TYPES
 from site_config import SITE
-from publication_metadata import authors_omitted, omit_authors
+from privacy_guard import omit_protected_authors
 from publication_metadata import (alias_owner_errors, attach_publications, duplicate_publication_errors, publication_aliases,
     publication_links, publication_search_text, record_date_text, record_year, validate_publication)
 
@@ -62,8 +62,9 @@ def source_records(with_scope=False):
         raise ValueError('Publisher observations must not be written into the retained arXiv archive')
     observations=read_jsonl(DATA/'publications.jsonl')
     records = attach_publications({r['id']: r for r in archived}, observations, publication_identity)
-    # An omitted author list also empties the attached edition's list; publications.jsonl keeps its observation.
-    records = {rid: omit_authors(row) if authors_omitted(row) else row for rid, row in records.items()}
+    # An omission (already recorded, or for an author list naming a protected person) also empties the attached
+    # edition's list; publications.jsonl keeps its observation, and the privacy test reports any source that names one.
+    records = {rid: omit_protected_authors(row) for rid, row in records.items()}
     aliases=publication_aliases(observations,publication_identity)
     evidence = {r["id"]: r for r in read_jsonl(DATA / "primary-evidence.jsonl")}
     enrichment = {r["id"]: r for r in read_jsonl(DATA / "enrichment.jsonl")}

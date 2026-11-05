@@ -4,9 +4,7 @@ type: dataset
 title: "Awesome Computer-Use Agents: a source-backed catalog of computer-use, GUI, browser, and mobile agents"
 abstract: "A source-backed data catalog of computer-use agent papers, models, training datasets, benchmarks, frameworks, tools, infrastructure, products, and publishers, with retained primary-source evidence and review states."
 authors:
-  - given-names: Yuxuan
-    family-names: Zhang
-    alias: reacher-z
+  - name: "Awesome CUA"
 license: MIT
 repository-code: "https://github.com/reacher-z/Awesome-CUA"
 url: "https://awesomecua.github.io/"

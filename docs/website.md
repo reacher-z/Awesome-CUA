@@ -78,8 +78,9 @@ In the website checkout, the script:
 - Adds `.pipeline/`, `.cache/`, `__pycache__/` and `.DS_Store` to `.gitignore` when they are missing.
 - Copies the resource issue form to `.github/ISSUE_TEMPLATE/resource.yml`, and the resource, scope-decision and publication-observation schemas to `schemas/`.
 - Rewrites `README.md` from `data/coverage.json` and `data/catalog.jsonl`.
+- Checks every file in the checkout, outside `.git/`, `.pipeline/` and `.cache/`, for [protected names](maintenance.md#protected-names) and stops with only paths and line numbers if one appears, so the publication workflow commits and deploys nothing.
 
-Unless `--skip-profile` is given, it also rewrites `profile/README.md` in the profile checkout.
+Unless `--skip-profile` is given, it also rewrites `profile/README.md` in the profile checkout and checks it the same way.
 
 Review both checkouts before committing anything:
 

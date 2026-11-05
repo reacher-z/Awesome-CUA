@@ -50,10 +50,11 @@ jobs:
             if [ "$live" = "$source" ]; then
               publish=false
               echo "::notice title=Nothing new to publish::Source commit $source is already live; build, snapshot commit and deployment are skipped."
-            elif [ "$committed" = "$source" ] && [ -z "$live" ]; then
+            elif [ "$committed" = "$source" ] && [ -z "$live" ] && [ "$age" -lt 7200 ]; then
+              # An unreadable live site (for example during a DNS change) retries at most once per scan interval.
               publish=false
-              echo "::warning title=Live site unreadable::Source commit $source is already in the website snapshot, but the live record could not be read; deployment is not retried now."
-            elif [ "$committed" = "$source" ] && [ "$age" -lt 1200 ]; then
+              echo "::warning title=Live site unreadable::Source commit $source is already in the website snapshot, but the live record could not be read; deployment is retried once the snapshot is two hours old."
+            elif [ "$committed" = "$source" ] && [ -n "$live" ] && [ "$age" -lt 1200 ]; then
               publish=false
               echo "::notice title=Deployment propagating::Source commit $source was committed $((age / 60)) minutes ago; the live site can still serve its cached previous record."
             fi

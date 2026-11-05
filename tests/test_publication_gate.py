@@ -118,6 +118,8 @@ class PublicationGateStepTests(unittest.TestCase):
             with self.subTest(body=body):
                 self.assertEqual(self.decide("schedule", {"source_commit": HEAD}, live_body=body)[1]["publish"], "false")
                 self.assertEqual(self.decide("schedule", {"source_commit": OTHER}, live_body=body)[1]["publish"], "true")
+        # The committed record does not prove a deployment: an unverifiable one is retried once per scan interval.
+        self.assertEqual(self.decide("schedule", {"source_commit": HEAD}, committed_minutes_ago=121)[1]["publish"], "true")
 
     def test_missing_or_unreadable_publication_records_publish(self):
         self.assertEqual(self.decide("schedule")[1]["publish"], "true")

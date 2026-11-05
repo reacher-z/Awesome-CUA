@@ -287,7 +287,7 @@ the durable publication boundary, and an incomplete local triplet fails closed.
 
 Scanner v2 records explicit query epochs. Approved topic additions keep old roots
 and cursors and backfill new topics from the original historical lower bound.
-The production configuration names seventeen allowlisted topics. The original
+The production configuration names every allowlisted topic. The original
 nine remain: `android-automation`, `browser-agent`, `browser-agents`,
 `browser-automation`, `computer-use`, `desktop-automation`, `gui-agent`,
 `gui-agents`, and `gui-automation`. Eight additional exact spellings are supported
@@ -295,6 +295,11 @@ by retained publisher topic observations: `computer-use-agent`,
 `computer-use-agents`, `gui-grounding`, `browser-use`, `web-agent`, `web-agents`,
 `desktop-agent`, and `mobile-agent`. See the
 [topic decision and evidence](reviews/2026-10-20-candidate-topic-expansion.md).
+A second review adds eleven more, for twenty-eight in all: `cua`,
+`computer-control`, `computer-agent`, `os-agent`, `os-agents`, `mobile-agents`,
+`android-agent`, `phone-use`, `mobile-use`, `screen-understanding`, and
+`ui-agent`. Its [decision and evidence](reviews/2026-11-05-candidate-topic-expansion.md)
+records each tag's measured share of in-scope repositories.
 These are discovery queries, separate from reviewed catalog topic assignments.
 
 Each addition starts at the first epoch's historical lower bound and ends at the

@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-05T16:24:19Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-05T21:14:44Z**. Generated from committed source receipts.
 
-- 3,377 resource records: 1,674 curated; 1,703 bibliographic metadata only.
-- 2,905 paper and survey records, including 2,892 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
-- 3,030 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,433 discovery identifiers; 914 remain unresolved after accounting for scope exclusions and for 107 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 31 editorial proposals await verification or review.
+- 3,636 resource records: 1,674 curated; 1,962 bibliographic metadata only.
+- 3,164 paper and survey records, including 3,151 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
+- 3,292 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
+- 5,788 discovery identifiers; 1,920 remain unresolved after accounting for scope exclusions and for 107 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 48 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -47,7 +47,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 49 | 34 | 0 | 3 | 26 | OK · 2026-11-05 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-11-05 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 150 | 148 | 0 | 15 | 28 | OK · 2026-11-05 |
-| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 544 | 489 | 354 | 0 | 45 | 10 | OK · 2026-11-05 |
+| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 545 | 489 | 354 | 0 | 45 | 11 | OK · 2026-11-05 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 92 | 83 | 0 | 7 | 45 | OK · 2026-11-05 |
 | [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 252 | 249 | 168 | 0 | 1 | 2 | OK · 2026-11-05 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-11-05 |
@@ -89,6 +89,53 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 22 | OK · 2026-11-05 |
 | [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 9 | OK · 2026-11-05 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 386 | 0 | 0 | 45 | OK · 2026-11-05 |
+| [trycua/acu — Awesome Computer Use](https://github.com/trycua/acu) | 156 | 107 | 100 | 0 | 2 | 47 | OK · 2026-11-05 |
+| [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 245 | 198 | 1 | 0 | 88 | OK · 2026-11-05 |
+| [ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections](https://github.com/showlab/Awesome-Multimodal-Embodied-Agent) | 221 | 127 | 72 | 0 | 6 | 88 | OK · 2026-11-05 |
+| [Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | 205 | 198 | 135 | 0 | 2 | 5 | OK · 2026-11-05 |
+| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 116 | 43 | 43 | 0 | 0 | 73 | OK · 2026-11-05 |
+| [Agent-Tools/awesome-autonomous-web — browser-agent sections](https://github.com/Agent-Tools/awesome-autonomous-web) | 45 | 13 | 13 | 0 | 0 | 32 | OK · 2026-11-05 |
+| [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 7 | 7 | 0 | 0 | 37 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 84 | 81 | 0 | 11 | 26 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/dataset.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 74 | 54 | 51 | 0 | 4 | 16 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/framework.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 139 | 100 | 93 | 0 | 3 | 36 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/gui-testing.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 32 | 16 | 8 | 0 | 0 | 16 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/models.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 97 | 70 | 60 | 0 | 1 | 26 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/survey.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 40 | 21 | 3 | 0 | 1 | 18 | OK · 2026-11-05 |
+| [LLM-Brained GUI Agents survey tables — data/virtual-assistant.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 19 | 7 | 5 | 0 | 0 | 12 | OK · 2026-11-05 |
+| [OSWorld-Verified leaderboard results](https://os-world.github.io) | 50 | 19 | 15 | 0 | 1 | 30 | OK · 2026-11-05 |
+| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 22 | 15 | 2 | 3 | 62 | OK · 2026-11-05 |
+| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 12 | 9 | 0 | 1 | 32 | OK · 2026-11-05 |
+| [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 18 | 18 | 0 | 0 | 48 | OK · 2026-11-05 |
+| [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 37 | 23 | 0 | 0 | 46 | OK · 2026-11-05 |
+| [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 0 | 1 | OK · 2026-11-05 |
+| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1114 | 1114 | 784 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 6 | 6 | 0 | 0 | 24 | OK · 2026-11-05 |
+| [Hub model search "computer-use" (by likes)](https://huggingface.co/models?search=computer-use) | 2 | 0 | 0 | 0 | 0 | 2 | OK · 2026-11-05 |
+| [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 6 | 6 | 0 | 0 | 12 | OK · 2026-11-05 |
+| [Hub dataset search "computer-use" (by likes)](https://huggingface.co/datasets?search=computer-use) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-05 |
+| [Hub dataset search "web-agent" (by likes)](https://huggingface.co/datasets?search=web-agent) | 5 | 0 | 0 | 0 | 0 | 5 | OK · 2026-11-05 |
+| [Hub dataset search "mind2web" (by likes)](https://huggingface.co/datasets?search=mind2web) | 8 | 0 | 0 | 0 | 0 | 8 | OK · 2026-11-05 |
+| [Hub dataset search "android" (by likes)](https://huggingface.co/datasets?search=android) | 9 | 0 | 0 | 0 | 0 | 9 | OK · 2026-11-05 |
+| [Hub dataset search "screenspot" (by likes)](https://huggingface.co/datasets?search=screenspot) | 5 | 4 | 4 | 0 | 0 | 1 | OK · 2026-11-05 |
+| [Hub collection maxiw/gui-datasets](https://huggingface.co/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b) | 20 | 8 | 8 | 0 | 0 | 12 | OK · 2026-11-05 |
+| [Hub collection maxiw/research-on-gui-models](https://huggingface.co/collections/maxiw/research-on-gui-models-66b907281caaa1d77cfc536d) | 18 | 18 | 16 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Hub collection m-ric/gui-agents](https://huggingface.co/collections/m-ric/gui-agents-67cc9f6ea029f09af73caff8) | 8 | 8 | 6 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Hub collection thomwolf/gui-agents](https://huggingface.co/collections/thomwolf/gui-agents-675d54f9e907322a10f1cfae) | 3 | 3 | 3 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Hub collection johannhartmann/computer-use-models](https://huggingface.co/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f) | 22 | 6 | 6 | 0 | 0 | 16 | OK · 2026-11-05 |
+| [Hub collection sergiopaniego/gui-grounding-datasets](https://huggingface.co/collections/sergiopaniego/gui-grounding-datasets-6867faa9ecb5032865458705) | 2 | 2 | 2 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Hub collection xlbqc/gui-agent](https://huggingface.co/collections/xlbqc/gui-agent-67bc272a55edf2ef92ae1076) | 27 | 27 | 24 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [Hub collection Yuxiang007/gui-agent](https://huggingface.co/collections/Yuxiang007/gui-agent-689d9f3701de4072f3d60dcd) | 7 | 7 | 5 | 0 | 0 | 0 | OK · 2026-11-05 |
+| [XLANG Lab — official Hub model index](https://huggingface.co/xlangai) | 13 | 2 | 2 | 0 | 0 | 11 | OK · 2026-11-05 |
+| [ByteDance Seed UI-TARS — official Hub model index](https://huggingface.co/ByteDance-Seed) | 6 | 1 | 1 | 0 | 0 | 5 | OK · 2026-11-05 |
+| [mPLUG GUI-Owl — official Hub model index](https://huggingface.co/mPLUG) | 9 | 1 | 1 | 0 | 0 | 8 | OK · 2026-11-05 |
+| [Salesforce GTA1 — official Hub model index](https://huggingface.co/Salesforce) | 3 | 0 | 0 | 0 | 0 | 3 | OK · 2026-11-05 |
+| [Microsoft GUI models — official Hub model index](https://huggingface.co/microsoft) | 6 | 1 | 1 | 0 | 0 | 5 | OK · 2026-11-05 |
+| [Microsoft OmniParser — official Hub model index](https://huggingface.co/microsoft) | 2 | 1 | 1 | 0 | 0 | 1 | OK · 2026-11-05 |
+| [OpenGVLab GUI datasets — official Hub dataset index](https://huggingface.co/OpenGVLab) | 2 | 0 | 0 | 0 | 0 | 2 | OK · 2026-11-05 |
+| [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-05 |
+| [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-05 |
+| [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 0 | 0 | 0 | 0 | OK · 2026-11-05 |
 
 ## Paper-discovery query coverage
 
@@ -152,7 +199,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-31 proposals: 3 with unresolved primary evidence, 0 whose current source snapshot awaits review, 28 held by a reviewer after reading the current source, and 0 awaiting another scope review.
+48 proposals: 5 with unresolved primary evidence, 15 whose current source snapshot awaits review, 28 held by a reviewer after reading the current source, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -187,6 +234,23 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [PEAM: On-device Communication Agent for Personalized, Efficient and Autonomous Mobile Network Configuration](https://arxiv.org/abs/2610.14855) | Scope hold after v1 Methodology, Evaluation and Appendices A (On-Device Deployment), B and D. PEAM generates background network-configuration rules and reports real cellular/Wi-Fi switching on Android 16; active rules execute after explicit user acceptance. The inspected work does not establish GUI observation/action control or a component actually used by a CUA workflow. Native network switching alone does not establish that broader role. Need direct interface/control or CUA-support evidence before inclusion. Preserve metadata; no permanent exclusion is proposed. |
 | [Agent-Reflex: Teaching Language Agents to Act Reflectively](https://arxiv.org/abs/2610.17953) | Scope hold after v1 Sections3.1,4.1 and AppendicesB,D.2,D.5,F. Evaluation uses standardized MCP function calls and simulated service workflows; GUI/browser/OS action evaluation is not established. Construction agents use browser/OS tools, and failure mining includes file/OS benchmarks, but these are support stages rather than reported CUA policy results. Need direct interface interaction or a demonstrated CUA consumer before core/adjacent annotation. Preserve metadata; no permanent exclusion. |
 | [ScreenASR-Bench: A Tiered Benchmark for Speech Recognition with Visual Context](https://arxiv.org/abs/2610.16260) | Scope hold after complete v1 Sections 1–4: this benchmark pairs speech with video keyframes or synthesized substitute frames to test ambiguous-word transcription. Examples include map text, an outdoor scene and a game scene; metrics are WER, keyword recall and normalized visual gain. The inspected work does not establish an agent-command task, operational UI understanding/action interface, or evaluated downstream CUA use. Need direct interface-assistant evidence before core/adjacent inclusion. Keep bibliography metadata-only; this is not a permanent scope exclusion. |
+| [Taxy AI](https://github.com/TaxyAI/browser-extension) | current source snapshot needs editorial review |
+| [Adept AI](https://www.adept.ai) | primary evidence unresolved: HTTP Error 403: Forbidden; Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 2985, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review. |
+| [Cykel](https://www.cykel.ai) | current source snapshot needs editorial review |
+| [iMean.AI](https://www.imean.ai) | current source snapshot needs editorial review |
+| [Minion AI](https://minion.ai) | current source snapshot needs editorial review |
+| [Sentius](https://www.sentius.ai) | primary evidence unresolved: HTTP Error 404: Not Found; Listed by e2b-dev/awesome-ai-agents (README at commit 9596ab1e69fb, line 5146, retrieved 2026-11-05). That list is not a registered discovery source because only about 14 of its 215 entries are interface agents. Relevance, kind and summary await editorial review. |
+| [Test Driver](https://testdriver.ai) | current source snapshot needs editorial review |
+| [Enhans ACT agents](https://enhans.ai) | current source snapshot needs editorial review |
+| [Hark](https://hark.com) | current source snapshot needs editorial review |
+| [V2P-7B](https://github.com/inclusionAI/AWorld-RL/tree/main/V2P) | current source snapshot needs editorial review |
+| [MobileUseAgent](https://github.com/volcengine/vePhone/tree/main/Quick%20Start/MobileUse) | current source snapshot needs editorial review |
+| [jackwener/DSH-Android](https://github.com/jackwener/DSH-Android) | current source snapshot needs editorial review |
+| [brandlll-lee/PhoneBot-Android](https://github.com/brandlll-lee/PhoneBot-Android) | current source snapshot needs editorial review |
+| [Runa-Asahi/tsuki-phone-agent](https://github.com/Runa-Asahi/tsuki-phone-agent) | current source snapshot needs editorial review |
+| [RobinHeZtto/Open-AutoGLM-Android](https://github.com/RobinHeZtto/Open-AutoGLM-Android) | current source snapshot needs editorial review |
+| [nitic-nlp-team/webnavix](https://github.com/nitic-nlp-team/webnavix) | current source snapshot needs editorial review |
+| [Nimra-Fayaz/AI-Powered-Navigation](https://github.com/Nimra-Fayaz/AI-Powered-Navigation) | current source snapshot needs editorial review |
 
 ## Uncurated papers behind curated resources
 
@@ -196,7 +260,7 @@ None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 
-138 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
+141 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
 
 ## Known gaps
 

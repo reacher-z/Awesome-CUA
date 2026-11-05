@@ -143,6 +143,19 @@ class IndexNowTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Sitemap'):
             self.run_submission(submit=False)
 
+    def test_a_sitemap_index_is_followed_to_its_local_child_files(self):
+        self.root.joinpath('sitemap-pages.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://catalog.example/</loc></url></urlset>')
+        self.root.joinpath('sitemap-resources.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://catalog.example/new/</loc><lastmod>2026-10-01T00:00:00Z</lastmod></url></urlset>')
+        index = '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<sitemap><loc>https://catalog.example/{name}</loc></sitemap>' for name in ('sitemap-pages.xml', 'sitemap-resources.xml')) + '</sitemapindex>'
+        self.root.joinpath('sitemap.xml').write_text(index)
+        self.assertEqual(self.run_submission(submit=False)['url_count'], 3)
+        self.root.joinpath('sitemap.xml').write_text(index.replace('https://catalog.example/sitemap-resources.xml', 'https://other.example/sitemap-resources.xml'))
+        with self.assertRaisesRegex(ValueError, 'outside the site root'):
+            self.run_submission(submit=False)
+        self.root.joinpath('sitemap.xml').write_text(index.replace('sitemap-resources.xml', 'sitemap-pages.xml'))
+        with self.assertRaisesRegex(ValueError, 'Sitemap and indexable manifest disagree'):
+            self.run_submission(submit=False)
+
 
 if __name__ == '__main__':
     unittest.main()

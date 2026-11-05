@@ -18,6 +18,7 @@ import xml.etree.ElementTree as ET
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
 from search_pages import SITE, eligible, resource_path, resource_schema, page, incoming_relations
+from sitemaps import sitemap_urls
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -86,14 +87,12 @@ class SearchPagesTests(unittest.TestCase):
             self.assertEqual('noindex' in p.robots[0],not item['indexable'],item['path'])
             for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
                 value=json.loads(block);self.assertEqual(value['@context'],'https://schema.org')
-    def test_sitemap_excludes_unreviewed_pages_and_has_no_synthetic_lastmod(self):
-        root=ET.parse(self.dest/'sitemap.xml').getroot();ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        urls=[x.text for x in root.findall('s:url/s:loc',ns)]
+    def test_sitemaps_list_exactly_the_reviewed_indexable_pages(self):
+        urls=sitemap_urls(self.dest,SITE)
         expected={SITE+p['path'] for p in self.manifest['pages'] if p['indexable']}
         self.assertEqual(set(urls),expected);self.assertEqual(len(urls),len(set(urls)))
-        self.assertFalse(root.findall('s:url/s:lastmod',ns))
         for row in self.rows:self.assertEqual(SITE+resource_path(row) in urls,eligible(row))
-        self.assertEqual((self.dest/'sitemap.txt').read_text().splitlines(),urls)
+        self.assertEqual(sorted((self.dest/'sitemap.txt').read_text().splitlines()),sorted(urls))
     def test_static_pages_link_to_real_local_destinations(self):
         for item in self.manifest['pages']:
             p=PageParser((self.dest/item['path'].lstrip('/')/'index.html').read_text())

@@ -64,7 +64,7 @@ class GeneratedWhitespaceTests(unittest.TestCase):
             markdown=(destination/resource_path(decision).lstrip('/')/'index.md').read_text()
             self.assertIn('Out of scope:\nstudies circuit design.\n',markdown)
             self.assertIn('Trailing guide markup.',(destination/'guides'/guides[0]['slug']/'index.html').read_text())
-            self.assertIn('Second line.',(destination/'feed.xml').read_text())
+            self.assertIn('Second line.',(destination/resource_path(paper).lstrip('/')/'index.md').read_text())
             manifest={item['path']:item['sha256'] for item in json.loads((destination/'data/search-manifest.json').read_text())['pages']}
             self.assertEqual(manifest[resource_path(paper)],hashlib.sha256((destination/resource_path(paper).lstrip('/')/'index.html').read_bytes()).hexdigest())
     def test_built_site_passes_publication_whitespace_check(self):

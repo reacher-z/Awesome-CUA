@@ -8,7 +8,6 @@ import json
 import os
 from pathlib import Path
 import re
-import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from specifications import PROFILE_KEYS, comparison_body, profile_export, resource_profile_html, count_text, safe_href
 from agent_pages import agent_guide_body, RELEASES_URL
@@ -20,6 +19,9 @@ from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE
 import home_page
 import site_shell
+from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
+from site_data import PAPER_KINDS, eligible, latest, newest_reviewed, record_modified, review_dates
+from sitemaps import write_sitemaps
 
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
 SOURCE_REPO = "https://github.com/reacher-z/Awesome-CUA"
@@ -56,8 +58,18 @@ def guide_path(guide):
     return f"/guides/{guide['slug']}/"
 
 
-def eligible(record):
-    return record["review_status"] == "curated" and record["scope"] in {"core", "adjacent"}
+def alternate_map(alternatives):
+    """Language versions of a page as {hreflang: path}; True names the home page pair."""
+    if isinstance(alternatives, dict):return dict(alternatives)
+    return {'en':'/','zh-CN':'/zh/','x-default':'/'} if alternatives else {}
+
+
+def sitemap_section(path, kind_by_path):
+    """Child sitemap for an indexable page: resource and paper entries, collection pages, or everything else."""
+    if path in kind_by_path:return 'papers' if kind_by_path[path] in PAPER_KINDS else 'resources'
+    if path.startswith(('/papers/','/zh/papers/','/survey/')):return 'papers'
+    if path.startswith(('/catalog/','/categories/','/topics/','/zh/topics/','/compare/')):return 'categories'
+    return 'pages'
 
 
 def resource_titles(rows):
@@ -100,8 +112,9 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     if path!="/":
         graph.append({"@type":"BreadcrumbList", "itemListElement":[{"@type":"ListItem","position":i+1,"name":name,"item":SITE+target} for i,(name,target) in enumerate(crumbs)]})
     trail=''.join(f'<li><a href="{esc(target)}">{esc(name)}</a></li>' for name,target in crumbs[:-1])+f'<li><a href="{esc(crumbs[-1][1])}" aria-current="page">{esc(crumbs[-1][0])}</a></li>'
-    alternate_paths = alternatives if isinstance(alternatives, dict) else {'en': '/', 'zh-CN': '/zh/', 'x-default': '/'} if alternatives else {}
+    alternate_paths = alternate_map(alternatives)
     alternate=''.join(f'<link rel="alternate" hreflang="{esc(locale)}" href="{SITE}{esc(target)}">' for locale,target in alternate_paths.items())
+    alternate+=f'<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{FEED_TITLE}"><link rel="alternate" type="application/feed+json" href="/feed.json" title="{FEED_TITLE}">'
     robots="index,follow,max-image-preview:large" if index else "noindex,follow"
     # The not-found page is served at every missing address, so it claims no URL of its own.
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
@@ -303,7 +316,11 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     reviewed=[r for r in rows if eligible(r)]
     # Headline counts are curated resources; records awaiting review and discovered candidates are labelled separately.
     awaiting,candidates=coverage['metadata_only_records'],coverage['unindexed_candidates']
-    latest=coverage["as_of_utc"]
+    snapshot=coverage["as_of_utc"]
+    review_times=review_dates(root)
+    def modified(records):return latest(records,review_times)
+    # Sitemap facts per page, kept beside the manifest so its schema and fingerprints stay unchanged.
+    sitemap_facts={}
     manifest=[]
     scan_path=root/'data/scan-status.json'
     scan=json.loads(scan_path.read_text(encoding='utf-8')) if scan_path.exists() else None
@@ -324,7 +341,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     def version_script_src(match):
         version=script_versions[Path(match['path']).name]
         return f"{match['start']}{match['quote']}{match['path']}?v={version}{match['quote']}"
-    def emit(path,content,index=True,excluded=False,utility=False):
+    def emit(path,content,index=True,excluded=False,utility=False,lastmod=None,alternates=None):
         # Hash the final bytes, after replacing only the scripts this page uses.
         content=script_src.sub(version_script_src,clean_text(content)).encode('utf-8')
         target=destination/path.lstrip('/')/'index.html' if path.endswith('/') else destination/path.lstrip('/')
@@ -333,10 +350,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         if excluded:item["scope_excluded"]=True
         if utility:item["utility"]=True
         manifest.append(item)
+        # lastmod comes from recorded data times of what the page shows; pages without data dates omit it.
+        sitemap_facts[path]={'lastmod':lastmod,'alternates':alternate_map(alternates)}
     for r in rows:
         path=resource_path(r)
         pending_review=pending_reviews.get(r['id'])
-        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r))
+        # Connected assets listed on the page come from the records that point at this one.
+        shown=[r]+[lookup[rel['source_id']] for rel in incoming.get(r['id'],[]) if rel['source_id'] in lookup]
+        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r),lastmod=modified(shown))
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
         (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:
@@ -364,7 +385,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         (destination/path.lstrip('/')/'index.md').write_text(clean_text('\n'.join(['# '+decision['name'],'','Status: excluded from the active CUA catalog after scope review.','',decision['reason'],'','Original paper: '+decision['url'],'Evidence: '+evidence['url'],'Reviewed: '+decision['reviewed_at'],'','Scope decisions: '+SITE+'/downloads/exclusions.json','Raw metadata archive: '+SITE+'/downloads/arxiv-archive.jsonl'])+'\n'),encoding='utf-8')
     category_links='<ul class="category-directory">'+''.join(f'<li><a href="/categories/{kind}/">{esc(name)}</a><span>{sum(r["kind"]==kind for r in reviewed):,} reviewed</span></li>' for kind,name in KINDS.items())+'</ul>'
     overview=f'<div class="eyebrow">COMPUTER-USE AGENT DIRECTORY</div><h1>Explore the computer-use agent ecosystem</h1><p class="answer-lead">AwesomeCUA connects research papers, GUI models, training datasets, benchmarks, learning resources, engineering tools, products, and publishers with their original sources.</p><p>This snapshot has {len(reviewed):,} curated resources. Another {awaiting:,} bibliography records await review and {candidates:,} discovered candidates await resolution; neither group is counted as resources. Counts are resources, not independent projects.</p><a class="button primary" href="/explore/#catalog">Search and filter all resources</a><h2>Browse by resource type</h2>{category_links}<h2>Research and practical guides</h2><ul><li><a href="/topics/">Browse research and assets by topic</a></li><li><a href="/papers/">Reviewed computer-use and GUI-agent research papers</a></li><li><a href="/guides/">Guides to agents, benchmarks, and training data</a></li><li><a href="/data/">Download the source-backed catalog</a></li><li><a href="/coverage/">Inspect coverage and unresolved gaps</a></li></ul>'
-    emit('/catalog/',page('Computer-use agent resource directory','Browse source-backed computer-use agent papers, models, datasets, benchmarks, learning resources, tools, products, and publishers.','/catalog/',overview,{"@type":"CollectionPage","name":"AwesomeCUA resource directory"},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/")]))
+    emit('/catalog/',page('Computer-use agent resource directory','Browse source-backed computer-use agent papers, models, datasets, benchmarks, learning resources, tools, products, and publishers.','/catalog/',overview,{"@type":"CollectionPage","name":"AwesomeCUA resource directory"},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/")]),lastmod=modified(rows))
     # GitHub Pages serves /404.html for any missing path; writing it outside emit() keeps it out of the manifest, sitemaps and IndexNow.
     missing=f'<div class="eyebrow">PAGE NOT FOUND</div><h1>This page is not in the catalog</h1><p class="answer-lead">The address may be mistyped, or the page may have been removed, for example when duplicate resource records were merged.</p><div class="page-actions"><a class="button primary" href="/explore/#catalog">Search the catalog</a><a class="button secondary" href="/catalog/">Resource directory</a><a class="button secondary" href="/papers/">Research papers</a></div><h2>Browse by resource type</h2>{category_links}<h2>Report a broken link</h2><p>If a link led you here, <a href="{SOURCE_REPO}/issues/new/choose">open an issue</a> with the address you followed and the page that linked to it. Scope decisions are recorded in the <a href="/coverage/">coverage ledger</a>.</p>'
     (destination/'404.html').write_text(clean_text(page('Page not found','This address does not match a current AwesomeCUA page. Search the catalog, browse resource categories, or report the broken link.','/404.html',missing,index=False,canonical=False)),encoding='utf-8')
@@ -384,12 +405,12 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             body+=listing(selected)
             schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(selected),"itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(selected)]}
         body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
-        emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]))
+        emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]),lastmod=modified(selected))
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
         export=profile_export(rows,kind)
         (destination/f'downloads/{plural}-profiles.json').write_text(json.dumps(export,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-        emit(path,page(title,f'Compare {plural} by source-reviewed interfaces, scope, counting units, and access information.',path,comparison_body(rows,kind,resource_path),{'@type':'CollectionPage','name':title},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(title,path)]))
+        emit(path,page(title,f'Compare {plural} by source-reviewed interfaces, scope, counting units, and access information.',path,comparison_body(rows,kind,resource_path),{'@type':'CollectionPage','name':title},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(title,path)]),lastmod=modified([r for r in rows if r['kind']==kind]))
     papers=sorted([r for r in reviewed if r['kind'] in {'paper','survey'}],key=record_date_text,reverse=True)
     library_count=library_pages(rows)
     for language,title,summary in [
@@ -402,14 +423,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
             crumbs=[root_crumb,(title,library_path(1,language)),(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else None
             alternatives={'en':library_path(number),'zh-CN':library_path(number,'zh'),'x-default':library_path(number)}
-            emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=crumbs))
+            emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=crumbs),lastmod=modified(papers),alternates=alternatives)
     topic_manifest,topic_groups=write_topic_exports(destination,rows,(root/'data/catalog.jsonl').read_bytes())
     for language in ('en','zh'):
         path=topic_path(language=language)
         body,schema=topic_index_body(topic_manifest,language=language,site_url=SITE)
         title='Computer-use research topics' if language=='en' else 'Computer-Use 主题目录'
         summary='Explore source-reviewed computer-use papers, models, datasets, benchmarks and tools by topic.' if language=='en' else '按研究主题浏览已审阅的 Computer-Use 论文、模型、数据、基准与工具，并下载完整主题记录。'
-        emit(path,page(title,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'}))
+        emit(path,page(title,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'}),lastmod=modified([r for members in topic_groups.values() for r in members]),alternates={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'})
         for topic,members in topic_groups.items():
             first=topic_path(topic,language)
             title=topic_name(topic,language)+(' — computer-use research and resources' if language=='en' else '：Computer-Use 研究与资源')
@@ -420,7 +441,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
                 numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
                 alternatives={'en':topic_path(topic,'en',number),'zh-CN':topic_path(topic,'zh',number),'x-default':topic_path(topic,'en',number)}
                 trail=[("AwesomeCUA","/zh/" if language=='zh' else "/"),("主题" if language=='zh' else "Topics",topic_path(language=language)),(topic_name(topic,language),first)]+([(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else [])
-                emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=trail))
+                emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=trail),lastmod=modified(members),alternates=alternatives)
             (destination/first.lstrip('/')/'index.md').write_text(clean_text(topic_markdown(topic,members,resource_path,language=language,site_url=SITE)),encoding='utf-8')
     linked_papers=[r for r in papers if any(e['type'] in {'documented_by','introduced_by'} for e in incoming.get(r['id'],[]))]
     body='<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div><h1>Computer-use papers, code, and datasets</h1><p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction. They do not automatically mean that a model was trained on a dataset or evaluated on a benchmark.</p><div class="reading-list">'
@@ -431,16 +452,17 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             body+=f'<li><a href="{resource_path(source)}">{esc(source["name"])}</a> — {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">source evidence</a></li>'
         body+='</ul></article>'
     body+='</div><p><a href="/downloads/relationships.json">Download reviewed relationships as JSON</a> · <a href="/about/">Editorial policy</a></p>'
-    emit('/connections/',page('Computer-use papers, code, and datasets','Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.','/connections/',body))
+    emit('/connections/',page('Computer-use papers, code, and datasets','Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.','/connections/',body),lastmod=modified(linked_papers+[lookup[rel['source_id']] for paper in linked_papers for rel in incoming[paper['id']]]))
     edges=[{'source_id':r['id'],'source_name':r['name'],'source_kind':r['kind'],**rel} for r in rows for rel in r['relations']]
     (destination/'downloads/relationships.json').write_text(json.dumps({'relation_count':len(edges),'semantics':'Reviewed semantic links only. Documentation does not establish training or evaluation dependency.','relations':edges},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     sources=''.join(f'<tr><td><a href="{safe_href(s["url"])}">{esc(s["name"])}</a></td><td>{s["discovered"]}</td><td>{s["indexed"]}</td><td>{s["curated"]}</td><td>{s["excluded"]}</td></tr>' for s in coverage['sources'])
-    body=f'<h1>Coverage and verification ledger</h1><p class="answer-lead">{len(reviewed):,} curated resources. Another {awaiting:,} records have bibliographic metadata verification only and await review; they are not counted as curated resources.</p><p>Evidence snapshot: {esc(latest)}. Resource types can refer to different parts of the same project. Source populations overlap and cannot be summed into a global field size.</p><h2>Discovery-source coverage</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>Source</th><th>Found</th><th>Indexed</th><th>Curated</th><th>Excluded</th></tr></thead><tbody>{sources}</tbody></table></div><h2>Explicit scope exclusions</h2><p>{coverage["excluded_records"]} records are excluded after individual scope review. The original {coverage["arxiv_archive_records"]:,}-record arXiv metadata archive is retained. <a href="/downloads/exclusions.json">Inspect decisions and source evidence</a> · <a href="/downloads/arxiv-archive.jsonl">Download the raw archive</a>.</p><p>Unresolved-candidate counts exclude these completed scope decisions. A changed or unconfirmed exclusion returns to review; it cannot silently suppress a resource.</p><h2>What remains unverified?</h2><p>Most bibliography entries still require relevance review. Closed datasets, unpublished systems, and regional resources are not exhaustively represented. Asset sizes, model licenses, availability, and experiment protocols need continuing curation. Global completeness has not been established.</p><p>{coverage["unindexed_candidates"]} discovered identifiers remain unresolved, excluding applied scope decisions and {coverage.get("non_resource_candidates",0)+coverage.get("alias_candidates",0)} links reviewed as non-resources or other addresses of indexed resources.</p><p><a href="/downloads/coverage.json">Download the complete coverage ledger</a> · <a href="/about/">Editorial policy</a></p>'
-    emit('/coverage/',page('Coverage and verification ledger','Inspect AwesomeCUA source populations, editorial review states, bibliographic verification, unresolved identifiers, and explicit coverage gaps.','/coverage/',body))
+    body=f'<h1>Coverage and verification ledger</h1><p class="answer-lead">{len(reviewed):,} curated resources. Another {awaiting:,} records have bibliographic metadata verification only and await review; they are not counted as curated resources.</p><p>Evidence snapshot: {esc(snapshot)}. Resource types can refer to different parts of the same project. Source populations overlap and cannot be summed into a global field size.</p><h2>Discovery-source coverage</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>Source</th><th>Found</th><th>Indexed</th><th>Curated</th><th>Excluded</th></tr></thead><tbody>{sources}</tbody></table></div><h2>Explicit scope exclusions</h2><p>{coverage["excluded_records"]} records are excluded after individual scope review. The original {coverage["arxiv_archive_records"]:,}-record arXiv metadata archive is retained. <a href="/downloads/exclusions.json">Inspect decisions and source evidence</a> · <a href="/downloads/arxiv-archive.jsonl">Download the raw archive</a>.</p><p>Unresolved-candidate counts exclude these completed scope decisions. A changed or unconfirmed exclusion returns to review; it cannot silently suppress a resource.</p><h2>What remains unverified?</h2><p>Most bibliography entries still require relevance review. Closed datasets, unpublished systems, and regional resources are not exhaustively represented. Asset sizes, model licenses, availability, and experiment protocols need continuing curation. Global completeness has not been established.</p><p>{coverage["unindexed_candidates"]} discovered identifiers remain unresolved, excluding applied scope decisions and {coverage.get("non_resource_candidates",0)+coverage.get("alias_candidates",0)} links reviewed as non-resources or other addresses of indexed resources.</p><p><a href="/downloads/coverage.json">Download the complete coverage ledger</a> · <a href="/about/">Editorial policy</a></p>'
+    emit('/coverage/',page('Coverage and verification ledger','Inspect AwesomeCUA source populations, editorial review states, bibliographic verification, unresolved identifiers, and explicit coverage gaps.','/coverage/',body),lastmod=max(snapshot,modified(rows) or snapshot))
+    agent_alternatives={'en':'/agents/','zh-CN':'/zh/agents/','x-default':'/agents/'}
     for language,path,title,desc in [
         ('en','/agents/','Use AwesomeCUA with agents and RAG','Clone the complete computer-use catalog, search locally, and ingest citation-preserving retrieval documents with review states and source evidence.'),
         ('zh','/zh/agents/','AwesomeCUA：Agents 与 RAG 使用指南','一行克隆完整目录，本地检索或接入 RAG，保留资源引用、审阅状态、论文版本和来源指纹。')]:
-        emit(path,page(title,desc,path,agent_guide_body(language),{'@type':'Article','headline':title,'description':desc,'author':{'@id':SITE+'/#organization'}},lang='zh-CN' if language=='zh' else 'en'))
+        emit(path,page(title,desc,path,agent_guide_body(language),{'@type':'Article','headline':title,'description':desc,'author':{'@id':SITE+'/#organization'}},lang='zh-CN' if language=='zh' else 'en',alternatives=agent_alternatives),alternates=agent_alternatives)
     scan_config=json.loads((root/'data/scan-config.json').read_text(encoding='utf-8'))
     schedule=', '.join(scan_config['scan_times_local'])+' '+scan_config['timezone']
     publication_schedule='at '+' and '.join(f':{minute:02d}' for minute in scan_config['publish_check_minutes'])+' past each hour '+scan_config['timezone']+'; a check rebuilds only when the source catalog has a new commit'
@@ -469,7 +491,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     if conference_file.exists():
         conference=json.loads(conference_file.read_text(encoding='utf-8'))
         body+=f'<h2>Conference proceedings sweep</h2><p>{conference["title_candidate_count"]} keyword-selected titles were inspected across {conference["source_count"]} official proceedings snapshots. This is a separate bounded sweep, not a complete conference census. Title candidates and possible renamed papers remain unapproved pending identity and scope review.</p><p><a href="/downloads/conference-discovery.json">Inspect the selected titles, review boundaries, and primary receipts</a>.</p>'
-    emit('/updates/',page('Catalog updates every two hours','Inspect the actual completion, discoveries, and source gaps from the AwesomeCUA public-source scans that run every two hours.','/updates/',body))
+    emit('/updates/',page('Catalog updates every two hours','Inspect the actual completion, discoveries, and source gaps from the AwesomeCUA public-source scans that run every two hours.','/updates/',body),lastmod=max(filter(None,[snapshot,modified(rows),scan and scan.get('finished_at')])))
     badge_papers=sum(r['kind'] in {'paper','survey'} for r in reviewed)
     (destination/'badges').mkdir(exist_ok=True)
     badge=f'<svg xmlns="http://www.w3.org/2000/svg" width="590" height="30" role="img" aria-label="{len(reviewed)} curated resources, {badge_papers} reviewed papers, {awaiting} records awaiting review"><rect width="590" height="30" rx="5" fill="#4856df"/><g fill="#fff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle"><text x="95" y="20">{len(reviewed):,} curated resources</text><text x="290" y="20">{badge_papers:,} reviewed papers</text><text x="480" y="20">{awaiting:,} awaiting review</text></g></svg>'
@@ -484,7 +506,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     body='<h1>About AwesomeCUA and its editorial policy</h1><p class="answer-lead">AwesomeCUA is a source-backed catalog of resources for agents that operate computer interfaces. Its purpose is to make research and engineering assets easier to find, compare, and trace to their original publishers.</p><h2>Who maintains the catalog?</h2><p>The AwesomeCUA project publishes the catalog through its <a href="https://github.com/AwesomeCUA">GitHub organization</a>. Annotations and taxonomy are produced with AI-assisted editorial review. This is not a claim of independent peer review, benchmark reproduction, or affiliation with listed publishers.</p><h2>What is included?</h2><p>GUI and hybrid GUI/code agents, visual grounding, web and mobile navigation, training data, evaluation environments, execution infrastructure, safety research, and relevant products. Supporting tools may be marked adjacent.</p><h2>How are claims checked?</h2><p>Community lists and semantic searches discover candidates. Retained arXiv and publication sources support bibliographic facts. Official papers, repositories, documentation, and model/dataset cards support curated annotations. Every record retains source URLs, retrieval timestamps, and content hashes. Source refreshes do not silently inherit editorial approval.</p><h2>What do review states mean?</h2><ul><li><strong>Curated:</strong> a primary source was inspected for identity, scope, and the concise annotation.</li><li><strong>Metadata verified:</strong> bibliographic fields were checked; relevance, taxonomy, and findings are still pending.</li><li><strong>Candidate:</strong> an identifier was discovered but is not a published catalog record.</li></ul><h2>Licenses and corrections</h2><p>Code, data, weights, and document licenses are separate. Public availability does not establish reuse rights. Original catalog annotations and code use MIT; upstream resources keep their own terms. Report errors through <a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">a source-backed correction</a>.</p><h2>Indexing policy</h2><p>Reviewed resource pages and useful collection pages are eligible for indexing. Metadata-only resource pages remain accessible, with <code>noindex,follow</code> until their relevance is reviewed. The full bibliography remains searchable and downloadable.</p><p><a href="/coverage/">Coverage ledger</a> · <a href="/data/">Data and provenance</a></p>'
     emit('/about/',page('About AwesomeCUA and editorial policy','Learn what AwesomeCUA includes, how primary-source review works, what verification does and does not mean, and how to suggest corrections.','/about/',body))
     desc='A structured catalog of computer-use agent research papers, models, datasets, benchmarks, tools, products, and publishers, including original annotations, review states, source evidence, scoped license declarations, and resource relationships.'
-    dataset={"@type":"Dataset","name":"AwesomeCUA computer-use agent resource catalog","description":desc,"url":SITE+'/data/',"creator":{"@id":SITE+'/#organization'},"license":SOURCE_REPO+'/blob/main/LICENSE',"dateModified":latest,"keywords":["computer-use agents","GUI agents","browser agents","datasets","benchmarks"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/x-ndjson","contentUrl":SITE+'/downloads/catalog.jsonl'},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+'/data/records.json'},{"@type":"DataDownload","encodingFormat":"application/vnd.sqlite3","contentUrl":SITE+'/downloads/catalog.sqlite'}],"isAccessibleForFree":True}
+    dataset={"@type":"Dataset","name":"AwesomeCUA computer-use agent resource catalog","description":desc,"url":SITE+'/data/',"creator":{"@id":SITE+'/#organization'},"license":SOURCE_REPO+'/blob/main/LICENSE',"dateModified":snapshot,"keywords":["computer-use agents","GUI agents","browser agents","datasets","benchmarks"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/x-ndjson","contentUrl":SITE+'/downloads/catalog.jsonl'},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+'/data/records.json'},{"@type":"DataDownload","encodingFormat":"application/vnd.sqlite3","contentUrl":SITE+'/downloads/catalog.sqlite'}],"isAccessibleForFree":True}
     download_manifest=build_download_manifest(destination,rows,(root/'data/catalog.jsonl').read_bytes())
     data_alternatives={'en':'/data/','zh-CN':'/zh/data/','x-default':'/data/'}
     for language,path,title,summary in [
@@ -492,7 +514,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         ('zh','/zh/data/','AwesomeCUA 数据中心：完整目录、RAG 与论文引用','下载完整 Computer-Use 资源目录、RAG 检索文档、论文引用和来源文件，查看实际条数、文件大小与 SHA-256 指纹。')]:
         body=data_hub_body(download_manifest,language=language,site_url=SITE)
         data_schema={**dataset,'url':SITE+path,'description':summary}
-        emit(path,page(title,summary,path,body,data_schema,lang='zh-CN' if language=='zh' else 'en',alternatives=data_alternatives))
+        emit(path,page(title,summary,path,body,data_schema,lang='zh-CN' if language=='zh' else 'en',alternatives=data_alternatives),lastmod=max(snapshot,modified(rows) or snapshot),alternates=data_alternatives)
     guides=json.loads((root/'data/site-guides.json').read_text(encoding='utf-8'))
     for guide in guides:
         emit(guide_path(guide),page(guide['title'],guide['description'],guide_path(guide),guide['body'],{"@type":"Article","headline":guide['title'],"description":guide['description'],"author":{"@id":SITE+'/#organization'}},crumbs=[("AwesomeCUA","/"),("Guides","/guides/"),(guide['title'],guide_path(guide))]))
@@ -500,12 +522,15 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     emit('/guides/',page('Computer-use agent guides','Understand computer-use agents, choose GUI-agent benchmarks, and find training datasets with clearly scoped primary-source references.','/guides/',body))
     zh=f'<div class="eyebrow">COMPUTER-USE AGENT 资源指南</div><h2>AwesomeCUA：可追溯的智能体资源目录</h2><p class="answer-lead">连接论文、模型、数据集、评测基准、框架、工具、产品与发布方。每条资源保留一手来源与审阅状态。</p><p>当前有 {len(reviewed):,} 条经过 AI 辅助编辑审阅的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实，均不计入资源数。数量以资源为单位，不代表独立项目总数。</p><div class="page-actions"><a class="button primary" href="/explore/?lang=zh#catalog">打开中文搜索目录</a><a class="button secondary" href="/zh/data/">下载数据</a></div><h2>研究与训练</h2><ul><li><a href="/zh/topics/">按主题浏览论文、数据与工具</a></li><li><a href="/zh/papers/">论文与综述阅读列表</a></li><li><a href="/categories/dataset/">训练数据集</a> · <a href="/compare/datasets/">对比数据规格</a></li><li><a href="/categories/benchmark/">GUI、桌面、网页与手机评测基准</a> · <a href="/compare/benchmarks/">对比评测协议</a></li><li><a href="/categories/model/">模型与权重版本</a></li><li><a href="/categories/learning/">学习资源</a></li></ul><h2>产业与工程</h2><ul><li><a href="/categories/agent/">智能体</a></li><li><a href="/categories/framework/">开发与训练框架</a></li><li><a href="/categories/product/">产品</a></li><li><a href="/catalog/">浏览全部分类</a></li></ul><h2>如何理解“已核验”？</h2><p>已审阅条目经过一手来源编辑检查。论文元数据仅核实标题、作者和日期，不代表研究结论或实验已复现。代码、数据、权重与文档许可分别记录，未知信息保留为空。</p><h2>是否已经全球最全？</h2><p>全面覆盖是目标，目前没有足够证据证明已达到全球最全。请查看<a href="/coverage/">覆盖台账</a>和<a href="/about/">编辑方法</a>了解边界与缺口。</p>'
     zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+'<section class="section wrap reading-section">'+zh+'</section>'+home_page.contribute(zh=True)
-    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True))
+    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True),lastmod=modified(rows),alternates=True)
     # A static, visible directory is useful to visitors even when JavaScript is unavailable.
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Updates every two hours</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
     website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}
     home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+'<div class="home-directory">'+static+'</div>'+home_page.contribute()
-    emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]))
+    emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
+    # Feeds announce curated records as they pass source review, newest review first.
+    entries=[feed_entry(r,site=SITE,page_path=resource_path(r),reviewed_at=review_times[r['id']],modified=record_modified(r,review_times),summary=description(r),kind_label=KINDS[r['kind']]) for r in newest_reviewed(rows,review_times,FEED_SIZE)]
+    write_feeds(destination,entries,site=SITE,updated=max((entry['updated'] for entry in entries),default=snapshot))
     # The explorer holds the complete interactive catalog, including records awaiting review; it needs JavaScript.
     explorer_source=destination/'explore.html'
     explorer=explorer_source.read_text(encoding='utf-8')
@@ -515,7 +540,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     explorer=explorer.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),website]})}</script></head>')
     for identity,value in [('stat-curated',len(reviewed)),('stat-pending',awaiting),('stat-candidates',candidates),('stat-sources',len(coverage['sources']))]:
         explorer=re.sub(f'(id="{identity}">).*?(</span>)',lambda m:m.group(1)+format(value,',')+m.group(2),explorer)
-    explorer=explorer.replace('id="snapshot-date">—','id="snapshot-date">'+latest[:10])
+    explorer=explorer.replace('id="snapshot-date">—','id="snapshot-date">'+snapshot[:10])
     explorer=explorer.replace('</main>',static+'</main>')
     explorer_trail=[('AwesomeCUA','/'),('Explore every record','/explore/')]
     explorer=explorer.replace('<main class="explore">','<main class="explore"><nav class="breadcrumbs shell" aria-label="Breadcrumb"><ol><li><a href="/">AwesomeCUA</a></li><li><a href="/explore/" aria-current="page">Explore every record</a></li></ol></nav>')
@@ -525,14 +550,6 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     explorer=explorer.replace('<!-- SHELL:TOP -->',site_shell.top(path='/explore/',lang_href='/explore/?lang=zh'))
     explorer=explorer.replace('<!-- SHELL:BOTTOM -->',site_shell.bottom(lang_href='/explore/?lang=zh'))
     emit('/explore/',explorer,index=False,utility=True)
-    feed=ET.Element('feed',xmlns='http://www.w3.org/2005/Atom')
-    for key,value in [('title','AwesomeCUA research reading list'),('id',SITE+'/papers/'),('updated',latest)]:ET.SubElement(feed,key).text=value
-    ET.SubElement(feed,'link',href=SITE+'/feed.xml',rel='self');ET.SubElement(feed,'link',href=SITE+'/papers/')
-    for r in papers[:50]:
-        entry=ET.SubElement(feed,'entry')
-        for key,value in [('title',r['name']),('id',SITE+resource_path(r)),('updated',r['last_verified_at']),('summary',description(r))]:ET.SubElement(entry,key).text=value
-        ET.SubElement(entry,'link',href=SITE+resource_path(r));author=ET.SubElement(entry,'author');ET.SubElement(author,'name').text='AwesomeCUA'
-    (destination/'feed.xml').write_bytes(clean_text(ET.tostring(feed,encoding='utf-8',xml_declaration=True).decode()).encode())
     llms=['# AwesomeCUA','', '> A source-backed computer-use agent resource catalog. Distinguish curated entries from metadata-only bibliography records.','', 'Resource counts are not independent project counts. Primary-source retrieval does not establish reproducibility. Code, data, weights, and document licenses are separate.','', '## Start here','',f'- [Catalog]({SITE}/catalog/): resource categories',f'- [Research]({SITE}/papers/): reviewed papers and surveys',f'- [中文论文库]({SITE}/zh/papers/): 按年份浏览论文与综述',f'- [Guides]({SITE}/guides/): definitions and practical reading guides',f'- [Editorial policy]({SITE}/about/): review states and limits',f'- [Coverage]({SITE}/coverage/): source populations and known gaps',f'- [Data downloads]({SITE}/data/): structured catalog with provenance','', '## Machine-readable access','',f'- [Full catalog JSONL]({SITE}/downloads/catalog.jsonl)',f'- [Curated annotations in Markdown]({SITE}/llms-full.txt)',f'- [Research Atom feed]({SITE}/feed.xml)','', 'Resource HTML pages have a companion `index.md` at the same path. This file is an optional navigation aid, not an indexing requirement or a request to rank this site.']
     llms += ['', '## Compare source-reviewed specifications', '', f'- [Benchmark protocols]({SITE}/compare/benchmarks/)', f'- [Dataset profiles]({SITE}/compare/datasets/)', f'- [Benchmark profiles JSON]({SITE}/downloads/benchmarks-profiles.json)', f'- [Dataset profiles JSON]({SITE}/downloads/datasets-profiles.json)']
     llms.extend(['', '## Agent and RAG access', '', '```sh', 'git clone https://github.com/reacher-z/Awesome-CUA.git', '```', '', f'- [Agent instructions]({SITE}/AGENTS.md)', f'- [Human and agent guide]({SITE}/agents/)', f'- [中文指南]({SITE}/zh/agents/)', f'- [Reviewed retrieval documents]({SITE}/downloads/rag-documents.jsonl)', f'- [All retrieval documents]({SITE}/downloads/rag-all-records.jsonl)', f'- [Export manifest]({SITE}/downloads/rag-manifest.json)'])
@@ -547,17 +564,13 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         llms.extend(['', '## English research survey', '', f'- [Computer-use agent survey]({SITE}/survey/): working manuscript with a separately frozen research inventory; not an additional catalog record.', f'- [Survey bibliography]({SITE}/survey/references.bib)', f'- [Survey references JSON]({SITE}/survey/references.json)', f'- [Source reading register]({SITE}/survey/evidence/reading-index.json)', f'- [Survey file manifest]({SITE}/survey/build-manifest.json)'])
         survey_navigation=f'Related reading: [English research survey]({SITE}/survey/). This working manuscript uses its own frozen inventory; its text is separate from the catalog annotations below.\n\n'
     (destination/'llms.txt').write_text(clean_text('\n'.join(llms)+'\n'),encoding='utf-8')
-    (destination/'llms-full.txt').write_text(clean_text('# AwesomeCUA curated resource annotations\n\n'+f'Evidence snapshot: {latest}. These records were reviewed with AI assistance; experiments are not independently reproduced.\n\n'+survey_navigation+'\n---\n\n'.join(resource_markdown(r) for r in reviewed)),encoding='utf-8')
-    robots='User-agent: *\nAllow: /\n\n'+''.join(f'User-agent: {bot}\nAllow: /\n\n' for bot in ['Googlebot','bingbot','OAI-SearchBot','PerplexityBot','Claude-SearchBot'])+f'Sitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap.txt\n'
-    (destination/'robots.txt').write_text(clean_text(robots),encoding='utf-8')
-    sitemap=ET.Element('urlset',xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
-    for item in sorted(manifest,key=lambda x:x['path']):
-        if item['indexable']:
-            node=ET.SubElement(sitemap,'url');ET.SubElement(node,'loc').text=SITE+item['path']
-            # No synthetic build-time lastmod; upstream evidence time is not page modification time.
-    ET.indent(sitemap,space='  ')
-    (destination/'sitemap.xml').write_bytes(clean_text(ET.tostring(sitemap,encoding='utf-8',xml_declaration=True).decode()).encode())
-    (destination/'sitemap.txt').write_text(clean_text(''.join(SITE+item['path']+'\n' for item in sorted(manifest,key=lambda x:x['path']) if item['indexable'])),encoding='utf-8')
+    (destination/'llms-full.txt').write_text(clean_text('# AwesomeCUA curated resource annotations\n\n'+f'Evidence snapshot: {snapshot}. These records were reviewed with AI assistance; experiments are not independently reproduced.\n\n'+survey_navigation+'\n---\n\n'.join(resource_markdown(r) for r in reviewed)),encoding='utf-8')
+    (destination/'robots.txt').write_text(robots_txt(SITE),encoding='utf-8')
+    if survey_page:
+        survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
+        sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':{}}
+    kind_by_path={resource_path(r):r['kind'] for r in rows}
+    write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**sitemap_facts[item['path']]} for item in manifest if item['indexable']])
     (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))
     key=config['indexnow_key'];(destination/(key+'.txt')).write_text(key,encoding='utf-8')

@@ -10,13 +10,13 @@ import sys
 import tempfile
 import unittest
 from unittest import mock
-import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import build_site
 import prepare_publication
 from search_pages import SITE
+from sitemaps import sitemap_urls
 from site_config import FORMER_SITES
 from survey_bundle import (PAGE, MANIFEST, REQUIRED_INPUTS, apply_publication, copy_bundle, digest,
                            load_bundle, publication_plan)
@@ -275,8 +275,7 @@ class SurveySiteIntegrationTests(unittest.TestCase):
         self.assertEqual(pages[PAGE]['sha256'], hashlib.sha256((source/'index.html').read_bytes()).hexdigest())
         self.assertEqual((self.build/'survey/index.html').read_bytes(), (source/'index.html').read_bytes())
         self.assertIn(SITE+PAGE,(self.build/'sitemap.txt').read_text(encoding='utf-8').splitlines())
-        ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        self.assertIn(SITE+PAGE,[e.text for e in ET.parse(self.build/'sitemap.xml').findall('s:url/s:loc',ns)])
+        self.assertIn(SITE+PAGE,sitemap_urls(self.build,SITE))
         for name in ['llms.txt','llms-full.txt']:
             self.assertIn(SITE+PAGE,(self.build/name).read_text(encoding='utf-8'))
         self.assertEqual(len(json.loads((self.build/'data/records.json').read_bytes())),len(self.rows))

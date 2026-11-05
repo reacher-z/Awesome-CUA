@@ -6,12 +6,12 @@ import sys
 import tempfile
 import unittest
 from unittest import mock
-import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import topic_pages
 from build_site import build_site
 from search_pages import SITE, resource_path
+from sitemaps import sitemap_urls
 from topic_pages import topic_counts, topic_index_body, topic_page_count, topic_path, topic_sections
 from test_paper_library import LibraryParser, record
 from test_paper_pages import BUDGET
@@ -110,7 +110,7 @@ class TopicPageBuildTests(unittest.TestCase):
                 self.assertEqual(sorted(listed), sorted(entry['resource_ids']), first)
 
     def test_topic_pages_are_indexable_canonical_language_pairs_in_the_sitemap(self):
-        sitemap = {x.text for x in ET.parse(self.dest / 'sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+        sitemap = set(sitemap_urls(self.dest, SITE))
         for path, markup in self.markup.items():
             match = re.fullmatch(r'(/zh)?/topics/(?:([a-z0-9-]+)/(?:page/(\d+)/)?)?', path)
             self.assertTrue(match, path)

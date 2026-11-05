@@ -11,7 +11,8 @@ import re
 import urllib.error
 import urllib.parse
 import urllib.request
-import xml.etree.ElementTree as ET
+
+from sitemaps import sitemap_urls
 
 ROOT = Path(__file__).resolve().parents[1]
 ENDPOINT = 'https://api.indexnow.org/indexnow'
@@ -77,8 +78,7 @@ def submit_changes(*, site_dir, config_path, state_path, receipts_path, submit=F
         raise ValueError('Invalid IndexNow ownership key format')
     manifest = read_json(site_dir / 'data/search-manifest.json')
     current = fingerprints(manifest, site)
-    namespace = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-    sitemap = [entry.text for entry in ET.parse(site_dir / 'sitemap.xml').findall('s:url/s:loc', namespace)]
+    sitemap = sitemap_urls(site_dir, site)
     if len(sitemap) != len(set(sitemap)) or set(sitemap) != {site + path for path in current}:
         raise ValueError('Sitemap and indexable manifest disagree')
     former_sites = config.get('former_site_urls', [])

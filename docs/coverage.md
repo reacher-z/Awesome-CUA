@@ -5,7 +5,7 @@ Evidence snapshot through **2026-11-05T16:24:19Z**. Generated from committed sou
 - 3,377 resource records: 1,674 curated; 1,703 bibliographic metadata only.
 - 2,905 paper and survey records, including 2,892 arXiv identities and 13 publisher-only identities. This count overlaps the status counts above.
 - 3,030 retained arXiv metadata records; 138 explicit scope exclusions are outside the active catalog.
-- 4,432 discovery identifiers; 913 remain unresolved after accounting for scope exclusions and for 107 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 4,433 discovery identifiers; 914 remain unresolved after accounting for scope exclusions and for 107 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 31 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -42,7 +42,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 25 | 25 | 0 | 7 | 81 | OK · 2026-11-05 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-11-05 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 116 | 110 | 1 | 9 | 44 | OK · 2026-11-05 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | FAILED · 2026-11-05 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 459 | 1 | 9 | 75 | RETIRED · 2026-11-05 |
 | [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 63 | 0 | 2 | 23 | OK · 2026-11-05 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 49 | 34 | 0 | 3 | 26 | OK · 2026-11-05 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 11 | 8 | 0 | 2 | 50 | OK · 2026-11-05 |
@@ -58,7 +58,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 56 | 0 | 0 | 37 | OK · 2026-11-05 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 196 | 196 | 144 | 0 | 0 | 0 | OK · 2026-11-05 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 51 | 34 | 0 | 13 | 8 | OK · 2026-11-05 |
-| [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 50 | 46 | 39 | 0 | 1 | 3 | OK · 2026-11-05 |
+| [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 57 | 52 | 43 | 0 | 1 | 4 | OK · 2026-11-05 |
 | [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 151 | 129 | 14 | 14 | 36 | OK · 2026-11-05 |
 | [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 34 | 10 | 10 | 0 | 3 | 21 | OK · 2026-11-05 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-11-05 |
@@ -92,7 +92,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-05T16:24:18Z; **32/32** query windows succeeded. 1,505 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-11-05T20:13:55Z; **32/32** query windows succeeded. 1,505 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

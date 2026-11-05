@@ -80,7 +80,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,377 resource records** · **1,674 curated** · **2,905 paper and survey records** · **54 discovery documents**
 
-Evidence through `2026-11-05T16:24:19Z`. 1,703 records have bibliographic verification only; 913 discovered identifiers remain unresolved, not counting 143 links reviewed as non-resources or other addresses of indexed resources. 138 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-11-05T16:24:19Z`. 1,703 records have bibliographic verification only; 914 discovered identifiers remain unresolved, not counting 143 links reviewed as non-resources or other addresses of indexed resources. 138 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 

@@ -7,7 +7,6 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from agent_pages import CLONE_COMMAND
 from search_pages import SITE
-from site_config import FORMER_SITES
 
 
 class CitationFileTests(unittest.TestCase):
@@ -30,8 +29,7 @@ class CitationFileTests(unittest.TestCase):
         self.assertEqual(self.cff["license"], "MIT")
         self.assertTrue((ROOT / "LICENSE").read_text().startswith("MIT License"))
         self.assertEqual(self.cff["repository-code"], CLONE_COMMAND.split()[-1].removesuffix(".git"))
-        # The citation URL moves to SITE with the survey rebuild; until then it may name a former origin, which redirects there.
-        self.assertIn(self.cff["url"], [origin + "/" for origin in (SITE, *FORMER_SITES)])
+        self.assertEqual(self.cff["url"], SITE + "/")
 
     def test_both_readmes_explain_citing_and_pinning(self):
         for name in ("README.md", "README.zh-CN.md"):

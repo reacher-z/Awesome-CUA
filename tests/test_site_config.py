@@ -10,9 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from site_config import FORMER_SITES, HOST, SITE
 
-# Scan-written data keeps historical receipts and observations. The reviewed survey bundle and the
-# citation file move to the canonical origin with their own rebuild.
-EXEMPT = ('data/', 'web/survey/', 'research/survey/', 'CITATION.cff', 'scripts/site_config.py')
+# Scan-written data keeps historical receipts and observations; site_config.py names the former origins.
+EXEMPT = ('data/', 'scripts/site_config.py')
 
 
 class SiteConfigTests(unittest.TestCase):

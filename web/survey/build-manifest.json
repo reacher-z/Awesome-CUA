@@ -4,7 +4,7 @@
   "working_manuscript_date": "2026-10-18",
   "source_commit_for_inventory": "87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db",
   "catalog_sha256": "7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f",
-  "canonical_location_intended": "https://awesomecua.github.io/survey/",
+  "canonical_location_intended": "https://awesomecua.com/survey/",
   "publication_performed": false,
   "counts": {
     "unique_cited_works": 89,
@@ -91,10 +91,10 @@
     "research/survey/evidence/title-search.json": "970ca63afcaee31cba70d28716a26364bf04e0cfaf6e306fe8cf3307a580e662",
     "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
     "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
-    "research/survey/scripts/build_article.py": "7f58bc6bd4410a58da96e9a1849540bb7bbc7ec901b24fcbb0cc40c42388f87c",
+    "research/survey/scripts/build_article.py": "b3272538d234f99c21934710b7ae9187cf7e9266d2141f982549cad83f3bac14",
     "research/survey/article.css": "f70cedca3e5b0c3b48123cd280afdf7d30cc83aa4cebb6363db6ab4066f89d54",
     "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
-    "research/survey/template.html": "a5f6f52a090ec551771b8076940c34644c4e27f8ec4ca49ae40dca8e9d8c8d17",
+    "research/survey/template.html": "2ec9894c74639a0e4f5a09fc67ef513b2b9e523d69a8ca85e3dc51a4c6f6b3eb",
     "research/survey/figures/corpus.svg": "33bb85647bd7a42235ada6dc47ef51f7d272d98e922cf181e51495d96140b106",
     "scripts/export_citations.py": "82633d1cdccbcf818b0e9a55a7119c63390cf8805875367c2b1dc800732f6a92",
     "scripts/publication_metadata.py": "2b2f89c0584acc44ec5bf686e94c206abc85358edcc314872f5357246f5d5e82",
@@ -103,8 +103,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 964,
-      "sha256": "f138534d1d1962985f4ac88d1b890848008996ff85611d2d4ae40de979ae3e5e"
+      "bytes": 958,
+      "sha256": "4d542bb69215ba4455f696e0ed4be359c283afa5715e551af48d9929e68f0ee9"
     },
     {
       "path": "evidence/context.json",
@@ -153,8 +153,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 463776,
-      "sha256": "3724e8d70060d9f5a74e8f6dfc6203d5f130b8c6bc98a3c7029347229770b19d"
+      "bytes": 463722,
+      "sha256": "e089dad624432c927a636561ab84c58c5f77d4e966256516cd933b1e4457a672"
     },
     {
       "path": "references.bib",

@@ -40,7 +40,7 @@ def declared_licenses(record):
 def compact_entry(record, *, site, page_path, summary, reviewed_at, kind_label):
     """A few lines that identify a curated record and point to its full annotation."""
     lines = ['### ' + inline(record['name']), '', inline(summary), '',
-             f'- {site}{page_path} · source: {record["url"]}',
+             f'- {site}{page_path} · source: {((record["details"].get("arxiv_snapshot") or {}).get("versioned_url")) or record["url"]}',
              f'- {kind_label} · reviewed {(reviewed_at or "")[:10] or "date not recorded"}'
              + (f' · environments: {", ".join(record["environments"])}' if record['environments'] else '')
              + (f' · topics: {", ".join(record["topics"])}' if record['topics'] else '')]
@@ -136,8 +136,8 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
              f'{curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source with evidence, '
              f'review dates and separate license declarations. {waiting["metadata_only_records"]:,} metadata-only bibliography records await relevance review and are labeled separately.', '',
              'Counts are resources, not independent projects. Source review does not reproduce experiments. Code, data, weights and document licenses are separate. '
-             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`; '
-             'pages link both from `<head>`. This file is an optional navigation aid, not an indexing requirement or a request to rank this site.', '',
+             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`. '
+             'This file is an optional navigation aid, not an indexing requirement or a request to rank this site.', '',
              '## Catalog by kind', '']
     lines += [f'- {link(label, site + md_path)}: {plural(count, "curated record")}' + (f'; {note}' if note else '') for label, count, md_path, note in kinds]
     lines += ['', '## Research library', '',

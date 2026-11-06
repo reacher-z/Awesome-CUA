@@ -74,6 +74,10 @@ A screening decides whether a metadata-only paper belongs in the catalog before 
 
 Approval follows the normal rules above: add `environments`, `topics` and `summary`, review the evidence, and set `editorial_reviewed`. A screening is not an approval, and the published `scope` is the one in effect at approval.
 
+## Chinese annotations
+
+`data/translations.zh-CN.json` is a JSON object keyed by the ID of a curated record. Each value has one key, `summary`: a Chinese rendering of the record's English summary, written as a Chinese editor would write it (at most 220 characters, ending with a full stop). `catalog.py validate` rejects an ID that no curated record has, an empty or non-Chinese summary, and any other key. A record without an entry has no Chinese summary yet.
+
 ## Examples
 
 A GitHub repository. Its primary receipt is the raw README, and its ID is `github:xlang-ai/osworld`:

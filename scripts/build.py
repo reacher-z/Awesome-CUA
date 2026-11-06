@@ -52,6 +52,10 @@ def apply_license_reviews(editorial, primary, licenses, details):
         details['license_review']={slot:{k:copy.deepcopy(v) for k,v in decision.items() if k!='value'} for slot,decision in reviews.items()}
 
 
+LEGACY_ARCHIVE_NOTE = "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."
+ARCHIVE_NOTE = "Bibliographic metadata checked against arXiv; relevance review pending."
+
+
 def source_records(with_scope=False):
     archived = read_jsonl(DATA / "papers.jsonl")
     if len({r['id'] for r in archived}) != len(archived):
@@ -65,6 +69,9 @@ def source_records(with_scope=False):
     # An omission (already recorded, or for an author list naming a protected person) also empties the attached
     # edition's list; publications.jsonl keeps its observation, and the privacy test reports any source that names one.
     records = {rid: omit_protected_authors(row) for rid, row in records.items()}
+    for row in records.values():
+        if row.get('notes') == LEGACY_ARCHIVE_NOTE:
+            row['notes'] = ARCHIVE_NOTE
     aliases=publication_aliases(observations,publication_identity)
     evidence = {r["id"]: r for r in read_jsonl(DATA / "primary-evidence.jsonl")}
     enrichment = {r["id"]: r for r in read_jsonl(DATA / "enrichment.jsonl")}
@@ -1049,6 +1056,27 @@ def build(args):
     print(f"Built {len(rows)} records ({report['curated_records']} curated), {len(edges)} reference edges, {len(merged)} review items, and SQLite/JSON exports.")
 
 
+def validate_translations(rows, translations):
+    """Chinese annotations in data/translations.zh-CN.json: keyed by the ID of a curated record, one natural Chinese summary each."""
+    if not isinstance(translations, dict):
+        return ["Chinese translations: the file must be a JSON object keyed by resource ID"]
+    curated = {row["id"] for row in rows if row.get("review_status") == "curated"}
+    errors = []
+    for rid, entry in translations.items():
+        if rid not in curated:
+            errors.append(f"Chinese translations {rid}: no curated record has this ID")
+            continue
+        if not isinstance(entry, dict) or set(entry) != {"summary"}:
+            errors.append(f"Chinese translations {rid}: expected exactly one key, summary")
+            continue
+        text = entry["summary"]
+        if not isinstance(text, str) or not re.search(r"[\u4e00-\u9fff]", text):
+            errors.append(f"Chinese translations {rid}: summary must be Chinese text")
+        elif len(text) > 220 or not text.rstrip().endswith(("。", ".", "）", ")")):
+            errors.append(f"Chinese translations {rid}: summary must be at most 220 characters and end with a full stop")
+    return errors
+
+
 def validate(args):
     rows = read_jsonl(DATA / "catalog.jsonl")
     if not rows:
@@ -1060,7 +1088,7 @@ def validate(args):
     # Without the format extras, jsonschema silently skips date-time and uri constraints.
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
-    errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", []))
+    errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", [])) + validate_translations(rows, read_json(DATA / "translations.zh-CN.json", {}))
     from catalog import validate_candidate_snapshot
     try:
         validate_candidate_snapshot(DATA)

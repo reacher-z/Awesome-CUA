@@ -707,7 +707,7 @@ def arxiv_entry(entry, evidence):
         "licenses": {"code": None, "data": None, "weights": None, "document": None},
         "evidence": [{"role": "primary", "method": "arxiv_api", "supports": ["name", "authors", "published_at", "updated_at", "identifiers.arxiv", "details.arxiv_snapshot"], **evidence}],
         "last_verified_at": evidence["retrieved_at"],
-        "notes": "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."})
+        "notes": "Bibliographic metadata checked against arXiv; relevance review pending."})
 
 
 def harvest(args):

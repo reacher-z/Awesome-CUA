@@ -9,7 +9,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C170-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2017%3A14%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C171-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2017%3A14%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 Curated entries were reviewed against a first-party source snapshot; records awaiting review have their bibliographic identity checked; candidates are discovered identifiers awaiting resolution. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**2,170 curated resources** · **1,673 reviewed papers and surveys** · **104 discovery documents**
+**2,171 curated resources** · **1,673 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-06T17:14:14Z`. **450 records awaiting review** have verified bibliographic metadata, and **2,062 discovered candidates** await resolution. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-06T17:14:14Z`. **450 records awaiting review** have verified bibliographic metadata, and **2,061 discovered candidates** await resolution. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -70,14 +70,14 @@ Evidence through `2026-11-06T17:14:14Z`. **450 records awaiting review** have ve
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |      86 |
 | [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |      91 |
 | [Models and checkpoint releases](docs/models.md) | Checkpoints and model families                                |      98 |
-| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |      49 |
+| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |      50 |
 | [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |      87 |
 | [Infrastructure](docs/infrastructures.md)        | Sandboxes, VMs, device farms and environments                 |      16 |
 | [Tools](docs/tools.md)                           | Evaluation harnesses, recorders and other utilities           |      32 |
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      20 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      16 |
 
-**By platform:** [Web](docs/environments/web.md) **858** · [Desktop](docs/environments/desktop.md) **364** · [Windows](docs/environments/windows.md) **68** · [macOS](docs/environments/macos.md) **36** · [Linux](docs/environments/linux.md) **57** · [Android](docs/environments/android.md) **350** · [iOS](docs/environments/ios.md) **26** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **206**
+**By platform:** [Web](docs/environments/web.md) **859** · [Desktop](docs/environments/desktop.md) **364** · [Windows](docs/environments/windows.md) **68** · [macOS](docs/environments/macos.md) **36** · [Linux](docs/environments/linux.md) **57** · [Android](docs/environments/android.md) **351** · [iOS](docs/environments/ios.md) **27** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **206**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation.
@@ -169,7 +169,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie)                   |        3 | android        | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | —               | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback.                                                        |
 | [Computer Use OOTB](https://github.com/showlab/computer_use_ootb)    |        2 | desktop        | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | code Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. |
 
-**Agents** · [all 49 →](docs/agents.md)
+**Agents** · [all 50 →](docs/agents.md)
 
 | Resource                                                 | Mentions | Environments            | Paper                                                                                                                                                                                                                      | License         | Description                                                                                                                                                                                             |
 | -------------------------------------------------------- | -------: | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

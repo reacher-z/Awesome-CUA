@@ -9,7 +9,7 @@
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C170-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2017%3A14%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C171-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2017%3A14%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 已审阅条目依据一手来源快照审阅；待审阅记录已核实书目信息；候选是已发现的标识符，尚待处理。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**2,170 条已审阅资源** · **1,673 篇已审阅论文与综述** · **104 个发现来源文档**
+**2,171 条已审阅资源** · **1,673 篇已审阅论文与综述** · **104 个发现来源文档**
 
-证据截至 `2026-11-06T17:14:14Z`。**450 条待审阅记录**已完成书目核实；**2,062 个已发现候选**尚待处理。1,308 条范围排除记录在归档中保留原始元数据。
+证据截至 `2026-11-06T17:14:14Z`。**450 条待审阅记录**已完成书目核实；**2,061 个已发现候选**尚待处理。1,308 条范围排除记录在归档中保留原始元数据。
 
 <!-- STATS:END -->
 
@@ -70,14 +70,14 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |    86 |
 | [基准](docs/benchmarks.md)        | 评测环境与任务集         |    91 |
 | [模型与权重版本](docs/models.md)       | 模型权重版本与模型系列      |    98 |
-| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |    49 |
+| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |    50 |
 | [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |    87 |
 | [基础设施](docs/infrastructures.md) | 沙箱、虚拟机、设备集群与运行环境 |    16 |
 | [工具](docs/tools.md)             | 评测工具、录制工具及其他实用工具 |    32 |
 | [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    20 |
 | [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    16 |
 
-**按平台：** [Web](docs/environments/web.md) **858** · [Desktop](docs/environments/desktop.md) **364** · [Windows](docs/environments/windows.md) **68** · [macOS](docs/environments/macos.md) **36** · [Linux](docs/environments/linux.md) **57** · [Android](docs/environments/android.md) **350** · [iOS](docs/environments/ios.md) **26** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **206**
+**按平台：** [Web](docs/environments/web.md) **859** · [Desktop](docs/environments/desktop.md) **364** · [Windows](docs/environments/windows.md) **68** · [macOS](docs/environments/macos.md) **36** · [Linux](docs/environments/linux.md) **57** · [Android](docs/environments/android.md) **351** · [iOS](docs/environments/ios.md) **27** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **206**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -169,7 +169,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie)                   |   3 | android        | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | —             | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback.                                                        |
 | [Computer Use OOTB](https://github.com/showlab/computer_use_ootb)    |   2 | desktop        | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | 代码 Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. |
 
-**智能体** · [全部 49 项 →](docs/agents.md)
+**智能体** · [全部 50 项 →](docs/agents.md)
 
 | 资源                                                       | 被提及 | 环境                      | 论文                                                                                                                                                                                                                         | 许可            | 简介（英文）                                                                                                                                                                                                  |
 | -------------------------------------------------------- | --: | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

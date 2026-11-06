@@ -86010,5 +86010,34 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "agent-qa",
+    "kind": "agent",
+    "url": "https://github.com/vostride/agent-qa",
+    "environments": [
+      "web",
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "automation",
+      "memory",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "QA agent for web, Android and iOS apps, using plain-language tests through CLI and MCP with persistent memory and validated self-improvement.",
+    "verify_terms": [
+      "agent-qa"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vostride/agent-qa/v0.2.3/README.md"
+    ],
+    "editorial_reviewed": true,
+    "scope": "core",
+    "notes": "Project website: https://vostride.com. Requires configured model access; provider charges may apply.",
+    "read_basis": "Released v0.2.3 README and public MCP, memory and self-improvement documentation.",
+    "reviewed_sha256": "c7bb88b0cf90592c5bd4ff2a24ec8c55a8c5aed52092beb1832a6accd4d86dcd",
+    "reviewed_at": "2026-10-31T10:36:30Z"
   }
 ]

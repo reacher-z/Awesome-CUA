@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-173 source-reviewed resources tagged `automation`. Curated metadata; unknown facts are shown as —.
+174 source-reviewed resources tagged `automation`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Agents (9)](#agents) · [Frameworks (14)](#frameworks) · [Tools (16)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (1)](#products) · [Surveys (2)](#surveys) · [Papers (123)](#papers)
+**Contents:** [Models (1)](#models) · [Agents (10)](#agents) · [Frameworks (14)](#frameworks) · [Tools (16)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (1)](#products) · [Surveys (2)](#surveys) · [Papers (123)](#papers)
 
 ## Models
 
@@ -19,6 +19,7 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | desktop, linux, web | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
+| [agent-qa](https://github.com/vostride/agent-qa) | web, android, ios | — | — | QA agent for web, Android and iOS apps, using plain-language tests through CLI and MCP with persistent memory and validated self-improvement. | [✓ 2026‑10‑31](https://raw.githubusercontent.com/vostride/agent-qa/v0.2.3/README.md) |
 | [BrowserGPT](https://github.com/mayt/BrowserGPT) | web | — | code MIT | BrowserGPT is a browser automation script that uses GPT-4 to generate Playwright code for navigating and interacting with web pages from natural-language tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/mayt/BrowserGPT/86b56d6ba7b7d9121710704301940cb69f000632/README.md) |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |

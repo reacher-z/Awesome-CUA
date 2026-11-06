@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-11-06T17:14:14Z",
-  "total_records": 2620,
-  "curated_records": 2170,
+  "total_records": 2621,
+  "curated_records": 2171,
   "bibliographic_records": 2123,
   "arxiv_active_records": 2109,
   "non_arxiv_bibliographic_records": 14,
@@ -11,7 +11,7 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 450,
   "discovery_identifiers": 6080,
-  "unindexed_candidates": 2062,
+  "unindexed_candidates": 2061,
   "non_resource_candidates": 130,
   "alias_candidates": 36,
   "pending_editorial": [
@@ -2643,7 +2643,7 @@
   ],
   "uncurated_linked_papers": [],
   "by_kind": {
-    "agent": 49,
+    "agent": 50,
     "benchmark": 91,
     "company": 16,
     "dataset": 86,
@@ -2657,27 +2657,27 @@
     "tool": 32
   },
   "curated_by_environment": {
-    "android": 350,
+    "android": 351,
     "cross-platform": 206,
     "desktop": 364,
     "harmonyos": 4,
-    "ios": 26,
+    "ios": 27,
     "linux": 57,
     "macos": 36,
     "unspecified": 630,
-    "web": 858,
+    "web": 859,
     "windows": 68
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 17,
+      "android": 18,
       "cross-platform": 1,
       "desktop": 18,
-      "ios": 2,
+      "ios": 3,
       "linux": 2,
       "macos": 2,
       "unspecified": 1,
-      "web": 14,
+      "web": 15,
       "windows": 5
     },
     "benchmark": {
@@ -2926,13 +2926,13 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 25,
-      "indexed_resources": 25,
+      "indexed": 26,
+      "indexed_resources": 26,
       "resolved_aliases": 2,
-      "curated": 25,
+      "curated": 26,
       "excluded": 0,
       "set_aside": 7,
-      "unindexed": 81
+      "unindexed": 80
     },
     {
       "id": "steel-web-archive",
@@ -3071,13 +3071,13 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 39,
-      "indexed_resources": 39,
+      "indexed": 40,
+      "indexed_resources": 40,
       "resolved_aliases": 0,
-      "curated": 38,
+      "curated": 39,
       "excluded": 10,
       "set_aside": 3,
-      "unindexed": 26
+      "unindexed": 25
     },
     {
       "id": "supernal-gui",
@@ -3551,13 +3551,13 @@
         "state": "success"
       },
       "discovered": 34,
-      "indexed": 10,
-      "indexed_resources": 10,
+      "indexed": 11,
+      "indexed_resources": 11,
       "resolved_aliases": 2,
-      "curated": 10,
+      "curated": 11,
       "excluded": 0,
       "set_aside": 3,
-      "unindexed": 21
+      "unindexed": 20
     },
     {
       "id": "release-fara",
@@ -4481,13 +4481,13 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 93,
+      "indexed_resources": 93,
       "resolved_aliases": 0,
-      "curated": 80,
+      "curated": 81,
       "excluded": 35,
       "set_aside": 6,
-      "unindexed": 88
+      "unindexed": 87
     },
     {
       "id": "rl-gui-agents",
@@ -4931,13 +4931,13 @@
         "state": "success"
       },
       "discovered": 66,
-      "indexed": 18,
-      "indexed_resources": 18,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 0,
-      "curated": 18,
+      "curated": 19,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 48
+      "unindexed": 47
     },
     {
       "id": "webarena-leaderboard",

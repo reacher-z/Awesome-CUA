@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-858 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
+859 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (45)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (14)](#agents) · [Frameworks (47)](#frameworks) · [Tools (19)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (18)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (647)](#papers)
+**Contents:** [Benchmarks (45)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (15)](#agents) · [Frameworks (47)](#frameworks) · [Tools (19)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (18)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (647)](#papers)
 
 ## Benchmarks
 
@@ -125,6 +125,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [Agent E](https://github.com/EmergenceAI/Agent-E) | web | [2407.13032](https://arxiv.org/abs/2407.13032) (2024) | code MIT | Browser automation agent on the AG2 framework that pairs a planner agent with a browser navigation agent to fill forms, search shops and work through sites, also callable over a local HTTP API. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/EmergenceAI/Agent-E/HEAD/README.md) |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | desktop, linux, web | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
+| [agent-qa](https://github.com/vostride/agent-qa) | web, android, ios | — | — | QA agent for web, Android and iOS apps, using plain-language tests through CLI and MCP with persistent memory and validated self-improvement. | [✓ 2026‑10‑31](https://raw.githubusercontent.com/vostride/agent-qa/v0.2.3/README.md) |
 | [AutoWebGLM](https://github.com/THUDM/AutoWebGLM) | web | — | code Apache-2.0 | Web navigation agent built on ChatGLM3-6B that simplifies HTML for the model, is trained on hybrid human and AI data with RL and rejection sampling, and comes with the bilingual AutoWebBench. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/AutoWebGLM/HEAD/README.md) |
 | [BrowserGPT](https://github.com/mayt/BrowserGPT) | web | — | code MIT | BrowserGPT is a browser automation script that uses GPT-4 to generate Playwright code for navigating and interacting with web pages from natural-language tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/mayt/BrowserGPT/86b56d6ba7b7d9121710704301940cb69f000632/README.md) |
 | [CAAP Agent](https://github.com/caap-agent/caap-agent) | web | [2406.06947](https://arxiv.org/abs/2406.06947) (2024) | code AGPL-3.0 | Screenshot-driven agent implementation for MiniWoB++ and WebShop, using a visual observer and context-aware prompts to issue mouse and keyboard actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/README.md) |

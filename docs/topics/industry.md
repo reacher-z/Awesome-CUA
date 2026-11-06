@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-30 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (14)](#papers)
+**Contents:** [Publishers (16)](#publishers) · [Papers (23)](#papers)
 
 ## Publishers
 
@@ -33,7 +33,16 @@ All entries in this section: unspecified.
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑10‑24 | [Build or Adopt? Custom-Built vs. General-Purpose LLM Agent Harnesses for Automotive GUI Testing](https://arxiv.org/abs/2610.33636) | android | Compares a custom harness with general-purpose LLM agent harnesses for GUI testing of Android-based vehicle interfaces and tasks in public apps. |
+| 2026‑10‑23 | [WaitLens: Temporal VLM-Based Adaptive Waiting for Industrial GUI Testing Agents](https://arxiv.org/abs/2610.32482) | unspecified | Introduces WaitLens, a vision-language model trained on GUI loading trajectories to decide when testing agents can stop waiting for an interface to load. |
+| 2026‑09‑07 | [FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?](https://arxiv.org/abs/2609.07603) | unspecified | Introduces FinCUABuildBench for assessing financial computer-use task construction and FinCUABuildAgent for generating tasks, environments, and validators. |
+| 2026‑07‑29 | [OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding](https://arxiv.org/abs/2607.27155) | unspecified | Introduces OmegaUse-OfficeVal, a benchmark for long-horizon office-suite agent tasks with labor-time and price signals, plus rubric-based code verifiers. |
+| 2026‑06‑29 | [SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows](https://arxiv.org/abs/2606.29955) | unspecified | Introduces SpreadsheetBench 2, a benchmark of multi-sheet business spreadsheet workflows for agents, covering generation, debugging, and visualization tasks. |
+| 2026‑05‑29 | [BlueFin: Benchmarking LLM Agents on Financial Spreadsheets](https://arxiv.org/abs/2605.30907) | unspecified | Introduces BlueFin, a benchmark and evaluation framework for agents handling professional finance spreadsheet workbooks through synthesis, manipulation, and comprehension tasks. |
+| 2026‑05‑25 | [Anchor: Preventing Artifact Drift for Reliable Agent Verification](https://arxiv.org/abs/2605.26321) | web | Anchor builds ERP-Bench by generating procurement and manufacturing tasks with shared state verifiers for evaluating browser and computer-use agents. |
+| 2026‑04‑15 | [RiskWebWorld: A Realistic Interactive Benchmark for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2604.13531) | web | Introduces RiskWebWorld, an interactive benchmark of e-commerce risk-management tasks for GUI agents on websites, with Gymnasium infrastructure for evaluation and agentic RL. |
 | 2026‑04‑10 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) | unspecified | Introduces HealthAdminBench with GUI environments for an electronic health record, payer portals and fax handling. Expert-defined administrative tasks are decomposed into verifiable subtasks to compare local progress with end-to-end workflow completion. |
+| 2026‑03‑31 | [Terminal Agents Suffice for Enterprise Automation](https://arxiv.org/abs/2604.00073) | unspecified | Studies enterprise automation by terminal agents that call platform APIs, comparing their task results and cost with other agent approaches, including web agents using graphical interfaces. |
 | 2026‑01‑25 | [EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents](https://arxiv.org/abs/2601.17722) | unspecified | Introduces EntWorld, an enterprise GUI benchmark built by deriving task logic from database schemas. Long workflows across enterprise domains are assessed with deterministic SQL-based state checks rather than screenshot similarity alone. |
 | 2025‑12‑30 | [ProSoftArena: Benchmarking Hierarchical Capabilities of Multimodal Agents in Professional Software Environments](https://arxiv.org/abs/2601.02399) | windows, desktop | ProSoftArena evaluates 436 professional-software tasks across six disciplines and 13 applications in a Windows 11 virtual-machine environment. Its capability hierarchy, execution-based checks, and human-in-the-loop evaluation cover precise GUI operations and multi-software workflows. |
 | 2025‑12‑12 | [Using GUI Agent for Electronic Design Automation](https://arxiv.org/abs/2512.11611) | unspecified | GUI-EDA collects more than 2,000 screenshot-answer-action pairs from engineers working across five CAD tools and five physical domains. The accompanying benchmark evaluates more than 30 GUI agents on specialized electronic-design workflows. |

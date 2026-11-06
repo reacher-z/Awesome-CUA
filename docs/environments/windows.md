@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-66 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+67 source-reviewed resources tagged `windows`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (39)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (40)](#papers)
 
 ## Benchmarks
 
@@ -95,6 +95,7 @@ All entries in this section: web, desktop, android, windows.
 | 2026‑08‑16 | [UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations](https://arxiv.org/abs/2608.15930) | desktop, windows | Combines environment-grounded training with demonstration-conditioned workflows, and introduces OSWorkerBench for extended office-task evaluation. |
 | 2026‑08‑14 | [LegacyWorld: Atomicity-Aware Evaluation of GUI Agents for Legacy Workflows](https://arxiv.org/abs/2608.14131) | desktop, windows | LegacyWorld evaluates Windows GUI workflows under an atomicity criterion: finish correctly or fail without persistent unintended changes. It compares expert prompts with prompts derived from recorded golden paths and separates useful completion, safe failure and non-atomic side effects. |
 | 2026‑07‑14 | [KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill](https://arxiv.org/abs/2607.12625) | desktop, android, ios, harmonyos, windows | KnowAct-GUIClaw combines a host planner with pluggable GUI subagents, attributable experience memory and an evolving skill library. It uses user profiles and feedback for task decomposition and evaluates transfer across Android, iOS, HarmonyOS and Windows. |
+| 2026‑07‑13 | [MCP-Driven Accessibility Tree Standardization for AI-Powered Screen Reader Agents](https://arxiv.org/abs/2608.24898) | desktop, windows, macos, android, web | Proposes an MCP architecture that presents accessibility trees from Windows, macOS, Android, and web frameworks in a common form for LLM assistive agents interacting with GUIs. |
 | 2026‑06‑23 | [Reinforcement Learning for Computer-Use Agents with Autonomous Evaluation](https://arxiv.org/abs/2606.24515) | desktop, macos, windows | The framework uses a vision-language judge’s final-screen assessment as a terminal reward for GUI reinforcement learning. It models evaluator noise and corrects the reward estimator used by PPO across desktop benchmarks. |
 | 2026‑06‑11 | [ComAct: Reframing Professional Software Manipulation via COM-as-Action Paradigm](https://arxiv.org/abs/2606.13239) | desktop, windows | ComAct proposes COM program synthesis as an alternative interface for manipulating professional software and introduces ComCADBench with GUI-based comparison agents. ComActor adds a staged training and correction approach, supported by a Windows-container training platform. |
 | 2026‑04‑23 | [VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation](https://arxiv.org/abs/2604.21375) | desktop, linux, windows | VLAA-GUI combines mandatory checks for visually supported completion, multi-tier loop recovery and on-demand workflow search. Optional coding and grounding agents support execution, with component ablations on Linux and Windows GUI tasks. |

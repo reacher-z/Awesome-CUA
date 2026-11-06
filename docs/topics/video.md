@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-43 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (34)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (39)](#papers)
 
 ## Benchmarks
 
@@ -29,10 +29,15 @@
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑11‑02 | [CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements](https://arxiv.org/abs/2611.03126) | unspecified | Introduces CUA-Master, a computer-use training framework that mines workflows from instructional videos and turns them into synthesized tasks and trajectories. |
 | 2026‑09‑23 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) | web | MVCAP-Bench tests live browser CAPTCHAs whose foreground meaning emerges through motion against dynamic backgrounds. A foreground-only control separates temporal camouflage difficulty from answer format and browser interaction. |
+| 2026‑08‑25 | [GameWAM: A World Action Model for Video Games](https://arxiv.org/abs/2608.26200) | unspecified | Introduces GameWAM, a model for native game play and GUI control that predicts future visuals and keyboard-mouse actions from synchronized gameplay and GUI trajectories. |
 | 2026‑06‑30 | [DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching](https://arxiv.org/abs/2606.31980) | unspecified | DigitalCoach records expert–novice software coaching conversations aligned with screen and input events. Automated and interactive evaluations examine how model coaches differ from humans in explanation, error diagnosis and visual grounding when helping a learner operate software. |
 | 2026‑06‑28 | [Agent-Computer Observation Interfaces Enable Dynamic Computer Use](https://arxiv.org/abs/2606.29472) | web | The Agent-Computer Observation Interface separates continuous perception from discrete computer actions using captured frames, audio transcription and persistent visual narration. DynaCU-Bench tests these components on dynamic browser tasks and static controls, with model-specific ablations showing that additional observations can also hurt. |
+| 2026‑06‑28 | [Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction](https://arxiv.org/abs/2606.29445) | unspecified | Introduces VG-GUIBench to evaluate GUI agents following video tutorials, and TASKER to select task-relevant keyframes for video-guided tasks and VideoQA. |
 | 2026‑06‑03 | [Benchmarking Living-Screen-Native GUI Agents on Short-Video Platforms](https://arxiv.org/abs/2606.04701) | web | LivingScreen evaluates agents in a browser-based short-video environment where observing content consumes time and affects subsequent actions. Its task suite scores accuracy together with information efficiency to diagnose over- and under-observation on continuously changing screens. |
+| 2026‑06‑02 | [Demo2Tutorial: From Human Experience to Multimodal Software Tutorials](https://arxiv.org/abs/2606.03951) | unspecified | Introduces Demo2Tutorial, which turns recorded software interactions into multimodal tutorials with task graphs and reports benefits for GUI-agent planning. |
+| 2026‑05‑14 | [Video2GUI: Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining](https://arxiv.org/abs/2605.14747) | web | Video2GUI extracts GUI interaction trajectories from tutorial videos to build WildGUI, a pretraining dataset spanning applications and websites. |
 | 2026‑05‑08 | [MMTB: Evaluating Terminal Agents on Multimedia-File Tasks](https://arxiv.org/abs/2605.10966) | unspecified | MultiMedia-TerminalBench evaluates agents that use terminal tools to work with audio and video files. The Terminus-MM harness adds multimedia perception to study how accessible evidence changes executable workflows and task outcomes. |
 | 2026‑04‑28 | [Benchmarking and Improving GUI Agents in High-Dynamic Environments](https://arxiv.org/abs/2604.25380) | unspecified | Introduces DynamicGUIBench for applications whose interfaces change between actions, together with DynamicUI, an agent that processes screen recordings. The agent selects informative frames, filters inconsistent action reasoning and uses trajectory reflection for subsequent decisions. |
 | 2026‑04‑28 | [Beyond Screenshots: Evaluating VLMs' Understanding of UI Animations](https://arxiv.org/abs/2604.26148) | unspecified | AniMINT evaluates how VLMs perceive, explain and interpret UI animations using densely annotated videos. The study distinguishes basic motion recognition from higher-level animation meaning and probes motion, context and perceptual cues. |

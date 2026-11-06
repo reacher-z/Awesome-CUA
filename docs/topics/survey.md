@@ -2,18 +2,23 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-24 source-reviewed resources tagged `survey`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+29 source-reviewed resources tagged `survey`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Surveys (23)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Surveys (28)](#surveys) · [Papers (1)](#papers)
 
 ## Surveys
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑10‑21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | unspecified | PAPAV is a capability framework and survey comparing computer-use agents with physical agents through perception, anticipation, planning, action and verification. |
 | 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366) | unspecified | Surveys multimodal memory using representation and management axes, distinguishing fixed-policy updates from policy evolution and comparing GUI memory evaluation with other modalities. |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform | Surveys GUI-agent efficiency beyond task success: observation, context and memory, action, and planner or runtime cost. |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform | Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents. |
+| 2026‑08‑10 | [Software Engineering for and with GUI Agent](https://arxiv.org/abs/2608.09278) | web | Surveys 336 GUI-agent papers through a software engineering lens, covering architectures, evaluation, and lifecycle concerns in mobile and web settings. |
+| 2026‑05‑08 | [Securing Computer-Use Agents: A Unified Architecture-Lifecycle Framework for Deployment-Grounded Reliability](https://arxiv.org/abs/2605.07110) | web, desktop, cross-platform | Survey of computer-use agent reliability and security across browsers, desktops, and mobile apps, using architecture and lifecycle views to map failures and controls. |
+| 2026‑04‑24 | [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748) | web | Survey of agentic world models that classifies predictive capabilities and governing laws, including the digital setting of web and GUI agents. |
 | 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified | Organizes security risks and defenses for persistent agent memory into six lifecycle phases and proposes five verifiable governance primitives. |
+| 2026‑03‑24 | [The Evolution of Tool Use in LLM Agents: From Single-Tool Call to Multi-Tool Orchestration](https://arxiv.org/abs/2603.22862) | unspecified | Surveys multi-tool LLM agents across planning, training, safety, efficiency, and evaluation, including GUI and mobile systems among its application areas. |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified | This survey organizes agent skills by architecture, acquisition, deployment and security, including their role in computer-use systems and GUI grounding. It also proposes a permission and lifecycle governance framework for skill deployment. |
 | 2026‑01‑18 | [Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents](https://arxiv.org/abs/2601.12560) | web | Surveys LLM agent architectures, operating environments and evaluation, covering web navigation and native computer use alongside other agent domains. |
 | 2025‑10‑19 | [Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Agentic AI](https://arxiv.org/abs/2510.16720) | unspecified | Surveys model-native agentic AI and the role of RL in learned planning, tool use and memory, covering GUI agents as one application alongside deep-research agents. |

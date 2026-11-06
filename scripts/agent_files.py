@@ -11,7 +11,7 @@ from site_data import PAPER_KINDS
 
 # llms-full.txt and the catalog Markdown list non-paper kinds first; papers are the largest group.
 FULL_ORDER = ('model', 'dataset', 'benchmark', 'agent', 'framework', 'infrastructure', 'tool', 'product', 'company', 'learning', 'survey', 'paper')
-NOTICE = ('Reviews are AI-assisted inspections of primary sources, not reproductions of experiments. Counts are resources, '
+NOTICE = ('Reviews are AI-assisted inspections of primary sources. Counts are resources, '
           'not independent projects. Code, data, weights and document licenses are recorded separately; unknown values stay unknown.')
 
 
@@ -135,9 +135,8 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
              f'> Source-backed catalog of computer-use, GUI, browser and mobile agents: {curated["total"]:,} curated resources ({curated["papers_and_surveys"]:,} papers and surveys, '
              f'{curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source with evidence, '
              f'review dates and separate license declarations. {waiting["metadata_only_records"]:,} metadata-only bibliography records await relevance review and are labeled separately.', '',
-             'Counts are resources, not independent projects. Source review does not reproduce experiments. Code, data, weights and document licenses are separate. '
-             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`. '
-             'This file is an optional navigation aid, not an indexing requirement or a request to rank this site.', '',
+             'Counts are resources, not independent projects. Code, data, weights and document licenses are separate. '
+             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`.', '',
              '## Catalog by kind', '']
     lines += [f'- {link(label, site + md_path)}: {plural(count, "curated record")}' + (f'; {note}' if note else '') for label, count, md_path, note in kinds]
     lines += ['', '## Research library', '',

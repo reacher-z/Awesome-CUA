@@ -47,8 +47,8 @@ The second reading confirmed 1,191 of 1,224 first-reading exclusions (97.3%); th
 
 | Applied as | Papers |
 | --- | ---: |
-| proposal: reviewer_hold | 3 |
-| scope exclusion | 772 |
+| proposal: reviewer_hold | 5 |
+| scope exclusion | 1,155 |
 
 **Open pull requests.** 788 of these papers had an open one-paper pull request from 19–20 October 2026. The screening agreed with 611 of their proposals. Every paper whose screening disagrees with its pull request (177 papers) is held, and its note names the pull request; queued proposals name an open curation pull request too. An agreed exclusion supersedes that pull request's change. Those pull requests were left open for the maintainers.
 
@@ -58,6 +58,7 @@ Each CSV lists one applied batch. It records the identifier, title, final decisi
 
 - [01.csv](2026-11-05-relevance-screening/01.csv): 388 papers — 1 proposal: reviewer_hold, 387 scope exclusion
 - [02.csv](2026-11-05-relevance-screening/02.csv): 387 papers — 2 proposal: reviewer_hold, 385 scope exclusion
+- [03.csv](2026-11-05-relevance-screening/03.csv): 385 papers — 2 proposal: reviewer_hold, 383 scope exclusion
 
 ## Limits
 

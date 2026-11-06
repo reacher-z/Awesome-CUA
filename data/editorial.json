@@ -67058,5 +67058,35 @@
     "editorial_reviewed": false,
     "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: Training-free vision token compression for VLMs built on linear attention. General VLM efficiency work with no GUI, screen or agent-interaction contribution. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2593.",
     "reviewed_sha256": "fbf9f07c95d8c1f4ad119a20a35d82b69f79d4bdc06b25aacac1a334dc54e034"
+  },
+  {
+    "id": "arxiv:2606.05646",
+    "name": "Enhancing Software Engineering Through Closed-Loop Memory Optimization",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2606.05646",
+    "verify_terms": [
+      "Enhancing Software Engineering Through Closed-Loop Memory"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2606.00543%2C2606.00756%2C2606.00856%2C2606.01057%2C2606.01166%2C2606.01961%2C2606.02031%2C2606.02208%2C2606.02540%2C2606.03236%2C2606.03889%2C2606.03895%2C2606.03951%2C2606.04315%2C2606.04329%2C2606.04455%2C2606.04627%2C2606.05171%2C2606.05525%2C2606.05646%2C2606.05670%2C2606.05697%2C2606.06448%2C2606.06462%2C2606.06891%2C2606.07074%2C2606.07367%2C2606.07682%2C2606.07867%2C2606.08919%2C2606.09863%2C2606.10394%2C2606.10525%2C2606.10742%2C2606.11176%2C2606.11290%2C2606.11520%2C2606.12203%2C2606.12736%2C2606.13192%2C2606.13368%2C2606.13578%2C2606.13669%2C2606.13686%2C2606.13802%2C2606.13898%2C2606.14397%2C2606.15057%2C2606.15300%2C2606.15441&max_results=50"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: Closed-loop memory optimization for software-engineering agents that resolve repository issues. This coding-agent work does not involve operating graphical interfaces, web pages or devices. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #3007.",
+    "reviewed_sha256": "4f05deab6406b79ec0a8ae18c4b711015059794560d87f605eb214a7442b37d0"
+  },
+  {
+    "id": "arxiv:2608.05430",
+    "name": "Robust Context-Aware Detection of Malicious Instructions in Text",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2608.05430",
+    "verify_terms": [
+      "Robust Context-Aware Detection of Malicious Instructions in"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2607.29199%2C2608.00335%2C2608.00548%2C2608.01964%2C2608.02018%2C2608.02163%2C2608.03223%2C2608.03451%2C2608.03499%2C2608.04530%2C2608.04734%2C2608.05013%2C2608.05430%2C2608.05784%2C2608.06474%2C2608.06477%2C2608.06704%2C2608.06745%2C2608.06811%2C2608.06862%2C2608.07873%2C2608.09268%2C2608.09278%2C2608.10357%2C2608.10669%2C2608.10692%2C2608.10775%2C2608.11191%2C2608.11274%2C2608.11362%2C2608.11588%2C2608.13991%2C2608.14427%2C2608.14929%2C2608.15089%2C2608.16211%2C2608.16391%2C2608.17067%2C2608.17310%2C2608.17975%2C2608.19741%2C2608.20707%2C2608.20797%2C2608.21500%2C2608.22077%2C2608.22510%2C2608.22533%2C2608.23035%2C2608.24680%2C2608.24898&max_results=50"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: The abstract trains a context- and query-aware classifier to flag injected instructions in text for tool-using agents. This prompt-injection defense names no web-page, GUI or device interaction. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2423.",
+    "reviewed_sha256": "8d9570c61ec2defc8c17615be17ddc6dc726f06a9948068d290ec118164298a7"
   }
 ]

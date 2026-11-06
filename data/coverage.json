@@ -1,15 +1,15 @@
 {
   "as_of_utc": "2026-11-06T04:18:34Z",
-  "total_records": 2885,
+  "total_records": 2502,
   "curated_records": 1674,
-  "bibliographic_records": 2413,
-  "arxiv_active_records": 2399,
+  "bibliographic_records": 2030,
+  "arxiv_active_records": 2016,
   "non_arxiv_bibliographic_records": 14,
   "publication_metadata_records": 78,
   "arxiv_archive_records": 3312,
-  "excluded_records": 913,
+  "excluded_records": 1296,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1211,
+  "metadata_only_records": 828,
   "discovery_identifiers": 5883,
   "unindexed_candidates": 1970,
   "non_resource_candidates": 130,
@@ -378,6 +378,20 @@
       "url": "https://arxiv.org/abs/2610.11251",
       "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: Training-free vision token compression for VLMs built on linear attention. General VLM efficiency work with no GUI, screen or agent-interaction contribution. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2593.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.05646",
+      "name": "Enhancing Software Engineering Through Closed-Loop Memory Optimization",
+      "url": "https://arxiv.org/abs/2606.05646",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: Closed-loop memory optimization for software-engineering agents that resolve repository issues. This coding-agent work does not involve operating graphical interfaces, web pages or devices. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #3007.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.05430",
+      "name": "Robust Context-Aware Detection of Malicious Instructions in Text",
+      "url": "https://arxiv.org/abs/2608.05430",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: The abstract trains a context- and query-aware classifier to flag injected instructions in text for tool-using agents. This prompt-injection defense names no web-page, GUI or device interaction. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2423.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],
@@ -390,7 +404,7 @@
     "infrastructure": 14,
     "learning": 2,
     "model": 98,
-    "paper": 2394,
+    "paper": 2011,
     "product": 20,
     "survey": 19,
     "tool": 22
@@ -545,11 +559,11 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 222,
-      "indexed_resources": 221,
+      "indexed": 219,
+      "indexed_resources": 218,
       "resolved_aliases": 6,
       "curated": 215,
-      "excluded": 4,
+      "excluded": 7,
       "set_aside": 29,
       "unindexed": 83
     },
@@ -605,11 +619,11 @@
         "state": "success"
       },
       "discovered": 224,
-      "indexed": 191,
-      "indexed_resources": 191,
+      "indexed": 189,
+      "indexed_resources": 189,
       "resolved_aliases": 0,
       "curated": 178,
-      "excluded": 7,
+      "excluded": 9,
       "set_aside": 6,
       "unindexed": 20
     },
@@ -635,11 +649,11 @@
         "state": "success"
       },
       "discovered": 132,
-      "indexed": 94,
-      "indexed_resources": 94,
+      "indexed": 92,
+      "indexed_resources": 92,
       "resolved_aliases": 1,
       "curated": 87,
-      "excluded": 2,
+      "excluded": 4,
       "set_aside": 6,
       "unindexed": 30
     },
@@ -780,11 +794,11 @@
         "state": "success"
       },
       "discovered": 94,
-      "indexed": 69,
-      "indexed_resources": 69,
+      "indexed": 68,
+      "indexed_resources": 68,
       "resolved_aliases": 0,
       "curated": 63,
-      "excluded": 0,
+      "excluded": 1,
       "set_aside": 2,
       "unindexed": 23
     },
@@ -810,11 +824,11 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 42,
-      "indexed_resources": 42,
+      "indexed": 39,
+      "indexed_resources": 39,
       "resolved_aliases": 0,
       "curated": 34,
-      "excluded": 7,
+      "excluded": 10,
       "set_aside": 3,
       "unindexed": 26
     },
@@ -1050,11 +1064,11 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 190,
-      "indexed_resources": 190,
+      "indexed": 187,
+      "indexed_resources": 187,
       "resolved_aliases": 3,
       "curated": 184,
-      "excluded": 6,
+      "excluded": 9,
       "set_aside": 6,
       "unindexed": 45
     },
@@ -1080,11 +1094,11 @@
         "state": "success"
       },
       "discovered": 91,
-      "indexed": 74,
-      "indexed_resources": 74,
+      "indexed": 70,
+      "indexed_resources": 70,
       "resolved_aliases": 0,
       "curated": 66,
-      "excluded": 3,
+      "excluded": 7,
       "set_aside": 4,
       "unindexed": 10
     },
@@ -1200,11 +1214,11 @@
         "state": "success"
       },
       "discovered": 72,
-      "indexed": 44,
-      "indexed_resources": 44,
+      "indexed": 42,
+      "indexed_resources": 42,
       "resolved_aliases": 0,
       "curated": 34,
-      "excluded": 7,
+      "excluded": 9,
       "set_aside": 13,
       "unindexed": 8
     },
@@ -1260,11 +1274,11 @@
         "state": "success"
       },
       "discovered": 215,
-      "indexed": 140,
-      "indexed_resources": 140,
+      "indexed": 133,
+      "indexed_resources": 133,
       "resolved_aliases": 2,
       "curated": 129,
-      "excluded": 25,
+      "excluded": 32,
       "set_aside": 14,
       "unindexed": 36
     },
@@ -2190,11 +2204,11 @@
         "state": "success"
       },
       "discovered": 334,
-      "indexed": 241,
-      "indexed_resources": 241,
+      "indexed": 238,
+      "indexed_resources": 238,
       "resolved_aliases": 2,
       "curated": 198,
-      "excluded": 5,
+      "excluded": 8,
       "set_aside": 0,
       "unindexed": 88
     },
@@ -2220,11 +2234,11 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 108,
-      "indexed_resources": 108,
+      "indexed": 92,
+      "indexed_resources": 92,
       "resolved_aliases": 0,
       "curated": 72,
-      "excluded": 19,
+      "excluded": 35,
       "set_aside": 6,
       "unindexed": 88
     },
@@ -2250,11 +2264,11 @@
         "state": "success"
       },
       "discovered": 205,
-      "indexed": 171,
-      "indexed_resources": 171,
+      "indexed": 160,
+      "indexed_resources": 160,
       "resolved_aliases": 0,
       "curated": 135,
-      "excluded": 27,
+      "excluded": 38,
       "set_aside": 2,
       "unindexed": 5
     },
@@ -2400,11 +2414,11 @@
         "state": "success"
       },
       "discovered": 74,
-      "indexed": 54,
-      "indexed_resources": 54,
+      "indexed": 52,
+      "indexed_resources": 52,
       "resolved_aliases": 0,
       "curated": 51,
-      "excluded": 0,
+      "excluded": 2,
       "set_aside": 4,
       "unindexed": 16
     },
@@ -2490,11 +2504,11 @@
         "state": "success"
       },
       "discovered": 97,
-      "indexed": 69,
-      "indexed_resources": 69,
+      "indexed": 66,
+      "indexed_resources": 66,
       "resolved_aliases": 0,
       "curated": 60,
-      "excluded": 1,
+      "excluded": 4,
       "set_aside": 1,
       "unindexed": 26
     },
@@ -2520,11 +2534,11 @@
         "state": "success"
       },
       "discovered": 40,
-      "indexed": 16,
-      "indexed_resources": 16,
+      "indexed": 15,
+      "indexed_resources": 15,
       "resolved_aliases": 0,
       "curated": 3,
-      "excluded": 5,
+      "excluded": 6,
       "set_aside": 1,
       "unindexed": 18
     },
@@ -2610,11 +2624,11 @@
         "state": "success"
       },
       "discovered": 89,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 0,
       "curated": 15,
-      "excluded": 4,
+      "excluded": 5,
       "set_aside": 3,
       "unindexed": 62
     },
@@ -2700,11 +2714,11 @@
         "state": "success"
       },
       "discovered": 83,
-      "indexed": 35,
-      "indexed_resources": 35,
+      "indexed": 33,
+      "indexed_resources": 33,
       "resolved_aliases": 0,
       "curated": 23,
-      "excluded": 2,
+      "excluded": 4,
       "set_aside": 0,
       "unindexed": 46
     },
@@ -2760,11 +2774,11 @@
         "state": "success"
       },
       "discovered": 1115,
-      "indexed": 1104,
-      "indexed_resources": 1104,
+      "indexed": 1102,
+      "indexed_resources": 1102,
       "resolved_aliases": 0,
       "curated": 784,
-      "excluded": 11,
+      "excluded": 13,
       "set_aside": 0,
       "unindexed": 0
     },
@@ -3600,11 +3614,11 @@
         "state": "success"
       },
       "discovered": 117,
-      "indexed": 72,
-      "indexed_resources": 72,
+      "indexed": 71,
+      "indexed_resources": 71,
       "resolved_aliases": 0,
       "curated": 53,
-      "excluded": 2,
+      "excluded": 3,
       "set_aside": 22,
       "unindexed": 21
     }

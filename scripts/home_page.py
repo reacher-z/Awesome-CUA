@@ -7,7 +7,7 @@ import re
 
 import home_art as art
 from paper_library import library_years
-from publication_metadata import record_year
+from publication_metadata import record_date_text, record_year
 from site_config import SITE
 from site_shell import CONTEXT, HF_DATASET, ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_count, star_note
 
@@ -179,8 +179,8 @@ def catalog_view(rows, reviewed, coverage, root):
             "reviewed_at": review_at, "papers": kinds["paper"] + kinds["survey"],
             "recent_reviewed": sorted((record for record in reviewed if not is_paper(record) and review_at.get(record["id"])),
                                       key=lambda record: (review_at[record["id"]], record["name"].casefold()), reverse=True),
-            "recent_papers": sorted((record for record in reviewed if is_paper(record) and record.get("published_at")),
-                                    key=lambda record: (record["published_at"], record["name"]), reverse=True),
+            "recent_papers": sorted((record for record in reviewed if is_paper(record) and record_date_text(record)),
+                                    key=lambda record: (record_date_text(record), record["name"]), reverse=True),
             # Same date helper as the library, so a year-only publisher date still counts.
             "years": Counter(int(record_year(record)) for record in reviewed if is_paper(record) and record_year(record)),
             "year_links": {"en": library_years(rows, "en"), "zh": library_years(rows, "zh")},
@@ -482,13 +482,13 @@ def benchmark_band(view, zh=False, live=True) -> str:
 
 
 def latest(view, zh=False) -> str:
-    reviewed = view["recent_reviewed"][:5]
+    reviewed = view["recent_reviewed"][:4]
     if not reviewed:
         return ""
     reviewed_items = "".join(
         f'<li><time datetime="{view["reviewed_at"][record["id"]][:10]}">{view["reviewed_at"][record["id"]][:10]}</time>'
         f'<a href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>{stamp("curated", zh)}</li>' for record in reviewed)
-    found = view["scan_new"][:5]
+    found = view["scan_new"][:4]
     found_items = "".join(
         f'<li><time datetime="{view["first_seen"][record["id"]]}">{view["first_seen"][record["id"]][:16].replace("T", " ")}</time>'
         f'<a href="{esc(record["url"])}">{esc(clip(clean_title(record["name"]), 92))}</a>{stamp(record["review_status"], zh)}</li>' for record in found)
@@ -551,7 +551,7 @@ def papers(view, zh=False) -> str:
     if not view["recent_papers"]:
         return ""
     rows = []
-    for record in view["recent_papers"][:4]:
+    for record in view["recent_papers"][:3]:
         venue = (record["details"].get("publication") or {}).get("venue")
         if record.get("authors_omitted") or not record["authors"]:
             authors = f'<span>{"作者：见论文" if zh else "Authors: see the paper"}</span>'
@@ -563,7 +563,7 @@ def papers(view, zh=False) -> str:
         cited = f"{paper_id}v{version}" if paper_id and version else paper_id
         links = (f'<a href="https://arxiv.org/abs/{cited}">{ic("file")}arXiv {paper_id}</a><a href="https://arxiv.org/pdf/{cited}">PDF</a>' if paper_id else
                  f'<a href="{esc(record["url"])}">{ic("ext", "i i-sm")}{"来源" if zh else "Source"}</a>')
-        rows.append(f'<li><time datetime="{record["published_at"]}">{record["published_at"]}</time><div><a class="paper-t" href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>'
+        rows.append(f'<li><time datetime="{record_date_text(record)}">{record_date_text(record)}</time><div><a class="paper-t" href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>'
                     f'<div class="paper-m">{f"<span>{esc(venue)}</span>" if venue else ""}{authors}{links}</div></div></li>')
     count = fmt(view["papers"])
     heading, lede, more = (("论文", f"{count} 篇已审核论文与综述，按时间倒序。书目信息已与 arXiv 或出版方核对。", "阅读综述") if zh else
@@ -614,6 +614,42 @@ print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])'''),
 <div class="window term"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>/data/</output></div></div>
 <div class="tabs" role="tablist" aria-label="{"使用数据的方式" if zh else "Ways to use the data"}">{tabs}</div>{panels}
 <div class="panel-foot"><span>{licence}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel style="min-height:36px">{ic("copy")}{copy_label}</button>{star_note(zh, ' data-after-copy hidden')}</div></div></div></div></section>'''
+
+
+DIRECTORY = (
+    ("read", (("/papers/", "Research papers"), ("/topics/", "Browse by topic"), ("/guides/", "Guides"), ("/categories/learning/", "Learning resources"))),
+    ("browse", (("/catalog/", "Resource directory"), ("/categories/model/", "Models"), ("/categories/dataset/", "Datasets"), ("/categories/benchmark/", "Benchmarks"), ("/categories/framework/", "Frameworks"), ("/categories/product/", "Products"))),
+    ("compare", (("/compare/benchmarks/", "Compare benchmarks"), ("/compare/datasets/", "Compare datasets"), ("/connections/", "Papers \u2192 code & data"))),
+    ("reference", (("/data/", "Download data"), ("/updates/", "Updates every two hours"), ("/coverage/", "Coverage"), ("/about/", "Editorial policy"))),
+)
+DIRECTORY_ZH = (
+    ("研究", (("/zh/papers/", "论文与综述阅读列表"), ("/zh/topics/", "按主题浏览论文、数据与工具"), ("/categories/learning/", "学习资源"))),
+    ("训练与评测", (("/categories/dataset/", "训练数据集"), ("/compare/datasets/", "对比数据规格"), ("/categories/benchmark/", "GUI、桌面、网页与手机评测基准"), ("/compare/benchmarks/", "对比评测协议"), ("/categories/model/", "模型与权重版本"))),
+    ("工程", (("/categories/agent/", "智能体"), ("/categories/framework/", "开发与训练框架"), ("/categories/product/", "产品"), ("/catalog/", "浏览全部分类"))),
+    ("数据", (("/explore/?lang=zh#catalog", "打开中文搜索目录"), ("/zh/data/", "下载数据"), ("/coverage/", "覆盖台账"), ("/about/", "编辑方法"))),
+)
+START = (("/guides/what-are-computer-use-agents/", "Understand computer-use agents"),
+         ("/guides/gui-agent-benchmarks/", "Choose a benchmark for the capability you need"),
+         ("/guides/gui-agent-training-data/", "Find training data with the right supervision and license"))
+
+
+def directory_strip(zh=False, note="") -> str:
+    """Crawlable site directory, also useful without JavaScript. It stays compact because the footer and sections repeat much of it."""
+    rows = "".join(
+        f'<div class="dir-row"><dt>{esc(label)}</dt><dd>' + "".join(f'<a href="{esc(href)}">{esc(text)}</a>' for href, text in links) + "</dd></div>"
+        for label, links in (DIRECTORY_ZH if zh else DIRECTORY))
+    if zh:
+        lead = ("Computer-Use Agent 研究与资源", note)
+        foot = ('<div class="dir-qa"><div><h3>如何理解“已核验”？</h3><p>已审阅条目经过一手来源编辑检查。论文元数据仅核实标题、作者和日期，不代表研究结论或实验已复现。代码、数据、权重与文档许可分别记录，未知信息保留为空。</p></div>'
+                '<div><h3>是否已经全球最全？</h3><p>全面覆盖是目标，目前没有足够证据证明已达到全球最全。请查看<a href="/coverage/">覆盖台账</a>和<a href="/about/">编辑方法</a>了解边界与缺口。</p></div></div>')
+    else:
+        lead = ("Computer-use agent research and resources",
+                "Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.")
+        steps = "".join(f'<li><a href="{esc(href)}"><b aria-hidden="true">{n}</b>{esc(text)}</a></li>' for n, (href, text) in enumerate(START, 1))
+        foot = f'<div class="dir-start"><h3>Where should I start?</h3><ol>{steps}</ol></div>'
+    other = '<a class="dir-lang" href="/">English</a>' if zh else '<a class="dir-lang" href="/zh/" lang="zh-CN">中文指南</a>'
+    return (f'<section class="wrap dir-strip" aria-labelledby="dir-h"><div class="dir-lead"><h2 id="dir-h">{esc(lead[0])}</h2><p>{lead[1]}</p>{other}</div>'
+            f'<dl class="dir-rows">{rows}</dl>{foot}</section>')
 
 
 def contribute(zh=False) -> str:

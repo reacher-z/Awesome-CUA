@@ -550,6 +550,9 @@ test('the grid paper hero, title bar and window strips meet WCAG AA contrast in 
   }
   assert.ok(contrast('#5E6472','#F7F8FC')>=4.5,'meta text on the light window strip');
   assert.ok(contrast('#989EAE','#10152C')>=4.5,'meta text on the dark window strip');
+  assert.ok(contrast('#5E6472','#FFFFFF')>=4.5,'group label on the light window');
+  assert.ok(contrast('#989EAE','#1B223E')>=4.5,'group label on the dark window');
+  assert.match(section,/\.row-cap\{[^}]*background:none/,'group labels have no fill');
   assert.ok(!/\.r3-band\{[^}]*background-image:linear/.test(section),'no grid on the benchmark band');
 });
 test('the announcement bar and its button meet WCAG AA contrast in both themes',()=>{

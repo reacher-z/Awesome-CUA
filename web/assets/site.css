@@ -1051,7 +1051,7 @@ html:not(.js) .trail,html:not(.js) .cursor{display:none}
 .home-directory .static-directory,.reading-section{width:100%;max-width:calc(var(--content) + 2*var(--gutter));margin-inline:auto;padding-inline:var(--gutter)}
 .site-toast:empty{padding:0;box-shadow:none}
 
-/* ---------- maintainers' projects: announcement bar, header star button, band features, footer cards ---------- */
+/* ---------- featured projects: announcement bar, header star button, band features, footer cards ---------- */
 .announce{--a-bg:#FFA69E;--a-fg:#212632;height:40px;background:var(--a-bg);color:var(--a-fg);font-size:var(--step-ui);overflow:hidden}
 .announce-off .announce{display:none}
 .announce .wrap{display:flex;align-items:center;height:100%;gap:4px}
@@ -1104,7 +1104,7 @@ html:not(.js) .trail,html:not(.js) .cursor{display:none}
 .r3-band .btn-star:hover{background:#fff;border-color:#fff;color:#212632}
 .r3-band .btn-star .i{fill:currentColor}
 .r3-band .btn-ghost .i{color:#D5574D;fill:currentColor}
-.r3-band .made-by{display:inline-flex;align-items:center;min-height:24px;padding:0 10px;border:1px solid #AEB8FF;border-radius:999px;color:#fff;font-size:var(--step-meta);font-weight:600}
+.r3-band .feature-tag{display:inline-flex;align-items:center;min-height:24px;padding:0 10px;border:1px solid #AEB8FF;border-radius:999px;color:#fff;font-size:var(--step-meta);font-weight:600}
 .r3-band .ident-tags{flex-wrap:wrap}
 .foot-more{margin-bottom:clamp(28px,3vw,40px);padding-bottom:clamp(28px,3vw,40px);border-bottom:1px solid var(--line)}
 .foot-more h2{font:600 .8125rem/1.4 var(--font-body);color:var(--text-strong);margin-bottom:12px}

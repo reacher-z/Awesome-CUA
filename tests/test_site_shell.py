@@ -62,7 +62,7 @@ class PromotionShellTests(unittest.TestCase):
 
     def test_footer_lists_all_four_repositories(self):
         footer = site_shell.footer()
-        self.assertIn("More from the maintainers", footer)
+        self.assertIn(">Featured</h2>", footer)
         for repo, *_ in site_shell.MAINTAINER_REPOS:
             self.assertIn(f'href="https://github.com/{repo}"', footer)
 

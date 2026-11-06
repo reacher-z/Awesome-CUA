@@ -282,7 +282,7 @@ def default_rows(view, zh=False) -> str:
     if CLAWBENCH in view["by_id"]:
         pinned.append(view["by_id"][CLAWBENCH])
     top = most_mentioned(view, 2, {record["id"] for record in pinned})
-    return (f'<li class="row-cap">{"本目录维护者的项目" if zh else "From the maintainers"}</li>' + "".join(compact_row(record, zh) for record in pinned) +
+    return (f'<li class="row-cap">{"精选" if zh else "Featured"}</li>' + "".join(compact_row(record, zh) for record in pinned) +
             f'<li class="row-cap">{"目录中被提及最多" if zh else "Most mentioned across the catalog"}</li>' +
             "".join(compact_row(record, zh) for record in top))
 
@@ -441,9 +441,8 @@ def tasks(view, zh=False) -> str:
 
 
 def _feature(*, name, repo, url, summary, leaderboard, project, lead, zh, live) -> str:
-    """Promoted work is labelled as the maintainers' own, because the catalog presents itself as independent."""
     star = f"为 {name} 点 Star" if zh else f"Star {name}"
-    tags = f'{kind_tag("benchmark", zh)}{env_tag(["web"], zh)}<span class="made-by">{"本目录维护者的项目" if zh else "From the maintainers"}</span>'
+    tags = f'{kind_tag("benchmark", zh)}{env_tag(["web"], zh)}<span class="feature-tag">{"精选" if zh else "Featured"}</span>'
     return f'''<article class="feature-body{" feature-lead" if lead else ""}"><div class="ident-tags">{tags}</div>
 <h3><a href="{esc(url)}">{name}</a></h3>
 <p>{esc(summary)}</p>
@@ -453,7 +452,7 @@ def _feature(*, name, repo, url, summary, leaderboard, project, lead, zh, live) 
 
 
 def benchmark_band(view, zh=False, live=True) -> str:
-    """The two maintainer benchmarks, largest first, then every reviewed record with an official leaderboard."""
+    """The two featured benchmarks, largest first, then every reviewed record with an official leaderboard."""
     reviewed_with_board = sorted((record for record in view["reviewed"] if record["details"].get("leaderboard_url")),
                                  key=lambda record: (-len(view["mentions"].get(record["id"], ())), record["name"].casefold()))
     clawbench = view["by_id"].get(CLAWBENCH)
@@ -470,8 +469,8 @@ def benchmark_band(view, zh=False, live=True) -> str:
         for record in reviewed_with_board)
     benchmarks = fmt(view["kinds"]["benchmark"])
     heading, lede, more, board, note = (
-        ("评测基准", "两项来自本目录维护者，下方是目录中所有发布官方排行榜的已审核记录。", f"全部 {benchmarks} 项评测基准", "官方排行榜", f"{len(reviewed_with_board)} 项，按目录提及次数排序") if zh else
-        ("Benchmarks", "Two from this catalog's maintainers, then every reviewed record here that publishes an official leaderboard.", f"All {benchmarks} benchmarks", "Official leaderboards", f"{len(reviewed_with_board)} records, sorted by catalog mentions"))
+        ("评测基准", "精选评测基准，下方是目录中所有发布官方排行榜的已审核记录。", f"全部 {benchmarks} 项评测基准", "官方排行榜", f"{len(reviewed_with_board)} 项，按目录提及次数排序") if zh else
+        ("Benchmarks", "Featured benchmarks, then every reviewed record that publishes an official leaderboard.", f"All {benchmarks} benchmarks", "Official leaderboards", f"{len(reviewed_with_board)} records, sorted by catalog mentions"))
     return f'''<section class="r3-band" aria-labelledby="feat-h"><div class="wrap">
 <div class="sec-head"><div><h2 id="feat-h">{heading}</h2><p>{lede}</p></div>
 <a class="more" href="/categories/benchmark/">{more}{ic("right", "i i-sm")}</a></div>

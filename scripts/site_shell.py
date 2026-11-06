@@ -218,7 +218,7 @@ def maintainer_cards(zh=False, live=False) -> str:
         f'<li><a href="https://github.com/{repo}"><b>{name}</b><span class="more-line">{zh_line if zh else line}</span>'
         f'<span class="more-star">{ic("star", "i i-sm")}Star{star_count(repo, live)}</span></a></li>'
         for repo, name, line, zh_line in MAINTAINER_REPOS)
-    return f'<section class="foot-more" aria-labelledby="foot-more-h"><h2 id="foot-more-h">{"维护者的更多项目" if zh else "More from the maintainers"}</h2><ul>{cards}</ul></section>'
+    return f'<section class="foot-more" aria-labelledby="foot-more-h"><h2 id="foot-more-h">{"精选" if zh else "Featured"}</h2><ul>{cards}</ul></section>'
 
 
 FOOTER_COLUMNS = [

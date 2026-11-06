@@ -20,13 +20,27 @@ HEADER = "AUTHORIZATION: basic " + base64.b64encode(f"x-access-token:{TOKEN}".en
 PUSH_STEPS = {("scan.yml", "scan", "Commit verified scan output"), ("scan.yml", "dispatch_quality", "Run Catalog quality on the scan commit"),
               ("scan.yml", "track_scan_health", "Update the scan health tracking issue"),
               ("publish.yml", "build", "Read repository star counts"), ("publish.yml", "build", "Commit the public website snapshot"), ("publish.yml", "notify_search", "Preserve accepted state and actual submission receipts"),
-              ("freshness.yml", "dispatch_scan", "Dispatch a recovery scan"), ("release.yml", "release", "Publish the GitHub release")}
+              ("freshness.yml", "dispatch_scan", "Dispatch a recovery scan"), ("hf-sync.yml", "sync", "Download the live exports and build the dataset"), ("release.yml", "release", "Publish the GitHub release")}
+
+
+def workflow_text(path):
+    """The workflow text without the builder script that hf-sync.yml embeds through a heredoc; that script is checked as code."""
+    keep, inside = [], False
+    for line in path.read_text().splitlines():
+        if inside:
+            inside = line.rstrip() != "          HF_SYNC_PY"
+            if inside:
+                continue
+        elif line.rstrip().endswith("<<'HF_SYNC_PY'"):
+            inside = True
+        keep.append(line)
+    return "\n".join(keep) + "\n"
 
 
 def steps(path):
     """Yield (job, step name or None, step lines) for every step in the workflow."""
     job, step = None, None
-    for line in path.read_text().splitlines():
+    for line in workflow_text(path).splitlines():
         indent = len(line) - len(line.lstrip())
         if step and (line.startswith("      - ") or line.strip() and indent < 8):
             yield step
@@ -63,8 +77,12 @@ class WorkflowCredentialTests(unittest.TestCase):
     def test_only_push_and_dispatch_steps_receive_the_token(self):
         found = set()
         for path in WORKFLOWS:
-            text, seen = path.read_text(), 0
-            self.assertNotIn("secrets.", text)
+            text, seen = workflow_text(path), 0
+            if path.name == "hf-sync.yml":
+                # The mirror sync reads exactly one secret, by name; every other workflow reads none.
+                self.assertEqual(set(re.findall(r"secrets\.\w+", text)), {"secrets.HF_TOKEN"})
+            else:
+                self.assertNotIn("secrets.", text)
             for job, name, lines in steps(path):
                 if any("github.token" in line for line in lines):
                     found.add((path.name, job, name))

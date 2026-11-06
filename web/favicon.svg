@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <title>AwesomeCUA cursor</title>
-  <defs>
-    <linearGradient id="tile" x1="0" y1="0" x2="0.7" y2="1">
-      <stop stop-color="#c8d6df"/>
-      <stop offset="1" stop-color="#afc1ce"/>
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="19" fill="#fff" stroke="#758bfd" stroke-width="3"/>
-  <rect x="14" y="15" width="36" height="36" rx="11" fill="#28466b" opacity=".07"/>
-  <rect x="14" y="13" width="36" height="36" rx="11" fill="url(#tile)"/>
-  <path d="m21 18.5 22 7.5-9.3 4.8L29 43Z" fill="#172530" stroke="#fff" stroke-width="3.2" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.f{stroke:#212632}@media (prefers-color-scheme:dark){.f{stroke:#E2FDFF}}</style><rect class="f" x="3" y="5.5" width="23" height="18" rx="4" fill="none" stroke-width="2.2"/><path class="f" d="M3 10.5h23" stroke-width="2"/><path d="M17 15.2 29 20.4l-5.1 1.4-1.5 5.2z" fill="#FFA69E" stroke="#9D4E49" stroke-width="1.4" stroke-linejoin="round"/></svg>

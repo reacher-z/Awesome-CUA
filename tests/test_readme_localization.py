@@ -22,24 +22,48 @@ class ReadmeLocalizationTests(unittest.TestCase):
             self.assertEqual(en[key].keys(), zh[key].keys())
 
     def test_chinese_stats_keep_every_figure(self):
-        zh = build.stats_block(self.report, "zh")
-        for figure in ("2,545", "996", "2,164", "44", "2026-10-17T07:57:59Z", "1,549", "1,402", "100"):
+        zh = build.stats_block(self.report, "zh", 812)
+        for figure in ("996", "812", "44", "2026-10-17T07:57:59Z", "1,549", "1,402", "100"):
             self.assertIn(figure, zh)
-        self.assertIn("条资源记录", zh)
-        self.assertTrue(build.stats_block(self.report).startswith("\n\n**2,545 resource records**"))
+        self.assertIn("条已审阅资源", zh)
+        self.assertTrue(build.stats_block(self.report, reviewed_papers=812).startswith("\n\n**996 curated resources** · **812 reviewed papers and surveys**"))
+
+    def test_headline_counts_only_curated_resources(self):
+        for lang in ("en", "zh"):
+            with self.subTest(lang):
+                block = build.stats_block(self.report, lang, 812)
+                headline, detail = block.strip().split("\n\n")
+                self.assertNotIn("2,545", block)
+                self.assertNotIn("1,549", headline)
+                self.assertNotIn("1,402", headline)
+                self.assertIn("**1,549", detail)
+                self.assertIn("**1,402", detail)
 
     def test_chinese_tables_translate_labels_but_not_resources(self):
         rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]
         edges = [{"source_id": "x", "target_id": "github:a/b", "target_in_catalog": True}]
         explore = build.explore(rows, self.report, "zh")
-        self.assertIn("[基准](docs/benchmarks.md) · **1**", explore)
-        self.assertIn("**1** 篇已审阅论文", explore)
+        self.assertRegex(explore, r"\| \[基准\]\(docs/benchmarks.md\) +\| .+ \| +1 \|")
+        self.assertRegex(explore, r"\| \[按主题浏览研究\]\(docs/topics.md\) +\| .+ \| +1 \|")
         highlights = build.highlights(rows, edges, lang="zh")
         self.assertIn("**基准** · [全部 1 项 →](docs/benchmarks.md)", highlights)
-        self.assertIn("| [Bench](https://example.com/Bench) | 1 | web |", highlights)
+        self.assertRegex(highlights, r"\| \[Bench\]\(https://example.com/Bench\) +\| +1 \| web +\|")
         self.assertIn("代码 MIT", highlights)
         recent = build.recently_reviewed(rows, {"github:a/b": "2026-10-17T00:00:00Z"}, lang="zh")
-        self.assertIn("| 基准 | web | Bench summary. |", recent)
+        self.assertRegex(recent, r"\| 基准 +\| web +\| Bench summary. +\|")
+
+    def test_badges_are_at_most_six_and_end_with_license(self):
+        badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
+        self.assertLessEqual(badges.count("[!["), 6)
+        self.assertIn("](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA)", badges)
+        self.assertIn("2026--10--17", badges)
+        self.assertTrue(badges.strip().endswith("(LICENSE)"))
+
+    def test_explore_table_pipes_line_up_in_both_languages(self):
+        rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]
+        for lang in ("en", "zh"):
+            table = [line for line in build.explore(rows, self.report, lang).splitlines() if line.startswith("|")]
+            self.assertEqual(len({tuple(i for i, c in enumerate(line) if c == "|") for line in table}), 1, table)
 
 
 if __name__ == "__main__":

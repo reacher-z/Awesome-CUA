@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://awesomecua.github.io/schemas/github-candidate-progress.schema.json",
+  "$id": "https://awesomecua.com/schemas/github-candidate-progress.schema.json",
   "title": "AwesomeCUA sanitized durable candidate checkpoint",
   "description": "Operational query/input/run/accepted-receipt metadata bound to the public observation pair. No repository records, descriptions, owner/contact objects, headers or raw bodies.",
   "type": "object",
@@ -584,6 +584,7 @@
             "rate_limited",
             "unavailable",
             "redirect_not_followed",
+            "fork_not_recorded",
             "fetch_failed",
             "response_too_large",
             "malformed_response",

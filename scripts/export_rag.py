@@ -5,7 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
-from publication_metadata import publication, record_date_text, format_date_parts
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, record_date_text, format_date_parts
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -24,7 +24,8 @@ def documents(records, include_metadata=False):
             raise ValueError('Unrecognized catalog review status: '+rid)
         if not include_metadata and record['review_status']!='curated':continue
         # Use the same stable permalink convention as the website builder.
-        from search_pages import resource_path, SITE
+        from search_pages import resource_path
+        from site_config import SITE
         snapshot=record.get('details',{}).get('arxiv_snapshot')
         source_url=(snapshot or {}).get('versioned_url') or record['url']
         lines=[record['name'],f"Resource type: {record['kind']}",f"Review status: {record['review_status']}",f"Scope: {record['scope']}"]
@@ -34,11 +35,12 @@ def documents(records, include_metadata=False):
         if record['topics']:lines.append('Topics: '+', '.join(record['topics']))
         if record.get('published_at'):lines.append('Published: '+record['published_at'])
         elif record_date_text(record):lines.append('Record publication date (recorded precision): '+record_date_text(record))
-        if record.get('authors'):lines.append('Authors: '+', '.join(record['authors']))
+        if authors_omitted(record):lines.append(AUTHORS_OMITTED[0]+' ('+source_url+')')
+        elif record.get('authors'):lines.append('Authors: '+', '.join(record['authors']))
         if snapshot and snapshot.get('version'):lines.append(f"Recorded arXiv version: v{snapshot['version']}")
         pub=publication(record)
         if pub:
-            lines.extend(['', 'Publication edition: '+pub['title'], 'Publication authors: '+', '.join(pub['authors'])])
+            lines.extend(['', 'Publication edition: '+pub['title'], 'Publication authors: '+('see the paper ('+pub['url']+')' if authors_omitted(record) else ', '.join(pub['authors']))])
             if pub['date_parts']:lines.append('Publication edition date (recorded precision): '+format_date_parts(pub['date_parts']))
             for key in ('venue','publisher','volume','issue','pages','doi','date_basis','event_dates','notes'):
                 if pub.get(key):lines.append('Publication '+key.replace('_',' ')+': '+pub[key])
@@ -58,7 +60,8 @@ def documents(records, include_metadata=False):
             'environments':record['environments'],'topics':record['topics'],'aliases':record['aliases'],
             'arxiv_snapshot':snapshot,'publication':pub,'details':record['details'],'links':record['links'],'authors':record['authors'],
             'licenses':record['licenses'],'relations':record['relations'],
-            'evidence':record['evidence'],'record_sha256':record_digest(record)}}
+            'evidence':record['evidence'],'record_sha256':record_digest(record),
+            **({'authors_omitted':True} if authors_omitted(record) else {})}}
 
 
 def encode_documents(records, include_metadata=False):

@@ -15,6 +15,7 @@ The executable contract is [resource.schema.json](../schemas/resource.schema.jso
 | `summary` | Original concise annotation; null for metadata-only entries |
 | `published_at`, `updated_at` | Exact calendar dates where established, otherwise null; a known year/month remains in `details.publication.date_parts` |
 | `authors`, `identifiers` | Official bibliographic attribution and IDs |
+| `authors_omitted` | Optional; only `true`. The catalog does not list this record's authors: `authors` and any `details.publication.authors` are empty, and pages and exports show "Authors: see the paper" (作者见原文) with a link to the source. Read the author list from the paper |
 | `links` | Typed links, starting with a primary or paper link |
 | `relations` | Explicit semantic assertions: introduced by, documented by, published by, component of, variant of, etc. |
 | `licenses` | Four separate nullable declarations: code, data, weights, document |
@@ -154,7 +155,7 @@ A Hugging Face mapping (`basis: official_huggingface_repository_id`) pairs the `
 
 The materializer adds verified former IDs, names and URLs to the owner's `aliases`, with primary `github_repository_identity` or `huggingface_repository_identity` receipts that support only that field. It preserves the canonical ID, content review, licenses and relationships. `get` accepts exact recorded former IDs, and `search` resolves recorded former repository URLs. Both return the canonical resource; no additional record is created. Discovery and mention inputs keep their observed identifiers. Coverage resolves matching identifiers while `indexed_resources` counts distinct owners.
 
-The [English data hub](https://awesomecua.github.io/data/) and [中文数据中心](https://awesomecua.github.io/zh/data/) expose downloads from the same source catalog available by cloning the repository. Their [download manifest](https://awesomecua.github.io/downloads/manifest.json) follows [download-manifest.schema.json](../schemas/download-manifest.schema.json). Its `artifacts` array records each listed export's `path`, format, group, actual `count.value` and `count.unit`, `scope`, exact `bytes`, and file `sha256`. The top-level `catalog_sha256` identifies the source catalog snapshot; compare it with the RAG, citation and topic manifests before combining artifacts.
+The [English data hub](https://awesomecua.com/data/) and [中文数据中心](https://awesomecua.com/zh/data/) expose downloads from the same source catalog available by cloning the repository. Their [download manifest](https://awesomecua.com/downloads/manifest.json) follows [download-manifest.schema.json](../schemas/download-manifest.schema.json). Its `artifacts` array records each listed export's `path`, format, group, actual `count.value` and `count.unit`, `scope`, exact `bytes`, and file `sha256`. The top-level `catalog_sha256` identifies the source catalog snapshot; compare it with the RAG, citation and topic manifests before combining artifacts.
 
 | Manifest group | Contents |
 | --- | --- |
@@ -175,7 +176,7 @@ Coverage counts distinguish `bibliographic_records` (all active papers/surveys),
 
 The website's `downloads/topics.json` is a derived index of reviewed topic membership, tied to the source catalog SHA-256. Each topic lists canonical resource IDs, counts, bilingual page URLs, and export fingerprints. `resources_with_topics` counts distinct reviewed resources across all topics; individual topic totals overlap and must not be summed. Per-topic JSONL preserves the complete source records, including evidence, license scopes and review state. Shared tags are not reviewed resource relationships. Rebuilds remove obsolete generated topic pages and exports when a topic loses all reviewed members.
 
-Reviewed `documented_by` links connect an implementation or dataset to a paper named by its first-party source. They do not imply a training or evaluation dependency. Resource pages expose both outgoing relations and incoming connected assets. The [connections directory](https://awesomecua.github.io/connections/) and [relationship export](https://awesomecua.github.io/downloads/relationships.json) provide a consolidated view.
+Reviewed `documented_by` links connect an implementation or dataset to a paper named by its first-party source. They do not imply a training or evaluation dependency. Resource pages expose both outgoing relations and incoming connected assets. The [connections directory](https://awesomecua.com/connections/) and [relationship export](https://awesomecua.com/downloads/relationships.json) provide a consolidated view.
 
 A relation points from the record that holds it to `target_id` and cites one of that record's primary receipts whose `supports` include `relations`. Choose the type from what that source states; when it states none of these, record no relation.
 
@@ -207,6 +208,8 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `candidate-reviews.json` | Authored | Discovered links reviewed as non-resources or as other addresses of active records; see [methodology](methodology.md#identity-and-deduplication) |
 | `sources.json` | Authored | Discovery-source registry read by `catalog.py discover` |
 | `paper-discovery-queries.json` | Authored | Hugging Face search registry read by `discover_papers.py` |
+| `task-classes.json` | Authored | Realm and task-class names in English and Chinese; `catalog.py validate` checks each record's `task_classes` against it |
+| `translations.zh-CN.json` | Authored | Chinese summaries keyed by curated record ID, checked by `catalog.py validate` |
 | `scan-config.json` | Authored | Scan schedule and limits read by `scan.py` and the website status page |
 | `site-guides.json`, `site-discovery.json` | Authored | Website guides and search-discovery settings read by `build_site.py` and `submit_indexnow.py` |
 | `conference-discovery.json`, `discovery-audits.json` | Authored | Records of a manual proceedings sweep and an arXiv query audit; no script rewrites them |
@@ -216,7 +219,7 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `enrichment.jsonl` | Command output | `catalog.py enrich` |
 | `arxiv-search.json` | Command output | `catalog.py search-arxiv` |
 | `candidates.jsonl` | Command output | `catalog.py discover`, `discover_papers.py`, `catalog.py search-arxiv`, `scan.py` |
-| `papers.jsonl`, `metadata-updates.jsonl` | Command output | `catalog.py harvest`, `catalog.py search-arxiv`, `scan.py`; `backfill_arxiv_snapshots.py --write` also writes `papers.jsonl` |
+| `papers.jsonl`, `metadata-updates.jsonl` | Command output | `catalog.py harvest`, `catalog.py search-arxiv`, `scan.py`; `backfill_arxiv_snapshots.py --write` and `privacy_guard.py --omit-protected-authors` also write `papers.jsonl` |
 | `harvest-failures.jsonl` | Command output | `catalog.py harvest`, run by `scan.py` |
 | `discovery-runs.json` | Command output | `catalog.py discover`, run by `scan.py` |
 | `research-discovery.json`, `paper-discovery-status.json` | Command output | `discover_papers.py`, run by `scan.py` |

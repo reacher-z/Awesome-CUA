@@ -538,5 +538,32 @@
         "sha256": "bb64c7fc1b5d88fc070e919516a51eefac4acb89e86773464cfa0b3de18f1898"
       }
     ]
+  },
+  {
+    "alias_id": "github:reacher-z/clawbench",
+    "target_id": "github:tiger-ai-lab/clawbench",
+    "repository_id": 1206519531,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:55:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/reacher-z/ClawBench",
+        "resolved_url": "https://api.github.com/repositories/1206519531",
+        "repository_id": 1206519531,
+        "full_name": "TIGER-AI-Lab/ClawBench",
+        "html_url": "https://github.com/TIGER-AI-Lab/ClawBench",
+        "retrieved_at": "2026-10-18T11:54:36Z",
+        "sha256": "4b80afa11f3998830090c9c186afc753f261cc05abbcd4d906400f757f41e4da"
+      },
+      {
+        "url": "https://api.github.com/repos/TIGER-AI-Lab/ClawBench",
+        "resolved_url": "https://api.github.com/repos/TIGER-AI-Lab/ClawBench",
+        "repository_id": 1206519531,
+        "full_name": "TIGER-AI-Lab/ClawBench",
+        "html_url": "https://github.com/TIGER-AI-Lab/ClawBench",
+        "retrieved_at": "2026-10-18T11:54:37Z",
+        "sha256": "4b80afa11f3998830090c9c186afc753f261cc05abbcd4d906400f757f41e4da"
+      }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 # Dataset and benchmark specifications
 
-The catalog retains source-reviewed profiles under `details.benchmark_protocol` and `details.dataset_profile`. These support the website's [benchmark comparison](https://awesomecua.github.io/compare/benchmarks/) and [dataset comparison](https://awesomecua.github.io/compare/datasets/), along with the corresponding JSON downloads.
+The catalog retains source-reviewed profiles under `details.benchmark_protocol` and `details.dataset_profile`. These support the website's [benchmark comparison](https://awesomecua.com/compare/benchmarks/) and [dataset comparison](https://awesomecua.com/compare/datasets/), along with the corresponding JSON downloads.
 
 One profile describes one catalog resource. It is not a benchmark run, an independently reproduced result, or necessarily a distinct project. Only curated resources can publish a profile. Missing profiles and fields remain unknown.
 

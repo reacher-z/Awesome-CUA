@@ -55,9 +55,21 @@ Existing GitHub candidates without a successful retained primary response are
 considered first, ordered by distinct discovery-source count and stable name.
 Known repository aliases resolve before requests. `--existing-budget` caps this
 phase per invocation; topic shards can use the remaining request budget. Its
-cursor persists. An unavailable existing candidate is recorded as an unknown
-attempt and the cursor advances, so a permanent 404 cannot block the queue.
-There is no automatic repeated probing of that completed seed within an epoch.
+cursor persists. A settled answer about one name is recorded once, the cursor
+advances, and the phase continues with the next name in the same invocation. A
+settled answer is a permanent redirect (HTTP 301 or 308, for a renamed or
+transferred repository; the redirect is not followed), a 404, or a response that
+reports a public repository as a fork (`fork_not_recorded`; its metadata and body
+are not kept). It counts as an
+unknown attempt in the round's receipt, but the scheduled scan reports it as a
+notice rather than a gap, so it does not make the scan partial. The scheduled scan
+changes its input files on almost every run, so each run usually starts a new
+seed cohort at the first seed. Later cohorts therefore skip a name with a settled
+answer for 30 days (`SETTLED_SEED_RECHECK`) and then ask once more; without this,
+one renamed repository was requested first by every scan and stopped the phase.
+Network errors, server errors, rate limits and unparseable bodies settle nothing
+and are retried by a later run. Any other quarantined direct response, including
+one with no `fork` field, does not advance the cursor and is retried by a later run.
 If input fingerprints change, a new seed cohort is created, unfinished old seed
 cursors are marked `superseded_input`, and previously observed repository data
 and search-shard progress remain intact.
@@ -202,7 +214,7 @@ and updates only the manifest’s active-catalog comparison context for that bui
 Absent inputs remove the owned optional downloads on the next publication.
 
 When present, the JSONL and manifest appear in the data hub’s **Sources and review
-states** group; their schemas appear in **Data contracts**. They are not added to
+states** group; their schemas appear in **File schemas**. They are not added to
 the active catalog, resource pages, search recommendations, citations, or default
 RAG exports. A consumer can ingest them into a separate candidate collection
 keyed by `github-repository:<numeric ID>`, preserving review state and evidence.
@@ -277,7 +289,7 @@ the durable publication boundary, and an incomplete local triplet fails closed.
 
 Scanner v2 records explicit query epochs. Approved topic additions keep old roots
 and cursors and backfill new topics from the original historical lower bound.
-The production configuration names seventeen allowlisted topics. The original
+The production configuration names every allowlisted topic. The original
 nine remain: `android-automation`, `browser-agent`, `browser-agents`,
 `browser-automation`, `computer-use`, `desktop-automation`, `gui-agent`,
 `gui-agents`, and `gui-automation`. Eight additional exact spellings are supported
@@ -285,6 +297,11 @@ by retained publisher topic observations: `computer-use-agent`,
 `computer-use-agents`, `gui-grounding`, `browser-use`, `web-agent`, `web-agents`,
 `desktop-agent`, and `mobile-agent`. See the
 [topic decision and evidence](reviews/2026-10-20-candidate-topic-expansion.md).
+A second review adds eleven more, for twenty-eight in all: `cua`,
+`computer-control`, `computer-agent`, `os-agent`, `os-agents`, `mobile-agents`,
+`android-agent`, `phone-use`, `mobile-use`, `screen-understanding`, and
+`ui-agent`. Its [decision and evidence](reviews/2026-11-05-candidate-topic-expansion.md)
+records each tag's measured share of in-scope repositories.
 These are discovery queries, separate from reviewed catalog topic assignments.
 
 Each addition starts at the first epoch's historical lower bound and ends at the

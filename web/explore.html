@@ -3,40 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SHELL:HEAD -->
   <meta name="description" content="Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources." data-i18n-content="pageDescription">
-  <meta name="theme-color" content="#3c65d9">
   <meta property="og:title" content="AwesomeCUA — Computer-use research, data, and tools" data-i18n-content="pageTitle">
   <meta property="og:description" content="Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources." data-i18n-content="pageDescription">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AwesomeCUA">
   <meta property="og:locale" content="en_US" data-i18n-content="pageLocale">
-  <meta property="og:image" content="https://awesomecua.github.io/social.png">
+  <meta property="og:image" content="https://awesomecua.com/social.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools." data-i18n-content="pageImageAlt">
   <meta name="twitter:card" content="summary_large_image">
   <title>AwesomeCUA — Computer-use research, data, and tools</title>
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css">
-  <script type="module" src="./app.js"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <!-- SHELL:STYLES -->
+  <script type="module" src="/app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#catalog" data-i18n="skipToCatalog">Skip to catalog</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="./" aria-label="AwesomeCUA home" data-i18n-label="homeLabel"><img src="./favicon.svg" width="32" height="32" alt=""><span>Awesome<span class="brand-cua">CUA</span></span><span class="brand-label" data-i18n="brandLabel">THE INDEX</span></a>
-      <nav aria-label="Main navigation" data-i18n-label="mainNavigation">
-        <a href="#catalog" data-i18n="navExplore">Explore</a>
-        <a href="/papers/" data-paper-library data-i18n="navPapers">Papers</a>
-        <a href="/guides/" data-i18n="navGuides">Guides</a>
-        <a href="/data/" data-data-hub data-i18n="navData">Data / RAG</a>
-        <a href="#coverage" data-i18n="navCoverage">Coverage</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-      </nav>
-      <div class="header-actions"><button id="language" class="language-button" type="button" lang="zh-CN">中文</button><a class="github-link" href="https://github.com/reacher-z/Awesome-CUA" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M12 .8A11.2 11.2 0 0 0 8.46 22.63c.56.1.77-.24.77-.54v-2.1c-3.12.67-3.78-1.33-3.78-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.4-1.22.71-1.5-2.49-.29-5.1-1.25-5.1-5.54 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.07-1.15 3.07-1.15.62 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3 0 4.3-2.62 5.25-5.12 5.53.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>GitHub</span><span aria-hidden="true">↗</span></a></div>
-    </div>
-  </header>
-  <main>
+  <!-- SHELL:TOP -->
+  <main class="explore">
+    <div class="explore-tools shell"><button id="language" class="language-button" type="button" lang="zh-CN">中文</button><button id="footer-method" class="language-button" type="button" data-i18n="methodology">Methodology</button></div>
     <section class="hero shell">
       <div class="hero-copy">
         <div class="eyebrow"><span class="small-cross">✳</span><span data-i18n="eyebrow">COMPUTER-USE AGENT RESOURCES</span></div>
@@ -53,9 +41,9 @@
       </div>
     </section>
     <section class="stats-band shell" aria-label="Catalog statistics" data-i18n-label="statsLabel">
-      <div><span class="stat-value" id="stat-resources">—</span><span class="stat-label" data-i18n="resources">Resources indexed</span></div>
-      <div><span class="stat-value" id="stat-curated">—</span><span class="stat-label" data-i18n="curatedResources">Source-reviewed</span></div>
-      <div><span class="stat-value" id="stat-kinds">—</span><span class="stat-label" data-i18n="categories">Resource categories</span></div>
+      <div><span class="stat-value" id="stat-curated">—</span><span class="stat-label" data-i18n="curatedResources">Curated resources</span></div>
+      <div><span class="stat-value" id="stat-pending">—</span><span class="stat-label" data-i18n="awaitingReview">Awaiting review</span></div>
+      <div><span class="stat-value" id="stat-candidates">—</span><span class="stat-label" data-i18n="discoveredCandidates">Candidates</span></div>
       <div><span class="stat-value" id="stat-sources">—</span><span class="stat-label" data-i18n="discoverySources">Source documents</span></div>
       <div class="snapshot"><span class="snapshot-title" data-i18n="snapshot">DATA SNAPSHOT</span><span id="snapshot-date">—</span><a href="#coverage"><span data-i18n="viewCoverage">View coverage</span> ↗</a></div>
     </section>
@@ -90,20 +78,20 @@ python3 scripts/catalog.py search "grounding" --kind model --status curated --js
           <div id="results" class="resource-grid" aria-label="Catalog results" data-i18n-label="resultsLabel" aria-busy="true"></div>
           <div id="empty" class="empty-state" hidden><div class="empty-symbol">⌕</div><h3 data-i18n="emptyTitle">No resources match these filters.</h3><p data-i18n="emptyCopy">Try a broader term or clear a filter. Many papers have not yet been assigned platform or topic tags.</p><button class="button secondary" id="empty-reset" type="button" data-i18n="clearFilters">Reset filters</button></div>
           <nav id="pagination" class="pagination" aria-label="Results pagination" data-i18n-label="paginationLabel"></nav>
-          <p id="catalog-review-note" class="catalog-footnote" data-i18n="catalogFootnote">Reviewed: relevance and annotations checked against a primary source. Metadata only: bibliography verified; relevance pending. Neither status means experiments were reproduced.</p>
+          <p id="catalog-review-note" class="catalog-footnote" data-i18n="catalogFootnote">Reviewed: relevance and annotations checked against a primary source. Metadata only: bibliography verified; relevance pending.</p>
         </div>
       </div>
     </section>
     <section id="coverage" class="coverage-section shell" aria-labelledby="coverage-title">
       <div class="coverage-intro"><div class="eyebrow section-eyebrow" data-i18n="coverageEyebrow">REVIEW &amp; COVERAGE</div><h2 id="coverage-title" data-i18n="coverageTitle">Review status and known gaps</h2><p data-i18n="coverageCopy">See which records have source review, which have metadata only, and which identifiers remain unresolved.</p><button class="subtle-link" id="coverage-button" type="button"><span data-i18n="coverageButton">Inspect the coverage ledger</span> ↗</button></div>
-      <div class="principles"><article><span class="principle-number">01</span><div><h3 data-i18n="principle1Title">Follow the evidence</h3><p data-i18n="principle1Copy">Every record points to a first-party source, with a retrieval date and content fingerprint.</p></div></article><article><span class="principle-number">02</span><div><h3 data-i18n="principle2Title">Keep the distinctions</h3><p data-i18n="principle2Copy">Papers are not projects. Code licenses are not data licenses. A model checkpoint is not a model family.</p></div></article><article><span class="principle-number">03</span><div><h3 data-i18n="principle3Title">Make the gaps visible</h3><p data-i18n="principle3Copy">Comprehensive coverage is our goal. The unreviewed queue and source boundaries stay visible along the way.</p></div></article></div>
+      <div class="principles"><article><span class="principle-number">01</span><div><h3 data-i18n="principle1Title">Follow the evidence</h3><p data-i18n="principle1Copy">Every record points to a first-party source, with a retrieval date and content fingerprint.</p></div></article><article><span class="principle-number">02</span><div><h3 data-i18n="principle2Title">Keep the distinctions</h3><p data-i18n="principle2Copy">Papers, projects, code licenses, data licenses, checkpoints and model families are each recorded separately.</p></div></article><article><span class="principle-number">03</span><div><h3 data-i18n="principle3Title">Make the gaps visible</h3><p data-i18n="principle3Copy">Comprehensive coverage is our goal. The unreviewed queue and source boundaries stay visible along the way.</p></div></article></div>
     </section>
     <section id="about" class="about-section shell"><div><div class="eyebrow section-eyebrow" data-i18n="aboutEyebrow">AN OPEN FIELD DESERVES AN OPEN MAP</div><h2 data-i18n="aboutTitle">Help map what comes next.</h2><p data-i18n="aboutCopy">Found a paper, dataset, tool, or a detail we missed? Add your knowledge to the computer-use community.</p></div><a class="button primary" href="https://github.com/reacher-z/Awesome-CUA/issues/new?template=resource.yml" target="_blank" rel="noopener noreferrer"><span data-i18n="contribute">Contribute a resource</span><span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="shell"><a class="brand" href="./"><img src="./favicon.svg" width="27" height="27" alt=""><span>Awesome<span class="brand-cua">CUA</span></span></a><span data-i18n="footerCopy">A source-backed map of the computer-use ecosystem.</span><a href="https://github.com/reacher-z/Awesome-CUA" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="/badges/" data-i18n="resourceBadges">Resource badges</a><button id="footer-method" type="button" data-i18n="methodology">Methodology</button><span class="copyright">© 2026 AwesomeCUA</span></footer>
+  <!-- SHELL:BOTTOM -->
   <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span id="detail-overline" class="eyebrow"></span><button class="icon-button dialog-close" type="button" aria-label="Close details" data-i18n-label="closeDetails">×</button></div><div id="detail-content"></div><div class="toast" role="status" aria-live="polite"></div></dialog>
   <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"><div class="dialog-top"><span class="eyebrow" data-i18n="dataEyebrow">AWESOMECUA / DATA</span><button class="icon-button dialog-close" type="button" aria-label="Close dialog" data-i18n-label="closeDialog">×</button></div><div id="info-content"></div><div class="toast" role="status" aria-live="polite"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <noscript><p class="noscript">Enable JavaScript to search the catalog, or <a href="./downloads/catalog.jsonl">download the complete JSONL data</a>.</p></noscript>
+  <noscript><p class="noscript">Enable JavaScript to search the catalog, or <a href="/downloads/catalog.jsonl">download the complete JSONL data</a>.</p></noscript>
 </body>
 </html>

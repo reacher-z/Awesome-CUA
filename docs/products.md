@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Methodology](methodology.md) · [Machine-readable catalog](../data/catalog.jsonl)
 
-Curated metadata, not a performance ranking. Each entry links its first-party evidence. Unknown facts are shown as —.
+Curated metadata. Each entry links its first-party evidence. Unknown facts are shown as —.
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 

@@ -2,42 +2,42 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-1,672 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
+2,171 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [Evaluation](topics/evaluation.md) | 720 | 87 | 9 | 1 | 31 | · | 592 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
-| [GUI grounding](topics/grounding.md) | 380 | 10 | 32 | 67 | 22 | · | 249 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
-| [Data generation](topics/data-generation.md) | 347 | · | 55 | 2 | 25 | · | 265 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
-| [Web navigation](topics/web-navigation.md) | 307 | 17 | 8 | 11 | 47 | 2 | 222 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
-| [Mobile navigation](topics/mobile-navigation.md) | 283 | 14 | 13 | 15 | 33 | · | 208 | [Tandem: Serving Hybrid Linear-Attention GUI Agents on Mobile NPUs](https://arxiv.org/abs/2610.26660) · 2026-10-19 |
-| [Planning](topics/planning.md) | 283 | · | 4 | 27 | 32 | 1 | 219 | [Adaptation of Computer Use Agents to New Software with User Manuals](https://arxiv.org/abs/2610.23012) · 2026-10-16 |
-| [Reinforcement learning](topics/reinforcement-learning.md) | 242 | 2 | 5 | 23 | 22 | · | 190 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
-| [Safety & security](topics/safety-security.md) | 213 | 12 | · | · | 8 | · | 193 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
-| [Screen understanding](topics/screen-understanding.md) | 212 | 6 | 19 | 10 | 12 | 1 | 164 | [Focused Omni-Modal GUI Agents](https://arxiv.org/abs/2610.26203) · 2026-10-19 |
-| [Robustness](topics/robustness.md) | 186 | 10 | 1 | · | 2 | · | 173 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Memory](topics/memory.md) | 173 | 1 | 2 | · | 17 | · | 153 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Efficiency](topics/efficiency.md) | 158 | 2 | · | 5 | 5 | · | 146 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
-| [Tool integration](topics/tool-integration.md) | 136 | 9 | 2 | 4 | 24 | · | 97 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
-| [Workflows](topics/workflow.md) | 113 | 6 | 2 | · | 22 | · | 83 | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) · 2026-10-14 |
-| [Automation](topics/automation.md) | 112 | · | · | 1 | 28 | · | 83 | [Interaction-as-a-Judge](https://arxiv.org/abs/2610.17895) · 2026-10-13 |
-| [Long-horizon tasks](topics/long-horizon.md) | 105 | 5 | 1 | 1 | 5 | · | 93 | [Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828) · 2026-10-19 |
-| [Human in the loop](topics/human-in-the-loop.md) | 87 | 1 | · | · | 8 | · | 78 | [SPIDES: Information-Flow Control for Browser Agents](https://arxiv.org/abs/2610.24277) · 2026-10-16 |
-| [Imitation learning](topics/imitation-learning.md) | 84 | 1 | 14 | 5 | 12 | · | 52 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Reward models](topics/reward-models.md) | 58 | 4 | 3 | 4 | 3 | · | 44 | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) · 2026-10-19 |
-| [Sandboxes](topics/sandbox.md) | 58 | 3 | · | · | 14 | · | 41 | [CUA-Lite: An Open Platform for Computer Use Agents](https://arxiv.org/abs/2610.26071) · 2026-10-19 |
-| [Cross-app](topics/cross-app.md) | 56 | 13 | 2 | · | 4 | · | 37 | [MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents](https://arxiv.org/abs/2610.23303) · 2026-10-16 |
-| [Interaction history](topics/interaction-history.md) | 53 | · | · | 1 | 1 | · | 51 | [ScopeMem: Latent Memory That Learns Where to Revise Frozen GUI Agents](https://arxiv.org/abs/2610.26503) · 2026-10-19 |
-| [Action prediction](topics/action-prediction.md) | 51 | · | 2 | 17 | 3 | · | 29 | [Beyond Next-Screen Prediction: The Decision Value of GUI World Models](https://arxiv.org/abs/2610.24372) · 2026-10-17 |
-| [State tracking](topics/state-tracking.md) | 49 | · | · | · | 3 | · | 46 | [ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation](https://arxiv.org/abs/2610.22408) · 2026-10-14 |
-| [World models](topics/world-models.md) | 44 | · | 3 | 2 | 2 | · | 37 | [Beyond Next-Screen Prediction: The Decision Value of GUI World Models](https://arxiv.org/abs/2610.24372) · 2026-10-17 |
-| [Observability](topics/observability.md) | 42 | · | · | · | 4 | · | 38 | [Comparing Computer Use Behavior Across Multiple Levels of Abstraction](https://arxiv.org/abs/2610.26703) · 2026-10-19 |
-| [Self-reflection](topics/self-reflection.md) | 40 | · | · | 3 | 7 | · | 30 | [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) · 2026-10-09 |
-| [Video](topics/video.md) | 38 | 2 | 7 | · | · | · | 29 | [Invisible in Space, Visible in Time: Motion Vision CAPTCHA against GUI Agents](https://arxiv.org/abs/2609.27461) · 2026-09-23 |
-| [Training-free methods](topics/training-free.md) | 31 | · | · | · | 2 | · | 29 | [Visible but Not Avoided: State-Dependent Re-Proposal of Rejected Candidates in Catalog-Based LLM Optimization Loops](https://arxiv.org/abs/2610.15738) · 2026-10-11 |
-| [Industry](topics/industry.md) | 27 | · | · | · | 16 | · | 11 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) · 2026-04-10 |
-| [Recording](topics/recording.md) | 24 | · | 1 | · | 8 | · | 15 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) · 2026-10-09 |
-| [UI design](topics/ui-design.md) | 23 | · | 1 | · | · | · | 22 | [WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness](https://arxiv.org/abs/2610.02617) · 2026-10-02 |
-| [Survey](topics/survey.md) | 20 | · | · | · | · | · | 20 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366) · 2026-10-14 |
-| [Scientific workflows](topics/science.md) | 18 | 1 | 1 | · | 1 | · | 15 | [MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles](https://arxiv.org/abs/2610.04800) · 2026-10-03 |
+| [Evaluation](topics/evaluation.md) | 954 | 89 | 9 | 1 | 37 | · | 818 | [Interpretable Early Termination of Web Navigation Agents via Closed Sequential Pattern Mining](https://arxiv.org/abs/2611.04142) · 2026-11-03 |
+| [Web navigation](topics/web-navigation.md) | 443 | 19 | 8 | 11 | 59 | 2 | 344 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Data generation](topics/data-generation.md) | 429 | · | 55 | 2 | 25 | · | 347 | [MKD2World: A Typed Spatial MarkDown World Model For Web Agents](https://arxiv.org/abs/2611.06544) · 2026-11-04 |
+| [GUI grounding](topics/grounding.md) | 421 | 10 | 32 | 67 | 24 | · | 288 | [UI-UG 2: Advancing Mobile UI Understanding and Generation with Fine-Grained Supervision and Reinforcement Learning](https://arxiv.org/abs/2611.00926) · 2026-10-31 |
+| [Planning](topics/planning.md) | 365 | · | 4 | 27 | 32 | 1 | 301 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Mobile navigation](topics/mobile-navigation.md) | 331 | 14 | 13 | 15 | 33 | · | 256 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
+| [Reinforcement learning](topics/reinforcement-learning.md) | 314 | 2 | 5 | 23 | 22 | · | 262 | [JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks](https://arxiv.org/abs/2611.05263) · 2026-11-03 |
+| [Safety & security](topics/safety-security.md) | 289 | 12 | · | · | 9 | · | 268 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Screen understanding](topics/screen-understanding.md) | 273 | 6 | 19 | 10 | 14 | 1 | 223 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Memory](topics/memory.md) | 232 | 1 | 2 | · | 19 | · | 210 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
+| [Efficiency](topics/efficiency.md) | 222 | 2 | · | 5 | 5 | · | 210 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Robustness](topics/robustness.md) | 211 | 10 | 1 | · | 2 | · | 198 | [Voluntary Servitude: Weaponized Safety Warning Mechanisms for Controlling AI Agents](https://arxiv.org/abs/2611.04393) · 2026-11-03 |
+| [Tool integration](topics/tool-integration.md) | 195 | 9 | 2 | 4 | 39 | · | 141 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Long-horizon tasks](topics/long-horizon.md) | 176 | 6 | 1 | 1 | 6 | · | 162 | [JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks](https://arxiv.org/abs/2611.05263) · 2026-11-03 |
+| [Automation](topics/automation.md) | 174 | · | · | 1 | 48 | · | 125 | [Interface Quilt: Modifying Applications with Computer Use Agents and Generative UI](https://arxiv.org/abs/2611.01891) · 2026-11-01 |
+| [Workflows](topics/workflow.md) | 171 | 7 | 2 | · | 25 | · | 137 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
+| [Human in the loop](topics/human-in-the-loop.md) | 115 | 1 | · | · | 11 | · | 103 | [iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents](https://arxiv.org/abs/2610.34735) · 2026-10-26 |
+| [Imitation learning](topics/imitation-learning.md) | 106 | 1 | 14 | 5 | 12 | · | 74 | [HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games](https://arxiv.org/abs/2610.31162) · 2026-10-22 |
+| [Interaction history](topics/interaction-history.md) | 94 | · | · | 1 | 1 | · | 92 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Sandboxes](topics/sandbox.md) | 88 | 3 | · | · | 17 | · | 68 | [WebHarbor: Docking Real Websites for Evolving GUI Agent Environments](https://arxiv.org/abs/2611.03634) · 2026-11-02 |
+| [Reward models](topics/reward-models.md) | 84 | 4 | 3 | 4 | 3 | · | 70 | [Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps](https://arxiv.org/abs/2610.39264) · 2026-10-29 |
+| [Action prediction](topics/action-prediction.md) | 79 | · | 2 | 17 | 3 | · | 57 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Observability](topics/observability.md) | 78 | 1 | · | · | 6 | · | 71 | [Interpretable Early Termination of Web Navigation Agents via Closed Sequential Pattern Mining](https://arxiv.org/abs/2611.04142) · 2026-11-03 |
+| [State tracking](topics/state-tracking.md) | 78 | · | · | · | 3 | · | 75 | [Coati: Host-Grounded Execution for Installable Mobile GUI Agents](https://arxiv.org/abs/2611.02644) · 2026-11-02 |
+| [Cross-app](topics/cross-app.md) | 67 | 13 | 2 | · | 4 | · | 48 | [From Interaction to Capability: Task Advancement as State and Supervision for GUI Agents](https://arxiv.org/abs/2610.37482) · 2026-10-27 |
+| [Self-reflection](topics/self-reflection.md) | 64 | · | · | 3 | 7 | · | 54 | [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents](https://arxiv.org/abs/2611.03238) · 2026-11-02 |
+| [World models](topics/world-models.md) | 59 | · | 3 | 2 | 2 | · | 52 | [MKD2World: A Typed Spatial MarkDown World Model For Web Agents](https://arxiv.org/abs/2611.06544) · 2026-11-04 |
+| [UI design](topics/ui-design.md) | 56 | 1 | 1 | · | · | · | 54 | [Interface Quilt: Modifying Applications with Computer Use Agents and Generative UI](https://arxiv.org/abs/2611.01891) · 2026-11-01 |
+| [Training-free methods](topics/training-free.md) | 50 | · | · | · | 2 | · | 48 | [MAPLE: A Multimodal Mobile Agent with Playbook-Learned Experience](https://arxiv.org/abs/2611.01351) · 2026-10-31 |
+| [Video](topics/video.md) | 48 | 2 | 7 | · | · | · | 39 | [CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements](https://arxiv.org/abs/2611.03126) · 2026-11-02 |
+| [Industry](topics/industry.md) | 39 | · | · | · | 16 | · | 23 | [Build or Adopt? Custom-Built vs. General-Purpose LLM Agent Harnesses for Automotive GUI Testing](https://arxiv.org/abs/2610.33636) · 2026-10-24 |
+| [Recording](topics/recording.md) | 34 | · | 1 | · | 10 | · | 23 | [InterWebCoder: Learning Interactive Webpage Generation from Executable Tests via Reinforcement Learning](https://arxiv.org/abs/2610.28610) · 2026-10-20 |
+| [Survey](topics/survey.md) | 29 | · | · | · | · | · | 29 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) · 2026-10-21 |
+| [Scientific workflows](topics/science.md) | 25 | 1 | 1 | · | 1 | · | 22 | [ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents](https://arxiv.org/abs/2611.03238) · 2026-11-02 |
 | [Historical](topics/history.md) | 4 | · | · | · | 4 | · | · | — |

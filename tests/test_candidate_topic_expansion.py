@@ -25,6 +25,12 @@ ADDED_TOPICS = [
     'browser-use', 'web-agent', 'web-agents', 'desktop-agent', 'mobile-agent',
 ]
 EXPANDED_TOPICS = OLD_TOPICS + ADDED_TOPICS
+# Reviewed in docs/reviews/2026-11-05-candidate-topic-expansion.md.
+NOVEMBER_TOPICS = [
+    'cua', 'computer-control', 'computer-agent', 'os-agent', 'os-agents',
+    'mobile-agents', 'android-agent', 'phone-use', 'mobile-use',
+    'screen-understanding', 'ui-agent',
+]
 
 
 class CandidateTopicExpansionTests(unittest.TestCase):
@@ -74,7 +80,7 @@ class CandidateTopicExpansionTests(unittest.TestCase):
 
     def test_exact_added_topics_are_public_queries_not_generic_searches(self):
         config = json.loads((ROOT / 'data/scan-config.json').read_text(encoding='utf-8'))
-        self.assertEqual(config['github_candidate_topics'], EXPANDED_TOPICS)
+        self.assertEqual(config['github_candidate_topics'], EXPANDED_TOPICS + NOVEMBER_TOPICS)
         self.assertEqual(
             tuple(config[key] for key in (
                 'github_candidate_max_requests', 'github_candidate_max_seconds',
@@ -82,7 +88,7 @@ class CandidateTopicExpansionTests(unittest.TestCase):
             )),
             (30, 220, 5, 180, 600),
         )
-        for topic in ADDED_TOPICS:
+        for topic in ADDED_TOPICS + NOVEMBER_TOPICS:
             query = scan.search_query(topic, '2008-01-01', '2026-10-20')['query']
             url = 'https://api.github.com/search/repositories?' + urlencode({
                 'q': query, 'per_page': 100, 'page': 1, 'sort': 'updated', 'order': 'asc',

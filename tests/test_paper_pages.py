@@ -6,13 +6,13 @@ import sys
 import tempfile
 import unittest
 from unittest import mock
-import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import paper_library
 from build_site import build_site
 from paper_library import library_pages, library_path, library_years
 from search_pages import SITE, resource_path
+from sitemaps import sitemap_urls
 from test_paper_library import LibraryParser, record
 
 BUDGET = 150_000
@@ -108,7 +108,7 @@ class PaperPageTests(unittest.TestCase):
             self.assertIn(f'id="{anchor}"', self.markup[path])
 
     def test_library_pages_are_indexable_canonical_language_pairs_in_the_sitemap(self):
-        sitemap = {x.text for x in ET.parse(self.dest / 'sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+        sitemap = set(sitemap_urls(self.dest, SITE))
         numbers = [int(m[1] or 1) for path in self.markup if (m := re.fullmatch(r'/papers/(?:page/(\d+)/)?', path))]
         self.assertEqual(sorted(numbers), list(range(1, max(numbers) + 1)))
         for number in numbers:

@@ -9,7 +9,8 @@ FENCE = re.compile(r"^```(?:bash|sh)\n(.*?)^```", re.S | re.M)
 
 
 def targets(text):
-    return {t for t in LINK.findall(text) if not t.startswith("#")} - {"README.md", "README.zh-CN.md"}
+    # The Chinese page links the site's /zh/ pages where they exist; they count as the English page's targets.
+    return {t.replace("awesomecua.com/zh/", "awesomecua.com/") for t in LINK.findall(text) if not t.startswith("#")} - {"README.md", "README.zh-CN.md"}
 
 
 def commands(text):

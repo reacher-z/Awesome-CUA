@@ -18,6 +18,7 @@ import xml.etree.ElementTree as ET
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
 from search_pages import SITE, eligible, resource_path, resource_schema, page, incoming_relations
+from sitemaps import sitemap_urls
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -30,6 +31,12 @@ def copy_survey_source_inputs(destination):
             target = destination/name
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT/name, target)
+
+
+def page_origin(site,path):
+    # The reviewed survey bundle keeps the origin it was built for (SITE or a former origin) until it is rebuilt.
+    if path=='/survey/':return json.loads((site/'survey/build-manifest.json').read_text(encoding='utf-8'))['canonical_location_intended'].removesuffix(path)
+    return SITE
 
 
 class PageParser(HTMLParser):
@@ -75,19 +82,17 @@ class SearchPagesTests(unittest.TestCase):
     def test_every_page_has_matching_canonical_robots_and_visible_heading(self):
         for item in self.manifest['pages']:
             text=(self.dest/item['path'].lstrip('/')/'index.html').read_text();p=PageParser(text)
-            self.assertEqual(p.canonical,[SITE+item['path']],item['path'])
+            self.assertEqual(p.canonical,[page_origin(self.dest,item['path'])+item['path']],item['path'])
             self.assertEqual(p.heading_count,1,item['path'])
             self.assertEqual('noindex' in p.robots[0],not item['indexable'],item['path'])
             for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):
                 value=json.loads(block);self.assertEqual(value['@context'],'https://schema.org')
-    def test_sitemap_excludes_unreviewed_pages_and_has_no_synthetic_lastmod(self):
-        root=ET.parse(self.dest/'sitemap.xml').getroot();ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        urls=[x.text for x in root.findall('s:url/s:loc',ns)]
+    def test_sitemaps_list_exactly_the_reviewed_indexable_pages(self):
+        urls=sitemap_urls(self.dest,SITE)
         expected={SITE+p['path'] for p in self.manifest['pages'] if p['indexable']}
         self.assertEqual(set(urls),expected);self.assertEqual(len(urls),len(set(urls)))
-        self.assertFalse(root.findall('s:url/s:lastmod',ns))
         for row in self.rows:self.assertEqual(SITE+resource_path(row) in urls,eligible(row))
-        self.assertEqual((self.dest/'sitemap.txt').read_text().splitlines(),urls)
+        self.assertEqual(sorted((self.dest/'sitemap.txt').read_text().splitlines()),sorted(urls))
     def test_static_pages_link_to_real_local_destinations(self):
         for item in self.manifest['pages']:
             p=PageParser((self.dest/item['path'].lstrip('/')/'index.html').read_text())
@@ -98,10 +103,22 @@ class SearchPagesTests(unittest.TestCase):
                 target=self.dest/path.lstrip('/')
                 if path.endswith('/'):target=target/'index.html'
                 self.assertTrue(target.exists(),f'{item["path"]} -> {link}')
+    def test_only_the_homepage_hides_the_header_search(self):
+        for path in ('index.html','zh/index.html'):
+            self.assertIn('<body class="home">',(self.dest/path).read_text())
+        for path in ('data/index.html','zh/data/index.html'):
+            self.assertIn('<body class="home list-page">',(self.dest/path).read_text())
+        css=(self.dest/'assets/site.css').read_text()
+        self.assertIn('.home.list-page .search-trigger{opacity:1;pointer-events:auto;transform:none}',css)
     def test_homepage_is_useful_without_javascript(self):
         text=(self.dest/'index.html').read_text();p=PageParser(text)
         self.assertIn('/papers/',p.links);self.assertIn('/catalog/',p.links);self.assertIn('/data/',p.links)
-        self.assertIn(f'id="stat-resources">{len(self.rows):,}</span>',text)
+        reviewed=[row for row in self.rows if eligible(row)]
+        self.assertIn(f'<b>{len(reviewed):,}</b>',text)
+        explorer=(self.dest/'explore/index.html').read_text()
+        self.assertIn(f'id="stat-curated">{len(reviewed):,}</span>',explorer)
+        self.assertNotIn('id="stat-resources"',explorer)
+        for identity in ('stat-pending','stat-candidates','stat-sources'):self.assertRegex(explorer,f'id="{identity}">[0-9][0-9,]*</span>')
         self.assertIn('Computer-use agent research and resources',text)
     def test_bilingual_libraries_preserve_the_complete_reviewed_paper_set(self):
         expected={row['id'] for row in self.rows if eligible(row) and row['kind'] in {'paper','survey'}}
@@ -149,10 +166,11 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertTrue((self.dest/first.lstrip('/')/'index.md').exists())
     def test_script_versions_match_output_bytes_and_final_page_manifest(self):
         pages={item['path']:item for item in self.manifest['pages']}
-        for path,script in [('/', 'app.js'),('/compare/benchmarks/','compare.js'),('/compare/datasets/','compare.js'),
+        for path,script in [('/explore/', 'app.js'),('/compare/benchmarks/','compare.js'),('/compare/datasets/','compare.js'),
                             ('/data/','downloads.js'),('/zh/data/','downloads.js')]:
             content=(self.dest/path.lstrip('/')/'index.html').read_bytes()
-            sources=PageParser(content.decode('utf-8')).scripts
+            # Every page also loads the shared shell script, which carries its own version.
+            sources=[source for source in PageParser(content.decode('utf-8')).scripts if not source.startswith('/assets/site.js')]
             self.assertEqual(len(sources),1,path)
             url=urllib.parse.urlsplit(sources[0])
             self.assertEqual(Path(url.path).name,script)
@@ -195,7 +213,7 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertEqual(dataset['url'],SITE+path)
                 self.assertEqual({item['contentUrl'] for item in dataset['distribution']},
                                  {SITE+'/downloads/catalog.jsonl',SITE+'/data/records.json',SITE+'/downloads/catalog.sqlite'})
-        self.assertIn('href="/zh/data/">数据</a>',(self.dest/'zh/data/index.html').read_text())
+        self.assertIn('href="/zh/data/" aria-current=page>数据</a>',(self.dest/'zh/data/index.html').read_text())
         self.assertIn(SITE+'/downloads/manifest.json',(self.dest/'llms.txt').read_text())
 
     def test_download_script_change_versions_only_data_hub_pages(self):
@@ -217,7 +235,7 @@ class SearchPagesTests(unittest.TestCase):
                 expected=hashlib.sha256((destination/'downloads.js').read_bytes()).hexdigest()
                 for path in ('data/index.html','zh/data/index.html'):
                     parsed=PageParser((destination/path).read_text())
-                    self.assertEqual(parsed.scripts,['/downloads.js?v='+expected])
+                    self.assertEqual([source for source in parsed.scripts if not source.startswith('/assets/site.js')],['/downloads.js?v='+expected])
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
     def test_core_change_updates_only_consumer_pages_and_rebuild_is_stable(self):
@@ -237,7 +255,7 @@ class SearchPagesTests(unittest.TestCase):
                 core=source/'web/catalog-core.js';core.write_bytes(core.read_bytes()+b'\n// Dependency version regression fixture.\n')
                 build_site(destination);after=snapshot()
                 self.assertNotEqual((destination/'app.js').read_bytes(),original_app)
-                self.assertEqual({path for path in before if before[path]!=after[path]},{'/','/compare/benchmarks/','/compare/datasets/'})
+                self.assertEqual({path for path in before if before[path]!=after[path]},{'/explore/','/compare/benchmarks/','/compare/datasets/'})
                 scripts={name:(destination/name).read_bytes() for name in ('app.js','compare.js')}
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
@@ -245,6 +263,7 @@ class SearchPagesTests(unittest.TestCase):
     def test_machine_navigation_and_verified_files_exist(self):
         config=json.loads((ROOT/'data/site-discovery.json').read_text())
         self.assertEqual((self.dest/(config['indexnow_key']+'.txt')).read_text(),config['indexnow_key'])
+        self.assertEqual((self.dest/'CNAME').read_text(),urllib.parse.urlsplit(SITE).hostname+'\n')
         self.assertEqual((self.dest/config['google_verification_file']).read_bytes(),(ROOT/'web'/config['google_verification_file']).read_bytes())
         self.assertIn('/papers/',(self.dest/'llms.txt').read_text())
         ET.parse(self.dest/'feed.xml')
@@ -253,7 +272,7 @@ class SearchPagesTests(unittest.TestCase):
             self.assertTrue(robots.can_fetch(bot,SITE+'/papers/'))
     def test_agent_guides_and_rag_downloads_share_the_actual_catalog(self):
         command='git clone https://github.com/reacher-z/Awesome-CUA.git'
-        for path in ['index.html','agents/index.html','zh/agents/index.html','data/index.html','AGENTS.md','llms.txt']:
+        for path in ['explore/index.html','agents/index.html','zh/agents/index.html','data/index.html','AGENTS.md','llms.txt']:
             self.assertIn(command,(self.dest/path).read_text(),path)
         manifest=json.loads((self.dest/'downloads/rag-manifest.json').read_text())
         self.assertEqual(manifest['catalog_sha256'],hashlib.sha256((self.dest/'downloads/catalog.jsonl').read_bytes()).hexdigest())
@@ -305,8 +324,12 @@ class SearchPagesTests(unittest.TestCase):
             for field in ['versioned_url','submitted_at','updated_at','abstract_sha256','abstract_hash_method']:
                 if snapshot.get(field) is not None:self.assertIn(str(snapshot[field]),markdown,(rid,field))
             self.assertIn('- Version: '+(str(snapshot['version']) if snapshot.get('version') else 'not recorded'),markdown,rid)
-        curated_snapshots=sum(row['review_status']=='curated' and bool(row['details'].get('arxiv_snapshot')) for row in self.rows)
-        self.assertEqual((self.dest/'llms-full.txt').read_text().count('## Recorded arXiv snapshot'),curated_snapshots)
+        # Full annotations of reviewed papers sit in the research-library Markdown, other kinds in their category Markdown.
+        snapshots=lambda kinds:sum(eligible(row) and row['kind'] in kinds and bool(row['details'].get('arxiv_snapshot')) for row in self.rows)
+        library=sum(path.read_text().count('### Recorded arXiv snapshot') for path in [self.dest/'papers/index.md',*(self.dest/'papers/page').glob('*/index.md')])
+        self.assertEqual(library,snapshots({'paper','survey'}))
+        others={kind for kind in {row['kind'] for row in self.rows}}-{'paper','survey'}
+        self.assertEqual(sum((self.dest/'categories'/kind/'index.md').read_text().count('### Recorded arXiv snapshot') for kind in others),snapshots(others))
     def test_resource_schema_uses_original_authorship_not_catalog_authorship(self):
         for r in self.rows:
             schema=resource_schema(r)

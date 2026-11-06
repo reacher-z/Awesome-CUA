@@ -77,8 +77,10 @@ class LearningPublicationTests(unittest.TestCase):
             self.assertFalse((folder / "citation.bib").exists())
         for path in ("index.html", "zh/index.html", "catalog/index.html", "404.html"):
             self.assertIn('href="/categories/learning/"', (self.build / path).read_text(encoding="utf-8"), path)
-        self.assertIn(f'id="stat-kinds">{len({row["kind"] for row in self.rows})}</span>',
-                      (self.build / "index.html").read_text(encoding="utf-8"))
+        # Learning resources count among the curated resources in the home and explorer headlines.
+        curated = sum(row["review_status"] == "curated" for row in self.rows)
+        self.assertIn(f'id="stat-curated">{curated}</span>', (self.build / "explore/index.html").read_text(encoding="utf-8"))
+        self.assertIn(f'<b>{curated}</b>', (self.build / "index.html").read_text(encoding="utf-8"))
         self.assertIn("学习资源", (self.build / "zh/index.html").read_text(encoding="utf-8"))
         rag = [json.loads(line) for line in (self.build / "downloads/rag-documents.jsonl").read_text(encoding="utf-8").splitlines()]
         self.assertEqual({row["id"] for row in rag}, {row["id"] for row in self.rows if row["review_status"] == "curated"})
@@ -177,7 +179,7 @@ class LearningGroupingTests(unittest.TestCase):
         self.assertIn("| 2 | · | · | · | · | 2 | · |", files["docs/environments.md"])
         self.assertIn("[learning](learning.md)", files["docs/coverage.md"])
         for language, label in (("en", "Learning resources"), ("zh", "学习资源")):
-            self.assertIn(f"[{label}](docs/learning.md) · **2**", build.explore(rows, report, language))
+            self.assertRegex(build.explore(rows, report, language), rf"\| \[{label}\]\(docs/learning.md\) +\| .+ \| +2 \|")
             self.assertNotIn("docs/learning.md", build.explore([self.pending], report, language))
         reviewed_at = {lesson["id"]: "2026-10-20T00:00:00Z" for lesson in self.lessons}
         self.assertIn("| Learning resources |", build.recently_reviewed(self.lessons, reviewed_at))

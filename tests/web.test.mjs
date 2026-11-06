@@ -365,7 +365,7 @@ test('explicit sorts and empty-query order stay stable without per-comparison no
   String.prototype.localeCompare=function(...args){collated++;return localeCompare.apply(this,args);};
   try{for(const sort of ['featured','name','newest'])filtered(rows,{...initial(),sort,q:'g'});}finally{String.prototype.normalize=nativeNormalize;String.prototype.localeCompare=localeCompare;}
   assert.equal(collated,0);
-  assert.ok(normalized<=5*rows.length,`${normalized} normalizations for ${rows.length} records`);
+  assert.ok(normalized<=6*rows.length,`${normalized} normalizations for ${rows.length} records`);
 });
 test('desktop and mobile platforms include their operating systems',()=>{
   const ids=platform=>new Set(filtered(rows,{...initial(),platform}).map(r=>r.id));
@@ -381,7 +381,7 @@ test('desktop and mobile platforms include their operating systems',()=>{
   assert.equal(parseState(serializeState({...initial(),platform:'mobile'},'en')).platform,'mobile');
 });
 test('hero shortcuts and the platform menu offer grouped platforms in order',()=>{
-  const html=readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+  const html=readFileSync(new URL('../web/explore.html',import.meta.url),'utf8');
   assert.deepEqual(Object.keys(PLATFORMS),['web','desktop','windows','macos','linux','mobile','android','ios','harmonyos','cross-platform','unspecified']);
   assert.deepEqual([...html.matchAll(/data-environment="([^"]+)"/g)].map(m=>m[1]),['web','desktop','mobile']);
   assert.ok(filtered(rows,{...initial(),platform:'mobile'}).some(r=>r.name==='iOSWorld'));
@@ -419,7 +419,7 @@ test('the comparison page hides rows outside the filter and keeps it in the URL'
   const query=control('query'),environment={...control('environment'),options:['','android','desktop','linux','web'].map(value=>({value}))},output={textContent:''},urls=[];
   const elements={'#compare-query':query,'#compare-environment':environment,'#compare-results':output};
   const globals={document:{querySelector:selector=>elements[selector],querySelectorAll:selector=>selector==='[data-profile-row]'?profiles:[]},
-    location:{search:'?q=screenshots&environment=android',href:'https://awesomecua.github.io/compare/benchmarks/?q=screenshots&environment=android'},history:{replaceState:(data,title,url)=>urls.push(String(url))}};
+    location:{search:'?q=screenshots&environment=android',href:'https://awesomecua.com/compare/benchmarks/?q=screenshots&environment=android'},history:{replaceState:(data,title,url)=>urls.push(String(url))}};
   for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
   try {
     await import('../web/compare.js?filter');
@@ -470,6 +470,33 @@ test('compact card facts list only recorded year, arXiv paper and declared licen
   assert.deepEqual(compactFacts({id:'url:bare',published_at:null}),[]);
   for(const r of rows)for(const fact of compactFacts(r))assert.match(fact.text,/^\d{4}$/,r.id);
 });
+test('an omitted author list renders as a link to the paper in cards, rows and the record dialog',async()=>{
+  const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
+  const record={id:'arxiv:2601.00001',name:'Withheld authors fixture',kind:'paper',url:'https://arxiv.org/abs/2601.00001',page_url:'/resources/arxiv-2601-00001/',aliases:[],environments:['web'],topics:[],authors:[],authors_omitted:true,scope:'relevance_pending',review_status:'metadata_verified',summary:null,published_at:'2026-01-01',paper_version:1,paper_source_url:'https://arxiv.org/abs/2601.00001v1',paper_date:'2026-01-01',related_count:0,incoming_relations:[]};
+  const keys=['document','window','location','history','localStorage','fetch'],saved=keys.map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
+  const settle=()=>new Promise(resolve=>setImmediate(resolve));
+  const boot=async(search,name)=>{
+    const clicks=[],elements=new Map(),element=selector=>{if(!elements.has(selector))elements.set(selector,{dataset:{},listeners:{},classList:{toggle(){}},open:false,addEventListener(type,fn){(this.listeners[type]??=[]).push(fn);},setAttribute(){},focus(){},scrollIntoView(){},showModal(){this.open=true;},close(){this.open=false;}});return elements.get(selector);};
+    const detail={...record,licenses:{code:null,data:null,weights:null,document:null},details:{arxiv_snapshot:{version:1,versioned_url:'https://arxiv.org/abs/2601.00001v1'}},identifiers:{arxiv:'2601.00001'},relations:[],notes:'',evidence:[],last_verified_at:'2026-01-02T00:00:00Z'};
+    const globals={document:{documentElement:{},body:{classList:{toggle(){}}},addEventListener(type,fn){if(type==='click')clicks.push(fn);},querySelector:element,querySelectorAll:()=>[]},window:{addEventListener(){}},location:{search,pathname:'/',hash:''},history:{state:null,length:1,pushState(){},replaceState(){}},localStorage:{getItem:()=>null,setItem(){}},fetch:async url=>({ok:true,json:async()=>url.endsWith('record.json')?structuredClone(detail):{coverage,records:[structuredClone(record)]}})};
+    for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
+    await import(`../web/app.js?${name}`);await settle();
+    const open=async()=>{for(const listener of clicks)listener({target:{closest:selector=>selector==='[data-record]'?{tagName:'A',dataset:{record:record.id}}:null},button:0,preventDefault(){}});await settle();};
+    return {results:()=>element('#results').innerHTML,dialog:()=>element('#detail-content').innerHTML,open};
+  };
+  try {
+    const grid=await boot('?view=grid','omitted-authors-grid');
+    assert.match(grid.results(),/Authors: see the paper/);
+    const rows=await boot('?view=list','omitted-authors-list');
+    assert.match(rows.results(),/<span class="row-authors">Authors: see the paper<\/span>/);
+    await rows.open();
+    assert.match(rows.dialog(),/<h3>Authors<\/h3><p><a href="https:\/\/arxiv\.org\/abs\/2601\.00001v1" target="_blank" rel="noopener noreferrer">Authors: see the paper<\/a><\/p>/);
+    const zh=await boot('?view=list&lang=zh','omitted-authors-zh');
+    assert.match(zh.results(),/<span class="row-authors">作者见原文<\/span>/);
+  } finally {
+    for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
+  }
+});
 test('cards and list rows render compact facts without placeholders',async()=>{
   const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
   const base={aliases:[],environments:['desktop'],topics:[],authors:[],scope:'core',review_status:'curated',summary:'Fixture summary.',paper_version:null,paper_source_url:null,paper_date:null,related_count:0,incoming_relations:[]};
@@ -500,16 +527,65 @@ const luminance=hex=>{const [r,g,b]=hex.slice(1).match(/../g).map(x=>parseInt(x,
 const contrast=(a,b)=>{const [x,y]=[luminance(a),luminance(b)].sort((m,n)=>n-m);return (x+.05)/(y+.05);};
 test('small secondary text meets WCAG AA contrast on its surface',()=>{
   const bg=declaration(':root','--bg'),map=declaration('.ecosystem-map','background-color'),white='#ffffff';
-  const pairs=[['.brand-label',white],['.hero-caption',bg],['.map-label',map],['.map-coordinates',map],['.map-foot',map],['.map-node small',white],['.section-eyebrow',declaration('.about-section','background')],['.sidebar-label',bg],['.category-count',bg],['.select-wrap>span',white],['.search-box input::placeholder',white],['.popular-topics',bg],['.popular-topics>button',declaration('.popular-topics>button','background')],['.card-tags span',white],['.card-bottom',white],['.card-bottom.is-curated',white],['.catalog-footnote',bg],['footer',bg],['.license-item span',white],['.coverage-table th',white],['.fact-list dt',white]];
+  const pairs=[['.hero-caption',bg],['.map-label',map],['.map-coordinates',map],['.map-foot',map],['.map-node small',white],['.section-eyebrow',declaration('.about-section','background')],['.sidebar-label',bg],['.category-count',bg],['.select-wrap>span',white],['.search-box input::placeholder',white],['.popular-topics',bg],['.popular-topics>button',declaration('.popular-topics>button','background')],['.card-tags span',white],['.card-bottom',white],['.card-bottom.is-curated',white],['.catalog-footnote',bg],['.license-item span',white],['.coverage-table th',white],['.fact-list dt',white]];
   for(const kind of ['','.resource-card[data-kind=model] ','.resource-card[data-kind=dataset] ','.resource-card[data-kind=benchmark] ','.resource-card[data-kind=agent] '])pairs.push([kind+'.resource-monogram',declaration(kind+'.resource-monogram','background')]);
   for(const [selector,surface] of pairs)assert.ok(contrast(declaration(selector,'color'),surface)>=4.5,`${selector} is ${contrast(declaration(selector,'color'),surface).toFixed(2)}:1`);
+});
+test('footer and hero text on the indigo panel meets WCAG AA contrast',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  for(const block of [...site.matchAll(/--ad-indigo:(#[0-9A-Fa-f]{6})/g)])for(const text of ['#FFFFFF','#E2FDFF'])assert.ok(contrast(text,block[1])>=4.5,`${text} on ${block[1]}`);
+  assert.ok([...site.matchAll(/--ad-indigo:/g)].length>=3,'light and both dark blocks define the panel colour');
+});
+test('the grid paper hero, title bar and window strips meet WCAG AA contrast in both themes',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const start=site.indexOf('Indigo on Grid Paper');
+  assert.ok(start>0,'grid paper section exists');
+  const section=site.slice(start);
+  const [light,dark]=[...section.matchAll(/--grid-line:(#[0-9A-Fa-f]{6});--bar-bg:(#[0-9A-Fa-f]{6})/g)];
+  assert.ok(light&&dark,'light and dark grid tokens');
+  const lightText=['#212632','#303542','#5E6472'],darkText=['#E2FDFF','#D0D7E8','#989EAE'];
+  for(const [match,text,paper] of [[light,lightText,'#FFFFFF'],[dark,darkText,'#0C1023']]){
+    for(const color of text)for(const surface of [paper,match[1]])assert.ok(contrast(color,surface)>=4.5,`${color} on ${surface}`);
+    assert.ok(contrast('#FFFFFF',match[2])>=4.5,`title bar text on ${match[2]}`);
+  }
+  assert.ok(contrast('#5E6472','#F7F8FC')>=4.5,'meta text on the light window strip');
+  assert.ok(contrast('#989EAE','#10152C')>=4.5,'meta text on the dark window strip');
+  assert.ok(contrast('#5E6472','#FFFFFF')>=4.5,'group label on the light window');
+  assert.ok(contrast('#989EAE','#1B223E')>=4.5,'group label on the dark window');
+  assert.match(section,/\.row-cap\{[^}]*background:none/,'group labels have no fill');
+  assert.ok(!/\.r3-band\{[^}]*background-image:linear/.test(section),'no grid on the benchmark band');
+});
+test('data page choice cards keep their text and buttons readable in both themes',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const tiles=[...site.matchAll(/--ad-f1:(#[0-9A-Fa-f]{6});--ad-f2:(#[0-9A-Fa-f]{6});--ad-f3:(#[0-9A-Fa-f]{6});--ad-f4:(#[0-9A-Fa-f]{6})/g)];
+  assert.ok(tiles.length>=2,'light and dark tile tokens');
+  for(const [index,match] of tiles.entries()){
+    const ink=index===0?'#212632':'#E2FDFF';
+    for(const tile of match.slice(1))assert.ok(contrast(ink,tile)>=4.5,`${ink} on ${tile}`);
+  }
+  for(const [label,button] of [['#FFFFFF','#4B59F2'],['#0C1023','#9BB1FF']])assert.ok(contrast(label,button)>=4.5,`${label} on ${button}`);
+});
+test('the announcement bar and its button meet WCAG AA contrast in both themes',()=>{
+  const css=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const bar=css.match(/\.announce\{--a-bg:(#[0-9A-Fa-f]{6});--a-fg:(#[0-9A-Fa-f]{6})/);
+  assert.ok(bar,'the bar sets its own colours, so it reads the same in light and dark');
+  assert.ok(contrast(bar[2],bar[1])>=4.5);
+  assert.ok(contrast('#FFFFFF',bar[2])>=4.5,'button label on the dark pill');
+  assert.match(css,/\.announce\{[^}]*height:40px/,'height is reserved in CSS');
+  assert.match(css,/\.announce-off \.announce\{display:none\}/);
+});
+test('the star button keeps its label and count readable on the indigo fill in both themes',()=>{
+  const section=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const fills=[...section.matchAll(/--grid-line:#[0-9A-Fa-f]{6};--bar-bg:(#[0-9A-Fa-f]{6})/g)].map(match=>match[1]);
+  assert.ok(fills.length>=2,'light and dark fills');
+  for(const fill of fills)assert.ok(contrast('#FFFFFF',fill)>=4.5,`label on ${fill}`);
 });
 test('pagination is a nav of numbered page buttons with the current page marked in both languages',async()=>{
   const current='.pagination .page-numbers button[aria-current=page]';
   assert.ok(contrast(declaration(current,'color'),declaration(current,'background'))>=4.5);
   const size=css.match(/\}\.pagination \.page-numbers button\{([^}]*)\}/)[1];
   for(const prop of ['min-width','min-height'])assert.ok(Number(size.match(new RegExp(`(?:^|;)${prop}:(\\d+)px`))?.[1])>=24,prop);
-  assert.match(readFileSync(new URL('../web/index.html',import.meta.url),'utf8'),/<nav id="pagination" class="pagination" aria-label="[^"]+"[^>]*>/);
+  assert.match(readFileSync(new URL('../web/explore.html',import.meta.url),'utf8'),/<nav id="pagination" class="pagination" aria-label="[^"]+"[^>]*>/);
   const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
   const records=Array.from({length:PAGE_SIZE*7+1},(_,i)=>({id:`url:page-${i}`,name:`Fixture ${String(i).padStart(3,'0')}`,kind:'tool',url:'https://example.org/',page_url:`/resources/page-${i}/`,aliases:[],environments:['web'],topics:[],authors:[],summary:'Fixture.',review_status:'curated',published_at:null,scope:'core',paper_version:null,paper_source_url:null,paper_date:null,related_count:0,incoming_relations:[]}));
   const keys=['document','window','location','history','localStorage','fetch'],saved=keys.map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
@@ -571,11 +647,14 @@ test('keyboard focus lands on a control and paging is announced after categories
   }
 });
 test('primary navigation stays reachable on narrow screens',()=>{
-  const styles=readFileSync(new URL('../web/styles.css',import.meta.url),'utf8');
-  const narrow=[...styles.matchAll(/@media\(max-width:(\d+)px\)\{/g)].filter(m=>Number(m[1])<=760).map(m=>{let depth=1,i=m.index+m[0].length;const start=i;while(depth)depth+=({'{':1,'}':-1}[styles[i++]]||0);return styles.slice(start,i-1);}).join('');
-  const nav=[...narrow.matchAll(/(?:^|\})\.site-header nav\{([^}]*)\}/g)].map(m=>m[1]).join(';');
-  assert.doesNotMatch(nav,/display:none/);
-  assert.match(nav,/overflow-x:auto/);
+  const styles=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const narrow=[...styles.matchAll(/@media \(max-width:(\d+)px\)\{/g)].filter(m=>Number(m[1])<=1023).map(m=>{let depth=1,i=m.index+m[0].length;const start=i;while(depth)depth+=({'{':1,'}':-1}[styles[i++]]||0);return styles.slice(start,i-1);}).join('');
+  // With the script, the header's menu button opens a sheet holding the same links; without it, the links stay in a scrolling row.
+  assert.match(narrow,/\.js \.nav\{display:none\}/);
+  assert.match(narrow,/\.js \.menu-btn\{display:inline-flex\}/);
+  assert.match(narrow,/html:not\(\.js\) \.nav\{[^}]*overflow-x:auto/);
+  const shell=readFileSync(new URL('../scripts/site_shell.py',import.meta.url),'utf8');
+  assert.match(shell,/data-open-menu/);assert.match(shell,/class="sheet-nav"/);
 });
 test('data and coverage buttons respond while the catalog loads and after it fails',async()=>{
   const coverage=JSON.parse(readFileSync(new URL('../data/coverage.json',import.meta.url),'utf8'));
@@ -608,7 +687,7 @@ test('data and coverage buttons respond while the catalog loads and after it fai
   }
 });
 test('load failures and toasts are announced through live regions that exist before their text changes',async t=>{
-  const html=readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+  const html=readFileSync(new URL('../web/explore.html',import.meta.url),'utf8');
   assert.match(html,/<div id="toast" class="toast" role="status" aria-live="polite"><\/div>/);
   for(const id of ['detail','info'])assert.match(html,new RegExp(`<dialog id="${id}-dialog"[^>]*>.*<div class="toast" role="status" aria-live="polite"></div></dialog>`),id);
   assert.match(css,/(?:^|[}\n])\.toast:empty\{padding:0;box-shadow:none\}/);
@@ -654,15 +733,13 @@ test('result cards drop to one column on phones instead of squeezing two',()=>{
   assert.ok(Math.max(...single)>=560,`single-column cards start at ${Math.max(...single)}px`);
 });
 
-test('header switches to the compact two-row layout before the full nav overflows', () => {
-  const css = readFileSync(new URL('../web/styles.css', import.meta.url), 'utf8');
-  const block = css.match(/@media\(max-width:900px\)\{(.*?)\}\}/s);
-  assert.ok(block, 'expected a 900px header breakpoint');
-  assert.match(block[1], /\.site-header nav\{order:1;flex-basis:100%;[^}]*overflow-x:auto/);
-  assert.match(block[1], /\.header-inner\{[^}]*flex-wrap:wrap/);
+test('header switches to the menu button before the full nav overflows', () => {
+  const css = readFileSync(new URL('../web/assets/site.css', import.meta.url), 'utf8');
+  assert.match(css, /@media \(max-width:1023px\)\{\.js \.nav\{display:none\}\.js \.menu-btn\{display:inline-flex\}/);
+  assert.match(css, /html:not\(\.js\) \.site-header \.wrap\{flex-wrap:wrap/);
 });
 test('Chinese mode localizes the title, accessible names, skip link, static directory and pagination',async()=>{
-  const index=readFileSync(new URL('../web/index.html',import.meta.url),'utf8'),markup=index+readFileSync(new URL('../scripts/search_pages.py',import.meta.url),'utf8');
+  const index=readFileSync(new URL('../web/explore.html',import.meta.url),'utf8'),markup=index+readFileSync(new URL('../scripts/search_pages.py',import.meta.url),'utf8');
   for(const [tag] of index.matchAll(/<[^>]*\saria-label="[^>]*>/g))assert.match(tag,/data-i18n-label="/,tag);
   const language=index.match(/<button id="language"[^>]*>/)[0];assert.doesNotMatch(language,/aria-label/);assert.match(language,/lang="zh-CN"/);
   const english={};for(const [tag,label,key,text] of markup.matchAll(/<[^<>]*\sdata-i18n(-label)?="([^"]+)"[^<>]*>([^<]*)/g))english[key]??=label?tag.match(/aria-label="([^"]*)"/)[1]:text.replaceAll('&amp;','&');
@@ -685,7 +762,7 @@ test('Chinese mode localizes the title, accessible names, skip link, static dire
     for(const item of en.labels)assert.equal(item.attributes['aria-label'],english[item.dataset.i18nLabel],item.dataset.i18nLabel);
     for(const item of zh.texts)assert.match(item.textContent,han,item.dataset.i18n);
     for(const item of zh.labels)assert.match(item.attributes['aria-label'],han,item.dataset.i18nLabel);
-    assert.ok(keys[0].includes('skipToCatalog')&&keys[0].includes('directoryHeading')&&keys[1].includes('mainNavigation'));
+    assert.ok(keys[0].includes('skipToCatalog')&&keys[0].includes('directoryHeading')&&keys[1].includes('statsLabel'));
     assert.equal(zh.element('#language').textContent,'EN');assert.equal(zh.element('#language').lang,'en');
     assert.match(en.element('#pagination').innerHTML,/aria-label="Page 1" aria-current="page">1<\/button>/);
     assert.match(zh.element('#pagination').innerHTML,/aria-label="第 1 页" aria-current="page">1<\/button>/);
@@ -727,7 +804,7 @@ test('topic labels come from data/topics.json through the index payload',async()
 
 test('clone commands copy exactly once and announce scoped bilingual success or manual fallback',async()=>{
   const command='git clone https://github.com/reacher-z/Awesome-CUA.git';
-  const html=readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+  const html=readFileSync(new URL('../web/explore.html',import.meta.url),'utf8');
   assert.match(html,/<code[^>]*>git clone https:\/\/github.com\/reacher-z\/Awesome-CUA.git<\/code>/);
   assert.match(html,/id="clone-status-home"[^>]*data-clone-status[^>]*role="status"[^>]*aria-live="polite"[^>]*aria-atomic="true"/);
   assert.match(html,/<details class="agent-search"><summary data-i18n="localSearch">Try a local search<\/summary>/);

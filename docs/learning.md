@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Methodology](methodology.md) · [Machine-readable catalog](../data/catalog.jsonl)
 
-Curated metadata, not a performance ranking. Each entry links its first-party evidence. Unknown facts are shown as —.
+Curated metadata. Each entry links its first-party evidence. Unknown facts are shown as —.
 
 Courses, tutorials, and guides are separate from their parent software projects. *License* keeps document and code terms separate. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 

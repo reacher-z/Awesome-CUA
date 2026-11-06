@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://awesomecua.github.io/schemas/download-manifest.schema.json",
+  "$id": "https://awesomecua.com/schemas/download-manifest.schema.json",
   "title": "AwesomeCUA download artifact manifest",
   "type": "object",
   "required": ["schema_version", "catalog_sha256", "source_repository", "source_catalog", "publication_build_info", "count_policy", "fingerprint_policy", "artifacts"],

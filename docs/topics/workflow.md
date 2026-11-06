@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-171 source-reviewed resources tagged `workflow`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+171 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (10)](#frameworks) · [Products (7)](#products) · [Surveys (1)](#surveys) · [Papers (136)](#papers)
 

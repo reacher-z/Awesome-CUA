@@ -639,8 +639,8 @@ def directory_strip(zh=False, note="") -> str:
         for label, links in (DIRECTORY_ZH if zh else DIRECTORY))
     if zh:
         lead = ("Computer-Use Agent 研究与资源", note)
-        foot = ('<div class="dir-qa"><div><h3>如何理解“已核验”？</h3><p>已审阅条目经过一手来源编辑检查。论文元数据仅核实标题、作者和日期，不代表研究结论或实验已复现。代码、数据、权重与文档许可分别记录，未知信息保留为空。</p></div>'
-                '<div><h3>是否已经全球最全？</h3><p>全面覆盖是目标，目前没有足够证据证明已达到全球最全。请查看<a href="/coverage/">覆盖台账</a>和<a href="/about/">编辑方法</a>了解边界与缺口。</p></div></div>')
+        foot = ('<div class="dir-qa"><div><h3>如何理解“已核验”？</h3><p>已审阅条目经过一手来源编辑检查。论文元数据核实标题、作者和日期。代码、数据、权重与文档许可分别记录，未知信息保留为空。</p></div>'
+                '<div><h3>覆盖范围如何？</h3><p>请查看<a href="/coverage/">覆盖台账</a>和<a href="/about/">编辑方法</a>了解来源与待审队列。</p></div></div>')
     else:
         lead = ("Computer-use agent research and resources",
                 "Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.")

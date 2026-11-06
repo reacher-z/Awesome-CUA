@@ -13,8 +13,8 @@
     "dataset_snapshots": 1,
     "fresh_arxiv_bibliography_additions": 14
   },
-  "body_word_count": 11556,
-  "estimated_reading_minutes": 54,
+  "body_word_count": 11232,
+  "estimated_reading_minutes": 52,
   "citation_occurrences": 104,
   "tables": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "inventory-table",
       "number": 2,
-      "caption": "Populations used in this review. Counts refer to the frozen release or the explicitly bounded supplementary search; the rows overlap and should not be added."
+      "caption": "Populations used in this review. Counts refer to the frozen release or the explicitly bounded supplementary search; the rows overlap."
     },
     {
       "id": "methods-design-table",
@@ -35,12 +35,12 @@
     {
       "id": "evaluation-benchmarks",
       "number": 4,
-      "caption": "Representative evaluation contracts. Versions identify the inspected paper editions, except where a software release is explicitly named. Counts use the stated unit and are not additive across overlapping or derived benchmarks. Interfaces listed are supported options, not a claim that every evaluated agent used all of them."
+      "caption": "Representative evaluation contracts. Versions identify the inspected paper editions, except where a software release is explicitly named. Counts use the stated unit, and benchmarks can overlap or derive from one another. Interfaces listed are supported options."
     },
     {
       "id": "evaluation-datasets",
       "number": 5,
-      "caption": "Selected data populations and their measurement boundaries. Sizes are reported in the inspected papers, not independently counted downloads. A paper’s collection, its public release and the complete training mixture need not contain the same records."
+      "caption": "Selected data populations and their measurement boundaries. Sizes are as reported in the inspected papers. A paper’s collection, its public release and the complete training mixture need not contain the same records."
     },
     {
       "id": "human-case-table",
@@ -76,13 +76,13 @@
     "raw_source_documents_redistributed": false
   },
   "input_sha256": {
-    "research/survey/sections/context.html": "52c872bbabd4af68f7f3b7608034e69bb31b47cb6878183591e2dc81e8330695",
-    "research/survey/sections/review-design.html": "449f0878f6750fe1eceeeaf76436c658d30eeedcb706c5f649c753661a66ae5d",
+    "research/survey/sections/context.html": "cfdb5c357cfb6a427fc197aa0b7797f72ab40d515deac07c4885aaaa6482e68c",
+    "research/survey/sections/review-design.html": "e9175c1dd5d7d4a3c73d5eb2e53ba00b9d4c97789c05bcf934a9e84bd06bdab5",
     "research/survey/sections/methods.html": "37a0aa207a16c5acabccf4401eb7e34b47898b58370ad103c7ba855c85aff569",
-    "research/survey/sections/evaluation.html": "d03272b79c305a75cc786bd914255e9d75a35a6a8dc79caf81e0162740c208c6",
+    "research/survey/sections/evaluation.html": "34bd325cd757d1360184a72e75f52dfd53c580a75f034adb66e67cfd7436ee9e",
     "research/survey/sections/human-agency.html": "2f83e37e57ce924abf168d98e38a7b4dd9db6940fde487d3b738d48dd59be31f",
-    "research/survey/sections/assets.html": "11fb06f3f79cd56c261532beb282199293efe4767e18920eb802f71218f4fae5",
-    "research/survey/sections/agenda.html": "86ecec3fa6c42c5331ddb539e03dabfe5ba448a6f308b57885f2a2ff0e3bf941",
+    "research/survey/sections/assets.html": "e65d601af3e7bfeed11ac0a56f1d5ac82f4c79c05178525694ee8465548affc2",
+    "research/survey/sections/agenda.html": "3ef6ebc90a28738af7973cbb7329cbc458336fe762ece360ec107852dc616827",
     "research/survey/evidence/context.json": "2e3210a9a6860448d8e5a2239761484bb46bc9c039becb2e0bef9d961f752888",
     "research/survey/evidence/methods.json": "10f295758e2ae7c955a8f643279b44e233209c80fe2a7cc16128ccf6b918f562",
     "research/survey/evidence/evaluation.json": "f1d188d7ab2b9f41c7c764266cd8c04c3b7c0319d24cf76228deb00f7cb0e74c",
@@ -91,7 +91,7 @@
     "research/survey/evidence/title-search.json": "970ca63afcaee31cba70d28716a26364bf04e0cfaf6e306fe8cf3307a580e662",
     "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
     "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
-    "research/survey/scripts/build_article.py": "b3272538d234f99c21934710b7ae9187cf7e9266d2141f982549cad83f3bac14",
+    "research/survey/scripts/build_article.py": "8a78c61ec2f90b9d44f6de81f0784eb4a60e8cbd876ff205bb88f74308ae1b4c",
     "research/survey/article.css": "f70cedca3e5b0c3b48123cd280afdf7d30cc83aa4cebb6363db6ab4066f89d54",
     "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
     "research/survey/template.html": "2ec9894c74639a0e4f5a09fc67ef513b2b9e523d69a8ca85e3dc51a4c6f6b3eb",
@@ -103,8 +103,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 958,
-      "sha256": "4d542bb69215ba4455f696e0ed4be359c283afa5715e551af48d9929e68f0ee9"
+      "bytes": 877,
+      "sha256": "dd6489ad03b35aff8447956a299de60f977a60386e7a726aa3d7456f541159e2"
     },
     {
       "path": "evidence/context.json",
@@ -133,8 +133,8 @@
     },
     {
       "path": "evidence/reading-index.json",
-      "bytes": 97601,
-      "sha256": "cfe6ae481133d2cf84a3ddc87ec98063510b30cdf925986f6636a67327f3e458"
+      "bytes": 97533,
+      "sha256": "431bd5ce510e3a90801afd9f0d3bea1a65327a5b0c01091a1d01870162836e4e"
     },
     {
       "path": "evidence/root.json",
@@ -153,13 +153,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 463722,
-      "sha256": "e089dad624432c927a636561ab84c58c5f77d4e966256516cd933b1e4457a672"
+      "bytes": 461181,
+      "sha256": "8a5eb2c1beb96561fe6d0a01cf190d699baa6318b6a91af0c161bcff530c14d7"
     },
     {
       "path": "references.bib",
-      "bytes": 100850,
-      "sha256": "b3bd089f496764f0d30b736562aabe9bb762bcf014e01c617e1e3266c0760000"
+      "bytes": 100789,
+      "sha256": "0c1613317d24c1f78005b62de75b4addc0eaa2a8243d38a7b5d973ee26af8b42"
     },
     {
       "path": "references.json",

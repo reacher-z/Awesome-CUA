@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-442 source-reviewed resources tagged `web-navigation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+442 source-reviewed resources tagged `web-navigation`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (8)](#datasets) · [Models (11)](#models) · [Agents (11)](#agents) · [Frameworks (26)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (3)](#infrastructure) · [Products (8)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (342)](#papers)
 

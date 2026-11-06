@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-106 source-reviewed resources tagged `imitation-learning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+106 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (11)](#frameworks) · [Papers (74)](#papers)
 

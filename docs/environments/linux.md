@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-57 source-reviewed resources tagged `linux`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+57 source-reviewed resources tagged `linux`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (7)](#datasets) · [Models (6)](#models) · [Agents (2)](#agents) · [Frameworks (6)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (24)](#papers)
 

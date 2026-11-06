@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-88 source-reviewed resources tagged `sandbox`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+88 source-reviewed resources tagged `sandbox`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (3)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Infrastructure (8)](#infrastructure) · [Products (5)](#products) · [Papers (68)](#papers)
 

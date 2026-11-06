@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-94 source-reviewed resources tagged `interaction-history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+94 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 

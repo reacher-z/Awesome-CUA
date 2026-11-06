@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-195 source-reviewed resources tagged `tool-integration`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+195 source-reviewed resources tagged `tool-integration`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (7)](#agents) · [Frameworks (13)](#frameworks) · [Tools (17)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (3)](#surveys) · [Papers (138)](#papers)
 

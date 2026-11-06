@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-50 source-reviewed resources tagged `training-free`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+50 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (48)](#papers)
 

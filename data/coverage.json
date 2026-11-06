@@ -9700,10 +9700,7 @@
     ]
   },
   "limits": [
-    "Counts are resources, not distinct projects, companies, or independent discoveries.",
-    "Metadata verification does not establish relevance, quality, reproducibility, availability, or endorsement.",
-    "Source indexing measures only fetched source snapshots; incidental/out-of-scope links remain in discovery.",
-    "Global completeness has no observed denominator and is not claimed.",
-    "Environment facets overlap. Unknown license, size, price, or performance fields are not inferred."
+    "Source indexing measures fetched source snapshots; incidental/out-of-scope links remain in discovery.",
+    "Unknown license, size, price, or performance fields stay null."
   ]
 }

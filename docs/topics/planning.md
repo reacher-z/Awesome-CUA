@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-365 source-reviewed resources tagged `planning`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+365 source-reviewed resources tagged `planning`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Datasets (4)](#datasets) · [Models (27)](#models) · [Agents (17)](#agents) · [Frameworks (15)](#frameworks) · [Learning resources (1)](#learning-resources) · [Surveys (6)](#surveys) · [Papers (295)](#papers)
 

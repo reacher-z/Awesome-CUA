@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-25 source-reviewed resources tagged `science`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+25 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (22)](#papers)
 

@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `memory`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+231 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (9)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
 

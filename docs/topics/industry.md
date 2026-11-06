@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-39 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+39 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Publishers (16)](#publishers) · [Papers (23)](#papers)
 

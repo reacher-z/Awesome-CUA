@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-4 source-reviewed resources tagged `history`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+4 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
 

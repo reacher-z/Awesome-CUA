@@ -478,11 +478,8 @@ def coverage(rows, pending, scope_decisions):
         "sources": source_rows, "primary_search": read_json(DATA / "arxiv-search.json", {}),
         "paper_discovery": read_json(DATA / 'paper-discovery-status.json', {}),
         "paper_query_registry": read_json(DATA / 'paper-discovery-queries.json', {}),
-        "limits": ["Counts are resources, not distinct projects, companies, or independent discoveries.",
-            "Metadata verification does not establish relevance, quality, reproducibility, availability, or endorsement.",
-            "Source indexing measures only fetched source snapshots; incidental/out-of-scope links remain in discovery.",
-            "Global completeness has no observed denominator and is not claimed.",
-            "Environment facets overlap. Unknown license, size, price, or performance fields are not inferred."]}
+        "limits": ["Source indexing measures fetched source snapshots; incidental/out-of-scope links remain in discovery.",
+            "Unknown license, size, price, or performance fields stay null."]}
 
 
 def md(value):
@@ -610,7 +607,7 @@ def topic_pages(rows):
     order = sorted(tagged, key=lambda t: (-len(tagged[t]), t))
     files = {}
     index = ["# Reviewed research by topic", "", "[Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)", "",
-        f"{sum(r['review_status'] == 'curated' for r in rows):,} source-reviewed resources across {len(order)} topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.", "",
+        f"{sum(r['review_status'] == 'curated' for r in rows):,} source-reviewed resources across {len(order)} topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.", "",
         "| Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for topic in order:
         group = tagged[topic]
@@ -621,7 +618,7 @@ def topic_pages(rows):
         cell = lambda n: f"{n:,}" if n else "·"
         index.append(f"| [{topic_label(topic)}](topics/{topic}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['learning'])} | {cell(len(papers))} | {newest} |")
         lines = [f"# {topic_label(topic)}", "", f"[Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)", "",
-            f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
+            f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata; unknown facts are shown as —.", "",
             "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower().replace(' ', '-')})" for kind, label in TOPIC_KINDS if kinds[kind]), ""]
         for kind, label in TOPIC_KINDS:
             members = [r for r in group if r["kind"] == kind]
@@ -658,7 +655,7 @@ def environment_pages(rows):
         systems = sum(kinds[k] for k in ("agent", "framework", "tool", "infrastructure", "product", "company"))
         index.append(f"| [{label}](environments/{env}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['learning'])} | {cell(kinds['paper'] + kinds['survey'])} |")
         lines = [f"# {label}", "", "[Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)", "",
-            f"{len(group):,} source-reviewed resources tagged `{env}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
+            f"{len(group):,} source-reviewed resources tagged `{env}`. Curated metadata; unknown facts are shown as —.", "",
             "**Contents:** " + " · ".join(f"[{name} ({kinds[kind]})](#{name.lower().replace(' ', '-')})" for kind, name in TOPIC_KINDS if kinds[kind]), ""]
         for kind, name in TOPIC_KINDS:
             members = sorted((r for r in group if r["kind"] == kind), key=lambda r: r["name"].casefold())
@@ -708,7 +705,7 @@ def documents(rows, report):
             sections[environment_family(r)].append(r)
         present = [(slug, label) for slug, label, _ in ENVIRONMENT_FAMILIES if sections[slug]]
         lines = [f"# {title}", "", "[Home](../README.md) · [Methodology](methodology.md) · [Machine-readable catalog](../data/catalog.jsonl)", "",
-            "Curated metadata, not a performance ranking. Each entry links its first-party evidence. Unknown facts are shown as —.", "", legend, "",
+            "Curated metadata. Each entry links its first-party evidence. Unknown facts are shown as —.", "", legend, "",
             f"**{len(group)} resources:** " + " · ".join(f"[{label} ({len(sections[slug])})](#{slug})" for slug, label in present), "",
             "Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.", ""]
         for slug, label in present:
@@ -721,8 +718,8 @@ def documents(rows, report):
         filename = KIND_DOCUMENTS.get(kind, kind + "s")
         files[f"docs/{filename}.md"] = "\n".join(lines)
     paper_lines = ["# Research bibliography", "", "[Home](../README.md) · [Reviewed research by topic](topics.md) · [Curated surveys](surveys.md) · [Query examples](query-guide.md)", "",
-        "Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.",
-        "Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.", ""]
+        "Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.",
+        "Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.", ""]
     years = collections.defaultdict(list)
     for r in rows:
         if r['kind'] in {'paper','survey'}:
@@ -746,14 +743,14 @@ def documents(rows, report):
     files.update(hubs)
     lines = ["# Coverage and quality ledger", "", f"Evidence snapshot through **{report['as_of_utc']}**. Generated from committed source receipts.", "",
         f"- {report['curated_records']:,} curated resources. Another {report['metadata_only_records']:,} records await review with bibliographic metadata only; the active catalog file holds {report['total_records']:,} records in all.",
-        f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities. This count overlaps the status counts above.",
+        f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities.",
         f"- {report['arxiv_archive_records']:,} retained arXiv metadata records; {report['excluded_records']:,} explicit scope exclusions are outside the active catalog.",
         f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved after accounting for scope exclusions and for {report.get('non_resource_candidates',0):,} reviewed non-resource links and {report.get('alias_candidates',0):,} other addresses of indexed resources, which stay in the review queue with their reasons.",
         f"- {len(report['pending_editorial'])} editorial proposals await verification or review.", "",
         "These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.", "",
         "## Curated coverage by kind and environment", "", "Counts of source-reviewed resources. A resource tagged with several environments counts in each column; `·` marks an empty cell, which is where contributions are most needed.", "",
         *matrix_lines(report["curated_by_kind_and_environment"]), "",
-        "## Source snapshot coverage", "", "The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources. Sources overlap. These figures do not measure global completeness or editorial recall.", "",
+        "## Source snapshot coverage", "", "The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources.", "",
         "| Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for s in report["sources"]:
         status = s["snapshot"] or {}
@@ -764,26 +761,23 @@ def documents(rows, report):
     if discovery:
         lines += ['', '## Paper-discovery query coverage', '',
             f"Latest pass: {discovery.get('finished_at') or 'in progress'}; **{discovery.get('successful_query_count',0)}/{discovery.get('configured_query_count',0)}** query windows succeeded. {discovery.get('unique_identifiers',0):,} distinct identifiers; {discovery.get('new_candidate_count',0):,} new to the candidate queue.", '',
-            'These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.', '',
+            'These are ranked search windows. New identifiers go through primary metadata verification and relevance review.', '',
             '| Area | Query | Returned / limit | State |', '| --- | --- | ---: | --- |']
         for item in discovery.get('queries', []):
             lines.append(f"| {md(item['area'])} | {md(item['query'])} | {item['returned_count']} / {item['limit']} | {md(item['state'])} |")
-    lines += ["", "## Primary arXiv discovery", "", f"The recorded title query returned {search.get('unique_returned', 0):,} unique records out of {search.get('reported_total', 0):,} reported matches. Pagination complete: **{search.get('complete', False)}**. This query population overlaps the lists and is not the whole field.", "", "```text", search.get("query", ""), "```", "",
+    lines += ["", "## Primary arXiv discovery", "", f"The recorded title query returned {search.get('unique_returned', 0):,} unique records out of {search.get('reported_total', 0):,} reported matches. Pagination complete: **{search.get('complete', False)}**.", "", "```text", search.get("query", ""), "```", "",
         "## License evidence", "", "| Scope | Recorded declarations |", "| --- | ---: |"]
     lines += [f"| {slot} | {n} |" for slot, n in report["license_declarations_by_scope"].items()]
-    lines += ["", "A code license never fills a data or weights field. Hub declarations are publisher metadata, not independently audited legal conclusions. Missing values remain null.", "",
+    lines += ["", "Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.", "",
         "## Pending editorial proposals", "", pending_breakdown(report["pending_editorial"]), "", "| Resource | Reason |", "| --- | --- |"]
     for p in report["pending_editorial"]:
         lines.append(f"| [{md(p['name'])}]({p['url']}) | {md(p['reason'])} |")
     linked = report.get("uncurated_linked_papers", [])
     lines += ["", "## Uncurated papers behind curated resources", "", "Papers that a curated resource names as its `introduced_by` or `documented_by` paper but that have no editorial relevance review yet. Review them before other metadata-only papers.", ""]
     lines += ["| Paper | Linked from |", "| --- | --- |", *(f"| [{md(p['name'])}]({p['url']}) | " + ", ".join(f"[{md(by_id[s]['name'])}]({by_id[s]['url']})" for s in p["linked_from"]) + " |" for p in linked)] if linked else ["None: every paper linked from a curated resource is curated."]
-    lines += ["", "## Scope exclusions", "", f"{report['excluded_records']} records have an applied scope decision; {report['exclusion_revalidation_pending']} require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.", "", "## Known gaps", "",
+    lines += ["", "## Scope exclusions", "", f"{report['excluded_records']} records have an applied scope decision; {report['exclusion_revalidation_pending']} require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. Original bibliographic metadata is retained, and previous resource URLs explain the decision.", "", "## Known gaps", "",
         "- Most bibliography records still require relevance review and detailed taxonomy.",
-        "- Closed/private datasets, unpublished systems, regional products, and work absent from arXiv/lists are not exhaustively represented.",
         "- Asset sizes, model weights licenses, runtime requirements, and benchmark protocols need additional field-level curation.",
-        "- Publisher entries cover selected brands; corporate ownership, funding, usage, revenue, and product pricing are not researched here.",
-        "- Download links and available code do not establish that an asset is reproducible or still works.",
         "- Name changes, repository transfers, and related resource families need continuing entity resolution.", "",
         "See [methodology](methodology.md) for the inclusion boundary and [the review queue](../data/review-queue.jsonl) for actionable gaps.", ""]
     files["docs/coverage.md"] = "\n".join(lines)
@@ -834,9 +828,9 @@ README_TEXT = {
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
         "stats": ("**{curated:,} curated resources** · **{papers:,} reviewed papers and surveys** · **{sources} discovery documents**\n\n"
-            "Evidence through `{as_of}`. Only curated resources are counted above. Listed separately: **{metadata:,} records awaiting review** have bibliographic verification only, "
-            "and **{unindexed:,} discovered candidates** remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
-            "{excluded:,} scope exclusions retain their original metadata in the archive. Counts overlap as explained below.")},
+            "Evidence through `{as_of}`. **{metadata:,} records awaiting review** have verified bibliographic metadata, "
+            "and **{unindexed:,} discovered candidates** await resolution. "
+            "{excluded:,} scope exclusions retain their original metadata in the archive.")},
     "zh": {"explore_header": ("浏览", "内容", "条目"), "blurbs": {'topics': '按主题整理的已审阅论文', 'bibliography': '全部论文与综述记录，含待审阅记录', 'survey': '电脑操作智能体研究综述', 'learning': '课程与教程', 'dataset': 'GUI 智能体的训练与评测数据', 'benchmark': '评测环境与任务集', 'model': '模型权重版本与模型系列', 'agent': '可操作电脑的公开实现', 'framework': '用于构建和评测智能体的代码', 'infrastructure': '沙箱、虚拟机、设备集群与运行环境', 'tool': '评测工具、录制工具及其他实用工具', 'product': '厂商和项目提供的电脑操作产品', 'company': '与已收录资源相关的发布方和品牌'},
         "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "learning": "学习资源", "dataset": "数据集", "benchmark": "基准",
             "model": "模型与权重版本", "agent": "智能体", "framework": "框架", "infrastructure": "基础设施", "tool": "工具",
@@ -849,9 +843,9 @@ README_TEXT = {
             "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
         "stats": ("**{curated:,} 条已审阅资源** · **{papers:,} 篇已审阅论文与综述** · **{sources} 个发现来源文档**\n\n"
-            "证据截至 `{as_of}`。以上只统计已审阅资源。单独列出：**{metadata:,} 条待审阅记录**仅完成书目核实；"
-            "**{unindexed:,} 个已发现候选**尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
-            "{excluded:,} 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。")},
+            "证据截至 `{as_of}`。**{metadata:,} 条待审阅记录**已完成书目核实；"
+            "**{unindexed:,} 个已发现候选**尚待处理。"
+            "{excluded:,} 条范围排除记录在归档中保留原始元数据。")},
 }
 
 

@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `state-tracking`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+78 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Frameworks (3)](#frameworks) · [Papers (75)](#papers)
 

@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-273 source-reviewed resources tagged `screen-understanding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+273 source-reviewed resources tagged `screen-understanding`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (19)](#datasets) · [Models (10)](#models) · [Agents (4)](#agents) · [Frameworks (1)](#frameworks) · [Tools (9)](#tools) · [Learning resources (1)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (222)](#papers)
 

@@ -165,7 +165,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
         ('Edition, date and identity policies with exact counts and fingerprints.', '引用版次、日期和身份规则，以及精确数量与指纹。'), 'JSON', 'application/json', len(citations['exports']), 'exports', 'provenance')
 
     add('topics', '/downloads/topics.json', 'research', ('Topic subsets', '主题子集'),
-        ('Exact member IDs and JSONL/citation downloads for every reviewed topic. Memberships overlap.', '每个已审阅主题的精确成员 ID 与 JSONL、引用下载。主题成员可以交叉。'),
+        ('Exact member IDs and JSONL/citation downloads for every reviewed topic.', '每个已审阅主题的精确成员 ID 与 JSONL、引用下载。'),
         'JSON', 'application/json', len(topics['topics']), 'topics', 'reviewed')
     for slug, labels in [('benchmarks', ('Benchmark protocols', '基准协议')), ('datasets', ('Dataset profiles', '数据集规格'))]:
         profile = read_json('/downloads/' + slug + '-profiles.json')
@@ -235,7 +235,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
     manifest = {'schema_version': 1, 'catalog_sha256': source_sha,
                 'source_repository': 'https://github.com/reacher-z/Awesome-CUA', 'source_catalog': '/downloads/catalog.jsonl',
                 'publication_build_info': '/data/build-info.json',
-                'count_policy': 'Each count retains its own unit and scope. Artifact populations overlap and must not be added together.',
+                'count_policy': 'Each count retains its own unit and scope.',
                 'fingerprint_policy': 'SHA-256 and byte size refer to the exact uncompressed file bytes. The manifest does not hash itself.',
                 'artifacts': artifacts}
     (destination / 'downloads/manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-858 source-reviewed resources tagged `web`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+858 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (45)](#benchmarks) · [Datasets (25)](#datasets) · [Models (28)](#models) · [Agents (14)](#agents) · [Frameworks (47)](#frameworks) · [Tools (19)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (18)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (647)](#papers)
 

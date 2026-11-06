@@ -11,8 +11,7 @@ from site_data import PAPER_KINDS
 
 # llms-full.txt and the catalog Markdown list non-paper kinds first; papers are the largest group.
 FULL_ORDER = ('model', 'dataset', 'benchmark', 'agent', 'framework', 'infrastructure', 'tool', 'product', 'company', 'learning', 'survey', 'paper')
-NOTICE = ('Reviews are AI-assisted inspections of primary sources. Counts are resources, '
-          'not independent projects. Code, data, weights and document licenses are recorded separately; unknown values stay unknown.')
+NOTICE = ('Reviews are AI-assisted inspections of primary sources. Code, data, weights and document licenses are recorded separately.')
 
 
 def inline(text):
@@ -135,7 +134,7 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
              f'> Source-backed catalog of computer-use, GUI, browser and mobile agents: {curated["total"]:,} curated resources ({curated["papers_and_surveys"]:,} papers and surveys, '
              f'{curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source with evidence, '
              f'review dates and separate license declarations. {waiting["metadata_only_records"]:,} metadata-only bibliography records await relevance review and are labeled separately.', '',
-             'Counts are resources, not independent projects. Code, data, weights and document licenses are separate. '
+             'Code, data, weights and document licenses are separate. '
              'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`.', '',
              '## Catalog by kind', '']
     lines += [f'- {link(label, site + md_path)}: {plural(count, "curated record")}' + (f'; {note}' if note else '') for label, count, md_path, note in kinds]
@@ -164,6 +163,6 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
               f'- {link("Verified former repository names", site + "/downloads/repository-aliases.json")} and {link("their schema", site + "/schemas/repository-alias.schema.json")}: use the canonical returned ID for retrieval upserts; aliases add no resources',
               f'- {link("Bilingual data hub", site + "/data/")}, {link("中文数据中心", site + "/zh/data/")} and {link("download manifest", site + "/downloads/manifest.json")} ({link("schema", site + "/schemas/download-manifest.schema.json")}): file paths, byte sizes, SHA-256 fingerprints, counts and units; compare catalog_sha256 across manifests before combining artifacts',
               f'- {link("Tagged data releases", releases_url)}: complete data bundles; verify SHA256SUMS and retain release-manifest.json, source_commit and catalog_sha256',
-              f'- {link("Hugging Face dataset mirror", "https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA")}: read-only Parquet and JSONL mirror of these downloads, one config per record type, refreshed every 2 hours. metadata_only and github_candidates are not curated.']
+              f'- {link("Hugging Face dataset mirror", "https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA")}: read-only Parquet and JSONL mirror of these downloads, one config per record type. metadata_only and github_candidates are unreviewed.']
     lines += [f'- {link(label, url)}' + (f': {note}' if note else '') for label, url, note in survey_links]
     return '\n'.join(lines) + '\n'

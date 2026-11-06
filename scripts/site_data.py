@@ -15,8 +15,8 @@ from catalog import editorial_identity
 PAPER_KINDS = frozenset({'paper', 'survey'})
 # Display order shared by counts, feeds and listings.
 KIND_ORDER = ('paper', 'survey', 'learning', 'model', 'dataset', 'benchmark', 'agent', 'framework', 'infrastructure', 'tool', 'product', 'company')
-COUNT_NOTE = ('Headline counts use curated, source-reviewed records only. Metadata-only bibliography records and discovered '
-              'candidates await relevance review and are reported separately; these populations overlap and must not be added together.')
+COUNT_NOTE = ('Headline counts use curated, source-reviewed records. Metadata-only bibliography records and discovered '
+              'candidates await relevance review.')
 
 
 def eligible(record):

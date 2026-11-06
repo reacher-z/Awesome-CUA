@@ -67147,7 +67147,7 @@
       "notes",
       "details"
     ],
-    "notes": "Read at commit 78f5558e. The README and docs/tasks.md were reviewed; the 70 tasks and 46,916 hidden cases were checked by summing the docs/tasks.md table. The README's paper badge has no link and the project page says the paper is coming soon, so no paper relation is recorded. Apache-2.0 is the README's statement for benchmark code, task definitions and verifier. Leaderboard scores were not checked. Nothing was installed or run.",
+    "notes": "Read at commit 78f5558e. The README and docs/tasks.md were reviewed; the 70 tasks and 46,916 hidden cases were checked by summing the docs/tasks.md table. The README's paper badge has no link, so no paper relation is recorded. Apache-2.0 is the README's statement for benchmark code, task definitions and verifier. Leaderboard scores were not checked. Nothing was installed or run.",
     "details": {
       "repository_revision": "78f5558e8197bb91b3bab63428c12b92060ddc6f",
       "repository_tree_sha": "a72e8de335c8f531b655eee7d4f9709dec40b366",

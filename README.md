@@ -12,7 +12,7 @@ If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Aw
 [![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C170-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2016%3A36%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
-**Global completeness is a goal, not a verified claim.** Curated entries were reviewed against a first-party source snapshot; records awaiting review have only their bibliographic identity checked; candidates are discovered identifiers outside the published catalog. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
+Curated entries were reviewed against a first-party source snapshot; records awaiting review have their bibliographic identity checked; candidates are discovered identifiers awaiting resolution. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
 
 ## Featured benchmarks
 
@@ -54,7 +54,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **2,170 curated resources** · **1,673 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-06T16:36:39Z`. Only curated resources are counted above. Listed separately: **448 records awaiting review** have bibliographic verification only, and **2,025 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-11-06T16:36:39Z`. **448 records awaiting review** have verified bibliographic metadata, and **2,025 discovered candidates** await resolution. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -80,7 +80,7 @@ Evidence through `2026-11-06T16:36:39Z`. Only curated resources are counted abov
 **By platform:** [Web](docs/environments/web.md) **858** · [Desktop](docs/environments/desktop.md) **364** · [Windows](docs/environments/windows.md) **68** · [macOS](docs/environments/macos.md) **36** · [Linux](docs/environments/linux.md) **57** · [Android](docs/environments/android.md) **350** · [iOS](docs/environments/ios.md) **26** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **206**
 <!-- EXPLORE:END -->
 
-Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
+Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation.
 
 ## Use the data
 
@@ -92,7 +92,7 @@ Download the catalog, feeds and RAG documents; the data hub also lists sources, 
 - [Catalog JSONL](https://awesomecua.com/downloads/catalog.jsonl) - Complete catalog with one resource per line.
 - [Download manifest](https://awesomecua.com/downloads/manifest.json) - Export counts, byte sizes and SHA-256 checksums.
 - [Atom feed](https://awesomecua.com/feed.xml) - Research updates as an Atom feed.
-- [Hugging Face dataset](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - Read-only mirror, refreshed every 2 hours; metadata_only and github_candidates are not curated.
+- [Hugging Face dataset](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - Read-only mirror; metadata_only and github_candidates are unreviewed.
 - [Agent and RAG guide](https://awesomecua.com/agents/) - Guide for agents and RAG systems.
 
 Clone the complete catalog:
@@ -109,7 +109,7 @@ Discovery is scheduled **every hour at minute 7 UTC**. [Actual scan results](htt
 
 ## Highlights
 
-The most-mentioned curated resources per category: the count is how many other cataloged resources mention each one in their reviewed first-party source (README, model or dataset card). It reflects connectedness inside this catalog, not quality, popularity, or benchmark performance. Every category page lists all reviewed entries. Surveys come first, newest first.
+The most-mentioned curated resources per category: the count is how many other cataloged resources mention each one in their reviewed first-party source (README, model or dataset card). It reflects connectedness inside this catalog. Every category page lists all reviewed entries. Surveys come first, newest first.
 
 <details>
 <summary>Show the highlights tables</summary>
@@ -216,12 +216,12 @@ Browse the [interactive website](https://awesomecua.com/) to search and filter a
 
 The [English data hub](https://awesomecua.com/data/) and [中文数据中心](https://awesomecua.com/zh/data/) organize public downloads into six groups: complete catalog, RAG documents, citations, topics and comparisons, sources and review status, and schemas. Cloning still gives you the complete source catalog; the hub provides exports from its published snapshot.
 
-The [download manifest](https://awesomecua.com/downloads/manifest.json) records each listed export's actual count and unit, scope, byte size, and SHA-256 fingerprint. These are different formats and overlapping views of the catalog, so their counts must not be added together. Compare `catalog_sha256` across manifests before combining files from different downloads.
+The [download manifest](https://awesomecua.com/downloads/manifest.json) records each listed export's actual count and unit, scope, byte size, and SHA-256 fingerprint. Compare `catalog_sha256` across manifests before combining files from different downloads.
 
 [Reviewed research](https://awesomecua.com/papers/) · [Computer-use agent guides](https://awesomecua.com/guides/) · [Static resource directory](https://awesomecua.com/catalog/) · [Search and AI discovery](docs/search-discovery.md)
 
 - **[Catalog JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl):** one resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
-- **[Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl):** outbound references from primary sources. `mentions` does not mean `trained_on` or `evaluated_on`.
+- **[Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl):** outbound references from primary sources.
 - **[Discovery registry](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json)** and **[candidates](data/candidates.jsonl):** source snapshots and where each identifier was found.
 - **[Review queue](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl):** unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
 - **[JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json)** and **[coverage JSON](data/coverage.json):** machine-checkable contracts and coverage accounting.
@@ -245,15 +245,15 @@ Use SQLite to join resources, environment/topic facets, and reviewed relations. 
 
 ## What “verified” means
 
-| State               | What has been checked                                                                                            | What has not been established                                                |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `curated`           | AI-assisted editorial review against a first-party source snapshot, with name, scope, summary, and taxonomy      | Independent reproduction, universal availability, or endorsement             |
-| `metadata_verified` | Bibliographic identity, title, authors, and recorded dates checked against retained arXiv or publication sources | Topic relevance, methodology, findings, or inclusion in the core field       |
-| `candidate`         | A normalized URL or identifier was discovered                                                                    | Inclusion, correctness, or availability; excluded from the published catalog |
+| State               | What has been checked                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `curated`           | AI-assisted editorial review against a first-party source snapshot, with name, scope, summary, and taxonomy      |
+| `metadata_verified` | Bibliographic identity, title, authors, and recorded dates checked against retained arXiv or publication sources |
+| `candidate`         | A normalized URL or identifier was discovered                                                                    |
 
-Counts refer to **resources**, not unique projects. A paper, repository, dataset release, model checkpoint, product, and publisher can be separate related resources. Model families and individual checkpoints are explicitly linked where reviewed.
+A paper, repository, dataset release, model checkpoint, product, and publisher can be separate related resources. Model families and individual checkpoints are explicitly linked where reviewed.
 
-Code, data, weights, and document licenses are separate. Missing values are `null`. Dataset archive counts are not converted into training-example counts. Scores from different benchmark versions, splits, action budgets, or evaluators are not combined into a ranking.
+Code, data, weights, and document licenses are separate. Missing values are `null`.
 
 ## Maintain and verify
 
@@ -276,6 +276,6 @@ Network discovery and verification are explicit commands; ordinary builds are of
 
 The [source registry](data/sources.json) credits the community collections and surveys used for discovery. Bibliographic records use retained arXiv, publisher, and author sources; publication observations preserve edition-specific titles, authors, and date precision. Selected assets are checked against publisher repositories, documentation, and model/dataset cards. Upstream READMEs, papers, model weights, and datasets are not redistributed here.
 
-Original repository code and annotations use the [MIT license](LICENSE). Linked resources retain their own terms; this repository does not relicense them.
+Original repository code and annotations use the [MIT license](LICENSE). Linked resources retain their own terms.
 
 To cite the catalog, use [CITATION.cff](CITATION.cff) or GitHub's "Cite this repository" button. The data changes with every scan, so pin the exact version you used. Each `v*` tag has a [data release](https://github.com/reacher-z/Awesome-CUA/releases) with versioned downloads built from the tagged commit: the catalog as JSONL, JSON and SQLite, the coverage ledger, topic and profile exports, and their `SHA256SUMS`. Cite the release tag, or record the commit from `git rev-parse HEAD` in your clone, or link files at that commit, such as `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`. [Cutting a release](docs/maintenance.md#versioned-data-releases).

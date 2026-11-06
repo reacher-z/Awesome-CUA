@@ -12,7 +12,7 @@
 [![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C170-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2016%3A36%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
-**“全球最全”是建设目标，而不是已经核实的结论。** 已审阅条目依据一手来源快照审阅；待审阅记录只核实了书目信息；候选只是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
+已审阅条目依据一手来源快照审阅；待审阅记录已核实书目信息；候选是已发现的标识符，尚待处理。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
 
 ## 推荐基准
 
@@ -54,7 +54,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **2,170 条已审阅资源** · **1,673 篇已审阅论文与综述** · **104 个发现来源文档**
 
-证据截至 `2026-11-06T16:36:39Z`。以上只统计已审阅资源。单独列出：**448 条待审阅记录**仅完成书目核实；**2,025 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。1,308 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-11-06T16:36:39Z`。**448 条待审阅记录**已完成书目核实；**2,025 个已发现候选**尚待处理。1,308 条范围排除记录在归档中保留原始元数据。
 
 <!-- STATS:END -->
 
@@ -92,7 +92,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 - [目录 JSONL](https://awesomecua.com/downloads/catalog.jsonl) - 完整目录，每行一个资源。
 - [下载清单](https://awesomecua.com/downloads/manifest.json) - 导出文件的数量、字节数和 SHA-256 校验和。
 - [Atom 订阅源](https://awesomecua.com/feed.xml) - 以 Atom 格式发布的研究更新。
-- [Hugging Face 数据集](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - 只读镜像，每 2 小时同步；metadata_only 和 github_candidates 不是精选条目。
+- [Hugging Face 数据集](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - 只读镜像；metadata_only 和 github_candidates 不是精选条目。
 - [智能体与 RAG 指南](https://awesomecua.com/zh/agents/) - 面向智能体和 RAG 系统的指南。
 
 克隆完整目录：
@@ -109,7 +109,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 ## 重点资源
 
-按类别列出被其他已收录资源在其已审阅一手来源（README、模型卡或数据集卡）中提及最多的已审阅资源。该计数反映目录内部的关联程度，不代表质量、流行度或基准表现；每个类别页面都列出全部已审阅条目。综述排在最前，按时间倒序。资源名称和简介保留原文。
+按类别列出被其他已收录资源在其已审阅一手来源（README、模型卡或数据集卡）中提及最多的已审阅资源。该计数反映目录内部的关联程度；每个类别页面都列出全部已审阅条目。综述排在最前，按时间倒序。资源名称和简介保留原文。
 
 <details>
 <summary>展开重点资源表</summary>
@@ -218,12 +218,12 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 [中文数据中心](https://awesomecua.com/zh/data/)与[English data hub](https://awesomecua.com/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
 
-[下载清单](https://awesomecua.com/downloads/manifest.json)为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。不同格式和视图可能包含相同资源，单位也可能不同，不能把这些数量相加。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
+[下载清单](https://awesomecua.com/downloads/manifest.json)为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
 
 [已审阅研究](https://awesomecua.com/zh/papers/)（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
 
 - **[目录 JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl)：** 每行一个资源，包含稳定 ID、类型化字段、来源证据、按范围区分的许可和审阅状态。
-- **[引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl)：** 一手来源中的对外引用。`mentions` 不等于 `trained_on` 或 `evaluated_on`。
+- **[引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl)：** 一手来源中的对外引用。
 - **[发现来源登记](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json)** 和 **[候选条目](data/candidates.jsonl)：** 来源快照，以及每个标识符的发现位置。
 - **[待审队列](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl)：** 未解决的证据、尚未收录的发现，以及需要编辑处理的提议。经审阅确认为非资源或已收录资源其他地址的链接仍保留在队列中，并注明 `resolution` 与理由。
 - **[JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json)** 和 **[覆盖度 JSON](data/coverage.json)：** 可机器检查的数据契约和覆盖度统计。
@@ -246,15 +246,15 @@ python3 scripts/export_citations.py --format bibtex --output dist/citations.bib
 
 ## “已核实”的含义
 
-| 状态                  | 已检查的内容                              | 尚未确认的内容                |
-| ------------------- | ----------------------------------- | ---------------------- |
-| `curated`           | 基于一手来源快照的 AI 辅助编辑审阅，涵盖名称、范围、摘要和分类   | 独立复现、普遍可用性或背书          |
-| `metadata_verified` | 对照保留的 arXiv 或出版来源核实书目身份、标题、作者和已记录日期 | 主题相关性、方法、结论，或是否属于核心领域  |
-| `candidate`         | 发现了规范化的 URL 或标识符                    | 是否收录、是否正确或是否可用；不计入公开目录 |
+| 状态                  | 已检查的内容                              |
+| ------------------- | ----------------------------------- |
+| `curated`           | 基于一手来源快照的 AI 辅助编辑审阅，涵盖名称、范围、摘要和分类   |
+| `metadata_verified` | 对照保留的 arXiv 或出版来源核实书目身份、标题、作者和已记录日期 |
+| `candidate`         | 发现了规范化的 URL 或标识符                    |
 
-计数指的是**资源**，而不是独立项目。论文、仓库、数据集发布、模型权重版本、产品和发布方可以是彼此关联的不同资源。模型系列与具体权重版本在审阅后会显式关联。
+论文、仓库、数据集发布、模型权重版本、产品和发布方可以是彼此关联的不同资源。模型系列与具体权重版本在审阅后会显式关联。
 
-代码、数据、权重和文档的许可分别记录。缺失值为 `null`。数据集归档文件数不会被换算成训练样本数。来自不同基准版本、数据划分、动作预算或评测器的分数不会合并成排行榜。
+代码、数据、权重和文档的许可分别记录。缺失值为 `null`。
 
 ## 维护与验证
 
@@ -277,6 +277,6 @@ node --test tests/web.test.mjs
 
 [来源登记](data/sources.json)列出了用于发现资源的社区合集和综述。书目记录依据保留的 arXiv、出版方及作者来源；出版记录分别保留各版本的题名、作者和日期精度。部分资源还会对照发布方的仓库、文档以及模型/数据集卡片核查。上游 README、论文、模型权重和数据集不在本仓库中再分发。
 
-本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款；本仓库不对其重新授权。
+本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款。
 
 引用本目录时，请使用 [CITATION.cff](CITATION.cff) 或 GitHub 的“Cite this repository”按钮。数据随每次扫描更新，请固定所用的确切版本。每个 `v*` 标签都有一个[数据发布](https://github.com/reacher-z/Awesome-CUA/releases)，提供由该标签所指提交构建的版本化下载：JSONL、JSON 和 SQLite 格式的目录、覆盖台账、主题与规格导出，以及它们的 `SHA256SUMS`。请引用发布标签，或在克隆中用 `git rev-parse HEAD` 记录提交，或链接该提交下的文件，例如 `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`。[如何发布版本](docs/maintenance.md#versioned-data-releases)。

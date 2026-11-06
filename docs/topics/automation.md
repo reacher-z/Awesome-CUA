@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-173 source-reviewed resources tagged `automation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+173 source-reviewed resources tagged `automation`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Models (1)](#models) · [Agents (9)](#agents) · [Frameworks (14)](#frameworks) · [Tools (16)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (1)](#products) · [Surveys (2)](#surveys) · [Papers (123)](#papers)
 

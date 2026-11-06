@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-4 source-reviewed resources tagged `harmonyos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+4 source-reviewed resources tagged `harmonyos`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Frameworks (1)](#frameworks) · [Papers (3)](#papers)
 

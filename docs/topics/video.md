@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `video`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+48 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (39)](#papers)
 

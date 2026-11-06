@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-350 source-reviewed resources tagged `android`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+350 source-reviewed resources tagged `android`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (19)](#benchmarks) · [Datasets (35)](#datasets) · [Models (24)](#models) · [Agents (17)](#agents) · [Frameworks (23)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (3)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (222)](#papers)
 

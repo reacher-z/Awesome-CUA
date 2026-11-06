@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-421 source-reviewed resources tagged `grounding`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+421 source-reviewed resources tagged `grounding`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (32)](#datasets) · [Models (67)](#models) · [Agents (3)](#agents) · [Frameworks (12)](#frameworks) · [Tools (8)](#tools) · [Products (1)](#products) · [Papers (288)](#papers)
 

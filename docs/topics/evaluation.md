@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-954 source-reviewed resources tagged `evaluation`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+954 source-reviewed resources tagged `evaluation`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (89)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (4)](#agents) · [Frameworks (24)](#frameworks) · [Tools (7)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (9)](#surveys) · [Papers (809)](#papers)
 

@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-364 source-reviewed resources tagged `desktop`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+364 source-reviewed resources tagged `desktop`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (18)](#datasets) · [Models (24)](#models) · [Agents (18)](#agents) · [Frameworks (24)](#frameworks) · [Tools (6)](#tools) · [Infrastructure (10)](#infrastructure) · [Products (5)](#products) · [Surveys (2)](#surveys) · [Papers (237)](#papers)
 

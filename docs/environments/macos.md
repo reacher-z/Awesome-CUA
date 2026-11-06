@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-36 source-reviewed resources tagged `macos`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+36 source-reviewed resources tagged `macos`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (18)](#papers)
 

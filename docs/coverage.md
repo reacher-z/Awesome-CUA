@@ -3,7 +3,7 @@
 Evidence snapshot through **2026-11-06T16:36:39Z**. Generated from committed source receipts.
 
 - 2,170 curated resources. Another 448 records await review with bibliographic metadata only; the active catalog file holds 2,618 records in all.
-- 2,121 paper and survey records, including 2,107 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
+- 2,121 paper and survey records, including 2,107 arXiv identities and 14 publisher-only identities.
 - 3,415 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
 - 6,041 discovery identifiers; 2,025 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 375 editorial proposals await verification or review.
@@ -31,7 +31,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 ## Source snapshot coverage
 
-The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources. Sources overlap. These figures do not measure global completeness or editorial recall.
+The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources.
 
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
@@ -144,7 +144,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 Latest pass: 2026-11-06T16:16:57Z; **32/32** query windows succeeded. 1,506 distinct identifiers; 0 new to the candidate queue.
 
-These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
+These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 
 | Area | Query | Returned / limit | State |
 | --- | --- | ---: | --- |
@@ -183,7 +183,7 @@ These are ranked search windows, not a field-wide denominator. New identifiers s
 
 ## Primary arXiv discovery
 
-The recorded title query returned 1,199 unique records out of 1,246 reported matches. Pagination complete: **False**. This query population overlaps the lists and is not the whole field.
+The recorded title query returned 1,199 unique records out of 1,246 reported matches. Pagination complete: **False**.
 
 ```text
 (ti:"computer use" OR ti:"computer-use" OR ti:"GUI agent" OR ti:"GUI agents" OR ti:"GUI grounding" OR ti:"web agents" OR ti:"browser agent") AND submittedDate:[200001010000 TO 202610160636]
@@ -198,7 +198,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 | weights | 56 |
 | document | 8 |
 
-A code license never fills a data or weights field. Hub declarations are publisher metadata, not independently audited legal conclusions. Missing values remain null.
+Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.
 
 ## Pending editorial proposals
 
@@ -590,15 +590,12 @@ None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 
-1308 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
+1308 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. Original bibliographic metadata is retained, and previous resource URLs explain the decision.
 
 ## Known gaps
 
 - Most bibliography records still require relevance review and detailed taxonomy.
-- Closed/private datasets, unpublished systems, regional products, and work absent from arXiv/lists are not exhaustively represented.
 - Asset sizes, model weights licenses, runtime requirements, and benchmark protocols need additional field-level curation.
-- Publisher entries cover selected brands; corporate ownership, funding, usage, revenue, and product pricing are not researched here.
-- Download links and available code do not establish that an asset is reproducible or still works.
 - Name changes, repository transfers, and related resource families need continuing entity resolution.
 
 See [methodology](methodology.md) for the inclusion boundary and [the review queue](../data/review-queue.jsonl) for actionable gaps.

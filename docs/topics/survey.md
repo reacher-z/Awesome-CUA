@@ -2,7 +2,7 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-29 source-reviewed resources tagged `survey`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+29 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
 **Contents:** [Surveys (28)](#surveys) · [Papers (1)](#papers)
 

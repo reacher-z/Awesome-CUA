@@ -34,6 +34,11 @@ class StarCountTests(unittest.TestCase):
         self.assertIn(f'data-star-count="{site_shell.SITE_REPO}">1.2k<', site_shell.top(live=True))
         self.assertIn(f'data-star-count="{site_shell.WEBSITEBENCH_REPO}"></span>', site_shell.top())
 
+    def test_a_missing_count_leaves_no_empty_slot(self):
+        site_shell.configure(stars={site_shell.SITE_REPO: 7})
+        self.assertNotIn(f'data-star-count="{site_shell.WEBSITEBENCH_REPO}"', site_shell.top(live=True))
+        self.assertIn(f'data-star-count="{site_shell.SITE_REPO}">7<', site_shell.top(live=True))
+
     def test_fallback_without_counts_still_shows_labelled_links(self):
         site_shell.configure()
         top = site_shell.top(live=True)
@@ -63,6 +68,22 @@ class PromotionShellTests(unittest.TestCase):
 
     def test_the_browser_never_calls_github_for_counts(self):
         self.assertNotIn("api.github.com", (ROOT / "web/assets/site.js").read_text(encoding="utf-8"))
+
+    def test_star_note_is_quiet_and_links_to_this_repository(self):
+        note = site_shell.star_note()
+        self.assertIn("Useful? Star Awesome CUA on GitHub", note)
+        self.assertIn('href="https://github.com/reacher-z/Awesome-CUA"', note)
+
+    def test_resource_facts_read_as_prose_and_omit_empty_rows(self):
+        record = {"id": "github:a/b", "kind": "benchmark", "name": "B", "summary": "S.", "url": "https://github.com/a/b", "environments": ["macos", "windows", "unspecified"], "identifiers": {}, "aliases": [],
+                  "topics": ["web-navigation"], "last_verified_at": "2026-10-16T06:35:57Z", "published_at": None, "review_status": "curated", "details": {}, "relations": [],
+                  "evidence": [], "licenses": {"code": None, "data": None, "weights": None, "document": None}, "authors": [], "scope": "core", "notes": ""}
+        body = search_pages.resource_body(record, {record["id"]: record})
+        self.assertIn("<dd>Benchmark</dd>", body)
+        self.assertIn("<dd>macOS, Windows</dd>", body)
+        self.assertIn("<dd>2026-10-16</dd>", body)
+        self.assertNotIn("Record publication date", body)
+        self.assertNotIn("06:35:57", body.split("Primary evidence")[0])
 
     def test_dismissal_is_guarded_and_applied_before_paint(self):
         script = site_shell.THEME_SCRIPT

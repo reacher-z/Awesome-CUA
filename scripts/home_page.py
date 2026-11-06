@@ -6,7 +6,10 @@ import json
 import re
 
 import home_art as art
-from site_shell import ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_count
+from paper_library import library_years
+from publication_metadata import record_year
+from site_config import SITE
+from site_shell import CONTEXT, HF_DATASET, ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_count, star_note
 
 # Tab and icon order. The labels stay beside the icons so the rows, tabs and search results agree.
 KINDS = {  # key: (singular, plural, zh label, icon)
@@ -161,8 +164,28 @@ def catalog_view(rows, reviewed, coverage, root):
     for record in reviewed:
         env_counts.update(env_facets(record["environments"]))
     mentions = mention_sets(root, by_id)
+    review_at = review_times(root, reviewed)
+    is_paper = lambda record: record["kind"] in ("paper", "survey")
+    first_seen = {}
+    candidates_path = root / "data/candidates.jsonl"
+    if candidates_path.is_file():
+        for line in candidates_path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                candidate = json.loads(line)
+                if candidate.get("first_discovered_at"):
+                    first_seen[candidate["id"]] = candidate["first_discovered_at"]
+    pending = (record for record in rows if record["review_status"] != "curated" and record["id"] in first_seen)
     return {"by_id": by_id, "reviewed": reviewed, "kinds": kinds, "env_counts": env_counts, "mentions": mentions,
-            "reviewed_at": review_times(root, reviewed), "papers": kinds["paper"] + kinds["survey"],
+            "reviewed_at": review_at, "papers": kinds["paper"] + kinds["survey"],
+            "recent_reviewed": sorted((record for record in reviewed if not is_paper(record) and review_at.get(record["id"])),
+                                      key=lambda record: (review_at[record["id"]], record["name"].casefold()), reverse=True),
+            "recent_papers": sorted((record for record in reviewed if is_paper(record) and record.get("published_at")),
+                                    key=lambda record: (record["published_at"], record["name"]), reverse=True),
+            # Same date helper as the library, so a year-only publisher date still counts.
+            "years": Counter(int(record_year(record)) for record in reviewed if is_paper(record) and record_year(record)),
+            "year_links": {"en": library_years(rows, "en"), "zh": library_years(rows, "zh")},
+            "first_seen": first_seen,
+            "scan_new": sorted(pending, key=lambda record: (first_seen[record["id"]], record["id"]), reverse=True),
             "candidates": coverage["unindexed_candidates"],
             "leaderboards": sum(bool(record["details"].get("leaderboard_url")) for record in reviewed)}
 
@@ -172,7 +195,8 @@ def search_index(view):
 
     Row: [id, name, kindIndex, envBits, year, flags, summary, mentions, topicIdx[], ident, reviewedDay, licence, extra?]
     flags: 1 = curated, 2 = official leaderboard, 4 = authors omitted
-    extra: {"a": aliases, "p": arXiv ID of the documenting paper, "l": leaderboard URL}, present only when non-empty.
+    extra: {"a": aliases, "p": arXiv ID of the documenting paper, "l": leaderboard URL, "u": primary source URL when the
+    ID does not give it}, present only when non-empty.
     """
     reviewed, by_id = view["reviewed"], view["by_id"]
     topic_keys = sorted({topic for record in reviewed for topic in record["topics"]})
@@ -188,6 +212,8 @@ def search_index(view):
         is_paper = record["kind"] in ("paper", "survey")
         paper = None if is_paper else paper_of(record, by_id)
         extra = {}
+        if not record["id"].startswith(("github:", "arxiv:")) or is_paper:
+            extra["u"] = record["url"]
         if record["aliases"]:
             extra["a"] = record["aliases"]
         if paper and paper["id"].startswith("arxiv:"):
@@ -453,6 +479,141 @@ def benchmark_band(view, zh=False, live=True) -> str:
 <div class="lb-table"><div class="lb-head"><h3>{board}</h3><p>{note}</p></div>
 <ul class="lb-list">{rows}</ul></div>
 </div></section>'''
+
+
+def latest(view, zh=False) -> str:
+    reviewed = view["recent_reviewed"][:5]
+    if not reviewed:
+        return ""
+    reviewed_items = "".join(
+        f'<li><time datetime="{view["reviewed_at"][record["id"]][:10]}">{view["reviewed_at"][record["id"]][:10]}</time>'
+        f'<a href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>{stamp("curated", zh)}</li>' for record in reviewed)
+    found = view["scan_new"][:5]
+    found_items = "".join(
+        f'<li><time datetime="{view["first_seen"][record["id"]]}">{view["first_seen"][record["id"]][:16].replace("T", " ")}</time>'
+        f'<a href="{esc(record["url"])}">{esc(clip(clean_title(record["name"]), 92))}</a>{stamp(record["review_status"], zh)}</li>' for record in found)
+    batch = max(view["reviewed_at"].values())[:10]  # Papers count here, though the list below shows other resources.
+    heading, lede, more, done, new = (
+        ("最新动态", f"最新审核批次：{batch}。扫描每两小时运行一次，发现的条目在审核前始终带有标注。", "全部更新", "最近审核的资源", "最新扫描发现") if zh else
+        ("Latest", f"Newest review batch: {batch}. Scans run every two hours; their finds stay labelled until reviewed.", "All updates", "Recently reviewed resources", "From the latest scans"))
+    scan_log = f'<div class="r3-log"><h3>{ic("clock")}{new} <span>UTC</span></h3><ol>{found_items}</ol></div>' if found else ""
+    return f'''<section class="section wrap r3-latest" aria-labelledby="latest-h">
+<div class="sec-head"><div><h2 id="latest-h">{heading}</h2><p>{lede}</p></div>
+<a class="more" href="/updates/">{more}{ic("right", "i i-sm")}</a></div>
+<div class="r3-logs"><div class="r3-log"><h3>{ic("check")}{done}</h3><ol>{reviewed_items}</ol></div>{scan_log}</div></section>'''
+
+
+BENTO = (("paper", 3), ("benchmark", 2), ("model", 2), ("dataset", 2), ("framework", 2), ("agent", 2), ("survey", 2),
+         ("tool", 2), ("infrastructure", 2), ("product", 2), ("company", 2), ("learning", 2))
+
+
+def categories(view, zh=False) -> str:
+    cells = []
+    for kind, link_count in BENTO:
+        if kind not in view["kinds"]:
+            continue
+        label, zh_label = KINDS[kind][1], KINDS[kind][2]
+        if kind == "paper":
+            recent = sorted(view["years"], reverse=True)[:3]
+            year_links = view["year_links"]["zh" if zh else "en"]
+            links = " ".join(f'<a href="{esc(year_links[str(year)])}">{year}</a>' for year in recent)
+        else:
+            top = sorted((record for record in view["reviewed"] if record["kind"] == kind),
+                         key=lambda record: (-len(view["mentions"].get(record["id"], ())), record["name"].casefold()))[:link_count]
+            links = ", ".join(f'<a href="{esc(resource_href(record))}">{esc(clip(clean_title(record["name"]), 26))}</a>' for record in top)
+        drawing = {"paper": art.vig_paper, "benchmark": art.vig_rank}.get(kind)
+        cells.append(f'<li class="r3-cell r3-c-{kind}"><a class="r3-cell-name" href="/categories/{kind}/">{zh_label if zh else label}</a>'
+                     f'<span class="r3-cell-n">{fmt(view["kinds"][kind])}</span>{drawing() if drawing else ""}<p class="r3-cell-eg">{links}</p></li>')
+    heading, more = ("按类别浏览", "打开目录") if zh else ("Browse by category", "Open the catalog")
+    return f'''<section class="section wrap r3-cats" aria-labelledby="cats-h">
+<div class="sec-head"><div><h2 id="cats-h">{heading}</h2></div>
+<a class="more" href="/catalog/">{more}{ic("right", "i i-sm")}</a></div>
+<ul class="r3-bento">{"".join(cells)}</ul></section>'''
+
+
+def year_chart(view, zh=False) -> str:
+    """One series, one hue, a direct label on every bar; the latest year is the indigo one."""
+    year_links = view["year_links"]["zh" if zh else "en"]
+    recent = [(str(year), count, year_links[str(year)]) for year, count in sorted(view["years"].items()) if year >= 2022]
+    older = sum(count for year, count in view["years"].items() if year < 2022)
+    bars = ([("更早" if zh else "Earlier", older, "/zh/papers/" if zh else "/papers/")] if older else []) + recent
+    top = max(count for _, count, _ in bars)
+    latest_year = recent[-1][0]
+    records = "条记录" if zh else "records"
+    items = "".join(f'<li{" class=now" if label == latest_year else ""}><a href="{href}" aria-label="{label}: {fmt(count)} {records}" style="--h:{max(2, round(100 * count / top))}%">'
+                    f'<span class="c">{fmt(count)}</span><span class="bar"><i></i></span><span class="y">{label}</span></a></li>' for label, count, href in bars)
+    heading = "按年份统计的已审核论文与综述" if zh else "Reviewed papers and surveys by year"
+    note = f"按发表年份统计。{latest_year} 年仍在进行中。" if zh else f"Publication year. {latest_year} is the year so far."
+    return f'<nav class="r3-years" aria-labelledby="years-h"><h3 id="years-h">{heading}</h3><ol>{items}</ol><p>{note}</p></nav>'
+
+
+def papers(view, zh=False) -> str:
+    if not view["recent_papers"]:
+        return ""
+    rows = []
+    for record in view["recent_papers"][:4]:
+        venue = (record["details"].get("publication") or {}).get("venue")
+        if record.get("authors_omitted") or not record["authors"]:
+            authors = f'<span>{"作者：见论文" if zh else "Authors: see the paper"}</span>'
+        else:
+            authors = f'<span>{esc(record["authors"][0])}{" 等" if zh and len(record["authors"]) > 1 else " et al." if len(record["authors"]) > 1 else ""}</span>'
+        paper_id = record["id"].split(":", 1)[1] if record["id"].startswith("arxiv:") else None
+        # Link the version that was reviewed; the bare ID can later resolve to a newer one.
+        version = (record["details"].get("arxiv_snapshot") or {}).get("version")
+        cited = f"{paper_id}v{version}" if paper_id and version else paper_id
+        links = (f'<a href="https://arxiv.org/abs/{cited}">{ic("file")}arXiv {paper_id}</a><a href="https://arxiv.org/pdf/{cited}">PDF</a>' if paper_id else
+                 f'<a href="{esc(record["url"])}">{ic("ext", "i i-sm")}{"来源" if zh else "Source"}</a>')
+        rows.append(f'<li><time datetime="{record["published_at"]}">{record["published_at"]}</time><div><a class="paper-t" href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>'
+                    f'<div class="paper-m">{f"<span>{esc(venue)}</span>" if venue else ""}{authors}{links}</div></div></li>')
+    count = fmt(view["papers"])
+    heading, lede, more = (("论文", f"{count} 篇已审核论文与综述，按时间倒序。书目信息已与 arXiv 或出版方核对。", "阅读综述") if zh else
+                           ("Papers", f"{count} reviewed papers and surveys, newest first. Bibliographic details are checked against arXiv or the publisher.", "Read the survey"))
+    # The survey is a separately published bundle, so a build without it must not link to it.
+    survey_link = f'<a class="more" href="/survey/">{more}{ic("right", "i i-sm")}</a>' if CONTEXT["has_survey"] else ""
+    return f'''<section class="section wrap r3-papers" aria-labelledby="papers-h">
+<div class="sec-head"><div><h2 id="papers-h">{heading}</h2><p>{lede}</p></div>
+{survey_link}</div>
+<div class="r3-papers-grid">{year_chart(view, zh)}<ol class="paper-list">{"".join(rows)}</ol></div></section>'''
+
+
+def developers(zh=False) -> str:
+    comment = lambda text: f'<span class="c"># {text}</span>'
+    prompt = '<span class="p"></span>'
+    key = lambda text: f'<span class="k">{text}</span>'
+    jsonl_filter = """jq -r 'select(.kind=="benchmark" and .review_status=="curated") | .name'"""
+    snippets = (
+        ("jsonl", "JSONL", comment("每条记录一行 JSON" if zh else "Every record, one JSON object per line") +
+         f"\n{prompt}curl -s {SITE}/downloads/catalog.jsonl \\\n  | {esc(jsonl_filter)}"),
+        ("python", "Hugging Face", f'''{key("from")} datasets {key("import")} load_dataset
+
+ds = load_dataset({key(chr(34) + HF_DATASET.rsplit("/datasets/", 1)[1] + chr(34))}, {key('"resources"')}, split={key('"train"')})
+benchmarks = ds.filter({key("lambda")} r: r[{key('"kind"')}] == {key('"benchmark"')})
+print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])'''),
+        ("llms", "llms.txt", f'''{comment("面向语言模型的站点索引" if zh else "An index of the site for language models")}
+{prompt}curl -s {SITE}/llms.txt'''),
+        ("cite", "Cite" if not zh else "引用", f'''@misc{{awesomecua,
+  title  = {{Awesome CUA: a source-backed catalog of computer-use agent resources}},
+  author = {{{{Awesome CUA}}}},
+  url    = {{{SITE}}}
+}}'''),
+    )
+    tabs = "".join(f'<button class="tab" type="button" role="tab" id="t-{name}" aria-controls="p-{name}" aria-selected="{"true" if number == 0 else "false"}" tabindex="{0 if number == 0 else -1}">{label}</button>'
+                   for number, (name, label, _) in enumerate(snippets))
+    panels = "".join(f'<pre id="p-{name}" role="tabpanel" aria-labelledby="t-{name}" tabindex="0"{" hidden" if number else ""}><code>{code}</code></pre>'
+                     for number, (name, _, code) in enumerate(snippets))
+    copy_label, licence = ("复制", "随每次扫描更新。许可：MIT。") if zh else ("Copy", "Updated with every scan. Licence: MIT.")
+    links = (("/llms.txt", "terminal", "llms.txt", "面向语言模型的站点地图", "A map of the site for language models"),
+             ("/data/", "code", "数据下载" if zh else "Download data", "JSONL、SQLite 与模式说明", "JSONL, SQLite and a schema, every record with its evidence"),
+             (HF_DATASET, "hf", "Hugging Face 数据集" if zh else "Hugging Face dataset", "从 GitHub 同步", "Synced from GitHub"),
+             ("/feed.xml", "feed", "Atom 订阅" if zh else "Atom feed", "审核后的新记录", "New records as they are reviewed"))
+    items = "".join(f'<li><a href="{href}">{ic(icon)}<b>{title}</b><span>{zh_line if zh else line}</span></a></li>' for href, icon, title, zh_line, line in links)
+    heading, lede = (("面向智能体与开发者", "整个目录都是开放数据。可以导入笔记本、检索索引或你自己的智能体；每条记录都保留证据链接和审核状态。") if zh else
+                     ("For agents and developers", "The whole catalog is open data. Pull it into a notebook, a retrieval index or your own agent; every record keeps its evidence links and review state."))
+    return f'''<section class="r3-term" aria-labelledby="dev-h"><div class="wrap">
+<div class="dev"><div><h2 id="dev-h">{heading}</h2><p style="margin-top:12px;max-width:52ch">{lede}</p><ul>{items}</ul></div>
+<div class="window term"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>/data/</output></div></div>
+<div class="tabs" role="tablist" aria-label="{"使用数据的方式" if zh else "Ways to use the data"}">{tabs}</div>{panels}
+<div class="panel-foot"><span>{licence}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel style="min-height:36px">{ic("copy")}{copy_label}</button>{star_note(zh, ' data-after-copy hidden')}</div></div></div></div></section>'''
 
 
 def contribute(zh=False) -> str:

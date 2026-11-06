@@ -82,7 +82,7 @@
       if (s.last_scan) slots.forEach(e => {
         const t = d.createElement('time'); t.dateTime = s.last_scan; t.textContent = ' ' + s.last_scan.slice(0, 16).replace('T', ' ') + ' UTC'; e.replaceWith(t);
       });
-    }).catch(() => {});
+    }).catch(() => {}).finally(() => root.classList.add('stars-settled')); // an unfilled slot collapses
   }
 
   /* ---------- announcement bar: dismissal is remembered in this browser only ---------- */
@@ -117,7 +117,7 @@
       IDX = j.rows.map(r => {
         const name = r[1], n = norm(name), x = r[12] || {};
         return {id: r[0], name, k: kinds[r[2]], env: r[3], y: r[4], f: r[5], d: r[6], m: r[7], t: r[8], ident: r[9], rv: r[10], lic: r[11],
-          p: x.p, l: x.l, n, words: n.split(' '), al: (x.a || []).map(norm), dn: norm(r[6])};
+          p: x.p, l: x.l, u: x.u, n, words: n.split(' '), al: (x.a || []).map(norm), dn: norm(r[6])};
       });
       IDX.topics = j.topics; IDX.topicLabels = j.topic_labels; IDX.licences = j.licences;
       performance.mark('idx-ready'); performance.measure('index-load', 'idx-start', 'idx-ready');
@@ -225,6 +225,7 @@
     return EXPLORE + (qs ? '?' + qs : '') + '#catalog';
   }
   function srcFor(rec) {
+    if (rec.u) return rec.u;
     if (rec.id.startsWith('arxiv:')) return 'https://arxiv.org/abs/' + rec.id.slice(6);
     if (rec.id.startsWith('github:')) return 'https://github.com/' + rec.ident;
     return hrefFor(rec);
@@ -335,7 +336,15 @@
       sync();
     }
     let raf;
+    // The first character brings the field under the header, so results are not hidden by the hero or the keyboard.
+    let scrolledForQuery = false;
     input.addEventListener('input', () => {
+      if (!input.value) scrolledForQuery = false;
+      else if (!scrolledForQuery) {
+        scrolledForQuery = true;
+        const headerEl = $('.site-header'), top = input.getBoundingClientRect().top - (headerEl ? headerEl.offsetHeight : 0) - 12;
+        if (Math.abs(top) > 4 && top > 0) scrollBy({top, behavior: reduce.matches ? 'auto' : 'smooth'});
+      }
       const had = !!st.q; st.q = input.value.trim();
       if (st.q && !had && st.sort === 'mentions') { st.sort = 'relevance'; sortSel.value = 'relevance' }
       if (!st.q && had && st.sort === 'relevance') { st.sort = 'mentions'; sortSel.value = 'mentions' }
@@ -556,6 +565,7 @@
       copy(out ? 'https://' + out.textContent.trim() : location.href, ZH ? '链接已复制' : 'Link copied');
     } else if (b.hasAttribute('data-copy-panel')) {
       const p = $$('[role=tabpanel]', b.closest('.window')).find(x => !x.hidden); p && copy(p.textContent, ZH ? '已复制' : 'Snippet copied');
+      const after = $('[data-after-copy]', b.closest('.window')); if (after) after.hidden = false;
     } else if (b.hasAttribute('data-copy-from')) {
       const src = d.getElementById(b.dataset.copyFrom); src && copy(src.textContent.trim(), b.dataset.msg);
     } else copy(b.dataset.copy, b.dataset.msg);

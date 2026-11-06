@@ -158,7 +158,9 @@ def star_count(repo, live=False) -> str:
     """A build-time count. Landing pages carry it in the HTML; other pages read /data/site-stamp.json, so a new star
     does not rewrite thousands of pages on every scan. Without a count the label still reads and links correctly."""
     count = CONTEXT["stars"].get(repo)
-    return f'<span class="star-n" data-star-count="{esc(repo)}">{short_count(count) if live and count else ""}</span>'
+    if not count:  # No slot at all, so the label stays centred.
+        return ""
+    return f'<span class="star-n" data-star-count="{esc(repo)}">{short_count(count) if live else ""}</span>'
 
 
 def announcement(*, lang="en", live=False) -> str:
@@ -194,6 +196,12 @@ def header(*, path="/", lang="en", lang_href=None, live=False) -> str:
 <button class="icon-btn menu-btn js-only" type="button" data-open-menu aria-label="{menu_label}" aria-haspopup="dialog">{ic("menu")}</button>
 </div>
 </div></header>'''
+
+
+def star_note(zh=False, attrs="") -> str:
+    """The one quiet request after something useful. A page carries at most one."""
+    text = "有帮助？在 GitHub 上为 Awesome CUA 点 Star" if zh else "Useful? Star Awesome CUA on GitHub"
+    return f'<p class="star-note"{attrs}><a href="{REPO}">{text}</a></p>'
 
 
 MAINTAINER_REPOS = (

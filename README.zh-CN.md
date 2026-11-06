@@ -9,7 +9,7 @@
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C863-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C864-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2006%3A22%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 **“全球最全”是建设目标，而不是已经核实的结论。** 已审阅条目依据一手来源快照审阅；待审阅记录只核实了书目信息；候选只是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**1,863 条已审阅资源** · **1,391 篇已审阅论文与综述** · **103 个发现来源文档**
+**1,864 条已审阅资源** · **1,391 篇已审阅论文与综述** · **103 个发现来源文档**
 
-证据截至 `2026-11-06T04:18:34Z`。以上只统计已审阅资源。单独列出：**627 条待审阅记录**仅完成书目核实；**1,971 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。1,308 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-11-06T06:22:02Z`。以上只统计已审阅资源。单独列出：**627 条待审阅记录**仅完成书目核实；**1,971 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。1,308 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -68,7 +68,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    23 |
 | [学习资源](docs/learning.md)        | 课程与教程            |     2 |
 | [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |    86 |
-| [基准](docs/benchmarks.md)        | 评测环境与任务集         |    90 |
+| [基准](docs/benchmarks.md)        | 评测环境与任务集         |    91 |
 | [模型与权重版本](docs/models.md)       | 模型权重版本与模型系列      |    98 |
 | [智能体](docs/agents.md)           | 可操作电脑的公开实现       |    45 |
 | [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |    79 |
@@ -77,7 +77,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    20 |
 | [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    16 |
 
-**按平台：** [Web](docs/environments/web.md) **733** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
+**按平台：** [Web](docs/environments/web.md) **734** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -125,7 +125,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified    |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430)                  | unspecified    |
 
-**基准** · [全部 90 项 →](docs/benchmarks.md)
+**基准** · [全部 91 项 →](docs/benchmarks.md)
 
 | 资源                                                                             | 被提及 | 环境                             | 论文                                                    | 许可            | 简介（英文）                                                                              |
 | ------------------------------------------------------------------------------ | --: | ------------------------------ | ----------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------- |
@@ -194,6 +194,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 <!-- RECENT:START -->
 | 审阅日期       | 资源                                                                                                                      | 类型   | 环境               | 简介（英文）                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------- | ---- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026‑11‑06 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench)                                                            | 基准   | web              | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks.                            |
 | 2026‑10‑20 | [Web Browser Automation with Agents (smolagents tutorial)](https://huggingface.co/docs/smolagents/examples/web_browser) | 学习资源 | web              | Versioned tutorial building a vision-guided CodeAgent with Selenium/Helium browser tools, screenshot callbacks and example web-navigation tasks.                                                                                |
 | 2026‑10‑20 | [ORBIT framework](https://github.com/wlanderson0/orbit)                                                                 | 框架   | web, desktop     | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools.                                       |
 | 2026‑10‑20 | [Building AI Browser Agents](https://www.deeplearning.ai/courses/building-ai-browser-agents)                            | 学习资源 | web              | Browser-agent course with worked lessons on structured web extraction and multi-step browser interaction, followed by AgentQ search and self-correction concepts.                                                               |
@@ -205,7 +206,6 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | 2026‑10‑20 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder)                                             | 工具   | desktop, windows | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection.                                                                   |
 | 2026‑10‑20 | [MobileForge](https://github.com/kwai/MobileForge)                                                                      | 框架   | android          | Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B.                      |
 | 2026‑10‑20 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent)                                                                    | 框架   | android          | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding.                                                 |
-| 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK)                        | 数据集  | web              | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation.                                                                                 |
 <!-- RECENT:END -->
 
 </details>

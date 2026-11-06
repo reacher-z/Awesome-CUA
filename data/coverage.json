@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-06T04:18:34Z",
-  "total_records": 2490,
-  "curated_records": 1863,
+  "as_of_utc": "2026-11-06T06:22:02Z",
+  "total_records": 2491,
+  "curated_records": 1864,
   "bibliographic_records": 2018,
   "arxiv_active_records": 2004,
   "non_arxiv_bibliographic_records": 14,
@@ -4618,7 +4618,7 @@
   "uncurated_linked_papers": [],
   "by_kind": {
     "agent": 45,
-    "benchmark": 90,
+    "benchmark": 91,
     "company": 16,
     "dataset": 86,
     "framework": 79,
@@ -4639,7 +4639,7 @@
     "linux": 55,
     "macos": 32,
     "unspecified": 479,
-    "web": 733,
+    "web": 734,
     "windows": 66
   },
   "curated_by_kind_and_environment": {
@@ -4662,7 +4662,7 @@
       "linux": 5,
       "macos": 3,
       "unspecified": 3,
-      "web": 44,
+      "web": 45,
       "windows": 5
     },
     "company": {
@@ -4752,7 +4752,7 @@
     }
   },
   "license_declarations_by_scope": {
-    "code": 189,
+    "code": 190,
     "data": 61,
     "weights": 56,
     "document": 8

@@ -9,7 +9,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C863-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C864-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2006%3A22%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 **Global completeness is a goal, not a verified claim.** Curated entries were reviewed against a first-party source snapshot; records awaiting review have only their bibliographic identity checked; candidates are discovered identifiers outside the published catalog. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**1,863 curated resources** · **1,391 reviewed papers and surveys** · **103 discovery documents**
+**1,864 curated resources** · **1,391 reviewed papers and surveys** · **103 discovery documents**
 
-Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted above. Listed separately: **627 records awaiting review** have bibliographic verification only, and **1,971 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-11-06T06:22:02Z`. Only curated resources are counted above. Listed separately: **627 records awaiting review** have bibliographic verification only, and **1,971 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -68,7 +68,7 @@ Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted abov
 | [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      23 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |       2 |
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |      86 |
-| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |      90 |
+| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |      91 |
 | [Models and checkpoint releases](docs/models.md) | Checkpoints and model families                                |      98 |
 | [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |      45 |
 | [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |      79 |
@@ -77,7 +77,7 @@ Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted abov
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      20 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      16 |
 
-**By platform:** [Web](docs/environments/web.md) **733** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
+**By platform:** [Web](docs/environments/web.md) **734** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -125,7 +125,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified    |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430)                  | unspecified    |
 
-**Benchmarks** · [all 90 →](docs/benchmarks.md)
+**Benchmarks** · [all 91 →](docs/benchmarks.md)
 
 | Resource                                                                       | Mentions | Environments                   | Paper                                                 | License         | Description                                                                         |
 | ------------------------------------------------------------------------------ | -------: | ------------------------------ | ----------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------- |
@@ -194,6 +194,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed   | Resource                                                                                                                | Kind               | Environments     | Description                                                                                                                                                                                                                     |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026‑11‑06 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench)                                                            | benchmark          | web              | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks.                            |
 | 2026‑10‑20 | [Web Browser Automation with Agents (smolagents tutorial)](https://huggingface.co/docs/smolagents/examples/web_browser) | Learning resources | web              | Versioned tutorial building a vision-guided CodeAgent with Selenium/Helium browser tools, screenshot callbacks and example web-navigation tasks.                                                                                |
 | 2026‑10‑20 | [ORBIT framework](https://github.com/wlanderson0/orbit)                                                                 | framework          | web, desktop     | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools.                                       |
 | 2026‑10‑20 | [Building AI Browser Agents](https://www.deeplearning.ai/courses/building-ai-browser-agents)                            | Learning resources | web              | Browser-agent course with worked lessons on structured web extraction and multi-step browser interaction, followed by AgentQ search and self-correction concepts.                                                               |
@@ -205,7 +206,6 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑10‑20 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder)                                             | tool               | desktop, windows | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection.                                                                   |
 | 2026‑10‑20 | [MobileForge](https://github.com/kwai/MobileForge)                                                                      | framework          | android          | Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B.                      |
 | 2026‑10‑20 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent)                                                                    | framework          | android          | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding.                                                 |
-| 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK)                        | dataset            | web              | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation.                                                                                 |
 <!-- RECENT:END -->
 
 </details>

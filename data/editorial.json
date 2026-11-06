@@ -66819,6 +66819,95 @@
     "reviewed_at": "2026-10-18T11:55:00Z"
   },
   {
+    "name": "WebsiteBench",
+    "kind": "benchmark",
+    "url": "https://github.com/TIGER-AI-Lab/WebsiteBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "long-horizon",
+      "ui-design"
+    ],
+    "summary": "Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks.",
+    "scope": "core",
+    "verify_terms": [
+      "WebsiteBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md"
+    ],
+    "editorial_reviewed": true,
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes",
+      "details"
+    ],
+    "notes": "Read at commit 78f5558e. The README and docs/tasks.md were reviewed; the 70 tasks and 46,916 hidden cases were checked by summing the docs/tasks.md table. The README's paper badge has no link and the project page says the paper is coming soon, so no paper relation is recorded. Apache-2.0 is the README's statement for benchmark code, task definitions and verifier; the README says the reference websites reproduce third-party sites, belong to their owners and are provided for non-commercial research only. Leaderboard scores were not checked. This catalog's maintainers also publish this benchmark, so this review is not independent. Nothing was installed or run.",
+    "details": {
+      "repository_revision": "78f5558e8197bb91b3bab63428c12b92060ddc6f",
+      "repository_tree_sha": "a72e8de335c8f531b655eee7d4f9709dec40b366",
+      "leaderboard_url": "https://website-bench.com/#results",
+      "benchmark_protocol": {
+        "focus": [
+          "full-stack website reconstruction from browser exploration, without the source code",
+          "visual appearance and functional behavior of the rebuilt site"
+        ],
+        "setting": "interactive",
+        "observations": [],
+        "actions": [
+          "harness-defined browser actions through the task's local browser service"
+        ],
+        "evaluation": "Hidden test cases per task. A case passes when its functional checks pass and every visual checkpoint's flat-baseline-normalized RGB SSIM reaches 0.99. A task's reward is passed cases divided by cases, weighted equally.",
+        "counts": [
+          {
+            "basis": "reported",
+            "evidence_url": "https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md",
+            "population": "released tasks",
+            "qualifier": "exact",
+            "unit": "tasks",
+            "value": 70
+          },
+          {
+            "basis": "computed",
+            "evidence_url": "https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md",
+            "population": "hidden test cases summed over the docs/tasks.md table",
+            "qualifier": "exact",
+            "unit": "test cases",
+            "value": 46916
+          }
+        ],
+        "notes": "Agents run through selectable Harbor agents, so observations and actions depend on the agent. Each task requests 8 CPUs, 8 GiB of memory and 20 GiB of disk per environment, with up to 16 hours for the agent.",
+        "evidence_urls": [
+          "https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md",
+          "https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md"
+        ]
+      }
+    },
+    "additional_evidence": [
+      {
+        "role": "primary",
+        "method": "editorial_primary_review",
+        "supports": [
+          "details.benchmark_protocol"
+        ],
+        "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md",
+        "sha256": "d98bd00fb45abc63df0fddd6d9f9f5e669396cd53c157e5e06d6de9d103adf09",
+        "retrieved_at": "2026-11-06T06:21:44Z"
+      }
+    ],
+    "read_basis": "README.md and docs/tasks.md at the pinned commit, read in full; docs/running.md for setup and network policy.",
+    "reviewed_sha256": "c79cb821975c34552a46f01349edd0869c2f20c9a85d4b7811155d3fb7f7f0b2",
+    "reviewed_at": "2026-11-06T06:22:02Z"
+  },
+  {
     "name": "Taxy AI",
     "kind": "agent",
     "url": "https://github.com/TaxyAI/browser-extension",

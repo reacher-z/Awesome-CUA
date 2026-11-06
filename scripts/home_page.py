@@ -380,11 +380,11 @@ def hero(view, last_scan, zh=False) -> str:
                    f'<span class="hs-opt"><i class="live" aria-hidden="true"></i>Scanned {label}</span>')
     if zh:
         stats = (f'<span>已审核 <b>{total}</b> 条</span><span>其中论文与综述 <b>{papers}</b> 篇</span>'
-                 f'<span class="hs-opt">待审核候选 <b>{candidates}</b> 条</span>')
+                 f'<span class="hs-opt">尚未收录的扫描发现 <b>{candidates}</b> 条</span>')
         title, lede = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。', "收录面向计算机使用智能体的评测基准、数据集、模型与论文，每一条都核对过一手来源。"
     else:
         stats = (f'<span><b>{total}</b> reviewed records</span><span><b>{papers}</b> papers and surveys</span>'
-                 f'<span class="hs-opt"><b>{candidates}</b> candidates awaiting review</span>')
+                 f'<span class="hs-opt"><b>{candidates}</b> scan finds not yet in the catalog</span>')
         title, lede = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.', "Benchmarks, datasets, models and papers for agents that use computers, each checked against its primary source."
     return f'''<section class="screen" aria-labelledby="hero-h"><div class="screen-in" data-screen>
 <div class="wrap hero">

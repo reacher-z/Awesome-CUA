@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-197 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+199 source-reviewed resources tagged `cross-platform`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (101)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (15)](#datasets) · [Models (47)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Tools (1)](#tools) · [Surveys (11)](#surveys) · [Papers (103)](#papers)
 
 ## Benchmarks
 
@@ -197,6 +197,7 @@ All entries in this section: cross-platform.
 | 2025‑06‑03 | [GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents](https://arxiv.org/abs/2506.03143) | cross-platform | Uses an attention-based action head and a verifier to select relevant screen regions without generating coordinates as text. |
 | 2025‑06‑02 | [MLA-Trust: Benchmarking Trustworthiness of Multimodal LLM Agents in GUI Environments](https://arxiv.org/abs/2506.01616) | web, android, cross-platform | Benchmarks truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. |
 | 2025‑05‑29 | [ZeroGUI: Automating Online GUI Learning at Zero Human Cost](https://arxiv.org/abs/2505.23762) | cross-platform | Combines generated tasks, estimated success rewards, and online reinforcement learning to automate GUI-agent interaction training. |
+| 2025‑05‑23 | [TransBench: Breaking Barriers for Transferable Graphical User Interface Agents in Dynamic Digital Environments](https://arxiv.org/abs/2505.17629) | ios, android, web, cross-platform | Introduces TransBench to evaluate GUI grounding transfer across app versions, iOS, Android, Web, and functionally distinct applications. |
 | 2025‑05‑21 | [GUI-G1: Understanding R1-Zero-Like Training for Visual Grounding in GUI Agents](https://arxiv.org/abs/2505.15810) | cross-platform | Analyzes reasoning templates, reward design, and policy updates in GUI grounding, then proposes targeted adjustments to the training process. |
 | 2025‑05‑19 | [GEM: Gaussian Embedding Modeling for Out-of-Distribution Detection in GUI Agents](https://arxiv.org/abs/2505.12842) | desktop, web, cross-platform | GEM detects instructions outside a GUI agent’s capabilities by modeling distances in its input-embedding space with a Gaussian mixture. Experiments across mobile, computer and browser data also examine selective escalation to a cloud model when an input is detected as unfamiliar. |
 | 2025‑05‑19 | [Scalable Video-to-Dataset Generation for Cross-Platform Mobile Agents](https://arxiv.org/abs/2505.12632) | cross-platform | Introduces MONDAY and an automated pipeline that extracts mobile-navigation training data from instructional videos across operating-system platforms. |
@@ -219,6 +220,7 @@ All entries in this section: cross-platform.
 | 2025‑01‑31 | [Towards Computer-Using Personal Agents](https://arxiv.org/abs/2503.15515) | web, cross-platform | Proposes computer-using personal agents connected to user-controlled data repositories, discussing privacy, interoperability, and collaborative tasks. |
 | 2025‑01‑23 | [GUI-Bee: Align GUI Action Grounding to Novel Environments via Autonomous Exploration](https://arxiv.org/abs/2501.13896) | cross-platform | Collects environment-specific interaction data through autonomous exploration to adapt grounding models to previously unseen GUIs. |
 | 2025‑01‑21 | [UI-TARS: Pioneering Automated GUI Interaction with Native Agents](https://arxiv.org/abs/2501.12326) | cross-platform | Studies a screenshot-driven native GUI model with unified actions, deliberate reasoning, and iterative training on interaction traces. |
+| 2025‑01‑18 | [Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments](https://arxiv.org/abs/2501.10893) | web, desktop, cross-platform | Learn-by-interact synthesizes agent interaction trajectories from documentation and derives instructions from their histories for training or in-context use across web and desktop tasks. |
 | 2025‑01‑08 | [InfiGUIAgent: A Multimodal Generalist GUI Agent with Native Reasoning and Reflection](https://arxiv.org/abs/2501.04575) | cross-platform | Uses staged supervised training to combine GUI understanding and grounding with hierarchical reasoning and expectation-based reflection. |
 | 2024‑12‑27 | [OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis](https://arxiv.org/abs/2412.19723) | cross-platform | Builds GUI trajectories by exploring environments first and deriving tasks retrospectively, with reward-model filtering of generated trajectories. |
 | 2024‑12‑20 | [Aria-UI: Visual Grounding for GUI Instructions](https://arxiv.org/abs/2412.16256) | cross-platform | Introduces a vision-based grounding model trained with diverse synthetic instructions and action histories for context-sensitive GUI targeting. |

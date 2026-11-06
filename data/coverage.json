@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-11-06T04:18:34Z",
   "total_records": 2490,
-  "curated_records": 1674,
+  "curated_records": 1768,
   "bibliographic_records": 2018,
   "arxiv_active_records": 2004,
   "non_arxiv_bibliographic_records": 14,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 3312,
   "excluded_records": 1308,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 816,
+  "metadata_only_records": 722,
   "discovery_identifiers": 5884,
   "unindexed_candidates": 1971,
   "non_resource_candidates": 130,
@@ -394,563 +394,10 @@
       "cause": "reviewer_hold"
     },
     {
-      "id": "arxiv:1812.09195",
-      "name": "Learning to Navigate the Web",
-      "url": "https://arxiv.org/abs/1812.09195",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Curriculum and meta-learning guided RL for the QWeb DQN agent that follows instructions and fills web forms on World of Bits tasks. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:1812.11470",
-      "name": "A Systematic Literature Review of Automated Techniques for Functional GUI Testing of Mobile Applications",
-      "url": "https://arxiv.org/abs/1812.11470",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Systematic review of automated functional GUI testing tools for mobile apps; related GUI automation research that is not agent- or vision-model-driven. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:1902.07257",
-      "name": "DOM-Q-NET: Grounded RL on Structured Language",
-      "url": "https://arxiv.org/abs/1902.07257",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. RL architecture for web navigation over DOM trees with click and type actions, evaluated on MiniWoB. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2104.08560",
-      "name": "Mobile App Tasks with Iterative Feedback (MoTIF): Addressing Task Feasibility in Interactive Visual Environments",
-      "url": "https://arxiv.org/abs/2104.08560",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Releases MoTIF, a dataset of natural-language commands over many interactive mobile apps, including unsatisfiable requests with follow-up questions, to study task feasibility for app-operating agents. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2106.00133",
-      "name": "AppBuddy: Learning to Accomplish Tasks in Mobile Apps via Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2106.00133",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. RL framework and Gym-compatible platform where agents tap and type on on-screen elements to complete multi-step tasks in mobile apps. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2112.09332",
-      "name": "WebGPT: Browser-assisted question-answering with human feedback",
-      "url": "https://arxiv.org/abs/2112.09332",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Fine-tunes GPT-3 to answer long-form questions by searching and navigating a text-based web browser and collecting page references; a browsing QA agent rather than a general web-task agent. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2208.06032",
-      "name": "CORNET: Learning Table Formatting Rules By Example",
-      "url": "https://arxiv.org/abs/2208.06032",
-      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026): adjacent. Learns Excel conditional formatting rules from user-formatted example cells; spreadsheet automation by program synthesis rather than an agent operating the interface. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2210.03629",
-      "name": "ReAct: Synergizing Reasoning and Acting in Language Models",
-      "url": "https://arxiv.org/abs/2210.03629",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. General reasoning-and-acting prompting method evaluated on QA through a Wikipedia API, on ALFWorld and on the WebShop web environment, which is one of several settings. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2212.04732",
-      "name": "Fill in the Blank: Context-aware Automated Text Input Generation for Mobile GUI Testing",
-      "url": "https://arxiv.org/abs/2212.04732",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. LLM-based generation of context-aware text inputs for automated mobile GUI testing, integrated with GUI testing tools to reach more app pages and bugs. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2301.13779",
-      "name": "FLAME: A small language model for spreadsheet formulas",
-      "url": "https://arxiv.org/abs/2301.13779",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Trains a small transformer on Excel formulas for formula repair, completion and retrieval; spreadsheet formula assistance is office automation through formulas rather than agents operating a GUI. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2305.09699",
-      "name": "Mobile User Interface Element Detection Via Adaptively Prompt Tuning",
-      "url": "https://arxiv.org/abs/2305.09699",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Mobile UI element detection that fuses OCR text with visual features via adaptive prompt tuning on CLIP-based detectors, and releases the MUI-zh dataset. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2306.01987",
-      "name": "Prompting Is All You Need: Automated Android Bug Replay with Large Language Models",
-      "url": "https://arxiv.org/abs/2306.01987",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Uses prompted LLMs with few-shot chain-of-thought to reproduce Android app bugs by replaying the steps described in bug reports, a form of LLM-driven mobile app testing. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2308.05898",
-      "name": "Unveiling the Tricks: Automated Detection of Dark Patterns in Mobile Applications",
-      "url": "https://arxiv.org/abs/2308.05898",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Detects dark patterns in mobile app UIs by extracting UI properties with vision and text matching, plus a labeled UI dataset; UI analysis and critique rather than an agent. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2310.02424",
-      "name": "AXNav: Replaying Accessibility Tests from Natural Language",
-      "url": "https://arxiv.org/abs/2310.02424",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. LLM agent combined with pixel-based UI understanding executes natural-language accessibility tests on mobile apps, including VoiceOver, and flags issues in chaptered videos. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2310.07128",
-      "name": "CrashTranslator: Automatically Reproducing Mobile Application Crashes Directly from Stack Trace",
-      "url": "https://arxiv.org/abs/2310.07128",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Uses an LLM plus RL-guided search to predict GUI exploration steps that reproduce Android app crashes from stack traces; LLM-driven mobile app testing evaluated on 58 apps. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2310.13518",
-      "name": "Vision-Based Mobile App GUI Testing: A Survey",
-      "url": "https://arxiv.org/abs/2310.13518",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Surveys vision-based mobile app GUI testing, where screenshot-based UI perception drives test generation and record-and-replay on app interfaces. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2310.15780",
-      "name": "Make LLM a Testing Expert: Bringing Human-like Interaction to Mobile GUI Testing via Functionality-aware Decisions",
-      "url": "https://arxiv.org/abs/2310.15780",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. LLM-driven mobile GUI testing that feeds GUI page information to the model, executes generated actions with functionality-aware memory, and finds bugs in Google Play apps. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2311.10751",
-      "name": "ProAgent: From Robotic Process Automation to Agentic Process Automation",
-      "url": "https://arxiv.org/abs/2311.10751",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. LLM agent that constructs and executes automation workflows from instructions, framed as agentic process automation beyond RPA; workflow automation rather than direct GUI operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2312.10170",
-      "name": "UINav: A Practical Approach to Train On-Device Automation Agents",
-      "url": "https://arxiv.org/abs/2312.10170",
-      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026): core. Demonstration-based training of on-device agents that drive mobile app user interfaces, using a referee model for feedback and automatic demonstration augmentation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2402.05202",
-      "name": "UEyes: An Eye-Tracking Dataset across User Interface Types",
-      "url": "https://arxiv.org/abs/2402.05202",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Releases eye-tracking data over webpage, desktop, mobile and poster UI screenshots and compares viewing behavior across UI types; this is visual-attention analysis of interfaces, not an agent. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2402.11208",
-      "name": "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents",
-      "url": "https://arxiv.org/abs/2402.11208",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Studies backdoor attacks on LLM agents, implemented on web shopping and tool-use tasks, so a web environment is one of two evaluation settings. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2403.03636",
-      "name": "SheetAgent: Towards A Generalist Agent for Spreadsheet Reasoning and Manipulation via Large Language Models",
-      "url": "https://arxiv.org/abs/2403.03636",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. LLM agent and benchmark (SheetRM) for long-horizon spreadsheet manipulation through programmatic operations; office automation without GUI operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2403.08978",
-      "name": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
-      "url": "https://arxiv.org/abs/2403.08978",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Generates context-aware guidelines from offline experience for LLM agents; web navigation is the motivating domain and one of several evaluation domains, including real-world websites. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2403.12037",
-      "name": "MineDreamer: Learning to Follow Instructions via Chain-of-Imagination for Simulated-World Control",
-      "url": "https://arxiv.org/abs/2403.12037",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Minecraft instruction-following agent that imagines goal images and turns them into low-level keyboard-and-mouse actions; a game agent controlled through keyboard and mouse rather than a GUI or computer task. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2403.20271",
-      "name": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
-      "url": "https://arxiv.org/abs/2403.20271",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. General visual-prompting MLLM framework whose 1.2M-sample instruction data and benchmark include mobile and web screenshots as one of several image domains. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2404.10179",
-      "name": "Scaling Instructable Agents Across Many Simulated Worlds",
-      "url": "https://arxiv.org/abs/2404.10179",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Instructable agents across 3D research environments and commercial video games that act through image observations and keyboard-and-mouse outputs, a generic computer interface. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2404.12500",
-      "name": "UIClip: A Data-driven Model for Assessing User Interface Design",
-      "url": "https://arxiv.org/abs/2404.12500",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. CLIP-style model that scores UI screenshots for design quality and relevance, supporting UI code generation and design suggestions; UI critique rather than agent control. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2404.12608",
-      "name": "Auto-Formula: Recommend Formulas in Spreadsheets using Contrastive Learning for Table Representations",
-      "url": "https://arxiv.org/abs/2404.12608",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Recommends spreadsheet formulas for target cells by learning from similar enterprise spreadsheets; spreadsheet formula assistance, an office-automation precedent, without an agent operating the interface. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2404.12753",
-      "name": "AutoScraper: A Progressive Understanding Web Agent for Web Scraper Generation",
-      "url": "https://arxiv.org/abs/2404.12753",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. LLM web agent that learns HTML structure across pages to generate reusable web scrapers; extraction-oriented web automation rather than interactive page operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2404.13050",
-      "name": "FlowMind: Automatic Workflow Generation with LLMs",
-      "url": "https://arxiv.org/abs/2404.13050",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. LLM-generated API workflows proposed to extend robotic process automation to ad hoc requests, evaluated on a finance QA dataset; RPA-style process automation through APIs, not GUI operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2405.03710",
-      "name": "Automating the Enterprise with Foundation Models",
-      "url": "https://arxiv.org/abs/2405.03710",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. ECLAIR uses multimodal foundation models in place of hand-coded RPA bots to understand and run enterprise workflows end to end; RPA-style automation, though the abstract never states GUI operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2406.14596",
-      "name": "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
-      "url": "https://arxiv.org/abs/2406.14596",
-      "reason": "Relevance screening of the complete arXiv v6 abstract (5 November 2026): adjacent. VLM agents turn imperfect trajectories into reusable abstracted examples; VisualWebArena is one of three detailed evaluation settings alongside TEACh and Ego4D. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2406.14991",
-      "name": "SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation",
-      "url": "https://arxiv.org/abs/2406.14991",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Spreadsheet manipulation benchmark built from real Excel forum questions with multi-file test cases; office application automation by LLMs, with no GUI operation described. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2407.16741",
-      "name": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
-      "url": "https://arxiv.org/abs/2407.16741",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Open platform for generalist agents that write code, use a command line and browse the web, evaluated on SWE-bench, WebArena and other tasks, so web browsing is one material setting. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2407.20183",
-      "name": "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
-      "url": "https://arxiv.org/abs/2407.20183",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Multi-agent deep-search framework that plans sub-questions and reads content from hundreds of web pages found through search engines; web information seeking rather than page operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2408.07199",
-      "name": "Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents",
-      "url": "https://arxiv.org/abs/2408.07199",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Combines MCTS, self-critique and off-policy DPO to train web agents, evaluated on WebShop and on live real-world booking websites. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2409.20566",
-      "name": "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
-      "url": "https://arxiv.org/abs/2409.20566",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. General multimodal LLM family whose abstract includes a dedicated MM1.5-UI variant tailored to mobile UI understanding. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2410.02052",
-      "name": "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
-      "url": "https://arxiv.org/abs/2410.02052",
-      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026): core. Reflective MCTS test-time search plus exploratory learning that distills search into VLM web agents, evaluated on VisualWebArena. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2410.17236",
-      "name": "Large Language Models Empowered Personalized Web Agents",
-      "url": "https://arxiv.org/abs/2410.17236",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Personalized web agent benchmark (PersonalWAB) and memory-based alignment method (PUMA); agents complete web tasks through Web function calls rather than page-level GUI actions. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2410.19054",
-      "name": "Infogent: An Agent-Based Framework for Web Information Aggregation",
-      "url": "https://arxiv.org/abs/2410.19054",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Modular web agent for information aggregation, including a setting that navigates the browser from webpage screenshots, evaluated on AssistantBench as well as FRAMES. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2411.05451",
-      "name": "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models",
-      "url": "https://arxiv.org/abs/2411.05451",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Fine-tunes LLMs to orchestrate application workflows written as code from Apple Shortcuts and RoutineHub over 1,503 app APIs; API-level process automation rather than GUI control. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2411.17933",
-      "name": "Automated Test Transfer Across Android Apps Using Large Language Models",
-      "url": "https://arxiv.org/abs/2411.17933",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Uses LLMs to migrate end-to-end UI tests between Android apps with similar functions; LLM-driven mobile GUI testing. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2412.04626",
-      "name": "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
-      "url": "https://arxiv.org/abs/2412.04626",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Releases a large multimodal document and code dataset whose benchmark includes GUI reasoning and Screenshot2HTML tasks; screen understanding is a material but not central part. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2412.13810",
-      "name": "CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers",
-      "url": "https://arxiv.org/abs/2412.13810",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Tool-augmented VLLM agent that drives the FreeCAD application through its Python API for CAD tasks; desktop application automation via scripts rather than GUI control. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2501.02863",
-      "name": "Beyond Pass or Fail: Multi-Dimensional Benchmarking of Foundation Models for Goal-based Mobile UI Navigation",
-      "url": "https://arxiv.org/abs/2501.02863",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Sphinx benchmark for multi-dimensional evaluation of foundation models on goal-based mobile UI navigation, using Google Play apps and WeChat UI test cases. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2501.10893",
-      "name": "Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments",
-      "url": "https://arxiv.org/abs/2501.10893",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Synthesizes agent trajectories from documentation with backward construction, evaluated mostly on web and desktop environments (WebArena, OSWorld, Spider2-V) plus SWE-bench. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2501.12485",
-      "name": "R2D2: Remembering, Replaying and Dynamic Decision Making with a Reflective Agentic Memory",
-      "url": "https://arxiv.org/abs/2501.12485",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Web agent framework that combines a replay-buffer map of visited pages with reflective error analysis, evaluated on WebArena. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.01600",
-      "name": "Reinforcement Learning for Long-Horizon Interactive LLM Agents",
-      "url": "https://arxiv.org/abs/2502.01600",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. RL method (LOOP) for agents that operate the multi-app AppWorld environment through direct API calls; app automation through APIs without a GUI. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.03971",
-      "name": "RWKV-UI: UI Understanding with Enhanced Perception and Reasoning",
-      "url": "https://arxiv.org/abs/2502.03971",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. RWKV-based VLM for high-resolution web UI understanding that uses layout detection and chain-of-thought visual prompts. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.06776",
-      "name": "InSTA: Towards Internet-Scale Training For Agents",
-      "url": "https://arxiv.org/abs/2502.06776",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Builds an LLM pipeline that proposes tasks on 150k websites, collects and judges web-agent trajectories, and trains small web navigation agents on the resulting data. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.12130",
-      "name": "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
-      "url": "https://arxiv.org/abs/2502.12130",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Learns reward models from random environment exploration to guide LLM agent planning; online shopping is named among its decision-making domains alongside scientific reasoning and math. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.12561",
-      "name": "UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design",
-      "url": "https://arxiv.org/abs/2502.12561",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Uses LLM agents with a universal browser connector to simulate many users acting on a target website for usability testing, reporting their actions, reasoning and recordings. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.13130",
-      "name": "Magma: A Foundation Model for Multimodal AI Agents",
-      "url": "https://arxiv.org/abs/2502.13130",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Multimodal agent foundation model pretrained with Set-of-Mark labels on clickable GUI elements, reporting UI navigation results alongside robot manipulation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.13923",
-      "name": "Qwen2.5-VL Technical Report",
-      "url": "https://arxiv.org/abs/2502.13923",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. General vision-language model report that highlights acting as a visual agent for operating computers and mobile devices among its core capabilities. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.14496",
-      "name": "Advancing Language Multi-Agent Learning with Credit Re-Assignment for Interactive Environment Generalization",
-      "url": "https://arxiv.org/abs/2502.14496",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Multi-agent RL framework for UI agents with LLM-assigned process rewards, aimed at generalizing across mobile-operation and web-browsing environments. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.16796",
-      "name": "MobileSteward: Integrating Multiple App-Oriented Agents with Self-Evolution to Automate Cross-App Instructions",
-      "url": "https://arxiv.org/abs/2502.16796",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Multi-agent mobile phone agent framework with app-specialized agents and self-evolving memory for cross-app instructions, plus a real-device cross-app benchmark. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2502.18356",
-      "name": "WebGames: Challenging General-Purpose Web-Browsing AI Agents",
-      "url": "https://arxiv.org/abs/2502.18356",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Hermetic benchmark of 50+ browser interaction challenges for general-purpose web-browsing agents, comparing computer-use and vision-language models with humans. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2503.02878",
-      "name": "Language Models can Self-Improve at State-Value Estimation for Better Search",
-      "url": "https://arxiv.org/abs/2503.02878",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Self-taught lookahead value models for search, motivated by and mainly evaluated on web agent tasks, with generalization to multi-hop QA and math puzzles. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2503.10809",
-      "name": "MIP against Agent: Malicious Image Patches Hijacking Multimodal OS Agents",
-      "url": "https://arxiv.org/abs/2503.10809",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Adversarial screen patches, e.g. in wallpapers or social posts, that hijack screenshot-driven OS agents into harmful mouse and keyboard actions; security of computer-use agents. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2503.13843",
-      "name": "WebNav: An Intelligent Agent for Voice-Controlled Web Navigation",
-      "url": "https://arxiv.org/abs/2503.13843",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Voice-controlled multimodal web navigation agent that combines screenshots with DOM labeling to execute actions on web interfaces. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2503.16365",
-      "name": "JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse",
-      "url": "https://arxiv.org/abs/2503.16365",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Post-trains VLMs into vision-language-action agents that play Minecraft from visual input with keyboard and mouse actions; game play through keyboard and mouse control rather than GUI or computer tasks. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2503.20036",
-      "name": "Agents in the Sandbox: End-to-End Crash Bug Reproduction for Minecraft",
-      "url": "https://arxiv.org/abs/2503.20036",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. A vision-based LLM agent with a custom macro API executes bug-reproduction steps inside Minecraft and is compared with computer-use model baselines; vision-driven game testing rather than GUI app work. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2504.06821",
-      "name": "Inducing Programmatic Skills for Agentic Tasks",
-      "url": "https://arxiv.org/abs/2504.06821",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Web agents induce, verify and reuse program-based skills that combine low-level clicks into reusable routines, evaluated on WebArena and cross-website transfer. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2504.07491",
-      "name": "Kimi-VL Technical Report",
-      "url": "https://arxiv.org/abs/2504.07491",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. General MoE vision-language model whose abstract reports computer-use results on OSWorld and GUI grounding on ScreenSpot-Pro alongside broad multimodal benchmarks. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2504.09723",
-      "name": "AgentA/B: Automated and Scalable Web A/BTesting with Interactive LLM Agents",
-      "url": "https://arxiv.org/abs/2504.09723",
-      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026): core. Persona-driven LLM agents navigate live webpages, searching, clicking, filtering and buying, to simulate web A/B tests at scale, an agent-driven web testing system. An curation proposal is open in pull request #4328. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2504.11543",
-      "name": "REAL: Benchmarking Autonomous Agents on Deterministic Simulations of Real Websites",
-      "url": "https://arxiv.org/abs/2504.11543",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Benchmark of deterministic replicas of 11 real websites with 112 tasks for evaluating web agents on retrieval and state-changing actions. An curation proposal is open in pull request #4321. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2504.12682",
-      "name": "WebLists: Extracting Structured Information From Complex Interactive Websites Using Executable LLM Agents",
-      "url": "https://arxiv.org/abs/2504.12682",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Benchmark of structured data-extraction tasks that require web agents to navigate and configure interactive sites, plus an agent that turns its execution into replayable CSS-selector programs. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.03733",
-      "name": "WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional Websites from Scratch",
-      "url": "https://arxiv.org/abs/2505.03733",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Benchmark for code agents that generate multi-file websites; functionality is checked by a web-navigation agent executing UI test operations, so it is UI code generation with agent-driven web testing. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.05849",
-      "name": "AgentVigil: Generic Black-Box Red-teaming for Indirect Prompt Injection against LLM Agents",
-      "url": "https://arxiv.org/abs/2505.05849",
-      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026): adjacent. MCTS-guided fuzzing that finds indirect prompt injections against LLM agents, tested on AgentDojo, the VWA-adv web-agent benchmark and real web navigation toward malicious URLs. An curation proposal is open in pull request #4315. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.05895",
-      "name": "Leveraging Vision-Language Models for Visual Grounding and Analysis of Automotive UI",
-      "url": "https://arxiv.org/abs/2505.05895",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Fine-tunes a VLM for grounding and evaluating automotive infotainment UIs with a new annotated dataset, and also reports ScreenSpot GUI grounding results. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.07062",
-      "name": "Seed1.5-VL Technical Report",
-      "url": "https://arxiv.org/abs/2505.07062",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Technical report of a general vision-language foundation model whose abstract highlights GUI control results against OpenAI CUA and Claude as a material agent capability. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.10887",
-      "name": "InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction",
-      "url": "https://arxiv.org/abs/2505.10887",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Modular generalist computer-interaction agent combining tool-based and pure-vision agents, evaluated on OSWorld as well as GAIA and SWE-Bench. An curation proposal is open in pull request #4289. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.10978",
-      "name": "Group-in-Group Policy Optimization for LLM Agent Training",
-      "url": "https://arxiv.org/abs/2505.10978",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Group-based RL algorithm with step-level credit assignment for LLM agents, evaluated on WebShop together with ALFWorld and search QA. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.11717",
-      "name": "WebInject: Prompt Injection Attack to Web Agents",
-      "url": "https://arxiv.org/abs/2505.11717",
-      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026): core. Prompt injection attack that optimizes pixel perturbations on rendered webpages so that screenshot-based MLLM web agents perform attacker-chosen actions. An curation proposal is open in pull request #4309. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
       "id": "arxiv:2505.13887",
       "name": "Mobile-Agent-V: A Video-Guided Approach for Effortless and Efficient Operational Knowledge Injection in Mobile Automation",
       "url": "https://arxiv.org/abs/2505.13887",
       "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Injects operational knowledge from demonstration videos into a mobile automation agent and adds a benchmark for knowledge-dependent mobile tasks. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.14963",
-      "name": "MedBrowseComp: Benchmarking Medical Deep Research and Computer Use",
-      "url": "https://arxiv.org/abs/2505.14963",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Benchmark of multi-hop medical questions that agents answer by retrieving from live domain knowledge bases, framed as testing deep-research and computer-use systems. An curation proposal is open in pull request #4269. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.15859",
-      "name": "AutoData: A Multi-Agent System for Open Web Data Collection",
-      "url": "https://arxiv.org/abs/2505.15859",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Multi-agent LLM system that collects datasets from live websites given a natural-language request, with a new web data collection benchmark; web scraping rather than interactive page operation. An curation proposal is open in pull request #4326. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.17629",
-      "name": "TransBench: Breaking Barriers for Transferable Graphical User Interface Agents in Dynamic Digital Environments",
-      "url": "https://arxiv.org/abs/2505.17629",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. TransBench evaluates GUI agent grounding transfer across app versions, platforms (iOS, Android, Web) and applications. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.20023",
-      "name": "Training LLM-Based Agents with Synthetic Self-Reflected Trajectories and Partial Masking",
-      "url": "https://arxiv.org/abs/2505.20023",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. General agent training with self-reflected synthetic trajectories and partial masking, evaluated on WebShop alongside ALFWorld and SciWorld. An curation proposal is open in pull request #4235. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.20732",
-      "name": "SPA-RL: Reinforcing LLM Agents via Stepwise Progress Attribution",
-      "url": "https://arxiv.org/abs/2505.20732",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. General stepwise reward-attribution RL for LLM agents, evaluated on WebShop alongside ALFWorld and VirtualHome. An curation proposal is open in pull request #4179. Awaiting an editorial annotation.",
       "cause": "annotation_pending"
     },
     {
@@ -961,115 +408,10 @@
       "cause": "annotation_pending"
     },
     {
-      "id": "arxiv:2505.23678",
-      "name": "Grounded Reinforcement Learning for Visual Reasoning",
-      "url": "https://arxiv.org/abs/2505.23678",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Visually grounded RL for general VLM reasoning, evaluated in part on ScreenSpot and VisualWebArena with notable gains in localizing small GUI elements. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2505.24876",
-      "name": "Agent-X: Evaluating Deep Multimodal Reasoning in Vision-Centric Agentic Tasks",
-      "url": "https://arxiv.org/abs/2505.24876",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Vision-centric agent benchmark with tool use and step-level grading whose six environments include web browsing alongside driving, surveillance, sports and math; web is one material setting among several. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.00520",
-      "name": "ResTest: Targeted Coverage of Residual Not-Covered Code Using Large Language Models for Web GUI Testing",
-      "url": "https://arxiv.org/abs/2506.00520",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Coverage-guided LLM web GUI testing in which an LLM-driven GUI agent executes inferred untested functionalities on web applications. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.01520",
-      "name": "FormFactory: An Interactive Benchmarking Suite for Multimodal Form-Filling Agents",
-      "url": "https://arxiv.org/abs/2506.01520",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Introduces an interactive web-based benchmark for multimodal agents that fill online forms by matching instructions to on-screen fields; evaluated MLLMs stay below 5% accuracy. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.01952",
-      "name": "WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks",
-      "url": "https://arxiv.org/abs/2506.01952",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): core. Extension of WebArena with 532 tedious web chores that stress memory and calculation for web browsing agents. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.03569",
-      "name": "MiMo-VL Technical Report",
-      "url": "https://arxiv.org/abs/2506.03569",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. General vision-language model report that explicitly claims strong GUI grounding results on OSWorld-G against specialized GUI models. An curation proposal is open in pull request #4199. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.06287",
-      "name": "Deep Research Bench: Evaluating AI Web Research Agents",
-      "url": "https://arxiv.org/abs/2506.06287",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Benchmark of multi-step web research tasks using a frozen corpus of scraped pages that agents search and read; deep-research browsing rather than GUI operation. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.10953",
-      "name": "Build the web for agents, not agents for the web",
-      "url": "https://arxiv.org/abs/2506.10953",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Position paper arguing that web agents should use purpose-built agentic web interfaces (AWI) instead of human-oriented pages, with design principles for agent navigation of websites. An curation proposal is open in pull request #4181. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
       "id": "arxiv:2506.14079",
       "name": "FormGym: Doing Paperwork with Agents",
       "url": "https://arxiv.org/abs/2506.14079",
       "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026): core. Form-filling benchmark on document images for computer agents, evaluating VLAs and GUI agents and adding a field-localization tool to help them place text. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.19998",
-      "name": "Doc2Agent: Scalable Generation of Tool-Using Agents from API Documentation",
-      "url": "https://arxiv.org/abs/2506.19998",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Generates validated Python tools from API documentation for tool agents; WebArena is one material evaluation setting alongside real-world and scientific APIs. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.21252",
-      "name": "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
-      "url": "https://arxiv.org/abs/2506.21252",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Step-level reward-model benchmark for multimodal agents covering perception, planning and safety, with web navigation named among scenarios alongside embodied tasks. An curation proposal is open in pull request #4213. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2506.21506",
-      "name": "Mind2Web 2: Evaluating Agentic Search with Agent-as-a-Judge",
-      "url": "https://arxiv.org/abs/2506.21506",
-      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026): adjacent. Benchmark of long-horizon agentic search tasks that require live web browsing, with an agent-as-a-judge evaluator for deep-research systems. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2507.01006",
-      "name": "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2507.01006",
-      "reason": "Relevance screening of the complete arXiv v6 abstract (5 November 2026): adjacent. General VLM family trained with curriculum RL; the abstract lists GUI-based agents among its target tasks and highlights competitive GUI-agent benchmark results. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2507.04370",
-      "name": "WebSynthesis: World-Model-Guided MCTS for Efficient WebUI-Trajectory Synthesis",
-      "url": "https://arxiv.org/abs/2507.04370",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. WebSynthesis uses a learned web world model and MCTS to synthesize web UI trajectories for training web agents. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2507.10202",
-      "name": "A Training-Free, Task-Agnostic Framework for Enhancing MLLM Performance on High-Resolution Images",
-      "url": "https://arxiv.org/abs/2507.10202",
-      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): adjacent. Training-free two-stage method for MLLMs on high-resolution images, with 4K GUI grounding as a main evaluation alongside 4K and 8K perception benchmarks. Awaiting an editorial annotation.",
-      "cause": "annotation_pending"
-    },
-    {
-      "id": "arxiv:2507.11662",
-      "name": "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification",
-      "url": "https://arxiv.org/abs/2507.11662",
-      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): core. Studies agreement bias in MLLM verifiers for web navigation and computer use, proposes self-grounded verification, and releases an improved VisualWebArena. Awaiting an editorial annotation.",
       "cause": "annotation_pending"
     },
     {
@@ -5948,21 +5290,21 @@
     "infrastructure": 14,
     "learning": 2,
     "model": 98,
-    "paper": 1999,
+    "paper": 1997,
     "product": 20,
-    "survey": 19,
+    "survey": 21,
     "tool": 22
   },
   "curated_by_environment": {
-    "android": 323,
-    "cross-platform": 197,
-    "desktop": 334,
+    "android": 327,
+    "cross-platform": 199,
+    "desktop": 337,
     "harmonyos": 3,
-    "ios": 22,
+    "ios": 23,
     "linux": 54,
     "macos": 30,
-    "unspecified": 385,
-    "web": 649,
+    "unspecified": 435,
+    "web": 689,
     "windows": 65
   },
   "curated_by_kind_and_environment": {
@@ -6038,15 +5380,15 @@
       "windows": 5
     },
     "paper": {
-      "android": 196,
-      "cross-platform": 101,
-      "desktop": 214,
+      "android": 200,
+      "cross-platform": 103,
+      "desktop": 217,
       "harmonyos": 2,
-      "ios": 8,
+      "ios": 9,
       "linux": 23,
       "macos": 14,
-      "unspecified": 347,
-      "web": 463,
+      "unspecified": 395,
+      "web": 503,
       "windows": 38
     },
     "product": {
@@ -6058,7 +5400,7 @@
       "cross-platform": 11,
       "desktop": 1,
       "ios": 1,
-      "unspecified": 4,
+      "unspecified": 6,
       "web": 3,
       "windows": 1
     },
@@ -6106,7 +5448,7 @@
       "indexed": 219,
       "indexed_resources": 218,
       "resolved_aliases": 6,
-      "curated": 215,
+      "curated": 217,
       "excluded": 7,
       "set_aside": 29,
       "unindexed": 83
@@ -6136,7 +5478,7 @@
       "indexed": 169,
       "indexed_resources": 168,
       "resolved_aliases": 2,
-      "curated": 167,
+      "curated": 168,
       "excluded": 0,
       "set_aside": 14,
       "unindexed": 37
@@ -6166,7 +5508,7 @@
       "indexed": 189,
       "indexed_resources": 189,
       "resolved_aliases": 0,
-      "curated": 178,
+      "curated": 184,
       "excluded": 9,
       "set_aside": 6,
       "unindexed": 20
@@ -6196,7 +5538,7 @@
       "indexed": 92,
       "indexed_resources": 92,
       "resolved_aliases": 1,
-      "curated": 87,
+      "curated": 88,
       "excluded": 4,
       "set_aside": 6,
       "unindexed": 30
@@ -6311,7 +5653,7 @@
       "indexed": 502,
       "indexed_resources": 502,
       "resolved_aliases": 5,
-      "curated": 459,
+      "curated": 460,
       "excluded": 2,
       "set_aside": 9,
       "unindexed": 75
@@ -6341,7 +5683,7 @@
       "indexed": 68,
       "indexed_resources": 68,
       "resolved_aliases": 0,
-      "curated": 63,
+      "curated": 64,
       "excluded": 1,
       "set_aside": 2,
       "unindexed": 23
@@ -6371,7 +5713,7 @@
       "indexed": 39,
       "indexed_resources": 39,
       "resolved_aliases": 0,
-      "curated": 34,
+      "curated": 36,
       "excluded": 10,
       "set_aside": 3,
       "unindexed": 26
@@ -6521,7 +5863,7 @@
       "indexed": 254,
       "indexed_resources": 254,
       "resolved_aliases": 0,
-      "curated": 168,
+      "curated": 169,
       "excluded": 0,
       "set_aside": 1,
       "unindexed": 2
@@ -6611,7 +5953,7 @@
       "indexed": 187,
       "indexed_resources": 187,
       "resolved_aliases": 3,
-      "curated": 184,
+      "curated": 186,
       "excluded": 9,
       "set_aside": 6,
       "unindexed": 45
@@ -6641,7 +5983,7 @@
       "indexed": 70,
       "indexed_resources": 70,
       "resolved_aliases": 0,
-      "curated": 66,
+      "curated": 68,
       "excluded": 7,
       "set_aside": 4,
       "unindexed": 10
@@ -6701,7 +6043,7 @@
       "indexed": 59,
       "indexed_resources": 59,
       "resolved_aliases": 0,
-      "curated": 56,
+      "curated": 59,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 37
@@ -6731,7 +6073,7 @@
       "indexed": 196,
       "indexed_resources": 196,
       "resolved_aliases": 0,
-      "curated": 144,
+      "curated": 146,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 0
@@ -6761,7 +6103,7 @@
       "indexed": 42,
       "indexed_resources": 42,
       "resolved_aliases": 0,
-      "curated": 34,
+      "curated": 35,
       "excluded": 9,
       "set_aside": 13,
       "unindexed": 8
@@ -6821,7 +6163,7 @@
       "indexed": 133,
       "indexed_resources": 133,
       "resolved_aliases": 2,
-      "curated": 129,
+      "curated": 131,
       "excluded": 32,
       "set_aside": 14,
       "unindexed": 36
@@ -7691,7 +7033,7 @@
       "indexed": 451,
       "indexed_resources": 451,
       "resolved_aliases": 56,
-      "curated": 386,
+      "curated": 391,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 45
@@ -7721,7 +7063,7 @@
       "indexed": 104,
       "indexed_resources": 104,
       "resolved_aliases": 1,
-      "curated": 100,
+      "curated": 103,
       "excluded": 3,
       "set_aside": 2,
       "unindexed": 47
@@ -7751,7 +7093,7 @@
       "indexed": 238,
       "indexed_resources": 238,
       "resolved_aliases": 2,
-      "curated": 198,
+      "curated": 208,
       "excluded": 8,
       "set_aside": 0,
       "unindexed": 88
@@ -7781,7 +7123,7 @@
       "indexed": 92,
       "indexed_resources": 92,
       "resolved_aliases": 0,
-      "curated": 72,
+      "curated": 75,
       "excluded": 35,
       "set_aside": 6,
       "unindexed": 88
@@ -7811,7 +7153,7 @@
       "indexed": 160,
       "indexed_resources": 160,
       "resolved_aliases": 0,
-      "curated": 135,
+      "curated": 145,
       "excluded": 38,
       "set_aside": 2,
       "unindexed": 5
@@ -7931,7 +7273,7 @@
       "indexed": 84,
       "indexed_resources": 84,
       "resolved_aliases": 0,
-      "curated": 81,
+      "curated": 84,
       "excluded": 0,
       "set_aside": 11,
       "unindexed": 26
@@ -7961,7 +7303,7 @@
       "indexed": 52,
       "indexed_resources": 52,
       "resolved_aliases": 0,
-      "curated": 51,
+      "curated": 52,
       "excluded": 2,
       "set_aside": 4,
       "unindexed": 16
@@ -7991,7 +7333,7 @@
       "indexed": 100,
       "indexed_resources": 100,
       "resolved_aliases": 0,
-      "curated": 93,
+      "curated": 100,
       "excluded": 0,
       "set_aside": 3,
       "unindexed": 36
@@ -8021,7 +7363,7 @@
       "indexed": 16,
       "indexed_resources": 16,
       "resolved_aliases": 0,
-      "curated": 8,
+      "curated": 16,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 16
@@ -8051,7 +7393,7 @@
       "indexed": 66,
       "indexed_resources": 66,
       "resolved_aliases": 0,
-      "curated": 60,
+      "curated": 64,
       "excluded": 4,
       "set_aside": 1,
       "unindexed": 26
@@ -8081,7 +7423,7 @@
       "indexed": 15,
       "indexed_resources": 15,
       "resolved_aliases": 0,
-      "curated": 3,
+      "curated": 5,
       "excluded": 6,
       "set_aside": 1,
       "unindexed": 18
@@ -8111,7 +7453,7 @@
       "indexed": 7,
       "indexed_resources": 7,
       "resolved_aliases": 0,
-      "curated": 5,
+      "curated": 7,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 12
@@ -8141,7 +7483,7 @@
       "indexed": 19,
       "indexed_resources": 19,
       "resolved_aliases": 0,
-      "curated": 15,
+      "curated": 17,
       "excluded": 0,
       "set_aside": 1,
       "unindexed": 30
@@ -8171,7 +7513,7 @@
       "indexed": 19,
       "indexed_resources": 19,
       "resolved_aliases": 0,
-      "curated": 15,
+      "curated": 19,
       "excluded": 5,
       "set_aside": 3,
       "unindexed": 62
@@ -8201,7 +7543,7 @@
       "indexed": 10,
       "indexed_resources": 10,
       "resolved_aliases": 0,
-      "curated": 9,
+      "curated": 10,
       "excluded": 2,
       "set_aside": 1,
       "unindexed": 32
@@ -8261,7 +7603,7 @@
       "indexed": 33,
       "indexed_resources": 33,
       "resolved_aliases": 0,
-      "curated": 23,
+      "curated": 28,
       "excluded": 4,
       "set_aside": 0,
       "unindexed": 46
@@ -8322,7 +7664,7 @@
       "indexed": 1102,
       "indexed_resources": 1102,
       "resolved_aliases": 0,
-      "curated": 784,
+      "curated": 800,
       "excluded": 13,
       "set_aside": 0,
       "unindexed": 0
@@ -8622,7 +7964,7 @@
       "indexed": 17,
       "indexed_resources": 17,
       "resolved_aliases": 0,
-      "curated": 16,
+      "curated": 17,
       "excluded": 1,
       "set_aside": 0,
       "unindexed": 0
@@ -8652,7 +7994,7 @@
       "indexed": 8,
       "indexed_resources": 8,
       "resolved_aliases": 0,
-      "curated": 6,
+      "curated": 8,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 0
@@ -8772,7 +8114,7 @@
       "indexed": 27,
       "indexed_resources": 27,
       "resolved_aliases": 0,
-      "curated": 24,
+      "curated": 27,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 0
@@ -9097,7 +8439,7 @@
       "indexed": 4,
       "indexed_resources": 4,
       "resolved_aliases": 0,
-      "curated": 0,
+      "curated": 3,
       "excluded": 0,
       "set_aside": 0,
       "unindexed": 0
@@ -9157,7 +8499,7 @@
       "indexed": 61,
       "indexed_resources": 61,
       "resolved_aliases": 0,
-      "curated": 53,
+      "curated": 55,
       "excluded": 13,
       "set_aside": 22,
       "unindexed": 21

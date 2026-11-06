@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "71fa8120c7ab5950f78b460c9af0199d879efc83388f5ec4eafc05c37f214e5b",
-  "observation_snapshot_sha256": "06fb3dc5717841da62a4b1037626afb1553d9e68212637f3d29ad7ac9fa6b80d",
+  "manifest_sha256": "5c1a9f0692337d497c70878d4dc16285dcb1f0d545fd4122d5a7687cf5f5fe9a",
+  "observation_snapshot_sha256": "39ed875312fc201b0af87b16ad7c2704bf9f4e0ac29390a5316dcf08630ec66b",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3370,11 +3370,48 @@
           }
         },
         "id": "80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3"
+      },
+      {
+        "active_records": 2620,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8189812,
+            "sha256": "abdfd6fd21d1e3db75c27242bfde56f5d26d9ccf9d0e65b0812d8edc2714cd1c"
+          },
+          "catalog.jsonl": {
+            "bytes": 7556379,
+            "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "input_id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "kind": "existing",
+        "last_attempt": 768,
+        "next_index": 98,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3",
         "input_id": "80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3",
@@ -3382,7 +3419,7 @@
         "last_attempt": 763,
         "next_index": 93,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:3aaabb3ef16fc8f383c6db95a183b01e5d21dbe5c888e6893deb6d2f3de7ed19",
@@ -77261,6 +77298,114 @@
         "run_id": "run:688deb02203f77aa4977166d",
         "source_url": "https://api.github.com/repos/shiinahiiragi/chimerax-states",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          935304414
+        ],
+        "finished_at": "2026-11-06T22:15:31.696172+00:00",
+        "id": "receipt:3d014cc4a42fcf3e75d22e07e01ea240f0e369e87164fdecc503fe7eb7a9c3fd",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 93,
+        "query_id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d3db85f6c75d98b415f1f82f17a3f35500102e309cf17f3f301aced1032be68f",
+        "requested_at": "2026-11-06T22:15:31.416818+00:00",
+        "response_bytes": 5291,
+        "response_sha256": "9fb5b02b1f83bad6e601b759bc661ef286b9fa33c0e68802cb0a24604d2ef75f",
+        "returned_count": 1,
+        "run_id": "run:a10dc3993e536da77f7ea6e9",
+        "source_url": "https://api.github.com/repos/shiinahiiragi/grass-gui",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T22:15:38.351923+00:00",
+        "id": "receipt:99c4b25c7eec5742ad84cef4a3d474545b61ea9393e25a7e6a2577f3ee7c447b",
+        "incomplete_results": null,
+        "outcome": "fork_not_recorded",
+        "position": 94,
+        "query_id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "c15f43c6e0a9a522d79c7ada13e3c44411ac07e1616d96d253cf9c0dbf1ea90e",
+        "requested_at": "2026-11-06T22:15:37.927868+00:00",
+        "response_bytes": 15203,
+        "response_sha256": "161d7b8dc8bb4fed24901b8358c6533a488c45a92dd9d1535a5ef7ebb5648dfc",
+        "returned_count": 1,
+        "run_id": "run:a10dc3993e536da77f7ea6e9",
+        "source_url": null,
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          811477986
+        ],
+        "finished_at": "2026-11-06T22:15:44.673674+00:00",
+        "id": "receipt:5f852f8d8d8ac3188a72b01f768de8412f9b83faff4165c12ff2776bd088ccfc",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 95,
+        "query_id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "ce335fce76f15efb5a440c1635030a3c74339247ea2a4c5dc750aacb13f9fe95",
+        "requested_at": "2026-11-06T22:15:44.438860+00:00",
+        "response_bytes": 6660,
+        "response_sha256": "01450de6996f1660f7823c7998d72840e56de54d26c5239b171057b974c7279e",
+        "returned_count": 1,
+        "run_id": "run:a10dc3993e536da77f7ea6e9",
+        "source_url": "https://api.github.com/repos/sierra-research/tau-bench",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          614765452
+        ],
+        "finished_at": "2026-11-06T22:15:51.188865+00:00",
+        "id": "receipt:4ffe4808eb85990a2193c6185e826ec66cf44cd513cd20fc51a5ea165358a6ee",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 96,
+        "query_id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "457559ed9731bb4fd7d062f1103ec9aba3397733228cad54ba0a52ba75fe3338",
+        "requested_at": "2026-11-06T22:15:50.949912+00:00",
+        "response_bytes": 7122,
+        "response_sha256": "7f406107557cbf140ad28687a4cef3c4fe04ac710b9a544c6d9a78352aab5fa4",
+        "returned_count": 1,
+        "run_id": "run:a10dc3993e536da77f7ea6e9",
+        "source_url": "https://api.github.com/repos/significant-gravitas/autogpt",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1088610308
+        ],
+        "finished_at": "2026-11-06T22:15:57.691434+00:00",
+        "id": "receipt:e521302b57edc7fa5a6d6c7ac44c486f1e1c43c2236fb9d1833025f87fdbd9a5",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 97,
+        "query_id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d906d95a44a0a8d2e16d2f555e11c4e2cd0d83ceb6aec476661e3ff95f587ba3",
+        "requested_at": "2026-11-06T22:15:57.460881+00:00",
+        "response_bytes": 5186,
+        "response_sha256": "b61335c42455da42d8f9b4cc9e863f22829cdc3623c2c27442039da96b2f33c9",
+        "returned_count": 1,
+        "run_id": "run:a10dc3993e536da77f7ea6e9",
+        "source_url": "https://api.github.com/repos/sjz5202/gui-aima",
+        "status": 200
       }
     ],
     "runs": [
@@ -80056,9 +80201,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 190.591704497
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10116,
+        "before_unique_repositories": 10112,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T22:16:00.959378+00:00",
+        "id": "run:a10dc3993e536da77f7ea6e9",
+        "input_id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "new_unique_repositories": 4,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "f90da69061eb4923bbe5abea0c53999d"
+        },
+        "started_at": "2026-11-06T22:15:22.038074+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 191.933520223
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "b746c594c96a0c0a1d34923b8ccdd94f54ab7d1a43a0f9776b46b2768d7cf2d8"
+  "state_sha256": "72a3c792e703c14599c2c57dc06d342f3302509a257000662531402f0e8ce96d"
 }

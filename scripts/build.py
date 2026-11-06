@@ -790,7 +790,7 @@ def badges(rows, report):
         f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
         f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
         f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
-        "[![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
+        "[![Discovery scan](https://img.shields.io/github/actions/workflow/status/reacher-z/Awesome-CUA/scan.yml?branch=main&label=scan&style=flat-square&labelColor=1E2233)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/scan.yml)",
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 
 
@@ -844,6 +844,11 @@ def stats_block(report, lang="en", reviewed_papers=0):
         sources=len(report["sources"]), as_of=report["as_of_utc"], metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
         set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0),
         excluded=report["excluded_records"]) + "\n\n"
+
+
+def cells(header):
+    """Cells of a one-line Markdown table header such as "| A | B |"."""
+    return tuple(cell.strip() for cell in header.strip().strip("|").split("|"))
 
 
 def aligned_table(rows, right=()):
@@ -919,16 +924,16 @@ def highlights(rows, edges, limit=6, lang="en"):
     # Surveys come first as the entry point and are ordered by date, not by mentions.
     surveys = sorted((r for r in rows if r["kind"] == "survey" and r["review_status"] == "curated"), key=lambda r: (record_date_text(r), r["name"]), reverse=True)
     if surveys:
-        lines += [f"**{text['surveys']}** · [{text['all'].format(n=len(surveys))}](docs/surveys.md)", "", text["survey_header"], "| --- | --- | --- |"]
-        lines += [f"| {nowrap(record_date_text(r) or '—')} | [{md(r['name'])}]({r['url']}) | {', '.join(r['environments'])} |" for r in surveys[:5]]
+        lines += [f"**{text['surveys']}** · [{text['all'].format(n=len(surveys))}](docs/surveys.md)", ""]
+        lines += aligned_table([cells(text["survey_header"])] + [(nowrap(record_date_text(r) or '—'), f"[{md(r['name'])}]({r['url']})", ', '.join(r['environments'])) for r in surveys[:5]])
         lines.append("")
     for kind, path in HIGHLIGHT_KINDS:
         curated = [r for r in rows if r["kind"] == kind and r["review_status"] == "curated"]
         ranked = sorted((r for r in curated if cited_by[r["id"]]), key=lambda r: (-len(cited_by[r["id"]]), r["name"].casefold()))[:limit]
         if not ranked:
             continue
-        lines += [f"**{text['kinds'][kind]}** · [{text['all'].format(n=len(curated))}]({path})", "", text["highlight_header"], "| --- | ---: | --- | --- | --- | --- |"]
-        lines += [f"| [{md(r['name'])}]({r['url']}) | {len(cited_by[r['id']])} | {', '.join(r['environments'])} | {paper_cell(r, by_id)} | {license_cell(r, lang)} | {md(r['summary'])} |" for r in ranked]
+        lines += [f"**{text['kinds'][kind]}** · [{text['all'].format(n=len(curated))}]({path})", ""]
+        lines += aligned_table([cells(text["highlight_header"])] + [(f"[{md(r['name'])}]({r['url']})", str(len(cited_by[r['id']])), ', '.join(r['environments']), paper_cell(r, by_id), license_cell(r, lang), md(r['summary'])) for r in ranked], right=(1,))
         lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -938,8 +943,8 @@ def recently_reviewed(rows, reviewed_at, limit=12, lang="en"):
     recent = sorted((r for r in rows if r["review_status"] == "curated" and r["kind"] not in {"paper", "survey"} and reviewed_at.get(r["id"])),
         key=lambda r: (reviewed_at[r["id"]], r["name"].casefold()), reverse=True)[:limit]
     text = README_TEXT[lang]
-    lines = ["", text["recent_header"], "| --- | --- | --- | --- | --- |"]
-    lines += [f"| {nowrap(reviewed_at[r['id']][:10])} | [{md(r['name'])}]({r['url']}) | {text['kind_names'].get(r['kind'], r['kind'])} | {', '.join(r['environments'])} | {md(r['summary'])} |" for r in recent]
+    lines = [""]
+    lines += aligned_table([cells(text["recent_header"])] + [(nowrap(reviewed_at[r['id']][:10]), f"[{md(r['name'])}]({r['url']})", text['kind_names'].get(r['kind'], r['kind']), ', '.join(r['environments']), md(r['summary'])) for r in recent]) if recent else []
     return "\n".join(lines) + "\n" if recent else "\n"
 
 

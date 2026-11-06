@@ -47,10 +47,10 @@ class ReadmeLocalizationTests(unittest.TestCase):
         self.assertRegex(explore, r"\| \[按主题浏览研究\]\(docs/topics.md\) +\| .+ \| +1 \|")
         highlights = build.highlights(rows, edges, lang="zh")
         self.assertIn("**基准** · [全部 1 项 →](docs/benchmarks.md)", highlights)
-        self.assertIn("| [Bench](https://example.com/Bench) | 1 | web |", highlights)
+        self.assertRegex(highlights, r"\| \[Bench\]\(https://example.com/Bench\) +\| +1 \| web +\|")
         self.assertIn("代码 MIT", highlights)
         recent = build.recently_reviewed(rows, {"github:a/b": "2026-10-17T00:00:00Z"}, lang="zh")
-        self.assertIn("| 基准 | web | Bench summary. |", recent)
+        self.assertRegex(recent, r"\| 基准 +\| web +\| Bench summary. +\|")
 
     def test_badges_are_at_most_six_and_end_with_license(self):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})

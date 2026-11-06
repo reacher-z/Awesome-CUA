@@ -365,7 +365,7 @@ class ReadmeBlockTests(unittest.TestCase):
             edge("github:a/c", "github:a/c"), edge("x", "github:a/d"), {"source_id": "z", "target_id": "github:a/c", "target_in_catalog": False}]
         table = [line for line in build.highlights(rows, edges).splitlines() if line.startswith("| [")]
         self.assertEqual([line.split("]")[0][3:] for line in table], ["Beta", "Alpha", "Gamma"])
-        self.assertIn("| 2 |", table[0])
+        self.assertRegex(table[0], r"\| +2 \|")
         self.assertIn("[all 3 →](docs/benchmarks.md)", build.highlights(rows, edges))
         self.assertEqual(build.highlights(rows, []).strip(), "")
 
@@ -389,6 +389,7 @@ class ReadmeBlockTests(unittest.TestCase):
         self.assertIn("[![Reviewed papers and surveys](", strip)
         self.assertIn("2026--11--06%2004%3A18%20UTC", strip)
         self.assertLessEqual(strip.count("[!["), 6)
+        self.assertIn("workflow/status/reacher-z/Awesome-CUA/scan.yml", strip)
         self.assertNotIn("3%2C636", strip)
         self.assertNotIn("1%2C962", strip)
 

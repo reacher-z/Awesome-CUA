@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-06T00:36:32Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-06T04:18:34Z**. Generated from committed source receipts.
 
-- 1,674 curated resources. Another 1,982 records await review with bibliographic metadata only; the active catalog file holds 3,656 records in all.
-- 3,184 paper and survey records, including 3,170 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
-- 3,311 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
-- 5,882 discovery identifiers; 1,970 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 1,674 curated resources. Another 1,983 records await review with bibliographic metadata only; the active catalog file holds 3,657 records in all.
+- 3,185 paper and survey records, including 3,171 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
+- 3,312 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
+- 5,883 discovery identifiers; 1,970 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 49 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -109,7 +109,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 18 | 18 | 0 | 0 | 48 | OK · 2026-11-06 |
 | [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 37 | 23 | 0 | 0 | 46 | OK · 2026-11-06 |
 | [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 0 | 1 | OK · 2026-11-06 |
-| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1114 | 1114 | 784 | 0 | 0 | 0 | OK · 2026-11-06 |
+| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1115 | 1115 | 784 | 0 | 0 | 0 | OK · 2026-11-06 |
 | [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 6 | 6 | 0 | 0 | 24 | OK · 2026-11-06 |
 | [Hub model search "computer-use" (by likes)](https://huggingface.co/models?search=computer-use) | 2 | 0 | 0 | 0 | 0 | 2 | OK · 2026-11-06 |
 | [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 6 | 6 | 0 | 0 | 12 | OK · 2026-11-06 |
@@ -136,12 +136,12 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-06 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-06 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 0 | 0 | 0 | 0 | OK · 2026-11-06 |
-| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 73 | 67 | 0 | 15 | 30 | OK · 2026-11-06 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 73 | 67 | 0 | 22 | 27 | OK · 2026-11-06 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 74 | 53 | 0 | 22 | 21 | OK · 2026-11-06 |
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-06T02:20:22Z; **32/32** query windows succeeded. 1,505 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-06T04:18:33Z; **32/32** query windows succeeded. 1,505 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

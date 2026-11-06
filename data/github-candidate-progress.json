@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "750d6996a600b814ba43ef4994225795dc1eefd2df014b156a7952ccee225c1e",
-  "observation_snapshot_sha256": "9f06f2797c9db8a1a8df482281236421c321553e582dd74e9365c3d533cdd9ce",
+  "manifest_sha256": "7c625a177b3c2b13bdc8ad2c110681ae1f5a8d9a31813319440c36d32c04f332",
+  "observation_snapshot_sha256": "be8731c5466b7a07935f1cb733871cf7f1cd9f71057443a7fa3fd8d39f0a1daf",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -39,7 +39,7 @@
       ]
     },
     "current_epoch_id": "epoch:cb7440a35b150c9678e2a329",
-    "deferred_until": "2026-11-06T02:24:33.226708+00:00",
+    "deferred_until": "2026-11-06T04:20:34.677563+00:00",
     "epochs": [
       {
         "configuration": {
@@ -2894,11 +2894,48 @@
           }
         },
         "id": "4c5b9e60266d98215ee1bfe6e478acc239d9a4395c2c95f5695e0f00803441bc"
+      },
+      {
+        "active_records": 3656,
+        "curated_records": 1674,
+        "existing_seed_count": 738,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8037409,
+            "sha256": "57120a4b38c69a56b006d0ae9e2092ca860651dcd165badaefe2d26d8c1f5a79"
+          },
+          "catalog.jsonl": {
+            "bytes": 9328354,
+            "sha256": "393449b3a463936ea52514f1b61f5e5a1b401aacff42b3d2b2c2bf9c43383fb5"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 1848440,
+            "sha256": "c9b2eaa6355dc88163eb1ccdb8a96a04469f1740d88cc4fbe8ba36af06e0ef9a"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "input_id": "0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "kind": "existing",
+        "last_attempt": 690,
+        "next_index": 29,
+        "seed_count": 738,
+        "status": "pending"
+      },
       {
         "id": "existing:4c5b9e60266d98215ee1bfe6e478acc239d9a4395c2c95f5695e0f00803441bc",
         "input_id": "4c5b9e60266d98215ee1bfe6e478acc239d9a4395c2c95f5695e0f00803441bc",
@@ -2906,7 +2943,7 @@
         "last_attempt": 664,
         "next_index": 24,
         "seed_count": 738,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:c720308a37ac09cd3d6deecd08a8cc94d223d7117603babc3c9a0f4c0320d320",
@@ -25169,7 +25206,7 @@
         "id": "search:44b9dcb284979ca43b2d9578",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 691,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:os-agents is:public fork:false created:2026-11-05..2026-11-06",
@@ -74966,6 +75003,132 @@
         "run_id": "run:bf9dc6e7598ceecf584efcd6",
         "source_url": null,
         "status": 403
+      },
+      {
+        "accepted_repository_ids": [
+          888367953
+        ],
+        "finished_at": "2026-11-06T04:19:02.252621+00:00",
+        "id": "receipt:88ab72ab8df563d7b97511ce02285066f4168721ba63044ef313a6dd89115f2a",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 24,
+        "query_id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "700ade3650000632fe92af2be86654490e3fc837447cb45cfa02df2d5e1eed7d",
+        "requested_at": "2026-11-06T04:19:01.931499+00:00",
+        "response_bytes": 5958,
+        "response_sha256": "73f98d6e3861e94456d5ba99a2e3f9481fa27fe33057e09464898174c5323b41",
+        "returned_count": 1,
+        "run_id": "run:83b316b3e2b9dc50f285e916",
+        "source_url": "https://api.github.com/repos/vyokky/llm-brained-gui-agents-survey",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T04:19:08.787359+00:00",
+        "id": "receipt:3a99dfa181bf54ecb17d79703e345e515d055516cb1a6994e9ea6b0e6f00bc7f",
+        "incomplete_results": null,
+        "outcome": "redirect_not_followed",
+        "position": 25,
+        "query_id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "dab47518abe6c0220957d01c7e7801452ca6d93ade0e39971305a209c5a930d8",
+        "requested_at": "2026-11-06T04:19:08.440231+00:00",
+        "response_bytes": 198,
+        "response_sha256": "4d2040b9ea3f7513a3869bc53c4da3fed05b4944b5086d51ab512fbe100f2c6b",
+        "returned_count": null,
+        "run_id": "run:83b316b3e2b9dc50f285e916",
+        "source_url": null,
+        "status": 301
+      },
+      {
+        "accepted_repository_ids": [
+          651622038
+        ],
+        "finished_at": "2026-11-06T04:19:15.251500+00:00",
+        "id": "receipt:4041776c9f5c943059ef812bd3bf8b69111b5c61a354ddcc76cb36cc35d4797f",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 26,
+        "query_id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "ff0ee40b18d382c67ec0adb7435c9c42443609c4518c969aa4170a9ca8d451db",
+        "requested_at": "2026-11-06T04:19:14.949285+00:00",
+        "response_bytes": 6369,
+        "response_sha256": "06892277cd059f0c2d99ceb7b4de8d6a600d23b3f00d9c016614056582e22cbc",
+        "returned_count": 1,
+        "run_id": "run:83b316b3e2b9dc50f285e916",
+        "source_url": "https://api.github.com/repos/allenai/open-instruct",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          747946600
+        ],
+        "finished_at": "2026-11-06T04:19:21.738060+00:00",
+        "id": "receipt:be7c4663b29240504815991d6cd8a8ba0429460b0c7b3d3d6a0bb371b1d806b3",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 27,
+        "query_id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "ba37ce4723f4eec81569c2a8e9243c1cb9976fec8cfc1bc3448bca6d5ce53440",
+        "requested_at": "2026-11-06T04:19:21.458291+00:00",
+        "response_bytes": 5820,
+        "response_sha256": "2926d43b4387a4fe7c1a793d8e9d5cd9156bda9a869de1175551f5944821983d",
+        "returned_count": 1,
+        "run_id": "run:83b316b3e2b9dc50f285e916",
+        "source_url": "https://api.github.com/repos/ambersahdev/open-interface",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T04:19:28.245326+00:00",
+        "id": "receipt:2afe0e1a508aaea413d24a0e4d8d43618ec2528700a99394ebb612e779d3833a",
+        "incomplete_results": null,
+        "outcome": "redirect_not_followed",
+        "position": 28,
+        "query_id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "3bfbe19d532ea1cf8068baa6727c29408bcd2653dab0f3dc12376e674dc2059a",
+        "requested_at": "2026-11-06T04:19:27.967469+00:00",
+        "response_bytes": 198,
+        "response_sha256": "2c93358c16b20153df7db7251ed4e2ff1b7324540e4ca41e59b8822e0040a510",
+        "returned_count": null,
+        "run_id": "run:83b316b3e2b9dc50f285e916",
+        "source_url": null,
+        "status": 301
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T04:19:34.677544+00:00",
+        "id": "receipt:a5bc3ccb57013cae5d80c2ee9921016df2848fc90bf0be42060ab423774310cf",
+        "incomplete_results": null,
+        "outcome": "rate_limited",
+        "position": 1,
+        "query_id": "search:44b9dcb284979ca43b2d9578",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "2970577e6770f6a3b3938ba5716a2f4be98ec31eca8c3c80e4668c6e8a134800",
+        "requested_at": "2026-11-06T04:19:34.502859+00:00",
+        "response_bytes": 278,
+        "response_sha256": "a8704454d99ab6f5d066c90b8d1a61f76111af6ca7f0d4bea7cca9df2a5c22e7",
+        "returned_count": null,
+        "run_id": "run:83b316b3e2b9dc50f285e916",
+        "source_url": null,
+        "status": 403
       }
     ],
     "runs": [
@@ -77213,9 +77376,48 @@
         "strict_replay": true,
         "unknown_requests": 3,
         "wall_seconds_budget": 196.75982809700002
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10067,
+        "before_unique_repositories": 10064,
+        "deferred_queries": 9,
+        "deferred_query_ids": [
+          "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+          "search:cf41336e0c72ec4a7d2c872c",
+          "search:44b9dcb284979ca43b2d9578",
+          "search:63e514e0fcce11d29b3c0edf",
+          "search:1a521864c0f710571f434878",
+          "search:a3d49237f170447952f26d05",
+          "search:b973ee16982dd0bdfd7ee2a0",
+          "search:5df628d54b3d012b3e70c7fc",
+          "search:9313be3e9f05f200ee9fdefa"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T04:19:36.695244+00:00",
+        "id": "run:83b316b3e2b9dc50f285e916",
+        "input_id": "0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
+        "new_unique_repositories": 3,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 6,
+        "shared_budget": {
+          "deferred_provider": "api.github.com",
+          "deferred_reason": "provider_cooldown",
+          "reservations_after": 147,
+          "reservations_before": 141,
+          "reservations_charged": 6,
+          "round_id": "ee065e74b89d4a709d822c162ed60e62"
+        },
+        "started_at": "2026-11-06T04:18:56.122622+00:00",
+        "status": "rate_limited",
+        "strict_replay": true,
+        "unknown_requests": 3,
+        "wall_seconds_budget": 197.143641159
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "ee5f3f0797b9f43ef3eda139b9ba6db4fc51e411dfa4eb09a3de608fd2bab794"
+  "state_sha256": "ae591ed8a8eef82b5117e952e26ac5250efa461942a395e8f631791a6414aa44"
 }

@@ -103,6 +103,13 @@ class SearchPagesTests(unittest.TestCase):
                 target=self.dest/path.lstrip('/')
                 if path.endswith('/'):target=target/'index.html'
                 self.assertTrue(target.exists(),f'{item["path"]} -> {link}')
+    def test_only_the_homepage_hides_the_header_search(self):
+        for path in ('index.html','zh/index.html'):
+            self.assertIn('<body class="home">',(self.dest/path).read_text())
+        for path in ('data/index.html','zh/data/index.html'):
+            self.assertIn('<body class="home list-page">',(self.dest/path).read_text())
+        css=(self.dest/'assets/site.css').read_text()
+        self.assertIn('.home.list-page .search-trigger{opacity:1;pointer-events:auto;transform:none}',css)
     def test_homepage_is_useful_without_javascript(self):
         text=(self.dest/'index.html').read_text();p=PageParser(text)
         self.assertIn('/papers/',p.links);self.assertIn('/catalog/',p.links);self.assertIn('/data/',p.links)

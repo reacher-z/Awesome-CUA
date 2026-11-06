@@ -1240,6 +1240,8 @@ html:not(.js) .field kbd{display:none}
 /* ==========================================================================
    /data/: what do you want, what does it look like, then every file by purpose
    ========================================================================== */
+/* Only the homepage has a search window, so every other wide page keeps the header search. */
+.home.list-page .search-trigger{opacity:1;pointer-events:auto;transform:none}
 .data-head{position:relative;padding-block:clamp(28px,3.2vw,44px) clamp(18px,2vw,26px)}
 .data-head::before{content:"";position:absolute;inset:0;pointer-events:none;--grid-fade-y:32px;
   background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);background-size:16px 16px;

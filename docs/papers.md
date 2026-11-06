@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.
 Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,075; 585 ⭐) · [2025](#2025) (575; 499 ⭐) · [2024](#2024) (248; 205 ⭐) · [2023](#2023) (68; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (12; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,076; 585 ⭐) · [2025](#2025) (575; 499 ⭐) · [2024](#2024) (248; 205 ⭐) · [2023](#2023) (68; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (12; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -176,6 +176,7 @@ Dates retain their recorded precision: a year or month does not imply a known da
 | 2026-10-10 | [The Agent Clicks Approve: Injected Page Text Makes Browser Agents Authorize Access the Task Never Named](https://arxiv.org/abs/2610.15138) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md) |
 | 2026-10-10 | [SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition](https://arxiv.org/abs/2610.14966) | metadata |  |
 | 2026-10-10 | [PEAM: On-device Communication Agent for Personalized, Efficient and Autonomous Mobile Network Configuration](https://arxiv.org/abs/2610.14855) | metadata |  |
+| 2026-10-10 | [Names Are Not Objects: Object-Bound Confinement for Compromised AI Coding Agents](https://arxiv.org/abs/2610.14488) | metadata |  |
 | 2026-10-09 | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) | ⭐ reviewed | [data-generation](topics/data-generation.md), [recording](topics/recording.md), [workflow](topics/workflow.md) |
 | 2026-10-09 | [When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows](https://arxiv.org/abs/2610.13092) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [efficiency](topics/efficiency.md), [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md), [self-reflection](topics/self-reflection.md) |
 | 2026-10-09 | [When Charts Deceive Web Agents: A Paired Benchmark for Misleading Visualization-Grounded Tasks](https://arxiv.org/abs/2610.12823) | ⭐ reviewed | [evaluation](topics/evaluation.md), [robustness](topics/robustness.md), [screen-understanding](topics/screen-understanding.md) |

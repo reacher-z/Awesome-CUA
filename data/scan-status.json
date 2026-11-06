@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-06T06:24:54Z",
+  "id": "scan:2026-11-06T08:58:53Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-06T06:24:54Z",
-  "finished_at": "2026-11-06T06:28:17Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42174249486",
+  "started_at": "2026-11-06T08:58:53Z",
+  "finished_at": "2026-11-06T09:02:31Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42191529981",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -23,28 +23,35 @@
     ]
   },
   "before": {
-    "resources": 2490,
+    "resources": 2491,
     "bibliographic_records": 2004,
     "arxiv_archive_records": 3312,
     "excluded_records": 1308,
-    "curated_papers": 1202,
-    "curated_resources": 472,
-    "candidates": 5883
-  },
-  "after": {
-    "resources": 2490,
-    "bibliographic_records": 2004,
-    "arxiv_archive_records": 3312,
-    "excluded_records": 1308,
-    "curated_papers": 1202,
-    "curated_resources": 472,
+    "curated_papers": 1391,
+    "curated_resources": 473,
     "candidates": 5884
   },
-  "new_papers": [],
+  "after": {
+    "resources": 2492,
+    "bibliographic_records": 2005,
+    "arxiv_archive_records": 3313,
+    "excluded_records": 1308,
+    "curated_papers": 1391,
+    "curated_resources": 473,
+    "candidates": 5885
+  },
+  "new_papers": [
+    {
+      "id": "arxiv:2610.14488",
+      "name": "Names Are Not Objects: Object-Bound Confinement for Compromised AI Coding Agents",
+      "url": "https://arxiv.org/abs/2610.14488",
+      "review_status": "metadata_verified"
+    }
+  ],
   "new_candidate_count": 1,
   "pending_metadata_changes": 11,
   "source_fetches": {
-    "successful": 100,
+    "successful": 102,
     "total": 102,
     "retired": 1
   },
@@ -52,64 +59,62 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1506,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-06T06:25:53Z",
-    "finished_at": "2026-11-06T06:27:30Z",
+    "started_at": "2026-11-06T09:00:11Z",
+    "finished_at": "2026-11-06T09:01:26Z",
     "ok": true,
     "exit_code": 0,
     "error": null,
-    "state": "rate_limited",
+    "state": "bounded_progress",
     "complete": false,
-    "scan_status": "rate_limited",
-    "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+    "scan_status": "partial",
+    "run_id": "run:a4e1e4015853e32048abc53a",
     "request_attempted": true,
-    "successful_responses": 8,
-    "requests_attempted": 10,
-    "new_unique_repositories": 3,
+    "successful_responses": 3,
+    "requests_attempted": 4,
+    "new_unique_repositories": 0,
     "total_unique_repositories": 10070,
-    "pending_queries": 4,
-    "unknown_requests": 1,
+    "pending_queries": 1,
+    "unknown_requests": 0,
     "epoch_id": "epoch:cb7440a35b150c9678e2a329",
     "query_status_counts": {
-      "observed_pages_exhausted": 357,
-      "pending": 4,
+      "observed_pages_exhausted": 360,
+      "pending": 1,
       "split": 23,
-      "superseded_input": 65
+      "superseded_input": 66
     },
     "rejected_rows": {
       "fork_or_unknown": 1
     },
     "settled_unknown_requests": 0,
     "warnings": [
-      "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
-      "1 GitHub candidate requests have no accepted metadata response.",
       "1 GitHub metadata rows were rejected; rejection reasons remain in the candidate scan receipt."
     ],
     "notices": [],
     "files": {
       "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
-      "github-candidates-manifest.json": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
-      "github-candidate-progress.json": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e"
+      "github-candidates-manifest.json": "c565014e55bee9a4b1bc65f64ae9a4521fa3c03afc92c2cfd8eb11db76e709e6",
+      "github-candidate-progress.json": "1d78fd68fbdd8017242f0a86fb3d36932cc4adc215ceecaac90f6d5fdee23613"
     },
     "published": true,
-    "network_reservations": 10,
+    "network_reservations": 4,
     "staged_files": {
       "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
-      "github-candidates-manifest.json": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
-      "github-candidate-progress.json": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e"
+      "github-candidates-manifest.json": "9db6fea2f46b107e7fed1272fde0f65921ab36e2db477714bcc79aa3ca213347",
+      "github-candidate-progress.json": "19b8411a3667be6dd37f81b043b849aa37eee5910a514c5eab2e94b35d8fcb64"
     },
     "comparison_context_rebound": true,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-06T06:28:17Z",
+      "checked_at": "2026-11-06T09:02:31Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
         "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
-        "github-candidates-manifest.json": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
-        "github-candidate-progress.json": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e"
+        "github-candidates-manifest.json": "c565014e55bee9a4b1bc65f64ae9a4521fa3c03afc92c2cfd8eb11db76e709e6",
+        "github-candidate-progress.json": "1d78fd68fbdd8017242f0a86fb3d36932cc4adc215ceecaac90f6d5fdee23613"
       },
       "repositories": 10070
     }
@@ -117,24 +122,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-06T06:24:54Z",
-      "finished_at": "2026-11-06T06:25:15Z",
+      "started_at": "2026-11-06T08:58:53Z",
+      "finished_at": "2026-11-06T08:59:27Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-06T06:25:15Z",
-      "finished_at": "2026-11-06T06:25:48Z",
+      "started_at": "2026-11-06T08:59:27Z",
+      "finished_at": "2026-11-06T09:00:04Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-06T06:25:48Z",
-      "finished_at": "2026-11-06T06:25:48Z",
+      "started_at": "2026-11-06T09:00:04Z",
+      "finished_at": "2026-11-06T09:00:04Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -146,115 +151,110 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-06T06:25:48Z",
-      "finished_at": "2026-11-06T06:25:48Z",
+      "started_at": "2026-11-06T09:00:04Z",
+      "finished_at": "2026-11-06T09:00:05Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-06T06:25:53Z",
-      "finished_at": "2026-11-06T06:27:30Z",
+      "started_at": "2026-11-06T09:00:11Z",
+      "finished_at": "2026-11-06T09:01:26Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
-      "state": "rate_limited",
+      "state": "bounded_progress",
       "complete": false,
-      "scan_status": "rate_limited",
-      "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+      "scan_status": "partial",
+      "run_id": "run:a4e1e4015853e32048abc53a",
       "request_attempted": true,
-      "successful_responses": 8,
-      "requests_attempted": 10,
-      "new_unique_repositories": 3,
+      "successful_responses": 3,
+      "requests_attempted": 4,
+      "new_unique_repositories": 0,
       "total_unique_repositories": 10070,
-      "pending_queries": 4,
-      "unknown_requests": 1,
+      "pending_queries": 1,
+      "unknown_requests": 0,
       "epoch_id": "epoch:cb7440a35b150c9678e2a329",
       "query_status_counts": {
-        "observed_pages_exhausted": 357,
-        "pending": 4,
+        "observed_pages_exhausted": 360,
+        "pending": 1,
         "split": 23,
-        "superseded_input": 65
+        "superseded_input": 66
       },
       "rejected_rows": {
         "fork_or_unknown": 1
       },
       "settled_unknown_requests": 0,
       "warnings": [
-        "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
-        "1 GitHub candidate requests have no accepted metadata response.",
         "1 GitHub metadata rows were rejected; rejection reasons remain in the candidate scan receipt."
       ],
       "notices": [],
       "files": {
         "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
-        "github-candidates-manifest.json": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
-        "github-candidate-progress.json": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e"
+        "github-candidates-manifest.json": "c565014e55bee9a4b1bc65f64ae9a4521fa3c03afc92c2cfd8eb11db76e709e6",
+        "github-candidate-progress.json": "1d78fd68fbdd8017242f0a86fb3d36932cc4adc215ceecaac90f6d5fdee23613"
       },
       "published": true,
       "baseline_files": {
-        "github-candidates.jsonl": "be8731c5466b7a07935f1cb733871cf7f1cd9f71057443a7fa3fd8d39f0a1daf",
-        "github-candidates-manifest.json": "7c625a177b3c2b13bdc8ad2c110681ae1f5a8d9a31813319440c36d32c04f332",
-        "github-candidate-progress.json": "0f54dd5c708da8460a666d00fcf0ee32d765b81bff22e52196033a80f2480e8b"
-      },
-      "ready_to_publish": false,
-      "network_reservations": 10,
-      "staged_files": {
         "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
         "github-candidates-manifest.json": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
         "github-candidate-progress.json": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e"
       },
+      "ready_to_publish": false,
+      "network_reservations": 4,
+      "staged_files": {
+        "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
+        "github-candidates-manifest.json": "9db6fea2f46b107e7fed1272fde0f65921ab36e2db477714bcc79aa3ca213347",
+        "github-candidate-progress.json": "19b8411a3667be6dd37f81b043b849aa37eee5910a514c5eab2e94b35d8fcb64"
+      },
       "comparison_context_rebound": true,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-06T06:28:17Z",
+        "checked_at": "2026-11-06T09:02:31Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
           "github-candidates.jsonl": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
-          "github-candidates-manifest.json": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
-          "github-candidate-progress.json": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e"
+          "github-candidates-manifest.json": "c565014e55bee9a4b1bc65f64ae9a4521fa3c03afc92c2cfd8eb11db76e709e6",
+          "github-candidate-progress.json": "1d78fd68fbdd8017242f0a86fb3d36932cc4adc215ceecaac90f6d5fdee23613"
         },
         "repositories": 10070
       }
     },
     {
       "name": "build",
-      "started_at": "2026-11-06T06:27:34Z",
-      "finished_at": "2026-11-06T06:27:37Z",
+      "started_at": "2026-11-06T09:01:33Z",
+      "finished_at": "2026-11-06T09:01:36Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-06T06:28:03Z",
-      "finished_at": "2026-11-06T06:28:11Z",
+      "started_at": "2026-11-06T09:02:13Z",
+      "finished_at": "2026-11-06T09:02:24Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
-    "1 GitHub candidate requests have no accepted metadata response.",
-    "1 GitHub metadata rows were rejected; rejection reasons remain in the candidate scan receipt.",
-    "Discovery sources failed: arxiv-abstract-phrases, survey-bibliography-backfill",
-    "1 arXiv identifiers remain unresolved in the retained harvest ledger."
+    "1 GitHub metadata rows were rejected; rejection reasons remain in the candidate scan receipt."
   ],
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "1063c6fac3c9443fbb94d4526ff729b5",
+    "round_id": "e2c439b70f424d338910e09af1f21090",
     "max_requests": 180,
     "max_seconds": 600,
-    "requests_reserved": 149,
-    "responses_received": 149,
+    "requests_reserved": 145,
+    "responses_received": 145,
     "unknown_attempts": 0,
     "by_phase": {
-      "discovery": 107,
+      "discovery": 108,
       "huggingface": 32,
-      "github_candidates": 10
+      "harvest": 1,
+      "github_candidates": 4
     },
     "by_provider": {
       "raw.githubusercontent.com": 65,
@@ -267,19 +267,13 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 1,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 10
+      "api.github.com": 4
     },
-    "provider_cooldowns": {
-      "api.github.com": "2026-11-06T06:28:07.524914+00:00",
-      "export.arxiv.org": "2026-11-06T06:26:12.370845+00:00"
-    },
-    "blocked_providers": [
-      "api.github.com",
-      "export.arxiv.org"
-    ],
-    "ledger_sha256": "bf5da6826f24e2433c7010c3ff37569aa326025f171a8115c6b2b528b58aef73",
+    "provider_cooldowns": {},
+    "blocked_providers": [],
+    "ledger_sha256": "088bd85bc640253c574d62613fd3427d22e97dee0ef13073f613b93d9d1a2bf4",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

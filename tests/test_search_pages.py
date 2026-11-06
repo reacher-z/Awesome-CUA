@@ -17,7 +17,8 @@ import xml.etree.ElementTree as ET
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
-from search_pages import SITE, eligible, resource_path, resource_schema, page, incoming_relations
+import home_page
+from search_pages import SITE, eligible, listing, resource_path, resource_schema, page, incoming_relations
 from sitemaps import sitemap_urls
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -53,6 +54,19 @@ class PageParser(HTMLParser):
         if tag=='a' and 'href' in a:self.links.append(a['href'])
         if tag=='script' and 'src' in a:self.scripts.append(a['src'])
         if tag=='h1':self.heading_count+=1
+
+
+class ListingRowTests(unittest.TestCase):
+    def test_a_featured_row_without_a_catalog_record_links_to_its_repository(self):
+        row=listing([home_page.WEBSITEBENCH])
+        self.assertIn(f'<a href="{home_page.WEBSITEBENCH["url"]}"',row)
+        self.assertNotIn('/resources/',row)
+        self.assertIn(home_page.WEBSITEBENCH['summary'],row)
+
+    def test_a_catalog_record_links_to_its_resource_page(self):
+        record={**home_page.WEBSITEBENCH,'review_status':'source-reviewed'}
+        del record['href']
+        self.assertIn(f'<a href="{resource_path(record)}"',listing([record]))
 
 
 class SearchPagesTests(unittest.TestCase):
@@ -103,6 +117,69 @@ class SearchPagesTests(unittest.TestCase):
                 target=self.dest/path.lstrip('/')
                 if path.endswith('/'):target=target/'index.html'
                 self.assertTrue(target.exists(),f'{item["path"]} -> {link}')
+    def category_rows(self,path):
+        text=(self.dest/path).read_text()
+        return text,re.findall(r'<li class="row"[^>]*data-name="([^"]*)"',text)
+
+    def test_homepage_search_form_submits_to_the_explorer_in_its_language(self):
+        form='<form class="field" role="search" action="/explore/#catalog" method="get" data-finder-form>'
+        self.assertIn(form,(self.dest/'index.html').read_text())
+        self.assertNotIn('name="lang"',(self.dest/'index.html').read_text())
+        self.assertIn(form+'<input type="hidden" name="lang" value="zh">',(self.dest/'zh/index.html').read_text())
+
+    def test_chinese_navigation_opens_the_chinese_catalog(self):
+        text=(self.dest/'zh/index.html').read_text()
+        self.assertIn('href="/zh/catalog/"',text)
+        self.assertTrue((self.dest/'zh/catalog/index.html').is_file())
+
+    def test_chinese_directory_pages_are_in_the_categories_sitemap_with_english_pairs(self):
+        listed=(self.dest/'sitemap-categories.xml').read_text()
+        other=(self.dest/'sitemap-pages.xml').read_text()
+        for english,chinese in (('/catalog/','/zh/catalog/'),('/categories/benchmark/','/zh/categories/benchmark/')):
+            self.assertIn(f'<loc>{SITE}{chinese}</loc>',listed)
+            self.assertNotIn(f'<loc>{SITE}{chinese}</loc>',other)
+            self.assertNotIn(f'{SITE}{chinese}"',other)
+            for path in (english,chinese):
+                text=(self.dest/path.strip('/')/'index.html').read_text()
+                self.assertIn(f'hreflang="en" href="{SITE}{english}"',text)
+                self.assertIn(f'hreflang="zh-CN" href="{SITE}{chinese}"',text)
+                self.assertIn(f'hreflang="x-default" href="{SITE}{english}"',text)
+        self.assertNotIn(f'{SITE}/zh/categories/paper/',listed)
+
+    def test_directory_pages_describe_themselves_for_search_in_both_languages(self):
+        for path in ('catalog','zh/catalog','categories/benchmark','zh/categories/benchmark','categories/tool','zh/categories/tool'):
+            text=(self.dest/path/'index.html').read_text()
+            description=html.unescape(re.search(r'<meta name="description" content="([^"]*)"',text).group(1))
+            self.assertTrue(70<=len(description)<=160,(path,len(description)))
+            graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S).group(1))['@graph']
+            types={item['@type'] for item in graph}
+            self.assertIn('CollectionPage',types,path)
+            self.assertIn('BreadcrumbList',types,path)
+            if 'categories' in path:self.assertIn('ItemList',types,path)
+
+    def test_category_pages_keep_every_row_in_the_html_in_mention_order(self):
+        view=home_page.catalog_view(self.rows,[row for row in self.rows if eligible(row)],json.loads((ROOT/'data/coverage.json').read_text()),ROOT)
+        for kind in {row['kind'] for row in self.rows if eligible(row)}-{'paper'}:
+            selected=[row for row in self.rows if eligible(row) and row['kind']==kind]
+            expected=[row['name'] for row in sorted(selected,key=lambda row:(-len(view['mentions'].get(row['id'],())),row['name'].casefold()))]
+            for path in (f'categories/{kind}/index.html',f'zh/categories/{kind}/index.html'):
+                text,names=self.category_rows(path)
+                names=[html.unescape(name) for name in names]
+                start=len(names)-len(expected)
+                self.assertEqual(names[start:],expected,path)
+                ids=re.findall(r'<li class="row" id="([^"]+)"',text)
+                self.assertEqual(len(ids),len(set(ids)),path)
+                self.assertIn('hreflang="zh-CN"',text)
+
+    def test_benchmarks_feature_websitebench_then_clawbench_above_the_full_list(self):
+        for path,heading in (('categories/benchmark/index.html','Featured'),('zh/categories/benchmark/index.html','精选')):
+            text,names=self.category_rows(path)
+            self.assertLess(text.index(f'>{heading}</h2>'),text.index('data-list-rows'))
+            self.assertEqual(names[:2],['WebsiteBench','ClawBench'])
+            self.assertIn('data-list-filter',text)
+            self.assertIn('class="list-tools js-only"',text)
+            self.assertRegex(text,r'<script type="module" src="/listing\.js\?v=[0-9a-f]+"></script>')
+
     def test_only_the_homepage_hides_the_header_search(self):
         for path in ('index.html','zh/index.html'):
             self.assertIn('<body class="home">',(self.dest/path).read_text())

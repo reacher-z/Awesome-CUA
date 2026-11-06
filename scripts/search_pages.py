@@ -73,7 +73,7 @@ def sitemap_section(path, kind_by_path):
     """Child sitemap for an indexable page: resource and paper entries, collection pages, or everything else."""
     if path in kind_by_path:return 'papers' if kind_by_path[path] in PAPER_KINDS else 'resources'
     if path.startswith(('/papers/','/zh/papers/','/survey/')):return 'papers'
-    if path.startswith(('/catalog/','/categories/','/topics/','/zh/topics/','/compare/')):return 'categories'
+    if path.startswith(('/catalog/','/zh/catalog/','/categories/','/zh/categories/','/topics/','/zh/topics/','/compare/')):return 'categories'
     return 'pages'
 
 
@@ -113,6 +113,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     if main:
         main={"@id":url+"#entity", **main}
         graph.append(main);graph[1]["mainEntity"]={"@id":main["@id"]}
+        if main["@type"]=="ItemList":graph[1]["@type"]="CollectionPage"
     graph.extend(extra_graph)
     if path!="/":
         graph.append({"@type":"BreadcrumbList", "itemListElement":[{"@type":"ListItem","position":i+1,"name":name,"item":SITE+target} for i,(name,target) in enumerate(crumbs)]})
@@ -146,8 +147,64 @@ def resource_schema(record):
     return entity
 
 
-def listing(rows):
-    return '<div class="reading-list">'+"".join(f'<article><div class="list-overline">{esc(KINDS[r["kind"]])} · {esc(r["review_status"])}</div><h2><a href="{resource_path(r)}">{esc(r["name"])}</a></h2><p>{esc(description(r))}</p><small>{esc(record_date_text(r) or "Release date not recorded")} · {esc(", ".join(r["environments"]))}</small></article>' for r in rows)+'</div>'
+def listing(rows,*,zh=False,anchor=True):
+    """Reviewed records as the rows of the homepage search window; a category does not label them by kind."""
+    def row(r):
+        facets=home_page.env_facets(r['environments'])
+        words=[r['name'],home_page.identity(r),*r['environments'],*(home_page.ENV_LABEL[f] for f in facets),*(home_page.ENV_ZH[f] for f in facets)]
+        attrs=f' data-name="{esc(r["name"])}" data-filter="{esc(" ".join(words).lower())}"'
+        return home_page.compact_row({**r,'href':r.get('href') or resource_path(r),'summary':description(r)},zh,date=record_date_text(r) or '',attrs=attrs,anchor=anchor)
+    return ''.join(row(r) for r in rows)
+
+
+def list_head(title,intro,links):
+    return f'<header class="wrap list-head"><h1>{esc(title)}</h1><p class="list-intro">{intro}</p><div class="list-stats">{links}</div></header>'
+
+
+def category_body(kind,label,selected,featured,*,zh=False):
+    """One category: its head, the featured rows if it has any, then every reviewed record with an in-page filter."""
+    tr=lambda en,cn:cn if zh else en
+    name=home_page.KINDS[kind][2] if zh else label.lower()
+    count=f'{len(selected):,}'
+    links=f'<span><strong>{count}</strong> {tr("reviewed","条已审核")}</span>'
+    if kind in PROFILE_KEYS:links+=f'<a href="/compare/{"benchmarks" if kind=="benchmark" else "datasets"}/">{tr("Compare specifications","比较规格")}</a>'
+    wider=f'/explore/?{"lang=zh&" if zh else ""}kind={kind}#catalog'
+    search=tr('Search all records in this category','搜索此类别的全部记录')
+    links+=f'<a href="{esc(wider)}">{search}</a><a href="{"/zh/catalog/" if zh else "/catalog/"}">{tr("All categories","全部类别")}</a>'
+    intro=tr(f'{count} reviewed {esc(name)} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.',f'{count} 条已审核的{esc(name)}，涵盖计算机使用、GUI、网页与移动端智能体。每条都链接到一手证据并记录范围。')
+    body=list_head(tr(f'Computer-use agent {name}',f'计算机使用智能体{name}'),intro,links)
+    if featured:
+        body+=f'<section class="wrap list-all" aria-labelledby="list-featured-h" data-list-featured><div class="sec-head"><div><h2 id="list-featured-h">{tr("Featured","精选")}</h2></div></div><ul class="rows list-rows" data-single>{listing(featured,zh=zh,anchor=False)}</ul></section>'
+    tools=''
+    # A short list needs no filter.
+    if len(selected)>=8:
+        hint=tr('Filter by name, repo or platform','按名称、仓库或平台筛选')
+        tools=(f'<div class="list-tools js-only"><span class="list-filter">{site_shell.ic("search")}<label class="vh" for="list-filter">{hint}</label><input id="list-filter" type="search" data-list-filter placeholder="{hint}" autocomplete="off"></span>'
+               f'<span class="select sort"><label class="vh" for="list-sort">{tr("Sort","排序")}</label><select id="list-sort" data-list-sort><option value="mentions">{tr("Most mentioned","提及最多")}</option><option value="name">A–Z</option></select>{site_shell.ic("down")}</span></div>')
+    template=tr(f'{{n}} of {{total}} {esc(name)}',f'{{total}} 条{esc(name)}中的 {{n}} 条')
+    empty=tr(f'No {esc(name)} match that filter.',f'没有符合筛选条件的{esc(name)}。')
+    body+=(f'<section class="wrap list-all" aria-labelledby="list-h" data-list><div class="sec-head list-all-head"><div><h2 id="list-h">{tr(f"All {esc(name)}",f"全部{esc(name)}")}</h2></div>{tools}</div>'
+           f'<p class="list-status" role="status" data-list-status data-template="{template}"></p><ul class="rows list-rows" data-single data-list-rows>{listing(selected,zh=zh)}</ul>'
+           f'<p class="list-empty" data-list-empty hidden>{empty} <a href="{esc(wider)}">{search}</a></p></section>')
+    if tools:body+='<script type="module" src="/listing.js"></script>'
+    return body
+
+
+def catalog_body(reviewed,awaiting,candidates,*,zh=False):
+    tr=lambda en,cn:cn if zh else en
+    def href(kind):
+        if zh:return '/zh/papers/' if kind=='paper' else f'/zh/categories/{kind}/'
+        return f'/categories/{kind}/'
+    types='<ul class="cat-tiles">'+''.join(f'<li><a href="{href(kind)}">{site_shell.ic(home_page.KINDS[kind][3])}<b>{esc(home_page.KINDS[kind][2] if zh else name)}</b><span>{sum(r["kind"]==kind for r in reviewed):,} {tr("reviewed","条已审核")}</span></a></li>' for kind,name in KINDS.items())+'</ul>'
+    guides=[('/zh/topics/','主题','按主题浏览研究与资源'),('/zh/papers/','论文','已审核的计算机使用与 GUI 智能体研究论文'),('/guides/','指南','智能体、评测基准与训练数据'),('/zh/data/','数据','下载有来源依据的目录'),('/coverage/','覆盖','覆盖情况与未解决的缺口')] if zh else [('/topics/','Topics','Research and assets by topic'),('/papers/','Papers','Reviewed computer-use and GUI-agent research papers'),('/guides/','Guides','Agents, benchmarks, and training data'),('/data/','Data','Download the source-backed catalog'),('/coverage/','Coverage','Coverage and unresolved gaps')]
+    guide_tiles='<ul class="cat-tiles cat-tiles-5">'+''.join(f'<li><a href="{target}"><b>{title}</b><span>{text}</span></a></li>' for target,title,text in guides)+'</ul>'
+    stats=f'<span><strong>{len(reviewed):,}</strong> {tr("reviewed records","条已审核记录")}</span><span><strong>{awaiting:,}</strong> {tr("catalog records awaiting review","条目录记录待审核")}</span>'
+    stats+=f'<span>尚未收录的扫描发现 <strong>{candidates:,}</strong> 条</span>' if zh else f'<span><strong>{candidates:,}</strong> scan finds not yet in the catalog</span>'
+    stats+=f'<a href="{"/explore/?lang=zh#catalog" if zh else "/explore/#catalog"}">{tr("Search and filter every record","搜索和筛选全部记录")}</a>'
+    body=list_head(tr('Explore the computer-use agent ecosystem','探索计算机使用智能体生态'),tr('AwesomeCUA connects research papers, GUI models, training datasets, benchmarks, learning resources, engineering tools, products, and publishers with their original sources.','AwesomeCUA 将研究论文、GUI 模型、训练数据集、评测基准、学习资源、工程工具、产品和发布方与其一手来源连接起来。'),stats)
+    body+=f'<section class="wrap list-all" aria-labelledby="cat-types-h"><div class="sec-head"><div><h2 id="cat-types-h">{tr("Browse by resource type","按资源类型浏览")}</h2></div></div>{types}</section>'
+    body+=f'<section class="wrap list-all" aria-labelledby="cat-guides-h"><div class="sec-head"><div><h2 id="cat-guides-h">{tr("Research and practical guides","研究与实用指南")}</h2></div></div>{guide_tiles}</section>'
+    return body
 
 
 def publication_body(record):
@@ -352,8 +409,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
             raise ValueError('Survey page does not match its copied bytes')
         manifest.append(dict(survey_page))
-    script_versions={name:hashlib.sha256((destination/name).read_bytes()).hexdigest() for name in ('app.js','compare.js','downloads.js')}
-    script_src=re.compile(r'''(?P<start><script\b[^>]*\bsrc\s*=\s*)(?P<quote>["'])(?P<path>(?:\./|/)(?:app|compare|downloads)\.js)(?:\?[^"'\r\n]*)?(?P=quote)''')
+    script_versions={name:hashlib.sha256((destination/name).read_bytes()).hexdigest() for name in ('app.js','compare.js','downloads.js','listing.js')}
+    script_src=re.compile(r'''(?P<start><script\b[^>]*\bsrc\s*=\s*)(?P<quote>["'])(?P<path>(?:\./|/)(?:app|compare|downloads|listing)\.js)(?:\?[^"'\r\n]*)?(?P=quote)''')
     def version_script_src(match):
         version=script_versions[Path(match['path']).name]
         return f"{match['start']}{match['quote']}{match['path']}?v={version}{match['quote']}"
@@ -400,17 +457,17 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         emit(path,page(decision['name'],'A source-backed catalog scope decision; original bibliographic metadata remains preserved.',path,body,index=False,crumbs=[("AwesomeCUA","/"),("Coverage","/coverage/"),(decision['name'],path)]),index=False,excluded=True)
         (destination/path.lstrip('/')/'index.md').write_text(clean_text('\n'.join(['# '+decision['name'],'','Status: excluded from the active CUA catalog after scope review.','',decision['reason'],'','Original paper: '+decision['url'],'Evidence: '+evidence['url'],'Reviewed: '+decision['reviewed_at'],'','Scope decisions: '+SITE+'/downloads/exclusions.json','Raw metadata archive: '+SITE+'/downloads/arxiv-archive.jsonl'])+'\n'),encoding='utf-8')
     category_links='<ul class="category-directory">'+''.join(f'<li><a href="/categories/{kind}/">{esc(name)}</a><span>{sum(r["kind"]==kind for r in reviewed):,} reviewed</span></li>' for kind,name in KINDS.items())+'</ul>'
-    overview=f'<div class="eyebrow">COMPUTER-USE AGENT DIRECTORY</div><h1>Explore the computer-use agent ecosystem</h1><p class="answer-lead">AwesomeCUA connects research papers, GUI models, training datasets, benchmarks, learning resources, engineering tools, products, and publishers with their original sources.</p><p>This snapshot has {len(reviewed):,} curated resources. Another {awaiting:,} bibliography records await review and {candidates:,} discovered candidates await resolution; neither group is counted as resources. Counts are resources, not independent projects.</p><a class="button primary" href="/explore/#catalog">Search and filter all resources</a><h2>Browse by resource type</h2>{category_links}<h2>Research and practical guides</h2><ul><li><a href="/topics/">Browse research and assets by topic</a></li><li><a href="/papers/">Reviewed computer-use and GUI-agent research papers</a></li><li><a href="/guides/">Guides to agents, benchmarks, and training data</a></li><li><a href="/data/">Download the source-backed catalog</a></li><li><a href="/coverage/">Inspect coverage and unresolved gaps</a></li></ul>'
-    emit('/catalog/',page('Computer-use agent resource directory','Browse source-backed computer-use agent papers, models, datasets, benchmarks, learning resources, tools, products, and publishers.','/catalog/',overview,{"@type":"CollectionPage","name":"AwesomeCUA resource directory"},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/")]),lastmod=modified(rows))
+    catalog_alternatives={'en':'/catalog/','zh-CN':'/zh/catalog/','x-default':'/catalog/'}
+    emit('/catalog/',page('Computer-use agent resource directory','Browse source-backed computer-use agent papers, models, datasets, benchmarks, learning resources, tools, products, and publishers.','/catalog/',catalog_body(reviewed,awaiting,candidates),{"@type":"CollectionPage","name":"AwesomeCUA resource directory"},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/")],alternatives=catalog_alternatives,landing=True),lastmod=modified(rows),alternates=catalog_alternatives)
+    emit('/zh/catalog/',page('计算机使用智能体资源目录','浏览有来源依据的计算机使用智能体论文、模型、数据集、评测基准、学习资源、工具、产品和发布方。每条记录都链接到原始来源并标明审核状态，可按类别浏览或搜索全部记录。','/zh/catalog/',catalog_body(reviewed,awaiting,candidates,zh=True),{"@type":"CollectionPage","name":"AwesomeCUA 资源目录"},lang='zh-CN',crumbs=[("AwesomeCUA","/zh/"),("目录","/zh/catalog/")],alternatives=catalog_alternatives,landing=True),lastmod=modified(rows),alternates=catalog_alternatives)
     # GitHub Pages serves /404.html for any missing path; writing it outside emit() keeps it out of the manifest, sitemaps and IndexNow.
     missing=f'<div class="eyebrow">PAGE NOT FOUND</div><h1>This page is not in the catalog</h1><p class="answer-lead">The address may be mistyped, or the page may have been removed, for example when duplicate resource records were merged.</p><div class="page-actions"><a class="button primary" href="/explore/#catalog">Search the catalog</a><a class="button secondary" href="/catalog/">Resource directory</a><a class="button secondary" href="/papers/">Research papers</a></div><h2>Browse by resource type</h2>{category_links}<h2>Report a broken link</h2><p>If a link led you here, <a href="{SOURCE_REPO}/issues/new/choose">open an issue</a> with the address you followed and the page that linked to it. Scope decisions are recorded in the <a href="/coverage/">coverage ledger</a>.</p>'
     (destination/'404.html').write_text(clean_text(page('Page not found','This address does not match a current AwesomeCUA page. Search the catalog, browse resource categories, or report the broken link.','/404.html',missing,index=False,canonical=False)),encoding='utf-8')
     for kind,label in KINDS.items():
         selected=sorted([r for r in reviewed if r['kind']==kind],key=lambda r:r['name'].lower())
-        body=f'<div class="eyebrow">RESOURCE CATEGORY</div><h1>Computer-use agent {esc(label.lower())}</h1><p class="answer-lead">Browse {len(selected)} reviewed {esc(label.lower())} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.</p><p>Review means AI-assisted editorial inspection, not independent reproduction. Unknown licenses and specifications remain unknown.</p>'
-        if kind=='paper':body+='<p>The complete bibliography includes metadata-only discoveries awaiting relevance review. They remain accessible in the <a href="/explore/?kind=paper#catalog">interactive catalog</a> and data downloads.</p>'
-        if kind in PROFILE_KEYS:body+=f'<p><a href="/compare/{"benchmarks" if kind=="benchmark" else "datasets"}/">Compare source-reviewed specifications</a></p>'
         if kind=='paper':
+            body=f'<div class="eyebrow">RESOURCE CATEGORY</div><h1>Computer-use agent {esc(label.lower())}</h1><p class="answer-lead">Browse {len(selected)} reviewed {esc(label.lower())} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.</p><p>Review means AI-assisted editorial inspection, not independent reproduction. Unknown licenses and specifications remain unknown.</p>'
+            body+='<p>The complete bibliography includes metadata-only discoveries awaiting relevance review. They remain accessible in the <a href="/explore/?kind=paper#catalog">interactive catalog</a> and data downloads.</p>'
             # The paginated /papers/ library is the one indexable list of reviewed papers; this category is a hub into it.
             years=Counter(record_year(r) or 'undated' for r in selected);year_links=library_years(rows);topics=Counter(t for r in selected for t in r['topics'])
             body+='<p>The <a href="/papers/">research library</a> lists every reviewed paper and survey once, newest first, with authors, annotations and citations. Start from a publication year or a topic.</p><div class="page-actions"><a class="button primary" href="/papers/">Open the research library</a><a class="button secondary" href="/categories/survey/">Surveys</a></div>'
@@ -418,13 +475,21 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             body+='<h2>Papers by topic</h2><div class="library-topics">'+''.join(f'<a href="{topic_path(t)}">{esc(topic_name(t))} ({n:,})</a>' for t,n in topics.most_common())+'</div>'
             schema={"@type":"CollectionPage","name":f'Computer-use agent {label.lower()}'}
         else:
-            body+=listing(selected)
+            # Most mentioned first, the same order as the homepage; the page offers A-Z.
+            selected=sorted(selected,key=lambda r:(-len(view['mentions'].get(r['id'],())),r['name'].casefold()))
+            featured=home_page.featured_records(view) if kind=='benchmark' else []
+            body=category_body(kind,label,selected,featured)
             schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(selected),"itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(selected)]}
-        body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
+        if kind=='paper':body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
         if kind!='paper':
             (destination/f'categories/{kind}').mkdir(parents=True,exist_ok=True)
             (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
-        emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]),lastmod=modified(selected))
+        alternatives=False if kind=='paper' else {'en':f'/categories/{kind}/','zh-CN':f'/zh/categories/{kind}/','x-default':f'/categories/{kind}/'}
+        emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')],alternatives=alternatives,landing=kind!='paper'),lastmod=modified(selected),alternates=alternatives or None)
+        if kind!='paper':
+            zh_name=home_page.KINDS[kind][2]
+            zh_schema={**schema,"name":f'计算机使用智能体{zh_name}'}
+            emit(f'/zh/categories/{kind}/',page(f'计算机使用智能体{zh_name}',f'面向计算机使用与 GUI 智能体的已审核{zh_name}，按目录提及次数排序。每条记录都链接到原始来源，并附平台标签、许可证据与审核状态，便于比较和引用。',f'/zh/categories/{kind}/',category_body(kind,label,selected,featured,zh=True),zh_schema,lang='zh-CN',crumbs=[("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),(zh_name,f'/zh/categories/{kind}/')],alternatives=alternatives,landing=True),lastmod=modified(selected),alternates=alternatives)
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
         export=profile_export(rows,kind)

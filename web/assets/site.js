@@ -224,6 +224,8 @@
     const qs = p.toString();
     return EXPLORE + (qs ? '?' + qs : '') + '#catalog';
   }
+  // The directory page lists categories, so a search addressed to it runs in the explorer.
+  if (/^\/(zh\/)?catalog\/$/.test(location.pathname)) { const q = new URLSearchParams(location.search).get('q'); if (q) location.replace(exploreHref(q)) }
   function srcFor(rec) {
     if (rec.u) return rec.u;
     if (rec.id.startsWith('arxiv:')) return 'https://arxiv.org/abs/' + rec.id.slice(6);
@@ -356,8 +358,9 @@
       if (e.key === 'Escape') { if (input.value) { input.value = ''; input.dispatchEvent(new Event('input')) } else input.blur() }
     });
     $('[data-finder-form]', fin).addEventListener('submit', e => {
-      const a = st.q && $('.row-name a', list);
-      if (a) { e.preventDefault(); location.href = a.href }
+      if (!st.q) return;
+      const a = $('.row-name a', list);
+      e.preventDefault(); location.href = a ? a.href : exploreHref(st.q);
     });
     $('.clear', fin).addEventListener('click', () => { input.value = ''; input.dispatchEvent(new Event('input')); input.focus() });
     tabs.forEach(t => t.addEventListener('click', e => { if (e.metaKey || e.ctrlKey || e.shiftKey) return; e.preventDefault(); st.kind = t.dataset.kind; if (more) more.open = false; render(); strip(t) }));

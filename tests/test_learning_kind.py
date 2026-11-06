@@ -60,7 +60,7 @@ class LearningPublicationTests(unittest.TestCase):
         markup = (self.build / category.lstrip("/") / "index.html").read_text(encoding="utf-8")
         self.assertTrue(pages[category]["indexable"])
         self.assertIn(f'<link rel="canonical" href="{SITE}{category}">', markup)
-        self.assertIn("Browse 2 reviewed learning resources", markup)
+        self.assertIn("2 reviewed learning resources", markup)
         self.assertIn("Browser &lt;course&gt; &amp; practice", markup)
         self.assertNotIn("Browser <course>", markup)
         graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', markup, re.S)[1])["@graph"]
@@ -75,8 +75,10 @@ class LearningPublicationTests(unittest.TestCase):
             self.assertIn("Learning resources", body)
             self.assertIn(lesson["details"]["license_review"]["document"]["reason"], body)
             self.assertFalse((folder / "citation.bib").exists())
-        for path in ("index.html", "zh/index.html", "catalog/index.html", "404.html"):
+        for path in ("index.html", "catalog/index.html", "404.html"):
             self.assertIn('href="/categories/learning/"', (self.build / path).read_text(encoding="utf-8"), path)
+        for path in ("zh/index.html", "zh/catalog/index.html"):
+            self.assertIn('href="/zh/categories/learning/"', (self.build / path).read_text(encoding="utf-8"), path)
         # Learning resources count among the curated resources in the home and explorer headlines.
         curated = sum(row["review_status"] == "curated" for row in self.rows)
         self.assertIn(f'id="stat-curated">{curated}</span>', (self.build / "explore/index.html").read_text(encoding="utf-8"))

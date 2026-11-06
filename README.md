@@ -9,7 +9,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C768-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C296-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![Discovery scan](https://img.shields.io/github/actions/workflow/status/reacher-z/Awesome-CUA/scan.yml?branch=main&label=scan&style=flat-square&labelColor=1E2233)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/scan.yml) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C863-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![Discovery scan](https://img.shields.io/github/actions/workflow/status/reacher-z/Awesome-CUA/scan.yml?branch=main&label=scan&style=flat-square&labelColor=1E2233)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/scan.yml) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 **Global completeness is a goal, not a verified claim.** Curated entries were reviewed against a first-party source snapshot; records awaiting review have only their bibliographic identity checked; candidates are discovered identifiers outside the published catalog. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**1,768 curated resources** · **1,296 reviewed papers and surveys** · **103 discovery documents**
+**1,863 curated resources** · **1,391 reviewed papers and surveys** · **103 discovery documents**
 
-Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted above. Listed separately: **722 records awaiting review** have bibliographic verification only, and **1,971 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted above. Listed separately: **627 records awaiting review** have bibliographic verification only, and **1,971 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 
@@ -63,9 +63,9 @@ Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted abov
 <!-- EXPLORE:START -->
 | Browse                                           | What you find                                                 | Entries |
 | ------------------------------------------------ | ------------------------------------------------------------- | ------: |
-| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,275 |
+| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,368 |
 | [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,018 |
-| [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      21 |
+| [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      23 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |       2 |
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |      86 |
 | [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |      90 |
@@ -77,7 +77,7 @@ Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted abov
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      20 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      16 |
 
-**By platform:** [Web](docs/environments/web.md) **689** · [Desktop](docs/environments/desktop.md) **337** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **327** · [iOS](docs/environments/ios.md) **23** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **199**
+**By platform:** [Web](docs/environments/web.md) **733** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
@@ -115,7 +115,7 @@ The most-mentioned curated resources per category: the count is how many other c
 <summary>Show the highlights tables</summary>
 
 <!-- HIGHLIGHTS:START -->
-**Start with the newest surveys** · [all 21 →](docs/surveys.md)
+**Start with the newest surveys** · [all 23 →](docs/surveys.md)
 
 | Date       | Survey                                                                                                                                                 | Environments   |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |

@@ -2691,6 +2691,9 @@
     "reviewed_at": "2026-10-16T06:35:59Z",
     "documented_by": [
       "2506.00618"
+    ],
+    "task_classes": [
+      "R01.05.02.01"
     ]
   },
   {
@@ -6545,7 +6548,10 @@
     "notes": "Dataset card declares multiple upstream licenses; do not treat the package as having one blanket permissive license.",
     "details": {
       "leaderboard_url": "https://recreation-bench.cc/#leaderboard"
-    }
+    },
+    "task_classes": [
+      "R02.01.02.02"
+    ]
   },
   {
     "name": "ScreenSpot",
@@ -7990,7 +7996,10 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "24251854f9481af5c8db65750197604546f000b54868930a6de79adc365db854",
-    "reviewed_at": "2026-10-16T06:40:54Z"
+    "reviewed_at": "2026-10-16T06:40:54Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "OS-Sentinel",
@@ -11088,7 +11097,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
     "reviewed_at": "2026-10-16T10:28:51Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.03"
+    ]
   },
   {
     "name": "VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos",
@@ -11183,7 +11195,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13d3fb5811d203f2e6b80eb45d30ebc0b3cfefd88e2034ffa3b1b80687bef285",
     "reviewed_at": "2026-10-16T10:28:51Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "WM-R1: Training GUI Agents to Reason and leverage World Models with Reinforcement Learning",
@@ -11366,7 +11381,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "cbe8bfcbce4170a94a6cf42de01fbe0a448e7b1d29fa75a0de877105a98ec08e",
     "reviewed_at": "2026-10-16T10:36:54Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "name": "ScreenQA: Large-Scale Question-Answer Pairs over Mobile App Screenshots",
@@ -11621,7 +11639,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "3aac6e9748769efff3c475ede0da192776daa03431d231b5f67e2aa50f8a3be9",
     "reviewed_at": "2026-10-16T10:36:54Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R04.04.01.01"
+    ]
   },
   {
     "name": "GPT-4V in Wonderland: Large Multimodal Models for Zero-Shot Smartphone GUI Navigation",
@@ -12393,7 +12414,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "b9a83994d8ac36ccdb606a5219511f8bb35ad3948ade4f9f3e28d386221aedfb",
     "reviewed_at": "2026-10-16T10:38:11Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "name": "Systematic Categorization, Construction and Evaluation of New Attacks against Multi-modal Mobile GUI Agents",
@@ -13818,7 +13842,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
     "reviewed_at": "2026-10-16T10:40:59Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R03.02.01.03"
+    ]
   },
   {
     "name": "WebPageBench: Event-Level Verification and Controlled UI-Variant Generation for Web Agents",
@@ -14270,7 +14297,11 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "63349e7557bd99240d4628de3994a53b69e54e3bd809895be11e9879bfba40cb",
-    "reviewed_at": "2026-10-16T10:48:36Z"
+    "reviewed_at": "2026-10-16T10:48:36Z",
+    "task_classes": [
+      "R04.04.01.01",
+      "R04.04.01.06"
+    ]
   },
   {
     "url": "https://github.com/ljang0/iOSWorld",
@@ -15438,7 +15469,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "e96b86015c763c780e0430a8d0867b96cae947f50e888b3441c85abcaa42de78",
     "reviewed_at": "2026-10-16T11:07:39Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R04.01.02.04"
+    ]
   },
   {
     "name": "Mobile-Agent-E: Self-Evolving Mobile Assistant for Complex Tasks",
@@ -16076,7 +16110,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "afe4e75ffb8a5c44f4c088a90ffa5f53553036f514aa768f5aee0c5aa38d731e",
     "reviewed_at": "2026-10-16T11:07:39Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "url": "https://github.com/showlab/showui-pi",
@@ -17605,7 +17642,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "e96b86015c763c780e0430a8d0867b96cae947f50e888b3441c85abcaa42de78",
     "reviewed_at": "2026-10-16T13:12:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training",
@@ -18265,7 +18305,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
     "reviewed_at": "2026-10-16T13:12:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "url": "https://github.com/PathOnAIOrg/LiteWebAgent",
@@ -18884,7 +18927,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
     "reviewed_at": "2026-10-17T01:50:26Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.02"
+    ]
   },
   {
     "name": "Seg2Click: Learning Pixel-Level Action Masks for GUI Visual Grounding",
@@ -19003,7 +19049,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "9641755401e0e8ec9613f7c4509029d968ab4f10751ba4d43cab57e7d27c1da1",
     "reviewed_at": "2026-10-17T01:50:26Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "OpenMobile-2: Building Versatile Mobile Agents with Scalable Environments and App-Native Tools",
@@ -20235,7 +20284,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
     "reviewed_at": "2026-10-17T02:12:10Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "name": "ReuseDroid: A VLM-empowered Android UI Test Migrator Boosted by Active Feedback",
@@ -20272,6 +20324,9 @@
         "sha256": "054a5a305d86c7fb9107d467d194fc4a64aa4f5af23d214bea7f52c2f2c9fd35",
         "retrieved_at": "2026-10-17T02:12:09Z"
       }
+    ],
+    "task_classes": [
+      "R02.07.01.02"
     ]
   },
   {
@@ -20478,7 +20533,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "bab88dfed88ca440c231aa768530374a0f19498777a70921481a904fddd46bb8",
     "reviewed_at": "2026-10-17T02:12:10Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "WebRollback: Enhancing Web Agents with Explicit Rollback Mechanisms",
@@ -20656,7 +20714,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "afe4e75ffb8a5c44f4c088a90ffa5f53553036f514aa768f5aee0c5aa38d731e",
     "reviewed_at": "2026-10-17T02:12:10Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "name": "MobileIPL: Enhancing Mobile Agents Thinking Process via Iterative Preference Learning",
@@ -21034,7 +21095,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "4953a8e0f029016aef668bce98cec4d2873a7ae49c1fe33c4311fa5eb8d24089",
     "reviewed_at": "2026-10-17T02:12:10Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "Surfer-H Meets Holo1: Cost-Efficient Web Agent Powered by Open Weights",
@@ -21251,7 +21315,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
     "reviewed_at": "2026-10-17T02:12:10Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "When Charts Deceive Web Agents: A Paired Benchmark for Misleading Visualization-Grounded Tasks",
@@ -21826,7 +21893,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
     "reviewed_at": "2026-10-17T02:12:10Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "AutoGUIWorld: Image Generators as Visual World Models for GUI Agent",
@@ -24289,7 +24359,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R04.01.02.04"
+    ]
   },
   {
     "name": "Less is More: Empowering GUI Agent with Context-Aware Simplification",
@@ -24631,7 +24704,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "name": "Evolving in Tasks: Empowering the Multi-modality Large Language Model as the Computer Use Agent",
@@ -24811,7 +24887,11 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R12.01.01.01",
+      "R12.01.01.02"
+    ]
   },
   {
     "name": "V2P: Visual Attention Calibration for GUI Grounding via Background Suppression and Center Peaking",
@@ -24886,7 +24966,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "0b730323b2ce85c39aa7d534665901a480ff06540c73f1f80832fcc0735b8789",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "A Functionality-Grounded Benchmark for Evaluating Web Agents in E-commerce Domains",
@@ -24912,7 +24995,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "name": "WebSight: A Vision-First Architecture for Robust Web Agents",
@@ -25020,7 +25106,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "26fb4922c4c0bb5c9069935ed0aef0a9f56938cf8ae1af9724894fa1409955fb",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R13.01.02.02"
+    ]
   },
   {
     "name": "Succeed or Learn Slowly: Sample Efficient Off-Policy Reinforcement Learning for Mobile App Control",
@@ -25715,7 +25804,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "74e521e46c46489e48f9bad5d774625a85b5ccd32828969fd98e1a4c453b899f",
     "reviewed_at": "2026-10-17T03:26:41Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.01.01.01"
+    ]
   },
   {
     "name": "The GUI Is Not the State: Diagnosing State Aliasing in GUI World Models",
@@ -29652,7 +29744,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.06.01.03"
+    ]
   },
   {
     "name": "Tell Me What's Next: Textual Foresight for Generic UI Representations",
@@ -29721,7 +29816,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "name": "Seeing is Believing: Vision-driven Non-crash Functional Bug Detection for Mobile Apps",
@@ -29756,7 +29854,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "Identifying User Goals from UI Trajectories",
@@ -30103,7 +30204,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R04.01.02.03"
+    ]
   },
   {
     "name": "Navi-plus: Managing Ambiguous GUI Navigation Tasks with Follow-up Questions",
@@ -30137,7 +30241,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "name": "BIMgent: Towards Autonomous Building Modeling via Computer-use Agents",
@@ -30172,7 +30279,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R07.05.01.02"
+    ]
   },
   {
     "name": "Atomic-to-Compositional Generalization for Mobile Agents with A New Benchmark and Scheduling System",
@@ -30844,7 +30954,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "WebTrap Park: An Automated Platform for Systematic Security Evaluation of Web Agents",
@@ -31355,7 +31468,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.09.01.02"
+    ]
   },
   {
     "name": "Anonymization-Enhanced Privacy Protection for Mobile GUI Agents: Available but Invisible",
@@ -31423,7 +31539,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R15.04.01.03"
+    ]
   },
   {
     "name": "WebTestPilot: Agentic End-to-End Web Testing against Natural Language Specification by Inferring Oracles with Symbolized GUI Elements",
@@ -31457,7 +31576,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "name": "AmbiBench: Benchmarking Mobile GUI Agents Beyond One-Shot Instructions in the Wild",
@@ -31735,7 +31857,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.02.01.02"
+    ]
   },
   {
     "name": "CUAAudit: Meta-Evaluation of Vision-Language Models as Auditors of Autonomous Computer-Use Agents",
@@ -31948,7 +32073,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R11.07.01.03"
+    ]
   },
   {
     "name": "PSPA-Bench: A Personalized Benchmark for Smartphone GUI Agent",
@@ -32015,7 +32143,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.09.01.02"
+    ]
   },
   {
     "name": "ElderBench: Benchmarking Autonomous Mobile Agents for Older Adults",
@@ -32155,7 +32286,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R07.01.01.03"
+    ]
   },
   {
     "name": "From Interaction Traces to Persistent Skills: Online Evolution for Computer-Use Agents",
@@ -32237,6 +32371,9 @@
         "sha256": "2158cabc9a6211e0b75e8e3307f80ebc0d42c42fccc03d0143dcf574c2f663db",
         "retrieved_at": "2026-10-17T04:06:26Z"
       }
+    ],
+    "task_classes": [
+      "R03.02.01.01"
     ]
   },
   {
@@ -32343,7 +32480,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R12.11.01.01"
+    ]
   },
   {
     "name": "LabOSBench: Benchmarking Computer Use Agents for Scientific Instrument Control",
@@ -32377,7 +32517,10 @@
       "scope"
     ],
     "read_basis": "Complete original arXiv Atom abstract and title, independently cross-reviewed against the same retained source snapshot.",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R08.12.01.03"
+    ]
   },
   {
     "name": "GUI agent: Guided Exploration of User-Sensitive Screens",
@@ -36137,6 +36280,9 @@
       "topics",
       "scope",
       "notes"
+    ],
+    "task_classes": [
+      "R04.01.02.04"
     ]
   },
   {
@@ -36577,6 +36723,9 @@
       "topics",
       "scope",
       "notes"
+    ],
+    "task_classes": [
+      "R04.03.01.06"
     ]
   },
   {
@@ -36828,6 +36977,9 @@
       "topics",
       "scope",
       "notes"
+    ],
+    "task_classes": [
+      "R12.01.01.02"
     ]
   },
   {
@@ -37705,6 +37857,9 @@
       "environments",
       "topics",
       "scope"
+    ],
+    "task_classes": [
+      "R11.07.01.01"
     ]
   },
   {
@@ -37740,6 +37895,9 @@
       "environments",
       "topics",
       "scope"
+    ],
+    "task_classes": [
+      "R01.05.02.02"
     ]
   },
   {
@@ -38323,6 +38481,9 @@
       "environments",
       "topics",
       "scope"
+    ],
+    "task_classes": [
+      "R01.10.01.04"
     ]
   },
   {
@@ -38709,6 +38870,9 @@
       "environments",
       "topics",
       "scope"
+    ],
+    "task_classes": [
+      "R01.11.01.02"
     ]
   },
   {
@@ -40350,7 +40514,10 @@
       "topics"
     ],
     "additional_evidence": [],
-    "notes": "The annotation was reviewed against retained primary publication sources. This is a separate visual-testing contribution from the 2009 Sikuli paper, not another version of the same article. MIT PDF download returned HTTP 429; its complete institutional abstract and citation metadata remain the retained review source."
+    "notes": "The annotation was reviewed against retained primary publication sources. This is a separate visual-testing contribution from the 2009 Sikuli paper, not another version of the same article. MIT PDF download returned HTTP 429; its complete institutional abstract and citation metadata remain the retained review source.",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "url:628b5251757bb3888e89",
@@ -40525,7 +40692,10 @@
         "sha256": "6b7e584bb3862e0de51ca164d0f311c2a853e97bd63d56658ce62f0b49d86557"
       }
     ],
-    "notes": "The annotation was reviewed against retained primary publication sources. This is browser interaction learned from demonstrations, rather than a generic server-side crawling library."
+    "notes": "The annotation was reviewed against retained primary publication sources. This is browser interaction learned from demonstrations, rather than a generic server-side crawling library.",
+    "task_classes": [
+      "R04.01.01.02"
+    ]
   },
   {
     "id": "url:a4cdb2ee0d07d3980651",
@@ -41290,7 +41460,10 @@
       "scope",
       "notes"
     ],
-    "notes": "Reviewed against the complete retained original arXiv abstract."
+    "notes": "Reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.11.01.01"
+    ]
   },
   {
     "name": "EVA: Evolving Semantic Adversaries for Red-Teaming GUI Agents Against Environmental Injection Attacks",
@@ -41425,7 +41598,10 @@
       "scope",
       "notes"
     ],
-    "notes": "Reviewed against the complete retained original arXiv abstract."
+    "notes": "Reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "UI-Evol: Automatic Knowledge Evolving for Computer Use Agents",
@@ -41525,7 +41701,10 @@
       "scope",
       "notes"
     ],
-    "notes": "Reviewed against the complete retained original arXiv abstract."
+    "notes": "Reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "VerificAgent: Domain-Specific Memory Verification for Scalable Oversight of Aligned Computer-Use Agents",
@@ -41593,7 +41772,10 @@
       "scope",
       "notes"
     ],
-    "notes": "Reviewed against the exact-version official arXiv abstract page; its complete title, ordered author list, visible version, and normalized abstract SHA match the retained snapshot. The original API response body was not locally available."
+    "notes": "Reviewed against the exact-version official arXiv abstract page; its complete title, ordered author list, visible version, and normalized abstract SHA match the retained snapshot. The original API response body was not locally available.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "EconWebArena: Benchmarking Autonomous Agents on Economic Tasks in Realistic Web Environments",
@@ -41966,7 +42148,10 @@
       "scope",
       "notes"
     ],
-    "notes": "Reviewed against the exact-version official arXiv abstract page; its complete title, ordered author list, visible version, and normalized abstract SHA match the retained snapshot. The original API response body was not locally available."
+    "notes": "Reviewed against the exact-version official arXiv abstract page; its complete title, ordered author list, visible version, and normalized abstract SHA match the retained snapshot. The original API response body was not locally available.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "name": "MobiAgent: A Systematic Framework for Customizable Mobile Agents",
@@ -42389,7 +42574,10 @@
       "scope",
       "notes"
     ],
-    "notes": "Reviewed against the complete retained original arXiv abstract."
+    "notes": "Reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "name": "OpenApps: Simulating Environment Variations to Measure UI-Agent Reliability",
@@ -45270,7 +45458,10 @@
           "https://huggingface.co/datasets/friedrichor/WebTestBench/raw/main/README.md"
         ]
       }
-    }
+    },
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "MobileGym",
@@ -46749,7 +46940,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "Where and How to Prune: An Empirical Study of Visual Token Pruning for GUI Agent Navigation",
@@ -48504,7 +48698,10 @@
       "topics",
       "scope"
     ],
-    "notes": "Reviewed against the complete retained official abstract."
+    "notes": "Reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2605.12493",
@@ -48575,7 +48772,10 @@
       "topics",
       "scope"
     ],
-    "notes": "Reviewed against the complete retained official abstract."
+    "notes": "Reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2604.18240",
@@ -48858,7 +49058,10 @@
       "topics",
       "scope"
     ],
-    "notes": "Reviewed against the complete retained official abstract. Adjacent GUI-application generation benchmark with real component interaction probes; its main evaluated agents are application coders, not general GUI task executors."
+    "notes": "Reviewed against the complete retained official abstract. Adjacent GUI-application generation benchmark with real component interaction probes; its main evaluated agents are application coders, not general GUI task executors.",
+    "task_classes": [
+      "R02.04.01.01"
+    ]
   },
   {
     "id": "arxiv:2605.17656",
@@ -49139,7 +49342,10 @@
       "topics",
       "scope"
     ],
-    "notes": "Reviewed against the complete retained official abstract."
+    "notes": "Reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "CoAT research implementation",
@@ -51755,7 +51961,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.10.01.03"
+    ]
   },
   {
     "name": "Cognitive Duality for Adaptive Web Agents",
@@ -52029,7 +52238,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.10.01.03"
+    ]
   },
   {
     "name": "JEF-Hinter: Leveraging Offline Knowledge for Improving Web Agents Adaptation",
@@ -52234,7 +52446,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R03.05.01.01"
+    ]
   },
   {
     "name": "In-Browser LLM-Guided Fuzzing for Real-Time Prompt Injection Testing in Agentic AI Browsers",
@@ -52844,7 +53059,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "Temporal UI State Inconsistency in Desktop GUI Agents: Formalizing and Defending Against TOCTOU Attacks on Computer-Use Agents",
@@ -53522,7 +53740,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation was reviewed against the complete retained official abstract."
+    "notes": "The annotation was reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R01.11.01.02"
+    ]
   },
   {
     "name": "Qwen-CUA: Native Computer Use for (almost) Everything",
@@ -54494,7 +54715,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation was reviewed against the complete retained official abstract."
+    "notes": "The annotation was reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R01.01.01.05"
+    ]
   },
   {
     "name": "AgentRAE: Remote Action Execution through Notification-based Visual Backdoors against Screenshots-based Mobile GUI Agents",
@@ -54638,7 +54862,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation was reviewed against the complete retained official abstract."
+    "notes": "The annotation was reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R02.01.02.02"
+    ]
   },
   {
     "name": "RankGround: Efficient High-Resolution GUI Grounding via Lightweight Reranker-Guided Crop Selection",
@@ -54882,7 +55109,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation was reviewed against the complete retained official abstract."
+    "notes": "The annotation was reviewed against the complete retained official abstract.",
+    "task_classes": [
+      "R07.08.01.02"
+    ]
   },
   {
     "name": "SynWeaver: Website-Prior Task and Trajectory Co-Synthesis for Web Agents",
@@ -54985,7 +55215,10 @@
       "notes"
     ],
     "read_basis": "Complete original arXiv Atom title and abstract in the retained receipt; its abstract hash matches details.arxiv_snapshot.abstract_sha256.",
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Scope is adjacent: autonomous web browsing is one of three hosted agents, beside data-analysis and API-plugin agents."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Scope is adjacent: autonomous web browsing is one of three hosted agents, beside data-analysis and API-plugin agents.",
+    "task_classes": [
+      "R03.02.01.01"
+    ]
   },
   {
     "name": "GUI-CIDER: Mid-training GUI Agents via Causal Internalization and Density-aware Exemplar Reselection",
@@ -55055,7 +55288,10 @@
       "notes"
     ],
     "read_basis": "Complete original arXiv Atom title and abstract in the retained receipt; its abstract hash matches details.arxiv_snapshot.abstract_sha256.",
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R11.07.01.03"
+    ]
   },
   {
     "name": "Mind2Web 2",
@@ -55364,7 +55600,10 @@
       "summary",
       "notes"
     ],
-    "notes": "Reviewed against the complete official arXiv abstract."
+    "notes": "Reviewed against the complete official arXiv abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "sudo rm -rf agentic_security",
@@ -55652,7 +55891,10 @@
       "summary",
       "notes"
     ],
-    "notes": "Reviewed against the complete official arXiv abstract."
+    "notes": "Reviewed against the complete official arXiv abstract.",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "name": "Scenario-Guided LLM-based Mobile App GUI Testing",
@@ -55686,7 +55928,10 @@
       "summary",
       "notes"
     ],
-    "notes": "Reviewed against the complete official arXiv abstract."
+    "notes": "Reviewed against the complete official arXiv abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "Thinking vs. Doing: Agents that Reason by Scaling Test-Time Interaction",
@@ -55932,7 +56177,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "GUI-Lens: Coarse-to-Fine Cropping for GUI Grounding with General-Purpose VLMs",
@@ -56699,7 +56947,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. GUI agents actually load and play browser-game builds, providing an executable interface-testing signal for game-code generation; the central application remains game development."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. GUI agents actually load and play browser-game builds, providing an executable interface-testing signal for game-code generation; the central application remains game development.",
+    "task_classes": [
+      "R13.03.01.01"
+    ]
   },
   {
     "name": "MaskClaw: Edge-Side Personalized Privacy Arbitration for GUI Agents with Behavior-Driven Skill Evolution",
@@ -57084,7 +57335,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "A11y-Compressor: A Framework for Enhancing the Efficiency of GUI Agent Observations through Visual Context Reconstruction and Redundancy Reduction",
@@ -57648,7 +57902,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Agents execute real GUI moves in six puzzle games; the tasks diagnose computer-control planning but remain game-based rather than general productivity workflows."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Agents execute real GUI moves in six puzzle games; the tasks diagnose computer-control planning but remain game-based rather than general productivity workflows.",
+    "task_classes": [
+      "R13.02.01.03"
+    ]
   },
   {
     "name": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
@@ -57683,7 +57940,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R04.04.01.01"
+    ]
   },
   {
     "name": "Guides That Cause Actions: An Offline Study of Guide-Action Mutual Reinforcement in Multimodal Web Agents",
@@ -57998,7 +58258,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "name": "TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents",
@@ -59119,7 +59382,10 @@
       "scope",
       "notes"
     ],
-    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract."
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
+    "task_classes": [
+      "R03.04.01.03"
+    ]
   },
   {
     "name": "StainFlow: Entity-Stain Tracking and Evidence Linking for Process Rewards in GUI Agents",
@@ -61711,7 +61977,10 @@
     ],
     "editorial_reviewed": true,
     "reviewed_sha256": "61eb6109404f266fd22c6fa8ca58ef773a9d502567403f42edc096958ab2e430",
-    "reviewed_at": "2026-10-18T10:59:54Z"
+    "reviewed_at": "2026-10-18T10:59:54Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "ST-WebAgentBench",
@@ -62540,7 +62809,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
     "reviewed_at": "2026-10-18T13:13:38Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "GUI-Rise: Structured Reasoning and History Summarization for GUI Navigation",
@@ -62611,7 +62883,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
     "reviewed_at": "2026-10-18T10:54:12Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "SPILLage: Agentic Oversharing on the Web",
@@ -62970,7 +63245,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
     "reviewed_at": "2026-10-18T10:54:12Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "name": "From Blind Edits to Verified Repair: Building Trustworthy User-Side LLM Agents for Web Accessibility",
@@ -62994,7 +63272,10 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "5f5bae19420f79231516d4bcf604ea18d4f930fc7790cde5a3e7fcb8d41a1126",
     "reviewed_at": "2026-10-18T10:54:12Z",
-    "notes": "The annotation and scope were reviewed against the primary paper abstract."
+    "notes": "The annotation and scope were reviewed against the primary paper abstract.",
+    "task_classes": [
+      "R02.07.01.03"
+    ]
   },
   {
     "name": "A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security",
@@ -63248,6 +63529,9 @@
         "retrieved_at": "2026-10-18T10:05:22.211464+00:00",
         "sha256": "8d6aa8484ff4a7cbaac589c2c220407ebf6ecd1e216015a248125abdb0f2ed2d"
       }
+    ],
+    "task_classes": [
+      "R11.07.01.03"
     ]
   },
   {
@@ -63612,6 +63896,9 @@
         "retrieved_at": "2026-10-18T10:05:30.529800+00:00",
         "sha256": "7ca9569113479791a0482f4c196002a8459f1826eb6a3c9fab8a701b33360593"
       }
+    ],
+    "task_classes": [
+      "R11.07.01.03"
     ]
   },
   {
@@ -66021,7 +66308,10 @@
     "editorial_reviewed": true,
     "review_note": "Retained primary sources and independent source review support the annotation. Interaction, evaluation, reading and release limitations remain explicit; no linked code, model or benchmark was executed.",
     "reviewed_at": "2026-10-20T15:25:00Z",
-    "reviewed_sha256": "bef4399f087e484b62ff5b8dc2c283f92e0357b94c93b464b86fd97fe7b069cb"
+    "reviewed_sha256": "bef4399f087e484b62ff5b8dc2c283f92e0357b94c93b464b86fd97fe7b069cb",
+    "task_classes": [
+      "R06.06.03.04"
+    ]
   },
   {
     "id": "arxiv:2610.13092",
@@ -66472,7 +66762,10 @@
     "editorial_reviewed": true,
     "review_note": "Retained primary sources and independent source review support the annotation. Interface, evaluation, reading and license boundaries remain explicit; no linked code, model or benchmark was executed.",
     "reviewed_at": "2026-10-20T19:29:44Z",
-    "reviewed_sha256": "ca995ec330f62a43d3d4fbbf28dfe83c5fa8b05f5c1e446929493409760268d1"
+    "reviewed_sha256": "ca995ec330f62a43d3d4fbbf28dfe83c5fa8b05f5c1e446929493409760268d1",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2610.19366",
@@ -66652,7 +66945,11 @@
     ],
     "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract.",
     "reviewed_sha256": "e6011e7f11aab2272d1b5a38c317bfbe2eae9629258c726c7769985c5c566adb",
-    "reviewed_at": "2026-10-18T11:55:00Z"
+    "reviewed_at": "2026-10-18T11:55:00Z",
+    "task_classes": [
+      "R12.01.01.01",
+      "R12.08.01.02"
+    ]
   },
   {
     "name": "WebWorld: The Browser as a World Model for Self-Improving Web Code",
@@ -66905,7 +67202,10 @@
     ],
     "read_basis": "README.md and docs/tasks.md at the pinned commit, read in full; docs/running.md for setup and network policy.",
     "reviewed_sha256": "c79cb821975c34552a46f01349edd0869c2f20c9a85d4b7811155d3fb7f7f0b2",
-    "reviewed_at": "2026-11-06T06:22:02Z"
+    "reviewed_at": "2026-11-06T06:22:02Z",
+    "task_classes": [
+      "R02.04.01.02"
+    ]
   },
   {
     "name": "Taxy AI",
@@ -67230,7 +67530,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "99af93daca789b76602df82863e2645021fd0abc9a8749339c1deeb4216a2906",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "arxiv:1902.07257",
@@ -67366,7 +67669,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v4).",
     "read_basis": "Complete retained arXiv v4 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "e12fade0ea153ceaa7ac676b093fbc3bbefaa4ae549162cee61c5bb14b171272",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R04.03.01.04"
+    ]
   },
   {
     "id": "arxiv:2210.03629",
@@ -67420,7 +67726,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The reported evaluation covers 106 apps from Google Play.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "c7f75c0c72cce51213ddba324bd5575a25dfba3b8a7ac3abf776759b417d7d52",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "arxiv:2301.13779",
@@ -67446,7 +67755,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "c7f75c0c72cce51213ddba324bd5575a25dfba3b8a7ac3abf776759b417d7d52",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R04.03.01.01"
+    ]
   },
   {
     "id": "arxiv:2305.09699",
@@ -67500,7 +67812,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3).",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "b38636fd83902fe223edd5caf8c91526faae21bd81cab3caa3b91a97f1607236",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2308.05898",
@@ -67555,7 +67870,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3). The abstract describes an accessibility testing workflow and a 10-participant user study.",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "6ac8680b427e4419b7e741230038a08b4f6b4e7da18c516f78297c3179dbc271",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.03"
+    ]
   },
   {
     "id": "arxiv:2310.07128",
@@ -67583,7 +67901,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The reported evaluation uses 75 crash reports involving 58 Android apps.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "6ac8680b427e4419b7e741230038a08b4f6b4e7da18c516f78297c3179dbc271",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2310.13518",
@@ -67611,7 +67932,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3).",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "d2e27f02bb723b177837e993fee6f488d1f51db94bc38b77c0f1cb4484196222",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "arxiv:2310.15780",
@@ -67639,7 +67963,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The reported evaluation uses 93 apps from Google Play.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "d2e27f02bb723b177837e993fee6f488d1f51db94bc38b77c0f1cb4484196222",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "arxiv:2311.10751",
@@ -67666,7 +67993,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "d2e27f02bb723b177837e993fee6f488d1f51db94bc38b77c0f1cb4484196222",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R01.06.01.03"
+    ]
   },
   {
     "id": "arxiv:2312.10170",
@@ -67747,7 +68077,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). Web shopping is one of two task settings; the other is tool utilization.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "0eea82e845084926f75425e28cfb93901930b6235025cebbeb90980663ae3878",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2403.03636",
@@ -67935,7 +68268,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "84cf130d4e34f4d2e5016ed0458fad86c5211303868cc25cb70d2e17a648fb60",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R04.03.01.01"
+    ]
   },
   {
     "id": "arxiv:2404.12753",
@@ -68315,7 +68651,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "7fa92d39039726a3f51350539f60aa0a2adcacebfad20896d29053c1fde611c6",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "arxiv:2412.04626",
@@ -68563,7 +68902,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). Online shopping is one of several decision-making domains discussed, alongside scientific reasoning and mathematics.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "07ba687f5a4948ae3e83cb632bcef71297cf230f7c82d773b26dbec826a63e91",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2502.12561",
@@ -68591,7 +68933,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3). The system is intended to help researchers refine study designs before conducting studies with human participants.",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "07ba687f5a4948ae3e83cb632bcef71297cf230f7c82d773b26dbec826a63e91",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2502.13130",
@@ -68859,7 +69204,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). The automated reproduction target is crash bugs in Minecraft.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "b7001e189c17d6fa072573558661e37a7cb4c7709d33080603d72a969cc4ba39",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R13.03.01.01"
+    ]
   },
   {
     "id": "arxiv:2504.06821",
@@ -69222,7 +69570,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "72d781966615fe4da127a9c089d5d6ab85838feb4205ef1ebd446ef97189bf70",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R04.01.01.01"
+    ]
   },
   {
     "id": "arxiv:2505.15859",
@@ -69434,7 +69785,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). Its reported coverage results come from ten open-source web applications.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "72d781966615fe4da127a9c089d5d6ab85838feb4205ef1ebd446ef97189bf70",
-    "reviewed_at": "2026-11-06T07:33:19Z"
+    "reviewed_at": "2026-11-06T07:33:19Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2506.01520",
@@ -69596,7 +69950,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v4).",
     "read_basis": "Complete retained arXiv v4 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "c86d37b7165d318ca1390875b07f6e85c28c4f6971c31f200af100d6e336afce",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R04.05.01.02"
+    ]
   },
   {
     "id": "arxiv:2506.19998",
@@ -69923,7 +70280,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). The benchmark focuses on web information seeking and synthesis.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "c86d37b7165d318ca1390875b07f6e85c28c4f6971c31f200af100d6e336afce",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R04.01.01.01"
+    ]
   },
   {
     "id": "arxiv:2508.09124",
@@ -69978,7 +70338,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "ff100e932a2c0dd45e8c1fe7a886af54ba9927ac638f516c8082a14138bfa7cb",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R04.01.02.03"
+    ]
   },
   {
     "id": "arxiv:2508.16271",
@@ -70033,7 +70396,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "ff100e932a2c0dd45e8c1fe7a886af54ba9927ac638f516c8082a14138bfa7cb",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R02.04.01.01"
+    ]
   },
   {
     "id": "arxiv:2508.17398",
@@ -70061,7 +70427,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The benchmark centers on interactive dashboards from Tableau Public.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "ff100e932a2c0dd45e8c1fe7a886af54ba9927ac638f516c8082a14138bfa7cb",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R03.02.01.03"
+    ]
   },
   {
     "id": "arxiv:2508.18265",
@@ -70226,7 +70595,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The comparison covers three enterprise RPA challenges.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "ff100e932a2c0dd45e8c1fe7a886af54ba9927ac638f516c8082a14138bfa7cb",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R04.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2509.07098",
@@ -70719,7 +71091,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). GUI operation is a fallback within a 3D content-generation framework.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2343ea50b1761631c89f41f46494ffa8b9c95a6d6b1cf95d58720bf26271ce29",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R06.06.01.03"
+    ]
   },
   {
     "id": "arxiv:2510.04673",
@@ -70773,7 +71148,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The evaluation uses 150 requirements based on 900 acceptance-criteria annotations.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2343ea50b1761631c89f41f46494ffa8b9c95a6d6b1cf95d58720bf26271ce29",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2510.05137",
@@ -70800,7 +71178,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3). The benchmark tests deep search on hint-free multi-hop questions in a controlled Wikipedia sandbox.",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2343ea50b1761631c89f41f46494ffa8b9c95a6d6b1cf95d58720bf26271ce29",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R04.01.01.01"
+    ]
   },
   {
     "id": "arxiv:2510.06223",
@@ -71014,7 +71395,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3).",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "c49404f2b2e210c30a4888bf384a5a168e07ba7943155fba5efa37e08035ff6d",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R11.07.01.03"
+    ]
   },
   {
     "id": "arxiv:2510.14545",
@@ -71309,7 +71693,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3). The attacks are evaluated within Android emulators.",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "c49404f2b2e210c30a4888bf384a5a168e07ba7943155fba5efa37e08035ff6d",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2510.20707",
@@ -71520,7 +71907,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). Its main objective is UI code generation; the agent explores interface states to support that process.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "20bdf96426e8120a0cbfdbebadfabbbd4cda26d2d35ab670885f58b35ea35d5d",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R02.04.01.02"
+    ]
   },
   {
     "id": "arxiv:2511.08325",
@@ -71682,7 +72072,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "20bdf96426e8120a0cbfdbebadfabbbd4cda26d2d35ab670885f58b35ea35d5d",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2511.22074",
@@ -71737,7 +72130,11 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The comparison uses four simulated e-shops.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "20bdf96426e8120a0cbfdbebadfabbbd4cda26d2d35ab670885f58b35ea35d5d",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R12.01.01.01",
+      "R12.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2512.12692",
@@ -71820,7 +72217,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). Its tasks comprise 600 generated and 100 real-world cases.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "75da6ac15da18c8af45938cceafc4df1bb67f525c8b7b05d50b392953a8e534f",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2601.02371",
@@ -71900,7 +72300,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3). Its main task is front-end code generation; web agents explore generated sites to assess and critique implementations.",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "75da6ac15da18c8af45938cceafc4df1bb67f525c8b7b05d50b392953a8e534f",
-    "reviewed_at": "2026-11-06T08:25:50Z"
+    "reviewed_at": "2026-11-06T08:25:50Z",
+    "task_classes": [
+      "R02.04.01.01"
+    ]
   },
   {
     "id": "arxiv:2601.06031",
@@ -73142,7 +73545,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "f5b28ee113a96eb4a774bcdfd6a1e8ee51307a79bf0d99c8a0817e0be2dc82ab",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2603.26648",
@@ -73169,7 +73575,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v3). The benchmark evaluates website development by coding agents, with a GUI agent used for verification.",
     "read_basis": "Complete retained arXiv v3 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "0c068f805b1eaf7bcbd6520b3b932fea5652e6a43cdb2696de535d5af5c5cf97",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.04.01.01"
+    ]
   },
   {
     "id": "arxiv:2603.28551",
@@ -73252,7 +73661,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). Interruptions are evaluated through synthesized scenarios in a simulation framework.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "0c068f805b1eaf7bcbd6520b3b932fea5652e6a43cdb2696de535d5af5c5cf97",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R11.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2604.01535",
@@ -73523,7 +73935,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). Creating the attack requires white-box access to the model.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "0c068f805b1eaf7bcbd6520b3b932fea5652e6a43cdb2696de535d5af5c5cf97",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2604.08455",
@@ -73551,7 +73966,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "0c068f805b1eaf7bcbd6520b3b932fea5652e6a43cdb2696de535d5af5c5cf97",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R11.07.01.03"
+    ]
   },
   {
     "id": "arxiv:2604.09574",
@@ -74646,7 +75064,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The abstract reports results on out-of-distribution benchmarks and adaptive attacks.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "5bf7e3875a29a94f6652cd7ddff6b805e411aaef8d8ac1f96946fe9aa51c9d3d",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2605.15040",
@@ -74784,7 +75205,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). Its agent evaluation uses generated tasks in sandbox shops.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "5bf7e3875a29a94f6652cd7ddff6b805e411aaef8d8ac1f96946fe9aa51c9d3d",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R12.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2605.16565",
@@ -75110,7 +75534,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2).",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "07bff2e80d81fb334aa9573a6ebebc0de70c44b65516d45c5796c8b1fc840ed3",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R04.01.02.02"
+    ]
   },
   {
     "id": "arxiv:2605.27134",
@@ -75610,7 +76037,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). The abstract reports evaluation on the ProactiveMobile benchmark.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "4f05deab6406b79ec0a8ae18c4b711015059794560d87f605eb214a7442b37d0",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R11.07.01.03"
+    ]
   },
   {
     "id": "arxiv:2606.03951",
@@ -76159,7 +76589,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). Its tasks assess exhaustive web search and table answers.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "3d44d185c972bf0d9fe3e9eef40e8ce3070b4c0c6d4fa554e928d4186b488306",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R04.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2606.29445",
@@ -76830,7 +77263,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v2). HITLCUA simulates human participation through an API-simulated user.",
     "read_basis": "Complete retained arXiv v2 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "8d9570c61ec2defc8c17615be17ddc6dc726f06a9948068d290ec118164298a7",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2608.04530",
@@ -76913,7 +77349,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "8d9570c61ec2defc8c17615be17ddc6dc726f06a9948068d290ec118164298a7",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.04.01.01"
+    ]
   },
   {
     "id": "arxiv:2608.06477",
@@ -76941,7 +77380,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The reported attack results depend on agents following a chain of referenced pages.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "8d9570c61ec2defc8c17615be17ddc6dc726f06a9948068d290ec118164298a7",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R01.05.02.01"
+    ]
   },
   {
     "id": "arxiv:2608.06704",
@@ -77919,7 +78361,11 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). Models are evaluated with provider-native search or a shared retrieval harness.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "fbf9f07c95d8c1f4ad119a20a35d82b69f79d4bdc06b25aacac1a334dc54e034",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R04.01.01.01",
+      "R04.01.02.03"
+    ]
   },
   {
     "id": "arxiv:2610.07127",
@@ -78054,7 +78500,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The benchmark's primary task is web-app development; the web agent tests intermediate applications.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "fbf9f07c95d8c1f4ad119a20a35d82b69f79d4bdc06b25aacac1a334dc54e034",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2610.16998",
@@ -78225,7 +78674,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2822f711f79353d5d16a9fb58020f4944c49f35477b25fb78ee0e21ddc4f5e01",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R04.03.01.01"
+    ]
   },
   {
     "id": "arxiv:2610.25503",
@@ -78279,7 +78731,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The abstract reports evaluation on three public web benchmarks.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2822f711f79353d5d16a9fb58020f4944c49f35477b25fb78ee0e21ddc4f5e01",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.07.01.02"
+    ]
   },
   {
     "id": "arxiv:2610.27205",
@@ -78515,7 +78970,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The tasks seek unique factual answers from live web evidence.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2822f711f79353d5d16a9fb58020f4944c49f35477b25fb78ee0e21ddc4f5e01",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R04.01.01.01"
+    ]
   },
   {
     "id": "arxiv:2610.30202",
@@ -78890,7 +79348,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The comparison uses one organization's vehicle test cases, public-app tasks, and practitioner interviews.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "2822f711f79353d5d16a9fb58020f4944c49f35477b25fb78ee0e21ddc4f5e01",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.07.01.01"
+    ]
   },
   {
     "id": "arxiv:2610.33645",
@@ -79141,7 +79602,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1).",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "cd003d4cacebd66199af72512540e354913873d95494ac7a529d2a6b8d92e06b",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.01.01.02"
+    ]
   },
   {
     "id": "arxiv:2610.35237",
@@ -79542,7 +80006,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The evaluation covers 197 expert-annotated cases from 54 real webpages.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "cd003d4cacebd66199af72512540e354913873d95494ac7a529d2a6b8d92e06b",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R02.07.01.03"
+    ]
   },
   {
     "id": "arxiv:2610.40133",
@@ -79995,7 +80462,10 @@
     "notes": "The annotation and scope were reviewed against the complete retained arXiv abstract (v1). The reported results use recorded states from held-out assembly families.",
     "read_basis": "Complete retained arXiv v1 abstract only; the full paper was not read and nothing was run.",
     "reviewed_sha256": "cd003d4cacebd66199af72512540e354913873d95494ac7a529d2a6b8d92e06b",
-    "reviewed_at": "2026-11-06T13:59:48Z"
+    "reviewed_at": "2026-11-06T13:59:48Z",
+    "task_classes": [
+      "R07.01.01.03"
+    ]
   },
   {
     "id": "arxiv:2611.02644",

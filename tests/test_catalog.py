@@ -389,7 +389,7 @@ class ReadmeBlockTests(unittest.TestCase):
         self.assertIn("[![Reviewed papers and surveys](", strip)
         self.assertIn("2026--11--06%2004%3A18%20UTC", strip)
         self.assertLessEqual(strip.count("[!["), 6)
-        self.assertIn("workflow/status/reacher-z/Awesome-CUA/scan.yml", strip)
+        self.assertNotIn("workflow", strip)
         self.assertNotIn("3%2C636", strip)
         self.assertNotIn("1%2C962", strip)
 

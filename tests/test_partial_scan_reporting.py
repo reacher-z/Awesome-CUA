@@ -112,6 +112,33 @@ class PartialScanReportingTests(unittest.TestCase):
         self.assertEqual(scan.read_json(ROOT / 'data' / 'scan-config.json')['max_consecutive_partial'], 4)
 
 
+class ThrottlePauseTests(unittest.TestCase):
+    def row(self, status='partial', state='rate_limited', progress=3, failed=2, warnings=None):
+        return {'status': status, 'candidate_observations': {'state': state, 'successful_responses': progress, 'new_unique_repositories': 0},
+                'source_fetches': {'successful': 100 - failed + 2, 'total': 102}, 'warnings': warnings if warnings is not None else [
+                    'GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.',
+                    'Discovery sources failed: a, b']}
+
+    def test_a_rate_limit_pause_that_moved_the_cursor_is_not_a_partial_scan_gap(self):
+        self.assertTrue(scan.throttle_pause(self.row()))
+        self.assertEqual(scan.partial_streak([self.row()] * 9), 0)
+        self.assertEqual(scan.partial_streak([{'status': 'partial'}, self.row(), self.row(), {'status': 'partial'}]), 2)
+
+    def test_a_pause_without_progress_still_counts(self):
+        stalled = self.row(progress=0)
+        self.assertFalse(scan.throttle_pause(stalled))
+        self.assertEqual(scan.partial_streak([stalled] * 4), 4)
+
+    def test_other_failures_still_count(self):
+        for case in (self.row(failed=20), self.row(warnings=['build: failed']), self.row(state='bounded_progress'), self.row(status='failed')):
+            with self.subTest(case=case):
+                self.assertFalse(scan.throttle_pause(case))
+        self.assertEqual(scan.partial_streak([self.row(failed=20)] * 4), 4)
+
+    def test_a_success_still_ends_the_streak(self):
+        self.assertEqual(scan.partial_streak([{'status': 'partial'}] * 3 + [{'status': 'success'}, self.row()]), 0)
+
+
 class RepeatedPartialWorkflowTests(unittest.TestCase):
     def test_a_separate_job_fails_the_run_only_after_the_scan_job_succeeds(self):
         text = WORKFLOW.read_text()

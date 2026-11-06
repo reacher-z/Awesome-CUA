@@ -779,7 +779,8 @@ def shield(label, message, color):
 
 
 def badges(rows, report):
-    # A short status strip under the banner: at most six badges, all counted or dated from this build.
+    # A short status strip under the banner: at most six badges, all counted or dated from this build. There is no live
+    # workflow-status badge: a rate-limit pause is not an outage, and the health issue is the alert channel.
     # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
     style = '?style=flat-square&labelColor=1E2233'
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
@@ -790,7 +791,6 @@ def badges(rows, report):
         f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
         f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
         f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
-        "[![Discovery scan](https://img.shields.io/github/actions/workflow/status/reacher-z/Awesome-CUA/scan.yml?branch=main&label=scan&style=flat-square&labelColor=1E2233)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/scan.yml)",
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 
 

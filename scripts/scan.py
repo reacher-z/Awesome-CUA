@@ -251,6 +251,37 @@ def recent_papers(config):
             'rate_limited':any(p.get('status')==429 for p in pages)}
 
 
+THROTTLE_WARNINGS=('GitHub candidate observations paused','GitHub candidate requests have no accepted','GitHub metadata rows were rejected',
+    'Discovery sources failed:','arXiv identifiers remain unresolved')
+MAX_THROTTLE_SOURCE_FAILURE_RATIO=0.05
+
+
+def throttle_pause(row):
+    """True for a partial scan whose only candidate gap is a provider rate-limit pause that still moved the cursor.
+
+    The pause is expected while thousands of candidates are walked within the provider's allowance, so it must not count
+    as an outage. A pause with no progress, a scan with any other failed phase, or source fetch failures above
+    MAX_THROTTLE_SOURCE_FAILURE_RATIO is not a throttle pause and keeps counting toward repeated partial scans."""
+    if row.get('status')!='partial':return False
+    candidate=row.get('candidate_observations') or {}
+    if candidate.get('state')!='rate_limited':return False
+    if not (candidate.get('successful_responses',0)>0 or candidate.get('new_unique_repositories',0)>0):return False
+    fetches=row.get('source_fetches') or {}
+    total=fetches.get('total',0)
+    if total and (total-fetches.get('successful',0))/total>MAX_THROTTLE_SOURCE_FAILURE_RATIO:return False
+    return all(any(k in w for k in THROTTLE_WARNINGS) for w in row.get('warnings',[]))
+
+
+def partial_streak(history):
+    """Consecutive partial scans ending at the newest, ignoring rate-limit pauses that made progress."""
+    streak=0
+    for row in reversed(history):
+        if throttle_pause(row):continue
+        if row.get('status')!='partial':break
+        streak+=1
+    return streak
+
+
 def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
     problems=[]
     for phase in phases:
@@ -354,7 +385,7 @@ def run_round(config,budget):
     history=read_jsonl(DATA/'scan-history.jsonl');history.append({k:v for k,v in report.items() if k!='phases'})
     write_jsonl(DATA/'scan-history.jsonl',history[-config['history_limit']:])
     summary=f'Scan {status}: {len(new_papers)} new paper metadata records; {report["new_candidate_count"]} new candidates; {report["after"]["curated_papers"]} reviewed papers.'
-    streak=next((i for i,r in enumerate(reversed(history)) if r.get('status')!='partial'),len(history))
+    streak=partial_streak(history)
     repeated=streak>=config.get('max_consecutive_partial',float('inf'))
     notes=problems+([f'The last {streak} scans were all partial; the recorded gaps are not clearing on their own.'] if repeated else [])
     # Notices are final answers worth reading (for example renamed candidate repositories); they are not scan gaps.

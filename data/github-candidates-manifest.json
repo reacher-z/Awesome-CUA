@@ -4,7 +4,7 @@
     "role": "Comparison context only; not the observation source, selection, or approval.",
     "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
   },
-  "checkpoint_state_sha256": "57bb47ec4363d6e649de8ff5bdedc156f359bca5303cb801b9358c0ded98b1a3",
+  "checkpoint_state_sha256": "5a9418b8258ef000de76365a24a535f6f64ef3680d5eea81fb2057654cdeb2ca",
   "count": {
     "unit": "repositories",
     "value": 10070
@@ -1741,6 +1741,31 @@
         }
       },
       "id": "3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8040640,
+          "sha256": "578ae367e9bae89df73f9f43b8500e20a5056e07c168c174d3613c78a50cf23a"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
@@ -2856,10 +2881,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
+        "input_id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362",
         "input_id": "3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
@@ -7104,7 +7135,7 @@
     "request_outcomes": {
       "accepted": 615,
       "fetch_failed": 3,
-      "quarantined": 4,
+      "quarantined": 5,
       "rate_limited": 15,
       "redirect_not_followed": 69,
       "unavailable": 1
@@ -7985,16 +8016,28 @@
         "requests_attempted": 1,
         "started_at": "2026-11-06T10:20:40.324514+00:00",
         "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T11:15:19.265969+00:00",
+        "id": "run:ab54efeacc7fd645649634d9",
+        "input_id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-06T11:15:10.403716+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "4bf7ee4374e7e8fff7afe846077b3f6e0420494b79e31a8059c7f0c2c5cabaa5",
+  "source_ledger_sha256": "2bef9ee9d06d959d98dcb060849f803e01f5b9118da1e6200b8b63740e3cbd92",
   "supporting_primary_bodies": 461,
   "verification": {
-    "baseline_checkpoint_sha256": "1080195a9052847011af7d14a107024e74c7afb1566da31b7b75dcda01575460",
+    "baseline_checkpoint_sha256": "c64203e501d82cdb32231385e2326082881384068254eade39982fccebc3772a",
     "baseline_observation_sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",

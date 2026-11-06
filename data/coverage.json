@@ -1,15 +1,15 @@
 {
   "as_of_utc": "2026-11-06T04:18:34Z",
-  "total_records": 3657,
+  "total_records": 3270,
   "curated_records": 1674,
-  "bibliographic_records": 3185,
-  "arxiv_active_records": 3171,
+  "bibliographic_records": 2798,
+  "arxiv_active_records": 2784,
   "non_arxiv_bibliographic_records": 14,
   "publication_metadata_records": 78,
   "arxiv_archive_records": 3312,
-  "excluded_records": 141,
+  "excluded_records": 528,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1983,
+  "metadata_only_records": 1596,
   "discovery_identifiers": 5883,
   "unindexed_candidates": 1970,
   "non_resource_candidates": 130,
@@ -357,6 +357,13 @@
       "url": "https://www.aomni.com",
       "reason": "current source snapshot needs editorial review",
       "cause": "unreviewed_snapshot"
+    },
+    {
+      "id": "arxiv:2607.13884",
+      "name": "Experience Memory Graph: One-Shot Error Correction for Agents",
+      "url": "https://arxiv.org/abs/2607.13884",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) found it outside the scope: Builds a graph memory of correction knowledge from agent trajectories, evaluated on ALFWorld and ScienceWorld. These text-simulated tasks involve no web, GUI or device interaction, so it is outside the catalog. The retained record is v2, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2603.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],
@@ -369,7 +376,7 @@
     "infrastructure": 14,
     "learning": 2,
     "model": 98,
-    "paper": 3166,
+    "paper": 2779,
     "product": 20,
     "survey": 19,
     "tool": 22
@@ -524,11 +531,11 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 226,
-      "indexed_resources": 225,
+      "indexed": 224,
+      "indexed_resources": 223,
       "resolved_aliases": 6,
       "curated": 215,
-      "excluded": 0,
+      "excluded": 2,
       "set_aside": 29,
       "unindexed": 83
     },
@@ -584,11 +591,11 @@
         "state": "success"
       },
       "discovered": 224,
-      "indexed": 198,
-      "indexed_resources": 198,
+      "indexed": 195,
+      "indexed_resources": 195,
       "resolved_aliases": 0,
       "curated": 178,
-      "excluded": 0,
+      "excluded": 3,
       "set_aside": 6,
       "unindexed": 20
     },
@@ -704,11 +711,11 @@
         "state": "success"
       },
       "discovered": 170,
-      "indexed": 116,
-      "indexed_resources": 115,
+      "indexed": 115,
+      "indexed_resources": 114,
       "resolved_aliases": 3,
       "curated": 110,
-      "excluded": 1,
+      "excluded": 2,
       "set_aside": 9,
       "unindexed": 44
     },
@@ -729,11 +736,11 @@
         "provider_host": "raw.githubusercontent.com"
       },
       "discovered": 588,
-      "indexed": 503,
-      "indexed_resources": 503,
+      "indexed": 502,
+      "indexed_resources": 502,
       "resolved_aliases": 5,
       "curated": 459,
-      "excluded": 1,
+      "excluded": 2,
       "set_aside": 9,
       "unindexed": 75
     },
@@ -789,11 +796,11 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 49,
-      "indexed_resources": 49,
+      "indexed": 47,
+      "indexed_resources": 47,
       "resolved_aliases": 0,
       "curated": 34,
-      "excluded": 0,
+      "excluded": 2,
       "set_aside": 3,
       "unindexed": 26
     },
@@ -819,11 +826,11 @@
         "state": "success"
       },
       "discovered": 63,
-      "indexed": 11,
-      "indexed_resources": 11,
+      "indexed": 10,
+      "indexed_resources": 10,
       "resolved_aliases": 0,
       "curated": 8,
-      "excluded": 0,
+      "excluded": 1,
       "set_aside": 2,
       "unindexed": 50
     },
@@ -849,11 +856,11 @@
         "state": "success"
       },
       "discovered": 193,
-      "indexed": 150,
-      "indexed_resources": 150,
+      "indexed": 149,
+      "indexed_resources": 149,
       "resolved_aliases": 3,
       "curated": 148,
-      "excluded": 0,
+      "excluded": 1,
       "set_aside": 15,
       "unindexed": 28
     },
@@ -909,11 +916,11 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 87,
+      "indexed_resources": 87,
       "resolved_aliases": 1,
       "curated": 83,
-      "excluded": 0,
+      "excluded": 5,
       "set_aside": 7,
       "unindexed": 45
     },
@@ -1029,11 +1036,11 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 196,
-      "indexed_resources": 196,
+      "indexed": 190,
+      "indexed_resources": 190,
       "resolved_aliases": 3,
       "curated": 184,
-      "excluded": 0,
+      "excluded": 6,
       "set_aside": 6,
       "unindexed": 45
     },
@@ -1059,11 +1066,11 @@
         "state": "success"
       },
       "discovered": 91,
-      "indexed": 77,
-      "indexed_resources": 77,
+      "indexed": 75,
+      "indexed_resources": 75,
       "resolved_aliases": 0,
       "curated": 66,
-      "excluded": 0,
+      "excluded": 2,
       "set_aside": 4,
       "unindexed": 10
     },
@@ -1179,11 +1186,11 @@
         "state": "success"
       },
       "discovered": 72,
-      "indexed": 51,
-      "indexed_resources": 51,
+      "indexed": 47,
+      "indexed_resources": 47,
       "resolved_aliases": 0,
       "curated": 34,
-      "excluded": 0,
+      "excluded": 4,
       "set_aside": 13,
       "unindexed": 8
     },
@@ -1239,11 +1246,11 @@
         "state": "success"
       },
       "discovered": 215,
-      "indexed": 151,
-      "indexed_resources": 151,
+      "indexed": 146,
+      "indexed_resources": 146,
       "resolved_aliases": 2,
       "curated": 129,
-      "excluded": 14,
+      "excluded": 19,
       "set_aside": 14,
       "unindexed": 36
     },
@@ -2139,11 +2146,11 @@
         "state": "success"
       },
       "discovered": 156,
-      "indexed": 107,
-      "indexed_resources": 107,
+      "indexed": 105,
+      "indexed_resources": 105,
       "resolved_aliases": 1,
       "curated": 100,
-      "excluded": 0,
+      "excluded": 2,
       "set_aside": 2,
       "unindexed": 47
     },
@@ -2169,11 +2176,11 @@
         "state": "success"
       },
       "discovered": 334,
-      "indexed": 245,
-      "indexed_resources": 245,
+      "indexed": 242,
+      "indexed_resources": 242,
       "resolved_aliases": 2,
       "curated": 198,
-      "excluded": 1,
+      "excluded": 4,
       "set_aside": 0,
       "unindexed": 88
     },
@@ -2199,11 +2206,11 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 127,
-      "indexed_resources": 127,
+      "indexed": 119,
+      "indexed_resources": 119,
       "resolved_aliases": 0,
       "curated": 72,
-      "excluded": 0,
+      "excluded": 8,
       "set_aside": 6,
       "unindexed": 88
     },
@@ -2229,11 +2236,11 @@
         "state": "success"
       },
       "discovered": 205,
-      "indexed": 198,
-      "indexed_resources": 198,
+      "indexed": 187,
+      "indexed_resources": 187,
       "resolved_aliases": 0,
       "curated": 135,
-      "excluded": 0,
+      "excluded": 11,
       "set_aside": 2,
       "unindexed": 5
     },
@@ -2469,11 +2476,11 @@
         "state": "success"
       },
       "discovered": 97,
-      "indexed": 70,
-      "indexed_resources": 70,
+      "indexed": 69,
+      "indexed_resources": 69,
       "resolved_aliases": 0,
       "curated": 60,
-      "excluded": 0,
+      "excluded": 1,
       "set_aside": 1,
       "unindexed": 26
     },
@@ -2499,11 +2506,11 @@
         "state": "success"
       },
       "discovered": 40,
-      "indexed": 21,
-      "indexed_resources": 21,
+      "indexed": 18,
+      "indexed_resources": 18,
       "resolved_aliases": 0,
       "curated": 3,
-      "excluded": 0,
+      "excluded": 3,
       "set_aside": 1,
       "unindexed": 18
     },
@@ -2589,11 +2596,11 @@
         "state": "success"
       },
       "discovered": 89,
-      "indexed": 22,
-      "indexed_resources": 22,
+      "indexed": 21,
+      "indexed_resources": 21,
       "resolved_aliases": 0,
       "curated": 15,
-      "excluded": 2,
+      "excluded": 3,
       "set_aside": 3,
       "unindexed": 62
     },
@@ -2739,11 +2746,11 @@
         "state": "success"
       },
       "discovered": 1115,
-      "indexed": 1115,
-      "indexed_resources": 1115,
+      "indexed": 1110,
+      "indexed_resources": 1110,
       "resolved_aliases": 0,
       "curated": 784,
-      "excluded": 0,
+      "excluded": 5,
       "set_aside": 0,
       "unindexed": 0
     },

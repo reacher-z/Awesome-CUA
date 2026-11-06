@@ -24,7 +24,7 @@
 [阅读英文研究综述](https://awesomecua.com/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Records awaiting review](https://img.shields.io/badge/awaiting%20review-1%2C983-606779?style=flat-square&labelColor=303447)](docs/coverage.md) [![Discovered candidates](https://img.shields.io/badge/candidates-1%2C970-606779?style=flat-square&labelColor=303447)](data/review-queue.jsonl) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Records awaiting review](https://img.shields.io/badge/awaiting%20review-1%2C596-606779?style=flat-square&labelColor=303447)](docs/coverage.md) [![Discovered candidates](https://img.shields.io/badge/candidates-1%2C970-606779?style=flat-square&labelColor=303447)](data/review-queue.jsonl) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
@@ -82,7 +82,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **1,674 条已审阅资源** · **1,202 篇已审阅论文与综述** · **103 个发现来源文档**
 
-证据截至 `2026-11-06T04:18:34Z`。以上只统计已审阅资源。单独列出：**1,983 条待审阅记录**仅完成书目核实；**1,970 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。141 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-11-06T04:18:34Z`。以上只统计已审阅资源。单独列出：**1,596 条待审阅记录**仅完成书目核实；**1,970 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。528 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -91,7 +91,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 研究与训练 | 工程与产业 |
 | --- | --- |
-| [按主题浏览研究](docs/topics.md) · **1,183** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 3,185 条论文与综述记录（含待审阅） | [智能体](docs/agents.md) · **45** |
+| [按主题浏览研究](docs/topics.md) · **1,183** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,798 条论文与综述记录（含待审阅） | [智能体](docs/agents.md) · **45** |
 | [综述](docs/surveys.md) · **19** · [学习资源](docs/learning.md) · **2** | [框架](docs/frameworks.md) · **79** |
 | [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
 | [基准](docs/benchmarks.md) · **90** | [工具](docs/tools.md) · **22** |

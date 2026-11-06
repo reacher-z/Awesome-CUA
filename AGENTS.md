@@ -117,6 +117,14 @@ before changing scan inputs or resuming a checkpoint.
 - Code, data, weights, and document licenses are separate. Unknown values remain unknown. Keep benchmark versions, splits, evaluators, and sample units when comparing specifications.
 - This repository contains catalog metadata and original annotations. Linked papers, model weights, training data, and executable environments remain with their publishers.
 
+## Visual identity
+
+Style: "the agent is using this page". Saturated, cool and screen-native; the vocabulary is the agent's own: coral cursor, dashed bounding boxes, coordinates and numbered action steps. Titles use EB Garamond; body and data use a sans and a mono.
+
+Palette "Indigo on Grid Paper": a white page with a pale `#E3EAFF` grid; indigo `#4B59F2` (main) on window title bars, the benchmark band, buttons, links and the footer, never under the grid; coral `#FFA69E` (signature) for the cursor and action labels; periwinkle `#BFD7FF` for tiles; ink `#212632`. Coral is never text on white. README and website share this palette. Awesome REA is the sister site: same type and spacing logic, its own palette.
+
+Art is hand-authored inline SVG with real meaning. Avoid decorative gradients, glass effects, stock illustration and emoji. Every text pair meets WCAG AA in light and dark. Change colours through the design tokens in `web/assets/site.css`.
+
 ## When editing this repository
 
 Use `data/editorial.json` and retained primary evidence as inputs; regenerate derived catalog files with `python3 scripts/catalog.py build`. Changes to source evidence require renewed editorial review. Do not assign approval merely because an HTTP request succeeds. See `docs/methodology.md`, `docs/maintenance.md`, and `CONTRIBUTING.md`.

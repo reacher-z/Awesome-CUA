@@ -1125,3 +1125,50 @@ html:not(.js) .field kbd{display:none}
 .panel-foot .star-note[hidden]{display:none}
 .panel-foot{flex-wrap:wrap}
 .r3-band .lb-list a.nm{display:flex;align-items:center;min-height:32px}
+
+/* ==========================================================================
+   Indigo on Grid Paper. The blue stays on the page but never under the grid:
+   hero and catalog head are white with a pale grid, the benchmark band is solid
+   indigo, and window title bars are solid indigo with white text and icons.
+   Pairs are computed in tests/web.test.mjs.
+   ========================================================================== */
+:root{
+  --grid-line:#E3EAFF;--bar-bg:#4B59F2;--bar-on:#FFFFFF;--bar-hover:#3F4CE0;--strip:#F7F8FC;
+  --coral-fill:#FFA69E;--coral-line:#E8695C;--live:#2E9E86;--grid-fade-x:56px;--grid-fade-y:48px;
+  --ad-sheet-h:#F7F8FC;--head-text:#303542;--head-strong:#212632;--head-link:#4B59F2;--head-link-hover:#3B41DA;
+}
+:root[data-theme=dark]{--grid-line:#161A36;--bar-bg:#3B41DA;--bar-hover:#3037C4;--strip:#10152C;--coral-line:#FFA69E;--live:#B8F2E6;--head-text:#D0D7E8;--head-strong:#E2FDFF;--head-link:#9BB1FF;--head-link-hover:#E2FDFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--grid-line:#161A36;--bar-bg:#3B41DA;--bar-hover:#3037C4;--strip:#10152C;--coral-line:#FFA69E;--live:#B8F2E6;--head-text:#D0D7E8;--head-strong:#E2FDFF;--head-link:#9BB1FF;--head-link-hover:#E2FDFF}}
+
+.home .screen-in::before,.catalog .page-head::before{
+  background-color:transparent;
+  background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
+  background-size:16px 16px;border-radius:0;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--grid-fade-x),#000 calc(100% - var(--grid-fade-x)),transparent),linear-gradient(transparent,#000 var(--grid-fade-y),#000 calc(100% - var(--grid-fade-y)),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 var(--grid-fade-x),#000 calc(100% - var(--grid-fade-x)),transparent),linear-gradient(transparent,#000 var(--grid-fade-y),#000 calc(100% - var(--grid-fade-y)),transparent);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+}
+.home .hero h1{color:var(--text-strong)}
+.home .hero-lede{color:var(--text)}
+.home .hero-stats{color:var(--text-meta)}
+.home .hero-stats b{color:var(--text-strong)}
+.home .hero-stats .live{background:var(--live);box-shadow:0 0 0 3px color-mix(in srgb,var(--live) 22%,transparent)}
+
+.catalog .page-head{--text:var(--head-text);--text-strong:var(--head-strong);--link:var(--head-link);--link-hover:var(--head-link-hover);background:none;border-radius:0;color:var(--head-text)}
+.catalog .page-head::before{content:"";--grid-fade-x:32px;--grid-fade-y:20px}
+.catalog .page-head h1{color:var(--head-strong)}
+.catalog .page-head .lede{color:var(--head-text)}
+.catalog .page-head .jump,.catalog .page-head .jump .i{color:var(--head-link)}
+
+/* The drawn line and dashed path need the stronger coral on white; labels keep the signature. */
+.bbox-f{--coral:var(--coral-line)}
+.bbox-f::before,.bbox-f::after{background:var(--coral-fill)}
+.trail path{stroke:var(--coral-line)}
+
+.r3-band{background-image:none}
+
+.window .titlebar{--text-strong:var(--bar-on);--text-meta:var(--bar-on);--text-meta-strong:var(--bar-on);--link:var(--bar-on);--focus:var(--bar-on);--fill-hover:var(--bar-hover);--line-strong:var(--bar-on);background:var(--bar-bg);border-bottom-color:var(--bar-bg);color:var(--bar-on)}
+.window .titlebar .lights i{background:var(--bar-on);border-color:var(--bar-on)}
+.window .titlebar .lights i:first-child{background:var(--coral-fill);border-color:var(--coral-fill)}
+.row-cap,.statusbar,.lb-head{background:var(--strip)}
+@media (max-width:767px){:root{--grid-fade-x:20px;--grid-fade-y:28px}}

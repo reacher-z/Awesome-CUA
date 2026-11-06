@@ -536,6 +536,22 @@ test('footer and hero text on the indigo panel meets WCAG AA contrast',()=>{
   for(const block of [...site.matchAll(/--ad-indigo:(#[0-9A-Fa-f]{6})/g)])for(const text of ['#FFFFFF','#E2FDFF'])assert.ok(contrast(text,block[1])>=4.5,`${text} on ${block[1]}`);
   assert.ok([...site.matchAll(/--ad-indigo:/g)].length>=3,'light and both dark blocks define the panel colour');
 });
+test('the grid paper hero, title bar and window strips meet WCAG AA contrast in both themes',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const start=site.indexOf('Indigo on Grid Paper');
+  assert.ok(start>0,'grid paper section exists');
+  const section=site.slice(start);
+  const [light,dark]=[...section.matchAll(/--grid-line:(#[0-9A-Fa-f]{6});--bar-bg:(#[0-9A-Fa-f]{6})/g)];
+  assert.ok(light&&dark,'light and dark grid tokens');
+  const lightText=['#212632','#303542','#5E6472'],darkText=['#E2FDFF','#D0D7E8','#989EAE'];
+  for(const [match,text,paper] of [[light,lightText,'#FFFFFF'],[dark,darkText,'#0C1023']]){
+    for(const color of text)for(const surface of [paper,match[1]])assert.ok(contrast(color,surface)>=4.5,`${color} on ${surface}`);
+    assert.ok(contrast('#FFFFFF',match[2])>=4.5,`title bar text on ${match[2]}`);
+  }
+  assert.ok(contrast('#5E6472','#F7F8FC')>=4.5,'meta text on the light window strip');
+  assert.ok(contrast('#989EAE','#10152C')>=4.5,'meta text on the dark window strip');
+  assert.ok(!/\.r3-band\{[^}]*background-image:linear/.test(section),'no grid on the benchmark band');
+});
 test('the announcement bar and its button meet WCAG AA contrast in both themes',()=>{
   const css=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
   const bar=css.match(/\.announce\{--a-bg:(#[0-9A-Fa-f]{6});--a-fg:(#[0-9A-Fa-f]{6})/);

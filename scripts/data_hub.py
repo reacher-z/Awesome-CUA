@@ -11,7 +11,7 @@ from export_citations import encode_citations
 from export_rag import encode_documents
 from repository_identity import attach_repository_aliases
 from site_config import SITE
-from site_shell import HF_DATASET, ic
+from site_shell import HF_DATASET, ic, star_note
 from export_candidates import RECORD_FILE as CANDIDATE_FILE, MANIFEST_FILE as CANDIDATE_MANIFEST, SCHEMAS as CANDIDATE_SCHEMAS, validate_candidate_export
 
 
@@ -357,7 +357,7 @@ print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])"""),
         # Headline: curated resources; the rest of the complete catalog is labelled as awaiting review, never added in.
         '<div class="data-stats"><span><strong>', f'{reviewed:,}', '</strong> ', tr('reviewed records', '条已审核记录'), '</span><span><strong>', f'{total - reviewed:,}', '</strong> ', tr('catalog records awaiting review', '条目录记录待审核'),
         '</span><a href="/downloads/manifest.json">', tr('File list as JSON', '文件清单 JSON'), '</a><a href="', '/data/' if zh else '/zh/data/', '">', 'English' if zh else '中文', '</a></div></header>',
-        '<section class="wrap data-choices-wrap" aria-labelledby="data-choose"><h2 class="sr-only" id="data-choose">', tr('Choose a download', '选择下载内容'), '</h2><div class="data-choices">', choices, '</div></section>',
+        '<section class="wrap data-choices-wrap" aria-labelledby="data-choose"><h2 class="sr-only" id="data-choose">', tr('Choose a download', '选择下载内容'), '</h2><div class="data-choices">', choices, '</div>', star_note(zh, live=True), '</section>',
         '<section class="r3-term data-try" aria-labelledby="data-try-h"><div class="wrap"><div class="sec-head"><div><h2 id="data-try-h">', tr('What the data looks like', '数据长什么样'), '</h2><p>',
         tr('One real record from the catalog, and the commands to fetch it.', '目录中的一条真实记录，以及获取数据的命令。'), '</p></div></div><div class="data-try-grid">', record_window, command_window, '</div></div></section>',
         '<section class="wrap data-all" aria-labelledby="data-all-h"><div class="sec-head"><div><h2 id="data-all-h">', tr('All files', '全部文件'), '</h2><p>',

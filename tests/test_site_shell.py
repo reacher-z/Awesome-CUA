@@ -74,6 +74,24 @@ class PromotionShellTests(unittest.TestCase):
         self.assertIn("Useful? Star Awesome CUA on GitHub", note)
         self.assertIn('href="https://github.com/reacher-z/Awesome-CUA"', note)
 
+    def test_header_star_carries_both_labels_and_the_site_count(self):
+        site_shell.configure(stars={site_shell.SITE_REPO: 508})
+        self.addCleanup(site_shell.configure)
+        for lang, label in (("en", "Star on GitHub"), ("zh-CN", "在 GitHub 上点 Star")):
+            header = site_shell.header(lang=lang, live=True)
+            self.assertIn(f'<span class="star-long">{label}</span><span class="star-short">Star</span>', header)
+            self.assertIn(f'data-star-count="{site_shell.SITE_REPO}">508<', header)
+
+    def test_star_button_stays_filled_visible_and_within_token_colours(self):
+        css = (ROOT / "web/assets/site.css").read_text(encoding="utf-8")
+        rule = css[css.index(".star-btn{"):]
+        rule = rule[:rule.index("}")]
+        self.assertIn("background:var(--bar-bg)", rule)
+        self.assertIn("color:var(--bar-on)", rule)
+        self.assertIn(".star-btn .i{width:16px;height:16px;color:var(--coral-fill)", css)
+        self.assertNotRegex(css, r"\.star-btn\{[^}]*display:none")
+        self.assertNotRegex(css, r"\.star-btn \.star-n[^{]*\{[^}]*display:none")
+
     def test_resource_facts_read_as_prose_and_omit_empty_rows(self):
         record = {"id": "github:a/b", "kind": "benchmark", "name": "B", "summary": "S.", "url": "https://github.com/a/b", "environments": ["macos", "windows", "unspecified"], "identifiers": {}, "aliases": [],
                   "topics": ["web-navigation"], "last_verified_at": "2026-10-16T06:35:57Z", "published_at": None, "review_status": "curated", "details": {}, "relations": [],

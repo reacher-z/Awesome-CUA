@@ -433,7 +433,7 @@
       let clear = x0, midY = y0 + 60;
       if (stats) { const rg = d.createRange(); rg.selectNodeContents(stats); const rs = [...rg.getClientRects()]; clear = Math.max(x0, ...rs.map(r => r.right - sr.left)); const sb = stats.getBoundingClientRect(); midY = sb.top - sr.top + sb.height / 2 }
       const x1 = Math.max(textEnd + 56, Math.min(Math.max(x0 + 200, clear + 70), fRight - 190)), y1 = fr.top - sr.top + fr.height * .52;
-      const ok = x1 < fRight - 110, xm = Math.min(Math.max(x0 + 90, clear + 26), x1 + 40);
+      const ok = x1 < fRight - 110, xm = Math.min(Math.max(x0 + 90, clear + 26), fRight - 14);
       [trail, cur, st2, st3].forEach(e => { if (e) e.style.visibility = ok ? '' : 'hidden' });
       const f = n => n.toFixed(1);
       const dd = `M${f(x0)} ${f(y0)}C${f(x0 + 14)} ${f(y0 + (midY - y0) * .6)} ${f(xm - 34)} ${f(midY - (midY - y0) * .3)} ${f(xm)} ${f(midY)}C${f(xm + 34)} ${f(midY + (y1 - midY) * .3)} ${f(x1 + 10)} ${f(y1 - (y1 - midY) * .6)} ${f(x1)} ${f(y1)}`;

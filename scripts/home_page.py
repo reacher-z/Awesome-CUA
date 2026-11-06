@@ -9,7 +9,7 @@ import home_art as art
 from paper_library import library_years
 from publication_metadata import record_date_text, record_year
 from site_config import SITE
-from site_shell import CONTEXT, HF_DATASET, ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_count, star_note
+from site_shell import CONTEXT, HF_DATASET, ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_button, star_count, star_note
 
 # Tab and icon order. The labels stay beside the icons so the rows, tabs and search results agree.
 KINDS = {  # key: (singular, plural, zh label, icon)
@@ -390,7 +390,7 @@ def hero(view, last_scan, zh=False) -> str:
 <div class="wrap hero">
 <h1 id="hero-h">{title}</h1>
 <p class="hero-lede">{lede}</p>
-<p class="hero-stats">{stats}{scanned}</p>
+<div class="hero-acts">{star_button(zh, live=True, cls="star-hero")}<p class="hero-stats">{stats}{scanned}</p></div>
 {finder(view, zh)}
 </div>
 {cursor_trail()}

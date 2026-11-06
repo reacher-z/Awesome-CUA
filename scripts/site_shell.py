@@ -164,6 +164,13 @@ def star_count(repo, live=False) -> str:
     return f'<span class="star-n" data-star-count="{esc(repo)}">{short_count(count) if live else ""}</span>'
 
 
+def star_button(zh=False, live=False, cls="") -> str:
+    """The site's own GitHub star: indigo fill, coral star, live count. The label shortens with the width in CSS."""
+    label = "在 GitHub 上点 Star" if zh else "Star on GitHub"
+    return (f'<a class="star-btn{" " + cls if cls else ""}" href="{REPO}">{ic("star", "i")}<span class="star-long">{label}</span><span class="star-short">Star</span>'
+            f'<span class="vh"> Awesome CUA</span>{star_count(SITE_REPO, live)}</a>')
+
+
 def announcement(*, lang="en", live=False) -> str:
     zh = lang.startswith("zh")
     text = "新发布：<b>WebsiteBench。</b>AI 智能体能否通过浏览器探索重建网站？" if zh else "New: <b>WebsiteBench.</b> Can AI agents rebuild websites through browser exploration?"
@@ -193,16 +200,16 @@ def header(*, path="/", lang="en", lang_href=None, live=False) -> str:
 <button class="search-trigger js-only" type="button" data-open-palette aria-label="{search_label}">{ic("search")}<span>{search_label}</span><kbd>⌘K</kbd></button>
 <a class="icon-btn lang" href="{esc(other)}" {lang_attr}><span class="lang-full">{lang_text}</span><span class="vh">{"切换语言" if zh else "Switch language"}</span></a>
 <button class="icon-btn js-only" type="button" data-theme-toggle aria-label="{theme_label}">{ic("auto")}</button>
-<a class="star-btn" href="{REPO}">{ic("star", "i i-sm")}<span>Star</span><span class="vh"> {"在 GitHub 上收藏 Awesome CUA" if zh else "Awesome CUA on GitHub"}</span>{star_count(SITE_REPO, live)}</a>
+{star_button(zh, live)}
 <button class="icon-btn menu-btn js-only" type="button" data-open-menu aria-label="{menu_label}" aria-haspopup="dialog">{ic("menu")}</button>
 </div>
 </div></header>'''
 
 
-def star_note(zh=False, attrs="") -> str:
+def star_note(zh=False, attrs="", live=False) -> str:
     """The one quiet request after something useful. A page carries at most one."""
     text = "有帮助？在 GitHub 上为 Awesome CUA 点 Star" if zh else "Useful? Star Awesome CUA on GitHub"
-    return f'<p class="star-note"{attrs}><a href="{REPO}">{text}</a></p>'
+    return f'<p class="star-note"{attrs}><a href="{REPO}">{ic("star", "i i-sm")}<span>{text}</span>{star_count(SITE_REPO, live)}</a></p>'
 
 
 MAINTAINER_REPOS = (

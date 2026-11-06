@@ -574,6 +574,12 @@ test('the announcement bar and its button meet WCAG AA contrast in both themes',
   assert.match(css,/\.announce\{[^}]*height:40px/,'height is reserved in CSS');
   assert.match(css,/\.announce-off \.announce\{display:none\}/);
 });
+test('the star button keeps its label and count readable on the indigo fill in both themes',()=>{
+  const section=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const fills=[...section.matchAll(/--grid-line:#[0-9A-Fa-f]{6};--bar-bg:(#[0-9A-Fa-f]{6})/g)].map(match=>match[1]);
+  assert.ok(fills.length>=2,'light and dark fills');
+  for(const fill of fills)assert.ok(contrast('#FFFFFF',fill)>=4.5,`label on ${fill}`);
+});
 test('pagination is a nav of numbered page buttons with the current page marked in both languages',async()=>{
   const current='.pagination .page-numbers button[aria-current=page]';
   assert.ok(contrast(declaration(current,'color'),declaration(current,'background'))>=4.5);

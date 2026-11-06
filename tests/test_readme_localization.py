@@ -43,14 +43,27 @@ class ReadmeLocalizationTests(unittest.TestCase):
         rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]
         edges = [{"source_id": "x", "target_id": "github:a/b", "target_in_catalog": True}]
         explore = build.explore(rows, self.report, "zh")
-        self.assertIn("[基准](docs/benchmarks.md) · **1**", explore)
-        self.assertIn("**1** 篇已审阅论文", explore)
+        self.assertRegex(explore, r"\| \[基准\]\(docs/benchmarks.md\) +\| .+ \| +1 \|")
+        self.assertRegex(explore, r"\| \[按主题浏览研究\]\(docs/topics.md\) +\| .+ \| +1 \|")
         highlights = build.highlights(rows, edges, lang="zh")
         self.assertIn("**基准** · [全部 1 项 →](docs/benchmarks.md)", highlights)
         self.assertIn("| [Bench](https://example.com/Bench) | 1 | web |", highlights)
         self.assertIn("代码 MIT", highlights)
         recent = build.recently_reviewed(rows, {"github:a/b": "2026-10-17T00:00:00Z"}, lang="zh")
         self.assertIn("| 基准 | web | Bench summary. |", recent)
+
+    def test_badges_are_at_most_six_and_end_with_license(self):
+        badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
+        self.assertLessEqual(badges.count("[!["), 6)
+        self.assertIn("](https://huggingface.co/datasets/AgPerry/awesome-cua)", badges)
+        self.assertIn("2026--10--17", badges)
+        self.assertTrue(badges.strip().endswith("(LICENSE)"))
+
+    def test_explore_table_pipes_line_up_in_both_languages(self):
+        rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]
+        for lang in ("en", "zh"):
+            table = [line for line in build.explore(rows, self.report, lang).splitlines() if line.startswith("|")]
+            self.assertEqual(len({tuple(i for i, c in enumerate(line) if c == "|") for line in table}), 1, table)
 
 
 if __name__ == "__main__":

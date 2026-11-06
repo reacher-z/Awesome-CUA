@@ -1,65 +1,54 @@
-<p align="center">
-  <a href="https://awesomecua.com/">
-    <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="220">
-  </a>
-</p>
-
 # Awesome Computer-Use Agents
+
+<a href="https://awesomecua.com/zh/"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/brand/readme-banner-dark.svg">
+<img src="assets/brand/readme-banner-light.svg" alt="Awesome CUA — 面向电脑操作智能体的研究、数据与工具，每条都链接原始来源" width="960">
+</picture></a>
 
 收集面向电脑操作智能体的论文、模型、数据集、评测基准与工具，每条资源保留原始来源。
 
 [English](README.md) · **简体中文**
 
-## 推荐基准
+**[网站搜索](https://awesomecua.com/zh/)** · **[论文](https://awesomecua.com/zh/papers/)** · **[主题](https://awesomecua.com/zh/topics/)** · **[数据](https://awesomecua.com/zh/data/)** · **[智能体指南](https://awesomecua.com/zh/agents/)** · **[参与贡献](CONTRIBUTING.md)**
 
-| 项目 | 评测任务 |
-| --- | --- |
-| [**WebsiteBench**](https://github.com/TIGER-AI-Lab/WebsiteBench) | 通过浏览器探索，重建完整的网站前后端。 |
-| [**ClawBench**](https://github.com/TIGER-AI-Lab/ClawBench) | 评测浏览器智能体完成日常线上任务的能力。 |
-
-<a href="https://awesomecua.com/?lang=zh"><img src="assets/readme-banner.zh-CN.svg" alt="Awesome CUA — Computer-Use 智能体资源合集，连接论文、数据、工具与原始来源" width="960"></a>
-
-**[搜索与筛选](https://awesomecua.com/?lang=zh)** · **[研究论文](https://awesomecua.com/zh/papers/)** · **[按主题浏览](https://awesomecua.com/zh/topics/)** · **[数据与 Agent](https://awesomecua.com/zh/data/)**
-
-[阅读英文研究综述](https://awesomecua.com/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
+觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Records awaiting review](https://img.shields.io/badge/awaiting%20review-816-606779?style=flat-square&labelColor=303447)](docs/coverage.md) [![Discovered candidates](https://img.shields.io/badge/candidates-1%2C971-606779?style=flat-square&labelColor=303447)](data/review-queue.jsonl) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C202-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
-[按任务查找](#按任务查找) · [浏览](#浏览) · [重点资源](#重点资源) · [最新审阅](#最新审阅) · [使用数据](#使用数据)
+**“全球最全”是建设目标，而不是已经核实的结论。** 已审阅条目依据一手来源快照审阅；待审阅记录只核实了书目信息；候选只是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
 
-[覆盖台账](docs/coverage.md) · [参与贡献](CONTRIBUTING.md) · [GitHub 组织](https://github.com/AwesomeCUA) · [网站](https://awesomecua.com/) · [中文主页](https://awesomecua.com/zh/)
+## 推荐基准
 
-资源发现计划每两小时执行一次，时间为 **UTC 00:07、02:07、04:07、06:07、08:07、10:07、12:07、14:07、16:07、18:07、20:07 和 22:07**。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+**来自维护者的推荐评测项目**
 
-**供人、RAG 系统和智能体使用——克隆完整目录：**
+<a href="https://github.com/TIGER-AI-Lab/WebsiteBench"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/assets/wordmark-dark.svg">
+<img src="https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/assets/wordmark-light.svg" alt="WebsiteBench" height="36">
+</picture></a>
 
-```sh
-git clone https://github.com/reacher-z/Awesome-CUA.git
-```
+AI 智能体能否通过浏览器探索重建网站？ [★ 在 GitHub 上为 WebsiteBench 点星](https://github.com/TIGER-AI-Lab/WebsiteBench)
 
-[Agent 操作指南](AGENTS.md) · [RAG 与智能体指南](https://awesomecua.com/zh/agents/)（[English](https://awesomecua.com/agents/)） · [完整 JSONL](https://awesomecua.com/downloads/catalog.jsonl) · [检索文档](https://awesomecua.com/downloads/rag-documents.jsonl)
+<a href="https://github.com/TIGER-AI-Lab/ClawBench"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/c8409629f4f2f9768731350d764aeb3035946c5d/assets/brand/wordmark-dark.svg">
+<img src="https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/c8409629f4f2f9768731350d764aeb3035946c5d/assets/brand/wordmark-light.svg" alt="ClawBench" height="36">
+</picture></a>
 
-目标是全面覆盖公开的研究和产业资源，并提供可检查的来源证据。论文、模型、训练数据、评测环境、框架、基础设施、产品和发布方都收录在同一个可检索目录中。
+面向日常任务的开源浏览器 AI 智能体基准。 [★ 在 GitHub 上为 ClawBench 点星](https://github.com/TIGER-AI-Lab/ClawBench)
 
-**“全球最全”是建设目标，而不是已经核实的结论。** 我们公开来源范围、审阅状态和剩余缺口。核实书目元数据不等于审阅了资源的相关性或质量。
-
-使用 `python3 scripts/catalog.py get arxiv:2404.07972 --related --json` 可按稳定 ID 取得完整记录与已核实关联。[BibTeX](https://awesomecua.com/downloads/citations.bib) 和 [CSL JSON](https://awesomecua.com/downloads/citations.csl.json) 提供已审阅论文引用；每条资源页面也有可直接读取的 `record.json`。
-
-[按主题浏览](https://awesomecua.com/zh/topics/)（[English](https://awesomecua.com/topics/)） · [主题子集与指纹](https://awesomecua.com/downloads/topics.json)
+**来自维护者的更多项目：** [Awesome Reverse Engineering Anything](https://github.com/reacher-z/Awesome-REA) — 独立整理的工具、案例与研究论文合集，涵盖网站、游戏、应用、原生二进制、固件和通信协议。
 
 <!-- TASKS:START -->
 ## 按任务查找
 
-| 你的任务 | 从这里开始 | 可以找到什么 |
-| --- | --- | --- |
-| 查找论文 | [论文库](https://awesomecua.com/zh/papers/) · [研究主题](https://awesomecua.com/zh/topics/) | 按年份和主题阅读已审阅论文，查看原始来源。 |
-| 选择评测基准 | [基准指南](https://awesomecua.com/guides/gui-agent-benchmarks/) | 核对平台、任务、评估器和版本。 |
-| 寻找训练数据 | [训练数据指南](https://awesomecua.com/guides/gui-agent-training-data/) | 比较监督形式、划分、样本单位和数据许可。 |
-| 构建智能体 | [智能体](https://awesomecua.com/categories/agent/) · [框架](https://awesomecua.com/categories/framework/) | 找到实现入口、支持的平台和论文依据。 |
-| 接入 RAG 或 Agent | [使用指南](https://awesomecua.com/zh/agents/) · [数据中心](https://awesomecua.com/zh/data/) | 下载完整记录或检索文档，保留审阅状态和来源。 |
-| 追溯论文与资产 | [论文—资产关系](https://awesomecua.com/connections/) | 查看经一手来源支持的代码、数据和模型关联。 |
+| 你的任务           | 从这里开始                                                                                                                                 | 可以找到什么                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 查找论文           | [论文库](https://awesomecua.com/zh/papers/) · [研究主题](https://awesomecua.com/zh/topics/) · [论文—资产关系](https://awesomecua.com/connections/) | 按年份和主题阅读已审阅论文，查看原始来源，以及经一手来源支持的代码、数据和模型关联。 |
+| 选择评测基准         | [基准指南](https://awesomecua.com/guides/gui-agent-benchmarks/)                                                                           | 核对平台、任务、评估器和版本。                            |
+| 寻找训练数据         | [训练数据指南](https://awesomecua.com/guides/gui-agent-training-data/)                                                                      | 比较监督形式、划分、样本单位和数据许可。                       |
+| 构建智能体          | [智能体](https://awesomecua.com/categories/agent/) · [框架](https://awesomecua.com/categories/framework/)                                  | 找到实现入口、支持的平台和论文依据。                         |
+| 接入 RAG 或 Agent | [使用指南](https://awesomecua.com/zh/agents/) · [数据中心](https://awesomecua.com/zh/data/)                                                   | 下载完整记录或检索文档，保留审阅状态和来源。                     |
 
 <details>
 <summary>本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）</summary>
@@ -89,22 +78,58 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 ## 浏览
 
 <!-- EXPLORE:START -->
-| 研究与训练 | 工程与产业 |
-| --- | --- |
-| [按主题浏览研究](docs/topics.md) · **1,183** 篇已审阅论文 · [完整论文目录](docs/papers.md) · 2,018 条论文与综述记录（含待审阅） | [智能体](docs/agents.md) · **45** |
-| [综述](docs/surveys.md) · **19** · [学习资源](docs/learning.md) · **2** | [框架](docs/frameworks.md) · **79** |
-| [数据集](docs/datasets.md) · **86** | [基础设施](docs/infrastructures.md) · **14** |
-| [基准](docs/benchmarks.md) · **90** | [工具](docs/tools.md) · **22** |
-| [模型与权重版本](docs/models.md) · **98** | [产品](docs/products.md) · **20** · [发布方与品牌](docs/companies.md) · **16** |
+| 浏览                              | 内容               |    条目 |
+| ------------------------------- | ---------------- | ----: |
+| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,183 |
+| [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,018 |
+| [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    19 |
+| [学习资源](docs/learning.md)        | 课程与教程            |     2 |
+| [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |    86 |
+| [基准](docs/benchmarks.md)        | 评测环境与任务集         |    90 |
+| [模型与权重版本](docs/models.md)       | 模型权重版本与模型系列      |    98 |
+| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |    45 |
+| [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |    79 |
+| [基础设施](docs/infrastructures.md) | 沙箱、虚拟机、设备集群与运行环境 |    14 |
+| [工具](docs/tools.md)             | 评测工具、录制工具及其他实用工具 |    22 |
+| [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    20 |
+| [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    16 |
 
 **按平台：** [Web](docs/environments/web.md) **649** · [Desktop](docs/environments/desktop.md) **334** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
 
+## 使用数据
+
+下载目录、订阅源和 RAG 文档；数据中心还列出来源、审阅状态和数据规范。
+
+- [llms.txt](https://awesomecua.com/llms.txt) - 供语言模型使用的导航文件。
+- [llms-full.txt](https://awesomecua.com/llms-full.txt) - Markdown 格式的精选注释。
+- [数据中心](https://awesomecua.com/zh/data/) - 分六组提供目录、RAG 文档、引用、主题、对比、来源和数据规范。
+- [目录 JSONL](https://awesomecua.com/downloads/catalog.jsonl) - 完整目录，每行一个资源。
+- [下载清单](https://awesomecua.com/downloads/manifest.json) - 导出文件的数量、字节数和 SHA-256 校验和。
+- [Atom 订阅源](https://awesomecua.com/feed.xml) - 以 Atom 格式发布的研究更新。
+- [Hugging Face 数据集](https://huggingface.co/datasets/AgPerry/awesome-cua) - 只读镜像，每 2 小时同步；metadata_only 和 github_candidates 不是精选条目。
+- [智能体与 RAG 指南](https://awesomecua.com/zh/agents/) - 面向智能体和 RAG 系统的指南。
+
+克隆完整目录：
+
+```sh
+git clone https://github.com/reacher-z/Awesome-CUA.git
+```
+
+[Agent 操作指南](AGENTS.md) · [检索文档](https://awesomecua.com/downloads/rag-documents.jsonl)
+
+资源发现计划每两小时执行一次，时间为 **UTC 00:07、02:07、04:07、06:07、08:07、10:07、12:07、14:07、16:07、18:07、20:07 和 22:07**。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+
+[阅读英文研究综述](https://awesomecua.com/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
+
 ## 重点资源
 
 按类别列出被其他已收录资源在其已审阅一手来源（README、模型卡或数据集卡）中提及最多的已审阅资源。该计数反映目录内部的关联程度，不代表质量、流行度或基准表现；每个类别页面都列出全部已审阅条目。综述排在最前，按时间倒序。资源名称和简介保留原文。
+
+<details>
+<summary>展开重点资源表</summary>
 
 <!-- HIGHLIGHTS:START -->
 **从最新综述入门** · [全部 19 项 →](docs/surveys.md)
@@ -174,9 +199,14 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- HIGHLIGHTS:END -->
 
+</details>
+
 ## 最新审阅
 
 按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在[主题页面](docs/topics.md)中。
+
+<details>
+<summary>展开最新审阅表</summary>
 
 <!-- RECENT:START -->
 | 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |
@@ -195,7 +225,11 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | 数据集 | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
 <!-- RECENT:END -->
 
-## 使用数据
+</details>
+
+## 数据文件与本地查询
+
+使用 `python3 scripts/catalog.py get arxiv:2404.07972 --related --json` 可按稳定 ID 取得完整记录与已核实关联。[BibTeX](https://awesomecua.com/downloads/citations.bib) 和 [CSL JSON](https://awesomecua.com/downloads/citations.csl.json) 提供已审阅论文引用；每条资源页面也有可直接读取的 `record.json`。
 
 打开[交互式网站](https://awesomecua.com/)，可以搜索和筛选全部资源、查看来源证据、切换中英文界面，或下载完整目录。网站开发与发布见 [website.md](docs/website.md)。
 

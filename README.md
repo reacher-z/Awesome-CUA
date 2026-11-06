@@ -1,63 +1,54 @@
-<p align="center">
-  <a href="https://awesomecua.com/">
-    <img src="assets/badges/featured-by-awesome-cua.svg" alt="Featured by Awesome CUA" width="220">
-  </a>
-</p>
-
 # Awesome Computer-Use Agents
+
+<a href="https://awesomecua.com/"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/brand/readme-banner-dark.svg">
+<img src="assets/brand/readme-banner-light.svg" alt="Awesome CUA: computer-use agent research, data and tools connected to original sources" width="960">
+</picture></a>
 
 A source-backed collection of papers, models, datasets, benchmarks and tools for agents that use computers.
 
 **English** · [简体中文](README.zh-CN.md)
 
-## Featured benchmarks
+**[Search the website](https://awesomecua.com/)** · **[Papers](https://awesomecua.com/papers/)** · **[Topics](https://awesomecua.com/topics/)** · **[Data](https://awesomecua.com/data/)** · **[Agent guide](https://awesomecua.com/agents/)** · **[Contribute](CONTRIBUTING.md)**
 
-| Project | Focus |
-| --- | --- |
-| [**WebsiteBench**](https://github.com/TIGER-AI-Lab/WebsiteBench) | Rebuild full-stack websites through browser exploration. |
-| [**ClawBench**](https://github.com/TIGER-AI-Lab/ClawBench) | Evaluate browser agents on everyday online tasks. |
-
-<a href="https://awesomecua.com/"><img src="assets/readme-banner.svg" alt="Awesome CUA — computer-use agent research, data and tools connected to original sources" width="960"></a>
-
-**[Search & filter](https://awesomecua.com/)** · **[Research papers](https://awesomecua.com/papers/)** · **[Browse topics](https://awesomecua.com/topics/)** · **[Data & agents](https://awesomecua.com/data/)**
-
-[Read the research survey](https://awesomecua.com/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
+If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Records awaiting review](https://img.shields.io/badge/awaiting%20review-816-606779?style=flat-square&labelColor=303447)](docs/coverage.md) [![Discovered candidates](https://img.shields.io/badge/candidates-1%2C971-606779?style=flat-square&labelColor=303447)](data/review-queue.jsonl) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C202-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/AgPerry/awesome-cua) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
-[Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
+**Global completeness is a goal, not a verified claim.** Curated entries were reviewed against a first-party source snapshot; records awaiting review have only their bibliographic identity checked; candidates are discovered identifiers outside the published catalog. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
 
-[Coverage ledger](docs/coverage.md) · [Contribute](CONTRIBUTING.md) · [GitHub organization](https://github.com/AwesomeCUA)
+## Featured benchmarks
 
-Discovery is scheduled every two hours, at **00:07, 02:07, 04:07, 06:07, 08:07, 10:07, 12:07, 14:07, 16:07, 18:07, 20:07 and 22:07 UTC**. [Actual scan results](https://awesomecua.com/updates/) · [Schedule and safeguards](docs/maintenance.md).
+**Featured benchmarks from the maintainers**
 
-**For people, RAG systems, and agents — clone the complete catalog:**
+<a href="https://github.com/TIGER-AI-Lab/WebsiteBench"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/assets/wordmark-dark.svg">
+<img src="https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/assets/wordmark-light.svg" alt="WebsiteBench" height="36">
+</picture></a>
 
-```sh
-git clone https://github.com/reacher-z/Awesome-CUA.git
-```
+Can AI agents rebuild websites through browser exploration? [★ Star WebsiteBench on GitHub](https://github.com/TIGER-AI-Lab/WebsiteBench)
 
-[Agent instructions](AGENTS.md) · [RAG and agent guide](https://awesomecua.com/agents/) · [Complete JSONL](https://awesomecua.com/downloads/catalog.jsonl) · [Retrieval documents](https://awesomecua.com/downloads/rag-documents.jsonl)
+<a href="https://github.com/TIGER-AI-Lab/ClawBench"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/c8409629f4f2f9768731350d764aeb3035946c5d/assets/brand/wordmark-dark.svg">
+<img src="https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/c8409629f4f2f9768731350d764aeb3035946c5d/assets/brand/wordmark-light.svg" alt="ClawBench" height="36">
+</picture></a>
 
-The goal is comprehensive coverage of public research and industry resources, with provenance that can be inspected. Papers, models, training data, evaluation environments, frameworks, infrastructure, products, and publishers belong in the same searchable catalog.
+Open-source benchmark for browser AI agents on daily tasks. [★ Star ClawBench on GitHub](https://github.com/TIGER-AI-Lab/ClawBench)
 
-**Global completeness is a goal, not a verified claim.** We publish the source populations, review states, and remaining gaps. Bibliographic metadata verification is different from reviewing a resource's relevance or quality.
-
-[Browse by topic](https://awesomecua.com/topics/) · [Topic subsets and fingerprints](https://awesomecua.com/downloads/topics.json)
+**More from the maintainers:** [Awesome Reverse Engineering Anything](https://github.com/reacher-z/Awesome-REA) — an independent collection of tools, case studies and research for reverse-engineering websites, games, apps, native binaries, firmware and protocols.
 
 <!-- TASKS:START -->
 ## Find by task
 
-| Your task | Start here | What you can find |
-| --- | --- | --- |
-| Find papers | [Research library](https://awesomecua.com/papers/) · [Topics](https://awesomecua.com/topics/) | Reviewed papers by year and topic, with original sources. |
-| Choose a benchmark | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/) | Platforms, tasks, evaluators, and versions to compare. |
-| Find training data | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/) | Supervision, splits, count units, and data licenses. |
-| Build an agent | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/) | Implementation entry points, supported platforms, and papers. |
-| Use RAG or an agent | [Agent guide](https://awesomecua.com/agents/) · [Data hub](https://awesomecua.com/data/) | Complete records or retrieval documents with review states and sources. |
-| Trace papers to assets | [Paper–asset connections](https://awesomecua.com/connections/) | Code, datasets, and models linked through reviewed primary evidence. |
+| Your task           | Start here                                                                                                                                                     | What you can find                                                                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Find papers         | [Research library](https://awesomecua.com/papers/) · [Topics](https://awesomecua.com/topics/) · [Paper–asset connections](https://awesomecua.com/connections/) | Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence. |
+| Choose a benchmark  | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/)                                                                                         | Platforms, tasks, evaluators, and versions to compare.                                                                                       |
+| Find training data  | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/)                                                                                  | Supervision, splits, count units, and data licenses.                                                                                         |
+| Build an agent      | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/)                                                | Implementation entry points, supported platforms, and papers.                                                                                |
+| Use RAG or an agent | [Agent guide](https://awesomecua.com/agents/) · [Data hub](https://awesomecua.com/data/)                                                                       | Complete records or retrieval documents with review states and sources.                                                                      |
 
 <details>
 <summary>Local examples (after cloning; Python 3.11+, no dependencies required)</summary>
@@ -87,22 +78,58 @@ Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted abov
 ## Explore
 
 <!-- EXPLORE:START -->
-| Research and training | Engineering and industry |
-| --- | --- |
-| [Research by topic](docs/topics.md) · **1,183** reviewed papers · [Full bibliography](docs/papers.md) · 2,018 paper and survey records, including those awaiting review | [Agents](docs/agents.md) · **45** |
-| [Surveys](docs/surveys.md) · **19** · [Learning resources](docs/learning.md) · **2** | [Frameworks](docs/frameworks.md) · **79** |
-| [Datasets](docs/datasets.md) · **86** | [Infrastructure](docs/infrastructures.md) · **14** |
-| [Benchmarks](docs/benchmarks.md) · **90** | [Tools](docs/tools.md) · **22** |
-| [Models and checkpoint releases](docs/models.md) · **98** | [Products](docs/products.md) · **20** · [Publishers and brands](docs/companies.md) · **16** |
+| Browse                                           | What you find                                                 | Entries |
+| ------------------------------------------------ | ------------------------------------------------------------- | ------: |
+| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,183 |
+| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,018 |
+| [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      19 |
+| [Learning resources](docs/learning.md)           | Courses and tutorials                                         |       2 |
+| [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |      86 |
+| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |      90 |
+| [Models and checkpoint releases](docs/models.md) | Checkpoints and model families                                |      98 |
+| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |      45 |
+| [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |      79 |
+| [Infrastructure](docs/infrastructures.md)        | Sandboxes, VMs, device farms and environments                 |      14 |
+| [Tools](docs/tools.md)                           | Evaluation harnesses, recorders and other utilities           |      22 |
+| [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      20 |
+| [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      16 |
 
 **By platform:** [Web](docs/environments/web.md) **649** · [Desktop](docs/environments/desktop.md) **334** · [Windows](docs/environments/windows.md) **65** · [macOS](docs/environments/macos.md) **30** · [Linux](docs/environments/linux.md) **54** · [Android](docs/environments/android.md) **323** · [iOS](docs/environments/ios.md) **22** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **197**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation. Environment facets overlap; framework support is not assumed from a model's benchmark results.
 
+## Use the data
+
+Download the catalog, feeds and RAG documents; the data hub also lists sources, review states and schemas.
+
+- [llms.txt](https://awesomecua.com/llms.txt) - Navigation file for language models.
+- [llms-full.txt](https://awesomecua.com/llms-full.txt) - Curated annotations in Markdown.
+- [Data hub](https://awesomecua.com/data/) - Catalog, RAG documents, citations, topics, comparisons, sources and schemas in six groups.
+- [Catalog JSONL](https://awesomecua.com/downloads/catalog.jsonl) - Complete catalog with one resource per line.
+- [Download manifest](https://awesomecua.com/downloads/manifest.json) - Export counts, byte sizes and SHA-256 checksums.
+- [Atom feed](https://awesomecua.com/feed.xml) - Research updates as an Atom feed.
+- [Hugging Face dataset](https://huggingface.co/datasets/AgPerry/awesome-cua) - Read-only mirror, refreshed every 2 hours; metadata_only and github_candidates are not curated.
+- [Agent and RAG guide](https://awesomecua.com/agents/) - Guide for agents and RAG systems.
+
+Clone the complete catalog:
+
+```sh
+git clone https://github.com/reacher-z/Awesome-CUA.git
+```
+
+[Agent instructions](AGENTS.md) · [Retrieval documents](https://awesomecua.com/downloads/rag-documents.jsonl)
+
+Discovery is scheduled every two hours, at **00:07, 02:07, 04:07, 06:07, 08:07, 10:07, 12:07, 14:07, 16:07, 18:07, 20:07 and 22:07 UTC**. [Actual scan results](https://awesomecua.com/updates/) · [Schedule and safeguards](docs/maintenance.md).
+
+[Read the research survey](https://awesomecua.com/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
+
 ## Highlights
 
 The most-mentioned curated resources per category: the count is how many other cataloged resources mention each one in their reviewed first-party source (README, model or dataset card). It reflects connectedness inside this catalog, not quality, popularity, or benchmark performance. Every category page lists all reviewed entries. Surveys come first, newest first.
+
+<details>
+<summary>Show the highlights tables</summary>
 
 <!-- HIGHLIGHTS:START -->
 **Start with the newest surveys** · [all 19 →](docs/surveys.md)
@@ -172,9 +199,14 @@ The most-mentioned curated resources per category: the count is how many other c
 
 <!-- HIGHLIGHTS:END -->
 
+</details>
+
 ## Recently reviewed
 
 Newest editorial approvals of models, datasets, benchmarks, systems, and tools (newest first). New papers appear by date in the [topic hubs](docs/topics.md).
+
+<details>
+<summary>Show the recently reviewed table</summary>
 
 <!-- RECENT:START -->
 | Reviewed | Resource | Kind | Environments | Description |
@@ -193,7 +225,9 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | dataset | web | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. |
 <!-- RECENT:END -->
 
-## Use the data
+</details>
+
+## Data files and local queries
 
 Browse the [interactive website](https://awesomecua.com/) to search and filter all resources, inspect source evidence, switch between English and Chinese, or download the complete catalog. [Website development and publishing](docs/website.md).
 

@@ -779,16 +779,22 @@ def shield(label, message, color):
 
 
 def badges(rows, report):
-    # Keep the small status strip secondary to the README's editorial banner.
-    # Counts still come from this build; workflow status stays live on main. Only curated records
-    # count as resources; records awaiting review and discovered candidates keep their own labels.
-    style = '?style=flat-square&labelColor=303447'
+    # A short status strip under the banner: at most six badges, all counted or dated from this build.
+    # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
+    style = '?style=flat-square&labelColor=1E2233'
+    reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
+    as_of = report["as_of_utc"]
+    evidence = f"{as_of[:10]} {as_of[11:16]} UTC"
     return ("\n" + " ".join([
-        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4856df')}{style})](docs/coverage.md)",
-        f"[![Records awaiting review]({shield('awaiting review', format(report['metadata_only_records'], ','), '606779')}{style})](docs/coverage.md)",
-        f"[![Discovered candidates]({shield('candidates', format(report['unindexed_candidates'], ','), '606779')}{style})](data/review-queue.jsonl)",
+        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
+        f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
+        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
+        f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
         "[![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml)",
-        f"[![MIT license]({shield('license', 'MIT', '606779')}{style})](LICENSE)"]) + "\n")
+        f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
+
+
+HUGGING_FACE_DATASET = "https://huggingface.co/datasets/AgPerry/awesome-cua"
 
 
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.
@@ -801,7 +807,7 @@ EXPLORE = [
 ]
 # Generated README wording per language; resource names and reviewed summaries are never translated.
 README_TEXT = {
-    "en": {"explore_header": "| Research and training | Engineering and industry |",
+    "en": {"explore_header": ("Browse", "What you find", "Entries"), "blurbs": {'topics': 'Reviewed papers grouped by topic', 'bibliography': 'All paper and survey records, including those awaiting review', 'survey': 'Surveys of computer-use agent research', 'learning': 'Courses and tutorials', 'dataset': 'Training and evaluation data for GUI agents', 'benchmark': 'Evaluation environments and task suites', 'model': 'Checkpoints and model families', 'agent': 'Open implementations that act on a computer', 'framework': 'Code for building and evaluating agents', 'infrastructure': 'Sandboxes, VMs, device farms and environments', 'tool': 'Evaluation harnesses, recorders and other utilities', 'product': 'Computer-use products from vendors and projects', 'company': 'Publishers and brands connected to cataloged resources'},
         "labels": {"topics": "Research by topic", "bibliography": "Full bibliography", "survey": "Surveys", "learning": "Learning resources", "dataset": "Datasets", "benchmark": "Benchmarks",
             "model": "Models and checkpoint releases", "agent": "Agents", "framework": "Frameworks", "infrastructure": "Infrastructure", "tool": "Tools",
             "product": "Products", "company": "Publishers and brands"},
@@ -814,7 +820,7 @@ README_TEXT = {
             "Evidence through `{as_of}`. Only curated resources are counted above. Listed separately: **{metadata:,} records awaiting review** have bibliographic verification only, "
             "and **{unindexed:,} discovered candidates** remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
             "{excluded:,} scope exclusions retain their original metadata in the archive. Counts overlap as explained below.")},
-    "zh": {"explore_header": "| 研究与训练 | 工程与产业 |",
+    "zh": {"explore_header": ("浏览", "内容", "条目"), "blurbs": {'topics': '按主题整理的已审阅论文', 'bibliography': '全部论文与综述记录，含待审阅记录', 'survey': '电脑操作智能体研究综述', 'learning': '课程与教程', 'dataset': 'GUI 智能体的训练与评测数据', 'benchmark': '评测环境与任务集', 'model': '模型权重版本与模型系列', 'agent': '可操作电脑的公开实现', 'framework': '用于构建和评测智能体的代码', 'infrastructure': '沙箱、虚拟机、设备集群与运行环境', 'tool': '评测工具、录制工具及其他实用工具', 'product': '厂商和项目提供的电脑操作产品', 'company': '与已收录资源相关的发布方和品牌'},
         "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "learning": "学习资源", "dataset": "数据集", "benchmark": "基准",
             "model": "模型与权重版本", "agent": "智能体", "framework": "框架", "infrastructure": "基础设施", "tool": "工具",
             "product": "产品", "company": "发布方与品牌"},
@@ -840,28 +846,34 @@ def stats_block(report, lang="en", reviewed_papers=0):
         excluded=report["excluded_records"]) + "\n\n"
 
 
+def aligned_table(rows, right=()):
+    """Markdown table whose cells are padded to equal widths: awesome-lint compares pipe offsets, and plain text reads better too."""
+    widths = [max(len(row[i]) for row in rows) for i in range(len(rows[0]))]
+    line = lambda row: "| " + " | ".join(cell.rjust(w) if i in right else cell.ljust(w) for i, (cell, w) in enumerate(zip(row, widths))) + " |"
+    rule = "| " + " | ".join("-" * (w - 1) + (":" if i in right else "-") for i, w in enumerate(widths)) + " |"
+    return [line(rows[0]), rule, *map(line, rows[1:])]
+
+
 def task_navigator(lang="en"):
     """Short task-oriented entry points shared by source and publication READMEs."""
     site = SITE
     if lang == "zh":
         heading, columns, cli = "按任务查找", "| 你的任务 | 从这里开始 | 可以找到什么 |", "本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）"
         items = [
-            ("查找论文", f"[论文库]({site}/zh/papers/) · [研究主题]({site}/zh/topics/)", "按年份和主题阅读已审阅论文，查看原始来源。"),
+            ("查找论文", f"[论文库]({site}/zh/papers/) · [研究主题]({site}/zh/topics/) · [论文—资产关系]({site}/connections/)", "按年份和主题阅读已审阅论文，查看原始来源，以及经一手来源支持的代码、数据和模型关联。"),
             ("选择评测基准", f"[基准指南]({site}/guides/gui-agent-benchmarks/)", "核对平台、任务、评估器和版本。"),
             ("寻找训练数据", f"[训练数据指南]({site}/guides/gui-agent-training-data/)", "比较监督形式、划分、样本单位和数据许可。"),
             ("构建智能体", f"[智能体]({site}/categories/agent/) · [框架]({site}/categories/framework/)", "找到实现入口、支持的平台和论文依据。"),
             ("接入 RAG 或 Agent", f"[使用指南]({site}/zh/agents/) · [数据中心]({site}/zh/data/)", "下载完整记录或检索文档，保留审阅状态和来源。"),
-            ("追溯论文与资产", f"[论文—资产关系]({site}/connections/)", "查看经一手来源支持的代码、数据和模型关联。"),
         ]
     else:
         heading, columns, cli = "Find by task", "| Your task | Start here | What you can find |", "Local examples (after cloning; Python 3.11+, no dependencies required)"
         items = [
-            ("Find papers", f"[Research library]({site}/papers/) · [Topics]({site}/topics/)", "Reviewed papers by year and topic, with original sources."),
+            ("Find papers", f"[Research library]({site}/papers/) · [Topics]({site}/topics/) · [Paper–asset connections]({site}/connections/)", "Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence."),
             ("Choose a benchmark", f"[Benchmark guide]({site}/guides/gui-agent-benchmarks/)", "Platforms, tasks, evaluators, and versions to compare."),
             ("Find training data", f"[Training-data guide]({site}/guides/gui-agent-training-data/)", "Supervision, splits, count units, and data licenses."),
             ("Build an agent", f"[Agents]({site}/categories/agent/) · [Frameworks]({site}/categories/framework/)", "Implementation entry points, supported platforms, and papers."),
             ("Use RAG or an agent", f"[Agent guide]({site}/agents/) · [Data hub]({site}/data/)", "Complete records or retrieval documents with review states and sources."),
-            ("Trace papers to assets", f"[Paper–asset connections]({site}/connections/)", "Code, datasets, and models linked through reviewed primary evidence."),
         ]
     commands = [
         'python3 scripts/catalog.py search "grounding" --kind paper --status curated --limit 0 --json',
@@ -871,22 +883,22 @@ def task_navigator(lang="en"):
         'python3 scripts/export_rag.py --output dist/rag-documents.jsonl',
         'python3 scripts/catalog.py get arxiv:2404.07972 --related --json',
     ]
-    return "\n" + "\n".join(["## " + heading, "", columns, "| --- | --- | --- |", *("| " + " | ".join(item) + " |" for item in items), "", "<details>", "<summary>" + cli + "</summary>", "", "```sh", "cd Awesome-CUA", *commands, "```", "", "</details>", ""]) + "\n"
+    head_cells = [cell.strip() for cell in columns.strip("|").split("|")]
+    return "\n" + "\n".join(["## " + heading, "", *aligned_table([head_cells, *items]), "", "<details>", "<summary>" + cli + "</summary>", "", "```sh", "cd Awesome-CUA", *commands, "```", "", "</details>", ""]) + "\n"
 
 
 def explore(rows, report, lang="en"):
+    """One compact table of every catalog section with its live count, then the platform counts."""
     text = README_TEXT[lang]
     curated = collections.Counter(r["kind"] for r in rows if r["review_status"] == "curated")
-    def link(key, path, kind):
-        label = text["labels"][key]
-        if kind == "paper":
-            return f"[{label}]({path}) · " + text["reviewed_papers"].format(n=curated[kind])
-        if kind == "bibliography":
-            return f"[{label}]({path}) · " + text["arxiv_records"].format(n=report["bibliographic_records"])
-        return f"[{label}]({path}) · **{curated[kind]:,}**"
-    lines = [text["explore_header"], "| --- | --- |"]
-    cell = lambda items: " · ".join(link(*item) for item in items if item[2] != "learning" or curated["learning"])
-    lines += [f"| {cell(left)} | {cell(right)} |" for left, right in EXPLORE]
+    table = [text["explore_header"]]
+    # Research and training resources first, then engineering and industry ones.
+    for key, path, kind in [item for left, _ in EXPLORE for item in left] + [item for _, right in EXPLORE for item in right]:
+        if kind == "learning" and not curated["learning"]:
+            continue
+        count = report["bibliographic_records"] if kind == "bibliography" else curated[kind]
+        table.append((f"[{text['labels'][key]}]({path})", text["blurbs"][key], format(count, ",")))
+    lines = aligned_table(table, right=(2,))
     platforms = collections.Counter(e for r in rows if r["review_status"] == "curated" for e in set(r["environments"]))
     lines += ["", f"**{text['by_platform']}** " + " · ".join(f"[{label}](docs/environments/{env}.md) **{platforms[env]:,}**" for env, label in PLATFORMS if platforms[env])]
     return "\n" + "\n".join(lines) + "\n"

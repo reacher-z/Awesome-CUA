@@ -67028,5 +67028,35 @@
     "editorial_reviewed": false,
     "review_note": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) found it outside the scope: Builds a graph memory of correction knowledge from agent trajectories, evaluated on ALFWorld and ScienceWorld. These text-simulated tasks involve no web, GUI or device interaction, so it is outside the catalog. The retained record is v2, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2603.",
     "reviewed_sha256": "f5cb74ee7fb32d9b32cee7b56cbdbf677efc8384fc55d53982a75090a5cf659e"
+  },
+  {
+    "id": "arxiv:2410.23734",
+    "name": "Classical simulation of universal measurement-based quantum computation using multipartite Bell scenarios",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2410.23734",
+    "verify_terms": [
+      "Classical simulation of universal measurement-based quantum"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2410.22770%2C2410.23022%2C2410.23734%2C2411.02393%2C2411.02479%2C2411.03312%2C2411.05451%2C2411.05755%2C2411.07618%2C2411.09523%2C2411.11145%2C2411.11904%2C2411.11916%2C2411.12049%2C2411.12990%2C2411.13142%2C2411.13543%2C2411.14228%2C2411.15397%2C2411.17933%2C2412.01547%2C2412.01857%2C2412.04144%2C2412.04383%2C2412.04626%2C2412.05260%2C2412.05819%2C2412.06224%2C2412.06771%2C2412.08017%2C2412.08611%2C2412.09530%2C2412.09613%2C2412.10380%2C2412.10400%2C2412.10673%2C2412.12004%2C2412.13103%2C2412.13178%2C2412.13810%2C2412.14171%2C2412.14203%2C2412.14222%2C2412.14470%2C2412.16359%2C2412.19638%2C2412.20206%2C2412.20717%2C2501.01702%2C2501.02189&max_results=50"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: The abstract gives a classical simulation algorithm for measurement-based quantum computation using Bell polytopes. This quantum information work does not involve agents operating graphical interfaces, web pages or devices. The retained record is v1, so the scope decision waits until that snapshot is reconciled.",
+    "reviewed_sha256": "7fa92d39039726a3f51350539f60aa0a2adcacebfad20896d29053c1fde611c6"
+  },
+  {
+    "id": "arxiv:2610.11251",
+    "name": "V-CoLA: Vision Token Compression with Linear Attention",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.11251",
+    "verify_terms": [
+      "V-CoLA: Vision Token Compression with Linear Attention"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2609.35002%2C2609.35232%2C2609.35394%2C2609.35775%2C2609.36071%2C2609.36352%2C2609.36777%2C2609.37017%2C2609.38397%2C2609.38648%2C2609.38923%2C2609.39222%2C2609.39306%2C2609.39924%2C2610.00042%2C2610.00346%2C2610.00450%2C2610.00583%2C2610.03574%2C2610.04184%2C2610.04906%2C2610.05099%2C2610.06514%2C2610.07127%2C2610.08699%2C2610.09127%2C2610.09484%2C2610.09633%2C2610.11251%2C2610.11655%2C2610.11922%2C2610.13098%2C2610.13166%2C2610.13361%2C2610.13623%2C2610.14306%2C2610.14855%2C2610.14966%2C2610.15765%2C2610.16117%2C2610.16260%2C2610.16402%2C2610.16998%2C2610.17816%2C2610.17953%2C2610.18868%2C2610.19368%2C2610.20424%2C2610.20597%2C2610.21109&max_results=50"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) found it outside the scope: Training-free vision token compression for VLMs built on linear attention. General VLM efficiency work with no GUI, screen or agent-interaction contribution. The retained record is v1, so the scope decision waits until that snapshot is reconciled. An exclusion proposal is open in pull request #2593.",
+    "reviewed_sha256": "fbf9f07c95d8c1f4ad119a20a35d82b69f79d4bdc06b25aacac1a334dc54e034"
   }
 ]

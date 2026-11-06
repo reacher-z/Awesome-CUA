@@ -52,6 +52,10 @@ def apply_license_reviews(editorial, primary, licenses, details):
         details['license_review']={slot:{k:copy.deepcopy(v) for k,v in decision.items() if k!='value'} for slot,decision in reviews.items()}
 
 
+LEGACY_ARCHIVE_NOTE = "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."
+ARCHIVE_NOTE = "Bibliographic metadata checked against arXiv; relevance review pending."
+
+
 def source_records(with_scope=False):
     archived = read_jsonl(DATA / "papers.jsonl")
     if len({r['id'] for r in archived}) != len(archived):
@@ -65,6 +69,9 @@ def source_records(with_scope=False):
     # An omission (already recorded, or for an author list naming a protected person) also empties the attached
     # edition's list; publications.jsonl keeps its observation, and the privacy test reports any source that names one.
     records = {rid: omit_protected_authors(row) for rid, row in records.items()}
+    for row in records.values():
+        if row.get('notes') == LEGACY_ARCHIVE_NOTE:
+            row['notes'] = ARCHIVE_NOTE
     aliases=publication_aliases(observations,publication_identity)
     evidence = {r["id"]: r for r in read_jsonl(DATA / "primary-evidence.jsonl")}
     enrichment = {r["id"]: r for r in read_jsonl(DATA / "enrichment.jsonl")}

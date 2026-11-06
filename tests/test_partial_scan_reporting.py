@@ -121,8 +121,10 @@ class ThrottlePauseTests(unittest.TestCase):
 
     def test_a_rate_limit_pause_that_moved_the_cursor_is_not_a_partial_scan_gap(self):
         self.assertTrue(scan.throttle_pause(self.row()))
-        self.assertEqual(scan.partial_streak([self.row()] * 9), 0)
-        self.assertEqual(scan.partial_streak([{'status': 'partial'}, self.row(), self.row(), {'status': 'partial'}]), 2)
+        varied = [self.row(warnings=['GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.',
+                                     f'Discovery sources failed: s{i}']) for i in range(9)]
+        self.assertEqual(scan.partial_streak(varied), 0)
+        self.assertEqual(scan.partial_streak([{'status': 'partial'}, varied[0], varied[1], {'status': 'partial'}]), 2)
 
     def test_a_pause_without_progress_still_counts(self):
         stalled = self.row(progress=0)
@@ -134,6 +136,15 @@ class ThrottlePauseTests(unittest.TestCase):
             with self.subTest(case=case):
                 self.assertFalse(scan.throttle_pause(case))
         self.assertEqual(scan.partial_streak([self.row(failed=20)] * 4), 4)
+
+    def test_a_gap_that_never_clears_keeps_counting(self):
+        persistent = lambda: self.row(warnings=['GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.',
+                                                  'Discovery sources failed: a', '3 GitHub candidate requests have no accepted metadata response.'])
+        rows = [persistent() for _ in range(5)]
+        self.assertEqual(scan.partial_streak(rows), 2, 'the first three scans have no history to call the gap persistent')
+        transient = [self.row(warnings=['GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.',
+                                        f'Discovery sources failed: s{i}']) for i in range(6)]
+        self.assertEqual(scan.partial_streak(transient), 0)
 
     def test_a_success_still_ends_the_streak(self):
         self.assertEqual(scan.partial_streak([{'status': 'partial'}] * 3 + [{'status': 'success'}, self.row()]), 0)

@@ -251,17 +251,31 @@ def recent_papers(config):
             'rate_limited':any(p.get('status')==429 for p in pages)}
 
 
-THROTTLE_WARNINGS=('GitHub candidate observations paused','GitHub candidate requests have no accepted','GitHub metadata rows were rejected',
-    'Discovery sources failed:','arXiv identifiers remain unresolved')
+PAUSE_WARNING='GitHub candidate observations paused'
+KNOWN_GAPS=('Discovery sources failed:','GitHub candidate requests have no accepted','GitHub metadata rows were rejected','arXiv identifiers remain unresolved')
 MAX_THROTTLE_SOURCE_FAILURE_RATIO=0.05
+PERSISTENT_RUNS=3
 
 
-def throttle_pause(row):
+def gap_keys(row):
+    """Independent gaps of a scan, one key each: a failed source id, or another warning with its numbers removed."""
+    keys=set()
+    for warning in row.get('warnings',[]):
+        if warning.startswith(PAUSE_WARNING):continue
+        if warning.startswith('Discovery sources failed:'):
+            keys.update('source:'+name.strip() for name in warning.split(':',1)[1].split(','))
+        else:keys.add(re.sub(r'\d+','N',warning))
+    return keys
+
+
+def throttle_pause(row,previous=()):
     """True for a partial scan whose only candidate gap is a provider rate-limit pause that still moved the cursor.
 
     The pause is expected while thousands of candidates are walked within the provider's allowance, so it must not count
-    as an outage. A pause with no progress, a scan with any other failed phase, or source fetch failures above
-    MAX_THROTTLE_SOURCE_FAILURE_RATIO is not a throttle pause and keeps counting toward repeated partial scans."""
+    as an outage. It is not a throttle pause, and keeps counting toward repeated partial scans, when the cursor made no
+    progress, another phase failed, source fetch failures exceed MAX_THROTTLE_SOURCE_FAILURE_RATIO, any warning is not a
+    known gap, or an independent gap (a source, unanswered requests, rejected rows) also appeared in each of the
+    PERSISTENT_RUNS scans before this one, because a gap that never clears is not transient."""
     if row.get('status')!='partial':return False
     candidate=row.get('candidate_observations') or {}
     if candidate.get('state')!='rate_limited':return False
@@ -269,14 +283,20 @@ def throttle_pause(row):
     fetches=row.get('source_fetches') or {}
     total=fetches.get('total',0)
     if total and (total-fetches.get('successful',0))/total>MAX_THROTTLE_SOURCE_FAILURE_RATIO:return False
-    return all(any(k in w for k in THROTTLE_WARNINGS) for w in row.get('warnings',[]))
+    if not all(w.startswith(PAUSE_WARNING) or any(k in w for k in KNOWN_GAPS) for w in row.get('warnings',[])):return False
+    recent=list(previous)[-PERSISTENT_RUNS:]
+    if len(recent)==PERSISTENT_RUNS:
+        persistent=gap_keys(row).intersection(*(gap_keys(r) for r in recent))
+        if persistent:return False
+    return True
 
 
 def partial_streak(history):
     """Consecutive partial scans ending at the newest, ignoring rate-limit pauses that made progress."""
     streak=0
-    for row in reversed(history):
-        if throttle_pause(row):continue
+    for index in range(len(history)-1,-1,-1):
+        row=history[index]
+        if throttle_pause(row,history[:index]):continue
         if row.get('status')!='partial':break
         streak+=1
     return streak

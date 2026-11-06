@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "5c1a9f0692337d497c70878d4dc16285dcb1f0d545fd4122d5a7687cf5f5fe9a",
-  "observation_snapshot_sha256": "39ed875312fc201b0af87b16ad7c2704bf9f4e0ac29390a5316dcf08630ec66b",
+  "manifest_sha256": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
+  "observation_snapshot_sha256": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3398,11 +3398,48 @@
           }
         },
         "id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba"
+      },
+      {
+        "active_records": 2620,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8189812,
+            "sha256": "48836a4d3aa1a87df0bc6e9e81af1cf49c8554624a2a5353bdc24ca6f45b2cab"
+          },
+          "catalog.jsonl": {
+            "bytes": 7556379,
+            "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "input_id": "94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "kind": "existing",
+        "last_attempt": 773,
+        "next_index": 104,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
         "input_id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
@@ -3410,7 +3447,7 @@
         "last_attempt": 768,
         "next_index": 98,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3",
@@ -77406,6 +77443,114 @@
         "run_id": "run:a10dc3993e536da77f7ea6e9",
         "source_url": "https://api.github.com/repos/sjz5202/gui-aima",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          898816326
+        ],
+        "finished_at": "2026-11-06T23:14:10.871061+00:00",
+        "id": "receipt:f0618ba5b88176cda056b22a933bf57d74fbe6eac5cd391db663662d5c26ab8f",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 98,
+        "query_id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "277da990eeed0caba096e3b538d3f1c198befe863f55896c90f25c65c26c5c8b",
+        "requested_at": "2026-11-06T23:14:10.576917+00:00",
+        "response_bytes": 6691,
+        "response_sha256": "3dc0c29a0a7c5e530b5accd1d5c9f73d8e8effd53da75d75d0fbdcd44422868a",
+        "returned_count": 1,
+        "run_id": "run:6058d034dc3b8cabb63397b4",
+        "source_url": "https://api.github.com/repos/steel-dev/steel-mcp-server",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T23:14:17.364763+00:00",
+        "id": "receipt:41f142eaeeb8bcd5aa2407a39c8a88204801aa82efd8a3cc8241d2e9c34405d4",
+        "incomplete_results": null,
+        "outcome": "unavailable",
+        "position": 99,
+        "query_id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "1d79611696ea95087dc8ac46676a30be350c46c78acdc777f345ed7de51e69d1",
+        "requested_at": "2026-11-06T23:14:17.088439+00:00",
+        "response_bytes": 118,
+        "response_sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+        "returned_count": null,
+        "run_id": "run:6058d034dc3b8cabb63397b4",
+        "source_url": null,
+        "status": 404
+      },
+      {
+        "accepted_repository_ids": [
+          776303452
+        ],
+        "finished_at": "2026-11-06T23:14:23.900038+00:00",
+        "id": "receipt:5361ddf78fdada160e99dc5c1279258c3b92af9e8dcd086c9de7427770d72e48",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 101,
+        "query_id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "e2f1f2610a6a6d8198dba24f66439225add9d20a75b30018720a668c23fd0b67",
+        "requested_at": "2026-11-06T23:14:23.599553+00:00",
+        "response_bytes": 5220,
+        "response_sha256": "02143679a9956f42f46d1d29552f935a848353935197109ed01b77420022730c",
+        "returned_count": 1,
+        "run_id": "run:6058d034dc3b8cabb63397b4",
+        "source_url": "https://api.github.com/repos/testtesta6/visiondroid",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          706874467
+        ],
+        "finished_at": "2026-11-06T23:14:30.403160+00:00",
+        "id": "receipt:db086eacc71fe3da102240520ad06781ae3c11fc433799ae17b3e357b9566ded",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 102,
+        "query_id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "5baa47817d3a1f3142b6207a61027911d99d837a4ea65895006d02140e7e528b",
+        "requested_at": "2026-11-06T23:14:30.110913+00:00",
+        "response_bytes": 6235,
+        "response_sha256": "6cd12595b5fff02d21e140799e301389fff1ed9edaf8e8b3101d0b3656864d36",
+        "returned_count": 1,
+        "run_id": "run:6058d034dc3b8cabb63397b4",
+        "source_url": "https://api.github.com/repos/theduckai/ducktrack",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          819199339
+        ],
+        "finished_at": "2026-11-06T23:14:36.936616+00:00",
+        "id": "receipt:686ea3ca10a778ca525a37537250778e9268b45fb917aec3d2284b9ed7c8b35d",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 103,
+        "query_id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d5745da0a56617f7be02d88e1b6cff04fc15ac23b380cd10a557236483e043ae",
+        "requested_at": "2026-11-06T23:14:36.622267+00:00",
+        "response_bytes": 6045,
+        "response_sha256": "6f88c7fcfe0695c0b69e89e8ad58ccc26da3a11c7813c20e9f9e104d37f250f7",
+        "returned_count": 1,
+        "run_id": "run:6058d034dc3b8cabb63397b4",
+        "source_url": "https://api.github.com/repos/thudm/openwebagent",
+        "status": 200
       }
     ],
     "runs": [
@@ -80232,9 +80377,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 191.933520223
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10120,
+        "before_unique_repositories": 10116,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T23:14:40.445305+00:00",
+        "id": "run:6058d034dc3b8cabb63397b4",
+        "input_id": "94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "new_unique_repositories": 4,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "ae8bcd818a5e41ce881e162270be716a"
+        },
+        "started_at": "2026-11-06T23:14:00.473023+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 190.72089653199998
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "72a3c792e703c14599c2c57dc06d342f3302509a257000662531402f0e8ce96d"
+  "state_sha256": "4eebba06d9edccc804b183e515523229bf94b63cf1c967eb90d4a820e8cef20d"
 }

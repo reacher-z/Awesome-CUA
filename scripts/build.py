@@ -786,15 +786,13 @@ def badges(rows, report):
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
     as_of = report["as_of_utc"]
     evidence = f"{as_of[:10]} {as_of[11:16]} UTC"
+    # Plain images: the same pages are linked from the sections below, and awesome-lint flags a URL linked twice.
     return ("\n" + " ".join([
-        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
-        f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
-        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
-        f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
-        f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
-
-
-HUGGING_FACE_DATASET = "https://huggingface.co/datasets/AgPerry/awesome-cua"
+        f"![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})",
+        f"![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})",
+        f"![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})",
+        f"![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})",
+        f"![MIT license]({shield('license', 'MIT', '5E6472')}{style})"]) + "\n")
 
 
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.
@@ -813,7 +811,7 @@ README_TEXT = {
             "product": "Products", "company": "Publishers and brands"},
         "by_platform": "By platform:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records, including those awaiting review",
         "kinds": {"benchmark": "Benchmarks", "model": "Models", "dataset": "Datasets", "framework": "Frameworks", "agent": "Agents"},
-        "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
+        "all": "{n} in the catalog", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
         "stats": ("**{curated:,} curated resources** · **{papers:,} reviewed papers and surveys** · **{sources} discovery documents**\n\n"
@@ -826,7 +824,7 @@ README_TEXT = {
             "product": "产品", "company": "发布方与品牌"},
         "by_platform": "按平台：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录（含待审阅）",
         "kinds": {"benchmark": "基准", "model": "模型", "dataset": "数据集", "framework": "框架", "agent": "智能体"},
-        "all": "全部 {n} 项 →", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
+        "all": "目录中共 {n} 项", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
         "recent_header": "| 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |",
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
             "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
@@ -846,6 +844,14 @@ def stats_block(report, lang="en", reviewed_papers=0):
         excluded=report["excluded_records"]) + "\n\n"
 
 
+ENVIRONMENT_LABELS = {"macos": "macOS", "ios": "iOS", "harmonyos": "HarmonyOS", "cross-platform": "Cross-platform", "unspecified": "Unspecified"}
+
+
+def environments_cell(environments):
+    """Platform names as proper nouns (Android, macOS, iOS): awesome-lint's spell check flags the lower-case ids."""
+    return ", ".join(ENVIRONMENT_LABELS.get(e, e[:1].upper() + e[1:]) for e in environments)
+
+
 def cells(header):
     """Cells of a one-line Markdown table header such as "| A | B |"."""
     return tuple(cell.strip() for cell in header.strip().strip("|").split("|"))
@@ -857,6 +863,51 @@ def aligned_table(rows, right=()):
     line = lambda row: "| " + " | ".join(cell.rjust(w) if i in right else cell.ljust(w) for i, (cell, w) in enumerate(zip(row, widths))) + " |"
     rule = "| " + " | ".join("-" * (w - 1) + (":" if i in right else "-") for i, w in enumerate(widths)) + " |"
     return [line(rows[0]), rule, *map(line, rows[1:])]
+
+
+GENERATED_BLOCK = re.compile(r"<!-- (\w+):START -->.*?<!-- \1:END -->", re.S)
+LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#][^)\s]*)\)")
+
+
+def unlink_repeats(content):
+    """Keep the first link to each address on the page and write later ones inside generated blocks as plain text
+    (a paper cited by several rows, a document named in two tables); awesome-lint flags a URL linked twice."""
+    spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
+    seen = set()
+    def replace(match):
+        url = match.group(2)
+        generated = any(a <= match.start() < b for a, b in spans)
+        if url in seen and generated:
+            return match.group(1)
+        seen.add(url)
+        return match.group(0)
+    content = LINK.sub(replace, content)
+    spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
+    for start, end in reversed(spans):
+        content = content[:start] + realign_tables(content[start:end]) + content[end:]
+    return content
+
+
+def realign_tables(text):
+    """Pad every Markdown table in `text` again, because unlinking changed cell widths."""
+    out, table = [], []
+    def flush():
+        if not table:
+            return
+        rows = [[c.strip() for c in re.split(r"(?<!\\)\|", line.strip())[1:-1]] for line in table]
+        rule = [bool(re.fullmatch(r":?-+:?", cell)) for cell in rows[1]] if len(rows) > 1 else []
+        right = {i for i, cell in enumerate(rows[1]) if cell.endswith(":")} if rule and all(rule) else set()
+        body = [r for k, r in enumerate(rows) if not (k == 1 and rule and all(rule))]
+        out.extend(aligned_table(body, right=right) if len(rows) > 1 and rule and all(rule) else table)
+        table.clear()
+    for line in text.split("\n"):
+        if line.startswith("|"):
+            table.append(line)
+        else:
+            flush()
+            out.append(line)
+    flush()
+    return "\n".join(out)
 
 
 def task_navigator(lang="en"):
@@ -924,16 +975,16 @@ def highlights(rows, edges, limit=6, lang="en"):
     # Surveys come first as the entry point and are ordered by date, not by mentions.
     surveys = sorted((r for r in rows if r["kind"] == "survey" and r["review_status"] == "curated"), key=lambda r: (record_date_text(r), r["name"]), reverse=True)
     if surveys:
-        lines += [f"**{text['surveys']}** · [{text['all'].format(n=len(surveys))}](docs/surveys.md)", ""]
-        lines += aligned_table([cells(text["survey_header"])] + [(nowrap(record_date_text(r) or '—'), f"[{md(r['name'])}]({r['url']})", ', '.join(r['environments'])) for r in surveys[:5]])
+        lines += [f"**{text['surveys']}** · {text['all'].format(n=len(surveys))}", ""]
+        lines += aligned_table([cells(text["survey_header"])] + [(nowrap(record_date_text(r) or '—'), f"[{md(r['name'])}]({r['url']})", environments_cell(r['environments'])) for r in surveys[:5]])
         lines.append("")
     for kind, path in HIGHLIGHT_KINDS:
         curated = [r for r in rows if r["kind"] == kind and r["review_status"] == "curated"]
         ranked = sorted((r for r in curated if cited_by[r["id"]]), key=lambda r: (-len(cited_by[r["id"]]), r["name"].casefold()))[:limit]
         if not ranked:
             continue
-        lines += [f"**{text['kinds'][kind]}** · [{text['all'].format(n=len(curated))}]({path})", ""]
-        lines += aligned_table([cells(text["highlight_header"])] + [(f"[{md(r['name'])}]({r['url']})", str(len(cited_by[r['id']])), ', '.join(r['environments']), paper_cell(r, by_id), license_cell(r, lang), md(r['summary'])) for r in ranked], right=(1,))
+        lines += [f"**{text['kinds'][kind]}** · {text['all'].format(n=len(curated))}", ""]
+        lines += aligned_table([cells(text["highlight_header"])] + [(f"[{md(r['name'])}]({r['url']})", str(len(cited_by[r['id']])), environments_cell(r['environments']), paper_cell(r, by_id), license_cell(r, lang), md(r['summary'])) for r in ranked], right=(1,))
         lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -944,7 +995,7 @@ def recently_reviewed(rows, reviewed_at, limit=12, lang="en"):
         key=lambda r: (reviewed_at[r["id"]], r["name"].casefold()), reverse=True)[:limit]
     text = README_TEXT[lang]
     lines = [""]
-    lines += aligned_table([cells(text["recent_header"])] + [(nowrap(reviewed_at[r['id']][:10]), f"[{md(r['name'])}]({r['url']})", text['kind_names'].get(r['kind'], r['kind']), ', '.join(r['environments']), md(r['summary'])) for r in recent]) if recent else []
+    lines += aligned_table([cells(text["recent_header"])] + [(nowrap(reviewed_at[r['id']][:10]), f"[{md(r['name'])}]({r['url']})", text['kind_names'].get(r['kind'], r['kind']), environments_cell(r['environments']), md(r['summary'])) for r in recent]) if recent else []
     return "\n".join(lines) + "\n" if recent else "\n"
 
 
@@ -1025,6 +1076,7 @@ def build(args):
             for name, body in blocks.items():
                 # A function replacement keeps backslashes in generated Markdown literal.
                 content = re.sub(rf"(?<=<!-- {name}:START -->).*?(?=<!-- {name}:END -->)", lambda _: body, content, flags=re.S)
+            content = unlink_repeats(content)
             files[filename] = content
     dictionary = ROOT / "docs/data-dictionary.md"
     if dictionary.exists():

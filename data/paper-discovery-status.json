@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "started_at": "2026-11-06T04:17:58Z",
-  "finished_at": "2026-11-06T04:18:33Z",
+  "started_at": "2026-11-06T06:25:15Z",
+  "finished_at": "2026-11-06T06:25:48Z",
   "provider": "huggingface_papers_search",
   "requested_refresh": true,
   "status": "success",
   "configured_query_count": 32,
   "successful_query_count": 32,
-  "unique_identifiers": 1505,
-  "new_candidate_count": 0,
-  "without_arxiv_metadata": 0,
+  "unique_identifiers": 1506,
+  "new_candidate_count": 1,
+  "without_arxiv_metadata": 1,
   "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
   "queries": [
     {
@@ -21,13 +21,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=computer+use+agents&limit=80",
-        "retrieved_at": "2026-11-06T04:17:58Z",
+        "retrieved_at": "2026-11-06T06:25:15Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=computer+use+agents&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "4c8372e4aae2aa087be7d805675b2ee6d928b7dbe2035c9c061837474e5e0142",
+        "sha256": "89be21693b533ba933f73132c591ed92a31e2979814c448defc0f589834d95f4",
         "bytes": 614457,
         "request_attempted": true
       },
@@ -130,7 +130,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+grounding+benchmark&limit=80",
-        "retrieved_at": "2026-11-06T04:17:59Z",
+        "retrieved_at": "2026-11-06T06:25:16Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -239,7 +239,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=mobile+GUI+agent+reinforcement+learning&limit=80",
-        "retrieved_at": "2026-11-06T04:18:00Z",
+        "retrieved_at": "2026-11-06T06:25:17Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -348,7 +348,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=web+agent+dataset+benchmark&limit=80",
-        "retrieved_at": "2026-11-06T04:18:02Z",
+        "retrieved_at": "2026-11-06T06:25:18Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -457,7 +457,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=computer+use+agent+safety&limit=80",
-        "retrieved_at": "2026-11-06T04:18:03Z",
+        "retrieved_at": "2026-11-06T06:25:19Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -566,7 +566,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+memory+planning&limit=80",
-        "retrieved_at": "2026-11-06T04:18:04Z",
+        "retrieved_at": "2026-11-06T06:25:20Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -675,14 +675,14 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=desktop+computer+use+agent+Windows+macOS+Linux&limit=80",
-        "retrieved_at": "2026-11-06T04:18:05Z",
+        "retrieved_at": "2026-11-06T06:25:21Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=desktop+computer+use+agent+Windows+macOS+Linux&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "23aad239f5ce64dc3c27de0a2d9ff77f699b26a82b794d6fe376061f8783608b",
-        "bytes": 581138,
+        "sha256": "5b5eb3e083df59fb2e43e02c2bc5a0f4d8a7a7123e30b83ce877522021328dce",
+        "bytes": 581545,
         "request_attempted": true
       },
       "identifiers": [
@@ -697,7 +697,6 @@
         "arxiv:2409.08264",
         "arxiv:2409.17140",
         "arxiv:2410.08164",
-        "arxiv:2503.04730",
         "arxiv:2503.10809",
         "arxiv:2503.15661",
         "arxiv:2504.00906",
@@ -760,6 +759,7 @@
         "arxiv:2610.04116",
         "arxiv:2610.11050",
         "arxiv:2610.13623",
+        "arxiv:2610.14488",
         "arxiv:2610.15765",
         "arxiv:2610.19368",
         "arxiv:2610.22200",
@@ -771,8 +771,8 @@
       "request_attempted": true,
       "state": "success",
       "unique_count": 80,
-      "new_candidate_count": 0,
-      "without_arxiv_metadata": 0,
+      "new_candidate_count": 1,
+      "without_arxiv_metadata": 1,
       "at_result_limit": true
     },
     {
@@ -784,7 +784,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=Android+smartphone+GUI+agent+automation&limit=80",
-        "retrieved_at": "2026-11-06T04:18:06Z",
+        "retrieved_at": "2026-11-06T06:25:22Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -893,7 +893,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=iOS+iPhone+GUI+agent+benchmark&limit=80",
-        "retrieved_at": "2026-11-06T04:18:08Z",
+        "retrieved_at": "2026-11-06T06:25:23Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1002,7 +1002,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=HarmonyOS+mobile+GUI+agent&limit=80",
-        "retrieved_at": "2026-11-06T04:18:09Z",
+        "retrieved_at": "2026-11-06T06:25:24Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1111,7 +1111,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+screen+understanding+interface+element+detection&limit=80",
-        "retrieved_at": "2026-11-06T04:18:10Z",
+        "retrieved_at": "2026-11-06T06:25:25Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1220,7 +1220,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=screenshot+visual+grounding+click+localization+agent&limit=80",
-        "retrieved_at": "2026-11-06T04:18:11Z",
+        "retrieved_at": "2026-11-06T06:25:26Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -1329,13 +1329,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=visual+web+navigation+browser+agent&limit=80",
-        "retrieved_at": "2026-11-06T04:18:11Z",
+        "retrieved_at": "2026-11-06T06:25:27Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=visual+web+navigation+browser+agent&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "d155a0fff83aa36b78a1fdef2e281255d1ea09c93005757b41463dbc84bc7645",
+        "sha256": "ad323d4097ab06302f350fc32d6e62e71b2580fe3ee40e412ba4d50e359af752",
         "bytes": 543937,
         "request_attempted": true
       },
@@ -1438,13 +1438,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=cross+application+multi+app+GUI+agents&limit=80",
-        "retrieved_at": "2026-11-06T04:18:12Z",
+        "retrieved_at": "2026-11-06T06:25:28Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=cross+application+multi+app+GUI+agents&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "321ef37cbb43bcbc57fceb7b7be6e22cfca459d67d1cdf19801d8f012a8bcb05",
+        "sha256": "bd4380b1f6d6577b0590116fb6ebf8b445130c798093a295d976fa126f92ae90",
         "bytes": 607842,
         "request_attempted": true
       },
@@ -1547,13 +1547,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=long+horizon+computer+use+agent+workflow+planning&limit=80",
-        "retrieved_at": "2026-11-06T04:18:13Z",
+        "retrieved_at": "2026-11-06T06:25:29Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=long+horizon+computer+use+agent+workflow+planning&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "ae4c877e044be3b95e982959a9d8509d3c4ef977e7c4f81e0c73c805b1518e3b",
+        "sha256": "f8a572efbefad7ef7cd5a4ab4f132db69c9bed4eefad24b46d793e190ac0165d",
         "bytes": 588992,
         "request_attempted": true
       },
@@ -1656,13 +1656,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+episodic+memory+self+reflection&limit=80",
-        "retrieved_at": "2026-11-06T04:18:14Z",
+        "retrieved_at": "2026-11-06T06:25:30Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+episodic+memory+self+reflection&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "8c6c62dd54d2ae18639f8678bca3875c8133da144dac1da6058b35f6eaf59297",
+        "sha256": "945e89bedf7673fe67e313cb92b57a508c80cb6935bfaea093582a600ff894d6",
         "bytes": 549828,
         "request_attempted": true
       },
@@ -1765,13 +1765,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=computer+use+agent+online+reinforcement+learning+rewards&limit=80",
-        "retrieved_at": "2026-11-06T04:18:16Z",
+        "retrieved_at": "2026-11-06T06:25:31Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=computer+use+agent+online+reinforcement+learning+rewards&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "2d5f83bcc0c88f0aaadca72cf75b83d8180a7dda98d03b9cf35c66d290b5e4ce",
+        "sha256": "d91569f18bbfa5efe1f16134c954173aad2a93b5f7fc27f684f1bfd97fdc8bef",
         "bytes": 527235,
         "request_attempted": true
       },
@@ -1874,13 +1874,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+imitation+learning+human+demonstration+trajectories&limit=80",
-        "retrieved_at": "2026-11-06T04:18:17Z",
+        "retrieved_at": "2026-11-06T06:25:32Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+imitation+learning+human+demonstration+trajectories&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "ec1b54fd9deab962a219dee79f9439470381c8792f09fb2688b9c2c046edda9a",
+        "sha256": "a8b799693da5448e9fa43f1e15288dc7d0c7f9dd117ae6e73323b09f9c5a2373",
         "bytes": 508921,
         "request_attempted": true
       },
@@ -1983,13 +1983,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=synthetic+GUI+agent+training+data+generation&limit=80",
-        "retrieved_at": "2026-11-06T04:18:18Z",
+        "retrieved_at": "2026-11-06T06:25:33Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=synthetic+GUI+agent+training+data+generation&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "2c3d98824cbe07adc8836ee5e3aacd2aada7b8a618b21e47b1b4969827181001",
+        "sha256": "8ffadb5d7c266fb206cc9e6cc581efb99cc304cf12a354afcf8d3163887010e2",
         "bytes": 619159,
         "request_attempted": true
       },
@@ -2092,7 +2092,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=computer+use+benchmark+task+evaluation+state+verification&limit=80",
-        "retrieved_at": "2026-11-06T04:18:19Z",
+        "retrieved_at": "2026-11-06T06:25:34Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -2201,13 +2201,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=professional+software+GUI+agent+CAD+Blender+3D&limit=80",
-        "retrieved_at": "2026-11-06T04:18:20Z",
+        "retrieved_at": "2026-11-06T06:25:35Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=professional+software+GUI+agent+CAD+Blender+3D&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "852fbbd7ce50801bbfdeb272f4c696a22c25c13b7c5d19af4cf1a4873a873a92",
+        "sha256": "935c78f36a665a9c313b0a7a3ba3410216b4e4f00bf7d7f9a923bc035efe84b7",
         "bytes": 534306,
         "request_attempted": true
       },
@@ -2310,13 +2310,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=spreadsheets+presentations+documents+computer+use+agents&limit=80",
-        "retrieved_at": "2026-11-06T04:18:21Z",
+        "retrieved_at": "2026-11-06T06:25:36Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=spreadsheets+presentations+documents+computer+use+agents&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "b01d0b3e2c0e9b503aaf370deb2b5429074d73b78781f1ec1112db64f4d207ca",
+        "sha256": "2926fdb168ddf536d4c0558adb5e1ad7a613e84d855337c182819881cab84e81",
         "bytes": 536738,
         "request_attempted": true
       },
@@ -2419,13 +2419,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=accessibility+assistive+multimodal+GUI+agents&limit=80",
-        "retrieved_at": "2026-11-06T04:18:22Z",
+        "retrieved_at": "2026-11-06T06:25:37Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=accessibility+assistive+multimodal+GUI+agents&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "999e9d68e393714194112ca9014e6486c697ef3ff389107cb2868b5f1b190b98",
+        "sha256": "44326610930a3cb1023bf81264ab7b66e988c580480691f5fd5d6d0e5f218587",
         "bytes": 547073,
         "request_attempted": true
       },
@@ -2528,13 +2528,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+robustness+dynamic+interfaces+distribution+shift&limit=80",
-        "retrieved_at": "2026-11-06T04:18:23Z",
+        "retrieved_at": "2026-11-06T06:25:38Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+robustness+dynamic+interfaces+distribution+shift&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "900c791828a808dfd649a527150b186622f5545afea11c4e6bf472e454638c9c",
+        "sha256": "e9a3f353f3a2709764ec8c04c120fd88da138f9085b63960b8426ab037c22ccd",
         "bytes": 556635,
         "request_attempted": true
       },
@@ -2637,7 +2637,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=browser+GUI+agent+prompt+injection+adversarial+security&limit=80",
-        "retrieved_at": "2026-11-06T04:18:24Z",
+        "retrieved_at": "2026-11-06T06:25:39Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -2746,13 +2746,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+human+collaboration+clarification+intervention&limit=80",
-        "retrieved_at": "2026-11-06T04:18:25Z",
+        "retrieved_at": "2026-11-06T06:25:40Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=GUI+agent+human+collaboration+clarification+intervention&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "ff0cfa423f7b4eb557140583891f16762d2ce16ef54270c241dd373b8df51a10",
+        "sha256": "ce9f0e2f62c8454b88919ea78d07258cd25ada28d33bfbc29d2be3d86dc27fff",
         "bytes": 516768,
         "request_attempted": true
       },
@@ -2855,7 +2855,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+efficiency+latency+visual+token+compression&limit=80",
-        "retrieved_at": "2026-11-06T04:18:26Z",
+        "retrieved_at": "2026-11-06T06:25:41Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -2964,13 +2964,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=open+source+GUI+model+computer+use+checkpoint&limit=80",
-        "retrieved_at": "2026-11-06T04:18:27Z",
+        "retrieved_at": "2026-11-06T06:25:42Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=open+source+GUI+model+computer+use+checkpoint&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "715118c85368459d724dd679090015377d9f1813aada0490ff0eeeea2a4262f0",
+        "sha256": "0a10f3351ab166084775f5e8133e91eb10c73bfd6589b574778c34eb558693b9",
         "bytes": 554656,
         "request_attempted": true
       },
@@ -3073,13 +3073,13 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=visual+workflow+automation+robotic+process+automation+agents&limit=80",
-        "retrieved_at": "2026-11-06T04:18:28Z",
+        "retrieved_at": "2026-11-06T06:25:43Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
         "final_url": "https://huggingface.co/api/papers/search?q=visual+workflow+automation+robotic+process+automation+agents&limit=80",
         "content_type": "application/json; charset=utf-8",
-        "sha256": "dba9c9aa2e71c73752c27f5674ef9761db30360d353c55b2d164857f159b1042",
+        "sha256": "16be8053b95769a30bbe5b2615e3847d1459b4b0a79da9dd015fdc3b807bb26d",
         "bytes": 550620,
         "request_attempted": true
       },
@@ -3182,7 +3182,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=multilingual+GUI+agent+interface+grounding&limit=80",
-        "retrieved_at": "2026-11-06T04:18:29Z",
+        "retrieved_at": "2026-11-06T06:25:44Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -3291,7 +3291,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=GUI+agent+software+testing+interface+exploration&limit=80",
-        "retrieved_at": "2026-11-06T04:18:30Z",
+        "retrieved_at": "2026-11-06T06:25:45Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,
@@ -3400,7 +3400,7 @@
       "scope": "Ranked search windows for candidate discovery, not exhaustive field coverage or editorial approval.",
       "evidence": {
         "url": "https://huggingface.co/api/papers/search?q=%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2+%E6%99%BA%E8%83%BD%E4%BD%93+%E6%89%8B%E6%9C%BA+%E7%94%B5%E8%84%91%E6%93%8D%E4%BD%9C&limit=80",
-        "retrieved_at": "2026-11-06T04:18:31Z",
+        "retrieved_at": "2026-11-06T06:25:46Z",
         "ok": true,
         "request_attempts": 1,
         "status": 200,

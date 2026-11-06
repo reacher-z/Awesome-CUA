@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "7c625a177b3c2b13bdc8ad2c110681ae1f5a8d9a31813319440c36d32c04f332",
-  "observation_snapshot_sha256": "be8731c5466b7a07935f1cb733871cf7f1cd9f71057443a7fa3fd8d39f0a1daf",
+  "manifest_sha256": "66d052a84d86385e25a58f7f69e78b2d73df04ecbd6cf07f455c8cf116e4d799",
+  "observation_snapshot_sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -39,7 +39,7 @@
       ]
     },
     "current_epoch_id": "epoch:cb7440a35b150c9678e2a329",
-    "deferred_until": "2026-11-06T04:20:34.677563+00:00",
+    "deferred_until": "2026-11-06T06:28:07.526737+00:00",
     "epochs": [
       {
         "configuration": {
@@ -2922,11 +2922,48 @@
           }
         },
         "id": "0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498"
+      },
+      {
+        "active_records": 2490,
+        "curated_records": 1674,
+        "existing_seed_count": 738,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8038153,
+            "sha256": "92f101d0cb627a8dcad1ab200e01d0b8b78ec601660a5bbc182d2a0a03469c6d"
+          },
+          "catalog.jsonl": {
+            "bytes": 6848200,
+            "sha256": "9fb411d9a28b68ac362fb87f3e1c5bb469365ad3ac33e34bd3dc07b231e87dbe"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3393870,
+            "sha256": "e291eb2c4e2ff6edf45c27349f91e0d13936867f80ef358bb33c50b1776b24e9"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "input_id": "3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "kind": "existing",
+        "last_attempt": 695,
+        "next_index": 33,
+        "seed_count": 738,
+        "status": "pending"
+      },
       {
         "id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
         "input_id": "0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
@@ -2934,7 +2971,7 @@
         "last_attempt": 690,
         "next_index": 29,
         "seed_count": 738,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:4c5b9e60266d98215ee1bfe6e478acc239d9a4395c2c95f5695e0f00803441bc",
@@ -25223,14 +25260,14 @@
         "id": "search:63e514e0fcce11d29b3c0edf",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 696,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:mobile-agents is:public fork:false created:2026-11-05..2026-11-06",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "mobile-agents",
         "total_changed": false
       },
@@ -25240,14 +25277,14 @@
         "id": "search:1a521864c0f710571f434878",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 697,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:android-agent is:public fork:false created:2026-11-05..2026-11-06",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "android-agent",
         "total_changed": false
       },
@@ -25257,14 +25294,14 @@
         "id": "search:a3d49237f170447952f26d05",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 698,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:phone-use is:public fork:false created:2026-11-05..2026-11-06",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "phone-use",
         "total_changed": false
       },
@@ -25274,14 +25311,14 @@
         "id": "search:b973ee16982dd0bdfd7ee2a0",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 699,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:mobile-use is:public fork:false created:2026-11-05..2026-11-06",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "mobile-use",
         "total_changed": false
       },
@@ -25291,14 +25328,14 @@
         "id": "search:5df628d54b3d012b3e70c7fc",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 700,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:screen-understanding is:public fork:false created:2026-11-05..2026-11-06",
         "rejected_rows": 0,
-        "reported_total": null,
+        "reported_total": 0,
         "seen_repository_ids": [],
-        "status": "pending",
+        "status": "observed_pages_exhausted",
         "topic": "screen-understanding",
         "total_changed": false
       },
@@ -25308,7 +25345,7 @@
         "id": "search:9313be3e9f05f200ee9fdefa",
         "incomplete_results_seen": false,
         "kind": "search",
-        "last_attempt": 0,
+        "last_attempt": 701,
         "next_page": 1,
         "parent_id": null,
         "query": "topic:ui-agent is:public fork:false created:2026-11-05..2026-11-06",
@@ -75129,6 +75166,214 @@
         "run_id": "run:83b316b3e2b9dc50f285e916",
         "source_url": null,
         "status": 403
+      },
+      {
+        "accepted_repository_ids": [
+          783188590
+        ],
+        "finished_at": "2026-11-06T06:26:09.140422+00:00",
+        "id": "receipt:12a8665876ca4ff508f25a979f55efe1241f7377f20e87be2509a17e6829e9fa",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 30,
+        "query_id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "8d03c05c11bea751346f3dac413c32eb0bc1b0fc6d2003ec29406f0e47b38f6c",
+        "requested_at": "2026-11-06T06:26:08.853187+00:00",
+        "response_bytes": 6910,
+        "response_sha256": "00399f1d61f6f4707e00b5bf92124eadb665d2525ae13659bea886773b017c8e",
+        "returned_count": 1,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/repos/berkeley-nlp/agent-eval-refine",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          891877040
+        ],
+        "finished_at": "2026-11-06T06:26:15.589492+00:00",
+        "id": "receipt:be486eac6ffdbe703f7e9a922c6a63ce9ee108212ce7f441d3df3cd073f3ec52",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 31,
+        "query_id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "1229312c6587abd04c2d51255705ce79d5f5a7219a2d95a64a61339dcfb992c6",
+        "requested_at": "2026-11-06T06:26:15.373708+00:00",
+        "response_bytes": 5011,
+        "response_sha256": "696363a5d66c56b263a73fb731242492e8e21f4e1d36612754335a8535409069",
+        "returned_count": 1,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/repos/bigtaige/mp-gui",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          787853884
+        ],
+        "finished_at": "2026-11-06T06:26:22.137110+00:00",
+        "id": "receipt:a5def69c384d1195ad0d9620dd2b4f57ef63e609936847fbf0ccf5c4884ba880",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 32,
+        "query_id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "63d1dfebc1706c6d6cf88b106e0190c005baa9ffb197922c4c3b792e84094d85",
+        "requested_at": "2026-11-06T06:26:21.880942+00:00",
+        "response_bytes": 5326,
+        "response_sha256": "73eb622478b213c61ee803c65ff43f5f1f9a7ef7920783fdad66ade0eaf3b5a0",
+        "returned_count": 1,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/repos/boxworld18/openwebagent",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:26:28.743204+00:00",
+        "id": "receipt:4647e0dc7db2f9699760b60f629e5e92f85950b8102233d54373cc019e2322f6",
+        "incomplete_results": null,
+        "outcome": "quarantined",
+        "position": 33,
+        "query_id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "raw_body_retained": false,
+        "rejected_rows": {
+          "fork_or_unknown": 1
+        },
+        "reported_total": null,
+        "request_url_sha256": "98717661d8d09985db7e179975d41be72311d922649a527e9cdc36dc44701124",
+        "requested_at": "2026-11-06T06:26:28.388134+00:00",
+        "response_bytes": 17277,
+        "response_sha256": "5bb91359c87b58578177446b5181ea8cbcb63a001aae01d91833ab5a8abeb153",
+        "returned_count": 1,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": null,
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:26:35.143979+00:00",
+        "id": "receipt:9e64b0cde29958dc197e1eb969c423bf5f019559de207639867a7205bd6e34d2",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:63e514e0fcce11d29b3c0edf",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "4cf13fa9facab28547b1beeb27f96e731a489348ffba8cff0bb5cb1b26c50666",
+        "requested_at": "2026-11-06T06:26:34.895521+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Amobile-agents+is%3Apublic+fork%3Afalse+created%3A2026-11-05..2026-11-06&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:26:41.654229+00:00",
+        "id": "receipt:a8c1ba20f656af8dd1c3b83bad74cd18c321064e55d7bd85e9b92d11f620aadc",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:1a521864c0f710571f434878",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "9eff5c75b9d2adef1d340dfffdaf44d57683a687c37a65325863875466b75052",
+        "requested_at": "2026-11-06T06:26:41.402766+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-agent+is%3Apublic+fork%3Afalse+created%3A2026-11-05..2026-11-06&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:26:48.162393+00:00",
+        "id": "receipt:b2279f267695520554501c884f5bc0d1c36a37a92a1b52ac38c2f5873f6577c1",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:a3d49237f170447952f26d05",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "cb9ccd911b3a1889c6b3ac3bab322b5b4a80726517a58ce23056ce0bf2f0834c",
+        "requested_at": "2026-11-06T06:26:47.909906+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Aphone-use+is%3Apublic+fork%3Afalse+created%3A2026-11-05..2026-11-06&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:26:54.655785+00:00",
+        "id": "receipt:2e68f8a044a5da279cb2c13e3bc7954c6194ba83fa7a31883ded8a6729d7a2db",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:b973ee16982dd0bdfd7ee2a0",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "8b72ecd17de3f4cbadeaacbc84dbc99b99f1eafd94a2e678d373d27989cc23d5",
+        "requested_at": "2026-11-06T06:26:54.417118+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Amobile-use+is%3Apublic+fork%3Afalse+created%3A2026-11-05..2026-11-06&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:27:01.142496+00:00",
+        "id": "receipt:1d7e985c3f3a212c7d382c6d3b02d444cacd2692deb7fc253538971f2637d835",
+        "incomplete_results": false,
+        "outcome": "accepted",
+        "position": 1,
+        "query_id": "search:5df628d54b3d012b3e70c7fc",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": 0,
+        "request_url_sha256": "f568aa9c4b735f0d6bd37ad1e06d55925a21e2edc411d4f17ab4d3bcdb8ee114",
+        "requested_at": "2026-11-06T06:27:00.924539+00:00",
+        "response_bytes": 55,
+        "response_sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+        "returned_count": 0,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": "https://api.github.com/search/repositories?q=topic%3Ascreen-understanding+is%3Apublic+fork%3Afalse+created%3A2026-11-05..2026-11-06&per_page=100&page=1&sort=updated&order=asc",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T06:27:07.526720+00:00",
+        "id": "receipt:288da8f970cca10f34e8b624627081f3c9b3bd63f31d6679c104f33d0b339200",
+        "incomplete_results": null,
+        "outcome": "rate_limited",
+        "position": 1,
+        "query_id": "search:9313be3e9f05f200ee9fdefa",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "e2096bf53d1ba06d030039d1e9450022c0847346bcff82235b3ff81c53cc4f49",
+        "requested_at": "2026-11-06T06:27:07.432126+00:00",
+        "response_bytes": 278,
+        "response_sha256": "de2669fe75966813abc8b92252f81133e6d636ed0dc4cab3c7c2b153ca56d5f8",
+        "returned_count": null,
+        "run_id": "run:cf49a2d5c3ad0bee08bd434f",
+        "source_url": null,
+        "status": 403
       }
     ],
     "runs": [
@@ -77415,9 +77660,45 @@
         "strict_replay": true,
         "unknown_requests": 3,
         "wall_seconds_budget": 197.143641159
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10067,
+        "deferred_queries": 4,
+        "deferred_query_ids": [
+          "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+          "search:cf41336e0c72ec4a7d2c872c",
+          "search:44b9dcb284979ca43b2d9578",
+          "search:9313be3e9f05f200ee9fdefa"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T06:27:09.080615+00:00",
+        "id": "run:cf49a2d5c3ad0bee08bd434f",
+        "input_id": "3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
+        "new_unique_repositories": 3,
+        "rejected_rows": {
+          "fork_or_unknown": 1
+        },
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 10,
+        "shared_budget": {
+          "deferred_provider": "api.github.com",
+          "deferred_reason": "provider_cooldown",
+          "reservations_after": 149,
+          "reservations_before": 139,
+          "reservations_charged": 10,
+          "round_id": "1063c6fac3c9443fbb94d4526ff729b5"
+        },
+        "started_at": "2026-11-06T06:26:04.649133+00:00",
+        "status": "rate_limited",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 200.259135875
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "ae591ed8a8eef82b5117e952e26ac5250efa461942a395e8f631791a6414aa44"
+  "state_sha256": "17a30f66361c4d4978c80cfea60723e7b2bfaaf941b76ac02ff7db33747de51e"
 }

@@ -24,7 +24,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 [Read the research survey](https://awesomecua.com/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Records awaiting review](https://img.shields.io/badge/awaiting%20review-1%2C982-606779?style=flat-square&labelColor=303447)](docs/coverage.md) [![Discovered candidates](https://img.shields.io/badge/candidates-1%2C967-606779?style=flat-square&labelColor=303447)](data/review-queue.jsonl) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df?style=flat-square&labelColor=303447)](docs/coverage.md) [![Records awaiting review](https://img.shields.io/badge/awaiting%20review-1%2C982-606779?style=flat-square&labelColor=303447)](docs/coverage.md) [![Discovered candidates](https://img.shields.io/badge/candidates-1%2C970-606779?style=flat-square&labelColor=303447)](data/review-queue.jsonl) [![Catalog checks](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/reacher-z/Awesome-CUA/actions/workflows/catalog.yml) [![MIT license](https://img.shields.io/badge/license-MIT-606779?style=flat-square&labelColor=303447)](LICENSE)
 <!-- BADGES:END -->
 
 [Find by task](#find-by-task) · [Explore](#explore) · [Highlights](#highlights) · [Recently reviewed](#recently-reviewed) · [Use the data](#use-the-data)
@@ -80,7 +80,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **1,674 curated resources** · **1,202 reviewed papers and surveys** · **103 discovery documents**
 
-Evidence through `2026-11-06T00:36:32Z`. Only curated resources are counted above. Listed separately: **1,982 records awaiting review** have bibliographic verification only, and **1,967 discovered candidates** remain unresolved, not counting 165 links reviewed as non-resources or other addresses of indexed resources. 141 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+Evidence through `2026-11-06T00:36:32Z`. Only curated resources are counted above. Listed separately: **1,982 records awaiting review** have bibliographic verification only, and **1,970 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 141 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 
 <!-- STATS:END -->
 

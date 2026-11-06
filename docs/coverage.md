@@ -5,7 +5,7 @@ Evidence snapshot through **2026-11-06T00:36:32Z**. Generated from committed sou
 - 1,674 curated resources. Another 1,982 records await review with bibliographic metadata only; the active catalog file holds 3,656 records in all.
 - 3,184 paper and survey records, including 3,170 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
 - 3,311 retained arXiv metadata records; 141 explicit scope exclusions are outside the active catalog.
-- 5,878 discovery identifiers; 1,967 remain unresolved after accounting for scope exclusions and for 129 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 5,882 discovery identifiers; 1,970 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 49 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -136,12 +136,12 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-06 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-06 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 0 | 0 | 0 | 0 | OK · 2026-11-06 |
-| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 73 | 67 | 0 | 22 | 27 | OK · 2026-11-06 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 73 | 67 | 0 | 15 | 30 | OK · 2026-11-06 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 74 | 53 | 0 | 22 | 21 | OK · 2026-11-06 |
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-06T00:36:31Z; **32/32** query windows succeeded. 1,505 distinct identifiers; 1 new to the candidate queue.
+Latest pass: 2026-11-06T02:20:22Z; **32/32** query windows succeeded. 1,505 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.
 

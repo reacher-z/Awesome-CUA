@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-29 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+30 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (13)](#papers)
+**Contents:** [Publishers (16)](#publishers) · [Papers (14)](#papers)
 
 ## Publishers
 
@@ -42,6 +42,7 @@ All entries in this section: unspecified.
 | 2025‑09‑30 | [SCUBA: Salesforce Computer Use Benchmark](https://arxiv.org/abs/2509.26506) | unspecified | SCUBA evaluates enterprise UI navigation and CRM workflows with 300 task instances derived from Salesforce user interviews. Salesforce sandbox execution and milestone-based assessment support comparisons between zero-shot agents and agents given demonstrations. |
 | 2025‑09‑26 | [RISK: A Framework for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2509.21982) | web | RISK combines browser-interaction training data, a benchmark, and reinforcement fine-tuning for e-commerce risk-management workflows. Its trajectories and rewards distinguish individual actions from multi-step stateful tasks involving deeply embedded web content. |
 | 2025‑09‑17 | [InfraMind: A Novel Exploration-based GUI Agentic Framework for Mission-critical Industrial Management](https://arxiv.org/abs/2509.13704) | unspecified | InfraMind explores industrial management GUIs using virtual-machine snapshots and builds memory for planning and hierarchical state recognition. Its framework also studies knowledge distillation and safety checks on open-source and commercial data-center management platforms. |
+| 2025‑09‑04 | [Are LLM Agents the New RPA? A Comparative Study with RPA Across Enterprise Workflows](https://arxiv.org/abs/2509.04198) | unspecified | Compares an agent using computer interfaces with UiPath RPA on enterprise data entry, monitoring, and document extraction, measuring speed, reliability, and development effort. |
 | 2025‑06‑08 | [BIMgent: Towards Autonomous Building Modeling via Computer-use Agents](https://arxiv.org/abs/2506.07217) | unspecified | BIMgent plans software-specific workflows and executes GUI actions for building-information modeling. It evaluates multimodal building design and reconstruction tasks in professional authoring software. |
 | 2025‑01‑06 | [Beyond Pass or Fail: Multi-Dimensional Benchmarking of Foundation Models for Goal-based Mobile UI Navigation](https://arxiv.org/abs/2501.02863) | unspecified | Sphinx benchmarks foundation models on goal-based mobile UI navigation, using app test cases and a toolkit that identifies different failure modes. |
 | 2024‑07‑22 | [IDA: Breaking Barriers in No-code UI Automation Through Large Language Models and Human-Centric Design](https://arxiv.org/abs/2407.15673) | web | IDA helps business users create web UI automation through guided demonstrations, a semantic programming model, and a teaching-oriented interface. A prototype user study examines automation creation with enterprise applications by users without programming backgrounds. |

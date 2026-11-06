@@ -3836,6 +3836,2071 @@
       "url": "https://arxiv.org/abs/2611.06854",
       "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026): core. Learned spatio-temporal routing of screenshot visual tokens for computer-use agents, matching full-resolution performance on OSWorld and CUA-World. Awaiting an editorial annotation.",
       "cause": "annotation_pending"
+    },
+    {
+      "id": "arxiv:1310.4774",
+      "name": "IntelligentWeb Agent for Search Engines",
+      "url": "https://arxiv.org/abs/1310.4774",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Reviews Internet growth, search engines and crawler or spider programs that harvest web content. Crawling for search indexing is information retrieval, not agents acting on web pages through an interface. The other marked it borderline: Reviews web crawlers, spiders and robots that harvest page content for search engines. It is unclear whether this kind of automated crawling counts as agents acting on web pages or as plain retrieval infrastructure. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2106.13500",
+      "name": "TableSense: Spreadsheet Table Detection with Convolutional Neural Networks",
+      "url": "https://arxiv.org/abs/2106.13500",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Detects table regions in spreadsheets with a CNN over cell features and active learning. This spreadsheet data-analysis work does not involve agents operating graphical interfaces, web pages or devices. The other marked it borderline: Detects table regions in spreadsheets with a CNN for spreadsheet intelligence; office-document structure analysis with no stated agent or automation use, so its fit as office-automation support is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2302.12173",
+      "name": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+      "url": "https://arxiv.org/abs/2302.12173",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Introduces indirect prompt injection against LLM-integrated apps such as Bing Chat via retrieved content; the abstract does not involve agents navigating or acting on web pages, so its CUA relevance is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2304.08354",
+      "name": "Tool Learning with Foundation Models",
+      "url": "https://arxiv.org/abs/2304.08354",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Surveys tool learning with foundation models, proposes a general tool-use framework and tests 18 tools. The abstract names no web-page, GUI or device operation, so this tool-use survey is outside the catalog's scope. The other marked it borderline: Broad survey and framework of tool learning with foundation models; the abstract does not say whether web browsing or GUI operation is among the tools covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2305.16504",
+      "name": "On the Tool Manipulation Capability of Open-source Large Language Models",
+      "url": "https://arxiv.org/abs/2305.16504",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Improves open-source LLMs at software tool manipulation and introduces a ToolBench for API-style tool use. The abstract names no web-page, GUI, mobile or desktop interaction. The other marked it borderline: Tool-manipulation benchmark and alignment recipe for open LLMs; the abstract describes diverse software tools for real-world tasks without saying whether any involve web or GUI environments or only API calls. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2308.05391",
+      "name": "Enhancing Trust in LLM-Based AI Automation Agents: New Considerations and Future Challenges",
+      "url": "https://arxiv.org/abs/2308.05391",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Reviews trust considerations for LLM-based process automation agents and products; the abstract does not say whether these agents operate GUIs, web pages or only APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2308.09289",
+      "name": "Preference-conditioned Pixel-based AI Agent For Game Testing",
+      "url": "https://arxiv.org/abs/2308.09289",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Pixel-based imitation-learning agent for preference-conditioned game testing in a 3D open-world game. Like other game RL agents, it does not operate GUIs, web pages or devices. The other marked it borderline: Pixel-based imitation-learning agent explores an open-world game for testing, conditioned on demonstrated play styles. The abstract does not say whether it acts through a generic screen and keyboard interface or game controls. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2309.07864",
+      "name": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+      "url": "https://arxiv.org/abs/2309.07864",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Broad survey of LLM-based agents covering brain, perception and action plus single-agent, multi-agent and human-agent settings; the abstract does not say how much it covers web or GUI agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2309.14365",
+      "name": "An In-depth Survey of Large Language Model-based Artificial Intelligence Agents",
+      "url": "https://arxiv.org/abs/2309.14365",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: General survey of LLM-based agents covering planning, memory and tool use; the abstract does not indicate whether web or GUI agents are covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2310.06830",
+      "name": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "url": "https://arxiv.org/abs/2310.06830",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Lemur is an open LLM tuned on text and code as a language-agent backbone; it is evaluated in interactive agent environments, but the abstract never says whether any involve web or GUI tasks. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2310.12823",
+      "name": "AgentTuning: Enabling Generalized Agent Abilities for LLMs",
+      "url": "https://arxiv.org/abs/2310.12823",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Instruction-tunes Llama 2 on general agent interaction trajectories while preserving general abilities. The abstract names no web, GUI or device environment, so it is generic agent training. The other marked it borderline: Instruction-tunes Llama 2 on agent interaction trajectories for generalized agent tasks; the abstract does not name the environments, so whether web, OS or GUI tasks are included is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2310.12945",
+      "name": "3D-GPT: Procedural 3D Modeling with Large Language Models",
+      "url": "https://arxiv.org/abs/2310.12945",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract uses LLM agents to turn scene descriptions into procedural-generation parameters for 3D software such as Blender. This 3D content-creation work does not involve agents operating graphical interfaces, web pages or devices. The other marked it borderline: LLM agents perform instruction-driven procedural 3D modeling and drive Blender for asset creation; unclear whether controlling 3D software through code counts as application automation or falls outside as 3D content generation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2311.10538",
+      "name": "Testing Language Model Agents Safely in the Wild",
+      "url": "https://arxiv.org/abs/2311.10538",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Safety monitor for testing autonomous agents such as AutoGPT on the open internet; the abstract does not specify whether the agents browse web pages, use a GUI or only call tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2311.18492",
+      "name": "CLS-CAD: Synthesizing CAD Assemblies in Fusion 360",
+      "url": "https://arxiv.org/abs/2311.18492",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Fusion 360 plugin that synthesizes CAD assembly programs through the application's API; unclear whether this CAD design synthesis counts as application automation for the catalog. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2312.03815",
+      "name": "LLM as OS, Agents as Apps: Envisioning AIOS, Agents and the AIOS-Agent Ecosystem",
+      "url": "https://arxiv.org/abs/2312.03815",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Vision paper framing LLMs as an operating system and agents as apps; the OS and app terms are analogies, and coverage of GUI or computer-use agents is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2312.11671",
+      "name": "Evaluating Language-Model Agents on Realistic Autonomous Tasks",
+      "url": "https://arxiv.org/abs/2312.11671",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Evaluates tool-using LM agents on autonomous replication and adaptation tasks in the real world; the abstract does not say whether they act through browsers, terminals or other interfaces. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2401.03428",
+      "name": "Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects",
+      "url": "https://arxiv.org/abs/2401.03428",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Broad survey of LLM-based single and multi-agent systems; the abstract mentions general task assistants and applications but not whether GUI or web agents are covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2401.03568",
+      "name": "Agent AI: Surveying the Horizons of Multimodal Interaction",
+      "url": "https://arxiv.org/abs/2401.03568",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of multimodal agents acting in physical and virtual environments; the abstract centers on embodied action and does not say whether GUI or web agents are covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2401.05459",
+      "name": "Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security",
+      "url": "https://arxiv.org/abs/2401.05459",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of personal LLM agents integrated with personal data and devices such as smartphones; the abstract does not say whether it covers GUI-based device operation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2401.10019",
+      "name": "R-Judge: Benchmarking Safety Risk Awareness for LLM Agents",
+      "url": "https://arxiv.org/abs/2401.10019",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Benchmark of agent interaction records for judging safety risks across five application categories; the abstract does not say whether any records involve web, app or GUI operation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2402.02716",
+      "name": "Understanding the planning of LLM agents: A survey",
+      "url": "https://arxiv.org/abs/2402.02716",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey of planning techniques for LLM agents (task decomposition, plan selection, external modules, reflection, memory); the abstract does not say whether web, GUI or computer-use agents are among the covered work. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2402.09052",
+      "name": "L3GO: Language Agents with Chain-of-3D-Thoughts for Generating Unconventional Objects",
+      "url": "https://arxiv.org/abs/2402.09052",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Language agent builds 3D meshes by trial and error through Blender API calls; it is mainly 3D generation, and whether this application automation via API counts as adjacent is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2402.15116",
+      "name": "Large Multimodal Agents: A Survey",
+      "url": "https://arxiv.org/abs/2402.15116",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Surveys large multimodal agents, their components, collaboration and evaluation; the abstract does not say how much it covers GUI, web or mobile agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2402.17896",
+      "name": "Researchy Questions: A Dataset of Multi-Perspective, Decompositional Questions for LLM Web Agents",
+      "url": "https://arxiv.org/abs/2402.17896",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Dataset of non-factoid research questions mined from search logs and pitched at LLM web agents; the abstract evaluates answering strategies rather than agents that browse pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2402.19446",
+      "name": "ArCHer: Training Language Model Agents via Hierarchical Multi-Turn RL",
+      "url": "https://arxiv.org/abs/2402.19446",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Hierarchical multi-turn RL framework for LLM agents; web interaction is named only as an example use case and the abstract does not identify its evaluation tasks. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2403.01248",
+      "name": "SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code",
+      "url": "https://arxiv.org/abs/2403.01248",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: LLM agent writes Blender Python scripts to build 3D scenes; it automates a desktop application only through its scripting API, so whether this counts as application automation or 3D generation is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2403.09333",
+      "name": "Griffon v2: Advancing Multimodal Perception with High-Resolution Scaling and Visual-Language Co-Referring",
+      "url": "https://arxiv.org/abs/2403.09333",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: High-resolution generalist VLM for object referring; GUI agents are named only as a motivating domain and reported results cover REC, detection and counting, not GUI tasks. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2403.10249",
+      "name": "A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges",
+      "url": "https://arxiv.org/abs/2403.10249",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey of large-model agents for complex games; the abstract does not say whether it covers agents playing through screenshots and keyboard or mouse, or only game-specific APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2404.01744",
+      "name": "Octopus v2: On-device language model for super agent",
+      "url": "https://arxiv.org/abs/2404.01744",
+      "reason": "Relevance screening of the complete arXiv v7 abstract (5 November 2026) could not settle the scope: On-device function-calling model for agents; the abstract mentions edge devices and software workflows but not whether the calls automate phone apps or generic APIs, so its relation to device automation is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2404.04902",
+      "name": "AI2Apps: A Visual IDE for Building LLM-based AI Agent Applications",
+      "url": "https://arxiv.org/abs/2404.04902",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Visual IDE for building LLM agent applications; a plugin for human-like web browsing is showcased, but the abstract gives no evaluation of web or GUI interaction. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2404.11459",
+      "name": "Octopus v3: Technical Report for On-device Sub-billion Multimodal AI Agent",
+      "url": "https://arxiv.org/abs/2404.11459",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Sub-billion on-device multimodal model with functional tokens for agent applications; the abstract does not say whether its actions are API function calls only or operate device or app interfaces. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2405.15793",
+      "name": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "url": "https://arxiv.org/abs/2405.15793",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Designs an agent-computer interface for repository-level coding on SWE-bench; the agent works through custom shell-style commands, so it sits between out-of-scope coding agents and adjacent terminal computer use. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2405.16247",
+      "name": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "url": "https://arxiv.org/abs/2405.16247",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: LLM agents build rule-based manuals through environment interaction; web navigation is mentioned only as an example domain and the abstract reports results only on ALFWorld. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2406.11342",
+      "name": "KAOS: Large Model Multi-Agent Operating System",
+      "url": "https://arxiv.org/abs/2406.11342",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Proposes a Kylin-based multi-agent operating system in which LLM agents serve or replace application software; the abstract does not say whether the agents operate GUIs, terminals or only internal system APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2406.13352",
+      "name": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "url": "https://arxiv.org/abs/2406.13352",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Prompt-injection environment for tool-calling agents; tasks include navigating an e-banking website and travel booking, but the abstract frames interaction as tool calls, so it is unclear whether real web pages are operated. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2406.20041",
+      "name": "BMW Agents -- A Framework For Task Automation Through Multi-Agent Collaboration",
+      "url": "https://arxiv.org/abs/2406.20041",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract describes a multi-agent planning and execution framework for industrial task automation. RPA is only named as a possible application and no GUI, web or desktop interaction is described, so this generic framework is outside scope. The other marked it borderline: Generic multi-agent task-automation framework for industrial use; it names robotic process automation as a target application but does not say whether agents operate GUIs, desktop software or only APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2407.01502",
+      "name": "AI Agents That Matter",
+      "url": "https://arxiv.org/abs/2407.01502",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Critique of agent benchmarking practice (cost, holdouts, reproducibility); the abstract does not name the benchmarks analyzed or say whether web or GUI agents are covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2407.09025",
+      "name": "SpreadsheetLLM: Encoding Spreadsheets for Large Language Models",
+      "url": "https://arxiv.org/abs/2407.09025",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: SpreadsheetLLM compresses spreadsheets into compact encodings for LLM table detection and QA. This data-understanding work does not automate or operate spreadsheet applications, web pages or devices. The other marked it borderline: Encodes spreadsheet content compactly for LLM table detection and spreadsheet QA; unclear whether spreadsheet understanding without operating the application fits the office-automation precedent or is general table NLP. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2407.11691",
+      "name": "VLMEvalKit: An Open-Source Toolkit for Evaluating Large Multi-Modality Models",
+      "url": "https://arxiv.org/abs/2407.11691",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Open evaluation toolkit for multimodal models; GUI grounding appears as one of several listed evaluation areas, so it is unclear whether screen understanding is a material part. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2408.09071",
+      "name": "Me want cookie! Towards automated and transparent data governance on the Web",
+      "url": "https://arxiv.org/abs/2408.09071",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Proposes policy languages so browsers can enforce users' cookie and data-use preferences. This web privacy-governance vision has no agent that reads or operates web pages; Web agents appear only as future users. The other marked it borderline: Vision for policy-language cookie governance that browsers enforce on users' behalf, citing Web agents only as a future user. Unclear whether any agent acting on web pages is involved. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2408.15769",
+      "name": "A Survey on Evaluation of Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2408.15769",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract surveys evaluation tasks, benchmarks and metrics for multimodal LLMs; AI agents appear only as one item in a long list. This general MLLM review has no GUI or screen focus. The other marked it borderline: Surveys MLLM evaluation and lists AI-agent applications among many domains; the abstract does not say whether GUI or web agent benchmarks are covered or to what extent. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2409.00608",
+      "name": "TinyAgent: Function Calling at the Edge",
+      "url": "https://arxiv.org/abs/2409.00608",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Small function-calling models drive a local MacBook assistant that executes user commands; the abstract does not say which desktop applications the calls automate or whether any interface is operated. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2409.04465",
+      "name": "Here's Charlie! Realising the Semantic Web vision of Agents in the age of LLMs",
+      "url": "https://arxiv.org/abs/2409.04465",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Semi-autonomous Semantic Web agents act online for users with N3 rules and LLM dialogue; the abstract does not say whether they operate web pages or only exchange data with other agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2409.08831",
+      "name": "Breaking reCAPTCHAv2",
+      "url": "https://arxiv.org/abs/2409.08831",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Solves reCAPTCHAv2 image challenges with YOLO models and studies how browser cookies and history affect bot detection; relevant to automated web bots, but the abstract centers on image classification, not agents acting on pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2409.18142",
+      "name": "A Survey on Multimodal Benchmarks: In the Era of Large AI Models",
+      "url": "https://arxiv.org/abs/2409.18142",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Surveys 211 benchmarks for multimodal LLMs across understanding, reasoning, generation and application. This general benchmark survey indicates no GUI, screen or agent-interaction coverage. The other marked it borderline: Surveys 211 MLLM benchmarks spanning understanding, reasoning, generation and application; the abstract does not say whether GUI, screen-understanding or web-agent benchmarks are among those covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2410.11843",
+      "name": "From Commands to Prompts: LLM-based Semantic File System for AIOS",
+      "url": "https://arxiv.org/abs/2410.11843",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: LLM-based semantic file system that lets users or agents manage files by natural-language prompts through APIs and syscalls; it is OS infrastructure rather than an agent operating interfaces, so its fit is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2410.21220",
+      "name": "Vision Search Assistant: Empower Vision-Language Models as Multimodal Search Engines",
+      "url": "https://arxiv.org/abs/2410.21220",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Pairs VLMs with web agents for open-world retrieval-augmented visual QA; the abstract does not say whether the web agent opens and reads pages or only calls a search API. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2411.09523",
+      "name": "Navigating the Risks: A Survey of Security, Privacy, and Ethics Threats in LLM-Based Agents",
+      "url": "https://arxiv.org/abs/2411.09523",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey of security, privacy and ethics threats to LLM-based agents; the abstract does not say whether web, GUI or computer-use agents are among the covered agents or its four case studies. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2412.10380",
+      "name": "Challenges in Human-Agent Communication",
+      "url": "https://arxiv.org/abs/2412.10380",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Position paper on communication challenges between users and autonomous tool-using agents; the abstract does not say whether the agents it considers operate GUIs, web pages or only tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2412.14203",
+      "name": "BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement",
+      "url": "https://arxiv.org/abs/2412.14203",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Fine-tunes LLMs to write Blender CAD scripts; it is application scripting with no GUI agent, falling between code generation and application automation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2412.20206",
+      "name": "Toward Visual Grounding: A Survey",
+      "url": "https://arxiv.org/abs/2412.20206",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Survey of visual grounding and referring expression comprehension, including grounding multimodal LLMs; the abstract does not say whether GUI or screen grounding is among the covered settings. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2501.02189",
+      "name": "A Survey of State of the Art Large Vision Language Models: Alignment, Benchmark, Evaluations and Challenges",
+      "url": "https://arxiv.org/abs/2501.02189",
+      "reason": "Relevance screening of the complete arXiv v7 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract surveys VLM architectures, benchmarks and post-training through 2026. This general vision-language survey does not name GUI agents, screen understanding or agents operating interfaces. The other marked it borderline: Broad VLM survey that mentions agentic workflows and perception-action loops but emphasizes architectures, OCR, VQA, video and embodied benchmarks; the abstract does not say whether GUI agents or screen understanding are covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2501.06497",
+      "name": "PASS: Presentation Automation for Slide Generation and Speech",
+      "url": "https://arxiv.org/abs/2501.06497",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Generates presentation slides from Word documents and narrates them with synthetic speech. This document-to-slide content generation does not involve agents operating graphical interfaces, web pages or devices. The other marked it borderline: Generates slide decks and narration from Word documents; this is office content automation, but the abstract does not say whether presentation software or slide APIs are operated. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2501.07278",
+      "name": "Lifelong Learning of Large Language Model based Agents: A Roadmap",
+      "url": "https://arxiv.org/abs/2501.07278",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of lifelong learning for LLM agents organized by perception, memory and action modules; the abstract does not say whether web, GUI or mobile agents are among the covered environments. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2502.11221",
+      "name": "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities",
+      "url": "https://arxiv.org/abs/2502.11221",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Surveys LLM planning along six performance criteria; web navigation appears only as an example planning task, so how much the survey covers web agents is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2503.12687",
+      "name": "AI Agents: Evolution, Architecture, and Real-World Applications",
+      "url": "https://arxiv.org/abs/2503.12687",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Review of AI agent paradigms, architectures and enterprise or personal applications; the abstract does not say whether GUI, web or computer-use agents are covered. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2503.17671",
+      "name": "ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation",
+      "url": "https://arxiv.org/abs/2503.17671",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Multi-agent LLM system that writes ComfyUI node workflows from task descriptions; it targets the app's workflow format rather than its interface, so app automation versus code generation is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2503.21889",
+      "name": "StarFlow: Generating Structured Workflow Outputs From Sketch Images",
+      "url": "https://arxiv.org/abs/2503.21889",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Fine-tunes VLMs to turn sketched or rendered workflow diagrams into executable enterprise workflows; unclear whether low-code workflow generation counts as application automation for this catalog. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2504.14348",
+      "name": "Manipulating Multimodal Agents via Cross-Modal Prompt Injection",
+      "url": "https://arxiv.org/abs/2504.14348",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Cross-modal prompt-injection attack on multimodal agents; the abstract does not say whether the targeted agents act in GUIs, web pages or physical settings. An exclusion proposal is open in pull request #4299. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2505.03574",
+      "name": "LlamaFirewall: An open source guardrail system for building secure AI agents",
+      "url": "https://arxiv.org/abs/2505.03574",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: General guardrail framework against prompt injection, misalignment and insecure code in LLM agents; webpages appear only as an untrusted input source, and the abstract does not say whether web or GUI agents are evaluated. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2505.10468",
+      "name": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+      "url": "https://arxiv.org/abs/2505.10468",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Conceptual review contrasting AI agents and agentic AI; its listed applications are non-GUI, and the abstract does not show whether GUI or web agents are covered. An exclusion proposal is open in pull request #4259. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2505.22648",
+      "name": "WebDancer: Towards Autonomous Information Seeking Agency",
+      "url": "https://arxiv.org/abs/2505.22648",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Trains a ReAct web information-seeking agent with browsing data, SFT and RL, evaluated on GAIA and WebWalkerQA; deep-search browsing rather than GUI control. An open pull request (#4145) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2506.01423",
+      "name": "FinRobot: Generative Business Process AI Agents for Enterprise Resource Planning in Finance",
+      "url": "https://arxiv.org/abs/2506.01423",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: LLM multi-agent framework automating ERP finance workflows such as wire transfers; the abstract does not say whether agents operate ERP interfaces or only back-end services. An exclusion proposal is open in pull request #4155. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2506.04301",
+      "name": "The Cost of Dynamic Reasoning: Demystifying AI Agents and Test-Time Scaling from an AI Infrastructure Perspective",
+      "url": "https://arxiv.org/abs/2506.04301",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Measures resource use, latency, energy and datacenter power of tool-using LLM agents under test-time scaling. This AI infrastructure analysis does not involve agents operating graphical interfaces, web pages or devices. An open pull request (#4237) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2506.05336",
+      "name": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
+      "url": "https://arxiv.org/abs/2506.05336",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Video pointing model whose new benchmark lists Video-GUI Interaction as one of five scenarios; the abstract gives no GUI-specific detail, so it is unclear whether screen understanding is a material part. An curation proposal is open in pull request #4219. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2506.11763",
+      "name": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents",
+      "url": "https://arxiv.org/abs/2506.11763",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of 100 PhD-level tasks for deep research agents that explore the web and write cited reports, with report and citation evaluation methods. An open pull request (#4095) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2506.18959",
+      "name": "From Web Search towards Agentic Deep Research: Incentivizing Search with Reasoning Agents",
+      "url": "https://arxiv.org/abs/2506.18959",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Position survey on agentic deep research that moves from static web search to reasoning agents; the abstract stresses iterative retrieval and does not say whether covered agents browse and read pages. An exclusion proposal is open in pull request #4023. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2507.02592",
+      "name": "WebSailor: Navigating Super-human Reasoning for Web Agent",
+      "url": "https://arxiv.org/abs/2507.02592",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Post-trains open web agents for hard information seeking with synthetic high-uncertainty tasks and agentic RL, targeting BrowseComp-style browsing. An open pull request (#4111) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2507.02825",
+      "name": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+      "url": "https://arxiv.org/abs/2507.02825",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Proposes a checklist for rigorous agentic benchmark design; its examples are coding, customer-service and security benchmarks, and the abstract does not say whether web or GUI agent benchmarks are among those assessed. An curation proposal is open in pull request #4193. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2507.10644",
+      "name": "From Multi-Agent Systems and the Semantic Web to Agentic AI: A Unified Narrative of the Web of Agents",
+      "url": "https://arxiv.org/abs/2507.10644",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Narrative survey tracing the Web of Agents from multi-agent systems and the Semantic Web to LLM agents and protocols; computer-use agents are among the classified systems, but their share of coverage is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.05748",
+      "name": "WebWatcher: Breaking New Frontier of Vision-Language Deep Research Agent",
+      "url": "https://arxiv.org/abs/2508.05748",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Multimodal deep-research web agent trained on synthetic trajectories with RL, plus BrowseComp-VL, a browsing benchmark mixing visual and textual information seeking. An open pull request (#4073) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.06960",
+      "name": "DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery",
+      "url": "https://arxiv.org/abs/2508.06960",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks deep-research and search agents on discovering datasets that meet user demands; the abstract does not say whether agents browse web pages or only call search tools. An exclusion proposal is open in pull request #4033. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.07999",
+      "name": "WideSearch: Benchmarking Agentic Broad Info-Seeking",
+      "url": "https://arxiv.org/abs/2508.07999",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for agentic broad information seeking by search agents; the abstract does not say whether agents open and read web pages or only query search tools. An exclusion proposal is open in pull request #4185. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.08228",
+      "name": "LL3M: Large Language 3D Modelers",
+      "url": "https://arxiv.org/abs/2508.08228",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Multi-agent LLM system that writes Blender Python code to generate and edit 3D assets. This 3D content generation through code does not involve agents operating graphical interfaces or web pages. The other marked it borderline: LLM agents build 3D assets by writing and debugging Blender Python scripts; unclear whether script-driven 3D content creation counts as application automation (adjacent) or plain graphics code generation (out of scope). An exclusion proposal is open in pull request #4017. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.13167",
+      "name": "Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation and Agentic RL",
+      "url": "https://arxiv.org/abs/2508.13167",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Distills multi-agent systems into single agent foundation models refined with agentic RL, reporting results in web-agent and code-agent settings; web agents are one of the evaluated settings. An open pull request (#4105) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.15804",
+      "name": "ReportBench: Evaluating Deep Research Agents via Academic Survey Tasks",
+      "url": "https://arxiv.org/abs/2508.15804",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark for Deep Research agents that browse the web to write survey-style reports, scoring citation quality and statement faithfulness against web sources. An open pull request (#4097) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.16153",
+      "name": "Memento: Fine-tuning LLM Agents without Fine-tuning LLMs",
+      "url": "https://arxiv.org/abs/2508.16153",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Case-based memory RL for LLM agents instantiated as a deep-research agent and evaluated on GAIA and DeepResearcher web research tasks; page browsing is implied rather than detailed. An open pull request (#4063) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.20410",
+      "name": "UI-Bench: A Benchmark for Evaluating Design Capabilities of AI Text-to-App Tools",
+      "url": "https://arxiv.org/abs/2508.20410",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Benchmarks the visual design quality of websites produced by AI text-to-app tools through expert pairwise judgments; UI design evaluation rather than agents operating interfaces. An open pull request (#4031) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.02547",
+      "name": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+      "url": "https://arxiv.org/abs/2509.02547",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Survey of agentic RL for LLMs organized by capabilities and application domains; the abstract does not say how much it covers GUI or web agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.05831",
+      "name": "Decoding Latent Attack Surfaces in LLMs: Prompt Injection via HTML in Web Summarization",
+      "url": "https://arxiv.org/abs/2509.05831",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Dataset of web pages with prompt injections hidden in HTML attributes such as meta, aria-label and alt, fed through a browser automation pipeline to LLM summarizers; web-content security, not agents acting on pages. An open pull request (#4021) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.06501",
+      "name": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
+      "url": "https://arxiv.org/abs/2509.06501",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Synthesizes hard information-seeking queries through exploration to train a long-horizon web agent, evaluated on browsing benchmarks such as BrowseComp and WebWalkerQA. An open pull request (#4005) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.09321",
+      "name": "Towards Adaptive ML Benchmarks: Web-Agent-Driven Construction, Domain Expansion, and Metric Optimization",
+      "url": "https://arxiv.org/abs/2509.09321",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark for ML-engineering agents whose tasks are gathered from Kaggle-like platforms by a browser-automation web agent; the web agent is a construction tool, not the evaluated subject. An curation proposal is open in pull request #4089. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.10345",
+      "name": "Towards Understanding Visual Grounding in Visual Language Models",
+      "url": "https://arxiv.org/abs/2509.10345",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of visual grounding in general-purpose VLMs that mentions control in simulated and real environments; the abstract does not say whether GUI grounding is covered. An curation proposal is open in pull request #3961. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.23694",
+      "name": "SafeSearch: Automated Red-Teaming of LLM-Based Search Agents",
+      "url": "https://arxiv.org/abs/2509.23694",
+      "reason": "Relevance screening of the complete arXiv v6 abstract (5 November 2026) could not settle the scope: Automated red-teaming of LLM search agents fed unreliable search results; the abstract does not say whether these agents open and read web pages or only consume search-API results. An exclusion proposal is open in pull request #3975. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2509.25693",
+      "name": "ScheduleMe: Multi-Agent Calendar Assistant",
+      "url": "https://arxiv.org/abs/2509.25693",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Multi-agent conversational assistant that manages Google Calendar events from natural language; the abstract does not say whether it acts through the calendar interface or an API, so its fit as application automation is unclear. An exclusion proposal is open in pull request #3947. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.00078",
+      "name": "Adaptive and Resource-efficient Agentic AI Systems for Mobile and Embedded Devices: A Survey",
+      "url": "https://arxiv.org/abs/2510.00078",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey of resource-efficient agentic AI on mobile and embedded devices; GUI agents appear only among motivating applications, so how much it covers them is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.00172",
+      "name": "DRBench: A Realistic Benchmark for Enterprise Deep Research",
+      "url": "https://arxiv.org/abs/2510.00172",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Enterprise deep research benchmark spanning productivity software, cloud files, email, chat and the open web; the abstract does not say whether agents operate these apps or query them through APIs. An curation proposal is open in pull request #3909. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.02190",
+      "name": "Dr. Bench: A Multidimensional Evaluation for Deep Research Agents, from Answers to Reports",
+      "url": "https://arxiv.org/abs/2510.02190",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for deep research agents' long-form reports; the abstract mentions cross-source retrieval and web-search tools but does not say whether the agents open and read web pages. An exclusion proposal is open in pull request #3935. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.02608",
+      "name": "Mitigating Modal Imbalance in Multimodal Reasoning",
+      "url": "https://arxiv.org/abs/2510.02608",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract studies cross-modal attention imbalance and a data fix evaluated on vision-language benchmarks. Computer-use agents appear only as motivation; the work makes no GUI or agent-interaction contribution. The other marked it borderline: General study of cross-modal attention imbalance in foundation models; computer-use agents are cited only as motivation, and the abstract does not say whether any GUI or screen data is evaluated. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.05096",
+      "name": "Paper2Video: Automatic Video Generation from Scientific Papers",
+      "url": "https://arxiv.org/abs/2510.05096",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark and multi-agent system that generate academic presentation videos with slide generation and cursor grounding; unclear whether any part amounts to GUI grounding or application automation. An exclusion proposal is open in pull request #3911. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.05156",
+      "name": "VeriGuard: Enhancing LLM Agent Safety via Verified Code Generation",
+      "url": "https://arxiv.org/abs/2510.05156",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Gives LLM agents formally verified safety policies plus runtime action monitoring, motivated by domains like healthcare. Generic agent safety work that names no web-page, GUI or device interaction. An open pull request (#3885) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.10991",
+      "name": "A Survey on Agentic Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2510.10991",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey of agentic multimodal LLMs covering planning, tool use and action in virtual or physical environments; the abstract does not say how much it covers GUI or web agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.13913",
+      "name": "Synthesizing Agentic Data for Web Agents with Progressive Difficulty Enhancement Mechanisms",
+      "url": "https://arxiv.org/abs/2510.13913",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Synthesizes progressively harder QA data to train deep-research web agents that work through online tools, with gains on several web-based benchmarks. An open pull request (#3979) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.19864",
+      "name": "SODBench: A Large Language Model Approach to Documenting Spreadsheet Operations",
+      "url": "https://arxiv.org/abs/2510.19864",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks LLMs on explaining spreadsheet manipulation code in natural language; it relates to spreadsheet automation scripts, but no agent acts on an application, so adjacent versus out of scope is unclear. An curation proposal is open in pull request #3855. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.21652",
+      "name": "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite",
+      "url": "https://arxiv.org/abs/2510.21652",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Scientific-research agent benchmark with production search tools, experiments and data analysis; the abstract does not say whether agents browse web pages or only call literature search APIs. An exclusion proposal is open in pull request #3977. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.23458",
+      "name": "BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents",
+      "url": "https://arxiv.org/abs/2510.23458",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Confidence-guided test-time scaling for LLM search agents; the title says web agents, but the abstract does not say whether they open and read pages or only query search tools. An exclusion proposal is open in pull request #3939. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.23883",
+      "name": "Agentic AI Security: Threats, Defenses, Evaluation, and Open Challenges",
+      "url": "https://arxiv.org/abs/2510.23883",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Survey of agentic AI security threats, benchmarks and defenses that cites web and software environments; how much it covers web or GUI agents is unclear from the abstract. An curation proposal is open in pull request #4011. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.24284",
+      "name": "MCP-Flow: Facilitating LLM Agents to Master Real-World, Diverse and Scaling MCP Tools",
+      "url": "https://arxiv.org/abs/2510.24284",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Builds MCP tool-use data and models; a web agent is used to discover servers, but the trained agents call MCP functions, so it is unclear whether the web component is material. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.24699",
+      "name": "AgentFold: Long-Horizon Web Agents with Proactive Context Management",
+      "url": "https://arxiv.org/abs/2510.24699",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Context-folding method for long-horizon information-seeking web agents, evaluated on the BrowseComp and BrowseComp-ZH browsing benchmarks. An open pull request (#3931) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.25726",
+      "name": "The Tool Decathlon: Benchmarking Language Agents for Diverse, Realistic, and Long-Horizon Task Execution",
+      "url": "https://arxiv.org/abs/2510.25726",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Toolathlon benchmarks agents on 32 real software applications through MCP tools; this application automation via APIs may be adjacent, but no GUI or web-page operation is described. An curation proposal is open in pull request #4035. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.26328",
+      "name": "Agent Skills Enable a New Class of Realistic and Trivially Simple Prompt Injections",
+      "url": "https://arxiv.org/abs/2510.26328",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Shows prompt injections hidden in Agent Skill files that make a coding agent exfiltrate local files or passwords; unclear whether this counts as a computer-operating CLI agent, and no GUI or web interaction is named. An exclusion proposal is open in pull request #3889. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.03690",
+      "name": "The OpenHands Software Agent SDK: A Composable and Extensible Foundation for Production Agents",
+      "url": "https://arxiv.org/abs/2511.03690",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract presents an SDK for building software-development agents with sandboxed execution; VNC and browser views serve human users. This coding-agent infrastructure does not have agents operating GUIs. The other marked it borderline: Software-development agent SDK with sandboxed execution; it mentions VNC and browser workspaces for human interaction, but the abstract does not say whether agents act through GUIs or browsers rather than code and CLI. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.04220",
+      "name": "Opus: A Quantitative Framework for Workflow Evaluation",
+      "url": "https://arxiv.org/abs/2511.04220",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Defines a probabilistic reward and penalty model for scoring workflow quality in automation systems. This formal workflow evaluation work does not involve agents operating interfaces. The other marked it borderline: Defines a reward-and-penalty model for scoring automation workflows; the abstract does not say whether these workflows operate software interfaces (RPA-like) or only orchestrate services. An exclusion proposal is open in pull request #3781. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.04707",
+      "name": "Jailbreaking in the Haystack",
+      "url": "https://arxiv.org/abs/2511.04707",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract jailbreaks long-context LMs by padding harmful goals with benign generated text, tested on HarmBench. Computer-use agents appear only as motivation; no agent operating interfaces is studied. The other marked it borderline: Studies a long-context jailbreak evaluated on HarmBench; computer-use agents appear only as a motivating long-context use case, and the abstract reports no agent or GUI experiments. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.05797",
+      "name": "When AI Meets the Web: Prompt Injection Risks in Third-Party AI Chatbot Plugins",
+      "url": "https://arxiv.org/abs/2511.05797",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Measures prompt-injection risks in website chatbot plugins, including injected third-party page content they scrape; the chatbots do not navigate or act on pages, so the relation to web agents is unclear. An exclusion proposal is open in pull request #3777. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.11332",
+      "name": "UFO3: Weaving the Digital Agent Galaxy",
+      "url": "https://arxiv.org/abs/2511.11332",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: UFO3 orchestrates agents across desktops, servers, phones and edge devices through a task DAG and protocol; the abstract does not say whether the device agents act through GUIs, shells or APIs. An curation proposal is open in pull request #3819. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.17649",
+      "name": "SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios",
+      "url": "https://arxiv.org/abs/2511.17649",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Egocentric video benchmark for operating physical control interfaces such as appliance panels and embedded GUIs; it is embodied rather than screen-based, so its fit with GUI agents is unclear. An exclusion proposal is open in pull request #3815. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2511.21631",
+      "name": "Qwen3-VL Technical Report",
+      "url": "https://arxiv.org/abs/2511.21631",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Technical report on a general vision-language model family with long context and multimodal reasoning. The abstract mentions agentic use only in passing and makes no GUI or screen contribution. The other marked it borderline: General vision-language model report; the abstract envisions agentic decision-making but does not say whether GUI, screen or computer-use tasks are part of the work or its evaluation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.04529",
+      "name": "SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation",
+      "url": "https://arxiv.org/abs/2512.04529",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Multi-agent system that composes editable PPTX decks from scientific papers through a layout library; slide creation via APIs, an office-automation precedent, without GUI operation. An open pull request (#3811) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.06641",
+      "name": "An Index-based Approach for Efficient and Effective Web Content Extraction",
+      "url": "https://arxiv.org/abs/2512.06641",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Structure-aware HTML segmentation with index prediction to extract query-relevant webpage content for web agents and RAG; evaluated only as a RAG step and on extraction accuracy, with no agent browsing or acting on pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.08417",
+      "name": "Attention is All You Need to Defend Against Indirect Prompt Injection Attacks in LLMs",
+      "url": "https://arxiv.org/abs/2512.08417",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Attention-based detection and sanitization defense against indirect prompt injection in LLMs; web agents are named only as an example application, without web-specific evaluation. An exclusion proposal is open in pull request #3791. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.09458",
+      "name": "Architectures for Building Agentic AI",
+      "url": "https://arxiv.org/abs/2512.09458",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Chapter on reliability-oriented architectures for agentic AI; web agents are one category in its taxonomy, but the abstract gives no detail on how far it covers browser or GUI interaction. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.13564",
+      "name": "Memory in the Age of AI Agents",
+      "url": "https://arxiv.org/abs/2512.13564",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: The abstract surveys forms, functions and dynamics of memory in foundation-model agents. This generic agent memory survey names no web-page, GUI, mobile or desktop interaction. An open pull request (#3833) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.21481",
+      "name": "The AI Committee: A Multi-Agent Framework for Automated Validation and Remediation of Web-Sourced Data",
+      "url": "https://arxiv.org/abs/2512.21481",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Multi-agent system that validates and repairs datasets gathered by LLM web agents; the abstract does not say whether the committee agents open and read the source web pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.23044",
+      "name": "Video-Browser: Towards Open-web Agentic Video Browsing",
+      "url": "https://arxiv.org/abs/2512.23044",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Open-web video browsing agent and BrowseComp-style benchmark in which the agent queries video search engines and chooses which videos to inspect; information-seeking browsing rather than GUI operation. An open pull request (#3680) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.01743",
+      "name": "AI Agent Systems: Architectures, Applications, and Evaluation",
+      "url": "https://arxiv.org/abs/2601.01743",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey of AI agent architectures, orchestration and evaluation; the abstract covers tools, APIs, code execution and multimodal perception but does not say whether GUI or web agents are covered. An curation proposal is open in pull request #3742. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.06328",
+      "name": "C-World: A Computer Use Agent Environment Creator",
+      "url": "https://arxiv.org/abs/2601.06328",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Billed as a computer-use agent environment creator, but its action space is unified API tools across 204 applications; the abstract shows no GUI, browser or screen interaction. An exclusion proposal is open in pull request #3649. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.06487",
+      "name": "ArenaRL: Scaling RL for Open-Ended Agents via Tournament-based Relative Ranking",
+      "url": "https://arxiv.org/abs/2601.06487",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Tournament-based ranking RL for open-ended agents with travel-planning and deep-research benchmarks; the abstract does not say whether the agents browse web pages or only call search tools. An exclusion proposal is open in pull request #3593. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.07143",
+      "name": "EZBlender: Efficient 3D Editing with Plan-and-ReAct Agent",
+      "url": "https://arxiv.org/abs/2601.07143",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: VLM agent that edits 3D scenes in Blender with plan-and-ReAct control and a new benchmark; the abstract does not say whether it acts through Blender's GUI or its scripting API. An exclusion proposal is open in pull request #3708. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.08079",
+      "name": "MemoBrain: Executive Memory as an Agentic Brain for Reasoning",
+      "url": "https://arxiv.org/abs/2601.08079",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Executive memory model that prunes and folds reasoning steps for long-horizon tool-augmented agents, evaluated on the web-browsing research benchmarks WebWalker and BrowseComp-Plus along with GAIA. An open pull request (#3557) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.09883",
+      "name": "Beyond Rule-Based Workflows: An Information-Flow-Orchestrated Multi-Agents Paradigm via Agent-to-Agent Communication from CORAL",
+      "url": "https://arxiv.org/abs/2601.09883",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Orchestrates multi-agent systems through agent-to-agent communication instead of fixed workflows, evaluated on GAIA. The abstract names no web-page or GUI interaction. The other marked it borderline: Multi-agent orchestration via agent-to-agent messaging, evaluated on GAIA against OWL; the abstract does not say whether the agents browse web pages or only call tools, so web interaction is unclear. An curation proposal is open in pull request #3728. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.09928",
+      "name": "In-Browser Agents for Search Assistance",
+      "url": "https://arxiv.org/abs/2601.09928",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Client-side browser extension pairing a learned user-behavior model with a small LM for search suggestions; it is unclear whether it reads or acts on pages beyond search assistance. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.10758",
+      "name": "When External Threats Become User Context: Tricking Agents into Accepting Malicious Information",
+      "url": "https://arxiv.org/abs/2601.10758",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Studies how relaying external artifacts inside user requests raises malicious-content adoption by tool-using agents on AgentDojo. This tool-agent safety work names no web, GUI or device interaction. An open pull request (#3738) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.11044",
+      "name": "AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts",
+      "url": "https://arxiv.org/abs/2601.11044",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Long-horizon agent benchmark of 138 real-world tasks graded with visual and functional rubrics in a Docker sandbox; the abstract does not say whether agents use GUIs or browsers or only tools and code. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.17548",
+      "name": "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems",
+      "url": "https://arxiv.org/abs/2601.17548",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: SoK on prompt injection against coding assistants with shell, file system and MCP access; unclear whether this counts as terminal agents operating a computer or as out-of-scope coding-agent security. An exclusion proposal is open in pull request #3589. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.20613",
+      "name": "AgentIF-OneDay: A Task-level Instruction-Following Benchmark for General AI Agents in Daily Scenarios",
+      "url": "https://arxiv.org/abs/2601.20613",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Daily-task instruction-following benchmark for general AI agent products with attachments and file deliverables; the abstract does not say whether the agents work through browsers, GUIs or only APIs. An exclusion proposal is open in pull request #3653. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.22037",
+      "name": "Optimizing Agentic Workflows using Meta-tools",
+      "url": "https://arxiv.org/abs/2601.22037",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: The abstract mines recurring tool-call sequences into deterministic meta-tools to cut LLM calls in agent workflows. This tool-workflow optimization names no web-page, GUI, mobile or desktop interaction. An open pull request (#3724) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.22154",
+      "name": "Exploring Reasoning Reward Model for Agents",
+      "url": "https://arxiv.org/abs/2601.22154",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Reasoning reward model for agentic RL evaluated on 12 benchmarks including GAIA and the WebWalkerQA web-browsing benchmark; browsing is one material setting of a general agent method. An open pull request (#3631) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.03117",
+      "name": "AgentDyn: Are Your Agent Security Defenses Deployable in Real-World Dynamic Environments?",
+      "url": "https://arxiv.org/abs/2602.03117",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Indirect prompt injection benchmark for agent defenses with Shopping, GitHub and Daily Life suites; the abstract does not say whether the agents act through web pages or through tool APIs. An exclusion proposal is open in pull request #3682. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.03255",
+      "name": "LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios",
+      "url": "https://arxiv.org/abs/2602.03255",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Framed as safety for computer-use agents, but its 570 cases run in simulated MCP-style toolkits; the abstract does not show agents operating GUIs, browsers or desktops. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.06052",
+      "name": "A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents",
+      "url": "https://arxiv.org/abs/2602.06052",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Survey of agent memory that names computer use among motivating long-horizon settings; the abstract does not show how much it covers memory for GUI or computer-use agents. An curation proposal is open in pull request #3740. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.06090",
+      "name": "SVRepair: Structured Visual Reasoning for Automated Program Repair",
+      "url": "https://arxiv.org/abs/2602.06090",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Multimodal program repair that parses bug-report screenshots into GUI-element scene graphs for a coding agent on SWE-bench M; UI parsing supports code repair rather than GUI operation. An open pull request (#3666) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.06485",
+      "name": "AgentCPM-Explore: Realizing Long-Horizon Deep Exploration for Edge-Scale Agents",
+      "url": "https://arxiv.org/abs/2602.06485",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Trains a compact 4B agent for long-horizon exploration and reports GAIA results; the abstract does not say whether the agent browses web pages or only calls search and other tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.07918",
+      "name": "CausalArmor: Efficient Indirect Prompt Injection Guardrails via Causal Attribution",
+      "url": "https://arxiv.org/abs/2602.07918",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Selective indirect prompt-injection defense for tool-calling agents tested on AgentDojo and DoomArena; the abstract does not say whether the DoomArena experiments include web-browsing agents or only tool-calling ones. An exclusion proposal is open in pull request #3559. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.11224",
+      "name": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
+      "url": "https://arxiv.org/abs/2602.11224",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Benchmark of LLM agents automating enterprise productivity software through containerized API replicas and code, scored by state diffs; application automation via APIs. An open pull request (#3609) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.11858",
+      "name": "Zooming without Zooming: Region-to-Image Distillation for Fine-Grained Multimodal Perception",
+      "url": "https://arxiv.org/abs/2602.11858",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Distills zoom-in region supervision into MLLMs for fine-grained perception; GUI agent benchmarks are mentioned only briefly among results, so screen understanding is not clearly material. An curation proposal is open in pull request #3519. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.12852",
+      "name": "WebClipper: Efficient Evolution of Web Agents with Graph-based Trajectory Pruning",
+      "url": "https://arxiv.org/abs/2602.12852",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Prunes deep-research web-agent trajectories with a state-graph DAG method to cut tool-call rounds; information-seeking web agents rather than GUI control. An open pull request (#3485) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.13318",
+      "name": "DECKBench: Benchmarking Multi-Agent Frameworks for Academic Slide Generation and Editing",
+      "url": "https://arxiv.org/abs/2602.13318",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks multi-agent systems that generate and edit academic slide decks via HTML; this is content generation rather than operating presentation software, so its fit as office automation is unclear. An exclusion proposal is open in pull request #3541. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.13543",
+      "name": "LiveNewsBench: Evaluating LLM Web Search Capabilities with Freshly Curated News",
+      "url": "https://arxiv.org/abs/2602.13543",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of agentic web search on fresh news that requires multi-hop queries and page visits; browsing research agents rather than GUI operation. An open pull request (#3454) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.14337",
+      "name": "LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces",
+      "url": "https://arxiv.org/abs/2602.14337",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Long-horizon programming benchmark for agents working through command-line interfaces; it is mainly software engineering, and the abstract leaves unclear whether it counts as terminal operation of a computer. An exclusion proposal is open in pull request #3434. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.16666",
+      "name": "Towards a Science of AI Agent Reliability",
+      "url": "https://arxiv.org/abs/2602.16666",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Proposes twelve reliability metrics for AI agents covering consistency, robustness, predictability and safety; the abstract does not name its two benchmarks, so whether any involve web or GUI tasks is unclear. An exclusion proposal is open in pull request #3450. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.22897",
+      "name": "OmniGAIA: Towards Native Omni-Modal AI Agents",
+      "url": "https://arxiv.org/abs/2602.22897",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Omni-modal benchmark and tool-integrated agent for reasoning over video, audio and images. The abstract describes only tool calls and names no web-page browsing, GUI or device interaction. The other marked it borderline: Omni-modal agent benchmark and agent trained for multi-turn tool use on real-world multi-hop queries; the abstract does not say whether the tools include web browsing or page navigation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2602.23166",
+      "name": "AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios",
+      "url": "https://arxiv.org/abs/2602.23166",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for generalist multimodal agents using hybrid tools that include web search, image search and page navigation alongside code; web browsing is one part of the tool mix. An open pull request (#3505) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.01050",
+      "name": "MM-DeepResearch: A Simple and Effective Multimodal Agentic Search Baseline",
+      "url": "https://arxiv.org/abs/2603.01050",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Multimodal deep-research agent trained with search-tool trajectories and an offline search engine; the abstract does not say whether it opens and reads web pages beyond search calls. An exclusion proposal is open in pull request #3311. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.01104",
+      "name": "Egocentric Co-Pilot: Web-Native Smart-Glasses Agents for Assistive Egocentric AI",
+      "url": "https://arxiv.org/abs/2603.01104",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Smart-glasses assistant orchestrating perception and web tools for egocentric QA; its web-native design centres on WebRTC streaming, and the abstract does not say whether it browses or acts on web pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.01152",
+      "name": "DeepResearch-9K: A Challenging Benchmark Dataset of Deep-Research Agent",
+      "url": "https://arxiv.org/abs/2603.01152",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Releases a 9K-question deep-research dataset with agent trajectories and an RL framework for agents that explore the web over many steps and turns to answer multi-hop questions. An open pull request (#3349) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.02795",
+      "name": "VSearcher: Long-Horizon Multimodal Search Agent via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2603.02795",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Trains a multimodal search agent with SFT and RL to use text search, image search and web browsing over long horizons, plus a multimodal search benchmark. An open pull request (#3333) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.07106",
+      "name": "AutoUE: Automated Generation of 3D Games in Unreal Engine via Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2603.07106",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Multi-agent system that builds 3D games through Unreal Engine tools, code synthesis and play-testing commands; unclear whether this tool-based engine automation counts as application automation. An exclusion proposal is open in pull request #3299. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.07853",
+      "name": "SynPlanResearch-R1: Encouraging Tool Exploration for Deep Research with Synthetic Plans",
+      "url": "https://arxiv.org/abs/2603.07853",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: RL-trained research agent with synthetic plans on multi-hop and open-web benchmarks; the abstract does not say whether it opens and reads web pages or only calls search tools. An exclusion proposal is open in pull request #3275. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.10002",
+      "name": "SpreadsheetArena: Decomposing Preference in LLM Generation of Spreadsheet Workbooks",
+      "url": "https://arxiv.org/abs/2603.10002",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Arena for preference evaluation of LLM-generated spreadsheet workbooks; spreadsheet artifacts relate to office automation, but the abstract does not involve operating an application, so its scope fit is unclear. An exclusion proposal is open in pull request #3388. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.16289",
+      "name": "VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents",
+      "url": "https://arxiv.org/abs/2603.16289",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark and agent workflow for multimodal browsing agents that must collect and reason over the visual content of web pages during search; a deep-search browsing setting rather than task execution on sites. An open pull request (#3271) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.16839",
+      "name": "Learning to Present: Inverse Specification Rewards for Agentic Slide Generation",
+      "url": "https://arxiv.org/abs/2603.16839",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: RL environment where LLM agents research topics and produce HTML slide decks through tools, rewarded by rendering, aesthetic and inverse-specification checks; slide generation via code rather than GUI operation. An open pull request (#3277) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.17826",
+      "name": "FailureMem: A Failure-Aware Multimodal Framework for Autonomous Software Repair",
+      "url": "https://arxiv.org/abs/2603.17826",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Multimodal program repair agent that grounds regions of GUI screenshots to fix visual software issues on SWE-bench Multimodal; it reads UI screenshots to produce code fixes rather than operating the interface. An open pull request (#3259) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.20278",
+      "name": "OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis",
+      "url": "https://arxiv.org/abs/2603.20278",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Synthesizes long-horizon deep-research trajectories using search, open and find browser primitives over an offline corpus, training agents evaluated on BrowseComp-Plus, BrowseComp and GAIA. An open pull request (#3307) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.23526",
+      "name": "Plato's Cave: A Human-Centered Research Verification System",
+      "url": "https://arxiv.org/abs/2603.23526",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Research-paper verification system that uses web agents to score claim credibility; the abstract does not say whether these agents browse pages or how they interact with the web. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.27490",
+      "name": "AgentSwing: Adaptive Parallel Context Management Routing for Long-Horizon Web Agents",
+      "url": "https://arxiv.org/abs/2603.27490",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Adaptive parallel context-management routing for long-horizon information-seeking web agents; a deep-search setting rather than GUI operation. An open pull request (#3267) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2603.28407",
+      "name": "MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome",
+      "url": "https://arxiv.org/abs/2603.28407",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark for multimodal deep research systems that audits their search process and final reports; the abstract does not say whether the systems browse web pages or only call search tools. An exclusion proposal is open in pull request #3255. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.00842",
+      "name": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+      "url": "https://arxiv.org/abs/2604.00842",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Environment modeling apps as state machines with navigation so a simulated user can be observed by proactive assistants; the abstract does not say whether the agent acts through app screens or APIs. An curation proposal is open in pull request #3315. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.01194",
+      "name": "AgentWatcher: A Rule-based Prompt Injection Monitor",
+      "url": "https://arxiv.org/abs/2604.01194",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: The abstract detects prompt injection via context attribution and explicit rules, evaluated on tool-use agent benchmarks and long-context datasets. This defense names no web-page, GUI, mobile or desktop interaction. An open pull request (#3295) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.01221",
+      "name": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
+      "url": "https://arxiv.org/abs/2604.01221",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks agents that search device-scale personal file systems to answer user-centric questions; the abstract does not say whether agents act through a desktop GUI, a shell or file-retrieval tools. An exclusion proposal is open in pull request #3458. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.01438",
+      "name": "ClawSafety: \"Safe\" LLMs, Unsafe Agents",
+      "url": "https://arxiv.org/abs/2604.01438",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Safety benchmark for OpenClaw-style personal agents with local-machine privileges, injecting attacks through skill files, emails and web pages; claw-style agents without GUI operation. An open pull request (#3477) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.04503",
+      "name": "Memory Intelligence Agent",
+      "url": "https://arxiv.org/abs/2604.04503",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Memory and planning framework for deep research agents that search and analyze information; the abstract does not say whether the agents open and read web pages or only call search tools. An exclusion proposal is open in pull request #3361. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.05547",
+      "name": "COSMO-Agent: Tool-Augmented Agent for Closed-loop Optimization,Simulation,and Modeling Orchestration",
+      "url": "https://arxiv.org/abs/2604.05547",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Trains an LLM with RL to orchestrate a CAD-CAE toolchain for industrial design; it is unclear whether this tool-driven use of engineering software counts as application automation or plain tool calling. An exclusion proposal is open in pull request #3467. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.05912",
+      "name": "FrontierFinance: A Long-Horizon Computer-Use Benchmark of Real-World Financial Tasks",
+      "url": "https://arxiv.org/abs/2604.05912",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Title calls it a computer-use benchmark, but the abstract only describes expert-built financial modeling tasks and rubric grading of LLMs, without saying whether models work through a GUI, spreadsheet software, code or text. An curation proposal is open in pull request #3325. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.06177",
+      "name": "WebExpert: domain-aware web agents with critic-guided expert experience for high-precision search",
+      "url": "https://arxiv.org/abs/2604.06177",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Domain-aware deep-search web agent with experience retrieval and preference-optimized planning, evaluated on GAIA, HLE and WebWalkerQA against browsing baselines while using fewer page hops. An open pull request (#3688) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.10261",
+      "name": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+      "url": "https://arxiv.org/abs/2604.10261",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark of DAG-structured tool chains in which agents must navigate Wikipedia pages; it finds page navigation, not tool calling, is the main failure, a browsing setting rather than GUI control. An open pull request (#3440) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.10938",
+      "name": "AgentWebBench: Benchmarking Multi-Agent Coordination in Agentic Web",
+      "url": "https://arxiv.org/abs/2604.10938",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks a user agent coordinating with website-side content agents for search and QA; agents exchange messages through controlled interfaces rather than browsing pages, so the tie to web agents is unclear. An exclusion proposal is open in pull request #3398. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.11978",
+      "name": "The Long-Horizon Task Mirage? Diagnosing Where and Why Agentic Systems Break",
+      "url": "https://arxiv.org/abs/2604.11978",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Cross-domain benchmark diagnosing long-horizon failures of LLM agents with LLM-judge failure attribution; the abstract does not name its four agentic domains, so whether any involve web or GUI tasks is unclear. An curation proposal is open in pull request #3363. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.12282",
+      "name": "Towards Robust Real-World Spreadsheet Understanding with Multi-Agent Multi-Format Reasoning",
+      "url": "https://arxiv.org/abs/2604.12282",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Multi-agent spreadsheet reasoning that inspects sheet regions via code execution, images and LaTeX, scored on SpreadsheetBench against ChatGPT Agent; office automation through code rather than a GUI. An open pull request (#3424) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.15715",
+      "name": "GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows",
+      "url": "https://arxiv.org/abs/2604.15715",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Tool-agent benchmark spanning atomic tool use and open-ended productivity workflows, testing harnesses such as Manus and OpenClaw; the abstract does not say whether tasks involve browsers, GUIs or only tool APIs. An exclusion proposal is open in pull request #3372. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.19572",
+      "name": "A Self-Evolving Framework for Efficient Terminal Agents via Observational Context Compression",
+      "url": "https://arxiv.org/abs/2604.19572",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Self-evolving observation compression for terminal agents, evaluated on TerminalBench and related shell benchmarks; terminal agents with no GUI involved. An open pull request (#3331) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.19667",
+      "name": "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+      "url": "https://arxiv.org/abs/2604.19667",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for generating deployable Dify or Coze workflow definitions from language; it is workflow-automation generation without GUI operation, so its fit as automation infrastructure versus LLM-framework work is unclear. An exclusion proposal is open in pull request #3347. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.23781",
+      "name": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+      "url": "https://arxiv.org/abs/2604.23781",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Multi-day benchmark for coworker agents acting on sandboxed filesystem, email, calendar, knowledge-base and spreadsheet services; claw-style service actions rather than GUI operation. An open pull request (#3432) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.24696",
+      "name": "NeuroClaw Technical Report",
+      "url": "https://arxiv.org/abs/2604.24696",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Neuroimaging research agent that runs toolchains in managed Python and Docker environments; the abstract does not say whether it operates a computer like a terminal or claw-style agent or acts as a domain coding pipeline. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.28093",
+      "name": "What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design",
+      "url": "https://arxiv.org/abs/2604.28093",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Guideline for authoring adversarial, difficult and legible Terminal-Bench tasks for terminal agents doing coding and system administration; shell-based computer operation without a GUI. An open pull request (#3335) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.28138",
+      "name": "Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes",
+      "url": "https://arxiv.org/abs/2604.28138",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Checkpoint/restore runtime for agent sandboxes, tested on shell-intensive and code-repair workloads; unclear whether it serves computer-use environments or only coding agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.28139",
+      "name": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+      "url": "https://arxiv.org/abs/2604.28139",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Live benchmark for claw-style workflow agents that act on business services and local workspaces, graded from traces, service state and workspace artifacts; no GUI or browser interaction is described. An open pull request (#3355) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2604.28181",
+      "name": "Synthetic Computers at Scale for Long-Horizon Productivity Simulation",
+      "url": "https://arxiv.org/abs/2604.28181",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Builds synthetic computers with folders and office documents and runs long-horizon productivity agents on them; the abstract does not say whether agents act through a GUI, a terminal or file tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.00497",
+      "name": "\"What Are You Really Trying to Do?\": Co-Creating Life Goals from Everyday Computer Use",
+      "url": "https://arxiv.org/abs/2605.00497",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: User-modeling system that infers life goals from observations of everyday computer use, with an editing interface and field study; the abstract does not say how activity is captured or whether any screen understanding is involved. An curation proposal is open in pull request #3281. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.03242",
+      "name": "Enhancing Agent Safety Judgment: Controlled Benchmark Rewriting and Analogical Reasoning for Deceptive Out-of-Distribution Scenarios",
+      "url": "https://arxiv.org/abs/2605.03242",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Rewrites unsafe agent trajectories into deceptive cases to test safety judges; web, app and OS settings appear only as deployment context, so GUI involvement is unclear. An exclusion proposal is open in pull request #3181. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.05191",
+      "name": "LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents",
+      "url": "https://arxiv.org/abs/2605.05191",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Elastic context management for long-horizon search agents trained on synthesized trajectories and evaluated on BrowseComp and BrowseComp-ZH; web research browsing rather than GUI control. An open pull request (#3177) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.07358",
+      "name": "A Comprehensive Survey on Agent Skills: Taxonomy, Techniques, and Applications",
+      "url": "https://arxiv.org/abs/2605.07358",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Survey of reusable agent skills that cites OpenClaw and Claude Code as exemplars; the abstract does not say how far its coverage extends to GUI, web or computer-use agents. An exclusion proposal is open in pull request #3187. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.07937",
+      "name": "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+      "url": "https://arxiv.org/abs/2605.07937",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Measures how clarification timing affects long-horizon agents on three unnamed agent benchmarks; the abstract does not say whether tasks involve web, GUI or terminal interaction. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.11363",
+      "name": "PresentAgent-2: Towards Generalist Multimodal Presentation Agents",
+      "url": "https://arxiv.org/abs/2605.11363",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Agent that researches sources and assembles slides into narrated presentation videos; unclear whether its source gathering or slide building involves web browsing or application automation. An exclusion proposal is open in pull request #3073. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.11732",
+      "name": "AgentDisCo: Towards Disentanglement and Collaboration in Open-ended Deep Research Agents",
+      "url": "https://arxiv.org/abs/2605.11732",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Deep research agent that refines search queries and outlines, plus a benchmark mined from users' browsing histories; the abstract does not say whether the agent opens and reads web pages or only consumes search results. An exclusion proposal is open in pull request #3095. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.12233",
+      "name": "No More, No Less: Task Alignment in Terminal Agents",
+      "url": "https://arxiv.org/abs/2605.12233",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks terminal agents, built from Terminal-Bench tasks, on using relevant environmental cues while ignoring distractors, and tests prompt-injection defenses; terminal agents without a GUI. An open pull request (#3129) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.12978",
+      "name": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+      "url": "https://arxiv.org/abs/2605.12978",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Shows that LLM-consolidated agent memories degrade over updates, using ARC-AGI streams. This generic agent-memory work names no web-page, GUI or device interaction. An open pull request (#3207) proposes to curate it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.14133",
+      "name": "ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents",
+      "url": "https://arxiv.org/abs/2605.14133",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Generator-backed benchmark of executable command-line workflows with stale or conflicting state; terminal agents act on persistent files and services, with no GUI involved. An open pull request (#3113) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.14678",
+      "name": "$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows",
+      "url": "https://arxiv.org/abs/2605.14678",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Benchmark for proactive personal-assistant agents with hidden intents over multi-turn tasks, motivated by OpenClaw; the abstract does not say whether agents act through a computer, GUI, browser or only dialogue and tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.16265",
+      "name": "AgentWall: A Runtime Safety Layer for Local AI Agents",
+      "url": "https://arxiv.org/abs/2605.16265",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Runtime policy and audit layer for local agents such as Claude Code, Cursor and OpenClaw that run shell commands, edit files and browse on a real machine; OS-level agent safety without GUI operation. An open pull request (#3327) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.16909",
+      "name": "TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents",
+      "url": "https://arxiv.org/abs/2605.16909",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Omni-modal tool-use benchmark run through MCP servers that contrasts itself with computer-use evaluation; the abstract does not say whether any of its tools operate a GUI, browser or desktop. An exclusion proposal is open in pull request #3023. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.18859",
+      "name": "TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing",
+      "url": "https://arxiv.org/abs/2605.18859",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Step-level LLM routing benchmark for agentic workloads; computer-use agents are named as a motivating application, but the tracks use SWE-bench, BFCL, RAG and PinchBench with no GUI tasks described. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.22781",
+      "name": "DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback",
+      "url": "https://arxiv.org/abs/2605.22781",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: DeltaBox adds millisecond sandbox checkpoint and rollback for agents, evaluated on SWE-bench; the abstract does not tie it to GUI or desktop agents, so its fit as agent execution infrastructure is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.26079",
+      "name": "Automated Benchmark Auditing for AI Agents and Large Language Models",
+      "url": "https://arxiv.org/abs/2605.26079",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Agentic auditor for tasks in 168 agent and LLM benchmarks, with results highlighted on SWE-bench Verified and Terminal-Bench 2; the abstract does not say whether GUI or web-agent benchmarks are among those audited. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.27705",
+      "name": "AgenticVBench: Can AI Agents Complete Real-World Post-Production Tasks?",
+      "url": "https://arxiv.org/abs/2605.27705",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks multimodal agents on video post-production tasks under different agent harnesses; the abstract does not say whether agents drive editing GUIs or only command-line tools. An exclusion proposal is open in pull request #3041. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.27882",
+      "name": "VibeSearchBench: Benchmarking Long-horizon Proactive Search in the Wild",
+      "url": "https://arxiv.org/abs/2605.27882",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for multi-turn proactive search with vague user intents, run under ReAct and an OpenClaw harness; the abstract does not say whether agents browse web pages or only call search tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.27898",
+      "name": "UniACE: A Unified Framework for Evaluating LLM Agentic Capabilities",
+      "url": "https://arxiv.org/abs/2605.27898",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Unified harness for model-centric evaluation of LLM agents over seven migrated benchmarks with an offline snapshot mode; the abstract does not name the benchmarks or say whether any involve web browsing or GUI operation. An curation proposal is open in pull request #3179. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.29341",
+      "name": "WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction",
+      "url": "https://arxiv.org/abs/2605.29341",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark of multimodal agent memory with agentic-execution trajectories; the abstract does not say whether those observations and actions come from GUI, web or other environments. An curation proposal is open in pull request #3149. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.29801",
+      "name": "AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security",
+      "url": "https://arxiv.org/abs/2605.29801",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Trains lightweight guard models for agent safety with a taxonomy covering OpenClaw and Codex execution risks; claw-style and coding agents in Docker environments, with no GUI named. An open pull request (#2997) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.00341",
+      "name": "ROGUE: Evaluating Corrigibility Failures in Frontier Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2606.00341",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Corrigibility benchmark for frontier computer-use agents on realistic tasks; the abstract does not say whether the tasks run through a GUI, a browser, a terminal or tool APIs. An curation proposal is open in pull request #3057. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.00756",
+      "name": "CoMIC: Collaborative Memory and Insights Circulation for Long-Horizon LLM Agents in Web Cloud-Edge Systems",
+      "url": "https://arxiv.org/abs/2606.00756",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Cloud-edge memory and insight sharing for weak LLM agents described as web agents; the abstract does not name its five benchmarks or say whether the agents navigate web pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.01057",
+      "name": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+      "url": "https://arxiv.org/abs/2606.01057",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract benchmarks VLMs that write procedural code to build 3D models in modeling software. This 3D code-generation work does not involve agents operating graphical interfaces, web pages or devices. The other marked it borderline: Benchmarks VLM agents writing procedural code against 3D modeling software APIs; unclear whether this script-based use of desktop software counts as application automation or plain 3D content generation. An exclusion proposal is open in pull request #2987. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.02540",
+      "name": "SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction",
+      "url": "https://arxiv.org/abs/2606.02540",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmarks poisoned agent skills that target data pipelines and system environments; the abstract implies file and system access but not whether agents work through a terminal, OS or only tools. An exclusion proposal is open in pull request #2929. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.03889",
+      "name": "RealClawBench: Live OpenClaw Benchmarks from Real Developer-Agent Sessions",
+      "url": "https://arxiv.org/abs/2606.03889",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: RealClawBench turns real OpenClaw developer-agent sessions into reproducible, automatically scored tasks; evaluation of claw-style OS agents with no GUI interaction described. An open pull request (#3139) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.03895",
+      "name": "Agent libOS: A Runtime Substrate for Capability-Controlled Self-Evolving LLM Agents",
+      "url": "https://arxiv.org/abs/2606.03895",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Library-OS runtime that mediates authority and information flow for self-evolving LLM agents; unclear from the abstract whether the agents operate a real computer's applications or only abstract tool providers. An exclusion proposal is open in pull request #2899. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.05525",
+      "name": "SciVisAgentSkills: Design and Evaluation of Agent Skills for Scientific Data Analysis and Visualization",
+      "url": "https://arxiv.org/abs/2606.05525",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Reusable skills help CLI coding agents such as Codex and Claude Code drive scientific applications like ParaView and napari through scripted workflows; application automation via code rather than GUI operation. An open pull request (#2931) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.07074",
+      "name": "SlimSearcher: Training Efficiency-Aware Web Agents via Adaptive Reward Gating",
+      "url": "https://arxiv.org/abs/2606.07074",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Efficiency-aware SFT and RL for deep research web agents, evaluated on GAIA, BrowseComp and XBench-DeepSearch browsing benchmarks. An open pull request (#2843) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.08919",
+      "name": "Oversight Has a Capacity: Calibrating Agent Guards to a Subjective, Fatiguing Human",
+      "url": "https://arxiv.org/abs/2606.08919",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Oversight study of guards and fatiguing human reviewers gating agent shell commands, file edits and deploys; terminal-style agent safety with no GUI, so its fit with the catalog is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.10394",
+      "name": "STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios",
+      "url": "https://arxiv.org/abs/2606.10394",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Automated state-based benchmark builder for claw-style personal agents in personal-computing environments, scored by final system state; no GUI is described. An open pull request (#3045) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.11176",
+      "name": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+      "url": "https://arxiv.org/abs/2606.11176",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Multi-agent system that writes evidence-grounded multimedia data stories; computer-use agents appear only as judges navigating the generated interactive articles, so it is unclear whether this is material GUI-agent work. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.11520",
+      "name": "ISE: An Execution-Grounded Recipe for Multi-Turn OS-Agent Trajectories",
+      "url": "https://arxiv.org/abs/2606.11520",
+      "reason": "Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: Synthesizes multi-turn OS-agent trajectories whose tool calls run in a live isolated OS workspace, improving ClawEval; claw-style computer operation with no GUI. An open pull request (#3077) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.15300",
+      "name": "CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?",
+      "url": "https://arxiv.org/abs/2606.15300",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks code agents that explore large file hierarchies in a Linux sandbox and write analysis code; unclear whether this counts as terminal-style computer operation or plain data-science coding. An exclusion proposal is open in pull request #3037. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.16295",
+      "name": "VisualClaw: A Real-Time, Personalized Agent for the Physical World",
+      "url": "https://arxiv.org/abs/2606.16295",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Video-stream personal agent with frame gating and skill evolution; its workspace benchmark runs Codex and Claude Code backends, but the abstract does not say whether agents operate a computer beyond files and executable checks. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.17162",
+      "name": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+      "url": "https://arxiv.org/abs/2606.17162",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Memory framework for personalized slide-generation agents with tool-based local revision; the abstract does not say whether edits drive presentation software or are plain content generation. An exclusion proposal is open in pull request #3015. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.23654",
+      "name": "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions",
+      "url": "https://arxiv.org/abs/2606.23654",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark built from real workplace sessions where claw-style agents read files, call tools and deliver business artifacts in a workspace; no GUI operation is described. An open pull request (#2861) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.24597",
+      "name": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Language world models that simulate agent environments in seven unnamed domains for RL and warm-up training; the abstract does not say whether web, GUI or mobile environments are among them. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.26080",
+      "name": "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+      "url": "https://arxiv.org/abs/2606.26080",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Derives an annotation-free step-level advantage from RL-trained policies for scoring LLM agent steps. The abstract names no web-page, GUI or device environment, so this is a generic agent method. An open pull request (#3141) proposes to curate it, so the scope needs a decision. The retained record is v1; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.30616",
+      "name": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
+      "url": "https://arxiv.org/abs/2606.30616",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: General long-horizon agentic model evaluated mostly on science and reasoning benchmarks; BrowseComp is the only browsing evaluation, and the abstract does not show web browsing as a material focus. An exclusion proposal is open in pull request #2923. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.02032",
+      "name": "PACE: A Proxy for Agentic Capability Evaluation",
+      "url": "https://arxiv.org/abs/2607.02032",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Predicts agentic benchmark scores from small subsets of non-agentic evaluation items to cut evaluation cost. This meta-evaluation work contributes no agent that operates interfaces, web pages or devices. The other marked it borderline: Builds cheap proxy benchmarks that predict LLM scores on agentic benchmarks; it cites SWE-Bench and GAIA but does not name its four targets or say whether any involve web browsing or GUI tasks. An exclusion proposal is open in pull request #2807. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.05743",
+      "name": "The Balkanization of Execution-Security Research for AI Coding Agents: Isolation, Access Control, and Time-of-Check-to-Time-of-Use Vulnerabilities",
+      "url": "https://arxiv.org/abs/2607.05743",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Systematizes security work on sandboxes, access control, TOCTOU and MCP for coding agents that run shell commands; unclear whether this execution layer counts as computer-operating agent safety or coding-agent work. An exclusion proposal is open in pull request #2609. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.06008",
+      "name": "PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows",
+      "url": "https://arxiv.org/abs/2607.06008",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Multilingual long-horizon workplace workflow benchmark with tool-use trajectories and executable state checks; the abstract does not say whether agents use GUIs, a terminal or only tool APIs. An exclusion proposal is open in pull request #2619. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.06306",
+      "name": "UI2App: Benchmarking Visual Interaction Inference in Executable Web Application Generation",
+      "url": "https://arxiv.org/abs/2607.06306",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for generating runnable multi-route web apps from static UI screenshots, scoring whether models infer interactions; a screenshot-to-code task rather than agent GUI control. An open pull request (#2621) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.06595",
+      "name": "When Agents Remember Too Much: Memory Poisoning Attacks on Large Language Model Agents",
+      "url": "https://arxiv.org/abs/2607.06595",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Memory-poisoning attack and defense for tool-using personal agents handling email, calendars and code pushes; the abstract does not say whether these are OS-level claw-style agents or plain API tool callers. An exclusion proposal is open in pull request #2625. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.07820",
+      "name": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
+      "url": "https://arxiv.org/abs/2607.07820",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Self-distillation for deep search agents in a verifiable environment with search and page-reading tools, evaluated on BrowseComp and GAIA; browsing-based research rather than GUI control. An open pull request (#2613) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.08964",
+      "name": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "url": "https://arxiv.org/abs/2607.08964",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Long-horizon terminal benchmark with dense graded subtasks spanning reproduction, software and scientific computing; agents operate a shell environment rather than a GUI. An open pull request (#2811) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.10455",
+      "name": "ANCHOR: Automated Alignment Auditing for CLI Agents on Real-World Harm",
+      "url": "https://arxiv.org/abs/2607.10455",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Auditor agent plays persistent malicious users to stress-test CLI agents that run shell commands, browse the web and manage cloud infrastructure on illegal tasks; terminal-agent safety without a GUI. An open pull request (#2805) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.11119",
+      "name": "VIA: Visual Interface Agent for Robot Control",
+      "url": "https://arxiv.org/abs/2607.11119",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Off-the-shelf agents control robots through a virtual visual interface with mouse-like probing tools; unclear whether this GUI-mediated robot control counts as interface operation or as out-of-scope robotics. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.12406",
+      "name": "Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions",
+      "url": "https://arxiv.org/abs/2607.12406",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey framing LLM-agent safety through isolation boundaries, including environment-originated context; the abstract does not say how far it covers web or GUI agents. An curation proposal is open in pull request #2837. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.13085",
+      "name": "Baselines Before Architecture: Evaluating Coding Agents for Autonomous Penetration Testing",
+      "url": "https://arxiv.org/abs/2607.13085",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Compares plain coding CLI agents with security harnesses on the XBOW pentest benchmark; unclear whether this terminal-driven attack work counts as computer operation or as a coding-agent study outside scope. An exclusion proposal is open in pull request #2636. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.13718",
+      "name": "How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement",
+      "url": "https://arxiv.org/abs/2607.13718",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Surveys user-level permission systems for AI agents and compares commercial agents; the abstract does not say whether the covered agents operate GUIs, browsers or only tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.13988",
+      "name": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "url": "https://arxiv.org/abs/2607.13988",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Turn-level credit assignment for long-horizon search agents evaluated on BrowseComp-Plus and open-web benchmarks; unclear whether the agent browses pages or only calls a search tool. An exclusion proposal is open in pull request #2607. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.16900",
+      "name": "Simulate to Generalize: Scaling Stateful Supervision for API-calling Agents using LLM World Models",
+      "url": "https://arxiv.org/abs/2607.16900",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Synthesizes stateful API-calling trajectories with an LLM world model and evaluates on AppWorld and OfficeBench, i.e. app and office automation through APIs rather than GUI actions. An open pull request (#2421) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.17044",
+      "name": "Where Does Agent Reliability Come From? A Cross-Benchmark Decomposition of Verification Loops, Specialist Models, and Scaffolding in a Production Enterprise Agent",
+      "url": "https://arxiv.org/abs/2607.17044",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Decomposes reliability gains of an enterprise agent on SpreadsheetBench, BullshitBench and GAIA; the abstract does not say whether it browses web pages or edits spreadsheets through an interface or code. An exclusion proposal is open in pull request #2397. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.17951",
+      "name": "RT-SHCUA: Real-Time Self-Hosted Computer-Use Agent for UAV Control",
+      "url": "https://arxiv.org/abs/2607.17951",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Restructures a self-hosted computer-use agent for real-time UAV control through contract-bound skill calls; the agent commands a drone rather than a GUI, so catalog fit is unclear. An exclusion proposal is open in pull request #2389. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.20121",
+      "name": "OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills",
+      "url": "https://arxiv.org/abs/2607.20121",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Safety benchmark of risky third-party skills executed by CLI agent frameworks in sandboxes; terminal-level computer agents rather than GUI agents. An open pull request (#2367) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.21635",
+      "name": "Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions",
+      "url": "https://arxiv.org/abs/2607.21635",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Position paper on evaluating personal LLM agents with persistent memory, skills and tool settings; the abstract does not say whether these agents operate devices, GUIs or only tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.23722",
+      "name": "E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios",
+      "url": "https://arxiv.org/abs/2607.23722",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract benchmarks LLM agents composing state-changing tool calls over synthetic product databases graded by state diffs. Agents act through tool APIs, not GUIs, web pages or devices. The other marked it borderline: Benchmarks multi-step tool-use agents on synthetic backends of consumer products (a game, QQ Music, Tencent Meeting); agents act only through tool calls, so it is unclear whether this is app automation or plain function calling. An exclusion proposal is open in pull request #2335. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2607.26300",
+      "name": "AgentGUI: An Interface for Observing and Steering Long-Running AI Agents",
+      "url": "https://arxiv.org/abs/2607.26300",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: The abstract presents a human-facing dashboard for monitoring and steering long-running agent sessions, so GUI names the tool itself. The steered agents are generic and no web, GUI or device operation by agents is described. An open pull request (#2533) proposes to curate it, so the scope needs a decision. The retained record is v2; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.00548",
+      "name": "DrawAI: Agentic Benchmark and Workflow for Making Raster Images Editable",
+      "url": "https://arxiv.org/abs/2608.00548",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark and agentic workflow that rebuild raster figures, slides and posters as editable graphics code; no GUI is operated, and it is unclear whether this counts as office-document automation or plain image-to-code generation. An exclusion proposal is open in pull request #2473. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.02163",
+      "name": "From Simple QA to Deep Research: A Verifiable Benchmark Constructed through Iterative Task Evolution",
+      "url": "https://arxiv.org/abs/2608.02163",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Builds an automatically evolved, rubric-verified benchmark of 500 deep research tasks; the abstract does not say whether agents browse and read web pages or only use retrieval, so its web-agent relevance is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.03223",
+      "name": "Agentic Reinforcement Learning with Self-Distilled Reward Shaping",
+      "url": "https://arxiv.org/abs/2608.03223",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Proposes token-level credit assignment from self-distilled, skill-conditioned scores for multi-turn LLM agent RL; the abstract never names its three interactive benchmarks, so whether any involve web or GUI tasks is unclear. An curation proposal is open in pull request #2325. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.03499",
+      "name": "WeClawArena: An Auditable Sandbox and Benchmark for Cross-User Agents Collaboration and Security in Human-Centered Agent Networks",
+      "url": "https://arxiv.org/abs/2608.03499",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Sandbox for cross-user personal-agent collaboration and attacks over file and record workspaces; the framing is claw-style but only tool calls are described, so OS-level computer use is unclear. An exclusion proposal is open in pull request #2379. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.05013",
+      "name": "OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents",
+      "url": "https://arxiv.org/abs/2608.05013",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Long-horizon harness for everyday cross-environment agent requests, evaluated on AgentIF-OneDay; the abstract does not say whether the environments include GUIs, browsers or a computer, or only tools and attachments. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.10669",
+      "name": "REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems",
+      "url": "https://arxiv.org/abs/2608.10669",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Benchmarks executable red-teaming of tool-using LLM agents in isolated service sandboxes. The abstract names no web-page, GUI or device interaction, so this agent-safety work is outside the catalog. The other marked it borderline: Executable red-teaming benchmark for tool-using LLM agents in sandboxed services across three harnesses. The abstract does not say whether its five service surfaces involve web, GUI or terminal interaction. An exclusion proposal is open in pull request #2369. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.10692",
+      "name": "SPIEval: Evaluating Large Language Models as Mobile Assistants over Scattered Personal Information",
+      "url": "https://arxiv.org/abs/2608.10692",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmarks LLM mobile assistants gathering personal data scattered over 10 apps; interaction runs through 21 tools, and the abstract never says the agents operate app GUIs. An exclusion proposal is open in pull request #2381. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.11274",
+      "name": "Agent Safety Should Be a Runtime Contract",
+      "url": "https://arxiv.org/abs/2608.11274",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Position paper arguing for harness-enforced runtime safety contracts for agents that run code and change files; the abstract does not say whether GUI, browser or terminal computer-use agents fall within its scope. An curation proposal is open in pull request #2571. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.21500",
+      "name": "SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation",
+      "url": "https://arxiv.org/abs/2608.21500",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Token-level on-policy distillation defense against adaptive prompt injection; websites appear only as one injection source and evaluation covers generic and tool-calling settings, not web agents. An exclusion proposal is open in pull request #2463. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.22533",
+      "name": "CONTRAMEM: Learning Self-Evolving Procedural Memory from Contrasting Multi-Model Trajectories",
+      "url": "https://arxiv.org/abs/2608.22533",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Training-free procedural memory for agents framed as computer-use, tested on GAIA2/ARE and AppWorld; the abstract describes app and tool calls, not whether any GUI is operated. An curation proposal is open in pull request #2587. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.23035",
+      "name": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+      "url": "https://arxiv.org/abs/2608.23035",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Benchmarks mobile planner agents that call 212 simulated mobile tools, memory, skills and sub-agents; the abstract describes tool calls and state checks, not operation of phone GUIs. An curation proposal is open in pull request #2555. The retained record is v2; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.24680",
+      "name": "Game2World Engine: Unlocking In-the-Wild Gameplay Videos for World Model Training",
+      "url": "https://arxiv.org/abs/2608.24680",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Grounds and removes game HUD overlays from gameplay videos to train video world models; game-screen UI grounding is present, but no agent operates an interface, so catalog relevance is unclear. An exclusion proposal is open in pull request #2453. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.26546",
+      "name": "DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows",
+      "url": "https://arxiv.org/abs/2608.26546",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark rebuilt from real sessions of a production agent platform and run in Docker containers with injected noise; the abstract does not say whether agents act via GUI, browser, shell or tool APIs. An curation proposal is open in pull request #2595. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.27260",
+      "name": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+      "url": "https://arxiv.org/abs/2608.27260",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Survey-style framework for generating interaction data for LLM agents across many domains; the abstract does not say whether GUI, web or mobile agent data are among the covered domains. An curation proposal is open in pull request #2541. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.04298",
+      "name": "Harbor Adapters and Harbor-Index: Infrastructure and a Curated Meta-Dataset for Large-Scale Agentic Evaluation",
+      "url": "https://arxiv.org/abs/2609.04298",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Evaluation infrastructure porting 80+ agentic benchmarks plus a curated hard subset, run with Terminus-2 and native harnesses; the abstract does not say whether the tasks involve terminal, web or GUI computer operation. An exclusion proposal is open in pull request #2481. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.08418",
+      "name": "Feyospace-v1: How the Cyber Mercury Seven Trained Frontier Cyber Models",
+      "url": "https://arxiv.org/abs/2609.08418",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Trains open-weight cyber agents on coding, CTF, exploit and device-backed environments; unclear whether this shell-based security work counts as terminal computer use or as out-of-scope coding agents. An exclusion proposal is open in pull request #2447. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.21293",
+      "name": "GameASG-Bench: Benchmarking Autonomous Software Generation for Game Development",
+      "url": "https://arxiv.org/abs/2609.21293",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Benchmark of autonomous software generation for browser games with source-level and browser-executed checks. The agents write game code; the browser checks are scripted evaluation, not agents operating interfaces. The other marked it borderline: Benchmarks coding agents that generate browser games, verified by browser-executed checks with real input; unclear whether the evaluated agents operate the browser themselves or only write code, so it sits between code generation and web interaction. An exclusion proposal is open in pull request #2361. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.24352",
+      "name": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs",
+      "url": "https://arxiv.org/abs/2609.24352",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Probes how few-shot demonstrations shift LLM in-context world representations on graph tracking; web agent tasks appear only as one briefly listed downstream evaluation. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.32835",
+      "name": "FinancialAuditBench: Benchmark Construction under Differential Privacy Using Real-World Priors",
+      "url": "https://arxiv.org/abs/2609.32835",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of financial-audit tasks over file-heavy synthetic engagements; the abstract does not say whether agents work through office applications, a terminal or file tools. An curation proposal is open in pull request #2353. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.36071",
+      "name": "LongCat-DeepResearch Technical Report",
+      "url": "https://arxiv.org/abs/2609.36071",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Multi-agent deep research system for evidence-grounded reports; the abstract says agents explore external sources but not whether they browse web pages or only call search APIs. An exclusion proposal is open in pull request #2499. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.36777",
+      "name": "Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes",
+      "url": "https://arxiv.org/abs/2609.36777",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of coding agents building and editing Unreal Engine 3D scenes through code; it automates an application by scripting rather than its GUI, so whether it fits application automation or 3D coding work is unclear. An exclusion proposal is open in pull request #2509. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.00042",
+      "name": "Zengram-Lite: An In-Browser Agentic-Memory Framework - Semantic Knowledge, Session Tracking, and Token-Budgeted Context",
+      "url": "https://arxiv.org/abs/2610.00042",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Presents a WebAssembly agent-memory store with knowledge, session and context-assembly tiers that runs in a browser tab. The browser is only the runtime; no agent navigates or acts on web pages. The other marked it borderline: In-browser WebAssembly memory engine for LLM agents (knowledge, session tracking, context assembly). The abstract says the agents run in a browser tab but not whether they act on web pages or only converse. An exclusion proposal is open in pull request #2487. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.04184",
+      "name": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
+      "url": "https://arxiv.org/abs/2610.04184",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract benchmarks agents that design compact evaluators approximating target benchmarks for self-improvement. This evaluation-research agent work does not involve operating graphical interfaces, web pages or devices. The other marked it borderline: Benchmarks agents that build compact evaluators for coding, co-work and reasoning targets; the abstract does not say whether the co-work domain involves desktop, GUI or web tasks. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.04906",
+      "name": "Scaling Verifiable Environments for Long-horizon Work Agents",
+      "url": "https://arxiv.org/abs/2610.04906",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Synthesizes verifiable file-workspace environments for professional work agents and reports GDPVal and APEX gains; the abstract does not say whether agents act through a GUI, a terminal or only file tools. The retained record is v3; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.06514",
+      "name": "ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing",
+      "url": "https://arxiv.org/abs/2610.06514",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract releases network-traffic flows from LLM agent episodes to classify risk, scenario and behavior primitives. This traffic-analysis auditing work names no GUI, web-page or device operation by the agents. The other marked it borderline: Network-traffic dataset for auditing LLM agent behavior inside organizational networks. The abstract does not say whether the agents browse the web, operate GUIs or only call APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.13098",
+      "name": "VETR: Execution-Grounded Self-Improving Agent for Symbolic Graphics Reasoning",
+      "url": "https://arxiv.org/abs/2610.13098",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Execution-trace refinement for agents that edit Blender scenes through programs on BlenderGym; unclear whether scripted 3D-application editing counts as application automation, since no GUI is operated. An exclusion proposal is open in pull request #2551. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.13166",
+      "name": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+      "url": "https://arxiv.org/abs/2610.13166",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Synthesizes long-horizon task environments and trajectories for terminal agents and fine-tunes a 27B model on them; a terminal-agent data resource without GUI interaction. An open pull request (#2565) proposes to exclude it, so the scope needs a decision. The retained record is v1; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.13623",
+      "name": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
+      "url": "https://arxiv.org/abs/2610.13623",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Prompt and script injection benchmark for long-horizon agents working through a CLI and MCP tools over file-heavy professional workspaces; computer operation without a GUI. An open pull request (#2589) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.17816",
+      "name": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+      "url": "https://arxiv.org/abs/2610.17816",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark of edge-cloud collaboration in long-horizon agent execution on digital-workspace tasks; the abstract does not say whether these tasks involve GUI, web or only tool actions. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.18868",
+      "name": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "url": "https://arxiv.org/abs/2610.18868",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Long-horizon agent training environments with dense progress rewards; results transfer to Terminal-Bench, but the abstract does not say whether the training tasks involve terminal, GUI or only tool interaction. An exclusion proposal is open in pull request #2513. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.21109",
+      "name": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
+      "url": "https://arxiv.org/abs/2610.21109",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Dataset of screen recordings of professionals collaborating with AI agents, with a benchmark for forecasting how contributions are used; the abstract does not say whether the agents act in GUIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.24451",
+      "name": "Assessing the CAD Capabilities of General-Purpose AI Models: A Case Study of GPT-6 Astra",
+      "url": "https://arxiv.org/abs/2610.24451",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Case study of a general-purpose model on CAD understanding, generation and editing; the abstract does not say whether it works through CAD software interfaces or by generating code. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.28679",
+      "name": "VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents",
+      "url": "https://arxiv.org/abs/2610.28679",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Benchmark for executable verifiers written by agents, drawn from six agent benchmarks; it names tool-call, state-based and code categories but not whether any source benchmark involves GUI or web tasks. The retained record is v1; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.31107",
+      "name": "Learning What to Ask for Tomorrow: Active Preference Acquisition for Long-Term Personalized Web Agents",
+      "url": "https://arxiv.org/abs/2610.31107",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Chooses which user preferences a personalized web agent should ask about by valuing reuse across future tasks; the abstract does not say whether ActiveWebPref tasks involve acting on web pages or only simulated task utilities. The retained record is v1; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.31404",
+      "name": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+      "url": "https://arxiv.org/abs/2610.31404",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Adaptive phishing benchmark for LLM email agents, motivated by computer-use agents in desktop and web apps; the abstract does not say whether the agents operate an email GUI or call email tools. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.31846",
+      "name": "Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons",
+      "url": "https://arxiv.org/abs/2610.31846",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: General learn-from-mistakes adapter method evaluated on GAIA, Claw-Eval and Terminal-Bench; these involve research, tool workflows and terminal use, but the abstract names no GUI or web-page interaction. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.34577",
+      "name": "Rethinking Verification in Agent Harnesses",
+      "url": "https://arxiv.org/abs/2610.34577",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Compares verification designs in coding-agent harnesses on Terminal-Bench, SWE-bench Verified and a new VisualBench; terminal tasks are material but no GUI or web operation is described, so coding versus terminal-agent scope is unclear. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.35215",
+      "name": "SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills",
+      "url": "https://arxiv.org/abs/2610.35215",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Security benchmark for reusable agent skills across code, version and runtime changes; it calls the agents web agents, but the abstract does not show whether tasks involve acting on web pages or only running skill code. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.35541",
+      "name": "The Agent in the Middle: How AI-Mediated Access Reshapes Web Vulnerability Exploitation",
+      "url": "https://arxiv.org/abs/2610.35541",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Benchmarks how commercial agents calling agent-facing backends of web applications can realize existing web vulnerabilities; the agents invoke service operations instead of navigating pages, so fit to web-agent scope is unclear. The retained record is v2; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.38438",
+      "name": "RoleFUZZER: User-Behaviour Fuzzing for Role-Specification Adherence in Large Language Models",
+      "url": "https://arxiv.org/abs/2610.38438",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Fuzzes simulated user behaviours to test LLM role-specification adherence; a web agent under organisational policies is one of five roles, but the abstract does not say whether it acts on web pages. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.41998",
+      "name": "SecPO: Principled Adversarial Training for Prompt Injection Security",
+      "url": "https://arxiv.org/abs/2610.41998",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Trains LLMs against prompt injection with a new preference loss and adversarial training, evaluated on AgentDojo tool calling. This model-level defense names no web-page, GUI or device interaction by agents, so it is outside scope. The other marked it borderline: Adversarially trains an LLM against prompt injection from email, documents and websites but evaluates agents only on AgentDojo tool calling; unclear whether web or GUI agents are covered beyond listing websites as a source. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2611.01860",
+      "name": "Advances in Agentic Computer Graphics",
+      "url": "https://arxiv.org/abs/2611.01860",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Report on LLM agents that write and refine graphics code, with a taxonomy and literature tool; the abstract does not say whether covered systems operate graphics applications through GUIs or scripting APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2611.03178",
+      "name": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+      "url": "https://arxiv.org/abs/2611.03178",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: General cowork-agent harness that edits documents, presentations, CAD models and Blender scenes; the abstract does not say whether it works through GUIs, terminals or application APIs. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2306.06624",
+      "name": "RestGPT: Connecting Large Language Models with Real-World RESTful APIs",
+      "url": "https://arxiv.org/abs/2306.06624",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Connects LLMs to real-world RESTful APIs with coarse-to-fine planning and an API executor, plus a benchmark. This API-agent work involves no web-page, GUI or device interaction. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2406.12045",
+      "name": "$τ$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "url": "https://arxiv.org/abs/2406.12045",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of conversational agents that use domain API tools and policies with simulated users, such as in retail. This function-calling work names no web-page, GUI or device interaction. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2507.14447",
+      "name": "Routine: A Structural Planning Framework for LLM Agent System in Enterprise",
+      "url": "https://arxiv.org/abs/2507.14447",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Structured planning framework and distilled data for multi-step enterprise tool calling. The abstract names no web, GUI or device interaction, so this tool-agent work is outside the catalog. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #4203. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2508.18489",
+      "name": "Experiences with Model Context Protocol Servers for Science and High Performance Computing",
+      "url": "https://arxiv.org/abs/2508.18489",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Reports experience wrapping research cyberinfrastructure services as MCP servers for science agents. This MCP tool-integration work names no web-page, GUI, mobile or desktop interaction. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #4015. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2510.04491",
+      "name": "Impatient Users Confuse AI Agents: High-fidelity Simulations of Human Traits for Testing Agents",
+      "url": "https://arxiv.org/abs/2510.04491",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Steers simulated user traits through activation directions to stress-test conversational agents on τ-Bench domains such as airline and retail. These API-based customer-service agents do not operate graphical interfaces or web pages. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #3879. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2512.23738",
+      "name": "Enforcing Temporal Constraints for LLM Agents",
+      "url": "https://arxiv.org/abs/2512.23738",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Enforces temporal safety rules on LLM agent tool calls with SMT-checked constrained generation in retail and airline service settings. Tool-calling agent safety with no GUI or web-page interaction. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #3698. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.09749",
+      "name": "R-LAM: Reproducibility-Constrained Large Action Models for Scientific Workflow Automation",
+      "url": "https://arxiv.org/abs/2601.09749",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Reproducibility-constrained action-model framework for automating scientific workflows in Python. This tool-execution work does not involve operating graphical interfaces, web pages or devices. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #3561. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2605.02240",
+      "name": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+      "url": "https://arxiv.org/abs/2605.02240",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: The abstract benchmarks LLM agents on physician tasks in an EHR environment accessed through standard vendor APIs. This API-based clinical tool-use work does not involve operating graphical interfaces or web pages. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #3201. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.09863",
+      "name": "From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents",
+      "url": "https://arxiv.org/abs/2606.09863",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Characterizes false task-completion claims by LLM agents on tau2-bench and AppWorld API-call traces and tests cheap detectors. These are tool and API settings with no GUI, web-page or device interaction. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2606.18425",
+      "name": "Complexity and Scale in AI-Assisted Workflow Management: A Federated Learning Case Study",
+      "url": "https://arxiv.org/abs/2606.18425",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: The abstract has LLM agents specify and generate Pegasus workflows for federated learning jobs. This workflow-automation coding work does not involve agents operating graphical interfaces, web pages or devices. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #2999. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2608.19741",
+      "name": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+      "url": "https://arxiv.org/abs/2608.19741",
+      "reason": "Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: The abstract offers a sandbox and benchmark of business workflows where agents act through MCP tool sessions graded on backend state. This tool-calling evaluation involves no GUI, web-page or device operation. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #2465. The retained record is v4; reconcile its metadata before approval. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2609.12533",
+      "name": "Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents",
+      "url": "https://arxiv.org/abs/2609.12533",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Plan-and-execute tool-using agent and benchmark for Earth observation workflows. This scientific tool-agent work does not involve operating graphical interfaces, web pages or devices. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #2405. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.00583",
+      "name": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
+      "url": "https://arxiv.org/abs/2610.00583",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Studies coordination failures when agents serving different users share budgets, calendars or bookings in simulated tool environments. The abstract names no GUI, web-page or device operation, so this multi-agent work is outside scope. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #2519. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2610.34167",
+      "name": "Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents",
+      "url": "https://arxiv.org/abs/2610.34167",
+      "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of email, calendar and ticket tool tasks that scores unauthorized side effects of tool-using agents. This tool-calling safety work names no web-page, GUI, mobile or desktop interaction. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [],

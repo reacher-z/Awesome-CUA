@@ -782,15 +782,15 @@ def badges(rows, report):
     # A short status strip under the banner: at most six badges, all counted or dated from this build. There is no live
     # workflow-status badge: a rate-limit pause is not an outage, and the health issue is the alert channel.
     # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
-    style = '?style=flat-square&labelColor=1E2233'
+    style = '?style=flat-square&labelColor=0F2733'
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
     as_of = report["as_of_utc"]
     evidence = f"{as_of[:10]} {as_of[11:16]} UTC"
     return ("\n" + " ".join([
-        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
-        f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
-        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
-        f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
+        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '0B6E8E')}{style})](docs/coverage.md)",
+        f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '0B6E8E')}{style})](docs/papers.md)",
+        f"[![Evidence through]({shield('evidence through', evidence, '0B6E8E')}{style})](docs/maintenance.md)",
+        f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '0B6E8E')}{style})]({HUGGING_FACE_DATASET})",
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 
 

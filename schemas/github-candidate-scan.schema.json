@@ -674,6 +674,7 @@
             "rate_limited",
             "unavailable",
             "redirect_not_followed",
+            "fork_not_recorded",
             "fetch_failed",
             "response_too_large",
             "malformed_response",

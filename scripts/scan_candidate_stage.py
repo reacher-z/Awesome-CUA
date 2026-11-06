@@ -78,9 +78,9 @@ def phase_summary(summary, started):
     unanswered = summary['unknown_requests'] - settled
     if unanswered:
         warnings.append(f"{unanswered} GitHub candidate requests have no accepted metadata response.")
-    # Renamed or deleted repositories answer the same way every time: report them once without making the scan partial.
+    # Renamed, deleted or forked repositories answer the same way every time: report them once without making the scan partial.
     from scan_github_candidates import SETTLED_SEED_RECHECK
-    notices = [f'{settled} existing GitHub candidate names now redirect or return 404; the answers are recorded and those names are skipped for {SETTLED_SEED_RECHECK.days} days.'] if settled else []
+    notices = [f'{settled} existing GitHub candidate names now redirect, return 404 or are forks; the answers are recorded and those names are skipped for {SETTLED_SEED_RECHECK.days} days.'] if settled else []
     if sum(summary['rejected_rows'].values()):
         warnings.append(f"{sum(summary['rejected_rows'].values())} GitHub metadata rows were rejected; rejection reasons remain in the candidate scan receipt.")
     statuses = summary.get('query_status_counts', {})

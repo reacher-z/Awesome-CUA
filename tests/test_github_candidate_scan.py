@@ -288,18 +288,70 @@ class ScanTests(unittest.TestCase):
         state, run = self.execute([response({'message': 'Server Error'}, 502)], max_requests=1, existing_budget=1)
         self.assertEqual((run['unknown_requests'], run['status']), (1, 'partial'))
 
-    def test_a_quarantined_direct_answer_is_retried_rather_than_settled(self):
-        self.write_inputs([{'id': 'github:public-owner/forked', 'url': 'https://github.com/public-owner/forked', 'provider': 'github',
+    def test_a_direct_answer_with_no_fork_field_is_retried_rather_than_settled(self):
+        self.write_inputs([{'id': 'github:public-owner/unclear', 'url': 'https://github.com/public-owner/unclear', 'provider': 'github',
                             'discovered_in': [{'source_id': 'a'}]},
                            {'id': 'github:public-owner/next', 'url': 'https://github.com/public-owner/next', 'provider': 'github',
                             'discovered_in': []}])
-        state, run = self.execute([response(repo(5, 'public-owner/forked', fork=True))], max_requests=1, existing_budget=1, strict_replay=True)
+        unclear = {key: value for key, value in repo(5, 'public-owner/unclear').items() if key != 'fork'}
+        state, run = self.execute([response(unclear)], max_requests=1, existing_budget=1, strict_replay=True)
         self.assertEqual(([r['outcome'] for r in state['receipts']], len(self.calls)), (['quarantined'], 1))
+        self.assertEqual(state['receipts'][0]['rejected_rows'], {'fork_or_unknown': 1})
         self.assertEqual(scan.settled_seed_requests(state, self.timer.now()), set())
-        self.write_inputs([{'id': 'github:public-owner/forked', 'url': 'https://github.com/public-owner/forked', 'provider': 'github',
+        self.assertEqual(next(q for q in state['queries'] if q['kind'] == 'existing')['next_index'], 0)
+        self.write_inputs([{'id': 'github:public-owner/unclear', 'url': 'https://github.com/public-owner/unclear', 'provider': 'github',
                             'discovered_in': [{'source_id': 'a'}]}], catalog=[{'id': 'github:public-owner/other', 'review_status': 'curated'}])
-        self.execute([response(repo(5, 'public-owner/forked'))], max_requests=1, existing_budget=1, strict_replay=True)
-        self.assertTrue(self.calls[-1][0].endswith('/repos/public-owner/forked'))
+        self.execute([response(repo(5, 'public-owner/unclear'))], max_requests=1, existing_budget=1, strict_replay=True)
+        self.assertTrue(self.calls[-1][0].endswith('/repos/public-owner/unclear'))
+
+    def test_a_fork_answer_settles_the_name_and_the_lane_continues(self):
+        def candidate(name, refs): return {'id': 'github:' + name, 'url': 'https://github.com/' + name, 'provider': 'github',
+                                           'discovered_in': [{'source_id': str(i)} for i in range(refs)]}
+        seeds = [candidate('public-owner/forked', 2), candidate('public-owner/live', 1)]
+        options = {'max_requests': 2, 'existing_budget': 2, 'strict_replay': True}
+        names = lambda: [url.rsplit('/', 1)[-1] for url, _ in self.calls]
+        self.write_inputs(seeds)
+        state, run = self.execute([response(repo(5, 'public-owner/forked', fork=True)), response(repo(6, 'public-owner/live'))], **options)
+        self.assertEqual(names(), ['forked', 'live'])
+        forked, live = state['receipts']
+        self.assertEqual((forked['outcome'], live['outcome']), ('fork_not_recorded', 'accepted'))
+        # Nothing about the fork is kept, and it is not a rejection that would make the scan partial.
+        self.assertEqual((forked['rejected_rows'], forked['accepted_repository_ids'], forked['source_url'], forked['raw_body_retained']), ({}, [], None, False))
+        self.assertNotIn('github-repository:5', state['records'])
+        self.assertIn('github-repository:6', state['records'])
+        self.assertEqual((run['rejected_rows'], run['unknown_requests'], scan.settled_unknown_requests(state['receipts'], run['id'])), ({}, 1, 1))
+        # A later cohort restarts at the first seed and does not ask the fork again.
+        self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other', 'review_status': 'curated'}])
+        self.calls.clear()
+        state, run = self.execute([response(page([]))], **options)
+        self.assertEqual(len(self.calls), 1)
+        self.assertIn('/search/repositories?', self.calls[0][0])
+        self.assertEqual(run['status'], 'finished')
+        # After the recheck window the name is asked once more, and an ordinary answer is then accepted.
+        self.timer.seconds += 31 * 86400
+        self.write_inputs(seeds, catalog=[{'id': 'github:public-owner/other-2', 'review_status': 'curated'}])
+        self.calls.clear()
+        state, run = self.execute([response(repo(5, 'public-owner/forked'))], max_requests=1, existing_budget=1, strict_replay=True)
+        self.assertEqual(names(), ['forked'])
+        self.assertIn('github-repository:5', state['records'])
+
+    def test_a_fork_flag_settles_only_a_complete_public_answer_for_that_name(self):
+        self.write_inputs([{'id': 'github:public-owner/asked', 'url': 'https://github.com/public-owner/asked', 'provider': 'github', 'discovered_in': []}])
+        answers = {'private': (repo(5, 'public-owner/asked', fork=True, private=True), 'private_or_unknown'),
+                   'not public': (repo(5, 'public-owner/asked', fork=True, visibility='internal'), 'visibility_not_public_or_unknown'),
+                   'no id': (repo(5, 'public-owner/asked', fork=True, id=None), 'fork_or_unknown'),
+                   'no created date': (repo(5, 'public-owner/asked', fork=True, created_at=None), 'fork_or_unknown'),
+                   'other url': (repo(5, 'public-owner/asked', fork=True, html_url='https://github.com/public-owner/other'), 'fork_or_unknown'),
+                   'other repository': (repo(5, 'public-owner/other', fork=True), 'fork_or_unknown')}
+        for label, (answer, reason) in answers.items():
+            with self.subTest(label):
+                state, run = self.execute([response(answer)], max_requests=1, existing_budget=1, strict_replay=True)
+                self.assertEqual((state['receipts'][-1]['outcome'], state['receipts'][-1]['rejected_rows']), ('quarantined', {reason: 1}))
+                self.assertEqual(scan.settled_seed_requests(state, self.timer.now()), set())
+                self.assertEqual(next(q for q in state['queries'] if q['kind'] == 'existing')['next_index'], 0)
+        # The name's letter case is not part of its identity.
+        state, run = self.execute([response(repo(5, 'Public-Owner/Asked', fork=True))], max_requests=1, existing_budget=1, strict_replay=True)
+        self.assertEqual(state['receipts'][-1]['outcome'], 'fork_not_recorded')
 
     def test_input_changes_create_new_seed_fingerprint_without_losing_records(self):
         state, _ = self.execute([response(page([repo()]))])

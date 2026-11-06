@@ -49,10 +49,11 @@ PAGE_SIZE = 100
 SPLIT_THRESHOLD = 900
 QUERY_PROGRESS = ('status', 'next_page', 'reported_total', 'total_changed',
                   'incomplete_results_seen', 'seen_repository_ids', 'rejected_rows', 'last_attempt')
-# A renamed or transferred (permanent redirect) or deleted (404) repository gives the same
-# answer on every request. Later existing-candidate cohorts skip that name for this long
-# instead of retrying it first on every scan, which stalled the lane behind it. A quarantined
-# direct response is not settled: it is retried, because the next answer can be acceptable.
+# A renamed or transferred (permanent redirect), deleted (404) or forked repository gives the
+# same answer on every request. Later existing-candidate cohorts skip that name for this long
+# instead of retrying it first on every scan, which stalled the lane behind it. Any other
+# quarantined direct response is not settled, including one with no fork field: it is retried,
+# because the next answer can be acceptable.
 SETTLED_SEED_RECHECK = timedelta(days=30)
 
 
@@ -67,11 +68,12 @@ def existing_seed_url(name):
 def settled_seed_answer(receipt):
     """True when an existing-candidate request got a final answer for that name; transient failures stay retryable."""
     return (receipt['outcome'] == 'redirect_not_followed' and receipt['status'] in {301, 308}
-            or receipt['outcome'] == 'unavailable' and receipt['status'] == 404)
+            or receipt['outcome'] == 'unavailable' and receipt['status'] == 404
+            or receipt['outcome'] == 'fork_not_recorded')
 
 
 def settled_unknown_requests(receipts, run_id):
-    """This run's existing-candidate requests answered by a permanent redirect or a 404.
+    """This run's existing-candidate requests answered by a permanent redirect, a 404 or a fork.
 
     They count as unknown requests (no metadata was accepted), but the answer is final for that name, so the
     scan reports them as a notice instead of a gap that would make every scan partial until the names are reviewed."""
@@ -254,6 +256,16 @@ def repository_metadata(item):
             'archived': item['archived'], **dates,
             'metadata_status': 'primary_metadata_observed',
             'review_status': 'candidate', 'scope': 'relevance_pending'}
+
+
+def reports_fork(item, name):
+    """True when a complete public-repository response for this name says it is a fork; anything less stays retryable."""
+    if not isinstance(item, dict) or item.get('fork') is not True:
+        return False
+    try:
+        return repository_metadata({**item, 'fork': False})['full_name'].casefold() == name.casefold()
+    except Rejected:
+        return False
 
 
 def input_snapshot(root):
@@ -610,7 +622,7 @@ def validate_state(state):
             if receipt[key] is not None and (type(receipt[key]) is not int or receipt[key] < 0): raise ValueError('invalid request counts')
         if type(receipt['raw_body_retained']) is not bool or receipt['incomplete_results'] is not None and type(receipt['incomplete_results']) is not bool:
             raise ValueError('invalid request flags')
-        if receipt['outcome'] not in {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fetch_failed', 'response_too_large', 'malformed_response'}:
+        if receipt['outcome'] not in {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fork_not_recorded', 'fetch_failed', 'response_too_large', 'malformed_response'}:
             raise ValueError('invalid request outcome')
         if not isinstance(receipt['accepted_repository_ids'], list) or any(type(i) is not int or i <= 0 for i in receipt['accepted_repository_ids']):
             raise ValueError('invalid accepted repository IDs')
@@ -631,7 +643,7 @@ def validate_state(state):
         if runs_by_id[receipt['run_id']].get('strict_replay') and receipt['accepted_repository_ids']:
             if receipt['outcome'] != 'accepted' or not receipt['source_url'] or not receipt['raw_body_retained']:
                 raise ValueError('strict replay receipt lacks its complete public body')
-        if receipt['outcome'] == 'quarantined' and (receipt['accepted_repository_ids'] or receipt['source_url'] is not None or receipt['raw_body_retained']):
+        if receipt['outcome'] in {'quarantined', 'fork_not_recorded'} and (receipt['accepted_repository_ids'] or receipt['source_url'] is not None or receipt['raw_body_retained']):
             raise ValueError('quarantined page retained metadata or body')
     for item in [*state['runs'], *state['receipts']]:
         rejections = item['rejected_rows']
@@ -1116,8 +1128,9 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                         accepted.append(metadata)
                     except Rejected as error:
                         rejected[str(error)] += 1
-                receipt['rejected_rows'] = dict(rejected)
-                if strict_replay and rejected:
+                fork_seed = query['kind'] == 'existing' and reports_fork(value, seeds[position])
+                receipt['rejected_rows'] = {} if fork_seed else dict(rejected)
+                if strict_replay and rejected and not fork_seed:
                     accepted = []; quarantined = True
                 for metadata in accepted:
                     rid = metadata['id']; old = state['records'].get(rid)
@@ -1129,13 +1142,13 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                         'occurrences': (old['occurrences'] if old else []) + [occurrence]}
                     receipt['accepted_repository_ids'].append(metadata['repository_id'])
                 receipt['accepted_repository_ids'] = sorted(set(receipt['accepted_repository_ids']))
-                receipt['outcome'] = 'quarantined' if quarantined else 'accepted_with_rejections' if rejected and accepted else 'rejected' if rejected else 'accepted'
+                receipt['outcome'] = 'fork_not_recorded' if fork_seed else 'quarantined' if quarantined else 'accepted_with_rejections' if rejected and accepted else 'rejected' if rejected else 'accepted'
                 # A mixed/unknown/private response has a digest but no raw body or request URL in the public ledger.
                 if not rejected:
                     receipt['source_url'] = url
                     raw = checked_output(output / 'raw' / (sha + '.body'))
                     atomic_write(raw, body); receipt['raw_body_retained'] = True
-                parsed = True
+                parsed = not fork_seed
                 if query['kind'] == 'search' and not quarantined:
                     total = value['total_count']
                     query['total_changed'] |= query['reported_total'] is not None and query['reported_total'] != total

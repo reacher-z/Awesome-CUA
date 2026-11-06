@@ -435,6 +435,10 @@
               "type": "integer",
               "minimum": 0
             },
+            "fork_not_recorded": {
+              "type": "integer",
+              "minimum": 0
+            },
             "fetch_failed": {
               "type": "integer",
               "minimum": 0

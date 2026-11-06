@@ -208,6 +208,8 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `candidate-reviews.json` | Authored | Discovered links reviewed as non-resources or as other addresses of active records; see [methodology](methodology.md#identity-and-deduplication) |
 | `sources.json` | Authored | Discovery-source registry read by `catalog.py discover` |
 | `paper-discovery-queries.json` | Authored | Hugging Face search registry read by `discover_papers.py` |
+| `task-classes.json` | Authored | Realm and task-class names in English and Chinese; `catalog.py validate` checks each record's `task_classes` against it |
+| `translations.zh-CN.json` | Authored | Chinese summaries keyed by curated record ID, checked by `catalog.py validate` |
 | `scan-config.json` | Authored | Scan schedule and limits read by `scan.py` and the website status page |
 | `site-guides.json`, `site-discovery.json` | Authored | Website guides and search-discovery settings read by `build_site.py` and `submit_indexnow.py` |
 | `conference-discovery.json`, `discovery-audits.json` | Authored | Records of a manual proceedings sweep and an arXiv query audit; no script rewrites them |

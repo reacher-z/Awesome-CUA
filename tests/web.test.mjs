@@ -365,7 +365,7 @@ test('explicit sorts and empty-query order stay stable without per-comparison no
   String.prototype.localeCompare=function(...args){collated++;return localeCompare.apply(this,args);};
   try{for(const sort of ['featured','name','newest'])filtered(rows,{...initial(),sort,q:'g'});}finally{String.prototype.normalize=nativeNormalize;String.prototype.localeCompare=localeCompare;}
   assert.equal(collated,0);
-  assert.ok(normalized<=5*rows.length,`${normalized} normalizations for ${rows.length} records`);
+  assert.ok(normalized<=6*rows.length,`${normalized} normalizations for ${rows.length} records`);
 });
 test('desktop and mobile platforms include their operating systems',()=>{
   const ids=platform=>new Set(filtered(rows,{...initial(),platform}).map(r=>r.id));

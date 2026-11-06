@@ -90,9 +90,13 @@ class AgentFileTests(unittest.TestCase):
             self.assertTrue(target.is_file(), kind)
             if kind == 'paper':
                 continue
-            expected = sorted((row for row in self.curated if row['kind'] == kind), key=lambda row: row['name'].lower())
-            text = target.read_text()
-            self.assertEqual(re.findall(r'^- Catalog URL: (\S+)$', text, re.M), [SITE + resource_path(row) for row in expected], kind)
+            expected = [SITE + resource_path(row) for row in self.curated if row['kind'] == kind]
+            listed = re.findall(r'^- Catalog URL: (\S+)$', target.read_text(), re.M)
+            self.assertCountEqual(listed, expected, kind)
+            # The full list is the last on the page: a Featured group above it repeats records.
+            markup = (self.dest / f'categories/{kind}/index.html').read_text()
+            rows = re.findall(r'<h3 class="row-name"><a href="([^"]+)"', markup)
+            self.assertEqual(listed, [SITE + href for href in rows[len(rows) - len(listed):]], kind)
         papers = reviewed_papers(self.rows)
         seen = []
         for number in range(1, library_pages(self.rows) + 1):

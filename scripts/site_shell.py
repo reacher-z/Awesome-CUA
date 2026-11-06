@@ -128,18 +128,18 @@ def head_assets(lang="en") -> str:
             f'<script src="{asset("/assets/site.js")}" defer></script>')
 
 
-NAV = [("Catalog", "目录", "/catalog/", "/catalog/"), ("Papers", "论文", "/papers/", "/zh/papers/"),
-       ("Benchmarks", "评测基准", "/categories/benchmark/", "/categories/benchmark/"),
+NAV = [("Catalog", "目录", "/catalog/", "/zh/catalog/"), ("Papers", "论文", "/papers/", "/zh/papers/"),
+       ("Benchmarks", "评测基准", "/categories/benchmark/", "/zh/categories/benchmark/"),
        ("Topics", "主题", "/topics/", "/zh/topics/"), ("Guides", "指南", "/guides/", "/guides/"),
        ("Data", "数据", "/data/", "/zh/data/")]
 
 
 def active_nav(path: str):
-    if path.startswith(("/papers/", "/zh/papers/", "/categories/paper/", "/categories/survey/", "/survey/")):
+    if path.startswith(("/papers/", "/zh/papers/", "/categories/paper/", "/categories/survey/", "/zh/categories/survey/", "/survey/")):
         return "Papers"
-    if path.startswith("/categories/benchmark/") or path.startswith("/compare/benchmarks/"):
+    if path.startswith(("/categories/benchmark/", "/zh/categories/benchmark/", "/compare/benchmarks/")):
         return "Benchmarks"
-    if path.startswith(("/catalog/", "/categories/", "/compare/", "/explore/", "/resources/")):
+    if path.startswith(("/catalog/", "/zh/catalog/", "/categories/", "/zh/categories/", "/compare/", "/explore/", "/resources/")):
         return "Catalog"
     if path.startswith(("/topics/", "/zh/topics/")):
         return "Topics"
@@ -229,10 +229,10 @@ def maintainer_cards(zh=False, live=False) -> str:
 
 
 FOOTER_COLUMNS = [
-    ("Browse", "浏览", [("Catalog", "目录", "/catalog/", "/catalog/"),
+    ("Browse", "浏览", [("Catalog", "目录", "/catalog/", "/zh/catalog/"),
                         ("Explore every record", "检索全部记录", "/explore/", "/explore/?lang=zh"),
-                        ("Benchmarks", "评测基准", "/categories/benchmark/", "/categories/benchmark/"),
-                        ("Datasets", "数据集", "/categories/dataset/", "/categories/dataset/"),
+                        ("Benchmarks", "评测基准", "/categories/benchmark/", "/zh/categories/benchmark/"),
+                        ("Datasets", "数据集", "/categories/dataset/", "/zh/categories/dataset/"),
                         ("Papers", "论文", "/papers/", "/zh/papers/"),
                         ("Survey", "综述", "/survey/", "/survey/")]),
     ("Use the data", "使用数据", [("Download data", "下载数据", "/data/", "/zh/data/"),

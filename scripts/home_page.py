@@ -259,11 +259,18 @@ def stamp(state, zh=False) -> str:
     return f'<span class="stamp stamp-new">{"未审核" if zh else "Unreviewed"}</span>'
 
 
-def compact_row(record, zh=False) -> str:
+def category_href(kind, zh=False) -> str:
+    return f"/zh/categories/{kind}/" if zh else f"/categories/{kind}/"
+
+
+def compact_row(record, zh=False, date="", attrs="", anchor=True) -> str:
     source = record.get("url") or ""
-    return f'''<li class="row" id="r-{slug(record["id"])}">
+    dated = f'<span class="row-id">{esc(date)}</span>' if date else ""
+    # A record listed twice on a page keeps its anchor on one row only.
+    target = f' id="r-{slug(record["id"])}"' if anchor else ""
+    return f'''<li class="row"{target}{attrs}>
 {kind_tag(record["kind"], zh)}
-<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span></h3>
+<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span>{dated}</h3>
 <p class="row-desc">{esc(record.get("summary") or "")}</p></div>
 <div class="row-side">{env_tag(record["environments"], zh)}{stamp(record["review_status"], zh)}</div>
 </li>'''
@@ -275,12 +282,17 @@ def most_mentioned(view, count, exclude=()):
     return sorted(candidates, key=lambda record: (-len(view["mentions"][record["id"]]), record["name"].casefold()))[:count]
 
 
-def default_rows(view, zh=False) -> str:
-    """The window is never empty: pinned benchmarks first, then what the catalog mentions most."""
-    # A reviewed WebsiteBench record, once it exists, replaces the hand-written row.
+def featured_records(view) -> list:
+    """WebsiteBench first, then ClawBench. A reviewed WebsiteBench record, once it exists, replaces the hand-written row."""
     pinned = [view["by_id"].get(WEBSITEBENCH["id"], WEBSITEBENCH)]
     if CLAWBENCH in view["by_id"]:
         pinned.append(view["by_id"][CLAWBENCH])
+    return pinned
+
+
+def default_rows(view, zh=False) -> str:
+    """The window is never empty: pinned benchmarks first, then what the catalog mentions most."""
+    pinned = featured_records(view)
     top = most_mentioned(view, 2, {record["id"] for record in pinned})
     return (f'<li class="row-cap">{"精选" if zh else "Featured"}</li>' + "".join(compact_row(record, zh) for record in pinned) +
             f'<li class="row-cap">{"目录中被提及最多" if zh else "Most mentioned across the catalog"}</li>' +
@@ -289,10 +301,10 @@ def default_rows(view, zh=False) -> str:
 
 def tab_href(kind, zh=False) -> str:
     if kind == "all":
-        return "/catalog/"
+        return "/zh/catalog/" if zh else "/catalog/"
     if kind == "paper":
         return "/zh/papers/" if zh else "/papers/"
-    return f"/categories/{kind}/"
+    return category_href(kind, zh)
 
 
 def finder(view, zh=False) -> str:
@@ -327,7 +339,7 @@ def finder(view, zh=False) -> str:
     return f'''<div class="window finder" id="finder">
 <div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}{address}</div><button class="copy-url js-only" type="button" data-copy-url aria-label="{copy_label}">{ic("link")}<span>{copy_label}</span></button></div>
 <span id="catalog"></span>
-<form class="field" role="search" action="/catalog/" method="get" data-finder-form>
+<form class="field" role="search" action="/explore/#catalog" method="get" data-finder-form>{'<input type="hidden" name="lang" value="zh">' if zh else ""}
 <label class="vh" for="q">{text["label"]}</label>{ic("search")}
 <input id="q" name="q" type="search" placeholder="{text["placeholder"]}" data-ph-short="{text["short"]}" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-describedby="q-count">
 <span class="count" id="q-count" aria-live="polite" aria-atomic="true"></span>
@@ -410,7 +422,7 @@ def task_tiles(view, zh=False) -> str:
             href = f"/zh/topics/{topic}/" if zh else f"/topics/{topic}/"
         else:
             count = sum(view["kinds"][kind] for kind in kinds)
-            href = f"/categories/{kinds[0]}/"
+            href = category_href(kinds[0], zh)
         shown = ", ".join(names[example.casefold()] for example in examples if example.casefold() in names)
         drawing = art.VIGNETTES[topic or kinds[0]]()
         tiles.append(f'<a class="r3-tile r3-f{number}" href="{href}"><span class="r3-tile-n"><b>{fmt(count)}</b> {esc(zh_label if zh else label)}</span>{drawing}'
@@ -473,7 +485,7 @@ def benchmark_band(view, zh=False, live=True) -> str:
         ("Benchmarks", "Featured benchmarks, then every reviewed record that publishes an official leaderboard.", f"All {benchmarks} benchmarks", "Official leaderboards", f"{len(reviewed_with_board)} records, sorted by catalog mentions"))
     return f'''<section class="r3-band" aria-labelledby="feat-h"><div class="wrap">
 <div class="sec-head"><div><h2 id="feat-h">{heading}</h2><p>{lede}</p></div>
-<a class="more" href="/categories/benchmark/">{more}{ic("right", "i i-sm")}</a></div>
+<a class="more" href="{category_href("benchmark", zh)}">{more}{ic("right", "i i-sm")}</a></div>
 <div class="r3-band-feat">{website}{claw}</div>
 <div class="lb-table"><div class="lb-head"><h3>{board}</h3><p>{note}</p></div>
 <ul class="lb-list">{rows}</ul></div>
@@ -521,7 +533,7 @@ def categories(view, zh=False) -> str:
                          key=lambda record: (-len(view["mentions"].get(record["id"], ())), record["name"].casefold()))[:link_count]
             links = ", ".join(f'<a href="{esc(resource_href(record))}">{esc(clip(clean_title(record["name"]), 26))}</a>' for record in top)
         drawing = {"paper": art.vig_paper, "benchmark": art.vig_rank}.get(kind)
-        cells.append(f'<li class="r3-cell r3-c-{kind}"><a class="r3-cell-name" href="/categories/{kind}/">{zh_label if zh else label}</a>'
+        cells.append(f'<li class="r3-cell r3-c-{kind}"><a class="r3-cell-name" href="{"/zh/papers/" if zh and kind == "paper" else category_href(kind, zh)}">{zh_label if zh else label}</a>'
                      f'<span class="r3-cell-n">{fmt(view["kinds"][kind])}</span>{drawing() if drawing else ""}<p class="r3-cell-eg">{links}</p></li>')
     heading, more = ("按类别浏览", "打开目录") if zh else ("Browse by category", "Open the catalog")
     return f'''<section class="section wrap r3-cats" aria-labelledby="cats-h">
@@ -622,9 +634,9 @@ DIRECTORY = (
     ("reference", (("/data/", "Download data"), ("/updates/", "Updates every hour"), ("/coverage/", "Coverage"), ("/about/", "Editorial policy"))),
 )
 DIRECTORY_ZH = (
-    ("研究", (("/zh/papers/", "论文与综述阅读列表"), ("/zh/topics/", "按主题浏览论文、数据与工具"), ("/categories/learning/", "学习资源"))),
-    ("训练与评测", (("/categories/dataset/", "训练数据集"), ("/compare/datasets/", "对比数据规格"), ("/categories/benchmark/", "GUI、桌面、网页与手机评测基准"), ("/compare/benchmarks/", "对比评测协议"), ("/categories/model/", "模型与权重版本"))),
-    ("工程", (("/categories/agent/", "智能体"), ("/categories/framework/", "开发与训练框架"), ("/categories/product/", "产品"), ("/catalog/", "浏览全部分类"))),
+    ("研究", (("/zh/papers/", "论文与综述阅读列表"), ("/zh/topics/", "按主题浏览论文、数据与工具"), ("/zh/categories/learning/", "学习资源"))),
+    ("训练与评测", (("/zh/categories/dataset/", "训练数据集"), ("/compare/datasets/", "对比数据规格"), ("/zh/categories/benchmark/", "GUI、桌面、网页与手机评测基准"), ("/compare/benchmarks/", "对比评测协议"), ("/zh/categories/model/", "模型与权重版本"))),
+    ("工程", (("/zh/categories/agent/", "智能体"), ("/zh/categories/framework/", "开发与训练框架"), ("/zh/categories/product/", "产品"), ("/zh/catalog/", "浏览全部分类"))),
     ("数据", (("/explore/?lang=zh#catalog", "打开中文搜索目录"), ("/zh/data/", "下载数据"), ("/coverage/", "覆盖台账"), ("/about/", "编辑方法"))),
 )
 START = (("/guides/what-are-computer-use-agents/", "Understand computer-use agents"),

@@ -366,7 +366,7 @@ class ReadmeBlockTests(unittest.TestCase):
         table = [line for line in build.highlights(rows, edges).splitlines() if line.startswith("| [")]
         self.assertEqual([line.split("]")[0][3:] for line in table], ["Beta", "Alpha", "Gamma"])
         self.assertRegex(table[0], r"\| +2 \|")
-        self.assertIn("[all 3 →](docs/benchmarks.md)", build.highlights(rows, edges))
+        self.assertIn("3 in the catalog", build.highlights(rows, edges))
         self.assertEqual(build.highlights(rows, []).strip(), "")
 
     def test_recently_reviewed_orders_non_paper_approvals(self):
@@ -385,10 +385,10 @@ class ReadmeBlockTests(unittest.TestCase):
 
     def test_badges_count_only_curated_resources_and_date_the_evidence(self):
         strip = build.badges([], {"curated_records": 1674, "metadata_only_records": 1962, "unindexed_candidates": 1920, "total_records": 3636, "as_of_utc": "2026-11-06T04:18:34Z"})
-        self.assertIn("[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-", strip)
-        self.assertIn("[![Reviewed papers and surveys](", strip)
+        self.assertIn("![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-", strip)
+        self.assertIn("![Reviewed papers and surveys](", strip)
         self.assertIn("2026--11--06%2004%3A18%20UTC", strip)
-        self.assertLessEqual(strip.count("[!["), 6)
+        self.assertLessEqual(strip.count("!["), 6)
         self.assertNotIn("workflow", strip)
         self.assertNotIn("3%2C636", strip)
         self.assertNotIn("1%2C962", strip)

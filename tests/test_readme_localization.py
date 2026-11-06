@@ -46,18 +46,19 @@ class ReadmeLocalizationTests(unittest.TestCase):
         self.assertRegex(explore, r"\| \[基准\]\(docs/benchmarks.md\) +\| .+ \| +1 \|")
         self.assertRegex(explore, r"\| \[按主题浏览研究\]\(docs/topics.md\) +\| .+ \| +1 \|")
         highlights = build.highlights(rows, edges, lang="zh")
-        self.assertIn("**基准** · [全部 1 项 →](docs/benchmarks.md)", highlights)
-        self.assertRegex(highlights, r"\| \[Bench\]\(https://example.com/Bench\) +\| +1 \| web +\|")
+        self.assertIn("**基准** · 目录中共 1 项", highlights)
+        self.assertRegex(highlights, r"\| \[Bench\]\(https://example.com/Bench\) +\| +1 \| Web +\|")
         self.assertIn("代码 MIT", highlights)
         recent = build.recently_reviewed(rows, {"github:a/b": "2026-10-17T00:00:00Z"}, lang="zh")
-        self.assertRegex(recent, r"\| 基准 +\| web +\| Bench summary. +\|")
+        self.assertRegex(recent, r"\| 基准 +\| Web +\| Bench summary. +\|")
 
     def test_badges_are_at_most_six_and_end_with_license(self):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
         self.assertLessEqual(badges.count("[!["), 6)
-        self.assertIn("](https://huggingface.co/datasets/AgPerry/awesome-cua)", badges)
+        self.assertIn("dataset-Hugging%20Face-", badges)
+        self.assertNotIn(")](", badges)
         self.assertIn("2026--10--17", badges)
-        self.assertTrue(badges.strip().endswith("(LICENSE)"))
+        self.assertTrue(badges.strip().endswith("labelColor=1E2233)"))
 
     def test_explore_table_pipes_line_up_in_both_languages(self):
         rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]

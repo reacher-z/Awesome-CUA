@@ -5868,6 +5868,20 @@
       "excluded": 13,
       "set_aside": 22,
       "unindexed": 21
+    },
+    {
+      "id": "benchmark-leads",
+      "name": "Computer-use benchmark leads",
+      "url": "https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md",
+      "snapshot": null,
+      "discovered": 0,
+      "indexed": 0,
+      "indexed_resources": 0,
+      "resolved_aliases": 0,
+      "curated": 0,
+      "excluded": 0,
+      "set_aside": 0,
+      "unindexed": 0
     }
   ],
   "primary_search": {

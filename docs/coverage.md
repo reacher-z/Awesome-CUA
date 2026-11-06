@@ -138,6 +138,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | OK · 2026-11-06 |
 | [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 71 | 70 | 2 | 22 | 27 | OK · 2026-11-06 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 61 | 55 | 13 | 22 | 21 | OK · 2026-11-06 |
+| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 0 | 0 | 0 | 0 | 0 | 0 | FAILED ·  |
 
 ## Paper-discovery query coverage
 

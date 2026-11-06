@@ -52,7 +52,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**2,146 curated resources** · **1,673 reviewed papers and surveys** · **103 discovery documents**
+**2,146 curated resources** · **1,673 reviewed papers and surveys** · **104 discovery documents**
 
 Evidence through `2026-11-06T09:00:05Z`. Only curated resources are counted above. Listed separately: **346 records awaiting review** have bibliographic verification only, and **1,971 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
 

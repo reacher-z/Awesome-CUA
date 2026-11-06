@@ -47,6 +47,7 @@ The second reading confirmed 1,191 of 1,224 first-reading exclusions (97.3%); th
 
 | Applied as | Papers |
 | --- | ---: |
+| proposal: annotation_pending | 492 |
 | proposal: reviewer_hold | 5 |
 | scope exclusion | 1,155 |
 
@@ -59,6 +60,7 @@ Each CSV lists one applied batch. It records the identifier, title, final decisi
 - [01.csv](2026-11-05-relevance-screening/01.csv): 388 papers — 1 proposal: reviewer_hold, 387 scope exclusion
 - [02.csv](2026-11-05-relevance-screening/02.csv): 387 papers — 2 proposal: reviewer_hold, 385 scope exclusion
 - [03.csv](2026-11-05-relevance-screening/03.csv): 385 papers — 2 proposal: reviewer_hold, 383 scope exclusion
+- [04.csv](2026-11-05-relevance-screening/04.csv): 492 papers — 492 proposal: annotation_pending
 
 ## Limits
 

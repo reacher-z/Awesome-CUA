@@ -178,7 +178,7 @@ class LearningGroupingTests(unittest.TestCase):
         self.assertIn("| 2 | · | · | · | · | 2 | · |", files["docs/environments.md"])
         self.assertIn("[learning](learning.md)", files["docs/coverage.md"])
         for language, label in (("en", "Learning resources"), ("zh", "学习资源")):
-            self.assertIn(f"[{label}](docs/learning.md) · **2**", build.explore(rows, report, language))
+            self.assertRegex(build.explore(rows, report, language), rf"\| \[{label}\]\(docs/learning.md\) +\| .+ \| +2 \|")
             self.assertNotIn("docs/learning.md", build.explore([self.pending], report, language))
         reviewed_at = {lesson["id"]: "2026-10-20T00:00:00Z" for lesson in self.lessons}
         self.assertIn("| Learning resources |", build.recently_reviewed(self.lessons, reviewed_at))

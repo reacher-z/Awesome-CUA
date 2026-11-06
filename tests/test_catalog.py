@@ -379,16 +379,18 @@ class ReadmeBlockTests(unittest.TestCase):
     def test_explore_counts_curated_resources(self):
         rows = [self.row("a", "A"), self.row("b", "B"), self.row("c", "C", status="metadata_verified"), self.row("d", "D", kind="paper")]
         table = build.explore(rows, {"bibliographic_records": 1234})
-        self.assertIn("[Benchmarks](docs/benchmarks.md) · **2**", table)
-        self.assertIn("[Research by topic](docs/topics.md) · **1** reviewed papers", table)
-        self.assertIn("[Full bibliography](docs/papers.md) · 1,234 paper and survey records, including those awaiting review", table)
+        self.assertRegex(table, r"\| \[Benchmarks\]\(docs/benchmarks.md\) +\| .+ \| +2 \|")
+        self.assertRegex(table, r"\| \[Research by topic\]\(docs/topics.md\) +\| .+ \| +1 \|")
+        self.assertRegex(table, r"\| \[Full bibliography\]\(docs/papers.md\) +\| .+ \| +1,234 \|")
 
-    def test_badges_count_only_curated_resources_and_label_the_rest(self):
-        strip = build.badges([], {"curated_records": 1674, "metadata_only_records": 1962, "unindexed_candidates": 1920, "total_records": 3636})
-        self.assertIn("[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-4856df", strip)
-        self.assertIn("[![Records awaiting review](https://img.shields.io/badge/awaiting%20review-1%2C962-", strip)
-        self.assertIn("[![Discovered candidates](https://img.shields.io/badge/candidates-1%2C920-", strip)
+    def test_badges_count_only_curated_resources_and_date_the_evidence(self):
+        strip = build.badges([], {"curated_records": 1674, "metadata_only_records": 1962, "unindexed_candidates": 1920, "total_records": 3636, "as_of_utc": "2026-11-06T04:18:34Z"})
+        self.assertIn("[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-", strip)
+        self.assertIn("[![Reviewed papers and surveys](", strip)
+        self.assertIn("2026--11--06%2004%3A18%20UTC", strip)
+        self.assertLessEqual(strip.count("[!["), 6)
         self.assertNotIn("3%2C636", strip)
+        self.assertNotIn("1%2C962", strip)
 
     def test_shield_escapes_separators(self):
         self.assertEqual(build.shield("evidence through", "2026-10-17", "1d76db"), "https://img.shields.io/badge/evidence%20through-2026--10--17-1d76db")

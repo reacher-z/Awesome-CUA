@@ -9,7 +9,7 @@
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C864-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2009%3A00%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/awesome-cua) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C146-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2009%3A00%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/awesome-cua) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 **“全球最全”是建设目标，而不是已经核实的结论。** 已审阅条目依据一手来源快照审阅；待审阅记录只核实了书目信息；候选只是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**1,864 条已审阅资源** · **1,391 篇已审阅论文与综述** · **103 个发现来源文档**
+**2,146 条已审阅资源** · **1,673 篇已审阅论文与综述** · **103 个发现来源文档**
 
-证据截至 `2026-11-06T09:00:05Z`。以上只统计已审阅资源。单独列出：**628 条待审阅记录**仅完成书目核实；**1,971 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。1,308 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-11-06T09:00:05Z`。以上只统计已审阅资源。单独列出：**346 条待审阅记录**仅完成书目核实；**1,971 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。1,308 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
 
 <!-- STATS:END -->
 
@@ -63,9 +63,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 浏览                              | 内容               |    条目 |
 | ------------------------------- | ---------------- | ----: |
-| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,368 |
+| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,645 |
 | [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,019 |
-| [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    23 |
+| [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    28 |
 | [学习资源](docs/learning.md)        | 课程与教程            |     2 |
 | [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |    86 |
 | [基准](docs/benchmarks.md)        | 评测环境与任务集         |    91 |
@@ -77,7 +77,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    20 |
 | [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    16 |
 
-**按平台：** [Web](docs/environments/web.md) **734** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
+**按平台：** [Web](docs/environments/web.md) **838** · [Desktop](docs/environments/desktop.md) **358** · [Windows](docs/environments/windows.md) **67** · [macOS](docs/environments/macos.md) **34** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **349** · [iOS](docs/environments/ios.md) **26** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **206**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -115,15 +115,15 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 <summary>展开重点资源表</summary>
 
 <!-- HIGHLIGHTS:START -->
-**从最新综述入门** · [全部 23 项 →](docs/surveys.md)
+**从最新综述入门** · [全部 28 项 →](docs/surveys.md)
 
-| 日期         | 综述                                                                                                                                                     | 环境             |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
-| 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366)                                        | unspecified    |
-| 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)                    | cross-platform |
-| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                                       | cross-platform |
-| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | unspecified    |
-| 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430)                  | unspecified    |
+| 日期         | 综述                                                                                                                                      | 环境             |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| 2026‑10‑21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | unspecified    |
+| 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366)                         | unspecified    |
+| 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)     | cross-platform |
+| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                        | cross-platform |
+| 2026‑08‑10 | [Software Engineering for and with GUI Agent](https://arxiv.org/abs/2608.09278)                                                         | web            |
 
 **基准** · [全部 91 项 →](docs/benchmarks.md)
 

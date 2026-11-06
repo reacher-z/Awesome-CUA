@@ -643,7 +643,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
     if placeholders != set(values):
         raise ValueError('Template placeholder contract changed')
     article = re.sub(r'\{\{([A-Z_]+)\}\}', lambda m: values[m.group(1)], template)
-    article = article.replace('<meta name="color-scheme" content="light">', '<meta name="color-scheme" content="light">\n  <link rel="canonical" href="' + CANONICAL + '">')
+    article = article.replace('<meta name="color-scheme" content="light dark">', '<meta name="color-scheme" content="light dark">\n  <link rel="canonical" href="' + CANONICAL + '">')
     if 'data-keys=' in article or '.cache/' in article or '/Users/' in article or '{{' in article:
         raise ValueError('Unresolved citation, template, or private path in final HTML')
     audit = DocumentAudit()

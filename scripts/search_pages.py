@@ -19,6 +19,7 @@ from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE
 import home_page
 import site_shell
+from survey_bundle import apply_site_shell
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
 from site_data import PAPER_KINDS, eligible, latest, newest_reviewed, record_modified, review_dates
 from sitemaps import write_sitemaps
@@ -128,7 +129,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     # A landing page lays out its own full-width sections; everything else shares the reading column.
     content=f'<main id="content" tabindex="-1">{"" if path=="/" else breadcrumbs}{body}</main>' if landing else f'<main id="content" class="reading-shell">{breadcrumbs}{body}</main>'
     skip='跳到正文' if lang.startswith('zh') else 'Skip to content'
-    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA research updates"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{' class="home"' if landing else ''}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
+    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{' class="home"' if landing else ''}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
     return document
 
 
@@ -339,7 +340,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     view=home_page.catalog_view(rows,reviewed,coverage,root)
     (destination/'data/search-index.json').write_text(json.dumps(home_page.search_index(view),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     if survey_page:
-        # The reviewed standalone article is already final: never normalize its bytes.
+        # The reviewed article gains the site header and footer here and is otherwise never normalized.
+        survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en'),top=site_shell.top(path='/survey/'),bottom=site_shell.bottom())
         if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
             raise ValueError('Survey page does not match its copied bytes')
         manifest.append(dict(survey_page))

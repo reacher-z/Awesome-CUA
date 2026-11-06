@@ -212,7 +212,7 @@ and updates only the manifest’s active-catalog comparison context for that bui
 Absent inputs remove the owned optional downloads on the next publication.
 
 When present, the JSONL and manifest appear in the data hub’s **Sources and review
-states** group; their schemas appear in **Data contracts**. They are not added to
+states** group; their schemas appear in **File schemas**. They are not added to
 the active catalog, resource pages, search recommendations, citations, or default
 RAG exports. A consumer can ingest them into a separate candidate collection
 keyed by `github-repository:<numeric ID>`, preserving review state and evidence.

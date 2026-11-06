@@ -555,6 +555,16 @@ test('the grid paper hero, title bar and window strips meet WCAG AA contrast in 
   assert.match(section,/\.row-cap\{[^}]*background:none/,'group labels have no fill');
   assert.ok(!/\.r3-band\{[^}]*background-image:linear/.test(section),'no grid on the benchmark band');
 });
+test('data page choice cards keep their text and buttons readable in both themes',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const tiles=[...site.matchAll(/--ad-f1:(#[0-9A-Fa-f]{6});--ad-f2:(#[0-9A-Fa-f]{6});--ad-f3:(#[0-9A-Fa-f]{6});--ad-f4:(#[0-9A-Fa-f]{6})/g)];
+  assert.ok(tiles.length>=2,'light and dark tile tokens');
+  for(const [index,match] of tiles.entries()){
+    const ink=index===0?'#212632':'#E2FDFF';
+    for(const tile of match.slice(1))assert.ok(contrast(ink,tile)>=4.5,`${ink} on ${tile}`);
+  }
+  for(const [label,button] of [['#FFFFFF','#4B59F2'],['#0C1023','#9BB1FF']])assert.ok(contrast(label,button)>=4.5,`${label} on ${button}`);
+});
 test('the announcement bar and its button meet WCAG AA contrast in both themes',()=>{
   const css=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
   const bar=css.match(/\.announce\{--a-bg:(#[0-9A-Fa-f]{6});--a-fg:(#[0-9A-Fa-f]{6})/);

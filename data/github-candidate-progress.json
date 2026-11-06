@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "c565014e55bee9a4b1bc65f64ae9a4521fa3c03afc92c2cfd8eb11db76e709e6",
+  "manifest_sha256": "b94e3c117d01535f27af17fa3ef7792b113a491ffe9bc07ec3049b6b0420fea5",
   "observation_snapshot_sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
   "provider": "github",
   "schema_version": 1,
@@ -2978,11 +2978,48 @@
           }
         },
         "id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03"
+      },
+      {
+        "active_records": 2492,
+        "curated_records": 1864,
+        "existing_seed_count": 738,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8038902,
+            "sha256": "1b27bfb505d22f53d7b60268bcb47217262324568f7020dfda3189c341e8489f"
+          },
+          "catalog.jsonl": {
+            "bytes": 7101851,
+            "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3394612,
+            "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "input_id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "kind": "existing",
+        "last_attempt": 706,
+        "next_index": 33,
+        "seed_count": 738,
+        "status": "pending"
+      },
       {
         "id": "existing:d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
         "input_id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
@@ -2990,7 +3027,7 @@
         "last_attempt": 702,
         "next_index": 33,
         "seed_count": 738,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
@@ -75493,6 +75530,28 @@
         "run_id": "run:a4e1e4015853e32048abc53a",
         "source_url": "https://api.github.com/search/repositories?q=topic%3Aui-agent+is%3Apublic+fork%3Afalse+created%3A2026-11-05..2026-11-06&per_page=100&page=1&sort=updated&order=asc",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T10:01:52.961579+00:00",
+        "id": "receipt:d481ee72402f69bb26ed3cafb008ccbb3c7dc703d3228d1f5f66692a37034ba3",
+        "incomplete_results": null,
+        "outcome": "quarantined",
+        "position": 33,
+        "query_id": "existing:0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "raw_body_retained": false,
+        "rejected_rows": {
+          "fork_or_unknown": 1
+        },
+        "reported_total": null,
+        "request_url_sha256": "98717661d8d09985db7e179975d41be72311d922649a527e9cdc36dc44701124",
+        "requested_at": "2026-11-06T10:01:52.696442+00:00",
+        "response_bytes": 17277,
+        "response_sha256": "5d768ea07bd787d4760a82bb39fcaae7999cbce104686db01389aa8cafc0fca2",
+        "returned_count": 1,
+        "run_id": "run:2218ef69f51e40db3186a0b0",
+        "source_url": null,
+        "status": 200
       }
     ],
     "runs": [
@@ -77848,9 +77907,42 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 196.33208040099998
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T10:01:55.707682+00:00",
+        "id": "run:2218ef69f51e40db3186a0b0",
+        "input_id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "new_unique_repositories": 0,
+        "rejected_rows": {
+          "fork_or_unknown": 1
+        },
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 1,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 141,
+          "reservations_before": 140,
+          "reservations_charged": 1,
+          "round_id": "cad857d5ac034cd48fc161744a26c5f6"
+        },
+        "started_at": "2026-11-06T10:01:44.878344+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 192.38715888000002
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "4c91cc4153ba970ccdd5bfd44f945ec54dbe13760a500f235b0453358a7d9ff3"
+  "state_sha256": "9af2a9f413ddae070e0730fbdf2d2dbadf39deb0df693e1ae4c15659670a67d9"
 }

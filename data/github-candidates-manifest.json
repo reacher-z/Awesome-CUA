@@ -4,7 +4,7 @@
     "role": "Comparison context only; not the observation source, selection, or approval.",
     "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
   },
-  "checkpoint_state_sha256": "4c91cc4153ba970ccdd5bfd44f945ec54dbe13760a500f235b0453358a7d9ff3",
+  "checkpoint_state_sha256": "9af2a9f413ddae070e0730fbdf2d2dbadf39deb0df693e1ae4c15659670a67d9",
   "count": {
     "unit": "repositories",
     "value": 10070
@@ -1691,6 +1691,31 @@
         }
       },
       "id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8038902,
+          "sha256": "1b27bfb505d22f53d7b60268bcb47217262324568f7020dfda3189c341e8489f"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
@@ -2806,10 +2831,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "input_id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
         "input_id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
@@ -7042,7 +7073,7 @@
     "request_outcomes": {
       "accepted": 615,
       "fetch_failed": 3,
-      "quarantined": 2,
+      "quarantined": 3,
       "rate_limited": 15,
       "redirect_not_followed": 69,
       "unavailable": 1
@@ -7899,20 +7930,32 @@
         "requests_attempted": 4,
         "started_at": "2026-11-06T09:00:27.696873+00:00",
         "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T10:01:55.707682+00:00",
+        "id": "run:2218ef69f51e40db3186a0b0",
+        "input_id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-06T10:01:44.878344+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "8efdc7b4385d40e6a441d5a7598068fb01a550532b691c804ae4ac633df97a33",
+  "source_ledger_sha256": "f9b720fd1d483292f1e2ea3f452ce55ce22edab2f2820996152d7182c9312619",
   "supporting_primary_bodies": 461,
   "verification": {
-    "baseline_checkpoint_sha256": "464775dba5c3ef008dddeca24c4f7077a2c242fb9eca95310617fdddae8d407e",
+    "baseline_checkpoint_sha256": "1d78fd68fbdd8017242f0a86fb3d36932cc4adc215ceecaac90f6d5fdee23613",
     "baseline_observation_sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 1,
-    "successful_receipts_replayed": 3
+    "primary_bodies_replayed": 0,
+    "successful_receipts_replayed": 0
   }
 }

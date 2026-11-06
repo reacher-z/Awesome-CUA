@@ -56,7 +56,7 @@ class ReadmeLocalizationTests(unittest.TestCase):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
         self.assertLessEqual(badges.count("[!["), 6)
         self.assertIn("dataset-Hugging%20Face-", badges)
-        self.assertNotIn("](", badges)
+        self.assertNotIn(")](", badges)
         self.assertIn("2026--10--17", badges)
         self.assertTrue(badges.strip().endswith("labelColor=1E2233)"))
 

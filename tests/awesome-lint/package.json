@@ -1,0 +1,10 @@
+{
+  "name": "awesome-cua-awesome-lint",
+  "private": true,
+  "description": "Pinned awesome-lint for the README lint gate.",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "awesome-lint": "2.2.1"
+  }
+}

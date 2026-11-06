@@ -49,6 +49,8 @@ jobs:
         run: python scripts/scan.py
       - name: Check generated data and review boundaries
         id: quality
+        env:
+          CATALOG_SCAN_QUALITY: "1"
         run: |
           python scripts/catalog.py validate
           python scripts/catalog.py build --check

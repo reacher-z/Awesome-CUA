@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "f25fb1f6b5ffd329fbd13d21d68aa039a44a38dbfe8467daba09aded05b52fca",
-  "observation_snapshot_sha256": "f9033fdbda9dbe5ccf2fc99a92f56e05741a433a4f5d19cfd8b37d1adc09a691",
+  "manifest_sha256": "7caf5ebd6f1a3292ff15fc487644b539307b3f8a9a09b1e0959411141348a6f4",
+  "observation_snapshot_sha256": "c6c837723aa4a09223dc17f75af2e8444f19e26d96e43a495ea6611071b9e6a3",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3286,11 +3286,48 @@
           }
         },
         "id": "c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4"
+      },
+      {
+        "active_records": 2620,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8191550,
+            "sha256": "f5d824ec71ffb2bf2b52c7e1f6e29c9dcbb5a4614a6defa7e14b85b1d7bdac4f"
+          },
+          "catalog.jsonl": {
+            "bytes": 7556379,
+            "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "input_id": "2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "kind": "existing",
+        "last_attempt": 753,
+        "next_index": 83,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4",
         "input_id": "c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4",
@@ -3298,7 +3335,7 @@
         "last_attempt": 748,
         "next_index": 78,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:b7bb7c185d6e65b4ea784d1c170ae9cb080463d05a6756ab7a8218bce0c4399b",
@@ -76826,6 +76863,114 @@
         "run_id": "run:f20715d87a268243dbe27fc6",
         "source_url": "https://api.github.com/repos/nut-tree/libnut-core",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          965415649
+        ],
+        "finished_at": "2026-11-06T19:14:15.196306+00:00",
+        "id": "receipt:ccf66961ff9c348b65a3f3ef2dadaa7e81a590699a144cb838e84387dd276f43",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 78,
+        "query_id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "855df53e751c30fc458e1d7ace3745b0d3bab842ec5a0fb309d434c211f9a592",
+        "requested_at": "2026-11-06T19:14:14.944527+00:00",
+        "response_bytes": 5974,
+        "response_sha256": "27b21bfe635fdd3dd89f476e3f2eff6d3532e3fb680e0f10225304982580b5a4",
+        "returned_count": 1,
+        "run_id": "run:5b788810ec376168ebd3517b",
+        "source_url": "https://api.github.com/repos/openai/codex",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          721995615
+        ],
+        "finished_at": "2026-11-06T19:14:21.715307+00:00",
+        "id": "receipt:c3e5a988b923bc1f2c09d890e34333fab1ab76ee01d23498bb6f041e6a096998",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 79,
+        "query_id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "630e926d0bd798a059f455ffa3b03363fbeecb8a3c4972bb1e494d2fa5204172",
+        "requested_at": "2026-11-06T19:14:21.456051+00:00",
+        "response_bytes": 6503,
+        "response_sha256": "b2249131ea1dc572f5bab74b73c53d829ea2c98528c306488393937862a585f9",
+        "returned_count": 1,
+        "run_id": "run:5b788810ec376168ebd3517b",
+        "source_url": "https://api.github.com/repos/opengvlab/internvl",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T19:14:28.210200+00:00",
+        "id": "receipt:0a9968e909ec170accae0378ad7a739e5b797462b8456c4755b5e93ec6c9fd77",
+        "incomplete_results": null,
+        "outcome": "unavailable",
+        "position": 80,
+        "query_id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "71608388684b74d0568642d4a971358754a91097ef918ad03414b1e03f3c2a9f",
+        "requested_at": "2026-11-06T19:14:27.967381+00:00",
+        "response_bytes": 118,
+        "response_sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+        "returned_count": null,
+        "run_id": "run:5b788810ec376168ebd3517b",
+        "source_url": null,
+        "status": 404
+      },
+      {
+        "accepted_repository_ids": [
+          666299222
+        ],
+        "finished_at": "2026-11-06T19:14:34.709698+00:00",
+        "id": "receipt:222b6c63bb3603f89ddde93b97aea31c555af0291487b6e3d976bfc63ff62272",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 81,
+        "query_id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "a4637b38c459ad2e4368e21221d8b9cedda4bb5fd93a5dcaef06811eb3581f2e",
+        "requested_at": "2026-11-06T19:14:34.478926+00:00",
+        "response_bytes": 7037,
+        "response_sha256": "7285d263d16b4922c9018c521996110c104291495711079ce74b51dd2824dbde",
+        "returned_count": 1,
+        "run_id": "run:5b788810ec376168ebd3517b",
+        "source_url": "https://api.github.com/repos/openinterpreter/openinterpreter",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          828348513
+        ],
+        "finished_at": "2026-11-06T19:14:41.270391+00:00",
+        "id": "receipt:5b0cb68a449888d7f7dc28115a14804ee2a4c7f9317409d43ab6ee21da360c4d",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 82,
+        "query_id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "c6cd30c7d77b85c0a3ec7306965278ab6b5a045d3446929d21c5986a5f60ea4a",
+        "requested_at": "2026-11-06T19:14:40.990835+00:00",
+        "response_bytes": 5322,
+        "response_sha256": "ed1dfc719d45e9dc42491a08991a64443bbfc142f594d165243903ea72780137",
+        "returned_count": 1,
+        "run_id": "run:5b788810ec376168ebd3517b",
+        "source_url": "https://api.github.com/repos/oriyor/assistantbench",
+        "status": 200
       }
     ],
     "runs": [
@@ -79528,9 +79673,40 @@
         "strict_replay": true,
         "unknown_requests": 2,
         "wall_seconds_budget": 192.194906876
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10104,
+        "before_unique_repositories": 10100,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T19:14:44.602473+00:00",
+        "id": "run:5b788810ec376168ebd3517b",
+        "input_id": "2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "new_unique_repositories": 4,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "51fbf842979346d8bcddad14590aa2db"
+        },
+        "started_at": "2026-11-06T19:14:05.417014+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 191.047778204
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "86e1635cb3dbdf5a9e43ec1021be2e23178d161e1231a632c03aef69736b9a13"
+  "state_sha256": "b9e710b8a2f9b8a40ca1f96cd42c64475460803a57625ae8987457d134533d01"
 }

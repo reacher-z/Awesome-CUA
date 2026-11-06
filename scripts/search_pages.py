@@ -407,7 +407,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     # Stars and scan time change far more often than most pages, so those pages read them from this one small file.
     (destination/'data/site-stamp.json').write_text(json.dumps({'stars':stars,'last_scan':last_scan})+'\n',encoding='utf-8')
     view=home_page.catalog_view(rows,reviewed,coverage,root)
-    (destination/'data/search-index.json').write_text(json.dumps(home_page.search_index(view),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    for filename,zh in (('search-index.json',False),('search-index.zh.json',True)):
+        (destination/'data'/filename).write_text(json.dumps(home_page.search_index(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     if survey_page:
         # The reviewed article gains the site header and footer here and is otherwise never normalized.
         survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en'),top=site_shell.top(path='/survey/'),bottom=site_shell.bottom())

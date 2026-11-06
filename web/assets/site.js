@@ -3,8 +3,8 @@
    copy/share · tabs · sheets · cursor glide. */
 (() => {
   const d = document, root = d.documentElement, $ = (s, c = d) => c.querySelector(s), $$ = (s, c = d) => [...c.querySelectorAll(s)];
-  const INDEX_URL = '/data/search-index.json', EXPLORE = '/explore/', CATALOG = '/catalog/';
   const ZH = (root.lang || '').startsWith('zh');
+  const INDEX_URL = ZH ? '/data/search-index.zh.json' : '/data/search-index.json', EXPLORE = '/explore/', CATALOG = '/catalog/';
   const store = {get(k) { try { return localStorage.getItem(k) } catch (e) { return null } },
     set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v) } catch (e) {} }};
   const sess = {get(k) { try { return sessionStorage.getItem(k) } catch (e) { return null } },
@@ -117,7 +117,7 @@
       IDX = j.rows.map(r => {
         const name = r[1], n = norm(name), x = r[12] || {};
         return {id: r[0], name, k: kinds[r[2]], env: r[3], y: r[4], f: r[5], d: r[6], m: r[7], t: r[8], ident: r[9], rv: r[10], lic: r[11],
-          p: x.p, l: x.l, u: x.u, n, words: n.split(' '), al: (x.a || []).map(norm), dn: norm(r[6])};
+          p: x.p, l: x.l, u: x.u, n, words: n.split(' '), al: (x.a || []).map(norm), dn: norm(x.e ? r[6] + ' ' + x.e : r[6])};
       });
       IDX.topics = j.topics; IDX.topicLabels = j.topic_labels; IDX.licences = j.licences;
       performance.mark('idx-ready'); performance.measure('index-load', 'idx-start', 'idx-ready');
@@ -125,9 +125,9 @@
     });
     return idxP;
   }
-  // Load once the page is idle after first paint (or earlier, on first focus).
-  const idle = window.requestIdleCallback || (f => setTimeout(f, 1200));
-  if ($('#finder,[data-browse],[data-lost]')) addEventListener('load', () => idle(() => loadIndex().catch(() => {})));
+  // The index waits for the first sign of a search, so a visitor who only reads the page never downloads or parses it.
+  const warmIndex = () => loadIndex().catch(() => {});
+  $$('#finder').forEach(el => ['pointerover', 'touchstart', 'keydown'].forEach(type => el.addEventListener(type, warmIndex, {once: true, passive: true})));
 
   function lev(a, b, max) { // Damerau-Levenshtein (restricted), early exit beyond max
     if (Math.abs(a.length - b.length) > max) return max + 1;
@@ -153,6 +153,7 @@
     if (ENV_WORDS[t] && (rec.env & ENV_WORDS[t])) return 24;
     if (rec.ident && norm(rec.ident).split(' ').some(w => w.startsWith(t))) return 22;
     if (rec.dn && (' ' + rec.dn).includes(' ' + t)) return 16;
+    if (rec.dn && /[一-鿿]/.test(t) && rec.dn.includes(t)) return 16;
     if (IDX.topics && rec.t.some(i => IDX.topics[i].startsWith(t))) return 14;
     const max = t.length >= 8 ? 2 : t.length >= 4 ? 1 : 0;
     if (max) for (const w of rec.words) { if (Math.abs(w.length - t.length) <= max && lev(t, w, max) <= max) return 30 - 6 * lev(t, w, max); }
@@ -338,21 +339,20 @@
       sync();
     }
     let raf;
-    // The first character brings the field under the header, so results are not hidden by the hero or the keyboard.
+    // The first character brings the whole window under the header: the hero and keyboard stop hiding results, and the title bar stays whole.
     let scrolledForQuery = false;
     input.addEventListener('input', () => {
       if (!input.value) scrolledForQuery = false;
       else if (!scrolledForQuery) {
         scrolledForQuery = true;
-        const headerEl = $('.site-header'), top = input.getBoundingClientRect().top - (headerEl ? headerEl.offsetHeight : 0) - 12;
-        if (Math.abs(top) > 4 && top > 0) scrollBy({top, behavior: reduce.matches ? 'auto' : 'smooth'});
+        const headerEl = $('.site-header'), box = input.closest('.window') || input, top = box.getBoundingClientRect().top - (headerEl ? headerEl.offsetHeight : 0) - 8;
+        if (Math.abs(top) > 4) scrollBy({top, behavior: reduce.matches ? 'auto' : 'smooth'});
       }
       const had = !!st.q; st.q = input.value.trim();
       if (st.q && !had && st.sort === 'mentions') { st.sort = 'relevance'; sortSel.value = 'relevance' }
       if (!st.q && had && st.sort === 'relevance') { st.sort = 'mentions'; sortSel.value = 'mentions' }
       cancelAnimationFrame(raf); raf = requestAnimationFrame(render);
     });
-    input.addEventListener('focus', () => loadIndex().catch(() => {}), {once: true});
     input.addEventListener('keydown', e => {
       if (e.key === 'ArrowDown') { const a = $('.row-name a', list); if (a) { e.preventDefault(); a.focus() } }
       if (e.key === 'Escape') { if (input.value) { input.value = ''; input.dispatchEvent(new Event('input')) } else input.blur() }

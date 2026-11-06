@@ -1405,6 +1405,7 @@ html:not(.js) .data-try .tabs{display:none}
 @media (min-width:1100px){.cat-tiles-5{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media (max-width:560px){.list-all-head{align-items:stretch}.list-tools{flex-basis:100%;flex-wrap:wrap;justify-content:flex-start}.list-filter{flex-basis:100%;max-width:none}.list-filter input{font-size:16px}.cat-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.cat-tiles b{font-size:1.1875rem}.cat-tiles a{padding:12px 14px}.cat-tiles-5 li:last-child{grid-column:1/-1}}
 
+.panel-foot .btn{min-height:36px}
 /* ==========================================================================
    Touch: phones, tablets and any coarse pointer get 44 px targets. A mouse keeps the compact layout.
    Text links in a dense row keep their size and take a larger hit area from ::after.
@@ -1440,7 +1441,6 @@ html:not(.js) .data-try .tabs{display:none}
   .lb-list a.lb{width:44px;height:44px}
 }
 @media (max-width:1023px){.js .menu-btn{min-width:44px;width:44px}.head-tools .icon-btn:not(.lang){min-width:44px;width:44px}.search-trigger{width:44px}}
-.panel-foot .btn{min-height:36px}
 
 /* ---------- focus: a ring that reads against the band it sits on ---------- */
 .r3-band{--focus:#FFFFFF}
@@ -1453,3 +1453,17 @@ html:not(.js) .data-try .tabs{display:none}
   .r3-tile:hover,.r3-cell:hover,.r3-envs li a:hover,.btn:active,.star-btn:hover .i,.star-btn:active,.star-note a:hover .i,.is-scrolled .brand{transform:none}
   .skel{animation:none}
 }
+
+/* ---------- Chinese: taller lines, no negative tracking, a serif for titles on every system ---------- */
+html:lang(zh-CN){--font-display:"EB Garamond","EB Garamond Fallback","Songti SC","Noto Serif CJK SC","Noto Serif SC","Source Han Serif SC",STSong,SimSun,Georgia,serif;line-break:strict;text-autospace:normal}
+html:lang(zh-CN) :is(h1,h2,h3){letter-spacing:0;line-height:1.25}
+html:lang(zh-CN) .hero h1{line-height:1.12}
+html:lang(zh-CN) :is(p,li,dd){text-wrap:pretty}
+html:lang(zh-CN) :is(.row-desc,.data-intro,.list-intro,.lede,.data-choice>p,.r3-tile-eg,.sec-head p){line-height:1.65}
+html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
+
+/* The star count arrives after first paint on most pages; its width is held so the header does not move. */
+.js .star-btn .star-n:empty{min-width:calc(3ch + 7px)}
+
+/* Sections far below the first screen skip layout until they come near. */
+.r3-cats,.r3-latest,.r3-papers,.r3-term,.dir-strip{content-visibility:auto;contain-intrinsic-size:auto 640px}

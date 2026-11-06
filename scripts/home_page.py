@@ -10,6 +10,7 @@ from paper_library import library_years
 from publication_metadata import record_date_text, record_year
 from site_config import SITE
 from site_shell import CONTEXT, HF_DATASET, ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_button, star_count, star_note
+from zh_summaries import zh_summary
 
 # Tab and icon order. The labels stay beside the icons so the rows, tabs and search results agree.
 KINDS = {  # key: (singular, plural, zh label, icon)
@@ -42,7 +43,7 @@ ENV_ICON = {"web": "web", "desktop": "desktop", "mobile": "mobile", "cross": "cr
 # Pinned editorially; WebsiteBench has no catalog record yet, so it keeps the Unreviewed stamp and links to its repository.
 CLAWBENCH = "github:tiger-ai-lab/clawbench"
 WEBSITEBENCH = {"id": "github:tiger-ai-lab/websitebench", "name": "WebsiteBench", "kind": "benchmark",
-                "summary": "Rebuild full-stack websites through browser exploration.", "environments": ["web"],
+                "summary": "Rebuild full-stack websites through browser exploration.", "summary_zh": "通过浏览器探索重建全栈网站。", "environments": ["web"],
                 "url": "https://github.com/TIGER-AI-Lab/WebsiteBench", "href": "https://github.com/TIGER-AI-Lab/WebsiteBench",
                 "relations": [], "details": {}, "review_status": "candidate"}
 # Examples are shown only when a reviewed record of that name exists.
@@ -190,13 +191,15 @@ def catalog_view(rows, reviewed, coverage, root):
             "leaderboards": sum(bool(record["details"].get("leaderboard_url")) for record in reviewed)}
 
 
-def search_index(view):
+def search_index(view, zh=False):
     """Compact array index for the search field and palette: reviewed records only.
+
+    The Chinese index shows Chinese summaries and keeps the English in extra["e"], so English terms still match.
 
     Row: [id, name, kindIndex, envBits, year, flags, summary, mentions, topicIdx[], ident, reviewedDay, licence, extra?]
     flags: 1 = curated, 2 = official leaderboard, 4 = authors omitted
     extra: {"a": aliases, "p": arXiv ID of the documenting paper, "l": leaderboard URL, "u": primary source URL when the
-    ID does not give it}, present only when non-empty.
+    ID does not give it, "e": English summary}, present only when non-empty.
     """
     reviewed, by_id = view["reviewed"], view["by_id"]
     topic_keys = sorted({topic for record in reviewed for topic in record["topics"]})
@@ -220,8 +223,12 @@ def search_index(view):
             extra["p"] = paper["id"].split(":", 1)[1]
         if leaderboard:
             extra["l"] = leaderboard
+        text = clip(record["summary"], 120)
+        shown = clip(zh_summary(record), 120) if zh else text
+        if shown != text:
+            extra["e"] = text
         rows.append([record["id"], clean_title(record["name"]), KIND_ORDER.index(record["kind"]), bits,
-                     year_of(record, by_id), flags, "" if is_paper else clip(record["summary"], 120),
+                     year_of(record, by_id), flags, "" if is_paper else shown,
                      len(view["mentions"][record["id"]]), [topic_keys.index(topic) for topic in record["topics"]],
                      identity(record), int(reviewed_day or 0), licence_keys.index(licence) if licence else -1]
                     + ([extra] if extra else []))
@@ -270,7 +277,7 @@ def compact_row(record, zh=False, date="", attrs="", anchor=True, kind=True) -> 
     target = f' id="r-{slug(record["id"])}"' if anchor else ""
     return f'''<li class="row"{target}{attrs}>
 {kind_tag(record["kind"], zh) if kind else ""}<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span>{dated}</h3>
-<p class="row-desc">{esc(record.get("summary") or "")}</p></div>
+<p class="row-desc">{esc(zh_summary(record) if zh else record.get("summary") or "")}</p></div>
 <div class="row-side">{env_tag(record["environments"], zh)}{stamp(record["review_status"], zh)}</div>
 </li>'''
 

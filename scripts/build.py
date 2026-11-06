@@ -147,6 +147,8 @@ def source_records(with_scope=False):
             "last_verified_at": ev["retrieved_at"], "notes": editorial.get("notes", ""), "details": details}
         if base.get("authors_omitted") is True:
             row["authors_omitted"] = True
+        if editorial.get("task_classes"):
+            row["task_classes"] = sorted(set(editorial["task_classes"]))
         records[rid] = row
         row['links'] = publication_links(row)
     changes = {row['id'] for row in read_jsonl(DATA/'metadata-updates.jsonl')}
@@ -162,7 +164,8 @@ FIELD_TYPES = {"id": str, "name": str, "kind": str, "url": str, "aliases": list,
     "published_at": (str, type(None)), "updated_at": (str, type(None)), "authors": list, "identifiers": dict, "links": list, "relations": list, "licenses": dict, "evidence": list,
     "last_verified_at": str, "notes": str, "details": dict}
 # Optional fields; authors_omitted records that the catalog lists no authors for the record.
-OPTIONAL_FIELD_TYPES = {"authors_omitted": bool}
+OPTIONAL_FIELD_TYPES = {"authors_omitted": bool, "task_classes": list}
+TASK_CLASS_KINDS = {"benchmark", "dataset", "paper", "survey"}
 EVIDENCE_FIELDS = {"role", "method", "supports", "url", "retrieved_at", "sha256"}
 # Read from the published contract, so a new receipt method is declared in one place.
 EVIDENCE_METHODS = set(read_json(ROOT / "schemas/resource.schema.json")["properties"]["evidence"]["items"]["properties"]["method"]["enum"])
@@ -230,6 +233,13 @@ def validate_records(rows):
             error("missing fields " + ", ".join(sorted(missing)))
         if unknown := r.keys() - required - OPTIONAL_FIELD_TYPES.keys():
             error("unknown fields " + ", ".join(sorted(unknown)))
+        if "task_classes" in r:
+            known = {c["id"] for c in read_json(DATA / "task-classes.json", {"classes": []})["classes"]}
+            classes = r["task_classes"]
+            if r.get("kind") not in TASK_CLASS_KINDS or r.get("review_status") != "curated":
+                error("task_classes belongs to a curated benchmark, dataset, paper or survey")
+            if not classes or classes != sorted(set(classes)) or not all(isinstance(c, str) for c in classes) or set(classes) - known:
+                error("task_classes must be a sorted, non-empty list of unique IDs from data/task-classes.json")
         if "authors_omitted" in r:
             edition = r.get("details", {}).get("publication")
             if r["authors_omitted"] is not True or r.get("authors") or isinstance(edition, dict) and edition.get("authors"):

@@ -85376,5 +85376,639 @@
     "editorial_reviewed": false,
     "review_note": "Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation.",
     "reviewed_sha256": "ba07c58aeb5a1d0e47c118fecd2d24a5271ffb3575109f6dfe0e5d197290e358"
+  },
+  {
+    "id": "github:injaneity/pi-computer-use",
+    "name": "pi-computer-use",
+    "kind": "tool",
+    "url": "https://github.com/injaneity/pi-computer-use",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Pi extension that gives agents tools to find app windows, observe and search visible controls, click, type, scroll and wait for UI changes in desktop software.",
+    "notes": "The macOS helper requires macOS 14 or newer. On Linux it runs inside a graphical session with a working AT-SPI2 accessibility bus. MIT per the README.",
+    "verify_terms": [
+      "pi-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/injaneity/pi-computer-use/67e9e2f77643f84605b738a3198048a88e92190e/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a3e0a2af0b4ca7e87a090404ca6a114af1abd9946035db6c0a55f570d50678ea",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:test-zeus-ai/testzeus-hercules",
+    "name": "TestZeus Hercules",
+    "kind": "agent",
+    "url": "https://github.com/test-zeus-ai/testzeus-hercules",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Open-source testing agent that takes Gherkin features and executes them end to end on web applications through Playwright.",
+    "notes": "Declared license AGPL-3.0; release 1.0.2 dated 2026-08-03.",
+    "verify_terms": [
+      "Hercules"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/test-zeus-ai/testzeus-hercules/269c053fbf6a4a33b5a94c3f71b6333bd6c476f7/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "78cd6bcf71e7c1af4ce4ca7de84b76656e9e57d51b72fc02b5e415a78c11976b",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:refreshdotdev/web-eval-agent",
+    "name": "web-eval-agent",
+    "kind": "tool",
+    "url": "https://github.com/refreshdotdev/web-eval-agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent.",
+    "notes": "The README says the project has been discontinued and the repository is archived. It required an operative.sh API key. Declared license Apache-2.0.",
+    "verify_terms": [
+      "web_eval_agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c26dc65b35833e8583e34d0d511a288c4909e4aa88324055663cf329c258ac0d",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:testdriverai/testdriverai",
+    "name": "TestDriver SDK",
+    "kind": "framework",
+    "url": "https://github.com/testdriverai/testdriverai",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "evaluation",
+      "sandbox"
+    ],
+    "summary": "Vitest plugin that spawns ephemeral devices and uses vision-based LLMs to build end-to-end tests of web apps, desktop apps and browser extensions.",
+    "notes": "Release v7.4.5 dated 2026-02-27. GitHub reports no license for the repository.",
+    "verify_terms": [
+      "TestDriver"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/testdriverai/testdriverai/97d4d35d7727b2f83b1a73282aabf2e6e74824a2/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ad59eb7c4a51282e1f3a06e906033df38d3056ced11fd0666d8f7e77f5c96db2",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:yliust/tactile",
+    "name": "Tactile",
+    "kind": "tool",
+    "url": "https://github.com/yliust/Tactile",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Skill, protocol and tool layer that has agents operate software through accessibility semantics first, reading roles, names and states before reaching for screenshots.",
+    "notes": "The first version connects to Codex as a skill, with a dedicated macOS MCP server as the recommended entry point. PolyForm Noncommercial 1.0.0 per LICENSE.",
+    "verify_terms": [
+      "accessibility-first operating layer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yliust/Tactile/73b77faece08752edd360e233f1184c44dcba701/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "889e3b0737fbca695403362cbd9e2868d0d4c3e2b261cd8db88ebf0941db2eb4",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:gobii-ai/gobii-platform",
+    "name": "Gobii Platform",
+    "kind": "infrastructure",
+    "url": "https://github.com/gobii-ai/gobii-platform",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "long-horizon"
+    ],
+    "summary": "Self-hostable platform for always-on agents based on browser-use, adding headed browsers, persistent profiles, proxy-aware routing, schedules and event triggers.",
+    "notes": "Release 2.31.0 dated 2026-08-11. The hosted product is at gobii.ai. Declared license MIT.",
+    "verify_terms": [
+      "Production Browser Runtime"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gobii-ai/gobii-platform/c9929bf8ea59b4695b99dcab59aa6c97a09c5bdb/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5d31163a404be6ae48567ad0bbbb522165d7f31564162b5f7b70becdf2c5b861",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:saik0s/mcp-browser-use",
+    "name": "mcp-server-browser-use",
+    "kind": "tool",
+    "url": "https://github.com/Saik0s/mcp-browser-use",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "MCP server that wraps browser-use so that an MCP client can automate a real browser, with a CLI, a web dashboard and a deep research mode.",
+    "notes": "MIT per the README badge and LICENSE. The skills system is marked experimental.",
+    "verify_terms": [
+      "mcp-server-browser-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Saik0s/mcp-browser-use/03e0dad7f429568f922e0cc09b72849472cb867c/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "a0b22d3d9bf5a001cc3329c032df58e545f8e7d45e952cac8be133d05cc4b0a0",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:executeautomation/mcp-playwright",
+    "name": "Playwright MCP Server (ExecuteAutomation)",
+    "kind": "tool",
+    "url": "https://github.com/executeautomation/mcp-playwright",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Community MCP server that gives LLMs Playwright browser automation for interacting with web pages, taking screenshots, generating test code and running JavaScript.",
+    "notes": "The README describes v1.0.10, which adds 143 device presets. Declared license MIT. It is a different project from Microsoft Playwright MCP.",
+    "verify_terms": [
+      "Playwright MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/executeautomation/mcp-playwright/2349c2891e7c499c8c07b7d78c7f3fb4c797a1da/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "2ba1c85ad3facbe144b8b94d6d3256c45c3e43a0073a683073ff03d55aa9a8c3",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:agent0ai/agent-zero",
+    "name": "Agent Zero",
+    "kind": "agent",
+    "url": "https://github.com/agent0ai/agent-zero",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "sandbox",
+      "human-in-the-loop"
+    ],
+    "summary": "Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps.",
+    "notes": "MIT per LICENSE. Release v2.15 dated 2026-11-01. Needs a supported AI account, a provider API key or a local model server.",
+    "verify_terms": [
+      "Agent Zero"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b776433681d02bbef0d04cc1da916d8ca0b80dbd1bf4fb518b040377afc9e33a",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:seleniumbase/seleniumbase",
+    "name": "SeleniumBase",
+    "kind": "framework",
+    "url": "https://github.com/seleniumbase/SeleniumBase",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "evaluation"
+    ],
+    "summary": "Python browser automation framework for web crawling, end-to-end testing and scraping, with a recorder that generates tests and stealth options.",
+    "notes": "Release v4.57.1 dated 2026-11-05. Declared license MIT.",
+    "verify_terms": [
+      "SeleniumBase"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/seleniumbase/SeleniumBase/b806f54ab0c998c90654b59a817d959f7ff7920c/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "972f3699b8b5b3584a7ec980fcb1f464be33cddd822b2012e946f38ddb808116",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:eyalzh/browser-control-mcp",
+    "name": "Browser Control MCP",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "human-in-the-loop",
+      "safety-security"
+    ],
+    "summary": "An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent.",
+    "notes": "The source describes the project as experimental. It does not support webpage modification, page interactions, or arbitrary scripting. Screenshots require authorization for each tab.",
+    "verify_terms": [
+      "Capture a screenshot of a tab's visible area"
+    ],
+    "url": "https://github.com/eyalzh/browser-control-mcp",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "034f5ea4d50e3e2a3e01387b0a8bc91a6324e6d79775c852a06e60e0436c9b1a",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:cashew-labs/libretto",
+    "name": "Libretto",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Libretto is a toolkit that gives coding agents a live browser and CLI to inspect pages, record user actions, build scripts, and debug web integrations.",
+    "notes": "The source declares an MIT license. It describes the project as early stage and says APIs may change before version 1.0.",
+    "verify_terms": [
+      "token-efficient CLI"
+    ],
+    "url": "https://github.com/cashew-labs/libretto",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cashew-labs/libretto/41ab782ccea765d7a9a3c9b56b1b2586723962e3/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "740b0a01d479cdfbdfb1880feb39f83dca391a7661e093a3c1c790c03b548f2f",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:berstend/puppeteer-extra",
+    "name": "puppeteer-extra",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "A modular plugin framework for Puppeteer, maintained in a monorepo with plugins and related packages.",
+    "notes": "The monorepo also includes playwright-extra for Playwright support. It uses Lerna and Yarn workspaces.",
+    "verify_terms": [
+      "modular plugin framework"
+    ],
+    "url": "https://github.com/berstend/puppeteer-extra",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/berstend/puppeteer-extra/39248f1f5deeb21b1e7eb6ae07b8ef73f1231ab9/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "0f0b47a7506bf234286008258421ab6be6b0532ef6fc972c88bae33bd257beb7",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:chromedp/chromedp",
+    "name": "chromedp",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "A Go package for driving browsers through the Chrome DevTools Protocol, with actions for navigating pages, interacting with elements, and reading page content.",
+    "notes": "It needs Go 1.25 or newer and no external driver. Chrome runs in headless mode by default.",
+    "verify_terms": [
+      "Package `chromedp` drives browsers"
+    ],
+    "url": "https://github.com/chromedp/chromedp",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chromedp/chromedp/94001c576609403535c275b745d4d8485976b4aa/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c87f689b7e0cf2d4d46c5ef4991deb01dbf4ae66eca3691c2e3bf7b992835ca9",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:codeceptjs/codeceptjs",
+    "name": "CodeceptJS",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "CodeceptJS is an end-to-end testing framework that expresses browser and mobile interactions as user-facing steps through helpers such as Playwright, WebDriver, and Appium.",
+    "notes": "The source declares an MIT license. CodeceptJS 4.2 requires Node.js 22.12.0 or later.",
+    "verify_terms": [
+      "CodeceptJS 4.2 requires Node.js"
+    ],
+    "url": "https://github.com/codeceptjs/CodeceptJS",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/codeceptjs/CodeceptJS/744dba8487487e78a6d561e6045039f88d91d050/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "8a0c16fdaca23041e69dc0ba2be73c25a905f045e63808629ae0821b6c5f63af",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:alumnium-hq/alumnium",
+    "name": "Alumnium",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "An AI-native end-to-end testing library and MCP that lets agents interact with applications through automation drivers and verify assertions.",
+    "notes": "The README shows Java dependencies at version 0.24.0 and installation commands for Python and TypeScript. It works with Appium, Maestro, Playwright, and Selenium.",
+    "verify_terms": [
+      "End-to-end Testing Harness"
+    ],
+    "url": "https://github.com/alumnium-hq/alumnium",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alumnium-hq/alumnium/286b211c33c6fec5399aca6b7b0fc6e6ed206090/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "200e675348aa332b3946a636249049532580146bb8f81afa71f46430fe770d31",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:teamcapybara/capybara",
+    "name": "Capybara",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Capybara is a web application acceptance testing framework that simulates user interactions through browser and headless drivers.",
+    "notes": "Capybara requires Ruby 3.0.0 or later. Its default RackTest driver does not support JavaScript or remote applications.",
+    "verify_terms": [
+      "Capybara requires Ruby 3.0.0 or later."
+    ],
+    "url": "https://github.com/teamcapybara/capybara",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/teamcapybara/capybara/265d2d175f4be3ddf785d7597bdfd19b231f844a/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "f0a832e3a8c188d7bf534e44afd6a1072953d593cb00d25eed323f02266e7808",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:mayt/browsergpt",
+    "name": "BrowserGPT",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "BrowserGPT is a browser automation script that uses GPT-4 to generate Playwright code for navigating and interacting with web pages from natural-language tasks.",
+    "notes": "The project is licensed under the MIT License. Generated code may fail to execute, and some websites may be too large to fit in a smaller model's prompt.",
+    "verify_terms": [
+      "GPT-4 generates code snippets"
+    ],
+    "url": "https://github.com/mayt/BrowserGPT",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mayt/BrowserGPT/86b56d6ba7b7d9121710704301940cb69f000632/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "d480f32c47f028dd5b5022e74c9496b2aebfdddf533c69de4904e422f33343e2",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:foundationagents/openmanus",
+    "name": "OpenManus",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "OpenManus is an open-source agent framework that runs tasks from a terminal and integrates browser execution and screenshots through Browser Use.",
+    "notes": "The README declares an MIT license. It requires LLM API configuration and describes its multi-agent version as unstable.",
+    "verify_terms": [
+      "browser_exec"
+    ],
+    "url": "https://github.com/FoundationAgents/OpenManus",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/FoundationAgents/OpenManus/3309bf4e416fb1c74b008f3e86494439a31bad53/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "47782e69584033d58236b5447fc61fd054170374d0c46ccdb863dad417423b57",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:ariya/phantomjs",
+    "name": "PhantomJS",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "evaluation",
+      "observability"
+    ],
+    "summary": "PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity.",
+    "notes": "The README identifies version 2.1 as the latest stable release and says development is suspended until further notice. It declares a BSD license and notes that third-party code has separate license information.",
+    "verify_terms": [
+      "Page automation"
+    ],
+    "url": "https://github.com/ariya/phantomjs",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "e74921d808484f2824f883775147c35ae635338cfbfa3baa405bc58cb1b67d37",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:qwenlm/qwen-code",
+    "name": "Qwen Code",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Qwen Code is an open-source coding agent that supports desktop automation through computer-use tools alongside terminal, editor, web, and chat interfaces.",
+    "notes": "The Web UI and daemon are marked experimental. The daemon listens on loopback without bearer authentication by default.",
+    "verify_terms": [
+      "Computer Use (desktop automation)"
+    ],
+    "url": "https://github.com/QwenLM/qwen-code",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/QwenLM/qwen-code/3b39fc2a19bc2063df400e140d0bcdd7505e6152/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "7c35dd6657f02f3260e507445a0b4b4eb7b580e153e185f7daa5dd85c8e6a16b",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "AIOS",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "memory"
+    ],
+    "summary": "AIOS is an agent operating system whose computer-use architecture provides a virtual machine controller and MCP server for agents interacting with graphical computer environments.",
+    "notes": "The computer-use setup calls for a virtualized environment with a GUI. The README says local and remote kernel modes are supported; other deployment modes are ongoing.",
+    "verify_terms": [
+      "Computer-use Specialized Architecture"
+    ],
+    "id": "github:agiresearch/aios",
+    "url": "https://github.com/agiresearch/AIOS",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agiresearch/AIOS/292d98f78c835499df18cdb6de6325bba1895862/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "b830a4338058247c5739e035e67e419793a5275d8d6c84dd3a12f52883d02c5a",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ConnectOnion",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "memory",
+      "human-in-the-loop"
+    ],
+    "summary": "ConnectOnion is a CLI and Python framework that gives agents commands for connected accounts, a logged-in browser, files, and chat apps.",
+    "notes": "The README describes co rem version 1.9.2 and says its daily scheduling currently requires macOS. It says consequential writes preview until --yes, while risky co ai tool calls wait for approval.",
+    "verify_terms": [
+      "a logged-in browser"
+    ],
+    "id": "github:openonion/connectonion",
+    "url": "https://github.com/openonion/connectonion",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openonion/connectonion/9f80e63689da990cd423f8996960177a871f534a/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "32c34db17cfbce0a602412f1ee854521cbf313e05fe0ccc5f222f7411a0d7d16",
+    "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "id": "github:firecrawl/firecrawl",
+    "name": "Firecrawl",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Firecrawl is an API that lets agents search and scrape web pages, then interact with pages through prompts or code.",
+    "notes": "It is open source and available as a hosted service. Its Interact feature supports actions such as clicking, scrolling, writing, waiting, and pressing keys.",
+    "verify_terms": [
+      "Click, scroll, write, wait, and press"
+    ],
+    "url": "https://github.com/firecrawl/firecrawl",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/firecrawl/firecrawl/edf02642c8f002576e9f26b9bbbb7b327313558c/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
+    "reviewed_at": "2026-11-06T16:36:26Z"
   }
 ]

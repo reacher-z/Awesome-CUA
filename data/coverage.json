@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-06T15:45:10Z",
-  "total_records": 2594,
-  "curated_records": 2146,
+  "as_of_utc": "2026-11-06T16:36:39Z",
+  "total_records": 2618,
+  "curated_records": 2170,
   "bibliographic_records": 2121,
   "arxiv_active_records": 2107,
   "non_arxiv_bibliographic_records": 14,
@@ -2643,41 +2643,41 @@
   ],
   "uncurated_linked_papers": [],
   "by_kind": {
-    "agent": 45,
+    "agent": 49,
     "benchmark": 91,
     "company": 16,
     "dataset": 86,
-    "framework": 79,
-    "infrastructure": 14,
+    "framework": 87,
+    "infrastructure": 16,
     "learning": 2,
     "model": 98,
     "paper": 2093,
     "product": 20,
     "survey": 28,
-    "tool": 22
+    "tool": 32
   },
   "curated_by_environment": {
-    "android": 349,
+    "android": 350,
     "cross-platform": 206,
-    "desktop": 358,
+    "desktop": 364,
     "harmonyos": 4,
     "ios": 26,
-    "linux": 55,
-    "macos": 34,
+    "linux": 57,
+    "macos": 36,
     "unspecified": 630,
-    "web": 838,
-    "windows": 67
+    "web": 858,
+    "windows": 68
   },
   "curated_by_kind_and_environment": {
     "agent": {
       "android": 17,
       "cross-platform": 1,
-      "desktop": 16,
+      "desktop": 18,
       "ios": 2,
-      "linux": 1,
+      "linux": 2,
       "macos": 2,
       "unspecified": 1,
-      "web": 11,
+      "web": 14,
       "windows": 5
     },
     "benchmark": {
@@ -2706,24 +2706,24 @@
       "windows": 4
     },
     "framework": {
-      "android": 22,
+      "android": 23,
       "cross-platform": 7,
-      "desktop": 23,
+      "desktop": 24,
       "harmonyos": 1,
       "ios": 1,
       "linux": 6,
       "macos": 1,
       "unspecified": 2,
-      "web": 39,
+      "web": 47,
       "windows": 2
     },
     "infrastructure": {
       "android": 3,
-      "desktop": 9,
+      "desktop": 10,
       "ios": 1,
       "linux": 4,
       "macos": 2,
-      "web": 5,
+      "web": 6,
       "windows": 1
     },
     "learning": {
@@ -2768,17 +2768,17 @@
     "tool": {
       "android": 5,
       "cross-platform": 1,
-      "desktop": 4,
+      "desktop": 6,
       "ios": 2,
-      "linux": 2,
-      "macos": 2,
+      "linux": 3,
+      "macos": 4,
       "unspecified": 3,
-      "web": 11,
-      "windows": 4
+      "web": 19,
+      "windows": 5
     }
   },
   "license_declarations_by_scope": {
-    "code": 190,
+    "code": 204,
     "data": 61,
     "weights": 56,
     "document": 8

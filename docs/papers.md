@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,099; 865 ⭐) · [2025](#2025) (620; 501 ⭐) · [2024](#2024) (279; 205 ⭐) · [2023](#2023) (70; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (13; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,099; 865 ⭐) · [2025](#2025) (621; 501 ⭐) · [2024](#2024) (279; 205 ⭐) · [2023](#2023) (71; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (13; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -1662,6 +1662,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2025-03-16 | [STEVE: A Step Verification Pipeline for Computer-use Agent Training](https://arxiv.org/abs/2503.12532) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [reinforcement-learning](topics/reinforcement-learning.md) |
 | 2025-03-16 | [AI Agents: Evolution, Architecture, and Real-World Applications](https://arxiv.org/abs/2503.12687) | metadata |  |
 | 2025-03-14 | [DeskVision: Large Scale Desktop Region Captioning for Advanced GUI Agents](https://arxiv.org/abs/2503.11170) | ⭐ reviewed | [data-generation](topics/data-generation.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
+| 2025-03-14 | [Cerebrum (AIOS SDK): A Platform for Agent Development, Deployment, Distribution, and Discovery](https://arxiv.org/abs/2503.11444) | metadata |  |
 | 2025-03-14 | [API Agents vs. GUI Agents: Divergence and Convergence](https://arxiv.org/abs/2503.11069) | ⭐ reviewed | [automation](topics/automation.md), [survey](topics/survey.md), [tool-integration](topics/tool-integration.md) |
 | 2025-03-13 | [MIP against Agent: Malicious Image Patches Hijacking Multimodal OS Agents](https://arxiv.org/abs/2503.10809) | ⭐ reviewed | [safety-security](topics/safety-security.md), [screen-understanding](topics/screen-understanding.md) |
 | 2025-03-12 | [Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks](https://arxiv.org/abs/2503.09572) | ⭐ reviewed | [data-generation](topics/data-generation.md), [long-horizon](topics/long-horizon.md), [planning](topics/planning.md) |
@@ -2031,6 +2032,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2023-12-21 | [AppAgent: Multimodal Agents as Smartphone Users](https://arxiv.org/abs/2312.13771) | ⭐ reviewed | [memory](topics/memory.md), [mobile-navigation](topics/mobile-navigation.md) |
 | 2023-12-20 | [ASSISTGUI: Task-Oriented Desktop Graphical User Interface Automation](https://arxiv.org/abs/2312.13108) | ⭐ reviewed | [evaluation](topics/evaluation.md), [planning](topics/planning.md) |
 | 2023-12-18 | [VisionTasker: Mobile Task Automation Using Vision Based UI Understanding and LLM Task Planning](https://arxiv.org/abs/2312.11190) | ⭐ reviewed | [mobile-navigation](topics/mobile-navigation.md), [planning](topics/planning.md), [screen-understanding](topics/screen-understanding.md) |
+| 2023-12-18 | [From Google Gemini to OpenAI Q* (Q-Star): A Survey of Reshaping the Generative Artificial Intelligence (AI) Research Landscape](https://arxiv.org/abs/2312.10868) | metadata |  |
 | 2023-12-18 | [Evaluating Language-Model Agents on Realistic Autonomous Tasks](https://arxiv.org/abs/2312.11671) | metadata |  |
 | 2023-12-15 | [UINav: A Practical Approach to Train On-Device Automation Agents](https://arxiv.org/abs/2312.10170) | ⭐ reviewed | [automation](topics/automation.md), [data-generation](topics/data-generation.md), [human-in-the-loop](topics/human-in-the-loop.md), [imitation-learning](topics/imitation-learning.md) |
 | 2023-12-14 | [CogAgent: A Visual Language Model for GUI Agents](https://arxiv.org/abs/2312.08914) | ⭐ reviewed | [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |

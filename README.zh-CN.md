@@ -12,7 +12,7 @@
 ![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C863-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233) ![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
 <!-- BADGES:END -->
 
-**“全球最全”是建设目标，而不是已经核实的结论。** 已审阅条目依据一手来源快照审阅；待审阅记录只核实了书目信息；候选只是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
+**已审阅条目依据一手来源快照审阅。** 待审阅记录已核实书目信息，候选是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
 
 ## 推荐基准
 
@@ -92,7 +92,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 - [目录 JSONL](https://awesomecua.com/downloads/catalog.jsonl) - 完整目录，每行一个资源。
 - [下载清单](https://awesomecua.com/downloads/manifest.json) - 导出文件的数量、字节数和 SHA-256 校验和。
 - [Atom 订阅源](https://awesomecua.com/feed.xml) - 以 Atom 格式发布的研究更新。
-- [Hugging Face 数据集](https://huggingface.co/datasets/AgPerry/awesome-cua) - 只读镜像，每 2 小时同步；metadata_only 和 github_candidates 不是精选条目。
+- [Hugging Face 数据集](https://huggingface.co/datasets/AgPerry/awesome-cua) - Parquet 与 JSONL 镜像，每种记录类型一个 config，每 2 小时同步。
 - 智能体与 RAG 指南 - 面向智能体和 RAG 系统的指南。
 
 克隆完整目录：
@@ -223,7 +223,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 已审阅研究（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
 
 - [目录 JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl) - 每行一个资源，包含稳定 ID、类型化字段、来源证据、按范围区分的许可和审阅状态。
-- [引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - 一手来源中的对外引用。`mentions` 不等于 `trained_on` 或 `evaluated_on`。
+- [引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - 一手来源中的对外引用。`mentions` 与 `trained_on`、`evaluated_on` 是各自独立的关系。
 - [发现来源登记](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json) - 来源快照，以及每个标识符的发现位置（另见 [候选条目](data/candidates.jsonl)）。
 - [待审队列](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl) - 未解决的证据、尚未收录的发现，以及需要编辑处理的提议。经审阅确认为非资源或已收录资源其他地址的链接仍保留在队列中，并注明 `resolution` 与理由。
 - [JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json) - 可机器检查的数据契约和覆盖度统计（另见 [覆盖度 JSON](data/coverage.json)）。
@@ -277,6 +277,6 @@ node --test tests/web.test.mjs
 
 [来源登记](data/sources.json)列出了用于发现资源的社区合集和综述。书目记录依据保留的 arXiv、出版方及作者来源；出版记录分别保留各版本的题名、作者和日期精度。部分资源还会对照发布方的仓库、文档以及模型/数据集卡片核查。上游 README、论文、模型权重和数据集不在本仓库中再分发。
 
-本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款；本仓库不对其重新授权。
+本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款。
 
 引用本目录时，请使用 [CITATION.cff](CITATION.cff) 或 GitHub 的“Cite this repository”按钮。数据随每次扫描更新，请固定所用的确切版本。每个 `v*` 标签都有一个[数据发布](https://github.com/reacher-z/Awesome-CUA/releases)，提供由该标签所指提交构建的版本化下载：JSONL、JSON 和 SQLite 格式的目录、覆盖台账、主题与规格导出，以及它们的 `SHA256SUMS`。请引用发布标签，或在克隆中用 `git rev-parse HEAD` 记录提交，或链接该提交下的文件，例如 `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`。[如何发布版本](docs/maintenance.md#versioned-data-releases)。

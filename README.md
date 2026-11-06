@@ -12,7 +12,7 @@ If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Aw
 ![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C863-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233) ![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
 <!-- BADGES:END -->
 
-**Global completeness is a goal, not a verified claim.** Curated entries were reviewed against a first-party source snapshot; records awaiting review have only their bibliographic identity checked; candidates are discovered identifiers outside the published catalog. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
+**Curated entries are reviewed against a first-party source snapshot.** Records awaiting review have their bibliographic identity checked, and candidates are discovered identifiers outside the published catalog. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
 
 ## Featured benchmarks
 
@@ -92,7 +92,7 @@ Download the catalog, feeds and RAG documents; the data hub also lists sources, 
 - [Catalog JSONL](https://awesomecua.com/downloads/catalog.jsonl) - Complete catalog with one resource per line.
 - [Download manifest](https://awesomecua.com/downloads/manifest.json) - Export counts, byte sizes and SHA-256 checksums.
 - [Atom feed](https://awesomecua.com/feed.xml) - Research updates as an Atom feed.
-- [Hugging Face dataset](https://huggingface.co/datasets/AgPerry/awesome-cua) - Read-only mirror, refreshed every 2 hours; metadata_only and github_candidates are not curated.
+- [Hugging Face dataset](https://huggingface.co/datasets/AgPerry/awesome-cua) - Parquet and JSONL mirror, one config per record type, refreshed every 2 hours.
 - Agent and RAG guide - Guide for agents and RAG systems.
 
 Clone the complete catalog:
@@ -221,7 +221,7 @@ The download manifest records each listed export's actual count and unit, scope,
 Reviewed research · [Computer-use agent guides](https://awesomecua.com/guides/) · [Static resource directory](https://awesomecua.com/catalog/) · [Search and AI discovery](docs/search-discovery.md)
 
 - [Catalog JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl) - One resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
-- [Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - Outbound references from primary sources. `mentions` does not mean `trained_on` or `evaluated_on`.
+- [Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - Outbound references from primary sources. `mentions` is a separate relation from `trained_on` and `evaluated_on`.
 - [Discovery registry](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json) - Source snapshots and where each identifier was found (see also [candidates](data/candidates.jsonl)).
 - [Review queue](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl) - Unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
 - [JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json) - Machine-checkable contracts and coverage accounting (see also [coverage JSON](data/coverage.json)).
@@ -276,6 +276,6 @@ Network discovery and verification are explicit commands; ordinary builds are of
 
 The [source registry](data/sources.json) credits the community collections and surveys used for discovery. Bibliographic records use retained arXiv, publisher, and author sources; publication observations preserve edition-specific titles, authors, and date precision. Selected assets are checked against publisher repositories, documentation, and model/dataset cards. Upstream READMEs, papers, model weights, and datasets are not redistributed here.
 
-Original repository code and annotations use the [MIT license](LICENSE). Linked resources retain their own terms; this repository does not relicense them.
+Original repository code and annotations use the [MIT license](LICENSE). Linked resources keep their own terms.
 
 To cite the catalog, use [CITATION.cff](CITATION.cff) or GitHub's "Cite this repository" button. The data changes with every scan, so pin the exact version you used. Each `v*` tag has a [data release](https://github.com/reacher-z/Awesome-CUA/releases) with versioned downloads built from the tagged commit: the catalog as JSONL, JSON and SQLite, the coverage ledger, topic and profile exports, and their `SHA256SUMS`. Cite the release tag, or record the commit from `git rev-parse HEAD` in your clone, or link files at that commit, such as `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`. [Cutting a release](docs/maintenance.md#versioned-data-releases).

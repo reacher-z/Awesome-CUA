@@ -55,7 +55,7 @@ class ReadmeLocalizationTests(unittest.TestCase):
     def test_badges_are_at_most_six_and_end_with_license(self):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
         self.assertLessEqual(badges.count("[!["), 6)
-        self.assertIn("](https://huggingface.co/datasets/AgPerry/awesome-cua)", badges)
+        self.assertIn("](https://huggingface.co/datasets/TIGER-Lab/awesome-cua)", badges)
         self.assertIn("2026--10--17", badges)
         self.assertTrue(badges.strip().endswith("(LICENSE)"))
 

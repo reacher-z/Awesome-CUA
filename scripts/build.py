@@ -811,7 +811,7 @@ def badges(rows, report):
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 
 
-HUGGING_FACE_DATASET = "https://huggingface.co/datasets/TIGER-Lab/awesome-cua"
+HUGGING_FACE_DATASET = "https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA"
 
 
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.

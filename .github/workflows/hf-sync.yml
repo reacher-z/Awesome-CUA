@@ -1,4 +1,4 @@
-# Mirrors the website's public exports to the Hugging Face dataset (TIGER-Lab/awesome-cua or TIGER-Lab/awesome-rea,
+# Mirrors the website's public exports to the Hugging Face dataset (TIGER-Lab/AwesomeCUA or TIGER-Lab/awesome-rea,
 # chosen from the repository this runs in). The job is skipped while the HF_TOKEN repository secret is absent.
 # The embedded builder is tools/hf_sync.py, builder_version 2; privacy guards run over every file before upload.
 name: Hugging Face dataset mirror
@@ -35,7 +35,7 @@ jobs:
         run: |
           echo "W=$RUNNER_TEMP/hf-sync" >> "$GITHUB_ENV"
           case "$GITHUB_REPOSITORY" in
-            reacher-z/Awesome-CUA) printf 'TARGET=cua\nREPO_ID=TIGER-Lab/awesome-cua\nGUARD=Awesome-CUA\n' >> "$GITHUB_ENV" ;;
+            reacher-z/Awesome-CUA) printf 'TARGET=cua\nREPO_ID=TIGER-Lab/AwesomeCUA\nGUARD=Awesome-CUA\n' >> "$GITHUB_ENV" ;;
             reacher-z/Awesome-REA) printf 'TARGET=rea\nREPO_ID=TIGER-Lab/awesome-rea\nGUARD=Awesome-REA\n' >> "$GITHUB_ENV" ;;
             *) echo "::error::no Hugging Face mirror is defined for $GITHUB_REPOSITORY"; exit 1 ;;
           esac
@@ -181,7 +181,7 @@ jobs:
 
           CUA = Target(
               key='cua',
-              repo_id='TIGER-Lab/awesome-cua',
+              repo_id='TIGER-Lab/AwesomeCUA',
               pretty_name='Awesome Computer-Use Agents',
               entity='Awesome CUA',
               bib_key='awesome_cua',
@@ -887,7 +887,7 @@ jobs:
           WORKFLOW = r'''# Hugging Face dataset mirror sync, for GitHub Actions (GOAL §11 A8, [HUMAN] H4).
           #
           # Ready to use but NOT installed. Installing it is the owner's decision (H4):
-          #   1. Create a fine-grained Hugging Face token with write access to TIGER-Lab/awesome-cua and
+          #   1. Create a fine-grained Hugging Face token with write access to TIGER-Lab/AwesomeCUA and
           #      TIGER-Lab/awesome-rea only, and store it as the repository secret HF_TOKEN.
           #   2. Copy this file to .github/workflows/hf-sync.yml in reacher-z/Awesome-CUA and/or reacher-z/Awesome-REA.
           #      It detects which dataset to sync from the repository it runs in. Awesome-CUA's tests currently reject
@@ -929,7 +929,7 @@ jobs:
                   run: |
                     echo "W=$RUNNER_TEMP/hf-sync" >> "$GITHUB_ENV"
                     case "$GITHUB_REPOSITORY" in
-                      reacher-z/Awesome-CUA) printf 'TARGET=cua\nREPO_ID=TIGER-Lab/awesome-cua\nGUARD=Awesome-CUA\n' >> "$GITHUB_ENV" ;;
+                      reacher-z/Awesome-CUA) printf 'TARGET=cua\nREPO_ID=TIGER-Lab/AwesomeCUA\nGUARD=Awesome-CUA\n' >> "$GITHUB_ENV" ;;
                       reacher-z/Awesome-REA) printf 'TARGET=rea\nREPO_ID=TIGER-Lab/awesome-rea\nGUARD=Awesome-REA\n' >> "$GITHUB_ENV" ;;
                       *) echo "::error::no Hugging Face mirror is defined for $GITHUB_REPOSITORY"; exit 1 ;;
                     esac

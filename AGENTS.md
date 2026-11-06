@@ -14,7 +14,7 @@ git rev-parse HEAD
 
 Find public exports in the [English data hub](https://awesomecua.com/data/) or [中文数据中心](https://awesomecua.com/zh/data/). Both organize the published snapshot into six groups: complete catalog, RAG documents, citations, topics and comparisons, sources and review status, and schemas. Cloning remains the entry point to the complete source catalog.
 
-A read-only [Hugging Face mirror](https://huggingface.co/datasets/TIGER-Lab/awesome-cua) of the website downloads refreshes every 2 hours: `load_dataset("TIGER-Lab/awesome-cua", "resources")` returns the curated catalog, and `metadata_only` and `github_candidates` are not curated. Each Hugging Face commit message names the source commit; this repository remains the source of truth.
+A read-only [Hugging Face mirror](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) of the website downloads refreshes every 2 hours: `load_dataset("TIGER-Lab/AwesomeCUA", "resources")` returns the curated catalog, and `metadata_only` and `github_candidates` are not curated. Each Hugging Face commit message names the source commit; this repository remains the source of truth.
 
 For repeatable ingestion, use a [tagged data release](https://github.com/reacher-z/Awesome-CUA/releases). `awesomecua-data.zip` packages the catalog, RAG documents, citations, topic subsets and their manifests together. Verify `SHA256SUMS` and retain `release-manifest.json`, the source commit and the catalog fingerprint. The ZIP contains data; the CLI commands in this guide require a source clone at that recorded commit.
 

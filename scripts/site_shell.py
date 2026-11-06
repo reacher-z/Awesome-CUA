@@ -7,7 +7,7 @@ from site_config import SITE
 
 REPO = "https://github.com/reacher-z/Awesome-CUA"
 ISSUES = REPO + "/issues/new/choose"
-HF_DATASET = "https://huggingface.co/datasets/TIGER-Lab/awesome-cua"
+HF_DATASET = "https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA"
 SISTER_SITE = "https://awesomerea.org/"
 
 # Set once per build. A page written without it (tests, partial builds) falls back to the plain labels.

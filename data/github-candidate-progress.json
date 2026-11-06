@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "a9f6cfb9bd123238539c87d8b23e078d1da7276c82932bf770ae11673f336b37",
-  "observation_snapshot_sha256": "2fa474da2328ff531ceb5be524cc3fcfbbf06d47d0a0e3824f8898a4b3aa025c",
+  "manifest_sha256": "0938fec0c311dc8faa9344930ef1f84d5ac1debb37299ff96655f7121bce3ce1",
+  "observation_snapshot_sha256": "a616179233fff5dbadcbeff43eae2895f3e0ea1110dc7f6ab71eef2e1e1f9e81",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3118,11 +3118,48 @@
           }
         },
         "id": "7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3"
+      },
+      {
+        "active_records": 2492,
+        "curated_records": 1864,
+        "existing_seed_count": 738,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8040640,
+            "sha256": "7ef114076eea8b91a4563d30263402c65ead5161a3fcc80e993b02cc1674b348"
+          },
+          "catalog.jsonl": {
+            "bytes": 7101851,
+            "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3394612,
+            "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "input_id": "08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "kind": "existing",
+        "last_attempt": 723,
+        "next_index": 51,
+        "seed_count": 738,
+        "status": "pending"
+      },
       {
         "id": "existing:7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3",
         "input_id": "7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3",
@@ -3130,7 +3167,7 @@
         "last_attempt": 718,
         "next_index": 46,
         "seed_count": 738,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
@@ -75958,6 +75995,116 @@
         "run_id": "run:d65038d641918c5ca61c6ee6",
         "source_url": "https://api.github.com/repos/google-research-datasets/screen_annotation",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          797311081
+        ],
+        "finished_at": "2026-11-06T13:16:40.891059+00:00",
+        "id": "receipt:373e86d5e37bd73982eb2ecd1c00531fc3b37856fd72aab84fe808702d74dc6a",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 46,
+        "query_id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "907cb8f3287638a3634d866ea54eafe341babc8b07572df93873acbbcc3fdde5",
+        "requested_at": "2026-11-06T13:16:40.661268+00:00",
+        "response_bytes": 6717,
+        "response_sha256": "4a42376373d752d9c39a38818ad809588f5a0c45f72a5b59aef17a9d1fc2d7f6",
+        "returned_count": 1,
+        "run_id": "run:e584ac02f8e891ed7602787e",
+        "source_url": "https://api.github.com/repos/hazyresearch/eclair-agents",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          748713144
+        ],
+        "finished_at": "2026-11-06T13:16:47.477154+00:00",
+        "id": "receipt:13d573f36a9a57bc2e0df19b817dc68b71c01a1cb6feb8b86d5fba03fa2f69dc",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 47,
+        "query_id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "387ba45dbd45540484248ea0890e031c2c6bfea964634209cfc911d422dea101",
+        "requested_at": "2026-11-06T13:16:47.173206+00:00",
+        "response_bytes": 6426,
+        "response_sha256": "75f56f581e701e1a82243d59529c5e0de531c6ae0121b951eca847d7e125f811",
+        "returned_count": 1,
+        "run_id": "run:e584ac02f8e891ed7602787e",
+        "source_url": "https://api.github.com/repos/huggingface/lerobot",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          570384908
+        ],
+        "finished_at": "2026-11-06T13:16:53.922339+00:00",
+        "id": "receipt:8b45dbb2b56429f6de41681bd0377c59f26b33711946eec52bc578ede18ac9d9",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 48,
+        "query_id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "ef8c5fac1029964a3b48b8020ff6e8e2a323bf7a9274c3f62196ba4183ecbeef",
+        "requested_at": "2026-11-06T13:16:53.684884+00:00",
+        "response_bytes": 6391,
+        "response_sha256": "af985b0561b9fbf34f6109da80a3672eb15293c9ac778bff296312881941f7ed",
+        "returned_count": 1,
+        "run_id": "run:e584ac02f8e891ed7602787e",
+        "source_url": "https://api.github.com/repos/huggingface/peft",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          155220641
+        ],
+        "finished_at": "2026-11-06T13:17:00.446614+00:00",
+        "id": "receipt:465f28302f32c4148faac7ab889d60fc11fe3da233ab86feba0b029d0ae77f49",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 49,
+        "query_id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "6d9363f4a8612c1fd0bc6f305d82ec1acd1258259c5fa33f5bc50621203726a5",
+        "requested_at": "2026-11-06T13:17:00.197071+00:00",
+        "response_bytes": 7019,
+        "response_sha256": "f047eb3d210ce78b9a6eee1667b3a09798f3085ba0cf88bd2109212d0ed8ee88",
+        "returned_count": 1,
+        "run_id": "run:e584ac02f8e891ed7602787e",
+        "source_url": "https://api.github.com/repos/huggingface/transformers",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          670475494
+        ],
+        "finished_at": "2026-11-06T13:17:06.931511+00:00",
+        "id": "receipt:da61b88694bcf5dfc07a0f195adb75d11bdedfb343dbc76da3566ab7f548c0cf",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 50,
+        "query_id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "94ab7c6ef59d23e735eb8301198a6a4089957bb96abc3862a08ca6b19c5ee225",
+        "requested_at": "2026-11-06T13:17:06.708776+00:00",
+        "response_bytes": 6122,
+        "response_sha256": "2f7c281849f5732a941f6cb6d75dc715c9ee8d675053fe48634b13bf2f534658",
+        "returned_count": 1,
+        "run_id": "run:e584ac02f8e891ed7602787e",
+        "source_url": "https://api.github.com/repos/hyp1231/awesome-llm-powered-agent",
+        "status": 200
       }
     ],
     "runs": [
@@ -78474,9 +78621,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 196.98145541300002
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10082,
+        "before_unique_repositories": 10077,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T13:17:10.013073+00:00",
+        "id": "run:e584ac02f8e891ed7602787e",
+        "input_id": "08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 145,
+          "reservations_before": 140,
+          "reservations_charged": 5,
+          "round_id": "df2e2a0ec4054e0288ea8b1df240f895"
+        },
+        "started_at": "2026-11-06T13:16:31.778173+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 189.689443698
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "69919550a441173113e8edb2f92561ecbacfc8b29301d57b092ebe4ec7008e43"
+  "state_sha256": "7923a662cc42e4906cf136d116146085d63249f4111fcd271d13eeb066982a2c"
 }

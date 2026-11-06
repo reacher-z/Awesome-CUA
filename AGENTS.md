@@ -105,7 +105,7 @@ catalog and must not be added to it or treated as independent projects.
 The source checkout also retains `data/github-candidate-progress.json` for
 scheduled continuation. Keep it with the matching observation and manifest
 files; it is operational progress, not another retrieval corpus. The scheduled
-scan runs every two hours, at seven minutes past each even UTC hour. See the
+scan runs every hour, at seven minutes past each UTC hour. See the
 [continuation guide](docs/public-candidate-scan.md#durable-progress-across-fresh-checkouts)
 before changing scan inputs or resuming a checkpoint.
 

@@ -91,7 +91,8 @@ class PushStepCredentialTests(unittest.TestCase):
         self.git("init", "-q", "--bare", "-b", "main", str(self.origin), cwd=base)
         self.git("init", "-q", "-b", "main", str(other), cwd=base)
         self.write(other, {".gitignore": "dist/\n", "data/a.txt": "a\n", "README.md": "readme\n", "README.zh-CN.md": "readme\n",
-                           "docs/a.md": "a\n", "scripts/catalog.py": "", ".indexnow/state.json": "{}\n", "index.html": "old\n"})
+                           "docs/a.md": "a\n", "scripts/catalog.py": "", "scripts/replay_scan_commit.py": (ROOT / "scripts" / "replay_scan_commit.py").read_text(),
+                           ".indexnow/state.json": "{}\n", "index.html": "old\n"})
         self.commit(other)
         self.git("remote", "add", "origin", str(self.origin), cwd=other)
         self.git("push", "-q", "origin", "HEAD:main", cwd=other)
@@ -126,23 +127,25 @@ class PushStepCredentialTests(unittest.TestCase):
         self.assertEqual(self.git("--git-dir", str(self.origin), "rev-parse", "main~1").strip(), self.moved)
         return [line.split("|") for line in (self.base / "calls.log").read_text().splitlines()]
 
-    def assert_only_push_and_pull_see_the_token(self, calls):
+    def assert_only_push_and_refresh_see_the_token(self, calls, refresh="git pull"):
         authorized = [call for call, token, header in calls if header]
-        self.assertEqual(authorized, ["git push", "git pull", "git push"])
+        self.assertEqual(authorized, ["git push", refresh, "git push"])
         self.assertEqual({(token, header) for call, token, header in calls if call in authorized}, {("", HEADER)})
         self.assertEqual({(token, header) for call, token, header in calls if call not in authorized}, {("", "")})
 
-    def test_scan_commit_passes_the_token_only_to_git_push_and_pull(self):
+    def test_scan_commit_passes_the_token_only_to_git_push_and_fetch(self):
         calls = self.run_step(SCAN, "Commit verified scan output", {"data/a.txt": "scanned\n"})
+        self.assertIn(["python scripts/replay_scan_commit.py", "", ""], calls)
+        self.assertIn(["git rebase", "", ""], calls)
         self.assertIn(["python scripts/catalog.py", "", ""], calls)
-        self.assert_only_push_and_pull_see_the_token(calls)
+        self.assert_only_push_and_refresh_see_the_token(calls, refresh="git fetch")
 
     def test_website_snapshot_commit_passes_the_token_only_to_git_push_and_pull(self):
-        self.assert_only_push_and_pull_see_the_token(self.run_step(PUBLISH, "Commit the public website snapshot", {"index.html": "new\n"}))
+        self.assert_only_push_and_refresh_see_the_token(self.run_step(PUBLISH, "Commit the public website snapshot", {"index.html": "new\n"}))
 
     def test_search_receipt_commit_passes_the_token_only_to_git_push_and_pull(self):
         calls = self.run_step(PUBLISH, "Preserve accepted state and actual submission receipts", {".indexnow/state.json": '{"sent": 1}\n'})
-        self.assert_only_push_and_pull_see_the_token(calls)
+        self.assert_only_push_and_refresh_see_the_token(calls)
 
 if __name__ == "__main__":
     unittest.main()

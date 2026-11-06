@@ -6,7 +6,7 @@ import collections
 import json
 import shutil
 from search_pages import KINDS, REPO, SOURCE_REPO, clean_text, resource_path
-from site_config import SITE
+from site_config import SITE, scan_schedule
 from agent_pages import CLONE_COMMAND
 from site_files import MANAGED_FILES, reconcile_generated_pages
 from publication_metadata import record_date_text
@@ -75,7 +75,7 @@ def main():
         shutil.copy2(ROOT/'schemas'/name,site/'schemas'/name)
     report=json.loads((ROOT/'data/coverage.json').read_text(encoding='utf-8'))
     scan_config=json.loads((ROOT/'data/scan-config.json').read_text(encoding='utf-8'))
-    scan_times=', '.join(scan_config['scan_times_local'])+' '+scan_config['timezone']
+    scan_times=scan_schedule(scan_config)
     publish_checks=' and '.join(f':{minute:02d}' for minute in scan_config['publish_check_minutes'])+' past each hour '+scan_config['timezone']
     rows=[json.loads(l) for l in (ROOT/'data/catalog.jsonl').read_text(encoding='utf-8').splitlines()]
     # Headline and category counts are curated resources; records awaiting review are labelled separately.
@@ -90,7 +90,7 @@ def main():
     selected=sorted([r for r in rows if r['kind']=='paper' and r['review_status']=='curated'],key=record_date_text,reverse=True)
     for r in selected[:10]:readme.append(f'- [{r["name"]}]({SITE}{resource_path(r)}) — {r["summary"]} [Original paper]({r["url"]}).')
     readme+=['',f'[All reviewed papers and surveys]({SITE}/papers/). Annotations do not independently reproduce experimental findings.','', '## Papers connected to code and data','',f'[Browse reviewed paper–asset relationships]({SITE}/connections/) · [Download relationships JSON]({SITE}/downloads/relationships.json)','','## Choose a benchmark or training dataset','', f'- [GUI-agent benchmark guide]({SITE}/guides/gui-agent-benchmarks/): distinguish grounding, web tasks, mobile interaction, and desktop execution.', f'- [Training-data guide]({SITE}/guides/gui-agent-training-data/): compare supervision types, platform, splits, count units, and licenses.',f'- [Editorial policy]({SITE}/about/) and [coverage ledger]({SITE}/coverage/): understand what was verified and what is still missing.','', '## Download and reuse the data','',f'- [Full resource catalog — JSONL]({SITE}/downloads/catalog.jsonl)',f'- [Queryable database — SQLite]({SITE}/downloads/catalog.sqlite)',f'- [Data documentation]({SITE}/data/) · [JSON Schema](schemas/resource.schema.json)',f'- [Coverage JSON]({SITE}/downloads/coverage.json) · [Source registry]({SITE}/downloads/sources.json)',f'- [Scope decisions]({SITE}/downloads/exclusions.json) · [Raw arXiv archive, including excluded candidates]({SITE}/downloads/arxiv-archive.jsonl)',f'- [Machine-readable navigation]({SITE}/llms.txt) · [Curated Markdown]({SITE}/llms-full.txt) · [Research feed]({SITE}/feed.xml)','', 'The downloads contain metadata and original catalog annotations, not upstream training data, model weights, or paper PDFs. Code, data, weights, and document licenses remain separate.','', '## Website and contributions','', 'This repository hosts the published static website and metadata snapshot. Complete resource pages and guides work without JavaScript; interactive search adds filtering, pagination, and detail dialogs. No API keys, account, paid backend, or external analytics are required.','', '```bash','python3 -m http.server 4173 --bind 127.0.0.1','```','', 'GitHub Pages deploys the validated static artifact through the publication workflow. The `main` branch keeps an inspectable snapshot. Original code and annotations use [MIT](LICENSE); linked assets retain their own terms.', '',f'[Suggest a resource or correction]({SOURCE_REPO}/issues/new?template=resource.yml). Supply a primary source and explain uncertain facts. Global completeness is a goal, not a verified claim.','']
-    readme+=['## Automatic updates','',f'[Source catalog and scan code](https://github.com/reacher-z/Awesome-CUA) · [Scan status]({SITE}/updates/)','', f'Discovery is scheduled every two hours at {scan_times}. This website checks for a new source commit at {publish_checks} and rebuilds from validated source data only when there is one; each publication retains its own quality gate. GitHub scheduling can be delayed; the status page records actual completion times.','', 'New discoveries are bibliographic metadata or candidates until a separate editorial review. The publishing workflow uses repository-scoped GitHub tokens and does not require a stored personal access token.','']
+    readme+=['## Automatic updates','',f'[Source catalog and scan code](https://github.com/reacher-z/Awesome-CUA) · [Scan status]({SITE}/updates/)','', f'Discovery is scheduled {scan_times}. This website checks for a new source commit at {publish_checks} and rebuilds from validated source data only when there is one; each publication retains its own quality gate. GitHub scheduling can be delayed; the status page records actual completion times.','', 'New discoveries are bibliographic metadata or candidates until a separate editorial review. The publishing workflow uses repository-scoped GitHub tokens and does not require a stored personal access token.','']
     readme[0:0]=['<p align="center">',f'  <a href="{SITE}/"><img src="badges/featured-by-awesomecua-laurel.svg" alt="Featured by Awesome CUA" width="220"></a>','</p>','']
     (site/'README.md').write_text(clean_text('\n'.join(readme)),encoding='utf-8')
     # The whole snapshot, including files left by earlier publications, must not name a protected person.
@@ -104,7 +104,7 @@ def main():
     profile_text=profile_path.read_text(encoding='utf-8')
     profile_text=profile_text.replace('\n| Research & training',f'\nFor people, RAG systems, and agents — clone the complete catalog:\n\n```sh\n{CLONE_COMMAND}\n```\n\n[Agent instructions]({SITE}/AGENTS.md) · [Agent & RAG guide]({SITE}/agents/) · [中文使用指南]({SITE}/zh/agents/)\n\n| Research & training')
     profile_text=profile_text.replace(counts,f'![Live catalog counts]({SITE}/badges/catalog.svg)')
-    profile_text+=f'\n[Scan status · every 2 hours]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'
+    profile_text+=f'\n[Scan status · every hour]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'
     profile_path.write_text(profile_text,encoding='utf-8')
     require_clean([profile_path],'organization profile')
     print(f'Prepared {incoming["indexable_pages"]} indexable pages and updated public README/profile. Review diffs before committing.')

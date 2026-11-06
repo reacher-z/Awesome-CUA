@@ -1,8 +1,8 @@
-name: Discovery scans every two hours
+name: Discovery scans every hour
 
 on:
   schedule:
-    - cron: '7 */2 * * *'
+    - cron: '7 * * * *'
       timezone: UTC
   workflow_dispatch:
     inputs:
@@ -64,14 +64,18 @@ jobs:
       - name: Report a skipped commit
         if: github.ref != 'refs/heads/main' || inputs.dry_run
         run: echo "::notice::Scan ran on $GITHUB_REF; commit skipped"
+      - name: Report a scan with nothing new
+        if: steps.scan.outputs.nothing_new == 'true'
+        run: echo "::notice::Nothing new since the last committed scan; commit skipped"
       - name: Commit verified scan output
         id: commit
         # The push targets main, so a run on any other ref would fast-forward main to that unreviewed branch.
-        if: github.ref == 'refs/heads/main' && !inputs.dry_run
+        # A healthy scan with nothing new would only move timestamps; its evidence stays in the artifact below.
+        if: github.ref == 'refs/heads/main' && !inputs.dry_run && steps.scan.outputs.nothing_new != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Checkouts keep no credentials: only the push and pull below get the token, as a per-command header the rest of this step never sees.
+          # Checkouts keep no credentials: only the push and fetch below get the token, as a per-command header the rest of this step never sees.
           auth=(GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=http.https://github.com/.extraheader "GIT_CONFIG_VALUE_0=AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')")
           unset GH_TOKEN
           git config user.name 'github-actions[bot]'
@@ -84,11 +88,12 @@ jobs:
           if [ -n "$untracked" ]; then printf 'Untracked files outside the committed paths:\n%s\n' "$untracked"; exit 1; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Update public-source scan and verified metadata'
-            # main can move during the scan: replay the commit onto it and rebuild the generated files from both sides' inputs before retrying.
-            for attempt in 1 2 3; do
+            # main can move during the scan: replay the commit onto it, taking main's build outputs, and rebuild them from both sides' inputs before retrying.
+            for attempt in 1 2 3 4 5; do
               if env "${auth[@]}" git push origin HEAD:main; then break; fi
-              if [ "$attempt" = 3 ]; then echo '::error::The scan commit was not pushed to main after 3 attempts'; exit 1; fi
-              env "${auth[@]}" git pull --rebase origin main || { echo '::error::main moved during the scan and the scan commit could not be rebased onto it; re-dispatch the scan'; git rebase --abort; exit 1; }
+              if [ "$attempt" = 5 ]; then echo '::error::The scan commit was not pushed to main after 5 attempts'; exit 1; fi
+              env "${auth[@]}" git fetch origin main
+              python scripts/replay_scan_commit.py FETCH_HEAD || { echo '::error::main moved during the scan and the scan commit could not be rebased onto it; re-dispatch the scan'; exit 1; }
               python scripts/catalog.py build
               python scripts/catalog.py validate
               git add data docs README.md README.zh-CN.md
@@ -133,7 +138,7 @@ jobs:
         run: gh workflow run catalog.yml --ref main -R "$GITHUB_REPOSITORY"
   track_scan_health:
     # One tracking issue stays open while scans of main are unhealthy: it is edited in place on each such run and
-    # closed by the next healthy run, so a long outage neither fails silently nor posts a new issue every two hours.
+    # closed by the next healthy run, so a long outage neither fails silently nor posts a new issue every hour.
     needs: scan
     if: always() && github.ref == 'refs/heads/main' && !inputs.dry_run
     runs-on: ubuntu-latest

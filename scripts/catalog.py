@@ -1118,6 +1118,7 @@ def main(argv=None):
     from build import build, validate, search
     command = sub.add_parser("build", help="generate catalog, category docs, coverage, JSON and SQLite exports offline")
     command.add_argument("--check", action="store_true", help="fail if generated committed views differ")
+    command.add_argument("--list-outputs", action="store_true", help="print every committed path the build writes and write nothing")
     command.set_defaults(function=build)
     command = sub.add_parser("validate", help="validate catalog against JSON Schema and quality invariants")
     command.set_defaults(function=validate)

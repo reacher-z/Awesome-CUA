@@ -1029,6 +1029,9 @@ def build(args):
     dictionary = ROOT / "docs/data-dictionary.md"
     if dictionary.exists():
         files["docs/data-dictionary.md"] = re.sub(r"(?<=<!-- TOPICS:START -->).*?(?=<!-- TOPICS:END -->)", lambda _: topic_vocabulary(), dictionary.read_text(encoding="utf-8"), flags=re.S)
+    if getattr(args, "list_outputs", False):
+        print("\n".join(sorted(files)))
+        return
     changed = []
     for relative, content in files.items():
         path = ROOT / relative

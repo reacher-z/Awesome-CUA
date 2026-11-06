@@ -103,7 +103,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 [Agent instructions](AGENTS.md) · [Retrieval documents](https://awesomecua.com/downloads/rag-documents.jsonl)
 
-Discovery is scheduled every two hours, at **00:07, 02:07, 04:07, 06:07, 08:07, 10:07, 12:07, 14:07, 16:07, 18:07, 20:07 and 22:07 UTC**. [Actual scan results](https://awesomecua.com/updates/) · [Schedule and safeguards](docs/maintenance.md).
+Discovery is scheduled **every hour at minute 7 UTC**. [Actual scan results](https://awesomecua.com/updates/) · [Schedule and safeguards](docs/maintenance.md).
 
 [Read the research survey](https://awesomecua.com/survey/) — Methods, evaluation, human agency, and reusable research assets. English working manuscript with a versioned bibliography and reading register.
 

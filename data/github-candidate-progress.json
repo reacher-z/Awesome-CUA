@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "38edd05635c6b31eff9b56dc565f7f32a120499dc914b76869b0dea0fc6c4932",
-  "observation_snapshot_sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
+  "manifest_sha256": "b60bb31574c2b65988a8fa6026cabb6434a85e6fef4c678b2c40aa003fad7c58",
+  "observation_snapshot_sha256": "dd148954cc5c721a281820dbe862f8fb64ea087ea8c742a715d1f5e8fd744a2b",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3062,11 +3062,48 @@
           }
         },
         "id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e"
+      },
+      {
+        "active_records": 2492,
+        "curated_records": 1864,
+        "existing_seed_count": 738,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8038902,
+            "sha256": "8ff7ef98aff093f813632ad0a31efd1a6a0a8fb04b791ce73f918d75aa46d707"
+          },
+          "catalog.jsonl": {
+            "bytes": 7101851,
+            "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3394612,
+            "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "input_id": "eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "kind": "existing",
+        "last_attempt": 713,
+        "next_index": 38,
+        "seed_count": 738,
+        "status": "pending"
+      },
       {
         "id": "existing:9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
         "input_id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
@@ -3074,7 +3111,7 @@
         "last_attempt": 708,
         "next_index": 33,
         "seed_count": 738,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362",
@@ -75670,6 +75707,112 @@
         "run_id": "run:ab54efeacc7fd645649634d9",
         "source_url": null,
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T12:17:02.430095+00:00",
+        "id": "receipt:026191986b3036185cbe7f206aeac8424922c3a0314178e2893ccbf8ff9811d1",
+        "incomplete_results": null,
+        "outcome": "fork_not_recorded",
+        "position": 33,
+        "query_id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "98717661d8d09985db7e179975d41be72311d922649a527e9cdc36dc44701124",
+        "requested_at": "2026-11-06T12:17:02.065194+00:00",
+        "response_bytes": 17277,
+        "response_sha256": "d0194452a6fdb71130298e58c22bf08588d27210e219b68bc1e74ae8a7aa1871",
+        "returned_count": 1,
+        "run_id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "source_url": null,
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1151333143
+        ],
+        "finished_at": "2026-11-06T12:17:08.816427+00:00",
+        "id": "receipt:a7c4eb17e23c08188d5190f1ad5ca36c5d15a872c61d21b420742df6c3e295cf",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 34,
+        "query_id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "de193f2af4ce012e3bcf19b705df6342f67dde4ff269d6af3d4b0365dfc3a91b",
+        "requested_at": "2026-11-06T12:17:08.577094+00:00",
+        "response_bytes": 6757,
+        "response_sha256": "62a9c86bb4c691f2d24ba0b644379c5bf1ac158575804b70dd0d0804ea8983b8",
+        "returned_count": 1,
+        "run_id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "source_url": "https://api.github.com/repos/browser-act/skills",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-06T12:17:15.273542+00:00",
+        "id": "receipt:65a6bdc8b3f7b0592b1ad2c780aeaffbdbd888629946c8bd185d3e8a40c39629",
+        "incomplete_results": null,
+        "outcome": "unavailable",
+        "position": 35,
+        "query_id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "21cd301881ae8cb4270ab8536437c8449798701be293fa2e4ef2fd7bb2911def",
+        "requested_at": "2026-11-06T12:17:15.088910+00:00",
+        "response_bytes": 118,
+        "response_sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+        "returned_count": null,
+        "run_id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "source_url": null,
+        "status": 404
+      },
+      {
+        "accepted_repository_ids": [
+          708047637
+        ],
+        "finished_at": "2026-11-06T12:17:21.871504+00:00",
+        "id": "receipt:cfbfcd96d17ee4197d886576e89965e026af2c925316742ebbfd35730e710554",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 36,
+        "query_id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "976295bb5ca5d0309995bb845dea145cddcd360282a2cca823c6fc9dfb4b5291",
+        "requested_at": "2026-11-06T12:17:21.600767+00:00",
+        "response_bytes": 6317,
+        "response_sha256": "fda342736e2b3908ac818dbcf4d3afad24c9d2e017d52d03c84d9ec9230b9858",
+        "returned_count": 1,
+        "run_id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "source_url": "https://api.github.com/repos/craftjarvis/jarvis-1",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          707973332
+        ],
+        "finished_at": "2026-11-06T12:17:28.355654+00:00",
+        "id": "receipt:9b23964477692ae0957c7a71c6e7a926d2a36e5def81725c7ac0e5e70d263fb1",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 37,
+        "query_id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "516d8e6634ab9e409793ede97b419d5dbee1573ff8629082ea722f7285039e18",
+        "requested_at": "2026-11-06T12:17:28.112688+00:00",
+        "response_bytes": 5274,
+        "response_sha256": "2886b83b7b3750138b2162e85047ed658275c805dfcf8aa91a59f26b0ffe2020",
+        "returned_count": 1,
+        "run_id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "source_url": "https://api.github.com/repos/ddupont808/gpt-4v-act",
+        "status": 200
       }
     ],
     "runs": [
@@ -78124,9 +78267,40 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 195.94893479799998
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10073,
+        "before_unique_repositories": 10070,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86"
+        ],
+        "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "finished_at": "2026-11-06T12:17:31.284977+00:00",
+        "id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "input_id": "eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "new_unique_repositories": 3,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 145,
+          "reservations_before": 140,
+          "reservations_charged": 5,
+          "round_id": "839d48304f8543e2807c380edf040e2f"
+        },
+        "started_at": "2026-11-06T12:16:53.637849+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 2,
+        "wall_seconds_budget": 191.107583846
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "5a9418b8258ef000de76365a24a535f6f64ef3680d5eea81fb2057654cdeb2ca"
+  "state_sha256": "d2e6c56e449f4510e1a49ea6c3c45725aff14c3c75f39fd45586757a759cd79f"
 }

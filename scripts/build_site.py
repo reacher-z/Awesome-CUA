@@ -86,6 +86,9 @@ def write_site(destination):
             source=badge_source/name
             if source.is_symlink() or not source.is_file():raise ValueError('Missing or unsafe static badge: '+name)
             shutil.copy2(source,destination/'badges'/name)
+    assets=ROOT/'web/assets'
+    if assets.is_symlink() or not assets.is_dir():raise ValueError('Site asset directory must be a real directory')
+    shutil.copytree(assets,destination/'assets',dirs_exist_ok=True,symlinks=False)
     version_script_imports(destination)
     (destination/'data').mkdir(exist_ok=True)
     (destination/'downloads').mkdir(exist_ok=True)

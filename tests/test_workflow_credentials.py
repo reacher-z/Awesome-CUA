@@ -16,10 +16,10 @@ PUBLISH = ROOT / "automation" / "publish.yml"
 WORKFLOWS = [*sorted((ROOT / ".github" / "workflows").glob("*.yml")), PUBLISH]
 TOKEN = "ghs_exampletoken"
 HEADER = "AUTHORIZATION: basic " + base64.b64encode(f"x-access-token:{TOKEN}".encode()).decode()
-# Push, dispatch and issue-tracking steps; none of them checks out or runs repository code.
+# Push, dispatch, issue-tracking and read-only API steps; none of them checks out or runs repository code.
 PUSH_STEPS = {("scan.yml", "scan", "Commit verified scan output"), ("scan.yml", "dispatch_quality", "Run Catalog quality on the scan commit"),
               ("scan.yml", "track_scan_health", "Update the scan health tracking issue"),
-              ("publish.yml", "build", "Commit the public website snapshot"), ("publish.yml", "notify_search", "Preserve accepted state and actual submission receipts"),
+              ("publish.yml", "build", "Read repository star counts"), ("publish.yml", "build", "Commit the public website snapshot"), ("publish.yml", "notify_search", "Preserve accepted state and actual submission receipts"),
               ("freshness.yml", "dispatch_scan", "Dispatch a recovery scan"), ("release.yml", "release", "Publish the GitHub release")}
 
 

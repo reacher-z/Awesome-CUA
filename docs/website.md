@@ -46,6 +46,8 @@ The initial browser QA covered desktop and a 390-pixel mobile viewport, catalog/
 
 ## Manual publication
 
+Star counts on the site are build-time values. The publication workflow reads them from the GitHub API into `AWESOMECUA_REPO_STARS` for the build; the browser never calls GitHub. The landing pages `/` and `/zh/` carry the counts in their HTML. Every other page reads them from `/data/site-stamp.json`, so a new star does not rewrite thousands of pages on each scan, and without JavaScript or a count each star link keeps its label.
+
 The website repository's `publish.yml` workflow normally publishes the site. Run `scripts/prepare_publication.py` by hand to install a changed publication workflow from `automation/publish.yml`, to refresh the organization profile, or to inspect what a publication would change. The script edits two local checkouts. It never commits, pushes or deploys.
 
 From the repository root, clone both repositories into the default paths under the ignored `.cache/` directory:

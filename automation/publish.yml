@@ -101,8 +101,22 @@ jobs:
           python scripts/catalog.py build --check
           python -m unittest discover -s tests -v
           node --test tests/web.test.mjs
+      - name: Read repository star counts
+        id: stars
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          stars='{}'
+          for repo in TIGER-AI-Lab/WebsiteBench TIGER-AI-Lab/ClawBench reacher-z/Awesome-CUA reacher-z/Awesome-REA; do
+            # A failed read leaves this count out: the site shows that star link's label without a number.
+            count=$(gh api "repos/$repo" --jq .stargazers_count 2>/dev/null) || continue
+            stars=$(jq -c --arg repo "$repo" --argjson count "$count" '. + {($repo): $count}' <<<"$stars")
+          done
+          echo "json=$stars" >> "$GITHUB_OUTPUT"
       - name: Build website from the verified catalog
         working-directory: .pipeline/source
+        env:
+          AWESOMECUA_REPO_STARS: ${{ steps.stars.outputs.json }}
         run: |
           python scripts/build_site.py
           python scripts/prepare_publication.py --site-dir "$GITHUB_WORKSPACE" --skip-profile

@@ -161,7 +161,7 @@ def topic_index_body(manifest, *, language='en', site_url=SITE):
             body += ['</td>']
         body += ['<td class="topic-total">', f'{entry["counts"]["total"]:,}', '</td></tr>']
     body += ['</tbody></table></div><p class="topic-method">', tr('Use the complete catalog to search metadata-only discoveries or entries without topic tags.', '元数据待审条目及未标注主题的资源仍可在完整目录检索。'),
-             ' <a href="/?lang=', language, '#catalog">', tr('Search all resources', '检索全部资源'), ' ↗</a> · <a href="/about/">', tr('Editorial policy', '收录方法'), '</a></p></section>']
+             ' <a href="/explore/?lang=', language, '#catalog">', tr('Search all resources', '检索全部资源'), ' ↗</a> · <a href="/about/">', tr('Editorial policy', '收录方法'), '</a></p></section>']
     schema = {'@type': 'ItemList', 'name': tr('Computer-use research topics', 'Computer-Use 研究主题'),
               'numberOfItems': len(entries), 'itemListElement': [{'@type': 'ListItem', 'position': i + 1,
               'name': entry['name'][language], 'url': site_url + topic_path(entry['id'], language)} for i, entry in enumerate(entries)]}
@@ -189,7 +189,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, numb
     here = topic_path(topic, language, number)
     sections = topic_sections(topic, counts, language)
     start = (number - 1) * PAGE_SIZE
-    query = '/?' + esc(urlencode({'topic': topic, 'review': 'curated', 'lang': language})) + '#catalog'
+    query = '/explore/?' + esc(urlencode({'topic': topic, 'review': 'curated', 'lang': language})) + '#catalog'
     export = '/downloads/topics/' + topic + '/'
     body = ['<section class="topic-directory topic-detail"><div class="topic-back"><a href="', topic_path(language=language), '">← ',
             tr('All topics', '全部主题'), '</a><a href="', topic_path(topic, 'en' if zh else 'zh', number), '">', 'English' if zh else '中文', '</a></div>',

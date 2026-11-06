@@ -43,7 +43,7 @@ class NotFoundPageTests(unittest.TestCase):
         self.assertEqual(self.page.canonical,[]);self.assertNotIn('og:url',self.page.meta)
     def test_links_to_search_directory_papers_categories_and_issue_tracker(self):
         links=set(self.page.links)
-        for target in ['/#catalog','/catalog/','/papers/',*(f'/categories/{kind}/' for kind in KINDS)]:self.assertIn(target,links)
+        for target in ['/explore/#catalog','/catalog/','/papers/',*(f'/categories/{kind}/' for kind in KINDS)]:self.assertIn(target,links)
         self.assertTrue(any(link.startswith(SOURCE_REPO+'/issues') for link in links))
         for link in links:
             u=urllib.parse.urlsplit(link)

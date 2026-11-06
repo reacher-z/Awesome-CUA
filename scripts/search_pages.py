@@ -5,6 +5,7 @@ import datetime as dt
 import hashlib
 import html
 import json
+import os
 from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
@@ -17,6 +18,8 @@ from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, 
 from topic_pages import write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE
+import home_page
+import site_shell
 
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
 SOURCE_REPO = "https://github.com/reacher-z/Awesome-CUA"
@@ -85,7 +88,7 @@ def organization():
     return {"@type":"Organization", "@id":SITE+"/#organization", "name":"AwesomeCUA", "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
 
 
-def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True):
+def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=()):
     url=SITE+path
     # One list renders both the visible trail and BreadcrumbList, so they cannot disagree.
     crumbs=crumbs or [("AwesomeCUA","/zh/" if lang=="zh-CN" and path!="/zh/" else "/"),(title,path)]
@@ -93,6 +96,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     if main:
         main={"@id":url+"#entity", **main}
         graph.append(main);graph[1]["mainEntity"]={"@id":main["@id"]}
+    graph.extend(extra_graph)
     if path!="/":
         graph.append({"@type":"BreadcrumbList", "itemListElement":[{"@type":"ListItem","position":i+1,"name":name,"item":SITE+target} for i,(name,target) in enumerate(crumbs)]})
     trail=''.join(f'<li><a href="{esc(target)}">{esc(name)}</a></li>' for name,target in crumbs[:-1])+f'<li><a href="{esc(crumbs[-1][1])}" aria-current="page">{esc(crumbs[-1][0])}</a></li>'
@@ -103,16 +107,12 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
     og_url=f'<meta property="og:url" content="{url}">' if canonical else ''
     full_title=title if 'AwesomeCUA' in title else title+' | AwesomeCUA'
-    document=f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title><meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA research updates"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script></head><body><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/"><img src="/favicon.svg" width="32" height="32" alt=""><span>Awesome<span class="brand-cua">CUA</span></span></a><nav aria-label="Main navigation"><a href="/catalog/">Catalog</a><a href="/papers/">Papers</a><a href="/topics/">Topics</a><a href="/guides/">Guides</a><a href="/data/">Data</a></nav><a class="github-link" href="{SOURCE_REPO}">GitHub ↗</a></div></header><main id="content" class="reading-shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{trail}</ol></nav>{body}</main><footer class="shell"><a class="brand" href="/">AwesomeCUA</a><a href="/about/">Editorial policy</a><a href="/coverage/">Coverage</a><a href="/data/">Download data</a><a href="/llms.txt">Machine-readable guide</a><a href="{SOURCE_REPO}">Source repository ↗</a></footer></body></html>'''
-
-    if lang.startswith('zh'):
-        chrome={'Skip to content':'跳到正文','Catalog':'目录','Papers':'论文','Topics':'主题','Guides':'指南','Data':'数据','Editorial policy':'收录方法','Coverage':'覆盖台账','Download data':'下载数据','Machine-readable guide':'机器读取指南','GitHub organization ↗':'GitHub 组织 ↗','Source repository ↗':'源代码仓库 ↗'}
-        for english,chinese in chrome.items():
-            document=document.replace('>'+english+'</a>','>'+chinese+'</a>')
-        document=document.replace('href="/papers/">论文</a>', 'href="/zh/papers/">论文</a>')
-        document=document.replace('href="/topics/">主题</a>', 'href="/zh/topics/">主题</a>')
-        document=document.replace('href="/data/">数据</a>', 'href="/zh/data/">数据</a>')
-        document=document.replace('href="/data/">下载数据</a>', 'href="/zh/data/">下载数据</a>')
+    switch_to=alternate_paths.get('en' if lang.startswith('zh') else 'zh-CN') or None
+    breadcrumbs=f'<nav class="breadcrumbs{" vh" if landing else ""}" aria-label="Breadcrumb"><ol>{trail}</ol></nav>'
+    # A landing page lays out its own full-width sections; everything else shares the reading column.
+    content=f'<main id="content" tabindex="-1">{"" if path=="/" else breadcrumbs}{body}</main>' if landing else f'<main id="content" class="reading-shell">{breadcrumbs}{body}</main>'
+    skip='跳到正文' if lang.startswith('zh') else 'Skip to content'
+    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><link rel="alternate" type="application/atom+xml" href="/feed.xml" title="AwesomeCUA research updates"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{' class="home"' if landing else ''}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
     return document
 
 
@@ -276,6 +276,25 @@ def resource_markdown(r, pending_review=None):
     return '\n'.join(line.rstrip() for line in lines)+'\n'
 
 
+def repository_stars():
+    """Star counts the publication workflow read at build time; without them every star link shows its label alone."""
+    try:
+        values=json.loads(os.environ.get('AWESOMECUA_REPO_STARS') or '{}')
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(values,dict):
+        return {}
+    return {repo:count for repo,count in values.items() if type(count) is int and count>0}
+
+
+def asset_version(destination):
+    # Page URLs carry this fingerprint, so a stylesheet or script change reaches every page despite the CDN cache.
+    digest=hashlib.sha256()
+    for name in ('assets/site.css','assets/site.js','pages.css'):
+        digest.update((destination/name).read_bytes())
+    return digest.hexdigest()[:12]
+
+
 def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     lookup={r["id"]:r for r in rows}
     pending_reviews={item['id']:item for item in coverage.get('pending_editorial',[])}
@@ -286,6 +305,15 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     awaiting,candidates=coverage['metadata_only_records'],coverage['unindexed_candidates']
     latest=coverage["as_of_utc"]
     manifest=[]
+    scan_path=root/'data/scan-status.json'
+    scan=json.loads(scan_path.read_text(encoding='utf-8')) if scan_path.exists() else None
+    last_scan=scan['finished_at'] if scan else None
+    stars=repository_stars()
+    site_shell.configure(asset_version=asset_version(destination),stars=stars,last_scan=last_scan,has_survey=bool(survey_page))
+    # Stars and scan time change far more often than most pages, so those pages read them from this one small file.
+    (destination/'data/site-stamp.json').write_text(json.dumps({'stars':stars,'last_scan':last_scan})+'\n',encoding='utf-8')
+    view=home_page.catalog_view(rows,reviewed,coverage,root)
+    (destination/'data/search-index.json').write_text(json.dumps(home_page.search_index(view),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     if survey_page:
         # The reviewed standalone article is already final: never normalize its bytes.
         if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
@@ -296,13 +324,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     def version_script_src(match):
         version=script_versions[Path(match['path']).name]
         return f"{match['start']}{match['quote']}{match['path']}?v={version}{match['quote']}"
-    def emit(path,content,index=True,excluded=False):
+    def emit(path,content,index=True,excluded=False,utility=False):
         # Hash the final bytes, after replacing only the scripts this page uses.
         content=script_src.sub(version_script_src,clean_text(content)).encode('utf-8')
         target=destination/path.lstrip('/')/'index.html' if path.endswith('/') else destination/path.lstrip('/')
         target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(content)
         item={"path":path,"indexable":index,"sha256":hashlib.sha256(content).hexdigest()}
         if excluded:item["scope_excluded"]=True
+        if utility:item["utility"]=True
         manifest.append(item)
     for r in rows:
         path=resource_path(r)
@@ -334,15 +363,15 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         emit(path,page(decision['name'],'A source-backed catalog scope decision; original bibliographic metadata remains preserved.',path,body,index=False,crumbs=[("AwesomeCUA","/"),("Coverage","/coverage/"),(decision['name'],path)]),index=False,excluded=True)
         (destination/path.lstrip('/')/'index.md').write_text(clean_text('\n'.join(['# '+decision['name'],'','Status: excluded from the active CUA catalog after scope review.','',decision['reason'],'','Original paper: '+decision['url'],'Evidence: '+evidence['url'],'Reviewed: '+decision['reviewed_at'],'','Scope decisions: '+SITE+'/downloads/exclusions.json','Raw metadata archive: '+SITE+'/downloads/arxiv-archive.jsonl'])+'\n'),encoding='utf-8')
     category_links='<ul class="category-directory">'+''.join(f'<li><a href="/categories/{kind}/">{esc(name)}</a><span>{sum(r["kind"]==kind for r in reviewed):,} reviewed</span></li>' for kind,name in KINDS.items())+'</ul>'
-    overview=f'<div class="eyebrow">COMPUTER-USE AGENT DIRECTORY</div><h1>Explore the computer-use agent ecosystem</h1><p class="answer-lead">AwesomeCUA connects research papers, GUI models, training datasets, benchmarks, learning resources, engineering tools, products, and publishers with their original sources.</p><p>This snapshot has {len(reviewed):,} curated resources. Another {awaiting:,} bibliography records await review and {candidates:,} discovered candidates await resolution; neither group is counted as resources. Counts are resources, not independent projects.</p><a class="button primary" href="/#catalog">Search and filter all resources</a><h2>Browse by resource type</h2>{category_links}<h2>Research and practical guides</h2><ul><li><a href="/topics/">Browse research and assets by topic</a></li><li><a href="/papers/">Reviewed computer-use and GUI-agent research papers</a></li><li><a href="/guides/">Guides to agents, benchmarks, and training data</a></li><li><a href="/data/">Download the source-backed catalog</a></li><li><a href="/coverage/">Inspect coverage and unresolved gaps</a></li></ul>'
+    overview=f'<div class="eyebrow">COMPUTER-USE AGENT DIRECTORY</div><h1>Explore the computer-use agent ecosystem</h1><p class="answer-lead">AwesomeCUA connects research papers, GUI models, training datasets, benchmarks, learning resources, engineering tools, products, and publishers with their original sources.</p><p>This snapshot has {len(reviewed):,} curated resources. Another {awaiting:,} bibliography records await review and {candidates:,} discovered candidates await resolution; neither group is counted as resources. Counts are resources, not independent projects.</p><a class="button primary" href="/explore/#catalog">Search and filter all resources</a><h2>Browse by resource type</h2>{category_links}<h2>Research and practical guides</h2><ul><li><a href="/topics/">Browse research and assets by topic</a></li><li><a href="/papers/">Reviewed computer-use and GUI-agent research papers</a></li><li><a href="/guides/">Guides to agents, benchmarks, and training data</a></li><li><a href="/data/">Download the source-backed catalog</a></li><li><a href="/coverage/">Inspect coverage and unresolved gaps</a></li></ul>'
     emit('/catalog/',page('Computer-use agent resource directory','Browse source-backed computer-use agent papers, models, datasets, benchmarks, learning resources, tools, products, and publishers.','/catalog/',overview,{"@type":"CollectionPage","name":"AwesomeCUA resource directory"},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/")]))
     # GitHub Pages serves /404.html for any missing path; writing it outside emit() keeps it out of the manifest, sitemaps and IndexNow.
-    missing=f'<div class="eyebrow">PAGE NOT FOUND</div><h1>This page is not in the catalog</h1><p class="answer-lead">The address may be mistyped, or the page may have been removed, for example when duplicate resource records were merged.</p><div class="page-actions"><a class="button primary" href="/#catalog">Search the catalog</a><a class="button secondary" href="/catalog/">Resource directory</a><a class="button secondary" href="/papers/">Research papers</a></div><h2>Browse by resource type</h2>{category_links}<h2>Report a broken link</h2><p>If a link led you here, <a href="{SOURCE_REPO}/issues/new/choose">open an issue</a> with the address you followed and the page that linked to it. Scope decisions are recorded in the <a href="/coverage/">coverage ledger</a>.</p>'
+    missing=f'<div class="eyebrow">PAGE NOT FOUND</div><h1>This page is not in the catalog</h1><p class="answer-lead">The address may be mistyped, or the page may have been removed, for example when duplicate resource records were merged.</p><div class="page-actions"><a class="button primary" href="/explore/#catalog">Search the catalog</a><a class="button secondary" href="/catalog/">Resource directory</a><a class="button secondary" href="/papers/">Research papers</a></div><h2>Browse by resource type</h2>{category_links}<h2>Report a broken link</h2><p>If a link led you here, <a href="{SOURCE_REPO}/issues/new/choose">open an issue</a> with the address you followed and the page that linked to it. Scope decisions are recorded in the <a href="/coverage/">coverage ledger</a>.</p>'
     (destination/'404.html').write_text(clean_text(page('Page not found','This address does not match a current AwesomeCUA page. Search the catalog, browse resource categories, or report the broken link.','/404.html',missing,index=False,canonical=False)),encoding='utf-8')
     for kind,label in KINDS.items():
         selected=sorted([r for r in reviewed if r['kind']==kind],key=lambda r:r['name'].lower())
         body=f'<div class="eyebrow">RESOURCE CATEGORY</div><h1>Computer-use agent {esc(label.lower())}</h1><p class="answer-lead">Browse {len(selected)} reviewed {esc(label.lower())} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.</p><p>Review means AI-assisted editorial inspection, not independent reproduction. Unknown licenses and specifications remain unknown.</p>'
-        if kind=='paper':body+='<p>The complete bibliography includes metadata-only discoveries awaiting relevance review. They remain accessible in the <a href="/?kind=paper#catalog">interactive catalog</a> and data downloads.</p>'
+        if kind=='paper':body+='<p>The complete bibliography includes metadata-only discoveries awaiting relevance review. They remain accessible in the <a href="/explore/?kind=paper#catalog">interactive catalog</a> and data downloads.</p>'
         if kind in PROFILE_KEYS:body+=f'<p><a href="/compare/{"benchmarks" if kind=="benchmark" else "datasets"}/">Compare source-reviewed specifications</a></p>'
         if kind=='paper':
             # The paginated /papers/ library is the one indexable list of reviewed papers; this category is a hub into it.
@@ -354,7 +383,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         else:
             body+=listing(selected)
             schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(selected),"itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(selected)]}
-        body+=f'<p><a href="/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
+        body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
         emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]))
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
@@ -413,8 +442,6 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         ('zh','/zh/agents/','AwesomeCUA：Agents 与 RAG 使用指南','一行克隆完整目录，本地检索或接入 RAG，保留资源引用、审阅状态、论文版本和来源指纹。')]:
         emit(path,page(title,desc,path,agent_guide_body(language),{'@type':'Article','headline':title,'description':desc,'author':{'@id':SITE+'/#organization'}},lang='zh-CN' if language=='zh' else 'en'))
     scan_config=json.loads((root/'data/scan-config.json').read_text(encoding='utf-8'))
-    scan_path=root/'data/scan-status.json'
-    scan=json.loads(scan_path.read_text(encoding='utf-8')) if scan_path.exists() else None
     schedule=', '.join(scan_config['scan_times_local'])+' '+scan_config['timezone']
     publication_schedule='at '+' and '.join(f':{minute:02d}' for minute in scan_config['publish_check_minutes'])+' past each hour '+scan_config['timezone']+'; a check rebuilds only when the source catalog has a new commit'
     body=f'<div class="eyebrow">DISCOVERY ACTIVITY</div><h1>Catalog updates every two hours</h1><p class="answer-lead">Public sources are scheduled for scanning every two hours. New paper identities are checked against arXiv; editorial annotations and approvals remain separate.</p><dl class="page-facts"><div><dt>Configured scan times</dt><dd>{esc(schedule)}</dd></div><div><dt>Website publication checks</dt><dd>{esc(publication_schedule)}</dd></div></dl><p>GitHub scheduling can be delayed. The completion times below record what actually ran, rather than assuming that a scheduled job executed.</p>'
@@ -471,19 +498,33 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         emit(guide_path(guide),page(guide['title'],guide['description'],guide_path(guide),guide['body'],{"@type":"Article","headline":guide['title'],"description":guide['description'],"author":{"@id":SITE+'/#organization'}},crumbs=[("AwesomeCUA","/"),("Guides","/guides/"),(guide['title'],guide_path(guide))]))
     body='<h1>Guides to computer-use agents</h1><p class="answer-lead">Practical reading guides with direct answers and primary research references. These guides help distinguish interface grounding, task execution, training data, and evaluation.</p><div class="reading-list">'+''.join(f'<article><h2><a href="{guide_path(g)}">{esc(g["title"])}</a></h2><p>{esc(g["description"])}</p></article>' for g in guides)+'</div>'
     emit('/guides/',page('Computer-use agent guides','Understand computer-use agents, choose GUI-agent benchmarks, and find training datasets with clearly scoped primary-source references.','/guides/',body))
-    zh=f'<div class="eyebrow">COMPUTER-USE AGENT 资源指南</div><h1>AwesomeCUA：可追溯的智能体资源目录</h1><p class="answer-lead">连接论文、模型、数据集、评测基准、框架、工具、产品与发布方。每条资源保留一手来源与审阅状态。</p><p>当前有 {len(reviewed):,} 条经过 AI 辅助编辑审阅的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实，均不计入资源数。数量以资源为单位，不代表独立项目总数。</p><div class="page-actions"><a class="button primary" href="/?lang=zh#catalog">打开中文搜索目录</a><a class="button secondary" href="/zh/data/">下载数据</a></div><h2>研究与训练</h2><ul><li><a href="/zh/topics/">按主题浏览论文、数据与工具</a></li><li><a href="/zh/papers/">论文与综述阅读列表</a></li><li><a href="/categories/dataset/">训练数据集</a> · <a href="/compare/datasets/">对比数据规格</a></li><li><a href="/categories/benchmark/">GUI、桌面、网页与手机评测基准</a> · <a href="/compare/benchmarks/">对比评测协议</a></li><li><a href="/categories/model/">模型与权重版本</a></li><li><a href="/categories/learning/">学习资源</a></li></ul><h2>产业与工程</h2><ul><li><a href="/categories/agent/">智能体</a></li><li><a href="/categories/framework/">开发与训练框架</a></li><li><a href="/categories/product/">产品</a></li><li><a href="/catalog/">浏览全部分类</a></li></ul><h2>如何理解“已核验”？</h2><p>已审阅条目经过一手来源编辑检查。论文元数据仅核实标题、作者和日期，不代表研究结论或实验已复现。代码、数据、权重与文档许可分别记录，未知信息保留为空。</p><h2>是否已经全球最全？</h2><p>全面覆盖是目标，目前没有足够证据证明已达到全球最全。请查看<a href="/coverage/">覆盖台账</a>和<a href="/about/">编辑方法</a>了解边界与缺口。</p>'
-    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh,lang='zh-CN',alternatives=True))
+    zh=f'<div class="eyebrow">COMPUTER-USE AGENT 资源指南</div><h2>AwesomeCUA：可追溯的智能体资源目录</h2><p class="answer-lead">连接论文、模型、数据集、评测基准、框架、工具、产品与发布方。每条资源保留一手来源与审阅状态。</p><p>当前有 {len(reviewed):,} 条经过 AI 辅助编辑审阅的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实，均不计入资源数。数量以资源为单位，不代表独立项目总数。</p><div class="page-actions"><a class="button primary" href="/explore/?lang=zh#catalog">打开中文搜索目录</a><a class="button secondary" href="/zh/data/">下载数据</a></div><h2>研究与训练</h2><ul><li><a href="/zh/topics/">按主题浏览论文、数据与工具</a></li><li><a href="/zh/papers/">论文与综述阅读列表</a></li><li><a href="/categories/dataset/">训练数据集</a> · <a href="/compare/datasets/">对比数据规格</a></li><li><a href="/categories/benchmark/">GUI、桌面、网页与手机评测基准</a> · <a href="/compare/benchmarks/">对比评测协议</a></li><li><a href="/categories/model/">模型与权重版本</a></li><li><a href="/categories/learning/">学习资源</a></li></ul><h2>产业与工程</h2><ul><li><a href="/categories/agent/">智能体</a></li><li><a href="/categories/framework/">开发与训练框架</a></li><li><a href="/categories/product/">产品</a></li><li><a href="/catalog/">浏览全部分类</a></li></ul><h2>如何理解“已核验”？</h2><p>已审阅条目经过一手来源编辑检查。论文元数据仅核实标题、作者和日期，不代表研究结论或实验已复现。代码、数据、权重与文档许可分别记录，未知信息保留为空。</p><h2>是否已经全球最全？</h2><p>全面覆盖是目标，目前没有足够证据证明已达到全球最全。请查看<a href="/coverage/">覆盖台账</a>和<a href="/about/">编辑方法</a>了解边界与缺口。</p>'
+    zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+'<section class="section wrap reading-section">'+zh+'</section>'+home_page.contribute(zh=True)
+    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True))
     # A static, visible directory is useful to visitors even when JavaScript is unavailable.
-    home=(destination/'index.html').read_text(encoding='utf-8')
-    home=re.sub(r'<!-- SURVEY:START -->(.*?)<!-- SURVEY:END -->',lambda m:m[1] if survey_page else '',home,flags=re.S)
-    extra=f'<link rel="canonical" href="{SITE}/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:url" content="{SITE}/"><link rel="alternate" hreflang="en" href="{SITE}/"><link rel="alternate" hreflang="zh-CN" href="{SITE}/zh/"><link rel="alternate" hreflang="x-default" href="{SITE}/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA research updates"><link rel="stylesheet" href="./pages.css">'
-    home=home.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),{"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}]})}</script></head>')
-    for identity,value in [('stat-curated',len(reviewed)),('stat-pending',awaiting),('stat-candidates',candidates),('stat-sources',len(coverage['sources']))]:
-        home=re.sub(f'(id="{identity}">).*?(</span>)',lambda m:m.group(1)+format(value,',')+m.group(2),home)
-    home=home.replace('id="snapshot-date">—','id="snapshot-date">'+latest[:10])
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Updates every two hours</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
-    home=home.replace('</main>',static+'</main>')
-    emit('/',home)
+    website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}
+    home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+'<div class="home-directory">'+static+'</div>'+home_page.contribute()
+    emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]))
+    # The explorer holds the complete interactive catalog, including records awaiting review; it needs JavaScript.
+    explorer_source=destination/'explore.html'
+    explorer=explorer_source.read_text(encoding='utf-8')
+    explorer_source.unlink()
+    explorer=re.sub(r'<!-- SURVEY:START -->(.*?)<!-- SURVEY:END -->',lambda m:m[1] if survey_page else '',explorer,flags=re.S)
+    extra=f'<link rel="canonical" href="{SITE}/explore/"><meta name="robots" content="noindex,follow"><meta property="og:url" content="{SITE}/explore/"><link rel="alternate" type="application/atom+xml" href="{SITE}/feed.xml" title="AwesomeCUA research updates">'
+    explorer=explorer.replace('</head>',extra+f'<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":[organization(),website]})}</script></head>')
+    for identity,value in [('stat-curated',len(reviewed)),('stat-pending',awaiting),('stat-candidates',candidates),('stat-sources',len(coverage['sources']))]:
+        explorer=re.sub(f'(id="{identity}">).*?(</span>)',lambda m:m.group(1)+format(value,',')+m.group(2),explorer)
+    explorer=explorer.replace('id="snapshot-date">—','id="snapshot-date">'+latest[:10])
+    explorer=explorer.replace('</main>',static+'</main>')
+    explorer_trail=[('AwesomeCUA','/'),('Explore every record','/explore/')]
+    explorer=explorer.replace('<main class="explore">','<main class="explore"><nav class="breadcrumbs shell" aria-label="Breadcrumb"><ol><li><a href="/">AwesomeCUA</a></li><li><a href="/explore/" aria-current="page">Explore every record</a></li></ol></nav>')
+    explorer=explorer.replace('</head>','<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':[{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':i+1,'name':name,'item':SITE+target} for i,(name,target) in enumerate(explorer_trail)]}]},ensure_ascii=False)+'</script></head>')
+    explorer=explorer.replace('<!-- SHELL:HEAD -->',site_shell.head_assets())
+    explorer=explorer.replace('<!-- SHELL:STYLES -->',f'<link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><link rel="stylesheet" href="{site_shell.asset("/styles.css")}">')
+    explorer=explorer.replace('<!-- SHELL:TOP -->',site_shell.top(path='/explore/',lang_href='/explore/?lang=zh'))
+    explorer=explorer.replace('<!-- SHELL:BOTTOM -->',site_shell.bottom(lang_href='/explore/?lang=zh'))
+    emit('/explore/',explorer,index=False,utility=True)
     feed=ET.Element('feed',xmlns='http://www.w3.org/2005/Atom')
     for key,value in [('title','AwesomeCUA research reading list'),('id',SITE+'/papers/'),('updated',latest)]:ET.SubElement(feed,key).text=value
     ET.SubElement(feed,'link',href=SITE+'/feed.xml',rel='self');ET.SubElement(feed,'link',href=SITE+'/papers/')
@@ -517,7 +558,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     ET.indent(sitemap,space='  ')
     (destination/'sitemap.xml').write_bytes(clean_text(ET.tostring(sitemap,encoding='utf-8',xml_declaration=True).decode()).encode())
     (destination/'sitemap.txt').write_text(clean_text(''.join(SITE+item['path']+'\n' for item in sorted(manifest,key=lambda x:x['path']) if item['indexable'])),encoding='utf-8')
-    (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))
     key=config['indexnow_key'];(destination/(key+'.txt')).write_text(key,encoding='utf-8')
     return manifest

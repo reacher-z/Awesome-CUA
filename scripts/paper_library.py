@@ -104,7 +104,7 @@ def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1
     if 'undated' in years:
         years.remove('undated'); years.append('undated')
     def search_link(**filters):
-        return '/?' + esc(urlencode({'kind': 'paper', 'review': 'curated', 'lang': 'zh' if zh else 'en', **filters})) + '#catalog'
+        return '/explore/?' + esc(urlencode({'kind': 'paper', 'review': 'curated', 'lang': 'zh' if zh else 'en', **filters})) + '#catalog'
     title = tr('Computer-use research library', 'Computer-Use 论文库')
     title_markup = 'Computer-Use <span class="library-title-tail">论文库</span>' if zh else esc(title)
     body = ['<section class="paper-library" aria-labelledby="library-title">',

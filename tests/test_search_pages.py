@@ -108,9 +108,11 @@ class SearchPagesTests(unittest.TestCase):
         text=(self.dest/'index.html').read_text();p=PageParser(text)
         self.assertIn('/papers/',p.links);self.assertIn('/catalog/',p.links);self.assertIn('/data/',p.links)
         reviewed=[row for row in self.rows if eligible(row)]
-        self.assertIn(f'id="stat-curated">{len(reviewed):,}</span>',text)
-        self.assertNotIn('id="stat-resources"',text)
-        for identity in ('stat-pending','stat-candidates','stat-sources'):self.assertRegex(text,f'id="{identity}">[0-9][0-9,]*</span>')
+        self.assertIn(f'<b>{len(reviewed):,}</b>',text)
+        explorer=(self.dest/'explore/index.html').read_text()
+        self.assertIn(f'id="stat-curated">{len(reviewed):,}</span>',explorer)
+        self.assertNotIn('id="stat-resources"',explorer)
+        for identity in ('stat-pending','stat-candidates','stat-sources'):self.assertRegex(explorer,f'id="{identity}">[0-9][0-9,]*</span>')
         self.assertIn('Computer-use agent research and resources',text)
     def test_bilingual_libraries_preserve_the_complete_reviewed_paper_set(self):
         expected={row['id'] for row in self.rows if eligible(row) and row['kind'] in {'paper','survey'}}
@@ -158,10 +160,11 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertTrue((self.dest/first.lstrip('/')/'index.md').exists())
     def test_script_versions_match_output_bytes_and_final_page_manifest(self):
         pages={item['path']:item for item in self.manifest['pages']}
-        for path,script in [('/', 'app.js'),('/compare/benchmarks/','compare.js'),('/compare/datasets/','compare.js'),
+        for path,script in [('/explore/', 'app.js'),('/compare/benchmarks/','compare.js'),('/compare/datasets/','compare.js'),
                             ('/data/','downloads.js'),('/zh/data/','downloads.js')]:
             content=(self.dest/path.lstrip('/')/'index.html').read_bytes()
-            sources=PageParser(content.decode('utf-8')).scripts
+            # Every page also loads the shared shell script, which carries its own version.
+            sources=[source for source in PageParser(content.decode('utf-8')).scripts if not source.startswith('/assets/site.js')]
             self.assertEqual(len(sources),1,path)
             url=urllib.parse.urlsplit(sources[0])
             self.assertEqual(Path(url.path).name,script)
@@ -204,7 +207,7 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertEqual(dataset['url'],SITE+path)
                 self.assertEqual({item['contentUrl'] for item in dataset['distribution']},
                                  {SITE+'/downloads/catalog.jsonl',SITE+'/data/records.json',SITE+'/downloads/catalog.sqlite'})
-        self.assertIn('href="/zh/data/">数据</a>',(self.dest/'zh/data/index.html').read_text())
+        self.assertIn('href="/zh/data/" aria-current=page>数据</a>',(self.dest/'zh/data/index.html').read_text())
         self.assertIn(SITE+'/downloads/manifest.json',(self.dest/'llms.txt').read_text())
 
     def test_download_script_change_versions_only_data_hub_pages(self):
@@ -226,7 +229,7 @@ class SearchPagesTests(unittest.TestCase):
                 expected=hashlib.sha256((destination/'downloads.js').read_bytes()).hexdigest()
                 for path in ('data/index.html','zh/data/index.html'):
                     parsed=PageParser((destination/path).read_text())
-                    self.assertEqual(parsed.scripts,['/downloads.js?v='+expected])
+                    self.assertEqual([source for source in parsed.scripts if not source.startswith('/assets/site.js')],['/downloads.js?v='+expected])
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
     def test_core_change_updates_only_consumer_pages_and_rebuild_is_stable(self):
@@ -246,7 +249,7 @@ class SearchPagesTests(unittest.TestCase):
                 core=source/'web/catalog-core.js';core.write_bytes(core.read_bytes()+b'\n// Dependency version regression fixture.\n')
                 build_site(destination);after=snapshot()
                 self.assertNotEqual((destination/'app.js').read_bytes(),original_app)
-                self.assertEqual({path for path in before if before[path]!=after[path]},{'/','/compare/benchmarks/','/compare/datasets/'})
+                self.assertEqual({path for path in before if before[path]!=after[path]},{'/explore/','/compare/benchmarks/','/compare/datasets/'})
                 scripts={name:(destination/name).read_bytes() for name in ('app.js','compare.js')}
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
@@ -263,7 +266,7 @@ class SearchPagesTests(unittest.TestCase):
             self.assertTrue(robots.can_fetch(bot,SITE+'/papers/'))
     def test_agent_guides_and_rag_downloads_share_the_actual_catalog(self):
         command='git clone https://github.com/reacher-z/Awesome-CUA.git'
-        for path in ['index.html','agents/index.html','zh/agents/index.html','data/index.html','AGENTS.md','llms.txt']:
+        for path in ['explore/index.html','agents/index.html','zh/agents/index.html','data/index.html','AGENTS.md','llms.txt']:
             self.assertIn(command,(self.dest/path).read_text(),path)
         manifest=json.loads((self.dest/'downloads/rag-manifest.json').read_text())
         self.assertEqual(manifest['catalog_sha256'],hashlib.sha256((self.dest/'downloads/catalog.jsonl').read_bytes()).hexdigest())

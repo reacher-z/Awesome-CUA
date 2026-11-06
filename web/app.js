@@ -127,7 +127,7 @@ async function load() {
   loading=true;$('#load-error').hidden=true;if(slowNotice)slowNotice.hidden=true;$('#results').setAttribute('aria-busy','true');$('#results-count').textContent=t('loading');$('#results').innerHTML=Array.from({length:6},()=>'<div class="skeleton-card" aria-hidden="true"></div>').join('');
   const slowTimer=setTimeout(()=>{if(loading&&slowNotice){slowNotice.hidden=false;$('#results-count').textContent=t('loadingSlow');}},8000);
   try {
-    const response=await fetch('./data/index.json');if(!response.ok)throw new Error('HTTP '+response.status);
+    const response=await fetch('/data/index.json');if(!response.ok)throw new Error('HTTP '+response.status);
     const data=await response.json();report=data.coverage;records=data.records;TOPICS=data.topics || {};
     records.forEach(r=>r.search_text=recordSearchText(r,TOPICS));
     if(!Object.hasOwn(PLATFORMS,state.platform))state.platform='';

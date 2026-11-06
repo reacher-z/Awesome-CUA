@@ -77,9 +77,10 @@ class LearningPublicationTests(unittest.TestCase):
             self.assertFalse((folder / "citation.bib").exists())
         for path in ("index.html", "zh/index.html", "catalog/index.html", "404.html"):
             self.assertIn('href="/categories/learning/"', (self.build / path).read_text(encoding="utf-8"), path)
-        # Learning resources count among the curated resources in the home headline.
-        self.assertIn(f'id="stat-curated">{sum(row["review_status"] == "curated" for row in self.rows)}</span>',
-                      (self.build / "index.html").read_text(encoding="utf-8"))
+        # Learning resources count among the curated resources in the home and explorer headlines.
+        curated = sum(row["review_status"] == "curated" for row in self.rows)
+        self.assertIn(f'id="stat-curated">{curated}</span>', (self.build / "explore/index.html").read_text(encoding="utf-8"))
+        self.assertIn(f'<b>{curated}</b>', (self.build / "index.html").read_text(encoding="utf-8"))
         self.assertIn("学习资源", (self.build / "zh/index.html").read_text(encoding="utf-8"))
         rag = [json.loads(line) for line in (self.build / "downloads/rag-documents.jsonl").read_text(encoding="utf-8").splitlines()]
         self.assertEqual({row["id"] for row in rag}, {row["id"] for row in self.rows if row["review_status"] == "curated"})

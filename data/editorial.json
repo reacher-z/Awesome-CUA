@@ -79877,5 +79877,84 @@
     "editorial_reviewed": false,
     "review_note": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of email, calendar and ticket tool tasks that scores unauthorized side effects of tool-using agents. This tool-calling safety work names no web-page, GUI, mobile or desktop interaction. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text.",
     "reviewed_sha256": "2822f711f79353d5d16a9fb58020f4944c49f35477b25fb78ee0e21ddc4f5e01"
+  },
+  {
+    "id": "arxiv:2310.04406",
+    "name": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2310.04406",
+    "verify_terms": [
+      "Language Agent Tree Search Unifies Reasoning Acting and"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.10739%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747%2C2503.23959%2C2601.14192&max_results=16"
+    ],
+    "scope": "adjacent",
+    "relevance_screen": "adjacent",
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Monte Carlo tree search framework for language agents evaluated on programming, QA, math and WebShop web navigation, so a web environment is one material setting among several. Awaiting an editorial annotation.",
+    "reviewed_sha256": "5b4a148750552dd7394d76c70b023d702b564c63c0f210580b8fac834199c81b"
+  },
+  {
+    "id": "arxiv:2407.19354",
+    "name": "The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2407.19354",
+    "verify_terms": [
+      "The Emerged Security and Privacy of LLM Agent: A Survey with"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.10739%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747%2C2503.23959%2C2601.14192&max_results=16"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of security and privacy threats to LLM agents with case studies; the abstract does not say how much it covers web, GUI or computer-use agents. Needs a scope decision from the full text.",
+    "reviewed_sha256": "5b4a148750552dd7394d76c70b023d702b564c63c0f210580b8fac834199c81b"
+  },
+  {
+    "id": "arxiv:2411.01747",
+    "name": "DynaSaur: Large Language Agents Beyond Predefined Actions",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2411.01747",
+    "verify_terms": [
+      "DynaSaur: Large Language Agents Beyond Predefined Actions"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.10739%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747%2C2503.23959%2C2601.14192&max_results=16"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract lets LLM agents write and reuse program actions instead of choosing from a fixed action set. This generic agent framework names no web-page, GUI or device setting, so it is outside the catalog. The other marked it borderline: Generic LLM agent framework that writes and executes code to create reusable actions. The abstract leaves its environments and benchmarks unnamed, so it is unclear whether the agent operates web pages, computer files or applications. Needs a scope decision from the full text.",
+    "reviewed_sha256": "5b4a148750552dd7394d76c70b023d702b564c63c0f210580b8fac834199c81b"
+  },
+  {
+    "id": "arxiv:2601.14192",
+    "name": "Toward Efficient Agents: Memory, Tool learning, and Planning",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2601.14192",
+    "verify_terms": [
+      "Toward Efficient Agents: Memory, Tool learning, and Planning"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.10739%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747%2C2503.23959%2C2601.14192&max_results=16"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of efficiency in agent memory, tool learning and planning; the abstract does not say whether it covers web, GUI or computer-use agents. Needs a scope decision from the full text.",
+    "reviewed_sha256": "5b4a148750552dd7394d76c70b023d702b564c63c0f210580b8fac834199c81b"
+  },
+  {
+    "id": "url:0eb4d29a37f569e51186",
+    "name": "Towards LLMCI - Multimodal AI for LLM-Vision UI Operation",
+    "kind": "paper",
+    "url": "https://www.researchsquare.com/article/rs-4653823/v1",
+    "verify_terms": [
+      "Towards LLMCI"
+    ],
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.21203/rs.3.rs-4653823/v1"
+    ],
+    "scope": "core",
+    "relevance_screen": "core",
+    "editorial_reviewed": false,
+    "review_note": "Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation.",
+    "reviewed_sha256": "ba07c58aeb5a1d0e47c118fecd2d24a5271ffb3575109f6dfe0e5d197290e358"
   }
 ]

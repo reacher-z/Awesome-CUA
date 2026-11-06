@@ -19438,5 +19438,185 @@
       "sha256": "3f9096c49abb9721619c36b1a453fd216a1161160fe56f8bc1bb01b0de77074e",
       "retrieved_at": "2026-11-04T16:21:29Z"
     }
+  },
+  {
+    "id": "arxiv:2108.07258",
+    "name": "On the Opportunities and Risks of Foundation Models",
+    "url": "https://arxiv.org/abs/2108.07258",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract reports on the capabilities, risks and societal impact of foundation models in general. This broad foundation-model report does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "059147c912eb4618939f4d1c5d550a0108864f12bdf93b606f2b50eb6f0ca4ce",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2212.08681",
+    "name": "Plansformer: Generating Symbolic Plans using Transformers",
+    "url": "https://arxiv.org/abs/2212.08681",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract fine-tunes an LLM to generate symbolic plans for classical planning domains such as Towers of Hanoi. This automated-planning work does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "ec0ad377481b5479c9e373bf5bc69443568f27ddb5b0592ffd77b3a413d023ff",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2307.06435",
+    "name": "A Comprehensive Overview of Large Language Models",
+    "url": "https://arxiv.org/abs/2307.06435",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract surveys large language model architectures, training, efficiency and benchmarks. This general LLM survey does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "bfb84d4643ac771a946f9f7919c474f9c38b7c8e79e4795a64ef0c8d5779f71c",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2307.09288",
+    "name": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "url": "https://arxiv.org/abs/2307.09288",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract releases pretrained and chat-tuned open language models and describes their fine-tuning and safety work. This foundation-model release does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "ae362bb7f6610b0386d0cfe09386fbe2a6115b3027265cfc0870bd3287fd7dbe",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2310.03965",
+    "name": "Thought Propagation: An Analogical Approach to Complex Reasoning with Large Language Models",
+    "url": "https://arxiv.org/abs/2310.03965",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract improves LLM reasoning by solving and reusing analogous problems, tested on shortest paths, creative writing and unnamed agent planning. It names no web, GUI or device setting, so it is outside the catalog.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "96012dc248f720dcd3b4004004882df8f539f2944afab0d629dd00d0ae82356d",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2310.13227",
+    "name": "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+    "url": "https://arxiv.org/abs/2310.13227",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract plans sequences of API function calls with A* tree search for tool-using LLM agents. This tool-calling work names no web-page, GUI or device interaction, so it is outside the catalog.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "b81323aafa162abae785f1ee7beecda8e47415e195d7f03c7d527a492693cf89",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2402.06853",
+    "name": "History, Development, and Principles of Large Language Models-An Introductory Survey",
+    "url": "https://arxiv.org/abs/2402.06853",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract introduces the history and principles of language models for a general audience. This introductory LLM survey does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "10d3bd0fe7a1b2d381c8a559c9b17c1ccbc00c78f048eba20bb1add0746ceb21",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2403.07918",
+    "name": "On the Societal Impact of Open Foundation Models",
+    "url": "https://arxiv.org/abs/2403.07918",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract assesses the benefits and marginal misuse risks of openly released foundation-model weights. This AI-policy analysis does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "1ad0fc8a1efca55d9a3b12abbb25b9b14b766bc7f729be4903fb0c40485d38d3",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2405.10739",
+    "name": "Efficient Multimodal Large Language Models: A Survey",
+    "url": "https://arxiv.org/abs/2405.10739",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract surveys efficient and lightweight multimodal LLM architectures and training strategies. This model-efficiency survey does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "9bdbd4efbc8c224f7703976734c1c45be87400eded5d94caa122855907b31bdf",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2405.10739%2C2503.23959%2C2601.14192&max_results=3",
+      "sha256": "64f97144291fff3db4017aa98232c8ab4835b963924ad791e4a24f9b6e06735e",
+      "retrieved_at": "2026-11-05T22:45:59Z"
+    }
+  },
+  {
+    "id": "arxiv:2405.19119",
+    "name": "Can Graph Learning Improve Planning in LLM-based Agents?",
+    "url": "https://arxiv.org/abs/2405.19119",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract adds graph neural networks to LLM task planning over sub-task dependency graphs. This planning work names no web-page, GUI or device interaction, so it is outside the catalog.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "c3b4f95ef47177efef46b3fcbe647905c2c3cd97a2d5e1a1159f4249d3efc612",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2406.16937",
+    "name": "A Complete Survey on LLM-based AI Chatbots",
+    "url": "https://arxiv.org/abs/2406.16937",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract surveys the development and industry uses of LLM-based conversational chatbots. This chatbot survey does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "32ab1d564d220e78be54cd472f3a03fd91ceb77ba69b414883fad4fe6beba887",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+      "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+      "retrieved_at": "2026-11-05T22:51:37Z"
+    }
+  },
+  {
+    "id": "arxiv:2503.23959",
+    "name": "Local Information Matters: Inference Acceleration For Grounded Conversation Generation Models Through Adaptive Local-Aware Token Pruning",
+    "url": "https://arxiv.org/abs/2503.23959",
+    "decision": "out_of_scope",
+    "basis": "primary_abstract_review",
+    "reason": "The abstract prunes visual tokens to speed up grounded conversation generation with segmentation masks on natural images. This model-efficiency work does not involve agents operating graphical interfaces, web pages or devices.",
+    "reviewed_at": "2026-11-06T00:00:33Z",
+    "metadata_fingerprint": "4c845820c896112ca4be2131bd39688441ad126793ea90728a6b56a6f03a7cec",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2405.10739%2C2503.23959%2C2601.14192&max_results=3",
+      "sha256": "64f97144291fff3db4017aa98232c8ab4835b963924ad791e4a24f9b6e06735e",
+      "retrieved_at": "2026-11-05T22:45:59Z"
+    }
   }
 ]

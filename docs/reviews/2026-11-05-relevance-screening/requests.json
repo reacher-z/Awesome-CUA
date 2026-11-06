@@ -1,5 +1,5 @@
 {
-  "description": "Official arXiv API id_list requests whose Atom responses were read for the 5-6 November 2026 relevance screening. Requests were sent one at a time, 3.1 s apart. Each decision-table row names its request by number (1-based position in this list). Response bodies stay in the ignored local cache.",
+  "description": "Official arXiv API id_list requests (1-41) and one Crossref works request (42) whose responses were read for the 5-6 November 2026 relevance screening. Requests were sent one at a time, 3.1 s apart. Each decision-table row names its request by number (1-based position in this list). Response bodies stay in the ignored local cache.",
   "requests": [
     {
       "number": 1,
@@ -279,6 +279,20 @@
       "url": "https://export.arxiv.org/api/query?id_list=2611.03930%2C2611.04073%2C2611.04142%2C2611.04393%2C2611.04785%2C2611.04879%2C2611.05036%2C2611.05263%2C2611.05873%2C2611.06039%2C2611.06544%2C2611.06854&max_results=12",
       "retrieved_at": "2026-11-05T23:03:30Z",
       "sha256": "0c7bfb6af7650b096faabf37eb8c024f2877842018cf9aa212c0a3b9aef98252",
+      "status": 200
+    },
+    {
+      "number": 41,
+      "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.10739%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747%2C2503.23959%2C2601.14192&max_results=16",
+      "retrieved_at": "2026-11-05T23:49:42Z",
+      "sha256": "5b4a148750552dd7394d76c70b023d702b564c63c0f210580b8fac834199c81b",
+      "status": 200
+    },
+    {
+      "number": 42,
+      "url": "https://api.crossref.org/works/10.21203/rs.3.rs-4653823/v1",
+      "retrieved_at": "2026-11-06T00:06:20Z",
+      "sha256": "ba07c58aeb5a1d0e47c118fecd2d24a5271ffb3575109f6dfe0e5d197290e358",
       "status": 200
     }
   ]

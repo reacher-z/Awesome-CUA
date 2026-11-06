@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "excluded_records": 1296,
+  "excluded_records": 1308,
   "revalidation_pending": 0,
   "policy": "Explicit primary-abstract scope review; not a judgment of research quality. Raw metadata remains in the archive. Changed or unresolved decisions do not suppress records.",
   "decisions": [
@@ -4085,6 +4085,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2108.07258",
+      "name": "On the Opportunities and Risks of Foundation Models",
+      "url": "https://arxiv.org/abs/2108.07258",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract reports on the capabilities, risks and societal impact of foundation models in general. This broad foundation-model report does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "059147c912eb4618939f4d1c5d550a0108864f12bdf93b606f2b50eb6f0ca4ce",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2109.00137",
       "name": "Implicit Behavioral Cloning",
       "url": "https://arxiv.org/abs/2109.00137",
@@ -5462,6 +5479,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2212.08681",
+      "name": "Plansformer: Generating Symbolic Plans using Transformers",
+      "url": "https://arxiv.org/abs/2212.08681",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract fine-tunes an LLM to generate symbolic plans for classical planning domains such as Towers of Hanoi. This automated-planning work does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "ec0ad377481b5479c9e373bf5bc69443568f27ddb5b0592ffd77b3a413d023ff",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2212.11141",
       "name": "Reservoir Computing Using Complex Systems",
       "url": "https://arxiv.org/abs/2212.11141",
@@ -6771,6 +6805,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2307.06435",
+      "name": "A Comprehensive Overview of Large Language Models",
+      "url": "https://arxiv.org/abs/2307.06435",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract surveys large language model architectures, training, efficiency and benchmarks. This general LLM survey does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "bfb84d4643ac771a946f9f7919c474f9c38b7c8e79e4795a64ef0c8d5779f71c",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2307.07924",
       "name": "ChatDev: Communicative Agents for Software Development",
       "url": "https://arxiv.org/abs/2307.07924",
@@ -6783,6 +6834,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=1610.08401%2C2005.03823%2C2005.09161%2C2007.08745%2C2112.09332%2C2205.00445%2C2205.12255%2C2205.12700%2C2206.05751%2C2302.03668%2C2304.07590%2C2304.08354%2C2305.00944%2C2305.02424%2C2305.10847%2C2305.13300%2C2305.14710%2C2305.14950%2C2305.15334%2C2306.06624%2C2306.13213%2C2306.15447%2C2306.17194%2C2306.17882%2C2307.07924%2C2307.10490%2C2307.14539%2C2307.15043%2C2308.00352%2C2308.03427%2C2308.08155%2C2309.06055%2C2309.10253%2C2309.15817%2C2310.02446%2C2310.06387%2C2310.10077%2C2311.09447%2C2311.11315%2C2401.05949%2C2401.06373%2C2401.10019%2C2401.12242&max_results=43",
         "sha256": "0901e063a911164dd291042946a9a0bc63b53d61da59666259c34fb2560e17e0",
         "retrieved_at": "2026-10-18T11:04:43Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2307.09288",
+      "name": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "url": "https://arxiv.org/abs/2307.09288",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract releases pretrained and chat-tuned open language models and describes their fine-tuning and safety work. This foundation-model release does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "ae362bb7f6610b0386d0cfe09386fbe2a6115b3027265cfc0870bd3287fd7dbe",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -7400,6 +7468,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2310.03965",
+      "name": "Thought Propagation: An Analogical Approach to Complex Reasoning with Large Language Models",
+      "url": "https://arxiv.org/abs/2310.03965",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract improves LLM reasoning by solving and reusing analogous problems, tested on shortest paths, creative writing and unnamed agent planning. It names no web, GUI or device setting, so it is outside the catalog.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "96012dc248f720dcd3b4004004882df8f539f2944afab0d629dd00d0ae82356d",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2310.04119",
       "name": "Quantum computing using floating electrons on cryogenic substrates: Potential And Challenges",
       "url": "https://arxiv.org/abs/2310.04119",
@@ -7667,6 +7752,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2304.08479%2C2305.09699%2C2305.09770%2C2305.11271%2C2305.14343%2C2305.16338%2C2305.16985%2C2306.04529%2C2306.05499%2C2306.07179%2C2306.11134%2C2307.00804%2C2307.02443%2C2308.01552%2C2308.05391%2C2308.05822%2C2308.06595%2C2308.07201%2C2308.09289%2C2309.04561%2C2309.05251%2C2309.07550%2C2309.09958%2C2309.10094%2C2309.13965%2C2310.07433%2C2310.07899%2C2310.09103%2C2310.12670%2C2310.12793%2C2310.12815%2C2310.12945%2C2310.12972%2C2310.13345%2C2310.14495%2C2310.17596%2C2310.19805%2C2311.01011%2C2311.07215%2C2311.09227%2C2311.10538%2C2311.10751%2C2311.11261%2C2311.11855%2C2311.18492%2C2311.18760%2C2312.02976%2C2312.03815%2C2312.07424%2C2312.09238&max_results=50",
         "sha256": "4856a9c146f74964be623730f3cee6b15fcaad83f7d83a4956e971b541a63070",
         "retrieved_at": "2026-10-17T07:57:30Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2310.13227",
+      "name": "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+      "url": "https://arxiv.org/abs/2310.13227",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract plans sequences of API function calls with A* tree search for tool-using LLM agents. This tool-calling work names no web-page, GUI or device interaction, so it is outside the catalog.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "b81323aafa162abae785f1ee7beecda8e47415e195d7f03c7d527a492693cf89",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -8811,6 +8913,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2402.06853",
+      "name": "History, Development, and Principles of Large Language Models-An Introductory Survey",
+      "url": "https://arxiv.org/abs/2402.06853",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract introduces the history and principles of language models for a general audience. This introductory LLM survey does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "10d3bd0fe7a1b2d381c8a559c9b17c1ccbc00c78f048eba20bb1add0746ceb21",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2402.08567",
       "name": "Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast",
       "url": "https://arxiv.org/abs/2402.08567",
@@ -9197,6 +9316,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2312.02051%2C2312.10170%2C2312.11805%2C2401.03428%2C2401.03568%2C2401.04088%2C2402.01680%2C2402.01817%2C2402.02716%2C2402.03300%2C2402.03578%2C2402.15116%2C2403.05530%2C2403.07548%2C2403.08978%2C2403.09333%2C2403.11481%2C2403.12881%2C2403.14508%2C2404.00282%2C2404.04902%2C2405.11106%2C2405.11143%2C2405.14093%2C2405.16256%2C2406.09455%2C2406.14088%2C2406.16707%2C2407.06886%2C2407.11691%2C2408.09071%2C2408.15769%2C2409.02813%2C2409.03215%2C2409.04465%2C2409.12191%2C2409.17146%2C2409.18142%2C2409.18807%2C2409.19256%2C2410.02052%2C2410.21220%2C2410.21276%2C2411.05755%2C2411.17933%2C2412.10400%2C2412.14171%2C2501.02189%2C2501.02863%2C2501.07278&max_results=50",
         "sha256": "4f8c52402475481097941fac66a689892def7057d6129b23f62f53f31e53690a",
         "retrieved_at": "2026-11-05T21:13:41Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2403.07918",
+      "name": "On the Societal Impact of Open Foundation Models",
+      "url": "https://arxiv.org/abs/2403.07918",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract assesses the benefits and marginal misuse risks of openly released foundation-model weights. This AI-policy analysis does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "1ad0fc8a1efca55d9a3b12abbb25b9b14b766bc7f729be4903fb0c40485d38d3",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -9797,6 +9933,23 @@
       "status_reason": "Reviewed snapshot matches retained metadata."
     },
     {
+      "id": "arxiv:2405.10739",
+      "name": "Efficient Multimodal Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2405.10739",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract surveys efficient and lightweight multimodal LLM architectures and training strategies. This model-efficiency survey does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "9bdbd4efbc8c224f7703976734c1c45be87400eded5d94caa122855907b31bdf",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2405.10739%2C2503.23959%2C2601.14192&max_results=3",
+        "sha256": "64f97144291fff3db4017aa98232c8ab4835b963924ad791e4a24f9b6e06735e",
+        "retrieved_at": "2026-11-05T22:45:59Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
       "id": "arxiv:2405.11106",
       "name": "LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions",
       "url": "https://arxiv.org/abs/2405.11106",
@@ -9894,6 +10047,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2312.02051%2C2312.10170%2C2312.11805%2C2401.03428%2C2401.03568%2C2401.04088%2C2402.01680%2C2402.01817%2C2402.02716%2C2402.03300%2C2402.03578%2C2402.15116%2C2403.05530%2C2403.07548%2C2403.08978%2C2403.09333%2C2403.11481%2C2403.12881%2C2403.14508%2C2404.00282%2C2404.04902%2C2405.11106%2C2405.11143%2C2405.14093%2C2405.16256%2C2406.09455%2C2406.14088%2C2406.16707%2C2407.06886%2C2407.11691%2C2408.09071%2C2408.15769%2C2409.02813%2C2409.03215%2C2409.04465%2C2409.12191%2C2409.17146%2C2409.18142%2C2409.18807%2C2409.19256%2C2410.02052%2C2410.21220%2C2410.21276%2C2411.05755%2C2411.17933%2C2412.10400%2C2412.14171%2C2501.02189%2C2501.02863%2C2501.07278&max_results=50",
         "sha256": "4f8c52402475481097941fac66a689892def7057d6129b23f62f53f31e53690a",
         "retrieved_at": "2026-11-05T21:13:41Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2405.19119",
+      "name": "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "url": "https://arxiv.org/abs/2405.19119",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract adds graph neural networks to LLM task planning over sub-task dependency graphs. This planning work names no web-page, GUI or device interaction, so it is outside the catalog.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "c3b4f95ef47177efef46b3fcbe647905c2c3cd97a2d5e1a1159f4249d3efc612",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -10183,6 +10353,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2312.02051%2C2312.10170%2C2312.11805%2C2401.03428%2C2401.03568%2C2401.04088%2C2402.01680%2C2402.01817%2C2402.02716%2C2402.03300%2C2402.03578%2C2402.15116%2C2403.05530%2C2403.07548%2C2403.08978%2C2403.09333%2C2403.11481%2C2403.12881%2C2403.14508%2C2404.00282%2C2404.04902%2C2405.11106%2C2405.11143%2C2405.14093%2C2405.16256%2C2406.09455%2C2406.14088%2C2406.16707%2C2407.06886%2C2407.11691%2C2408.09071%2C2408.15769%2C2409.02813%2C2409.03215%2C2409.04465%2C2409.12191%2C2409.17146%2C2409.18142%2C2409.18807%2C2409.19256%2C2410.02052%2C2410.21220%2C2410.21276%2C2411.05755%2C2411.17933%2C2412.10400%2C2412.14171%2C2501.02189%2C2501.02863%2C2501.07278&max_results=50",
         "sha256": "4f8c52402475481097941fac66a689892def7057d6129b23f62f53f31e53690a",
         "retrieved_at": "2026-11-05T21:13:41Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2406.16937",
+      "name": "A Complete Survey on LLM-based AI Chatbots",
+      "url": "https://arxiv.org/abs/2406.16937",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract surveys the development and industry uses of LLM-based conversational chatbots. This chatbot survey does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "32ab1d564d220e78be54cd472f3a03fd91ceb77ba69b414883fad4fe6beba887",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2108.07258%2C2212.08681%2C2307.06435%2C2307.09288%2C2310.03965%2C2310.04406%2C2310.13227%2C2402.06853%2C2403.07918%2C2405.19119%2C2406.16937%2C2407.19354%2C2411.01747&max_results=13",
+        "sha256": "37764bc2320cd276186b5d58298d91eff164662dbc905cef8e3d8654096fb20d",
+        "retrieved_at": "2026-11-05T22:51:37Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."
@@ -13532,6 +13719,23 @@
         "url": "https://export.arxiv.org/api/query?id_list=2501.06497%2C2501.06994%2C2501.07834%2C2501.07927%2C2501.11233%2C2501.15570%2C2501.16403%2C2501.16609%2C2501.17391%2C2502.00372%2C2502.00392%2C2502.00964%2C2502.00988%2C2502.01562%2C2502.01839%2C2502.03723%2C2502.05174%2C2502.05227%2C2502.08489%2C2502.11221%2C2502.12130%2C2502.14496%2C2502.16587%2C2502.16786%2C2502.16796%2C2502.18356%2C2502.18512%2C2502.20383%2C2502.20390%2C2502.20582%2C2503.06378%2C2503.08026%2C2503.10613%2C2503.10809%2C2503.11579%2C2503.12228%2C2503.12461%2C2503.13843%2C2503.14495%2C2503.15426%2C2503.16036%2C2503.16248%2C2503.16975%2C2503.17671%2C2503.18102%2C2503.21889%2C2503.21949%2C2503.23803%2C2504.01328%2C2504.01377&max_results=50",
         "sha256": "9ca057ee6538002c739e58a7b3f86fc51a434d085a33e5590f0720e4f27c6b24",
         "retrieved_at": "2026-10-17T07:57:44Z"
+      },
+      "status": "excluded",
+      "status_reason": "Reviewed snapshot matches retained metadata."
+    },
+    {
+      "id": "arxiv:2503.23959",
+      "name": "Local Information Matters: Inference Acceleration For Grounded Conversation Generation Models Through Adaptive Local-Aware Token Pruning",
+      "url": "https://arxiv.org/abs/2503.23959",
+      "decision": "out_of_scope",
+      "basis": "primary_abstract_review",
+      "reason": "The abstract prunes visual tokens to speed up grounded conversation generation with segmentation masks on natural images. This model-efficiency work does not involve agents operating graphical interfaces, web pages or devices.",
+      "reviewed_at": "2026-11-06T00:00:33Z",
+      "metadata_fingerprint": "4c845820c896112ca4be2131bd39688441ad126793ea90728a6b56a6f03a7cec",
+      "evidence": {
+        "url": "https://export.arxiv.org/api/query?id_list=2405.10739%2C2503.23959%2C2601.14192&max_results=3",
+        "sha256": "64f97144291fff3db4017aa98232c8ab4835b963924ad791e4a24f9b6e06735e",
+        "retrieved_at": "2026-11-05T22:45:59Z"
       },
       "status": "excluded",
       "status_reason": "Reviewed snapshot matches retained metadata."

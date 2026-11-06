@@ -1,15 +1,15 @@
 {
   "as_of_utc": "2026-11-06T04:18:34Z",
-  "total_records": 2502,
+  "total_records": 2490,
   "curated_records": 1674,
-  "bibliographic_records": 2030,
-  "arxiv_active_records": 2016,
+  "bibliographic_records": 2018,
+  "arxiv_active_records": 2004,
   "non_arxiv_bibliographic_records": 14,
   "publication_metadata_records": 78,
   "arxiv_archive_records": 3312,
-  "excluded_records": 1296,
+  "excluded_records": 1308,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 828,
+  "metadata_only_records": 816,
   "discovery_identifiers": 5883,
   "unindexed_candidates": 1970,
   "non_resource_candidates": 130,
@@ -5901,6 +5901,41 @@
       "url": "https://arxiv.org/abs/2610.34167",
       "reason": "Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of email, calendar and ticket tool tasks that scores unauthorized side effects of tool-using agents. This tool-calling safety work names no web-page, GUI, mobile or desktop interaction. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text.",
       "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2310.04406",
+      "name": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+      "url": "https://arxiv.org/abs/2310.04406",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Monte Carlo tree search framework for language agents evaluated on programming, QA, math and WebShop web navigation, so a web environment is one material setting among several. Awaiting an editorial annotation.",
+      "cause": "annotation_pending"
+    },
+    {
+      "id": "arxiv:2407.19354",
+      "name": "The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies",
+      "url": "https://arxiv.org/abs/2407.19354",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of security and privacy threats to LLM agents with case studies; the abstract does not say how much it covers web, GUI or computer-use agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2411.01747",
+      "name": "DynaSaur: Large Language Agents Beyond Predefined Actions",
+      "url": "https://arxiv.org/abs/2411.01747",
+      "reason": "Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract lets LLM agents write and reuse program actions instead of choosing from a fixed action set. This generic agent framework names no web-page, GUI or device setting, so it is outside the catalog. The other marked it borderline: Generic LLM agent framework that writes and executes code to create reusable actions. The abstract leaves its environments and benchmarks unnamed, so it is unclear whether the agent operates web pages, computer files or applications. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "arxiv:2601.14192",
+      "name": "Toward Efficient Agents: Memory, Tool learning, and Planning",
+      "url": "https://arxiv.org/abs/2601.14192",
+      "reason": "Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of efficiency in agent memory, tool learning and planning; the abstract does not say whether it covers web, GUI or computer-use agents. Needs a scope decision from the full text.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:0eb4d29a37f569e51186",
+      "name": "Towards LLMCI - Multimodal AI for LLM-Vision UI Operation",
+      "url": "https://www.researchsquare.com/article/rs-4653823/v1",
+      "reason": "Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation.",
+      "cause": "annotation_pending"
     }
   ],
   "uncurated_linked_papers": [],
@@ -5913,7 +5948,7 @@
     "infrastructure": 14,
     "learning": 2,
     "model": 98,
-    "paper": 2011,
+    "paper": 1999,
     "product": 20,
     "survey": 19,
     "tool": 22
@@ -9093,11 +9128,11 @@
         "state": "success"
       },
       "discovered": 122,
-      "indexed": 73,
-      "indexed_resources": 71,
+      "indexed": 71,
+      "indexed_resources": 69,
       "resolved_aliases": 8,
       "curated": 67,
-      "excluded": 0,
+      "excluded": 2,
       "set_aside": 22,
       "unindexed": 27
     },
@@ -9123,11 +9158,11 @@
         "state": "success"
       },
       "discovered": 117,
-      "indexed": 71,
-      "indexed_resources": 71,
+      "indexed": 61,
+      "indexed_resources": 61,
       "resolved_aliases": 0,
       "curated": 53,
-      "excluded": 3,
+      "excluded": 13,
       "set_aside": 22,
       "unindexed": 21
     }

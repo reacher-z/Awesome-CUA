@@ -4,7 +4,7 @@ Before this screening, 1,962 active records were arXiv papers with bibliographic
 
 ## Population and evidence
 
-- **Population:** every record with scope `relevance_pending` at source commit `aa2c141b`: 1,962 arXiv papers. Papers indexed after that commit stay pending for the next screening.
+- **Population:** every record with scope `relevance_pending` at source commit `aa2c141b`: 1,962 arXiv papers. 17 records indexed after that commit, up to `ada5f996`, were screened the same way on 6 November and applied as batch 06: 16 arXiv papers and one Research Square preprint, whose abstract was read from its Crossref record. Papers indexed later stay pending for the next screening.
 - **Abstracts:** 40 official arXiv API `id_list` requests of up to 50 identifiers, sent one at a time 3.1 s apart on 5 November 2026, 23:00–23:04 UTC and listed with their response digests in [requests.json](2026-11-05-relevance-screening/requests.json). 1,947 abstracts hash to the retained `abstract_sha256` with the catalog's `sha256-utf8-whitespace-collapsed-v1` method; 15 are newer arXiv versions. Full abstracts stay in the ignored response cache and are not copied into the repository.
 - **Existing decisions:** 15 of these papers already had an unapproved editorial entry. Those entries and their recorded reasons were left unchanged.
 
@@ -43,13 +43,13 @@ Out of scope are unrelated science and engineering, general foundation models, g
 | Borderline or disputed | 300 | Proposal, `reviewer_hold` |
 | **Total** | **1,962** | |
 
-The second reading confirmed 1,191 of 1,224 first-reading exclusions (97.3%); the other 33 are held. Codex review then disputed 4 agreed exclusions; those and 10 more of the same class are held rather than excluded, and their `hold_basis` column says so. Before applying, 6 out-of-scope papers whose retained snapshot differs from the abstract read are held instead, and 15 papers keep their earlier editorial entry. Applied so far:
+The table covers the snapshot population; batch 06 is counted separately in the applied totals below. The second reading confirmed 1,191 of 1,224 first-reading exclusions (97.3%); the other 33 are held. Codex review then disputed 4 agreed exclusions; those and 10 more of the same class are held rather than excluded, and their `hold_basis` column says so. Before applying, 6 out-of-scope papers whose retained snapshot differs from the abstract read are held instead, and 15 papers keep their earlier editorial entry. Applied so far:
 
 | Applied as | Papers |
 | --- | ---: |
-| proposal: annotation_pending | 492 |
-| proposal: reviewer_hold | 300 |
-| scope exclusion | 1,155 |
+| proposal: annotation_pending | 494 |
+| proposal: reviewer_hold | 303 |
+| scope exclusion | 1,167 |
 
 **Open pull requests.** 788 of these papers had an open one-paper pull request from 19–20 October 2026. The screening agreed with 611 of their proposals. Every paper whose screening disagrees with its pull request (177 papers) is held, and its note names the pull request; queued proposals name an open curation pull request too. An agreed exclusion supersedes that pull request's change. Those pull requests were left open for the maintainers.
 
@@ -62,6 +62,7 @@ Each CSV lists one applied batch. It records the identifier, title, final decisi
 - [03.csv](2026-11-05-relevance-screening/03.csv): 385 papers — 2 proposal: reviewer_hold, 383 scope exclusion
 - [04.csv](2026-11-05-relevance-screening/04.csv): 492 papers — 492 proposal: annotation_pending
 - [05.csv](2026-11-05-relevance-screening/05.csv): 295 papers — 295 proposal: reviewer_hold
+- [06.csv](2026-11-05-relevance-screening/06.csv): 17 papers — 2 proposal: annotation_pending, 3 proposal: reviewer_hold, 12 scope exclusion
 
 ## Limits
 

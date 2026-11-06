@@ -2,11 +2,11 @@
 
 Evidence snapshot through **2026-11-06T04:18:34Z**. Generated from committed source receipts.
 
-- 1,674 curated resources. Another 828 records await review with bibliographic metadata only; the active catalog file holds 2,502 records in all.
-- 2,030 paper and survey records, including 2,016 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
-- 3,312 retained arXiv metadata records; 1,296 explicit scope exclusions are outside the active catalog.
+- 1,674 curated resources. Another 816 records await review with bibliographic metadata only; the active catalog file holds 2,490 records in all.
+- 2,018 paper and survey records, including 2,004 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
+- 3,312 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
 - 5,883 discovery identifiers; 1,970 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
-- 841 editorial proposals await verification or review.
+- 846 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -136,8 +136,8 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-06 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-06 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 0 | 0 | 0 | 0 | OK · 2026-11-06 |
-| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 73 | 67 | 0 | 22 | 27 | OK · 2026-11-06 |
-| [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 71 | 53 | 3 | 22 | 21 | OK · 2026-11-06 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 71 | 67 | 2 | 22 | 27 | OK · 2026-11-06 |
+| [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 61 | 53 | 13 | 22 | 21 | OK · 2026-11-06 |
 
 ## Paper-discovery query coverage
 
@@ -201,7 +201,7 @@ A code license never fills a data or weights field. Hub declarations are publish
 
 ## Pending editorial proposals
 
-841 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 328 held by a reviewer after reading the current source, 492 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
+846 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 331 held by a reviewer after reading the current source, 494 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -1046,6 +1046,11 @@ A code license never fills a data or weights field. Hub declarations are publish
 | [Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents](https://arxiv.org/abs/2609.12533) | Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Plan-and-execute tool-using agent and benchmark for Earth observation workflows. This scientific tool-agent work does not involve operating graphical interfaces, web pages or devices. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #2405. Needs a scope decision from the full text. |
 | [Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams](https://arxiv.org/abs/2610.00583) | Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Studies coordination failures when agents serving different users share budgets, calendars or bookings in simulated tool environments. The abstract names no GUI, web-page or device operation, so this multi-agent work is outside scope. This is the class Codex review disputed in this screening: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. An exclusion proposal is open in pull request #2519. Needs a scope decision from the full text. |
 | [Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents](https://arxiv.org/abs/2610.34167) | Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Benchmark of email, calendar and ticket tool tasks that scores unauthorized side effects of tool-using agents. This tool-calling safety work names no web-page, GUI, mobile or desktop interaction. Codex review disputed this exclusion on that ground: the paper concerns application or workflow tasks carried out through scripts, APIs or tools, which the adjacent category may cover, and the abstract does not settle it. Needs a scope decision from the full text. |
+| [Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models](https://arxiv.org/abs/2310.04406) | Relevance screening of the complete arXiv v3 abstract (5 November 2026): adjacent. Monte Carlo tree search framework for language agents evaluated on programming, QA, math and WebShop web navigation, so a web environment is one material setting among several. Awaiting an editorial annotation. |
+| [The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies](https://arxiv.org/abs/2407.19354) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of security and privacy threats to LLM agents with case studies; the abstract does not say how much it covers web, GUI or computer-use agents. Needs a scope decision from the full text. |
+| [DynaSaur: Large Language Agents Beyond Predefined Actions](https://arxiv.org/abs/2411.01747) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract lets LLM agents write and reuse program actions instead of choosing from a fixed action set. This generic agent framework names no web-page, GUI or device setting, so it is outside the catalog. The other marked it borderline: Generic LLM agent framework that writes and executes code to create reusable actions. The abstract leaves its environments and benchmarks unnamed, so it is unclear whether the agent operates web pages, computer files or applications. Needs a scope decision from the full text. |
+| [Toward Efficient Agents: Memory, Tool learning, and Planning](https://arxiv.org/abs/2601.14192) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Survey of efficiency in agent memory, tool learning and planning; the abstract does not say whether it covers web, GUI or computer-use agents. Needs a scope decision from the full text. |
+| [Towards LLMCI - Multimodal AI for LLM-Vision UI Operation](https://www.researchsquare.com/article/rs-4653823/v1) | Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation. |
 
 ## Uncurated papers behind curated resources
 
@@ -1055,7 +1060,7 @@ None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 
-1296 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
+1308 records have an applied scope decision; 0 require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.
 
 ## Known gaps
 

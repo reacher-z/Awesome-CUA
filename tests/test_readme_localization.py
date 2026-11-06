@@ -22,22 +22,26 @@ class ReadmeLocalizationTests(unittest.TestCase):
             self.assertEqual(en[key].keys(), zh[key].keys())
 
     def test_chinese_stats_keep_every_figure(self):
-        zh = build.stats_block(self.report, "zh", 812)
-        for figure in ("996", "812", "44", "2026-10-17T07:57:59Z", "1,549", "1,402", "100"):
-            self.assertIn(figure, zh)
-        self.assertIn("条已审阅资源", zh)
+        for figure_block in (build.stats_block(self.report, "zh", 812), build.stats_detail(self.report, "zh", 812)):
+            self.assertTrue(figure_block.strip())
+        headline = build.stats_block(self.report, "zh", 812)
+        detail = build.stats_detail(self.report, "zh", 812)
+        for figure in ("996", "812", "44"):
+            self.assertIn(figure, headline)
+        for figure in ("2026-10-17T07:57:59Z", "1,549", "1,402", "100"):
+            self.assertIn(figure, detail)
+        self.assertIn("条已审阅资源", headline)
         self.assertTrue(build.stats_block(self.report, reviewed_papers=812).startswith("\n\n**996 curated resources** · **812 reviewed papers and surveys**"))
 
-    def test_headline_counts_only_curated_resources(self):
+    def test_readme_carries_one_line_of_counts_and_the_detail_goes_to_the_coverage_ledger(self):
         for lang in ("en", "zh"):
             with self.subTest(lang):
                 block = build.stats_block(self.report, lang, 812)
-                headline, detail = block.strip().split("\n\n")
+                self.assertEqual(len(block.strip().splitlines()), 1)
+                self.assertNotIn("1,549", block)
                 self.assertNotIn("2,545", block)
-                self.assertNotIn("1,549", headline)
-                self.assertNotIn("1,402", headline)
-                self.assertIn("**1,549", detail)
-                self.assertIn("**1,402", detail)
+                self.assertIn("**1,549", build.stats_detail(self.report, lang, 812))
+                self.assertIn("**1,402", build.stats_detail(self.report, lang, 812))
 
     def test_chinese_tables_translate_labels_but_not_resources(self):
         rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]
@@ -55,10 +59,9 @@ class ReadmeLocalizationTests(unittest.TestCase):
     def test_badges_are_at_most_six_and_end_with_license(self):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
         self.assertLessEqual(badges.count("[!["), 6)
-        self.assertIn("dataset-Hugging%20Face-", badges)
-        self.assertNotIn(")](", badges)
-        self.assertIn("2026--10--17", badges)
-        self.assertTrue(badges.strip().endswith("labelColor=1E2233)"))
+        self.assertIn("assets/brand/badges/huggingface.svg", badges)
+        self.assertIn("](https://huggingface.co/datasets/AgPerry/awesome-cua)", badges)
+        self.assertTrue(badges.strip().endswith("(https://github.com/reacher-z/Awesome-CUA)"))
 
     def test_explore_table_pipes_line_up_in_both_languages(self):
         rows = [row("github:a/b", "Bench"), row("arxiv:2401.00001", "Paper", kind="paper")]

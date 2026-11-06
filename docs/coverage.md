@@ -2,6 +2,8 @@
 
 Evidence snapshot through **2026-11-06T04:18:34Z**. Generated from committed source receipts.
 
+Evidence through `2026-11-06T04:18:34Z`. Only curated resources are counted above. Listed separately: **627 records awaiting review** have bibliographic verification only, and **1,971 discovered candidates** remain unresolved, not counting 166 links reviewed as non-resources or other addresses of indexed resources. 1,308 scope exclusions retain their original metadata in the archive. Counts overlap as explained below.
+
 - 1,863 curated resources. Another 627 records await review with bibliographic metadata only; the active catalog file holds 2,490 records in all.
 - 2,018 paper and survey records, including 2,004 arXiv identities and 14 publisher-only identities. This count overlaps the status counts above.
 - 3,312 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.

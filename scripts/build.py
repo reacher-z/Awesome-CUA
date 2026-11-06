@@ -728,6 +728,7 @@ def documents(rows, report):
         raise ValueError("Generated paths assigned twice: " + ", ".join(sorted(hubs.keys() & files.keys())))
     files.update(hubs)
     lines = ["# Coverage and quality ledger", "", f"Evidence snapshot through **{report['as_of_utc']}**. Generated from committed source receipts.", "",
+        stats_detail(report, "en", sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)), "",
         f"- {report['curated_records']:,} curated resources. Another {report['metadata_only_records']:,} records await review with bibliographic metadata only; the active catalog file holds {report['total_records']:,} records in all.",
         f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities. This count overlaps the status counts above.",
         f"- {report['arxiv_archive_records']:,} retained arXiv metadata records; {report['excluded_records']:,} explicit scope exclusions are outside the active catalog.",
@@ -778,21 +779,17 @@ def shield(label, message, color):
     return f"https://img.shields.io/badge/{escape(label)}-{escape(message)}-{color}"
 
 
+BADGE_ROW = (("Website", "website", "https://awesomecua.com/"), ("Papers", "papers", "https://awesomecua.com/papers/"),
+    ("Benchmarks", "benchmarks", "https://awesomecua.com/compare/benchmarks/"), ("Data", "data", "https://awesomecua.com/data/"),
+    ("Hugging Face", "huggingface", "https://huggingface.co/datasets/AgPerry/awesome-cua"),
+    ("Star on GitHub", "star", "https://github.com/reacher-z/Awesome-CUA"))
+
+
 def badges(rows, report):
-    # A short status strip under the banner: at most six badges, all counted or dated from this build. There is no live
-    # workflow-status badge: a rate-limit pause is not an outage, and the health issue is the alert channel.
-    # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
-    style = '?style=flat-square&labelColor=1E2233'
-    reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
-    as_of = report["as_of_utc"]
-    evidence = f"{as_of[:10]} {as_of[11:16]} UTC"
-    # Plain images: the same pages are linked from the sections below, and awesome-lint flags a URL linked twice.
-    return ("\n" + " ".join([
-        f"![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})",
-        f"![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})",
-        f"![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})",
-        f"![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})",
-        f"![MIT license]({shield('license', 'MIT', '5E6472')}{style})"]) + "\n")
+    """The first-screen badge row: static pill images from assets/brand/badges/ (outlined EB Garamond, site palette), each
+    linking a page of the website, the Hugging Face dataset or the repository. Counts and dates live in the STATS and
+    EXPLORE blocks; Star is the one call to action. Both languages carry the same row."""
+    return "\n" + " ".join(f"[![{label}](assets/brand/badges/{kind}.svg)]({url})" for label, kind, url in BADGE_ROW) + "\n"
 
 
 # README category layout: rows of (left, right) cells; each cell lists (label key, generated page, kind). Counts are curated resources.
@@ -836,12 +833,20 @@ README_TEXT = {
 }
 
 
+def stats_fields(report, reviewed_papers):
+    return dict(curated=report["curated_records"], papers=reviewed_papers, sources=len(report["sources"]), as_of=report["as_of_utc"],
+        metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
+        set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0), excluded=report["excluded_records"])
+
+
 def stats_block(report, lang="en", reviewed_papers=0):
-    """README headline: curated resources only, with records awaiting review and candidates labelled separately."""
-    return "\n\n" + README_TEXT[lang]["stats"].format(curated=report["curated_records"], papers=reviewed_papers,
-        sources=len(report["sources"]), as_of=report["as_of_utc"], metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
-        set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0),
-        excluded=report["excluded_records"]) + "\n\n"
+    """README headline: one line of counts. The review-state detail lives in docs/coverage.md (stats_detail)."""
+    return "\n\n" + README_TEXT[lang]["stats"].split("\n\n", 1)[0].format(**stats_fields(report, reviewed_papers)) + "\n\n"
+
+
+def stats_detail(report, lang="en", reviewed_papers=0):
+    """Records awaiting review, candidates and scope exclusions, in the order the headline lists curated resources."""
+    return README_TEXT[lang]["stats"].split("\n\n", 1)[1].format(**stats_fields(report, reviewed_papers))
 
 
 ENVIRONMENT_LABELS = {"macos": "macOS", "ios": "iOS", "harmonyos": "HarmonyOS", "cross-platform": "Cross-platform", "unspecified": "Unspecified"}
@@ -871,15 +876,17 @@ LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#][^)\s]*)\)")
 
 def unlink_repeats(content):
     """Keep the first link to each address on the page and write later ones inside generated blocks as plain text
-    (a paper cited by several rows, a document named in two tables); awesome-lint flags a URL linked twice."""
+    (a paper cited by several rows, a page named in a badge and a table); awesome-lint flags a URL linked twice."""
     spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
-    seen = set()
+    # Every link target counts as seen, including the targets of badge images wrapped in a link.
+    first = {}
+    for match in re.finditer(r"\]\(([^)\s#][^)\s]*)\)", content):
+        first.setdefault(match.group(1), match.start())
     def replace(match):
         url = match.group(2)
         generated = any(a <= match.start() < b for a, b in spans)
-        if url in seen and generated:
+        if generated and first.get(url, match.start()) < match.start():
             return match.group(1)
-        seen.add(url)
         return match.group(0)
     content = LINK.sub(replace, content)
     spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
@@ -999,6 +1006,23 @@ def recently_reviewed(rows, reviewed_at, limit=12, lang="en"):
     return "\n".join(lines) + "\n" if recent else "\n"
 
 
+HIGHLIGHTS_PAGE = {
+    "en": ("Highlights and recently reviewed", "Highlights", "Recently reviewed",
+        "Resources ranked by how many other cataloged resources mention each one in their reviewed first-party source (README, model or dataset card). Surveys come first, newest first. Every category page lists all reviewed entries.",
+        "Newest editorial approvals of models, datasets, benchmarks, systems, and tools (newest first). New papers appear by date in the topic hubs.", "[Home](../README.md) · [Topics](topics.md)"),
+    "zh": ("重点资源与最新审阅", "重点资源", "最新审阅",
+        "按其他已收录资源在已审阅一手来源（README、模型卡或数据集卡）中提及的次数，列出每个类别的资源；综述排在最前，按时间倒序；每个类别页面列出全部已审阅条目；资源名称和简介保留原文。",
+        "按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在主题页面中。", "[首页](../README.zh-CN.md) · [主题](topics.md)"),
+}
+
+
+def highlights_page(rows, edges, reviewed_at, lang):
+    """docs/highlights*.md: the most-mentioned resources per kind and the newest reviews, kept out of the README."""
+    title, h1, h2, p1, p2, nav = HIGHLIGHTS_PAGE[lang]
+    return "\n".join([f"# {title}", "", nav, "", f"## {h1}", "", p1, highlights(rows, edges, lang=lang).strip("\n"), "", f"## {h2}", "", p2,
+        recently_reviewed(rows, reviewed_at, lang=lang).strip("\n"), ""])
+
+
 def write_sqlite(rows, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(".tmp")
@@ -1065,13 +1089,15 @@ def build(args):
             edges.append({"id": hashlib.sha256((r["id"] + "\0" + ref["target_id"]).encode()).hexdigest()[:24], "source_id": r["id"], **ref, "target_in_catalog": ref["target_id"] in ids})
     files["data/references.jsonl"] = "".join(json.dumps(e, ensure_ascii=False, sort_keys=True) + "\n" for e in sorted(edges, key=lambda e: e["id"]))
     reviewed_at = {(e.get("id") or editorial_identity(e)[0]): e.get("reviewed_at") for e in read_json(DATA / "editorial.json", []) if e.get("editorial_reviewed")}
+    files["docs/highlights.md"] = highlights_page(rows, edges, reviewed_at, "en")
+    files["docs/highlights.zh-CN.md"] = highlights_page(rows, edges, reviewed_at, "zh")
     shared_badges = badges(rows, report)
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
     for filename, lang in (("README.md", "en"), ("README.zh-CN.md", "zh")):
         path = ROOT / filename
         if path.exists():
             blocks = {"STATS": stats_block(report, lang, reviewed_papers), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
-                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
+                }
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():
                 # A function replacement keeps backslashes in generated Markdown literal.

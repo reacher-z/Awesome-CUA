@@ -104,7 +104,7 @@ class ScanScheduleTests(unittest.TestCase):
         self.assertIn("cron: '37 */3 * * *'", freshness)
 
     def test_public_copy_has_no_stale_schedule_claim(self):
-        paths = ['README.md', 'README.zh-CN.md', 'AGENTS.md', 'CONTRIBUTING.md', 'docs/maintenance.md',
+        paths = ['README.md', 'README.zh-CN.md', 'docs/data.md', 'docs/data.zh-CN.md', 'AGENTS.md', 'CONTRIBUTING.md', 'docs/maintenance.md',
                  'docs/methodology.md', 'docs/website.md', 'scripts/search_pages.py', 'scripts/agent_pages.py',
                  'scripts/prepare_publication.py', 'web/app.js', '.github/workflows/scan.yml', '.github/workflows/freshness.yml']
         stale = re.compile(r'twice[ -]daily|twice a day|both daily|both scheduled|three times (a day|daily)|three[ -]daily|'
@@ -114,8 +114,8 @@ class ScanScheduleTests(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertIsNone(stale.search((ROOT / path).read_text()))
         for time in self.config['scan_times_local']:
-            self.assertIn(time, (ROOT / 'README.md').read_text())
-            self.assertIn(time, (ROOT / 'README.zh-CN.md').read_text())
+            self.assertIn(time, (ROOT / 'docs/data.md').read_text())
+            self.assertIn(time, (ROOT / 'docs/data.zh-CN.md').read_text())
         checks = ' and '.join(f':{minute:02d}' for minute in self.config['publish_check_minutes'])
         self.assertIn(checks, (ROOT / 'docs/maintenance.md').read_text())
         self.assertIn(checks, (ROOT / 'docs/website.md').read_text())

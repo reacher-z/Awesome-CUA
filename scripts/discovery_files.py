@@ -27,9 +27,7 @@ CRAWLERS = (
       'meta-externalagent', 'Amazonbot', 'MistralAI-Training', 'KimiBot')),
 )
 # Cloudflare Content Signals Policy (https://contentsignals.org/). The catalog's own annotations are MIT licensed.
-CONTENT_SIGNAL = 'search=yes, ai-input=yes, ai-train=yes'
-# IETF draft-kelley-aipref-training-preference-signal: Allow states a preference in favour of AI training.
-TRAINING_PREFERENCE = '__usage_ai-training'
+CONTENT_SIGNAL = 'search=yes, ai-input=yes'
 
 
 def crawler_tokens():
@@ -37,7 +35,7 @@ def crawler_tokens():
 
 
 def robots_txt(site):
-    lines = [f'# Crawl policy for {site}/', '# Search engines, AI search, AI assistants and AI training crawlers are all welcome.',
+    lines = [f'# Crawl policy for {site}/', '# Search engines, AI search, AI assistants and AI crawlers are all welcome.',
              '# Content Signals Policy: https://contentsignals.org/', f'# Agent-readable index: {site}/llms.txt', '',
              'User-agent: *', f'Content-Signal: {CONTENT_SIGNAL}', 'Allow: /', '',
              '# A crawler that matches a named group ignores the * group (RFC 9309 2.2.1),',
@@ -47,9 +45,6 @@ def robots_txt(site):
     for label, tokens in CRAWLERS:
         lines += ['# ' + label] + [f'User-agent: {token}' for token in tokens]
     lines += [f'Content-Signal: {CONTENT_SIGNAL}', 'Allow: /', '',
-              '# AI-training usage preference (IETF draft-kelley-aipref-training-preference-signal-00).',
-              '# Allow states a preference in favour of AI training. The * group never matches this token.',
-              f'User-agent: {TRAINING_PREFERENCE}', 'Allow: /', '',
               f'Sitemap: {site}/sitemap.xml', f'Sitemap: {site}/sitemap.txt']
     return '\n'.join(lines) + '\n'
 

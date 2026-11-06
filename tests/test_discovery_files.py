@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
 from catalog import editorial_identity
-from discovery_files import CONTENT_SIGNAL, CRAWLERS, FEED_SIZE, TRAINING_PREFERENCE, crawler_tokens, robots_txt
+from discovery_files import CONTENT_SIGNAL, CRAWLERS, FEED_SIZE, crawler_tokens, robots_txt
 from search_pages import SITE, eligible, resource_path
 from site_data import catalog_counts, record_modified, utc
 from sitemaps import SECTIONS, SITEMAP_NS, XHTML_NS, section_file, sitemap_urls
@@ -59,7 +59,7 @@ class RobotsTests(unittest.TestCase):
 
     def test_training_preference_token_is_its_own_allow_group(self):
         text = robots_txt(SITE)
-        self.assertIn(f'User-agent: {TRAINING_PREFERENCE}\nAllow: /\n', text)
+        self.assertNotIn('ai-train', text); self.assertNotIn('__usage', text)
         self.assertIn('User-agent: *\nContent-Signal: ' + CONTENT_SIGNAL + '\nAllow: /\n', text)
 
 

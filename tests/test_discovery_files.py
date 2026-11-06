@@ -197,6 +197,15 @@ class BuiltDiscoveryTests(unittest.TestCase):
         for markup in (home, (self.dest / 'about/index.html').read_text()):
             self.assertIn('type="application/atom+xml"', markup); self.assertIn('type="application/feed+json"', markup)
 
+    def test_every_page_head_links_exactly_one_atom_and_one_json_feed(self):
+        for page in sorted(self.dest.rglob('index.html')):
+            head = page.read_text().split('</head>', 1)[0]
+            if 'rel="canonical"' not in head or '/survey/' in page.as_posix():
+                continue
+            self.assertEqual(head.count('type="application/atom+xml"'), 1, page)
+            self.assertEqual(head.count('type="application/feed+json"'), 1, page)
+            self.assertNotIn('research updates', head, page)
+
     def test_index_counts_are_curated_only_and_report_pending_populations_separately(self):
         counts = json.loads((self.dest / 'data/index.json').read_text())['counts']
         curated = [row for row in self.rows if eligible(row)]

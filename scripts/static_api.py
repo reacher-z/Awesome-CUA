@@ -56,7 +56,7 @@ def paper_item(record, site, resource_path, reviewed):
     return {**_common(record, site, resource_path), 'summary': record['summary'], 'scope': record['scope'],
             'review_status': record['review_status'], 'authors': [] if authors_omitted(record) else record['authors'],
             'authors_omitted': authors_omitted(record), 'published': record_date_text(record) or None,
-            'arxiv_id': record['identifiers'].get('arxiv'), 'arxiv_version': snapshot.get('version'),
+            'arxiv_id': record['identifiers'].get('arxiv'), 'arxiv_version': snapshot.get('version'), 'arxiv_versioned_url': snapshot.get('versioned_url'),
             'venue': pub.get('venue'), 'doi': pub.get('doi'),
             'environments': record['environments'], 'topics': record['topics'], 'licenses': _licenses(record),
             'reviewed_at': reviewed.get(record['id']), 'last_verified_at': utc(record['last_verified_at'])}
@@ -149,7 +149,7 @@ def dump(document):
 
 CSV_COLUMNS = {
     'resources': ('id', 'name', 'kind', 'url', 'page_url', 'summary', 'scope', 'environments', 'topics', 'licenses', 'published_at', 'reviewed_at', 'last_verified_at'),
-    'papers': ('id', 'name', 'kind', 'url', 'page_url', 'summary', 'authors', 'authors_omitted', 'published', 'arxiv_id', 'arxiv_version', 'venue', 'doi', 'environments', 'topics', 'reviewed_at'),
+    'papers': ('id', 'name', 'kind', 'url', 'page_url', 'summary', 'authors', 'authors_omitted', 'published', 'arxiv_id', 'arxiv_version', 'arxiv_versioned_url', 'venue', 'doi', 'environments', 'topics', 'reviewed_at'),
     'categories': ('type', 'id', 'name', 'name_zh', 'curated_count', 'active_count', 'page_url', 'markdown_url', 'api_url'),
     'candidates': ('population', 'curated', 'id', 'name', 'kind', 'url', 'page_url', 'review_status', 'scope', 'published', 'reason', 'first_discovered_at'),
     'changes': ('date', 'event', 'id', 'name', 'kind', 'current_status', 'page_url', 'url', 'note'),
@@ -209,7 +209,7 @@ def _schema(site, snapshot):
                           'relations': {'type': 'array', 'items': item({'type': text, 'target_id': text})}}),
         'paper': item({**identity, 'kind': {'enum': ['paper', 'survey']}, 'summary': text, 'scope': {'enum': ['core', 'adjacent']},
                        'review_status': {'const': 'curated'}, 'authors': strings, 'authors_omitted': {'type': 'boolean'}, 'published': nullable,
-                       'arxiv_id': nullable, 'arxiv_version': {'type': ['integer', 'null']}, 'venue': nullable,
+                       'arxiv_id': nullable, 'arxiv_version': {'type': ['integer', 'null']}, 'arxiv_versioned_url': nullable, 'venue': nullable,
                        'doi': nullable, 'environments': strings, 'topics': strings, 'licenses': {'$ref': '#/$defs/licenses'},
                        'reviewed_at': when_or_null, 'last_verified_at': when}),
         'category': item({'id': text, 'name': text, 'name_zh': text, 'type': {'enum': ['kind', 'topic']}, 'curated_count': {'type': 'integer', 'minimum': 0},

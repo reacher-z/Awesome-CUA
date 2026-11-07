@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "clickcast",
+    "url": "https://github.com/AlexKay28/clickcast",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "video",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Playwright browser automation, screenshot, and GIF/MP4/WebP session-recording toolkit and MCP server for AI agents.",
+    "verify_terms": [
+      "clickcast"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AlexKay28/clickcast/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "defd77761eb4b3e96337ea54167b5755504fd84bc9c1400684778239689d2020"
+  },
+  {
+    "name": "browser-copilot",
+    "url": "https://github.com/alexmercier25/browser-copilot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Lets AI agents drive the user's actual macOS browser window and logged-in tabs with interactive confirmation.",
+    "verify_terms": [
+      "browser-copilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alexmercier25/browser-copilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "777a25526bff31df2e181ba5cfbc3795e4722613958dd816fd34a25666625a3e"
+  },
+  {
+    "name": "ChromeClaw",
+    "url": "https://github.com/algopian/chromeclaw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "ChromeClaw runs an autonomous browser and workspace agent inside the Chrome extension sandbox with multi-provider LLM and tab automation tools.",
+    "verify_terms": [
+      "ChromeClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/algopian/chromeclaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "512aa02fbf1056b48256faf34a3a44e498fdf31b7a29613e0ba77db79ab1e2fe"
+  },
+  {
+    "name": "WebWalker",
+    "kind": "benchmark",
+    "url": "https://github.com/Alibaba-NLP/WebWalker",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "planning",
+      "long-horizon"
+    ],
+    "scope": "core",
+    "summary": "Benchmark and multi-agent framework for evaluating large language models on multi-step web traversal and deep information-seeking tasks.",
+    "verify_terms": [
+      "WebWalker",
+      "2501.07572"
+    ],
+    "documented_by": [
+      "2501.07572"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "4b453a820810d95071a8be84ca0a9f41500984b44a379220081d38d779b7c667",
+    "reviewed_at": "2026-11-02T17:00:00Z"
+  },
+  {
+    "name": "Page Agent",
+    "url": "https://github.com/alibaba/page-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Page Agent is an in-page JavaScript GUI agent by Alibaba that controls web interfaces from natural language via DOM dehydration.",
+    "verify_terms": [
+      "Page Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alibaba/page-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bb8f2665e9ec71541145eeeb308ccfecd400caecb2123ce4ee9053f9995d1f51"
   }
 ]

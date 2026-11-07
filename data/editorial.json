@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Auto Browser",
+    "url": "https://github.com/LvcidPsyche/auto-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Open-source MCP-native browser automation server with human-in-the-loop takeover and persistent session profiles.",
+    "verify_terms": [
+      "Auto Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LvcidPsyche/auto-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "30fd3e8d16b92164c4d20f3757ac6581fb5ed3084ed62dd59d1bc984ea2f7793"
+  },
+  {
+    "name": "AURA (Agent-User Remote Automation)",
+    "url": "https://github.com/lvusyy/aura",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "android",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "self-reflection",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Closed-loop screenshot-click-verify remote automation framework over MCP for desktop and mobile devices.",
+    "verify_terms": [
+      "AURA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lvusyy/aura/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "23ddc933648bc681adb033a314f085fb8d59d652b96d17f3638c036a2be050ed"
+  },
+  {
+    "name": "bg-driver-rs",
+    "url": "https://github.com/lvyuan1688/bg-driver-rs",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "sandbox",
+      "efficiency"
+    ],
+    "summary": "Rust background computer-use driver for macOS, Windows, and Linux.",
+    "verify_terms": [
+      "bg-driver-rs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lvyuan1688/bg-driver-rs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b37678ea8d56ef07d500a8092d94a332885f967f47caace1692f9574f43b2b7b"
+  },
+  {
+    "name": "lvyuan1688 browser-use-rs",
+    "url": "https://github.com/lvyuan1688/browser-use-rs",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Rust port of the Browser Use architecture enabling LLMs to control web browsers with native speed.",
+    "verify_terms": [
+      "browser-use-rs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lvyuan1688/browser-use-rs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "69692bd5a7a7fb24c0aae0368581004fd196550e135d5c4c97b0669292e0ca11"
+  },
+  {
+    "name": "pi-control-chrome",
+    "url": "https://github.com/lyd123qw2008/pi-control-chrome",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Codex-aligned Chrome and Edge browser control extension and bridge for the Pi coding agent.",
+    "verify_terms": [
+      "pi-control-chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lyd123qw2008/pi-control-chrome/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "db0b14173fa432e972cc9baa9695c1179f8e71d59540b3d3af216a7de02b49be"
   }
 ]

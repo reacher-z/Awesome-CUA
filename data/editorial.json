@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "PrzedWysylka WebMCP Lab",
+    "url": "https://github.com/greqone/PrzedWysylkaWebMCPLab",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Browser-local WebMCP validation lab where agent proposals are verified against JSON schemas before human approval.",
+    "verify_terms": [
+      "PrzedWysylka WebMCP Lab"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/greqone/PrzedWysylkaWebMCPLab/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "790fb81bfc93ff82a86b877c7074b36d293b3d2d7ad0789b0ad569cebf6e2dad"
+  },
+  {
+    "name": "GroundAnything",
+    "url": "https://github.com/groundingpi/GroundAnything",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "GroundAnything is a 4B parallel-decoding diffusion grounding model for low-latency visual coordinate localization.",
+    "verify_terms": [
+      "GroundAnything"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/groundingpi/GroundAnything/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0ecc01454adad40a97ab0cbe37554e995cc9ba9076f2cd5bf33bb97744c46dac"
+  },
+  {
+    "name": "GroundingPI",
+    "url": "https://github.com/groundingpi/GroundingPI",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "summary": "GroundingPI is a 4B visual grounding foundation model that unifies bounding-box detection, referring expressions, and point localization.",
+    "verify_terms": [
+      "GroundingPI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/groundingpi/GroundingPI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "65367d8d12e665dad4a2510a14a1e8740fbfe4080baa1911b976ff461be9bcf8"
+  },
+  {
+    "name": "claude-browser-crawl-cdp",
+    "url": "https://github.com/gruncode/claude-browser-crawl-cdp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Persistent Playwright REPL and CDP bridge allowing Claude Code to drive a user's logged-in Chrome browser with low token overhead.",
+    "verify_terms": [
+      "claude-browser-crawl-cdp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gruncode/claude-browser-crawl-cdp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e7a8b4c29f2cf25d9bf1afaeb33121247ebc5a207a54af31625bd7e8fbff5bb6"
+  },
+  {
+    "name": "Enikk",
+    "url": "https://github.com/gtt116/enikk",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Enikk is an open-source computer-use agent that combines GUI visual control and CLI execution across vision and text-only models.",
+    "verify_terms": [
+      "Enikk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gtt116/enikk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "37560d69f98b3b4ea0fa49651446378dccd2905b5e9fc4524151cb8998328d7e"
   }
 ]

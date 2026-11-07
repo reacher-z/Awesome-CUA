@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "pptxgym (CUA-Gym.pptx)",
+    "url": "https://github.com/Lyt060814/CUA-Gym.pptx",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "reinforcement-learning",
+      "data-generation",
+      "workflow"
+    ],
+    "summary": "Synthesizes and grades verifiable computer-use reinforcement-learning tasks from real PowerPoint presentation decks.",
+    "verify_terms": [
+      "pptxgym"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Lyt060814/CUA-Gym.pptx/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "37a73c626e59c6b299ad497a9131d31d07ddfa32ba2571b3b4f602fc6fbf553c"
+  },
+  {
+    "name": "GlassBrowser",
+    "url": "https://github.com/lzw12w/glass-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "observability",
+      "efficiency"
+    ],
+    "summary": "Auditable, low-cost, DOM-only browser agent designed for transparent step-by-step inspection and debugging.",
+    "verify_terms": [
+      "GlassBrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lzw12w/glass-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e516d62a34f65125884fd32a78cf69a61ed541e5a2c1b0610c5a8c137db991ae"
+  },
+  {
+    "name": "PocketCode",
+    "url": "https://github.com/M1ssbe4r/PocketCode",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "On-device Android AI coding and automation agent capable of building and running apps directly on a phone.",
+    "verify_terms": [
+      "PocketCode"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/M1ssbe4r/PocketCode/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d07f72ef697f994e754fc7e4af119d5313e6526f9d57a51374a1bf48fb703fef"
+  },
+  {
+    "name": "FastMCP Playwright Server",
+    "url": "https://github.com/ma-pony/mcp-playwright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Python FastMCP server exposing Playwright browser navigation, element interaction, screenshot capture, and data extraction to LLM agents.",
+    "verify_terms": [
+      "mcp-playwright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ma-pony/mcp-playwright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4ec24c0ecb4302fa821a012b867132f3eeea988581bcac512c2698b17f20ebf7"
+  },
+  {
+    "name": "MacArena",
+    "url": "https://github.com/MacPaw/MacArena",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "long-horizon"
+    ],
+    "summary": "MacArena benchmarks computer-use agents in an online, reproducible macOS virtual-machine environment across multi-app desktop tasks.",
+    "verify_terms": [
+      "MacArena"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MacPaw/MacArena/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3f82d0c556ed2210607534731658a0f0677c5ce5c9f7c9a6f61104270d4d913b",
+    "documented_by": [
+      "2606.06560"
+    ]
   }
 ]

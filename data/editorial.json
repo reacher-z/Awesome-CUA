@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "TERX",
+    "url": "https://github.com/ixchio/terx",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "recording",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Browser-agent procedural memory and MCP server that compiles repeated web workflows into deterministic zero-token replays.",
+    "verify_terms": [
+      "TERX"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ixchio/terx/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "58665378c2ef2cb93be5dd2d619b16fc7be414d247392035b4b72ebe60bad331"
+  },
+  {
+    "name": "Momos",
+    "url": "https://github.com/iyulab/momos",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Autonomous UI inspection agent that interacts with live applications to uncover runtime and UX flow defects missed by static analysis.",
+    "verify_terms": [
+      "Momos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iyulab/momos/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c71e6c48f228fc0cdaa0251ea33b317f65781c03e33ed8da7ed4013b4fe17d24"
+  },
+  {
+    "name": "x11-computer-use",
+    "url": "https://github.com/ja-plus/x11-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "x11-computer-use is an Agent Skills package for Linux X11 desktop control using xdotool input injection, ImageMagick screenshots, and AT-SPI trees.",
+    "verify_terms": [
+      "x11-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ja-plus/x11-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8c030af525902279e434763d8968e59f3c3b1a03e016a28f1a86d11ec1831b5c"
+  },
+  {
+    "name": "qdesk",
+    "url": "https://github.com/jackwangfeng/qdesk",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "qdesk is an open-source AI agent desktop sandbox providing an isolated Linux and Chromium environment controllable over HTTP.",
+    "verify_terms": [
+      "qdesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jackwangfeng/qdesk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f82789dc3c5a50b4ba53f500279cca720ce6e2be0b77b015c609d58d4c4b41d3"
+  },
+  {
+    "name": "Social Browser Publisher for Codex",
+    "url": "https://github.com/jacky391977/social-browser-publisher",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Codex skill that uses an authenticated Chrome session to preview and publish posts across Instagram, Facebook, and Threads.",
+    "verify_terms": [
+      "Social Browser Publisher for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jacky391977/social-browser-publisher/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7e9680e1b62087a3be5bfc45393eebf6417e22b0fc2207c1ae62413c66116eba"
   }
 ]

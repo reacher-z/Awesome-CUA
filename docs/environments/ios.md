@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-26 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
+27 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
 
 ## Benchmarks
 
@@ -39,11 +39,10 @@ All entries in this section: ios.
 
 ## Frameworks
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [PhoneClaw](https://github.com/kellyvv/PhoneClaw) | ios, android | — | code Apache-2.0 | PhoneClaw turns iOS and Android smartphones into local AI agent runtimes with on-device model inference and native system skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kellyvv/PhoneClaw/HEAD/README.md) |
 
 ## Tools
 

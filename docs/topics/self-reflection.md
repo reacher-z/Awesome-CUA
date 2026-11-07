@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-64 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+76 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (54)](#papers)
+**Contents:** [Models (3)](#models) · [Agents (7)](#agents) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (54)](#papers)
 
 ## Models
 
@@ -18,20 +18,37 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [CompBuddy](https://github.com/lewiswlker/CompBuddy) | desktop, macos | — | code MIT | CompBuddy is a background macOS computer-use agent that observes target windows and dispatches Accessibility and CGEvent actions without stealing focus. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lewiswlker/CompBuddy/HEAD/README.md) |
+| [DSH Mobile GUI Agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) | android | — | code MIT | Android Mobile GUI Agent plugin for DeepSeek Harness featuring ADB actuation, iterative screen verification, and error recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kunjinkao-os/dsh-mobile-gui-agent/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| [Svate](https://github.com/JIEAO-re/Svate) | android | — | code MIT | Svate is an on-device Android UI automation agent combining Accessibility trees, screenshots, pre-action safety checks, and recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JIEAO-re/Svate/HEAD/README.md) |
 
 ## Frameworks
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
+| [AURA (Agent-User Remote Automation)](https://github.com/lvusyy/aura) | cross-platform, desktop, android, windows, macos, linux | — | code Apache-2.0 | Closed-loop screenshot-click-verify remote automation framework over MCP for desktop and mobile devices. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lvusyy/aura/HEAD/README.md) |
+| [ChangeShield](https://github.com/Kxvya18/chnage-shield) | web | — | — | Self-repairing browser automation prototype that detects and adapts to third-party UI selector drift. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Kxvya18/chnage-shield/main/README.md) |
+| [dsh-OpenLiulan (开放浏览)](https://github.com/haodongzhang022-hue/OpenLiulan) | web | — | — | Self-healing browser control framework for DeepSeek Harness featuring semantic page perception and automated fault recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/haodongzhang022-hue/OpenLiulan/main/README.md) |
+| [GenericAgent](https://github.com/lsdefine/GenericAgent) | cross-platform, desktop, web, android | — | code MIT | GenericAgent is a minimal self-evolving agent framework that synthesizes reusable skills for browser, OS, and ADB mobile control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lsdefine/GenericAgent/HEAD/README.md) |
+| [HarvestNet](https://github.com/Lethe044/HarvestNet) | web | — | code MIT | Self-healing web extraction and browser automation framework for .NET. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Lethe044/HarvestNet/main/README.md) |
+| [Language Agent Tree Search (LATS)](https://github.com/lapisrocks/LanguageAgentTreeSearch) | web | — | code MIT | Language Agent Tree Search (LATS) unifies LLM reasoning, acting, and Monte Carlo Tree Search with self-reflection on WebShop and programming tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lapisrocks/LanguageAgentTreeSearch/HEAD/README.md) |
+| [LGWM (Latent GUI World Model)](https://github.com/jiamingzhang94/lgwm) | android, desktop, web | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | code Apache-2.0 | LGWM is an action-conditioned latent GUI world model that predicts next-state representations to verify GUI agent transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiamingzhang94/lgwm/HEAD/README.md) |
+| [llm-browser-agent](https://github.com/justifysiddh/llm-browser-agent) | web | — | code MIT | Self-healing browser automation framework that replaces brittle CSS selectors with LLM-guided semantic element resolution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/justifysiddh/llm-browser-agent/main/README.md) |
+| [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
+
+All entries in this section: desktop, macos.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
-| [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| [dsh-desktop-automation](https://github.com/Junkrat9527/dsh-desktop-automation) | — | code MIT | macOS desktop automation plugin for DeepSeek Harness with a closed-loop screenshot-locate-click-verify pipeline. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Junkrat9527/dsh-desktop-automation/main/README.md) |
 
 ## Papers
 

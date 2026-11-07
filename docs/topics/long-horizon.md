@@ -2,15 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-176 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
+180 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (5)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (8)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
+| [MacArena](https://github.com/MacPaw/MacArena) | desktop, macos | [2606.06560](https://arxiv.org/abs/2606.06560) (2026) | — | — | MacArena benchmarks computer-use agents in an online, reproducible macOS virtual-machine environment across multi-app desktop tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MacPaw/MacArena/HEAD/README.md) |
 | [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) | web | — | — | code MIT | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md) |
 | [MMInA](https://github.com/shulin16/MMInA) | web | [2404.09992](https://arxiv.org/abs/2404.09992) (2024) | — | — | Multimodal web tasks in a WebArena-based environment that chain from 1 to 10 hops across sites such as a shopping store and Wikipedia, testing long-chain reasoning. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md) |
 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | [25 task-definition records](https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md) | — | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
@@ -41,7 +42,10 @@ All entries in this section: web.
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
+| [E2-Mem](https://github.com/jianminYa/e2mem) | web | — | code MIT | E2-Mem is an episodic-event hierarchical memory framework for long-horizon web agents evaluated on WebArena. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jianminYa/e2mem/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| [SCoR (Sparse Context Reset)](https://github.com/huia711/SCoR) | cross-platform, desktop, web, android | — | code Apache-2.0 | Sparse Context Reset (SCoR) framework for preventing context overflow and drift in long-horizon GUI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/huia711/SCoR/main/README.md) |
+| [taskforge](https://github.com/huzjie/taskforge) | cross-platform, desktop, web | — | code MIT | taskforge is a long-horizon workflow orchestration engine combining multi-step planning, tool invocation, and GUI state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/huzjie/taskforge/HEAD/README.md) |
 
 ## Infrastructure
 

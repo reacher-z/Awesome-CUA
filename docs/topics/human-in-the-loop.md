@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-115 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+142 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (7)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Papers (103)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (16)](#agents) · [Frameworks (11)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (103)](#papers)
 
 ## Benchmarks
 
@@ -20,27 +20,57 @@ All entries in this section: android.
 | --- | --- | --- | --- | --- | --- |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | desktop, linux, web | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
+| [DouGao (豆糕)](https://github.com/hulubo2014/dougao) | android | — | — | DouGao is an on-device Android AI assistant combining VLM screen control across Accessibility, Shizuku, and Root channels with direct file editing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hulubo2014/dougao/HEAD/README.md) |
+| [Goby](https://github.com/juguang/Goby) | web | — | code MIT | Open-source Chrome extension in-page web agent that executes natural-language browsing and form-filling tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/juguang/Goby/HEAD/README.md) |
+| [jaibhasin dsh-browser-agent](https://github.com/jaibhasin/dsh-browser-agent) | web | — | code MIT | Chrome side-panel autonomous browser agent powered by DeepSeek Harness. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jaibhasin/dsh-browser-agent/main/README.md) |
+| [Kushatish AI Browser Copilot](https://github.com/kushatish/AI-Browser-Copilot) | web | — | — | Chrome extension providing page-aware Q&A and user-approved browser actions powered by Groq LLMs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kushatish/AI-Browser-Copilot/main/README.md) |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
 | [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |
+| [Momo](https://github.com/HoldTroop/Momo) | web | — | — | Policy-compliant autonomous AI browser agent operating in local context with transparent intent logging and human oversight. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/HoldTroop/Momo/main/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
+| [NaviFlow](https://github.com/marc-ing/navi-flow) | web | — | code MIT | Supervised open-source AI browser agent for Chrome that plans, navigates, clicks, types, and verifies web workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/marc-ing/navi-flow/main/README.md) |
 | [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| [Recruit Auto-Reply](https://github.com/kxc7558/recruit-auto-reply) | web | — | code Apache-2.0 | Local browser-extension agent for recruiting platforms that answers candidate messages from a retrieval knowledge base and escalates unknowns. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kxc7558/recruit-auto-reply/master/README.md) |
+| [Ruyi (如意)](https://github.com/icesword0760/ruyi) | web | — | code AGPL-3.0 | Ruyi streams remote Chrome sessions to the user's browser for collaborative human-AI control and compiles actions into self-healing scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/icesword0760/ruyi/HEAD/README.md) |
+| [Xiaoshe Agent (小蛇 Agent)](https://github.com/jackygilbert498-debug/xiaoshe-agent) | desktop, windows, macos | — | — | Local-first desktop agent built on DeepSeek Harness featuring plugin governance, permission approvals, and completion receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jackygilbert498-debug/xiaoshe-agent/main/README.md) |
 | [Yunkai](https://github.com/solplum/yunkai) | android | — | code MIT | Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Ask-before-Plan](https://github.com/magicgh/Ask-before-Plan) | unspecified | — | code MIT | Ask-before-Plan trains proactive language agents to clarify underspecified user instructions before executing multi-step tool plans. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/magicgh/Ask-before-Plan/HEAD/README.md) |
+| [Browsentic](https://github.com/imshaikot/browsentic) | web | — | code Apache-2.0 | Agentic browser harness providing an AI side panel and interactive control orb inside Chrome, Edge, and Arc. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/imshaikot/browsentic/HEAD/README.md) |
 | [ConnectOnion](https://github.com/openonion/connectonion) | web | — | code Apache-2.0 | ConnectOnion is a CLI and Python framework that gives agents commands for connected accounts, a logged-in browser, files, and chat apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/openonion/connectonion/9f80e63689da990cd423f8996960177a871f534a/README.md) |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | unspecified | — | code MIT | LangGraph is a stateful graph orchestration framework for building long-running, cyclical, and human-in-the-loop LLM and CUA agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/langchain-ai/langgraph/HEAD/README.md) |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
+| [Plip OSS](https://github.com/hussainn7/plip-oss) | desktop, macos | — | code MIT | Open-source macOS notch assistant and runtime for grounded, model-agnostic computer-use agents with verifiable action previews. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hussainn7/plip-oss/HEAD/README.md) |
+| [RecordAgent (ButvanAgent)](https://github.com/Kavanio/RecordAgent) | cross-platform, desktop, windows, macos, linux | — | — | Local-first Tauri and AgentScope desktop agent workbench with permission approvals, tool orchestration, and workflow recording. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Kavanio/RecordAgent/main/README.md) |
+| [Threadline WebMCP](https://github.com/JamesWirths/threadline) | web | — | code MIT | WebMCP argument debugger and research workspace with human-gated provenance tracking for browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JamesWirths/threadline/main/README.md) |
+| [Trusted WebMCP Actions](https://github.com/markneville/trusted-webmcp-actions) | web | — | code MIT | Reference architecture for cryptographically verifiable user authority on consequential WebMCP browser-agent actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/markneville/trusted-webmcp-actions/main/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
+| [WellSet WebMCP](https://github.com/kinhikars/wellset-webmcp) | web | — | code MIT | Shared 96-well laboratory experiment canvas built on WebMCP where scientists and browser agents co-design protocols. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kinhikars/wellset-webmcp/main/README.md) |
 
 ## Tools
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Auto Browser](https://github.com/LvcidPsyche/auto-browser) | web | — | code MIT | Open-source MCP-native browser automation server with human-in-the-loop takeover and persistent session profiles. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/LvcidPsyche/auto-browser/HEAD/README.md) |
+| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | web | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+| [dsh-playwright](https://github.com/JeremyGuo/dsh-playwright) | web | — | code MIT | Shared Playwright browser plugin for DeepSeek Harness where the human user and AI agent co-operate the same browser window. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JeremyGuo/dsh-playwright/main/README.md) |
+| [Hermes login-bridge Plugin](https://github.com/kfastov/hermes-plugin-login-bridge) | web | — | code MIT | Hermes Agent plugin that temporarily hands the agent's browser session to a human operator to complete a login. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kfastov/hermes-plugin-login-bridge/main/README.md) |
+| [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) | desktop, windows, macos, linux | — | — | Ivy Tendril is a desktop orchestrator for running parallel coding agents across isolated Git worktrees. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ivy-Interactive/Ivy-Tendril/HEAD/README.md) |
+| [korals-ai mcp-browser](https://github.com/korals-ai/mcp-browser) | web | — | code Apache-2.0 | Model Context Protocol server giving AI agents a real Chrome browser paired with a live human co-browsing view. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/korals-ai/mcp-browser/main/README.md) |
+| [Nudge](https://github.com/kaxxcode/nudge) | web | — | — | Browser extension that automatically redacts sensitive PII on webpages before AI assistants inspect or summarize the page. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kaxxcode/nudge/main/README.md) |
+| [Prodjest (DSH Browser Bridge)](https://github.com/HEDELKA/prodjest) | web | — | code MIT | Visual Chrome browser bridge for DeepSeek Harness with interactive user oversight. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/HEDELKA/prodjest/main/README.md) |
+| [Social Browser Publisher for Codex](https://github.com/jacky391977/social-browser-publisher) | web | — | code MIT | Codex skill that uses an authenticated Chrome session to preview and publish posts across Instagram, Facebook, and Threads. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jacky391977/social-browser-publisher/main/README.md) |
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+## Infrastructure
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AriaOS](https://github.com/jeremie225ci/ariaos) | desktop, linux | — | — | AriaOS provisions a dedicated virtual machine desktop where computer-use agents operate GUI apps, terminals, and voice interactions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jeremie225ci/ariaos/HEAD/README.md) |
+| [Relay AI Virtual Desktop](https://github.com/jahrulnr/virtual-desktop) | desktop, linux, web | — | code MIT | Browser-streamed Docker Linux desktop shared between humans and AI agents with a Go MCP computer-use server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jahrulnr/virtual-desktop/HEAD/README.md) |
 
 ## Papers
 

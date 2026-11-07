@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-29 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+30 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Surveys (28)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Learning resources (1)](#learning-resources) · [Surveys (28)](#surveys) · [Papers (1)](#papers)
+
+## Learning resources
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
 
 ## Surveys
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-94 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+95 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
 
 ## Models
 
@@ -21,6 +21,14 @@ All entries in this section: android.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+
+## Tools
+
+All entries in this section: desktop, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Open Codex Computer History](https://github.com/hqhq1025/open-codex-computer-history) | — | code MIT | Clean-room macOS implementation of event-stream interaction recording using Accessibility hit-testing, CGEvent taps, and SkyLight window snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-computer-history/HEAD/README.md) |
 
 ## Surveys
 

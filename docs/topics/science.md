@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-25 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+27 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (22)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,13 @@ All entries in this section: desktop, linux.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |
+
+## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [device-use](https://github.com/labclaw/device-use) | desktop, windows, linux, macos | — | code Apache-2.0 | device-use enables AI agents to operate scientific laboratory instruments through their native desktop GUI software without hardware APIs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/labclaw/device-use/HEAD/README.md) |
+| [WellSet WebMCP](https://github.com/kinhikars/wellset-webmcp) | web | — | code MIT | Shared 96-well laboratory experiment canvas built on WebMCP where scientists and browser agents co-design protocols. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kinhikars/wellset-webmcp/main/README.md) |
 
 ## Infrastructure
 

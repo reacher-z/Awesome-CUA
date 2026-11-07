@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**99 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (59)](#cross-platform) · [Unspecified (2)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -132,6 +132,7 @@ All entries in this section: web.
 | [UI-TARS 1.5 7B](https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B) | cross-platform | — | weights apache-2.0 | UI-TARS 1.5 GUI-agent checkpoint in the Qwen2.5-VL architecture with about 8.3B parameters stored in FP32, released under Apache-2.0 for English image-text-to-text use in Transformers. | [✓ 2026‑10‑16](https://huggingface.co/api/models/ByteDance-Seed/UI-TARS-1.5-7B) |
 | [UI-Venus](https://github.com/inclusionAI/UI-Venus) | cross-platform | [2508.10833](https://arxiv.org/abs/2508.10833) (2025), [2602.09082](https://arxiv.org/abs/2602.09082) (2026), [2609.00028](https://arxiv.org/abs/2609.00028) (2026) | — | GUI agent model family; UI-Venus-2, at 9B and 27B, acts on mobile, web and desktop in one end-to-end agent, trained with keypoint-based multi-judge task verification. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/inclusionAI/UI-Venus/HEAD/README.md) |
 | [UI-Venus 2 9B](https://huggingface.co/inclusionAI/UI-Venus-2-9b) | cross-platform | — | — | UI-Venus 2 GUI-agent checkpoint fine-tuned from Qwen3.5-9B, with about 9.4B BF16 parameters in the Qwen3.5 multimodal architecture, loaded through Transformers for image-text-to-text. | [✓ 2026‑10‑16](https://huggingface.co/api/models/inclusionAI/UI-Venus-2-9b) |
+| [VGA (Vision GUI Assistant)](https://github.com/Linziyang1999/Vision-GUI-assistant) | cross-platform, web, desktop, android | [2406.14056](https://arxiv.org/abs/2406.14056) (2024) | code Apache-2.0 | Vision GUI Assistant (VGA) provides image-centric fine-tuning code and datasets to reduce hallucinations in vision-language GUI grounding. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/README.md) |
 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
 
 [↑ Back to top](#model-catalog)

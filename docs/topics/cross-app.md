@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-67 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+68 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,14 @@ All entries in this section: desktop, linux.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [GUI-ReWalk](https://github.com/bytedance/GUI-ReWalk) | [2509.15738](https://arxiv.org/abs/2509.15738) (2025) | code Apache-2.0 | A desktop trajectory-generation framework that moves from stochastic GUI exploration to inferred goals and multi-stage task completion, with retrospective reasoning annotations. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/bytedance/GUI-ReWalk/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: desktop, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Macuse MCP](https://github.com/macuse-app/macuse-mcp) | — | — | Macuse MCP is a native macOS Model Context Protocol server granting AI agents direct control over Calendar, Mail, Notes, Messages, and GUI apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/macuse-app/macuse-mcp/HEAD/README.md) |
 
 ## Papers
 

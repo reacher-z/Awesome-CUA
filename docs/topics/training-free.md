@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-50 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
+52 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Tools (1)](#tools) · [Papers (48)](#papers)
+**Contents:** [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (48)](#papers)
 
 ## Agents
 
@@ -13,6 +13,13 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+
+## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [MarkForge](https://github.com/Lannistersyh/MarkForge) | cross-platform, desktop, web, android | — | code MIT | MarkForge provides deterministic, auditable Set-of-Mark badge rendering and coordinate resolution for multimodal GUI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Lannistersyh/MarkForge/HEAD/README.md) |
+| [Re-Prefill](https://github.com/linjiaping1/Re-Prefill) | cross-platform, web, desktop, android | [2605.12549](https://arxiv.org/abs/2605.12549) (2026) | — | Re-Prefill calibrates prefill visual attention representations in vision-language models to improve zero-shot GUI grounding accuracy. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/linjiaping1/Re-Prefill/HEAD/README.md) |
 
 ## Tools
 

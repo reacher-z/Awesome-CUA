@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**16 resources:** [Web (3)](#web) · [Desktop (7)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (3)](#cross-platform)
+**22 resources:** [Web (3)](#web) · [Desktop (9)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (7)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -28,10 +28,12 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- | --- |
 | [AgentDesk](https://github.com/agentsea/agentdesk) | desktop | — | code MIT | Desktop environments that AI agents control programmatically, run locally with Docker or remotely on Kubernetes, built on the agentd REST daemon and offering a coordinate-grid overlay for LMM input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/agentdesk/HEAD/README.md) |
 | [AIOS](https://github.com/agiresearch/AIOS) | desktop | — | — | AIOS is an agent operating system whose computer-use architecture provides a virtual machine controller and MCP server for agents interacting with graphical computer environments. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agiresearch/AIOS/292d98f78c835499df18cdb6de6325bba1895862/README.md) |
+| [AriaOS](https://github.com/jeremie225ci/ariaos) | desktop, linux | — | — | AriaOS provisions a dedicated virtual machine desktop where computer-use agents operate GUI apps, terminals, and voice interactions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jeremie225ci/ariaos/HEAD/README.md) |
 | [E2B Desktop](https://github.com/e2b-dev/desktop) | desktop, linux | — | code Apache-2.0 | Open-source, isolated Linux Xfce desktop sandboxes for computer-use agents, driven from Python or JavaScript SDKs with screen streaming, mouse, keyboard and window control, screenshots and shell. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/e2b-dev/desktop/HEAD/README.md) |
 | [Lume](https://github.com/trycua/lume) | desktop, macos, linux | — | code MIT | Virtual machine management for local computer-use environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md) |
 | [Nut.js](https://github.com/nut-tree/nut.js) | desktop | — | — | Desktop automation library for keyboard, mouse, and screen interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nut-tree/nut.js/HEAD/README.md) |
 | [PyAutoGUI](https://github.com/asweigart/pyautogui) | desktop | — | — | Cross-platform Python module for scripted mouse and keyboard control, message boxes and screenshots with on-screen image search, working on the primary monitor under Windows, macOS and Linux. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/asweigart/pyautogui/HEAD/README.md) |
+| [Rocuronium](https://github.com/kageroumado/rocuronium) | desktop, macos | — | code MIT | Isolates macOS computer-use agents inside a separate login session while rendering a live visible-agent overlay on the host screen. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kageroumado/rocuronium/main/README.md) |
 | [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
 
 [↑ Back to top](#infrastructure-catalog)
@@ -52,6 +54,10 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- | --- |
 | [Agent Infra Sandbox](https://github.com/agent-infra/sandbox) | desktop, web | — | code Apache-2.0 | Sandbox environments supporting computer and browser interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agent-infra/sandbox/HEAD/README.md) |
 | [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | web, desktop, windows, macos, linux | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+| [Latere Sandbox Images](https://github.com/latere-ai/sandbox-images) | desktop, linux, web | — | code MIT | Container images for coding and computer-use desktop agents compatible with Docker, Podman, and Cella sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/latere-ai/sandbox-images/HEAD/README.md) |
+| [qdesk](https://github.com/jackwangfeng/qdesk) | desktop, linux, web | — | code Apache-2.0 | qdesk is an open-source AI agent desktop sandbox providing an isolated Linux and Chromium environment controllable over HTTP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jackwangfeng/qdesk/HEAD/README.md) |
+| [Relay AI Virtual Desktop](https://github.com/jahrulnr/virtual-desktop) | desktop, linux, web | — | code MIT | Browser-streamed Docker Linux desktop shared between humans and AI agents with a Go MCP computer-use server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jahrulnr/virtual-desktop/HEAD/README.md) |
+| [Sandbar](https://github.com/jdrolls/sandbar-public) | desktop, linux, web | — | code MIT | Sandbar provisions isolated cloud Ubuntu desktop virtual machines equipped with OpenClaw and VNC streaming for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jdrolls/sandbar-public/HEAD/README.md) |
 | [Universe legacy GUI interaction client](https://github.com/openai/universe) | web, desktop | — | code MIT | An archived Gym-compatible client that exposes screen observations and keyboard/mouse actions over VNC for remote application and browser environments, including the historical World of Bits integration. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/openai/universe/HEAD/README.rst) |
 
 [↑ Back to top](#infrastructure-catalog)

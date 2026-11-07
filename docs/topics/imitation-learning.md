@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-106 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
+110 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (11)](#frameworks) · [Papers (74)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (12)](#frameworks) · [Tools (3)](#tools) · [Papers (74)](#papers)
 
 ## Benchmarks
 
@@ -55,6 +55,7 @@ All entries in this section: unspecified.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [ECLAIR](https://github.com/HazyResearch/eclair-agents) | web, desktop | — | code Apache-2.0 | ECLAIR automates enterprise web and desktop workflows from human demonstrations with ground-truth SOP validation and step-level error recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/HazyResearch/eclair-agents/HEAD/README.md) |
 | [Go-Browse](https://github.com/ApGa/Go-Browse) | web | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | code MIT | Structured website-exploration and data-processing code that revisits discovered pages, proposes tasks and collects trajectories for web-agent fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ApGa/Go-Browse/HEAD/README.md) |
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
@@ -66,6 +67,14 @@ All entries in this section: unspecified.
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 | [WinDOM code](https://github.com/ChenghengLi/WinDOM) | web | [2606.25964](https://arxiv.org/abs/2606.25964) (2026) | code MIT | GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay) | desktop, macos | — | code MIT | DeepSeek Harness plugin that records macOS desktop demonstrations via Open Record/Replay and compiles them into agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/humblebanana/dsh-record-replay/HEAD/README.md) |
+| [Open Record/Replay](https://github.com/humblebanana/open-record-replay) | desktop, macos | — | code MIT | Open Record/Replay records macOS user demonstrations with Accessibility metadata and compiles them into reusable agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/humblebanana/open-record-replay/HEAD/README.md) |
+| [Taprun (tap)](https://github.com/LeonTing1010/tap) | web | — | code MIT | Captures a logged-in browser task demonstration once and compiles it into a deterministic zero-token replay skill. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/LeonTing1010/tap/HEAD/README.md) |
 
 ## Papers
 

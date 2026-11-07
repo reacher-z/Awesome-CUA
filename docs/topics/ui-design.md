@@ -2,17 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+63 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Tools (2)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
 
 ## Benchmarks
 
-All entries in this section: web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [HumanQA](https://github.com/Hotragn/humanqa) | web | — | — | code Apache-2.0 | Evidence-first product quality and UX evaluation harness for testing web applications with browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Hotragn/humanqa/main/README.md) |
+| [REFRACT-PPTX](https://github.com/Haikong-Lu1206/REFRACT-PPTX) | desktop, web | — | — | code MIT | Agent-guided generation and multi-dimensional visual evaluation benchmark for editable PowerPoint presentation decks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Haikong-Lu1206/REFRACT-PPTX/main/README.md) |
+| [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | web | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
 
@@ -21,6 +21,28 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Momos](https://github.com/iyulab/momos) | web, desktop | — | code AGPL-3.0 | Autonomous UI inspection agent that interacts with live applications to uncover runtime and UX flow defects missed by static analysis. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/iyulab/momos/main/README.md) |
+| [PageLens](https://github.com/heinevwinston-bot/PageLens) | web | — | code MIT | Read-only Claude browser assistant that inspects live webpages and suggests UX and accessibility improvements. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/heinevwinston-bot/PageLens/main/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Eyes](https://github.com/Jumpsy/agent-eyes) | web, desktop, macos | — | code MIT | Visual inspection toolkit for AI agents that captures rendered screenshots and extracts live CSS design tokens from the DOM. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Jumpsy/agent-eyes/main/README.md) |
+| [Richmack Browser OS](https://github.com/iamrichmack111/richmack-browser) | web, desktop | — | — | Keyboard-driven Chromium browser environment with modular workspace panels for developer and agent workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/iamrichmack111/richmack-browser/main/README.md) |
+
+## Learning resources
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
 
 ## Papers
 

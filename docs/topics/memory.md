@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
+242 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (9)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (10)](#agents) · [Frameworks (17)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
 
 ## Benchmarks
 
@@ -26,6 +26,7 @@ All entries in this section: ios.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Agent S](https://github.com/simular-ai/Agent-S) | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/simular-ai/Agent-S/HEAD/README.md) |
+| [AILEEN Desktop](https://github.com/haixu8396-png/aileen-desktop) | desktop, windows | — | — | Windows desktop AI assistant combining a Live2D interactive character with screen perception and desktop tool execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/haixu8396-png/aileen-desktop/main/README.md) |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TencentQQGYLab/AppAgent/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |
 | [Cradle](https://github.com/BAAI-Agents/Cradle) | desktop | [2403.03186](https://arxiv.org/abs/2403.03186) (2024) | code MIT | Framework in which foundation models control games and software from screenshots alone, acting through keyboard and mouse, shown on RDR2, Stardew Valley, Cities: Skylines and Dealer's Life 2. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/BAAI-Agents/Cradle/HEAD/README.md) |
@@ -33,6 +34,7 @@ All entries in this section: ios.
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
+| [Xiaoshe Agent (小蛇 Agent)](https://github.com/jackygilbert498-debug/xiaoshe-agent) | desktop, windows, macos | — | — | Local-first desktop agent built on DeepSeek Harness featuring plugin governance, permission approvals, and completion receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jackygilbert498-debug/xiaoshe-agent/main/README.md) |
 
 ## Frameworks
 
@@ -42,11 +44,27 @@ All entries in this section: ios.
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
 | [ConnectOnion](https://github.com/openonion/connectonion) | web | — | code Apache-2.0 | ConnectOnion is a CLI and Python framework that gives agents commands for connected accounts, a logged-in browser, files, and chat apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/openonion/connectonion/9f80e63689da990cd423f8996960177a871f534a/README.md) |
+| [E2-Mem](https://github.com/jianminYa/e2mem) | web | — | code MIT | E2-Mem is an episodic-event hierarchical memory framework for long-horizon web agents evaluated on WebArena. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jianminYa/e2mem/HEAD/README.md) |
+| [GenericAgent](https://github.com/lsdefine/GenericAgent) | cross-platform, desktop, web, android | — | code MIT | GenericAgent is a minimal self-evolving agent framework that synthesizes reusable skills for browser, OS, and ADB mobile control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lsdefine/GenericAgent/HEAD/README.md) |
+| [Knot Agent](https://github.com/liz-public/knot-agent) | cross-platform, desktop, web | — | code MIT | Journal-first decentralized agent harness where independent browser and desktop plugins coordinate through an append-only fact log. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/liz-public/knot-agent/main/README.md) |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | unspecified | — | code MIT | LangGraph is a stateful graph orchestration framework for building long-running, cyclical, and human-in-the-loop LLM and CUA agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/langchain-ai/langgraph/HEAD/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | web | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| [MobileRAG](https://github.com/liuxiaojieOutOfWorld/MobileRAG_arxiv) | android | — | — | MobileRAG operates Android devices via ADB by combining local app retrieval, historical trajectory memory, and external web search. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/liuxiaojieOutOfWorld/MobileRAG_arxiv/HEAD/README.md) |
+| [NaturalGAIA & LightManus](https://github.com/KeLes-Coding/NatureGAIA) | web, desktop | — | — | NaturalGAIA and LightManus provide a hierarchical multi-agent framework with browser automation, code execution, and episodic memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md) |
+| [SCoR (Sparse Context Reset)](https://github.com/huia711/SCoR) | cross-platform, desktop, web, android | — | code Apache-2.0 | Sparse Context Reset (SCoR) framework for preventing context overflow and drift in long-horizon GUI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/huia711/SCoR/main/README.md) |
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
+| [ZetaTron](https://github.com/itsmarcelS/ZetaTron) | desktop, windows, web | — | — | Self-directed local-first autonomous agent harness for Windows with desktop and browser execution capabilities. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/itsmarcelS/ZetaTron/main/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [TERX](https://github.com/ixchio/terx) | — | code MIT | Browser-agent procedural memory and MCP server that compiles repeated web workflows into deterministic zero-token replays. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ixchio/terx/HEAD/README.md) |
 
 ## Infrastructure
 

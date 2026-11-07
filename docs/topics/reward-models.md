@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-84 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+87 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
 
 ## Benchmarks
 
@@ -34,12 +34,13 @@
 
 ## Frameworks
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
-| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [CUA Evaluation & RL with Autonomous Feedback](https://github.com/martasumyk/cua-eval-and-finetuning) | desktop, web, linux | [2511.20067](https://arxiv.org/abs/2511.20067) (2025), [2603.10577](https://arxiv.org/abs/2603.10577) (2026) | — | Implements reinforcement learning with autonomous evaluator feedback for fine-tuning and benchmarking computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/martasumyk/cua-eval-and-finetuning/HEAD/README.md) |
+| [LGWM (Latent GUI World Model)](https://github.com/jiamingzhang94/lgwm) | android, desktop, web | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | code Apache-2.0 | LGWM is an action-conditioned latent GUI world model that predicts next-state representations to verify GUI agent transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiamingzhang94/lgwm/HEAD/README.md) |
+| [nanoAWM (Agent World Model Lab)](https://github.com/jlov7/nanoAWM) | desktop, web | — | code MIT | nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md) |
+| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
+| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 
 ## Tools
 

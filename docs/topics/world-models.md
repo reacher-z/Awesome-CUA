@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-59 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+61 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (4)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -23,12 +23,12 @@
 
 ## Frameworks
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [LGWM (Latent GUI World Model)](https://github.com/jiamingzhang94/lgwm) | android, desktop, web | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | code Apache-2.0 | LGWM is an action-conditioned latent GUI world model that predicts next-state representations to verify GUI agent transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiamingzhang94/lgwm/HEAD/README.md) |
+| [nanoAWM (Agent World Model Lab)](https://github.com/jlov7/nanoAWM) | desktop, web | — | code MIT | nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md) |
+| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 
 ## Surveys
 

@@ -2,42 +2,62 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+97 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Agents (6)](#agents) · [Frameworks (6)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
 
 ## Benchmarks
 
-All entries in this section: web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Agentalyze](https://github.com/Ilyat9/Agentalyze) | web | — | — | — | Agentalyze is an evaluation harness for LLM browser agents with real Chromium tasks, DOM-based state verifiers, and step-level trace analysis. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ilyat9/Agentalyze/HEAD/README.md) |
+| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | web | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| [UI-FaultLab](https://github.com/kakoyvostorg/ui-faultlab) | web, desktop | — | — | code MIT | UI-FaultLab benchmarks auditable agent-versus-application failure attribution in visual UI testing workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kakoyvostorg/ui-faultlab/HEAD/README.md) |
 
 ## Agents
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Lumen browser agent](https://github.com/omxyz/lumen) | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [GlassBrowser](https://github.com/lzw12w/glass-browser) | web | — | code MIT | Auditable, low-cost, DOM-only browser agent designed for transparent step-by-step inspection and debugging. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lzw12w/glass-browser/HEAD/README.md) |
+| [Gofer](https://github.com/jleuth/gofer) | cross-platform, desktop | — | — | Gofer is a persistent desktop agent that monitors screen changes, executes shell and GUI actions, and communicates via Telegram or a local REPL. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jleuth/gofer/HEAD/README.md) |
+| [Hunter (Autonomous Job-Search Agent)](https://github.com/lodelux/hunter-public) | web | — | code AGPL-3.0 | Autonomous job-search and application browser agent with evidence-linked fit scoring and submission tracking. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lodelux/hunter-public/main/README.md) |
+| [Kota-Kawa Browser-Agent](https://github.com/kota-kawa/Browser-Agent) | web | — | — | FastAPI and browser-use web agent featuring live CDP session streaming, Server-Sent Events (SSE) progress logs, and interactive UI control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kota-kawa/Browser-Agent/HEAD/README.md) |
+| [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
+| [Momo](https://github.com/HoldTroop/Momo) | web | — | — | Policy-compliant autonomous AI browser agent operating in local context with transparent intent logging and human oversight. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/HoldTroop/Momo/main/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [action-receipt](https://github.com/JeremiahM37/action-receipt) | web | — | code MIT | Generates deterministic per-action DOM and network effect receipts for auditing browser-agent executions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JeremiahM37/action-receipt/main/README.md) |
+| [AgentDesk (Enterprise Digital Workforce Platform)](https://github.com/huzjie/agentdesk) | cross-platform, desktop, web | — | code Apache-2.0 | Enterprise digital workforce operations platform combining computer-use execution, reusable skills, and governance. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/huzjie/agentdesk/main/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [Inside the Agent (SAE Browser Harness)](https://github.com/kalyvask/inside-the-agent) | web | — | code MIT | Reproducible harness for Sparse Autoencoder (SAE) feature steering and live interpretability monitoring of browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kalyvask/inside-the-agent/HEAD/README.md) |
 | [ORBIT framework](https://github.com/wlanderson0/orbit) | web, desktop | [2609.33102](https://arxiv.org/abs/2609.33102) (2026) | code Apache-2.0 | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md) |
+| [Threadline WebMCP](https://github.com/JamesWirths/threadline) | web | — | code MIT | WebMCP argument debugger and research workspace with human-gated provenance tracking for browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JamesWirths/threadline/main/README.md) |
 
 ## Tools
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent VCR](https://github.com/ixchio/agent-vcr) | cross-platform, web, desktop | — | code MIT | Agent VCR records, replays, and diffs deterministic cassettes of multi-turn agent tool calls, state transitions, and execution traces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ixchio/agent-vcr/HEAD/README.md) |
+| [Argus CDP MCP Server](https://github.com/Jmsa/argus) | web | — | code MIT | Chrome DevTools Protocol MCP server giving AI agents live browser DOM, console, network, and interaction tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Jmsa/argus/HEAD/README.md) |
+| [browser-link](https://github.com/jobshimo/browser-link) | web | — | code MIT | Developer-focused MCP bridge connecting Claude Code, OpenCode, and GitHub Copilot CLI to a live Chrome browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jobshimo/browser-link/main/README.md) |
+| [BrowserTrace](https://github.com/aaronlab/browsertrace) | web | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+| [BrowserTrack](https://github.com/litepacks/browsertrack) | web | — | — | Local browser diagnostics collector and Model Context Protocol bridge for sharing live console/network traces with coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/litepacks/browsertrack/main/README.md) |
+| [mapleluvr cu (Evidence-Bound Windows CLI)](https://github.com/mapleluvr/cu) | desktop, windows | — | code MIT | Evidence-bound computer-use CLI for Windows that pairs every UI action with pre/post window observations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mapleluvr/cu/main/README.md) |
+| [PhantomJS](https://github.com/ariya/phantomjs) | web | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
+| [Reqvexa](https://github.com/kareemheshaam/Reqvexa) | web | — | code MIT | HAR-based HTTP provenance analyzer that traces cookies, tokens, and headers behind browser-agent network requests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kareemheshaam/Reqvexa/main/README.md) |
+| [UnderPixel](https://github.com/Leluth/underpixel) | web | — | code MIT | Chrome extension and MCP server that correlates timestamped visual screen interactions with underlying network API calls. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Leluth/underpixel/HEAD/README.md) |
+| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | web | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+
+## Infrastructure
+
+All entries in this section: desktop, macos.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
-| [PhantomJS](https://github.com/ariya/phantomjs) | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
-| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| [Rocuronium](https://github.com/kageroumado/rocuronium) | — | code MIT | Isolates macOS computer-use agents inside a separate login session while rendering a live visible-agent overlay on the host screen. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kageroumado/rocuronium/main/README.md) |
 
 ## Surveys
 

@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
+85 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (57)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (17)](#models) · [Agents (3)](#agents) · [Frameworks (5)](#frameworks) · [Papers (57)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [decision-luna-browse-control](https://github.com/humanity-forever/decision-luna-browse-control) | — | — | code MIT | Evaluates typed System-One decision models (Luna Decisions and Jev) driving real Chromium browser workflows on synthetic web apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/humanity-forever/decision-luna-browse-control/HEAD/README.md) |
 
 ## Datasets
 
@@ -35,12 +43,22 @@
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
 
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [jev-for-chrome](https://github.com/luciferlu755/jev-for-chrome) | web | — | code GPL-3.0 | Chrome extension that drives web browsing, clicking, and typing using TypeSafe Jev System-One decision models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/luciferlu755/jev-for-chrome/HEAD/README.md) |
+| [OSRS-CV](https://github.com/KaustubhLall/OSRS-CV) | desktop, windows | — | — | Uses YOLOv8 object detection, Tesseract OCR, and human-like Bézier mouse trajectories to automate Old School RuneScape GUI gameplay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/KaustubhLall/OSRS-CV/HEAD/README.md) |
+| [Pi Jev Browser](https://github.com/laihenyi/pi-Jev-browser) | web, desktop, macos | — | code Apache-2.0 | Pi Jev Browser is a browser and macOS agent for the pi coding harness where Jev selects actions over structured page observations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/laihenyi/pi-Jev-browser/HEAD/README.md) |
+
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [D-PoT evaluation code](https://github.com/sqzhang-lazy/D-PoT) | android | [2410.00467](https://arxiv.org/abs/2410.00467) (2024) | — | Offline prompting and evaluation code for Dynamic Planning of Thoughts on Android-in-the-Wild, including action extraction and comparison with reference actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md) |
+| [OSWorld Qwen2.5-VL Enhanced](https://github.com/issumer-ku/OSWorld-Qwen2.5VL-Enhanced) | desktop, linux | — | code Apache-2.0 | Provides an OpenAI-compatible Qwen2.5-VL computer-use agent and multi-environment evaluation runner for OSWorld. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/issumer-ku/OSWorld-Qwen2.5VL-Enhanced/HEAD/README.md) |
+| [OSWorld-CogAgent](https://github.com/issumer-ku/OSWorld-CogAgent) | desktop, linux | — | code Apache-2.0 | Provides a provider-neutral CogAgent-9B model server, adapter, and multi-environment evaluation runner for OSWorld. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/issumer-ku/OSWorld-CogAgent/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
 
 ## Papers

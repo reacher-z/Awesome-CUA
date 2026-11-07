@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-34 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
+56 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (3)](#agents) · [Frameworks (8)](#frameworks) · [Tools (18)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [browser-eval](https://github.com/lexmount/browser-eval) | — | — | code Apache-2.0 | browser-eval is an evaluation harness for web fetching, deterministic browser trajectory replay, and autonomous web agent benchmarking. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lexmount/browser-eval/HEAD/README.md) |
 
 ## Datasets
 
@@ -19,6 +27,7 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
+| [Ruyi (如意)](https://github.com/icesword0760/ruyi) | web | — | code AGPL-3.0 | Ruyi streams remote Chrome sessions to the user's browser for collaborative human-AI control and compiles actions into self-healing scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/icesword0760/ruyi/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
 
 ## Frameworks
@@ -26,6 +35,11 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
+| [Appwalk](https://github.com/kubstack/appwalk) | web | — | code MIT | AI-powered CLI that explores a web application in a browser and compiles the run into verified Playwright test suites. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kubstack/appwalk/main/README.md) |
+| [Deterministic Computer-Use Automation](https://github.com/joncody/computer-use-automation) | cross-platform, desktop, web | — | code MIT | Two-phase computer-use automation framework that compiles LLM-driven UI discovery into deterministic replay scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/joncody/computer-use-automation/HEAD/README.md) |
+| [Lightfeed Replayable Browser Agent](https://github.com/lightfeed/browser-agent) | web | — | code MIT | TypeScript browser agent library that uses an LLM to complete a web navigation workflow once and replays cached selectors with zero LLM tokens. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lightfeed/browser-agent/HEAD/README.md) |
+| [RecordAgent (ButvanAgent)](https://github.com/Kavanio/RecordAgent) | cross-platform, desktop, windows, macos, linux | — | — | Local-first Tauri and AgentScope desktop agent workbench with permission approvals, tool orchestration, and workflow recording. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Kavanio/RecordAgent/main/README.md) |
+| [screen2gym](https://github.com/marc-saouda/screen2gym) | cross-platform, desktop, web | — | code MIT | screen2gym compiles raw action-labeled screen recordings into resettable, programmatically gradable RL environments for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/marc-saouda/screen2gym/HEAD/README.md) |
 | [SeleniumBase](https://github.com/seleniumbase/SeleniumBase) | web | — | — | Python browser automation framework for web crawling, end-to-end testing and scraping, with a recorder that generates tests and stealth options. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/seleniumbase/SeleniumBase/b806f54ab0c998c90654b59a817d959f7ff7920c/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
 
@@ -34,8 +48,23 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [Agent VCR](https://github.com/ixchio/agent-vcr) | cross-platform, web, desktop | — | code MIT | Agent VCR records, replays, and diffs deterministic cassettes of multi-turn agent tool calls, state transitions, and execution traces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ixchio/agent-vcr/HEAD/README.md) |
+| [AI Computer Interaction Logger](https://github.com/hemangjoshi37a/AIComputerInteractionLogger) | cross-platform, desktop, windows, macos, linux | — | code MIT | AI Computer Interaction Logger records synchronized screen video, active window metadata, and mouse/keyboard events for CUA imitation learning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hemangjoshi37a/AIComputerInteractionLogger/HEAD/readme.md) |
+| [Bflow (browser-automation-cli)](https://github.com/KhBayazidAhmed/browser-automation-cli) | web | — | — | Zero-dependency browser automation CLI and visual workflow recorder. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/KhBayazidAhmed/browser-automation-cli/main/README.md) |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | web | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
+| [COCO4GUI](https://github.com/harpreetsahota204/gui_dataset_creator) | cross-platform, desktop, web | — | code Apache-2.0 | COCO4GUI is an interactive screen capture and bounding-box annotation tool for building COCO-formatted GUI grounding datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/harpreetsahota204/gui_dataset_creator/HEAD/README.md) |
+| [dsh-browser-ops](https://github.com/lirui1024k/dsh-browser-ops) | web | — | code MIT | DeepSeek Harness plugin combining agent-driven real-browser control with workflow recording. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lirui1024k/dsh-browser-ops/main/README.md) |
+| [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay) | desktop, macos | — | code MIT | DeepSeek Harness plugin that records macOS desktop demonstrations via Open Record/Replay and compiles them into agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/humblebanana/dsh-record-replay/HEAD/README.md) |
 | [Libretto](https://github.com/cashew-labs/libretto) | web | — | code MIT | Libretto is a toolkit that gives coding agents a live browser and CLI to inspect pages, record user actions, build scripts, and debug web integrations. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/cashew-labs/libretto/41ab782ccea765d7a9a3c9b56b1b2586723962e3/README.md) |
+| [Open Codex Computer History](https://github.com/hqhq1025/open-codex-computer-history) | desktop, macos | — | code MIT | Clean-room macOS implementation of event-stream interaction recording using Accessibility hit-testing, CGEvent taps, and SkyLight window snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-computer-history/HEAD/README.md) |
+| [Open Codex Record & Replay](https://github.com/hqhq1025/open-codex-record-and-replay) | desktop, macos | — | code MIT | Clean-room macOS implementation of semantic UI workflow recording and deterministic Accessibility-tree replay with visual template fallback. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-record-and-replay/HEAD/README.md) |
+| [Open Record/Replay](https://github.com/humblebanana/open-record-replay) | desktop, macos | — | code MIT | Open Record/Replay records macOS user demonstrations with Accessibility metadata and compiles them into reusable agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/humblebanana/open-record-replay/HEAD/README.md) |
+| [screencast-desktop](https://github.com/JHamidun/screencast-desktop) | desktop, windows | — | code MIT | Claude Code plugin where an agent drives a Windows desktop application and records the session as a narrated screencast. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JHamidun/screencast-desktop/main/README.md) |
+| [skillproof](https://github.com/hccccc01333/skillproof) | web | — | code MIT | skillproof records a human browser demonstration once and compiles it into a replayable agent skill paired with an explicit completion verifier. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hccccc01333/skillproof/HEAD/README.md) |
+| [Taprun (tap)](https://github.com/LeonTing1010/tap) | web | — | code MIT | Captures a logged-in browser task demonstration once and compiles it into a deterministic zero-token replay skill. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/LeonTing1010/tap/HEAD/README.md) |
+| [TERX](https://github.com/ixchio/terx) | web | — | code MIT | Browser-agent procedural memory and MCP server that compiles repeated web workflows into deterministic zero-token replays. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ixchio/terx/HEAD/README.md) |
+| [UnderPixel](https://github.com/Leluth/underpixel) | web | — | code MIT | Chrome extension and MCP server that correlates timestamped visual screen interactions with underlying network API calls. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Leluth/underpixel/HEAD/README.md) |
+| [Zhubi (朱笔)](https://github.com/icesword0760/zhubi) | cross-platform, desktop, web | — | code AGPL-3.0 | Zhubi is a self-hosted bounding-box annotation and fine-tuning workbench for training Florence-2 and YOLO GUI detector models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/icesword0760/zhubi/HEAD/README.md) |
 
 ## Infrastructure
 

@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "kamalesh404 AgentOS",
+    "url": "https://github.com/kamalesh404/AgentOS",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Autonomous AI agent framework for orchestrating web browsing, coding, and desktop tasks.",
+    "verify_terms": [
+      "agentos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kamalesh404/AgentOS/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "450543d27400832d974afe6f8c7fe31251102fbdc22d17f3ed90e18fdeb6266d"
+  },
+  {
+    "name": "MindsEye (dsh-mindseye)",
+    "url": "https://github.com/kanchengw/dsh-mindseye",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Vision plugin for text-only models on DeepSeek Harness enabling interactive image and UI screenshot inspection.",
+    "verify_terms": [
+      "MindsEye"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kanchengw/dsh-mindseye/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e17580ffe7fd45b114a7a856984a53008c288cca001477a06ce3072a409f6eca"
+  },
+  {
+    "name": "Reqvexa",
+    "url": "https://github.com/kareemheshaam/Reqvexa",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "HAR-based HTTP provenance analyzer that traces cookies, tokens, and headers behind browser-agent network requests.",
+    "verify_terms": [
+      "Reqvexa"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kareemheshaam/Reqvexa/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "791bc1bbffc3f03cded0506c11aa646c52282dd3b10555f0e72f4f220a6b4303"
+  },
+  {
+    "name": "Native by K",
+    "url": "https://github.com/Karunya-Muddana/Native",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Local-first open-source AI agent harness for developers integrating terminal, filesystem, and browser control.",
+    "verify_terms": [
+      "Native by K"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Karunya-Muddana/Native/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9ca0e066c1b2b2aee6a54af3f2c3e317c3f3063bb8f486a1975bb63db59c2cd6"
+  },
+  {
+    "name": "OSRS-CV",
+    "url": "https://github.com/KaustubhLall/OSRS-CV",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "automation",
+      "action-prediction"
+    ],
+    "summary": "Uses YOLOv8 object detection, Tesseract OCR, and human-like Bézier mouse trajectories to automate Old School RuneScape GUI gameplay.",
+    "verify_terms": [
+      "OSRS-CV"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KaustubhLall/OSRS-CV/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e6207432ec92eb62e7e9d2e1011ebe5b37ffd379994e41d82f3d7947de3feb85"
   }
 ]

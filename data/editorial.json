@@ -86010,5 +86010,232 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "HumanHands",
+    "url": "https://github.com/thispc/humanhands",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "macOS computer-use agent that combines Accessibility-tree semantics with visual fallback to operate Mac apps like a human.",
+    "verify_terms": [
+      "HumanHands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/thispc/humanhands/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bed02ad217e33a2759399e6c1b32e66bc18c6347dfc37dab06baa82aa4f92fd0"
+  },
+  {
+    "name": "Agente Pessoal",
+    "url": "https://github.com/Thomas-Adrian-Soler-Nilsson/agente_pessoal",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Multimodal personal AI desktop assistant with voice interaction, persistent memory, and OS automation.",
+    "verify_terms": [
+      "Agente Pessoal"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Thomas-Adrian-Soler-Nilsson/agente_pessoal/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8eb762c45009abbea6e9e65bb342f88711bf64c4264d016033881c57395ba6a4"
+  },
+  {
+    "name": "Hermes Bot Kit",
+    "url": "https://github.com/thomasbek3/hermes-bot-kit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "iMessage-style chat and fleet control interface for managing Hermes computer-use agents.",
+    "verify_terms": [
+      "Hermes Bot Kit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/thomasbek3/hermes-bot-kit/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bc53a38b750e6fcefee4c9a2b68acb55365cb14007eb74b3b22b0011f8b4d190"
+  },
+  {
+    "name": "ThreeBody6666 DSH Computer Use",
+    "url": "https://github.com/ThreeBody6666/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Native Windows computer-use and configurable vision plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh computer use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ThreeBody6666/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d025a3fc2ba6d19a57580a0ddbce597650281ba35150bd9a4a4099842d77a65d"
+  },
+  {
+    "name": "Agentic Reward Modeling (RewardAgent)",
+    "url": "https://github.com/THU-KEG/Agentic-Reward-Modeling",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reward-models",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "RewardAgent combines human-preference scores with verifiable factuality and instruction-following checks to judge agent trajectories.",
+    "verify_terms": [
+      "Agentic Reward Modeling"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/THU-KEG/Agentic-Reward-Modeling/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1a106ca25a0ce2099e6dfa889470969d7ec4678bec35eba5c2cf707e4cb92aba"
+  },
+  {
+    "name": "CogVLM",
+    "url": "https://github.com/THUDM/CogVLM",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "CogVLM provides official inference and fine-tuning code for the CogVLM vision-language foundation model and the CogAgent GUI agent.",
+    "verify_terms": [
+      "CogVLM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/THUDM/CogVLM/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "845d0c7f8f13501791a18b61b3f312bdac112273ff742eded3c926b777f0e002",
+    "documented_by": [
+      "2312.08914"
+    ]
+  },
+  {
+    "name": "CogVLM2",
+    "url": "https://github.com/THUDM/CogVLM2",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "screen-understanding",
+      "video",
+      "grounding"
+    ],
+    "summary": "CogVLM2 releases high-resolution image and video vision-language models supporting visual grounding, document reading, and GUI understanding.",
+    "verify_terms": [
+      "CogVLM2"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/THUDM/CogVLM2/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ac03b56804c539c2550c5ad6f90b35c04f3f15df8c91c583c81c3f3bd862bf9b"
+  },
+  {
+    "name": "OpenWebAgent",
+    "url": "https://github.com/THUDM/OpenWebAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "OpenWebAgent provides a Chrome extension, HTML simplification parser, and backend server for building LLM-driven web browsing agents.",
+    "verify_terms": [
+      "OpenWebAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/THUDM/OpenWebAgent/HEAD/readme.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2a02e6b983a34c9afb7a3c2e6bf5fca41e878e6c68f8308f10d1e87ae8d9ffee"
+  },
+  {
+    "name": "RLVR-World",
+    "url": "https://github.com/thuml/RLVR-World",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "world-models",
+      "reinforcement-learning"
+    ],
+    "summary": "RLVR-World trains world models with verifiable reinforcement learning to predict state transitions for web and game agents.",
+    "verify_terms": [
+      "RLVR-World"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/thuml/RLVR-World/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "db83605195346ccd3b3cad1118f2398c86dc1e43a8303f7d5343777a17c1e34f"
   }
 ]

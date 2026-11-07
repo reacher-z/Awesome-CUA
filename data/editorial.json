@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "AskUI Vision Agent Python SDK",
+    "url": "https://github.com/askui/python-sdk",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "AskUI Vision Agent Python SDK provides cross-platform visual UI element localization and desktop/mobile automation APIs for AI agents.",
+    "verify_terms": [
+      "python sdk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/askui/python-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "78fd2ef0a9aab5d0a07b4cd126df26974d48aa61012dd1b08bb1b85e4f5c37c9"
+  },
+  {
+    "name": "AstraClaw Agent Computer Use MCP",
+    "url": "https://github.com/astraclawteam/agent-computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Evidence-driven Windows Computer Use MCP server providing semantic UI observation, secure screenshots, and verified actions.",
+    "verify_terms": [
+      "agent-computer-use-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/astraclawteam/agent-computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7c79139f096b13076e0e8272dd1a10ba87ff32b647a1a4dccbdedbab8e52beb3"
+  },
+  {
+    "name": "Spectra MCP",
+    "url": "https://github.com/AstroQuestStudio/Spectra-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Native Rust Model Context Protocol server that drives Chrome directly over the Chrome DevTools Protocol.",
+    "verify_terms": [
+      "spectra"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AstroQuestStudio/Spectra-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7f6b21d2371758ed0e188a8399d9daf8292e6efee164b24db9af018468bfc407"
+  },
+  {
+    "name": "kde-mcp",
+    "url": "https://github.com/atassis/kde-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for observing and controlling Linux KDE Plasma 6 Wayland desktops.",
+    "verify_terms": [
+      "kde-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/atassis/kde-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7ee02ec966283a53e39e4697adcb2d5e58a09805f55c5323c7df87b8672ccaac"
+  },
+  {
+    "name": "DrishtiGuard",
+    "url": "https://github.com/AtharvaSamant4/DrishtiGuard",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "screen-understanding",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "On-device visual privacy firewall that detects and masks sensitive screen regions before lightweight browser agents process frames.",
+    "verify_terms": [
+      "DrishtiGuard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AtharvaSamant4/DrishtiGuard/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7a57bdbd4cfc49ea40bccfd5e3f7780a114958911590adce07ee3d4ae2c3d7c7"
   }
 ]

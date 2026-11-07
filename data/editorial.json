@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-plugin-midscene",
+    "url": "https://github.com/ciky20171114/dsh-plugin-midscene",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "mobile-navigation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Midscene.js-powered visual UI automation plugin for DeepSeek Harness supporting both Android (`android_ui`) and Web (`web_ui`).",
+    "verify_terms": [
+      "dsh-plugin-midscene"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ciky20171114/dsh-plugin-midscene/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b7fb0cf43aee37b6cef9d97f8002cc1eea7bad30e39416b05f817847edcf5598"
+  },
+  {
+    "name": "playwright-turnstile",
+    "url": "https://github.com/CircuitSavage/playwright-turnstile",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Playwright integration for resolving Cloudflare Turnstile challenges via token injection during browser automation.",
+    "verify_terms": [
+      "playwright-turnstile"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CircuitSavage/playwright-turnstile/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9e77e3131103c6d40d7693dcb258334d2ed13622b02ecf7c85252658168be9e0"
+  },
+  {
+    "name": "Ego Browser Benchmark Framework",
+    "url": "https://github.com/citrolabs/ego-browser-benchmark-framework",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Ego Browser Benchmark Framework is a reproducible harness for comparing foundation models on controlled browser-use agent tasks.",
+    "verify_terms": [
+      "Ego Browser Benchmark Framework"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/citrolabs/ego-browser-benchmark-framework/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f520f55d5270fb776300de52ddd472b471fef29b8653b5196e120aba26e3954f"
+  },
+  {
+    "name": "safari-browser-use",
+    "url": "https://github.com/citrolabs/safari-browser-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Apple Events-powered Safari 26 browser automation skill for Codex, Claude Code, Copilot, and Cursor without browser extensions.",
+    "verify_terms": [
+      "safari-browser-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/citrolabs/safari-browser-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e2e5b3505c9ff5f0d0a2e997579ffbf0a53cf62278a69e2104420e2dfd6dba2b"
+  },
+  {
+    "name": "Windows Agent Browser (winbrowse)",
+    "url": "https://github.com/Civitasmass/windows-agent-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Allows Claude Code and Codex running in Windows or WSL2 to drive the user's signed-in Chrome or Edge browser.",
+    "verify_terms": [
+      "Windows Agent Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Civitasmass/windows-agent-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fbe3d30874f0499801daaae19555200ad70552f704bd3a5e77f1832af6f90954"
   }
 ]

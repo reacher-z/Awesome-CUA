@@ -86010,5 +86010,208 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "nekoro-browser",
+    "url": "https://github.com/zeshuochen/nekoro-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Lightweight browser automation CLI and MCP server driving the user's everyday Chrome via a companion extension.",
+    "verify_terms": [
+      "nekoro-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zeshuochen/nekoro-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "088d7dcb59c18f2183ad07cbe33ee199d18f869c95831d8b7d48a5dead17b007"
+  },
+  {
+    "name": "zetakai desktop-mcp",
+    "url": "https://github.com/Zetakai/desktop-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Desktop vision and input control Model Context Protocol server for Linux X11 and Wayland sessions.",
+    "verify_terms": [
+      "desktop-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Zetakai/desktop-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b15a61179dbfa790222a9c60a029149644c8359ade4e50b762602f83ce82889e"
+  },
+  {
+    "name": "Pegoles Agent",
+    "url": "https://github.com/zezortdx/Pegoles-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Pegoles Agent runs a macOS computer-use controller against an isolated Linux virtual machine with deterministic pre-execution policy checks.",
+    "verify_terms": [
+      "Pegoles Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zezortdx/Pegoles-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c257d61c47ff5a01e913abfe669336669c9896a9f2ebf08bdb2042562c59bba8"
+  },
+  {
+    "name": "GUI-SD",
+    "url": "https://github.com/zhangyan-ucas/GUI-SD-code",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning"
+    ],
+    "summary": "GUI-SD implements on-policy self-distillation for GUI visual grounding and action prediction using Qwen-VL backbones.",
+    "verify_terms": [
+      "GUI-SD"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zhangyan-ucas/GUI-SD-code/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3f84842607d69200e8604ff7ad8e3992e58e608ae2b7d943faf96f95fcda44ff",
+    "documented_by": [
+      "2605.00642"
+    ]
+  },
+  {
+    "name": "Codex Boss Desktop",
+    "url": "https://github.com/zhiheng-zhang-Mera/Codex-Boss",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "observability",
+      "tool-integration"
+    ],
+    "summary": "Local-first Electron controller for multi-model deliberation and evidence-preserving computer-use orchestration.",
+    "verify_terms": [
+      "Codex Boss Desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zhiheng-zhang-Mera/Codex-Boss/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df56e96e87f1bd7eb5289413e772a1e8725229341dd39628fe0a781021f7b377"
+  },
+  {
+    "name": "ga-tmwd-browser",
+    "url": "https://github.com/Zhou-Weixin/ga-tmwd-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Agent-agnostic real-browser control bridge built on GenericAgent's TMWebDriver and CDP relay.",
+    "verify_terms": [
+      "ga-tmwd-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Zhou-Weixin/ga-tmwd-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fa860ce9e0e5fba96704cb846dd1cb5f318a690dab59bdf193781152e4d7316d"
+  },
+  {
+    "name": "Computer Use VM",
+    "url": "https://github.com/ZimengXiong/computer-use-vm",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Provisions disposable, headless macOS virtual machines so computer-use agents can operate isolated desktops without window switching.",
+    "verify_terms": [
+      "Computer Use VM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZimengXiong/computer-use-vm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f862cff179e5b8bc86732f9290c8cf0b16818248ebc6f3ad597b0b522aa72bc"
+  },
+  {
+    "name": "Signpost WebMCP",
+    "url": "https://github.com/zioladev/signpost",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Stateless capability resolver for WebMCP enabling websites to declare and route agent-callable actions.",
+    "verify_terms": [
+      "signpost"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zioladev/signpost/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e69a2034db023e95df858d059e5dad2a1d85c0e451deae7b4c50964b4aa7ec9d"
   }
 ]

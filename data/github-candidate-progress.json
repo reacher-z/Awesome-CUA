@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "b3ce194d56541d473b58eef7c75baccb07cf4aa090a1dcc0fad4e342788fec26",
-  "observation_snapshot_sha256": "cf42fb18dc880d8116fdca6a5c166c711ed56817a4413ccf3f682a45c5434783",
+  "manifest_sha256": "63f59afa9ce8ff19529a850d8eb78bccfce959db048aca7aee24ab7e99ab8385",
+  "observation_snapshot_sha256": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -4001,11 +4001,48 @@
           }
         },
         "id": "ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93"
+      },
+      {
+        "active_records": 2623,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8193228,
+            "sha256": "263c5277824e75e2839262f8fe28a72cb4a596d510f1e2028bf55e80df5e294f"
+          },
+          "catalog.jsonl": {
+            "bytes": 7561370,
+            "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "input_id": "5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "kind": "existing",
+        "last_attempt": 893,
+        "next_index": 207,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93",
         "input_id": "ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93",
@@ -4013,7 +4050,7 @@
         "last_attempt": 888,
         "next_index": 202,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:0eb125a924d7de10090b4c9a1e00c786fbf234e5292afd90ce7329695626edc1",
@@ -81370,6 +81407,116 @@
         "run_id": "run:3fedcf1257bcea726caa35e2",
         "source_url": null,
         "status": 404
+      },
+      {
+        "accepted_repository_ids": [
+          1059745470
+        ],
+        "finished_at": "2026-11-07T13:22:21.071191+00:00",
+        "id": "receipt:2e4acc2af059e6c9e0ed9031236b3411380519ca506a11f0a0a2c5853c58231f",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 202,
+        "query_id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "86269899b3ea8dd7d156904098054c842732d520bdb019d2e0c4d1219993239a",
+        "requested_at": "2026-11-07T13:22:20.778210+00:00",
+        "response_bytes": 6913,
+        "response_sha256": "aaee1dbe5fbe236b3ef585e3d2b43eb39087c74d49944651314e054a1dbf861d",
+        "returned_count": 1,
+        "run_id": "run:d45e7019e48c7ceeed2c48c8",
+        "source_url": "https://api.github.com/repos/babelcloud/android_world_benchmark",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1074035450
+        ],
+        "finished_at": "2026-11-07T13:22:27.504734+00:00",
+        "id": "receipt:e0273d635c40f856bd36ee5d183f3da2a3136d4aabfe86123a1fa383edf02ff0",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 203,
+        "query_id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "bc237dfbb545e0410553caa57ab5d0c244b280386cfd32f398bb1413c90f232f",
+        "requested_at": "2026-11-07T13:22:27.289610+00:00",
+        "response_bytes": 6078,
+        "response_sha256": "75c6cc6394b33cb879721a61565806204236ac72fbe9d22993ccd8760f71a172",
+        "returned_count": 1,
+        "run_id": "run:d45e7019e48c7ceeed2c48c8",
+        "source_url": "https://api.github.com/repos/babelcloud/gboxblog",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1085401338
+        ],
+        "finished_at": "2026-11-07T13:22:34.034018+00:00",
+        "id": "receipt:92e67f75a71ef0f1c602a91115d181d5809b8153029eb5a4eee5349b938bb4d1",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 204,
+        "query_id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "8fe9e255d1e7300dbf0785b9ad89a7707c387aa158569309e681232d6b1eeca5",
+        "requested_at": "2026-11-07T13:22:33.800819+00:00",
+        "response_bytes": 6229,
+        "response_sha256": "845ad0fb24b7ff767ba7c23fc878fe8654b44347fa869da3ff328856cf1a0b9d",
+        "returned_count": 1,
+        "run_id": "run:d45e7019e48c7ceeed2c48c8",
+        "source_url": "https://api.github.com/repos/babelcloud/webarena",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1135556220
+        ],
+        "finished_at": "2026-11-07T13:22:40.552575+00:00",
+        "id": "receipt:d18c35c762a5ba7f2f44f8af3b1ca2089127e586e0b0baa1f3fa8c685cfc4c57",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 205,
+        "query_id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "29bc0e63e7cb2ebd43bd0fd5496b2920e8f673f3a06ded5b06ed4f3c8cc707d5",
+        "requested_at": "2026-11-07T13:22:40.312246+00:00",
+        "response_bytes": 5494,
+        "response_sha256": "0ff0c78a41d6fdbaf8455dea1992ec67c0c61661b958e46904575dd487104307",
+        "returned_count": 1,
+        "run_id": "run:d45e7019e48c7ceeed2c48c8",
+        "source_url": "https://api.github.com/repos/barry-ran/quickdesk",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          363163
+        ],
+        "finished_at": "2026-11-07T13:22:47.036411+00:00",
+        "id": "receipt:2fda63202058dc4cbe1ff3c936f5464d5e74da03183451f62c2f564bd736b841",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 206,
+        "query_id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "bc75d9d7a54c13223d86a9b55296e02516cb19978968ec7e79c65c1030939720",
+        "requested_at": "2026-11-07T13:22:46.824188+00:00",
+        "response_bytes": 5081,
+        "response_sha256": "2760ddea33d2b6f82e7778fbf3ce7a455e6d4db26682e1269bde5440ad7ca9e7",
+        "returned_count": 1,
+        "run_id": "run:d45e7019e48c7ceeed2c48c8",
+        "source_url": "https://api.github.com/repos/bblimke/webmock",
+        "status": 200
       }
     ],
     "runs": [
@@ -84800,9 +84947,40 @@
         "strict_replay": true,
         "unknown_requests": 2,
         "wall_seconds_budget": 187.559456886
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10251,
+        "before_unique_repositories": 10246,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T13:22:51.955144+00:00",
+        "id": "run:d45e7019e48c7ceeed2c48c8",
+        "input_id": "5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "f0fb36c80ee0464ca2f04c601e2d632d"
+        },
+        "started_at": "2026-11-07T13:22:06.486693+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 186.599849971
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "f9dfbe335a18e4e7b0402b9fe0ed089b97acbfd1dd0436c720ac444886191a09"
+  "state_sha256": "c403dbb5166395590a410deae2a56909683e5099c6c2e652136c46092d2d49b2"
 }

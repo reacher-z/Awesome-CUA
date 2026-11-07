@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Codex Bridge to ChatGPT",
+    "url": "https://github.com/anightmonarch/codex-bridge-chatgpt",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Automates verified reasoning handoffs between local OpenAI Codex sessions and ChatGPT Web in the browser.",
+    "verify_terms": [
+      "Codex Bridge to ChatGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anightmonarch/codex-bridge-chatgpt/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "79b3bca8a94c49b4effd097e11ccc69df11e62276efea1dde4bb8ab6f8567514"
+  },
+  {
+    "name": "Open Duet (open-dots)",
+    "url": "https://github.com/Anil-matcha/open-dots",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Open Duet is a self-hosted multi-agent workspace where named AI coworkers operate isolated sandboxes, browsers, and terminals.",
+    "verify_terms": [
+      "Open Duet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Anil-matcha/open-dots/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c42d3e9b54157667fda380e49775de77df3ad99f65e26626e63ab1aca0c879ea"
+  },
+  {
+    "name": "Open Grok Bot",
+    "url": "https://github.com/Anil-matcha/open-grok-bot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Local-first AI agent workspace featuring governed computer use, approval gates, and multi-persona orchestration.",
+    "verify_terms": [
+      "Open Grok Bot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Anil-matcha/open-grok-bot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3ef69b660c0996515d544a12162f0577eddecbbb30f1a883541854c0a1d5af25"
+  },
+  {
+    "name": "agent-vision-toolkit",
+    "url": "https://github.com/Anionex/agent-vision-toolkit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "ui-design",
+      "tool-integration"
+    ],
+    "summary": "Vision toolkit and skill pack equipping text-only LLMs with multi-image reading, UI reconstruction, and GUI automation.",
+    "verify_terms": [
+      "agent-vision-toolkit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Anionex/agent-vision-toolkit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "411bcf139f9df4320d38da53211bcf805beba3a603891694930e446c07451804"
+  },
+  {
+    "name": "pi-iphone-mirroring",
+    "url": "https://github.com/aniruddha-adhikary/pi-iphone-mirroring",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "ios",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Vision-first iPhone Mirroring control package for the Pi coding agent on macOS.",
+    "verify_terms": [
+      "pi-iphone-mirroring"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aniruddha-adhikary/pi-iphone-mirroring/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6fbfb5044631c4d8442e9dc879b356cff6f01497d9a248fbdecb14f87652d66d"
   }
 ]

@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ChromeBoost",
+    "url": "https://github.com/lordamdal/chromeboost",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and MCP server giving Claude Code direct control over the user's logged-in Chrome browser.",
+    "verify_terms": [
+      "ChromeBoost"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lordamdal/chromeboost/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92bd1301730c3202aa9c1af6e83d7107e5fe2af3c9babd4d6850fc213f081054"
+  },
+  {
+    "name": "kimi-webbridge-mcp",
+    "url": "https://github.com/LosEcher/kimi-webbridge-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Stdio Model Context Protocol server wrapping the local Kimi WebBridge daemon as browser-control tools.",
+    "verify_terms": [
+      "kimi-webbridge-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LosEcher/kimi-webbridge-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b08889b340b22c38c6b4443ad045ea37c8e64bd0b18ad9306faa2c83a32e294f"
+  },
+  {
+    "name": "chromiumfish_mcp",
+    "url": "https://github.com/LowOrbitLab/chromiumfish_mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Session-aware Model Context Protocol server for driving ChromiumFish browser automation.",
+    "verify_terms": [
+      "chromiumfish_mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LowOrbitLab/chromiumfish_mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "91bbf35989ae85fde508beb56c9f72e2f27892183f45853424c76d67003b5aa7"
+  },
+  {
+    "name": "WebDroid",
+    "url": "https://github.com/loyality7/webdroid",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Playwright-shaped browser automation library for driving live Chromium pages inside Android applications.",
+    "verify_terms": [
+      "WebDroid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/loyality7/webdroid/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d614e8ddc252bf21b9f27e3a0988d5f663c1b3a158b93401a871094f6ab63f2c"
+  },
+  {
+    "name": "GenericAgent",
+    "url": "https://github.com/lsdefine/GenericAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "self-reflection",
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "GenericAgent is a minimal self-evolving agent framework that synthesizes reusable skills for browser, OS, and ADB mobile control.",
+    "verify_terms": [
+      "GenericAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lsdefine/GenericAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "56e2af7c7dd8f05fc9a9682c5045ad5e428deb79001771b95c825f049ffa92e2"
   }
 ]

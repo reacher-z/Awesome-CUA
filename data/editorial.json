@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "kwin-mcp",
+    "url": "https://github.com/isac322/kwin-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "sandbox",
+      "screen-understanding"
+    ],
+    "summary": "Model Context Protocol server for Linux KDE Plasma 6 Wayland desktop GUI automation providing 29 tools for virtual KWin sessions, AT-SPI, and input.",
+    "verify_terms": [
+      "kwin-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/isac322/kwin-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d78cd5bf1408ae2996cf1e476a6e34b62104f577636797916903c270dfbee913"
+  },
+  {
+    "name": "vimGPT",
+    "url": "https://github.com/ishan0102/vimGPT",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding"
+    ],
+    "summary": "vimGPT enables multimodal LLMs to browse the web by overlaying Vimium keyboard shortcut badges onto interactive DOM elements.",
+    "verify_terms": [
+      "vimGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ishan0102/vimGPT/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af64b0985a09b05ea15c4b80302e6c087995f29345e19fce158e392ef963daa5",
+    "documented_by": [
+      "2401.13649"
+    ]
+  },
+  {
+    "name": "Browser Agent Comparison (4 Approaches)",
+    "url": "https://github.com/ismael-joffroy-chandoutis/browser-agent-comparison",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Compares four AI browser-control paradigms (Chrome extension, Playwright, Browser Use V3, and CLI) on task completion and cost.",
+    "verify_terms": [
+      "english"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ismael-joffroy-chandoutis/browser-agent-comparison/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6ffa7b2876a0ee00c1131973cc8f0ee38144610c40e9cf906785cb87739400a6"
+  },
+  {
+    "name": "OSWorld-CogAgent",
+    "url": "https://github.com/issumer-ku/OSWorld-CogAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "Provides a provider-neutral CogAgent-9B model server, adapter, and multi-environment evaluation runner for OSWorld.",
+    "verify_terms": [
+      "OSWorld-CogAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/issumer-ku/OSWorld-CogAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b513fc306f0117538f7e667349b31b4526dc2d32fe358edb3e1e4f814446f6a"
+  },
+  {
+    "name": "OSWorld Qwen2.5-VL Enhanced",
+    "url": "https://github.com/issumer-ku/OSWorld-Qwen2.5VL-Enhanced",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "Provides an OpenAI-compatible Qwen2.5-VL computer-use agent and multi-environment evaluation runner for OSWorld.",
+    "verify_terms": [
+      "OSWorld Qwen2.5-VL Enhanced"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/issumer-ku/OSWorld-Qwen2.5VL-Enhanced/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "65b246d91994da3409c1b7125acda133494b1f1bb9c19ae92f7ff511b60d7f74"
   }
 ]

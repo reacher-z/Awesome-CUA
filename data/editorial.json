@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Daedalus Browser Bridge",
+    "url": "https://github.com/Nitjsefnie-Harness-Commons/daedalus",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome-extension remote control bridge allowing AI agents to drive a live Chrome instance over HTTP.",
+    "verify_terms": [
+      "daedalus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Nitjsefnie-Harness-Commons/daedalus/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a7d4f8fe5414cbb2ee623c637cd8f60d0324af84299e285d71e280077bd7f448"
+  },
+  {
+    "name": "Xiaozhuang DSH",
+    "url": "https://github.com/niushuanan/xiaozhuang-dsh",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Plugin-enhanced DeepSeek Harness distribution pre-packaged with desktop computer use and browser automation.",
+    "verify_terms": [
+      "Xiaozhuang DSH"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/niushuanan/xiaozhuang-dsh/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "848a635575eefb7767d92637108f4fee021c57d27ce7e31481170d5cf6d26261"
+  },
+  {
+    "name": "Local Browser MCP",
+    "url": "https://github.com/nolanbaxter/local-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Headless, agent-controllable browser MCP server designed for testing and inspecting local web development servers.",
+    "verify_terms": [
+      "Local Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nolanbaxter/local-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f9a50db8121622ff06accfd9c963748af4b02f6be365a11a8b712b5c3c95f02e"
+  },
+  {
+    "name": "Fuji-Web",
+    "url": "https://github.com/normal-computing/fuji-web",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Fuji-Web is a Chrome extension web agent that combines accessibility trees and screenshot grounding for autonomous browser workflow execution.",
+    "verify_terms": [
+      "Fuji-Web"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/normal-computing/fuji-web/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20b7766cf0f662e8f98ceb3df25e4edc387770994ea6d23b21eba0f4ad80943e",
+    "documented_by": [
+      "2402.07939"
+    ]
+  },
+  {
+    "name": "WAInjectBench",
+    "url": "https://github.com/Norrrrrrr-lyn/WAInjectBench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "WAInjectBench benchmarks prompt injection detection in web agents across six text and image attack types targeting web interaction pipelines.",
+    "verify_terms": [
+      "WAInjectBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Norrrrrrr-lyn/WAInjectBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de16483df2836a5b59152fc732560913d99a54fd75db2eba73673fcbcf1e463c"
   }
 ]

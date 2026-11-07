@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "computer.cpp",
+    "url": "https://github.com/gobii-ai/computer.cpp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "computer.cpp turns native desktop GUI applications into structured, API-callable interfaces for AI agents.",
+    "verify_terms": [
+      "computer.cpp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gobii-ai/computer.cpp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "58e837b5207f5bfd1b8953129dc99d7f5e13a537a9ea84debee6e91f9f27d73b"
+  },
+  {
+    "name": "godzilaa browser-agent Extension",
+    "url": "https://github.com/Godzilaa/browser-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome Manifest V3 extension that converts any live webpage into structured JSON and executes agent actions.",
+    "verify_terms": [
+      "browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Godzilaa/browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b5cfd153439b3f43e83da19a85e009f3e0a4611337d8e9640231d089950a0865"
+  },
+  {
+    "name": "mimiq",
+    "url": "https://github.com/gojiplus/mimiq",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "mimiq is a dynamic end-to-end agentic simulation and web UI evaluation runner integrating Cypress, Playwright, and Stagehand.",
+    "verify_terms": [
+      "mimiq"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gojiplus/mimiq/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b4909ae368b5fa12398ff113beeb703c2e2502c8dddd263f369872712e09482f"
+  },
+  {
+    "name": "GoLogin MCP Server",
+    "url": "https://github.com/gologinapp/gologin-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "GoLogin MCP Server allows AI agents to manage anti-detect browser profiles, proxies, fingerprints, and cloud browser sessions.",
+    "verify_terms": [
+      "GoLogin MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gologinapp/gologin-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b633d6585ebfbacdd22721977c3deada9f74e9b2ef3550bc41aff6d6e9848e8"
+  },
+  {
+    "name": "bm (Conversational Grocery Browser Agent)",
+    "url": "https://github.com/gonzalo123/bm",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Conversational grocery shopping TUI agent built with Strands and Amazon Bedrock that drives a live web browser.",
+    "verify_terms": [
+      "bm"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gonzalo123/bm/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b47900a5a967670b8223cbee1eabde8e94e72b1f7c343dba7d04e0e2b6bca457"
   }
 ]

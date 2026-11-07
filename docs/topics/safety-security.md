@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-289 source-reviewed resources tagged `safety-security`. Curated metadata; unknown facts are shown as —.
+311 source-reviewed resources tagged `safety-security`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (12)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (2)](#tools) · [Surveys (8)](#surveys) · [Papers (260)](#papers)
+**Contents:** [Benchmarks (15)](#benchmarks) · [Agents (4)](#agents) · [Frameworks (19)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (8)](#surveys) · [Papers (260)](#papers)
 
 ## Benchmarks
 
@@ -14,42 +14,67 @@
 | [AgentDAM](https://github.com/facebookresearch/ai-agent-privacy) | web | [2503.09780](https://arxiv.org/abs/2503.09780) (2025) | — | — | Web-agent benchmark for measuring unnecessary use of sensitive personal information during end-to-end task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/facebookresearch/ai-agent-privacy/HEAD/README.md) |
 | [BrowserART](https://github.com/scaleapi/browser-art) | web | [2410.13886](https://arxiv.org/abs/2410.13886) (2024) | — | — | Red-teaming benchmark and test suite from Scale AI evaluating whether refusal-trained language models can be jailbroken when deployed as browser agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/scaleapi/browser-art/HEAD/README.md) |
 | [EIA](https://github.com/OSU-NLP-Group/EIA_against_webagent) | web | [2409.11295](https://arxiv.org/abs/2409.11295) (2024) | — | code MIT | Evaluation suite for Environmental Injection Attacks that embed invisible malicious HTML elements into benign websites to test privacy leakage in generalist web agents. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/EIA_against_webagent/HEAD/README.md) |
+| [LAST DOOR](https://github.com/agentsimdev/last-door) | web | — | — | code MIT | Authentication resilience benchmark and WebMCP authority compiler for testing browser agents at login and permission boundaries. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/agentsimdev/last-door/main/README.md) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
+| [MM-SafetyBench](https://github.com/AI45Lab/MM-SafetyBench) | unspecified | — | — | — | MM-SafetyBench evaluates multimodal large language models against query-relevant adversarial image and typography safety prompts across 13 scenarios. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AI45Lab/MM-SafetyBench/HEAD/README.md) |
 | [MobileSafetyBench](https://github.com/jylee425/mobilesafetybench) | android | — | — | code Apache-2.0 | Android emulator testbed that scores mobile device-control agents on both safety and helpfulness, using ADB and Appium for observations, actions and success checks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/mobilesafetybench/HEAD/README.md) |
 | [OS-Harm](https://github.com/tml-epfl/os-harm) | desktop | [2506.14866](https://arxiv.org/abs/2506.14866) (2025) | [150 tasks as reported by the paper/README](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) · [50 task IDs](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/evaluation_examples/test_misuse.json) | code Apache-2.0 | Benchmark for safety of computer-use agents across misuse, prompt injection, and unintended model behavior. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md) |
 | [PopupAttack](https://github.com/SALT-NLP/PopupAttack) | web | — | — | — | Resources for evaluating GUI agents under malicious popup instructions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/SALT-NLP/PopupAttack/HEAD/README.md) |
 | [SafeArena](https://github.com/McGill-NLP/safearena) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/safearena-leaderboard) | web | [2503.04957](https://arxiv.org/abs/2503.04957) (2025) | [250 tasks](https://arxiv.org/abs/2503.04957) | — | Web-agent benchmark pairing benign and harmful tasks to study deliberate misuse risks. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/McGill-NLP/safearena/HEAD/README.md) |
 | [ST-WebAgentBench](https://github.com/segev-shlomov/ST-WebAgentBench) | web | [2410.06703](https://arxiv.org/abs/2410.06703) (2024) | — | — | BrowserGym-based benchmark for evaluating the safety and policy compliance of enterprise web agents across six trustworthiness risk dimensions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/segev-shlomov/ST-WebAgentBench/HEAD/README.md) |
+| [WATCHER](https://github.com/Aaman-911/watcher) | web | — | — | — | Prompt-injection defense classifier, evaluation benchmark, and defended browser harness for autonomous web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Aaman-911/watcher/main/README.md) |
 | [WebGuard](https://github.com/OSU-NLP-Group/WebGuard) | web | [2507.14293](https://arxiv.org/abs/2507.14293) (2025) | — | code MIT | Codebase, annotation toolkit, and action-level risk dataset for training and evaluating guardrail models that flag unsafe browser-agent actions before execution. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/WebGuard/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
 
 ## Agents
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [BLAXCY](https://github.com/alex3430143/blaxcyds) | desktop, linux | — | code MIT | BLAXCY is a policy-gated, self-verifying Linux desktop computer-use agent with action confirmation and state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alex3430143/blaxcyds/HEAD/README.md) |
+| [DesktopAgent (.NET 9)](https://github.com/alessiobianchini/DesktopAgent) | cross-platform, desktop, windows, macos, linux | — | — | Safety-first local desktop automation agent built on .NET 9 with cross-platform OS adapters, policy checks, and an MCP server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alessiobianchini/DesktopAgent/HEAD/README.md) |
+| [ITR Wala AI Agent](https://github.com/AIAnytime/itr-wala-ai-agent) | web | — | — | Terminal-driven browser agent that automates Indian income-tax-return preparation and portal filing with human review. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AIAnytime/itr-wala-ai-agent/main/README.md) |
+| [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [1Claw Browser Bridge](https://github.com/1clawAI/browser-bridge) | web | — | code Apache-2.0 | Governed credential-injection and browser-control bridge where AI agents operate authenticated sessions without seeing raw secrets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/1clawAI/browser-bridge/main/README.md) |
+| [AdvAgent (AdvWeb)](https://github.com/AI-secure/AdvWeb) | web | [2410.17401](https://arxiv.org/abs/2410.17401) (2024) | — | Black-box adversarial prompt-injection red-teaming framework for training and evaluating controllable attacks against VLM web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AI-secure/AdvWeb/HEAD/README.md) |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [Agentic Shopping Autopilot](https://github.com/AndriiShramko/agentic-shopping-autopilot) | web | — | code Apache-2.0 | Open-source e-commerce execution layer enabling Claude Code and Codex agents to search, checkout, and pay with user-bounded guardrails. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AndriiShramko/agentic-shopping-autopilot/main/README.md) |
+| [anpl1623 AgentOS](https://github.com/anpl1623/AgentOS) | cross-platform, desktop, windows, macos, linux | — | code MIT | Local-first open-source agent runtime for safely executing AI-driven tasks on a user's personal computer. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anpl1623/AgentOS/main/README.md) |
+| [bgivenb Typed UI Capabilities](https://github.com/bgivenb/computer-use-automation) | web, desktop | — | code MIT | Model-guided UI workflow discovery framework with signed human review and deterministic replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bgivenb/computer-use-automation/main/README.md) |
+| [BrowserRig](https://github.com/Castor6/BrowserRig) | web | — | code MIT | Open-source local driver enabling trusted AI agents to control an existing signed-in Chromium browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Castor6/BrowserRig/main/README.md) |
+| [DrishtiGuard](https://github.com/AtharvaSamant4/DrishtiGuard) | web, desktop | — | — | On-device visual privacy firewall that detects and masks sensitive screen regions before lightweight browser agents process frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AtharvaSamant4/DrishtiGuard/main/README.md) |
+| [HelpRelay WebMCP](https://github.com/AkiGarage/helprelay-webmcp) | web | — | code MIT | Dependency-free WebMCP collaboration runtime enabling human operators and browser agents to co-navigate web tasks safely. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AkiGarage/helprelay-webmcp/main/README.md) |
+| [Kryptic](https://github.com/adnqcr7-code/kryptic) | cross-platform, desktop, web | — | code MIT | Local-first AI engineering and browser-control agent runtime with bounded execution, verification, and self-repair. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/adnqcr7-code/kryptic/master/README.md) |
+| [Open Grok Bot](https://github.com/Anil-matcha/open-grok-bot) | cross-platform, desktop, web | — | — | Local-first AI agent workspace featuring governed computer use, approval gates, and multi-persona orchestration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anil-matcha/open-grok-bot/main/README.md) |
+| [Operant](https://github.com/AlpharomeroJL/operant) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | Local-first desktop agent runtime that compiles exploratory AI trajectories into deterministic, invariant-gated skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlpharomeroJL/operant/HEAD/README.md) |
 | [ORBIT framework](https://github.com/wlanderson0/orbit) | web, desktop | [2609.33102](https://arxiv.org/abs/2609.33102) (2026) | code Apache-2.0 | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md) |
 | [OS-Sentinel](https://github.com/OS-Copilot/OS-Sentinel) | desktop | [2510.24411](https://arxiv.org/abs/2510.24411) (2025) | code Apache-2.0 | Safety-checking environment and benchmark for mobile agents on AndroidWorld that judges proposed actions with rule-based and VLM-based checks, evaluated on the MobileRisk trajectory dataset. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/OS-Sentinel/HEAD/README.md) |
+| [PRAXOVELA](https://github.com/axisvela/praxovela-open) | cross-platform, desktop, windows, macos, linux | — | code Apache-2.0 | Governable, local-first desktop agent runtime with policy enforcement and auditable execution traces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/axisvela/praxovela-open/HEAD/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+| [Web Agent Proxy (WAP) SDK](https://github.com/52191314/Web-Agent-Proxy-SDK) | web | — | code MIT | Browser infrastructure SDK for AI agents with user-consent routing and end-to-end encrypted session relaying. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/52191314/Web-Agent-Proxy-SDK/HEAD/README.md) |
 
 ## Tools
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | web | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
+| [AstraClaw Agent Computer Use MCP](https://github.com/astraclawteam/agent-computer-use-mcp) | desktop, windows | — | code MIT | Evidence-driven Windows Computer Use MCP server providing semantic UI observation, secure screenshots, and verified actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/astraclawteam/agent-computer-use-mcp/HEAD/README.md) |
+| [Browser Bridge MCP](https://github.com/adbarc92/mcp-browser-bridge) | web | — | code MIT | MCP server giving AI assistants bounded control over a live Chrome browser through an 11-tool surface. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/adbarc92/mcp-browser-bridge/HEAD/README.md) |
+| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | web | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+
+## Infrastructure
+
+All entries in this section: desktop, linux, web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Agent Browser Shield](https://github.com/pixiebrix/agent-browser-shield) | — | — | Browser extension for filtering potentially unsafe agent input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/pixiebrix/agent-browser-shield/HEAD/README.md) |
-| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+| [Aegis (Hardened Computer-Use Sandbox)](https://github.com/ArihantDeva/Aegis) | — | code MIT | Aegis is an off-screen, capability-dropped Docker browser and desktop sandbox for isolating computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ArihantDeva/Aegis/HEAD/README.md) |
 
 ## Surveys
 

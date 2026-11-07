@@ -2,22 +2,22 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-34 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
+52 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (11)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
 
 ## Datasets
 
-All entries in this section: desktop.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [PSAI Computer Use Dataset](https://github.com/anaishowland/computeruse-data-psai) | cross-platform, desktop, web | — | — | code MIT | PSAI Computer Use Dataset provides 3,167 human-computer interaction trajectories with synchronized screen video, input events, and DOM/AX snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/computeruse-data-psai/HEAD/README.md) |
+| [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | desktop | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
 
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Apprentice](https://github.com/bluzername/apprentice) | desktop, macos | — | code Apache-2.0 | Apprentice is a local-first macOS agent that observes repeated user routines across allowlisted apps and replays them with click-by-click approval. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bluzername/apprentice/HEAD/README.md) |
 | [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
 
@@ -25,8 +25,16 @@ All entries in this section: desktop.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [19ska Computer-Use Automation](https://github.com/19ska/computer-use-automation) | web, desktop | — | — | Uses an LLM to discover a UI workflow once and compiles the trajectory into a deterministic replay script. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/19ska/computer-use-automation/main/README.md) |
+| [Agent Hands](https://github.com/Ashishkosana/agent-hands) | web, desktop | — | code MIT | Computer-use automation infrastructure for legacy financial software that compiles LLM-discovered UI flows into deterministic replays. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ashishkosana/agent-hands/main/README.md) |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
+| [bgivenb Typed UI Capabilities](https://github.com/bgivenb/computer-use-automation) | web, desktop | — | code MIT | Model-guided UI workflow discovery framework with signed human review and deterministic replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bgivenb/computer-use-automation/main/README.md) |
+| [Operant](https://github.com/AlpharomeroJL/operant) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | Local-first desktop agent runtime that compiles exploratory AI trajectories into deterministic, invariant-gated skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlpharomeroJL/operant/HEAD/README.md) |
+| [Protean](https://github.com/AIBrain-Mnemis/Protean) | cross-platform, desktop, web | — | code MIT | Protean turns everyday human desktop and browser demonstrations into reusable, adaptive agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AIBrain-Mnemis/Protean/HEAD/README.md) |
+| [Replay AI](https://github.com/bryansbtian/replay-ai) | cross-platform, desktop, web | — | — | Discovers UI workflows once using a local LLM and compiles the successful trajectory into a deterministic replay script. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bryansbtian/replay-ai/main/README.md) |
+| [rote](https://github.com/bhuvanb3110/rote) | web, desktop | — | — | Record-once, replay-many computer-use automation framework for legacy banking and back-office web applications lacking APIs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bhuvanb3110/rote/HEAD/README.md) |
 | [SeleniumBase](https://github.com/seleniumbase/SeleniumBase) | web | — | — | Python browser automation framework for web crawling, end-to-end testing and scraping, with a recorder that generates tests and stealth options. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/seleniumbase/SeleniumBase/b806f54ab0c998c90654b59a817d959f7ff7920c/README.md) |
+| [TraceFact](https://github.com/Alex0AI/tracefact) | cross-platform, desktop, web | — | code Apache-2.0 | Evidence-first reliability reporting and deterministic replay framework for coding and browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alex0AI/tracefact/main/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
 
 ## Tools
@@ -34,16 +42,22 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [Apache Maka](https://github.com/apache/maka) | desktop, macos | — | code Apache-2.0 | Apache Maka is an agent workspace for macOS that records verifiable execution traces across browser, terminal, and GUI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/apache/maka/HEAD/README.md) |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | web | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
+| [Captr for macOS](https://github.com/anaishowland/Captr_MacOS) | desktop, macos | — | code MIT | Captr for macOS records synchronized screen video, keyboard/mouse input, DOM snapshots, and macOS accessibility trees for CUA datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/Captr_MacOS/HEAD/README.md) |
+| [Captr for Windows](https://github.com/anaishowland/Captr_Windows) | desktop, windows | — | code MIT | Captr for Windows records synchronized screen video, mouse/keyboard events, DOM snapshots, and Windows accessibility trees for CUA datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/Captr_Windows/HEAD/README.md) |
+| [clickcast](https://github.com/AlexKay28/clickcast) | web | — | code MIT | Playwright browser automation, screenshot, and GIF/MP4/WebP session-recording toolkit and MCP server for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlexKay28/clickcast/HEAD/README.md) |
+| [Computer Use Data Collection](https://github.com/bobcoi03/computeruse-data-collection) | cross-platform, desktop, windows, macos, linux | — | code MIT | Computer Use Data Collection is a desktop recorder that captures synchronized screenshots, mouse clicks, and keystrokes for training CUA models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bobcoi03/computeruse-data-collection/HEAD/README.md) |
 | [Libretto](https://github.com/cashew-labs/libretto) | web | — | code MIT | Libretto is a toolkit that gives coding agents a live browser and CLI to inspect pages, record user actions, build scripts, and debug web integrations. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/cashew-labs/libretto/41ab782ccea765d7a9a3c9b56b1b2586723962e3/README.md) |
+| [MergeProof](https://github.com/bukacdan/MergeProof) | web | — | code MIT | Installable Agent Skill that records live browser verification demos and attaches them to pull requests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bukacdan/MergeProof/main/README.md) |
+| [Product Demo Video Skill](https://github.com/Afnanksalal/product-demo-video-skill) | web, desktop | — | code MIT | Codex and Claude Agent Skill that drives live web products in a browser to record truth-linked walkthrough demo videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Afnanksalal/product-demo-video-skill/main/README.md) |
 
 ## Infrastructure
 
-All entries in this section: web, desktop, windows, macos, linux.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | web, desktop, windows, macos, linux | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+| [Neo Lab](https://github.com/belarusian/neo-lab) | desktop, macos | — | code MIT | Neo Lab is a macOS computer-use sandbox for recording demonstrations, replaying skills, and testing GUI automation plans. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/belarusian/neo-lab/HEAD/README.md) |
 
 ## Products
 

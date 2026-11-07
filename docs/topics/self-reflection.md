@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-64 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+75 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (54)](#papers)
+**Contents:** [Models (3)](#models) · [Agents (8)](#agents) · [Frameworks (9)](#frameworks) · [Tools (1)](#tools) · [Papers (54)](#papers)
 
 ## Models
 
@@ -18,20 +18,36 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Anchor-Inference Daedalus](https://github.com/anchor-inference/daedalus) | desktop, macos, linux, web | — | code MIT | Self-developing personal AI agent with its own desktop app, persistent memory, and computer-use tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anchor-inference/daedalus/main/README.md) |
+| [BLAXCY](https://github.com/alex3430143/blaxcyds) | desktop, linux | — | code MIT | BLAXCY is a policy-gated, self-verifying Linux desktop computer-use agent with action confirmation and state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alex3430143/blaxcyds/HEAD/README.md) |
+| [Jcua (Jev Computer Use Agent)](https://github.com/1deat0r/Jcua) | cross-platform, desktop, linux, windows, macos | — | code MIT | Jcua is a cross-platform computer-use agent powered by Jev decision models across Linux, Windows, and macOS desktops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/1deat0r/Jcua/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| [Turan AI](https://github.com/aykutkrm67/turan-ai) | desktop, windows | — | — | Local multi-brain Windows AI desktop agent with visible computer control and verified action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aykutkrm67/turan-ai/main/README.md) |
 
 ## Frameworks
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
+| [Autonomous Evaluation and Refinement of Digital Agents](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Provides VLM evaluator and policy-refinement code for autonomous evaluation and filtered behavioral cloning on WebArena and AndroidInTheWild. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
+| [ENVS (Environment-Native Verified Search)](https://github.com/ArtysicistZ/ENVS) | desktop, web, linux | [2606.22948](https://arxiv.org/abs/2606.22948) (2026) | code Apache-2.0 | ENVS is a post-training and verified tree-search pipeline for long-horizon GUI agents operating in live desktop and web environments. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ArtysicistZ/ENVS/HEAD/README.md) |
+| [iOS Agent Harness](https://github.com/a178960320/ios-agent-harness) | ios | — | code MIT | iOS Agent Harness runs a Manager-Executor-Reflector GUI agent loop on iPhones to automate cross-app tasks from natural language. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/a178960320/ios-agent-harness/HEAD/README.md) |
+| [Kryptic](https://github.com/adnqcr7-code/kryptic) | cross-platform, desktop, web | — | code MIT | Local-first AI engineering and browser-control agent runtime with bounded execution, verification, and self-repair. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/adnqcr7-code/kryptic/master/README.md) |
+| [LongHorizon-Harness](https://github.com/AMAP-ML/LongHorizon-Harness) | desktop, macos, linux, windows | [2608.01964](https://arxiv.org/abs/2608.01964) (2026) | code MIT | LongHorizon-Harness wraps desktop and CLI agents in a persistent plan-act-verify-recover loop for multi-hour autonomous computer-use workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AMAP-ML/LongHorizon-Harness/HEAD/README.md) |
+| [Self-Healing Browser Agent](https://github.com/25andresbernal/self-healing-browser-agent) | web | — | code MIT | Combines Claude planning with Playwright execution and ranked selector fallback to self-heal broken web automation steps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/25andresbernal/self-healing-browser-agent/HEAD/README.md) |
+| [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
+
+All entries in this section: cross-platform, desktop, web, windows, macos, linux.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
-| [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| [Computer Use Studio Pro](https://github.com/666xiaoniuzi/computer-use-skill) | — | code MIT | Cross-agent skill for low-latency, verified desktop, browser, and window control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/666xiaoniuzi/computer-use-skill/HEAD/README.md) |
 
 ## Papers
 

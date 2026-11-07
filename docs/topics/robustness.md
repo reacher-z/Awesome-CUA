@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-211 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
+221 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (4)](#frameworks) · [Tools (6)](#tools) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,8 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Adversarial Web Agents](https://github.com/ChenWu98/agent-attack) | web | [2406.12814](https://arxiv.org/abs/2406.12814) (2024) | — | — | Evaluation resources for adversarial attacks on multimodal web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md) |
 | [B-MoCA](https://github.com/jylee425/b-moca) | android | — | [131 task-definition files](https://api.github.com/repos/jylee425/b-moca/git/trees/release/ver.3?recursive=1) · [35 environment configuration rows](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/asset/environments/config/environments_train.csv) | code Apache-2.0 | Mobile control benchmark with varied interface configurations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/readme.md) |
+| [Bellwether](https://github.com/al-mohad/bell-weather) | desktop, web | — | — | code Apache-2.0 | Bellwether measures multi-trial pass^k consistency of computer-use agents on legacy enterprise UI workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/al-mohad/bell-weather/HEAD/README.md) |
+| [BrowserAgentRegression](https://github.com/AlbertXXuu/BrowserAgentRegression) | web | — | — | code Apache-2.0 | Local-first regression testing benchmark for evaluating browser agents against controlled UI and DOM mutations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlbertXXuu/BrowserAgentRegression/main/README.md) |
 | [GUI-Robust](https://github.com/chessbean1/GUI-Robust) | cross-platform | [2506.14477](https://arxiv.org/abs/2506.14477) (2025) | — | — | Evaluation scripts and linked data for comparing GUI action predictions and task execution under ordinary and anomalous interface conditions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/chessbean1/GUI-Robust/HEAD/README.md) |
 | [GUIHalluBench](https://github.com/ant-research/GUIHalluBench) | cross-platform | — | [1,000 page-annotation entries](https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md) | — | Measures hallucination in UI-element parsing by matching the boxes and descriptions a model lists for 1,000 English and 1,000 Chinese screenshots against human annotations. | [✓ 2026‑10‑16](https://github.com/ant-research/GUIHalluBench) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
@@ -33,8 +35,23 @@ All entries in this section: cross-platform.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AdvAgent (AdvWeb)](https://github.com/AI-secure/AdvWeb) | web | [2410.17401](https://arxiv.org/abs/2410.17401) (2024) | — | Black-box adversarial prompt-injection red-teaming framework for training and evaluating controllable attacks against VLM web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AI-secure/AdvWeb/HEAD/README.md) |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [Self-Healing Browser Agent](https://github.com/25andresbernal/self-healing-browser-agent) | web | — | code MIT | Combines Claude planning with Playwright execution and ranked selector fallback to self-heal broken web automation steps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/25andresbernal/self-healing-browser-agent/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Browser Harness MCP](https://github.com/Arneld18/Browser-Harness-MCP) | — | code MIT | Lightweight, self-healing Model Context Protocol server for native LLM web browser automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Arneld18/Browser-Harness-MCP/HEAD/README.md) |
+| [GenPark Browser Bot-Defense Detector Skill](https://github.com/Alpha-Park/genpark-agentic-browser-bot-defense-detector-skill) | — | — | Agent skill for detecting Cloudflare challenges, CAPTCHAs, and anti-bot walls during Playwright and Browser-Use runs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-agentic-browser-bot-defense-detector-skill/main/README.md) |
+| [GenPark Self-Healing DOM Selector Skill](https://github.com/Alpha-Park/genpark-self-healing-dom-semantic-selector-skill) | — | — | Agent skill providing self-healing semantic DOM selectors resilient to CSS class and layout mutations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-self-healing-dom-semantic-selector-skill/main/README.md) |
+| [GenPark SPA Settlement Waiter Skill](https://github.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill) | — | — | Agent skill for awaiting single-page-application network idle and DOM mutation settlement before acting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill/main/README.md) |
+| [GenPark Viewport Occlusion Resolver Skill](https://github.com/Alpha-Park/genpark-visual-viewport-element-occlusion-resolver-skill) | — | — | Agent skill that detects viewport element occlusion and dismisses blocking modals or cookie banners before clicking. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-visual-viewport-element-occlusion-resolver-skill/main/README.md) |
+| [Selenium Self-Healing MCP Server](https://github.com/aiqualitylab/selenium-selfhealing-mcp) | — | code MIT | MCP server that diagnoses broken Selenium DOM locators after UI changes and synthesizes self-healing replacement selectors. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aiqualitylab/selenium-selfhealing-mcp/HEAD/README.md) |
 
 ## Surveys
 

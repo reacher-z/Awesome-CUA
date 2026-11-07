@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
+89 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (57)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (20)](#models) · [Agents (4)](#agents) · [Frameworks (6)](#frameworks) · [Papers (57)](#papers)
 
 ## Datasets
 
@@ -25,23 +25,38 @@
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |
 | [Holo3 35B-A3B](https://huggingface.co/Hcompany/Holo3-35B-A3B) | web, desktop, cross-platform | — | weights apache-2.0 | A sparse Qwen3.5-based GUI-action checkpoint released for navigation and computer-use workflows. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo3-35B-A3B/raw/main/README.md) |
 | [Holo4 35B-A3B BF16](https://huggingface.co/Hcompany/Holo4-35B-A3B) | desktop, web | — | weights apache-2.0 | A Qwen3.6-based computer-use checkpoint designed to request GUI actions, code execution and tool calls through an external agent harness. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo4-35B-A3B/raw/main/README.md) |
+| [kev-browser-use](https://github.com/arbazsiddiqui/kev-browser-use) | web | — | code Apache-2.0 | kev-browser-use is a compact 0.6B System-One action model fine-tuned on Mind2Web for low-latency browser element selection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/arbazsiddiqui/kev-browser-use/HEAD/README.md) |
+| [Laya-Android](https://github.com/Byun11/laya-android) | android | — | code Apache-2.0 | Laya-Android is a compact 322M on-device decision model for Android GUI action selection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Byun11/laya-android/HEAD/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
 | [PC-Agent-E checkpoint](https://huggingface.co/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | weights MIT | Computer-use checkpoint fine-tuned on PC-Agent-E trajectories; the model-card prose identifies Qwen2.5-VL-72B-Instruct as its starting model. | [✓ 2026‑10‑18](https://huggingface.co/henryhe0123/PC-Agent-E/raw/568ab45861d5dab041e158d47211c6f53ba343f2/README.md) |
 | [ScaleCUA 7B](https://huggingface.co/OpenGVLab/ScaleCUA-7B) | web, desktop, android, linux | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | weights apache-2.0 | A Qwen2.5-VL-based computer-use checkpoint with direct grounding and agent action modes across desktop, mobile and web interfaces. | [✓ 2026‑10‑17](https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md) |
 | [ShowUI-π checkpoint](https://huggingface.co/showlab/ShowUI-pi) | unspecified | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | A compact visual-action checkpoint that predicts continuous GUI drag trajectories from a screenshot and a natural-language instruction. | [✓ 2026‑10‑17](https://huggingface.co/showlab/ShowUI-pi/raw/main/README.md) |
+| [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Amazon Bedrock Minecraft Agent](https://github.com/build-on-aws/amazon-bedrock-minecraft-agent) | desktop | — | — | TypeScript agent built on Amazon Bedrock and Mineflayer that translates natural-language instructions into in-game Minecraft actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/build-on-aws/amazon-bedrock-minecraft-agent/HEAD/README.md) |
+| [Jev Browser Agent](https://github.com/amyivychoi/jev-browser-agent) | web | — | code MIT | Jev Browser Agent combines Browser Use DOM extraction, Jev System-One action selection, and deterministic browser harness execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amyivychoi/jev-browser-agent/HEAD/README.md) |
+| [Milli-Agent](https://github.com/Abdullah-Al-Raju/milli-agent) | desktop, windows, linux | — | — | Milli-Agent is a real-time computer-use agent architecture designed for high-frequency in-memory screen capture and low-latency actuation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Abdullah-Al-Raju/milli-agent/HEAD/README.md) |
+| [Open Interface](https://github.com/AmberSahdev/Open-Interface) | cross-platform, desktop, macos, windows, linux | — | code GPL-3.0 | Open Interface is a cross-platform desktop application that translates natural-language requests into GUI mouse and keyboard actions via LLMs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AmberSahdev/Open-Interface/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AeonMind agenthands](https://github.com/aeonmindai/agenthands) | web, desktop | — | code MIT | Human-calibrated mouse trajectory and keyboard timing synthesis library for browser and desktop agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aeonmindai/agenthands/main/README.md) |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [D-PoT evaluation code](https://github.com/sqzhang-lazy/D-PoT) | android | [2410.00467](https://arxiv.org/abs/2410.00467) (2024) | — | Offline prompting and evaluation code for Dynamic Planning of Thoughts on Android-in-the-Wild, including action extraction and comparison with reference actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md) |
+| [PreAct](https://github.com/19PINE-AI/PreAct) | desktop, web, macos, linux | [2606.17929](https://arxiv.org/abs/2606.17929) (2026) | — | PreAct compiles repeated computer-use agent trajectories into cached action graphs with lightweight visual verification to accelerate execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/19PINE-AI/PreAct/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
+| [VoltageInputMcp](https://github.com/casualkre/voltage-input-mcp) | desktop, windows, linux, macos | — | code MIT | Two-layer local input engine for MCP where a frontier planning model dispatches high-rate action programs to a local executor. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/casualkre/voltage-input-mcp/main/README.md) |
 
 ## Papers
 

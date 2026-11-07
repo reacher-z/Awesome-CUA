@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+91 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (8)](#frameworks) · [Tools (8)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
 
 ## Benchmarks
 
-All entries in this section: web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Agent-CE](https://github.com/anaishowland/agent-CE) | web, desktop, linux | — | — | code MIT | Agent-CE is a containerized continuous evaluation platform for benchmarking web browsing agents across reproducible task suites. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/agent-CE/HEAD/README.md) |
+| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | web | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
 
 ## Agents
 
@@ -20,24 +19,34 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Aether Agent Browser](https://github.com/AetherAI3/agent-browser) | — | code Apache-2.0 | Self-hosted Chrome agent runtime with bounded API control, live VNC observation, and human takeover. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AetherAI3/agent-browser/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Evidence Workspace](https://github.com/Anand-0038/evidence-workspace) | web | — | code MIT | Human-controlled WebMCP research workspace for reviewing source-backed claims gathered by browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anand-0038/evidence-workspace/main/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [ModCDP](https://github.com/browserbase/ModCDP) | web | — | — | ModCDP is Browserbase's framework for extending the Chrome DevTools Protocol with custom commands, events, and agent middlewares. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/browserbase/ModCDP/HEAD/README.md) |
 | [ORBIT framework](https://github.com/wlanderson0/orbit) | web, desktop | [2609.33102](https://arxiv.org/abs/2609.33102) (2026) | code Apache-2.0 | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md) |
+| [PRAXOVELA](https://github.com/axisvela/praxovela-open) | cross-platform, desktop, windows, macos, linux | — | code Apache-2.0 | Governable, local-first desktop agent runtime with policy enforcement and auditable execution traces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/axisvela/praxovela-open/HEAD/README.md) |
+| [Talox](https://github.com/AVANT-ICONIC/Talox) | web | — | code AGPL-3.0 | Talox is a stateful Playwright browser runtime for AI agents with stealth interaction, structured page state, and trace observability. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AVANT-ICONIC/Talox/HEAD/README.md) |
+| [TraceFact](https://github.com/Alex0AI/tracefact) | cross-platform, desktop, web | — | code Apache-2.0 | Evidence-first reliability reporting and deterministic replay framework for coding and browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alex0AI/tracefact/main/README.md) |
+| [WinWright](https://github.com/alegauss/winwright) | desktop, windows | — | code Apache-2.0 | Playwright-inspired Windows desktop automation and testing framework that drives native apps and reports verified UI state. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alegauss/winwright/main/README.md) |
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
-| [PhantomJS](https://github.com/ariya/phantomjs) | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
-| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Apache Maka](https://github.com/apache/maka) | desktop, macos | — | code Apache-2.0 | Apache Maka is an agent workspace for macOS that records verifiable execution traces across browser, terminal, and GUI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/apache/maka/HEAD/README.md) |
+| [BrowserTrace](https://github.com/aaronlab/browsertrace) | web | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+| [DevScope Bridge](https://github.com/15273/devscope-bridge) | web | — | code MIT | Local-first Chrome side panel and bridge connecting Claude Code, Cursor, and Codex to live browser DOM and console state. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/15273/devscope-bridge/main/README.md) |
+| [DevTools Lens MCP](https://github.com/aakcay5656/devtools-lens-mcp) | web | — | code MIT | Chrome DevTools Model Context Protocol server exposing console, network, DOM, and performance inspection to AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aakcay5656/devtools-lens-mcp/HEAD/README.md) |
+| [PhantomJS](https://github.com/ariya/phantomjs) | web | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
+| [Scavenge](https://github.com/aarohim24/Scavenge) | web | — | code Apache-2.0 | Deterministic web-field inspector that extracts and verifies single webpage values with cryptographic evidence for coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aarohim24/Scavenge/main/README.md) |
+| [ScreenWatch](https://github.com/abnsapkota001/screenwatch) | cross-platform, desktop, windows, macos, linux | — | code MIT | Python library for detecting persistent visual state changes and UI settlement in desktop applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/abnsapkota001/screenwatch/main/README.md) |
+| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | web | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
 
 ## Surveys
 

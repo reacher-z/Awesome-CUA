@@ -2,10 +2,10 @@
 
 Evidence snapshot through **2026-11-07T05:19:53Z**. Generated from committed source receipts.
 
-- 2,170 curated resources. Another 453 records await review with bibliographic metadata only; the active catalog file holds 2,623 records in all.
+- 2,470 curated resources. Another 453 records await review with bibliographic metadata only; the active catalog file holds 2,923 records in all.
 - 2,126 paper and survey records, including 2,112 arXiv identities and 14 publisher-only identities.
 - 3,420 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 6,084 discovery identifiers; 2,063 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 6,084 discovery identifiers; 2,023 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 375 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -16,18 +16,18 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 14 | 18 | 5 | 2 | 2 | 17 | 2 | · | 1 | 1 |
-| [benchmark](benchmarks.md) | 45 | 20 | 5 | 3 | 5 | 19 | 1 | · | 14 | 3 |
+| [agent](agents.md) | 39 | 45 | 20 | 16 | 14 | 20 | 3 | · | 9 | 1 |
+| [benchmark](benchmarks.md) | 62 | 28 | 5 | 3 | 7 | 20 | 1 | · | 15 | 4 |
 | [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
-| [dataset](datasets.md) | 25 | 18 | 4 | 2 | 7 | 35 | 2 | · | 15 | 7 |
-| [framework](frameworks.md) | 47 | 24 | 2 | 1 | 6 | 23 | 1 | 1 | 7 | 2 |
-| [infrastructure](infrastructures.md) | 6 | 10 | 1 | 2 | 4 | 3 | 1 | · | · | · |
-| [learning](learning.md) | 2 | · | · | · | · | · | · | · | · | · |
-| [model](models.md) | 28 | 24 | 5 | 4 | 6 | 24 | 4 | · | 47 | 2 |
+| [dataset](datasets.md) | 26 | 19 | 4 | 2 | 7 | 35 | 2 | · | 16 | 7 |
+| [framework](frameworks.md) | 106 | 71 | 18 | 18 | 25 | 28 | 5 | 1 | 29 | 7 |
+| [infrastructure](infrastructures.md) | 12 | 18 | 2 | 5 | 10 | 4 | 1 | · | 1 | · |
+| [learning](learning.md) | 6 | 3 | · | · | · | · | · | · | 3 | · |
+| [model](models.md) | 30 | 26 | 5 | 4 | 6 | 28 | 4 | · | 48 | 2 |
 | [paper](topics.md) | 647 | 237 | 40 | 18 | 24 | 222 | 12 | 3 | 109 | 587 |
 | [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 12 | 9 |
-| [tool](tools.md) | 19 | 6 | 5 | 4 | 3 | 5 | 2 | · | 1 | 3 |
+| [tool](tools.md) | 88 | 83 | 37 | 44 | 34 | 12 | 5 | · | 26 | 3 |
 
 ## Source snapshot coverage
 
@@ -35,32 +35,32 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 219 | 217 | 7 | 29 | 83 | OK · 2026-11-07 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 169 | 168 | 0 | 14 | 37 | OK · 2026-11-07 |
+| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 222 | 220 | 7 | 29 | 80 | OK · 2026-11-07 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 170 | 169 | 0 | 14 | 36 | OK · 2026-11-07 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 189 | 184 | 9 | 6 | 20 | OK · 2026-11-07 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 92 | 90 | 4 | 6 | 30 | OK · 2026-11-07 |
-| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 25 | 25 | 0 | 7 | 81 | OK · 2026-11-07 |
+| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 28 | 28 | 0 | 7 | 78 | OK · 2026-11-07 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 0 | 6 | OK · 2026-11-07 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 115 | 114 | 2 | 9 | 44 | OK · 2026-11-07 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 502 | 495 | 2 | 9 | 75 | RETIRED · 2026-11-05 |
-| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 68 | 68 | 1 | 2 | 23 | OK · 2026-11-07 |
-| [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 39 | 38 | 10 | 3 | 26 | OK · 2026-11-07 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 503 | 496 | 2 | 9 | 74 | RETIRED · 2026-11-05 |
+| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 69 | 69 | 1 | 2 | 22 | OK · 2026-11-07 |
+| [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 41 | 40 | 10 | 3 | 24 | OK · 2026-11-07 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 8 | 8 | 3 | 2 | 50 | OK · 2026-11-07 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 148 | 148 | 2 | 15 | 28 | OK · 2026-11-07 |
 | [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 545 | 489 | 471 | 0 | 45 | 11 | OK · 2026-11-07 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 86 | 84 | 6 | 7 | 45 | OK · 2026-11-07 |
 | [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 257 | 254 | 236 | 0 | 1 | 2 | OK · 2026-11-07 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 0 | 7 | OK · 2026-11-07 |
-| [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 26 | 26 | 0 | 3 | 11 | OK · 2026-11-07 |
-| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 187 | 186 | 9 | 6 | 45 | OK · 2026-11-07 |
+| [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 27 | 27 | 0 | 3 | 10 | OK · 2026-11-07 |
+| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 193 | 192 | 9 | 6 | 39 | OK · 2026-11-07 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 70 | 68 | 7 | 4 | 10 | OK · 2026-11-07 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 0 | 6 | OK · 2026-11-07 |
-| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 59 | 59 | 0 | 0 | 37 | OK · 2026-11-07 |
+| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 60 | 60 | 0 | 0 | 36 | OK · 2026-11-07 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 196 | 196 | 191 | 0 | 0 | 0 | OK · 2026-11-07 |
-| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 42 | 38 | 9 | 13 | 8 | OK · 2026-11-07 |
+| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 43 | 39 | 9 | 13 | 7 | OK · 2026-11-07 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 57 | 51 | 49 | 1 | 1 | 4 | OK · 2026-11-07 |
-| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 133 | 131 | 32 | 14 | 36 | OK · 2026-11-07 |
-| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 34 | 10 | 10 | 0 | 3 | 21 | OK · 2026-11-07 |
+| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 134 | 132 | 32 | 14 | 35 | OK · 2026-11-07 |
+| [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 34 | 12 | 12 | 0 | 3 | 19 | OK · 2026-11-07 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 2 | 11 | OK · 2026-11-07 |
 | [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 2 | 3 | OK · 2026-11-07 |
 | [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 9 | 9 | 0 | 1 | 5 | OK · 2026-11-07 |
@@ -87,25 +87,25 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 0 | 14 | OK · 2026-11-07 |
 | [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 35 | OK · 2026-11-07 |
 | [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 26 | 26 | 0 | 2 | 22 | OK · 2026-11-07 |
-| [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 20 | 15 | 3 | 0 | 9 | OK · 2026-11-07 |
+| [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 21 | 16 | 3 | 0 | 8 | OK · 2026-11-07 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 442 | 0 | 0 | 45 | OK · 2026-11-07 |
-| [trycua/acu — Awesome Computer Use](https://github.com/trycua/acu) | 156 | 104 | 103 | 3 | 2 | 47 | OK · 2026-11-07 |
+| [trycua/acu — Awesome Computer Use](https://github.com/trycua/acu) | 156 | 105 | 104 | 3 | 2 | 46 | OK · 2026-11-07 |
 | [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 238 | 234 | 8 | 0 | 88 | OK · 2026-11-07 |
 | [ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections](https://github.com/showlab/Awesome-Multimodal-Embodied-Agent) | 221 | 92 | 80 | 35 | 6 | 88 | OK · 2026-11-07 |
 | [Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | 205 | 160 | 156 | 38 | 2 | 5 | OK · 2026-11-07 |
-| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 120 | 43 | 43 | 0 | 0 | 77 | OK · 2026-11-07 |
+| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 120 | 56 | 56 | 0 | 0 | 64 | OK · 2026-11-07 |
 | [Agent-Tools/awesome-autonomous-web — browser-agent sections](https://github.com/Agent-Tools/awesome-autonomous-web) | 45 | 13 | 13 | 0 | 0 | 32 | OK · 2026-11-07 |
 | [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 7 | 7 | 0 | 0 | 37 | OK · 2026-11-07 |
-| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 84 | 84 | 0 | 11 | 26 | OK · 2026-11-07 |
+| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 85 | 85 | 0 | 11 | 25 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/dataset.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 74 | 52 | 52 | 2 | 4 | 16 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/framework.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 139 | 100 | 100 | 0 | 3 | 36 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/gui-testing.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 32 | 16 | 16 | 0 | 0 | 16 | OK · 2026-11-07 |
-| [LLM-Brained GUI Agents survey tables — data/models.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 97 | 66 | 64 | 4 | 1 | 26 | OK · 2026-11-07 |
+| [LLM-Brained GUI Agents survey tables — data/models.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 97 | 67 | 65 | 4 | 1 | 25 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/survey.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 40 | 15 | 5 | 6 | 1 | 18 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/virtual-assistant.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 19 | 7 | 7 | 0 | 0 | 12 | OK · 2026-11-07 |
 | [OSWorld-Verified leaderboard results](https://os-world.github.io) | 50 | 19 | 19 | 0 | 1 | 30 | OK · 2026-11-07 |
 | [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 19 | 19 | 5 | 3 | 62 | OK · 2026-11-07 |
-| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 10 | 10 | 2 | 1 | 32 | OK · 2026-11-07 |
+| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 11 | 11 | 2 | 1 | 31 | OK · 2026-11-07 |
 | [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 18 | 18 | 0 | 0 | 48 | OK · 2026-11-07 |
 | [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 33 | 30 | 4 | 0 | 46 | OK · 2026-11-07 |
 | [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 0 | 1 | OK · 2026-11-07 |
@@ -193,7 +193,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 204 |
+| code | 449 |
 | data | 61 |
 | weights | 56 |
 | document | 8 |

@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-231 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
+243 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (8)](#agents) · [Frameworks (9)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (11)](#agents) · [Frameworks (15)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Learning resources (1)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
 
 ## Benchmarks
 
-All entries in this section: ios.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [iOSWorld](https://github.com/ljang0/iOSWorld) | — | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | code Apache-2.0 | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [FlashAdventure](https://github.com/ahnjaewoo/FlashAdventure) | desktop, web | [2509.01052](https://arxiv.org/abs/2509.01052) (2025) | — | code MIT | FlashAdventure benchmarks GUI agents on solving complete story arcs across 34 Flash point-and-click adventure games requiring long-term memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ahnjaewoo/FlashAdventure/HEAD/README.md) |
+| [iOSWorld](https://github.com/ljang0/iOSWorld) | ios | — | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | code Apache-2.0 | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) |
 
 ## Datasets
 
@@ -26,27 +25,44 @@ All entries in this section: ios.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Agent S](https://github.com/simular-ai/Agent-S) | desktop | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025) | code Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/simular-ai/Agent-S/HEAD/README.md) |
+| [Anchor-Inference Daedalus](https://github.com/anchor-inference/daedalus) | desktop, macos, linux, web | — | code MIT | Self-developing personal AI agent with its own desktop app, persistent memory, and computer-use tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anchor-inference/daedalus/main/README.md) |
 | [AppAgent](https://github.com/TencentQQGYLab/AppAgent) | android | [2312.13771](https://arxiv.org/abs/2312.13771) (2023) | code MIT | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TencentQQGYLab/AppAgent/HEAD/README.md) |
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |
+| [avids2 Jarvis](https://github.com/AVIDS2/jarvis) | desktop, macos, windows | — | code MIT | Real-time Chinese voice and desktop agent with persistent memory and Pi tool execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AVIDS2/jarvis/main/README.md) |
 | [Cradle](https://github.com/BAAI-Agents/Cradle) | desktop | [2403.03186](https://arxiv.org/abs/2403.03186) (2024) | code MIT | Framework in which foundation models control games and software from screenshots alone, acting through keyboard and mouse, shown on RDR2, Stardew Valley, Cities: Skylines and Dealer's Life 2. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/BAAI-Agents/Cradle/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [MobileGPT](https://github.com/fclab-skku/MobileGPT) | android | [2312.03003](https://arxiv.org/abs/2312.03003) (2023) | code Apache-2.0 | An Android client and Python-server agent that learns reusable app subtasks through exploration, selection, derivation and memory recall. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/README.md) |
+| [POK-Agent](https://github.com/Acekorneya/POK-Agent) | desktop, windows | — | code Apache-2.0 | POK-Agent is a Windows computer-use agent that pairs a cloud planner with a fast local actor and caches repeated UI workflows as skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Acekorneya/POK-Agent/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [A-MEM](https://github.com/agiresearch/A-mem) | unspecified | — | code MIT | A-MEM implements a Zettelkasten-inspired dynamic memory architecture that links and evolves structured episodic notes for LLM agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/agiresearch/A-mem/HEAD/README.md) |
 | [Agent Workflow Memory implementation](https://github.com/zorazrw/agent-workflow-memory) | web | [2409.07429](https://arxiv.org/abs/2409.07429) (2024) | code Apache-2.0 | Research code that extracts reusable browser-task routines from demonstrations or prior executions, stores them as workflow memory and reuses them during subsequent navigation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zorazrw/agent-workflow-memory/HEAD/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
 | [ConnectOnion](https://github.com/openonion/connectonion) | web | — | code Apache-2.0 | ConnectOnion is a CLI and Python framework that gives agents commands for connected accounts, a logged-in browser, files, and chat apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/openonion/connectonion/9f80e63689da990cd423f8996960177a871f534a/README.md) |
 | [LiteWebAgent](https://github.com/PathOnAIOrg/LiteWebAgent) | web | [2503.02950](https://arxiv.org/abs/2503.02950) (2025) | code Apache-2.0 | Modular web-agent framework with browser control, planning, workflow memory, and tree-search components, plus web and extension interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/PathOnAI/LiteWebAgent/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| [OpenMemory (LongMemory)](https://github.com/CaviraOSS/OpenMemory) | unspecified | — | code Apache-2.0 | OpenMemory provides local-first temporal graph memory, decay scoring, and MCP integration for long-horizon AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/CaviraOSS/OpenMemory/HEAD/README.md) |
+| [PreAct](https://github.com/19PINE-AI/PreAct) | desktop, web, macos, linux | [2606.17929](https://arxiv.org/abs/2606.17929) (2026) | — | PreAct compiles repeated computer-use agent trajectories into cached action graphs with lightweight visual verification to accelerate execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/19PINE-AI/PreAct/HEAD/README.md) |
+| [Protean](https://github.com/AIBrain-Mnemis/Protean) | cross-platform, desktop, web | — | code MIT | Protean turns everyday human desktop and browser demonstrations into reusable, adaptive agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AIBrain-Mnemis/Protean/HEAD/README.md) |
+| [ReMe](https://github.com/agentscope-ai/ReMe) | unspecified | — | code Apache-2.0 | ReMe is a local-first personal knowledge and procedural memory management framework for autonomous LLM agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/agentscope-ai/ReMe/HEAD/README.md) |
 | [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [SimpleMem](https://github.com/aiming-lab/SimpleMem) | unspecified | — | code MIT | SimpleMem provides semantic lossless memory compression and multimodal retrieval for long-horizon LLM and desktop/CLI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aiming-lab/SimpleMem/HEAD/README.md) |
 | [SwitchMem](https://github.com/dmis-lab/SwitchMem) | android | [2610.17928](https://arxiv.org/abs/2610.17928) (2026) | — | Memory-routing implementation that chooses text or image demonstrations for a frozen GUI actor, with offline evaluation and Android transfer experiments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/dmis-lab/SwitchMem/HEAD/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Webcmd](https://github.com/agentrhq/webcmd) | — | code Apache-2.0 | Webcmd captures and indexes website navigational context as agents browse, compiling site structure into reusable local memory skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/agentrhq/webcmd/HEAD/README.md) |
 
 ## Infrastructure
 
@@ -55,6 +71,14 @@ All entries in this section: desktop.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [AIOS](https://github.com/agiresearch/AIOS) | — | — | AIOS is an agent operating system whose computer-use architecture provides a virtual machine controller and MCP server for agents interacting with graphical computer environments. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agiresearch/AIOS/292d98f78c835499df18cdb6de6325bba1895862/README.md) |
+
+## Learning resources
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [learn-workbuddy](https://github.com/adongwanai/learn-workbuddy) | code MIT | 24-chapter bilingual Python engineering course building a WorkBuddy-style desktop AI agent harness from scratch. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/adongwanai/learn-workbuddy/HEAD/README.md) |
 
 ## Surveys
 

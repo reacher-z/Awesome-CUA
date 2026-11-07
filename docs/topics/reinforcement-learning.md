@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-314 source-reviewed resources tagged `reinforcement-learning`. Curated metadata; unknown facts are shown as —.
+317 source-reviewed resources tagged `reinforcement-learning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (20)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (260)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (5)](#datasets) · [Models (23)](#models) · [Frameworks (23)](#frameworks) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (260)](#papers)
 
 ## Benchmarks
 
@@ -58,11 +58,14 @@ All entries in this section: web.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
+| [AutoCoA](https://github.com/ADaM-BJTU/AutoCoA) | unspecified | — | code MIT | AutoCoA internalizes Chain-of-Action generation into reasoning models via step-level SFT, reinforcement learning, and simulated tool world models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ADaM-BJTU/AutoCoA/HEAD/README.md) |
+| [Autonomous Evaluation and Refinement of Digital Agents](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Provides VLM evaluator and policy-refinement code for autonomous evaluation and filtered behavioral cloning on WebArena and AndroidInTheWild. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
 | [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) | cross-platform | [2604.11784](https://arxiv.org/abs/2604.11784) (2026) | code Apache-2.0 | Framework for GUI agent training, evaluation, and deployment. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-REAL/ClawGUI/HEAD/README.md) |
 | [ComputerRL](https://github.com/THUDM/ComputerRL) | desktop | [2508.14040](https://arxiv.org/abs/2508.14040) (2025) | code Apache-2.0 | Reinforcement-learning infrastructure for computer-use agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/ComputerRL/HEAD/README.md) |
 | [Digi-Q](https://github.com/DigiRL-agent/digiq) | android | [2502.15760](https://arxiv.org/abs/2502.15760) (2025) | — | Offline device-control training code that learns action values and uses them to select promising actions, with linked trajectories and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digiq/HEAD/README.md) |
 | [DigiRL](https://github.com/DigiRL-agent/digirl) | android | [2406.11896](https://arxiv.org/abs/2406.11896) (2024) | code Apache-2.0 | Reinforcement learning for autonomous mobile device control. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digirl/HEAD/README.md) |
 | [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |
+| [ENVS (Environment-Native Verified Search)](https://github.com/ArtysicistZ/ENVS) | desktop, web, linux | [2606.22948](https://arxiv.org/abs/2606.22948) (2026) | code Apache-2.0 | ENVS is a post-training and verified tree-search pipeline for long-horizon GUI agents operating in live desktop and web environments. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ArtysicistZ/ENVS/HEAD/README.md) |
 | [GroundGUI training and evaluation code](https://github.com/PrentisAI/GroundGUI) | desktop, web, cross-platform | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | code Apache-2.0 | Code for screenshot grounding through supervised training, teacher-guided distillation, reinforcement learning, and benchmark evaluation. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/PrentisAI/GroundGUI/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
 | [HUD](https://github.com/hud-evals/hud-python) | web, desktop | — | code MIT | SDK for RL environments and evals spanning coding, browser, computer-use and robotics agents, whose environments expose SSH, MCP, CDP or VNC capabilities behind a minimal start-and-grade protocol. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/hud-evals/hud-python/HEAD/README.md) |

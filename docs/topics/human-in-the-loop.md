@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-115 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+137 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (7)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Papers (103)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (14)](#agents) · [Frameworks (10)](#frameworks) · [Tools (9)](#tools) · [Papers (103)](#papers)
 
 ## Benchmarks
 
@@ -18,29 +18,49 @@ All entries in this section: android.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Aether Agent Browser](https://github.com/AetherAI3/agent-browser) | web | — | code Apache-2.0 | Self-hosted Chrome agent runtime with bounded API control, live VNC observation, and human takeover. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AetherAI3/agent-browser/HEAD/README.md) |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | desktop, linux, web | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
+| [Aider](https://github.com/aider-ai/aider) | cross-platform, desktop, web | — | code Apache-2.0 | Aider is an AI pair-programming CLI and browser agent that maps repositories, edits multi-file codebases, and runs linters and test suites. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aider-ai/aider/HEAD/README.md) |
+| [Apprentice](https://github.com/bluzername/apprentice) | desktop, macos | — | code Apache-2.0 | Apprentice is a local-first macOS agent that observes repeated user routines across allowlisted apps and replays them with click-by-click approval. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bluzername/apprentice/HEAD/README.md) |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
+| [ITR Wala AI Agent](https://github.com/AIAnytime/itr-wala-ai-agent) | web | — | — | Terminal-driven browser agent that automates Indian income-tax-return preparation and portal filing with human review. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AIAnytime/itr-wala-ai-agent/main/README.md) |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
 | [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
 | [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| [Page Agent](https://github.com/alibaba/page-agent) | web | — | code MIT | Page Agent is an in-page JavaScript GUI agent by Alibaba that controls web interfaces from natural language via DOM dehydration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alibaba/page-agent/HEAD/README.md) |
+| [TalkAct](https://github.com/19PINE-AI/TalkAct) | desktop, macos, web | — | code MIT | TalkAct is a dual-model voice and computer-use agent that conducts real-time spoken dialogue while executing background GUI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/19PINE-AI/TalkAct/HEAD/README.md) |
+| [Thursday](https://github.com/cgoinglove/thursday) | cross-platform, desktop, web | — | code MIT | Thursday is a voice-driven computer assistant that delegates background web-browsing and desktop automation tasks to Playwright sub-agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cgoinglove/thursday/HEAD/README.md) |
 | [Yunkai](https://github.com/solplum/yunkai) | android | — | code MIT | Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [1Claw Browser Bridge](https://github.com/1clawAI/browser-bridge) | web | — | code Apache-2.0 | Governed credential-injection and browser-control bridge where AI agents operate authenticated sessions without seeing raw secrets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/1clawAI/browser-bridge/main/README.md) |
+| [Agentic Shopping Autopilot](https://github.com/AndriiShramko/agentic-shopping-autopilot) | web | — | code Apache-2.0 | Open-source e-commerce execution layer enabling Claude Code and Codex agents to search, checkout, and pay with user-bounded guardrails. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AndriiShramko/agentic-shopping-autopilot/main/README.md) |
+| [Commonplace WebMCP](https://github.com/arterialist/webmcp-openai-hackathon) | web | — | code MIT | WebMCP-enabled reading and publishing workspace designed for shared control between human users and browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/arterialist/webmcp-openai-hackathon/main/README.md) |
 | [ConnectOnion](https://github.com/openonion/connectonion) | web | — | code Apache-2.0 | ConnectOnion is a CLI and Python framework that gives agents commands for connected accounts, a logged-in browser, files, and chat apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/openonion/connectonion/9f80e63689da990cd423f8996960177a871f534a/README.md) |
+| [Evidence Workspace](https://github.com/Anand-0038/evidence-workspace) | web | — | code MIT | Human-controlled WebMCP research workspace for reviewing source-backed claims gathered by browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anand-0038/evidence-workspace/main/README.md) |
+| [HelpRelay WebMCP](https://github.com/AkiGarage/helprelay-webmcp) | web | — | code MIT | Dependency-free WebMCP collaboration runtime enabling human operators and browser agents to co-navigate web tasks safely. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AkiGarage/helprelay-webmcp/main/README.md) |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
+| [Open Grok Bot](https://github.com/Anil-matcha/open-grok-bot) | cross-platform, desktop, web | — | — | Local-first AI agent workspace featuring governed computer use, approval gates, and multi-persona orchestration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anil-matcha/open-grok-bot/main/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
+| [Web Agent Proxy (WAP) SDK](https://github.com/52191314/Web-Agent-Proxy-SDK) | web | — | code MIT | Browser infrastructure SDK for AI agents with user-consent routing and end-to-end encrypted session relaying. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/52191314/Web-Agent-Proxy-SDK/HEAD/README.md) |
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent360 Browser MCP](https://github.com/Agent360dk/browser-mcp) | web | — | code MIT | Human-in-the-loop browser MCP server that pauses for user 2FA, CAPTCHA, or confirmation prompts before resuming agent execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Agent360dk/browser-mcp/HEAD/README.md) |
+| [Agentrooms](https://github.com/baryhuang/claude-code-by-agents) | desktop, macos, ios | — | code MIT | Agentrooms is a native macOS and iOS application for coordinating multiple local and remote coding agents in shared multi-agent workspaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/baryhuang/claude-code-by-agents/HEAD/README.md) |
+| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | web | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+| [browser-copilot](https://github.com/alexmercier25/browser-copilot) | desktop, macos, web | — | code MIT | Lets AI agents drive the user's actual macOS browser window and logged-in tabs with interactive confirmation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alexmercier25/browser-copilot/HEAD/README.md) |
+| [Deskfish](https://github.com/0x11c11e/deskfish) | cross-platform, desktop, linux, macos, windows | — | code Apache-2.0 | Deskfish is a VS Code extension that gives AI agents an isolated virtual desktop container viewable and steerable inside the editor. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/0x11c11e/deskfish/HEAD/README.md) |
+| [Hermes Browser Extension](https://github.com/catcaptions/hermes-extension) | web | — | code MIT | Browser side-panel extension for Hermes Agent enabling the agent to observe and drive active Chrome tabs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/catcaptions/hermes-extension/master/README.md) |
+| [Mac MCP (Menu Bar & Local Server)](https://github.com/bulutarkan/mac-mcp) | desktop, macos | — | code MIT | macOS menu-bar application and local MCP server enabling Claude, ChatGPT, and Codex to inspect and control Mac apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bulutarkan/mac-mcp/HEAD/README.md) |
+| [quimera-ai](https://github.com/bgmacris/quimera-ai) | web | — | code MIT | Real-time shared Chrome browser workspace between a human user and Claude Code over CDP and Playwright MCP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bgmacris/quimera-ai/HEAD/README.md) |
+| [Self-Hosted Cloud Browser MCP](https://github.com/BK927/cloud-browser-mcp) | web, desktop, linux | — | code MIT | Self-hosted Chromium MCP server with isolated browser profiles, OAuth authentication, and human takeover support. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/BK927/cloud-browser-mcp/main/README.md) |
 
 ## Papers
 

@@ -2,9 +2,18 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-29 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+31 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Surveys (28)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Learning resources (2)](#learning-resources) · [Surveys (28)](#surveys) · [Papers (1)](#papers)
+
+## Learning resources
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Awesome AI Agent Platforms](https://github.com/Agenta-AI/awesome-ai-agent-platforms) | — | Curated directory of open-source AI agent platforms, digital coworkers, and browser/desktop execution harnesses. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Agenta-AI/awesome-ai-agent-platforms/main/README.md) |
+| [Awesome GPT-6 Astra](https://github.com/archorfight/awesome-gpt-6-astra) | — | Evidence-linked catalog of computer-use demos, evaluations, and agent workflows with primary source receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/archorfight/awesome-gpt-6-astra/main/README.md) |
 
 ## Surveys
 

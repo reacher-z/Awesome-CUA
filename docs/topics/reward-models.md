@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-84 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+86 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [AgentRewardBench](https://github.com/McGill-NLP/agent-reward-bench) · [leaderboard](https://huggingface.co/spaces/McGill-NLP/agent-reward-bench-leaderboard) | web | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | [1,302 trajectories](https://export.arxiv.org/api/query?search_query=%28ti%3A%22computer+use%22+OR+ti%3A%22computer-use%22+OR+ti%3A%22GUI+agent%22+OR+ti%3A%22GUI+agents%22+OR+ti%3A%22GUI+grounding%22+OR+ti%3A%22web+agents%22+OR+ti%3A%22browser+agent%22%29+AND+submittedDate%3A%5B200001010000+TO+202610160636%5D&start=700&max_results=100&sortBy=submittedDate&sortOrder=descending) | data Custom AgentRewardBench Terms of Use | A benchmark and evaluation toolkit for comparing automatic web-agent judges against expert judgments of task success, side effects and repetition. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/agent-reward-bench/HEAD/README.md) |
 | [CUAVerifierBench](https://huggingface.co/datasets/microsoft/CUAVerifierBench) | web | [2604.06240](https://arxiv.org/abs/2604.06240) (2026) | [106 trajectories](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) · [215 annotation rows](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) | data mit | Human-annotated browser-agent trajectories for comparing automated task-success and process-quality verifiers against reviewer judgments. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md) |
+| [LLM as a Judge for Computer-Use Agents](https://github.com/anaishowland/llm-judge-psai) | web, desktop | — | — | code MIT | LLM-as-a-Judge evaluation harness for assessing computer-use agent trajectories across web browsing and desktop interaction tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/llm-judge-psai/HEAD/README.md) |
 | [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
 | [WebRewardBench](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [776 rows](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) | — | An offline preference-evaluation set for web process reward models, pairing page and trajectory context with preferred and rejected candidate decisions. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) |
 
@@ -34,12 +35,11 @@
 
 ## Frameworks
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
-| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Autonomous Evaluation and Refinement of Digital Agents](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Provides VLM evaluator and policy-refinement code for autonomous evaluation and filtered behavioral cloning on WebArena and AndroidInTheWild. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
+| [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
+| [VEM GUI-Agent-RL](https://github.com/microsoft/GUI-Agent-RL) | android | [2502.18906](https://arxiv.org/abs/2502.18906) (2025) | code MIT | Training code that learns a value environment model from offline Android interaction data and uses its frozen value estimates to guide GUI policy optimization. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/microsoft/GUI-Agent-RL/HEAD/README.md) |
 
 ## Tools
 

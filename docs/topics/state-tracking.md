@@ -2,17 +2,40 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+89 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Frameworks (7)](#frameworks) · [Tools (5)](#tools) · [Papers (75)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Action Check WebMCP](https://github.com/ajaknumber4/action-check-webmcp) | — | — | code MIT | External state-verification benchmark testing whether WebMCP browser tools actually produced their claimed DOM and backend effects. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ajaknumber4/action-check-webmcp/main/README.md) |
+| [Graph-Guided Agentic Testing](https://github.com/avikundal/graph-guided-agentic-testing) | — | — | code MIT | Uses a browser agent to explore web checkout flows into a Neo4j state graph and synthesizes graph-guided end-to-end tests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/avikundal/graph-guided-agentic-testing/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Active Desktop Context Engine](https://github.com/amirf147/active-desktop-context-engine) | desktop, windows | — | code Apache-2.0 | Zero-cloud Windows OS perception layer and Model Context Protocol server streaming real-time desktop UI context to AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amirf147/active-desktop-context-engine/master/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
+| [ESP (Echo-Skeleton Perception)](https://github.com/Badtheorylabs/esp) | cross-platform, desktop, web | — | — | Stateful, event-driven screen-perception runtime that converts UI changes into compact text events for text-only computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Badtheorylabs/esp/HEAD/README.md) |
+| [SameState WebMCP](https://github.com/breeznik/samestate-webmcp) | web | — | code MIT | WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
+| [Talox](https://github.com/AVANT-ICONIC/Talox) | web | — | code AGPL-3.0 | Talox is a stateful Playwright browser runtime for AI agents with stealth interaction, structured page state, and trace observability. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AVANT-ICONIC/Talox/HEAD/README.md) |
 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AH64-dll Browser Automation Toolkit](https://github.com/AH64-dll/browser-automation-toolkit) | web | — | code MIT | Suite of five Python CDP utilities including a page watcher, form filler, table scraper, DOM change differ, and health checker. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AH64-dll/browser-automation-toolkit/main/README.md) |
+| [AXTree API](https://github.com/amaar-mc/axtree-api) | desktop, macos | — | code MIT | Event-driven macOS Accessibility tree streaming server and action bridge for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amaar-mc/axtree-api/HEAD/README.md) |
+| [GenPark SPA Settlement Waiter Skill](https://github.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill) | web | — | — | Agent skill for awaiting single-page-application network idle and DOM mutation settlement before acting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill/main/README.md) |
+| [OSWright](https://github.com/Ask-812/oswright) | desktop, windows | — | code MIT | Windows desktop automation MCP server using incremental UI Automation state diffs rather than full-screen vision loops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ask-812/oswright/HEAD/README.md) |
+| [ScreenWatch](https://github.com/abnsapkota001/screenwatch) | cross-platform, desktop, windows, macos, linux | — | code MIT | Python library for detecting persistent visual state changes and UI settlement in desktop applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/abnsapkota001/screenwatch/main/README.md) |
 
 ## Papers
 

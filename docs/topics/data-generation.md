@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-429 source-reviewed resources tagged `data-generation`. Curated metadata; unknown facts are shown as —.
+439 source-reviewed resources tagged `data-generation`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (55)](#datasets) · [Models (2)](#models) · [Agents (1)](#agents) · [Frameworks (22)](#frameworks) · [Tools (2)](#tools) · [Papers (347)](#papers)
+**Contents:** [Datasets (56)](#datasets) · [Models (2)](#models) · [Agents (2)](#agents) · [Frameworks (23)](#frameworks) · [Tools (9)](#tools) · [Papers (347)](#papers)
 
 ## Datasets
 
@@ -52,6 +52,7 @@
 | [OS-Genesis mobile training data](https://huggingface.co/datasets/OS-Copilot/OS-Genesis-mobile-data) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | — | data mit | Reverse-task-synthesis mobile trajectories released in separate AndroidControl and AndroidWorld training annotation files. | [✓ 2026‑10‑17](https://huggingface.co/datasets/OS-Copilot/OS-Genesis-mobile-data/raw/main/README.md) |
 | [PC-Agent-E training data](https://huggingface.co/datasets/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | — | data MIT | Released dataset used to train PC-Agent-E, linked by the official pipeline for refining human trajectories and synthesizing action reasoning. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
 | [Plan-and-Act training data](https://huggingface.co/datasets/xTRam1/plan-and-act-data) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | — | data mit | Planner and action-executor training examples for WebArena-Lite and WebVoyager, with model-specific processed files and raw trajectory annotations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xTRam1/plan-and-act-data/raw/main/README.md) |
+| [PSAI Computer Use Dataset](https://github.com/anaishowland/computeruse-data-psai) | cross-platform, desktop, web | — | — | code MIT | PSAI Computer Use Dataset provides 3,167 human-computer interaction trajectories with synchronized screen video, input events, and DOM/AX snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/computeruse-data-psai/HEAD/README.md) |
 | [RoTS](https://github.com/AlibabaResearch/RoTS) | cross-platform | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
 | [ScaleCUA Data](https://huggingface.co/datasets/OpenGVLab/ScaleCUA-Data) | cross-platform | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | [6 platform categories](https://huggingface.co/datasets/OpenGVLab/ScaleCUA-Data/raw/main/README.md) | — | Cross-platform training data released with ScaleCUA, with grounding and navigation annotations for Ubuntu, Windows, macOS, Android, iPhone and web screenshots. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/OpenGVLab/ScaleCUA-Data) |
 | [ScreenRef](https://huggingface.co/datasets/PrentisAI/ScreenRef) | desktop, web, android, linux | [2610.19100](https://arxiv.org/abs/2610.19100) (2026) | [585,981 distinct screenshots](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) · [633,369 annotation rows](https://huggingface.co/datasets/PrentisAI/ScreenRef-Annotations/raw/main/README.md) | data other | GUI screenshots paired with localization instructions and targets, including absent-target examples; image access is gated under publisher terms. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/PrentisAI/ScreenRef) |
@@ -75,11 +76,10 @@
 
 ## Agents
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [AutoDroid V2](https://github.com/MobileLLM/AutoDroid-V2) | [2412.18116](https://arxiv.org/abs/2412.18116) (2024) | — | An Android automation implementation that builds app documentation from exploration traces and evaluates language-model-generated execution code in emulator workflows. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MobileLLM/AutoDroid-V2/HEAD/README_minimal.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AutoDroid V2](https://github.com/MobileLLM/AutoDroid-V2) | android | [2412.18116](https://arxiv.org/abs/2412.18116) (2024) | — | An Android automation implementation that builds app documentation from exploration traces and evaluates language-model-generated execution code in emulator workflows. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MobileLLM/AutoDroid-V2/HEAD/README_minimal.md) |
+| [BrowserPilot](https://github.com/ai-naymul/BrowserPilot) | web | — | code MIT | BrowserPilot is an open-source stealth browser agent that executes natural-language web navigation and structured scraping workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ai-naymul/BrowserPilot/HEAD/README.md) |
 
 ## Frameworks
 
@@ -106,6 +106,7 @@ All entries in this section: android.
 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 | [WebRL](https://github.com/THUDM/WebRL) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | Training pipeline that evolves web tasks from prior attempts and uses an outcome reward model to refine browser policies. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/THUDM/WebRL/HEAD/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
+| [Worldline](https://github.com/Artemyx-DataScientist/Worldline) | web | — | — | Modular, user-controlled AI browser kernel for structured web parsing, navigation, and workflow automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Artemyx-DataScientist/Worldline/master/README.md) |
 | [ZeroGUI](https://github.com/OpenGVLab/ZeroGUI) | cross-platform | [2505.23762](https://arxiv.org/abs/2505.23762) (2025) | code Apache-2.0 | Online RL framework for GUI agents in which VLMs generate the training tasks and judge success from trajectory screenshots, with OSWorld and AndroidLab checkpoints trained from UI-TARS-7B-DPO. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenGVLab/ZeroGUI/HEAD/README.md) |
 
 ## Tools
@@ -113,6 +114,13 @@ All entries in this section: android.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [AntiBrow Recipes](https://github.com/antibrow/recipes) | web | — | code MIT | Task-level website adapters for the AntiBrow stealth browser returning structured JSON from single commands. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/antibrow/recipes/main/README.md) |
+| [Ausca MCP Services](https://github.com/auscahq/ausca) | web | — | code MIT | Model Context Protocol services and APIs for AI agents covering document OCR and browser data extraction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/auscahq/ausca/main/README.md) |
+| [Captr for macOS](https://github.com/anaishowland/Captr_MacOS) | desktop, macos | — | code MIT | Captr for macOS records synchronized screen video, keyboard/mouse input, DOM snapshots, and macOS accessibility trees for CUA datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/Captr_MacOS/HEAD/README.md) |
+| [Captr for Windows](https://github.com/anaishowland/Captr_Windows) | desktop, windows | — | code MIT | Captr for Windows records synchronized screen video, mouse/keyboard events, DOM snapshots, and Windows accessibility trees for CUA datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/Captr_Windows/HEAD/README.md) |
+| [Computer Use Data Collection](https://github.com/bobcoi03/computeruse-data-collection) | cross-platform, desktop, windows, macos, linux | — | code MIT | Computer Use Data Collection is a desktop recorder that captures synchronized screenshots, mouse clicks, and keystrokes for training CUA models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bobcoi03/computeruse-data-collection/HEAD/README.md) |
+| [gsearch-rs](https://github.com/Be90nia/gsearch-rs) | cross-platform, desktop, web | — | code MIT | Single-binary zero-extension Rust CLI driving local Chrome for AI-first web search and page extraction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Be90nia/gsearch-rs/main/README.md) |
+| [SpiderCreator](https://github.com/carlosplanchon/spidercreator) | web | — | code AGPL-3.0 | SpiderCreator records browser interactions and DOM snapshots to automatically synthesize executable Playwright web-scraping spiders with LLMs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/carlosplanchon/spidercreator/HEAD/README.md) |
 | [UI Defect Mocker](https://github.com/ZJU-ACES-ISE/UIDefectMocker) | android | — | code MIT | Synthesizes visual UI defects from mobile screenshots and Android layout metadata to support GUI-testing experiments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ZJU-ACES-ISE/UIDefectMocker/HEAD/README.md) |
 
 ## Papers

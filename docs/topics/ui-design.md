@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+62 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Papers (54)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,7 @@ All entries in this section: web.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [UserZero](https://github.com/aafre/userzero) | — | — | code MIT | Synthetic first-user evaluation harness that verifies web applications by attempting onboarding and core flows with AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aafre/userzero/master/README.md) |
 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
@@ -21,6 +22,21 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [flutter_copilot](https://github.com/anasfik/flutter_copilot) | android, ios, web, desktop | — | code MIT | In-app SDK that exposes Flutter widget trees and semantic actions directly to AI agents without screenshots or OCR. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anasfik/flutter_copilot/HEAD/README.md) |
+| [SameState WebMCP](https://github.com/breeznik/samestate-webmcp) | web | — | code MIT | WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | cross-platform, desktop, web | — | code MIT | Vision toolkit and skill pack equipping text-only LLMs with multi-image reading, UI reconstruction, and GUI automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anionex/agent-vision-toolkit/HEAD/README.md) |
+| [Pi Desktop for Windows](https://github.com/AYOUYI/pi-desktop-for-windows) | desktop, windows | — | code MIT | Native Windows desktop GUI client and workspace for the Pi coding and computer-use agent. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AYOUYI/pi-desktop-for-windows/main/README.md) |
+| [pursr](https://github.com/0xheycat/pursr) | web | — | code MIT | Visual QA, accessibility auditing, screenshot diffing, and MCP browser automation toolkit. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/0xheycat/pursr/HEAD/README.md) |
 
 ## Papers
 

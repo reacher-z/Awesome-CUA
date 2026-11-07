@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "cellar (Context Execution Layer)",
+    "url": "https://github.com/Dilipod/cellar",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "cellar implements the Context Execution Layer (CEL), a structured context and action execution protocol for computer-use agents.",
+    "verify_terms": [
+      "cellar"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Dilipod/cellar/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd8e5eefaa7ca102fee0a2b479296baa79aa20ca642914c732e0aff1062cb2f7"
+  },
+  {
+    "name": "Pointframe",
+    "url": "https://github.com/dimitar-radenkov/Pointframe",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "MCP server and CLI that lets coding agents inspect, drive, and verify native Windows UI applications with signed screenshot evidence.",
+    "verify_terms": [
+      "Pointframe"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dimitar-radenkov/Pointframe/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6cfa43c8d1c9803b9f1dea0c7b94e62fb6724089127ca464dc35b9c4098f2e3d"
+  },
+  {
+    "name": "CEL OSS (Computer Experience Layer)",
+    "url": "https://github.com/dimpagk92/cellar",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Computer Experience Layer (CEL) provides structured macOS perception contracts and an MCP server for native computer use.",
+    "verify_terms": [
+      "CEL OSS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dimpagk92/cellar/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0fe7d6ef934ff695cf7f930112ff6ec5416aa2528327e67010dd78c4265da56"
+  },
+  {
+    "name": "Memlayer",
+    "url": "https://github.com/divagr18/memlayer",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "Memlayer is a plug-and-play memory layer that extracts facts, builds knowledge graphs, and retrieves tiered context for LLM agents.",
+    "verify_terms": [
+      "Memlayer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/divagr18/memlayer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a170d8e53e0d97eb7c1ca0e85c5f436c34ff1717ef25ff34710667e7a413d7fa"
+  },
+  {
+    "name": "Dual-AI Bridge (Gemini Antigravity x ChatGPT)",
+    "url": "https://github.com/divyprj/dualai",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "web-navigation"
+    ],
+    "summary": "Bi-directional local development bridge orchestrating Gemini Antigravity and ChatGPT Web sessions.",
+    "verify_terms": [
+      "Dual-AI Bridge (Gemini Antigravity x ChatGPT)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/divyprj/dualai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "56743ec64dd46783144f802a7607c70649c1bf7d0ceaf5bf19facfa043ed7b90"
   }
 ]

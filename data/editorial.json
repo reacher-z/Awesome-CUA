@@ -86010,5 +86010,211 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "mllm",
+    "url": "https://github.com/UbiquitousLearning/mLLM",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "android",
+      "desktop",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "mllm is a C++ multimodal LLM inference engine optimized for on-device execution on mobile NPU/CPU hardware.",
+    "verify_terms": [
+      "mllm"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/UbiquitousLearning/mLLM/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "255a19ff6c361b5895ecc51a2c0b96f8b8702b55caf81f02d6805bb7e9ba2365"
+  },
+  {
+    "name": "Sidelook",
+    "url": "https://github.com/ucsandman/sidelook",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Windows desktop companion agent that observes active application context and executes user-approved UI actions.",
+    "verify_terms": [
+      "Sidelook"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ucsandman/sidelook/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0aa9008e17b3c3833d0211fccd451234ff70d9716c08fd87377d7472954133c8"
+  },
+  {
+    "name": "VLAA-GUI",
+    "url": "https://github.com/UCSC-VLAA/VLAA-GUI",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "self-reflection",
+      "planning",
+      "robustness"
+    ],
+    "summary": "VLAA-GUI provides a modular GUI automation framework that teaches agents when to stop, recover from errors, and search alternatives.",
+    "verify_terms": [
+      "VLAA-GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "040d2c23556d27e62e81e4cb89134549f611579ac717808ceaa07cbd8285fca0",
+    "documented_by": [
+      "2604.21375"
+    ]
+  },
+  {
+    "name": "UI-Voyager",
+    "url": "https://github.com/ui-voyager/UI-Voyager",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "self-reflection",
+      "reinforcement-learning"
+    ],
+    "summary": "UI-Voyager is a self-evolving mobile GUI agent framework that learns from failed execution trajectories via group-relative reflection.",
+    "verify_terms": [
+      "UI-Voyager"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ui-voyager/UI-Voyager/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f4360dbe9787f0884d968a7cee28e44bc334f5a20f59997bcdb16ea214f56af",
+    "documented_by": [
+      "2603.24533"
+    ]
+  },
+  {
+    "name": "Inspect Evals",
+    "url": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "sandbox"
+    ],
+    "summary": "Inspect Evals is a community benchmark suite for the UK AISI Inspect framework including OSWorld, GAIA, SWE-bench, and cyber/agent evaluations.",
+    "verify_terms": [
+      "Inspect Evals"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/UKGovernmentBEIS/inspect_evals/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "27150e51a4f8c9c320dbee61cbc57d47501d8bfa03e0579715ef1a6e260de70f"
+  },
+  {
+    "name": "shadow-web",
+    "url": "https://github.com/ulinycoin/shadow-web",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Local-first Python SDK for web agents providing Shadow DOM flattening, Action Maps, SchemaSnap extraction, and form filling.",
+    "verify_terms": [
+      "shadow-web"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ulinycoin/shadow-web/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea257855bfe20a2f9dcb713a4808fd847dfed8ea5ff2567aba4d1d11000e39a8"
+  },
+  {
+    "name": "undetected-chromedriver",
+    "url": "https://github.com/ultrafunkamsterdam/undetected-chromedriver",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "undetected-chromedriver is an anti-bot Selenium ChromeDriver patch widely used by web agents to bypass anti-automation fingerprinting.",
+    "verify_terms": [
+      "undetected-chromedriver"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ultrafunkamsterdam/undetected-chromedriver/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "106d28133afd02afc1efaf323b83953d40e06c51c45955f92ae84e43e9b78119"
+  },
+  {
+    "name": "Unbrowse",
+    "url": "https://github.com/unbrowse-ai/unbrowse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Unbrowse captures browser network traffic to reverse-engineer internal website APIs into direct callable tools for AI agents.",
+    "verify_terms": [
+      "Unbrowse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/unbrowse-ai/unbrowse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a6d5d26bb52518cce3d83c540071f473df807d57986469c6838bd6454fad02b4"
   }
 ]

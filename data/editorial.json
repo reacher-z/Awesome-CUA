@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "SoftAuto MCP",
+    "url": "https://github.com/guangfubill-crypto/SoftAuto-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Open-source Windows RPA and Model Context Protocol server providing UI Automation desktop control to AI agents.",
+    "verify_terms": [
+      "SoftAuto MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/guangfubill-crypto/SoftAuto-MCP/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c9c4094e89b25cac26690848e5ad70c01a5e0b43f4e8b9414756998ac9768357"
+  },
+  {
+    "name": "Ocular",
+    "url": "https://github.com/guatxlabs/ocular",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Hardened web capture and hostile-HTML analysis engine with anti-bot reconnaissance for browser agents.",
+    "verify_terms": [
+      "Ocular"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/guatxlabs/ocular/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "04d0360c380d8cf3aee9202b8bfa742e91e7e0d4fb378baf80df482f24ff57dd"
+  },
+  {
+    "name": "GUI-Libra",
+    "url": "https://github.com/GUI-Libra/GUI-Libra",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "GUI-Libra provides training and evaluation pipelines for native GUI agents using action-aware supervision and partially verifiable RL.",
+    "verify_terms": [
+      "GUI-Libra"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f34c5bcf454368db37dde4bb2229fd14ae5e4a118684c6d7fbb6a25f9f246911",
+    "documented_by": [
+      "2602.22190"
+    ]
+  },
+  {
+    "name": "guo6x dsh-pilot",
+    "url": "https://github.com/guo6x/dsh-pilot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness plugin that drives a real Edge or Chrome browser over CDP using compact element refs.",
+    "verify_terms": [
+      "dsh-pilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/guo6x/dsh-pilot/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6508581276d5108a0acb9aeb8d4b978828bf17b8013af5bc19f268c3bcfcc725"
+  },
+  {
+    "name": "FastCUA",
+    "url": "https://github.com/Guojiz/FastCUA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "action-prediction",
+      "automation"
+    ],
+    "summary": "Local, accessibility-first Windows control plane for AI agents exposing structured UI trees and multi-action execution.",
+    "verify_terms": [
+      "FastCUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Guojiz/FastCUA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9d737926d89ed1b57a8429586c91d604bd4ebd8e119ed4971b1bd70f9556f9f5"
   }
 ]

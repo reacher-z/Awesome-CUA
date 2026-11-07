@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Mosaik",
+    "url": "https://github.com/luantak/mosaik",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Composable agentic browser automation framework built from small, reusable perception and action primitives.",
+    "verify_terms": [
+      "Mosaik"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/luantak/mosaik/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08b2f12b55e18fa36334ba2f608316d03111403bc92a022f31e4192fbb3f5790"
+  },
+  {
+    "name": "jev-for-chrome",
+    "url": "https://github.com/luciferlu755/jev-for-chrome",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "Chrome extension that drives web browsing, clicking, and typing using TypeSafe Jev System-One decision models.",
+    "verify_terms": [
+      "jev-for-chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/luciferlu755/jev-for-chrome/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "307f76ea74035711c78167fa18161f81e755f286b442b25206c24a2d18851932"
+  },
+  {
+    "name": "Agent Phone Use",
+    "url": "https://github.com/LucioLiu/agent-phone-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Enables AI agents on Windows to control Android phones over local Wi-Fi using official `scrcpy` streaming and ADB.",
+    "verify_terms": [
+      "Agent Phone Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LucioLiu/agent-phone-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "775e852a27894c7ec604e529b9270c655c4c405d415d7060f95c9494e5d8846e"
+  },
+  {
+    "name": "Sensory-Grounding MCP",
+    "url": "https://github.com/luclinocruz/lucross-sensory-grounding-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "video",
+      "tool-integration"
+    ],
+    "summary": "Closed-loop visual, audio, and video sensory grounding MCP server for verifying UI state in coding and computer-use agents.",
+    "verify_terms": [
+      "Sensory-Grounding MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/luclinocruz/lucross-sensory-grounding-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c8912bdf7ff89b969fb7a97d892fd6e302906ec40d59fec6dccfd407e3d55bce"
+  },
+  {
+    "name": "Cloud Browser Automation Proof",
+    "url": "https://github.com/lucprooffirst/cloud-browser-automation-proof",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "automation"
+    ],
+    "summary": "Verified Playwright and Puppeteer recipes for connecting AI agents to remote CDP cloud browser sessions.",
+    "verify_terms": [
+      "Cloud Browser Automation Proof"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lucprooffirst/cloud-browser-automation-proof/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "56a53cff37d2e2b988397c203f4061f71a0c56ec818a26d01c3a6e8d8d1f8a3b"
   }
 ]

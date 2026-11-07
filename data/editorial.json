@@ -86010,5 +86010,209 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-browser-firefox",
+    "url": "https://github.com/tuojc/dsh-browser-firefox",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Firefox browser-control plugin and extension for DeepSeek Harness enabling agents to read and drive live Firefox tabs.",
+    "verify_terms": [
+      "dsh-browser-firefox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tuojc/dsh-browser-firefox/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2dc73d32215fa1deeb6493786321bf545e1de76d6091bbf95a16e9cd5c348220"
+  },
+  {
+    "name": "TuriX-CUA",
+    "url": "https://github.com/TurixAI/TuriX-CUA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "planning",
+      "memory",
+      "grounding"
+    ],
+    "summary": "TuriX-CUA is a multi-agent desktop automation framework for macOS and Windows combining planner, actor, reflector, and memory skills.",
+    "verify_terms": [
+      "TuriX-CUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9ac2fc65ce0bab91f200332b50007961dfd461f17ed1a61c0ff27c9123fe02fe"
+  },
+  {
+    "name": "LPS-Bench",
+    "url": "https://github.com/tychenn/LPS-Bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "planning",
+      "long-horizon"
+    ],
+    "summary": "LPS-Bench benchmarks the safety awareness of computer-use agents during long-horizon planning across benign and adversarial execution scenarios.",
+    "verify_terms": [
+      "LPS-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a3b3072715773798e4d3a723fa77e45dc757de27e8873ea30697f25607161118",
+    "documented_by": [
+      "2602.03255"
+    ]
+  },
+  {
+    "name": "Ghost (macOS Accessibility CLI)",
+    "url": "https://github.com/tylergibbs1/ghost",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Swift CLI and MCP tool that reads the native macOS Accessibility tree to expose GUI-only applications to AI agents.",
+    "verify_terms": [
+      "Ghost"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tylergibbs1/ghost/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "091fcbbfb7b2663ef93b27df3d1787e1638a4f0e7b3fa14d2ec841139da5f688"
+  },
+  {
+    "name": "Helm",
+    "url": "https://github.com/tylergibbs1/helm",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Semantic browser automation MCP server providing 27 tools with label-based element resolution and structured page state.",
+    "verify_terms": [
+      "Helm"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tylergibbs1/helm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "324204c0cfa52b64fa7f39865c8a4826a81c4f30ead1ac8c54e9833db88d77ef"
+  },
+  {
+    "name": "pi-chatgpt-web",
+    "url": "https://github.com/tzachbon/pi-chatgpt-web",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Uses an authenticated ChatGPT browser session as a model provider inside the Pi coding agent.",
+    "verify_terms": [
+      "pi-chatgpt-web"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tzachbon/pi-chatgpt-web/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "18b04f61728886ef7188cfbc8e2f2cfcafa70d6e411f7ac59cd0929d5c619b4a"
+  },
+  {
+    "name": "Lightcone SDK",
+    "url": "https://github.com/tzafon/lightcone",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "grounding",
+      "action-prediction",
+      "automation"
+    ],
+    "summary": "Lightcone is Tzafon's Python and TypeScript SDK for building computer-use agents powered by Northstar GUI vision-language models.",
+    "verify_terms": [
+      "lightcone"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tzafon/lightcone/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e036318375dcda554d8ee3641b10edfb543a8f4424da49dd6f5ffa4c310dd042"
+  },
+  {
+    "name": "MacControlKit",
+    "url": "https://github.com/tzafon/MacControlKit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "screen-understanding"
+    ],
+    "summary": "MacControlKit is a Swift package by Tzafon for capturing macOS screens and dispatching native mouse and keyboard events.",
+    "verify_terms": [
+      "MacControlKit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tzafon/MacControlKit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "da90e770af2bc776a57375ce1fb7d8767cfa4412b69f9d5777e0001e2aa5b407"
   }
 ]

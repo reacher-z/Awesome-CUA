@@ -136,13 +136,13 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-07 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-07 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | OK · 2026-11-07 |
-| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 71 | 70 | 2 | 15 | 30 | OK · 2026-11-07 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 71 | 70 | 2 | 22 | 27 | OK · 2026-11-07 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 61 | 55 | 13 | 22 | 21 | OK · 2026-11-07 |
 | [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 102 | 0 | 4 | 0 | 55 | OK · 2026-11-07 |
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-07T06:16:49Z; **32/32** query windows succeeded. 1,429 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-07T06:54:18Z; **32/32** query windows succeeded. 1,508 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 
@@ -151,7 +151,7 @@ These are ranked search windows. New identifiers go through primary metadata ver
 | General computer use | computer use agents | 80 / 80 | success |
 | Grounding evaluation | GUI grounding benchmark | 80 / 80 | success |
 | Mobile learning | mobile GUI agent reinforcement learning | 80 / 80 | success |
-| Web data and evaluation | web agent dataset benchmark | 58 / 80 | success |
+| Web data and evaluation | web agent dataset benchmark | 80 / 80 | success |
 | Safety and security | computer use agent safety | 80 / 80 | success |
 | Memory and planning | GUI agent memory planning | 80 / 80 | success |
 | Desktop platforms | desktop computer use agent Windows macOS Linux | 80 / 80 | success |
@@ -165,7 +165,7 @@ These are ranked search windows. New identifiers go through primary metadata ver
 | Long horizon tasks | long horizon computer use agent workflow planning | 80 / 80 | success |
 | Agent memory | GUI agent episodic memory self reflection | 80 / 80 | success |
 | Reinforcement learning | computer use agent online reinforcement learning rewards | 80 / 80 | success |
-| Demonstrations | GUI agent imitation learning human demonstration trajectories | 75 / 80 | success |
+| Demonstrations | GUI agent imitation learning human demonstration trajectories | 80 / 80 | success |
 | Synthetic training data | synthetic GUI agent training data generation | 80 / 80 | success |
 | Task verification | computer use benchmark task evaluation state verification | 80 / 80 | success |
 | Professional software | professional software GUI agent CAD Blender 3D | 80 / 80 | success |
@@ -174,7 +174,7 @@ These are ranked search windows. New identifiers go through primary metadata ver
 | Robustness | GUI agent robustness dynamic interfaces distribution shift | 80 / 80 | success |
 | Adversarial security | browser GUI agent prompt injection adversarial security | 80 / 80 | success |
 | Human collaboration | GUI agent human collaboration clarification intervention | 80 / 80 | success |
-| Efficiency | GUI agent efficiency latency visual token compression | 21 / 80 | success |
+| Efficiency | GUI agent efficiency latency visual token compression | 80 / 80 | success |
 | Open models | open source GUI model computer use checkpoint | 80 / 80 | success |
 | Workflow automation | visual workflow automation robotic process automation agents | 80 / 80 | success |
 | Multilingual interfaces | multilingual GUI agent interface grounding | 80 / 80 | success |

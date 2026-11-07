@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "quimera-ai",
+    "url": "https://github.com/bgmacris/quimera-ai",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Real-time shared Chrome browser workspace between a human user and Claude Code over CDP and Playwright MCP.",
+    "verify_terms": [
+      "quimera-ai"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bgmacris/quimera-ai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e034fd2bc62024b3cefffcae4bad6a20aae7b9005c2100835eb72889cf829907"
+  },
+  {
+    "name": "Chrome Extension Tester MCP",
+    "url": "https://github.com/BHUVAN-RJ/chrome-extension-testing-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Playwright-based Model Context Protocol server that lets coding agents load, inspect, and autonomously test unpacked Chrome extensions.",
+    "verify_terms": [
+      "chrome-extension-testing-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BHUVAN-RJ/chrome-extension-testing-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5d6bab146ad8fde600c4b5cda6e995303ba98ec89c009ad74896f21b01872cb5"
+  },
+  {
+    "name": "rote",
+    "url": "https://github.com/bhuvanb3110/rote",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Record-once, replay-many computer-use automation framework for legacy banking and back-office web applications lacking APIs.",
+    "verify_terms": [
+      "rote"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bhuvanb3110/rote/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "585c5df7ad727e660eb7ad2ab60cbb6f3360a77535a7cc93ea4c6b94e551bbaf"
+  },
+  {
+    "name": "Nova (Rust Cross-Platform CUA MCP)",
+    "url": "https://github.com/bigduu/Nova",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Cross-platform Rust computer-use MCP server for macOS and Windows combining AX/UIA accessibility trees, screenshots, OCR, and input.",
+    "verify_terms": [
+      "Nova"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bigduu/Nova/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b124f2b8c8db5cb0a2c0f7438c835720d5549f2c0c50bf5ba7463554ca831647"
+  },
+  {
+    "name": "MP-GUI",
+    "url": "https://github.com/BigTaige/MP-GUI",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "MP-GUI provides multimodal perception training and evaluation code with graphical, textual, and spatial experts for GUI understanding.",
+    "verify_terms": [
+      "MP-GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BigTaige/MP-GUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d6253125be06f3ab7f0fe96ca9dfc94559be5f7fab722b8e9e75e9cdfa2a102f",
+    "documented_by": [
+      "2503.14021"
+    ]
   }
 ]

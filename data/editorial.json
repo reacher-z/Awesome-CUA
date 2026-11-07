@@ -86010,5 +86010,139 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "desktop-cli",
+    "url": "https://github.com/Adamsautomations/desktop-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Lightweight computer-use CLI that coding agents invoke directly via shell commands without MCP schema overhead.",
+    "verify_terms": [
+      "desktop-cli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Adamsautomations/desktop-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "803d62203026167f4fbaecb513d57a4576fb5829268ef4a9409d656890804563"
+  },
+  {
+    "name": "Browser Bridge MCP",
+    "url": "https://github.com/adbarc92/mcp-browser-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "MCP server giving AI assistants bounded control over a live Chrome browser through an 11-tool surface.",
+    "verify_terms": [
+      "Browser Bridge MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/adbarc92/mcp-browser-bridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8606abb27e3ecf2b514e4a68949b6511ceb06ef277e6f0d1ac63696d86175d68"
+  },
+  {
+    "name": "Universal Computer Control MCP",
+    "url": "https://github.com/adkdev200/Universal-Computer-Control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server giving AI agents cross-platform screen capture, mouse, keyboard, and window control.",
+    "verify_terms": [
+      "Universal Computer Control MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/adkdev200/Universal-Computer-Control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b49bd41d6864397969542bff3be5c947bb74ebb6da50982d6418c841dc1faaf2"
+  },
+  {
+    "name": "Kryptic",
+    "url": "https://github.com/adnqcr7-code/kryptic",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "self-reflection",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Local-first AI engineering and browser-control agent runtime with bounded execution, verification, and self-repair.",
+    "verify_terms": [
+      "Kryptic"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/adnqcr7-code/kryptic/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bbb5e04c57a18aaa5d77d7059ec37c75b9a6d7a27960ae846859ac3a29ef0b95"
+  },
+  {
+    "name": "learn-workbuddy",
+    "url": "https://github.com/adongwanai/learn-workbuddy",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "memory",
+      "sandbox"
+    ],
+    "summary": "24-chapter bilingual Python engineering course building a WorkBuddy-style desktop AI agent harness from scratch.",
+    "verify_terms": [
+      "learn-workbuddy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/adongwanai/learn-workbuddy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4aa745e3f0eacadffd264411c0f104a212df20707ff853faed6ce0d1a2e20e17"
   }
 ]

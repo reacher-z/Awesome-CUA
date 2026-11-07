@@ -86010,5 +86010,238 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Lom Desktop (麓鸣)",
+    "url": "https://github.com/rfdiosuao/lom-desktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "android",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "workflow",
+      "automation",
+      "cross-app"
+    ],
+    "summary": "Lom is an open-source multi-agent workspace coordinating desktop coding agents with cross-device Android phone execution.",
+    "verify_terms": [
+      "community"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rfdiosuao/lom-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4d0c06076c76031e0de53fa0d77a817b9a2ea2dabea1635b25053843e447967e"
+  },
+  {
+    "name": "Kyros Local Desktop Assistant",
+    "url": "https://github.com/rhymezip/kyros-local-desktop-assistant",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Private, voice-first local Linux desktop assistant for hands-free application and system control.",
+    "verify_terms": [
+      "kyros-local-desktop-assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rhymezip/kyros-local-desktop-assistant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a42eebc6a80945ff71396b8348913800f30d13f0457e456b5ada81650b32ced8"
+  },
+  {
+    "name": "Colossus",
+    "url": "https://github.com/richardanaya/colossus",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Colossus is a voice-controlled multi-agent development platform for coordinating software engineering tasks.",
+    "verify_terms": [
+      "Colossus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/richardanaya/colossus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e1c7ef4a578209df1c90797b2fb1add636eead806cc133133ba150245aac65ed"
+  },
+  {
+    "name": "Better Computer Use (Accessibility MCP)",
+    "url": "https://github.com/ridelink0/claude-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Provides an accessibility-tree MCP server for Claude Code to inspect and operate Windows and macOS desktop applications without screenshots.",
+    "verify_terms": [
+      "Better Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ridelink0/claude-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "abd520c4b5a84a90365db3484750cc7637cbbbd3adb696e5a1f719d5f691cad0"
+  },
+  {
+    "name": "QAgent",
+    "url": "https://github.com/rishabhcli/QAgent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "self-reflection",
+      "web-navigation",
+      "sandbox"
+    ],
+    "summary": "QAgent is a local-first web QA and repair agent with an Electron desktop UI, CLI, MCP server, and isolated Git worktree execution.",
+    "verify_terms": [
+      "QAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rishabhcli/QAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d767d1c2618c7cf39d5b65a8932b5e8e12fb5b92db725af0a5a9779d9815a2bc"
+  },
+  {
+    "name": "RishabhP1508 Understudy",
+    "url": "https://github.com/RishabhP1508/understudy",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "efficiency",
+      "workflow"
+    ],
+    "summary": "Records a single LLM-driven exploration of a legacy UI into a typed capability artifact for deterministic zero-LLM replay.",
+    "verify_terms": [
+      "understudy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RishabhP1508/understudy/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bc5633f620e137c9248e9cbd9947c014a2eabfe22d25e42b5e71e181d64a6790"
+  },
+  {
+    "name": "AnimaWatch",
+    "url": "https://github.com/rishitank/animawatch",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "video",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "FastMCP server that records webpage animations and uses vision models to detect frame drops, jank, and visual layout artifacts.",
+    "verify_terms": [
+      "AnimaWatch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rishitank/animawatch/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c98bf8b859c8c87a55e2cc8c1a6831415d66a3bd3ed3984fc8018b9ae0c76a87"
+  },
+  {
+    "name": "ChromeMCP (WSL2-to-Windows Bridge)",
+    "url": "https://github.com/rizonetech/ChromeMCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Allows coding agents running inside WSL2 Linux to drive the host's signed-in Windows Chrome browser over Playwright MCP.",
+    "verify_terms": [
+      "ChromeMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rizonetech/ChromeMCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "94d8b6f696227f9069476bb3a4300c8829aac9107a5497e9072cdb9c40c441a1"
+  },
+  {
+    "name": "Roadmvn linux-computer-use",
+    "url": "https://github.com/Roadmvn/linux-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Linux computer-use Model Context Protocol server for Claude Code, OpenAI Codex, and MCP clients.",
+    "verify_terms": [
+      "linux-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Roadmvn/linux-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "13a339bb68025808e680321cb91d69b00b88337a3957be362185a723b08b66ec"
   }
 ]

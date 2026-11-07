@@ -86010,5 +86010,236 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Evidence-Bounded GEO Workbench (WebMCP)",
+    "url": "https://github.com/subbu-ctd/chinamarketingai-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "observability",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Browser-native human-in-the-loop WebMCP workbench with evidence-bounded action verification.",
+    "verify_terms": [
+      "Evidence-Bounded GEO Workbench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/subbu-ctd/chinamarketingai-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e303403507519aec7da9d70e476dd089a7792a9c36bab93c19200a6afdae6a14"
+  },
+  {
+    "name": "Better Computer Use",
+    "url": "https://github.com/Suge8/better-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "macOS background desktop control CLI for AI agents supporting window discovery, Accessibility-tree reads, and focus-free input.",
+    "verify_terms": [
+      "Better Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Suge8/better-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d35fd2340e442ed43c0a9f521485895903576b35115ee76be81ff3e35350d482"
+  },
+  {
+    "name": "Taskhomie",
+    "url": "https://github.com/suitedaces/computer-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Taskhomie is a local computer-use agent that executes natural-language desktop tasks via screenshots, mouse/keyboard actions, and shell commands.",
+    "verify_terms": [
+      "Taskhomie"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/suitedaces/computer-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "917264d1bd00e5fbb7547ffe5df89f7de1180363659cc536fce463e1aca62c38"
+  },
+  {
+    "name": "Puppeteer MCP Server",
+    "url": "https://github.com/sultannaufal/puppeteer-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Self-hosted Puppeteer MCP server with remote Server-Sent Events (SSE) transport, API key authentication, and Docker deployment.",
+    "verify_terms": [
+      "Puppeteer MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sultannaufal/puppeteer-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5ea695041e2932d2e2f341645fce78ceec1b13237ef98eec9661c675dfd7f3d6"
+  },
+  {
+    "name": "Mobile QA Agent",
+    "url": "https://github.com/SumanMadipeddi/mobile-QA-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "planning",
+      "grounding"
+    ],
+    "summary": "Mobile QA Agent is a Supervisor-Planner-Executor multi-agent system built on Agent S3 for automated Android app testing via ADB.",
+    "verify_terms": [
+      "Mobile QA Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SumanMadipeddi/mobile-QA-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b163a6cf5c377cecfa746b64f8541e5435f285a8f0a31301e1860965f4b70cd"
+  },
+  {
+    "name": "sumo1 computer-use-harness",
+    "url": "https://github.com/sumo1/computer-use-harness",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "safety-security",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "CLI-first computer-use harness for macOS providing policy-guarded application observation and actuation across Claude Code, Codex, and MCP.",
+    "verify_terms": [
+      "computer-use-harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sumo1/computer-use-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ef38e7c382dda0fbf2c8cefff0031ab3ac4f45d32ce7ba49db12b6811b8bfaf6"
+  },
+  {
+    "name": "pi-playwright-browser",
+    "url": "https://github.com/sunnybharne/pi-playwright-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Isolated Playwright Chromium browser tools for the Pi coding agent.",
+    "verify_terms": [
+      "pi-playwright-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sunnybharne/pi-playwright-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b6aedb117a95779a85a0a71feea3eee7302d64dddb5e9fa508edaf638919b49c"
+  },
+  {
+    "name": "Search-o1",
+    "url": "https://github.com/sunnynexus/Search-o1",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "Search-o1 integrates agentic web search and document-in-reasoning refinement into large reasoning models for multi-hop question answering.",
+    "verify_terms": [
+      "Search-o1"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sunnynexus/Search-o1/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b0f8e61cf444b2437b366fedd4fbfafbed6d40b8b3138cc49cb7950b2b1d9741"
+  },
+  {
+    "name": "SEAgent",
+    "url": "https://github.com/SunzeY/SEAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "world-models",
+      "self-reflection",
+      "data-generation"
+    ],
+    "summary": "SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator.",
+    "verify_terms": [
+      "SEAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c053804f8aefbdf1754a55e664ecb61d2ef33a6993b9c942da8192f2fe3c6657",
+    "documented_by": [
+      "2508.04700"
+    ]
   }
 ]

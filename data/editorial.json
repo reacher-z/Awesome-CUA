@@ -86010,5 +86010,126 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Figranium JS/TS SDK",
+    "url": "https://github.com/figranium/figranium-js",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "automation"
+    ],
+    "summary": "Official JavaScript and TypeScript SDK for the Figranium browser automation and web extraction platform.",
+    "verify_terms": [
+      "figranium-js"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/figranium/figranium-js/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5980021bcc2a4d46857944d060fc41d986877f5976364f95e6313d9e9401084a"
+  },
+  {
+    "name": "Firecrawl Agent-Browser Plugin",
+    "url": "https://github.com/firecrawl/agent-browser-plugin-firecrawl",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "Official Firecrawl plugin for `agent-browser` combining cloud CDP browser sessions with structured web scraping, search, and crawling.",
+    "verify_terms": [
+      "Firecrawl Agent-Browser Plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/firecrawl/agent-browser-plugin-firecrawl/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ff9c5f119d0f0517006b5b8ae1e9eea52b2cce259358564dbd24fe034dc3ff52"
+  },
+  {
+    "name": "Ghost (Non-Interfering macOS CUA)",
+    "url": "https://github.com/fletcherholt/ghost",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Invisible, non-interfering macOS computer-use tool for Claude Code that drives native Mac apps in the background.",
+    "verify_terms": [
+      "Ghost"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fletcherholt/ghost/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "465d83c3646c4108887904d9451298eab402f0489e6268d48369fe518edea9fc"
+  },
+  {
+    "name": "Floom OpenBrowser",
+    "url": "https://github.com/floomhq/openbrowser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "OpenBrowser is an open-source browser automation broker managing persistent Chrome profiles and proxy-aware sessions for AI agents.",
+    "verify_terms": [
+      "openbrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/floomhq/openbrowser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "039db6a7c687bf37409308c16f05fe8b8f3d351e55e4e232702df7c6d6846b94"
+  },
+  {
+    "name": "MCP Master Puppeteer",
+    "url": "https://github.com/flrngel/mcp-master-puppeteer",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "MCP Master Puppeteer is a Puppeteer Model Context Protocol server optimized for minimal token usage via compact DOM/accessibility extraction.",
+    "verify_terms": [
+      "MCP Master Puppeteer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/flrngel/mcp-master-puppeteer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d7cbf506d84e3825b964ac940c0d14ff95607143e6dbf78c6cb09a9dadbab9cf"
   }
 ]

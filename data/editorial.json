@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Chromeflow",
+    "url": "https://github.com/NeoDrew/chromeflow",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Lets coding agents (Claude Code, Codex CLI) drive the user's real logged-in Chrome browser to click, fill forms, and inspect pages.",
+    "verify_terms": [
+      "Chromeflow"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NeoDrew/chromeflow/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1f72aa83a34caf40f2aab4e0b1a0d74fac1a2129b522fe4ec62149053a33e76e"
+  },
+  {
+    "name": "TabWard",
+    "url": "https://github.com/NePavel221/TabWard",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Gives local AI agents permission-gated access to authenticated Chrome tabs via a stdio MCP server and extension.",
+    "verify_terms": [
+      "TabWard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NePavel221/TabWard/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f9bf770918daa10a592ac7dcaa6a769b4ff75de5197cff16e0c5f6292b6615bf"
+  },
+  {
+    "name": "StatePilot",
+    "url": "https://github.com/newsbruno/statepilot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "state-tracking",
+      "memory",
+      "self-reflection"
+    ],
+    "summary": "StatePilot is a predictable browser runtime for AI agents with state validation, episodic memory, error recovery, and MCP tools.",
+    "verify_terms": [
+      "StatePilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/newsbruno/statepilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5050a286b70e8fb6f6f9f91315a1f05e17dfc6e1fd8c66243fe569b503a84ae5"
+  },
+  {
+    "name": "April Agent Action Filter",
+    "url": "https://github.com/newssourcecrawler/april-agent-action-filter",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration"
+    ],
+    "summary": "April Agent Action Filter is a Rust policy library that inspects and gates proposed computer-use agent actions before tool execution.",
+    "verify_terms": [
+      "April Agent Action Filter"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/newssourcecrawler/april-agent-action-filter/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "906260c596f999b3ef0043edfe6b4af57b77bc2dbcb700bed19012f0216a484c"
+  },
+  {
+    "name": "NextGen macOS Computer-Use Agent",
+    "url": "https://github.com/nextgen-agentics/computer-use-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "macOS desktop automation agent using a 5-layer perception cascade from native Accessibility trees to OCR and VLM grounding.",
+    "verify_terms": [
+      "macos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nextgen-agentics/computer-use-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c8901b882f1789e52f54f23c56ab74e1de0431db682c3665fdf8ba2d5ca8df72"
   }
 ]

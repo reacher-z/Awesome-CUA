@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenCode Browser MCP",
+    "url": "https://github.com/HoganDong486/opencode-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser Model Context Protocol server for OpenCode supporting Chromium, Firefox, and WebKit automation.",
+    "verify_terms": [
+      "OpenCode Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HoganDong486/opencode-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a79471ff3f2f0846720baf16b56d82669cf8d0bc33d5c95324419d63807fcf79"
+  },
+  {
+    "name": "Momo",
+    "url": "https://github.com/HoldTroop/Momo",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "human-in-the-loop",
+      "observability"
+    ],
+    "summary": "Policy-compliant autonomous AI browser agent operating in local context with transparent intent logging and human oversight.",
+    "verify_terms": [
+      "Momo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HoldTroop/Momo/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1d6cac418748f6883a2c354de43e35165cd57778592f88bc8b75c6cbedf23b50"
+  },
+  {
+    "name": "Yad (يد)",
+    "url": "https://github.com/holistis/al-yad",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Self-hostable, privacy-first local AI browser automation agent and Chrome extension.",
+    "verify_terms": [
+      "Yad (يد)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/holistis/al-yad/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a79874d9729e3554fd549605779e842967192362bf44d2cdd853ba9cc4c6aa74"
+  },
+  {
+    "name": "hwatu",
+    "url": "https://github.com/hongnoul/hwatu",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Headless verification browser for AI coding agents featuring 35ms one-call UI checks and pixel diffing.",
+    "verify_terms": [
+      "hwatu"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hongnoul/hwatu/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3092df2e13d30ac16336e72694184e7af1cf4dcea672444108b6788978e1d024"
+  },
+  {
+    "name": "AgentLimb",
+    "url": "https://github.com/hooosberg/AgentLimb",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and local bridge that lets Claude Code, Cursor, and Codex drive the user's live Chrome browser.",
+    "verify_terms": [
+      "AgentLimb"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hooosberg/AgentLimb/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fce65fcd983ddd2f40291c3467fc166db88972e4809d525033a13599c89a8a7a"
   }
 ]

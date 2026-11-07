@@ -86010,5 +86010,126 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Melaya MCP",
+    "url": "https://github.com/melaya-labs/melaya-mcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Agent orchestration and Model Context Protocol runtime connecting AI agents to 6,000+ browser, desktop, and API tools.",
+    "verify_terms": [
+      "Melaya MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/melaya-labs/melaya-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "96e9b3d0789a1fe8f7db15743d7d492e57c3d018263fda149a019393af046cb3"
+  },
+  {
+    "name": "Mem0",
+    "url": "https://github.com/mem0ai/mem0",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon",
+      "efficiency"
+    ],
+    "summary": "Mem0 provides a scalable long-term memory layer for AI agents that extracts, consolidates, and retrieves user and session facts.",
+    "verify_terms": [
+      "Mem0"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mem0ai/mem0/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f72db3426438dbdf6879a2b50583fbee8e7e2dde5d01308c6295bcd09fd3db86"
+  },
+  {
+    "name": "Yurei",
+    "url": "https://github.com/Memel06/yurei",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and lightweight CLI allowing local AI agents to read and control active browser tabs.",
+    "verify_terms": [
+      "Yurei"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Memel06/yurei/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af5e88c1c7757d6e6191f9d4bd66208b323f0c8604cbc4e62c83850b44a3f2ba"
+  },
+  {
+    "name": "MemMachine",
+    "url": "https://github.com/MemMachine/MemMachine",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "MemMachine is an open-source memory layer for AI agents providing working, episodic, and user-profile memory via REST, Python SDK, and MCP.",
+    "verify_terms": [
+      "MemMachine"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MemMachine/MemMachine/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ee9e89f147008e7ece5f9d8fb42587e60444fe46ff0f33543decd0acfb3e3edd"
+  },
+  {
+    "name": "Memori",
+    "url": "https://github.com/MemoriLabs/Memori",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon",
+      "observability"
+    ],
+    "summary": "Memori captures structured execution facts from agent tool calls and conversations into a relational memory store.",
+    "verify_terms": [
+      "Memori"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MemoriLabs/Memori/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2461bae179e10e0178ca0dca8e20404f8d68e39a6c97ea7c79abfa3297bff18e"
   }
 ]

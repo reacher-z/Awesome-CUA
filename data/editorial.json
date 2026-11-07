@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "claude-firefox (Claude Code Browser Bridge)",
+    "url": "https://github.com/Faran52/claude-code-browser-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Firefox WebExtension, native-messaging host, and MCP server allowing Claude Code to read and drive Firefox tabs.",
+    "verify_terms": [
+      "claude-firefox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Faran52/claude-code-browser-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08936b74228ba7ff158459208dc463522cf0aaf11e6eca682e08ecd43beccb1a"
+  },
+  {
+    "name": "dsh-plugin-browser-use",
+    "url": "https://github.com/fatmind/dsh-plugin-browser-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser-Use automation plugin for DeepSeek Harness enabling natural-language web tasks.",
+    "verify_terms": [
+      "dsh-plugin-browser-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fatmind/dsh-plugin-browser-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "28d1f31231e767ca6f2a8d055a8acd1cb507f0893dc648c35781fb4fb244e787"
+  },
+  {
+    "name": "WebMCP Deadbolt",
+    "url": "https://github.com/FaxanFM/webmcp-deadbolt",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Fail-closed capability gating, structured refusal, and adversarial defense middleware for WebMCP browser commerce agents.",
+    "verify_terms": [
+      "WebMCP Deadbolt"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/FaxanFM/webmcp-deadbolt/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ba420f4621527d99903fd2366b8ef61bb9221d32d0aadfeb87b2f667ae0d3a94"
+  },
+  {
+    "name": "dsh-plugin-ui-debug",
+    "url": "https://github.com/FeatherHunter/dsh-plugin-ui-debug",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "ui-design",
+      "evaluation",
+      "tool-integration"
+    ],
+    "summary": "DeepSeek Harness plugin for inspecting live DOM styles, layout issues, and console errors during frontend UI debugging.",
+    "verify_terms": [
+      "dsh-plugin-ui-debug"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/FeatherHunter/dsh-plugin-ui-debug/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a7a46b0092301fa13db596d0065e19bd2367476888fcf377167081f96a1a2f3"
+  },
+  {
+    "name": "Camofox OpenCLI",
+    "url": "https://github.com/Fectivnfy112357/camofox-opencli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Dockerized cloud browser runtime combining Camofox anti-detect Firefox with 163+ OpenCLI website adapters.",
+    "verify_terms": [
+      "camofox-opencli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Fectivnfy112357/camofox-opencli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fca36f84a3849c95a3c9ada28af6d9e120e0863f31cd52bcfdbe63c019ac665c"
   }
 ]

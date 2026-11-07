@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+99 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (6)](#frameworks) · [Tools (18)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@ All entries in this section: web.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| [Intentproof](https://github.com/egagofur/intentproof) | — | — | code MIT | AI-driven end-to-end verification orchestrator and interactive browser testing harness. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/egagofur/intentproof/main/README.md) |
 
 ## Agents
 
@@ -26,18 +27,43 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AI Web](https://github.com/dongxinsuperman/ai-web) | web | — | code MIT | Natural-language Browser Agent execution platform supporting multi-browser scheduling, task queues, and traceable QA test reports. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongxinsuperman/ai-web/HEAD/README.md) |
+| [DeepSeekEyes](https://github.com/dttxorg/deepseekeyes) | cross-platform, desktop, web | — | code MIT | Auditable vision and cross-platform computer-use runtime for DeepSeek Harness with cryptographic evidence receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dttxorg/deepseekeyes/main/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
 | [ORBIT framework](https://github.com/wlanderson0/orbit) | web, desktop | [2609.33102](https://arxiv.org/abs/2609.33102) (2026) | code Apache-2.0 | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md) |
+| [ProofPack](https://github.com/ebt55/proofpack) | web, desktop | — | code MIT | Pre-approval review and verification runtime where every agent finding and UI state is backed by a SHA-hashed capture. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ebt55/proofpack/main/README.md) |
+| [Ringlight WebMCP](https://github.com/doom2quake/ringlight) | web | — | code MIT | WebMCP investigation console where browser agents trace entity graphs across live web views with human review. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/doom2quake/ringlight/main/README.md) |
 
 ## Tools
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AgentScrub](https://github.com/codewithsupra/agentscrub) | web | — | — | Visual session-replay debugger for Browser Use agent runs that lets developers scrub through step timelines and DOM states. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/codewithsupra/agentscrub/HEAD/README.md) |
+| [BrowserTrace](https://github.com/aaronlab/browsertrace) | web | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+| [Chrome DevTools MCP Persistent Bridge](https://github.com/dev-newb/chrome-devtools-mcp-persistent-bridge) | desktop, windows, web | — | code MIT | Persistent, fail-closed Chrome DevTools Model Context Protocol bridge for OpenAI Codex on Windows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dev-newb/chrome-devtools-mcp-persistent-bridge/main/README.md) |
+| [ClawPilot Command Center](https://github.com/EdgeAgent/clawpilot-command-center) | web | — | code MIT | Chrome Manifest V3 command center for OpenClaw agents to capture page context, review planned actions, and monitor runs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EdgeAgent/clawpilot-command-center/main/README.md) |
+| [Custom Chrome Dev MCP](https://github.com/HabaAndrei/custom-chrome-dev-mcp) | web | — | code MIT | Local-only Model Context Protocol server that drives the user's already-open Chrome session over DevTools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/HabaAndrei/custom-chrome-dev-mcp/main/README.md) |
+| [dsh-browser-secure](https://github.com/frankXie-java/dsh-browser-secure) | web | — | code MIT | Security-hardened fork of `dsh-browser` for DeepSeek Harness adding audit logging and domain egress allowlists. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/frankXie-java/dsh-browser-secure/main/README.md) |
+| [dsh-plugin-ui-debug](https://github.com/FeatherHunter/dsh-plugin-ui-debug) | web | — | code BSD-3-Clause | DeepSeek Harness plugin for inspecting live DOM styles, layout issues, and console errors during frontend UI debugging. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FeatherHunter/dsh-plugin-ui-debug/main/README.md) |
+| [Grok Chrome Bridge](https://github.com/davidsolheim/grok-chrome-bridge) | web | — | code MIT | Chrome bridge allowing Grok Build to inspect and interact with live local web applications during development. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/davidsolheim/grok-chrome-bridge/main/README.md) |
+| [neuron-inspector](https://github.com/conquext/neuron-inspector) | web | — | code MIT | Exposes 98 Chrome inspection, DOM debugging, network tracing, and interaction tools to AI agents over MCP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/conquext/neuron-inspector/main/README.md) |
+| [PhantomJS](https://github.com/ariya/phantomjs) | web | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
+| [Prism AI Screen Reader](https://github.com/chrismannina/prism-ai-screen-reader) | desktop, macos | — | — | Prism is a macOS screen reader and activity analyzer that captures screenshots and summarizes user desktop workflows with vision-language models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/chrismannina/prism-ai-screen-reader/HEAD/README.md) |
+| [ReactSentinel](https://github.com/edgarbnt/ReactSentinel) | web | — | code MIT | Model Context Protocol server that lets AI agents inspect live React component state, replay interactions, and validate UI fixes in the browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/edgarbnt/ReactSentinel/HEAD/README.md) |
+| [SightRig](https://github.com/coetzeexu/sightrig) | cross-platform, desktop, web | — | code MIT | SightRig is a traceable runtime and visual workbench for inspecting, guarding, and replaying GUI agent perceptions and actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/coetzeexu/sightrig/HEAD/README.md) |
+| [ThinkRun](https://github.com/dundas/thinkrun) | web, desktop | — | code MIT | Browser session and screen recorder that packages visual bug reproductions and DOM traces for AI coding and browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dundas/thinkrun/HEAD/README.md) |
+| [UI Debugger MCP](https://github.com/developerz-ai/ui-debugger-mcp) | web, desktop | — | code MIT | Autonomous UI debugging MCP server that drives browsers and desktop apps to detect visual and functional bugs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/developerz-ai/ui-debugger-mcp/HEAD/README.md) |
+| [Valk](https://github.com/ercbot/valk) | cross-platform, desktop, linux, macos, windows | — | — | Valk is a Python library and observable remote-desktop interface for programmatic mouse, keyboard, and screen control by AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ercbot/valk/HEAD/README.md) |
+| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | web | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| [Witness](https://github.com/EricFinland/witness) | web | — | code MIT | Local-first observability and execution trace recorder for AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EricFinland/witness/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: cross-platform, desktop, macos, windows, linux.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
-| [PhantomJS](https://github.com/ariya/phantomjs) | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
-| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| [Deck](https://github.com/cofy-x/deck) | — | code Apache-2.0 | Deck is an open-source desktop cockpit for managing isolated local AI agent sandboxes, desktop sessions, and developer handoffs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cofy-x/deck/HEAD/README.md) |
 
 ## Surveys
 

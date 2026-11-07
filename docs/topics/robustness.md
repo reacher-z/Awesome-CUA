@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-211 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
+218 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
+**Contents:** [Benchmarks (12)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (7)](#frameworks) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
 
 ## Benchmarks
 
@@ -16,8 +16,10 @@
 | [GUIHalluBench](https://github.com/ant-research/GUIHalluBench) | cross-platform | — | [1,000 page-annotation entries](https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md) | — | Measures hallucination in UI-element parsing by matching the boxes and descriptions a model lists for 1,000 English and 1,000 Chinese screenshots against human annotations. | [✓ 2026‑10‑16](https://github.com/ant-research/GUIHalluBench) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
 | [Mobile-Bench-v2 released data](https://huggingface.co/datasets/xwk123/MobileBench-v2) | android | [2505.11891](https://arxiv.org/abs/2505.11891) (2025) | — | — | Offline mobile-agent task data spanning common tasks and released noisy, contaminated and ambiguous-instruction subsets. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md) |
+| [OmniWebBench](https://github.com/FanXuTheRealOne/OmniWebBench) | web | — | — | code Apache-2.0 | OmniWebBench evaluates agentic browsers across end-to-end web navigation, action execution, failure recovery, and evidence verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FanXuTheRealOne/OmniWebBench/HEAD/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
+| [Verisim](https://github.com/clay-good/verisim) | desktop, web | — | — | code MIT | Verisim is a coverage certifier and adversarial evaluation suite for testing pre-execution guardrails on computer-use and tool agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/clay-good/verisim/HEAD/README.md) |
 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | desktop, windows | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | [141 tasks](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [11 Windows applications](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [20 task IDs](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_custom.json) | code MIT | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) |
 | [WorldGUI](https://github.com/showlab/WorldGUI) | desktop | [2502.08047](https://arxiv.org/abs/2502.08047) (2025) | — | — | 611 desktop GUI tasks that agents must complete from varied starting points, shipped with instructional videos and project files, plus the self-reflective WorldGUI-Agent baseline. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/WorldGUI/HEAD/README.md) |
 
@@ -34,7 +36,12 @@ All entries in this section: cross-platform.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [AI-Agentic QA Framework](https://github.com/daud-khan-qa/ai-agentic-qa-framework) | web | — | — | Zero-dependency CDP browser driver and hydration-reliability testing framework for agentic web QA. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/daud-khan-qa/ai-agentic-qa-framework/main/README.md) |
+| [Attest](https://github.com/Cyrus580529/Attest) | web | — | code MIT | Self-verifying web agent core where the model proposes candidate actions and the harness validates real DOM state transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Cyrus580529/Attest/HEAD/README.md) |
+| [AutoFiller Universal](https://github.com/Fedetrain/autofiller-universal) | web | — | code MIT | Batch web-form automation framework with self-healing selectors that runs LLM-free at runtime. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Fedetrain/autofiller-universal/main/README.md) |
+| [DualTAP](https://github.com/fyzhang1/DualTAP) | android | [2511.13248](https://arxiv.org/abs/2511.13248) (2025) | — | DualTAP is a dual-task adversarial protection framework for mobile MLLM GUI agents against environmental and visual prompt attacks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/fyzhang1/DualTAP/HEAD/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [Unattended Android Automation Toolkit](https://github.com/chuanchihsu1219/unattended-android-automation-toolkit) | android | — | code MIT | Reliability-first building blocks for unattended Android app automation, crash recovery, and UI state collection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/chuanchihsu1219/unattended-android-automation-toolkit/main/README.md) |
 
 ## Surveys
 

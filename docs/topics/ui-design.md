@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+65 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (3)](#frameworks) · [Tools (5)](#tools) · [Papers (54)](#papers)
 
 ## Benchmarks
 
-All entries in this section: web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Persona UX Test](https://github.com/Ericwong5021/persona-ux-test) | web, desktop | — | — | code MIT | Blind-tests web and desktop user interfaces using isolated AI personas that interact strictly through rendered screens. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ericwong5021/persona-ux-test/HEAD/README.md) |
+| [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | web | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
 
@@ -21,6 +20,26 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Frameworks
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Jig WebMCP Workbench](https://github.com/EmadQureshiKhi/Jig) | — | code MIT | Two-origin, agent-native design workbench built on WebMCP for collaborative human-agent UI editing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EmadQureshiKhi/Jig/main/README.md) |
+| [Touchline](https://github.com/edenbuilds/touchline) | — | code MIT | Multi-agent browser squad for evidence-led website inspection and frontend reconstruction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/edenbuilds/touchline/main/README.md) |
+| [WebMCPcss](https://github.com/cochinoraptor/WebMCPcss) | — | code MIT | Extends the WebMCP standard by declaring agent-callable website actions and semantic affordances directly through CSS rules. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cochinoraptor/WebMCPcss/main/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-ready-ui](https://github.com/dvnc-labs/agent-ready-ui) | web | — | code MIT | agent-ready-ui instruments web frontend components with semantic attributes and action hooks so browser agents can operate them reliably. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dvnc-labs/agent-ready-ui/HEAD/README.md) |
+| [Agentic Web Check](https://github.com/ericovirgy/agentic-web-check) | web | — | code MIT | Agentic Web Check is a Lighthouse-style auditor that scores websites across 43 checks for AI browser-agent accessibility and controllability. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ericovirgy/agentic-web-check/HEAD/README.md) |
+| [annotate-mcp](https://github.com/ElaineMHr/annotate-mcp) | web | — | code MIT | Model Context Protocol server that injects a drawing and comment overlay into live webpages so coding agents can read visual markup. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ElaineMHr/annotate-mcp/HEAD/README.md) |
+| [dsh-plugin-ui-debug](https://github.com/FeatherHunter/dsh-plugin-ui-debug) | web | — | code BSD-3-Clause | DeepSeek Harness plugin for inspecting live DOM styles, layout issues, and console errors during frontend UI debugging. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FeatherHunter/dsh-plugin-ui-debug/main/README.md) |
+| [Voice Mirror](https://github.com/contextmirror/voice-mirror) | cross-platform, desktop, web, linux, macos, windows | — | code MIT | Voice Mirror is a Tauri desktop IDE where voice and multimodal agents inspect, click, and live-edit rendered web applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/contextmirror/voice-mirror/HEAD/README.md) |
 
 ## Papers
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-26 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
+32 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (4)](#frameworks) · [Tools (5)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
 
 ## Benchmarks
 
@@ -39,20 +39,22 @@ All entries in this section: ios.
 
 ## Frameworks
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [App Use](https://github.com/erickjtorres/app-use) | android, ios | — | code MIT | App Use is a Python framework that connects LLM agents to Android and iOS mobile applications via Appium and accessibility-tree inspection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/README.md) |
+| [Fathom](https://github.com/DrizzDev/fathom) | android, ios | — | — | Fathom is an execution harness for mobile computer-use agents that translates plain-English goals into grounded actions on iOS and Android. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/DrizzDev/fathom/HEAD/README.md) |
+| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [Orquestrador de Features](https://github.com/gustavo-em/orchestrator-features) | android, ios, desktop | — | — | Multi-agent loop that plans React Native mobile features, writes code, drives the simulator UI, and verifies visual results. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gustavo-em/orchestrator-features/main/README.md) |
 
 ## Tools
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobile Harness](https://github.com/droidrun/mobile-harness) | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
-| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [debug-kit](https://github.com/dxiongya/debug-kit) | cross-platform, desktop, web, macos, ios, android, windows, linux | — | code MIT | Cross-platform Agent Skill for driving, inspecting, and testing applications across macOS, iOS, Android, Web, Electron, Windows, and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dxiongya/debug-kit/HEAD/README.md) |
+| [iphone-control (iPhone Mirroring Skill)](https://github.com/CHARLESMORGANSOFTWARE/iphone-control) | ios, desktop, macos | — | code MIT | macOS skill and CoreGraphics controller for driving a paired iPhone through Apple's macOS iPhone Mirroring app. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/CHARLESMORGANSOFTWARE/iphone-control/HEAD/README.md) |
+| [macos-desktop-control](https://github.com/d-wwei/macos-desktop-control) | desktop, macos, ios | — | code MIT | Native macOS desktop automation MCP server providing screen capture, mouse/keyboard input, window management, and iOS Simulator control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/d-wwei/macos-desktop-control/HEAD/README.md) |
+| [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
+| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
 
 ## Infrastructure
 

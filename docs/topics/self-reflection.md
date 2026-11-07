@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-64 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+75 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Models (3)](#models) · [Agents (6)](#agents) · [Frameworks (9)](#frameworks) · [Papers (54)](#papers)
+
+## Benchmarks
+
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [cskwork vigil](https://github.com/cskwork/vigil) | web | — | — | code MIT | Continuous browser QA harness that reproduces reported bugs and autonomously expands end-to-end test coverage on live web URLs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cskwork/vigil/main/README.md) |
+| [HoloSkill Gym](https://github.com/ElenaViewSynthesis/holoskill-gym) | cross-platform, desktop, web | — | — | — | Gym environment and optimization framework for self-evolving CLI and computer-use agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ElenaViewSynthesis/holoskill-gym/main/README.md) |
+| [OmniWebBench](https://github.com/FanXuTheRealOne/OmniWebBench) | web | — | — | code Apache-2.0 | OmniWebBench evaluates agentic browsers across end-to-end web navigation, action execution, failure recovery, and evidence verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FanXuTheRealOne/OmniWebBench/HEAD/README.md) |
 
 ## Models
 
@@ -18,6 +26,8 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgenticX-GUIAgent](https://github.com/DemonDamon/AgenticX-GUIAgent) | android | — | code MIT | AgenticX-GUIAgent is a multi-agent Android GUI automation system with coordinated manager, executor, reflector, and notetaker roles. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md) |
+| [Hosp2MES-Agent](https://github.com/Ctrl-CV-Master/Hosp2MES-Agent-Public) | web | — | code MIT | Hosp2MES-Agent is a long-horizon browser GUI agent for executing multi-page Manufacturing Execution System (MES) workflows with state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ctrl-CV-Master/Hosp2MES-Agent-Public/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
@@ -25,13 +35,17 @@
 
 ## Frameworks
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
-| [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
+| [Attest](https://github.com/Cyrus580529/Attest) | web | — | code MIT | Self-verifying web agent core where the model proposes candidate actions and the harness validates real DOM state transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Cyrus580529/Attest/HEAD/README.md) |
+| [AutoBot](https://github.com/demeyer1/Autobot) | desktop, macos, web | — | code MIT | AutoBot is a self-improving agent harness for ChatGPT and Codex on macOS featuring persistent on-disk memory and browser evaluation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/demeyer1/Autobot/HEAD/README.md) |
+| [JARVIS-1](https://github.com/CraftJarvis/JARVIS-1) | desktop, linux | — | — | JARVIS-1 is an open-world multimodal Minecraft agent with episodic multimodal memory and goal-conditioned keyboard/mouse control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/CraftJarvis/JARVIS-1/HEAD/README.md) |
+| [MAI](https://github.com/fluxaster/MAI) | desktop, android, windows | — | code MIT | MAI combines MaaFramework with multimodal LLMs in a Planner-Executor-Verifier loop for game and application GUI automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/fluxaster/MAI/HEAD/README.md) |
+| [Orquestrador de Features](https://github.com/gustavo-em/orchestrator-features) | android, ios, desktop | — | — | Multi-agent loop that plans React Native mobile features, writes code, drives the simulator UI, and verifies visual results. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gustavo-em/orchestrator-features/main/README.md) |
+| [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| [Zhaozuo (照做)](https://github.com/dongsheng123132/zhaozuo) | desktop, windows | — | code Apache-2.0 | Demonstration-driven Windows desktop automation framework compatible with the ActionParity protocol for third-party GUI software. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongsheng123132/zhaozuo/HEAD/README.md) |
 
 ## Papers
 

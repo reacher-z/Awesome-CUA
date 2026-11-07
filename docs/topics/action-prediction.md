@@ -2,9 +2,18 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
+92 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (57)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (2)](#datasets) · [Models (21)](#models) · [Agents (2)](#agents) · [Frameworks (6)](#frameworks) · [Papers (57)](#papers)
+
+## Benchmarks
+
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [action-choice-bench](https://github.com/gbesse/action-choice-bench) | web, desktop | — | — | code MIT | action-choice-bench evaluates discrete UI action selection and calibrated abstention on frozen interface states. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gbesse/action-choice-bench/HEAD/README.md) |
+| [Astra Game Arena](https://github.com/gih10012/astra-game-arena) | desktop, windows, macos, linux | — | — | code MIT | Resumable, screen-only computer-use evaluation arena testing whether Codex agents can play locally installed desktop games. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gih10012/astra-game-arena/main/README.md) |
+| [Embodied Agent Interface (EAI)](https://github.com/embodied-agent-eval/embodied-agent-eval) | unspecified | — | — | code MIT | Embodied Agent Interface (EAI) benchmarks LLMs across goal interpretation, subgoal decomposition, action sequencing, and transition modeling. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/embodied-agent-eval/embodied-agent-eval/HEAD/README.md) |
+| [GameWorld](https://github.com/gameworld-project/GameWorld) | web, desktop | [2604.07429](https://arxiv.org/abs/2604.07429) (2026) | — | — | GameWorld provides a standardized browser-based evaluation suite for multimodal game agents across 34 games and 170 verifiable tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gameworld-project/GameWorld/HEAD/README.md) |
 
 ## Datasets
 
@@ -20,11 +29,15 @@
 | [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
 | [ARPO UI-TARS-1.5-7B checkpoint](https://huggingface.co/Fanbin/ARPO_UITARS1.5_7B) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | — | UI-TARS-1.5-7B-derived checkpoint trained with ARPO on OSWorld desktop tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
+| [CombatVLA](https://github.com/ChenVoid/CombatVLA) | desktop, windows | — | — | CombatVLA is a vision-language-action model and action tracker for real-time combat control in 3D action role-playing PC games. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ChenVoid/CombatVLA/HEAD/README.md) |
+| [GroundingPI](https://github.com/groundingpi/GroundingPI) | cross-platform, desktop, web, android | — | code Apache-2.0 | GroundingPI is a 4B visual grounding foundation model that unifies bounding-box detection, referring expressions, and point localization. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/groundingpi/GroundingPI/HEAD/README.md) |
+| [GUI-Libra](https://github.com/GUI-Libra/GUI-Libra) | cross-platform, web, desktop, android | [2602.22190](https://arxiv.org/abs/2602.22190) (2026) | — | GUI-Libra provides training and evaluation pipelines for native GUI agents using action-aware supervision and partially verifiable RL. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/GUI-Libra/GUI-Libra/HEAD/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |
 | [Holo3 35B-A3B](https://huggingface.co/Hcompany/Holo3-35B-A3B) | web, desktop, cross-platform | — | weights apache-2.0 | A sparse Qwen3.5-based GUI-action checkpoint released for navigation and computer-use workflows. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo3-35B-A3B/raw/main/README.md) |
 | [Holo4 35B-A3B BF16](https://huggingface.co/Hcompany/Holo4-35B-A3B) | desktop, web | — | weights apache-2.0 | A Qwen3.6-based computer-use checkpoint designed to request GUI actions, code execution and tool calls through an external agent harness. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo4-35B-A3B/raw/main/README.md) |
+| [HTLM](https://github.com/espetro/HTLM) | web | — | code Apache-2.0 | HTLM is a compact 350M browser-agent model fine-tuned on Mind2Web for fast on-device and in-browser DOM action prediction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/espetro/HTLM/HEAD/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
@@ -35,13 +48,23 @@
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
 
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [DesktopAgent (S1-Fast)](https://github.com/elidot007/desktop-agent) | desktop, windows | — | code Apache-2.0 | DesktopAgent operates Windows desktop applications in the background using a local 0.33B System-One decision model (S1-Fast) and UI Automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/elidot007/desktop-agent/HEAD/README.md) |
+| [Octopus](https://github.com/dongyh20/Octopus) | desktop | — | — | Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md) |
+
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [D-PoT evaluation code](https://github.com/sqzhang-lazy/D-PoT) | android | [2410.00467](https://arxiv.org/abs/2410.00467) (2024) | — | Offline prompting and evaluation code for Dynamic Planning of Thoughts on Android-in-the-Wild, including action extraction and comparison with reference actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md) |
+| [fara-7b-agent](https://github.com/cobusgreyling/fara-7b-agent) | desktop, web | — | code MIT | Minimal, fully local agent harness for running Microsoft's Fara-7B computer-use model on desktop and browser tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cobusgreyling/fara-7b-agent/HEAD/README.md) |
+| [FastCUA](https://github.com/Guojiz/FastCUA) | desktop, windows | — | code MIT | Local, accessibility-first Windows control plane for AI agents exposing structured UI trees and multi-action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Guojiz/FastCUA/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
+| [VACT (Vector Agent Context Transport)](https://github.com/fy2ne/VACT) | desktop, windows, linux, macos | — | code Apache-2.0 | High-frequency GPU screen perception and low-latency input transport protocol for desktop computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/fy2ne/VACT/main/README.md) |
 
 ## Papers
 

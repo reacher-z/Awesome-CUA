@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-34 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
+51 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (9)](#frameworks) · [Tools (14)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
 
 ## Datasets
 
@@ -26,16 +26,33 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
+| [AXON OS](https://github.com/Frezzaroukos/axon-os) | desktop, linux | — | code MIT | Local-first, policy-governed action layer for Linux desktop automation with preview, approval, and rollback receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Frezzaroukos/axon-os/main/README.md) |
+| [CloudCrew Understudy](https://github.com/CloudCrewAtWork/understudy) | web, desktop | — | code Apache-2.0 | Records human UI workflows once and compiles them into parameterized, editable replay scripts for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/CloudCrewAtWork/understudy/HEAD/README.md) |
+| [FaizannRaza Computer-Use Automation](https://github.com/faizannraza/computer-use-automation) | web, desktop | — | — | Discovers legacy banking UI workflows with an LLM once and compiles the run into a deterministic capability artifact. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/faizannraza/computer-use-automation/main/README.md) |
+| [Handrail CUA](https://github.com/codelit-io/handrail-cua) | web, desktop | — | — | Discover-once, replay-many computer-use automation framework with deterministic execution guardrails. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/codelit-io/handrail-cua/main/README.md) |
+| [Mobile GUI-VLA Device Platform](https://github.com/chbq/mobile-gui-vla-device-platform) | android | — | code MIT | Provides a zero-dependency Python device I/O and trajectory instrumentation layer for Android GUI-VLA experiments. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/chbq/mobile-gui-vla-device-platform/HEAD/README.md) |
 | [SeleniumBase](https://github.com/seleniumbase/SeleniumBase) | web | — | — | Python browser automation framework for web crawling, end-to-end testing and scraping, with a recorder that generates tests and stealth options. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/seleniumbase/SeleniumBase/b806f54ab0c998c90654b59a817d959f7ff7920c/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
+| [Zhaozuo (照做)](https://github.com/dongsheng123132/zhaozuo) | desktop, windows | — | code Apache-2.0 | Demonstration-driven Windows desktop automation framework compatible with the ActionParity protocol for third-party GUI software. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongsheng123132/zhaozuo/HEAD/README.md) |
 
 ## Tools
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [AgentScrub](https://github.com/codewithsupra/agentscrub) | web | — | — | Visual session-replay debugger for Browser Use agent runs that lets developers scrub through step timelines and DOM states. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/codewithsupra/agentscrub/HEAD/README.md) |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | web | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
+| [clirec](https://github.com/ellmos-ai/clirec) | cross-platform, desktop, linux, macos, windows | — | code MIT | Records human GUI demonstrations into human-readable, diffable CLI transcripts for training and prompting computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ellmos-ai/clirec/HEAD/README.md) |
+| [demosmith-mcp](https://github.com/G0d2i11a/demosmith-mcp) | web | — | — | Model Context Protocol server that lets AI agents record automated browser product demos with cursor animations and narration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/G0d2i11a/demosmith-mcp/HEAD/README.md) |
+| [DH.Window.UITool](https://github.com/cyberkdh/DH.Window.UITool) | desktop, windows | — | code MIT | Windows UI Automation inspection and scripting tool for analyzing UI element trees and building repeatable desktop workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cyberkdh/DH.Window.UITool/main/README.md) |
+| [GUI Label Tool](https://github.com/ethanyxx/gui-label-tool) | desktop, linux | — | code MIT | GUI Label Tool records and annotates human desktop trajectories inside a Dockerized QEMU virtual machine with paired input events and screenshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ethanyxx/gui-label-tool/HEAD/README.md) |
 | [Libretto](https://github.com/cashew-labs/libretto) | web | — | code MIT | Libretto is a toolkit that gives coding agents a live browser and CLI to inspect pages, record user actions, build scripts, and debug web integrations. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/cashew-labs/libretto/41ab782ccea765d7a9a3c9b56b1b2586723962e3/README.md) |
+| [Prism AI Screen Reader](https://github.com/chrismannina/prism-ai-screen-reader) | desktop, macos | — | — | Prism is a macOS screen reader and activity analyzer that captures screenshots and summarizes user desktop workflows with vision-language models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/chrismannina/prism-ai-screen-reader/HEAD/README.md) |
+| [ScreenClaw (睇虾)](https://github.com/GinSing1226/ScreenClaw) | desktop, windows | — | code MIT | Windows visual GUI automation companion combining percentage-coordinate grid overlays with non-blocking workflow recording and replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/GinSing1226/ScreenClaw/HEAD/README.md) |
+| [screenshotting-gui](https://github.com/EvilFreelancer/screenshotting-gui) | cross-platform, desktop, macos, linux, windows | — | code MIT | Agent skill for Claude Code, Codex, and Cursor that captures repeatable, window-scoped screenshots of native desktop and browser GUI apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EvilFreelancer/screenshotting-gui/HEAD/README.md) |
+| [SightRig](https://github.com/coetzeexu/sightrig) | cross-platform, desktop, web | — | code MIT | SightRig is a traceable runtime and visual workbench for inspecting, guarding, and replaying GUI agent perceptions and actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/coetzeexu/sightrig/HEAD/README.md) |
+| [ThinkRun](https://github.com/dundas/thinkrun) | web, desktop | — | code MIT | Browser session and screen recorder that packages visual bug reproductions and DOM traces for AI coding and browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dundas/thinkrun/HEAD/README.md) |
+| [Witness](https://github.com/EricFinland/witness) | web | — | code MIT | Local-first observability and execution trace recorder for AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EricFinland/witness/HEAD/README.md) |
 
 ## Infrastructure
 

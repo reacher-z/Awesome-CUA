@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**16 resources:** [Web (3)](#web) · [Desktop (7)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (3)](#cross-platform)
+**23 resources:** [Web (3)](#web) · [Desktop (10)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (7)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -26,8 +26,11 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [agent-desktop (macOS Multi-Account Sandbox)](https://github.com/dianavocado181/agent-desktop) | desktop, macos | — | code MIT | Gives AI computer-use agents a dedicated macOS user account and isolated desktop session viewable live from the main screen. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dianavocado181/agent-desktop/HEAD/README.md) |
 | [AgentDesk](https://github.com/agentsea/agentdesk) | desktop | — | code MIT | Desktop environments that AI agents control programmatically, run locally with Docker or remotely on Kubernetes, built on the agentd REST daemon and offering a coordinate-grid overlay for LMM input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/agentdesk/HEAD/README.md) |
 | [AIOS](https://github.com/agiresearch/AIOS) | desktop | — | — | AIOS is an agent operating system whose computer-use architecture provides a virtual machine controller and MCP server for agents interacting with graphical computer environments. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agiresearch/AIOS/292d98f78c835499df18cdb6de6325bba1895862/README.md) |
+| [ClawBox](https://github.com/coderkk1992/clawbox) | desktop, macos | — | code MIT | ClawBox runs OpenClaw and computer-use agents inside an isolated Apple Virtualization.framework macOS virtual machine sandbox. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/coderkk1992/clawbox/HEAD/README.md) |
+| [Dockur Windows](https://github.com/dockur/windows) | desktop, windows, linux | — | — | Dockur Windows runs full Windows desktop environments inside Docker/KVM containers with web VNC viewer support for agent sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dockur/windows/HEAD/readme.md) |
 | [E2B Desktop](https://github.com/e2b-dev/desktop) | desktop, linux | — | code Apache-2.0 | Open-source, isolated Linux Xfce desktop sandboxes for computer-use agents, driven from Python or JavaScript SDKs with screen streaming, mouse, keyboard and window control, screenshots and shell. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/e2b-dev/desktop/HEAD/README.md) |
 | [Lume](https://github.com/trycua/lume) | desktop, macos, linux | — | code MIT | Virtual machine management for local computer-use environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md) |
 | [Nut.js](https://github.com/nut-tree/nut.js) | desktop | — | — | Desktop automation library for keyboard, mouse, and screen interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/nut-tree/nut.js/HEAD/README.md) |
@@ -52,6 +55,10 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- | --- |
 | [Agent Infra Sandbox](https://github.com/agent-infra/sandbox) | desktop, web | — | code Apache-2.0 | Sandbox environments supporting computer and browser interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agent-infra/sandbox/HEAD/README.md) |
 | [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | web, desktop, windows, macos, linux | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+| [Deck](https://github.com/cofy-x/deck) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | Deck is an open-source desktop cockpit for managing isolated local AI agent sandboxes, desktop sessions, and developer handoffs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cofy-x/deck/HEAD/README.md) |
+| [HeroDesktop](https://github.com/deathlegionteamlk/herodesktop) | desktop, linux, web | — | — | HeroDesktop is an open-source virtual desktop sandbox for running and observing AI computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/deathlegionteamlk/herodesktop/HEAD/README.md) |
+| [Qubicl](https://github.com/EldanRing/qubicl) | cross-platform, desktop, linux, macos, windows | — | code Apache-2.0 | Provisions isolated local virtual computers so AI agents can operate a private desktop without touching the host session. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EldanRing/qubicl/main/README.md) |
+| [Twiko](https://github.com/ezocomp118-source/twiko) | desktop, linux, web | — | code Apache-2.0 | Self-hosted platform provisioning dedicated virtual computers with browsers and terminals for autonomous AI teammates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ezocomp118-source/twiko/main/README.md) |
 | [Universe legacy GUI interaction client](https://github.com/openai/universe) | web, desktop | — | code MIT | An archived Gym-compatible client that exposes screen observations and keyboard/mouse actions over VNC for remote application and browser environments, including the historical World of Bits integration. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/openai/universe/HEAD/README.rst) |
 
 [↑ Back to top](#infrastructure-catalog)

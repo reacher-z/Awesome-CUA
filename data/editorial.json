@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Browserplane",
+    "url": "https://github.com/mathisarends/browserplane",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "summary": "Reference control plane for scaling remote Chromium browsers with a Postgres-backed session broker and live WebSocket tab mirroring.",
+    "verify_terms": [
+      "Browserplane"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mathisarends/browserplane/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de7b80bbdd13b3f5c0482530fbbb64c9f83a4a86f92392b23d8249103e0152a8"
+  },
+  {
+    "name": "BrowserTunnel",
+    "url": "https://github.com/mathisarends/browsertunnel",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Streams and mirrors a live Chromium tab into a web page over a single WebSocket for remote agent observation and takeover.",
+    "verify_terms": [
+      "BrowserTunnel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mathisarends/browsertunnel/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "210494c6804ddd94e5541d8640241920de791ab0897d1c828d4d62a48d993892"
+  },
+  {
+    "name": "NOVA Bilingual Desktop Voice Agent",
+    "url": "https://github.com/matinhosseini1/NOVA-Bilingual-Voice-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Bilingual Persian-English desktop voice and GUI automation assistant for Windows.",
+    "verify_terms": [
+      "nova"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/matinhosseini1/NOVA-Bilingual-Voice-Agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6f5bceb0e0162c886222d593c244b710ddd3e1e8fe75fd71d5844bb8eee837b6"
+  },
+  {
+    "name": "s1",
+    "url": "https://github.com/Matthew-Eucaristo/s1",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "human-in-the-loop"
+    ],
+    "summary": "s1 is a voice-first macOS computer-use agent that inspects the Accessibility tree, executes UI actions, and displays an auditable step trail.",
+    "verify_terms": [
+      "s1"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Matthew-Eucaristo/s1/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "daa7c765a969c65abe08e38e5f557cbe512e049b591d4293637c1df8daf50f9a"
+  },
+  {
+    "name": "MatthewAlexOng Agent Bridge",
+    "url": "https://github.com/matthewalexong/agent-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and local relay bridging AI coding agents directly to active browser tabs.",
+    "verify_terms": [
+      "agent bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/matthewalexong/agent-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df5f3200e5a86cf39716848ed83a775239d97a31a86066faa6468356cfadb185"
   }
 ]

@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Agent Chrome",
+    "url": "https://github.com/leozhengliu-pixel/agent-chrome",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome Manifest V3 extension and local MCP bridge enabling coding agents to drive live browser tabs.",
+    "verify_terms": [
+      "Agent Chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/leozhengliu-pixel/agent-chrome/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6edb047324693499477025cecb30185043477acfd57f702b4e0d6b627fac1458"
+  },
+  {
+    "name": "OpenGUI (Windows Native Service)",
+    "url": "https://github.com/lessenings-prog/OpenGUI",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Windows-native .NET 9 desktop automation service exposing sub-millisecond named-pipe IPC and UI Automation perception to LLM agents.",
+    "verify_terms": [
+      "OpenGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lessenings-prog/OpenGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b2c4df4b70fc7848a5900e76b876d46a812548db07fb60d5569d268e7f34ac90"
+  },
+  {
+    "name": "HarvestNet",
+    "url": "https://github.com/Lethe044/HarvestNet",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "self-reflection",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "Self-healing web extraction and browser automation framework for .NET.",
+    "verify_terms": [
+      "HarvestNet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Lethe044/HarvestNet/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f679a448949351ab91704e9294900319edc19d41ef3a101a29e731f69ee68575"
+  },
+  {
+    "name": "CompBuddy",
+    "url": "https://github.com/lewiswlker/CompBuddy",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "self-reflection"
+    ],
+    "summary": "CompBuddy is a background macOS computer-use agent that observes target windows and dispatches Accessibility and CGEvent actions without stealing focus.",
+    "verify_terms": [
+      "CompBuddy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lewiswlker/CompBuddy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b5a9eca8cc554509f09ae72721e420c8b90c6bca3532006cf86b816b66e15510"
+  },
+  {
+    "name": "browser-eval",
+    "url": "https://github.com/lexmount/browser-eval",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "recording"
+    ],
+    "summary": "browser-eval is an evaluation harness for web fetching, deterministic browser trajectory replay, and autonomous web agent benchmarking.",
+    "verify_terms": [
+      "browser-eval"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lexmount/browser-eval/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6c7e1450a76b3f648c649e701c33d3e200a19569c349d32875e7709fe34ccc98"
   }
 ]

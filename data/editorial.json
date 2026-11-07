@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MediSetu Lens",
+    "url": "https://github.com/furyydev/medisetu-lens",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "automation"
+    ],
+    "summary": "Browser agent that searches and compares generic medicine availability and pricing across API-less pharmacy portals.",
+    "verify_terms": [
+      "MediSetu Lens"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/furyydev/medisetu-lens/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "60b2fcf4dbc66338baf1b2d13afbb924b81f6a4166ab1ed71a69e848e17dbf7d"
+  },
+  {
+    "name": "VACT (Vector Agent Context Transport)",
+    "url": "https://github.com/fy2ne/VACT",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "High-frequency GPU screen perception and low-latency input transport protocol for desktop computer-use agents.",
+    "verify_terms": [
+      "VACT (Vector Agent Context Transport)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fy2ne/VACT/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b15ac16964341cde4c3a85818f5a0a08e104a9593042f695c422a37ac4a170c"
+  },
+  {
+    "name": "DualTAP",
+    "url": "https://github.com/fyzhang1/DualTAP",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "robustness"
+    ],
+    "summary": "DualTAP is a dual-task adversarial protection framework for mobile MLLM GUI agents against environmental and visual prompt attacks.",
+    "verify_terms": [
+      "DualTAP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fyzhang1/DualTAP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dba1079770535df01783f8ba9f6f3d532149709e1e726c6a97d917af9b037c83",
+    "documented_by": [
+      "2511.13248"
+    ]
+  },
+  {
+    "name": "demosmith-mcp",
+    "url": "https://github.com/G0d2i11a/demosmith-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Model Context Protocol server that lets AI agents record automated browser product demos with cursor animations and narration.",
+    "verify_terms": [
+      "demosmith-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/G0d2i11a/demosmith-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0224050ae1b6032936270a9e087986d451a6f0575db557e3a68306da4a3407ec"
+  },
+  {
+    "name": "opencode-chrome",
+    "url": "https://github.com/G10hdz/Opencode-chrome",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and MCP bridge giving OpenCode direct browser tab inspection and interaction capabilities.",
+    "verify_terms": [
+      "opencode-chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/G10hdz/Opencode-chrome/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dac2d07a9a742f9604c37f9488df8b35e6cb6b4cea50f6020301cc07f990b73f"
   }
 ]

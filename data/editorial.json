@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Evidence Workspace",
+    "url": "https://github.com/Anand-0038/evidence-workspace",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "observability",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Human-controlled WebMCP research workspace for reviewing source-backed claims gathered by browser agents.",
+    "verify_terms": [
+      "Evidence Workspace"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Anand-0038/evidence-workspace/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5cdfadd9c0f75d76741291c9f7b76ffe3fbcfa9d1b118b0de3a296bb4142522a"
+  },
+  {
+    "name": "flutter_copilot",
+    "url": "https://github.com/anasfik/flutter_copilot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "ui-design"
+    ],
+    "summary": "In-app SDK that exposes Flutter widget trees and semantic actions directly to AI agents without screenshots or OCR.",
+    "verify_terms": [
+      "flutter_copilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anasfik/flutter_copilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "66e465ec90cabf1bf032319531a3e7e9b82737b3635ac236e108e0fb9dae5700"
+  },
+  {
+    "name": "Anchor-Inference Daedalus",
+    "url": "https://github.com/anchor-inference/daedalus",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "memory",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Self-developing personal AI agent with its own desktop app, persistent memory, and computer-use tools.",
+    "verify_terms": [
+      "daedalus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anchor-inference/daedalus/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6f3ddd3a909aee7a38f35ead3371b58364f10b8ed8d4d969979d67b6ea009694"
+  },
+  {
+    "name": "axcli",
+    "url": "https://github.com/andelf/axcli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "axcli is a Rust command-line tool for querying, inspecting, and automating macOS application UIs through the native Accessibility API.",
+    "verify_terms": [
+      "axcli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/andelf/axcli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ee143aa5f2f87fe308ea7b6151a0206b0f84761bb01e0f6d9e7b164bf6e269a0"
+  },
+  {
+    "name": "nodriver-mcp-server",
+    "url": "https://github.com/andresolbach/nodriver-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server exposing 70 stealth Chrome workspace, DOM extraction, and interaction tools powered by `nodriver`.",
+    "verify_terms": [
+      "nodriver-mcp-server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/andresolbach/nodriver-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eacf7897696087e5187e80eb0df9c7238a907ad11034de50ad3afc195e9a2d4a"
   }
 ]

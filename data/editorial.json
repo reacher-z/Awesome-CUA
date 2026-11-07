@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Aegis-Agent (Privacy Firewall Browser Agent)",
+    "url": "https://github.com/lukan-lawslaf/Aegis-Agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "screen-understanding",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Privacy-first browser agent framework that blurs faces and redacts PII in screenshots before sending observations to cloud LLMs.",
+    "verify_terms": [
+      "Aegis-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lukan-lawslaf/Aegis-Agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "64c107971a5bdd0e0399457af4976893c55fe1e60b10d6afc41c0ca7e8d71668"
+  },
+  {
+    "name": "Claude Linux Desktop MCP",
+    "url": "https://github.com/LukeLamb/claude-linux-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Model Context Protocol extension giving Claude full Linux X11 desktop control across screenshots, windows, clipboard, and input.",
+    "verify_terms": [
+      "claude-linux-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LukeLamb/claude-linux-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ae021018c8ed59be01cac99591aac53075b72971859aafa189d5e9a7bb46cf50"
+  },
+  {
+    "name": "Forms Responder Plugin",
+    "url": "https://github.com/luneto10/forms-responder-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Portable Codex and Agent Skills plugin for source-verified browser form completion.",
+    "verify_terms": [
+      "forms-responder-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/luneto10/forms-responder-plugin/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "74180b21104a0643c53c9a3b372263377f1a67ec0b5f22479e83360fcbf5dc72"
+  },
+  {
+    "name": "agent-chrome-mcp",
+    "url": "https://github.com/luorui-123/agent-chrome-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Open-source Model Context Protocol server connecting Codex, Claude, and Cursor to a user's logged-in Chrome browser via CDP.",
+    "verify_terms": [
+      "agent-chrome-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/luorui-123/agent-chrome-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "762d4eff2a1016a43678c7a1784e51c3d74f82d932e7df848122873824b7634d"
+  },
+  {
+    "name": "Lusipad Browser Agent",
+    "url": "https://github.com/lusipad/browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "Chrome sidebar autonomous AI browser agent featuring visual ROI perception, dual-process fast/slow cognition, and local LLM support.",
+    "verify_terms": [
+      "browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lusipad/browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1f2b8abd5771be2028f15dafee3fd9cb82c0546ec54d3ec742b1fde71853a9f1"
   }
 ]

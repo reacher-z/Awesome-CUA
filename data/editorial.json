@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "agent-gauntlet-example-agent",
+    "url": "https://github.com/Konuktor/agent-gauntlet-example-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "efficiency"
+    ],
+    "summary": "Compact single-file reference browser agent designed to run inside a Solari Sandbox under AgentGauntlet evaluation.",
+    "verify_terms": [
+      "agent-gauntlet-example-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Konuktor/agent-gauntlet-example-agent/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad23f322503d7d3029a32d05eb0a4d45b2415ed090aaf003b7ec90cd86869ac2"
+  },
+  {
+    "name": "korals-ai mcp-browser",
+    "url": "https://github.com/korals-ai/mcp-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Model Context Protocol server giving AI agents a real Chrome browser paired with a live human co-browsing view.",
+    "verify_terms": [
+      "mcp browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/korals-ai/mcp-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "020bf294d8de5845d37ee5a97fb248afb40bab3b74610cad8834b2ccc00e107d"
+  },
+  {
+    "name": "Argus (macOS Vision-AX MCP Plugin)",
+    "url": "https://github.com/korisame/argus",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Claude Code MCP plugin providing 40 macOS automation tools with a unified Accessibility, AppleScript, and Vision OCR resolver.",
+    "verify_terms": [
+      "Argus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/korisame/argus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bfce3e63211fcb32b4833f2e85a0041903e5ebbace3053aa9adde2c93196b37d"
+  },
+  {
+    "name": "Kortix Suna",
+    "url": "https://github.com/kortix-ai/suna",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Kortix Suna is an open-source generalist agent platform combining a containerized browser, code interpreter, file manager, and tool runtime.",
+    "verify_terms": [
+      "align"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kortix-ai/suna/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "14f35ce10b822a99d5333354e0fc83d247bb10e5e35c52e3c74c0ecaa149dfd7"
+  },
+  {
+    "name": "Kota-Kawa Browser-Agent",
+    "url": "https://github.com/kota-kawa/Browser-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "observability"
+    ],
+    "summary": "FastAPI and browser-use web agent featuring live CDP session streaming, Server-Sent Events (SSE) progress logs, and interactive UI control.",
+    "verify_terms": [
+      "browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kota-kawa/Browser-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bb7886141adea59e72c7926329e7fa4e527a11f10d9eca6594f96615b88044ae"
   }
 ]

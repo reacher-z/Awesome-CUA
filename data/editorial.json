@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Geohotstan DSH Codex Computer Use",
+    "url": "https://github.com/geohotstan/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "macOS computer-use plugin for DeepSeek Harness providing app listing, Accessibility-tree window capture, and GUI input.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/geohotstan/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "492bb937ad6887c7072a6f74c89df9500ebcafc70d5a884afc247db80f53648a"
+  },
+  {
+    "name": "cmux-skill",
+    "url": "https://github.com/george4data/cmux-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Agent skill enabling Claude Code and coding agents to drive the `cmux` terminal and embedded browser workspace.",
+    "verify_terms": [
+      "cmux-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/george4data/cmux-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7125d09270857dc43ce0907ba6ef2d61bc13e63fb8517263e652d9cec6939429"
+  },
+  {
+    "name": "GhostHands",
+    "url": "https://github.com/georgenijo/ghosthands",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local Apple Silicon MLX computer-use bridge that drives native macOS apps via the Accessibility API without stealing the physical cursor.",
+    "verify_terms": [
+      "GhostHands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/georgenijo/ghosthands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0a9317ece121a89c79e846306444d0d4fe461010073d0da19ce4526107908eb"
+  },
+  {
+    "name": "Ghost in the Droid",
+    "url": "https://github.com/ghost-in-the-droid/android-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Ghost in the Droid is an Android GUI agent that combines accessibility trees, screenshot perception, and ADB/on-device execution.",
+    "verify_terms": [
+      "Ghost in the Droid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ghost-in-the-droid/android-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3d740dcf6c0338179b9e873750444250b4b22d471cb104e6907980b25ccfead4"
+  },
+  {
+    "name": "Ghost OS",
+    "url": "https://github.com/ghostwright/ghost-os",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding",
+      "memory"
+    ],
+    "summary": "Ghost OS is a native macOS MCP server combining accessibility-tree action execution, Vision OCR fallback, and reusable workflow recipes.",
+    "verify_terms": [
+      "Ghost OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ghostwright/ghost-os/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20855151dc87b9ad46b9defd79706440d5069b9059251ef83fb37e953c092d29"
   }
 ]

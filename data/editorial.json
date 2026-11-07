@@ -86010,5 +86010,235 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "browse-mcp",
+    "url": "https://github.com/That1Drifter/browse-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Headless-browser Model Context Protocol server for Claude, Codex, Gemini CLI, and Cursor.",
+    "verify_terms": [
+      "browse-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/That1Drifter/browse-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bcf62b7eb87581e4f9b6ee96e3cb4c0e3c90bdb97fb6a746e32f0554f622fdd7"
+  },
+  {
+    "name": "aevra",
+    "url": "https://github.com/the-long-ride/aevra",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Secure Model Context Protocol gateway enabling ChatGPT, Claude, and Grok to remotely execute commands and control a host machine.",
+    "verify_terms": [
+      "aevra"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/the-long-ride/aevra/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7543daa61b6746e229ab8e8b92fcb6c277d2d203f7716c35700f097ee7ff45ac"
+  },
+  {
+    "name": "fast-automation (Plan-Once Ground-Locally)",
+    "url": "https://github.com/TheDivyanshShukla/plan-once-ground-locally",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "planning",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "Compares plan-once local-grounding web agents against step-by-step ReAct loops across a 200-task benchmark and 2,800 recorded runs.",
+    "verify_terms": [
+      "fast-automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TheDivyanshShukla/plan-once-ground-locally/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "47896171dcd498f15bd527695784311c5099dbc258ff3a6178aacc1ec5a1b2cf"
+  },
+  {
+    "name": "DuckTrack",
+    "url": "https://github.com/TheDuckAI/DuckTrack",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation",
+      "imitation-learning"
+    ],
+    "summary": "DuckTrack records synchronized screen video and low-level mouse and keyboard events for building multimodal computer-interaction datasets.",
+    "verify_terms": [
+      "DuckTrack"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9fed3242e39ee00ca213ac4271693a3ab5dd56dec040f36f8a278fa0d642ffdb"
+  },
+  {
+    "name": "Maudslay",
+    "url": "https://github.com/theo-ai-lab/maudslay",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "observability"
+    ],
+    "summary": "Maudslay evaluates release readiness and pass^k reliability of computer-use agents against independent backend and email ground truth.",
+    "verify_terms": [
+      "Maudslay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/theo-ai-lab/maudslay/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8e1d681c3b9dde339a2f214de304242995c451a76a36bd99497a3d4918716075"
+  },
+  {
+    "name": "MaskClaw",
+    "url": "https://github.com/Theodora-Y/MaskClaw",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "summary": "MaskClaw is an on-device privacy guardrail that intercepts sensitive GUI/tool actions and enforces self-evolving user privacy rules.",
+    "verify_terms": [
+      "MaskClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Theodora-Y/MaskClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fed18885f84907890b2d4e1447404af44f4b74cd8095e548aabb4ec64323c60d",
+    "documented_by": [
+      "2605.28646"
+    ]
+  },
+  {
+    "name": "NOVA Computer Use",
+    "url": "https://github.com/theodorebeaupre-prog/nova-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Native, local-first macOS Computer Use runtime for Codex on both Intel and Apple Silicon Macs.",
+    "verify_terms": [
+      "NOVA Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/theodorebeaupre-prog/nova-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0eba4a382a44d1b57539d7e8fdeebac15708d39866d80122cfbf990957c87db7"
+  },
+  {
+    "name": "Autonomous Vision Browser-Use Agent",
+    "url": "https://github.com/therealfullmetal55555/browser-use-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "observability"
+    ],
+    "summary": "Playwright-based vision browser agent featuring loop detection, DOM-plus-screenshot grounding, and per-step token telemetry.",
+    "verify_terms": [
+      "browser-use-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/therealfullmetal55555/browser-use-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b26131cac801a319eb35a814335627b95205f5b165b51f0488e0814831258a51"
+  },
+  {
+    "name": "ElectroMCP",
+    "url": "https://github.com/TheRealSeanDonahoe/electromcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "evaluation",
+      "observability"
+    ],
+    "summary": "Connects Claude and MCP-compatible agents to Electron desktop apps for UI clicking, screenshot capture, IPC inspection, and HAR recording.",
+    "verify_terms": [
+      "ElectroMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TheRealSeanDonahoe/electromcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "17fa658140702ce4858db92a2dc26b4b5a94d6da680a196e81bbe02836dfbcaf"
   }
 ]

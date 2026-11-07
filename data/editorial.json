@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "PatchBridge Agent",
+    "url": "https://github.com/HanHan666666/patchbridge-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Lightweight in-browser AI agent framework that retrofits natural-language automation onto legacy enterprise web portals.",
+    "verify_terms": [
+      "PatchBridge Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HanHan666666/patchbridge-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3ffde3be3932afb4d587a0ee79ceaade5232e055cb0626fa306fe55c8cf037b8"
+  },
+  {
+    "name": "hanzhangzzz dsh-computer-use",
+    "url": "https://github.com/hanzhangzzz/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Structure-first browser and desktop computer-use plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hanzhangzzz/dsh-computer-use/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77ee972f207106f65fbf3663b6b85899121e28b8f86f3c59efed7c5915d35579"
+  },
+  {
+    "name": "TEX (tex-browse-use)",
+    "url": "https://github.com/HanzMaulwurf/tex-browse-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Self-hosted browser-use engine for Claude Code that drives a real browser to operate web apps lacking APIs.",
+    "verify_terms": [
+      "TEX"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HanzMaulwurf/tex-browse-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "48c6828190076e809cdae68f7c2a2d0591ac82c5fd121b711a3db8d36fd628a1"
+  },
+  {
+    "name": "dsh-OpenLiulan (开放浏览)",
+    "url": "https://github.com/haodongzhang022-hue/OpenLiulan",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "self-reflection",
+      "robustness",
+      "automation"
+    ],
+    "summary": "Self-healing browser control framework for DeepSeek Harness featuring semantic page perception and automated fault recovery.",
+    "verify_terms": [
+      "dsh-OpenLiulan"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/haodongzhang022-hue/OpenLiulan/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0c3c4de9b5e8ca3becb3f77ea53dd30beda0ee6ba78f0f617075fede7daed917"
+  },
+  {
+    "name": "COCO4GUI",
+    "url": "https://github.com/harpreetsahota204/gui_dataset_creator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "data-generation",
+      "grounding"
+    ],
+    "summary": "COCO4GUI is an interactive screen capture and bounding-box annotation tool for building COCO-formatted GUI grounding datasets.",
+    "verify_terms": [
+      "COCO4GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/harpreetsahota204/gui_dataset_creator/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d1db45603cd0bcca37f3225e1eecb6e1aef5dddd4e92d03d57b94fce1f6ea0dc"
   }
 ]

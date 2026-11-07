@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Jev macOS Loop",
+    "url": "https://github.com/jcpsimmons/jev-macos-loop",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Jev macOS Loop combines Apple Silicon local Jev decision models, OmniParser grounding, and native macOS Accessibility actuation.",
+    "verify_terms": [
+      "Jev macOS Loop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jcpsimmons/jev-macos-loop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8837388728a03279d52bd38452b0d5193fed2ac38ec8d8038992cb985ca4ea39"
+  },
+  {
+    "name": "Sandbar",
+    "url": "https://github.com/jdrolls/sandbar-public",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Sandbar provisions isolated cloud Ubuntu desktop virtual machines equipped with OpenClaw and VNC streaming for computer-use agents.",
+    "verify_terms": [
+      "Sandbar"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jdrolls/sandbar-public/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "31f36865be77b3e97cdbdd509234151d2de9632a01a9ce9d85d130f5380b1454"
+  },
+  {
+    "name": "Agent WebBridge",
+    "url": "https://github.com/jeet-dhandha/agent-webbridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Open-source browser automation bridge and MCP server connecting Claude Code, Cursor, and coding agents to live Chrome tabs.",
+    "verify_terms": [
+      "Agent WebBridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jeet-dhandha/agent-webbridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9aaebced61e1bc0bf4fae53e202c979f562ff29c3d2a8cb8fb331032634c1b61"
+  },
+  {
+    "name": "ChatGPT Pro Workforce for Codex",
+    "url": "https://github.com/jemo19/chatgpt-pro-workforce",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Codex skill that orchestrates parallel logged-in ChatGPT Pro browser chats as a reviewable research workforce.",
+    "verify_terms": [
+      "ChatGPT Pro Workforce for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jemo19/chatgpt-pro-workforce/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a1a1e65ffba02715aaf735b520f95b06a7c08e0d9e4d9cf68834bafa16bd2178"
+  },
+  {
+    "name": "macOS-Use",
+    "url": "https://github.com/Jeomon/MacOS-Use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "macOS-Use is a GUI desktop agent that reads the macOS Accessibility tree and executes multi-step application workflows.",
+    "verify_terms": [
+      "macOS-Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jeomon/MacOS-Use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "07db1a09fa9695aa9185460f648b7bae46e355e9f491166dabdbbe4693f48b66"
   }
 ]

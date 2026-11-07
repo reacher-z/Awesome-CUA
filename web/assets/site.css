@@ -1118,6 +1118,7 @@ html:not(.js) .trail,html:not(.js) .cursor{display:none}
 .r3-band .btn-star{min-height:52px;padding:0 22px;background:#FFA69E;border-color:#FFA69E;color:#212632;font-size:1.0625rem}
 .r3-band .btn-star:hover{background:#fff;border-color:#fff;color:#212632}
 .r3-band .btn-star .i{fill:currentColor}
+@media (max-width:359px){.r3-band .btn-star{padding:0 14px;gap:6px;font-size:1rem}}
 .r3-band .btn-ghost .i{color:#D5574D;fill:currentColor}
 .r3-band .feature-tag{display:inline-flex;align-items:center;min-height:24px;padding:0 10px;border:1px solid #AEB8FF;border-radius:999px;color:#fff;font-size:var(--step-meta);font-weight:600}
 .r3-band .ident-tags{flex-wrap:wrap}

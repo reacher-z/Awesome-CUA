@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-26 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
+58 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (9)](#agents) · [Frameworks (14)](#frameworks) · [Tools (14)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
 
 ## Benchmarks
 
@@ -34,25 +34,53 @@ All entries in this section: ios.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AppClaw](https://github.com/appclawhq/AppClaw) | android, ios | — | code Apache-2.0 | AppClaw is a mobile automation agent for Android and iOS that executes natural-language tasks by inspecting accessibility trees and tapping screens. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/appclawhq/AppClaw/HEAD/README.md) |
+| [ESP32 iPhone Agent](https://github.com/onehumanbeing/esp32-iphone-agent) | ios | — | code MIT | ESP32 iPhone Agent controls unmodified iPhones via Bluetooth HID mouse/keyboard emulation from an ESP32 paired with vision-language screen parsing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/HEAD/README.md) |
+| [iPhone CUA](https://github.com/masone/iphone-cua) | ios, desktop, macos | — | — | iPhone CUA steers physical iPhones from macOS by pairing an iPhone screen/control bridge with OpenAI Computer-Using Agent models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/masone/iphone-cua/HEAD/README.md) |
+| [Minitap mobile-use](https://github.com/minitap-ai/mobile-use) | android, ios | [2602.07787](https://arxiv.org/abs/2602.07787) (2026) | code Apache-2.0 | Minitap mobile-use is a multi-agent mobile automation system that controls physical and emulated Android and iOS devices from natural language. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/minitap-ai/mobile-use/HEAD/README.md) |
 | [Mobster engine](https://github.com/RadishSoftware/mobster) | ios | — | code MIT | iOS agent engine organized around an observe, decide, verify and act loop, using WebDriverAgent screen state and phone actions such as taps, typing, swipes and app switches. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/README.md) |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | cross-platform, desktop, web, android, ios, macos, linux, windows | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0 | nanoMuse is an open-source personal agent that maintains persistent cross-device memory and executes browser, desktop, and mobile tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
 | [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | android, ios | — | code Apache-2.0 | Phone agent model and framework with device interaction tooling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/zai-org/Open-AutoGLM/HEAD/README.md) |
+| [PhysiClaw](https://github.com/physiclaw/PhysiClaw) | android, ios | — | code MIT | PhysiClaw uses an overhead camera and a 3-axis capacitive stylus gantry to physically tap and swipe unmodified smartphones. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/physiclaw/PhysiClaw/HEAD/README.md) |
+| [Pocketwatch](https://github.com/psamme/pocketwatch) | ios, desktop, macos | — | code Apache-2.0 | AI beta-testing agent for physical iPhone applications that drives user journeys over macOS iPhone Mirroring. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/psamme/pocketwatch/HEAD/README.md) |
 
 ## Frameworks
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [App Use](https://github.com/erickjtorres/app-use) | android, ios | — | code MIT | App Use is a Python framework that connects LLM agents to Android and iOS mobile applications via Appium and accessibility-tree inspection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/README.md) |
+| [Cactus](https://github.com/cactus-compute/cactus) | cross-platform, android, ios, desktop, macos, linux | — | — | Cactus is a cross-platform on-device LLM and VLM inference framework for mobile and edge AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cactus-compute/cactus/HEAD/README.md) |
+| [Fathom](https://github.com/DrizzDev/fathom) | android, ios | — | — | Fathom is an execution harness for mobile computer-use agents that translates plain-English goals into grounded actions on iOS and Android. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/DrizzDev/fathom/HEAD/README.md) |
+| [flutter_copilot](https://github.com/anasfik/flutter_copilot) | android, ios, web, desktop | — | code MIT | In-app SDK that exposes Flutter widget trees and semantic actions directly to AI agents without screenshots or OCR. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anasfik/flutter_copilot/HEAD/README.md) |
+| [glassbox](https://github.com/yoyicue/glassbox) | ios, desktop, macos | — | code MIT | glassbox is an iOS and iPadOS computer-use runtime that drives physical iPhones and iPads from screen observations and hardware/bridge control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yoyicue/glassbox/HEAD/README.md) |
+| [iOS Agent Harness](https://github.com/a178960320/ios-agent-harness) | ios | — | code MIT | iOS Agent Harness runs a Manager-Executor-Reflector GUI agent loop on iPhones to automate cross-app tasks from natural language. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/a178960320/ios-agent-harness/HEAD/README.md) |
+| [Mobile Agent Guardian](https://github.com/salus-ryan/mobile-agent-guardian) | android, ios | — | code Apache-2.0 | Five-level safety and action-verification layer for mobile GUI agents that classifies and gates risky phone operations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/salus-ryan/mobile-agent-guardian/HEAD/README.md) |
+| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [Napaxi](https://github.com/antgroup/Napaxi) | android, ios | — | code GPL-3.0 | Mobile-native agent SDK by Ant Group for building on-device AI agents with sandboxed skill execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/antgroup/Napaxi/HEAD/README.md) |
+| [Nuphus](https://github.com/mrpulor-gh/nuphus) | cross-platform, desktop, android, ios, windows, macos, linux | — | code Apache-2.0 | Local-first desktop AI agent platform with real desktop GUI execution and a companion mobile second-screen controller. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mrpulor-gh/nuphus/main/README.md) |
+| [Optics Framework](https://github.com/mozarkai/optics-framework) | cross-platform, web, android, ios | — | code Apache-2.0 | Optics Framework is a self-healing test automation engine for mobile, web, and TV interfaces with Vision/OCR fallback and an MCP server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mozarkai/optics-framework/HEAD/README.md) |
+| [Orquestrador de Features](https://github.com/gustavo-em/orchestrator-features) | android, ios, desktop | — | — | Multi-agent loop that plans React Native mobile features, writes code, drives the simulator UI, and verifies visual results. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gustavo-em/orchestrator-features/main/README.md) |
+| [PhoneClaw](https://github.com/kellyvv/PhoneClaw) | ios, android | — | code Apache-2.0 | PhoneClaw turns iOS and Android smartphones into local AI agent runtimes with on-device model inference and native system skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kellyvv/PhoneClaw/HEAD/README.md) |
+| [Qirabot](https://github.com/qirabot/qirabot) | cross-platform, web, desktop, android, ios | — | code MIT | Qirabot is a pure-vision multimodal GUI automation framework for operating browsers, mobile apps, desktops, and games without DOM selectors. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qirabot/qirabot/HEAD/README.md) |
 
 ## Tools
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobile Harness](https://github.com/droidrun/mobile-harness) | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
-| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-qa](https://github.com/vostride/agent-qa) | cross-platform, web, android, ios | — | — | agent-qa is an AI quality-assurance runner that executes natural-language user-journey tests across web, Android, and iOS interfaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vostride/agent-qa/HEAD/README.md) |
+| [Agentrooms](https://github.com/baryhuang/claude-code-by-agents) | desktop, macos, ios | — | code MIT | Agentrooms is a native macOS and iOS application for coordinating multiple local and remote coding agents in shared multi-agent workspaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/baryhuang/claude-code-by-agents/HEAD/README.md) |
+| [ascript-mcp](https://github.com/ascript-cn/ascript-mcp) | cross-platform, android, ios, desktop, windows | — | code MIT | Model Context Protocol server for automating real Android, iOS, and Windows devices from Claude, Cursor, and MCP clients. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ascript-cn/ascript-mcp/HEAD/README.md) |
+| [debug-kit](https://github.com/dxiongya/debug-kit) | cross-platform, desktop, web, macos, ios, android, windows, linux | — | code MIT | Cross-platform Agent Skill for driving, inspecting, and testing applications across macOS, iOS, Android, Web, Electron, Windows, and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dxiongya/debug-kit/HEAD/README.md) |
+| [Inner Coordinates](https://github.com/XiaoChu-1208/inner-coordinates) | desktop, macos, ios | — | code MIT | Reverse-engineers a clickable coordinate and state map of macOS and iPhone applications once for deterministic workflow replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/XiaoChu-1208/inner-coordinates/HEAD/README.md) |
+| [iphone-control (iPhone Mirroring Skill)](https://github.com/CHARLESMORGANSOFTWARE/iphone-control) | ios, desktop, macos | — | code MIT | macOS skill and CoreGraphics controller for driving a paired iPhone through Apple's macOS iPhone Mirroring app. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/CHARLESMORGANSOFTWARE/iphone-control/HEAD/README.md) |
+| [iphone-use](https://github.com/leeguooooo/iphone-use) | ios, desktop, macos | — | — | MCP server and CLI that lets Claude Code, Codex, and MCP agents read real iPhone screens as structured text and execute taps/swipes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/leeguooooo/iphone-use/HEAD/README.md) |
+| [macos-desktop-control](https://github.com/d-wwei/macos-desktop-control) | desktop, macos, ios | — | code MIT | Native macOS desktop automation MCP server providing screen capture, mouse/keyboard input, window management, and iOS Simulator control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/d-wwei/macos-desktop-control/HEAD/README.md) |
+| [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
+| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| [pi-iphone-mirroring](https://github.com/aniruddha-adhikary/pi-iphone-mirroring) | ios, desktop, macos | — | code MIT | Vision-first iPhone Mirroring control package for the Pi coding agent on macOS. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aniruddha-adhikary/pi-iphone-mirroring/main/README.md) |
+| [Safari iOS Web Inspector MCP](https://github.com/rodneyrdx/safari-ios-webinspector-mcp) | ios, desktop, macos, web | — | code MIT | TypeScript Model Context Protocol server for inspecting and debugging live iPhone Safari WebKit sessions from macOS. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rodneyrdx/safari-ios-webinspector-mcp/main/README.md) |
+| [tail-aside](https://github.com/quino0627/tail-aside) | web, android, ios | — | code MIT | Remote mobile controller for monitoring and steering the Aside browser agent over Tailscale. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/quino0627/tail-aside/main/README.md) |
+| [ToolArks Remote Login Relay](https://github.com/zdayang/remote-login-relay) | web, android, ios | — | — | Self-hosted one-tab mobile handoff relay that lets a human remotely solve login, 2FA, or CAPTCHA walls for an AI browser agent. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zdayang/remote-login-relay/main/README.md) |
 
 ## Infrastructure
 

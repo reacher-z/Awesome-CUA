@@ -86010,5 +86010,139 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "BryantVanOrden OpenAgentFleet",
+    "url": "https://github.com/BryantVanOrden/OpenAgentFleet",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Self-hosted fleet orchestrator provisioning sandboxed Linux desktop containers for autonomous computer-use agents.",
+    "verify_terms": [
+      "openagentfleet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BryantVanOrden/OpenAgentFleet/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0e6302d2b41686f4b841eaf2b00187f56081f8e86d7d4747114258e2c8a62598"
+  },
+  {
+    "name": "rdc (Remote Desktop Control for AI Agents)",
+    "url": "https://github.com/bscott/rdc",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Remote desktop control CLI and bridge allowing a coding agent to capture screenshots and send mouse/keyboard input to another machine.",
+    "verify_terms": [
+      "rdc"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bscott/rdc/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20a8313b88058fdb3d122fcf3c6e3cf11e9bcfb6ea03db4a9fdfcba9782fbd74"
+  },
+  {
+    "name": "Omarchy OMCP",
+    "url": "https://github.com/btsouth/omarchy-omcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Exposes an Omarchy Linux desktop session as a live, watchable Model Context Protocol server for AI agents.",
+    "verify_terms": [
+      "omarchy-omcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/btsouth/omarchy-omcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "945c3e5dd8db485bc33e9acc002fd793b85a4c9c4aa8ab9f105a41e4474a228e"
+  },
+  {
+    "name": "ApexCommander-RS",
+    "url": "https://github.com/buckster123/ApexCommander-RS",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "AT-SPI-first Linux computer-use CLI and Model Context Protocol server written in Rust.",
+    "verify_terms": [
+      "ApexCommander-RS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/buckster123/ApexCommander-RS/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f532165ea5fe8173b4955724f3ed0b5ca64e73e2431dd347119286e14a3aafa2"
+  },
+  {
+    "name": "CoAct-1 Implementation",
+    "url": "https://github.com/buiilding/Coact-1_Implementation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Open-source replication of the CoAct-1 hybrid coding-and-GUI multi-agent architecture evaluated on OSWorld-Verified.",
+    "verify_terms": [
+      "CoAct-1 Implementation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/buiilding/Coact-1_Implementation/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fb09d5b910dc8b9ec5a78945594add311ccb192b2e52947b5dd6b73108c51a99",
+    "documented_by": [
+      "2508.03923"
+    ]
   }
 ]

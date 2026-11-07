@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "gecko-mcp",
+    "url": "https://github.com/Frumane/gecko-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for driving Firefox-family browsers (Firefox, Floorp, LibreWolf, Waterfox, Zen, Mullvad).",
+    "verify_terms": [
+      "gecko-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Frumane/gecko-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "45dd1d1790e785682bdf203c182c2b17d85dfdff9c58b91d0ee35b1584db7be3"
+  },
+  {
+    "name": "FSoft HyperAgent",
+    "url": "https://github.com/FSoft-AI4Code/HyperAgent",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "FSoft HyperAgent coordinates Planner, Navigator, Code Editor, and Executor agents for repository-level software engineering tasks.",
+    "verify_terms": [
+      "hyperagent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/FSoft-AI4Code/HyperAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a699e973c889d4bfbc7f7aeaf61c4e208f08baf7106f8142218853ce40318c4"
+  },
+  {
+    "name": "FSB (Full Self Browsing)",
+    "url": "https://github.com/fullselfbrowsing/FSB",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Full Self Browsing (FSB) is a DOM-first browser automation runtime for Chrome and MCP clients with structured page snapshots and action replay.",
+    "verify_terms": [
+      "FSB (Full Self Browsing)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fullselfbrowsing/FSB/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8238bdcf050ec0a2a1aea7fbd8c8b5c98974446f6e2fcff68731e9e6c3f47f2c"
+  },
+  {
+    "name": "fearch",
+    "url": "https://github.com/funkyfunc/fearch",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "Model Context Protocol server providing transparent web search and clean page reading for AI agents.",
+    "verify_terms": [
+      "fearch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/funkyfunc/fearch/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a2c81507606d961bfc9b0d24755406e42ae6dc6e6bdc7e05cf1bb3fc61a6b056"
+  },
+  {
+    "name": "FurlPay Bot",
+    "url": "https://github.com/FurlPay/furlpay-bot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "sandbox",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Persistent AI teammate equipped with its own virtual computer, browser, long-term memory, and voice interface.",
+    "verify_terms": [
+      "FurlPay Bot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/FurlPay/furlpay-bot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6573a8f06766931216a642ef148d8840642baa2795b8a9fae2827860a1334c25"
   }
 ]

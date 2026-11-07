@@ -86010,5 +86010,216 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-browser-vision",
+    "url": "https://github.com/tristan-mcinnis/dsh-browser-vision",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Vision-enabled browser automation plugin for DeepSeek Harness combining Browser-Use actions with page screenshot inspection.",
+    "verify_terms": [
+      "dsh-browser-vision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tristan-mcinnis/dsh-browser-vision/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a9b38c2f2a95e2495c2b6afcac17fd1be94253e8897da7d35d31238163fcc65e"
+  },
+  {
+    "name": "Deskwright",
+    "url": "https://github.com/tristanmuzzu/deskwright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Deskwright is a cross-platform desktop automation toolkit for AI agents combining OS accessibility trees with OCR fallback and input control.",
+    "verify_terms": [
+      "Deskwright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tristanmuzzu/deskwright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6df0be1b1ed200b4227f216461fb11b5cf20f41ea45d4480d8dcbfdd80ccfdff"
+  },
+  {
+    "name": "Trope CUA",
+    "url": "https://github.com/tropeai/trope-cua",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "sandbox"
+    ],
+    "summary": "Trope CUA enables background desktop inspection and GUI operation on Windows and macOS without interrupting foreground user work.",
+    "verify_terms": [
+      "Trope CUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tropeai/trope-cua/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "71358625c7136b9cffd48c42c4ac836b82cd73befbe2b200a5ac96f369bea8a6"
+  },
+  {
+    "name": "UIAutomationMcp",
+    "url": "https://github.com/trsdn/mcp-server-uiautomation",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Windows UI Automation toolkit providing a CLI, MCP server, and VS Code extension for inspecting and driving native desktop controls.",
+    "verify_terms": [
+      "UIAutomationMcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/trsdn/mcp-server-uiautomation/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "160d7293f1e676034bf4a0090dd27871de6e13d36afa3cfeae676a3fb1fb4515"
+  },
+  {
+    "name": "chrome-eye",
+    "url": "https://github.com/trvux/chrome-eye",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Model Context Protocol server exposing 56 structured-JSON Chrome CDP tools to Claude Code as a fast alternative to screenshots.",
+    "verify_terms": [
+      "chrome-eye"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/trvux/chrome-eye/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "be6b64d73e09e126d4bae8f9d9b6ed601efdd061989e19b5517434a1872ce8b9"
+  },
+  {
+    "name": "Praefectus",
+    "url": "https://github.com/tschk/praefectus",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Policy-neutral Rust library and JSON CLI for host-authorized background computer-use execution.",
+    "verify_terms": [
+      "Praefectus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tschk/praefectus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "81b74af8c371109b5e91f38184e4423e20e5e528bc8e0081b58c74c82dbc5a6c"
+  },
+  {
+    "name": "rotary (rx4)",
+    "url": "https://github.com/tschk/rotary",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Rust agent harness engine providing tool loops, session persistence, permission gates, computer-use primitives, and MCP support.",
+    "verify_terms": [
+      "rotary (rx4)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tschk/rotary/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c3ffbb5cf610cae610bc1c0234c340a32c316089fbb5749a77f43f84134770cb"
+  },
+  {
+    "name": "ExactDelta (ActionProof)",
+    "url": "https://github.com/tsuchiyatakahirolab/actionproof",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "state-tracking",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Post-action state-delta verification harness for WebMCP browser agents that detects silent UI and state failures.",
+    "verify_terms": [
+      "ExactDelta"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tsuchiyatakahirolab/actionproof/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f727f24053c8e84b2475ba93f0e364f96eb0c162bf23d71922a713f640300eea"
   }
 ]

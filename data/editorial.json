@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dcc123456 Browser Copilot",
+    "url": "https://github.com/dcc123456/browser-copilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "AI side-panel assistant for Chrome that reads the active webpage and executes user-approved browser actions.",
+    "verify_terms": [
+      "browser copilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dcc123456/browser-copilot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b703ac4862f4503f74d12cfb1072d3c0f8415fbb9adeeafa60b2787381a5bbbc"
+  },
+  {
+    "name": "DarwinRelay",
+    "url": "https://github.com/dcierra/DarwinRelay",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Turns ChatGPT and MCP clients into local macOS agents with shell, file, PTY, and browser automation access.",
+    "verify_terms": [
+      "DarwinRelay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dcierra/DarwinRelay/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b4515b4c4035db4a68a56dd4a2728937f082423a9439823060f3bf69a40d385"
+  },
+  {
+    "name": "windows-gui-mcp",
+    "url": "https://github.com/dcl632/windows-gui-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Windows GUI automation Model Context Protocol server for AI coding and computer-use agents.",
+    "verify_terms": [
+      "windows-gui-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dcl632/windows-gui-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fba406ae7a6b5c41a660088845a5dfd25797475484efee5d1115819a745df3bf"
+  },
+  {
+    "name": "Ghost Browser by Gemma",
+    "url": "https://github.com/ddangkong/ghost-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Ghost Browser is a local browser automation agent powered by Gemma 27B via Ollama and evaluated on Stealth Bench.",
+    "verify_terms": [
+      "Ghost Browser by Gemma"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ddangkong/ghost-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8ad4dd19563bafc0c6d888710d5181c9e7c92ad8c4c2b51393c53079f5d626b2"
+  },
+  {
+    "name": "GPT-4V-Act",
+    "url": "https://github.com/ddupont808/GPT-4V-Act",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "GPT-4V-Act combines Chromium DOM auto-labeling and Set-of-Mark visual prompting to drive web browser interactions with multimodal LLMs.",
+    "verify_terms": [
+      "GPT-4V-Act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ddupont808/GPT-4V-Act/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "49984f3497e260bddcda90949cb2cc50762f95c2409ac531be940414954cd370",
+    "documented_by": [
+      "2310.11441"
+    ]
   }
 ]

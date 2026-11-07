@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "cua-desktop-automation-skills",
+    "url": "https://github.com/ChrisLamDev/cua-desktop-automation-skills",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "memory",
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Router learning system and macOS desktop automation skill pack for AI agents using Cua Driver.",
+    "verify_terms": [
+      "cua-desktop-automation-skills"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChrisLamDev/cua-desktop-automation-skills/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ca7e47e20df8537cc0c6d39c21c6c101bd4e4bb0c343af28e5494fd66d258ce6"
+  },
+  {
+    "name": "Prism AI Screen Reader",
+    "url": "https://github.com/chrismannina/prism-ai-screen-reader",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "recording",
+      "screen-understanding",
+      "observability"
+    ],
+    "summary": "Prism is a macOS screen reader and activity analyzer that captures screenshots and summarizes user desktop workflows with vision-language models.",
+    "verify_terms": [
+      "prism-ai-screen-reader"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chrismannina/prism-ai-screen-reader/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3bd729a43d3c66b94fa8c3da6ba12ed941b1d078ab2a038500c4aa53167c8950"
+  },
+  {
+    "name": "OpenDesktop & OpenWorker",
+    "url": "https://github.com/chrisschouk/open-desktop",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Cloud desktop infrastructure and container sandbox engine paired with the OpenWorker conversational desktop agent.",
+    "verify_terms": [
+      "open-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chrisschouk/open-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "99d067c7a46e729671915b565c6d1e7e5716acf35d1ac22871e41a98ac7f0867"
+  },
+  {
+    "name": "AnyBrowser",
+    "url": "https://github.com/christopher-inegbedion/anybrowser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Pluggable browser-automation and web-agent runtime supporting interchangeable LLM providers and browser engines.",
+    "verify_terms": [
+      "AnyBrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/christopher-inegbedion/anybrowser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ba4beadee6495a1403ebeb56ba2f2584624ac69739b045a65d610d96a543725d"
+  },
+  {
+    "name": "Unattended Android Automation Toolkit",
+    "url": "https://github.com/chuanchihsu1219/unattended-android-automation-toolkit",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "robustness",
+      "automation"
+    ],
+    "summary": "Reliability-first building blocks for unattended Android app automation, crash recovery, and UI state collection.",
+    "verify_terms": [
+      "Unattended Android Automation Toolkit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chuanchihsu1219/unattended-android-automation-toolkit/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8334d06318aae0bc86ff6096e3347d30f3a866ce4590b9ebbf6422b7831a2081"
   }
 ]

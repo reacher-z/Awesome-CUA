@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Vera AI Assistant",
+    "url": "https://github.com/AlperT-Code/VeraAI-Assistant-1.1",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Turkish-speaking Windows desktop voice and GUI automation assistant powered by PySide6 and LLM tool calling.",
+    "verify_terms": [
+      "Vera AI Assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AlperT-Code/VeraAI-Assistant-1.1/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e260438173d12e74b64a22214648ddb751c2a50e210029c11ef6c10c0968e8c9"
+  },
+  {
+    "name": "GenPark Browser Bot-Defense Detector Skill",
+    "url": "https://github.com/Alpha-Park/genpark-agentic-browser-bot-defense-detector-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "robustness",
+      "tool-integration"
+    ],
+    "summary": "Agent skill for detecting Cloudflare challenges, CAPTCHAs, and anti-bot walls during Playwright and Browser-Use runs.",
+    "verify_terms": [
+      "genpark-agentic-browser-bot-defense-detector-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Alpha-Park/genpark-agentic-browser-bot-defense-detector-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b3989ac6e640b3699fdbffa068890f7861e2d2fddf4defdb72dd2557c917eb92"
+  },
+  {
+    "name": "GenPark DOM Accessibility Tree Pruner Skill",
+    "url": "https://github.com/Alpha-Park/genpark-dom-semantic-accessibility-tree-pruner-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Agent skill that compresses raw HTML DOM trees into token-efficient semantic accessibility snapshots.",
+    "verify_terms": [
+      "genpark"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Alpha-Park/genpark-dom-semantic-accessibility-tree-pruner-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b91c446b8a8b504521dc5518a26744b7f52b658e3944d884aa59ec328b2c21ec"
+  },
+  {
+    "name": "GenPark Multi-Step Web Form Orchestrator Skill",
+    "url": "https://github.com/Alpha-Park/genpark-multi-step-web-form-fill-orchestrator-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Agent skill for orchestrating and validating multi-step web form filling in Playwright.",
+    "verify_terms": [
+      "genpark-multi-step-web-form-fill-orchestrator-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Alpha-Park/genpark-multi-step-web-form-fill-orchestrator-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ccdeed2f796ea176f5882a2d9a3d7eb7f012deea75c4a0611c9c462f66212b6a"
+  },
+  {
+    "name": "GenPark Self-Healing DOM Selector Skill",
+    "url": "https://github.com/Alpha-Park/genpark-self-healing-dom-semantic-selector-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Agent skill providing self-healing semantic DOM selectors resilient to CSS class and layout mutations.",
+    "verify_terms": [
+      "genpark-self-healing-dom-semantic-selector-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Alpha-Park/genpark-self-healing-dom-semantic-selector-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "192c34efb18152ae5158af08e2c33103d425597ed4917c02cdb61c306dc10a19"
   }
 ]

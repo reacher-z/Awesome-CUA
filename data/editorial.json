@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Master Internet Unit",
+    "url": "https://github.com/0bifthenelse/master-internet-unit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "High-performance Rust Model Context Protocol browser server for AI agents.",
+    "verify_terms": [
+      "Master Internet Unit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/0bifthenelse/master-internet-unit/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0a7196ba69bf8c0b3ddc4bbfb4bc0a9aa9b1eade9942d382d704883091f9bb60"
+  },
+  {
+    "name": "Deskfish",
+    "url": "https://github.com/0x11c11e/deskfish",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Deskfish is a VS Code extension that gives AI agents an isolated virtual desktop container viewable and steerable inside the editor.",
+    "verify_terms": [
+      "Deskfish"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/0x11c11e/deskfish/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "06bdaa93b572c76ebea9ab99bb8f1dbf40da7713239c281c3633bef7c164faa0"
+  },
+  {
+    "name": "pursr",
+    "url": "https://github.com/0xheycat/pursr",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "ui-design",
+      "tool-integration"
+    ],
+    "summary": "Visual QA, accessibility auditing, screenshot diffing, and MCP browser automation toolkit.",
+    "verify_terms": [
+      "pursr"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/0xheycat/pursr/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a74afaf6d6bae762ed94f9430c727c79e12d29cbfae352eff97dbe584366723f"
+  },
+  {
+    "name": "Agent WebBridge CLI",
+    "url": "https://github.com/0xIbra/agent-webbridge-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Clean-room local CDP relay (MV3 Chrome extension + daemon + CLI) for driving a user's real Chrome browser.",
+    "verify_terms": [
+      "Agent WebBridge CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/0xIbra/agent-webbridge-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "455a55bd0251e1fe7d16a44b24f6c48d0867645c8ad5ea79ef1f829700255176"
+  },
+  {
+    "name": "Market Basket Agent",
+    "url": "https://github.com/0xyene/market-basket-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Autonomous web shopping agent that compares grocery basket prices across live delivery portals.",
+    "verify_terms": [
+      "Market Basket Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/0xyene/market-basket-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "29c82eebbf48a4e4a2a69f17a49ebf9cc96a9437fda03c8ac34fd0830f9375ec"
   }
 ]

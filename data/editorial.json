@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "App Use",
+    "url": "https://github.com/erickjtorres/app-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "grounding"
+    ],
+    "summary": "App Use is a Python framework that connects LLM agents to Android and iOS mobile applications via Appium and accessibility-tree inspection.",
+    "verify_terms": [
+      "App Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/erickjtorres/app-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ed507b0d7011efab4230f05596842d2a5ac0beb53a9242933beb7f84ea0692ad"
+  },
+  {
+    "name": "Agentic Web Check",
+    "url": "https://github.com/ericovirgy/agentic-web-check",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "Agentic Web Check is a Lighthouse-style auditor that scores websites across 43 checks for AI browser-agent accessibility and controllability.",
+    "verify_terms": [
+      "Agentic Web Check"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ericovirgy/agentic-web-check/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "44a1e0dc135c83af11a159a9526d3c293d63bc305adf46c18a618cfe17f5275c"
+  },
+  {
+    "name": "ChatGPT Pro Planning Skill for Codex",
+    "url": "https://github.com/Ericwong5021/chatgpt-pro-planning-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Codex skill that delegates complex architectural planning to a logged-in ChatGPT Pro web session.",
+    "verify_terms": [
+      "ChatGPT Pro Planning Skill for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ericwong5021/chatgpt-pro-planning-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8da733a42cee45f024d96968caaa7ec810f355e36889d227c2406830a98d59c8"
+  },
+  {
+    "name": "Persona UX Test",
+    "url": "https://github.com/Ericwong5021/persona-ux-test",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design",
+      "web-navigation"
+    ],
+    "summary": "Blind-tests web and desktop user interfaces using isolated AI personas that interact strictly through rendered screens.",
+    "verify_terms": [
+      "Persona UX Test"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ericwong5021/persona-ux-test/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "00d44c55a14acddbf8145b03bc72d488f341e1bf038166b17327a49a6e4748d1"
+  },
+  {
+    "name": "macMCP",
+    "url": "https://github.com/erwinzhang7/macMCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "macOS Model Context Protocol server with per-application permission gating, Accessibility tree inspection, screenshots, and UI control.",
+    "verify_terms": [
+      "macMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/erwinzhang7/macMCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "71c9fbb680721f7fa434acb92193b199df9fc4cd584d4aec1617847ca4a521a9"
   }
 ]

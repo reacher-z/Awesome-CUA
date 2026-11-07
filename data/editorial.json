@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "invisible_dots",
+    "url": "https://github.com/feder-cr/invisible_dots",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "invisible_dots is a self-hosted cloud browser-agent workspace pairing isolated KVM virtual machines with anti-detect Firefox automation.",
+    "verify_terms": [
+      "invisible_dots"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/feder-cr/invisible_dots/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "19737ad214a108c788051ceb201ecb80246096c29315e926299e844fefae9180"
+  },
+  {
+    "name": "invisible_playwright",
+    "url": "https://github.com/feder-cr/invisible_playwright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "invisible_playwright provides a drop-in Python Playwright client backed by an anti-detect Firefox build for stealth browser agent automation.",
+    "verify_terms": [
+      "invisible_playwright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/feder-cr/invisible_playwright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1e6a8546ec6cec0a8fdfce22783a7474a628394d5cf9e9fa1516b2aa8635879d"
+  },
+  {
+    "name": "AutoFiller Universal",
+    "url": "https://github.com/Fedetrain/autofiller-universal",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "efficiency",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Batch web-form automation framework with self-healing selectors that runs LLM-free at runtime.",
+    "verify_terms": [
+      "AutoFiller Universal"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Fedetrain/autofiller-universal/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "517f436dd39a701babee2085a397b85b75a95d6c313d215d8fd13b7ee6e3b51e"
+  },
+  {
+    "name": "AgentCurtain",
+    "url": "https://github.com/felixlark/agent-curtain",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "AgentCurtain is a macOS menu-bar utility that dims physical displays and blocks physical input while keeping unattended GUI agent sessions running.",
+    "verify_terms": [
+      "AgentCurtain"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/felixlark/agent-curtain/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f449a0fa5805a457339d70f24d866db2c008c991d970988005ea2d3927c611ea"
+  },
+  {
+    "name": "macOS Control CLI",
+    "url": "https://github.com/ferdinandl007/macos-control-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "macOS Control CLI combines local OmniParser v2 UI element detection with human-like mouse, keyboard, and scroll actuation on macOS.",
+    "verify_terms": [
+      "macOS Control CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ferdinandl007/macos-control-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eac1190669562f2a7355a1ba674c4ea621224ad529eacb00596cf6603e1e8e52"
   }
 ]

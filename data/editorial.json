@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "governed-computer-use",
+    "url": "https://github.com/mkhan49/governed-computer-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "safety-security",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Discovers legacy banking UI flows with an LLM once, compiles deterministic replay artifacts, and enforces human approval on exceptions.",
+    "verify_terms": [
+      "governed-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mkhan49/governed-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "303b3559cc176203fa654221123475d460ca4a6d48fb03a6db98e67f2de5cfcb"
+  },
+  {
+    "name": "404.directory",
+    "url": "https://github.com/MM-sheng/404-directory",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "tool-integration"
+    ],
+    "summary": "Pre-execution risk preflight service and SDK that checks third-party tools and domains before AI agents invoke them.",
+    "verify_terms": [
+      "404.directory"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MM-sheng/404-directory/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "854b59c83583de47661a87adb4ec77b72d545a78c87d58b39c74c3ad9fc88d91"
+  },
+  {
+    "name": "Pursuit Permit WebMCP",
+    "url": "https://github.com/MoAqil/pursuit-permit-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "state-tracking",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Revision-bound capacity permit protocol for WebMCP browser agents that invalidates stale approvals when page state changes.",
+    "verify_terms": [
+      "pursuit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MoAqil/pursuit-permit-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77d74568bac5ca24929580f2daf1431932de34ab653f2df6163f82054b4ccaa6"
+  },
+  {
+    "name": "solari-playtest",
+    "url": "https://github.com/moazessam376-dev/solari-playtest",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Autonomous playtesting agent and evaluation harness on Solari that builds web games from Git and tests gameplay in a real browser.",
+    "verify_terms": [
+      "solari-playtest"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/moazessam376-dev/solari-playtest/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9c34786a1969fdc2d9811edfce4b12c99ff6f07082ac178c5617319c97cebf6d"
+  },
+  {
+    "name": "DroidBot-GPT",
+    "url": "https://github.com/MobileLLM/DroidBot-GPT",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "DroidBot-GPT connects DroidBot UI state extraction with large language models to automate multi-step tasks across Android applications.",
+    "verify_terms": [
+      "DroidBot-GPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MobileLLM/DroidBot-GPT/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5ef1a1f5fe86c5cb05ce7de60ece6cfe4750750fa83c9a73fd86f1be9d033248",
+    "documented_by": [
+      "2304.07061"
+    ]
   }
 ]

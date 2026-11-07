@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "957d39e9ad0ed1d05c9f7ee672e4c69b74b8c7f7cc7ca34d89ae2ef10ff6a40f",
-  "observation_snapshot_sha256": "afe45751962bd99719d92cbcbc9d79fc972865ce25b3ff892e463bf9d77406fd",
+  "manifest_sha256": "28f8f3de559dc0e4c241e67f52e7418e2d7d0292d07f9717e1d237742626d904",
+  "observation_snapshot_sha256": "09184553d2babc8dc9e5e04f8bf0d083ac2c993747afad3ad687eedc74551f67",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3833,11 +3833,48 @@
           }
         },
         "id": "04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e"
+      },
+      {
+        "active_records": 2623,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8191490,
+            "sha256": "788ba21a6247c47c4d7bf90943ef92096355578785c464426ce68511ee7b481a"
+          },
+          "catalog.jsonl": {
+            "bytes": 7561370,
+            "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "input_id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "kind": "existing",
+        "last_attempt": 863,
+        "next_index": 172,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e",
         "input_id": "04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e",
@@ -3845,7 +3882,7 @@
         "last_attempt": 858,
         "next_index": 166,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:48142799da4e30f2208ec9890b46c027a6ebe8ec43ae827a8699f45773a1d466",
@@ -80500,6 +80537,114 @@
         "run_id": "run:055bfe15a51e63056cfb70b5",
         "source_url": "https://api.github.com/repos/aider-ai/aider",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          303795676
+        ],
+        "finished_at": "2026-11-07T08:39:55.907870+00:00",
+        "id": "receipt:e46069fd050616a673c2fd391cdf24af287b74699b7bfccfb791056d256cc856",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 167,
+        "query_id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "6670c453e6578730e0824b22b4753c729079e4542b184d7a1dc42ac7081b8dbd",
+        "requested_at": "2026-11-07T08:39:55.672914+00:00",
+        "response_bytes": 5198,
+        "response_sha256": "9ec72f43656a1868af22ccb64b25e1be1d575fa160fd251c428964db5923e769",
+        "returned_count": 1,
+        "run_id": "run:c4f3ea9afe84a79d534c8d7f",
+        "source_url": "https://api.github.com/repos/alfworld/alfworld",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1177304101
+        ],
+        "finished_at": "2026-11-07T08:40:02.426412+00:00",
+        "id": "receipt:426f3ff2f2fcc27ab20996f387c9a77159ac877b1d5a842030b3b4d5a2a5bc5a",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 168,
+        "query_id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d49b05f0a8477fb7345cf257e12b02474cc97dcee36938ba50a15ca456949af1",
+        "requested_at": "2026-11-07T08:40:02.181769+00:00",
+        "response_bytes": 5265,
+        "response_sha256": "afbd6927548481359d542955d828866cdce19c012ad384f5fe15f27ce763de41",
+        "returned_count": 1,
+        "run_id": "run:c4f3ea9afe84a79d534c8d7f",
+        "source_url": "https://api.github.com/repos/algopian/chromeclaw",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-07T08:40:08.892306+00:00",
+        "id": "receipt:e1c093b49a717d5633137fca1b1774413f855e35f5032d88d5bb957e979f9a2c",
+        "incomplete_results": null,
+        "outcome": "redirect_not_followed",
+        "position": 169,
+        "query_id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "4d012d75886db7cd7c463b706a980078b6b1c0c29f91b0d9559596e1c3d7ab28",
+        "requested_at": "2026-11-07T08:40:08.692088+00:00",
+        "response_bytes": 198,
+        "response_sha256": "810a8dd4f8660c1f7f022431c1ff43ba8b61227ac7840f0d8fe6cef3c0db5e47",
+        "returned_count": null,
+        "run_id": "run:c4f3ea9afe84a79d534c8d7f",
+        "source_url": null,
+        "status": 301
+      },
+      {
+        "accepted_repository_ids": [
+          715977480
+        ],
+        "finished_at": "2026-11-07T08:40:15.471741+00:00",
+        "id": "receipt:d14a618402baf9ab7093c66283d08d5f737692d5fdc873c4a87273502256d03f",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 170,
+        "query_id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "97dfd98bd12d7fee43dba28ee79d581361cb34a0fe8809c1384085f3991bc55f",
+        "requested_at": "2026-11-07T08:40:15.200803+00:00",
+        "response_bytes": 6463,
+        "response_sha256": "da5f0c4351cb371f1b485abdf08a38e22e7230b3797b1ea81f0126044c8a7c41",
+        "returned_count": 1,
+        "run_id": "run:c4f3ea9afe84a79d534c8d7f",
+        "source_url": "https://api.github.com/repos/alibaba/cloudeval-yaml",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          181436799
+        ],
+        "finished_at": "2026-11-07T08:40:21.952834+00:00",
+        "id": "receipt:5372f571241f92060f86446205941e3fb0e904bd0656d409996c934f03f519af",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 171,
+        "query_id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "c0333478e855a6a582079d90ff56955002dc37d6b8e0ecccdf85c1ebd79cd720",
+        "requested_at": "2026-11-07T08:40:21.709768+00:00",
+        "response_bytes": 6144,
+        "response_sha256": "567f59f58020ec3689c6f7fcd9588a50072e567afed495e2890415195a79f28b",
+        "returned_count": 1,
+        "run_id": "run:c4f3ea9afe84a79d534c8d7f",
+        "source_url": "https://api.github.com/repos/alibaba/mnn",
+        "status": 200
       }
     ],
     "runs": [
@@ -83744,9 +83889,40 @@
         "strict_replay": true,
         "unknown_requests": 2,
         "wall_seconds_budget": 187.80284501900002
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10226,
+        "before_unique_repositories": 10222,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T08:40:24.752753+00:00",
+        "id": "run:c4f3ea9afe84a79d534c8d7f",
+        "input_id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "new_unique_repositories": 4,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "e04890a19cd94ddba245e8d0e589e3e4"
+        },
+        "started_at": "2026-11-07T08:39:47.670871+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 195.047205513
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "09102ab9a3f8b98c490b9c4150533bea11bafcfe5951198e4d9782de4881585d"
+  "state_sha256": "5c072c85bf7c832d04d7bffd277cff4f109f7099204e81b03adee37949efa402"
 }

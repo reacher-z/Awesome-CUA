@@ -86010,5 +86010,231 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "CamoFox MCP",
+    "url": "https://github.com/redf0x1/camofox-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server connecting Claude Desktop, Cursor, and OpenClaw to CamoFox anti-detection browser instances.",
+    "verify_terms": [
+      "CamoFox MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/redf0x1/camofox-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e3c3d5342a21ccaaab8d03f7f5801c73f31df85bfb39fcffe804adb205159e37"
+  },
+  {
+    "name": "RegionCUA",
+    "url": "https://github.com/Region-AI/region-cua",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "grounding"
+    ],
+    "summary": "RegionCUA is a local Ollama-powered desktop agent that explores GUI applications and generates documented screenshots, videos, and replay scripts.",
+    "verify_terms": [
+      "RegionCUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Region-AI/region-cua/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d6063cebf29beeed93c65e460e91efac467664afe0bd68907a2448cc7146903a"
+  },
+  {
+    "name": "settled-computer",
+    "url": "https://github.com/Remote-Skills/settled-computer",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "tool-integration",
+      "state-tracking"
+    ],
+    "summary": "settled-computer is an event-driven MCP server that detects UI rendering quiescence so computer-use agents avoid fixed sleep delays and stale frames.",
+    "verify_terms": [
+      "settled-computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Remote-Skills/settled-computer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1adb9b58782ae144e8db24a976626b171cd2c22551dab0ad4a34f836b2fa56fb"
+  },
+  {
+    "name": "browserground",
+    "url": "https://github.com/renezander030/browserground",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "browserground is a compact Qwen3-VL-2B LoRA visual UI-grounding model that maps screenshots and text targets to bounding-box JSON.",
+    "verify_terms": [
+      "browserground"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/renezander030/browserground/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8e153a44312b17fb6e4e3b1aaa7089cfb46f64a87e2e9fd90dc187d4e640608"
+  },
+  {
+    "name": "Renoned dsh-computer-use",
+    "url": "https://github.com/Renoned/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Capability-aware macOS computer-use plugin for DeepSeek Harness combining Accessibility-first queries with Vision Router fallback.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Renoned/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b270af18aa317ba30727ebae9a561aa47e238bc3ca39689567e5e62d1b6e6a91"
+  },
+  {
+    "name": "Resolvr TypeScript SDK",
+    "url": "https://github.com/resolvrlabs/resolvr-typescript",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Official TypeScript SDK for the Resolvr anti-bot challenge-solving API in browser automation pipelines.",
+    "verify_terms": [
+      "Resolvr TypeScript SDK"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/resolvrlabs/resolvr-typescript/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "83cb40aa6d4918fe1698cc442422242b9db0fd6b5873117c9d7aeeaf71a2abee"
+  },
+  {
+    "name": "AgentGPT",
+    "url": "https://github.com/reworkd/AgentGPT",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "AgentGPT is a browser-based platform for configuring and deploying autonomous goal-driven LLM agents that decompose tasks and browse the web.",
+    "verify_terms": [
+      "AgentGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/reworkd/AgentGPT/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "93e162f0fd70c55376ba1f597097f9e61d72a52a8da37d7ae90b1a03c6425ea1"
+  },
+  {
+    "name": "Bananalyzer",
+    "url": "https://github.com/reworkd/bananalyzer",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Bananalyzer is an evaluation framework and dataset suite for testing web agents on structured data extraction and navigation tasks.",
+    "verify_terms": [
+      "Bananalyzer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/reworkd/bananalyzer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c7f5574143b871394c3f3ad38635eb6c2e00f37bd435dbb524c2ba68d8696245"
+  },
+  {
+    "name": "Maestro (AI-Drivable RPA)",
+    "url": "https://github.com/rexchengm/maestro",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "automation",
+      "imitation-learning"
+    ],
+    "summary": "Records a desktop or browser task once and lets AI optimize, parameterize, and replay it as a deterministic RPA workflow.",
+    "verify_terms": [
+      "Maestro"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rexchengm/maestro/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dae05e06266dec7dd9bcc87fb4382f8985acb4832e863b43c5bfd4059faa747b"
   }
 ]

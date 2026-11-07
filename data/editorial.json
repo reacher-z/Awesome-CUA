@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "E2-Mem",
+    "url": "https://github.com/jianminYa/e2mem",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon",
+      "web-navigation"
+    ],
+    "summary": "E2-Mem is an episodic-event hierarchical memory framework for long-horizon web agents evaluated on WebArena.",
+    "verify_terms": [
+      "E2-Mem"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jianminYa/e2mem/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f3dbc324f1d8fefa9bf71a8a30eb996d19e5d57e922bb2d824bdf942dbcbcd12"
+  },
+  {
+    "name": "Svate",
+    "url": "https://github.com/JIEAO-re/Svate",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "safety-security",
+      "self-reflection",
+      "automation"
+    ],
+    "summary": "Svate is an on-device Android UI automation agent combining Accessibility trees, screenshots, pre-action safety checks, and recovery.",
+    "verify_terms": [
+      "Svate"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JIEAO-re/Svate/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0969924480af88ab14dcf5785367a685a12698178b5e6778e99fdff30a37b969"
+  },
+  {
+    "name": "dsh-jiey-browser",
+    "url": "https://github.com/jiewaigongxing/dsh-jiey-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness plugin exposing Jiey Browser automation tools over the Model Context Protocol.",
+    "verify_terms": [
+      "dsh-jiey-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jiewaigongxing/dsh-jiey-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6571d744e1027e9eb57048940b9c44587cf3fda9e779059a1a1dc3550076048f"
+  },
+  {
+    "name": "dsh-plugin-openbot",
+    "url": "https://github.com/jimmyjdejesus-cmyk/dsh-plugin-openbot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native Cordis plugin for DeepSeek Harness integrating CopilotKit OpenBot container sandboxing and computer use.",
+    "verify_terms": [
+      "dsh-plugin-openbot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jimmyjdejesus-cmyk/dsh-plugin-openbot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "691f37d55ca1df586ccb76f839f4305fa0cfcb4326e5fd8711a8d596e36d7eee"
+  },
+  {
+    "name": "jing-hy computer-user (DSH Windows Plugin)",
+    "url": "https://github.com/jing-hy/computer-user",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Codex-style Windows computer-use plugin for DeepSeek Harness supporting screen reading and mouse/keyboard input.",
+    "verify_terms": [
+      "computer-user"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jing-hy/computer-user/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e616e780d524455630d67e1e49c20b3b1b4537c05170f4afd3a57fb469b0aa16"
   }
 ]

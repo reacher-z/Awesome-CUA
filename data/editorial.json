@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Hermes Connector",
+    "url": "https://github.com/CorsenAI/hermes-connector",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Hermes Connector is a Chrome extension that bridges Hermes Agent to the user's live browser tabs, DOM context, and authenticated sessions.",
+    "verify_terms": [
+      "Hermes Connector"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CorsenAI/hermes-connector/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e76f6c49fe471447984565216fe5629e21e953d48c3c489056c077a4cb305af3"
+  },
+  {
+    "name": "claude-chrome-speed",
+    "url": "https://github.com/cr1707/claude-chrome-speed",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Claude Code plugin that accelerates Claude in Chrome browser tasks by batching DOM reads and eliminating redundant screenshot waits.",
+    "verify_terms": [
+      "claude-chrome-speed"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cr1707/claude-chrome-speed/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "349d3e7f59ea1654bcf781cc4ff7f0101e58b31d9ec3cb9f3fe485a30775104e"
+  },
+  {
+    "name": "Crafter Agents cuse CLI",
+    "url": "https://github.com/crafter-agents/cuse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Cross-platform computer-use CLI that maps unified commands to native OS accessibility and input primitives.",
+    "verify_terms": [
+      "cuse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/crafter-agents/cuse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b6f896301e917c114366bed3e1ee487d6687753d9b10c9770a16d0abc3e39268"
+  },
+  {
+    "name": "JARVIS-1",
+    "url": "https://github.com/CraftJarvis/JARVIS-1",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "self-reflection",
+      "long-horizon"
+    ],
+    "summary": "JARVIS-1 is an open-world multimodal Minecraft agent with episodic multimodal memory and goal-conditioned keyboard/mouse control.",
+    "verify_terms": [
+      "JARVIS-1"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CraftJarvis/JARVIS-1/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b8fc1f1ee7512816e62bfbcc7ffc290cac0dc73173156c7f8ff18e84c429aa09"
+  },
+  {
+    "name": "hyprbench",
+    "url": "https://github.com/crispwisp/hyprbench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "hyprbench is an OSWorld-style computer-use benchmark for the Linux Hyprland Wayland compositor with scripted window-management verifiers.",
+    "verify_terms": [
+      "hyprbench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/crispwisp/hyprbench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "04e30af26bc075f96deea6ea6bd46ba5743c725a1ecb89866d29b6236cfc9c65"
   }
 ]

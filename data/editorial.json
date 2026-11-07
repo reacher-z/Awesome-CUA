@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Browser Forest MCP Server",
+    "url": "https://github.com/jinmojing/browser-forest-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Model Context Protocol server for driving anti-detect kernel-patched Chromium cloud browser profiles.",
+    "verify_terms": [
+      "Browser Forest MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jinmojing/browser-forest-mcp-server/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "da20c19b5e2b932bec411294a382c9633559719e339491e08339000db283b582"
+  },
+  {
+    "name": "Xihe Agent (羲和)",
+    "url": "https://github.com/jiugao-yi/xihe-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Single-process tool-calling agent runtime operating across CLI, enterprise chat gateways, desktop GUI, and real browsers.",
+    "verify_terms": [
+      "xihe-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jiugao-yi/xihe-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "335e54ec8da818bc7f46b479f415693a61be997dca5726bd6e03e171f8077e81"
+  },
+  {
+    "name": "SimpAgent",
+    "url": "https://github.com/JiuTian-VL/SimpAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "grounding",
+      "mobile-navigation"
+    ],
+    "summary": "SimpAgent implements context-aware history simplification and visual token pruning to accelerate multimodal GUI agents.",
+    "verify_terms": [
+      "SimpAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JiuTian-VL/SimpAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "97eb4cde1d95f711ed578ca09e93483b3005ff45e24107e14ffb5ffecbafdd96",
+    "documented_by": [
+      "2507.03730"
+    ]
+  },
+  {
+    "name": "Gofer",
+    "url": "https://github.com/jleuth/gofer",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "observability"
+    ],
+    "summary": "Gofer is a persistent desktop agent that monitors screen changes, executes shell and GUI actions, and communicates via Telegram or a local REPL.",
+    "verify_terms": [
+      "Gofer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jleuth/gofer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c12990318dfeba0c3c9bdcd266c799118288118c44368fec2b59de2b44feac19"
+  },
+  {
+    "name": "nanoAWM (Agent World Model Lab)",
+    "url": "https://github.com/jlov7/nanoAWM",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "world-models",
+      "planning",
+      "reward-models"
+    ],
+    "summary": "nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents.",
+    "verify_terms": [
+      "nanoAWM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d4fe0096111c76ca906c3e96be7c2fd46fca5bce227e8a6af5e36fe93f5e8cb6"
   }
 ]

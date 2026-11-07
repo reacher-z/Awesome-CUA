@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Computer Use AI SDK",
+    "url": "https://github.com/mediar-ai/MCP-server-client-computer-use-ai-sdk",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Computer Use AI SDK provides an MCP server and client that drives desktop applications through native OS accessibility trees.",
+    "verify_terms": [
+      "Computer Use AI SDK"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mediar-ai/MCP-server-client-computer-use-ai-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fa115abeda7c1784fb051e1af891a78cb50625ef3edcb8f935c2ece5d3edb127"
+  },
+  {
+    "name": "Terminator",
+    "url": "https://github.com/mediar-ai/terminator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Terminator is an accessibility-first desktop automation SDK and MCP server for controlling Windows, macOS, and Linux GUI applications.",
+    "verify_terms": [
+      "Terminator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mediar-ai/terminator/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4beabfce04ca3ff8d3016651b55ee776eec232bb31ebb30acd5bfa80b44acc02"
+  },
+  {
+    "name": "agent-bench",
+    "url": "https://github.com/MeGaurav4/agent-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "agent-bench evaluates browser-based AI agents across 50 web tasks spanning navigation, form filling, search, and e-commerce checkout.",
+    "verify_terms": [
+      "agent-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MeGaurav4/agent-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f93e8e9b24195e4f4c3f6602914daaeceb3252fa1473bb1875c8a16166110ef4"
+  },
+  {
+    "name": "cdpilot",
+    "url": "https://github.com/mehmetnadir/cdpilot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Zero-dependency browser automation CLI built directly on raw Chrome DevTools Protocol WebSockets without Playwright or Puppeteer.",
+    "verify_terms": [
+      "cdpilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mehmetnadir/cdpilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "96d0c85e75b68508ca4909b54d67fe28601b3bc5c8178f4d2e354e0410ed5fed"
+  },
+  {
+    "name": "Shinken",
+    "url": "https://github.com/Meirtz/Shinken",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "sandbox",
+      "efficiency",
+      "data-generation"
+    ],
+    "summary": "Shinken is a high-throughput runtime for training computer-use agents end-to-end with reinforcement learning across parallel real desktops.",
+    "verify_terms": [
+      "Shinken"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Meirtz/Shinken/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c4bdff355c887b17e1b5e28aad433ae6d15b168770c306e373ac37aa345104ab"
   }
 ]

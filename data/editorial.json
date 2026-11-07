@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "HelpRelay WebMCP",
+    "url": "https://github.com/AkiGarage/helprelay-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "safety-security",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Dependency-free WebMCP collaboration runtime enabling human operators and browser agents to co-navigate web tasks safely.",
+    "verify_terms": [
+      "helprelay-webmcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AkiGarage/helprelay-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a3c333f5e79fbb9e09b7888ff73b17227b48515f730438a46c0ce721139d53a"
+  },
+  {
+    "name": "Bellwether",
+    "url": "https://github.com/al-mohad/bell-weather",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "workflow"
+    ],
+    "summary": "Bellwether measures multi-trial pass^k consistency of computer-use agents on legacy enterprise UI workflows.",
+    "verify_terms": [
+      "Bellwether"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/al-mohad/bell-weather/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5cdd12de673bbd9cbd3262b2049474c85d13b0dc16c32c1239d211ad5dc8883b"
+  },
+  {
+    "name": "BrowserAgentRegression",
+    "url": "https://github.com/AlbertXXuu/BrowserAgentRegression",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Local-first regression testing benchmark for evaluating browser agents against controlled UI and DOM mutations.",
+    "verify_terms": [
+      "BrowserAgentRegression"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AlbertXXuu/BrowserAgentRegression/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8721526c46614364df44fbf1940e69c6ef89f28ec9c60a1a8ba9693ec67d2a6c"
+  },
+  {
+    "name": "Automify",
+    "url": "https://github.com/aldovincenti/automify",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Automify is a Node.js computer-use framework unifying browser, CLI, and native desktop workflow automation for AI agents.",
+    "verify_terms": [
+      "Automify"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aldovincenti/automify/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fb3c87faa6248ff9733df8fc4d28d5a98736dc7f62a657b11a15b52ae8c0a1a1"
+  },
+  {
+    "name": "WinWright",
+    "url": "https://github.com/alegauss/winwright",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "automation",
+      "observability"
+    ],
+    "summary": "Playwright-inspired Windows desktop automation and testing framework that drives native apps and reports verified UI state.",
+    "verify_terms": [
+      "WinWright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alegauss/winwright/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7b916e56e2f27bde27333cbcc84f61ce0a93b1d94a2af954a5d71af879917c36"
   }
 ]

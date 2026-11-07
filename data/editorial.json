@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "grokbot-cdp",
+    "url": "https://github.com/DaizeDong/grokbot-cdp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Python client that drives the cloud browser and virtual machine behind xAI's Grok computer-use agent over the Chrome DevTools Protocol.",
+    "verify_terms": [
+      "grokbot-cdp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DaizeDong/grokbot-cdp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3dd3a0682ec671c2eb063709ff10024b949b6319d67f9eb8cefc44d350498b3f"
+  },
+  {
+    "name": "screen-vision",
+    "url": "https://github.com/DaizeDong/screen-vision",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Captures desktop windows and extracts UI elements and buttons with pixel coordinates combining accessibility trees and OCR.",
+    "verify_terms": [
+      "screen-vision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DaizeDong/screen-vision/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a8b34b2bdec023a3a9167db64333a260be95161c3aa1ff2c66fc4662e5d3c6f"
+  },
+  {
+    "name": "SIH26 Privacy-Preserving Browser Agent",
+    "url": "https://github.com/DALWADI-ARYAN-PRANAVKUMAR/SIH_26",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "screen-understanding",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Privacy-preserving AI browser agent framework that sanitizes sensitive DOM and screen fields before LLM planning.",
+    "verify_terms": [
+      "align"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DALWADI-ARYAN-PRANAVKUMAR/SIH_26/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "91dd837e92443bcb1170292ece749028f5f8bc6d31d0ff946f0ea85540918a80"
+  },
+  {
+    "name": "robotsix-browser",
+    "url": "https://github.com/damien-robotsix/robotsix-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Interactive Playwright headless-browser and form-filling HTTP service for AI agents.",
+    "verify_terms": [
+      "robotsix-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/damien-robotsix/robotsix-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f0e6923797628185fc449f28bcbcb875655f49e6eae405c46d6bfa25456fe9b7"
+  },
+  {
+    "name": "shortcut-pad-mcp",
+    "url": "https://github.com/darkspaz-v1/shortcut-pad-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local Model Context Protocol server for listing and launching Windows applications and macros through Shortcut Pad.",
+    "verify_terms": [
+      "shortcut-pad-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/darkspaz-v1/shortcut-pad-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08ece61f10717d9af1086415e606cb4813b4f6e6b6c21342efb61b4bb8bf9d4a"
   }
 ]

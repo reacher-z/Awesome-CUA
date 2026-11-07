@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "lazy-desktop-mcp",
+    "url": "https://github.com/leaf76/lazy-desktop-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Local-first desktop control MCP server combining a Rust native host and Node.js launcher with policy-gated computer-use tools.",
+    "verify_terms": [
+      "lazy-desktop-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/leaf76/lazy-desktop-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6083136ac58d9a523d1d41ffacb9ae6e0b5d169ed23167bd5b518f9eedb544a3"
+  },
+  {
+    "name": "gui_agent (FastMCP Desktop Server)",
+    "url": "https://github.com/leandre755/gui_agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "FastMCP server for Linux and Windows desktop computer use providing low-latency screen capture, OCR, and input automation.",
+    "verify_terms": [
+      "gui_agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/leandre755/gui_agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8353c18695736e8467518367020db3916363832c7fa504c12b18f860d0708bd2"
+  },
+  {
+    "name": "Personae Browser",
+    "url": "https://github.com/leek-emperor/Personae",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "safety-security"
+    ],
+    "summary": "Desktop browser where every identity runs in an isolated Chromium partition for multi-account human and agent workflows.",
+    "verify_terms": [
+      "personae"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/leek-emperor/Personae/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5fb43abead02325b808e0f4c878d7fa56fa7542bf3a6610cef4876d8a8497de8"
+  },
+  {
+    "name": "UnderPixel",
+    "url": "https://github.com/Leluth/underpixel",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "observability",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Chrome extension and MCP server that correlates timestamped visual screen interactions with underlying network API calls.",
+    "verify_terms": [
+      "UnderPixel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Leluth/underpixel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cd65928a60ceab4e267570f10795b154b80fed46c36ab89222fdbbb96b4304a8"
+  },
+  {
+    "name": "Taprun (tap)",
+    "url": "https://github.com/LeonTing1010/tap",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Captures a logged-in browser task demonstration once and compiles it into a deterministic zero-token replay skill.",
+    "verify_terms": [
+      "Taprun"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LeonTing1010/tap/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20e4b84d04709fdb9b5494d73f5a0a276a94892e05af09b8b3bc31b85c5ac89b"
   }
 ]

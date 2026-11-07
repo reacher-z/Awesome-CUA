@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "open-cowork",
+    "url": "https://github.com/coasty-ai/open-cowork",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "open-cowork is an open-source computer-use coworker that operates local desktops, cloud VMs, and browsers with human-in-the-loop approval.",
+    "verify_terms": [
+      "open-cowork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/coasty-ai/open-cowork/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3647ef0eeac770ec966f74cff3f931f570b693e831ea702daa7acf667ffc33dc"
+  },
+  {
+    "name": "fara-7b-agent",
+    "url": "https://github.com/cobusgreyling/fara-7b-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Minimal, fully local agent harness for running Microsoft's Fara-7B computer-use model on desktop and browser tasks.",
+    "verify_terms": [
+      "fara-7b-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cobusgreyling/fara-7b-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3d8589fc8629e8dbf478fc196b2509711374d015cc63deed9b0fa6ab305eb584"
+  },
+  {
+    "name": "WebMCPcss",
+    "url": "https://github.com/cochinoraptor/WebMCPcss",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "ui-design",
+      "web-navigation"
+    ],
+    "summary": "Extends the WebMCP standard by declaring agent-callable website actions and semantic affordances directly through CSS rules.",
+    "verify_terms": [
+      "WebMCPcss"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cochinoraptor/WebMCPcss/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9ce487f698edb52340529de13c61e98ce5c370a5ccba061d5fe8cb29212d7d78"
+  },
+  {
+    "name": "OmOWright",
+    "url": "https://github.com/code-yeongyu/omowright",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "AI-agent-oriented wrapper around Playwright that exposes the Playwright API shape models already know from pretraining.",
+    "verify_terms": [
+      "OmOWright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/code-yeongyu/omowright/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b11aa403ef62fe69705a46f9fc0f939123c90f10945233689d362828ee947ff6"
+  },
+  {
+    "name": "Handrail CUA",
+    "url": "https://github.com/codelit-io/handrail-cua",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "safety-security",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Discover-once, replay-many computer-use automation framework with deterministic execution guardrails.",
+    "verify_terms": [
+      "handrail-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/codelit-io/handrail-cua/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a55bb7f0a244875c2c5cb29f06db27d757c1511ea8e3a94323e8ace74653fdc"
   }
 ]

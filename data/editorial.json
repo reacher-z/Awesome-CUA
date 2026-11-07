@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Voice Mirror",
+    "url": "https://github.com/contextmirror/voice-mirror",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "ui-design",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Voice Mirror is a Tauri desktop IDE where voice and multimodal agents inspect, click, and live-edit rendered web applications.",
+    "verify_terms": [
+      "Voice Mirror"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/contextmirror/voice-mirror/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2f69c6f4e4c46c2ed600b51e6e87b8eba2467988c2ff38ad68f589c478912bbd"
+  },
+  {
+    "name": "G0DM0D3 AG3NT",
+    "url": "https://github.com/cooding3d/G0DM0D3-AG3NT",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Permission-first local AI control center for Windows orchestrating local models, desktop actions, and browser tools.",
+    "verify_terms": [
+      "g0dm0d3-ag3nt"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cooding3d/G0DM0D3-AG3NT/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d21b135ccf6c061664b0fbd7d9acfffe78ddbdb801427472413ac118ba7bca9e"
+  },
+  {
+    "name": "Browser Agent Runtime Lite",
+    "url": "https://github.com/coolwkx/browser-agent-runtime-lite",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Lightweight runtime for executing autonomous browser-agent perception and action loops.",
+    "verify_terms": [
+      "Browser Agent Runtime Lite"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/coolwkx/browser-agent-runtime-lite/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b97a5f6178aa01ac7df6b440106deb8489f369e9405d0ab725abd5a7a87d2cdf"
+  },
+  {
+    "name": "CopilotKit OpenBot",
+    "url": "https://github.com/CopilotKit/OpenBot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Self-hosted enterprise AI assistant and computer-use workspace by CopilotKit with containerized sandboxing and skill orchestration.",
+    "verify_terms": [
+      "openbot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CopilotKit/OpenBot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7c00372f0c436f51e3559fd0e85046cdeddcc9b7089996fc40b8ba8285d0593f"
+  },
+  {
+    "name": "OpenGUI",
+    "url": "https://github.com/Core-Mate/OpenGUI",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "planning",
+      "automation"
+    ],
+    "summary": "OpenGUI is an Android GUI agent framework that combines screen perception, accessibility trees, and ADB actuation for real-device automation.",
+    "verify_terms": [
+      "OpenGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Core-Mate/OpenGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "40407d8a2f16b1e665f539ab39a30cf57866e014751a43aeb95a8252fddb768d"
   }
 ]

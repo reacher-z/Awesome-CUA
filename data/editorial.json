@@ -86010,5 +86010,207 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Claude Computer-Use Tools MCP Server",
+    "url": "https://github.com/yossifibrahem/computer-use-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Model Context Protocol server replicating Anthropic Claude's built-in computer-use tools (`view`, `click`, `type`, `key`) for any MCP client.",
+    "verify_terms": [
+      "computer-use-mcp-server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yossifibrahem/computer-use-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5075d9088410fa40fea85894d73c63e70db9adaacaeb140cd23c3ed8ca8395f3"
+  },
+  {
+    "name": "local-browser-agent",
+    "url": "https://github.com/yourself-q/local-browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Local-first browser agent that attaches to an existing Chrome instance via CDP and runs entirely on local Ollama LLMs.",
+    "verify_terms": [
+      "local-browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yourself-q/local-browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ecd6ba8bcd44a1cd3ece545e2491ae2eee500b9bba4cd46d8c207524121f0cef"
+  },
+  {
+    "name": "glassbox",
+    "url": "https://github.com/yoyicue/glassbox",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "ios",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "automation"
+    ],
+    "summary": "glassbox is an iOS and iPadOS computer-use runtime that drives physical iPhones and iPads from screen observations and hardware/bridge control.",
+    "verify_terms": [
+      "glassbox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yoyicue/glassbox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fd618f11b3261ad0324e07bc980da667afb6c8cb0ca80094e37a17083304a364"
+  },
+  {
+    "name": "dsh-local-browser-search (dsh-search)",
+    "url": "https://github.com/YUANMINGXUE/dsh-search",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "Local-browser web search and page-fetching plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh-local-browser-search"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/YUANMINGXUE/dsh-search/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f7ebf97f6edf84816e8b4c2acacd4a740bf9f792d8a1f38b036b8881e7133032"
+  },
+  {
+    "name": "agentwatch",
+    "url": "https://github.com/yubinkim444/agentwatch",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Translucent in-tab DevTools HUD overlay for browser AI agents that displays live agent thoughts, targets, and actions.",
+    "verify_terms": [
+      "agentwatch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yubinkim444/agentwatch/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ef2460c70dd8dd3abc83f1fc874de47c838e34d1974009852fdc5fb80f38d0a1"
+  },
+  {
+    "name": "Codex ChatGPT Pro Bridge",
+    "url": "https://github.com/Yubo-Cao/codex-chatgpt-pro-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Locale-robust Codex skill for consulting a signed-in ChatGPT Pro web session in the browser.",
+    "verify_terms": [
+      "codex-chatgpt-pro-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Yubo-Cao/codex-chatgpt-pro-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "35144753752910f1aab8f00628d664dc485dc01e3e004ecac20ac80190b0f27f"
+  },
+  {
+    "name": "UEyes",
+    "url": "https://github.com/YueJiang-nj/UEyes-CHI2023",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design"
+    ],
+    "summary": "UEyes is an eye-tracking dataset of 62 participants viewing 1,980 UI screenshots across webpages, desktop interfaces, mobile apps, and posters.",
+    "verify_terms": [
+      "UEyes"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f4320fa807c89af7fc4a7181a0f90053b09156fd2e5d57e0ce5e206233a07c6a"
+  },
+  {
+    "name": "opencode-gui-bridge",
+    "url": "https://github.com/Yueqi-Wang-795/opencode-gui-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol bridge giving OpenCode and MCP clients real Windows GUI control via UI Automation and vision.",
+    "verify_terms": [
+      "opencode-gui-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Yueqi-Wang-795/opencode-gui-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "905c537faf98fac2e0d5978231c6cab245f4230e272f80209e8389d2581d1dd0"
   }
 ]

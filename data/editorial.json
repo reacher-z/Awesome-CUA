@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DevDesignAmitesh Browser Agent",
+    "url": "https://github.com/DevDesignAmitesh/browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "automation"
+    ],
+    "summary": "Autonomous AI web agent that plans and executes multi-step browser interactions from natural-language prompts.",
+    "verify_terms": [
+      "browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DevDesignAmitesh/browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "75bf92b54b3751a3a7c86cbe7acb5c2b3c565c7396621333277cfd93e40fb9a3"
+  },
+  {
+    "name": "UI Debugger MCP",
+    "url": "https://github.com/developerz-ai/ui-debugger-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Autonomous UI debugging MCP server that drives browsers and desktop apps to detect visual and functional bugs.",
+    "verify_terms": [
+      "UI Debugger MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/developerz-ai/ui-debugger-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5f4c0afccb34ec41abefc7105330d9882737a09aab0b56690bbf6cf813b35794"
+  },
+  {
+    "name": "autourgos-cua-coordinate-tool",
+    "url": "https://github.com/devxjitin/autourgos-cua-coordinate-tool",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Vision-based UI coordinate localization tool for Autourgos computer-use agents.",
+    "verify_terms": [
+      "autourgos-cua-coordinate-tool"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/devxjitin/autourgos-cua-coordinate-tool/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "051f1650553b6674840c02b064522e394c16a6dd68aba8928f97c7398ed73f90"
+  },
+  {
+    "name": "Prism Browser Community",
+    "url": "https://github.com/DFarm6/Prism-Browser-Community",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Local-first open-source multi-profile fingerprint browser built on Chromium and Electron for isolated web automation.",
+    "verify_terms": [
+      "Prism Browser Community"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DFarm6/Prism-Browser-Community/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "42bd74f53bb3ec441180ba3a6f560f6d585ef9caf341a67b667f4c3eb0f360f5"
+  },
+  {
+    "name": "HeySnap",
+    "url": "https://github.com/Dhamani-aryan/heysnap",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "screen-understanding",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "AI-first workspace for capturing files, documents, and live browser context into structured agent memory.",
+    "verify_terms": [
+      "HeySnap"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Dhamani-aryan/heysnap/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "12957bcbc0cee686ed4b2d787cdc7741bf8a15eb6743792ef971aefb91a9e8e3"
   }
 ]

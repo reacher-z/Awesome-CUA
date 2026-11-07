@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Claude Computer Use Demo for macOS",
+    "url": "https://github.com/PallavAg/claude-computer-use-macos",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding"
+    ],
+    "summary": "Runs Anthropic Claude Computer Use directly on macOS without Docker by translating tool calls into native macOS screen capture and input actions.",
+    "verify_terms": [
+      "Claude Computer Use Demo for macOS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PallavAg/claude-computer-use-macos/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d61cacf39f74667805dd7c7a0c7a3e53ea80e08e881dcc16d5c05f398cf58151"
+  },
+  {
+    "name": "background-computer-use",
+    "url": "https://github.com/Panchangam18/background-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "MCP server and skill library for driving macOS applications in the background without stealing window focus or cursor control.",
+    "verify_terms": [
+      "background-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Panchangam18/background-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f6216df3a4c75add5f505c2f94f13d9c11826b1ba1be441ff07d9614a16d9036"
+  },
+  {
+    "name": "pantheon-webarena",
+    "url": "https://github.com/pantheon-auto/pantheon-webarena",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "sandbox"
+    ],
+    "summary": "pantheon-webarena packages containerized WebArena environments with reset, health-check, and parallel evaluation utilities for web agents.",
+    "verify_terms": [
+      "pantheon-webarena"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pantheon-auto/pantheon-webarena/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "55319554f01e438794a36db4d2ace28aa93576302a9cdf350d4c4f68a1261316"
+  },
+  {
+    "name": "Paseo Chrome Bridge",
+    "url": "https://github.com/papag00se/paseo-chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local bridge connecting Paseo AI agents to the user's logged-in Chrome browser.",
+    "verify_terms": [
+      "Paseo Chrome Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/papag00se/paseo-chrome-bridge/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b9f984c9ebe297e7b52ffc370b3a4ed4142953b8e79dd7aa52ce91be46922591"
+  },
+  {
+    "name": "super-computer-use",
+    "url": "https://github.com/paperfoot/super-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Low-latency macOS computer-use driver (~35ms per action) supporting batched multi-step UI workflows.",
+    "verify_terms": [
+      "super-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/paperfoot/super-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7a9ce8f359f45cf2454673cd0982e7e02a3ba2c883f299c1c957928e0978b01f"
   }
 ]

@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WinReach MCP",
+    "url": "https://github.com/GhouI/winreach-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server giving AI agents remote control over a dedicated Windows machine with PowerShell, screenshots, and UI input.",
+    "verify_terms": [
+      "WinReach MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GhouI/winreach-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ef81908aaa4ef1086bddeec68cf7ccb6f68f3924e5f6ff9b8c7b40462a9f41a5"
+  },
+  {
+    "name": "mangouse",
+    "url": "https://github.com/gianlucamazza/mangouse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Compositor-agnostic Linux Wayland virtual seat and input adapter for coding and computer-use agents.",
+    "verify_terms": [
+      "mangouse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gianlucamazza/mangouse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7e3809a1b90b2fe80ffba0d7002e500206c8bb18dd14567988f56ce44be14960"
+  },
+  {
+    "name": "Astra Game Arena",
+    "url": "https://github.com/gih10012/astra-game-arena",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "Resumable, screen-only computer-use evaluation arena testing whether Codex agents can play locally installed desktop games.",
+    "verify_terms": [
+      "Astra Game Arena"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gih10012/astra-game-arena/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3de5186dbd0affcbea6915090d650c7bc80a0276bcb6869fa9ad347eced09de0"
+  },
+  {
+    "name": "ScreenClaw (睇虾)",
+    "url": "https://github.com/GinSing1226/ScreenClaw",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "recording",
+      "automation"
+    ],
+    "summary": "Windows visual GUI automation companion combining percentage-coordinate grid overlays with non-blocking workflow recording and replay.",
+    "verify_terms": [
+      "ScreenClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GinSing1226/ScreenClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5e1b76dc908b59eb982c4a8a6d8c0015e85dd25c8d515875753860a75ed5eaff"
+  },
+  {
+    "name": "computer-use-mcp-gateway",
+    "url": "https://github.com/git-ksk/computer-use-mcp-gateway",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Remote Model Context Protocol gateway for routing agent tool calls to computer-use backends such as Cua Driver.",
+    "verify_terms": [
+      "computer-use-mcp-gateway"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/git-ksk/computer-use-mcp-gateway/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "95eddc3c4779ec47bd4f27b5c56f4ea1d062b00f00f826bb321821d70676f446"
   }
 ]

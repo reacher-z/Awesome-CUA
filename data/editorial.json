@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ThinkRun",
+    "url": "https://github.com/dundas/thinkrun",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "observability",
+      "tool-integration"
+    ],
+    "summary": "Browser session and screen recorder that packages visual bug reproductions and DOM traces for AI coding and browser agents.",
+    "verify_terms": [
+      "ThinkRun"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dundas/thinkrun/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "74f164db3ccd3efb58f24167f6fb962621f0f8cce317837875329cdcdae6861c"
+  },
+  {
+    "name": "agent-ready-ui",
+    "url": "https://github.com/dvnc-labs/agent-ready-ui",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "ui-design",
+      "tool-integration"
+    ],
+    "summary": "agent-ready-ui instruments web frontend components with semantic attributes and action hooks so browser agents can operate them reliably.",
+    "verify_terms": [
+      "agent-ready-ui"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dvnc-labs/agent-ready-ui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0e54a7e351d25e3f6514620f00921d85d83ae774e14749d6626aec078b34c3cd"
+  },
+  {
+    "name": "Agent Cursor & GroundSight",
+    "url": "https://github.com/dwstar79/agent-cursor",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Accuracy engine for computer-use agents pairing a machine-readable cursor overlay (Agent Cursor) with local visual verification (GroundSight).",
+    "verify_terms": [
+      "agent cursor"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dwstar79/agent-cursor/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9febefcaa68d28273424fb1a1e7b326dcdf3fa081e97a9ddc0cbb29bac2ecf87"
+  },
+  {
+    "name": "EvalOps browser-use-rs",
+    "url": "https://github.com/dx-corp/browser-use-rs",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Rust behavioral conformance port of the browser-use web agent library for low-overhead autonomous browser control.",
+    "verify_terms": [
+      "browser-use-rs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dx-corp/browser-use-rs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "59fd11c64800a2da4b82e9c80c070b07b1cccbed4430b21e8aa64fa64f71f211"
+  },
+  {
+    "name": "debug-kit",
+    "url": "https://github.com/dxiongya/debug-kit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "ios",
+      "android",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "automation",
+      "cross-app"
+    ],
+    "summary": "Cross-platform Agent Skill for driving, inspecting, and testing applications across macOS, iOS, Android, Web, Electron, Windows, and Linux.",
+    "verify_terms": [
+      "debug-kit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dxiongya/debug-kit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "def1567b4549c82fd7d6e2d2bd9162baf313cbaddff97c2893f2f969510befb7"
   }
 ]

@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Ark Web",
+    "url": "https://github.com/AEBT01/ark-web",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Manifest V3 Chrome extension and Node.js bridge server enabling AI agents to control the user's real browser.",
+    "verify_terms": [
+      "Ark Web"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AEBT01/ark-web/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "003aca2bc09c8b29a578c3b9beb728564af5a58f1692b55dce254bcaa1029385"
+  },
+  {
+    "name": "AeonMind agenthands",
+    "url": "https://github.com/aeonmindai/agenthands",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Human-calibrated mouse trajectory and keyboard timing synthesis library for browser and desktop agents.",
+    "verify_terms": [
+      "agenthands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aeonmindai/agenthands/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a0de7ac8203f26321f4b866d2d7155f490283b35d79af3891b5a9b11bb609602"
+  },
+  {
+    "name": "Aether Agent Browser",
+    "url": "https://github.com/AetherAI3/agent-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "human-in-the-loop",
+      "observability"
+    ],
+    "summary": "Self-hosted Chrome agent runtime with bounded API control, live VNC observation, and human takeover.",
+    "verify_terms": [
+      "agent browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AetherAI3/agent-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "88cfbbc0dc58724eb183618d4a2bfea979c81dcc0a522910f8105d79619d9fb3"
+  },
+  {
+    "name": "afa-cloud desktop-gui-automation-cua",
+    "url": "https://github.com/afa-cloud/desktop-gui-automation-cua",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "macOS desktop GUI automation skill built on `cua-driver` combining Accessibility trees with pixel-level fallback.",
+    "verify_terms": [
+      "desktop-gui-automation-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/afa-cloud/desktop-gui-automation-cua/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ce6738baec70d5233de7f0e5ab0665388134e6750d6ef11b1002cb976273ce4c"
+  },
+  {
+    "name": "Product Demo Video Skill",
+    "url": "https://github.com/Afnanksalal/product-demo-video-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "video",
+      "recording",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Codex and Claude Agent Skill that drives live web products in a browser to record truth-linked walkthrough demo videos.",
+    "verify_terms": [
+      "Product Demo Video Skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Afnanksalal/product-demo-video-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bacbb173e9c603b236680409eba64ed2e087e01158b430bf10132093ddb47b78"
   }
 ]

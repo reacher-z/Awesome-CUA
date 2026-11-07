@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "browserctl",
+    "url": "https://github.com/nguyenvanhuy0612/browserctl",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension, local bridge, and MCP server allowing AI agents to drive a real Chrome profile in the background.",
+    "verify_terms": [
+      "browserctl"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nguyenvanhuy0612/browserctl/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e74281976204a28f86e04013c51a49f0705390db83447b342e59458676ab1cf6"
+  },
+  {
+    "name": "mcp-vroid",
+    "url": "https://github.com/nhodges/mcp-vroid",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "science",
+      "ui-design",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server that drives VRoid Studio 3D character creation via Linux Wayland GUI automation.",
+    "verify_terms": [
+      "mcp-vroid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nhodges/mcp-vroid/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "505ba41c2f65946ab05ccff4880af74e385e8a15c731ad9e5b92b7dd230188b0"
+  },
+  {
+    "name": "AdInject",
+    "url": "https://github.com/NicerWang/AdInject",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "AdInject implements black-box indirect prompt injection attacks delivered through web advertising banners on OSWorld and VisualWebArena.",
+    "verify_terms": [
+      "AdInject"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NicerWang/AdInject/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d558ffbedf48d19c228022c0ce4cdc85320a02bdf5a2bfce927a88b0326e0ae4",
+    "documented_by": [
+      "2505.21499"
+    ]
+  },
+  {
+    "name": "Universal Computer Use",
+    "url": "https://github.com/Nico0713520/universal-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Lightweight, model-free Model Context Protocol plugin giving multimodal agents native macOS screen and input control.",
+    "verify_terms": [
+      "Universal Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Nico0713520/universal-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "006ecc449ccc5763bdd2412fa95b5d6ada45d8b44f3bd39704a65f4a2e98a413"
+  },
+  {
+    "name": "browser-agent-kit",
+    "url": "https://github.com/nicolascine/browser-agent-kit",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "browser-agent-kit is a framework for building in-page AI agents that execute directly inside the live browser DOM context.",
+    "verify_terms": [
+      "browser-agent-kit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nicolascine/browser-agent-kit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b23e4645cde216c67f528e474d0f293c8075d6db66af0f7480b2d8dc8f57e8fc"
   }
 ]

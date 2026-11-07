@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "macos-desktop-control",
+    "url": "https://github.com/d-wwei/macos-desktop-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "ios"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "mobile-navigation"
+    ],
+    "summary": "Native macOS desktop automation MCP server providing screen capture, mouse/keyboard input, window management, and iOS Simulator control.",
+    "verify_terms": [
+      "macos-desktop-control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/d-wwei/macos-desktop-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1b845d0d756d16b2615b5f4118556cb83ffe1d0b7266476a76b01d19efc9c2e4"
+  },
+  {
+    "name": "ANZU Superassistant (Jarvis)",
+    "url": "https://github.com/Daan298261/Jarvis",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "mobile-navigation",
+      "tool-integration"
+    ],
+    "summary": "Local-first Windows desktop agent with HUD, Kokoro voice, browser automation, Office integration, and Android control.",
+    "verify_terms": [
+      "ANZU Superassistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Daan298261/Jarvis/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "074011fc0c0125ad491041aff33a40f85dc68923e89e90ecc6ab1cf2bae2ed12"
+  },
+  {
+    "name": "Claude Browser Bridge",
+    "url": "https://github.com/daazer/claude-browser-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local bridge allowing coding agents to read and drive the user's everyday logged-in Chrome profile.",
+    "verify_terms": [
+      "Claude Browser Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/daazer/claude-browser-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "27d912c4154e3b4fec0c178adfe8b9ec6638a999548058c74b53e0dba25bf9f9"
+  },
+  {
+    "name": "Camoufox",
+    "url": "https://github.com/daijro/camoufox",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Camoufox is an open-source anti-detect Firefox browser with C++-level fingerprint rotation designed for web automation and AI browser agents.",
+    "verify_terms": [
+      "Camoufox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/daijro/camoufox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "84615e4a90d573730bf994e6767dd9c76fba492710aa9a1f53e855707131becd"
+  },
+  {
+    "name": "XiaoShuang (小双桌面女神)",
+    "url": "https://github.com/daixin315/XiaoShuang",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Cross-platform desktop AI companion with screen reading, real-time translation, and Hermes-linked app automation.",
+    "verify_terms": [
+      "XiaoShuang"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/daixin315/XiaoShuang/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "131867d1f8f5ef9475e2f6e0d8780c071995d165ee1ee9d59cf21d852753078d"
   }
 ]

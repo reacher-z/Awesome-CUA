@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "avids2 Jarvis",
+    "url": "https://github.com/AVIDS2/jarvis",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "memory",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Real-time Chinese voice and desktop agent with persistent memory and Pi tool execution.",
+    "verify_terms": [
+      "jarvis"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AVIDS2/jarvis/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "82595707a4c4f4d812c77b0d8bf8d544b697d800e3dff22b6d90a7711b3f7eb4"
+  },
+  {
+    "name": "Graph-Guided Agentic Testing",
+    "url": "https://github.com/avikundal/graph-guided-agentic-testing",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "planning",
+      "state-tracking"
+    ],
+    "summary": "Uses a browser agent to explore web checkout flows into a Neo4j state graph and synthesizes graph-guided end-to-end tests.",
+    "verify_terms": [
+      "Graph-Guided Agentic Testing"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/avikundal/graph-guided-agentic-testing/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "15f418cf61e5cf6bca24c36337857554da1475441dd341f2ba583f917de454c8"
+  },
+  {
+    "name": "Awictor Relay",
+    "url": "https://github.com/awictor/relay",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Autonomous web agent paired with a self-hosted browser that executes tasks dispatched via messaging apps.",
+    "verify_terms": [
+      "relay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/awictor/relay/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "69e290a620f569d712748261c9350be8206bf423774874d725dad93d4dd116f7"
+  },
+  {
+    "name": "PRAXOVELA",
+    "url": "https://github.com/axisvela/praxovela-open",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "workflow",
+      "automation",
+      "observability"
+    ],
+    "summary": "Governable, local-first desktop agent runtime with policy enforcement and auditable execution traces.",
+    "verify_terms": [
+      "PRAXOVELA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/axisvela/praxovela-open/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7e971a2989cb5f708f725be95cd8327af30d8e9b8c0e5d18ae0f425f95133e78"
+  },
+  {
+    "name": "Pi Nodriver Browser",
+    "url": "https://github.com/AyaSakura-comp/pi-nodriver-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Pi coding-agent browser extension powered by Nodriver, headful Chrome, and Xvfb virtual displays.",
+    "verify_terms": [
+      "Pi Nodriver Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AyaSakura-comp/pi-nodriver-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8f28d2dc42d30e923e0d30458822cc62bea38e860615f665c16ac2c0d591070"
   }
 ]

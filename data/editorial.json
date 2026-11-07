@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Peekaboo",
+    "url": "https://github.com/openclaw/Peekaboo",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Peekaboo is a macOS screen-capture, accessibility-element targeting, and GUI automation CLI and MCP server for computer-use agents.",
+    "verify_terms": [
+      "Peekaboo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openclaw/Peekaboo/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9705040d8bd91227553eac3dcd7a03e9e51e04646936d4c9677538ae5a4346f7"
+  },
+  {
+    "name": "city-webmcp (OpenClawCity)",
+    "url": "https://github.com/openclawcity/city-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Exposes 33 browser-native WebMCP tools for autonomous agents operating inside the OpenClawCity web environment.",
+    "verify_terms": [
+      "city-webmcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openclawcity/city-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9b9a825d61e80afb99f41f541212ea87b0e7cf52217416fc5e0fb2e59640754d"
+  },
+  {
+    "name": "Open Claudex Computer Use",
+    "url": "https://github.com/OpenCodexLabs/open-codex-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Open-source background macOS computer-use MCP server for Claude Code and Codex.",
+    "verify_terms": [
+      "Open Claudex Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenCodexLabs/open-codex-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9c15bd8701774175676c6d6216c04d2488706fb1c0a6a14a3e1568eb8bf3b953"
+  },
+  {
+    "name": "Ghost in the Minecraft (GITM)",
+    "url": "https://github.com/OpenGVLab/GITM",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "Ghost in the Minecraft (GITM) integrates LLMs with text-based knowledge and memory to complete the full Minecraft technology tree.",
+    "verify_terms": [
+      "Ghost in the Minecraft (GITM)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenGVLab/GITM/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77e2228c1a3566ec3a38aafe8a3aad43229a5edb637cdf4abed0f0a4401ac3bf"
+  },
+  {
+    "name": "InternVL",
+    "url": "https://github.com/OpenGVLab/InternVL",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "video"
+    ],
+    "summary": "Official repository for the InternVL open-source multimodal foundation model family supporting high-resolution GUI grounding and visual reasoning.",
+    "verify_terms": [
+      "InternVL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenGVLab/InternVL/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0d5338fba1508bf7ffc9ccb2479c852e20b195394376b3c648750706b1465e10"
   }
 ]

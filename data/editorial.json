@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "CombatVLA",
+    "url": "https://github.com/ChenVoid/CombatVLA",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "action-prediction",
+      "video",
+      "efficiency"
+    ],
+    "summary": "CombatVLA is a vision-language-action model and action tracker for real-time combat control in 3D action role-playing PC games.",
+    "verify_terms": [
+      "CombatVLA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChenVoid/CombatVLA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d398c8cec4d5e0625b71ecac6eb484a63d5ff077e57dbfaaa8704def6899e698"
+  },
+  {
+    "name": "dsh-browser-playwright",
+    "url": "https://github.com/ChenyuHeee/dsh-browser-playwright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Snapshot-first Playwright browser automation plugin for DeepSeek Harness using accessibility-tree interactions.",
+    "verify_terms": [
+      "dsh-browser-playwright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChenyuHeee/dsh-browser-playwright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d54b38e0a139d609c6f9026cc9c92700da186dade12de6d3d3dac8bbba860dca"
+  },
+  {
+    "name": "Codex ChatGPT Web Orchestrator",
+    "url": "https://github.com/chicogong/codex-chatgpt-web-orchestrator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Receipt-driven Codex skill for delegating deep research and artifact generation to a logged-in ChatGPT Web session.",
+    "verify_terms": [
+      "Codex ChatGPT Web Orchestrator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chicogong/codex-chatgpt-web-orchestrator/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1785123e7db938d215989679cbdfbf3f9db4ae634bad8570f322e397b391370a"
+  },
+  {
+    "name": "Astra AI (Windows Gemini Live Assistant)",
+    "url": "https://github.com/ChinmayBitne/ASTRA-AI",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Voice-first Windows AI desktop assistant powered by Gemini Live with screen vision and system control.",
+    "verify_terms": [
+      "Astra AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChinmayBitne/ASTRA-AI/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6b5094b798dc07fb2bab8d293f729a34a87b06f712ac2f6f93dc51f284f1b4e1"
+  },
+  {
+    "name": "Rove (Thread WebMCP Workspace)",
+    "url": "https://github.com/Chris-Miracle/thread",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Shared WebMCP research workspace where human users and browser agents co-curate and compare web items.",
+    "verify_terms": [
+      "Rove"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Chris-Miracle/thread/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bd57d7623b5bf5f13184f94c26a7ba273ef12133a2662d3940a8c01bb759d62a"
   }
 ]

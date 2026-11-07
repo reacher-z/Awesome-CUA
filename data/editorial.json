@@ -86010,5 +86010,235 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenAgentFleet",
+    "url": "https://github.com/robbyczgw-cla/openagentfleet",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Local-first multi-agent desktop platform with named AI coworkers and a watchable Linux virtual desktop.",
+    "verify_terms": [
+      "OpenAgentFleet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/robbyczgw-cla/openagentfleet/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b05aa0b28bce694e1f75351ec4a7ec0ffbcff9f40b96f031f16457a2ee1064ac"
+  },
+  {
+    "name": "Orynn",
+    "url": "https://github.com/robomohit/Orynn",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Orynn is a Windows desktop agent that controls native applications by UI Automation control names without screenshot loops.",
+    "verify_terms": [
+      "Orynn"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/robomohit/Orynn/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "67fee67c215ad94d96569196f57b64266a21565709a5004215d19e8cb9036784"
+  },
+  {
+    "name": "Safari iOS Web Inspector MCP",
+    "url": "https://github.com/rodneyrdx/safari-ios-webinspector-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "ios",
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "TypeScript Model Context Protocol server for inspecting and debugging live iPhone Safari WebKit sessions from macOS.",
+    "verify_terms": [
+      "Safari iOS Web Inspector MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rodneyrdx/safari-ios-webinspector-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d2da89bd77bc7831dccd6a418fc75a84c3277da0d6d98ed2dde42a03acf7309f"
+  },
+  {
+    "name": "Computer-Use Cache",
+    "url": "https://github.com/rohanarun/computer-use-cache",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "efficiency",
+      "memory",
+      "recording"
+    ],
+    "summary": "Drop-in OpenAI-compatible caching proxy that records and replays repeated computer-use and browser-agent workflows.",
+    "verify_terms": [
+      "Computer-Use Cache"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rohanarun/computer-use-cache/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2b8c93536abf8d5d83ecc5da77943973af236c1aad1b01f55d76f0f9f14445a1"
+  },
+  {
+    "name": "agentmemory",
+    "url": "https://github.com/rohitg00/agentmemory",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon",
+      "tool-integration"
+    ],
+    "summary": "agentmemory provides persistent cross-session memory and MCP integration for coding and computer-use agents including Claude Code, Codex, and OpenClaw.",
+    "verify_terms": [
+      "agentmemory"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rohitg00/agentmemory/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3497c08ba0a60f81fa6a6504ac8bca27022679f0f5b09a08033dad349d6911fa"
+  },
+  {
+    "name": "Dinoer",
+    "url": "https://github.com/RonanDavalan/dinoer",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "automation"
+    ],
+    "summary": "Local-first web research and browser automation framework for LLM agents combining SearXNG discovery with headless browser control.",
+    "verify_terms": [
+      "Dinoer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RonanDavalan/dinoer/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ddf5c6be9eb34c975f31730ae815a317ef5f30518cfa2ff840cf0bafb4feb92d"
+  },
+  {
+    "name": "Browser Perception",
+    "url": "https://github.com/rounakkm/browser-perception",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "screen-understanding",
+      "web-navigation"
+    ],
+    "summary": "Privacy-preserving browser perception framework that redacts sensitive PII from DOM trees and screenshots before LLM ingestion.",
+    "verify_terms": [
+      "Browser Perception"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rounakkm/browser-perception/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6a9e87f8c461ee185371b842a77ae4399b6607d3377cfb6945735d698b5fa3d1"
+  },
+  {
+    "name": "MechCP",
+    "url": "https://github.com/RsGoksel/MechCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Hardened Model Context Protocol server giving AI agents Chrome DevTools Protocol browser control and dynamic Playwright execution.",
+    "verify_terms": [
+      "MechCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RsGoksel/MechCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "635439c1323775970c0e62df63643b25df468380951594a5a796742a0d956cfa"
+  },
+  {
+    "name": "rtrvr CLI & SDK",
+    "url": "https://github.com/rtrvr-ai/rtrvr-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "CLI and SDK for automating web workflows, scraping pages, and driving cloud or local browsers for AI agents.",
+    "verify_terms": [
+      "rtrvr cli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rtrvr-ai/rtrvr-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "87d95ac0039512de9b5c4ffcb7ff332062dbb95ee8106b3be3eb30701a2dc0d5"
   }
 ]

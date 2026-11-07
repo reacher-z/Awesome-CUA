@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "deskpal",
+    "url": "https://github.com/b1tank/deskpal",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "C-native Linux desktop-control MCP server supporting X11/Xwayland, AT-SPI accessibility trees, OCR, and isolated displays.",
+    "verify_terms": [
+      "deskpal"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/b1tank/deskpal/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0f0710639e4194e5908ec4e815331deb0807a23709ec9d3189b851a5b8c0e554"
+  },
+  {
+    "name": "Marey",
+    "url": "https://github.com/badalraj9/Marey",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "grounding"
+    ],
+    "summary": "Marey is a modular perception engine for computer-use agents that tracks screen changes and extracts UI elements with minimal model calls.",
+    "verify_terms": [
+      "Marey"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/badalraj9/Marey/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9f548438587fdfa9eb91886c13d61e2034b31a69803a1f941b9578d1e020ae09"
+  },
+  {
+    "name": "ESP (Echo-Skeleton Perception)",
+    "url": "https://github.com/Badtheorylabs/esp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "state-tracking",
+      "efficiency"
+    ],
+    "summary": "Stateful, event-driven screen-perception runtime that converts UI changes into compact text events for text-only computer-use agents.",
+    "verify_terms": [
+      "ESP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Badtheorylabs/esp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0364a243849af3a48cb071c8bd73f20129f826a29e7bf5a6ad30f867aeab9cab"
+  },
+  {
+    "name": "AbaoPal (阿宝Pal)",
+    "url": "https://github.com/banye-technology/AbaoPal",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Open-source multi-agent Android phone automation assistant that understands screens, plans cross-app tasks, and executes reusable skills.",
+    "verify_terms": [
+      "AbaoPal"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/banye-technology/AbaoPal/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "07587bb474196c12a09ce253dcbe3dc9116699d06ef0f939019e52a18c12f30c"
+  },
+  {
+    "name": "QuickDesk",
+    "url": "https://github.com/barry-ran/QuickDesk",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "QuickDesk is an AI-native remote desktop client and host with a built-in MCP server for streaming screens and controlling remote computers.",
+    "verify_terms": [
+      "QuickDesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/barry-ran/QuickDesk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b680079ae63de3dc512e0c5aa32859853845093ba80551035c0dcef88e92e81f"
   }
 ]

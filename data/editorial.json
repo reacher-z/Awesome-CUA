@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Plow Hermes Agent Template",
+    "url": "https://github.com/delltrak/plow-hermes-agent-template",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Safety-first starter template for building visible-browser Hermes computer-use agents with human approval gates.",
+    "verify_terms": [
+      "Plow Hermes Agent Template"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/delltrak/plow-hermes-agent-template/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "62b3f6075e3268f226ea4c02966ac4cf379dae4f50789a6efbfff011c95ce694"
+  },
+  {
+    "name": "AutoBot",
+    "url": "https://github.com/demeyer1/Autobot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "self-reflection",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "AutoBot is a self-improving agent harness for ChatGPT and Codex on macOS featuring persistent on-disk memory and browser evaluation.",
+    "verify_terms": [
+      "AutoBot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/demeyer1/Autobot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b8ef64a5818135cc6b8812c6b644c01b6a1952913e6ffd0b321b565069020328"
+  },
+  {
+    "name": "AgenticX-GUIAgent",
+    "url": "https://github.com/DemonDamon/AgenticX-GUIAgent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "self-reflection"
+    ],
+    "summary": "AgenticX-GUIAgent is a multi-agent Android GUI automation system with coordinated manager, executor, reflector, and notetaker roles.",
+    "verify_terms": [
+      "AgenticX-GUIAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "027873ff32c2049872b919ec34426b02a706e9e3636410fcfbb59d6191b3f2ef"
+  },
+  {
+    "name": "DeskMind Bench",
+    "url": "https://github.com/deskmind-ai/bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox"
+    ],
+    "summary": "DeskMind Bench provides sandboxed macOS desktop tasks, state graders, and reference trajectories for evaluating computer-use agents.",
+    "verify_terms": [
+      "DeskMind Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deskmind-ai/bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b2b3c0839d1286be08764abf1c747ac4c76a7e8d3ab8b25c28024abafac9c8e4"
+  },
+  {
+    "name": "DeskMind",
+    "url": "https://github.com/deskmind-ai/deskmind",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "human-in-the-loop",
+      "efficiency"
+    ],
+    "summary": "DeskMind is a local-first macOS computer-use agent that combines accessibility inspection, DeskMind Eyes grounding, and user clarification.",
+    "verify_terms": [
+      "DeskMind"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deskmind-ai/deskmind/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d54adb312f01132ceced24bea22be3670a4bc4645c8b59ceb99982cbdf74c941"
   }
 ]

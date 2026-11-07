@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "claude-drives-gemini",
+    "url": "https://github.com/MagicYangG/claude-drives-gemini",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Claude Code skill that drives a logged-in Google Gemini web session in Chrome for cross-model consultation and research.",
+    "verify_terms": [
+      "claude-drives-gemini"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MagicYangG/claude-drives-gemini/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4b6fcca834487181efc377d1c14e7b262ffa32310610f6d42902c3d35afe0a5d"
+  },
+  {
+    "name": "AClaw",
+    "url": "https://github.com/MagnusDot/AClaw",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Packaged local command center for running and monitoring personal OpenClaw computer-use agents.",
+    "verify_terms": [
+      "AClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MagnusDot/AClaw/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "51c29927a1afbf1f153b419661075ba22871dc9aadb5f0bc1a61052402f8a27b"
+  },
+  {
+    "name": "Agent Friday",
+    "url": "https://github.com/MAhsaanUllah/agent_friday",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Autonomous OS-level desktop assistant powered by LangGraph for multi-step system and GUI workflows.",
+    "verify_terms": [
+      "Agent Friday"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MAhsaanUllah/agent_friday/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92739eebfbf66f89d3033f921e83e35d07e87a581e6ff96adec00e5b1d2e8c06"
+  },
+  {
+    "name": "RelationGUI & RelationQA",
+    "url": "https://github.com/malonghui/RelationGUI",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "evaluation"
+    ],
+    "summary": "RelationGUI provides datasets and training code for explicit spatial, hierarchical, and functional relational understanding in GUI agents.",
+    "verify_terms": [
+      "RelationGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/malonghui/RelationGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4c4b459ece453ac59e1eead8392b91e816fcdb89ad3753f338b8d3ac6d4197c6"
+  },
+  {
+    "name": "codex-cua",
+    "url": "https://github.com/manaflow-ai/codex-cua",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "CLI wrapper for driving macOS desktop applications from the shell using the Computer Use engine bundled inside Codex.",
+    "verify_terms": [
+      "codex-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/manaflow-ai/codex-cua/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7357b12298379ac3a8cb30844c57858993f4ca668e05a83b99b348befe1df1a7"
   }
 ]

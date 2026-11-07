@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Milo-Pointer",
+    "url": "https://github.com/chayworks/milo-pointer",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "efficiency",
+      "grounding"
+    ],
+    "summary": "Milo-Pointer uses a 149M on-device text encoder as a fast first-tier router and action selector for mobile phone agents.",
+    "verify_terms": [
+      "Milo-Pointer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chayworks/milo-pointer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb4014518622cc0da35b9466383b6168b2b9deaf5789e80396b0d47610b18752"
+  },
+  {
+    "name": "Mobile GUI-VLA Device Platform",
+    "url": "https://github.com/chbq/mobile-gui-vla-device-platform",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "recording",
+      "data-generation"
+    ],
+    "summary": "Provides a zero-dependency Python device I/O and trajectory instrumentation layer for Android GUI-VLA experiments.",
+    "verify_terms": [
+      "Mobile GUI-VLA Device Platform"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chbq/mobile-gui-vla-device-platform/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1c8f3a3aaae45d1f6634b3078db62272fd0363dadd7f0537a790435558197991"
+  },
+  {
+    "name": "DeepSeek Harness Volcengine OS Agent Plugin",
+    "url": "https://github.com/chenjie1129/deepseek-harness-os-agent-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Integrates Volcengine's Mobile Use and OS Agent capabilities as a plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "deepseek-harness-os-agent-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chenjie1129/deepseek-harness-os-agent-plugin/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bb654b6df0cd5492c7735841cdce2fe47895e6a405b20cc2c3c2b2858ba096a1"
+  },
+  {
+    "name": "Mobile Use Agent (Cloud Phone Skill)",
+    "url": "https://github.com/chenjie1129/mobile-use-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Python SDK, CLI, and agent skill for driving cloud Android phones via Volcengine Mobile Use Agent OpenAPI with GPS and app state injection.",
+    "verify_terms": [
+      "Mobile Use Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chenjie1129/mobile-use-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9552cca597d7cf3be674a02791b58f5f401abb6662c7e5db342be624c86da45a"
+  },
+  {
+    "name": "GUI Object Detection Benchmark & Models",
+    "url": "https://github.com/chenjshnn/Object-Detection-for-Graphical-User-Interface",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Provides training and evaluation code comparing classical and deep-learning GUI element detectors alongside the hybrid UIED model.",
+    "verify_terms": [
+      "object detection for graphical user interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chenjshnn/Object-Detection-for-Graphical-User-Interface/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a16e6e0ea37a191e7f77e78e368b213e42b147bd54b67f69ee92a8843d0e488",
+    "documented_by": [
+      "2008.05132"
+    ]
   }
 ]

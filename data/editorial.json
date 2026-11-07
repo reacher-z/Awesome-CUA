@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DietSurf",
+    "url": "https://github.com/100x-bot/dietsurf",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Minimalist Chrome side-panel browser agent with a virtual filesystem and shell-like command interface.",
+    "verify_terms": [
+      "DietSurf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/100x-bot/dietsurf/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d88bde4672d762ce5c9b7052a06bffdd2db931352382f9f3265037d5ad8e3a55"
+  },
+  {
+    "name": "DevScope Bridge",
+    "url": "https://github.com/15273/devscope-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Local-first Chrome side panel and bridge connecting Claude Code, Cursor, and Codex to live browser DOM and console state.",
+    "verify_terms": [
+      "devscope-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/15273/devscope-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "55cd8a5c7b0920deabe0a8e125f3e8577acf906a287e0daecee236f2626eaad0"
+  },
+  {
+    "name": "DeepSeek Harness Mac Control",
+    "url": "https://github.com/18126295767-cell/dsh-mac-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "macOS control plugin for DeepSeek Harness enabling browser tab inspection, app switching, and desktop GUI actions.",
+    "verify_terms": [
+      "DeepSeek Harness Mac Control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/18126295767-cell/dsh-mac-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "439a3156e199627de83c4421a386d7876edf9eeb62242551d969c689e0c745a6"
+  },
+  {
+    "name": "AOI (Agent-Computer Observation Interface) & DynaCU-Bench",
+    "url": "https://github.com/19PINE-AI/aoi",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "video",
+      "screen-understanding",
+      "evaluation",
+      "efficiency"
+    ],
+    "summary": "AOI provides an adaptive video and audio perception layer for computer-use agents alongside the DynaCU-Bench dynamic GUI benchmark.",
+    "verify_terms": [
+      "AOI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/19PINE-AI/aoi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "45c542aec1500cdc3d8669e818b509e7750a7595e177b2e40e34d6171d421634",
+    "documented_by": [
+      "2606.29472"
+    ]
+  },
+  {
+    "name": "PreAct",
+    "url": "https://github.com/19PINE-AI/PreAct",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "efficiency",
+      "memory",
+      "action-prediction"
+    ],
+    "summary": "PreAct compiles repeated computer-use agent trajectories into cached action graphs with lightweight visual verification to accelerate execution.",
+    "verify_terms": [
+      "PreAct"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/19PINE-AI/PreAct/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fb443075f70910c38d54b4ec2bfaea0e4ee7b2b42e54beec7bc132335fbd83bd",
+    "documented_by": [
+      "2606.17929"
+    ]
   }
 ]

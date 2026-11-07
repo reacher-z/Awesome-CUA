@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DSH Deskwork",
+    "url": "https://github.com/GuoMonth/dsh-deskwork",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "AI desktop workspace powered by DeepSeek Harness for automating ERP and enterprise back-office operations.",
+    "verify_terms": [
+      "DSH Deskwork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GuoMonth/dsh-deskwork/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a493a3ad1c1058a3eca9a1866f6d2c2736bbcbbc9f1c80645678d66c1f9c7758"
+  },
+  {
+    "name": "Workday Expense & Invoice Assistant (tnehelper)",
+    "url": "https://github.com/guoyuqi2002/TNEHelper",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Desktop and browser automation agent that reconciles invoice documents against Workday travel-and-expense web portals.",
+    "verify_terms": [
+      "Workday Expense & Invoice Assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/guoyuqi2002/TNEHelper/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f488d76b0a0a840f16a92e442ebb08f6a0d191a48751fa6748f5f6933db63724"
+  },
+  {
+    "name": "AI Deep Search Agent (AI 深度搜索助手)",
+    "url": "https://github.com/gupi-bill/ai-deep-search-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "planning",
+      "automation"
+    ],
+    "summary": "Visual browser agent that drives a real Microsoft Edge window from natural-language goals to conduct deep web research.",
+    "verify_terms": [
+      "ai-deep-search-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gupi-bill/ai-deep-search-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "729cb08115d1c233ae6e09bba245d2273d0109820e9022df1f61d93e9a973952"
+  },
+  {
+    "name": "Codex Dynamic Bridge",
+    "url": "https://github.com/GuraQwQ/codex-dynamic-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Connects OpenAI Codex and Antigravity via a global sidecar and local CDP to manage sessions, models, and browser tasks.",
+    "verify_terms": [
+      "Codex Dynamic Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GuraQwQ/codex-dynamic-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4acacb6f441d69baf36af1c84d5257279f5176dada16a43aa6579a05e2a1f8a0"
+  },
+  {
+    "name": "Orquestrador de Features",
+    "url": "https://github.com/gustavo-em/orchestrator-features",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios",
+      "desktop"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "workflow",
+      "self-reflection"
+    ],
+    "summary": "Multi-agent loop that plans React Native mobile features, writes code, drives the simulator UI, and verifies visual results.",
+    "verify_terms": [
+      "Orquestrador de Features"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gustavo-em/orchestrator-features/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bd9e07581e0ba432c20dabde13341a10a223d7eaf580d5170c54d895479ca213"
   }
 ]

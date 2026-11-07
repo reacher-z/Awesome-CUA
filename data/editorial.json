@@ -86010,5 +86010,142 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "GameWorld",
+    "url": "https://github.com/gameworld-project/GameWorld",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "action-prediction",
+      "planning"
+    ],
+    "summary": "GameWorld provides a standardized browser-based evaluation suite for multimodal game agents across 34 games and 170 verifiable tasks.",
+    "verify_terms": [
+      "GameWorld"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gameworld-project/GameWorld/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a20fdc3d534295ba721ce7c12b121f03b56a0ededb9f2eacc40d5aefa56da624",
+    "documented_by": [
+      "2604.07429"
+    ]
+  },
+  {
+    "name": "perceive",
+    "url": "https://github.com/gauthierpiarrette/perceive",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "perceive is a reachability-filtered perception layer for browser agents that prunes non-interactive or occluded DOM elements.",
+    "verify_terms": [
+      "perceive"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gauthierpiarrette/perceive/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "558c0b62f395171caecc3a5c1895e290fa287f712b7c7d8b4e9f6f61f915ff28"
+  },
+  {
+    "name": "action-choice-bench",
+    "url": "https://github.com/gbesse/action-choice-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "action-prediction",
+      "safety-security"
+    ],
+    "summary": "action-choice-bench evaluates discrete UI action selection and calibrated abstention on frozen interface states.",
+    "verify_terms": [
+      "action-choice-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gbesse/action-choice-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4446d6d9bf5b0a93bb30d6a4088b7c27b843eb0ee4adc0068acb7007d0511d3d"
+  },
+  {
+    "name": "OpenBitFun",
+    "url": "https://github.com/GCWing/OpenBitFun",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "OpenBitFun is a Rust-powered desktop agent workspace supporting computer-use, browser automation, and multi-mode agent harnesses.",
+    "verify_terms": [
+      "OpenBitFun"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GCWing/OpenBitFun/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3ee6bf8dc09a8516c839ab7a00e80399583583f9b784bef163ac349cb087ff03"
+  },
+  {
+    "name": "Control-Agent",
+    "url": "https://github.com/GeKaixing/Control-Agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "web-navigation",
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "Unified multimodal control framework combining pure-vision desktop operation, structured DOM browser control, and ADB mobile automation.",
+    "verify_terms": [
+      "Control-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GeKaixing/Control-Agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c608bebeaf0515e613834e3daad7de0c147f31dc56a000b62f6c049c8191b9ef"
   }
 ]

@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenBerry",
+    "url": "https://github.com/painbaba/openberry",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local agentic web browser for Windows inspired by Strawberry Browser for autonomous goal-driven browsing.",
+    "verify_terms": [
+      "OpenBerry"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/painbaba/openberry/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "19246850f5ce3d872799a7ee18331f505b1f6cba7c7fc08e3b04f40f8a6b06ce"
+  },
+  {
+    "name": "StrawManus",
+    "url": "https://github.com/painbaba/strawmanus",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser-control agent combining Manus's flat 12-tool action architecture with local Chromium automation.",
+    "verify_terms": [
+      "StrawManus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/painbaba/strawmanus/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7587958f529ae09c6259b569915dbe177fd903e835707e03e9e48573dfb3c18a"
+  },
+  {
+    "name": "nexus-browser-mcp",
+    "url": "https://github.com/paipaipai666/nexus-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "state-tracking",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Browser automation MCP server with event-driven deterministic Playwright and accessibility-tree snapshots.",
+    "verify_terms": [
+      "nexus-browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/paipaipai666/nexus-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fa999c93d9d4137c9c2a4a395c4bab9421bc91bfd5adcb08afc592300664170e"
+  },
+  {
+    "name": "Clique Já",
+    "url": "https://github.com/paivaxqz/cliqueja",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Fast Chrome automation toolkit combining a Manifest V3 extension with a local coordination hub.",
+    "verify_terms": [
+      "Clique Já"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/paivaxqz/cliqueja/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "06e1ded1929d67d2bffe29bea638691e193cb8bccba8cd09457e09ede2bce8a9"
+  },
+  {
+    "name": "paldom playwright-stealth Skills",
+    "url": "https://github.com/Paldom/playwright-stealth",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Agent Skills package for stealth browser automation using CloakBrowser and Playwright.",
+    "verify_terms": [
+      "playwright stealth"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Paldom/playwright-stealth/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e13eb179878420fcca7c44314f40079321110c35e3c84e4017b8f1f870568c2b"
   }
 ]

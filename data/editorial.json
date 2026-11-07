@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "loki-auto",
+    "url": "https://github.com/loki4agent/loki-auto",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Zero-dependency in-browser web automation runtime with an embedded sandbox and Model Context Protocol server for LLMs.",
+    "verify_terms": [
+      "loki-auto"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/loki4agent/loki-auto/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bd12d1e2e7107ab386da53aaed5f95546ae186718917c33e76dc67fab158cd57"
+  },
+  {
+    "name": "Lolaplex .agents/browser",
+    "url": "https://github.com/Lolaplex/agents-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Zero-Node Python Chrome DevTools Protocol browser MCP server for AI coding agents.",
+    "verify_terms": [
+      "agents-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Lolaplex/agents-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "07452e9b4319455ee72aa8aa39ed19b9384b36537a93983c162797b7768bdf98"
+  },
+  {
+    "name": "gui-report-automation",
+    "url": "https://github.com/loncoeng/gui-report-automation",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Scheduled automation tool that borrows an authenticated Chrome session to export and verify enterprise GUI reports.",
+    "verify_terms": [
+      "gui-report-automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/loncoeng/gui-report-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "865046eea96a177a54ca5888df07a40b5603f4945fff414f9aebf8fc627c6b53"
+  },
+  {
+    "name": "Aether Browser MCP",
+    "url": "https://github.com/longebane/aether-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for driving headless and headful browser automation workflows.",
+    "verify_terms": [
+      "Aether Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/longebane/aether-browser-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9bcd6cfebcdfbd34f2d4f375f4b346dd33d8cd110307134b5cc4a06684790b9b"
+  },
+  {
+    "name": "pi-browser-use",
+    "url": "https://github.com/longweekendprojects/pi-browser-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native `pi` coding-agent tool that drives the user's logged-in Arc or Chrome browser over CDP with reusable site primitives.",
+    "verify_terms": [
+      "pi-browser-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/longweekendprojects/pi-browser-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "94dfdbfad714c6f89ad75a7ed8252b1cb0be69e95d3db73f88f5f5a52e542615"
   }
 ]

@@ -86010,5 +86010,140 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "jev-click-bench",
+    "url": "https://github.com/arthurkatcher/jev-click-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "jev-click-bench evaluates Jev 1.14 bounding-box grounding on ScreenSpot-v2 and ScreenSpot-Pro with official scoring and per-click logs.",
+    "verify_terms": [
+      "jev-click-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/arthurkatcher/jev-click-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "95c819ead98fb53930b527770c80a0481a87d3f1d8f7614ce6c00e145d3aa063"
+  },
+  {
+    "name": "ENVS (Environment-Native Verified Search)",
+    "url": "https://github.com/ArtysicistZ/ENVS",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "planning",
+      "self-reflection",
+      "long-horizon"
+    ],
+    "summary": "ENVS is a post-training and verified tree-search pipeline for long-horizon GUI agents operating in live desktop and web environments.",
+    "verify_terms": [
+      "ENVS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ArtysicistZ/ENVS/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2eff497da06cb9ac79ffd1ee1630f01d0332bd5e55da32d1c99714cf49e50c1c",
+    "documented_by": [
+      "2606.22948"
+    ]
+  },
+  {
+    "name": "SteP (Stacked LLM Policies)",
+    "url": "https://github.com/asappresearch/webagents-step",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning"
+    ],
+    "summary": "SteP implements dynamically composed Markovian LLM policies for multi-step web navigation and task execution on WebArena.",
+    "verify_terms": [
+      "SteP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/asappresearch/webagents-step/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7d50c4fa249fbd137e36999779c9e88d96a0fdc7be37422d9714ecb304b84e31",
+    "documented_by": [
+      "2310.03720"
+    ]
+  },
+  {
+    "name": "ascript-mcp",
+    "url": "https://github.com/ascript-cn/ascript-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "android",
+      "ios",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for automating real Android, iOS, and Windows devices from Claude, Cursor, and MCP clients.",
+    "verify_terms": [
+      "ascript-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ascript-cn/ascript-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2498664427321ff03a3901ac0ecb22a674f43d0b221f81ea870d9aba7c553951"
+  },
+  {
+    "name": "asdasdsdsdasdasdasd DSH Linux X11 Computer Use",
+    "url": "https://github.com/asdasdsdsdasdasdasd/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Linux X11 computer-use plugin for DeepSeek Harness supporting screenshots, mouse/keyboard control, and window management.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/asdasdsdsdasdasdasd/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "97092b5f74aaf879bd6717ca72d7550db97b1a4e72aa13ba111e5dd2d83889fa"
   }
 ]

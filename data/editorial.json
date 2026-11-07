@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "uictl-win-mcp",
+    "url": "https://github.com/byronjones-elsevier/uictl-win-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Windows .NET/C# GUI-automation CLI and Model Context Protocol server for coding agents.",
+    "verify_terms": [
+      "uictl-win-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/byronjones-elsevier/uictl-win-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7614afbdd385c8176a31fc3ff2eb6025d3937492411521b3796dbfb0df89a729"
+  },
+  {
+    "name": "bytehunt br (Agent Browser CLI)",
+    "url": "https://github.com/bytehunt/br",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "Agent-oriented browser CLI powered by Bun WebView with terminal Kitty graphics rendering.",
+    "verify_terms": [
+      "br"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bytehunt/br/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "000cfd6074e62d4a38fd7ce93ecf58245df04c653d90c70fd791e206dea572af"
+  },
+  {
+    "name": "Laya-Android",
+    "url": "https://github.com/Byun11/laya-android",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "Laya-Android is a compact 322M on-device decision model for Android GUI action selection.",
+    "verify_terms": [
+      "Laya-Android"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Byun11/laya-android/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a1e8e42f00cdad617bc11a04939d3d6269158f473c088da58e8f4cf33b34838c"
+  },
+  {
+    "name": "DroidFleet",
+    "url": "https://github.com/c00l-k1D/DroidFleet",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "sandbox",
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "Open-source Android device fleet management and orchestration platform for mobile automation and testing.",
+    "verify_terms": [
+      "DroidFleet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/c00l-k1D/DroidFleet/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2c81bd0512f9cb720b37a48aad11a1dbc90aa0aa6c5dcce9c60cd62499e812eb"
+  },
+  {
+    "name": "Cactus",
+    "url": "https://github.com/cactus-compute/cactus",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "android",
+      "ios",
+      "desktop",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Cactus is a cross-platform on-device LLM and VLM inference framework for mobile and edge AI agents.",
+    "verify_terms": [
+      "Cactus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cactus-compute/cactus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c67f736474fd2924426d6b49b3841aeeebf10b18c533beb395eadd3e8bf1ec96"
   }
 ]

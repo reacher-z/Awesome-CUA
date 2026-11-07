@@ -86010,5 +86010,210 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "V-Droid",
+    "url": "https://github.com/V-Droid-Agent/V-Droid",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "reward-models",
+      "self-reflection"
+    ],
+    "summary": "V-Droid pairs a mobile GUI actor with a generative verifier that scores candidate actions before execution on Android devices.",
+    "verify_terms": [
+      "V-Droid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e405fdbb0018c557b5e9d974bff53acba26b3695dccbab8839a8dde2dc306ff4",
+    "documented_by": [
+      "2503.15937"
+    ]
+  },
+  {
+    "name": "Harborage",
+    "url": "https://github.com/vadym-iefremov/harborage",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "On-demand pool manager providing isolated headless browser sessions for concurrent AI web agents.",
+    "verify_terms": [
+      "Harborage"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vadym-iefremov/harborage/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e7751e6a532becc7c58ef03272786109b979e055a6f7a146b9357f5c619fc5a6"
+  },
+  {
+    "name": "cua-bench (ERPNext)",
+    "url": "https://github.com/vaiyr/cua-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "reinforcement-learning",
+      "workflow",
+      "sandbox"
+    ],
+    "summary": "cua-bench packages containerized ERPNext v15 accounting and enterprise workflows as Harbor RL and evaluation environments for GUI agents.",
+    "verify_terms": [
+      "cua-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vaiyr/cua-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "48df5d15113f1c89314fe049d2f35cad6029afac6c9c43fe4a264b5058f0ecdc"
+  },
+  {
+    "name": "Glyph Motion Studio for WebMCP",
+    "url": "https://github.com/varun-a-1010/glyph-motion-studio-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP-native GSAP animation studio where browser agents safely co-direct and verify web motion timelines.",
+    "verify_terms": [
+      "Glyph Motion Studio for WebMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/varun-a-1010/glyph-motion-studio-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e9659fb6a000340b95393d6f6fafdb8b8b4584496970f3c0ee3ba91b69efdfdb"
+  },
+  {
+    "name": "LocalFleet",
+    "url": "https://github.com/Varun-Patkar/LocalFleet",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local-first team of AI desktop and browser bots coordinated through a unified chat interface with LM Studio/Ollama.",
+    "verify_terms": [
+      "LocalFleet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Varun-Patkar/LocalFleet/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0295810368a33d1e5ba74bde9f01e2cc29d8a2bf00293736d5ce446a9400da37"
+  },
+  {
+    "name": "op-browse-the-web-skill",
+    "url": "https://github.com/vb-tyagi/OP-browse-the-web-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Single-file zero-cost autonomous web browsing skill for Claude Code.",
+    "verify_terms": [
+      "op-browse-the-web-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vb-tyagi/OP-browse-the-web-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "756b84b36747b511258e6835b6e00f7110ba05cf9d902e88b2dbf1dbea250a23"
+  },
+  {
+    "name": "jev-windows-agent",
+    "url": "https://github.com/VBS2004/jev-windows-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "jev-windows-agent pairs Windows UI Automation inspection with a fast Jev System-One decision loop for low-latency desktop control.",
+    "verify_terms": [
+      "jev-windows-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/VBS2004/jev-windows-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a1dca4e4b45183d40c4581ca8d42f28fbe8e9fb06e99e0a47207d46ee8d489b7"
+  },
+  {
+    "name": "Vedanshu7 Operant",
+    "url": "https://github.com/Vedanshu7/operant",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Discovers how to complete a task in a no-API application once with an LLM and compiles the trace for repeatable execution.",
+    "verify_terms": [
+      "operant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Vedanshu7/operant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb22cfd47b473d062732f0768e80a088339ca0f1df94d74cde474c110136d892"
   }
 ]

@@ -9,7 +9,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C170-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2017%3A14%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-2%2C170-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C673-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--07%2000%3A38%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 Curated entries were reviewed against a first-party source snapshot; records awaiting review have their bibliographic identity checked; candidates are discovered identifiers awaiting resolution. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -54,7 +54,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **2,170 curated resources** · **1,673 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-06T17:14:14Z`. **450 records awaiting review** have verified bibliographic metadata, and **2,062 discovered candidates** await resolution. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-07T00:38:22Z`. **451 records awaiting review** have verified bibliographic metadata, and **2,062 discovered candidates** await resolution. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -64,7 +64,7 @@ Evidence through `2026-11-06T17:14:14Z`. **450 records awaiting review** have ve
 | Browse                                           | What you find                                                 | Entries |
 | ------------------------------------------------ | ------------------------------------------------------------- | ------: |
 | [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,645 |
-| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,123 |
+| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,124 |
 | [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      28 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |       2 |
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |      86 |

@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-06T23:12:25Z",
+  "id": "scan:2026-11-07T00:37:34Z",
   "schema_version": 1,
-  "status": "success",
-  "started_at": "2026-11-06T23:12:25Z",
-  "finished_at": "2026-11-06T23:16:48Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42310260420",
+  "status": "partial",
+  "started_at": "2026-11-07T00:37:34Z",
+  "finished_at": "2026-11-07T00:43:18Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42318899013",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -44,16 +44,23 @@
     "candidates": 6080
   },
   "after": {
-    "resources": 2620,
-    "bibliographic_records": 2109,
-    "arxiv_archive_records": 3417,
+    "resources": 2621,
+    "bibliographic_records": 2110,
+    "arxiv_archive_records": 3418,
     "excluded_records": 1308,
     "curated_papers": 1673,
     "curated_resources": 497,
-    "candidates": 6080
+    "candidates": 6081
   },
-  "new_papers": [],
-  "new_candidate_count": 0,
+  "new_papers": [
+    {
+      "id": "arxiv:2611.06939",
+      "name": "A Multi-Modal Robotic Framework for Physical GUI Interaction Testing",
+      "url": "https://arxiv.org/abs/2611.06939",
+      "review_status": "metadata_verified"
+    }
+  ],
+  "new_candidate_count": 1,
   "pending_metadata_changes": 11,
   "source_fetches": {
     "successful": 103,
@@ -67,192 +74,202 @@
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-06T23:13:37Z",
-    "finished_at": "2026-11-06T23:15:21Z",
+    "started_at": "2026-11-07T00:38:32Z",
+    "finished_at": "2026-11-07T00:41:49Z",
     "ok": true,
     "exit_code": 0,
     "error": null,
-    "state": "bounded_progress",
+    "state": "rate_limited",
     "complete": false,
-    "scan_status": "partial",
-    "run_id": "run:6058d034dc3b8cabb63397b4",
+    "scan_status": "rate_limited",
+    "run_id": "run:ea699ff31ed04efb3b6289fb",
     "request_attempted": true,
-    "successful_responses": 4,
-    "requests_attempted": 5,
-    "new_unique_repositories": 4,
-    "total_unique_repositories": 10120,
-    "pending_queries": 1,
-    "unknown_requests": 1,
-    "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+    "successful_responses": 17,
+    "requests_attempted": 19,
+    "new_unique_repositories": 54,
+    "total_unique_repositories": 10174,
+    "pending_queries": 16,
+    "unknown_requests": 2,
+    "epoch_id": "epoch:33dadbd455354e9407058991",
     "query_status_counts": {
-      "observed_pages_exhausted": 360,
-      "pending": 1,
+      "observed_pages_exhausted": 373,
+      "pending": 16,
       "split": 23,
-      "superseded_input": 82
+      "superseded_input": 83
     },
     "rejected_rows": {},
     "settled_unknown_requests": 1,
-    "warnings": [],
+    "warnings": [
+      "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
+      "1 GitHub candidate requests have no accepted metadata response."
+    ],
     "notices": [
       "1 existing GitHub candidate names now redirect, return 404 or are forks; the answers are recorded and those names are skipped for 30 days."
     ],
     "files": {
-      "github-candidates.jsonl": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
-      "github-candidates-manifest.json": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
-      "github-candidate-progress.json": "e8cd509d164fbd0f9c11255288b978a4ba5fd82da0b58330629c5c23c79ddef8"
+      "github-candidates.jsonl": "fa433976eb4dde71f5419c30251f1e85aa0ab5428274e5d1f0d9d0b916c4462e",
+      "github-candidates-manifest.json": "2672bc9945f4ca0c149b864e7ad659b7dc1b7d00cf1c788b274b3de57debcea1",
+      "github-candidate-progress.json": "c6fa961a39dbd4aaed479402b40dd00bbd6a048833dda1f90a751f2ecdeca90e"
     },
     "published": true,
-    "network_reservations": 5,
+    "network_reservations": 19,
     "staged_files": {
-      "github-candidates.jsonl": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
-      "github-candidates-manifest.json": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
-      "github-candidate-progress.json": "e8cd509d164fbd0f9c11255288b978a4ba5fd82da0b58330629c5c23c79ddef8"
+      "github-candidates.jsonl": "fa433976eb4dde71f5419c30251f1e85aa0ab5428274e5d1f0d9d0b916c4462e",
+      "github-candidates-manifest.json": "26d0198fb504a3d0d0985650be31ea1a1a986a9dcd30ad2579a2a6d60fbb7a5c",
+      "github-candidate-progress.json": "1e438e5ba5d1602a5d030f821b4a17bb3cf0f3522302bbbc0fa7bef583f3ebbd"
     },
     "comparison_context_rebound": true,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-06T23:16:48Z",
+      "checked_at": "2026-11-07T00:43:18Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
-        "github-candidates.jsonl": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
-        "github-candidates-manifest.json": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
-        "github-candidate-progress.json": "e8cd509d164fbd0f9c11255288b978a4ba5fd82da0b58330629c5c23c79ddef8"
+        "github-candidates.jsonl": "fa433976eb4dde71f5419c30251f1e85aa0ab5428274e5d1f0d9d0b916c4462e",
+        "github-candidates-manifest.json": "2672bc9945f4ca0c149b864e7ad659b7dc1b7d00cf1c788b274b3de57debcea1",
+        "github-candidate-progress.json": "c6fa961a39dbd4aaed479402b40dd00bbd6a048833dda1f90a751f2ecdeca90e"
       },
-      "repositories": 10120
+      "repositories": 10174
     }
   },
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-06T23:12:26Z",
-      "finished_at": "2026-11-06T23:12:53Z",
+      "started_at": "2026-11-07T00:37:35Z",
+      "finished_at": "2026-11-07T00:37:52Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-06T23:12:53Z",
-      "finished_at": "2026-11-06T23:13:27Z",
+      "started_at": "2026-11-07T00:37:52Z",
+      "finished_at": "2026-11-07T00:38:21Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-06T23:13:27Z",
-      "finished_at": "2026-11-06T23:13:27Z",
+      "started_at": "2026-11-07T00:38:21Z",
+      "finished_at": "2026-11-07T00:38:22Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 0,
+      "new_count": 1,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-06T00:36:31Z"
+      "cache_used": false,
+      "rate_limited": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-06T23:13:27Z",
-      "finished_at": "2026-11-06T23:13:28Z",
+      "started_at": "2026-11-07T00:38:22Z",
+      "finished_at": "2026-11-07T00:38:23Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-06T23:13:37Z",
-      "finished_at": "2026-11-06T23:15:21Z",
+      "started_at": "2026-11-07T00:38:32Z",
+      "finished_at": "2026-11-07T00:41:49Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
-      "state": "bounded_progress",
+      "state": "rate_limited",
       "complete": false,
-      "scan_status": "partial",
-      "run_id": "run:6058d034dc3b8cabb63397b4",
+      "scan_status": "rate_limited",
+      "run_id": "run:ea699ff31ed04efb3b6289fb",
       "request_attempted": true,
-      "successful_responses": 4,
-      "requests_attempted": 5,
-      "new_unique_repositories": 4,
-      "total_unique_repositories": 10120,
-      "pending_queries": 1,
-      "unknown_requests": 1,
-      "epoch_id": "epoch:cb7440a35b150c9678e2a329",
+      "successful_responses": 17,
+      "requests_attempted": 19,
+      "new_unique_repositories": 54,
+      "total_unique_repositories": 10174,
+      "pending_queries": 16,
+      "unknown_requests": 2,
+      "epoch_id": "epoch:33dadbd455354e9407058991",
       "query_status_counts": {
-        "observed_pages_exhausted": 360,
-        "pending": 1,
+        "observed_pages_exhausted": 373,
+        "pending": 16,
         "split": 23,
-        "superseded_input": 82
+        "superseded_input": 83
       },
       "rejected_rows": {},
       "settled_unknown_requests": 1,
-      "warnings": [],
+      "warnings": [
+        "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
+        "1 GitHub candidate requests have no accepted metadata response."
+      ],
       "notices": [
         "1 existing GitHub candidate names now redirect, return 404 or are forks; the answers are recorded and those names are skipped for 30 days."
       ],
       "files": {
-        "github-candidates.jsonl": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
-        "github-candidates-manifest.json": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
-        "github-candidate-progress.json": "e8cd509d164fbd0f9c11255288b978a4ba5fd82da0b58330629c5c23c79ddef8"
+        "github-candidates.jsonl": "fa433976eb4dde71f5419c30251f1e85aa0ab5428274e5d1f0d9d0b916c4462e",
+        "github-candidates-manifest.json": "2672bc9945f4ca0c149b864e7ad659b7dc1b7d00cf1c788b274b3de57debcea1",
+        "github-candidate-progress.json": "c6fa961a39dbd4aaed479402b40dd00bbd6a048833dda1f90a751f2ecdeca90e"
       },
       "published": true,
       "baseline_files": {
-        "github-candidates.jsonl": "39ed875312fc201b0af87b16ad7c2704bf9f4e0ac29390a5316dcf08630ec66b",
-        "github-candidates-manifest.json": "5c1a9f0692337d497c70878d4dc16285dcb1f0d545fd4122d5a7687cf5f5fe9a",
-        "github-candidate-progress.json": "f39db008c7fedf7a4388f0890455151e43ddaa4b722f2e6952a444bc5dc60162"
-      },
-      "ready_to_publish": false,
-      "network_reservations": 5,
-      "staged_files": {
         "github-candidates.jsonl": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
         "github-candidates-manifest.json": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
         "github-candidate-progress.json": "e8cd509d164fbd0f9c11255288b978a4ba5fd82da0b58330629c5c23c79ddef8"
+      },
+      "ready_to_publish": false,
+      "network_reservations": 19,
+      "staged_files": {
+        "github-candidates.jsonl": "fa433976eb4dde71f5419c30251f1e85aa0ab5428274e5d1f0d9d0b916c4462e",
+        "github-candidates-manifest.json": "26d0198fb504a3d0d0985650be31ea1a1a986a9dcd30ad2579a2a6d60fbb7a5c",
+        "github-candidate-progress.json": "1e438e5ba5d1602a5d030f821b4a17bb3cf0f3522302bbbc0fa7bef583f3ebbd"
       },
       "comparison_context_rebound": true,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-06T23:16:48Z",
+        "checked_at": "2026-11-07T00:43:18Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
-          "github-candidates.jsonl": "24a0d8c941226b30b07ac3bfcec8f30801c463801fb470d4ab24a79712d8a0bc",
-          "github-candidates-manifest.json": "bd874df0c2b073fe1bb7ec5c40b3ad984cc5322ce3aafb0381935b166c2a93ab",
-          "github-candidate-progress.json": "e8cd509d164fbd0f9c11255288b978a4ba5fd82da0b58330629c5c23c79ddef8"
+          "github-candidates.jsonl": "fa433976eb4dde71f5419c30251f1e85aa0ab5428274e5d1f0d9d0b916c4462e",
+          "github-candidates-manifest.json": "2672bc9945f4ca0c149b864e7ad659b7dc1b7d00cf1c788b274b3de57debcea1",
+          "github-candidate-progress.json": "c6fa961a39dbd4aaed479402b40dd00bbd6a048833dda1f90a751f2ecdeca90e"
         },
-        "repositories": 10120
+        "repositories": 10174
       }
     },
     {
       "name": "build",
-      "started_at": "2026-11-06T23:15:31Z",
-      "finished_at": "2026-11-06T23:15:34Z",
+      "started_at": "2026-11-07T00:41:59Z",
+      "finished_at": "2026-11-07T00:42:03Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-06T23:16:23Z",
-      "finished_at": "2026-11-06T23:16:38Z",
+      "started_at": "2026-11-07T00:42:53Z",
+      "finished_at": "2026-11-07T00:43:08Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.",
+    "1 GitHub candidate requests have no accepted metadata response."
+  ],
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "ae8bcd818a5e41ce881e162270be716a",
+    "round_id": "ff95e0713fbc4a6da435e337bbe39a35",
     "max_requests": 180,
     "max_seconds": 600,
-    "requests_reserved": 146,
-    "responses_received": 146,
+    "requests_reserved": 161,
+    "responses_received": 161,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "github_candidates": 5
+      "recent_arxiv": 1,
+      "github_candidates": 19
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -265,13 +282,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 5
+      "api.github.com": 19
     },
-    "provider_cooldowns": {},
-    "blocked_providers": [],
-    "ledger_sha256": "a06b0eec11f391d64135d89ed134859d3d36ec9983a17174e58a4a23983eb3f3",
+    "provider_cooldowns": {
+      "api.github.com": "2026-11-07T00:42:03.746044+00:00"
+    },
+    "blocked_providers": [
+      "api.github.com"
+    ],
+    "ledger_sha256": "62f0f156028584d927a8e2182e0f0603061550d981223d11a90f0b11ccbdc166",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

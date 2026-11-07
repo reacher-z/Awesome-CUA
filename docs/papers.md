@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,099; 865 ⭐) · [2025](#2025) (621; 501 ⭐) · [2024](#2024) (279; 205 ⭐) · [2023](#2023) (71; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (13; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,100; 865 ⭐) · [2025](#2025) (621; 501 ⭐) · [2024](#2024) (279; 205 ⭐) · [2023](#2023) (71; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (13; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -48,6 +48,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-10-30 | [Cross-Interface Authorization for AI Computer-Use Agents](https://arxiv.org/abs/2610.41397) | ⭐ reviewed | [safety-security](topics/safety-security.md), [tool-integration](topics/tool-integration.md) |
 | 2026-10-30 | [AgentShield: Fortifying Web Applications Against AI Agents and Agentic Browsers](https://arxiv.org/abs/2610.41181) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
 | 2026-10-30 | [ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents](https://arxiv.org/abs/2610.41272) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
+| 2026-10-30 | [A Multi-Modal Robotic Framework for Physical GUI Interaction Testing](https://arxiv.org/abs/2611.06939) | metadata |  |
 | 2026-10-29 | [Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents](https://arxiv.org/abs/2610.39251) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [efficiency](topics/efficiency.md), [reinforcement-learning](topics/reinforcement-learning.md) |
 | 2026-10-29 | [What Does "Now" Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click](https://arxiv.org/abs/2610.39282) | ⭐ reviewed | [efficiency](topics/efficiency.md), [evaluation](topics/evaluation.md), [robustness](topics/robustness.md), [state-tracking](topics/state-tracking.md) |
 | 2026-10-29 | [VeriCUA: Verification as Agentic Exploration for Computer-Using Agents](https://arxiv.org/abs/2610.40578) | ⭐ reviewed | [evaluation](topics/evaluation.md), [observability](topics/observability.md), [tool-integration](topics/tool-integration.md) |

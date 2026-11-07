@@ -86010,5 +86010,198 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Botright",
+    "url": "https://github.com/Vinyzu/Botright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Botright is a Playwright-based stealth browser automation framework with fingerprint spoofing and CAPTCHA-solving utilities.",
+    "verify_terms": [
+      "Botright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Vinyzu/Botright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e92bfc12702007599bfe1876d0625dc66ba854586676cee1ab353703a184f9e2"
+  },
+  {
+    "name": "SpectraBrowser MCP",
+    "url": "https://github.com/virajverse/spectra-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Autonomous real-browser interaction engine and Chrome extension bridge exposing 99 MCP tools to AI agents.",
+    "verify_terms": [
+      "SpectraBrowser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/virajverse/spectra-browser-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5599aa2771b1093050661011846b5d263f70b16191546414e7d55d3bfbf217f2"
+  },
+  {
+    "name": "SlyBrowser",
+    "url": "https://github.com/virtualfanc/slybrowser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Anti-detect Chromium browser built for agentic web automation and authorized scraping with native humanized input.",
+    "verify_terms": [
+      "SlyBrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/virtualfanc/slybrowser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1e35a8f1e18c77aeea4a70fe5eadf992cc8d2a84c103be5fafc172a634c99537"
+  },
+  {
+    "name": "IXR Agent",
+    "url": "https://github.com/vishnu-madhavan-git/ixr-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "IXR Agent is a TypeScript in-page web GUI agent that executes natural-language instructions over live web applications.",
+    "verify_terms": [
+      "IXR Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vishnu-madhavan-git/ixr-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "66d54ec35277ecff35d80c4b4692e44f8a41dcdc129338f3c07e5db422694636"
+  },
+  {
+    "name": "BrowseWebApp Bench",
+    "url": "https://github.com/visnia-ai/browsewebapp-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "BrowseWebApp Bench evaluates browser agents across 100 realistic web workflows spanning record extraction, document upload, and form submission.",
+    "verify_terms": [
+      "BrowseWebApp Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/visnia-ai/browsewebapp-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "57175a393411d33806a82adb48f1970dd3f02b5b229286f49b9d99ff2864377b"
+  },
+  {
+    "name": "Okno Windows Computer Use MCP",
+    "url": "https://github.com/vitalcc55/Okno",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Windows-native Model Context Protocol runtime for AI agents providing desktop window inspection, OCR, and input control.",
+    "verify_terms": [
+      "okno"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vitalcc55/Okno/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ba6c8f76396247606395f5318b8dfca38c2169c19ada516a41a21b5c8352ab82"
+  },
+  {
+    "name": "Bond Underwriting Agent Benchmark",
+    "url": "https://github.com/vitoworleone/bond-underwriting-agent-benchmark",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "workflow"
+    ],
+    "summary": "Chinese vertical long-horizon evaluation benchmark testing agents on multi-step financial bond-underwriting document and web workflows.",
+    "verify_terms": [
+      "Bond Underwriting Agent Benchmark"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vitoworleone/bond-underwriting-agent-benchmark/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fcf090c02c2bff65b60a2512a570809c5cde2d4e4eb35f14da7860d44c82c400"
+  },
+  {
+    "name": "Financial CUA Benchmark",
+    "url": "https://github.com/vitoworleone/financial-cua-benchmark",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow"
+    ],
+    "summary": "Financial CUA Benchmark provides deterministic verifiers and bond-underwriting tasks for evaluating financial computer-use agents.",
+    "verify_terms": [
+      "benchmark"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vitoworleone/financial-cua-benchmark/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5c1801728a26291839c89a4764161b941ea4536727a08c23e4e5f418b7e78b33"
   }
 ]

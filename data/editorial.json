@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "PageKit",
+    "url": "https://github.com/Ken-u/PageKit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Turns spare Android phones into free web search, page fetch, and real-browser automation nodes for AI agents.",
+    "verify_terms": [
+      "PageKit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ken-u/PageKit/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "83f496cdfaa9734d07adb6baf40c0a1d68887cea98f131c418528bc0c92ff596"
+  },
+  {
+    "name": "Kernel Claude Computer Use Loop",
+    "url": "https://github.com/kernel/claude-cu-loop-sample",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Reference SDK implementation of Anthropic's Claude Computer Use agent loop driving remote cloud browsers via Kernel's Computer Controls API.",
+    "verify_terms": [
+      "computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kernel/claude-cu-loop-sample/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d82ede0343c6d58d9463cea557414a6e6a51756cc3a9a76b2df6c8408e406045"
+  },
+  {
+    "name": "Kernel Eval Protocol",
+    "url": "https://github.com/kernel/kernel-eval-protocol-quickstart",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "reinforcement-learning",
+      "web-navigation",
+      "sandbox"
+    ],
+    "summary": "Evaluates and fine-tunes vision-language browser agents using Eval Protocol, Kernel cloud browsers, and verifiable task graders.",
+    "verify_terms": [
+      "Kernel Eval Protocol"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kernel/kernel-eval-protocol-quickstart/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bc26e8e18238dbf0fecad48424be36ca5891e8751796d9d1b1261a8600b81ebe"
+  },
+  {
+    "name": "Kernel MCP Server",
+    "url": "https://github.com/kernel/kernel-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "web-navigation"
+    ],
+    "summary": "Kernel MCP Server connects AI agents to low-latency cloud browser sandboxes and serverless execution environments on Kernel.",
+    "verify_terms": [
+      "Kernel MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kernel/kernel-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f5df477c7711fd8cad06b8a47dc7bd73024132a155658f28885838a86d5f5f9"
+  },
+  {
+    "name": "GAZE",
+    "url": "https://github.com/KevinTrinhDev/gaze",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Vision-first browser controller that observes and drives an already logged-in Chrome window.",
+    "verify_terms": [
+      "GAZE"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KevinTrinhDev/gaze/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2860e0eab02ae160d388757e1d9af06661dc48bd7b8a635e9a691645e6a90c7e"
   }
 ]

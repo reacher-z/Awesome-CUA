@@ -86010,5 +86010,148 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Compress2Focus (CCPO)",
+    "url": "https://github.com/HiThink-Research/CCPO",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "Compress2Focus (CCPO) implements coordinate compression for multi-turn policy optimization in vision-language GUI agents.",
+    "verify_terms": [
+      "ccpo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HiThink-Research/CCPO/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "83f23da2e4f98c5221d932ff2915ad59f956ef8b8e34900602864deef3056b19",
+    "documented_by": [
+      "2601.11631"
+    ]
+  },
+  {
+    "name": "kb-browser",
+    "url": "https://github.com/HiyokoSauna37/kb-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "CLI-driven Playwright and Chromium browser with terminal DevTools for humans and AI coding agents.",
+    "verify_terms": [
+      "kb-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HiyokoSauna37/kb-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "26b74f972dc5fac43f3c557b9dea3f2acac710d4eb9049c6de0eced8c8396a0a"
+  },
+  {
+    "name": "AnyTool",
+    "url": "https://github.com/HKUDS/AnyTool",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "planning",
+      "efficiency"
+    ],
+    "summary": "AnyTool is a universal tool-use layer for AI agents supporting MCP, GUI, web, and shell tools with hierarchical retrieval and self-reflection.",
+    "verify_terms": [
+      "AnyTool"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HKUDS/AnyTool/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8afd5b27651664d5c88bd1c14f11c18991678d1559e9d8d87942fb0be8106316"
+  },
+  {
+    "name": "CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "CLI-Anything automatically wraps professional desktop GUI applications such as GIMP, Blender, and LibreOffice into structured agent-native CLIs.",
+    "verify_terms": [
+      "CLI-Anything"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HKUDS/CLI-Anything/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "24669c9549ad753b173eead4ffc465ebc0b8dc9b4d64e7be73cd5b3b03f56ac9",
+    "documented_by": [
+      "2606.03854"
+    ]
+  },
+  {
+    "name": "terminal-use-mcp",
+    "url": "https://github.com/HLH2023/terminal-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Model Context Protocol server for interactive terminal computer use, allowing AI agents to operate full-screen TUI applications (`vim`, `htop`, `lazygit`).",
+    "verify_terms": [
+      "terminal-use-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HLH2023/terminal-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "81ea4d94de3e5c7e1d1ef6ed62d5eda20e0f1bf050d4ff916a8cc8f25b3a5dde"
   }
 ]

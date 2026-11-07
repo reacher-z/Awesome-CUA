@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Apply Lens",
+    "url": "https://github.com/mangeshraut712/apply-lens",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "workflow"
+    ],
+    "summary": "Solari browser agent that cross-examines job postings against live product websites to verify engineering roles.",
+    "verify_terms": [
+      "Apply Lens"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mangeshraut712/apply-lens/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "12fb46ba1eb634f18044d95ebad2df6b57cbd0c1f611674b8e46f57461b97965"
+  },
+  {
+    "name": "ScreenHand",
+    "url": "https://github.com/manushi4/Screenhand",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Open-source desktop automation MCP server that drives native macOS and Windows UI elements in ~50ms via OS accessibility APIs.",
+    "verify_terms": [
+      "ScreenHand"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/manushi4/Screenhand/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "42d99323ad0d2692f3b84d23bf3cfdd2d485238d497b225918b2e1f6f64538be"
+  },
+  {
+    "name": "dsh-vision-kit",
+    "url": "https://github.com/Maopk/dsh-vision-kit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "grounding",
+      "automation"
+    ],
+    "summary": "dsh-vision-kit provides a resident Windows PC Actor combining UI Automation structure, SendInput actuation, and visual grounding for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh-vision-kit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Maopk/dsh-vision-kit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "17e1e4b87339acf755c1488a1be5c6ae86a5f42f7e9028dcbf8e8d364d4dd7a6"
+  },
+  {
+    "name": "mapleluvr cu (Evidence-Bound Windows CLI)",
+    "url": "https://github.com/mapleluvr/cu",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "observability",
+      "automation"
+    ],
+    "summary": "Evidence-bound computer-use CLI for Windows that pairs every UI action with pre/post window observations.",
+    "verify_terms": [
+      "cu"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mapleluvr/cu/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b8fefa5a08993551218a674143a63cd30b5f6874a6b12984adc009d0d7c73a6c"
+  },
+  {
+    "name": "NaviFlow",
+    "url": "https://github.com/marc-ing/navi-flow",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Supervised open-source AI browser agent for Chrome that plans, navigates, clicks, types, and verifies web workflows.",
+    "verify_terms": [
+      "NaviFlow"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/marc-ing/navi-flow/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4fee48bf6b57ca7a57845b3979c20e0330c6a93a39def63034680a4b909eabb8"
   }
 ]

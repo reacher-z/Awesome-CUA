@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "CrewAI",
+    "url": "https://github.com/joaomdmoura/crewAI",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "CrewAI is a Python framework for orchestrating role-playing autonomous AI agent teams and event-driven multi-step workflows.",
+    "verify_terms": [
+      "CrewAI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/joaomdmoura/crewAI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013"
+  },
+  {
+    "name": "browser-link",
+    "url": "https://github.com/jobshimo/browser-link",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Developer-focused MCP bridge connecting Claude Code, OpenCode, and GitHub Copilot CLI to a live Chrome browser.",
+    "verify_terms": [
+      "browser-link"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jobshimo/browser-link/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a6cfb9904e9b090c182fed37085d0dd0e4ecd6fa3be6fa178df7a46b3e297b61"
+  },
+  {
+    "name": "NotebookLM for Codex",
+    "url": "https://github.com/Jockeys97/notebooklm-codex-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "data-generation"
+    ],
+    "summary": "Codex skill that queries Google Gemini NotebookLM directly through browser automation.",
+    "verify_terms": [
+      "NotebookLM for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jockeys97/notebooklm-codex-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "52ba082128292a0b9f1dc6ad86c8181f56f69db3da27fe67ae8d37ccb8d5292b"
+  },
+  {
+    "name": "ExactMac",
+    "url": "https://github.com/joeycumines/ExactMac",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "ExactMac provides local, Accessibility-first macOS desktop automation over MCP using a Swift gRPC host and Go MCP server.",
+    "verify_terms": [
+      "ExactMac"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/joeycumines/ExactMac/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b7627c041bc5510cccaa76cf5f2883c7163fe3a3f9709c2ce9ab3452c96540af"
+  },
+  {
+    "name": "kimi-cu-pi",
+    "url": "https://github.com/johndfowler/kimi-cu-pi",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Extension connecting Kimi Computer Use (KimiCU) visual grounding and action capabilities to the Pi coding agent.",
+    "verify_terms": [
+      "kimi-cu-pi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/johndfowler/kimi-cu-pi/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0b0f1f3e78c82ba61a666d0201452adf4e01be18b8b1c42f222bc3cb65e5803"
   }
 ]

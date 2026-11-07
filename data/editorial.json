@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Polyform a11y-guide",
+    "url": "https://github.com/polyform-ai/a11y-guide",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Semantic accessibility page-guidance layer designed simultaneously for assistive technologies and AI browser agents.",
+    "verify_terms": [
+      "a11y-guide"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/polyform-ai/a11y-guide/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "29fc680641d5c80977fcf4ec0555b6c5cc7d3f4441b1df89bc37044dba666fd5"
+  },
+  {
+    "name": "HealthEnv",
+    "url": "https://github.com/possibleme2026-lang/healthenv",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "workflow"
+    ],
+    "summary": "HealthEnv compiles longitudinal clinical question-answering tasks into stateful, verifiable computer-use evaluation environments.",
+    "verify_terms": [
+      "HealthEnv"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/possibleme2026-lang/healthenv/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f91bc42fd6a20a7e4e19ba461abbe75923558010133f99f5a8830bbe7ad70e8"
+  },
+  {
+    "name": "dsh-live-loop",
+    "url": "https://github.com/POWERRRRRRRR/dsh-live-loop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Frontend runtime verification plugin for DeepSeek Harness that detects, launches, previews, and tests web apps in a live browser.",
+    "verify_terms": [
+      "dsh-live-loop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/POWERRRRRRRR/dsh-live-loop/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "caf04130a57ea999120b41856b19f1d662b450772d12403e1409b1e07c589566"
+  },
+  {
+    "name": "FixtureBench",
+    "url": "https://github.com/Prabal-Singh/fixturebench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "workflow",
+      "robustness"
+    ],
+    "summary": "FixtureBench evaluates procurement browser agents on deterministic Coupa-style buyer/supplier portals with pagination, MFA, and decoy POs.",
+    "verify_terms": [
+      "FixtureBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Prabal-Singh/fixturebench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b2e70f1a5fe0ba37920a9f4d6713fe0673088be00e0a08fc043381f3ce70c025"
+  },
+  {
+    "name": "Locopilot",
+    "url": "https://github.com/pradhankukiran/locopilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "safety-security",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Supervised Linux desktop automation copilot featuring sandboxed execution, policy guardrails, and rollback checkpoints.",
+    "verify_terms": [
+      "Locopilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pradhankukiran/locopilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "10d1608a8d44f34ce80990a94f2988916514dafe50b2c96d197ee53129d7e05a"
   }
 ]

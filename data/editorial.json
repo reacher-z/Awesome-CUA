@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "open-codex-computer-use",
+    "url": "https://github.com/iFurySt/open-codex-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "open-codex-computer-use is a native Swift MCP server that exposes macOS per-application window capture, accessibility inspection, and input control.",
+    "verify_terms": [
+      "computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iFurySt/open-codex-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "990539ede07dcdc05346c5f973980d39bc6955b6f6915e2132227a8c30811ef6"
+  },
+  {
+    "name": "hypruse",
+    "url": "https://github.com/IlyasKhallouki/hypruse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Model Context Protocol server giving AI agents native window, input, and screenshot control on Linux Hyprland Wayland desktops.",
+    "verify_terms": [
+      "hypruse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/IlyasKhallouki/hypruse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "077c82466e2c657ba9af1e5075e9e8af2935115ff9beeca629ba15328d1d5eb7"
+  },
+  {
+    "name": "Agentalyze",
+    "url": "https://github.com/Ilyat9/Agentalyze",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "Agentalyze is an evaluation harness for LLM browser agents with real Chromium tasks, DOM-based state verifiers, and step-level trace analysis.",
+    "verify_terms": [
+      "Agentalyze"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ilyat9/Agentalyze/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20c1d8fa330d0631393756c1af5ec429b601e1863d8eb3e665073faef25bff91"
+  },
+  {
+    "name": "cdp-drive",
+    "url": "https://github.com/immineal/cdp-drive",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Single-file zero-dependency Chrome DevTools Protocol driver for headless and headful Chrome automation without Playwright.",
+    "verify_terms": [
+      "cdp-drive"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/immineal/cdp-drive/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a120642938280e89355d5f5573a70bad5870735a3bb7a44865e4fe701cde6816"
+  },
+  {
+    "name": "Browsentic",
+    "url": "https://github.com/imshaikot/browsentic",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Agentic browser harness providing an AI side panel and interactive control orb inside Chrome, Edge, and Arc.",
+    "verify_terms": [
+      "Browsentic"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/imshaikot/browsentic/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7d73b04c1585293c8e186e4ef802b5a78ab0639927b56b180a4439c46c0c168a"
   }
 ]

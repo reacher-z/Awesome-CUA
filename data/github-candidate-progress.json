@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "d917e6c5f3074ebf28c098aed497e90bfd93e5a24c9ef5e40e8dccd79f794ff8",
-  "observation_snapshot_sha256": "69ce9180f27170289d04d40826cf90c28e835db9faab133cfeefba4f90c0ce43",
+  "manifest_sha256": "5d1fa6a9351fbf5bc12bc780a006a8801fe49282b2dba0de803f490a7b32822b",
+  "observation_snapshot_sha256": "28ed17e442947f438604155931ad780161eb2bade7309265e374fc69fc3c8d49",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3665,11 +3665,48 @@
           }
         },
         "id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f"
+      },
+      {
+        "active_records": 2621,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8191156,
+            "sha256": "2413edd836bde310860d351f749079862d74fce76857f398459db109e332c864"
+          },
+          "catalog.jsonl": {
+            "bytes": 7558322,
+            "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "input_id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "kind": "existing",
+        "last_attempt": 833,
+        "next_index": 140,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
         "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
@@ -3677,7 +3714,7 @@
         "last_attempt": 828,
         "next_index": 135,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
@@ -79622,6 +79659,116 @@
         "run_id": "run:ed644b2ec6a8bff92e4fc19a",
         "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-jd",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1079654955
+        ],
+        "finished_at": "2026-11-07T04:38:14.728710+00:00",
+        "id": "receipt:5dd2670036fd1f38bdc320c2e708455280462e4f396f6f305add3a97689c4c39",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 135,
+        "query_id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d60720ca10efe18fa361baa75e899f6d23d5d02c0c3167f6a4be58e1e5ee2c1e",
+        "requested_at": "2026-11-07T04:38:14.408699+00:00",
+        "response_bytes": 7324,
+        "response_sha256": "cb750cb4c07ef9fa1d77504c2148d096eaf62ccb951bdf62a5e3d158b672acbb",
+        "returned_count": 1,
+        "run_id": "run:c66b933f4ebf37bf89807510",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-neteasecloudmusic",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1323662537
+        ],
+        "finished_at": "2026-11-07T04:38:21.114151+00:00",
+        "id": "receipt:23f3ae33036fe768798194b945bdd90930cbfbf60d10041ced5d5e0a2633b7ce",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 136,
+        "query_id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "bfa8ccc71a472b4a291c43058b29cf5333c01733979f01fad785e12ed1367f55",
+        "requested_at": "2026-11-07T04:38:20.920786+00:00",
+        "response_bytes": 6884,
+        "response_sha256": "fa281e3042506fc403aafe0aa0ab190d44b72b8618db1911fe98bcf08beda4dd",
+        "returned_count": 1,
+        "run_id": "run:c66b933f4ebf37bf89807510",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-rednote",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1077345894
+        ],
+        "finished_at": "2026-11-07T04:38:27.742221+00:00",
+        "id": "receipt:fc7a7b3f6fdec6ff77359f025bb97abac34b6384b59eab0172dc421483017827",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 137,
+        "query_id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "61aa5b850df0c9a4030af3f0f355987d2c60832bfcaea0b0c45ac1e7d57d40c0",
+        "requested_at": "2026-11-07T04:38:27.432924+00:00",
+        "response_bytes": 7208,
+        "response_sha256": "c9fabb18ae3c755217149a5b99d0002fd4bdea60d793f5b77f78dc45b5db7e1b",
+        "returned_count": 1,
+        "run_id": "run:c66b933f4ebf37bf89807510",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-tencentmeeting",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1186312558
+        ],
+        "finished_at": "2026-11-07T04:38:34.147646+00:00",
+        "id": "receipt:62e9eaace79b541b6b00c3119cc2adb3443766351359745f1bf2f1f61d0838d7",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 138,
+        "query_id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "9006f1bb6cca197b98fcf934afbc070c4ab3d34f22b6ed70f565f42ba115ddc6",
+        "requested_at": "2026-11-07T04:38:33.945076+00:00",
+        "response_bytes": 6934,
+        "response_sha256": "484a4e8ffedce60ef0c70bfc1daaffa47a8c456ee9fab77363a16d1c0c972225",
+        "returned_count": 1,
+        "run_id": "run:c66b933f4ebf37bf89807510",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-ubereats",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1233704073
+        ],
+        "finished_at": "2026-11-07T04:38:40.658857+00:00",
+        "id": "receipt:f83b7f8264220e0ca08b572c699bdebc5181eb4703f0037dd65f9537bd70ddab",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 139,
+        "query_id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "a69012be54349e29f78254ba1d37eed3c402a067150f331543c1923a26005509",
+        "requested_at": "2026-11-07T04:38:40.457135+00:00",
+        "response_bytes": 6972,
+        "response_sha256": "7004c8bd782da2002288678181f4042041d77b28945e1b4c277641fc78e46a7b",
+        "returned_count": 1,
+        "run_id": "run:c66b933f4ebf37bf89807510",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-wechat-v2",
+        "status": 200
       }
     ],
     "runs": [
@@ -82680,9 +82827,40 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 191.367331187
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10199,
+        "before_unique_repositories": 10194,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T04:38:44.746436+00:00",
+        "id": "run:c66b933f4ebf37bf89807510",
+        "input_id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 145,
+          "reservations_before": 140,
+          "reservations_charged": 5,
+          "round_id": "0c969996f89b4b36b73afef990cd1b3b"
+        },
+        "started_at": "2026-11-07T04:38:02.695409+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 189.179576672
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "a8cf53e662b4246f74a65e97d8f135a9e1e3203e61625f2887ade1b64d6bc224"
+  "state_sha256": "6eeb90cb64c9af04f1b1b80f13078e86467943f551a30f82bbaaf22a00e2b098"
 }

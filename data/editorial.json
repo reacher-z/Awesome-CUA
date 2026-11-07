@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DylanSantwani OpenBrowser",
+    "url": "https://github.com/dylansantwani/openbrowser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and zero-dependency MCP server for automating a user's real logged-in Chrome browser.",
+    "verify_terms": [
+      "openbrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dylansantwani/openbrowser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7bcc0a8626bba2e300cbeb46102682bf2b04d25eb8f24104c2e6c1bb8155887d"
+  },
+  {
+    "name": "NormCap",
+    "url": "https://github.com/dynobo/normcap",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding"
+    ],
+    "summary": "NormCap is a cross-platform OCR screen-capture tool that extracts text directly from selected screen regions on Linux, macOS, and Windows.",
+    "verify_terms": [
+      "NormCap"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dynobo/normcap/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "db5524600e8e805b30553064683692e838792f22740dc2663d48f5fa9f4c6e97"
+  },
+  {
+    "name": "Open Computer Use",
+    "url": "https://github.com/e2b-dev/open-computer-use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Open Computer Use runs open-source vision-language models inside an E2B Desktop cloud Linux sandbox for autonomous GUI task execution.",
+    "verify_terms": [
+      "Open Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/e2b-dev/open-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5ef533102ffbd847273c11f1139c8a84b6c38d92182abe55e64c902e23fbd13e"
+  },
+  {
+    "name": "E2B Surf",
+    "url": "https://github.com/e2b-dev/surf",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "E2B Surf is a web-based computer-use agent combining OpenAI Computer-Using Agent models with an isolated E2B Desktop virtual machine.",
+    "verify_terms": [
+      "E2B Surf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/e2b-dev/surf/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "571c96975a6369b9521160d05e943d0ca1ac290a833c06ec6d893545719bab98"
+  },
+  {
+    "name": "Easy Claw",
+    "url": "https://github.com/easyclaw-ai/easy_claw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Open-source AI browser automation agent for multi-step web workflow execution and page interaction.",
+    "verify_terms": [
+      "Easy Claw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/easyclaw-ai/easy_claw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c5bc07b04234bb9fadcade74b7b8727c2f91c6c542c9af6db57559a31746c4be"
   }
 ]

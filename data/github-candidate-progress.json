@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "4b7744911b397a4c667b176450bbb0cb6647b86b3c00b0bb1079b6cea9baf945",
-  "observation_snapshot_sha256": "26445a09d7b61a25072ed877b01b439273492fc149c82596ace0bbe0c3c93a43",
+  "manifest_sha256": "d917e6c5f3074ebf28c098aed497e90bfd93e5a24c9ef5e40e8dccd79f794ff8",
+  "observation_snapshot_sha256": "69ce9180f27170289d04d40826cf90c28e835db9faab133cfeefba4f90c0ce43",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3637,11 +3637,48 @@
           }
         },
         "id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43"
+      },
+      {
+        "active_records": 2621,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8146318,
+            "sha256": "b48405fe3d5f7fced91bb59f722132c9009cf2bdfa3039bdc0d1527c88e85af5"
+          },
+          "catalog.jsonl": {
+            "bytes": 7558322,
+            "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "kind": "existing",
+        "last_attempt": 828,
+        "next_index": 135,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
         "input_id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
@@ -3649,7 +3686,7 @@
         "last_attempt": 823,
         "next_index": 130,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
@@ -79475,6 +79512,116 @@
         "run_id": "run:d0570178ed3c4bc363193e5a",
         "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-bilibili",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1203404776
+        ],
+        "finished_at": "2026-11-07T04:18:01.099892+00:00",
+        "id": "receipt:ed89e87bf804595cab58ebc25c2a1b842f477ca04b1ef6f1ef3b710650c50bd9",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 130,
+        "query_id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "487fc35fb5b32efacb798c173fcd358ff813fb72ac13ece54cc386905e6f8202",
+        "requested_at": "2026-11-07T04:18:00.857511+00:00",
+        "response_bytes": 6928,
+        "response_sha256": "210545b533bcb358652f9459bc0a0b1e6ac6a7d568bd8fea504dc0a46ef0fdc7",
+        "returned_count": 1,
+        "run_id": "run:ed644b2ec6a8bff92e4fc19a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-booking",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1153219258
+        ],
+        "finished_at": "2026-11-07T04:18:07.578222+00:00",
+        "id": "receipt:6f119bb0e70166af1d405d5ec6a06a261f9c8bf38b5ce59769f7f7ef2a955145",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 131,
+        "query_id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "a7b1f6e0447d438cb949141efa3deed464c78d05ef976af17d21ace8cedaeeae",
+        "requested_at": "2026-11-07T04:18:07.368924+00:00",
+        "response_bytes": 6798,
+        "response_sha256": "e9a7fdea04ab871ce027e9520027aa899f6026bdbfaa3eab1f7dcd47fe6bf354",
+        "returned_count": 1,
+        "run_id": "run:ed644b2ec6a8bff92e4fc19a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-ctrip",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1079606615
+        ],
+        "finished_at": "2026-11-07T04:18:14.105779+00:00",
+        "id": "receipt:8552ff9c676311776bf6228d8e80650e205fa32e6d6287391a3a62928c9b206b",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 132,
+        "query_id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "5ce26e61f4050d48ded5a2a6405ca1b96e536b99242773b54d16373657dca895",
+        "requested_at": "2026-11-07T04:18:13.879956+00:00",
+        "response_bytes": 6806,
+        "response_sha256": "adaac55e91f2367cc9a6e2e81b1c8b7285f51833d77b23295e6c6d06039ee033",
+        "returned_count": 1,
+        "run_id": "run:ed644b2ec6a8bff92e4fc19a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-eleme",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1203798924
+        ],
+        "finished_at": "2026-11-07T04:18:20.630852+00:00",
+        "id": "receipt:30e146be64e957772484916002745f18337f66de5bfd1a8495663b2ae3b81f3a",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 133,
+        "query_id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "9b66cc7044f9e28e260d643b2fe18e8f7db481df91db4050345f68fad30b4dd0",
+        "requested_at": "2026-11-07T04:18:20.390958+00:00",
+        "response_bytes": 6975,
+        "response_sha256": "ef0162f3238aac9a13c5c7c6584d8a60f5c23597db796147f49190518faaf4c9",
+        "returned_count": 1,
+        "run_id": "run:ed644b2ec6a8bff92e4fc19a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-instagram",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1078421680
+        ],
+        "finished_at": "2026-11-07T04:18:27.091789+00:00",
+        "id": "receipt:82ffbc7fa0eb67951ad4255ce91e7644ad41784a5c08c274ea897edde1707362",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 134,
+        "query_id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "4f420dd25f45d1ed839c81cfffaf5dcfaca4770636ed9cd0fd47441840560463",
+        "requested_at": "2026-11-07T04:18:26.901824+00:00",
+        "response_bytes": 6674,
+        "response_sha256": "0efb55e4163bdedffd959128c5ab8f693b05951d381db3034212818324fa44f9",
+        "returned_count": 1,
+        "run_id": "run:ed644b2ec6a8bff92e4fc19a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-jd",
+        "status": 200
       }
     ],
     "runs": [
@@ -82502,9 +82649,40 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 192.73053850399998
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10194,
+        "before_unique_repositories": 10189,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T04:18:30.221878+00:00",
+        "id": "run:ed644b2ec6a8bff92e4fc19a",
+        "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "109a560a3bbc420ab19d77c01edc5892"
+        },
+        "started_at": "2026-11-07T04:17:51.899928+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 191.367331187
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "cd99fed021ec5e47946f13af6e86cc38ff0eb47c5b479ea7626babde5b4eb311"
+  "state_sha256": "a8cf53e662b4246f74a65e97d8f135a9e1e3203e61625f2887ade1b64d6bc224"
 }

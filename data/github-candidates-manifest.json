@@ -4,17 +4,17 @@
     "role": "Comparison context only; not the observation source, selection, or approval.",
     "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
   },
-  "checkpoint_state_sha256": "cd99fed021ec5e47946f13af6e86cc38ff0eb47c5b479ea7626babde5b4eb311",
+  "checkpoint_state_sha256": "a8cf53e662b4246f74a65e97d8f135a9e1e3203e61625f2887ade1b64d6bc224",
   "count": {
     "unit": "repositories",
-    "value": 10189
+    "value": 10194
   },
   "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
   "export": {
-    "bytes": 28235455,
+    "bytes": 28243016,
     "file": "github-candidates.jsonl",
     "format": "JSONL",
-    "sha256": "26445a09d7b61a25072ed877b01b439273492fc149c82596ace0bbe0c3c93a43"
+    "sha256": "69ce9180f27170289d04d40826cf90c28e835db9faab133cfeefba4f90c0ce43"
   },
   "input_fingerprints": [
     {
@@ -2216,14 +2216,39 @@
         }
       },
       "id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8146318,
+          "sha256": "b48405fe3d5f7fced91bb59f722132c9009cf2bdfa3039bdc0d1527c88e85af5"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
-  "observation_snapshot_sha256": "26445a09d7b61a25072ed877b01b439273492fc149c82596ace0bbe0c3c93a43",
+  "observation_snapshot_sha256": "69ce9180f27170289d04d40826cf90c28e835db9faab133cfeefba4f90c0ce43",
   "observed_from": "2026-10-18T13:02:50.777197+00:00",
-  "observed_through": "2026-11-07T03:17:46.555425+00:00",
+  "observed_through": "2026-11-07T04:18:26.901824+00:00",
   "privacy": {
-    "checked_records": 10189,
+    "checked_records": 10194,
     "omitted_fields": [],
     "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
   },
@@ -3402,10 +3427,16 @@
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
         "input_id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
@@ -8042,7 +8073,7 @@
     ],
     "query_rechecks_count": 17,
     "request_outcomes": {
-      "accepted": 712,
+      "accepted": 717,
       "fetch_failed": 4,
       "fork_not_recorded": 4,
       "quarantined": 5,
@@ -9154,17 +9185,29 @@
         "requests_attempted": 5,
         "started_at": "2026-11-07T03:17:11.956077+00:00",
         "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10194,
+        "before_unique_repositories": 10189,
+        "finished_at": "2026-11-07T04:18:30.221878+00:00",
+        "id": "run:ed644b2ec6a8bff92e4fc19a",
+        "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T04:17:51.899928+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "d677092d4f09ab1e5f261d6544dffde1515c4facd7e76b6fd61a62220fa8697b",
-  "supporting_primary_bodies": 540,
+  "source_ledger_sha256": "e75deff6f0da47a86aa4362126a53da6d130207f32443354187792cec400a383",
+  "supporting_primary_bodies": 545,
   "verification": {
-    "baseline_checkpoint_sha256": "2a0c22eaee7b8c3fecc61b862b307893e8eee02bac04c77e336191ff427d0daf",
-    "baseline_observation_sha256": "2db10b9fd40ad50b77fc3bc8651938923ece194001c2d6f7e0c8df272535962a",
+    "baseline_checkpoint_sha256": "7aff37abedc16f179df4119246c82461341638c7e3886e2b7a6d2bd0378e4eac",
+    "baseline_observation_sha256": "26445a09d7b61a25072ed877b01b439273492fc149c82596ace0bbe0c3c93a43",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
     "primary_bodies_replayed": 5,

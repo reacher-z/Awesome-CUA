@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "aos (Agent Operating System CLI)",
+    "url": "https://github.com/muthuishere/aos",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Unified CLI layer over host machines allowing AI agents to drive desktop apps and terminals without taking over user focus.",
+    "verify_terms": [
+      "aos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/muthuishere/aos/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "424c2a2e7388c44004ed41fadeb60d342dcf130ebcfd804c380e44a327534f9f"
+  },
+  {
+    "name": "ELVES",
+    "url": "https://github.com/mvmcode/elves",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "ELVES is a cross-platform desktop application for orchestrating multi-agent coding teams inside isolated Git worktrees with MCP integration.",
+    "verify_terms": [
+      "ELVES"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mvmcode/elves/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f96fcb245759530f23c662d1ec9c2216c563f373a9121dd89d24fc73017d8c9c"
+  },
+  {
+    "name": "Agent-OS (J.A.R.V.I.S. macOS Harness)",
+    "url": "https://github.com/My-CMDhub/Agent-OS",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Voice-first macOS accessibility agent that reads screen state as structured text and verifies every GUI action.",
+    "verify_terms": [
+      "Agent-OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/My-CMDhub/Agent-OS/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aea2ceea966e8b2fd9bfec7d78e134212172be644f761d67560a852d3ab1ce5f"
+  },
+  {
+    "name": "Paragent",
+    "url": "https://github.com/myselfsiddharth/Paragent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "efficiency",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Stateful browser execution layer that records an agent task once, replays it without LLM calls, and self-repairs when selectors change.",
+    "verify_terms": [
+      "Paragent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/myselfsiddharth/Paragent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "31aafdc33acaebf9a2ba715625bac2d227b1ce67575d7472274cafd85ec121e8"
+  },
+  {
+    "name": "Collision Canary",
+    "url": "https://github.com/mystiquemide/collision-canary",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Multi-actor invariant verification harness that drives two concurrent browser agents against a shared backend to uncover race bugs.",
+    "verify_terms": [
+      "Collision Canary"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mystiquemide/collision-canary/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7d043be57a472bbe9a373eb529ddacd54e70c694d10e9c53995beb63a236faa7"
   }
 ]

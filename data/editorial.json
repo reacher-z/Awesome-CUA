@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ApiTap",
+    "url": "https://github.com/n1byn1kt/apitap",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "CLI, MCP server, and npm library that observes live browser traffic to turn websites into structured APIs for AI agents.",
+    "verify_terms": [
+      "ApiTap"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/n1byn1kt/apitap/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "74363e360319b0d9e8b2e1648f136f1e548322094acdfd91c729da13268ae60f"
+  },
+  {
+    "name": "ChatGPT Web for Codex",
+    "url": "https://github.com/naakto14/codex-chatgpt-web-naakto-fork",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser bridge exposing a logged-in ChatGPT Web session as a native model and tool provider for OpenAI Codex.",
+    "verify_terms": [
+      "ChatGPT Web for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/naakto14/codex-chatgpt-web-naakto-fork/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1e5eee4e35abd623b8edb6ae1122eb918af03b817e988c6a9d8619d24736108f"
+  },
+  {
+    "name": "Computer-Use-Agent (Windows)",
+    "url": "https://github.com/nabhpatodi10/Computer-Use-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "planning",
+      "grounding",
+      "human-in-the-loop"
+    ],
+    "summary": "LangGraph-based Windows computer-use agent combining UI Automation tree inspection, OmniParser visual grounding, and human confirmation gates.",
+    "verify_terms": [
+      "Computer-Use-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nabhpatodi10/Computer-Use-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "03032b7b9ec2fc102b07ad0aedaa1fdf101702e39fed438014cf0a0aced07055"
+  },
+  {
+    "name": "fast-browser-use",
+    "url": "https://github.com/NachaFromMars/fast-browser-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Rust-based browser automation engine driving Chrome over CDP with built-in anti-bot evasions and low-latency DOM extraction.",
+    "verify_terms": [
+      "fast-browser-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NachaFromMars/fast-browser-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d313f67519806dc83253c202086533ee98dc374f5e4bab6c01f5a0aa56a03e83"
+  },
+  {
+    "name": "Locus Platform",
+    "url": "https://github.com/nahid-sparktales/locus-platform",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Shared agent runtime, protocol contracts, and browser bridge for the Locus automation ecosystem.",
+    "verify_terms": [
+      "Locus Platform"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nahid-sparktales/locus-platform/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9fc849cac8d7067e8208e27c1d1831039a38e807141892512d11aae4e5107405"
   }
 ]

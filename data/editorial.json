@@ -86010,5 +86010,238 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DeskForge",
+    "url": "https://github.com/Saidgurbuz/deskforge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "data-generation",
+      "reinforcement-learning",
+      "reward-models"
+    ],
+    "summary": "DeskForge extracts dense step-level supervision signals from desktop execution environments to train and verify computer-use agents.",
+    "verify_terms": [
+      "DeskForge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Saidgurbuz/deskforge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0d2253856f6b7af928c1bb4030422b2e0f5eb535b99e93732cfb2c7b148faada",
+    "documented_by": [
+      "2610.02320"
+    ]
+  },
+  {
+    "name": "zcode-computer-use",
+    "url": "https://github.com/sainzs/zcode-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "macOS computer-control MCP server for ZCode and coding agents combining screenshots, Accessibility trees, and input actions.",
+    "verify_terms": [
+      "zcode-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sainzs/zcode-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9b0809dc8717e59262e772aa70391a42737f15e73953bb9fc79d52cf7e99e5d0"
+  },
+  {
+    "name": "Legacy UI Capability Engine",
+    "url": "https://github.com/saitejareddi3636/legacy-ui-capability-engine",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Learns a legacy browser workflow once with an LLM and compiles it into a verified, reusable capability module.",
+    "verify_terms": [
+      "interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/saitejareddi3636/legacy-ui-capability-engine/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "185bcb7a2f93602379686cbda7b826f5ba700c911e7c4f7c90dc033483411541"
+  },
+  {
+    "name": "AURA Voice AI Desktop Assistant",
+    "url": "https://github.com/SajeebTheAnalyst/aura-ai-desktop-assistant",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Multilingual frameless desktop AI assistant for Windows supporting voice commands and GUI task automation.",
+    "verify_terms": [
+      "aura-ai-desktop-assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SajeebTheAnalyst/aura-ai-desktop-assistant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "31ba75fbb5431335056f5ceae0bc89ccec9ae0032eac99f4ff27e2f963718e1d"
+  },
+  {
+    "name": "DEIMOS (Environment-Aware Computer Agent)",
+    "url": "https://github.com/SakshamJuneja007/freaky-monkey",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "planning",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Environment-aware autonomous computer-use agent that perceives OS state and executes multi-step desktop workflows.",
+    "verify_terms": [
+      "DEIMOS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SakshamJuneja007/freaky-monkey/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f1be1142de0bc32030854281381b0cdc84801c326e3b3fc027b2199a7f7ab048"
+  },
+  {
+    "name": "SCUBA (Salesforce Computer Use Benchmark)",
+    "url": "https://github.com/SalesforceAIResearch/SCUBA",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow",
+      "sandbox"
+    ],
+    "summary": "SCUBA benchmarks computer-use agents on enterprise Salesforce CRM workflows spanning admin configuration, sales operations, and service tasks.",
+    "verify_terms": [
+      "SCUBA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SalesforceAIResearch/SCUBA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ff27b52a2386fd3599b70e8c834f6b392247465fe0d8b32d80cc634b95b08ce3",
+    "documented_by": [
+      "2509.26506"
+    ]
+  },
+  {
+    "name": "Bridge Studio (WebMCP Browser Studio)",
+    "url": "https://github.com/SalilBhasinOfficial/webmcp-browser-studio",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "recording",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Visible, human-governed browser workspace that converts live web workflows into reusable WebMCP tools.",
+    "verify_terms": [
+      "Bridge Studio"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SalilBhasinOfficial/webmcp-browser-studio/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "948d6d197826f2e1d2c6eb492745953ea6037829ab878877ab2e38fb4a3b77f0"
+  },
+  {
+    "name": "Mobile Agent Guardian",
+    "url": "https://github.com/salus-ryan/mobile-agent-guardian",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "safety-security",
+      "mobile-navigation",
+      "human-in-the-loop"
+    ],
+    "summary": "Five-level safety and action-verification layer for mobile GUI agents that classifies and gates risky phone operations.",
+    "verify_terms": [
+      "Mobile Agent Guardian"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/salus-ryan/mobile-agent-guardian/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "93eab6bedfc2bb70629b2f86a283b2846294d24fda270e2fbf6a8616fe895fa4"
+  },
+  {
+    "name": "Termux Browser Pilot",
+    "url": "https://github.com/salviz/termux-browser-pilot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Runs unrooted headless/Xvfb Firefox and Chromium browser automation with CDP and an MCP server directly inside Android Termux.",
+    "verify_terms": [
+      "Termux Browser Pilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/salviz/termux-browser-pilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d046fe8810218979552c36b564d5447d174721243d904a0814462da06e799564"
   }
 ]

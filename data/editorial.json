@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "UI2API",
+    "url": "https://github.com/MeRezaRezaei/ui2api",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "efficiency",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "Analyzes a website's UI and network traffic once to synthesize reusable, browser-free API tools for AI agents.",
+    "verify_terms": [
+      "UI2API"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MeRezaRezaei/ui2api/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08d43f12fb9c882f0913e2a7ab89fd225ef3f5ed8e0ea2349c8c20b3f928e513"
+  },
+  {
+    "name": "electron-driver",
+    "url": "https://github.com/mesomya/electron-driver",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Model Context Protocol server that lets AI agents inspect, click, type, drag, and screenshot Electron desktop applications.",
+    "verify_terms": [
+      "electron-driver"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mesomya/electron-driver/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f422c14f733a2123330688903bf536c5307af08a16f54bc5e6d607ae03bde919"
+  },
+  {
+    "name": "Next-Gen CAPTCHAs",
+    "url": "https://github.com/MetaAgentX/NextGen-CAPTCHAs",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Next-Gen CAPTCHAs provides an interactive benchmark and generator of cognitive-gap CAPTCHA challenges for defending against GUI web agents.",
+    "verify_terms": [
+      "Next-Gen CAPTCHAs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MetaAgentX/NextGen-CAPTCHAs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "44711dbb604684fdb67fe1214f65eca22368dfb1f2599304c75ce87e24b280ba",
+    "documented_by": [
+      "2602.09012"
+    ]
+  },
+  {
+    "name": "Perplexity Toolkit",
+    "url": "https://github.com/mfang0126/perplexity-toolkit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser-control toolkit and CLI for automating Perplexity AI deep searches and structured citation extraction.",
+    "verify_terms": [
+      "Perplexity Toolkit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mfang0126/perplexity-toolkit/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0de093131ca85f29533ed306df631e1842832617a38a902cbb74a7a43f1e8358"
+  },
+  {
+    "name": "UltraTerm Computer Use",
+    "url": "https://github.com/michael-berardi/ultraterm-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Local desktop automation plugin for MCP-capable agents on macOS, Linux, and Windows.",
+    "verify_terms": [
+      "UltraTerm Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/michael-berardi/ultraterm-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a2c604a053945556fd2a04919da48fd343de0137aea7d3c2d6588343d17c67e8"
   }
 ]

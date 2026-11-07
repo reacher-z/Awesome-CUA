@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenMemory (LongMemory)",
+    "url": "https://github.com/CaviraOSS/OpenMemory",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "OpenMemory provides local-first temporal graph memory, decay scoring, and MCP integration for long-horizon AI agents.",
+    "verify_terms": [
+      "OpenMemory"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CaviraOSS/OpenMemory/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ef8f5d07e1fd0c337427b56a16038f72c69d0f4040aea22f953d054289d1333a"
+  },
+  {
+    "name": "Resume Autofill Agent",
+    "url": "https://github.com/CCC-Zach/resume-autofill-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "AI browser agent and Chrome extension that parses resumes and autonomously fills complex job-application web forms.",
+    "verify_terms": [
+      "Resume Autofill Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CCC-Zach/resume-autofill-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c34914b5d066578d5e50d9930e5a0d4abf68b7f38b9f196b1de5bd5384cff42b"
+  },
+  {
+    "name": "c-vision (DSH Vision & Computer Use Plugin)",
+    "url": "https://github.com/cczzyy-cn/c-vision",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Autonomous vision and computer-use plugin for DeepSeek Harness providing screen capture, OCR, window listing, and GUI input.",
+    "verify_terms": [
+      "c-vision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cczzyy-cn/c-vision/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "25ab8c3c31a28c7c6dc791ff71e0c0d111adb7b0e0f7672cab2bca8af3cb3a8c"
+  },
+  {
+    "name": "Celesto",
+    "url": "https://github.com/CelestoAI/celesto",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Celesto provisions secure, persistent virtual desktop computers and browser sandboxes for AI agents.",
+    "verify_terms": [
+      "Celesto"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CelestoAI/celesto/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "73b0d71ffbdfd32739999d7835128c0fa172098cc72969800d7fdc7870fcea35"
+  },
+  {
+    "name": "Thursday",
+    "url": "https://github.com/cgoinglove/thursday",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "summary": "Thursday is a voice-driven computer assistant that delegates background web-browsing and desktop automation tasks to Playwright sub-agents.",
+    "verify_terms": [
+      "Thursday"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cgoinglove/thursday/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5fe34027f92394e4c8137452dad36470fb2f136d3a71068a52d596227f211f19"
   }
 ]

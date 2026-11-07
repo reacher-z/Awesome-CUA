@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "agent-desktop",
+    "url": "https://github.com/lahfir/agent-desktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "agent-desktop is a Rust CLI that exposes cross-platform OS accessibility trees and native UI actions as compact JSON for AI agents.",
+    "verify_terms": [
+      "agent-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lahfir/agent-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d4881e3601bdfc25439ccf87f26b468237c530d539bee2f34417d305585f29f0"
+  },
+  {
+    "name": "Pi Jev Browser",
+    "url": "https://github.com/laihenyi/pi-Jev-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "action-prediction"
+    ],
+    "summary": "Pi Jev Browser is a browser and macOS agent for the pi coding harness where Jev selects actions over structured page observations.",
+    "verify_terms": [
+      "Pi Jev Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/laihenyi/pi-Jev-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "282a0a1e8913b067b8bf401f0195e31a7f7e626391546230fb9889fc2918192b"
+  },
+  {
+    "name": "BrowserTransactionBench",
+    "url": "https://github.com/lamenting-hawthorn/browserbench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation",
+      "robustness"
+    ],
+    "summary": "BrowserTransactionBench evaluates transactional safety, idempotency, and double-spend prevention in autonomous browser agents.",
+    "verify_terms": [
+      "BrowserTransactionBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lamenting-hawthorn/browserbench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a7952ee35e851afc93862aa7676a7b539654c69e32f96ba783547d496ae43853"
+  },
+  {
+    "name": "BadAgents",
+    "url": "https://github.com/lancopku/agent-backdoor-attacks",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "BadAgents provides poisoned training datasets and evaluation scripts for query-, observation-, and thought-triggered backdoor attacks on agents.",
+    "verify_terms": [
+      "BadAgents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lancopku/agent-backdoor-attacks/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "903aa594e155de0a6e14a54769770575f41e96fa07cff698bfcf051790487a7d",
+    "documented_by": [
+      "2402.11208"
+    ]
+  },
+  {
+    "name": "LangGraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "workflow",
+      "state-tracking",
+      "human-in-the-loop",
+      "memory"
+    ],
+    "summary": "LangGraph is a stateful graph orchestration framework for building long-running, cyclical, and human-in-the-loop LLM and CUA agents.",
+    "verify_terms": [
+      "LangGraph"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/langchain-ai/langgraph/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933"
   }
 ]

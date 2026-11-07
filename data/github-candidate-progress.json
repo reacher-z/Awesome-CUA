@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "5d1fa6a9351fbf5bc12bc780a006a8801fe49282b2dba0de803f490a7b32822b",
-  "observation_snapshot_sha256": "28ed17e442947f438604155931ad780161eb2bade7309265e374fc69fc3c8d49",
+  "manifest_sha256": "1bf5aa019eb60b4101e41905122e6500086e52df0c6d7c5028f55dad606d6401",
+  "observation_snapshot_sha256": "bfa123f06009a12a8d3959d6dd07201b4b8bacc5fed88519583b2a47124ae40d",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3693,11 +3693,48 @@
           }
         },
         "id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2"
+      },
+      {
+        "active_records": 2621,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8169630,
+            "sha256": "8560ea29529157a91b735dd115bbffbf652e6b83d9669c121c11cae66976846f"
+          },
+          "catalog.jsonl": {
+            "bytes": 7558322,
+            "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "input_id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "kind": "existing",
+        "last_attempt": 838,
+        "next_index": 145,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
         "input_id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
@@ -3705,7 +3742,7 @@
         "last_attempt": 833,
         "next_index": 140,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
@@ -79769,6 +79806,116 @@
         "run_id": "run:c66b933f4ebf37bf89807510",
         "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-wechat-v2",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1196380934
+        ],
+        "finished_at": "2026-11-07T05:20:26.658311+00:00",
+        "id": "receipt:e3af1a1e0d8d02a0dfa916a3633e42ead43566654f2ec9a5a0a5767fcb2c47e0",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 140,
+        "query_id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "3770d0fa78d47a981fc6c8e8430b852c51183c9339f7abb64dd6f2c84094b033",
+        "requested_at": "2026-11-07T05:20:26.417188+00:00",
+        "response_bytes": 6949,
+        "response_sha256": "b57c740e5921ae8267f4da624c3a4928bc89efabf71b82486da8869d25baee5b",
+        "returned_count": 1,
+        "run_id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-whatsapp",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1198663872
+        ],
+        "finished_at": "2026-11-07T05:20:33.165673+00:00",
+        "id": "receipt:3aebd92a74370bef35a222f0c89ee54c007cd7cf728e24bc21e18ecd9bc96c0c",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 141,
+        "query_id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "2aca5b4808b5336195e37fc8c7b2621de54a502b03ea72f59a831e3d8fcab1df",
+        "requested_at": "2026-11-07T05:20:32.926339+00:00",
+        "response_bytes": 6886,
+        "response_sha256": "c34671edcc5f0f37149f1c63febb5e210ef1e5150ef39e7ab9be0ebbe9a3ea05",
+        "returned_count": 1,
+        "run_id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-youtube",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1186096974
+        ],
+        "finished_at": "2026-11-07T05:20:39.705805+00:00",
+        "id": "receipt:482ee2bc8ea1ba5b170665d7facada794a8ac0835d04ba70b6641bf5a3dc6720",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 142,
+        "query_id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "23bc7ec3c8cc37a9623ffb3a001d4a097b4c0235fc570bcd33121c80d1da2c92",
+        "requested_at": "2026-11-07T05:20:39.435619+00:00",
+        "response_bytes": 6815,
+        "response_sha256": "dd853a56b2876bd85596fb1474a699715d3bf78f575babb096d61dcc0786468a",
+        "returned_count": 1,
+        "run_id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-zoom",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1323664224
+        ],
+        "finished_at": "2026-11-07T05:20:46.250951+00:00",
+        "id": "receipt:f4171ee2de719ed25a6a304d6a5c464d94177b03f5a0f0ee38f866ba91516aca",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 143,
+        "query_id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "e59dd1213e1fc4bcf56c6bebb7d01afcde8b7f1466c16faffb87d0e61064fc85",
+        "requested_at": "2026-11-07T05:20:45.944748+00:00",
+        "response_bytes": 6972,
+        "response_sha256": "edfbf036051392c1f4e24414aa5f44b9afcf2c25ce3783fd434ebc5536b2fa09",
+        "returned_count": 1,
+        "run_id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/guiagent-spotify",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          944376852
+        ],
+        "finished_at": "2026-11-07T05:20:52.683834+00:00",
+        "id": "receipt:80a9acf8ce5e86fc915cd5ef062331aa69d7135243295f33bc24c5c49c44d723",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 144,
+        "query_id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "1fc3ae2d912738355b5850373c70469347d7c32064b6762df2ebbc06390df095",
+        "requested_at": "2026-11-07T05:20:52.454013+00:00",
+        "response_bytes": 5255,
+        "response_sha256": "7eec49297f2a774968751364ac64946c31ed3423eff620f48c9005530489fa09",
+        "returned_count": 1,
+        "run_id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "source_url": "https://api.github.com/repos/adam-bjtu/autocoa",
+        "status": 200
       }
     ],
     "runs": [
@@ -82858,9 +83005,40 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 189.179576672
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10204,
+        "before_unique_repositories": 10199,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T05:20:55.371096+00:00",
+        "id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "input_id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 147,
+          "reservations_before": 142,
+          "reservations_charged": 5,
+          "round_id": "e0ec5647509040f8a9d7adbbe90c56fa"
+        },
+        "started_at": "2026-11-07T05:20:18.649855+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 195.216891012
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "6eeb90cb64c9af04f1b1b80f13078e86467943f551a30f82bbaaf22a00e2b098"
+  "state_sha256": "1bd2593ddd4beade79b2050cc549a7d8a6176ec47194c5223a133ae68eba2960"
 }

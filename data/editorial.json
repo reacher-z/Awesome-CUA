@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Auten MCP Server",
+    "url": "https://github.com/auten-ai/auten-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Auten MCP Server gives MCP clients native screen capture, UI element inspection, and mouse/keyboard control across macOS, Windows, and Linux.",
+    "verify_terms": [
+      "Auten MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/auten-ai/auten-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eda34a2115048f698f6e5b5b5809667f8ba932b917aa7f0711a1d85f8c25f4ac"
+  },
+  {
+    "name": "Autodesk Claude Browser Test Skills",
+    "url": "https://github.com/Autodesk/claude-browser-test-skills",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Autodesk's Claude Code plugin providing an end-to-end browser test authoring, refinement, compilation, and execution pipeline over Playwright MCP.",
+    "verify_terms": [
+      "claude-browser-test-skills"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Autodesk/claude-browser-test-skills/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "685e4ee608de9b79704544da34af2c0ed1c2c4a11c61de546e55ba9de56ce2e6"
+  },
+  {
+    "name": "AutoKey",
+    "url": "https://github.com/autokey/autokey",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "workflow"
+    ],
+    "summary": "AutoKey is a Python-scriptable desktop automation and keyboard/mouse macro utility for Linux and X11 environments.",
+    "verify_terms": [
+      "AutoKey"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/autokey/autokey/HEAD/README.rst"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "43f6653327bfaacd124b1722f8c9629c4b6af06f3047368dad9082ce5de0388d"
+  },
+  {
+    "name": "Code Sandbox MCP",
+    "url": "https://github.com/Automata-Labs-team/code-sandbox-mcp",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "Code Sandbox MCP is a Model Context Protocol server that provisions isolated Docker container sandboxes for AI agents to execute code and shell commands.",
+    "verify_terms": [
+      "Code Sandbox MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Automata-Labs-team/code-sandbox-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f9b50b3bcde581dce1d2d11da8ad5cb52f1150e41d2636b9880e3db4c49b3c6"
+  },
+  {
+    "name": "Talox",
+    "url": "https://github.com/AVANT-ICONIC/Talox",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "state-tracking",
+      "observability",
+      "automation"
+    ],
+    "summary": "Talox is a stateful Playwright browser runtime for AI agents with stealth interaction, structured page state, and trace observability.",
+    "verify_terms": [
+      "Talox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AVANT-ICONIC/Talox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0d288a86e08cd940baacfea48bb42665b15b05dca6cf2de7bab3c32b4f382987"
   }
 ]

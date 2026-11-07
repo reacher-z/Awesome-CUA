@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Lexbench-Headless-Browser",
+    "url": "https://github.com/lexmount/Lexbench-Headless-Browser",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "Lexbench-Headless-Browser benchmarks 13 headless browser automation runtimes across 1,928 web tasks.",
+    "verify_terms": [
+      "Lexbench-Headless-Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lexmount/Lexbench-Headless-Browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "585540235499a1aa708e7ec7fabf2594994437a7a8d417302c3c82db3c553e65"
+  },
+  {
+    "name": "pms-race",
+    "url": "https://github.com/lgoyal6/pms-race",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Concurrency benchmark for computer-use agents operating a legacy property-management web UI to measure race conditions and double-bookings.",
+    "verify_terms": [
+      "pms-race"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lgoyal6/pms-race/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e7f8684019174fc6773fbea1a164c41251b506f9a7dadcc2aeb82023aa9e92cb"
+  },
+  {
+    "name": "dsh-browser-full-access",
+    "url": "https://github.com/LianPing-cyber/dsh-browser-full-access",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Background-tab full-access fork of `dsh-browser` for DeepSeek Harness web automation.",
+    "verify_terms": [
+      "browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LianPing-cyber/dsh-browser-full-access/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b219352383bf466d485896d0946b502c0e4bc60f5cc12b459a0e8f0c0dab9996"
+  },
+  {
+    "name": "Lightfeed Replayable Browser Agent",
+    "url": "https://github.com/lightfeed/browser-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "recording",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "TypeScript browser agent library that uses an LLM to complete a web navigation workflow once and replays cached selectors with zero LLM tokens.",
+    "verify_terms": [
+      "browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lightfeed/browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df7cd96e7849b134fd41b03dae2ee04052761c3ec2541c97e48d8ea26789c39b"
+  },
+  {
+    "name": "Resurf",
+    "url": "https://github.com/lightfeed/resurf",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "sandbox",
+      "robustness"
+    ],
+    "summary": "Resurf is a deterministic, reproducible test environment for evaluating AI browser agents across realistic web failure modes.",
+    "verify_terms": [
+      "Resurf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lightfeed/resurf/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "91a449c93c0178ed90755f4eaa996f24891ad75bca15b8711e5611a008105d8c"
   }
 ]

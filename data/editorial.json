@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Textual Foresight",
+    "url": "https://github.com/aburns4/textualforesight",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "action-prediction",
+      "world-models"
+    ],
+    "summary": "Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions.",
+    "verify_terms": [
+      "Textual Foresight"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1ce27542d1e6e9c883279b659758bdf534a446b97e2207bdea069a09999606a3",
+    "documented_by": [
+      "2406.07822"
+    ]
+  },
+  {
+    "name": "atlas-desktop",
+    "url": "https://github.com/Abydin/atlas-desktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "macOS desktop-control CLI that reads any application's UI hierarchy as structured JSON and dispatches native actions.",
+    "verify_terms": [
+      "atlas-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Abydin/atlas-desktop/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a5183c29e89b6237a07db58e41545a33281e9acfc0a4336ac2b7bfe1b407734e"
+  },
+  {
+    "name": "Accio Computer Use",
+    "url": "https://github.com/Accio-org/accio-cu",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Hybrid computer-use Python framework combining GUI actions, CLIs, APIs, and file operations in unified workflows.",
+    "verify_terms": [
+      "Accio Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Accio-org/accio-cu/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e628c0b0e60c96a34fc2599282a978adce2f53bbb686a88cf21d684e4f64da7f"
+  },
+  {
+    "name": "POK-Agent",
+    "url": "https://github.com/Acekorneya/POK-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "POK-Agent is a Windows computer-use agent that pairs a cloud planner with a fast local actor and caches repeated UI workflows as skills.",
+    "verify_terms": [
+      "POK-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Acekorneya/POK-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c39e372b956bfa77ba119d4254fe44ac5a14c59b1f9de5e23b0d456e41180e7b"
+  },
+  {
+    "name": "AutoCoA",
+    "url": "https://github.com/ADaM-BJTU/AutoCoA",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "tool-integration",
+      "world-models",
+      "planning"
+    ],
+    "summary": "AutoCoA internalizes Chain-of-Action generation into reasoning models via step-level SFT, reinforcement learning, and simulated tool world models.",
+    "verify_terms": [
+      "AutoCoA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ADaM-BJTU/AutoCoA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4eece09725b477ea7bdebf597043f90c9d88814a66792a771e62e95d9fd1694a"
   }
 ]

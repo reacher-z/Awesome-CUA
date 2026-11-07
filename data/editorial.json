@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Scavenge",
+    "url": "https://github.com/aarohim24/Scavenge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "observability"
+    ],
+    "summary": "Deterministic web-field inspector that extracts and verifies single webpage values with cryptographic evidence for coding agents.",
+    "verify_terms": [
+      "Scavenge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aarohim24/Scavenge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cb659c3538ad4a72e9d88abdb29f7262cb5460a13a0ca5854cda7f38513b14d5"
+  },
+  {
+    "name": "aashutoshkumarr JARVIS Desktop Assistant",
+    "url": "https://github.com/aashutoshkumarr/ai-desktop-assistant",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Python-based voice and GUI desktop automation assistant for Windows.",
+    "verify_terms": [
+      "ai-desktop-assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aashutoshkumarr/ai-desktop-assistant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1de0a21f8f7ed47cbfa19ab2438f92d046055cfb67d39a6175ac0cfa4808b3d8"
+  },
+  {
+    "name": "Milli-Agent",
+    "url": "https://github.com/Abdullah-Al-Raju/milli-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Milli-Agent is a real-time computer-use agent architecture designed for high-frequency in-memory screen capture and low-latency actuation.",
+    "verify_terms": [
+      "Milli-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Abdullah-Al-Raju/milli-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2877780ca8ac85c2fe5ddfd3abfb86313bbcd82354a0260a6609f988c5750692"
+  },
+  {
+    "name": "CDP Browser Harness",
+    "url": "https://github.com/Abhishekchhetri020/browser-harness",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Thin, editable Chrome DevTools Protocol harness connecting LLM agents to a user's real logged-in Chrome browser.",
+    "verify_terms": [
+      "browser harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Abhishekchhetri020/browser-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f86d364fd1ec724f7564b8506081b201ff568794c5c2bfd57239cec188fbd1c"
+  },
+  {
+    "name": "ScreenWatch",
+    "url": "https://github.com/abnsapkota001/screenwatch",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "state-tracking",
+      "observability"
+    ],
+    "summary": "Python library for detecting persistent visual state changes and UI settlement in desktop applications.",
+    "verify_terms": [
+      "ScreenWatch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/abnsapkota001/screenwatch/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "872c1082bdb8df13683d73bcf2fb775a58d40ce3894b05749bf2e447fe745e0d"
   }
 ]

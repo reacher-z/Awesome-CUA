@@ -86010,5 +86010,143 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "GUI-Spotlight",
+    "url": "https://github.com/bin123apple/GUI_Spotlight",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "GUI-Spotlight is a think-with-image GUI visual grounding model that iteratively crops and refines focus regions on high-resolution screens.",
+    "verify_terms": [
+      "GUI-Spotlight"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bin123apple/GUI_Spotlight/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9beec1999aa27cc05918cb3f3e092a0f3155418bcfd8ecdefd2ffddbcae39cc5",
+    "documented_by": [
+      "2510.04039"
+    ]
+  },
+  {
+    "name": "LongPuzzleBench",
+    "url": "https://github.com/bingozhang-verapraxis/LongPuzzleBench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "planning",
+      "screen-understanding"
+    ],
+    "summary": "LongPuzzleBench evaluates GUI and computer-use agents on long-horizon visual puzzle games requiring multi-step spatial reasoning.",
+    "verify_terms": [
+      "LongPuzzleBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bingozhang-verapraxis/LongPuzzleBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ab4d26e67bca7fdd94e48b74054b7ee69ad22ac27226391559e4bd9f27f779ce",
+    "documented_by": [
+      "2609.34769"
+    ]
+  },
+  {
+    "name": "vnc-remote-control",
+    "url": "https://github.com/bitranox/vnc-remote-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Layout-aware VNC/RFB remote-control CLI providing typing, clicking, screenshot capture, and OCR against any VNC server.",
+    "verify_terms": [
+      "vnc-remote-control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bitranox/vnc-remote-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1ab73d4d5b2cc6ce9abd7214e4de4a30c9c9fee6433fdf6d413efacb2765862c"
+  },
+  {
+    "name": "Self-Hosted Cloud Browser MCP",
+    "url": "https://github.com/BK927/cloud-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Self-hosted Chromium MCP server with isolated browser profiles, OAuth authentication, and human takeover support.",
+    "verify_terms": [
+      "cloud-browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BK927/cloud-browser-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1fb9d5188f5d2c237bb78b0e34c5ef95157880aa64243f986f84c9ea7d6c06fb"
+  },
+  {
+    "name": "IrisGUI",
+    "url": "https://github.com/black-yt/IrisGUI",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "IrisGUI is a cross-platform desktop GUI agent that perceives screens and automates mouse and keyboard workflows.",
+    "verify_terms": [
+      "IrisGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/black-yt/IrisGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a91aed9a1adf06fc6c9aad53c6e7d8099f14db6eafee4cbdc8d64440a016045d"
   }
 ]

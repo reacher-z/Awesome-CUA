@@ -86010,5 +86010,123 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ocaml-cdp",
+    "url": "https://github.com/ahrefs/ocaml-cdp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Typed OCaml client library for the Chrome DevTools Protocol with an asynchronous Lwt driver by Ahrefs.",
+    "verify_terms": [
+      "ocaml-cdp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ahrefs/ocaml-cdp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6c826b9662241e854819eadfcc6de85a08063463f1076e6e288fd3b567f1c173"
+  },
+  {
+    "name": "ahsaanfarooq browser-agent MCP",
+    "url": "https://github.com/ahsaanfarooq/browser-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server giving Claude a persistent, multi-profile logged-in Chrome browser.",
+    "verify_terms": [
+      "browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ahsaanfarooq/browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0b060ce243fb15bb48868bceded52fdcb77fdb8c59f949b89a2217682521e7a8"
+  },
+  {
+    "name": "BrowserPilot",
+    "url": "https://github.com/ai-naymul/BrowserPilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "data-generation"
+    ],
+    "summary": "BrowserPilot is an open-source stealth browser agent that executes natural-language web navigation and structured scraping workflows.",
+    "verify_terms": [
+      "BrowserPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ai-naymul/BrowserPilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e4622c48687f1f6b713017f883befee54bc1d408e7c7ec2b33f18e8db90e4722"
+  },
+  {
+    "name": "AdvAgent (AdvWeb)",
+    "kind": "framework",
+    "url": "https://github.com/AI-secure/AdvWeb",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Black-box adversarial prompt-injection red-teaming framework for training and evaluating controllable attacks against VLM web agents.",
+    "verify_terms": [
+      "AdvAgent"
+    ],
+    "documented_by": [
+      "2410.17401"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "019d45dd4c383f919f3ac2bf84c672500d63751a49de2dd2bac9c018ffc99881",
+    "reviewed_at": "2026-11-02T17:00:00Z"
+  },
+  {
+    "name": "MM-SafetyBench",
+    "url": "https://github.com/AI45Lab/MM-SafetyBench",
+    "kind": "benchmark",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security"
+    ],
+    "summary": "MM-SafetyBench evaluates multimodal large language models against query-relevant adversarial image and typography safety prompts across 13 scenarios.",
+    "verify_terms": [
+      "MM-SafetyBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AI45Lab/MM-SafetyBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7fb245e804e1b7a06b6e3902d2fb880a850a63a2a419de3a1304c8e134671670"
   }
 ]

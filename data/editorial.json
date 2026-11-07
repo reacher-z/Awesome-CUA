@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ZoomClick",
+    "url": "https://github.com/Princeton-AI2-Lab/ZoomClick",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "ZoomClick implements iterative zoom-in GUI grounding and behavior-based grounding evaluation across high-resolution interfaces.",
+    "verify_terms": [
+      "ZoomClick"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Princeton-AI2-Lab/ZoomClick/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "58d523fbffc0188bbd5b4d0c7a42b0c0cad66d29cebfcbe12631eed0e091d0c1",
+    "documented_by": [
+      "2512.05941"
+    ]
+  },
+  {
+    "name": "Sidemates",
+    "url": "https://github.com/PrisacariuRobert/sidemates",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "memory",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Open-source desktop AI companion that observes active windows and assists with everyday computer tasks.",
+    "verify_terms": [
+      "Sidemates"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PrisacariuRobert/sidemates/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e3d4ae3eec51eeeeff2e250180588f13deeb646ca124392e5a3f81a7547189d7"
+  },
+  {
+    "name": "Prism-Shadow Travel Agent",
+    "url": "https://github.com/Prism-Shadow/travel-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Open-source travel planning browser agent that searches and compares flights and hotels across live booking websites.",
+    "verify_terms": [
+      "travel agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Prism-Shadow/travel-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "173d33f6eea9e40c2139199e887bcf1fede55237a116a87917958a5fe226ca34"
+  },
+  {
+    "name": "Hunch MCP",
+    "url": "https://github.com/PrithviSeran/hunch-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Focus-free background macOS automation MCP server combining OS APIs, AppleScript, Chrome CDP, and Accessibility trees.",
+    "verify_terms": [
+      "hunch-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PrithviSeran/hunch-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fb8c422bcb3f5b58a0c59e9bd074e532e8c3471bb4112bbe66ff3860bfbf40a9"
+  },
+  {
+    "name": "ProdPoke MCP Server",
+    "url": "https://github.com/prodpoke/prodpoke-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "AI QA testing MCP server that launches real browsers to execute exploratory user journeys and report UI defects.",
+    "verify_terms": [
+      "ProdPoke MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/prodpoke/prodpoke-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0e95da0ee2926bad67919ff23c7da41dbb9710531b7d9f23f5ddb99a7758e832"
   }
 ]

@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "SpiderCreator",
+    "url": "https://github.com/carlosplanchon/spidercreator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "data-generation"
+    ],
+    "summary": "SpiderCreator records browser interactions and DOM snapshots to automatically synthesize executable Playwright web-scraping spiders with LLMs.",
+    "verify_terms": [
+      "SpiderCreator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/carlosplanchon/spidercreator/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c80c0c157ef09c1b4d8b9d1a0d13900806416ae6a79a100bf9fde65fc3dfd3f8"
+  },
+  {
+    "name": "case-sdk",
+    "url": "https://github.com/case-computers/case-sdk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Dual-mode macOS GUI automation SDK supporting structured JSON procedures, local/remote WebSocket runtimes, and MCP integration.",
+    "verify_terms": [
+      "case-sdk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/case-computers/case-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aea597a95e0c8fa192bddcd713fc241ad034d5ff7a0d4a68402486d9022ce5cb"
+  },
+  {
+    "name": "BrowserRig",
+    "url": "https://github.com/Castor6/BrowserRig",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Open-source local driver enabling trusted AI agents to control an existing signed-in Chromium browser.",
+    "verify_terms": [
+      "BrowserRig"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Castor6/BrowserRig/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7e70cd4b7ad654ecea8aa537e1b742ffd388af05c0373ed409739e786b2df18c"
+  },
+  {
+    "name": "VoltageInputMcp",
+    "url": "https://github.com/casualkre/voltage-input-mcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "action-prediction",
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Two-layer local input engine for MCP where a frontier planning model dispatches high-rate action programs to a local executor.",
+    "verify_terms": [
+      "VoltageInputMcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/casualkre/voltage-input-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "38d24b479b0324047db04c88ea6d37d88017e7669001fdb917bde90c064f8b72"
+  },
+  {
+    "name": "Hermes Browser Extension",
+    "url": "https://github.com/catcaptions/hermes-extension",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Browser side-panel extension for Hermes Agent enabling the agent to observe and drive active Chrome tabs.",
+    "verify_terms": [
+      "hermes extension"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/catcaptions/hermes-extension/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6f268288056cab3579c980bb4f71be1a22653487916bb669ed82ac964e57acf2"
   }
 ]

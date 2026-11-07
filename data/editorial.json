@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "adb-automation-mcp",
+    "url": "https://github.com/allaudin/adb-automation-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server exposing Android Debug Bridge (ADB) device inspection and input actions as typed tools.",
+    "verify_terms": [
+      "adb-automation-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/allaudin/adb-automation-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "93bc876ea7c9b6a2394f9eb8811f81d830074a53d40b99cbce00d3100d8e2d85"
+  },
+  {
+    "name": "Agent Lumos",
+    "url": "https://github.com/allenai/lumos",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "imitation-learning",
+      "web-navigation"
+    ],
+    "summary": "Agent Lumos provides unified training data and modular planning and grounding architectures for open-source language and web agents.",
+    "verify_terms": [
+      "Agent Lumos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/allenai/lumos/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cc9152f2cee82c544d4d8418938fae9af40346a055b676c1a92725ca8ca285a2"
+  },
+  {
+    "name": "Living Dream DSH",
+    "url": "https://github.com/alllllllllli/Living-Dream-DSH",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness desktop configuration bundle integrating 8+ MCP servers for browser, filesystem, and desktop automation.",
+    "verify_terms": [
+      "Living Dream DSH"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alllllllllli/Living-Dream-DSH/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0b379e4441d7eb3becde2939330e7828da657a7bc403a5fa5b63d1423f02eff2"
+  },
+  {
+    "name": "Agent Tool Benchmark",
+    "url": "https://github.com/alloevil/agent-tool-benchmark",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Provides reproducible same-machine benchmarks comparing AI agent browser and desktop toolkits with full execution transcripts.",
+    "verify_terms": [
+      "agent-tool-benchmark"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alloevil/agent-tool-benchmark/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c230f3c544dc842f3d51dfd99f43fb3ec4219ccee172d9c965066ddb2cc004b5"
+  },
+  {
+    "name": "alohajet CLI",
+    "url": "https://github.com/AlohaBrowser/alohajet-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Official Aloha Browser CLI and MCP server for driving a real browser with stable element refs.",
+    "verify_terms": [
+      "alohajet CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AlohaBrowser/alohajet-cli/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f393fc8167b4ac94d84af66a633e82bb62ac6ae9445968aa3fbaac87771aa68a"
   }
 ]

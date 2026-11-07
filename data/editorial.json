@@ -86010,5 +86010,209 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "easy-webbridge",
+    "url": "https://github.com/xxjrq/easy-webbridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser bridge allowing Claude Code, Codex, OpenCode, and WorkBuddy agents to operate an authenticated Chrome session.",
+    "verify_terms": [
+      "easy-webbridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xxjrq/easy-webbridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0a8323a61a46ea9a730db2ff8d55be0711fad3db52457e8276dd83b79130de27"
+  },
+  {
+    "name": "ActionAnything",
+    "url": "https://github.com/xxwtiancai/action-anything",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "recording",
+      "automation"
+    ],
+    "summary": "Model-agnostic runtime for evaluating, approving, recording, and replaying AI agent actions across desktop and web interfaces.",
+    "verify_terms": [
+      "ActionAnything"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xxwtiancai/action-anything/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d0ae597697f5cadbee4401a3ac92db68e312e0e5d64c1d15bd4d946d23ff820d"
+  },
+  {
+    "name": "Seven-Layer Web Agent & Benchmark",
+    "url": "https://github.com/xyyojl/web-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "evaluation",
+      "self-reflection"
+    ],
+    "summary": "Seven-layer LLM browser agent architecture paired with a 45-task hierarchical benchmark and reproducible execution artifacts.",
+    "verify_terms": [
+      "web agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xyyojl/web-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "88a81228467aaa5c52e8ec37e34bb263162c2df9211dff34a7e99996b07b7320"
+  },
+  {
+    "name": "recast",
+    "url": "https://github.com/yagna-1/recast",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "efficiency",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Compiler that converts recorded AI browser-agent execution traces into deterministic, zero-token Playwright test scripts.",
+    "verify_terms": [
+      "recast"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yagna-1/recast/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df08e79014e1efa9e7e4cb3e0659811885222596395851aec61808ed35838ef6"
+  },
+  {
+    "name": "my_tiny_agent",
+    "url": "https://github.com/yanjin101/my_tiny_agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Spec-driven small-LLM desktop agent that operates Windows end-to-end using OCR, YOLO icon detection, and Win32 APIs without a VLM.",
+    "verify_terms": [
+      "my_tiny_agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yanjin101/my_tiny_agent/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1f6d10834c2fece1483b4465f904239a9858281399623b5957e6ab89477a88ff"
+  },
+  {
+    "name": "Codex Idle Resume",
+    "url": "https://github.com/yaro-elipox/codex-idle-resume",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "long-horizon",
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Automatically resumes interrupted macOS Codex Computer Use tasks after system idle or rate-limit cooldowns.",
+    "verify_terms": [
+      "Codex Idle Resume"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yaro-elipox/codex-idle-resume/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ccca12e92628bd08d01a135d662e29ca05ce1df323daf4cce8f9e0227e89f4a8"
+  },
+  {
+    "name": "DesktopCtl",
+    "url": "https://github.com/yaroshevych/desktopctl",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "GPU-accelerated local macOS CLI for AI agents to inspect screen text/controls and dispatch mouse and keyboard actions.",
+    "verify_terms": [
+      "DesktopCtl"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yaroshevych/desktopctl/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b1f15834717feee14c7e24c4fba155bee4d8f0150d6b408b2d4d494b8b9d0de9"
+  },
+  {
+    "name": "Baseerat",
+    "url": "https://github.com/yas1i/baseerat",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "summary": "Baseerat benchmarks non-visual oversight of computer-use agents, testing whether screen-reader audio descriptions expose unsafe agent actions.",
+    "verify_terms": [
+      "Baseerat"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yas1i/baseerat/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "736b72fc9e8f35f63b1d6a8472c7628870c8285f148b910f15ee7479d8382c24"
   }
 ]

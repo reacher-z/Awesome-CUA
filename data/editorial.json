@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Shiny Fishstick",
+    "url": "https://github.com/Hootsworth/shiny-fishstick",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Semantic web compiler that crawls websites and compiles them into typed, reusable action and data interfaces for AI agents.",
+    "verify_terms": [
+      "Shiny Fishstick"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Hootsworth/shiny-fishstick/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c53d535883112d7dc4df50c01b26695e32bc80ae91c0f6d66bdf451ca1c85191"
+  },
+  {
+    "name": "Intent Browser Runtime (ibr)",
+    "url": "https://github.com/hop-top/ibr",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Intent Browser Runtime (ibr) translates natural-language instructions into resilient XPath/DOM actions using Playwright and Vercel AI SDK.",
+    "verify_terms": [
+      "Intent Browser Runtime"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hop-top/ibr/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f17ec7f0bec730e44cf09d77b87e13d2ba060f24146466a42c44ff3145eb1566"
+  },
+  {
+    "name": "HumanQA",
+    "url": "https://github.com/Hotragn/humanqa",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design",
+      "web-navigation"
+    ],
+    "summary": "Evidence-first product quality and UX evaluation harness for testing web applications with browser agents.",
+    "verify_terms": [
+      "HumanQA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Hotragn/humanqa/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "37a15b95ec894afff0d1e11e58d6b2a4df934068cb3b250164e1de18a1eee7a8"
+  },
+  {
+    "name": "Better AX for Computer Use",
+    "url": "https://github.com/hqhq1025/better-ax-for-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Better AX for Computer Use prunes and formats macOS Accessibility trees and injects Chromium/Electron AX flags for low-token GUI grounding.",
+    "verify_terms": [
+      "Better AX for Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hqhq1025/better-ax-for-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "87d47241edb91b93c3b7fa985242ef7f9a3b4f590a40407078c4cc5acff7a38a"
+  },
+  {
+    "name": "Codex Computer Use Lab",
+    "url": "https://github.com/hqhq1025/codex-computer-use-lab",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Documents and reproduces the macOS Computer Use architecture, SkyLight window capture, and Accessibility action dispatch in the Codex desktop app.",
+    "verify_terms": [
+      "codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hqhq1025/codex-computer-use-lab/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a15e1e29dcacb11f39c1c4f5a75dca870e81243fe301c9504602744d20e8318a"
   }
 ]

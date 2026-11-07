@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Better AI Browser Utilities (BABU)",
+    "url": "https://github.com/ItMeDiaTech/better-ai-browser-utilities",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Token-efficient Model Context Protocol toolkit for controlling an AI agent's real Chrome session.",
+    "verify_terms": [
+      "Better AI Browser Utilities (BABU)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ItMeDiaTech/better-ai-browser-utilities/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5af30729491188561742b5b3af6163d6e2c0055c01056a46d81c7661b8bb21e5"
+  },
+  {
+    "name": "ZetaTron",
+    "url": "https://github.com/itsmarcelS/ZetaTron",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Self-directed local-first autonomous agent harness for Windows with desktop and browser execution capabilities.",
+    "verify_terms": [
+      "ZetaTron"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/itsmarcelS/ZetaTron/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "13f206bc3a588c2453e828d23b0a889c9aab6e075675d47f1f0e7da4be3f2212"
+  },
+  {
+    "name": "look-decide-act",
+    "url": "https://github.com/ivanposel/look-decide-act",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Drives live web applications over CDP through a closed-loop visual look-decide-act cycle rather than brittle script replay.",
+    "verify_terms": [
+      "look-decide-act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ivanposel/look-decide-act/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a9de463dbb169f354c95915e0a20c612624eaca666eaddf5a243fdbb0a68b673"
+  },
+  {
+    "name": "Ivy Tendril",
+    "url": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "sandbox",
+      "human-in-the-loop"
+    ],
+    "summary": "Ivy Tendril is a desktop orchestrator for running parallel coding agents across isolated Git worktrees.",
+    "verify_terms": [
+      "Ivy Tendril"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ivy-Interactive/Ivy-Tendril/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "09fd8e0f28c44982585ad0ebdc8508c193a5ff85c3212582d83fea7e7b882a5f"
+  },
+  {
+    "name": "Agent VCR",
+    "url": "https://github.com/ixchio/agent-vcr",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "observability",
+      "evaluation"
+    ],
+    "summary": "Agent VCR records, replays, and diffs deterministic cassettes of multi-turn agent tool calls, state transitions, and execution traces.",
+    "verify_terms": [
+      "Agent VCR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ixchio/agent-vcr/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "66c79a6e4a402c672f2d8aeaa19aff8708b100dc0faa34f5db8b28a2417bbda2"
   }
 ]

@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Agent Hands",
+    "url": "https://github.com/Ashishkosana/agent-hands",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Computer-use automation infrastructure for legacy financial software that compiles LLM-discovered UI flows into deterministic replays.",
+    "verify_terms": [
+      "Agent Hands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ashishkosana/agent-hands/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9dae1b19b4ee8e060704d7c8511c6d6aabd7573975029e19efb9a83658eaf410"
+  },
+  {
+    "name": "deskwork",
+    "url": "https://github.com/ashnkumar/deskwork",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "deskwork augments Claude Computer Use with domain document retrieval to execute compliance-grounded desktop and browser workflows.",
+    "verify_terms": [
+      "deskwork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ashnkumar/deskwork/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a6023553987b483a36538b990837d10a949d12b0a8a73bc26f185315a6a340f7"
+  },
+  {
+    "name": "modal-computer-use",
+    "url": "https://github.com/ashtonchew/modal-computer-use",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Provides daemon-first computer-use primitives for provisioning and controlling GUI desktops inside Modal cloud sandboxes.",
+    "verify_terms": [
+      "modal-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ashtonchew/modal-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6cf09e30c5d0651e192873f69f164b31a540765cb810b5a1743f25f831565eb5"
+  },
+  {
+    "name": "Automation MCP",
+    "url": "https://github.com/ashwwwin/automation-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Automation MCP is a macOS Model Context Protocol server that provides AI agents with mouse, keyboard, window, and screen capture tools.",
+    "verify_terms": [
+      "Automation MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ashwwwin/automation-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb217884f60562e689ef872126d166fe8b5853099092f865d68d9915efbd923b"
+  },
+  {
+    "name": "OSWright",
+    "url": "https://github.com/Ask-812/oswright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "state-tracking",
+      "efficiency"
+    ],
+    "summary": "Windows desktop automation MCP server using incremental UI Automation state diffs rather than full-screen vision loops.",
+    "verify_terms": [
+      "OSWright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ask-812/oswright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0ba48b7bb3ac0cfa155951aacad85445d676357c595433e95c1dc029f5876e8f"
   }
 ]

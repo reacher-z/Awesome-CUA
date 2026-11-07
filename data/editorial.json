@@ -86010,5 +86010,234 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Forged",
+    "url": "https://github.com/sam-siavoshian/forged",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "recording",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Self-learning browser automation MCP server that records successful agent trajectories and replays deterministic Playwright steps.",
+    "verify_terms": [
+      "Forged"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sam-siavoshian/forged/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "389a93918d558091b5675da61c4538b5f6b07de57f90f7bf0ca0e4fcdbd93727"
+  },
+  {
+    "name": "chromium-screenshots",
+    "url": "https://github.com/samestrin/chromium-screenshots",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Playwright-based MCP server and API that captures zero-drift Chromium screenshots paired with authenticated DOM state for vision agents.",
+    "verify_terms": [
+      "chromium-screenshots"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/samestrin/chromium-screenshots/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f4badd5fc9b6588ca4da4792b2a0b6a0ad9ff6e09199b8bebce1f8c0a3c633a7"
+  },
+  {
+    "name": "Equinox Local",
+    "url": "https://github.com/sametbasbug/equinox-local",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Local-first AI workspace bridging ChatGPT to native macOS and Windows desktop tools over an MCP tunnel.",
+    "verify_terms": [
+      "Equinox Local"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sametbasbug/equinox-local/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "96f163429573f91d6fc8d98b28ad759bdcf726fa32d1e5377335f789ca73ca05"
+  },
+  {
+    "name": "Magpie Computer Use",
+    "url": "https://github.com/SammySnake-d/magpie-computer-use-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Magpie distributes ten macOS Computer Use MCP tools with explicit human-in-the-loop approval gates to local coding and desktop agents.",
+    "verify_terms": [
+      "Magpie Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SammySnake-d/magpie-computer-use-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "500b37b4b55c7dfcb9a853ec83d07c55b3de0dfe2fdaf539ed23842aea234cc3"
+  },
+  {
+    "name": "ClickAgent",
+    "url": "https://github.com/Samsung/ClickAgent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "ClickAgent decouples high-level MLLM action reasoning from a specialized UI element localization model for Android task automation.",
+    "verify_terms": [
+      "ClickAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Samsung/ClickAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8d11136e35e1f64a4aeb9ce1de11d793984b8f516275383902675630a7cf8964"
+  },
+  {
+    "name": "MEGA-GUI",
+    "url": "https://github.com/samsungsds-research-papers/mega-gui",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "MEGA-GUI implements a multi-stage GUI grounding pipeline combining candidate region proposal, iterative zoom-in, and element localization.",
+    "verify_terms": [
+      "MEGA-GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/samsungsds-research-papers/mega-gui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9bdeec3c1a3c874f86dae691c52dcdb6455ba1f18e0e0b0c784948323bbe1992",
+    "documented_by": [
+      "2511.13087"
+    ]
+  },
+  {
+    "name": "doc-agent",
+    "url": "https://github.com/samuel-as/doc-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Claude Code skill that documents a web procedure with annotated screenshots by performing it in a live browser.",
+    "verify_terms": [
+      "doc-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/samuel-as/doc-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7dafbdc98711de8e8bdae8cba2750b9aef1a1ee27825a4a2ee87d20f8c9dc0e1"
+  },
+  {
+    "name": "Arelis",
+    "url": "https://github.com/sAnct1x/Arelis",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Locally hosted Windows personal AI research and desktop assistant powered by Ollama with zero cloud dependencies.",
+    "verify_terms": [
+      "Arelis"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sAnct1x/Arelis/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ff7135ef34c8c665812fdec0f556c72b3fd1af78a89c8ae136be37dca1d17e54"
+  },
+  {
+    "name": "Sandbox0",
+    "url": "https://github.com/sandbox0-ai/sandbox0",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "safety-security"
+    ],
+    "summary": "Sandbox0 is an open-source cloud sandbox platform with persistent storage volumes and sub-second microVM/container resume for AI agents.",
+    "verify_terms": [
+      "Sandbox0"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sandbox0-ai/sandbox0/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7ac283d315c474b5afd3e3b9b0697363aecee07638127715ab995fff289ca485"
   }
 ]

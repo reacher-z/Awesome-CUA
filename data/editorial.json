@@ -86010,5 +86010,205 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "NeuroSight (QiraBot Vision Runtime)",
+    "url": "https://github.com/vthanhhdev/qirabot-vision-runtime",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Selector-free AI vision automation runtime for desktop applications, mobile screens, and games.",
+    "verify_terms": [
+      "NeuroSight"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vthanhhdev/qirabot-vision-runtime/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af4ff0ff96230195190ca96085dfafcd6b3cfabfa8abfa04b63b4fbe62f61050"
+  },
+  {
+    "name": "tabscurator",
+    "url": "https://github.com/vvzvlad/tabscurator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Model Context Protocol server for curating, organizing, and driving multi-profile browser tabs and workspaces.",
+    "verify_terms": [
+      "tabscurator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vvzvlad/tabscurator/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6920646196abf9d1109b51a702e06fe19582738aa064d0ee3fbcbfacc854e13d"
+  },
+  {
+    "name": "DualKey",
+    "url": "https://github.com/wadeKeith/dualkey-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "observability"
+    ],
+    "summary": "DualKey enforces deterministic policy checks, human approvals, and cryptographically signed receipts for AI agent actions.",
+    "verify_terms": [
+      "DualKey"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wadeKeith/dualkey-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "158c931a8bb033723e4187c1dfefadf56bb2fc172fbcd18f853d1d709dfb7370"
+  },
+  {
+    "name": "OpenUI",
+    "url": "https://github.com/wandb/openui",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "screen-understanding"
+    ],
+    "summary": "OpenUI lets users and agents generate, preview, and iteratively edit live HTML/Tailwind/React UI components from natural language and screenshots.",
+    "verify_terms": [
+      "OpenUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wandb/openui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "54df29952ae63e4a0a1a4a3f14fd5b35120fdc102b139365d2ecc7e944b9d683"
+  },
+  {
+    "name": "Lynx Agent",
+    "url": "https://github.com/wangjiang314/lynx-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "self-reflection",
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Lynx Agent is a completion-first Android phone-use agent with evidence-based state verification, recovery, and safety checks.",
+    "verify_terms": [
+      "Lynx Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wangjiang314/lynx-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "39083c2c9ad6e60d7d557eb78e270904167844585ec679e452db019b54f3898a"
+  },
+  {
+    "name": "wangye520 codex-computer-use (Cursor Port)",
+    "url": "https://github.com/wangye520/codex-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Port of OpenAI Codex's `@oai/sky` Computer Use engine to Cursor for screenshot-driven mouse and keyboard control.",
+    "verify_terms": [
+      "codex-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wangye520/codex-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "79481d23a5d55846175f6ce1dbe701c55acd9bffce30355bc94f99008c29bf33"
+  },
+  {
+    "name": "wangyong1972 dsh-computer-use-macos",
+    "url": "https://github.com/wangyong1972/dsh-computer-use-macos",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "safety-security",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Native macOS computer-use plugin for DeepSeek Harness with trusted window targeting and Accessibility integration.",
+    "verify_terms": [
+      "dsh-computer-use-macos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wangyong1972/dsh-computer-use-macos/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "043b4dbf710fe8c1095f273cfdc062f67ac5cfefe267ca368f7ccb519dcd8dfb"
+  },
+  {
+    "name": "Chrome Live MCP",
+    "url": "https://github.com/wankaiyi/chrome-live-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Connects local stdio Model Context Protocol agents directly to an existing Chrome 144+ browser session.",
+    "verify_terms": [
+      "Chrome Live MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wankaiyi/chrome-live-mcp/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d518b419d7f7fdce45204d1176eccb6de71852357c7ac261e574c772733c5ccd"
   }
 ]

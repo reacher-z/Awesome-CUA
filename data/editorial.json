@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "gpuview",
+    "url": "https://github.com/OnlyTerp/gpuview",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "recording",
+      "efficiency"
+    ],
+    "summary": "GPU-native Windows screen perception tool capturing frames directly from the DXGI Desktop Duplication compositor handoff for AI agents.",
+    "verify_terms": [
+      "gpuview"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OnlyTerp/gpuview/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f38158a7c64292f1af1229fa6d6a8fe2e44c2dce59f694b35c967a7551782927"
+  },
+  {
+    "name": "Upsonic (GPT Computer Assistant)",
+    "url": "https://github.com/onuratakan/gpt-computer-assistant",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Upsonic (formerly GPT Computer Assistant) is a Python agent framework with MCP support and desktop screen/input automation.",
+    "verify_terms": [
+      "Upsonic"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/onuratakan/gpt-computer-assistant/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2bfb92e6063c8dd59d7463c284f2dc5b74bec342e2a164d66548bd846763a143"
+  },
+  {
+    "name": "Browser Reliability Runtime",
+    "url": "https://github.com/oosuhada/browser-reliability-runtime",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "self-reflection",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Multimodal browser reliability runtime for failure diagnosis, policy-aware recovery, and action verification.",
+    "verify_terms": [
+      "Browser Reliability Runtime"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/oosuhada/browser-reliability-runtime/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "61e772d7b48781ff6ebaccc158c2c8c041214aa2919b11ec48c033cb19d7cdef"
+  },
+  {
+    "name": "openadapt-evals",
+    "url": "https://github.com/OpenAdaptAI/openadapt-evals",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "workflow",
+      "sandbox"
+    ],
+    "summary": "openadapt-evals scores GUI agents and compiled workflows on benchmarks such as Windows Agent Arena using reproducible evaluators.",
+    "verify_terms": [
+      "openadapt-evals"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenAdaptAI/openadapt-evals/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f7c6b6da8b6fe579d9e4e576829c6daf4bd9611a5f134cf478fe85a0e2862156"
+  },
+  {
+    "name": "OpenAI Codex CLI",
+    "url": "https://github.com/openai/codex",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "OpenAI Codex CLI is a local terminal and desktop coding agent that executes commands and edits files inside OS-enforced sandboxes.",
+    "verify_terms": [
+      "codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openai/codex/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7"
   }
 ]

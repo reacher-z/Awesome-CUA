@@ -86010,5 +86010,228 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenTeam",
+    "url": "https://github.com/raghavpillai/openteam",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "workflow",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Self-hosted multi-agent platform with persistent memory, browser automation, and computer-use execution.",
+    "verify_terms": [
+      "OpenTeam"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/raghavpillai/openteam/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9dd996f5972a3862f39835b416a24af2fecd9b164ac457b225c9f3869f102ace"
+  },
+  {
+    "name": "Browser-Use Vision",
+    "url": "https://github.com/Raidriar7170/browser-use-vision",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "web-navigation"
+    ],
+    "summary": "Vision-grounding plugin for browser-use combining Set-of-Mark overlays, Florence-2 detection, and Vision-DOM alignment.",
+    "verify_terms": [
+      "browser-use-vision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Raidriar7170/browser-use-vision/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2c5a27bfd8049a1f0d1692e3bda90e7cc9a4b6bcd99dfac916e533422af3ef82"
+  },
+  {
+    "name": "Voice-to-Browser Agent",
+    "url": "https://github.com/Raidriar7170/voice-browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "summary": "Bounded Chinese-first voice-to-browser agent that translates spoken commands into safe, traceable browser execution steps.",
+    "verify_terms": [
+      "Voice-to-Browser Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Raidriar7170/voice-browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "21a741a65f59a7b23ca7b7db458e0fa29248dddff19afbd051ca8c92e4a8926b"
+  },
+  {
+    "name": "Voice2Task Post-Training",
+    "url": "https://github.com/Raidriar7170/voice2task-posttraining",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Post-training and evaluation pipeline for mapping spoken Chinese ASR commands into schema-valid browser agent action plans.",
+    "verify_terms": [
+      "Voice2Task Post-Training"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Raidriar7170/voice2task-posttraining/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "485141e1fed9ded8b8d96cc3fb1670068152b23886910f5ec0d75b5c5e1d4f54"
+  },
+  {
+    "name": "Luna Mux",
+    "url": "https://github.com/rainj2013/luna-mux",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Terminal and browser workbench for coding agents with automatic MCP injection, split panes, SSH/SFTP, and embedded browser automation.",
+    "verify_terms": [
+      "Luna Mux"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rainj2013/luna-mux/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "88f90dba4454aeef86e15e516c654c8c3a6e3e37b2aea024fb4b733553202548"
+  },
+  {
+    "name": "AgentDock",
+    "url": "https://github.com/rakeshnirzari1/agentdock",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Zero-dependency Chrome DevTools Protocol runtime for AI agents to drive headless or headful Chromium directly.",
+    "verify_terms": [
+      "AgentDock"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rakeshnirzari1/agentdock/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4cfa381c28d70f343ac3aa432ddc3f14746105d500f820ccec21c613fdfc3df7"
+  },
+  {
+    "name": "Your Browser Agent",
+    "url": "https://github.com/rakeshnirzari1/your-browser-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Connects Claude Code, Cursor, and MCP clients to the user's real logged-in Chrome browser.",
+    "verify_terms": [
+      "Your Browser Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rakeshnirzari1/your-browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bc3f7943b0d54436cf39ccc4170d530bfc653c29aff54f73415304f738b14c2f"
+  },
+  {
+    "name": "Sorify",
+    "url": "https://github.com/rakutentech/sorify",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Rakuten's AI-first browser testing and Playwright automation platform for end-to-end agentic QA.",
+    "verify_terms": [
+      "Sorify"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rakutentech/sorify/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bc94c410d9cfb4707ea12aa98498b3d5f7b3c7ac661ead7f188d4c3853c8e39a"
+  },
+  {
+    "name": "Chrome Control MCP",
+    "url": "https://github.com/RandyNorthrup/chrome-control-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Visible, secure Chrome control server for AI assistants using MCP, Native Messaging, and the Chrome DevTools Protocol.",
+    "verify_terms": [
+      "Chrome Control MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RandyNorthrup/chrome-control-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "900c0d161ec4330c34afbbeae92bb647c34df17cd4c016f566b888192e7294e6"
   }
 ]

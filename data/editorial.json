@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Webpage MCP",
+    "url": "https://github.com/mcpland/webpage-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Turns any existing web application into an in-page Model Context Protocol server so AI agents can navigate and invoke DOM actions.",
+    "verify_terms": [
+      "Webpage MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mcpland/webpage-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b41f5e808592e08e84539b0d4f252222e414089888d0d5af5ec85e9a2951cc49"
+  },
+  {
+    "name": "Pagecast MCP",
+    "url": "https://github.com/mcpware/pagecast",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "video",
+      "tool-integration"
+    ],
+    "summary": "Playwright and FFmpeg Model Context Protocol server that records browser agent interactions as GIFs or MP4 videos.",
+    "verify_terms": [
+      "pagecast"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mcpware/pagecast/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "262252419a9af039cb4ab0a47a68e4e528150c42aab149de5a7073bfd791df36"
+  },
+  {
+    "name": "UI Annotator MCP",
+    "url": "https://github.com/mcpware/ui-annotator-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Model Context Protocol server that injects interactive Set-of-Mark hover labels into live webpages for visual browser agents.",
+    "verify_terms": [
+      "UI Annotator MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mcpware/ui-annotator-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fcc15b1d7dff7f8745edd8acf1575e14ea9d339ce023a3462c200069e7068fa6"
+  },
+  {
+    "name": "Fazm",
+    "url": "https://github.com/mediar-ai/fazm",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "workflow"
+    ],
+    "summary": "Fazm is a native macOS desktop and browser agent that observes screen state via Accessibility/OCR and automates cross-application workflows.",
+    "verify_terms": [
+      "Fazm"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mediar-ai/fazm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "945f8a4b4a426217f6485e42b6936c36cfb7ac706f81d8d394d361d15b18e09c"
+  },
+  {
+    "name": "MacosUseSDK",
+    "url": "https://github.com/mediar-ai/MacosUseSDK",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "MacosUseSDK is a Swift library and CLI for traversing the macOS accessibility tree and simulating native mouse and keyboard input.",
+    "verify_terms": [
+      "MacosUseSDK"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mediar-ai/MacosUseSDK/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "12ec1b43a16fd6fdd2bc3391410d81d3e9ff822ce5cc87676a960425885ae24f"
   }
 ]

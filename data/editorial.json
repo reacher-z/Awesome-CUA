@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Job Hunter",
+    "url": "https://github.com/Liooo0/job-hunter",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "AI-assisted job application browser agent that matches resumes to listings, automates form filling, and logs submission traces.",
+    "verify_terms": [
+      "Job Hunter"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Liooo0/job-hunter/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "00b53fb75537043b1f9ca06d7fef6cf5b95de615bb3c62d0cb4bcd7a6ba7a71c"
+  },
+  {
+    "name": "dsh-browser-ops",
+    "url": "https://github.com/lirui1024k/dsh-browser-ops",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness plugin combining agent-driven real-browser control with workflow recording.",
+    "verify_terms": [
+      "dsh-browser-ops"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lirui1024k/dsh-browser-ops/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2d43bf22e94b455f7c7502d41d8669acb809a707ecdd048978339457fc47074f"
+  },
+  {
+    "name": "BrowserTrack",
+    "url": "https://github.com/litepacks/browsertrack",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Local browser diagnostics collector and Model Context Protocol bridge for sharing live console/network traces with coding agents.",
+    "verify_terms": [
+      "BrowserTrack"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/litepacks/browsertrack/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92853342cfef32e7f6bf6c25facdfbff1ad41d10eea834e4457673629e474f02"
+  },
+  {
+    "name": "MobileRAG",
+    "url": "https://github.com/liuxiaojieOutOfWorld/MobileRAG_arxiv",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "efficiency"
+    ],
+    "summary": "MobileRAG operates Android devices via ADB by combining local app retrieval, historical trajectory memory, and external web search.",
+    "verify_terms": [
+      "MobileRAG"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/liuxiaojieOutOfWorld/MobileRAG_arxiv/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cbdf9e9069fa7549e97d2aa66c489378749fc00c4de4c08e76fc05d3fd7723a8"
+  },
+  {
+    "name": "Knot Agent",
+    "url": "https://github.com/liz-public/knot-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Journal-first decentralized agent harness where independent browser and desktop plugins coordinate through an append-only fact log.",
+    "verify_terms": [
+      "knot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/liz-public/knot-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "800f5b96bef78bf3287cb9133fd737fbd38c7b1735142f4b3b86dca8d1fde8f7"
   }
 ]

@@ -86010,5 +86010,211 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Browser Agent Recorder",
+    "url": "https://github.com/VelvetAbyss/browser-agent-recorder",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "imitation-learning"
+    ],
+    "summary": "Records human browser workflows and exports them as both human-readable SOP documents and machine-readable Agent Skill Packs.",
+    "verify_terms": [
+      "Browser Agent Recorder"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/VelvetAbyss/browser-agent-recorder/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a8d53e1ba8c404442e8c1e8a915da5253a27a11e81cff9e8ed61ba6f097c0cde"
+  },
+  {
+    "name": "Kane",
+    "url": "https://github.com/Venkat5599/kane",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "self-reflection"
+    ],
+    "summary": "Plain-English browser verification harness for AI-built web applications that reports UI failures back to coding agents.",
+    "verify_terms": [
+      "Kane"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Venkat5599/kane/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2a6af07f95c092d3e9529a6036b99a170007c76f8c37903a65ad579954a6bdb2"
+  },
+  {
+    "name": "DispatchShield",
+    "url": "https://github.com/VenusOne-Lee/DispatchShield",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "safety-security",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "macOS utility that keeps a Mac awake for unattended computer-use agents while shielding the active session from local input.",
+    "verify_terms": [
+      "DispatchShield"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/VenusOne-Lee/DispatchShield/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3fd3207c4243c2cd5ee1ecae8c5b9bfba71d3b016c64452270e94644af1ef3ee"
+  },
+  {
+    "name": "Venxuix Dccide",
+    "url": "https://github.com/venxuix-dccide/Venxuix",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "ui-design",
+      "workflow",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "2D/3D agentic operating environment layered above Windows where humans and AI agents co-orchestrate desktop tasks.",
+    "verify_terms": [
+      "Venxuix Dccide"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/venxuix-dccide/Venxuix/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0ebe704d239fcf94850eec076f99340c7ce61b6e44770a6cd153aaf7ef2f3e0"
+  },
+  {
+    "name": "Desktop Pilot MCP",
+    "url": "https://github.com/VersoXBT/desktop-pilot-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Native macOS Accessibility MCP server giving Claude and MCP clients low-latency structured control over desktop applications.",
+    "verify_terms": [
+      "Desktop Pilot MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/VersoXBT/desktop-pilot-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a4837261b7a9e1d6cb22b5c5ab4f257206484d694ccebeb0ba53cbb0efa6be68"
+  },
+  {
+    "name": "aic-pod",
+    "url": "https://github.com/veypi/aic-pod",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Turns a physical or virtual machine into an LLM-callable execution node with sandboxed shell, file, browser, and desktop control.",
+    "verify_terms": [
+      "aic-pod"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/veypi/aic-pod/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad481b16016e378ad5df0ce39a300c6f291281a04d615dbaa8e17c9acc032f05"
+  },
+  {
+    "name": "VG-GUI-TASKER",
+    "url": "https://github.com/VG-GUI-TASKER/VG-GUI-TASKER",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop"
+    ],
+    "topics": [
+      "video",
+      "mobile-navigation",
+      "efficiency"
+    ],
+    "summary": "VG-GUI-TASKER extracts informative keyframes from instructional demonstration videos to guide multimodal GUI agents.",
+    "verify_terms": [
+      "VG-GUI-TASKER"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/VG-GUI-TASKER/VG-GUI-TASKER/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cfef3b054b195b1b128c5bbc3b6955f17d328a9dafaffb40c28e9a89eb7fbc82",
+    "documented_by": [
+      "2606.29445"
+    ]
+  },
+  {
+    "name": "Stealth Browser MCP",
+    "url": "https://github.com/vibheksoni/stealth-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Stealth Browser MCP provides anti-detect Chrome DevTools Protocol automation over MCP for navigating Cloudflare and login-protected websites.",
+    "verify_terms": [
+      "Stealth Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vibheksoni/stealth-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c59e10627a760192f3f0708cd89bf457eeac466c0cfdd0de5bd36e5c4523e50c"
   }
 ]

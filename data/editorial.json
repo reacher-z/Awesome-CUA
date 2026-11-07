@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "caob23 DSH Browser Control",
+    "url": "https://github.com/caob23/dsh-browser-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and DeepSeek Harness plugin allowing AI agents to directly operate the user's real browser.",
+    "verify_terms": [
+      "dsh browser control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/caob23/dsh-browser-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2c4faccc1fe3eace3450299cd9d9de5017cb2eac545ecdd48bdad8c0b85da133"
+  },
+  {
+    "name": "CapMonster Cloud MCP Server",
+    "url": "https://github.com/CapMonsterCloud/capmonster-mcp-captcha-solver",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Official CapMonster Cloud Model Context Protocol server for solving reCAPTCHA, Turnstile, and visual CAPTCHAs in browser agents.",
+    "verify_terms": [
+      "CapMonster Cloud MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CapMonsterCloud/capmonster-mcp-captcha-solver/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1bb72d0963c8123a03dded60a2b3699493fba4cb0c70a100565bdb42db89f4ed"
+  },
+  {
+    "name": "browser-use-capsolver",
+    "url": "https://github.com/capsolver/browser-use-capsolver",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Official CapSolver integration tools for Browser Use agents to detect and resolve CAPTCHA challenges during web workflows.",
+    "verify_terms": [
+      "browser-use-capsolver"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/capsolver/browser-use-capsolver/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b3c487b8066b4b84900b3788aae21bcfd5b729131f5343db6a1eeee00f1ac24"
+  },
+  {
+    "name": "CaptiOCR",
+    "url": "https://github.com/carlosacchi/captiocr",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "CaptiOCR is a real-time Windows screen region OCR and text extraction tool powered by Tesseract for desktop workflows.",
+    "verify_terms": [
+      "CaptiOCR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/carlosacchi/captiocr/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a1f2ec10e582aa1ac50d4096b80950d13a77c58103d0c517d0462a9e3bdabf3b"
+  },
+  {
+    "name": "computer.md",
+    "url": "https://github.com/carloslfu/computer.md",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Defines an open `COMPUTER.md` machine specification and runtime for LLM agents to operate terminals, filesystems, and desktop GUIs.",
+    "verify_terms": [
+      "computer.md"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/carloslfu/computer.md/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "09ed49eefcd225ce600d2309907257ec939ee4a0598a42b4a2b21e1856132009"
   }
 ]

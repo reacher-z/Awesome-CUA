@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "solari-identity-guard",
+    "url": "https://github.com/nahuelsoria/solari-identity-guard",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Fail-closed identity and session verification middleware for Solari browser agent profiles.",
+    "verify_terms": [
+      "solari-identity-guard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nahuelsoria/solari-identity-guard/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6db8214b5e732fbf70e65880eba95ba7f1159091350b779d046a30de704d860a"
+  },
+  {
+    "name": "wix-editor-mcp",
+    "url": "https://github.com/naieum/wix-editor-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for automating page layout, text, images, and SEO inside the classic Wix Editor.",
+    "verify_terms": [
+      "wix-editor-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/naieum/wix-editor-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "994b942f5cf05be35f000813be8e743c4ffd89d1623d1c299ee7825f23e6b9a6"
+  },
+  {
+    "name": "SwiftAutoGUI",
+    "url": "https://github.com/NakaokaRei/SwiftAutoGUI",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding"
+    ],
+    "summary": "SwiftAutoGUI is a native Swift library for macOS GUI automation providing mouse, keyboard, screenshot, template matching, and AppleScript control.",
+    "verify_terms": [
+      "SwiftAutoGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NakaokaRei/SwiftAutoGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6cba7bb04cf3cd225907f063c502839b42f005700c70c43de8d81ad758e64a1b"
+  },
+  {
+    "name": "nanbbb dsh-computer-use-windows",
+    "url": "https://github.com/nanbbb/dsh-computer-use-windows",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows computer-use plugin for DeepSeek Harness combining window discovery, UI Automation inspection, and input synthesis.",
+    "verify_terms": [
+      "dsh-computer-use-windows"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nanbbb/dsh-computer-use-windows/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "573479f9f08b6599dafdce8bb873f315f59139f49e0d362c4968bd750d8670a3"
+  },
+  {
+    "name": "cc-haha",
+    "url": "https://github.com/NanmiCoder/cc-haha",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "memory",
+      "observability"
+    ],
+    "summary": "cc-haha is a clean-room TypeScript implementation and visual debugger of the Claude Code agent harness, memory, and tool runtime.",
+    "verify_terms": [
+      "cc-haha"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NanmiCoder/cc-haha/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b8736628a623a6e072d07221bdb7b5ef028b6598b38a4b26bab051cdf75414a7"
   }
 ]

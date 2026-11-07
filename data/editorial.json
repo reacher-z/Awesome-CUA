@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "RecordAgent (ButvanAgent)",
+    "url": "https://github.com/Kavanio/RecordAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "human-in-the-loop",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Local-first Tauri and AgentScope desktop agent workbench with permission approvals, tool orchestration, and workflow recording.",
+    "verify_terms": [
+      "align"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Kavanio/RecordAgent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6fbb5a06986ac38605865f0d6b0bfe507ee063ff49d344d721357bb7f19f8eec"
+  },
+  {
+    "name": "Nudge",
+    "url": "https://github.com/kaxxcode/nudge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "summary": "Browser extension that automatically redacts sensitive PII on webpages before AI assistants inspect or summarize the page.",
+    "verify_terms": [
+      "Nudge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kaxxcode/nudge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6083ac92a938e72e6682569b2cb6bca56c719e5003eb4646e177ee7563038209"
+  },
+  {
+    "name": "WebOperator",
+    "url": "https://github.com/KazKozDev/WebOperator",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "WebOperator is an AI browser agent and MCP server that automates a user's existing Chrome profile through the Chrome DevTools Protocol.",
+    "verify_terms": [
+      "WebOperator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KazKozDev/WebOperator/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8412abaa08a3308ae27619258f292939d6375435ab0e41f6b276b0af01e41ca8"
+  },
+  {
+    "name": "NaturalGAIA & LightManus",
+    "url": "https://github.com/KeLes-Coding/NatureGAIA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "memory",
+      "tool-integration"
+    ],
+    "summary": "NaturalGAIA and LightManus provide a hierarchical multi-agent framework with browser automation, code execution, and episodic memory.",
+    "verify_terms": [
+      "NaturalGAIA & LightManus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KeLes-Coding/NatureGAIA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f254c11e45a4542274ed6425988c220b256896b137b90cfd65ddd689038132cb"
+  },
+  {
+    "name": "PhoneClaw",
+    "url": "https://github.com/kellyvv/PhoneClaw",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "ios",
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "PhoneClaw turns iOS and Android smartphones into local AI agent runtimes with on-device model inference and native system skills.",
+    "verify_terms": [
+      "PhoneClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kellyvv/PhoneClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0a2062b193dfe07c3938e6e14bf7c8e94e6ad4654ed3bd734b76141489e5d3f0"
   }
 ]

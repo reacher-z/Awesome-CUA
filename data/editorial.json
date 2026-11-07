@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Replay (Teach-by-Demonstration)",
+    "url": "https://github.com/misb74/Replay",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Converts human screen demonstrations of real desktop and web work into verifiable, repeatable AI agent workflows.",
+    "verify_terms": [
+      "Replay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/misb74/Replay/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "efe6c1691d82f1eda317b58ecfbb8f1ce9d8b8955fde0ba308d6dd9b01d77184"
+  },
+  {
+    "name": "SREY Voice Assistant",
+    "url": "https://github.com/mishrasreyansh86-cloud/srey-voice-assistant",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Python desktop voice assistant for automating local applications, web searches, and system controls.",
+    "verify_terms": [
+      "srey-voice-assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mishrasreyansh86-cloud/srey-voice-assistant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "89b781ba0453fa38aae54556da80e415e5ad385aed18641fcd3d311227b1e843"
+  },
+  {
+    "name": "LLM Scraper",
+    "url": "https://github.com/mishushakov/llm-scraper",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "LLM Scraper is a TypeScript library that uses Playwright and schema-constrained LLMs to extract structured data from live webpages.",
+    "verify_terms": [
+      "LLM Scraper"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mishushakov/llm-scraper/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0db83490da09d27e7f958a50b966dc867c1f9d7401cce06b35ee43b1863ac7c"
+  },
+  {
+    "name": "mistudio0902-lab Chrome Bridge",
+    "url": "https://github.com/mistudio0902-lab/chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Model Context Protocol bridge enabling Claude Code and Codex to operate multiple logged-in Chrome profiles concurrently.",
+    "verify_terms": [
+      "chrome bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mistudio0902-lab/chrome-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9e56c670efe09f1189577a8ef1a6bf595cc79799f405d1644b07a25ea1967f6b"
+  },
+  {
+    "name": "Helix Control",
+    "url": "https://github.com/miyahluvgames-source/helix-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Windows computer-use MCP stack combining browser control, native desktop UI Automation, and dynamic screen grounding.",
+    "verify_terms": [
+      "Helix Control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/miyahluvgames-source/helix-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7fc3a7c1ffdb98849790af6b395c15ad3d998318ec178958997511c95571fbba"
   }
 ]

@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Prodjest (DSH Browser Bridge)",
+    "url": "https://github.com/HEDELKA/prodjest",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Visual Chrome browser bridge for DeepSeek Harness with interactive user oversight.",
+    "verify_terms": [
+      "Prodjest"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HEDELKA/prodjest/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d529aeb5fdf85665ad42a30650dc17c9a7b9a1d0f3edf3f511274d0804b5413a"
+  },
+  {
+    "name": "PageLens",
+    "url": "https://github.com/heinevwinston-bot/PageLens",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design",
+      "web-navigation"
+    ],
+    "summary": "Read-only Claude browser assistant that inspects live webpages and suggests UX and accessibility improvements.",
+    "verify_terms": [
+      "PageLens"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/heinevwinston-bot/PageLens/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8257927b197bd47257978d5736f05dd7823c224121a6e46b51c0f79d269cf0f"
+  },
+  {
+    "name": "AI Computer Interaction Logger",
+    "url": "https://github.com/hemangjoshi37a/AIComputerInteractionLogger",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "summary": "AI Computer Interaction Logger records synchronized screen video, active window metadata, and mouse/keyboard events for CUA imitation learning.",
+    "verify_terms": [
+      "AI Computer Interaction Logger"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hemangjoshi37a/AIComputerInteractionLogger/HEAD/readme.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "68e936d8a4392458b4c6cce8bf8c3e1d9e2de2de9ce9e13155f4a8e65f3e71f5"
+  },
+  {
+    "name": "hfyydd dsh-cua",
+    "url": "https://github.com/hfyydd/dsh-cua",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness computer-use plugin backed by the `cua-driver` daemon for accessibility-first desktop automation.",
+    "verify_terms": [
+      "dsh-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hfyydd/dsh-cua/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cdbfc26a6ccf2cc91b4db61f79b081b7de86ded11e529cf28673ff9573490c34"
+  },
+  {
+    "name": "hightemp MCP Browser Control",
+    "url": "https://github.com/hightemp/mcp-browser-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local Go Model Context Protocol server and Manifest V3 extension for controlling open Chrome or Firefox tabs.",
+    "verify_terms": [
+      "mcp browser control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hightemp/mcp-browser-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "608cb21d8c5c7d37cbf8e541b9fe5ea6230b36df7cb4a9fd0b2e61ae815049bd"
   }
 ]

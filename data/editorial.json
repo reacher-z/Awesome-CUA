@@ -86010,5 +86010,139 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Tauri Dev Screen CLI",
+    "url": "https://github.com/johunsang/tauri-dev-screen-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Node.js CLI for AI agents to inspect, screenshot, and control live Tauri desktop application windows during development.",
+    "verify_terms": [
+      "Tauri Dev Screen CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/johunsang/tauri-dev-screen-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "285bbf13045af27072916a642d8bdd9a301f6f8a26ec6fec754ee92020d4c810"
+  },
+  {
+    "name": "Deterministic Computer-Use Automation",
+    "url": "https://github.com/joncody/computer-use-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "recording",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Two-phase computer-use automation framework that compiles LLM-driven UI discovery into deterministic replay scripts.",
+    "verify_terms": [
+      "Deterministic Computer-Use Automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/joncody/computer-use-automation/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6d07ac7e2ec840ecbc33b1b6e1efc792a47e8a89a52e0aec0f98fb06c31c7cea"
+  },
+  {
+    "name": "pixelpi",
+    "url": "https://github.com/josharsh/pixelpi",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Minimal 6-tool browser-agent harness whose entire tool definition fits in 1,196 tokens for context-efficient web automation.",
+    "verify_terms": [
+      "pixelpi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/josharsh/pixelpi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "27baa9049f9431f754850a5a08d1c11f954b4c966b6894987bfd3286786972e9"
+  },
+  {
+    "name": "dibs",
+    "url": "https://github.com/JoshTerAvest/dibs",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local coordination hub and lock manager that lets multiple AI agents reserve and use computer-use resources without colliding.",
+    "verify_terms": [
+      "dibs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JoshTerAvest/dibs/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "59e05daa8d1b5b149e648c8ecdd3f3deaa5502947d9a614851efaeb5c07ba158"
+  },
+  {
+    "name": "OpenControl",
+    "url": "https://github.com/JoshuaALawrence/OpenControl",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Single-binary ~2MB Rust Model Context Protocol server exposing 54 native Windows desktop control, UI Automation, and screenshot tools.",
+    "verify_terms": [
+      "OpenControl"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JoshuaALawrence/OpenControl/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ebd4b0d50b93aa8789efb90294ec811ad327e376bf29e056bcf7ac8e34ab7642"
   }
 ]

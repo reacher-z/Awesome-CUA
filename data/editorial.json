@@ -86010,5 +86010,217 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "local-windows-use",
+    "url": "https://github.com/yuhuison/local-windows-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MCP server and CLI that lets frontier LLMs delegate token-heavy Windows desktop and browser clicking loops to compact local models.",
+    "verify_terms": [
+      "local-windows-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yuhuison/local-windows-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "687de6cc56bab819e34cc480eebffe147ab0d6f9b9e656996f1f690dafeca4c6"
+  },
+  {
+    "name": "HarmonyGuard",
+    "url": "https://github.com/YurunChen/HarmonyGuard",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "HarmonyGuard enforces adaptive safety policies and dual-objective utility-security optimization for autonomous web and computer-use agents.",
+    "verify_terms": [
+      "HarmonyGuard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/YurunChen/HarmonyGuard/HEAD/readme.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "728f7cc0c49e5cb92608accdd1759247ac42cd527661c003c07ddf9df4883b0b",
+    "documented_by": [
+      "2508.04010"
+    ]
+  },
+  {
+    "name": "Navi-Bench",
+    "url": "https://github.com/yutori-ai/navi-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Navi-Bench evaluates web agents on everyday consumer tasks executed directly on live websites with deterministic outcome verifiers.",
+    "verify_terms": [
+      "Navi-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yutori-ai/navi-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1642a791d8fc35149562ca741b8d20596d0a2b756fab188522070242dca21336"
+  },
+  {
+    "name": "Awesome GUI Agent Security",
+    "url": "https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "safety-security",
+      "survey",
+      "evaluation"
+    ],
+    "summary": "Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes.",
+    "verify_terms": [
+      "awesome-gui-agent-security"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0434590876e75ef7f163800a354d4d1bb81aa2324bd499ecc31ad07015f5648d"
+  },
+  {
+    "name": "computer-use-grid",
+    "url": "https://github.com/yxdgyxlf/computer-use-grid",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Enhances desktop clicking precision for AI computer-use agents via screenshot grid overlays and iterative zoom refinement.",
+    "verify_terms": [
+      "computer-use-grid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yxdgyxlf/computer-use-grid/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d803d95e43f5f9c230515943f94be2b38b57f427d747ed6cb8b4515ec98d4f60"
+  },
+  {
+    "name": "PANOPTES Screen MCP Server",
+    "url": "https://github.com/yxpil/PANOPTES",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Streamable HTTP Model Context Protocol server exposing 9 screen capture and mouse/keyboard control tools to AI agents.",
+    "verify_terms": [
+      "panoptes"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yxpil/PANOPTES/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "238e57b8b8c14f97fe6021fd1f08dac80262747df17a12001323eedd8331c904"
+  },
+  {
+    "name": "MuseLite",
+    "url": "https://github.com/yxq953/MuseLite",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "MuseLite is a Python-first AI agent workspace for Android combining chat, execution sandboxes, browser automation, and scheduled tasks.",
+    "verify_terms": [
+      "MuseLite"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yxq953/MuseLite/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3d7bbc27313a2e68f398b4c0d202e64605113f87806a1a7c75b779dad06445a4"
+  },
+  {
+    "name": "Agent DevTools (39-tools)",
+    "url": "https://github.com/YYDongRo/39-tools",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "evaluation",
+      "recording"
+    ],
+    "summary": "Action-level observability, state verification, and debugging toolkit for computer-use agents.",
+    "verify_terms": [
+      "Agent DevTools"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/YYDongRo/39-tools/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b434e5299ba583ccd86984c98e15b3604a447609193429b975fd8ee80228cc14"
   }
 ]

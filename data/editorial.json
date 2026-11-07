@@ -86010,5 +86010,212 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "CUA-Gym-Hub",
+    "url": "https://github.com/xlang-ai/CUA-Gym-Hub",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "reinforcement-learning",
+      "sandbox"
+    ],
+    "summary": "CUA-Gym-Hub provides 98 self-contained mock web applications with deterministic state verifiers as RL training and evaluation environments.",
+    "verify_terms": [
+      "CUA-Gym-Hub"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlang-ai/CUA-Gym-Hub/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "979699e12a3ee57f2059720cf2f22abbd42fd07a97896826522f9ec5ccb8e9c5",
+    "documented_by": [
+      "2605.25624"
+    ]
+  },
+  {
+    "name": "OSWorld 2.0",
+    "url": "https://github.com/xlang-ai/OSWorld-V2",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "sandbox"
+    ],
+    "summary": "OSWorld 2.0 benchmarks computer-use agents on long-horizon desktop workflows with updated task suites, trajectory viewers, and container sandboxes.",
+    "verify_terms": [
+      "OSWorld 2.0"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0d1d3e91e8786720a167b8bc26a41bd27832eefae652ab1c166193073e99b2b4",
+    "documented_by": [
+      "2606.29537"
+    ]
+  },
+  {
+    "name": "Chrome Actuator",
+    "url": "https://github.com/xlreon/chrome-actuator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser companion that lets Grok and other AI agents drive an already-open Chrome window.",
+    "verify_terms": [
+      "Chrome Actuator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlreon/chrome-actuator/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b96d46533b9ad4110227ca34a051dc4202da862a2b4a51a087a26ed804c9988b"
+  },
+  {
+    "name": "Marvi OS",
+    "url": "https://github.com/xRetr00/Marvi-OS",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Conversational desktop agent shell that observes screen context and executes local OS and GUI actions.",
+    "verify_terms": [
+      "Marvi OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xRetr00/Marvi-OS/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2045684dea00e25de57a0b62f17b496f479c02e3f8d824c8785bbd886ffaf819"
+  },
+  {
+    "name": "Computer Use Vision (DSH Windows Plugin)",
+    "url": "https://github.com/xuanyuanluoxue/computer-use-vision",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows desktop visual recognition and simulated input plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "Computer Use Vision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xuanyuanluoxue/computer-use-vision/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "899708dd8b6d40a3acb0d04c71a94e21387b40ec7683d27cedd0e87291279ade"
+  },
+  {
+    "name": "ENVISIONS",
+    "url": "https://github.com/xufangzhi/ENVISIONS",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "reinforcement-learning",
+      "planning"
+    ],
+    "summary": "ENVISIONS is an environment-guided neural-symbolic self-training framework for language agents across symbolic reasoning and WebShop tasks.",
+    "verify_terms": [
+      "ENVISIONS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xufangzhi/ENVISIONS/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "488667f0df6d834de658288b0887d04574cd5a8f97dfbdd81f7e634bdc1cea01"
+  },
+  {
+    "name": "HAICOSYSTEM",
+    "url": "https://github.com/XuhuiZhou/HAICosystem",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "sandbox",
+      "evaluation"
+    ],
+    "summary": "HAICOSYSTEM simulates multi-turn interactions between human users, tool-using LLM agents, and environment sandboxes to evaluate safety risks.",
+    "verify_terms": [
+      "HAICOSYSTEM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/XuhuiZhou/HAICosystem/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77a2500dd9bf645fc05f79bc57321fb9df7e6e3a904e57be12451024d187df34"
+  },
+  {
+    "name": "Agent Desktop Harness (ADH)",
+    "url": "https://github.com/xuyw1997/agent-desktop-harness",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow",
+      "grounding"
+    ],
+    "summary": "Native Windows desktop computer-use and reusable RPA harness exposing CLI, MCP, Python, and C++ interfaces.",
+    "verify_terms": [
+      "Agent Desktop Harness (ADH)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xuyw1997/agent-desktop-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "34ba392269e69e81729059f20c63aad04156f041bf7b812bd2b38c99fe51cddf"
   }
 ]

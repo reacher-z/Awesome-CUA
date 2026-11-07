@@ -86010,5 +86010,144 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Mano-P",
+    "url": "https://github.com/Mininglamp-AI/Mano-P",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "Mano-P is an open-source GUI vision-language-action model optimized for edge devices and evaluated on OSWorld and Mind2Web.",
+    "verify_terms": [
+      "Mano-P"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Mininglamp-AI/Mano-P/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1c778701e5304c663970e6ec21cfba2d090ba3579faa428fef5b1183df30b4c9"
+  },
+  {
+    "name": "Minitap mobile-use",
+    "url": "https://github.com/minitap-ai/mobile-use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "planning"
+    ],
+    "summary": "Minitap mobile-use is a multi-agent mobile automation system that controls physical and emulated Android and iOS devices from natural language.",
+    "verify_terms": [
+      "mobile-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/minitap-ai/mobile-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d9f1dc9560baec4746a58f3c0fa8b167a9fb365b7e2888698d0cb75f803c856c",
+    "documented_by": [
+      "2602.07787"
+    ]
+  },
+  {
+    "name": "OpenWebVoyager",
+    "url": "https://github.com/MinorJerry/OpenWebVoyager",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "imitation-learning",
+      "reinforcement-learning"
+    ],
+    "summary": "OpenWebVoyager trains multimodal web navigation agents through iterative real-world web exploration, feedback verification, and trajectory tuning.",
+    "verify_terms": [
+      "OpenWebVoyager"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MinorJerry/OpenWebVoyager/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d21bff8addefac48b0f1d8957c6cefdf04ece467ac616fb0eb7669793603d732",
+    "documented_by": [
+      "2401.13919",
+      "2410.19609"
+    ]
+  },
+  {
+    "name": "AnythingLLM",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "memory",
+      "web-navigation"
+    ],
+    "summary": "AnythingLLM is a local-first desktop and server application supporting custom AI agents, web browsing, MCP tools, and document RAG.",
+    "verify_terms": [
+      "AnythingLLM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "54fa19d813e8bb7bbed9346771e17ad29a9d5753effa19427bea4c38de6c7a2c"
+  },
+  {
+    "name": "Unraid Camofox Stealth Browser",
+    "url": "https://github.com/MircoBlitz/unraid-camofox-stealth-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Unraid container template and Agent Skill for hosting a private Camofox anti-detect browser node for AI agents.",
+    "verify_terms": [
+      "unraid-camofox-stealth-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MircoBlitz/unraid-camofox-stealth-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5860e03eaa0fc0035b04660001cd922564f4e1dda01cc8a23e70628424115713"
   }
 ]

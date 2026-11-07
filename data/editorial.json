@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Brizo Use",
+    "url": "https://github.com/Frankfromfuture/Brizo",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Open browser-use runtime, local bridge, CLI, and AI harness adapter for driving live web sessions.",
+    "verify_terms": [
+      "Brizo Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Frankfromfuture/Brizo/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cca302ff760e9689274448b6df73fbfcad188328c0f579f66b459182a2789fae"
+  },
+  {
+    "name": "dsh-browser-secure",
+    "url": "https://github.com/frankXie-java/dsh-browser-secure",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "observability",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Security-hardened fork of `dsh-browser` for DeepSeek Harness adding audit logging and domain egress allowlists.",
+    "verify_terms": [
+      "dsh-browser-secure"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/frankXie-java/dsh-browser-secure/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d23cd2aa58dda18bd851328ce8e0c35bb25170d8733d2613e201c2e2e54712c7"
+  },
+  {
+    "name": "Job Hunter AI",
+    "url": "https://github.com/fred-brown-3/job-hunter-ai",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Agentic AI career copilot with automated candidate intake and verified browser form filling.",
+    "verify_terms": [
+      "Job Hunter AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fred-brown-3/job-hunter-ai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "954f985c336fdf38847591267fd265c8bc2e7e4d6b097c1c6bd43caf5b48ad6d"
+  },
+  {
+    "name": "Latch",
+    "url": "https://github.com/freezetheworld/latch",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Attaches local coding agents directly to the user's real signed-in Chrome browser.",
+    "verify_terms": [
+      "Latch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/freezetheworld/latch/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "393b0382ebfd0fec47ed67a89b96f210d9e80df3d7920beffa5cf9ba07e6dad8"
+  },
+  {
+    "name": "AXON OS",
+    "url": "https://github.com/Frezzaroukos/axon-os",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "recording",
+      "automation"
+    ],
+    "summary": "Local-first, policy-governed action layer for Linux desktop automation with preview, approval, and rollback receipts.",
+    "verify_terms": [
+      "AXON OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Frezzaroukos/axon-os/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "875e8d03d7dbc6d6bdf819d45c227c2ce52b69622bc065b0a3163a9187b62aa5"
   }
 ]

@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Human-Browser",
+    "url": "https://github.com/hterzia/human-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Vision-driven browser automation service where an external LLM sets high-level goals and a visual browser assistant executes them.",
+    "verify_terms": [
+      "Human-Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hterzia/human-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e1de0cd1517ef7464113b0109ce7f3d8bdb728f27fa34b09e43b1c09ad6070b9"
+  },
+  {
+    "name": "QWebBridge",
+    "url": "https://github.com/hu-qi/QWebBridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Browser bridge that lets AI agents navigate, click, fill forms, and read Chrome pages via the accessibility tree.",
+    "verify_terms": [
+      "QWebBridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hu-qi/QWebBridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "214f036dd0d23997b2b98290fc8e936725a4c5b42b6f863a9b54a967976855c2"
+  },
+  {
+    "name": "dsh-llm-web-bridge",
+    "url": "https://github.com/HuangYuKaiLI1031/dsh-llm-web-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness bridge for automating and orchestrating logged-in web LLM chat sessions in Chrome.",
+    "verify_terms": [
+      "dsh-llm-web-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HuangYuKaiLI1031/dsh-llm-web-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "59636204d8066f1d58d0034e045ff8c121d023951acc95e31689e2d8b2e8aa2c"
+  },
+  {
+    "name": "SCoR (Sparse Context Reset)",
+    "url": "https://github.com/huia711/SCoR",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "long-horizon",
+      "memory",
+      "efficiency",
+      "planning"
+    ],
+    "summary": "Sparse Context Reset (SCoR) framework for preventing context overflow and drift in long-horizon GUI agents.",
+    "verify_terms": [
+      "SCoR (Sparse Context Reset)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huia711/SCoR/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8503f27fc1165e72e45e898e9b9dc8356f02cfb08c0c581136518bff69f07b9e"
+  },
+  {
+    "name": "DouGao (豆糕)",
+    "url": "https://github.com/hulubo2014/dougao",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "DouGao is an on-device Android AI assistant combining VLM screen control across Accessibility, Shizuku, and Root channels with direct file editing.",
+    "verify_terms": [
+      "DouGao"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hulubo2014/dougao/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f109c53baceab789a3a243c8cf3a701fd66a74c5a3e4fa17c305f294dfb4c0c4"
   }
 ]

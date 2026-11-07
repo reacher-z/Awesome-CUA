@@ -86010,5 +86010,235 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "drift-audit",
+    "url": "https://github.com/SebastianPuchet/drift-audit",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Audits and classifies a browser-automation repository's selector maintenance history to quantify UI drift fragility.",
+    "verify_terms": [
+      "drift-audit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SebastianPuchet/drift-audit/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "321a19ee9d65fcfecd62c8c0ffe43bc67afc900eaf5216369879ca974ccb7b71"
+  },
+  {
+    "name": "secretxuan dsh-computer-use-win",
+    "url": "https://github.com/secretxuan/dsh-computer-use-win",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows computer-use bundle for DeepSeek Harness providing desktop screenshots, window management, and input automation.",
+    "verify_terms": [
+      "dsh-computer-use-win"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/secretxuan/dsh-computer-use-win/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f8760a8ee5a41d260cfaefd4489282f8bd94fa7e558517bdf4f85af1f5a2e620"
+  },
+  {
+    "name": "Oh My DSH",
+    "url": "https://github.com/secretxuan/oh-my-dsh",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Oh My DSH coordinates multi-agent teams with a shared compare-and-set task graph and native-vision Windows computer-use for DeepSeek Harness.",
+    "verify_terms": [
+      "Oh My DSH"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/secretxuan/oh-my-dsh/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a3307dacd65ef5576590794a19984999c7403fd09dec1f53023fc7389dbf3e5a"
+  },
+  {
+    "name": "glovebox-mcp",
+    "url": "https://github.com/segentic-lab/glovebox-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Sandboxed computer-use MCP server that lets AI agents drive browsers and desktop apps inside an isolated nested X11 window.",
+    "verify_terms": [
+      "glovebox-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/segentic-lab/glovebox-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cf0e7859447be0f764368681c5708f7c9df7b93e200427e5995b210347dc310b"
+  },
+  {
+    "name": "periscope-mcp",
+    "url": "https://github.com/segentic-lab/periscope-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration",
+      "ui-design"
+    ],
+    "summary": "Web-application QA and analysis MCP server exposing 74 Playwright tools for authenticated flows, visual regression, and accessibility audits.",
+    "verify_terms": [
+      "periscope-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/segentic-lab/periscope-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "02587a31afba217bd88ecb03e1518ff14825f4b5498c6a69d79218aabf1073ef"
+  },
+  {
+    "name": "Manipulating Web Agents (Toast Attack)",
+    "url": "https://github.com/sej2020/manipulating-web-agents",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Implements DOM-injected pop-up and toast indirect prompt injection attacks against multimodal web agents in VisualWebArena and OSWorld.",
+    "verify_terms": [
+      "manipulating"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sej2020/manipulating-web-agents/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cc68d5746156c7a9ace384a91a1ab3fecf77ce778bfa06a60ee939bc2d1da221"
+  },
+  {
+    "name": "Agent Q",
+    "url": "https://github.com/sentient-engineering/agent-q",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "planning",
+      "web-navigation",
+      "self-reflection"
+    ],
+    "summary": "Agent Q combines Monte Carlo Tree Search, AI self-critique, and Direct Preference Optimization for autonomous web navigation.",
+    "verify_terms": [
+      "Agent Q"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sentient-engineering/agent-q/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0525d6660dc51198b2e490b5d3ae57f5c2cf6af4c6f74fff44dc597861393f6a",
+    "documented_by": [
+      "2408.07199"
+    ]
+  },
+  {
+    "name": "SentinelDesk",
+    "url": "https://github.com/sentineldesk/desktop",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Collaborative Linux desktop streamed to the browser where humans and AI agents share a workspace.",
+    "verify_terms": [
+      "SentinelDesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sentineldesk/desktop/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9938ba4e669fb94731e4a0d454875390789eec23db98a2bfbd6876a52659add0"
+  },
+  {
+    "name": "Shellby MCP",
+    "url": "https://github.com/serbyte-development/shellby-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Local Model Context Protocol server that turns ChatGPT Web into a local coding and computer-control agent.",
+    "verify_terms": [
+      "Shellby MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/serbyte-development/shellby-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f5dccd0c4dfcd9c11c728ed2396c4bc1c0ce79412466785c51bb9ee3e6f4953c"
   }
 ]

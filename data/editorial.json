@@ -86010,5 +86010,225 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WebClerk",
+    "url": "https://github.com/ThunderKhan/webclerk",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "WebMCP-powered form-filling assistant that populates verified fields on high-stakes web forms under human review.",
+    "verify_terms": [
+      "WebClerk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ThunderKhan/webclerk/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e86ef0a0ea88d54361f2fa243a0bfe7c6ea5f31a4ba71781fadeed994c28a5ed"
+  },
+  {
+    "name": "Open User",
+    "url": "https://github.com/Tiacoo/open-user",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design",
+      "web-navigation"
+    ],
+    "summary": "Black-box UX audit harness that dispatches AI browser personas to test web products and record friction points.",
+    "verify_terms": [
+      "Open User"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Tiacoo/open-user/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7a1a86a96ef069372d3b983a00038dab104be21ff008f37306bd5fa55f1efef1"
+  },
+  {
+    "name": "Recallo",
+    "url": "https://github.com/Tianqi-Bu/recallo",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "Recallo is a local-first browser agent with persistent SQLite episodic memory across browsing sessions.",
+    "verify_terms": [
+      "Recallo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Tianqi-Bu/recallo/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b328101ca2a76651ddeac3cd3440c97479356070c95a002d7c7600d3256350cc"
+  },
+  {
+    "name": "DSB (逗沙包)",
+    "url": "https://github.com/tianye1999/dsb",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "safety-security",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "DSB is a trust-first Android AI agent that executes delegated app tasks on a background virtual display without interrupting the user's screen.",
+    "verify_terms": [
+      "DSB (逗沙包)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tianye1999/dsb/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e89d6bc38d0832f6674bcd3b8dcf370c0ea8ac52230c2287d5d92eed3c747429"
+  },
+  {
+    "name": "TideSurf",
+    "url": "https://github.com/TideSurf/core",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "TideSurf connects Chromium to LLM agents via compact structured DOM compression requiring 50 to 200 tokens per webpage.",
+    "verify_terms": [
+      "TideSurf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TideSurf/core/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "473e6ee13f2106f694297776c441fb71963bbbbb5ad9940ca52fd46ce9fbf426"
+  },
+  {
+    "name": "ADB MCP Server Pro",
+    "url": "https://github.com/tiendung2k03/adb-mcp-server-pro",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "memory",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for Android device control via ADB featuring self-learning UI element maps.",
+    "verify_terms": [
+      "adb-mcp-server-pro"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tiendung2k03/adb-mcp-server-pro/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d70c0404ae288269eb3eeebc0ce89b874d9aaa05849ca7e5eb302493c73b8635"
+  },
+  {
+    "name": "wayhand-mcp",
+    "url": "https://github.com/TimLai666/wayhand-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local Model Context Protocol server enabling Claude Code and Codex to observe and operate GNOME Wayland desktops.",
+    "verify_terms": [
+      "wayhand-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TimLai666/wayhand-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad21e15d097fc52a77307c8d718c9005de6b554ad314ea2de31b325e27ee5c0b"
+  },
+  {
+    "name": "ClawTouch MCP",
+    "url": "https://github.com/tinqiao-oss/clawtouch-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server that turns a Raspberry Pi Pico 2 into a hardware USB-HID keyboard and mouse for AI computer-use agents.",
+    "verify_terms": [
+      "clawtouch-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tinqiao-oss/clawtouch-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0652d327c31ea331502760cb32f97fb036e037636cf730cf961b74a40ebc0d7a"
+  },
+  {
+    "name": "Android-MCP-go",
+    "url": "https://github.com/tintupratap/Android-MCP-go",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Self-contained Go Model Context Protocol server for Android automation with managed ADB, automatic USB-to-Wi-Fi handoff, and `scrcpy`.",
+    "verify_terms": [
+      "Android-MCP-go"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tintupratap/Android-MCP-go/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bf61be743bc53cc6ce5c85186d6852b8a3082056d3cfcc590d62dec22a4d7f38"
   }
 ]

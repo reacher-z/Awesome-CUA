@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ScreenBuddy",
+    "url": "https://github.com/Nideesh1/SCREEN_BUDDY",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "human-in-the-loop"
+    ],
+    "summary": "ScreenBuddy is a native Rust and Tauri macOS desktop client for running bring-your-own-key Claude Computer Use workflows.",
+    "verify_terms": [
+      "ScreenBuddy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Nideesh1/SCREEN_BUDDY/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a56e476202a2509746ff82cbd65fc379b24dea6a1e8388ac6d70b626bda36640"
+  },
+  {
+    "name": "webmcp-gen",
+    "url": "https://github.com/Nidhicodes/webmcp-gen",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Automatically generates callable WebMCP tool schemas from live webpages without requiring site-owner instrumentation.",
+    "verify_terms": [
+      "webmcp-gen"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Nidhicodes/webmcp-gen/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "94aba74394cb5ea752867333f517adcd7c69518ef2513e4f19f85ce07cb2bc16"
+  },
+  {
+    "name": "Wraith",
+    "url": "https://github.com/nightraven-x/Wraith",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Windows system-tray utility that blocks physical keyboard and mouse interference while allowing synthetic AI agent input events through.",
+    "verify_terms": [
+      "Wraith"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nightraven-x/Wraith/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bbac367182133c198d2e1be6ee1f60e11cefc3c7edb3e2f3b3709bbd312e4334"
+  },
+  {
+    "name": "Nik-Browser MCP",
+    "url": "https://github.com/Nikolay-3D/nik-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "Local Model Context Protocol server providing LLMs with an independent, persistent-login Chromium browser and DOM snapshots.",
+    "verify_terms": [
+      "Nik-Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Nikolay-3D/nik-browser-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "301c9e76417a8e2628c5db645e45c580f70dc332778883321810d3b352d8ec6a"
+  },
+  {
+    "name": "hands-off",
+    "url": "https://github.com/Niramay-Kelkar/hands-off",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "imitation-learning",
+      "automation",
+      "robustness"
+    ],
+    "summary": "hands-off discovers UI workflows in legacy back-office software without APIs and compiles them into deterministic replay scripts.",
+    "verify_terms": [
+      "hands-off"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Niramay-Kelkar/hands-off/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fd50ad1ce28a70a518899b11fdfed850bde1f348d7ed3b161e501a6649ac41e4"
   }
 ]

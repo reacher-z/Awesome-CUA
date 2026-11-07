@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Awesome AI Agent Platforms",
+    "url": "https://github.com/Agenta-AI/awesome-ai-agent-platforms",
+    "kind": "learning",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "survey",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Curated directory of open-source AI agent platforms, digital coworkers, and browser/desktop execution harnesses.",
+    "verify_terms": [
+      "Awesome AI Agent Platforms"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Agenta-AI/awesome-ai-agent-platforms/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "76fd34b0e90d2e138de969d9ee066b493e3bdc24e886296c22d0098d8411a70f"
+  },
+  {
+    "name": "Open Browser Operator (obo)",
+    "url": "https://github.com/agenthand/obo",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "CLI and Chrome extension for controlling a user's logged-in Chrome browser from terminal and coding agents.",
+    "verify_terms": [
+      "Open Browser Operator (obo)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agenthand/obo/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad67f0abf6b4c6effb280c4f5d4e7134efa1546655c2e864c9aa05bbbc85c0e1"
+  },
+  {
+    "name": "AgentOCR",
+    "url": "https://github.com/AgentMaker/AgentOCR",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "AgentOCR provides compact visual-token and OCR screen compression for accelerating GUI and computer-use agents.",
+    "verify_terms": [
+      "AgentOCR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AgentMaker/AgentOCR/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4ff26ae2e4c271c1a3c6278950da73a3e062b9aac0202666aeaebc2214ef5c38"
+  },
+  {
+    "name": "Webhands",
+    "url": "https://github.com/AgentPostmortem/Webhands",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Webhands is a browser computer-use agent that automates seller and logistics web dashboards lacking APIs via Cloudflare Browser Rendering.",
+    "verify_terms": [
+      "Webhands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AgentPostmortem/Webhands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7cd949e283ba782f106a25c8db191baf7c3dec6ac2b38d4b38c47e4052f6fb2e"
+  },
+  {
+    "name": "Webcmd",
+    "url": "https://github.com/agentrhq/webcmd",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "efficiency"
+    ],
+    "summary": "Webcmd captures and indexes website navigational context as agents browse, compiling site structure into reusable local memory skills.",
+    "verify_terms": [
+      "Webcmd"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agentrhq/webcmd/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9eaed633eed1e4bb9a0c325cded0ddbcb3e1be87bcba321d98038372b6c99f0c"
   }
 ]

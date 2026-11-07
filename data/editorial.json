@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OmniParser MCP Server",
+    "url": "https://github.com/cute-aaa/OmniParser-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "OmniParser MCP Server wraps Microsoft OmniParser V2 into a Model Context Protocol server that converts screenshots into structured UI elements.",
+    "verify_terms": [
+      "OmniParser MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cute-aaa/OmniParser-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ae6853985db779fae8256e224ec8d2f7ed78f532eb3515887b7f810fc17f2ae4"
+  },
+  {
+    "name": "cxrobx zen-mcp (WebExtension)",
+    "url": "https://github.com/cxrobx/zen-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "WebExtension-backed Model Context Protocol server for driving Zen Browser and Firefox from Claude Code.",
+    "verify_terms": [
+      "zen-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cxrobx/zen-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2bab9293335783a0c5f674da6fd0b867e39a0da4f1d11ddd67b5d9176ec77f22"
+  },
+  {
+    "name": "DH.Window.UITool",
+    "url": "https://github.com/cyberkdh/DH.Window.UITool",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "recording",
+      "automation"
+    ],
+    "summary": "Windows UI Automation inspection and scripting tool for analyzing UI element trees and building repeatable desktop workflows.",
+    "verify_terms": [
+      "DH.Window.UITool"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cyberkdh/DH.Window.UITool/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "008de2c90f8e14edd6c99b816729f9b367f1c27c4965b37bf4248ddb2b53fe76"
+  },
+  {
+    "name": "Cyber Seeds WebMCP",
+    "url": "https://github.com/CyberSeeds-uk/cyber-seeds-webmcp-challenge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Human-authorized safety and consent pattern for WebMCP browser agents operating consumer web dashboards.",
+    "verify_terms": [
+      "Cyber Seeds WebMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CyberSeeds-uk/cyber-seeds-webmcp-challenge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a69280db3a3a54cbbdd315db768b3012e8c217a0c2af0b4d19a7747f4f63a64a"
+  },
+  {
+    "name": "Attest",
+    "url": "https://github.com/Cyrus580529/Attest",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "self-reflection",
+      "web-navigation",
+      "robustness"
+    ],
+    "summary": "Self-verifying web agent core where the model proposes candidate actions and the harness validates real DOM state transitions.",
+    "verify_terms": [
+      "Attest"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Cyrus580529/Attest/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "32fe4c69eb0efed7e34b75b088925f9f818d842eef2f943ab65b086a7436cc68"
   }
 ]

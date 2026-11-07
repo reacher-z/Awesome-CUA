@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Codex Chrome Browser Control Skill",
+    "url": "https://github.com/QLK-X/codex-chrome-browser-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local-first OpenAI Codex skill and Chrome extension for safe, user-bounded browser tab control.",
+    "verify_terms": [
+      "codex-chrome-browser-control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/QLK-X/codex-chrome-browser-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b32626892f655d5ac8b67143210f8f25d9a30ad4b4480f332f4b6298cea89863"
+  },
+  {
+    "name": "firefox-headless-server MCP",
+    "url": "https://github.com/qoli/firefox-headless-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "TypeScript Model Context Protocol server for launching and controlling headless Firefox browser sessions, DOM extraction, and downloads.",
+    "verify_terms": [
+      "firefox-headless-server MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qoli/firefox-headless-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4e4d22ff755b2e21e5f544a8b78456b72a95e8e077d60982e03216833a1df00f"
+  },
+  {
+    "name": "Qontinui",
+    "url": "https://github.com/qontinui/qontinui",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "state-tracking"
+    ],
+    "summary": "Qontinui is a model-based GUI automation framework that represents application screens as state graphs with visual template and OCR matching.",
+    "verify_terms": [
+      "Qontinui"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qontinui/qontinui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ca2fca0dfc116d4f36c159a8c938f8ad0380db5c85da7d3b497c54ceb4fc5e89"
+  },
+  {
+    "name": "Browser AI Agent Examples (Tiered Web Agent)",
+    "url": "https://github.com/quantumproxies/browser-ai-agent-examples",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "Goal-driven web agent architecture using a cheapest-tier-first cascade across XHR discovery, DOM actions, and vision.",
+    "verify_terms": [
+      "Browser AI Agent Examples"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/quantumproxies/browser-ai-agent-examples/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "81e8fc6dacad9bdc315f7fbb4031880b2f801c0cce73faea06a9abd6d6e65850"
+  },
+  {
+    "name": "QUE CORE",
+    "url": "https://github.com/qubasehq/que-tools",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "QUE CORE is a hybrid Rust and Python runtime exposing 121 consolidated system, window, and GUI control tools for computer-use agents.",
+    "verify_terms": [
+      "QUE CORE"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qubasehq/que-tools/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "74792671b44c01890158f843ed62a50071c6591fd0226320431c74b29b48a012"
   }
 ]

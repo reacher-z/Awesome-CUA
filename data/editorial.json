@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MacWork",
+    "url": "https://github.com/gklab/MacWork",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "MacWork is an open-source macOS computer-use agent and MCP server that drives desktop applications through the native Accessibility API.",
+    "verify_terms": [
+      "MacWork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gklab/MacWork/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8e715c4cae121dc2fa707e7b308702131ab5598ec795b6854dab2d861efdb78e"
+  },
+  {
+    "name": "Glasswarp MCP Server",
+    "url": "https://github.com/glasswarp/mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Remote Model Context Protocol server for observing and controlling physical or virtual Windows PCs via Glasswarp.",
+    "verify_terms": [
+      "Glasswarp MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/glasswarp/mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "167321ee2a9b2c2a1a240e7b643dcda0943cb771a3f80fe8492b2c28d276ea79"
+  },
+  {
+    "name": "Glasswarp Python SDK",
+    "url": "https://github.com/glasswarp/python-sdk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Python SDK for the Glasswarp platform enabling AI agents to observe and control remote or local Windows PCs.",
+    "verify_terms": [
+      "Glasswarp Python SDK"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/glasswarp/python-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "192e8c09d341981a3043383ab660aa04ba22dc83c483aaf0d6cd4d7fe3b33c94"
+  },
+  {
+    "name": "Cappuccino",
+    "url": "https://github.com/GML-FMGroup/cappuccino",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "planning",
+      "grounding"
+    ],
+    "summary": "Cappuccino is a pure-vision desktop GUI agent that plans and executes multi-step computer tasks from natural-language instructions.",
+    "verify_terms": [
+      "Cappuccino"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/GML-FMGroup/cappuccino/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "09849f4ab8f1fc3038f4b11054307bc2d6788e14ab4e1265376893d938b04a8b"
+  },
+  {
+    "name": "RobotGo",
+    "url": "https://github.com/go-vgo/robotgo",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding"
+    ],
+    "summary": "RobotGo is a native Go cross-platform desktop automation library for controlling the mouse, keyboard, bitmap screen capture, and window handles.",
+    "verify_terms": [
+      "RobotGo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/go-vgo/robotgo/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9cf3d8cac0c4d059a9f1d4a8fa4890efb00523da90ecba9b9f80e679079db291"
   }
 ]

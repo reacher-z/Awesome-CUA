@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "opencode-webmcp",
+    "url": "https://github.com/enihcam/opencode-webmcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "MCP bridge connecting OpenCode to Chromium's `document.modelContext` WebMCP API.",
+    "verify_terms": [
+      "opencode-webmcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/enihcam/opencode-webmcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "915ca06819158215251f42eb9dfc137cd540bb77d46197bfb6d689914f5bc391"
+  },
+  {
+    "name": "firefox-bidi-mcp",
+    "url": "https://github.com/Enne2/firefox-bidi-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Standalone Model Context Protocol server for controlling an already-open Firefox browser instance via the WebDriver BiDi protocol.",
+    "verify_terms": [
+      "firefox-bidi-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Enne2/firefox-bidi-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "87a491301f3ab282df012818ef68988069612c822a22376f59aa9432dcc22efb"
+  },
+  {
+    "name": "MCPSafari",
+    "url": "https://github.com/Epistates/MCPSafari",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native macOS Safari Model Context Protocol server allowing AI agents to inspect and control the user's logged-in Safari browser.",
+    "verify_terms": [
+      "MCPSafari"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Epistates/MCPSafari/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "26b74c0c95ca2bf7158e478e41099e2efdfca3811507b1c53c8c2138c927af4f"
+  },
+  {
+    "name": "Valk",
+    "url": "https://github.com/ercbot/valk",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "observability",
+      "sandbox"
+    ],
+    "summary": "Valk is a Python library and observable remote-desktop interface for programmatic mouse, keyboard, and screen control by AI agents.",
+    "verify_terms": [
+      "Valk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ercbot/valk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d4216fd5dcbca9fbdee03a3fc8bd7e1f91703d27c820fda9e060312b876bc169"
+  },
+  {
+    "name": "Witness",
+    "url": "https://github.com/EricFinland/witness",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "recording",
+      "web-navigation"
+    ],
+    "summary": "Local-first observability and execution trace recorder for AI browser agents.",
+    "verify_terms": [
+      "Witness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EricFinland/witness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "69cceaf3e29c09014b0639b120f960d61b50dd51eb74f468568597865e21ff9c"
   }
 ]

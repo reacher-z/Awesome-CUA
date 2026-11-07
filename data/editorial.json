@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "browser-harness-bidi",
+    "url": "https://github.com/AndrewDzzz/browser-harness-bidi",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "WebDriver BiDi-first browser automation harness connecting LLMs directly to live browsers with minimal dependencies.",
+    "verify_terms": [
+      "browser-harness-bidi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AndrewDzzz/browser-harness-bidi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "61de85a55a550e94253108f73711ca063c2206951f7ff8cef860b53a9c9a13a9"
+  },
+  {
+    "name": "Agentic Shopping Autopilot",
+    "url": "https://github.com/AndriiShramko/agentic-shopping-autopilot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "summary": "Open-source e-commerce execution layer enabling Claude Code and Codex agents to search, checkout, and pay with user-bounded guardrails.",
+    "verify_terms": [
+      "Agentic Shopping Autopilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AndriiShramko/agentic-shopping-autopilot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4638da0618cd770c18a82b2abda341a9a0c3bacd60a3ad1e48f996e42fcdec80"
+  },
+  {
+    "name": "DSH Qwen Web Bridge Plugin",
+    "url": "https://github.com/Andy294753951/dsh-plugin-qwen-web-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness plugin for driving an authenticated Qwen web session via local browser automation.",
+    "verify_terms": [
+      "dsh-plugin-qwen-web-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Andy294753951/dsh-plugin-qwen-web-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8c24176a467fc74f9d84fe0fae93e9b188a1a31680a103303c6ac354bcfbb7b5"
+  },
+  {
+    "name": "OpenComputer",
+    "url": "https://github.com/andykr1k/OpenComputer",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "OpenComputer is a local-first cross-platform computer-use agent for Linux, Windows, and macOS powered by local vision-language models.",
+    "verify_terms": [
+      "OpenComputer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/andykr1k/OpenComputer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "87f42ec3c683f15da77f92e207b898850b718a7c6f37dc273b106c4cc10728ee"
+  },
+  {
+    "name": "crowd-test-mcp",
+    "url": "https://github.com/anhhuyn411-alt/crowd-test-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Model Context Protocol server that dispatches concurrent AI virtual-user personas in real browsers to test websites.",
+    "verify_terms": [
+      "crowd-test-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anhhuyn411-alt/crowd-test-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df93d5ae5348ed2f9cfb94f52f0f797cabe34e4dd2df198865d9122005169d83"
   }
 ]

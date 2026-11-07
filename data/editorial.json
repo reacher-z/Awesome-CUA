@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "servo-agent",
+    "url": "https://github.com/parker-brown-family/servo-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Agent-controllable web browser built on the Rust Servo engine that distills live rendered DOM layouts into compact agent observations.",
+    "verify_terms": [
+      "servo-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/parker-brown-family/servo-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b3dfb936bdbcde9644e081d9fd55b46275d3231cb151e6beb5470b2cd5b0db13"
+  },
+  {
+    "name": "OpenSider",
+    "url": "https://github.com/parksben/opensider",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Browser side-panel extension that connects webpages to local Agent CLIs speaking the Agent Communication Protocol (ACP).",
+    "verify_terms": [
+      "OpenSider"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/parksben/opensider/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c26a15b5dfdb9a3394ac012550bce2e3a23d695ef83f0485279b41ddea54ca86"
+  },
+  {
+    "name": "dsh-browser-plus",
+    "url": "https://github.com/ParticleLight/dsh-browser-plus",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Visible, agent-driven Electron WebContents browser plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh-browser-plus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ParticleLight/dsh-browser-plus/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0360473ad8edf51985d0eacbe0948f625ac6d1d87a68c8e4650ccb57cad905bb"
+  },
+  {
+    "name": "macpilot-mcp",
+    "url": "https://github.com/passerby2049/macpilot-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "macOS Model Context Protocol server for capturing displays, reading Accessibility trees, and invoking native UI actions.",
+    "verify_terms": [
+      "macpilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/passerby2049/macpilot-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c679571230890994d207fb6ef7a9f59788a94f9a06d067f95f1fad321119d447"
+  },
+  {
+    "name": "LiteWebAgent",
+    "kind": "framework",
+    "url": "https://github.com/PathOnAI/LiteWebAgent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "memory",
+      "tool-integration"
+    ],
+    "scope": "core",
+    "summary": "Open-source VLM web-agent framework providing Playwright browser control, planning, workflow memory, tree search, and FastAPI/Vercel deployment.",
+    "verify_terms": [
+      "LiteWebAgent",
+      "2503.02950"
+    ],
+    "documented_by": [
+      "2503.02950"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "75f99d9388aee3e0b124ebdb5f33e08fbe8ec999ce1e9eba5cd71c21e60522e0",
+    "reviewed_at": "2026-11-02T17:00:00Z"
   }
 ]

@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Owl Browser Claude Code Plugin",
+    "url": "https://github.com/Olib-AI/owl-browser-claude-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Claude Code plugin for Owl Browser providing handle-indexed page reading and agent-native browser automation.",
+    "verify_terms": [
+      "owl-browser-claude-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Olib-AI/owl-browser-claude-plugin/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb851781f8d455c72a1a90f541c86c05d81de643638cb6f59729b7052b4a37fa"
+  },
+  {
+    "name": "Drover",
+    "url": "https://github.com/Om-Khode/drover",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and local CLI that lets AI agents drive the browser window the user already has open and signed into.",
+    "verify_terms": [
+      "Drover"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Om-Khode/drover/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0f1cd31132c6c7deb9940715b4b77ebf64593c33e72d0e790ae35a25014d74e1"
+  },
+  {
+    "name": "AgentP",
+    "url": "https://github.com/omerfeyzioglu/agentp-macos",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "efficiency",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "AgentP is a fast macOS computer-use agent where Gemini plans once and a local Jev System-One model executes steps via the Accessibility API.",
+    "verify_terms": [
+      "AgentP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/omerfeyzioglu/agentp-macos/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b6e4a7c16fdfcf10e9511d747327915cec16eb4d0a3bfd476ba52642285685d0"
+  },
+  {
+    "name": "chrome-agent-search",
+    "url": "https://github.com/ominiverdi/chrome-agent-search",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "efficiency"
+    ],
+    "summary": "Local-first Rust CLI for driving Chrome to perform web searches and extract clean Markdown page content.",
+    "verify_terms": [
+      "chrome-agent-search"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ominiverdi/chrome-agent-search/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5b870e448120b1aded86c648c78faf04bcfc5725c961a18f515f40fbf962d46a"
+  },
+  {
+    "name": "OneJev",
+    "url": "https://github.com/OmniJev/OneJev",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "OneJev is a multimodal System-One decision model based on Qwen that returns calibrated probabilities over typed action choices.",
+    "verify_terms": [
+      "OneJev"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OmniJev/OneJev/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "93f7ac68c4a05fa8e551d89f068d4546458b1bd4e7cd634eb5949bf2c3c6eb62"
   }
 ]

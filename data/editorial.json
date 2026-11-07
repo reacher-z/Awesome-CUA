@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Eric Task Master Skills Pack",
+    "url": "https://github.com/npcworkspace-cmyk/eric-task-master-task-pack-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Reusable browser automation workflow skills for the Eric Task Master Playwright runner.",
+    "verify_terms": [
+      "eric-task-master-task-pack-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/npcworkspace-cmyk/eric-task-master-task-pack-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4806896050876b4687664dafdeb384d2f71043ace4a94d8a0074378290a247d1"
+  },
+  {
+    "name": "web-agent-bench",
+    "url": "https://github.com/nsosio/web-agent-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "web-agent-bench compares browser-automation harnesses (Playwright MCP, agent-browser, Stagehand) on token usage, latency, and task completion.",
+    "verify_terms": [
+      "web-agent-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nsosio/web-agent-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5771611bda8ae442bf31a5a6f0498d21d4eb1509f83f15e0823b93fb0526172a"
+  },
+  {
+    "name": "Chrome MCP Docker",
+    "url": "https://github.com/null-runner/chrome-mcp-docker",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Dockerized Chrome DevTools MCP server with persistent browser profiles and container host-header routing for AI web agents.",
+    "verify_terms": [
+      "Chrome MCP Docker"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/null-runner/chrome-mcp-docker/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3e7de0cbf45c44ec48a28c7b25d7e598041328254cb984ef0a9934f831e22775"
+  },
+  {
+    "name": "AutoCodeRover",
+    "url": "https://github.com/nus-apr/auto-code-rover",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "tool-integration",
+      "planning",
+      "evaluation"
+    ],
+    "summary": "AutoCodeRover combines LLMs with AST-aware code search and spectrum-based fault localization for autonomous program repair.",
+    "verify_terms": [
+      "AutoCodeRover"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nus-apr/auto-code-rover/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f1d638718023c068c46aef46335f0843b22cd2a1cbeeee7cc8715e2cf5b742d"
+  },
+  {
+    "name": "libnut-core",
+    "url": "https://github.com/nut-tree/libnut-core",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation"
+    ],
+    "summary": "libnut-core provides native C/C++ cross-platform mouse, keyboard, and screen hooks underlying the nut.js desktop automation framework.",
+    "verify_terms": [
+      "building"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nut-tree/libnut-core/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f6429a249d3e27092c8a8727f5f2c001022bcef660c56621573824fc13c649a1"
   }
 ]

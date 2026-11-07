@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "jarvis-eyes-mcp",
+    "url": "https://github.com/harshil1502/jarvis-eyes-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "macOS-native Model Context Protocol server for low-latency desktop awareness combining Accessibility tree extraction and screenshots.",
+    "verify_terms": [
+      "jarvis-eyes-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/harshil1502/jarvis-eyes-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "215cc5d11c9121f3fe3d6d3293e09f61d0ad5556ce4b99b06b2cc235becbfc09"
+  },
+  {
+    "name": "Vision-MCP",
+    "url": "https://github.com/Haruhiyuki/vision-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Desktop application interaction MCP server combining visual UI element detection with mouse and keyboard automation.",
+    "verify_terms": [
+      "Vision-MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Haruhiyuki/vision-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c36f66761b6092976a26089b537603959d7016ffb67e77cbdf9bad40fac5a5f0"
+  },
+  {
+    "name": "desktop-touch-mcp",
+    "url": "https://github.com/Harusame64/desktop-touch-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Windows computer-use MCP server that drives desktop applications via semantic discover-then-act UI Automation targeting.",
+    "verify_terms": [
+      "desktop-touch-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Harusame64/desktop-touch-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "76edaf6af8f9f5ae4a727caad6342bbec45461e46cb5e880d6d564ab019dc4a4"
+  },
+  {
+    "name": "ECLAIR",
+    "url": "https://github.com/HazyResearch/eclair-agents",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "workflow",
+      "imitation-learning",
+      "automation"
+    ],
+    "summary": "ECLAIR automates enterprise web and desktop workflows from human demonstrations with ground-truth SOP validation and step-level error recovery.",
+    "verify_terms": [
+      "ECLAIR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HazyResearch/eclair-agents/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "231799d29201ec702d63db97bfd6e9767874b91e9333a39fff1f6b2f55e64f80"
+  },
+  {
+    "name": "skillproof",
+    "url": "https://github.com/hccccc01333/skillproof",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "skillproof records a human browser demonstration once and compiles it into a replayable agent skill paired with an explicit completion verifier.",
+    "verify_terms": [
+      "skillproof"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hccccc01333/skillproof/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "52ef723d6b87c4c2d39a147616bd76264f87333347efbad6abf9232a82b9e897"
   }
 ]

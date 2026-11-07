@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Tsaagan",
+    "url": "https://github.com/michaelolmos/tsaagan",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "self-reflection",
+      "automation",
+      "robustness"
+    ],
+    "summary": "Tsaagan is a verify-first browser control framework for AI agents that proves every click and form action succeeded before advancing.",
+    "verify_terms": [
+      "Tsaagan"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/michaelolmos/tsaagan/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "61b672e6e946c1e64534e0a21bad3bd37bf0185dda29965cc8c09fa9ba93dd9d"
+  },
+  {
+    "name": "AutoGen",
+    "url": "https://github.com/microsoft/autogen",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "AutoGen is Microsoft's multi-agent conversation framework including MultimodalWebSurfer and Magentic-One for web and desktop tasks.",
+    "verify_terms": [
+      "AutoGen"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/microsoft/autogen/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "60fa90168565070a61b0f28296ff590bd6853da2477141f5ed0775007c20d7f2"
+  },
+  {
+    "name": "Playwright CLI",
+    "url": "https://github.com/microsoft/playwright-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Playwright CLI provides a token-efficient command-line interface and skill set for coding and computer-use agents to automate web browsers.",
+    "verify_terms": [
+      "Playwright CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/microsoft/playwright-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0ebce0d1585577c7fd370f6e5f47133500f5d2f0871a4201519d11706f803746"
+  },
+  {
+    "name": "Semantic Kernel",
+    "url": "https://github.com/microsoft/semantic-kernel",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "memory",
+      "tool-integration"
+    ],
+    "summary": "Semantic Kernel is an enterprise SDK for orchestrating multi-agent workflows, plugins, and memory across Python, .NET, and Java.",
+    "verify_terms": [
+      "Semantic Kernel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/microsoft/semantic-kernel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "166fb81995eeeaf31b56883db3fae0617cc7dea0d7b4baf48a9ba6293c3bcd64"
+  },
+  {
+    "name": "Intent Relay WebMCP",
+    "url": "https://github.com/midorikuramochi/intent-relay",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "imitation-learning",
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Demonstration-driven intent translator that carries user workflow preferences across WebMCP-enabled websites.",
+    "verify_terms": [
+      "intent relay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/midorikuramochi/intent-relay/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "57e1eba79bf72dcf6c48b66ce7f2687c979d448cf5749c81c2a229f590019d57"
   }
 ]

@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Kiko Windows Voice Assistant",
+    "url": "https://github.com/blazecodeprakhar/kiko-windows-voice-assistant",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Native, 100% offline Windows desktop voice and GUI automation assistant.",
+    "verify_terms": [
+      "kiko-windows-voice-assistant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/blazecodeprakhar/kiko-windows-voice-assistant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e1fcc40dedbbe3dd63a7accc8cef8e5dd463e04f7480b18d974393509f775556"
+  },
+  {
+    "name": "Apprentice",
+    "url": "https://github.com/bluzername/apprentice",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "imitation-learning",
+      "human-in-the-loop",
+      "recording",
+      "automation"
+    ],
+    "summary": "Apprentice is a local-first macOS agent that observes repeated user routines across allowlisted apps and replays them with click-by-click approval.",
+    "verify_terms": [
+      "Apprentice"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bluzername/apprentice/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "83b30f3fe3f92d3732b2f94648f6a5e8507ce9e884906399254a687c922f932e"
+  },
+  {
+    "name": "Computer Use Data Collection",
+    "url": "https://github.com/bobcoi03/computeruse-data-collection",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "summary": "Computer Use Data Collection is a desktop recorder that captures synchronized screenshots, mouse clicks, and keystrokes for training CUA models.",
+    "verify_terms": [
+      "Computer Use Data Collection"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bobcoi03/computeruse-data-collection/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "95986589dfe4f3eb0d5723010db685ddec041823966060b47bf2ab1a79a0077e"
+  },
+  {
+    "name": "Vigil",
+    "url": "https://github.com/BofStudios/vigil",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Native C# Windows desktop AI assistant invoked by voice wake-word or hotkey to execute system and GUI tasks.",
+    "verify_terms": [
+      "Vigil"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BofStudios/vigil/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7b8daaf5a3b8c550f4e178beb6f57cab426715dd9262e7f273464edeb95e7eff"
+  },
+  {
+    "name": "Chrome Faithful",
+    "url": "https://github.com/bpc-oss/chrome-faithful",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MCP server and Manifest V3 extension for faithful control of a user's real, logged-in Chrome profiles.",
+    "verify_terms": [
+      "Chrome Faithful"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bpc-oss/chrome-faithful/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd5e7d36169bd32aaa451048acc2802203bd922d5419082c9b682456ed64e51b"
   }
 ]

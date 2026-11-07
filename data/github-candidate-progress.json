@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "1bf5aa019eb60b4101e41905122e6500086e52df0c6d7c5028f55dad606d6401",
-  "observation_snapshot_sha256": "bfa123f06009a12a8d3959d6dd07201b4b8bacc5fed88519583b2a47124ae40d",
+  "manifest_sha256": "8f910d4437e3e3119a723a4f000da5911dc88f4b6491f77e78605154df658ce0",
+  "observation_snapshot_sha256": "07db202362af92b4e68012e20b472223255243a888854d277f3999d3fbca1b61",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3721,11 +3721,48 @@
           }
         },
         "id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e"
+      },
+      {
+        "active_records": 2623,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8142239,
+            "sha256": "8aa9a2b28f12d1b6a484524abe8d790d34a94f31bab15e34a3947907e540bef2"
+          },
+          "catalog.jsonl": {
+            "bytes": 7561370,
+            "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "input_id": "7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "kind": "existing",
+        "last_attempt": 843,
+        "next_index": 151,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
         "input_id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
@@ -3733,7 +3770,7 @@
         "last_attempt": 838,
         "next_index": 145,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
@@ -79916,6 +79953,116 @@
         "run_id": "run:a3965e2d1de8ac6d9c5f75e2",
         "source_url": "https://api.github.com/repos/adam-bjtu/autocoa",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1123298120
+        ],
+        "finished_at": "2026-11-07T06:17:39.500200+00:00",
+        "id": "receipt:e2d4316e927810343498718048e83fc178b9009dec9485b208f55e6e70ecb73a",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 145,
+        "query_id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "99df087d09fcae15080018e6f18d03aff8313f199d8fc93fedf584943b04b84d",
+        "requested_at": "2026-11-07T06:17:39.215117+00:00",
+        "response_bytes": 5208,
+        "response_sha256": "cce30c7e7419ff58e358d8cb0e80fe76c98397dfeb8c5d3c429c7808125e134b",
+        "returned_count": 1,
+        "run_id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "source_url": "https://api.github.com/repos/adam-bjtu/guitestbench",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          14576836
+        ],
+        "finished_at": "2026-11-07T06:17:45.999729+00:00",
+        "id": "receipt:adef69b0da53eef4e189238581d93737a0bb02bf5b97e3fff10e4598dc036fec",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 146,
+        "query_id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "5aff900885616a38d897083935b670139d87669ae3933d4074559b2952b240f8",
+        "requested_at": "2026-11-07T06:17:45.726602+00:00",
+        "response_bytes": 5535,
+        "response_sha256": "9386a00189849d6400295cf17e931b05f688000b0e5ad2cc6bdabbba4ab4737d",
+        "returned_count": 1,
+        "run_id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "source_url": "https://api.github.com/repos/adrienverge/photocollage",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1175860730
+        ],
+        "finished_at": "2026-11-07T06:17:52.494150+00:00",
+        "id": "receipt:9de087b69be83edeec4cf64b1aa37684a0c95da02031324b9b0097b0df6da715",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 147,
+        "query_id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "2c73ac96e37cbdc8c0518faba038c17ef75ed70bfd899eac86c15b546ca5da3e",
+        "requested_at": "2026-11-07T06:17:52.238220+00:00",
+        "response_bytes": 6195,
+        "response_sha256": "27f344e58c1c58c6dd71b9e0572d4c80f317db850a64e74a390d08c9a04e2dea",
+        "returned_count": 1,
+        "run_id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "source_url": "https://api.github.com/repos/agent0ai/a0-install",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1193444812
+        ],
+        "finished_at": "2026-11-07T06:17:59.032607+00:00",
+        "id": "receipt:f75b6b4315bf4f16acf35798e3d617d2cbe0a899d4bd2d6dd2941ea55d7c2d88",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 148,
+        "query_id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d687a17c86de2f708025126eb016e01bdceb72b4374339e925325d27cd7eeeac",
+        "requested_at": "2026-11-07T06:17:58.749941+00:00",
+        "response_bytes": 6256,
+        "response_sha256": "52f56bab060210bebb66cde75ba6af3a5cb9becb556f8a6fca6bd14dc6813ee8",
+        "returned_count": 1,
+        "run_id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "source_url": "https://api.github.com/repos/agent0ai/space-agent",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          738623147
+        ],
+        "finished_at": "2026-11-07T06:18:05.532012+00:00",
+        "id": "receipt:719b64ced83b057e01e0ddc6f7cdc8f302c7cc538acb66324f25c3a389bfa470",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 150,
+        "query_id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "56219ac1051470eced31de37cf7a5b9400351f7688bc6047306cf76a5f0ed3b3",
+        "requested_at": "2026-11-07T06:18:05.261567+00:00",
+        "response_bytes": 6034,
+        "response_sha256": "55615737eb87606fd00bf6d8a0a1b92f399c8fb217674cc3c45c9414b0814055",
+        "returned_count": 1,
+        "run_id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "source_url": "https://api.github.com/repos/agentsea/agentd",
+        "status": 200
       }
     ],
     "runs": [
@@ -83036,9 +83183,40 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 195.216891012
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10209,
+        "before_unique_repositories": 10204,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T06:18:09.784043+00:00",
+        "id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "input_id": "7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "ed58b18cbc9245b8804ec8c5ab3003b6"
+        },
+        "started_at": "2026-11-07T06:17:27.131983+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 188.06406108200002
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "1bd2593ddd4beade79b2050cc549a7d8a6176ec47194c5223a133ae68eba2960"
+  "state_sha256": "446f018dce403f408ed09552ca7fbf90d0d73963650fae3aeb4dd86dace031eb"
 }

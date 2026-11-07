@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WebMirage",
+    "url": "https://github.com/MoonTea0416/WebMirage",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "grounding",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "WebMirage is an adversarial red-teaming framework that crafts visual perturbations to hijack web agents from grounding to browser execution.",
+    "verify_terms": [
+      "WebMirage"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MoonTea0416/WebMirage/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3797b6c10fc7feb6ee06bd82abbbcbd15bd1cf0be4a44dac7d572b8993aad1d1"
+  },
+  {
+    "name": "MCP-CodexGPT",
+    "url": "https://github.com/MosMotov/MCP-CodexGPT",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Cross-platform Model Context Protocol bridge for deterministic ChatGPT Web code and plan reviews from Codex or Claude Code.",
+    "verify_terms": [
+      "MCP-CodexGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MosMotov/MCP-CodexGPT/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6f2f0560d4688989bec1aee00085862229da06a070d4e2cb5e0b7d3826b51d2c"
+  },
+  {
+    "name": "ORBIT Local AI Agent",
+    "url": "https://github.com/mostafa-kermaninia/Orbit-Local-AI-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local-first Python voice and desktop automation agent powered by Whisper STT and Ollama/Qwen models.",
+    "verify_terms": [
+      "orbit-local-ai-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mostafa-kermaninia/Orbit-Local-AI-Agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d6fb87c42377b0b4d44a1d75be392174ce3ed185d153f83395670f2acb86d67a"
+  },
+  {
+    "name": "Optics Framework",
+    "url": "https://github.com/mozarkai/optics-framework",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "automation",
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "Optics Framework is a self-healing test automation engine for mobile, web, and TV interfaces with Vision/OCR fallback and an MCP server.",
+    "verify_terms": [
+      "Optics Framework"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mozarkai/optics-framework/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3df921d0524c768112f341380af22992d12849d61352f2f7c06e709194b5e165"
+  },
+  {
+    "name": "Pactora",
+    "url": "https://github.com/mrnetwork0001/Pactora",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "evaluation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP marketplace and verification harness featuring a closed-loop self-healing browser verifier.",
+    "verify_terms": [
+      "Pactora"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mrnetwork0001/Pactora/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b0cdab51b7fc58372232e315a96f579eb8a1bce4bedc28ef6e993a563763e34a"
   }
 ]

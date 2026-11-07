@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ClawMobile",
+    "url": "https://github.com/ClawMobile/ClawMobile",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "memory",
+      "workflow",
+      "automation"
+    ],
+    "summary": "ClawMobile is an Android agent runtime built on OpenClaw for controlling mobile apps, learning reusable skills, and executing device workflows.",
+    "verify_terms": [
+      "ClawMobile"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ClawMobile/ClawMobile/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a5925aadabf53719e05958d52add3cd39a3d40decda10ab6d31cefb44a1200d3"
+  },
+  {
+    "name": "Verisim",
+    "url": "https://github.com/clay-good/verisim",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "Verisim is a coverage certifier and adversarial evaluation suite for testing pre-execution guardrails on computer-use and tool agents.",
+    "verify_terms": [
+      "Verisim"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/clay-good/verisim/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c963d56a33d4cb19b430bf394f3bf985f98f9c175c5880f35897064320e066b4"
+  },
+  {
+    "name": "Clearcote Browser",
+    "url": "https://github.com/clearcotelabs/clearcote-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Open-source stealth Chromium browser with engine-level fingerprint spoofing designed as a drop-in runtime for AI web agents.",
+    "verify_terms": [
+      "Clearcote Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/clearcotelabs/clearcote-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c0bc4f381bb4d783a9e769598f8836a75bfb90d2aabe8720f5c534d9a0292921"
+  },
+  {
+    "name": "Clevrr Computer",
+    "url": "https://github.com/Clevrr-AI/Clevrr-Computer",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Clevrr Computer is a PyAutoGUI-based desktop automation agent that captures screenshots and executes mouse and keyboard actions from LLM plans.",
+    "verify_terms": [
+      "Clevrr Computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Clevrr-AI/Clevrr-Computer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dfbde066c83a90fbbc0dc5e3a21ef65e02b1e77ccef86cf3b9e48a7aa8497362"
+  },
+  {
+    "name": "WebMCP Description Benchmarks",
+    "url": "https://github.com/clouatre-labs/webmcp-description-benchmarks",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP Description Benchmarks evaluates how in-browser WebMCP tool schema descriptions affect agent tool selection and execution accuracy.",
+    "verify_terms": [
+      "WebMCP Description Benchmarks"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/clouatre-labs/webmcp-description-benchmarks/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "06d2fd02ae6aa06c4174d486c3a56d1adc3d3bbaa986c14ad6c25f8e771b6033"
   }
 ]

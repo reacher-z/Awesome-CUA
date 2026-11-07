@@ -86010,5 +86010,234 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "eyehands",
+    "url": "https://github.com/shameindemgg/eyehands",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Local HTTP server for Windows that provides low-latency UI Automation inspection and input execution for computer-use agents.",
+    "verify_terms": [
+      "eyehands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shameindemgg/eyehands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "005e9ffaec300e0f43c646dedc1a92b0ff225c891d093210ba794c44322ecf8e"
+  },
+  {
+    "name": "Surf MCP",
+    "url": "https://github.com/shanevcantwell/surf-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Surf MCP is a visual browser automation MCP server that lets AI agents click, type, and navigate webpages by describing visual elements.",
+    "verify_terms": [
+      "Surf MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shanevcantwell/surf-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4ef63470f7b017314de86e3653c6ff56ba9d3a8266858a70dcf5be15a38e2b3a"
+  },
+  {
+    "name": "Edge Agent Bridge",
+    "url": "https://github.com/shanewas/edge-agent-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Real-time AI agent bridge for Microsoft Edge operating over active authenticated browser sessions.",
+    "verify_terms": [
+      "Edge Agent Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shanewas/edge-agent-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dbc948739eaa0eee5d9e0dcc4576f5f0d4008c8e773026dbeb3bbc4df013a37d"
+  },
+  {
+    "name": "dsh-reasoning-bridge",
+    "url": "https://github.com/shangdi178/dsh-reasoning-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "DeepSeek Harness plugin that offloads complex reasoning steps to logged-in web AI sessions (ChatGPT, Claude, Gemini) via browser control.",
+    "verify_terms": [
+      "dsh-reasoning-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shangdi178/dsh-reasoning-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a61d9a09674811766b476a85836c52123b7c9b8de2423d64feb5ff16993ace7"
+  },
+  {
+    "name": "SiteWarden",
+    "url": "https://github.com/Shantodotdev/sitewarden",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "Autonomous, lightweight browser smoke-testing daemon written in Rust for continuous website verification.",
+    "verify_terms": [
+      "SiteWarden"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Shantodotdev/sitewarden/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f47afa746269369d3635fbda076014f5a72dfa925778e9e38ee2407fa074f4b6"
+  },
+  {
+    "name": "ASIL (Agent-Software Interaction Layer)",
+    "url": "https://github.com/sharryXR/ASIL",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "ASIL replaces screenshot-and-click loops with structured application state observations and semantic action interfaces for CUA.",
+    "verify_terms": [
+      "ASIL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sharryXR/ASIL/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3ef28636812141a56a170c55c758eeb4affb0a49706b4ce200f643f9f3409adc",
+    "documented_by": [
+      "2608.26991"
+    ]
+  },
+  {
+    "name": "AI-Player",
+    "url": "https://github.com/shasankp000/AI-Player",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "action-prediction",
+      "memory"
+    ],
+    "summary": "AI-Player is a Minecraft Fabric mod that embeds an LLM/VLM-driven autonomous second player capable of navigation, combat, and crafting.",
+    "verify_terms": [
+      "AI-Player"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shasankp000/AI-Player/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "42bf6c7bba2f513d3f48d34e0b4ee05e07cd46f5bad07771fd5d505b6073845e"
+  },
+  {
+    "name": "Computer Use with SLM (GRPO + OpenEnv)",
+    "url": "https://github.com/shayanamir0/computer-use-with-slm",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "efficiency",
+      "sandbox"
+    ],
+    "summary": "Fine-tunes small language models for computer-use navigation and GUI interaction using Group Relative Policy Optimization (GRPO) and OpenEnv.",
+    "verify_terms": [
+      "Computer Use with SLM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shayanamir0/computer-use-with-slm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ff5af1fe1da04c4a1751e619c87253141e559ccac328fe928456ce8dbd0c2f7a"
+  },
+  {
+    "name": "OpenVINO Autonomous GUI Agent",
+    "url": "https://github.com/Shehrozkashif/OpenVINO-Autonomous-GUI-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "efficiency",
+      "planning",
+      "grounding",
+      "self-reflection"
+    ],
+    "summary": "Fully local desktop GUI agent running five INT4 OpenVINO models for screen perception, planning, action execution, and step verification.",
+    "verify_terms": [
+      "OpenVINO Autonomous GUI Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Shehrozkashif/OpenVINO-Autonomous-GUI-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7f4e9495eff2c85ce3ac4e1594f21c16acf37dd49de492bbc684d1950431325d"
   }
 ]

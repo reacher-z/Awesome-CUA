@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Captr for macOS",
+    "url": "https://github.com/anaishowland/Captr_MacOS",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "summary": "Captr for macOS records synchronized screen video, keyboard/mouse input, DOM snapshots, and macOS accessibility trees for CUA datasets.",
+    "verify_terms": [
+      "Captr for macOS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anaishowland/Captr_MacOS/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "628da67812b7a6df8d690ba7b1057dffcead2ed6246713b51f4b50002c40a26b"
+  },
+  {
+    "name": "Captr for Windows",
+    "url": "https://github.com/anaishowland/Captr_Windows",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "data-generation"
+    ],
+    "summary": "Captr for Windows records synchronized screen video, mouse/keyboard events, DOM snapshots, and Windows accessibility trees for CUA datasets.",
+    "verify_terms": [
+      "Captr for Windows"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anaishowland/Captr_Windows/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "465dad6439fb22aa7e5930e72a94b2227de90e5aaad3a357bc42a0cede01a970"
+  },
+  {
+    "name": "PSAI Computer Use Dataset",
+    "url": "https://github.com/anaishowland/computeruse-data-psai",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "imitation-learning",
+      "recording"
+    ],
+    "summary": "PSAI Computer Use Dataset provides 3,167 human-computer interaction trajectories with synchronized screen video, input events, and DOM/AX snapshots.",
+    "verify_terms": [
+      "computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anaishowland/computeruse-data-psai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f5521f8dddc136cae9b84f7ae0f83a535f4611161e95ebc788e21147338140be"
+  },
+  {
+    "name": "LLM as a Judge for Computer-Use Agents",
+    "url": "https://github.com/anaishowland/llm-judge-psai",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "reward-models",
+      "web-navigation"
+    ],
+    "summary": "LLM-as-a-Judge evaluation harness for assessing computer-use agent trajectories across web browsing and desktop interaction tasks.",
+    "verify_terms": [
+      "LLM as a Judge for Computer-Use Agents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anaishowland/llm-judge-psai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd1fb61ec03112ae04b2a34d5a663715e664daf6326f9290009b318a42fd3c4c"
+  },
+  {
+    "name": "Neurosim",
+    "url": "https://github.com/anaishowland/neurosim",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "planning",
+      "workflow"
+    ],
+    "summary": "Neurosim is a Python framework for building, simulating, and evaluating multi-step AI and computer-use agent systems.",
+    "verify_terms": [
+      "Neurosim"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anaishowland/neurosim/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb6e494b6d5d302831f2de41c091d2829fd2421622491864f547496dce011f20"
   }
 ]

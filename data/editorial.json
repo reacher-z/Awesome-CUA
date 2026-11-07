@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Cursor Companion (MacScreenCompanion)",
+    "url": "https://github.com/pradyut-das/MacScreenCompanion",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "human-in-the-loop"
+    ],
+    "summary": "Native screen-aware macOS AI assistant invoked via hotkey to inspect and act on whatever is currently on screen.",
+    "verify_terms": [
+      "Cursor Companion"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pradyut-das/MacScreenCompanion/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "30e8d6064048de440f052254e81af045e9dc29d41a8cd89dccf212a73dd832ec"
+  },
+  {
+    "name": "Secure Browser MCP",
+    "url": "https://github.com/pranavgawasproject/secure-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Security-hardened browser-automation MCP server featuring persistent sessions, domain allowlists, and SSRF protection.",
+    "verify_terms": [
+      "Secure Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pranavgawasproject/secure-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5cf7d31da335f6fe46f392d6d72295013132b24d4cb234ac9873266329f86ccd"
+  },
+  {
+    "name": "browser-account-guard & flaky-browser-ui",
+    "url": "https://github.com/praticoeq-sudo/browser-account-guard",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "robustness",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Pair of Claude skills for protecting account credentials and stabilizing flaky UI interactions when agents drive web panels.",
+    "verify_terms": [
+      "browser-account-guard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/praticoeq-sudo/browser-account-guard/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2e37602819469080b8a0220bc44b6a4869fdffd95c750fecb70a0367843146a7"
+  },
+  {
+    "name": "Factifai",
+    "url": "https://github.com/presidio-oss/factif-ai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Factifai is an AI-driven browser and UI test automation framework that executes natural-language test cases with Playwright and vision models.",
+    "verify_terms": [
+      "Factifai"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/presidio-oss/factif-ai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d6751c7ea133779955ced5f23fda45443ef0c4b4d6043efb631a3e1849f74ed6"
+  },
+  {
+    "name": "Avenir-Web",
+    "url": "https://github.com/Princeton-AI2-Lab/Avenir-Web",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "imitation-learning",
+      "planning",
+      "memory"
+    ],
+    "summary": "Avenir-Web trains human-experience-imitating multimodal web agents with mixture-of-grounding experts and experience-tracking memory.",
+    "verify_terms": [
+      "Avenir-Web"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Princeton-AI2-Lab/Avenir-Web/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "76170fbacb4ca0e1aff28d9d8d89393eaf68417f01da8c9f18ca249c3eeb0815",
+    "documented_by": [
+      "2602.02468"
+    ]
   }
 ]

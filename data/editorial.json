@@ -86010,5 +86010,245 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Mosaic Desktop Automation",
+    "url": "https://github.com/Quill-00/mosaic-desktop-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "workflow",
+      "observability",
+      "automation"
+    ],
+    "summary": "Local-first Windows dashboard for scheduling, watching, and auditing desktop automation agents.",
+    "verify_terms": [
+      "Mosaic Desktop Automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Quill-00/mosaic-desktop-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "44772f08d10fe7eb6bd744af7c7374d76177b2ca984e479eb3c6243b1a411e77"
+  },
+  {
+    "name": "tail-aside",
+    "url": "https://github.com/quino0627/tail-aside",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "human-in-the-loop"
+    ],
+    "summary": "Remote mobile controller for monitoring and steering the Aside browser agent over Tailscale.",
+    "verify_terms": [
+      "tail-aside"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/quino0627/tail-aside/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cb6efa5f5a2554fdc8d20e3b2a6a2678609994cdb73b484398f3b690b9e97ea8"
+  },
+  {
+    "name": "Q1X Community Orchestrator",
+    "url": "https://github.com/Quoralinex/q1x-community-orchestrator",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "long-horizon",
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Provider-neutral, OS-neutral orchestration runtime for long-horizon desktop and browser agent workflows.",
+    "verify_terms": [
+      "Q1X Community Orchestrator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Quoralinex/q1x-community-orchestrator/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3cb71dc06063453245d6dc6298df98269335c9b036d4133d339898402a44352d"
+  },
+  {
+    "name": "Qwen3-VL / Qwen2.5-VL",
+    "url": "https://github.com/QwenLM/Qwen3-VL",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction",
+      "video"
+    ],
+    "summary": "Official repository for the Qwen-VL vision-language model series supporting native visual GUI grounding, computer use, and mobile navigation.",
+    "verify_terms": [
+      "Qwen3-VL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fc21106258c51e0b91a652eef12f5925becb146ea8b8c79a4251ac2e89a2f1ac",
+    "documented_by": [
+      "2502.13923"
+    ]
+  },
+  {
+    "name": "Agent Access",
+    "url": "https://github.com/r266-tech/agent-access",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Universal access layer that routes websites, apps, and repeated workflows into agent-native CLIs with CDP and GUI fallback.",
+    "verify_terms": [
+      "Agent Access"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/r266-tech/agent-access/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7de3c1238dd34abe3c4e45fc444f05154064ed714a1f90aa894569f3e6a8a421"
+  },
+  {
+    "name": "Computer Use (gVisor Cloud REPL)",
+    "url": "https://github.com/r33drichards/computer-use",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Provides a gVisor-isolated Linux desktop and Chromium container with persistent storage driven through a single JavaScript REPL MCP tool.",
+    "verify_terms": [
+      "Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/r33drichards/computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aacf41385b3fb304471167a7d362a0b75cf95c55e75e94e8448e297384d94a7e"
+  },
+  {
+    "name": "DXcam",
+    "url": "https://github.com/ra1nty/DXcam",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "DXcam is a high-frequency Python screen capture library for Windows using the Desktop Duplication API at up to 240Hz for GUI agents.",
+    "verify_terms": [
+      "DXcam"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ra1nty/DXcam/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df8454d23ad5ea183034d75e1ec281b20fa0d7c5538525cf4a2a3f1353608523"
+  },
+  {
+    "name": "InnerOS WebMCP",
+    "url": "https://github.com/Rafa-Innerchispa/inneros-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Capability-bounded WebMCP browser control surface for the InnerOS local AI runtime.",
+    "verify_terms": [
+      "InnerOS WebMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Rafa-Innerchispa/inneros-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "708a125f4833a3a229c6e75d9af36a2a6203c75e47a1ec9d9d944ab7128ddf3b"
+  },
+  {
+    "name": "DesktopAgentBench",
+    "url": "https://github.com/Raghava00001/DesktopAgentBench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "DesktopAgentBench is an agent-agnostic Windows benchmark evaluating desktop agent task reliability, recovery, and safety guardrails.",
+    "verify_terms": [
+      "DesktopAgentBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Raghava00001/DesktopAgentBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4ba24916f14a6b69cf54dae6208762c51d30169a63d9cc39758f0dfa73c6924d"
   }
 ]

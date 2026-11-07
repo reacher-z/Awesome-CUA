@@ -86010,5 +86010,224 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "outlive",
+    "url": "https://github.com/Sy-D/outlive",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "long-horizon",
+      "state-tracking",
+      "web-navigation",
+      "robustness"
+    ],
+    "summary": "Checkpoints and resumes long-running Solari cloud browser sessions across 10-minute container timeouts.",
+    "verify_terms": [
+      "outlive"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Sy-D/outlive/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "34dd7ae36b85ccb3e34db93922e704b6457e33f88ba28eb430a6f01fa2b4a4cb"
+  },
+  {
+    "name": "Chrome MCP Server (18 Tools)",
+    "url": "https://github.com/syedazharmbnr1/chrome-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Node.js Model Context Protocol server providing 18 tools for Chrome browser navigation, DOM interaction, and screenshot capture.",
+    "verify_terms": [
+      "Chrome MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/syedazharmbnr1/chrome-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e738ce72ea32110250d30edc5a152149b0e0fcdb299c0b26eb9d1f83abb58d53"
+  },
+  {
+    "name": "macOS Computer Use MCP Server (33 Tools)",
+    "url": "https://github.com/syedazharmbnr1/computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Python Model Context Protocol server exposing 33 tools for macOS screen capture, Accessibility inspection, and input control.",
+    "verify_terms": [
+      "macOS Computer Use MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/syedazharmbnr1/computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c88de4235db7276865f8798d2874f750b6f2a7db68c77eaf14e305be9058b645"
+  },
+  {
+    "name": "browser-handoff",
+    "url": "https://github.com/synacktraa/browser-handoff",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "web-navigation",
+      "safety-security"
+    ],
+    "summary": "Human-in-the-loop handoff utility for browser-use agents that pauses automation for manual user intervention and resumes seamlessly.",
+    "verify_terms": [
+      "browser-handoff"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/synacktraa/browser-handoff/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0fb60d22a646d9c223268d831c8b5978893a52199fbc3934c6a49ec142ec7665"
+  },
+  {
+    "name": "opencode-mobile-use",
+    "url": "https://github.com/system1970/opencode-mobile-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "OpenCode plugin for controlling Android devices with a live phone screen in the TUI sidebar and resilient UI hierarchy dumps.",
+    "verify_terms": [
+      "opencode-mobile-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/system1970/opencode-mobile-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cc90475df31c463748f46bedc8a3c14b530babd4753c61b68854491f655e8d97"
+  },
+  {
+    "name": "MCP Session Bridge",
+    "url": "https://github.com/t3ratech/mcp-session-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server that drives the browser session the user is already signed into.",
+    "verify_terms": [
+      "MCP Session Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/t3ratech/mcp-session-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "402adaca93b81f163c933c9b5d5d458fdd7421d49e52b9fef3e5cc347ce262c5"
+  },
+  {
+    "name": "dsh-tabbit",
+    "url": "https://github.com/Tabbit-Browser/dsh-tabbit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Official Tabbit Browser plugin for DeepSeek Harness enabling AI agents to control Tabbit browser tabs and workspaces.",
+    "verify_terms": [
+      "dsh-tabbit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Tabbit-Browser/dsh-tabbit/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "48f3a42cd7541f0445ba54e9fa27663292f5991663b3d9bef5fb03122c8a2bed"
+  },
+  {
+    "name": "Tabtii BrowserMCP",
+    "url": "https://github.com/Tabtii/browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Zero-dependency Chrome MCP server exposing 35 browser control tools to Claude and MCP clients.",
+    "verify_terms": [
+      "browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Tabtii/browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "03ea27107a54f15828bb666e1ed4f247b67bf134ae5ffdc0acc885a4dc3a988c"
+  },
+  {
+    "name": "DroidLume Agent Control",
+    "url": "https://github.com/tageecc/droidlume-agent-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "npm-distributed CLI, Model Context Protocol server, and standalone Android companion app for AI phone control.",
+    "verify_terms": [
+      "DroidLume Agent Control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tageecc/droidlume-agent-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0a2ffab8b65ead1c296b003a51d2827c3dc9bc8ea33eccddb0f5c85dfdc59e6e"
   }
 ]

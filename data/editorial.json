@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "GenPark SPA Settlement Waiter Skill",
+    "url": "https://github.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "state-tracking",
+      "robustness",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Agent skill for awaiting single-page-application network idle and DOM mutation settlement before acting.",
+    "verify_terms": [
+      "genpark-spa-network-idle-settlement-waiter-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e8f138db6dad0da7fcf81c1042a1be73edaead803b18fdb89d03b7043995b51b"
+  },
+  {
+    "name": "GenPark Viewport Occlusion Resolver Skill",
+    "url": "https://github.com/Alpha-Park/genpark-visual-viewport-element-occlusion-resolver-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "robustness",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Agent skill that detects viewport element occlusion and dismisses blocking modals or cookie banners before clicking.",
+    "verify_terms": [
+      "genpark-visual-viewport-element-occlusion-resolver-skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Alpha-Park/genpark-visual-viewport-element-occlusion-resolver-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3e57646cb652dc245c145537f00347664bd2d10551de61e44905de9e5ec76b7a"
+  },
+  {
+    "name": "Operant",
+    "url": "https://github.com/AlpharomeroJL/operant",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "safety-security",
+      "workflow"
+    ],
+    "summary": "Local-first desktop agent runtime that compiles exploratory AI trajectories into deterministic, invariant-gated skills.",
+    "verify_terms": [
+      "Operant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AlpharomeroJL/operant/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a378d035106042913c3e02c11d592370e5709f62d4647b2245da05dae4634d19"
+  },
+  {
+    "name": "Altairpaca DSH Computer Use for Windows",
+    "url": "https://github.com/Altairpaca/dsh-computer-use-windows",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows computer-use plugin for DeepSeek Harness providing window-bound screenshots, OCR grounding, and verified clicks.",
+    "verify_terms": [
+      "computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Altairpaca/dsh-computer-use-windows/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dab7b073ba1eeeebef4c91e88e1bec1d479897034189604e4bb6d730a9377c0d"
+  },
+  {
+    "name": "BRYES (Brain-Eyes)",
+    "url": "https://github.com/alvseek/BRYES",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "BRYES decouples a high-level reasoning planner ('Brain') from swappable visual perception and grounding backends ('Eyes') for computer use.",
+    "verify_terms": [
+      "BRYES"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alvseek/BRYES/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d181df6daf6467607aee3cb196dc2805d5164e5fa26150406c09afb8b97df909"
   }
 ]

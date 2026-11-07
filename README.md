@@ -279,3 +279,19 @@ The [source registry](data/sources.json) credits the community collections and s
 Original repository code and annotations use the [MIT license](LICENSE). Linked resources retain their own terms.
 
 To cite the catalog, use [CITATION.cff](CITATION.cff) or GitHub's "Cite this repository" button. The data changes with every scan, so pin the exact version you used. Each `v*` tag has a [data release](https://github.com/reacher-z/Awesome-CUA/releases) with versioned downloads built from the tagged commit: the catalog as JSONL, JSON and SQLite, the coverage ledger, topic and profile exports, and their `SHA256SUMS`. Cite the release tag, or record the commit from `git rev-parse HEAD` in your clone, or link files at that commit, such as `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`. [Cutting a release](docs/maintenance.md#versioned-data-releases).
+
+<!-- STAR_HISTORY:START -->
+
+## Star History
+
+<a href="https://www.star-history.com/#reacher-z/Awesome-CUA&amp;Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date&amp;theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date">
+    <img src="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date" alt="GitHub star count over time for Awesome-CUA" width="100%">
+  </picture>
+</a>
+
+[View Awesome-CUA on Star History](https://www.star-history.com/#reacher-z/Awesome-CUA&Date)
+
+<!-- STAR_HISTORY:END -->

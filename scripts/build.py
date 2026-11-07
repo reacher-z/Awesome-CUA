@@ -5,6 +5,7 @@ import collections
 import copy
 import datetime as dt
 import hashlib
+from html import escape
 import json
 from pathlib import Path
 import re
@@ -827,6 +828,8 @@ README_TEXT = {
         "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
+        "star_history_heading": "Star History", "star_history_alt": "GitHub star count over time for Awesome-CUA",
+        "star_history_link": "View Awesome-CUA on Star History",
         "stats": ("**{curated:,} curated resources** · **{papers:,} reviewed papers and surveys** · **{sources} discovery documents**\n\n"
             "Evidence through `{as_of}`. **{metadata:,} records awaiting review** have verified bibliographic metadata, "
             "and **{unindexed:,} discovered candidates** await resolution. "
@@ -842,11 +845,31 @@ README_TEXT = {
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
             "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
+        "star_history_heading": "Star 历史", "star_history_alt": "Awesome-CUA 的 GitHub Star 数量随时间变化趋势",
+        "star_history_link": "在 Star History 查看 Awesome-CUA 的 Star 历史",
         "stats": ("**{curated:,} 条已审阅资源** · **{papers:,} 篇已审阅论文与综述** · **{sources} 个发现来源文档**\n\n"
             "证据截至 `{as_of}`。**{metadata:,} 条待审阅记录**已完成书目核实；"
             "**{unindexed:,} 个已发现候选**尚待处理。"
             "{excluded:,} 条范围排除记录在归档中保留原始元数据。")},
 }
+
+
+def star_history(lang="en"):
+    """Hosted Star History chart with theme-specific sources and a text link."""
+    text = README_TEXT[lang]
+    chart = "https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&type=Date"
+    link = "https://www.star-history.com/#reacher-z/Awesome-CUA&Date"
+    return "\n\n" + "\n".join([
+        f"## {text['star_history_heading']}", "",
+        f'<a href="{escape(link)}">',
+        '  <picture>',
+        f'    <source media="(prefers-color-scheme: dark)" srcset="{escape(chart + "&theme=dark")}">',
+        f'    <source media="(prefers-color-scheme: light)" srcset="{escape(chart)}">',
+        f'    <img src="{escape(chart)}" alt="{escape(text["star_history_alt"])}" width="100%">',
+        '  </picture>',
+        '</a>', "",
+        f"[{text['star_history_link']}]({link})", "",
+    ]) + "\n"
 
 
 def stats_block(report, lang="en", reviewed_papers=0):
@@ -1031,7 +1054,7 @@ def build(args):
         path = ROOT / filename
         if path.exists():
             blocks = {"STATS": stats_block(report, lang, reviewed_papers), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
-                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
+                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang), "STAR_HISTORY": star_history(lang)}
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():
                 # A function replacement keeps backslashes in generated Markdown literal.

@@ -280,3 +280,19 @@ node --test tests/web.test.mjs
 本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款。
 
 引用本目录时，请使用 [CITATION.cff](CITATION.cff) 或 GitHub 的“Cite this repository”按钮。数据随每次扫描更新，请固定所用的确切版本。每个 `v*` 标签都有一个[数据发布](https://github.com/reacher-z/Awesome-CUA/releases)，提供由该标签所指提交构建的版本化下载：JSONL、JSON 和 SQLite 格式的目录、覆盖台账、主题与规格导出，以及它们的 `SHA256SUMS`。请引用发布标签，或在克隆中用 `git rev-parse HEAD` 记录提交，或链接该提交下的文件，例如 `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`。[如何发布版本](docs/maintenance.md#versioned-data-releases)。
+
+<!-- STAR_HISTORY:START -->
+
+## Star 历史
+
+<a href="https://www.star-history.com/#reacher-z/Awesome-CUA&amp;Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date&amp;theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date">
+    <img src="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date" alt="Awesome-CUA 的 GitHub Star 数量随时间变化趋势" width="100%">
+  </picture>
+</a>
+
+[在 Star History 查看 Awesome-CUA 的 Star 历史](https://www.star-history.com/#reacher-z/Awesome-CUA&Date)
+
+<!-- STAR_HISTORY:END -->

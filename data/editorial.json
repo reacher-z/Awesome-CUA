@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Two-Layer macOS GUI Agent",
+    "url": "https://github.com/eauchs/gui-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Two-layer macOS GUI navigation agent that separates VLM screen perception from strategic LLM action planning.",
+    "verify_terms": [
+      "gui-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/eauchs/gui-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5adb488ea9b08f3fe0fdaf4f84411b83fa42b98d613926696798a46518c23b5f"
+  },
+  {
+    "name": "ProofPack",
+    "url": "https://github.com/ebt55/proofpack",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "observability",
+      "safety-security",
+      "human-in-the-loop",
+      "evaluation"
+    ],
+    "summary": "Pre-approval review and verification runtime where every agent finding and UI state is backed by a SHA-hashed capture.",
+    "verify_terms": [
+      "ProofPack"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ebt55/proofpack/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4702e73c6142b458e00e753264401bf4883e91595acbf9efd6b89b381d6c2f6a"
+  },
+  {
+    "name": "Touchline",
+    "url": "https://github.com/edenbuilds/touchline",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "screen-understanding",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Multi-agent browser squad for evidence-led website inspection and frontend reconstruction.",
+    "verify_terms": [
+      "Touchline"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/edenbuilds/touchline/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b3d0e200926a32ffd0e7a83a8144ec542adb449343e062bee742b50ac112dac"
+  },
+  {
+    "name": "ReactSentinel",
+    "url": "https://github.com/edgarbnt/ReactSentinel",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Model Context Protocol server that lets AI agents inspect live React component state, replay interactions, and validate UI fixes in the browser.",
+    "verify_terms": [
+      "react"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/edgarbnt/ReactSentinel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bba8f7f442e94b046e7bcb8ff1d963ed6f222a82bb79da2556520a9ed04da454"
+  },
+  {
+    "name": "ClawPilot Command Center",
+    "url": "https://github.com/EdgeAgent/clawpilot-command-center",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "observability",
+      "tool-integration"
+    ],
+    "summary": "Chrome Manifest V3 command center for OpenClaw agents to capture page context, review planned actions, and monitor runs.",
+    "verify_terms": [
+      "ClawPilot Command Center"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EdgeAgent/clawpilot-command-center/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fdacf181aca34d764860d122dd5329e5288e3ca7ab3549e8ce5f949b556586ac"
   }
 ]

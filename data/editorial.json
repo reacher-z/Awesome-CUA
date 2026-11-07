@@ -86010,5 +86010,236 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Oh-Matilda",
+    "url": "https://github.com/Tahsine/oh-matilda",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "Oh-Matilda is a Tauri v2 on-device Android AI agent that autonomously opens apps and executes taps, text entry, and scrolling without ADB.",
+    "verify_terms": [
+      "Oh-Matilda"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Tahsine/oh-matilda/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f6b857615a9ae78f08bdfd45498defe706b336d8534d1de284eebb7ec2f71183"
+  },
+  {
+    "name": "Tailorec Browser Orchestrator",
+    "url": "https://github.com/Tailorec/tailorec-browser-orch",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Run-isolated browser orchestration service that converts webpages into semantic snapshots with stable element references.",
+    "verify_terms": [
+      "Tailorec Browser Orchestrator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Tailorec/tailorec-browser-orch/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4c64c29ff2a8f35261132fecfdfbfde38b35c24863b3911781e6d30248caae9b"
+  },
+  {
+    "name": "AIVANE",
+    "url": "https://github.com/taiyouqu/aivane",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "AIVANE is a cross-platform GUI automation assistant that combines YOLO icon detection, OCR, and multimodal LLMs for desktop control.",
+    "verify_terms": [
+      "AIVANE"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/taiyouqu/aivane/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "612b2d6efeff566fc9c08d32e743f6180dbbe12bb8119ee8924f23bba423a324"
+  },
+  {
+    "name": "linux-computer-use",
+    "url": "https://github.com/tak-uukti/linux-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Linux/X11 computer-use toolkit and MCP server combining AT-SPI semantic trees, screenshots, and input control for coding agents.",
+    "verify_terms": [
+      "linux-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tak-uukti/linux-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "213b7d07423fcf72d28685f9a05721ccfd14ff378561f5c188039abf64644dc5"
+  },
+  {
+    "name": "MCP Desktop Automation",
+    "url": "https://github.com/tanob/mcp-desktop-automation",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MCP Desktop Automation is a Model Context Protocol server using RobotJS to provide screen capture, mouse movement, and keyboard input to LLMs.",
+    "verify_terms": [
+      "MCP Desktop Automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tanob/mcp-desktop-automation/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cd498d9c06f14c82ea204d9494d9e1fc2a112a5474cc6ce82f843e85fe13c643"
+  },
+  {
+    "name": "Browser Automation Benchmark (Python vs Rust)",
+    "url": "https://github.com/TashonBraganca/browser-automation-benchmark",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Benchmarks Python Playwright, Rust playwright-rs, and chromiumoxide on headless browser startup, navigation, and screenshot latency.",
+    "verify_terms": [
+      "python"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TashonBraganca/browser-automation-benchmark/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "21a01bd842d92a17985bb684c17c07b000020f84c9a33f52115c90d0f10fa3fd"
+  },
+  {
+    "name": "BLAXIN",
+    "url": "https://github.com/tasinxxx/Blaxin",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "self-reflection",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Open-source AI desktop agent for Linux that plans, executes, and verifies GUI and shell workflows.",
+    "verify_terms": [
+      "BLAXIN"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tasinxxx/Blaxin/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f4ba5c561a6b2d8d1a0d5d6be437ef330e47fded06a0088c159b0985cc568829"
+  },
+  {
+    "name": "taskproof",
+    "url": "https://github.com/taskproof/taskproof",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "taskproof is an open-source CI harness that tests whether real AI computer-use and browser agents can complete tasks on live websites.",
+    "verify_terms": [
+      "taskproof"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/taskproof/taskproof/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eede2b1fb3647ae0aafc67750afb49ef2587a08f6abbf2a2f26746efac22348c"
+  },
+  {
+    "name": "done-or-not",
+    "url": "https://github.com/tatra-labs/done-or-not",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "reward-models",
+      "self-reflection"
+    ],
+    "summary": "done-or-not is an offline benchmark of 910 computer-use trajectories across three simulated computers for grading completion verifiers.",
+    "verify_terms": [
+      "done-or-not"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tatra-labs/done-or-not/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5bd1dcd3a555152a6181d22764e2e81452734a036688be653c62997812b3834c",
+    "documented_by": [
+      "2610.40578"
+    ]
   }
 ]

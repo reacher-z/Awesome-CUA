@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DSH Patrol",
+    "url": "https://github.com/qigelunbiya/DSH-Patrol",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "observability",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Teach-once, patrol-repeatedly website inspection and monitoring plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "DSH Patrol"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qigelunbiya/DSH-Patrol/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aa87f6584c0892145b55007e1bf450c308582437e1d85550618e694f9acb8ce3"
+  },
+  {
+    "name": "Qirabot",
+    "url": "https://github.com/qirabot/qirabot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Qirabot is a pure-vision multimodal GUI automation framework for operating browsers, mobile apps, desktops, and games without DOM selectors.",
+    "verify_terms": [
+      "Qirabot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qirabot/qirabot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "627030ca1778201d545809155cb0ad2d35aa6788d59cc2cc2b770522a96856d0"
+  },
+  {
+    "name": "Job Pilot 2027 (秋招雷达 2027)",
+    "url": "https://github.com/qiulingzhu809-sudo/job-pilot-2027",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Local browser-assisted campus recruiting workbench that manages candidate profiles and autofills enterprise job portals.",
+    "verify_terms": [
+      "job-pilot-2027"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qiulingzhu809-sudo/job-pilot-2027/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c8747fbb905cda7424b68dc65d3f522c75d6e2da4472538f7f76e1f6bc080413"
+  },
+  {
+    "name": "ChatGPT Web Bridge",
+    "url": "https://github.com/QiuweiLiu/chatgpt-web-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Attach-only Chrome DevTools Protocol bridge for bounded research delegation to a logged-in ChatGPT Web tab.",
+    "verify_terms": [
+      "chatgpt-web-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/QiuweiLiu/chatgpt-web-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1d1a3b1ad8c6ce9ccc72120715264ab8556207bac6aaf6a0383a0709e75775d6"
+  },
+  {
+    "name": "MobilePilot Runtime",
+    "url": "https://github.com/qizhanggu/mobilepilot-runtime",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "self-reflection",
+      "observability",
+      "robustness"
+    ],
+    "summary": "MobilePilot is an auditable Android GUI agent runtime with structured action verification, on-demand UI trees, and bounded error recovery.",
+    "verify_terms": [
+      "MobilePilot Runtime"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qizhanggu/mobilepilot-runtime/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e03848aaa554ea674613e7ea5381097817787169798b0df8608960cda296d0fd"
   }
 ]

@@ -86010,5 +86010,208 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "UI Image to Code Studio",
+    "url": "https://github.com/zwq-top/ui-image-to-code-studio",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Codex skill for converting UI screenshots and live websites into React, Vue, or HTML code with visual browser verification.",
+    "verify_terms": [
+      "UI Image to Code Studio"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zwq-top/ui-image-to-code-studio/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "30045f198e0703fda0b160ee59a6790e695f977a409a9f35f1b15f19aaaca49c"
+  },
+  {
+    "name": "WinAgent-Lite",
+    "url": "https://github.com/ZYYDI1959/winagent-lite",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "WinAgent-Lite is a local vision-driven Windows GUI agent and MCP server with a reproducible desktop evaluation suite.",
+    "verify_terms": [
+      "WinAgent-Lite"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZYYDI1959/winagent-lite/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3972dc812e7dce4df21c0ec8ac220f6d515969792089ceb0d7688a30114a2dc7"
+  },
+  {
+    "name": "WinDeskGround",
+    "url": "https://github.com/ZZZhr-1/WinDeskGround",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "WinDeskGround benchmarks desktop GUI grounding in multi-window Windows environments with controlled occlusion, scaling, and interference levels.",
+    "verify_terms": [
+      "WinDeskGround"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZZZhr-1/WinDeskGround/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0a4885bd95df160629314754e9ff6878df07c584d8e2e80fd18361e00c07c563"
+  },
+  {
+    "name": "VisualWebBench dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/visualwebbench/VisualWebBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "screen-understanding",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Hugging Face dataset release for VisualWebBench spanning seven visual web understanding, OCR, element grounding, and action prediction tasks.",
+    "verify_terms": [
+      "visualwebbench/VisualWebBench"
+    ],
+    "component_of": "https://github.com/VisualWebBench/VisualWebBench",
+    "documented_by": [
+      "2404.05955"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "5e9a830858c10166213bd4c7c360ff93d722fed198910736116f0b3f2f4b4a85",
+    "reviewed_at": "2026-11-02T17:00:00Z"
+  },
+  {
+    "name": "AgentRewardBench dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/McGill-NLP/agent-reward-bench",
+    "environments": [
+      "web",
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "evaluation",
+      "reward-models",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Hugging Face dataset release for AgentRewardBench containing trajectory evaluation instances across WebArena, VisualWebArena, AssistantBench, WorkArena, and OSWorld.",
+    "verify_terms": [
+      "McGill-NLP/agent-reward-bench"
+    ],
+    "component_of": "https://github.com/McGill-NLP/agent-reward-bench",
+    "documented_by": [
+      "2504.08942"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "20c910fad3ad45a0c8c39b182c53632a821d3b6b546278bea6b7a78fbcb3f6cb",
+    "reviewed_at": "2026-11-02T17:00:00Z"
+  },
+  {
+    "name": "AndroidDaily",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/stepfun-ai/AndroidDaily",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "action-prediction"
+    ],
+    "scope": "core",
+    "summary": "Android GUI benchmark dataset from Step-GUI containing 3,146 static action evaluation items and 235 end-to-end daily mobile tasks.",
+    "verify_terms": [
+      "stepfun-ai/AndroidDaily"
+    ],
+    "documented_by": [
+      "2512.15431"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "ad3e1fdecd148dbe711b644290d61e7462e9f17ff629220949f3f07178eb8e10",
+    "reviewed_at": "2026-11-02T17:00:00Z"
+  },
+  {
+    "name": "Plan-and-Act Actor 70B",
+    "kind": "model",
+    "url": "https://huggingface.co/xTRam1/plan-and-act-actor-70b",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "action-prediction",
+      "web-navigation"
+    ],
+    "scope": "core",
+    "summary": "Llama-3.3-70B-Instruct-based executor checkpoint from the Plan-and-Act web-agent framework that translates high-level plans into browser actions.",
+    "verify_terms": [
+      "xTRam1/plan-and-act-actor-70b"
+    ],
+    "family_url": "https://github.com/SqueezeAILab/plan-and-act",
+    "documented_by": [
+      "2503.09572"
+    ],
+    "editorial_reviewed": true,
+    "details": {
+      "artifact_type": "model-checkpoint"
+    },
+    "reviewed_sha256": "a68db8fbf587c35e17526b0fbeb34649e6a03611e61d8be2f4cd36756e7356dd",
+    "reviewed_at": "2026-11-02T17:00:00Z"
+  },
+  {
+    "name": "Holo4 Trajectories",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Hcompany/trajectories",
+    "environments": [
+      "web",
+      "desktop",
+      "android",
+      "cross-platform"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "data-generation"
+    ],
+    "scope": "core",
+    "summary": "Dataset of 7,366 computer-use agent execution trajectories from Holo4 27B and Holo4 35B-A3B, recording step-level reasoning, actions, tool results, and screenshots.",
+    "verify_terms": [
+      "Hcompany/trajectories"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "147ea4deaadb2d9961302d2a15893d16cc90b40aa41d911ffe2dc2af794fe05c",
+    "reviewed_at": "2026-11-02T17:00:00Z"
   }
 ]

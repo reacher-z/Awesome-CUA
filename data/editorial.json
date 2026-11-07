@@ -86010,5 +86010,209 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Crawl4AI",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "Crawl4AI is an open-source browser automation and web crawling toolkit that converts dynamic webpages into structured Markdown and JSON for agents.",
+    "verify_terms": [
+      "Crawl4AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/unclecode/crawl4ai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cbe8e3075935cf988a04b48c799ef7f1aef05665260b391c8cd9a42b5a4ae7ec"
+  },
+  {
+    "name": "Understudy",
+    "url": "https://github.com/understudy-ai/understudy",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Understudy observes human desktop and browser demonstrations and compiles them into parameterized, replayable computer-use skills.",
+    "verify_terms": [
+      "Understudy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/understudy-ai/understudy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ab8a166c98b01bacd1b9b3c349f1e3dc178506390f9cfbe097fadcf0dc965280"
+  },
+  {
+    "name": "Undetectable Chromium CDP MCP",
+    "url": "https://github.com/undetectable-io/chromium-cdp-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server by Undetectable.io that drives Chrome, Edge, Brave, Opera, and Vivaldi browsers over CDP.",
+    "verify_terms": [
+      "chromium-cdp-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/undetectable-io/chromium-cdp-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "36a32413557edac7d027c279c145e25317901afd73c55e45e6e2a528c88ebf91"
+  },
+  {
+    "name": "Undetectable Browser MCP Server",
+    "url": "https://github.com/undetectable-io/Undetectable-browser-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Official TypeScript Model Context Protocol server wrapping the Undetectable Browser local API for profile management and web automation.",
+    "verify_terms": [
+      "undetectable-browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/undetectable-io/Undetectable-browser-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d28463e3b9ed69ef1138ce9749a24316467688fe61b10dd48ff4a36d2368686a"
+  },
+  {
+    "name": "rs_peekaboo",
+    "url": "https://github.com/undivisible/rs_peekaboo",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Rust-native cross-platform computer-use CLI and library for desktop window inspection, screenshots, and input automation.",
+    "verify_terms": [
+      "rs_peekaboo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/undivisible/rs_peekaboo/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a23d725498fa5425085e573799e2a682c4dece50f4e77a3d8dedce91ac094e40"
+  },
+  {
+    "name": "UnknownCaz firefox-mcp",
+    "url": "https://github.com/UnknownCaz/firefox-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "summary": "Attach-only Firefox MCP server over raw WebDriver BiDi with user confirmation gates.",
+    "verify_terms": [
+      "firefox-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/UnknownCaz/firefox-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "40171bd881636c655e0c9ec7b84f80c925e2cc5f85154fffff3b930a02264f19"
+  },
+  {
+    "name": "amcu (Another macOS Computer Use)",
+    "url": "https://github.com/uoox/amcu",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Single-binary, dependency-free macOS computer-use tool that reads and drives Mac apps without stealing cursor or window focus.",
+    "verify_terms": [
+      "amcu"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/uoox/amcu/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "95c36a8d0b209f34e93eca7d38641b809b96a0c2b1b8c44bcd82a532f6667d28"
+  },
+  {
+    "name": "UseAgent",
+    "url": "https://github.com/useagenthq/useagent",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Open-source cloud and local sandbox platform for running Claude Code, Codex, or OpenCode with a full desktop and browser.",
+    "verify_terms": [
+      "UseAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/useagenthq/useagent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3e2a2c8e8f6cfff93e3fd41b554e09f3d924158452c3896aea16ed4022bc54ec"
   }
 ]

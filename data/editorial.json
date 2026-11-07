@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "PhysiClaw",
+    "url": "https://github.com/physiclaw/PhysiClaw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "grounding"
+    ],
+    "summary": "PhysiClaw uses an overhead camera and a 3-axis capacitive stylus gantry to physically tap and swipe unmodified smartphones.",
+    "verify_terms": [
+      "PhysiClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/physiclaw/PhysiClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "98615fadffe4394f06630fcbe60de51f1d6fe784ab9af5b9883cefaf0e57bc54"
+  },
+  {
+    "name": "Pilos Agents",
+    "url": "https://github.com/pilos-ai/agents",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Pilos Agents is a desktop application for orchestrating multi-agent Claude Code teams, visual workflows, and MCP server integrations.",
+    "verify_terms": [
+      "Pilos Agents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pilos-ai/agents/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5383a315f3f56ed797ddc6e4a3e9ad32a5d9c66ef0146c03230af0995fd36380"
+  },
+  {
+    "name": "SuperSelector Studio",
+    "url": "https://github.com/pirate/cua-superselector",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "recording",
+      "robustness",
+      "automation"
+    ],
+    "summary": "Resilient, cacheable fuzzy UI element identifiers and studio for Codex Computer Use recording and replay.",
+    "verify_terms": [
+      "SuperSelector Studio"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pirate/cua-superselector/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fb6072c5f393753ddd28171645276320e669ad32ad0efd4da33e4e1d0abbeae4"
+  },
+  {
+    "name": "Piskie",
+    "url": "https://github.com/piskie-dev/piskie",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Desktop AI agent for the real web equipped with a built-in anti-detect fingerprint browser.",
+    "verify_terms": [
+      "Piskie"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/piskie-dev/piskie/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f1e041b9cb1367264ea4011fe8c7e4d49f16510b0518cc7464f6028741ad9ae2"
+  },
+  {
+    "name": "Hemi",
+    "url": "https://github.com/PiuQiuPiaQia/Hemi",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Desktop AI assistant for macOS and Windows featuring voice interaction, screen awareness, and local tool execution.",
+    "verify_terms": [
+      "Hemi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PiuQiuPiaQia/Hemi/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "113fe248b7d5c6df3e9b4e99654ff4989b2e959e7048b1ce2906142e296ba6b6"
   }
 ]

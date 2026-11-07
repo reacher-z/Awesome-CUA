@@ -86010,5 +86010,232 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "PageRunner",
+    "url": "https://github.com/SAY-5/pagerunner",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "recording",
+      "robustness"
+    ],
+    "summary": "PageRunner is a browser-agent orchestration platform with bounded execution loops, deterministic replay, and golden-trace verification.",
+    "verify_terms": [
+      "PageRunner"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SAY-5/pagerunner/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d58a7356f8305ec0e9d2d1e8efabdb399fdd1f748a9f847685aa7e348f59edfa"
+  },
+  {
+    "name": "NirvanaX AutoAgent",
+    "url": "https://github.com/SayantanTheCmd/NirvanaX-AutoAgent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Multimodal personal AI assistant for Windows that combines voice input, screen vision, and desktop control.",
+    "verify_terms": [
+      "align"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SayantanTheCmd/NirvanaX-AutoAgent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "106e7bb623c09efdaaf81a5722f7e9bc8087b2e8667cd91f6deb16afe5a853b5"
+  },
+  {
+    "name": "cdp-toolkit",
+    "url": "https://github.com/sblattj/cdp-toolkit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Lightweight alternative to `chrome-devtools-mcp` that lets AI agents target and drive named Chrome tabs over CDP.",
+    "verify_terms": [
+      "cdp-toolkit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sblattj/cdp-toolkit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6fef7ea5388b85e09fbdab0f899f45ec03bd40d18a9822c7d52acca0babb37f1"
+  },
+  {
+    "name": "browser-action-receipt",
+    "url": "https://github.com/scalar-atelier/browser-action-receipt",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "state-tracking",
+      "web-navigation"
+    ],
+    "summary": "Verification protocol that binds human approval to target DOM state, aborting clicks and emitting a receipt if the page mutates.",
+    "verify_terms": [
+      "browser-action-receipt"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/scalar-atelier/browser-action-receipt/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c39e726f8fcfbb0173ccebd851756b902d2f7b017eb8b5882b63a5c2f51c1658"
+  },
+  {
+    "name": "MetaWebMCP",
+    "url": "https://github.com/scanchila/MetaWebMCP",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "recording",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "In-browser workbench to author, test, and export structured WebMCP tool definitions from live website workflows.",
+    "verify_terms": [
+      "MetaWebMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/scanchila/MetaWebMCP/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fc5d7a777428d50d6c944d750f2b441b0045c955c03b8ab84a112a39274453f2"
+  },
+  {
+    "name": "Scrapfly MCP Server",
+    "url": "https://github.com/scrapfly/scrapfly-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "data-generation"
+    ],
+    "summary": "Official Scrapfly Model Context Protocol server providing cloud anti-bot browser rendering and structured web extraction for AI agents.",
+    "verify_terms": [
+      "Scrapfly MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/scrapfly/scrapfly-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af2aef559d3698d4afe3ffbf05334101e9aa2dd39e835ba3a65d9824d9e8cf6c"
+  },
+  {
+    "name": "ScreenLeak",
+    "url": "https://github.com/screenpipe/screenleak",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "recording"
+    ],
+    "summary": "ScreenLeak is a multimodal benchmark for measuring sensitive-information detection and PII redaction in continuous screen recording data.",
+    "verify_terms": [
+      "ScreenLeak"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/screenpipe/screenleak/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e61c26ed059c81162a6bc38c91c7d4a2376b1ee3f3863fdab3cdccd7db116336"
+  },
+  {
+    "name": "Screenpipe",
+    "url": "https://github.com/screenpipe/screenpipe",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "memory",
+      "observability"
+    ],
+    "summary": "Screenpipe continuously captures desktop screen text via accessibility/OCR and audio transcripts into a local database for AI agents.",
+    "verify_terms": [
+      "Screenpipe"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/screenpipe/screenpipe/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4a61e3072cab5dad3ab41be2ff08d589f902b3e3c194fa1aaeb414265dc1a61a"
+  },
+  {
+    "name": "BrowserMesh",
+    "url": "https://github.com/scrollDynasty/BrowserMesh",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox",
+      "workflow"
+    ],
+    "summary": "Multi-agent browser MCP runtime in Rust managing isolated, persistent, parallel Playwright sessions.",
+    "verify_terms": [
+      "BrowserMesh"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/scrollDynasty/BrowserMesh/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7835f89334f40e16a5f12bd84e41afb69f22667cb1d5409cc1a801c4030aa4de"
   }
 ]

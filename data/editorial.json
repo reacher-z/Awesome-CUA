@@ -86010,5 +86010,236 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "GroundCUA",
+    "url": "https://github.com/ServiceNow/GroundCUA",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "data-generation"
+    ],
+    "summary": "GroundCUA releases 56,000 desktop screenshots with 3.56M human-verified UI element annotations across 87 applications plus GroundNext models.",
+    "verify_terms": [
+      "GroundCUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ServiceNow/GroundCUA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea25e5db95415f19bcf42f37547912eed185b72441a4fa57a0c981a7f50d732a",
+    "documented_by": [
+      "2511.07332"
+    ]
+  },
+  {
+    "name": "zen-mcp",
+    "url": "https://github.com/sh6drack/zen-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "WebSocket-based Model Context Protocol server exposing 20 browser automation tools for the Zen Browser without Selenium or Playwright.",
+    "verify_terms": [
+      "zen-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sh6drack/zen-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "744691b78fb5f79d94a913480deac3ea0eacd023b0481c13215f12e9ef0240bb"
+  },
+  {
+    "name": "sh7vansh Chrome Bridge",
+    "url": "https://github.com/sh7vansh/chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Persistent Python runtime and Chrome Native Messaging bridge for driving live browser tabs from AI agents.",
+    "verify_terms": [
+      "chrome bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sh7vansh/chrome-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c88166230ec36d6f7142d4e8de5cc10acbfb1f0eaac1171ec3c2ccdc5a7d2f6c"
+  },
+  {
+    "name": "Chrome Orchestrator",
+    "url": "https://github.com/sh7vansh/chrome-orchestrator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "Unified Model Context Protocol gateway and dynamic container orchestrator for headless AI browser sessions.",
+    "verify_terms": [
+      "Chrome Orchestrator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sh7vansh/chrome-orchestrator/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9b261a05a506c4333a2d968c8f81f362713a5788660a06d59bddcd3b0e23d597"
+  },
+  {
+    "name": "Gloria",
+    "url": "https://github.com/sh7vansh/gloria",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Remote Chromium workstation for AI agents and human operators exposed over Model Context Protocol and noVNC.",
+    "verify_terms": [
+      "Gloria"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sh7vansh/gloria/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0c4dd648400085b1ed5f51a3a92486378b00c0fa32cc7f12a810e65ccef93dd"
+  },
+  {
+    "name": "Gloria Headless",
+    "url": "https://github.com/sh7vansh/gloria-headless",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Containerized headless Chromium environment with native Model Context Protocol integration for autonomous web agents.",
+    "verify_terms": [
+      "Gloria Headless"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sh7vansh/gloria-headless/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d7fb4c3fa040771cc3f1f5338cd480da68134227f60136e68f00c5d203199d4c"
+  },
+  {
+    "name": "Amazon Music MCP Server",
+    "url": "https://github.com/ShadowsDistant/Amazon-Music-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for searching and controlling Amazon Music playback from Claude Desktop.",
+    "verify_terms": [
+      "Amazon Music MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ShadowsDistant/Amazon-Music-MCP/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "422b0cb86b190cc0650ac2bb3daf3e563c6d859f92e0c2fc7462f13faa120fb5"
+  },
+  {
+    "name": "Project Interface (Legacy Web UI Compiler)",
+    "url": "https://github.com/ShahaDeven/Project_interface",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "recording",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Uses an LLM to discover how to complete a task in a legacy web UI once and distills the run into a reusable programmatic interface.",
+    "verify_terms": [
+      "project_interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ShahaDeven/Project_interface/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea489aaca5221d503d03b4bff55f3967e3127a4469cadec83bcd92a2105299ed"
+  },
+  {
+    "name": "planchette",
+    "url": "https://github.com/shahriarshm/planchette",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Lets a user point at any desktop application window to grant a coding agent scoped screenshot, click, and keyboard control over it.",
+    "verify_terms": [
+      "planchette"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shahriarshm/planchette/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0de90134094ace14976101d5c4179049043ab2ae4f958b2a06ce08b7cc835964"
   }
 ]

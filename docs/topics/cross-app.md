@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-67 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+69 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (3)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,7 @@
 | [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
 | [TheAgentCompany](https://github.com/TheAgentCompany/TheAgentCompany) · [leaderboard](https://the-agent-company.com/#/leaderboard) | web, desktop | [2412.14161](https://arxiv.org/abs/2412.14161) (2024) | [175 task images](https://raw.githubusercontent.com/TheAgentCompany/TheAgentCompany/HEAD/README.md) | code MIT | Self-contained workplace environment for evaluating agents on professional tasks involving websites, files, code, and simulated coworkers. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TheAgentCompany/TheAgentCompany/HEAD/README.md) |
+| [WebMall](https://github.com/wbsg-uni-mannheim/WebMall) | web | [2508.13024](https://arxiv.org/abs/2508.13024) (2025) | — | — | WebMall is a multi-shop e-commerce web agent benchmark evaluating cross-site price comparison, product search, and cart checkout. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wbsg-uni-mannheim/WebMall/HEAD/README.md) |
 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | desktop, windows | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | [141 tasks](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [11 Windows applications](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [20 task IDs](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_custom.json) | code MIT | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) |
 | [WindowsWorld](https://github.com/HITsz-TMG/WindowsWorld) | desktop, windows | [2604.27776](https://arxiv.org/abs/2604.27776) (2026) | [181 tasks](https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md) · [17 desktop applications](https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md) | code Apache-2.0 | Cross-application Windows benchmark with intermediate task evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md) |
 
@@ -48,6 +49,14 @@ All entries in this section: desktop, linux.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [GUI-ReWalk](https://github.com/bytedance/GUI-ReWalk) | [2509.15738](https://arxiv.org/abs/2509.15738) (2025) | code Apache-2.0 | A desktop trajectory-generation framework that moves from stochastic GUI exploration to inferred goals and multi-stage task completion, with retrospective reasoning annotations. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/bytedance/GUI-ReWalk/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: cross-platform, desktop, android, windows, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Lom Desktop (麓鸣)](https://github.com/rfdiosuao/lom-desktop) | — | code AGPL-3.0 | Lom is an open-source multi-agent workspace coordinating desktop coding agents with cross-device Android phone execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rfdiosuao/lom-desktop/HEAD/README.md) |
 
 ## Papers
 

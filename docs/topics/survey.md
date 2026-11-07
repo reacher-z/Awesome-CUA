@@ -2,9 +2,25 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-29 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+31 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Surveys (28)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (1)](#learning-resources) · [Surveys (28)](#surveys) · [Papers (1)](#papers)
+
+## Benchmarks
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Voice & Computer-Use Benchmark Landscape](https://github.com/Sophon-LLC/voice-agent-benchmark-landscape) | — | — | code MIT | Structured taxonomy and comparative map of public voice-agent, multimodal, and computer-use evaluation benchmarks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Sophon-LLC/voice-agent-benchmark-landscape/main/README.md) |
+
+## Learning resources
+
+All entries in this section: cross-platform, desktop, web, android.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | code MIT | Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md) |
 
 ## Surveys
 

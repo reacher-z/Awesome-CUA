@@ -2,17 +2,46 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+88 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (8)](#frameworks) · [Tools (3)](#tools) · [Papers (75)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ExactDelta (ActionProof)](https://github.com/tsuchiyatakahirolab/actionproof) | — | — | code MIT | Post-action state-delta verification harness for WebMCP browser agents that detects silent UI and state failures. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tsuchiyatakahirolab/actionproof/main/README.md) |
+
+## Agents
+
+All entries in this section: desktop, windows.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
+| [browser-action-receipt](https://github.com/scalar-atelier/browser-action-receipt) | web | — | code MIT | Verification protocol that binds human approval to target DOM state, aborting clicks and emitting a receipt if the page mutates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/scalar-atelier/browser-action-receipt/main/README.md) |
+| [Domstamp](https://github.com/zuub-don/domstamp) | web | — | code MIT | Framework-neutral browser-state snapshotter capturing compact, diffable DOM and accessibility states for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zuub-don/domstamp/main/README.md) |
+| [Ommatix](https://github.com/Yosoyepa/Ommatix) | cross-platform, desktop, web | — | — | Ommatix is an incremental spatial-indexing perception engine that tracks stable UI element IDs and state diffs across desktop frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yosoyepa/Ommatix/HEAD/README.md) |
+| [outlive](https://github.com/Sy-D/outlive) | web | — | code MIT | Checkpoints and resumes long-running Solari cloud browser sessions across 10-minute container timeouts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Sy-D/outlive/main/README.md) |
+| [Snapsurf](https://github.com/zumerlab/snapsurf) | web | — | code MIT | Web navigation and verification layer for AI agents providing compact semantic page digests and typed post-action DOM diffs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zumerlab/snapsurf/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ChimeraX-SessionStates](https://github.com/ShiinaHiiragi/chimerax-states) | desktop, linux | — | — | ChimeraX plugin used by ScienceBoard to expose internal molecular-visualization session state for deterministic benchmark evaluation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md) |
+| [IdemStep](https://github.com/SuperMarioYL/idemstep) | web, desktop | — | code Apache-2.0 | Deduplicates repeated agent actions and HTTP retries using keyed idempotency caches and a local verification proxy. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SuperMarioYL/idemstep/HEAD/README.md) |
+| [settled-computer](https://github.com/Remote-Skills/settled-computer) | cross-platform, desktop, web | — | code MIT | settled-computer is an event-driven MCP server that detects UI rendering quiescence so computer-use agents avoid fixed sleep delays and stale frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Remote-Skills/settled-computer/HEAD/README.md) |
 
 ## Papers
 

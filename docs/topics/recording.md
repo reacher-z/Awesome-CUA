@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-34 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
+65 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (3)](#agents) · [Frameworks (17)](#frameworks) · [Tools (18)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+
+## Benchmarks
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ScreenLeak](https://github.com/screenpipe/screenleak) | — | — | code Apache-2.0 | ScreenLeak is a multimodal benchmark for measuring sensitive-information detection and PII redaction in continuous screen recording data. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/screenpipe/screenleak/HEAD/README.md) |
 
 ## Datasets
 
@@ -19,14 +27,29 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
+| [RegionCUA](https://github.com/Region-AI/region-cua) | cross-platform, desktop, macos, windows, linux | — | code MIT | RegionCUA is a local Ollama-powered desktop agent that explores GUI applications and generates documented screenshots, videos, and replay scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Region-AI/region-cua/HEAD/README.md) |
 | [ShowUI-Aloha](https://github.com/showlab/ShowUI-Aloha) | desktop, windows, macos | [2601.07181](https://arxiv.org/abs/2601.07181) (2026) | code Apache-2.0 | Desktop agent that records demonstrations, derives semantic action traces, and uses them to plan and execute related workflows. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI-Aloha/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [ActionAnything](https://github.com/xxwtiancai/action-anything) | cross-platform, desktop, web | — | code MIT | Model-agnostic runtime for evaluating, approving, recording, and replaying AI agent actions across desktop and web interfaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xxwtiancai/action-anything/HEAD/README.md) |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
+| [Bridge Studio (WebMCP Browser Studio)](https://github.com/SalilBhasinOfficial/webmcp-browser-studio) | web | — | code MIT | Visible, human-governed browser workspace that converts live web workflows into reusable WebMCP tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SalilBhasinOfficial/webmcp-browser-studio/main/README.md) |
+| [flowcast](https://github.com/SuperMarioYL/flowcast) | web | — | code Apache-2.0 | Records browser walkthroughs once, stores structured locator cues, and replays parameterized web workflows with self-healing recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SuperMarioYL/flowcast/HEAD/README.md) |
+| [Legacy UI Capability Engine](https://github.com/saitejareddi3636/legacy-ui-capability-engine) | web | — | — | Learns a legacy browser workflow once with an LLM and compiles it into a verified, reusable capability module. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/saitejareddi3636/legacy-ui-capability-engine/main/README.md) |
+| [Maestro (AI-Drivable RPA)](https://github.com/rexchengm/maestro) | desktop, windows, web | — | code Apache-2.0 | Records a desktop or browser task once and lets AI optimize, parameterize, and replay it as a deterministic RPA workflow. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rexchengm/maestro/HEAD/README.md) |
+| [maponce](https://github.com/shivampatel0714/maponce) | web | — | code MIT | Uses an LLM to map or record browser automations once and replays them deterministically via Playwright without LLM calls. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/shivampatel0714/maponce/HEAD/README.md) |
+| [MetaWebMCP](https://github.com/scanchila/MetaWebMCP) | web | — | code MIT | In-browser workbench to author, test, and export structured WebMCP tool definitions from live website workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/scanchila/MetaWebMCP/main/README.md) |
+| [Northstar (Legacy Portal CUA)](https://github.com/zoyaarief/legacy-credit-union-automation) | web | — | — | Discovers workflows on legacy credit-union web portals with an AI agent once and compiles them into deterministic scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zoyaarief/legacy-credit-union-automation/main/README.md) |
+| [PageRunner](https://github.com/SAY-5/pagerunner) | web | — | code MIT | PageRunner is a browser-agent orchestration platform with bounded execution loops, deterministic replay, and golden-trace verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SAY-5/pagerunner/HEAD/README.md) |
+| [Project Interface (Legacy Web UI Compiler)](https://github.com/ShahaDeven/Project_interface) | web | — | — | Uses an LLM to discover how to complete a task in a legacy web UI once and distills the run into a reusable programmatic interface. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ShahaDeven/Project_interface/HEAD/README.md) |
+| [Promptwright](https://github.com/sahajamit/promptwright) | web, desktop | — | code MIT | Promptwright is an AI QA desktop agent that drives browsers from plain English or records user clicks into deterministic Playwright tests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/sahajamit/promptwright/HEAD/README.md) |
+| [RishabhP1508 Understudy](https://github.com/RishabhP1508/understudy) | web, desktop | — | — | Records a single LLM-driven exploration of a legacy UI into a typed capability artifact for deterministic zero-LLM replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/RishabhP1508/understudy/main/README.md) |
 | [SeleniumBase](https://github.com/seleniumbase/SeleniumBase) | web | — | — | Python browser automation framework for web crawling, end-to-end testing and scraping, with a recorder that generates tests and stealth options. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/seleniumbase/SeleniumBase/b806f54ab0c998c90654b59a817d959f7ff7920c/README.md) |
+| [Understudy](https://github.com/understudy-ai/understudy) | desktop, macos, web | — | code MIT | Understudy observes human desktop and browser demonstrations and compiles them into parameterized, replayable computer-use skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/understudy-ai/understudy/HEAD/README.md) |
+| [Vedanshu7 Operant](https://github.com/Vedanshu7/operant) | web, desktop | — | — | Discovers how to complete a task in a no-API application once with an LLM and compiles the trace for repeatable execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Vedanshu7/operant/main/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
 
 ## Tools
@@ -34,8 +57,23 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [Agent DevTools (39-tools)](https://github.com/YYDongRo/39-tools) | cross-platform, desktop, web | — | code MIT | Action-level observability, state verification, and debugging toolkit for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YYDongRo/39-tools/HEAD/README.md) |
+| [Browser Agent Recorder](https://github.com/VelvetAbyss/browser-agent-recorder) | web | — | code MIT | Records human browser workflows and exports them as both human-readable SOP documents and machine-readable Agent Skill Packs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/VelvetAbyss/browser-agent-recorder/HEAD/README.md) |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | web | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
+| [Computer-Use Cache](https://github.com/rohanarun/computer-use-cache) | cross-platform, web, desktop | — | code MIT | Drop-in OpenAI-compatible caching proxy that records and replays repeated computer-use and browser-agent workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rohanarun/computer-use-cache/HEAD/README.md) |
+| [doc-agent](https://github.com/samuel-as/doc-agent) | web | — | code MIT | Claude Code skill that documents a web procedure with annotated screenshots by performing it in a live browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/samuel-as/doc-agent/main/README.md) |
+| [DuckTrack](https://github.com/TheDuckAI/DuckTrack) | cross-platform, desktop, windows, macos, linux | — | code MIT | DuckTrack records synchronized screen video and low-level mouse and keyboard events for building multimodal computer-interaction datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md) |
+| [DXcam](https://github.com/ra1nty/DXcam) | desktop, windows | — | code MIT | DXcam is a high-frequency Python screen capture library for Windows using the Desktop Duplication API at up to 240Hz for GUI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ra1nty/DXcam/HEAD/README.md) |
+| [Forged](https://github.com/sam-siavoshian/forged) | web | — | code MIT | Self-learning browser automation MCP server that records successful agent trajectories and replays deterministic Playwright steps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/sam-siavoshian/forged/HEAD/README.md) |
+| [Helios](https://github.com/vrtnis/helios) | cross-platform, desktop, web | — | code MIT | Observability and evaluation harness that converts H computer-use agent sessions into reviewable traces and failure findings. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vrtnis/helios/HEAD/README.md) |
+| [Inner Coordinates](https://github.com/XiaoChu-1208/inner-coordinates) | desktop, macos, ios | — | code MIT | Reverse-engineers a clickable coordinate and state map of macOS and iPhone applications once for deterministic workflow replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/XiaoChu-1208/inner-coordinates/HEAD/README.md) |
 | [Libretto](https://github.com/cashew-labs/libretto) | web | — | code MIT | Libretto is a toolkit that gives coding agents a live browser and CLI to inspect pages, record user actions, build scripts, and debug web integrations. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/cashew-labs/libretto/41ab782ccea765d7a9a3c9b56b1b2586723962e3/README.md) |
+| [MacControlKit](https://github.com/tzafon/MacControlKit) | desktop, macos | — | code Apache-2.0 | MacControlKit is a Swift package by Tzafon for capturing macOS screens and dispatching native mouse and keyboard events. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tzafon/MacControlKit/HEAD/README.md) |
+| [mcp-chrome-bridge](https://github.com/wizardofweb125-lab/mcp-chrome-bridge) | web | — | code MIT | Model Context Protocol server for controlling Chrome tabs, forms, console/network logs, screenshots, and GIF recordings. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wizardofweb125-lab/mcp-chrome-bridge/HEAD/README.md) |
+| [recast](https://github.com/yagna-1/recast) | web | — | code MIT | Compiler that converts recorded AI browser-agent execution traces into deterministic, zero-token Playwright test scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yagna-1/recast/HEAD/README.md) |
+| [Screenpipe](https://github.com/screenpipe/screenpipe) | cross-platform, desktop, macos, windows, linux | — | — | Screenpipe continuously captures desktop screen text via accessibility/OCR and audio transcripts into a local database for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/screenpipe/screenpipe/HEAD/README.md) |
+| [Windows Local Action Recorder](https://github.com/week833/windows-local-action-recorder) | desktop, windows | — | code MIT | Windows desktop action recorder and controlled replay tool that packages human UI demonstrations for Codex agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/week833/windows-local-action-recorder/main/README.md) |
+| [windows-computer-use-mcp (Scan-Code & Multi-Monitor)](https://github.com/sshh12/windows-computer-use-mcp) | desktop, windows | — | code MIT | Windows computer-use MCP server supporting multi-monitor screen capture and hardware scan-code keyboard/mouse injection for desktop and 3D apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/sshh12/windows-computer-use-mcp/HEAD/README.md) |
 
 ## Infrastructure
 

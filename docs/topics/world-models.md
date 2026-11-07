@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-59 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+62 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (3)](#models) · [Frameworks (4)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -20,15 +20,16 @@
 | --- | --- | --- | --- | --- | --- |
 | [Code2World-8B checkpoint](https://huggingface.co/GD-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | weights MIT | Released GUI world-model checkpoint that turns a screenshot and proposed action into HTML for rendering a predicted next screen. | [✓ 2026‑10‑18](https://huggingface.co/GD-ML/Code2World/raw/3e48194a8228570164ecd510f9d83ac839e9e931/README.md) |
 | [Dreamer-7B](https://huggingface.co/osunlp/Dreamer-7B) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | WebDreamer model checkpoint that predicts the consequences of web actions from screenshots and textual descriptions. | [✓ 2026‑10‑16](https://huggingface.co/osunlp/Dreamer-7B/raw/main/README.md) |
+| [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
 
 ## Frameworks
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [RLVR-World](https://github.com/thuml/RLVR-World) | web, desktop | — | code MIT | RLVR-World trains world models with verifiable reinforcement learning to predict state transitions for web and game agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/thuml/RLVR-World/HEAD/README.md) |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop, linux | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 
 ## Surveys
 

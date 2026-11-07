@@ -2,17 +2,25 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+105 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (13)](#frameworks) · [Tools (15)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
 
 ## Benchmarks
 
-All entries in this section: web.
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | web | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| [Maudslay](https://github.com/theo-ai-lab/maudslay) | web, desktop | — | — | code MIT | Maudslay evaluates release readiness and pass^k reliability of computer-use agents against independent backend and email ground truth. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/theo-ai-lab/maudslay/HEAD/README.md) |
+| [web-agent-eval (REAL Benchmark Runner)](https://github.com/saarthak-yadav/web-agent-eval) | web | — | — | code MIT | Evaluates web agents on 102 replica websites from the REAL benchmark under explicit step, token, and budget constraints. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/saarthak-yadav/web-agent-eval/HEAD/README.md) |
+
+## Datasets
+
+All entries in this section: web, desktop, android, cross-platform.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| [Holo4 Trajectories](https://huggingface.co/datasets/Hcompany/trajectories) | — | — | data apache-2.0 | Dataset of 7,366 computer-use agent execution trajectories from Holo4 27B and Holo4 35B-A3B, recording step-level reasoning, actions, tool results, and screenshots. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/Hcompany/trajectories) |
 
 ## Agents
 
@@ -20,24 +28,46 @@ All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Autonomous Vision Browser-Use Agent](https://github.com/therealfullmetal55555/browser-use-agent) | — | code MIT | Playwright-based vision browser agent featuring loop detection, DOM-plus-screenshot grounding, and per-step token telemetry. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/therealfullmetal55555/browser-use-agent/HEAD/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [A2R2 (Android Agent Reliability Runtime)](https://github.com/rty90/Android-Agent-Reliability-Runtime) | android | — | — | A2R2 is a black-box safety and reliability runtime for Android GUI agents that intercepts unsafe actions and detects execution loops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rty90/Android-Agent-Reliability-Runtime/HEAD/README.md) |
+| [autocomputer](https://github.com/yygg693/autocomputer) | cross-platform, desktop, windows, macos, linux | — | code MIT | Desktop GUI automation platform combining a Rust execution core, Python SDK, MCP server, and HTML5 monitoring dashboard. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yygg693/autocomputer/HEAD/README.md) |
+| [Codex Boss Desktop](https://github.com/zhiheng-zhang-Mera/Codex-Boss) | desktop, macos, windows, linux, web | — | code MIT | Local-first Electron controller for multi-model deliberation and evidence-preserving computer-use orchestration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zhiheng-zhang-Mera/Codex-Boss/main/README.md) |
+| [Domstamp](https://github.com/zuub-don/domstamp) | web | — | code MIT | Framework-neutral browser-state snapshotter capturing compact, diffable DOM and accessibility states for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zuub-don/domstamp/main/README.md) |
+| [Evidence-Bounded GEO Workbench (WebMCP)](https://github.com/subbu-ctd/chinamarketingai-webmcp) | web | — | code MIT | Browser-native human-in-the-loop WebMCP workbench with evidence-bounded action verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/subbu-ctd/chinamarketingai-webmcp/main/README.md) |
+| [Farsyn](https://github.com/Xala-Technologies/farsyn) | web | — | code Apache-2.0 | Geographic experience and web-evidence engine that drives real browsers across locales and records verifiable captures. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Xala-Technologies/farsyn/main/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [MELRA](https://github.com/XAGI-Lab/melra) | cross-platform, desktop, web | — | code AGPL-3.0 | Modular Execution Layer for Reliable Autonomy (MELRA), a local MCP runtime that validates agent tool calls and gates risky actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/XAGI-Lab/melra/HEAD/README.md) |
+| [Mosaic Desktop Automation](https://github.com/Quill-00/mosaic-desktop-automation) | desktop, windows | — | code MIT | Local-first Windows dashboard for scheduling, watching, and auditing desktop automation agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Quill-00/mosaic-desktop-automation/main/README.md) |
+| [Nexus Computer Use Harness (NexusCUH)](https://github.com/subasah/computer-use-harness) | cross-platform, desktop, web, linux | — | code Apache-2.0 | NexusCUH is a computer-use agent harness with sandboxed execution, MCP integration, policy guardrails, and trace observability. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/subasah/computer-use-harness/HEAD/README.md) |
 | [ORBIT framework](https://github.com/wlanderson0/orbit) | web, desktop | [2609.33102](https://arxiv.org/abs/2609.33102) (2026) | code Apache-2.0 | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md) |
+| [SiteWarden](https://github.com/Shantodotdev/sitewarden) | web | — | — | Autonomous, lightweight browser smoke-testing daemon written in Rust for continuous website verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Shantodotdev/sitewarden/master/README.md) |
+| [Smouj AgentBrowser](https://github.com/smouj/agent-browser) | web | — | code MIT | AI-powered browser automation platform combining a REST API, live web dashboard, and vision-assisted DOM interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/smouj/agent-browser/HEAD/README.md) |
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
-| [PhantomJS](https://github.com/ariya/phantomjs) | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
-| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent DevTools (39-tools)](https://github.com/YYDongRo/39-tools) | cross-platform, desktop, web | — | code MIT | Action-level observability, state verification, and debugging toolkit for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YYDongRo/39-tools/HEAD/README.md) |
+| [agentwatch](https://github.com/yubinkim444/agentwatch) | web | — | code MIT | Translucent in-tab DevTools HUD overlay for browser AI agents that displays live agent thoughts, targets, and actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yubinkim444/agentwatch/HEAD/README.md) |
+| [AI Web Tester](https://github.com/SiamAlSobari/ai-web-tester) | web | — | code MIT | Autonomous browser testing, QA matrix execution, and console/network telemetry toolkit for AI coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SiamAlSobari/ai-web-tester/main/README.md) |
+| [Browser Workbench for Codex](https://github.com/slemmis/browser-workbench-for-codex) | web | — | code MIT | Playwright-powered browser inspection, visual testing, and interactive debugging workbench for OpenAI Codex. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/slemmis/browser-workbench-for-codex/main/README.md) |
+| [BrowserTrace](https://github.com/aaronlab/browsertrace) | web | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+| [devloop](https://github.com/vincentvella/devloop) | web | — | code MIT | Model Context Protocol server that correlates headless browser automation actions and dev-server logs on a single unified timeline. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vincentvella/devloop/HEAD/README.md) |
+| [DualKey](https://github.com/wadeKeith/dualkey-agent) | cross-platform, desktop, web | — | code Apache-2.0 | DualKey enforces deterministic policy checks, human approvals, and cryptographically signed receipts for AI agent actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wadeKeith/dualkey-agent/HEAD/README.md) |
+| [ElectroMCP](https://github.com/TheRealSeanDonahoe/electromcp) | cross-platform, desktop | — | code MIT | Connects Claude and MCP-compatible agents to Electron desktop apps for UI clicking, screenshot capture, IPC inspection, and HAR recording. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TheRealSeanDonahoe/electromcp/HEAD/README.md) |
+| [Helios](https://github.com/vrtnis/helios) | cross-platform, desktop, web | — | code MIT | Observability and evaluation harness that converts H computer-use agent sessions into reviewable traces and failure findings. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vrtnis/helios/HEAD/README.md) |
+| [lean-chronoscope-mcp](https://github.com/yyhezkel/lean-chronoscope-mcp) | web, desktop, linux | — | code MIT | Token-efficient headless Chrome MCP server in Docker that records console, network, and DOM timelines for coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yyhezkel/lean-chronoscope-mcp/HEAD/README.md) |
+| [PhantomJS](https://github.com/ariya/phantomjs) | web | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
+| [Safari iOS Web Inspector MCP](https://github.com/rodneyrdx/safari-ios-webinspector-mcp) | ios, desktop, macos, web | — | code MIT | TypeScript Model Context Protocol server for inspecting and debugging live iPhone Safari WebKit sessions from macOS. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rodneyrdx/safari-ios-webinspector-mcp/main/README.md) |
+| [Screenpipe](https://github.com/screenpipe/screenpipe) | cross-platform, desktop, macos, windows, linux | — | — | Screenpipe continuously captures desktop screen text via accessibility/OCR and audio transcripts into a local database for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/screenpipe/screenpipe/HEAD/README.md) |
+| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | web | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| [Zhuque Recruiting (朱雀招聘)](https://github.com/shenkemin-sketch/zhuque-recruiting) | web, desktop | — | code MIT | Auditable Codex Computer Use skill for automating candidate sourcing and screening across web recruiting platforms. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/shenkemin-sketch/zhuque-recruiting/main/README.md) |
 
 ## Surveys
 

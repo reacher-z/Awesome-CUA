@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-26 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
+33 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (7)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
 
 ## Benchmarks
 
@@ -39,20 +39,23 @@ All entries in this section: ios.
 
 ## Frameworks
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [glassbox](https://github.com/yoyicue/glassbox) | ios, desktop, macos | — | code MIT | glassbox is an iOS and iPadOS computer-use runtime that drives physical iPhones and iPads from screen observations and hardware/bridge control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yoyicue/glassbox/HEAD/README.md) |
+| [Mobile Agent Guardian](https://github.com/salus-ryan/mobile-agent-guardian) | android, ios | — | code Apache-2.0 | Five-level safety and action-verification layer for mobile GUI agents that classifies and gates risky phone operations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/salus-ryan/mobile-agent-guardian/HEAD/README.md) |
+| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
 
 ## Tools
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobile Harness](https://github.com/droidrun/mobile-harness) | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
-| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-qa](https://github.com/vostride/agent-qa) | cross-platform, web, android, ios | — | — | agent-qa is an AI quality-assurance runner that executes natural-language user-journey tests across web, Android, and iOS interfaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vostride/agent-qa/HEAD/README.md) |
+| [Inner Coordinates](https://github.com/XiaoChu-1208/inner-coordinates) | desktop, macos, ios | — | code MIT | Reverse-engineers a clickable coordinate and state map of macOS and iPhone applications once for deterministic workflow replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/XiaoChu-1208/inner-coordinates/HEAD/README.md) |
+| [Mobile Harness](https://github.com/droidrun/mobile-harness) | android, ios | — | code MIT | Portable agent instructions and integration tooling for local or cloud phone control through mobilerun-core. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/droidrun/mobile-harness/HEAD/README.md) |
+| [Mobile Next MCP](https://github.com/mobile-next/mobile-mcp) | android, ios | — | code Apache-2.0 | An MCP server exposing mobile accessibility snapshots, screenshots and device interactions across real devices, simulators and emulators. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/mobile-next/mobile-mcp/HEAD/README.md) |
+| [Safari iOS Web Inspector MCP](https://github.com/rodneyrdx/safari-ios-webinspector-mcp) | ios, desktop, macos, web | — | code MIT | TypeScript Model Context Protocol server for inspecting and debugging live iPhone Safari WebKit sessions from macOS. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rodneyrdx/safari-ios-webinspector-mcp/main/README.md) |
+| [tail-aside](https://github.com/quino0627/tail-aside) | web, android, ios | — | code MIT | Remote mobile controller for monitoring and steering the Aside browser agent over Tailscale. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/quino0627/tail-aside/main/README.md) |
+| [ToolArks Remote Login Relay](https://github.com/zdayang/remote-login-relay) | web, android, ios | — | — | Self-hosted one-tab mobile handoff relay that lets a human remotely solve login, 2FA, or CAPTCHA walls for an AI browser agent. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zdayang/remote-login-relay/main/README.md) |
 
 ## Infrastructure
 

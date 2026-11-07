@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-106 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
+114 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (11)](#frameworks) · [Papers (74)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (16)](#frameworks) · [Tools (3)](#tools) · [Papers (74)](#papers)
 
 ## Benchmarks
 
@@ -55,17 +55,30 @@ All entries in this section: unspecified.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Android-Skill-Agent](https://github.com/xiru0834-eng/Android-Skill-Agent) | android | — | — | Android-Skill-Agent extracts demonstration-guided, parameterized operational skills with accessibility-tree verification for Android apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xiru0834-eng/Android-Skill-Agent/HEAD/README.md) |
+| [ETO (Exploration-Based Trajectory Optimization)](https://github.com/Yifan-Song793/ETO) | web | — | — | ETO trains LLM agents on WebShop, ScienceWorld, and ALFWorld by contrasting failed exploration trajectories against expert demonstrations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yifan-Song793/ETO/HEAD/README.md) |
 | [Go-Browse](https://github.com/ApGa/Go-Browse) | web | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | code MIT | Structured website-exploration and data-processing code that revisits discovered pages, proposes tasks and collects trajectories for web-agent fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ApGa/Go-Browse/HEAD/README.md) |
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
+| [Maestro (AI-Drivable RPA)](https://github.com/rexchengm/maestro) | desktop, windows, web | — | code Apache-2.0 | Records a desktop or browser task once and lets AI optimize, parameterize, and replay it as a deterministic RPA workflow. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rexchengm/maestro/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
 | [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
+| [RishabhP1508 Understudy](https://github.com/RishabhP1508/understudy) | web, desktop | — | — | Records a single LLM-driven exploration of a legacy UI into a typed capability artifact for deterministic zero-LLM replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/RishabhP1508/understudy/main/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
+| [Understudy](https://github.com/understudy-ai/understudy) | desktop, macos, web | — | code MIT | Understudy observes human desktop and browser demonstrations and compiles them into parameterized, replayable computer-use skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/understudy-ai/understudy/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |
 | [WebLlama](https://github.com/McGill-NLP/webllama) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | code MIT | Training, evaluation and integration tooling for dialogue-guided web agents, including Llama fine-tuning workflows and BrowserGym examples built around WebLINX. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/McGill-NLP/webllama/HEAD/README.md) |
 | [WinDOM code](https://github.com/ChenghengLi/WinDOM) | web | [2606.25964](https://arxiv.org/abs/2606.25964) (2026) | code MIT | GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ChenghengLi/WinDOM/ab52acffe2003fd0c98943a542b4114ef929de0d/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Browser Agent Recorder](https://github.com/VelvetAbyss/browser-agent-recorder) | web | — | code MIT | Records human browser workflows and exports them as both human-readable SOP documents and machine-readable Agent Skill Packs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/VelvetAbyss/browser-agent-recorder/HEAD/README.md) |
+| [DuckTrack](https://github.com/TheDuckAI/DuckTrack) | cross-platform, desktop, windows, macos, linux | — | code MIT | DuckTrack records synchronized screen video and low-level mouse and keyboard events for building multimodal computer-interaction datasets. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TheDuckAI/DuckTrack/HEAD/README.md) |
+| [Windows Local Action Recorder](https://github.com/week833/windows-local-action-recorder) | desktop, windows | — | code MIT | Windows desktop action recorder and controlled replay tool that packages human UI demonstrations for Codex agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/week833/windows-local-action-recorder/main/README.md) |
 
 ## Papers
 

@@ -2,9 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-64 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+82 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Models (3)](#models) · [Agents (11)](#agents) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (54)](#papers)
+
+## Benchmarks
+
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [done-or-not](https://github.com/tatra-labs/done-or-not) | desktop, web | [2610.40578](https://arxiv.org/abs/2610.40578) (2026) | — | code MIT | done-or-not is an offline benchmark of 910 computer-use trajectories across three simulated computers for grading completion verifiers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tatra-labs/done-or-not/HEAD/README.md) |
+| [Kane](https://github.com/Venkat5599/kane) | web | — | — | — | Plain-English browser verification harness for AI-built web applications that reports UI failures back to coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Venkat5599/kane/main/README.md) |
 
 ## Models
 
@@ -18,20 +25,41 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Agentic Android](https://github.com/xDope7137/agentic-android) | android | — | code MIT | LLM-powered Android agent over ADB that reads the screen, executes tap/swipe/type actions, and verifies outcomes at each step. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xDope7137/agentic-android/HEAD/README.md) |
+| [BLAXIN](https://github.com/tasinxxx/Blaxin) | desktop, linux | — | code MIT | Open-source AI desktop agent for Linux that plans, executes, and verifies GUI and shell workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tasinxxx/Blaxin/main/README.md) |
+| [Genie](https://github.com/vimalmathew26/genie) | desktop, linux | — | — | Genie is an autonomous Linux desktop agent with 3-tier UI resolution across AT-SPI accessibility trees, Chrome CDP, and VLM vision. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vimalmathew26/genie/HEAD/README.md) |
+| [Lynx Agent](https://github.com/wangjiang314/lynx-agent) | android | — | code Apache-2.0 | Lynx Agent is a completion-first Android phone-use agent with evidence-based state verification, recovery, and safety checks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wangjiang314/lynx-agent/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
+| [OpenVINO Autonomous GUI Agent](https://github.com/Shehrozkashif/OpenVINO-Autonomous-GUI-Agent) | desktop, windows, linux | — | code Apache-2.0 | Fully local desktop GUI agent running five INT4 OpenVINO models for screen perception, planning, action execution, and step verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Shehrozkashif/OpenVINO-Autonomous-GUI-Agent/HEAD/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
+| [QAgent](https://github.com/rishabhcli/QAgent) | web, desktop | — | code AGPL-3.0 | QAgent is a local-first web QA and repair agent with an Electron desktop UI, CLI, MCP server, and isolated Git worktree execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rishabhcli/QAgent/HEAD/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| [Third Eye](https://github.com/slastrina/third-eye) | desktop, macos | — | code MIT | Local macOS computer-use agent with screen perception and verified action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/slastrina/third-eye/main/README.md) |
 
 ## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Q](https://github.com/sentient-engineering/agent-q) | web | [2408.07199](https://arxiv.org/abs/2408.07199) (2024) | code MIT | Agent Q combines Monte Carlo Tree Search, AI self-critique, and Direct Preference Optimization for autonomous web navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/sentient-engineering/agent-q/HEAD/README.md) |
+| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
+| [ENVISIONS](https://github.com/xufangzhi/ENVISIONS) | web | — | — | ENVISIONS is an environment-guided neural-symbolic self-training framework for language agents across symbolic reasoning and WebShop tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xufangzhi/ENVISIONS/HEAD/README.md) |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop, linux | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [Seven-Layer Web Agent & Benchmark](https://github.com/xyyojl/web-agent) | web | — | code MIT | Seven-layer LLM browser agent architecture paired with a 45-task hierarchical benchmark and reproducible execution artifacts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xyyojl/web-agent/HEAD/README.md) |
+| [SOLO](https://github.com/WZq975/SOLO) | desktop, android, web | [2609.34321](https://arxiv.org/abs/2609.34321) (2026) | — | SOLO performs single-rollout test-time adaptation for GUI agents using online self-supervised feedback during deployment. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/WZq975/SOLO/HEAD/README.md) |
+| [UI-Voyager](https://github.com/ui-voyager/UI-Voyager) | android | [2603.24533](https://arxiv.org/abs/2603.24533) (2026) | code MIT | UI-Voyager is a self-evolving mobile GUI agent framework that learns from failed execution trajectories via group-relative reflection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ui-voyager/UI-Voyager/HEAD/README.md) |
+| [V-Droid](https://github.com/V-Droid-Agent/V-Droid) | android | [2503.15937](https://arxiv.org/abs/2503.15937) (2025) | — | V-Droid pairs a mobile GUI actor with a generative verifier that scores candidate actions before execution on Android devices. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/HEAD/README.md) |
+| [VLAA-GUI](https://github.com/UCSC-VLAA/VLAA-GUI) | cross-platform, desktop, web, android | [2604.21375](https://arxiv.org/abs/2604.21375) (2026) | code Apache-2.0 | VLAA-GUI provides a modular GUI automation framework that teaches agents when to stop, recover from errors, and search alternatives. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/UCSC-VLAA/VLAA-GUI/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
 
 All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
-| [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| [dsh-preview](https://github.com/Viger1/dsh-preview) | — | code MIT | Self-verification browser preview loop for DeepSeek Harness agents to inspect and validate live frontend changes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Viger1/dsh-preview/main/README.md) |
 
 ## Papers
 

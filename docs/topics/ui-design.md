@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+74 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (2)](#agents) · [Frameworks (4)](#frameworks) · [Tools (9)](#tools) · [Papers (54)](#papers)
 
 ## Benchmarks
 
@@ -12,15 +12,48 @@ All entries in this section: web.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgentReady](https://github.com/Williehems/agentready) | — | — | code MIT | Cloud-browser evaluation harness that tests whether an autonomous AI agent can complete a website's primary conversion action. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Williehems/agentready/main/README.md) |
+| [Open User](https://github.com/Tiacoo/open-user) | — | — | code MIT | Black-box UX audit harness that dispatches AI browser personas to test web products and record friction points. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Tiacoo/open-user/main/README.md) |
 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
 
-All entries in this section: unspecified.
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [UEyes](https://github.com/YueJiang-nj/UEyes-CHI2023) | cross-platform, web, desktop, android | — | — | — | UEyes is an eye-tracking dataset of 62 participants viewing 1,980 UI screenshots across webpages, desktop interfaces, mobile apps, and posters. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) |
+| [UICrit](https://github.com/google-research-datasets/uicrit) | unspecified | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
 
-| Resource | Paper | Scale | License | Description | Evidence |
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [naive-user](https://github.com/TechGardenCode/naive-user) | — | code MIT | Source-blind browser agent that explores live web applications as a first-time user to uncover UX friction and broken flows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TechGardenCode/naive-user/HEAD/README.md) |
+| [shoal](https://github.com/Raynan00/shoal) | — | code MIT | Deploys a swarm of concurrent AI browser agents to stress-test websites and visualize UX bottlenecks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Raynan00/shoal/HEAD/README.md) |
+
+## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+| [Glyph Motion Studio for WebMCP](https://github.com/varun-a-1010/glyph-motion-studio-webmcp) | web | — | code MIT | WebMCP-native GSAP animation studio where browser agents safely co-direct and verify web motion timelines. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/varun-a-1010/glyph-motion-studio-webmcp/main/README.md) |
+| [maestro-oss](https://github.com/victorkaor/maestro-oss) | cross-platform, desktop, web | — | code MIT | Open-source multi-agent spatial orchestration canvas integrating CLI agents, browser automation, and desktop tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/victorkaor/maestro-oss/main/README.md) |
+| [page-agent-sdk](https://github.com/whyymj/page-agent-sdk) | web | — | code ISC | In-page AI assistant SDK that mounts a chat widget and lets LLMs safely read and mutate webpage state via schema-validated tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/whyymj/page-agent-sdk/HEAD/README.md) |
+| [Venxuix Dccide](https://github.com/venxuix-dccide/Venxuix) | desktop, windows | — | — | 2D/3D agentic operating environment layered above Windows where humans and AI agents co-orchestrate desktop tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/venxuix-dccide/Venxuix/main/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Blender Computer Use Artist](https://github.com/xiaof631/blender-computer-use-artist) | desktop, macos, windows, linux | — | code MIT | Codex computer-use skill for automating Blender 3D modeling, rendering, animation, and visual QA. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xiaof631/blender-computer-use-artist/HEAD/README.md) |
+| [CamouForge](https://github.com/Rycen7822/camouforge) | desktop, windows, web | — | code MIT | Native Windows GUI manager for configuring and launching isolated Camoufox stealth browser profiles. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Rycen7822/camouforge/main/README.md) |
+| [DeepSeek Harness Desktop](https://github.com/tengqi159/deepseek-harness-desktop) | desktop, macos | — | code MIT | macOS desktop companion app for DeepSeek Harness with research-file attachments and local tool management. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tengqi159/deepseek-harness-desktop/main/README.md) |
+| [DeepSeek Harness Desktop YukiRyou](https://github.com/yoshino-xiao7/deepseek-harness-desktop-yukiryou) | desktop, windows, macos | — | code MIT | Enhanced desktop client distribution for DeepSeek Harness with pre-integrated computer-use and browser plugins. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yoshino-xiao7/deepseek-harness-desktop-yukiryou/main/README.md) |
+| [GoldenCut](https://github.com/Silbercue/GoldenCut) | web | — | code MIT | Claude Code skill that measures live browser UI layouts and returns concrete golden-ratio spacing and typography fixes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Silbercue/GoldenCut/master/README.md) |
+| [OpenUI](https://github.com/wandb/openui) | web | — | code Apache-2.0 | OpenUI lets users and agents generate, preview, and iteratively edit live HTML/Tailwind/React UI components from natural language and screenshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wandb/openui/HEAD/README.md) |
+| [periscope-mcp](https://github.com/segentic-lab/periscope-mcp) | web | — | code AGPL-3.0 | Web-application QA and analysis MCP server exposing 74 Playwright tools for authenticated flows, visual regression, and accessibility audits. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/segentic-lab/periscope-mcp/HEAD/README.md) |
+| [PixelCheck](https://github.com/xcodethink/pixelcheck) | web | — | code MIT | Drop-in MCP server providing five visual browser primitives for frontend coding agents to inspect, screenshot, and verify live web UIs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xcodethink/pixelcheck/HEAD/README.md) |
+| [UI Image to Code Studio](https://github.com/zwq-top/ui-image-to-code-studio) | web | — | code MIT | Codex skill for converting UI screenshots and live websites into React, Vue, or HTML code with visual browser verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zwq-top/ui-image-to-code-studio/main/README.md) |
 
 ## Papers
 

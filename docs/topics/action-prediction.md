@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
+93 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (57)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (21)](#models) · [Agents (3)](#agents) · [Frameworks (9)](#frameworks) · [Papers (57)](#papers)
+
+## Benchmarks
+
+All entries in this section: android.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AndroidDaily](https://huggingface.co/datasets/stepfun-ai/AndroidDaily) | [2512.15431](https://arxiv.org/abs/2512.15431) (2025) | — | data apache-2.0 | Android GUI benchmark dataset from Step-GUI containing 3,146 static action evaluation items and 235 end-to-end daily mobile tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/stepfun-ai/AndroidDaily) |
 
 ## Datasets
 
@@ -22,18 +30,30 @@
 | [CogAgent 9B 20241220](https://huggingface.co/zai-org/cogagent-9b-20241220) | desktop, windows, macos, cross-platform | — | weights other | A bilingual GLM-4V-based execution model that uses screenshots, task instructions and action history to predict GUI operations. | [✓ 2026‑10‑17](https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md) |
 | [GUI-Owl 7B](https://huggingface.co/mPLUG/GUI-Owl-7B) | android, desktop | [2508.15144](https://arxiv.org/abs/2508.15144) (2025) | weights mit | A Qwen2.5-VL-based GUI checkpoint released with Mobile-Agent-v3 for grounded actions and specialized roles in its agent framework. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/GUI-Owl-7B/raw/main/README.md) |
 | [GUI-R1 checkpoint bundle](https://huggingface.co/ritzzai/GUI-R1) | desktop, windows, linux, macos, android, web | [2504.10458](https://arxiv.org/abs/2504.10458) (2025) | weights mit | A single Hub release containing GUI-R1 3B and 7B action-model checkpoints trained with reinforcement learning across interface platforms. | [✓ 2026‑10‑17](https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md) |
+| [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
 | [Holo2 4B](https://huggingface.co/Hcompany/Holo2-4B) | web, desktop, cross-platform | — | weights apache-2.0 | A Qwen3-VL-based checkpoint for navigation and multi-step GUI actions across web, desktop and mobile interfaces. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo2-4B/raw/main/README.md) |
 | [Holo3 35B-A3B](https://huggingface.co/Hcompany/Holo3-35B-A3B) | web, desktop, cross-platform | — | weights apache-2.0 | A sparse Qwen3.5-based GUI-action checkpoint released for navigation and computer-use workflows. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo3-35B-A3B/raw/main/README.md) |
 | [Holo4 35B-A3B BF16](https://huggingface.co/Hcompany/Holo4-35B-A3B) | desktop, web | — | weights apache-2.0 | A Qwen3.6-based computer-use checkpoint designed to request GUI actions, code execution and tool calls through an external agent harness. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo4-35B-A3B/raw/main/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
+| [MobileVLM](https://github.com/XiaoMi/mobilevlm) | android | — | — | MobileVLM is a vision-language model pre-trained on the Mobile3M UI transition graph for intra-screen and inter-screen mobile UI understanding. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/XiaoMi/mobilevlm/HEAD/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
 | [PC-Agent-E checkpoint](https://huggingface.co/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | weights MIT | Computer-use checkpoint fine-tuned on PC-Agent-E trajectories; the model-card prose identifies Qwen2.5-VL-72B-Instruct as its starting model. | [✓ 2026‑10‑18](https://huggingface.co/henryhe0123/PC-Agent-E/raw/568ab45861d5dab041e158d47211c6f53ba343f2/README.md) |
+| [Plan-and-Act Actor 70B](https://huggingface.co/xTRam1/plan-and-act-actor-70b) | web | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | Llama-3.3-70B-Instruct-based executor checkpoint from the Plan-and-Act web-agent framework that translates high-level plans into browser actions. | [✓ 2026‑10‑17](https://huggingface.co/api/models/xTRam1/plan-and-act-actor-70b) |
+| [Qwen3-VL / Qwen2.5-VL](https://github.com/QwenLM/Qwen3-VL) | cross-platform, web, desktop, android | [2502.13923](https://arxiv.org/abs/2502.13923) (2025) | code Apache-2.0 | Official repository for the Qwen-VL vision-language model series supporting native visual GUI grounding, computer use, and mobile navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md) |
 | [ScaleCUA 7B](https://huggingface.co/OpenGVLab/ScaleCUA-7B) | web, desktop, android, linux | [2509.15221](https://arxiv.org/abs/2509.15221) (2025) | weights apache-2.0 | A Qwen2.5-VL-based computer-use checkpoint with direct grounding and agent action modes across desktop, mobile and web interfaces. | [✓ 2026‑10‑17](https://huggingface.co/OpenGVLab/ScaleCUA-7B/raw/main/README.md) |
 | [ShowUI-π checkpoint](https://huggingface.co/showlab/ShowUI-pi) | unspecified | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | A compact visual-action checkpoint that predicts continuous GUI drag trajectories from a screenshot and a natural-language instruction. | [✓ 2026‑10‑17](https://huggingface.co/showlab/ShowUI-pi/raw/main/README.md) |
 | [UI-Genie Agent 7B](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | weights mit | A Qwen2.5-VL mobile action model trained using existing and reward-guided synthetic trajectories from the UI-Genie framework. | [✓ 2026‑10‑17](https://huggingface.co/HanXiao1999/UI-Genie-Agent-7B/raw/main/README.md) |
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AI-Player](https://github.com/shasankp000/AI-Player) | desktop | — | code GPL-2.0 | AI-Player is a Minecraft Fabric mod that embeds an LLM/VLM-driven autonomous second player capable of navigation, combat, and crafting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/shasankp000/AI-Player/HEAD/README.md) |
+| [ClickAgent](https://github.com/Samsung/ClickAgent) | android | — | — | ClickAgent decouples high-level MLLM action reasoning from a specialized UI element localization model for Android task automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Samsung/ClickAgent/HEAD/README.md) |
+| [jev-windows-agent](https://github.com/VBS2004/jev-windows-agent) | desktop, windows | — | code MIT | jev-windows-agent pairs Windows UI Automation inspection with a fast Jev System-One decision loop for low-latency desktop control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/VBS2004/jev-windows-agent/HEAD/README.md) |
 
 ## Frameworks
 
@@ -41,7 +61,13 @@
 | --- | --- | --- | --- | --- | --- |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [D-PoT evaluation code](https://github.com/sqzhang-lazy/D-PoT) | android | [2410.00467](https://arxiv.org/abs/2410.00467) (2024) | — | Offline prompting and evaluation code for Dynamic Planning of Thoughts on Android-in-the-Wild, including action extraction and comparison with reference actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md) |
+| [Lightcone SDK](https://github.com/tzafon/lightcone) | desktop, web | — | code Apache-2.0 | Lightcone is Tzafon's Python and TypeScript SDK for building computer-use agents powered by Northstar GUI vision-language models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tzafon/lightcone/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |
+| [tinycomputer](https://github.com/tinyhumansai/tinycomputer) | cross-platform, desktop, web | — | code GPL-3.0 | Jev decision-model harness for fast desktop and browser action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tinyhumansai/tinycomputer/main/README.md) |
+| [ToolGen](https://github.com/Reason-Wang/ToolGen) | unspecified | — | — | ToolGen represents external tools as virtual vocabulary tokens to unify massive-scale tool retrieval and execution via autoregressive generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Reason-Wang/ToolGen/HEAD/README.md) |
+| [ToolTok](https://github.com/ZephinueCode/ToolTok) | desktop, android | — | — | ToolTok introduces atomic directional cursor-movement tokens for multi-step iterative GUI visual grounding on ScreenSpot and ScreenSpot-Pro. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ZephinueCode/ToolTok/HEAD/README.md) |
+| [uia-agent](https://github.com/SuperMarioYL/uia-agent) | desktop, windows | — | code Apache-2.0 | uia-agent defines an open-source LLM agent action space that drives legacy Windows desktop applications through the UI Automation tree. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SuperMarioYL/uia-agent/HEAD/README.md) |
+| [web-pilot](https://github.com/vinimabreu/web-pilot) | web | — | — | Browser-use framework where the model proposes a single action from a closed vocabulary and deterministic code validates and executes it. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vinimabreu/web-pilot/HEAD/README.md) |
 
 ## Papers
 

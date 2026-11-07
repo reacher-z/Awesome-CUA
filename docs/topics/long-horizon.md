@@ -2,19 +2,23 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-176 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
+186 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (5)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Bond Underwriting Agent Benchmark](https://github.com/vitoworleone/bond-underwriting-agent-benchmark) | desktop, web | — | — | — | Chinese vertical long-horizon evaluation benchmark testing agents on multi-step financial bond-underwriting document and web workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vitoworleone/bond-underwriting-agent-benchmark/main/README.md) |
 | [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
+| [LPS-Bench](https://github.com/tychenn/LPS-Bench) | desktop, web | [2602.03255](https://arxiv.org/abs/2602.03255) (2026) | — | code MIT | LPS-Bench benchmarks the safety awareness of computer-use agents during long-horizon planning across benign and adversarial execution scenarios. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tychenn/LPS-Bench/HEAD/README.md) |
 | [Mind2Web 2](https://github.com/OSU-NLP-Group/Mind2Web-2) · [leaderboard](https://osu-nlp-group.github.io/Mind2Web-2/#leaderboard) | web | — | — | code MIT | Long-horizon agentic web search benchmark whose Agent-as-a-Judge framework scores time-varying, citation-backed answers, with evaluation scripts for its dev and test sets. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/Mind2Web-2/HEAD/README.md) |
 | [MMInA](https://github.com/shulin16/MMInA) | web | [2404.09992](https://arxiv.org/abs/2404.09992) (2024) | — | — | Multimodal web tasks in a WebArena-based environment that chain from 1 to 10 hops across sites such as a shopping store and Wikipedia, testing long-chain reasoning. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/shulin16/MMInA/HEAD/README.md) |
 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | [25 task-definition records](https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md) | — | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
+| [OSWorld 2.0](https://github.com/xlang-ai/OSWorld-V2) | desktop, linux, windows | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | — | code Apache-2.0 | OSWorld 2.0 benchmarks computer-use agents on long-horizon desktop workflows with updated task suites, trajectory viewers, and container sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/HEAD/README.md) |
+| [WeaveBench](https://github.com/weavebench/WeaveBench) | desktop, web, linux | [2606.09426](https://arxiv.org/abs/2606.09426) (2026) | — | code MIT | WeaveBench evaluates computer-use agents on long-horizon real-world workflows across hybrid GUI, web, and programmatic tool interfaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/weavebench/WeaveBench/HEAD/README.md) |
 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | web | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
@@ -33,15 +37,35 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- |
 | [Plan-and-Act Planner 70B](https://huggingface.co/xTRam1/plan-and-act-planner-70b) | [2503.09572](https://arxiv.org/abs/2503.09572) (2025) | weights mit | The planner component of Plan-and-Act, generating structured high-level plans that an executor turns into web actions. | [✓ 2026‑10‑17](https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md) |
 
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Recallo](https://github.com/Tianqi-Bu/recallo) | — | code Apache-2.0 | Recallo is a local-first browser agent with persistent SQLite episodic memory across browsing sessions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Tianqi-Bu/recallo/HEAD/README.md) |
+
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [agentmemory](https://github.com/rohitg00/agentmemory) | cross-platform, desktop | — | code Apache-2.0 | agentmemory provides persistent cross-session memory and MCP integration for coding and computer-use agents including Claude Code, Codex, and OpenClaw. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rohitg00/agentmemory/HEAD/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| [outlive](https://github.com/Sy-D/outlive) | web | — | code MIT | Checkpoints and resumes long-running Solari cloud browser sessions across 10-minute container timeouts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Sy-D/outlive/main/README.md) |
+| [Q1X Community Orchestrator](https://github.com/Quoralinex/q1x-community-orchestrator) | cross-platform, desktop, web, windows, macos, linux | — | — | Provider-neutral, OS-neutral orchestration runtime for long-horizon desktop and browser agent workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Quoralinex/q1x-community-orchestrator/main/README.md) |
+| [WebThinker](https://github.com/RUC-NLPIR/WebThinker) | web | [2504.21776](https://arxiv.org/abs/2504.21776) (2025) | code MIT | WebThinker empowers large reasoning models to autonomously search, browse webpages, and draft research reports during deep thinking. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/RUC-NLPIR/WebThinker/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: desktop, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Codex Idle Resume](https://github.com/yaro-elipox/codex-idle-resume) | — | code Apache-2.0 | Automatically resumes interrupted macOS Codex Computer Use tasks after system idle or rate-limit cooldowns. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yaro-elipox/codex-idle-resume/main/README.md) |
 
 ## Infrastructure
 

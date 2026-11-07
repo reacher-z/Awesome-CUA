@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "CrossHands",
+    "url": "https://github.com/caelaxie/crosshands",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Local computer-use runtime for coding agents exposing desktop inspection and input actions via a JSON CLI and stdio MCP.",
+    "verify_terms": [
+      "CrossHands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/caelaxie/crosshands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0c845fe3ee3789def375031b5a20704dddd3f99b6585c40e289e1b64026eaa1f"
+  },
+  {
+    "name": "AI Medical Claim Form-Filling Agent",
+    "url": "https://github.com/Caicai-Jin/ai-medicalClaimForm-filling-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "LLM-driven browser agent that extracts patient intake data and autonomously fills and submits web medical claim forms.",
+    "verify_terms": [
+      "form"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Caicai-Jin/ai-medicalClaimForm-filling-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "98d3cc451511f06c7a6d61bc5bd7c58782c885882b6a3a6865f733303437e3a7"
+  },
+  {
+    "name": "CalebNewtonUSC Nova (Mac Operator)",
+    "url": "https://github.com/calebnewtonusc/Nova",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Autonomous macOS desktop operator that inspects screen state and drives native Mac applications.",
+    "verify_terms": [
+      "nova"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/calebnewtonusc/Nova/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "187b720a2454e30c82b6b87e938ed7425d05cb9939debdb0d3bddc9a4eae17fe"
+  },
+  {
+    "name": "OWL (Optimized Workforce Learning)",
+    "url": "https://github.com/camel-ai/owl",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "OWL is a multi-agent automation framework built on CAMEL-AI for browser interaction, document processing, and real-world task execution.",
+    "verify_terms": [
+      "OWL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/camel-ai/owl/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b63fdda8103147b5ce20e29a04dbc8c36d1f9c7d24599209b2b584c5f0d4df1"
+  },
+  {
+    "name": "chatgpt-desktop-mcp",
+    "url": "https://github.com/cantbeblank96/chatgpt-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server exposing the official Ubuntu/Linux ChatGPT Desktop app via 6 AT-SPI2 accessibility tools.",
+    "verify_terms": [
+      "chatgpt-desktop-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cantbeblank96/chatgpt-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb69750a0458970bd7e864d989d18805ee03f3b3703b104e5a0356a5e123ce80"
   }
 ]

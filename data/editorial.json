@@ -86010,5 +86010,139 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OS-Symphony",
+    "url": "https://github.com/OS-Copilot/OS-Symphony",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "self-reflection",
+      "grounding"
+    ],
+    "summary": "OS-Symphony is a holistic computer-use agent framework combining a Reflection-Memory Agent, versatile toolset, and multimodal searcher.",
+    "verify_terms": [
+      "OS-Symphony"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OS-Copilot/OS-Symphony/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6a1e6c0d902f3527cae866139e88c6f9c8a5b67cc9f214c4e697a223b6336546",
+    "documented_by": [
+      "2601.07779"
+    ]
+  },
+  {
+    "name": "Universal AI Studio (OmniAI Desktop)",
+    "url": "https://github.com/osamalvzx/Universal-AI-Studio",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "All-in-one desktop AI studio integrating multi-model LLM chat, computer use, and browser automation.",
+    "verify_terms": [
+      "Universal AI Studio (OmniAI Desktop)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/osamalvzx/Universal-AI-Studio/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b919573be9c6e8f30bb385e5c310d5735dbe9077424829f59108301f07a17c9b"
+  },
+  {
+    "name": "ODK Shell",
+    "url": "https://github.com/osmandkitay/odk-shell",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "ODK Shell is an open-source natural-language computer control shell that translates user requests into OS and GUI commands.",
+    "verify_terms": [
+      "odk-shell"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/osmandkitay/odk-shell/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0ab8549ed998a38ab41cfd7071852e17723201301b331409b4a58fa35657b2c8"
+  },
+  {
+    "name": "Ossabellator Bounded Computer-Use Runtime",
+    "url": "https://github.com/OssaBellator/computer-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Bounded computer-use runtime and semantic browser engine with explicit capability and policy enforcement.",
+    "verify_terms": [
+      "computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OssaBellator/computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fd3a7aeebdd0a52bb03eafe09099b57f2fd42913b68a6f734e491bdcdcfdf3db"
+  },
+  {
+    "name": "Minecraft-RL",
+    "url": "https://github.com/otsolappalainen/Minecraft-RL",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction"
+    ],
+    "summary": "Trains Proximal Policy Optimization (PPO) agents over visual frame buffers and action sockets in parallel Minecraft environments.",
+    "verify_terms": [
+      "minecraft"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/otsolappalainen/Minecraft-RL/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3973436080c6b5154f7577179f5fb7edde171b633e1a0e6a68b166867333dcaf"
   }
 ]

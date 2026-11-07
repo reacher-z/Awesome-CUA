@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Cuse (macOS AI Cursor Agent)",
+    "url": "https://github.com/muneebkhan08/Cuse",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "human-in-the-loop"
+    ],
+    "summary": "Cuse is an open-source voice-and-text AI cursor agent for macOS that visually localizes UI controls and executes mouse and keyboard tasks.",
+    "verify_terms": [
+      "Cuse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/muneebkhan08/Cuse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8ada92d8be9a4a46b42280bcd11948ca6a3b0773aa30f246fbaee26d5c26057"
+  },
+  {
+    "name": "munim-computer-use",
+    "url": "https://github.com/munimtechnologies/munim-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding",
+      "safety-security"
+    ],
+    "summary": "munim-computer-use is a cross-platform Computer Use MCP server combining native OS accessibility trees, OCR, and policy guardrails.",
+    "verify_terms": [
+      "munim-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/munimtechnologies/munim-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2eb64a8fd70d095d8d241e22cbc3cd3d2da3c171b0a23db1b6b6674241838f6c"
+  },
+  {
+    "name": "SparkBridge",
+    "url": "https://github.com/musicjazz5/nvidia_dgx_spark",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation",
+      "sandbox"
+    ],
+    "summary": "Human-approved isolated browser bridge for local AI agents running on NVIDIA DGX Spark workstations.",
+    "verify_terms": [
+      "SparkBridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/musicjazz5/nvidia_dgx_spark/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea4336938417f32e4b882d21f5dfde84bb849567414e6c449186388c62d1fd3e"
+  },
+  {
+    "name": "forge (Readable ReAct Agent)",
+    "url": "https://github.com/musokean/forge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "sandbox",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Modular Python ReAct agent framework with a 235-line core loop and 31 opt-in sandbox, browser, and computer-use modules.",
+    "verify_terms": [
+      "forge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/musokean/forge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a76d8b4484722010dd48408b73bd4b721167b5ef88cebfd37fa1fa85a25a430"
+  },
+  {
+    "name": "Browser Agent Failure Corpus",
+    "url": "https://github.com/MutantWeb/browser-agent-failure-corpus",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "safety-security"
+    ],
+    "summary": "Browser Agent Failure Corpus is a versioned dataset of browser-agent action failures, execution traces, and guardrail counterexamples.",
+    "verify_terms": [
+      "Browser Agent Failure Corpus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MutantWeb/browser-agent-failure-corpus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "78d26a8dbaaca6da843cbacb71e271f652f5386831d6a4de1fcadbd16cb28f6a"
   }
 ]

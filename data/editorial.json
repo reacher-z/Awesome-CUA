@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "pyside6-mcp",
+    "url": "https://github.com/com55/pyside6-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "evaluation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Playwright-style Model Context Protocol server that lets AI agents inspect, control, and debug Qt/PySide6 desktop GUI applications.",
+    "verify_terms": [
+      "pyside6-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/com55/pyside6-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3c90935da4d4bbc319426d867a66230e397d6704675b30471b4835408ffa4952"
+  },
+  {
+    "name": "Browser Controller",
+    "url": "https://github.com/compnew2006/browser-controller",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MCP server and Chrome extension giving coding agents live DOM, console, and interaction control over an existing browser.",
+    "verify_terms": [
+      "Browser Controller"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/compnew2006/browser-controller/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4bba594a8758f7aaf6fa63160f61fe593b1aca04be5a22fc49f79710d60718d1"
+  },
+  {
+    "name": "DART-GUI",
+    "url": "https://github.com/Computer-use-agents/dart-gui",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "data-generation",
+      "efficiency"
+    ],
+    "summary": "DART-GUI implements decoupled multi-turn reinforcement learning and adaptive trajectory curation for training computer-use GUI agents.",
+    "verify_terms": [
+      "DART-GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Computer-use-agents/dart-gui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f16a6520155f819e507368109e013cdaa459935fa7b1faf8b8f95658cede21e9",
+    "documented_by": [
+      "2509.23866"
+    ]
+  },
+  {
+    "name": "solveReCaptcha-Typescript",
+    "url": "https://github.com/conghuy113/solveReCaptcha-Typescript",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "TypeScript library and browser automation helper for solving reCAPTCHA challenges in Playwright and Puppeteer pipelines.",
+    "verify_terms": [
+      "solveReCaptcha-Typescript"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/conghuy113/solveReCaptcha-Typescript/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "754251003ab15377befee0baaf834ad026a35a397a17bcc87b43f2c908d81c6b"
+  },
+  {
+    "name": "neuron-inspector",
+    "url": "https://github.com/conquext/neuron-inspector",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "web-navigation",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Exposes 98 Chrome inspection, DOM debugging, network tracing, and interaction tools to AI agents over MCP.",
+    "verify_terms": [
+      "neuron-inspector"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/conquext/neuron-inspector/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea5c420d44c84755ee11a3974fa3d93b0058679d0ac8175e784bdc420d789db8"
   }
 ]

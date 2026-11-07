@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ScreenPilot",
+    "url": "https://github.com/DroppingAnvil/screenpilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "efficiency",
+      "planning",
+      "grounding",
+      "automation"
+    ],
+    "summary": "ScreenPilot is a local computer-use agent designed to run within 8GB of VRAM, combining screenshot planning with mouse and keyboard control.",
+    "verify_terms": [
+      "ScreenPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DroppingAnvil/screenpilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad501e0071eb6fb09100c61b0f7266649c1313dbd7820bc3579da93507b3a281"
+  },
+  {
+    "name": "Browser LLM Perf",
+    "url": "https://github.com/dtopuzov/browser-llm-perf",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "Browser LLM Perf compares browser automation CLIs (CraftDriver vs Playwright CLI) on task completion speed and LLM token cost.",
+    "verify_terms": [
+      "Browser LLM Perf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dtopuzov/browser-llm-perf/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c30c16123f1be38a73571cac70e8db60fe26105e91940278bbc468471de2b5fe"
+  },
+  {
+    "name": "DeepSeekEyes",
+    "url": "https://github.com/dttxorg/deepseekeyes",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "observability",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Auditable vision and cross-platform computer-use runtime for DeepSeek Harness with cryptographic evidence receipts.",
+    "verify_terms": [
+      "DeepSeekEyes"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dttxorg/deepseekeyes/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d93f017154d168b26fc38c0c6965baef8e20bdfbe7c1e0f30f3fb7d6139bad06"
+  },
+  {
+    "name": "Sessionat",
+    "url": "https://github.com/dublyo/sessionat",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Sessionat is an open-source Chromium-based macOS browser with persistent workspaces and native AI agent control hooks.",
+    "verify_terms": [
+      "Sessionat"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dublyo/sessionat/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "843e4e87404db0ea9d9411bff5e0b09fe69256c388672b9b7aff99b58760907d"
+  },
+  {
+    "name": "Dugle Browser",
+    "url": "https://github.com/duckmartians/Dugle-Browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Custom Chromium build with engine-level compiled device fingerprints for stealth browser automation.",
+    "verify_terms": [
+      "dugle"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/duckmartians/Dugle-Browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bd02f9c59e8d50e440884d736df7b32d67275d44dc40abcad30f6dd630b6c8be"
   }
 ]

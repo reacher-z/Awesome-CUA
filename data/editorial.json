@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Agent Verify",
+    "url": "https://github.com/anotb/agent-verify",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "CAPTCHA and human-verification solver skill keeping ChatGPT and Codex browser automation tasks unblocked.",
+    "verify_terms": [
+      "Agent Verify"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anotb/agent-verify/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "84e8af5548322c9f802f8e0d4ced050ebeeb3b4158f41ca36aed4e5fc1a6b246"
+  },
+  {
+    "name": "anpl1623 AgentOS",
+    "url": "https://github.com/anpl1623/AgentOS",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "sandbox",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Local-first open-source agent runtime for safely executing AI-driven tasks on a user's personal computer.",
+    "verify_terms": [
+      "agentos"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anpl1623/AgentOS/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a6996e8a3e99651c9cd27b102292081d5b863100563f2b65f6700a73693336e4"
+  },
+  {
+    "name": "GUI Grounding via Iterative Narrowing",
+    "url": "https://github.com/ant-8/GUI-Grounding-via-Iterative-Narrowing",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "training-free"
+    ],
+    "summary": "Implements training-free iterative visual crop-and-narrow refinement for improving MLLM coordinate grounding on GUI screenshots.",
+    "verify_terms": [
+      "GUI Grounding via Iterative Narrowing"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ant-8/GUI-Grounding-via-Iterative-Narrowing/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6077ffcff5b375c647ea88dac59f96e2355d92d99cca6b0390b43514bc6603f9",
+    "documented_by": [
+      "2411.13591"
+    ]
+  },
+  {
+    "name": "mac-use-mcp",
+    "url": "https://github.com/antbotlab/mac-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Zero-dependency macOS desktop automation MCP server exposing 18 tools for Accessibility inspection, screenshots, and input control.",
+    "verify_terms": [
+      "mac-use-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/antbotlab/mac-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92253af2d808f3f2b62ef238b9890d2eb056f5eb060a52e6b23b045d90fcec9f"
+  },
+  {
+    "name": "Napaxi",
+    "url": "https://github.com/antgroup/Napaxi",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "sandbox",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Mobile-native agent SDK by Ant Group for building on-device AI agents with sandboxed skill execution.",
+    "verify_terms": [
+      "Napaxi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/antgroup/Napaxi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9355a9b74e93a453268c19c0f252971aacef9da88b0e57dd14477bcfd4b95eb1"
   }
 ]

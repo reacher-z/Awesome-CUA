@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "jmeguilos Computer Use MCP",
+    "url": "https://github.com/jmeguilos/computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Window-scoped macOS computer-use server over local stdio MCP using native ScreenCaptureKit and Accessibility APIs.",
+    "verify_terms": [
+      "computer use mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jmeguilos/computer-use-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7eb67f3c9723c8f422dcb50c7646733e5505bce79cd001107e77b295f648fc7b"
+  },
+  {
+    "name": "Argus CDP MCP Server",
+    "url": "https://github.com/Jmsa/argus",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Chrome DevTools Protocol MCP server giving AI agents live browser DOM, console, network, and interaction tools.",
+    "verify_terms": [
+      "argus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jmsa/argus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2491baddb31bc067be42968535a6a676b62857f15407ff9846e7f4b102d9c198"
+  },
+  {
+    "name": "Gomoku Computer-Use Model Comparison",
+    "url": "https://github.com/JNS-C/model-comparison-gomoku",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "planning",
+      "screen-understanding"
+    ],
+    "summary": "Controlled evaluation benchmark comparing frontier Claude models on interactive board-game reasoning and GUI execution.",
+    "verify_terms": [
+      "model-comparison-gomoku"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JNS-C/model-comparison-gomoku/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c2666f5f6d53a4fe8fd6f7d401f2a863b64f173a13c765277ccbca4583ca2d44"
+  },
+  {
+    "name": "Win:Computer Use MCP",
+    "url": "https://github.com/JNX03/WindownComputerUse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Windows Model Context Protocol server giving MCP clients a dedicated virtual cursor, UI Automation inspection, and desktop control.",
+    "verify_terms": [
+      "windowncomputeruse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JNX03/WindownComputerUse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f64689d6dc52e51912df801f3311a6b3e1ab62da74c91c27670620292b263a2f"
+  },
+  {
+    "name": "DeepDeck",
+    "url": "https://github.com/jo32/DeepDeck",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "macOS desktop workspace for authoring, testing, and reusing WebMCP browser tools with DeepSeek Harness.",
+    "verify_terms": [
+      "DeepDeck"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jo32/DeepDeck/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9781bc20be6b0a421c2a82ff0d1ecde969475bd0946cf44f3c2c5a953ed8493a"
   }
 ]

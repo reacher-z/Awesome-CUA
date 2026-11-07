@@ -86010,5 +86010,126 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "HeroDesktop",
+    "url": "https://github.com/deathlegionteamlk/herodesktop",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation"
+    ],
+    "summary": "HeroDesktop is an open-source virtual desktop sandbox for running and observing AI computer-use agents.",
+    "verify_terms": [
+      "HeroDesktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deathlegionteamlk/herodesktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3306458c78df7c91afe1c93c1e029244b78548c17e23dc8358eeabf08e98982e"
+  },
+  {
+    "name": "AndroidHowTo",
+    "url": "https://github.com/debymf/generating_android_howto",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "data-generation"
+    ],
+    "summary": "AndroidHowTo provides scripts and annotations for building instructional mobile UI action datasets linking how-to steps to Android screens.",
+    "verify_terms": [
+      "AndroidHowTo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/debymf/generating_android_howto/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e8c73323ff5bc5cc82583a61dea9686206ded5771235cc52b06b8d58cabad546"
+  },
+  {
+    "name": "GoSosmed Mobile Agent",
+    "url": "https://github.com/dedy45/gososmed-mobile-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Android AccessibilityService automation engine and control dashboard for managing multi-device mobile workflows.",
+    "verify_terms": [
+      "GoSosmed Mobile Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dedy45/gososmed-mobile-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e7c73bbdef1375df1b2d78798a92e432832b2b526aeec5565f570a9387826969"
+  },
+  {
+    "name": "Anthropic Computer Use for Mac",
+    "url": "https://github.com/deedy/mac_computer_use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding"
+    ],
+    "summary": "Adapts the Anthropic Claude Computer Use reference agent to control a native macOS desktop using PyAutoGUI and cliclick.",
+    "verify_terms": [
+      "mac_computer_use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deedy/mac_computer_use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df9815a5e4727c09d0d1705a2b20fd49adcfe9c64c56d3cb2f26ae51ef72addd"
+  },
+  {
+    "name": "MyFood Hermes Agent",
+    "url": "https://github.com/delltrak/myfood-hermes-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "human-in-the-loop",
+      "workflow"
+    ],
+    "summary": "Safety-first Hermes browser agent for ordering food through a visible web browser with explicit checkout confirmation.",
+    "verify_terms": [
+      "myfood-hermes-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/delltrak/myfood-hermes-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d729b49a12c53e0e85adb50d5e0d72f954e8b51568aa51c1066989795301ebe5"
   }
 ]

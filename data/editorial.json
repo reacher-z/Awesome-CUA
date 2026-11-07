@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DesktopAgent (S1-Fast)",
+    "url": "https://github.com/elidot007/desktop-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "automation"
+    ],
+    "summary": "DesktopAgent operates Windows desktop applications in the background using a local 0.33B System-One decision model (S1-Fast) and UI Automation.",
+    "verify_terms": [
+      "DesktopAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/elidot007/desktop-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "96a88efb376d6545914ff77b203bd64a03e0c262e234963f75b458e61227a7ce"
+  },
+  {
+    "name": "one-for-all",
+    "url": "https://github.com/ElijahUmana/one-for-all",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Unified macOS control plane for AI agents spanning browser automation, native desktop apps, terminals, and system hardware.",
+    "verify_terms": [
+      "one-for-all"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ElijahUmana/one-for-all/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a5dcad64a2d6c6318fece29366c4ce76f95c6cf2d5b2dc90650deff1a5e755eb"
+  },
+  {
+    "name": "clirec",
+    "url": "https://github.com/ellmos-ai/clirec",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "workflow"
+    ],
+    "summary": "Records human GUI demonstrations into human-readable, diffable CLI transcripts for training and prompting computer-use agents.",
+    "verify_terms": [
+      "clirec"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ellmos-ai/clirec/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4be05ae8ae184ce6d6020d33b8b0d7701ddf9fc945c29fd6d2934e09f7d219f9"
+  },
+  {
+    "name": "open-compute",
+    "url": "https://github.com/ellmos-ai/open-compute",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Model-agnostic computer-use core providing a unified agent loop and MCP server across Claude, OpenAI CUA, and local backends.",
+    "verify_terms": [
+      "open-compute"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ellmos-ai/open-compute/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "689f7f0a7c06b4aaa9ce9d60b61e5bae3c6e24f16230307808b95108bea1d412"
+  },
+  {
+    "name": "REDLINE WebMCP",
+    "url": "https://github.com/EloiRamos/redline",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Browser-native WebMCP authority boundary where visiting agents stage reviewable state changes for human approval.",
+    "verify_terms": [
+      "redline"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EloiRamos/redline/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f50075a1a3a751c2950f873e01c521ec24c6cb7e9ea7ba8a5c6db7caacaf367a"
   }
 ]

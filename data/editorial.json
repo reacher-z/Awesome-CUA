@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Open Interface",
+    "url": "https://github.com/AmberSahdev/Open-Interface",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "action-prediction"
+    ],
+    "summary": "Open Interface is a cross-platform desktop application that translates natural-language requests into GUI mouse and keyboard actions via LLMs.",
+    "verify_terms": [
+      "Open Interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AmberSahdev/Open-Interface/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ec2d1a720804c82b7eb0013e8258eb995f1cc1cb7ad7c44d2db7b1c033e403ff"
+  },
+  {
+    "name": "Ghosthand",
+    "url": "https://github.com/ameerhmz/ghosthand",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Ghosthand is a low-latency local voice and computer-use agent for Apple Silicon macOS powered by Laya models and native Accessibility APIs.",
+    "verify_terms": [
+      "Ghosthand"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ameerhmz/ghosthand/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b8ecdf4de41583053b8a0ba564baf6a3897c73b3e079dabef604a49a500a0b82"
+  },
+  {
+    "name": "Orbination AI Desktop Vision & Control",
+    "url": "https://github.com/amichail-1/Orbination-AI-Desktop-Vision-Control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Native Windows MCP server combining UI Automation, dark-theme-aware OCR, visual grounding, and mouse/keyboard control.",
+    "verify_terms": [
+      "Orbination AI Desktop Vision & Control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amichail-1/Orbination-AI-Desktop-Vision-Control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f61867c4c4622cd4fc7e263d4efc2c410859ea177dda70c5262ac43eafe115e0"
+  },
+  {
+    "name": "Nanobrowser Free AI",
+    "url": "https://github.com/AmineMabrouk17/nanobrowser-free-ai",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "automation"
+    ],
+    "summary": "Privacy-focused Chrome extension multi-agent web automation assistant powered by free-tier Gemini models.",
+    "verify_terms": [
+      "Nanobrowser Free AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AmineMabrouk17/nanobrowser-free-ai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2ed04126adc19fde173471577ecc5e84faf948e56aaa49c8f8a0d18cf60fad4d"
+  },
+  {
+    "name": "Active Desktop Context Engine",
+    "url": "https://github.com/amirf147/active-desktop-context-engine",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "state-tracking",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Zero-cloud Windows OS perception layer and Model Context Protocol server streaming real-time desktop UI context to AI agents.",
+    "verify_terms": [
+      "Active Desktop Context Engine"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amirf147/active-desktop-context-engine/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "53cf2047a4cda292e724cbeead41f30b745c2a25aa75af221eea9e7a42d503d9"
   }
 ]

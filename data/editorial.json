@@ -86010,5 +86010,232 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "TinyFish MCP Server",
+    "url": "https://github.com/tinyfish-io/tinyfish-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Official TinyFish Model Context Protocol server providing web search, page extraction, and cloud browser automation.",
+    "verify_terms": [
+      "TinyFish MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tinyfish-io/tinyfish-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6af64d6f344818d642c79f3888522a838098e62913523e5a1d7785d0d2ef050c"
+  },
+  {
+    "name": "tinybrowser",
+    "url": "https://github.com/tinyhumansai/tinybrowser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Rust-friendly agent browser API and TinyBus module for managing headless and headful web sessions.",
+    "verify_terms": [
+      "tinybrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tinyhumansai/tinybrowser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9909da51d0093c310a1ff7bb08bfb08f3cba4069be70db3839bf7448edff7ef0"
+  },
+  {
+    "name": "tinycomputer",
+    "url": "https://github.com/tinyhumansai/tinycomputer",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Jev decision-model harness for fast desktop and browser action execution.",
+    "verify_terms": [
+      "tinycomputer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tinyhumansai/tinycomputer/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2062dec3ee69039c7f23537b30c7cc45ba592ec9ce0d5b3bab04681fb6232ffa"
+  },
+  {
+    "name": "GhostPilot",
+    "url": "https://github.com/tlejay/ghostpilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "GhostPilot is a macOS Chromium browser with a built-in Model Context Protocol server so Claude and coding agents can co-browse live tabs.",
+    "verify_terms": [
+      "GhostPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tlejay/ghostpilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "28aed7fa35433239f9a0f45dc8c4528c002ba2015b480c4a90ae2f6131a053e5"
+  },
+  {
+    "name": "Codex Computer Use MCP (Signed Broker Bridge)",
+    "url": "https://github.com/tmustier/codex-computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Background-safe MCP server that exposes OpenAI's signed macOS Codex Computer Use broker to Pi and MCP clients.",
+    "verify_terms": [
+      "Codex Computer Use MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tmustier/codex-computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "53776b89fe83ff66d97131efb29e92e1fb0dce8996a0505aaa1c6202059645f3"
+  },
+  {
+    "name": "PortaMCP",
+    "url": "https://github.com/TNLegend/PortaMCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Client-neutral Model Context Protocol server and secure desktop Control Center for Windows automation.",
+    "verify_terms": [
+      "PortaMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TNLegend/PortaMCP/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "567aa64978c78984f9f1b3f4275cf8600ff4999725e936d76796b5fccd918582"
+  },
+  {
+    "name": "Rapid PC Use",
+    "url": "https://github.com/tntcannon5000/rapid-pc-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "High-speed native Windows desktop control bridge for Codex and ChatGPT desktop.",
+    "verify_terms": [
+      "Rapid PC Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tntcannon5000/rapid-pc-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1a1ab1d6a3fa289723e2fbdee60840121412cd29c3c9d68e4a967fb3e4400aa8"
+  },
+  {
+    "name": "UI Act",
+    "url": "https://github.com/TobiasNorlund/UI-Act",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "UI Act is a Linux desktop computer-use agent that operates alongside the user via a dedicated virtual mouse and keyboard cursor.",
+    "verify_terms": [
+      "UI Act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TobiasNorlund/UI-Act/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bf00399ca8aebd400aceba9708ccfa1134cdb6f5234526afbbb8c94c2a6a1018"
+  },
+  {
+    "name": "TODO for AI Edge",
+    "url": "https://github.com/todoforai/edge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "TODO for AI Edge connects a local machine's shell, filesystem, and browser to the TODO for AI agent orchestration platform.",
+    "verify_terms": [
+      "TODO for AI Edge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/todoforai/edge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "366d90916ed759ffa6bbd0a40f49d3b8cd4b6d67e245eef0a4e56b94322d463d"
   }
 ]

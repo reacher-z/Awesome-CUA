@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Orbit (orbit-cua)",
+    "url": "https://github.com/aadya940/orbit",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "grounding"
+    ],
+    "summary": "Orbit is a Python computer-use framework that combines natural-language screen grounding with composable, typed workflow steps.",
+    "verify_terms": [
+      "Orbit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aadya940/orbit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c98a912445159a718790e5aa6bbfc60f9948e7cb69440493616df8bcb67e7420"
+  },
+  {
+    "name": "Orbit UI",
+    "url": "https://github.com/aadya940/orbit-ui",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Self-hosted visual workflow builder for authoring and running desktop computer-use automation inside Docker containers.",
+    "verify_terms": [
+      "orbit-ui"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aadya940/orbit-ui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4aa9195e3f6ff582fd7ef0d8da475248efd18f589d3a956d2d4a9d36c91cfc8c"
+  },
+  {
+    "name": "UserZero",
+    "url": "https://github.com/aafre/userzero",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "Synthetic first-user evaluation harness that verifies web applications by attempting onboarding and core flows with AI browser agents.",
+    "verify_terms": [
+      "UserZero"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aafre/userzero/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "60516db495ca068d602530c1826607e9af6f89bf36c398eff6ee85c045589e06"
+  },
+  {
+    "name": "DevTools Lens MCP",
+    "url": "https://github.com/aakcay5656/devtools-lens-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "tool-integration",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Chrome DevTools Model Context Protocol server exposing console, network, DOM, and performance inspection to AI agents.",
+    "verify_terms": [
+      "DevTools Lens MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aakcay5656/devtools-lens-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b7cd917a90afe122f1318c59b08f997aa0002a2626e55aa2e8bc76a1dbdfcafe"
+  },
+  {
+    "name": "WATCHER",
+    "url": "https://github.com/Aaman-911/watcher",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Prompt-injection defense classifier, evaluation benchmark, and defended browser harness for autonomous web agents.",
+    "verify_terms": [
+      "WATCHER"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Aaman-911/watcher/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1153559776f26627d176badbaeeaf1e5c5f80f7b9aa577f34d580a8e848a941e"
   }
 ]

@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "AH64-dll Browser Automation Toolkit",
+    "url": "https://github.com/AH64-dll/browser-automation-toolkit",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "state-tracking",
+      "automation"
+    ],
+    "summary": "Suite of five Python CDP utilities including a page watcher, form filler, table scraper, DOM change differ, and health checker.",
+    "verify_terms": [
+      "browser automation toolkit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AH64-dll/browser-automation-toolkit/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4c494847d3bf03c59c67e2e801d188859074c8975d5e77faf5e8f843ec1f19d0"
+  },
+  {
+    "name": "PyMCPAutoGUI",
+    "url": "https://github.com/ahaufox/PyMCPAutoGUI",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "grounding",
+      "automation"
+    ],
+    "summary": "PyMCPAutoGUI is a cross-platform MCP server combining PyAutoGUI mouse/keyboard control, window management, and EasyOCR screen text localization.",
+    "verify_terms": [
+      "PyMCPAutoGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ahaufox/PyMCPAutoGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "67e3139716d5e79ce8e4025214e4ad7f33074bb76efa9fbc2a5432ed2596c6eb"
+  },
+  {
+    "name": "DSH Browser Control",
+    "url": "https://github.com/Ahaway1st/dsh-browser-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness plugin that lets agents directly control the user's real, logged-in web browser.",
+    "verify_terms": [
+      "DSH Browser Control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ahaway1st/dsh-browser-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f4615dcdbe683266225dd6f8d9f898c1f7213f158a2abf799954632af191bca"
+  },
+  {
+    "name": "DeskSwarm",
+    "url": "https://github.com/ahmedvnabil/deskswarm",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Self-hosted fleet manager for provisioning and dispatching natural-language tasks across parallel XFCE Linux desktop sandboxes.",
+    "verify_terms": [
+      "DeskSwarm"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ahmedvnabil/deskswarm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "13650d80a7e88bcde5c3ae14bd1312aa4d9f5456f28ba3f91bcca6db8215f42a"
+  },
+  {
+    "name": "FlashAdventure",
+    "url": "https://github.com/ahnjaewoo/FlashAdventure",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "memory",
+      "planning"
+    ],
+    "summary": "FlashAdventure benchmarks GUI agents on solving complete story arcs across 34 Flash point-and-click adventure games requiring long-term memory.",
+    "verify_terms": [
+      "FlashAdventure"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ahnjaewoo/FlashAdventure/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6c7bd2eb4647d2a6e1be92c95b2675cf9ca2bc89810c009e207b8fc05dc2378e",
+    "documented_by": [
+      "2509.01052"
+    ]
   }
 ]

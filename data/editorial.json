@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MarkForge",
+    "url": "https://github.com/Lannistersyh/MarkForge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "training-free"
+    ],
+    "summary": "MarkForge provides deterministic, auditable Set-of-Mark badge rendering and coordinate resolution for multimodal GUI agents.",
+    "verify_terms": [
+      "MarkForge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Lannistersyh/MarkForge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d3b3f006766363e761fbb706869fdb8ba994b2946dd47a88487db2fa1635660f"
+  },
+  {
+    "name": "Language Agent Tree Search (LATS)",
+    "url": "https://github.com/lapisrocks/LanguageAgentTreeSearch",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "self-reflection",
+      "web-navigation"
+    ],
+    "summary": "Language Agent Tree Search (LATS) unifies LLM reasoning, acting, and Monte Carlo Tree Search with self-reflection on WebShop and programming tasks.",
+    "verify_terms": [
+      "Language Agent Tree Search (LATS)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lapisrocks/LanguageAgentTreeSearch/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bc8d46c7a94022a5235eeb3918810b50339e4828943f894ce795c93e4b9a9ab8"
+  },
+  {
+    "name": "agentic-browser-boundary-tests",
+    "url": "https://github.com/larrypeseckis/agentic-browser-boundary-tests",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Local test suite of prompt-injection and instruction-authority boundary scenarios with canary checks for AI browsers and web agents.",
+    "verify_terms": [
+      "agentic-browser-boundary-tests"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/larrypeseckis/agentic-browser-boundary-tests/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8b3f1efea6173921f2f892f1e9180674209a05bce9c3dbc69f69c90fe650697"
+  },
+  {
+    "name": "Latere Sandbox Images",
+    "url": "https://github.com/latere-ai/sandbox-images",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Container images for coding and computer-use desktop agents compatible with Docker, Podman, and Cella sandboxes.",
+    "verify_terms": [
+      "sandbox images"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/latere-ai/sandbox-images/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e5b1771e3d6f24f30f62abd831b8d03f9a4560ed5ab9798484ef8e52c335fee9"
+  },
+  {
+    "name": "lauyuen stealth-browser-mcp",
+    "url": "https://github.com/lauyuen/stealth-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server providing AI assistants with a stealth-configured Chrome browser.",
+    "verify_terms": [
+      "stealth-browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lauyuen/stealth-browser-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d0cde2f69519780667bf06348760b6a843905601fe10e883a74f69b329a65706"
   }
 ]

@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-34 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
+48 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Agents (2)](#agents) · [Frameworks (11)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Pathproof](https://github.com/mikulabc/pathproof) | — | — | code MIT | Local-first AI-assisted website regression discovery suite with deterministic Playwright replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mikulabc/pathproof/main/README.md) |
 
 ## Datasets
 
@@ -26,7 +34,15 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
+| [Automata](https://github.com/mindattic/Automata) | desktop, windows, web | — | code MIT | Record-once, replay-many browser automation runtime for Windows that records live user actions into deterministic workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mindattic/Automata/main/README.md) |
+| [axstream](https://github.com/milind-soni/axstream) | desktop, macos | — | code MIT | Streaming JSON-lines action language and compiler for macOS computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/milind-soni/axstream/HEAD/README.md) |
+| [Paragent](https://github.com/myselfsiddharth/Paragent) | web | — | code MIT | Stateful browser execution layer that records an agent task once, replays it without LLM calls, and self-repairs when selectors change. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/myselfsiddharth/Paragent/HEAD/README.md) |
+| [PUDA guidriver](https://github.com/PUDAP/guidriver) | desktop, windows | — | — | Windows-first edge service for recording, verifying, and deterministically replaying reviewed GUI workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/PUDAP/guidriver/main/README.md) |
+| [Replay (Teach-by-Demonstration)](https://github.com/misb74/Replay) | cross-platform, desktop, web | — | code Apache-2.0 | Converts human screen demonstrations of real desktop and web work into verifiable, repeatable AI agent workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/misb74/Replay/main/README.md) |
+| [RPA-Everything](https://github.com/mingqian94/RPA-Everything) | cross-platform, web, desktop, android, windows | — | code Apache-2.0 | Compiles repeated browser, desktop, Android, and office workflows into reviewed, deterministic RPA skills for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mingqian94/RPA-Everything/HEAD/README.md) |
 | [SeleniumBase](https://github.com/seleniumbase/SeleniumBase) | web | — | — | Python browser automation framework for web crawling, end-to-end testing and scraping, with a recorder that generates tests and stealth options. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/seleniumbase/SeleniumBase/b806f54ab0c998c90654b59a817d959f7ff7920c/README.md) |
+| [SuperSelector Studio](https://github.com/pirate/cua-superselector) | cross-platform, desktop, web | — | — | Resilient, cacheable fuzzy UI element identifiers and studio for Codex Computer Use recording and replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pirate/cua-superselector/HEAD/README.md) |
+| [TeachReplay](https://github.com/Ottohere-Mourn/TeachReplay) | cross-platform, desktop, web | — | code Apache-2.0 | TeachReplay is a harness-agnostic teach-by-demonstration engine that records human UI workflows and compiles them into parameterized skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ottohere-Mourn/TeachReplay/HEAD/README.md) |
 | [Work2Skill](https://github.com/china-qijizhifeng/Work2Skill) | desktop, macos, linux | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | code MIT | Collects human GUI demonstrations and inspects multimodal evidence to derive reusable agent workflow skills. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/HEAD/README.md) |
 
 ## Tools
@@ -34,8 +50,13 @@ All entries in this section: desktop.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder) | desktop, windows | — | — | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/anikasomaia/local-activity-recorder/967cea087bf6496b3b82743fb96770fa29f8e203/README.md) |
+| [activity-frames](https://github.com/nossa-y/activity-frames) | desktop, macos, windows, linux | [2608.05784](https://arxiv.org/abs/2608.05784) (2026) | code MIT | Converts continuous local desktop activity into structured, queryable workflow frames served over MCP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nossa-y/activity-frames/HEAD/README.md) |
+| [augur-sdk](https://github.com/mercurialsolo/augur-sdk) | cross-platform, desktop, web | — | code Apache-2.0 | augur-sdk instruments screenshot-grounded computer-use agents to record structured telemetry bundles, screenshots, and failure traces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mercurialsolo/augur-sdk/HEAD/README.md) |
 | [Browser Use WebUI](https://github.com/browser-use/web-ui) | web | — | code MIT | A Gradio interface for configuring and running Browser Use agents, including persistent browser sessions and interaction recordings. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browser-use/web-ui/HEAD/README.md) |
+| [DSH Patrol](https://github.com/qigelunbiya/DSH-Patrol) | web | — | code MIT | Teach-once, patrol-repeatedly website inspection and monitoring plugin for DeepSeek Harness. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qigelunbiya/DSH-Patrol/main/README.md) |
+| [gpuview](https://github.com/OnlyTerp/gpuview) | desktop, windows | — | code MIT | GPU-native Windows screen perception tool capturing frames directly from the DXGI Desktop Duplication compositor handoff for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OnlyTerp/gpuview/HEAD/README.md) |
 | [Libretto](https://github.com/cashew-labs/libretto) | web | — | code MIT | Libretto is a toolkit that gives coding agents a live browser and CLI to inspect pages, record user actions, build scripts, and debug web integrations. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/cashew-labs/libretto/41ab782ccea765d7a9a3c9b56b1b2586723962e3/README.md) |
+| [Pagecast MCP](https://github.com/mcpware/pagecast) | web | — | code MIT | Playwright and FFmpeg Model Context Protocol server that records browser agent interactions as GIFs or MP4 videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mcpware/pagecast/HEAD/README.md) |
 
 ## Infrastructure
 

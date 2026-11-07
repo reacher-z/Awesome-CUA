@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**98 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (58)](#cross-platform) · [Unspecified (2)](#unspecified)
+**102 resources:** [Web (14)](#web) · [Desktop (9)](#desktop) · [Mobile (15)](#mobile) · [Cross-platform (61)](#cross-platform) · [Unspecified (3)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -101,6 +101,9 @@ All entries in this section: web.
 | [InfiGUI-G1 7B](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B) | cross-platform | [2508.05731](https://arxiv.org/abs/2508.05731) (2025) | weights apache-2.0 | A GUI-grounding checkpoint trained with adaptive exploration rewards and multiple candidate answers to improve instruction-to-element alignment. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-G1-7B/raw/main/README.md) |
 | [InfiGUI-R1](https://github.com/Reallm-Labs/InfiGUI-R1) | cross-platform | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | code Apache-2.0 | 3B GUI agent trained in two stages: distilling spatial reasoning from teacher models, then reinforcement learning that rewards accurate sub-goals and trains error recovery. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Reallm-Labs/InfiGUI-R1/HEAD/README.md) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
+| [InternVL](https://github.com/OpenGVLab/InternVL) | cross-platform, web, desktop, android | — | code MIT | Official repository for the InternVL open-source multimodal foundation model family supporting high-resolution GUI grounding and visual reasoning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenGVLab/InternVL/HEAD/README.md) |
+| [Mano-P](https://github.com/Mininglamp-AI/Mano-P) | cross-platform, desktop, web, android | — | code Apache-2.0 | Mano-P is an open-source GUI vision-language-action model optimized for edge devices and evaluated on OSWorld and Mind2Web. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mininglamp-AI/Mano-P/HEAD/README.md) |
+| [OneJev](https://github.com/OmniJev/OneJev) | cross-platform, web, desktop, android | — | code Apache-2.0 | OneJev is a multimodal System-One decision model based on Qwen that returns calibrated probabilities over typed action choices. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OmniJev/OneJev/HEAD/README.md) |
 | [OpenAI CUA](https://openai.com/index/computer-using-agent/) | web, desktop | — | — | Computer-using model introduced with the Operator research preview. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [OpenMobile-2 27B](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint based on Qwen3.6-27B for GUI and app-native tool interaction. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-27B/raw/main/README.md) |
 | [OpenMobile-2 9B](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B) | android, web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | weights apache-2.0 | Mobile-agent checkpoint trained on OpenMobile-Data-v2 for screenshot actions and app-native tool calls. | [✓ 2026‑10‑17](https://huggingface.co/OpenMobile-2/OpenMobile-2-9B/raw/main/README.md) |
@@ -142,6 +145,7 @@ All entries in this section: unspecified.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [MM-Eureka](https://github.com/ModalMinds/MM-EUREKA) | — | code Apache-2.0 | MM-Eureka provides rule-based multimodal reinforcement learning code, models, and datasets based on OpenRLHF and InternVL. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ModalMinds/MM-EUREKA/HEAD/README.md) |
 | [OmniParser v2 model bundle](https://huggingface.co/microsoft/OmniParser-v2.0) | — | weights Mixed by component: icon_detect = AGPL-3.0; icon_detect_v3 = MIT; icon_caption = MIT | A screen-parsing weight bundle containing icon-region detectors and an icon captioner for converting screenshots into agent-readable interface elements. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/OmniParser/HEAD/README.md) |
 | [ShowUI-π checkpoint](https://huggingface.co/showlab/ShowUI-pi) | [2512.24965](https://arxiv.org/abs/2512.24965) (2025) | — | A compact visual-action checkpoint that predicts continuous GUI drag trajectories from a screenshot and a natural-language instruction. | [✓ 2026‑10‑17](https://huggingface.co/showlab/ShowUI-pi/raw/main/README.md) |
 

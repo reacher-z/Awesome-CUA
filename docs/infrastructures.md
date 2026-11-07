@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**16 resources:** [Web (3)](#web) · [Desktop (7)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (3)](#cross-platform)
+**17 resources:** [Web (3)](#web) · [Desktop (7)](#desktop) · [Mobile (3)](#mobile) · [Cross-platform (4)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -52,6 +52,7 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- | --- |
 | [Agent Infra Sandbox](https://github.com/agent-infra/sandbox) | desktop, web | — | code Apache-2.0 | Sandbox environments supporting computer and browser interaction. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agent-infra/sandbox/HEAD/README.md) |
 | [BrowserOS / BrowserOS neo](https://github.com/browseros-ai/BrowserOS) | web, desktop, windows, macos, linux | — | code AGPL-3.0 | Chromium-based browser implementations for external agent control and built-in assistant workflows, with session visibility and replay facilities. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md) |
+| [Browserplane](https://github.com/mathisarends/browserplane) | web, desktop, linux | — | — | Reference control plane for scaling remote Chromium browsers with a Postgres-backed session broker and live WebSocket tab mirroring. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mathisarends/browserplane/main/README.md) |
 | [Universe legacy GUI interaction client](https://github.com/openai/universe) | web, desktop | — | code MIT | An archived Gym-compatible client that exposes screen observations and keyboard/mouse actions over VNC for remote application and browser environments, including the historical World of Bits integration. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/openai/universe/HEAD/README.rst) |
 
 [↑ Back to top](#infrastructure-catalog)

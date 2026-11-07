@@ -2,39 +2,59 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-211 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
+226 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
+**Contents:** [Benchmarks (16)](#benchmarks) · [Datasets (2)](#datasets) · [Frameworks (9)](#frameworks) · [Tools (1)](#tools) · [Surveys (2)](#surveys) · [Papers (196)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Adversarial Web Agents](https://github.com/ChenWu98/agent-attack) | web | [2406.12814](https://arxiv.org/abs/2406.12814) (2024) | — | — | Evaluation resources for adversarial attacks on multimodal web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ChenWu98/agent-attack/HEAD/README.md) |
+| [AgentForge](https://github.com/MoeenAsim/Agentforge-V5) | cross-platform, desktop, web | — | — | — | Multi-agent adversarial evaluation and safety-checking laboratory for stress-testing computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MoeenAsim/Agentforge-V5/main/README.md) |
 | [B-MoCA](https://github.com/jylee425/b-moca) | android | — | [131 task-definition files](https://api.github.com/repos/jylee425/b-moca/git/trees/release/ver.3?recursive=1) · [35 environment configuration rows](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/asset/environments/config/environments_train.csv) | code Apache-2.0 | Mobile control benchmark with varied interface configurations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/readme.md) |
+| [Collision Canary](https://github.com/mystiquemide/collision-canary) | web | — | — | code MIT | Multi-actor invariant verification harness that drives two concurrent browser agents against a shared backend to uncover race bugs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mystiquemide/collision-canary/main/README.md) |
+| [cua_reliability (SA-OPSD)](https://github.com/mercurialsolo/sa-opsd) | desktop, web | — | — | code Apache-2.0 | Provides the cua_reliability evaluation toolkit and reference training code for measuring stopping and abstention reliability in CUA RL. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mercurialsolo/sa-opsd/HEAD/README.md) |
+| [dom-drift-bench](https://github.com/NotEl1gible/dom-drift-bench) | web | — | — | code MIT | dom-drift-bench evaluates four web extraction and grounding strategies across ten categories of structural DOM drift. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NotEl1gible/dom-drift-bench/HEAD/README.md) |
+| [FixtureBench](https://github.com/Prabal-Singh/fixturebench) | web | — | — | code MIT | FixtureBench evaluates procurement browser agents on deterministic Coupa-style buyer/supplier portals with pagination, MFA, and decoy POs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Prabal-Singh/fixturebench/HEAD/README.md) |
 | [GUI-Robust](https://github.com/chessbean1/GUI-Robust) | cross-platform | [2506.14477](https://arxiv.org/abs/2506.14477) (2025) | — | — | Evaluation scripts and linked data for comparing GUI action predictions and task execution under ordinary and anomalous interface conditions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/chessbean1/GUI-Robust/HEAD/README.md) |
 | [GUIHalluBench](https://github.com/ant-research/GUIHalluBench) | cross-platform | — | [1,000 page-annotation entries](https://raw.githubusercontent.com/ant-research/GUIHalluBench/HEAD/README.md) | — | Measures hallucination in UI-element parsing by matching the boxes and descriptions a model lists for 1,000 English and 1,000 Chinese screenshots against human annotations. | [✓ 2026‑10‑16](https://github.com/ant-research/GUIHalluBench) |
 | [MLA-Trust](https://github.com/thu-ml/MLA-Trust) | web, android, cross-platform | [2506.01616](https://arxiv.org/abs/2506.01616) (2025) | — | code MIT | Unified evaluation framework measuring truthfulness, controllability, safety, and privacy of multimodal LLM agents across interactive web and mobile GUI tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/thu-ml/MLA-Trust/HEAD/README.md) |
 | [Mobile-Bench-v2 released data](https://huggingface.co/datasets/xwk123/MobileBench-v2) | android | [2505.11891](https://arxiv.org/abs/2505.11891) (2025) | — | — | Offline mobile-agent task data spanning common tasks and released noisy, contaminated and ambiguous-instruction subsets. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xwk123/MobileBench-v2/raw/main/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
+| [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | web, desktop | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
 | [ScreenSpot-v2 instruction variants](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants) | cross-platform | — | [4 instruction types](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) | — | Instruction variants over ScreenSpot-v2 screenshots that distinguish original commands, explicit actions, target descriptions and impossible operations. | [✓ 2026‑10‑17](https://huggingface.co/datasets/likaixin/ScreenSpot-v2-variants/raw/main/README.md) |
 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | desktop, windows | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | [141 tasks](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [11 Windows applications](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [20 task IDs](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_custom.json) | code MIT | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) |
 | [WorldGUI](https://github.com/showlab/WorldGUI) | desktop | [2502.08047](https://arxiv.org/abs/2502.08047) (2025) | — | — | 611 desktop GUI tasks that agents must complete from varied starting points, shipped with instructional videos and project files, plus the self-reflective WorldGUI-Agent baseline. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/WorldGUI/HEAD/README.md) |
 
 ## Datasets
 
-All entries in this section: cross-platform.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [RoTS](https://github.com/AlibabaResearch/RoTS) | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Browser Agent Failure Corpus](https://github.com/MutantWeb/browser-agent-failure-corpus) | web | — | — | — | Browser Agent Failure Corpus is a versioned dataset of browser-agent action failures, execution traces, and guardrail counterexamples. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MutantWeb/browser-agent-failure-corpus/HEAD/README.md) |
+| [RoTS](https://github.com/AlibabaResearch/RoTS) | cross-platform | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
+| [Browser Reliability Runtime](https://github.com/oosuhada/browser-reliability-runtime) | web | — | — | Multimodal browser reliability runtime for failure diagnosis, policy-aware recovery, and action verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/oosuhada/browser-reliability-runtime/main/README.md) |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [hands-off](https://github.com/Niramay-Kelkar/hands-off) | desktop, web | — | code MIT | hands-off discovers UI workflows in legacy back-office software without APIs and compiles them into deterministic replay scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Niramay-Kelkar/hands-off/HEAD/README.md) |
+| [MobilePilot Runtime](https://github.com/qizhanggu/mobilepilot-runtime) | android | — | code MIT | MobilePilot is an auditable Android GUI agent runtime with structured action verification, on-demand UI trees, and bounded error recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qizhanggu/mobilepilot-runtime/HEAD/README.md) |
+| [Paragent](https://github.com/myselfsiddharth/Paragent) | web | — | code MIT | Stateful browser execution layer that records an agent task once, replays it without LLM calls, and self-repairs when selectors change. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/myselfsiddharth/Paragent/HEAD/README.md) |
+| [QUESTZ](https://github.com/PNX89/QUESTZ) | web | — | code MIT | Fail-closed browser automation reliability framework that halts execution on structural DOM drift before corrupting downstream data. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/PNX89/QUESTZ/main/README.md) |
+| [SuperSelector Studio](https://github.com/pirate/cua-superselector) | cross-platform, desktop, web | — | — | Resilient, cacheable fuzzy UI element identifiers and studio for Codex Computer Use recording and replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pirate/cua-superselector/HEAD/README.md) |
+| [Tsaagan](https://github.com/michaelolmos/tsaagan) | web | — | code MIT | Tsaagan is a verify-first browser control framework for AI agents that proves every click and form action succeeded before advancing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/michaelolmos/tsaagan/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [browser-account-guard & flaky-browser-ui](https://github.com/praticoeq-sudo/browser-account-guard) | — | code MIT | Pair of Claude skills for protecting account credentials and stabilizing flaky UI interactions when agents drive web panels. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/praticoeq-sudo/browser-account-guard/main/README.md) |
 
 ## Surveys
 

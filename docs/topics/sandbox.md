@@ -2,33 +2,69 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-88 source-reviewed resources tagged `sandbox`. Curated metadata; unknown facts are shown as —.
+123 source-reviewed resources tagged `sandbox`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Infrastructure (8)](#infrastructure) · [Products (5)](#products) · [Papers (68)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Agents (6)](#agents) · [Frameworks (13)](#frameworks) · [Tools (15)](#tools) · [Infrastructure (9)](#infrastructure) · [Products (5)](#products) · [Learning resources (1)](#learning-resources) · [Papers (68)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AppSim-Bench](https://github.com/Acrab-Agentic-Labs/AppSim) | android | [2609.07712](https://arxiv.org/abs/2609.07712) (2026) | [557 tasks](https://arxiv.org/abs/2609.07712) · [17 applications](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) | — | Simulated mobile applications and evaluation tooling for reproducible GUI-agent tasks with controlled application state. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim/HEAD/README.md) |
+| [HealthEnv](https://github.com/possibleme2026-lang/healthenv) | web, desktop | — | — | code Apache-2.0 | HealthEnv compiles longitudinal clinical question-answering tasks into stateful, verifiable computer-use evaluation environments. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/possibleme2026-lang/healthenv/HEAD/README.md) |
 | [MobileGym](https://github.com/Purewhiter/mobilegym) | web | [2605.26114](https://arxiv.org/abs/2605.26114) (2026) | [416 task templates](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [28 simulated apps](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) · [160 task identifiers](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/bench_env/splits/train.txt) | code Apache-2.0 · data CC-BY-NC-4.0 | A browser-hosted mobile-app simulator with programmable state, parameterized tasks and deterministic state-checking judges for parallel GUI-agent evaluation and online reinforcement learning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Purewhiter/mobilegym/HEAD/README.md) |
+| [openadapt-evals](https://github.com/OpenAdaptAI/openadapt-evals) | desktop, windows, web | — | — | code MIT | openadapt-evals scores GUI agents and compiled workflows on benchmarks such as Windows Agent Arena using reproducible evaluators. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-evals/HEAD/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
+| [pantheon-webarena](https://github.com/pantheon-auto/pantheon-webarena) | web | — | — | code Apache-2.0 | pantheon-webarena packages containerized WebArena environments with reset, health-check, and parallel evaluation utilities for web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pantheon-auto/pantheon-webarena/HEAD/README.md) |
 
 ## Agents
 
-All entries in this section: desktop, linux, web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Agent Zero](https://github.com/agent0ai/agent-zero) | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent Zero](https://github.com/agent0ai/agent-zero) | desktop, linux, web | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
+| [Doppel](https://github.com/Orvii/doppel) | desktop, windows, linux | — | code MIT | Doppel is a computer-use agent that operates inside a dedicated virtual desktop with its own cursor on Windows 11 and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Orvii/doppel/HEAD/README.md) |
+| [Locopilot](https://github.com/pradhankukiran/locopilot) | desktop, linux | — | code Apache-2.0 | Supervised Linux desktop automation copilot featuring sandboxed execution, policy guardrails, and rollback checkpoints. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pradhankukiran/locopilot/HEAD/README.md) |
+| [Mantis](https://github.com/mercurialsolo/mantis) | desktop, web, linux | — | code AGPL-3.0 | Mantis is a unified perception-reasoning-action computer-use agent that drives browsers and Xvfb desktop applications from structured plans. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mercurialsolo/mantis/HEAD/README.md) |
+| [OpenAI Codex CLI](https://github.com/openai/codex) | cross-platform, desktop, macos, linux, windows | — | code Apache-2.0 | OpenAI Codex CLI is a local terminal and desktop coding agent that executes commands and edits files inside OS-enforced sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/openai/codex/HEAD/README.md) |
+| [Piskie](https://github.com/piskie-dev/piskie) | cross-platform, desktop, web | — | code MIT | Desktop AI agent for the real web equipped with a built-in anti-detect fingerprint browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/piskie-dev/piskie/main/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentStudio](https://github.com/skyworkai/agent-studio) | desktop, linux | [2403.17918](https://arxiv.org/abs/2403.17918) (2024) | code AGPL-3.0 | Toolkit and Ubuntu-based environment for building and evaluating generalist computer-use agents through GUI and API interaction. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/skyworkai/agent-studio/HEAD/README.md) |
+| [aos (Agent Operating System CLI)](https://github.com/muthuishere/aos) | cross-platform, desktop, linux, macos, windows | — | — | Unified CLI layer over host machines allowing AI agents to drive desktop apps and terminals without taking over user focus. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/muthuishere/aos/main/README.md) |
+| [BrowserTunnel](https://github.com/mathisarends/browsertunnel) | web | — | — | Streams and mirrors a live Chromium tab into a web page over a single WebSocket for remote agent observation and takeover. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mathisarends/browsertunnel/main/README.md) |
+| [Celestea Harness Studio](https://github.com/Mcd0LUO/Celestea-Harness-Studio) | cross-platform, desktop, web | — | code MIT | Self-hosted AI agent workbench combining a web UI, TypeScript backend, sandboxed tool execution, and browser control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mcd0LUO/Celestea-Harness-Studio/main/README.md) |
+| [CUArena](https://github.com/ogutdgn/CUArena) | desktop, web, linux | — | — | CUArena wraps desktop and web applications into resettable, observable, and programmatically gradable reinforcement-learning environments. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ogutdgn/CUArena/HEAD/README.md) |
+| [forge (Readable ReAct Agent)](https://github.com/musokean/forge) | cross-platform, desktop, web | — | code MIT | Modular Python ReAct agent framework with a 235-line core loop and 31 opt-in sandbox, browser, and computer-use modules. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/musokean/forge/main/README.md) |
+| [OpenHands](https://github.com/OpenHands/OpenHands) | cross-platform, desktop, web, linux | — | — | OpenHands is an open-source platform for software development and computer-use agents equipped with a sandboxed shell, code editor, and browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenHands/OpenHands/HEAD/README.md) |
+| [Oya Browser](https://github.com/OyadotAI/oya-browser) | web | — | — | Oya Browser is a governance-aware browser control plane for human-AI collaboration across local and cloud browser providers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OyadotAI/oya-browser/HEAD/README.md) |
+| [Peerframe OpenBot](https://github.com/Peerframe/openbot) | cross-platform, desktop, web | — | code MIT | Self-hosted cross-platform control plane for managing persistent digital employees with browser and desktop capabilities. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Peerframe/openbot/main/README.md) |
 | [RedTeamCUA](https://github.com/OSU-NLP-Group/RedTeamCUA) | web, desktop | [2505.21936](https://arxiv.org/abs/2505.21936) (2025) | code Apache-2.0 | A controlled testing framework that combines desktop virtual machines and replicated websites to evaluate computer-use agents against indirect prompt injection. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OSU-NLP-Group/RedTeamCUA/HEAD/README.md) |
+| [Shinken](https://github.com/Meirtz/Shinken) | desktop, linux, windows | — | code Apache-2.0 | Shinken is a high-throughput runtime for training computer-use agents end-to-end with reinforcement learning across parallel real desktops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Meirtz/Shinken/HEAD/README.md) |
 | [TestDriver SDK](https://github.com/testdriverai/testdriverai) | desktop, web | — | — | Vitest plugin that spawns ephemeral devices and uses vision-based LLMs to build end-to-end tests of web apps, desktop apps and browser extensions. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/testdriverai/testdriverai/97d4d35d7727b2f83b1a73282aabf2e6e74824a2/README.md) |
+| [vnc-use](https://github.com/mayflower/vnc-use) | cross-platform, desktop | — | code MIT | vnc-use is a LangGraph-based computer-use framework that drives remote desktop environments over VNC with multi-model LLM planners and hitl gates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mayflower/vnc-use/HEAD/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-seat-linux](https://github.com/MuhibNayem/agent-seat-linux) | desktop, linux | — | — | Provides application-scoped Wayland screen capture and isolated input seats for Linux automation agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MuhibNayem/agent-seat-linux/HEAD/README.md) |
+| [background-computer-use](https://github.com/Panchangam18/background-computer-use) | desktop, macos | — | code MIT | MCP server and skill library for driving macOS applications in the background without stealing window focus or cursor control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Panchangam18/background-computer-use/HEAD/README.md) |
+| [Chrome MCP Docker](https://github.com/null-runner/chrome-mcp-docker) | web, desktop, linux | — | code MIT | Dockerized Chrome DevTools MCP server with persistent browser profiles and container host-header routing for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/null-runner/chrome-mcp-docker/HEAD/README.md) |
+| [DeskVNC](https://github.com/psmux/DeskVNC) | cross-platform, desktop, windows, macos, linux | — | — | Pure-Rust VNC, RDP, and SSH remote desktop client with Tauri UI for managing agent and remote machines. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/psmux/DeskVNC/HEAD/README.md) |
+| [dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) | web | — | code MIT | Native CloakBrowser plugin for DeepSeek Harness providing isolated anti-detect browser sessions and DOM snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/maxiaovivi/dsh-cloak-browser/main/README.md) |
+| [ELVES](https://github.com/mvmcode/elves) | cross-platform, desktop, macos, windows, linux | — | code MIT | ELVES is a cross-platform desktop application for orchestrating multi-agent coding teams inside isolated Git worktrees with MCP integration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mvmcode/elves/HEAD/README.md) |
+| [Jet Browser](https://github.com/masakaai/jet-browser) | web, desktop, linux | — | code Apache-2.0 | Jet Browser packages WPE WebKit and a Rust WebDriver bridge into an isolated, low-footprint container runtime for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/masakaai/jet-browser/HEAD/README.md) |
+| [mistudio0902-lab Chrome Bridge](https://github.com/mistudio0902-lab/chrome-bridge) | web | — | code MIT | Model Context Protocol bridge enabling Claude Code and Codex to operate multiple logged-in Chrome profiles concurrently. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mistudio0902-lab/chrome-bridge/main/README.md) |
+| [Nik-Browser MCP](https://github.com/Nikolay-3D/nik-browser-mcp) | web | — | code MIT | Local Model Context Protocol server providing LLMs with an independent, persistent-login Chromium browser and DOM snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Nikolay-3D/nik-browser-mcp/main/README.md) |
+| [Oculr MCP](https://github.com/Oculr-ai/oculr-mcp) | web | — | code MIT | Model Context Protocol server for driving isolated, anti-detect Oculr Chromium profiles over MCP and raw CDP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Oculr-ai/oculr-mcp/HEAD/README.md) |
+| [Open Claudex Computer Use](https://github.com/OpenCodexLabs/open-codex-computer-use) | desktop, macos | — | code MIT | Open-source background macOS computer-use MCP server for Claude Code and Codex. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenCodexLabs/open-codex-computer-use/HEAD/README.md) |
+| [OvoBrowser](https://github.com/ovobrowsersupport/ovobrowser) | web, desktop, windows, macos | — | code MIT | Source-level Chromium fingerprint browser engineered for anti-detect web automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ovobrowsersupport/ovobrowser/main/README.md) |
+| [Scrapeless Playwright Cloud Browser](https://github.com/pedro-scrapeless/scrapeless-playwright) | web | — | code MIT | Connects Playwright scripts and browser agents to the Scrapeless anti-detection cloud Chromium browser over CDP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pedro-scrapeless/scrapeless-playwright/main/README.md) |
+| [SparkBridge](https://github.com/musicjazz5/nvidia_dgx_spark) | desktop, linux, web | — | code Apache-2.0 | Human-approved isolated browser bridge for local AI agents running on NVIDIA DGX Spark workstations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/musicjazz5/nvidia_dgx_spark/main/README.md) |
+| [Unraid Camofox Stealth Browser](https://github.com/MircoBlitz/unraid-camofox-stealth-browser) | desktop, linux, web | — | code MIT | Unraid container template and Agent Skill for hosting a private Camofox anti-detect browser node for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MircoBlitz/unraid-camofox-stealth-browser/main/README.md) |
 
 ## Infrastructure
 
@@ -38,6 +74,7 @@ All entries in this section: desktop, linux, web.
 | [AgentDesk](https://github.com/agentsea/agentdesk) | desktop | — | code MIT | Desktop environments that AI agents control programmatically, run locally with Docker or remotely on Kubernetes, built on the agentd REST daemon and offering a coordinate-grid overlay for LMM input. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/agentsea/agentdesk/HEAD/README.md) |
 | [AIOS](https://github.com/agiresearch/AIOS) | desktop | — | — | AIOS is an agent operating system whose computer-use architecture provides a virtual machine controller and MCP server for agents interacting with graphical computer environments. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agiresearch/AIOS/292d98f78c835499df18cdb6de6325bba1895862/README.md) |
 | [AndroidEnv](https://github.com/google-deepmind/android_env) | android | [2105.13231](https://arxiv.org/abs/2105.13231) (2021) | code Apache-2.0 | Android device-control platform with screenshots, accessibility telemetry, input actions, and an optional reinforcement-learning task interface. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/google-deepmind/android_env/HEAD/README.md) |
+| [Browserplane](https://github.com/mathisarends/browserplane) | web, desktop, linux | — | — | Reference control plane for scaling remote Chromium browsers with a Postgres-backed session broker and live WebSocket tab mirroring. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mathisarends/browserplane/main/README.md) |
 | [E2B Desktop](https://github.com/e2b-dev/desktop) | desktop, linux | — | code Apache-2.0 | Open-source, isolated Linux Xfce desktop sandboxes for computer-use agents, driven from Python or JavaScript SDKs with screen streaming, mouse, keyboard and window control, screenshots and shell. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/e2b-dev/desktop/HEAD/README.md) |
 | [Lume](https://github.com/trycua/lume) | desktop, macos, linux | — | code MIT | Virtual machine management for local computer-use environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/trycua/lume/HEAD/README.md) |
 | [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
@@ -52,6 +89,14 @@ All entries in this section: desktop, linux, web.
 | [E2B](https://e2b.dev/) | [E2B](https://e2b.dev/) | desktop | Sandbox infrastructure for executing agent workloads. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | [Hyperbrowser](https://www.hyperbrowser.ai/) | web | Browser infrastructure and automation services for AI agents. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Steel Cloud](https://steel.dev/) | [Steel](https://steel.dev/) | web | Managed browser infrastructure associated with Steel Browser. | [✓ 2026‑10‑16](https://steel.dev/) |
+
+## Learning resources
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [AI Agent Desktop Engineering Blueprint](https://github.com/Men-Zer/ai-agent-desktop-engineering-blueprint) | — | Five-chapter architectural blueprint and comparative engineering guide for building desktop AI and computer-use agent applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Men-Zer/ai-agent-desktop-engineering-blueprint/HEAD/README.md) |
 
 ## Papers
 

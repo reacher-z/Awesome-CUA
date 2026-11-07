@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-115 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+143 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (7)](#agents) · [Frameworks (3)](#frameworks) · [Tools (1)](#tools) · [Papers (103)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Agents (18)](#agents) · [Frameworks (10)](#frameworks) · [Tools (9)](#tools) · [Infrastructure (1)](#infrastructure) · [Papers (103)](#papers)
 
 ## Benchmarks
 
-All entries in this section: android.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Intention-in-Interaction (IN3) & Mistral-Interact](https://github.com/OpenBMB/Tell_Me_More) | web, desktop | — | — | code Apache-2.0 | Provides the Intention-in-Interaction (IN3) benchmark and Mistral-Interact model for proactive user-intent clarification in agent tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenBMB/Tell_Me_More/HEAD/README.md) |
+| [MobileWorld (Tongyi-MAI)](https://github.com/Tongyi-MAI/MobileWorld) · [leaderboard](https://tongyi-mai.github.io/MobileWorld/#leaderboard) | android | [2512.19432](https://arxiv.org/abs/2512.19432) (2025) | [201 tasks](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) · [20 mobile applications](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) | code Apache-2.0 | A containerized Android evaluation environment with GUI-only, agent-user interaction and MCP-augmented tasks, plus checks on application and backend state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Tongyi-MAI/MobileWorld/HEAD/README.md) |
 
 ## Agents
 
@@ -20,27 +19,59 @@ All entries in this section: android.
 | --- | --- | --- | --- | --- | --- |
 | [Agent Zero](https://github.com/agent0ai/agent-zero) | desktop, linux, web | — | code MIT | Open-source agent with its own sandboxed Linux workspace that researches, writes code and works with documents using a terminal, a browser and desktop apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/agent0ai/agent-zero/ba9b67df0f54ac78106ae85c552ef5d2458f7c9a/README.md) |
 | [COLA demo](https://github.com/Alokia/COLA-demo) | desktop, windows | [2503.09263](https://arxiv.org/abs/2503.09263) (2025) | — | Research demonstration of collaborative Windows GUI automation with dynamic task scheduling and recovery mechanisms. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Alokia/COLA-demo/HEAD/README.md) |
+| [Computer-Use-Agent (Windows)](https://github.com/nabhpatodi10/Computer-Use-Agent) | desktop, windows | — | — | LangGraph-based Windows computer-use agent combining UI Automation tree inspection, OmniParser visual grounding, and human confirmation gates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nabhpatodi10/Computer-Use-Agent/HEAD/README.md) |
+| [Cursor Companion (MacScreenCompanion)](https://github.com/pradyut-das/MacScreenCompanion) | desktop, macos | — | code MIT | Native screen-aware macOS AI assistant invoked via hotkey to inspect and act on whatever is currently on screen. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pradyut-das/MacScreenCompanion/main/README.md) |
+| [Cuse (macOS AI Cursor Agent)](https://github.com/muneebkhan08/Cuse) | desktop, macos | — | code MIT | Cuse is an open-source voice-and-text AI cursor agent for macOS that visually localizes UI controls and executes mouse and keyboard tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/muneebkhan08/Cuse/HEAD/README.md) |
+| [Doppel](https://github.com/Orvii/doppel) | desktop, windows, linux | — | code MIT | Doppel is a computer-use agent that operates inside a dedicated virtual desktop with its own cursor on Windows 11 and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Orvii/doppel/HEAD/README.md) |
+| [Locopilot](https://github.com/pradhankukiran/locopilot) | desktop, linux | — | code Apache-2.0 | Supervised Linux desktop automation copilot featuring sandboxed execution, policy guardrails, and rollback checkpoints. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pradhankukiran/locopilot/HEAD/README.md) |
 | [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) | web | — | code MIT | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/magentic-ui/HEAD/README.md) |
 | [MobileAgent (Alipay)](https://github.com/alipay/mobile-agent) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | Mobile-control research implementation combining operating-procedure context with human interaction for personalized task execution. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/alipay/mobile-agent/HEAD/README.md) |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | web | — | code Apache-2.0 | A browser-extension agent that reads pages, interacts with elements and moves between tabs from a side-panel task interface. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/nanobrowser/nanobrowser/HEAD/README.md) |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | cross-platform, desktop, web, android, ios, macos, linux, windows | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0 | nanoMuse is an open-source personal agent that maintains persistent cross-device memory and executes browser, desktop, and mobile tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
+| [Navisual](https://github.com/NavisualGuide/navisual) | cross-platform, desktop, macos, windows | — | — | Navisual is a non-intrusive visual desktop guide that observes the screen and highlights where the user should click next. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NavisualGuide/navisual/HEAD/README.md) |
 | [OS-Kairos](https://github.com/Wuzheng02/OS-Kairos) | android | [2503.16465](https://arxiv.org/abs/2503.16465) (2025) | — | Android GUI-agent research implementation that uses confidence-guided interaction to choose between autonomous actions and human assistance. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Wuzheng02/OS-Kairos/HEAD/README.md) |
+| [PawWork (爪爪 / BrowserKitten)](https://github.com/Player-YN/BrowserKitten) | web | — | code MIT | Selection-first Chrome web agent where users highlight elements on the live page to scope and guide agent actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Player-YN/BrowserKitten/main/README.md) |
+| [s1](https://github.com/Matthew-Eucaristo/s1) | desktop, macos | — | code MIT | s1 is a voice-first macOS computer-use agent that inspects the Accessibility tree, executes UI actions, and displays an auditable step trail. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Matthew-Eucaristo/s1/HEAD/README.md) |
+| [ScreenBuddy](https://github.com/Nideesh1/SCREEN_BUDDY) | desktop, macos | — | code MIT | ScreenBuddy is a native Rust and Tauri macOS desktop client for running bring-your-own-key Claude Computer Use workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Nideesh1/SCREEN_BUDDY/HEAD/README.md) |
+| [Sidemates](https://github.com/PrisacariuRobert/sidemates) | desktop, macos, windows, linux | — | code MIT | Open-source desktop AI companion that observes active windows and assists with everyday computer tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/PrisacariuRobert/sidemates/main/README.md) |
 | [Yunkai](https://github.com/solplum/yunkai) | android | — | code MIT | Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AI-Work](https://github.com/peiwenZHANG-git/AI-Work) | desktop, windows, web | — | — | Human-in-the-loop Windows desktop automation runtime with MCP support, bounded file access, and step approval. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/peiwenZHANG-git/AI-Work/main/README.md) |
+| [BrowserTunnel](https://github.com/mathisarends/browsertunnel) | web | — | — | Streams and mirrors a live Chromium tab into a web page over a single WebSocket for remote agent observation and takeover. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mathisarends/browsertunnel/main/README.md) |
 | [ConnectOnion](https://github.com/openonion/connectonion) | web | — | code Apache-2.0 | ConnectOnion is a CLI and Python framework that gives agents commands for connected accounts, a logged-in browser, files, and chat apps. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/openonion/connectonion/9f80e63689da990cd423f8996960177a871f534a/README.md) |
+| [governed-computer-use](https://github.com/mkhan49/governed-computer-use) | desktop, web | — | — | Discovers legacy banking UI flows with an LLM once, compiles deterministic replay artifacts, and enforces human approval on exceptions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mkhan49/governed-computer-use/HEAD/README.md) |
+| [Kopilotti WebMCP](https://github.com/mikko-lab/kopilotti-webmcp) | web | — | code MIT | WebMCP reference application where a browser agent prepares non-binding proposals that require explicit human approval. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mikko-lab/kopilotti-webmcp/main/README.md) |
 | [META-GUI baseline](https://github.com/X-LANCE/META-GUI-baseline) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | code MIT | Training and evaluation pipeline for conversational mobile GUI agents, with action prediction, response generation, and dataset processing. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/META-GUI-baseline/HEAD/README.md) |
+| [Oya Browser](https://github.com/OyadotAI/oya-browser) | web | — | — | Oya Browser is a governance-aware browser control plane for human-AI collaboration across local and cloud browser providers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OyadotAI/oya-browser/HEAD/README.md) |
+| [RPA-Everything](https://github.com/mingqian94/RPA-Everything) | cross-platform, web, desktop, android, windows | — | code Apache-2.0 | Compiles repeated browser, desktop, Android, and office workflows into reviewed, deterministic RPA skills for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mingqian94/RPA-Everything/HEAD/README.md) |
+| [Supply Recovery Console (WebMCP)](https://github.com/Navi-AI-Project/supply-recovery-console) | web | — | code MIT | WebMCP reference console for auditable, human-approved supply-chain actions executed by browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Navi-AI-Project/supply-recovery-console/main/README.md) |
 | [VeriOS](https://github.com/Wuzheng02/VeriOS) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | Research code for proactive human–GUI-agent verification, including offline interaction-loop and dual-agent evaluation scripts plus LLaMA-Factory fine-tuning configurations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Wuzheng02/VeriOS/HEAD/README.md) |
 
 ## Tools
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | web | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+| [dsh-browser-plus](https://github.com/ParticleLight/dsh-browser-plus) | desktop, web | — | code MIT | Visible, agent-driven Electron WebContents browser plugin for DeepSeek Harness. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ParticleLight/dsh-browser-plus/main/README.md) |
+| [formbrake](https://github.com/mikebfox/formbrake) | web | — | code MIT | Python library and CLI providing deterministic approval gates for browser-agent form submissions and high-consequence clicks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mikebfox/formbrake/HEAD/README.md) |
+| [Mastra Code](https://github.com/mastra-ai/mastra-code-ui) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | Mastra Code is an Electron desktop coding-agent harness supporting 70+ LLM providers, subagents, plan-and-build modes, and hooks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mastra-ai/mastra-code-ui/HEAD/README.md) |
+| [mobius-browser-guard](https://github.com/mobius-style/mobius-browser-guard) | web | — | code MIT | Auditable, content-blind permission gate for Claude in Chrome browser actions driven by an explicit action-risk ladder. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mobius-style/mobius-browser-guard/HEAD/README.md) |
+| [OpenSider](https://github.com/parksben/opensider) | web | — | code MIT | Browser side-panel extension that connects webpages to local Agent CLIs speaking the Agent Communication Protocol (ACP). | [✓ 2026‑11‑04](https://raw.githubusercontent.com/parksben/opensider/main/README.md) |
+| [Reins](https://github.com/pegasi-ai/reins) | cross-platform, desktop, web | — | code Apache-2.0 | Reins is a runtime security guardrail and policy enforcement layer that intercepts and gates unauthorized AI agent tool calls. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pegasi-ai/reins/HEAD/README.md) |
+| [SparkBridge](https://github.com/musicjazz5/nvidia_dgx_spark) | desktop, linux, web | — | code Apache-2.0 | Human-approved isolated browser bridge for local AI agents running on NVIDIA DGX Spark workstations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/musicjazz5/nvidia_dgx_spark/main/README.md) |
+| [TabWard](https://github.com/NePavel221/TabWard) | web | — | code Apache-2.0 | Gives local AI agents permission-gated access to authenticated Chrome tabs via a stdio MCP server and extension. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NePavel221/TabWard/main/README.md) |
+
+## Infrastructure
+
+All entries in this section: web, desktop, linux.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Browser Control MCP](https://github.com/eyalzh/browser-control-mcp) | — | code MIT | An MCP server and Firefox extension that let AI assistants manage tabs, search browser history, read webpage text, and capture screenshots with user consent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/eyalzh/browser-control-mcp/e53f0e50e2778543d2c2b5dadbe565be82920fbf/README.md) |
+| [Browserplane](https://github.com/mathisarends/browserplane) | — | — | Reference control plane for scaling remote Chromium browsers with a Postgres-backed session broker and live WebSocket tab mirroring. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mathisarends/browserplane/main/README.md) |
 
 ## Papers
 

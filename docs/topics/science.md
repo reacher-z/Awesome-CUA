@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-25 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+27 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Infrastructure (1)](#infrastructure) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Papers (22)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,22 @@ All entries in this section: desktop, linux.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |
+
+## Frameworks
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [CODA](https://github.com/OpenIXCLab/CODA) | [2508.20096](https://arxiv.org/abs/2508.20096) (2025) | — | CODA coordinates a trainable planner ('Cerebrum') with a grounded GUI executor ('Cerebellum') via decoupled reinforcement learning on ScienceBoard. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenIXCLab/CODA/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [mcp-vroid](https://github.com/nhodges/mcp-vroid) | — | code MIT | Model Context Protocol server that drives VRoid Studio 3D character creation via Linux Wayland GUI automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nhodges/mcp-vroid/main/README.md) |
 
 ## Infrastructure
 

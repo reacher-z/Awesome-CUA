@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+89 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (10)](#tools) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@ All entries in this section: web.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) · [leaderboard](https://huggingface.co/spaces/TIGER-Lab/ClawBench) | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | [152 tasks](https://api.github.com/repos/TIGER-AI-Lab/ClawBench/git/trees/d12a2dda577f2c943a74d833e8253860eda81eaf?recursive=1) · [143 live websites](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) | code Apache-2.0 | Everyday-task benchmark on live websites that runs browser agents in containerized Chromium, blocks each final submission request for scoring by URL match and an LLM judge, and records five layers of run evidence. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/HEAD/README.md) |
+| [CUA Eval Kit](https://github.com/MarwanAlsiddiq/cua-eval-kit) | — | — | code MIT | Controlled browser fixture and 10-task computer-use evaluation suite for grading web agent accuracy and step efficiency. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MarwanAlsiddiq/cua-eval-kit/main/README.md) |
 
 ## Agents
 
@@ -27,17 +28,25 @@ All entries in this section: web.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [GUI-HARVEST](https://github.com/GaryYang12345/GUI-HARVEST) | desktop | [2610.00948](https://arxiv.org/abs/2610.00948) (2026) | code Apache-2.0 | Optimizes GUI-agent execution code from repeated rollout evidence and checks proposed changes against fixed validation gates. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GaryYang12345/GUI-HARVEST/HEAD/README.md) |
+| [Memori](https://github.com/MemoriLabs/Memori) | unspecified | — | code Apache-2.0 | Memori captures structured execution facts from agent tool calls and conversations into a relational memory store. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MemoriLabs/Memori/HEAD/README.md) |
+| [MobilePilot Runtime](https://github.com/qizhanggu/mobilepilot-runtime) | android | — | code MIT | MobilePilot is an auditable Android GUI agent runtime with structured action verification, on-demand UI trees, and bounded error recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qizhanggu/mobilepilot-runtime/HEAD/README.md) |
 | [ORBIT framework](https://github.com/wlanderson0/orbit) | web, desktop | [2609.33102](https://arxiv.org/abs/2609.33102) (2026) | code Apache-2.0 | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/README.md) |
+| [Supply Recovery Console (WebMCP)](https://github.com/Navi-AI-Project/supply-recovery-console) | web | — | code MIT | WebMCP reference console for auditable, human-approved supply-chain actions executed by browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Navi-AI-Project/supply-recovery-console/main/README.md) |
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [BrowserTrace](https://github.com/aaronlab/browsertrace) | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
-| [PhantomJS](https://github.com/ariya/phantomjs) | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
-| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-eyes](https://github.com/mohanli-eng/agent-eyes) | web | — | — | MCP server and workflow skill giving Claude Code live visual and DOM inspection over the browser runtime. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mohanli-eng/agent-eyes/HEAD/README.md) |
+| [augur-sdk](https://github.com/mercurialsolo/augur-sdk) | cross-platform, desktop, web | — | code Apache-2.0 | augur-sdk instruments screenshot-grounded computer-use agents to record structured telemetry bundles, screenshots, and failure traces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mercurialsolo/augur-sdk/HEAD/README.md) |
+| [BrowserTrace](https://github.com/aaronlab/browsertrace) | web | — | code MIT | Local, cloud-free replay debugger that records each Browser Use step's screenshot, URL, action and model I/O as a timeline and reports the step at which a failed run diverges from a known-good one. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/aaronlab/browsertrace/HEAD/README.md) |
+| [cc-haha](https://github.com/NanmiCoder/cc-haha) | cross-platform, desktop, web | — | — | cc-haha is a clean-room TypeScript implementation and visual debugger of the Claude Code agent harness, memory, and tool runtime. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NanmiCoder/cc-haha/HEAD/README.md) |
+| [ClaudeDesk](https://github.com/Phantivia/ClaudeDesk) | desktop, windows, web | — | code MIT | Streams the Windows desktop to a browser interface so coding agents can visually inspect and debug GUI applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Phantivia/ClaudeDesk/HEAD/README.md) |
+| [DSH Patrol](https://github.com/qigelunbiya/DSH-Patrol) | web | — | code MIT | Teach-once, patrol-repeatedly website inspection and monitoring plugin for DeepSeek Harness. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qigelunbiya/DSH-Patrol/main/README.md) |
+| [lnwjud (Windows MCP Access)](https://github.com/phuongt2576/lnwjud-readme) | desktop, windows | — | — | Provides AI agents with native Windows desktop access via MCP, secure tunnels, and live monitoring. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/phuongt2576/lnwjud-readme/main/README.md) |
+| [nemosr dsh-personal-plugins](https://github.com/nemosr/dsh-personal-plugins) | web | — | code MIT | DeepSeek Harness plugin bundle providing `web_app_testing` browser automation and `host-web-debug` live inspection tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nemosr/dsh-personal-plugins/main/README.md) |
+| [PhantomJS](https://github.com/ariya/phantomjs) | web | — | — | PhantomJS is a scriptable headless WebKit tool for automating web pages, capturing page contents, testing, and monitoring network activity. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/ariya/phantomjs/0a0b0facb16acfbabb7804822ecaf4f4b9dce3d2/README.md) |
+| [web-eval-agent](https://github.com/refreshdotdev/web-eval-agent) | web | — | code Apache-2.0 | MCP server that launches a browser-use agent to run a web app, capture screenshots, console and network logs, and return a UX report to the coding agent. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/refreshdotdev/web-eval-agent/4e1ad6e2c76a5c9463939f9508fede1f20e10f67/README.md) |
 
 ## Surveys
 

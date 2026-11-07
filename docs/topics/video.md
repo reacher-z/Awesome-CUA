@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
+50 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (39)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Models (1)](#models) · [Tools (1)](#tools) · [Papers (39)](#papers)
 
 ## Benchmarks
 
@@ -24,6 +24,22 @@
 | [MONDAY annotations](https://huggingface.co/datasets/runamu/MONDAY) | android, ios | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | [19,725 video annotation records](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 333,000 detected scenes](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 313,000 identified actions](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) | — | Video-derived mobile navigation annotations that pair scene boundaries and screen or element boxes with action labels for training and evaluating GUI agents. | [✓ 2026‑10‑17](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) |
 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | [> 41,000 video recordings](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) | data CC0 1.0 | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. | [✓ 2026‑10‑17](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) |
 | [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | desktop | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
+
+## Models
+
+All entries in this section: cross-platform, web, desktop, android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [InternVL](https://github.com/OpenGVLab/InternVL) | — | code MIT | Official repository for the InternVL open-source multimodal foundation model family supporting high-resolution GUI grounding and visual reasoning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenGVLab/InternVL/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Pagecast MCP](https://github.com/mcpware/pagecast) | — | code MIT | Playwright and FFmpeg Model Context Protocol server that records browser agent interactions as GIFs or MP4 videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mcpware/pagecast/HEAD/README.md) |
 
 ## Papers
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
+86 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (17)](#models) · [Frameworks (3)](#frameworks) · [Papers (57)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (19)](#models) · [Agents (4)](#agents) · [Frameworks (4)](#frameworks) · [Papers (57)](#papers)
 
 ## Datasets
 
@@ -26,6 +26,8 @@
 | [Holo3 35B-A3B](https://huggingface.co/Hcompany/Holo3-35B-A3B) | web, desktop, cross-platform | — | weights apache-2.0 | A sparse Qwen3.5-based GUI-action checkpoint released for navigation and computer-use workflows. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo3-35B-A3B/raw/main/README.md) |
 | [Holo4 35B-A3B BF16](https://huggingface.co/Hcompany/Holo4-35B-A3B) | desktop, web | — | weights apache-2.0 | A Qwen3.6-based computer-use checkpoint designed to request GUI actions, code execution and tool calls through an external agent harness. | [✓ 2026‑10‑17](https://huggingface.co/Hcompany/Holo4-35B-A3B/raw/main/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
+| [Mano-P](https://github.com/Mininglamp-AI/Mano-P) | cross-platform, desktop, web, android | — | code Apache-2.0 | Mano-P is an open-source GUI vision-language-action model optimized for edge devices and evaluated on OSWorld and Mind2Web. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mininglamp-AI/Mano-P/HEAD/README.md) |
+| [OneJev](https://github.com/OmniJev/OneJev) | cross-platform, web, desktop, android | — | code Apache-2.0 | OneJev is a multimodal System-One decision model based on Qwen that returns calibrated probabilities over typed action choices. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OmniJev/OneJev/HEAD/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
 | [OS-Genesis 7B AC](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC) | android | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | weights apache-2.0 | The AndroidControl-oriented Qwen2-VL checkpoint trained with mobile trajectories generated through OS-Genesis reverse task synthesis. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/OS-Genesis-7B-AC/raw/main/README.md) |
 | [PC-Agent-E checkpoint](https://huggingface.co/henryhe0123/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | weights MIT | Computer-use checkpoint fine-tuned on PC-Agent-E trajectories; the model-card prose identifies Qwen2.5-VL-72B-Instruct as its starting model. | [✓ 2026‑10‑18](https://huggingface.co/henryhe0123/PC-Agent-E/raw/568ab45861d5dab041e158d47211c6f53ba343f2/README.md) |
@@ -35,10 +37,20 @@
 | [UI-R1 3B](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1) | web, desktop, android | [2503.21620](https://arxiv.org/abs/2503.21620) (2025) | weights mit | A Qwen2.5-VL checkpoint trained with reinforcement learning for GUI action prediction and evaluated on mobile, desktop and web grounding tasks. | [✓ 2026‑10‑17](https://huggingface.co/LZXzju/Qwen2.5-VL-3B-UI-R1/raw/main/README.md) |
 | [UI-S1 7B](https://huggingface.co/mPLUG/UI-S1-7B) | android | [2509.11543](https://arxiv.org/abs/2509.11543) (2025) | weights apache-2.0 | A mobile GUI checkpoint trained with semi-online reinforcement learning that uses offline trajectories to improve multi-turn action prediction. | [✓ 2026‑10‑17](https://huggingface.co/mPLUG/UI-S1-7B/raw/main/README.md) |
 
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [claude-minecraft-use](https://github.com/ObservedObserver/claude-minecraft-use) | desktop, macos | — | code MIT | Adapts Anthropic Claude Computer Use on macOS with continuous movement and camera controls to play Minecraft from screen observations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/README.md) |
+| [Human Browser Copilot](https://github.com/officiallemmy254-droid/human-browser-copilot) | web | — | — | Agentic Chrome copilot featuring organic mouse kinematics, visual perception, and natural-language web task execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/officiallemmy254-droid/human-browser-copilot/main/README.md) |
+| [Minecraft-RL](https://github.com/otsolappalainen/Minecraft-RL) | desktop | — | — | Trains Proximal Policy Optimization (PPO) agents over visual frame buffers and action sockets in parallel Minecraft environments. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/otsolappalainen/Minecraft-RL/HEAD/README.md) |
+| [OSRS PvP Reinforcement Learning](https://github.com/Naton1/osrs-pvp-reinforcement-learning) | desktop | — | — | Trains PPO self-play reinforcement learning agents for real-time Old School RuneScape PvP combat across high-dimensional action spaces. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Naton1/osrs-pvp-reinforcement-learning/HEAD/README.md) |
+
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [axstream](https://github.com/milind-soni/axstream) | desktop, macos | — | code MIT | Streaming JSON-lines action language and compiler for macOS computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/milind-soni/axstream/HEAD/README.md) |
 | [CoAT research implementation](https://github.com/IMNearth/CoAT) | android | [2403.02713](https://arxiv.org/abs/2403.02713) (2024) | — | Research scripts that generate screen descriptions, action reasoning and expected outcomes, then predict Android GUI actions using the resulting Chain-of-Action-Thought context. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md) |
 | [D-PoT evaluation code](https://github.com/sqzhang-lazy/D-PoT) | android | [2410.00467](https://arxiv.org/abs/2410.00467) (2024) | — | Offline prompting and evaluation code for Dynamic Planning of Thoughts on Android-in-the-Wild, including action extraction and comparison with reference actions. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md) |
 | [ScreenSuite](https://github.com/huggingface/screensuite) | web, android, desktop | — | code Apache-2.0 | A shared evaluation harness for GUI-model perception, offline action prediction and multi-step interaction, using simple smolagents-based agents across existing benchmarks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md) |

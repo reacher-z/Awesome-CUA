@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-106 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
+113 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (1)](#agents) · [Frameworks (11)](#frameworks) · [Papers (74)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (14)](#datasets) · [Models (5)](#models) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Papers (74)](#papers)
 
 ## Benchmarks
 
@@ -45,22 +45,27 @@ All entries in this section: android.
 
 ## Agents
 
-All entries in this section: unspecified.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [LearnAct](https://github.com/lgy0404/LearnAct) | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [LearnAct](https://github.com/lgy0404/LearnAct) | unspecified | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
+| [OpenWebVoyager](https://github.com/MinorJerry/OpenWebVoyager) | web | [2401.13919](https://arxiv.org/abs/2401.13919) (2024), [2410.19609](https://arxiv.org/abs/2410.19609) (2024) | code Apache-2.0 | OpenWebVoyager trains multimodal web navigation agents through iterative real-world web exploration, feedback verification, and trajectory tuning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MinorJerry/OpenWebVoyager/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Automata](https://github.com/mindattic/Automata) | desktop, windows, web | — | code MIT | Record-once, replay-many browser automation runtime for Windows that records live user actions into deterministic workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mindattic/Automata/main/README.md) |
+| [Avenir-Web](https://github.com/Princeton-AI2-Lab/Avenir-Web) | web | [2602.02468](https://arxiv.org/abs/2602.02468) (2026) | code Apache-2.0 | Avenir-Web trains human-experience-imitating multimodal web agents with mixture-of-grounding experts and experience-tracking memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Princeton-AI2-Lab/Avenir-Web/HEAD/README.md) |
 | [Go-Browse](https://github.com/ApGa/Go-Browse) | web | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | code MIT | Structured website-exploration and data-processing code that revisits discovered pages, proposes tasks and collects trajectories for web-agent fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ApGa/Go-Browse/HEAD/README.md) |
 | [GUI-CIDER research code](https://github.com/Wuzheng02/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | Released data-synthesis and evaluation scripts that distill planning and causal GUI knowledge into text for mid-training mobile interface agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIPivot](https://github.com/ZrW00/GUIPivot) | android | [2503.00401](https://arxiv.org/abs/2503.00401) (2025) | code GPL-3.0 | Query-inference training tools connecting screenshot grounding with GUI action reasoning, including preprocessing, query refinement and offline single-step evaluation on AndroidControl and AITZ. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ZrW00/GUIPivot/b02e8efdbe02ab82169a2c54d724e33b4037330e/README.md) |
+| [hands-off](https://github.com/Niramay-Kelkar/hands-off) | desktop, web | — | code MIT | hands-off discovers UI workflows in legacy back-office software without APIs and compiles them into deterministic replay scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Niramay-Kelkar/hands-off/HEAD/README.md) |
+| [Intent Relay WebMCP](https://github.com/midorikuramochi/intent-relay) | web | — | code MIT | Demonstration-driven intent translator that carries user workflow preferences across WebMCP-enabled websites. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/midorikuramochi/intent-relay/main/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
 | [PC-Agent-E training and deployment](https://github.com/GAIR-NLP/PC-Agent-E) | desktop, windows, linux | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | code MIT | Tools for refining and augmenting human computer-use trajectories, preparing supervised training data, and deploying a native PC-Agent-E scaffold. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent-E/HEAD/README.md) |
+| [Replay (Teach-by-Demonstration)](https://github.com/misb74/Replay) | cross-platform, desktop, web | — | code Apache-2.0 | Converts human screen demonstrations of real desktop and web work into verifiable, repeatable AI agent workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/misb74/Replay/main/README.md) |
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
+| [TeachReplay](https://github.com/Ottohere-Mourn/TeachReplay) | cross-platform, desktop, web | — | code Apache-2.0 | TeachReplay is a harness-agnostic teach-by-demonstration engine that records human UI workflows and compiles them into parameterized skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ottohere-Mourn/TeachReplay/HEAD/README.md) |
 | [TongUI training and inference framework](https://github.com/TongUI-agent/TongUI-agent) | cross-platform, desktop, web | [2504.12679](https://arxiv.org/abs/2504.12679) (2025) | — | Training configurations, preprocessing and inference examples for tutorial-trained GUI models, with a LLaMA-Factory fine-tuning workflow and screenshot-grounding interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md) |
 | [UI-Genie](https://github.com/Euphoria16/UI-Genie) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Euphoria16/UI-Genie/HEAD/README.md) |
 | [VideoCAD training and evaluation code](https://github.com/ghadinehme/VideoCAD) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | code MIT | VideoCADFormer training, action-log preprocessing and evaluation code for learning CAD interface action sequences from screen recordings of browser-based Onshape. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/README.md) |

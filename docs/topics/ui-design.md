@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-56 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+61 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Papers (54)](#papers)
 
 ## Benchmarks
 
@@ -21,6 +21,21 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Celestea Harness Studio](https://github.com/Mcd0LUO/Celestea-Harness-Studio) | cross-platform, desktop, web | — | code MIT | Self-hosted AI agent workbench combining a web UI, TypeScript backend, sandboxed tool execution, and browser control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mcd0LUO/Celestea-Harness-Studio/main/README.md) |
+| [Polyform a11y-guide](https://github.com/polyform-ai/a11y-guide) | web | — | code MIT | Semantic accessibility page-guidance layer designed simultaneously for assistive technologies and AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/polyform-ai/a11y-guide/main/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [mcp-vroid](https://github.com/nhodges/mcp-vroid) | desktop, linux | — | code MIT | Model Context Protocol server that drives VRoid Studio 3D character creation via Linux Wayland GUI automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nhodges/mcp-vroid/main/README.md) |
+| [Microsoft Paint MCP Server](https://github.com/miguelcespedes/Microsoft-Paint-MCP-Server) | desktop, windows | — | code MIT | Semantic Model Context Protocol interface for Microsoft Paint allowing AI agents to draw geometry, diagrams, and canvas edits. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/miguelcespedes/Microsoft-Paint-MCP-Server/HEAD/README.md) |
+| [wix-editor-mcp](https://github.com/naieum/wix-editor-mcp) | web | — | code MIT | Model Context Protocol server for automating page layout, text, images, and SEO inside the classic Wix Editor. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/naieum/wix-editor-mcp/main/README.md) |
 
 ## Papers
 

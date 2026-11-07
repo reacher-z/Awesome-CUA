@@ -2,17 +2,36 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+83 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Frameworks (3)](#frameworks) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Frameworks (6)](#frameworks) · [Tools (1)](#tools) · [Papers (75)](#papers)
+
+## Benchmarks
+
+All entries in this section: web, desktop.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
+| [Pursuit Permit WebMCP](https://github.com/MoAqil/pursuit-permit-webmcp) | web | — | code MIT | Revision-bound capacity permit protocol for WebMCP browser agents that invalidates stale approvals when page state changes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MoAqil/pursuit-permit-webmcp/main/README.md) |
+| [Qontinui](https://github.com/qontinui/qontinui) | cross-platform, desktop | — | code AGPL-3.0 | Qontinui is a model-based GUI automation framework that represents application screens as state graphs with visual template and OCR matching. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qontinui/qontinui/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
+| [StatePilot](https://github.com/newsbruno/statepilot) | web | — | code MIT | StatePilot is a predictable browser runtime for AI agents with state validation, episodic memory, error recovery, and MCP tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/newsbruno/statepilot/HEAD/README.md) |
 | [VeriSafe Agent](https://github.com/VeriSafeAgent/VeriSafeAgent) | android | [2503.18492](https://arxiv.org/abs/2503.18492) (2025) | — | Runtime verification framework for Android GUI agents that checks proposed actions against logical rules derived from user instructions and developer-defined app states. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/VeriSafeAgent/VeriSafeAgent/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [nexus-browser-mcp](https://github.com/paipaipai666/nexus-browser-mcp) | — | code MIT | Browser automation MCP server with event-driven deterministic Playwright and accessibility-tree snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/paipaipai666/nexus-browser-mcp/HEAD/README.md) |
 
 ## Papers
 

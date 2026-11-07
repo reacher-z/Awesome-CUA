@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-26 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
+34 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (8)](#agents) · [Frameworks (3)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
 
 ## Benchmarks
 
@@ -34,16 +34,22 @@ All entries in this section: ios.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [ESP32 iPhone Agent](https://github.com/onehumanbeing/esp32-iphone-agent) | ios | — | code MIT | ESP32 iPhone Agent controls unmodified iPhones via Bluetooth HID mouse/keyboard emulation from an ESP32 paired with vision-language screen parsing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/HEAD/README.md) |
+| [iPhone CUA](https://github.com/masone/iphone-cua) | ios, desktop, macos | — | — | iPhone CUA steers physical iPhones from macOS by pairing an iPhone screen/control bridge with OpenAI Computer-Using Agent models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/masone/iphone-cua/HEAD/README.md) |
+| [Minitap mobile-use](https://github.com/minitap-ai/mobile-use) | android, ios | [2602.07787](https://arxiv.org/abs/2602.07787) (2026) | code Apache-2.0 | Minitap mobile-use is a multi-agent mobile automation system that controls physical and emulated Android and iOS devices from natural language. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/minitap-ai/mobile-use/HEAD/README.md) |
 | [Mobster engine](https://github.com/RadishSoftware/mobster) | ios | — | code MIT | iOS agent engine organized around an observe, decide, verify and act loop, using WebDriverAgent screen state and phone actions such as taps, typing, swipes and app switches. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/RadishSoftware/mobster/738cecdd3eacb9df88d48efb9efa53507bb4aeb4/README.md) |
+| [nanoMuse](https://github.com/nano-muse/nanoMuse) | cross-platform, desktop, web, android, ios, macos, linux, windows | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0 | nanoMuse is an open-source personal agent that maintains persistent cross-device memory and executes browser, desktop, and mobile tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
 | [Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | android, ios | — | code Apache-2.0 | Phone agent model and framework with device interaction tooling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/zai-org/Open-AutoGLM/HEAD/README.md) |
+| [PhysiClaw](https://github.com/physiclaw/PhysiClaw) | android, ios | — | code MIT | PhysiClaw uses an overhead camera and a 3-axis capacitive stylus gantry to physically tap and swipe unmodified smartphones. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/physiclaw/PhysiClaw/HEAD/README.md) |
+| [Pocketwatch](https://github.com/psamme/pocketwatch) | ios, desktop, macos | — | code Apache-2.0 | AI beta-testing agent for physical iPhone applications that drives user journeys over macOS iPhone Mirroring. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/psamme/pocketwatch/HEAD/README.md) |
 
 ## Frameworks
 
-All entries in this section: android, ios.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Mobilerun (formerly Droidrun)](https://github.com/droidrun/mobilerun) | android, ios | — | code MIT | A framework that combines screenshots and accessibility state with agent tools for mobile-device tasks through command-line and Python interfaces. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/droidrun/mobilerun/HEAD/README.md) |
+| [Optics Framework](https://github.com/mozarkai/optics-framework) | cross-platform, web, android, ios | — | code Apache-2.0 | Optics Framework is a self-healing test automation engine for mobile, web, and TV interfaces with Vision/OCR fallback and an MCP server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mozarkai/optics-framework/HEAD/README.md) |
+| [Qirabot](https://github.com/qirabot/qirabot) | cross-platform, web, desktop, android, ios | — | code MIT | Qirabot is a pure-vision multimodal GUI automation framework for operating browsers, mobile apps, desktops, and games without DOM selectors. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qirabot/qirabot/HEAD/README.md) |
 
 ## Tools
 

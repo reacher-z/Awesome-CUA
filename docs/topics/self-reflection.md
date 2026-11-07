@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-64 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+80 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (3)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (3)](#models) · [Agents (7)](#agents) · [Frameworks (14)](#frameworks) · [Tools (1)](#tools) · [Papers (54)](#papers)
+
+## Benchmarks
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AgentForge](https://github.com/MoeenAsim/Agentforge-V5) | — | — | — | Multi-agent adversarial evaluation and safety-checking laboratory for stress-testing computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MoeenAsim/Agentforge-V5/main/README.md) |
 
 ## Models
 
@@ -18,20 +26,40 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Hachifish](https://github.com/momo-null/hachifish) | android | — | code MIT | Hachifish is an on-device Android GUI agent that executes natural-language tasks via the native AccessibilityService with pre-completion checks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/momo-null/hachifish/HEAD/README.md) |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | cross-platform, desktop, web, linux, macos, windows | — | code MIT | Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NousResearch/hermes-agent/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
+| [OpenAmer Agent](https://github.com/openamer/openamer) | desktop, windows | — | code Apache-2.0 | Self-hosted, self-improving AI desktop agent for Windows with native in-process system and UI tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/openamer/openamer/main/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
 
 ## Frameworks
 
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
+| [AutoManual](https://github.com/minghchen/automanual) | web | [2405.16247](https://arxiv.org/abs/2405.16247) (2024) | — | AutoManual enables LLM agents to construct and iteratively refine structured instruction manuals through online environmental interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/minghchen/automanual/HEAD/README.md) |
+| [Browser Reliability Runtime](https://github.com/oosuhada/browser-reliability-runtime) | web | — | — | Multimodal browser reliability runtime for failure diagnosis, policy-aware recovery, and action verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/oosuhada/browser-reliability-runtime/main/README.md) |
+| [Hoverclick](https://github.com/neilyysun-ui/Hoverclick) | desktop, web | — | — | Hoverclick introduces test-time cursor hover verification and visual attention guidance before committing GUI click actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/neilyysun-ui/Hoverclick/HEAD/README.md) |
+| [MobilePilot Runtime](https://github.com/qizhanggu/mobilepilot-runtime) | android | — | code MIT | MobilePilot is an auditable Android GUI agent runtime with structured action verification, on-demand UI trees, and bounded error recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qizhanggu/mobilepilot-runtime/HEAD/README.md) |
+| [NORTHTEK Ghost](https://github.com/NORTHTEKDevs/ghost) | desktop, windows, linux | — | code MIT | Provides verified desktop control for AI agents on Windows and Linux across native GUI applications lacking APIs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NORTHTEKDevs/ghost/HEAD/README.md) |
+| [Open Frame](https://github.com/Off-Camber/open-frame) | cross-platform, desktop, windows, macos, linux | — | code Apache-2.0 | Deterministic desktop automation engine for AI agents implementing a capture-recognize-act-verify loop. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Off-Camber/open-frame/HEAD/README.md) |
+| [OS-Symphony](https://github.com/OS-Copilot/OS-Symphony) | desktop, web, linux, windows, macos | [2601.07779](https://arxiv.org/abs/2601.07779) (2026) | code Apache-2.0 | OS-Symphony is a holistic computer-use agent framework combining a Reflection-Memory Agent, versatile toolset, and multimodal searcher. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OS-Copilot/OS-Symphony/HEAD/README.md) |
+| [Pactora](https://github.com/mrnetwork0001/Pactora) | web | — | code Apache-2.0 | WebMCP marketplace and verification harness featuring a closed-loop self-healing browser verifier. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mrnetwork0001/Pactora/main/README.md) |
+| [Q-Reflector](https://github.com/pockyitachi/Q-Reflector) | android, desktop, web | [2608.05587](https://arxiv.org/abs/2608.05587) (2026) | — | Q-Reflector trains an 8B vision-language verifier with generated pre/post-action conditions to detect and correct GUI action errors. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pockyitachi/Q-Reflector/HEAD/README.md) |
+| [Self-MAP](https://github.com/magicgh/Self-MAP) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
+| [StatePilot](https://github.com/newsbruno/statepilot) | web | — | code MIT | StatePilot is a predictable browser runtime for AI agents with state validation, episodic memory, error recovery, and MCP tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/newsbruno/statepilot/HEAD/README.md) |
+| [Tsaagan](https://github.com/michaelolmos/tsaagan) | web | — | code MIT | Tsaagan is a verify-first browser control framework for AI agents that proves every click and form action succeeded before advancing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/michaelolmos/tsaagan/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
+
 All entries in this section: web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
-| [Self-MAP](https://github.com/magicgh/Self-MAP) | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | code MIT | A conversational web-agent implementation with candidate ranking and memory-assisted action planning, including optional memory simplification, refinement and self-reflection modules. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/magicgh/self-map/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| [dsh-live-loop](https://github.com/POWERRRRRRRR/dsh-live-loop) | — | code MIT | Frontend runtime verification plugin for DeepSeek Harness that detects, launches, previews, and tests web apps in a live browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/POWERRRRRRRR/dsh-live-loop/main/README.md) |
 
 ## Papers
 

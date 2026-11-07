@@ -2,43 +2,88 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-222 source-reviewed resources tagged `efficiency`. Curated metadata; unknown facts are shown as —.
+262 source-reviewed resources tagged `efficiency`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Models (5)](#models) · [Frameworks (4)](#frameworks) · [Tools (1)](#tools) · [Papers (210)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Models (7)](#models) · [Agents (1)](#agents) · [Frameworks (21)](#frameworks) · [Tools (17)](#tools) · [Papers (210)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [OSWorld-Human](https://github.com/WukLab/osworld-human) | desktop | [2506.16042](https://arxiv.org/abs/2506.16042) (2025) | — | — | Human reference trajectories and scoring code for measuring the action efficiency of computer-use agents on OSWorld tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/WukLab/osworld-human/HEAD/README.md) |
+| [Plasmate Benchmarks](https://github.com/plasmate-labs/plasmate-benchmarks) | web | — | — | code Apache-2.0 | Plasmate Benchmarks provides reproducible latency, memory, and token-efficiency evaluations for the Plasmate semantic browser engine. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/plasmate-labs/plasmate-benchmarks/HEAD/README.md) |
+| [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | web, desktop | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
+| [Web Agent Comparison](https://github.com/pleasedodisturb/web-agent-comparison) | web | — | — | code MIT | Reproducible 8-dimension benchmark comparing 7 browser-automation MCP servers on latency, token overhead, and task success. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pleasedodisturb/web-agent-comparison/HEAD/README.md) |
 | [Web Context Bench (Python)](https://github.com/charlypoly/web-context-bench-python) | web | — | — | code MIT | Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/README.md) |
+| [web-agent-bench](https://github.com/nsosio/web-agent-bench) | web | — | — | code MIT | web-agent-bench compares browser-automation harnesses (Playwright MCP, agent-browser, Stagehand) on token usage, latency, and task completion. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nsosio/web-agent-bench/HEAD/README.md) |
 
 ## Models
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [DiMo-GUI](https://github.com/vivo/DiMo-GUI) | cross-platform | [2507.00008](https://arxiv.org/abs/2507.00008) (2025) | code Apache-2.0 | GUI grounding research using modality-aware visual reasoning and test-time scaling. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/vivo/DiMo-GUI/HEAD/readme.md) |
+| [Mano-P](https://github.com/Mininglamp-AI/Mano-P) | cross-platform, desktop, web, android | — | code Apache-2.0 | Mano-P is an open-source GUI vision-language-action model optimized for edge devices and evaluated on OSWorld and Mind2Web. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mininglamp-AI/Mano-P/HEAD/README.md) |
+| [OneJev](https://github.com/OmniJev/OneJev) | cross-platform, web, desktop, android | — | code Apache-2.0 | OneJev is a multimodal System-One decision model based on Qwen that returns calibrated probabilities over typed action choices. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OmniJev/OneJev/HEAD/README.md) |
 | [ShowUI](https://github.com/showlab/ShowUI) | cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | code Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/ShowUI/HEAD/README.md) |
 | [ShowUI 2B](https://huggingface.co/showlab/ShowUI-2B) | cross-platform | — | weights mit | ShowUI vision-language-action checkpoint fine-tuned from Qwen2-VL-2B-Instruct, published as a single PyTorch weight file under the MIT license and tagged for GUI agents and computer use. | [✓ 2026‑10‑16](https://huggingface.co/api/models/showlab/ShowUI-2B) |
 | [UI-AGILE checkpoint](https://huggingface.co/KDEGroup/UI-AGILE) | android | [2507.22025](https://arxiv.org/abs/2507.22025) (2025) | weights mit | The released UI-AGILE model for GUI grounding with reward shaping, crop-based resampling and decomposed selection during inference. | [✓ 2026‑10‑17](https://huggingface.co/KDEGroup/UI-AGILE/raw/main/README.md) |
 | [ZonUI-3B checkpoint](https://huggingface.co/zonghanHZH/ZonUI-3B) | cross-platform, desktop, web | [2506.23491](https://arxiv.org/abs/2506.23491) (2025) | weights Apache-2.0 | Qwen2.5-VL-3B-based GUI grounding checkpoint that predicts click locations from screenshots and text instructions across desktop, mobile and web screens. | [✓ 2026‑10‑18](https://huggingface.co/zonghanHZH/ZonUI-3B/raw/07212ea7724a69400422571e0f6e053212e66fe6/README.md) |
 
+## Agents
+
+All entries in this section: desktop, macos, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [AgentP](https://github.com/omerfeyzioglu/agentp-macos) | — | code MIT | AgentP is a fast macOS computer-use agent where Gemini plans once and a local Jev System-One model executes steps via the Accessibility API. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/omerfeyzioglu/agentp-macos/HEAD/README.md) |
+
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [a11y-computer-use](https://github.com/Perception-Dynamics-Inc/a11y-computer-use) | cross-platform, desktop, linux, macos, windows | — | code Apache-2.0 | Accessibility-first computer-use runtime that feeds pruned accessibility-tree snapshots to AI agents so they click semantic UI elements. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Perception-Dynamics-Inc/a11y-computer-use/HEAD/README.md) |
+| [Agentless](https://github.com/OpenAutoCoder/Agentless) | unspecified | — | code MIT | Agentless resolves software engineering issues through a three-phase localization, repair, and patch validation pipeline. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenAutoCoder/Agentless/HEAD/README.md) |
+| [Automata](https://github.com/mindattic/Automata) | desktop, windows, web | — | code MIT | Record-once, replay-many browser automation runtime for Windows that records live user actions into deterministic workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mindattic/Automata/main/README.md) |
+| [axstream](https://github.com/milind-soni/axstream) | desktop, macos | — | code MIT | Streaming JSON-lines action language and compiler for macOS computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/milind-soni/axstream/HEAD/README.md) |
+| [Browser AI Agent Examples (Tiered Web Agent)](https://github.com/quantumproxies/browser-ai-agent-examples) | web | — | code MIT | Goal-driven web agent architecture using a cheapest-tier-first cascade across XHR discovery, DOM actions, and vision. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/quantumproxies/browser-ai-agent-examples/main/README.md) |
+| [Browser4](https://github.com/platonai/Browser4) | web | — | code Apache-2.0 | Browser4 is an AI-native browser engine and coroutines runtime for high-concurrency web agents, workflow automation, and page extraction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/platonai/Browser4/HEAD/README.md) |
+| [Computer-Use Capability Engine](https://github.com/PavanVAkula/computer-use-capability-engine) | desktop, web | — | — | Discovers legacy UI workflows with an LLM once and compiles them into typed, versioned, deterministically replayable capabilities. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/PavanVAkula/computer-use-capability-engine/HEAD/README.md) |
+| [DeskCtl (Desktop Control Engine)](https://github.com/mini-mind/DeskCtl) | desktop, windows, linux | — | code MIT | Desktop control engine for GUI agents using UIA and AT-SPI accessibility trees as the primary path with visual fallback. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mini-mind/DeskCtl/main/README.md) |
 | [Digi-Q](https://github.com/DigiRL-agent/digiq) | android | [2502.15760](https://arxiv.org/abs/2502.15760) (2025) | — | Offline device-control training code that learns action values and uses them to select promising actions, with linked trajectories and checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DigiRL-agent/digiq/HEAD/README.md) |
 | [DistRL](https://github.com/DistRL-lab/distrl-open) | android | [2410.14803](https://arxiv.org/abs/2410.14803) (2024) | code Apache-2.0 | Distributed online reinforcement-learning framework for Android agents, with environment setup and trajectory collection tools. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/DistRL-lab/distrl-open/HEAD/README.md) |
+| [fast-browser-use](https://github.com/NachaFromMars/fast-browser-use) | web | — | — | Rust-based browser automation engine driving Chrome over CDP with built-in anti-bot evasions and low-latency DOM extraction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NachaFromMars/fast-browser-use/HEAD/README.md) |
 | [GUI-RC / GUI-RCPO](https://github.com/ZJU-REAL/GUI-RCPO) | cross-platform, desktop, web | [2508.05615](https://arxiv.org/abs/2508.05615) (2025) | — | GUI-grounding research code for spatial voting across sampled predictions and test-time policy optimization using region-consistency rewards. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/zju-real/gui-rcpo/HEAD/README.md) |
+| [LegacyBridge](https://github.com/peterhaupt/legacybridge) | desktop, windows | — | — | Local open-weight LLM agent framework for automating legacy enterprise ERP and business desktop software without APIs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/peterhaupt/legacybridge/HEAD/README.md) |
+| [Mem0](https://github.com/mem0ai/mem0) | unspecified | — | code Apache-2.0 | Mem0 provides a scalable long-term memory layer for AI agents that extracts, consolidates, and retrieves user and session facts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mem0ai/mem0/HEAD/README.md) |
+| [OmniInfer](https://github.com/omnimind-ai/OmniInfer) | cross-platform, desktop, macos, linux, windows | — | code Apache-2.0 | OmniInfer is a local LLM and VLM inference engine with OpenAI-compatible APIs for desktop and edge agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/omnimind-ai/OmniInfer/HEAD/README.md) |
+| [Paragent](https://github.com/myselfsiddharth/Paragent) | web | — | code MIT | Stateful browser execution layer that records an agent task once, replays it without LLM calls, and self-repairs when selectors change. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/myselfsiddharth/Paragent/HEAD/README.md) |
+| [PuterVision Behavior-MCP](https://github.com/putervision/behavior-mcp) | web | — | code MIT | High-frequency (~60Hz) in-browser behavior-tree execution engine exposed over the Model Context Protocol. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/putervision/behavior-mcp/main/README.md) |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA) | desktop | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | — | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/THUDM/SCALE-CUA/HEAD/README.md) |
+| [servo-agent](https://github.com/parker-brown-family/servo-agent) | web | — | code Apache-2.0 | Agent-controllable web browser built on the Rust Servo engine that distills live rendered DOM layouts into compact agent observations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/parker-brown-family/servo-agent/HEAD/README.md) |
+| [Shinken](https://github.com/Meirtz/Shinken) | desktop, linux, windows | — | code Apache-2.0 | Shinken is a high-throughput runtime for training computer-use agents end-to-end with reinforcement learning across parallel real desktops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Meirtz/Shinken/HEAD/README.md) |
+| [UI2API](https://github.com/MeRezaRezaei/ui2api) | web | — | code MIT | Analyzes a website's UI and network traffic once to synthesize reusable, browser-free API tools for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MeRezaRezaei/ui2api/main/README.md) |
 
 ## Tools
 
-All entries in this section: unspecified.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [GUI Grounding Evaluation Harness](https://github.com/PatrickStarL/gui-grounding-eval) | — | — | ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Antigravity Chrome Bridge](https://github.com/ph4ntom-rev/antigravity-chrome-bridge) | web | — | code Apache-2.0 | Zero-dependency native C++17 Model Context Protocol server exposing 22 Chrome DevTools automation tools over stdio. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ph4ntom-rev/antigravity-chrome-bridge/HEAD/README.md) |
+| [ApiTap](https://github.com/n1byn1kt/apitap) | web | — | code Apache-2.0 | CLI, MCP server, and npm library that observes live browser traffic to turn websites into structured APIs for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/n1byn1kt/apitap/HEAD/README.md) |
+| [ask-web-ai](https://github.com/pgw10086/ask-web-ai) | web | — | — | Universal Agent Skill and CLI allowing a host coding agent to consult web-based AI chat sessions via browser automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pgw10086/ask-web-ai/main/README.md) |
+| [cdpilot](https://github.com/mehmetnadir/cdpilot) | web | — | code MIT | Zero-dependency browser automation CLI built directly on raw Chrome DevTools Protocol WebSockets without Playwright or Puppeteer. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mehmetnadir/cdpilot/HEAD/README.md) |
+| [chrome-agent-search](https://github.com/ominiverdi/chrome-agent-search) | web | — | code MIT | Local-first Rust CLI for driving Chrome to perform web searches and extract clean Markdown page content. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ominiverdi/chrome-agent-search/main/README.md) |
+| [Clique Já](https://github.com/paivaxqz/cliqueja) | web | — | code MIT | Fast Chrome automation toolkit combining a Manifest V3 extension with a local coordination hub. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/paivaxqz/cliqueja/main/README.md) |
+| [faster-browser-agent](https://github.com/MikaStiebitz/faster-browser-agent) | web | — | code MIT | Fast MCP browser server for AI agents that navigates complex web apps by reading accessibility trees and application source. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MikaStiebitz/faster-browser-agent/HEAD/README.md) |
+| [gpuview](https://github.com/OnlyTerp/gpuview) | desktop, windows | — | code MIT | GPU-native Windows screen perception tool capturing frames directly from the DXGI Desktop Duplication compositor handoff for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OnlyTerp/gpuview/HEAD/README.md) |
+| [GUI Grounding Evaluation Harness](https://github.com/PatrickStarL/gui-grounding-eval) | unspecified | — | — | ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/PatrickStarL/gui-grounding-eval/d92b059caa0e0acf8db76f2164dd7be2617ccc72/README.md) |
+| [Jet Browser](https://github.com/masakaai/jet-browser) | web, desktop, linux | — | code Apache-2.0 | Jet Browser packages WPE WebKit and a Rust WebDriver bridge into an isolated, low-footprint container runtime for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/masakaai/jet-browser/HEAD/README.md) |
+| [nexus-browser-mcp](https://github.com/paipaipai666/nexus-browser-mcp) | web | — | code MIT | Browser automation MCP server with event-driven deterministic Playwright and accessibility-tree snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/paipaipai666/nexus-browser-mcp/HEAD/README.md) |
+| [only-cli (oc)](https://github.com/only-cli/oc) | web | — | code MIT | Compiles websites into compact, token-efficient CLI commands tailored for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/only-cli/oc/main/README.md) |
+| [Owl Browser Claude Code Plugin](https://github.com/Olib-AI/owl-browser-claude-plugin) | web | — | code MIT | Claude Code plugin for Owl Browser providing handle-indexed page reading and agent-native browser automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Olib-AI/owl-browser-claude-plugin/HEAD/README.md) |
+| [Plasmate](https://github.com/plasmate-labs/plasmate) | web | — | code Apache-2.0 | Plasmate is a Rust browser engine for AI agents that transforms HTML and DOM state into a compact, actionable Semantic Object Model. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/plasmate-labs/plasmate/HEAD/README.md) |
+| [Playwright CLI](https://github.com/microsoft/playwright-cli) | cross-platform, web | — | code Apache-2.0 | Playwright CLI provides a token-efficient command-line interface and skill set for coding and computer-use agents to automate web browsers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/microsoft/playwright-cli/HEAD/README.md) |
+| [super-computer-use](https://github.com/paperfoot/super-computer-use) | desktop, macos | — | code MIT | Low-latency macOS computer-use driver (~35ms per action) supporting batched multi-step UI workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/paperfoot/super-computer-use/HEAD/README.md) |
+| [WebRain](https://github.com/prokopis3/webrain) | cross-platform, web | — | — | Single-binary Rust Model Context Protocol server for LLM-driven browser automation and web scraping across three browser engines. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/prokopis3/webrain/HEAD/README.md) |
 
 ## Papers
 

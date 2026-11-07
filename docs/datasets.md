@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Scale* is the first publisher-reported or computed count per unit from the reviewed profile, linked to its source; subsets and units are never combined. *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**86 resources:** [Web (16)](#web) · [Desktop (13)](#desktop) · [Mobile (27)](#mobile) · [Cross-platform (23)](#cross-platform) · [Unspecified (7)](#unspecified)
+**87 resources:** [Web (17)](#web) · [Desktop (13)](#desktop) · [Mobile (27)](#mobile) · [Cross-platform (23)](#cross-platform) · [Unspecified (7)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -17,6 +17,7 @@ All entries in this section: web.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AgentTrek](https://github.com/xlang-ai/AgentTrek) | [2412.09605](https://arxiv.org/abs/2412.09605) (2024) | — | — | Synthesizes browser-agent trajectories by replaying web tutorials as guidance, releasing the trajectory data with multimodal grounding and reasoning and an AgentTrek-32B agent. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/AgentTrek/HEAD/README.md) |
+| [Browser Agent Failure Corpus](https://github.com/MutantWeb/browser-agent-failure-corpus) | — | — | — | Browser Agent Failure Corpus is a versioned dataset of browser-agent action failures, execution traces, and guardrail counterexamples. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MutantWeb/browser-agent-failure-corpus/HEAD/README.md) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
 | [Go-Browse-WA processed data](https://huggingface.co/datasets/apurvaga/go-browse-wa) | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | [164,533 step records](https://huggingface.co/datasets/apurvaga/go-browse-wa/raw/main/README.md) | — | Flattened web-interaction training records with accessibility-tree observations, assistant completions, trajectory rewards and step-link metadata. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/apurvaga/go-browse-wa) |
 | [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv) | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | [≈ 700,000 region-text QA pairs](https://raw.githubusercontent.com/yiye3/GUICourse/HEAD/README.md) | — | The released local-supervision portion of GUIEnv, pairing webpage regions and text for OCR and GUI grounding. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/yiye3/GUICourse/HEAD/README.md) |

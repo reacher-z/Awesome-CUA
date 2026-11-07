@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-176 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
+181 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (5)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Frameworks (10)](#frameworks) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
 
 ## Benchmarks
 
@@ -41,7 +41,12 @@ All entries in this section: web.
 | [AgentSynth task-generation pipeline](https://github.com/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | code Apache-2.0 | Generates synthetic computer-use tasks and records trajectories in OSWorld desktop environments and InSTA browser environments. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/sunblaze-ucb/AgentSynth/HEAD/README.md) |
 | [AndroTMem inference and evaluation code](https://github.com/CVC2233/AndroTMem) | android | [2603.18429](https://arxiv.org/abs/2603.18429) (2026) | code MIT | A public Android GUI evaluation framework with action-history, summary and anchored-memory prompt modes, plus step-action and dependency-aware task scoring. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/CVC2233/AndroTMem/HEAD/README.md) |
 | [ARPO training framework](https://github.com/JIA-Lab-research/ARPO) | desktop, linux | [2505.16282](https://arxiv.org/abs/2505.16282) (2025) | code Apache-2.0 | Replay-based policy-optimization framework for GUI agents, with distributed OSWorld rollouts and screenshot/action histories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/JIA-Lab-research/ARPO/HEAD/README.md) |
+| [Eric Task Master](https://github.com/npcworkspace-cmyk/eric-task-master) | web | — | code MIT | Durable Playwright and Chrome task runner that keeps long-horizon browser jobs running after the initiating agent session exits. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/npcworkspace-cmyk/eric-task-master/main/README.md) |
+| [Ghost in the Minecraft (GITM)](https://github.com/OpenGVLab/GITM) | desktop | — | — | Ghost in the Minecraft (GITM) integrates LLMs with text-based knowledge and memory to complete the full Minecraft technology tree. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenGVLab/GITM/HEAD/README.md) |
+| [Mem0](https://github.com/mem0ai/mem0) | unspecified | — | code Apache-2.0 | Mem0 provides a scalable long-term memory layer for AI agents that extracts, consolidates, and retrieves user and session facts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mem0ai/mem0/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| [MemMachine](https://github.com/MemMachine/MemMachine) | unspecified | — | code Apache-2.0 | MemMachine is an open-source memory layer for AI agents providing working, episodic, and user-profile memory via REST, Python SDK, and MCP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MemMachine/MemMachine/HEAD/README.md) |
+| [Memori](https://github.com/MemoriLabs/Memori) | unspecified | — | code Apache-2.0 | Memori captures structured execution facts from agent tool calls and conversations into a relational memory store. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MemoriLabs/Memori/HEAD/README.md) |
 
 ## Infrastructure
 

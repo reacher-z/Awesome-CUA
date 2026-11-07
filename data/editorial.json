@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WebRain",
+    "url": "https://github.com/prokopis3/webrain",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "data-generation",
+      "efficiency"
+    ],
+    "summary": "Single-binary Rust Model Context Protocol server for LLM-driven browser automation and web scraping across three browser engines.",
+    "verify_terms": [
+      "WebRain"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/prokopis3/webrain/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dc8bbb81745c823bd60f4c04217e3aedeaafd968f80de12ead42dc5fe151d1c1"
+  },
+  {
+    "name": "Pocketwatch",
+    "url": "https://github.com/psamme/pocketwatch",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "ios",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "automation"
+    ],
+    "summary": "AI beta-testing agent for physical iPhone applications that drives user journeys over macOS iPhone Mirroring.",
+    "verify_terms": [
+      "Pocketwatch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/psamme/pocketwatch/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "57e9c5a181f3bac9f5407c3de2225f94a3073e05db456c9a66d424955dea4efd"
+  },
+  {
+    "name": "DeskVNC",
+    "url": "https://github.com/psmux/DeskVNC",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Pure-Rust VNC, RDP, and SSH remote desktop client with Tauri UI for managing agent and remote machines.",
+    "verify_terms": [
+      "DeskVNC"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/psmux/DeskVNC/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b4644d506bcc778899f28b9903c43a6509d2e437f30bfcbe40a5e980698712c"
+  },
+  {
+    "name": "PUDA guidriver",
+    "url": "https://github.com/PUDAP/guidriver",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "evaluation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Windows-first edge service for recording, verifying, and deterministically replaying reviewed GUI workflows.",
+    "verify_terms": [
+      "guidriver"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PUDAP/guidriver/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2bf40cda3187bf26cb1e5e21751552f68dfb2a9b34e6a0f6dc52a3d7b77751f3"
+  },
+  {
+    "name": "PAM Browser",
+    "url": "https://github.com/push-in/pam-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Typed Chrome DevTools Protocol client for PHP running on the PAM runtime.",
+    "verify_terms": [
+      "PAM Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/push-in/pam-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d0a52d4e0947615edeeeae3a9e423d43ed0e234821534f140be0f39691bf7dfe"
   }
 ]

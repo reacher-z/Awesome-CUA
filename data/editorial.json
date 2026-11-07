@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Web Context Interface (WCI)",
+    "url": "https://github.com/amirrezaalasti/webcontextinterface",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Web Context Interface (WCI) is a three-layer specification and toolkit augmenting HTML with structured semantic metadata for AI web agents.",
+    "verify_terms": [
+      "Web Context Interface"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amirrezaalasti/webcontextinterface/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c06f2d86c580d0597d505199a7253b7302f3359fdcdde723da73ec1dad194579"
+  },
+  {
+    "name": "uiacli (Windows UI Automation CLI)",
+    "url": "https://github.com/amitse/uiacli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Exposes Windows desktop applications to AI agents via structured UI Automation trees and CLI commands.",
+    "verify_terms": [
+      "uiacli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amitse/uiacli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5da03052c88c6cdd3414f5e79e4e0df8fb91d8369a0773c09b256140873c5fd2"
+  },
+  {
+    "name": "Jev Browser Agent",
+    "url": "https://github.com/amyivychoi/jev-browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "action-prediction"
+    ],
+    "summary": "Jev Browser Agent combines Browser Use DOM extraction, Jev System-One action selection, and deterministic browser harness execution.",
+    "verify_terms": [
+      "Jev Browser Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amyivychoi/jev-browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2acc34f02ae5365bc38cdf769854c434530e54a7b059121f23f998ea1487c7b1"
+  },
+  {
+    "name": "Label Controllers",
+    "url": "https://github.com/Amywlp/label-controllers",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Label Controllers is a screenshot-to-controls API combining YOLO widget detection and RapidOCR with OpenAI/Anthropic computer-use tool schemas.",
+    "verify_terms": [
+      "Label Controllers"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Amywlp/label-controllers/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c6cb2b1ed7f89b7ab1da8d22cb0cf56e0b71085f8670e2696894bbf572dbb7f0"
+  },
+  {
+    "name": "Agent-CE",
+    "url": "https://github.com/anaishowland/agent-CE",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "Agent-CE is a containerized continuous evaluation platform for benchmarking web browsing agents across reproducible task suites.",
+    "verify_terms": [
+      "Agent-CE"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/anaishowland/agent-CE/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f9d769e9ec535a6e7835307b1024f89e097038a0515846d076ee81754c922124"
   }
 ]

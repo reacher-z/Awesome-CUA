@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DOMShell",
+    "url": "https://github.com/apireno/DOMShell",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "DOMShell exposes live Chrome browser DOM trees as a virtual Unix filesystem (`cd`, `ls`, `click`, `text`) for LLM agents via CDP and MCP.",
+    "verify_terms": [
+      "DOMShell"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/apireno/DOMShell/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "910304097f6596bb439acfd3e940126a9bf4c71a539cc57db5b9715db485acfc"
+  },
+  {
+    "name": "Jev Filter",
+    "url": "https://github.com/apixly-ai/jev-filter",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Jev Filter uses compact System-One models to semantically prune large DOM snapshots, logs, and tool outputs before they enter agent context.",
+    "verify_terms": [
+      "Jev Filter"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/apixly-ai/jev-filter/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "842ceae9f5105beca9c955a886dc3ecff4d5949862805890165ab8001d28179b"
+  },
+  {
+    "name": "Blue Steel",
+    "url": "https://github.com/Apothic-AI/blue-steel",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Vision-driven browser agent powered by the Camoufox stealth Firefox browser.",
+    "verify_terms": [
+      "Blue Steel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Apothic-AI/blue-steel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9c705ed10bc03c86b45ff2cfd40cb10fe549ca08e015614b387a66c5fcbad5ac"
+  },
+  {
+    "name": "AppClaw",
+    "url": "https://github.com/appclawhq/AppClaw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "AppClaw is a mobile automation agent for Android and iOS that executes natural-language tasks by inspecting accessibility trees and tapping screens.",
+    "verify_terms": [
+      "AppClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/appclawhq/AppClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "096a2f39bd185e9063c99f5cf1d21e43c66c25d2eab47ff4c349962509c14bf7"
+  },
+  {
+    "name": "Agentic Browser",
+    "url": "https://github.com/applejuice093/Agentic-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Agent-first Python browser runtime providing stable element references, compact observations, outcome verification, and an MCP server.",
+    "verify_terms": [
+      "Agentic Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/applejuice093/Agentic-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "673a6faf55babddee0efb6aeaedfefd8bf7d045b2a5fb799473fd4b7fe54045d"
   }
 ]

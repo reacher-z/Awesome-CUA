@@ -86010,5 +86010,233 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "windows-computer-use-mcp (Scan-Code & Multi-Monitor)",
+    "url": "https://github.com/sshh12/windows-computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "recording"
+    ],
+    "summary": "Windows computer-use MCP server supporting multi-monitor screen capture and hardware scan-code keyboard/mouse injection for desktop and 3D apps.",
+    "verify_terms": [
+      "windows-computer-use-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sshh12/windows-computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "183ca73c4c97ebd806cf8fd5d8eaad2e6ebe20e1c95d69d992a0e2897ace6f41"
+  },
+  {
+    "name": "Boxcar",
+    "url": "https://github.com/Status-Labs/boxcar",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Boxcar provisions disposable Windows 11 and Ubuntu desktop virtual-machine sandboxes for LLM computer-use agents.",
+    "verify_terms": [
+      "Boxcar"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Status-Labs/boxcar/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "04c7a7574374f8d174bd8b71038cf68f5f8e7355bab09ecc2b28851801cd5a4f"
+  },
+  {
+    "name": "Steel Atlas",
+    "url": "https://github.com/steel-dev/atlas",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "automation"
+    ],
+    "summary": "Steel Atlas is an open-web research and browser automation agent built on the Steel cloud browser runtime.",
+    "verify_terms": [
+      "atlas"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/steel-dev/atlas/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "172285dc236563426528f079c0d87df684be43c36583b96fa435d25a879d4c6a"
+  },
+  {
+    "name": "Codex ChatGPT Web Delegator",
+    "url": "https://github.com/SteelTimber/codex-chatgpt-web-delegator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Codex skill for verified task delegation to ChatGPT Web through OpenCLI browser automation.",
+    "verify_terms": [
+      "Codex ChatGPT Web Delegator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SteelTimber/codex-chatgpt-web-delegator/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "868aaf0e856124465eb4d237fe447b9363a4cb2b70581decb97a85aabccd4dbb"
+  },
+  {
+    "name": "Browserjack",
+    "url": "https://github.com/stickerdaniel/browserjack",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Bridge that exposes OpenAI's installed Codex browser runtime to Claude Code and any MCP client on macOS.",
+    "verify_terms": [
+      "Browserjack"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/stickerdaniel/browserjack/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9717ff1b9279ae5d4704d58ee0373b7e65ce3e6ff9d0fb3146740b9a0a02c881"
+  },
+  {
+    "name": "AI Vision (Chrome Screenshot Assistant)",
+    "url": "https://github.com/stiwarilbj/AI_Vision",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "web-navigation"
+    ],
+    "summary": "Chrome extension that captures selected webpage regions for Gemini visual analysis, OCR extraction, and contextual Q&A.",
+    "verify_terms": [
+      "AI Vision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/stiwarilbj/AI_Vision/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3ce8a1135f1d162761e39720452e9b94c2f869b72ea4c3f700888750215edb58"
+  },
+  {
+    "name": "Local Computer-Use Agent",
+    "url": "https://github.com/Storage1n1/local-computer-use-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Offline computer-use agent combining Ollama vision-language models (`qwen3-vl`, `minicpm-v`) with Set-of-Marks grounding and crop-zoom refinement.",
+    "verify_terms": [
+      "Local Computer-Use Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Storage1n1/local-computer-use-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4d1aa110ee0392c5729d5e11ca81aa00f47cf8546401af1c809295f74491dd0b"
+  },
+  {
+    "name": "dsh-chrome",
+    "url": "https://github.com/stuarthu/dsh-chrome",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Chrome side-panel companion that embeds the DeepSeek Harness UI and bridges the active browser tab to the agent.",
+    "verify_terms": [
+      "dsh-chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/stuarthu/dsh-chrome/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eb712c1544b27b30511670a21c7b9ccf45d8ef045ecededb53eac4d9ae417a59"
+  },
+  {
+    "name": "Nexus Computer Use Harness (NexusCUH)",
+    "url": "https://github.com/subasah/computer-use-harness",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "safety-security",
+      "observability"
+    ],
+    "summary": "NexusCUH is a computer-use agent harness with sandboxed execution, MCP integration, policy guardrails, and trace observability.",
+    "verify_terms": [
+      "Nexus Computer Use Harness (NexusCUH)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/subasah/computer-use-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cbd44b41f4e40311f4a833eff36e45b032890bded2ba49812ae16ba75dfbed91"
   }
 ]

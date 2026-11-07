@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Camoufox Playwright MCP",
+    "url": "https://github.com/chandu-cpz/camoufox-playwright-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Drop-in Playwright Model Context Protocol server running on the Camoufox stealth Firefox engine.",
+    "verify_terms": [
+      "Camoufox Playwright MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chandu-cpz/camoufox-playwright-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bff8f10f024fb01aa9ba13287954e18719640a67a1cb697cb5c832e7cf23c383"
+  },
+  {
+    "name": "Browser Terminal Use",
+    "url": "https://github.com/chaokunyang/browser-terminal-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Pairs a Chrome extension, local daemon, and CLI to let agents execute commands inside browser-hosted cloud terminals with exit-code capture.",
+    "verify_terms": [
+      "Browser Terminal Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chaokunyang/browser-terminal-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1397f14dfae11269e491f0b8a6028007e8a19155138203e32a16176fd4105f68"
+  },
+  {
+    "name": "CyberRaccoon",
+    "url": "https://github.com/ChaoticPixelIO/cyberRaccoon",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Non-invasive physical computer-use agent that captures HDMI video and dispatches USB HID mouse and keyboard actions from a Raspberry Pi.",
+    "verify_terms": [
+      "CyberRaccoon"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ChaoticPixelIO/cyberRaccoon/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "743e0f2fc38bceaff695456ebb03188480947d770853744e1c10c4defd1bed8c"
+  },
+  {
+    "name": "iphone-control (iPhone Mirroring Skill)",
+    "url": "https://github.com/CHARLESMORGANSOFTWARE/iphone-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "ios",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "macOS skill and CoreGraphics controller for driving a paired iPhone through Apple's macOS iPhone Mirroring app.",
+    "verify_terms": [
+      "iphone-control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CHARLESMORGANSOFTWARE/iphone-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3c1253aac3dceef58933f5119cdc88aa7d39afe30a7959d13db09d6634a148b7"
+  },
+  {
+    "name": "Aeiva",
+    "url": "https://github.com/chatsci/Aeiva",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Aeiva is a modular general-purpose AI agent framework adaptable across desktop, web, and scientific task environments.",
+    "verify_terms": [
+      "Aeiva"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/chatsci/Aeiva/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7f47210967df1c85595efe1c0bb1afd8155b8036b54e4e3c3633f5ce9fe85f1a"
   }
 ]

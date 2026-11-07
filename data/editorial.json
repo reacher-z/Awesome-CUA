@@ -86010,5 +86010,229 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DSH Phone Agent",
+    "url": "https://github.com/sktyou/dsh-phone-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Controls Android phones over LAN via an on-device AccessibilityService app with local OCR, template matching, and GKD ad-skipping rules.",
+    "verify_terms": [
+      "DSH Phone Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sktyou/dsh-phone-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a813d28ccebadd4837eaceb442170ae160387b0e0d5ab9fa8b14d2451298bf30"
+  },
+  {
+    "name": "NekoPilot",
+    "url": "https://github.com/SkyAerope/NekoPilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "NekoPilot is a Manifest V3 Chrome and Edge sidebar browser agent with Chrome DevTools Protocol control and multi-LLM support.",
+    "verify_terms": [
+      "NekoPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SkyAerope/NekoPilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "13af78335afa749a91fcb092dfbe6240e0f87efe456fe51420db2f5bfdf3af7b"
+  },
+  {
+    "name": "Third Eye",
+    "url": "https://github.com/slastrina/third-eye",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "self-reflection",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Local macOS computer-use agent with screen perception and verified action execution.",
+    "verify_terms": [
+      "Third Eye"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/slastrina/third-eye/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ddaa30b94425c898564056f7695cbdf088f479de81d2a0ce94709a43b1b72258"
+  },
+  {
+    "name": "Browser Workbench for Codex",
+    "url": "https://github.com/slemmis/browser-workbench-for-codex",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability",
+      "tool-integration"
+    ],
+    "summary": "Playwright-powered browser inspection, visual testing, and interactive debugging workbench for OpenAI Codex.",
+    "verify_terms": [
+      "Browser Workbench for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/slemmis/browser-workbench-for-codex/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dc0ceca51d0090135f0bdcdc135ba0699ba4c6925c60470269d1af7d71571df5"
+  },
+  {
+    "name": "hypr-computer-use-mcp",
+    "url": "https://github.com/Smirnov-Labs/hypr-computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Hyprland/Wayland computer-use MCP server combining screenshot/click/type tools with tmux and CDP integration.",
+    "verify_terms": [
+      "hypr-computer-use-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Smirnov-Labs/hypr-computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d3888b2f47e016b02d9ee4aa276cf36e4ea433d688976a6b225f46cc28f3a9eb"
+  },
+  {
+    "name": "LASSO WebMCP",
+    "url": "https://github.com/Smkzz/Lasso",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "AI-assisted dispatch console that turns human visual lasso selections on a webpage into live typed WebMCP capabilities.",
+    "verify_terms": [
+      "lasso"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Smkzz/Lasso/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cd344f447f87c27760db7efc9c6e82fff47057dc38d1dab9347e79bbb4c3c8c1"
+  },
+  {
+    "name": "Smouj AgentBrowser",
+    "url": "https://github.com/smouj/agent-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "automation",
+      "observability"
+    ],
+    "summary": "AI-powered browser automation platform combining a REST API, live web dashboard, and vision-assisted DOM interaction.",
+    "verify_terms": [
+      "agent-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/smouj/agent-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a4839f60c67a7a035ac38a1d8fadaf7c24d0483128299850e0dd7bc1e27c5f06"
+  },
+  {
+    "name": "tine",
+    "url": "https://github.com/smythp/tine",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Command-line interface for AI agents to inspect and drive Linux GNOME Wayland desktops without portal consent dialogs.",
+    "verify_terms": [
+      "tine"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/smythp/tine/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c2cc43aedb022d1d8dff5141d37c225591acc38788ee09dc20fc8c93016cda59"
+  },
+  {
+    "name": "TabGrant",
+    "url": "https://github.com/SnakeLil/tabgrant",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "User-granted, local-first capability broker that delegates scoped browser tab permissions to AI agents.",
+    "verify_terms": [
+      "TabGrant"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SnakeLil/tabgrant/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "93487830f01d0e98f1ad0b8529bbb8490c97f3944926e39a7a8bbbfa0cceb692"
   }
 ]

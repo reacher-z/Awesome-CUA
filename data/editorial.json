@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Aegis (Hardened Computer-Use Sandbox)",
+    "url": "https://github.com/ArihantDeva/Aegis",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Aegis is an off-screen, capability-dropped Docker browser and desktop sandbox for isolating computer-use agents.",
+    "verify_terms": [
+      "Aegis"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ArihantDeva/Aegis/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aa17ac612882332a758d7370e6e94c4d910de21250f1bf21909737818890d94a"
+  },
+  {
+    "name": "browsegrab",
+    "url": "https://github.com/ArkNill/browsegrab",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Token-efficient browser agent and MCP server for local LLMs combining Playwright, accessibility trees, and Markdown extraction.",
+    "verify_terms": [
+      "browsegrab"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ArkNill/browsegrab/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cbc318fe0412aee00af1464dccd638932821e7ea61e8ff0cb2ed9973a18d7fe9"
+  },
+  {
+    "name": "Browser Harness MCP",
+    "url": "https://github.com/Arneld18/Browser-Harness-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "robustness"
+    ],
+    "summary": "Lightweight, self-healing Model Context Protocol server for native LLM web browser automation.",
+    "verify_terms": [
+      "Browser Harness MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Arneld18/Browser-Harness-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "081f8bf97a800ee2e85b70a9a186cabf323926105e4ed3b7eeb699fc4f0ebfe3"
+  },
+  {
+    "name": "Worldline",
+    "url": "https://github.com/Artemyx-DataScientist/Worldline",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "automation"
+    ],
+    "summary": "Modular, user-controlled AI browser kernel for structured web parsing, navigation, and workflow automation.",
+    "verify_terms": [
+      "Worldline"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Artemyx-DataScientist/Worldline/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f20b05faebb70faabd90f42537b6a10b6ff36d6c5e877fd8c27dfdae0be1672"
+  },
+  {
+    "name": "Commonplace WebMCP",
+    "url": "https://github.com/arterialist/webmcp-openai-hackathon",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "WebMCP-enabled reading and publishing workspace designed for shared control between human users and browser agents.",
+    "verify_terms": [
+      "webmcp-openai-hackathon"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/arterialist/webmcp-openai-hackathon/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4811c6c8add0915dbf95c8e3e6ca153e5ae9528f28ba6229ee087b431734fe36"
   }
 ]

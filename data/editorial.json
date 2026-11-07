@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Antigravity Chrome Bridge",
+    "url": "https://github.com/ph4ntom-rev/antigravity-chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Zero-dependency native C++17 Model Context Protocol server exposing 22 Chrome DevTools automation tools over stdio.",
+    "verify_terms": [
+      "Antigravity Chrome Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ph4ntom-rev/antigravity-chrome-bridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1833b7d8886785395fd2f2ae7b795b275b0095e46b0da1c7f9035cc3a6e27d57"
+  },
+  {
+    "name": "ClaudeDesk",
+    "url": "https://github.com/Phantivia/ClaudeDesk",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "observability",
+      "automation"
+    ],
+    "summary": "Streams the Windows desktop to a browser interface so coding agents can visually inspect and debug GUI applications.",
+    "verify_terms": [
+      "ClaudeDesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Phantivia/ClaudeDesk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "53ed01bdd68b9c0e682c500c6eaf82a92dd7b971585404bd0a1daa4a7f52063f"
+  },
+  {
+    "name": "Computer Use for macOS",
+    "url": "https://github.com/philfung/computer-use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding"
+    ],
+    "summary": "Native macOS desktop application for running Claude Computer Use with local screen capture and mouse/keyboard actuation.",
+    "verify_terms": [
+      "Computer Use for macOS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/philfung/computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f68330b4e7e5fef8b829f9c1b6e823413acb6b871c2078ed8b7ed802f4f2c5a6"
+  },
+  {
+    "name": "philosophy79 web-agent",
+    "url": "https://github.com/Philosophy79/web-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local-first web and desktop automation toolkit integrating browser control, screen capture, and LLM tool calling.",
+    "verify_terms": [
+      "web-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Philosophy79/web-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8c49ae3e11cbe97759d1746b94d1d17681942e26d7159230dc90684202e9f700"
+  },
+  {
+    "name": "lnwjud (Windows MCP Access)",
+    "url": "https://github.com/phuongt2576/lnwjud-readme",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "observability",
+      "automation"
+    ],
+    "summary": "Provides AI agents with native Windows desktop access via MCP, secure tunnels, and live monitoring.",
+    "verify_terms": [
+      "lnwjud"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/phuongt2576/lnwjud-readme/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "844e3dbe26eed3b44d5cc7c302d134ebc5e7ddc0946d4ca03f229d9875074931"
   }
 ]

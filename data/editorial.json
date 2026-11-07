@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "browser-gateway",
+    "url": "https://github.com/browser-gateway/browser-gateway",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "browser-gateway is an open control plane and router across cloud browser providers with failover, persistent profiles, session replay, and MCP.",
+    "verify_terms": [
+      "browser-gateway"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-gateway/browser-gateway/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "78a688b8df40c66b3e54d45101bdf8722696fc32e5193e1e31aff09a3da00a38"
+  },
+  {
+    "name": "Browser Use Benchmark (BU Bench)",
+    "url": "https://github.com/browser-use/benchmark",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Browser Use Benchmark (BU Bench V2.1) evaluates browser agents across 200 real-world web navigation and interaction tasks.",
+    "verify_terms": [
+      "benchmark"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/benchmark/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "849a8da2e5e5c972ae5ab6f46620c740b3c2440add259650fa08cb4dfd9917aa"
+  },
+  {
+    "name": "Browser Harness",
+    "url": "https://github.com/browser-use/browser-harness",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser Harness by Browser Use lets Claude Code, Codex, and Cursor drive the user's real logged-in Chrome browser via CDP.",
+    "verify_terms": [
+      "Browser Harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/browser-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "69309c3dfeec03b6499374e36fda7d2d15e3a9c276b5a5f00574f0cb29a47156"
+  },
+  {
+    "name": "Browser Use Box (bux)",
+    "url": "https://github.com/browser-use/bux",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Browser Use Box (bux) packages a 24/7 autonomous Claude Code and Browser Use web agent for self-hosted Linux servers.",
+    "verify_terms": [
+      "Browser Use Box"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/bux/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "48cafbbdda27975e98b15a82cc3349f9bac06caabf76ef4089ca1b252c0cd9d2"
+  },
+  {
+    "name": "Browser Use macOS Harness",
+    "url": "https://github.com/browser-use/macos-harness",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Official Browser Use harness for provisioning and driving isolated macOS virtual machines and desktop sessions.",
+    "verify_terms": [
+      "macos harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-use/macos-harness/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9a88db95ac412d4973a256c63a198d3c3bff88e1e271c505ba626ea83380431d"
   }
 ]

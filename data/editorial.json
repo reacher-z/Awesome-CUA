@@ -86010,5 +86010,126 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WellSet WebMCP",
+    "url": "https://github.com/kinhikars/wellset-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "science",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Shared 96-well laboratory experiment canvas built on WebMCP where scientists and browser agents co-design protocols.",
+    "verify_terms": [
+      "wellset-webmcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kinhikars/wellset-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "47923510e29fe5c15cba46f28aeed9f56911c225b4ccf5e99b209ff13dcccf7c"
+  },
+  {
+    "name": "Kitewright",
+    "url": "https://github.com/kitewright/kitewright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Single-binary ~7MB Rust browser-automation Model Context Protocol server supporting Streamable HTTP and stdio.",
+    "verify_terms": [
+      "Kitewright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kitewright/kitewright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "46407af23f2e93c4cec9980b48f35fe83dc88495bdfafa98dcd0c5c44674319a"
+  },
+  {
+    "name": "Hermod",
+    "url": "https://github.com/klaiderman/hermod",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "NestJS browser-automation service that answers prompts by driving web LLM interfaces in headless Chromium.",
+    "verify_terms": [
+      "Hermod"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/klaiderman/hermod/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cbc4cbe2ba8e0bf081fe72e0f4623b1f55f19311e736863e0f8135e7a3631da9"
+  },
+  {
+    "name": "Scout Browser Binary",
+    "url": "https://github.com/klarlabs-studio/scout",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Single-binary Go browser automation CLI and built-in MCP server that drives Chromium without Node.js or Python dependencies.",
+    "verify_terms": [
+      "scout"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/klarlabs-studio/scout/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b3fe6c530fa8d86ad60caeb3dae317789efda0d3112a3c3589b99b5ee1928028"
+  },
+  {
+    "name": "AgentGauntlet",
+    "url": "https://github.com/Konuktor/agent-gauntlet",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Reliability CI harness for browser agents that runs identical web tasks across mutating DOM conditions to measure resilience.",
+    "verify_terms": [
+      "AgentGauntlet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Konuktor/agent-gauntlet/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cd32affe5c6c37bb4edb8e487d125f94796687357e584f059756da97cf6187a8"
   }
 ]

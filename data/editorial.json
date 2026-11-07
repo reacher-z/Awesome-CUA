@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Vuser Protocol",
+    "url": "https://github.com/openvuser/vuser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Vuser is an open frontend interaction protocol standardizing browser-use, desktop computer-use, and mobile-use virtual user actions.",
+    "verify_terms": [
+      "Vuser Protocol"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openvuser/vuser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d58ad61c3a468ea16e237a63b41aaef3019eba19226b0e8761e2f659fddfb1c3"
+  },
+  {
+    "name": "ora webmcp",
+    "url": "https://github.com/ora/webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Coding-agent plugin and toolkit for auditing, implementing, and verifying WebMCP support on websites.",
+    "verify_terms": [
+      "webmcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ora/webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1de44f2c5a3ec8af46911af7e75d35ef2aefe5e84606c4b8f2e732b40bba30a7"
+  },
+  {
+    "name": "AGY Computer Use",
+    "url": "https://github.com/orakulzero/agy-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "AGY Computer Use provides native Windows desktop automation combining UI Automation trees, Set-of-Marks grounding, and background PrintWindow capture.",
+    "verify_terms": [
+      "AGY Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/orakulzero/agy-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ef77485a823374323c2fbc21b3a76877437e1c5b01bb9546f964290b5b5776b1"
+  },
+  {
+    "name": "orangeofcarl0-sys dsh-computer-use",
+    "url": "https://github.com/orangeofcarl0-sys/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows desktop computer-use plugin for DeepSeek Harness featuring numbered UI element grounding and background-first input delivery.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/orangeofcarl0-sys/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3ede48f18aac10b257c40efbacc049e7fee4b441a114c7d699df94a8b6834bee"
+  },
+  {
+    "name": "Doppel",
+    "url": "https://github.com/Orvii/doppel",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Doppel is a computer-use agent that operates inside a dedicated virtual desktop with its own cursor on Windows 11 and Linux.",
+    "verify_terms": [
+      "Doppel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Orvii/doppel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "82f0464b702bbd911e667f557ea6e8e9f47d97cc3f9f0d95d3305e27c42c7245"
   }
 ]

@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ITR Wala AI Agent",
+    "url": "https://github.com/AIAnytime/itr-wala-ai-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "safety-security",
+      "human-in-the-loop"
+    ],
+    "summary": "Terminal-driven browser agent that automates Indian income-tax-return preparation and portal filing with human review.",
+    "verify_terms": [
+      "ITR Wala AI Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AIAnytime/itr-wala-ai-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "132aa57c36ac30ddb24d4c03cca6154afeeca991161813921d9f63e3aac9a7fe"
+  },
+  {
+    "name": "Protean",
+    "url": "https://github.com/AIBrain-Mnemis/Protean",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "memory",
+      "workflow"
+    ],
+    "summary": "Protean turns everyday human desktop and browser demonstrations into reusable, adaptive agent skills.",
+    "verify_terms": [
+      "Protean"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AIBrain-Mnemis/Protean/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7036ac0cb9a896ab0be026fc614620c53aac654eada31f34264615d8629f6046"
+  },
+  {
+    "name": "Aider",
+    "url": "https://github.com/aider-ai/aider",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Aider is an AI pair-programming CLI and browser agent that maps repositories, edits multi-file codebases, and runs linters and test suites.",
+    "verify_terms": [
+      "Aider"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aider-ai/aider/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e40e05367ceacf7138a2605484bf7d1cb5a262d2dba03f52a5327c023b3cd0dc"
+  },
+  {
+    "name": "SimpleMem",
+    "url": "https://github.com/aiming-lab/SimpleMem",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "efficiency",
+      "long-horizon"
+    ],
+    "summary": "SimpleMem provides semantic lossless memory compression and multimodal retrieval for long-horizon LLM and desktop/CLI agents.",
+    "verify_terms": [
+      "SimpleMem"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aiming-lab/SimpleMem/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "420cdf2a5c22d74354d11e7617fdd24a1ce60eeba8e0d21b51ed4442b7149001"
+  },
+  {
+    "name": "AINative Browser MCP",
+    "url": "https://github.com/AINative-Studio/ainative-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server exposing 6 high-level tools for AI-powered web interaction and structured data extraction.",
+    "verify_terms": [
+      "ainative"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AINative-Studio/ainative-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "146f3310712c04fe34eae186ffe233b58d1d292e369ad0c414b7e28797d0fb09"
   }
 ]

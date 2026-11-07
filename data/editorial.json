@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "VLM-Reasoning-Traces",
+    "url": "https://github.com/LlamaTouch/VLM-Reasoning-Traces",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "planning"
+    ],
+    "summary": "VLM-Reasoning-Traces releases model outputs comparing base and thinking-enabled vision-language models on AndroidControl, ScreenSpot, and AndroidWorld.",
+    "verify_terms": [
+      "VLM-Reasoning-Traces"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LlamaTouch/VLM-Reasoning-Traces/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ace444c823ceaa6c30a25c946828fcf2be8bec5e4f0ce629db816c3fa1a6e946",
+    "documented_by": [
+      "2503.16788"
+    ]
+  },
+  {
+    "name": "LLM-in-Sandbox",
+    "url": "https://github.com/llm-in-sandbox/llm-in-sandbox",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "reinforcement-learning",
+      "tool-integration"
+    ],
+    "summary": "LLM-in-Sandbox equips language models with virtualized Linux computer sandboxes and RL training pipelines for multi-turn task execution.",
+    "verify_terms": [
+      "LLM-in-Sandbox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/llm-in-sandbox/llm-in-sandbox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b03bfc73cb05f79985282999332b626f09905b86e4822eca981e2be28c578cc9",
+    "documented_by": [
+      "2601.16206"
+    ]
+  },
+  {
+    "name": "vco (Visual Computer Operate)",
+    "url": "https://github.com/lo2589/vco",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Shell-driven visual computer-use toolkit enabling LLMs to inspect and click web pages and desktop screens.",
+    "verify_terms": [
+      "vco"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lo2589/vco/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4409d8e81f18577a34bca06de2bd1d6b5117d2c68ea691b252391283ff6b1a34"
+  },
+  {
+    "name": "LockInTime headless",
+    "url": "https://github.com/LockInTime/headless",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Persistent, safety-enforced browser control runtime for AI agents with a semantic CLI.",
+    "verify_terms": [
+      "headless"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/LockInTime/headless/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d2b18454d5274e4910c4e579da0a1aa1082e623d012feff1d9044877ad0c14ef"
+  },
+  {
+    "name": "Hunter (Autonomous Job-Search Agent)",
+    "url": "https://github.com/lodelux/hunter-public",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "observability",
+      "automation"
+    ],
+    "summary": "Autonomous job-search and application browser agent with evidence-linked fit scoring and submission tracking.",
+    "verify_terms": [
+      "Hunter"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lodelux/hunter-public/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "406f80d4bc80fa450ce379e4e4e8f51f3c95b46b5f9a49be17513dfa8099c16b"
   }
 ]

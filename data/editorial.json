@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Turan AI",
+    "url": "https://github.com/aykutkrm67/turan-ai",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "planning",
+      "screen-understanding",
+      "automation",
+      "self-reflection"
+    ],
+    "summary": "Local multi-brain Windows AI desktop agent with visible computer control and verified action execution.",
+    "verify_terms": [
+      "Turan AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aykutkrm67/turan-ai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f54ceb676e2c3c32fb1de5acafacd8d0c3c2b35c755f1583ca8e414ee31eb30d"
+  },
+  {
+    "name": "Pi Desktop for Windows",
+    "url": "https://github.com/AYOUYI/pi-desktop-for-windows",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "ui-design",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Native Windows desktop GUI client and workspace for the Pi coding and computer-use agent.",
+    "verify_terms": [
+      "Pi Desktop for Windows"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AYOUYI/pi-desktop-for-windows/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6da2f4933fc3a726b7cf1c518896c17965dea1d4e121c4f0977058369f6329f3"
+  },
+  {
+    "name": "AzaiSakura dsh-computer-use (macOS)",
+    "url": "https://github.com/AzaiSakura/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Re-implementation of the OpenAI macOS Computer Use plugin tailored for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh computer use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AzaiSakura/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "024471ca658521c8316db4536ea3a597b9dccd23d66980d046fd183aed9f4b6b"
+  },
+  {
+    "name": "azderus browser-agent",
+    "url": "https://github.com/azderus/browser-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Claude Code skill that drives a real Chrome window from the terminal and returns compact token-efficient page observations.",
+    "verify_terms": [
+      "browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/azderus/browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9c6729b960b02e1d2502feaf13e831b9a466a866808345deb563782b08a70202"
+  },
+  {
+    "name": "Dunst (macOS Affordance-Graph MCP)",
+    "url": "https://github.com/azerozero/dunst",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Accessibility-first affordance-graph MCP server for macOS combining AX trees, Apple Vision OCR, and computer vision.",
+    "verify_terms": [
+      "Dunst"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/azerozero/dunst/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1fad6bd7eded12ae9127bdff86294edac366eb6c9a25d4154942ffdff051a923"
   }
 ]

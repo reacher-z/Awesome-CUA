@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Aevora",
+    "url": "https://github.com/ATLURI0001/Aevora",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "automation"
+    ],
+    "summary": "Autonomous web agent that translates natural-language intent into multi-step browser actions.",
+    "verify_terms": [
+      "Aevora"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ATLURI0001/Aevora/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a65db1b11d67600fcf60f09393b8039a9fe688aecc64534ad8f8f12c8ccd3c5a"
+  },
+  {
+    "name": "Semantic Browser (agent-browser)",
+    "url": "https://github.com/atreasureboy/agent-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Agent-readable semantic browser layer providing token-efficient webpage understanding and structured action execution.",
+    "verify_terms": [
+      "Semantic Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/atreasureboy/agent-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bf54923185eb3a0764ae55f508ef1c020b022bcfa1dcc3d7a72fb47115de77f5"
+  },
+  {
+    "name": "System Automation MCP",
+    "url": "https://github.com/aurafriday/system_mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "System Automation MCP exposes cross-platform desktop UI inspection, OCR, window management, and mouse/keyboard actions to MCP-compatible agents.",
+    "verify_terms": [
+      "system"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aurafriday/system_mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea3da2ca84176c825853028f05fad28b9aeafd7fa2df56d59e8330ea4441443a"
+  },
+  {
+    "name": "Ausca MCP Services",
+    "url": "https://github.com/auscahq/ausca",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "Model Context Protocol services and APIs for AI agents covering document OCR and browser data extraction.",
+    "verify_terms": [
+      "ausca"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/auscahq/ausca/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7fb4812b155515363c5e3c7017c86780ab7bbc33198b4ceaa56a0c40e9dfed8b"
+  },
+  {
+    "name": "android-use",
+    "url": "https://github.com/austinintelligence/android-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "MCP server and CLI giving AI agents fast, bounded access to physical Android devices and emulators.",
+    "verify_terms": [
+      "android-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/austinintelligence/android-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bfbcef6c3087efa2342ca4d390786bedb9835f24eb9fc351ae9a50d677c907c1"
   }
 ]

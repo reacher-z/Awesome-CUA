@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Rocuronium",
+    "url": "https://github.com/kageroumado/rocuronium",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "observability",
+      "automation"
+    ],
+    "summary": "Isolates macOS computer-use agents inside a separate login session while rendering a live visible-agent overlay on the host screen.",
+    "verify_terms": [
+      "Rocuronium"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kageroumado/rocuronium/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6a65ab42755bc360d106967dc2fabfafc0edb07c5f00a95b12bee877d637db83"
+  },
+  {
+    "name": "mew-agent",
+    "url": "https://github.com/kaiizer777/mew-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "mew-agent is a Rust-native browser agent that drives visible Chromium via CDP using accessibility-tree perception and vision fallback.",
+    "verify_terms": [
+      "mew-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kaiizer777/mew-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7162e819ff5b387dfa2bf2aa66c9a9ba6bdc30c664a49f4defb82e24b182a4d9"
+  },
+  {
+    "name": "UI-FaultLab",
+    "url": "https://github.com/kakoyvostorg/ui-faultlab",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "observability",
+      "robustness"
+    ],
+    "summary": "UI-FaultLab benchmarks auditable agent-versus-application failure attribution in visual UI testing workflows.",
+    "verify_terms": [
+      "UI-FaultLab"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kakoyvostorg/ui-faultlab/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "584fdc7fef79a8f10fabfcd488468f6d1b17ac457df9984bec96a50d2d8866b7"
+  },
+  {
+    "name": "browxai",
+    "url": "https://github.com/kalebteccom/browxai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "browxai provides unified MCP-native control over Chromium, Firefox, and native desktop applications for AI agents.",
+    "verify_terms": [
+      "browxai"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kalebteccom/browxai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "248d75dd4d79ee0d4bbc111b659fedb106758eec61f1d2fb72ae910762609223"
+  },
+  {
+    "name": "Inside the Agent (SAE Browser Harness)",
+    "url": "https://github.com/kalyvask/inside-the-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "evaluation",
+      "web-navigation",
+      "safety-security"
+    ],
+    "summary": "Reproducible harness for Sparse Autoencoder (SAE) feature steering and live interpretability monitoring of browser agents.",
+    "verify_terms": [
+      "Inside the Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kalyvask/inside-the-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af455ed749a554fff1fd987bc25830cc3e683f5efe1b9899dabdb0379b1d136d"
   }
 ]

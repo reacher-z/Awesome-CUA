@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Aeyes (Voice Browser Assistant)",
+    "url": "https://github.com/Evalutik/ai-partner-catalyst",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "screen-understanding"
+    ],
+    "summary": "Aeyes is a voice-controlled Chrome extension assistant designed to help blind and visually impaired users navigate websites.",
+    "verify_terms": [
+      "Aeyes"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Evalutik/ai-partner-catalyst/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "531386112fbabd092c1d705041e72be2ba8beddce7c6a6fa67eddc681119dcdd"
+  },
+  {
+    "name": "EverySolve Plugin",
+    "url": "https://github.com/everyinfra/everysolve-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Authorized CAPTCHA challenge detection and resolution skill for OpenAI Codex and Claude Code browser workflows.",
+    "verify_terms": [
+      "everysolve-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/everyinfra/everysolve-plugin/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bffb35474dde772e29914e3ff8a1bbe46a20a228f6eda7898dfa4f6efaae25a5"
+  },
+  {
+    "name": "EyeBrowse",
+    "url": "https://github.com/Evil-Bane/eyebrowse",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "EyeBrowse is a stealthy, LLM-drivable browser engine providing both a Python library and an 85-tool Model Context Protocol server.",
+    "verify_terms": [
+      "EyeBrowse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Evil-Bane/eyebrowse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "978ff36d00dad9aa1b37b8fd44ce6040ba95e4852644bb635ca2ead759d45343"
+  },
+  {
+    "name": "screenshotting-gui",
+    "url": "https://github.com/EvilFreelancer/screenshotting-gui",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Agent skill for Claude Code, Codex, and Cursor that captures repeatable, window-scoped screenshots of native desktop and browser GUI apps.",
+    "verify_terms": [
+      "screenshotting-gui"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EvilFreelancer/screenshotting-gui/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a0f2a90f97bac796fb8b8c98df5e2755f0918cee28646429cd0424fc6beaa13"
+  },
+  {
+    "name": "LMMs-Eval",
+    "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval",
+    "kind": "benchmark",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "LMMs-Eval is a standardized evaluation harness for large multimodal models covering GUI grounding, VQA, document, and video benchmarks.",
+    "verify_terms": [
+      "LMMs-Eval"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EvolvingLMMs-Lab/lmms-eval/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f14d00e5d467b739b9bbbbf03eacf78dbbd6f28ec65f74ee52939556e6f02e23"
   }
 ]

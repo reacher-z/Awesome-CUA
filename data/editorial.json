@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "FaizannRaza Computer-Use Automation",
+    "url": "https://github.com/faizannraza/computer-use-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Discovers legacy banking UI workflows with an LLM once and compiles the run into a deterministic capability artifact.",
+    "verify_terms": [
+      "computer-use-automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/faizannraza/computer-use-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a6955eddc560bd7acc3c7e5b38c8e5e42e6a93beb782d6f6cbe3a1702110e510"
+  },
+  {
+    "name": "Browser Takeover Bridge",
+    "url": "https://github.com/fangsylar-pixel/browser-takeover-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Local-first browser bridge for securely attaching AI agents to already-open authenticated Chrome and Edge sessions with human handoff.",
+    "verify_terms": [
+      "Browser Takeover Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fangsylar-pixel/browser-takeover-bridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d793b8e58655ec25c31c54fb22191cd8e62c527eff6f6ff8b20ca9ae4ff2a421"
+  },
+  {
+    "name": "Visual Context Router",
+    "url": "https://github.com/fangsylar-pixel/visual-context-router",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "Token-aware visual context router that crops, downscales, or replaces full screenshots with localized regions before sending to CUA models.",
+    "verify_terms": [
+      "Visual Context Router"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fangsylar-pixel/visual-context-router/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a01d36d6e3d8a448a435e351ebc963e113071f5794c5161c9e3182f0d3e87c2b"
+  },
+  {
+    "name": "Codex Managed Channel",
+    "url": "https://github.com/fantasyce/codex-managed-channel",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Lifecycle-controlled SSH channel manager for driving Codex Desktop sessions on a remote Mac.",
+    "verify_terms": [
+      "Codex Managed Channel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fantasyce/codex-managed-channel/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9b5c97f24246bce06179f4103a5c4a6092d8feaa0db09a41a316aee6d0385141"
+  },
+  {
+    "name": "OmniWebBench",
+    "url": "https://github.com/FanXuTheRealOne/OmniWebBench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "self-reflection",
+      "robustness"
+    ],
+    "summary": "OmniWebBench evaluates agentic browsers across end-to-end web navigation, action execution, failure recovery, and evidence verification.",
+    "verify_terms": [
+      "OmniWebBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/FanXuTheRealOne/OmniWebBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1c3fa67c31446916a2b526b953e6703bbd0deba22f44615210661b2e553cb3d8"
   }
 ]

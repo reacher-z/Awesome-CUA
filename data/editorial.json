@@ -86010,5 +86010,208 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "mcp-chrome-bridge",
+    "url": "https://github.com/wizardofweb125-lab/mcp-chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "recording"
+    ],
+    "summary": "Model Context Protocol server for controlling Chrome tabs, forms, console/network logs, screenshots, and GIF recordings.",
+    "verify_terms": [
+      "mcp-chrome-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wizardofweb125-lab/mcp-chrome-bridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b5c4296453167f2133c228568bde847e7a8296a701d42eb88c44b14caecfb329"
+  },
+  {
+    "name": "mcp-linux-desktop",
+    "url": "https://github.com/wizardofweb125-lab/mcp-linux-desktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Model Context Protocol server for full Linux desktop control spanning windows, mouse, keyboard, clipboard, audio, OCR, and accessibility.",
+    "verify_terms": [
+      "mcp-linux-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wizardofweb125-lab/mcp-linux-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "05b5fe05831cc1fae127dae2c4c128eb5e89f200833aa5548adc7f10ea5a064c"
+  },
+  {
+    "name": "deepseek-web-search-plugin",
+    "url": "https://github.com/wojiuluguo/deepseek-web-search-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "OpenClaw skill providing DeepSeek web search, cross-validation, and automated browser page archiving.",
+    "verify_terms": [
+      "deepseek-web-search-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wojiuluguo/deepseek-web-search-plugin/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4b63879063d723e3d3ccb57d95e40cd5e6179d4f3469adc1bbd74305ce7bc085"
+  },
+  {
+    "name": "GPT-Control",
+    "url": "https://github.com/wolfiesch/gpt-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "evaluation",
+      "workflow"
+    ],
+    "summary": "Cross-model review broker allowing CLI coding agents to drive a signed-in ChatGPT app or web session for structured verification.",
+    "verify_terms": [
+      "GPT-Control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wolfiesch/gpt-control/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "37b7cdcdf2c2d0972a9f12be38cd6548e6758cc43788c8d3d4e6a879a44f836c"
+  },
+  {
+    "name": "omp-cua",
+    "url": "https://github.com/wolfiesch/omp-cua",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Low-overhead Cua Driver computer-use integration for the Oh My Pi coding agent.",
+    "verify_terms": [
+      "omp-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wolfiesch/omp-cua/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3be2fda0b4db3597f848f0d868afc24ad31629985b3005a200054b61bc643fb9"
+  },
+  {
+    "name": "Desktop Commander MCP",
+    "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Desktop Commander MCP is a Model Context Protocol server for terminal process control, interactive REPLs, and surgical file editing.",
+    "verify_terms": [
+      "Desktop Commander MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wonderwhy-er/DesktopCommanderMCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a3feea8354f8552d52f9cafb10c552b72108f500ae97329f280d223e2c9467bd"
+  },
+  {
+    "name": "Android Device Perception Skill",
+    "url": "https://github.com/WorksOnMyVM/android-device-perception-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "safety-security"
+    ],
+    "summary": "Portable, read-only Android state-snapshot skill via ADB for AI coding and mobile agents.",
+    "verify_terms": [
+      "Android Device Perception Skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WorksOnMyVM/android-device-perception-skill/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "22d7425bf51335b14ff02f705ab31ba2aad7f75c4f19397763c86ce3b9d3ae35"
+  },
+  {
+    "name": "Wornpage WebMCP Conformance",
+    "url": "https://github.com/wornpage/webmcp-conformance",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Validation toolkit checking page-owned WebMCP tool schemas, authorization boundaries, and execution conformance.",
+    "verify_terms": [
+      "Wornpage WebMCP Conformance"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wornpage/webmcp-conformance/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dbe90a9859641b5ea0edaa60db8dc60eec60e8f041665c9be0adcee6802221d8"
   }
 ]

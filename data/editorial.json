@@ -86010,5 +86010,140 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Lucy Screen Agent",
+    "url": "https://github.com/alzin/lucy-screen-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Lucy is a voice-and-screen Android agent that perceives live app screens with Gemini vision and executes taps, swipes, and text input.",
+    "verify_terms": [
+      "lucy-screen-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/alzin/lucy-screen-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "daea3dbef57bb8f24c4396ff1ac31cacbc5786e8f1b3b7445616a08a1ee3d23b"
+  },
+  {
+    "name": "AXTree API",
+    "url": "https://github.com/amaar-mc/axtree-api",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "state-tracking",
+      "automation"
+    ],
+    "summary": "Event-driven macOS Accessibility tree streaming server and action bridge for computer-use agents.",
+    "verify_terms": [
+      "AXTree API"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amaar-mc/axtree-api/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b88d281e446b7c3f9471d4f3f5be79d66e67c94e8a216351af61e4537652f7fb"
+  },
+  {
+    "name": "amajorai Ghost Desktop MCP",
+    "url": "https://github.com/amajorai/ghost",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Desktop-automation Model Context Protocol server providing screen perception and mouse/keyboard input control for AI agents.",
+    "verify_terms": [
+      "ghost"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amajorai/ghost/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "12f7d5f412e1ae5cc2dc9c3644135f28dfbe8f1658ebb684799b0fd7387129f0"
+  },
+  {
+    "name": "LongHorizon-Harness",
+    "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "long-horizon",
+      "planning",
+      "self-reflection",
+      "workflow"
+    ],
+    "summary": "LongHorizon-Harness wraps desktop and CLI agents in a persistent plan-act-verify-recover loop for multi-hour autonomous computer-use workflows.",
+    "verify_terms": [
+      "LongHorizon-Harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AMAP-ML/LongHorizon-Harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3300007a449cc6d3afc8992a3694e81bfb560ef1bff2a34cf5f272615168e0cc",
+    "documented_by": [
+      "2608.01964"
+    ]
+  },
+  {
+    "name": "Chrest",
+    "url": "https://github.com/amarbel-llc/chrest",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrest combines a browser extension, REST daemon, CLI, and MCP server for programmatically managing live Chrome and Firefox tabs and content.",
+    "verify_terms": [
+      "Chrest"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/amarbel-llc/chrest/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c0b248f0486e1c93d2d256f6998abb260e26385eef54d0548f9aae6f09b28ebe"
   }
 ]

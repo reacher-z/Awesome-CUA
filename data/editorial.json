@@ -86010,5 +86010,218 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DSH Desktop Operator",
+    "url": "https://github.com/zjh02249/dsh-desktop-operator",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "safety-security",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Safe Windows computer-use plugin for DeepSeek Harness providing window-scoped desktop automation and verification.",
+    "verify_terms": [
+      "DSH Desktop Operator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zjh02249/dsh-desktop-operator/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "905b9868caf21847c4821fe3c33cbd14afb34b0a49be094cc6cc4486905274cf"
+  },
+  {
+    "name": "MVP (Multiple View Prediction)",
+    "url": "https://github.com/ZJUSCL/MVP",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "MVP improves GUI visual grounding by aggregating multi-view coordinate predictions across aspect-ratio and resolution transformations.",
+    "verify_terms": [
+      "MVP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZJUSCL/MVP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b356b363ad1ee4e61e5fda9e80f7ffcfe114b4203be3dc786ce430032a559fa2",
+    "documented_by": [
+      "2512.08529"
+    ]
+  },
+  {
+    "name": "SWEeper-Bench",
+    "url": "https://github.com/zlab-princeton/sweeper-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "SWEeper-Bench evaluates whether interactive GUI and browser agents can autonomously discover and reproduce 200 real bugs in open-source software.",
+    "verify_terms": [
+      "SWEeper-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zlab-princeton/sweeper-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2e320cee08f5bd1f28ceb1ea6caedefa1e5e4d5997da2f2b2eb2dbbbcd5bfcb4"
+  },
+  {
+    "name": "O-yuan (启原) v3.0",
+    "url": "https://github.com/ZnFr60/O-yuan-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Cross-platform general-purpose agent equipped with 28+ built-in tools, multi-model deliberation, GUI automation, and persistent shell.",
+    "verify_terms": [
+      "O-yuan (启原) v3.0"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZnFr60/O-yuan-Agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b2b32c06d95739138c8ae855a0393f2a014bdd7e64aab303634431f8342466e"
+  },
+  {
+    "name": "Vision Primitives MCP",
+    "url": "https://github.com/zouyuanqing/vision-primitives-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Vision Primitives MCP equips text-only LLMs with 30 visual MCP tools for screen description, coordinate localization, OCR, and crop-zoom.",
+    "verify_terms": [
+      "Vision Primitives MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zouyuanqing/vision-primitives-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "22246cb995d89efc0856d76ddd46a5c4cafc947cda9af26f9bab45ded9d14f16"
+  },
+  {
+    "name": "Northstar (Legacy Portal CUA)",
+    "url": "https://github.com/zoyaarief/legacy-credit-union-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Discovers workflows on legacy credit-union web portals with an AI agent once and compiles them into deterministic scripts.",
+    "verify_terms": [
+      "Northstar"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zoyaarief/legacy-credit-union-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1ebac074f817be96056f981e1d4939f68e21d5432b11bbb5e592b9ccc140a60a"
+  },
+  {
+    "name": "ZRui-C DSH Computer Use",
+    "url": "https://github.com/ZRui-C/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Text-first browser and background macOS window control plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh computer use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZRui-C/dsh-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8578a0cbabf34ef3b3a2617968a590aa4c4cc3c7bdc62526bc399dd8fc3a8abe"
+  },
+  {
+    "name": "zseven-w DSH Browser",
+    "url": "https://github.com/ZSeven-W/dsh-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Headless-first browser automation plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZSeven-W/dsh-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c3d043ff42723e661324eacb4cf247f7ae8a3b6913620ce7b8fe0c4a24bf683a"
   }
 ]

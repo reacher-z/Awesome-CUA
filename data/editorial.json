@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OmniInfer",
+    "url": "https://github.com/omnimind-ai/OmniInfer",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "OmniInfer is a local LLM and VLM inference engine with OpenAI-compatible APIs for desktop and edge agents.",
+    "verify_terms": [
+      "OmniInfer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/omnimind-ai/OmniInfer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a9b932260bc9680dec3d85bad7e8b031772aa29be62ddb284ec127b94cb5a424"
+  },
+  {
+    "name": "pyautogui_mcp_server",
+    "url": "https://github.com/on-panda/pyautogui_mcp_server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "pyautogui_mcp_server is a Streamable HTTP Model Context Protocol server for executing PyAutoGUI desktop automation workflows.",
+    "verify_terms": [
+      "pyautogui_mcp_server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/on-panda/pyautogui_mcp_server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2613df3468fb6586181b0f308e0b82951e22219a9b66e2a21d79d3dbf5706ca0"
+  },
+  {
+    "name": "ComputerMate",
+    "url": "https://github.com/one710/computermate",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "ComputerMate is a cross-platform Model Context Protocol server granting AI models screen capture, OCR, mouse/keyboard, and shell control.",
+    "verify_terms": [
+      "ComputerMate"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/one710/computermate/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4c25c138dac5c2880a463416be261c11afa8104352ab45e3460b31bc8eba7e84"
+  },
+  {
+    "name": "ESP32 iPhone Agent",
+    "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "grounding"
+    ],
+    "summary": "ESP32 iPhone Agent controls unmodified iPhones via Bluetooth HID mouse/keyboard emulation from an ESP32 paired with vision-language screen parsing.",
+    "verify_terms": [
+      "ESP32 iPhone Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ccb4ca275f7a3d01adf629446ee70a063d9ac7f655438dd27087ef034d11b3e5"
+  },
+  {
+    "name": "only-cli (oc)",
+    "url": "https://github.com/only-cli/oc",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Compiles websites into compact, token-efficient CLI commands tailored for AI agents.",
+    "verify_terms": [
+      "only-cli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/only-cli/oc/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ecde4f313f5b795ed4df74b164e5a690b9c5e737b1b45bd83685f196b698ea50"
   }
 ]

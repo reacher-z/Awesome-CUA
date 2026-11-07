@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "BrowserGuard",
+    "url": "https://github.com/David-Wu1119/browserguard",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "BrowserGuard is a runtime safety layer that evaluates proposed browser and computer-use agent actions against security policies.",
+    "verify_terms": [
+      "BrowserGuard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/David-Wu1119/browserguard/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f6288e74fa998bdb8fb42e2cd6a188f07e6040fcc9dd7a24302d79910f2ef3a2"
+  },
+  {
+    "name": "Grok Chrome Bridge",
+    "url": "https://github.com/davidsolheim/grok-chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Chrome bridge allowing Grok Build to inspect and interact with live local web applications during development.",
+    "verify_terms": [
+      "Grok Chrome Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/davidsolheim/grok-chrome-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1d943156b9235005ecc0349e8fc95dd86473bfb739c0f6c030fe4fa685da0b3f"
+  },
+  {
+    "name": "Desktop Action Agent",
+    "url": "https://github.com/dax0056/desktop-action-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "sandbox",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Sandboxed local computer-automation agent reference architecture with window detection and action verification.",
+    "verify_terms": [
+      "Desktop Action Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dax0056/desktop-action-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d29a9cbee48fdf8ae4a74dc4e82827e5e148c7c9d10e1f00499ff24c435a938d"
+  },
+  {
+    "name": "arc-control-mcp",
+    "url": "https://github.com/DB-25/arc-control-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server that drives the Arc browser on macOS, including spaces, tabs, navigation, and page interaction.",
+    "verify_terms": [
+      "arc-control-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DB-25/arc-control-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "833b577a12e75a8172104dabe2d5ab88d23161337640dfcaf7b48c3d767d3b36"
+  },
+  {
+    "name": "dcc-cua",
+    "url": "https://github.com/dcc-mcp/dcc-cua",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Cross-platform Rust runtime and CLI for AI agents to observe and control scoped desktop application windows.",
+    "verify_terms": [
+      "dcc-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dcc-mcp/dcc-cua/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fed4e489abebc5da02cd5304f2535231d68ebc774a3cfc49b19a8e30bdf7a05d"
   }
 ]

@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MAI",
+    "url": "https://github.com/fluxaster/MAI",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "android",
+      "windows"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "self-reflection",
+      "automation"
+    ],
+    "summary": "MAI combines MaaFramework with multimodal LLMs in a Planner-Executor-Verifier loop for game and application GUI automation.",
+    "verify_terms": [
+      "MAI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/fluxaster/MAI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "68860b946f802cb8a3d6c9a1983d9d34cae935ccb8a2f81188793110af944da1"
+  },
+  {
+    "name": "headless-use",
+    "url": "https://github.com/flyingsquirrel0419/headless-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Headless Linux browser runtime and CLI giving coding agents a real Chromium browser with persistent sessions.",
+    "verify_terms": [
+      "headless-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/flyingsquirrel0419/headless-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c29a4095dd648fddf497726bdc782b18a76ae538ccb5e141b06352b033a0b28a"
+  },
+  {
+    "name": "DSH Browser Client",
+    "url": "https://github.com/flymysql/dsh-browser-client",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "workflow"
+    ],
+    "summary": "Floating in-page LLM browser assistant for DeepSeek Harness enabling non-technical users to automate webpage workflows.",
+    "verify_terms": [
+      "DSH Browser Client"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/flymysql/dsh-browser-client/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bf2da4793dbe39e9ed59356fb24c93c038d260066148b0b8479add387b4b8772"
+  },
+  {
+    "name": "DJCLIPZ Agent Controller",
+    "url": "https://github.com/form-u-la/djclipz-agent-controller",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "video"
+    ],
+    "summary": "Starter kit and controller for driving the DJCLIPZ browser media application programmatically from AI agents.",
+    "verify_terms": [
+      "DJCLIPZ Agent Controller"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/form-u-la/djclipz-agent-controller/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "139fc15c453b21cdc6c802afb23844d7a9cacc7574218d83ae62e1f5c91a7a42"
+  },
+  {
+    "name": "Semantic GUI Control Layer (SGCL)",
+    "url": "https://github.com/frankbria/semantic-gui-control",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "SGCL is a cross-platform, text-first control layer that exposes graphical user interfaces to agents as structured semantic affordances.",
+    "verify_terms": [
+      "Semantic GUI Control Layer (SGCL)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/frankbria/semantic-gui-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e8125048b7a0d6f8d21528071db92a539caacd0ffde69dab3ad127ededb5cc88"
   }
 ]

@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Caesar Agent",
+    "url": "https://github.com/jasonzliang/caesar-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "workflow"
+    ],
+    "summary": "Caesar is an open-source deep-research web agent that plans multi-step queries, crawls webpages, and synthesizes cited reports.",
+    "verify_terms": [
+      "Caesar Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jasonzliang/caesar-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0592f078992fb601a9f88c08bd58353148c0a19451faf8c0ec0c8150b6f79116"
+  },
+  {
+    "name": "Auto_OS",
+    "url": "https://github.com/Jaswanth1902/Auto_OS",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Sub-30ms Windows desktop automation primitive using direct Win32 UI Automation tree traversal and native input injection.",
+    "verify_terms": [
+      "Auto_OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jaswanth1902/Auto_OS/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "03c843e43ea19316d2a77700487751c3a5723bf5f27abe83ab3d2642f7f28be0"
+  },
+  {
+    "name": "linux-use",
+    "url": "https://github.com/javimosch/linux-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Agent-first, CLI-first GUI control toolkit for Linux desktops operating over the AT-SPI2 accessibility tree.",
+    "verify_terms": [
+      "linux-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/javimosch/linux-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f3de3dfdc05a0df1f06e1fb9f320fe659af62609893217c885e27f90b0f2a0f"
+  },
+  {
+    "name": "Clickyy",
+    "url": "https://github.com/jayamitkatariya/clickyyy",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Clickyy is a macOS desktop automation CLI and MCP server combining native Accessibility element targeting with Quartz input simulation.",
+    "verify_terms": [
+      "Clickyy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jayamitkatariya/clickyyy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "570311c915bd0231b5f6df6a8b43cd9368c41b24039b2dd47daf668b4a7d20e8"
+  },
+  {
+    "name": "see_the_screen (DSH Windows Desktop Plugin)",
+    "url": "https://github.com/jaychouu/see_the_screen",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows desktop automation plugin for DeepSeek Harness agents providing screen observation and GUI control.",
+    "verify_terms": [
+      "desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jaychouu/see_the_screen/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "18576857615409005e82775ce11b7256cbc0d8aa718cf68bab32f9e28b77ec62"
   }
 ]

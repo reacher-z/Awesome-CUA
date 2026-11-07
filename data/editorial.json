@@ -86010,5 +86010,237 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "FastHands",
+    "url": "https://github.com/tomaszteee/FastHands",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local-first cross-platform execution and web-research runtime for AI agents.",
+    "verify_terms": [
+      "FastHands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tomaszteee/FastHands/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7b94448e7c77fea7ceadefac03b4ade244478538c207a4e31b00a722a073715b"
+  },
+  {
+    "name": "Effectprint",
+    "url": "https://github.com/TommyTranX/effectprint",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Deterministic behavioral contract auditing suite for verifying side effects of WebMCP browser-agent tools.",
+    "verify_terms": [
+      "Effectprint"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TommyTranX/effectprint/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e527397b674e72f7ef7a9a1a3e4e8234ca8927d435f37302dea5c14f84d92599"
+  },
+  {
+    "name": "screen-use",
+    "url": "https://github.com/tongriyaotxt/screen-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Browser-Use-style framework for the entire desktop that gives AI agents visual screen perception and mouse/keyboard control.",
+    "verify_terms": [
+      "screen-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/tongriyaotxt/screen-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4bc27308add7570571643c5b3c479f86c0c84e6e5089663310a30a570f4ba4a5"
+  },
+  {
+    "name": "pagewatch-mcp",
+    "url": "https://github.com/toolshedlabs-hash/pagewatch-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Minimal 3-tool Model Context Protocol server for reading webpages as Markdown, capturing screenshots, and exporting PDFs.",
+    "verify_terms": [
+      "pagewatch-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/toolshedlabs-hash/pagewatch-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "00bfd2e742725470e95c3e24251707122ac0b82f02b11b91396762d3b128f429"
+  },
+  {
+    "name": "OpenOCR",
+    "url": "https://github.com/Topdu/OpenOCR",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "OpenOCR is an open-source scene and document text detection, recognition, and VLM-OCR toolkit used for screen text parsing.",
+    "verify_terms": [
+      "OpenOCR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Topdu/OpenOCR/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0799c29d60b02c5dd30ec6bb0612b2765c88c38f894a55cbf9771a01f531cc8b"
+  },
+  {
+    "name": "browser-task-bench",
+    "url": "https://github.com/TradeStackDev/browser-task-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "browser-task-bench is a benchmark suite of 200+ web interaction tasks covering forms, search, authentication, and checkout flows.",
+    "verify_terms": [
+      "browser-task-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TradeStackDev/browser-task-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2bc4430a06e27720e25cae12f1566818a54cf7d74f3bc425b87421eed76e16b9"
+  },
+  {
+    "name": "THEIA Computer Use",
+    "url": "https://github.com/TREE-Ind/THEIA-UI-Computer-Use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "THEIA (The Human Environment Intelligence Aperture) is a visual perception and UI computer-use plugin and framework for AI agents.",
+    "verify_terms": [
+      "THEIA Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TREE-Ind/THEIA-UI-Computer-Use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aa4facac56f5196eb972eaf8b4419981252031c0f5e41989c8d4b63cefa57e9c"
+  },
+  {
+    "name": "gWorld (GuiWorld)",
+    "url": "https://github.com/trillion-labs/gWorld",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "world-models",
+      "mobile-navigation",
+      "action-prediction"
+    ],
+    "summary": "gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation.",
+    "verify_terms": [
+      "gWorld"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f5ae4cdd0c25f724765729c5a9e860906e730d8c395b9c3fff65af8b14ae0803",
+    "documented_by": [
+      "2602.01576"
+    ]
+  },
+  {
+    "name": "Trishula-BrowserAgent",
+    "url": "https://github.com/TrishulaSoftware/Trishula-BrowserAgent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Sovereign, doctrine-gated autonomous web browser agent built on CDP and Browser Use with SOCKS5 proxy isolation.",
+    "verify_terms": [
+      "Trishula-BrowserAgent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/TrishulaSoftware/Trishula-BrowserAgent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "260e855497e07f95bb5218eb6e4656c54d69dad7833682e617ee09636f880055"
   }
 ]

@@ -86010,5 +86010,205 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MobileVLM",
+    "url": "https://github.com/XiaoMi/mobilevlm",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "mobile-navigation",
+      "action-prediction"
+    ],
+    "summary": "MobileVLM is a vision-language model pre-trained on the Mobile3M UI transition graph for intra-screen and inter-screen mobile UI understanding.",
+    "verify_terms": [
+      "MobileVLM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/XiaoMi/mobilevlm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e8a92a783b6b65cacedf105e5ede583668f8774f2a81a2005dc6897da6fa88ef"
+  },
+  {
+    "name": "Ziweixing (紫微星)",
+    "url": "https://github.com/xiaozhe7772222/ziweixing",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Intent-first Android phone automation agent with human-like touch trajectories and screen perception.",
+    "verify_terms": [
+      "Ziweixing (紫微星)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xiaozhe7772222/ziweixing/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f44fc304fbb94f9c7d57ec0882c518647a81aa58e2271a7fe0826f64ffd3a0bb"
+  },
+  {
+    "name": "dsh_omnivision (OmniVision)",
+    "url": "https://github.com/xiaozhengdeng/dsh_omnivision",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "OmniParser-powered GUI agent plugin for DeepSeek Harness providing screen element detection and desktop mouse/keyboard automation.",
+    "verify_terms": [
+      "dsh_omnivision"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xiaozhengdeng/dsh_omnivision/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a40531118038bb46c26f2df1973f0bbd80493d7cbaed3b409bf448d2633c0c7"
+  },
+  {
+    "name": "AI Browser Bridge",
+    "url": "https://github.com/xinqi5921/ai-browser-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server and Chrome extension bridging AI assistants to live browser tabs.",
+    "verify_terms": [
+      "AI Browser Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xinqi5921/ai-browser-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "155d771b6521c7365b981602e52a647a9790b44b442d3483d0b1f012e1f6844c"
+  },
+  {
+    "name": "Android-Skill-Agent",
+    "url": "https://github.com/xiru0834-eng/Android-Skill-Agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "imitation-learning",
+      "memory",
+      "workflow"
+    ],
+    "summary": "Android-Skill-Agent extracts demonstration-guided, parameterized operational skills with accessibility-tree verification for Android apps.",
+    "verify_terms": [
+      "Android-Skill-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xiru0834-eng/Android-Skill-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cbcf65bde0f8af7b1713804d15da1205dc3dc460c4f8f004638d2bcd81037d7a"
+  },
+  {
+    "name": "AndroidClaw",
+    "url": "https://github.com/xiuqianli1996/androidclaw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Android-native LLM phone agent operating directly on-device via Android AccessibilityService and screen hierarchy parsing.",
+    "verify_terms": [
+      "AndroidClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xiuqianli1996/androidclaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "61b64863b2065c9b582893ce8bd05c224788fb424a1102b092312c9da62b6ba5"
+  },
+  {
+    "name": "xiyiyiru chrome-mcp (DrissionPage MCP)",
+    "url": "https://github.com/xiyiyiru/chrome-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for browser automation built on DrissionPage.",
+    "verify_terms": [
+      "chrome-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xiyiyiru/chrome-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f70cb90a34b3567a568048d466e4fbd6e7e273ec824e1998059a8c05027fd778"
+  },
+  {
+    "name": "CUA-Gym",
+    "url": "https://github.com/xlang-ai/CUA-Gym",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "reinforcement-learning",
+      "sandbox",
+      "evaluation"
+    ],
+    "summary": "CUA-Gym is a scalable pipeline for synthesizing interactive mock web environments and verifiable RLVR training tasks for computer-use agents.",
+    "verify_terms": [
+      "CUA-Gym"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xlang-ai/CUA-Gym/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e8050e2739ae45248329cd505c9e9dde8a88e6b200f826734d9ecf2e3815366a",
+    "documented_by": [
+      "2605.25624"
+    ]
   }
 ]

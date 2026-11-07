@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Selenium Self-Healing MCP Server",
+    "url": "https://github.com/aiqualitylab/selenium-selfhealing-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "robustness"
+    ],
+    "summary": "MCP server that diagnoses broken Selenium DOM locators after UI changes and synthesizes self-healing replacement selectors.",
+    "verify_terms": [
+      "Selenium Self-Healing MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aiqualitylab/selenium-selfhealing-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "90daef03593116b265990ac366c0effbcb91e7c6f484fde5d2344b945ff53521"
+  },
+  {
+    "name": "mcp-dia",
+    "url": "https://github.com/aissablk1/mcp-dia",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server for controlling Dia Browser tabs, pages, and built-in AI features over the Chrome DevTools Protocol.",
+    "verify_terms": [
+      "mcp-dia"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/aissablk1/mcp-dia/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "970d5b866e68455e35b911721111b19af91d60677da92df7b60f54e79aeed315"
+  },
+  {
+    "name": "Action Check WebMCP",
+    "url": "https://github.com/ajaknumber4/action-check-webmcp",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "state-tracking",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "External state-verification benchmark testing whether WebMCP browser tools actually produced their claimed DOM and backend effects.",
+    "verify_terms": [
+      "action-check-webmcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ajaknumber4/action-check-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f9c70f290a730537b60b903944429ab624422c22606e3eb5d42c874c03136241"
+  },
+  {
+    "name": "Cockroach Browser",
+    "url": "https://github.com/AjnasNB/cockroach-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Local-first browser automation platform for AI agents supporting isolated Chromium, Firefox, and WebKit profiles.",
+    "verify_terms": [
+      "Cockroach Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AjnasNB/cockroach-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "239448230145fbe7b9cc4cb5a3bdc50aa047248387f821c758bf2436fd092a4a"
+  },
+  {
+    "name": "Gemini Web MCP",
+    "url": "https://github.com/AkashNaickar/gemini-web-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server and CLI bridging coding agents to an authenticated Google Gemini web session.",
+    "verify_terms": [
+      "Gemini Web MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/AkashNaickar/gemini-web-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7a2a4c7ad11f997850a21b8bf3e42cf24886dafdd9a391f3dfc652e7220cd5fd"
   }
 ]

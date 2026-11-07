@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ClawBox",
+    "url": "https://github.com/coderkk1992/clawbox",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "safety-security"
+    ],
+    "summary": "ClawBox runs OpenClaw and computer-use agents inside an isolated Apple Virtualization.framework macOS virtual machine sandbox.",
+    "verify_terms": [
+      "ClawBox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/coderkk1992/clawbox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a55d051e385092a1b10133ae136003e21176e88394809c695a6e90031c0a2f0f"
+  },
+  {
+    "name": "Hikari (光)",
+    "url": "https://github.com/CodewithEvilxd/hikari",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Autonomous AI desktop agent for Windows capable of GUI control, system management, and multi-step task execution.",
+    "verify_terms": [
+      "Hikari (光)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CodewithEvilxd/hikari/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a9c73b50f55df674d2b5b0dee7dfe7e6ebdb556fb5cb33cbb2055b4f255f21b"
+  },
+  {
+    "name": "AgentScrub",
+    "url": "https://github.com/codewithsupra/agentscrub",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "recording",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Visual session-replay debugger for Browser Use agent runs that lets developers scrub through step timelines and DOM states.",
+    "verify_terms": [
+      "AgentScrub"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/codewithsupra/agentscrub/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af561b4f159e529751ee81beb3ac8feeefa94714dc083eed04c6e938d5553d95"
+  },
+  {
+    "name": "SightRig",
+    "url": "https://github.com/coetzeexu/sightrig",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "recording",
+      "human-in-the-loop"
+    ],
+    "summary": "SightRig is a traceable runtime and visual workbench for inspecting, guarding, and replaying GUI agent perceptions and actions.",
+    "verify_terms": [
+      "SightRig"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/coetzeexu/sightrig/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e560ee4fa1cd094eb07523da638b49f404f8ab638f291a8056de2c1b18b54dc4"
+  },
+  {
+    "name": "Deck",
+    "url": "https://github.com/cofy-x/deck",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "observability"
+    ],
+    "summary": "Deck is an open-source desktop cockpit for managing isolated local AI agent sandboxes, desktop sessions, and developer handoffs.",
+    "verify_terms": [
+      "Deck"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cofy-x/deck/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "135ee3b79d27f487fc1639e35dbf03863c76423328948fe41c6acca33406bf54"
   }
 ]

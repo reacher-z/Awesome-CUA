@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "VisionGrid AI",
+    "url": "https://github.com/MohsinJutt62/AutoPlay-CV_Engine_Bot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "Computer-vision Android UI automation and heuristic gameplay engine built with OpenCV and ADB.",
+    "verify_terms": [
+      "VisionGrid AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MohsinJutt62/AutoPlay-CV_Engine_Bot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "51e99fc520a02d310643064931330df1cef37ccbdbcdd81107394ea97bbb09b6"
+  },
+  {
+    "name": "ProBrowser MCP Server",
+    "url": "https://github.com/momadhuynh04/probrowser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Anti-detection real-browser automation Model Context Protocol server for AI agents.",
+    "verify_terms": [
+      "ProBrowser MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/momadhuynh04/probrowser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "89fabeb4f758243d03a6f7c01e27322cc6f24bed65faa2c48978f095aec0a423"
+  },
+  {
+    "name": "Hachifish",
+    "url": "https://github.com/momo-null/hachifish",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "self-reflection"
+    ],
+    "summary": "Hachifish is an on-device Android GUI agent that executes natural-language tasks via the native AccessibilityService with pre-completion checks.",
+    "verify_terms": [
+      "Hachifish"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/momo-null/hachifish/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a8630f71d59feb7e0d1453adb88ebc9a79e0783808d2c6581fac961894e30ecd"
+  },
+  {
+    "name": "Bounded Multimodal Desktop GUI Agent",
+    "url": "https://github.com/momoyi0929/GUI-Agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "Bounded multimodal desktop GUI agent built with LangChain and LangGraph featuring OCR grounding, action safety checks, and Mind2Web/ScreenAgent evals.",
+    "verify_terms": [
+      "gui-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/momoyi0929/GUI-Agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c0b2df9dc187a5172f7848b216fa27063f3555ce888bc40b3eac30a56e97c920"
+  },
+  {
+    "name": "vadgr-computer-use",
+    "url": "https://github.com/MONTBRAIN/vadgr-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Three-tier computer-use MCP server combining system shell tools, OS accessibility trees (UIA/AT-SPI/AX), and vision fallback.",
+    "verify_terms": [
+      "vadgr-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MONTBRAIN/vadgr-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "640951389206024162d8e67848c8934304f6788895fc6a3eb739c683e1310211"
   }
 ]

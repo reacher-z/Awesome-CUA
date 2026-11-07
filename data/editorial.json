@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MCP Browser Use Server",
+    "url": "https://github.com/JovaniPink/mcp-browser-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "FastAPI Model Context Protocol server that exposes browser-use autonomous web navigation workflows as callable MCP tools.",
+    "verify_terms": [
+      "MCP Browser Use Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JovaniPink/mcp-browser-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "16df5b2467a47130b6105665c46ad7222e0587b94f88e5636f2f4577381ec290"
+  },
+  {
+    "name": "Goby",
+    "url": "https://github.com/juguang/Goby",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Open-source Chrome extension in-page web agent that executes natural-language browsing and form-filling tasks.",
+    "verify_terms": [
+      "Goby"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/juguang/Goby/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4408ca571aa1f1e3070ff155af665ad13f23938cf0594d24fc8c5278f81a064c"
+  },
+  {
+    "name": "mimic (Kernel-Level uinput Driver)",
+    "url": "https://github.com/juicerq/mimic",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Drives mouse, keyboard, and screen control on Linux through kernel-level `/dev/uinput` human-like input trajectories.",
+    "verify_terms": [
+      "mimic"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/juicerq/mimic/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4fa97315e6db4924120d6c842b3e34cae7f8f55692afb1447231fb0f011831aa"
+  },
+  {
+    "name": "Agent Eyes",
+    "url": "https://github.com/Jumpsy/agent-eyes",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "ui-design",
+      "evaluation",
+      "tool-integration"
+    ],
+    "summary": "Visual inspection toolkit for AI agents that captures rendered screenshots and extracts live CSS design tokens from the DOM.",
+    "verify_terms": [
+      "Agent Eyes"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jumpsy/agent-eyes/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3e31ae8b686c29ced5651a610bfaa591e3870bebe63ffb7785403879c9ec170b"
+  },
+  {
+    "name": "Spooky Action",
+    "url": "https://github.com/Jumpsy/spooky-action",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Focus-free macOS computer-use tool that presses native Accessibility buttons in the background without moving the user's cursor.",
+    "verify_terms": [
+      "Spooky Action"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jumpsy/spooky-action/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d9b6e6be07c9291b1812cf2efb1fbf42ae32bc3513f4417ec47a80e543ca473f"
   }
 ]

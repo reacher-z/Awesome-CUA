@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Recruit Auto-Reply",
+    "url": "https://github.com/kxc7558/recruit-auto-reply",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Local browser-extension agent for recruiting platforms that answers candidate messages from a retrieval knowledge base and escalates unknowns.",
+    "verify_terms": [
+      "Recruit Auto-Reply"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kxc7558/recruit-auto-reply/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b6229d415a09930d5c36aca625b1486ea0abe855ca352228e423c177a556f575"
+  },
+  {
+    "name": "WebBridge",
+    "url": "https://github.com/kxdds/WebBridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "WebBridge pairs a Chrome extension and local daemon to let coding agents control a user's authenticated Chrome session.",
+    "verify_terms": [
+      "WebBridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kxdds/WebBridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2dbdfc714462afb3b2658b83f29afc20db393cd772f2ab3144f0ad94e99161a2"
+  },
+  {
+    "name": "ChangeShield",
+    "url": "https://github.com/Kxvya18/chnage-shield",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "self-reflection",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Self-repairing browser automation prototype that detects and adapts to third-party UI selector drift.",
+    "verify_terms": [
+      "ChangeShield"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Kxvya18/chnage-shield/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c038203540224cdf040dc7eca03a006dbd0ef07bcf8ba49e52029451ae245e07"
+  },
+  {
+    "name": "device-use",
+    "url": "https://github.com/labclaw/device-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "science",
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "device-use enables AI agents to operate scientific laboratory instruments through their native desktop GUI software without hardware APIs.",
+    "verify_terms": [
+      "device-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/labclaw/device-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5220b9e042eefd506736242a068e7489b47d0c5a9f0fe6e0f35f78eea2bf6684"
+  },
+  {
+    "name": "cua_agent",
+    "url": "https://github.com/lacassef/computeruse",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "safety-security",
+      "planning"
+    ],
+    "summary": "cua_agent is a modular Python computer-use framework with OS-agnostic planning, semantic UI grounding, and policy-checked desktop/browser drivers.",
+    "verify_terms": [
+      "cua_agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lacassef/computeruse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0abbd45eabc1a9d8580c43275d1dc7c9b987b71ccdfeed2512646663c8a8c518"
   }
 ]

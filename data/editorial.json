@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-nuphus-mcp",
+    "url": "https://github.com/mrpulor-gh/dsh-nuphus-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "DeepSeek Harness plugin that mounts `nuphus-mcp` desktop control tools natively inside DSH sessions.",
+    "verify_terms": [
+      "dsh-nuphus-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mrpulor-gh/dsh-nuphus-mcp/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de1a3b36c22064b1120ecfacc563fdeba056275092805de66f078ca4a1934700"
+  },
+  {
+    "name": "AutoBot-AI",
+    "url": "https://github.com/mrveiss/AutoBot-AI",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "memory"
+    ],
+    "summary": "AutoBot-AI is a self-hosted autonomous agent platform combining vision-driven browser and desktop control, voice interaction, and workflow memory.",
+    "verify_terms": [
+      "AutoBot-AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mrveiss/AutoBot-AI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7ffe8bb2f221e6fafa065466ebd6eeb4da46049632d4fa826f9fd7b466fca296"
+  },
+  {
+    "name": "agent-fleet",
+    "url": "https://github.com/MSKazemi/agent-fleet",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "automation"
+    ],
+    "summary": "Orchestrates parallel Claude Code and computer-use sessions against a shared, dependency-aware task queue.",
+    "verify_terms": [
+      "agent-fleet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MSKazemi/agent-fleet/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4cb13e717c66381f63e632ed17c2c9fa291051a9ae4e1cd564a91665d8f70120"
+  },
+  {
+    "name": "Solari Voice Agent",
+    "url": "https://github.com/Muhammad-AbdullahGhani/solari-voice-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "planning",
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Voice-directed autonomous computer-use agent built on Solari Desktop and LangGraph.",
+    "verify_terms": [
+      "Solari Voice Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Muhammad-AbdullahGhani/solari-voice-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "06c5f7fe8bff047d466c88a38cbe1498820a6da75b01a871a571c64e3e942fdb"
+  },
+  {
+    "name": "Voice and Vision System Controller",
+    "url": "https://github.com/Muhammad-Touseef-Akhtar/Voice-Vision-System-Controller",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Offline Python desktop automation system combining voice commands with computer-vision screen interaction.",
+    "verify_terms": [
+      "Voice and Vision System Controller"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Muhammad-Touseef-Akhtar/Voice-Vision-System-Controller/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ce7ca2bbdd9c15333aded924895d5a24f76df767dfeb816d5087c636d0212402"
   }
 ]

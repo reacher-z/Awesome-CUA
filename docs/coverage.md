@@ -5,7 +5,7 @@ Evidence snapshot through **2026-11-07T05:19:53Z**. Generated from committed sou
 - 2,170 curated resources. Another 453 records await review with bibliographic metadata only; the active catalog file holds 2,623 records in all.
 - 2,126 paper and survey records, including 2,112 arXiv identities and 14 publisher-only identities.
 - 3,420 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 6,083 discovery identifiers; 2,062 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
+- 6,084 discovery identifiers; 2,063 remain unresolved after accounting for scope exclusions and for 130 reviewed non-resource links and 36 other addresses of indexed resources, which stay in the review queue with their reasons.
 - 375 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -136,13 +136,13 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-07 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 0 | 0 | 0 | 0 | 1 | OK · 2026-11-07 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | OK · 2026-11-07 |
-| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 71 | 70 | 2 | 22 | 27 | OK · 2026-11-07 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 71 | 70 | 2 | 15 | 30 | OK · 2026-11-07 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 61 | 55 | 13 | 22 | 21 | OK · 2026-11-07 |
 | [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 102 | 0 | 4 | 0 | 55 | OK · 2026-11-07 |
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-07T06:54:18Z; **32/32** query windows succeeded. 1,508 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-07T07:15:18Z; **32/32** query windows succeeded. 1,508 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 

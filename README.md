@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://awesomecua.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/readme-banner-dark.svg"><img src="assets/brand/readme-banner-light.svg" alt="Awesome CUA: computer-use agent research, data and tools connected to original sources" width="960"></picture></a></h1>
 
-A source-backed collection of papers, models, datasets, benchmarks and tools for agents that use computers.
+Awesome CUA (Awesome Computer-Use Agents) is a source-backed catalog of computer-use agent papers, models, datasets, benchmarks and tools.
 
 **English** · [简体中文](README.zh-CN.md)
 

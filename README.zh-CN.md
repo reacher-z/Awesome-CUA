@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://awesomecua.com/zh/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/readme-banner-dark.svg"><img src="assets/brand/readme-banner-light.svg" alt="Awesome CUA — 面向电脑操作智能体的研究、数据与工具，每条都链接原始来源" width="960"></picture></a></h1>
 
-收集面向电脑操作智能体的论文、模型、数据集、评测基准与工具，每条资源保留原始来源。
+Awesome CUA（Awesome Computer-Use Agents）是计算机使用智能体的资源目录，收录论文、模型、数据集、评测基准与工具，并保留一手来源。
 
 [English](README.md) · **简体中文**
 

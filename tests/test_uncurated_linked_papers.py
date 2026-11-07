@@ -58,6 +58,7 @@ class ValidateReportTests(unittest.TestCase):
         benchmark["relations"] = [rel for rel in benchmark["relations"] if rel["target_id"] == "arxiv:2404.07972"]
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(build, "DATA", Path(directory)):
             catalog.write_jsonl(Path(directory) / "catalog.jsonl", [paper(), benchmark])
+            catalog.write_json(Path(directory) / "task-classes.json", catalog.read_json(catalog.DATA / "task-classes.json"))
             with contextlib.redirect_stdout(io.StringIO()) as out:
                 build.validate(types.SimpleNamespace())
         self.assertEqual(paper()["review_status"], "metadata_verified")

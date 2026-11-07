@@ -6,7 +6,8 @@ from urllib.parse import urlsplit
 SITE = 'https://awesomecua.com'
 HOST = urlsplit(SITE).hostname
 
-# Former canonical origins. GitHub Pages redirects them to SITE with the same path and query.
+# Former canonical origins retained for publication and notification-state compatibility.
+# This list does not assert HTTP redirects; a former host may serve a mirror with canonical links to SITE.
 # Content reviewed under one of them, such as the frozen survey bundle, stays publishable until it is rebuilt.
 FORMER_SITES = ('https://awesomecua.github.io',)
 

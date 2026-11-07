@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from publication_metadata import AUTHORS_OMITTED, authors_omitted, record_date_text
 from site_data import PAPER_KINDS
+from site_identity import DEFINITION
 
 # llms-full.txt and the catalog Markdown list non-paper kinds first; papers are the largest group.
 FULL_ORDER = ('model', 'dataset', 'benchmark', 'agent', 'framework', 'infrastructure', 'tool', 'product', 'company', 'learning', 'survey', 'paper')
@@ -38,17 +39,11 @@ def declared_licenses(record):
 
 def compact_entry(record, *, site, page_path, summary, reviewed_at, kind_label):
     """A few lines that identify a curated record and point to its full annotation."""
+    # The per-record and per-kind Markdown carry authors, tags and scoped licenses.
+    # Keep the complete summary, primary source and recorded review date in this index.
     lines = ['### ' + inline(record['name']), '', inline(summary), '',
              f'- {site}{page_path} · source: {((record["details"].get("arxiv_snapshot") or {}).get("versioned_url")) or record["url"]}',
-             f'- {kind_label} · reviewed {(reviewed_at or "")[:10] or "date not recorded"}'
-             + (f' · environments: {", ".join(record["environments"])}' if record['environments'] else '')
-             + (f' · topics: {", ".join(record["topics"])}' if record['topics'] else '')]
-    if record['kind'] in PAPER_KINDS:
-        lines.append('- Published: ' + (record_date_text(record) or 'date not recorded') + ' · '
-                     + (AUTHORS_OMITTED[0] if authors_omitted(record) else 'Authors: ' + (inline(', '.join(record['authors'])) or 'not recorded')))
-    licenses = declared_licenses(record)
-    if licenses:
-        lines.append('- Licenses: ' + licenses)
+             f'- {kind_label} · reviewed {(reviewed_at or "")[:10] or "date not recorded"}']
     return '\n'.join(lines)
 
 
@@ -98,7 +93,7 @@ def catalog_markdown(kinds, topics, *, site, counts):
 def home_markdown(newest, kinds, *, site, counts, snapshot):
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# AwesomeCUA', '',
-             f'> A source-backed catalog of computer-use, GUI, browser and mobile agent research and resources: {curated["total"]:,} curated records '
+             f'> {DEFINITION["en"]} {curated["total"]:,} curated records '
              f'({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source.', '',
              f'Snapshot {snapshot}. Awaiting review and not counted above: {waiting["metadata_only_records"]:,} metadata-only bibliography records and {waiting["unresolved_candidate_identifiers"]:,} discovered identifiers. {counts["note"]}', '',
              f'HTML page: {site}/ · 中文: {site}/zh/ · Agent index: {site}/llms.txt', '', '## Newest reviewed resources', '']
@@ -131,11 +126,13 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
     """The /llms.txt index: what the site is and where each Markdown and data entry point lives."""
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# AwesomeCUA', '',
-             f'> Source-backed catalog of computer-use, GUI, browser and mobile agents: {curated["total"]:,} curated resources ({curated["papers_and_surveys"]:,} papers and surveys, '
+             f'> {DEFINITION["en"]} {curated["total"]:,} curated resources ({curated["papers_and_surveys"]:,} papers and surveys, '
              f'{curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source with evidence, '
              f'review dates and separate license declarations. {waiting["metadata_only_records"]:,} metadata-only bibliography records await relevance review and are labeled separately.', '',
              'Code, data, weights and document licenses are separate. '
-             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`.', '',
+             'Every resource page has adjacent `index.md` and `record.json` files. '
+             'Each category root has an `index.md` with full annotations or, for papers, links to the research library. '
+             'Each topic root has an `index.md` listing all its reviewed resources. English research-library pages each have an adjacent `index.md`.', '',
              '## Catalog by kind', '']
     lines += [f'- {link(label, site + md_path)}: {plural(count, "curated record")}' + (f'; {note}' if note else '') for label, count, md_path, note in kinds]
     lines += ['', '## Research library', '',

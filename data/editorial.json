@@ -86010,5 +86010,227 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Delphi IDE Remote MCP Server",
+    "url": "https://github.com/soporte-defontsoft/delphi-ide-remote-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Model Context Protocol server enabling AI agents to remotely inspect, compile, and automate the Embarcadero Delphi Windows IDE.",
+    "verify_terms": [
+      "Delphi IDE Remote MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/soporte-defontsoft/delphi-ide-remote-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c5d09d04e581b61c5ac3ff96d588c0b9fd7f6976ccd502077876a7bf293286b4"
+  },
+  {
+    "name": "DeskCanvas",
+    "url": "https://github.com/sorry123luck/desk-canvas",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "DeskCanvas converts live Windows application windows into structured semantic state with guarded action execution for AI agents.",
+    "verify_terms": [
+      "DeskCanvas"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sorry123luck/desk-canvas/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ff3df76e011735fe28986dc1ebb31cbe552c70708f1a0e0cd2b780607c0f2ea6"
+  },
+  {
+    "name": "MCP Virtual Cursor",
+    "url": "https://github.com/SOS2778/mcp-virtual-cursor",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "macOS computer-use MCP server that operates applications via Accessibility actions and a virtual cursor without hijacking the physical mouse.",
+    "verify_terms": [
+      "MCP Virtual Cursor"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SOS2778/mcp-virtual-cursor/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4b267fddf3e2105da4c8479051ac6b43807be8d29f2d674d8a130ba34d5abafc"
+  },
+  {
+    "name": "SoulSniper Browser SDK",
+    "url": "https://github.com/SoulSniper-V2/browser-sdk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "robustness",
+      "automation"
+    ],
+    "summary": "Provider-neutral TypeScript browser automation SDK with automatic session failover and stealth profile support.",
+    "verify_terms": [
+      "browser sdk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SoulSniper-V2/browser-sdk/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2e26a42a0f71b38d8333d29588eccbd1e887158f1fac7f0032a332562020bf71"
+  },
+  {
+    "name": "WebMCP Stack",
+    "url": "https://github.com/SouravInsights/webmcp-stack",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Generates typed, human-reviewed WebMCP browser tools directly from existing OpenAPI and backend contracts.",
+    "verify_terms": [
+      "webmcp-stack"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SouravInsights/webmcp-stack/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2fd418a004637fd50c55433af71dcd7b101359b22a6a88ab2adbe0165643797f"
+  },
+  {
+    "name": "cfbrowse",
+    "url": "https://github.com/SP42K/cfbrowse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Go Chrome DevTools Protocol driver that resolves interactive anti-bot challenges headlessly for web agents.",
+    "verify_terms": [
+      "cfbrowse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SP42K/cfbrowse/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e20d7f1912649c008e79fae81ad05e5621a49865d1c054f10c7477c5be5f6ee2"
+  },
+  {
+    "name": "Spider Browser Dataset",
+    "url": "https://github.com/spider-rs/spider-browser-dataset",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "robustness"
+    ],
+    "summary": "Spider Browser Dataset benchmarks browser automation and anti-bot resilience across 999 URLs and 327 domains in 18 categories.",
+    "verify_terms": [
+      "Spider Browser Dataset"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/spider-rs/spider-browser-dataset/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c36ad209f9c755d27220572906ba8674a0b88a2f78078b8e72fbc75810a74f78"
+  },
+  {
+    "name": "WebSense MCP 2.0",
+    "url": "https://github.com/spliffspliff70-wq/websense-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Non-vision browser automation Model Context Protocol server exposing 7 compact DOM-sensing and action tools.",
+    "verify_terms": [
+      "websense mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/spliffspliff70-wq/websense-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b86945bcf8a0abb90fc64763d971b367f2b4d11868e003ad44953a4bd63f6c2"
+  },
+  {
+    "name": "Oboto",
+    "url": "https://github.com/sschepis/oboto",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Oboto is a desktop AI assistant with browser automation, workspace management, and extensible plugin/MCP tool execution.",
+    "verify_terms": [
+      "Oboto"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sschepis/oboto/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2fd26573e406f4775fd9958e84b31c640c67051604735c4a27d05ac8961fe352"
   }
 ]

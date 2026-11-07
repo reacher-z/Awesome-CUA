@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Web Agent Comparison",
+    "url": "https://github.com/pleasedodisturb/web-agent-comparison",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Reproducible 8-dimension benchmark comparing 7 browser-automation MCP servers on latency, token overhead, and task success.",
+    "verify_terms": [
+      "Web Agent Comparison"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pleasedodisturb/web-agent-comparison/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f204ae526e91b247abd2541eb47882b61b49405790e9300bc3359a70e979ce3d"
+  },
+  {
+    "name": "Reasonix Computer Use",
+    "url": "https://github.com/Plocr/Reasonix-computer-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Cross-platform desktop automation plugin combining native accessibility trees (UIA/AXAPI/AT-SPI2) with EasyOCR visual fallback.",
+    "verify_terms": [
+      "Reasonix Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Plocr/Reasonix-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8ba3536fb7555da6040d170bb8773680a90b5065d160b9eb967fffdd021c5b0"
+  },
+  {
+    "name": "Ultimate Playwright MCP",
+    "url": "https://github.com/pm990320/ultimate-playwright-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Multi-agent Playwright MCP server featuring Chrome tab-group isolation so concurrent AI agents can share one browser safely.",
+    "verify_terms": [
+      "Ultimate Playwright MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pm990320/ultimate-playwright-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6e8fd95aea715e19a4fdfe2fd6c70448b2460235c61561c5cd801639177c882b"
+  },
+  {
+    "name": "QUESTZ",
+    "url": "https://github.com/PNX89/QUESTZ",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "safety-security",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "Fail-closed browser automation reliability framework that halts execution on structural DOM drift before corrupting downstream data.",
+    "verify_terms": [
+      "QUESTZ"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PNX89/QUESTZ/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a14740f7e016b5040afbd2bbfb119c5a42247d6adb62e32b8208791aaa4b8fdb"
+  },
+  {
+    "name": "Q-Reflector",
+    "url": "https://github.com/pockyitachi/Q-Reflector",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "reward-models",
+      "grounding"
+    ],
+    "summary": "Q-Reflector trains an 8B vision-language verifier with generated pre/post-action conditions to detect and correct GUI action errors.",
+    "verify_terms": [
+      "Q-Reflector"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pockyitachi/Q-Reflector/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "61cdf6e4fb13db943002107322d765886d8e4cfe3c507aa55a5b5f32f97a3db9",
+    "documented_by": [
+      "2608.05587"
+    ]
   }
 ]

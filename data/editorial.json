@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Jig WebMCP Workbench",
+    "url": "https://github.com/EmadQureshiKhi/Jig",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "tool-integration",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Two-origin, agent-native design workbench built on WebMCP for collaborative human-agent UI editing.",
+    "verify_terms": [
+      "jig"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EmadQureshiKhi/Jig/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "185ee60c3df69bbdccecb9f5568eb20dc924b0871ef4439b9495224ffe611631"
+  },
+  {
+    "name": "Embodied Agent Interface (EAI)",
+    "url": "https://github.com/embodied-agent-eval/embodied-agent-eval",
+    "kind": "benchmark",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "planning",
+      "action-prediction"
+    ],
+    "summary": "Embodied Agent Interface (EAI) benchmarks LLMs across goal interpretation, subgoal decomposition, action sequencing, and transition modeling.",
+    "verify_terms": [
+      "Embodied Agent Interface (EAI)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/embodied-agent-eval/embodied-agent-eval/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b4d58dc20ace87a10106b827ab857c91b2289e3db46b15c61f5682c22e377bc"
+  },
+  {
+    "name": "Endoplexity",
+    "url": "https://github.com/Endokelp/Endoplexity",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension and agentic browser controller powered by local Claude and Cursor subscriptions.",
+    "verify_terms": [
+      "Endoplexity"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Endokelp/Endoplexity/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7138bcf5395d825778edbe9dfa2dfc4e64ec0ee5b0360c6af5d9225a154a724f"
+  },
+  {
+    "name": "Cordis Social",
+    "url": "https://github.com/enginefuture/cordis-social",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Lifecycle-safe Cordis plugin suite for orchestrating ProfileFleet, OpenAI Codex, and multi-profile browser workflows.",
+    "verify_terms": [
+      "Cordis Social"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/enginefuture/cordis-social/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "369dba3484caa529f8e333844317f8f0da82d3b65cbff52bd745efdb811fe109"
+  },
+  {
+    "name": "ProfileFleet",
+    "url": "https://github.com/enginefuture/profilefleet",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Local-first TypeScript orchestration plane for managing persistent fingerprint-browser profiles across AI agents.",
+    "verify_terms": [
+      "ProfileFleet"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/enginefuture/profilefleet/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "783487b4732c410e15e2e84e1f9839258fd24b155bb52868939716975fac5d08"
   }
 ]

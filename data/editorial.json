@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Navisual",
+    "url": "https://github.com/NavisualGuide/navisual",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Navisual is a non-intrusive visual desktop guide that observes the screen and highlights where the user should click next.",
+    "verify_terms": [
+      "Navisual"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NavisualGuide/navisual/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bd2fde320cb53c69e401d64116c40ce21bf5a6cc0bececb910f0a0a78086f153"
+  },
+  {
+    "name": "Selenium MCP Server",
+    "url": "https://github.com/nayakprashant/selenium-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Python Model Context Protocol server exposing Selenium WebDriver browser navigation, element interaction, and screenshot tools.",
+    "verify_terms": [
+      "Selenium MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nayakprashant/selenium-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20dfcd113e0351090e2290825516872c8a124bd604bf8fd9d9bb5f78d7ee5a75"
+  },
+  {
+    "name": "AgentScope Browser MCP",
+    "url": "https://github.com/nazocatAI/agent-scope-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "AI-agent-dedicated browser MCP server providing semantic page observations and stable `element_id` interactions.",
+    "verify_terms": [
+      "agent-scope-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nazocatAI/agent-scope-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7a0c2b15b2ea14d4b4eaeef10f038a54fd7f91a4cf471a9e4f3405c4e2a2072e"
+  },
+  {
+    "name": "Hoverclick",
+    "url": "https://github.com/neilyysun-ui/Hoverclick",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "training-free",
+      "self-reflection"
+    ],
+    "summary": "Hoverclick introduces test-time cursor hover verification and visual attention guidance before committing GUI click actions.",
+    "verify_terms": [
+      "Hoverclick"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/neilyysun-ui/Hoverclick/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "02e51a3001b22d9661841a7ba88b92f4d57c4bc62b47d9ed58e092055fddd6a2"
+  },
+  {
+    "name": "nemosr dsh-personal-plugins",
+    "url": "https://github.com/nemosr/dsh-personal-plugins",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability",
+      "tool-integration"
+    ],
+    "summary": "DeepSeek Harness plugin bundle providing `web_app_testing` browser automation and `host-web-debug` live inspection tools.",
+    "verify_terms": [
+      "dsh-personal-plugins"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nemosr/dsh-personal-plugins/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c9d6b4149941f75b628b168d453ee6dafe471279e5c8bf467a0eab88dd2625fc"
   }
 ]

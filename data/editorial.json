@@ -86010,5 +86010,229 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Win32 MCP Server",
+    "url": "https://github.com/RandyNorthrup/win32-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Win32 MCP Server exposes 53 native Windows Win32 and UI Automation tools over the Model Context Protocol for desktop agents.",
+    "verify_terms": [
+      "Win32 MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RandyNorthrup/win32-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4ee1a80a9e4ab7567b539ee7e6a8acbf81d83d0a07d0a20dbc949eeee18ba329"
+  },
+  {
+    "name": "Mary (Personal AI OS)",
+    "url": "https://github.com/rao-studios/Mary",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Ambient-intelligent macOS computer-use desktop client and personal AI operating environment.",
+    "verify_terms": [
+      "Mary"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rao-studios/Mary/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f4d999bfd1614a0bdfe118d6f557e388ac9b98f7c3aa110ee28d6b92f5e48fab"
+  },
+  {
+    "name": "VisionAX",
+    "url": "https://github.com/rao-studios/VisionAX",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Computer-vision accessibility-tree (AX/A11Y) generator that synthesizes structured UI trees from raw desktop pixels.",
+    "verify_terms": [
+      "VisionAX"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/rao-studios/VisionAX/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a6e690ad4ef96383678d0824249e2071e7c6c8b01e003110b8f00cf2d40a42d"
+  },
+  {
+    "name": "MealPilot",
+    "url": "https://github.com/raunak-choudhary/Hack_Princeton_MealPilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Agentic grocery shopping platform that compares real-time cart prices across Instacart and retail web portals.",
+    "verify_terms": [
+      "MealPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/raunak-choudhary/Hack_Princeton_MealPilot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0060d814092f68116e69fedc55d1bbe20b4d871c596588d30870db2093e12c1e"
+  },
+  {
+    "name": "shoal",
+    "url": "https://github.com/Raynan00/shoal",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "Deploys a swarm of concurrent AI browser agents to stress-test websites and visualize UX bottlenecks.",
+    "verify_terms": [
+      "shoal"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Raynan00/shoal/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8dd5c45ee57e25c2d7e670262c792f8999f6a9389140bd3ef346b8d5603a2fc3"
+  },
+  {
+    "name": "Raystyle Browser Harness",
+    "url": "https://github.com/raystyle/browser-harness",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Persistent daemon and CLI exposing 652 Chrome DevTools Protocol methods directly to LLMs for human-agent shared browsing.",
+    "verify_terms": [
+      "browser harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/raystyle/browser-harness/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fbfdc3f19045b11f3c439e224f09f4ba7defffe09666ed3a1941b1a1375ae3dc"
+  },
+  {
+    "name": "Smart Pet Agent",
+    "url": "https://github.com/realstreetsmartnyc/smart-pet-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "memory",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Local-first ambient desktop pet agent that observes workspace context and automates routine desktop actions.",
+    "verify_terms": [
+      "Smart Pet Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/realstreetsmartnyc/smart-pet-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a1c0af39acfc85dd0cabf4e023530c8d1e674a9901bbe8e47b5a511baaa17a7"
+  },
+  {
+    "name": "ToolGen",
+    "url": "https://github.com/Reason-Wang/ToolGen",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "tool-integration",
+      "action-prediction"
+    ],
+    "summary": "ToolGen represents external tools as virtual vocabulary tokens to unify massive-scale tool retrieval and execution via autoregressive generation.",
+    "verify_terms": [
+      "ToolGen"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Reason-Wang/ToolGen/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c2f14db6c62a1ec26e14aa2b6c9f1d821d46ec43b6f10f2a14d0182a160fc698"
+  },
+  {
+    "name": "PoisonPage",
+    "url": "https://github.com/redbotster/poisonpage",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Adversarial testbed demonstrating indirect prompt injection and API-key exfiltration against AI shopping web agents.",
+    "verify_terms": [
+      "PoisonPage"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/redbotster/poisonpage/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cfa803f57577b12bc9ff55f21a0c64d85848007ad4e7b18f38269875b3e25705"
   }
 ]

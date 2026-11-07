@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-desktop-automation",
+    "url": "https://github.com/Junkrat9527/dsh-desktop-automation",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "self-reflection",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "macOS desktop automation plugin for DeepSeek Harness with a closed-loop screenshot-locate-click-verify pipeline.",
+    "verify_terms": [
+      "dsh-desktop-automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Junkrat9527/dsh-desktop-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "656221baee60b49680f966eb65598d99fd9a17c0611f3254986cdf08e2b748b4"
+  },
+  {
+    "name": "cua-lite",
+    "url": "https://github.com/justanotheruser82174/cua-lite",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "sandbox",
+      "evaluation"
+    ],
+    "summary": "cua-lite is a cross-platform desktop application and harness for running, evaluating, and fine-tuning computer-use agents.",
+    "verify_terms": [
+      "cua-lite"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/justanotheruser82174/cua-lite/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "689c950ad888d4fae4cd295cc8a9dca1fbaa0c06b5fa02f982747617430ab67c"
+  },
+  {
+    "name": "llm-browser-agent",
+    "url": "https://github.com/justifysiddh/llm-browser-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "web-navigation",
+      "self-reflection",
+      "automation"
+    ],
+    "summary": "Self-healing browser automation framework that replaces brittle CSS selectors with LLM-guided semantic element resolution.",
+    "verify_terms": [
+      "llm-browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/justifysiddh/llm-browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df71bb80fb581e0d0b2fa5987b7cecf353b288613f05babb4816c0969aaa77db"
+  },
+  {
+    "name": "anybridge",
+    "url": "https://github.com/JustVugg/anybridge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "efficiency",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "Captures a website's authenticated network calls from a live browser session and exposes them as callable tools for any AI agent.",
+    "verify_terms": [
+      "anybridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JustVugg/anybridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "251cb8963229f86745b4cae6b873e4c28042b06d3ce7ea4ae41358e534eeffe6"
+  },
+  {
+    "name": "UltraWin MCP",
+    "url": "https://github.com/jxoesneon/UltraWin-MCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Rust Model Context Protocol server for Windows desktop automation providing native UI Automation tree inspection and input control.",
+    "verify_terms": [
+      "UltraWin MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jxoesneon/UltraWin-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7ea30a3020d97180319fc94769e4c3046b44f5027822b3f0411130b9328735ca"
   }
 ]

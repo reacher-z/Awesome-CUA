@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "TalkAct",
+    "url": "https://github.com/19PINE-AI/TalkAct",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "TalkAct is a dual-model voice and computer-use agent that conducts real-time spoken dialogue while executing background GUI actions.",
+    "verify_terms": [
+      "TalkAct"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/19PINE-AI/TalkAct/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd40ba3749cca9a6d412fd011e923cb1638d266420b4799b299e5c9719e9586d"
+  },
+  {
+    "name": "19ska Computer-Use Automation",
+    "url": "https://github.com/19ska/computer-use-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Uses an LLM to discover a UI workflow once and compiles the trajectory into a deterministic replay script.",
+    "verify_terms": [
+      "computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/19ska/computer-use-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6f2bdb3bd4f8b391a794a87dc9d65706b7d58e37e84ecd0146c8a3cecf6ac979"
+  },
+  {
+    "name": "1Claw Browser Bridge",
+    "url": "https://github.com/1clawAI/browser-bridge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Governed credential-injection and browser-control bridge where AI agents operate authenticated sessions without seeing raw secrets.",
+    "verify_terms": [
+      "1Claw Browser Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/1clawAI/browser-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "30a1322ca6cac4afcf6d2ebe6de111ccc632e7e3a55b150dccbf8ccf2b1b7777"
+  },
+  {
+    "name": "Jcua (Jev Computer Use Agent)",
+    "url": "https://github.com/1deat0r/Jcua",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "self-reflection",
+      "efficiency"
+    ],
+    "summary": "Jcua is a cross-platform computer-use agent powered by Jev decision models across Linux, Windows, and macOS desktops.",
+    "verify_terms": [
+      "Jcua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/1deat0r/Jcua/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1ced32485c0793b1998839e4228e69a94ba9b7e9b60bca230621522750e22c0d"
+  },
+  {
+    "name": "Susu Phone Agent",
+    "url": "https://github.com/2005selene2005-a11y/susu-phone-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Android device bridge for Claude Code over MCP and Shizuku enabling rootless phone UI automation.",
+    "verify_terms": [
+      "Susu Phone Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/2005selene2005-a11y/susu-phone-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f82c61407aba7fc15ca81be3676edd54458cd1b947a9e02c3aeef656a515eae3"
   }
 ]

@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ReMe",
+    "url": "https://github.com/agentscope-ai/ReMe",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "ReMe is a local-first personal knowledge and procedural memory management framework for autonomous LLM agents.",
+    "verify_terms": [
+      "ReMe"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agentscope-ai/ReMe/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b44750ef6f3c05a6f3ce7e91eec8ab7ffdbd67cb42fcedda3628d489884bc73c"
+  },
+  {
+    "name": "OSUniverse",
+    "url": "https://github.com/agentsea/osuniverse",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox"
+    ],
+    "summary": "OSUniverse is a task-oriented desktop benchmark for evaluating vision-based multimodal GUI navigation agents across operating-system applications.",
+    "verify_terms": [
+      "OSUniverse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agentsea/osuniverse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "058441b402477e39dde9634cae443d24038f082670d4f0859a686d656db9fe23",
+    "documented_by": [
+      "2505.03570"
+    ]
+  },
+  {
+    "name": "LAST DOOR",
+    "url": "https://github.com/agentsimdev/last-door",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Authentication resilience benchmark and WebMCP authority compiler for testing browser agents at login and permission boundaries.",
+    "verify_terms": [
+      "LAST DOOR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agentsimdev/last-door/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9353d8b66e4229c535ac14284cae7e7f8f3b1079b03f9a9512d9f879d4e25f71"
+  },
+  {
+    "name": "TankWork",
+    "url": "https://github.com/agenttankos/tankwork",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "TankWork is a desktop agent framework combining OmniParser visual grounding, OCR, and PyAutoGUI actuation.",
+    "verify_terms": [
+      "TankWork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agenttankos/tankwork/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4858d11a056b40a85f03ef0a4a608773179509ebb931fde2ec73abf60af2c2a7"
+  },
+  {
+    "name": "A-MEM",
+    "url": "https://github.com/agiresearch/A-mem",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon"
+    ],
+    "summary": "A-MEM implements a Zettelkasten-inspired dynamic memory architecture that links and evolves structured episodic notes for LLM agents.",
+    "verify_terms": [
+      "A-MEM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agiresearch/A-mem/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6f7185bb241d8ed5f7c0b8c4716b4f5e5cf1e9a3c630c3a1a92e54c3f5fb88b0"
   }
 ]

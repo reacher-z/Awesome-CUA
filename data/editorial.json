@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Motus",
+    "url": "https://github.com/DataficationSDK/Motus",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Motus is an extensible .NET browser automation and agentic testing framework communicating directly with Chromium via CDP.",
+    "verify_terms": [
+      "Motus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DataficationSDK/Motus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d82a80049eccec30f6523a01b1edcd4ffa7c9b9911f1319f0be3f64b0115e2fd"
+  },
+  {
+    "name": "HumanAIE (Human AI Eyes)",
+    "url": "https://github.com/datboip/HumanAIE",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "web-navigation",
+      "screen-understanding"
+    ],
+    "summary": "HumanAIE is a shared browser workspace for human-AI collaboration where users highlight visual regions and co-steer web agents.",
+    "verify_terms": [
+      "HumanAIE"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/datboip/HumanAIE/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "598505f0158af9548115d32fdb4b542489f16cd2d8fb52dba4569417b2ecfcfd"
+  },
+  {
+    "name": "Openbrowser (Semantic Headless Runtime)",
+    "url": "https://github.com/Datuomart5423/Openbrowser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Headless browser runtime that converts webpages into compact structured semantic state for AI agents.",
+    "verify_terms": [
+      "Openbrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Datuomart5423/Openbrowser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9d050e7e888dddb5d70dc76a28ad97ed4fca9c6bd949a76072489c7be36e10be"
+  },
+  {
+    "name": "AI-Agentic QA Framework",
+    "url": "https://github.com/daud-khan-qa/ai-agentic-qa-framework",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Zero-dependency CDP browser driver and hydration-reliability testing framework for agentic web QA.",
+    "verify_terms": [
+      "AI-Agentic QA Framework"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/daud-khan-qa/ai-agentic-qa-framework/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8432e07f16e3386441ed0f9e772a7265b2aa60f40568646eea7f6a1bbeb881fc"
+  },
+  {
+    "name": "AgentPerms",
+    "url": "https://github.com/David-Wu1119/agentperms",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration"
+    ],
+    "summary": "Declarative `agent.permissions.yaml` schema, validator, and policy evaluator for governing AI agent tool and interface permissions.",
+    "verify_terms": [
+      "AgentPerms"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/David-Wu1119/agentperms/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c1f7f6afb6e48df602f1dd40d5e73ee9725efe193736ad4fac9ef82d9ee0ce35"
   }
 ]

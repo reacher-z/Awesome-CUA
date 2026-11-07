@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ErwinZhang Safari MCP",
+    "url": "https://github.com/erwinzhang7/safari-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native macOS Model Context Protocol server for driving Safari navigation, clicking, typing, JavaScript evaluation, and screenshots.",
+    "verify_terms": [
+      "safari mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/erwinzhang7/safari-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "743f9f3dad21c7b0ae1cc736b8b4eedb3584b8c390a3836032447e11429bb2e4"
+  },
+  {
+    "name": "HTLM",
+    "url": "https://github.com/espetro/HTLM",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "HTLM is a compact 350M browser-agent model fine-tuned on Mind2Web for fast on-device and in-browser DOM action prediction.",
+    "verify_terms": [
+      "HTLM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/espetro/HTLM/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4ad3f8e9ff8ec550408684f13c7791448a02dcc347bc4cb773ef5f642a89fad8"
+  },
+  {
+    "name": "parallel-browser-mcp",
+    "url": "https://github.com/etairl/parallel-browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox",
+      "efficiency"
+    ],
+    "summary": "Model Context Protocol server for parallel multi-session browser automation across local and cloud browser providers.",
+    "verify_terms": [
+      "parallel-browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/etairl/parallel-browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1b4e486bc9cb608664d96a89827afea5fb9b7374edaeeda026d2b6eb8ba8b1ea"
+  },
+  {
+    "name": "computer-use-plus",
+    "url": "https://github.com/Ethanout/computer-use-plus",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "memory",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Low-token, low-latency Windows computer-use MCP server with learned action shortcuts and hybrid UIA/CDP/OCR routing.",
+    "verify_terms": [
+      "computer-use-plus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ethanout/computer-use-plus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8f5dce039c0ff56dbe1760242691b5e723a06dcdcf33a3983a019c7c70d6929"
+  },
+  {
+    "name": "GUI Label Tool",
+    "url": "https://github.com/ethanyxx/gui-label-tool",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation",
+      "sandbox"
+    ],
+    "summary": "GUI Label Tool records and annotates human desktop trajectories inside a Dockerized QEMU virtual machine with paired input events and screenshots.",
+    "verify_terms": [
+      "GUI Label Tool"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ethanyxx/gui-label-tool/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de8c8d0638da6f8443475cd6834155719e325ed28c24d7c3c9cd40d7a9581e23"
   }
 ]

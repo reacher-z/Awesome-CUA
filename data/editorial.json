@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "PuterVision Behavior-MCP",
+    "url": "https://github.com/putervision/behavior-mcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "planning",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "High-frequency (~60Hz) in-browser behavior-tree execution engine exposed over the Model Context Protocol.",
+    "verify_terms": [
+      "behavior-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/putervision/behavior-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fc91fe1a8af6ec3f9d01cfb8431178744cf78a27de8f6dc28ea5f6bbce61a238"
+  },
+  {
+    "name": "Portal Operator",
+    "url": "https://github.com/pwmcgovern-afk/portal-operator",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Autonomous browser agent designed to operate legacy insurance carrier web portals end-to-end in a real browser.",
+    "verify_terms": [
+      "Portal Operator"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pwmcgovern-afk/portal-operator/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "16152bc223f9f0bc255943cf3d65980fcc85f48f05549b061359f12f123a0b90"
+  },
+  {
+    "name": "AndroidMCP",
+    "url": "https://github.com/qazmko72/android-mcp-server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native on-device Android Model Context Protocol server exposing phone UI and system capabilities directly without a host PC.",
+    "verify_terms": [
+      "AndroidMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qazmko72/android-mcp-server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3088f64249ba3eb37ac95e48ed3fa3fd1e8f2af840353a326c381c2c933eebfa"
+  },
+  {
+    "name": "LibreAutomate",
+    "url": "https://github.com/qgindi/LibreAutomate",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "LibreAutomate is a C# script editor and Windows automation library supporting UI Automation, accessibility trees, image matching, and OCR.",
+    "verify_terms": [
+      "LibreAutomate"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qgindi/LibreAutomate/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c3f9060731b49c3e0da28e4823320f5fe905d917602fb0905ee9aa48e8cbbbf0"
+  },
+  {
+    "name": "Larker",
+    "url": "https://github.com/qiadastrachen-bit/larker",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Larker is a vision-driven Windows desktop agent that automates GUI clients lacking DOM or Accessibility APIs via VLM grounding.",
+    "verify_terms": [
+      "Larker"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/qiadastrachen-bit/larker/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "84837153f6fdcdb9222e6741769a81797ec7fb893ea8f0300514bdab15f939e2"
   }
 ]

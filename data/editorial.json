@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DjangoAILab DSH Plugins",
+    "url": "https://github.com/DjangoAILab/dsh-plugins",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Guardrailed plugin suite for DeepSeek Harness covering browser automation, desktop control, subagents, and remote servers.",
+    "verify_terms": [
+      "dsh plugins"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DjangoAILab/dsh-plugins/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2e758708a56884244902d1f9bb1a48b77a319856f32762daf6ffb4446da3243f"
+  },
+  {
+    "name": "Latitude Browser",
+    "url": "https://github.com/djblack1209-coder/Latitude-Browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Desktop workspace for managing isolated browser profiles, proxy routing, and multi-session web automation.",
+    "verify_terms": [
+      "Latitude Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/djblack1209-coder/Latitude-Browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ac950b11f2e4a478417737dad01e945d06c5bdffca0a3c45db2ed0acaf6dec1b"
+  },
+  {
+    "name": "LOCR (Lightweight OCR)",
+    "url": "https://github.com/dmzlingyin/LOCR",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "LOCR is a lightweight cross-platform clipboard and screen OCR utility based on RapidOCR.",
+    "verify_terms": [
+      "LOCR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dmzlingyin/LOCR/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "99545549818d9acc02306b974597d167afb6013b8dae50a46026f9eb4380de11"
+  },
+  {
+    "name": "AiBrowser for Android",
+    "url": "https://github.com/doable-team/aibrowser-android",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Turns a spare Android phone into a headed Chromium instance that AI agents can drive remotely.",
+    "verify_terms": [
+      "AiBrowser for Android"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/doable-team/aibrowser-android/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4c879a87522ef876b20d39d6da5de6d4d840d9f33672050407204ae749efbdca"
+  },
+  {
+    "name": "Dockur Windows",
+    "url": "https://github.com/dockur/windows",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "evaluation"
+    ],
+    "summary": "Dockur Windows runs full Windows desktop environments inside Docker/KVM containers with web VNC viewer support for agent sandboxes.",
+    "verify_terms": [
+      "windows"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dockur/windows/HEAD/readme.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "29875eaf1d84f70a016f4dee7473159d772569133a38f11dd53a462d91722bd0"
   }
 ]

@@ -86010,5 +86010,224 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-socai",
+    "url": "https://github.com/socai-io/dsh-socai",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "DeepSeek Harness plugin for browser-backed Xiaohongshu content research and extraction.",
+    "verify_terms": [
+      "dsh-socai"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/socai-io/dsh-socai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d28f311135dfd8934d77f449296e8e586cf6eb066b44caa9a2117c3b643393b7"
+  },
+  {
+    "name": "Browser Auth-State Synchronizer",
+    "url": "https://github.com/sohan-a11y/auth-synchronizer",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Synchronizes authenticated browser cookies and storage states across Playwright and agent browser sessions.",
+    "verify_terms": [
+      "Browser Auth-State Synchronizer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sohan-a11y/auth-synchronizer/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "18ad998ea03e62d8dc676a75dcae823d5b41f412990e42a85dc0e4fdda740c8e"
+  },
+  {
+    "name": "Ribband (Agentic WebMCP)",
+    "url": "https://github.com/Somnora/agentic-webmcp",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Source-backed personal decision and shopping browser agent built on the WebMCP protocol.",
+    "verify_terms": [
+      "Ribband"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Somnora/agentic-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "139be17995d49162eaeeecffe60d191713360febe785eab5f854653cd36d5992"
+  },
+  {
+    "name": "Claude Codex Computer Use",
+    "url": "https://github.com/songkeys/claude-codex-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Bridge allowing Claude Code to invoke OpenAI Codex's native macOS Computer Use engine.",
+    "verify_terms": [
+      "Claude Codex Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/songkeys/claude-codex-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9afd72309f14387943b68abb3bfafc7387c497c377ed83ea2afe1164f6d0d7a1"
+  },
+  {
+    "name": "Kimi Computer Use Bridge",
+    "url": "https://github.com/songkeys/kimi-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Bridges Kimi Code CLI to local macOS desktop applications through the OpenAI Computer Use MCP server and Apple Accessibility APIs.",
+    "verify_terms": [
+      "kimi computer use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/songkeys/kimi-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cab90b91725f288afcebff4747457222084d06bf7158f67c61d79217923e11f2"
+  },
+  {
+    "name": "playwright-mcp-tabbed",
+    "url": "https://github.com/songofhawk/playwright-mcp-tabbed",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Tab-aware Playwright MCP server with per-tool `tab_index` isolation so parallel AI agents can operate independent tabs concurrently.",
+    "verify_terms": [
+      "playwright-mcp-tabbed"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/songofhawk/playwright-mcp-tabbed/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77ca4f8e22352ac90a65d97b354ae57305d09f2bda12c9a91a37220ec7064c00"
+  },
+  {
+    "name": "SoobujMiah LAI (Android Local AI Runtime)",
+    "url": "https://github.com/soobujmiah/lai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "safety-security",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "On-device local AI and consent-driven Android UI automation runtime with Bangla-first accessibility support.",
+    "verify_terms": [
+      "lai"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/soobujmiah/lai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8a49142ec2b7d440ae03c62bd11ce7b2ff46d669e473e25c468d7bf694022191"
+  },
+  {
+    "name": "DSH Mobile (DeepSeek Harness for Android)",
+    "url": "https://github.com/Soodok/Deepseek-Harness-Local-Android",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Runs the DeepSeek Harness AI agent natively on Android phones without root.",
+    "verify_terms": [
+      "DSH Mobile"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Soodok/Deepseek-Harness-Local-Android/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7e01735dbbed9e472a13c81ab74d5b37c0989804285cebe0f8803d82e4363484"
+  },
+  {
+    "name": "Voice & Computer-Use Benchmark Landscape",
+    "url": "https://github.com/Sophon-LLC/voice-agent-benchmark-landscape",
+    "kind": "benchmark",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "survey"
+    ],
+    "summary": "Structured taxonomy and comparative map of public voice-agent, multimodal, and computer-use evaluation benchmarks.",
+    "verify_terms": [
+      "voice agent benchmark landscape"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Sophon-LLC/voice-agent-benchmark-landscape/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "aef33f374143f95b22cc96824cb40dae648ee456cc245883e6cdae5b75f5179f"
   }
 ]

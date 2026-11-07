@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Auto WebMCP Chrome",
+    "url": "https://github.com/pauloportella/auto-webmcp-chrome",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Chrome extension that automatically converts standard HTML web forms into structured WebMCP tools for browser agents.",
+    "verify_terms": [
+      "auto-webmcp-chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pauloportella/auto-webmcp-chrome/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "167ead2dc6ab920bdc38a08aaae8e1279d6db7e205288736853c81ceea20ab7b"
+  },
+  {
+    "name": "Computer-Use Capability Engine",
+    "url": "https://github.com/PavanVAkula/computer-use-capability-engine",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "workflow",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Discovers legacy UI workflows with an LLM once and compiles them into typed, versioned, deterministically replayable capabilities.",
+    "verify_terms": [
+      "Computer-Use Capability Engine"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PavanVAkula/computer-use-capability-engine/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9fd6b713a15a94f4fe6992316b35e50926883569b4895255a32877d65ce101ad"
+  },
+  {
+    "name": "macOS Visual Agent",
+    "url": "https://github.com/peakmojo/macos-visual-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "macOS Visual Agent inspects native Apple Accessibility trees, detects UI elements, and executes coordinate-accurate clicks on macOS.",
+    "verify_terms": [
+      "macos-visual-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/peakmojo/macos-visual-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8e9e1e72d168f739f03f6ff0f6e03dcfda2fc68308a146fbac903eb22f092b0c"
+  },
+  {
+    "name": "Scrapeless Playwright Cloud Browser",
+    "url": "https://github.com/pedro-scrapeless/scrapeless-playwright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Connects Playwright scripts and browser agents to the Scrapeless anti-detection cloud Chromium browser over CDP.",
+    "verify_terms": [
+      "scrapeless-playwright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pedro-scrapeless/scrapeless-playwright/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08943bf291ed47c7d6feabaa23eb3e89d889279015cdb709dc87939f725bcddc"
+  },
+  {
+    "name": "Peerframe OpenBot",
+    "url": "https://github.com/Peerframe/openbot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Self-hosted cross-platform control plane for managing persistent digital employees with browser and desktop capabilities.",
+    "verify_terms": [
+      "openbot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Peerframe/openbot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de61030d8c3d8d3b3cd669a9ba03060139f155408deda72c6a42df4862f54af0"
   }
 ]

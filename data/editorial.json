@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-cua",
+    "url": "https://github.com/Hutusion/dsh-cua",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Client-neutral Windows computer-use MCP server for DeepSeek Harness exposing UI Automation, screenshots, and desktop input tools.",
+    "verify_terms": [
+      "dsh-cua"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Hutusion/dsh-cua/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fe2c1082a964585001d2585fd99655ca764d15eafda2c1ccbfb8dc7bdc49be1e"
+  },
+  {
+    "name": "AgentDesk (Enterprise Digital Workforce Platform)",
+    "url": "https://github.com/huzjie/agentdesk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "observability",
+      "automation"
+    ],
+    "summary": "Enterprise digital workforce operations platform combining computer-use execution, reusable skills, and governance.",
+    "verify_terms": [
+      "AgentDesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huzjie/agentdesk/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "65f0bc479a94260cb55f2bc854f406ee43b8d613864db38f19c4781ba72e212e"
+  },
+  {
+    "name": "cuforge",
+    "url": "https://github.com/huzjie/cuforge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "data-generation",
+      "sandbox"
+    ],
+    "summary": "cuforge is an online reinforcement-learning and verifiable task-synthesis platform for training computer-use GUI agents.",
+    "verify_terms": [
+      "cuforge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huzjie/cuforge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd1f316e487e6ce0183106a4368bf78d33046a6adb6eea560dfa94d66af5b3d7"
+  },
+  {
+    "name": "navforge",
+    "url": "https://github.com/huzjie/navforge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "navforge is a self-hosted orchestration framework for coordinating multi-step computer-use and browser navigation agents.",
+    "verify_terms": [
+      "navforge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huzjie/navforge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd2dd132bdbf6a15cd8ebb6714a5a405e488b1babd1a1e64fd8c88e3c512c09a"
+  },
+  {
+    "name": "taskforge",
+    "url": "https://github.com/huzjie/taskforge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "long-horizon",
+      "workflow",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "taskforge is a long-horizon workflow orchestration engine combining multi-step planning, tool invocation, and GUI state verification.",
+    "verify_terms": [
+      "taskforge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/huzjie/taskforge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df07fd7fc0c1e2dc52af27b727072d998a612238769eb9ac1249e4ce98367cdb"
   }
 ]

@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DSH Mobile GUI Agent",
+    "url": "https://github.com/kunjinkao-os/dsh-mobile-gui-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "self-reflection",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Android Mobile GUI Agent plugin for DeepSeek Harness featuring ADB actuation, iterative screen verification, and error recovery.",
+    "verify_terms": [
+      "dsh-mobile-gui-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kunjinkao-os/dsh-mobile-gui-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3f4d14f882b7789375b4ed4f0c2c67e422340c2db807b8406145ac07224b7075"
+  },
+  {
+    "name": "Wayland MCP Server",
+    "url": "https://github.com/kurojs/wayland-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Wayland MCP Server provides screenshot capture, VLM coordinate analysis, and virtual pointer/keyboard input for Linux Wayland desktops.",
+    "verify_terms": [
+      "Wayland MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kurojs/wayland-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5a708ce8643114a9b8f9c52b79c051b4ebef7033aad8436098b2db1d43071110"
+  },
+  {
+    "name": "WebClaw",
+    "url": "https://github.com/kuroko1t/webclaw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "WebClaw is a WebMCP-native browser agent that runs inside the user's live Chrome browser and connects to Claude, Cursor, and OpenClaw.",
+    "verify_terms": [
+      "WebClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kuroko1t/webclaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a5c76e8d93c5928b71212ef6a62df1bdc7ca7315526de971ebb3029c0c1ece98"
+  },
+  {
+    "name": "Kushatish AI Browser Copilot",
+    "url": "https://github.com/kushatish/AI-Browser-Copilot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Chrome extension providing page-aware Q&A and user-approved browser actions powered by Groq LLMs.",
+    "verify_terms": [
+      "ai browser copilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kushatish/AI-Browser-Copilot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "734241267d0ca3a99763810b00514dc3c9e3b5fd417affad381ca292113b5449"
+  },
+  {
+    "name": "AgentiTest",
+    "url": "https://github.com/kweinmeister/agentitest",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "AgentiTest is a natural-language browser test automation framework built on Python pytest, Allure reporting, and LLM web agents.",
+    "verify_terms": [
+      "AgentiTest"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kweinmeister/agentitest/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b73e74d892c0749358ab33a78a2f9f17e749061670dac062f1cef7954722c1d8"
   }
 ]

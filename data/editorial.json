@@ -86010,5 +86010,142 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Liha WebMCP Adapter",
+    "url": "https://github.com/liha-app/webmcp-adapter",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Retrofits existing websites with structured WebMCP tool definitions without requiring backend code changes.",
+    "verify_terms": [
+      "Liha WebMCP Adapter"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/liha-app/webmcp-adapter/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cfc82f00cd16c48852e3ea21a05275105087fbd7e028a0fc09eee792477006f1"
+  },
+  {
+    "name": "smart-computer-use",
+    "url": "https://github.com/lindoelio/smart-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Agent skill for Claude Code, Codex, Cursor, and OpenCode that drives desktop GUIs via a Rust CLI and local vision grounding.",
+    "verify_terms": [
+      "smart-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/lindoelio/smart-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "afece49a1ffe30f7196b6878ebe3d66b67276deeadb9a8cecf2ac6e7f1995e9d"
+  },
+  {
+    "name": "Re-Prefill",
+    "url": "https://github.com/linjiaping1/Re-Prefill",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "training-free",
+      "efficiency"
+    ],
+    "summary": "Re-Prefill calibrates prefill visual attention representations in vision-language models to improve zero-shot GUI grounding accuracy.",
+    "verify_terms": [
+      "Re-Prefill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/linjiaping1/Re-Prefill/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dd30acfd9d7ec3f8f4ea92e508286c85438644b14696303815fe92e2da1fb92b",
+    "documented_by": [
+      "2605.12549"
+    ]
+  },
+  {
+    "name": "AutoDoubao",
+    "url": "https://github.com/linxxcat000/autodoubao",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Local Windows MCP bridge that automates logged-in Doubao web image generation and asset downloading for Codex and Hermes Agent.",
+    "verify_terms": [
+      "AutoDoubao"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/linxxcat000/autodoubao/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f35a4d2393936ea076f1dc19a9b4c0b5584296e403128aa84fe21133d3d153b9"
+  },
+  {
+    "name": "VGA (Vision GUI Assistant)",
+    "url": "https://github.com/Linziyang1999/Vision-GUI-assistant",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "Vision GUI Assistant (VGA) provides image-centric fine-tuning code and datasets to reduce hallucinations in vision-language GUI grounding.",
+    "verify_terms": [
+      "VGA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Linziyang1999/Vision-GUI-assistant/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "90f65410bf548ea8f1798b6c9ff662c5e6f73ac8442e457d9b91f49d57fd954b",
+    "documented_by": [
+      "2406.14056"
+    ]
   }
 ]

@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "haden-browser",
+    "url": "https://github.com/Haden-Min/haden-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Fast, AI-first web browser exposed as a local Model Context Protocol server for LLM agents.",
+    "verify_terms": [
+      "haden-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Haden-Min/haden-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "285a126fc07697c7b138c3d4652ce99b1f5b1c7ed99919661863a440e486bd30"
+  },
+  {
+    "name": "ecobrowser (ai-browser)",
+    "url": "https://github.com/HaidarESBER/ai-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "AI-native browser framework with structured page perception, token-efficient state representation, and deterministic action tools.",
+    "verify_terms": [
+      "ecobrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HaidarESBER/ai-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "59f181fad00385b8c149bc00b1cb669645595723aa5ac92010b06dcf433ac776"
+  },
+  {
+    "name": "REFRACT-PPTX",
+    "url": "https://github.com/Haikong-Lu1206/REFRACT-PPTX",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "ui-design",
+      "workflow",
+      "data-generation"
+    ],
+    "summary": "Agent-guided generation and multi-dimensional visual evaluation benchmark for editable PowerPoint presentation decks.",
+    "verify_terms": [
+      "REFRACT-PPTX"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Haikong-Lu1206/REFRACT-PPTX/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fca6618c2d0f35cb3855a42e7f06af05ac4dc9ea79b45498373d3bc217104db2"
+  },
+  {
+    "name": "AILEEN Desktop",
+    "url": "https://github.com/haixu8396-png/aileen-desktop",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows desktop AI assistant combining a Live2D interactive character with screen perception and desktop tool execution.",
+    "verify_terms": [
+      "aileen-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/haixu8396-png/aileen-desktop/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "88f8bf5246c6663d9a4c009d2f048e26c0d173146e9403fd98d0ce436cdf1443"
+  },
+  {
+    "name": "safari-mcp",
+    "url": "https://github.com/haneiva1/safari-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Zero-extension macOS Safari automation MCP server built on Node.js and native AppleScript/JXA.",
+    "verify_terms": [
+      "safari-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/haneiva1/safari-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c1fb2b68039c15b9475b5ab9117f8ca233ffbc291dbdf46a268455e5789b743d"
   }
 ]

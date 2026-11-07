@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "TeachReplay",
+    "url": "https://github.com/Ottohere-Mourn/TeachReplay",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "workflow",
+      "automation"
+    ],
+    "summary": "TeachReplay is a harness-agnostic teach-by-demonstration engine that records human UI workflows and compiles them into parameterized skills.",
+    "verify_terms": [
+      "TeachReplay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ottohere-Mourn/TeachReplay/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "af854e637ea648c2eed72f8415ba9dfb6c5b0a31ffabbd73c6b232a3863abdeb"
+  },
+  {
+    "name": "OvoBrowser",
+    "url": "https://github.com/ovobrowsersupport/ovobrowser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Source-level Chromium fingerprint browser engineered for anti-detect web automation.",
+    "verify_terms": [
+      "OvoBrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ovobrowsersupport/ovobrowser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1ef2bc2305a132f7ba424e47dd94a59f41abaf02b57dd396b879782bcc772213"
+  },
+  {
+    "name": "Oya Browser",
+    "url": "https://github.com/OyadotAI/oya-browser",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "safety-security",
+      "sandbox"
+    ],
+    "summary": "Oya Browser is a governance-aware browser control plane for human-AI collaboration across local and cloud browser providers.",
+    "verify_terms": [
+      "Oya Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OyadotAI/oya-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4602c4164157a38d9f62ebc67a99ffea77c5ce8880e4510d71f021cfdffaad8b"
+  },
+  {
+    "name": "Boss Agent",
+    "url": "https://github.com/padolphylis/boss_agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Local job-search browser agent that parses natural-language criteria, drives Chrome on Boss Zhipin, and manages application state.",
+    "verify_terms": [
+      "Boss Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/padolphylis/boss_agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "98ee6055083e9e0a73a0880fbd641dd643945dbe59c54ca04262316620574cfc"
+  },
+  {
+    "name": "BX Browser",
+    "url": "https://github.com/painbaba/bx-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "DOM-first, vision-capable autonomous browser agent that plans and executes multi-step web tasks.",
+    "verify_terms": [
+      "BX Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/painbaba/bx-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "404b9a674f954432a0c1d7128e0551f07660968e33e99f781d6fbca00ee34150"
   }
 ]

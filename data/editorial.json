@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "TabCtrl",
+    "url": "https://github.com/g1at/TabCtrl",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Bring-your-own-key multi-model browser agent for Chrome and Edge with per-task tab isolation.",
+    "verify_terms": [
+      "TabCtrl"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/g1at/TabCtrl/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "40a2f30c1ee614611be71e235f1615b32a36fc01e587ed542b1354a93fb53a75"
+  },
+  {
+    "name": "Hyprland Codex Background Computer Use",
+    "url": "https://github.com/Gabriel-Kahen/hyprland-codex-background-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "Enables background Codex computer control of Hyprland Wayland and XWayland applications without stealing focus.",
+    "verify_terms": [
+      "Hyprland Codex Background Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Gabriel-Kahen/hyprland-codex-background-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7c5bf1029de8f5312f1ab7a9fd1cad9e9e69ddd004f814c81e20332c159c72d5"
+  },
+  {
+    "name": "Project Tendril",
+    "url": "https://github.com/gadgethd/Project-Tendril",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "automation"
+    ],
+    "summary": "Local-first Chromium browser and web-research runtime for autonomous AI agents.",
+    "verify_terms": [
+      "Project Tendril"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gadgethd/Project-Tendril/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8533b15186eedf82cba301f2cb6f0c26f01bd3ebcf786bc719d26a33900c2533"
+  },
+  {
+    "name": "selenium-mcp",
+    "url": "https://github.com/gaforov/selenium-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Selenium Model Context Protocol server exposing 41 browser automation tools including page snapshots, assertions, and selector generation.",
+    "verify_terms": [
+      "selenium-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gaforov/selenium-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cd5bfb1b274639e6b4061eadf96baea179dfefd5382d1fe7f39c3aac40c71778"
+  },
+  {
+    "name": "Halo Bot",
+    "url": "https://github.com/Galactic717/halo-bot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Self-hosted named AI teammates running in sandboxed desktop and browser environments on user-owned hardware.",
+    "verify_terms": [
+      "Halo Bot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Galactic717/halo-bot/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d46504153a6c89efaff86fd246e1edd0ec98bda7a54ebf17aed3e6b5579a1909"
   }
 ]

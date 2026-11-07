@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Claude in Safari",
+    "url": "https://github.com/Dolomite1337/claude-in-safari",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Open-source macOS Safari web extension that lets Claude read pages and execute interactive browser tasks locally.",
+    "verify_terms": [
+      "Claude in Safari"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Dolomite1337/claude-in-safari/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bad71749b83fd2f58acbd57b9ec0e8cb6c728c7c4717e5d0ef74eb161b519a6e"
+  },
+  {
+    "name": "Zhaozuo (照做)",
+    "url": "https://github.com/dongsheng123132/zhaozuo",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "imitation-learning",
+      "recording",
+      "automation",
+      "self-reflection"
+    ],
+    "summary": "Demonstration-driven Windows desktop automation framework compatible with the ActionParity protocol for third-party GUI software.",
+    "verify_terms": [
+      "Zhaozuo"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dongsheng123132/zhaozuo/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3cfbf1a2fcdd0f6c5d8595075d033173aa8ee6e8ef99349dd51927fc98a8551a"
+  },
+  {
+    "name": "AI Web",
+    "url": "https://github.com/dongxinsuperman/ai-web",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "evaluation",
+      "workflow",
+      "observability"
+    ],
+    "summary": "Natural-language Browser Agent execution platform supporting multi-browser scheduling, task queues, and traceable QA test reports.",
+    "verify_terms": [
+      "AI Web"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dongxinsuperman/ai-web/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "acabff4d87f43826da82817928d4bead8d138da3bafec7d7d4d1c70d3ec933c1"
+  },
+  {
+    "name": "Octopus",
+    "url": "https://github.com/dongyh20/Octopus",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction",
+      "world-models"
+    ],
+    "summary": "Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds.",
+    "verify_terms": [
+      "Octopus"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3335332148f23c285411d4962cb5e1062a58fa6767bba4c65421232094b33f3d"
+  },
+  {
+    "name": "Ringlight WebMCP",
+    "url": "https://github.com/doom2quake/ringlight",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP investigation console where browser agents trace entity graphs across live web views with human review.",
+    "verify_terms": [
+      "ringlight"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/doom2quake/ringlight/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "352817f0dd97700c0634b99bb116ceb315bdf7013d71722deef432dc139d4caa"
   }
 ]

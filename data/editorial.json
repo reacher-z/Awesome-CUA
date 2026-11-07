@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "CloudCrew Understudy",
+    "url": "https://github.com/CloudCrewAtWork/understudy",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Records human UI workflows once and compiles them into parameterized, editable replay scripts for computer-use agents.",
+    "verify_terms": [
+      "understudy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/CloudCrewAtWork/understudy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "441df5bec23eee0704fd8b183df185f33097f4633d34727f7c67dc94c0ddd856"
+  },
+  {
+    "name": "visual-agent",
+    "url": "https://github.com/cloudsbeyond/visual-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Protocol-first framework enabling visual-model hosts to safely inspect and operate software GUI interfaces.",
+    "verify_terms": [
+      "visual-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cloudsbeyond/visual-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a1e2ec4a61c1c9e9f01c288926c5d210fe26232dd011e804bf8dc1c55cc1de8"
+  },
+  {
+    "name": "CLIF",
+    "url": "https://github.com/cmalpass/clif",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "CLIF is a Windows desktop UI automation CLI and local MCP server for inspecting and driving WPF, WinForms, and WinUI applications.",
+    "verify_terms": [
+      "CLIF"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cmalpass/clif/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "81a46792e5c3266affac6872fb6f7200eb875ab292bad028063b3cf3d1d891d6"
+  },
+  {
+    "name": "VillagerAgent & VillagerBench",
+    "url": "https://github.com/cnsdqd-dyb/VillagerAgent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "workflow",
+      "evaluation"
+    ],
+    "summary": "VillagerAgent provides a directed-acyclic-graph multi-agent coordinator and the VillagerBench evaluation suite in Minecraft.",
+    "verify_terms": [
+      "villageragent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cnsdqd-dyb/VillagerAgent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "83327928927e3c3fbe7cef4095c38611e0e88cf790f02f63553282c393d7f7d3"
+  },
+  {
+    "name": "Butler",
+    "url": "https://github.com/coasty-ai/butler",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Butler is a voice-first macOS desktop assistant combining MCP tool execution with native Swift desktop control fallback.",
+    "verify_terms": [
+      "Butler"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/coasty-ai/butler/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d8c83e9d69b9c69f19b31811b99d7a7bf20396e9b752bcb8e85e0845df29b7d7"
   }
 ]

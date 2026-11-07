@@ -39,7 +39,10 @@ class ResourceTitleTests(unittest.TestCase):
             'github:deepmind/android_env':'AndroidEnv (github.com/deepmind/android_env)',
             'github:google-deepmind/android_env':'AndroidEnv (github.com/google-deepmind/android_env)'})
     def test_brand_is_not_repeated(self):
-        for title,expected in [('About AwesomeCUA and editorial policy','About AwesomeCUA and editorial policy'),('Manus (product)','Manus (product) | AwesomeCUA')]:
+        for title,expected in [('About AwesomeCUA and editorial policy','About AwesomeCUA and editorial policy'),
+                               ('Awesome CUA — Papers and tools','Awesome CUA — Papers and tools'),
+                               ('Awesome Computer-Use Agents','Awesome Computer-Use Agents'),
+                               ('Manus (product)','Manus (product) | AwesomeCUA')]:
             parsed=TitleParser(page(title,'x','/test/','<h1>Test</h1>'))
             self.assertEqual((parsed.title,parsed.og),(expected,expected))
 
@@ -56,9 +59,57 @@ class GeneratedTitleTests(unittest.TestCase):
         counts=Counter(self.titles[item['path']].title for item in self.pages if item['indexable'])
         self.assertEqual([title for title,n in counts.items() if n>1],[])
     def test_titles_name_the_brand_once(self):
+        # Keep the expected aliases independent of the renderer's identity constants.
+        names=('Awesome CUA','AwesomeCUA','Awesome Computer-Use Agents')
         for path,parsed in self.titles.items():
-            self.assertEqual(parsed.title.count('AwesomeCUA'),1,path)
+            self.assertEqual(sum(parsed.title.count(name) for name in names),1,path)
             if path!='/':self.assertEqual(parsed.og,parsed.title,path)
+
+
+class GeneratedTitleAssertionTests(unittest.TestCase):
+    def check_title(self,path,parsed):
+        # Exercise the generated-page assertion without its full-site build fixture.
+        case=GeneratedTitleTests('test_titles_name_the_brand_once')
+        case.titles={path:parsed}
+        case.test_titles_name_the_brand_once()
+
+    def test_supported_aliases_on_home_and_non_home_routes(self):
+        for path in ('/','/zh/','/guides/catalog-identity/','/zh/guides/catalog-identity/'):
+            for title in ('Awesome CUA — Papers and tools',
+                          'About AwesomeCUA and editorial policy',
+                          'Awesome Computer-Use Agents'):
+                with self.subTest(path=path,title=title):
+                    parsed=TitleParser(page(title,'x',path,'<h1>Test</h1>',
+                                            lang='zh-CN' if path.startswith('/zh/') else 'en'))
+                    self.assertEqual((parsed.title,parsed.og),(title,title))
+                    self.check_title(path,parsed)
+
+    def test_repeated_and_mixed_brands_are_rejected(self):
+        names=('Awesome CUA','AwesomeCUA','Awesome Computer-Use Agents')
+        for path in ('/','/zh/','/guides/catalog-identity/','/zh/guides/catalog-identity/'):
+            for first in names:
+                for second in names:
+                    title=f'{first} | {second}'
+                    with self.subTest(path=path,title=title):
+                        parsed=TitleParser(f'<title>{title}</title><meta property="og:title" content="{title}">')
+                        with self.assertRaises(AssertionError):
+                            self.check_title(path,parsed)
+
+    def test_missing_brand_is_rejected(self):
+        for path in ('/','/zh/','/guides/catalog-identity/','/zh/guides/catalog-identity/'):
+            for title in ('Papers and tools',''):
+                with self.subTest(path=path,title=title):
+                    parsed=TitleParser(f'<title>{title}</title><meta property="og:title" content="{title}">')
+                    with self.assertRaises(AssertionError):
+                        self.check_title(path,parsed)
+
+    def test_non_root_og_title_must_match(self):
+        for path in ('/zh/','/guides/catalog-identity/','/zh/guides/catalog-identity/'):
+            for og in ('','<meta property="og:title" content="A different title">'):
+                with self.subTest(path=path,og=og):
+                    parsed=TitleParser(f'<title>Awesome CUA — Papers and tools</title>{og}')
+                    with self.assertRaises(AssertionError):
+                        self.check_title(path,parsed)
 
 
 if __name__=='__main__':unittest.main()

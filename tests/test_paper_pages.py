@@ -88,6 +88,36 @@ class PaperPageTests(unittest.TestCase):
         for path, markup in self.markup.items():
             self.assertLessEqual(len(markup.encode()), BUDGET, path)
 
+    def test_category_pages_partition_every_record_with_matching_schema_and_links(self):
+        root = Path(__file__).resolve().parents[1]
+        rows = [json.loads(line) for line in (root / 'data/catalog.jsonl').read_text().splitlines() if line]
+        sitemap = set(sitemap_urls(self.dest, SITE))
+        for kind in ('agent', 'framework', 'tool'):
+            expected = sorted((r for r in rows if r['kind'] == kind and r['review_status'] == 'curated'
+                               and r['scope'] in ('core', 'adjacent')), key=lambda r: r['name'].lower())
+            paths = [p for p in self.markup if re.fullmatch(r'/categories/' + kind + r'/(?:page/\d+/)?', p)]
+            paths.sort(key=lambda p: int(re.search(r'/page/(\d+)/', p)[1]) if '/page/' in p else 1)
+            self.assertGreater(len(paths), 1, kind)
+            seen = []
+            for number, path in enumerate(paths):
+                markup = self.markup[path]
+                visible = re.findall(r'<article>.*?<h2><a href="([^"]+)"', markup, re.S)
+                graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', markup, re.S)[1])['@graph']
+                schema = next(item for item in graph if item['@type'] == 'ItemList')
+                self.assertEqual([item['url'] for item in schema['itemListElement']], [SITE + p for p in visible])
+                self.assertEqual(schema['numberOfItems'], len(visible))
+                self.assertEqual([item['position'] for item in schema['itemListElement']],
+                                 list(range(len(seen) + 1, len(seen) + len(visible) + 1)))
+                self.assertIn(SITE + path, sitemap)
+                self.assertIn(f'<link rel="canonical" href="{SITE}{path}">', markup)
+                self.assertEqual('rel="prev"' in markup, number > 0)
+                self.assertEqual('rel="next"' in markup, number < len(paths) - 1)
+                if number < len(paths) - 1:
+                    self.assertIn(f'href="{paths[number + 1]}"', markup)
+                seen.extend(visible)
+            self.assertEqual(seen, [resource_path(r) for r in expected], kind)
+            self.assertEqual(len(seen), len(set(seen)))
+
     def test_no_two_indexable_listings_share_more_than_half_their_entries(self):
         # Chinese library pages are hreflang translations of the English pages, not competing duplicates.
         listed = {path: entries(markup) for path, markup in self.markup.items() if self.pages[path]['indexable'] and not path.startswith('/zh/')}

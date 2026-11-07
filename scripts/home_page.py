@@ -9,6 +9,7 @@ import home_art as art
 from paper_library import library_years
 from publication_metadata import record_date_text, record_year
 from site_config import SITE
+from site_identity import DEFINITION
 from site_shell import CONTEXT, HF_DATASET, ISSUES, WEBSITEBENCH_REPO, WEBSITEBENCH_URL, ic, esc, fmt, star_button, star_count, star_note
 
 # Tab and icon order. The labels stay beside the icons so the rows, tabs and search results agree.
@@ -381,11 +382,12 @@ def hero(view, last_scan, zh=False) -> str:
     if zh:
         stats = (f'<span>已审核 <b>{total}</b> 条</span><span>其中论文与综述 <b>{papers}</b> 篇</span>'
                  f'<span class="hs-opt">尚未收录的扫描发现 <b>{candidates}</b> 条</span>')
-        title, lede = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。', "收录面向计算机使用智能体的评测基准、数据集、模型与论文，每一条都核对过一手来源。"
+        title = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。'
     else:
         stats = (f'<span><b>{total}</b> reviewed records</span><span><b>{papers}</b> papers and surveys</span>'
                  f'<span class="hs-opt"><b>{candidates}</b> scan finds not yet in the catalog</span>')
-        title, lede = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.', "Benchmarks, datasets, models and papers for agents that use computers, each checked against its primary source."
+        title = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.'
+    lede = esc(DEFINITION['zh' if zh else 'en'])
     return f'''<section class="screen" aria-labelledby="hero-h"><div class="screen-in" data-screen>
 <div class="wrap hero">
 <h1 id="hero-h">{title}</h1>

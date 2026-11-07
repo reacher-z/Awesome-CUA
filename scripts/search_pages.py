@@ -17,6 +17,7 @@ from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, 
 from topic_pages import KIND_LABELS, write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE, scan_schedule
+from site_identity import ALTERNATE_NAMES, DEFINITION, HOME_TITLE, NAME
 import home_page
 import site_shell
 from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, llms_full, llms_txt, paper_hub_markdown
@@ -105,6 +106,19 @@ def organization():
     return {"@type":"Organization", "@id":SITE+"/#organization", "name":"AwesomeCUA", "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
 
 
+def website_schema():
+    return {"@type":"WebSite", "@id":SITE+"/#website", "url":SITE+"/", "name":NAME,
+            "alternateName":list(ALTERNATE_NAMES), "description":DEFINITION['en'],
+            "publisher":{"@id":SITE+"/#organization"}}
+
+
+def homepage_document(body, *, zh=False):
+    language, path = ('zh', '/zh/') if zh else ('en', '/')
+    return page(HOME_TITLE[language], DEFINITION[language], path, body,
+                lang='zh-CN' if zh else 'en', alternatives=True, landing=True,
+                extra_graph=[website_schema()])
+
+
 def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=()):
     url=SITE+path
     # One list renders both the visible trail and BreadcrumbList, so they cannot disagree.
@@ -124,7 +138,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     # The not-found page is served at every missing address, so it claims no URL of its own.
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
     og_url=f'<meta property="og:url" content="{url}">' if canonical else ''
-    full_title=title if 'AwesomeCUA' in title else title+' | AwesomeCUA'
+    full_title=title if any(name in title for name in (NAME, *ALTERNATE_NAMES)) else title+' | AwesomeCUA'
     switch_to=alternate_paths.get('en' if lang.startswith('zh') else 'zh-CN') or None
     breadcrumbs=f'<nav class="breadcrumbs{" vh" if landing else ""}" aria-label="Breadcrumb"><ol>{trail}</ol></nav>'
     # A landing page lays out its own full-width sections; everything else shares the reading column.
@@ -418,12 +432,31 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             body+='<h2>Papers by topic</h2><div class="library-topics">'+''.join(f'<a href="{topic_path(t)}">{esc(topic_name(t))} ({n:,})</a>' for t,n in topics.most_common())+'</div>'
             schema={"@type":"CollectionPage","name":f'Computer-use agent {label.lower()}'}
         else:
-            body+=listing(selected)
-            schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(selected),"itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(selected)]}
+            # Bound category HTML as the catalog grows, using the library's page size.
+            # The category Markdown remains the complete annotation export.
+            first=f'/categories/{kind}/'
+            (destination/first.lstrip('/')).mkdir(parents=True,exist_ok=True)
+            (destination/first.lstrip('/')/'index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
+            pages=max(1,-(-len(selected)//PAGE_SIZE))
+            def category_path(number):return first if number==1 else f'{first}page/{number}/'
+            for number in range(1,pages+1):
+                start=(number-1)*PAGE_SIZE
+                visible=selected[start:start+PAGE_SIZE]
+                path=category_path(number)
+                title=f'Computer-use agent {label.lower()}'+(f', page {number}' if number>1 else '')
+                content=body
+                if pages>1:
+                    navigation=([f'<a href="{category_path(number-1)}" rel="prev">Previous</a>'] if number>1 else [])
+                    navigation+=[f'<a href="{category_path(n)}"'+(' aria-current="page"' if n==number else '')+f'>{n}</a>' for n in range(1,pages+1)]
+                    if number<pages:navigation.append(f'<a href="{category_path(number+1)}" rel="next">Next</a>')
+                    content+=f'<p>Showing {start+1:,}–{start+len(visible):,} of {len(selected):,} reviewed records.</p><nav class="library-pager" aria-label="Category pages">'+''.join(navigation)+'</nav>'
+                content+=listing(visible)
+                content+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="{first}index.md">Full annotations</a> · <a href="/catalog/">All categories</a></p>'
+                schema={"@type":"ItemList","name":title,"numberOfItems":len(visible),"itemListElement":[{"@type":"ListItem","position":start+i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(visible)]}
+                crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,first)]+([(f'Page {number}',path)] if number>1 else [])
+                emit(path,page(title,f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',path,content,schema,crumbs=crumbs),lastmod=modified(selected))
+            continue
         body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
-        if kind!='paper':
-            (destination/f'categories/{kind}').mkdir(parents=True,exist_ok=True)
-            (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
         emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]),lastmod=modified(selected))
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
@@ -560,12 +593,12 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     emit('/guides/',page('Computer-use agent guides','Understand computer-use agents, choose GUI-agent benchmarks, and find training datasets with clearly scoped primary-source references.','/guides/',body))
     zh_note=f'当前有 {len(reviewed):,} 条经过 AI 辅助编辑审阅的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实。'
     zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
-    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True),lastmod=modified(rows),alternates=True)
+    emit('/zh/',homepage_document(zh_body,zh=True),lastmod=modified(rows),alternates=True)
     # The explorer keeps a static, visible directory for visitors without JavaScript.
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Updates every hour</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
-    website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}
+    website=website_schema()
     home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_page.directory_strip()+home_page.contribute()
-    emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
+    emit('/',homepage_document(home_body),lastmod=modified(rows),alternates=True)
     # Feeds announce curated records as they pass source review, newest review first.
     entries=[feed_entry(r,site=SITE,page_path=resource_path(r),reviewed_at=review_times[r['id']],modified=record_modified(r,review_times),summary=description(r),kind_label=KINDS[r['kind']]) for r in newest_reviewed(rows,review_times,FEED_SIZE)]
     write_feeds(destination,entries,site=SITE,updated=max((entry['updated'] for entry in entries),default=snapshot))

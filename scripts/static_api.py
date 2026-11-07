@@ -194,6 +194,9 @@ def _schema(site, snapshot):
     text, nullable = {'type': 'string'}, {'type': ['string', 'null']}
     when = {'type': 'string', 'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$'}
     when_or_null = {'anyOf': [when, {'type': 'null'}]}
+    # Editorial reviews retain their recorded precision; observation times stay timestamp-only.
+    review_date = {'anyOf': [when, {'type': 'string', 'pattern': r'^\d{4}-\d{2}-\d{2}$'}]}
+    review_or_null = {'anyOf': [review_date, {'type': 'null'}]}
     strings = {'type': 'array', 'items': text}
     link = {'type': 'string', 'pattern': '^https://'}
     link_or_null = {'anyOf': [link, {'type': 'null'}]}
@@ -205,20 +208,20 @@ def _schema(site, snapshot):
         'licenses': {'type': 'object', 'properties': {slot: {'$ref': '#/$defs/license'} for slot in ('code', 'data', 'document', 'weights')}, 'additionalProperties': False},
         'resource': item({**identity, 'summary': text, 'scope': {'enum': ['core', 'adjacent']}, 'review_status': {'const': 'curated'},
                           'environments': strings, 'topics': strings, 'aliases': {'type': 'array'}, 'licenses': {'$ref': '#/$defs/licenses'},
-                          'published_at': nullable, 'reviewed_at': when_or_null, 'last_verified_at': when,
+                          'published_at': nullable, 'reviewed_at': review_or_null, 'last_verified_at': when,
                           'relations': {'type': 'array', 'items': item({'type': text, 'target_id': text})}}),
         'paper': item({**identity, 'kind': {'enum': ['paper', 'survey']}, 'summary': text, 'scope': {'enum': ['core', 'adjacent']},
                        'review_status': {'const': 'curated'}, 'authors': strings, 'authors_omitted': {'type': 'boolean'}, 'published': nullable,
                        'arxiv_id': nullable, 'arxiv_version': {'type': ['integer', 'null']}, 'arxiv_versioned_url': nullable, 'venue': nullable,
                        'doi': nullable, 'environments': strings, 'topics': strings, 'licenses': {'$ref': '#/$defs/licenses'},
-                       'reviewed_at': when_or_null, 'last_verified_at': when}),
+                       'reviewed_at': review_or_null, 'last_verified_at': when}),
         'category': item({'id': text, 'name': text, 'name_zh': text, 'type': {'enum': ['kind', 'topic']}, 'curated_count': {'type': 'integer', 'minimum': 0},
                           'active_count': {'type': ['integer', 'null']}, 'page_url': link, 'markdown_url': link, 'api_url': link}),
         'candidate': item({'population': {'enum': ['relevance_pending_record', 'candidate_identifier']}, 'curated': {'const': False},
                            'id': text, 'name': nullable, 'kind': nullable, 'url': link, 'page_url': link_or_null,
                            'review_status': {'enum': ['metadata_verified', 'candidate']}, 'scope': nullable,
                            'published': nullable, 'reason': nullable, 'first_discovered_at': when_or_null}),
-        'change': item({'date': when, 'event': {'enum': sorted(EVENTS)}, 'id': text, 'name': text,
+        'change': item({'date': review_date, 'event': {'enum': sorted(EVENTS)}, 'id': text, 'name': text,
                         'kind': nullable, 'current_status': text, 'page_url': link_or_null, 'url': link, 'note': nullable}),
         'envelope': {'type': 'object', 'required': ['version', 'generated_at', 'catalog_sha256', 'license', 'documentation', 'schema', 'description', 'count', 'items'],
                      'properties': {'version': {'const': API_VERSION}, 'generated_at': when, 'catalog_sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},
@@ -304,6 +307,7 @@ FIELD_NOTES = (
     ('Identity', 'Each item keeps the catalog `id`, which never changes when a resource is renamed. `url` is the original source and `page_url` the catalog page. The page\'s Markdown version, complete record and (for papers) citation files sit at fixed paths below `page_url`, given once per file in `links`, such as `{page_url}record.json`.'),
     ('Versions', '`version` is the API format version: a new major version means a breaking field change, minor versions add fields. `generated_at` is the newest recorded data time in the snapshot (UTC), so every file built from one source commit carries the same value. `catalog_sha256` fingerprints the source catalog.'),
     ('Review states', '`resources.json`, `papers.json` and the counts in `categories.json` contain curated records only: an AI-assisted editorial review checked each against a primary source. `candidates.json` is unreviewed and every row says so.'),
+    ('Dates', '`reviewed_at` and change-event `date` retain the recorded precision: YYYY-MM-DD or a UTC timestamp. Observation timestamps and `generated_at` use YYYY-MM-DDTHH:MM:SSZ.'),
     ('Licenses', 'Code, data, weights and document licenses are separate declarations; `null` means no license is recorded. Catalog annotations and these files are MIT licensed; linked resources keep their own terms.'),
     ('Caching and CORS', 'The files are static and served by GitHub Pages with `Access-Control-Allow-Origin: *`, an `ETag` and `Last-Modified`, so browsers can fetch them across origins and clients can send conditional requests. Compare `generated_at` or `catalog_sha256` before re-ingesting.'),
     ('CSV', 'Each CSV has one row per JSON item and repeats `version` and `generated_at` in every row. Lists are joined with `; `, and whitespace inside a value collapses to single spaces.'),

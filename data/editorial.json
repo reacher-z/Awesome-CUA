@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "agent-seat-linux",
+    "url": "https://github.com/MuhibNayem/agent-seat-linux",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Provides application-scoped Wayland screen capture and isolated input seats for Linux automation agents.",
+    "verify_terms": [
+      "agent-seat-linux"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MuhibNayem/agent-seat-linux/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "80994bef5681c6ec973acbe617262e3a20e2e3d1b067ae6387e161808177cff3"
+  },
+  {
+    "name": "muhtalhakhan OpenAgent",
+    "url": "https://github.com/muhtalhakhan/open-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Self-hosted, provider-agnostic AI agent runtime with browser automation, shell execution, and extensible skill plugins.",
+    "verify_terms": [
+      "open-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/muhtalhakhan/open-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5942d59e27f861100ca800849a4a3ce6310bff3a9122fae6197aa287c326267d"
+  },
+  {
+    "name": "UIED (UI Element Detection)",
+    "url": "https://github.com/MulongXie/UIED",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "UIED detects graphical widgets and text blocks in UI screenshots by combining flood-fill/Canny component analysis with deep text recognition.",
+    "verify_terms": [
+      "UIED"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MulongXie/UIED/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ac5155c9a1d1ee6170c006e794949c1bf964ebe2f33ae7091bd21d268bc4d008",
+    "documented_by": [
+      "2008.05132"
+    ]
+  },
+  {
+    "name": "Grounded Language Agent for Product Search",
+    "url": "https://github.com/MultifacetedNLP/Web-Agents-Unsupervised",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "reinforcement-learning"
+    ],
+    "summary": "Provides training and evaluation code for unsupervised web product-search agents on WebShop using symbolic actions and value-guided search.",
+    "verify_terms": [
+      "Grounded Language Agent for Product Search"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MultifacetedNLP/Web-Agents-Unsupervised/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "44e3a559c2fe3ee45ead21c76f9052b6110a69a29f6f282fd86e2374d1a2ec8d"
+  },
+  {
+    "name": "Preflight-Bench",
+    "url": "https://github.com/multimodal-ai-engineering/preflight-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "efficiency",
+      "state-tracking"
+    ],
+    "summary": "Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates.",
+    "verify_terms": [
+      "Preflight-Bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1dabe4fb0ef00a19662e4fbe86eb35a1f65cbed045d60a9c0a97a8533f268535",
+    "documented_by": [
+      "2610.39282"
+    ]
   }
 ]

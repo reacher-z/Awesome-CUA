@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Autonomous Evaluation and Refinement of Digital Agents",
+    "url": "https://github.com/Berkeley-NLP/Agent-Eval-Refine",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "reward-models",
+      "self-reflection",
+      "reinforcement-learning"
+    ],
+    "summary": "Provides VLM evaluator and policy-refinement code for autonomous evaluation and filtered behavioral cloning on WebArena and AndroidInTheWild.",
+    "verify_terms": [
+      "Autonomous Evaluation and Refinement of Digital Agents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "58ff268b9403642851c550e7d1d2c88446db06ef33e39487068e37edc21ecfbe",
+    "documented_by": [
+      "2404.06474"
+    ]
+  },
+  {
+    "name": "hyprhands",
+    "url": "https://github.com/berker-z/hyprhands",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Hyprland Wayland computer-use MCP server giving AI agents semantic and pixel-level desktop control.",
+    "verify_terms": [
+      "hyprhands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/berker-z/hyprhands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "cd03bb70e4b6cf11e88d95e9d2d836340cde01154206ce456b9acfbbd674cace"
+  },
+  {
+    "name": "Windows Computer Use MCP (DXGI + UIA)",
+    "url": "https://github.com/betrayzl/windows-computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Windows Model Context Protocol server combining DXGI desktop duplication screen capture, UI Automation trees, and human-like input.",
+    "verify_terms": [
+      "Windows Computer Use MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/betrayzl/windows-computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b8b648bfdf5534142e28d57f75a44fa0b6a3eee90fb0d84ccc54f13f10818b5d"
+  },
+  {
+    "name": "WebAgents Protocol",
+    "url": "https://github.com/BetterWright/WebAgents",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Open protocol specification and toolkit exposing batch-native website actions to browser agents.",
+    "verify_terms": [
+      "webagents"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BetterWright/WebAgents/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b84ef4552e951bb08e2b192130801ad1ee006d77efb0fdd95db4adcdbf9a1bdc"
+  },
+  {
+    "name": "bgivenb Typed UI Capabilities",
+    "url": "https://github.com/bgivenb/computer-use-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "safety-security",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Model-guided UI workflow discovery framework with signed human review and deterministic replay.",
+    "verify_terms": [
+      "computer-use-automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bgivenb/computer-use-automation/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0ec687e1f9348eccdfb04a6586ffd6f11cc6723a061772bb433c9ac84ed6fe3f"
   }
 ]

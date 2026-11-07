@@ -86010,5 +86010,220 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Qoder Browser Connector Enabler",
+    "url": "https://github.com/wqzhellohhwy/qoder-browser-connector-enabler",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Enables Qoder's Browser-Use connector mode to attach to and control the user's real Chrome browser.",
+    "verify_terms": [
+      "Qoder Browser Connector Enabler"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wqzhellohhwy/qoder-browser-connector-enabler/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f42d3973253797cb71e6171a3a94a407d89f745ad347e4f0b11ec598647c00ba"
+  },
+  {
+    "name": "FedGUI",
+    "url": "https://github.com/wwh0411/FedGUI",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "FedGUI benchmarks federated GUI agent training and evaluation across heterogeneous platforms, device types, data sources, and operating systems.",
+    "verify_terms": [
+      "FedGUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wwh0411/FedGUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b13a574dcd13d552530a10ed1db1b7c65082e77b0ebb1ad87341d6aa0e011d9a"
+  },
+  {
+    "name": "webcli",
+    "url": "https://github.com/wz289494/webcli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Python CLI and Chrome extension bridge allowing humans and AI agents to control live Chrome tabs from the terminal.",
+    "verify_terms": [
+      "webcli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wz289494/webcli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f89badec65cccfdfbe0a01283238e7be2f7679e9948fa16532d7439d6d089d8c"
+  },
+  {
+    "name": "SOLO",
+    "url": "https://github.com/WZq975/SOLO",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "reinforcement-learning",
+      "robustness"
+    ],
+    "summary": "SOLO performs single-rollout test-time adaptation for GUI agents using online self-supervised feedback during deployment.",
+    "verify_terms": [
+      "SOLO"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WZq975/SOLO/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c6645af5c104647322796121772a6387b71bc927f253243aafb5241c73b2515f",
+    "documented_by": [
+      "2609.34321"
+    ]
+  },
+  {
+    "name": "WebSRC",
+    "url": "https://github.com/X-LANCE/WebSRC-Baseline",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "WebSRC provides baseline models and processing pipelines for the Web-Based Structural Reading Comprehension dataset over HTML and screenshots.",
+    "verify_terms": [
+      "WebSRC"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/X-LANCE/WebSRC-Baseline/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2de9d5b2bd24a3fe11abe41835d249c9b34427548b38e7f0a805045128f2ea27",
+    "documented_by": [
+      "2101.09465"
+    ]
+  },
+  {
+    "name": "OSWorld-MCP",
+    "url": "https://github.com/X-PLUG/OSWorld-MCP",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "OSWorld-MCP benchmarks computer-use agents on hybrid GUI interaction and Model Context Protocol (MCP) tool invocation within OSWorld.",
+    "verify_terms": [
+      "OSWorld-MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/X-PLUG/OSWorld-MCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6fd51bd79a5603e9513f84e69f98b8ca733cef762a8a2391bb287ae3698399ec",
+    "documented_by": [
+      "2510.24563"
+    ]
+  },
+  {
+    "name": "ToolCUA",
+    "url": "https://github.com/X-PLUG/ToolCUA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "reinforcement-learning",
+      "planning",
+      "efficiency"
+    ],
+    "summary": "ToolCUA trains computer-use agents to orchestrate hybrid MCP tool invocations and GUI actions on OSWorld-MCP.",
+    "verify_terms": [
+      "ToolCUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/X-PLUG/ToolCUA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea9905b5e3403b347b7251de553957ca6942a4b0d0c84604c2f46535fec8a923",
+    "documented_by": [
+      "2605.12481"
+    ]
+  },
+  {
+    "name": "CaptchaArena",
+    "url": "https://github.com/X0X0X00/CaptchaArena",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "web-navigation",
+      "grounding"
+    ],
+    "summary": "CaptchaArena provides a live server and fine-grained trajectory dataset across 20 interactive CAPTCHA types for evaluating computer-use agents.",
+    "verify_terms": [
+      "CaptchaArena"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/X0X0X00/CaptchaArena/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2d5624b9ac25a06c7d26acb1cc7a0b4ea60cf9a90f0118b9172bd692f2b2ff94",
+    "documented_by": [
+      "2609.31957"
+    ]
   }
 ]

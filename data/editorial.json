@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "screen2gym",
+    "url": "https://github.com/marc-saouda/screen2gym",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "data-generation",
+      "sandbox",
+      "recording"
+    ],
+    "summary": "screen2gym compiles raw action-labeled screen recordings into resettable, programmatically gradable RL environments for computer-use agents.",
+    "verify_terms": [
+      "screen2gym"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/marc-saouda/screen2gym/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "913c118611f741886405f701bf8c44d246b16e8372cffaa3e0b4c6b86fbe77a1"
+  },
+  {
+    "name": "Chromanche",
+    "url": "https://github.com/marcobazzani/Chromanche",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Self-hosted Chrome Manifest V3 extension and local MCP server allowing AI agents to control live browser tabs.",
+    "verify_terms": [
+      "Chromanche"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/marcobazzani/Chromanche/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "554f3e59cd882ff9a75d1200dc694d6a295c2513ae284cf50be16bf79d8d7ca9"
+  },
+  {
+    "name": "MCP Windows Desktop Automation",
+    "url": "https://github.com/mario-andreschak/mcp-windows-desktop-automation",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MCP Windows Desktop Automation is a TypeScript Model Context Protocol server exposing 50 AutoIt desktop control, window, and screenshot tools.",
+    "verify_terms": [
+      "MCP Windows Desktop Automation"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mario-andreschak/mcp-windows-desktop-automation/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2713aad0cb75d9c025b30a1f6c577aa1d02de9b998bca6f886d60012f4106725"
+  },
+  {
+    "name": "Trusted WebMCP Actions",
+    "url": "https://github.com/markneville/trusted-webmcp-actions",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Reference architecture for cryptographically verifiable user authority on consequential WebMCP browser-agent actions.",
+    "verify_terms": [
+      "Trusted WebMCP Actions"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/markneville/trusted-webmcp-actions/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b5bdca7a0591fe2a1066d0d6908a9fae6228da509a0d8d9edcbf4ae8aaf7833d"
+  },
+  {
+    "name": "CUA Evaluation & RL with Autonomous Feedback",
+    "url": "https://github.com/martasumyk/cua-eval-and-finetuning",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "reward-models",
+      "evaluation"
+    ],
+    "summary": "Implements reinforcement learning with autonomous evaluator feedback for fine-tuning and benchmarking computer-use agents.",
+    "verify_terms": [
+      "cua-eval-and-finetuning"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/martasumyk/cua-eval-and-finetuning/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "290a2d70b66417643048e78d073175d01fb333554f26f49d8a7aa1d217753922",
+    "documented_by": [
+      "2511.20067",
+      "2603.10577"
+    ]
   }
 ]

@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Ruyi (如意)",
+    "url": "https://github.com/icesword0760/ruyi",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "recording",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Ruyi streams remote Chrome sessions to the user's browser for collaborative human-AI control and compiles actions into self-healing scripts.",
+    "verify_terms": [
+      "Ruyi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/icesword0760/ruyi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7ed40e7c92103f16a732ee0b0c76d81718b93d9a1c05ff2416e905b9cd431392"
+  },
+  {
+    "name": "Zhubi (朱笔)",
+    "url": "https://github.com/icesword0760/zhubi",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "data-generation",
+      "grounding",
+      "recording"
+    ],
+    "summary": "Zhubi is a self-hosted bounding-box annotation and fine-tuning workbench for training Florence-2 and YOLO GUI detector models.",
+    "verify_terms": [
+      "Zhubi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/icesword0760/zhubi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3e4b1e12f2cd9ee6a15d9e7c61b0280848b115eb3ce00753f288317d02c28842"
+  },
+  {
+    "name": "browser-for-ai (bfa)",
+    "url": "https://github.com/icueth/browser-for-ai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "AI-oriented browser automation runtime and CLI exposing compact DOM observations and deterministic web actions.",
+    "verify_terms": [
+      "browser-for-ai (bfa)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/icueth/browser-for-ai/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f7a3cdaa6e8335007006cf952047933e26b9b32164245a1ba324e691a69c0eab"
+  },
+  {
+    "name": "AstronRPA",
+    "url": "https://github.com/iflytek/astron-rpa",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "AstronRPA is an open-source enterprise desktop and browser RPA platform with visual workflow orchestration and MCP server integration.",
+    "verify_terms": [
+      "AstronRPA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iflytek/astron-rpa/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8c06c2a3f751c19b69d1c3dab0f193d719767a076c5819357844bb9a2727a8c9"
+  },
+  {
+    "name": "Airbrowser MCP",
+    "url": "https://github.com/ifokeev/airbrowser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Airbrowser packages an undetectable Chrome browser, REST API, MCP server, and live VNC view inside a Docker container for AI web agents.",
+    "verify_terms": [
+      "airbrowser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ifokeev/airbrowser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "80922f96dcfbf6749aaa5466aa57ff6f4c404a5a09bc12e31b27bd000fcbdf06"
   }
 ]

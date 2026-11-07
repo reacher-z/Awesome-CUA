@@ -86010,5 +86010,141 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "axstream",
+    "url": "https://github.com/milind-soni/axstream",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "action-prediction",
+      "recording",
+      "automation"
+    ],
+    "summary": "Streaming JSON-lines action language and compiler for macOS computer-use agents.",
+    "verify_terms": [
+      "axstream"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/milind-soni/axstream/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "22b094c9e6307c5830b57d92e110ea9827c598fafdeb30b6f564c9918aabbca8"
+  },
+  {
+    "name": "Automata",
+    "url": "https://github.com/mindattic/Automata",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Record-once, replay-many browser automation runtime for Windows that records live user actions into deterministic workflows.",
+    "verify_terms": [
+      "Automata"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mindattic/Automata/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3145aa9bdea689270e84f786e4396b41bb3fb5e024d4c23c603927ddc0b8161c"
+  },
+  {
+    "name": "AutoManual",
+    "url": "https://github.com/minghchen/automanual",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "planning",
+      "self-reflection"
+    ],
+    "summary": "AutoManual enables LLM agents to construct and iteratively refine structured instruction manuals through online environmental interaction.",
+    "verify_terms": [
+      "AutoManual"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/minghchen/automanual/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f894e8f069ab02250a20ded4d9df8dacd6cd66c7a31dd750f69d317f9b7600a0",
+    "documented_by": [
+      "2405.16247"
+    ]
+  },
+  {
+    "name": "RPA-Everything",
+    "url": "https://github.com/mingqian94/RPA-Everything",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android",
+      "windows"
+    ],
+    "topics": [
+      "workflow",
+      "recording",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Compiles repeated browser, desktop, Android, and office workflows into reviewed, deterministic RPA skills for AI agents.",
+    "verify_terms": [
+      "RPA-Everything"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mingqian94/RPA-Everything/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "35625c7c8cc74bfb0d2f2a89d4161035a103e85a8019e1c88189edc7c7d38d88"
+  },
+  {
+    "name": "DeskCtl (Desktop Control Engine)",
+    "url": "https://github.com/mini-mind/DeskCtl",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Desktop control engine for GUI agents using UIA and AT-SPI accessibility trees as the primary path with visual fallback.",
+    "verify_terms": [
+      "DeskCtl"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mini-mind/DeskCtl/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3b704d6160f348250fe81bd94370d40cc1a4c968d9ae58d9731fcb6afa15e38d"
   }
 ]

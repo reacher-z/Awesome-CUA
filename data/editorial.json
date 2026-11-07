@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "dsh-click",
+    "url": "https://github.com/PerryLink/dsh-click",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Cross-platform native desktop control plugin for DeepSeek Harness supporting screenshots, UI element search, and mouse/keyboard actions.",
+    "verify_terms": [
+      "dsh-click"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/PerryLink/dsh-click/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2788c071580177c1da37970c502cc89207c63f0e15070aff5ed5f65472ebf68f"
+  },
+  {
+    "name": "pyagentbrowser",
+    "url": "https://github.com/peter-gy/pyagentbrowser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Typed Python SDK for Vercel's agent-browser engine with before-and-after action evidence capture.",
+    "verify_terms": [
+      "pyagentbrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/peter-gy/pyagentbrowser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6d9c8b1645a372f6755a3f8be9aa0afd38fa3be3d24c4089fcb158b3b6ab59f1"
+  },
+  {
+    "name": "LegacyBridge",
+    "url": "https://github.com/peterhaupt/legacybridge",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "workflow",
+      "automation",
+      "grounding",
+      "efficiency"
+    ],
+    "summary": "Local open-weight LLM agent framework for automating legacy enterprise ERP and business desktop software without APIs.",
+    "verify_terms": [
+      "LegacyBridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/peterhaupt/legacybridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5c8ff6dbc4f802270a82e5f358da98a2e507617c9fa546b5ec4f5f41c5cb2cc9"
+  },
+  {
+    "name": "Amazon Return Skill",
+    "url": "https://github.com/peterquads/amazon-return",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Claude browser skill that completes end-to-end Amazon return workflows inside the user's signed-in browser.",
+    "verify_terms": [
+      "amazon return"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/peterquads/amazon-return/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "292d9ae02a2aa3043c9123ecaf202e8288feaf6afbfd6fa7dff6511ed773a198"
+  },
+  {
+    "name": "ask-web-ai",
+    "url": "https://github.com/pgw10086/ask-web-ai",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Universal Agent Skill and CLI allowing a host coding agent to consult web-based AI chat sessions via browser automation.",
+    "verify_terms": [
+      "ask-web-ai"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pgw10086/ask-web-ai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "554b809c6a10eb588906427696b99a3d5f165413246741686c91602e89e418f2"
   }
 ]

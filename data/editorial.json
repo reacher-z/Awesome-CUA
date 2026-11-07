@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "MCP Browser (macOS WKWebView)",
+    "url": "https://github.com/brainfuel/mcp-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native macOS WKWebView web browser exposed directly as a Model Context Protocol server for AI agents.",
+    "verify_terms": [
+      "MCP Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/brainfuel/mcp-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f3980ed83e2d55264b4a24ba49f8190ac682aea4ee66f1877cc1061742e36c56"
+  },
+  {
+    "name": "BraveCowNoFear Windows Computer Use",
+    "url": "https://github.com/BraveCowNoFear/windows-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Local Windows computer-use plugin for Codex combining UIA3 semantic trees, MCP tools, SendInput, and window capture.",
+    "verify_terms": [
+      "windows computer use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BraveCowNoFear/windows-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1d7f12ce4057291bd329c6afba0033e6e4e167f95ee7cea8c5ad77a3544b2faa"
+  },
+  {
+    "name": "SameState WebMCP",
+    "url": "https://github.com/breeznik/samestate-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "state-tracking",
+      "tool-integration",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction.",
+    "verify_terms": [
+      "samestate"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3c6387e8ef366ba8b438f69f8d5cf83f8a46fc378ea0d3ce1ebbe37a1eb54fa5"
+  },
+  {
+    "name": "Ailoy",
+    "url": "https://github.com/brekkylab/ailoy",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Ailoy is a multi-language AI agent SDK that provisions isolated microVM sandboxes for computer-use, CAD, and desktop automation agents.",
+    "verify_terms": [
+      "Ailoy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/brekkylab/ailoy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "64c93dcca8ccade01a46657241920527d2385af973cea13d3dcd5e9238b34e10"
+  },
+  {
+    "name": "BrowserAct Skills",
+    "url": "https://github.com/browser-act/skills",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "BrowserAct Skills provides reusable browser-automation and web-extraction skill definitions for AI agents.",
+    "verify_terms": [
+      "BrowserAct Skills"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browser-act/skills/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ae6be48ad2cb120069beb7fa36c5f8f06cbe1428ab74b17251611948fa5ea9f2"
   }
 ]

@@ -86010,5 +86010,137 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "OpenHands is an open-source platform for software development and computer-use agents equipped with a sandboxed shell, code editor, and browser.",
+    "verify_terms": [
+      "OpenHands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenHands/OpenHands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "262c2c72e92dd093a113103319921dc7c7da0f28519b470853bcb3209ad85dac"
+  },
+  {
+    "name": "CODA",
+    "url": "https://github.com/OpenIXCLab/CODA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "planning",
+      "reinforcement-learning",
+      "grounding",
+      "science"
+    ],
+    "summary": "CODA coordinates a trainable planner ('Cerebrum') with a grounded GUI executor ('Cerebellum') via decoupled reinforcement learning on ScienceBoard.",
+    "verify_terms": [
+      "CODA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenIXCLab/CODA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d6a1aa1fc4f96439f0b75e0509e01d20da29658de2041b774375db49275135dd",
+    "documented_by": [
+      "2508.20096"
+    ]
+  },
+  {
+    "name": "CodexQA",
+    "url": "https://github.com/openqa-cn/codexqa",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Suite of 11 local-first QA Agent Skills for Cursor, Claude Code, and Codex to verify live web and desktop user journeys.",
+    "verify_terms": [
+      "CodexQA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openqa-cn/codexqa/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c4021c817fba23ac4172c2024e996fe9b00751c5cfecec6c83a64fe3a758f092"
+  },
+  {
+    "name": "OpenQA",
+    "url": "https://github.com/openqa-labs/openqa",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation",
+      "grounding"
+    ],
+    "summary": "OpenQA is an open-source agentic browser testing harness that executes natural-language test assertions with dynamic selector resolution.",
+    "verify_terms": [
+      "OpenQA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openqa-labs/openqa/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f300fa0e2695b98695e0498573a1e7f881ffac0a2c1944ebcd901c7f8585e8dd"
+  },
+  {
+    "name": "OpenTiny NEXT-SDKs (WebMCP)",
+    "url": "https://github.com/opentiny/webmcp-sdk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "OpenTiny NEXT-SDKs implements in-page WebMCP servers, polyfills, and WebSkills so AI agents can invoke web application capabilities directly.",
+    "verify_terms": [
+      "OpenTiny NEXT-SDKs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/opentiny/webmcp-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b7eae3acfece7cd68366a293e35cbf286c8696e5d644cc38207062f7967e1486"
   }
 ]

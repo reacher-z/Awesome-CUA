@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "c74cfd1941b512a64e749742cfaa82e7efa86f80158c440dbe1d5a2ae0bf50ac",
-  "observation_snapshot_sha256": "fc87ec1de84b6924821f0a96474a8c6ee6c81739bc5852b93ff6c6e2635230b2",
+  "manifest_sha256": "e22b4ec142405172d1fd91968d0d099b23be04eb58774190f024cda8ef49d851",
+  "observation_snapshot_sha256": "fa8c84f8ab0425ff77c06284efe1db6522ee6146e30471963ff9c6490db68f3f",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3917,11 +3917,48 @@
           }
         },
         "id": "318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51"
+      },
+      {
+        "active_records": 2623,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8147938,
+            "sha256": "8062d10091cf6f551b4914c7fe05b1a4cd7fb88cac1a22da2a9e8abc24e9c4b5"
+          },
+          "catalog.jsonl": {
+            "bytes": 7561370,
+            "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "input_id": "dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "kind": "existing",
+        "last_attempt": 878,
+        "next_index": 190,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51",
         "input_id": "318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51",
@@ -3929,7 +3966,7 @@
         "last_attempt": 873,
         "next_index": 183,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
@@ -80937,6 +80974,114 @@
         "run_id": "run:9680e591ccd10327062843e3",
         "source_url": "https://api.github.com/repos/andelf/axcli",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [],
+        "finished_at": "2026-11-07T11:13:58.134416+00:00",
+        "id": "receipt:6bda9371634293663f7a50c9539cbc67d0665c8cf135c089703bd4006799ec53",
+        "incomplete_results": null,
+        "outcome": "unavailable",
+        "position": 184,
+        "query_id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "raw_body_retained": false,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "e896cc8cbc433a23c30667d681947f7a304bce6122c26be0d98e0dae99a82910",
+        "requested_at": "2026-11-07T11:13:57.926005+00:00",
+        "response_bytes": 118,
+        "response_sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+        "returned_count": null,
+        "run_id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "source_url": null,
+        "status": 404
+      },
+      {
+        "accepted_repository_ids": [
+          66670819
+        ],
+        "finished_at": "2026-11-07T11:14:04.695764+00:00",
+        "id": "receipt:00f1928d98a14b23ef5965cb3489f3219f7a8f0822cc4d433ca4497f99354a47",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 185,
+        "query_id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "2fec93f349aded0a6e2ecc96490da6ef185727807b70bff401d796628bd396b5",
+        "requested_at": "2026-11-07T11:14:04.433072+00:00",
+        "response_bytes": 6621,
+        "response_sha256": "efc30b8ff88ad5d56ac5c16ed57d1b0a717823485a3e1a79c72acc563ad1990b",
+        "returned_count": 1,
+        "run_id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "source_url": "https://api.github.com/repos/apify/crawlee",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1152324064
+        ],
+        "finished_at": "2026-11-07T11:14:11.184827+00:00",
+        "id": "receipt:f41fe7087742fb5ceb1effe6e17ad545c2d754c7969d67917ba0b9dcf79e1afd",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 186,
+        "query_id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "213f41e4249987118d8dd29c7d48f052b411ac93e812708f4ff1d0b443fcdb52",
+        "requested_at": "2026-11-07T11:14:10.940369+00:00",
+        "response_bytes": 5051,
+        "response_sha256": "012db343bc56ecece56deb1f181d405b78840b236b9924fbac54ee91d0a3def3",
+        "returned_count": 1,
+        "run_id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "source_url": "https://api.github.com/repos/apireno/domshell",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          17339088
+        ],
+        "finished_at": "2026-11-07T11:14:17.707959+00:00",
+        "id": "receipt:4ee6b6473da259169f2ee0e88927c72786abeecb6376accfe4e23f34e89b8e91",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 188,
+        "query_id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "cb8147b4c1bc678ac0d476b828b4837a0b2feec61a5da68d91719f5ef6df7782",
+        "requested_at": "2026-11-07T11:14:17.447911+00:00",
+        "response_bytes": 6187,
+        "response_sha256": "0a46f4ba10012fb7a7a1a987946c63ca7c665d55fecd90dc837c4256cc4ab238",
+        "returned_count": 1,
+        "run_id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "source_url": "https://api.github.com/repos/appium/appium-adb",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          355277962
+        ],
+        "finished_at": "2026-11-07T11:14:24.179103+00:00",
+        "id": "receipt:ecc38269116c8c6f2bd6ed14bf09aa4980b6b65ee593ac45161ca5b491f28dac",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 189,
+        "query_id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "f379c1d1caa20e93389a64af1b660e2cb67639e02e2f1b4752bb65639559b019",
+        "requested_at": "2026-11-07T11:14:23.955444+00:00",
+        "response_bytes": 6538,
+        "response_sha256": "6ee6df1802ce19f8c08c5bc9829e52041480f7eb00ee4431e7dd7b924480bfdb",
+        "returned_count": 1,
+        "run_id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "source_url": "https://api.github.com/repos/appium/appium-inspector",
+        "status": 200
       }
     ],
     "runs": [
@@ -84274,9 +84419,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 186.596499281
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10239,
+        "before_unique_repositories": 10235,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T11:14:26.658876+00:00",
+        "id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "input_id": "dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "new_unique_repositories": 4,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "0682f7f6184b46019ca851d3dfcd67c9"
+        },
+        "started_at": "2026-11-07T11:13:50.609015+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 1,
+        "wall_seconds_budget": 195.98982180899998
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "f66c8b79831761d144b0c3775d80fe0b5e762e6ec7786102bfced1a1998c9aa6"
+  "state_sha256": "3665cb410720d72fd07c6ca9ca293f8aecea0f901c8ed6ebef09a512e59fecb7"
 }

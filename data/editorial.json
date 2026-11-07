@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "agent-browser-plugin-proton-pass",
+    "url": "https://github.com/evrenverse/agent-browser-plugin-proton-pass",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Proton Pass credential provider plugin for `agent-browser` that resolves and fills logins without exposing passwords to the LLM.",
+    "verify_terms": [
+      "agent-browser-plugin-proton-pass"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/evrenverse/agent-browser-plugin-proton-pass/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77251c2c846748c7d7564fcda3301f5cf7a14345364eccc3e2022b8dfd7445a1"
+  },
+  {
+    "name": "vnc-computer-use CLI",
+    "url": "https://github.com/EYHN/vnc",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Command-line interface for computer-use agents to capture screenshots and dispatch mouse and keyboard actions over VNC.",
+    "verify_terms": [
+      "vnc"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EYHN/vnc/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c7887b5dc0a25b270c22601691a4d17698e3877f9f1f2080044f15b0e6fb7ba4"
+  },
+  {
+    "name": "pcbridge",
+    "url": "https://github.com/Eymistaken/Pcbridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Turns a Linux desktop into a Model Context Protocol server for shell execution, window management, and GUI automation.",
+    "verify_terms": [
+      "pcbridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Eymistaken/Pcbridge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3411be7bb2ffe29dd31083749c7c7a2f1e5c251149aeeb09930ea9a4a05e2730"
+  },
+  {
+    "name": "Twiko",
+    "url": "https://github.com/ezocomp118-source/twiko",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Self-hosted platform provisioning dedicated virtual computers with browsers and terminals for autonomous AI teammates.",
+    "verify_terms": [
+      "Twiko"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ezocomp118-source/twiko/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d91d18dbb383474de93faafd81dbad93d491f81e6f5ee8a7dce3c32f62e97033"
+  },
+  {
+    "name": "cloak-cdp-cli",
+    "url": "https://github.com/ezumyn-aliegm/cloak-cdp-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Command-line interface for AI agents to drive CloakBrowser stealth Chromium instances over CDP.",
+    "verify_terms": [
+      "cloak-cdp-cli"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ezumyn-aliegm/cloak-cdp-cli/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c19e6b1403491c0e3411e0793a7a46545697a6c76a951894c420c88e05f23336"
   }
 ]

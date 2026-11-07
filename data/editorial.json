@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "izan.io",
+    "url": "https://github.com/ekingunoncu/izan.io",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "izan.io is a Chrome extension MCP server that exposes browser tab management, DOM inspection, clicking, typing, and screenshot tools to AI agents.",
+    "verify_terms": [
+      "izan.io"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ekingunoncu/izan.io/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad8914babfaeac80c46551c9540537035dcdf3e4c9d092f7bf34cae8243a284a"
+  },
+  {
+    "name": "annotate-mcp",
+    "url": "https://github.com/ElaineMHr/annotate-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "ui-design",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Model Context Protocol server that injects a drawing and comment overlay into live webpages so coding agents can read visual markup.",
+    "verify_terms": [
+      "annotate-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ElaineMHr/annotate-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "24c2d724ab801a53d5fdf88754c0c4b43fda9b08741a2d431250670b49bc366f"
+  },
+  {
+    "name": "Qubicl",
+    "url": "https://github.com/EldanRing/qubicl",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Provisions isolated local virtual computers so AI agents can operate a private desktop without touching the host session.",
+    "verify_terms": [
+      "Qubicl"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/EldanRing/qubicl/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "21f73439692387742525b3cf76654b3a25290a879a5cb1a57ce959a5d72a6c08"
+  },
+  {
+    "name": "Electron Stagewright",
+    "url": "https://github.com/electron-stagewright/electron-stagewright",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Model Context Protocol server and SDK for driving Electron desktop applications with Playwright-style locators and actions.",
+    "verify_terms": [
+      "Electron Stagewright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/electron-stagewright/electron-stagewright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9016b3c8f09edf89b6815aef633d1c232c99f0b5b8275a590dfc0eab0d026370"
+  },
+  {
+    "name": "HoloSkill Gym",
+    "url": "https://github.com/ElenaViewSynthesis/holoskill-gym",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "reinforcement-learning",
+      "self-reflection",
+      "workflow"
+    ],
+    "summary": "Gym environment and optimization framework for self-evolving CLI and computer-use agent skills.",
+    "verify_terms": [
+      "HoloSkill Gym"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ElenaViewSynthesis/holoskill-gym/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f351caff863214512c597e9c68be0a9595266234df755ca32c3e6b3694ea5e4"
   }
 ]

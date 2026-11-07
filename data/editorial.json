@@ -86010,5 +86010,142 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "NORTHTEK Ghost",
+    "url": "https://github.com/NORTHTEKDevs/ghost",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "self-reflection",
+      "safety-security"
+    ],
+    "summary": "Provides verified desktop control for AI agents on Windows and Linux across native GUI applications lacking APIs.",
+    "verify_terms": [
+      "ghost"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NORTHTEKDevs/ghost/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "423bc3f48c3f99da059e26c9ce93210e97ee1150b4a59d056f67cd33ed979353"
+  },
+  {
+    "name": "activity-frames",
+    "url": "https://github.com/nossa-y/activity-frames",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "memory",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "Converts continuous local desktop activity into structured, queryable workflow frames served over MCP.",
+    "verify_terms": [
+      "activity-frames"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nossa-y/activity-frames/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a69aecb1e08e2583f9d82cdfb74875c38dfe8aeaa02e886ba6e760d7eea1ee84",
+    "documented_by": [
+      "2608.05784"
+    ]
+  },
+  {
+    "name": "dom-drift-bench",
+    "url": "https://github.com/NotEl1gible/dom-drift-bench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "dom-drift-bench evaluates four web extraction and grounding strategies across ten categories of structural DOM drift.",
+    "verify_terms": [
+      "dom-drift-bench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NotEl1gible/dom-drift-bench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b391254be26a8afb7b99abc80c944b285892ccc9b5d527bb9ecc61640ef54134"
+  },
+  {
+    "name": "Hermes Agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "memory",
+      "self-reflection",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes.",
+    "verify_terms": [
+      "Hermes Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NousResearch/hermes-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "38b023e1bb33bf302dbc7d0856dd7d79e87cbd67de506dac47a3fed6e5c776bc"
+  },
+  {
+    "name": "Eric Task Master",
+    "url": "https://github.com/npcworkspace-cmyk/eric-task-master",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "long-horizon",
+      "workflow",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Durable Playwright and Chrome task runner that keeps long-horizon browser jobs running after the initiating agent session exits.",
+    "verify_terms": [
+      "Eric Task Master"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/npcworkspace-cmyk/eric-task-master/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d3c24c397225f9e254391ba4861d7477a4e69086eb880f62ca9b2a5e5033adf8"
   }
 ]

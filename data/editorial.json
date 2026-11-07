@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "DeskMind Eyes",
+    "url": "https://github.com/deskmind-ai/eyes",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "DeskMind Eyes is a compact 4B GUI visual grounding model and training recipe for localizing click targets on desktop screenshots.",
+    "verify_terms": [
+      "DeskMind Eyes"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/deskmind-ai/eyes/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d9b8b801f17d3448df37a7be1187f32149bac72a3427bf22f04192feea1042c4"
+  },
+  {
+    "name": "pc-screen-control",
+    "url": "https://github.com/desteny-dev/pc-screen-control",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Windows Model Context Protocol server that exposes the desktop accessibility tree as structured data rather than screenshots.",
+    "verify_terms": [
+      "pc-screen-control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/desteny-dev/pc-screen-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c0be9a5db809e3662393a43cb2e8c12641ab3528970a663d6a354de1ff882994"
+  },
+  {
+    "name": "Chrome DevTools MCP Persistent Bridge",
+    "url": "https://github.com/dev-newb/chrome-devtools-mcp-persistent-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Persistent, fail-closed Chrome DevTools Model Context Protocol bridge for OpenAI Codex on Windows.",
+    "verify_terms": [
+      "Chrome DevTools MCP Persistent Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dev-newb/chrome-devtools-mcp-persistent-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a7a265b4ec9f2a98f48cbcd962576cf29fb13b682343419cff258a44953913ba"
+  },
+  {
+    "name": "Codex File Bridge",
+    "url": "https://github.com/dev-newb/codex-file-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Codex skill for reliable, filename-aware local file uploads into browser file-input dialogs.",
+    "verify_terms": [
+      "Codex File Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dev-newb/codex-file-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ba3ae80da01a53cb292f715a40d29a564a1623b854ac0de7502397acf3fc6137"
+  },
+  {
+    "name": "Desktop Computer Use (DCU)",
+    "url": "https://github.com/dev-willbird1936/Desktop-Computer-Use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Background Windows computer-use MCP server that dispatches input to target applications without interrupting foreground user work.",
+    "verify_terms": [
+      "Desktop Computer Use (DCU)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dev-willbird1936/Desktop-Computer-Use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "80a0391f15f2f7df2dfa27af47529b1b6206e3fa56281c6c009065bf943082a1"
   }
 ]

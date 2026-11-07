@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "nanoMuse",
+    "url": "https://github.com/nano-muse/nanoMuse",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android",
+      "ios",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "memory",
+      "automation",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "nanoMuse is an open-source personal agent that maintains persistent cross-device memory and executes browser, desktop, and mobile tasks.",
+    "verify_terms": [
+      "nanoMuse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8e9780ea34b85c184369b5c64cca0e9beada8dafd77f5f5da4cd16928c30da38",
+    "documented_by": [
+      "2610.08699"
+    ]
+  },
+  {
+    "name": "natbot",
+    "url": "https://github.com/nat/natbot",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Early Playwright-based browser agent prototype that drives web navigation by feeding simplified DOM link/input lists to an LLM.",
+    "verify_terms": [
+      "natbot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nat/natbot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "524f0c736146c9ef391da6e135f8491ab9f5508bb362cdac060853c75f05ce38"
+  },
+  {
+    "name": "OSRS PvP Reinforcement Learning",
+    "url": "https://github.com/Naton1/osrs-pvp-reinforcement-learning",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction"
+    ],
+    "summary": "Trains PPO self-play reinforcement learning agents for real-time Old School RuneScape PvP combat across high-dimensional action spaces.",
+    "verify_terms": [
+      "OSRS PvP Reinforcement Learning"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Naton1/osrs-pvp-reinforcement-learning/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "40615d66e556e1fb1b2bd85ace45f7df2e64d80b8f55da11bdf955b1b68d016e"
+  },
+  {
+    "name": "NaveedAshraf Browser Bridge",
+    "url": "https://github.com/NaveedAshraf1/browser-automation-extension",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome extension, HTTP API, and MCP server exposing 185 commands and smart selectors for controlling a live Chrome browser.",
+    "verify_terms": [
+      "browser-automation-extension"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/NaveedAshraf1/browser-automation-extension/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f6a71d15ba7358bf552d9741dee0daef52d8864b29bf1e328eb155386c20ce1d"
+  },
+  {
+    "name": "Supply Recovery Console (WebMCP)",
+    "url": "https://github.com/Navi-AI-Project/supply-recovery-console",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "observability",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP reference console for auditable, human-approved supply-chain actions executed by browser agents.",
+    "verify_terms": [
+      "Supply Recovery Console"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Navi-AI-Project/supply-recovery-console/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ff8d094261c21f39390af6235b7710c4f925808864dabb3f94c9e321b86b2cbf"
   }
 ]

@@ -86010,5 +86010,224 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "uitars-mcp",
+    "url": "https://github.com/sandraschi/uitars-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "uitars-mcp is a Model Context Protocol server that connects vision-language GUI models (such as UI-TARS) to desktop and browser actuation.",
+    "verify_terms": [
+      "uitars-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sandraschi/uitars-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c110ab4a64bb87fc12d6ed99597414c70836afb57dc1062b9bca77a7d17bc941"
+  },
+  {
+    "name": "Scout Browser Agent",
+    "url": "https://github.com/sanjeev29/scout-browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "Browser agent using a 4-layer perception cascade from lightweight HTTP text to accessibility trees and vision fallback.",
+    "verify_terms": [
+      "scout-browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sanjeev29/scout-browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e8efee413969d8f1709a7046f38e2de5cfd6e77221fa2432a72794527f843c4c"
+  },
+  {
+    "name": "MarketBench",
+    "url": "https://github.com/santos-sanz/marketbench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "MarketBench is a reproducible WebMCP benchmark evaluating browser agents on multi-week economic decision-making in simulated markets.",
+    "verify_terms": [
+      "MarketBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/santos-sanz/marketbench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3a39592161583e28bc1456f7f592ebd056e405d82e719f5d887521cf91221a5a"
+  },
+  {
+    "name": "agentic-cb (CLI Browser Control Plane)",
+    "url": "https://github.com/santusht06/agentic-cb",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "CLI browser control plane unifying web session automation across messaging and productivity web apps.",
+    "verify_terms": [
+      "agentic-cb"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/santusht06/agentic-cb/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5067be7c45aff162b1015fd51c8e90e3660217450e6d06b581c9fb56b2c39ef5"
+  },
+  {
+    "name": "Multi-Agent Browser",
+    "url": "https://github.com/sanzizlohar/multi-agent-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "workflow",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "Coordinates five specialized AI agents sharing a browser workspace to conduct collaborative web research.",
+    "verify_terms": [
+      "Multi-Agent Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sanzizlohar/multi-agent-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20e3eb927492758dc4a299e594909ee295ad53dec54ecca794a7c4feadcc9ba0"
+  },
+  {
+    "name": "Simulation Labs",
+    "url": "https://github.com/SatyamDave/simulation-labs",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Behavioral CI gate where computer-use agents test signup, checkout, and onboarding flows on every deployment.",
+    "verify_terms": [
+      "Simulation Labs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SatyamDave/simulation-labs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e360f1e2412c948b74a59fdc1acb97614d434320dde40a907e44e03b79763552"
+  },
+  {
+    "name": "Claude Code ChatGPT Web Rosetta Gateway",
+    "url": "https://github.com/satyasai-collab/claude-code-openai-auth",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Localhost gateway that routes Claude Code requests through a manually authenticated ChatGPT Web browser session.",
+    "verify_terms": [
+      "claude"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/satyasai-collab/claude-code-openai-auth/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b60d196df9988f7bc90fb3af7978758c8d1aafbfe0bfc75c246d25818708981f"
+  },
+  {
+    "name": "Qwen Studio Browser Gateway",
+    "url": "https://github.com/satyasai-collab/qwen-studio-browser-gateway",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Localhost advisory gateway for Claude Code backed by a logged-in Qwen Studio browser session.",
+    "verify_terms": [
+      "Qwen Studio Browser Gateway"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/satyasai-collab/qwen-studio-browser-gateway/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0f0961c1303fa91ef3a51456239db9e2e4981a6639072d842f7c54430dee823a"
+  },
+  {
+    "name": "dev-browser",
+    "url": "https://github.com/SawyerHood/dev-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "dev-browser provides a persistent Playwright browser sandbox and compact ARIA snapshot CLI for stateful multi-step web automation.",
+    "verify_terms": [
+      "dev-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SawyerHood/dev-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e37d86341259c8cef765e36bce93698873ff9311d9fb1484aa2d57d2bd2d3559"
   }
 ]

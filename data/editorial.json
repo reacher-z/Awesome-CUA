@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WebQA Agent",
+    "url": "https://github.com/MigoXLab/webqa-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "WebQA Agent is an autonomous multimodal web testing agent that audits webpage functionality, performance, and visual UX without test scripts.",
+    "verify_terms": [
+      "WebQA Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MigoXLab/webqa-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8e601cb94966e5f10b48059a144ee896db61c0a7ef8f2e61acb6ba97779be431"
+  },
+  {
+    "name": "Microsoft Paint MCP Server",
+    "url": "https://github.com/miguelcespedes/Microsoft-Paint-MCP-Server",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "ui-design",
+      "automation"
+    ],
+    "summary": "Semantic Model Context Protocol interface for Microsoft Paint allowing AI agents to draw geometry, diagrams, and canvas edits.",
+    "verify_terms": [
+      "Microsoft Paint MCP Server"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/miguelcespedes/Microsoft-Paint-MCP-Server/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b67dda5c0722e10b044405b87d4cf7f245b28e38bb211970351d92667e42feaf"
+  },
+  {
+    "name": "aegis-desktop",
+    "url": "https://github.com/MihneaTeodorStoica/aegis-desktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "safety-security",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Extensible Linux-first desktop-control MCP server with pluggable window, input, screenshot, OCR, and policy backends.",
+    "verify_terms": [
+      "aegis-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MihneaTeodorStoica/aegis-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "853fe11a822a95aa26dd2d6b44e9f2488a4700693077a6065d60cd540a3a1618"
+  },
+  {
+    "name": "Miiiuser dsh-browser-agent",
+    "url": "https://github.com/Miiiuser/dsh-browser-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Playwright browser automation and vision grounding toolkit for text-only LLMs on DeepSeek Harness.",
+    "verify_terms": [
+      "dsh-browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Miiiuser/dsh-browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3abfa872422f17f6cfcccb7cde0386071eac0980fd41e12671b059b603c9d522"
+  },
+  {
+    "name": "faster-browser-agent",
+    "url": "https://github.com/MikaStiebitz/faster-browser-agent",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Fast MCP browser server for AI agents that navigates complex web apps by reading accessibility trees and application source.",
+    "verify_terms": [
+      "faster-browser-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MikaStiebitz/faster-browser-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "96a4d9c399440ee1448804619399ffdf67d405298fe9cf7f6e5248b4bbeedf33"
   }
 ]

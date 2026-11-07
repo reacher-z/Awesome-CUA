@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "cskwork vigil",
+    "url": "https://github.com/cskwork/vigil",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "self-reflection",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Continuous browser QA harness that reproduces reported bugs and autonomously expands end-to-end test coverage on live web URLs.",
+    "verify_terms": [
+      "vigil"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cskwork/vigil/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "95558460768d27a08c2ab70509b7ddb777ab3da7d0a5e7c7deee24a2014434d1"
+  },
+  {
+    "name": "ZCode JetBrains Plugin",
+    "url": "https://github.com/csuftt/zcode-jetbrains-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "JetBrains IDE plugin for Z.ai/GLM coding agents with built-in Browser Use control over an embedded JCEF browser.",
+    "verify_terms": [
+      "zcode-jetbrains-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/csuftt/zcode-jetbrains-plugin/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ca2533d618a5648d3926b720b8bb2d9138517ea9d0ae2e1feff00f52fdf0223e"
+  },
+  {
+    "name": "Hosp2MES-Agent",
+    "url": "https://github.com/Ctrl-CV-Master/Hosp2MES-Agent-Public",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "long-horizon",
+      "web-navigation",
+      "self-reflection"
+    ],
+    "summary": "Hosp2MES-Agent is a long-horizon browser GUI agent for executing multi-page Manufacturing Execution System (MES) workflows with state verification.",
+    "verify_terms": [
+      "Hosp2MES-Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Ctrl-CV-Master/Hosp2MES-Agent-Public/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "921fcc988c686b77d681771c4b0b5ef19e2bd0aa2dd0cc89cc8232cc499a5f76"
+  },
+  {
+    "name": "LAI (Linux Native OS Agent)",
+    "url": "https://github.com/cufelix/lai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Native OS agent runtime for Linux desktops providing system-wide screen observation, accessibility inspection, and input control.",
+    "verify_terms": [
+      "LAI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cufelix/lai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5dbf1070579ac21b72fadadc406a30f065fff2da16224b3b62fc97eca39a11b0"
+  },
+  {
+    "name": "cuse",
+    "url": "https://github.com/cuse-dev/cuse",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "sandbox",
+      "tool-integration"
+    ],
+    "summary": "cuse is an open-source framework for building AI agents that control virtualized Linux desktops and browsers via display, mouse, and keyboard APIs.",
+    "verify_terms": [
+      "cuse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/cuse-dev/cuse/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2feb343efc68280cb6d1e1eabbf614ebb1903e0262ff3c082f9e19881b18ad3c"
   }
 ]

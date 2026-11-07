@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "browser-rs-mcp",
+    "url": "https://github.com/maestrojeong/browser-rs-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "Lightweight ~5.5MB stealth-oriented Rust browser MCP server allowing multiple AI agents to share one Chrome instance.",
+    "verify_terms": [
+      "browser-rs-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/maestrojeong/browser-rs-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7c35ea6993fd6e3dcd39fb0b705accb0e4de3127f4e11339beda24c3f6577656"
+  },
+  {
+    "name": "cua-rs-mcp",
+    "url": "https://github.com/maestrojeong/cua-rs-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Rust Model Context Protocol server that drives native macOS apps through the Accessibility API without moving the user's cursor.",
+    "verify_terms": [
+      "cua-rs-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/maestrojeong/cua-rs-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2ff9dd57bfaae544422abc5857ef30256b39a941de564d4eb3eb6223952caabd"
+  },
+  {
+    "name": "LiveMCP",
+    "url": "https://github.com/Magi-Labs/livemcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Manifest V3 Chrome extension and MCP hub that lets AI agents operate the user's logged-in Chrome profile and inspect network calls.",
+    "verify_terms": [
+      "LiveMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Magi-Labs/livemcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1a2fe0b9e831273935048951cebb9ec0c37b1a5c7e79792aadde5ca90b281bac"
+  },
+  {
+    "name": "MobileMCP",
+    "url": "https://github.com/Magi-Labs/mobilemcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "MobileMCP lets AI agents control physical Android phones over WebSocket via an on-device AccessibilityService app without ADB or root.",
+    "verify_terms": [
+      "MobileMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Magi-Labs/mobilemcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3cf521b10c8e626f92f88bbfea1fc2963183c7be8eea8b6ea10c977ce4ea2693"
+  },
+  {
+    "name": "Ask-before-Plan",
+    "url": "https://github.com/magicgh/Ask-before-Plan",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "planning",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Ask-before-Plan trains proactive language agents to clarify underspecified user instructions before executing multi-step tool plans.",
+    "verify_terms": [
+      "Ask-before-Plan"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/magicgh/Ask-before-Plan/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c82c357b7a4cb1a3f05c4b61351ef636a592a4fc7ae508040267f38140cdc2eb"
   }
 ]

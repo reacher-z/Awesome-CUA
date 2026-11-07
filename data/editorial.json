@@ -86010,5 +86010,135 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Xiaoshe Agent (小蛇 Agent)",
+    "url": "https://github.com/jackygilbert498-debug/xiaoshe-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "memory",
+      "safety-security",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Local-first desktop agent built on DeepSeek Harness featuring plugin governance, permission approvals, and completion receipts.",
+    "verify_terms": [
+      "xiaoshe-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jackygilbert498-debug/xiaoshe-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e4df23fe76048d130d673a7db7ee8e1026275b676af7d7f4c8b555c9db270400"
+  },
+  {
+    "name": "PrivateAI for Mac",
+    "url": "https://github.com/jacobjiangwei/PrivateAI-for-Mac",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "automation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Native macOS local AI agent powered by Ollama with system control, file tools, and browser automation.",
+    "verify_terms": [
+      "PrivateAI for Mac"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jacobjiangwei/PrivateAI-for-Mac/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6c9f9d950d7ced0983fd9b6cd3a60e516761d24c2a12f6ff689457e07b332eaf"
+  },
+  {
+    "name": "dsh-vdesktop",
+    "url": "https://github.com/jafewff/dsh-vdesktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "dsh-vdesktop runs Windows GUI applications inside an invisible Win32 virtual desktop (`CreateDesktopW`) and exposes 12 `vdesk_*` agent control tools.",
+    "verify_terms": [
+      "dsh-vdesktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jafewff/dsh-vdesktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9ff8c46e1a49bb7a192c70fe62c03b954ac1792e92f5146da66a7573b2c9a034"
+  },
+  {
+    "name": "Relay AI Virtual Desktop",
+    "url": "https://github.com/jahrulnr/virtual-desktop",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Browser-streamed Docker Linux desktop shared between humans and AI agents with a Go MCP computer-use server.",
+    "verify_terms": [
+      "virtual-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jahrulnr/virtual-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ce7545af490dbc97d69e2572d50d30292575430119e4a18eb52308be6cb2ce27"
+  },
+  {
+    "name": "jaibhasin dsh-browser-agent",
+    "url": "https://github.com/jaibhasin/dsh-browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Chrome side-panel autonomous browser agent powered by DeepSeek Harness.",
+    "verify_terms": [
+      "dsh browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jaibhasin/dsh-browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "79b23ab2d0db0002664d92f9f88c963f2199325e4d094a100582d4c38976d854"
   }
 ]

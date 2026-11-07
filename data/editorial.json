@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Nell (Open Source Instinct)",
+    "url": "https://github.com/iabdulwasey/Nell",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Personal computer-use and browser agent controlled via text messages to execute local desktop and web workflows.",
+    "verify_terms": [
+      "Nell (Open Source Instinct)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iabdulwasey/Nell/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d7c98c9be545a16601a1d9c517c6a195b4f01f77d389030b4c685c871952d29b"
+  },
+  {
+    "name": "Workroom (MLX Computer-Use Agent)",
+    "url": "https://github.com/IAMIbrahimmemon/mlx-llm-workroom",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Workroom is a fully local macOS computer-use agent running an Apple Silicon MLX vision-language model to read screens and execute commands.",
+    "verify_terms": [
+      "Workroom"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/IAMIbrahimmemon/mlx-llm-workroom/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e46d5e80a0dd66bd065a6775f5e9faef1b9deef9436ca5f5606a49aca182dd44"
+  },
+  {
+    "name": "macos-computer-use",
+    "url": "https://github.com/iamme19862002/macos-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "macos-computer-use is a native Swift CLI toolkit providing 68+ commands for macOS window management, UI element localization, OCR, and input.",
+    "verify_terms": [
+      "macos-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iamme19862002/macos-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "eec7a02a457e5a2e6c74ca96159ea4bdfe31ad8e051c26b245b6836157f2ac95"
+  },
+  {
+    "name": "Richmack Browser OS",
+    "url": "https://github.com/iamrichmack111/richmack-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "web-navigation",
+      "ui-design",
+      "automation"
+    ],
+    "summary": "Keyboard-driven Chromium browser environment with modular workspace panels for developer and agent workflows.",
+    "verify_terms": [
+      "Richmack Browser OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/iamrichmack111/richmack-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a86a8c51f02e63ab9feb3d4ce8ab55240df95f861da2ef63b20a3113bc5b1333"
+  },
+  {
+    "name": "MAWR (Machine-Aware Web Runtime)",
+    "url": "https://github.com/IASolutionOrg/MAWR",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "Open-source, Chromium-free lightweight web runtime engineered specifically for machines and AI web agents.",
+    "verify_terms": [
+      "MAWR"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/IASolutionOrg/MAWR/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ee74682b91d2b75337ff7d196e35972675b299e9f09345e20971a15dbacd6121"
   }
 ]

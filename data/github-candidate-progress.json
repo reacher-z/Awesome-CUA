@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "084551583a82d5df8767194a10492611f9c1d221559ba0fa2d94f4f064a5d16d",
-  "observation_snapshot_sha256": "2db10b9fd40ad50b77fc3bc8651938923ece194001c2d6f7e0c8df272535962a",
+  "manifest_sha256": "4b7744911b397a4c667b176450bbb0cb6647b86b3c00b0bb1079b6cea9baf945",
+  "observation_snapshot_sha256": "26445a09d7b61a25072ed877b01b439273492fc149c82596ace0bbe0c3c93a43",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3609,11 +3609,48 @@
           }
         },
         "id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14"
+      },
+      {
+        "active_records": 2621,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8190387,
+            "sha256": "25c776d669792d5c9a96b8aa5d4a1762bdc0f1d6682694cb39899c9333db7eee"
+          },
+          "catalog.jsonl": {
+            "bytes": 7558322,
+            "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "input_id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "kind": "existing",
+        "last_attempt": 823,
+        "next_index": 130,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
         "input_id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
@@ -3621,7 +3658,7 @@
         "last_attempt": 818,
         "next_index": 122,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4",
@@ -79328,6 +79365,116 @@
         "run_id": "run:c77c1a7d872a30df3c2fe961",
         "source_url": "https://api.github.com/repos/aadcha/action-conditioned-gui-agent",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          671189898
+        ],
+        "finished_at": "2026-11-07T03:17:20.688085+00:00",
+        "id": "receipt:744a14578d4aa39b1da90151c16af16550b7a197ba7e3530a13123fa8137fa5e",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 124,
+        "query_id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "17abe0d541dc3852f38900bbd36dd8be21e7841449b664bce4e1fbe1f978114b",
+        "requested_at": "2026-11-07T03:17:20.510504+00:00",
+        "response_bytes": 5462,
+        "response_sha256": "fb8c96ea10f9127e442c390a67fab233c88a29291de0bee4889df33c29a687be",
+        "returned_count": 1,
+        "run_id": "run:d0570178ed3c4bc363193e5a",
+        "source_url": "https://api.github.com/repos/aburns4/textualforesight",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1134220362
+        ],
+        "finished_at": "2026-11-07T03:17:27.202265+00:00",
+        "id": "receipt:8e17790d334126fab1c44cc1a9eb11e868b94ccf470678e81165e1c87caa4b99",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 125,
+        "query_id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "3133ea624b1089b4e69e9e980e368e7c25375d4b0f461e0785db55c026e096a9",
+        "requested_at": "2026-11-07T03:17:27.022613+00:00",
+        "response_bytes": 6299,
+        "response_sha256": "8c2b74385f49d3446f9e0e2b7c1b1e53fca222e9c8aa36a41b89f40ef971e13f",
+        "returned_count": 1,
+        "run_id": "run:d0570178ed3c4bc363193e5a",
+        "source_url": "https://api.github.com/repos/accomplish-ai/coworker",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1323855579
+        ],
+        "finished_at": "2026-11-07T03:17:33.746433+00:00",
+        "id": "receipt:bcc1a6017bcb260354c7e2c9bd5f546645d4e543c814bd04000f8de7d245ad70",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 127,
+        "query_id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "9acfed7c36e472255c6163f76264199db170cb07d55905919142023614a9a9b9",
+        "requested_at": "2026-11-07T03:17:33.533626+00:00",
+        "response_bytes": 6774,
+        "response_sha256": "f504c3dcd453d2858d8eace4546343386ec92447d94fee8200f557cdf12fa36b",
+        "returned_count": 1,
+        "run_id": "run:d0570178ed3c4bc363193e5a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-amap",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1185501661
+        ],
+        "finished_at": "2026-11-07T03:17:40.261277+00:00",
+        "id": "receipt:5cbee61cbb6f5f2aa36347cb47d3db736edd3b8b0fea5106754ee3d510751322",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 128,
+        "query_id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "1679c0f2d0229ed91fda4400faeb22ada55eafd026ce4e3ff56eb9b2eb1e7149",
+        "requested_at": "2026-11-07T03:17:40.044455+00:00",
+        "response_bytes": 6854,
+        "response_sha256": "7fb9f461eec6469a49b9615b354c4220d19ae2da3e242ed37165cbab7ee74fe9",
+        "returned_count": 1,
+        "run_id": "run:d0570178ed3c4bc363193e5a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-amazon",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1331458097
+        ],
+        "finished_at": "2026-11-07T03:17:46.770769+00:00",
+        "id": "receipt:9958c910d5ccb601bfff518dabd5c26b1799833ceb46bc133753eb9809cd7d20",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 129,
+        "query_id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "56b809f6ad4d5cfcdeaefb18bcb6205afb85b6b2a114e9e5d1524e7e2f59ad77",
+        "requested_at": "2026-11-07T03:17:46.555425+00:00",
+        "response_bytes": 6928,
+        "response_sha256": "0f7894d7e47c45d5a49a9ce5c2576d9334b1c7a653981a0a07de0996c0bc372e",
+        "returned_count": 1,
+        "run_id": "run:d0570178ed3c4bc363193e5a",
+        "source_url": "https://api.github.com/repos/acrab-agentic-labs/appsim-bilibili",
+        "status": 200
       }
     ],
     "runs": [
@@ -82324,9 +82471,40 @@
         "strict_replay": true,
         "unknown_requests": 0,
         "wall_seconds_budget": 195.245345978
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10189,
+        "before_unique_repositories": 10184,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T03:17:49.805579+00:00",
+        "id": "run:d0570178ed3c4bc363193e5a",
+        "input_id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "f4cd20304a984d67ad43bdc5da3b3559"
+        },
+        "started_at": "2026-11-07T03:17:11.956077+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 192.73053850399998
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "e4738f5da836f589794db27e5762713de314fe3ec6963ce7851c280cb0abc5cf"
+  "state_sha256": "cd99fed021ec5e47946f13af6e86cc38ff0eb47c5b479ea7626babde5b4eb311"
 }

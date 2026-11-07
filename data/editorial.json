@@ -86010,5 +86010,231 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "gnome-wayland-computer-use",
+    "url": "https://github.com/ryanraposo/gnome-wayland-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Computer-use bridge for driving Linux GNOME Wayland desktop sessions.",
+    "verify_terms": [
+      "gnome-wayland-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ryanraposo/gnome-wayland-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e464d782bb2d06c8e48c6803b0360201df223a03f7ac6c124aa04fb55e6be543"
+  },
+  {
+    "name": "Overlay Companion MCP",
+    "url": "https://github.com/RyansOpenSourceRice/overlay-companion-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "tool-integration",
+      "grounding"
+    ],
+    "summary": "Overlay Companion MCP provides a transparent on-screen visual overlay and MCP server for human-in-the-loop computer-use interaction.",
+    "verify_terms": [
+      "Overlay Companion MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/RyansOpenSourceRice/overlay-companion-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f8b107e852b9e5bc3bfc65d6fb9b4ce0d0bd420db7043441cf1de1913293996b"
+  },
+  {
+    "name": "CamouForge",
+    "url": "https://github.com/Rycen7822/camouforge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "Native Windows GUI manager for configuring and launching isolated Camoufox stealth browser profiles.",
+    "verify_terms": [
+      "CamouForge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Rycen7822/camouforge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92b7afca79e15faef80495d56c412251d958408d77fed26a8f367b247c0e8135"
+  },
+  {
+    "name": "web-agent-eval (REAL Benchmark Runner)",
+    "url": "https://github.com/saarthak-yadav/web-agent-eval",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "Evaluates web agents on 102 replica websites from the REAL benchmark under explicit step, token, and budget constraints.",
+    "verify_terms": [
+      "web-agent-eval"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/saarthak-yadav/web-agent-eval/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "71898649b30cdb23817a348aec099bdd0741454e50f950c4dcfd231f8ca2ff31"
+  },
+  {
+    "name": "Glass Hands",
+    "url": "https://github.com/sachaarbonel/glass-hands",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Glass Hands is a Rust framework that connects OpenAI computer-use models directly to Chromium via the Chrome DevTools Protocol.",
+    "verify_terms": [
+      "Glass Hands"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sachaarbonel/glass-hands/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "26db4a9075043ca087d212d36f8c7025abed17765eac7666f752cbb1a2241540"
+  },
+  {
+    "name": "Playwright Flow Tester MCP",
+    "url": "https://github.com/sadiuysal/playwright-flow-tester",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Parameterized UI/UX flow testing suite with Model Context Protocol integration and structured execution logging over Playwright.",
+    "verify_terms": [
+      "playwright flow tester"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sadiuysal/playwright-flow-tester/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8c3543ffea10f3a8dd89e72ffdee6a765c0f9a694e09236f8b1ff0d262932624"
+  },
+  {
+    "name": "ComputerUse.Best Expert Skills",
+    "url": "https://github.com/sagozen/computeruse-expert-skills",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Open-source collection of computer-use skills, prompt patterns, and professional desktop/web workflows.",
+    "verify_terms": [
+      "computeruse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sagozen/computeruse-expert-skills/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9f5b21c4cc4fad95634a0fd7fccbf0968dd9b64ca4c3b89dee68381f28f4195a"
+  },
+  {
+    "name": "Promptwright",
+    "url": "https://github.com/sahajamit/promptwright",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Promptwright is an AI QA desktop agent that drives browsers from plain English or records user clicks into deterministic Playwright tests.",
+    "verify_terms": [
+      "Promptwright"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sahajamit/promptwright/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e9f0550361aa012e3f1fc258c1167458af87df284a24f5c8ff0773d22547218d"
+  },
+  {
+    "name": "AntiGravity Submit Helper",
+    "url": "https://github.com/sahajasakhunala/AntiGravity-Submit-Helper",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "workflow"
+    ],
+    "summary": "Windows AutoHotkey v2 desktop automation utility that detects and interacts with Antigravity agent prompts.",
+    "verify_terms": [
+      "AntiGravity Submit Helper"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sahajasakhunala/AntiGravity-Submit-Helper/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "053550c830ff52877d3ff4d07cbd133e964594c83f4e53e97136a74176348f7c"
   }
 ]

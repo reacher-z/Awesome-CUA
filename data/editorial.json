@@ -86010,5 +86010,219 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "autocomputer",
+    "url": "https://github.com/yygg693/autocomputer",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Desktop GUI automation platform combining a Rust execution core, Python SDK, MCP server, and HTML5 monitoring dashboard.",
+    "verify_terms": [
+      "autocomputer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yygg693/autocomputer/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4bf5df43a17db8a9077d10dcc18bce21c92c2d7876c853aa8cd2113404dc841e"
+  },
+  {
+    "name": "lean-chronoscope-mcp",
+    "url": "https://github.com/yyhezkel/lean-chronoscope-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability",
+      "efficiency"
+    ],
+    "summary": "Token-efficient headless Chrome MCP server in Docker that records console, network, and DOM timelines for coding agents.",
+    "verify_terms": [
+      "lean-chronoscope-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yyhezkel/lean-chronoscope-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3513b2407e2c4e7d6f69d119490b7cc263a59f3c26b8ece18bfa3e9c07ea8700"
+  },
+  {
+    "name": "dsh-browseruse",
+    "url": "https://github.com/yzd6552-commits/dsh-browseruse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser-Use-style plugin for DeepSeek Harness that drives a dedicated Chrome profile over Playwright and CDP.",
+    "verify_terms": [
+      "dsh-browseruse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/yzd6552-commits/dsh-browseruse/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "28d39ec47bd5c4bb6cdea86f7263fb0091039c966fd004b6171c9f4b83ee5828"
+  },
+  {
+    "name": "Screen Intelligence",
+    "url": "https://github.com/zacfink/screen-intelligence",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Screen Intelligence is a macOS desktop agent that reads screens with multimodal LLMs and drives mouse and keyboard actions.",
+    "verify_terms": [
+      "Screen Intelligence"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zacfink/screen-intelligence/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e4ab9cc7b7627dd3a32eb33feb339cbf126cd571560b1c2287463c0ef1195249"
+  },
+  {
+    "name": "gridhand",
+    "url": "https://github.com/ZachRouan/gridhand",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Zero-dependency Rust CLI for cross-platform GUI automation that overlays labeled coordinate grids onto screenshots for deterministic clicking.",
+    "verify_terms": [
+      "gridhand"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZachRouan/gridhand/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b556b6d226b84a2ea360e78755b950da813d8a729a1eaa07c8b6393193a08e08"
+  },
+  {
+    "name": "Ghost Semantic OS",
+    "url": "https://github.com/zainmfjavaid/ghost-semantic-os",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "sandbox"
+    ],
+    "summary": "Ghost Semantic OS provides a text-only semantic accessibility runtime for operating Linux desktop applications in OSWorld without screenshots.",
+    "verify_terms": [
+      "Ghost Semantic OS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zainmfjavaid/ghost-semantic-os/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "292cc658ea62bce916daa2d1cb4510c6a1107b7e8db1b0c300c18c228bcf809a"
+  },
+  {
+    "name": "Zavora Computer Use MCP",
+    "url": "https://github.com/zavora-ai/computer-use-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Zavora Computer Use MCP is a Rust MCP server and client for discovering desktop applications, inspecting UI controls, and executing actions.",
+    "verify_terms": [
+      "computer use mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zavora-ai/computer-use-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f6b424125fae214f223749ea81b0117d17baecc7b06939ea8daf4c25af277808"
+  },
+  {
+    "name": "mcp-anything",
+    "url": "https://github.com/Zaymadkid/mcp-anything",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Suite of 7 Model Context Protocol servers exposing 228 tools to bridge desktop applications and system services to AI agents.",
+    "verify_terms": [
+      "mcp-anything"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Zaymadkid/mcp-anything/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f75f3a1be1f4bbdb651a070eef8de66888d2c444e7a11729351156bd44f3b0a6"
   }
 ]

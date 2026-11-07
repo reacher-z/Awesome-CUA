@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ClickClickClick",
+    "url": "https://github.com/instavm/clickclickclick",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "android",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "grounding"
+    ],
+    "summary": "ClickClickClick is a framework for autonomous Android and desktop computer use supporting local and cloud vision-language models.",
+    "verify_terms": [
+      "ClickClickClick"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/instavm/clickclickclick/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "497894b16146fcb46160c911b8797e77a173f826544f1ada2639358b376a981b"
+  },
+  {
+    "name": "MindSearch",
+    "url": "https://github.com/InternLM/MindSearch",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "workflow"
+    ],
+    "summary": "MindSearch coordinates a multi-agent WebPlanner and parallel WebSearcher graph to execute multi-step web information seeking.",
+    "verify_terms": [
+      "MindSearch"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/InternLM/MindSearch/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e5fc5a4e441b1e870e3b754d9430aa090395b97417a2e308400705f3c06f05f1",
+    "documented_by": [
+      "2407.20183"
+    ]
+  },
+  {
+    "name": "InTheRainOf Mobile Agent (随身Agent)",
+    "url": "https://github.com/intherainof/mobile-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation"
+    ],
+    "summary": "On-device Android AI agent for automating phone apps and daily mobile tasks.",
+    "verify_terms": [
+      "mobile agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/intherainof/mobile-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "25a2264d85e25f4149819c555dae7c5d5ab528d67057e6aa056c1d85e5af8608"
+  },
+  {
+    "name": "Guibot",
+    "url": "https://github.com/intra2net/guibot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "grounding"
+    ],
+    "summary": "Guibot is a Python GUI automation library unifying template matching, feature detection, cascade classifiers, OCR, and VNC/PyAutoGUI control.",
+    "verify_terms": [
+      "Guibot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/intra2net/guibot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1c1cc6a0dcd0429a3cb799b68122b13ea00e946e2a6ce0443b85e4688626bdd1"
+  },
+  {
+    "name": "Invictum Browser Bridge",
+    "url": "https://github.com/invictumhr/ai-invictum-browser-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Security-first Model Context Protocol bridge allowing AI agents to control an existing browser session under strict guardrails.",
+    "verify_terms": [
+      "Invictum Browser Bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/invictumhr/ai-invictum-browser-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2e833f9b547f9aaffeef3ced448bf515455ded0ae2e31b524b8030b4b48e5373"
   }
 ]

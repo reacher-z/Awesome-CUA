@@ -86010,5 +86010,204 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "zseven-w DSH Computer",
+    "url": "https://github.com/ZSeven-W/dsh-computer",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Background macOS desktop automation plugin for DeepSeek Harness that observes and controls apps without stealing focus.",
+    "verify_terms": [
+      "dsh computer"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZSeven-W/dsh-computer/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "998d229cdb08efa5643d714fe43a49bd7c0f531086c23a1fc470c6580104fa4d"
+  },
+  {
+    "name": "DSH QA",
+    "url": "https://github.com/ZSeven-W/dsh-qa",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "DeepSeek Harness QA plugin where an autonomous browser agent explores live web applications to discover functional and UX bugs.",
+    "verify_terms": [
+      "DSH QA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZSeven-W/dsh-qa/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c4dd7e863d00368944679494308b13a9d1a3b74448db64139e4d7d98e2290c32"
+  },
+  {
+    "name": "computer-use-fallback-mac",
+    "url": "https://github.com/Zss03040464/computer-use-fallback-mac",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Window-scoped macOS Computer Use MCP server providing background window capture and Accessibility control without foreground focus.",
+    "verify_terms": [
+      "computer-use-fallback-mac"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Zss03040464/computer-use-fallback-mac/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5abb4a2317ddfe5855cd0a588309cb176e86caf57383f8c8b6f1e9d2db86c59a"
+  },
+  {
+    "name": "Enterprise Web Workflow Agent",
+    "url": "https://github.com/ZTR321/enterprise-web-workflow-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "safety-security",
+      "human-in-the-loop",
+      "evaluation"
+    ],
+    "summary": "Enterprise web workflow agent framework combining browser-use automation, human-in-the-loop safety gates, trace logging, and evaluation.",
+    "verify_terms": [
+      "agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ZTR321/enterprise-web-workflow-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b4b634d97f94b9a28f43e50e32a2f35e016033f2b21539775ebed65c9c437c40"
+  },
+  {
+    "name": "desktop-hub",
+    "url": "https://github.com/zty552252kevin-code/desktop-hub",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "efficiency",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Compact 10-tool (~2.3k token) facade MCP server for macOS desktop automation.",
+    "verify_terms": [
+      "desktop-hub"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zty552252kevin-code/desktop-hub/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e4de54e51d680de58ca882ac56e6c09ed920e9cec1025ee743e1c51a4c080fd9"
+  },
+  {
+    "name": "zuhair-01 chrome-agent-bridge",
+    "url": "https://github.com/Zuhair-01/chrome-agent-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Universal Chrome control bridge for OpenCode, Codex, and Claude Code coding agents.",
+    "verify_terms": [
+      "chrome-agent-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Zuhair-01/chrome-agent-bridge/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fde99681c4e68a094a23945ef63f504f498d1bdd327899549c0f3660081906a6"
+  },
+  {
+    "name": "Snapsurf",
+    "url": "https://github.com/zumerlab/snapsurf",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "state-tracking",
+      "efficiency"
+    ],
+    "summary": "Web navigation and verification layer for AI agents providing compact semantic page digests and typed post-action DOM diffs.",
+    "verify_terms": [
+      "Snapsurf"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zumerlab/snapsurf/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5752022a49f1bd82d7b9bd77836187dfd32cf696c8b58126d821805bbdb82afa"
+  },
+  {
+    "name": "Domstamp",
+    "url": "https://github.com/zuub-don/domstamp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "state-tracking",
+      "screen-understanding",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "Framework-neutral browser-state snapshotter capturing compact, diffable DOM and accessibility states for AI web agents.",
+    "verify_terms": [
+      "Domstamp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/zuub-don/domstamp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0f50c15e0a5bae07c349ef3216450bc121c6ce4f6595c56ef6a652ad54c2732e"
   }
 ]

@@ -86010,5 +86010,213 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "xa11y",
+    "url": "https://github.com/xa11y/xa11y",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "xa11y is a cross-platform desktop accessibility library in Rust, Python, and Node.js for inspecting and driving native apps on macOS, Windows, and Linux.",
+    "verify_terms": [
+      "xa11y"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xa11y/xa11y/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e3051bb7d7c6f38229578ee62a9a37c8e88f6b6c44a0a350628d89282000230c"
+  },
+  {
+    "name": "MELRA",
+    "url": "https://github.com/XAGI-Lab/melra",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Modular Execution Layer for Reliable Autonomy (MELRA), a local MCP runtime that validates agent tool calls and gates risky actions.",
+    "verify_terms": [
+      "MELRA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/XAGI-Lab/melra/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1fc021de4fdcf874d00f6455abb31fdb8574d8254ac368dc56afdfd0ae207396"
+  },
+  {
+    "name": "Farsyn",
+    "url": "https://github.com/Xala-Technologies/farsyn",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Geographic experience and web-evidence engine that drives real browsers across locales and records verifiable captures.",
+    "verify_terms": [
+      "Farsyn"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Xala-Technologies/farsyn/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "91e5d3b670e2f27f79a6044a2f70044e6090017916a695a0383835089b454755"
+  },
+  {
+    "name": "Charterion",
+    "url": "https://github.com/Xalzeroph/Charterion",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "planning",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Multi-agent engineering control plane orchestrating ChatGPT Web sessions through browser automation.",
+    "verify_terms": [
+      "Charterion"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Xalzeroph/Charterion/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1adffbd0d1d895d68e304f0b9f3431eb2174713fa3ee57f99b9a4264b9a0422a"
+  },
+  {
+    "name": "EnvDistraction",
+    "url": "https://github.com/xbmxb/EnvDistraction",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "robustness",
+      "safety-security",
+      "evaluation"
+    ],
+    "summary": "EnvDistraction provides simulated GUI environments and evaluation scripts for measuring multimodal agent susceptibility to environmental distractions.",
+    "verify_terms": [
+      "EnvDistraction"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xbmxb/EnvDistraction/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fe5af0a4e28c3a635fc1213c8ebd535ade5f9dfba45986d65f16940c28ce36d8",
+    "documented_by": [
+      "2408.02544"
+    ]
+  },
+  {
+    "name": "hermes-hyprland-plugin",
+    "url": "https://github.com/xCaptaiN09/hermes-hyprland-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "C++ Hyprland Wayland compositor plugin and Python D-Bus AT-SPI coordinate-fusion bridge for zero-mouse-stealing Linux GUI agents.",
+    "verify_terms": [
+      "hermes-hyprland-plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xCaptaiN09/hermes-hyprland-plugin/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f9fcc143581be3682bbcc97dc0daf3c125f240916ab0e541f26a3682eaba806"
+  },
+  {
+    "name": "PixelCheck",
+    "url": "https://github.com/xcodethink/pixelcheck",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "tool-integration",
+      "ui-design"
+    ],
+    "summary": "Drop-in MCP server providing five visual browser primitives for frontend coding agents to inspect, screenshot, and verify live web UIs.",
+    "verify_terms": [
+      "PixelCheck"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xcodethink/pixelcheck/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dcb14b06ca298964d849ab1ee91253078d479d724a70e76c59c6a7bc1cf0221c"
+  },
+  {
+    "name": "Agentic Android",
+    "url": "https://github.com/xDope7137/agentic-android",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "self-reflection",
+      "automation",
+      "grounding"
+    ],
+    "summary": "LLM-powered Android agent over ADB that reads the screen, executes tap/swipe/type actions, and verifies outcomes at each step.",
+    "verify_terms": [
+      "Agentic Android"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/xDope7137/agentic-android/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7c0d8f552192b86d4e9bfb10b5e855711283a5fba9d9b90006cff5ab3d906afd"
   }
 ]

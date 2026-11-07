@@ -86010,5 +86010,211 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "maestro-oss",
+    "url": "https://github.com/victorkaor/maestro-oss",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "automation",
+      "ui-design"
+    ],
+    "summary": "Open-source multi-agent spatial orchestration canvas integrating CLI agents, browser automation, and desktop tools.",
+    "verify_terms": [
+      "maestro-oss"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/victorkaor/maestro-oss/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a0342d51af0caaecb43cdd2d97e9ec83e4093be621bc8e5113100d75e81bafaf"
+  },
+  {
+    "name": "viger1 dsh-pilot",
+    "url": "https://github.com/Viger1/dsh-pilot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Permission-governed browser automation plugin for DeepSeek Harness enforced at the CDP boundary.",
+    "verify_terms": [
+      "dsh-pilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Viger1/dsh-pilot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "75c9db760a79aa281ed8430562dccbfc4ab7e270b01b336d1b2795c3da282c96"
+  },
+  {
+    "name": "dsh-preview",
+    "url": "https://github.com/Viger1/dsh-preview",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "self-reflection",
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Self-verification browser preview loop for DeepSeek Harness agents to inspect and validate live frontend changes.",
+    "verify_terms": [
+      "dsh-preview"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Viger1/dsh-preview/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "119effa0f38f6b870c8598436f283acf920ce64d0fde2508b7496961b9c2d39e"
+  },
+  {
+    "name": "AgentSeat",
+    "url": "https://github.com/vimalinx/AgentSeat",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Lightweight Wayland scaffold isolating an AI agent to operate a single GUI application inside its own virtual seat.",
+    "verify_terms": [
+      "AgentSeat"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vimalinx/AgentSeat/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "914e9866007a3461fb289b5eacec71f8c4e93d41a8c25ceb96c56141f41fd9d2"
+  },
+  {
+    "name": "Genie",
+    "url": "https://github.com/vimalmathew26/genie",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration",
+      "self-reflection"
+    ],
+    "summary": "Genie is an autonomous Linux desktop agent with 3-tier UI resolution across AT-SPI accessibility trees, Chrome CDP, and VLM vision.",
+    "verify_terms": [
+      "Genie"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vimalmathew26/genie/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9874324ea7986c97ce192717b7b2693620d2f058ee4a4e36ef8b61a7d2e4ee9d"
+  },
+  {
+    "name": "devloop",
+    "url": "https://github.com/vincentvella/devloop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "evaluation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Model Context Protocol server that correlates headless browser automation actions and dev-server logs on a single unified timeline.",
+    "verify_terms": [
+      "devloop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vincentvella/devloop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "725644e2587e44320b33a797dbe0c0ac916307b152386f0ac9932420b20bef26"
+  },
+  {
+    "name": "NOVA-exe",
+    "url": "https://github.com/vincenzo-afk/NOVA-exe",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Local-first desktop AI agent platform built with TypeScript, Electron, React, and SQLite for permissioned computer control.",
+    "verify_terms": [
+      "nova"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vincenzo-afk/NOVA-exe/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "23a0beb1769a67373a157d5f5fa98c8ad46f50f884977ec58be9c7040982f719"
+  },
+  {
+    "name": "web-pilot",
+    "url": "https://github.com/vinimabreu/web-pilot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "action-prediction"
+    ],
+    "summary": "Browser-use framework where the model proposes a single action from a closed vocabulary and deterministic code validates and executes it.",
+    "verify_terms": [
+      "web-pilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/vinimabreu/web-pilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "02f565df62fd8e20b001fcd98b485eb0e4db690f43659ed945f9968427a11a99"
   }
 ]

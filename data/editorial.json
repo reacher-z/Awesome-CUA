@@ -86010,5 +86010,241 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "FactReach",
+    "url": "https://github.com/simonlin1212/FactReach",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "data-generation",
+      "tool-integration"
+    ],
+    "summary": "Multi-channel web search and browser extraction Agent Skill covering 23 social and knowledge platforms.",
+    "verify_terms": [
+      "FactReach"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/simonlin1212/FactReach/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a59a9e3511f91862e0b4eb1e6e64e1d63f5bbf0035424d8f6b8bfdc34d583bc5"
+  },
+  {
+    "name": "FoxBridge MCP",
+    "url": "https://github.com/sinamohsenifar/foxbridge-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server and Firefox WebExtension allowing AI assistants to read and drive a user's logged-in Firefox browser.",
+    "verify_terms": [
+      "foxbridge-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sinamohsenifar/foxbridge-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "14c07df127139e59f143dd15d39bb26362293189797c33f850cc40cd7c18e6a5"
+  },
+  {
+    "name": "siropkin chrome-bridge",
+    "url": "https://github.com/siropkin/chrome-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser automation bridge allowing AI agents to operate the user's real, logged-in Chrome browser.",
+    "verify_terms": [
+      "chrome bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/siropkin/chrome-bridge/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "959d431624e4d1dd15198496015ca3b0f169d65fc850c2718437765a59a5d310"
+  },
+  {
+    "name": "Siteverb",
+    "url": "https://github.com/siteverb/siteverb",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "evaluation",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "Toolkit for authoring, testing, and shipping verified WebMCP user journeys on web applications.",
+    "verify_terms": [
+      "Siteverb"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/siteverb/siteverb/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f8a2bcfe3ef5c19c9c36b613d56c44eeaf3db9860a8b50d893128d4faa1bc81c"
+  },
+  {
+    "name": "CloakBrowserMCP",
+    "url": "https://github.com/SJF-ECNU/CloakBrowserMCP",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Python Model Context Protocol server for controlling CloakBrowser stealth Chromium in headless and Xvfb virtual-display environments.",
+    "verify_terms": [
+      "CloakBrowserMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SJF-ECNU/CloakBrowserMCP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f666e70df4ff53ffc3b4accc5394aa29f051b64042dba6d2255a31a941f86e65"
+  },
+  {
+    "name": "GUI Agent Framework",
+    "url": "https://github.com/sjkncs/gui-agent-framework",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "grounding",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Modular block-based GUI automation framework combining VLM screen perception, LLM planning, Playwright browser control, and desktop actuation.",
+    "verify_terms": [
+      "GUI Agent Framework"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sjkncs/gui-agent-framework/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92de9a20b25d487caebc13d6d2f919c4aff14b783a77085ef695241e1471e3dd"
+  },
+  {
+    "name": "pixel-forge",
+    "url": "https://github.com/sjxbbdb/pixel-forge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Desktop automation toolkit providing screenshot capture, OCR, pixel-diff change detection, and mouse/keyboard actions for AI agents.",
+    "verify_terms": [
+      "pixel-forge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sjxbbdb/pixel-forge/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "70fbd0fdb841aa252e3a399c8354b4fc637eb1c86229b757943525aed7ca6020"
+  },
+  {
+    "name": "GUI-AIMA",
+    "url": "https://github.com/sjz5202/GUI-AIMA",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "android"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "GUI-AIMA aligns intrinsic multimodal attention heads with context anchors for data-efficient visual GUI element grounding.",
+    "verify_terms": [
+      "GUI-AIMA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sjz5202/GUI-AIMA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "46a4cb589fb2fdccae60ae3078e4a1d19f9804238b0e3884bc7f056b6ab88b34",
+    "documented_by": [
+      "2511.00810"
+    ]
+  },
+  {
+    "name": "CGL (Continual GUI Learning)",
+    "url": "https://github.com/skounputer/CGL",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "grounding",
+      "robustness"
+    ],
+    "summary": "CGL advances continual GUI agent learning across evolving domains via reinforcement fine-tuning without catastrophic forgetting.",
+    "verify_terms": [
+      "CGL"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/skounputer/CGL/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ae336a6b00bc0045113fc3c98faa8021d3e2605c0639be076a9cd4aab182750d",
+    "documented_by": [
+      "2603.10002"
+    ]
   }
 ]

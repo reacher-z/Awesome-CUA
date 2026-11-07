@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "clef-use",
+    "url": "https://github.com/kotori0919/clef-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "tool-integration",
+      "efficiency"
+    ],
+    "summary": "clef-use is a local computer-use runtime combining structured accessibility, SigLIP2 visual tile grounding, OmniParser, and MCP tools.",
+    "verify_terms": [
+      "clef-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kotori0919/clef-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "15bb6a153e66783e85e48f421232f6f76dc1c88532c5b156189ad3112e406f1a"
+  },
+  {
+    "name": "CloakGPT",
+    "url": "https://github.com/KoukeNeko/CloakGPT",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local CLI that drives an authenticated ChatGPT web session through the anti-detect CloakBrowser.",
+    "verify_terms": [
+      "CloakGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KoukeNeko/CloakGPT/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0d5dc4f0dd7aaa36488fdde7596ab7d5a928a0c23acd494a257adeec9eeeb972"
+  },
+  {
+    "name": "caravela",
+    "url": "https://github.com/kov/caravela",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Programmatic browser-use CLI and library driving Chromium over CDP inside an optional managed Weston Wayland compositor.",
+    "verify_terms": [
+      "caravela"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kov/caravela/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e11e45b62e7ee165577405b3bec0a6ebb4abd3fb78a68256af2360dfe6117a22"
+  },
+  {
+    "name": "Appwalk",
+    "url": "https://github.com/kubstack/appwalk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "evaluation",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "AI-powered CLI that explores a web application in a browser and compiles the run into verified Playwright test suites.",
+    "verify_terms": [
+      "Appwalk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kubstack/appwalk/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a250c3750f53bd4ab924bb5c7a9e731d0d03b6bd7e8283c8e7594987e8ed7dd0"
+  },
+  {
+    "name": "AgentCursor",
+    "url": "https://github.com/kumard3/agentcursor",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Reads macOS application windows as compact text affordances (~9 tokens per click) and drives a human-like virtual cursor over MCP.",
+    "verify_terms": [
+      "AgentCursor"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kumard3/agentcursor/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "85bd5f040444028049c515530a15dc30815a79c84f76438d95be48a4dc2401e5"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "1a583a74582fbdebab967789b47cc82133b515303f5a52dc56e352d24ddc8084",
-  "observation_snapshot_sha256": "64bff53063649efadb9c70d355916f8d190fcc9391c29854e59ba3cd8611d4e1",
+  "manifest_sha256": "084551583a82d5df8767194a10492611f9c1d221559ba0fa2d94f4f064a5d16d",
+  "observation_snapshot_sha256": "2db10b9fd40ad50b77fc3bc8651938923ece194001c2d6f7e0c8df272535962a",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3581,11 +3581,48 @@
           }
         },
         "id": "fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4"
+      },
+      {
+        "active_records": 2621,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8192125,
+            "sha256": "bbd15b1eb8ea2b5dd6430643c0307c48f9d74fc5b4a1439f1ae65827766169ff"
+          },
+          "catalog.jsonl": {
+            "bytes": 7558322,
+            "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "input_id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "kind": "existing",
+        "last_attempt": 818,
+        "next_index": 122,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4",
         "input_id": "fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4",
@@ -3593,7 +3630,7 @@
         "last_attempt": 813,
         "next_index": 118,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:869aeef7f228c77b0af005f3ba870cb7794768bd299f1022065711c71f5c8eac",
@@ -79181,6 +79218,116 @@
         "run_id": "run:4a9d407eecb59b672194b774",
         "source_url": null,
         "status": 504
+      },
+      {
+        "accepted_repository_ids": [
+          985684911
+        ],
+        "finished_at": "2026-11-07T02:38:07.365203+00:00",
+        "id": "receipt:9e60a6994733c9d629f390d16275c5d690a874d1431cbe935f534c3cd000a133",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 117,
+        "query_id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "38ad5cc3a0bc439398244da582c125ba20a8c7bd847ce1cb830553210bb81e9a",
+        "requested_at": "2026-11-07T02:38:07.159162+00:00",
+        "response_bytes": 4967,
+        "response_sha256": "2489f6f87bbd33ad5197a7b0bf2fc664577b76ec39207e7418c6538899d9fc95",
+        "returned_count": 1,
+        "run_id": "run:c77c1a7d872a30df3c2fe961",
+        "source_url": "https://api.github.com/repos/yxb-nku/se-gui",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1228512152
+        ],
+        "finished_at": "2026-11-07T02:38:13.889196+00:00",
+        "id": "receipt:35f22018641dcc7fd7821eef9ad3323b5b2f98e21b2dc97a5a3f64d3868f1dc6",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 118,
+        "query_id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "59d7e6c33c2e28f14f062bf04b0d53abf4d5c067a54476d54c2666a3e565d3fc",
+        "requested_at": "2026-11-07T02:38:13.668079+00:00",
+        "response_bytes": 5525,
+        "response_sha256": "5548bfc3976bb89e7fc98d391638fa3efda8f4dcd429057f7532b4858cee51fb",
+        "returned_count": 1,
+        "run_id": "run:c77c1a7d872a30df3c2fe961",
+        "source_url": "https://api.github.com/repos/zhangyan-ucas/gui-sd-code",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1099702084
+        ],
+        "finished_at": "2026-11-07T02:38:20.380194+00:00",
+        "id": "receipt:426b96912573b1d02cfa720a0e22d96b723b1ed9bd501e635ce9cf7415131427",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 119,
+        "query_id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "337b59b067052e3f2d67be5ddab9b712001f56c0decf8492121731be89729aff",
+        "requested_at": "2026-11-07T02:38:20.177006+00:00",
+        "response_bytes": 5643,
+        "response_sha256": "a2031782379ea7515946aeea4cea655790c4b3a5b6fb0022c7b42a04b1441393",
+        "returned_count": 1,
+        "run_id": "run:c77c1a7d872a30df3c2fe961",
+        "source_url": "https://api.github.com/repos/zjuscl/mvp",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          952286730
+        ],
+        "finished_at": "2026-11-07T02:38:26.886474+00:00",
+        "id": "receipt:1d5b9ed5b754c2f4f1596bad256855e6bbb33c32e41636ef40367d8404b819c5",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 120,
+        "query_id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "9c356d67a5979b96a7f87199ef080f83b88d949c939d9c98d66cf8d64a7f6c30",
+        "requested_at": "2026-11-07T02:38:26.686445+00:00",
+        "response_bytes": 5189,
+        "response_sha256": "578a7992929af171c93c45601a209893584a1067c48fb545230123d5eebd0dcb",
+        "returned_count": 1,
+        "run_id": "run:c77c1a7d872a30df3c2fe961",
+        "source_url": "https://api.github.com/repos/921112343/gui-xplore",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1251921409
+        ],
+        "finished_at": "2026-11-07T02:38:33.422610+00:00",
+        "id": "receipt:c15b9c14178f1181ae975479ed9ca4db4011ef95080c34845805d7b24368c31e",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 121,
+        "query_id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "0b8bf48cae0924ded96aaaed06a32d297c1fdd45cc21b5974d9a85d32deace7b",
+        "requested_at": "2026-11-07T02:38:33.195728+00:00",
+        "response_bytes": 5788,
+        "response_sha256": "512fc83af911002e26fc0cc75fc668b922b154210c2672158e0f2cefc7eeedaa",
+        "returned_count": 1,
+        "run_id": "run:c77c1a7d872a30df3c2fe961",
+        "source_url": "https://api.github.com/repos/aadcha/action-conditioned-gui-agent",
+        "status": 200
       }
     ],
     "runs": [
@@ -82146,9 +82293,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 189.974099522
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10184,
+        "before_unique_repositories": 10179,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T02:38:36.313925+00:00",
+        "id": "run:c77c1a7d872a30df3c2fe961",
+        "input_id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "1d798e77fc4043d39dd82902e01061eb"
+        },
+        "started_at": "2026-11-07T02:37:58.944868+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 195.245345978
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "426ff693deee01eb9e72a9de21fc9dcb8bf3238886265e9bc16c08d79d30a32c"
+  "state_sha256": "e4738f5da836f589794db27e5762713de314fe3ec6963ce7851c280cb0abc5cf"
 }

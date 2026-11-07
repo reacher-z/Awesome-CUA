@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Airi-PC Computer Mode Runtime",
+    "url": "https://github.com/arancione3000/airi-pc-bootstrap",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Local Computer Mode runtime and reproducible bootstrap for the Airi-PC desktop agent.",
+    "verify_terms": [
+      "airi-pc-bootstrap"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/arancione3000/airi-pc-bootstrap/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "78d044c00944def923afd4e0ace702e48e7fd709f986794995067a08d690d071"
+  },
+  {
+    "name": "Claude KVM",
+    "url": "https://github.com/ARAS-Workspace/claude-kvm",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "automation"
+    ],
+    "summary": "Claude KVM is a macOS MCP server and VNC client that enables AI agents to observe and control remote desktop environments over VNC.",
+    "verify_terms": [
+      "Claude KVM"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ARAS-Workspace/claude-kvm/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "179162d86bc3f03864ac6e18e484770a0ecf8580b17814735876614cf0f928b0"
+  },
+  {
+    "name": "kev-browser-use",
+    "url": "https://github.com/arbazsiddiqui/kev-browser-use",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "kev-browser-use is a compact 0.6B System-One action model fine-tuned on Mind2Web for low-latency browser element selection.",
+    "verify_terms": [
+      "kev-browser-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/arbazsiddiqui/kev-browser-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "daab246d4be8471a7603c12d52d19b4a1c1ddb27870d657efa1facc50d88c92d"
+  },
+  {
+    "name": "Local Grounding MCP",
+    "url": "https://github.com/archie-ib-dev/local-grounding-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Local Grounding MCP provides privacy-first local visual grounding fallback and DOM-visual hybrid routing for MCP browser agents on Apple Silicon.",
+    "verify_terms": [
+      "Local Grounding MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/archie-ib-dev/local-grounding-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "27b40e95b874888cd1ec484c29c95f62a3070f695b0e40490efd3389d58b16ed"
+  },
+  {
+    "name": "Awesome GPT-6 Astra",
+    "url": "https://github.com/archorfight/awesome-gpt-6-astra",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Evidence-linked catalog of computer-use demos, evaluations, and agent workflows with primary source receipts.",
+    "verify_terms": [
+      "Awesome GPT-6 Astra"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/archorfight/awesome-gpt-6-astra/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9d76a305e20f136ea2013f63555a1a2d1730c1bc284e082af7f9dc0b8c254e54"
   }
 ]

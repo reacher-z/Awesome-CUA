@@ -86010,5 +86010,214 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "WebMall",
+    "url": "https://github.com/wbsg-uni-mannheim/WebMall",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "cross-app"
+    ],
+    "summary": "WebMall is a multi-shop e-commerce web agent benchmark evaluating cross-site price comparison, product search, and cart checkout.",
+    "verify_terms": [
+      "WebMall"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wbsg-uni-mannheim/WebMall/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b6ac178382068948a9ecbeaf9861f3a67adb4c6dbecae471f845b5c35981d130",
+    "documented_by": [
+      "2508.13024"
+    ]
+  },
+  {
+    "name": "Sentinel Browser QA Harness",
+    "url": "https://github.com/we-building-autonomously/sentinel",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Sentinel is a browser-native QA harness where an AI agent drives a real browser like an end user and returns structured test verdicts.",
+    "verify_terms": [
+      "sentinel"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/we-building-autonomously/sentinel/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7894934771518f73fe3c7813df6370ed28e38127edd757b4073ce56fe887c815"
+  },
+  {
+    "name": "WeaveBench",
+    "url": "https://github.com/weavebench/WeaveBench",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "WeaveBench evaluates computer-use agents on long-horizon real-world workflows across hybrid GUI, web, and programmatic tool interfaces.",
+    "verify_terms": [
+      "WeaveBench"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/weavebench/WeaveBench/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7e39c52cf5ec07d4499d2d55dbcf18989e13a2adbee36149cde6e3a95a964de1",
+    "documented_by": [
+      "2606.09426"
+    ]
+  },
+  {
+    "name": "Weavetab MCP",
+    "url": "https://github.com/Weavetab/mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "tool-integration",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Open automation engine and MCP server for controlling live web browsers and desktop applications locally.",
+    "verify_terms": [
+      "Weavetab MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Weavetab/mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "23198e050ae7eb279253f500ba8b58e2326c36296b67be826cedf01f97520b70"
+  },
+  {
+    "name": "WebBrain",
+    "url": "https://github.com/webbrain-one/webbrain",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "WebBrain is an open-source AI browser agent extension for Chrome and Firefox that automates multi-step web workflows.",
+    "verify_terms": [
+      "WebBrain"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/webbrain-one/webbrain/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6b5854c2eac455f5e4d56ca9ac1148b298caddbad5b389cd8a1f0db6c766eb23"
+  },
+  {
+    "name": "Windows Local Action Recorder",
+    "url": "https://github.com/week833/windows-local-action-recorder",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "automation"
+    ],
+    "summary": "Windows desktop action recorder and controlled replay tool that packages human UI demonstrations for Codex agents.",
+    "verify_terms": [
+      "Windows Local Action Recorder"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/week833/windows-local-action-recorder/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "44e43b9a5a18f56ff2a6ec56ab535804c28e98222b2b9986172cc6617db1a654"
+  },
+  {
+    "name": "Codex for WeChat",
+    "url": "https://github.com/WeihaoYYY/Codex-for-WeChat",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Remote bridge allowing users to dispatch tasks to and review outputs from a local OpenAI Codex agent via WeChat.",
+    "verify_terms": [
+      "Codex for WeChat"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WeihaoYYY/Codex-for-WeChat/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e0a7165f2d09b4528b7db5671e0023c66db5ec8f6bf448ffb2ebffe6f85c5ab9"
+  },
+  {
+    "name": "MPO (Meta Plan Optimization)",
+    "url": "https://github.com/WeiminXiong/MPO",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "reinforcement-learning"
+    ],
+    "summary": "MPO optimizes reusable high-level meta-plans via preference learning to guide LLM agents on interactive web and decision-making tasks.",
+    "verify_terms": [
+      "MPO"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WeiminXiong/MPO/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "409aea1c1c7d428fd75cecab42a36f07538b6af9f7a541a9f2c2bfb0ca490abb",
+    "documented_by": [
+      "2503.02682"
+    ]
   }
 ]

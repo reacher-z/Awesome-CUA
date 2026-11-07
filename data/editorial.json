@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "slidevim",
+    "url": "https://github.com/jaisharmz/slidevim",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "efficiency",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Vim-grammar command language and text protocol for driving Google Slides in the browser.",
+    "verify_terms": [
+      "slidevim"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/jaisharmz/slidevim/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5ecb3621d790fca161e85098c0b7df21cccd1a0e04d615985d154194ab73d00a"
+  },
+  {
+    "name": "Threadline WebMCP",
+    "url": "https://github.com/JamesWirths/threadline",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "observability",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP argument debugger and research workspace with human-gated provenance tracking for browser agents.",
+    "verify_terms": [
+      "threadline"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JamesWirths/threadline/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f8ccac0f8eeb319f62ce85ced96c535b54dd5d03c348ca022e5913ec052b9e52"
+  },
+  {
+    "name": "Grasp MCP",
+    "url": "https://github.com/Jamshed7470/grasp-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation",
+      "grounding"
+    ],
+    "summary": "Model Context Protocol server giving Claude and MCP clients full desktop screen vision and mouse/keyboard control.",
+    "verify_terms": [
+      "grasp-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jamshed7470/grasp-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7af4fd3224d6504488b4092cc0fb4b780016acfcb6ba68f6508abf49d051c4ea"
+  },
+  {
+    "name": "omni-computer-use",
+    "url": "https://github.com/Jason26214/omni-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Windows computer-use Model Context Protocol server replicating Claude Desktop's computer-use tool surface.",
+    "verify_terms": [
+      "omni-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Jason26214/omni-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c2262594cbaa6438fb21b38786d294ea24b8053fd8885e31943d36eabb5d5981"
+  },
+  {
+    "name": "JasonWei04 dsh-computer-use",
+    "url": "https://github.com/JasonWei04/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Equips text-only LLMs in DeepSeek Harness with desktop screen perception and mouse/keyboard control.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/JasonWei04/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "62779d7f195e10eb873ea4ee5dff050d641cde083226c4451f50efb1c8c93102"
   }
 ]

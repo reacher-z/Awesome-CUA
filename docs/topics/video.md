@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-48 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
+63 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Papers (39)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (7)](#datasets) · [Models (4)](#models) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Papers (39)](#papers)
 
 ## Benchmarks
 
@@ -24,6 +24,36 @@
 | [MONDAY annotations](https://huggingface.co/datasets/runamu/MONDAY) | android, ios | [2505.12632](https://arxiv.org/abs/2505.12632) (2025) | [19,725 video annotation records](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 333,000 detected scenes](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) · [≈ 313,000 identified actions](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) | — | Video-derived mobile navigation annotations that pair scene boundaries and screen or element boxes with action labels for training and evaluating GUI agents. | [✓ 2026‑10‑17](https://huggingface.co/datasets/runamu/MONDAY/raw/main/README.md) |
 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK) | web | [2505.24838](https://arxiv.org/abs/2505.24838) (2025) | [> 41,000 video recordings](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) | data CC0 1.0 | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation. | [✓ 2026‑10‑17](https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/WX8PCK) |
 | [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | desktop | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
+
+## Models
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [CogVLM2](https://github.com/THUDM/CogVLM2) | cross-platform, web, desktop | — | code Apache-2.0 | CogVLM2 releases high-resolution image and video vision-language models supporting visual grounding, document reading, and GUI understanding. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/THUDM/CogVLM2/HEAD/README.md) |
+| [CombatVLA](https://github.com/ChenVoid/CombatVLA) | desktop, windows | — | — | CombatVLA is a vision-language-action model and action tracker for real-time combat control in 3D action role-playing PC games. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ChenVoid/CombatVLA/HEAD/README.md) |
+| [InternVL](https://github.com/OpenGVLab/InternVL) | cross-platform, web, desktop, android | — | code MIT | Official repository for the InternVL open-source multimodal foundation model family supporting high-resolution GUI grounding and visual reasoning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenGVLab/InternVL/HEAD/README.md) |
+| [Qwen3-VL / Qwen2.5-VL](https://github.com/QwenLM/Qwen3-VL) | cross-platform, web, desktop, android | [2502.13923](https://arxiv.org/abs/2502.13923) (2025) | code Apache-2.0 | Official repository for the Qwen-VL vision-language model series supporting native visual GUI grounding, computer use, and mobile navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md) |
+
+## Frameworks
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AOI (Agent-Computer Observation Interface) & DynaCU-Bench](https://github.com/19PINE-AI/aoi) | desktop, web | [2606.29472](https://arxiv.org/abs/2606.29472) (2026) | code MIT | AOI provides an adaptive video and audio perception layer for computer-use agents alongside the DynaCU-Bench dynamic GUI benchmark. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/19PINE-AI/aoi/HEAD/README.md) |
+| [VG-GUI-TASKER](https://github.com/VG-GUI-TASKER/VG-GUI-TASKER) | android, desktop | [2606.29445](https://arxiv.org/abs/2606.29445) (2026) | — | VG-GUI-TASKER extracts informative keyframes from instructional demonstration videos to guide multimodal GUI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/VG-GUI-TASKER/VG-GUI-TASKER/HEAD/README.md) |
+| [Video2GUI](https://github.com/WeiminXiong/Video2GUI) | cross-platform, desktop, web, android | [2605.14747](https://arxiv.org/abs/2605.14747) (2026) | code Apache-2.0 | Video2GUI synthesizes large-scale GUI interaction trajectories from unlabeled screen-recording videos via inverse dynamics and VLM annotation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/WeiminXiong/Video2GUI/HEAD/README.md) |
+
+## Tools
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AnimaWatch](https://github.com/rishitank/animawatch) | web | — | code MIT | FastMCP server that records webpage animations and uses vision models to detect frame drops, jank, and visual layout artifacts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rishitank/animawatch/HEAD/README.md) |
+| [clickcast](https://github.com/AlexKay28/clickcast) | web | — | code MIT | Playwright browser automation, screenshot, and GIF/MP4/WebP session-recording toolkit and MCP server for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlexKay28/clickcast/HEAD/README.md) |
+| [DJCLIPZ Agent Controller](https://github.com/form-u-la/djclipz-agent-controller) | web | — | code MIT | Starter kit and controller for driving the DJCLIPZ browser media application programmatically from AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/form-u-la/djclipz-agent-controller/main/README.md) |
+| [MergeProof](https://github.com/bukacdan/MergeProof) | web | — | code MIT | Installable Agent Skill that records live browser verification demos and attaches them to pull requests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bukacdan/MergeProof/main/README.md) |
+| [Pagecast MCP](https://github.com/mcpware/pagecast) | web | — | code MIT | Playwright and FFmpeg Model Context Protocol server that records browser agent interactions as GIFs or MP4 videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mcpware/pagecast/HEAD/README.md) |
+| [Product Demo Video Skill](https://github.com/Afnanksalal/product-demo-video-skill) | web, desktop | — | code MIT | Codex and Claude Agent Skill that drives live web products in a browser to record truth-linked walkthrough demo videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Afnanksalal/product-demo-video-skill/main/README.md) |
+| [screencast-desktop](https://github.com/JHamidun/screencast-desktop) | desktop, windows | — | code MIT | Claude Code plugin where an agent drives a Windows desktop application and records the session as a narrated screencast. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JHamidun/screencast-desktop/main/README.md) |
+| [Sensory-Grounding MCP](https://github.com/luclinocruz/lucross-sensory-grounding-mcp) | cross-platform, desktop, web | — | code Apache-2.0 | Closed-loop visual, audio, and video sensory grounding MCP server for verifying UI state in coding and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/luclinocruz/lucross-sensory-grounding-mcp/HEAD/README.md) |
 
 ## Papers
 

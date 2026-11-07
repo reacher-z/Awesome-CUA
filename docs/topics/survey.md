@@ -2,9 +2,26 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-29 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+34 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Surveys (28)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (4)](#learning-resources) · [Surveys (28)](#surveys) · [Papers (1)](#papers)
+
+## Benchmarks
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Voice & Computer-Use Benchmark Landscape](https://github.com/Sophon-LLC/voice-agent-benchmark-landscape) | — | — | code MIT | Structured taxonomy and comparative map of public voice-agent, multimodal, and computer-use evaluation benchmarks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Sophon-LLC/voice-agent-benchmark-landscape/main/README.md) |
+
+## Learning resources
+
+| Resource | Environments | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Awesome AI Agent Platforms](https://github.com/Agenta-AI/awesome-ai-agent-platforms) | cross-platform, desktop, web | — | Curated directory of open-source AI agent platforms, digital coworkers, and browser/desktop execution harnesses. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Agenta-AI/awesome-ai-agent-platforms/main/README.md) |
+| [Awesome GPT-6 Astra](https://github.com/archorfight/awesome-gpt-6-astra) | cross-platform, desktop, web | — | Evidence-linked catalog of computer-use demos, evaluations, and agent workflows with primary source receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/archorfight/awesome-gpt-6-astra/main/README.md) |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | cross-platform, desktop, web, android | code MIT | Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md) |
+| [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | cross-platform, desktop, web | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
 
 ## Surveys
 

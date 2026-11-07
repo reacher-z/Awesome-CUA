@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-11-07T05:19:53Z",
-  "total_records": 2623,
-  "curated_records": 2170,
+  "total_records": 4372,
+  "curated_records": 3919,
   "bibliographic_records": 2126,
   "arxiv_active_records": 2112,
   "non_arxiv_bibliographic_records": 14,
@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 453,
   "discovery_identifiers": 6084,
-  "unindexed_candidates": 2063,
-  "non_resource_candidates": 130,
-  "alias_candidates": 36,
+  "unindexed_candidates": 1448,
+  "non_resource_candidates": 164,
+  "alias_candidates": 372,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -2643,102 +2643,106 @@
   ],
   "uncurated_linked_papers": [],
   "by_kind": {
-    "agent": 49,
-    "benchmark": 91,
+    "agent": 316,
+    "benchmark": 217,
     "company": 16,
-    "dataset": 86,
-    "framework": 87,
-    "infrastructure": 16,
-    "learning": 2,
-    "model": 98,
+    "dataset": 99,
+    "framework": 580,
+    "infrastructure": 55,
+    "learning": 10,
+    "model": 124,
     "paper": 2098,
     "product": 20,
     "survey": 28,
-    "tool": 32
+    "tool": 809
   },
   "curated_by_environment": {
-    "android": 350,
-    "cross-platform": 206,
-    "desktop": 364,
+    "android": 504,
+    "cross-platform": 545,
+    "desktop": 1312,
     "harmonyos": 4,
-    "ios": 26,
-    "linux": 57,
-    "macos": 36,
-    "unspecified": 630,
-    "web": 858,
-    "windows": 68
+    "ios": 58,
+    "linux": 378,
+    "macos": 412,
+    "unspecified": 651,
+    "web": 1989,
+    "windows": 430
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 17,
-      "cross-platform": 1,
-      "desktop": 18,
-      "ios": 2,
-      "linux": 2,
-      "macos": 2,
+      "android": 45,
+      "cross-platform": 37,
+      "desktop": 172,
+      "ios": 9,
+      "linux": 53,
+      "macos": 81,
       "unspecified": 1,
-      "web": 14,
-      "windows": 5
+      "web": 148,
+      "windows": 80
     },
     "benchmark": {
-      "android": 19,
-      "cross-platform": 14,
-      "desktop": 20,
+      "android": 27,
+      "cross-platform": 22,
+      "desktop": 72,
       "ios": 1,
-      "linux": 5,
-      "macos": 3,
-      "unspecified": 3,
-      "web": 45,
-      "windows": 5
+      "linux": 14,
+      "macos": 6,
+      "unspecified": 5,
+      "web": 156,
+      "windows": 10
     },
     "company": {
       "unspecified": 16
     },
     "dataset": {
-      "android": 35,
-      "cross-platform": 15,
-      "desktop": 18,
+      "android": 41,
+      "cross-platform": 20,
+      "desktop": 25,
       "ios": 2,
-      "linux": 7,
-      "macos": 2,
+      "linux": 8,
+      "macos": 3,
       "unspecified": 7,
-      "web": 25,
-      "windows": 4
+      "web": 34,
+      "windows": 5
     },
     "framework": {
-      "android": 23,
-      "cross-platform": 7,
-      "desktop": 24,
+      "android": 84,
+      "cross-platform": 137,
+      "desktop": 278,
       "harmonyos": 1,
-      "ios": 1,
-      "linux": 6,
-      "macos": 1,
-      "unspecified": 2,
-      "web": 47,
-      "windows": 2
+      "ios": 14,
+      "linux": 98,
+      "macos": 73,
+      "unspecified": 20,
+      "web": 406,
+      "windows": 88
     },
     "infrastructure": {
-      "android": 3,
-      "desktop": 10,
+      "android": 4,
+      "cross-platform": 3,
+      "desktop": 47,
       "ios": 1,
-      "linux": 4,
-      "macos": 2,
-      "web": 6,
-      "windows": 1
+      "linux": 34,
+      "macos": 14,
+      "web": 27,
+      "windows": 8
     },
     "learning": {
-      "web": 2
+      "android": 1,
+      "cross-platform": 7,
+      "desktop": 7,
+      "web": 10
     },
     "model": {
-      "android": 24,
-      "cross-platform": 47,
-      "desktop": 24,
+      "android": 42,
+      "cross-platform": 59,
+      "desktop": 39,
       "ios": 4,
       "linux": 6,
-      "macos": 4,
-      "unspecified": 2,
-      "web": 28,
-      "windows": 5
+      "macos": 5,
+      "unspecified": 3,
+      "web": 46,
+      "windows": 6
     },
     "paper": {
       "android": 222,
@@ -2766,21 +2770,21 @@
       "windows": 1
     },
     "tool": {
-      "android": 5,
-      "cross-platform": 1,
-      "desktop": 6,
-      "ios": 2,
-      "linux": 3,
-      "macos": 4,
+      "android": 36,
+      "cross-platform": 139,
+      "desktop": 428,
+      "ios": 14,
+      "linux": 141,
+      "macos": 212,
       "unspecified": 3,
-      "web": 19,
-      "windows": 5
+      "web": 490,
+      "windows": 192
     }
   },
   "license_declarations_by_scope": {
-    "code": 204,
-    "data": 61,
-    "weights": 56,
+    "code": 1607,
+    "data": 64,
+    "weights": 57,
     "document": 8
   },
   "sources": [
@@ -2806,13 +2810,13 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 219,
-      "indexed_resources": 218,
+      "indexed": 230,
+      "indexed_resources": 229,
       "resolved_aliases": 6,
-      "curated": 217,
+      "curated": 228,
       "excluded": 7,
-      "set_aside": 29,
-      "unindexed": 83
+      "set_aside": 86,
+      "unindexed": 15
     },
     {
       "id": "zju-gui",
@@ -2836,13 +2840,13 @@
         "state": "success"
       },
       "discovered": 220,
-      "indexed": 169,
-      "indexed_resources": 168,
+      "indexed": 174,
+      "indexed_resources": 173,
       "resolved_aliases": 2,
-      "curated": 168,
+      "curated": 173,
       "excluded": 0,
-      "set_aside": 14,
-      "unindexed": 37
+      "set_aside": 40,
+      "unindexed": 6
     },
     {
       "id": "os-agent-survey",
@@ -2871,8 +2875,8 @@
       "resolved_aliases": 0,
       "curated": 184,
       "excluded": 9,
-      "set_aside": 6,
-      "unindexed": 20
+      "set_aside": 12,
+      "unindexed": 14
     },
     {
       "id": "wjhou-cua",
@@ -2896,13 +2900,13 @@
         "state": "success"
       },
       "discovered": 132,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 96,
+      "indexed_resources": 96,
       "resolved_aliases": 1,
-      "curated": 90,
+      "curated": 94,
       "excluded": 4,
-      "set_aside": 6,
-      "unindexed": 30
+      "set_aside": 15,
+      "unindexed": 17
     },
     {
       "id": "steel-web",
@@ -2926,13 +2930,13 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 25,
-      "indexed_resources": 25,
+      "indexed": 42,
+      "indexed_resources": 42,
       "resolved_aliases": 2,
-      "curated": 25,
+      "curated": 42,
       "excluded": 0,
-      "set_aside": 7,
-      "unindexed": 81
+      "set_aside": 30,
+      "unindexed": 41
     },
     {
       "id": "steel-web-archive",
@@ -2961,8 +2965,8 @@
       "resolved_aliases": 0,
       "curated": 1,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 6
+      "set_aside": 2,
+      "unindexed": 4
     },
     {
       "id": "gui-datasets",
@@ -2986,13 +2990,13 @@
         "state": "success"
       },
       "discovered": 170,
-      "indexed": 115,
-      "indexed_resources": 114,
+      "indexed": 119,
+      "indexed_resources": 118,
       "resolved_aliases": 3,
-      "curated": 114,
+      "curated": 118,
       "excluded": 2,
-      "set_aside": 9,
-      "unindexed": 44
+      "set_aside": 22,
+      "unindexed": 27
     },
     {
       "id": "delunn-multimodal",
@@ -3011,13 +3015,13 @@
         "provider_host": "raw.githubusercontent.com"
       },
       "discovered": 588,
-      "indexed": 502,
-      "indexed_resources": 502,
+      "indexed": 522,
+      "indexed_resources": 522,
       "resolved_aliases": 5,
-      "curated": 495,
+      "curated": 515,
       "excluded": 2,
-      "set_aside": 9,
-      "unindexed": 75
+      "set_aside": 53,
+      "unindexed": 11
     },
     {
       "id": "tianyuan-cua",
@@ -3041,13 +3045,13 @@
         "state": "success"
       },
       "discovered": 94,
-      "indexed": 68,
-      "indexed_resources": 68,
+      "indexed": 72,
+      "indexed_resources": 72,
       "resolved_aliases": 0,
-      "curated": 68,
+      "curated": 72,
       "excluded": 1,
-      "set_aside": 2,
-      "unindexed": 23
+      "set_aside": 8,
+      "unindexed": 13
     },
     {
       "id": "cdxeve-cua",
@@ -3071,13 +3075,13 @@
         "state": "success"
       },
       "discovered": 78,
-      "indexed": 39,
-      "indexed_resources": 39,
+      "indexed": 49,
+      "indexed_resources": 49,
       "resolved_aliases": 0,
-      "curated": 38,
+      "curated": 48,
       "excluded": 10,
-      "set_aside": 3,
-      "unindexed": 26
+      "set_aside": 11,
+      "unindexed": 8
     },
     {
       "id": "supernal-gui",
@@ -3101,13 +3105,13 @@
         "state": "success"
       },
       "discovered": 63,
-      "indexed": 8,
-      "indexed_resources": 8,
+      "indexed": 15,
+      "indexed_resources": 15,
       "resolved_aliases": 0,
-      "curated": 8,
+      "curated": 15,
       "excluded": 3,
-      "set_aside": 2,
-      "unindexed": 50
+      "set_aside": 9,
+      "unindexed": 36
     },
     {
       "id": "yearly-gui",
@@ -3131,13 +3135,13 @@
         "state": "success"
       },
       "discovered": 193,
-      "indexed": 148,
-      "indexed_resources": 148,
+      "indexed": 149,
+      "indexed_resources": 149,
       "resolved_aliases": 3,
-      "curated": 148,
+      "curated": 149,
       "excluded": 2,
-      "set_aside": 15,
-      "unindexed": 28
+      "set_aside": 36,
+      "unindexed": 6
     },
     {
       "id": "osu-gui",
@@ -3166,8 +3170,8 @@
       "resolved_aliases": 0,
       "curated": 471,
       "excluded": 0,
-      "set_aside": 45,
-      "unindexed": 11
+      "set_aside": 51,
+      "unindexed": 5
     },
     {
       "id": "opendilab-ui",
@@ -3191,13 +3195,13 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 86,
-      "indexed_resources": 86,
+      "indexed": 95,
+      "indexed_resources": 95,
       "resolved_aliases": 1,
-      "curated": 84,
+      "curated": 93,
       "excluded": 6,
-      "set_aside": 7,
-      "unindexed": 45
+      "set_aside": 29,
+      "unindexed": 14
     },
     {
       "id": "jin-gui-hub",
@@ -3226,8 +3230,8 @@
       "resolved_aliases": 0,
       "curated": 236,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 2
+      "set_aside": 2,
+      "unindexed": 1
     },
     {
       "id": "zju-iclr26",
@@ -3256,8 +3260,8 @@
       "resolved_aliases": 0,
       "curated": 0,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 7
+      "set_aside": 3,
+      "unindexed": 4
     },
     {
       "id": "mobile-gui",
@@ -3281,13 +3285,13 @@
         "state": "success"
       },
       "discovered": 40,
-      "indexed": 26,
-      "indexed_resources": 26,
+      "indexed": 32,
+      "indexed_resources": 32,
       "resolved_aliases": 1,
-      "curated": 26,
+      "curated": 32,
       "excluded": 0,
-      "set_aside": 3,
-      "unindexed": 11
+      "set_aside": 8,
+      "unindexed": 0
     },
     {
       "id": "phone-gui",
@@ -3311,13 +3315,13 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 187,
-      "indexed_resources": 187,
+      "indexed": 209,
+      "indexed_resources": 209,
       "resolved_aliases": 3,
-      "curated": 186,
+      "curated": 208,
       "excluded": 9,
-      "set_aside": 6,
-      "unindexed": 45
+      "set_aside": 23,
+      "unindexed": 6
     },
     {
       "id": "mobile-agents",
@@ -3341,13 +3345,13 @@
         "state": "success"
       },
       "discovered": 91,
-      "indexed": 70,
-      "indexed_resources": 70,
+      "indexed": 71,
+      "indexed_resources": 71,
       "resolved_aliases": 0,
-      "curated": 68,
+      "curated": 69,
       "excluded": 7,
-      "set_aside": 4,
-      "unindexed": 10
+      "set_aside": 9,
+      "unindexed": 4
     },
     {
       "id": "web-research",
@@ -3401,13 +3405,13 @@
         "state": "success"
       },
       "discovered": 96,
-      "indexed": 59,
-      "indexed_resources": 59,
+      "indexed": 67,
+      "indexed_resources": 67,
       "resolved_aliases": 0,
-      "curated": 59,
+      "curated": 67,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 37
+      "set_aside": 13,
+      "unindexed": 16
     },
     {
       "id": "gui-agent-security",
@@ -3461,13 +3465,13 @@
         "state": "success"
       },
       "discovered": 72,
-      "indexed": 42,
-      "indexed_resources": 42,
+      "indexed": 46,
+      "indexed_resources": 46,
       "resolved_aliases": 0,
-      "curated": 38,
+      "curated": 42,
       "excluded": 9,
       "set_aside": 13,
-      "unindexed": 8
+      "unindexed": 4
     },
     {
       "id": "gui-agent-memory",
@@ -3496,8 +3500,8 @@
       "resolved_aliases": 0,
       "curated": 49,
       "excluded": 1,
-      "set_aside": 1,
-      "unindexed": 4
+      "set_aside": 3,
+      "unindexed": 2
     },
     {
       "id": "chenvoid-gui",
@@ -3521,13 +3525,13 @@
         "state": "success"
       },
       "discovered": 215,
-      "indexed": 133,
-      "indexed_resources": 133,
+      "indexed": 144,
+      "indexed_resources": 144,
       "resolved_aliases": 2,
-      "curated": 131,
+      "curated": 142,
       "excluded": 32,
-      "set_aside": 14,
-      "unindexed": 36
+      "set_aside": 28,
+      "unindexed": 11
     },
     {
       "id": "philfung-cua",
@@ -3551,13 +3555,13 @@
         "state": "success"
       },
       "discovered": 34,
-      "indexed": 10,
-      "indexed_resources": 10,
+      "indexed": 21,
+      "indexed_resources": 21,
       "resolved_aliases": 2,
-      "curated": 10,
+      "curated": 21,
       "excluded": 0,
-      "set_aside": 3,
-      "unindexed": 21
+      "set_aside": 10,
+      "unindexed": 3
     },
     {
       "id": "release-fara",
@@ -3586,8 +3590,8 @@
       "resolved_aliases": 0,
       "curated": 5,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 11
+      "set_aside": 12,
+      "unindexed": 1
     },
     {
       "id": "release-ui-venus",
@@ -3616,8 +3620,8 @@
       "resolved_aliases": 0,
       "curated": 4,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 3
+      "set_aside": 5,
+      "unindexed": 0
     },
     {
       "id": "release-opengvlab-scalecua",
@@ -3641,13 +3645,13 @@
         "state": "success"
       },
       "discovered": 15,
-      "indexed": 9,
-      "indexed_resources": 9,
+      "indexed": 10,
+      "indexed_resources": 10,
       "resolved_aliases": 0,
-      "curated": 9,
+      "curated": 10,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 5
+      "set_aside": 4,
+      "unindexed": 1
     },
     {
       "id": "release-thudm-scalecua",
@@ -3676,8 +3680,8 @@
       "resolved_aliases": 0,
       "curated": 1,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 26
+      "set_aside": 2,
+      "unindexed": 25
     },
     {
       "id": "release-showui-pi",
@@ -3706,8 +3710,8 @@
       "resolved_aliases": 0,
       "curated": 4,
       "excluded": 0,
-      "set_aside": 3,
-      "unindexed": 4
+      "set_aside": 5,
+      "unindexed": 2
     },
     {
       "id": "release-opencua",
@@ -3731,13 +3735,13 @@
         "state": "success"
       },
       "discovered": 18,
-      "indexed": 6,
-      "indexed_resources": 6,
+      "indexed": 7,
+      "indexed_resources": 7,
       "resolved_aliases": 1,
-      "curated": 6,
+      "curated": 7,
       "excluded": 0,
-      "set_aside": 4,
-      "unindexed": 8
+      "set_aside": 8,
+      "unindexed": 3
     },
     {
       "id": "release-webdreamer",
@@ -3766,8 +3770,8 @@
       "resolved_aliases": 0,
       "curated": 3,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 1
+      "set_aside": 2,
+      "unindexed": 0
     },
     {
       "id": "release-nnetnav",
@@ -3796,8 +3800,8 @@
       "resolved_aliases": 0,
       "curated": 2,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 2
+      "set_aside": 3,
+      "unindexed": 1
     },
     {
       "id": "release-groundgui",
@@ -3821,13 +3825,13 @@
         "state": "success"
       },
       "discovered": 11,
-      "indexed": 6,
-      "indexed_resources": 6,
+      "indexed": 9,
+      "indexed_resources": 9,
       "resolved_aliases": 0,
-      "curated": 6,
+      "curated": 9,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 5
+      "unindexed": 2
     },
     {
       "id": "release-seg2click",
@@ -3911,13 +3915,13 @@
         "state": "success"
       },
       "discovered": 13,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 8,
+      "indexed_resources": 8,
       "resolved_aliases": 0,
-      "curated": 7,
+      "curated": 8,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 6
+      "set_aside": 2,
+      "unindexed": 3
     },
     {
       "id": "release-mobilegympp",
@@ -3946,8 +3950,8 @@
       "resolved_aliases": 0,
       "curated": 4,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 3
+      "set_aside": 2,
+      "unindexed": 2
     },
     {
       "id": "release-carryon",
@@ -3976,8 +3980,8 @@
       "resolved_aliases": 0,
       "curated": 1,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 1
+      "set_aside": 1,
+      "unindexed": 0
     },
     {
       "id": "release-gracebench",
@@ -4006,8 +4010,8 @@
       "resolved_aliases": 0,
       "curated": 1,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 1
+      "set_aside": 2,
+      "unindexed": 0
     },
     {
       "id": "release-aguvis",
@@ -4066,8 +4070,8 @@
       "resolved_aliases": 0,
       "curated": 5,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 3
+      "set_aside": 3,
+      "unindexed": 2
     },
     {
       "id": "release-mobileagent",
@@ -4091,13 +4095,13 @@
         "state": "success"
       },
       "discovered": 33,
-      "indexed": 12,
-      "indexed_resources": 12,
+      "indexed": 14,
+      "indexed_resources": 14,
       "resolved_aliases": 0,
-      "curated": 12,
+      "curated": 14,
       "excluded": 0,
-      "set_aside": 4,
-      "unindexed": 17
+      "set_aside": 5,
+      "unindexed": 14
     },
     {
       "id": "release-guicourse",
@@ -4156,8 +4160,8 @@
       "resolved_aliases": 0,
       "curated": 2,
       "excluded": 0,
-      "set_aside": 6,
-      "unindexed": 21
+      "set_aside": 8,
+      "unindexed": 19
     },
     {
       "id": "release-multiui",
@@ -4181,13 +4185,13 @@
         "state": "success"
       },
       "discovered": 8,
-      "indexed": 1,
-      "indexed_resources": 1,
+      "indexed": 2,
+      "indexed_resources": 2,
       "resolved_aliases": 0,
-      "curated": 1,
+      "curated": 2,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 7
+      "set_aside": 1,
+      "unindexed": 5
     },
     {
       "id": "release-ui-genie",
@@ -4216,8 +4220,8 @@
       "resolved_aliases": 0,
       "curated": 5,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 7
+      "set_aside": 3,
+      "unindexed": 4
     },
     {
       "id": "release-scienceboard",
@@ -4241,13 +4245,13 @@
         "state": "success"
       },
       "discovered": 16,
-      "indexed": 4,
-      "indexed_resources": 4,
+      "indexed": 5,
+      "indexed_resources": 5,
       "resolved_aliases": 0,
-      "curated": 4,
+      "curated": 5,
       "excluded": 0,
-      "set_aside": 4,
-      "unindexed": 8
+      "set_aside": 7,
+      "unindexed": 4
     },
     {
       "id": "release-mai-ui",
@@ -4276,8 +4280,8 @@
       "resolved_aliases": 0,
       "curated": 3,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 14
+      "set_aside": 12,
+      "unindexed": 2
     },
     {
       "id": "release-hcompany-model-index",
@@ -4331,13 +4335,13 @@
         "state": "success"
       },
       "discovered": 50,
-      "indexed": 26,
-      "indexed_resources": 26,
+      "indexed": 33,
+      "indexed_resources": 33,
       "resolved_aliases": 0,
-      "curated": 26,
+      "curated": 33,
       "excluded": 0,
-      "set_aside": 2,
-      "unindexed": 22
+      "set_aside": 5,
+      "unindexed": 12
     },
     {
       "id": "on-device-agents",
@@ -4361,13 +4365,13 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 23,
+      "indexed_resources": 23,
       "resolved_aliases": 3,
-      "curated": 15,
+      "curated": 18,
       "excluded": 3,
       "set_aside": 0,
-      "unindexed": 9
+      "unindexed": 6
     },
     {
       "id": "awesome-everything-gui",
@@ -4396,8 +4400,8 @@
       "resolved_aliases": 56,
       "curated": 442,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 45
+      "set_aside": 36,
+      "unindexed": 9
     },
     {
       "id": "trycua-acu",
@@ -4421,13 +4425,13 @@
         "state": "success"
       },
       "discovered": 156,
-      "indexed": 104,
-      "indexed_resources": 104,
+      "indexed": 114,
+      "indexed_resources": 114,
       "resolved_aliases": 1,
-      "curated": 103,
+      "curated": 113,
       "excluded": 3,
-      "set_aside": 2,
-      "unindexed": 47
+      "set_aside": 15,
+      "unindexed": 24
     },
     {
       "id": "gui-grounding-survey",
@@ -4451,13 +4455,13 @@
         "state": "success"
       },
       "discovered": 334,
-      "indexed": 238,
-      "indexed_resources": 238,
+      "indexed": 240,
+      "indexed_resources": 240,
       "resolved_aliases": 2,
-      "curated": 234,
+      "curated": 236,
       "excluded": 8,
-      "set_aside": 0,
-      "unindexed": 88
+      "set_aside": 9,
+      "unindexed": 77
     },
     {
       "id": "showlab-mm-embodied",
@@ -4481,13 +4485,13 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 96,
+      "indexed_resources": 96,
       "resolved_aliases": 0,
-      "curated": 80,
+      "curated": 84,
       "excluded": 35,
-      "set_aside": 6,
-      "unindexed": 88
+      "set_aside": 16,
+      "unindexed": 74
     },
     {
       "id": "rl-gui-agents",
@@ -4516,8 +4520,8 @@
       "resolved_aliases": 0,
       "curated": 156,
       "excluded": 38,
-      "set_aside": 2,
-      "unindexed": 5
+      "set_aside": 4,
+      "unindexed": 3
     },
     {
       "id": "12britz-cua",
@@ -4541,13 +4545,13 @@
         "state": "success"
       },
       "discovered": 120,
-      "indexed": 43,
-      "indexed_resources": 43,
+      "indexed": 114,
+      "indexed_resources": 114,
       "resolved_aliases": 0,
-      "curated": 43,
+      "curated": 114,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 77
+      "set_aside": 3,
+      "unindexed": 3
     },
     {
       "id": "autonomous-web",
@@ -4571,13 +4575,13 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 13,
-      "indexed_resources": 13,
+      "indexed": 15,
+      "indexed_resources": 15,
       "resolved_aliases": 0,
-      "curated": 13,
+      "curated": 15,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 32
+      "set_aside": 2,
+      "unindexed": 28
     },
     {
       "id": "agent-native-browsers",
@@ -4601,13 +4605,13 @@
         "state": "success"
       },
       "discovered": 44,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 12,
+      "indexed_resources": 12,
       "resolved_aliases": 0,
-      "curated": 7,
+      "curated": 12,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 37
+      "unindexed": 32
     },
     {
       "id": "llm-brained-gui-survey-benchmark",
@@ -4631,13 +4635,13 @@
         "state": "success"
       },
       "discovered": 121,
-      "indexed": 84,
-      "indexed_resources": 84,
+      "indexed": 87,
+      "indexed_resources": 87,
       "resolved_aliases": 0,
-      "curated": 84,
+      "curated": 87,
       "excluded": 0,
-      "set_aside": 11,
-      "unindexed": 26
+      "set_aside": 20,
+      "unindexed": 14
     },
     {
       "id": "llm-brained-gui-survey-dataset",
@@ -4661,13 +4665,13 @@
         "state": "success"
       },
       "discovered": 74,
-      "indexed": 52,
-      "indexed_resources": 52,
+      "indexed": 53,
+      "indexed_resources": 53,
       "resolved_aliases": 0,
-      "curated": 52,
+      "curated": 53,
       "excluded": 2,
-      "set_aside": 4,
-      "unindexed": 16
+      "set_aside": 7,
+      "unindexed": 12
     },
     {
       "id": "llm-brained-gui-survey-framework",
@@ -4691,13 +4695,13 @@
         "state": "success"
       },
       "discovered": 139,
-      "indexed": 100,
-      "indexed_resources": 100,
+      "indexed": 107,
+      "indexed_resources": 107,
       "resolved_aliases": 0,
-      "curated": 100,
+      "curated": 107,
       "excluded": 0,
-      "set_aside": 3,
-      "unindexed": 36
+      "set_aside": 15,
+      "unindexed": 17
     },
     {
       "id": "llm-brained-gui-survey-gui-testing",
@@ -4721,13 +4725,13 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 16,
-      "indexed_resources": 16,
+      "indexed": 17,
+      "indexed_resources": 17,
       "resolved_aliases": 0,
-      "curated": 16,
+      "curated": 17,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 16
+      "unindexed": 15
     },
     {
       "id": "llm-brained-gui-survey-models",
@@ -4751,13 +4755,13 @@
         "state": "success"
       },
       "discovered": 97,
-      "indexed": 66,
-      "indexed_resources": 66,
+      "indexed": 71,
+      "indexed_resources": 71,
       "resolved_aliases": 0,
-      "curated": 64,
+      "curated": 69,
       "excluded": 4,
-      "set_aside": 1,
-      "unindexed": 26
+      "set_aside": 10,
+      "unindexed": 12
     },
     {
       "id": "llm-brained-gui-survey-survey",
@@ -4846,8 +4850,8 @@
       "resolved_aliases": 0,
       "curated": 19,
       "excluded": 0,
-      "set_aside": 1,
-      "unindexed": 30
+      "set_aside": 2,
+      "unindexed": 29
     },
     {
       "id": "osworld-self-reported-leaderboard",
@@ -4876,8 +4880,8 @@
       "resolved_aliases": 0,
       "curated": 19,
       "excluded": 5,
-      "set_aside": 3,
-      "unindexed": 62
+      "set_aside": 7,
+      "unindexed": 58
     },
     {
       "id": "screenspot-pro-leaderboard",
@@ -4901,13 +4905,13 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 10,
-      "indexed_resources": 10,
+      "indexed": 11,
+      "indexed_resources": 11,
       "resolved_aliases": 0,
-      "curated": 10,
+      "curated": 11,
       "excluded": 2,
-      "set_aside": 1,
-      "unindexed": 32
+      "set_aside": 4,
+      "unindexed": 28
     },
     {
       "id": "androidworld-leaderboard",
@@ -4931,13 +4935,13 @@
         "state": "success"
       },
       "discovered": 66,
-      "indexed": 18,
-      "indexed_resources": 18,
+      "indexed": 20,
+      "indexed_resources": 20,
       "resolved_aliases": 0,
-      "curated": 18,
+      "curated": 20,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 48
+      "set_aside": 6,
+      "unindexed": 40
     },
     {
       "id": "webarena-leaderboard",
@@ -4966,8 +4970,8 @@
       "resolved_aliases": 0,
       "curated": 30,
       "excluded": 4,
-      "set_aside": 0,
-      "unindexed": 46
+      "set_aside": 1,
+      "unindexed": 45
     },
     {
       "id": "androidlab-leaderboard",
@@ -4996,8 +5000,8 @@
       "resolved_aliases": 0,
       "curated": 5,
       "excluded": 0,
-      "set_aside": 0,
-      "unindexed": 1
+      "set_aside": 1,
+      "unindexed": 0
     },
     {
       "id": "arxiv-abstract-phrases",
@@ -5231,13 +5235,13 @@
         "state": "success"
       },
       "discovered": 9,
-      "indexed": 0,
-      "indexed_resources": 0,
+      "indexed": 1,
+      "indexed_resources": 1,
       "resolved_aliases": 0,
-      "curated": 0,
+      "curated": 1,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 9
+      "unindexed": 8
     },
     {
       "id": "hf-datasets-search-screenspot",
@@ -5771,13 +5775,13 @@
         "state": "success"
       },
       "discovered": 1,
-      "indexed": 0,
-      "indexed_resources": 0,
+      "indexed": 1,
+      "indexed_resources": 1,
       "resolved_aliases": 0,
-      "curated": 0,
+      "curated": 1,
       "excluded": 0,
       "set_aside": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "survey-bibliography-backfill",
@@ -5836,8 +5840,8 @@
       "resolved_aliases": 8,
       "curated": 70,
       "excluded": 2,
-      "set_aside": 22,
-      "unindexed": 27
+      "set_aside": 23,
+      "unindexed": 26
     },
     {
       "id": "gui-agents-survey-references",
@@ -5866,8 +5870,8 @@
       "resolved_aliases": 0,
       "curated": 55,
       "excluded": 13,
-      "set_aside": 22,
-      "unindexed": 21
+      "set_aside": 23,
+      "unindexed": 20
     },
     {
       "id": "benchmark-leads",

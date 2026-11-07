@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Browser Control Agent",
+    "url": "https://github.com/dhamaniasad/browser-control",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Browser Control Agent is a Chrome extension that executes natural-language browser automation commands over live webpage DOM elements.",
+    "verify_terms": [
+      "Browser Control Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dhamaniasad/browser-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3f25b8a8eae54d5ad454bf238c765d5cbaefc5f0144cf2860172d6eb7472224c"
+  },
+  {
+    "name": "Frozen Vision Backbones for GUI Grounding",
+    "url": "https://github.com/DhruvRaval04/do-frozen-vision-backbones-transfer-to-guis",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Benchmarks dense versus global features across frozen vision backbones for pixel-coordinate GUI grounding.",
+    "verify_terms": [
+      "Frozen Vision Backbones for GUI Grounding"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DhruvRaval04/do-frozen-vision-backbones-transfer-to-guis/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6d06d48b23063c6a8269c2edc267c0d4490061f13c2169ed030c65c5ba3938da"
+  },
+  {
+    "name": "agent-desktop (macOS Multi-Account Sandbox)",
+    "url": "https://github.com/dianavocado181/agent-desktop",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "human-in-the-loop",
+      "automation"
+    ],
+    "summary": "Gives AI computer-use agents a dedicated macOS user account and isolated desktop session viewable live from the main screen.",
+    "verify_terms": [
+      "agent-desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dianavocado181/agent-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7b9d639847f4c819ebceb046ba483eb16b48b8c31f1e1c30145d1c05fffdf582"
+  },
+  {
+    "name": "grok-chrome-mcp",
+    "url": "https://github.com/dietghardev/grok-chrome-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Model Context Protocol server enabling Grok Build and coding agents to click through and verify live Chrome web apps.",
+    "verify_terms": [
+      "grok-chrome-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/dietghardev/grok-chrome-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b258138e37c130b830b58f8d38c1c8660664ad8e9673c02da9bbd74a74280b06"
+  },
+  {
+    "name": "Camel AI (Visual QA Agent)",
+    "url": "https://github.com/DilawarShafiq/camel-ai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "Screen-driven QA agent that tests web and desktop applications through their rendered UI and hands off edge cases to humans.",
+    "verify_terms": [
+      "Camel AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DilawarShafiq/camel-ai/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "214a5669d5d32a400d848c336e63726747187ee437e30696a51b163c002c5c53"
   }
 ]

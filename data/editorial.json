@@ -86010,5 +86010,126 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Plasmate",
+    "url": "https://github.com/plasmate-labs/plasmate",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Plasmate is a Rust browser engine for AI agents that transforms HTML and DOM state into a compact, actionable Semantic Object Model.",
+    "verify_terms": [
+      "Plasmate"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/plasmate-labs/plasmate/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e4413f27d3adc8c690129e5efe24a28d8aec16cd873ca10f290edce96358b01f"
+  },
+  {
+    "name": "Plasmate Benchmarks",
+    "url": "https://github.com/plasmate-labs/plasmate-benchmarks",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "efficiency"
+    ],
+    "summary": "Plasmate Benchmarks provides reproducible latency, memory, and token-efficiency evaluations for the Plasmate semantic browser engine.",
+    "verify_terms": [
+      "Plasmate Benchmarks"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/plasmate-labs/plasmate-benchmarks/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a1413e9e2e49d49849bcbfdc6676973fe41c0021d86f90449621d2ba5b4762c6"
+  },
+  {
+    "name": "Browser4",
+    "url": "https://github.com/platonai/Browser4",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "data-generation",
+      "efficiency"
+    ],
+    "summary": "Browser4 is an AI-native browser engine and coroutines runtime for high-concurrency web agents, workflow automation, and page extraction.",
+    "verify_terms": [
+      "Browser4"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/platonai/Browser4/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0df5cc055942b49ee67ec29bbce58b0b450a2d2e3b557e943119d6b29fbf92cc"
+  },
+  {
+    "name": "PulsarRPA",
+    "url": "https://github.com/platonai/pulsarRPA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "PulsarRPA is a browser RPA and web-agent framework combining natural-language commands, XPath/SQL page querying, and stealth browser control.",
+    "verify_terms": [
+      "PulsarRPA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/platonai/pulsarRPA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "549cc5dc1ae08391be80c8ee81dfc34c70b2da5e967459468ba3a8d24b596e45"
+  },
+  {
+    "name": "PawWork (爪爪 / BrowserKitten)",
+    "url": "https://github.com/Player-YN/BrowserKitten",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Selection-first Chrome web agent where users highlight elements on the live page to scope and guide agent actions.",
+    "verify_terms": [
+      "PawWork"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Player-YN/BrowserKitten/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8448b6e4ce82b841b7bbb39dba0f5c5bb5b2317cbc5266566b01968b613cab6d"
   }
 ]

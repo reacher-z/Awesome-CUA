@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Axon",
+    "url": "https://github.com/gxcsoccer/axon",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "macOS computer-use automation server and CLI exposing Accessibility API element control, AppleScript/JXA execution, and screenshots.",
+    "verify_terms": [
+      "Axon"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gxcsoccer/axon/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a1008dba40ae0c3d7af06f5a347a8ac7c41cdcecb2f93d534373d121a9139d5f"
+  },
+  {
+    "name": "Kagami Desktop (鏡)",
+    "url": "https://github.com/gytxtx/kagami-desktop",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Windows native CLI and MCP tool for desktop window observation, UI Automation control-tree parsing, and input interaction.",
+    "verify_terms": [
+      "Kagami Desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/gytxtx/kagami-desktop/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7a8fce70fd60603d502573040e823a840e8c95ad72505c781d0f3b47a9e9d8b9"
+  },
+  {
+    "name": "TestPilot",
+    "url": "https://github.com/H0nGzA1/testpilot",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Agentic end-to-end web testing platform that executes natural-language test cases in live browsers.",
+    "verify_terms": [
+      "TestPilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/H0nGzA1/testpilot/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "09ed9858e4b0c344bcdfdb86691769c3d624b0e08a6b00d2e11c748a9d308e31"
+  },
+  {
+    "name": "RPA Desktop Canal Visual",
+    "url": "https://github.com/Hab99/rpa-desktop-canal-visual",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Closed-loop visual desktop RPA runtime that drives isolated terminal and GUI applications purely from screen captures.",
+    "verify_terms": [
+      "desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Hab99/rpa-desktop-canal-visual/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c8af104f8e74e63c00b1b58599c7460220712d6df8c1bec0db3fe21370d4eac0"
+  },
+  {
+    "name": "Custom Chrome Dev MCP",
+    "url": "https://github.com/HabaAndrei/custom-chrome-dev-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "Local-only Model Context Protocol server that drives the user's already-open Chrome session over DevTools.",
+    "verify_terms": [
+      "Custom Chrome Dev MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/HabaAndrei/custom-chrome-dev-mcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "92d03838dc11f6468ebf6236d6b3993b5536a487a1d8ebe8565358476d60ef57"
   }
 ]

@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "decision-luna-browse-control",
+    "url": "https://github.com/humanity-forever/decision-luna-browse-control",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "action-prediction",
+      "efficiency"
+    ],
+    "summary": "Evaluates typed System-One decision models (Luna Decisions and Jev) driving real Chromium browser workflows on synthetic web apps.",
+    "verify_terms": [
+      "decision-luna-browse-control"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/humanity-forever/decision-luna-browse-control/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4cba2611cf35dbc4688ce7ba479d5bea9b9e895a3b27e3c2ea70f749923abf3d"
+  },
+  {
+    "name": "dsh-record-replay",
+    "url": "https://github.com/humblebanana/dsh-record-replay",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "DeepSeek Harness plugin that records macOS desktop demonstrations via Open Record/Replay and compiles them into agent skills.",
+    "verify_terms": [
+      "dsh-record-replay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/humblebanana/dsh-record-replay/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "109007ecf7a3a4d9c6cb5d6e63e5752fd419c1c2963ec54fb1592417d86da2b2"
+  },
+  {
+    "name": "Open Record/Replay",
+    "url": "https://github.com/humblebanana/open-record-replay",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "recording",
+      "imitation-learning",
+      "workflow"
+    ],
+    "summary": "Open Record/Replay records macOS user demonstrations with Accessibility metadata and compiles them into reusable agent skills.",
+    "verify_terms": [
+      "Open Record/Replay"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/humblebanana/open-record-replay/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "88d80ecdcbf84bb26b824c124b61bc7dfc9c4ce8b2cdb8f9076eb12735f721fe"
+  },
+  {
+    "name": "Offhand",
+    "url": "https://github.com/humzakhan/offhand",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Offhand is an offline, accessibility-first desktop agent for macOS and Windows powered by compact local vision-language models.",
+    "verify_terms": [
+      "Offhand"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/humzakhan/offhand/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "89b5ae98ec25c0200970ba9b0ea1d01524dfb2a8b0fd77b19b45a83e359c93dc"
+  },
+  {
+    "name": "Plip OSS",
+    "url": "https://github.com/hussainn7/plip-oss",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "grounding",
+      "human-in-the-loop",
+      "automation",
+      "safety-security"
+    ],
+    "summary": "Open-source macOS notch assistant and runtime for grounded, model-agnostic computer-use agents with verifiable action previews.",
+    "verify_terms": [
+      "plip-oss"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/hussainn7/plip-oss/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8f2a82f7c93699a3018d2d0f6a218f97a20133adc8b1d84c9cb96db5c71340f9"
   }
 ]

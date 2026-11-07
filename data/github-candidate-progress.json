@@ -1,6 +1,6 @@
 {
-  "manifest_sha256": "28f8f3de559dc0e4c241e67f52e7418e2d7d0292d07f9717e1d237742626d904",
-  "observation_snapshot_sha256": "09184553d2babc8dc9e5e04f8bf0d083ac2c993747afad3ad687eedc74551f67",
+  "manifest_sha256": "f67149620fbc6fe706dde9f43e44f6c06e32683f86ccb609517ffb39852558b8",
+  "observation_snapshot_sha256": "3f1eaf700a0128862fc50b4c381166dcd8611e0da868cf8dac7eaebf68ee7e06",
   "provider": "github",
   "schema_version": 1,
   "state": {
@@ -3861,11 +3861,48 @@
           }
         },
         "id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8"
+      },
+      {
+        "active_records": 2623,
+        "curated_records": 2170,
+        "existing_seed_count": 829,
+        "files": {
+          "candidate-reviews.json": {
+            "bytes": 21773,
+            "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+          },
+          "candidates.jsonl": {
+            "bytes": 8193228,
+            "sha256": "27e99a2502e54f2078c95289af2676e63d5237cb525a2e78e17ad23f1352ea60"
+          },
+          "catalog.jsonl": {
+            "bytes": 7561370,
+            "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+          },
+          "primary-evidence.jsonl": {
+            "bytes": 3411248,
+            "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+          },
+          "repository-aliases.json": {
+            "bytes": 25203,
+            "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+          }
+        },
+        "id": "bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405"
       }
     ],
     "policy": "Public primary metadata observations, not active catalog records or editorial approval. Counts use numeric repository IDs; query occurrences overlap.",
     "provider": "github",
     "queries": [
+      {
+        "id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "input_id": "bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "kind": "existing",
+        "last_attempt": 868,
+        "next_index": 177,
+        "seed_count": 829,
+        "status": "pending"
+      },
       {
         "id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
         "input_id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
@@ -3873,7 +3910,7 @@
         "last_attempt": 863,
         "next_index": 172,
         "seed_count": 829,
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e",
@@ -80645,6 +80682,116 @@
         "run_id": "run:c4f3ea9afe84a79d534c8d7f",
         "source_url": "https://api.github.com/repos/alibaba/mnn",
         "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1161227184
+        ],
+        "finished_at": "2026-11-07T09:15:53.699572+00:00",
+        "id": "receipt:ca40206132f1ee3e441d1d0e4170c3d06c94913ec9e8bf37ee172f382187ef2a",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 172,
+        "query_id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d23b77a80ec043917fd2149947ab9db3ce91f076c568600fa14f8b74be6946cd",
+        "requested_at": "2026-11-07T09:15:53.392550+00:00",
+        "response_bytes": 5705,
+        "response_sha256": "0f4a290e61f3a32c7a0d34be4a7259e7d15cf327c8200173cb379d7069ed401a",
+        "returned_count": 1,
+        "run_id": "run:e34123f68a0b1c72c9e91d31",
+        "source_url": "https://api.github.com/repos/aloth/awesome-ai-agents",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          669055343
+        ],
+        "finished_at": "2026-11-07T09:16:00.247747+00:00",
+        "id": "receipt:93fe4cad7ee254622c9f43979a8e9102501fbd18831e40cf7d4cae9c7c2dc84c",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 173,
+        "query_id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "d7146360ff97e062f59902194037af2d8fe213fc8e67b1ad796837e99d39c04c",
+        "requested_at": "2026-11-07T09:15:59.901523+00:00",
+        "response_bytes": 6622,
+        "response_sha256": "d30bf40a9a5f1c15b4a02e1030b65d77dd3b24db5c4df2edd3c06703d0650677",
+        "returned_count": 1,
+        "run_id": "run:e34123f68a0b1c72c9e91d31",
+        "source_url": "https://api.github.com/repos/alpha-vllm/llama2-accessory",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1100738662
+        ],
+        "finished_at": "2026-11-07T09:16:06.711546+00:00",
+        "id": "receipt:d2422c9ba4cd7c16d581636dc524bba6d1ba441f711334d262ae456a921f0950",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 174,
+        "query_id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "dad1d074d66212f0f36569093a12a4ed86cf59b8c52447b755a9bb0ab6ea9090",
+        "requested_at": "2026-11-07T09:16:06.410317+00:00",
+        "response_bytes": 5436,
+        "response_sha256": "bc536faae0fc663704c0753f17988f42ef16ae969d8e50f7ae3fb067961ec838",
+        "returned_count": 1,
+        "run_id": "run:e34123f68a0b1c72c9e91d31",
+        "source_url": "https://api.github.com/repos/alstafeev/midscene-java",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1149818930
+        ],
+        "finished_at": "2026-11-07T09:16:13.216510+00:00",
+        "id": "receipt:a3eb935a1b7c5c0bba29fcec31e62807b0b90b27ddf6390296f3187b2b9f6af7",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 175,
+        "query_id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "1b5f0e606e13590460e3cb3ee377b24f180d8c7e06bb602c885600659489a332",
+        "requested_at": "2026-11-07T09:16:12.919306+00:00",
+        "response_bytes": 6087,
+        "response_sha256": "e622a39fd1897a46ca5348fe4601ba95e6db45bf2625b550ef5af49f43358327",
+        "returned_count": 1,
+        "run_id": "run:e34123f68a0b1c72c9e91d31",
+        "source_url": "https://api.github.com/repos/amap-ml/code2world",
+        "status": 200
+      },
+      {
+        "accepted_repository_ids": [
+          1099175187
+        ],
+        "finished_at": "2026-11-07T09:16:20.006513+00:00",
+        "id": "receipt:2a8117dd95923586c76e2f80b51100d22f78c36d310c51e517e09eff0c15c1b7",
+        "incomplete_results": null,
+        "outcome": "accepted",
+        "position": 176,
+        "query_id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "raw_body_retained": true,
+        "rejected_rows": {},
+        "reported_total": null,
+        "request_url_sha256": "740f566aaac5f9a929163ae670baed8300d668533f11b0c0d0a81c56ed9c877e",
+        "requested_at": "2026-11-07T09:16:19.428326+00:00",
+        "response_bytes": 13144,
+        "response_sha256": "d152c49a46531ecb61c096f7805e022bff48ad5c0cc07aa9f305c38620e95717",
+        "returned_count": 1,
+        "run_id": "run:e34123f68a0b1c72c9e91d31",
+        "source_url": "https://api.github.com/repos/amazon-agi-labs/nova-act-samples",
+        "status": 200
       }
     ],
     "runs": [
@@ -83920,9 +84067,40 @@
         "strict_replay": true,
         "unknown_requests": 1,
         "wall_seconds_budget": 195.047205513
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10231,
+        "before_unique_repositories": 10226,
+        "deferred_queries": 1,
+        "deferred_query_ids": [
+          "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405"
+        ],
+        "epoch_id": "epoch:33dadbd455354e9407058991",
+        "finished_at": "2026-11-07T09:16:23.336209+00:00",
+        "id": "run:e34123f68a0b1c72c9e91d31",
+        "input_id": "bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "new_unique_repositories": 5,
+        "rejected_rows": {},
+        "repair_epoch_ids": [],
+        "request_budget": 30,
+        "requests_attempted": 5,
+        "shared_budget": {
+          "deferred_provider": null,
+          "deferred_reason": null,
+          "reservations_after": 146,
+          "reservations_before": 141,
+          "reservations_charged": 5,
+          "round_id": "531587b9454941888c452e5e74533168"
+        },
+        "started_at": "2026-11-07T09:15:43.899361+00:00",
+        "status": "partial",
+        "strict_replay": true,
+        "unknown_requests": 0,
+        "wall_seconds_budget": 194.447642604
       }
     ],
     "schema_version": 2
   },
-  "state_sha256": "5c072c85bf7c832d04d7bffd277cff4f109f7099204e81b03adee37949efa402"
+  "state_sha256": "0be495d5d43f9326ef1ec5bbd40eb30b6524fa0d8266a293b6547668d08c5f54"
 }

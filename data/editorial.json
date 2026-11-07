@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "AgentDesktopLinux",
+    "url": "https://github.com/Edwaks/AgentDesktopLinux",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Linux desktop and VPS computer-use agent for TaskCapitan capable of driving GUI applications and browsers.",
+    "verify_terms": [
+      "AgentDesktopLinux"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Edwaks/AgentDesktopLinux/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d081d7b6d11993179e6cfc039894f3c4c8b30eaf7dfa99eae6ac260e8da930e6"
+  },
+  {
+    "name": "Intentproof",
+    "url": "https://github.com/egagofur/intentproof",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "AI-driven end-to-end verification orchestrator and interactive browser testing harness.",
+    "verify_terms": [
+      "Intentproof"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/egagofur/intentproof/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a9065ff2c722f3cd089c5b5a6b91c56d19f156eb3ad5ce987164f4424cbf0c40"
+  },
+  {
+    "name": "MobileClaw",
+    "url": "https://github.com/eggbrid2/mobileClaw",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "screen-understanding",
+      "automation",
+      "workflow"
+    ],
+    "summary": "MobileClaw is an open Android AI agent runtime for phone control, VLM screen reading, and reusable mobile skill execution.",
+    "verify_terms": [
+      "MobileClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/eggbrid2/mobileClaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c2d18d3f645b7a8060539c6c43022ce2059acd0c332cf670bc77e4f62bdc505f"
+  },
+  {
+    "name": "gomoufox",
+    "url": "https://github.com/ehmo/gomoufox",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Go library, CLI, and Model Context Protocol server for driving Camoufox anti-detect Firefox browsers.",
+    "verify_terms": [
+      "gomoufox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ehmo/gomoufox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6a4904a931d4f9c0c73c1e2d08538bf05354e668dcaf2e52a97a3152efd04e00"
+  },
+  {
+    "name": "Eigent",
+    "url": "https://github.com/eigent-ai/eigent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "workflow",
+      "automation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Eigent is an open-source multi-agent desktop coworker built on CAMEL-AI for parallel browser, terminal, document, and MCP task execution.",
+    "verify_terms": [
+      "Eigent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/eigent-ai/eigent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8b02c03a2de2cf317c3588c985dd6d276d80029304c1e4462f3eb8c933d37d64"
   }
 ]

@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "formbrake",
+    "url": "https://github.com/mikebfox/formbrake",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Python library and CLI providing deterministic approval gates for browser-agent form submissions and high-consequence clicks.",
+    "verify_terms": [
+      "formbrake"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mikebfox/formbrake/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "684a1ed32b4f80d39a6e8eb90d87dffe59432f0d915d5a9f23a09af5e459051f"
+  },
+  {
+    "name": "Kopilotti WebMCP",
+    "url": "https://github.com/mikko-lab/kopilotti-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "safety-security",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "WebMCP reference application where a browser agent prepares non-binding proposals that require explicit human approval.",
+    "verify_terms": [
+      "Kopilotti WebMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mikko-lab/kopilotti-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9d145a14e9935913130ede1d1da1b461b0adffeac1c36ae0a9bfa8c013abb713"
+  },
+  {
+    "name": "migi",
+    "url": "https://github.com/mikuh/migi",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "grounding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "migi is a skill-oriented desktop GUI vision automation CLI for LLM agents with machine-readable JSON outputs and coordinate grounding.",
+    "verify_terms": [
+      "migi"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mikuh/migi/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c27516b5652567cabfdf1a2a829179b9a6460333281a4b69ea74ad6d6e3593a1"
+  },
+  {
+    "name": "Pathproof",
+    "url": "https://github.com/mikulabc/pathproof",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "recording",
+      "web-navigation"
+    ],
+    "summary": "Local-first AI-assisted website regression discovery suite with deterministic Playwright replay.",
+    "verify_terms": [
+      "Pathproof"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mikulabc/pathproof/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e9190bfe417d812dd1400b383825d3493c5d9cd0d6c18d0af362ee995bf6847c"
+  },
+  {
+    "name": "CAPTCHA Gym",
+    "url": "https://github.com/mildchef/Muse-Captcha-Gym",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "web-navigation"
+    ],
+    "summary": "CAPTCHA Gym is a self-hosted evaluation platform for browser agents featuring controlled reCAPTCHA-style visual challenges and server scoring.",
+    "verify_terms": [
+      "CAPTCHA Gym"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mildchef/Muse-Captcha-Gym/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ed87f80658ae951687b75ee71f76e8c67a1068a1cd89afcbe3925e35061bef89"
   }
 ]

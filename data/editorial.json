@@ -86010,5 +86010,136 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Hermes login-bridge Plugin",
+    "url": "https://github.com/kfastov/hermes-plugin-login-bridge",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "safety-security",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Hermes Agent plugin that temporarily hands the agent's browser session to a human operator to complete a login.",
+    "verify_terms": [
+      "hermes-plugin-login-bridge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kfastov/hermes-plugin-login-bridge/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad1830900e71c68e4fc8643ae2e5e1bf7d1e885df205c35a43e83836b6aaaa63"
+  },
+  {
+    "name": "Bflow (browser-automation-cli)",
+    "url": "https://github.com/KhBayazidAhmed/browser-automation-cli",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "web-navigation",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Zero-dependency browser automation CLI and visual workflow recorder.",
+    "verify_terms": [
+      "Bflow"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KhBayazidAhmed/browser-automation-cli/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "34e2444fe1071466bed28b6b5603b1dc96d8dbda37685f9e8d6329ec45378439"
+  },
+  {
+    "name": "Numera Browser",
+    "url": "https://github.com/KiaroSama/Numera-Browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Local-first multi-profile browser manager for isolated testing and agentic web automation.",
+    "verify_terms": [
+      "Numera Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/KiaroSama/Numera-Browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2e04ea422c17ec6b65a9668976228645c1e6afeb2ffea092b2d5e45ec6dd4750"
+  },
+  {
+    "name": "WKAppBot SDK",
+    "url": "https://github.com/kiexpert/wkappbot-sdk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "grounding",
+      "workflow"
+    ],
+    "summary": "WKAppBot is an open-source Windows Computer Use and AppBot SDK giving AI agents structured UI perception and action execution.",
+    "verify_terms": [
+      "wkappbot-sdk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/kiexpert/wkappbot-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1c57f6d7947f04237caa4f6736a04d3e9fbc96aa9626363f849573542f0170fe"
+  },
+  {
+    "name": "cu (Native GUI Automation CLI)",
+    "url": "https://github.com/killsng/cu",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Native GUI automation CLI written in Swift (macOS) and Rust (Windows) for ~50ms state reads and ~100ms clicks.",
+    "verify_terms": [
+      "cu"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/killsng/cu/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "67a6e419b73205fb6218981e3006c3de251958946bc54fc521cd8ce478e49422"
   }
 ]

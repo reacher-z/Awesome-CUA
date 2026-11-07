@@ -86010,5 +86010,236 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "flowcast",
+    "url": "https://github.com/SuperMarioYL/flowcast",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Records browser walkthroughs once, stores structured locator cues, and replays parameterized web workflows with self-healing recovery.",
+    "verify_terms": [
+      "flowcast"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SuperMarioYL/flowcast/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "23dc01afc8013ae2d46931a5c0c077d215999a3843368735f15d70fd80a64c06"
+  },
+  {
+    "name": "IdemStep",
+    "url": "https://github.com/SuperMarioYL/idemstep",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "robustness",
+      "safety-security",
+      "efficiency",
+      "state-tracking"
+    ],
+    "summary": "Deduplicates repeated agent actions and HTTP retries using keyed idempotency caches and a local verification proxy.",
+    "verify_terms": [
+      "IdemStep"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SuperMarioYL/idemstep/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b308d4ae609e172f2af14a260401c9ea3638adf1cde7c97e1a1695e37f55c566"
+  },
+  {
+    "name": "uia-agent",
+    "url": "https://github.com/SuperMarioYL/uia-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "grounding",
+      "action-prediction"
+    ],
+    "summary": "uia-agent defines an open-source LLM agent action space that drives legacy Windows desktop applications through the UI Automation tree.",
+    "verify_terms": [
+      "uia-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SuperMarioYL/uia-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ea3f4001875ebd235813a72a112f0cc7641e10fab6675bacf2fa7fee374ec187"
+  },
+  {
+    "name": "OSWorld GPT-4o-mini Benchmark Evaluation",
+    "url": "https://github.com/suraj-ranganath/osworld-gpt4o-mini-benchmark",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Evaluates GPT-4o-mini on OSWorld desktop automation tasks comparing screenshot-only, accessibility-tree, and Set-of-Mark observation modes.",
+    "verify_terms": [
+      "mini"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/suraj-ranganath/osworld-gpt4o-mini-benchmark/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d492b408c3be96fe63b20ae62a840d5b626bd32208fc454dca9325ae78b20b51",
+    "documented_by": [
+      "2404.07972"
+    ]
+  },
+  {
+    "name": "frontprompt",
+    "url": "https://github.com/SurrealMindAI/frontprompt",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "grounding",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Browser-automation MCP server with an interactive visual overlay that lets users annotate webpage elements and dispatch agent tasks.",
+    "verify_terms": [
+      "frontprompt"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SurrealMindAI/frontprompt/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "20a28aa70a8bd55f67f5eefbee5742468baecbf6ee05afd52ca1a4aa7e075084"
+  },
+  {
+    "name": "SWE-agent",
+    "url": "https://github.com/SWE-agent/SWE-agent",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "sandbox",
+      "evaluation"
+    ],
+    "summary": "SWE-agent introduces Agent-Computer Interfaces (ACI) enabling language models to autonomously navigate repositories, edit code, and run tests.",
+    "verify_terms": [
+      "SWE-agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SWE-agent/SWE-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f",
+    "documented_by": [
+      "2405.15793"
+    ]
+  },
+  {
+    "name": "Enhanced Claude Computer Use for Mac",
+    "url": "https://github.com/swilliams9772/mac_computer_use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Adapts Anthropic Claude Computer Use for native macOS with extended thinking, AppleScript integration, and Retina coordinate scaling.",
+    "verify_terms": [
+      "mac_computer_use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/swilliams9772/mac_computer_use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "884e4d7ecffc7353b366c94f872cd7a56b3f3681ac904d8759bda65c7093d806"
+  },
+  {
+    "name": "cloakbrowser-mcp",
+    "url": "https://github.com/swimmwatch/cloakbrowser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Playwright-powered Model Context Protocol server for driving CloakBrowser anti-detect Chromium sessions.",
+    "verify_terms": [
+      "cloakbrowser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/swimmwatch/cloakbrowser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b3c2a2ceb6985349aa9788c462682d3eb4a1069adfa012fba3405197e662753e"
+  },
+  {
+    "name": "handraise",
+    "url": "https://github.com/Sy-D/handraise",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "safety-security",
+      "web-navigation"
+    ],
+    "summary": "Human escalation and live-session handoff layer for Solari browser agents when encountering CAPTCHAs, 2FA, or ambiguity.",
+    "verify_terms": [
+      "handraise"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Sy-D/handraise/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fa69c1be691989a5412c7425dd6fa85880810b5bbb8a06c23cb1e6040fca9df4"
   }
 ]

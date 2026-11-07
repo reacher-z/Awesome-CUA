@@ -86010,5 +86010,138 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Zoom Search",
+    "url": "https://github.com/goofrey/zoom-search",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "planning"
+    ],
+    "summary": "Zoom Search is a hierarchical web-search agent that previews lightweight page summaries before selectively fetching full webpage content.",
+    "verify_terms": [
+      "Zoom Search"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/goofrey/zoom-search/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1b9d341e5c2eabaec5ff70956432348cc6d1355aac3e6e7499116e27c7c8688a"
+  },
+  {
+    "name": "Pix2Act",
+    "url": "https://github.com/google-deepmind/pix2act",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning",
+      "imitation-learning"
+    ],
+    "summary": "Pix2Act provides JAX/T5X training and evaluation code for pixel-only GUI agents on MiniWoB++ using behavioral cloning and tree search.",
+    "verify_terms": [
+      "Pix2Act"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-deepmind/pix2act/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "185efdd91156af0b895735000c8636b8ad74c0d86ce86f624476e81ce0c27d12",
+    "documented_by": [
+      "2306.00245"
+    ]
+  },
+  {
+    "name": "Gemini CLI",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Gemini CLI is Google's open-source terminal agent providing shell execution, file manipulation, web search, and MCP tool integration.",
+    "verify_terms": [
+      "Gemini CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-gemini/gemini-cli/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1dcb655995df3a664a7052a0c25d73565d698bc95d8d8965ecad95ef7d2a4568"
+  },
+  {
+    "name": "RICO Semantics",
+    "url": "https://github.com/google-research-datasets/rico_semantics",
+    "kind": "dataset",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "data-generation"
+    ],
+    "summary": "RICO Semantics provides 500,000 human annotations on RICO mobile screens covering icon shapes, semantic roles, and text-element associations.",
+    "verify_terms": [
+      "RICO Semantics"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-research-datasets/rico_semantics/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "444a35d65f55407ffb931c1138e984374833990aa7180f029e2228c2f820112b",
+    "documented_by": [
+      "2210.02663"
+    ]
+  },
+  {
+    "name": "Pix2Struct",
+    "url": "https://github.com/google-research/pix2struct",
+    "kind": "model",
+    "scope": "core",
+    "environments": [
+      "web",
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "Pix2Struct provides official training and inference code for screenshot-parsing vision-language pretraining across web and mobile UI tasks.",
+    "verify_terms": [
+      "Pix2Struct"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/google-research/pix2struct/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ca99e7ffd4a4286e1eec2651d5733e0d9630e2e1f042caa93c22ce0eec465fa5",
+    "documented_by": [
+      "2210.03347"
+    ]
   }
 ]

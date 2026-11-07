@@ -86010,5 +86010,231 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Mirage (Adversarial Web Benchmark)",
+    "url": "https://github.com/Shushant17711/mirage",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "robustness",
+      "web-navigation"
+    ],
+    "summary": "Controlled adversarial web environment for measuring how autonomous browser agents fail under deceptive UI and prompt traps.",
+    "verify_terms": [
+      "Mirage"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Shushant17711/mirage/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1d4c48c1152cb3b3c21a9b709e111383ab43991963d7afc65f4f2843597abf8a"
+  },
+  {
+    "name": "mac-pilot",
+    "url": "https://github.com/shxmi03/mac-pilot",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Zero-dependency macOS automation CLI and MCP server built on Python `ctypes` and CoreGraphics.",
+    "verify_terms": [
+      "mac-pilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shxmi03/mac-pilot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "a55f97c76e8071fa1e97167af5f4daa5ecd7774eb2cdb3a469e5e4824619ed8b"
+  },
+  {
+    "name": "AI Web Tester",
+    "url": "https://github.com/SiamAlSobari/ai-web-tester",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "observability",
+      "tool-integration"
+    ],
+    "summary": "Autonomous browser testing, QA matrix execution, and console/network telemetry toolkit for AI coding agents.",
+    "verify_terms": [
+      "AI Web Tester"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SiamAlSobari/ai-web-tester/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2a05b7e9a2ce1ae407ce558a041737a570e10fc4c683c5eed2198e396c15e798"
+  },
+  {
+    "name": "SideButton",
+    "url": "https://github.com/sidebutton/sidebutton",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "SideButton combines a Chrome extension, MCP server, and YAML workflow engine to expose live browser actions to AI agents.",
+    "verify_terms": [
+      "SideButton"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/sidebutton/sidebutton/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8a9830e91797fee89b3b02a22df42aa605cdda8775b320b41d4a048493fbcd19"
+  },
+  {
+    "name": "Signett",
+    "url": "https://github.com/signettai/signett",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "tool-integration",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Turns existing websites into discoverable, measurable WebMCP capability surfaces for browser agents.",
+    "verify_terms": [
+      "Signett"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/signettai/signett/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5933f21f0c369b99d0130eac7d661a977c2d2f90cf851449902e6863f99b19b5"
+  },
+  {
+    "name": "AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "workflow",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "AutoGPT is an open-source autonomous agent platform for building, orchestrating, and running multi-step web and workspace automation agents.",
+    "verify_terms": [
+      "AutoGPT"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "78d56ddcb2117f80ee43e26ee2dc44fe22a20c657a6a0bd102f7450978605465"
+  },
+  {
+    "name": "GoldenCut",
+    "url": "https://github.com/Silbercue/GoldenCut",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "ui-design",
+      "evaluation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Claude Code skill that measures live browser UI layouts and returns concrete golden-ratio spacing and typography fixes.",
+    "verify_terms": [
+      "GoldenCut"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Silbercue/GoldenCut/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d12b9c2b0d5f0bc7121e2ee21bdee8ee40a5224349a65ef1f72b4060209acde4"
+  },
+  {
+    "name": "Public Browser",
+    "url": "https://github.com/Silbercue/public-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "Token-efficient Chrome automation bridge and CLI for Claude Code and Cursor.",
+    "verify_terms": [
+      "Public Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Silbercue/public-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "657293384cda1a2318de2de452304c464e7da7794dc06d7c2588e5a706bf5489"
+  },
+  {
+    "name": "MERRICK",
+    "url": "https://github.com/SimonCheungAI/MERRICK",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Personal macOS assistant agent for planning, browser automation, and native desktop task execution.",
+    "verify_terms": [
+      "MERRICK"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/SimonCheungAI/MERRICK/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "3f72eaa447e9791f4142bc1aa197e00b523fa87765f8f246d2b463d572dbc893"
   }
 ]

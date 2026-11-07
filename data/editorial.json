@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Agentic UI Testing Codelab",
+    "url": "https://github.com/a-bhimava/agentic-ui-testing",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Hands-on developer codelab for building automated UI test suites using Antigravity CLI and Browser Use.",
+    "verify_terms": [
+      "agentic-ui-testing"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/a-bhimava/agentic-ui-testing/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6a72b59448d07d5af2973097486154957d22f7d793400fae9bec1fab1fe70391"
+  },
+  {
+    "name": "md-e2e",
+    "url": "https://github.com/A-RYAN-KR/md-e2e",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Zero-glue-code, Markdown-native end-to-end browser test automation framework powered by LLM agents.",
+    "verify_terms": [
+      "md-e2e"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/A-RYAN-KR/md-e2e/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dfc82d3c3fe43bd573597d72401eb8c65bc693b9b107f74bfa8f408a1e846c9e"
+  },
+  {
+    "name": "iOS Agent Harness",
+    "url": "https://github.com/a178960320/ios-agent-harness",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "self-reflection",
+      "automation"
+    ],
+    "summary": "iOS Agent Harness runs a Manager-Executor-Reflector GUI agent loop on iPhones to automate cross-app tasks from natural language.",
+    "verify_terms": [
+      "iOS Agent Harness"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/a178960320/ios-agent-harness/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "81fdd79b607036e713a66ce8c2db96498f64ce94c4c0e6727f53289efd78d662"
+  },
+  {
+    "name": "Front-End Operation Master (FEOM)",
+    "url": "https://github.com/a92070888-dev/mcp-os-native-automation",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "efficiency",
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Windows native UI automation framework and MCP server operating over UIA trees with zero vision tokens and ~3.9ms action latency.",
+    "verify_terms": [
+      "Front-End Operation Master (FEOM)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/a92070888-dev/mcp-os-native-automation/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d7ebf5a5eb863eb6254f61a73a742eb8f208fdcb4e9620a61cd7ed5f3aa26b8c"
+  },
+  {
+    "name": "Ui.Vision RPA",
+    "url": "https://github.com/A9T9/RPA",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Ui.Vision combines Selenium-compatible browser commands, visual desktop OCR/template automation, and an MCP server for AI agents.",
+    "verify_terms": [
+      "rpa"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/A9T9/RPA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e24a793c861b6f141b1f12d3ac888073821f484563f9456d6e6fa274a786e57c"
   }
 ]

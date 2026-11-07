@@ -86010,5 +86010,139 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Linux CUA (5omeotherguy)",
+    "url": "https://github.com/5omeOtherGuy/linux-computer-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "sandbox",
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Linux desktop toolkit for computer-use agents providing isolated X11 workspaces, window capture, and input synthesis.",
+    "verify_terms": [
+      "Linux CUA"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/5omeOtherGuy/linux-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "25a94a8b61767d22e90816a76adb6f21a1efa7f2df72c68cf4175d988ea2614f"
+  },
+  {
+    "name": "Computer Use Studio Pro",
+    "url": "https://github.com/666xiaoniuzi/computer-use-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "self-reflection"
+    ],
+    "summary": "Cross-agent skill for low-latency, verified desktop, browser, and window control.",
+    "verify_terms": [
+      "Computer Use Studio Pro"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/666xiaoniuzi/computer-use-skill/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d584e0ca805c6e617abc3bfc96bd93e2ca61ab029d7ccc1fa59c0cbacfce57d6"
+  },
+  {
+    "name": "screen-mcp (Linux Wayland)",
+    "url": "https://github.com/88plug/screen-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Linux Wayland computer-use MCP server for Claude Code and Grok providing screenshot capture, clicking, typing, and scrolling.",
+    "verify_terms": [
+      "screen-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/88plug/screen-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d531bc0209a2cb40bef5460799dcddf13f204713eba6be84a09f8b823765ad98"
+  },
+  {
+    "name": "reflex-computer-use",
+    "url": "https://github.com/8itlab/reflex-cu",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "reflex-computer-use is an MCP server for macOS and Windows that reads native UI accessibility trees and dispatches low-latency actions.",
+    "verify_terms": [
+      "reflex-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/8itlab/reflex-cu/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "88f3811500311d0af018cecef6459ca40fa05f0434074c8929685619e554a5e1"
+  },
+  {
+    "name": "988hj7tczd-oss dsh-computer-use",
+    "url": "https://github.com/988hj7tczd-oss/dsh-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Cross-platform DeepSeek Harness computer-use plugin featuring an independent virtual cursor, UI grounding, and desktop input.",
+    "verify_terms": [
+      "dsh-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/988hj7tczd-oss/dsh-computer-use/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c0175e2d81496c6f3e0d2b391ef35f6349f17793d3af2c5086cb66583e386a57"
   }
 ]

@@ -86010,5 +86010,211 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Video2GUI",
+    "url": "https://github.com/WeiminXiong/Video2GUI",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "data-generation",
+      "video",
+      "grounding"
+    ],
+    "summary": "Video2GUI synthesizes large-scale GUI interaction trajectories from unlabeled screen-recording videos via inverse dynamics and VLM annotation.",
+    "verify_terms": [
+      "Video2GUI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WeiminXiong/Video2GUI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "5e3e6a0baa737232700c39449d4cbe48dc7e4640fe0de12f521e03b6e7d64f92",
+    "documented_by": [
+      "2605.14747"
+    ]
+  },
+  {
+    "name": "wayland-computer-use",
+    "url": "https://github.com/wh0ami3/wayland-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Native Wayland desktop control server using XDG RemoteDesktop portal input and PipeWire capture where X11 tools fail.",
+    "verify_terms": [
+      "wayland-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wh0ami3/wayland-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "01dd7051c90ff282d7c096bd2a3e829cdc9af36f3536fc68d5a8ff227f4057b2"
+  },
+  {
+    "name": "page-agent-sdk",
+    "url": "https://github.com/whyymj/page-agent-sdk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "ui-design",
+      "human-in-the-loop"
+    ],
+    "summary": "In-page AI assistant SDK that mounts a chat widget and lets LLMs safely read and mutate webpage state via schema-validated tools.",
+    "verify_terms": [
+      "page-agent-sdk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/whyymj/page-agent-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "38f06fe1bfda766f1bab26ff631ad24e28eccac6f04ad5afea57ad1c7f6f81dc"
+  },
+  {
+    "name": "WieslawSoltes Linux Computer Use for Codex",
+    "url": "https://github.com/wieslawsoltes/LinuxComputerUse",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "Linux desktop and X11/Wayland GUI control skill for OpenAI Codex.",
+    "verify_terms": [
+      "linuxcomputeruse"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wieslawsoltes/LinuxComputerUse/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ac81d840485b312e09fc5723509f57329baf9d311c1ae7f3abdd4375fa6deb01"
+  },
+  {
+    "name": "Parallels CLI Skill for Codex",
+    "url": "https://github.com/wieslawsoltes/ParallelsSkill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Portable Codex skill for provisioning, snapshotting, and controlling Parallels Desktop virtual machines on macOS.",
+    "verify_terms": [
+      "Parallels CLI Skill for Codex"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/wieslawsoltes/ParallelsSkill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d42fd5b991acf5b8fc2a8aa3850029c5c070ab9dae6c51b0752a32a65a88a00b"
+  },
+  {
+    "name": "AgentReady",
+    "url": "https://github.com/Williehems/agentready",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "Cloud-browser evaluation harness that tests whether an autonomous AI agent can complete a website's primary conversion action.",
+    "verify_terms": [
+      "AgentReady"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Williehems/agentready/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "267635348d119608cc61bd9fa4ec3a0d6d26e832f56c5758131c977047a4a4a6"
+  },
+  {
+    "name": "InFu (Windows Agent Harness)",
+    "url": "https://github.com/WinS0l/Harness",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "Local coding and computer-use agent for Windows that inspects repositories, runs commands, and automates desktop tasks.",
+    "verify_terms": [
+      "InFu"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/WinS0l/Harness/master/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "1d247d561780c00433b4db12d16a541a0c3bb1da6e80e970cfe877f267bc642e"
+  },
+  {
+    "name": "winter40611 Browser Agent",
+    "url": "https://github.com/winter40611/browser-agent",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation",
+      "workflow"
+    ],
+    "summary": "Spring Boot, LangChain4j, and MCP agent backend enabling remote PC and browser automation via WeChat iLink.",
+    "verify_terms": [
+      "browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/winter40611/browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b9de10b30f9724a041df3ac762b896d796304928478d01e1ef15505b08c16b68"
   }
 ]

@@ -86010,5 +86010,130 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "voxie",
+    "url": "https://github.com/afraidsoul76/voxie",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Voice-driven desktop assistant and automation agent packaged on PyPI for hands-free computer control.",
+    "verify_terms": [
+      "voxie"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/afraidsoul76/voxie/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "09d59c16b941eb58e8e7c17e89fcab616c582f932bcacb31e6363bef3068bf2f"
+  },
+  {
+    "name": "mcp-camoufox",
+    "url": "https://github.com/agelyhq/mcp-camoufox",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Browser automation MCP server built on the Camoufox anti-detect Firefox browser for bypassing bot walls during agent navigation.",
+    "verify_terms": [
+      "mcp-camoufox"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agelyhq/mcp-camoufox/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b38eae18cebdc4835b335f9b1ff5e81dec7404811aec5f94b85999c7c41db0ec"
+  },
+  {
+    "name": "computer-use-linux",
+    "url": "https://github.com/agent-sh/computer-use-linux",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Native Linux desktop control server for AI agents over MCP, Pi tools, and CLI with semantic AT-SPI trees and screenshots.",
+    "verify_terms": [
+      "computer-use-linux"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/agent-sh/computer-use-linux/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "24989c513c7ff35df78246e104f9344c6dc94787a32b107650d25441894c0c64"
+  },
+  {
+    "name": "Agent360 Browser MCP",
+    "url": "https://github.com/Agent360dk/browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "Human-in-the-loop browser MCP server that pauses for user 2FA, CAPTCHA, or confirmation prompts before resuming agent execution.",
+    "verify_terms": [
+      "Agent360 Browser MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Agent360dk/browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "2b154bef74976efb1b2eba028a5a38a4db5aae7523f21296a266745f715ed66c"
+  },
+  {
+    "name": "Rally v2 for WebMCP",
+    "url": "https://github.com/Agent9AI/rally-webmcp",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "web-navigation",
+      "evaluation"
+    ],
+    "summary": "WebMCP orchestration runtime where ChatGPT initiates jobs and specialized browser agents execute and verify web tasks.",
+    "verify_terms": [
+      "Rally v2 for WebMCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Agent9AI/rally-webmcp/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7fdb097364b00814b87b01a038c85ab05c618869e541c456921481bc476373cf"
   }
 ]

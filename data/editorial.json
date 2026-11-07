@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "BeijingWahw DSH Computer Use Plugin",
+    "url": "https://github.com/beijingwahw/dsh-computer-use-plugin",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Full-featured desktop computer-use plugin for DeepSeek Harness supporting multi-display capture, OCR, and GUI actions.",
+    "verify_terms": [
+      "dsh computer use plugin"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/beijingwahw/dsh-computer-use-plugin/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "02a0ac6e9da5feac36d7168156744e3e18b8c960dbb36b880f644c7437329c8b"
+  },
+  {
+    "name": "Neo Lab",
+    "url": "https://github.com/belarusian/neo-lab",
+    "kind": "infrastructure",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "sandbox",
+      "recording",
+      "imitation-learning"
+    ],
+    "summary": "Neo Lab is a macOS computer-use sandbox for recording demonstrations, replaying skills, and testing GUI automation plans.",
+    "verify_terms": [
+      "Neo Lab"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/belarusian/neo-lab/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dae375b5cf8ec65725f59c59effad2a01c365acff77307ba777225f4f02083c5"
+  },
+  {
+    "name": "agentB",
+    "url": "https://github.com/beme08/agentb",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "agentB is a benchmark for evaluating open web agents on realistic knowledge-work and browser automation tasks.",
+    "verify_terms": [
+      "agentB"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/beme08/agentb/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "37559ee669543cde359a723b3366bd62768c630ea330a3ec893f7ff2760a1652"
+  },
+  {
+    "name": "autoit-mcp",
+    "url": "https://github.com/benina/autoit-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Portable Windows GUI-automation Model Context Protocol server for Claude Code built on AutoIt.",
+    "verify_terms": [
+      "autoit-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/benina/autoit-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9addf62c9b1b8fbbfcccccd2dde5509ca2de38b0400dd35997eba5d5f427985f"
+  },
+  {
+    "name": "Astra AI Browser",
+    "url": "https://github.com/bennix/AstraAIBrowser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "Native Apple Silicon macOS AI browser combining WebKit browsing with an integrated autonomous web agent.",
+    "verify_terms": [
+      "Astra AI Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bennix/AstraAIBrowser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8295f93e6de6e51e81354aeb778563b782003790de4569c86f4a7429cdc570c9"
   }
 ]

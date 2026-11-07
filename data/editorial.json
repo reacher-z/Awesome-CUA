@@ -86010,5 +86010,134 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Reins",
+    "url": "https://github.com/pegasi-ai/reins",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "tool-integration",
+      "human-in-the-loop"
+    ],
+    "summary": "Reins is a runtime security guardrail and policy enforcement layer that intercepts and gates unauthorized AI agent tool calls.",
+    "verify_terms": [
+      "Reins"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pegasi-ai/reins/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "14bf1c443f71af3b73d788312161501ca3bf71e7f72d47f962454bfc8631b419"
+  },
+  {
+    "name": "AI-Work",
+    "url": "https://github.com/peiwenZHANG-git/AI-Work",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "human-in-the-loop",
+      "safety-security",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Human-in-the-loop Windows desktop automation runtime with MCP support, bounded file access, and step approval.",
+    "verify_terms": [
+      "AI-Work"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/peiwenZHANG-git/AI-Work/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6563da1c7e3b4e9cdcd15c556b9559d4ae1f00d8c7535a18c5cd4c31e9759845"
+  },
+  {
+    "name": "Chrome for AI",
+    "url": "https://github.com/Pelag-Michael/Chrome-for-AI",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Patchright-powered Model Context Protocol server enabling AI agents to drive real Google Chrome tabs and cookies.",
+    "verify_terms": [
+      "Chrome for AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Pelag-Michael/Chrome-for-AI/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f1137defd9f6e79a27e1991ed8bceae8a37ce5a09cdc2942df2a1e00cdfdeb0e"
+  },
+  {
+    "name": "FlowPilot Engine",
+    "url": "https://github.com/pensefact/flowpilot-engine",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Hybrid AI browser automation engine combining Claude's visual Computer Use API with deterministic Playwright execution.",
+    "verify_terms": [
+      "flowpilot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/pensefact/flowpilot-engine/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9b1416d51dfe0a287618cc803602ba1e04b96868c3d3d03972322d0481237f1b"
+  },
+  {
+    "name": "a11y-computer-use",
+    "url": "https://github.com/Perception-Dynamics-Inc/a11y-computer-use",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "screen-understanding",
+      "efficiency",
+      "automation"
+    ],
+    "summary": "Accessibility-first computer-use runtime that feeds pruned accessibility-tree snapshots to AI agents so they click semantic UI elements.",
+    "verify_terms": [
+      "a11y-computer-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Perception-Dynamics-Inc/a11y-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "be901a86a997c7051321b801876e59171f9bdd4d659bc2662e009da3483babe3"
   }
 ]

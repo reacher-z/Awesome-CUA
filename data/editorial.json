@@ -86010,5 +86010,131 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Agentrooms",
+    "url": "https://github.com/baryhuang/claude-code-by-agents",
+    "kind": "tool",
+    "scope": "adjacent",
+    "environments": [
+      "desktop",
+      "macos",
+      "ios"
+    ],
+    "topics": [
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Agentrooms is a native macOS and iOS application for coordinating multiple local and remote coding agents in shared multi-agent workspaces.",
+    "verify_terms": [
+      "Agentrooms"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/baryhuang/claude-code-by-agents/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08f71ca71d1bbde97b8814664723dadbea208fa54612f77cd12b8c21d3ffe863"
+  },
+  {
+    "name": "browser-use-rs",
+    "url": "https://github.com/BB-fat/browser-use-rs",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "browser-use-rs is a lightweight pure-Rust library for driving Chromium browsers over the Chrome DevTools Protocol with LLM agents.",
+    "verify_terms": [
+      "browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BB-fat/browser-use-rs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "08fa3f334bf68025cdb7234d1b6372f1cc5063935f97fa8c3d0b651f2cafa744"
+  },
+  {
+    "name": "gsearch-rs",
+    "url": "https://github.com/Be90nia/gsearch-rs",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "data-generation"
+    ],
+    "summary": "Single-binary zero-extension Rust CLI driving local Chrome for AI-first web search and page extraction.",
+    "verify_terms": [
+      "gsearch-rs"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Be90nia/gsearch-rs/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "10b237b4e6a25ecfc41f3c48bcc7bd6241700268d625b709ebb17d57a6ebd6be"
+  },
+  {
+    "name": "Airplane Check-In Skill",
+    "url": "https://github.com/bee-san/airplane-checkin-skill",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Privacy-conscious Hermes browser skill for scheduled, verified multi-airline web check-in.",
+    "verify_terms": [
+      "Airplane Check-In Skill"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bee-san/airplane-checkin-skill/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "b35a263746f7902ec3bda503a4fb0a0062e4cfa37bbe7a43a325bd629ccb35b4"
+  },
+  {
+    "name": "Bees Desktop",
+    "url": "https://github.com/Bees-bot/bees-desktop",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Thread-based multi-agent desktop runtime allowing a team of AI agents to collaborate over local files and browsers.",
+    "verify_terms": [
+      "Bees Desktop"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Bees-bot/bees-desktop/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fb25b09ac08e17da6a1f2371b6886a78ac3a5788d05fedad7212af41edef31c5"
   }
 ]

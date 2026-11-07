@@ -86010,5 +86010,127 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "LLM Wiki for Chrome",
+    "url": "https://github.com/nvk/llm-wiki-chrome",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "tool-integration"
+    ],
+    "summary": "Bounded Chrome collaboration extension and local connector for building LLM-maintained knowledge wikis from live browsing.",
+    "verify_terms": [
+      "LLM Wiki for Chrome"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/nvk/llm-wiki-chrome/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8a8c73a1440cc3384296e698d0024ff9f9536c3d09777904ecf19af8e2928392"
+  },
+  {
+    "name": "MCP-RealBrowser",
+    "url": "https://github.com/obbbba/mcp-realbrowser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Model Context Protocol server providing 20 browser tools over a persistent, logged-in browser profile.",
+    "verify_terms": [
+      "MCP-RealBrowser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/obbbba/mcp-realbrowser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "648d9cbf29f00546cc9ba65e707ef67bb234b6e37acebf8a77553eee6102acc2"
+  },
+  {
+    "name": "claude-minecraft-use",
+    "url": "https://github.com/ObservedObserver/claude-minecraft-use",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "action-prediction"
+    ],
+    "summary": "Adapts Anthropic Claude Computer Use on macOS with continuous movement and camera controls to play Minecraft from screen observations.",
+    "verify_terms": [
+      "claude-minecraft-use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ad6587798873d7cae348ce8a35fb75f162a3ceb16e91f9e7bff387e24ab2ff0e"
+  },
+  {
+    "name": "RobotJS",
+    "url": "https://github.com/octalmage/robotjs",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation"
+    ],
+    "summary": "RobotJS is a native Node.js desktop automation library for controlling the mouse, keyboard, and screen bitmap capture across OS platforms.",
+    "verify_terms": [
+      "RobotJS"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/octalmage/robotjs/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "574e22320c4b10291e018a7355fb90cb2223f1589a2e8b64e038b0f340a3ce53"
+  },
+  {
+    "name": "Oculr MCP",
+    "url": "https://github.com/Oculr-ai/oculr-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Model Context Protocol server for driving isolated, anti-detect Oculr Chromium profiles over MCP and raw CDP.",
+    "verify_terms": [
+      "Oculr MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Oculr-ai/oculr-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "00f61244a0da7dcd6866671a1f039ea143c172f9d41615d76addf584efd67211"
   }
 ]

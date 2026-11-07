@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "ModCDP",
+    "url": "https://github.com/browserbase/ModCDP",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "observability"
+    ],
+    "summary": "ModCDP is Browserbase's framework for extending the Chrome DevTools Protocol with custom commands, events, and agent middlewares.",
+    "verify_terms": [
+      "ModCDP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browserbase/ModCDP/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "8589426f19aba319bfe49e7e63d15777074ca28c2ae3068056308c5c4176aa97"
+  },
+  {
+    "name": "browserkit",
+    "url": "https://github.com/browserkit-dev/browserkit",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "browserkit is a TypeScript framework for building site-specific MCP servers that operate over local, authenticated browser sessions.",
+    "verify_terms": [
+      "browserkit"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/browserkit-dev/browserkit/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de97376de55343fad14098936a52084c60f39683d97ea8dea49c393635afb6c9"
+  },
+  {
+    "name": "Browy",
+    "url": "https://github.com/BrowyHQ/browy",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Browy is a browser automation agent that drives live Chrome tabs using existing AI coding CLI subscriptions.",
+    "verify_terms": [
+      "Browy"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BrowyHQ/browy/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ef92ae07084ec53b261e60d74c5c5b7de61c57739b9c432f6197e20f95c02835"
+  },
+  {
+    "name": "FerrisGrid-CLI",
+    "url": "https://github.com/BrunoV21/FerrisGrid-CLI",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "automation",
+      "efficiency"
+    ],
+    "summary": "FerrisGrid-CLI captures screenshots, maps UI regions to deterministic grid coordinates, and executes constrained desktop actions in Rust.",
+    "verify_terms": [
+      "FerrisGrid-CLI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BrunoV21/FerrisGrid-CLI/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "77028a4be6692309877a424a81632369ae21741410683d38b756589154669306"
+  },
+  {
+    "name": "Replay AI",
+    "url": "https://github.com/bryansbtian/replay-ai",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "efficiency",
+      "workflow",
+      "automation"
+    ],
+    "summary": "Discovers UI workflows once using a local LLM and compiles the successful trajectory into a deterministic replay script.",
+    "verify_terms": [
+      "Replay AI"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bryansbtian/replay-ai/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4a08f1ba94c662e644a9a0f634270193c1051a6d454840df8508ec6d4289e8c7"
   }
 ]

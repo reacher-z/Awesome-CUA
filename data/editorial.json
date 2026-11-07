@@ -86010,5 +86010,132 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "mobius-browser-guard",
+    "url": "https://github.com/mobius-style/mobius-browser-guard",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation"
+    ],
+    "summary": "Auditable, content-blind permission gate for Claude in Chrome browser actions driven by an explicit action-risk ladder.",
+    "verify_terms": [
+      "mobius-browser-guard"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mobius-style/mobius-browser-guard/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "73061ee9f532c8060e2b9cc9327e0132b9b92c2e773ab9dfbac67c9cd2741b14"
+  },
+  {
+    "name": "MM-Eureka",
+    "url": "https://github.com/ModalMinds/MM-EUREKA",
+    "kind": "model",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "screen-understanding"
+    ],
+    "summary": "MM-Eureka provides rule-based multimodal reinforcement learning code, models, and datasets based on OpenRLHF and InternVL.",
+    "verify_terms": [
+      "MM-Eureka"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ModalMinds/MM-EUREKA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "db5b32aa61f24b12f77b672b151d087390750f983d62eaf9b6b1bff33cae0b23"
+  },
+  {
+    "name": "AgentForge",
+    "url": "https://github.com/MoeenAsim/Agentforge-V5",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "safety-security",
+      "self-reflection",
+      "robustness"
+    ],
+    "summary": "Multi-agent adversarial evaluation and safety-checking laboratory for stress-testing computer-use agents.",
+    "verify_terms": [
+      "AgentForge"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/MoeenAsim/Agentforge-V5/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "804cccd4f46d23989e4356c6b05e4cd2b92d8dea6e6b975d1d0ae3d31a14ff87"
+  },
+  {
+    "name": "midscene-pc",
+    "url": "https://github.com/Mofangbao/midscene-pc",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "midscene-pc extends Midscene.js to local and remote PC desktops, enabling natural-language GUI automation across Windows, Linux, and macOS.",
+    "verify_terms": [
+      "midscene-pc"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Mofangbao/midscene-pc/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "04f11e5d34949f51f960840ebaac9d40ce522d50e102af80e572ad889d8c9213"
+  },
+  {
+    "name": "agent-eyes",
+    "url": "https://github.com/mohanli-eng/agent-eyes",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "tool-integration",
+      "observability",
+      "web-navigation"
+    ],
+    "summary": "MCP server and workflow skill giving Claude Code live visual and DOM inspection over the browser runtime.",
+    "verify_terms": [
+      "coding"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mohanli-eng/agent-eyes/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6682f225e1ad98496ca443ff7abba695344982c29ae4cae59e69336cd4e069a2"
   }
 ]

@@ -86010,5 +86010,242 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Zhuque Recruiting (朱雀招聘)",
+    "url": "https://github.com/shenkemin-sketch/zhuque-recruiting",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "workflow",
+      "observability",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "Auditable Codex Computer Use skill for automating candidate sourcing and screening across web recruiting platforms.",
+    "verify_terms": [
+      "zhuque-recruiting"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shenkemin-sketch/zhuque-recruiting/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7cd86ecd4768188be3f6ced4e214c2d01c76b3ee48ad2e85c67e729067f0ac14"
+  },
+  {
+    "name": "ChimeraX-SessionStates",
+    "url": "https://github.com/ShiinaHiiragi/chimerax-states",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "science",
+      "evaluation",
+      "state-tracking"
+    ],
+    "summary": "ChimeraX plugin used by ScienceBoard to expose internal molecular-visualization session state for deterministic benchmark evaluation.",
+    "verify_terms": [
+      "ChimeraX-SessionStates"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "7460ca067303f30cbb13e4c29e40808e3fac8bf446094aaae5d45c796fbf023e"
+  },
+  {
+    "name": "maponce",
+    "url": "https://github.com/shivampatel0714/maponce",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "workflow",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Uses an LLM to map or record browser automations once and replays them deterministically via Playwright without LLM calls.",
+    "verify_terms": [
+      "maponce"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shivampatel0714/maponce/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "4f98591c50984a2fea5ad5b9905ebf5cfc264c82d391abb457d523715510ea21"
+  },
+  {
+    "name": "taproot",
+    "url": "https://github.com/shivampkumar/taproot",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "evaluation"
+    ],
+    "summary": "taproot is an open-source mobile GUI agent harness combining vision-language models with accessibility-tree grounding on AndroidWorld.",
+    "verify_terms": [
+      "taproot"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shivampkumar/taproot/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "0d596903b896a9fc76c71ac7bb33ed78e09fde08a1f6a9428e2582992b368c26"
+  },
+  {
+    "name": "OpenDesk",
+    "url": "https://github.com/shopable-ai/opendesk",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "OpenDesk is an API-driven desktop automation runtime that lets AI agents control windows, mouse/keyboard, OCR, and files via JavaScript or MCP.",
+    "verify_terms": [
+      "OpenDesk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shopable-ai/opendesk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f0d1bb045c795d3f4bb956ef6894c1bfbbf3738d0fdd071a3d50e450af014ea2"
+  },
+  {
+    "name": "Flash Computer Use",
+    "url": "https://github.com/shortsspectrumai-del/flash-computer-use",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "efficiency",
+      "web-navigation"
+    ],
+    "summary": "Flash Computer Use is a hybrid browser DOM and native OS accessibility MCP server for low-latency desktop and web automation.",
+    "verify_terms": [
+      "Flash Computer Use"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shortsspectrumai-del/flash-computer-use/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "34c7d101525b5b90c87a6a94c68207c83f41d654ba9e3c0ebce28586f9f57b2f"
+  },
+  {
+    "name": "LOVI AI Browser",
+    "url": "https://github.com/shubh2moon-hub/lovi-ai-browser",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "safety-security",
+      "automation"
+    ],
+    "summary": "Privacy-first autonomous AI companion browser powered by local Qwen 2.5 models.",
+    "verify_terms": [
+      "LOVI AI Browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shubh2moon-hub/lovi-ai-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "54113c69fd62e54ba955136a2df395ab437647f7e1bc4d69a906506eb31e6370"
+  },
+  {
+    "name": "LKO Mark 3.4",
+    "url": "https://github.com/shubhransh-gupta/LKO-Mark-3.4",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "memory",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Autonomous macOS desktop assistant with voice interaction, screen vision, and native AppleScript/system control.",
+    "verify_terms": [
+      "LKO Mark 3.4"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/shubhransh-gupta/LKO-Mark-3.4/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "9addd8c5f3499cbd79a8a9754652c85ec870ee1ea9061b8d3d7618710b32dce9"
+  },
+  {
+    "name": "winctl-mcp",
+    "url": "https://github.com/Shult/winctl-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Local Model Context Protocol server giving AI agents full control over Windows desktop screens, windows, mouse, and keyboard.",
+    "verify_terms": [
+      "winctl-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Shult/winctl-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "888e1c97e94488371b2553853f969ab48707ed810cd8c6b2e7570b4c2a552772"
   }
 ]

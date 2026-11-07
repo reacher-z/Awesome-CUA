@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "AI Agent Desktop Engineering Blueprint",
+    "url": "https://github.com/Men-Zer/ai-agent-desktop-engineering-blueprint",
+    "kind": "learning",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "sandbox"
+    ],
+    "summary": "Five-chapter architectural blueprint and comparative engineering guide for building desktop AI and computer-use agent applications.",
+    "verify_terms": [
+      "agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Men-Zer/ai-agent-desktop-engineering-blueprint/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e4654eb14145fbc0a0bcd03f98db6e51508f371ab9c5a29af28452567db5ceb7"
+  },
+  {
+    "name": "dsh-plugin-browser",
+    "url": "https://github.com/menotbobbybrown/dsh-plugin-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Native headless and visible web browser automation plugin for DeepSeek Harness.",
+    "verify_terms": [
+      "dsh-plugin-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/menotbobbybrown/dsh-plugin-browser/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "532d2dd373d079de3281ed73d0838ae656a5cc23b83db18d9c00f7f8d9634500"
+  },
+  {
+    "name": "augur-sdk",
+    "url": "https://github.com/mercurialsolo/augur-sdk",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "recording"
+    ],
+    "summary": "augur-sdk instruments screenshot-grounded computer-use agents to record structured telemetry bundles, screenshots, and failure traces.",
+    "verify_terms": [
+      "augur-sdk"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mercurialsolo/augur-sdk/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "bdfb984028787e29e64134d8e5692ac8f9ee43d63ffe8328b816637bce6de58d"
+  },
+  {
+    "name": "Mantis",
+    "url": "https://github.com/mercurialsolo/mantis",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web",
+      "linux"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "planning",
+      "sandbox"
+    ],
+    "summary": "Mantis is a unified perception-reasoning-action computer-use agent that drives browsers and Xvfb desktop applications from structured plans.",
+    "verify_terms": [
+      "Mantis"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mercurialsolo/mantis/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c99534d7da8281bc59335ac1a3c9b8f60071efb5e8fc3099ac71e383e7855340"
+  },
+  {
+    "name": "cua_reliability (SA-OPSD)",
+    "url": "https://github.com/mercurialsolo/sa-opsd",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "reinforcement-learning",
+      "safety-security",
+      "robustness"
+    ],
+    "summary": "Provides the cua_reliability evaluation toolkit and reference training code for measuring stopping and abstention reliability in CUA RL.",
+    "verify_terms": [
+      "cua_reliability"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/mercurialsolo/sa-opsd/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "ae9c6889159a465dba4f5239817ddfd0b10b47ddc12219b64aeed826020ff59e"
   }
 ]

@@ -86010,5 +86010,133 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "OpenAmer Agent",
+    "url": "https://github.com/openamer/openamer",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "self-reflection",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Self-hosted, self-improving AI desktop agent for Windows with native in-process system and UI tools.",
+    "verify_terms": [
+      "OpenAmer Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openamer/openamer/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "fc13c1e1f05cbe7f288a23a17a46d361f78c70572be09bfb2019264707444698"
+  },
+  {
+    "name": "Agentless",
+    "url": "https://github.com/OpenAutoCoder/Agentless",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "workflow",
+      "efficiency",
+      "evaluation"
+    ],
+    "summary": "Agentless resolves software engineering issues through a three-phase localization, repair, and patch validation pipeline.",
+    "verify_terms": [
+      "Agentless"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenAutoCoder/Agentless/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "06ead5fa5d0aafa7100cce5a8e7dbe66e38d50952c82d56c392852972d1f5a70"
+  },
+  {
+    "name": "Internet of Agents (IoA)",
+    "url": "https://github.com/OpenBMB/IoA",
+    "kind": "framework",
+    "scope": "adjacent",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "workflow",
+      "tool-integration",
+      "planning"
+    ],
+    "summary": "Internet of Agents (IoA) is a distributed framework for orchestrating heterogeneous multi-agent collaboration across devices and tools.",
+    "verify_terms": [
+      "Internet of Agents (IoA)"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenBMB/IoA/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "28f5e1812ebe693b4637d6d4e8a9ea81106366e1e18b3ab6d90b683acb18e76f"
+  },
+  {
+    "name": "Intention-in-Interaction (IN3) & Mistral-Interact",
+    "url": "https://github.com/OpenBMB/Tell_Me_More",
+    "kind": "benchmark",
+    "scope": "core",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "human-in-the-loop",
+      "planning"
+    ],
+    "summary": "Provides the Intention-in-Interaction (IN3) benchmark and Mistral-Interact model for proactive user-intent clarification in agent tasks.",
+    "verify_terms": [
+      "Intention-in-Interaction"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/OpenBMB/Tell_Me_More/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "95a0d43bdf625a6845c8fd2ded35f86dfb2db4cc8ff7fd53da746de82cec5d40"
+  },
+  {
+    "name": "OpenClaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "kind": "agent",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web",
+      "macos",
+      "windows",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "workflow"
+    ],
+    "summary": "OpenClaw is an open-source personal computer-use assistant that executes browser, desktop, terminal, and messaging workflows across local devices.",
+    "verify_terms": [
+      "OpenClaw"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/openclaw/openclaw/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "6065920be49194c3297db3cc923a5f42ad4c579feea93e987329379a8d5d195d"
   }
 ]

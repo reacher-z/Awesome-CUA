@@ -86010,5 +86010,129 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Weave WebMCP",
+    "url": "https://github.com/doom2quake/weave",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "planning",
+      "human-in-the-loop",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "Browser-native WebMCP idea-to-plan canvas where human users and web agents co-edit structured task plans.",
+    "verify_terms": [
+      "weave"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/doom2quake/weave/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d7b96fb5441464a4b0aa0a64fa503ae9205ed01fd2d6e40e610827e41180b347"
+  },
+  {
+    "name": "jev-browser",
+    "url": "https://github.com/doruktarhan/jev-browser",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "efficiency",
+      "tool-integration"
+    ],
+    "summary": "jev-browser is a Claude Code skill and CLI (`jb`) that delegates multi-step web navigation to the Jev System-One action model.",
+    "verify_terms": [
+      "jev-browser"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/doruktarhan/jev-browser/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "df7a97d67ff43e516dbddbbbee9d403e8faa57c2245d6454a558d827d1dc9969"
+  },
+  {
+    "name": "draiqw browser-agent (bu_mcp)",
+    "url": "https://github.com/draiqw/browser-agent",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "automation"
+    ],
+    "summary": "Enhanced Browser-Use distribution adding the `bu_mcp` Model Context Protocol layer over autonomous web navigation.",
+    "verify_terms": [
+      "browser agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/draiqw/browser-agent/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "dbd0160d8f6cf9af7f6a00828b59fff2bd49452ee2bde38fea66f155b803649f"
+  },
+  {
+    "name": "Drisp Browser MCP",
+    "url": "https://github.com/drisplabs/browser-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "efficiency",
+      "screen-understanding"
+    ],
+    "summary": "Drisp Browser is a token-efficient browser automation MCP server exposing compact semantic page snapshots and stateful actions.",
+    "verify_terms": [
+      "browser-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/drisplabs/browser-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "e60ad18c6fef96162231633d68cb5758ec9346b2b4a5386367681f2da9db3035"
+  },
+  {
+    "name": "Fathom",
+    "url": "https://github.com/DrizzDev/fathom",
+    "kind": "framework",
+    "scope": "core",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "Fathom is an execution harness for mobile computer-use agents that translates plain-English goals into grounded actions on iOS and Android.",
+    "verify_terms": [
+      "Fathom"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/DrizzDev/fathom/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "22a4b196b646a31aadcc86f0622485a6c6cabaff8c0e41199c78ad065b26dd93"
   }
 ]

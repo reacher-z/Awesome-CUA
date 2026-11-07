@@ -86010,5 +86010,128 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
     "reviewed_at": "2026-11-06T16:36:26Z"
+  },
+  {
+    "name": "Amazon Bedrock Minecraft Agent",
+    "url": "https://github.com/build-on-aws/amazon-bedrock-minecraft-agent",
+    "kind": "agent",
+    "scope": "adjacent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "planning",
+      "action-prediction",
+      "tool-integration"
+    ],
+    "summary": "TypeScript agent built on Amazon Bedrock and Mineflayer that translates natural-language instructions into in-game Minecraft actions.",
+    "verify_terms": [
+      "Amazon Bedrock Minecraft Agent"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/build-on-aws/amazon-bedrock-minecraft-agent/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "de73a74eff7e025990f7701adb025b853f68d0fd0ee6bac85134ad4eb19b922e"
+  },
+  {
+    "name": "MergeProof",
+    "url": "https://github.com/bukacdan/MergeProof",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "recording",
+      "video",
+      "evaluation",
+      "tool-integration"
+    ],
+    "summary": "Installable Agent Skill that records live browser verification demos and attaches them to pull requests.",
+    "verify_terms": [
+      "attaching"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bukacdan/MergeProof/main/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "d633e360e5a852d354c533a1eed761eee644f2e61b42fc279e65fc9da811009b"
+  },
+  {
+    "name": "Mac MCP (Menu Bar & Local Server)",
+    "url": "https://github.com/bulutarkan/mac-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "automation",
+      "human-in-the-loop"
+    ],
+    "summary": "macOS menu-bar application and local MCP server enabling Claude, ChatGPT, and Codex to inspect and control Mac apps.",
+    "verify_terms": [
+      "Mac MCP"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/bulutarkan/mac-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f41f7ca912cdff52b3e1146dafd8a3e896fc6cf41e1a4ddb9b6c1194b57e615b"
+  },
+  {
+    "name": "ESP-AI-HID Controller",
+    "url": "https://github.com/BurakBoz/esp-ai-hid",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "ESP32-S2 hardware USB HID keyboard and mouse emulator with bidirectional serial protocol for OS-independent AI computer control.",
+    "verify_terms": [
+      "esp-ai-hid"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/BurakBoz/esp-ai-hid/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "c870e8f4636ac467680ed397c29e45128c2ea80ad12a65d938bcad55fb527b99"
+  },
+  {
+    "name": "uictl-mac-mcp",
+    "url": "https://github.com/byronjones-elsevier/uictl-mac-mcp",
+    "kind": "tool",
+    "scope": "core",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "tool-integration",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "macOS GUI-automation CLI and Model Context Protocol server for coding agents.",
+    "verify_terms": [
+      "uictl-mac-mcp"
+    ],
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/byronjones-elsevier/uictl-mac-mcp/HEAD/README.md"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-04",
+    "reviewed_sha256": "f241494689c263d3312a50680cb0e2fc25df573f429b0a8ad8b8e2046cf88b97"
   }
 ]

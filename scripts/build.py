@@ -801,8 +801,8 @@ def badges(rows, report):
     return ("\n" + " ".join([
         f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
         f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
-        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
         f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
+        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 
 

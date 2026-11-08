@@ -672,7 +672,7 @@ jobs:
               lines += [
                   '## Updates',
                   '',
-                  'A scheduled job checks the live website every 2 hours. The source repository scans every 2 hours and the '
+                  'A scheduled job checks the live website every 2 hours. The source repository scans every 8 hours and the '
                   'website is redeployed after each merged scan, so a scan normally reaches this mirror within about '
                   '3 hours. The job downloads the exports again, verifies them against the site\'s published checksums, runs '
                   'the source repository\'s privacy guard over every file it would upload and over a decoded copy of every '

@@ -343,6 +343,8 @@ unresolved statuses remain visible even when the newest frontier is complete or
 the ordinary pending counter is zero. None of these
 states establishes global completeness or CUA relevance.
 
+The configured search cohorts include public repository topics and quoted README/description phrases for reimplementations, decompilations, recreations, clones and ports. They share the same bounded page cursors, rate-limit cooldowns and retained query receipts.
+
 ### One-time offline bootstrap
 
 An operator who has the original frozen ledger and successful raw cache can

@@ -103,7 +103,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 [Agent 操作指南](AGENTS.md) · [检索文档](https://awesomecua.com/downloads/rag-documents.jsonl)
 
-资源发现计划**每小时第 7 分钟（UTC）**执行一次。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+资源发现计划**每天 00:07、08:07 和 16:07（UTC）**执行一次。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
 
 [阅读英文研究综述](https://awesomecua.com/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 

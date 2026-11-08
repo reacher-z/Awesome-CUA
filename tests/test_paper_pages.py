@@ -88,6 +88,21 @@ class PaperPageTests(unittest.TestCase):
         for path, markup in self.markup.items():
             self.assertLessEqual(len(markup.encode()), BUDGET, path)
 
+    def test_paginated_category_lists_every_reviewed_record_once(self):
+        paths = [path for path in self.markup if path == '/categories/framework/' or path.startswith('/categories/framework/page/')]
+        self.assertGreater(len(paths), 1)
+        listed = [url for path in paths for block in re.findall(r'<article\b.*?</article>', self.markup[path], re.S)
+                  if (match := re.search(r'href="(/resources/[^"]+)"', block)) for url in [match[1]]]
+        rows = [json.loads(line) for line in (Path(__file__).resolve().parents[1] / 'data/catalog.jsonl').read_text(encoding='utf-8').splitlines()]
+        expected = {resource_path(row) for row in rows if row['kind'] == 'framework' and row['review_status'] == 'curated' and row['scope'] in {'core', 'adjacent'}}
+        self.assertEqual(len(listed), len(set(listed)))
+        self.assertEqual(set(listed), expected)
+        for path in paths:
+            pager = re.search(r'<nav class="pager"[^>]*>(.*?)</nav>', self.markup[path], re.S)
+            self.assertIsNotNone(pager)
+            self.assertEqual(set(re.findall(r'href="([^"]+)"', pager[1])), set(paths))
+            self.assertTrue((self.dest / path.lstrip('/') / 'index.md').is_file())
+
     def test_no_two_indexable_listings_share_more_than_half_their_entries(self):
         # Chinese library pages are hreflang translations of the English pages, not competing duplicates.
         listed = {path: entries(markup) for path, markup in self.markup.items() if self.pages[path]['indexable'] and not path.startswith('/zh/')}

@@ -48,6 +48,7 @@ class TopicVocabularyTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             catalog.write_jsonl(Path(directory) / "catalog.jsonl", [osworld()])
             catalog.write_json(Path(directory) / "editorial.json", [entry])
+            catalog.write_json(Path(directory) / "task-classes.json", catalog.read_json(catalog.DATA / "task-classes.json"))
             with mock.patch.object(build, "DATA", Path(directory)), self.assertRaises(ValueError) as raised:
                 build.validate(types.SimpleNamespace())
         self.assertEqual(str(raised.exception), "Editorial https://github.com/example/agent: unknown topics rl")

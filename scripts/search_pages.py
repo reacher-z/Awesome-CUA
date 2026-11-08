@@ -19,7 +19,7 @@ from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE, scan_schedule
 import home_page
 import site_shell
-from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, llms_full, llms_txt, paper_hub_markdown
+from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
 from static_api import API_SUMMARY, API_TITLE, api_docs_body, api_docs_markdown, write_api
@@ -31,6 +31,7 @@ KIND_SINGULAR = {"paper":"Research paper", "survey":"Survey", "learning":"Learni
 ENVIRONMENT_LABELS = {"web":"Web", "desktop":"Desktop", "windows":"Windows", "linux":"Linux", "macos":"macOS", "android":"Android", "ios":"iOS", "harmonyos":"HarmonyOS", "cross-platform":"Cross-platform"}
 TOPIC_CATALOG = json.loads((Path(__file__).resolve().parents[1]/"data/topics.json").read_text(encoding="utf-8"))
 KINDS = {"paper":"Research papers", "survey":"Surveys", "learning":"Learning resources", "model":"Models and checkpoints", "dataset":"Datasets", "benchmark":"Benchmarks", "agent":"Agents", "framework":"Frameworks", "infrastructure":"Infrastructure", "tool":"Tools", "product":"Products", "company":"Publishers"}
+CATEGORY_PAGE_SIZE = 100
 
 
 def esc(value):
@@ -375,7 +376,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         shown=[r]+[lookup[rel['source_id']] for rel in incoming.get(r['id'],[]) if rel['source_id'] in lookup]
         emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r),lastmod=modified(shown))
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
-        (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
+        (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,separators=(',', ':'))+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:
             (destination/path.lstrip('/')/'citation.bib').write_text(citation_bibtex(r),encoding='utf-8')
             (destination/path.lstrip('/')/'citation.csl.json').write_text(json.dumps(citation_csl(r),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -417,14 +418,35 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             body+='<h2>Papers by publication year</h2><nav class="paper-years" aria-label="Papers by publication year">'+''.join(f'<a href="{year_links[y]}">{"Date not recorded" if y=="undated" else y}<span>{years[y]:,}</span></a>' for y in sorted(years,key=lambda y:(y!='undated',y),reverse=True))+'</nav>'
             body+='<h2>Papers by topic</h2><div class="library-topics">'+''.join(f'<a href="{topic_path(t)}">{esc(topic_name(t))} ({n:,})</a>' for t,n in topics.most_common())+'</div>'
             schema={"@type":"CollectionPage","name":f'Computer-use agent {label.lower()}'}
-        else:
-            body+=listing(selected)
-            schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(selected),"itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(selected)]}
-        body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
+            body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
         if kind!='paper':
             (destination/f'categories/{kind}').mkdir(parents=True,exist_ok=True)
             (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
-        emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]),lastmod=modified(selected))
+        pages = ([selected[i:i+CATEGORY_PAGE_SIZE] for i in range(0, len(selected), CATEGORY_PAGE_SIZE)] or [[]]) if kind != 'paper' else [selected]
+        for number, members in enumerate(pages, 1):
+            path = f'/categories/{kind}/' if number == 1 else f'/categories/{kind}/page/{number}/'
+            if number > 1:
+                (destination/path.lstrip('/')).mkdir(parents=True, exist_ok=True)
+                markdown = [f'# Computer-use agent {label.lower()}, page {number}', '',
+                            f'HTML page: {SITE}{path}', '',
+                            f'Full category annotations: {SITE}/categories/{kind}/index.md', '']
+                markdown += [f'- {link(r["name"], SITE + resource_path(r))}' for r in members]
+                (destination/path.lstrip('/')/'index.md').write_text(clean_text('\n'.join(markdown) + '\n'), encoding='utf-8')
+            if kind != 'paper':
+                def category_link(n):
+                    return f'/categories/{kind}/' if n == 1 else f'/categories/{kind}/page/{n}/'
+                pager = '' if len(pages) == 1 else '<nav class="pager" aria-label="Category pages">' + ''.join(
+                    f'<a href="{category_link(n)}"' + (' aria-current="page"' if n == number else '')
+                    + f'>Page {n}</a>' for n in range(1, len(pages)+1)) + '</nav>'
+                page_body = body + listing(members) + pager + f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
+                schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(members),"itemListElement":[{"@type":"ListItem","position":(number-1)*CATEGORY_PAGE_SIZE+i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(members)]}
+            else:
+                page_body = body
+            crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]
+            if number > 1:
+                crumbs.append((f'Page {number}', path))
+            title = f'Computer-use agent {label.lower()}' + (f', page {number}' if number > 1 else '')
+            emit(path,page(title,f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',path,page_body,schema,crumbs=crumbs),lastmod=modified(selected))
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
         export=profile_export(rows,kind)
@@ -611,7 +633,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     groups=[]
     for kind in FULL_ORDER:
         members=sorted((r for r in reviewed if r['kind']==kind),key=lambda r:(r['name'].casefold(),r['id']))
-        if members:groups.append((KINDS[kind],[compact_entry(r,site=SITE,page_path=resource_path(r),summary=description(r),reviewed_at=review_times.get(r['id']),kind_label=KIND_LABELS[kind][0]) for r in members]))
+        if members:groups.append((KINDS[kind],[compact_entry(r,site=SITE,page_path=resource_path(r),summary=description(r)) for r in members]))
     kind_files=[(KINDS[kind],f'/categories/{kind}/index.md') for kind in FULL_ORDER if kind!='paper']+[('Research library',library_path(1)+'index.md')]
     (destination/'llms-full.txt').write_text(clean_text(llms_full(groups,site=SITE,snapshot=snapshot,counts=counts,survey_line=survey_line,kind_files=kind_files)),encoding='utf-8')
     (destination/'robots.txt').write_text(robots_txt(SITE),encoding='utf-8')

@@ -816,18 +816,21 @@ def shield(label, message, color):
     return f"https://img.shields.io/badge/{escape(label)}-{escape(message)}-{color}"
 
 
+# .github/workflows/scan-badge.yml writes this shields.io endpoint file to the status branch every hour and after each scan.
+SCAN_BADGE_JSON = "https://raw.githubusercontent.com/reacher-z/Awesome-CUA/status/scan-badge.json"
+
+
 def badges(rows, report):
-    # A short status strip under the banner: at most six badges, all counted or dated from this build. There is no live
-    # workflow-status badge: a rate-limit pause is not an outage, and the health issue is the alert channel.
+    # A short status strip under the banner: at most six badges. The counts come from this build; the scan badge reads
+    # the status branch, so it shows the latest successful scan of main and turns amber after six hours without one.
     # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
     style = '?style=flat-square&labelColor=1E2233'
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
-    as_of = report["as_of_utc"]
-    evidence = f"{as_of[:10]} {as_of[11:16]} UTC"
+    scan = "https://img.shields.io/endpoint?url=" + urllib.parse.quote(SCAN_BADGE_JSON, safe="") + style.replace("?", "&", 1)
     return ("\n" + " ".join([
         f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
         f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
-        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
+        f"[![Last successful scan]({scan})](docs/maintenance.md#scan-badge)",
         f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 

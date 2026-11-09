@@ -623,7 +623,7 @@ print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])'''),
 <div class="dev"><div><h2 id="dev-h">{heading}</h2><p style="margin-top:12px;max-width:52ch">{lede}</p><ul>{items}</ul></div>
 <div class="window term"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>/data/</output></div></div>
 <div class="tabs" role="tablist" aria-label="{"使用数据的方式" if zh else "Ways to use the data"}">{tabs}</div>{panels}
-<div class="panel-foot"><span>{licence}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel style="min-height:36px">{ic("copy")}{copy_label}</button>{star_note(zh, ' data-after-copy hidden')}</div></div></div></div></section>'''
+<div class="panel-foot"><span>{licence}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel>{ic("copy")}{copy_label}</button>{star_note(zh, ' data-after-copy hidden')}</div></div></div></div></section>'''
 
 
 DIRECTORY = (

@@ -329,7 +329,7 @@ print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])"""),
                    f'<a href="{"/zh/topics/" if zh else "/topics/"}">{tr("Topic subsets", "专题子集")}</a>')
     command_window = (f'<div class="window term"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>/downloads/</output></div></div>'
                       f'<div class="tabs" role="tablist" aria-label="{tr("Ways to use the data", "使用数据的方式")}">{tabs}</div>{panels}'
-                      f'<div class="panel-foot"><span class="data-agent-links">{agent_links}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel style="min-height:36px">{ic("copy")}{tr("Copy", "复制")}</button></div></div>')
+                      f'<div class="panel-foot"><span class="data-agent-links">{agent_links}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel>{ic("copy")}{tr("Copy", "复制")}</button></div></div>')
 
     groups = []
     for group, labels in GROUPS.items():

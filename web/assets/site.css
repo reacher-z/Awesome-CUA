@@ -1404,3 +1404,52 @@ html:not(.js) .data-try .tabs{display:none}
 .cat-tiles a:hover b{color:var(--link)}
 @media (min-width:1100px){.cat-tiles-5{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media (max-width:560px){.list-all-head{align-items:stretch}.list-tools{flex-basis:100%;flex-wrap:wrap;justify-content:flex-start}.list-filter{flex-basis:100%;max-width:none}.list-filter input{font-size:16px}.cat-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.cat-tiles b{font-size:1.1875rem}.cat-tiles a{padding:12px 14px}.cat-tiles-5 li:last-child{grid-column:1/-1}}
+
+/* ==========================================================================
+   Touch: phones, tablets and any coarse pointer get 44 px targets. A mouse keeps the compact layout.
+   Text links in a dense row keep their size and take a larger hit area from ::after.
+   ========================================================================== */
+@media (max-width:1023px),(pointer:coarse){
+  .announce{height:44px}
+  .announce-x{width:44px;height:44px}
+  .nav a{display:inline-flex;align-items:center;min-height:44px}
+  .search-trigger{height:44px}
+  .star-btn{min-height:44px}
+  .foot li a,.colophon a,.sister,.dir-lang,.dir-row a,.dir-start a,.data-stats a,.data-agent-links a,.data-more a,.star-note a{display:inline-flex;align-items:center;min-height:44px}
+  .site-footer .foot ul{display:grid}
+  .titlebar{height:44px}
+  .copy-url{height:44px;min-width:44px;justify-content:center}
+  .field .clear{width:44px;height:44px}
+  .chip,.active .chip,.clear-all,.facet .more-opts,.opt,.authors button,.years li a,.menu-pop a,.menu-pop button{min-height:44px}
+  .select select,.list-tools .select select,.list-filter input{height:44px}
+  .pager a,.pager span{min-width:44px;height:44px}
+  .panel-foot .btn,.copy-data{min-height:44px}
+  .toc a{padding-block:11px}
+  .toc summary{min-height:44px}
+  .data-sha>summary{min-height:44px}
+  .crumbs a{min-height:44px}
+  /* The whole row is the link; its secondary links sit above it. */
+  .r3-log li,.feed li,.paper-list li{position:relative}
+  .r3-log a::after,.paper-t::after,.feed a::after{content:"";position:absolute;inset:0}
+  .paper-m a,.feed .m a{position:relative;z-index:1}
+  .paper-m a::after,.feed .m a::after,.r3-cell-eg a::after,.row-meta a::after,a.tag::after,.tab-arrow::after{content:"";position:absolute;inset:-12px -4px}
+  .r3-cell-eg a,a.tag{position:relative}
+  .tab-arrow::after{inset:-8px}
+  .r3-band .lb-list li{grid-template-columns:minmax(0,1fr) 44px;min-height:44px;padding-right:0}
+  .r3-band .lb-list a.nm{min-height:44px}
+  .lb-list a.lb{width:44px;height:44px}
+}
+@media (max-width:1023px){.js .menu-btn{min-width:44px;width:44px}.head-tools .icon-btn:not(.lang){min-width:44px;width:44px}.search-trigger{width:44px}}
+.panel-foot .btn{min-height:36px}
+
+/* ---------- focus: a ring that reads against the band it sits on ---------- */
+.r3-band{--focus:#FFFFFF}
+.r3-band .lb-table{--focus:var(--ad-sheet-a)}
+.r3-tile:focus-visible,.foot-more li a:focus-visible,.data-choice a:focus-visible{outline-offset:3px}
+
+/* ---------- reduced motion: nothing moves, including hover lifts ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important;scroll-behavior:auto!important}
+  .r3-tile:hover,.r3-cell:hover,.r3-envs li a:hover,.btn:active,.star-btn:hover .i,.star-btn:active,.star-note a:hover .i,.is-scrolled .brand{transform:none}
+  .skel{animation:none}
+}

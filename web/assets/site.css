@@ -1489,3 +1489,5 @@ html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
 :lang(zh-CN) .hero h1{font-size:min(calc(var(--step-display) * .84),calc((100vw - 32px) / 9.4))}
 /* Tap targets: at least 24px tall without moving the layout */
 .r3-cell-name{padding-block:4px;margin-block:-4px}.r3-c-paper .r3-cell-name{margin-top:6px}.r3-cell-eg a,.r3-envs p a,.dir-qa a{padding-block:4px}.paper-m a{padding-block:2px;margin-block:-2px}
+/* Narrow EN hero: step badge and click label sit together under the box, clear of both headline lines */
+@media (max-width:767px){.bbox-f::before{top:calc(100% + 5px)}.bbox-f::after{right:auto;left:17px}.home .hero-lede{margin-top:40px}}
